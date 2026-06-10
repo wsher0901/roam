@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cmd.exe",
+            "args": ["/c", "git pull --ff-only --quiet 2>nul & type docs\\HANDOFF.md"],
+            "timeout": 30,
+            "statusMessage": "Pulling latest and reading handoff note"
+          }
+        ]
+      }
+    ]
+  }
+}

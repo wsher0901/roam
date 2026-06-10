@@ -9,4 +9,8 @@ Task-completion ritual. Do all of this:
 4. Show me the summary (plus the Vercel preview URL once previews exist)
    and ASK FOR MY APPROVAL. Do not merge without it.
 5. After my yes: squash-merge, delete the branch, git checkout main and
-   pull, then update docs/HANDOFF.md and push it.
+   pull.
+6. If the shipped task completes a roadmap task, tick its checkbox in
+   docs/ROADMAP.md.
+7. Update docs/HANDOFF.md (reflecting the shipped task and any roadmap
+   tick), commit, and push.

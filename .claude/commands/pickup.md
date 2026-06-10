@@ -6,5 +6,9 @@ Start-of-sitting ritual. Do all of this:
 2. Read docs/HANDOFF.md. If it names an active branch, check it out and
    pull it. If the file is missing, say so and continue from main.
 3. Read the active milestone in docs/ROADMAP.md.
-4. Tell me in a few plain sentences: where we left off, what is
-   half-finished, and the recommended next step. Then wait for my go-ahead.
+4. Run `gh pr list --state open`. Include any open PRs in the briefing,
+   flagging ones that did not come from this machine's last session
+   (compare against the machine and branch named in docs/HANDOFF.md).
+5. Tell me in a few plain sentences: where we left off, what is
+   half-finished, any open PRs (flagged if unexpected), and the
+   recommended next step. Then wait for my go-ahead.
