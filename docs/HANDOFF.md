@@ -5,10 +5,9 @@ started yet.
 Done this session: blueprint session landed in full — Foundation V1
 (PR #7: FOUNDATION.md, notation, D-003 + D-004); stack trial (PR #9:
 D-005); V1 roadmap cut (PR #11: 8 stages, 33 tasks, D-006); blueprint
-audit fixes (PR #13); stage-gated Claude Code equipment plan in
-CLAUDE.md (PR #15: no tooling for S1; Supabase + Vercel MCP at S2;
-Playwright MCP at first UI; check-module skill after V1.S3.T1; no
-plugins; runtime tool use deferred to V1.S3.T1).
+audit fixes (PR #13); stage-gated Claude Code equipment plan (PR #15);
+subagent plan (PR #17: read-only reviewer wired into /ship at V1.S2.T2+,
+design-critic at V1.S2.T5+, specs written when their stage opens).
 In flight (half-finished): nothing.
 Decisions this session: D-003 (V1 scope), D-004 (notation &
 rolling-wave), D-005 (stack + frontend layer + doctrine), D-006 (V1
