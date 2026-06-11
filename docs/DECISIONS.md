@@ -57,3 +57,36 @@ Why:
 Alternatives rejected: spec all versions now (guesswork + heavy upkeep;
 penalizes new ideas); V1-only with no version buckets (loses the
 per-version narrative).
+
+## D-005 — 2026-06 — Stack re-trial vs Foundation V1: D-001 upheld + frontend layer
+Decision: D-001 upheld and extended — Next.js App Router (TypeScript,
+React 19) + Supabase (Postgres + Auth) + Vercel, planning brain = Claude
+API server-side, now with a named frontend layer: Tailwind v4 +
+shadcn/ui (design system), Motion (animation), MapLibre GL (maps),
+dnd-kit (timeline drag-and-drop), Vercel AI SDK in the "AI SDK UI"
+flavor (streaming incl. streamObject; NOT the paused RSC/streamUI
+variant), TanStack Query + Zustand (state) — plus a performance
+doctrine: stream-first (UI never blocks on the brain; partial results
+render as they resolve), cache-heavy (every fetched fact stored in
+Postgres with a freshness window — the dataset asset and the speed
+mechanism are the same feature), parallel fan-out across the five check
+families, DB region co-located with pooled connections.
+Riders: (1) the engine streams progressively and caches every fact from
+day one; (2) the engine module keeps a hard boundary so it can later be
+lifted into a Python worker for ML tuning of the dataset.
+Why:
+- 2026's cutting edge for this app class IS the deep modern React stack
+  (server components, streaming, React 19 compiler); alternative
+  frameworks trade away the React-first ecosystem Roam needs most —
+  maps, drag-and-drop, AI streaming SDKs, component systems;
+- the most-trodden TypeScript stack maximizes AI-assisted coding
+  reliability, and Claude Code writes nearly every line — this is the
+  solo builder's actual bug rate;
+- the doctrine neutralizes serverless's one real risk (function time
+  limits) and makes the dataset accrue as a side effect of being fast.
+Alternatives rejected: Python backend + TS frontend (most moving parts
+for a solo non-dev; the data/ML pull is satisfied by Rider 2's escape
+hatch); all-TS on a long-running own server (ops burden; loses built-in
+auth and the preview-URL flow the rituals assume); exotic frontends
+(Svelte/Solid/Qwik — thinner ecosystem for Roam's needs, less
+Claude-Code-trodden); AI SDK RSC/streamUI variant (development paused).
