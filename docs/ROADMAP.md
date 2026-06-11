@@ -11,7 +11,8 @@
   touches) or [seq] (must follow; "after X" names the dependency when it
   is not simply the previous task).
 - Branches, PRs, and handoff notes reference these IDs
-  (e.g. "feat: V1.S3.T3 weather module").
+  (e.g. "feat: V1.S3.T3 weather module"). Branch names use the
+  lowercase ID plus a slug: feat/v1.s3.t3-weather.
 - Work IDs are Vn.Sm.Tk from this file or real GitHub issue numbers —
   never hand-assigned labels ("Issue 2"-style numbering is retired).
 
@@ -117,8 +118,8 @@ Done when: dragging anything triggers whole-plan re-validation with
 streamed verdicts, and any version reverts in one click.
 - [ ] V1.S6.T1 [seq] Revalidation path — perturbation -> full re-score
       diff (what improved, what broke, why)
-- [ ] V1.S6.T2 [seq] Edit UX — drag/move/swap -> streamed verdict
-      panel, accept/undo
+- [ ] V1.S6.T2 [seq] Edit UX — drag/move/swap or a typed request (one
+      brain, no modes) -> streamed verdict panel, accept/undo
 - [ ] V1.S6.T3 [seq] Versions & revert — version history UI, one-click
       revert, change annotations
 
