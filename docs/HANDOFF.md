@@ -1,5 +1,7 @@
 # Handoff — 2026-06-11, Work
 Active branch(es): main
+Web lanes: V1.S1.T1 (fact inventory) open in a Web chat — arrives as a
+paste block on docs/v1.s1.t1-fact-inventory; do not start it in Code.
 Roadmap position: V1.S1 and V1.S2 active (parallel lanes); V1.S2.T1
 done (first ticked task).
 Done this session: V1.S2.T1 app scaffold shipped (PR #19) — Next.js
@@ -16,12 +18,16 @@ shipped (PR #21): .claude/settings.json now disables the claude.ai
 MCP connector bridge (ENABLE_CLAUDEAI_MCP_SERVERS=false) and pins
 plugins — on: context7, frontend-design, security-guidance; off:
 playwright (until V1.S2.T5), superpowers. Takes effect on next
-session launch.
+session launch. D-008 cockpit shipped (PR #23): docs/HOME.md operating
+manual; /pickup progress map + claim rule + stale-handoff detection;
+/ship auto-runs + ends with labeled next actions; idea capture to
+IDEAS.md; D-002 carve-out extended to IDEAS.md.
 In flight (half-finished): V1.S1.T1 (fact inventory) is being drafted
 by me in the Claude Web Project chat — it arrives later as a paste
 block on branch docs/v1.s1.t1-fact-inventory. Claude Code must NOT
 start V1.S1.T1 independently.
-Decisions this session: D-007 (shadcn/ui builds on Base UI).
+Decisions this session: D-007 (shadcn/ui builds on Base UI); D-008
+(cockpit, derived state, automatic recording).
 Blockers / open questions: CLAUDE.md still says "Claude Code plugins:
 not used" — stale since PR #21 enables three; needs a small docs PR
 when convenient.
