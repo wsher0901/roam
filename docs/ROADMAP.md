@@ -63,7 +63,7 @@ database connected.
 - [x] V1.S2.T2 [seq after T1] Deploy + CI — Vercel project with PR
       preview links; GitHub Actions lint + test so /ship's gate is
       real; .env.example hygiene (public repo: secrets never committed)
-- [ ] V1.S2.T3 [seq after T1] Supabase wiring — project, pooled
+- [x] V1.S2.T3 [seq after T1] Supabase wiring — project, pooled
       connection, server-side client, env plumbing
 - [ ] V1.S2.T4 [seq after V1.S1.T7 and T3] Schema migration — implement
       the S1 schema as migrations; minimal seed data
