@@ -34,8 +34,8 @@ Full product definition: docs/FOUNDATION.md. Decision log: docs/DECISIONS.md.
 
 ## Project knowledge & tracking
 - Before any task: read docs/FOUNDATION.md principles and the active
-  milestone in docs/ROADMAP.md. Every PR must map to a roadmap step or a
-  GitHub issue ("Closes #N").
+  Stage (Vn.Sm) in docs/ROADMAP.md. Every PR must map to a roadmap task
+  (Vn.Sm.Tk) or a GitHub issue ("Closes #N").
 - Decisions are recorded with /decide into docs/DECISIONS.md — never leave
   a decision only in conversation.
 - New ideas go to the docs/IDEAS.md inbox, not into scope, until triaged.
