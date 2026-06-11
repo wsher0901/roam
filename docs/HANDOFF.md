@@ -2,8 +2,8 @@
 Active branch(es): main
 Web lanes: V1.S1.T1 (fact inventory) open in a Web chat — arrives as a
 paste block on docs/v1.s1.t1-fact-inventory; do not start it in Code.
-Roadmap position: V1.S1 and V1.S2 active (parallel lanes); V1.S2.T1
-done (first ticked task).
+Roadmap position: V1.S1 and V1.S2 active (parallel lanes); V1.S2 at
+2/5 (T1 scaffold, T2 deploy + CI done).
 Done this session: V1.S2.T1 app scaffold shipped (PR #19) — Next.js
 16.2.9 (App Router, TS, React 19, Turbopack) at repo root; Tailwind v4
 + shadcn/ui on Base UI ("nova" preset) with one Button component;
@@ -21,7 +21,11 @@ playwright (until V1.S2.T5), superpowers. Takes effect on next
 session launch. D-008 cockpit shipped (PR #23): docs/HOME.md operating
 manual; /pickup progress map + claim rule + stale-handoff detection;
 /ship auto-runs + ends with labeled next actions; idea capture to
-IDEAS.md; D-002 carve-out extended to IDEAS.md.
+IDEAS.md; D-002 carve-out extended to IDEAS.md. V1.S2.T2 deploy + CI
+shipped (PR #25): GitHub Actions on every PR/main (lint, format,
+test, build); Vercel project "roam" linked + GitHub App installed —
+PR preview links automatic, production tracks main at
+https://roam-pink-eight.vercel.app; .env.example placeholder-only.
 In flight (half-finished): V1.S1.T1 (fact inventory) is being drafted
 by me in the Claude Web Project chat — it arrives later as a paste
 block on branch docs/v1.s1.t1-fact-inventory. Claude Code must NOT
@@ -31,16 +35,20 @@ Decisions this session: D-007 (shadcn/ui builds on Base UI); D-008
 Blockers / open questions: CLAUDE.md still says "Claude Code plugins:
 not used" — stale since PR #21 enables three; needs a small docs PR
 when convenient.
-Next steps (exact): V1.S2.T2 (deploy + CI, branch
-feat/v1.s2.t2-deploy-ci) and/or V1.S2.T3 (Supabase wiring, branch
-feat/v1.s2.t3-supabase) — both unblocked now T1 is merged; per the
-equipment plan, add Vercel MCP when T2 starts and Supabase MCP when T3
-starts (tokens per-machine, never in repo; the claude.ai bridge
-versions are gone after PR #21, so use local `claude mcp add` on each
-machine). V1.S2.T5 (design
+Next steps (exact): V1.S2.T3 (Supabase wiring, branch
+feat/v1.s2.t3-supabase; add Supabase MCP locally first — tokens
+per-machine, never in repo; claude.ai bridge versions gone after
+PR #21, use `claude mcp add` per machine). V1.S2.T5 (design
+foundations) is [P after T1] — needs Playwright plugin re-enabled per
+equipment plan. V1.S2.T4 waits on V1.S1.T7 + T3. V1.S2.T5 (design
 foundations) also [P after T1] but wants Playwright MCP. S1 lane:
 T2–T6 source vetting is [P] and open.
-Gotchas discovered: shadcn CLI changed — `-b` now picks the primitive
+Gotchas discovered: Vercel CLI now authenticated on this machine
+(wsher0901); `vercel git connect` needs the Vercel GitHub App
+installed first (one-time browser step, done); an existing PR only
+gets a preview deploy after a new push (empty commit works);
+`gh pr merge` says "not mergeable" while checks are pending — wait
+for green. shadcn CLI changed — `-b` now picks the primitive
 library (radix|base, NOT a color); presets are nova/vega/maia/etc.;
 old `-b neutral` syntax fails then hangs on an interactive prompt.
 Prettier corrupted a CLAUDE.md line on first run — CLAUDE.md, docs/,
