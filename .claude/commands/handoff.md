@@ -6,9 +6,9 @@ End-of-sitting ritual. Do all of this:
    edits made in docs/ via Obsidian) with a clear message; push. If there
    is nothing to commit, continue to step 2.
 2. Create or update docs/HANDOFF.md (under 20 lines) in exactly this
-   structure, using today's date and the machine's hostname (run
-   `hostname` to get it):
-   # Handoff — <date>, <hostname>
+   structure, using today's date and the machine label (run
+   `git config roam.machine`; if unset, fall back to `hostname`):
+   # Handoff — <date>, <machine label>
    Active branch:
    Roadmap position: <stage / task — "n/a" until ROADMAP has content>
    Done this session:
