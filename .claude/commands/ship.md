@@ -5,7 +5,9 @@ Task-completion ritual. Do all of this:
 1. Run tests + linter; fix failures before proceeding.
 2. If the task completes a roadmap task, tick its checkbox in
    docs/ROADMAP.md on this branch, so the tick is reviewed as part of
-   the task's own diff.
+   the task's own diff. If that tick closes a whole stage (all tasks
+   done), also update the "Active:" line under "## V1 — stages" to the
+   next stage in the same commit.
 3. Commit and push all remaining work on the current branch.
 4. Open a PR with a clear title and a plain-language summary of what
    changed and why; reference the roadmap step or issue ("Closes #N").

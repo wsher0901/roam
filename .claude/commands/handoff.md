@@ -12,8 +12,8 @@ End-of-sitting ritual. Do all of this:
    structure, using today's date and the machine label (run
    `git config roam.machine`; if unset, fall back to `hostname`):
    # Handoff — <date>, <machine label>
-   Active branch:
-   Roadmap position: <stage / task — "n/a" until ROADMAP has content>
+   Active branch(es):
+   Roadmap position: <Vn.Sm / Vn.Sm.Tk>
    Done this session:
    In flight (half-finished):
    Decisions this session: <D-numbers + one-line gist, or "none">
