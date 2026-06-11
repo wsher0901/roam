@@ -86,3 +86,12 @@ Open this note first. It stores no state — only where state lives.
 5. Leaving a Web task midway? Say "park" -> footer + Resume Primer.
    Done for the day? Say so -> /handoff asks the Web-lanes question,
    sweeps IDEAS, confirms "safe to walk away".
+
+## Pacing (the anti-fatigue law)
+Finish before start: open lanes and pending blocks outrank new tasks.
+Recommendations needing my attention: "Now: <one thing>" plus at most
+one parallel slot — beyond that, "plate is full". Web items are
+flagged explicitly with the chat to open or answer. Flexible cap: work
+needing no overview (fully specified, no decisions) may run as extra
+autonomous lanes at Claude's discretion; an explicit "more" from me
+unlocks the full ordered menu. Stopping is a valid next step.

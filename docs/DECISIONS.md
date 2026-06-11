@@ -149,3 +149,23 @@ Alternatives rejected: a status file with its own state (rots); relying
 on the user to remember /ship, idea capture, or lane reporting (the
 failures this design exists to remove); PR approval for idea capture
 (kills the habit).
+
+## D-009 — 2026-06 — Pacing law (finish-first, flexible cap)
+Decision: all briefings and completions (/pickup, /ship, "brief")
+recommend in finish-first order — open lanes and pending blocks
+outrank new tasks. Items needing the builder's attention are capped at
+"Now: one item" plus at most one parallel slot, with "plate is full"
+beyond that; Web items are explicitly flagged with the chat to open.
+Flexible cap: no-overview work (fully specified, no decisions) may be
+offered or run as extra autonomous lanes at Claude's discretion; an
+explicit request for "more" unlocks the full ordered menu.
+Why:
+- a solo builder's scarce resource is attention, not task supply —
+  endless next-lists cause fatigue and half-finished lanes;
+- the cap protects attention, not throughput: autonomous lanes can
+  widen without costing overview;
+- "plate is full" is itself an instruction — stopping is a valid next
+  step.
+Alternatives rejected: full menus at every completion (the fatigue
+this law removes); a rigid cap (wastes parallel capacity on
+no-overview work); no cap (lane sprawl across two machines).

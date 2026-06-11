@@ -34,6 +34,15 @@ Full product definition: docs/FOUNDATION.md. Decision log: docs/DECISIONS.md.
 - Before saying "done": run tests + linter and fix failures.
 - When a task's work is complete, run /ship yourself — do not wait to
   be asked, and never declare a task done in conversation without it.
+- Pacing law: finish before start — open lanes and pending blocks
+  outrank new tasks. Recommendations needing my attention are capped
+  at two ("Now:" + one parallel slot); beyond that, say the plate is
+  full. Flexible cap: work that needs no overview from me (fully
+  specified, no decisions) may be proposed or run as extra parallel
+  lanes at your discretion — you determine what needs overview. If I
+  explicitly ask for "more", present the full ordered menu. Never
+  answer "what's next" with an unrequested menu. Stopping is a valid
+  next step.
 - The moment I voice a new idea outside the current task's scope,
   append it as one dated line to docs/IDEAS.md without being asked.
   IDEAS.md additions are exempt from task-diff purity: they ride
