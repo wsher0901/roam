@@ -142,6 +142,17 @@ vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
 
+# Next.js extras not covered above
+/build
+next-env.d.ts
+
+# Vercel
+.vercel
+
+# OS / certificates
+.DS_Store
+*.pem
+
 # Obsidian per-machine settings
 docs/.obsidian/
 # Claude Code per-machine settings
