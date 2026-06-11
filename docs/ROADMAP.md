@@ -60,7 +60,7 @@ database connected.
 - [x] V1.S2.T1 [P] App scaffold — Next.js App Router + TypeScript +
       Tailwind v4 + shadcn/ui; repo layout with isolated engine/ module
       dir; ESLint/Prettier; Vitest with one passing test
-- [ ] V1.S2.T2 [seq after T1] Deploy + CI — Vercel project with PR
+- [x] V1.S2.T2 [seq after T1] Deploy + CI — Vercel project with PR
       preview links; GitHub Actions lint + test so /ship's gate is
       real; .env.example hygiene (public repo: secrets never committed)
 - [ ] V1.S2.T3 [seq after T1] Supabase wiring — project, pooled
