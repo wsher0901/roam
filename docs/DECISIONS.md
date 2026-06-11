@@ -125,3 +125,27 @@ Alternatives rejected: Radix UI (the legacy default — larger back
 catalog of examples, but new shadcn development has moved off it);
 deferring the choice (every added component would deepen whichever
 default we ignored).
+
+## D-008 — 2026-06 — Cockpit, derived state, automatic recording
+Decision: docs/HOME.md is the cockpit (pointers, routing, daily loop,
+information hierarchy; stores no state). Recording and sequencing are
+system-enforced: /ship runs itself at task completion and ends by
+naming the next labeled action; /pickup and "brief" render a stage
+progress map and label every suggestion with tool +
+parallel/sequential; ideas are captured to IDEAS.md the moment voiced
+(Code appends directly; Web bakes APPENDs into blocks); Web chats
+speak in Lane Status footers and Resume Primers, with done/change
+calls confirmed by one question; git outranks notes; nothing starts
+without the claim question; the D-002 carve-out extends to
+docs/IDEAS.md additions.
+Why:
+- the human surface shrinks to pasting blocks, yes/no confirmations,
+  and PR approvals — everything else is automatic or derived;
+- every completion emits the next instruction, so the loop never goes
+  silent;
+- each information granularity has exactly one home and one update
+  mechanism (the hierarchy in HOME.md), so nothing has two truths.
+Alternatives rejected: a status file with its own state (rots); relying
+on the user to remember /ship, idea capture, or lane reporting (the
+failures this design exists to remove); PR approval for idea capture
+(kills the habit).

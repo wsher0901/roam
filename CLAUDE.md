@@ -25,12 +25,19 @@ Full product definition: docs/FOUNDATION.md. Decision log: docs/DECISIONS.md.
   (include the Vercel preview link once previews exist), then ask me.
   Only after I approve: squash-merge, delete the branch, pull main,
   update docs/HANDOFF.md. (/ship does this.) Sole exception: a PR
-  containing only a docs/HANDOFF.md update (written by /handoff or
-  /ship) is opened and squash-merged immediately without asking (D-002).
+  containing only docs/HANDOFF.md updates and/or docs/IDEAS.md
+  additions (via /handoff or /ship) is opened and squash-merged
+  immediately without asking (D-002, D-008).
 - If I say anything like "done for today", "heading out", "wrapping up",
   or "bye": run the full /handoff procedure immediately without being asked.
 - If I forget any of this, do it anyway without being asked.
 - Before saying "done": run tests + linter and fix failures.
+- When a task's work is complete, run /ship yourself — do not wait to
+  be asked, and never declare a task done in conversation without it.
+- The moment I voice a new idea outside the current task's scope,
+  append it as one dated line to docs/IDEAS.md without being asked.
+  IDEAS.md additions are exempt from task-diff purity: they ride
+  whatever PR carries them, or the handoff micro-PR.
 
 ## Project knowledge & tracking
 - Before any task: read docs/FOUNDATION.md principles and the active
@@ -38,10 +45,17 @@ Full product definition: docs/FOUNDATION.md. Decision log: docs/DECISIONS.md.
   (Vn.Sm.Tk) or a GitHub issue ("Closes #N").
 - Decisions are recorded with /decide into docs/DECISIONS.md — never leave
   a decision only in conversation.
+- Record everything: any deviation from a task as written goes in its
+  PR summary; any concern, gotcha, or open question goes in HANDOFF's
+  Blockers/Gotchas at handoff; any decision gets a D-number. Nothing
+  important may live only in conversation.
 - New ideas go to the docs/IDEAS.md inbox, not into scope, until triaged.
 - docs/ is also an Obsidian vault: docs/.obsidian/ must stay gitignored.
 - Work tracking lives in GitHub Issues + the project board; do not create
   parallel todo files.
+- Operating manual & cockpit: docs/HOME.md — tool routing, the daily
+  loop, the information hierarchy, how state syncs. Git outranks
+  notes; ask the claim question before starting any task.
 
 ## Safety rules (non-negotiable)
 - This repo is PUBLIC. NEVER include secrets, API keys, tokens, passwords,
