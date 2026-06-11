@@ -31,7 +31,10 @@ by me in the Claude Web Project chat — it arrives later as a paste
 block on branch docs/v1.s1.t1-fact-inventory. Claude Code must NOT
 start V1.S1.T1 independently.
 Decisions this session: D-007 (shadcn/ui builds on Base UI); D-008
-(cockpit, derived state, automatic recording).
+(cockpit, derived state, automatic recording); D-009 (pacing law:
+finish-first, attention cap Now + one parallel slot, flexible for
+no-overview work — PR #27; IDEAS.md seeded with the paths-ignore
+docs/** CI idea).
 Blockers / open questions: CLAUDE.md still says "Claude Code plugins:
 not used" — stale since PR #21 enables three; needs a small docs PR
 when convenient.
@@ -40,8 +43,7 @@ feat/v1.s2.t3-supabase; add Supabase MCP locally first — tokens
 per-machine, never in repo; claude.ai bridge versions gone after
 PR #21, use `claude mcp add` per machine). V1.S2.T5 (design
 foundations) is [P after T1] — needs Playwright plugin re-enabled per
-equipment plan. V1.S2.T4 waits on V1.S1.T7 + T3. V1.S2.T5 (design
-foundations) also [P after T1] but wants Playwright MCP. S1 lane:
+equipment plan. V1.S2.T4 waits on V1.S1.T7 + T3. S1 lane:
 T2–T6 source vetting is [P] and open.
 Gotchas discovered: Vercel CLI now authenticated on this machine
 (wsher0901); `vercel git connect` needs the Vercel GitHub App
