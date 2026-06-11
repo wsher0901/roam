@@ -69,3 +69,20 @@ Full product definition: docs/FOUNDATION.md. Decision log: docs/DECISIONS.md.
   families, DB region co-located + pooled connections.
 - Do NOT scaffold the app yet — scaffolding begins when V1.S2.T1 opens
   (V1.S1 is docs + spike-script work only).
+
+## Claude Code equipment (add when the stage opens — never stockpile)
+- V1.S1: no extra tooling. Web research + plain Node spike scripts.
+- V1.S2: add Supabase MCP (project, migrations, schema) and Vercel MCP
+  (deploys, logs, preview URLs). Tokens live per-machine in local MCP
+  config — never in this public repo.
+- First UI work onward (V1.S2.T5+): add Playwright MCP so Claude Code
+  renders, screenshots, and judges its own UI before showing me.
+- After V1.S3.T1 settles the check-module contract: encode it as a
+  project skill in .claude/skills/check-module/ — V1.S7's three modules
+  must follow it exactly.
+- Claude Code plugins: not used (solo repo; commands + skills + MCP
+  cover it).
+- Roam's RUNTIME tool use is a source-type question under the
+  reliability law (fuzzy facts may use Claude+web-search as a graded
+  source, rendered as derived/unverified); settle the exact runtime
+  architecture when V1.S3.T1 opens.
