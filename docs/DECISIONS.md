@@ -90,3 +90,22 @@ hatch); all-TS on a long-running own server (ops burden; loses built-in
 auth and the preview-URL flow the rituals assume); exotic frontends
 (Svelte/Solid/Qwik — thinner ecosystem for Roam's needs, less
 Claude-Code-trodden); AI SDK RSC/streamUI variant (development paused).
+
+## D-006 — 2026-06 — V1 roadmap cut (stages & tasks)
+Decision: V1 ships in 8 stages — S1 Data Definition gate running
+parallel with S2 skeleton/design, S3 engine core + Weather and Sky & sea
+deep, S4 Suggest, S5 Plan, S6 Edit+revalidate, S7 remaining three
+families in parallel, S8 demo polish — 33 tasks, each one branch/PR,
+tagged [P]/[seq]; accounts/auth parked to V2's bucket.
+Why:
+- depth-before-breadth made literal: two families ride the entire spine
+  before the other three exist, and S7 stress-tests the plug-in promise
+  (addition, not rewrite);
+- Weather + Sky & sea first: the cleanest consistently-reliable sources,
+  fastest to satisfy the reliability law, and they power the demo wow;
+- S1 parallel with S2 gives the multi-session workflow real concurrency
+  from day one.
+Alternatives rejected: engine-first with all five families before any
+UI (long dark period, no momentum); thin vertical slices of everything
+at once (rework risk; violates depth-first); auth in V1 (the demo does
+not need it; Supabase makes it a V2 addition, not a rewrite).
