@@ -57,7 +57,7 @@ schema is written.
 ### V1.S2 — Skeleton & design foundations (parallel lane with S1)
 Done when: a styled shell is deployed on Vercel with CI green and the
 database connected.
-- [ ] V1.S2.T1 [P] App scaffold — Next.js App Router + TypeScript +
+- [x] V1.S2.T1 [P] App scaffold — Next.js App Router + TypeScript +
       Tailwind v4 + shadcn/ui; repo layout with isolated engine/ module
       dir; ESLint/Prettier; Vitest with one passing test
 - [ ] V1.S2.T2 [seq after T1] Deploy + CI — Vercel project with PR
