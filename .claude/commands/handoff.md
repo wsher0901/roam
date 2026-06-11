@@ -6,13 +6,17 @@ End-of-sitting ritual. Do all of this:
    work on it (including any edits made in docs/ via Obsidian) with a
    clear message. If there is nothing to commit, continue to step 2.
    If the current branch IS main and anything besides docs/HANDOFF.md
-   has changed, STOP and ask me what to do — never commit other work
-   to main.
+   or docs/IDEAS.md has changed, STOP and ask me what to do — never
+   commit other work to main. (IDEAS.md additions ride the handoff
+   micro-PR — the D-008 inbox carve-out.)
 2. Create or update docs/HANDOFF.md (under 20 lines) in exactly this
    structure, using today's date and the machine label (run
    `git config roam.machine`; if unset, fall back to `hostname`):
    # Handoff — <date>, <machine label>
    Active branch(es):
+   Web lanes: <Vn.Sm.Tk open in Web chats — derive candidates yourself
+     (unticked Active-stage tasks with no branch) and ask me to
+     confirm; this question is never skipped>
    Roadmap position: <Vn.Sm / Vn.Sm.Tk>
    Done this session:
    In flight (half-finished):

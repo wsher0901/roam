@@ -20,3 +20,6 @@ Task-completion ritual. Do all of this:
    commit, push, PR titled "Handoff note", squash-merge immediately
    without asking (the D-002 carve-out), delete the branch, checkout
    main, pull.
+8. Close the loop: state the next recommended action(s), each labeled
+   with its tool (Web = needs thinking, Code = fully specified) and
+   parallel or sequential per the [P]/[seq] tags and current lanes.
