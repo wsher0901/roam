@@ -67,4 +67,5 @@ Full product definition: docs/FOUNDATION.md. Decision log: docs/DECISIONS.md.
   cache-heavy (every fetched fact stored in Postgres with a freshness
   window — the dataset IS the speed), parallel fan-out across check
   families, DB region co-located + pooled connections.
-- Do NOT scaffold the app yet — scaffolding begins when V1.S1 opens.
+- Do NOT scaffold the app yet — scaffolding begins when V1.S2.T1 opens
+  (V1.S1 is docs + spike-script work only).
