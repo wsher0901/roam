@@ -54,10 +54,17 @@ Full product definition: docs/FOUNDATION.md. Decision log: docs/DECISIONS.md.
 ## Self-improvement
 - When I correct you, update this CLAUDE.md so the mistake never repeats.
 
-## Tech stack (decided — DECISIONS.md D-001)
-- Next.js (TypeScript) + Supabase (Postgres + Auth) + Vercel hosting.
-- Planning brain: Claude API, server-side only.
-- Scoring engine isolated as its own tested module (Python-extraction
-  escape hatch).
-- Do NOT scaffold the app yet — scaffolding begins when ROADMAP's first
-  milestone opens.
+## Tech stack (decided — DECISIONS.md D-001 + D-005)
+- Next.js App Router (TypeScript, React 19) + Supabase (Postgres + Auth)
+  + Vercel hosting.
+- Frontend layer: Tailwind v4 + shadcn/ui, Motion (Framer Motion),
+  MapLibre GL maps, dnd-kit drag-and-drop, Vercel AI SDK ("AI SDK UI"
+  flavor — not the paused RSC variant), TanStack Query + Zustand.
+- Planning brain: Claude API, server-side only, streamed.
+- Engine (checks + scoring) isolated as its own tested module
+  (Python-extraction escape hatch for future ML tuning).
+- Performance doctrine: stream-first (UI never blocks on the brain),
+  cache-heavy (every fetched fact stored in Postgres with a freshness
+  window — the dataset IS the speed), parallel fan-out across check
+  families, DB region co-located + pooled connections.
+- Do NOT scaffold the app yet — scaffolding begins when V1.S1 opens.

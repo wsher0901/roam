@@ -97,4 +97,5 @@ anonymized interaction signals tune the ranking.
 - Explain everything: every ranking and every edit verdict carries its
   reasons.
 - Room for monetization, never at V1's expense.
-- New ideas land in docs/IDEAS.md, triaged into modules and milestones.
+- New ideas land in docs/IDEAS.md, triaged into check modules and Vn
+  buckets.
