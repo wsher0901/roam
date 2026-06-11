@@ -1,13 +1,14 @@
-# Handoff — 2026-06-10, 4FL102-APP-WH
+# Handoff — 2026-06-11, 4FL102-APP-WH
 Active branch: main
 Roadmap position: n/a (ROADMAP not yet populated)
-Done this session: workflow kit v3 installed (PR #1); context engine v2 —
-session-start hook (auto-pull + handoff briefing), structured handoff,
-propagating /decide, cloud-aware /pickup, progress-ticking /ship.
+Done this session: handoff machine field now uses `git config
+roam.machine`, hostname fallback (PR #3).
 In flight (half-finished): nothing.
 Decisions this session: none.
 Blockers / open questions: none.
 Next steps (exact): Issue 2 — write FOUNDATION.md and the roadmap
-(Claude Web project chat).
-Gotchas discovered: in Git Bash on this machine, bare `cmd` resolves to a
-broken Anaconda shim — the session-start hook calls cmd.exe directly.
+(Claude Web project chat). Optional: set `git config roam.machine
+"<label>"` on each computer for friendly handoff titles.
+Gotchas discovered: `git config roam.machine` is unset on this machine —
+titles fall back to hostname until it is set. GitHub blocks direct pushes
+to main (PR-only rule), so handoff notes need a PR or a rule bypass.
