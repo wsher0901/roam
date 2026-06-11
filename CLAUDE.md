@@ -86,3 +86,13 @@ Full product definition: docs/FOUNDATION.md. Decision log: docs/DECISIONS.md.
   reliability law (fuzzy facts may use Claude+web-search as a graded
   source, rendered as derived/unverified); settle the exact runtime
   architecture when V1.S3.T1 opens.
+- Subagents (.claude/agents/): none speculatively. Two planned — a
+  read-only "reviewer" wired into /ship once code + CI exist
+  (V1.S2.T2+): checks each diff against FOUNDATION principles, the
+  task's roadmap line, the reliability law, and the no-secrets rule
+  before any PR opens; and a "design-critic" at first UI work
+  (V1.S2.T5+), paired with Playwright screenshots, judging against the
+  design tokens. Write each spec when its stage opens.
+- Built-in exploratory subagents (parallel research within one task)
+  need no spec — distinct from the roadmap's [P] lanes, which are
+  separate sessions on separate branches.
