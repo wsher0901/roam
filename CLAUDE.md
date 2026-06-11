@@ -24,7 +24,9 @@ Full product definition: docs/FOUNDATION.md. Decision log: docs/DECISIONS.md.
   run tests + linter, open the PR, summarize the change in plain language
   (include the Vercel preview link once previews exist), then ask me.
   Only after I approve: squash-merge, delete the branch, pull main,
-  update docs/HANDOFF.md. (/ship does this.)
+  update docs/HANDOFF.md. (/ship does this.) Sole exception: a PR
+  containing only a docs/HANDOFF.md update (written by /handoff or
+  /ship) is opened and squash-merged immediately without asking (D-002).
 - If I say anything like "done for today", "heading out", "wrapping up",
   or "bye": run the full /handoff procedure immediately without being asked.
 - If I forget any of this, do it anyway without being asked.
