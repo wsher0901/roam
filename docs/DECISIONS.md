@@ -109,3 +109,19 @@ Alternatives rejected: engine-first with all five families before any
 UI (long dark period, no momentum); thin vertical slices of everything
 at once (rework risk; violates depth-first); auth in V1 (the demo does
 not need it; Supabase makes it a V2 addition, not a rewrite).
+
+## D-007 — 2026-06 — shadcn/ui builds on Base UI, not Radix
+Decision: Roam's shadcn/ui components use the Base UI primitive library
+(shadcn's current default, "nova" preset) rather than the legacy Radix
+option; confirmed with the V1.S2.T1 scaffold approval.
+Why:
+- shadcn's docs, CLI defaults, and new components now target Base UI —
+  the well-trodden path D-005 optimizes for points there for greenfield
+  apps;
+- nothing existed to migrate, and switching costs only grow as
+  components accumulate (they are vendored files);
+- Radix remains available per-component if a gap ever appears.
+Alternatives rejected: Radix UI (the legacy default — larger back
+catalog of examples, but new shadcn development has moved off it);
+deferring the choice (every added component would deepen whichever
+default we ignored).

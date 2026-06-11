@@ -57,9 +57,10 @@ Full product definition: docs/FOUNDATION.md. Decision log: docs/DECISIONS.md.
 ## Tech stack (decided — DECISIONS.md D-001 + D-005)
 - Next.js App Router (TypeScript, React 19) + Supabase (Postgres + Auth)
   + Vercel hosting.
-- Frontend layer: Tailwind v4 + shadcn/ui, Motion (Framer Motion),
-  MapLibre GL maps, dnd-kit drag-and-drop, Vercel AI SDK ("AI SDK UI"
-  flavor — not the paused RSC variant), TanStack Query + Zustand.
+- Frontend layer: Tailwind v4 + shadcn/ui (Base UI primitives, not
+  Radix — D-007), Motion (Framer Motion), MapLibre GL maps, dnd-kit
+  drag-and-drop, Vercel AI SDK ("AI SDK UI" flavor — not the paused RSC
+  variant), TanStack Query + Zustand.
 - Planning brain: Claude API, server-side only, streamed.
 - Engine (checks + scoring) isolated as its own tested module
   (Python-extraction escape hatch for future ML tuning).
