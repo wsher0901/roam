@@ -10,4 +10,5 @@ Next steps (exact): Issue 2 — write FOUNDATION.md and the roadmap
 (Claude Web project chat). Optional: set `git config roam.machine
 "<label>"` on each computer for friendly handoff titles.
 Gotchas discovered: `git config roam.machine` is unset on this machine —
-titles fall back to hostname until it is set.
+titles fall back to hostname until it is set. GitHub blocks direct pushes
+to main (PR-only rule), so handoff notes need a PR or a rule bypass.
