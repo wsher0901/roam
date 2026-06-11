@@ -20,6 +20,12 @@ Task-completion ritual. Do all of this:
    commit, push, PR titled "Handoff note", squash-merge immediately
    without asking (the D-002 carve-out), delete the branch, checkout
    main, pull.
-8. Close the loop: state the next recommended action(s), each labeled
-   with its tool (Web = needs thinking, Code = fully specified) and
-   parallel or sequential per the [P]/[seq] tags and current lanes.
+8. Close the loop, finish-first and capped: recommend ONE next action
+   (open lanes and pending blocks outrank new tasks), plus at most one
+   parallel slot if a lane is free. Label each "-> Claude Code" or
+   "-> CLAUDE WEB (open/answer chat: <title>)" and sequential or
+   parallel. Work needing no overview from me may be offered as extra
+   autonomous lanes at your discretion; if I explicitly ask for
+   "more", present the full ordered menu. If attention lanes are
+   occupied or the day's pace is met, say so plainly ("nothing more
+   needed now — finish X") instead of adding work.
