@@ -60,16 +60,20 @@ Open this note first. It stores no state — only where state lives.
 
 ## Tool routing
 - Claude Web / Desktop (same brain, synced; Desktop is a convenient
-  window and can host a second Code session): THINK here. Open an
+  window and the launchpad for cloud Code sessions): THINK here. Open an
   ID-titled chat when a task needs decisions, trade-offs, or design.
   Every chat that changes anything ends in exactly ONE paste block —
   pasted immediately, or it stays a tracked open lane.
 - Claude Code: EXECUTE here. Inputs it accepts: /pickup at sit-down;
   "Start Vn.Sm.Tk" for fully-specified tasks; paste blocks from Web
   chats; PR approvals; "done for today" (runs /handoff).
-- Parallel lanes: two [P] tasks at once = two Code sessions on separate
-  branches — second machine, or a git worktree on one machine. Never
-  two sessions in one checkout.
+- Parallel lanes: two [P] tasks at once = two Code sessions on
+  separate branches. Primary vehicle (D-017): a Claude Code CLOUD
+  session — launched from Claude Desktop's Code tab, claude.ai/code,
+  or `claude --remote "<kickoff prompt>"` — runs remotely in its own
+  isolated clone, on its own branch, ships its own PR. Fallbacks:
+  second machine, or a git worktree on one machine. Never two
+  sessions in one checkout.
 - Obsidian: the reading room + quick capture into IDEAS.md; /handoff
   sweeps it (D-008). Never hand-edit FOUNDATION / ROADMAP / DECISIONS.
 
@@ -95,8 +99,12 @@ flagged explicitly with the chat to open or answer. Flexible cap: work
 needing no overview (fully specified, no decisions) may run as extra
 autonomous lanes at Claude's discretion; an explicit "more" from me
 unlocks the full ordered menu. Stopping is a valid next step.
-Parallel-ready menu (D-016): every briefing and completion appends
-the list of unblocked, unclaimed [P] tasks — tool label, branch name,
-launch command (git worktree recipe for a same-machine second
-session, typically hosted in Claude Desktop). Informational, exempt
-from the cap, never an ask.
+Parallel-ready menu (D-016; launch recipe per D-017): every briefing
+and completion appends the list of unblocked, unclaimed [P] tasks —
+tool label, branch name, and a paste-ready kickoff prompt for a
+Claude Desktop cloud session (git worktree recipe only as the
+offline fallback). Informational, exempt from the cap, never an ask.
+An explicit "launch them" from me flips the menu to action: Code
+launches the approved lanes itself via `claude --remote` from fresh
+main and reports session URLs — the approval doubles as the claim
+answer for those lanes (D-017).

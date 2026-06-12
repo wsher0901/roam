@@ -44,9 +44,14 @@ Full product definition: docs/FOUNDATION.md. Decision log: docs/DECISIONS.md.
   answer "what's next" with an unrequested menu. Stopping is a valid
   next step. Every briefing and completion ALSO appends a
   "Parallel-ready:" list (D-016) — all unblocked, unclaimed [P]
-  tasks, each with tool label, branch name, and launch command
-  (worktree recipe for a same-machine second session) — informational,
-  exempt from the cap.
+  tasks, each with tool label, branch name, and launch command — a
+  paste-ready kickoff prompt for a Claude Code cloud session launched
+  from Claude Desktop (D-017; git worktree recipe is the offline
+  fallback only) — informational, exempt from the cap. If I give an
+  explicit launch approval ("launch them" / "launch T4+T6"), launch
+  those lanes yourself via `claude --remote` from freshly pulled
+  main and report each session URL; that approval doubles as the
+  claim answer for the launched lanes (D-017).
 - The moment I voice a new idea outside the current task's scope,
   append it as one dated line to docs/IDEAS.md without being asked.
   IDEAS.md additions are exempt from task-diff purity: they ride
@@ -108,8 +113,10 @@ Full product definition: docs/FOUNDATION.md. Decision log: docs/DECISIONS.md.
 - After V1.S3.T1 settles the check-module contract: encode it as a
   project skill in .claude/skills/check-module/ — V1.S7's three modules
   must follow it exactly.
-- Claude Code plugins: not used (solo repo; commands + skills + MCP
-  cover it).
+- Claude Code plugins (.claude/settings.json): context7,
+  frontend-design, security-guidance enabled; playwright staged OFF
+  until first UI work (V1.S2.T5); superpowers off. Machine-local
+  plugins (e.g. Vercel) live in settings.local.json, never here.
 - Roam's RUNTIME tool use is a source-type question under the
   reliability law (fuzzy facts may use Claude+web-search as a graded
   source, rendered as derived/unverified); settle the exact runtime
