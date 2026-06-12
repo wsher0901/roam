@@ -335,8 +335,12 @@ shell prefix; cloud sessions launch only via the routes above.)
 Mechanics: a cloud session clones the repo's GitHub REMOTE at the
 branch you launch from — so launch lanes from freshly pulled main
 and push local commits first. `--remote` is fire-and-forget (prints
-the session URL and returns); monitor lanes with /tasks in any Code
-session (press t to teleport in) or at claude.ai/code. One-time
+the session URL and returns); watch lanes at claude.ai/code or the
+Claude mobile app — /tasks does NOT list cloud sessions (it shows
+only the current session's local background work; corrected
+2026-06-12 after live test); in a CLI, /teleport (alias /tp) opens
+the cloud-session picker, but picking one pulls it into that
+terminal — it is an entry door, not a dashboard. One-time
 prerequisite per account: GitHub access via the Claude GitHub App,
 or `/web-setup` to sync the local gh token.
 Launch protocol: the menu stays informational, but an explicit
