@@ -331,7 +331,14 @@ paste-ready kickoff prompt for a Claude Code CLOUD session, launched
 from Claude Desktop's Code tab, claude.ai/code, or a terminal via
 `claude --remote "<kickoff prompt>"`: task ID + branch name + a
 pointer to the pattern to follow. (No "&" prefix exists — "!" is the
-shell prefix; cloud sessions launch only via the routes above.) Each cloud lane runs remotely in
+shell prefix; cloud sessions launch only via the routes above.)
+Mechanics: a cloud session clones the repo's GitHub REMOTE at the
+branch you launch from — so launch lanes from freshly pulled main
+and push local commits first. `--remote` is fire-and-forget (prints
+the session URL and returns); monitor lanes with /tasks in any Code
+session (press t to teleport in) or at claude.ai/code. One-time
+prerequisite per account: GitHub access via the Claude GitHub App,
+or `/web-setup` to sync the local gh token. Each cloud lane runs remotely in
 its own isolated clone of the repo, on its own branch, and ships its
 own PR. Second-machine checkouts and same-machine git worktrees
 remain available as offline fallbacks only. Unchanged: never two
