@@ -252,3 +252,25 @@ Why:
   (e.g. heat ceilings) unambiguous.
 Alternatives rejected: store-as-entered (mixed units inside math);
 imperial-canonical (every upstream source is SI-native).
+
+## D-014 — 2026-06 — Telemetry posture: capture now, use later
+Decision: V1 captures the behavior-event corpus defined in
+docs/data/TELEMETRY.md §1 from day one, under: consent-gated
+collection (GPC/DNT respected; consent grants/withdrawals logged),
+pseudonymous session ids (no accounts in V1), no PII and no raw IPs in
+payloads, stated-only fields never appearing in events, raw-event
+retention time-boxed (12-month default) with aggregates retained.
+Exposure law: every recommendation-reaction event records the full
+slate shown (items + positions), not just the acted-on item. V1 may
+use events only for product/funnel debugging, fatigue-cap tuning, and
+quality signals (TELEMETRY.md §2); ranking personalization remains
+Later per FOUNDATION; event data is never sold or shared.
+Why:
+- events cannot be backfilled — day one of the Later ranking work
+  should begin with months of slates, not zero;
+- feedback only exists over what was shown and position shapes
+  response, so click-only logs are uninterpretable;
+- the privacy floor keeps the corpus lawful and clean.
+Alternatives rejected: defer capture entirely (permanent data loss);
+click-only logging without exposures (position-biased, unusable);
+use-now ranking tuning (violates FOUNDATION's Later).
