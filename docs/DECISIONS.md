@@ -328,8 +328,10 @@ briefings, not files — D-008).
 ## D-017 — 2026-06 — Cloud sessions are the parallel-lane vehicle (amends D-016)
 Decision: the launch command in the Parallel-ready menu is a
 paste-ready kickoff prompt for a Claude Code CLOUD session, launched
-from Claude Desktop (or claude.ai/code): task ID + branch name + a
-pointer to the pattern to follow. Each cloud lane runs remotely in
+from Claude Desktop's Code tab, claude.ai/code, or a terminal via
+`claude --remote "<kickoff prompt>"`: task ID + branch name + a
+pointer to the pattern to follow. (No "&" prefix exists — "!" is the
+shell prefix; cloud sessions launch only via the routes above.) Each cloud lane runs remotely in
 its own isolated clone of the repo, on its own branch, and ships its
 own PR. Second-machine checkouts and same-machine git worktrees
 remain available as offline fallbacks only. Unchanged: never two

@@ -69,7 +69,8 @@ Open this note first. It stores no state — only where state lives.
   chats; PR approvals; "done for today" (runs /handoff).
 - Parallel lanes: two [P] tasks at once = two Code sessions on
   separate branches. Primary vehicle (D-017): a Claude Code CLOUD
-  session launched from Claude Desktop — runs remotely in its own
+  session — launched from Claude Desktop's Code tab, claude.ai/code,
+  or `claude --remote "<kickoff prompt>"` — runs remotely in its own
   isolated clone, on its own branch, ships its own PR. Fallbacks:
   second machine, or a git worktree on one machine. Never two
   sessions in one checkout.
