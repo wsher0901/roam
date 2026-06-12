@@ -74,6 +74,13 @@ Open this note first. It stores no state — only where state lives.
   isolated clone, on its own branch, ships its own PR. Fallbacks:
   second machine, or a git worktree on one machine. Never two
   sessions in one checkout.
+- Fix routing after lane review (D-018) — cloud lanes produce, the
+  cockpit terminal decides; smallest sufficient context wins:
+  default = edit here on the lane's existing branch (PR updates);
+  `claude --teleport <id>` (or t in /tasks) only when the lane's own
+  reasoning is needed — founder action, Claude never teleports
+  itself; a genuinely new independent chunk becomes a new lane via
+  the menu.
 - Obsidian: the reading room + quick capture into IDEAS.md; /handoff
   sweeps it (D-008). Never hand-edit FOUNDATION / ROADMAP / DECISIONS.
 

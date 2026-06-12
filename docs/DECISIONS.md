@@ -366,3 +366,31 @@ Alternatives rejected: same-machine worktrees as primary (ties lanes
 to one computer and its local state — contradicts the two-computer
 reality); second-machine-only parallelism (both lanes should be
 launchable from one seat).
+
+## D-018 — 2026-06 — Fix-routing triage after lane review (extends D-017)
+Decision: when reviewing a finished cloud lane's PR produces
+follow-up work, Claude Code routes it automatically — no menu, no
+ask. Tie-breaker: smallest sufficient context wins.
+1. DEFAULT — edit here: small fixes and founder judgment calls are
+   made in the cockpit terminal on the lane's EXISTING branch
+   (checkout, edit, push; the PR updates). Never spawn a session
+   where a branch checkout suffices.
+2. TELEPORT — when the fix hinges on the lane's own reasoning ("why
+   did it grade X a B?"), recommend teleporting and hand the founder
+   the exact command (`claude --teleport <session-id>`, or t in
+   /tasks). Teleport takes over a terminal, so it is a founder
+   action, never run by Claude itself.
+3. NEW LANE — only when review yields a genuinely NEW, independent,
+   fully-specified chunk of work: it becomes its own task + branch in
+   the parallel-ready menu, subject to the D-017 launch protocol.
+Why:
+- review is sequential by nature — the founder is the bottleneck,
+  and fixes inherit the lane's branch so one task stays one PR;
+- spawning sessions for fixes fragments context and burns shared
+  rate limits for no parallelism gain;
+- a mechanical triage spares the founder a routing decision per fix
+  (anti-fatigue law).
+Alternatives rejected: always-teleport (heavyweight; hijacks the
+cockpit); always-new-session (loses lane context, splits a task
+across PRs); ask-each-time (decision fatigue over a mechanical
+choice).
