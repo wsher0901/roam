@@ -403,3 +403,29 @@ Alternatives rejected: fully automatic routing (invisible decisions
 exactly where the founder wants overview); always-teleport
 (heavyweight; hijacks a terminal); always-new-session (loses lane
 context, splits a task across PRs).
+
+## D-019 — 2026-06 — Launch mechanics correction (amends D-017)
+Decision: `claude --remote` enforces a TTY guard — it refuses every
+non-interactive invocation. Verified at first live launch: Claude's
+own shell is headless AND the `!` prefix pipes output back into the
+conversation, so NEITHER can create cloud sessions. The working
+route: Claude writes a batch launcher (.cmd, one `claude --remote`
+line per approved lane) OUTSIDE the repo — never committed, the
+repo is public — and opens it as a visible console window on the
+founder's screen (Start-Process). The lanes launch in that attended
+window, print their session URLs, and the founder closes it.
+D-017 is otherwise unchanged: explicit founder approval still
+triggers the launch, Claude still prepares and fires everything,
+and the session IDs are recorded in HANDOFF as open lanes.
+Why:
+- the TTY guard exists so cloud sessions are born attended; a
+  popped window on the founder's desktop is exactly that — visible,
+  readable, closed by a human;
+- discovered live (both headless and `!` routes failed at first
+  launch); docs must encode verified reality, not assumptions —
+  this is the second correction of an assumed mechanic (worktrees
+  in D-016 → cloud in D-017; headless launch in D-017 → attended
+  window here).
+Alternatives rejected: faking a TTY from the headless shell
+(defeats the guard's purpose); founder hand-typing each launch
+command (error-prone, scales badly past two lanes).

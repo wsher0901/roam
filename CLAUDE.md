@@ -49,9 +49,12 @@ Full product definition: docs/FOUNDATION.md. Decision log: docs/DECISIONS.md.
   from Claude Desktop (D-017; git worktree recipe is the offline
   fallback only) — informational, exempt from the cap. If I give an
   explicit launch approval ("launch them" / "launch T4+T6"), launch
-  those lanes yourself via `claude --remote` from freshly pulled
-  main and report each session URL; that approval doubles as the
-  claim answer for the launched lanes (D-017). When lanes finish,
+  those lanes yourself from freshly pulled main by writing the
+  batch launcher OUTSIDE the repo and popping it as an attended
+  console window (D-019 — `claude --remote` refuses headless
+  shells and the `!` prefix); record each session ID in HANDOFF;
+  that approval doubles as the claim answer for the launched lanes
+  (D-017). When lanes finish,
   review their PRs yourself before I do (D-018) and surface issues
   needing my attention, each with a routing recommendation — stay
   here on the lane's branch (default), teleport, or new lane; my
