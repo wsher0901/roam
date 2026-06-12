@@ -340,7 +340,13 @@ Claude mobile app — /tasks does NOT list cloud sessions (it shows
 only the current session's local background work; corrected
 2026-06-12 after live test); in a CLI, /teleport (alias /tp) opens
 the cloud-session picker, but picking one pulls it into that
-terminal — it is an entry door, not a dashboard. One-time
+terminal — an entry door, not a dashboard, and ONE-WAY: teleport
+moves the session's execution onto the local machine (cloud
+sandbox released; the work then dies with that terminal; no
+send-back from the CLI). To keep a running lane cloud-resident —
+e.g. to answer a question it is waiting on — reply from
+claude.ai/code or the mobile app; teleport only to deliberately
+bring a lane home (safe once its work is pushed). One-time
 prerequisite per account: GitHub access via the Claude GitHub App,
 or `/web-setup` to sync the local gh token.
 Launch protocol: the menu stays informational, but an explicit
