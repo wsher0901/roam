@@ -37,6 +37,11 @@ live status; informing, never transacting.
   Dictionary line yet, the vetting task derives it from the What line.
 - Units: all stored values are SI/metric; conversion happens at
   display time only (D-013).
+- Fact cache is bitemporal and append-only: every value carries
+  valid_for (when true in the world) and recorded_at (when learned);
+  values are superseded, never overwritten (D-015).
+- The Dictionary line doubles as the schema-drift contract — live
+  source payloads are monitored against it (docs/data/TELEMETRY.md §3).
 - Traveler-side ask tiers, provenance, and upsert rules live in
   Appendix A (D-012).
 
@@ -571,7 +576,11 @@ general-signals stand-in (FOUNDATION).
   cruise-port-calls.
 Rule: one SOURCES.md entry per slot; every entry lists the fact IDs it
 serves, the confirmed payload keys (Dictionary), its reliability
-grade, freshness, coverage notes, cost, and the spike script path.
+grade, freshness, coverage notes, cost, the spike script path,
+retention_rights (store-raw / derived-only / cache-only / none),
+license_class, and attribution duties. Retention and license are
+PRIMARY selection criteria: caching-prohibited sources disqualify a
+slot from the asset layer (D-015).
 
 ## Appendix A — Traveler parameters (TP-01..47) — per D-011 + D-012
 The floor: origin + dates always suffices. Dates carry: start, end,

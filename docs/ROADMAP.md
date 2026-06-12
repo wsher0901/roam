@@ -53,6 +53,9 @@ schema is written.
       consolidated docs/data/SOURCES.md; any fact lacking a reliable
       source explicitly marked "LLM-research grade -> rendered as
       unverified"
+      Also covers: docs/data/TELEMETRY.md tables (events, claim
+      ledger, eval runs, actuals, source health) and the bitemporal
+      append-only fact-cache law (D-014, D-015).
 
 ### V1.S2 — Skeleton & design foundations (parallel lane with S1)
 Done when: a styled shell is deployed on Vercel with CI green and the
@@ -92,6 +95,10 @@ for any destination + dates using Weather and Sky & sea.
       `engine demo <place> <dates>` harness
 - [ ] V1.S3.T6 [P] Engine test suite — golden tests on fixtures; CI
       runs with zero live calls
+- [ ] V1.S3.T7 [P after T2] Actuals harvester — scheduled job that
+      records observed values once a fact's valid_for passes; pairs
+      with the claim ledger for calibration (D-015; spec:
+      docs/data/TELEMETRY.md §2)
 
 ### V1.S4 — Suggest
 Done when: floor input (origin + dates) streams back ranked, reasoned
