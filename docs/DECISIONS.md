@@ -190,3 +190,25 @@ Alternatives rejected: US+Canada-only V1 (fastest to all-green grades,
 but kills international demo scenarios and only defers sourcing work we
 must do anyway); US plus a named shortlist (bounded, but creates a
 two-tier product and still leaves the ladder unbuilt).
+
+## D-011 — 2026-06 — Traveler input vocabulary: rich, nullable, tiered, append-only
+Decision: V1 collects the traveler vocabulary TP-01..26 defined in
+docs/data/FACTS.md Appendix A. The floor never changes: origin + dates
+always suffices (dates may carry optional earliest-departure /
+latest-return boundary times). Every other field defaults to Null. Each
+field carries a handling tier: engine (a named V1 check consumes it),
+brain-only (Claude personalizes with it; no deterministic check), or
+Later-socket field (stored, unconsumed — accessibility). Extension is
+append-only: a new field is one nullable column plus a D-number;
+removals/renames after V1.S1.T7 are migrations.
+Why:
+- FOUNDATION promises "from the floor (origin + free dates) to rich
+  preferences"; structuring only what checks consume keeps the
+  reliability law honest on the input side;
+- null-default keeps the floor sacred;
+- append-only matches "nothing in V1 may require a rewrite".
+Alternatives rejected: floor-only (underpowers logic FOUNDATION names:
+red-eye fit, jet-lag pacing, multi-airport choice); free-text-only
+supplements (the brain can read them, deterministic checks cannot);
+exhaustive "all inputs ever" enumeration (stalls the gate and fakes
+capability for fields nothing consumes).
