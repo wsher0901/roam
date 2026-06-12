@@ -1,24 +1,26 @@
-# Handoff — 2026-06-12, Work
-Active branch(es): docs/parallel-ready-d016 (PR #39 OPEN — awaiting
-founder approval; carries D-016 wiring + this note).
+# Handoff — 2026-06-12, Work (sitting 2)
+Active branch(es): main — no open PRs, no open lanes.
 Web lanes: none (confirmed).
 Roadmap position: V1.S1 at 2/7, V1.S2 at 3/5.
-Done this session: V1.S1.T1 fact inventory (PR #31) + amendment 1
-(PR #33: 54 facts, TP-01..47, ask tiers, SI units) + amendment 2
-(PR #35: TELEMETRY.md, claim ledger, actuals harvester V1.S3.T7,
-bitemporal license-segmented cache); V1.S1.T2 weather vetting
-(PR #37: SOURCES.md born — Open-Meteo A, NWS alerts B, spike scripts).
-In flight (half-finished): PR #39 (D-016 parallel-ready menu) open,
-unapproved — approve or veto at next sitting.
-Decisions this session: D-010 coverage ladders · D-011 traveler vocab
-· D-012 elicitation policy · D-013 SI units · D-014 telemetry ·
-D-015 data-asset law · D-016 parallel-ready menu (in PR #39).
-Blockers / open questions: CLAUDE.md "plugins: not used" line stale.
-Next steps (exact): approve/merge PR #39; then V1.S1.T3–T6 vetting
-([P]; follow the T2 pattern in SOURCES.md; worktree recipe in HOME.md
-§Pacing). T7 agenda: grade scale, date flexibility, backup posture.
-Gotchas discovered: .prettierrc now has endOfLine:auto (Windows CRLF
-churn); other machine still needs Supabase MCP (PowerShell, not bash),
-vercel login, roam.machine label — AND real Python 3 (security-
-guidance plugin hook errors on the Store stub; fix:
+Done this sitting: PR #39 approved + squash-merged — D-016
+parallel-ready menu wired into /pickup, /ship, CLAUDE.md, HOME.md;
+stale remote branch refs pruned (all were merged PRs).
+Done earlier today: V1.S1.T1 fact inventory (PR #31) + amendments
+(PR #33, PR #35); V1.S1.T2 weather vetting (PR #37: SOURCES.md born —
+Open-Meteo A, NWS alerts B, spike scripts).
+In flight (half-finished): nothing.
+Decisions today: D-010 … D-015 (see DECISIONS.md) · D-016
+parallel-ready menu (merged).
+Blockers / open questions: CLAUDE.md "plugins: not used" line still
+stale — tiny docs fix, ride a future PR.
+Next steps (exact): V1.S1.T3–T6 source vetting ([P], four lanes;
+follow the T2 pattern in SOURCES.md — confirm Dictionary keys,
+record retention/license/attribution per D-015, spike script per
+fetched slot). V1.S2.T5 design foundations ([P]; re-enable Playwright
+plugin per equipment plan). T7 agenda: ratify grade scale,
+date-flexibility schema, backup posture. V1.S2.T4 waits on V1.S1.T7.
+Gotchas discovered (durable): .prettierrc has endOfLine:auto (Windows
+CRLF churn); other machine still needs Supabase MCP (PowerShell, not
+bash), vercel login, roam.machine label — AND real Python 3
+(security-guidance plugin hook errors on the Store stub; fix:
 `winget install -e --id Python.Python.3.12`, then restart Claude).
