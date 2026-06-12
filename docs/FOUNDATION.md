@@ -99,3 +99,34 @@ anonymized interaction signals tune the ranking.
 - Room for monetization, never at V1's expense.
 - New ideas land in docs/IDEAS.md, triaged into check modules and Vn
   buckets.
+
+## Plan-synthesis principles
+Binding on the engine and the brain; V1.S3 and V1.S5 implement these.
+- Staged synthesis: a cheap coarse pass first; confirm killer
+  constraints (departure bounds, trip length, budget) before any
+  expensive search.
+- Preferences are defaults, not blinders: honor the stated preference,
+  and surface a significantly better alternative when one exists
+  (airports, dates, areas).
+- Feasibility outranks desire: an infeasible must-do is declined with
+  an alternative (often a different window); a feasible trade-off is
+  presented with pros and cons, and once the traveler accepts it, it
+  locks — pinned items are not re-litigated.
+- Constraint priority = category × intensity: severe jet-lag outranks
+  mild rain; intensity is data, not vibes.
+- Composition-aware matching: party makeup (ages, type) reshapes venue
+  choice and defaults — fewer stops, gentler pace — without being
+  asked.
+- Condition-aware placement: never schedule an exposed activity into
+  the hottest or most hostile hour without reason; daylight, heat, UV,
+  and crowds steer time-of-day.
+- Proactive shifts: when moving a departure day or the whole window
+  measurably improves the trip, say so — date flexibility is an engine
+  lever, not just an input.
+- Near-peer alternatives: in shortlist mode, score the list and also
+  surface off-list options of equal merit.
+- Warn, don't block: outside hard feasibility, the engine warns and
+  lets the traveler decide.
+- Content guardrails: no demographic packing lists (gear notes only
+  when an activity demands them); dietary handling filters options but
+  never guarantees safety — travelers verify allergens with venues.

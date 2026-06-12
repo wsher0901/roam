@@ -1,7 +1,7 @@
 # Fact inventory — V1 (V1.S1.T1)
 
-What the engine must KNOW (47 world facts, five families) and what it
-may be TOLD (26 traveler parameters, Appendix A). This file is the
+What the engine must KNOW (54 world facts, five families) and what it
+may be TOLD (47 traveler parameters, Appendix A). This file is the
 source of truth for source vetting (V1.S1.T2–T6) and the storage
 schema (V1.S1.T7). Scope guards inherited from FOUNDATION: pre-trip
 only; estimates only (ranges, never live fares/prices); no booking or
@@ -31,18 +31,26 @@ live status; informing, never transacting.
 - Freshness = maximum cache staleness before refetch.
 - This file lists check INPUTS only. Check scores are engine logic
   (V1.S3), not facts.
+- Dictionaries: new and amended facts carry a "Dictionary:" line — the
+  exact payload keys a vetted source must supply. T2–T6 confirm and
+  record final keys per slot in SOURCES.md; where a fact has no
+  Dictionary line yet, the vetting task derives it from the What line.
+- Units: all stored values are SI/metric; conversion happens at
+  display time only (D-013).
+- Traveler-side ask tiers, provenance, and upsert rules live in
+  Appendix A (D-012).
 
-## Activity taxonomy (14 types — ships as a data file)
+## Activity taxonomy (15 types — ships as a data file)
 beach & swimming · on-water (boat, kayak, surf) · hiking & trails ·
 city walking & sightseeing · scenic viewpoints · golden-hour
 photography · stargazing & aurora · seasonal nature viewing (foliage,
 blooms, wildlife) · snow sports · indoor venues (museums, galleries,
-shopping) · dining & food markets · festivals & events · theme parks ·
-driving legs / road trips.
-The join vocabulary for the whole inventory: WX-13 sensitivity
-profiles, FE-02 affordances, and TP-13 interest weights all key off
-this list. Growing it later is a data edit plus a D-number, not a
-rewrite.
+shopping) · dining & food markets · nightlife (bars, clubs, live
+music) · festivals & events · theme parks · driving legs / road trips.
+Fifteen types. The join vocabulary for the whole inventory: WX-13
+sensitivity profiles, FE-02 affordances, FE-13 reputation, and TP-13
+interest weights all key off this list. Growing it later is a data
+edit plus a D-number, not a rewrite.
 
 ## F-WX — Weather (14) — source task V1.S1.T2
 Socket note: air quality, pollen, smoke seasons = Later socket
@@ -132,7 +140,7 @@ Socket note: air quality, pollen, smoke seasons = Later socket
 - Freshness: yearly.
 - Type: fetched + curated. Source slot: weather-seasonal-risk.
 
-### F-WX-13 — Activity weather-sensitivity profiles (×14 types)
+### F-WX-13 — Activity weather-sensitivity profiles (×15 types)
 - What: per-activity-type sensitivity to WX-01..10/14 (thresholds and
   weights). Contents authored in V1.S3.T3; format fixed here.
 - Spine: scoring lens for both jobs; personalized by TP-14..16.
@@ -228,7 +236,7 @@ Water-safety advisories ride with the safety-advisories Later socket.
 - Scope: wherever SS-04 resolves. Freshness: inherits SS-04.
 - Type: computed. Source slot: tides.
 
-## F-FE — Feasibility (9) — source task V1.S1.T4
+## F-FE — Feasibility (14) — source task V1.S1.T4
 Socket notes: visa/entry rules, safety advisories, venue accessibility
 data, real prices = Later sockets. The lodging anchor (where each day
 starts/ends) is a PLAN parameter, not a world fact — T7 schemas it
@@ -236,13 +244,21 @@ under plans.
 
 ### F-FE-01 — Destination registry
 - What: canonical destination record — geocode, country, region,
-  timezone (tz via math, shared with TT-04's slot).
-- Spine: all steps (everything keys off it).
-- Scope: global. Freshness: static; tz rules yearly.
-- Type: fetched + computed. Source slot: geocoding-places.
+  timezone (tz via math, shared with TT-04's slot), elevation_m, and
+  practicalities.
+- Dictionary: geocode · country · region · tz · elevation_m ·
+  currency_code · payment_norm (card-everywhere/mixed/cash-leaning) ·
+  languages[] · english_friendliness_class (high/med/low) ·
+  driving_side (left/right) · idp_required (bool) ·
+  tap_water_class (drinkable/bottled-advised) · plug_type
+- Spine: all steps; elevation feeds first-days acclimatization pacing;
+  english_friendliness is the world-side half of TP-39;
+  driving_side + idp_required gate the TP-19 drive chain abroad.
+- Scope: global. Freshness: static; tz/practicalities yearly.
+- Type: fetched + computed + curated. Source slot: geocoding-places.
 
 ### F-FE-02 — Destination↔activity affordances ⚠
-- What: what a destination is known for / supports, per the 14 types.
+- What: what a destination is known for / supports, per the 15 types.
   Enables the core Suggest dock: "famous for X, but X is bad then".
 - Spine: SUGGEST PRIMARY.
 - Scope: global ambition; curated for demo destinations → ladder (else
@@ -252,7 +268,7 @@ under plans.
   destination-affordances.
 
 ### F-FE-03 — Venue / POI records
-- What: name, geocode, category (mapped to the 14 types).
+- What: name, geocode, category (mapped to the 15 types).
 - Spine: Plan.
 - Scope: global. Freshness: monthly.
 - Type: fetched. Source slot: places-venues.
@@ -282,30 +298,102 @@ under plans.
 - Type: fetched. Source slot: routing.
 
 ### F-FE-07 — Cost-estimate bands
-- What: typical meal / admission / local-transport / lodging price
-  bands; flight-cost ranges may include a typical checked-bag fee
-  RANGE (per TP-26). Ranges only — real prices = Later socket.
-- Spine: Suggest (budget fit vs TP-12); Plan (cost labels).
+- What: typical price bands per destination — meals, admissions, local
+  transport, lodging, rental car — plus official charges and norms.
+  Ranges only — real prices = Later socket. Flight-cost ranges may
+  include a typical checked-bag fee RANGE (per TP-26).
+- Dictionary: meal_band · admission_band · local_transport_band ·
+  lodging_band · rental_car_band · tourist_city_fees {present,
+  est_band, note} · tipping_norm (none/round-up/5-10%/15-20%/included)
+  · fx_link -> FE-14
+- Spine: Suggest (budget fit vs TP-12/TP-36); Plan (cost labels).
 - Scope: global. Freshness: quarterly.
 - Type: estimated (+ fetched where published). Source slot: cost-basis.
 
-### F-FE-08 — Reservation / timed-entry flags ⚠
-- What: book-ahead and timed-entry requirements (informing, never
+### F-FE-08 — Reservation / timed-entry / permit flags ⚠
+- What: book-ahead, timed-entry, and PERMIT requirements (Inca Trail,
+  Half Dome), with booking-window behavior (informing, never
   transacting).
-- Spine: Plan ("book ahead" flag).
-- Scope: global ambition → ladder.
-- Freshness: monthly.
+- Dictionary: requirement_class (none/recommended/required/permit) ·
+  typical_lead_time_days · sellout_speed (slow/fast/minutes) · note
+- Spine: Plan ("book ahead" flag); pre-trip reminders ("opens 30 days
+  out, gone in minutes").
+- Scope: global ambition → ladder. Freshness: monthly.
 - Type: fetched + curated. Source slot: reservation-flags.
 
 ### F-FE-09 — Venue attributes
-- What: indoor/outdoor exposure (required to apply WX-13 per venue),
-  typical visit duration (required to build a day), family fit
-  (consumed with TP-02).
-- Spine: Plan.
+- What: per-venue planning attributes consumed by confirmed traveler
+  fields.
+- Dictionary: indoor_outdoor (indoor/outdoor/mixed) ·
+  typical_visit_minutes · family_fit · min_age_note ·
+  audience_suitability (all-ages/adults-leaning/adults-only-18+/21+) ·
+  pet_friendly (yes/outdoor-only/no/unknown)
+- Spine: Plan; audience_suitability powers composition-aware matching
+  (FOUNDATION §Plan-synthesis principles).
 - Scope: global. Freshness: monthly; estimated where missing, labeled.
 - Type: fetched + estimated. Source slot: venue-attributes.
 
-## F-TT — Time & transport (7) — source task V1.S1.T5
+### F-FE-10 — Parking ⚠
+- What: parking reality at venues and areas — the rental-car chain's
+  second link.
+- Dictionary: attach_to (venue/area) · availability_class
+  (onsite/nearby-garage/street-only/scarce) · distance_to_entrance_m ·
+  cost_band (free→high) · restricted_driving_zone {present, type:
+  ZTL/LEZ, note} · restrictions_note
+- Spine: Plan (drive mode); ZTL/LEZ flags prevent the classic
+  Florence/Rome rental fine.
+- Scope: global ambition → ladder (estimated, labeled, where thin).
+- Freshness: monthly. Type: fetched + estimated. Source slot: parking.
+
+### F-FE-11 — Route services (driving legs) ⚠
+- What: what exists along a driving leg — fuel, rest, EV charging,
+  tolls — and the gaps.
+- Dictionary: leg_id · fuel_gap_max_km · services_waypoints[] {type:
+  fuel/rest/EV, location, km_mark} · ev_coverage_class
+  (good/sparse/none) · tolls {present, est_band} · warning_text
+  ("no fuel 180 km after Vík")
+- Spine: Plan — gas-stop insertion, remote-leg warnings; mileage from
+  FE-06 distances.
+- Scope: global via map amenities. Freshness: monthly.
+- Type: fetched + computed. Source slot: route-services.
+
+### F-FE-12 — Area profiles ⚠
+- What: neighborhood-level character per destination, for
+  optimal-stay-area computation (lodging is suggested by AREA, not
+  property; type preference is TP-38; handoff via API/connector where
+  available, else precise search keywords).
+- Dictionary: area_id · name · centroid/polygon · vibe_tags[]
+  (controlled vocab: historic, nightlife, quiet, beachfront, market,
+  scenic, business) · price_band (1–4) · centrality (core/inner/outer)
+  · transit_access_class · best_for[] (15 activity types)
+- Spine: Plan (stay-area math: budget × routes × desired feel);
+  Suggest light. No safety scoring — advisories are a deferred socket.
+- Scope: curated for demo destinations → ladder (LLM-grade labeled).
+- Freshness: yearly. Type: curated + LLM-research grade. Source slot:
+  area-profiles.
+
+### F-FE-13 — Venue reputation ⚠
+- What: fame and momentum per venue — the world-side of the offbeat
+  dial (TP-47) and the dining-intelligence ask (trending vs classic;
+  coffee/tea/dessert ride FE-03 categories, prices ride FE-07).
+- Dictionary: fame_level (iconic/classic/known/niche/hidden) ·
+  momentum (rising/steady/fading) · evidence_basis
+  (curated/signals/LLM)
+- Spine: Plan selection; Suggest light. Two axes because a fading icon
+  and a rising hidden gem are different recommendations.
+- Scope: global ambition → ladder. Freshness: monthly.
+- Type: fetched + curated + LLM-research grade. Source slot:
+  venue-reputation.
+
+### F-FE-14 — Currency exchange rates
+- What: daily mid-market FX so every cost range and the TP-36 budget
+  ceiling render in the traveler's currency.
+- Dictionary: base_ccy · quote_ccy · rate · as_of_date
+- Spine: cost display; TP-36 overrun check.
+- Scope: global. Freshness: daily.
+- Type: fetched. Source slot: fx-rates.
+
+## F-TT — Time & transport (8) — source task V1.S1.T5
 The most data-gated family (ROADMAP): TT-02/03 carry the heaviest
 ladders. Socket note: airline-specific baggage allowances/fees = Later
 (rides with real-prices socket); V1 models baggage only as TIME via
@@ -343,24 +431,32 @@ TP-26 → TT-05. No live flight status, no fares (V1 refusals).
 - Scope: global, exact. Freshness: yearly (DST rule updates).
 - Type: computed. Source slot: tz-data.
 
-### F-TT-05 — Airport access + buffers (baggage-aware)
+### F-TT-05 — Airport access + buffers (baggage- and border-aware)
 - What: door-to-airport modes + typical times (reuses routing slot
-  values) and check-in/security buffer policy conditioned on TP-26:
-  bag-drop cutoff vs gate-only cutoff on departure; baggage-claim
-  buffer before day-one ground transport. Powers FOUNDATION's
-  backward-chained leave-time.
-- Spine: Plan.
-- Scope: global (policy is curated; times via FE-06).
-- Freshness: yearly (buffers); times inherit routing.
-- Type: fetched + curated. Source slot: airport-access.
+  values); check-in/security buffer policy conditioned on TP-26
+  (bag-drop vs gate-only cutoffs; claim buffer on arrival); and
+  arrival immigration-wait class for international arrivals — the
+  slowest link in the day-one chain.
+- Dictionary: access_modes[] {mode, typical_min} · checkin_buffer_min
+  {bags, no_bags} · security_buffer_min {intl, domestic} ·
+  bag_claim_buffer_min · immigration_wait_class (fast/normal/slow)
+- Spine: Plan — FOUNDATION's backward-chained leave-time + day-one
+  arrival chain.
+- Scope: global (policy curated; times via FE-06; wait class per
+  airport where published, else estimated labeled).
+- Freshness: yearly; times inherit routing. Type: fetched + curated.
+  Source slot: airport-access.
 
 ### F-TT-06 — Intercity ground options ⚠
-- What: rail/bus existence + typical durations between destination
-  pairs.
+- What: rail / bus / FERRY existence + typical durations between
+  destination pairs — island itineraries break without car-ferry and
+  seasonality awareness.
+- Dictionary: pair_id · mode (rail/bus/ferry) · typical_duration_min ·
+  vehicle_allowed (bool, ferries) · frequency_class
+  (multi-daily/daily/seasonal)
 - Spine: Suggest (reachable without flying); Plan.
 - Scope: strong EU/JP coverage, gaps elsewhere → ladder.
-- Freshness: monthly.
-- Type: fetched. Source slot: intercity-ground.
+- Freshness: monthly. Type: fetched. Source slot: intercity-ground.
 
 ### F-TT-07 — Local transit modes ⚠
 - What: metro/tram/bus availability per destination, typical headways;
@@ -370,7 +466,20 @@ TP-26 → TT-05. No live flight status, no fares (V1 refusals).
 - Freshness: quarterly.
 - Type: fetched + curated. Source slot: local-transit.
 
-## F-CC — Crowds & calendar (7) — source task V1.S1.T6
+### F-TT-08 — Transport disruptions & strikes ⚠
+- What: announced strikes, line closures, and schedule-affecting
+  disruption windows ("SNCF strike Mar 12–14").
+- Dictionary: region · mode (rail/metro/bus/air/ferry/port) · operator
+  · window {start, end, open_ended} · severity (minor/partial/major) ·
+  scope_note
+- Spine: Suggest demerit when overlapping the window; Plan warnings
+  and mode substitution.
+- Scope: global ambition; notice boards + news → full ladder incl.
+  LLM-grade labeled.
+- Freshness: weekly; daily within 2 weeks of dates.
+- Type: fetched. Source slot: transport-disruptions.
+
+## F-CC — Crowds & calendar (8) — source task V1.S1.T6
 Socket note: SNS trend mining = Later socket; CC-07 is the V1
 general-signals stand-in (FOUNDATION).
 
@@ -400,12 +509,13 @@ general-signals stand-in (FOUNDATION).
 - Type: fetched/computed + curated. Source slot: religious-observances.
 
 ### F-CC-04 — Events & festivals ⚠
-- What: concerts, festivals, marathons, conferences with area + dates.
-  BOTH polarities: reason-to-go vs disruption (street closures, hotel
-  surge); resolved per traveler by TP-13 vs TP-17.
+- What: concerts, festivals, marathons, conferences, major civic
+  events with area + dates. BOTH polarities: reason-to-go vs
+  disruption; resolved per traveler by TP-13 vs TP-17.
+- Dictionary: event_id · name · area · dates · expected_scale_band ·
+  disruption_flag (closes-streets/strains-lodging/none)
 - Spine: Suggest; Plan.
-- Scope: city-dependent feeds → ladder.
-- Freshness: weekly.
+- Scope: city-dependent feeds → ladder. Freshness: weekly.
 - Type: fetched. Source slot: events-feed.
 
 ### F-CC-05 — Seasonal crowd level
@@ -430,6 +540,16 @@ general-signals stand-in (FOUNDATION).
 - Scope: global, coarse. Freshness: weekly.
 - Type: fetched + derived. Source slot: trending-general.
 
+### F-CC-08 — Cruise port-call schedules ⚠
+- What: published ship arrivals at port towns — when the old town
+  floods and when it breathes ("3 ships in Dubrovnik Tue, in port
+  10:00–17:00").
+- Dictionary: port_id · date · ships_count · passengers_band
+  (<2k / 2–6k / >6k) · in_port_window
+- Spine: Plan timing (shift the old-town visit); Suggest minor.
+- Scope: published port schedules; gaps labeled → ladder.
+- Freshness: weekly. Type: fetched. Source slot: cruise-port-calls.
+
 ## T2–T6 assignment map
 - V1.S1.T2 (Weather): WX-01..14 → slots weather-forecast,
   weather-alerts, snow-conditions, weather-climatology,
@@ -437,58 +557,94 @@ general-signals stand-in (FOUNDATION).
 - V1.S1.T3 (Sky & sea): SS-01..10 → astro-ephemeris, tides,
   aurora-forecast, aurora-viability, nature-timing, night-sky-darkness,
   astro-events.
-- V1.S1.T4 (Feasibility): FE-01..09 → geocoding-places,
+- V1.S1.T4 (Feasibility): FE-01..14 → geocoding-places,
   destination-affordances, places-venues, opening-hours,
   seasonal-closures, routing, cost-basis, reservation-flags,
-  venue-attributes.
-- V1.S1.T5 (Time & transport): TT-01..07 → airports, flight-routes,
+  venue-attributes, parking, route-services, area-profiles,
+  venue-reputation, fx-rates.
+- V1.S1.T5 (Time & transport): TT-01..08 → airports, flight-routes,
   flight-schedules, tz-data, airport-access, intercity-ground,
-  local-transit.
-- V1.S1.T6 (Crowds & calendar): CC-01..07 → public-holidays,
+  local-transit, transport-disruptions.
+- V1.S1.T6 (Crowds & calendar): CC-01..08 → public-holidays,
   school-calendars, religious-observances, events-feed,
-  seasonal-crowding, venue-busyness, trending-general.
+  seasonal-crowding, venue-busyness, trending-general,
+  cruise-port-calls.
 Rule: one SOURCES.md entry per slot; every entry lists the fact IDs it
-serves, its reliability grade, freshness, coverage notes, cost, and the
-spike script path.
+serves, the confirmed payload keys (Dictionary), its reliability
+grade, freshness, coverage notes, cost, and the spike script path.
 
-## Appendix A — Traveler parameters (TP-01..26) — per D-011
-The floor: origin + dates always works; dates may carry optional
-earliest-departure / latest-return boundary times. Every field below is
-OPTIONAL and defaults to Null. Tiers: engine = a named V1 check
-consumes it; brain-only = Claude personalizes, no deterministic check;
-socket = stored, unconsumed in V1. Extension is append-only (one
-nullable column + a D-number). These are inputs, not world facts — no
-source slots; validation rules land in T7.
+## Appendix A — Traveler parameters (TP-01..47) — per D-011 + D-012
+The floor: origin + dates always suffices. Dates carry: start, end,
+flexibility {fixed | ±N days | open window ("October")}, optional
+boundary times (earliest departure / latest return). When flexibility
+≠ fixed, trip_length_nights is the single non-negotiable ask
+(statistics-based default if declined). Every field below is OPTIONAL
+and defaults to Null.
+Ask tiers (D-012): U = upfront (capped at six questions: origin,
+dates+flexibility+length, who's going, budget, multi-city, one
+interest pass; language joins contextually for international scope) ·
+L = later/contextual · N = never (inferred, defaulted,
+composition-adjusted, warn-don't-block) · S = settings.
+Provenance: every field stores {stated | inferred | default} +
+updated_at. Supersede: stated > inferred > default; newer > older.
+Stated-only class (never inferred): TP-22, TP-41, TP-45, allergy
+details inside TP-21. Tiers: engine / brain-only / socket. Extension
+is append-only (D-011). No source slots — the source is the traveler;
+validation lands in T7.
 
-| ID | Field | Values | Consumed by | Tier |
-|---|---|---|---|---|
-| TP-01 | Adults in party | int | cost ×, pace prior | engine |
-| TP-02 | Children's ages | list of ints | CC-02 weighting, FE-09 family fit, pace ceiling | engine |
-| TP-03 | Seniors in party | int | gentler pace prior | engine |
-| TP-04 | Home airport(s) | IATA list | TT-01 multi-airport choice | engine |
-| TP-05 | Max total travel hours | number | Suggest gate via TT-03 | engine |
-| TP-06 | Max stops | int | TT-02/03 fit | engine |
-| TP-07 | Cabin class | econ/prem/biz | FE-07 cost basis | engine |
-| TP-08 | Red-eye OK | bool | add-a-night rule (TT-03) | engine |
-| TP-09 | Jet-lag sensitivity | low/med/high | first-day pacing (TT-04) | engine |
-| TP-10 | Chronotype | early/flexible/night | SS-02 placement, first slots | engine |
-| TP-11 | Pace | relaxed/standard/packed | daily activity budget | engine |
-| TP-12 | Budget tier | shoestring/moderate/comfort/luxury | FE-07 fit labels | engine |
-| TP-13 | Activity interest weights | map over 14 types: avoid→love | Suggest ranking, Plan selection | engine |
-| TP-14 | Heat tolerance ceiling | threshold or level | personalizes WX-13 | engine |
-| TP-15 | Cold tolerance floor | threshold or level | personalizes WX-13 | engine |
-| TP-16 | Rain tolerance | level | personalizes WX-13 | engine |
-| TP-17 | Crowd tolerance | low/med/high | scales CC demerits | engine |
-| TP-18 | Fitness / max trail difficulty | easy/mod/hard | hiking feasibility | engine |
-| TP-19 | Willing to drive | bool | driving legs, FE-06 mode | engine |
-| TP-20 | Transit comfort | any/prefer-private | TT-07 mode choice | engine |
-| TP-21 | Dietary notes | list/free | dining picks | brain-only |
-| TP-22 | Accessibility needs | list | — (FOUNDATION Later socket) | socket |
-| TP-23 | Must-do / avoid | free text | brain interprets | brain-only |
-| TP-24 | Free-form notes | text | brain interprets | brain-only |
-| TP-25 | Visited / excluded destinations | list | Suggest filter | engine |
-| TP-26 | Baggage plan | carry-on only / checked + count | TT-05 buffers + arrival chain; FE-07 coarse fee range | engine |
+| ID | Field | Values | Ask | Consumed by | Tier |
+|---|---|---|---|---|---|
+| TP-01 | Adults | int | U | cost ×, pace prior | engine |
+| TP-02 | Children's ages | [int] | U | CC-02, FE-09 fit, pace ceiling | engine |
+| TP-03 | Seniors | int | U | gentler pace prior | engine |
+| TP-04 | Home airport(s) | [IATA] | N — derived from origin; explicit value restricts | TT-01 | engine |
+| TP-05 | Max total travel hours | num | L | Suggest gate via TT-03 | engine |
+| TP-06 | Max stops | int | N — composition-derived default | TT-02/03 | engine |
+| TP-07 | Cabin class | econ/prem/biz | N — default economy | FE-07 | engine |
+| TP-08 | Red-eye OK | bool | L — only when it significantly boosts; lean no for elderly/kids | add-a-night (TT-03) | engine |
+| TP-09 | Jet-lag sensitivity | low/med/high | L — post-draft; shapes first days | TT-04 pacing | engine |
+| TP-10 | Chronotype | early/flexible/night | N — infer | SS-02 placement | engine |
+| TP-11 | Pace (per-stop speed) | quick-hit/standard/lingering | L | time per activity — NOT density | engine |
+| TP-12 | Budget tier | shoestring/moderate/comfort/luxury | U (or TP-36) | FE-07 labels | engine |
+| TP-13 | Interest weights | map ×15 types: avoid→love | U light, else inferred from destination | Suggest rank, Plan select | engine |
+| TP-14 | Heat ceiling | °C | N — guideline; composition-adjust; warn | WX-13 personal | engine |
+| TP-15 | Cold floor | °C | N — same | WX-13 | engine |
+| TP-16 | Rain tolerance | level | N — default: avoid rain | WX-13 | engine |
+| TP-17 | Crowd tolerance | low/med/high | L/contextual | CC demerits | engine |
+| TP-18 | Fitness / trail cap | easy/mod/hard | N — average default; composition-adjust; micro-ask on near-swaps | hiking | engine |
+| TP-19 | Willing to drive | bool | U-adjacent — it cascades (rental→parking→transit timeline) | drive chain, FE-06 mode | engine |
+| TP-20 | Transit modes accepted | set: metro/bus/taxi/rideshare/tour-bus | L | TT-07, FE-06 mode | engine |
+| TP-21 | Dietary | list | L — filters options, NEVER a safety guarantee; allergies stated-only | dining picks | brain |
+| TP-22 | Accessibility | list | N — socket | — | socket |
+| TP-23 | Must-do / avoid | lists (fears map here too) | L — the anchor ask around the draft | pins/blocks via compromise flow | engine+brain |
+| TP-24 | Free-form notes | text | always-on capture | brain | brain |
+| TP-25 | Visited / excluded | lists (+ visit counts) | N — capture | Suggest filter | engine |
+| TP-26 | Baggage plan | carry-on / checked+count | L | TT-05 buffers; FE-07 fee range; shopping headroom note | engine |
+| TP-27 | Density (day fullness) | light/standard/full | L | daily activity budget | engine |
+| TP-28 | Trip goal | relax/balanced/see-everything/deep-dive | L early — identify or ask | defaults for TP-11/27; recommendation course | engine |
+| TP-29 | Trip focus | multi: food/art/nature/shopping/nightlife/experience | L — post-draft centerpieces | plan centerpieces | engine+brain |
+| TP-30 | Trade-off priority | ranked: budget/must-dos/comfort/time | L — when conflicts arise | demotion order under limits | engine |
+| TP-31 | Intent mode | fixed/shortlist/open | N — inferred from phrasing | Suggest behavior switch | engine |
+| TP-32 | Shortlist | [destinations] | N — use when given | compare set + near-peer alternatives | engine |
+| TP-33 | Multi-city | single base / open | U | TT-06; plan structure | engine |
+| TP-34 | Party type | solo/couple/friends/family/multi-gen/group/business | U (inside who's-going) | venue vibe; rec shaping | engine+brain |
+| TP-35 | Occasion | honeymoon/anniversary/birthday/reset/none | L | tone + picks | brain |
+| TP-36 | Budget ceiling | {amount, currency} | U (alt form of TP-12) | Σ FE-07 ranges vs cap via FE-14 | engine |
+| TP-37 | Rail-over-flight pref | prefer-when-viable/none | N — engine suggests when better or budget-driven | TT-02/03 vs TT-06 weighting | engine |
+| TP-38 | Accommodation style | hotel/apartment/resort/hostel/B&B | L — at lodging step | FE-07 lodging band; FE-12 area pick | brain |
+| TP-39 | Language comfort | english-friendly preferred / anywhere | U-contextual (intl scope) | check vs FE-01 english_friendliness | engine |
+| TP-40 | Reference trips | [{place, sentiment, why}] | N — synthesized from anything said | brain steering ("more like Kyoto") | brain |
+| TP-41 | Nationality / passports | [ISO] | N — account page when auth exists; NEVER inferred | keys visa socket | socket |
+| TP-42 | Verified-only strictness | labeled/strict | S — default labeled | rung 4–5 render policy | engine |
+| TP-43 | Units | metric/us | S — default metric (D-013) | display conversion | engine |
+| TP-44 | Time commitments | [{what, where, when, recurring}] | L / capture | Plan anchors; pre-locked items | engine |
+| TP-45 | Special conditions | pregnancy, recovery, etc. | N — stated-only | adjust + warn; liability guard | brain |
+| TP-46 | Pets along | {along, type} | N — capture | FE-09 pet filter | brain |
+| TP-47 | Mainstream↔offbeat dial | classics/mix/hidden-gems | L or inferred | FE-13 weighting | engine+brain |
 
 ## Appendix B — Plan parameters (T7 must schema; not world facts)
 - Lodging anchor: the point each day starts/ends (user-chosen area or
   brain-suggested centroid). Drives FE-06 day routing.
+- Item lock-state: accepted trade-offs and TP-44 commitments are
+  pinned ("bible") — carried per plan item with acceptance provenance
+  (FOUNDATION §Plan-synthesis principles; T7 schemas it).

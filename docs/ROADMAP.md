@@ -72,6 +72,7 @@ database connected.
       (durations, springs), app shell layout deployed
 
 ### V1.S3 — Engine core + two families deep
+Binding requirements: FOUNDATION §Plan-synthesis principles.
 Done when: a CLI harness returns scored, sourced, explained verdicts
 for any destination + dates using Weather and Sky & sea.
 - [ ] V1.S3.T1 [seq] Check contract + orchestrator — CheckModule
@@ -104,6 +105,7 @@ trip options in the app.
       confidence badges, map context, select-one flow
 
 ### V1.S5 — Plan
+Binding requirements: FOUNDATION §Plan-synthesis principles.
 Done when: selecting an option yields a persisted day-by-day plan
 rendered on timeline + map.
 - [ ] V1.S5.T1 [seq] Plan builder — sequence activities by scores,
