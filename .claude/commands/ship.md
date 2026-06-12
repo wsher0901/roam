@@ -28,4 +28,7 @@ Task-completion ritual. Do all of this:
    autonomous lanes at your discretion; if I explicitly ask for
    "more", present the full ordered menu. If attention lanes are
    occupied or the day's pace is met, say so plainly ("nothing more
-   needed now — finish X") instead of adding work.
+   needed now — finish X") instead of adding work. ALWAYS append a
+   "Parallel-ready:" list (D-016): every unblocked, unclaimed [P]
+   task with tool label, branch name, and worktree launch command —
+   informational, exempt from the cap.
