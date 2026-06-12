@@ -212,3 +212,29 @@ red-eye fit, jet-lag pacing, multi-airport choice); free-text-only
 supplements (the brain can read them, deterministic checks cannot);
 exhaustive "all inputs ever" enumeration (stalls the gate and fakes
 capability for fields nothing consumes).
+
+## D-012 — 2026-06 — Elicitation & inference policy (ask tiers, provenance, upsert)
+Decision: Every traveler field in docs/data/FACTS.md Appendix A carries
+an ask tier. Upfront = asked before the first draft, capped at six
+questions: origin, dates + flexibility (+ trip length when dates are
+open — the one non-negotiable ask), who's going (composition + party
+type), budget (tier or ceiling), multi-city openness, one light
+interest pass; language comfort joins contextually when scope goes
+international. Later = asked around/after the draft when it earns its
+question. Never = inferred from chat, defaulted, or
+composition-adjusted with a warn-don't-block pattern. Settings =
+app-level. Every stored field carries provenance {stated | inferred |
+default} + updated_at; supersede order: stated > inferred > default,
+newer > older. A stated-only class (nationality, special conditions,
+accessibility, allergy details) is never inferred. Pace is redefined
+as per-stop speed; day fullness is the separate density field; trip
+goal, trip focus, and trade-off priority are first-class fields.
+Why:
+- anti-fatigue law — users must not feel interrogated;
+- chat-first means most fields arrive mid-conversation and must upsert
+  correctly; inferred preferences masquerading as stated would corrupt
+  tailoring and trust;
+- fast-paced does not mean dense (founder correction).
+Alternatives rejected: ask-everything-upfront forms (fatigue,
+abandonment); no structured asks (engine rules starve); merged
+pace/density (conflates speed with fullness).
