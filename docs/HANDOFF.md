@@ -16,18 +16,27 @@ vocabulary now TP-01..47 with ask tiers/provenance/upsert (D-012,
 six-question upfront cap); SI-only storage (D-013 — units toggle
 noted for V1.S2 UI); taxonomy 15 types (+nightlife); FOUNDATION
 gained §Plan-synthesis principles, bound to S3/S5 in ROADMAP; two
-ideas captured to IDEAS.md.
+ideas captured to IDEAS.md. Amendment 2 shipped (PR #35, P3–P6
+review): docs/data/TELEMETRY.md — behavior events (19 types,
+capture-now-use-later, exposure law: full slates + positions,
+consent-gated privacy floor, D-014); claim ledger + actuals
+harvester (new task V1.S3.T7) for calibration; source-health metrics
+with the demotion law; fact cache made bitemporal, append-only,
+license-segmented with retention/license as PRIMARY T2–T6 selection
+criteria (D-015); V1.S1.T7 scope extended to telemetry tables; one
+more idea captured (dataset licensing/export).
 Previous sitting (2026-06-11): V1.S2.T1 scaffold (PR #19), tooling
 scope (PR #21), D-008 cockpit (PR #23), V1.S2.T2 deploy+CI (PR #25),
 D-009 pacing (PR #27), V1.S2.T3 Supabase (PR #29).
 In flight (half-finished): nothing.
-Decisions this sitting: D-010, D-011, D-012, D-013.
+Decisions this sitting: D-010, D-011, D-012, D-013, D-014, D-015.
 Blockers / open questions: CLAUDE.md "plugins: not used" line still
 stale (PR #21 enabled three) — tiny docs PR when convenient.
 Next steps (exact): V1.S1.T2–T6 source vetting now unblocked by
 FACTS.md ([P], five lanes; outputs per the T2–T6 assignment map +
 "one SOURCES.md entry per slot" rule; entries must confirm each
-fact's Dictionary payload keys). V1.S2.T5 design foundations
+fact's Dictionary payload keys AND record retention_rights /
+license_class / attribution — primary selection criteria per D-015). V1.S2.T5 design foundations
 ([P]; re-enable Playwright plugin per equipment plan). V1.S2.T4 waits
 on V1.S1.T7. Other machine still needs one-time setups: Supabase MCP
 add (run from PowerShell, NOT bash — see gotcha), `npx vercel login`,
