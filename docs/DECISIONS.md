@@ -238,3 +238,17 @@ Why:
 Alternatives rejected: ask-everything-upfront forms (fatigue,
 abandonment); no structured asks (engine rules starve); merged
 pace/density (conflates speed with fullness).
+
+## D-013 — 2026-06 — Canonical units: SI storage, display-time conversion
+Decision: All storage and engine math use SI/metric exclusively, never
+mixed. Conversion to US units happens only at render time via a
+settings-tier units field (default metric for development and as the
+initial product default; never asked; UI must expose the toggle —
+noted for V1.S2). Locale-based defaulting (US users -> imperial) is
+deferred until accounts/locale exist.
+Why:
+- mixed-unit storage is a classic data-corruption source;
+- one canonical system keeps T7 column types and engine thresholds
+  (e.g. heat ceilings) unambiguous.
+Alternatives rejected: store-as-entered (mixed units inside math);
+imperial-canonical (every upstream source is SI-native).
