@@ -19,4 +19,6 @@ Next steps (exact): approve/merge PR #39; then V1.S1.T3–T6 vetting
 §Pacing). T7 agenda: grade scale, date flexibility, backup posture.
 Gotchas discovered: .prettierrc now has endOfLine:auto (Windows CRLF
 churn); other machine still needs Supabase MCP (PowerShell, not bash),
-vercel login, roam.machine label.
+vercel login, roam.machine label — AND real Python 3 (security-
+guidance plugin hook errors on the Store stub; fix:
+`winget install -e --id Python.Python.3.12`, then restart Claude).
