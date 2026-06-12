@@ -34,7 +34,7 @@ schema is written.
 - [x] V1.S1.T1 [P] Fact inventory — enumerate every fact each of the
       five families needs (what it is, which spine step uses it,
       geographic scope, freshness need) -> docs/data/FACTS.md
-- [ ] V1.S1.T2 [P] Vet sources: Weather — forecast + climatology
+- [x] V1.S1.T2 [P] Vet sources: Weather — forecast + climatology
       candidates (e.g. Open-Meteo), spike fetch script, grade +
       freshness + coverage + cost -> entry in docs/data/SOURCES.md
 - [ ] V1.S1.T3 [P] Vet sources: Sky & sea — sun/moon math, tides (NOAA
