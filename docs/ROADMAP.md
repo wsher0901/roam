@@ -31,7 +31,7 @@ order.
 Done when: every V1 fact has a vetted source with a successful spike
 fetch, a reliability grade, and a freshness window — and the storage
 schema is written.
-- [ ] V1.S1.T1 [P] Fact inventory — enumerate every fact each of the
+- [x] V1.S1.T1 [P] Fact inventory — enumerate every fact each of the
       five families needs (what it is, which spine step uses it,
       geographic scope, freshness need) -> docs/data/FACTS.md
 - [ ] V1.S1.T2 [P] Vet sources: Weather — forecast + climatology
