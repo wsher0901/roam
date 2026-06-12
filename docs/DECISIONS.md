@@ -274,3 +274,30 @@ Why:
 Alternatives rejected: defer capture entirely (permanent data loss);
 click-only logging without exposures (position-biased, unusable);
 use-now ranking tuning (violates FOUNDATION's Later).
+
+## D-015 — 2026-06 — Data-asset law: bitemporal, append-only, license-segmented
+Decision: The fact cache is bitemporal — every value carries valid_for
+(when it is true in the world) and recorded_at (when we learned it) —
+and append-only: values are superseded, never overwritten; revision
+series are first-class data. An actuals harvester (ROADMAP V1.S3.T7)
+records observed values once valid_for passes, pairing with the claim
+ledger for calibration. Source data is stored in license-segmented,
+attributed layers (collective, never blended-derivative); SOURCES.md
+records retention_rights and license_class per source, and these act
+as primary selection criteria in T2–T6 — caching-prohibited sources
+disqualify a slot from the asset layer. World data is strictly
+separated from traveler and event data. Source grades are living:
+sustained fetch failure, schema drift, or miscalibration demotes a
+grade and renders fall down the reliability ladder automatically;
+promotion requires re-vetting.
+Why:
+- the revision series and forecast-vs-actual pairs are the
+  proprietary core of FOUNDATION's "quiet asset";
+- storage-prohibiting ToS would hollow the asset (e.g. Places-style
+  no-caching rules); share-alike licenses attach to blended
+  derivatives but not to segmented collective or internal use, so
+  segmentation keeps the proprietary layer ownable;
+- never-discard is the temporal-modeling canon.
+Alternatives rejected: overwrite-in-place caching (destroys the
+asset); a single blended store (license contamination); static grades
+(the reliability law dies of old age).
