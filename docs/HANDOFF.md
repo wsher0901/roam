@@ -1,69 +1,34 @@
-# Handoff — 2026-06-11, Work
+# Handoff — 2026-06-12, Work
 Active branch(es): main
-Web lanes: V1.S1.T1 (fact inventory) open in a Web chat — arrives as a
-paste block on docs/v1.s1.t1-fact-inventory; do not start it in Code.
-Roadmap position: V1.S1 and V1.S2 active (parallel lanes); V1.S2 at
-3/5 (T1 scaffold, T2 deploy + CI, T3 Supabase done).
-Done this session: V1.S2.T1 app scaffold shipped (PR #19) — Next.js
-16.2.9 (App Router, TS, React 19, Turbopack) at repo root; Tailwind v4
-+ shadcn/ui on Base UI ("nova" preset) with one Button component;
-isolated engine/ dir with ESLint-enforced import boundary (no
-app/React/Next imports), @engine/* alias, Vitest smoke test; Prettier
-+ eslint-config-prettier wired, npm scripts (test, format,
-format:check); AGENTS.md from create-next-app kept (Next 16 differs
-from AI training data — read node_modules/next/dist/docs/). D-007
-recorded (Base UI, not Radix) and mirrored into CLAUDE.md stack line.
-`git config roam.machine "Work"` set on this machine. Tooling scope
-shipped (PR #21): .claude/settings.json now disables the claude.ai
-MCP connector bridge (ENABLE_CLAUDEAI_MCP_SERVERS=false) and pins
-plugins — on: context7, frontend-design, security-guidance; off:
-playwright (until V1.S2.T5), superpowers. Takes effect on next
-session launch. D-008 cockpit shipped (PR #23): docs/HOME.md operating
-manual; /pickup progress map + claim rule + stale-handoff detection;
-/ship auto-runs + ends with labeled next actions; idea capture to
-IDEAS.md; D-002 carve-out extended to IDEAS.md. V1.S2.T2 deploy + CI
-shipped (PR #25): GitHub Actions on every PR/main (lint, format,
-test, build); Vercel project "roam" linked + GitHub App installed —
-PR preview links automatic, production tracks main at
-https://roam-pink-eight.vercel.app; .env.example placeholder-only.
-V1.S2.T3 Supabase wiring shipped (PR #29): fresh project "roam"
-(us-east-1, co-located with Vercel; old paused ai-travel-planner left
-untouched); server-side-only client in src/lib/supabase/server.ts
-(server-only guard, env-mocked tests, zero live calls in CI); env in
-.env.local + Vercel (all three environments); live REST/auth
-verified. Supabase MCP added to THIS machine's local config (token
-per-machine) — other machine still needs its one-time add.
-In flight (half-finished): V1.S1.T1 (fact inventory) is being drafted
-by me in the Claude Web Project chat — it arrives later as a paste
-block on branch docs/v1.s1.t1-fact-inventory. Claude Code must NOT
-start V1.S1.T1 independently.
-Decisions this session: D-007 (shadcn/ui builds on Base UI); D-008
-(cockpit, derived state, automatic recording); D-009 (pacing law:
-finish-first, attention cap Now + one parallel slot, flexible for
-no-overview work — PR #27; IDEAS.md seeded with the paths-ignore
-docs/** CI idea).
-Blockers / open questions: CLAUDE.md still says "Claude Code plugins:
-not used" — stale since PR #21 enables three; needs a small docs PR
-when convenient.
-Next steps (exact): V1.S2.T5 (design foundations, branch
-feat/v1.s2.t5-design; re-enable Playwright plugin per equipment plan;
-likely a Web chat first for token/style decisions). V1.S2.T4 (schema
-migration) waits on V1.S1.T7 + T3(done) — S1 is the bottleneck now.
-S1 lane: T2–T6 source vetting is [P] and open in Web.
-Gotchas discovered: Vercel CLI now authenticated on this machine
-(wsher0901); `vercel git connect` needs the Vercel GitHub App
-installed first (one-time browser step, done); an existing PR only
-gets a preview deploy after a new push (empty commit works);
-`gh pr merge` says "not mergeable" while checks are pending — wait
-for green. The `!` bash prefix mangles `/c` into `C:/` (MSYS path
-conversion) — run `claude mcp add ... cmd /c ...` from PowerShell.
-Vercel CLI non-interactive mode can't set preview env vars for "all
-branches" — use the dashboard. Supabase REST root returns 401 on new
-projects — verify with /auth/v1/health or a table query instead. shadcn CLI changed — `-b` now picks the primitive
-library (radix|base, NOT a color); presets are nova/vega/maia/etc.;
-old `-b neutral` syntax fails then hangs on an interactive prompt.
-Prettier corrupted a CLAUDE.md line on first run — CLAUDE.md, docs/,
-.claude/, README.md, AGENTS.md are now in .prettierignore; keep them
-there. Current scaffold gitignores next-env.d.ts (generated). The old
-"re-upload docs to the Claude Web Project" step is retired — the Web
-Project fetches live repo files.
+Web lanes: none — V1.S1.T1's Web chat delivered its block and closed
+(PR #31).
+Roadmap position: V1.S1 at 1/7, V1.S2 at 3/5 (parallel lanes).
+Done this sitting: V1.S1.T1 fact inventory shipped (PR #31) —
+docs/data/FACTS.md: 47 world facts across five families with source
+slots joining T2–T6 vetting, 14-type activity taxonomy, traveler
+vocabulary TP-01..26; D-010 recorded (global coverage via six-rung
+fallback ladders), D-011 recorded (traveler inputs: nullable, tiered,
+append-only). Note: the block expected D-009/D-010 — renumbered to
+D-010/D-011 (D-009 = pacing law).
+Previous sitting (2026-06-11): V1.S2.T1 scaffold (PR #19), tooling
+scope (PR #21), D-008 cockpit (PR #23), V1.S2.T2 deploy+CI (PR #25),
+D-009 pacing (PR #27), V1.S2.T3 Supabase (PR #29).
+In flight (half-finished): nothing.
+Decisions this sitting: D-010, D-011.
+Blockers / open questions: CLAUDE.md "plugins: not used" line still
+stale (PR #21 enabled three) — tiny docs PR when convenient.
+Next steps (exact): V1.S1.T2–T6 source vetting now unblocked by
+FACTS.md ([P], five lanes; outputs per the T2–T6 assignment map +
+"one SOURCES.md entry per slot" rule). V1.S2.T5 design foundations
+([P]; re-enable Playwright plugin per equipment plan). V1.S2.T4 waits
+on V1.S1.T7. Other machine still needs one-time setups: Supabase MCP
+add (run from PowerShell, NOT bash — see gotcha), `npx vercel login`,
+`git config roam.machine`.
+Gotchas discovered (durable): `!` bash prefix mangles `/c` → `C:/`
+(MSYS) — run `claude mcp add ... cmd /c ...` from PowerShell. Vercel
+CLI non-interactive can't set preview-scope env for all branches —
+use dashboard. Supabase REST root 401s on new projects — verify via
+/auth/v1/health or a table query. `gh pr merge` refuses while checks
+pend — wait for green. PowerShell mangles quotes in `gh pr create
+--body` — use --body-file. Prettier must not touch docs/CLAUDE.md/
+.claude (in .prettierignore). shadcn `-b` = base library (radix|base).
