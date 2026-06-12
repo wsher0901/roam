@@ -30,7 +30,9 @@ In flight (half-finished): the four cloud lanes above (running
 unattended; they survive both machines being off).
 Decisions today: D-010 … D-015 (see DECISIONS.md) · D-016
 parallel-ready menu (merged) · D-017 cloud parallel lanes + launch
-protocol (merged) · D-018 fix-routing triage (merged).
+protocol (merged) · D-018 fix-routing triage (merged) · D-019
+launch mechanics: TTY guard + attended launcher window (merged,
+PR #46).
 Blockers / open questions: none. (Cloud lanes need one-time GitHub
 access — Claude GitHub App or /web-setup — unverified until first
 launch.)
@@ -44,8 +46,9 @@ waits on V1.S1.T7.
 Gotchas discovered (durable): `claude --remote` enforces a TTY
 guard — fails from Claude's headless shell AND from the `!` prefix
 (piped); working route: batch launcher .cmd OUTSIDE the repo
-(MyFile/Github/roam-launch-lanes.cmd, regenerate per batch), opened
-as an attended console window via Start-Process (D-019 pending).
+(regenerate per batch — the spent launcher is DELETED after launch
+so a stray double-click can't spawn duplicate lanes), opened as an
+attended console window via Start-Process (D-019, merged).
 .prettierrc has endOfLine:auto (Windows
 CRLF churn); other machine still needs Supabase MCP (PowerShell, not
 bash), vercel login, roam.machine label — AND real Python 3
