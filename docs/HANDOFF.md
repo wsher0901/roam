@@ -11,14 +11,19 @@ parallel-lane vehicle (launch via Desktop Code tab / claude.ai/code
 /tasks monitoring; launch protocol: founder's explicit "launch
 them" = Claude fires all approved lanes itself, approval doubles as
 claim answer); CLAUDE.md stale "plugins: not used" line fixed
-(rides D-017 PR, declared deviation).
+(rides D-017 PR, declared deviation). PR #43 approved +
+squash-merged — D-018: review-and-route after lanes finish (Claude
+reviews lane PRs first, surfaces issues each with a stay/teleport/
+new-lane recommendation; founder's verdict routes; teleport =
+founder's keystroke, Claude hands the paste-line; new-lane verdict
+doubles as launch approval).
 Done earlier today: V1.S1.T1 fact inventory (PR #31) + amendments
 (PR #33, PR #35); V1.S1.T2 weather vetting (PR #37: SOURCES.md born —
 Open-Meteo A, NWS alerts B, spike scripts).
 In flight (half-finished): nothing.
 Decisions today: D-010 … D-015 (see DECISIONS.md) · D-016
 parallel-ready menu (merged) · D-017 cloud parallel lanes + launch
-protocol (merged).
+protocol (merged) · D-018 fix-routing triage (merged).
 Blockers / open questions: none. (Cloud lanes need one-time GitHub
 access — Claude GitHub App or /web-setup — unverified until first
 launch.)
