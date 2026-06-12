@@ -47,7 +47,11 @@ Full product definition: docs/FOUNDATION.md. Decision log: docs/DECISIONS.md.
   tasks, each with tool label, branch name, and launch command — a
   paste-ready kickoff prompt for a Claude Code cloud session launched
   from Claude Desktop (D-017; git worktree recipe is the offline
-  fallback only) — informational, exempt from the cap.
+  fallback only) — informational, exempt from the cap. If I give an
+  explicit launch approval ("launch them" / "launch T4+T6"), launch
+  those lanes yourself via `claude --remote` from freshly pulled
+  main and report each session URL; that approval doubles as the
+  claim answer for the launched lanes (D-017).
 - The moment I voice a new idea outside the current task's scope,
   append it as one dated line to docs/IDEAS.md without being asked.
   IDEAS.md additions are exempt from task-diff purity: they ride

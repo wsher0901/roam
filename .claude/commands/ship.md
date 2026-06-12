@@ -32,4 +32,7 @@ Task-completion ritual. Do all of this:
    "Parallel-ready:" list (D-016): every unblocked, unclaimed [P]
    task with tool label, branch name, and a paste-ready Claude
    Desktop cloud-session kickoff prompt (D-017) — informational,
-   exempt from the cap.
+   exempt from the cap. On an explicit launch approval from me,
+   launch the approved lanes yourself via `claude --remote` from
+   freshly pulled main and report each session URL — the approval
+   doubles as the claim answer for those lanes (D-017).

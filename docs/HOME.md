@@ -104,3 +104,7 @@ and completion appends the list of unblocked, unclaimed [P] tasks —
 tool label, branch name, and a paste-ready kickoff prompt for a
 Claude Desktop cloud session (git worktree recipe only as the
 offline fallback). Informational, exempt from the cap, never an ask.
+An explicit "launch them" from me flips the menu to action: Code
+launches the approved lanes itself via `claude --remote` from fresh
+main and reports session URLs — the approval doubles as the claim
+answer for those lanes (D-017).

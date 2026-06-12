@@ -338,7 +338,16 @@ and push local commits first. `--remote` is fire-and-forget (prints
 the session URL and returns); monitor lanes with /tasks in any Code
 session (press t to teleport in) or at claude.ai/code. One-time
 prerequisite per account: GitHub access via the Claude GitHub App,
-or `/web-setup` to sync the local gh token. Each cloud lane runs remotely in
+or `/web-setup` to sync the local gh token.
+Launch protocol: the menu stays informational, but an explicit
+launch approval from the founder ("launch them" / "launch T4+T6")
+flips it to action — Claude Code itself launches every approved
+lane via `claude --remote` from freshly pulled main (pushing first
+if needed) and reports each session's URL; that approval doubles as
+the claim answer for the launched lanes. Cloud sessions run on
+Anthropic infrastructure and survive both computers being off; a
+finished lane pushes its branch and opens its PR, and merge approval
+still belongs to the founder. Each cloud lane runs remotely in
 its own isolated clone of the repo, on its own branch, and ships its
 own PR. Second-machine checkouts and same-machine git worktrees
 remain available as offline fallbacks only. Unchanged: never two

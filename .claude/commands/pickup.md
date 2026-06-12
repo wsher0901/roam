@@ -34,7 +34,12 @@ Start-of-sitting ritual. Do all of this:
    Claude Desktop (task ID + branch name + pattern pointer — D-017);
    give the `git worktree add` fallback only if I ask or we are
    offline. Informational only: exempt from the attention cap, never
-   an ask. Then wait for my go-ahead.
+   an ask. Then wait for my go-ahead. If my go-ahead is an explicit
+   launch approval ("launch them" / "launch T3+T5"), launch those
+   lanes yourself via `claude --remote` from freshly pulled main
+   (push first if needed) and report each session URL — that
+   approval doubles as the claim answer for the launched lanes
+   (D-017).
 7. Claim rule (always): before starting ANY task this session, state
    its ID and ask me to confirm it is not already open elsewhere (a
    Web chat or the other machine). One yes/no, then proceed. Never
