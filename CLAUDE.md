@@ -42,7 +42,11 @@ Full product definition: docs/FOUNDATION.md. Decision log: docs/DECISIONS.md.
   lanes at your discretion — you determine what needs overview. If I
   explicitly ask for "more", present the full ordered menu. Never
   answer "what's next" with an unrequested menu. Stopping is a valid
-  next step.
+  next step. Every briefing and completion ALSO appends a
+  "Parallel-ready:" list (D-016) — all unblocked, unclaimed [P]
+  tasks, each with tool label, branch name, and launch command
+  (worktree recipe for a same-machine second session) — informational,
+  exempt from the cap.
 - The moment I voice a new idea outside the current task's scope,
   append it as one dated line to docs/IDEAS.md without being asked.
   IDEAS.md additions are exempt from task-diff purity: they ride

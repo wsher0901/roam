@@ -301,3 +301,26 @@ Why:
 Alternatives rejected: overwrite-in-place caching (destroys the
 asset); a single blended store (license contamination); static grades
 (the reliability law dies of old age).
+
+## D-016 — 2026-06 — Parallel-ready menu (amends D-009)
+Decision: every briefing and completion (/pickup, /ship, "brief")
+ALWAYS appends a "Parallel-ready:" list — every task that is [P],
+unblocked, and not already claimed by an open lane — each item labeled
+with its tool (-> Claude Code / -> CLAUDE WEB), its branch name, and,
+for a second session on the same machine, the exact git worktree
+launch command. The list is informational and exempt from the D-009
+two-item attention cap: the cap still governs what needs the
+builder's attention; finish-first still orders the recommendations;
+the menu never converts into asks.
+Why:
+- parallel capacity was invisible unless explicitly requested —
+  D-009's discretionary clause hid throughput the builder wanted to
+  see;
+- listing lanes with ready-to-paste launch commands makes opening a
+  second lane a zero-thought action;
+- keeping the list informational preserves the anti-fatigue law: more
+  visibility, zero added attention cost.
+Alternatives rejected: keep it discretionary (the invisibility this
+fixes); fold parallel items into the attention cap (blows the fatigue
+budget); a standing PARALLEL.md file (rots; derived state belongs in
+briefings, not files — D-008).

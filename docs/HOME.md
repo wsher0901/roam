@@ -95,3 +95,8 @@ flagged explicitly with the chat to open or answer. Flexible cap: work
 needing no overview (fully specified, no decisions) may run as extra
 autonomous lanes at Claude's discretion; an explicit "more" from me
 unlocks the full ordered menu. Stopping is a valid next step.
+Parallel-ready menu (D-016): every briefing and completion appends
+the list of unblocked, unclaimed [P] tasks — tool label, branch name,
+launch command (git worktree recipe for a same-machine second
+session, typically hosted in Claude Desktop). Informational, exempt
+from the cap, never an ask.
