@@ -1,94 +1,12 @@
 # Handoff — 2026-06-12, Work (sitting 3)
-Active branch(es): main — no open PRs in this terminal.
-Cloud lanes (4, launched 2026-06-12 — ALL BLOCKED ON PUSH, see
-Blockers; no lane branches will appear on origin):
-T3 sky&sea session_018STvMoKD9h4pxLsZhnvKuK — FINISHED, bundle +
-PR body ready for download ·
-T4 feasibility session_01QMTrsNQxbiP95ddrEsX3mL ·
-T5 time&transport session_01KNqHyaTf216CNhSbnSmnBh — FINISHED,
-bundle + PR body ready for download ·
-T6 crowds&calendar session_01E6Dr8upDGxDD7HJQBau1Kq —
-one of T4/T6 reported lost (clone shows no git remote; answer it
-from claude.ai/code to keep it cloud-resident — do NOT teleport,
-its work is unpushed). Lane work now arrives as git bundles
-imported + reviewed locally, then pushed from this machine.
-Web lanes: none (confirmed).
-Roadmap position: V1.S1 at 2/7, V1.S2 at 3/5.
-Done this sitting (3): PR #48 approved + squash-merged — erratum:
-lane monitoring is claude.ai/code / mobile app; /tasks lists only
-local background work; /teleport = one-way pull-local. (#48 was
-authored in an earlier brief session that ended without /handoff —
-branch left checked out; recovered at /pickup.) Lane push-blockage
-diagnosed and recovery protocol logged (see Blockers).
-Done sitting 2: PR #39 approved + squash-merged — D-016
-parallel-ready menu wired into /pickup, /ship, CLAUDE.md, HOME.md;
-stale remote branch refs pruned (all were merged PRs). PR #41
-approved + squash-merged — D-017: cloud sessions are the
-parallel-lane vehicle (launch via Desktop Code tab / claude.ai/code
-/ `claude --remote`; no "&" prefix exists; clone-from-main rule;
-/tasks monitoring; launch protocol: founder's explicit "launch
-them" = Claude fires all approved lanes itself, approval doubles as
-claim answer); CLAUDE.md stale "plugins: not used" line fixed
-(rides D-017 PR, declared deviation). PR #43 approved +
-squash-merged — D-018: review-and-route after lanes finish (Claude
-reviews lane PRs first, surfaces issues each with a stay/teleport/
-new-lane recommendation; founder's verdict routes; teleport =
-founder's keystroke, Claude hands the paste-line; new-lane verdict
-doubles as launch approval).
-Done earlier today: V1.S1.T1 fact inventory (PR #31) + amendments
-(PR #33, PR #35); V1.S1.T2 weather vetting (PR #37: SOURCES.md born —
-Open-Meteo A, NWS alerts B, spike scripts).
-In flight (half-finished): the four cloud lanes above (running
-unattended; they survive both machines being off).
-Decisions today: D-010 … D-015 (see DECISIONS.md) · D-016
-parallel-ready menu (merged) · D-017 cloud parallel lanes + launch
-protocol (merged) · D-018 fix-routing triage (merged) · D-019
-launch mechanics: TTY guard + attended launcher window (merged,
-PR #46).
-Blockers / open questions: ALL FOUR cloud lanes cannot push — their
-containers were created before the GitHub access grant landed
-(~21:37Z); the scoped push credential is minted only at session
-creation, so granting later does not retrofit running containers
-(two lanes verified this independently; matches the "unverified
-until first launch" warning above). Recovery protocol (in
-progress): a finished lane hands over a git bundle + PR-body file;
-founder downloads both from the session at claude.ai/code; local
-Claude fetches the bundle into its branch, reviews the diff per
-D-018 BEFORE pushing, runs any sandbox-blocked spikes locally,
-then pushes and opens the PR with the lane's prepared body
-(fallback if the session UI can't serve file downloads: lane
-prints git format-patch output as plain chat text). T3 + T5 are
-finished with bundles ready; T4/T6 get the same treatment when
-they finish — or relaunch fresh (loses their progress; lanes
-launched after the grant push normally).
-Next steps (exact): founder downloads T3 + T5 bundles + PR bodies
-from their sessions and hands local Claude the file paths; Claude
-imports each into its branch, reviews per D-018, runs the pending
-spikes locally (T3: tides + aurora, NOAA-blocked in sandbox; T5:
-three written-not-run), pushes, opens the PRs, then surfaces
-issues with stay/teleport/new-lane routing; merge sequentially —
-all four touch SOURCES.md, so later ones may need a rebase.
-Identify + unstick the lost lane (T4 or T6) via claude.ai/code
-reply; collect remaining bundles as lanes finish. V1.S2.T5 design foundations ([P];
-re-enable Playwright plugin per equipment plan). T7 agenda: ratify
-grade scale, date-flexibility schema, backup posture. V1.S2.T4
-waits on V1.S1.T7.
-Gotchas discovered (durable): grant cloud GitHub access BEFORE
-launching lanes — containers mint their push credential at
-creation only; pre-grant lanes stay read-only forever. Cloud
-sandbox egress allowlist blocks some spike targets (e.g. NOAA
-hosts) — affected spike scripts must run locally before their
-SOURCES.md "last verified run" stamp. /tasks does NOT list cloud lanes
-(local background work only) — watch lanes at claude.ai/code or
-the mobile app; /teleport (/tp) is the CLI picker but entering =
-teleporting. `claude --remote` enforces a TTY
-guard — fails from Claude's headless shell AND from the `!` prefix
-(piped); working route: batch launcher .cmd OUTSIDE the repo
-(regenerate per batch — the spent launcher is DELETED after launch
-so a stray double-click can't spawn duplicate lanes), opened as an
-attended console window via Start-Process (D-019, merged).
-.prettierrc has endOfLine:auto (Windows
-CRLF churn); other machine still needs Supabase MCP (PowerShell, not
-bash), vercel login, roam.machine label — AND real Python 3
-(security-guidance plugin hook errors on the Store stub; fix:
-`winget install -e --id Python.Python.3.12`, then restart Claude).
+Active branch(es): main — clean, no open PRs, no local branches.
+Web lanes: none task-bearing; one Claude web chat debugging the `claude --remote` bug (debug prompt delivered this sitting).
+Roadmap position: V1.S1 at 2/7, V1.S2 at 3/5. T3–T6 NOT running anywhere — relaunch pending.
+Done this session: PR #48 erratum merged; PR #49 handoff note; cloud-push failure root-caused: `claude --remote` from this machine always bundle-seeds sessions (sandbox gets NO origin remote → push impossible); falsified causes: grant timing, account auth, env-var contamination, CCR_FORCE_BUNDLE; account GitHub auth FIXED via /web-setup (claude.ai/code new-session picker now shows roam); batch-1 T3+T5 finished work destroyed when their sessions were deleted before download.
+In flight: nothing running. T3–T6 relaunch route: claude.ai/code UI (repo picker → wsher0901/roam → kickoff prompt); at /pickup ask Claude to regenerate the four paste blocks (pattern: branch docs/v1.s1.tN-[family]-sources, push-first canary, T2 SOURCES.md pattern, push after every commit, egress fallback, PR with session URL, never merge).
+Salvage seeding T3 relaunch (lost lane's findings — re-verify, not facts): astro-ephemeris A (astronomy-engine npm, self-contained scripts/spikes/package.json, out of app tree until V1.S3.T4), tides B NOAA CO-OPS (network-gated), aurora-forecast A NOAA SWPC (network-gated), aurora-viability A/C, nature-timing C/D, night-sky-darkness C, astro-events A/C; D-015 disqualified: WorldTides (no multi-user server caching), Falchi Atlas (CC BY-NC), Met Office MOSWOC (non-commercial), Journey North/iNaturalist (NC clauses).
+Salvage T5: three-commit shape (green spikes / three network-gated written-not-run spikes / SOURCES.md entries); two vendor terms-of-use pages need a human browser — lane must surface them in its PR body.
+Decisions this session: none recorded; D-020 pending (lane law: push-first canary + push-every-commit; UI-launch as working route; --remote bundling bug documented).
+Blockers / open questions: `claude --remote` broken CLI-side (v2.1.175, Windows 11) — web chat investigating; until fixed, lanes launch only by founder paste at claude.ai/code (Claude cannot fire lanes itself). Creating GitHub issues for kickoff briefs was declined this sitting — briefs live here and are regenerable.
+Next steps (exact): launch T3–T6 from claude.ai/code UI; verify four canary branches on origin; review lane PRs per D-018, merge sequentially (all touch SOURCES.md — later ones may need rebase); record D-020 via /decide; then V1.S2.T5 design foundations ([P], Playwright plugin per equipment plan); V1.S1.T7 after T3–T6.
+Gotchas discovered: NEVER delete a cloud session before its work is pushed or downloaded; cloud sandbox egress blocks NOAA hosts (write spikes, mark network-gated, run locally). Standing gotchas: /tasks lists no cloud lanes (watch claude.ai/code; /teleport is one-way pull-local); .prettierrc endOfLine:auto CRLF churn; other machine still needs Supabase MCP (PowerShell), vercel login, roam.machine label, real Python 3 (winget install -e --id Python.Python.3.12).
