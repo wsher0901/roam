@@ -81,8 +81,10 @@ Open this note first. It stores no state — only where state lives.
   cockpit decides. Code reviews finished lane PRs first and surfaces
   issues, each with a recommendation (smallest sufficient context
   wins): stay here on the lane's branch (default) · teleport
-  (`claude --teleport <id>`, or t in /tasks — my keystroke; Code
-  hands me the paste-line) · new lane (Code launches it; my verdict
+  (`claude --teleport <id>`, or pick it in /teleport — my
+  keystroke; Code hands me the paste-line; ONE-WAY — pulls the
+  lane local, so only after its work is pushed) · new lane (Code
+  launches it; my verdict
   = launch approval). I read the PRs too; my reply routes each item.
 - Obsidian: the reading room + quick capture into IDEAS.md; /handoff
   sweeps it (D-008). Never hand-edit FOUNDATION / ROADMAP / DECISIONS.

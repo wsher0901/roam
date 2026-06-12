@@ -43,7 +43,10 @@ later ones may need a rebase). V1.S2.T5 design foundations ([P];
 re-enable Playwright plugin per equipment plan). T7 agenda: ratify
 grade scale, date-flexibility schema, backup posture. V1.S2.T4
 waits on V1.S1.T7.
-Gotchas discovered (durable): `claude --remote` enforces a TTY
+Gotchas discovered (durable): /tasks does NOT list cloud lanes
+(local background work only) — watch lanes at claude.ai/code or
+the mobile app; /teleport (/tp) is the CLI picker but entering =
+teleporting. `claude --remote` enforces a TTY
 guard — fails from Claude's headless shell AND from the `!` prefix
 (piped); working route: batch launcher .cmd OUTSIDE the repo
 (regenerate per batch — the spent launcher is DELETED after launch
