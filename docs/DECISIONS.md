@@ -169,3 +169,24 @@ Why:
 Alternatives rejected: full menus at every completion (the fatigue
 this law removes); a rigid cap (wastes parallel capacity on
 no-overview work); no cap (lane sprawl across two machines).
+
+## D-010 — 2026-06 — Global coverage via graded fallback ladders
+Decision: V1 fact coverage is global from day one — no geography cut.
+Every coverage-risky fact in docs/data/FACTS.md declares a fallback
+ladder, vetted top-down in V1.S1.T2–T6: (1) sources global by
+construction (numerical weather models, astronomical/harmonic/timezone
+math); (2) regional authoritative sources where rung 1 is weak;
+(3) computed from physics/math; (4) estimated ranges, labeled;
+(5) LLM-research grade, always rendered unverified; (6) refusal — the
+engine says "can't verify here" rather than guessing.
+Why:
+- the demo's wow cases are international (aurora, blossom timing,
+  tidal flats); a geography cut would underuse the reliability law,
+  which already provides honest degradation (grades, unverified
+  labels, refusal);
+- preferring computed/model sources makes most of the inventory
+  uniformly reliable everywhere at zero marginal coverage cost.
+Alternatives rejected: US+Canada-only V1 (fastest to all-green grades,
+but kills international demo scenarios and only defers sourcing work we
+must do anyway); US plus a named shortlist (bounded, but creates a
+two-tier product and still leaves the ladder unbuilt).
