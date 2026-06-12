@@ -30,5 +30,6 @@ Task-completion ritual. Do all of this:
    occupied or the day's pace is met, say so plainly ("nothing more
    needed now — finish X") instead of adding work. ALWAYS append a
    "Parallel-ready:" list (D-016): every unblocked, unclaimed [P]
-   task with tool label, branch name, and worktree launch command —
-   informational, exempt from the cap.
+   task with tool label, branch name, and a paste-ready Claude
+   Desktop cloud-session kickoff prompt (D-017) — informational,
+   exempt from the cap.

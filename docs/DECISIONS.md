@@ -324,3 +324,27 @@ Alternatives rejected: keep it discretionary (the invisibility this
 fixes); fold parallel items into the attention cap (blows the fatigue
 budget); a standing PARALLEL.md file (rots; derived state belongs in
 briefings, not files — D-008).
+
+## D-017 — 2026-06 — Cloud sessions are the parallel-lane vehicle (amends D-016)
+Decision: the launch command in the Parallel-ready menu is a
+paste-ready kickoff prompt for a Claude Code CLOUD session, launched
+from Claude Desktop (or claude.ai/code): task ID + branch name + a
+pointer to the pattern to follow. Each cloud lane runs remotely in
+its own isolated clone of the repo, on its own branch, and ships its
+own PR. Second-machine checkouts and same-machine git worktrees
+remain available as offline fallbacks only. Unchanged: never two
+sessions in one checkout; the claim question before starting any
+lane; founder approval before any merge.
+Why:
+- D-016's worktree recipe encoded an assumption, not the practice —
+  the builder's actual parallel workflow is Desktop-launched cloud
+  sessions;
+- cloud lanes are machine-independent: launchable from either
+  computer (or phone), nothing local to set up or clean up;
+- every cloud lane announces itself in git (branch + PR), so
+  /pickup's git-outranks-notes flagging already tracks them with
+  zero extra bookkeeping.
+Alternatives rejected: same-machine worktrees as primary (ties lanes
+to one computer and its local state — contradicts the two-computer
+reality); second-machine-only parallelism (both lanes should be
+launchable from one seat).
