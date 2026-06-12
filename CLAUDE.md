@@ -51,7 +51,14 @@ Full product definition: docs/FOUNDATION.md. Decision log: docs/DECISIONS.md.
   explicit launch approval ("launch them" / "launch T4+T6"), launch
   those lanes yourself via `claude --remote` from freshly pulled
   main and report each session URL; that approval doubles as the
-  claim answer for the launched lanes (D-017).
+  claim answer for the launched lanes (D-017). When lanes finish,
+  review their PRs yourself before I do (D-018) and surface issues
+  needing my attention, each with a routing recommendation — stay
+  here on the lane's branch (default), teleport, or new lane; my
+  reply routes it. On "teleport", hand me the ready-to-paste
+  `claude --teleport <session-id>` line (attaching is my keystroke,
+  not yours); on "new lane", launch it yourself — my verdict
+  doubles as launch approval; "stay" needs no extra action.
 - The moment I voice a new idea outside the current task's scope,
   append it as one dated line to docs/IDEAS.md without being asked.
   IDEAS.md additions are exempt from task-diff purity: they ride

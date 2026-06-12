@@ -366,3 +366,40 @@ Alternatives rejected: same-machine worktrees as primary (ties lanes
 to one computer and its local state — contradicts the two-computer
 reality); second-machine-only parallelism (both lanes should be
 launchable from one seat).
+
+## D-018 — 2026-06 — Fix-routing triage after lane review (extends D-017)
+Decision: when cloud lanes finish, Claude Code reviews the lane PRs
+itself FIRST — before the founder reads them — and surfaces every
+issue needing founder attention, each with a routing recommendation
+picked by "smallest sufficient context wins":
+1. STAY — fix here in the cockpit terminal on the lane's EXISTING
+   branch (checkout, edit, push; the PR updates). The default for
+   small fixes and founder judgment calls. Never spawn a session
+   where a branch checkout suffices.
+2. TELEPORT — the fix hinges on the lane's own reasoning ("why did
+   it grade X a B?"); the lane's session should explain or fix its
+   own work.
+3. NEW LANE — review exposed a genuinely NEW, independent,
+   fully-specified chunk of work.
+The founder reads the PRs too, then answers each recommendation —
+agree or override. The founder's verdict routes. Execution:
+- "stay" → status quo: the fix proceeds here, no extra action;
+- "teleport" → Claude resolves the session ID and hands the founder
+  the exact ready-to-paste line (`claude --teleport <session-id>`)
+  — attaching a terminal to a session is physically the founder's
+  keystroke, never Claude's;
+- "new lane" → Claude launches it itself via `claude --remote`
+  under the D-017 protocol — the routing verdict doubles as the
+  launch approval.
+Why:
+- the founder always reads the work, but pre-chewed issues plus a
+  routing recommendation turn review into a confirm/override pass
+  (anti-fatigue law) while keeping every routing visible and
+  overridable — oversight belongs exactly here;
+- fixes inherit the lane's branch, so one task stays one PR;
+- spawning sessions for fixes fragments context and burns shared
+  rate limits for no parallelism gain.
+Alternatives rejected: fully automatic routing (invisible decisions
+exactly where the founder wants overview); always-teleport
+(heavyweight; hijacks a terminal); always-new-session (loses lane
+context, splits a task across PRs).
