@@ -368,29 +368,38 @@ reality); second-machine-only parallelism (both lanes should be
 launchable from one seat).
 
 ## D-018 — 2026-06 — Fix-routing triage after lane review (extends D-017)
-Decision: when reviewing a finished cloud lane's PR produces
-follow-up work, Claude Code routes it automatically — no menu, no
-ask. Tie-breaker: smallest sufficient context wins.
-1. DEFAULT — edit here: small fixes and founder judgment calls are
-   made in the cockpit terminal on the lane's EXISTING branch
-   (checkout, edit, push; the PR updates). Never spawn a session
+Decision: when cloud lanes finish, Claude Code reviews the lane PRs
+itself FIRST — before the founder reads them — and surfaces every
+issue needing founder attention, each with a routing recommendation
+picked by "smallest sufficient context wins":
+1. STAY — fix here in the cockpit terminal on the lane's EXISTING
+   branch (checkout, edit, push; the PR updates). The default for
+   small fixes and founder judgment calls. Never spawn a session
    where a branch checkout suffices.
-2. TELEPORT — when the fix hinges on the lane's own reasoning ("why
-   did it grade X a B?"), recommend teleporting and hand the founder
-   the exact command (`claude --teleport <session-id>`, or t in
-   /tasks). Teleport takes over a terminal, so it is a founder
-   action, never run by Claude itself.
-3. NEW LANE — only when review yields a genuinely NEW, independent,
-   fully-specified chunk of work: it becomes its own task + branch in
-   the parallel-ready menu, subject to the D-017 launch protocol.
+2. TELEPORT — the fix hinges on the lane's own reasoning ("why did
+   it grade X a B?"); the lane's session should explain or fix its
+   own work.
+3. NEW LANE — review exposed a genuinely NEW, independent,
+   fully-specified chunk of work.
+The founder reads the PRs too, then answers each recommendation —
+agree or override. The founder's verdict routes. Execution:
+- "stay" → status quo: the fix proceeds here, no extra action;
+- "teleport" → Claude resolves the session ID and hands the founder
+  the exact ready-to-paste line (`claude --teleport <session-id>`)
+  — attaching a terminal to a session is physically the founder's
+  keystroke, never Claude's;
+- "new lane" → Claude launches it itself via `claude --remote`
+  under the D-017 protocol — the routing verdict doubles as the
+  launch approval.
 Why:
-- review is sequential by nature — the founder is the bottleneck,
-  and fixes inherit the lane's branch so one task stays one PR;
+- the founder always reads the work, but pre-chewed issues plus a
+  routing recommendation turn review into a confirm/override pass
+  (anti-fatigue law) while keeping every routing visible and
+  overridable — oversight belongs exactly here;
+- fixes inherit the lane's branch, so one task stays one PR;
 - spawning sessions for fixes fragments context and burns shared
-  rate limits for no parallelism gain;
-- a mechanical triage spares the founder a routing decision per fix
-  (anti-fatigue law).
-Alternatives rejected: always-teleport (heavyweight; hijacks the
-cockpit); always-new-session (loses lane context, splits a task
-across PRs); ask-each-time (decision fatigue over a mechanical
-choice).
+  rate limits for no parallelism gain.
+Alternatives rejected: fully automatic routing (invisible decisions
+exactly where the founder wants overview); always-teleport
+(heavyweight; hijacks a terminal); always-new-session (loses lane
+context, splits a task across PRs).
