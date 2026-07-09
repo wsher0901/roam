@@ -439,3 +439,47 @@ Why:
 Alternatives rejected: faking a TTY from the headless shell
 (defeats the guard's purpose); founder hand-typing each launch
 command (error-prone, scales badly past two lanes).
+
+## D-020 — 2026-07 — Parallel lanes v2: native lanes replace hand-built orchestration
+Decision: lanes run locally as background agents (dispatched from
+`claude agents`) or `claude -w` worktree sessions; every lane opens a
+draft PR at birth and pushes every commit. Supersedes the launch
+mechanics of
+[D-016](#d-016--2026-06--parallel-ready-menu-amends-d-009),
+[D-017](#d-017--2026-06--cloud-sessions-are-the-parallel-lane-vehicle-amends-d-016),
+[D-018](#d-018--2026-06--fix-routing-triage-after-lane-review-extends-d-017)
+and [D-019](#d-019--2026-06--launch-mechanics-correction-amends-d-017);
+closes the
+[D-020](#d-020--2026-07--parallel-lanes-v2-native-lanes-replace-hand-built-orchestration)
+pending item from [HANDOFF](HANDOFF.md). Lane law (June 12
+post-mortem, kept as belt-and-suspenders): push-first canary before
+real work in any cloud session, push after every commit, never end or
+delete a session before its work is on origin. Parallel lanes never
+share a file — source vetting writes `docs/data/SOURCES-<family>.md`,
+consolidated at
+[V1.S1.T7](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code).
+Agent Teams (experimental env flag in `.claude/settings.json`) may be
+used or proposed for research/review tasks: lead Fable/Opus, teammates
+Sonnet, max 4 teammates. Cloud sessions only via claude.ai/code and
+only after the push canary passes.
+[D-018](#d-018--2026-06--fix-routing-triage-after-lane-review-extends-d-017)'s
+pre-review behavior survives: finished lane PRs are pre-reviewed
+against [FOUNDATION](FOUNDATION.md), the roadmap line, and the
+reliability law before being surfaced. CLAUDE.md is slimmed
+accordingly: launch/teleport machinery removed; the equipment plan
+moves to `.claude/skills/equipment-plan/` (laws stay in CLAUDE.md,
+reference manuals live in skills).
+Why:
+- `claude --remote` bundle-seeded sandboxes on this machine (no origin
+  remote -> push impossible) destroyed batch-1 T3+T5 work;
+- three launch-mechanic corrections in a row
+  ([D-016](#d-016--2026-06--parallel-ready-menu-amends-d-009) ->
+  [D-017](#d-017--2026-06--cloud-sessions-are-the-parallel-lane-vehicle-amends-d-016)
+  -> [D-019](#d-019--2026-06--launch-mechanics-correction-amends-d-017))
+  showed the machinery was ours to maintain on shifting ground;
+- Claude Code now ships the same capability natively (background
+  agents that auto commit+push+draft-PR, Agent Teams, `claude -w`),
+  running locally where deletion-loss is structurally impossible.
+Alternatives rejected: keep repairing `--remote` (broken CLI-side, not
+ours to fix); pure sequential work (leaves S1's [P] lanes serialized
+now that loss-proof parallelism is native).
