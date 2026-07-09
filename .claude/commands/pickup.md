@@ -27,19 +27,8 @@ Start-of-sitting ritual. Do all of this:
    (fully specified, [P], no decisions) may be offered as extra
    autonomous lanes at your discretion — you judge what needs
    overview. If I explicitly ask for "more", present the full ordered
-   menu. ALWAYS end the briefing with a "Parallel-ready:" list (D-016):
-   every [P] task that is unblocked and not claimed by an open lane,
-   each labeled with its tool, its branch name, and a paste-ready
-   kickoff prompt for a Claude Code cloud session launched from
-   Claude Desktop (task ID + branch name + pattern pointer — D-017);
-   give the `git worktree add` fallback only if I ask or we are
-   offline. Informational only: exempt from the attention cap, never
-   an ask. Then wait for my go-ahead. If my go-ahead is an explicit
-   launch approval ("launch them" / "launch T3+T5"), launch those
-   lanes yourself via `claude --remote` from freshly pulled main
-   (push first if needed) and report each session URL — that
-   approval doubles as the claim answer for the launched lanes
-   (D-017).
+   menu. Parallel lanes follow CLAUDE.md ## Parallel lanes (D-020).
+   Then wait for my go-ahead.
 7. Claim rule (always): before starting ANY task this session, state
    its ID and ask me to confirm it is not already open elsewhere (a
    Web chat or the other machine). One yes/no, then proceed. Never
