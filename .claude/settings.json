@@ -11,16 +11,48 @@
     "playwright@claude-plugins-official": false,
     "superpowers@claude-plugins-official": false
   },
+  "permissions": {
+    "allow": [
+      "Bash(git status:*)", "Bash(git log:*)", "Bash(git diff:*)",
+      "Bash(git add:*)", "Bash(git commit:*)", "Bash(git push:*)",
+      "Bash(git pull:*)", "Bash(git fetch:*)", "Bash(git branch:*)",
+      "Bash(git checkout:*)", "Bash(git switch:*)",
+      "Bash(git merge --ff-only:*)", "Bash(git worktree:*)",
+      "Bash(gh pr create:*)", "Bash(gh pr view:*)",
+      "Bash(gh pr list:*)", "Bash(gh pr diff:*)",
+      "Bash(node:*)", "Bash(npm run:*)", "Bash(npm test:*)",
+      "Bash(npx vitest:*)", "Bash(npx eslint:*)", "Bash(npx prettier:*)"
+    ],
+    "ask": [
+      "Bash(gh pr merge:*)"
+    ],
+    "deny": [
+      "Bash(git push --force:*)", "Bash(git push -f:*)",
+      "Bash(git reset --hard:*)", "Bash(rm -rf:*)",
+      "Bash(gh repo delete:*)"
+    ]
+  },
   "hooks": {
     "SessionStart": [
       {
         "hooks": [
           {
             "type": "command",
-            "command": "cmd.exe",
-            "args": ["/c", "git pull --ff-only --quiet 2>nul & type docs\\HANDOFF.md"],
+            "command": "node .claude/hooks/session-start.mjs",
             "timeout": 30,
-            "statusMessage": "Pulling latest and reading handoff note"
+            "statusMessage": "Syncing repo and reading handoff note"
+          }
+        ]
+      }
+    ],
+    "SessionEnd": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node .claude/hooks/session-end.mjs",
+            "timeout": 60,
+            "statusMessage": "Safety net: pushing unpushed work"
           }
         ]
       }
