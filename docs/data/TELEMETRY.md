@@ -1,3 +1,8 @@
+---
+type: telemetry
+title: "Telemetry, quality & source health"
+status: living
+---
 # Telemetry, quality & source health — V1
 ([V1.S1.T1](../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code) amendment review, purposes P3–P6; [D-014](../DECISIONS.md#d-014--2026-06--telemetry-posture-capture-now-use-later), [D-015](../DECISIONS.md#d-015--2026-06--data-asset-law-bitemporal-append-only-license-segmented))
 

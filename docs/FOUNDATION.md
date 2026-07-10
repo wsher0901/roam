@@ -1,3 +1,8 @@
+---
+type: foundation
+title: Foundation
+status: living
+---
 # Foundation
 
 ## What Roam is

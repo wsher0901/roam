@@ -1,3 +1,8 @@
+---
+type: facts
+title: Fact inventory
+status: living
+---
 # Fact inventory — V1 (V1.S1.T1)
 
 What the engine must KNOW (54 world facts, five families) and what it

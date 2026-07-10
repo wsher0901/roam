@@ -35,8 +35,9 @@ Fix violations now — misses can't merge.
 
 ## Step 5 — the gate
 Summarize in plain language and ask the founder for approval.
-NEVER merge without their explicit yes. (`gh pr merge` will also ask
-at the tool layer — that's by design, not a bug.)
+NEVER merge without their explicit yes. (The founder's conversational
+yes is the ONLY merge gate — the tool layer no longer asks. Never
+infer approval; it must be explicit.)
 
 ## Step 6 — on approval
 Squash-merge, delete the branch, pull main. For parallel-lane PRs,

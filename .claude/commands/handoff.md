@@ -70,7 +70,7 @@ Shipped since last note: <n> entries → SHIPLOG.md
 From origin/main, branch chore/handoff-<date>, commit ONLY
 docs/HANDOFF.md (+ docs/IDEAS.md if entries queued), push, open PR
 titled "chore: handoff note", squash-merge immediately (the D-002
-micro carve-out; `gh pr merge` will ask once — if the founder has
-already left and no confirmation comes, leave the PR open: the next
-/pickup self-heals it). Return to the branch you came from. Report
+micro carve-out — merges without prompting; if the merge fails for
+any reason, leave the PR open: the next /pickup self-heals it).
+Return to the branch you came from. Report
 one line: "Handoff shipped (#N)."
