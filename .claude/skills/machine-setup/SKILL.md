@@ -42,6 +42,8 @@ description: Per-machine environment setup and verification for Roam.
 8. MCPs only when their stage calls for them (see the
    [equipment-plan skill](../equipment-plan/SKILL.md)); tokens stay
    local.
+9. Vercel CLI when S2+ work touches deploys: npm i -g vercel, then
+   vercel login (work PC currently missing it).
 
 ## Verify (after setup, or whenever one machine misbehaves)
 
@@ -65,3 +67,5 @@ and talk.
 - Machine-specific traps discovered in the field land first in
   [HANDOFF](../../../docs/HANDOFF.md)'s Blockers & gotchas; permanent
   ones get promoted here via a normal PR (the handoff promote rule).
+- PowerShell mangles em dashes (and some non-ASCII) on command
+  lines — pass long text to commands via files, never inline.
