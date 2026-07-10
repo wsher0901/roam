@@ -1,35 +1,65 @@
 ---
-description: Resume work on this machine from wherever the last session stopped
+description: Sit-down briefing — where the founder is, across every
+  surface, machine, and lane. Cockpit sessions run this unprompted on
+  the founder's first message; dispatched lanes and background agents
+  skip it.
 ---
-Start-of-sitting ritual. Do all of this:
-1. git checkout main && git pull.
-2. Read docs/HANDOFF.md. If it names an active branch, check it out and
-   pull it. If the file is missing, say so and continue from main.
-3. Read the active Stage (Vn.Sm) in docs/ROADMAP.md.
-4. Run `gh pr list --state open` and `git branch -r`. Include open PRs
-   and non-main branches in the briefing, flagging any that did not
-   come from this machine's last session (compare against
-   docs/HANDOFF.md). If any branch or PR has commits newer than the
-   handoff's date, say "HANDOFF is stale — trusting git" and brief
-   from git state instead.
-5. Render a progress map: one line per V1 stage with its tick count,
-   e.g. "S2 ██░░░ 2/5 <- active", marking active stages. Under it,
-   list open items: Code lanes (branches/PRs), Web lanes (from the
-   handoff), pending paste blocks, and any blockers/gotchas.
-6. Tell me in plain sentences: where we left off, what is
-   half-finished, then recommend in FINISH-FIRST order — open lanes
-   and pending blocks always outrank new tasks. Items needing my
-   attention are capped at two: "Now: <one item>" and optionally
-   "Parallel slot: <one item>"; beyond that say "plate is full —
-   finish first". Label every item "-> Claude Code" or "-> CLAUDE WEB
-   (open/answer chat: <title>)", and parallel or sequential per the
-   [P]/[seq] tags. Flexible cap: work needing NO overview from me
-   (fully specified, [P], no decisions) may be offered as extra
-   autonomous lanes at your discretion — you judge what needs
-   overview. If I explicitly ask for "more", present the full ordered
-   menu. Parallel lanes follow CLAUDE.md ## Parallel lanes (D-020).
-   Then wait for my go-ahead.
-7. Claim rule (always): before starting ANY task this session, state
-   its ID and ask me to confirm it is not already open elsewhere (a
-   Web chat or the other machine). One yes/no, then proceed. Never
-   start a task without this question.
+# /pickup — the sit-down briefing
+
+The founder may have been away an hour or a month. Assume they
+remember NOTHING. Every line must be self-sufficient and in plain
+English.
+
+## Step 1 — sync & self-heal
+- On main with a clean tree: `git pull --ff-only` (the start hook
+  usually already did; don't fail twice).
+- Check `gh pr list --state open`. If a PR touching ONLY
+  docs/HANDOFF.md and/or docs/IDEAS.md is open, it's a stranded
+  handoff micro-PR: squash-merge it now, pull, and mention it in the
+  briefing's first line.
+
+## Step 2 — gather truth (git outranks notes)
+Read: docs/HANDOFF.md (note its date + machine) · docs/ROADMAP.md ·
+docs/SHIPLOG.md · docs/DECISIONS.md · docs/IDEAS.md · live git
+(`git branch -r`, `gh pr list --state open` including drafts) · the
+active task's spec in docs/specs/ if one exists.
+Cross-check the note against git. Git wins. If they disagree or the
+note is old, say so plainly: "HANDOFF dated <date> — git has moved;
+trusting git."
+
+## Step 3 — render the briefing
+Fill this skeleton with live values. Icons: ✅ shipped · 🔨 working
+now (always name the lane) · ⬜ ready, not started · 🔒 locked (say
+by what). ASCII fallback if a terminal chokes: [x] [>] [ ] [#].
+Every 🔨 gets a ≤2-line plain-English gloss of what the task IS.
+
+════════ ROAM — PICKUP · <date> · <machine/branch> ════════
+<only if it happened: "Merged stranded handoff micro-PR #N.">
+MACRO — Version 1 · <n> of 33 pieces shipped <progress bar>
+<one block per OPEN stage:>
+S<k> · <name> — open
+  <icon rows for its tasks; gloss under each 🔨; 🔒 lines name
+   their key: "unlocks when/after …">
+<closed + not-started stages collapse to one line each>
+Running in parallel right now:
+  - <ID + name> → <surface> lane (<vehicle: PR #/draft/chat>) — <gloss>
+  <or: "one lane only — <ID>">
+FOCUS — <ID>: <name>
+<2–3 sentence human story: what we're doing and why it matters>
+  ✅ done in scope: <from merged work, ticked spec steps>
+  ⬜ left in scope: <remaining steps>
+CHANNELS (where you were)
+  [Code]   <branch · PR state · tree state> → next: <step>
+  [Web]    <chat name · what it holds · state> → next: <step>
+  [Design] <project · draft state> → next: <step>
+  <only surfaces with open lanes; from HANDOFF + live git>
+MICRO — <spec id>: next unchecked step — "<step text>"
+  <or: "no spec — task is fully specified">
+AMBIENT — shipped since your note: <n> (→ SHIPLOG.md) ·
+  new decisions: <D-numbers> · IDEAS +<n>
+  Blockers: <from the note, with who unblocks — or "none">
+NEXT — Now: <one action + tool> · Parallel: <one or "—">
+Claim question: "Picking up <ID>, or something else? Anything open
+on Web/Design I should know about?"
+
+Then wait for the founder's answer before doing work.
