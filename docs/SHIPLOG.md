@@ -9,6 +9,16 @@ Claude Web). Newest first.
 Format: **date — plain-English headline** (task ID) · what it means
 for the product → PR
 
+- **2026-07-09 — The knowledge layer: the vault learns to explain
+  itself** · A spec system for per-task detail sheets
+  ([specs/](specs/README.md)), a newcomer-proof
+  [GLOSSARY](GLOSSARY.md), a [DECISION-POLICY](DECISION-POLICY.md)
+  hub consolidating every decided engine rule with sources, a
+  [SCHEMA](data/SCHEMA.md) placeholder, [HOME](HOME.md) rewritten as
+  the zero-state front page, YAML frontmatter across the corpus — and
+  merges no longer need a keypress: the founder's conversational yes
+  is the only merge gate →
+  [PR #58](https://github.com/wsher0901/roam/pull/58)
 - **2026-07-09 — Repo hygiene: line endings pinned, old docs woven**
   · A `.gitattributes` now normalizes every text file to LF in the
   repository (ends the Windows phantom-modified-files trap), the
