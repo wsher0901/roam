@@ -97,6 +97,10 @@ Full product definition: docs/FOUNDATION.md. Decision log: docs/DECISIONS.md.
 - Operating manual & cockpit: docs/HOME.md — tool routing, the daily
   loop, the information hierarchy, how state syncs. Git outranks
   notes; ask the claim question before starting any task.
+- Retroactivity law: when a new documentation practice is adopted
+  (linking, frontmatter, logs), apply it to all pre-existing files
+  as a one-time machine-executed backfill in the same PR — old files
+  are never second-class.
 
 ## Safety rules (non-negotiable)
 - This repo is PUBLIC. NEVER include secrets, API keys, tokens,

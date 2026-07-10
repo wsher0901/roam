@@ -13,12 +13,12 @@ maintain); mobile-first v1 (web decided).
 
 ## D-002 — 2026-06 — Handoff-note merge policy
 Decision: main stays PR-only for everything, with one narrow carve-out —
-a PR containing only a docs/HANDOFF.md update (written by /handoff or
+a PR containing only a [docs/HANDOFF.md](HANDOFF.md) update (written by /handoff or
 /ship) is opened and squash-merged immediately without approval.
 Why:
 - keeps the physical PR gate universal on main;
 - adds zero friction to the leaving ritual;
-- HANDOFF is operational state I just authored, so approval adds nothing.
+- [HANDOFF](HANDOFF.md) is operational state I just authored, so approval adds nothing.
 Alternatives rejected: ruleset bypass for my account (removes the
 physical guarantee for the only identity that pushes); approval
 micro-PRs (taxes the handoff habit; unapproved notes strand the other
@@ -45,9 +45,9 @@ included as reasoning, not transactions).
 
 ## D-004 — 2026-06 — Planning notation & rolling-wave depth
 Decision: single notation Vn / Vn.Sm / Vn.Sm.Tk (Version -> Stage ->
-Task; small steps are checkboxes inside a task). ROADMAP plans rolling
+Task; small steps are checkboxes inside a task). [ROADMAP](ROADMAP.md) plans rolling
 wave: V1 fully detailed, V2 a rough named bucket, everything else pooled
-in FOUNDATION sockets + docs/IDEAS.md.
+in [FOUNDATION](FOUNDATION.md) sockets + [docs/IDEAS.md](IDEAS.md).
 Why:
 - one notation ends the v1/MVP/demo/milestone synonym confusion;
 - IDs let every PR, branch, handoff, and decision point at an exact
@@ -59,7 +59,7 @@ penalizes new ideas); V1-only with no version buckets (loses the
 per-version narrative).
 
 ## D-005 — 2026-06 — Stack re-trial vs Foundation V1: D-001 upheld + frontend layer
-Decision: D-001 upheld and extended — Next.js App Router (TypeScript,
+Decision: [D-001](#d-001--2026-06--tech-stack) upheld and extended — Next.js App Router (TypeScript,
 React 19) + Supabase (Postgres + Auth) + Vercel, planning brain = Claude
 API server-side, now with a named frontend layer: Tailwind v4 +
 shadcn/ui (design system), Motion (animation), MapLibre GL (maps),
@@ -113,10 +113,10 @@ not need it; Supabase makes it a V2 addition, not a rewrite).
 ## D-007 — 2026-06 — shadcn/ui builds on Base UI, not Radix
 Decision: Roam's shadcn/ui components use the Base UI primitive library
 (shadcn's current default, "nova" preset) rather than the legacy Radix
-option; confirmed with the V1.S2.T1 scaffold approval.
+option; confirmed with the [V1.S2.T1](ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1) scaffold approval.
 Why:
 - shadcn's docs, CLI defaults, and new components now target Base UI —
-  the well-trodden path D-005 optimizes for points there for greenfield
+  the well-trodden path [D-005](#d-005--2026-06--stack-re-trial-vs-foundation-v1-d-001-upheld--frontend-layer) optimizes for points there for greenfield
   apps;
 - nothing existed to migrate, and switching costs only grow as
   components accumulate (they are vendored files);
@@ -127,24 +127,24 @@ deferring the choice (every added component would deepen whichever
 default we ignored).
 
 ## D-008 — 2026-06 — Cockpit, derived state, automatic recording
-Decision: docs/HOME.md is the cockpit (pointers, routing, daily loop,
+Decision: [docs/HOME.md](HOME.md) is the cockpit (pointers, routing, daily loop,
 information hierarchy; stores no state). Recording and sequencing are
 system-enforced: /ship runs itself at task completion and ends by
 naming the next labeled action; /pickup and "brief" render a stage
 progress map and label every suggestion with tool +
-parallel/sequential; ideas are captured to IDEAS.md the moment voiced
+parallel/sequential; ideas are captured to [IDEAS.md](IDEAS.md) the moment voiced
 (Code appends directly; Web bakes APPENDs into blocks); Web chats
 speak in Lane Status footers and Resume Primers, with done/change
 calls confirmed by one question; git outranks notes; nothing starts
-without the claim question; the D-002 carve-out extends to
-docs/IDEAS.md additions.
+without the claim question; the [D-002](#d-002--2026-06--handoff-note-merge-policy) carve-out extends to
+[docs/IDEAS.md](IDEAS.md) additions.
 Why:
 - the human surface shrinks to pasting blocks, yes/no confirmations,
   and PR approvals — everything else is automatic or derived;
 - every completion emits the next instruction, so the loop never goes
   silent;
 - each information granularity has exactly one home and one update
-  mechanism (the hierarchy in HOME.md), so nothing has two truths.
+  mechanism (the hierarchy in [HOME.md](HOME.md)), so nothing has two truths.
 Alternatives rejected: a status file with its own state (rots); relying
 on the user to remember /ship, idea capture, or lane reporting (the
 failures this design exists to remove); PR approval for idea capture
@@ -172,8 +172,8 @@ no-overview work); no cap (lane sprawl across two machines).
 
 ## D-010 — 2026-06 — Global coverage via graded fallback ladders
 Decision: V1 fact coverage is global from day one — no geography cut.
-Every coverage-risky fact in docs/data/FACTS.md declares a fallback
-ladder, vetted top-down in V1.S1.T2–T6: (1) sources global by
+Every coverage-risky fact in [docs/data/FACTS.md](data/FACTS.md) declares a fallback
+ladder, vetted top-down in [V1.S1.T2–T6](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code): (1) sources global by
 construction (numerical weather models, astronomical/harmonic/timezone
 math); (2) regional authoritative sources where rung 1 is weak;
 (3) computed from physics/math; (4) estimated ranges, labeled;
@@ -192,29 +192,29 @@ must do anyway); US plus a named shortlist (bounded, but creates a
 two-tier product and still leaves the ladder unbuilt).
 
 ## D-011 — 2026-06 — Traveler input vocabulary: rich, nullable, tiered, append-only
-Decision: V1 collects the traveler vocabulary TP-01..26 defined in
-docs/data/FACTS.md Appendix A. The floor never changes: origin + dates
+Decision: V1 collects the traveler vocabulary [TP-01..26](data/FACTS.md#appendix-a--traveler-parameters-tp-0147--per-d-011--d-012) defined in
+[docs/data/FACTS.md](data/FACTS.md) Appendix A. The floor never changes: origin + dates
 always suffices (dates may carry optional earliest-departure /
 latest-return boundary times). Every other field defaults to Null. Each
 field carries a handling tier: engine (a named V1 check consumes it),
 brain-only (Claude personalizes with it; no deterministic check), or
 Later-socket field (stored, unconsumed — accessibility). Extension is
 append-only: a new field is one nullable column plus a D-number;
-removals/renames after V1.S1.T7 are migrations.
+removals/renames after [V1.S1.T7](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code) are migrations.
 Why:
-- FOUNDATION promises "from the floor (origin + free dates) to rich
+- [FOUNDATION](FOUNDATION.md) promises "from the floor (origin + free dates) to rich
   preferences"; structuring only what checks consume keeps the
   reliability law honest on the input side;
 - null-default keeps the floor sacred;
 - append-only matches "nothing in V1 may require a rewrite".
-Alternatives rejected: floor-only (underpowers logic FOUNDATION names:
+Alternatives rejected: floor-only (underpowers logic [FOUNDATION](FOUNDATION.md) names:
 red-eye fit, jet-lag pacing, multi-airport choice); free-text-only
 supplements (the brain can read them, deterministic checks cannot);
 exhaustive "all inputs ever" enumeration (stalls the gate and fakes
 capability for fields nothing consumes).
 
 ## D-012 — 2026-06 — Elicitation & inference policy (ask tiers, provenance, upsert)
-Decision: Every traveler field in docs/data/FACTS.md Appendix A carries
+Decision: Every traveler field in [docs/data/FACTS.md](data/FACTS.md) Appendix A carries
 an ask tier. Upfront = asked before the first draft, capped at six
 questions: origin, dates + flexibility (+ trip length when dates are
 open — the one non-negotiable ask), who's going (composition + party
@@ -244,7 +244,7 @@ Decision: All storage and engine math use SI/metric exclusively, never
 mixed. Conversion to US units happens only at render time via a
 settings-tier units field (default metric for development and as the
 initial product default; never asked; UI must expose the toggle —
-noted for V1.S2). Locale-based defaulting (US users -> imperial) is
+noted for [V1.S2](ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)). Locale-based defaulting (US users -> imperial) is
 deferred until accounts/locale exist.
 Why:
 - mixed-unit storage is a classic data-corruption source;
@@ -255,7 +255,7 @@ imperial-canonical (every upstream source is SI-native).
 
 ## D-014 — 2026-06 — Telemetry posture: capture now, use later
 Decision: V1 captures the behavior-event corpus defined in
-docs/data/TELEMETRY.md §1 from day one, under: consent-gated
+[docs/data/TELEMETRY.md §1](data/TELEMETRY.md#1-behavior-events-d-014) from day one, under: consent-gated
 collection (GPC/DNT respected; consent grants/withdrawals logged),
 pseudonymous session ids (no accounts in V1), no PII and no raw IPs in
 payloads, stated-only fields never appearing in events, raw-event
@@ -263,8 +263,8 @@ retention time-boxed (12-month default) with aggregates retained.
 Exposure law: every recommendation-reaction event records the full
 slate shown (items + positions), not just the acted-on item. V1 may
 use events only for product/funnel debugging, fatigue-cap tuning, and
-quality signals (TELEMETRY.md §2); ranking personalization remains
-Later per FOUNDATION; event data is never sold or shared.
+quality signals ([TELEMETRY.md §2](data/TELEMETRY.md#2-quality--ground-truth-p5)); ranking personalization remains
+Later per [FOUNDATION](FOUNDATION.md); event data is never sold or shared.
 Why:
 - events cannot be backfilled — day one of the Later ranking work
   should begin with months of slates, not zero;
@@ -273,16 +273,16 @@ Why:
 - the privacy floor keeps the corpus lawful and clean.
 Alternatives rejected: defer capture entirely (permanent data loss);
 click-only logging without exposures (position-biased, unusable);
-use-now ranking tuning (violates FOUNDATION's Later).
+use-now ranking tuning (violates [FOUNDATION](FOUNDATION.md)'s Later).
 
 ## D-015 — 2026-06 — Data-asset law: bitemporal, append-only, license-segmented
 Decision: The fact cache is bitemporal — every value carries valid_for
 (when it is true in the world) and recorded_at (when we learned it) —
 and append-only: values are superseded, never overwritten; revision
-series are first-class data. An actuals harvester (ROADMAP V1.S3.T7)
+series are first-class data. An actuals harvester ([ROADMAP](ROADMAP.md) [V1.S3.T7](ROADMAP.md#v1s3--engine-core--two-families-deep))
 records observed values once valid_for passes, pairing with the claim
 ledger for calibration. Source data is stored in license-segmented,
-attributed layers (collective, never blended-derivative); SOURCES.md
+attributed layers (collective, never blended-derivative); [SOURCES.md](data/SOURCES.md)
 records retention_rights and license_class per source, and these act
 as primary selection criteria in T2–T6 — caching-prohibited sources
 disqualify a slot from the asset layer. World data is strictly
@@ -292,7 +292,7 @@ grade and renders fall down the reliability ladder automatically;
 promotion requires re-vetting.
 Why:
 - the revision series and forecast-vs-actual pairs are the
-  proprietary core of FOUNDATION's "quiet asset";
+  proprietary core of [FOUNDATION](FOUNDATION.md)'s "quiet asset";
 - storage-prohibiting ToS would hollow the asset (e.g. Places-style
   no-caching rules); share-alike licenses attach to blended
   derivatives but not to segmented collective or internal use, so
@@ -308,13 +308,13 @@ ALWAYS appends a "Parallel-ready:" list — every task that is [P],
 unblocked, and not already claimed by an open lane — each item labeled
 with its tool (-> Claude Code / -> CLAUDE WEB), its branch name, and,
 for a second session on the same machine, the exact git worktree
-launch command. The list is informational and exempt from the D-009
+launch command. The list is informational and exempt from the [D-009](#d-009--2026-06--pacing-law-finish-first-flexible-cap)
 two-item attention cap: the cap still governs what needs the
 builder's attention; finish-first still orders the recommendations;
 the menu never converts into asks.
 Why:
 - parallel capacity was invisible unless explicitly requested —
-  D-009's discretionary clause hid throughput the builder wanted to
+  [D-009](#d-009--2026-06--pacing-law-finish-first-flexible-cap)'s discretionary clause hid throughput the builder wanted to
   see;
 - listing lanes with ready-to-paste launch commands makes opening a
   second lane a zero-thought action;
@@ -323,7 +323,7 @@ Why:
 Alternatives rejected: keep it discretionary (the invisibility this
 fixes); fold parallel items into the attention cap (blows the fatigue
 budget); a standing PARALLEL.md file (rots; derived state belongs in
-briefings, not files — D-008).
+briefings, not files — [D-008](#d-008--2026-06--cockpit-derived-state-automatic-recording)).
 
 ## D-017 — 2026-06 — Cloud sessions are the parallel-lane vehicle (amends D-016)
 Decision: the launch command in the Parallel-ready menu is a
@@ -364,7 +364,7 @@ remain available as offline fallbacks only. Unchanged: never two
 sessions in one checkout; the claim question before starting any
 lane; founder approval before any merge.
 Why:
-- D-016's worktree recipe encoded an assumption, not the practice —
+- [D-016](#d-016--2026-06--parallel-ready-menu-amends-d-009)'s worktree recipe encoded an assumption, not the practice —
   the builder's actual parallel workflow is Desktop-launched cloud
   sessions;
 - cloud lanes are machine-independent: launchable from either
@@ -399,7 +399,7 @@ agree or override. The founder's verdict routes. Execution:
   — attaching a terminal to a session is physically the founder's
   keystroke, never Claude's;
 - "new lane" → Claude launches it itself via `claude --remote`
-  under the D-017 protocol — the routing verdict doubles as the
+  under the [D-017](#d-017--2026-06--cloud-sessions-are-the-parallel-lane-vehicle-amends-d-016) protocol — the routing verdict doubles as the
   launch approval.
 Why:
 - the founder always reads the work, but pre-chewed issues plus a
@@ -424,9 +424,9 @@ line per approved lane) OUTSIDE the repo — never committed, the
 repo is public — and opens it as a visible console window on the
 founder's screen (Start-Process). The lanes launch in that attended
 window, print their session URLs, and the founder closes it.
-D-017 is otherwise unchanged: explicit founder approval still
+[D-017](#d-017--2026-06--cloud-sessions-are-the-parallel-lane-vehicle-amends-d-016) is otherwise unchanged: explicit founder approval still
 triggers the launch, Claude still prepares and fires everything,
-and the session IDs are recorded in HANDOFF as open lanes.
+and the session IDs are recorded in [HANDOFF](HANDOFF.md) as open lanes.
 Why:
 - the TTY guard exists so cloud sessions are born attended; a
   popped window on the founder's desktop is exactly that — visible,
@@ -434,7 +434,7 @@ Why:
 - discovered live (both headless and `!` routes failed at first
   launch); docs must encode verified reality, not assumptions —
   this is the second correction of an assumed mechanic (worktrees
-  in D-016 → cloud in D-017; headless launch in D-017 → attended
+  in [D-016](#d-016--2026-06--parallel-ready-menu-amends-d-009) → cloud in [D-017](#d-017--2026-06--cloud-sessions-are-the-parallel-lane-vehicle-amends-d-016); headless launch in [D-017](#d-017--2026-06--cloud-sessions-are-the-parallel-lane-vehicle-amends-d-016) → attended
   window here).
 Alternatives rejected: faking a TTY from the headless shell
 (defeats the guard's purpose); founder hand-typing each launch
@@ -465,9 +465,9 @@ only after the push canary passes.
 [D-018](#d-018--2026-06--fix-routing-triage-after-lane-review-extends-d-017)'s
 pre-review behavior survives: finished lane PRs are pre-reviewed
 against [FOUNDATION](FOUNDATION.md), the roadmap line, and the
-reliability law before being surfaced. CLAUDE.md is slimmed
+reliability law before being surfaced. [CLAUDE.md](../CLAUDE.md) is slimmed
 accordingly: launch/teleport machinery removed; the equipment plan
-moves to `.claude/skills/equipment-plan/` (laws stay in CLAUDE.md,
+moves to `.claude/skills/equipment-plan/` (laws stay in [CLAUDE.md](../CLAUDE.md),
 reference manuals live in skills).
 Why:
 - `claude --remote` bundle-seeded sandboxes on this machine (no origin

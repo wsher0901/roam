@@ -4,6 +4,13 @@ Claude Web). Newest first.
 Format: **date — plain-English headline** (task ID) · what it means
 for the product → PR
 
+- **2026-07-09 — Ritual engine v2; this log is born** · The four
+  session rituals were rewritten to their locked designs — /pickup
+  renders a three-lens briefing, /handoff writes the same picture
+  surface-tagged, /ship gates on specs and link hygiene and appends
+  to this log, /decide records an Affects line and applies its own
+  ripple edits — and SHIPLOG arrived backfilled with every real
+  merged PR → [PR #56](https://github.com/wsher0901/roam/pull/56)
 - **2026-07-09 — Session hooks that work on every machine** · Every
   session now opens synced and briefed on any OS (cross-platform Node
   hooks replace the Windows-only one), a session-end safety net
