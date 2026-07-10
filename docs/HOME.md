@@ -14,7 +14,7 @@ This page holds ZERO live state. Any "where are we" question is
 answered by naming the command that renders the answer, never by
 this file.
 
-## The eight questions
+## The nine questions
 
 | Question | Go to |
 |---|---|
@@ -26,6 +26,7 @@ this file.
 | What's the detail on a task? | [docs/specs/](specs/README.md) |
 | What does a term mean? | [GLOSSARY.md](GLOSSARY.md) |
 | How does the engine decide? | [DECISION-POLICY.md](DECISION-POLICY.md) |
+| How does progress look at a glance? | [DASHBOARD.md](DASHBOARD.md) |
 
 ## Tool routing
 
@@ -55,6 +56,7 @@ this file.
 | [ROADMAP.md](ROADMAP.md) | the build order: stages → tasks | structure via /decide; progress ticks via /ship |
 | [DECISIONS.md](DECISIONS.md) | append-only decision log | /decide |
 | [SHIPLOG.md](SHIPLOG.md) | what shipped, newest first | /ship's bookkeeping commit |
+| [DASHBOARD.md](DASHBOARD.md) | generated progress views | /ship (stage-map refresh at every merge) |
 | [HANDOFF.md](HANDOFF.md) | session re-entry note (transient) | /handoff — the cockpit session only, never lanes |
 | [IDEAS.md](IDEAS.md) | untriaged idea inbox | Claude Code, the moment an idea is voiced |
 | [specs/](specs/README.md) | per-task detail sheets | born when a task opens with discussion; /ship fills Deviations |
