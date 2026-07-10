@@ -9,6 +9,15 @@ Claude Web). Newest first.
 Format: **date — plain-English headline** (task ID) · what it means
 for the product → PR
 
+- **2026-07-10 — Switching computers becomes pull + a checklist** · A
+  machine-setup skill now carries the one-clone law (both seats'
+  paths written down), the one-time per-machine checklist (git
+  identity, roam.machine label, Obsidian + Dataview, stage-gated
+  MCPs), and a verification block for when one machine misbehaves —
+  with field-discovered traps promoted from
+  [HANDOFF](HANDOFF.md)'s gotchas via normal PRs, and
+  [HOME](HOME.md) routing to it →
+  [PR #66](https://github.com/wsher0901/roam/pull/66)
 - **2026-07-10 — Design sessions get a rule-carrier; the log is made
   whole** · A [DESIGN-KICKOFF](DESIGN-KICKOFF.md) preamble now
   carries Roam's identity, scope guard, no-write governance, and exit

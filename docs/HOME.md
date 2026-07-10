@@ -28,6 +28,7 @@ this file.
 | How does the engine decide? | [DECISION-POLICY.md](DECISION-POLICY.md) |
 | How does progress look at a glance? | [DASHBOARD.md](DASHBOARD.md) |
 | How do I start a Design session? | [DESIGN-KICKOFF.md](DESIGN-KICKOFF.md) |
+| I'm sitting at a new or second machine | [machine-setup skill](../.claude/skills/machine-setup/SKILL.md) |
 
 ## Tool routing
 
@@ -59,6 +60,7 @@ this file.
 | [SHIPLOG.md](SHIPLOG.md) | what shipped, newest first | /ship's bookkeeping commit |
 | [DASHBOARD.md](DASHBOARD.md) | generated progress views | /ship (stage-map refresh at every merge) |
 | [DESIGN-KICKOFF.md](DESIGN-KICKOFF.md) | Design session preamble + extraction rules | ops PRs |
+| [machine-setup skill](../.claude/skills/machine-setup/SKILL.md) | per-machine setup + verification | ops PRs + gotcha promotions |
 | [HANDOFF.md](HANDOFF.md) | session re-entry note (transient) | /handoff — the cockpit session only, never lanes |
 | [IDEAS.md](IDEAS.md) | untriaged idea inbox | Claude Code, the moment an idea is voiced |
 | [specs/](specs/README.md) | per-task detail sheets | born when a task opens with discussion; /ship fills Deviations |
