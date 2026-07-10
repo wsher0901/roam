@@ -6,6 +6,15 @@ description: Stand-up ritual — compile the founder's re-entry picture
 ---
 # /handoff — the stand-up note
 
+## Invocation modes
+- FULL (leaving phrase or explicit /handoff): run all steps,
+  including the Step 2 never-skipped question.
+- QUIET (invoked as /ship's tail): SKIP Step 2 entirely — carry the
+  previous note's [Web] and [Design] lines forward verbatim, refresh
+  Macro / Current focus / [Code] / shipped-since from git, ship the
+  micro-PR. The founder is only asked about other surfaces at real
+  stand-up moments.
+
 Laws: SINGLE WRITER — only the cockpit session the founder is driving
 runs this. Lanes and background agents never touch HANDOFF; they
 speak through their draft PRs. Write for someone who remembers
@@ -23,10 +32,12 @@ Accept "none". Carry forward still-open lanes from the previous
 note; drop ones the founder closed.
 
 ## Step 3 — write docs/HANDOFF.md in exactly this shape
+Compute <n> and <total> live by counting ROADMAP's checked/total
+checkboxes at render time; never carry a constant.
 # Handoff — <YYYY-MM-DD (Day)> · <machine>
 
 ## Macro (as of this note)
-Version 1 — the demo app · <n> of 33 pieces shipped <bar>
+Version 1 — the demo app · <n> of <total> pieces shipped <bar>
 <icon rows per open stage, same icon grammar and glosses as /pickup;
  closed/future stages one line>
 Running in parallel right now:

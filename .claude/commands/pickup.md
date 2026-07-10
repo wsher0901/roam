@@ -32,10 +32,12 @@ Fill this skeleton with live values. Icons: ✅ shipped · 🔨 working
 now (always name the lane) · ⬜ ready, not started · 🔒 locked (say
 by what). ASCII fallback if a terminal chokes: [x] [>] [ ] [#].
 Every 🔨 gets a ≤2-line plain-English gloss of what the task IS.
+Compute <n> and <total> live by counting ROADMAP's checked/total
+checkboxes at render time; never carry a constant.
 
 ════════ ROAM — PICKUP · <date> · <machine/branch> ════════
 <only if it happened: "Merged stranded handoff micro-PR #N.">
-MACRO — Version 1 · <n> of 33 pieces shipped <progress bar>
+MACRO — Version 1 · <n> of <total> pieces shipped <progress bar>
 <one block per OPEN stage:>
 S<k> · <name> — open
   <icon rows for its tasks; gloss under each 🔨; 🔒 lines name
