@@ -20,21 +20,25 @@ Running in parallel right now:
   - [V1.S2.T5](ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1) → Design lane (mock draft) — visual-language exploration
 
 ## Current focus — setup ladder · P6
-The eight-step setup ladder runs from a Claude Web chat. P5 (the
-visual layer) was executed and merged this sitting: a living
-[DASHBOARD](DASHBOARD.md) with a Mermaid stage map (GitHub +
-Obsidian) and Dataview live views, kept honest by /ship's bookkeeping
-step. P6's prompt comes from the same chat.
-  ✅ done in scope: P1–P5 merged (#53, #56, #57, #58, #60)
+The eight-step setup ladder runs from a Claude Web chat. This sitting
+merged P5 — the living [DASHBOARD](DASHBOARD.md) (Mermaid stage map +
+Dataview views, repainted by /ship) — and a follow-up ritual fix
+([PR #62](https://github.com/wsher0901/roam/pull/62)): pickup/handoff
+totals are now computed live from [ROADMAP](ROADMAP.md), /ship's tail
+runs /handoff in QUIET mode (no lane question), and the derivation
+law entered [CLAUDE.md](../CLAUDE.md). P6's prompt comes from the
+same chat.
+  ✅ done in scope: P1–P5 merged (#53, #56, #57, #58, #60) + ritual
+     fix (#62)
   ⬜ left in scope: P6–P7 (defined in the chat) ·
      P8 = relaunch T3–T6 as native source-vetting lanes
 
 ## Channels
 - [Code] main · no open PRs · tree clean
-  P5 executed from its paste block and merged
-  ([PR #60](https://github.com/wsher0901/roam/pull/60)):
-  [DASHBOARD](DASHBOARD.md) is live, /ship now repaints its stage map
-  at every merge, [HOME](HOME.md) routes to it.
+  Two merges this sitting: the visual dashboard
+  ([PR #60](https://github.com/wsher0901/roam/pull/60)) and the
+  ritual fix ([PR #62](https://github.com/wsher0901/roam/pull/62) —
+  live totals, QUIET ship-tail, derivation law).
   → next: execute the P6 prompt when it arrives as a paste block.
 - [Web] chat "setup ladder (P1–P8)"
   The ladder's home; P5 delivered and merged; no unpasted blocks.
@@ -47,12 +51,13 @@ step. P6's prompt comes from the same chat.
   extraction via "Hand off to Claude Code" — values only, never markup.
 
 ## Blockers & gotchas
+- GOTCHA · [PR #62](https://github.com/wsher0901/roam/pull/62) merged
+  without a [SHIPLOG](SHIPLOG.md) entry (its paste block's file list
+  excluded SHIPLOG) — backfill candidate for the next
+  SHIPLOG-touching PR.
 - GOTCHA · [DASHBOARD](DASHBOARD.md)'s Dataview views render only in
   Obsidian with the Dataview community plugin installed — once per
   machine (neither PC confirmed yet).
-- GOTCHA · the /handoff template hardcodes "of 33" pieces but the live
-  [ROADMAP](ROADMAP.md) counts 34 tasks — use the live count; fix the
-  template via a normal approved PR.
 - GOTCHA · zero-tap merge permissions (PR #58) were pulled mid-session
   on the work PC — they load at its NEXT session start; this sitting
   still prompted per merge.
@@ -69,4 +74,6 @@ step. P6's prompt comes from the same chat.
 1. P6 (→ Web chat, then paste block).
 2. Parallel: continue the V1.S2.T5 Design draft.
 
-Shipped since last note: 1 entry → [SHIPLOG.md](SHIPLOG.md)
+Shipped since last note: 0 entries → [SHIPLOG.md](SHIPLOG.md)
+([PR #62](https://github.com/wsher0901/roam/pull/62) merged
+unlogged — see gotcha)
