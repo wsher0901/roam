@@ -9,6 +9,22 @@ Claude Web). Newest first.
 Format: **date — plain-English headline** (task ID) · what it means
 for the product → PR
 
+- **2026-07-10 — Design sessions get a rule-carrier; the log is made
+  whole** · A [DESIGN-KICKOFF](DESIGN-KICKOFF.md) preamble now
+  carries Roam's identity, scope guard, no-write governance, and exit
+  format into every Claude Design session (Project instructions
+  cannot reach that surface), [HOME](HOME.md) routes to it, and the
+  missing PR #62 entry below is backfilled →
+  [PR #64](https://github.com/wsher0901/roam/pull/64)
+- **2026-07-10 — Rituals count for themselves; the ship-tail goes
+  quiet** · /pickup and /handoff now compute done/total live from
+  [ROADMAP](ROADMAP.md)'s checkboxes instead of carrying a constant,
+  /ship's tail runs /handoff in QUIET mode (no lane question — Web
+  and Design carry forward), and the derivation law (if a number can
+  be counted, count it) entered [CLAUDE.md](../CLAUDE.md) →
+  [PR #62](https://github.com/wsher0901/roam/pull/62) (backfilled:
+  merged without its entry — a files-touched omission in the
+  founder's block)
 - **2026-07-10 — Progress gets a face: the stage-map dashboard** · A
   living [DASHBOARD](DASHBOARD.md) renders all eight V1 stages as a
   colored Mermaid map with live done/total counts (on GitHub and in
