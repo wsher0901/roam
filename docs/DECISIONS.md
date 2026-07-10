@@ -1,3 +1,8 @@
+---
+type: decision-log
+title: Decisions Log
+status: append-only
+---
 # Decisions Log
 Format: D-NNN | date | decision | why | alternatives rejected.
 

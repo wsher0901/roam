@@ -1,3 +1,8 @@
+---
+type: sources
+title: Source registry
+status: living
+---
 # Source registry — V1
 One entry per source slot ([FACTS.md](FACTS.md) "T2–T6 assignment map"). Each
 entry records: facts served · chosen source · confirmed payload keys

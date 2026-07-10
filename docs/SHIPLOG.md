@@ -1,3 +1,8 @@
+---
+type: shiplog
+title: Shiplog
+status: append-only
+---
 # SHIPLOG — what shipped, when
 Past events only — for current state, run /pickup (or say "brief" in
 Claude Web). Newest first.
