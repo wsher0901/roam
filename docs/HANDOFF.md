@@ -1,12 +1,64 @@
-# Handoff — 2026-07-09, Work (sitting 2)
-Active branch(es): main — clean, no open PRs, no local branches.
-Web lanes: none task-bearing (founder-confirmed at handoff); the `claude --remote` debug chat is moot after [D-020](DECISIONS.md#d-020--2026-07--parallel-lanes-v2-native-lanes-replace-hand-built-orchestration) (native lanes) — safe to close.
-Roadmap position: [V1.S1](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code) at 2/7, [V1.S2](ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1) at 3/5. T3–T6 relaunch pending — now as native lanes.
-Done this session: PR #51 merged — [D-020](DECISIONS.md#d-020--2026-07--parallel-lanes-v2-native-lanes-replace-hand-built-orchestration) recorded: parallel lanes v2 (local background agents / `claude -w`, draft PR at birth, push every commit); CLAUDE.md slimmed; equipment plan moved to .claude/skills/equipment-plan/. PR #53 merged — session hooks v2: cross-platform Node SessionStart (ff-pull only on clean main, injects this note, cockpit briefing directive), SessionEnd safety net (wip-commits + pushes lane branches, never touches main), permissions block (routine git/gh/test commands pre-approved; `gh pr merge` always asks; force-push / hard-reset / rm -rf denied).
-In flight: nothing running. T3–T6 relaunch route: native lanes per [CLAUDE.md](../CLAUDE.md) ## Parallel lanes — branch docs/v1.s1.tN-[family]-sources, draft PR at birth, push every commit, each lane writes its own docs/data/SOURCES-[family].md (lanes never share a file), consolidated at [V1.S1.T7](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code).
-Salvage seeding T3 relaunch (lost lane's findings — re-verify, not facts): astro-ephemeris A (astronomy-engine npm, self-contained scripts/spikes/package.json, out of app tree until [V1.S3.T4](ROADMAP.md#v1s3--engine-core--two-families-deep)), tides B NOAA CO-OPS (network-gated), aurora-forecast A NOAA SWPC (network-gated), aurora-viability A/C, nature-timing C/D, night-sky-darkness C, astro-events A/C; [D-015](DECISIONS.md#d-015--2026-06--data-asset-law-bitemporal-append-only-license-segmented) disqualified: WorldTides (no multi-user server caching), Falchi Atlas (CC BY-NC), Met Office MOSWOC (non-commercial), Journey North/iNaturalist (NC clauses).
-Salvage T5: three-commit shape (green spikes / three network-gated written-not-run spikes / [SOURCES.md](data/SOURCES.md) entries); two vendor terms-of-use pages need a human browser — lane must surface them in its PR body.
-Decisions this session: [D-020](DECISIONS.md#d-020--2026-07--parallel-lanes-v2-native-lanes-replace-hand-built-orchestration) — native lanes supersede the [D-016](DECISIONS.md#d-016--2026-06--parallel-ready-menu-amends-d-009)–[D-019](DECISIONS.md#d-019--2026-06--launch-mechanics-correction-amends-d-017) launch mechanics.
-Blockers / open questions: none new; T3–T6 kickoff briefs are regenerable from this note.
-Next steps (exact): relaunch T3–T6 as native lanes (one per family; salvage above is re-verify, not facts); pre-review finished lane PRs per [D-020](DECISIONS.md#d-020--2026-07--parallel-lanes-v2-native-lanes-replace-hand-built-orchestration); merge sequentially (no rebase chain — each lane owns its SOURCES-[family].md); then [V1.S1.T7](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code); [V1.S2.T5](ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1) design foundations ([P], playwright plugin per the equipment-plan skill) available as a parallel slot.
-Gotchas discovered: new hooks + permissions load at NEXT session start — from then SessionEnd auto-wip-pushes lane branches (main untouched) and permission deny rules are prefix matches (flag reorderings not caught; classifier + laws remain the backstop). PowerShell 5.1 mangles em dashes on command lines — pass long text via files (e.g. `gh pr create --body-file`); CRLF churn can block `git pull` (rebase guard) — `git fetch` + `git merge --ff-only origin/main` gets past it. Standing: .prettierrc endOfLine:auto CRLF churn; other machine still needs Supabase MCP (PowerShell), vercel login, roam.machine label, real Python 3 (winget install -e --id Python.Python.3.12).
+# Handoff — 2026-07-09 (Thu) · home PC
+
+## Macro (as of this note)
+Version 1 — the demo app · 5 of 33 pieces shipped █████░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+[S1 · Data Definition (the gate)](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code) — open
+  ✅ T1 Fact inventory · ✅ T2 Weather sources
+  ⬜ T3 Sky & sea · ⬜ T4 Feasibility · ⬜ T5 Time & transport · ⬜ T6 Crowds & calendar
+  (T3–T6 are queued at ladder step P8 — do NOT dispatch earlier; kickoff briefs arrive from the Web chat)
+  🔒 T7 Storage schema + source registry — unlocks after T3–T6
+[S2 · Skeleton & design foundations](ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1) — open
+  ✅ T1 App scaffold · ✅ T2 Deploy + CI · ✅ T3 Supabase wiring
+  🔒 T4 Schema migration — unlocks after [V1.S1.T7](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
+  🔨 T5 Design foundations — Design lane
+  Exploring Roam's visual language in Claude Design; only extracted
+  values (tokens) will enter the repo, never markup.
+S3–S8 (Engine core · Suggest · Plan · Edit · three families · demo polish) — not started
+Running in parallel right now:
+  - setup ladder (P1–P8) → Web lane (chat) — the founder's meta-stream
+    upgrading the workshop before the next build push; P5 is next
+  - [V1.S2.T5](ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1) → Design lane (mock draft) — visual-language exploration
+
+## Current focus — setup ladder · P5: visual layer
+An eight-step setup ladder (P1–P8) runs from a Claude Web chat,
+upgrading the workshop before the next build push. P1–P4 all merged
+today: session hooks v2 (#53), ritual engine v2 + SHIPLOG birth
+(#56), hygiene + retro-weave (#57), knowledge layer + zero-tap merges
+(#58). P5 (the visual layer) is next; its prompt comes from that chat.
+  ✅ done in scope: P1–P4 merged (#53, #56, #57, #58)
+  ⬜ left in scope: P5 visual layer · P6–P7 (defined in the chat) ·
+     P8 = relaunch T3–T6 as native source-vetting lanes
+
+## Channels
+- [Code] main · no open PRs · tree clean
+  Four ladder PRs merged this sitting; [SHIPLOG](SHIPLOG.md),
+  [GLOSSARY](GLOSSARY.md), [DECISION-POLICY](DECISION-POLICY.md),
+  [HOME](HOME.md) v2, and corpus frontmatter are all live.
+  → next: execute the P5 prompt when it arrives as a paste block.
+- [Web] chat "setup ladder (P1–P8)"
+  The ladder's home; P1–P4 delivered and merged; no unpasted blocks.
+  ✅ settled: P1–P4 · ⬜ open: P5 prompt; P6–P8 queued behind it
+  → next: founder pulls the P5 visual-layer prompt from the chat.
+- [Design] V1.S2.T5 mock draft
+  Exploring Roam's visual language.
+  → next: converge on the two representative screens (option card
+  with confidence badge; day timeline beside map), then token
+  extraction via "Hand off to Claude Code" — values only, never markup.
+
+## Blockers & gotchas
+- GOTCHA · zero-tap merge permissions (PR #58) load at NEXT session
+  start — this session still prompts once per merge.
+- GOTCHA · [DECISION-POLICY](DECISION-POLICY.md) §10 holds five open
+  engine questions for the founder — not blocking until
+  [V1.S3](ROADMAP.md#v1s3--engine-core--two-families-deep) opens.
+- Standing (promotion candidates for a machine-setup skill): the
+  other machine still needs Supabase MCP, vercel login, the
+  roam.machine label, and real Python 3; PowerShell 5.1 mangles em
+  dashes on command lines — pass long text via files.
+- BLOCKER · none.
+
+## Next intent
+1. P5 visual layer (→ Web chat, then paste block).
+2. Parallel: continue the V1.S2.T5 Design draft.
+
+Shipped since last note: 3 entries → [SHIPLOG.md](SHIPLOG.md)
