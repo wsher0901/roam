@@ -48,5 +48,6 @@ Squash-merge, delete the branch, pull main. For parallel-lane PRs,
 pre-review per CLAUDE.md ## Parallel lanes before surfacing.
 
 ## Step 7 — close the loop
-Run the /handoff tail (fresh note, micro-PR). Then recommend exactly
+Run the QUIET /handoff tail (no lane question — carry Web/Design
+forward) (fresh note, micro-PR). Then recommend exactly
 ONE next action (+ at most one parallel slot) per the pacing law.

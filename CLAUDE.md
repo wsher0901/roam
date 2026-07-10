@@ -101,6 +101,10 @@ Full product definition: docs/FOUNDATION.md. Decision log: docs/DECISIONS.md.
   (linking, frontmatter, logs), apply it to all pre-existing files
   as a one-time machine-executed backfill in the same PR — old files
   are never second-class.
+- Derived values (counts, totals, statuses) are never written as
+  literals in templates, commands, or generated docs — compute them
+  from their source at render time. If a number can be counted,
+  count it.
 
 ## Safety rules (non-negotiable)
 - This repo is PUBLIC. NEVER include secrets, API keys, tokens,
