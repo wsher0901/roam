@@ -31,6 +31,10 @@ Fix violations now — misses can't merge.
   docs/SHIPLOG.md (top of the list, weave rule applies):
   **<YYYY-MM-DD> — <plain-English headline>** (<ID linked>) ·
   <one sentence: what Roam has now that it didn't> → PR #N
+- refresh the Mermaid stage map in docs/DASHBOARD.md: recompute every
+  stage's done/total from ROADMAP's checkboxes and reassign node
+  classes (done/active/locked/pending). The dashboard must never
+  disagree with ROADMAP.
 - Push; the PR updates itself.
 
 ## Step 5 — the gate
