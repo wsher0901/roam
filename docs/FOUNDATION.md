@@ -97,11 +97,11 @@ anonymized interaction signals tune the ranking.
 - Explain everything: every ranking and every edit verdict carries its
   reasons.
 - Room for monetization, never at V1's expense.
-- New ideas land in docs/IDEAS.md, triaged into check modules and Vn
+- New ideas land in [docs/IDEAS.md](IDEAS.md), triaged into check modules and Vn
   buckets.
 
 ## Plan-synthesis principles
-Binding on the engine and the brain; V1.S3 and V1.S5 implement these.
+Binding on the engine and the brain; [V1.S3](ROADMAP.md#v1s3--engine-core--two-families-deep) and [V1.S5](ROADMAP.md#v1s5--plan) implement these.
 - Staged synthesis: a cheap coarse pass first; confirm killer
   constraints (departure bounds, trip length, budget) before any
   expensive search.

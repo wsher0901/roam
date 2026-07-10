@@ -1,0 +1,11 @@
+# Git normalizes all text files to LF in the repository.
+# This ends the CRLF phantom-modified-files problem on Windows.
+* text=auto
+
+# Binaries — never touch
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.ico binary
+*.woff binary
+*.woff2 binary

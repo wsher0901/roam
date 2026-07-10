@@ -1,13 +1,13 @@
 # Telemetry, quality & source health — V1
-(V1.S1.T1 amendment review, purposes P3–P6; D-014, D-015)
+([V1.S1.T1](../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code) amendment review, purposes P3–P6; [D-014](../DECISIONS.md#d-014--2026-06--telemetry-posture-capture-now-use-later), [D-015](../DECISIONS.md#d-015--2026-06--data-asset-law-bitemporal-append-only-license-segmented))
 
 What the system records about ITSELF and about user interaction —
-distinct from world facts (FACTS.md) and traveler inputs (FACTS.md
+distinct from world facts ([FACTS.md](FACTS.md)) and traveler inputs ([FACTS.md](FACTS.md)
 Appendix A). Three registers: behavior events, quality & ground
-truth, source health. Storage for all of it lands in V1.S1.T7.
+truth, source health. Storage for all of it lands in [V1.S1.T7](../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code).
 
 ## 1. Behavior events (D-014)
-Posture: capture now, use later. FOUNDATION defers ranking-tuning to
+Posture: capture now, use later. [FOUNDATION](../FOUNDATION.md) defers ranking-tuning to
 Later; events are captured from day one because they cannot be
 backfilled.
 V1 use-allowlist: product/funnel debugging · fatigue-cap tuning
@@ -21,7 +21,7 @@ Envelope (every event):
  subject_ref, action, context_ref,
  client_context {device_class, app_version, environment}}
 Rules: events reference stored objects, never duplicate values;
-stated-only fields never appear in payloads (an event may say "TP-45
+stated-only fields never appear in payloads (an event may say "[TP-45](FACTS.md#appendix-a--traveler-parameters-tp-0147--per-d-011--d-012)
 was set", never to what); naming = object_action snake_case; schema
 changes are additive only (bump schema_version).
 
@@ -57,12 +57,12 @@ aggregates kept · deletion requests honored across raw and derived.
 
 ## 2. Quality & ground truth (P5)
 - Eval case set: versioned in-repo {input scenario -> expected
-  assertions}; extends V1.S3.T6's golden tests to product level;
+  assertions}; extends [V1.S3.T6](../ROADMAP.md#v1s3--engine-core--two-families-deep)'s golden tests to product level;
   grows from anonymized real sessions and feedback events.
 - Claim ledger: every RENDERED claim is logged
   {claim_id, fact_ref, source_slot, grade, value_ref, shown_at,
   session_ref} — what we asserted, at what confidence.
-- Actuals pairing: the actuals harvester (ROADMAP V1.S3.T7) records
+- Actuals pairing: the actuals harvester ([ROADMAP](../ROADMAP.md) [V1.S3.T7](../ROADMAP.md#v1s3--engine-core--two-families-deep)) records
   observed values once valid_for passes; joined to the claim ledger
   it yields the calibration report — accuracy by source, family, and
   grade. Headline metric: verified-claim contradiction rate ("was our
@@ -74,11 +74,11 @@ aggregates kept · deletion requests honored across raw and derived.
 ## 3. Source health (P6)
 Per source slot: fetch_success_rate · latency · error_classes ·
 quota_and_cost · freshness_compliance (% of serves inside the
-freshness window) · schema_drift (live payload keys vs the FACTS.md
+freshness window) · schema_drift (live payload keys vs the [FACTS.md](FACTS.md)
 Dictionary line — the Dictionary IS the drift contract) ·
 ladder_falls (runtime degradations down the reliability ladder, and
 where).
-Demotion law (D-015): sustained failure, drift, or §2 miscalibration
+Demotion law ([D-015](../DECISIONS.md#d-015--2026-06--data-asset-law-bitemporal-append-only-license-segmented)): sustained failure, drift, or §2 miscalibration
 -> grade demotion -> renders fall down the ladder automatically;
 promotion only via re-vetting (a T2–T6-style spike rerun). Grades are
 earned, never grandfathered.
@@ -91,4 +91,4 @@ Tables implied: events · eval_runs (cases live in the repo) ·
 claim_ledger · actuals · source_health, plus coverage views. Fact
 cache: bitemporal (valid_for, recorded_at), append-only supersede
 chains; license-segmented layers with per-layer attribution; world
-data strictly separated from traveler and event data (D-015).
+data strictly separated from traveler and event data ([D-015](../DECISIONS.md#d-015--2026-06--data-asset-law-bitemporal-append-only-license-segmented)).
