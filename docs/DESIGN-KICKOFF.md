@@ -38,8 +38,9 @@ Never produce it unprompted.
 ```
 
 (The identity line condenses [FOUNDATION](FOUNDATION.md)'s
-reliability-first principles; the governance line is
-[CLAUDE.md](../CLAUDE.md)'s Claude-Design no-write law.)
+reliability-first principles; the governance line is the
+Claude-Design no-write law in
+[LAWS](LAWS.md#knowledge--tracking).)
 
 ## Working rules (for the founder)
 
@@ -61,8 +62,8 @@ reliability-first principles; the governance line is
   The lane writes only repo-native deliverables (globals.css theme
   tokens, shadcn config, motion constants, app shell) and records the
   bundle URL in the PR body.
-- After T5 merges: run /design-sync so the repo becomes the design
+- After T5 merges: run design-sync so the repo becomes the design
   system every future Design project inherits automatically (staged
-  in the [equipment-plan skill](../.claude/skills/equipment-plan/SKILL.md)).
+  in the [equipment plan](skills/equipment-plan.md)).
 - Design shares the Max usage pool with chat/Code — batch sessions;
   plan before opening.

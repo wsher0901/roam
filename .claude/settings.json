@@ -20,7 +20,6 @@
       "Bash(git merge --ff-only:*)", "Bash(git worktree:*)",
       "Bash(gh pr create:*)", "Bash(gh pr view:*)",
       "Bash(gh pr list:*)", "Bash(gh pr diff:*)",
-      "Bash(gh pr merge:*)",
       "Bash(node:*)", "Bash(npm run:*)", "Bash(npm test:*)",
       "Bash(npx vitest:*)", "Bash(npx eslint:*)", "Bash(npx prettier:*)"
     ],
@@ -42,7 +41,7 @@
             "type": "command",
             "command": "node .claude/hooks/session-start.mjs",
             "timeout": 30,
-            "statusMessage": "Syncing repo and reading handoff note"
+            "statusMessage": "Syncing repo and reading the dashboard"
           }
         ]
       }

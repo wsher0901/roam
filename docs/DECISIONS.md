@@ -18,12 +18,12 @@ maintain); mobile-first v1 (web decided).
 
 ## D-002 — 2026-06 — Handoff-note merge policy
 Decision: main stays PR-only for everything, with one narrow carve-out —
-a PR containing only a [docs/HANDOFF.md](HANDOFF.md) update (written by /handoff or
+a PR containing only a docs/HANDOFF.md update (written by /handoff or
 /ship) is opened and squash-merged immediately without approval.
 Why:
 - keeps the physical PR gate universal on main;
 - adds zero friction to the leaving ritual;
-- [HANDOFF](HANDOFF.md) is operational state I just authored, so approval adds nothing.
+- HANDOFF is operational state I just authored, so approval adds nothing.
 Alternatives rejected: ruleset bypass for my account (removes the
 physical guarantee for the only identity that pushes); approval
 micro-PRs (taxes the handoff habit; unapproved notes strand the other
@@ -431,7 +431,7 @@ founder's screen (Start-Process). The lanes launch in that attended
 window, print their session URLs, and the founder closes it.
 [D-017](#d-017--2026-06--cloud-sessions-are-the-parallel-lane-vehicle-amends-d-016) is otherwise unchanged: explicit founder approval still
 triggers the launch, Claude still prepares and fires everything,
-and the session IDs are recorded in [HANDOFF](HANDOFF.md) as open lanes.
+and the session IDs are recorded in HANDOFF as open lanes.
 Why:
 - the TTY guard exists so cloud sessions are born attended; a
   popped window on the founder's desktop is exactly that — visible,
@@ -456,7 +456,7 @@ mechanics of
 and [D-019](#d-019--2026-06--launch-mechanics-correction-amends-d-017);
 closes the
 [D-020](#d-020--2026-07--parallel-lanes-v2-native-lanes-replace-hand-built-orchestration)
-pending item from [HANDOFF](HANDOFF.md). Lane law (June 12
+pending item from HANDOFF. Lane law (June 12
 post-mortem, kept as belt-and-suspenders): push-first canary before
 real work in any cloud session, push after every commit, never end or
 delete a session before its work is on origin. Parallel lanes never
@@ -532,4 +532,86 @@ pool is the plan's coarsest layer).
 notation → [HOME](HOME.md)) · [FOUNDATION](FOUNDATION.md) v3 ·
 [HOME §Roadmap manual](HOME.md#roadmap-manual) ·
 [D-004](#d-004--2026-06--planning-notation--rolling-wave-depth)
+(amended).
+
+## D-023 — 2026-07 — Universal draft-PR-at-birth + micro-PR carve-out recut (amends D-002, D-008, D-020)
+**Decision:** every task — cockpit included — is born bench-first:
+freshly pulled main → branch → spec (when discussion opened the
+task) + memory stub → a DRAFT PR pushed to origin BEFORE any session
+works it. The self-merging micro-PR class is redefined to touch ONLY
+[DASHBOARD.md](DASHBOARD.md) and/or [IDEAS.md](IDEAS.md) (it was the
+handoff-note file and/or IDEAS —
+[D-002](#d-002--2026-06--handoff-note-merge-policy),
+[D-008](#d-008--2026-06--cockpit-derived-state-automatic-recording)).
+GitHub Issues and the project board are retired;
+[IDEAS.md](IDEAS.md) is the single inbox, triaged into
+[ROADMAP](ROADMAP.md) via decide.
+**Why:**
+- the draft PR is the public window from the first commit — no work
+  exists in only one place, which the two-computers-plus-cloud
+  reality demands;
+- seat-invariance
+  ([D-024](#d-024--2026-07--architecture-v2-memoryhistory-narrative-layer-dashboard-as-sole-state-surface-rituals-as-skills-amends-d-008-retires-handoffmd--shiplogmd))
+  needs one birth procedure for cockpit and lanes alike —
+  special-casing the cockpit created two classes of task;
+- two trackers (Issues/board beside the docs) meant two truths; one
+  inbox ends the drift.
+**Alternatives rejected:** draft PRs for lanes only (cockpit work
+invisible until ship; violates seat-invariance); keeping the board
+beside [IDEAS.md](IDEAS.md) (the split brain this recut removes);
+widening the micro-PR class further (every added file weakens the
+only no-approval merge path).
+**Affects:** [LAWS §Workflow](LAWS.md#workflow-non-negotiable) ·
+[D-002](#d-002--2026-06--handoff-note-merge-policy) (amended) ·
+[D-008](#d-008--2026-06--cockpit-derived-state-automatic-recording)
+(amended) ·
+[D-020](#d-020--2026-07--parallel-lanes-v2-native-lanes-replace-hand-built-orchestration)
+(amended: lane birth becomes the universal birth) ·
+[parallel-lanes](skills/parallel-lanes.md) ·
+[liftoff](skills/liftoff.md) · [HOME](HOME.md) tables ·
+[GLOSSARY](GLOSSARY.md) micro-PR entry.
+
+## D-024 — 2026-07 — Architecture v2: memory/history narrative layer, DASHBOARD as sole state surface, rituals as skills (amends D-008; retires HANDOFF.md + SHIPLOG.md)
+**Decision:** every task carries docs/memory/&lt;id&gt;.md — the
+living story in the locked format — rewritten cognitively at rituals
+and at the lane trigger moments, and moved to
+docs/history/&lt;id&gt;.md by ship's atomic weld (one bookkeeping
+commit: [ROADMAP](ROADMAP.md) tick + memory→history + spec
+finalize). [DASHBOARD](DASHBOARD.md) is the sole state surface,
+repainted ONLY by rituals (pickup when stale, handoff, liftoff,
+ship's tail), never hand-edited. HANDOFF.md and SHIPLOG.md are
+retired — the shiplog's 35 entries live on as backfilled
+[history/](history/README.md) files. The five rituals (pickup,
+handoff, ship, decide, liftoff) plus the
+[parallel-lanes](skills/parallel-lanes.md) manual live as skills:
+one-line stubs in .claude/skills/ carrying triggers, procedures
+vault-readable in [docs/skills/](skills/). The baton, lane,
+dispatch, and seat-invariance laws stand as written in
+[LAWS.md](LAWS.md); root [CLAUDE.md](../CLAUDE.md) reduces to a
+two-line import of LAWS.
+**Why:**
+- the handoff note was one file, one writer, whole-project scope —
+  the single-writer law existed to manage that bottleneck; per-task
+  memory dissolves it: every lane writes its own story, seat-blind;
+- a shipped task's narrative belongs beside the work, one file per
+  task — an ever-growing log rots, and "what shipped lately" is a
+  derived view the [DASHBOARD](DASHBOARD.md) Shipped table renders;
+- procedures in the vault are founder-readable and Obsidian-linked;
+  a stub that only points can never drift from its procedure;
+- skills fire on trigger phrases (leaving words, unprompted pickup)
+  — commands had to be remembered and typed.
+**Alternatives rejected:** keeping the handoff note beside memories
+(two homes for one truth); a shiplog index over history/ (a derived
+value written as a literal — the derivation law forbids it);
+procedures inline in .claude/skills/ (invisible to the vault,
+duplicated laws); memory as PR comments only (dies with the PR page,
+unreadable in Obsidian).
+**Affects:** [CLAUDE.md](../CLAUDE.md) (import shim) ·
+[LAWS.md](LAWS.md) (born) · [PROJECT-POLICY](PROJECT-POLICY.md)
+(born) · [DASHBOARD](DASHBOARD.md) v5 · docs/memory/ + docs/history/
+(born) · HANDOFF.md + SHIPLOG.md (deleted) · .claude/commands/
+(deleted) · eight skills · session-start hook · settings.json ·
+[HOME](HOME.md) · [GLOSSARY](GLOSSARY.md) ·
+[specs/README](specs/README.md) ·
+[D-008](#d-008--2026-06--cockpit-derived-state-automatic-recording)
 (amended).
