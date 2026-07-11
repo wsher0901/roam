@@ -5,7 +5,7 @@ status: living
 ---
 # Dashboard — the state surface
 
-Stamp: 2026-07-11 · handoff · home PC
+Stamp: 2026-07-11 · ship tail (QUIET handoff) · home PC
 Glyphs: 🟢 done · 🟡 ongoing · 🔴 issue · ⚪ idle. Repainted only by
 rituals (pickup when stale · handoff · liftoff · ship's tail) — never
 hand-edited; git outranks this board.
@@ -69,9 +69,11 @@ then stating the lane.
 ## Threads (non-task)
 
 🟡 Ops — knowledge architecture (Web chat) — phases 1+2
-([history](history/foundation-roadmap-recut.md)) and phase 3, the
-engine swap ([history](history/engine-swap.md)), are shipped; later
-phases still to come from the chat.
+([history](history/foundation-roadmap-recut.md)), phase 3, the
+engine swap ([history](history/engine-swap.md)), and phase 4, the
+HOME encyclopedia ([history](history/home-encyclopedia.md)), are
+shipped; later phases (5+ — closed-session lock, Dataview
+retirement) still to come from the chat.
 ⚪ Setup ladder P8 (Web chat) — the T3–T6 relaunch briefs; held
 behind the ops thread.
 
