@@ -1,22 +1,23 @@
 ---
-type: memory
-id: phase5-sweep
-updated: 2026-07-11 · ship (final rewrite) · home PC
+type: history
+slug: phase5-sweep
+shipped: 2026-07-11
+pr: 78
 ---
 # phase5-sweep — hardening + hygiene (final ops phase)
 
 ## Status
-Complete, awaiting merge. All four commits are on origin, every
-verification gate is green, and the PR is flipped ready. Held at the
-gate BY DESIGN: the founder's approval follows an external review in
-the Web chat — DO NOT MERGE until that word arrives.
+Shipped — merged as
+[PR #78](https://github.com/wsher0901/roam/pull/78) after the
+founder's approval followed the external Web-chat review, closing
+the ops — knowledge architecture thread.
 
 ## What this task is
 The final phase of the ops thread — seven hardening workstreams in
 one sweep: ① prune at gather (session-start hook +
 [pickup](../skills/pickup.md) step 3; the resolved line left
 [IDEAS](../IDEAS.md)); ② the board's Shipped table went static —
-ten newest [history/](../history/README.md) entries re-derived from
+ten newest [history/](README.md) entries re-derived from
 frontmatter at every repaint, no Obsidian plugin needed anywhere;
 ③ a timed gather latency check; ④ a root-cause verdict on the
 line-ending phantoms; ⑤ the close-lock — released sessions
@@ -33,19 +34,18 @@ the PR description.
 None.
 
 ## Left / idle
-Only the weld: on the founder's approval, ship's bookkeeping commit
-(this file moves to history/, slug-keyed, no
-[ROADMAP](../ROADMAP.md) tick) and the squash-merge.
+Nothing — the weld that landed this file was the last act
+(slug-keyed, no [ROADMAP](../ROADMAP.md) tick).
 
 ## The story
 Born minutes after phase 4
-([home-encyclopedia](../history/home-encyclopedia.md)) merged; two
+([home-encyclopedia](home-encyclopedia.md)) merged; two
 of its items closed loops this same cockpit opened in the morning —
 the stale-refs prune gotcha and the line-ending phantom watch.
 
 **④, settled.** `git ls-files --eol` showed the index fully
 normalized (`i/lf` on every docs file — the
-[#57](../history/hygiene-retro-weave.md) normalization held); a
+[#57](hygiene-retro-weave.md) normalization held); a
 fresh `file://` clone of this branch came up with a clean
 `git status` and a uniform `w/crlf` tree; and
 `git add --renormalize .` staged exactly zero files. Verdict: the
