@@ -1,51 +1,102 @@
 ---
 type: memory
 id: home-encyclopedia
-updated: 2026-07-11 · birth · home PC
+updated: 2026-07-11 · ship (final rewrite) · home PC
 ---
 # home-encyclopedia — HOME v3: the encyclopedia
 
 ## Status
-Bench ready — branch, this stub, and the draft PR are born; no
-content work has started yet. The contract is the founder's phase-4
-brief, carried in full in the PR description.
+Complete, awaiting merge. Both content commits are on origin, every
+verification gate is green, and the PR is flipped ready. Held at the
+gate BY DESIGN: the founder's approval follows an external review in
+the Web chat — DO NOT MERGE until that word arrives.
 
 ## What this task is
-Rewrite [HOME.md](../HOME.md) as Roam's manual and encyclopedia,
-passing the reader test both directions: a stranger gains a real
-grasp of the project from this one file, and the founder finds any
-"why does it behave this way" answer within one hop. Nine bound
-sections (header · question router · daily loop · file guide ·
-mechanisms · terms · data-file guide · equipment · roadmap manual).
-Ripples in the same PR: [FACTS](../data/FACTS.md) /
-[SOURCES](../data/SOURCES.md) / [specs README](../specs/README.md)
-shrink their explainers to pointers; GLOSSARY is absorbed into
-[HOME §Terms](../HOME.md#terms) and deleted, with a full corpus
-link re-point. Out of scope: any content change to
-[DASHBOARD](../DASHBOARD.md), any rewording of [LAWS](../LAWS.md)
-beyond moved link targets, and the merge itself — founder approval
-follows an external review in the Web chat.
+Phase 4 of the ops thread: rewrite [HOME.md](../HOME.md) as Roam's
+manual and encyclopedia — a stranger gains a real grasp of the
+project from this one file, and the founder finds any "why does it
+behave this way" answer within one hop. Nine bound sections: header,
+question router, daily loop, file guide, mechanisms (the core —
+task anatomy, information relay & retention, rituals, baton, lanes,
+micro-PRs, the board, skills), recut terms, data-file guide,
+equipment, roadmap manual. Ripples in the same PR:
+[FACTS](../data/FACTS.md) / [SOURCES](../data/SOURCES.md) /
+[specs README](../specs/README.md) shrank their explainers to
+pointers, and GLOSSARY was absorbed into
+[HOME §Terms](../HOME.md#terms) and deleted, with every corpus link
+repointed. No spec file — the founder's brief is the contract,
+verbatim in the PR description.
 
 ## Pending issues
-None yet.
+None blocking. One thought left for triage: the link-integrity
+check was run with a throwaway script (a GitHub-slugger
+reimplementation in the session scratchpad, validated with a
+planted-breakage negative control); a permanent in-repo checker
+wired into CI would make the retroactivity law's link gates
+mechanical instead of per-task tooling.
 
 ## Left / idle
-Everything: corpus read → HOME v3 (commit 1) → absorptions +
-GLOSSARY deletion + link sweep (commit 2) → verification (link
-integrity, greps, tests, lint, newcomer self-check) → ship to the
-gate, DO NOT MERGE.
+Only the weld: on the founder's approval, ship's atomic bookkeeping
+commit (this file moves to history/, slug-keyed, no
+[ROADMAP](../ROADMAP.md) tick) and the squash-merge.
 
 ## The story
-Born from phase 4 of the ops thread (knowledge architecture, Web
-chat) — the same thread that shipped the
-[recut](../history/foundation-roadmap-recut.md) and the
-[engine swap](../history/engine-swap.md). No spec file: the brief is
-the contract and lives in the PR description.
+Born from the founder's phase-4 brief, pasted into the cockpit
+after the [engine swap](../history/engine-swap.md) shipped — the
+same ops thread as the
+[recut](../history/foundation-roadmap-recut.md). The whole corpus
+was read first (every docs/ file, all stubs and hooks, the recent
+history/ entries), then HOME v3 was written in one commit and the
+absorption sweep in a second.
+
+Decisions a future reader should know:
+- **[FACTS](../data/FACTS.md) kept its "How to read this file"
+  heading**, now holding only the one-line manual pointer. The
+  brief said "replace the section with one line"; keeping the
+  heading preserved every inbound `#how-to-read-this-file` anchor
+  (SCHEMA, DECISION-POLICY) with zero archive edits.
+- **GLOSSARY links in the archive were repointed, not annotated.**
+  First attempt added "(since absorbed into HOME §Terms)"
+  parentheticals inside [DECISIONS](../DECISIONS.md) entries — a
+  dead end, reverted: the log is append-only and the words of an
+  entry shouldn't grow after the fact. Final form keeps the
+  original link text verbatim and moves only the target to
+  [HOME §Terms](../HOME.md#terms), matching how the corpus already
+  treats renamed anchors (the #57/#58 retro-weave precedent) and
+  keeping 100% link integrity.
+- **HOME's `#roadmap-manual` anchor survives verbatim** so
+  [ROADMAP](../ROADMAP.md), [DECISIONS](../DECISIONS.md) D-022,
+  [PROJECT-POLICY](../PROJECT-POLICY.md), and a history file link
+  into it unchanged; the retired `#file-ownership` anchor's two
+  inbound pointers ([memory/README](README.md),
+  [history/README](../history/README.md)) were rippled to
+  `#the-files--what-each-one-is-for`.
+- **The brief's "maiden-run prune story from history/"** does not
+  exist as a history file — the episode happened in this morning's
+  cockpit (the board listed already-merged branches that were
+  phantom stale remote-tracking refs; a fetch-with-prune and a
+  repaint healed it, logged in [IDEAS](../IDEAS.md)). §Information
+  relay & retention tells it as prose without a link, since IDEAS
+  lines are a volatile target.
+
+Gotcha for the toolbox: the first link-checker run reported ~500
+false breaks — the working tree is CRLF (autocrlf) and JavaScript's
+`.` and `$` don't span `\r`, so every heading regex silently
+failed. Normalizing line endings at read time fixed it; a planted
+broken link then proved the checker really catches breakage.
+
+Verification, all green: 904 internal links across 76 md files, 0
+broken · GLOSSARY absent with references remaining only in the
+[DECISIONS](../DECISIONS.md) archive and history bodies ·
+FACTS/SOURCES/specs-README carry pointers with no orphaned
+explainer prose · HOME frontmatter valid · newcomer self-check
+passed on sampled sentences from ROADMAP, LAWS, DASHBOARD, FACTS,
+and parallel-lanes · tests 3/3 · eslint · prettier.
 
 ## Where to look
-The draft PR (contract + steps) · the ops Web chat (phases 1–3
-context) · [HOME.md](../HOME.md) (v3 after commit 1; v2 in git
-history) · GLOSSARY in git history (absorbed into
-[HOME §Terms](../HOME.md#terms), deleted at commit 2) ·
-[history/](../history/) for the ritual-engine and knowledge-layer
-backstories.
+The draft-born PR (#76 — contract, summary, Deviations) ·
+[HOME.md](../HOME.md) v3 itself · GLOSSARY and HOME v2 in git
+history · the ops Web chat (phases 1–3 context; the external review
+that gates the merge) · [history/](../history/) for the
+[engine-swap](../history/engine-swap.md) and
+[knowledge-layer](../history/knowledge-layer.md) backstories.
