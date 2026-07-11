@@ -12,9 +12,10 @@ Appendix A). Three registers: behavior events, quality & ground
 truth, source health. Storage for all of it lands in [V1.S1.T7](../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code).
 
 ## 1. Behavior events (D-014)
-Posture: capture now, use later. [FOUNDATION](../FOUNDATION.md) defers ranking-tuning to
-Later; events are captured from day one because they cannot be
-backfilled.
+Posture: capture now, use later.
+[FOUNDATION §The dataset](../FOUNDATION.md#the-dataset--the-quiet-asset)
+defers ranking-tuning to Later; events are captured from day one
+because they cannot be backfilled.
 V1 use-allowlist: product/funnel debugging · fatigue-cap tuning
 (which upfront questions get skipped) · quality signals feeding §2.
 Not in V1: ranking personalization. Never: selling or sharing.

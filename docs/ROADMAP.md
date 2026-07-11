@@ -4,33 +4,38 @@ title: Roadmap
 status: living
 ---
 # Roadmap
+Manual — notation, tags, and how to read this file:
+[HOME.md](HOME.md#roadmap-manual).
 
-## Notation — the only one we use (D-004)
-- Vn = Version (V1, V2, ...). No synonyms: not "MVP", not "demo build",
-  not "milestone".
-- Vn.Sm = Stage inside a version — ordered; each has a done-criterion.
-- Vn.Sm.Tk = Task — the PR-sized unit; one task = one branch = one PR.
-  Small steps are checkboxes in the task's PR description, not in this
-  file.
-- Tasks are tagged [P] (parallel-safe: touches files no sibling task
-  touches) or [seq] (must follow; "after X" names the dependency when it
-  is not simply the previous task).
-- Branches, PRs, and handoff notes reference these IDs
-  (e.g. "feat: [V1.S3.T3](#v1s3--engine-core--two-families-deep) weather module"). Branch names use the
-  lowercase ID plus a slug: feat/v1.s3.t3-weather.
-- Work IDs are Vn.Sm.Tk from this file or real GitHub issue numbers —
-  never hand-assigned labels ("Issue 2"-style numbering is retired).
+## The versions
+| V | Name | Done when |
+|---|---|---|
+| V1 | The demo | a public URL runs the full Suggest→Plan→Edit spine over all five families on the three seeded scenarios, every claim sourced or labeled per the [reliability law](FOUNDATION.md#the-reliability-law) |
+| V2 | Real users | a stranger can sign up, build a real trip, leave, return — and everything holds |
+| V3 | The product | charging money for it is defensible |
+| Pool | — | unversioned sockets + [IDEAS.md](IDEAS.md) inbox |
 
-## Planning depth — rolling wave (D-004)
-- V1: fully detailed below (stages -> tasks).
-- V2: a rough bucket of named capabilities — no stages or tasks until
-  V1 ships.
-- Everything else: the socket pool in [FOUNDATION](FOUNDATION.md) "Later" plus
-  [docs/IDEAS.md](IDEAS.md).
+Depth (rolling wave,
+[D-022](DECISIONS.md#d-022--2026-07--version-ladder--lifespan-split-amends-d-004)):
+active version fully staged and tasked · next version a rough bucket ·
+the one after name-only · pool unversioned.
 
-## V1 — stages
-Active: [V1.S1](#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code) and [V1.S2](#v1s2--skeleton--design-foundations-parallel-lane-with-s1) (parallel lanes). All later stages queued in
-order.
+## V1 — The demo · ACTIVE
+For: leisure travelers, any party type. Demo-first, users soon — built
+real and deployable, no day-one onboarding or billing; nothing in V1
+may require a rewrite when accounts arrive.
+Refuses (lifts per-version, by roadmap edit only): booking, payments,
+reservations, or any transaction · live fare/price scraping (cost =
+honest estimate ranges) · mid-trip features · social/sharing · mobile
+(web only).
+Ships: all five check families — two deep first
+([S3](#v1s3--engine-core--two-families-deep)), three more as plug-in
+proof ([S7](#v1s7--the-other-three-families-plug-in-proof)); trending
+via general signals only.
+Active stages:
+[V1.S1](#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
+and [V1.S2](#v1s2--skeleton--design-foundations-parallel-lane-with-s1)
+(parallel lanes). All later stages queued in order.
 
 ### V1.S1 — Data Definition (the gate; docs + spike scripts only, no app code)
 Done when: every V1 fact has a vetted source with a successful spike
@@ -80,7 +85,8 @@ database connected.
       (durations, springs), app shell layout deployed
 
 ### V1.S3 — Engine core + two families deep
-Binding requirements: [FOUNDATION §Plan-synthesis principles](FOUNDATION.md#plan-synthesis-principles).
+Binding requirements: [DECISION-POLICY §6–§8](DECISION-POLICY.md#6-preferences-are-defaults-not-blinders)
+(canonical since [D-021](DECISIONS.md#d-021--2026-07--plan-synthesis-principles-re-home-to-decision-policy)).
 Done when: a CLI harness returns scored, sourced, explained verdicts
 for any destination + dates using Weather and Sky & sea.
 - [ ] V1.S3.T1 [seq] Check contract + orchestrator — CheckModule
@@ -117,7 +123,8 @@ trip options in the app.
       confidence badges, map context, select-one flow
 
 ### V1.S5 — Plan
-Binding requirements: [FOUNDATION §Plan-synthesis principles](FOUNDATION.md#plan-synthesis-principles).
+Binding requirements: [DECISION-POLICY §6–§8](DECISION-POLICY.md#6-preferences-are-defaults-not-blinders)
+(canonical since [D-021](DECISIONS.md#d-021--2026-07--plan-synthesis-principles-re-home-to-decision-policy)).
 Done when: selecting an option yields a persisted day-by-day plan
 rendered on timeline + map.
 - [ ] V1.S5.T1 [seq] Plan builder — sequence activities by scores,
@@ -158,10 +165,18 @@ Done when: a public demo URL runs three seeded wow scenarios smoothly.
       with warmed cache, streaming latency pass, README demo section,
       public URL
 
-## V2 — rough bucket (capabilities only; no tasks until V1 ships)
-Accounts & auth (Supabase) with saved trips · real prices where
-source-backed · trip sharing + async collaboration · SNS trend mining ·
-promote vetted sockets (safety & advisories, entry rules) · engine
-tuning v0 on the accumulated dataset · richer plan diffs.
+## V2 — Real users · rough bucket
+accounts & auth (Supabase) with saved trips ·
+[telemetry](data/TELEMETRY.md) consent-gated collection goes live ·
+hardening: error/edge handling at user scale, abuse and cost caps.
 
-Everything further: [FOUNDATION](FOUNDATION.md) "Later" sockets + [docs/IDEAS.md](IDEAS.md).
+## V3 — The product · named
+real prices where source-backed · trip sharing (async) · promoted
+sockets: safety & travel advisories, visa/entry rules · billing,
+legal, ops · engine tuning v0 on the accumulated dataset.
+
+## Pool — unversioned sockets
+air quality, pollen, smoke seasons · sea temperature & swell ·
+accessibility needs · in-app booking · SNS trend mining · sync
+collaboration · plan diffs & branching · mid-trip companion · mobile.
+Inbox: [IDEAS.md](IDEAS.md) — nothing is scope until triaged here.

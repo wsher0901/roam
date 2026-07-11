@@ -9,6 +9,18 @@ Claude Web). Newest first.
 Format: **date — plain-English headline** (task ID) · what it means
 for the product → PR
 
+- **2026-07-10 — The plan gets a version ladder; identity and plan
+  split by lifespan**
+  ([D-021](DECISIONS.md#d-021--2026-07--plan-synthesis-principles-re-home-to-decision-policy),
+  [D-022](DECISIONS.md#d-022--2026-07--version-ladder--lifespan-split-amends-d-004))
+  · [FOUNDATION](FOUNDATION.md) now holds only timeless identity
+  while [ROADMAP](ROADMAP.md) carries everything a shipped version
+  can falsify — the V1/V2/V3 ladder with testable done-whens,
+  per-version For/Refuses/Ships scope blocks, and the unversioned
+  socket Pool — with [DECISION-POLICY](DECISION-POLICY.md) canonical
+  for the plan-synthesis rules and the notation manual re-homed to
+  [HOME](HOME.md#roadmap-manual) →
+  [PR #69](https://github.com/wsher0901/roam/pull/69)
 - **2026-07-10 — Switching computers becomes pull + a checklist** · A
   machine-setup skill now carries the one-clone law (both seats'
   paths written down), the one-time per-machine checklist (git
