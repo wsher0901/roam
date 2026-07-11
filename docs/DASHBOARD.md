@@ -80,6 +80,7 @@ unblocked (the ops thread is complete).
 
 | When | What | PR |
 |---|---|---|
+| 2026-07-11 | [Vault lens + clean-tree verdict](history/vault-lens.md) | [#82](https://github.com/wsher0901/roam/pull/82) |
 | 2026-07-11 | [Web instructions: the rule-carrier](history/web-instructions.md) | [#80](https://github.com/wsher0901/roam/pull/80) |
 | 2026-07-11 | [Phase 5 — the sweep: hardening + hygiene](history/phase5-sweep.md) | [#78](https://github.com/wsher0901/roam/pull/78) |
 | 2026-07-11 | [HOME v3 — the manual & encyclopedia](history/home-encyclopedia.md) | [#76](https://github.com/wsher0901/roam/pull/76) |
@@ -89,4 +90,3 @@ unblocked (the ops thread is complete).
 | 2026-07-10 | [Design kickoff rule-carrier](history/design-kickoff.md) | [#64](https://github.com/wsher0901/roam/pull/64) |
 | 2026-07-10 | [Live ritual counts, quiet ship-tail](history/ritual-live-counts.md) | [#62](https://github.com/wsher0901/roam/pull/62) |
 | 2026-07-10 | [Stage-map dashboard](history/stage-map-dashboard.md) | [#60](https://github.com/wsher0901/roam/pull/60) |
-| 2026-07-09 | [The knowledge layer](history/knowledge-layer.md) | [#58](https://github.com/wsher0901/roam/pull/58) |
