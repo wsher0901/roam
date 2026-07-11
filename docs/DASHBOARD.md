@@ -5,23 +5,20 @@ status: living
 ---
 # Dashboard — the state surface
 
-Stamp: 2026-07-11 · engine-swap repaint (workshop PR) · home PC
+Stamp: 2026-07-11 · ship tail (QUIET handoff) · home PC
 Glyphs: 🟢 done · 🟡 ongoing · 🔴 issue · ⚪ idle. Repainted only by
 rituals (pickup when stale · handoff · liftoff · ship's tail) — never
 hand-edited; git outranks this board.
 
 ## Needs you
 
-1. 🔴 Engine-swap
-   [PR #71](https://github.com/wsher0901/roam/pull/71) — external
-   review in the Web chat, then your merge word.
-2. 🟡 Run the [machine-setup](skills/machine-setup.md) Verify block
+1. 🟡 Run the [machine-setup](skills/machine-setup.md) Verify block
    on each PC — Dataview install unconfirmed on both seats.
-3. ⚪ Four already-merged branches still sit on origin
+2. ⚪ Four already-merged branches still sit on origin
    (chore/handoff-2026-07-09 · chore/hygiene-retro-weave ·
    chore/ritual-engine-v2 · docs/knowledge-structure) — say the word
    and they are deleted.
-4. ⚪ [DECISION-POLICY §10](DECISION-POLICY.md#10-open-questions) —
+3. ⚪ [DECISION-POLICY §10](DECISION-POLICY.md#10-open-questions) —
    five open engine questions; parked until
    [V1.S3](ROADMAP.md#v1s3--engine-core--two-families-deep) opens.
 
@@ -75,13 +72,10 @@ then stating the lane.
 
 ## Threads (non-task)
 
-🟡 Engine swap (chore/engine-swap,
-[PR #71](https://github.com/wsher0901/roam/pull/71)) — architecture
-v2: LAWS constitution, rituals as skills, memory/history layer, this
-board's v5 format. Awaiting external review + merge word.
-🟡 Ops — knowledge architecture (Web chat) — phases 1+2 shipped
-([history](history/foundation-roadmap-recut.md)), phase 3 is the
-engine swap above; later phases still to come.
+🟡 Ops — knowledge architecture (Web chat) — phases 1+2
+([history](history/foundation-roadmap-recut.md)) and phase 3, the
+engine swap ([history](history/engine-swap.md)), are shipped; later
+phases still to come from the chat.
 ⚪ Setup ladder P8 (Web chat) — the T3–T6 relaunch briefs; held
 behind the ops thread.
 
