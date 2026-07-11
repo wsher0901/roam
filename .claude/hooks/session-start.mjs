@@ -3,7 +3,7 @@
 // Cross-platform (Windows, macOS, Linux, cloud). Must NEVER block or
 // fail a session: every step degrades gracefully and we always exit 0.
 import { execSync } from "node:child_process";
-import { readFileSync, existsSync } from "node:fs";
+import { readFileSync, existsSync, unlinkSync } from "node:fs";
 import { join } from "node:path";
 
 function sh(cmd) {
@@ -24,6 +24,19 @@ if (!root) {
   process.exit(0);
 }
 process.chdir(root);
+
+// A new session is always live: clear any close-lock a finished
+// ritual left behind (handoff/liftoff write it as their last act).
+try {
+  unlinkSync(join(root, ".claude", "session-closed"));
+} catch {
+  // absent (the normal case) or unremovable — proceed either way
+}
+
+// Prune stale remote-tracking refs so `git branch -r` tells the
+// truth about origin (every launch, any branch; offline degrades
+// gracefully like the pull below).
+sh("git fetch --prune --quiet");
 
 const branch = sh("git rev-parse --abbrev-ref HEAD") ?? "unknown";
 const dirty = sh("git status --porcelain");

@@ -42,6 +42,9 @@ immediately (the micro-PR carve-out). If the merge fails, leave the
 PR open — the next pickup self-heals it.
 
 ## 6 · Close (FULL only)
-Report one line — "Handoff shipped (#N). Safe to walk away." — and
-end the session. QUIET instead returns to the sitting and recommends
-NEXT per the pacing law.
+Report one line — "Handoff shipped (#N). Safe to walk away." Then,
+as the ritual's LAST act, write `.claude/session-closed` with
+content "Closed at handoff #<N> · <date> · <seat>" — the close-lock:
+from that moment the prompt hook rejects any further input to this
+session, and the session ends. QUIET instead returns to the sitting
+and recommends NEXT per the pacing law.

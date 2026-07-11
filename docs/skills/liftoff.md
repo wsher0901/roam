@@ -55,5 +55,7 @@ flight plan: every airborne lane with its url, every abort and hold
 with its reason. Ship the micro-PR (board + any IDEAS harvest).
 
 ## 7 · Close
-Report "N airborne, M grounded — safe to walk away." End the
-session.
+Report "N airborne, M grounded — safe to walk away." Then, as the
+ritual's LAST act, write `.claude/session-closed` with content
+"Closed at liftoff · ledger #<N> · <date> · <seat>" — the
+close-lock. End the session.

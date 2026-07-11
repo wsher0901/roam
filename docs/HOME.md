@@ -409,10 +409,14 @@ only in one place at a time.
 Supersession handles the stale seat: every repaint stamps date,
 ritual, and seat on the board. A session that discovers its own
 seat-stamp superseded — the founder has sat down somewhere else —
-self-closes: push what exists, write nothing. A hard closed-session
-lock (making a released session physically unable to write, rather
-than obliged not to) is designed but not yet built — it arrives
-with a later phase of the ops thread.
+self-closes: push what exists, write nothing. And release is
+physical, not merely procedural — the close-lock: FULL
+[handoff](skills/handoff.md) and [liftoff](skills/liftoff.md) end
+by writing `.claude/session-closed` as their last act, and from
+then on the prompt hook rejects every input to that session
+("this session is closed — open a fresh `claude`"). The
+session-start hook deletes the flag before anything else, so new
+sessions are always live.
 
 ### Lanes, local & cloud
 
