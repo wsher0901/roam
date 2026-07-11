@@ -14,13 +14,7 @@ hand-edited; git outranks this board.
 
 1. 🟡 Run the [machine-setup](skills/machine-setup.md) Verify block
    on each PC — Dataview install unconfirmed on both seats.
-2. ⚪ Eight already-merged branches still sit on origin
-   (chore/engine-swap · chore/handoff-2026-07-09 ·
-   chore/handoff-2026-07-10-2 · chore/handoff-2026-07-11 ·
-   chore/hygiene-retro-weave · chore/ritual-engine-v2 ·
-   docs/knowledge-structure · docs/recut-foundation-roadmap) — say
-   the word and they are deleted.
-3. ⚪ [DECISION-POLICY §10](DECISION-POLICY.md#10-open-questions) —
+2. ⚪ [DECISION-POLICY §10](DECISION-POLICY.md#10-open-questions) —
    five open engine questions; parked until
    [V1.S3](ROADMAP.md#v1s3--engine-core--two-families-deep) opens.
 
