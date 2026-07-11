@@ -85,7 +85,8 @@ housekeeping never does.
 
 Four tools, four verbs — and only one of them writes. Claude WEB
 thinks: discussion, trade-offs, design of ideas; everything it
-concludes leaves as one paste block. Claude DESIGN draws: a
+concludes leaves as one paste block
+([WEB-INSTRUCTIONS](WEB-INSTRUCTIONS.md)). Claude DESIGN draws: a
 no-write surface whose deliverables enter the repo only as
 extracted token values ([DESIGN-KICKOFF](DESIGN-KICKOFF.md)).
 Claude CODE writes: every repo change flows through it as a PR.
@@ -106,6 +107,7 @@ Obsidian READS: the vault is docs/; quick capture goes only into
 | [DECISION-POLICY.md](DECISION-POLICY.md) | how the ENGINE reasons and renders — canonical rules | [decide](skills/decide.md) ripples; invents nothing | living consolidation; seeds the [V1.S3](ROADMAP.md#v1s3--engine-core--two-families-deep) contract |
 | [IDEAS.md](IDEAS.md) | the single untriaged inbox — no Issues, no boards ([D-023](DECISIONS.md#d-023--2026-07--universal-draft-pr-at-birth--micro-pr-carve-out-recut-amends-d-002-d-008-d-020)) | Claude Code, the moment an idea or defect is voiced | lines leave only by triage into [ROADMAP](ROADMAP.md) via decide |
 | [DESIGN-KICKOFF.md](DESIGN-KICKOFF.md) | the Claude Design session preamble + governance rules | ops PRs | living until the repo-synced design system replaces it |
+| [WEB-INSTRUCTIONS.md](WEB-INSTRUCTIONS.md) | master copy of the Claude Web Project-instructions box | ops PRs | living; re-pasted into the box after every edit (the box is a copy, never the source) |
 | HOME.md | this manual & encyclopedia; zero live state | founder-approved PRs | living |
 | [data/FACTS.md](data/FACTS.md) | every fact the engine must know + every traveler parameter | [V1.S1](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code) tasks via PRs | living; IDs stable, extension append-only |
 | [data/SOURCES.md](data/SOURCES.md) | the vetted source registry, one entry per source slot | source-vetting tasks (T2–T6), consolidated at [T7](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code) | living; grades move under the demotion law |
