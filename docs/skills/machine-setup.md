@@ -40,6 +40,31 @@ status: living
 9. Vercel CLI when S2+ work touches deploys: npm i -g vercel, then
    vercel login (work PC currently missing it).
 
+## Vault lens
+
+Per machine, ~2 min, optional but recommended. The vault's
+structure is flat-core + five semantic folders by design; these
+Obsidian-side settings make the graph and daily entry match that
+design. .obsidian/ is gitignored (machine-local), so this recipe is
+applied by hand on each seat:
+
+1. Graph view → Groups — add, in this order (later groups win):
+   - `path:history` → gray
+   - `path:data` → blue
+   - `path:skills` → green
+   - `path:memory OR path:specs` → yellow
+
+   (everything ungrouped — the core docs — keeps the accent color)
+2. Graph view → Filters — for working sessions, use
+   `-path:history` to hide the archive; clear it when you want the
+   full record visible.
+3. Bookmarks (core plugin, no install): bookmark, in order,
+   [DASHBOARD](../DASHBOARD.md) · [HOME](../HOME.md) ·
+   [ROADMAP](../ROADMAP.md) · [LAWS](../LAWS.md) — the vault's
+   front door on every seat.
+
+Nothing here changes the repo; deleting .obsidian resets it all.
+
 ## Verify (after setup, or whenever one machine misbehaves)
 
 - node --version → Node 20+ (stack and hooks require it)
@@ -48,6 +73,7 @@ status: living
 - git config roam.machine → returns this seat's label
 - From the repo root: node .claude/hooks/session-start.mjs → prints
   the sync line + [DASHBOARD](../DASHBOARD.md) contents
+- Vault lens applied (groups + bookmarks) — optional, note yes/no
 
 ## Every sitting
 
