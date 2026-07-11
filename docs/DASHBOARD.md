@@ -12,9 +12,9 @@ hand-edited; git outranks this board.
 
 ## Needs you
 
-1. 🔴 Engine-swap PR (opens with this repaint; number in
-   [Threads](#threads-non-task)) — external review in the Web chat,
-   then your merge word.
+1. 🔴 Engine-swap
+   [PR #71](https://github.com/wsher0901/roam/pull/71) — external
+   review in the Web chat, then your merge word.
 2. 🟡 Run the [machine-setup](skills/machine-setup.md) Verify block
    on each PC — Dataview install unconfirmed on both seats.
 3. ⚪ Four already-merged branches still sit on origin
@@ -75,9 +75,10 @@ then stating the lane.
 
 ## Threads (non-task)
 
-🟡 Engine swap (chore/engine-swap, PR number lands at open) —
-architecture v2: LAWS constitution, rituals as skills, memory/history
-layer, this board's v5 format. Awaiting external review + merge word.
+🟡 Engine swap (chore/engine-swap,
+[PR #71](https://github.com/wsher0901/roam/pull/71)) — architecture
+v2: LAWS constitution, rituals as skills, memory/history layer, this
+board's v5 format. Awaiting external review + merge word.
 🟡 Ops — knowledge architecture (Web chat) — phases 1+2 shipped
 ([history](history/foundation-roadmap-recut.md)), phase 3 is the
 engine swap above; later phases still to come.

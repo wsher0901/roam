@@ -37,10 +37,11 @@ story.
   Obsidian. Template: [specs/TEMPLATE.md](specs/TEMPLATE.md).
 - **weave rule** — every mention of a roadmap ID, D-number, fact ID,
   or sibling doc in docs/ is written as a markdown link, never plain
-  text. Home: [CLAUDE.md](../CLAUDE.md).
-- **retroactivity law** — when a new documentation practice is
-  adopted, it is applied to all pre-existing files in the same PR —
-  old files are never second-class. Home: [CLAUDE.md](../CLAUDE.md).
+  text. Home: [LAWS.md](LAWS.md#knowledge--tracking).
+- **retroactivity law** — when a convention is adopted OR changed,
+  every pre-existing file is backfilled in the same PR; later-found
+  gaps are repaired the moment they are found.
+  Home: [LAWS.md](LAWS.md#knowledge--tracking).
 - **fact families (F-WX, F-SS, F-FE, F-TT, F-CC)** — the five groups
   of world facts the engine checks: [Weather](data/FACTS.md#f-wx--weather-14--source-task-v1s1t2),
   [Sky & sea](data/FACTS.md#f-ss--sky--sea-10--source-task-v1s1t3),
@@ -70,38 +71,52 @@ story.
 
 ## Workflow & rituals
 
-- **the four rituals** — /pickup (sit-down briefing), /handoff
-  (stand-up note shipped to main), /ship (task close: tests → PR →
-  founder approval → merge → bookkeeping), /decide (record a decision
-  and ripple its edits). They live in `.claude/commands/`; the laws
-  behind them in [CLAUDE.md](../CLAUDE.md).
-- **cockpit session** — the Claude Code session the founder is
-  actively driving; the ONLY writer of [HANDOFF.md](HANDOFF.md).
-  Home: [CLAUDE.md](../CLAUDE.md).
-- **lane** — one parallel work stream: a background agent or worktree
-  session on its own branch, draft PR from birth, every commit pushed
-  ([D-020](DECISIONS.md#d-020--2026-07--parallel-lanes-v2-native-lanes-replace-hand-built-orchestration)).
-  Home: [CLAUDE.md](../CLAUDE.md) § Parallel lanes.
+- **the rituals** — pickup (sit-down briefing) · handoff (leaving
+  ritual, FULL/QUIET) · ship (task close) · decide (decision
+  recorder) · liftoff (hand the workshop to the cloud). Procedures
+  live in [docs/skills/](skills/); thin stubs in `.claude/skills/`
+  carry their triggers; the laws behind them in [LAWS.md](LAWS.md).
+- **cockpit session** — the ONE session the founder is actively
+  driving: holder of the baton, the only seat that runs rituals and
+  repaints [DASHBOARD.md](DASHBOARD.md).
+  Home: [LAWS.md §Parallel lanes & cloud](LAWS.md#parallel-lanes--cloud).
+- **lane** — one parallel work stream: a background agent, worktree
+  session, or cloud session on its own branch, born bench-first with
+  a draft PR, every commit pushed
+  ([D-020](DECISIONS.md#d-020--2026-07--parallel-lanes-v2-native-lanes-replace-hand-built-orchestration),
+  as recut by
+  [D-023](DECISIONS.md#d-023--2026-07--universal-draft-pr-at-birth--micro-pr-carve-out-recut-amends-d-002-d-008-d-020)).
+  Home: [LAWS.md §Parallel lanes & cloud](LAWS.md#parallel-lanes--cloud);
+  mechanics: [parallel-lanes](skills/parallel-lanes.md).
 - **paste block** — the single copy-paste artifact a Claude Web chat
   produces when its discussion changed something; it counts as
   delivered only when its branch/PR exists on GitHub.
   Home: [HOME.md](HOME.md).
 - **micro-PR** — the one self-merging PR class: touches only
-  HANDOFF.md and/or IDEAS.md
-  ([D-002](DECISIONS.md#d-002--2026-06--handoff-note-merge-policy)).
-- **SHIPLOG** — the append-only shipped-history log, newest first;
-  every task PR adds its own line at /ship time.
-  Home: [SHIPLOG.md](SHIPLOG.md).
-- **handoff note** — the re-entry picture written at every stand-up,
-  so any machine (or month-later founder) can resume.
-  Home: [HANDOFF.md](HANDOFF.md).
+  [DASHBOARD.md](DASHBOARD.md) and/or [IDEAS.md](IDEAS.md)
+  ([D-002](DECISIONS.md#d-002--2026-06--handoff-note-merge-policy) as
+  amended by
+  [D-023](DECISIONS.md#d-023--2026-07--universal-draft-pr-at-birth--micro-pr-carve-out-recut-amends-d-002-d-008-d-020)).
+- **history/** — permanent shipped narratives: each task's memory
+  file in its final form, moved by ship's atomic weld; the
+  [DASHBOARD](DASHBOARD.md) Shipped table derives from it
+  ([D-024](DECISIONS.md#d-024--2026-07--architecture-v2-memoryhistory-narrative-layer-dashboard-as-sole-state-surface-rituals-as-skills-amends-d-008-retires-handoffmd--shiplogmd)).
+  Home: [history/](history/README.md).
+- **memory (of a task)** — docs/memory/&lt;id&gt;.md: the living
+  story in the locked format (Status first), rewritten at rituals and
+  at lane trigger moments; becomes the task's history/ file at ship
+  ([D-024](DECISIONS.md#d-024--2026-07--architecture-v2-memoryhistory-narrative-layer-dashboard-as-sole-state-surface-rituals-as-skills-amends-d-008-retires-handoffmd--shiplogmd)).
+  Home: [memory/](memory/README.md).
 - **blocker vs gotcha** — blocker = something that stops work and
   names who/what unblocks it; gotcha = a discovered trap that costs
-  time but doesn't stop work. Both live in the handoff note; a
-  permanent gotcha gets promoted to [CLAUDE.md](../CLAUDE.md).
+  time but doesn't stop work. Both live in the task's memory
+  (task-local) or [DASHBOARD](DASHBOARD.md) Needs-you
+  (founder-facing); a permanent gotcha promotes to
+  [LAWS.md](LAWS.md) or a skill.
 - **claim question** — the mandatory "is this task already open
-  elsewhere (a Web chat or the other machine)?" check before any task
-  starts. Home: [CLAUDE.md](../CLAUDE.md).
+  elsewhere?" check before any task starts — answered by open
+  branches + draft PRs; the founder is asked only on genuine
+  ambiguity. Home: [LAWS.md](LAWS.md#workflow-non-negotiable).
 - **pacing law** — finish before start: open lanes outrank new tasks;
   at most "Now + one parallel slot" needs the founder's attention;
   stopping is a valid next step

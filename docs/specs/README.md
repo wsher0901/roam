@@ -24,11 +24,16 @@ simple tasks never get a spec.
 ## Lifecycle laws
 - The spec is the FIRST commit on the task's branch.
 - The task's line in [ROADMAP.md](../ROADMAP.md) gains a link to it.
-- /ship verifies every "Done means" checkbox honestly against the
+- ship verifies every "Done means" checkbox honestly against the
   actual work and fills the Deviations section; a spec with untickable
-  boxes stops the ship.
-- /decide updates or marks superseded any spec a pivot invalidates —
+  boxes stops the ship. At the atomic weld the spec's frontmatter
+  gains status: shipped, its PR number, and the shipped date.
+- decide updates or marks superseded any spec a pivot invalidates —
   the ripple happens in the same commit as the decision.
+- The spec is the task's stable CONTRACT; the living story rides
+  beside it in docs/memory/&lt;id&gt;.md and moves to
+  docs/history/&lt;id&gt;.md at ship
+  ([LAWS §Task anatomy](../LAWS.md#task-anatomy)).
 - status moves open → shipped (or superseded; never deleted).
 
 ## Frontmatter keys (see [TEMPLATE.md](TEMPLATE.md))
