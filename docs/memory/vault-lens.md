@@ -1,14 +1,15 @@
 ---
 type: memory
 id: vault-lens
-updated: 2026-07-11 · birth · home PC
+updated: 2026-07-11 · ship (final rewrite) · home PC
 ---
 # vault-lens — vault lens + clean-tree verdict (ordeals 2+3 close-out)
 
 ## Status
-Bench ready — branch, this stub, and the draft PR are born; edits
-not yet applied. The contract is the founder's brief, carried in
-the PR description.
+Complete, awaiting merge. Both edits are on origin in one commit,
+every gate is green, and the PR is flipped ready. Held at THE GATE
+by design — DO NOT MERGE until the founder's word arrives from the
+external Web-chat review.
 
 ## What this task is
 Close out two Web-chat ordeals in one small PR: (2) the vault's
@@ -24,10 +25,21 @@ the brief is the contract.
 None.
 
 ## Left / idle
-The two edits, verification, ship to THE GATE (DO NOT MERGE —
-founder approval follows the external Web-chat review).
+Only the weld on approval (this file → history/, slug-keyed, no
+[ROADMAP](../ROADMAP.md) tick).
 
 ## The story
+One adaptive call at execution: the brief's draft heading carried
+its qualifier inline ("Vault lens (per machine, ~2 min, optional
+but recommended)") while its own [HOME](../HOME.md) ripple links
+`#vault-lens` — a qualified heading slugs differently, so the
+heading is exactly "Vault lens" and the qualifier opens the body;
+`check:links` proves the anchor. The chat-artifact slip in the
+draft (".claude/settings — sorry, .obsidian/") was rendered clean
+per the adapt-the-voice instruction. Every concrete string —
+group queries, colors, order, the `-path:history` filter, the
+bookmark sequence — landed exact.
+
 The two verdicts this task exists to make permanent:
 
 - **Ordeal 3 — the clean-tree audit.** A full inbound-link orphan
