@@ -68,18 +68,19 @@ then stating the lane.
 
 ## Threads (non-task)
 
-🟡 Ops — knowledge architecture (Web chat) — phases 1+2
-([history](history/foundation-roadmap-recut.md)), phase 3, the
-engine swap ([history](history/engine-swap.md)), and phase 4, the
-HOME encyclopedia ([history](history/home-encyclopedia.md)), are
-shipped; later phases (5+) still to come from the chat.
-⚪ Setup ladder P8 (Web chat) — the T3–T6 relaunch briefs; held
-behind the ops thread.
+🟢 Ops — knowledge architecture (Web chat) — COMPLETE: phases 1+2
+([recut](history/foundation-roadmap-recut.md)), 3
+([engine swap](history/engine-swap.md)), 4
+([HOME encyclopedia](history/home-encyclopedia.md)), and 5
+([the sweep](history/phase5-sweep.md)) all shipped.
+⚪ Setup ladder P8 (Web chat) — the T3–T6 relaunch briefs; now
+unblocked (the ops thread is complete).
 
 ## Shipped (latest — full record: [history/](history/README.md))
 
 | When | What | PR |
 |---|---|---|
+| 2026-07-11 | [Phase 5 — the sweep: hardening + hygiene](history/phase5-sweep.md) | [#78](https://github.com/wsher0901/roam/pull/78) |
 | 2026-07-11 | [HOME v3 — the manual & encyclopedia](history/home-encyclopedia.md) | [#76](https://github.com/wsher0901/roam/pull/76) |
 | 2026-07-11 | [The engine swap: architecture v2](history/engine-swap.md) | [#71](https://github.com/wsher0901/roam/pull/71) |
 | 2026-07-10 | [Version ladder + lifespan split](history/foundation-roadmap-recut.md) | [#69](https://github.com/wsher0901/roam/pull/69) |
@@ -89,4 +90,3 @@ behind the ops thread.
 | 2026-07-10 | [Stage-map dashboard](history/stage-map-dashboard.md) | [#60](https://github.com/wsher0901/roam/pull/60) |
 | 2026-07-09 | [The knowledge layer](history/knowledge-layer.md) | [#58](https://github.com/wsher0901/roam/pull/58) |
 | 2026-07-09 | [Hygiene: line endings + retro-weave](history/hygiene-retro-weave.md) | [#57](https://github.com/wsher0901/roam/pull/57) |
-| 2026-07-09 | [Ritual engine v2; the shiplog is born](history/ritual-engine-v2.md) | [#56](https://github.com/wsher0901/roam/pull/56) |
