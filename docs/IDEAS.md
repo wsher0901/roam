@@ -5,7 +5,7 @@ status: living
 ---
 # Ideas Inbox
 Unsorted ideas land here. Nothing in this file is scope until it is
-triaged during a roadmap review and promoted to [ROADMAP](ROADMAP.md) or a GitHub issue.
+triaged into [ROADMAP](ROADMAP.md) via decide.
 
 - 2026-06-11 (Claude Code, after [V1.S2.T2](ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)): add `paths-ignore:
   docs/**` to the CI workflow so docs-only PRs (e.g. handoff
