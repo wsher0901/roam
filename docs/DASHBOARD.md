@@ -5,16 +5,22 @@ status: living
 ---
 # Dashboard — the state surface
 
-Stamp: 2026-07-11 · ship tail (QUIET handoff) · home PC
+Stamp: 2026-07-11 · handoff · home PC
 Glyphs: 🟢 done · 🟡 ongoing · 🔴 issue · ⚪ idle. Repainted only by
 rituals (pickup when stale · handoff · liftoff · ship's tail) — never
 hand-edited; git outranks this board.
 
 ## Needs you
 
-1. 🟡 Run the [machine-setup](skills/machine-setup.md) Verify block
-   on each PC — a full pass is unconfirmed on both seats.
-2. ⚪ [DECISION-POLICY §10](DECISION-POLICY.md#10-open-questions) —
+1. 🟡 Paste the approved v4 text into the claude.ai → Roam Project →
+   settings box — its master is now
+   [WEB-INSTRUCTIONS](WEB-INSTRUCTIONS.md); the box is a copy
+   ([history](history/web-instructions.md)).
+2. 🟡 Run the [machine-setup](skills/machine-setup.md) Verify block
+   on each PC — a full pass is unconfirmed on both seats (now
+   includes the optional [vault lens](skills/machine-setup.md#vault-lens)
+   yes/no).
+3. ⚪ [DECISION-POLICY §10](DECISION-POLICY.md#10-open-questions) —
    five open engine questions; parked until
    [V1.S3](ROADMAP.md#v1s3--engine-core--two-families-deep) opens.
 
@@ -22,7 +28,7 @@ hand-edited; git outranks this board.
 
 V1 — The demo · 5/34 █████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 S1 · Data Definition · 2/7 ██░░░░░ → T3–T6 source vetting ⚪ held
-(relaunch at ladder step P8, queued behind the ops thread)
+(relaunch briefs due from ladder step P8 in the Web chat)
 S2 · Skeleton & design · 3/5 ███░░ → T5 Design foundations ⚪ idle
 S3–S8 · queued in order · 0/22
 
@@ -73,8 +79,8 @@ then stating the lane.
 ([engine swap](history/engine-swap.md)), 4
 ([HOME encyclopedia](history/home-encyclopedia.md)), and 5
 ([the sweep](history/phase5-sweep.md)) all shipped.
-⚪ Setup ladder P8 (Web chat) — the T3–T6 relaunch briefs; now
-unblocked (the ops thread is complete).
+⚪ Setup ladder P8 (Web chat) — the T3–T6 relaunch briefs; next up
+now the ops thread is complete.
 
 ## Shipped (latest — full record: [history/](history/README.md))
 
