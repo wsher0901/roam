@@ -1,15 +1,16 @@
 ---
-type: memory
-id: home-encyclopedia
-updated: 2026-07-11 · ship (final rewrite) · home PC
+type: history
+slug: home-encyclopedia
+shipped: 2026-07-11
+pr: 76
 ---
 # home-encyclopedia — HOME v3: the encyclopedia
 
 ## Status
-Complete, awaiting merge. Both content commits are on origin, every
-verification gate is green, and the PR is flipped ready. Held at the
-gate BY DESIGN: the founder's approval follows an external review in
-the Web chat — DO NOT MERGE until that word arrives.
+Shipped — merged as
+[PR #76](https://github.com/wsher0901/roam/pull/76) after the
+founder's approval followed the external Web-chat review, exactly
+as the brief ordered.
 
 ## What this task is
 Phase 4 of the ops thread: rewrite [HOME.md](../HOME.md) as Roam's
@@ -36,9 +37,9 @@ wired into CI would make the retroactivity law's link gates
 mechanical instead of per-task tooling.
 
 ## Left / idle
-Only the weld: on the founder's approval, ship's atomic bookkeeping
-commit (this file moves to history/, slug-keyed, no
-[ROADMAP](../ROADMAP.md) tick) and the squash-merge.
+Nothing — the weld that landed this file was the last act
+(slug-keyed, no [ROADMAP](../ROADMAP.md) tick, per the workshop-slug
+rule).
 
 ## The story
 Born from the founder's phase-4 brief, pasted into the cockpit
@@ -68,8 +69,8 @@ Decisions a future reader should know:
   [ROADMAP](../ROADMAP.md), [DECISIONS](../DECISIONS.md) D-022,
   [PROJECT-POLICY](../PROJECT-POLICY.md), and a history file link
   into it unchanged; the retired `#file-ownership` anchor's two
-  inbound pointers ([memory/README](README.md),
-  [history/README](../history/README.md)) were rippled to
+  inbound pointers ([memory/README](../memory/README.md),
+  [history/README](README.md)) were rippled to
   `#the-files--what-each-one-is-for`.
 - **The brief's "maiden-run prune story from history/"** does not
   exist as a history file — the episode happened in this morning's
@@ -94,9 +95,9 @@ passed on sampled sentences from ROADMAP, LAWS, DASHBOARD, FACTS,
 and parallel-lanes · tests 3/3 · eslint · prettier.
 
 ## Where to look
-The draft-born PR (#76 — contract, summary, Deviations) ·
-[HOME.md](../HOME.md) v3 itself · GLOSSARY and HOME v2 in git
-history · the ops Web chat (phases 1–3 context; the external review
-that gates the merge) · [history/](../history/) for the
-[engine-swap](../history/engine-swap.md) and
-[knowledge-layer](../history/knowledge-layer.md) backstories.
+[PR #76](https://github.com/wsher0901/roam/pull/76) (contract,
+summary, Deviations) · [HOME.md](../HOME.md) v3 itself · GLOSSARY
+and HOME v2 in git history · the ops Web chat (phases 1–3 context;
+the external review that gated the merge) ·
+[engine-swap](engine-swap.md) and
+[knowledge-layer](knowledge-layer.md) for the backstories.
