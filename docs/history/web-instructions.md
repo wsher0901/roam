@@ -1,15 +1,15 @@
 ---
-type: memory
-id: web-instructions
-updated: 2026-07-11 · ship (final rewrite) · home PC
+type: history
+slug: web-instructions
+shipped: 2026-07-11
+pr: 80
 ---
 # web-instructions — canonize the Web-surface rule-carrier
 
 ## Status
-Complete, awaiting merge. The rule-carrier and its two HOME ripples
-are on origin in one commit, every gate is green, and the PR is
-flipped ready. Held at THE GATE by design — DO NOT MERGE until the
-founder's word arrives from the external Web-chat review.
+Shipped — merged as
+[PR #80](https://github.com/wsher0901/roam/pull/80) on the
+founder's word after the external Web-chat review.
 
 ## What this task is
 docs/WEB-INSTRUCTIONS.md now exists as the master copy of the
@@ -28,14 +28,16 @@ the v4 text into the actual claude.ai Project-instructions box so
 the box matches its new master.
 
 ## Left / idle
-Only the weld on approval (memory → history, slug-keyed, no
-[ROADMAP](../ROADMAP.md) tick).
+Nothing repo-side — the weld that landed this file was the last act
+(slug-keyed, no [ROADMAP](../ROADMAP.md) tick). The founder's
+box-paste (see Pending issues) is the one action that lives outside
+the repo.
 
 ## The story
 Born blocked, unblocked by a paste — exactly as the workshop
 designs it. The brief named the v4 text as founder-approved
 verbatim without including it; per the
-[engine-swap](../history/engine-swap.md) precedent the gap was
+[engine-swap](engine-swap.md) precedent the gap was
 flagged instead of reconstructed, the bench (stub + draft PR with a
 `BLOCKED:` note) went up first, and the founder's supplement
 carried the text across — the one manual link doing its job. The
