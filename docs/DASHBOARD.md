@@ -5,7 +5,7 @@ status: living
 ---
 # Dashboard — the state surface
 
-Stamp: 2026-07-11 · pickup (repaint) · home PC
+Stamp: 2026-07-11 · handoff · home PC
 Glyphs: 🟢 done · 🟡 ongoing · 🔴 issue · ⚪ idle. Repainted only by
 rituals (pickup when stale · handoff · liftoff · ship's tail) — never
 hand-edited; git outranks this board.
