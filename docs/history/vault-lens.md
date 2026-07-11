@@ -1,15 +1,15 @@
 ---
-type: memory
-id: vault-lens
-updated: 2026-07-11 · ship (final rewrite) · home PC
+type: history
+slug: vault-lens
+shipped: 2026-07-11
+pr: 82
 ---
 # vault-lens — vault lens + clean-tree verdict (ordeals 2+3 close-out)
 
 ## Status
-Complete, awaiting merge. Both edits are on origin in one commit,
-every gate is green, and the PR is flipped ready. Held at THE GATE
-by design — DO NOT MERGE until the founder's word arrives from the
-external Web-chat review.
+Shipped — merged as
+[PR #82](https://github.com/wsher0901/roam/pull/82) on the
+founder's word after the external Web-chat review.
 
 ## What this task is
 Close out two Web-chat ordeals in one small PR: (2) the vault's
@@ -25,8 +25,10 @@ the brief is the contract.
 None.
 
 ## Left / idle
-Only the weld on approval (this file → history/, slug-keyed, no
-[ROADMAP](../ROADMAP.md) tick).
+Nothing — the weld that landed this file was the last act
+(slug-keyed, no [ROADMAP](../ROADMAP.md) tick). Applying the lens
+on each seat is the founder's optional two minutes, tracked by the
+machine-setup Verify line.
 
 ## The story
 One adaptive call at execution: the brief's draft heading carried
@@ -44,7 +46,7 @@ The two verdicts this task exists to make permanent:
 
 - **Ordeal 3 — the clean-tree audit.** A full inbound-link orphan
   scan on 2026-07-11 found ZERO deletable files. The 27 unlinked
-  [history/](../history/README.md) backfills are archive-by-design
+  [history/](README.md) backfills are archive-by-design
   — windowed by the board's Shipped table, fronted by
   history/README — and every other file has an owner and inbound
   links. Nothing to delete; the tree is clean as designed.
