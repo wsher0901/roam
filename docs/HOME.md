@@ -1014,7 +1014,8 @@ gitignored. In Obsidian the founder READS; the one write surface is
 quick capture into [IDEAS](IDEAS.md). The board's Shipped table is
 static markdown re-derived at every repaint — no Obsidian community
 plugin is needed anywhere; the one table-rendering plugin the board
-once leaned on is retired.
+once leaned on is retired. Per-machine graph and bookmark tuning:
+[machine-setup §Vault lens](skills/machine-setup.md#vault-lens).
 
 ## Roadmap manual
 
