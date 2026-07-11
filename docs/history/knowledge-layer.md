@@ -11,7 +11,7 @@ pr: 58
 
 A spec system for per-task detail sheets
 ([specs/](../specs/README.md)), a newcomer-proof
-[GLOSSARY](../GLOSSARY.md), a [DECISION-POLICY](../DECISION-POLICY.md)
+[GLOSSARY](../HOME.md#terms), a [DECISION-POLICY](../DECISION-POLICY.md)
 hub consolidating every decided engine rule with sources, a
 [SCHEMA](../data/SCHEMA.md) placeholder, [HOME](../HOME.md) rewritten as
 the zero-state front page, YAML frontmatter across the corpus — and

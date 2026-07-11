@@ -4,22 +4,12 @@ title: Source registry
 status: living
 ---
 # Source registry — V1
-One entry per source slot ([FACTS.md](FACTS.md) "T2–T6 assignment map"). Each
-entry records: facts served · chosen source · confirmed payload keys
-(vs the [FACTS.md](FACTS.md) Dictionary) · grade · freshness · coverage ([D-010](../DECISIONS.md#d-010--2026-06--global-coverage-via-graded-fallback-ladders)
-ladder position) · cost · retention_rights · license_class ·
-attribution duties · spike script + last verified run · alternatives
-rejected. Retention and license are PRIMARY selection criteria
-([D-015](../DECISIONS.md#d-015--2026-06--data-asset-law-bitemporal-append-only-license-segmented)): caching-prohibited sources disqualify a slot from the asset
-layer. Grades are living ([TELEMETRY.md §3](TELEMETRY.md#3-source-health-p6) demotion law).
-
-Grade scale (provisional until ratified in [V1.S1.T7](../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)):
-- A — authoritative or model-grade, globally consistent, obtainable,
-  license-clean; renders as verified.
-- B — authoritative where covered; coverage or fidelity caveats;
-  verified where covered, labeled elsewhere.
-- C — estimated/derived/curated; renders as labeled estimate.
-- D — LLM-research grade; always renders unverified.
+One entry per source slot ([FACTS.md](FACTS.md) "T2–T6 assignment
+map"): the vetted source serving each slot's facts, with its
+confirmed keys, grade, freshness, coverage, cost, license, and spike.
+Manual: [HOME §Reading the data files](../HOME.md#reading-the-data-files)
+· grade scale (canonical):
+[DECISION-POLICY §3](../DECISION-POLICY.md#3-grade--render-matrix).
 
 ## Weather slots (V1.S1.T2)
 

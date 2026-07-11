@@ -19,9 +19,9 @@ sections (header · question router · daily loop · file guide ·
 mechanisms · terms · data-file guide · equipment · roadmap manual).
 Ripples in the same PR: [FACTS](../data/FACTS.md) /
 [SOURCES](../data/SOURCES.md) / [specs README](../specs/README.md)
-shrink their explainers to pointers; [GLOSSARY](../GLOSSARY.md) is
-absorbed into HOME §Terms and deleted, with a full corpus link
-re-point. Out of scope: any content change to
+shrink their explainers to pointers; GLOSSARY is absorbed into
+[HOME §Terms](../HOME.md#terms) and deleted, with a full corpus
+link re-point. Out of scope: any content change to
 [DASHBOARD](../DASHBOARD.md), any rewording of [LAWS](../LAWS.md)
 beyond moved link targets, and the merge itself — founder approval
 follows an external review in the Web chat.
@@ -44,7 +44,8 @@ the contract and lives in the PR description.
 
 ## Where to look
 The draft PR (contract + steps) · the ops Web chat (phases 1–3
-context) · [HOME.md](../HOME.md) as it stands (v2, the cockpit
-edition) · [GLOSSARY.md](../GLOSSARY.md) (to be absorbed) ·
+context) · [HOME.md](../HOME.md) (v3 after commit 1; v2 in git
+history) · GLOSSARY in git history (absorbed into
+[HOME §Terms](../HOME.md#terms), deleted at commit 2) ·
 [history/](../history/) for the ritual-engine and knowledge-layer
 backstories.
