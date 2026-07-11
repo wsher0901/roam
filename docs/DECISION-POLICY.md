@@ -8,7 +8,11 @@ status: living
 ## 1. What this is
 The engine's decision brain on paper: every already-decided rule for
 how Roam reasons about facts and renders claims, collected in one
-place. This file invents NOTHING — every rule ends in a link to its
+place. This file is the CANONICAL home of the engine's reasoning
+rules — the plan-synthesis rules moved here from
+[FOUNDATION](FOUNDATION.md) by
+[D-021](DECISIONS.md#d-021--2026-07--plan-synthesis-principles-re-home-to-decision-policy)
+— and consolidates every other decided rule with a link to its
 source ([FOUNDATION](FOUNDATION.md), a D-number, or a
 [FACTS](data/FACTS.md)/[SOURCES](data/SOURCES.md) anchor). It seeds
 the [V1.S3](ROADMAP.md#v1s3--engine-core--two-families-deep) engine
@@ -50,7 +54,7 @@ Grade scale is provisional until ratified in
   ([SOURCES.md §activity-profiles](data/SOURCES.md#activity-profiles))
 - Forecast vs climatology: real forecast when the trip is near,
   climatology when it is far — and the plan says which it used.
-  ([FOUNDATION §V1 condition checks](FOUNDATION.md#v1-condition-checks--the-must-haves);
+  ([FOUNDATION §What Roam checks](FOUNDATION.md#what-roam-checks--the-five-families);
   [F-WX-11](data/FACTS.md#f-wx-11--climate-normals-by-date-of-year))
 - [TP-42](data/FACTS.md#appendix-a--traveler-parameters-tp-0147--per-d-011--d-012)
   (verified-only strictness: labeled | strict, default labeled)
@@ -108,31 +112,37 @@ Grade scale is provisional until ratified in
 ## 6. Preferences are defaults, not blinders
 - Honor the stated preference, and surface a significantly better
   alternative when one exists (airports, dates, areas).
-  ([FOUNDATION §Plan-synthesis principles](FOUNDATION.md#plan-synthesis-principles))
+  (canonical here — moved from FOUNDATION by
+  [D-021](DECISIONS.md#d-021--2026-07--plan-synthesis-principles-re-home-to-decision-policy))
 - Proactive shifts: when moving a departure day or the whole window
   measurably improves the trip, say so — date flexibility is an
   engine lever.
-  ([FOUNDATION §Plan-synthesis principles](FOUNDATION.md#plan-synthesis-principles))
+  (canonical here — moved from FOUNDATION by
+  [D-021](DECISIONS.md#d-021--2026-07--plan-synthesis-principles-re-home-to-decision-policy))
 - Near-peer alternatives: in shortlist mode, score the list and also
   surface off-list options of equal merit.
-  ([FOUNDATION §Plan-synthesis principles](FOUNDATION.md#plan-synthesis-principles))
+  (canonical here — moved from FOUNDATION by
+  [D-021](DECISIONS.md#d-021--2026-07--plan-synthesis-principles-re-home-to-decision-policy))
 - Explanation duty: every ranking and every edit verdict carries its
   reasons.
   ([FOUNDATION §Principles](FOUNDATION.md#principles))
 - Accepted trade-offs lock: once the traveler accepts a trade-off it
   is pinned and not re-litigated; pinned items carry acceptance
   provenance.
-  ([FOUNDATION §Plan-synthesis principles](FOUNDATION.md#plan-synthesis-principles);
+  (canonical here — moved from FOUNDATION by
+  [D-021](DECISIONS.md#d-021--2026-07--plan-synthesis-principles-re-home-to-decision-policy);
   [FACTS Appendix B](data/FACTS.md#appendix-b--plan-parameters-t7-must-schema-not-world-facts))
 
 ## 7. Constraint priority
 - Feasibility outranks desire: an infeasible must-do is declined with
   an alternative (often a different window); a feasible trade-off is
   presented with pros and cons.
-  ([FOUNDATION §Plan-synthesis principles](FOUNDATION.md#plan-synthesis-principles))
+  (canonical here — moved from FOUNDATION by
+  [D-021](DECISIONS.md#d-021--2026-07--plan-synthesis-principles-re-home-to-decision-policy))
 - Constraint priority = category × intensity: severe jet-lag outranks
   mild rain; intensity is data, not vibes.
-  ([FOUNDATION §Plan-synthesis principles](FOUNDATION.md#plan-synthesis-principles))
+  (canonical here — moved from FOUNDATION by
+  [D-021](DECISIONS.md#d-021--2026-07--plan-synthesis-principles-re-home-to-decision-policy))
 - The traveler's ranked trade-off priority
   ([TP-30](data/FACTS.md#appendix-a--traveler-parameters-tp-0147--per-d-011--d-012):
   budget / must-dos / comfort / time) sets the demotion order when
@@ -141,20 +151,24 @@ Grade scale is provisional until ratified in
 - Staged synthesis: a cheap coarse pass first; killer constraints
   (departure bounds, trip length, budget) are confirmed before any
   expensive search.
-  ([FOUNDATION §Plan-synthesis principles](FOUNDATION.md#plan-synthesis-principles))
+  (canonical here — moved from FOUNDATION by
+  [D-021](DECISIONS.md#d-021--2026-07--plan-synthesis-principles-re-home-to-decision-policy))
 - Composition-aware matching: party makeup (ages, type) reshapes
   venue choice and defaults — fewer stops, gentler pace — without
   being asked.
-  ([FOUNDATION §Plan-synthesis principles](FOUNDATION.md#plan-synthesis-principles))
+  (canonical here — moved from FOUNDATION by
+  [D-021](DECISIONS.md#d-021--2026-07--plan-synthesis-principles-re-home-to-decision-policy))
 - Condition-aware placement: never schedule an exposed activity into
   the hottest or most hostile hour without reason; daylight, heat,
   UV, and crowds steer time-of-day.
-  ([FOUNDATION §Plan-synthesis principles](FOUNDATION.md#plan-synthesis-principles))
+  (canonical here — moved from FOUNDATION by
+  [D-021](DECISIONS.md#d-021--2026-07--plan-synthesis-principles-re-home-to-decision-policy))
 
 ## 8. Warn, don't block — and the refusal rung
 - Outside hard feasibility, the engine warns and lets the traveler
   decide.
-  ([FOUNDATION §Plan-synthesis principles](FOUNDATION.md#plan-synthesis-principles))
+  (canonical here — moved from FOUNDATION by
+  [D-021](DECISIONS.md#d-021--2026-07--plan-synthesis-principles-re-home-to-decision-policy))
 - The refusal rung: where nothing verifiable exists and no honest
   label helps, the engine says "can't verify here" rather than
   guessing (ladder rung 6).
@@ -162,15 +176,16 @@ Grade scale is provisional until ratified in
 - Scope refusals: no booking, payments, or reservations — the engine
   informs, never transacts; no live fare/price scraping — cost means
   honest estimate ranges.
-  ([FOUNDATION §What V1 refuses to do](FOUNDATION.md#what-v1-refuses-to-do))
+  ([ROADMAP §V1 — The demo](ROADMAP.md#v1--the-demo--active))
 - Content guardrails: no demographic packing lists (gear notes only
   when an activity demands them); dietary handling filters options
   but never guarantees safety — travelers verify allergens with
   venues.
-  ([FOUNDATION §Plan-synthesis principles](FOUNDATION.md#plan-synthesis-principles))
+  (canonical here — moved from FOUNDATION by
+  [D-021](DECISIONS.md#d-021--2026-07--plan-synthesis-principles-re-home-to-decision-policy))
 - Never a silent squeeze-in: every edit re-validates the WHOLE plan
   and explains what the change knocks over.
-  ([FOUNDATION §What V1 does](FOUNDATION.md#what-v1-does--the-spine))
+  ([FOUNDATION §The spine](FOUNDATION.md#the-spine))
 
 ## 9. Units
 - All storage and engine math use SI/metric exclusively, never mixed.
@@ -207,10 +222,10 @@ Found while consolidating; for the founder — not resolved here.
    traveler's ranked trade-off priority
    ([TP-30](data/FACTS.md#appendix-a--traveler-parameters-tp-0147--per-d-011--d-012))
    composes with the engine's category × intensity ranking
-   ([FOUNDATION](FOUNDATION.md#plan-synthesis-principles)) — which
+   ([§7](#7-constraint-priority)) — which
    applies first when they disagree — is not decided.
 5. **Intensity thresholds don't exist yet.** "Intensity is data, not
-   vibes" ([FOUNDATION](FOUNDATION.md#plan-synthesis-principles)),
+   vibes" ([§7](#7-constraint-priority)),
    but the thresholds/weights live in the
    [WX-13](data/FACTS.md#f-wx-13--activity-weather-sensitivity-profiles-15-types)
    profiles authored in

@@ -8,7 +8,8 @@ status: living
 What the engine must KNOW (54 world facts, five families) and what it
 may be TOLD (47 traveler parameters, Appendix A). This file is the
 source of truth for source vetting ([V1.S1.T2–T6](../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)) and the storage
-schema ([V1.S1.T7](../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)). Scope guards inherited from [FOUNDATION](../FOUNDATION.md): pre-trip
+schema ([V1.S1.T7](../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)). Scope guards inherited from [FOUNDATION](../FOUNDATION.md) and
+[ROADMAP §V1 — The demo](../ROADMAP.md#v1--the-demo--active): pre-trip
 only; estimates only (ranges, never live fares/prices); no booking or
 live status; informing, never transacting.
 
@@ -64,7 +65,8 @@ edit plus a D-number, not a rewrite.
 
 ## F-WX — Weather (14) — source task V1.S1.T2
 Socket note: air quality, pollen, smoke seasons = Later socket
-([FOUNDATION](../FOUNDATION.md)) — excluded from V1.
+([ROADMAP §Pool](../ROADMAP.md#pool--unversioned-sockets)) — excluded
+from V1.
 
 ### F-WX-01 — Temperature, actual + feels-like (hourly)
 - What: air temperature and apparent temperature per hour at a point.
@@ -339,7 +341,7 @@ under plans.
   audience_suitability (all-ages/adults-leaning/adults-only-18+/21+) ·
   pet_friendly (yes/outdoor-only/no/unknown)
 - Spine: Plan; audience_suitability powers composition-aware matching
-  ([FOUNDATION §Plan-synthesis principles](../FOUNDATION.md#plan-synthesis-principles)).
+  ([DECISION-POLICY §7](../DECISION-POLICY.md#7-constraint-priority)).
 - Scope: global. Freshness: monthly; estimated where missing, labeled.
 - Type: fetched + estimated. Source slot: venue-attributes.
 
@@ -491,7 +493,9 @@ ladders. Socket note: airline-specific baggage allowances/fees = Later
 
 ## F-CC — Crowds & calendar (8) — source task V1.S1.T6
 Socket note: SNS trend mining = Later socket; [CC-07](#f-cc-07--trending-signal-general-non-sns) is the V1
-general-signals stand-in ([FOUNDATION](../FOUNDATION.md)).
+general-signals stand-in
+([ROADMAP §Pool](../ROADMAP.md#pool--unversioned-sockets); V1 scope:
+[ROADMAP §V1 — The demo](../ROADMAP.md#v1--the-demo--active)).
 
 ### F-CC-01 — Public holidays
 - What: destination country/region holidays.
@@ -661,4 +665,4 @@ validation lands in T7.
   brain-suggested centroid). Drives [FE-06](#f-fe-06--travel-times--distances-per-mode) day routing.
 - Item lock-state: accepted trade-offs and [TP-44](#appendix-a--traveler-parameters-tp-0147--per-d-011--d-012) commitments are
   pinned ("bible") — carried per plan item with acceptance provenance
-  ([FOUNDATION §Plan-synthesis principles](../FOUNDATION.md#plan-synthesis-principles); T7 schemas it).
+  ([DECISION-POLICY §6](../DECISION-POLICY.md#6-preferences-are-defaults-not-blinders); T7 schemas it).

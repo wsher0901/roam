@@ -488,3 +488,44 @@ Why:
 Alternatives rejected: keep repairing `--remote` (broken CLI-side, not
 ours to fix); pure sequential work (leaves S1's [P] lanes serialized
 now that loss-proof parallelism is native).
+
+## D-021 — 2026-07 — Plan-synthesis principles re-home to DECISION-POLICY
+**Decision:** [docs/DECISION-POLICY.md](DECISION-POLICY.md) is the
+canonical home of the plan-synthesis rules (preferences-as-defaults,
+constraint priority, warn-don't-block, composition- and
+condition-aware placement, staged synthesis, near-peer alternatives,
+proactive shifts, trade-off locking). [FOUNDATION](FOUNDATION.md)
+drops its Plan-synthesis section; POLICY's existing word-for-word
+mirrors become the originals.
+**Why:** one home per rule — [FOUNDATION](FOUNDATION.md) holds
+identity, POLICY holds engine reasoning; the mirror already existed,
+so canonicalizing removes a duplication that would drift.
+**Alternatives rejected:** FOUNDATION canonical with POLICY mirroring
+(two edits per rule change); duplicating in both (drift).
+**Affects:** [FOUNDATION](FOUNDATION.md) (section removed) ·
+[DECISION-POLICY](DECISION-POLICY.md) §1, §6–§8 ·
+[ROADMAP](ROADMAP.md) S3/S5 binding-requirements links · all corpus
+links to the old anchor.
+
+## D-022 — 2026-07 — Version ladder + lifespan split (amends D-004)
+**Decision:** versions are outcome milestones — V1 "The demo", V2
+"Real users", V3 "The product", then an unversioned Pool (done-whens
+as written in [ROADMAP §The versions](ROADMAP.md#the-versions)).
+Rolling-wave depth: active version fully staged/tasked; next a rough
+bucket; the one after name-only; sockets pooled. FOUNDATION↔ROADMAP
+divide by lifespan: a sentence a shipped version can falsify lives in
+[ROADMAP](ROADMAP.md) (per-version scope blocks: For / Refuses /
+Ships); timeless sentences live in [FOUNDATION](FOUNDATION.md).
+Refusals lift per-version via roadmap edits — never FOUNDATION edits.
+**Why:** outcome-named versions make "done" testable; the lifespan
+split matches each file's change cadence, so identity never churns
+and plan never rots.
+**Alternatives rejected:** topic-based split (both files are "about
+the product" — undecidable); detailing V2+ now (guesswork, violates
+rolling wave); keeping sockets in FOUNDATION (the pool is the plan's
+coarsest layer).
+**Affects:** [ROADMAP](ROADMAP.md) (ladder, V1 scope block, V2/V3/Pool,
+notation → [HOME](HOME.md)) · [FOUNDATION](FOUNDATION.md) v3 ·
+[HOME §Roadmap manual](HOME.md#roadmap-manual) ·
+[D-004](#d-004--2026-06--planning-notation--rolling-wave-depth)
+(amended).

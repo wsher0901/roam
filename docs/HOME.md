@@ -50,12 +50,38 @@ this file.
 4. Say a leaving phrase ("done for today", "bye") → /handoff ships
    itself and confirms it is safe to walk away.
 
+## Roadmap manual
+
+How to read [ROADMAP.md](ROADMAP.md)
+([D-004](DECISIONS.md#d-004--2026-06--planning-notation--rolling-wave-depth),
+amended by
+[D-022](DECISIONS.md#d-022--2026-07--version-ladder--lifespan-split-amends-d-004)):
+
+- **Notation** — Vn = Version · Vn.Sm = Stage (ordered, each with a
+  done-criterion) · Vn.Sm.Tk = Task, the PR-sized unit (one task = one
+  branch = one PR). The only vocabulary — no synonyms: not "MVP", not
+  "demo build", not "milestone".
+- **Tags** — [P] = parallel-safe (touches files no sibling task
+  touches) · [seq] = must follow; "after X" names the dependency when
+  it is not simply the previous task.
+- **Branch names** — the lowercase ID plus a slug
+  (e.g. feat/v1.s3.t3-weather); branches, PRs, and handoff notes
+  reference these IDs.
+- **Work IDs** — Vn.Sm.Tk from [ROADMAP](ROADMAP.md) or real GitHub
+  issue numbers — never hand-assigned labels.
+- **Small steps** — checkboxes in the task's PR description, never in
+  [ROADMAP](ROADMAP.md).
+- **Depth (rolling wave)** — active version fully staged and tasked ·
+  next version a rough bucket · the one after name-only · sockets
+  pooled unversioned.
+- **Progress** — checkbox ticks land only via /ship at merge time.
+
 ## File ownership
 
 | File | Holds | Written by |
 |---|---|---|
 | [FOUNDATION.md](FOUNDATION.md) | product definition & principles | founder-approved PRs (paste block + D-number) |
-| [ROADMAP.md](ROADMAP.md) | the build order: stages → tasks | structure via /decide; progress ticks via /ship |
+| [ROADMAP.md](ROADMAP.md) | the version ladder + build order: versions → stages → tasks | structure via /decide; progress ticks via /ship |
 | [DECISIONS.md](DECISIONS.md) | append-only decision log | /decide |
 | [SHIPLOG.md](SHIPLOG.md) | what shipped, newest first | /ship's bookkeeping commit |
 | [DASHBOARD.md](DASHBOARD.md) | generated progress views | /ship (stage-map refresh at every merge) |

@@ -14,18 +14,22 @@ story.
 
 - **Vn.Sm.Tk (the ID system)** — Version → Stage → Task; the one
   official way to name work (V1.S3.T1 = Version 1, Stage 3, Task 1).
-  Home: [ROADMAP.md](ROADMAP.md#notation--the-only-one-we-use-d-004).
-- **version / stage / task** — a version is a shippable product cut;
+  Home: [HOME.md §Roadmap manual](HOME.md#roadmap-manual).
+- **version / stage / task** — a version is an outcome milestone (the
+  ladder lives in [ROADMAP §The versions](ROADMAP.md#the-versions));
   a stage is an ordered slice of it with a done-criterion; a task is
   the PR-sized unit (one task = one branch = one PR).
-  Home: [ROADMAP.md](ROADMAP.md#notation--the-only-one-we-use-d-004).
+  Home: [HOME.md §Roadmap manual](HOME.md#roadmap-manual).
 - **[P] / [seq]** — task tags: [P] = parallel-safe (touches files no
   sibling task touches); [seq] = must follow its dependency.
-  Home: [ROADMAP.md](ROADMAP.md#notation--the-only-one-we-use-d-004).
-- **rolling wave** — planning depth law: V1 fully detailed, V2 a
-  rough named bucket, everything further just pooled ideas
-  ([D-004](DECISIONS.md#d-004--2026-06--planning-notation--rolling-wave-depth)).
-  Home: [ROADMAP.md](ROADMAP.md#planning-depth--rolling-wave-d-004).
+  Home: [HOME.md §Roadmap manual](HOME.md#roadmap-manual).
+- **rolling wave** — planning depth law: the active version fully
+  staged and tasked, the next a rough bucket, the one after name-only,
+  sockets pooled unversioned
+  ([D-004](DECISIONS.md#d-004--2026-06--planning-notation--rolling-wave-depth),
+  amended by
+  [D-022](DECISIONS.md#d-022--2026-07--version-ladder--lifespan-split-amends-d-004)).
+  Home: [HOME.md §Roadmap manual](HOME.md#roadmap-manual).
 - **spec** — a per-task detail sheet under a ROADMAP line, born only
   when a task needs discussion. Home: [specs/README.md](specs/README.md).
 - **frontmatter** — the YAML block (type / title / status) at the top
@@ -59,7 +63,7 @@ story.
   Home: [SOURCES.md](data/SOURCES.md).
 - **socket** — a named future capability deliberately excluded from
   V1 but designed to plug in later without a rewrite.
-  Home: [FOUNDATION.md](FOUNDATION.md#later--named-sockets-not-rewrites).
+  Home: [ROADMAP.md §Pool](ROADMAP.md#pool--unversioned-sockets).
 - **D-number** — one permanently recorded decision (D-001, D-002, …)
   with rationale and rejected alternatives.
   Home: [DECISIONS.md](DECISIONS.md).
@@ -108,7 +112,7 @@ story.
 - **Suggest / Plan / Edit (the spine)** — the one loop V1 ships:
   suggest ranked trips → plan the full day-by-day → edit with
   whole-plan re-validation.
-  Home: [FOUNDATION.md](FOUNDATION.md#what-v1-does--the-spine).
+  Home: [FOUNDATION.md](FOUNDATION.md#the-spine).
 - **validity engine** — the deterministic checks-and-scoring module
   (the isolated `engine/` directory; often just "the engine"): it
   fetches facts, runs the five families' checks, and scores plans —
@@ -120,7 +124,7 @@ story.
   ([D-005](DECISIONS.md#d-005--2026-06--stack-re-trial-vs-foundation-v1-d-001-upheld--frontend-layer)).
 - **check module** — one pluggable condition checker per fact family;
   a new idea is a new module, never a rewrite.
-  Home: [FOUNDATION.md](FOUNDATION.md#v1-condition-checks--the-must-haves).
+  Home: [FOUNDATION.md](FOUNDATION.md#what-roam-checks--the-five-families).
 - **reliability law** — never fabricate: every fact is checked, every
   claim carries source + confidence, anything unverifiable renders
   labeled unverified.
@@ -132,7 +136,7 @@ story.
 - **preferences-as-defaults** — the engine honors a stated preference
   but surfaces a significantly better alternative when one exists;
   preferences steer, they don't blind.
-  Home: [FOUNDATION.md](FOUNDATION.md#plan-synthesis-principles).
+  Home: [DECISION-POLICY.md §6](DECISION-POLICY.md#6-preferences-are-defaults-not-blinders).
 - **provenance** — every stored traveler value is marked stated,
   inferred, or default; stated beats inferred beats default, newer
   beats older
