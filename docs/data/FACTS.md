@@ -14,42 +14,7 @@ only; estimates only (ranges, never live fares/prices); no booking or
 live status; informing, never transacting.
 
 ## How to read this file
-- IDs are stable: [F-WX](#f-wx--weather-14--source-task-v1s1t2) (weather), [F-SS](#f-ss--sky--sea-10--source-task-v1s1t3) (sky & sea), [F-FE](#f-fe--feasibility-14--source-task-v1s1t4) (feasibility),
-  [F-TT](#f-tt--time--transport-8--source-task-v1s1t5) (time & transport), [F-CC](#f-cc--crowds--calendar-8--source-task-v1s1t6) (crowds & calendar).
-- Source slots are the join to [docs/data/SOURCES.md](SOURCES.md): every fact names
-  exactly one slot; a slot may serve many facts; T2–T6 produce one
-  [SOURCES.md](SOURCES.md) entry per slot. Type "computed" facts name the slot of
-  their primary input — no separate fetch occurs.
-- Two jobs: Suggest = trip-merit ("is this trip worth it for these
-  dates?" — a destination famous for an activity is docked when that
-  activity's conditions are bad in the window). Plan = placement of
-  individual activities. Edit re-validates the whole plan and inherits
-  every Plan fact; freshness tightening near the activity date covers
-  Edit's needs. Inside the forecast horizon, Suggest sharpens its merit
-  read with the real forecast instead of climatology.
-- Types: fetched (external source) · computed (math, exact everywhere)
-  · curated (maintained in-repo as data) · estimated (labeled ranges)
-  · LLM-research grade (always rendered unverified).
-- The reliability ladder ([D-010](../DECISIONS.md#d-010--2026-06--global-coverage-via-graded-fallback-ladders)) — coverage-risky facts (⚠) are vetted
-  down these rungs: 1 global-by-construction source → 2 regional
-  authoritative source → 3 computed → 4 estimated, labeled → 5
-  LLM-research grade, rendered unverified → 6 refusal.
-- Freshness = maximum cache staleness before refetch.
-- This file lists check INPUTS only. Check scores are engine logic
-  ([V1.S3](../ROADMAP.md#v1s3--engine-core--two-families-deep)), not facts.
-- Dictionaries: new and amended facts carry a "Dictionary:" line — the
-  exact payload keys a vetted source must supply. T2–T6 confirm and
-  record final keys per slot in [SOURCES.md](SOURCES.md); where a fact has no
-  Dictionary line yet, the vetting task derives it from the What line.
-- Units: all stored values are SI/metric; conversion happens at
-  display time only ([D-013](../DECISIONS.md#d-013--2026-06--canonical-units-si-storage-display-time-conversion)).
-- Fact cache is bitemporal and append-only: every value carries
-  valid_for (when true in the world) and recorded_at (when learned);
-  values are superseded, never overwritten ([D-015](../DECISIONS.md#d-015--2026-06--data-asset-law-bitemporal-append-only-license-segmented)).
-- The Dictionary line doubles as the schema-drift contract — live
-  source payloads are monitored against it ([docs/data/TELEMETRY.md §3](TELEMETRY.md#3-source-health-p6)).
-- Traveler-side ask tiers, provenance, and upsert rules live in
-  Appendix A ([D-012](../DECISIONS.md#d-012--2026-06--elicitation--inference-policy-ask-tiers-provenance-upsert)).
+Manual: [HOME §Reading the data files](../HOME.md#reading-the-data-files).
 
 ## Activity taxonomy (15 types — ships as a data file)
 beach & swimming · on-water (boat, kayak, surf) · hiking & trails ·

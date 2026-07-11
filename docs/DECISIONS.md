@@ -569,7 +569,7 @@ only no-approval merge path).
 (amended: lane birth becomes the universal birth) ·
 [parallel-lanes](skills/parallel-lanes.md) ·
 [liftoff](skills/liftoff.md) · [HOME](HOME.md) tables ·
-[GLOSSARY](GLOSSARY.md) micro-PR entry.
+[GLOSSARY](HOME.md#terms) micro-PR entry.
 
 ## D-024 — 2026-07 — Architecture v2: memory/history narrative layer, DASHBOARD as sole state surface, rituals as skills (amends D-008; retires HANDOFF.md + SHIPLOG.md)
 **Decision:** every task carries docs/memory/&lt;id&gt;.md — the
@@ -611,7 +611,7 @@ unreadable in Obsidian).
 (born) · [DASHBOARD](DASHBOARD.md) v5 · docs/memory/ + docs/history/
 (born) · HANDOFF.md + SHIPLOG.md (deleted) · .claude/commands/
 (deleted) · eight skills · session-start hook · settings.json ·
-[HOME](HOME.md) · [GLOSSARY](GLOSSARY.md) ·
+[HOME](HOME.md) · [GLOSSARY](HOME.md#terms) ·
 [specs/README](specs/README.md) ·
 [D-008](#d-008--2026-06--cockpit-derived-state-automatic-recording)
 (amended).

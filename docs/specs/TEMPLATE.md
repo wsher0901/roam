@@ -11,7 +11,7 @@ shipped: —
 ---
 # <ID> — <title>
 **Links:** [ROADMAP line](…) · Decisions: [D-0XX](…) · Facts:
-[F-…](…) · Glossary: [term](…)
+[F-…](…) · Terms: [term](../HOME.md#terms)
 
 ## Goal
 <2–3 sentences, plain language: what this task delivers and why>
