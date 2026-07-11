@@ -1,57 +1,108 @@
 ---
 type: memory
 id: phase5-sweep
-updated: 2026-07-11 · birth · home PC
+updated: 2026-07-11 · ship (final rewrite) · home PC
 ---
 # phase5-sweep — hardening + hygiene (final ops phase)
 
 ## Status
-Bench ready — branch, this stub, and the draft PR are born; no work
-started. The contract is the founder's phase-5 brief, carried in
-full in the PR description.
+Complete, awaiting merge. All four commits are on origin, every
+verification gate is green, and the PR is flipped ready. Held at the
+gate BY DESIGN: the founder's approval follows an external review in
+the Web chat — DO NOT MERGE until that word arrives.
 
 ## What this task is
-The final phase of the ops thread: seven hardening workstreams in
-one sweep. ① the gather step stops trusting stale refs (prune in
-the session-start hook + [pickup](../skills/pickup.md) step 3);
-② Dataview retires — the board's Shipped table goes static,
-re-derived at every repaint; ③ a timed pickup-gather latency check
-(record, don't tune); ④ the line-ending phantom gets a root-cause
-verdict (renormalize only if it reproduces); ⑤ the close-lock — a
-released session physically rejects input via a new
-prompt-submit hook + a session-closed flag written as the leaving
-rituals' last act; ⑥ the micro-PR carve-out sentence in
-[LAWS](../LAWS.md) catches up to reality (pickup's stale-repaint
-included; pickup stub gains the merge allowance); ⑦ the link
-checker is promoted into `scripts/` + CI. Plus hygiene: the
-[IDEAS](../IDEAS.md) header sheds retired GitHub Issues, a glyph
-sweep, an orphan scan, and the retired-reference grep gates. Scope:
-docs/, .claude/, .gitignore, scripts/, the existing CI workflow —
-nothing else. No spec: the brief is the contract.
+The final phase of the ops thread — seven hardening workstreams in
+one sweep: ① prune at gather (session-start hook +
+[pickup](../skills/pickup.md) step 3; the resolved line left
+[IDEAS](../IDEAS.md)); ② the board's Shipped table went static —
+ten newest [history/](../history/README.md) entries re-derived from
+frontmatter at every repaint, no Obsidian plugin needed anywhere;
+③ a timed gather latency check; ④ a root-cause verdict on the
+line-ending phantoms; ⑤ the close-lock — released sessions
+physically reject input; ⑥ the micro-PR carve-out sentence caught
+up to reality in [LAWS](../LAWS.md) and
+[PROJECT-POLICY](../PROJECT-POLICY.md), and the pickup stub gained
+the same narrow merge allowance as its siblings; ⑦ the link checker
+was promoted to `scripts/check-links.mjs` + `npm run check:links` +
+a CI step. Scope held to docs/, .claude/, .gitignore, scripts/, and
+the existing CI workflow. No spec: the brief is the contract, in
+the PR description.
 
 ## Pending issues
-None yet.
+None.
 
 ## Left / idle
-Everything: ④ investigation → four ordered commits (1 prune +
-close-lock · 2 Dataview retirement · 3 link-checker + CI · 4
-truth-up + hygiene; renormalize as its own commit only if ④
-demands) → the verification battery → ship to the gate, DO NOT
-MERGE (founder approval follows the external Web-chat review).
+Only the weld: on the founder's approval, ship's bookkeeping commit
+(this file moves to history/, slug-keyed, no
+[ROADMAP](../ROADMAP.md) tick) and the squash-merge.
 
 ## The story
 Born minutes after phase 4
-([home-encyclopedia](../history/home-encyclopedia.md)) merged, from
-the same ops thread that shipped the
-[recut](../history/foundation-roadmap-recut.md) and the
-[engine swap](../history/engine-swap.md). Two of the sweep's items
-close loops this very cockpit opened today: the stale-refs prune
-gotcha logged in [IDEAS](../IDEAS.md) this morning, and the
-line-ending phantoms that dogged the phase-4 merges.
+([home-encyclopedia](../history/home-encyclopedia.md)) merged; two
+of its items closed loops this same cockpit opened in the morning —
+the stale-refs prune gotcha and the line-ending phantom watch.
+
+**④, settled.** `git ls-files --eol` showed the index fully
+normalized (`i/lf` on every docs file — the
+[#57](../history/hygiene-retro-weave.md) normalization held); a
+fresh `file://` clone of this branch came up with a clean
+`git status` and a uniform `w/crlf` tree; and
+`git add --renormalize .` staged exactly zero files. Verdict: the
+phantoms never lived in the repository — they are live-tree stat
+artifacts on a machine where two writers disagree (Claude's Write
+tool emits LF while git's smudge produces CRLF under
+autocrlf=true), surfacing as empty-diff "modified" entries after
+index-rewriting operations and cleared by any refresh. Watch
+closed: no eol pins, no renormalize commit — either would change
+nothing in the repo.
+
+**③, recorded.** One clean gather per the new pickup step 3
+(`git fetch --prune` → `git branch -r` → `gh pr list` → the three
+briefing reads): **771 ms** wall time. Verdict: nowhere near the
+~30 s threshold; nothing to tune, no IDEAS line warranted.
+
+**⑤, unit-tested** (live in-session test impossible by design — the
+hook config loads at session start). In a temp repo with the hook
+copied in: flag present → stderr
+`Closed at handoff #99 · 2026-07-11 · home PC — this session is
+closed. Open a fresh `claude` to continue.` and exit 2 (blocked);
+flag removed → silent exit 0. The flag file is gitignored; the
+session-start hook deletes it before anything else, so new sessions
+are always live.
+
+Decisions a future reader should know:
+- **The ② grep gate vs the ② HOME instruction**: the brief asked
+  HOME §Equipment to state the retirement AND asked that "dataview"
+  match only history/ bodies. Resolved word-free: HOME says the one
+  table-rendering plugin is retired without naming it — history/
+  keeps the name. The board's Threads parenthetical and the
+  Needs-you item (whose reason was the plugin install) were
+  reworded for the same gate; this task's own memory says the word
+  legitimately and lands in history/ at the weld.
+- **[PROJECT-POLICY](../PROJECT-POLICY.md) rode along** with ⑥'s
+  LAWS truth-up (the brief named only LAWS + the pickup stub): its
+  Conventions bullet mirrored the stale three-writer list, and
+  leaving it would have kept two truths — the retroactivity law
+  says repair on sight.
+- **Gate false-positives worth remembering**: case-insensitive
+  "HANDOFF" matches the living `--- DESIGN HANDOFF ---` exit
+  protocol in [DESIGN-KICKOFF](../DESIGN-KICKOFF.md) — the retired
+  artifact is `HANDOFF.md`, so the gate greps the filename;
+  `docs/.obsidian/workspace.json` (gitignored Obsidian state) also
+  matches retired words and sits outside the corpus.
+- **Dead end**: the first orphan-scan attempt inlined node code in
+  a shell string; quoting mangled a regex and every file reported
+  zero references. Rerun as a script file: 65 docs files, zero
+  orphans. Same lesson as phase 4's CRLF checker bug — verification
+  tooling gets written to files, not shell one-liners.
+- **Glyph sweep**: zero old-grammar glyphs (✅🔨⬜🔒) in live docs —
+  nothing to convert.
 
 ## Where to look
-The draft PR (contract + steps) · [IDEAS](../IDEAS.md) (the prune
-line this task resolves) ·
-[home-encyclopedia](../history/home-encyclopedia.md) (the CRLF
-gotcha + checker story) · `.claude/hooks/` (the two existing hooks
-the new one must match in style).
+[PR #78](https://github.com/wsher0901/roam/pull/78) (contract,
+summary, Deviations) · `.claude/hooks/user-prompt-submit.mjs` (the
+close-lock) · `scripts/check-links.mjs` + `.github/workflows/ci.yml`
+(the promoted gate) · [DASHBOARD §Shipped](../DASHBOARD.md) (the
+static table) · the ops Web chat (the external review that gates
+the merge).
