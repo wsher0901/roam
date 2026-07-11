@@ -44,7 +44,7 @@ down and talking — never by content here.
 | What's the contract of a task? | its spec in [docs/specs/](specs/README.md) |
 | What's the story of a task in flight? | its memory file in [docs/memory/](memory/README.md), living on the task's branch |
 | What's the story of a shipped task? | its file in [docs/history/](history/README.md) |
-| What has shipped? | [DASHBOARD §Shipped](DASHBOARD.md#shipped), derived from [history/](history/README.md) |
+| What has shipped? | [DASHBOARD §Shipped](DASHBOARD.md#shipped-latest--full-record-history), derived from [history/](history/README.md) |
 | How do I read the data files? | [§Reading the data files](#reading-the-data-files) |
 | I'm sitting at a new or second machine | [machine-setup](skills/machine-setup.md) |
 | How do I start a Design session? | [DESIGN-KICKOFF.md](DESIGN-KICKOFF.md) |
@@ -529,9 +529,10 @@ graph. **[In flight](DASHBOARD.md#in-flight)** shows every open
 task with its PR and memory pointers. **[Threads
 (non-task)](DASHBOARD.md#threads-non-task)** carries the founder's
 open Web/Design threads — the one section fed by the never-skipped
-question rather than by git. **[Shipped](DASHBOARD.md#shipped)**
-derives from [history/](history/README.md) frontmatter (rendered
-by Dataview in Obsidian; on GitHub, browse history/ directly).
+question rather than by git. **[Shipped](DASHBOARD.md#shipped-latest--full-record-history)** is
+a static table of the ~10 newest [history/](history/README.md)
+entries, re-derived from frontmatter at every repaint; the full
+record is the directory itself.
 
 ### Skills
 
@@ -1008,10 +1009,10 @@ stubs ([CLAUDE.md](../CLAUDE.md), [AGENTS.md](../AGENTS.md),
 [README](../README.md) — import shims and public front door), and
 all code. docs/.obsidian/ (the app's workspace state) stays
 gitignored. In Obsidian the founder READS; the one write surface is
-quick capture into [IDEAS](IDEAS.md). The board's Shipped table
-renders via the Dataview community plugin — a dependency slated for
-retirement in a later ops phase; until then,
-[machine-setup](skills/machine-setup.md) covers installing it.
+quick capture into [IDEAS](IDEAS.md). The board's Shipped table is
+static markdown re-derived at every repaint — no Obsidian community
+plugin is needed anywhere; the one table-rendering plugin the board
+once leaned on is retired.
 
 ## Roadmap manual
 

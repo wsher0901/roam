@@ -32,8 +32,10 @@ Regenerate wholesale from sources — ROADMAP checkboxes, every active
 branch's memory + PR state, history/ frontmatter. Sections: Needs
 you · You are here (bars) · Stage map · Cloud (if anything
 dispatched) · In flight · Threads (non-task, from the founder's
-paste) · Shipped (derived). Counts computed at render time, never
-carried. Header stamps date · ritual · seat.
+paste) · Shipped — a static table of the ~10 newest history/
+entries, re-derived from frontmatter at every repaint. Counts
+computed at render time, never carried. Header stamps date · ritual
+· seat.
 
 ## 5 · Ship the note
 Branch chore/handoff-<date> from main, commit ONLY DASHBOARD.md
