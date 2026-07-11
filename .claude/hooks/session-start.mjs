@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// SessionStart hook: sync main + inject the handoff note into context.
+// SessionStart hook: sync main + inject the dashboard into context.
 // Cross-platform (Windows, macOS, Linux, cloud). Must NEVER block or
 // fail a session: every step degrades gracefully and we always exit 0.
 import { execSync } from "node:child_process";
@@ -43,13 +43,13 @@ if (branch === "main" && !dirty) {
   );
 }
 
-// Inject the founder's handoff note (intent layer).
-const handoff = join(root, "docs", "HANDOFF.md");
-if (existsSync(handoff)) {
-  console.log("\n===== docs/HANDOFF.md =====");
-  console.log(readFileSync(handoff, "utf8"));
+// Inject the dashboard (the state surface).
+const dashboard = join(root, "docs", "DASHBOARD.md");
+if (existsSync(dashboard)) {
+  console.log("\n===== docs/DASHBOARD.md =====");
+  console.log(readFileSync(dashboard, "utf8"));
 } else {
-  console.log("[hook] docs/HANDOFF.md not found.");
+  console.log("[hook] docs/DASHBOARD.md not found.");
 }
 
 // Briefing directive for the session that just started.
