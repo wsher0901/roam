@@ -112,16 +112,16 @@ Grade scale is provisional until ratified in
 ## 6. Preferences are defaults, not blinders
 - Honor the stated preference, and surface a significantly better
   alternative when one exists (airports, dates, areas).
-  (canonical here — moved from FOUNDATION by
+  (canonical here — moved from [FOUNDATION](FOUNDATION.md) by
   [D-021](DECISIONS.md#d-021--2026-07--plan-synthesis-principles-re-home-to-decision-policy))
 - Proactive shifts: when moving a departure day or the whole window
   measurably improves the trip, say so — date flexibility is an
   engine lever.
-  (canonical here — moved from FOUNDATION by
+  (canonical here — moved from [FOUNDATION](FOUNDATION.md) by
   [D-021](DECISIONS.md#d-021--2026-07--plan-synthesis-principles-re-home-to-decision-policy))
 - Near-peer alternatives: in shortlist mode, score the list and also
   surface off-list options of equal merit.
-  (canonical here — moved from FOUNDATION by
+  (canonical here — moved from [FOUNDATION](FOUNDATION.md) by
   [D-021](DECISIONS.md#d-021--2026-07--plan-synthesis-principles-re-home-to-decision-policy))
 - Explanation duty: every ranking and every edit verdict carries its
   reasons.
@@ -129,7 +129,7 @@ Grade scale is provisional until ratified in
 - Accepted trade-offs lock: once the traveler accepts a trade-off it
   is pinned and not re-litigated; pinned items carry acceptance
   provenance.
-  (canonical here — moved from FOUNDATION by
+  (canonical here — moved from [FOUNDATION](FOUNDATION.md) by
   [D-021](DECISIONS.md#d-021--2026-07--plan-synthesis-principles-re-home-to-decision-policy);
   [FACTS Appendix B](data/FACTS.md#appendix-b--plan-parameters-t7-must-schema-not-world-facts))
 
@@ -137,11 +137,11 @@ Grade scale is provisional until ratified in
 - Feasibility outranks desire: an infeasible must-do is declined with
   an alternative (often a different window); a feasible trade-off is
   presented with pros and cons.
-  (canonical here — moved from FOUNDATION by
+  (canonical here — moved from [FOUNDATION](FOUNDATION.md) by
   [D-021](DECISIONS.md#d-021--2026-07--plan-synthesis-principles-re-home-to-decision-policy))
 - Constraint priority = category × intensity: severe jet-lag outranks
   mild rain; intensity is data, not vibes.
-  (canonical here — moved from FOUNDATION by
+  (canonical here — moved from [FOUNDATION](FOUNDATION.md) by
   [D-021](DECISIONS.md#d-021--2026-07--plan-synthesis-principles-re-home-to-decision-policy))
 - The traveler's ranked trade-off priority
   ([TP-30](data/FACTS.md#appendix-a--traveler-parameters-tp-0147--per-d-011--d-012):
@@ -151,23 +151,23 @@ Grade scale is provisional until ratified in
 - Staged synthesis: a cheap coarse pass first; killer constraints
   (departure bounds, trip length, budget) are confirmed before any
   expensive search.
-  (canonical here — moved from FOUNDATION by
+  (canonical here — moved from [FOUNDATION](FOUNDATION.md) by
   [D-021](DECISIONS.md#d-021--2026-07--plan-synthesis-principles-re-home-to-decision-policy))
 - Composition-aware matching: party makeup (ages, type) reshapes
   venue choice and defaults — fewer stops, gentler pace — without
   being asked.
-  (canonical here — moved from FOUNDATION by
+  (canonical here — moved from [FOUNDATION](FOUNDATION.md) by
   [D-021](DECISIONS.md#d-021--2026-07--plan-synthesis-principles-re-home-to-decision-policy))
 - Condition-aware placement: never schedule an exposed activity into
   the hottest or most hostile hour without reason; daylight, heat,
   UV, and crowds steer time-of-day.
-  (canonical here — moved from FOUNDATION by
+  (canonical here — moved from [FOUNDATION](FOUNDATION.md) by
   [D-021](DECISIONS.md#d-021--2026-07--plan-synthesis-principles-re-home-to-decision-policy))
 
 ## 8. Warn, don't block — and the refusal rung
 - Outside hard feasibility, the engine warns and lets the traveler
   decide.
-  (canonical here — moved from FOUNDATION by
+  (canonical here — moved from [FOUNDATION](FOUNDATION.md) by
   [D-021](DECISIONS.md#d-021--2026-07--plan-synthesis-principles-re-home-to-decision-policy))
 - The refusal rung: where nothing verifiable exists and no honest
   label helps, the engine says "can't verify here" rather than
@@ -181,7 +181,7 @@ Grade scale is provisional until ratified in
   when an activity demands them); dietary handling filters options
   but never guarantees safety — travelers verify allergens with
   venues.
-  (canonical here — moved from FOUNDATION by
+  (canonical here — moved from [FOUNDATION](FOUNDATION.md) by
   [D-021](DECISIONS.md#d-021--2026-07--plan-synthesis-principles-re-home-to-decision-policy))
 - Never a silent squeeze-in: every edit re-validates the WHOLE plan
   and explains what the change knocks over.
