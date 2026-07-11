@@ -48,8 +48,9 @@ founder.
   link once previews exist) → ask. On approval: the atomic weld, then
   squash-merge, delete branch, pull main. (ship does this.) Sole
   exception: the micro-PR — touches ONLY [DASHBOARD.md](DASHBOARD.md)
-  and/or [IDEAS.md](IDEAS.md), written by handoff/liftoff/ship —
-  merges immediately without asking
+  and/or [IDEAS.md](IDEAS.md), written by a ritual (handoff · liftoff
+  · ship's tail · pickup's stale-repaint) — merges immediately
+  without asking
   ([D-002](DECISIONS.md#d-002--2026-06--handoff-note-merge-policy) as
   amended by
   [D-023](DECISIONS.md#d-023--2026-07--universal-draft-pr-at-birth--micro-pr-carve-out-recut-amends-d-002-d-008-d-020)).

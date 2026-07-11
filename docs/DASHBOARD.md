@@ -13,7 +13,7 @@ hand-edited; git outranks this board.
 ## Needs you
 
 1. 🟡 Run the [machine-setup](skills/machine-setup.md) Verify block
-   on each PC — Dataview install unconfirmed on both seats.
+   on each PC — a full pass is unconfirmed on both seats.
 2. ⚪ [DECISION-POLICY §10](DECISION-POLICY.md#10-open-questions) —
    five open engine questions; parked until
    [V1.S3](ROADMAP.md#v1s3--engine-core--two-families-deep) opens.
@@ -72,20 +72,21 @@ then stating the lane.
 ([history](history/foundation-roadmap-recut.md)), phase 3, the
 engine swap ([history](history/engine-swap.md)), and phase 4, the
 HOME encyclopedia ([history](history/home-encyclopedia.md)), are
-shipped; later phases (5+ — closed-session lock, Dataview
-retirement) still to come from the chat.
+shipped; later phases (5+) still to come from the chat.
 ⚪ Setup ladder P8 (Web chat) — the T3–T6 relaunch briefs; held
 behind the ops thread.
 
-## Shipped
+## Shipped (latest — full record: [history/](history/README.md))
 
-```dataview
-TABLE WITHOUT ID file.link AS Shipped, shipped AS Date, pr AS PR
-FROM "history"
-WHERE type = "history"
-SORT shipped DESC
-```
-
-This table renders in Obsidian (Dataview); on GitHub, browse
-[history/](history/) — one narrative file per shipped task, newest
-by frontmatter date.
+| When | What | PR |
+|---|---|---|
+| 2026-07-11 | [HOME v3 — the manual & encyclopedia](history/home-encyclopedia.md) | [#76](https://github.com/wsher0901/roam/pull/76) |
+| 2026-07-11 | [The engine swap: architecture v2](history/engine-swap.md) | [#71](https://github.com/wsher0901/roam/pull/71) |
+| 2026-07-10 | [Version ladder + lifespan split](history/foundation-roadmap-recut.md) | [#69](https://github.com/wsher0901/roam/pull/69) |
+| 2026-07-10 | [Machine-setup skill](history/machine-setup-skill.md) | [#66](https://github.com/wsher0901/roam/pull/66) |
+| 2026-07-10 | [Design kickoff rule-carrier](history/design-kickoff.md) | [#64](https://github.com/wsher0901/roam/pull/64) |
+| 2026-07-10 | [Live ritual counts, quiet ship-tail](history/ritual-live-counts.md) | [#62](https://github.com/wsher0901/roam/pull/62) |
+| 2026-07-10 | [Stage-map dashboard](history/stage-map-dashboard.md) | [#60](https://github.com/wsher0901/roam/pull/60) |
+| 2026-07-09 | [The knowledge layer](history/knowledge-layer.md) | [#58](https://github.com/wsher0901/roam/pull/58) |
+| 2026-07-09 | [Hygiene: line endings + retro-weave](history/hygiene-retro-weave.md) | [#57](https://github.com/wsher0901/roam/pull/57) |
+| 2026-07-09 | [Ritual engine v2; the shiplog is born](history/ritual-engine-v2.md) | [#56](https://github.com/wsher0901/roam/pull/56) |

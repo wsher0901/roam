@@ -25,7 +25,8 @@ now, pull, and report it in the briefing header.
 
 ## 3 · Gather (git outranks the board)
 Read [ROADMAP](../ROADMAP.md) · [DASHBOARD](../DASHBOARD.md) · every
-active branch's memory/<id>.md · live git (`git branch -r`,
+active branch's memory/<id>.md · live git (`git fetch --prune`
+first — stale remote-tracking refs lie — then `git branch -r`,
 `gh pr list --state open` including drafts). Where the board and git
 disagree, git wins — say so plainly.
 

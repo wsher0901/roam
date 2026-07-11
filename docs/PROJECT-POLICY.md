@@ -51,9 +51,9 @@ consolidating are NOT resolved here — they live in
   [HOME §Roadmap manual](HOME.md#roadmap-manual))
 - Micro-PR carve-out: a PR touching ONLY
   [DASHBOARD.md](DASHBOARD.md) and/or [IDEAS.md](IDEAS.md) — written
-  by handoff, liftoff, or ship's tail — squash-merges immediately
-  without approval; every other merge waits for the founder's
-  explicit yes.
+  by a ritual (handoff · liftoff · ship's tail · pickup's
+  stale-repaint) — squash-merges immediately without approval; every
+  other merge waits for the founder's explicit yes.
   ([D-002](DECISIONS.md#d-002--2026-06--handoff-note-merge-policy) as
   amended by
   [D-023](DECISIONS.md#d-023--2026-07--universal-draft-pr-at-birth--micro-pr-carve-out-recut-amends-d-002-d-008-d-020))

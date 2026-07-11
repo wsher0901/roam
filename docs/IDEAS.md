@@ -5,7 +5,7 @@ status: living
 ---
 # Ideas Inbox
 Unsorted ideas land here. Nothing in this file is scope until it is
-triaged during a roadmap review and promoted to [ROADMAP](ROADMAP.md) or a GitHub issue.
+triaged into [ROADMAP](ROADMAP.md) via decide.
 
 - 2026-06-11 (Claude Code, after [V1.S2.T2](ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)): add `paths-ignore:
   docs/**` to the CI workflow so docs-only PRs (e.g. handoff
@@ -23,9 +23,3 @@ triaged during a roadmap review and promoted to [ROADMAP](ROADMAP.md) or a GitHu
   calibration pairs, coverage maps) as a licensable product someday;
   stays possible only because of the license-segmented storage law
   ([D-015](DECISIONS.md#d-015--2026-06--data-asset-law-bitemporal-append-only-license-segmented)).
-- 2026-07-11 (Claude Code, pickup): ritual gathering can read stale
-  remote-tracking refs — the "already-merged branches on origin"
-  Needs-you item was phantom; GitHub had auto-deleted them at merge
-  and no ritual ever pruned. Fix: add `git fetch --prune` to the
-  session-start hook and/or the [pickup](skills/pickup.md) gather
-  step so `git branch -r` reflects origin truth.

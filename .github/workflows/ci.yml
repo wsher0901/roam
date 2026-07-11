@@ -17,5 +17,6 @@ jobs:
       - run: npm ci
       - run: npm run lint
       - run: npm run format:check
+      - run: npm run check:links
       - run: npm test
       - run: npm run build

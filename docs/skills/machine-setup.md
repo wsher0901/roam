@@ -30,9 +30,8 @@ status: living
 3. claude update — the workflow assumes a current CLI (hooks,
    background agents, Agent Teams).
 4. gh auth status → gh auth login if needed.
-5. Obsidian: open the vault at <clone>\docs; install + enable the
-   Dataview community plugin ([DASHBOARD](../DASHBOARD.md)'s Shipped
-   table needs it; Bases is core, no install).
+5. Obsidian: open the vault at <clone>\docs (no community plugins
+   required).
 6. VS Code: Settings Sync ON (personal GitHub), Auto Save, word wrap.
 7. Optional but recommended: npx ccstatusline@latest — persistent
    status bar (model, branch/worktree, context %, weekly usage).
@@ -49,8 +48,6 @@ status: living
 - git config roam.machine → returns this seat's label
 - From the repo root: node .claude/hooks/session-start.mjs → prints
   the sync line + [DASHBOARD](../DASHBOARD.md) contents
-- Obsidian: [DASHBOARD](../DASHBOARD.md)'s Shipped table renders
-  (Dataview active)
 
 ## Every sitting
 
