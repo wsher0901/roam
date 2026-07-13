@@ -42,28 +42,35 @@ status: living
 
 ## Vault lens
 
-Per machine, ~2 min, optional but recommended. The vault's
-structure is flat-core + five semantic folders by design; these
-Obsidian-side settings make the graph and daily entry match that
-design. .obsidian/ is gitignored (machine-local), so this recipe is
-applied by hand on each seat:
+Per machine, once — say "apply the vault lens" in any cockpit
+session. The procedure that phrase runs:
+1. Ensure docs/.obsidian/ exists (create it if missing — Obsidian
+   adopts it on next launch).
+2. Copy .claude/vault-seed/graph.json and
+   .claude/vault-seed/bookmarks.json into docs/.obsidian/,
+   overwriting those two files ONLY — nothing else in .obsidian/ is
+   touched.
+3. Remove the retired Dataview plugin if present: delete
+   docs/.obsidian/plugins/dataview/ and its entry in
+   docs/.obsidian/community-plugins.json.
+4. Confirm to the founder: "vault lens applied — restart Obsidian
+   to load it."
 
-1. Graph view → Groups — add, in this order (later groups win):
-   - `path:history` → gray
-   - `path:data` → blue
-   - `path:skills` → green
-   - `path:memory OR path:specs` → yellow
+The lens itself: color groups — history gray · data blue · skills
+green · memory+specs yellow · everything ungrouped (the core docs)
+keeps the accent color; default graph filter `-path:history` (clear
+it in Graph view whenever you want the archive visible); Bookmarks —
+[DASHBOARD](../DASHBOARD.md) · [HOME](../HOME.md) ·
+[ROADMAP](../ROADMAP.md) · [LAWS](../LAWS.md), the front door on
+every seat.
 
-   (everything ungrouped — the core docs — keeps the accent color)
-2. Graph view → Filters — for working sessions, use
-   `-path:history` to hide the archive; clear it when you want the
-   full record visible.
-3. Bookmarks (core plugin, no install): bookmark, in order,
-   [DASHBOARD](../DASHBOARD.md) · [HOME](../HOME.md) ·
-   [ROADMAP](../ROADMAP.md) · [LAWS](../LAWS.md) — the vault's
-   front door on every seat.
+Known behavior, harmless: Obsidian on Windows may realign markdown
+tables and leave zero-content CRLF working-tree changes; git
+normalizes them at commit and they never enter history.
 
-Nothing here changes the repo; deleting .obsidian resets it all.
+Live docs/.obsidian/ stays gitignored; the seed travels in
+`.claude/vault-seed/`, so every machine — including a future third —
+gets the same lens from origin.
 
 ## Verify (after setup, or whenever one machine misbehaves)
 
@@ -73,7 +80,7 @@ Nothing here changes the repo; deleting .obsidian resets it all.
 - git config roam.machine → returns this seat's label
 - From the repo root: node .claude/hooks/session-start.mjs → prints
   the sync line + [DASHBOARD](../DASHBOARD.md) contents
-- Vault lens applied (groups + bookmarks) — optional, note yes/no
+- Vault lens applied (if not: say "apply the vault lens")
 
 ## Every sitting
 
