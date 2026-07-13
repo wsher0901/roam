@@ -131,11 +131,16 @@ Portraits of the load-bearing ones — what each is FOR, and what
 would break without it:
 
 **[FOUNDATION](FOUNDATION.md)** is the product's identity: what Roam
-is, the spine, the five families, the reliability law, the
+is, the spine, what Roam checks, the reliability law, the
 principles — only sentences that stay true across versions. It is
 the yardstick every PR and every lane review is judged against.
 Without it, "is this Roam?" would be re-litigated in every
-conversation, and scope would drift with whoever spoke last.
+conversation, and scope would drift with whoever spoke last. It is
+read at judgment moments — [ship](skills/ship.md)'s PR pre-review,
+lane pre-review, [decide](skills/decide.md)'s ripple scan,
+[equipment vetting](skills/equipment-plan.md), the
+[Design kickoff](DESIGN-KICKOFF.md)'s identity line — and reaches
+the engine through [DECISION-POLICY](DECISION-POLICY.md)'s seeding.
 
 **[ROADMAP](ROADMAP.md)** is the build order made falsifiable:
 versions with testable done-whens, stages with done-criteria, tasks
@@ -776,9 +781,9 @@ the link for the full story.
   invents facts
   ([D-005](DECISIONS.md#d-005--2026-06--stack-re-trial-vs-foundation-v1-d-001-upheld--frontend-layer)).
 - **check module** — one pluggable condition checker per fact
-  family; a new idea is a new module, never a rewrite. Home:
-  [FOUNDATION §What Roam
-  checks](FOUNDATION.md#what-roam-checks--the-five-families).
+  family; adding one never rewrites what exists — it adds a module,
+  and every new check re-tunes the rankings by design. Home:
+  [FOUNDATION §What Roam checks](FOUNDATION.md#what-roam-checks).
 - **reliability law** — never fabricate: every fact is checked,
   every claim carries source + confidence, anything unverifiable
   renders labeled unverified. Home:

@@ -54,7 +54,7 @@ Grade scale is provisional until ratified in
   ([SOURCES.md §activity-profiles](data/SOURCES.md#activity-profiles))
 - Forecast vs climatology: real forecast when the trip is near,
   climatology when it is far — and the plan says which it used.
-  ([FOUNDATION §What Roam checks](FOUNDATION.md#what-roam-checks--the-five-families);
+  ([FOUNDATION §What Roam checks](FOUNDATION.md#what-roam-checks);
   [F-WX-11](data/FACTS.md#f-wx-11--climate-normals-by-date-of-year))
 - [TP-42](data/FACTS.md#appendix-a--traveler-parameters-tp-0147--per-d-011--d-012)
   (verified-only strictness: labeled | strict, default labeled)
@@ -94,9 +94,12 @@ Grade scale is provisional until ratified in
 - Every stored traveler field carries provenance
   {stated | inferred | default} plus updated_at.
   ([D-012](DECISIONS.md#d-012--2026-06--elicitation--inference-policy-ask-tiers-provenance-upsert))
-- Supersede order on upsert: stated > inferred > default; newer >
-  older.
-  ([D-012](DECISIONS.md#d-012--2026-06--elicitation--inference-policy-ask-tiers-provenance-upsert))
+- Supersede order on upsert: stated > inferred (own) > cohort prior >
+  default; newer > older — the traveler's own signal always outranks
+  category patterns.
+  ([D-012](DECISIONS.md#d-012--2026-06--elicitation--inference-policy-ask-tiers-provenance-upsert),
+  extended by
+  [D-025](DECISIONS.md#d-025--2026-07--foundation-v4--principles-recut-open-family-set-lifespan-repair-extends-d-012-upholds-d-021d-022))
 - A stated-only class is never inferred: nationality, special
   conditions, accessibility, allergy details.
   ([D-012](DECISIONS.md#d-012--2026-06--elicitation--inference-policy-ask-tiers-provenance-upsert);
@@ -108,6 +111,10 @@ Grade scale is provisional until ratified in
 - Traveler-vocabulary extension is append-only: a new field is one
   nullable column plus a D-number.
   ([D-011](DECISIONS.md#d-011--2026-06--traveler-input-vocabulary-rich-nullable-tiered-append-only))
+- Cohort priors are learned patterns of similar travelers, never
+  demographic pigeonholes; layer activation is version scope
+  ([ROADMAP](ROADMAP.md)) — cohort learning is not V1.
+  ([D-025](DECISIONS.md#d-025--2026-07--foundation-v4--principles-recut-open-family-set-lifespan-repair-extends-d-012-upholds-d-021d-022))
 
 ## 6. Preferences are defaults, not blinders
 - Honor the stated preference, and surface a significantly better
