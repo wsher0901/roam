@@ -47,15 +47,15 @@ gitignored live `docs/.obsidian/` on demand.
    merge; founder approval follows external review.
 
 ## Done means
-- [ ] Both seed JSONs parse and match Obsidian's schema
-- [ ] [machine-setup §Vault lens](../skills/machine-setup.md#vault-lens)
+- [x] Both seed JSONs parse and match Obsidian's schema
+- [x] [machine-setup §Vault lens](../skills/machine-setup.md#vault-lens)
       is the new procedure
-- [ ] The stub fires on "apply the vault lens"
-- [ ] `node scripts/check-links.mjs` passes
-- [ ] Lint + tests green
+- [x] The stub fires on "apply the vault lens"
+- [x] `node scripts/check-links.mjs` passes
+- [x] Lint + tests green
 
 ## Deviations
-<filled by ship — or "none">
+none
 
 ## Open questions
 none
