@@ -5,7 +5,7 @@ status: living
 ---
 # Dashboard — the state surface
 
-Stamp: 2026-07-13 · ship tail · work PC
+Stamp: 2026-07-13 · handoff · work PC
 Glyphs: 🟢 done · 🟡 ongoing · 🔴 issue · ⚪ idle. Repainted only by
 rituals (pickup when stale · handoff · liftoff · ship's tail) — never
 hand-edited; git outranks this board.
@@ -81,10 +81,15 @@ then stating the lane.
 
 ## Threads (non-task)
 
-none open — founder reported none at the 2026-07-13 handoff. The
-four workshop briefs cut earlier in the Web chat all shipped today
-(see Shipped). The T3–T6 relaunch briefs (ladder step P8) remain
-the queued Web-chat work — tracked as the S1 hold in You-are-here.
+none open — founder confirmed at the 2026-07-13 work-PC handoff
+(the evening sitting: four more workshop briefs shipped, see
+Shipped). Queued Web-chat work, in order:
+- the Fleet Continuity brief (handoff · liftoff · parallel-lanes ·
+  LAWS) — the ops leg's next task, file-disjoint from the shipped
+  stale-branch-hygiene by design;
+- the T3–T6 relaunch briefs (ladder step P8) — tracked as the S1
+  hold in You-are-here;
+- the v4 WEB-INSTRUCTIONS paste — Needs-you 1.
 
 ## Shipped (latest — full record: [history/](history/README.md))
 
