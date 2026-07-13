@@ -87,6 +87,7 @@ the queued Web-chat work — tracked as the S1 hold in You-are-here.
 
 | When | What | PR |
 |---|---|---|
+| 2026-07-13 | [DESIGN-KICKOFF refresh: June-2026 Claude Design capabilities](history/design-kickoff-refresh.md) | [#97](https://github.com/wsher0901/roam/pull/97) |
 | 2026-07-13 | [Consolidation recut: DECISION-POLICY becomes ENGINE; PROJECT-POLICY to house style](history/engine-recut.md) | [#95](https://github.com/wsher0901/roam/pull/95) |
 | 2026-07-13 | [Vault-lens seed: Obsidian config travels through git](history/vault-lens-seed.md) | [#91](https://github.com/wsher0901/roam/pull/91) |
 | 2026-07-13 | [LAWS polish: glossed lane law, provenance to consolidations, ship syncs with main](history/laws-polish.md) | [#89](https://github.com/wsher0901/roam/pull/89) |
@@ -96,4 +97,3 @@ the queued Web-chat work — tracked as the S1 hold in You-are-here.
 | 2026-07-11 | [Web instructions: the rule-carrier](history/web-instructions.md) | [#80](https://github.com/wsher0901/roam/pull/80) |
 | 2026-07-11 | [Phase 5 — the sweep: hardening + hygiene](history/phase5-sweep.md) | [#78](https://github.com/wsher0901/roam/pull/78) |
 | 2026-07-11 | [HOME v3 — the manual & encyclopedia](history/home-encyclopedia.md) | [#76](https://github.com/wsher0901/roam/pull/76) |
-| 2026-07-11 | [The engine swap: architecture v2](history/engine-swap.md) | [#71](https://github.com/wsher0901/roam/pull/71) |
