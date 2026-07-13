@@ -47,12 +47,12 @@ bows out.
    merge; founder approval follows external review.
 
 ## Done means
-- [ ] handoff.md and liftoff.md byte-match their payloads
-- [ ] The four surgical edits (parallel-lanes ×2 · LAWS ×2) and the
+- [x] handoff.md and liftoff.md byte-match their payloads
+- [x] The four surgical edits (parallel-lanes ×2 · LAWS ×2) and the
       two parallel-lanes insertions landed verbatim
-- [ ] check-links green
-- [ ] Lint + tests green
-- [ ] git diff --name-only vs main contains neither
+- [x] check-links green (1206 links, 0 broken)
+- [x] Lint + tests green
+- [x] git diff --name-only vs main contains neither
       docs/skills/pickup.md nor .claude/hooks/
 
 ## Open questions

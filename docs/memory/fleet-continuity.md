@@ -1,24 +1,27 @@
 ---
 type: memory
 id: fleet-continuity
-updated: 2026-07-13 · bench birth · home PC
+updated: 2026-07-13 · ship (completion rewrite) · home PC
 ---
 # fleet-continuity — Fleet continuity: handoff parks every local lane; liftoff respawns parked benches; wake-lock parks every outcome
 
 ## Status
-Bench ready — birthed 2026-07-13 by the home PC. The cockpit is
-working this task directly this sitting; no separate worker will be
-spawned.
+Complete, awaiting merge — every Done-means box verified green on
+2026-07-13; PR
+[#104](https://github.com/wsher0901/roam/pull/104) flipped ready.
+By brief, the merge waits for founder approval AFTER external
+review — THE GATE is deliberately not asked-and-answered in the
+working session alone.
 
 ## What this task is
 Make leaving safe for a fleet: [handoff](../skills/handoff.md) FULL
-gains a Park step that rescue-saves and stamps every live local
-lane (handoff means operations halt — the machine may power off);
-[liftoff](../skills/liftoff.md) step 2 learns to respawn parked
-benches on their same branch (adopt — no second birth); the lane
-law gains the wake-lock — a lane waking on a Status it does not own
-(parked · respawned · superseded) bows out, and every lane outcome
-parks until the founder acts. Mechanism: one
+gains a Park step (1.5) that rescue-saves and stamps every live
+local lane (handoff means operations halt — the machine may power
+off); [liftoff](../skills/liftoff.md) step 2 learns to respawn
+parked benches on their same branch (adopt — no second birth); the
+lane law gains the wake-lock — a lane waking on a Status it does
+not own (parked · respawned · superseded) bows out, and every lane
+outcome parks until the founder acts. Mechanism: one
 [decide](../skills/decide.md) entry
 ([D-032](../DECISIONS.md#d-032--2026-07--fleet-continuity--handoff-parks-every-local-lane-liftoff-respawns-parked-benches-wake-lock-parks-every-outcome-extends-the-d-020d-023-lane-law-upholds-d-009))
 whose ripple overwrites handoff + liftoff with fixed payloads and
@@ -30,19 +33,33 @@ lands four surgical edits + two insertions across
 none
 
 ## Left / idle
-Everything after birth: the decide commit (payloads + edits), the
-verification suite, ship to THE GATE. The merge itself waits for
-founder approval after external review — by brief.
+Only the weld: founder approval (after external review) → atomic
+bookkeeping commit → squash-merge. Nothing else remains.
 
 ## The story
 Born from the Web-chat ops leg (the Fleet Continuity brief), queued
-on the board since the 2026-07-13 work-PC handoff. File-disjoint
-from the shipped stale-branch-hygiene PR
-([#101](https://github.com/wsher0901/roam/pull/101)) by design:
-this task must not touch pickup.md or the hooks.
+on the board since the 2026-07-13 work-PC handoff; picked up the
+same day on the home PC. File-disjoint from the shipped
+stale-branch-hygiene PR
+([#101](https://github.com/wsher0901/roam/pull/101)) by design —
+this branch touches neither pickup.md nor the hooks, and the scope
+check proves it. The work itself was a faithful transcription job:
+both payloads landed byte-exact (verified by diff against
+independently re-transcribed reference copies), and all six line
+edits (two surgical in parallel-lanes, two insertions there, two
+surgical in LAWS) landed verbatim with the brief's own
+line-wrapping preserved. One subtlety worth remembering: the
+brief's expected grep count for "parked · respawned · superseded"
+is 3 across LAWS + parallel-lanes because the LAWS copy wraps the
+phrase across two lines by design — its 0 is correct, not a miss.
+No deviations from the brief anywhere.
 
 ## Where to look
-Spec: [fleet-continuity](../specs/fleet-continuity.md) · payloads
-live verbatim in the founder's brief (mirrored by the spec's plan
-and the PR description) · decision:
-[D-032](../DECISIONS.md#d-032--2026-07--fleet-continuity--handoff-parks-every-local-lane-liftoff-respawns-parked-benches-wake-lock-parks-every-outcome-extends-the-d-020d-023-lane-law-upholds-d-009).
+Spec: [fleet-continuity](../specs/fleet-continuity.md) · decision:
+[D-032](../DECISIONS.md#d-032--2026-07--fleet-continuity--handoff-parks-every-local-lane-liftoff-respawns-parked-benches-wake-lock-parks-every-outcome-extends-the-d-020d-023-lane-law-upholds-d-009)
+· PR [#104](https://github.com/wsher0901/roam/pull/104) (the brief
+lives verbatim in the founder's kickoff message; the PR description
+mirrors its plan) · targets: [handoff](../skills/handoff.md) ·
+[liftoff](../skills/liftoff.md) ·
+[parallel-lanes](../skills/parallel-lanes.md) ·
+[LAWS §Parallel lanes & cloud](../LAWS.md#parallel-lanes--cloud).
