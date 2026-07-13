@@ -5,7 +5,7 @@ status: living
 ---
 # Dashboard — the state surface
 
-Stamp: 2026-07-11 · handoff · home PC
+Stamp: 2026-07-12 · ship tail · home PC
 Glyphs: 🟢 done · 🟡 ongoing · 🔴 issue · ⚪ idle. Repainted only by
 rituals (pickup when stale · handoff · liftoff · ship's tail) — never
 hand-edited; git outranks this board.
@@ -86,6 +86,7 @@ now the ops thread is complete.
 
 | When | What | PR |
 |---|---|---|
+| 2026-07-12 | [FOUNDATION v4: principles recut, open family set, lifespan repair](history/foundation-v4.md) | [#85](https://github.com/wsher0901/roam/pull/85) |
 | 2026-07-11 | [Vault lens + clean-tree verdict](history/vault-lens.md) | [#82](https://github.com/wsher0901/roam/pull/82) |
 | 2026-07-11 | [Web instructions: the rule-carrier](history/web-instructions.md) | [#80](https://github.com/wsher0901/roam/pull/80) |
 | 2026-07-11 | [Phase 5 — the sweep: hardening + hygiene](history/phase5-sweep.md) | [#78](https://github.com/wsher0901/roam/pull/78) |
@@ -95,4 +96,3 @@ now the ops thread is complete.
 | 2026-07-10 | [Machine-setup skill](history/machine-setup-skill.md) | [#66](https://github.com/wsher0901/roam/pull/66) |
 | 2026-07-10 | [Design kickoff rule-carrier](history/design-kickoff.md) | [#64](https://github.com/wsher0901/roam/pull/64) |
 | 2026-07-10 | [Live ritual counts, quiet ship-tail](history/ritual-live-counts.md) | [#62](https://github.com/wsher0901/roam/pull/62) |
-| 2026-07-10 | [Stage-map dashboard](history/stage-map-dashboard.md) | [#60](https://github.com/wsher0901/roam/pull/60) |
