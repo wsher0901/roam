@@ -14,8 +14,8 @@ shipped: —
 **Links:**
 [pickup](../skills/pickup.md) ·
 [DASHBOARD](../DASHBOARD.md) ·
-Decisions: the next D-number, computed from the
-[DECISIONS](../DECISIONS.md) tail at execution
+Decisions:
+[D-031](../DECISIONS.md#d-031--2026-07--stale-branch-hygiene--gone-guard-on-the-session-end-net-welded-elsewhere-locals-auto-removed-at-session-start)
 
 ## Goal
 The safety net can never resurrect a welded branch;

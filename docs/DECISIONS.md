@@ -829,3 +829,22 @@ stub (deleted) · PROJECT-POLICY (deleted) ·
 [DESIGN-KICKOFF](DESIGN-KICKOFF.md) ·
 [machine-setup](skills/machine-setup.md) · [LAWS](LAWS.md) ·
 [HOME](HOME.md) · frozen-link retargets · this entry.
+
+## D-031 — 2026-07 — Stale-branch hygiene — gone-guard on the session-end net; welded-elsewhere locals auto-removed at session start
+**Decision:** session-end never pushes a branch whose tracking was
+configured but whose remote is gone; session-start, after its
+prune, force-deletes local branches marked gone — excluding main,
+the current branch, and any branch checked out in another
+worktree — logging each deleted name + tip sha (reflog keeps them
+recoverable ~90 days); pickup reports what the hooks surface and
+gains the dead-worktree check.
+**Why:** the engine-recut zombie — a weld deletes the remote, the
+other seat's local copy survives, its session-end faithfully pushed
+the corpse back; mechanism verified in hook code. The founder chose
+auto-delete over warn-and-skip.
+**Alternatives rejected:** warn-and-skip (clutter + repeat-warn
+fatigue; founder call); pushing the guard into LAWS prose
+(procedure detail — hooks and pickup own it).
+**Affects:** both hooks (`.claude/hooks/session-end.mjs` ·
+`.claude/hooks/session-start.mjs`) · [pickup](skills/pickup.md) ·
+this entry.

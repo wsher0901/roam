@@ -44,6 +44,18 @@ if (sh("git status --porcelain")) {
 }
 
 const hasUpstream = sh("git rev-parse --abbrev-ref @{upstream}");
+// Gone-guard: tracking was configured but the remote branch no
+// longer exists — it was welded elsewhere. Never resurrect it.
+const trackingConfigured = shFile("git", [
+  "config",
+  `branch.${branch}.merge`,
+]);
+if (trackingConfigured && hasUpstream === null) {
+  console.log(
+    `[hook] session end: ${branch} was welded elsewhere (upstream gone) — push skipped.`
+  );
+  process.exit(0);
+}
 const pushed =
   hasUpstream !== null
     ? sh("git push --quiet")

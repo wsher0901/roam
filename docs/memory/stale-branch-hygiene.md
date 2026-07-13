@@ -1,14 +1,15 @@
 ---
 type: memory
 id: stale-branch-hygiene
-updated: 2026-07-13 · bench birth · work PC
+updated: 2026-07-13 · patches landed · work PC
 ---
 # stale-branch-hygiene — Stale-branch hygiene: gone-guard on the safety net; auto-delete welded-elsewhere locals; pickup restyle
 
 ## Status
-Claimed by the cockpit (work PC) — bench birth in progress: branch,
-this stub, and the spec are the first commits; the draft PR opens
-next. Hook patches follow.
+Content work complete on the branch; verification and ship-to-gate
+are next. Both hook patches, the pickup payload, and the
+[D-031](../DECISIONS.md#d-031--2026-07--stale-branch-hygiene--gone-guard-on-the-session-end-net-welded-elsewhere-locals-auto-removed-at-session-start)
+entry landed in one commit.
 
 Sources:
 [spec](../specs/stale-branch-hygiene.md)
@@ -29,7 +30,7 @@ laws.
 none
 
 ## Left / idle
-Everything — birth just happened.
+Verification suite · ship to THE GATE.
 
 ## The story
 Born from a founder-delivered workshop brief (Web chat): both hook
@@ -39,6 +40,26 @@ against the actual hook code before patching: the old session-end
 fall-through (push -u origin <branch>) recreates a pruned-away
 remote branch at its stale tip — exactly what resurrected
 docs/engine-recut.
+
+Execution notes, in order:
+- ONE deviation, load-bearing: the brief's session-start patch
+  calls shFile(), but session-start.mjs only defined sh() — landing
+  the block verbatim alone would have thrown a ReferenceError on
+  every session launch. The shFile helper (execFileSync + argument
+  array, injection-safe) was copied verbatim from session-end.mjs,
+  with its comment, plus the execFileSync import. The patch block
+  itself is byte-exact as briefed.
+- Both hooks pass node --check, and the patched session-start was
+  smoke-run end-to-end on the branch: exit 0, no runtime error,
+  gone-locals loop a clean no-op (the only locals here are main and
+  the current branch — both excluded by construction).
+- The gone-guard's timing was sanity-checked: session-start's every
+  launch prune is what marks upstreams gone, so by any session-end
+  the marker is fresh; the guard closes exactly the observed hole.
+
+## Where to look
+- decision:
+  [D-031](../DECISIONS.md#d-031--2026-07--stale-branch-hygiene--gone-guard-on-the-session-end-net-welded-elsewhere-locals-auto-removed-at-session-start)
 
 ## Where to look
 - spec: [../specs/stale-branch-hygiene.md](../specs/stale-branch-hygiene.md)
