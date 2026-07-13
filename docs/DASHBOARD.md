@@ -90,6 +90,7 @@ the queued Web-chat work — tracked as the S1 hold in You-are-here.
 
 | When | What | PR |
 |---|---|---|
+| 2026-07-13 | [Stale-branch hygiene: gone-guard on the safety net; welded-elsewhere locals auto-removed](history/stale-branch-hygiene.md) | [#101](https://github.com/wsher0901/roam/pull/101) |
 | 2026-07-13 | [Setup consolidation: SETUP.md born; equipment-plan and PROJECT-POLICY retired; the writing laws adopted](history/setup-consolidation.md) | [#99](https://github.com/wsher0901/roam/pull/99) |
 | 2026-07-13 | [DESIGN-KICKOFF refresh: June-2026 Claude Design capabilities](history/design-kickoff-refresh.md) | [#97](https://github.com/wsher0901/roam/pull/97) |
 | 2026-07-13 | [Consolidation recut: DECISION-POLICY becomes ENGINE; PROJECT-POLICY to house style](history/engine-recut.md) | [#95](https://github.com/wsher0901/roam/pull/95) |
@@ -99,4 +100,3 @@ the queued Web-chat work — tracked as the S1 hold in You-are-here.
 | 2026-07-12 | [FOUNDATION v4: principles recut, open family set, lifespan repair](history/foundation-v4.md) | [#85](https://github.com/wsher0901/roam/pull/85) |
 | 2026-07-11 | [Vault lens + clean-tree verdict](history/vault-lens.md) | [#82](https://github.com/wsher0901/roam/pull/82) |
 | 2026-07-11 | [Web instructions: the rule-carrier](history/web-instructions.md) | [#80](https://github.com/wsher0901/roam/pull/80) |
-| 2026-07-11 | [Phase 5 — the sweep: hardening + hygiene](history/phase5-sweep.md) | [#78](https://github.com/wsher0901/roam/pull/78) |
