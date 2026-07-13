@@ -9,7 +9,7 @@ Loaded into every session via the root CLAUDE.md import (`@docs/LAWS.md`).
 Universal laws only. Manuals and explanations: [HOME.md](HOME.md).
 Rationale and sources for every law:
 [PROJECT-POLICY.md](PROJECT-POLICY.md) ·
-[DECISION-POLICY.md](DECISION-POLICY.md) ·
+[ENGINE.md](ENGINE.md) ·
 [DECISIONS.md](DECISIONS.md).
 Procedures: [docs/skills/](skills/). Route new lessons per
 § Self-improvement.
@@ -162,8 +162,8 @@ Mechanics: [parallel-lanes](skills/parallel-lanes.md) ·
   roadmap-level changes → a D-number. Nothing important lives only
   in conversation.
 - Standing choices with rationale: how WE work →
-  [PROJECT-POLICY.md](PROJECT-POLICY.md) · how ROAM'S BRAIN decides →
-  [DECISION-POLICY.md](DECISION-POLICY.md). Every rule lives in
+  [PROJECT-POLICY.md](PROJECT-POLICY.md) · how ROAM'S BRAIN works →
+  [ENGINE.md](ENGINE.md), the engine on paper. Every rule lives in
   exactly one; the other links it.
 - Claude Design is a no-write surface: only extracted values (tokens,
   constants) enter the repo via a paste block — never markup or

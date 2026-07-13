@@ -10,15 +10,17 @@ opened: 2026-07-13
 shipped: —
 ---
 # engine-recut — Consolidation recut: DECISION-POLICY becomes ENGINE (the brain skeleton); PROJECT-POLICY to house style
-**Links:** [LAWS](../LAWS.md) · [HOME](../HOME.md) ·
-[ROADMAP](../ROADMAP.md) · [PROJECT-POLICY](../PROJECT-POLICY.md) ·
-Decisions:
-[D-021](../DECISIONS.md#d-021--2026-07--plan-synthesis-principles-re-home-to-decision-policy)
+**Links:** [ENGINE](../ENGINE.md) ·
+[PROJECT-POLICY](../PROJECT-POLICY.md) · [LAWS](../LAWS.md) ·
+[HOME](../HOME.md) · [ROADMAP](../ROADMAP.md) · Decisions:
+[D-021](../DECISIONS.md#d-021--2026-07--plan-synthesis-principles-re-home-to-decision-policy) ·
+[D-028](../DECISIONS.md#d-028--2026-07--consolidation-recut--decision-policy--engine-brain-skeleton-form-project-policy-house-style-open-register-grows-69-upholds-d-021-extends-the-d-021-consolidation)
 
 ## Goal
 The engine consolidation becomes an operational skeleton — pipeline
 stages, IO, procedures, rules-in-slots, a loud OPEN register — under
-its true name ENGINE.md; [PROJECT-POLICY](../PROJECT-POLICY.md)
+its true name [ENGINE.md](../ENGINE.md);
+[PROJECT-POLICY](../PROJECT-POLICY.md)
 adopts the same house style (gloss + bold handles + per-section
 Sources); full retroactive ripple across the corpus.
 

@@ -490,22 +490,22 @@ ours to fix); pure sequential work (leaves S1's [P] lanes serialized
 now that loss-proof parallelism is native).
 
 ## D-021 — 2026-07 — Plan-synthesis principles re-home to DECISION-POLICY
-**Decision:** [docs/DECISION-POLICY.md](DECISION-POLICY.md) is the
+**Decision:** [docs/DECISION-POLICY](ENGINE.md) is the
 canonical home of the plan-synthesis rules (preferences-as-defaults,
 constraint priority, warn-don't-block, composition- and
 condition-aware placement, staged synthesis, near-peer alternatives,
 proactive shifts, trade-off locking). [FOUNDATION](FOUNDATION.md)
-drops its Plan-synthesis section; [POLICY](DECISION-POLICY.md)'s
+drops its Plan-synthesis section; [POLICY](ENGINE.md)'s
 existing word-for-word mirrors become the originals.
 **Why:** one home per rule — [FOUNDATION](FOUNDATION.md) holds
-identity, [POLICY](DECISION-POLICY.md) holds engine reasoning; the
+identity, [POLICY](ENGINE.md) holds engine reasoning; the
 mirror already existed, so canonicalizing removes a duplication that
 would drift.
 **Alternatives rejected:** [FOUNDATION](FOUNDATION.md) canonical with
-[POLICY](DECISION-POLICY.md) mirroring (two edits per rule change);
+[POLICY](ENGINE.md) mirroring (two edits per rule change);
 duplicating in both (drift).
 **Affects:** [FOUNDATION](FOUNDATION.md) (section removed) ·
-[DECISION-POLICY](DECISION-POLICY.md) §1, §6–§8 ·
+[DECISION-POLICY](ENGINE.md) §1, §6–§8 ·
 [ROADMAP](ROADMAP.md) S3/S5 binding-requirements links · all corpus
 links to the old anchor.
 
@@ -619,7 +619,7 @@ unreadable in Obsidian).
 ## D-025 — 2026-07 — FOUNDATION v4 — principles recut, open family set, lifespan repair (extends D-012; upholds D-021/D-022)
 **Decision:** recut [FOUNDATION](FOUNDATION.md)'s identity for
 honesty and openness, carrying the new cohort layer into
-[DECISION-POLICY §5](DECISION-POLICY.md#5-provenance--supersede-order):
+[DECISION-POLICY §5](ENGINE.md#2-intake--resolve-the-traveler):
 - "What Roam is": Roam STARTS as the pre-trip brain — the boundary
   moves by roadmap decision, never by drift (lifespan is version
   scope in [ROADMAP](ROADMAP.md), per
@@ -637,7 +637,7 @@ honesty and openness, carrying the new cohort layer into
   prior > default, in that order of authority — category patterns
   are priors, never pigeonholes, and demographic stereotypes never
   drive;
-- [DECISION-POLICY §5](DECISION-POLICY.md#5-provenance--supersede-order)
+- [DECISION-POLICY §5](ENGINE.md#2-intake--resolve-the-traveler)
   extends
   [D-012](#d-012--2026-06--elicitation--inference-policy-ask-tiers-provenance-upsert)'s
   supersede order with the cohort layer; activation is version
@@ -645,7 +645,7 @@ honesty and openness, carrying the new cohort layer into
 - [HOME](HOME.md)'s FOUNDATION portrait and check-module term align;
   the renamed anchor (what-roam-checks) is repaired repo-wide. The
   engine-reasoning rules stay consolidated in
-  [DECISION-POLICY](DECISION-POLICY.md), per
+  [DECISION-POLICY](ENGINE.md), per
   [D-021](#d-021--2026-07--plan-synthesis-principles-re-home-to-decision-policy).
 **Why:** the plug-in principle overpromised zero blast radius — the
 structure holds, but rankings re-tune with every added check; the
@@ -664,10 +664,10 @@ traveler supplies") — already false per
 [D-012](#d-012--2026-06--elicitation--inference-policy-ask-tiers-provenance-upsert),
 which infers fields with provenance.
 **Affects:** [FOUNDATION](FOUNDATION.md) ·
-[DECISION-POLICY §5](DECISION-POLICY.md#5-provenance--supersede-order) ·
+[DECISION-POLICY §5](ENGINE.md#2-intake--resolve-the-traveler) ·
 [HOME](HOME.md) (FOUNDATION portrait · check-module term) · corpus
 links to the renamed anchor:
-[DECISION-POLICY §3](DECISION-POLICY.md#3-grade--render-matrix) ·
+[DECISION-POLICY §3](ENGINE.md#7-render--honest-pixels) ·
 [HOME §Terms](HOME.md#terms).
 
 ## D-026 — 2026-07 — ROADMAP recut — plain-language V1, completion criteria, per-family vetting outputs (upholds D-020, D-022)
@@ -712,7 +712,7 @@ this entry.
 relationships and retroactivity, but provenance is the
 consolidations' job, and LAWS' header now names the three rationale
 homes ([PROJECT-POLICY](PROJECT-POLICY.md) ·
-[DECISION-POLICY](DECISION-POLICY.md) · [DECISIONS](DECISIONS.md)).
+[DECISION-POLICY](ENGINE.md) · [DECISIONS](DECISIONS.md)).
 The bench-first bullet and the seven-point lane law carry one-line
 whys; the baton law states what the baton IS.
 [PROJECT-POLICY §Workshop choices](PROJECT-POLICY.md#workshop-choices)
@@ -733,3 +733,36 @@ consolidations already exist for this); rebase instead of merge
 **Affects:** [LAWS](LAWS.md) · [PROJECT-POLICY](PROJECT-POLICY.md) ·
 [ship](skills/ship.md) · [HOME](HOME.md) (ship portrait) · this
 entry.
+
+## D-028 — 2026-07 — Consolidation recut — DECISION-POLICY → ENGINE, brain-skeleton form; PROJECT-POLICY house style; OPEN register grows 6–9 (upholds D-021; extends the D-021 consolidation)
+**Decision:** the engine consolidation is renamed
+[ENGINE.md](ENGINE.md) and reshaped from topic-prose into the
+pipeline form (Intake → Acquire → Judge → Aggregate → Synthesize →
+Render → Gate → Re-validate → Learn + Invariants); undecided
+calculations become numbered OPEN slots in an
+[Open register](ENGINE.md#12-open-register) — filling one requires a
+D-number; four founder-raised gaps join the register (aggregation
+law · fact-drift re-validation · learning loop · eval-set gate); one
+invariant makes the explainability boundary explicit;
+[PROJECT-POLICY](PROJECT-POLICY.md) adopts the shared house style:
+one-line italic gloss per section, bold handle per rule, citations
+consolidated into per-section Sources lines.
+**Why:** the founder read "Decision policy" as a policy for
+decisions in general — the name misled its own author; prose-form
+hid the pipeline the file actually describes; undecided slots must
+be loud, not implied (the
+[reliability law](FOUNDATION.md#the-reliability-law) applied to
+ourselves).
+**Alternatives rejected:** keep the name + a disambiguating sentence
+(the name keeps whispering wrong); two sequential PRs (intermediate
+broken-link state, double ritual overhead for one theme); putting
+the four gaps into rules sections (they are undecided — register
+only).
+**Affects:** [ENGINE](ENGINE.md) (né DECISION-POLICY) ·
+[PROJECT-POLICY](PROJECT-POLICY.md) · [LAWS](LAWS.md) rationale
+line · [HOME](HOME.md) (table row, portrait, terms) ·
+[ROADMAP](ROADMAP.md) S3/S5 binding-requirement links ·
+[FACTS](data/FACTS.md) · [SOURCES](data/SOURCES.md) ·
+[decide](skills/decide.md) skill · [DASHBOARD](DASHBOARD.md) (one
+link) · [DECISIONS](DECISIONS.md) / [history/](history/README.md) /
+finalized [specs](specs/README.md) (link targets only) · this entry.

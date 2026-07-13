@@ -11,7 +11,7 @@ shipped: 2026-07-12
 ---
 # foundation-v4 — FOUNDATION v4: principles recut, open family set, lifespan repair
 **Links:** [FOUNDATION](../FOUNDATION.md) ·
-[DECISION-POLICY §5](../DECISION-POLICY.md#5-provenance--supersede-order) ·
+[DECISION-POLICY §5](../ENGINE.md#2-intake--resolve-the-traveler) ·
 [HOME](../HOME.md) · Decisions:
 [D-012](../DECISIONS.md#d-012--2026-06--elicitation--inference-policy-ask-tiers-provenance-upsert) ·
 [D-021](../DECISIONS.md#d-021--2026-07--plan-synthesis-principles-re-home-to-decision-policy) ·
@@ -38,7 +38,7 @@ violation (the pre-trip lifespan clause duplicating a ROADMAP refusal).
    - [FOUNDATION](../FOUNDATION.md) edits: lifespan sentence · open
      family header + intro · plug-in principle (re-tune clause) ·
      in-app principle (open list) · layered personalization.
-   - [DECISION-POLICY §5](../DECISION-POLICY.md#5-provenance--supersede-order):
+   - [DECISION-POLICY §5](../ENGINE.md#2-intake--resolve-the-traveler):
      supersede order gains the cohort layer; new cohort-prior bullet.
    - [HOME](../HOME.md): FOUNDATION portrait (section list + judgment-
      moments sentence) · check-module term re-anchored + re-phrased.
@@ -50,7 +50,7 @@ violation (the pre-trip lifespan clause duplicating a ROADMAP refusal).
 
 ## Done means
 - [x] Edits 1–8 landed verbatim
-- [x] [DECISION-POLICY §5](../DECISION-POLICY.md#5-provenance--supersede-order)
+- [x] [DECISION-POLICY §5](../ENGINE.md#2-intake--resolve-the-traveler)
       carries the cohort layer
 - [x] Zero repo-wide occurrences of the old anchor
 - [x] `node scripts/check-links.mjs` passes
@@ -59,7 +59,7 @@ violation (the pre-trip lifespan clause duplicating a ROADMAP refusal).
 ## Deviations
 None material. The workshop expected anchor-ripple hits in
 docs/history/; the execution-time grep found exactly two hits, both
-outside history/ ([DECISION-POLICY §3](../DECISION-POLICY.md#3-grade--render-matrix)
+outside history/ ([DECISION-POLICY §3](../ENGINE.md#7-render--honest-pixels)
 and [HOME §Terms](../HOME.md#terms)) — both repaired.
 
 ## Open questions

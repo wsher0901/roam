@@ -15,7 +15,7 @@ pr: 69
 while [ROADMAP](../ROADMAP.md) carries everything a shipped version
 can falsify — the V1/V2/V3 ladder with testable done-whens,
 per-version For/Refuses/Ships scope blocks, and the unversioned
-socket Pool — with [DECISION-POLICY](../DECISION-POLICY.md) canonical
+socket Pool — with [DECISION-POLICY](../ENGINE.md) canonical
 for the plan-synthesis rules and the notation manual re-homed to
 [HOME](../HOME.md#roadmap-manual) →
 [PR #69](https://github.com/wsher0901/roam/pull/69)

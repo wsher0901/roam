@@ -100,7 +100,7 @@ database connected.
       (durations, springs), app shell layout deployed
 
 ### V1.S3 — Engine core + two families deep
-Binding requirements: [DECISION-POLICY §6–§8](DECISION-POLICY.md#6-preferences-are-defaults-not-blinders)
+Binding requirements: [ENGINE §6–§8](ENGINE.md#6-synthesize--build-the-plan)
 (canonical since [D-021](DECISIONS.md#d-021--2026-07--plan-synthesis-principles-re-home-to-decision-policy)).
 Completion criteria: a CLI harness returns scored, sourced, explained verdicts
 for any destination + dates using Weather and Sky & sea.
@@ -138,7 +138,7 @@ trip options in the app.
       confidence badges, map context, select-one flow
 
 ### V1.S5 — Plan
-Binding requirements: [DECISION-POLICY §6–§8](DECISION-POLICY.md#6-preferences-are-defaults-not-blinders)
+Binding requirements: [ENGINE §6–§8](ENGINE.md#6-synthesize--build-the-plan)
 (canonical since [D-021](DECISIONS.md#d-021--2026-07--plan-synthesis-principles-re-home-to-decision-policy)).
 Completion criteria: selecting an option yields a persisted day-by-day plan
 rendered on timeline + map.

@@ -14,7 +14,7 @@ The workshop's operating system, replaced in one PR
 [D-024](../DECISIONS.md#d-024--2026-07--architecture-v2-memoryhistory-narrative-layer-dashboard-as-sole-state-surface-rituals-as-skills-amends-d-008-retires-handoffmd--shiplogmd)):
 [LAWS.md](../LAWS.md) became the constitution (root CLAUDE.md is now
 a two-line import), [PROJECT-POLICY](../PROJECT-POLICY.md) was born
-beside [DECISION-POLICY](../DECISION-POLICY.md), the five rituals
+beside [DECISION-POLICY](../ENGINE.md), the five rituals
 plus the [parallel-lanes](../skills/parallel-lanes.md) manual became
 skills with vault-readable procedures in
 [docs/skills/](../skills/), every task gained the memory→history
