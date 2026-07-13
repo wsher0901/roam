@@ -75,10 +75,12 @@ Sources); full retroactive ripple across the corpus.
   filename (with suffix) inside link TEXT; the text kept the
   historical name but dropped the suffix — the only reading that
   satisfies both the frozen-prose law and the zero-hit grep.
-- [ROADMAP](../ROADMAP.md)'s binding-requirements lines keep the
-  literal "§6–§8" per the brief; the old rules now sit in
-  [ENGINE](../ENGINE.md) §5/§6/§8, so the range reads a hair loose —
-  flagged in memory, not reworded (out of brief).
+- [ROADMAP](../ROADMAP.md)'s binding-requirements lines first kept
+  the literal "§6–§8" per the brief; the old rules now sit in
+  [ENGINE](../ENGINE.md) §5/§6/§8, so the range read a hair loose.
+  Flagged at the gate; the founder amended: the link text now names
+  the stages ("ENGINE — Aggregate · Synthesize · Gate"), which
+  outlives any renumbering.
 - The payloads and the verbatim HOME paragraph carry bare
   roadmap-ID mentions (V1.S3, V1.S4…) by design — the byte-match
   Done-means outranks weave-lint inside founder-fixed text; their

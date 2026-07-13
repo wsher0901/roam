@@ -64,13 +64,14 @@ Execution notes and judgment calls, in order:
   portraits — PROJECT-POLICY keeps a portrait distilled from the old
   joint text (no new claims), ENGINE gets the founder's verbatim
   paragraph. Deviation recorded in the spec and PR.
-- ROADMAP's two binding-requirements lines kept their text
+- ROADMAP's two binding-requirements lines first kept their text
   "§6–§8" per the brief ("keeping their line text otherwise
-  intact"), renamed to ENGINE and retargeted per the anchor map.
-  Note for the founder: the old §6/§7/§8 rules now live in ENGINE
-  §6/§5/§8, so the literal range "§6–§8" is a hair loose (it now
-  spans Synthesize·Render·Gate; Aggregate §5 also binds). Flagged,
-  not fixed — fixing wording beyond the rename was out of brief.
+  intact"), renamed to ENGINE and retargeted per the anchor map —
+  and the looseness was flagged at the gate (the old §6/§7/§8 rules
+  now live in ENGINE §6/§5/§8). The founder amended at the gate:
+  the link text now names the stages ("ENGINE — Aggregate ·
+  Synthesize · Gate", target ENGINE §5), so the reference outlives
+  any renumbering.
 - [DECISIONS](../DECISIONS.md) D-021's decision line linked the old
   file with its ".md" suffix spelled out in the link TEXT (a
   "docs/" path). Kept the historical name but dropped the suffix
