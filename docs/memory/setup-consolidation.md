@@ -51,7 +51,9 @@ Execution notes and judgment calls, in order:
   targets. The sanctioned-mechanical-repair allowance went unused.
 - The D-029 entry reproduces the Sources-block format as a literal
   example; it sits inside a code fence so the link checker does not
-  try to resolve "[label](target)".
+  try to resolve the label/target placeholders. (This memory's
+  first draft quoted the placeholder inline and broke check-links —
+  the fence is not optional.)
 - LAWS' "Standing choices" bullet had named PROJECT-POLICY as the
   workshop-whys home; reworded to point at the laws' own glosses,
   HOME, and DECISIONS — per D-030's re-homing, not new semantics.
