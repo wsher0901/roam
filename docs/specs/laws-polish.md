@@ -49,17 +49,17 @@ gains a sync-with-main preflight.
    merge; founder approval follows external review.
 
 ## Done means
-- [ ] Edits 1–8 landed verbatim
-- [ ] Zero D-number mentions left in [LAWS](../LAWS.md)
-- [ ] [PROJECT-POLICY](../PROJECT-POLICY.md) carries the pacing law
+- [x] Edits 1–8 landed verbatim
+- [x] Zero D-number mentions left in [LAWS](../LAWS.md)
+- [x] [PROJECT-POLICY](../PROJECT-POLICY.md) carries the pacing law
       with [D-009](../DECISIONS.md#d-009--2026-06--pacing-law-finish-first-flexible-cap)
-- [ ] [ship.md](../skills/ship.md) and [LAWS](../LAWS.md) both carry
+- [x] [ship.md](../skills/ship.md) and [LAWS](../LAWS.md) both carry
       the main-sync step
-- [ ] `node scripts/check-links.mjs` passes
-- [ ] Lint + tests green
+- [x] `node scripts/check-links.mjs` passes
+- [x] Lint + tests green
 
 ## Deviations
-<filled by ship — or "none">
+none
 
 ## Open questions
 none
