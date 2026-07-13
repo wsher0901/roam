@@ -9,10 +9,11 @@ status: living
 One engine for travel planning. It assists at any level of certainty —
 no idea, some idea, exact idea of where to go — and any level of input,
 from the floor (origin + free dates) to rich preferences. Destination is
-just another unknown the engine resolves. Roam is a pre-trip brain:
-everything before departure, nothing (yet) during the trip. Its identity
-is comprehensiveness — it catches the minute, checkable details people
-miss — and it treats the traveler's time as the scarcest resource.
+just another unknown the engine resolves. Roam starts as the pre-trip
+brain — everything before departure; the boundary moves by roadmap
+decision, never by drift. Its identity is comprehensiveness — it catches
+the minute, checkable details people miss — and it treats the traveler's
+time as the scarcest resource.
 
 ## The spine
 One loop, three exercises of the same engine:
@@ -27,8 +28,10 @@ One loop, three exercises of the same engine:
 Every change creates a new plan version: full history, one-click revert.
 No fixed modes: one conversation flows between all three.
 
-## What Roam checks — the five families
-Five families, each built as a pluggable check module:
+## What Roam checks
+Each family is a pluggable check module; five today, and the set is
+open — any condition the founder or Claude finds load-bearing enters
+as a new family by decision:
 - Weather per activity — rain, wind, fog, temperature; real forecast
   when the trip is near, climatology when it is far — and the plan says
   which it used.
@@ -62,17 +65,21 @@ signals tune the ranking.
 
 ## Principles
 - One engine, no modes.
-- Every condition check is a plug-in: a new idea is a new module, never
-  a rewrite.
+- Every condition check is a plug-in: adding one never rewrites what
+  exists — it adds a module. Results still move: every new check
+  re-tunes the rankings, by design.
 - Depth before breadth — fewer checks done deep beat many done shallow;
   breadth arrives module by module.
 - The floor input always works: origin + dates is enough.
 - Time optimization is first-class: schedules, buffers, and sequencing
   are computed, not approximated.
-- In-app first: maps, timelines, plans render inside Roam, not as
-  links out.
+- In-app first: results render inside Roam, not as links out — maps,
+  timelines, plans, and whatever the product comes to show.
 - Explain everything: every ranking and every edit verdict carries its
   reasons.
 - Room for monetization, never at the product's expense.
-- Personalization comes from whatever the traveler supplies — never
-  from rigid user segments.
+- Personalization is layered: what the traveler states, what's
+  inferred from their own behavior, learned patterns of travelers
+  like them, and defaults — in that order of authority. Category
+  patterns are priors, never pigeonholes: the traveler's own signal
+  always outranks them, and demographic stereotypes never drive.

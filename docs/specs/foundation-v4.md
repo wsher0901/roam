@@ -42,9 +42,9 @@ violation (the pre-trip lifespan clause duplicating a ROADMAP refusal).
      supersede order gains the cohort layer; new cohort-prior bullet.
    - [HOME](../HOME.md): FOUNDATION portrait (section list + judgment-
      moments sentence) · check-module term re-anchored + re-phrased.
-   - Anchor ripple (retroactivity law): every repo-wide hit of
-     `what-roam-checks--the-five-families` → `what-roam-checks`;
-     hit list derived at execution time.
+   - Anchor ripple (retroactivity law): every repo-wide hit of the
+     old five-families anchor → `what-roam-checks`; hit list derived
+     at execution time.
 3. Verify (below) · [ship](../skills/ship.md) to THE GATE — no merge;
    founder approval follows external review.
 

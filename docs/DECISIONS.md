@@ -615,3 +615,57 @@ unreadable in Obsidian).
 [specs/README](specs/README.md) ·
 [D-008](#d-008--2026-06--cockpit-derived-state-automatic-recording)
 (amended).
+
+## D-025 — 2026-07 — FOUNDATION v4 — principles recut, open family set, lifespan repair (extends D-012; upholds D-021/D-022)
+**Decision:** recut [FOUNDATION](FOUNDATION.md)'s identity for
+honesty and openness, carrying the new cohort layer into
+[DECISION-POLICY §5](DECISION-POLICY.md#5-provenance--supersede-order):
+- "What Roam is": Roam STARTS as the pre-trip brain — the boundary
+  moves by roadmap decision, never by drift (lifespan is version
+  scope in [ROADMAP](ROADMAP.md), per
+  [D-022](#d-022--2026-07--version-ladder--lifespan-split-amends-d-004));
+- "What Roam checks" drops "the five families" from its header: each
+  family is a pluggable check module — five today, the set is open,
+  and any condition the founder or Claude finds load-bearing enters
+  as a new family by decision;
+- the plug-in principle admits its blast radius: adding a check never
+  rewrites what exists — it adds a module — and every new check
+  re-tunes the rankings, by design;
+- in-app first opens its list: maps, timelines, plans, and whatever
+  the product comes to show;
+- personalization is layered: stated > inferred (own) > cohort
+  prior > default, in that order of authority — category patterns
+  are priors, never pigeonholes, and demographic stereotypes never
+  drive;
+- [DECISION-POLICY §5](DECISION-POLICY.md#5-provenance--supersede-order)
+  extends
+  [D-012](#d-012--2026-06--elicitation--inference-policy-ask-tiers-provenance-upsert)'s
+  supersede order with the cohort layer; activation is version
+  scope — cohort learning is not V1;
+- [HOME](HOME.md)'s FOUNDATION portrait and check-module term align;
+  the renamed anchor (what-roam-checks) is repaired repo-wide. The
+  engine-reasoning rules stay consolidated in
+  [DECISION-POLICY](DECISION-POLICY.md), per
+  [D-021](#d-021--2026-07--plan-synthesis-principles-re-home-to-decision-policy).
+**Why:** the plug-in principle overpromised zero blast radius — the
+structure holds, but rankings re-tune with every added check; the
+in-app list read as closed; the personalization principle
+contradicted
+[D-012](#d-012--2026-06--elicitation--inference-policy-ask-tiers-provenance-upsert)'s
+inferred provenance and blocked the cohort layer; "five" in the
+header made the count part of the identity; and the pre-trip clause
+duplicated a [ROADMAP](ROADMAP.md) refusal against
+[D-022](#d-022--2026-07--version-ladder--lifespan-split-amends-d-004) —
+lifespan belongs to version scope, not identity.
+**Alternatives rejected:** keep the header and add only an
+extensibility sentence (the count stays in the anchor — the identity
+keeps saying five); single-source personalization ("whatever the
+traveler supplies") — already false per
+[D-012](#d-012--2026-06--elicitation--inference-policy-ask-tiers-provenance-upsert),
+which infers fields with provenance.
+**Affects:** [FOUNDATION](FOUNDATION.md) ·
+[DECISION-POLICY §5](DECISION-POLICY.md#5-provenance--supersede-order) ·
+[HOME](HOME.md) (FOUNDATION portrait · check-module term) · corpus
+links to the renamed anchor:
+[DECISION-POLICY §3](DECISION-POLICY.md#3-grade--render-matrix) ·
+[HOME §Terms](HOME.md#terms).
