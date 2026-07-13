@@ -7,6 +7,10 @@ status: living
 
 Loaded into every session via the root CLAUDE.md import (`@docs/LAWS.md`).
 Universal laws only. Manuals and explanations: [HOME.md](HOME.md).
+Rationale and sources for every law:
+[PROJECT-POLICY.md](PROJECT-POLICY.md) ·
+[DECISION-POLICY.md](DECISION-POLICY.md) ·
+[DECISIONS.md](DECISIONS.md).
 Procedures: [docs/skills/](skills/). Route new lessons per
 § Self-improvement.
 
@@ -39,9 +43,9 @@ founder.
 - Never work on main. Every task is born bench-first: freshly pulled
   main → branch feat/ | fix/ | docs/ | chore/<id>-<slug> → spec (if
   the task needed discussion) + memory stub as first commits →
-  **draft PR at birth**, every task, cockpit included
-  ([D-023](DECISIONS.md#d-023--2026-07--universal-draft-pr-at-birth--micro-pr-carve-out-recut-amends-d-002-d-008-d-020))
-  → push every commit.
+  **draft PR at birth**, every task, cockpit included — the task is
+  public and rescuable from its first minute; no work ever exists in
+  only one place → push every commit.
 - One task = one branch = one PR.
 - NEVER merge without the founder's explicit approval. Ready = tests +
   linter green, PR flipped ready, plain-language summary (+ preview
@@ -50,10 +54,7 @@ founder.
   exception: the micro-PR — touches ONLY [DASHBOARD.md](DASHBOARD.md)
   and/or [IDEAS.md](IDEAS.md), written by a ritual (handoff · liftoff
   · ship's tail · pickup's stale-repaint) — merges immediately
-  without asking
-  ([D-002](DECISIONS.md#d-002--2026-06--handoff-note-merge-policy) as
-  amended by
-  [D-023](DECISIONS.md#d-023--2026-07--universal-draft-pr-at-birth--micro-pr-carve-out-recut-amends-d-002-d-008-d-020)).
+  without asking.
 - Leaving phrases ("done for today", "bye", "wrapping up") → run the
   full handoff immediately, unasked. "Take it to the cloud" (or any
   equivalent) → run liftoff. Both close the session.
@@ -69,10 +70,10 @@ founder.
   cut, reorder, pivot, pause), run decide unasked — entry + ripple in
   the same commit. Task-local calls are not decisions; they go in the
   task's memory file.
-- Before saying "done": run tests + linter and fix failures.
+- Before saying "done": sync the branch with current main (merge,
+  never rebase), then run tests + linter and fix failures.
 - If the founder forgets any of this, do it anyway without being asked.
-- Pacing law
-  ([D-009](DECISIONS.md#d-009--2026-06--pacing-law-finish-first-flexible-cap)):
+- Pacing law:
   the ongoing task and pending blocks outrank new tasks. At most
   "Now:" + one parallel slot needs the founder's attention.
   Fully-specified no-decision [P] work may run as extra lanes at your
@@ -105,23 +106,29 @@ history/ keeps the meaning.
 ## Parallel lanes & cloud
 The LANE LAW (seat-blind — identical local or cloud): every lane
 1. is born bench-first BY THE COCKPIT — branch, spec, memory stub,
-   draft PR pushed to origin BEFORE any session exists;
+   draft PR laid on origin BEFORE the lane exists: public and
+   rescuable from its first minute;
 2. runs the canary handshake before real work — its first act is a
    trivial push; the cockpit writes airborne-or-failed into the
-   pre-birthed memory; a lane seeing failed/aborted, or no
-   acknowledgment, self-terminates;
-3. pushes every commit;
-4. never shares a file with any sibling;
+   pre-birthed memory; a lane seeing failed/aborted, or silence past
+   the timeout (~10 min cloud, ~2 local), self-terminates after
+   pushing what exists — a worker that cannot push is a zombie
+   writing into the void;
+3. pushes every commit — unpushed work does not exist;
+4. never shares a file with any sibling — merges cannot collide by
+   construction;
 5. writes ITS OWN memory at four moments — handshake claim, each
-   decision or dead end, blocking, completion (before the ready-flip);
+   decision or dead end (invisible in the final diff, so written
+   down), blocking, completion (before the ready-flip);
 6. speaks through its PR — `BLOCKED:` comments, ready-flip + plain
    summary;
 7. never writes main — no [DASHBOARD](DASHBOARD.md), no
    [IDEAS](IDEAS.md), no [ROADMAP](ROADMAP.md) ticks, no history/,
-   no merges.
+   no merges: "done" must keep meaning founder-approved and merged.
 Seat-invariance law: a task's artifacts must be indistinguishable by
 seat; only ritual stamps name seats.
-Baton law: exactly one cockpit — the session the founder is driving.
+Baton law: exactly one cockpit — the session the founder is driving;
+the baton is the right to be that one driving session.
 Claimed by pickup on fresh origin; released by FULL handoff or
 liftoff (which close the session). A session whose
 [DASHBOARD](DASHBOARD.md) seat-stamp is superseded self-closes:
@@ -186,10 +193,7 @@ Mechanics: [parallel-lanes](skills/parallel-lanes.md) ·
 ## Tech stack (decided)
 Next.js App Router (TS, React 19) + Supabase + Vercel; brain = Claude
 API server-side; engine isolated in engine/. Consolidated rationale:
-[PROJECT-POLICY §Stack](PROJECT-POLICY.md#stack)
-([D-001](DECISIONS.md#d-001--2026-06--tech-stack) ·
-[D-005](DECISIONS.md#d-005--2026-06--stack-re-trial-vs-foundation-v1-d-001-upheld--frontend-layer) ·
-[D-007](DECISIONS.md#d-007--2026-06--shadcnui-builds-on-base-ui-not-radix)).
+[PROJECT-POLICY §Stack](PROJECT-POLICY.md#stack).
 
 ## Equipment & stage-gated tooling
 Reference: [equipment-plan](skills/equipment-plan.md). Never

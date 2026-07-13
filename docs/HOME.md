@@ -370,7 +370,8 @@ session.
 
 **[ship](skills/ship.md)** — fires the moment a task's work is
 complete; a task is never declared done in conversation without it.
-It gates (tests, linter, spec, weave-lint), rewrites the memory,
+It syncs the branch with main, gates (tests, linter, spec,
+weave-lint), rewrites the memory,
 flips the draft PR ready, and summarizes in plain language — then
 stops at THE GATE for the founder's explicit yes. On approval it
 performs the [atomic weld](#task-anatomy--lifecycle), squash-merges,

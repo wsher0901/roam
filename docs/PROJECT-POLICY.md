@@ -79,6 +79,13 @@ consolidating are NOT resolved here — they live in
   any seat can pick any task up cold.
   ([D-024](DECISIONS.md#d-024--2026-07--architecture-v2-memoryhistory-narrative-layer-dashboard-as-sole-state-surface-rituals-as-skills-amends-d-008-retires-handoffmd--shiplogmd);
   [LAWS §Parallel lanes & cloud](LAWS.md#parallel-lanes--cloud))
+- Pacing law — finish-first: the ongoing task and pending blocks
+  outrank new tasks; at most "Now" plus one parallel slot needs the
+  founder's attention; fully-specified no-decision [P] work may run
+  as extra lanes; "more" unlocks the full menu; stopping is a valid
+  next step.
+  ([D-009](DECISIONS.md#d-009--2026-06--pacing-law-finish-first-flexible-cap);
+  [LAWS §Workflow](LAWS.md#workflow-non-negotiable))
 
 ## Open questions
 Found while consolidating; for the founder — not resolved here.
