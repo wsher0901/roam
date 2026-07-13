@@ -2,12 +2,12 @@
 type: spec
 id: stale-branch-hygiene
 title: Stale-branch hygiene — gone-guard on the safety net; auto-delete welded-elsewhere locals; pickup restyle
-status: open
+status: shipped
 stage: workshop
 branch: docs/stale-branch-hygiene
-pr: —
+pr: 101
 opened: 2026-07-13
-shipped: —
+shipped: 2026-07-13
 ---
 # stale-branch-hygiene — Stale-branch hygiene: gone-guard on the safety net; auto-delete welded-elsewhere locals; pickup restyle
 

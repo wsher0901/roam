@@ -1,17 +1,18 @@
 ---
-type: memory
-id: stale-branch-hygiene
-updated: 2026-07-13 · ship (to the gate) · work PC
+type: history
+slug: stale-branch-hygiene
+shipped: 2026-07-13
+pr: 101
 ---
 # stale-branch-hygiene — Stale-branch hygiene: gone-guard on the safety net; auto-delete welded-elsewhere locals; pickup restyle
 
 ## Status
-Complete, awaiting merge — held at THE GATE by the brief's explicit
-"DO NOT MERGE; founder approval follows external review". All
-verification green: 1167 links / 0 broken, node --check clean on
-both hooks, smoke run exit 0, exactly the six named files in the
-diff, lint + tests + format clean. Both hook patches, the pickup
-payload, and the
+Shipped — merged as
+[PR #101](https://github.com/wsher0901/roam/pull/101) on the
+founder's word after the external review. All verification green:
+1167 links / 0 broken, node --check clean on both hooks, smoke run
+exit 0, exactly the six named files in the diff, lint + tests +
+format clean. Both hook patches, the pickup payload, and the
 [D-031](../DECISIONS.md#d-031--2026-07--stale-branch-hygiene--gone-guard-on-the-session-end-net-welded-elsewhere-locals-auto-removed-at-session-start)
 entry landed in one commit.
 
@@ -34,8 +35,10 @@ laws.
 none
 
 ## Left / idle
-Only the weld (on approval): slug-keyed history move + spec
-finalize, then squash-merge (workshop task — no ROADMAP tick).
+Nothing — the weld that landed this file was the last act
+(slug-keyed, no [ROADMAP](../ROADMAP.md) tick; spec finalized in
+place at
+[../specs/stale-branch-hygiene.md](../specs/stale-branch-hygiene.md)).
 
 ## The story
 Born from a founder-delivered workshop brief (Web chat): both hook
@@ -71,4 +74,5 @@ Execution notes, in order:
 - the two hooks: `.claude/hooks/session-end.mjs` ·
   `.claude/hooks/session-start.mjs`
 - the workshop brief (Web chat) — patches + payload
-- PR: opens at birth (draft)
+- PR: [#101](https://github.com/wsher0901/roam/pull/101)
+  (squash-merged 2026-07-13)
