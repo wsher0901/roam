@@ -9,7 +9,7 @@ map"): the vetted source serving each slot's facts, with its
 confirmed keys, grade, freshness, coverage, cost, license, and spike.
 Manual: [HOME §Reading the data files](../HOME.md#reading-the-data-files)
 · grade scale (canonical):
-[DECISION-POLICY §3](../DECISION-POLICY.md#3-grade--render-matrix).
+[ENGINE §7](../ENGINE.md#7-render--honest-pixels).
 
 ## Weather slots (V1.S1.T2)
 

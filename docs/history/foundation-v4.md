@@ -24,7 +24,7 @@ plug-in principle admits that rankings re-tune, the in-app list
 opens — plus layered personalization extending
 [D-012](../DECISIONS.md#d-012--2026-06--elicitation--inference-policy-ask-tiers-provenance-upsert)
 with a cohort-prior layer, carried into
-[DECISION-POLICY §5](../DECISION-POLICY.md#5-provenance--supersede-order).
+[DECISION-POLICY §5](../ENGINE.md#2-intake--resolve-the-traveler).
 ROADMAP explicitly untouched (version scope keeps "all five
 families" for V1).
 
@@ -47,7 +47,7 @@ this landed as
 [D-025](../DECISIONS.md#d-025--2026-07--foundation-v4--principles-recut-open-family-set-lifespan-repair-extends-d-012-upholds-d-021d-022).
 The anchor-ripple hit list, derived at execution time, was smaller
 than the workshop expected: exactly two hits
-([DECISION-POLICY §3](../DECISION-POLICY.md#3-grade--render-matrix)
+([DECISION-POLICY §3](../ENGINE.md#7-render--honest-pixels)
 and [HOME §Terms](../HOME.md#terms)), none in docs/history/. One
 self-inflicted wrinkle: the spec's own plan text quoted the old
 anchor as a literal string, which would have violated the
@@ -63,6 +63,6 @@ ROADMAP absent from the branch diff.
 - decision:
   [D-025](../DECISIONS.md#d-025--2026-07--foundation-v4--principles-recut-open-family-set-lifespan-repair-extends-d-012-upholds-d-021d-022)
 - edited files: [FOUNDATION](../FOUNDATION.md) ·
-  [DECISION-POLICY §5](../DECISION-POLICY.md#5-provenance--supersede-order) ·
+  [DECISION-POLICY §5](../ENGINE.md#2-intake--resolve-the-traveler) ·
   [HOME](../HOME.md) (portrait + check-module term)
 - the foundation-v4 workshop chat (Web) — where edits 1–8 were cut

@@ -306,7 +306,7 @@ under plans.
   audience_suitability (all-ages/adults-leaning/adults-only-18+/21+) ·
   pet_friendly (yes/outdoor-only/no/unknown)
 - Spine: Plan; audience_suitability powers composition-aware matching
-  ([DECISION-POLICY §7](../DECISION-POLICY.md#7-constraint-priority)).
+  ([ENGINE §5](../ENGINE.md#5-aggregate--one-score)).
 - Scope: global. Freshness: monthly; estimated where missing, labeled.
 - Type: fetched + estimated. Source slot: venue-attributes.
 
@@ -630,4 +630,4 @@ validation lands in T7.
   brain-suggested centroid). Drives [FE-06](#f-fe-06--travel-times--distances-per-mode) day routing.
 - Item lock-state: accepted trade-offs and [TP-44](#appendix-a--traveler-parameters-tp-0147--per-d-011--d-012) commitments are
   pinned ("bible") — carried per plan item with acceptance provenance
-  ([DECISION-POLICY §6](../DECISION-POLICY.md#6-preferences-are-defaults-not-blinders); T7 schemas it).
+  ([ENGINE §6](../ENGINE.md#6-synthesize--build-the-plan); T7 schemas it).

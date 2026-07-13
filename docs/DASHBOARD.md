@@ -21,7 +21,7 @@ hand-edited; git outranks this board.
    label repaired to "work PC").
    [Vault lens](skills/machine-setup.md#vault-lens): applied on both
    seats (2026-07-13).
-3. ⚪ [DECISION-POLICY §10](DECISION-POLICY.md#10-open-questions) —
+3. ⚪ [DECISION-POLICY §10](ENGINE.md#12-open-register) —
    five open engine questions; parked until
    [V1.S3](ROADMAP.md#v1s3--engine-core--two-families-deep) opens.
 

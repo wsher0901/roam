@@ -17,10 +17,10 @@ unverifiable is labeled unverified — the
 
 Four documents govern the workshop; this page explains all of them.
 [LAWS.md](LAWS.md) INSTRUCTS — the universal rules every session
-loads and must obey. The two policy files hold STANDING CHOICES with
+loads and must obey. The two consolidations hold STANDING CHOICES with
 their reasons: [PROJECT-POLICY.md](PROJECT-POLICY.md) for how WE
-work, [DECISION-POLICY.md](DECISION-POLICY.md) for how ROAM'S ENGINE
-reasons. [DECISIONS.md](DECISIONS.md) holds HISTORY — every choice
+work, [ENGINE.md](ENGINE.md) for how ROAM'S ENGINE thinks — the
+engine on paper. [DECISIONS.md](DECISIONS.md) holds HISTORY — every choice
 as an append-only D-number with its rationale and the alternatives
 it rejected. THIS FILE answers "how does anything work, and why is
 it like that": it explains and links, holds ZERO live state, and
@@ -38,7 +38,7 @@ down and talking — never by content here.
 | What's the plan, in what order? | [ROADMAP.md](ROADMAP.md), read with the [Roadmap manual](#roadmap-manual) |
 | Where are we right now? | [DASHBOARD.md](DASHBOARD.md) — or just talk: cockpit sessions brief unprompted ([pickup](skills/pickup.md)) |
 | What are the working laws? | [LAWS.md](LAWS.md) |
-| Why did we choose X? | [DECISIONS.md](DECISIONS.md); consolidated: [PROJECT-POLICY](PROJECT-POLICY.md) (workshop) · [DECISION-POLICY](DECISION-POLICY.md) (engine) |
+| Why did we choose X? | [DECISIONS.md](DECISIONS.md); consolidated: [PROJECT-POLICY](PROJECT-POLICY.md) (workshop) · [ENGINE](ENGINE.md) (engine) |
 | How does anything work around here? | [§The mechanisms](#the-mechanisms) |
 | What does a term mean? | [§Terms](#terms) |
 | What's the contract of a task? | its spec in [docs/specs/](specs/README.md) |
@@ -104,7 +104,7 @@ Obsidian READS: the vault is docs/; quick capture goes only into
 | [DASHBOARD.md](DASHBOARD.md) | the rendered state surface | rituals only — never hand-edited | living; repainted at ritual moments, never trusted over git |
 | [DECISIONS.md](DECISIONS.md) | the decision log, one D-number per choice | [decide](skills/decide.md) | append-only; entries are never rewritten |
 | [PROJECT-POLICY.md](PROJECT-POLICY.md) | how WE work — standing workshop choices + rationale | [decide](skills/decide.md) ripples; invents nothing | living consolidation |
-| [DECISION-POLICY.md](DECISION-POLICY.md) | how the ENGINE reasons and renders — canonical rules | [decide](skills/decide.md) ripples; invents nothing | living consolidation; seeds the [V1.S3](ROADMAP.md#v1s3--engine-core--two-families-deep) contract |
+| [ENGINE.md](ENGINE.md) | the engine on paper — pipeline stages, decided rules in slots, OPEN register | [decide](skills/decide.md) ripples; invents nothing | living consolidation; seeds the [V1.S3](ROADMAP.md#v1s3--engine-core--two-families-deep) contract |
 | [IDEAS.md](IDEAS.md) | the single untriaged inbox — no Issues, no boards ([D-023](DECISIONS.md#d-023--2026-07--universal-draft-pr-at-birth--micro-pr-carve-out-recut-amends-d-002-d-008-d-020)) | Claude Code, the moment an idea or defect is voiced | lines leave only by triage into [ROADMAP](ROADMAP.md) via decide |
 | [DESIGN-KICKOFF.md](DESIGN-KICKOFF.md) | the Claude Design session preamble + governance rules | ops PRs | living until the repo-synced design system replaces it |
 | [WEB-INSTRUCTIONS.md](WEB-INSTRUCTIONS.md) | master copy of the Claude Web Project-instructions box | ops PRs | living; re-pasted into the box after every edit (the box is a copy, never the source) |
@@ -140,7 +140,7 @@ read at judgment moments — [ship](skills/ship.md)'s PR pre-review,
 lane pre-review, [decide](skills/decide.md)'s ripple scan,
 [equipment vetting](skills/equipment-plan.md), the
 [Design kickoff](DESIGN-KICKOFF.md)'s identity line — and reaches
-the engine through [DECISION-POLICY](DECISION-POLICY.md)'s seeding.
+the engine code through [ENGINE](ENGINE.md)'s seeding.
 
 **[ROADMAP](ROADMAP.md)** is the build order made falsifiable:
 versions and stages with testable completion criteria, tasks
@@ -167,13 +167,20 @@ so settled questions stay settled. Without it the same debates
 would replay forever, and nobody could tell a principle from an
 accident.
 
-**[PROJECT-POLICY](PROJECT-POLICY.md) and
-[DECISION-POLICY](DECISION-POLICY.md)** are the two consolidations:
-every standing rule lives in exactly one of them — workshop rules
-in the first, engine reasoning in the second — each rule with its
-source. They invent nothing; they exist so a rule never has to be
-reassembled from a trail of D-numbers. Without them, policy would
-be archaeology.
+**[PROJECT-POLICY](PROJECT-POLICY.md)** is the workshop
+consolidation: every standing choice about how this project is
+built and run, each with its rationale and sources. It invents
+nothing; it exists so a rule never has to be reassembled from a
+trail of D-numbers. Without it, policy would be archaeology.
+
+**[ENGINE](ENGINE.md)** — The engine's blueprint, shaped like the
+engine itself: ten pipeline stages, each with inputs, outputs, a
+short procedure, its binding rules, and a Sources line. What is
+decided reads as rules; what is not decided is a numbered OPEN slot
+in the Open register — filling one takes a D-number. The V1.S3
+contract and V1.S4 brain prompt are written FROM this file; engine
+PRs are reviewed AGAINST it. It grows by accretion: new sources,
+families, and metrics plug into stages; the shape stays.
 
 **[specs/](specs/README.md)** holds each task's stable contract —
 goal, scope edges, plan, Done-means — born from the discussion that
@@ -654,7 +661,7 @@ the link for the full story.
 - **grades A–D** — source reliability grades, assigned at vetting
   and living afterwards: A renders verified, B verified where
   covered, C as a labeled estimate, D always unverified. Canonical
-  matrix: [DECISION-POLICY §3](DECISION-POLICY.md#3-grade--render-matrix).
+  matrix: [ENGINE §7](ENGINE.md#7-render--honest-pixels).
 - **socket** — a named future capability deliberately excluded from
   the current version but designed to plug in later without a
   rewrite. Home: [ROADMAP §Pool](ROADMAP.md#pool--unversioned-sockets).
@@ -789,21 +796,21 @@ the link for the full story.
   every claim carries source + confidence, anything unverifiable
   renders labeled unverified. Home:
   [FOUNDATION §The reliability law](FOUNDATION.md#the-reliability-law);
-  engine rules: [DECISION-POLICY §2](DECISION-POLICY.md#2-the-reliability-law).
+  engine rules: [ENGINE §11](ENGINE.md#11-invariants--the-reliability-law).
 - **reliability ladder** — the six fallback rungs for
   coverage-risky facts: global source → regional source → computed
   → estimated (labeled) → LLM-research grade (unverified) → refusal
   ([D-010](DECISIONS.md#d-010--2026-06--global-coverage-via-graded-fallback-ladders);
-  [DECISION-POLICY §4](DECISION-POLICY.md#4-ladder-fall-through)).
+  [ENGINE §3](ENGINE.md#3-acquire--get-the-facts)).
 - **preferences-as-defaults** — the engine honors a stated
   preference but surfaces a significantly better alternative when
   one exists; preferences steer, they don't blind. Home:
-  [DECISION-POLICY §6](DECISION-POLICY.md#6-preferences-are-defaults-not-blinders).
+  [ENGINE §6](ENGINE.md#6-synthesize--build-the-plan).
 - **provenance** — every stored traveler value is marked stated,
   inferred, or default; stated beats inferred beats default, newer
   beats older
   ([D-012](DECISIONS.md#d-012--2026-06--elicitation--inference-policy-ask-tiers-provenance-upsert);
-  [DECISION-POLICY §5](DECISION-POLICY.md#5-provenance--supersede-order)).
+  [ENGINE §2](ENGINE.md#2-intake--resolve-the-traveler)).
 - **floor input** — the guaranteed minimum: origin + dates is
   always enough to get a plan
   ([D-011](DECISIONS.md#d-011--2026-06--traveler-input-vocabulary-rich-nullable-tiered-append-only)).
@@ -829,7 +836,7 @@ the link for the full story.
 - **SI-canonical units** — all storage and engine math is
   SI/metric; conversion to US units happens only at display time
   ([D-013](DECISIONS.md#d-013--2026-06--canonical-units-si-storage-display-time-conversion);
-  [DECISION-POLICY §9](DECISION-POLICY.md#9-units)).
+  [ENGINE §7](ENGINE.md#7-render--honest-pixels)).
 
 ## Reading the data files
 
@@ -888,7 +895,7 @@ its What line.
 which decides how its facts RENDER — from verified (A) through
 labeled estimate (C) to always-unverified (D). The canonical
 grade → render matrix is
-[DECISION-POLICY §3](DECISION-POLICY.md#3-grade--render-matrix);
+[ENGINE §7](ENGINE.md#7-render--honest-pixels);
 grades are living — demoted on sustained failure, drift, or
 miscalibration, promoted only by re-vetting
 ([D-015](DECISIONS.md#d-015--2026-06--data-asset-law-bitemporal-append-only-license-segmented)).
