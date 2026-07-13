@@ -69,11 +69,12 @@ Execution notes and judgment calls, in order:
   spans Synthesize·Render·Gate; Aggregate §5 also binds). Flagged,
   not fixed — fixing wording beyond the rename was out of brief.
 - [DECISIONS](../DECISIONS.md) D-021's decision line linked the old
-  file with its ".md" suffix in the link TEXT
-  ("docs/DECISION-POLICY.md"). Kept the historical name but dropped
-  the ".md" from the text ("docs/DECISION-POLICY") — the only way to
-  satisfy both the frozen-prose law and the Done-means grep (zero
-  repo-wide hits of the old filename string).
+  file with its ".md" suffix spelled out in the link TEXT (a
+  "docs/" path). Kept the historical name but dropped the suffix
+  from the text ("docs/DECISION-POLICY") — the only way to satisfy
+  both the frozen-prose law and the Done-means grep (zero repo-wide
+  hits of the old filename string). This memory words the note the
+  same way, for the same reason.
 - [DASHBOARD](../DASHBOARD.md): exactly one mechanical link-target
   repair (Needs-you item 3 → ENGINE §12 Open register) — a
   sanctioned retroactivity repair; the single-writer law is
