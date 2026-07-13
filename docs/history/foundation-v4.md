@@ -1,17 +1,17 @@
 ---
-type: memory
-id: foundation-v4
-updated: 2026-07-12 · ship (pre-gate) · home PC
+type: history
+slug: foundation-v4
+shipped: 2026-07-12
+pr: 85
 ---
 # foundation-v4 — FOUNDATION v4: principles recut, open family set, lifespan repair
 
 ## Status
-Complete, awaiting merge. All edits landed as
+Shipped — merged as
+[PR #85](https://github.com/wsher0901/roam/pull/85) on the founder's
+word after the external review. All edits landed as
 [D-025](../DECISIONS.md#d-025--2026-07--foundation-v4--principles-recut-open-family-set-lifespan-repair-extends-d-012-upholds-d-021d-022)
-entry + ripple in one commit; every Done-means box verified; PR
-[#85](https://github.com/wsher0901/roam/pull/85) flipped ready. THE
-GATE is special here by the founder's instruction: approval follows
-EXTERNAL REVIEW — do not merge on a casual yes.
+entry + ripple in one commit; every Done-means box verified.
 
 ## What this task is
 A docs-only recut of [FOUNDATION](../FOUNDATION.md), fully specified
@@ -29,13 +29,12 @@ ROADMAP explicitly untouched (version scope keeps "all five
 families" for V1).
 
 ## Pending issues
-Founder approval pending external review of PR
-[#85](https://github.com/wsher0901/roam/pull/85). Nothing else.
+none
 
 ## Left / idle
-Only the post-approval weld: ROADMAP has no checkbox for this
-workshop task, so the weld is memory → history/ (slug-keyed) + spec
-finalize, then squash-merge and branch delete.
+Nothing — the weld that landed this file was the last act
+(slug-keyed, no [ROADMAP](../ROADMAP.md) tick; spec finalized in
+place at [../specs/foundation-v4.md](../specs/foundation-v4.md)).
 
 ## The story
 Born from the foundation-v4 Web-chat workshop: the founder arrived
@@ -59,8 +58,8 @@ ROADMAP absent from the branch diff.
 
 ## Where to look
 - spec: [../specs/foundation-v4.md](../specs/foundation-v4.md)
-- PR: [#85](https://github.com/wsher0901/roam/pull/85) (ready,
-  awaiting founder approval after external review)
+- PR: [#85](https://github.com/wsher0901/roam/pull/85) (squash-merged
+  2026-07-12)
 - decision:
   [D-025](../DECISIONS.md#d-025--2026-07--foundation-v4--principles-recut-open-family-set-lifespan-repair-extends-d-012-upholds-d-021d-022)
 - edited files: [FOUNDATION](../FOUNDATION.md) ·

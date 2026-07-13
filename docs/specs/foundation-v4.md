@@ -2,12 +2,12 @@
 type: spec
 id: foundation-v4
 title: FOUNDATION v4 — principles recut, open family set, lifespan repair
-status: open
+status: shipped
 stage: workshop
 branch: docs/foundation-v4
-pr: —
+pr: 85
 opened: 2026-07-12
-shipped: —
+shipped: 2026-07-12
 ---
 # foundation-v4 — FOUNDATION v4: principles recut, open family set, lifespan repair
 **Links:** [FOUNDATION](../FOUNDATION.md) ·
