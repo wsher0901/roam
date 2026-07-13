@@ -1,16 +1,16 @@
 ---
-type: memory
-id: vault-lens-seed
-updated: 2026-07-13 · ship (pre-gate) · home PC
+type: history
+slug: vault-lens-seed
+shipped: 2026-07-13
+pr: 91
 ---
 # vault-lens-seed — Vault-lens seed: Obsidian config travels through git
 
 ## Status
-Complete, awaiting merge. Seed JSONs + machine-setup rewrite + stub
-trigger all landed; every Done-means box verified; PR
-[#91](https://github.com/wsher0901/roam/pull/91) flipped ready. THE
-GATE is special here by the founder's instruction: approval follows
-EXTERNAL REVIEW — do not merge on a casual yes.
+Shipped — merged as
+[PR #91](https://github.com/wsher0901/roam/pull/91) on the founder's
+word after the external review. Seed JSONs + machine-setup rewrite +
+stub trigger all landed; every Done-means box verified.
 
 ## What this task is
 Workshop tooling, fully specified in the Web chat (slug
@@ -27,15 +27,15 @@ every machine — including a future third — gets the same lens from
 origin.
 
 ## Pending issues
-Founder approval pending external review of PR
-[#91](https://github.com/wsher0901/roam/pull/91). Nothing else.
+none repo-side. One founder action per seat remains by the task's
+own nature: say "apply the vault lens" on each PC (the
+[machine-setup Verify](../skills/machine-setup.md#verify-after-setup-or-whenever-one-machine-misbehaves)
+line points at the phrase).
 
 ## Left / idle
-Only the post-approval weld: workshop task, so no ROADMAP tick —
-memory → history/ (slug-keyed) + spec finalize, then squash-merge
-and branch delete. After the merge, "apply the vault lens" is live
-on any seat (both PCs still owe a run — the Verify line now points
-at the phrase).
+Nothing — the weld that landed this file was the last act
+(slug-keyed, no ROADMAP tick; spec finalized in place at
+[../specs/vault-lens-seed.md](../specs/vault-lens-seed.md)).
 
 ## The story
 Born from the vault-lens-seed Web-chat workshop; the cockpit took
@@ -59,8 +59,8 @@ ran clean (already up to date).
 
 ## Where to look
 - spec: [../specs/vault-lens-seed.md](../specs/vault-lens-seed.md)
-- PR: [#91](https://github.com/wsher0901/roam/pull/91) (ready,
-  awaiting founder approval after external review)
+- PR: [#91](https://github.com/wsher0901/roam/pull/91)
+  (squash-merged 2026-07-13)
 - seed files: `.claude/vault-seed/graph.json` ·
   `.claude/vault-seed/bookmarks.json`
 - procedure:

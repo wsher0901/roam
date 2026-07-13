@@ -2,12 +2,12 @@
 type: spec
 id: vault-lens-seed
 title: Vault-lens seed — Obsidian config travels through git
-status: open
+status: shipped
 stage: workshop
 branch: chore/vault-lens-seed
-pr: —
+pr: 91
 opened: 2026-07-13
-shipped: —
+shipped: 2026-07-13
 ---
 # vault-lens-seed — Vault-lens seed: Obsidian config travels through git
 **Links:** [machine-setup](../skills/machine-setup.md) ·
