@@ -5,7 +5,7 @@ status: living
 ---
 # Dashboard — the state surface
 
-Stamp: 2026-07-13 · handoff · home PC
+Stamp: 2026-07-13 · pickup · work PC
 Glyphs: 🟢 done · 🟡 ongoing · 🔴 issue · ⚪ idle. Repainted only by
 rituals (pickup when stale · handoff · liftoff · ship's tail) — never
 hand-edited; git outranks this board.
@@ -17,9 +17,10 @@ hand-edited; git outranks this board.
    [WEB-INSTRUCTIONS](WEB-INSTRUCTIONS.md); the box is a copy
    ([history](history/web-instructions.md)).
 2. 🟡 Run the [machine-setup](skills/machine-setup.md) Verify block
-   on each PC — a full pass is unconfirmed on both seats.
-   [Vault lens](skills/machine-setup.md#vault-lens): applied on the
-   home PC (2026-07-13); on the work PC say "apply the vault lens".
+   on the home PC — the work PC passed in full on 2026-07-13 (seat
+   label repaired to "work PC").
+   [Vault lens](skills/machine-setup.md#vault-lens): applied on both
+   seats (2026-07-13).
 3. ⚪ [DECISION-POLICY §10](DECISION-POLICY.md#10-open-questions) —
    five open engine questions; parked until
    [V1.S3](ROADMAP.md#v1s3--engine-core--two-families-deep) opens.
