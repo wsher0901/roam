@@ -11,8 +11,11 @@ pre-review its ready PR against FOUNDATION, the ROADMAP line, and the
 reliability law BEFORE surfacing it — then this same procedure.
 
 ## 1 · Preflight
-Be on the task's branch; know its ID (or workshop slug). Tests +
-linter; fix failures first.
+Be on the task's branch; know its ID (or workshop slug). Sync with
+main FIRST: merge current origin/main into the branch (merge, never
+rebase — the history is pushed); resolve anything. Then tests +
+linter; fix failures first — what you test is exactly what main will
+contain after the weld.
 
 ## 2 · Spec gate
 If a spec exists: verify every Done-means box honestly against the

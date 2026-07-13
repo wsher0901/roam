@@ -705,3 +705,31 @@ risk [D-020](#d-020--2026-07--parallel-lanes-v2-native-lanes-replace-hand-built-
 exists to eliminate).
 **Affects:** [ROADMAP](ROADMAP.md) · [HOME](HOME.md) (term rename) ·
 this entry.
+
+## D-027 — 2026-07 — LAWS polish — glossed lane law, provenance re-homed to consolidations, ship syncs with main before the weld
+**Decision:** [LAWS](LAWS.md) drops its four inline D-citations
+(bench-first, micro-PR, pacing, stack) — the weave rule stands for
+relationships and retroactivity, but provenance is the
+consolidations' job, and LAWS' header now names the three rationale
+homes ([PROJECT-POLICY](PROJECT-POLICY.md) ·
+[DECISION-POLICY](DECISION-POLICY.md) · [DECISIONS](DECISIONS.md)).
+The bench-first bullet and the seven-point lane law carry one-line
+whys; the baton law states what the baton IS.
+[PROJECT-POLICY §Workshop choices](PROJECT-POLICY.md#workshop-choices)
+gains the pacing law — the one LAWS rule not yet consolidated — with
+its [D-009](#d-009--2026-06--pacing-law-finish-first-flexible-cap)
+provenance. [ship](skills/ship.md)'s Preflight now merges current
+origin/main into the branch before gating (merge, never rebase), so
+what is tested is exactly what main will contain after the weld;
+[LAWS §Workflow](LAWS.md#workflow-non-negotiable) and
+[HOME](HOME.md)'s ship portrait carry the same step.
+**Why:** mid-sentence citation anchors hurt the constitution's
+readability for a solo non-CS founder; a branch born days ago passes
+tests against a stale main — the merged combination was never tested
+anywhere; laws that carry their why are followed better.
+**Alternatives rejected:** trailing citations (still noise; the
+consolidations already exist for this); rebase instead of merge
+(rewrites pushed history).
+**Affects:** [LAWS](LAWS.md) · [PROJECT-POLICY](PROJECT-POLICY.md) ·
+[ship](skills/ship.md) · [HOME](HOME.md) (ship portrait) · this
+entry.
