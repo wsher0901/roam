@@ -5,7 +5,7 @@ status: living
 ---
 # Dashboard — the state surface
 
-Stamp: 2026-07-13 · pickup · work PC
+Stamp: 2026-07-13 · ship tail · work PC
 Glyphs: 🟢 done · 🟡 ongoing · 🔴 issue · ⚪ idle. Repainted only by
 rituals (pickup when stale · handoff · liftoff · ship's tail) — never
 hand-edited; git outranks this board.
@@ -21,8 +21,11 @@ hand-edited; git outranks this board.
    label repaired to "work PC").
    [Vault lens](skills/machine-setup.md#vault-lens): applied on both
    seats (2026-07-13).
-3. ⚪ [DECISION-POLICY §10](ENGINE.md#12-open-register) —
-   five open engine questions; parked until
+3. ⚪ [ENGINE §12 — the Open register](ENGINE.md#12-open-register) —
+   NINE open slots (was "DECISION-POLICY §10 — five questions";
+   grew at
+   [D-028](DECISIONS.md#d-028--2026-07--consolidation-recut--decision-policy--engine-brain-skeleton-form-project-policy-house-style-open-register-grows-69-upholds-d-021-extends-the-d-021-consolidation));
+   still parked until
    [V1.S3](ROADMAP.md#v1s3--engine-core--two-families-deep) opens.
 
 ## You are here
@@ -84,6 +87,7 @@ the queued Web-chat work — tracked as the S1 hold in You-are-here.
 
 | When | What | PR |
 |---|---|---|
+| 2026-07-13 | [Consolidation recut: DECISION-POLICY becomes ENGINE; PROJECT-POLICY to house style](history/engine-recut.md) | [#95](https://github.com/wsher0901/roam/pull/95) |
 | 2026-07-13 | [Vault-lens seed: Obsidian config travels through git](history/vault-lens-seed.md) | [#91](https://github.com/wsher0901/roam/pull/91) |
 | 2026-07-13 | [LAWS polish: glossed lane law, provenance to consolidations, ship syncs with main](history/laws-polish.md) | [#89](https://github.com/wsher0901/roam/pull/89) |
 | 2026-07-13 | [ROADMAP recut: plain-language V1, completion criteria, per-family vetting outputs](history/roadmap-recut.md) | [#87](https://github.com/wsher0901/roam/pull/87) |
@@ -93,4 +97,3 @@ the queued Web-chat work — tracked as the S1 hold in You-are-here.
 | 2026-07-11 | [Phase 5 — the sweep: hardening + hygiene](history/phase5-sweep.md) | [#78](https://github.com/wsher0901/roam/pull/78) |
 | 2026-07-11 | [HOME v3 — the manual & encyclopedia](history/home-encyclopedia.md) | [#76](https://github.com/wsher0901/roam/pull/76) |
 | 2026-07-11 | [The engine swap: architecture v2](history/engine-swap.md) | [#71](https://github.com/wsher0901/roam/pull/71) |
-| 2026-07-10 | [Version ladder + lifespan split](history/foundation-roadmap-recut.md) | [#69](https://github.com/wsher0901/roam/pull/69) |
