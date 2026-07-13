@@ -1,15 +1,16 @@
 ---
 type: memory
 id: design-kickoff-refresh
-updated: 2026-07-13 · bench birth · work PC
+updated: 2026-07-13 · ship (to the gate) · work PC
 ---
 # design-kickoff-refresh — DESIGN-KICKOFF refresh: June-2026 Claude Design capabilities
 
 ## Status
-Claimed by the cockpit (work PC) — bench birth in progress: branch,
-this stub, and the [spec](../specs/design-kickoff-refresh.md) are
-the first commits; the draft PR opens next. The payload overwrite
-follows.
+Complete, awaiting merge — held at THE GATE by the brief's explicit
+"DO NOT MERGE; founder approval follows external review". All
+verification green: 1146 links / 0 broken, "Labs flakiness" grep 0,
+snapshot law present, exactly the three named files in the diff vs
+main, lint + tests + format clean. No deviations.
 
 ## What this task is
 Refresh the Design rule-carrier —
@@ -25,7 +26,8 @@ founder's workshop brief.
 none
 
 ## Left / idle
-Payload overwrite · verification · ship to THE GATE.
+Only the weld (on approval): slug-keyed history move + spec
+finalize, then squash-merge (workshop task — no ROADMAP tick).
 
 ## The story
 Born from a founder-delivered workshop brief (Web chat), payload
@@ -48,4 +50,5 @@ leave the kickoff with this refresh.
   [../specs/design-kickoff-refresh.md](../specs/design-kickoff-refresh.md)
 - the file: [../DESIGN-KICKOFF.md](../DESIGN-KICKOFF.md)
 - the workshop brief (Web chat) — payload + verification list
-- PR: opens at birth (draft)
+- PR: [#97](https://github.com/wsher0901/roam/pull/97) (ready,
+  waiting at the gate)

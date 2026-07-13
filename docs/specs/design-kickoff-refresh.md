@@ -41,13 +41,13 @@ usage-pool wording.
    merge; founder approval follows external review.
 
 ## Done means
-- [ ] docs/DESIGN-KICKOFF.md byte-matches the payload
-- [ ] `node scripts/check-links.mjs` passes
-- [ ] Lint + tests green
-- [ ] Only the three named files in the diff vs main
+- [x] docs/DESIGN-KICKOFF.md byte-matches the payload
+- [x] `node scripts/check-links.mjs` passes (1146 links, 0 broken)
+- [x] Lint + tests green
+- [x] Only the three named files in the diff vs main
 
 ## Deviations
-<filled by ship: anything done differently than planned — or "none">
+none
 
 ## Open questions
 none
