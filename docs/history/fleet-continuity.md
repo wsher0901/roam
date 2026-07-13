@@ -1,17 +1,16 @@
 ---
-type: memory
-id: fleet-continuity
-updated: 2026-07-13 · ship (completion rewrite) · home PC
+type: history
+slug: fleet-continuity
+shipped: 2026-07-13
+pr: 104
 ---
 # fleet-continuity — Fleet continuity: handoff parks every local lane; liftoff respawns parked benches; wake-lock parks every outcome
 
 ## Status
-Complete, awaiting merge — every Done-means box verified green on
-2026-07-13; PR
-[#104](https://github.com/wsher0901/roam/pull/104) flipped ready.
-By brief, the merge waits for founder approval AFTER external
-review — THE GATE is deliberately not asked-and-answered in the
-working session alone.
+Shipped — merged as
+[PR #104](https://github.com/wsher0901/roam/pull/104) on the
+founder's word. Every verification from the brief came back green;
+no deviations.
 
 ## What this task is
 Make leaving safe for a fleet: [handoff](../skills/handoff.md) FULL
@@ -33,8 +32,7 @@ lands four surgical edits + two insertions across
 none
 
 ## Left / idle
-Only the weld: founder approval (after external review) → atomic
-bookkeeping commit → squash-merge. Nothing else remains.
+nothing
 
 ## The story
 Born from the Web-chat ops leg (the Fleet Continuity brief), queued

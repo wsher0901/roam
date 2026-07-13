@@ -2,10 +2,12 @@
 type: spec
 id: fleet-continuity
 title: Fleet continuity — handoff parks every local lane; liftoff respawns parked benches; wake-lock parks every outcome
-status: open
+status: shipped
 stage: workshop
 branch: docs/fleet-continuity
+pr: 104
 opened: 2026-07-13
+shipped: 2026-07-13
 ---
 # fleet-continuity — Fleet continuity: handoff parks every local lane; liftoff respawns parked benches; wake-lock parks every outcome
 
