@@ -78,8 +78,12 @@ Claude-Design no-write law in
   run /design-sync from a Code session) so every future Design
   project builds with — and self-checks against — roam's actual
   tokens and components. The import is a SNAPSHOT: re-import after
-  any token or component change. (Staged in the
-  [equipment plan](skills/equipment-plan.md).)
+  any token or component change. The Design MCP server is optional
+  terminal access to the same bridge (claude mcp add --scope user
+  --transport http claude-design
+  https://api.anthropic.com/v1/design/mcp) — machine-local config,
+  never this repo. Listed in
+  [SETUP §Staged](SETUP.md#staged--turns-on-when-its-stage-opens).
 - Design draws from the same shared usage pool as chat, Code, and
   Cowork (its old separate allowance is gone) — batch sessions; plan
   before opening.

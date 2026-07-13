@@ -607,7 +607,7 @@ procedures inline in .claude/skills/ (invisible to the vault,
 duplicated laws); memory as PR comments only (dies with the PR page,
 unreadable in Obsidian).
 **Affects:** [CLAUDE.md](../CLAUDE.md) (import shim) ·
-[LAWS.md](LAWS.md) (born) · [PROJECT-POLICY](PROJECT-POLICY.md)
+[LAWS.md](LAWS.md) (born) · [PROJECT-POLICY](SETUP.md)
 (born) · [DASHBOARD](DASHBOARD.md) v5 · docs/memory/ + docs/history/
 (born) · HANDOFF.md + SHIPLOG.md (deleted) · .claude/commands/
 (deleted) · eight skills · session-start hook · settings.json ·
@@ -711,11 +711,11 @@ this entry.
 (bench-first, micro-PR, pacing, stack) — the weave rule stands for
 relationships and retroactivity, but provenance is the
 consolidations' job, and LAWS' header now names the three rationale
-homes ([PROJECT-POLICY](PROJECT-POLICY.md) ·
+homes ([PROJECT-POLICY](SETUP.md) ·
 [DECISION-POLICY](ENGINE.md) · [DECISIONS](DECISIONS.md)).
 The bench-first bullet and the seven-point lane law carry one-line
 whys; the baton law states what the baton IS.
-[PROJECT-POLICY §Workshop choices](PROJECT-POLICY.md#workshop-choices)
+[PROJECT-POLICY §Workshop choices](SETUP.md)
 gains the pacing law — the one LAWS rule not yet consolidated — with
 its [D-009](#d-009--2026-06--pacing-law-finish-first-flexible-cap)
 provenance. [ship](skills/ship.md)'s Preflight now merges current
@@ -730,7 +730,7 @@ anywhere; laws that carry their why are followed better.
 **Alternatives rejected:** trailing citations (still noise; the
 consolidations already exist for this); rebase instead of merge
 (rewrites pushed history).
-**Affects:** [LAWS](LAWS.md) · [PROJECT-POLICY](PROJECT-POLICY.md) ·
+**Affects:** [LAWS](LAWS.md) · [PROJECT-POLICY](SETUP.md) ·
 [ship](skills/ship.md) · [HOME](HOME.md) (ship portrait) · this
 entry.
 
@@ -744,7 +744,7 @@ calculations become numbered OPEN slots in an
 D-number; four founder-raised gaps join the register (aggregation
 law · fact-drift re-validation · learning loop · eval-set gate); one
 invariant makes the explainability boundary explicit;
-[PROJECT-POLICY](PROJECT-POLICY.md) adopts the shared house style:
+[PROJECT-POLICY](SETUP.md) adopts the shared house style:
 one-line italic gloss per section, bold handle per rule, citations
 consolidated into per-section Sources lines.
 **Why:** the founder read "Decision policy" as a policy for
@@ -759,10 +759,73 @@ broken-link state, double ritual overhead for one theme); putting
 the four gaps into rules sections (they are undecided — register
 only).
 **Affects:** [ENGINE](ENGINE.md) (né DECISION-POLICY) ·
-[PROJECT-POLICY](PROJECT-POLICY.md) · [LAWS](LAWS.md) rationale
+[PROJECT-POLICY](SETUP.md) · [LAWS](LAWS.md) rationale
 line · [HOME](HOME.md) (table row, portrait, terms) ·
 [ROADMAP](ROADMAP.md) S3/S5 binding-requirement links ·
 [FACTS](data/FACTS.md) · [SOURCES](data/SOURCES.md) ·
 [decide](skills/decide.md) skill · [DASHBOARD](DASHBOARD.md) (one
 link) · [DECISIONS](DECISIONS.md) / [history/](history/README.md) /
 finalized [specs](specs/README.md) (link targets only) · this entry.
+
+## D-029 — 2026-07 — Corpus writing laws — readability-first; links below prose
+**Decision:** two laws over every living markdown file.
+1. Readability-first: every living md is written for the founder's
+   reading first, bounded only by material cost to Claude's parsing
+   (none identified).
+2. Links-below: no markdown links inside sentences unless
+   necessary; references gather under the text as a Sources block —
+   the literal format, one reference per line, no separators, no
+   trailing periods:
+
+```
+Sources:
+[label](target)
+[label](target)
+```
+
+   Sanctioned inline exceptions: table cells · trailing "->" refs
+   on ROADMAP task lines · the CLAUDE.md import stub · trailing
+   same-sentence refs where a Sources block would be heavier than
+   the single link.
+3. Frozen records (existing DECISIONS entries, docs/history/,
+   finalized specs) are exempt — link repairs only, per the
+   retroactivity law's frozen class; new DECISIONS entries follow
+   the law.
+4. Migration by ratchet: the law binds all new text now; each
+   living file is restyled when the current ops leg reaches it; a
+   leg-end sweep restyles every file the leg didn't touch.
+**Why:** the founder reads these files daily; mid-sentence link
+anchors tax reading without aiding Claude.
+**Alternatives rejected:** big-bang restyle PR (front-loads risk,
+zero functional gain); inline-link status quo (twice flagged by the
+founder).
+**Affects:** every living doc over the ops leg — the PR carrying
+this entry demonstrates the format in [SETUP.md](SETUP.md) · this
+entry.
+
+## D-030 — 2026-07 — Setup consolidation — SETUP.md; equipment-plan and PROJECT-POLICY retired (extends D-024's retirement pattern; amends the D-021 consolidation split)
+**Decision:** [SETUP.md](SETUP.md) is the single listing-style
+inventory (stack · once-and-done repo-side · once-and-done cloud ·
+per-machine · staged-by-stage; status lives on the DASHBOARD, never
+here). equipment-plan retires — content re-homed: Design staging →
+DESIGN-KICKOFF; stack/plugins/MCPs/staged tooling and the subagent
+plan → SETUP §Staged; runtime-tool note → SETUP §Staged (S3.T1
+line). PROJECT-POLICY retires — Stack + the
+[D-005](#d-005--2026-06--stack-re-trial-vs-foundation-v1-d-001-upheld--frontend-layer)
+doctrine → SETUP §Stack; the stubs rule → LAWS; whys already live
+in LAWS' glosses and HOME. SETUP.md is the successor-of-record:
+every frozen link to either retired file retargets to SETUP.md (or
+its §Staged anchor for equipment-plan links); frozen prose keeps
+historical names. machine-setup remains the invocable per-machine
+procedure.
+**Why:** LAWS already carried nearly every PROJECT-POLICY rule
+(verified line-by-line); the founder questioned the file twice;
+equipment-plan's content splits cleanly into inventory (SETUP),
+design mechanics (DESIGN-KICKOFF), and explanations (HOME).
+**Alternatives rejected:** keep both files (annotation layer nobody
+reads); merge into LAWS (bloats the every-session load).
+**Affects:** [SETUP.md](SETUP.md) (new) · equipment-plan skill +
+stub (deleted) · PROJECT-POLICY (deleted) ·
+[DESIGN-KICKOFF](DESIGN-KICKOFF.md) ·
+[machine-setup](skills/machine-setup.md) · [LAWS](LAWS.md) ·
+[HOME](HOME.md) · frozen-link retargets · this entry.

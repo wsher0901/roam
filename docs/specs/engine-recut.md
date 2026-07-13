@@ -11,7 +11,7 @@ shipped: 2026-07-13
 ---
 # engine-recut — Consolidation recut: DECISION-POLICY becomes ENGINE (the brain skeleton); PROJECT-POLICY to house style
 **Links:** [ENGINE](../ENGINE.md) ·
-[PROJECT-POLICY](../PROJECT-POLICY.md) · [LAWS](../LAWS.md) ·
+[PROJECT-POLICY](../SETUP.md) · [LAWS](../LAWS.md) ·
 [HOME](../HOME.md) · [ROADMAP](../ROADMAP.md) · Decisions:
 [D-021](../DECISIONS.md#d-021--2026-07--plan-synthesis-principles-re-home-to-decision-policy) ·
 [D-028](../DECISIONS.md#d-028--2026-07--consolidation-recut--decision-policy--engine-brain-skeleton-form-project-policy-house-style-open-register-grows-69-upholds-d-021-extends-the-d-021-consolidation)
@@ -20,7 +20,7 @@ shipped: 2026-07-13
 The engine consolidation becomes an operational skeleton — pipeline
 stages, IO, procedures, rules-in-slots, a loud OPEN register — under
 its true name [ENGINE.md](../ENGINE.md);
-[PROJECT-POLICY](../PROJECT-POLICY.md)
+[PROJECT-POLICY](../SETUP.md)
 adopts the same house style (gloss + bold handles + per-section
 Sources); full retroactive ripple across the corpus.
 
@@ -35,7 +35,7 @@ Sources); full retroactive ripple across the corpus.
 1. Bench birth: branch docs/engine-recut → this spec + memory stub →
    draft PR.
 2. git mv the old consolidation to ENGINE.md (history follows), then
-   overwrite ENGINE.md and [PROJECT-POLICY](../PROJECT-POLICY.md)
+   overwrite ENGINE.md and [PROJECT-POLICY](../SETUP.md)
    with the workshop payloads byte-exact; derive the three
    best-effort anchors (D-014 entry · V1.S6 stage · TELEMETRY §1/§2)
    from their real headings and correct them if they differ.

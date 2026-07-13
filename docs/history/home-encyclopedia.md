@@ -67,7 +67,7 @@ Decisions a future reader should know:
   keeping 100% link integrity.
 - **HOME's `#roadmap-manual` anchor survives verbatim** so
   [ROADMAP](../ROADMAP.md), [DECISIONS](../DECISIONS.md) D-022,
-  [PROJECT-POLICY](../PROJECT-POLICY.md), and a history file link
+  [PROJECT-POLICY](../SETUP.md), and a history file link
   into it unchanged; the retired `#file-ownership` anchor's two
   inbound pointers ([memory/README](../memory/README.md),
   [history/README](README.md)) were rippled to

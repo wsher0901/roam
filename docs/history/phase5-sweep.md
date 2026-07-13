@@ -23,7 +23,7 @@ frontmatter at every repaint, no Obsidian plugin needed anywhere;
 line-ending phantoms; ⑤ the close-lock — released sessions
 physically reject input; ⑥ the micro-PR carve-out sentence caught
 up to reality in [LAWS](../LAWS.md) and
-[PROJECT-POLICY](../PROJECT-POLICY.md), and the pickup stub gained
+[PROJECT-POLICY](../SETUP.md), and the pickup stub gained
 the same narrow merge allowance as its siblings; ⑦ the link checker
 was promoted to `scripts/check-links.mjs` + `npm run check:links` +
 a CI step. Scope held to docs/, .claude/, .gitignore, scripts/, and
@@ -80,7 +80,7 @@ Decisions a future reader should know:
   Needs-you item (whose reason was the plugin install) were
   reworded for the same gate; this task's own memory says the word
   legitimately and lands in history/ at the weld.
-- **[PROJECT-POLICY](../PROJECT-POLICY.md) rode along** with ⑥'s
+- **[PROJECT-POLICY](../SETUP.md) rode along** with ⑥'s
   LAWS truth-up (the brief named only LAWS + the pickup stub): its
   Conventions bullet mirrored the stale three-writer list, and
   leaving it would have kept two truths — the retroactivity law
