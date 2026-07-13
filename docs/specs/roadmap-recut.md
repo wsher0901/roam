@@ -2,12 +2,12 @@
 type: spec
 id: roadmap-recut
 title: ROADMAP recut — plain-language V1, completion criteria, per-family vetting outputs
-status: open
+status: shipped
 stage: workshop
 branch: docs/roadmap-recut
-pr: —
+pr: 87
 opened: 2026-07-13
-shipped: —
+shipped: 2026-07-13
 ---
 # roadmap-recut — ROADMAP recut: plain-language V1, completion criteria, per-family vetting outputs
 **Links:** [ROADMAP](../ROADMAP.md) · [HOME](../HOME.md) · Decisions:

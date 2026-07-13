@@ -1,17 +1,17 @@
 ---
-type: memory
-id: roadmap-recut
-updated: 2026-07-13 · ship (pre-gate) · home PC
+type: history
+slug: roadmap-recut
+shipped: 2026-07-13
+pr: 87
 ---
 # roadmap-recut — ROADMAP recut: plain-language V1, completion criteria, per-family vetting outputs
 
 ## Status
-Complete, awaiting merge. All edits landed as
+Shipped — merged as
+[PR #87](https://github.com/wsher0901/roam/pull/87) on the founder's
+word after the external review. All edits landed as
 [D-026](../DECISIONS.md#d-026--2026-07--roadmap-recut--plain-language-v1-completion-criteria-per-family-vetting-outputs-upholds-d-020-d-022)
-entry + ripple in one commit; every Done-means box verified; PR
-[#87](https://github.com/wsher0901/roam/pull/87) flipped ready. THE
-GATE is special here by the founder's instruction: approval follows
-EXTERNAL REVIEW — do not merge on a casual yes.
+entry + ripple in one commit; every Done-means box verified.
 
 ## What this task is
 A docs-only recut of [ROADMAP](../ROADMAP.md), fully specified in
@@ -29,13 +29,12 @@ SOURCES.md and deletes them. Ticked tasks now link their
 [history/](../history/README.md) stories.
 
 ## Pending issues
-Founder approval pending external review of PR
-[#87](https://github.com/wsher0901/roam/pull/87). Nothing else.
+none
 
 ## Left / idle
-Only the post-approval weld: workshop task, so no ROADMAP tick —
-memory → history/ (slug-keyed) + spec finalize, then squash-merge
-and branch delete.
+Nothing — the weld that landed this file was the last act
+(slug-keyed, no ROADMAP tick; spec finalized in place at
+[../specs/roadmap-recut.md](../specs/roadmap-recut.md)).
 
 ## The story
 Born from the roadmap-recut Web-chat workshop: the founder arrived
@@ -59,8 +58,8 @@ confirms FOUNDATION.md and DASHBOARD.md untouched.
 
 ## Where to look
 - spec: [../specs/roadmap-recut.md](../specs/roadmap-recut.md)
-- PR: [#87](https://github.com/wsher0901/roam/pull/87) (ready,
-  awaiting founder approval after external review)
+- PR: [#87](https://github.com/wsher0901/roam/pull/87)
+  (squash-merged 2026-07-13)
 - decision:
   [D-026](../DECISIONS.md#d-026--2026-07--roadmap-recut--plain-language-v1-completion-criteria-per-family-vetting-outputs-upholds-d-020-d-022)
 - edited files: [ROADMAP](../ROADMAP.md) · [HOME](../HOME.md)
