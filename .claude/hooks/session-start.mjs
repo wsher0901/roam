@@ -2,13 +2,26 @@
 // SessionStart hook: sync main + inject the dashboard into context.
 // Cross-platform (Windows, macOS, Linux, cloud). Must NEVER block or
 // fail a session: every step degrades gracefully and we always exit 0.
-import { execSync } from "node:child_process";
+import { execSync, execFileSync } from "node:child_process";
 import { readFileSync, existsSync, unlinkSync } from "node:fs";
 import { join } from "node:path";
 
 function sh(cmd) {
   try {
     return execSync(cmd, {
+      encoding: "utf8",
+      stdio: ["ignore", "pipe", "pipe"],
+    }).trim();
+  } catch {
+    return null;
+  }
+}
+
+// For commands carrying a variable (e.g. a branch name): argument
+// array + no shell, so metacharacters in ref names can't inject.
+function shFile(cmd, args) {
+  try {
+    return execFileSync(cmd, args, {
       encoding: "utf8",
       stdio: ["ignore", "pipe", "pipe"],
     }).trim();
@@ -40,6 +53,26 @@ sh("git fetch --prune --quiet");
 
 const branch = sh("git rev-parse --abbrev-ref HEAD") ?? "unknown";
 const dirty = sh("git status --porcelain");
+
+// Auto-remove local branches whose upstream is gone (welded
+// elsewhere). Lines marked '+' are checked out in another worktree
+// (a live local lane) and '*' is this session's branch — both are
+// skipped by construction; main is never touched. Deleted tips stay
+// reflog-recoverable (~90 days).
+const goneLocals = (sh("git branch -vv") ?? "")
+  .split("\n")
+  .filter((l) => l.startsWith("  ") && l.includes(": gone]"))
+  .map((l) => l.trim().split(/\s+/)[0])
+  .filter((b) => b && b !== "main");
+for (const b of goneLocals) {
+  const tip = shFile("git", ["rev-parse", "--short", b]);
+  const gone = shFile("git", ["branch", "-D", b]);
+  console.log(
+    gone !== null
+      ? `[hook] removed local branch ${b} (${tip}) — welded elsewhere.`
+      : `[hook] could not remove ${b} — leaving it; mention it in the briefing.`
+  );
+}
 
 // Only fast-forward main, and only when the tree is clean —
 // never yank the rug out from under a lane branch or WIP.
