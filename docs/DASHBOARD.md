@@ -5,7 +5,7 @@ status: living
 ---
 # Dashboard — the state surface
 
-Stamp: 2026-07-13 · ship tail · home PC
+Stamp: 2026-07-13 · handoff · home PC
 Glyphs: 🟢 done · 🟡 ongoing · 🔴 issue · ⚪ idle. Repainted only by
 rituals (pickup when stale · handoff · liftoff · ship's tail) — never
 hand-edited; git outranks this board.
@@ -17,9 +17,9 @@ hand-edited; git outranks this board.
    [WEB-INSTRUCTIONS](WEB-INSTRUCTIONS.md); the box is a copy
    ([history](history/web-instructions.md)).
 2. 🟡 Run the [machine-setup](skills/machine-setup.md) Verify block
-   on each PC — a full pass is unconfirmed on both seats; the
-   [vault lens](skills/machine-setup.md#vault-lens) is now one
-   phrase — say "apply the vault lens" on each seat.
+   on each PC — a full pass is unconfirmed on both seats.
+   [Vault lens](skills/machine-setup.md#vault-lens): applied on the
+   home PC (2026-07-13); on the work PC say "apply the vault lens".
 3. ⚪ [DECISION-POLICY §10](DECISION-POLICY.md#10-open-questions) —
    five open engine questions; parked until
    [V1.S3](ROADMAP.md#v1s3--engine-core--two-families-deep) opens.
@@ -74,13 +74,10 @@ then stating the lane.
 
 ## Threads (non-task)
 
-🟢 Ops — knowledge architecture (Web chat) — COMPLETE: phases 1+2
-([recut](history/foundation-roadmap-recut.md)), 3
-([engine swap](history/engine-swap.md)), 4
-([HOME encyclopedia](history/home-encyclopedia.md)), and 5
-([the sweep](history/phase5-sweep.md)) all shipped.
-⚪ Setup ladder P8 (Web chat) — the T3–T6 relaunch briefs; next up
-now the ops thread is complete.
+none open — founder reported none at the 2026-07-13 handoff. The
+four workshop briefs cut earlier in the Web chat all shipped today
+(see Shipped). The T3–T6 relaunch briefs (ladder step P8) remain
+the queued Web-chat work — tracked as the S1 hold in You-are-here.
 
 ## Shipped (latest — full record: [history/](history/README.md))
 
