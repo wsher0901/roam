@@ -2,18 +2,18 @@
 type: spec
 id: design-kickoff-refresh
 title: DESIGN-KICKOFF refresh — June-2026 Claude Design capabilities
-status: open
+status: shipped
 stage: workshop
 branch: docs/design-kickoff-refresh
-pr: —
+pr: 97
 opened: 2026-07-13
-shipped: —
+shipped: 2026-07-13
 ---
 # design-kickoff-refresh — DESIGN-KICKOFF refresh: June-2026 Claude Design capabilities
 **Links:** [DESIGN-KICKOFF](../DESIGN-KICKOFF.md) ·
 [LAWS](../LAWS.md) · [HOME](../HOME.md) ·
 [equipment plan](../skills/equipment-plan.md) · Decisions: none —
-task-local ([memory](../memory/design-kickoff-refresh.md) records
+task-local ([history](../history/design-kickoff-refresh.md) records
 the mechanism)
 
 ## Goal

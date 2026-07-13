@@ -1,16 +1,18 @@
 ---
-type: memory
-id: design-kickoff-refresh
-updated: 2026-07-13 · ship (to the gate) · work PC
+type: history
+slug: design-kickoff-refresh
+shipped: 2026-07-13
+pr: 97
 ---
 # design-kickoff-refresh — DESIGN-KICKOFF refresh: June-2026 Claude Design capabilities
 
 ## Status
-Complete, awaiting merge — held at THE GATE by the brief's explicit
-"DO NOT MERGE; founder approval follows external review". All
-verification green: 1146 links / 0 broken, "Labs flakiness" grep 0,
-snapshot law present, exactly the three named files in the diff vs
-main, lint + tests + format clean. No deviations.
+Shipped — merged as
+[PR #97](https://github.com/wsher0901/roam/pull/97) on the founder's
+word after the external review. All verification green: 1145 links /
+0 broken, "Labs flakiness" grep 0, snapshot law present, exactly the
+three named files in the diff vs main, lint + tests + format clean.
+No deviations.
 
 ## What this task is
 Refresh the Design rule-carrier —
@@ -26,8 +28,10 @@ founder's workshop brief.
 none
 
 ## Left / idle
-Only the weld (on approval): slug-keyed history move + spec
-finalize, then squash-merge (workshop task — no ROADMAP tick).
+Nothing — the weld that landed this file was the last act
+(slug-keyed, no [ROADMAP](../ROADMAP.md) tick; spec finalized in
+place at
+[../specs/design-kickoff-refresh.md](../specs/design-kickoff-refresh.md)).
 
 ## The story
 Born from a founder-delivered workshop brief (Web chat), payload
@@ -50,5 +54,5 @@ leave the kickoff with this refresh.
   [../specs/design-kickoff-refresh.md](../specs/design-kickoff-refresh.md)
 - the file: [../DESIGN-KICKOFF.md](../DESIGN-KICKOFF.md)
 - the workshop brief (Web chat) — payload + verification list
-- PR: [#97](https://github.com/wsher0901/roam/pull/97) (ready,
-  waiting at the gate)
+- PR: [#97](https://github.com/wsher0901/roam/pull/97)
+  (squash-merged 2026-07-13)
