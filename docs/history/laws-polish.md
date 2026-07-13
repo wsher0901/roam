@@ -1,17 +1,17 @@
 ---
-type: memory
-id: laws-polish
-updated: 2026-07-13 · ship (pre-gate) · home PC
+type: history
+slug: laws-polish
+shipped: 2026-07-13
+pr: 89
 ---
 # laws-polish — LAWS polish: glossed lane law, provenance to consolidations, ship syncs with main
 
 ## Status
-Complete, awaiting merge. All edits landed as
+Shipped — merged as
+[PR #89](https://github.com/wsher0901/roam/pull/89) on the founder's
+word after the external review. All edits landed as
 [D-027](../DECISIONS.md#d-027--2026-07--laws-polish--glossed-lane-law-provenance-re-homed-to-consolidations-ship-syncs-with-main-before-the-weld)
-entry + ripple in one commit; every Done-means box verified; PR
-[#89](https://github.com/wsher0901/roam/pull/89) flipped ready. THE
-GATE is special here by the founder's instruction: approval follows
-EXTERNAL REVIEW — do not merge on a casual yes.
+entry + ripple in one commit; every Done-means box verified.
 
 ## What this task is
 A docs-only polish of the constitution, fully specified in the
@@ -31,13 +31,12 @@ mirrored in [LAWS §Workflow](../LAWS.md#workflow-non-negotiable) and
 semantics changed.
 
 ## Pending issues
-Founder approval pending external review of PR
-[#89](https://github.com/wsher0901/roam/pull/89). Nothing else.
+none
 
 ## Left / idle
-Only the post-approval weld: workshop task, so no ROADMAP tick —
-memory → history/ (slug-keyed) + spec finalize, then squash-merge
-and branch delete.
+Nothing — the weld that landed this file was the last act
+(slug-keyed, no ROADMAP tick; spec finalized in place at
+[../specs/laws-polish.md](../specs/laws-polish.md)).
 
 ## The story
 Born from the laws-polish Web-chat workshop: the founder arrived
@@ -55,8 +54,8 @@ exactly the seven intended files.
 
 ## Where to look
 - spec: [../specs/laws-polish.md](../specs/laws-polish.md)
-- PR: [#89](https://github.com/wsher0901/roam/pull/89) (ready,
-  awaiting founder approval after external review)
+- PR: [#89](https://github.com/wsher0901/roam/pull/89)
+  (squash-merged 2026-07-13)
 - decision:
   [D-027](../DECISIONS.md#d-027--2026-07--laws-polish--glossed-lane-law-provenance-re-homed-to-consolidations-ship-syncs-with-main-before-the-weld)
 - edited files: [LAWS](../LAWS.md) ·

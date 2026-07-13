@@ -2,12 +2,12 @@
 type: spec
 id: laws-polish
 title: LAWS polish — glossed lane law, provenance to consolidations, ship syncs with main
-status: open
+status: shipped
 stage: workshop
 branch: docs/laws-polish
-pr: —
+pr: 89
 opened: 2026-07-13
-shipped: —
+shipped: 2026-07-13
 ---
 # laws-polish — LAWS polish: glossed lane law, provenance to consolidations, ship syncs with main
 **Links:** [LAWS](../LAWS.md) · [PROJECT-POLICY](../PROJECT-POLICY.md) ·
