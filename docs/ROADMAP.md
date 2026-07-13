@@ -8,76 +8,91 @@ Manual — notation, tags, and how to read this file:
 [HOME.md](HOME.md#roadmap-manual).
 
 ## The versions
-| V | Name | Done when |
-|---|---|---|
-| V1 | The demo | a public URL runs the full Suggest→Plan→Edit spine over all five families on the three seeded scenarios, every claim sourced or labeled per the [reliability law](FOUNDATION.md#the-reliability-law) |
-| V2 | Real users | a stranger can sign up, build a real trip, leave, return — and everything holds |
-| V3 | The product | charging money for it is defensible |
-| Pool | — | unversioned sockets + [IDEAS.md](IDEAS.md) inbox |
+| V    | Name        | Completion criteria                                                                                                                                                                                            |
+| ---- | ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| V1   | The demo    | a public URL runs the full Suggest→Plan→Edit spine over all five [check families](FOUNDATION.md#what-roam-checks) on the three seeded scenarios, every claim sourced or labeled per the [reliability law](FOUNDATION.md#the-reliability-law) |
+| V2   | Real users  | a stranger can sign up, build a real trip, leave, return — and everything holds                                                                                                                      |
+| V3   | The product | charging money for it is defensible                                                                                                                                                                  |
+| Pool | —           | unversioned sockets + [IDEAS.md](IDEAS.md) inbox                                                                                                                                                     |
 
-Depth (rolling wave,
+This plan is living, never a promise: it changes whenever reality
+disagrees, and every change lands as a decision — a D-number via
+[decide](skills/decide.md) — nothing here is fixed. Detail fades on
+purpose (the rolling wave,
 [D-022](DECISIONS.md#d-022--2026-07--version-ladder--lifespan-split-amends-d-004)):
-active version fully staged and tasked · next version a rough bucket ·
-the one after name-only · pool unversioned.
+the active version is fully staged and tasked, the next is a rough
+bucket, the one after only a name, and the rest waits in the
+[Pool](#pool--unversioned-sockets).
 
 ## V1 — The demo · ACTIVE
-For: leisure travelers, any party type. Demo-first, users soon — built
-real and deployable, no day-one onboarding or billing; nothing in V1
-may require a rewrite when accounts arrive.
-Refuses (lifts per-version, by roadmap edit only): booking, payments,
-reservations, or any transaction · live fare/price scraping (cost =
-honest estimate ranges) · mid-trip features · social/sharing · mobile
-(web only).
-Ships: all five check families — two deep first
-([S3](#v1s3--engine-core--two-families-deep)), three more as plug-in
-proof ([S7](#v1s7--the-other-three-families-plug-in-proof)); trending
-via general signals only.
-Active stages:
-[V1.S1](#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
-and [V1.S2](#v1s2--skeleton--design-foundations-parallel-lane-with-s1)
-(parallel lanes). All later stages queued in order.
+The goal: one public URL where a visitor watches Roam do its whole
+job — suggest trips from as little as origin + dates, build a full
+day-by-day plan, and survive any edit with whole-plan re-validation —
+across three seeded scenarios, every claim sourced or labeled per the
+[reliability law](FOUNDATION.md#the-reliability-law). Built for
+leisure travelers, any party type. Demo-first but real: deployable
+production code, no onboarding or billing yet, and nothing that would
+need a rewrite when accounts arrive in V2.
+Refuses (each lifts in a later version, by roadmap edit only):
+booking, payments, reservations, or any transaction · live fare/price
+scraping — cost means honest estimate ranges · mid-trip features ·
+social/sharing · mobile (web only).
+Ships: all five [check families](FOUNDATION.md#what-roam-checks) —
+two built deep, three more added as proof the plug-in promise holds;
+trending via general signals only.
 
 ### V1.S1 — Data Definition (the gate; docs + spike scripts only, no app code)
-Done when: every V1 fact has a vetted source with a successful spike
+Completion criteria: every V1 fact has a vetted source with a successful spike
 fetch, a reliability grade, and a freshness window — and the storage
 schema is written.
 - [x] V1.S1.T1 [P] Fact inventory — enumerate every fact each of the
       five families needs (what it is, which spine step uses it,
-      geographic scope, freshness need) -> [docs/data/FACTS.md](data/FACTS.md)
+      geographic scope, freshness need) -> [docs/data/FACTS.md](data/FACTS.md) ·
+      [history](history/v1.s1.t1.md)
 - [x] V1.S1.T2 [P] Vet sources: Weather — forecast + climatology
       candidates (e.g. Open-Meteo), spike fetch script, grade +
-      freshness + coverage + cost -> entry in [docs/data/SOURCES.md](data/SOURCES.md)
+      freshness + coverage + cost -> entry in [docs/data/SOURCES.md](data/SOURCES.md) ·
+      [history](history/v1.s1.t2.md)
 - [ ] V1.S1.T3 [P] Vet sources: Sky & sea — sun/moon math, tides (NOAA
-      for US; global gaps labeled), aurora/nature timing; same outputs
+      for US; global gaps labeled), aurora/nature timing; same
+      outputs -> `docs/data/SOURCES-sky-sea.md` (lane-disjoint per
+      [D-020](DECISIONS.md#d-020--2026-07--parallel-lanes-v2-native-lanes-replace-hand-built-orchestration);
+      consolidated at T7)
 - [ ] V1.S1.T4 [P] Vet sources: Feasibility — places + opening hours,
       routing/distances, seasonal closures, cost-estimate basis; same
-      outputs
+      outputs -> `docs/data/SOURCES-feasibility.md`
 - [ ] V1.S1.T5 [P] Vet sources: Time & transport — airport data,
       flight-schedule feeds, ground transit; grade hardest (most
-      data-gated family); same outputs
+      data-gated family); same outputs ->
+      `docs/data/SOURCES-time-transport.md`
 - [ ] V1.S1.T6 [P] Vet sources: Crowds & calendar — public holidays,
-      school breaks, events feeds, trending-general method; same outputs
+      school breaks, events feeds, trending-general method; same
+      outputs -> `docs/data/SOURCES-crowds-calendar.md`
 - [ ] V1.S1.T7 [seq after T1–T6] Storage schema + source registry —
       Postgres schema for the fact cache (value, source, confidence,
       fetched_at, freshness window), places, plans, plan_versions;
-      consolidated [docs/data/SOURCES.md](data/SOURCES.md); any fact lacking a reliable
-      source explicitly marked "LLM-research grade -> rendered as
-      unverified"
+      consolidate the four `SOURCES-<family>.md` files into
+      [docs/data/SOURCES.md](data/SOURCES.md) and delete them; any
+      fact lacking a reliable source explicitly marked "LLM-research
+      grade -> rendered as unverified"
       Also covers: [docs/data/TELEMETRY.md](data/TELEMETRY.md) tables (events, claim
       ledger, eval runs, actuals, source health) and the bitemporal
       append-only fact-cache law ([D-014](DECISIONS.md#d-014--2026-06--telemetry-posture-capture-now-use-later), [D-015](DECISIONS.md#d-015--2026-06--data-asset-law-bitemporal-append-only-license-segmented)).
 
 ### V1.S2 — Skeleton & design foundations (parallel lane with S1)
-Done when: a styled shell is deployed on Vercel with CI green and the
+Completion criteria: a styled shell is deployed on Vercel with CI green and the
 database connected.
 - [x] V1.S2.T1 [P] App scaffold — Next.js App Router + TypeScript +
       Tailwind v4 + shadcn/ui; repo layout with isolated engine/ module
-      dir; ESLint/Prettier; Vitest with one passing test
+      dir; ESLint/Prettier; Vitest with one passing test ·
+      [history](history/v1.s2.t1.md)
 - [x] V1.S2.T2 [seq after T1] Deploy + CI — Vercel project with PR
       preview links; GitHub Actions lint + test so /ship's gate is
-      real; .env.example hygiene (public repo: secrets never committed)
+      real; .env.example hygiene (public repo: secrets never
+      committed) · [history](history/v1.s2.t2.md)
 - [x] V1.S2.T3 [seq after T1] Supabase wiring — project, pooled
-      connection, server-side client, env plumbing
+      connection, server-side client, env plumbing ·
+      [history](history/v1.s2.t3.md)
 - [ ] V1.S2.T4 [seq after [V1.S1.T7](#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code) and T3] Schema migration — implement
       the S1 schema as migrations; minimal seed data
 - [ ] V1.S2.T5 [P after T1] Design foundations — tokens (palette, type
@@ -87,7 +102,7 @@ database connected.
 ### V1.S3 — Engine core + two families deep
 Binding requirements: [DECISION-POLICY §6–§8](DECISION-POLICY.md#6-preferences-are-defaults-not-blinders)
 (canonical since [D-021](DECISIONS.md#d-021--2026-07--plan-synthesis-principles-re-home-to-decision-policy)).
-Done when: a CLI harness returns scored, sourced, explained verdicts
+Completion criteria: a CLI harness returns scored, sourced, explained verdicts
 for any destination + dates using Weather and Sky & sea.
 - [ ] V1.S3.T1 [seq] Check contract + orchestrator — CheckModule
       interface; Verdict shape (score, confidence, source,
@@ -112,7 +127,7 @@ for any destination + dates using Weather and Sky & sea.
       [docs/data/TELEMETRY.md §2](data/TELEMETRY.md#2-quality--ground-truth-p5))
 
 ### V1.S4 — Suggest
-Done when: floor input (origin + dates) streams back ranked, reasoned
+Completion criteria: floor input (origin + dates) streams back ranked, reasoned
 trip options in the app.
 - [ ] V1.S4.T1 [seq] Brain endpoint — AI SDK streaming route; system
       prompt v1; however-much-input -> structured TripQuery via
@@ -125,7 +140,7 @@ trip options in the app.
 ### V1.S5 — Plan
 Binding requirements: [DECISION-POLICY §6–§8](DECISION-POLICY.md#6-preferences-are-defaults-not-blinders)
 (canonical since [D-021](DECISIONS.md#d-021--2026-07--plan-synthesis-principles-re-home-to-decision-policy)).
-Done when: selecting an option yields a persisted day-by-day plan
+Completion criteria: selecting an option yields a persisted day-by-day plan
 rendered on timeline + map.
 - [ ] V1.S5.T1 [seq] Plan builder — sequence activities by scores,
       daylight, opening hours; persist plan + snapshot version 1
@@ -135,7 +150,7 @@ rendered on timeline + map.
       synced with timeline selection
 
 ### V1.S6 — Edit + revalidate (the money moment)
-Done when: dragging anything triggers whole-plan re-validation with
+Completion criteria: dragging anything triggers whole-plan re-validation with
 streamed verdicts, and any version reverts in one click.
 - [ ] V1.S6.T1 [seq] Revalidation path — perturbation -> full re-score
       diff (what improved, what broke, why)
@@ -145,7 +160,7 @@ streamed verdicts, and any version reverts in one click.
       revert, change annotations
 
 ### V1.S7 — The other three families (plug-in proof)
-Done when: all five families run in every spine step with zero
+Completion criteria: all five families run in every spine step with zero
 engine-core changes.
 - [ ] V1.S7.T1 [P] Feasibility module — hours, closures, distances,
       cost estimate ranges
@@ -156,7 +171,7 @@ engine-core changes.
       events, trending-general
 
 ### V1.S8 — Demo polish
-Done when: a public demo URL runs three seeded wow scenarios smoothly.
+Completion criteria: a public demo URL runs three seeded wow scenarios smoothly.
 - [ ] V1.S8.T1 [P] Motion + visual pass — loading choreography,
       transitions, empty states
 - [ ] V1.S8.T2 [P] Reliability surfacing audit — error/edge handling;
