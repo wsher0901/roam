@@ -1,15 +1,18 @@
 ---
 type: memory
 id: engine-recut
-updated: 2026-07-13 · recut landed · work PC
+updated: 2026-07-13 · ship (to the gate) · work PC
 ---
 # engine-recut — Consolidation recut: DECISION-POLICY becomes ENGINE; PROJECT-POLICY to house style
 
 ## Status
-Content work complete on the branch; verification and ship-to-gate
-are next. The rename, both payload rewrites, the
+Complete, awaiting merge — held at THE GATE by the brief's explicit
+"DO NOT MERGE; founder approval follows external review". All
+verification green: 1124 links / 0 broken, lint clean, 3/3 tests,
+zero old-filename hits in tracked files, zero old anchors repo-wide,
+ROADMAP checkboxes untouched. The rename, both payload rewrites, the
 [D-028](../DECISIONS.md#d-028--2026-07--consolidation-recut--decision-policy--engine-brain-skeleton-form-project-policy-house-style-open-register-grows-69-upholds-d-021-extends-the-d-021-consolidation)
-entry, and the full retroactive ripple are all in one commit, per
+entry, and the full retroactive ripple landed in one commit, per
 the [decide](../skills/decide.md) same-commit law.
 
 ## What this task is
@@ -24,12 +27,12 @@ lines). Full retroactive ripple across the corpus; no rule-semantics
 change anywhere.
 
 ## Pending issues
-none — awaiting verification, then THE GATE (founder approval
-follows external review; DO NOT MERGE was explicit in the brief).
+none — the PR is flipped ready and waits at THE GATE for the
+founder's yes after external review.
 
 ## Left / idle
-Verification suite (check-links · greps · lint · tests · ROADMAP
-diff check) · ship to THE GATE.
+Only the weld (on approval): ROADMAP has no checkbox for a workshop
+task — slug-keyed history move + spec finalize, then squash-merge.
 
 ## The story
 Born from a founder-delivered workshop brief (Web chat), payloads

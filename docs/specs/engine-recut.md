@@ -51,18 +51,38 @@ Sources); full retroactive ripple across the corpus.
    merge; founder approval follows external review.
 
 ## Done means
-- [ ] Both files byte-match the workshop payloads (modulo the
+- [x] Both files byte-match the workshop payloads (modulo the
       sanctioned anchor corrections of step 2)
-- [ ] "DECISION-POLICY" appears nowhere in the repo as a link target
+- [x] "DECISION-POLICY" appears nowhere in the repo as a link target
       and nowhere in living-doc prose
-- [ ] Every old section anchor repaired per the map; old anchors
+- [x] Every old section anchor repaired per the map; old anchors
       absent repo-wide
-- [ ] `node scripts/check-links.mjs` passes
-- [ ] Lint + tests green
-- [ ] ROADMAP checkboxes unchanged
+- [x] `node scripts/check-links.mjs` passes (1124 links, 0 broken)
+- [x] Lint + tests green
+- [x] ROADMAP checkboxes unchanged
 
 ## Deviations
-<filled by ship: anything done differently than planned — or "none">
+- One sanctioned anchor correction inside the ENGINE payload: the
+  D-014 entry anchor (the payload's guess did not match the real
+  heading "Telemetry posture: capture now, use later"); the V1.S6
+  and TELEMETRY §1/§2 anchors were already correct.
+- [HOME](../HOME.md)'s consolidations portrait was a JOINT block
+  (PROJECT-POLICY + the old file). Replacing its body verbatim would
+  have erased PROJECT-POLICY's only portrait, so it was split in
+  two: PROJECT-POLICY keeps a portrait distilled from the old joint
+  text; ENGINE carries the founder's verbatim paragraph.
+- [DECISIONS](../DECISIONS.md) D-021's decision line spelled the old
+  filename (with suffix) inside link TEXT; the text kept the
+  historical name but dropped the suffix — the only reading that
+  satisfies both the frozen-prose law and the zero-hit grep.
+- [ROADMAP](../ROADMAP.md)'s binding-requirements lines keep the
+  literal "§6–§8" per the brief; the old rules now sit in
+  [ENGINE](../ENGINE.md) §5/§6/§8, so the range reads a hair loose —
+  flagged in memory, not reworded (out of brief).
+- The payloads and the verbatim HOME paragraph carry bare
+  roadmap-ID mentions (V1.S3, V1.S4…) by design — the byte-match
+  Done-means outranks weave-lint inside founder-fixed text; their
+  Sources lines carry the links.
 
 ## Open questions
 none
