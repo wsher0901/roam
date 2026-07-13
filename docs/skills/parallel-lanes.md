@@ -17,8 +17,9 @@ Every lane
    draft PR pushed to origin BEFORE any session exists;
 2. runs the canary handshake before real work — its first act is a
    trivial push; the cockpit writes airborne-or-failed into the
-   pre-birthed memory; a lane seeing failed/aborted, or no
-   acknowledgment, self-terminates;
+   pre-birthed memory; a lane seeing failed/aborted, a Status it does not
+   own (parked · respawned · superseded), or no acknowledgment,
+   self-terminates;
 3. pushes every commit;
 4. never shares a file with any sibling;
 5. writes ITS OWN memory at four moments — handshake claim, each
@@ -46,11 +47,20 @@ seat; only ritual stamps name seats.
    origin.
 6. Only then spawn the worker.
 
+## Respawn on an existing bench (liftoff adopt)
+A parked lane's bench already lives on origin — skip birth. The
+cloud worker's first act is the canary ON that branch — memory
+Status → "claimed for respawn by <vehicle> — <date>" — then WAIT;
+the cockpit ack overwrites the parked Status with "airborne ·
+<url> · <date>". Everything after — diary, PR speech, landing — is
+the ordinary lane law.
+
 ## Canary handshake (both sides)
 - Lane side: first act on waking is one trivial commit — memory
   Status → "claimed by <vehicle> — <date>" — pushed to its branch;
   then WAIT for the cockpit's acknowledgment in memory before real
-  work. Seeing "failed/aborted", or no acknowledgment after the
+  work. Seeing "failed/aborted", a Status this lane does not own
+  (parked · respawned · superseded), or no acknowledgment after the
   timeout: self-terminate cleanly (push whatever exists, stop).
 - Cockpit side: watch for the canary. On arrival, write "airborne ·
   <vehicle or url> · <date>" into the lane's memory Status and push.
@@ -64,6 +74,14 @@ seat; only ritual stamps name seats.
 2. Each decision or dead end, as it happens.
 3. The moment it blocks — with a matching `BLOCKED:` PR comment.
 4. Completion — the final rewrite BEFORE flipping the PR ready.
+
+## Wake-lock & parking
+On ANY resume or wake, a lane re-reads its memory Status FIRST. A
+Status it does not own — parked · respawned · superseded · failed —
+means: push nothing new, terminate. After completion, a `BLOCKED:`,
+or a failed spawn, a lane PARKS: every outcome is already in its
+memory, and nothing continues without a founder-initiated action
+(the merge word, a Needs-you answer, a fresh dispatch).
 
 ## Vehicles
 - LOCAL — the mid-session default per the

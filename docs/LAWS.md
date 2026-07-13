@@ -108,9 +108,9 @@ The LANE LAW (seat-blind — identical local or cloud): every lane
    rescuable from its first minute;
 2. runs the canary handshake before real work — its first act is a
    trivial push; the cockpit writes airborne-or-failed into the
-   pre-birthed memory; a lane seeing failed/aborted, or silence past
-   the timeout (~10 min cloud, ~2 local), self-terminates after
-   pushing what exists — a worker that cannot push is a zombie
+   pre-birthed memory; a lane seeing failed/aborted, a Status it does not own (parked ·
+   respawned · superseded), or silence past the timeout (~10 min
+   cloud, ~2 local), self-terminates after pushing what exists — a worker that cannot push is a zombie
    writing into the void;
 3. pushes every commit — unpushed work does not exist;
 4. never shares a file with any sibling — merges cannot collide by
@@ -125,6 +125,11 @@ The LANE LAW (seat-blind — identical local or cloud): every lane
    no merges: "done" must keep meaning founder-approved and merged.
 Seat-invariance law: a task's artifacts must be indistinguishable by
 seat; only ritual stamps name seats.
+- Park protocol: handoff FULL parks every live local lane —
+  rescue-save (wip commit + push) only if the tree holds unsaved
+  work, then ONE stamped Status line in the lane's memory. That
+  step is the only moment the cockpit may touch a lane's tree or
+  diary mid-flight; liftoff is the only road from parked to cloud.
 Baton law: exactly one cockpit — the session the founder is driving;
 the baton is the right to be that one driving session.
 Claimed by pickup on fresh origin; released by FULL handoff or
