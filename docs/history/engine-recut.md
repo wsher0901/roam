@@ -24,7 +24,7 @@ The engine consolidation is renamed to its true name —
 engine's own shape: ten pipeline stages with inputs, outputs,
 procedures, and rules-in-slots, plus a loud numbered OPEN register
 for everything not yet decided (filling a slot takes a D-number).
-[PROJECT-POLICY](../PROJECT-POLICY.md) adopts the same house style
+[PROJECT-POLICY](../SETUP.md) adopts the same house style
 (italic gloss per section, bold rule handles, per-section Sources
 lines). Full retroactive ripple across the corpus; no rule-semantics
 change anywhere.
@@ -99,5 +99,5 @@ Execution notes and judgment calls, in order:
 - decision:
   [D-028](../DECISIONS.md#d-028--2026-07--consolidation-recut--decision-policy--engine-brain-skeleton-form-project-policy-house-style-open-register-grows-69-upholds-d-021-extends-the-d-021-consolidation)
 - the two rewritten files: [../ENGINE.md](../ENGINE.md) ·
-  [../PROJECT-POLICY.md](../PROJECT-POLICY.md)
+  [../PROJECT-POLICY.md](../SETUP.md)
 - the workshop brief (Web chat) — payloads + anchor map + mechanism

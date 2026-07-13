@@ -15,12 +15,10 @@ unverifiable is labeled unverified — the
 [reliability law](FOUNDATION.md#the-reliability-law). Full identity:
 [FOUNDATION.md](FOUNDATION.md).
 
-Four documents govern the workshop; this page explains all of them.
-[LAWS.md](LAWS.md) INSTRUCTS — the universal rules every session
-loads and must obey. The two consolidations hold STANDING CHOICES with
-their reasons: [PROJECT-POLICY.md](PROJECT-POLICY.md) for how WE
-work, [ENGINE.md](ENGINE.md) for how ROAM'S ENGINE thinks — the
-engine on paper. [DECISIONS.md](DECISIONS.md) holds HISTORY — every choice
+Three documents govern the workshop; this page explains all of
+them. [LAWS.md](LAWS.md) INSTRUCTS — the universal rules every
+session loads and must obey. [ENGINE.md](ENGINE.md) holds the
+STANDING CHOICES of the product's brain — the engine on paper. [DECISIONS.md](DECISIONS.md) holds HISTORY — every choice
 as an append-only D-number with its rationale and the alternatives
 it rejected. THIS FILE answers "how does anything work, and why is
 it like that": it explains and links, holds ZERO live state, and
@@ -38,7 +36,8 @@ down and talking — never by content here.
 | What's the plan, in what order? | [ROADMAP.md](ROADMAP.md), read with the [Roadmap manual](#roadmap-manual) |
 | Where are we right now? | [DASHBOARD.md](DASHBOARD.md) — or just talk: cockpit sessions brief unprompted ([pickup](skills/pickup.md)) |
 | What are the working laws? | [LAWS.md](LAWS.md) |
-| Why did we choose X? | [DECISIONS.md](DECISIONS.md); consolidated: [PROJECT-POLICY](PROJECT-POLICY.md) (workshop) · [ENGINE](ENGINE.md) (engine) |
+| Why did we choose X? | [DECISIONS.md](DECISIONS.md); engine rules consolidated: [ENGINE](ENGINE.md) |
+| What does the workshop run on? | [SETUP.md](SETUP.md) |
 | How does anything work around here? | [§The mechanisms](#the-mechanisms) |
 | What does a term mean? | [§Terms](#terms) |
 | What's the contract of a task? | its spec in [docs/specs/](specs/README.md) |
@@ -103,7 +102,7 @@ Obsidian READS: the vault is docs/; quick capture goes only into
 | [ROADMAP.md](ROADMAP.md) | the version ladder — versions → stages → task checkboxes; the ONLY stored task state | structure via [decide](skills/decide.md); ticks via [ship](skills/ship.md)'s weld | living, rolling-wave depth |
 | [DASHBOARD.md](DASHBOARD.md) | the rendered state surface | rituals only — never hand-edited | living; repainted at ritual moments, never trusted over git |
 | [DECISIONS.md](DECISIONS.md) | the decision log, one D-number per choice | [decide](skills/decide.md) | append-only; entries are never rewritten |
-| [PROJECT-POLICY.md](PROJECT-POLICY.md) | how WE work — standing workshop choices + rationale | [decide](skills/decide.md) ripples; invents nothing | living consolidation |
+| [SETUP.md](SETUP.md) | everything the workshop runs on — stack, configs, tools; once-and-done vs per-machine vs staged | ops PRs | living |
 | [ENGINE.md](ENGINE.md) | the engine on paper — pipeline stages, decided rules in slots, OPEN register | [decide](skills/decide.md) ripples; invents nothing | living consolidation; seeds the [V1.S3](ROADMAP.md#v1s3--engine-core--two-families-deep) contract |
 | [IDEAS.md](IDEAS.md) | the single untriaged inbox — no Issues, no boards ([D-023](DECISIONS.md#d-023--2026-07--universal-draft-pr-at-birth--micro-pr-carve-out-recut-amends-d-002-d-008-d-020)) | Claude Code, the moment an idea or defect is voiced | lines leave only by triage into [ROADMAP](ROADMAP.md) via decide |
 | [DESIGN-KICKOFF.md](DESIGN-KICKOFF.md) | the Claude Design session preamble + governance rules | ops PRs | living until the repo-synced design system replaces it |
@@ -138,7 +137,7 @@ Without it, "is this Roam?" would be re-litigated in every
 conversation, and scope would drift with whoever spoke last. It is
 read at judgment moments — [ship](skills/ship.md)'s PR pre-review,
 lane pre-review, [decide](skills/decide.md)'s ripple scan,
-[equipment vetting](skills/equipment-plan.md), the
+[equipment vetting](SETUP.md#staged--turns-on-when-its-stage-opens), the
 [Design kickoff](DESIGN-KICKOFF.md)'s identity line — and reaches
 the engine code through [ENGINE](ENGINE.md)'s seeding.
 
@@ -167,12 +166,6 @@ so settled questions stay settled. Without it the same debates
 would replay forever, and nobody could tell a principle from an
 accident.
 
-**[PROJECT-POLICY](PROJECT-POLICY.md)** is the workshop
-consolidation: every standing choice about how this project is
-built and run, each with its rationale and sources. It invents
-nothing; it exists so a rule never has to be reassembled from a
-trail of D-numbers. Without it, policy would be archaeology.
-
 **[ENGINE](ENGINE.md)** — The engine's blueprint, shaped like the
 engine itself: ten pipeline stages, each with inputs, outputs, a
 short procedure, its binding rules, and a Sources line. What is
@@ -181,6 +174,12 @@ in the Open register — filling one takes a D-number. The V1.S3
 contract and V1.S4 brain prompt are written FROM this file; engine
 PRs are reviewed AGAINST it. It grows by accretion: new sources,
 families, and metrics plug into stages; the shape stays.
+
+### SETUP
+The workshop's inventory, pure listing: the stack, what is
+configured once in the repo or the cloud, what every machine owes
+(machine-setup is the skill that pays it), and what is staged for a
+future stage. Status never lives here — the DASHBOARD holds it.
 
 **[specs/](specs/README.md)** holds each task's stable contract —
 goal, scope edges, plan, Done-means — born from the discussion that
@@ -561,8 +560,8 @@ the skill and its firing description, and a one-line body — "Read
 docs/skills/<name>.md and follow it exactly." A stub that only
 points cannot drift from its procedure
 ([D-024](DECISIONS.md#d-024--2026-07--architecture-v2-memoryhistory-narrative-layer-dashboard-as-sole-state-surface-rituals-as-skills-amends-d-008-retires-handoffmd--shiplogmd);
-rationale consolidated in
-[PROJECT-POLICY §Workshop choices](PROJECT-POLICY.md#workshop-choices)).
+now a law in
+[LAWS §Knowledge & tracking](LAWS.md#knowledge--tracking)).
 
 Skills are model-invoked: the stub's description is what the model
 reads to know WHEN to fire — leaving phrases summon
@@ -695,8 +694,7 @@ the link for the full story.
 - **seat-invariance** — the law that a task's artifacts must be
   indistinguishable by seat — same birth, same format, same
   quality, wherever made. Home:
-  [LAWS §Parallel lanes & cloud](LAWS.md#parallel-lanes--cloud) ·
-  [PROJECT-POLICY §Workshop choices](PROJECT-POLICY.md#workshop-choices).
+  [LAWS §Parallel lanes & cloud](LAWS.md#parallel-lanes--cloud).
 - **bench-first** — the universal birth order: branch → spec (if
   discussed) → memory stub → draft PR, all pushed to origin BEFORE
   any session works the task
@@ -706,6 +704,11 @@ the link for the full story.
   session, or cloud session) flying one task on its own branch.
   Home: [§Lanes, local & cloud](#lanes-local--cloud) ·
   [parallel-lanes](skills/parallel-lanes.md).
+- **exploratory subagents** — parallel research Claude spawns
+  inside one task's own session; no branch, no spec, no PR —
+  distinct from roadmap [P] lanes, which are separate sessions on
+  separate branches. Home:
+  [SETUP §Staged](SETUP.md#staged--turns-on-when-its-stage-opens).
 - **the lane law** — the seat-blind rulebook every lane obeys:
   bench-first birth, canary handshake, push every commit, share no
   file, keep its own memory, speak through its PR, never write
@@ -980,7 +983,7 @@ rewrite. Frontend layer: Tailwind v4 + shadcn/ui on Base UI, Motion,
 MapLibre GL, dnd-kit, the Vercel AI SDK ("AI SDK UI" flavor),
 TanStack Query + Zustand. Doctrine: stream-first, cache-heavy,
 parallel fan-out, DB co-located. Canonical, with sources:
-[PROJECT-POLICY §Stack](PROJECT-POLICY.md#stack)
+[SETUP §Stack](SETUP.md#stack)
 ([D-001](DECISIONS.md#d-001--2026-06--tech-stack) ·
 [D-005](DECISIONS.md#d-005--2026-06--stack-re-trial-vs-foundation-v1-d-001-upheld--frontend-layer) ·
 [D-007](DECISIONS.md#d-007--2026-06--shadcnui-builds-on-base-ui-not-radix)).
@@ -997,12 +1000,11 @@ test on every PR — [ship](skills/ship.md)'s gate is real).
 [parallel-lanes](skills/parallel-lanes.md) — the lane manual
 (consulted, not fired) ·
 [machine-setup](skills/machine-setup.md) — per-machine setup and
-verify ·
-[equipment-plan](skills/equipment-plan.md) — stage-gated tooling.
+verify.
 
 **MCPs, plugins, subagents.** Stage-gated — tooling is added only
-when its roadmap stage opens, never stockpiled; the ladder and its
-reasons live in [equipment-plan](skills/equipment-plan.md)
+when its roadmap stage opens, never stockpiled; the ladder lives in
+[SETUP §Staged](SETUP.md#staged--turns-on-when-its-stage-opens)
 (canonical). Shared plugin switches live in
 `.claude/settings.json`; machine-local plugins and every token live
 in `.claude/settings.local.json` and local MCP config — the repo is

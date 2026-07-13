@@ -35,10 +35,11 @@ status: living
 6. VS Code: Settings Sync ON (personal GitHub), Auto Save, word wrap.
 7. Optional but recommended: npx ccstatusline@latest — persistent
    status bar (model, branch/worktree, context %, weekly usage).
-8. MCPs only when their stage calls for them (see the
-   [equipment plan](equipment-plan.md)); tokens stay local.
+8. MCPs only when their stage calls for them (see
+   [SETUP §Staged](../SETUP.md#staged--turns-on-when-its-stage-opens));
+   tokens stay local.
 9. Vercel CLI when S2+ work touches deploys: npm i -g vercel, then
-   vercel login (work PC currently missing it).
+   vercel login.
 
 ## Vault lens
 

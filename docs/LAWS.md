@@ -7,9 +7,7 @@ status: living
 
 Loaded into every session via the root CLAUDE.md import (`@docs/LAWS.md`).
 Universal laws only. Manuals and explanations: [HOME.md](HOME.md).
-Rationale and sources for every law:
-[PROJECT-POLICY.md](PROJECT-POLICY.md) ·
-[ENGINE.md](ENGINE.md) ·
+Rationale and sources for every law: [ENGINE.md](ENGINE.md) ·
 [DECISIONS.md](DECISIONS.md).
 Procedures: [docs/skills/](skills/). Route new lessons per
 § Self-improvement.
@@ -161,10 +159,13 @@ Mechanics: [parallel-lanes](skills/parallel-lanes.md) ·
   ones promote to these laws or a skill via a normal PR;
   roadmap-level changes → a D-number. Nothing important lives only
   in conversation.
-- Standing choices with rationale: how WE work →
-  [PROJECT-POLICY.md](PROJECT-POLICY.md) · how ROAM'S BRAIN works →
-  [ENGINE.md](ENGINE.md), the engine on paper. Every rule lives in
-  exactly one; the other links it.
+- Standing choices with rationale: how ROAM'S BRAIN works →
+  [ENGINE.md](ENGINE.md), the engine on paper; workshop whys live in
+  these laws' one-line glosses, [HOME](HOME.md), and their D-numbers
+  in [DECISIONS.md](DECISIONS.md).
+- Rituals live as skill stubs in `.claude/skills/` that only point;
+  every procedure lives vault-readable in [docs/skills/](skills/) —
+  a stub cannot drift from its procedure.
 - Claude Design is a no-write surface: only extracted values (tokens,
   constants) enter the repo via a paste block — never markup or
   bundles.
@@ -186,15 +187,14 @@ Mechanics: [parallel-lanes](skills/parallel-lanes.md) ·
   never repeats. Route first: universal law → here · conditional
   knowledge (when doing X) → the relevant skill · procedure → its
   [docs/skills/](skills/) page · explanation/manual → [HOME](HOME.md)
-  · standing choice + rationale →
-  [PROJECT-POLICY](PROJECT-POLICY.md). This file holds universals
-  only.
+  · standing choice + rationale → its D-number in
+  [DECISIONS.md](DECISIONS.md). This file holds universals only.
 
 ## Tech stack (decided)
 Next.js App Router (TS, React 19) + Supabase + Vercel; brain = Claude
-API server-side; engine isolated in engine/. Consolidated rationale:
-[PROJECT-POLICY §Stack](PROJECT-POLICY.md#stack).
+API server-side; engine isolated in engine/. Inventory + doctrine:
+[SETUP §Stack](SETUP.md#stack).
 
 ## Equipment & stage-gated tooling
-Reference: [equipment-plan](skills/equipment-plan.md). Never
-stockpile — add tools only when their stage opens.
+Reference: [SETUP §Staged](SETUP.md#staged--turns-on-when-its-stage-opens).
+Never stockpile — add tools only when their stage opens.

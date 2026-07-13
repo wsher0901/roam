@@ -20,7 +20,7 @@ dropped its four inline D-citations and gained one-line whys instead
 (provenance lives in the consolidations, which the header now
 names); the pacing law — the one LAWS rule not yet consolidated —
 landed in
-[PROJECT-POLICY §Workshop choices](../PROJECT-POLICY.md#workshop-choices)
+[PROJECT-POLICY §Workshop choices](../SETUP.md)
 with its
 [D-009](../DECISIONS.md#d-009--2026-06--pacing-law-finish-first-flexible-cap)
 provenance; and [ship](../skills/ship.md)'s Preflight gained the
@@ -59,6 +59,6 @@ exactly the seven intended files.
 - decision:
   [D-027](../DECISIONS.md#d-027--2026-07--laws-polish--glossed-lane-law-provenance-re-homed-to-consolidations-ship-syncs-with-main-before-the-weld)
 - edited files: [LAWS](../LAWS.md) ·
-  [PROJECT-POLICY](../PROJECT-POLICY.md) · [ship](../skills/ship.md) ·
+  [PROJECT-POLICY](../SETUP.md) · [ship](../skills/ship.md) ·
   [HOME](../HOME.md)
 - the laws-polish workshop chat (Web) — where edits 1–10 were cut

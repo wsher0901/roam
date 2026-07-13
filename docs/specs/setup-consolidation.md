@@ -12,12 +12,14 @@ shipped: —
 # setup-consolidation — Setup consolidation: SETUP.md born; equipment-plan and PROJECT-POLICY retired; the writing laws adopted
 
 **Links:**
+[SETUP](../SETUP.md) ·
 [LAWS](../LAWS.md) ·
 [HOME](../HOME.md) ·
 [DESIGN-KICKOFF](../DESIGN-KICKOFF.md) ·
 [machine-setup](../skills/machine-setup.md) ·
-Decisions: the next two D-numbers, computed from the
-[DECISIONS](../DECISIONS.md) tail at execution
+Decisions:
+[D-029](../DECISIONS.md#d-029--2026-07--corpus-writing-laws--readability-first-links-below-prose) ·
+[D-030](../DECISIONS.md#d-030--2026-07--setup-consolidation--setupmd-equipment-plan-and-project-policy-retired-extends-d-024s-retirement-pattern-amends-the-d-021-consolidation-split)
 
 ## Goal
 The workshop's tooling inventory lives in one listing-style file

@@ -12,7 +12,7 @@ shipped: 2026-07-13
 # design-kickoff-refresh — DESIGN-KICKOFF refresh: June-2026 Claude Design capabilities
 **Links:** [DESIGN-KICKOFF](../DESIGN-KICKOFF.md) ·
 [LAWS](../LAWS.md) · [HOME](../HOME.md) ·
-[equipment plan](../skills/equipment-plan.md) · Decisions: none —
+[equipment plan](../SETUP.md#staged--turns-on-when-its-stage-opens) · Decisions: none —
 task-local ([history](../history/design-kickoff-refresh.md) records
 the mechanism)
 

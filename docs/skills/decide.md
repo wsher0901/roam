@@ -28,8 +28,7 @@ Apply what the decision demands, in the SAME commit as the entry:
 [ROADMAP](../ROADMAP.md) (structure — reorder/add/cut; progress
 ticks never need a D-number) · [docs/specs/](../specs/README.md)
 (update or mark superseded any spec the pivot invalidates) ·
-[PROJECT-POLICY](../PROJECT-POLICY.md) and
-[ENGINE](../ENGINE.md) (whichever consolidates the
+[ENGINE](../ENGINE.md) (when it consolidates the
 changed rule) · [IDEAS](../IDEAS.md) (spawned ideas). The Affects
 line and the actual edits must match exactly.
 
