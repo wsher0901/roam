@@ -1,15 +1,20 @@
 ---
 type: memory
 id: setup-consolidation
-updated: 2026-07-13 · recut landed · work PC
+updated: 2026-07-13 · ship (to the gate) · work PC
 ---
 # setup-consolidation — Setup consolidation: SETUP.md born; equipment-plan and PROJECT-POLICY retired; the writing laws adopted
 
 ## Status
-Content work complete on the branch; verification and ship-to-gate
-are next. Both decisions landed with their full ripple in one
-commit: D-029 (the corpus writing laws) and D-030 (the setup
-consolidation).
+Complete, awaiting merge — held at THE GATE by the brief's explicit
+"DO NOT MERGE; founder approval follows external review". All
+verification green: 1155 links / 0 broken, zero link targets to
+either retired file, both files + the stub folder gone,
+settings.json untouched, lint + tests + format clean. Both
+decisions landed with their full ripple in one commit: D-029 (the
+corpus writing laws) and D-030 (the setup consolidation). Queued
+for ship's tail, post-merge: the reviewer-subagent Needs-you line
+on the board.
 
 Sources:
 [spec](../specs/setup-consolidation.md)
@@ -31,7 +36,8 @@ links-below-prose with a Sources-block format.
 none
 
 ## Left / idle
-Verification suite · ship to THE GATE.
+Only the weld (on approval), then ship's tail adds the queued
+reviewer-subagent line to the board's Needs-you.
 
 ## The story
 Born from a founder-delivered workshop brief (Web chat): SETUP.md

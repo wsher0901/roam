@@ -51,16 +51,21 @@ the two corpus writing laws are on the books.
    follows external review.
 
 ## Done means
-- [ ] SETUP.md byte-matches the payload
-- [ ] Both retired files and the equipment-plan stub folder are gone
-- [ ] Zero link targets to either retired file repo-wide
-- [ ] LAWS carries the stubs rule and the re-pointed rationale line
-- [ ] HOME reflects the new file set
-- [ ] check-links green
-- [ ] Lint + tests green
+- [x] SETUP.md byte-matches the payload
+- [x] Both retired files and the equipment-plan stub folder are gone
+- [x] Zero link targets to either retired file repo-wide
+- [x] LAWS carries the stubs rule and the re-pointed rationale line
+- [x] HOME reflects the new file set
+- [x] check-links green (1155 links, 0 broken)
+- [x] Lint + tests green
 
 ## Deviations
-<filled by ship: anything done differently than planned — or "none">
+None material; judgment calls recorded in the task memory: the
+retiring files needed a forced git rm over zero-content CRLF
+phantoms · DASHBOARD needed zero repairs (its grep hits were an
+anchor slug and frozen row text, not link targets) · HOME's
+governing-documents count recut from four to three · the SETUP
+portrait keeps the brief's literal heading style.
 
 ## Open questions
 none
