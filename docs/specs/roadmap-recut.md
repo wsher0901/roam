@@ -51,14 +51,19 @@ lane-disjoint rule.
    merge; founder approval follows external review.
 
 ## Done means
-- [ ] Edits 1–7 landed verbatim
-- [ ] Zero "Done when" and zero bare "same outputs" left in
+- [x] Edits 1–7 landed verbatim
+- [x] Zero "Done when" and zero bare "same outputs" left in
       [ROADMAP](../ROADMAP.md)
-- [ ] `node scripts/check-links.mjs` passes
-- [ ] Lint + tests green
+- [x] `node scripts/check-links.mjs` passes
+- [x] Lint + tests green
 
 ## Deviations
-<filled by ship — or "none">
+One ride-along: the versions table arrived column-aligned
+(pre-padded) in the working tree — Obsidian-side formatting from the
+founder's open vault, content identical to HEAD. Carried as-is since
+the task edits that table anyway; alignment will drift by the
+header's extra width until Obsidian next touches the file. No other
+deviation.
 
 ## Open questions
 none
