@@ -669,3 +669,39 @@ which infers fields with provenance.
 links to the renamed anchor:
 [DECISION-POLICY §3](DECISION-POLICY.md#3-grade--render-matrix) ·
 [HOME §Terms](HOME.md#terms).
+
+## D-026 — 2026-07 — ROADMAP recut — plain-language V1, completion criteria, per-family vetting outputs (upholds D-020, D-022)
+**Decision:** recut [ROADMAP](ROADMAP.md) into a plain-language read:
+- the depth paragraph now opens by saying the plan is living, never
+  a promise — it changes whenever reality disagrees, every change
+  landing as a D-number via [decide](skills/decide.md) — before
+  naming the rolling wave
+  ([D-022](#d-022--2026-07--version-ladder--lifespan-split-amends-d-004));
+- "Done when" → "Completion criteria" in the versions table and all
+  eight stage lines; the spec-level term "Done-means" is a different
+  artifact and keeps its name;
+- the V1 block opens with the goal in prose (what a visitor watches
+  Roam do), and the "Active stages" lines die — they stored status,
+  against the derivation law;
+- T3–T6 each write their own `SOURCES-<family>.md` file so four [P]
+  lanes never share a file
+  ([D-020](#d-020--2026-07--parallel-lanes-v2-native-lanes-replace-hand-built-orchestration));
+  T7 consolidates the four into [SOURCES.md](data/SOURCES.md) and
+  deletes them;
+- ticked tasks link their [history/](history/README.md) stories;
+- [HOME](HOME.md) follows the rename (ROADMAP portrait, the
+  version/stage/task term, the Roadmap-manual notation bullet).
+**Why:** the rolling-wave paragraph was shorthand; the V1 block
+buried the goal under anchors; "Active stages" stored status against
+the derivation law; T3–T6 "same outputs" implied four [P] lanes
+writing one shared file, contradicting
+[D-020](#d-020--2026-07--parallel-lanes-v2-native-lanes-replace-hand-built-orchestration);
+"Done when" collided with the spec term "Done-means".
+**Alternatives rejected:** sequential T3–T6 (serializes S1's liftoff
+batch, amends
+[D-020](#d-020--2026-07--parallel-lanes-v2-native-lanes-replace-hand-built-orchestration));
+a shared SOURCES.md with per-family sections (the merge-conflict
+risk [D-020](#d-020--2026-07--parallel-lanes-v2-native-lanes-replace-hand-built-orchestration)
+exists to eliminate).
+**Affects:** [ROADMAP](ROADMAP.md) · [HOME](HOME.md) (term rename) ·
+this entry.

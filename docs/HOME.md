@@ -143,7 +143,7 @@ lane pre-review, [decide](skills/decide.md)'s ripple scan,
 the engine through [DECISION-POLICY](DECISION-POLICY.md)'s seeding.
 
 **[ROADMAP](ROADMAP.md)** is the build order made falsifiable:
-versions with testable done-whens, stages with done-criteria, tasks
+versions and stages with testable completion criteria, tasks
 as checkboxes — the only place task state is stored at all. Without
 it there is no "next", no claim check, and no honest progress bar;
 with it, one glance settles what is done, active, and queued.
@@ -589,7 +589,7 @@ the link for the full story.
 - **version / stage / task** — a version is an outcome milestone
   (the ladder lives in
   [ROADMAP §The versions](ROADMAP.md#the-versions)); a stage is an
-  ordered slice of one with a done-criterion; a task is the
+  ordered slice of one with a completion criterion; a task is the
   PR-sized unit (one task = one branch = one PR).
   Home: [§Roadmap manual](#roadmap-manual).
 - **workshop slug** — the kebab-case name (e.g. engine-swap) that
@@ -1030,7 +1030,7 @@ amended by
 [D-022](DECISIONS.md#d-022--2026-07--version-ladder--lifespan-split-amends-d-004)):
 
 - **Notation** — Vn = Version · Vn.Sm = Stage (ordered, each with a
-  done-criterion) · Vn.Sm.Tk = Task, the PR-sized unit (one task =
+  completion criterion) · Vn.Sm.Tk = Task, the PR-sized unit (one task =
   one branch = one PR). The only vocabulary — no synonyms: not
   "MVP", not "demo build", not "milestone".
 - **Tags** — [P] = parallel-safe (touches files no sibling task
