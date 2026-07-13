@@ -38,14 +38,20 @@ pickup surfaces what the hooks report and meets the writing laws.
    follows external review.
 
 ## Done means
-- [ ] Both hook patches landed verbatim
-- [ ] node --check passes on both hooks
-- [ ] docs/skills/pickup.md byte-matches the payload
-- [ ] check-links green
-- [ ] Lint + tests green
+- [x] Both hook patches landed verbatim
+- [x] node --check passes on both hooks
+- [x] docs/skills/pickup.md byte-matches the payload
+- [x] check-links green (1167 links, 0 broken)
+- [x] Lint + tests green
 
 ## Deviations
-<filled by ship: anything done differently than planned — or "none">
+One, load-bearing: the brief's session-start patch calls shFile(),
+which session-start.mjs did not define — verbatim insertion alone
+would have thrown a ReferenceError on every session launch. The
+shFile helper and the execFileSync import were copied verbatim from
+session-end.mjs alongside the patch; the patch block itself is
+byte-exact as briefed. The patched hook was smoke-run end-to-end:
+exit 0, no runtime error.
 
 ## Open questions
 none

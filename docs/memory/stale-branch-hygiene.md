@@ -1,13 +1,17 @@
 ---
 type: memory
 id: stale-branch-hygiene
-updated: 2026-07-13 · patches landed · work PC
+updated: 2026-07-13 · ship (to the gate) · work PC
 ---
 # stale-branch-hygiene — Stale-branch hygiene: gone-guard on the safety net; auto-delete welded-elsewhere locals; pickup restyle
 
 ## Status
-Content work complete on the branch; verification and ship-to-gate
-are next. Both hook patches, the pickup payload, and the
+Complete, awaiting merge — held at THE GATE by the brief's explicit
+"DO NOT MERGE; founder approval follows external review". All
+verification green: 1167 links / 0 broken, node --check clean on
+both hooks, smoke run exit 0, exactly the six named files in the
+diff, lint + tests + format clean. Both hook patches, the pickup
+payload, and the
 [D-031](../DECISIONS.md#d-031--2026-07--stale-branch-hygiene--gone-guard-on-the-session-end-net-welded-elsewhere-locals-auto-removed-at-session-start)
 entry landed in one commit.
 
@@ -30,7 +34,8 @@ laws.
 none
 
 ## Left / idle
-Verification suite · ship to THE GATE.
+Only the weld (on approval): slug-keyed history move + spec
+finalize, then squash-merge (workshop task — no ROADMAP tick).
 
 ## The story
 Born from a founder-delivered workshop brief (Web chat): both hook
