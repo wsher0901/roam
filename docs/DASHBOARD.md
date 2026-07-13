@@ -17,9 +17,9 @@ hand-edited; git outranks this board.
    [WEB-INSTRUCTIONS](WEB-INSTRUCTIONS.md); the box is a copy
    ([history](history/web-instructions.md)).
 2. 🟡 Run the [machine-setup](skills/machine-setup.md) Verify block
-   on each PC — a full pass is unconfirmed on both seats (now
-   includes the optional [vault lens](skills/machine-setup.md#vault-lens)
-   yes/no).
+   on each PC — a full pass is unconfirmed on both seats; the
+   [vault lens](skills/machine-setup.md#vault-lens) is now one
+   phrase — say "apply the vault lens" on each seat.
 3. ⚪ [DECISION-POLICY §10](DECISION-POLICY.md#10-open-questions) —
    five open engine questions; parked until
    [V1.S3](ROADMAP.md#v1s3--engine-core--two-families-deep) opens.
@@ -86,6 +86,7 @@ now the ops thread is complete.
 
 | When | What | PR |
 |---|---|---|
+| 2026-07-13 | [Vault-lens seed: Obsidian config travels through git](history/vault-lens-seed.md) | [#91](https://github.com/wsher0901/roam/pull/91) |
 | 2026-07-13 | [LAWS polish: glossed lane law, provenance to consolidations, ship syncs with main](history/laws-polish.md) | [#89](https://github.com/wsher0901/roam/pull/89) |
 | 2026-07-13 | [ROADMAP recut: plain-language V1, completion criteria, per-family vetting outputs](history/roadmap-recut.md) | [#87](https://github.com/wsher0901/roam/pull/87) |
 | 2026-07-12 | [FOUNDATION v4: principles recut, open family set, lifespan repair](history/foundation-v4.md) | [#85](https://github.com/wsher0901/roam/pull/85) |
@@ -95,4 +96,3 @@ now the ops thread is complete.
 | 2026-07-11 | [HOME v3 — the manual & encyclopedia](history/home-encyclopedia.md) | [#76](https://github.com/wsher0901/roam/pull/76) |
 | 2026-07-11 | [The engine swap: architecture v2](history/engine-swap.md) | [#71](https://github.com/wsher0901/roam/pull/71) |
 | 2026-07-10 | [Version ladder + lifespan split](history/foundation-roadmap-recut.md) | [#69](https://github.com/wsher0901/roam/pull/69) |
-| 2026-07-10 | [Machine-setup skill](history/machine-setup-skill.md) | [#66](https://github.com/wsher0901/roam/pull/66) |
