@@ -1,20 +1,21 @@
 ---
-type: memory
-id: setup-consolidation
-updated: 2026-07-13 · ship (to the gate) · work PC
+type: history
+slug: setup-consolidation
+shipped: 2026-07-13
+pr: 99
 ---
 # setup-consolidation — Setup consolidation: SETUP.md born; equipment-plan and PROJECT-POLICY retired; the writing laws adopted
 
 ## Status
-Complete, awaiting merge — held at THE GATE by the brief's explicit
-"DO NOT MERGE; founder approval follows external review". All
-verification green: 1155 links / 0 broken, zero link targets to
-either retired file, both files + the stub folder gone,
+Shipped — merged as
+[PR #99](https://github.com/wsher0901/roam/pull/99) on the founder's
+word after the external review, tip confirmed at 4721105 before the
+weld. All verification green: 1155 links / 0 broken, zero link
+targets to either retired file, both files + the stub folder gone,
 settings.json untouched, lint + tests + format clean. Both
 decisions landed with their full ripple in one commit: D-029 (the
-corpus writing laws) and D-030 (the setup consolidation). Queued
-for ship's tail, post-merge: the reviewer-subagent Needs-you line
-on the board.
+corpus writing laws) and D-030 (the setup consolidation). Ship's
+tail added the reviewer-subagent Needs-you line to the board.
 
 Sources:
 [spec](../specs/setup-consolidation.md)
@@ -36,8 +37,10 @@ links-below-prose with a Sources-block format.
 none
 
 ## Left / idle
-Only the weld (on approval), then ship's tail adds the queued
-reviewer-subagent line to the board's Needs-you.
+Nothing — the weld that landed this file was the last act
+(slug-keyed, no [ROADMAP](../ROADMAP.md) tick; spec finalized in
+place at
+[../specs/setup-consolidation.md](../specs/setup-consolidation.md)).
 
 ## The story
 Born from a founder-delivered workshop brief (Web chat): SETUP.md
@@ -76,8 +79,14 @@ Execution notes and judgment calls, in order:
 - Two history files mention the equipment plan in prose with no
   link (parallel-lanes-native, subagent-plan) — left untouched,
   frozen prose keeps historical names.
+- Founder asked at the merge: the reflog for commit 3581322 shows
+  exactly one entry — the ordinary "commit:" record from landing
+  the consolidation (HEAD@{2}); it was never orphaned, being an
+  ancestor of the reviewed tip 4721105, and after the squash-merge
+  it survives only in that reflog, as every squashed commit does.
 
 ## Where to look
 - spec: [../specs/setup-consolidation.md](../specs/setup-consolidation.md)
 - the workshop brief (Web chat) — payload + operations + entry seeds
-- PR: opens at birth (draft)
+- PR: [#99](https://github.com/wsher0901/roam/pull/99)
+  (squash-merged 2026-07-13)

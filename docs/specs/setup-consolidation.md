@@ -2,12 +2,12 @@
 type: spec
 id: setup-consolidation
 title: Setup consolidation — SETUP.md born; equipment-plan and PROJECT-POLICY retired; the writing laws adopted
-status: open
+status: shipped
 stage: workshop
 branch: docs/setup-consolidation
-pr: —
+pr: 99
 opened: 2026-07-13
-shipped: —
+shipped: 2026-07-13
 ---
 # setup-consolidation — Setup consolidation: SETUP.md born; equipment-plan and PROJECT-POLICY retired; the writing laws adopted
 
