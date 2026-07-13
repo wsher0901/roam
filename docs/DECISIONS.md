@@ -848,3 +848,32 @@ fatigue; founder call); pushing the guard into LAWS prose
 **Affects:** both hooks (`.claude/hooks/session-end.mjs` ·
 `.claude/hooks/session-start.mjs`) · [pickup](skills/pickup.md) ·
 this entry.
+
+## D-032 — 2026-07 — Fleet continuity — handoff parks every local lane; liftoff respawns parked benches; wake-lock parks every outcome (extends the D-020/D-023 lane law; upholds D-009)
+**Decision:** handoff FULL gains the Park step — every live local
+lane is rescue-saved (wip commit + push, only if its tree holds
+unsaved work) and stamped parked with ONE cockpit-written Status
+line, the single lawful exception to never-touching a lane's tree
+or diary; handoff never asks and never leaves lanes running — it
+means operations halt on this machine. Liftoff step 2 respawns
+eligible parked benches on their SAME branch (adopt — no second
+birth); ineligible ones stay parked with a reason. The lane law
+grows the wake-lock: on any resume a lane re-reads its memory
+first and self-terminates on any Status it does not own (parked ·
+respawned · superseded); after completion, a `BLOCKED:`, or a
+failed spawn, a lane parks — nothing continues without a
+founder-initiated action.
+**Why:** the founder's leaving scenario — the machine powers off
+after handoff; local agents die with it; without the park step
+their since-last-push work and their task state depended on luck,
+and a lane waking after sleep could dual-drive a respawned branch.
+**Alternatives rejected:** asking at handoff (founder: handoff =
+halt, no question); auto-liftoff at handoff (cloud only by the
+word); signaling lanes to land themselves (no reliable channel;
+the process dies with the machine anyway — saving the bench is
+what matters).
+**Affects:** [handoff](skills/handoff.md) ·
+[liftoff](skills/liftoff.md) ·
+[parallel-lanes](skills/parallel-lanes.md) ·
+[LAWS §Parallel lanes & cloud](LAWS.md#parallel-lanes--cloud) ·
+this entry.
