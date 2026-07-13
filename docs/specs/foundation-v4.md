@@ -49,15 +49,18 @@ violation (the pre-trip lifespan clause duplicating a ROADMAP refusal).
    founder approval follows external review.
 
 ## Done means
-- [ ] Edits 1–8 landed verbatim
-- [ ] [DECISION-POLICY §5](../DECISION-POLICY.md#5-provenance--supersede-order)
+- [x] Edits 1–8 landed verbatim
+- [x] [DECISION-POLICY §5](../DECISION-POLICY.md#5-provenance--supersede-order)
       carries the cohort layer
-- [ ] Zero repo-wide occurrences of the old anchor
-- [ ] `node scripts/check-links.mjs` passes
-- [ ] Lint + tests green
+- [x] Zero repo-wide occurrences of the old anchor
+- [x] `node scripts/check-links.mjs` passes
+- [x] Lint + tests green
 
 ## Deviations
-<filled by ship — or "none">
+None material. The workshop expected anchor-ripple hits in
+docs/history/; the execution-time grep found exactly two hits, both
+outside history/ ([DECISION-POLICY §3](../DECISION-POLICY.md#3-grade--render-matrix)
+and [HOME §Terms](../HOME.md#terms)) — both repaired.
 
 ## Open questions
 none
