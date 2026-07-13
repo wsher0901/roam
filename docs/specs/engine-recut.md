@@ -2,12 +2,12 @@
 type: spec
 id: engine-recut
 title: Consolidation recut — DECISION-POLICY becomes ENGINE (the brain skeleton); PROJECT-POLICY to house style
-status: open
+status: shipped
 stage: workshop
 branch: docs/engine-recut
-pr: —
+pr: 95
 opened: 2026-07-13
-shipped: —
+shipped: 2026-07-13
 ---
 # engine-recut — Consolidation recut: DECISION-POLICY becomes ENGINE (the brain skeleton); PROJECT-POLICY to house style
 **Links:** [ENGINE](../ENGINE.md) ·

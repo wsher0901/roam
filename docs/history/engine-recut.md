@@ -1,14 +1,17 @@
 ---
-type: memory
-id: engine-recut
-updated: 2026-07-13 · ship (to the gate) · work PC
+type: history
+slug: engine-recut
+shipped: 2026-07-13
+pr: 95
 ---
 # engine-recut — Consolidation recut: DECISION-POLICY becomes ENGINE; PROJECT-POLICY to house style
 
 ## Status
-Complete, awaiting merge — held at THE GATE by the brief's explicit
-"DO NOT MERGE; founder approval follows external review". All
-verification green: 1124 links / 0 broken, lint clean, 3/3 tests,
+Shipped — merged as
+[PR #95](https://github.com/wsher0901/roam/pull/95) on the founder's
+word after the external review, with one gate amendment (ROADMAP's
+binding-requirements links name stages, not numbers). All
+verification green: 1128 links / 0 broken, lint clean, 3/3 tests,
 zero old-filename hits in tracked files, zero old anchors repo-wide,
 ROADMAP checkboxes untouched. The rename, both payload rewrites, the
 [D-028](../DECISIONS.md#d-028--2026-07--consolidation-recut--decision-policy--engine-brain-skeleton-form-project-policy-house-style-open-register-grows-69-upholds-d-021-extends-the-d-021-consolidation)
@@ -27,12 +30,12 @@ lines). Full retroactive ripple across the corpus; no rule-semantics
 change anywhere.
 
 ## Pending issues
-none — the PR is flipped ready and waits at THE GATE for the
-founder's yes after external review.
+none
 
 ## Left / idle
-Only the weld (on approval): ROADMAP has no checkbox for a workshop
-task — slug-keyed history move + spec finalize, then squash-merge.
+Nothing — the weld that landed this file was the last act
+(slug-keyed, no [ROADMAP](../ROADMAP.md) tick; spec finalized in
+place at [../specs/engine-recut.md](../specs/engine-recut.md)).
 
 ## The story
 Born from a founder-delivered workshop brief (Web chat), payloads
@@ -91,8 +94,8 @@ Execution notes and judgment calls, in order:
 
 ## Where to look
 - spec: [../specs/engine-recut.md](../specs/engine-recut.md)
-- PR: [#95](https://github.com/wsher0901/roam/pull/95) (draft until
-  the gate)
+- PR: [#95](https://github.com/wsher0901/roam/pull/95)
+  (squash-merged 2026-07-13)
 - decision:
   [D-028](../DECISIONS.md#d-028--2026-07--consolidation-recut--decision-policy--engine-brain-skeleton-form-project-policy-house-style-open-register-grows-69-upholds-d-021-extends-the-d-021-consolidation)
 - the two rewritten files: [../ENGINE.md](../ENGINE.md) ·
