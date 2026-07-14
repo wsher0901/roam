@@ -1,16 +1,18 @@
 ---
-type: memory
-id: telemetry-fold
-updated: 2026-07-13 · ship (completion rewrite) · home PC
+type: history
+slug: telemetry-fold
+shipped: 2026-07-13
+pr: 106
 ---
 # telemetry-fold — TELEMETRY folds into FACTS: Appendix C; file retired
 
 ## Status
-Complete, awaiting merge — every Done-means box verified green on
-2026-07-13; PR
-[#106](https://github.com/wsher0901/roam/pull/106) flipped ready.
-By brief, the merge waits for founder approval AFTER external
-review.
+Shipped — merged as
+[PR #106](https://github.com/wsher0901/roam/pull/106) on the
+founder's word after external review, with both pre-weld riders
+confirmed (citation line intact in Appendix C; CRLF phantoms
+cleared via the stash pattern). Every verification green; no
+deviations.
 
 ## What this task is
 A move-only consolidation: [FACTS](../data/FACTS.md) gained
@@ -24,10 +26,9 @@ data/ tightened to FACTS · SOURCES · SCHEMA. Recorded as
 none
 
 ## Left / idle
-Only the weld: founder approval (after external review) → atomic
-bookkeeping commit → squash-merge. The brief also names history/
-link style as the NEXT task's territory — nothing of it was touched
-here beyond the two sanctioned frozen-link retargets.
+nothing — the brief names history/ link style as the NEXT task's
+territory; nothing of it was touched here beyond the two sanctioned
+frozen-link retargets.
 
 ## The story
 Born from the Web-chat ops leg. The standalone file confused its

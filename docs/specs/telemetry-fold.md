@@ -2,10 +2,12 @@
 type: spec
 id: telemetry-fold
 title: TELEMETRY folds into FACTS — Appendix C; file retired
-status: open
+status: shipped
 stage: workshop
 branch: docs/telemetry-fold
+pr: 106
 opened: 2026-07-13
+shipped: 2026-07-13
 ---
 # telemetry-fold — TELEMETRY folds into FACTS: Appendix C; file retired
 
