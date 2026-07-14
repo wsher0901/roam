@@ -53,12 +53,12 @@ by this PR's own ship-tail, first act under the new law.
    approval: the repaint runs per the NEW handoff §4.
 
 ## Done means
-- [ ] Both payloads byte-match
-- [ ] The five surgical edits landed
-- [ ] The ledger exists and its seeded line count equals the story
-      count under history/**
-- [ ] check-links green
-- [ ] Lint + tests green
+- [x] Both payloads byte-match
+- [x] The five surgical edits landed
+- [x] The ledger exists and its seeded line count equals the story
+      count under history/** (51 = 51)
+- [x] check-links green (1320 links, 0 broken)
+- [x] Lint + tests green
 
 ## Open questions
 none
