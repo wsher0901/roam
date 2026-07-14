@@ -64,9 +64,9 @@ first push.
 
 - [x] The six named edits landed (ship §1 · ship §THE GATE ·
       parallel-lanes · decide · LAWS · branch protection)
-- [ ] `gh pr checks` green on THIS PR before its own gate is
-      announced — verified after the content push watches Actions
-      green
+- [x] `gh pr checks` green on THIS PR before its own gate is
+      announced — Actions run green on the head commit (job
+      `checks`, 32s)
 - [x] Branch-protection state matches the founder's answer (gh api
       GET): contexts [`checks`], enforce_admins on, reviews null,
       strict off
