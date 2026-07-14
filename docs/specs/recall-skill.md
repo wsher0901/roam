@@ -53,15 +53,34 @@ read-only: it edits nothing, ever.
 
 ## Done means
 
-- [ ] docs/skills/recall.md byte-matches the payload.
-- [ ] The stub's description is situation-first, carries the do-NOT
+- [x] docs/skills/recall.md byte-matches the payload.
+- [x] The stub's description is situation-first, carries the do-NOT
       clause, and its allowed-tools are read-only (no write, no
       merge).
-- [ ] HOME's skills line gains recall.
-- [ ] check-links green.
-- [ ] The full local CI mirror green (lint · format:check ·
-      check:links · tests · build) and `gh pr checks` green before
-      the gate.
+- [x] HOME's skills line gains recall.
+- [x] check-links green (1462 links, 0 broken).
+- [x] The full local CI mirror green (lint · format:check ·
+      check:links · tests · build) and `gh pr checks` green (job
+      `checks`, 38s) before the gate.
+
+## Deviations
+
+Three, each preserving the kickoff's intent — see the memory's
+Pending issues for the full reasoning:
+
+1. The kickoff's verification greps recall.md for "git wins" and
+   "own judgment"; the delimited payload (reproduced EXACTLY) uses
+   "git outranks the board" and "own discretion". Byte-exactness of
+   the payload was the primary Done-means, so it was kept verbatim.
+   "read mirror" and "not recorded" are literal matches.
+2. The kickoff gave the HOME line as a bulleted item; HOME's real
+   skills enumeration is an inline `·`-separated sentence, so recall
+   was added in that house style (fragment + Sources link).
+3. The stub's read-only allowed-tools follow the kickoff's explicit
+   list (Read · Grep · Glob · git log/show · gh pr view/list). The
+   procedure §1 also references `gh pr checks`, which was not added;
+   the founder can add `Bash(gh pr checks:*)` if a prompt-free run
+   is wanted.
 
 ## Open questions
 
