@@ -5,41 +5,49 @@ status: living
 ---
 # Dashboard — the state surface
 
-Stamp: 2026-07-13 · 23:15 · ship tail · home PC
-V1 5/34 · S1 2/7 · S2 3/5 · sessions: 1 main · 0 parallel
-(0 needs you) · needs-you 4
+Stamp: 2026-07-13 · 23:25 · handoff · home PC
+V1 5/34 · S1 2/7 · S2 3/5 · sessions: 0 main · 0 parallel
+(1 needs you — an await-merge task) · needs-you 5
 How to read this board →
 [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
 
-1. 🟡 Paste the approved v4 text into the claude.ai → Roam Project →
+1. 🟢 Give the merge word on laws-close — the ops leg's last block
+   is finished and externally reviewable; the gate was not crossed
+   before this handoff (since 07-13).
+   → [PR #115](https://github.com/wsher0901/roam/pull/115) — its
+   spec, memory, and D-037 ride the docs/laws-close branch until
+   the weld
+2. 🟡 Paste the approved v4 text into the claude.ai → Roam Project →
    settings box (since 07-11).
    → master: [WEB-INSTRUCTIONS](WEB-INSTRUCTIONS.md) · the box is a
    copy · [history](history/workshop/definition/web-instructions.md)
-2. 🟡 Run the machine-setup Verify block on this home PC — the work
+3. 🟡 Run the machine-setup Verify block on this home PC — the work
    PC passed in full (since 07-13).
    → [machine-setup](skills/machine-setup.md) ·
    [vault lens](skills/machine-setup.md#vault-lens) (applied on both
    seats)
-3. ⚪ Nine open engine questions sit parked in the Open register
+4. ⚪ Nine open engine questions sit parked in the Open register
    until S3 opens (since 07-13).
    → [ENGINE §12](ENGINE.md#12-open-register) ·
    [D-028](DECISIONS.md#d-028--2026-07--consolidation-recut--decision-policy--engine-brain-skeleton-form-project-policy-house-style-open-register-grows-69-upholds-d-021-extends-the-d-021-consolidation)
    · [V1.S3](ROADMAP.md#v1s3--engine-core--two-families-deep)
-4. ⚪ Write the reviewer-subagent spec — a small task queued after
+5. ⚪ Write the reviewer-subagent spec — a small task queued after
    the ops leg (since 07-13).
    → [SETUP §Staged](SETUP.md#staged--turns-on-when-its-stage-opens)
 
 ## Sessions
 
-1 main · 0 parallel (0 needs you · 0 await merge · 0 flying)
+0 main · 0 parallel (1 needs you · 1 await merge · 0 flying) —
+operations halted at this handoff; the one row below is a task
+waiting on you, not a running session.
 
 | Session | Task | State | Last push | Your move |
 |---|---|---|---|---|
-| main · cockpit | ops leg — [home-knowledge](history/workshop/definition/home-knowledge.md) welded; next: the LAWS block brief | ⚪ idle | just now | — |
+| — (cockpit closed at handoff) | laws-close — LAWS routing clause; pickup's founder shape ([PR #115](https://github.com/wsher0901/roam/pull/115)) | 🟢 complete, awaiting merge | 23:25 | give the merge word |
 
-↳ main micro: — (between briefs; no active spec)
+↳ main micro: — (no live main session)
 
 ## You are here
 
@@ -75,11 +83,14 @@ flowchart LR
 ## Claude Web + Design discussion
 
 - **"Ops — Architecture audit & setup"** (Web) — the ops leg;
-  LAWS remains → next: the LAWS block after this weld.
+  laws-close waits at THE GATE → next: the merge word, then the
+  leg-end restyle sweep (HOME Law-2 restyle · parallel-lanes
+  restyle · LAWS line-rewrap · the SOURCES-&lt;family&gt; nit).
 - **"<setup-ladder / P8 chat's exact title>"** (Web) — T3–T6
   relaunch briefs pending → next: per its own thread.
 
-No Design chats open yet.
+No Design chats open — founder confirmed at the 2026-07-13 · 23:25
+handoff.
 
 ## Shipped (latest — full record: [the ledger](history/README.md#the-ledger))
 
