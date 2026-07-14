@@ -6,7 +6,7 @@ status: living
 
 # Dashboard — the state surface
 
-Stamp: 2026-07-14 · 11:50 · ship · work PC
+Stamp: 2026-07-14 · 14:53 · ship · work PC
 V1 5/34 · S1 2/7 · S2 3/5 · sessions: 0 main · 0 parallel ·
 needs-you 4
 How to read this board →
@@ -34,9 +34,10 @@ How to read this board →
 
 ## Sessions
 
-0 main · 0 parallel — operations idle. Both of this sitting's tasks
-merged in order: laws-close ([#115](https://github.com/wsher0901/roam/pull/115))
-then ci-trust ([#117](https://github.com/wsher0901/roam/pull/117)).
+0 main · 0 parallel — operations idle. This sitting shipped
+recall-skill ([#123](https://github.com/wsher0901/roam/pull/123)) —
+the read-only recall skill
+([D-039](DECISIONS.md#d-039--2026-07--recall--questions-answered-from-files-never-from-memory-the-d-036-routing-tables-read-mirror-model-invoked-at-discretion)).
 No session is running.
 
 ↳ main micro: — (no live main session)
@@ -88,6 +89,7 @@ handoff.
 
 | When | What | PR |
 |---|---|---|
+| 07-14 14:50 | [Recall — the routing table's read mirror: founder questions answered from the files with receipts, never from memory; fires on its own judgment](history/workshop/mechanism/recall-skill.md) | [#123](https://github.com/wsher0901/roam/pull/123) |
 | 07-14 11:46 | [Leg-end restyle sweep: D-029 finishes its migration — every living doc carries its links below the prose](history/workshop/definition/restyle-sweep.md) | [#121](https://github.com/wsher0901/roam/pull/121) |
 | 07-14 10:55 | [Repo auto-merge enabled so the self-merge law works — the repo's first armed --auto, fired on green](history/workshop/mechanism/auto-merge-flip.md) | [#119](https://github.com/wsher0901/roam/pull/119) |
 | 07-14 10:32 | [CI is the arbiter: Actions-green at every gate; the local gate mirrors all six CI steps; anchors born resolving](history/workshop/mechanism/ci-trust.md) | [#117](https://github.com/wsher0901/roam/pull/117) |
@@ -97,4 +99,3 @@ handoff.
 | 2026-07-13 | [History quadrants: four doors; TEMPLATE owns the format + Status vocabulary](history/workshop/definition/history-quadrants.md) | [#108](https://github.com/wsher0901/roam/pull/108) |
 | 2026-07-13 | [TELEMETRY folds into FACTS: Appendix C; file retired](history/workshop/definition/telemetry-fold.md) | [#106](https://github.com/wsher0901/roam/pull/106) |
 | 2026-07-13 | [Fleet continuity: handoff parks every local lane; liftoff respawns parked benches; wake-lock parks every outcome](history/workshop/mechanism/fleet-continuity.md) | [#104](https://github.com/wsher0901/roam/pull/104) |
-| 2026-07-13 | [Stale-branch hygiene: gone-guard on the safety net; welded-elsewhere locals auto-removed](history/workshop/mechanism/stale-branch-hygiene.md) | [#101](https://github.com/wsher0901/roam/pull/101) |
