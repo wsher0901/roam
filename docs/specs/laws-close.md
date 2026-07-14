@@ -43,10 +43,11 @@ wording as a spec requirement.
    the leg-end restyle sweep as Now.
 
 ## Done means
-- [ ] The LAWS clause landed verbatim
-- [ ] pickup §5 byte-matches the payload
-- [ ] check-links green
-- [ ] Lint + tests green
+- [x] The LAWS clause landed verbatim
+- [x] pickup §5 byte-matches the payload (diff-clean against an
+      independent re-transcription)
+- [x] check-links green (1384 links, 0 broken)
+- [x] Lint + tests green
 
 ## Open questions
 none
