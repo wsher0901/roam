@@ -82,13 +82,13 @@ then stating the lane.
 ## Threads (non-task)
 
 none open — founder confirmed at the 2026-07-13 work-PC handoff.
-Two ops-leg briefs shipped this sitting on the home PC — Fleet
-Continuity ([PR #104](https://github.com/wsher0901/roam/pull/104))
-and the telemetry fold
-([PR #106](https://github.com/wsher0901/roam/pull/106)) (see
+Three ops-leg briefs shipped this sitting on the home PC — Fleet
+Continuity ([PR #104](https://github.com/wsher0901/roam/pull/104)),
+the telemetry fold
+([PR #106](https://github.com/wsher0901/roam/pull/106)), and
+history quadrants
+([PR #108](https://github.com/wsher0901/roam/pull/108)) (see
 Shipped). Queued Web-chat work, in order:
-- the history/ brief — named "next task" by the telemetry-fold
-  brief; the ops leg's next item;
 - the T3–T6 relaunch briefs (ladder step P8) — tracked as the S1
   hold in You-are-here;
 - the v4 WEB-INSTRUCTIONS paste — Needs-you 1.
@@ -97,6 +97,7 @@ Shipped). Queued Web-chat work, in order:
 
 | When | What | PR |
 |---|---|---|
+| 2026-07-13 | [History quadrants: four doors; TEMPLATE owns the format + Status vocabulary](history/workshop/definition/history-quadrants.md) | [#108](https://github.com/wsher0901/roam/pull/108) |
 | 2026-07-13 | [TELEMETRY folds into FACTS: Appendix C; file retired](history/workshop/definition/telemetry-fold.md) | [#106](https://github.com/wsher0901/roam/pull/106) |
 | 2026-07-13 | [Fleet continuity: handoff parks every local lane; liftoff respawns parked benches; wake-lock parks every outcome](history/workshop/mechanism/fleet-continuity.md) | [#104](https://github.com/wsher0901/roam/pull/104) |
 | 2026-07-13 | [Stale-branch hygiene: gone-guard on the safety net; welded-elsewhere locals auto-removed](history/workshop/mechanism/stale-branch-hygiene.md) | [#101](https://github.com/wsher0901/roam/pull/101) |
@@ -106,4 +107,3 @@ Shipped). Queued Web-chat work, in order:
 | 2026-07-13 | [Vault-lens seed: Obsidian config travels through git](history/workshop/mechanism/vault-lens-seed.md) | [#91](https://github.com/wsher0901/roam/pull/91) |
 | 2026-07-13 | [LAWS polish: glossed lane law, provenance to consolidations, ship syncs with main](history/workshop/definition/laws-polish.md) | [#89](https://github.com/wsher0901/roam/pull/89) |
 | 2026-07-13 | [ROADMAP recut: plain-language V1, completion criteria, per-family vetting outputs](history/product/definition/roadmap-recut.md) | [#87](https://github.com/wsher0901/roam/pull/87) |
-| 2026-07-12 | [FOUNDATION v4: principles recut, open family set, lifespan repair](history/product/definition/foundation-v4.md) | [#85](https://github.com/wsher0901/roam/pull/85) |
