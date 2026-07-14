@@ -2,10 +2,12 @@
 type: spec
 id: laws-close
 title: Leg close — LAWS carries the routing clause; pickup speaks the founder's shape
-status: open
+status: shipped
 stage: workshop
 branch: docs/laws-close
+pr: 115
 opened: 2026-07-13
+shipped: 2026-07-14
 ---
 # laws-close — Leg close: LAWS carries the routing clause; pickup speaks the founder's shape
 

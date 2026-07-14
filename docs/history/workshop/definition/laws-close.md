@@ -1,29 +1,29 @@
 ---
-type: memory
-id: laws-close
-updated: 2026-07-13 · handoff · home PC
+type: history
+slug: laws-close
+shipped: 2026-07-14 10:24
+pr: 115
 ---
 # laws-close — Leg close: LAWS carries the routing clause; pickup speaks the founder's shape
 
 ## Status
-Complete, awaiting merge — the sitting closed at FULL handoff
-BEFORE the gate was crossed. PR
-[#115](https://github.com/wsher0901/roam/pull/115) is ready,
-externally reviewable, every Done-means box green; the merge word
-is the next sitting's first move. Nothing else remains on this
-branch.
+Shipped — merged as
+[PR #115](https://github.com/wsher0901/roam/pull/115) on the
+founder's word after external review, first of the merge order
+#115 → #117. Every Done-means box was green; the LAWS routing
+clause and the founder-shaped pickup §5 both landed.
 
 ## What this task is
-The ops leg's last block before the sweep: [LAWS](../LAWS.md)
+The ops leg's last block before the sweep: [LAWS](../../../LAWS.md)
 §Knowledge & tracking gained the one-home routing clause pointing
-at [HOME §Where information goes](../HOME.md#where-information-goes)
+at [HOME §Where information goes](../../../HOME.md#where-information-goes)
 (HOME renders, LAWS binds — completing D-036), and
-[pickup](../skills/pickup.md) §5 became the founder-approved
+[pickup](../../../skills/pickup.md) §5 became the founder-approved
 six-section sit-down: the exit table (what you left → its state
 now → your move) · RECENT SUMMARY in plain prose · PENDING ISSUES ·
 OPEN CHAT + DESIGN DISCUSSION · NEEDS YOUR ATTENTION · NEXT —
 ritual self-narration silent. Recorded as
-[D-037](../DECISIONS.md#d-037--2026-07--pickup-speaks-the-founders-shape--exit-table--recent-summary--pending-issues-laws-binds-the-routing-law-completes-d-036).
+[D-037](../../../DECISIONS.md#d-037--2026-07--pickup-speaks-the-founders-shape--exit-table--recent-summary--pending-issues-laws-binds-the-routing-law-completes-d-036).
 
 ## Pending issues
 One verification nuance, resolved and reported at THE GATE: the
@@ -52,8 +52,8 @@ no new Web or Design threads ("none"); the setup-ladder chat's
 verbatim title remains a founder-written placeholder on the board.
 
 ## Where to look
-Spec: [laws-close](../specs/laws-close.md) · decision:
-[D-037](../DECISIONS.md#d-037--2026-07--pickup-speaks-the-founders-shape--exit-table--recent-summary--pending-issues-laws-binds-the-routing-law-completes-d-036)
+Spec: [laws-close](../../../specs/laws-close.md) · decision:
+[D-037](../../../DECISIONS.md#d-037--2026-07--pickup-speaks-the-founders-shape--exit-table--recent-summary--pending-issues-laws-binds-the-routing-law-completes-d-036)
 · PR [#115](https://github.com/wsher0901/roam/pull/115) · targets:
-[LAWS §Knowledge & tracking](../LAWS.md#knowledge--tracking) ·
-[pickup §5](../skills/pickup.md).
+[LAWS §Knowledge & tracking](../../../LAWS.md#knowledge--tracking) ·
+[pickup §5](../../../skills/pickup.md).
