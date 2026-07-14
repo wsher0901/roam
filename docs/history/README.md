@@ -21,3 +21,60 @@ workshop/definition.
 The weld (ship §7) assigns the quadrant at move time. When a
 quadrant grows unwieldy, it gains version sub-buckets by decision —
 rolling wave, never speculatively.
+
+## The ledger
+Every weld prepends one line — the full chronology across all four
+doors, newest first. Frozen stories carry date only; entries from
+D-035 on carry time.
+
+- 2026-07-13 · history-quadrants — History organizes by issue-door quadrants; TEMPLATE owns the memory format and Status vocabulary → workshop/definition · #108
+- 2026-07-13 · telemetry-fold — TELEMETRY folds into FACTS: Appendix C; file retired → workshop/definition · #106
+- 2026-07-13 · fleet-continuity — Fleet continuity: handoff parks every local lane; liftoff respawns parked benches; wake-lock parks every outcome → workshop/mechanism · #104
+- 2026-07-13 · stale-branch-hygiene — Stale-branch hygiene: gone-guard on the safety net; auto-delete welded-elsewhere locals; pickup restyle → workshop/mechanism · #101
+- 2026-07-13 · setup-consolidation — Setup consolidation: SETUP.md born; equipment-plan and PROJECT-POLICY retired; the writing laws adopted → workshop/definition · #99
+- 2026-07-13 · design-kickoff-refresh — DESIGN-KICKOFF refresh: June-2026 Claude Design capabilities → workshop/definition · #97
+- 2026-07-13 · engine-recut — Consolidation recut: DECISION-POLICY becomes ENGINE; PROJECT-POLICY to house style → product/definition · #95
+- 2026-07-13 · vault-lens-seed — Vault-lens seed: Obsidian config travels through git → workshop/mechanism · #91
+- 2026-07-13 · laws-polish — LAWS polish: glossed lane law, provenance to consolidations, ship syncs with main → workshop/definition · #89
+- 2026-07-13 · roadmap-recut — ROADMAP recut: plain-language V1, completion criteria, per-family vetting outputs → product/definition · #87
+- 2026-07-12 · foundation-v4 — FOUNDATION v4: principles recut, open family set, lifespan repair → product/definition · #85
+- 2026-07-11 · vault-lens — vault lens + clean-tree verdict (ordeals 2+3 close-out) → workshop/mechanism · #82
+- 2026-07-11 · web-instructions — canonize the Web-surface rule-carrier → workshop/definition · #80
+- 2026-07-11 · phase5-sweep — hardening + hygiene (final ops phase) → workshop/mechanism · #78
+- 2026-07-11 · home-encyclopedia — HOME v3: the encyclopedia → workshop/definition · #76
+- 2026-07-11 · The engine swap: architecture v2 → workshop/mechanism · #71
+- 2026-07-10 · The plan gets a version ladder; identity and plan split by lifespan → product/definition · #69
+- 2026-07-10 · Switching computers becomes pull + a checklist → workshop/mechanism · #66
+- 2026-07-10 · Design sessions get a rule-carrier; the log is made whole → workshop/definition · #64
+- 2026-07-10 · Rituals count for themselves; the ship-tail goes quiet → workshop/mechanism · #62
+- 2026-07-10 · Progress gets a face: the stage-map dashboard → workshop/mechanism · #60
+- 2026-07-09 · The knowledge layer: the vault learns to explain itself → workshop/definition · #58
+- 2026-07-09 · Repo hygiene: line endings pinned, old docs woven → workshop/definition · #57
+- 2026-07-09 · Ritual engine v2; the shiplog is born → workshop/mechanism · #56
+- 2026-07-09 · Session hooks that work on every machine → workshop/mechanism · #53
+- 2026-07-09 · Parallel lanes go native → workshop/mechanism · #51
+- 2026-06-12 · Erratum: where cloud lanes are watched → workshop/mechanism · #48
+- 2026-06-12 · Lane launches get a recipe that actually works → workshop/mechanism · #46
+- 2026-06-12 · What happens after lanes finish → workshop/mechanism · #43
+- 2026-06-12 · Cloud sessions become the lane vehicle → workshop/mechanism · #41
+- 2026-06-12 · Every briefing ends with a parallel-ready menu → workshop/mechanism · #39
+- 2026-06-12 · Weather sources vetted; SOURCES.md is born → product/definition · #37
+- 2026-06-12 · The system learns to record itself → product/definition · #35
+- 2026-06-12 · Traveler vocabulary grows 26 → 47 fields → product/definition · #33
+- 2026-06-12 · The fact inventory; FACTS.md is born → product/definition · #31
+- 2026-06-11 · Roam has a database → product/build · #29
+- 2026-06-11 · The pacing law → workshop/definition · #27
+- 2026-06-11 · Roam is on the internet, with a quality gate → product/build · #25
+- 2026-06-11 · The cockpit: HOME.md → workshop/mechanism · #23
+- 2026-06-11 · Tooling scope pinned → workshop/definition · #21
+- 2026-06-11 · The app exists → product/build · #19
+- 2026-06-11 · Subagent plan, stage-gated → workshop/definition · #17
+- 2026-06-11 · Equipment plan, stage-gated → workshop/definition · #15
+- 2026-06-11 · Blueprint audit fixes → product/definition · #13
+- 2026-06-11 · The full V1 build plan → product/definition · #11
+- 2026-06-11 · Stack re-trial: choice upheld, frontend named → workshop/definition · #9
+- 2026-06-11 · The product is defined on paper → product/definition · #7
+- 2026-06-11 · Handoff notes get a merge carve-out → workshop/definition · #5
+- 2026-06-11 · Friendly machine labels → workshop/definition · #3
+- 2026-06-10 · Context engine v2 → workshop/definition · #2
+- 2026-06-10 · The workflow kit → workshop/mechanism · #1

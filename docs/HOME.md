@@ -581,6 +581,23 @@ capability to merge exists exactly where a ritual (and, for
 non-micro PRs, the founder's fresh yes) is present, and nowhere
 else.
 
+## Reading the board
+The [DASHBOARD](DASHBOARD.md) is repainted only at ritual moments —
+pickup when stale · handoff · liftoff · ship's tail — never
+hand-edited; between rituals, git outranks it. Glyphs: 🟢 done ·
+🟡 ongoing · 🔴 issue (always mirrored into Needs you) · ⚪ idle.
+Bars fill left to right (█ done · ░ remaining). Stage-map colors:
+green done · blue active · orange locked behind a dependency · gray
+queued. Sections: Needs you (your action queue — one sentence per
+item, receipts on the line below) · Sessions (every live session,
+one table — main · cockpit / local parallel / cloud — with what
+each needs from you) · You are here (version and stage bars) ·
+Stage map (dependencies) · Claude Web + Design discussion (open
+chats by their exact titles, so you can search them) · Shipped (the
+ten newest; the full chronology is
+[the ledger](history/README.md#the-ledger)). The board's shape is
+defined once, in [handoff §4](skills/handoff.md).
+
 ## Terms
 
 The newcomer test, which this section must always pass: a stranger

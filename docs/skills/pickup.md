@@ -47,31 +47,29 @@ Sources:
 
 ## 4 · Repaint if stale
 If the board disagrees with its sources (ROADMAP checkboxes,
-branch/PR reality, memory Status lines), REPAINT it now — pickup is
-a ritual and may write the DASHBOARD. Counts are computed at render
-time, never carried. Ship the repaint exactly as handoff §5 ships
+branch/PR reality, memory Status lines), REPAINT it now per the
+board spec in [handoff §4](handoff.md) — pickup is a ritual and may
+write the DASHBOARD. Ship the repaint exactly as handoff §5 ships
 its note: chore branch from freshly pulled main, DASHBOARD-only
 commit, micro-PR, immediate squash-merge.
 
 Sources:
-[DASHBOARD](../DASHBOARD.md)
-[handoff §5](handoff.md)
+[handoff §4–§5](handoff.md)
 
-## 5 · Render the briefing (exactly this shape)
-- Header: date · seat · baton claimed · last ritual · self-heal and
-  hook notes (only if any).
-- YOU ARE HERE — the version bar, then one bar per open stage, each
-  ending → its current task + glyph.
-- CLOUD — one line per dispatched task: 🟢 done/ready · 🟡 flying +
-  last-push age · 🔴 needs you / failed + reason · ⚪ held + reason.
-  Omit the section when nothing is dispatched.
-- FOCUS — one block per active founder task: Status / What it is /
-  Story, pulled from its memory file.
-- NEEDS YOU — numbered list.
+## 5 · Render the sit-down summary (exactly this shape)
+- Header: date · seat · baton claimed · last ritual ·
+  repaint/self-heal/hook notes (only if any).
+- SINCE YOU LEFT — deltas since the last FULL handoff stamp:
+  "Shipped N — <titles + PRs>" · session changes (newly 🟢 ready ·
+  🔴 blocked · spawn-fails, each with its age) · anything the hooks
+  reported. Omit whatever didn't change.
+- NEEDS YOU — verbatim from the board.
+- MAIN SESSION — only if one exists: Status / What it is / one-line
+  story, from its memory.
 - NEXT — Now: one action · Parallel: one or "—" (the pacing law).
-
-Then STOP and wait for the founder — the claim check happens in
-conversation before any task starts.
+Everything else lives on the board ([handoff §4](handoff.md)) —
+point, don't repeat. Then STOP and wait for the founder — the claim
+check happens in conversation before any task starts.
 
 Sources:
 [pacing law — LAWS §Workflow](../LAWS.md#workflow-non-negotiable)
