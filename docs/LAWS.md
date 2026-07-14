@@ -110,9 +110,10 @@ The LANE LAW (seat-blind — identical local or cloud): every lane
    rescuable from its first minute;
 2. runs the canary handshake before real work — its first act is a
    trivial push; the cockpit writes airborne-or-failed into the
-   pre-birthed memory; a lane seeing failed/aborted, a Status it does not own (parked ·
-   respawned · superseded), or silence past the timeout (~10 min
-   cloud, ~2 local), self-terminates after pushing what exists — a worker that cannot push is a zombie
+   pre-birthed memory; a lane seeing failed/aborted, a Status it
+   does not own (parked · respawned · superseded), or silence past
+   the timeout (~10 min cloud, ~2 local), self-terminates after
+   pushing what exists — a worker that cannot push is a zombie
    writing into the void;
 3. pushes every commit — unpushed work does not exist;
 4. never shares a file with any sibling — merges cannot collide by

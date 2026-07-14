@@ -27,6 +27,7 @@ Every weld prepends one line — the full chronology across all four
 doors, newest first. Frozen stories carry date only; entries from
 D-035 on carry time.
 
+- 2026-07-14 11:46 · restyle-sweep — leg-end restyle sweep: every living doc carries its links below the prose → workshop/definition · #121
 - 2026-07-14 10:55 · auto-merge-flip — repo auto-merge enabled so the self-merge law works as written; the repo's first armed --auto → workshop/mechanism · #119
 - 2026-07-14 10:32 · ci-trust — CI is the arbiter: Actions-green at every gate; the local gate mirrors all six CI steps; anchors born resolving → workshop/mechanism · #117
 - 2026-07-14 10:24 · laws-close — Leg close: LAWS carries the routing clause; pickup speaks the founder's shape → workshop/definition · #115

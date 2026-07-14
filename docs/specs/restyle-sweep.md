@@ -1,0 +1,91 @@
+---
+type: spec
+id: restyle-sweep
+title: Leg-end restyle sweep — D-029 finishes its migration
+status: shipped
+stage: workshop
+branch: docs/restyle-sweep
+pr: 121
+opened: 2026-07-14
+shipped: 2026-07-14
+---
+
+# restyle-sweep — leg-end restyle sweep: D-029 finishes its migration
+
+**Links:**
+[LAWS](../LAWS.md) ·
+[HOME](../HOME.md) ·
+[FOUNDATION](../FOUNDATION.md) ·
+[ROADMAP](../ROADMAP.md) ·
+[DESIGN-KICKOFF](../DESIGN-KICKOFF.md) ·
+[parallel-lanes](../skills/parallel-lanes.md) ·
+Decisions:
+[D-029](../DECISIONS.md#d-029--2026-07--corpus-writing-laws--readability-first-links-below-prose)
+
+## Goal
+
+Every living doc the ops leg did not already restyle conforms to the
+writing laws — readability-first, links below prose in a Sources
+block. Zero meaning changes anywhere. This finishes D-029's ratchet:
+the leg-end sweep restyles every file the leg didn't touch.
+
+## Content-immutable
+
+The diff may only relocate links into Sources blocks, rewrap lines,
+and fix the one HOME rendering nit. No wording changes. External
+review word-diffs sampled sections against main; any semantic drift
+fails the gate.
+
+## Out of scope
+
+- Frozen classes — history/**, DECISIONS entries, finalized specs.
+- Ritual-written surfaces — DASHBOARD, IDEAS.
+- The five ritual skill files (ship · handoff · pickup · decide ·
+  liftoff) — already conformant from their own PRs.
+- SETUP and ENGINE — born native.
+- CLAUDE.md · WEB-INSTRUCTIONS (a paste artifact) · memory/TEMPLATE.
+- DECISIONS is not touched — this task decides nothing new.
+
+## Plan — the sweep list, file by file
+
+1. HOME — convert every narrative paragraph and portrait to
+   links-below. Keep inline: all tables (file · routing · start-here)
+   · Terms definition lines · the "->" receipt-style lines. Fix the
+   routing-table nit: the raw SOURCES-family cell token becomes
+   backticked code so the angle brackets survive GitHub.
+2. DESIGN-KICKOFF — full conversion of the working rules; the fenced
+   preamble block is a paste artifact and stays byte-untouched.
+3. parallel-lanes — full conversion (its content shipped in D-032;
+   its form never migrated).
+4. FOUNDATION — convert its few inline references (principles, spine)
+   to Sources blocks per section.
+5. ROADMAP — convert the V1 intro paragraphs' inline links (check
+   families · reliability law) to one Sources block under the block.
+   Task-line trailing "->" refs and all stage-line links are
+   sanctioned inline and untouched. Checkbox state untouched.
+6. LAWS — rewrap the two over-length lane-law lines (introduced by
+   D-032's surgical edit) to house width; no other change.
+
+## Done means
+
+- [x] The sweep list fully applied (FOUNDATION already conformant —
+      no inline links to relocate; see the memory's Deviations)
+- [x] Zero inline links remain in the converted files' narrative
+      prose outside the sanctioned classes
+- [x] git diff --stat shows exactly seven files — five sweep targets
+      (HOME · DESIGN-KICKOFF · parallel-lanes · ROADMAP · LAWS) +
+      this spec + the memory; FOUNDATION unchanged
+- [x] Per-file visible-text diff vs origin/main shows only link
+      relocation and rewrapping (+ the one HOME nit) — spot-stated in
+      the PR summary
+- [x] ROADMAP checkbox count identical to main (5 done / 29 open)
+- [x] Full CI mirror green (lint · format:check · check:links ·
+      tests · build)
+- [x] `gh pr checks` green before the gate — Actions `checks` run
+      green on the head commit
+
+## Open questions
+
+None new — this is task-local, executing D-029's ratchet. Two
+reading calls (LAWS command-class · HOME Terms glossary-class) are
+recorded in the task memory.

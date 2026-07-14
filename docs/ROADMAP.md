@@ -29,17 +29,20 @@ The goal: one public URL where a visitor watches Roam do its whole
 job — suggest trips from as little as origin + dates, build a full
 day-by-day plan, and survive any edit with whole-plan re-validation —
 across three seeded scenarios, every claim sourced or labeled per the
-[reliability law](FOUNDATION.md#the-reliability-law). Built for
-leisure travelers, any party type. Demo-first but real: deployable
-production code, no onboarding or billing yet, and nothing that would
-need a rewrite when accounts arrive in V2.
+reliability law. Built for leisure travelers, any party type.
+Demo-first but real: deployable production code, no onboarding or
+billing yet, and nothing that would need a rewrite when accounts
+arrive in V2.
 Refuses (each lifts in a later version, by roadmap edit only):
 booking, payments, reservations, or any transaction · live fare/price
 scraping — cost means honest estimate ranges · mid-trip features ·
 social/sharing · mobile (web only).
-Ships: all five [check families](FOUNDATION.md#what-roam-checks) —
-two built deep, three more added as proof the plug-in promise holds;
-trending via general signals only.
+Ships: all five check families — two built deep, three more added as
+proof the plug-in promise holds; trending via general signals only.
+
+Sources:
+[reliability law](FOUNDATION.md#the-reliability-law)
+[check families](FOUNDATION.md#what-roam-checks)
 
 ### V1.S1 — Data Definition (the gate; docs + spike scripts only, no app code)
 Completion criteria: every V1 fact has a vetted source with a successful spike
