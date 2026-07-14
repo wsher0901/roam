@@ -3,49 +3,41 @@ type: dashboard
 title: Dashboard
 status: living
 ---
+
 # Dashboard — the state surface
 
-Stamp: 2026-07-13 · 23:25 · handoff · home PC
-V1 5/34 · S1 2/7 · S2 3/5 · sessions: 0 main · 0 parallel
-(1 needs you — an await-merge task) · needs-you 5
+Stamp: 2026-07-14 · 10:37 · ship · work PC
+V1 5/34 · S1 2/7 · S2 3/5 · sessions: 0 main · 0 parallel ·
+needs-you 4
 How to read this board →
 [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
 
-1. 🟢 Give the merge word on laws-close — the ops leg's last block
-   is finished and externally reviewable; the gate was not crossed
-   before this handoff (since 07-13).
-   → [PR #115](https://github.com/wsher0901/roam/pull/115) — its
-   spec, memory, and D-037 ride the docs/laws-close branch until
-   the weld
-2. 🟡 Paste the approved v4 text into the claude.ai → Roam Project →
+1. 🟡 Paste the approved v4 text into the claude.ai → Roam Project →
    settings box (since 07-11).
    → master: [WEB-INSTRUCTIONS](WEB-INSTRUCTIONS.md) · the box is a
    copy · [history](history/workshop/definition/web-instructions.md)
-3. 🟡 Run the machine-setup Verify block on this home PC — the work
+2. 🟡 Run the machine-setup Verify block on this home PC — the work
    PC passed in full (since 07-13).
    → [machine-setup](skills/machine-setup.md) ·
    [vault lens](skills/machine-setup.md#vault-lens) (applied on both
    seats)
-4. ⚪ Nine open engine questions sit parked in the Open register
+3. ⚪ Nine open engine questions sit parked in the Open register
    until S3 opens (since 07-13).
    → [ENGINE §12](ENGINE.md#12-open-register) ·
    [D-028](DECISIONS.md#d-028--2026-07--consolidation-recut--decision-policy--engine-brain-skeleton-form-project-policy-house-style-open-register-grows-69-upholds-d-021-extends-the-d-021-consolidation)
    · [V1.S3](ROADMAP.md#v1s3--engine-core--two-families-deep)
-5. ⚪ Write the reviewer-subagent spec — a small task queued after
+4. ⚪ Write the reviewer-subagent spec — a small task queued after
    the ops leg (since 07-13).
    → [SETUP §Staged](SETUP.md#staged--turns-on-when-its-stage-opens)
 
 ## Sessions
 
-0 main · 0 parallel (1 needs you · 1 await merge · 0 flying) —
-operations halted at this handoff; the one row below is a task
-waiting on you, not a running session.
-
-| Session | Task | State | Last push | Your move |
-|---|---|---|---|---|
-| — (cockpit closed at handoff) | laws-close — LAWS routing clause; pickup's founder shape ([PR #115](https://github.com/wsher0901/roam/pull/115)) | 🟢 complete, awaiting merge | 23:25 | give the merge word |
+0 main · 0 parallel — operations idle. Both of this sitting's tasks
+merged in order: laws-close ([#115](https://github.com/wsher0901/roam/pull/115))
+then ci-trust ([#117](https://github.com/wsher0901/roam/pull/117)).
+No session is running.
 
 ↳ main micro: — (no live main session)
 
@@ -82,9 +74,10 @@ flowchart LR
 
 ## Claude Web + Design discussion
 
-- **"Ops — Architecture audit & setup"** (Web) — the ops leg;
-  laws-close waits at THE GATE → next: the merge word, then the
-  leg-end restyle sweep (HOME Law-2 restyle · parallel-lanes
+- **"Ops — Architecture audit & setup"** (Web) — the ops leg's
+  law-and-knowledge arc is closed: laws-close (#115) and ci-trust
+  (#117, born from this session's CI diagnosis) both shipped → next:
+  the leg-end restyle sweep (HOME Law-2 restyle · parallel-lanes
   restyle · LAWS line-rewrap · the SOURCES-&lt;family&gt; nit).
 - **"<setup-ladder / P8 chat's exact title>"** (Web) — T3–T6
   relaunch briefs pending → next: per its own thread.
@@ -96,6 +89,8 @@ handoff.
 
 | When | What | PR |
 |---|---|---|
+| 07-14 10:32 | [CI is the arbiter: Actions-green at every gate; the local gate mirrors all six CI steps; anchors born resolving](history/workshop/mechanism/ci-trust.md) | [#117](https://github.com/wsher0901/roam/pull/117) |
+| 07-14 10:24 | [Leg close: LAWS carries the routing clause; pickup speaks the founder's shape](history/workshop/definition/laws-close.md) | [#115](https://github.com/wsher0901/roam/pull/115) |
 | 07-13 23:14 | [HOME closes the leg's knowledge layer: the routing table, one day in the workshop, the board paragraph recut, a stable Sessions anchor](history/workshop/definition/home-knowledge.md) | [#113](https://github.com/wsher0901/roam/pull/113) |
 | 07-13 22:58 | [State surfaces v2: the board learns the founder's names; pickup becomes the sit-down summary; welds stamp time and write the ledger](history/workshop/mechanism/state-surfaces-v2.md) | [#110](https://github.com/wsher0901/roam/pull/110) |
 | 2026-07-13 | [History quadrants: four doors; TEMPLATE owns the format + Status vocabulary](history/workshop/definition/history-quadrants.md) | [#108](https://github.com/wsher0901/roam/pull/108) |
@@ -104,5 +99,3 @@ handoff.
 | 2026-07-13 | [Stale-branch hygiene: gone-guard on the safety net; welded-elsewhere locals auto-removed](history/workshop/mechanism/stale-branch-hygiene.md) | [#101](https://github.com/wsher0901/roam/pull/101) |
 | 2026-07-13 | [Setup consolidation: SETUP.md born; equipment-plan and PROJECT-POLICY retired; the writing laws adopted](history/workshop/definition/setup-consolidation.md) | [#99](https://github.com/wsher0901/roam/pull/99) |
 | 2026-07-13 | [DESIGN-KICKOFF refresh: June-2026 Claude Design capabilities](history/workshop/definition/design-kickoff-refresh.md) | [#97](https://github.com/wsher0901/roam/pull/97) |
-| 2026-07-13 | [Consolidation recut: DECISION-POLICY becomes ENGINE; PROJECT-POLICY to house style](history/product/definition/engine-recut.md) | [#95](https://github.com/wsher0901/roam/pull/95) |
-| 2026-07-13 | [Vault-lens seed: Obsidian config travels through git](history/workshop/mechanism/vault-lens-seed.md) | [#91](https://github.com/wsher0901/roam/pull/91) |
