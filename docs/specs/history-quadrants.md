@@ -2,10 +2,12 @@
 type: spec
 id: history-quadrants
 title: History organizes by issue-door quadrants; TEMPLATE owns the memory format and Status vocabulary
-status: open
+status: shipped
 stage: workshop
 branch: docs/history-quadrants
+pr: 108
 opened: 2026-07-13
+shipped: 2026-07-13
 ---
 # history-quadrants — History organizes by issue-door quadrants; TEMPLATE owns the memory format and Status vocabulary
 
