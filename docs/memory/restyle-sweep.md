@@ -63,7 +63,7 @@ as Now). Nothing parked.
 
 The sweep touched five narrative docs and skipped FOUNDATION.
 Verification was per-file and automated: each converted file's
-visible text (all `[label](url)` reduced to `label`, Sources blocks
+visible text (every link reduced to its bare label, Sources blocks
 removed symmetrically from both sides) was diffed against main and
 came back identical — LAWS empty at the word level, ROADMAP and
 parallel-lanes and DESIGN-KICKOFF pure link-relocation, HOME clean
