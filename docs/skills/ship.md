@@ -61,7 +61,10 @@ atomically:
 - append one line atop
   [the ledger](../history/README.md#the-ledger):
   <date HH:MM> · <story title> → <quadrant> · #N
-Push. Squash-merge, delete the branch, pull main.
+Push. The arbiter applies to welds too: arm
+`gh pr merge --auto --squash --delete-branch` and let it fire on
+the weld commit's green (~35s), or `gh pr checks --watch` then
+squash-merge. Confirm merged, then pull main.
 
 ## 8 · Tail
 Run handoff in QUIET mode (board repaint per

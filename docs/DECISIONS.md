@@ -976,6 +976,9 @@ is branch-protected — the `checks` run is a required status check
 with enforce_admins on, so red is unmergeable by GitHub itself. This
 widens [D-027](#d-027--2026-07--laws-polish--glossed-lane-law-provenance-re-homed-to-consolidations-ship-syncs-with-main-before-the-weld)'s
 sync-with-main-before-the-weld preflight to the whole pipeline.
+Self-merge paths — the weld and micro-PRs — arm
+`gh pr merge --auto` and fire on green: immediacy yields to the
+arbiter.
 **Why:** seven red Actions notifications reached the founder before
 any report did — six were honest mid-authoring anchor failures, one
 was main itself red for ~30 minutes (#111→#112); every report was
@@ -985,7 +988,8 @@ The arbiter has to be the thing that actually gates the merge.
 — the node-24 hypothesis is retracted); git pre-push hooks (the
 decide-step check:links fix is lighter, targets the actual stumble,
 and per-machine hooks don't travel with the repo).
-**Affects:** [ship §1 · §THE GATE](skills/ship.md) ·
+**Affects:** [ship §1 · §THE GATE · §7](skills/ship.md) ·
+[handoff §5](skills/handoff.md) ·
 [parallel-lanes §When a lane finishes](skills/parallel-lanes.md) ·
 [decide §1](skills/decide.md) ·
 [LAWS §Workflow](LAWS.md#workflow-non-negotiable) ·

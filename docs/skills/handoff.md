@@ -103,8 +103,9 @@ Sources:
 ## 5 · Ship the note
 Branch chore/handoff-<date> from main, commit ONLY DASHBOARD.md
 (+ IDEAS.md if harvested), push, PR "chore: handoff", squash-merge
-immediately (the micro-PR carve-out). If the merge fails, leave the
-PR open — the next pickup self-heals it.
+as soon as its checks pass — `gh pr merge --auto --squash
+--delete-branch` (the micro-PR carve-out, now ~35s). If the merge
+fails, leave the PR open — the next pickup self-heals it.
 
 Sources:
 [DASHBOARD](../DASHBOARD.md)
