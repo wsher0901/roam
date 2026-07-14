@@ -2,10 +2,12 @@
 type: spec
 id: home-knowledge
 title: HOME closes the leg's knowledge layer — the routing table, one day in the workshop, the board paragraph recut, a stable Sessions anchor
-status: open
+status: shipped
 stage: workshop
 branch: docs/home-knowledge
+pr: 113
 opened: 2026-07-13
+shipped: 2026-07-13
 ---
 # home-knowledge — HOME closes the leg's knowledge layer: the routing table, one day in the workshop, the board paragraph recut, a stable Sessions anchor
 
