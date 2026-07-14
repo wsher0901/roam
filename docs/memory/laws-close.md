@@ -1,16 +1,17 @@
 ---
 type: memory
 id: laws-close
-updated: 2026-07-13 · ship (completion rewrite) · home PC
+updated: 2026-07-13 · handoff · home PC
 ---
 # laws-close — Leg close: LAWS carries the routing clause; pickup speaks the founder's shape
 
 ## Status
-Complete, awaiting merge — every Done-means box verified green on
-2026-07-13; PR
-[#115](https://github.com/wsher0901/roam/pull/115) flipped ready.
-By brief, the merge waits for founder approval AFTER external
-review.
+Complete, awaiting merge — the sitting closed at FULL handoff
+BEFORE the gate was crossed. PR
+[#115](https://github.com/wsher0901/roam/pull/115) is ready,
+externally reviewable, every Done-means box green; the merge word
+is the next sitting's first move. Nothing else remains on this
+branch.
 
 ## What this task is
 The ops leg's last block before the sweep: [LAWS](../LAWS.md)
@@ -25,28 +26,30 @@ ritual self-narration silent. Recorded as
 [D-037](../DECISIONS.md#d-037--2026-07--pickup-speaks-the-founders-shape--exit-table--recent-summary--pending-issues-laws-binds-the-routing-law-completes-d-036).
 
 ## Pending issues
-One verification nuance, resolved by the Done-means hierarchy: the
-brief expects grep "baton" to read 0 in pickup §5, but the
-payload's own no-self-narration line quotes the phrase "baton
-claimed" — a literal grep reads exactly 1, that quotation.
-Byte-match to the payload wins; the spirit (no baton line in the
-rendered summary) holds. Reported at THE GATE.
+One verification nuance, resolved and reported at THE GATE: the
+brief expects grep "baton" → 0 in pickup §5, but the payload's own
+no-self-narration line quotes "baton claimed" — a literal grep
+reads exactly 1, that quotation. Byte-match to the payload wins
+(Done-means); the rendered summary carries no baton line. The
+founder has seen this note; it needs no further action.
 
 ## Left / idle
-Only the weld: founder approval (after external review) → atomic
-bookkeeping commit → squash-merge. The tail recommends the leg-end
-restyle sweep as Now (HOME Law-2 restyle · parallel-lanes restyle ·
-LAWS line-rewrap · the SOURCES-&lt;family&gt; rendering nit).
+Only the weld, gated on the founder: merge word → atomic
+bookkeeping commit (history move with timed stamp · spec shipped ·
+ledger line) → squash-merge → tail repaint. The tail's NEXT, per
+the brief: the leg-end restyle sweep (HOME Law-2 restyle ·
+parallel-lanes restyle · LAWS line-rewrap · the
+SOURCES-&lt;family&gt; rendering nit).
 
 ## The story
 Born from the Web-chat ops leg ("Ops — Architecture audit & setup"
 chat) — the LAWS block queued at the home-knowledge weld, closing
-the leg's law-and-knowledge arc. The founder's sit-down is about
-resuming a mind, not restating a board — continuity of recent work,
-threads, and worries first; "baton claimed" and kin are machinery,
-not information. Both edits were surgical: one bullet into LAWS
-after the Retroactivity law, one whole-section replacement in
-pickup verified byte-exact against an independent re-transcription.
+the leg's law-and-knowledge arc. Both edits were surgical: one
+bullet into LAWS after the Retroactivity law, one whole-section
+replacement in pickup verified byte-exact against an independent
+re-transcription. At the 2026-07-13 handoff the founder confirmed
+no new Web or Design threads ("none"); the setup-ladder chat's
+verbatim title remains a founder-written placeholder on the board.
 
 ## Where to look
 Spec: [laws-close](../specs/laws-close.md) · decision:
