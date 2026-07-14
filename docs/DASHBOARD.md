@@ -5,31 +5,41 @@ status: living
 ---
 # Dashboard — the state surface
 
-Stamp: 2026-07-13 · ship tail · home PC
-Glyphs: 🟢 done · 🟡 ongoing · 🔴 issue · ⚪ idle. Repainted only by
-rituals (pickup when stale · handoff · liftoff · ship's tail) — never
-hand-edited; git outranks this board.
+Stamp: 2026-07-13 · 23:00 · ship tail · home PC
+V1 5/34 · S1 2/7 · S2 3/5 · sessions: 1 main · 0 parallel
+(0 needs you) · needs-you 4
+How to read this board →
+[HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
 
 1. 🟡 Paste the approved v4 text into the claude.ai → Roam Project →
-   settings box — its master is now
-   [WEB-INSTRUCTIONS](WEB-INSTRUCTIONS.md); the box is a copy
-   ([history](history/workshop/definition/web-instructions.md)).
-2. 🟡 Run the [machine-setup](skills/machine-setup.md) Verify block
-   on the home PC — the work PC passed in full on 2026-07-13 (seat
-   label repaired to "work PC").
-   [Vault lens](skills/machine-setup.md#vault-lens): applied on both
-   seats (2026-07-13).
-3. ⚪ [ENGINE §12 — the Open register](ENGINE.md#12-open-register) —
-   NINE open slots (was "DECISION-POLICY §10 — five questions";
-   grew at
-   [D-028](DECISIONS.md#d-028--2026-07--consolidation-recut--decision-policy--engine-brain-skeleton-form-project-policy-house-style-open-register-grows-69-upholds-d-021-extends-the-d-021-consolidation));
-   still parked until
-   [V1.S3](ROADMAP.md#v1s3--engine-core--two-families-deep) opens.
-4. ⚪ reviewer-subagent spec
-   ([SETUP §Staged](SETUP.md#staged--turns-on-when-its-stage-opens),
-   V1.S2.T2+) — small task after the ops leg.
+   settings box (since 07-11).
+   → master: [WEB-INSTRUCTIONS](WEB-INSTRUCTIONS.md) · the box is a
+   copy · [history](history/workshop/definition/web-instructions.md)
+2. 🟡 Run the machine-setup Verify block on this home PC — the work
+   PC passed in full (since 07-13).
+   → [machine-setup](skills/machine-setup.md) ·
+   [vault lens](skills/machine-setup.md#vault-lens) (applied on both
+   seats)
+3. ⚪ Nine open engine questions sit parked in the Open register
+   until S3 opens (since 07-13).
+   → [ENGINE §12](ENGINE.md#12-open-register) ·
+   [D-028](DECISIONS.md#d-028--2026-07--consolidation-recut--decision-policy--engine-brain-skeleton-form-project-policy-house-style-open-register-grows-69-upholds-d-021-extends-the-d-021-consolidation)
+   · [V1.S3](ROADMAP.md#v1s3--engine-core--two-families-deep)
+4. ⚪ Write the reviewer-subagent spec — a small task queued after
+   the ops leg (since 07-13).
+   → [SETUP §Staged](SETUP.md#staged--turns-on-when-its-stage-opens)
+
+## Sessions
+
+1 main · 0 parallel (0 needs you · 0 await merge · 0 flying)
+
+| Session | Task | State | Last push | Your move |
+|---|---|---|---|---|
+| main · cockpit | ops leg — [state-surfaces-v2](history/workshop/mechanism/state-surfaces-v2.md) welded; next: the HOME block brief | ⚪ idle | just now | — |
+
+↳ main micro: — (between briefs; no active spec)
 
 ## You are here
 
@@ -62,41 +72,20 @@ flowchart LR
   class S4,S5,S6,S7,S8 pending
 ```
 
-Legend: green = done · blue = active (work permitted now) · orange =
-locked (gated by an unmet dependency) · gray = pending (queued).
-Counts recomputed from [ROADMAP](ROADMAP.md) checkboxes at every
-ritual repaint.
+## Claude Web + Design discussion
 
-## In flight
+- **"Ops — Architecture audit & setup"** (Web) — the ops leg;
+  HOME + LAWS remain → next: the HOME block after this weld.
+- **"<setup-ladder / P8 chat's exact title>"** (Web) — T3–T6
+  relaunch briefs pending → next: per its own thread.
 
-⚪ **[V1.S2.T5](ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)
-— Design foundations** · no PR yet · 0/3
-Exploring Roam's visual language in Claude Design. Only extracted
-token values enter the repo, never markup or bundles. Each session
-starts by pasting the [DESIGN-KICKOFF](DESIGN-KICKOFF.md) preamble,
-then stating the lane.
-⚪ option card with confidence badge · ⚪ day timeline beside map ·
-⚪ token extraction ("Hand off to Claude Code")
-→ memory: — (Design-surface lane; predates the memory layer)
+No Design chats open yet.
 
-## Threads (non-task)
-
-none open — founder confirmed at the 2026-07-13 work-PC handoff.
-Three ops-leg briefs shipped this sitting on the home PC — Fleet
-Continuity ([PR #104](https://github.com/wsher0901/roam/pull/104)),
-the telemetry fold
-([PR #106](https://github.com/wsher0901/roam/pull/106)), and
-history quadrants
-([PR #108](https://github.com/wsher0901/roam/pull/108)) (see
-Shipped). Queued Web-chat work, in order:
-- the T3–T6 relaunch briefs (ladder step P8) — tracked as the S1
-  hold in You-are-here;
-- the v4 WEB-INSTRUCTIONS paste — Needs-you 1.
-
-## Shipped (latest — full record: [history/](history/README.md))
+## Shipped (latest — full record: [the ledger](history/README.md#the-ledger))
 
 | When | What | PR |
 |---|---|---|
+| 07-13 22:58 | [State surfaces v2: the board learns the founder's names; pickup becomes the sit-down summary; welds stamp time and write the ledger](history/workshop/mechanism/state-surfaces-v2.md) | [#110](https://github.com/wsher0901/roam/pull/110) |
 | 2026-07-13 | [History quadrants: four doors; TEMPLATE owns the format + Status vocabulary](history/workshop/definition/history-quadrants.md) | [#108](https://github.com/wsher0901/roam/pull/108) |
 | 2026-07-13 | [TELEMETRY folds into FACTS: Appendix C; file retired](history/workshop/definition/telemetry-fold.md) | [#106](https://github.com/wsher0901/roam/pull/106) |
 | 2026-07-13 | [Fleet continuity: handoff parks every local lane; liftoff respawns parked benches; wake-lock parks every outcome](history/workshop/mechanism/fleet-continuity.md) | [#104](https://github.com/wsher0901/roam/pull/104) |
@@ -106,4 +95,3 @@ Shipped). Queued Web-chat work, in order:
 | 2026-07-13 | [Consolidation recut: DECISION-POLICY becomes ENGINE; PROJECT-POLICY to house style](history/product/definition/engine-recut.md) | [#95](https://github.com/wsher0901/roam/pull/95) |
 | 2026-07-13 | [Vault-lens seed: Obsidian config travels through git](history/workshop/mechanism/vault-lens-seed.md) | [#91](https://github.com/wsher0901/roam/pull/91) |
 | 2026-07-13 | [LAWS polish: glossed lane law, provenance to consolidations, ship syncs with main](history/workshop/definition/laws-polish.md) | [#89](https://github.com/wsher0901/roam/pull/89) |
-| 2026-07-13 | [ROADMAP recut: plain-language V1, completion criteria, per-family vetting outputs](history/product/definition/roadmap-recut.md) | [#87](https://github.com/wsher0901/roam/pull/87) |
