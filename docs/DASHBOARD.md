@@ -82,9 +82,13 @@ then stating the lane.
 ## Threads (non-task)
 
 none open — founder confirmed at the 2026-07-13 work-PC handoff.
-The Fleet Continuity brief shipped this sitting on the home PC as
-[PR #104](https://github.com/wsher0901/roam/pull/104) (see
+Two ops-leg briefs shipped this sitting on the home PC — Fleet
+Continuity ([PR #104](https://github.com/wsher0901/roam/pull/104))
+and the telemetry fold
+([PR #106](https://github.com/wsher0901/roam/pull/106)) (see
 Shipped). Queued Web-chat work, in order:
+- the history/ brief — named "next task" by the telemetry-fold
+  brief; the ops leg's next item;
 - the T3–T6 relaunch briefs (ladder step P8) — tracked as the S1
   hold in You-are-here;
 - the v4 WEB-INSTRUCTIONS paste — Needs-you 1.
@@ -93,6 +97,7 @@ Shipped). Queued Web-chat work, in order:
 
 | When | What | PR |
 |---|---|---|
+| 2026-07-13 | [TELEMETRY folds into FACTS: Appendix C; file retired](history/telemetry-fold.md) | [#106](https://github.com/wsher0901/roam/pull/106) |
 | 2026-07-13 | [Fleet continuity: handoff parks every local lane; liftoff respawns parked benches; wake-lock parks every outcome](history/fleet-continuity.md) | [#104](https://github.com/wsher0901/roam/pull/104) |
 | 2026-07-13 | [Stale-branch hygiene: gone-guard on the safety net; welded-elsewhere locals auto-removed](history/stale-branch-hygiene.md) | [#101](https://github.com/wsher0901/roam/pull/101) |
 | 2026-07-13 | [Setup consolidation: SETUP.md born; equipment-plan and PROJECT-POLICY retired; the writing laws adopted](history/setup-consolidation.md) | [#99](https://github.com/wsher0901/roam/pull/99) |
@@ -102,4 +107,3 @@ Shipped). Queued Web-chat work, in order:
 | 2026-07-13 | [LAWS polish: glossed lane law, provenance to consolidations, ship syncs with main](history/laws-polish.md) | [#89](https://github.com/wsher0901/roam/pull/89) |
 | 2026-07-13 | [ROADMAP recut: plain-language V1, completion criteria, per-family vetting outputs](history/roadmap-recut.md) | [#87](https://github.com/wsher0901/roam/pull/87) |
 | 2026-07-12 | [FOUNDATION v4: principles recut, open family set, lifespan repair](history/foundation-v4.md) | [#85](https://github.com/wsher0901/roam/pull/85) |
-| 2026-07-11 | [Vault lens + clean-tree verdict](history/vault-lens.md) | [#82](https://github.com/wsher0901/roam/pull/82) |
