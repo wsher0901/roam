@@ -11,22 +11,28 @@ re-validates the whole plan on every edit — catching the small
 checkable details (weather per activity, tides, closures, crowds,
 flight-time sense) that other planners miss. It never fabricates:
 every claim carries a source and a confidence, and anything
-unverifiable is labeled unverified — the
-[reliability law](FOUNDATION.md#the-reliability-law). Full identity:
-[FOUNDATION.md](FOUNDATION.md).
+unverifiable is labeled unverified — the reliability law. Full
+identity: FOUNDATION.md.
 
-Three documents govern the workshop; this page explains all of
-them. [LAWS.md](LAWS.md) INSTRUCTS — the universal rules every
-session loads and must obey. [ENGINE.md](ENGINE.md) holds the
-STANDING CHOICES of the product's brain — the engine on paper. [DECISIONS.md](DECISIONS.md) holds HISTORY — every choice
-as an append-only D-number with its rationale and the alternatives
-it rejected. THIS FILE answers "how does anything work, and why is
-it like that": it explains and links, holds ZERO live state, and
+Three documents govern the workshop; this page explains all of them.
+LAWS.md INSTRUCTS — the universal rules every session loads and must
+obey. ENGINE.md holds the STANDING CHOICES of the product's brain —
+the engine on paper. DECISIONS.md holds HISTORY — every choice as an
+append-only D-number with its rationale and the alternatives it
+rejected. THIS FILE answers "how does anything work, and why is it
+like that": it explains and links, holds ZERO live state, and
 duplicates no rule — where a rule is restated here for readability,
-the restatement is a reading aid and the linked home stays
-canonical. Any "where are we" question is answered by
-[DASHBOARD.md](DASHBOARD.md) (repainted by rituals) or by sitting
-down and talking — never by content here.
+the restatement is a reading aid and the linked home stays canonical.
+Any "where are we" question is answered by DASHBOARD.md (repainted by
+rituals) or by sitting down and talking — never by content here.
+
+Sources:
+[reliability law](FOUNDATION.md#the-reliability-law)
+[FOUNDATION.md](FOUNDATION.md)
+[LAWS.md](LAWS.md)
+[ENGINE.md](ENGINE.md)
+[DECISIONS.md](DECISIONS.md)
+[DASHBOARD.md](DASHBOARD.md)
 
 ## Start here — the questions
 
@@ -76,30 +82,37 @@ Sources:
 ## The daily loop
 
 The founder's whole day, as the system sees it: sit down at either
-PC and open Claude Code in the repo — the session hook pulls main
-and reads the board before you type a word. Say anything ("hi"
-works); the sitting begins with the [pickup](skills/pickup.md)
-briefing rendering itself — where everything stands, what needs
-you, one recommended next step. Then work: talk, decide, review.
-Every task is born on its own branch with a draft PR
-([bench-first](#task-anatomy--lifecycle)); commits flow as the
-work's heartbeat; the moment a task's work is complete,
-[ship](skills/ship.md) runs itself and asks for the merge — your
-conversational yes is the only gate. When you're done for the day,
-one leaving phrase ("done for today", "bye") runs
-[handoff](skills/handoff.md); "take it to the cloud" runs
-[liftoff](skills/liftoff.md) instead and hands the open work to
-cloud lanes. Both close the session. Walk away.
+PC and open Claude Code in the repo — the session hook pulls main and
+reads the board before you type a word. Say anything ("hi" works);
+the sitting begins with the pickup briefing rendering itself — where
+everything stands, what needs you, one recommended next step. Then
+work: talk, decide, review. Every task is born on its own branch with
+a draft PR (bench-first); commits flow as the work's heartbeat; the
+moment a task's work is complete, ship runs itself and asks for the
+merge — your conversational yes is the only gate. When you're done
+for the day, one leaving phrase ("done for today", "bye") runs
+handoff; "take it to the cloud" runs liftoff instead and hands the
+open work to cloud lanes. Both close the session. Walk away.
 
-The two touchpoints
-([LAWS §The two touchpoints](LAWS.md#the-two-touchpoints)) are the
-founder's ONLY ritual duties:
+Sources:
+[pickup](skills/pickup.md)
+[bench-first](#task-anatomy--lifecycle)
+[ship](skills/ship.md)
+[handoff](skills/handoff.md)
+[liftoff](skills/liftoff.md)
+
+The two touchpoints (LAWS §The two touchpoints) are the founder's
+ONLY ritual duties:
 
 1. **Final merge approval** — every merge waits for your explicit
-   yes; the sole exception is the [micro-PR](#micro-prs).
+   yes; the sole exception is the micro-PR.
 2. **The leaving ritual** — the leaving phrase itself, plus
    answering handoff's one question about open Web/Design threads
    (and pasting Web/Design blocks when asked during the day).
+
+Sources:
+[LAWS §The two touchpoints](LAWS.md#the-two-touchpoints)
+[micro-PR](#micro-prs)
 
 The promise behind the design: everything else — recording,
 bookkeeping, status, claim checks, dispatch, briefings — runs
@@ -108,14 +121,18 @@ housekeeping never does.
 
 Four tools, four verbs — and only one of them writes. Claude WEB
 thinks: discussion, trade-offs, design of ideas; everything it
-concludes leaves as one paste block
-([WEB-INSTRUCTIONS](WEB-INSTRUCTIONS.md)). Claude DESIGN draws: a
-no-write surface whose deliverables enter the repo only as
-extracted token values ([DESIGN-KICKOFF](DESIGN-KICKOFF.md)).
-Claude CODE writes: every repo change flows through it as a PR.
-Obsidian READS: the vault is docs/; quick capture goes only into
-[IDEAS.md](IDEAS.md), and nothing rituals own — above all the
-[board](#the-board) — is ever hand-edited.
+concludes leaves as one paste block (WEB-INSTRUCTIONS). Claude DESIGN
+draws: a no-write surface whose deliverables enter the repo only as
+extracted token values (DESIGN-KICKOFF). Claude CODE writes: every
+repo change flows through it as a PR. Obsidian READS: the vault is
+docs/; quick capture goes only into IDEAS.md, and nothing rituals
+own — above all the board — is ever hand-edited.
+
+Sources:
+[WEB-INSTRUCTIONS](WEB-INSTRUCTIONS.md)
+[DESIGN-KICKOFF](DESIGN-KICKOFF.md)
+[IDEAS.md](IDEAS.md)
+[board](#the-board)
 
 ## The files — what each one is for
 
@@ -152,51 +169,71 @@ Obsidian READS: the vault is docs/; quick capture goes only into
 Portraits of the load-bearing ones — what each is FOR, and what
 would break without it:
 
-**[FOUNDATION](FOUNDATION.md)** is the product's identity: what Roam
-is, the spine, what Roam checks, the reliability law, the
-principles — only sentences that stay true across versions. It is
-the yardstick every PR and every lane review is judged against.
-Without it, "is this Roam?" would be re-litigated in every
-conversation, and scope would drift with whoever spoke last. It is
-read at judgment moments — [ship](skills/ship.md)'s PR pre-review,
-lane pre-review, [decide](skills/decide.md)'s ripple scan,
-[equipment vetting](SETUP.md#staged--turns-on-when-its-stage-opens), the
-[Design kickoff](DESIGN-KICKOFF.md)'s identity line — and reaches
-the engine code through [ENGINE](ENGINE.md)'s seeding.
+**FOUNDATION** is the product's identity: what Roam is, the spine,
+what Roam checks, the reliability law, the principles — only
+sentences that stay true across versions. It is the yardstick every
+PR and every lane review is judged against. Without it, "is this
+Roam?" would be re-litigated in every conversation, and scope would
+drift with whoever spoke last. It is read at judgment moments —
+ship's PR pre-review, lane pre-review, decide's ripple scan,
+equipment vetting, the Design kickoff's identity line — and reaches
+the engine code through ENGINE's seeding.
 
-**[ROADMAP](ROADMAP.md)** is the build order made falsifiable:
-versions and stages with testable completion criteria, tasks
-as checkboxes — the only place task state is stored at all. Without
-it there is no "next", no claim check, and no honest progress bar;
-with it, one glance settles what is done, active, and queued.
+Sources:
+[FOUNDATION](FOUNDATION.md)
+[ship](skills/ship.md)
+[decide](skills/decide.md)
+[equipment vetting](SETUP.md#staged--turns-on-when-its-stage-opens)
+[Design kickoff](DESIGN-KICKOFF.md)
+[ENGINE](ENGINE.md)
 
-**[DASHBOARD](DASHBOARD.md)** renders everything the ladder and the
-narratives already know into one screen — and is deliberately
-disposable: rituals repaint it wholesale from sources, and git
-outranks it on any disagreement. Without it the founder would
-reconstruct state from branches and PRs by hand; because it is
-derived, it can never become a second truth.
+**ROADMAP** is the build order made falsifiable: versions and stages
+with testable completion criteria, tasks as checkboxes — the only
+place task state is stored at all. Without it there is no "next", no
+claim check, and no honest progress bar; with it, one glance settles
+what is done, active, and queued.
 
-**[LAWS](LAWS.md)** is the constitution — the non-negotiables every
-session loads before its first word (workflow, task anatomy, lanes,
-safety, self-improvement). Without it every session would improvise
-its own workflow, and the guarantees the rest of this page
-describes would be habits instead of laws.
+Sources:
+[ROADMAP](ROADMAP.md)
 
-**[DECISIONS](DECISIONS.md)** is the append-only memory of choices:
-each D-number records what was decided, why, and what it rejected —
-so settled questions stay settled. Without it the same debates
-would replay forever, and nobody could tell a principle from an
-accident.
+**DASHBOARD** renders everything the ladder and the narratives
+already know into one screen — and is deliberately disposable:
+rituals repaint it wholesale from sources, and git outranks it on any
+disagreement. Without it the founder would reconstruct state from
+branches and PRs by hand; because it is derived, it can never become
+a second truth.
 
-**[ENGINE](ENGINE.md)** — The engine's blueprint, shaped like the
-engine itself: ten pipeline stages, each with inputs, outputs, a
-short procedure, its binding rules, and a Sources line. What is
-decided reads as rules; what is not decided is a numbered OPEN slot
-in the Open register — filling one takes a D-number. The V1.S3
-contract and V1.S4 brain prompt are written FROM this file; engine
-PRs are reviewed AGAINST it. It grows by accretion: new sources,
-families, and metrics plug into stages; the shape stays.
+Sources:
+[DASHBOARD](DASHBOARD.md)
+
+**LAWS** is the constitution — the non-negotiables every session
+loads before its first word (workflow, task anatomy, lanes, safety,
+self-improvement). Without it every session would improvise its own
+workflow, and the guarantees the rest of this page describes would be
+habits instead of laws.
+
+Sources:
+[LAWS](LAWS.md)
+
+**DECISIONS** is the append-only memory of choices: each D-number
+records what was decided, why, and what it rejected — so settled
+questions stay settled. Without it the same debates would replay
+forever, and nobody could tell a principle from an accident.
+
+Sources:
+[DECISIONS](DECISIONS.md)
+
+**ENGINE** — The engine's blueprint, shaped like the engine itself:
+ten pipeline stages, each with inputs, outputs, a short procedure,
+its binding rules, and a Sources line. What is decided reads as
+rules; what is not decided is a numbered OPEN slot in the Open
+register — filling one takes a D-number. The V1.S3 contract and V1.S4
+brain prompt are written FROM this file; engine PRs are reviewed
+AGAINST it. It grows by accretion: new sources, families, and metrics
+plug into stages; the shape stays.
+
+Sources:
+[ENGINE](ENGINE.md)
 
 ### SETUP
 The workshop's inventory, pure listing: the stack, what is
@@ -204,106 +241,139 @@ configured once in the repo or the cloud, what every machine owes
 (machine-setup is the skill that pays it), and what is staged for a
 future stage. Status never lives here — the DASHBOARD holds it.
 
-**[specs/](specs/README.md)** holds each task's stable contract —
-goal, scope edges, plan, Done-means — born from the discussion that
-opened the task, so conclusions don't evaporate with the chat.
-Without specs, [ship](skills/ship.md) would have nothing objective
-to gate on, and "done" would mean "tired".
+**specs/** holds each task's stable contract — goal, scope edges,
+plan, Done-means — born from the discussion that opened the task, so
+conclusions don't evaporate with the chat. Without specs, ship would
+have nothing objective to gate on, and "done" would mean "tired".
 
-**[memory/](memory/README.md)** holds each task's living story in
-the locked format (Status first), rewritten cognitively at rituals
-and at the lane trigger moments. It is how a session that has never
-seen the task before — tomorrow's cockpit, a rescuer of a dead
-lane — picks it up cold. Without it, every interruption would cost
-the whole context.
+Sources:
+[specs/](specs/README.md)
+[ship](skills/ship.md)
 
-**[history/](history/README.md)** is where memories retire: one
-narrative file per shipped task, moved at the weld with its
-shipped date and PR number. Git keeps the technical record;
-history/ keeps the meaning. Without it, "why does this exist?"
-would eventually have no answer a human can read.
+**memory/** holds each task's living story in the locked format
+(Status first), rewritten cognitively at rituals and at the lane
+trigger moments. It is how a session that has never seen the task
+before — tomorrow's cockpit, a rescuer of a dead lane — picks it up
+cold. Without it, every interruption would cost the whole context.
 
-**[IDEAS](IDEAS.md)** is the one inbox: any idea or defect voiced
-outside the current task's scope becomes a dated line, unasked.
-Without it, stray thoughts would either derail the current task or
-be lost; with it, nothing is scope until triaged, and nothing is
-forgotten either.
+Sources:
+[memory/](memory/README.md)
 
-**[skills/](skills/)** holds the ritual procedures and workshop
-manuals as vault-readable pages — the founder can read every ritual
-in Obsidian, and the `.claude/skills/` stubs that trigger them
-cannot drift because they only point. Without this split, the
-workshop's automation would be invisible and unauditable.
+**history/** is where memories retire: one narrative file per shipped
+task, moved at the weld with its shipped date and PR number. Git
+keeps the technical record; history/ keeps the meaning. Without it,
+"why does this exist?" would eventually have no answer a human can
+read.
 
-**[data/](data/FACTS.md)** is the engine's ground truth on paper:
-[FACTS](data/FACTS.md) (what the engine must know, what it may be
-told, and what the app records about itself —
-[Appendix C](data/FACTS.md#appendix-c--telemetry-vocabulary-what-the-app-records)),
-[SOURCES](data/SOURCES.md) (where each fact verifiably comes from),
-[SCHEMA](data/SCHEMA.md) (how it will be stored). Without
-this layer the reliability law would be a slogan; with it, every
-claim the product ever renders traces to a vetted, graded source.
+Sources:
+[history/](history/README.md)
 
-**[DESIGN-KICKOFF](DESIGN-KICKOFF.md)** carries the rules into
-Claude Design, which cannot read the repo's instructions: the
-pasted preamble sets identity, scope, and the no-write law for
-every Design session. Without it each session would need the rules
-re-explained — or worse, wouldn't get them.
+**IDEAS** is the one inbox: any idea or defect voiced outside the
+current task's scope becomes a dated line, unasked. Without it, stray
+thoughts would either derail the current task or be lost; with it,
+nothing is scope until triaged, and nothing is forgotten either.
+
+Sources:
+[IDEAS](IDEAS.md)
+
+**skills/** holds the ritual procedures and workshop manuals as
+vault-readable pages — the founder can read every ritual in Obsidian,
+and the `.claude/skills/` stubs that trigger them cannot drift
+because they only point. Without this split, the workshop's
+automation would be invisible and unauditable.
+
+Sources:
+[skills/](skills/)
+
+**data/** is the engine's ground truth on paper: FACTS (what the
+engine must know, what it may be told, and what the app records about
+itself — Appendix C), SOURCES (where each fact verifiably comes
+from), SCHEMA (how it will be stored). Without this layer the
+reliability law would be a slogan; with it, every claim the product
+ever renders traces to a vetted, graded source.
+
+Sources:
+[data/](data/FACTS.md)
+[FACTS](data/FACTS.md)
+[Appendix C](data/FACTS.md#appendix-c--telemetry-vocabulary-what-the-app-records)
+[SOURCES](data/SOURCES.md)
+[SCHEMA](data/SCHEMA.md)
+
+**DESIGN-KICKOFF** carries the rules into Claude Design, which cannot
+read the repo's instructions: the pasted preamble sets identity,
+scope, and the no-write law for every Design session. Without it each
+session would need the rules re-explained — or worse, wouldn't get
+them.
+
+Sources:
+[DESIGN-KICKOFF](DESIGN-KICKOFF.md)
 
 ## The mechanisms
 
 How the workshop actually works, one mechanism at a time. The laws
-themselves live in [LAWS](LAWS.md); the procedures in
-[docs/skills/](skills/); this section explains why they fit
-together.
+themselves live in LAWS; the procedures in docs/skills/; this section
+explains why they fit together.
+
+Sources:
+[LAWS](LAWS.md)
+[docs/skills/](skills/)
 
 ### Task anatomy & lifecycle
 
 **Birth — bench-first.** Every task, cockpit included, starts
 identically: freshly pulled main → branch → spec (when discussion
 opened the task) + memory stub → a DRAFT PR pushed to origin BEFORE
-any session works it
-([D-023](DECISIONS.md#d-023--2026-07--universal-draft-pr-at-birth--micro-pr-carve-out-recut-amends-d-002-d-008-d-020);
-procedure:
-[parallel-lanes §Bench-first birth](skills/parallel-lanes.md#bench-first-birth-cockpit-procedure)).
-The point of the bench: from its first minute, a task exists in
-public — branch, contract, story, and window all on origin — so no
-work ever lives in only one place, and any seat (or any rescuer)
-can see and claim it. The draft PR is the task's public window for
-its whole life.
+any session works it (D-023; procedure: parallel-lanes §Bench-first
+birth). The point of the bench: from its first minute, a task exists
+in public — branch, contract, story, and window all on origin — so no
+work ever lives in only one place, and any seat (or any rescuer) can
+see and claim it. The draft PR is the task's public window for its
+whole life.
 
-**Work — the heartbeat.** Commits are the heartbeat; every commit
-is pushed. Small steps live as checkboxes in the spec's Done-means
-(or in the PR description when the
-[ROADMAP](ROADMAP.md) line was already fully specified and no spec
-exists). Contract changes dual-write: the spec receives the edit,
-and the memory narrates what changed and why — the contract stays
-clean while the story keeps the reasoning.
+Sources:
+[D-023](DECISIONS.md#d-023--2026-07--universal-draft-pr-at-birth--micro-pr-carve-out-recut-amends-d-002-d-008-d-020)
+[parallel-lanes §Bench-first birth](skills/parallel-lanes.md#bench-first-birth-cockpit-procedure)
 
-**Ship — the atomic weld.** When the work is complete,
-[ship](skills/ship.md) runs itself: tests and linter, an honest
-Done-means check, weave-lint, the memory's final rewrite, the
-draft→ready flip, a plain-language summary — then THE GATE: the
-founder's explicit yes, never inferred. On approval comes the weld:
-ONE bookkeeping commit on the same branch — the
-[ROADMAP](ROADMAP.md) checkbox ticks, the memory file MOVES to
-[history/](history/README.md) (frontmatter gains its shipped date
-and PR number), the spec finalizes — then squash-merge, branch
-deleted, main pulled. Why atomic: state and work land together or
-die together. There is no instant where main claims "done" without
-containing the work, or contains the work while claiming "not
-done" — a crash between merging and bookkeeping cannot exist,
-because they are the same merge. (Workshop tasks with no roadmap
-line ship the same way, keyed by slug, minus the tick.)
+**Work — the heartbeat.** Commits are the heartbeat; every commit is
+pushed. Small steps live as checkboxes in the spec's Done-means (or
+in the PR description when the ROADMAP line was already fully
+specified and no spec exists). Contract changes dual-write: the spec
+receives the edit, and the memory narrates what changed and why — the
+contract stays clean while the story keeps the reasoning.
+
+Sources:
+[ROADMAP](ROADMAP.md)
+
+**Ship — the atomic weld.** When the work is complete, ship runs
+itself: tests and linter, an honest Done-means check, weave-lint, the
+memory's final rewrite, the draft→ready flip, a plain-language
+summary — then THE GATE: the founder's explicit yes, never inferred.
+On approval comes the weld: ONE bookkeeping commit on the same
+branch — the ROADMAP checkbox ticks, the memory file MOVES to
+history/ (frontmatter gains its shipped date and PR number), the spec
+finalizes — then squash-merge, branch deleted, main pulled. Why
+atomic: state and work land together or die together. There is no
+instant where main claims "done" without containing the work, or
+contains the work while claiming "not done" — a crash between merging
+and bookkeeping cannot exist, because they are the same merge.
+(Workshop tasks with no roadmap line ship the same way, keyed by
+slug, minus the tick.)
+
+Sources:
+[ship](skills/ship.md)
+[ROADMAP](ROADMAP.md)
+[history/](history/README.md)
 
 **Status is never stored — it is read.** A task's status is not a
 field anywhere. It is read from the bench, the box, and the note:
 git (does the branch exist; is the PR draft or ready; what was
 pushed when), the ROADMAP checkbox (which flips only inside the
 weld), and the memory's Status section (the narrative handshake
-surface). The [board](#the-board) renders these; it originates
-nothing. That is why nothing here can rot: there is no status copy
-to forget to update.
+surface). The board renders these; it originates nothing. That is why
+nothing here can rot: there is no status copy to forget to update.
+
+Sources:
+[board](#the-board)
 
 ### Information relay & retention
 
@@ -379,63 +449,80 @@ state. Each fires itself; the founder never has to remember one.
 (How they fire: [§Skills](#skills). Two are a pair: ship ends by
 running handoff in QUIET mode.)
 
-**[pickup](skills/pickup.md)** — fires unprompted on the founder's
-first message of a cockpit session (dispatched lanes skip it). It
-claims the baton, reads
-[ROADMAP](ROADMAP.md) + [DASHBOARD](DASHBOARD.md) + every active
-memory + live git, self-heals stranded micro-PRs, repaints the
-board if stale, and renders the sit-down briefing: you-are-here
-bars, cloud lanes, focus blocks, needs-you list, one next action.
-The founder sees the whole workshop in one screen and starts
-talking.
+**pickup** — fires unprompted on the founder's first message of a
+cockpit session (dispatched lanes skip it). It claims the baton,
+reads ROADMAP + DASHBOARD + every active memory + live git,
+self-heals stranded micro-PRs, repaints the board if stale, and
+renders the sit-down briefing: you-are-here bars, cloud lanes, focus
+blocks, needs-you list, one next action. The founder sees the whole
+workshop in one screen and starts talking.
 
-**[handoff](skills/handoff.md)** — the leaving ritual; fires on
-leaving phrases ("done for today", "bye"), explicit call, or as
-ship's QUIET tail. FULL mode secures all work onto origin, asks the
-never-skipped Web/Design question, rewrites every active
-non-lane memory for a cold reader, repaints the board, and ships
-the note as a micro-PR — then closes the session. QUIET (ship's
-tail) only repaints and recommends what's next; it never closes the
-session.
+Sources:
+[pickup](skills/pickup.md)
+[ROADMAP](ROADMAP.md)
+[DASHBOARD](DASHBOARD.md)
 
-**[ship](skills/ship.md)** — fires the moment a task's work is
-complete; a task is never declared done in conversation without it.
-It syncs the branch with main, gates (tests, linter, spec,
-weave-lint), rewrites the memory,
-flips the draft PR ready, and summarizes in plain language — then
-stops at THE GATE for the founder's explicit yes. On approval it
-performs the [atomic weld](#task-anatomy--lifecycle), squash-merges,
-deletes the branch, pulls main, and runs its QUIET tail.
+**handoff** — the leaving ritual; fires on leaving phrases ("done for
+today", "bye"), explicit call, or as ship's QUIET tail. FULL mode
+secures all work onto origin, asks the never-skipped Web/Design
+question, rewrites every active non-lane memory for a cold reader,
+repaints the board, and ships the note as a micro-PR — then closes
+the session. QUIET (ship's tail) only repaints and recommends what's
+next; it never closes the session.
 
-**[decide](skills/decide.md)** — fires unasked whenever the founder
-states or confirms a roadmap-level change (add, cut, reorder,
-pivot, pause — task-local calls stay in the task's memory instead).
-It appends the next D-number to [DECISIONS](DECISIONS.md) in the
-locked format and applies the ripple — every file the decision
-touches — in the SAME commit, so the log and reality never diverge.
-A decision is never a micro-PR; standalone ones get their own
-branch and the founder's approval.
+Sources:
+[handoff](skills/handoff.md)
 
-**[liftoff](skills/liftoff.md)** — fires on "take it to the cloud"
-and equivalents; closes the session. It runs a FULL handoff first
-(origin must be whole before anything spawns), triages every open
-item through the eligibility gate, births anything unbirthed
-bench-first, spawns eligible lanes cloud-side, verifies each canary
-handshake, and repaints the board as the flight plan — every lane
-airborne, held, or failed, each with its reason. From the trigger
-phrase on it needs zero mid-ritual approvals: the founder is
-leaving.
+**ship** — fires the moment a task's work is complete; a task is
+never declared done in conversation without it. It syncs the branch
+with main, gates (tests, linter, spec, weave-lint), rewrites the
+memory, flips the draft PR ready, and summarizes in plain language —
+then stops at THE GATE for the founder's explicit yes. On approval it
+performs the atomic weld, squash-merges, deletes the branch, pulls
+main, and runs its QUIET tail.
+
+Sources:
+[ship](skills/ship.md)
+[atomic weld](#task-anatomy--lifecycle)
+
+**decide** — fires unasked whenever the founder states or confirms a
+roadmap-level change (add, cut, reorder, pivot, pause — task-local
+calls stay in the task's memory instead). It appends the next
+D-number to DECISIONS in the locked format and applies the ripple —
+every file the decision touches — in the SAME commit, so the log and
+reality never diverge. A decision is never a micro-PR; standalone
+ones get their own branch and the founder's approval.
+
+Sources:
+[decide](skills/decide.md)
+[DECISIONS](DECISIONS.md)
+
+**liftoff** — fires on "take it to the cloud" and equivalents; closes
+the session. It runs a FULL handoff first (origin must be whole
+before anything spawns), triages every open item through the
+eligibility gate, births anything unbirthed bench-first, spawns
+eligible lanes cloud-side, verifies each canary handshake, and
+repaints the board as the flight plan — every lane airborne, held, or
+failed, each with its reason. From the trigger phrase on it needs
+zero mid-ritual approvals: the founder is leaving.
+
+Sources:
+[liftoff](skills/liftoff.md)
 
 ### The baton
 
-The cockpit is the ONE session the founder is actively driving —
-the only seat that runs rituals, writes main's bookkeeping, and
-repaints the board. The baton is the right to be that session:
-claimed by [pickup](skills/pickup.md) on fresh origin, released by
-FULL [handoff](skills/handoff.md) or [liftoff](skills/liftoff.md)
-(both of which close the session). Between cockpits the baton is
-dormant — nobody holds it, and lanes fly on regardless
-([baton law](LAWS.md#parallel-lanes--cloud)).
+The cockpit is the ONE session the founder is actively driving — the
+only seat that runs rituals, writes main's bookkeeping, and repaints
+the board. The baton is the right to be that session: claimed by
+pickup on fresh origin, released by FULL handoff or liftoff (both of
+which close the session). Between cockpits the baton is dormant —
+nobody holds it, and lanes fly on regardless (baton law).
+
+Sources:
+[pickup](skills/pickup.md)
+[handoff](skills/handoff.md)
+[liftoff](skills/liftoff.md)
+[baton law](LAWS.md#parallel-lanes--cloud)
 
 Why exactly one: the board and main's bookkeeping have a single
 writer at a time precisely so they can be trusted. Two cockpits
@@ -448,46 +535,53 @@ Supersession handles the stale seat: every repaint stamps date,
 ritual, and seat on the board. A session that discovers its own
 seat-stamp superseded — the founder has sat down somewhere else —
 self-closes: push what exists, write nothing. And release is
-physical, not merely procedural — the close-lock: FULL
-[handoff](skills/handoff.md) and [liftoff](skills/liftoff.md) end
-by writing `.claude/session-closed` as their last act, and from
-then on the prompt hook rejects every input to that session
-("this session is closed — open a fresh `claude`"). The
-session-start hook deletes the flag before anything else, so new
-sessions are always live.
+physical, not merely procedural — the close-lock: FULL handoff and
+liftoff end by writing `.claude/session-closed` as their last act,
+and from then on the prompt hook rejects every input to that session
+("this session is closed — open a fresh `claude`"). The session-start
+hook deletes the flag before anything else, so new sessions are
+always live.
+
+Sources:
+[handoff](skills/handoff.md)
+[liftoff](skills/liftoff.md)
 
 ### Lanes, local & cloud
 
 A lane is one parallel work stream — a background agent, a worktree
 session, or a cloud session — flying one task on its own branch.
-The [lane law](LAWS.md#parallel-lanes--cloud) is seat-blind: local
-and cloud lanes follow identical rules, so a task's artifacts never
-betray where they were made (the seat-invariance law — only ritual
-stamps name seats). Mechanics live in
-[parallel-lanes](skills/parallel-lanes.md); the shape of the law,
-in prose:
+The lane law is seat-blind: local and cloud lanes follow identical
+rules, so a task's artifacts never betray where they were made (the
+seat-invariance law — only ritual stamps name seats). Mechanics live
+in parallel-lanes; the shape of the law, in prose:
 
-The cockpit births every lane [bench-first](#task-anatomy--lifecycle)
-— branch, spec, memory stub, draft PR, all verified on origin
-BEFORE any session exists. Then the canary handshake: the lane's
-first act is one trivial pushed commit (its memory Status →
-"claimed"); the cockpit answers by writing "airborne" into that
-same memory — or "spawn failed → run locally" into memory and the
-board's abort ledger if no canary arrives. A lane that sees
-failed/aborted, or silence past the timeout, self-terminates
-cleanly. Why this dance: the bench proves the world can see the
-task; the canary proves the lane can reach the world. A worker that
-cannot push is a zombie writing into the void — the handshake
-starves zombies before they cost a day's work, a lesson bought when
-early cloud sandboxes couldn't push to origin and their work died
-with them
-([D-020](DECISIONS.md#d-020--2026-07--parallel-lanes-v2-native-lanes-replace-hand-built-orchestration)).
+The cockpit births every lane bench-first — branch, spec, memory
+stub, draft PR, all verified on origin BEFORE any session exists.
+Then the canary handshake: the lane's first act is one trivial pushed
+commit (its memory Status → "claimed"); the cockpit answers by
+writing "airborne" into that same memory — or "spawn failed → run
+locally" into memory and the board's abort ledger if no canary
+arrives. A lane that sees failed/aborted, or silence past the
+timeout, self-terminates cleanly. Why this dance: the bench proves
+the world can see the task; the canary proves the lane can reach the
+world. A worker that cannot push is a zombie writing into the void —
+the handshake starves zombies before they cost a day's work, a lesson
+bought when early cloud sandboxes couldn't push to origin and their
+work died with them (D-020).
 
-While flying, a lane pushes every commit, never shares a file with any
-sibling (so merges can't collide), keeps its own memory at the
-[four moments](skills/parallel-lanes.md#the-four-memory-moments-the-lanes-diary-rule),
-and speaks only through its PR — `BLOCKED:` comments for questions,
-the ready-flip plus plain summary for completion.
+Sources:
+[lane law](LAWS.md#parallel-lanes--cloud)
+[parallel-lanes](skills/parallel-lanes.md)
+[bench-first](#task-anatomy--lifecycle)
+[D-020](DECISIONS.md#d-020--2026-07--parallel-lanes-v2-native-lanes-replace-hand-built-orchestration)
+
+While flying, a lane pushes every commit, never shares a file with
+any sibling (so merges can't collide), keeps its own memory at the
+four moments, and speaks only through its PR — `BLOCKED:` comments
+for questions, the ready-flip plus plain summary for completion.
+
+Sources:
+[four moments](skills/parallel-lanes.md#the-four-memory-moments-the-lanes-diary-rule)
 
 What a lane may touch:
 
@@ -497,34 +591,41 @@ What a lane may touch:
 | its own PR | speaks through it: `BLOCKED:` comments, ready-flip, summary |
 | main — the [board](DASHBOARD.md), [IDEAS](IDEAS.md), [ROADMAP](ROADMAP.md) ticks, [history/](history/README.md), any merge | NEVER — cockpit rituals own all of main's bookkeeping |
 
-Why the ROADMAP tick is the founder's line: the checkbox is the
-only stored task state, and it flips only inside
-[ship](skills/ship.md)'s weld, downstream of the founder's yes. If
-a lane could tick it, "done" would stop meaning
-"founder-approved and merged" — the one meaning it must keep. Ideas
-a lane surfaces reach [IDEAS](IDEAS.md) the same way: harvested by
-a cockpit ritual, never written by the lane.
+Why the ROADMAP tick is the founder's line: the checkbox is the only
+stored task state, and it flips only inside ship's weld, downstream
+of the founder's yes. If a lane could tick it, "done" would stop
+meaning "founder-approved and merged" — the one meaning it must keep.
+Ideas a lane surfaces reach IDEAS the same way: harvested by a
+cockpit ritual, never written by the lane.
+
+Sources:
+[ship](skills/ship.md)
+[IDEAS](IDEAS.md)
 
 Dispatch: mid-session lanes default LOCAL (background agents,
-worktrees); CLOUD dispatch happens only through
-[liftoff](skills/liftoff.md)'s eligibility gate — fully specified,
-no secrets exposure, cloud-compatible needs, no local-only tooling,
-file-disjoint from every flying sibling. Ineligible or failed
-items are never silently parked: each gets its status written into
-its own memory and the board
-([dispatch law](LAWS.md#workflow-non-negotiable)).
+worktrees); CLOUD dispatch happens only through liftoff's eligibility
+gate — fully specified, no secrets exposure, cloud-compatible needs,
+no local-only tooling, file-disjoint from every flying sibling.
+Ineligible or failed items are never silently parked: each gets its
+status written into its own memory and the board (dispatch law).
+
+Sources:
+[liftoff](skills/liftoff.md)
+[dispatch law](LAWS.md#workflow-non-negotiable)
 
 ### Micro-PRs
 
-Main is PR-only, and every merge waits for the founder — with
-exactly one carve-out. A micro-PR touches ONLY
-[DASHBOARD.md](DASHBOARD.md) and/or [IDEAS.md](IDEAS.md), is
-written by a ritual (handoff, liftoff, ship's tail — or pickup's
+Main is PR-only, and every merge waits for the founder — with exactly
+one carve-out. A micro-PR touches ONLY DASHBOARD.md and/or IDEAS.md,
+is written by a ritual (handoff, liftoff, ship's tail — or pickup's
 stale-repaint, which rides the same carve-out), and squash-merges
-immediately without asking
-([D-002](DECISIONS.md#d-002--2026-06--handoff-note-merge-policy) as
-recut by
-[D-023](DECISIONS.md#d-023--2026-07--universal-draft-pr-at-birth--micro-pr-carve-out-recut-amends-d-002-d-008-d-020)).
+immediately without asking (D-002 as recut by D-023).
+
+Sources:
+[DASHBOARD.md](DASHBOARD.md)
+[IDEAS.md](IDEAS.md)
+[D-002](DECISIONS.md#d-002--2026-06--handoff-note-merge-policy)
+[D-023](DECISIONS.md#d-023--2026-07--universal-draft-pr-at-birth--micro-pr-carve-out-recut-amends-d-002-d-008-d-020)
 
 Why it is safe: both files are derived or inbox surfaces — the
 board is repainted wholesale from sources by the next ritual
@@ -543,49 +644,65 @@ leaving habit.
 
 ### The board
 
-[DASHBOARD.md](DASHBOARD.md) is the workshop's one state surface —
-and deliberately the least authoritative file in the repo. Its
-repaint model is event-driven: rituals repaint it wholesale from
-sources ([pickup](skills/pickup.md) when stale,
-[handoff](skills/handoff.md), [liftoff](skills/liftoff.md),
-[ship](skills/ship.md)'s tail) — never edited by hand, never
-patched incrementally, never on a timer. Every repaint recomputes
-all counts from [ROADMAP](ROADMAP.md) checkboxes at render time
-(the derivation law:
-[LAWS §Knowledge & tracking](LAWS.md#knowledge--tracking)) and
-stamps its header with date · ritual · seat, so staleness is
-self-declaring. Git outranks it on any disagreement — the board is
-a rendering of the truth, not the truth.
+DASHBOARD.md is the workshop's one state surface — and deliberately
+the least authoritative file in the repo. Its repaint model is
+event-driven: rituals repaint it wholesale from sources (pickup when
+stale, handoff, liftoff, ship's tail) — never edited by hand, never
+patched incrementally, never on a timer. Every repaint recomputes all
+counts from ROADMAP checkboxes at render time (the derivation law:
+LAWS §Knowledge & tracking) and stamps its header with date · ritual
+· seat, so staleness is self-declaring. Git outranks it on any
+disagreement — the board is a rendering of the truth, not the truth.
 
-How to read every board section, glyph, and bar:
-[§Reading the board](#reading-the-board). The board's shape is
-defined once, in [handoff §4](skills/handoff.md); rituals render it,
+Sources:
+[DASHBOARD.md](DASHBOARD.md)
+[pickup](skills/pickup.md)
+[handoff](skills/handoff.md)
+[liftoff](skills/liftoff.md)
+[ship](skills/ship.md)
+[ROADMAP](ROADMAP.md)
+[LAWS §Knowledge & tracking](LAWS.md#knowledge--tracking)
+
+How to read every board section, glyph, and bar: §Reading the board.
+The board's shape is defined once, in handoff §4; rituals render it,
 nothing else writes it.
+
+Sources:
+[§Reading the board](#reading-the-board)
+[handoff §4](skills/handoff.md)
 
 ### Skills
 
 The rituals run on Claude Code's skill system, split in two
 deliberately. The procedure — the actual numbered steps — lives
-vault-readable in [docs/skills/](skills/), woven into the link
-graph like any other doc, so the founder can read every ritual in
-Obsidian and a PR can amend one like any law. The trigger lives in
+vault-readable in docs/skills/, woven into the link graph like any
+other doc, so the founder can read every ritual in Obsidian and a PR
+can amend one like any law. The trigger lives in
 `.claude/skills/<name>/SKILL.md` as a thin stub: frontmatter naming
 the skill and its firing description, and a one-line body — "Read
-docs/skills/<name>.md and follow it exactly." A stub that only
-points cannot drift from its procedure
-([D-024](DECISIONS.md#d-024--2026-07--architecture-v2-memoryhistory-narrative-layer-dashboard-as-sole-state-surface-rituals-as-skills-amends-d-008-retires-handoffmd--shiplogmd);
-now a law in
-[LAWS §Knowledge & tracking](LAWS.md#knowledge--tracking)).
+docs/skills/<name>.md and follow it exactly." A stub that only points
+cannot drift from its procedure (D-024; now a law in LAWS §Knowledge
+& tracking).
+
+Sources:
+[docs/skills/](skills/)
+[D-024](DECISIONS.md#d-024--2026-07--architecture-v2-memoryhistory-narrative-layer-dashboard-as-sole-state-surface-rituals-as-skills-amends-d-008-retires-handoffmd--shiplogmd)
+[LAWS §Knowledge & tracking](LAWS.md#knowledge--tracking)
 
 Skills are model-invoked: the stub's description is what the model
-reads to know WHEN to fire — leaving phrases summon
-[handoff](skills/handoff.md), take-it-to-the-cloud phrasing summons
-[liftoff](skills/liftoff.md), task completion summons
-[ship](skills/ship.md), a roadmap-level statement summons
-[decide](skills/decide.md), and the session-start hook directs
-cockpit sessions to render [pickup](skills/pickup.md) unprompted.
-Rituals fire on moments, not on remembered commands — the founder
-never types a slash.
+reads to know WHEN to fire — leaving phrases summon handoff,
+take-it-to-the-cloud phrasing summons liftoff, task completion
+summons ship, a roadmap-level statement summons decide, and the
+session-start hook directs cockpit sessions to render pickup
+unprompted. Rituals fire on moments, not on remembered commands — the
+founder never types a slash.
+
+Sources:
+[handoff](skills/handoff.md)
+[liftoff](skills/liftoff.md)
+[ship](skills/ship.md)
+[decide](skills/decide.md)
+[pickup](skills/pickup.md)
 
 One more deliberate narrowing: no session holds a standing merge
 permission — it is granted per-ritual. The stubs for ship, handoff,
@@ -596,21 +713,24 @@ non-micro PRs, the founder's fresh yes) is present, and nowhere
 else.
 
 ## Reading the board
-The [DASHBOARD](DASHBOARD.md) is repainted only at ritual moments —
-pickup when stale · handoff · liftoff · ship's tail — never
-hand-edited; between rituals, git outranks it. Glyphs: 🟢 done ·
-🟡 ongoing · 🔴 issue (always mirrored into Needs you) · ⚪ idle.
-Bars fill left to right (█ done · ░ remaining). Stage-map colors:
-green done · blue active · orange locked behind a dependency · gray
-queued. Sections: Needs you (your action queue — one sentence per
-item, receipts on the line below) · Sessions (every live session,
-one table — main · cockpit / local parallel / cloud — with what
-each needs from you) · You are here (version and stage bars) ·
-Stage map (dependencies) · Claude Web + Design discussion (open
-chats by their exact titles, so you can search them) · Shipped (the
-ten newest; the full chronology is
-[the ledger](history/README.md#the-ledger)). The board's shape is
-defined once, in [handoff §4](skills/handoff.md).
+The DASHBOARD is repainted only at ritual moments — pickup when stale
+· handoff · liftoff · ship's tail — never hand-edited; between
+rituals, git outranks it. Glyphs: 🟢 done · 🟡 ongoing · 🔴 issue
+(always mirrored into Needs you) · ⚪ idle. Bars fill left to right (█
+done · ░ remaining). Stage-map colors: green done · blue active ·
+orange locked behind a dependency · gray queued. Sections: Needs you
+(your action queue — one sentence per item, receipts on the line
+below) · Sessions (every live session, one table — main · cockpit /
+local parallel / cloud — with what each needs from you) · You are
+here (version and stage bars) · Stage map (dependencies) · Claude Web
++ Design discussion (open chats by their exact titles, so you can
+search them) · Shipped (the ten newest; the full chronology is the
+ledger). The board's shape is defined once, in handoff §4.
+
+Sources:
+[DASHBOARD](DASHBOARD.md)
+[the ledger](history/README.md#the-ledger)
+[handoff §4](skills/handoff.md)
 
 ## Where information goes
 One home per class. New information APPENDS there via the named
@@ -632,7 +752,7 @@ never duplicates it.
 | Engine rule / OPEN slot fill | [ENGINE](ENGINE.md) | decide | decide — the register shrinks by D-number |
 | Tooling · stack · config inventory | [SETUP](SETUP.md) | ops PR | ops PR; status never (the board's job) |
 | Fact vocabulary (F-* · TP-* · telemetry) | [FACTS](data/FACTS.md) | decide; IDs append-only | definitions via D; IDs never reused |
-| Source vetting verdicts | SOURCES-<family> → [SOURCES](data/SOURCES.md) at T7 | vetting lanes | grade moves via demotion evidence + D |
+| Source vetting verdicts | `SOURCES-<family>` → [SOURCES](data/SOURCES.md) at T7 | vetting lanes | grade moves via demotion evidence + D |
 | Design-session governance | [DESIGN-KICKOFF](DESIGN-KICKOFF.md) | ops PR | ops PR |
 | Explanations · terms · mechanisms | [HOME](HOME.md) (this file) | PR | PR |
 | Identity | [FOUNDATION](FOUNDATION.md) | founder-approved PR + D-number | same — rare by design |
@@ -899,30 +1019,37 @@ the link for the full story.
 
 ## Reading the data files
 
-The engine's knowledge lives in three documents under
-[docs/data/](data/FACTS.md): [FACTS](data/FACTS.md) (what the
-engine must know, what it may be told, and what the app records
-about itself — [Appendix C](data/FACTS.md#appendix-c--telemetry-vocabulary-what-the-app-records)),
-[SOURCES](data/SOURCES.md) (where each fact
-verifiably comes from), and [SCHEMA](data/SCHEMA.md) (how it
-will all be stored — a placeholder until
-[V1.S1.T7](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)).
-This is the manual for reading them.
+The engine's knowledge lives in three documents under docs/data/:
+FACTS (what the engine must know, what it may be told, and what the
+app records about itself — Appendix C), SOURCES (where each fact
+verifiably comes from), and SCHEMA (how it will all be stored — a
+placeholder until V1.S1.T7). This is the manual for reading them.
+
+Sources:
+[docs/data/](data/FACTS.md)
+[FACTS](data/FACTS.md)
+[Appendix C](data/FACTS.md#appendix-c--telemetry-vocabulary-what-the-app-records)
+[SOURCES](data/SOURCES.md)
+[SCHEMA](data/SCHEMA.md)
+[V1.S1.T7](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
 
 **Fact IDs and families.** Every world fact has a stable ID:
-F-&lt;family&gt;-&lt;number&gt;, across five families —
-[F-WX weather](data/FACTS.md#f-wx--weather-14--source-task-v1s1t2),
-[F-SS sky & sea](data/FACTS.md#f-ss--sky--sea-10--source-task-v1s1t3),
-[F-FE feasibility](data/FACTS.md#f-fe--feasibility-14--source-task-v1s1t4),
-[F-TT time & transport](data/FACTS.md#f-tt--time--transport-8--source-task-v1s1t5),
-[F-CC crowds & calendar](data/FACTS.md#f-cc--crowds--calendar-8--source-task-v1s1t6).
-IDs never change meaning; extension is append-only. Each fact entry
-states What it is, which spine step consumes it, its geographic
-scope, its freshness need, its type, and its source slot.
-[FACTS](data/FACTS.md) lists check INPUTS only — how facts become
-scores is engine logic
-([V1.S3](ROADMAP.md#v1s3--engine-core--two-families-deep)), not
-data.
+F-&lt;family&gt;-&lt;number&gt;, across five families — F-WX weather,
+F-SS sky & sea, F-FE feasibility, F-TT time & transport, F-CC crowds
+& calendar. IDs never change meaning; extension is append-only. Each
+fact entry states What it is, which spine step consumes it, its
+geographic scope, its freshness need, its type, and its source slot.
+FACTS lists check INPUTS only — how facts become scores is engine
+logic (V1.S3), not data.
+
+Sources:
+[F-WX weather](data/FACTS.md#f-wx--weather-14--source-task-v1s1t2)
+[F-SS sky & sea](data/FACTS.md#f-ss--sky--sea-10--source-task-v1s1t3)
+[F-FE feasibility](data/FACTS.md#f-fe--feasibility-14--source-task-v1s1t4)
+[F-TT time & transport](data/FACTS.md#f-tt--time--transport-8--source-task-v1s1t5)
+[F-CC crowds & calendar](data/FACTS.md#f-cc--crowds--calendar-8--source-task-v1s1t6)
+[FACTS](data/FACTS.md)
+[V1.S3](ROADMAP.md#v1s3--engine-core--two-families-deep)
 
 **The two jobs.** A fact's "Spine:" line names who consumes it.
 Suggest judges TRIP MERIT — "is this trip worth it for these
@@ -941,36 +1068,42 @@ rendered unverified). A computed fact names the slot of its primary
 input — no separate fetch occurs.
 
 **Source slots and Dictionaries.** The source slot is the join key
-between the two files: every fact names exactly one slot, a slot
-may serve many facts, and [SOURCES](data/SOURCES.md) holds exactly
-one entry per slot. A fact's "Dictionary:" line lists the exact
-payload keys a vetted source must supply — and doubles as the
-schema-drift contract: live payloads are monitored against it, and
-drift feeds source health
-([FACTS Appendix C3](data/FACTS.md#c3--source-health-p6)). Where a
-fact has no Dictionary line yet, the vetting task derives one from
-its What line.
+between the two files: every fact names exactly one slot, a slot may
+serve many facts, and SOURCES holds exactly one entry per slot. A
+fact's "Dictionary:" line lists the exact payload keys a vetted
+source must supply — and doubles as the schema-drift contract: live
+payloads are monitored against it, and drift feeds source health
+(FACTS Appendix C3). Where a fact has no Dictionary line yet, the
+vetting task derives one from its What line.
 
-**Grades.** Each vetted source earns a reliability grade, A–D,
-which decides how its facts RENDER — from verified (A) through
-labeled estimate (C) to always-unverified (D). The canonical
-grade → render matrix is
-[ENGINE §7](ENGINE.md#7-render--honest-pixels);
-grades are living — demoted on sustained failure, drift, or
-miscalibration, promoted only by re-vetting
-([D-015](DECISIONS.md#d-015--2026-06--data-asset-law-bitemporal-append-only-license-segmented)).
+Sources:
+[SOURCES](data/SOURCES.md)
+[FACTS Appendix C3](data/FACTS.md#c3--source-health-p6)
+
+**Grades.** Each vetted source earns a reliability grade, A–D, which
+decides how its facts RENDER — from verified (A) through labeled
+estimate (C) to always-unverified (D). The canonical grade → render
+matrix is ENGINE §7; grades are living — demoted on sustained
+failure, drift, or miscalibration, promoted only by re-vetting
+(D-015).
+
+Sources:
+[ENGINE §7](ENGINE.md#7-render--honest-pixels)
+[D-015](DECISIONS.md#d-015--2026-06--data-asset-law-bitemporal-append-only-license-segmented)
 
 **The reliability ladder.** Facts marked ⚠ are coverage-risky:
 nothing global and authoritative serves them everywhere. Each
-declares a fallback ladder, vetted top-down
-([D-010](DECISIONS.md#d-010--2026-06--global-coverage-via-graded-fallback-ladders)):
-(1) a source global by construction (numerical models,
-astronomical math) → (2) regional authoritative sources → (3)
-computed from physics → (4) estimated ranges, labeled → (5)
-LLM-research grade, rendered unverified → (6) refusal — the engine
-says "can't verify here" rather than guessing. The ladder is how
-coverage stays global without the reliability law bending: quality
-degrades HONESTLY, rung by labeled rung.
+declares a fallback ladder, vetted top-down (D-010): (1) a source
+global by construction (numerical models, astronomical math) → (2)
+regional authoritative sources → (3) computed from physics → (4)
+estimated ranges, labeled → (5) LLM-research grade, rendered
+unverified → (6) refusal — the engine says "can't verify here" rather
+than guessing. The ladder is how coverage stays global without the
+reliability law bending: quality degrades HONESTLY, rung by labeled
+rung.
+
+Sources:
+[D-010](DECISIONS.md#d-010--2026-06--global-coverage-via-graded-fallback-ladders)
 
 **Freshness windows.** Every fact declares the maximum cache
 staleness it tolerates before refetch — from 1–3 hours (near-term
@@ -978,118 +1111,146 @@ forecasts) to yearly (climate normals) — and windows tighten as the
 activity date nears. Freshness is why the cache can be aggressive
 without serving stale truth.
 
-**The fact cache.** Storage is bitemporal and append-only
-([D-015](DECISIONS.md#d-015--2026-06--data-asset-law-bitemporal-append-only-license-segmented)):
+**The fact cache.** Storage is bitemporal and append-only (D-015):
 every value carries valid_for (when it is true in the world) and
 recorded_at (when we learned it), and new values supersede rather
 than overwrite old ones. The revision series this preserves —
 forecast vs later forecast vs observed actual — is the proprietary
-core of the [quiet
-asset](FOUNDATION.md#the-dataset--the-quiet-asset). Source data is
-stored in license-segmented, attributed layers; world data stays
-strictly separate from traveler and event data.
+core of the quiet asset. Source data is stored in license-segmented,
+attributed layers; world data stays strictly separate from traveler
+and event data.
+
+Sources:
+[D-015](DECISIONS.md#d-015--2026-06--data-asset-law-bitemporal-append-only-license-segmented)
+[quiet asset](FOUNDATION.md#the-dataset--the-quiet-asset)
 
 **Units.** Everything stored or computed is SI/metric, exclusively;
-conversion to US units happens only at render time
-([D-013](DECISIONS.md#d-013--2026-06--canonical-units-si-storage-display-time-conversion)).
+conversion to US units happens only at render time (D-013).
 
-**A [SOURCES](data/SOURCES.md) entry** records, per slot: the facts
-served · the chosen source and why · the confirmed payload keys
-(checked against the Dictionary) · grade · freshness served ·
-coverage and ladder position · cost · retention_rights ·
-license_class · attribution duties · the spike script path and its
-last verified run · alternatives rejected. Retention and license
-are PRIMARY selection criteria, not footnotes: a
-caching-prohibited source would hollow the asset layer, so it
-disqualifies the slot
-([D-015](DECISIONS.md#d-015--2026-06--data-asset-law-bitemporal-append-only-license-segmented)).
-Spike scripts live in `scripts/spikes/` — each is a plain Node
-fetch proving the source actually returns the Dictionary keys.
+Sources:
+[D-013](DECISIONS.md#d-013--2026-06--canonical-units-si-storage-display-time-conversion)
 
-**The traveler side.** [FACTS Appendix
-A](data/FACTS.md#appendix-a--traveler-parameters-tp-0147--per-d-011--d-012)
-holds the TP parameters — everything a traveler may TELL the
-engine. Each row carries an ask tier (U asked upfront within the
-six-question cap · L asked later when it earns its question · N
-never asked — inferred, defaulted, or composition-adjusted · S a
-settings field), who consumes it, and its handling tier (engine /
-brain-only / socket). Every stored value carries provenance;
-stated-only fields are never inferred
-([D-011](DECISIONS.md#d-011--2026-06--traveler-input-vocabulary-rich-nullable-tiered-append-only),
-[D-012](DECISIONS.md#d-012--2026-06--elicitation--inference-policy-ask-tiers-provenance-upsert)).
+**A SOURCES entry** records, per slot: the facts served · the chosen
+source and why · the confirmed payload keys (checked against the
+Dictionary) · grade · freshness served · coverage and ladder position
+· cost · retention_rights · license_class · attribution duties · the
+spike script path and its last verified run · alternatives rejected.
+Retention and license are PRIMARY selection criteria, not footnotes:
+a caching-prohibited source would hollow the asset layer, so it
+disqualifies the slot (D-015). Spike scripts live in `scripts/spikes/`
+— each is a plain Node fetch proving the source actually returns the
+Dictionary keys.
+
+Sources:
+[SOURCES](data/SOURCES.md)
+[D-015](DECISIONS.md#d-015--2026-06--data-asset-law-bitemporal-append-only-license-segmented)
+
+**The traveler side.** FACTS Appendix A holds the TP parameters —
+everything a traveler may TELL the engine. Each row carries an ask
+tier (U asked upfront within the six-question cap · L asked later when
+it earns its question · N never asked — inferred, defaulted, or
+composition-adjusted · S a settings field), who consumes it, and its
+handling tier (engine / brain-only / socket). Every stored value
+carries provenance; stated-only fields are never inferred (D-011,
+D-012). Appendix B lists plan parameters — schema the plans need
+(lodging anchor, item lock-state) that are neither world facts nor
+traveler inputs.
+
+Sources:
+[FACTS Appendix A](data/FACTS.md#appendix-a--traveler-parameters-tp-0147--per-d-011--d-012)
+[D-011](DECISIONS.md#d-011--2026-06--traveler-input-vocabulary-rich-nullable-tiered-append-only)
+[D-012](DECISIONS.md#d-012--2026-06--elicitation--inference-policy-ask-tiers-provenance-upsert)
 [Appendix B](data/FACTS.md#appendix-b--plan-parameters-t7-must-schema-not-world-facts)
-lists plan parameters — schema the plans need (lodging anchor, item
-lock-state) that are neither world facts nor traveler inputs.
 
-**Telemetry.**
-[Appendix C](data/FACTS.md#appendix-c--telemetry-vocabulary-what-the-app-records)
-defines three
-registers: behavior events (captured from day one under a strict
-privacy floor, used later —
-[D-014](DECISIONS.md#d-014--2026-06--telemetry-posture-capture-now-use-later)),
-quality & ground truth (the claim ledger, harvested actuals, and
-the calibration they yield), and source health (fetch success,
+**Telemetry.** Appendix C defines three registers: behavior events
+(captured from day one under a strict privacy floor, used later —
+D-014), quality & ground truth (the claim ledger, harvested actuals,
+and the calibration they yield), and source health (fetch success,
 drift, ladder falls — the demotion law's evidence).
+
+Sources:
+[Appendix C](data/FACTS.md#appendix-c--telemetry-vocabulary-what-the-app-records)
+[D-014](DECISIONS.md#d-014--2026-06--telemetry-posture-capture-now-use-later)
 
 ## Equipment & environment
 
 **The stack**, in one paragraph: Next.js App Router (TypeScript,
 React 19) + Supabase (Postgres + Auth) + Vercel; the planning brain
 is the Claude API, server-side only; the engine is isolated in
-[engine/](../engine/README.md) with a hard boundary (no app
-imports) so it could one day move to a Python worker without a
-rewrite. Frontend layer: Tailwind v4 + shadcn/ui on Base UI, Motion,
-MapLibre GL, dnd-kit, the Vercel AI SDK ("AI SDK UI" flavor),
-TanStack Query + Zustand. Doctrine: stream-first, cache-heavy,
-parallel fan-out, DB co-located. Canonical, with sources:
-[SETUP §Stack](SETUP.md#stack)
-([D-001](DECISIONS.md#d-001--2026-06--tech-stack) ·
-[D-005](DECISIONS.md#d-005--2026-06--stack-re-trial-vs-foundation-v1-d-001-upheld--frontend-layer) ·
-[D-007](DECISIONS.md#d-007--2026-06--shadcnui-builds-on-base-ui-not-radix)).
-App code lives in `src/`, engine code in `engine/`, spike scripts
-in `scripts/spikes/`, CI in `.github/workflows/ci.yml` (lint +
-test on every PR — [ship](skills/ship.md)'s gate is real).
+engine/ with a hard boundary (no app imports) so it could one day
+move to a Python worker without a rewrite. Frontend layer: Tailwind v4
++ shadcn/ui on Base UI, Motion, MapLibre GL, dnd-kit, the Vercel AI
+SDK ("AI SDK UI" flavor), TanStack Query + Zustand. Doctrine:
+stream-first, cache-heavy, parallel fan-out, DB co-located. Canonical,
+with sources: SETUP §Stack (D-001 · D-005 · D-007). App code lives in
+`src/`, engine code in `engine/`, spike scripts in `scripts/spikes/`,
+CI in `.github/workflows/ci.yml` (lint + test on every PR — ship's
+gate is real).
 
-**The skills**, one line each:
-[pickup](skills/pickup.md) — the sit-down briefing, unprompted ·
-[handoff](skills/handoff.md) — the leaving ritual, FULL or QUIET ·
-[ship](skills/ship.md) — task close, gate, and weld ·
-[decide](skills/decide.md) — the decision recorder + ripple ·
-[liftoff](skills/liftoff.md) — hand the workshop to the cloud ·
-[parallel-lanes](skills/parallel-lanes.md) — the lane manual
-(consulted, not fired) ·
-[machine-setup](skills/machine-setup.md) — per-machine setup and
+Sources:
+[engine/](../engine/README.md)
+[SETUP §Stack](SETUP.md#stack)
+[D-001](DECISIONS.md#d-001--2026-06--tech-stack)
+[D-005](DECISIONS.md#d-005--2026-06--stack-re-trial-vs-foundation-v1-d-001-upheld--frontend-layer)
+[D-007](DECISIONS.md#d-007--2026-06--shadcnui-builds-on-base-ui-not-radix)
+[ship](skills/ship.md)
+
+**The skills**, one line each: pickup — the sit-down briefing,
+unprompted · handoff — the leaving ritual, FULL or QUIET · ship —
+task close, gate, and weld · decide — the decision recorder + ripple ·
+liftoff — hand the workshop to the cloud · parallel-lanes — the lane
+manual (consulted, not fired) · machine-setup — per-machine setup and
 verify.
+
+Sources:
+[pickup](skills/pickup.md)
+[handoff](skills/handoff.md)
+[ship](skills/ship.md)
+[decide](skills/decide.md)
+[liftoff](skills/liftoff.md)
+[parallel-lanes](skills/parallel-lanes.md)
+[machine-setup](skills/machine-setup.md)
 
 **MCPs, plugins, subagents.** Stage-gated — tooling is added only
 when its roadmap stage opens, never stockpiled; the ladder lives in
-[SETUP §Staged](SETUP.md#staged--turns-on-when-its-stage-opens)
-(canonical). Shared plugin switches live in
+SETUP §Staged (canonical). Shared plugin switches live in
 `.claude/settings.json`; machine-local plugins and every token live
 in `.claude/settings.local.json` and local MCP config — the repo is
-public, so credentials exist per-machine only, never in it
-([LAWS §Safety](LAWS.md#safety-non-negotiable)).
+public, so credentials exist per-machine only, never in it (LAWS
+§Safety).
+
+Sources:
+[SETUP §Staged](SETUP.md#staged--turns-on-when-its-stage-opens)
+[LAWS §Safety](LAWS.md#safety-non-negotiable)
 
 **Machines.** Two seats plus the cloud: work PC and home PC, each
-with exactly one clone, each labeled via `git config roam.machine`
-so ritual stamps can name seats. Setup, verification, and the
-known per-machine traps: [machine-setup](skills/machine-setup.md)
-(canonical). Cloud lanes need no setup — they are born from origin
-and die into it.
+with exactly one clone, each labeled via `git config roam.machine` so
+ritual stamps can name seats. Setup, verification, and the known
+per-machine traps: machine-setup (canonical). Cloud lanes need no
+setup — they are born from origin and die into it.
+
+Sources:
+[machine-setup](skills/machine-setup.md)
 
 **The Obsidian vault.** docs/ IS the vault — every knowledge file
 here is Obsidian-readable, and the weave rule doubles as its link
 graph. Deliberately OUTSIDE the vault: the `.claude/` machinery
 (stubs, hooks, settings — harness config, not knowledge), the root
-stubs ([CLAUDE.md](../CLAUDE.md), [AGENTS.md](../AGENTS.md),
-[README](../README.md) — import shims and public front door), and
-all code. docs/.obsidian/ (the app's workspace state) stays
-gitignored. In Obsidian the founder READS; the one write surface is
-quick capture into [IDEAS](IDEAS.md). The board's Shipped table is
+stubs (CLAUDE.md, AGENTS.md, README — import shims and public front
+door), and all code. docs/.obsidian/ (the app's workspace state)
+stays gitignored. In Obsidian the founder READS; the one write
+surface is quick capture into IDEAS. The board's Shipped table is
 static markdown re-derived at every repaint — no Obsidian community
 plugin is needed anywhere; the one table-rendering plugin the board
 once leaned on is retired. Per-machine graph and bookmark tuning:
-[machine-setup §Vault lens](skills/machine-setup.md#vault-lens).
+machine-setup §Vault lens.
+
+Sources:
+[CLAUDE.md](../CLAUDE.md)
+[AGENTS.md](../AGENTS.md)
+[README](../README.md)
+[IDEAS](IDEAS.md)
+[machine-setup §Vault lens](skills/machine-setup.md#vault-lens)
 
 ## Roadmap manual
 
