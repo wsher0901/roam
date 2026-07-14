@@ -5,7 +5,7 @@ status: living
 ---
 # Dashboard — the state surface
 
-Stamp: 2026-07-13 · 23:00 · ship tail · home PC
+Stamp: 2026-07-13 · 23:15 · ship tail · home PC
 V1 5/34 · S1 2/7 · S2 3/5 · sessions: 1 main · 0 parallel
 (0 needs you) · needs-you 4
 How to read this board →
@@ -37,7 +37,7 @@ How to read this board →
 
 | Session | Task | State | Last push | Your move |
 |---|---|---|---|---|
-| main · cockpit | ops leg — [state-surfaces-v2](history/workshop/mechanism/state-surfaces-v2.md) welded; next: the HOME block brief | ⚪ idle | just now | — |
+| main · cockpit | ops leg — [home-knowledge](history/workshop/definition/home-knowledge.md) welded; next: the LAWS block brief | ⚪ idle | just now | — |
 
 ↳ main micro: — (between briefs; no active spec)
 
@@ -75,7 +75,7 @@ flowchart LR
 ## Claude Web + Design discussion
 
 - **"Ops — Architecture audit & setup"** (Web) — the ops leg;
-  HOME + LAWS remain → next: the HOME block after this weld.
+  LAWS remains → next: the LAWS block after this weld.
 - **"<setup-ladder / P8 chat's exact title>"** (Web) — T3–T6
   relaunch briefs pending → next: per its own thread.
 
@@ -85,6 +85,7 @@ No Design chats open yet.
 
 | When | What | PR |
 |---|---|---|
+| 07-13 23:14 | [HOME closes the leg's knowledge layer: the routing table, one day in the workshop, the board paragraph recut, a stable Sessions anchor](history/workshop/definition/home-knowledge.md) | [#113](https://github.com/wsher0901/roam/pull/113) |
 | 07-13 22:58 | [State surfaces v2: the board learns the founder's names; pickup becomes the sit-down summary; welds stamp time and write the ledger](history/workshop/mechanism/state-surfaces-v2.md) | [#110](https://github.com/wsher0901/roam/pull/110) |
 | 2026-07-13 | [History quadrants: four doors; TEMPLATE owns the format + Status vocabulary](history/workshop/definition/history-quadrants.md) | [#108](https://github.com/wsher0901/roam/pull/108) |
 | 2026-07-13 | [TELEMETRY folds into FACTS: Appendix C; file retired](history/workshop/definition/telemetry-fold.md) | [#106](https://github.com/wsher0901/roam/pull/106) |
@@ -94,4 +95,3 @@ No Design chats open yet.
 | 2026-07-13 | [DESIGN-KICKOFF refresh: June-2026 Claude Design capabilities](history/workshop/definition/design-kickoff-refresh.md) | [#97](https://github.com/wsher0901/roam/pull/97) |
 | 2026-07-13 | [Consolidation recut: DECISION-POLICY becomes ENGINE; PROJECT-POLICY to house style](history/product/definition/engine-recut.md) | [#95](https://github.com/wsher0901/roam/pull/95) |
 | 2026-07-13 | [Vault-lens seed: Obsidian config travels through git](history/workshop/mechanism/vault-lens-seed.md) | [#91](https://github.com/wsher0901/roam/pull/91) |
-| 2026-07-13 | [LAWS polish: glossed lane law, provenance to consolidations, ship syncs with main](history/workshop/definition/laws-polish.md) | [#89](https://github.com/wsher0901/roam/pull/89) |
