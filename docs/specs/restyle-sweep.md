@@ -2,10 +2,12 @@
 type: spec
 id: restyle-sweep
 title: Leg-end restyle sweep — D-029 finishes its migration
-status: open
+status: shipped
 stage: workshop
 branch: docs/restyle-sweep
+pr: 121
 opened: 2026-07-14
+shipped: 2026-07-14
 ---
 
 # restyle-sweep — leg-end restyle sweep: D-029 finishes its migration

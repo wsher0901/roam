@@ -1,23 +1,25 @@
 ---
-type: memory
-id: restyle-sweep
-updated: 2026-07-14 · ship · work PC
+type: history
+slug: restyle-sweep
+shipped: 2026-07-14 11:46
+pr: 121
 ---
 
 # restyle-sweep — leg-end restyle sweep: D-029 finishes its migration
 
 ## Status
 
-complete, awaiting merge — the sweep is applied and content-immutable
-against main (visible-text diff clean apart from the one sanctioned
-HOME nit), the full local CI mirror is green, and the PR is at THE
-GATE. No merge here; founder approval follows external word-diff
-review.
+Shipped — merged as
+[PR #121](https://github.com/wsher0901/roam/pull/121) on the
+founder's word after external word-diff review. The sweep was
+content-immutable against main (visible-text diff clean apart from
+the one sanctioned HOME nit); the full CI mirror and the `checks`
+Actions run were green at the gate.
 
 ## What this task is
 
 The leg-end sweep of
-[D-029](../DECISIONS.md#d-029--2026-07--corpus-writing-laws--readability-first-links-below-prose)'s
+[D-029](../../../DECISIONS.md#d-029--2026-07--corpus-writing-laws--readability-first-links-below-prose)'s
 ratchet: every living doc the ops leg had not already restyled now
 carries its links below the prose in a Sources block. Content was
 immutable throughout — only link relocation, rewrapping, and the one
@@ -28,7 +30,7 @@ HOME rendering nit.
 (a) LAWS is command-class — its functional pointer links are
 "necessary" under D-029 and stay inline; this sweep only rewrapped
 its two over-length lane-law lines (introduced by
-[D-032](../DECISIONS.md#d-032--2026-07--fleet-continuity--handoff-parks-every-local-lane-liftoff-respawns-parked-benches-wake-lock-parks-every-outcome-extends-the-d-020d-023-lane-law-upholds-d-009)'s
+[D-032](../../../DECISIONS.md#d-032--2026-07--fleet-continuity--handoff-parks-every-local-lane-liftoff-respawns-parked-benches-wake-lock-parks-every-outcome-extends-the-d-020d-023-lane-law-upholds-d-009)'s
 surgical edit) to house width — the LAWS word-diff is empty.
 
 (b) HOME's Terms entries are glossary-class — definition lines kept
@@ -78,9 +80,9 @@ Terms section and every table stayed put.
 
 ## Where to look
 
-Spec: [restyle-sweep](../specs/restyle-sweep.md) · the ratchet:
-[D-029](../DECISIONS.md#d-029--2026-07--corpus-writing-laws--readability-first-links-below-prose)
+Spec: [restyle-sweep](../../../specs/restyle-sweep.md) · the ratchet:
+[D-029](../../../DECISIONS.md#d-029--2026-07--corpus-writing-laws--readability-first-links-below-prose)
 · PR [#121](https://github.com/wsher0901/roam/pull/121) · targets:
-[HOME](../HOME.md) · [DESIGN-KICKOFF](../DESIGN-KICKOFF.md) ·
-[parallel-lanes](../skills/parallel-lanes.md) ·
-[ROADMAP](../ROADMAP.md) · [LAWS](../LAWS.md).
+[HOME](../../../HOME.md) · [DESIGN-KICKOFF](../../../DESIGN-KICKOFF.md) ·
+[parallel-lanes](../../../skills/parallel-lanes.md) ·
+[ROADMAP](../../../ROADMAP.md) · [LAWS](../../../LAWS.md).
