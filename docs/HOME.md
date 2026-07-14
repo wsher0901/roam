@@ -43,7 +43,7 @@ down and talking — never by content here.
 | What's the contract of a task? | its spec in [docs/specs/](specs/README.md) |
 | What's the story of a task in flight? | its memory file in [docs/memory/](memory/README.md), living on the task's branch |
 | What's the story of a shipped task? | its file in [docs/history/](history/README.md) |
-| What has shipped? | [DASHBOARD §Shipped](DASHBOARD.md#shipped-latest--full-record-history), derived from [history/](history/README.md) |
+| What has shipped? | [DASHBOARD §Shipped](DASHBOARD.md#shipped-latest--full-record-the-ledger), derived from [history/](history/README.md) |
 | How do I read the data files? | [§Reading the data files](#reading-the-data-files) |
 | I'm sitting at a new or second machine | [machine-setup](skills/machine-setup.md) |
 | How do I start a Design session? | [DESIGN-KICKOFF.md](DESIGN-KICKOFF.md) |
@@ -539,11 +539,12 @@ ongoing · 🔴 issue · ⚪ idle — identical everywhere they appear.
 queue. **[You are here](DASHBOARD.md#you-are-here)** is the version
 bar and per-stage progress, computed from checkboxes.
 **[Stage map](DASHBOARD.md#stage-map)** draws the stage dependency
-graph. **[In flight](DASHBOARD.md#in-flight)** shows every open
-task with its PR and memory pointers. **[Threads
-(non-task)](DASHBOARD.md#threads-non-task)** carries the founder's
-open Web/Design threads — the one section fed by the never-skipped
-question rather than by git. **[Shipped](DASHBOARD.md#shipped-latest--full-record-history)** is
+graph. **[Sessions](DASHBOARD.md#sessions)** shows every live
+session with its state and your move. **[Claude Web + Design
+discussion](DASHBOARD.md#claude-web--design-discussion)** carries
+the founder's open Web/Design threads by their verbatim titles —
+the one section fed by the never-skipped
+question rather than by git. **[Shipped](DASHBOARD.md#shipped-latest--full-record-the-ledger)** is
 a static table of the ~10 newest [history/](history/README.md)
 entries, re-derived from frontmatter at every repaint; the full
 record is the directory itself.
