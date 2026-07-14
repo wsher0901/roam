@@ -1,18 +1,19 @@
 ---
-type: memory
-id: ci-trust
-updated: 2026-07-14 · ship · work PC
+type: history
+slug: ci-trust
+shipped: 2026-07-14 10:32
+pr: 117
 ---
 # ci-trust — CI is the arbiter: Actions-green at every gate; the local gate mirrors all six CI steps; anchors born resolving
 
 ## Status
 
-complete, awaiting merge — all six edits landed, branch protection
-on main is enabled and verified, and the full local CI mirror is
-green. The content push is watched to GitHub-Actions-green before the
-PR flips ready and THE GATE opens (this task's own new law); the
-merge word is the founder's, and by that law the weld itself only
-lands once `checks` is green.
+Shipped — merged as
+[PR #117](https://github.com/wsher0901/roam/pull/117) on the
+founder's word after external review, second of the merge order
+#115 → #117. Its own new law held on the way out: every gate waited
+on the pushed commit's Actions run going green, and both welds
+merged under `--auto`, on green.
 
 ## What this task is
 
@@ -20,10 +21,10 @@ CI is the single arbiter of "green." THE GATE, every lane's
 ready-flip, and LAWS' "done" all require the pushed commit's GitHub
 Actions run to be green — local green never suffices. The preflight
 gate became the full CI mirror (lint · format:check · check:links ·
-tests · build); [decide](../skills/decide.md) now runs check:links
+tests · build); [decide](../../../skills/decide.md) now runs check:links
 before an entry's first push, so a D-number heading and every link to
 it are born resolving. Recorded as
-[D-038](../DECISIONS.md#d-038--2026-07--ci-is-the-arbiter--actions-green-required-at-every-gate-local-gate-mirrors-all-six-ci-steps-d-anchors-born-resolving-upholds-d-027).
+[D-038](../../../DECISIONS.md#d-038--2026-07--ci-is-the-arbiter--actions-green-required-at-every-gate-local-gate-mirrors-all-six-ci-steps-d-anchors-born-resolving-upholds-d-027).
 
 ## Pending issues
 
@@ -71,11 +72,11 @@ first-push stumble; see the run-log pattern in this task's story).
 
 ## Where to look
 
-Spec: [ci-trust](../specs/ci-trust.md) · decision:
-[D-038](../DECISIONS.md#d-038--2026-07--ci-is-the-arbiter--actions-green-required-at-every-gate-local-gate-mirrors-all-six-ci-steps-d-anchors-born-resolving-upholds-d-027)
+Spec: [ci-trust](../../../specs/ci-trust.md) · decision:
+[D-038](../../../DECISIONS.md#d-038--2026-07--ci-is-the-arbiter--actions-green-required-at-every-gate-local-gate-mirrors-all-six-ci-steps-d-anchors-born-resolving-upholds-d-027)
 · PR [#117](https://github.com/wsher0901/roam/pull/117) · targets:
-[ship](../skills/ship.md) ·
-[parallel-lanes](../skills/parallel-lanes.md) ·
-[decide](../skills/decide.md) ·
-[LAWS §Workflow](../LAWS.md#workflow-non-negotiable) ·
-[SETUP §Once and done](../SETUP.md#once-and-done--cloud-accounts).
+[ship](../../../skills/ship.md) ·
+[parallel-lanes](../../../skills/parallel-lanes.md) ·
+[decide](../../../skills/decide.md) ·
+[LAWS §Workflow](../../../LAWS.md#workflow-non-negotiable) ·
+[SETUP §Once and done](../../../SETUP.md#once-and-done--cloud-accounts).

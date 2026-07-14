@@ -2,10 +2,12 @@
 type: spec
 id: ci-trust
 title: CI is the arbiter — Actions-green at every gate; the local gate mirrors all six CI steps; anchors born resolving
-status: open
+status: shipped
 stage: workshop
 branch: docs/ci-trust
+pr: 117
 opened: 2026-07-14
+shipped: 2026-07-14
 ---
 # ci-trust — CI is the arbiter: Actions-green at every gate; the local gate mirrors all six CI steps; anchors born resolving
 
