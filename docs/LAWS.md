@@ -160,6 +160,13 @@ Mechanics: [parallel-lanes](skills/parallel-lanes.md) ·
 - Retroactivity law: when a convention is adopted OR changed, backfill
   every pre-existing file in the same PR; any later-found gap is
   repaired the moment it is found (current PR, or a chore PR).
+- One home per class (the routing law): every information class
+  has exactly ONE home — the table in
+  [HOME §Where information goes](HOME.md#where-information-goes).
+  New information APPENDS there via that home's named vehicle;
+  changed information UPSERTS in place via the same writer. Never a
+  second copy: the weave links to a fact's home, it never
+  duplicates it.
 - Record everything: deviations → the PR summary + the memory file;
   fresh gotchas → the task's memory (task-local) or
   [DASHBOARD](DASHBOARD.md) Needs-you (founder-facing) — permanent

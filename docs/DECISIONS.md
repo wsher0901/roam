@@ -963,6 +963,25 @@ counts in the Sessions header (unstable anchor, proven).
 **Affects:** [HOME](HOME.md) · [handoff §4](skills/handoff.md) ·
 this entry.
 
+## D-037 — 2026-07 — Pickup speaks the founder's shape — exit table · Recent Summary · Pending Issues; LAWS binds the routing law (completes D-036)
+**Decision:** [LAWS §Knowledge & tracking](LAWS.md#knowledge--tracking)
+gains the one-home clause pointing at
+[HOME's table](HOME.md#where-information-goes); pickup §5 renders
+exactly: exit table (last-handoff caption; one row per parked/lifted
+task: at exit → now → your move) · RECENT SUMMARY (plain prose of
+the last sitting) · PENDING ISSUES (none-form: "No issues from last
+sitting.") · OPEN CHAT + DESIGN DISCUSSION (the board's verbatim
+titles) · NEEDS YOUR ATTENTION · NEXT; ritual self-narration is
+silent.
+**Why:** the founder's sit-down is about resuming a mind, not
+restating a board — continuity of recent work, threads, and worries
+first; "baton claimed" and kin are machinery, not information.
+**Alternatives rejected:** keeping the delta-first SINCE-YOU-LEFT
+shape (approved shape supersedes it); routing table in LAWS (HOME
+renders, LAWS binds — D-036).
+**Affects:** [LAWS](LAWS.md) · [pickup](skills/pickup.md) ·
+this entry.
+
 ## D-038 — 2026-07 — CI is the arbiter — Actions-green required at every gate; local gate mirrors all six CI steps; D-anchors born resolving (upholds D-027)
 **Decision:** THE GATE, every lane's ready-flip, and LAWS' "done"
 all require the pushed commit's GitHub Actions run to be green —
