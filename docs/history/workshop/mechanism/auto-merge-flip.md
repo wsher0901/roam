@@ -1,23 +1,25 @@
 ---
-type: memory
-id: auto-merge-flip
-updated: 2026-07-14 · ship · work PC
+type: history
+slug: auto-merge-flip
+shipped: 2026-07-14 10:55
+pr: 119
 ---
 
 # auto-merge-flip — enable repo auto-merge so the D-038 self-merge law works as written
 
 ## Status
 
-complete, awaiting merge — repo auto-merge is enabled and verified by
-a GET; [SETUP §Once and done](../SETUP.md#once-and-done--cloud-accounts)
-records it. The PR is green at THE GATE. This PR's own merge is armed
-as the repo's first `gh pr merge --auto`; the story records whether
-it fires on green.
+Shipped — merged as
+[PR #119](https://github.com/wsher0901/roam/pull/119) on the
+founder's pre-granted word (green gate, no external review needed).
+Repo auto-merge is enabled and verified by a GET; the merge itself
+was the repo's first-ever `gh pr merge --auto`, and it fired on the
+weld commit's `checks` green exactly as designed.
 
 ## What this task is
 
 Turn on repo-level auto-merge so the amended self-merge law
-([D-038](../DECISIONS.md#d-038--2026-07--ci-is-the-arbiter--actions-green-required-at-every-gate-local-gate-mirrors-all-six-ci-steps-d-anchors-born-resolving-upholds-d-027))
+([D-038](../../../DECISIONS.md#d-038--2026-07--ci-is-the-arbiter--actions-green-required-at-every-gate-local-gate-mirrors-all-six-ci-steps-d-anchors-born-resolving-upholds-d-027))
 works as written: welds and micro-PRs arm `gh pr merge --auto
 --squash --delete-branch` and fire on the pushed commit's `checks`
 green. Discovered off during the ci-trust ship tail — GitHub rejected
@@ -50,6 +52,6 @@ fires on the weld commit's green is recorded at ship.
 ## Where to look
 
 The law it serves:
-[D-038](../DECISIONS.md#d-038--2026-07--ci-is-the-arbiter--actions-green-required-at-every-gate-local-gate-mirrors-all-six-ci-steps-d-anchors-born-resolving-upholds-d-027).
+[D-038](../../../DECISIONS.md#d-038--2026-07--ci-is-the-arbiter--actions-green-required-at-every-gate-local-gate-mirrors-all-six-ci-steps-d-anchors-born-resolving-upholds-d-027).
 Target:
-[SETUP §Once and done — cloud accounts](../SETUP.md#once-and-done--cloud-accounts).
+[SETUP §Once and done — cloud accounts](../../../SETUP.md#once-and-done--cloud-accounts).
