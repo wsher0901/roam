@@ -7,10 +7,12 @@ status: living
 
 claude.ai Project instructions do not reach Claude Design; this file
 is the rule-carrier — paste the preamble below into every new Design
-session. After [V1.S2.T5](ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)
-ships, the repo itself becomes the design system Design builds
-with — imported from the GitHub repo and self-checked — and only the
-governance lines below still matter.
+session. After V1.S2.T5 ships, the repo itself becomes the design
+system Design builds with — imported from the GitHub repo and
+self-checked — and only the governance lines below still matter.
+
+Sources:
+[V1.S2.T5](ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)
 
 ## Preamble (paste into Design, verbatim)
 
@@ -40,19 +42,22 @@ Open: <items>
 Never produce it unprompted.
 ```
 
-(The identity line condenses [FOUNDATION](FOUNDATION.md)'s
-reliability-first principles; the governance line is the
-Claude-Design no-write law in
-[LAWS](LAWS.md#knowledge--tracking).)
+(The identity line condenses FOUNDATION's reliability-first
+principles; the governance line is the Claude-Design no-write law in
+LAWS.)
+
+Sources:
+[FOUNDATION](FOUNDATION.md)
+[LAWS](LAWS.md#knowledge--tracking)
 
 ## Working rules (for the founder)
 
 - Session start: paste the preamble, then state the lane (e.g. "Lane
-  [V1.S2.T5](ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)
-  — converge two screens: Suggest option card with confidence badge +
-  source line; day Plan timeline beside a map. Deliverable: token
-  values — palette incl. semantic confidence colors, type scale,
-  spacing, radii, motion durations. Prototypes are throwaway.")
+  V1.S2.T5 — converge two screens: Suggest option card with
+  confidence badge + source line; day Plan timeline beside a map.
+  Deliverable: token values — palette incl. semantic confidence
+  colors, type scale, spacing, radii, motion durations. Prototypes
+  are throwaway.")
 - Feed context, not prose: point Design at the public repo, the
   deployed shell, or screenshots before describing pixels — its
   import surface reads all three.
@@ -66,9 +71,8 @@ Claude-Design no-write law in
   project; if an inline comment seems ignored, paste its text into
   the chat.
 - Extraction path: "Hand off to Claude Code" → paste the generated
-  prompt into a
-  [V1.S2.T5](ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)
-  Code lane; Code opens with the design context already loaded
+  prompt into a V1.S2.T5 Code lane; Code opens with the design
+  context already loaded
   (components used, arrangement, canvas annotations). The bundle is
   INPUT the lane reads — never committed. The lane writes only
   repo-native deliverables (globals.css theme tokens, shadcn config,
@@ -82,8 +86,11 @@ Claude-Design no-write law in
   terminal access to the same bridge (claude mcp add --scope user
   --transport http claude-design
   https://api.anthropic.com/v1/design/mcp) — machine-local config,
-  never this repo. Listed in
-  [SETUP §Staged](SETUP.md#staged--turns-on-when-its-stage-opens).
+  never this repo. Listed in SETUP §Staged.
 - Design draws from the same shared usage pool as chat, Code, and
   Cowork (its old separate allowance is gone) — batch sessions; plan
   before opening.
+
+Sources:
+[V1.S2.T5](ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)
+[SETUP §Staged](SETUP.md#staged--turns-on-when-its-stage-opens)
