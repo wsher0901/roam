@@ -49,6 +49,30 @@ down and talking — never by content here.
 | How do I start a Design session? | [DESIGN-KICKOFF.md](DESIGN-KICKOFF.md) |
 | I've been away for weeks | open [DASHBOARD.md](DASHBOARD.md), then just talk — [pickup](skills/pickup.md) rebuilds the rest |
 
+## One day in the workshop
+You sit down and type anything — pickup claims the baton and hands
+you the sit-down summary: what shipped while you were away, which
+parallel sessions flipped state, what needs you. You give the merge
+words the summary asked for, answer any BLOCKED question, and the
+fleet moves on without you. Then the main session: you and the
+cockpit drive one task — discussion in the Web chat, a paste block,
+Code executes, THE GATE, external review, your yes, the weld. Somewhere
+in the afternoon you say "run T3–T6 in parallel" and four benches
+are born, four lanes fly; the pacing law keeps only Now plus one
+parallel slot on your desk. Leaving is one sentence: "done for
+today" parks every local lane and halts the machine — or "keep
+working while I'm out" lifts the eligible ones to the cloud first.
+Either way the board is repainted before the lights go out, and the
+next seat — tomorrow, or your phone tonight — starts by reading it.
+Nothing important ever lives only in a conversation.
+
+Sources:
+[pickup](skills/pickup.md)
+[handoff](skills/handoff.md)
+[liftoff](skills/liftoff.md)
+[ship](skills/ship.md)
+[pacing law — LAWS §Workflow](LAWS.md#workflow-non-negotiable)
+
 ## The daily loop
 
 The founder's whole day, as the system sees it: sit down at either
@@ -459,7 +483,7 @@ early cloud sandboxes couldn't push to origin and their work died
 with them
 ([D-020](DECISIONS.md#d-020--2026-07--parallel-lanes-v2-native-lanes-replace-hand-built-orchestration)).
 
-In flight, a lane pushes every commit, never shares a file with any
+While flying, a lane pushes every commit, never shares a file with any
 sibling (so merges can't collide), keeps its own memory at the
 [four moments](skills/parallel-lanes.md#the-four-memory-moments-the-lanes-diary-rule),
 and speaks only through its PR — `BLOCKED:` comments for questions,
@@ -533,21 +557,10 @@ stamps its header with date · ritual · seat, so staleness is
 self-declaring. Git outranks it on any disagreement — the board is
 a rendering of the truth, not the truth.
 
-Reading it: the glyphs are a law of their own — 🟢 done · 🟡
-ongoing · 🔴 issue · ⚪ idle — identical everywhere they appear.
-**[Needs you](DASHBOARD.md#needs-you)** is the founder's short
-queue. **[You are here](DASHBOARD.md#you-are-here)** is the version
-bar and per-stage progress, computed from checkboxes.
-**[Stage map](DASHBOARD.md#stage-map)** draws the stage dependency
-graph. **[Sessions](DASHBOARD.md#sessions)** shows every live
-session with its state and your move. **[Claude Web + Design
-discussion](DASHBOARD.md#claude-web--design-discussion)** carries
-the founder's open Web/Design threads by their verbatim titles —
-the one section fed by the never-skipped
-question rather than by git. **[Shipped](DASHBOARD.md#shipped-latest--full-record-the-ledger)** is
-a static table of the ~10 newest [history/](history/README.md)
-entries, re-derived from frontmatter at every repaint; the full
-record is the directory itself.
+How to read every board section, glyph, and bar:
+[§Reading the board](#reading-the-board). The board's shape is
+defined once, in [handoff §4](skills/handoff.md); rituals render it,
+nothing else writes it.
 
 ### Skills
 
@@ -598,6 +611,31 @@ chats by their exact titles, so you can search them) · Shipped (the
 ten newest; the full chronology is
 [the ledger](history/README.md#the-ledger)). The board's shape is
 defined once, in [handoff §4](skills/handoff.md).
+
+## Where information goes
+One home per class. New information APPENDS there via the named
+vehicle; changed information UPSERTS in place via the same writer —
+never a second copy anywhere. The weave links to a fact's home; it
+never duplicates it.
+
+| Information | Home | Appended by | Upserted by |
+|---|---|---|---|
+| Task story · decisions-in-flight · dead ends · blocks | its [memory/<id>.md](memory/TEMPLATE.md) | the working session, at the four diary moments | cognitive rewrite at handoff; frozen at weld |
+| Shipped narrative | [history/](history/README.md) (four doors) | the atomic weld, quadrant per the legend | frozen — link repairs only |
+| Chronology of everything shipped | [the ledger](history/README.md#the-ledger) | one weld-prepended line | never — append-only |
+| Fresh gotcha / machine trap | the task's memory, or [DASHBOARD](DASHBOARD.md) Needs-you | the session / a ritual | promoted to LAWS · a skill · SETUP via PR when permanent |
+| Permanent workshop rule | [LAWS](LAWS.md) | PR + D-number | D-number PR only |
+| Any decision | [DECISIONS](DECISIONS.md) | decide, append-only | never — amendments are new entries |
+| Plan structure | [ROADMAP](ROADMAP.md) | decide-gated PR | structure via D; ticks by ship only |
+| Status · progress · counts | [DASHBOARD](DASHBOARD.md) | ritual repaint, at render time | the repaint IS the upsert; never hand-edited |
+| Unvisited idea | [IDEAS](IDEAS.md) | ritual harvest / micro-PR | promoted out via decide when adopted |
+| Engine rule / OPEN slot fill | [ENGINE](ENGINE.md) | decide | decide — the register shrinks by D-number |
+| Tooling · stack · config inventory | [SETUP](SETUP.md) | ops PR | ops PR; status never (the board's job) |
+| Fact vocabulary (F-* · TP-* · telemetry) | [FACTS](data/FACTS.md) | decide; IDs append-only | definitions via D; IDs never reused |
+| Source vetting verdicts | SOURCES-<family> → [SOURCES](data/SOURCES.md) at T7 | vetting lanes | grade moves via demotion evidence + D |
+| Design-session governance | [DESIGN-KICKOFF](DESIGN-KICKOFF.md) | ops PR | ops PR |
+| Explanations · terms · mechanisms | [HOME](HOME.md) (this file) | PR | PR |
+| Identity | [FOUNDATION](FOUNDATION.md) | founder-approved PR + D-number | same — rare by design |
 
 ## Terms
 
