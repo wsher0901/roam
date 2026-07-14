@@ -2,12 +2,12 @@
 type: spec
 id: recall-skill
 title: Recall — the routing table's read mirror
-status: open
+status: shipped
 stage: workshop
 branch: docs/recall-skill
 pr: 123
 opened: 2026-07-14
-shipped: —
+shipped: 2026-07-14
 ---
 # recall-skill — Recall — the routing table's read mirror
 
