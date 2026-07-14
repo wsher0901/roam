@@ -64,6 +64,8 @@ Sources:
 
 - GitHub — wsher0901/roam, public, MIT; squash-merge; branch
   auto-delete on merge.
+- GitHub branch protection — main requires the CI check (`checks`);
+  red is unmergeable by machine.
 - Vercel — project linked to the repo (deploys since V1.S2.T3).
 - claude.ai — the Roam Project; its settings box carries
   WEB-INSTRUCTIONS verbatim.

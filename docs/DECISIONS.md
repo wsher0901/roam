@@ -962,3 +962,32 @@ every-session load; LAWS gets the one binding clause next block);
 counts in the Sessions header (unstable anchor, proven).
 **Affects:** [HOME](HOME.md) · [handoff §4](skills/handoff.md) ·
 this entry.
+
+## D-038 — 2026-07 — CI is the arbiter — Actions-green required at every gate; local gate mirrors all six CI steps; D-anchors born resolving (upholds D-027)
+**Decision:** THE GATE, every lane's ready-flip, and LAWS' "done"
+all require the pushed commit's GitHub Actions run to be green —
+local green never suffices; the preflight gate becomes the full CI
+mirror (lint · format:check · check:links · tests · build);
+[decide](skills/decide.md) runs check:links before an entry's first
+push, so a D-number heading and every link to it are born in the
+same commit; local-green + CI-red is a STOP-and-investigate finding,
+never a merge. Machine-enforced (founder said yes, 2026-07-14): main
+is branch-protected — the `checks` run is a required status check
+with enforce_admins on, so red is unmergeable by GitHub itself. This
+widens [D-027](#d-027--2026-07--laws-polish--glossed-lane-law-provenance-re-homed-to-consolidations-ship-syncs-with-main-before-the-weld)'s
+sync-with-main-before-the-weld preflight to the whole pipeline.
+**Why:** seven red Actions notifications reached the founder before
+any report did — six were honest mid-authoring anchor failures, one
+was main itself red for ~30 minutes (#111→#112); every report was
+locally true and CI-blind because nothing ever looked at Actions.
+The arbiter has to be the thing that actually gates the merge.
+**Alternatives rejected:** re-pinning Node (the pipeline was healthy
+— the node-24 hypothesis is retracted); git pre-push hooks (the
+decide-step check:links fix is lighter, targets the actual stumble,
+and per-machine hooks don't travel with the repo).
+**Affects:** [ship §1 · §THE GATE](skills/ship.md) ·
+[parallel-lanes §When a lane finishes](skills/parallel-lanes.md) ·
+[decide §1](skills/decide.md) ·
+[LAWS §Workflow](LAWS.md#workflow-non-negotiable) ·
+[SETUP §Once and done](SETUP.md#once-and-done--cloud-accounts) ·
+this entry.

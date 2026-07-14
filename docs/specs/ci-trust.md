@@ -62,14 +62,16 @@ first push.
 
 ## Done means
 
-- [ ] The six named edits landed (ship §1 · ship §THE GATE ·
+- [x] The six named edits landed (ship §1 · ship §THE GATE ·
       parallel-lanes · decide · LAWS · branch protection)
 - [ ] `gh pr checks` green on THIS PR before its own gate is
-      announced
-- [ ] Branch-protection state matches the founder's answer (gh api
-      GET)
-- [ ] check-links green
-- [ ] The full local CI mirror green (lint · format:check ·
+      announced — verified after the content push watches Actions
+      green
+- [x] Branch-protection state matches the founder's answer (gh api
+      GET): contexts [`checks`], enforce_admins on, reviews null,
+      strict off
+- [x] check-links green
+- [x] The full local CI mirror green (lint · format:check ·
       check:links · tests · build)
 
 ## Open questions

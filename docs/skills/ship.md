@@ -13,9 +13,10 @@ reliability law BEFORE surfacing it — then this same procedure.
 ## 1 · Preflight
 Be on the task's branch; know its ID (or workshop slug). Sync with
 main FIRST: merge current origin/main into the branch (merge, never
-rebase — the history is pushed); resolve anything. Then tests +
-linter; fix failures first — what you test is exactly what main will
-contain after the weld.
+rebase — the history is pushed); resolve anything. Then the
+full CI mirror — lint · format:check · check:links · tests ·
+build; fix failures first — what you test is exactly what main
+will contain after the weld.
 
 ## 2 · Spec gate
 If a spec exists: verify every Done-means box honestly against the
@@ -40,6 +41,11 @@ differently than the spec; preview link once previews exist.
 Summarize in plain language and ask. NEVER merge without the
 founder's explicit yes — the conversational yes is the only gate;
 never infer it.
+
+- Actions is the arbiter: after the final push, run
+  `gh pr checks <pr> --watch`. THE GATE may be announced ONLY when
+  the run reports green. Local-green + CI-red = STOP: investigate,
+  report the finding to the founder — never merge over red.
 
 ## 7 · On approval — the atomic weld
 One bookkeeping commit on the SAME branch, so state and work merge

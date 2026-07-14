@@ -111,6 +111,8 @@ Pre-review its ready PR against [FOUNDATION](../FOUNDATION.md), its
 [ROADMAP](../ROADMAP.md) line, and the
 [reliability law](../FOUNDATION.md#the-reliability-law) BEFORE
 surfacing it to the founder; then [ship](ship.md) takes over.
+Flip draft→ready ONLY after `gh pr checks` reports the pushed
+commit's Actions run green — local green never suffices.
 Ideas-surfaced harvesting: any "Ideas surfaced" lines in a lane's
 memory move to [IDEAS](../IDEAS.md) at the next cockpit ritual —
 lanes never write main themselves.

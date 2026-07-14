@@ -22,6 +22,10 @@ Append in exactly this format:
 **Affects:** <markdown links to every file/section this changes —
 or "record only">
 
+- Anchors are born resolving: run `npm run check:links` BEFORE the
+  entry's first push — a D-number heading and every link to it must
+  exist in the same commit.
+
 ## 2 · Ripple, same commit
 Apply what the decision demands, in the SAME commit as the entry:
 [FOUNDATION](../FOUNDATION.md) (identity) ·
