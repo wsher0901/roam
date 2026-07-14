@@ -6,7 +6,7 @@ status: living
 
 # Dashboard — the state surface
 
-Stamp: 2026-07-14 · 10:59 · ship · work PC
+Stamp: 2026-07-14 · 11:50 · ship · work PC
 V1 5/34 · S1 2/7 · S2 3/5 · sessions: 0 main · 0 parallel ·
 needs-you 4
 How to read this board →
@@ -74,11 +74,10 @@ flowchart LR
 
 ## Claude Web + Design discussion
 
-- **"Ops — Architecture audit & setup"** (Web) — the ops leg's
-  law-and-knowledge arc is closed: laws-close (#115) and ci-trust
-  (#117, born from this session's CI diagnosis) both shipped → next:
-  the leg-end restyle sweep (HOME Law-2 restyle · parallel-lanes
-  restyle · LAWS line-rewrap · the SOURCES-&lt;family&gt; nit).
+- **"Ops — Architecture audit & setup"** (Web) — the ops leg is
+  fully closed: laws-close (#115), ci-trust (#117), auto-merge-flip
+  (#119), and the leg-end restyle sweep (#121) all shipped → next:
+  nothing on this thread; the Obsidian pass is a local check.
 - **"<setup-ladder / P8 chat's exact title>"** (Web) — T3–T6
   relaunch briefs pending → next: per its own thread.
 
@@ -89,6 +88,7 @@ handoff.
 
 | When | What | PR |
 |---|---|---|
+| 07-14 11:46 | [Leg-end restyle sweep: D-029 finishes its migration — every living doc carries its links below the prose](history/workshop/definition/restyle-sweep.md) | [#121](https://github.com/wsher0901/roam/pull/121) |
 | 07-14 10:55 | [Repo auto-merge enabled so the self-merge law works — the repo's first armed --auto, fired on green](history/workshop/mechanism/auto-merge-flip.md) | [#119](https://github.com/wsher0901/roam/pull/119) |
 | 07-14 10:32 | [CI is the arbiter: Actions-green at every gate; the local gate mirrors all six CI steps; anchors born resolving](history/workshop/mechanism/ci-trust.md) | [#117](https://github.com/wsher0901/roam/pull/117) |
 | 07-14 10:24 | [Leg close: LAWS carries the routing clause; pickup speaks the founder's shape](history/workshop/definition/laws-close.md) | [#115](https://github.com/wsher0901/roam/pull/115) |
@@ -98,4 +98,3 @@ handoff.
 | 2026-07-13 | [TELEMETRY folds into FACTS: Appendix C; file retired](history/workshop/definition/telemetry-fold.md) | [#106](https://github.com/wsher0901/roam/pull/106) |
 | 2026-07-13 | [Fleet continuity: handoff parks every local lane; liftoff respawns parked benches; wake-lock parks every outcome](history/workshop/mechanism/fleet-continuity.md) | [#104](https://github.com/wsher0901/roam/pull/104) |
 | 2026-07-13 | [Stale-branch hygiene: gone-guard on the safety net; welded-elsewhere locals auto-removed](history/workshop/mechanism/stale-branch-hygiene.md) | [#101](https://github.com/wsher0901/roam/pull/101) |
-| 2026-07-13 | [Setup consolidation: SETUP.md born; equipment-plan and PROJECT-POLICY retired; the writing laws adopted](history/workshop/definition/setup-consolidation.md) | [#99](https://github.com/wsher0901/roam/pull/99) |
