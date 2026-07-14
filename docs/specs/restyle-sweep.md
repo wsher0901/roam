@@ -79,8 +79,8 @@ fails the gate.
 - [x] ROADMAP checkbox count identical to main (5 done / 29 open)
 - [x] Full CI mirror green (lint · format:check · check:links ·
       tests · build)
-- [ ] `gh pr checks` green before the gate — verified after the push
-      watches Actions green
+- [x] `gh pr checks` green before the gate — Actions `checks` run
+      green on the head commit
 
 ## Open questions
 
