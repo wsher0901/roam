@@ -65,8 +65,9 @@ Sources:
 [dispatch law — LAWS §Workflow](../LAWS.md#workflow-non-negotiable)
 
 ## 6 · Ledger handoff
-Repaint DASHBOARD — the Cloud section IS the flight plan: every
-airborne lane with its url, every abort and hold with its reason.
+Repaint DASHBOARD per [handoff §4](handoff.md) — the Sessions
+table IS the flight plan: every airborne lane with its url, every
+abort and hold with its reason in Your move / State.
 Ship the micro-PR (board + any IDEAS harvest).
 
 Sources:

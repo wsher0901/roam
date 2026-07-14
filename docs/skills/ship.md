@@ -49,12 +49,16 @@ atomically:
   docs/history/<quadrant>/<id>.md — quadrant per the
   [legend](../history/README.md); ties → workshop/definition;
   frontmatter →
-  type: history, shipped: <date>, pr: #N (workshop PRs: slug-keyed
-  history file, no ROADMAP tick)
+  type: history, shipped: <date HH:MM>, pr: #N (workshop PRs:
+  slug-keyed history file, no ROADMAP tick)
 - spec frontmatter → status: shipped, pr, shipped date
+- append one line atop
+  [the ledger](../history/README.md#the-ledger):
+  <date HH:MM> · <story title> → <quadrant> · #N
 Push. Squash-merge, delete the branch, pull main.
 
 ## 8 · Tail
-Run handoff in QUIET mode (board repaint — the Shipped table now
-shows this task, derived from history/). Then recommend exactly ONE
+Run handoff in QUIET mode (board repaint per
+[handoff §4](handoff.md) — the Shipped table now shows this task).
+Then recommend exactly ONE
 next action + at most one parallel slot per the pacing law.

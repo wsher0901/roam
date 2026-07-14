@@ -923,3 +923,25 @@ task) · [history/README](history/README.md) ·
 [TEMPLATE](memory/TEMPLATE.md) · link ripple across
 [ROADMAP](ROADMAP.md) · [DECISIONS](DECISIONS.md) ·
 [DASHBOARD](DASHBOARD.md) · specs · this entry.
+
+## D-035 — 2026-07 — State surfaces v2 — Sessions table with a type column; sentence-first Needs-you; verbatim chat titles; welds stamp time and write the ledger; handoff §4 is the single board spec (amends D-024's surface; extends D-029)
+**Decision:** the board's sections, order, and rendering rules are
+exactly [handoff §4](skills/handoff.md); pickup renders deltas and
+points at the board instead of mirroring it; ship's weld stamps
+shipped: <date HH:MM> and appends one
+[ledger](history/README.md#the-ledger) line; legends live in
+[HOME §Reading the board](HOME.md#reading-the-board);
+DECISIONS-entry Affects lines and board tables keep inline links
+(table-class sanction).
+**Why:** the founder's morning-after scenario — one glance must
+answer how many sessions, what state, needs-me vs waiting; two
+writer-specs (handoff §4 + pickup §5's mirror) were a revert risk;
+date-only frontmatter hid same-day chronology.
+**Alternatives rejected:** separate Main/Parallel sections (founder
+merged them); a divider row (the type column suffices); cell
+coloring (not portable across Obsidian and GitHub); backfilling
+times into frozen stories (invents data).
+**Affects:** [handoff](skills/handoff.md) ·
+[pickup](skills/pickup.md) · [liftoff](skills/liftoff.md) ·
+[ship](skills/ship.md) · [history/README](history/README.md) ·
+[HOME](HOME.md) · this entry.
