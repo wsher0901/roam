@@ -11,7 +11,7 @@ shipped: 2026-07-13
 ---
 # vault-lens-seed — Vault-lens seed: Obsidian config travels through git
 **Links:** [machine-setup](../skills/machine-setup.md) ·
-[vault-lens history](../history/vault-lens.md) · Terms:
+[vault-lens history](../history/workshop/mechanism/vault-lens.md) · Terms:
 [vault lens](../HOME.md#terms)
 
 ## Goal

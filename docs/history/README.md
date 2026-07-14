@@ -1,11 +1,23 @@
 ---
-type: readme
-title: History
+type: reference
+title: History legend
 status: living
 ---
-# History — permanent shipped narratives
+# History — the four doors
 
-Each task's memory file in its final form, moved here by ship's
-atomic weld (one per shipped task, newest visible in
-[DASHBOARD](../DASHBOARD.md)'s Shipped table); manual:
-[HOME](../HOME.md#the-files--what-each-one-is-for).
+Every shipped story lives behind exactly one door. Pick the column
+by IS vs DOES, the row by Roam-facing vs builder-facing; ties →
+workshop/definition.
+
+- product/definition — what Roam IS: identity, roadmap shape,
+  engine rules, fact and traveler vocabularies.
+- product/build — what Roam DOES: scaffold, CI, deploys, engine and
+  app code.
+- workshop/definition — what the WORKSHOP is: laws, policies,
+  setup, knowledge system, conventions.
+- workshop/mechanism — what the workshop DOES: rituals, hooks,
+  lanes and fleet, board machinery, seat tooling.
+
+The weld (ship §7) assigns the quadrant at move time. When a
+quadrant grows unwieldy, it gains version sub-buckets by decision —
+rolling wave, never speculatively.

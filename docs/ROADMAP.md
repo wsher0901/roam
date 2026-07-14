@@ -48,11 +48,11 @@ schema is written.
 - [x] V1.S1.T1 [P] Fact inventory — enumerate every fact each of the
       five families needs (what it is, which spine step uses it,
       geographic scope, freshness need) -> [docs/data/FACTS.md](data/FACTS.md) ·
-      [history](history/v1.s1.t1.md)
+      [history](history/product/definition/v1.s1.t1.md)
 - [x] V1.S1.T2 [P] Vet sources: Weather — forecast + climatology
       candidates (e.g. Open-Meteo), spike fetch script, grade +
       freshness + coverage + cost -> entry in [docs/data/SOURCES.md](data/SOURCES.md) ·
-      [history](history/v1.s1.t2.md)
+      [history](history/product/definition/v1.s1.t2.md)
 - [ ] V1.S1.T3 [P] Vet sources: Sky & sea — sun/moon math, tides (NOAA
       for US; global gaps labeled), aurora/nature timing; same
       outputs -> `docs/data/SOURCES-sky-sea.md` (lane-disjoint per
@@ -85,14 +85,14 @@ database connected.
 - [x] V1.S2.T1 [P] App scaffold — Next.js App Router + TypeScript +
       Tailwind v4 + shadcn/ui; repo layout with isolated engine/ module
       dir; ESLint/Prettier; Vitest with one passing test ·
-      [history](history/v1.s2.t1.md)
+      [history](history/product/build/v1.s2.t1.md)
 - [x] V1.S2.T2 [seq after T1] Deploy + CI — Vercel project with PR
       preview links; GitHub Actions lint + test so /ship's gate is
       real; .env.example hygiene (public repo: secrets never
-      committed) · [history](history/v1.s2.t2.md)
+      committed) · [history](history/product/build/v1.s2.t2.md)
 - [x] V1.S2.T3 [seq after T1] Supabase wiring — project, pooled
       connection, server-side client, env plumbing ·
-      [history](history/v1.s2.t3.md)
+      [history](history/product/build/v1.s2.t3.md)
 - [ ] V1.S2.T4 [seq after [V1.S1.T7](#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code) and T3] Schema migration — implement
       the S1 schema as migrations; minimal seed data
 - [ ] V1.S2.T5 [P after T1] Design foundations — tokens (palette, type

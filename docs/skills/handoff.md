@@ -42,9 +42,8 @@ pasted? (name · one line · next step)" — accept "none".
 For each active task NOT owned by a lane (a lane just parked in
 step 1.5 keeps its diary exactly as stamped; live lanes keep their
 own via the diary rule): check out its branch, rewrite
-memory/<id>.md cognitively in the locked format — Status first,
-then What this task is · Pending issues · Left / idle · The story ·
-Where to look. Fold in the founder's paste from step 2. Sentences,
+memory/<id>.md cognitively in the locked format
+([TEMPLATE](../memory/TEMPLATE.md)). Fold in the founder's paste from step 2. Sentences,
 written for a reader returning cold. Commit, push, return to main.
 Harvest any "Ideas surfaced" lines from lane memories → IDEAS.
 
@@ -53,10 +52,11 @@ Sources:
 
 ## 4 · Repaint DASHBOARD
 Regenerate wholesale from sources — ROADMAP checkboxes, every
-active branch's memory + PR state, history/ frontmatter. Sections:
+active branch's memory + PR state, history/** frontmatter (all
+quadrant folders). Sections:
 Needs you · You are here (bars) · Stage map · Cloud (if anything
 dispatched) · In flight · Threads (non-task, from the founder's
-paste) · Shipped — a static table of the ~10 newest history/
+paste) · Shipped — a static table of the ~10 newest history/**
 entries, re-derived from frontmatter at every repaint. Counts
 computed at render time, never carried. Header stamps date · ritual
 · seat.
