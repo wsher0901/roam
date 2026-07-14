@@ -945,3 +945,20 @@ times into frozen stories (invents data).
 [pickup](skills/pickup.md) · [liftoff](skills/liftoff.md) ·
 [ship](skills/ship.md) · [history/README](history/README.md) ·
 [HOME](HOME.md) · this entry.
+
+## D-036 — 2026-07 — Information routing — one home per class, append vs upsert; HOME carries the table; Sessions anchor stabilized
+**Decision:** every information class has exactly ONE home; new
+information APPENDS via that home's named vehicle, changed
+information UPSERTS in place via the same writer — never a second
+copy (the weave links to a fact's home, never duplicates it);
+[HOME](HOME.md#where-information-goes) renders the table; the
+board's Sessions header stays plain (counts live in the glance
+line) so its anchor survives every repaint.
+**Why:** the founder asked twice where appends belong — the router
+existed in [LAWS](LAWS.md) but no glanceable rendering did; #111
+proved header-borne counts orphan inbound anchors.
+**Alternatives rejected:** routing table in LAWS (bloats the
+every-session load; LAWS gets the one binding clause next block);
+counts in the Sessions header (unstable anchor, proven).
+**Affects:** [HOME](HOME.md) · [handoff §4](skills/handoff.md) ·
+this entry.

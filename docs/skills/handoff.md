@@ -71,9 +71,9 @@ Sections, in this order:
   receipts). Invariants: any 🔴 anywhere on the board also appears
   here; whenever any session's Your-move is non-empty, one
   aggregated line mirrors here.
-- Sessions — ONE table for every live session. Header carries the
-  counts: "N main · M parallel (a needs you · b await merge · c
-  flying)". Columns: Session (main · cockpit / local parallel /
+- Sessions — ONE table for every live session, under the plain
+  header "## Sessions" (counts live in the glance line — the
+  header must keep a stable anchor). Columns: Session (main · cockpit / local parallel /
   cloud — rows sorted in that order) · Task (linked to its roadmap
   line or memory) · State (glyph + Status-vocabulary word; for
   main, append "· a/b" micro count) · Last push (age) · Your move
