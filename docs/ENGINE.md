@@ -324,7 +324,8 @@ Out: telemetry events, source-health signals, demotions, eval runs.
 
 Rules:
 - **Behavior events are logged** — the decided event vocabulary
-  lives in [TELEMETRY §1](data/TELEMETRY.md#1-behavior-events-d-014).
+  lives in
+  [FACTS Appendix C1](data/FACTS.md#c1--behavior-events-d-014).
 - **Every fall is logged** — runtime degradations down the ladder
   are recorded per slot (ladder_falls), feeding source health.
 - **Grades are living** — earned, never grandfathered. Demotion law:
@@ -339,7 +340,7 @@ Sources:
 [D-014](DECISIONS.md#d-014--2026-06--telemetry-posture-capture-now-use-later)
 ·
 [D-015](DECISIONS.md#d-015--2026-06--data-asset-law-bitemporal-append-only-license-segmented)
-· [TELEMETRY §3](data/TELEMETRY.md#3-source-health-p6)
+· [FACTS Appendix C3](data/FACTS.md#c3--source-health-p6)
 
 ## 11. Invariants — the reliability law
 *True at every stage, for every claim, forever.*
@@ -409,4 +410,4 @@ Sources:
 [FACTS Appendix A](data/FACTS.md#appendix-a--traveler-parameters-tp-0147--per-d-011--d-012)
 ·
 [WX-13](data/FACTS.md#f-wx-13--activity-weather-sensitivity-profiles-15-types)
-· [TELEMETRY §2](data/TELEMETRY.md#2-quality--ground-truth-p5)
+· [FACTS Appendix C2](data/FACTS.md#c2--quality--ground-truth-p5)

@@ -75,7 +75,7 @@ schema is written.
       [docs/data/SOURCES.md](data/SOURCES.md) and delete them; any
       fact lacking a reliable source explicitly marked "LLM-research
       grade -> rendered as unverified"
-      Also covers: [docs/data/TELEMETRY.md](data/TELEMETRY.md) tables (events, claim
+      Also covers: [FACTS Appendix C](data/FACTS.md#appendix-c--telemetry-vocabulary-what-the-app-records) tables (events, claim
       ledger, eval runs, actuals, source health) and the bitemporal
       append-only fact-cache law ([D-014](DECISIONS.md#d-014--2026-06--telemetry-posture-capture-now-use-later), [D-015](DECISIONS.md#d-015--2026-06--data-asset-law-bitemporal-append-only-license-segmented)).
 
@@ -124,7 +124,7 @@ for any destination + dates using Weather and Sky & sea.
 - [ ] V1.S3.T7 [P after T2] Actuals harvester — scheduled job that
       records observed values once a fact's valid_for passes; pairs
       with the claim ledger for calibration ([D-015](DECISIONS.md#d-015--2026-06--data-asset-law-bitemporal-append-only-license-segmented); spec:
-      [docs/data/TELEMETRY.md §2](data/TELEMETRY.md#2-quality--ground-truth-p5))
+      [FACTS Appendix C2](data/FACTS.md#c2--quality--ground-truth-p5))
 
 ### V1.S4 — Suggest
 Completion criteria: floor input (origin + dates) streams back ranked, reasoned
@@ -182,7 +182,8 @@ Completion criteria: a public demo URL runs three seeded wow scenarios smoothly.
 
 ## V2 — Real users · rough bucket
 accounts & auth (Supabase) with saved trips ·
-[telemetry](data/TELEMETRY.md) consent-gated collection goes live ·
+[telemetry](data/FACTS.md#appendix-c--telemetry-vocabulary-what-the-app-records)
+consent-gated collection goes live ·
 hardening: error/edge handling at user scale, abuse and cost caps.
 
 ## V3 — The product · named
