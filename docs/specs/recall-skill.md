@@ -77,10 +77,9 @@ Pending issues for the full reasoning:
    skills enumeration is an inline `·`-separated sentence, so recall
    was added in that house style (fragment + Sources link).
 3. The stub's read-only allowed-tools follow the kickoff's explicit
-   list (Read · Grep · Glob · git log/show · gh pr view/list). The
-   procedure §1 also references `gh pr checks`, which was not added;
-   the founder can add `Bash(gh pr checks:*)` if a prompt-free run
-   is wanted.
+   list (Read · Grep · Glob · git log/show · gh pr view/list) — plus
+   `gh pr checks`, which §1 needs, added on the founder's word at the
+   gate. All read-only; no write, no merge.
 
 ## Open questions
 

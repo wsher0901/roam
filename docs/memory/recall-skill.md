@@ -46,13 +46,11 @@ block, all recorded here so they are not invisible in the diff:
    sentence + a Sources link), preserving the kickoff's content
    (past/ongoing/future · from the files with receipts · never from
    memory · own judgment).
-3. **Stub allowed-tools vs the procedure.** The stub's allowed-tools
-   follow the kickoff's explicit list — Read · Grep · Glob ·
-   git log/show · gh pr view/list — all read-only, no write, no
-   merge. The procedure's §1 Ongoing row also references
-   `gh pr view/checks`; `gh pr checks` was NOT added (not in the
-   explicit list). If the founder wants recall to run `gh pr checks`
-   without a per-call prompt, add `Bash(gh pr checks:*)` to the stub.
+3. **Stub allowed-tools vs the procedure.** RESOLVED at the gate.
+   The stub's allowed-tools follow the kickoff's explicit list —
+   Read · Grep · Glob · git log/show · gh pr view/list — and, on the
+   founder's word, also `gh pr checks`, which the procedure's §1
+   Ongoing row needs. All read-only; no write, no merge.
 
 ## Left / idle
 
