@@ -6,7 +6,7 @@ status: living
 
 # Dashboard — the state surface
 
-Stamp: 2026-07-14 · 14:53 · ship · work PC
+Stamp: 2026-07-14 · 18:02 · handoff · work PC
 V1 5/34 · S1 2/7 · S2 3/5 · sessions: 0 main · 0 parallel ·
 needs-you 4
 How to read this board →
@@ -34,9 +34,10 @@ How to read this board →
 
 ## Sessions
 
-0 main · 0 parallel — operations idle. This sitting shipped
-recall-skill ([#123](https://github.com/wsher0901/roam/pull/123)) —
-the read-only recall skill
+0 main · 0 parallel — operations halted for the day (handoff). This
+sitting shipped recall-skill
+([#123](https://github.com/wsher0901/roam/pull/123)) — the read-only
+recall skill
 ([D-039](DECISIONS.md#d-039--2026-07--recall--questions-answered-from-files-never-from-memory-the-d-036-routing-tables-read-mirror-model-invoked-at-discretion)).
 No session is running.
 
@@ -46,7 +47,7 @@ No session is running.
 
 V1 — The demo · 5/34 █████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 S1 · Data Definition · 2/7 ██░░░░░ → T3–T6 source vetting ⚪ held
-(relaunch briefs due from ladder step P8 in the Web chat)
+(awaiting relaunch briefs)
 S2 · Skeleton & design · 3/5 ███░░ → T5 Design foundations ⚪ idle
 S3–S8 · queued in order · 0/22
 
@@ -73,17 +74,10 @@ flowchart LR
   class S4,S5,S6,S7,S8 pending
 ```
 
-## Claude Web + Design discussion
-
-- **"Ops — Architecture audit & setup"** (Web) — the ops leg is
-  fully closed: laws-close (#115), ci-trust (#117), auto-merge-flip
-  (#119), and the leg-end restyle sweep (#121) all shipped → next:
-  nothing on this thread; the Obsidian pass is a local check.
-- **"<setup-ladder / P8 chat's exact title>"** (Web) — T3–T6
-  relaunch briefs pending → next: per its own thread.
-
-No Design chats open — founder confirmed at the 2026-07-13 · 23:25
-handoff.
+No open Web or Design threads — founder confirmed none at the
+2026-07-14 · 18:02 handoff. The ops leg closed with recall-skill
+([#123](https://github.com/wsher0901/roam/pull/123)); T3–T6
+source-vetting relaunch stays held (see You are here).
 
 ## Shipped (latest — full record: [the ledger](history/README.md#the-ledger))
 
