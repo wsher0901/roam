@@ -43,11 +43,12 @@ becomes repaint-stable.
    merge; founder approval follows external review.
 
 ## Done means
-- [ ] Both new sections landed verbatim
-- [ ] The board paragraph is the two-pointer version
-- [ ] handoff §4 carries the plain-header rule
-- [ ] check-links green
-- [ ] Lint + tests green
+- [x] Both new sections landed verbatim (routing table: 17 "| "
+      lines — header + 16 classes, per the brief's derivation)
+- [x] The board paragraph is the two-pointer version
+- [x] handoff §4 carries the plain-header rule
+- [x] check-links green (1360 links, 0 broken)
+- [x] Lint + tests green
 
 ## Open questions
 none

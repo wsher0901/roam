@@ -1,46 +1,57 @@
 ---
 type: memory
 id: home-knowledge
-updated: 2026-07-13 · bench birth · home PC
+updated: 2026-07-13 · ship (completion rewrite) · home PC
 ---
 # home-knowledge — HOME closes the leg's knowledge layer: the routing table, one day in the workshop, the board paragraph recut, a stable Sessions anchor
 
 ## Status
-Bench ready — birthed 2026-07-13 by the home PC. The cockpit is
-working this task directly this sitting; no separate worker will be
-spawned.
+Complete, awaiting merge — every Done-means box verified green on
+2026-07-13; PR
+[#113](https://github.com/wsher0901/roam/pull/113) flipped ready.
+By brief, the merge waits for founder approval AFTER external
+review.
 
 ## What this task is
-[HOME](../HOME.md) closes the ops leg's knowledge layer: a routing
-table (§Where information goes — one home per information class,
-new information APPENDS via the named vehicle, changed information
-UPSERTS in place, never a second copy) and a narrative
-(§One day in the workshop — the founder's whole day as one story).
-The old board paragraph — twice repaired today — collapses into two
-pointers at [§Reading the board](../HOME.md#reading-the-board) and
-[handoff §4](../skills/handoff.md); handoff §4's Sessions bullet
-gains the plain-header rule so the board's Sessions anchor survives
-every repaint (PR #111 proved header-borne counts orphan inbound
-anchors). Recorded as
+[HOME](../HOME.md) closes the ops leg's knowledge layer:
+§Where information goes — a 16-class routing table (one home per
+information class; new information APPENDS via the named vehicle,
+changed information UPSERTS in place via the same writer, never a
+second copy) — and §One day in the workshop, the founder's whole
+day as one story. The board paragraph in §The board — repaired
+twice today as the v2c shape landed — collapsed into two pointers
+([§Reading the board](../HOME.md#reading-the-board) + the board
+spec in [handoff §4](../skills/handoff.md)); handoff §4's Sessions
+bullet gained the plain-header rule so the board's Sessions anchor
+survives every repaint. Recorded as
 [D-036](../DECISIONS.md#d-036--2026-07--information-routing--one-home-per-class-append-vs-upsert-home-carries-the-table-sessions-anchor-stabilized).
 
 ## Pending issues
 none
 
 ## Left / idle
-Everything after birth: the decide commit (handoff edit + two HOME
-sections + board-paragraph recut + grep ripple), verification, ship
-to THE GATE. The merge waits for founder approval after external
-review — by brief.
+Only the weld: founder approval (after external review) → atomic
+bookkeeping commit → squash-merge. The brief defers HOME's full
+Law-2 restyle to the leg-end sweep (ratchet bent knowingly); LAWS
+is the next block.
 
 ## The story
 Born from the Web-chat ops leg ("Ops — Architecture audit & setup"
 chat) — the HOME block the founder queued at the state-surfaces-v2
 weld. The founder asked twice where appends belong; the router
-existed in LAWS but nothing glanceable rendered it.
+existed in LAWS but nothing glanceable rendered it. One judgment
+call outside the named edits, sanctioned by the brief's grep-driven
+ripple: HOME's only remaining "In flight" was lane prose ("In
+flight, a lane pushes every commit…"), not a board-section
+reference — reworded to "While flying," so the verification grep
+reads zero without changing meaning. The routing table keeps the
+brief's raw "SOURCES-<family>" cell verbatim; GitHub may swallow
+the angle-bracket token when rendering — flagged for the leg-end
+sweep rather than silently diverging from the payload.
 
 ## Where to look
 Spec: [home-knowledge](../specs/home-knowledge.md) · decision:
 [D-036](../DECISIONS.md#d-036--2026-07--information-routing--one-home-per-class-append-vs-upsert-home-carries-the-table-sessions-anchor-stabilized)
-· target: [HOME](../HOME.md) · board spec:
-[handoff §4](../skills/handoff.md).
+· PR [#113](https://github.com/wsher0901/roam/pull/113) · the
+table: [HOME §Where information goes](../HOME.md#where-information-goes)
+· the story: [HOME §One day in the workshop](../HOME.md#one-day-in-the-workshop).
