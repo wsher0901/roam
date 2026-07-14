@@ -13,7 +13,7 @@ shipped: 2026-07-13
 **Links:** [DESIGN-KICKOFF](../DESIGN-KICKOFF.md) ·
 [LAWS](../LAWS.md) · [HOME](../HOME.md) ·
 [equipment plan](../SETUP.md#staged--turns-on-when-its-stage-opens) · Decisions: none —
-task-local ([history](../history/design-kickoff-refresh.md) records
+task-local ([history](../history/workshop/definition/design-kickoff-refresh.md) records
 the mechanism)
 
 ## Goal

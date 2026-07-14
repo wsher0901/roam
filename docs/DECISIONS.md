@@ -899,5 +899,27 @@ brain blueprint; T7 and SCHEMA read FACTS anyway).
 [SCHEMA](data/SCHEMA.md) · frozen link repairs
 ([D-014](DECISIONS.md#d-014--2026-06--telemetry-posture-capture-now-use-later)
 entry ·
-[telemetry-inventory](history/telemetry-inventory.md)) ·
+[telemetry-inventory](history/product/definition/telemetry-inventory.md)) ·
 this entry.
+
+## D-034 — 2026-07 — History quadrants — product×workshop · definition×implementation; memory TEMPLATE owns format + Status vocabulary (extends D-024's narrative layer and D-032's states)
+**Decision:** four doors — history/product/definition ·
+history/product/build · history/workshop/definition ·
+history/workshop/mechanism; the weld assigns per the README legend
+(is-vs-does picks the column, Roam-facing vs builder-facing picks
+the row; ties → workshop/definition); TEMPLATE gains the Status
+vocabulary the wake-lock reads; handoff and ship stop
+re-enumerating the format.
+**Why:** 49 flat files made the vault untangible for retrieval; the
+founder's future-issue test routes five real issues from this
+session to five distinct doors; the quadrant that will explode
+(product/build at S3) is isolated from workshop noise.
+**Alternatives rejected:** single appended HISTORY.md (unbounded
+scroll; derivation rework); monthly buckets (dual conventions
+forever); flat + lens only (fixed the graph, not browse/search).
+**Affects:** 49 moves (+ telemetry-fold, welded between brief and
+task) · [history/README](history/README.md) ·
+[ship](skills/ship.md) · [handoff](skills/handoff.md) ·
+[TEMPLATE](memory/TEMPLATE.md) · link ripple across
+[ROADMAP](ROADMAP.md) · [DECISIONS](DECISIONS.md) ·
+[DASHBOARD](DASHBOARD.md) · specs · this entry.

@@ -27,8 +27,9 @@ Every docs/ file this branch touches: IDs, D-numbers, fact IDs,
 sibling docs are links. Fix now — misses can't merge.
 
 ## 4 · Final memory rewrite
-memory/<id>.md becomes publication-quality: Status = "complete,
-awaiting merge", the full story, dead ends, where-to-look final.
+memory/<id>.md becomes publication-quality per the locked format
+([TEMPLATE](../memory/TEMPLATE.md)): Status = "complete, awaiting
+merge", the full story, dead ends, where-to-look final.
 
 ## 5 · Flip the PR
 Draft → ready (it has existed since birth). Refresh the summary in
@@ -44,7 +45,10 @@ never infer it.
 One bookkeeping commit on the SAME branch, so state and work merge
 atomically:
 - tick the task's [ROADMAP](../ROADMAP.md) checkbox
-- git mv docs/memory/<id>.md → docs/history/<id>.md; frontmatter →
+- git mv docs/memory/<id>.md →
+  docs/history/<quadrant>/<id>.md — quadrant per the
+  [legend](../history/README.md); ties → workshop/definition;
+  frontmatter →
   type: history, shipped: <date>, pr: #N (workshop PRs: slug-keyed
   history file, no ROADMAP tick)
 - spec frontmatter → status: shipped, pr, shipped date

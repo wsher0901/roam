@@ -18,7 +18,7 @@ history/workshop/definition · history/workshop/mechanism — with a
 README legend the weld reads at move time (IS vs DOES picks the
 column, Roam-facing vs builder-facing picks the row; ties →
 workshop/definition). The memory
-[TEMPLATE](../memory/TEMPLATE.md) becomes the single owner of the
+[TEMPLATE](TEMPLATE.md) becomes the single owner of the
 locked format and the post-D-032 Status vocabulary the wake-lock
 reads; [ship](../skills/ship.md) and
 [handoff](../skills/handoff.md) stop re-enumerating the format.

@@ -15,7 +15,7 @@ hand-edited; git outranks this board.
 1. 🟡 Paste the approved v4 text into the claude.ai → Roam Project →
    settings box — its master is now
    [WEB-INSTRUCTIONS](WEB-INSTRUCTIONS.md); the box is a copy
-   ([history](history/web-instructions.md)).
+   ([history](history/workshop/definition/web-instructions.md)).
 2. 🟡 Run the [machine-setup](skills/machine-setup.md) Verify block
    on the home PC — the work PC passed in full on 2026-07-13 (seat
    label repaired to "work PC").
@@ -97,13 +97,13 @@ Shipped). Queued Web-chat work, in order:
 
 | When | What | PR |
 |---|---|---|
-| 2026-07-13 | [TELEMETRY folds into FACTS: Appendix C; file retired](history/telemetry-fold.md) | [#106](https://github.com/wsher0901/roam/pull/106) |
-| 2026-07-13 | [Fleet continuity: handoff parks every local lane; liftoff respawns parked benches; wake-lock parks every outcome](history/fleet-continuity.md) | [#104](https://github.com/wsher0901/roam/pull/104) |
-| 2026-07-13 | [Stale-branch hygiene: gone-guard on the safety net; welded-elsewhere locals auto-removed](history/stale-branch-hygiene.md) | [#101](https://github.com/wsher0901/roam/pull/101) |
-| 2026-07-13 | [Setup consolidation: SETUP.md born; equipment-plan and PROJECT-POLICY retired; the writing laws adopted](history/setup-consolidation.md) | [#99](https://github.com/wsher0901/roam/pull/99) |
-| 2026-07-13 | [DESIGN-KICKOFF refresh: June-2026 Claude Design capabilities](history/design-kickoff-refresh.md) | [#97](https://github.com/wsher0901/roam/pull/97) |
-| 2026-07-13 | [Consolidation recut: DECISION-POLICY becomes ENGINE; PROJECT-POLICY to house style](history/engine-recut.md) | [#95](https://github.com/wsher0901/roam/pull/95) |
-| 2026-07-13 | [Vault-lens seed: Obsidian config travels through git](history/vault-lens-seed.md) | [#91](https://github.com/wsher0901/roam/pull/91) |
-| 2026-07-13 | [LAWS polish: glossed lane law, provenance to consolidations, ship syncs with main](history/laws-polish.md) | [#89](https://github.com/wsher0901/roam/pull/89) |
-| 2026-07-13 | [ROADMAP recut: plain-language V1, completion criteria, per-family vetting outputs](history/roadmap-recut.md) | [#87](https://github.com/wsher0901/roam/pull/87) |
-| 2026-07-12 | [FOUNDATION v4: principles recut, open family set, lifespan repair](history/foundation-v4.md) | [#85](https://github.com/wsher0901/roam/pull/85) |
+| 2026-07-13 | [TELEMETRY folds into FACTS: Appendix C; file retired](history/workshop/definition/telemetry-fold.md) | [#106](https://github.com/wsher0901/roam/pull/106) |
+| 2026-07-13 | [Fleet continuity: handoff parks every local lane; liftoff respawns parked benches; wake-lock parks every outcome](history/workshop/mechanism/fleet-continuity.md) | [#104](https://github.com/wsher0901/roam/pull/104) |
+| 2026-07-13 | [Stale-branch hygiene: gone-guard on the safety net; welded-elsewhere locals auto-removed](history/workshop/mechanism/stale-branch-hygiene.md) | [#101](https://github.com/wsher0901/roam/pull/101) |
+| 2026-07-13 | [Setup consolidation: SETUP.md born; equipment-plan and PROJECT-POLICY retired; the writing laws adopted](history/workshop/definition/setup-consolidation.md) | [#99](https://github.com/wsher0901/roam/pull/99) |
+| 2026-07-13 | [DESIGN-KICKOFF refresh: June-2026 Claude Design capabilities](history/workshop/definition/design-kickoff-refresh.md) | [#97](https://github.com/wsher0901/roam/pull/97) |
+| 2026-07-13 | [Consolidation recut: DECISION-POLICY becomes ENGINE; PROJECT-POLICY to house style](history/product/definition/engine-recut.md) | [#95](https://github.com/wsher0901/roam/pull/95) |
+| 2026-07-13 | [Vault-lens seed: Obsidian config travels through git](history/workshop/mechanism/vault-lens-seed.md) | [#91](https://github.com/wsher0901/roam/pull/91) |
+| 2026-07-13 | [LAWS polish: glossed lane law, provenance to consolidations, ship syncs with main](history/workshop/definition/laws-polish.md) | [#89](https://github.com/wsher0901/roam/pull/89) |
+| 2026-07-13 | [ROADMAP recut: plain-language V1, completion criteria, per-family vetting outputs](history/product/definition/roadmap-recut.md) | [#87](https://github.com/wsher0901/roam/pull/87) |
+| 2026-07-12 | [FOUNDATION v4: principles recut, open family set, lifespan repair](history/product/definition/foundation-v4.md) | [#85](https://github.com/wsher0901/roam/pull/85) |
