@@ -46,14 +46,15 @@ only — no story content changes (frozen class).
    merge; founder approval follows external review.
 
 ## Done means
-- [ ] Quadrant counts 11/3/17/19 (telemetry-fold, welded after the
+- [x] Quadrant counts 11/3/17/19 (telemetry-fold, welded after the
       brief was drafted, joins workshop/definition per the brief)
-- [ ] history root holds only README + the four quadrant dirs
-- [ ] Zero flat history links repo-wide
-- [ ] TEMPLATE carries the Status vocabulary
-- [ ] handoff §3 and ship §4 point at TEMPLATE
-- [ ] check-links green
-- [ ] Lint + tests green
+- [x] history root holds only README + the four quadrant dirs
+- [x] Zero flat history links repo-wide (sole survivors: links to
+      history/README.md itself — the legend does not move)
+- [x] TEMPLATE carries the Status vocabulary
+- [x] handoff §3 and ship §4 point at TEMPLATE
+- [x] check-links green (1268 links, 0 broken)
+- [x] Lint + tests green
 
 ## Open questions
 none
