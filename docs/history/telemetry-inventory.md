@@ -10,7 +10,7 @@ pr: 35
 ## What shipped
 
 ([V1.S1.T1](../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
-amendment 2) · New [TELEMETRY.md](../data/TELEMETRY.md) defines what
+amendment 2) · New [TELEMETRY.md](../data/FACTS.md#appendix-c--telemetry-vocabulary-what-the-app-records) defines what
 Roam captures about its own behavior — usage events, a claim
 ledger, eval runs, actuals, source health — captured from day one,
 used later

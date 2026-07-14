@@ -260,7 +260,7 @@ imperial-canonical (every upstream source is SI-native).
 
 ## D-014 — 2026-06 — Telemetry posture: capture now, use later
 Decision: V1 captures the behavior-event corpus defined in
-[docs/data/TELEMETRY.md §1](data/TELEMETRY.md#1-behavior-events-d-014) from day one, under: consent-gated
+[docs/data/TELEMETRY.md §1](data/FACTS.md#c1--behavior-events-d-014) from day one, under: consent-gated
 collection (GPC/DNT respected; consent grants/withdrawals logged),
 pseudonymous session ids (no accounts in V1), no PII and no raw IPs in
 payloads, stated-only fields never appearing in events, raw-event
@@ -268,7 +268,7 @@ retention time-boxed (12-month default) with aggregates retained.
 Exposure law: every recommendation-reaction event records the full
 slate shown (items + positions), not just the acted-on item. V1 may
 use events only for product/funnel debugging, fatigue-cap tuning, and
-quality signals ([TELEMETRY.md §2](data/TELEMETRY.md#2-quality--ground-truth-p5)); ranking personalization remains
+quality signals ([TELEMETRY.md §2](data/FACTS.md#c2--quality--ground-truth-p5)); ranking personalization remains
 Later per [FOUNDATION](FOUNDATION.md); event data is never sold or shared.
 Why:
 - events cannot be backfilled — day one of the Later ranking work
@@ -876,4 +876,28 @@ what matters).
 [liftoff](skills/liftoff.md) ·
 [parallel-lanes](skills/parallel-lanes.md) ·
 [LAWS §Parallel lanes & cloud](LAWS.md#parallel-lanes--cloud) ·
+this entry.
+
+## D-033 — 2026-07 — TELEMETRY folds into FACTS (Appendix C); file retired (upholds D-014; extends the D-030 retirement pattern)
+**Decision:** FACTS gains Appendix C — Telemetry vocabulary (what
+the app records) — holding TELEMETRY's three families and storage
+note verbatim; data/TELEMETRY.md retires; data/ tightens to FACTS ·
+SOURCES · SCHEMA.
+**Why:** the founder's FACTS charter — categories of information we
+decided to incorporate, each definition within — describes the
+telemetry vocabulary exactly; FACTS already hosts non-world
+vocabularies (Appendices A, B); the standalone file confused its
+own author ("not sure what this is for").
+**Alternatives rejected:** keep + purpose line (the file's
+existence was the confusion); fold into ENGINE (tables bloat the
+brain blueprint; T7 and SCHEMA read FACTS anyway).
+**Affects:**
+[FACTS Appendix C](data/FACTS.md#appendix-c--telemetry-vocabulary-what-the-app-records)
+· data/TELEMETRY.md (deleted) ·
+[ENGINE §10](ENGINE.md#10-learn--the-loop-back) ·
+[ROADMAP](ROADMAP.md) · [HOME](HOME.md) ·
+[SCHEMA](data/SCHEMA.md) · frozen link repairs
+([D-014](DECISIONS.md#d-014--2026-06--telemetry-posture-capture-now-use-later)
+entry ·
+[telemetry-inventory](history/telemetry-inventory.md)) ·
 this entry.

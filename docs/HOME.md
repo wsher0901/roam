@@ -108,10 +108,9 @@ Obsidian READS: the vault is docs/; quick capture goes only into
 | [DESIGN-KICKOFF.md](DESIGN-KICKOFF.md) | the Claude Design session preamble + governance rules | ops PRs | living until the repo-synced design system replaces it |
 | [WEB-INSTRUCTIONS.md](WEB-INSTRUCTIONS.md) | master copy of the Claude Web Project-instructions box | ops PRs | living; re-pasted into the box after every edit (the box is a copy, never the source) |
 | HOME.md | this manual & encyclopedia; zero live state | founder-approved PRs | living |
-| [data/FACTS.md](data/FACTS.md) | every fact the engine must know + every traveler parameter | [V1.S1](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code) tasks via PRs | living; IDs stable, extension append-only |
+| [data/FACTS.md](data/FACTS.md) | every fact the engine must know + every traveler parameter + the telemetry vocabulary ([Appendix C](data/FACTS.md#appendix-c--telemetry-vocabulary-what-the-app-records)) | [V1.S1](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code) tasks via PRs | living; IDs stable, extension append-only |
 | [data/SOURCES.md](data/SOURCES.md) | the vetted source registry, one entry per source slot | source-vetting tasks (T2–T6), consolidated at [T7](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code) | living; grades move under the demotion law |
 | [data/SCHEMA.md](data/SCHEMA.md) | human-readable mirror of the SQL schema | [V1.S1.T7](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code) | placeholder until T7 ships |
-| [data/TELEMETRY.md](data/TELEMETRY.md) | what the system records about itself and its users | founder-approved PRs | living |
 | [specs/](specs/README.md) | per-task contracts + [TEMPLATE](specs/TEMPLATE.md) | born at task birth when discussion opened the task; [ship](skills/ship.md) finalizes | open → shipped or superseded; never deleted |
 | [memory/](memory/README.md) | in-flight task stories in the locked format ([TEMPLATE](memory/TEMPLATE.md)) | the task's own seat — cockpit at rituals, lanes at their four moments | lives on the task's branch; MOVES to history/ at ship |
 | [history/](history/README.md) | permanent shipped narratives, one per task | [ship](skills/ship.md)'s atomic weld | frozen after landing (link repairs only) |
@@ -213,10 +212,11 @@ cannot drift because they only point. Without this split, the
 workshop's automation would be invisible and unauditable.
 
 **[data/](data/FACTS.md)** is the engine's ground truth on paper:
-[FACTS](data/FACTS.md) (what the engine must know),
+[FACTS](data/FACTS.md) (what the engine must know, what it may be
+told, and what the app records about itself —
+[Appendix C](data/FACTS.md#appendix-c--telemetry-vocabulary-what-the-app-records)),
 [SOURCES](data/SOURCES.md) (where each fact verifiably comes from),
-[TELEMETRY](data/TELEMETRY.md) (what the system records about
-itself), [SCHEMA](data/SCHEMA.md) (how it will be stored). Without
+[SCHEMA](data/SCHEMA.md) (how it will be stored). Without
 this layer the reliability law would be a slogan; with it, every
 claim the product ever renders traces to a vetted, graded source.
 
@@ -831,7 +831,7 @@ the link for the full story.
   rendered (fact, source slot, grade, when shown); paired with
   harvested actuals it yields the calibration report — "was our
   'verified' actually right". Home:
-  [TELEMETRY §2](data/TELEMETRY.md#2-quality--ground-truth-p5).
+  [FACTS Appendix C2](data/FACTS.md#c2--quality--ground-truth-p5).
 - **the quiet asset** — the compounding dataset of
   place-and-condition knowledge that accrues as a side effect of
   caching. Home:
@@ -843,11 +843,12 @@ the link for the full story.
 
 ## Reading the data files
 
-The engine's knowledge lives in four documents under
+The engine's knowledge lives in three documents under
 [docs/data/](data/FACTS.md): [FACTS](data/FACTS.md) (what the
-engine must know), [SOURCES](data/SOURCES.md) (where each fact
-verifiably comes from), [TELEMETRY](data/TELEMETRY.md) (what the
-system records about itself), and [SCHEMA](data/SCHEMA.md) (how it
+engine must know, what it may be told, and what the app records
+about itself — [Appendix C](data/FACTS.md#appendix-c--telemetry-vocabulary-what-the-app-records)),
+[SOURCES](data/SOURCES.md) (where each fact
+verifiably comes from), and [SCHEMA](data/SCHEMA.md) (how it
 will all be stored — a placeholder until
 [V1.S1.T7](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)).
 This is the manual for reading them.
@@ -890,7 +891,7 @@ one entry per slot. A fact's "Dictionary:" line lists the exact
 payload keys a vetted source must supply — and doubles as the
 schema-drift contract: live payloads are monitored against it, and
 drift feeds source health
-([TELEMETRY §3](data/TELEMETRY.md#3-source-health-p6)). Where a
+([FACTS Appendix C3](data/FACTS.md#c3--source-health-p6)). Where a
 fact has no Dictionary line yet, the vetting task derives one from
 its What line.
 
@@ -964,7 +965,9 @@ stated-only fields are never inferred
 lists plan parameters — schema the plans need (lodging anchor, item
 lock-state) that are neither world facts nor traveler inputs.
 
-**Telemetry.** [TELEMETRY](data/TELEMETRY.md) defines three
+**Telemetry.**
+[Appendix C](data/FACTS.md#appendix-c--telemetry-vocabulary-what-the-app-records)
+defines three
 registers: behavior events (captured from day one under a strict
 privacy floor, used later —
 [D-014](DECISIONS.md#d-014--2026-06--telemetry-posture-capture-now-use-later)),
