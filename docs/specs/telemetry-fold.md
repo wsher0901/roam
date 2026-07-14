@@ -44,11 +44,11 @@ one event, threshold, or definition changes.
    merge; founder approval follows external review.
 
 ## Done means
-- [ ] Appendix C carries all four TELEMETRY sections
-- [ ] The file is gone
-- [ ] Zero markdown links target data/TELEMETRY.md repo-wide
-- [ ] check-links green
-- [ ] Lint + tests green
+- [x] Appendix C carries all four TELEMETRY sections
+- [x] The file is gone
+- [x] Zero markdown links target data/TELEMETRY.md repo-wide
+- [x] check-links green (1240 links, 0 broken)
+- [x] Lint + tests green
 
 ## Open questions
 none
