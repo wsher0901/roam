@@ -66,17 +66,21 @@ fails the gate.
 
 ## Done means
 
-- [ ] The sweep list fully applied
-- [ ] Zero inline links remain in the converted files' narrative
+- [x] The sweep list fully applied (FOUNDATION already conformant —
+      no inline links to relocate; see the memory's Deviations)
+- [x] Zero inline links remain in the converted files' narrative
       prose outside the sanctioned classes
-- [ ] git diff --stat shows exactly the eight files (the six above +
-      this spec + the memory)
-- [ ] Per-file `git diff --word-diff origin/main` shows only link
-      relocation and rewrapping — spot-stated in the PR summary
-- [ ] ROADMAP checkbox count identical to main
-- [ ] Full CI mirror green (lint · format:check · check:links ·
+- [x] git diff --stat shows exactly seven files — five sweep targets
+      (HOME · DESIGN-KICKOFF · parallel-lanes · ROADMAP · LAWS) +
+      this spec + the memory; FOUNDATION unchanged
+- [x] Per-file visible-text diff vs origin/main shows only link
+      relocation and rewrapping (+ the one HOME nit) — spot-stated in
+      the PR summary
+- [x] ROADMAP checkbox count identical to main (5 done / 29 open)
+- [x] Full CI mirror green (lint · format:check · check:links ·
       tests · build)
-- [ ] `gh pr checks` green before the gate
+- [ ] `gh pr checks` green before the gate — verified after the push
+      watches Actions green
 
 ## Open questions
 
