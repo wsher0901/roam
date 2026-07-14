@@ -5,7 +5,7 @@ title: Recall — the routing table's read mirror
 status: open
 stage: workshop
 branch: docs/recall-skill
-pr: —
+pr: 123
 opened: 2026-07-14
 shipped: —
 ---
@@ -15,6 +15,8 @@ shipped: —
 [HOME](../HOME.md) ·
 [decide](../skills/decide.md) ·
 Decisions:
+[D-039 — this task's decision](../DECISIONS.md#d-039--2026-07--recall--questions-answered-from-files-never-from-memory-the-d-036-routing-tables-read-mirror-model-invoked-at-discretion)
+·
 [D-036 — the routing table this mirrors](../DECISIONS.md#d-036--2026-07--information-routing--one-home-per-class-append-vs-upsert-home-carries-the-table-sessions-anchor-stabilized)
 
 ## Goal

@@ -1014,3 +1014,24 @@ and per-machine hooks don't travel with the repo).
 [LAWS §Workflow](LAWS.md#workflow-non-negotiable) ·
 [SETUP §Once and done](SETUP.md#once-and-done--cloud-accounts) ·
 this entry.
+
+## D-039 — 2026-07 — Recall — questions answered from files, never from memory (the D-036 routing table's read mirror; model-invoked at discretion)
+**Decision:** a seventh skill, read-only, fired by Claude's own
+judgment whenever a founder question concerns anything recorded —
+past, ongoing, or future — or whenever an answer would otherwise come
+from conversational memory; it classifies, opens the routed homes, and
+answers sentence-first with a
+[D-029](#d-029--2026-07--corpus-writing-laws--readability-first-links-below-prose)
+Sources block; not-found means "not recorded" plus where it would
+live — never an invention; git outranks the board and the answer says
+so on conflict.
+**Why:** the founder asked one already-answered question three times
+in a day — the corpus had it, retrieval had friction; writes were
+routed by
+[D-036](#d-036--2026-07--information-routing--one-home-per-class-append-vs-upsert-home-carries-the-table-sessions-anchor-stabilized),
+reads never were; keyword gating would under-fire.
+**Alternatives rejected:** folding into [pickup](skills/pickup.md) (a
+moment, not on-demand); a search index (the routing table IS the
+index); explicit-keyword triggering (founder wants discretion).
+**Affects:** [the new skill](skills/recall.md) + stub ·
+[HOME](HOME.md#equipment--environment) · this entry.

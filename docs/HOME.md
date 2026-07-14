@@ -1198,7 +1198,9 @@ Sources:
 **The skills**, one line each: pickup — the sit-down briefing,
 unprompted · handoff — the leaving ritual, FULL or QUIET · ship —
 task close, gate, and weld · decide — the decision recorder + ripple ·
-liftoff — hand the workshop to the cloud · parallel-lanes — the lane
+liftoff — hand the workshop to the cloud · recall — ask about anything
+past, ongoing, or future; answered from the files with receipts,
+never from memory, on its own judgment · parallel-lanes — the lane
 manual (consulted, not fired) · machine-setup — per-machine setup and
 verify.
 
@@ -1208,6 +1210,7 @@ Sources:
 [ship](skills/ship.md)
 [decide](skills/decide.md)
 [liftoff](skills/liftoff.md)
+[recall](skills/recall.md)
 [parallel-lanes](skills/parallel-lanes.md)
 [machine-setup](skills/machine-setup.md)
 
