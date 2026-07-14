@@ -23,3 +23,16 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   calibration pairs, coverage maps) as a licensable product someday;
   stays possible only because of the license-segmented storage law
   ([D-015](DECISIONS.md#d-015--2026-06--data-asset-law-bitemporal-append-only-license-segmented)).
+- 2026-07-14 (Claude Code, [ci-trust](history/workshop/mechanism/ci-trust.md) weld): anchor-generating
+  helper for D-links — a small step or script that emits the exact
+  GitHub heading slug for a new D-number, so the heading and every
+  link to it are born matching; kills the recurring first-push
+  anchor stumble at its source (the pattern behind
+  [D-038](DECISIONS.md#d-038--2026-07--ci-is-the-arbiter--actions-green-required-at-every-gate-local-gate-mirrors-all-six-ci-steps-d-anchors-born-resolving-upholds-d-027)).
+- 2026-07-14 (Claude Code, ci-trust weld) — caveat on the
+  paths-ignore idea above: with
+  [D-038](DECISIONS.md#d-038--2026-07--ci-is-the-arbiter--actions-green-required-at-every-gate-local-gate-mirrors-all-six-ci-steps-d-anchors-born-resolving-upholds-d-027)
+  branch protection now requiring the `checks` context on main,
+  ignoring `docs/**` in CI would leave that required check
+  unreported and block every docs-only merge; adopt only with a
+  matching protection carve-out.
