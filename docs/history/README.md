@@ -27,6 +27,7 @@ Every weld prepends one line — the full chronology across all four
 doors, newest first. Frozen stories carry date only; entries from
 D-035 on carry time.
 
+- 2026-07-13 22:58 · state-surfaces-v2 — State surfaces v2: the board learns the founder's names; pickup becomes the sit-down summary; welds stamp time and write the ledger → workshop/mechanism · #110
 - 2026-07-13 · history-quadrants — History organizes by issue-door quadrants; TEMPLATE owns the memory format and Status vocabulary → workshop/definition · #108
 - 2026-07-13 · telemetry-fold — TELEMETRY folds into FACTS: Appendix C; file retired → workshop/definition · #106
 - 2026-07-13 · fleet-continuity — Fleet continuity: handoff parks every local lane; liftoff respawns parked benches; wake-lock parks every outcome → workshop/mechanism · #104

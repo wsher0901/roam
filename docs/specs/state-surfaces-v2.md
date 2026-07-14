@@ -2,10 +2,12 @@
 type: spec
 id: state-surfaces-v2
 title: State surfaces v2 — the board learns the founder's names; pickup becomes the sit-down summary; welds stamp time and write the ledger
-status: open
+status: shipped
 stage: workshop
 branch: docs/state-surfaces-v2
+pr: 110
 opened: 2026-07-13
+shipped: 2026-07-13
 ---
 # state-surfaces-v2 — State surfaces v2: the board learns the founder's names; pickup becomes the sit-down summary; welds stamp time and write the ledger
 
