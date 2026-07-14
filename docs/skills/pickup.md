@@ -57,19 +57,33 @@ Sources:
 [handoff §4–§5](handoff.md)
 
 ## 5 · Render the sit-down summary (exactly this shape)
-- Header: date · seat · baton claimed · last ritual ·
-  repaint/self-heal/hook notes (only if any).
-- SINCE YOU LEFT — deltas since the last FULL handoff stamp:
-  "Shipped N — <titles + PRs>" · session changes (newly 🟢 ready ·
-  🔴 blocked · spawn-fails, each with its age) · anything the hooks
-  reported. Omit whatever didn't change.
-- NEEDS YOU — verbatim from the board.
-- MAIN SESSION — only if one exists: Status / What it is / one-line
-  story, from its memory.
+- Ruled header: "── pickup · <date> · <seat> ──". Caption line:
+  "Last handoff: <FULL | liftoff> · <date HH:MM> · <seat>". Then
+  THE EXIT TABLE — one row per task parked or lifted at that
+  handoff: | Task you left | At exit | Now | Your move |. "Now" is
+  the current Status-vocabulary state + last-push age; if nothing
+  was left, one row: "nothing parked · nothing lifted". Repaint,
+  self-heal, or hook notes append as small lines under the table,
+  only if any exist.
+- RECENT SUMMARY — a short plain paragraph: what the founder
+  actually did last sitting and where it stopped, rebuilt from the
+  main task's memory Story plus the handoff note. Short sentences,
+  everyday words, written for a tired reader.
+- PENDING ISSUES — anything that went wrong or was left worrying
+  (memories' Pending-issues + the handoff note), each with its
+  current standing. If none, exactly: "No issues from last
+  sitting."
+- OPEN CHAT + DESIGN DISCUSSION — mirror the board's section:
+  verbatim titles bold in quotes, surface tag, one topic line,
+  next step each.
+- NEEDS YOUR ATTENTION — the board's Needs-you verbatim; any 🔴 or
+  ready rows from the exit table fold in at the top.
 - NEXT — Now: one action · Parallel: one or "—" (the pacing law).
-Everything else lives on the board ([handoff §4](handoff.md)) —
-point, don't repeat. Then STOP and wait for the founder — the claim
-check happens in conversation before any task starts.
+No ritual self-narration ("baton claimed" and kin stay silent
+mechanics). Everything else lives on the board
+([handoff §4](handoff.md)) — point, don't repeat. Then STOP — the
+claim check happens in conversation before any task starts.
 
 Sources:
+[TEMPLATE — the Status vocabulary](../memory/TEMPLATE.md)
 [pacing law — LAWS §Workflow](../LAWS.md#workflow-non-negotiable)
