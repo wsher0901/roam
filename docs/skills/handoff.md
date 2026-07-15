@@ -81,7 +81,7 @@ Sections, in this order:
   here; whenever any session's Your-move is non-empty, one
   aggregated line mirrors here.
 - Sessions — the single home for EVERY lane row, cloud and local
-  alike (airborne · waiting · parked · failed · held), a failed or
+  alike (airborne · blocked · parked · failed · held), a failed or
   held row carrying its reason in Your move — the Needs-you mirror
   invariant then covers every 🔴/failed row. ONE table for every
   live session, under the plain
