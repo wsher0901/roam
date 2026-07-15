@@ -6,7 +6,7 @@ status: living
 
 # Dashboard — the state surface
 
-Stamp: 2026-07-15 · 14:41 · ship · work PC
+Stamp: 2026-07-15 · 15:42 · ship · work PC
 V1 5/34 · S1 2/7 · S2 3/5 · sessions: 0 main · 0 parallel ·
 needs-you 6
 How to read this board →
@@ -47,7 +47,7 @@ How to read this board →
 
 ## Sessions
 
-0 main · 0 parallel — operations idle. This sitting shipped six
+0 main · 0 parallel — operations idle. This sitting shipped seven
 workshop tasks: the D-040 leaving-ritual inversion
 (handoff-inline-context,
 [#126](https://github.com/wsher0901/roam/pull/126)); four currency
@@ -57,11 +57,14 @@ home-currency-pass
 ([#130](https://github.com/wsher0901/roam/pull/130)),
 retroactivity-sweep
 ([#132](https://github.com/wsher0901/roam/pull/132)), laws-tightness
-([#134](https://github.com/wsher0901/roam/pull/134)); and the capstone
+([#134](https://github.com/wsher0901/roam/pull/134)); the capstone
 delegation-architecture
 ([#136](https://github.com/wsher0901/roam/pull/136), D-041) — the
 away-mode chooser, the go-remote tether, idle-wait, and label-spawned
-cloud lanes. No task is running.
+cloud lanes; and cap-confirm
+([#138](https://github.com/wsher0901/roam/pull/138)) firming D-041's
+routine-cap budget into confirmed fact — 15/day, flat across Max
+tiers. No task is running.
 
 ↳ main micro: — (no live main session)
 
@@ -97,14 +100,15 @@ flowchart LR
 ```
 
 No open Web or Design threads — none surfaced this sitting.
-delegation-architecture shipped
-([#136](https://github.com/wsher0901/roam/pull/136)); T3–T6
+cap-confirm shipped
+([#138](https://github.com/wsher0901/roam/pull/138)); T3–T6
 source-vetting relaunch stays held (see You are here).
 
 ## Shipped (latest — full record: [the ledger](history/README.md#the-ledger))
 
 | When | What | PR |
 |---|---|---|
+| 07-15 15:35 | [the Max routine cap firmed to confirmed fact (15/day, flat across Max tiers): the SETUP and liftoff live-number hedges retired](history/workshop/definition/cap-confirm.md) | [#138](https://github.com/wsher0901/roam/pull/138) |
 | 07-15 14:39 | [Delegation architecture (D-041): the away-mode chooser (local · handoff · go-remote · liftoff), the go-remote tether posture, idle-wait, label-spawned cloud lanes](history/workshop/mechanism/delegation-architecture.md) | [#136](https://github.com/wsher0901/roam/pull/136) |
 | 07-15 12:58 | [LAWS tightness (Option C): command + one-line whys (D-027 upheld), procedure grain expelled to handoff §1.5, the stale decide trigger and preview conditional fixed](history/workshop/definition/laws-tightness.md) | [#134](https://github.com/wsher0901/roam/pull/134) |
 | 07-15 12:08 | [Retroactivity sweep: repair three later-found gaps — HOME's surviving Cloud-ledger ghost, handoff's non-vocabulary "waiting", recall's FOUNDATION + DESIGN-KICKOFF routing omissions](history/workshop/definition/retroactivity-sweep.md) | [#132](https://github.com/wsher0901/roam/pull/132) |
@@ -114,4 +118,3 @@ source-vetting relaunch stays held (see You are here).
 | 07-14 14:50 | [Recall — the routing table's read mirror: founder questions answered from the files with receipts, never from memory; fires on its own judgment](history/workshop/mechanism/recall-skill.md) | [#123](https://github.com/wsher0901/roam/pull/123) |
 | 07-14 11:46 | [Leg-end restyle sweep: D-029 finishes its migration — every living doc carries its links below the prose](history/workshop/definition/restyle-sweep.md) | [#121](https://github.com/wsher0901/roam/pull/121) |
 | 07-14 10:55 | [Repo auto-merge enabled so the self-merge law works — the repo's first armed --auto, fired on green](history/workshop/mechanism/auto-merge-flip.md) | [#119](https://github.com/wsher0901/roam/pull/119) |
-| 07-14 10:32 | [CI is the arbiter: Actions-green at every gate; the local gate mirrors all six CI steps; anchors born resolving](history/workshop/mechanism/ci-trust.md) | [#117](https://github.com/wsher0901/roam/pull/117) |
