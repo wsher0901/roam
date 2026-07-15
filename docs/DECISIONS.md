@@ -1062,3 +1062,43 @@ before the trigger is unambiguous).
 [WEB-INSTRUCTIONS](WEB-INSTRUCTIONS.md) ·
 [D-032](#d-032--2026-07--fleet-continuity--handoff-parks-every-local-lane-liftoff-respawns-parked-benches-wake-lock-parks-every-outcome-extends-the-d-020d-023-lane-law-upholds-d-009)
 · this entry.
+
+## D-041 — 2026-07 — Delegation architecture — the away-mode chooser, go-remote tether, idle-wait, label-spawned cloud (amends D-032's wake-lock and the dispatch law; upholds the baton law and D-009)
+**Decision:** away-mode is one variable per fork, not a pile of
+rituals. At the keyboard → a LOCAL lane. Leaving with nothing
+continuing → handoff. Leaving with work continuing: machine staying on
+→ go-remote; machine going dark → liftoff. Go-remote is a POSTURE, not
+a leaving ritual — it parks nothing, closes nothing, and keeps the
+baton; the cockpit relocates to the founder's phone via Remote
+Control. A blocked lane on a phone-reachable vehicle (cloud session ·
+RC-tethered local session) IDLE-WAITS for the founder's reply instead
+of parking. Cloud lanes spawn through a GitHub-label-triggered routine
+(label `lane:cloud` on the pre-birthed draft PR); ad-hoc CLI spawn
+stays banned. The eligibility gate reverts to hard disqualifiers
+(secrets exposure · cloud-incompatible needs · file-collision), and
+fully-specified becomes the dispatch sort key under the plan's daily
+routine budget.
+**Why:** the corpus had reserved this decision across five sweeps. One
+variable per fork is the simplest complete model; a posture (not a
+ritual) lets the baton law survive unamended
+([baton law](LAWS.md#parallel-lanes--cloud)); a zero-secret label is
+safer than API wiring and is drivable from the phone; idle-wait costs
+nothing where a phone can reach the lane, so parking there was pure
+loss.
+**Alternatives rejected:** a third leaving ritual (a posture suffices;
+the baton law survives unamended); `/fire` API wiring as the primary
+route (a bearer token on two machines vs a zero-secret label — and the
+label is also phone-drivable); keeping park-on-block everywhere (idle
+costs nothing where a phone can reach, and
+[D-032](#d-032--2026-07--fleet-continuity--handoff-parks-every-local-lane-liftoff-respawns-parked-benches-wake-lock-parks-every-outcome-extends-the-d-020d-023-lane-law-upholds-d-009)'s
+recording guarantee is preserved).
+**Affects:** [LAWS §Workflow](LAWS.md#workflow-non-negotiable) ·
+[LAWS §Parallel lanes & cloud](LAWS.md#parallel-lanes--cloud) ·
+[parallel-lanes](skills/parallel-lanes.md) ·
+[liftoff](skills/liftoff.md) · [go-remote](skills/go-remote.md) (new)
+· [machine-setup](skills/machine-setup.md) · [SETUP](SETUP.md) ·
+[HOME §Delegation](HOME.md#delegation--the-away-mode-chooser) ·
+[D-032](#d-032--2026-07--fleet-continuity--handoff-parks-every-local-lane-liftoff-respawns-parked-benches-wake-lock-parks-every-outcome-extends-the-d-020d-023-lane-law-upholds-d-009)
+·
+[D-009](#d-009--2026-06--pacing-law-finish-first-flexible-cap)
+· this entry.

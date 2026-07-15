@@ -65,12 +65,16 @@ the cockpit ack overwrites the parked Status with "airborne ·
 the ordinary lane law.
 
 ## Canary handshake (both sides)
+The timeout constants live HERE and nowhere else — LAWS and liftoff
+point back to this section: the window is ~10 minutes (cloud) or ~2
+(local), and both sides use the SAME window.
 - Lane side: first act on waking is one trivial commit — memory
   Status → "claimed by <vehicle> — <date>" — pushed to its branch;
   then WAIT for the cockpit's acknowledgment in memory before real
   work. Seeing "failed/aborted", a Status this lane does not own
-  (parked · respawned · superseded), or no acknowledgment after the
-  timeout: self-terminate cleanly (push whatever exists, stop).
+  (parked · respawned · superseded), or no acknowledgment within that
+  window (~10 min cloud / ~2 local): self-terminate cleanly (push
+  whatever exists, stop).
 - Cockpit side: watch for the canary. On arrival, write "airborne ·
   <vehicle or url> · <date>" into the lane's memory Status and push.
   No canary within ~10 minutes (cloud) or ~2 (local): write "spawn
@@ -90,16 +94,25 @@ Sources:
 ## Wake-lock & parking
 On ANY resume or wake, a lane re-reads its memory Status FIRST. A
 Status it does not own — parked · respawned · superseded · failed —
-means: push nothing new, terminate. After completion, a `BLOCKED:`,
-or a failed spawn, a lane PARKS: every outcome is already in its
-memory, and nothing continues without a founder-initiated action
-(the merge word, a Needs-you answer, a fresh dispatch).
+means: push nothing new, terminate. Completion and a failed spawn
+still PARK: the outcome is already in memory, and nothing continues
+without a founder-initiated action (the merge word, a fresh dispatch).
+A `BLOCKED:` lane splits by vehicle: on a phone-reachable vehicle
+(cloud session · RC-tethered local session) it IDLE-WAITS — alive,
+silent, zero-cost — for the founder's reply (a PR comment on cloud, a
+Claude-app message when RC-tethered), which resumes it in-thread; a
+bare detached background agent, invisible from the phone, parks on
+block as before. Blocked local lanes also park at handoff FULL — the
+machine is halting.
 
 ## Vehicles
-- LOCAL — the mid-session default per the dispatch law: background
-  agents, or `claude -w` worktree sessions. Worktrees share the
-  clone's disk; lanes stay file-disjoint by law.
-- CLOUD — liftoff only: claude.ai/code or the mobile app, never a
+- LOCAL — the mid-session default per the chooser: background agents,
+  or `claude -w` worktree sessions. Worktrees share the clone's disk;
+  lanes stay file-disjoint by law. During go-remote every lane must
+  be RC-visible — inside the RC'd cockpit or an interactive
+  auto-connect session; a bare detached spawn is invisible from the
+  phone and unlawful in tether posture.
+- CLOUD — liftoff only, via the route ladder (§Cloud spawn); never a
   CLI spawn. Push canary first; never end a cloud session before its
   work is on origin.
 - Agent Teams (research/review tasks): lead Fable/Opus, at most 4
@@ -109,18 +122,26 @@ Sources:
 [dispatch law](../LAWS.md#workflow-non-negotiable)
 
 ## Cloud spawn — route ladder
-Try in order; record the winning route here per LAWS §Self-improvement
-(P8 maiden flight):
+Try in order; the maiden flight records the winner here per
+[LAWS §Self-improvement](../LAWS.md#self-improvement):
 
-1. claude.ai/code → open the repo → new session ON the pre-birthed
-   branch → paste the kickoff line (task ID + branch + "follow
-   parallel-lanes").
-2. The mobile app, same recipe.
+1. **Label-spawn.** On the pre-birthed draft PR:
+   `gh pr edit <N> --add-label lane:cloud`. The lane-worker routine
+   (GitHub trigger `pull_request.labeled`, filtered to label
+   `lane:cloud`) starts a cloud session on that PR. Its saved prompt:
+   check out the PR's branch, read `docs/memory/<id>.md`, follow
+   parallel-lanes, and @mention `wsher0901` in a PR comment on any
+   `BLOCKED:` and on completion. The GitHub push IS the notification
+   channel; the founder's PR-comment reply feeds the running session.
+2. **Manual.** claude.ai/code or the mobile app → new session ON the
+   pre-birthed branch → paste the kickoff line (task ID + branch +
+   "follow parallel-lanes").
 
-Winning route: unrecorded — the P8 maiden flight writes it.
+Winning route: unrecorded — the maiden flight writes it.
 
 Sources:
 [LAWS §Self-improvement](../LAWS.md#self-improvement)
+[Cloud lane worker — SETUP](../SETUP.md#once-and-done--cloud-accounts)
 
 ## When a lane finishes
 Pre-review its ready PR against FOUNDATION, its ROADMAP line, and the

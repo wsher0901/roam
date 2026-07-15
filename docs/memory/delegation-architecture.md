@@ -55,6 +55,6 @@ can reach the lane, and D-032's recording guarantee is preserved
 
 ## Where to look
 Spec: [delegation-architecture](../specs/delegation-architecture.md) ·
-the new skill: go-remote (born in the D-041 commit) · the decision:
+the new skill: [go-remote](../skills/go-remote.md) · the decision:
 D-041 (this task's entry) · the amended law:
 [D-032](../DECISIONS.md#d-032--2026-07--fleet-continuity--handoff-parks-every-local-lane-liftoff-respawns-parked-benches-wake-lock-parks-every-outcome-extends-the-d-020d-023-lane-law-upholds-d-009).

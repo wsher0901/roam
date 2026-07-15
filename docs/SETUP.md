@@ -72,6 +72,15 @@ Sources:
 - Vercel — project linked to the repo (deploys since V1.S2.T3).
 - claude.ai — the Roam Project; its settings box carries
   WEB-INSTRUCTIONS verbatim.
+- Cloud lane worker (routine) — created at claude.ai/code/routines;
+  trigger GitHub `pull_request.labeled` filtered to label `lane:cloud`
+  on wsher0901/roam; the Claude GitHub App installed on the repo
+  (`/web-setup` alone is NOT enough); "Allow unrestricted branch
+  pushes" ON (lanes push feat/|fix/|docs/|chore/, never claude/);
+  saved prompt as in the route ladder
+  ([parallel-lanes §Cloud spawn](skills/parallel-lanes.md#cloud-spawn--route-ladder)).
+  Plan: Max 20x — Max budget documented at 15 routine runs/day; record
+  the LIVE number shown at claude.ai/code/routines here at creation.
 - Supabase — arrives with V1.S1.T7 (see §Staged).
 
 Sources:
