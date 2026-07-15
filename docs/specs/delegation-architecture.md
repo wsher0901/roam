@@ -13,7 +13,7 @@ opened: 2026-07-15
 [LAWS](../LAWS.md) ·
 [parallel-lanes](../skills/parallel-lanes.md) ·
 [liftoff](../skills/liftoff.md) ·
-[go-remote](../skills/go-remote.md) ·
+go-remote (the new skill, born in the D-041 commit) ·
 [machine-setup](../skills/machine-setup.md) ·
 [SETUP](../SETUP.md) ·
 [HOME](../HOME.md) ·
