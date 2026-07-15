@@ -53,17 +53,19 @@ merge; founder approval follows external review in the Web chat.
 
 ## Done means
 
-- [ ] LAWS park-protocol bullet rewritten; wip-commit mechanics gone
+- [x] LAWS park-protocol bullet rewritten; wip-commit mechanics gone
       from LAWS, the law + boundary + a handoff §1.5 link kept.
-- [ ] LAWS decide bullet trigger widened + task-local tail.
-- [ ] LAWS merge bullet: "(+ preview link)".
-- [ ] ship §5: "preview link" (no conditional).
-- [ ] Greps: "wip commit" in LAWS → 0; "add, cut, reorder" in LAWS →
+- [x] LAWS decide bullet trigger widened + task-local tail.
+- [x] LAWS merge bullet: "(+ preview link)".
+- [x] ship §5: "preview link" (no conditional).
+- [x] Greps: "wip commit" in LAWS → 0; "add, cut, reorder" in LAWS →
       0; the stale preview conditional retired repo-wide (bar
-      history/); "convention change" in LAWS → present.
-- [ ] check:links green (proves the handoff §1.5 anchor) + the full
-      CI mirror (lint · format:check · check:links · tests · build)
-      and the pushed commit's Actions run green.
+      history/, genuinely zero — spec/memory reworded to not quote
+      it); "convention change" in LAWS → present.
+- [x] check:links green (1577 links, 0 broken — proves the handoff
+      §1.5 anchor) + the local CI mirror (lint · format:check ·
+      check:links · tests · build) green. Pending: the pushed
+      commit's Actions run green.
 
 ## Open questions
 
