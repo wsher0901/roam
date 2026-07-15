@@ -23,12 +23,10 @@ Out of scope: any behavior change, structural rewrites, history/,
 LAWS, HOME, and TEMPLATE (unless a Status word is missing).
 
 ## Pending issues
-- TEMPLATE.md line 43 still names "abort ledger" in the `cloud spawn
-  failed` row's Written-by column — a surviving ghost. This pass
-  gates TEMPLATE edits behind "only if a Status word is missing" (none
-  are), and the verification grep is scoped to `docs/skills/`, so
-  TEMPLATE is out of scope by the kickoff's own design. Flag it at the
-  gate as a follow-up candidate; do NOT touch TEMPLATE in this PR.
+- none. The TEMPLATE.md "abort ledger" ghost flagged at the gate was
+  retired here too, alongside a matching one in HOME.md, once the
+  founder approved widening the carve-out (see The story + the spec's
+  Deviations).
 
 ## Left / idle
 Nothing before merge. On the founder's yes (after Web review): the
@@ -51,6 +49,15 @@ home for every lane row (the erratum); the retired "abort ledger" /
 "Cloud section" ghost still lingered in three skills; and liftoff §1
 described handoff's close as "absorbed" rather than skipped. Each edit
 codifies the decision already in force — no new behavior.
+
+At the gate, the founder approved a scope carve-out: the ghost hunt,
+originally scoped to `docs/skills/`, widened to all of `docs/`
+(bar immutable `history/`), which surfaced two more live "abort
+ledger" mentions — `TEMPLATE.md`'s `cloud spawn failed` row and
+`HOME.md`'s canary-handshake portrait. Both were repointed to "the
+board's Sessions row (+ Needs-you mirror)" on this same branch, so the
+only surviving mentions outside `history/` are now this task's own
+spec and memory — the retirement narrative itself.
 
 ## Where to look
 Spec: [skills-precision-pass](../specs/skills-precision-pass.md) ·

@@ -86,6 +86,23 @@ merge; founder approval follows external review in the Web chat.
       (lint · format:check · check:links · tests · build) green.
       Pending: the pushed commit's Actions run green.
 
+## Deviations
+
+- **The ghost retirement widened to HOME + TEMPLATE at the gate.**
+  As scoped, edit 7 retired the "abort ledger" / "Cloud section"
+  ghost only across `docs/skills/`, and TEMPLATE was gated behind
+  "only if a Status word is missing" (none were) — so HOME and
+  TEMPLATE were out of scope by design, and the original verification
+  grep was scoped to `docs/skills/`. At the gate the founder widened
+  the grep to all of `docs/` (excluding immutable `history/`), which
+  surfaced two more live mentions: `TEMPLATE.md` line 43 (the `cloud
+  spawn failed` row's Written-by column) and `HOME.md` ~line 564 (the
+  canary-handshake portrait). The founder approved the carve-out;
+  both were repointed to "the board's Sessions row (+ Needs-you
+  mirror)" on this same branch. The only surviving "abort ledger"
+  mentions outside `history/` are now this task's own spec and memory
+  — the retirement narrative itself.
+
 ## Open questions
 
 none

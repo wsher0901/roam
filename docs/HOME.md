@@ -561,8 +561,8 @@ stub, draft PR, all verified on origin BEFORE any session exists.
 Then the canary handshake: the lane's first act is one trivial pushed
 commit (its memory Status → "claimed"); the cockpit answers by
 writing "airborne" into that same memory — or "spawn failed → run
-locally" into memory and the board's abort ledger if no canary
-arrives. A lane that sees failed/aborted, or silence past the
+locally" into memory and the lane's Sessions row (+ Needs-you mirror)
+if no canary arrives. A lane that sees failed/aborted, or silence past the
 timeout, self-terminates cleanly. Why this dance: the bench proves
 the world can see the task; the canary proves the lane can reach the
 world. A worker that cannot push is a zombie writing into the void —
