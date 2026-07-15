@@ -1,16 +1,17 @@
 ---
-type: memory
-id: delegation-architecture
-updated: 2026-07-15 · birth · work PC
+type: history
+slug: delegation-architecture
+shipped: 2026-07-15 14:39
+pr: 136
 ---
 # delegation-architecture — Delegation architecture
 
 ## Status
-complete, awaiting merge — the D-041 entry + full ripple are on origin
-in one commit ([PR #136](https://github.com/wsher0901/roam/pull/136)).
-Local CI mirror green; all verification greps pass; the PR is flipped
-ready and sits at THE GATE. Not merged: founder approval follows
-external review in the Web chat.
+Shipped — merged as
+[PR #136](https://github.com/wsher0901/roam/pull/136) on the founder's
+word. Every gate on the way out waited on the pushed commit's Actions
+run going green
+([D-038](../../../DECISIONS.md#d-038--2026-07--ci-is-the-arbiter--actions-green-required-at-every-gate-local-gate-mirrors-all-six-ci-steps-d-anchors-born-resolving-upholds-d-027)).
 
 ## What this task is
 THE delegation decide, reserved across the last five kickoffs. It
@@ -40,15 +41,11 @@ SETUP, HOME, DECISIONS — one commit. Out of scope: the maiden flight
   (fully-specified as a bar). Since D-041 makes fully-specified a sort
   key and the gate hard disqualifiers, that paragraph — the immediate
   neighbor of the new portrait — was realigned so HOME does not
-  self-contradict. Noted in the PR.
+  self-contradict.
 
 ## Left / idle
-Nothing before merge. On the founder's yes (after Web review): the
-atomic weld — no ROADMAP tick (workshop task), git mv this memory to
-history/workshop/mechanism/ (this defines new rituals/machinery — what
-the workshop does), spec frontmatter → shipped, ledger line,
-squash-merge. Then the two post-merge founder actions land as Needs-you
-at the ship-tail repaint (the one-time UI setup + the maiden flight).
+Nothing parked. Post-merge, the two founder actions above land as
+Needs-you at the ship-tail repaint.
 
 ## The story
 Born this session from the kickoff — the capstone of the day's
@@ -63,10 +60,14 @@ GitHub-label routine rather than /fire API bearer-token wiring
 (rejected: a token on two machines vs a label that is also
 phone-drivable). Park-on-block softens to idle-wait only where a phone
 can reach the lane, and D-032's recording guarantee is preserved
-(rejected: keeping park-on-block everywhere). Recorded as D-041.
+(rejected: keeping park-on-block everywhere). Recorded as
+[D-041](../../../DECISIONS.md#d-041--2026-07--delegation-architecture--the-away-mode-chooser-go-remote-tether-idle-wait-label-spawned-cloud-amends-d-032s-wake-lock-and-the-dispatch-law-upholds-the-baton-law-and-d-009).
 
 ## Where to look
-Spec: [delegation-architecture](../specs/delegation-architecture.md) ·
-the new skill: [go-remote](../skills/go-remote.md) · the decision:
-D-041 (this task's entry) · the amended law:
-[D-032](../DECISIONS.md#d-032--2026-07--fleet-continuity--handoff-parks-every-local-lane-liftoff-respawns-parked-benches-wake-lock-parks-every-outcome-extends-the-d-020d-023-lane-law-upholds-d-009).
+Spec:
+[delegation-architecture](../../../specs/delegation-architecture.md) ·
+the new skill: [go-remote](../../../skills/go-remote.md) · the
+decision:
+[D-041](../../../DECISIONS.md#d-041--2026-07--delegation-architecture--the-away-mode-chooser-go-remote-tether-idle-wait-label-spawned-cloud-amends-d-032s-wake-lock-and-the-dispatch-law-upholds-the-baton-law-and-d-009)
+· the amended law:
+[D-032](../../../DECISIONS.md#d-032--2026-07--fleet-continuity--handoff-parks-every-local-lane-liftoff-respawns-parked-benches-wake-lock-parks-every-outcome-extends-the-d-020d-023-lane-law-upholds-d-009).

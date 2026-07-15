@@ -2,10 +2,12 @@
 type: spec
 id: delegation-architecture
 title: Delegation architecture — the away-mode chooser + four pillars
-status: in-progress
+status: shipped
 stage: workshop
 branch: docs/delegation-architecture
+pr: 136
 opened: 2026-07-15
+shipped: 2026-07-15
 ---
 # delegation-architecture — Delegation architecture
 
