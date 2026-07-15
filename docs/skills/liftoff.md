@@ -30,8 +30,10 @@ First the HARD DISQUALIFIERS — any one keeps it on the ground:
 Then SORT what survives: fully-specified first, needs-input after
 (once flying they idle-wait for the founder's reply per the idle-wait
 law). The daily routine budget truncates from the bottom (Max plan:
-15 routine runs/day documented — verify the live number at
-claude.ai/code/routines); a truncated item → held with its reason.
+15 routine runs/day (confirmed; flat across Max tiers).
+GitHub-triggered spawns count against it; truncate the sorted tail
+at the remaining daily budget); a truncated item → held with its
+reason.
 A parked lane that passes: respawn on its SAME branch in cloud —
 adopt, no second birth (parallel-lanes §Respawn).
 

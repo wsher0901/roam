@@ -79,8 +79,12 @@ Sources:
   pushes" ON (lanes push feat/|fix/|docs/|chore/, never claude/);
   saved prompt as in the route ladder
   ([parallel-lanes §Cloud spawn](skills/parallel-lanes.md#cloud-spawn--route-ladder)).
-  Plan: Max 20x — Max budget documented at 15 routine runs/day; record
-  the LIVE number shown at claude.ai/code/routines here at creation.
+  Plan: Max 20x — routine cap is 15 runs/day (confirmed via Anthropic's
+  routines docs; the cap is flat across Max tiers — 20x buys
+  throughput, not routine slots). Per-account, not per-routine;
+  GitHub-triggered runs count, one-off manual runs do not; past 15,
+  runs are rejected until the daily reset unless usage credits are on.
+  Live counter: claude.ai/code/routines or claude.ai/settings/usage.
 - Supabase — arrives with V1.S1.T7 (see §Staged).
 
 Sources:
