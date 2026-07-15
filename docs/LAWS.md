@@ -47,7 +47,7 @@ founder.
 - One task = one branch = one PR.
 - NEVER merge without the founder's explicit approval. Ready = tests +
   linter green, PR flipped ready, plain-language summary (+ preview
-  link once previews exist) → ask. On approval: the atomic weld, then
+  link) → ask. On approval: the atomic weld, then
   squash-merge, delete branch, pull main. (ship does this.) Sole
   exception: the micro-PR — touches ONLY [DASHBOARD.md](DASHBOARD.md)
   and/or [IDEAS.md](IDEAS.md), written by a ritual (handoff · liftoff
@@ -64,10 +64,12 @@ founder.
   worktrees); liftoff dispatches CLOUD-ONLY through the eligibility
   gate — nothing is ever silently parked: ineligible or failed tasks
   are recorded in their own memory + [DASHBOARD](DASHBOARD.md).
-- When the founder states or confirms a roadmap-level change (add,
-  cut, reorder, pivot, pause), run decide unasked — entry + ripple in
-  the same commit. Task-local calls are not decisions; they go in the
-  task's memory file.
+- When the founder states or confirms a roadmap-level change — a
+  task added, subtracted, moved, or pivoted; a stage reordered or
+  paused — or any standing product/workshop convention change, run
+  decide unasked — entry + ripple in the same commit. Task-local
+  implementation calls are not decisions; they go in the task's
+  memory file.
 - Before saying "done": sync the branch with current main (merge,
   never rebase), then run the full CI mirror (lint · format · links ·
   tests · build) and fix failures; "done" also requires the pushed
@@ -128,11 +130,11 @@ The LANE LAW (seat-blind — identical local or cloud): every lane
    no merges: "done" must keep meaning founder-approved and merged.
 Seat-invariance law: a task's artifacts must be indistinguishable by
 seat; only ritual stamps name seats.
-- Park protocol: handoff FULL parks every live local lane —
-  rescue-save (wip commit + push) only if the tree holds unsaved
-  work, then ONE stamped Status line in the lane's memory. That
-  step is the only moment the cockpit may touch a lane's tree or
-  diary mid-flight; liftoff is the only road from parked to cloud.
+- Park protocol: handoff FULL parks every live local lane — the park
+  (a rescue-save if needed, then ONE stamped Status line) is the only
+  moment the cockpit may touch a lane's tree or diary mid-flight;
+  liftoff is the only road from parked to cloud. Mechanics:
+  [handoff §1.5](skills/handoff.md#15--park-the-local-lanes-full-only).
 Baton law: exactly one cockpit — the session the founder is driving;
 the baton is the right to be that one driving session.
 Claimed by pickup on fresh origin; released by FULL handoff or
