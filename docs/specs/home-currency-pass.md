@@ -55,21 +55,21 @@ merge; founder approval follows external review in the Web chat.
 
 ## Done means
 
-- [ ] Two-touchpoints item 2 reworded to the inline paste (item 1
+- [x] Two-touchpoints item 2 reworded to the inline paste (item 1
       untouched).
-- [ ] Skills paragraph: "never types a slash" replaced with the
+- [x] Skills paragraph: "never types a slash" replaced with the
       direct-invocation-carries-something wording (D-040 linked).
-- [ ] FULL/QUIET Terms entry: "ask" → "read the inline paste".
-- [ ] decide portrait trigger widened to match the current stub.
-- [ ] Five new Terms entries present with Home links (THE GATE ·
+- [x] FULL/QUIET Terms entry: "ask" → "read the inline paste".
+- [x] decide portrait trigger widened to match the current stub.
+- [x] Five new Terms entries present with Home links (THE GATE ·
       park protocol/rescue-save · close-lock · wake-lock ·
       respawn/adopt).
-- [ ] The read-path paragraph added, linking recall + D-039.
-- [ ] Greps: "never types a slash" → 0; "handoff's one question" → 0;
-      "secure, ask," → 0; the five new terms count ≥ 5.
-- [ ] check:links green + the full CI mirror (lint · format:check ·
-      check:links · tests · build) and the pushed commit's Actions
-      run green.
+- [x] The read-path paragraph added, linking recall + D-039.
+- [x] Greps: "never types a slash" → 0; "handoff's one question" → 0;
+      "secure, ask," → 0; the five new terms count 11 (≥ 5).
+- [x] check:links green (1544 links, 0 broken) + the local CI mirror
+      (lint · format:check · check:links · tests · build) green.
+      Pending: the pushed commit's Actions run green.
 
 ## Open questions
 

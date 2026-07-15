@@ -6,8 +6,11 @@ updated: 2026-07-15 · birth · work PC
 # home-currency-pass — HOME currency pass
 
 ## Status
-bench ready — branch, spec, and this stub laid on origin; draft PR
-opening. Next: the ten HOME edits in one commit.
+complete, awaiting merge — the ten HOME edits are on origin in one
+commit ([PR #130](https://github.com/wsher0901/roam/pull/130)). Local
+CI mirror green; all verification greps pass; the PR is flipped ready
+and sits at THE GATE. Not merged: founder approval follows external
+review in the Web chat.
 
 ## What this task is
 Bring HOME (the project's bible, the most human-readable surface)
@@ -23,8 +26,10 @@ Out of scope: LAWS, skills files, the delegation portrait/tree
 none.
 
 ## Left / idle
-Everything after the bench: the ten edits, the verification greps, the
-CI mirror, ship to the gate.
+Nothing before merge. On the founder's yes (after Web review): the
+atomic weld — no ROADMAP tick (workshop task), git mv this memory to
+history/workshop/definition/ (a knowledge-layer edit — what the
+workshop IS), spec frontmatter → shipped, ledger line, squash-merge.
 
 ## The story
 Born this session from the kickoff, after
