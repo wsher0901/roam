@@ -29,8 +29,8 @@ current version: [ROADMAP.md](ROADMAP.md). Progress:
 The founder's only ritual touchpoints:
 1. Final merge approval — the only merge gate.
 2. The leaving ritual — "done for today" (handoff) or "take it to
-   the cloud" (liftoff), plus pasting Web/Design context when asked.
-   Both END the session.
+   the cloud" (liftoff), with the Web/Design context carried inline
+   in the leaving message — no question asked. Both END the session.
 Everything else — recording, bookkeeping, claims, dispatch — runs
 itself. Genuine uncertainty and judgment calls still come to the
 founder.

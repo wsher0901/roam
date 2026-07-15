@@ -75,8 +75,8 @@ Concluded: <each item + status: recorded D-0XX | merged PR #N |
   block pending — NOT pasted>
 Open: <pending / paused / issues, one line each>
 → next: <single next step + which surface>
-This feeds Code's never-skipped question at my next handoff — keep
-it copy-ready.
+This is the paste I put before /handoff in my leaving message to
+Code — keep it copy-ready.
 
 ## "brief"
 On the word "brief": fetch live first (board + git), then render:
