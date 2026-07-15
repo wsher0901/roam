@@ -6,7 +6,7 @@ status: living
 
 # Dashboard — the state surface
 
-Stamp: 2026-07-15 · 09:28 · ship · work PC
+Stamp: 2026-07-15 · 10:28 · ship · work PC
 V1 5/34 · S1 2/7 · S2 3/5 · sessions: 0 main · 0 parallel ·
 needs-you 4
 How to read this board →
@@ -36,13 +36,15 @@ How to read this board →
 
 ## Sessions
 
-0 main · 0 parallel — operations idle. This sitting shipped
-handoff-inline-context
+0 main · 0 parallel — operations idle. This sitting shipped two
+workshop tasks in order: handoff-inline-context
 ([#126](https://github.com/wsher0901/roam/pull/126)) — handoff's input
 inversion
-([D-040](DECISIONS.md#d-040--2026-07--handoff-input-inversion--the-leaving-message-carries-the-webdesign-paste-inline-the-never-skipped-question-is-retired-a-bare-trigger-means-none-amends-the-two-touchpoints-laws-wording-upholds-d-032)):
-the leaving message now carries the Web/Design paste inline; the
-never-skipped question is retired. No task is running.
+([D-040](DECISIONS.md#d-040--2026-07--handoff-input-inversion--the-leaving-message-carries-the-webdesign-paste-inline-the-never-skipped-question-is-retired-a-bare-trigger-means-none-amends-the-two-touchpoints-laws-wording-upholds-d-032)) —
+then skills-precision-pass
+([#128](https://github.com/wsher0901/roam/pull/128)), which codified
+already-decided behavior across the skill corpus and fully retired the
+abort-ledger ghost. No task is running.
 
 ↳ main micro: — (no live main session)
 
@@ -78,14 +80,15 @@ flowchart LR
 ```
 
 No open Web or Design threads — none surfaced this sitting.
-handoff-inline-context shipped
-([#126](https://github.com/wsher0901/roam/pull/126)); T3–T6
+skills-precision-pass shipped
+([#128](https://github.com/wsher0901/roam/pull/128)); T3–T6
 source-vetting relaunch stays held (see You are here).
 
 ## Shipped (latest — full record: [the ledger](history/README.md#the-ledger))
 
 | When | What | PR |
 |---|---|---|
+| 07-15 10:24 | [Skills precision pass: codify already-decided behavior across the corpus (decide · handoff · liftoff · parallel-lanes · recall); the abort-ledger ghost fully retired](history/workshop/mechanism/skills-precision-pass.md) | [#128](https://github.com/wsher0901/roam/pull/128) |
 | 07-15 09:23 | [Handoff input inversion: the leaving message carries the Web/Design paste inline; the never-skipped question is retired; a bare trigger means none](history/workshop/mechanism/handoff-inline-context.md) | [#126](https://github.com/wsher0901/roam/pull/126) |
 | 07-14 14:50 | [Recall — the routing table's read mirror: founder questions answered from the files with receipts, never from memory; fires on its own judgment](history/workshop/mechanism/recall-skill.md) | [#123](https://github.com/wsher0901/roam/pull/123) |
 | 07-14 11:46 | [Leg-end restyle sweep: D-029 finishes its migration — every living doc carries its links below the prose](history/workshop/definition/restyle-sweep.md) | [#121](https://github.com/wsher0901/roam/pull/121) |
@@ -95,4 +98,3 @@ source-vetting relaunch stays held (see You are here).
 | 07-13 23:14 | [HOME closes the leg's knowledge layer: the routing table, one day in the workshop, the board paragraph recut, a stable Sessions anchor](history/workshop/definition/home-knowledge.md) | [#113](https://github.com/wsher0901/roam/pull/113) |
 | 07-13 22:58 | [State surfaces v2: the board learns the founder's names; pickup becomes the sit-down summary; welds stamp time and write the ledger](history/workshop/mechanism/state-surfaces-v2.md) | [#110](https://github.com/wsher0901/roam/pull/110) |
 | 2026-07-13 | [History quadrants: four doors; TEMPLATE owns the format + Status vocabulary](history/workshop/definition/history-quadrants.md) | [#108](https://github.com/wsher0901/roam/pull/108) |
-| 2026-07-13 | [TELEMETRY folds into FACTS: Appendix C; file retired](history/workshop/definition/telemetry-fold.md) | [#106](https://github.com/wsher0901/roam/pull/106) |
