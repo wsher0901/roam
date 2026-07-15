@@ -23,6 +23,12 @@ pickup, the stubs, and immutable history/.
   its footer changes. The existing Needs-you item (re-paste the box)
   already covers this; the ship-tail repaint should refresh that
   line's wording. Flag it in the PR summary.
+- The Done-means grep `"never-skipped"` clean outside `docs/history/`
+  is not literally zero: the D-040 entry (founder-supplied text),
+  this memory, and the spec name the retired concept. The four live
+  ripple surfaces — handoff.md · LAWS · HOME · WEB-INSTRUCTIONS — ARE
+  clean, which is the grep's real intent. Kept the phrase where it
+  records the retirement; see the spec's Deviations.
 
 ## Left / idle
 Everything after the bench: the decide commit, verification greps,

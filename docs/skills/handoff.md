@@ -34,11 +34,13 @@ QUIET never parks — mid-sitting lanes keep flying.
 Sources:
 [park protocol — LAWS §Parallel lanes & cloud](../LAWS.md#parallel-lanes--cloud)
 
-## 2 · The never-skipped question (FULL only)
-Ask: "Any open Web or Design threads, or blocks produced but not
-pasted? (VERBATIM chat title · one line · next step)" — accept
-"none". The title must match the real chat so the founder can
-search it later.
+## 2 · The inline Web/Design paste (FULL only)
+The message that triggered FULL handoff is the answer — never ask a
+question, take zero founder input after invocation. Any text
+preceding the trigger (a leaving phrase or `/handoff`) is the
+founder's Web/Design paste, taken verbatim (chat titles · one line ·
+next step, as written). If the message contains nothing but the
+trigger, record "none".
 
 ## 3 · Rewrite the memories (FULL only)
 For each active task NOT owned by a lane (a lane just parked in

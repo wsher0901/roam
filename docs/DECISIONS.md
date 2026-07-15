@@ -1035,3 +1035,30 @@ moment, not on-demand); a search index (the routing table IS the
 index); explicit-keyword triggering (founder wants discretion).
 **Affects:** [the new skill](skills/recall.md) + stub ·
 [HOME](HOME.md#equipment--environment) · this entry.
+
+## D-040 — 2026-07 — Handoff input inversion — the leaving message carries the Web/Design paste inline; the never-skipped question is retired; a bare trigger means none (amends the two-touchpoints law's wording; upholds D-032)
+**Decision:** a FULL handoff never prompts the founder after it is
+invoked — the message that triggered it IS the input. Any text
+preceding the trigger (a leaving phrase or `/handoff`) is the
+founder's Web/Design paste, taken verbatim (chat titles · one line ·
+next step, as written); a bare trigger with nothing before it records
+"none". The never-skipped question is retired; zero founder input
+after invocation.
+**Why:** the question was the last manual prompt in the leaving loop,
+and it was a redundant round-trip — the founder is already typing a
+leaving message, so that message can carry the paste and the ritual
+reads it instead of asking back. Fewer touchpoints, same knowledge
+carried; the founder still holds the only channel Claude Web and
+Claude Design cannot write.
+**Alternatives rejected:** keeping the question (an avoidable
+round-trip the founder already has the context to skip); a separate
+paste command (a second ritual for what the leaving message already
+carries); auto-detecting the paste's shape (brittle — verbatim text
+before the trigger is unambiguous).
+**Affects:**
+[handoff §2](skills/handoff.md#2--the-inline-webdesign-paste-full-only)
+· [LAWS §The two touchpoints](LAWS.md#the-two-touchpoints) ·
+[HOME](HOME.md) (manual entry · retention row · handoff walkthrough) ·
+[WEB-INSTRUCTIONS](WEB-INSTRUCTIONS.md) ·
+[D-032](#d-032--2026-07--fleet-continuity--handoff-parks-every-local-lane-liftoff-respawns-parked-benches-wake-lock-parks-every-outcome-extends-the-d-020d-023-lane-law-upholds-d-009)
+· this entry.

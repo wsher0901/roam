@@ -59,15 +59,33 @@ in the leaving loop — is retired. Zero founder input after invocation.
 
 ## Done means
 
-- [ ] handoff step 2 rewritten to the inline-paste behavior.
-- [ ] LAWS §The two touchpoints clause edited.
-- [ ] HOME 3 spots + the step-2 anchor updated.
-- [ ] WEB-INSTRUCTIONS footer edited.
-- [ ] `grep "never-skipped"` clean outside `docs/history/`.
-- [ ] `grep "when asked" docs/LAWS.md` → zero hits.
-- [ ] check:links green (proves the HOME anchor repoint) + the full
-      CI mirror (lint · format:check · check:links · tests · build)
-      and the pushed commit's Actions run green.
+- [x] handoff step 2 rewritten to the inline-paste behavior.
+- [x] LAWS §The two touchpoints clause edited.
+- [x] HOME 3 spots + the step-2 anchor updated.
+- [x] WEB-INSTRUCTIONS footer edited.
+- [x] `grep "never-skipped"` clean across the four live ripple
+      surfaces (handoff · LAWS · HOME · WEB-INSTRUCTIONS); the D-040
+      record + task artifacts name the retired concept — see
+      Deviations.
+- [x] `grep "when asked" docs/LAWS.md` → zero hits.
+- [x] check:links green (1488 links, 0 broken — proves the HOME
+      anchor repoint) + the local CI mirror (lint · format:check ·
+      check:links · tests · build) green. Pending: the pushed commit's
+      Actions run green.
+
+## Deviations
+
+- **The "never-skipped" grep is not literally zero outside
+  `docs/history/`.** The kickoff supplied the D-040 entry text
+  verbatim — "the never-skipped question is retired" — so
+  DECISIONS.md must contain the phrase to name what it retires; this
+  spec and the memory narrate the same retirement. The grep's intent
+  — that the *live surfaces* (handoff.md · LAWS · HOME ·
+  WEB-INSTRUCTIONS) stop describing a question that no longer exists —
+  is fully met: those four files carry zero hits. The surviving hits
+  are the decision record + task artifacts naming the retired concept,
+  which is correct and unavoidable given the founder-supplied entry
+  text.
 
 ## Open questions
 

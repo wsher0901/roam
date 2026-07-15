@@ -401,15 +401,16 @@ whole?
   REWRITTEN for a cold reader — not appended to. Rewriting forces
   re-reading; a memory that is only ever appended to becomes a log,
   and logs rot.
-- **The never-skipped question** ([handoff step
-  2](skills/handoff.md#2--the-never-skipped-question-full-only)):
-  "any open Web or Design threads, or blocks produced but not
-  pasted?" This is the ONE manual link in the entire loop, and it
-  cannot be automated: Claude Web and Claude Design cannot write
-  the repo, and no session can see the founder's other browser
-  tabs. Only the founder carries that knowledge across; the
-  question exists so carrying it is a ritual answer, not a memory
-  burden.
+- **The inline Web/Design paste** ([handoff step
+  2](skills/handoff.md#2--the-inline-webdesign-paste-full-only)):
+  the founder's leaving message carries it — any text before the
+  trigger (a leaving phrase or `/handoff`) is the paste, taken
+  verbatim; a bare trigger means none. This is the ONE manual carry
+  in the entire loop, and it cannot be automated: Claude Web and
+  Claude Design cannot write the repo, and no session can see the
+  founder's other browser tabs. Only the founder carries that
+  knowledge across — so the leaving message carries it inline, no
+  question asked.
 - **Ship's weld** (above): the moment a task's story stops being
   in-flight and becomes permanent history — in the same commit as
   the work it narrates.
@@ -431,7 +432,7 @@ whole?
 | A machine dies mid-work | every pushed commit — and pushing every commit is law; the bench artifacts (branch, spec, memory, draft PR) live on origin from birth | at most the working tree's unpushed edits |
 | A session ends uncleanly on a lane branch | the session-end hook auto-commits and pushes WIP as an explicit `wip:` commit | nothing, if the network held; otherwise the commit waits locally for the next push |
 | A lane dies or a spawn fails | the pre-birthed bench; every pushed commit; the failure itself, written into the lane's memory and the board's Cloud ledger — nothing is silently parked ([dispatch law](LAWS.md#workflow-non-negotiable)) | only the lane's unpushed thoughts |
-| A ritual is skipped | all git state, and therefore all status — status is read, not stored; the next [pickup](skills/pickup.md) reconciles and repaints | the day's Web/Design narrative, if FULL handoff (and its never-skipped question) never ran — that knowledge has no other carrier |
+| A ritual is skipped | all git state, and therefore all status — status is read, not stored; the next [pickup](skills/pickup.md) reconciles and repaints | the day's Web/Design narrative, if FULL handoff (which reads the paste from the leaving message) never ran — that knowledge has no other carrier |
 | Weeks away | everything: the board renders where things stand, memories hold each story, pickup rebuilds the briefing from sources | nothing — at worst the board is stale until pickup heals it |
 
 **Origin is the only courier.** Nothing passes between the work PC,
@@ -464,11 +465,11 @@ Sources:
 
 **handoff** — the leaving ritual; fires on leaving phrases ("done for
 today", "bye"), explicit call, or as ship's QUIET tail. FULL mode
-secures all work onto origin, asks the never-skipped Web/Design
-question, rewrites every active non-lane memory for a cold reader,
-repaints the board, and ships the note as a micro-PR — then closes
-the session. QUIET (ship's tail) only repaints and recommends what's
-next; it never closes the session.
+secures all work onto origin, reads the Web/Design paste from the
+leaving message, rewrites every active non-lane memory for a cold
+reader, repaints the board, and ships the note as a micro-PR — then
+closes the session. QUIET (ship's tail) only repaints and recommends
+what's next; it never closes the session.
 
 Sources:
 [handoff](skills/handoff.md)
