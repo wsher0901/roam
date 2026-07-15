@@ -6,7 +6,7 @@ status: living
 
 # Dashboard — the state surface
 
-Stamp: 2026-07-14 · 18:02 · handoff · work PC
+Stamp: 2026-07-15 · 09:28 · ship · work PC
 V1 5/34 · S1 2/7 · S2 3/5 · sessions: 0 main · 0 parallel ·
 needs-you 4
 How to read this board →
@@ -14,8 +14,10 @@ How to read this board →
 
 ## Needs you
 
-1. 🟡 Paste the approved v4 text into the claude.ai → Roam Project →
-   settings box (since 07-11).
+1. 🟡 Paste the current WEB-INSTRUCTIONS text into the claude.ai →
+   Roam Project → settings box — stale twice over now: the approved
+   v4 body (since 07-11) and the D-040 footer edit (the handoff paste
+   goes inline).
    → master: [WEB-INSTRUCTIONS](WEB-INSTRUCTIONS.md) · the box is a
    copy · [history](history/workshop/definition/web-instructions.md)
 2. 🟡 Run the machine-setup Verify block on this home PC — the work
@@ -34,12 +36,13 @@ How to read this board →
 
 ## Sessions
 
-0 main · 0 parallel — operations halted for the day (handoff). This
-sitting shipped recall-skill
-([#123](https://github.com/wsher0901/roam/pull/123)) — the read-only
-recall skill
-([D-039](DECISIONS.md#d-039--2026-07--recall--questions-answered-from-files-never-from-memory-the-d-036-routing-tables-read-mirror-model-invoked-at-discretion)).
-No session is running.
+0 main · 0 parallel — operations idle. This sitting shipped
+handoff-inline-context
+([#126](https://github.com/wsher0901/roam/pull/126)) — handoff's input
+inversion
+([D-040](DECISIONS.md#d-040--2026-07--handoff-input-inversion--the-leaving-message-carries-the-webdesign-paste-inline-the-never-skipped-question-is-retired-a-bare-trigger-means-none-amends-the-two-touchpoints-laws-wording-upholds-d-032)):
+the leaving message now carries the Web/Design paste inline; the
+never-skipped question is retired. No task is running.
 
 ↳ main micro: — (no live main session)
 
@@ -74,15 +77,16 @@ flowchart LR
   class S4,S5,S6,S7,S8 pending
 ```
 
-No open Web or Design threads — founder confirmed none at the
-2026-07-14 · 18:02 handoff. The ops leg closed with recall-skill
-([#123](https://github.com/wsher0901/roam/pull/123)); T3–T6
+No open Web or Design threads — none surfaced this sitting.
+handoff-inline-context shipped
+([#126](https://github.com/wsher0901/roam/pull/126)); T3–T6
 source-vetting relaunch stays held (see You are here).
 
 ## Shipped (latest — full record: [the ledger](history/README.md#the-ledger))
 
 | When | What | PR |
 |---|---|---|
+| 07-15 09:23 | [Handoff input inversion: the leaving message carries the Web/Design paste inline; the never-skipped question is retired; a bare trigger means none](history/workshop/mechanism/handoff-inline-context.md) | [#126](https://github.com/wsher0901/roam/pull/126) |
 | 07-14 14:50 | [Recall — the routing table's read mirror: founder questions answered from the files with receipts, never from memory; fires on its own judgment](history/workshop/mechanism/recall-skill.md) | [#123](https://github.com/wsher0901/roam/pull/123) |
 | 07-14 11:46 | [Leg-end restyle sweep: D-029 finishes its migration — every living doc carries its links below the prose](history/workshop/definition/restyle-sweep.md) | [#121](https://github.com/wsher0901/roam/pull/121) |
 | 07-14 10:55 | [Repo auto-merge enabled so the self-merge law works — the repo's first armed --auto, fired on green](history/workshop/mechanism/auto-merge-flip.md) | [#119](https://github.com/wsher0901/roam/pull/119) |
@@ -92,4 +96,3 @@ source-vetting relaunch stays held (see You are here).
 | 07-13 22:58 | [State surfaces v2: the board learns the founder's names; pickup becomes the sit-down summary; welds stamp time and write the ledger](history/workshop/mechanism/state-surfaces-v2.md) | [#110](https://github.com/wsher0901/roam/pull/110) |
 | 2026-07-13 | [History quadrants: four doors; TEMPLATE owns the format + Status vocabulary](history/workshop/definition/history-quadrants.md) | [#108](https://github.com/wsher0901/roam/pull/108) |
 | 2026-07-13 | [TELEMETRY folds into FACTS: Appendix C; file retired](history/workshop/definition/telemetry-fold.md) | [#106](https://github.com/wsher0901/roam/pull/106) |
-| 2026-07-13 | [Fleet continuity: handoff parks every local lane; liftoff respawns parked benches; wake-lock parks every outcome](history/workshop/mechanism/fleet-continuity.md) | [#104](https://github.com/wsher0901/roam/pull/104) |
