@@ -2,10 +2,12 @@
 type: spec
 id: laws-tightness
 title: LAWS tightness — Option C: command + whys, expel procedure grain
-status: in-progress
+status: shipped
 stage: workshop
 branch: docs/laws-tightness
+pr: 134
 opened: 2026-07-15
+shipped: 2026-07-15
 ---
 # laws-tightness — LAWS tightness (Option C)
 
