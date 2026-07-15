@@ -46,7 +46,7 @@ Four surgical edits, one commit (after this bench):
 3. [LAWS](../LAWS.md) §Workflow, merge bullet — "(+ preview link once
    previews exist)" → "(+ preview link)".
 4. [ship §5](../skills/ship.md) — same retirement of the stale
-   "once previews exist" conditional (retroactivity rider).
+   preview-link conditional (retroactivity rider).
 
 Then verify (below) · [ship](../skills/ship.md) to THE GATE — no
 merge; founder approval follows external review in the Web chat.
@@ -59,8 +59,8 @@ merge; founder approval follows external review in the Web chat.
 - [ ] LAWS merge bullet: "(+ preview link)".
 - [ ] ship §5: "preview link" (no conditional).
 - [ ] Greps: "wip commit" in LAWS → 0; "add, cut, reorder" in LAWS →
-      0; "once previews exist" across docs (bar history/) → 0;
-      "convention change" in LAWS → present.
+      0; the stale preview conditional retired repo-wide (bar
+      history/); "convention change" in LAWS → present.
 - [ ] check:links green (proves the handoff §1.5 anchor) + the full
       CI mirror (lint · format:check · check:links · tests · build)
       and the pushed commit's Actions run green.

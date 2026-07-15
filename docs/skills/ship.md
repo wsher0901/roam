@@ -35,7 +35,7 @@ merge", the full story, dead ends, where-to-look final.
 ## 5 · Flip the PR
 Draft → ready (it has existed since birth). Refresh the summary in
 plain language; add a Deviations section for anything done
-differently than the spec; preview link once previews exist.
+differently than the spec; preview link.
 
 ## 6 · THE GATE
 Summarize in plain language and ask. NEVER merge without the

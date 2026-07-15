@@ -40,8 +40,8 @@ handoff §1.5. Option C keeps LAWS at command + one-line why (upholding
 moves the grain out, and links the mechanics home. Two smaller fixes
 ride along: the decide trigger in LAWS still read "(add, cut, reorder,
 pivot, pause)" where the stub and HOME now say roadmap-level +
-standing-convention; and the "once previews exist" conditional was
-stale in both the LAWS merge bullet and ship §5.
+standing-convention; and the stale preview-link conditional lingered
+in both the LAWS merge bullet and ship §5.
 
 ## Where to look
 Spec: [laws-tightness](../specs/laws-tightness.md) · the targets:
