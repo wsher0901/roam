@@ -106,9 +106,9 @@ ONLY ritual duties:
 
 1. **Final merge approval** — every merge waits for your explicit
    yes; the sole exception is the micro-PR.
-2. **The leaving ritual** — the leaving phrase itself, plus
-   answering handoff's one question about open Web/Design threads
-   (and pasting Web/Design blocks when asked during the day).
+2. **The leaving ritual** — the leaving phrase or `/handoff`, with
+   the Web/Design paste carried inline before it — no question asked
+   (and pasting Web/Design blocks into Code during the day).
 
 Sources:
 [LAWS §The two touchpoints](LAWS.md#the-two-touchpoints)
@@ -443,6 +443,18 @@ which is why any seat can die, be reinstalled, or go offline
 without the project losing a sentence. If it isn't on origin, it
 doesn't exist.
 
+**Reading it back — recall.** Everything above is the write path;
+recall is the read path. It fires on its own judgment for any question
+about the past, ongoing, or future state of the project, routes the
+question through the routing table (the read mirror of
+[§Where information goes](#where-information-goes)), and answers FROM
+the files with a Sources block — never from conversational memory. Its
+honesty rails: "not recorded" beats reconstruction, and because chats
+are disposable, anything that never left a conversation is truthfully
+not recorded — that fix belongs to [handoff](skills/handoff.md)'s
+harvest, not to recall. Home: [recall](skills/recall.md) ·
+[D-039](DECISIONS.md#d-039--2026-07--recall--questions-answered-from-files-never-from-memory-the-d-036-routing-tables-read-mirror-model-invoked-at-discretion).
+
 ### The five rituals
 
 Rituals are the workshop's verbs — the only writers of shared
@@ -486,9 +498,10 @@ Sources:
 [ship](skills/ship.md)
 [atomic weld](#task-anatomy--lifecycle)
 
-**decide** — fires unasked whenever the founder states or confirms a
-roadmap-level change (add, cut, reorder, pivot, pause — task-local
-calls stay in the task's memory instead). It appends the next
+**decide** — fires unasked on a roadmap-level change — a task added,
+subtracted, moved, or pivoted; a stage reordered or paused — or any
+standing product/workshop convention change; task-local implementation
+calls stay in the task's memory instead. It appends the next
 D-number to DECISIONS in the locked format and applies the ripple —
 every file the decision touches — in the SAME commit, so the log and
 reality never diverge. A decision is never a micro-PR; standalone
@@ -695,8 +708,11 @@ reads to know WHEN to fire — leaving phrases summon handoff,
 take-it-to-the-cloud phrasing summons liftoff, task completion
 summons ship, a roadmap-level statement summons decide, and the
 session-start hook directs cockpit sessions to render pickup
-unprompted. Rituals fire on moments, not on remembered commands — the
-founder never types a slash.
+unprompted. Rituals fire on moments, not remembered commands — though
+the founder may invoke one directly when the invocation carries
+something: `/handoff` at the end of a leaving message is the inline
+paste's carrier
+([D-040](DECISIONS.md#d-040--2026-07--handoff-input-inversion--the-leaving-message-carries-the-webdesign-paste-inline-the-never-skipped-question-is-retired-a-bare-trigger-means-none-amends-the-two-touchpoints-laws-wording-upholds-d-032)).
 
 Sources:
 [handoff](skills/handoff.md)
@@ -854,7 +870,8 @@ the link for the full story.
   [liftoff](skills/liftoff.md) (hand the workshop to the cloud).
   Explained: [§The five rituals](#the-five-rituals).
 - **FULL / QUIET (handoff modes)** — FULL is the real leaving
-  ritual (secure, ask, rewrite, repaint, close); QUIET is
+  ritual (secure, read the inline paste, rewrite, repaint, close);
+  QUIET is
   [ship](skills/ship.md)'s tail — repaint and recommend only, the
   session stays open. Home: [handoff](skills/handoff.md).
 - **cockpit** — the one session the founder is actively driving;
@@ -865,6 +882,11 @@ the link for the full story.
   [pickup](skills/pickup.md) on fresh origin, released by FULL
   [handoff](skills/handoff.md) or [liftoff](skills/liftoff.md),
   dormant between sittings. Home: [§The baton](#the-baton).
+- **close-lock** — the physical end of a session: FULL
+  [handoff](skills/handoff.md) and [liftoff](skills/liftoff.md) write
+  `.claude/session-closed` as their last act; from that moment the
+  prompt hook rejects every further input. Home:
+  [§The baton](#the-baton).
 - **seat** — where a session physically runs: work PC, home PC, or
   a cloud lane. Ritual stamps name seats; nothing else does.
   Home: [machine-setup](skills/machine-setup.md).
@@ -897,6 +919,24 @@ the link for the full story.
   the cockpit in the lane's memory before real work starts. Home:
   [parallel-lanes §Canary
   handshake](skills/parallel-lanes.md#canary-handshake-both-sides).
+- **park protocol / rescue-save** — how FULL
+  [handoff](skills/handoff.md) stands a local lane down: rescue-save
+  (a `wip:` commit + push) ONLY if the tree holds unsaved work, then
+  one stamped Status line in the lane's memory — the only moment the
+  cockpit may touch a lane mid-flight. Home:
+  [LAWS §Parallel lanes & cloud](LAWS.md#parallel-lanes--cloud) ·
+  [handoff §1.5](skills/handoff.md#15--park-the-local-lanes-full-only).
+- **wake-lock** — a lane's first act on ANY wake or resume: re-read
+  its own memory Status; a Status it does not own (parked · respawned
+  · superseded · failed) means push nothing and terminate
+  ([D-032](DECISIONS.md#d-032--2026-07--fleet-continuity--handoff-parks-every-local-lane-liftoff-respawns-parked-benches-wake-lock-parks-every-outcome-extends-the-d-020d-023-lane-law-upholds-d-009)).
+  Home: [parallel-lanes §Wake-lock &
+  parking](skills/parallel-lanes.md#wake-lock--parking).
+- **respawn / adopt** — [liftoff](skills/liftoff.md) re-flying a
+  parked lane on its EXISTING bench: no second birth; the worker
+  canaries on the same branch and the cockpit's ack overwrites the
+  parked Status. Home: [parallel-lanes
+  §Respawn](skills/parallel-lanes.md#respawn-on-an-existing-bench-liftoff-adopt).
 - **dispatch law** — mid-session lanes default LOCAL; cloud
   dispatch happens only through [liftoff](skills/liftoff.md)'s
   eligibility gate; nothing is ever silently parked — every held
@@ -920,6 +960,11 @@ the link for the full story.
   work, so state and work land or die together. Home:
   [§Task anatomy](#task-anatomy--lifecycle) ·
   [ship](skills/ship.md#7--on-approval--the-atomic-weld).
+- **THE GATE** — [ship](skills/ship.md)'s stop point: a
+  plain-language summary, then the wait for the founder's explicit
+  yes — never inferred; Actions must be green before the gate may
+  even be announced. Home: [ship §6](skills/ship.md#6--the-gate) ·
+  [§Task anatomy](#task-anatomy--lifecycle).
 - **micro-PR** — the one self-merging PR class: written by a
   ritual, touching ONLY [DASHBOARD.md](DASHBOARD.md) and/or
   [IDEAS.md](IDEAS.md)

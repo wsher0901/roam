@@ -27,6 +27,7 @@ Every weld prepends one line — the full chronology across all four
 doors, newest first. Frozen stories carry date only; entries from
 D-035 on carry time.
 
+- 2026-07-15 11:18 · home-currency-pass — HOME currency pass: bring the bible current with D-040/D-032/D-039/#128 and close six newcomer-test gaps (four rewordings · five new Terms · the recall read-path paragraph) → workshop/definition · #130
 - 2026-07-15 10:24 · skills-precision-pass — Skills precision pass: codify already-decided behavior across the corpus (decide · handoff · liftoff · parallel-lanes · recall); the abort-ledger ghost fully retired → workshop/mechanism · #128
 - 2026-07-15 09:23 · handoff-inline-context — Handoff input inversion: the leaving message carries the Web/Design paste inline; the never-skipped question is retired; a bare trigger means none → workshop/mechanism · #126
 - 2026-07-14 14:50 · recall-skill — Recall, the routing table's read mirror: founder questions answered from the files with receipts, never from memory; fires on its own judgment → workshop/mechanism · #123
