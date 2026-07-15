@@ -53,18 +53,20 @@ merge; founder approval follows external review in the Web chat.
 
 ## Done means
 
-- [ ] HOME retention row repointed to the Sessions row (+ Needs-you
+- [x] HOME retention row repointed to the Sessions row (+ Needs-you
       mirror).
-- [ ] handoff Sessions parenthetical says "blocked", not "waiting".
-- [ ] recall Why/provenance row names FOUNDATION for identity.
-- [ ] recall Term/mechanism row names DESIGN-KICKOFF for
+- [x] handoff Sessions parenthetical says "blocked", not "waiting".
+- [x] recall Why/provenance row names FOUNDATION for identity.
+- [x] recall Term/mechanism row names DESIGN-KICKOFF for
       design-session governance.
-- [ ] Greps: "Cloud ledger" clean on live surfaces; "waiting" gone
-      from the Sessions parenthetical; "FOUNDATION for identity" and
-      "DESIGN-KICKOFF" both present in recall.
-- [ ] check:links green + the full CI mirror (lint · format:check ·
-      check:links · tests · build) and the pushed commit's Actions
-      run green.
+- [x] Greps: "Cloud ledger" clean on live surfaces (only this task's
+      spec + memory and the skills-precision-pass spec — the
+      retirement narratives); "waiting" gone from handoff entirely;
+      "FOUNDATION for identity" and "DESIGN-KICKOFF" both present in
+      recall.
+- [x] check:links green (1559 links, 0 broken) + the local CI mirror
+      (lint · format:check · check:links · tests · build) green.
+      Pending: the pushed commit's Actions run green.
 
 ## Open questions
 

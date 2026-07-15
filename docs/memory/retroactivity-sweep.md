@@ -6,8 +6,11 @@ updated: 2026-07-15 · birth · work PC
 # retroactivity-sweep — Retroactivity sweep
 
 ## Status
-bench ready — branch, spec, and this stub laid on origin; draft PR
-opening. Next: the three surgical edits in one commit.
+complete, awaiting merge — the three surgical edits are on origin in
+one commit ([PR #132](https://github.com/wsher0901/roam/pull/132)).
+Local CI mirror green; all verification greps pass; the PR is flipped
+ready and sits at THE GATE. Not merged: founder approval follows
+external review in the Web chat.
 
 ## What this task is
 Repair three later-found gaps the moment they surfaced (the
@@ -24,8 +27,10 @@ Out of scope: everything else — no LAWS, no restructuring.
 none.
 
 ## Left / idle
-Everything after the bench: the three edits, the verification greps,
-the CI mirror, ship to the gate.
+Nothing before merge. On the founder's yes (after Web review): the
+atomic weld — no ROADMAP tick (workshop task), git mv this memory to
+history/workshop/definition/ (a currency/knowledge repair — what the
+workshop IS), spec frontmatter → shipped, ledger line, squash-merge.
 
 ## The story
 Born this session from the kickoff, the fourth in a run of currency
