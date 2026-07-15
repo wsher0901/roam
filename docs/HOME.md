@@ -66,8 +66,10 @@ Code executes, THE GATE, external review, your yes, the weld. Somewhere
 in the afternoon you say "run T3–T6 in parallel" and four benches
 are born, four lanes fly; the pacing law keeps only Now plus one
 parallel slot on your desk. Leaving is one sentence: "done for
-today" parks every local lane and halts the machine — or "keep
-working while I'm out" lifts the eligible ones to the cloud first.
+today" parks every local lane and halts the machine; "keep working
+while I'm out" lifts the eligible ones to the cloud first; "go remote"
+tethers the machine to your phone instead, so you drive the fleet from
+your pocket.
 Either way the board is repainted before the lights go out, and the
 next seat — tomorrow, or your phone tonight — starts by reading it.
 Nothing important ever lives only in a conversation.
@@ -92,7 +94,9 @@ moment a task's work is complete, ship runs itself and asks for the
 merge — your conversational yes is the only gate. When you're done
 for the day, one leaving phrase ("done for today", "bye") runs
 handoff; "take it to the cloud" runs liftoff instead and hands the
-open work to cloud lanes. Both close the session. Walk away.
+open work to cloud lanes; "go remote" tethers the machine to your
+phone instead. The first two close the session; go remote keeps it
+open. Walk away.
 
 Sources:
 [pickup](skills/pickup.md)
@@ -616,16 +620,55 @@ Sources:
 [ship](skills/ship.md)
 [IDEAS](IDEAS.md)
 
-Dispatch: mid-session lanes default LOCAL (background agents,
-worktrees); CLOUD dispatch happens only through liftoff's eligibility
-gate — fully specified, no secrets exposure, cloud-compatible needs,
-no local-only tooling, file-disjoint from every flying sibling.
-Ineligible or failed items are never silently parked: each gets its
-status written into its own memory and the board (dispatch law).
+Dispatch is one fork of the away-mode chooser (next section):
+mid-session lanes default LOCAL (background agents, worktrees); CLOUD
+dispatch happens only through liftoff, whose gate is now hard
+disqualifiers — secrets exposure, cloud-incompatible needs, or a
+file-collision with a flying sibling — with fully-specified the sort
+key, not a bar. Ineligible, held, or waiting items are never silently
+parked: each gets its status written into its own memory and the board
+(the chooser law).
 
 Sources:
 [liftoff](skills/liftoff.md)
-[dispatch law](LAWS.md#workflow-non-negotiable)
+[chooser law — LAWS §Workflow](LAWS.md#workflow-non-negotiable)
+
+### Delegation — the away-mode chooser
+
+Where work runs is one decision, one variable at each fork. Are you at
+the keyboard? Then parallelizable work becomes a LOCAL lane — a
+background agent or a worktree session — while you drive the main
+task. Are you leaving? Then ask whether work should continue. If
+nothing continues, handoff parks the shop and closes the session. If
+work continues, one more question decides: is the machine staying on?
+If yes, go remote — the tether: the cockpit relocates to your phone,
+nothing is parked, nothing is closed, the baton stays put. If the
+machine is going dark, liftoff lifts the eligible work to the cloud.
+
+```mermaid
+flowchart TD
+  A{Leaving the machine?} -->|no| L[Local lane]
+  A -->|yes| B{Should work continue?}
+  B -->|no| H[Handoff]
+  B -->|yes| C{Machine staying on?}
+  C -->|yes| G[Go remote — the tether]
+  C -->|no| F[Liftoff — cloud]
+```
+
+Each away leaf carries its own notification channel and reply loop.
+The tether pushes to the Claude app; you answer a blocked lane right
+in the app and it resumes in-thread. A cloud lane pushes through
+GitHub; you answer as a PR comment and the routine feeds your reply to
+the running session. After handoff there is no channel — and that is
+correct: nothing is flying, so silence is the right state until the
+next pickup. The cloud launch route is proven once, at the maiden
+flight, which records which route won.
+
+Sources:
+[chooser law — LAWS §Workflow](LAWS.md#workflow-non-negotiable)
+[go-remote](skills/go-remote.md)
+[liftoff](skills/liftoff.md)
+[handoff](skills/handoff.md)
 
 ### Micro-PRs
 
@@ -937,11 +980,29 @@ the link for the full story.
   canaries on the same branch and the cockpit's ack overwrites the
   parked Status. Home: [parallel-lanes
   §Respawn](skills/parallel-lanes.md#respawn-on-an-existing-bench-liftoff-adopt).
-- **dispatch law** — mid-session lanes default LOCAL; cloud
-  dispatch happens only through [liftoff](skills/liftoff.md)'s
-  eligibility gate; nothing is ever silently parked — every held
-  or failed item is written into its memory and the board.
-  Home: [LAWS §Workflow](LAWS.md#workflow-non-negotiable).
+- **the chooser (dispatch & away-mode)** — one variable per fork: at
+  the keyboard → LOCAL lane; leaving + nothing continues → handoff;
+  leaving + continues + machine on → go-remote; leaving + continues +
+  machine dark → liftoff. Cloud only via liftoff's sanctioned routes;
+  nothing is ever silently parked — every held, failed, or waiting
+  item is written into its memory and the board. Home:
+  [§Delegation](#delegation--the-away-mode-chooser) ·
+  [LAWS §Workflow](LAWS.md#workflow-non-negotiable).
+- **go-remote / tether** — the away-mode where the machine stays on
+  and the cockpit relocates to the founder's phone via Remote
+  Control. A posture, not a leaving ritual: parks nothing, closes
+  nothing, keeps the baton. Home: [go-remote](skills/go-remote.md) ·
+  [§Delegation](#delegation--the-away-mode-chooser).
+- **idle-wait** — a blocked lane on a phone-reachable vehicle (cloud
+  session · RC-tethered local session) stays alive and waits for the
+  founder's reply instead of parking; the reply resumes it in-thread.
+  Home: [parallel-lanes §Wake-lock &
+  parking](skills/parallel-lanes.md#wake-lock--parking).
+- **label-spawn** — the sanctioned cloud launch: label the
+  pre-birthed draft PR `lane:cloud` and a GitHub-triggered routine
+  starts the cloud session; zero secrets, phone-drivable. Home:
+  [parallel-lanes §Cloud
+  spawn](skills/parallel-lanes.md#cloud-spawn--route-ladder).
 - **liftoff** — the leaving ritual's cloud variant: FULL handoff,
   then triage, birth, spawn, handshake-verify, and a board repaint
   that doubles as the flight plan. Home:

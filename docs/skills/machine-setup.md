@@ -40,6 +40,11 @@ status: living
    tokens stay local.
 9. Vercel CLI when S2+ work touches deploys: npm i -g vercel, then
    vercel login.
+10. Remote Control auto-connect: in claude run /config → "Enable
+    Remote Control for all sessions" = true; enable both
+    push-notification toggles. This registers every session for the
+    phone so go-remote can tether it. Requires CLI ≥ 2.1.110 (claude
+    update covers it).
 
 ## Vault lens
 
@@ -77,7 +82,9 @@ gets the same lens from origin.
 
 - node --version → Node 20+ (stack and hooks require it)
 - git --version · gh auth status → authenticated
-- claude --version → current
+- claude --version → current (≥ 2.1.110 for Remote Control)
+- claude /config → "Enable Remote Control for all sessions" = true
+  (the go-remote tether needs it)
 - git config roam.machine → returns this seat's label
 - From the repo root: node .claude/hooks/session-start.mjs → prints
   the sync line + [DASHBOARD](../DASHBOARD.md) contents
@@ -98,3 +105,6 @@ and talk.
   ([LAWS §Knowledge & tracking](../LAWS.md#knowledge--tracking)).
 - PowerShell mangles em dashes (and some non-ASCII) on command
   lines — pass long text to commands via files, never inline.
+- Phone (once): the Claude app and the GitHub app installed, signed
+  into the same accounts, notifications allowed — the go-remote tether
+  and the cloud lane-worker both reach you there.

@@ -20,21 +20,24 @@ Sources:
 [handoff](handoff.md)
 
 ## 2 · Triage every open item
-The current task, every lane just parked, every queued [P] task —
-each through the eligibility gate:
+The current task, every lane just parked, every queued [P] task.
+First the HARD DISQUALIFIERS — any one keeps it on the ground:
 
-- fully specified (no founder decisions pending)
-- zero secrets/.env exposure
-- network needs fit the cloud environment
-- no local-only tooling
-- files-disjoint from every other flying lane
+- secrets/.env exposure
+- cloud-incompatible network or tooling needs
+- file-collision with a flying sibling
 
+Then SORT what survives: fully-specified first, needs-input after
+(once flying they idle-wait for the founder's reply per the idle-wait
+law). The daily routine budget truncates from the bottom (Max plan:
+15 routine runs/day documented — verify the live number at
+claude.ai/code/routines); a truncated item → held with its reason.
 A parked lane that passes: respawn on its SAME branch in cloud —
-adopt, no second birth (parallel-lanes §Respawn). One that fails:
-stays parked; its reason lands in step 5's ledger.
+adopt, no second birth (parallel-lanes §Respawn).
 
 Sources:
 [parallel-lanes §Respawn](parallel-lanes.md#respawn-on-an-existing-bench-liftoff-adopt)
+[idle-wait law — LAWS §Parallel lanes & cloud](../LAWS.md#parallel-lanes--cloud)
 
 ## 3 · Bench-first birth
 Every triaged item not yet birthed gets the full birth — held items
@@ -46,7 +49,8 @@ Sources:
 
 ## 4 · Spawn
 Dispatch each eligible lane — fresh births and respawns alike —
-cloud-side via the route ladder.
+cloud-side via the route ladder; route 1 (label-spawn) is one command
+per lane: `gh pr edit <N> --add-label lane:cloud`.
 
 Sources:
 [route ladder](parallel-lanes.md#cloud-spawn--route-ladder)

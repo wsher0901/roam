@@ -55,15 +55,22 @@ founder.
   without asking.
 - Leaving phrases ("done for today", "bye", "wrapping up") → run the
   full handoff immediately, unasked. "Take it to the cloud" (or any
-  equivalent) → run liftoff. Both close the session.
+  equivalent) → run liftoff. Both close the session. Leaving language
+  carrying watch-from-phone intent ("go remote" and close variants)
+  summons go-remote, NEVER handoff.
 - When a task's work is complete, run ship yourself — never declare a
   task done in conversation without it.
 - Claim check before starting any task: open branches + draft PRs
   answer it; ask the founder only on genuine ambiguity.
-- Dispatch law: mid-session lanes default LOCAL (background agents /
-  worktrees); liftoff dispatches CLOUD-ONLY through the eligibility
-  gate — nothing is ever silently parked: ineligible or failed tasks
-  are recorded in their own memory + [DASHBOARD](DASHBOARD.md).
+- Dispatch & away-mode (the chooser): mid-session parallelizable work
+  → LOCAL lane (background agents / worktrees). Leaving with nothing
+  continuing → handoff. Leaving with work continuing: machine stays
+  on → go-remote (the tether) · machine going dark → liftoff (cloud).
+  Cloud dispatch only through liftoff's sanctioned routes
+  ([parallel-lanes §Cloud spawn](skills/parallel-lanes.md#cloud-spawn--route-ladder)) —
+  never an ad-hoc CLI spawn. Nothing is ever silently parked: every
+  held, failed, or waiting item is recorded in its own memory +
+  [DASHBOARD](DASHBOARD.md).
 - When the founder states or confirms a roadmap-level change — a
   task added, subtracted, moved, or pivoted; a stage reordered or
   paused — or any standing product/workshop convention change, run
@@ -114,9 +121,10 @@ The LANE LAW (seat-blind — identical local or cloud): every lane
    trivial push; the cockpit writes airborne-or-failed into the
    pre-birthed memory; a lane seeing failed/aborted, a Status it
    does not own (parked · respawned · superseded), or silence past
-   the timeout (~10 min cloud, ~2 local), self-terminates after
-   pushing what exists — a worker that cannot push is a zombie
-   writing into the void;
+   the timeout (constants:
+   [parallel-lanes §Canary](skills/parallel-lanes.md#canary-handshake-both-sides)),
+   self-terminates after pushing what exists — a worker that cannot
+   push is a zombie writing into the void;
 3. pushes every commit — unpushed work does not exist;
 4. never shares a file with any sibling — merges cannot collide by
    construction;
@@ -135,6 +143,13 @@ seat; only ritual stamps name seats.
   moment the cockpit may touch a lane's tree or diary mid-flight;
   liftoff is the only road from parked to cloud. Mechanics:
   [handoff §1.5](skills/handoff.md#15--park-the-local-lanes-full-only).
+- Idle-wait: a blocked lane on a resumable, phone-reachable vehicle
+  (cloud session · RC-visible local session) stays alive and waits —
+  the founder's reply resumes it in-thread. Blocked local lanes still
+  park at handoff FULL (the machine is halting). Termination only on:
+  done · spawn failure · genuine error · a Status the lane does not
+  own. Mechanics:
+  [parallel-lanes §Wake-lock & parking](skills/parallel-lanes.md#wake-lock--parking).
 Baton law: exactly one cockpit — the session the founder is driving;
 the baton is the right to be that one driving session.
 Claimed by pickup on fresh origin; released by FULL handoff or
@@ -142,10 +157,10 @@ liftoff (which close the session). A session whose
 [DASHBOARD](DASHBOARD.md) seat-stamp is superseded self-closes:
 push, write nothing. Between cockpits the baton is dormant; lanes
 fly on.
-Cloud lanes launch only via claude.ai/code or the mobile app; never
+Cloud lanes launch only through liftoff's sanctioned routes; never
 end a session before its work is on origin.
 Mechanics: [parallel-lanes](skills/parallel-lanes.md) ·
-[liftoff](skills/liftoff.md).
+[liftoff](skills/liftoff.md) · [go-remote](skills/go-remote.md).
 
 ## Knowledge & tracking
 - One ladder, one home per level: [FOUNDATION](FOUNDATION.md)
