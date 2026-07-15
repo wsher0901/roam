@@ -74,23 +74,25 @@ merge; founder approval follows external review in the Web chat.
 
 ## Done means
 
-- [ ] LAWS: chooser law + go-remote trigger guard; idle-wait law;
+- [x] LAWS: chooser law + go-remote trigger guard; idle-wait law;
       constants gone from lane-law point 2; cloud-launch line →
       sanctioned routes.
-- [ ] parallel-lanes: §Canary the sole constants home; §Wake-lock
+- [x] parallel-lanes: §Canary the sole constants home; §Wake-lock
       idle-wait; §Vehicles RC-visibility; route ladder rewritten
       (Route 1 label-spawn).
-- [ ] liftoff §2 hard disqualifiers + fully-specified sort + routine
+- [x] liftoff §2 hard disqualifiers + fully-specified sort + routine
       budget truncation; §4 route ladder.
-- [ ] go-remote stub + body exist; stub NEVER runs handoff for its
+- [x] go-remote stub + body exist; stub NEVER runs handoff for its
       phrases.
-- [ ] machine-setup + SETUP carry the RC and routine one-time setup.
-- [ ] HOME: delegation portrait + rendering mermaid; three new Terms;
-      both leaving narrations gain the go-remote exit.
-- [ ] D-041 entry, links born resolving.
-- [ ] Greps: "~10 min" absent from LAWS; "lane:cloud" present in
+- [x] machine-setup + SETUP carry the RC and routine one-time setup.
+- [x] HOME: delegation portrait + rendering mermaid; three new Terms;
+      both leaving narrations gain the go-remote exit (+ §Lanes gate
+      aligned for consistency).
+- [x] D-041 entry, links born resolving.
+- [x] Greps: "~10 min" absent from LAWS; "lane:cloud" present in
       parallel-lanes + liftoff + SETUP; "ad-hoc CLI spawn" present in
-      LAWS; check:links green + full CI mirror green.
+      LAWS; check:links green (1625, 0 broken) + full CI mirror green.
+      Pending: the pushed commit's Actions run green.
 
 ## Open questions
 

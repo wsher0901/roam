@@ -6,8 +6,11 @@ updated: 2026-07-15 · birth · work PC
 # delegation-architecture — Delegation architecture
 
 ## Status
-bench ready — branch, spec, and this stub laid on origin; draft PR
-opening. Next: the D-041 decide commit (entry + full ripple).
+complete, awaiting merge — the D-041 entry + full ripple are on origin
+in one commit ([PR #136](https://github.com/wsher0901/roam/pull/136)).
+Local CI mirror green; all verification greps pass; the PR is flipped
+ready and sits at THE GATE. Not merged: founder approval follows
+external review in the Web chat.
 
 ## What this task is
 THE delegation decide, reserved across the last five kickoffs. It
@@ -32,11 +35,20 @@ SETUP, HOME, DECISIONS — one commit. Out of scope: the maiden flight
   enable unrestricted branch pushes, turn on Remote Control
   auto-connect + push toggles; (2) the maiden flight that records the
   route ladder's winning route.
+- One consistency touch beyond the literal HOME ripple list: the
+  §Lanes "Dispatch" paragraph described the OLD eligibility gate
+  (fully-specified as a bar). Since D-041 makes fully-specified a sort
+  key and the gate hard disqualifiers, that paragraph — the immediate
+  neighbor of the new portrait — was realigned so HOME does not
+  self-contradict. Noted in the PR.
 
 ## Left / idle
-Everything after the bench: the D-041 entry + nine ripple points, the
-verification greps, the CI mirror (incl. the mermaid render), ship to
-the gate.
+Nothing before merge. On the founder's yes (after Web review): the
+atomic weld — no ROADMAP tick (workshop task), git mv this memory to
+history/workshop/mechanism/ (this defines new rituals/machinery — what
+the workshop does), spec frontmatter → shipped, ledger line,
+squash-merge. Then the two post-merge founder actions land as Needs-you
+at the ship-tail repaint (the one-time UI setup + the maiden flight).
 
 ## The story
 Born this session from the kickoff — the capstone of the day's
