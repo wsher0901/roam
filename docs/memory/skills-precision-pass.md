@@ -6,8 +6,11 @@ updated: 2026-07-15 · birth · work PC
 # skills-precision-pass — Skills precision pass
 
 ## Status
-bench ready — branch, spec, and this stub laid on origin; draft PR
-opening. Next: the eight surgical edits in one commit.
+complete, awaiting merge — the eight surgical edits are on origin in
+one commit ([PR #128](https://github.com/wsher0901/roam/pull/128)).
+Local CI mirror green; the three verification greps pass; the PR is
+flipped ready and sits at THE GATE. Not merged: founder approval
+follows external review in the Web chat.
 
 ## What this task is
 Codify already-decided behavior across the skill corpus and repair
@@ -28,8 +31,11 @@ LAWS, HOME, and TEMPLATE (unless a Status word is missing).
   gate as a follow-up candidate; do NOT touch TEMPLATE in this PR.
 
 ## Left / idle
-Everything after the bench: the eight edits, verification greps, CI
-mirror, ship to the gate.
+Nothing before merge. On the founder's yes (after Web review): the
+atomic weld — no ROADMAP tick (workshop task), git mv this memory to
+history/workshop/mechanism/ (these are ritual-procedure edits — what
+the workshop does), spec frontmatter → shipped, ledger line,
+squash-merge.
 
 ## The story
 Born this session from the kickoff, immediately after

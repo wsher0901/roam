@@ -70,21 +70,21 @@ merge; founder approval follows external review in the Web chat.
 
 ## Done means
 
-- [ ] decide.md §2 ripple names LAWS + HOME.
-- [ ] decide/SKILL.md description sharpened.
-- [ ] handoff §1.5.3 stamp is conditional on the rescue-save.
-- [ ] handoff §1.5 carries the cloud-lanes-never-parked line (D-032
+- [x] decide.md §2 ripple names LAWS + HOME.
+- [x] decide/SKILL.md description sharpened.
+- [x] handoff §1.5.3 stamp is conditional on the rescue-save.
+- [x] handoff §1.5 carries the cloud-lanes-never-parked line (D-032
       linked).
-- [ ] handoff §3 folds only the task-relevant paste lines.
-- [ ] handoff §4 Sessions lead-in codifies the every-lane-row home;
+- [x] handoff §3 folds only the task-relevant paste lines.
+- [x] handoff §4 Sessions lead-in codifies the every-lane-row home;
       TEMPLATE untouched (all four Status words present).
-- [ ] The ghost is retired in all three skills; `grep "abort
+- [x] The ghost is retired in all three skills; `grep "abort
       ledger\|Cloud section" docs/skills/` → zero hits.
-- [ ] liftoff §1 says liftoff skips handoff §6; `grep "absorbed by
+- [x] liftoff §1 says liftoff skips handoff §6; `grep "absorbed by
       step 7"` → zero hits.
-- [ ] check:links green + the full CI mirror (lint · format:check ·
-      check:links · tests · build) and the pushed commit's Actions
-      run green.
+- [x] check:links green (1514 links, 0 broken) + the local CI mirror
+      (lint · format:check · check:links · tests · build) green.
+      Pending: the pushed commit's Actions run green.
 
 ## Open questions
 
