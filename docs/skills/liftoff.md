@@ -13,8 +13,8 @@ leaving. Cockpit only. Closes the session.
 ## 1 · FULL handoff first
 Run handoff FULL — origin must be whole (work pushed, every local
 lane parked by its step 1.5, memories rewritten, board repainted,
-micro-PR merged) before anything spawns. Its final session-close is
-absorbed by step 7; do not end the session yet.
+micro-PR merged) before anything spawns. Skip handoff §6 entirely —
+no close report, no close-lock write; liftoff §7 is the only close.
 
 Sources:
 [handoff](handoff.md)
@@ -55,9 +55,10 @@ Sources:
 - Canary arrives → write "airborne · <url>" into its memory (for a
   respawn, this overwrites the parked Status).
 - Fail or timeout → write "cloud spawn failed <date> — <reason> →
-  parked" into its memory + the abort ledger.
+  parked" into its memory + the board's Sessions rows (+ Needs-you
+  mirror) per [handoff §4](handoff.md).
 - Ineligible → write "held: needs local — <reason>" into its memory
-  + the ledger.
+  + those same board rows.
 
 Nothing is ever silently parked without its reason on record.
 
