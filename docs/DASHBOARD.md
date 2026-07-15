@@ -6,7 +6,7 @@ status: living
 
 # Dashboard — the state surface
 
-Stamp: 2026-07-15 · 10:28 · ship · work PC
+Stamp: 2026-07-15 · 11:20 · ship · work PC
 V1 5/34 · S1 2/7 · S2 3/5 · sessions: 0 main · 0 parallel ·
 needs-you 4
 How to read this board →
@@ -36,15 +36,18 @@ How to read this board →
 
 ## Sessions
 
-0 main · 0 parallel — operations idle. This sitting shipped two
+0 main · 0 parallel — operations idle. This sitting shipped three
 workshop tasks in order: handoff-inline-context
 ([#126](https://github.com/wsher0901/roam/pull/126)) — handoff's input
 inversion
-([D-040](DECISIONS.md#d-040--2026-07--handoff-input-inversion--the-leaving-message-carries-the-webdesign-paste-inline-the-never-skipped-question-is-retired-a-bare-trigger-means-none-amends-the-two-touchpoints-laws-wording-upholds-d-032)) —
+([D-040](DECISIONS.md#d-040--2026-07--handoff-input-inversion--the-leaving-message-carries-the-webdesign-paste-inline-the-never-skipped-question-is-retired-a-bare-trigger-means-none-amends-the-two-touchpoints-laws-wording-upholds-d-032));
 then skills-precision-pass
-([#128](https://github.com/wsher0901/roam/pull/128)), which codified
-already-decided behavior across the skill corpus and fully retired the
-abort-ledger ghost. No task is running.
+([#128](https://github.com/wsher0901/roam/pull/128)), codifying that
+behavior across the skill corpus and retiring the abort-ledger ghost;
+then home-currency-pass
+([#130](https://github.com/wsher0901/roam/pull/130)), the same
+currency for HOME plus five new newcomer Terms and the recall
+read-path. No task is running.
 
 ↳ main micro: — (no live main session)
 
@@ -80,14 +83,15 @@ flowchart LR
 ```
 
 No open Web or Design threads — none surfaced this sitting.
-skills-precision-pass shipped
-([#128](https://github.com/wsher0901/roam/pull/128)); T3–T6
+home-currency-pass shipped
+([#130](https://github.com/wsher0901/roam/pull/130)); T3–T6
 source-vetting relaunch stays held (see You are here).
 
 ## Shipped (latest — full record: [the ledger](history/README.md#the-ledger))
 
 | When | What | PR |
 |---|---|---|
+| 07-15 11:18 | [HOME currency pass: bring the bible current with D-040/D-032/D-039/#128 and close six newcomer-test gaps — four rewordings, five new Terms, the recall read-path](history/workshop/definition/home-currency-pass.md) | [#130](https://github.com/wsher0901/roam/pull/130) |
 | 07-15 10:24 | [Skills precision pass: codify already-decided behavior across the corpus (decide · handoff · liftoff · parallel-lanes · recall); the abort-ledger ghost fully retired](history/workshop/mechanism/skills-precision-pass.md) | [#128](https://github.com/wsher0901/roam/pull/128) |
 | 07-15 09:23 | [Handoff input inversion: the leaving message carries the Web/Design paste inline; the never-skipped question is retired; a bare trigger means none](history/workshop/mechanism/handoff-inline-context.md) | [#126](https://github.com/wsher0901/roam/pull/126) |
 | 07-14 14:50 | [Recall — the routing table's read mirror: founder questions answered from the files with receipts, never from memory; fires on its own judgment](history/workshop/mechanism/recall-skill.md) | [#123](https://github.com/wsher0901/roam/pull/123) |
@@ -97,4 +101,3 @@ source-vetting relaunch stays held (see You are here).
 | 07-14 10:24 | [Leg close: LAWS carries the routing clause; pickup speaks the founder's shape](history/workshop/definition/laws-close.md) | [#115](https://github.com/wsher0901/roam/pull/115) |
 | 07-13 23:14 | [HOME closes the leg's knowledge layer: the routing table, one day in the workshop, the board paragraph recut, a stable Sessions anchor](history/workshop/definition/home-knowledge.md) | [#113](https://github.com/wsher0901/roam/pull/113) |
 | 07-13 22:58 | [State surfaces v2: the board learns the founder's names; pickup becomes the sit-down summary; welds stamp time and write the ledger](history/workshop/mechanism/state-surfaces-v2.md) | [#110](https://github.com/wsher0901/roam/pull/110) |
-| 2026-07-13 | [History quadrants: four doors; TEMPLATE owns the format + Status vocabulary](history/workshop/definition/history-quadrants.md) | [#108](https://github.com/wsher0901/roam/pull/108) |
