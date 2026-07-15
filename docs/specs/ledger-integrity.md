@@ -63,25 +63,34 @@ real data. Failure cases (a)–(d) from the kickoff are all covered.
 
 ## Done means
 
-- [ ] `scripts/check-ledger.mjs` exists, zero deps, CRLF-safe; exits 0
+- [x] `scripts/check-ledger.mjs` exists, zero deps, CRLF-safe; exits 0
       on main printing "N history files ↔ N ledger lines, in sync";
       exits nonzero with a file-specific message on a drop, an orphan,
       a missing #PR, a bad quadrant, a quadrant/slug mismatch, or a
       duplicate.
-- [ ] A temp orphan line makes it exit nonzero with a clear message
+- [x] A temp orphan line makes it exit nonzero with a clear message
       (verified, then removed).
-- [ ] `package.json` has `check:ledger` after `check:links`.
-- [ ] `ci.yml` runs `check:ledger` after `check:links`.
-- [ ] ship §7 carries the "stage the whole move together" line.
-- [ ] Every corpus CI-mirror step list includes "ledger".
-- [ ] STEP 0 checker output pasted in the PR body; any pre-existing
+- [x] `package.json` has `check:ledger` after `check:links`.
+- [x] `ci.yml` runs `check:ledger` after `check:links`.
+- [x] ship §7 carries the "stage the whole move together" line.
+- [x] Every corpus CI-mirror step list includes "ledger".
+- [x] STEP 0 checker output pasted in the PR body; any pre-existing
       mismatch fixed as data (none found — clean by #PR).
-- [ ] check:links green; full CI mirror (now six steps) green; the
+- [x] check:links green; full CI mirror (now six steps) green; the
       pushed commit's Actions run green.
 
 ## Deviations
 
-<filled by /ship>
+- Join key is the trailing `#PR`, not `(quadrant, slug)` as the
+  kickoff framed it — the 36 pre-slug frozen ledger lines carry no
+  slug and are out of scope to reformat, so #PR is the only key on
+  both sides. Slug + quadrant are still asserted wherever a slug
+  exists (see the spec's join-key note).
+- Only the LIVING CI-mirror lists (LAWS §Workflow, ship §1) gained
+  "ledger". Frozen records (D-038 and the shipped specs/history/) were
+  left intact — they truthfully record a five-check mirror at their
+  time, and D-038's anchor encodes "six", so editing it would be a
+  disproportionate link ripple outside this task.
 
 ## Open questions
 
