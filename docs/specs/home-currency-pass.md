@@ -2,10 +2,12 @@
 type: spec
 id: home-currency-pass
 title: HOME currency pass — bring the bible current, close newcomer gaps
-status: in-progress
+status: shipped
 stage: workshop
 branch: docs/home-currency-pass
+pr: 130
 opened: 2026-07-15
+shipped: 2026-07-15
 ---
 # home-currency-pass — HOME currency pass
 
