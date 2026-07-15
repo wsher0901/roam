@@ -1,16 +1,17 @@
 ---
-type: memory
-id: retroactivity-sweep
-updated: 2026-07-15 · birth · work PC
+type: history
+slug: retroactivity-sweep
+shipped: 2026-07-15 12:08
+pr: 132
 ---
 # retroactivity-sweep — Retroactivity sweep
 
 ## Status
-complete, awaiting merge — the three surgical edits are on origin in
-one commit ([PR #132](https://github.com/wsher0901/roam/pull/132)).
-Local CI mirror green; all verification greps pass; the PR is flipped
-ready and sits at THE GATE. Not merged: founder approval follows
-external review in the Web chat.
+Shipped — merged as
+[PR #132](https://github.com/wsher0901/roam/pull/132) on the founder's
+word. Every gate on the way out waited on the pushed commit's Actions
+run going green
+([D-038](../../../DECISIONS.md#d-038--2026-07--ci-is-the-arbiter--actions-green-required-at-every-gate-local-gate-mirrors-all-six-ci-steps-d-anchors-born-resolving-upholds-d-027)).
 
 ## What this task is
 Repair three later-found gaps the moment they surfaced (the
@@ -27,10 +28,7 @@ Out of scope: everything else — no LAWS, no restructuring.
 none.
 
 ## Left / idle
-Nothing before merge. On the founder's yes (after Web review): the
-atomic weld — no ROADMAP tick (workshop task), git mv this memory to
-history/workshop/definition/ (a currency/knowledge repair — what the
-workshop IS), spec frontmatter → shipped, ledger line, squash-merge.
+Nothing parked.
 
 ## The story
 Born this session from the kickoff, the fourth in a run of currency
@@ -47,7 +45,7 @@ routing table omitted FOUNDATION (identity provenance) and
 DESIGN-KICKOFF (design-session governance) from the homes it opens.
 
 ## Where to look
-Spec: [retroactivity-sweep](../specs/retroactivity-sweep.md) · the
-targets: [HOME](../HOME.md) retention table,
-[handoff §4](../skills/handoff.md), [recall](../skills/recall.md)
-routing table.
+Spec: [retroactivity-sweep](../../../specs/retroactivity-sweep.md) ·
+the targets: [HOME](../../../HOME.md) retention table,
+[handoff §4](../../../skills/handoff.md),
+[recall](../../../skills/recall.md) routing table.

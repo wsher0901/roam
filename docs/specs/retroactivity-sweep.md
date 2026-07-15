@@ -2,10 +2,12 @@
 type: spec
 id: retroactivity-sweep
 title: Retroactivity sweep — repair three later-found gaps
-status: in-progress
+status: shipped
 stage: workshop
 branch: docs/retroactivity-sweep
+pr: 132
 opened: 2026-07-15
+shipped: 2026-07-15
 ---
 # retroactivity-sweep — Retroactivity sweep
 
