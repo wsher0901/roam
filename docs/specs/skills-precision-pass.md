@@ -2,10 +2,12 @@
 type: spec
 id: skills-precision-pass
 title: Skills precision pass — codify decided behavior, zero new behavior
-status: in-progress
+status: shipped
 stage: workshop
 branch: docs/skills-precision-pass
+pr: 128
 opened: 2026-07-15
+shipped: 2026-07-15
 ---
 # skills-precision-pass — Skills precision pass
 
