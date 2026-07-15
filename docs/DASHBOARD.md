@@ -6,7 +6,7 @@ status: living
 
 # Dashboard — the state surface
 
-Stamp: 2026-07-15 · 12:11 · ship · work PC
+Stamp: 2026-07-15 · 13:01 · ship · work PC
 V1 5/34 · S1 2/7 · S2 3/5 · sessions: 0 main · 0 parallel ·
 needs-you 4
 How to read this board →
@@ -36,17 +36,19 @@ How to read this board →
 
 ## Sessions
 
-0 main · 0 parallel — operations idle. This sitting shipped four
+0 main · 0 parallel — operations idle. This sitting shipped five
 workshop tasks: the D-040 leaving-ritual inversion
 (handoff-inline-context,
-[#126](https://github.com/wsher0901/roam/pull/126)) and three currency
+[#126](https://github.com/wsher0901/roam/pull/126)) and four currency
 sweeps carrying it through the corpus — skills-precision-pass
 ([#128](https://github.com/wsher0901/roam/pull/128), the skills),
 home-currency-pass
 ([#130](https://github.com/wsher0901/roam/pull/130), HOME + newcomer
-Terms + the recall read-path), and retroactivity-sweep
+Terms + the recall read-path), retroactivity-sweep
 ([#132](https://github.com/wsher0901/roam/pull/132), the last
-later-found gaps closed). No task is running.
+later-found gaps), and laws-tightness
+([#134](https://github.com/wsher0901/roam/pull/134), Option C tightens
+LAWS to command + one-line whys). No task is running.
 
 ↳ main micro: — (no live main session)
 
@@ -82,14 +84,15 @@ flowchart LR
 ```
 
 No open Web or Design threads — none surfaced this sitting.
-retroactivity-sweep shipped
-([#132](https://github.com/wsher0901/roam/pull/132)); T3–T6
+laws-tightness shipped
+([#134](https://github.com/wsher0901/roam/pull/134)); T3–T6
 source-vetting relaunch stays held (see You are here).
 
 ## Shipped (latest — full record: [the ledger](history/README.md#the-ledger))
 
 | When | What | PR |
 |---|---|---|
+| 07-15 12:58 | [LAWS tightness (Option C): command + one-line whys (D-027 upheld), procedure grain expelled to handoff §1.5, the stale decide trigger and preview conditional fixed](history/workshop/definition/laws-tightness.md) | [#134](https://github.com/wsher0901/roam/pull/134) |
 | 07-15 12:08 | [Retroactivity sweep: repair three later-found gaps — HOME's surviving Cloud-ledger ghost, handoff's non-vocabulary "waiting", recall's FOUNDATION + DESIGN-KICKOFF routing omissions](history/workshop/definition/retroactivity-sweep.md) | [#132](https://github.com/wsher0901/roam/pull/132) |
 | 07-15 11:18 | [HOME currency pass: bring the bible current with D-040/D-032/D-039/#128 and close six newcomer-test gaps — four rewordings, five new Terms, the recall read-path](history/workshop/definition/home-currency-pass.md) | [#130](https://github.com/wsher0901/roam/pull/130) |
 | 07-15 10:24 | [Skills precision pass: codify already-decided behavior across the corpus (decide · handoff · liftoff · parallel-lanes · recall); the abort-ledger ghost fully retired](history/workshop/mechanism/skills-precision-pass.md) | [#128](https://github.com/wsher0901/roam/pull/128) |
@@ -99,4 +102,3 @@ source-vetting relaunch stays held (see You are here).
 | 07-14 10:55 | [Repo auto-merge enabled so the self-merge law works — the repo's first armed --auto, fired on green](history/workshop/mechanism/auto-merge-flip.md) | [#119](https://github.com/wsher0901/roam/pull/119) |
 | 07-14 10:32 | [CI is the arbiter: Actions-green at every gate; the local gate mirrors all six CI steps; anchors born resolving](history/workshop/mechanism/ci-trust.md) | [#117](https://github.com/wsher0901/roam/pull/117) |
 | 07-14 10:24 | [Leg close: LAWS carries the routing clause; pickup speaks the founder's shape](history/workshop/definition/laws-close.md) | [#115](https://github.com/wsher0901/roam/pull/115) |
-| 07-13 23:14 | [HOME closes the leg's knowledge layer: the routing table, one day in the workshop, the board paragraph recut, a stable Sessions anchor](history/workshop/definition/home-knowledge.md) | [#113](https://github.com/wsher0901/roam/pull/113) |
