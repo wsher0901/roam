@@ -30,7 +30,9 @@ or "record only">
 Apply what the decision demands, in the SAME commit as the entry:
 [FOUNDATION](../FOUNDATION.md) (identity) ·
 [ROADMAP](../ROADMAP.md) (structure — reorder/add/cut; progress
-ticks never need a D-number) · [docs/specs/](../specs/README.md)
+ticks never need a D-number) · [LAWS](../LAWS.md) and
+[HOME](../HOME.md) (when the decision changes a working rule or its
+manual entry) · [docs/specs/](../specs/README.md)
 (update or mark superseded any spec the pivot invalidates) ·
 [ENGINE](../ENGINE.md) (when it consolidates the
 changed rule) · [IDEAS](../IDEAS.md) (spawned ideas). The Affects

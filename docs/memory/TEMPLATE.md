@@ -40,6 +40,6 @@ lane's own live claim.
 | parked — <date · reason> | handoff §1.5, liftoff §5, or the lane | nothing — until founder action |
 | claimed for respawn — <vehicle · date> | the cloud lane | waiting for ack |
 | held: needs local — <reason> | liftoff §5 | nothing — local resume only |
-| cloud spawn failed — <reason> | cockpit, + abort ledger | nothing — founder decides |
+| cloud spawn failed — <reason> | cockpit, + the board's Sessions row (+ Needs-you mirror) | nothing — founder decides |
 | superseded — <by> | cockpit | self-terminate on sight |
 | complete, awaiting merge | the finishing session | THE GATE |

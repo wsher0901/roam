@@ -25,11 +25,17 @@ running:
    "wip: parked at handoff (rescue-save)" and push. A clean,
    pushed bench skips straight to the stamp.
 3. Stamp its diary, on its branch: append
-   "Status: parked — <date> · rescue-saved at handoff · <seat>",
-   push. This is the ONE cockpit-written line a lane's memory may
+   "Status: parked — <date> · at handoff · <seat>", push — write
+   "rescue-saved at handoff" in place of "at handoff" ONLY when step
+   1.5.2 actually ran (the diary never claims a rescue that didn't
+   happen). This is the ONE cockpit-written line a lane's memory may
    ever receive (the park protocol).
 4. Count the parked for the close line.
 QUIET never parks — mid-sitting lanes keep flying.
+Cloud lanes are machine-independent — handoff never parks or touches
+them; they keep flying and appear on the board
+([D-032](../DECISIONS.md#d-032--2026-07--fleet-continuity--handoff-parks-every-local-lane-liftoff-respawns-parked-benches-wake-lock-parks-every-outcome-extends-the-d-020d-023-lane-law-upholds-d-009)
+parks LOCAL lanes only).
 
 Sources:
 [park protocol — LAWS §Parallel lanes & cloud](../LAWS.md#parallel-lanes--cloud)
@@ -47,8 +53,9 @@ For each active task NOT owned by a lane (a lane just parked in
 step 1.5 keeps its diary exactly as stamped; live lanes keep their
 own via the diary rule): check out its branch, rewrite
 memory/<id>.md cognitively in the locked format
-([TEMPLATE](../memory/TEMPLATE.md)). Fold in the founder's paste
-from step 2. Sentences, written for a reader returning cold.
+([TEMPLATE](../memory/TEMPLATE.md)). Fold in any step-2 paste lines
+that concern this task; the paste as a whole lands on the board (§4).
+Sentences, written for a reader returning cold.
 Commit, push, return to main. Harvest any "Ideas surfaced" lines
 from lane memories → IDEAS.
 
@@ -73,7 +80,11 @@ Sections, in this order:
   receipts). Invariants: any 🔴 anywhere on the board also appears
   here; whenever any session's Your-move is non-empty, one
   aggregated line mirrors here.
-- Sessions — ONE table for every live session, under the plain
+- Sessions — the single home for EVERY lane row, cloud and local
+  alike (airborne · waiting · parked · failed · held), a failed or
+  held row carrying its reason in Your move — the Needs-you mirror
+  invariant then covers every 🔴/failed row. ONE table for every
+  live session, under the plain
   header "## Sessions" (counts live in the glance line — the
   header must keep a stable anchor). Columns: Session (main · cockpit / local parallel /
   cloud — rows sorted in that order) · Task (linked to its roadmap

@@ -22,7 +22,7 @@ One question may hit several classes; route each part.
 |---|---|---|
 | Why / provenance | "why is X this way", "what did we decide about" | DECISIONS (title grep) → the consolidation carrying the rule (LAWS gloss · ENGINE · SETUP) → the quadrant story |
 | Past work | "what happened with", "what was that task", "what issues did we hit" | the ledger (chronology) → the quadrant door per the legend → the story — its narrative, Pending issues, and dead ends — + its D + PR |
-| Ongoing — status · pauses · issues | "status of", "where is X at", "why is it parked/blocked" | memory/<id>.md Status + Story + Pending issues → `gh pr view/checks` → the board's Sessions row · Needs-you · the abort ledger |
+| Ongoing — status · pauses · issues | "status of", "where is X at", "why is it parked/blocked" | memory/<id>.md Status + Story + Pending issues → `gh pr view/checks` → the board's Sessions row · Needs-you |
 | Future trajectory | "what's next", "when will", "where are we headed" | ROADMAP (ladder · stage/task lines) → ENGINE §12 Open register → SETUP §Staged → IDEAS |
 | Term / mechanism | "what is a", "how does X work" | HOME (Terms · portraits · Reading the board · Where information goes) |
 | World fact / vocab | "what's F-…/TP-…", "which source" | FACTS (incl. Appendix C) → SOURCES |

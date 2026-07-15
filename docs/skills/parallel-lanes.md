@@ -75,8 +75,8 @@ the ordinary lane law.
   <vehicle or url> · <date>" into the lane's memory Status and push.
   No canary within ~10 minutes (cloud) or ~2 (local): write "spawn
   failed <date> — <reason> → run locally" into the memory and record
-  the abort in DASHBOARD's Cloud section (the abort ledger), then
-  stand the lane down.
+  the abort on the board — the lane's Sessions row + the Needs-you
+  mirror ([handoff §4](handoff.md)), then stand the lane down.
 
 Sources:
 [DASHBOARD](../DASHBOARD.md)
