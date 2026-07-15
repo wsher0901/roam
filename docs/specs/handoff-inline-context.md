@@ -2,10 +2,12 @@
 type: spec
 id: handoff-inline-context
 title: Handoff input inversion — the leaving message carries the paste
-status: in-progress
+status: shipped
 stage: workshop
 branch: docs/handoff-inline-context
+pr: 126
 opened: 2026-07-15
+shipped: 2026-07-15
 ---
 # handoff-inline-context — Handoff input inversion
 
