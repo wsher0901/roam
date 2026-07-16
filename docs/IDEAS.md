@@ -42,3 +42,8 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   incident — liveness makes the collision harmless but not the
   double-dispatch; check auto-dispatch + a manual paste, or a prior
   session, spawning twice.
+- 2026-07-16 (Web, full-pass audit): a check:board CI gate —
+  machine-verify the [DASHBOARD](DASHBOARD.md) glance-line numbers
+  against [ROADMAP](ROADMAP.md) checkbox counts at every PR; weigh
+  against the board's deliberate least-authoritative status (git
+  outranks it by design).

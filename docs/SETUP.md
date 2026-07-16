@@ -77,14 +77,58 @@ Sources:
   on wsher0901/roam; the Claude GitHub App installed on the repo
   (`/web-setup` alone is NOT enough); "Allow unrestricted branch
   pushes" ON (lanes push feat/|fix/|docs/|chore/, never claude/);
-  saved prompt as in the route ladder
-  ([parallel-lanes §Cloud spawn](skills/parallel-lanes.md#cloud-spawn--route-ladder)).
+  saved prompt — the master block below; when it fires:
+  [parallel-lanes §Cloud spawn](skills/parallel-lanes.md#cloud-spawn--route-ladder).
   Plan: Max 20x — routine cap is 15 runs/day (confirmed via Anthropic's
   routines docs; the cap is flat across Max tiers — 20x buys
   throughput, not routine slots). Per-account, not per-routine;
   GitHub-triggered runs count, one-off manual runs do not; past 15,
   runs are rejected until the daily reset unless usage credits are on.
-  Live counter: claude.ai/code/routines or claude.ai/settings/usage.
+  Live counter: claude.ai/code/routines or claude.ai/settings/usage;
+  mechanical read: `npm run count:runs`.
+
+Saved prompt (master — the routine box is a copy; re-save from here
+after any edit):
+
+```text
+You are a Roam cloud lane. The trigger is a pull request labeled
+lane:cloud.
+1. Check out the head branch of that PR (it already exists on
+   origin — never work on main).
+2. Read docs/memory/<id>.md on that branch — <id> is the task id
+   in the branch name — then read docs/LAWS.md and
+   docs/skills/parallel-lanes.md, and follow the lane law exactly.
+3. Your FIRST act is the canary claim (parallel-lanes §Canary):
+   one trivial commit setting the memory Status to "claimed by
+   cloud — <date>", pushed. If that push is rejected, or the
+   Status is a claim you do not own, or it is terminal (parked ·
+   failed · held · shipped · superseded): pull, re-read, push
+   nothing further, and terminate — another worker owns this
+   bench. Otherwise WAIT for the cockpit's airborne ack per
+   §Canary before real work.
+4. Do the task in the PR's memory file and spec. Push every
+   commit to the PR's branch. On ANY rejected push: pull, re-read
+   your memory Status first, and obey it (the wake-lock).
+5. Speak only through the PR: for any blocker, post a comment
+   starting "BLOCKED:" and @mention wsher0901, then idle-wait for
+   the reply.
+6. On completion: final memory rewrite (the fourth diary moment),
+   push, confirm the pushed commit's Actions run is green, flip
+   the PR ready, and post a completion comment @mentioning
+   wsher0901.
+7. Never merge, never touch main, never edit
+   DASHBOARD/ROADMAP/IDEAS/history. "Done" means founder-approved
+   and merged — not your call.
+```
+
+- Models & effort (doctrine — the Web paste block's Model + Effort
+  line draws from here). Effort ladder: low · medium · high · xhigh
+  · max. Default: Opus 4.8 at xhigh. Fable 5 at xhigh is reserved
+  for architecture- and brain-critical work. Agent Teams: lead
+  Fable/Opus, at most 4 Sonnet teammates
+  ([parallel-lanes §Vehicles](skills/parallel-lanes.md#vehicles)).
+  Throttle order under usage limits: reduce effort before
+  downgrading the model.
 - Supabase — arrives with V1.S1.T7 (see §Staged).
 
 Sources:
