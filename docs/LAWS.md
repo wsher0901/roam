@@ -178,7 +178,11 @@ Mechanics: [parallel-lanes](skills/parallel-lanes.md) ·
   D-number, fact/param ID (F-*, TP-*), or sibling doc is a markdown
   link (GitHub-compatible anchors), never plain text.
 - Derivation law: derived values (counts, totals, statuses) are never
-  written as literals — compute from source at render time.
+  written as literals — compute from source at render time. Time is
+  derived, never recalled: every stamp, date, or time written
+  anywhere comes from a clock read at write time — the shell clock
+  on a seat, the VM clock on a lane, git metadata when reading the
+  past — never typed from memory.
 - Retroactivity law: when a convention is adopted OR changed, backfill
   every pre-existing file in the same PR; any later-found gap is
   repaired the moment it is found (current PR, or a chore PR).
