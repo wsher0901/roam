@@ -77,29 +77,37 @@ pass). Task-local calls route to this task's memory.
 
 ## Done means
 
-- [ ] handoff §4 carries the external-item clearing sentence.
-- [ ] SETUP carries the saved-prompt master (fenced) and the
+- [x] handoff §4 carries the external-item clearing sentence.
+- [x] SETUP carries the saved-prompt master (fenced) and the
       "Models & effort" doctrine.
-- [ ] `scripts/count-routine-runs.mjs` exists; `npm run count:runs`
+- [x] `scripts/count-routine-runs.mjs` exists; `npm run count:runs`
       prints "<N> GitHub-triggered runs today · <15−N> remaining" or
       fails nonzero with a plain message (both acceptable at
       verify).
-- [ ] liftoff §2 derives the budget via `count:runs`; never-guess
+- [x] liftoff §2 derives the budget via `count:runs`; never-guess
       fallback present.
-- [ ] parallel-lanes: rejected-push wake in §Wake-lock · label
+- [x] parallel-lanes: rejected-push wake in §Wake-lock · label
       idempotency in §Cloud spawn route 1 · reply-ack window in
       §Canary · "Maiden flight — verify" checklist with the
       dormant-baton item.
-- [ ] WEB-INSTRUCTIONS fenced master says `--branch <name>` (grep).
-- [ ] README carries the in-build status; "pre-build" absent.
-- [ ] IDEAS carries the check:board line.
-- [ ] Full CI mirror green (lint · format:check · check:links ·
+- [x] WEB-INSTRUCTIONS fenced master says `--branch <name>` (grep).
+- [x] README carries the in-build status; "pre-build" absent.
+- [x] IDEAS carries the check:board line.
+- [x] Full CI mirror green (lint · format:check · check:links ·
       check:ledger · tests · build); the pushed commit's Actions run
       green.
 
 ## Deviations
 
-<filled by /ship>
+- Item 6 needed no edit: WEB-INSTRUCTIONS already reads
+  `--branch <name>` on main — the audit finding was stale; grep
+  proves the verified state.
+- The counter needed an explicit `maxBuffer` (64 MB) on its
+  `gh api` call — a 100-PR page overflows Node's 1 MB default
+  (ENOBUFS); found when the first run failed despite a healthy gh.
+- SETUP's live-counter line gained "mechanical read:
+  `npm run count:runs`" so the new script is discoverable from the
+  cap's home (same-section weave, not a new finding).
 
 ## Open questions
 
