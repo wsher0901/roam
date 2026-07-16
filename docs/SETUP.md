@@ -123,12 +123,17 @@ lane:cloud.
 
 - Models & effort (doctrine — the Web paste block's Model + Effort
   line draws from here). Effort ladder: low · medium · high · xhigh
-  · max. Default: Opus 4.8 at xhigh. Fable 5 at xhigh is reserved
-  for architecture- and brain-critical work. Agent Teams: lead
-  Fable/Opus, at most 4 Sonnet teammates
+  · max. Reliance pair: Opus 4.8 — cockpit default, all
+  judgment/architecture work, at xhigh; Sonnet 5 (June 2026) —
+  fully-specified, speed-sensitive, or volume work, at high.
+  Brain-critical work: Fable 5 when available; until its return,
+  Opus 4.8 · xhigh holds the seat. The plateau: xhigh is the working
+  ceiling for judgment work — max only by explicit founder tag for
+  rare one-shots; ultracode only by explicit founder tag for
+  coverage-critical sweeps. Throttle order under usage limits:
+  reduce effort before downgrading the model. Agent Teams: teammates
+  are Sonnet 5
   ([parallel-lanes §Vehicles](skills/parallel-lanes.md#vehicles)).
-  Throttle order under usage limits: reduce effort before
-  downgrading the model.
 - Supabase — arrives with V1.S1.T7 (see §Staged).
 
 Sources:
