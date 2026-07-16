@@ -1,34 +1,37 @@
 ---
 type: memory
 id: lane-liveness
-updated: 2026-07-16 · birth · work PC
+updated: 2026-07-16 · completion · work PC
 ---
 # lane-liveness — live-vs-reclaimable from the commit heartbeat
 
 ## Status
-airborne — bench born on `docs/lane-liveness` by the cockpit, working
-it directly; draft PR next. Work ahead: D-042 + the ripple (LAWS ·
-parallel-lanes · pickup · session-start hook · TEMPLATE · HOME ·
-IDEAS) in one commit.
+complete, awaiting merge — D-042 + the full ripple pushed on
+`docs/lane-liveness`,
+[PR #142](https://github.com/wsher0901/roam/pull/142) ready. At THE
+GATE: founder approval follows external review. Full CI mirror (six
+steps) green; the pushed commit's Actions run is the arbiter.
 
 ## What this task is
 The fix for the ledger-integrity parallel-lane incident: "commits are
-the heartbeat" becomes load-bearing. A bench/worktree with a fresh
-heartbeat is LIVE — never adopted, never secured or pruned; a
-terminal Status or silence past the staleness window makes it
-RECLAIMABLE; doubt → ask. The rule is read at the two sites that were
-blind — the claim check ([LAWS §Workflow](../LAWS.md#workflow-non-negotiable))
-and pickup §3's worktree sweep, fed by a per-worktree verdict the
-session-start hook computes and prints. The wake-lock backstops a
-misjudged window. Out of scope: the double-dispatch diagnostic
-(IDEAS), cloud/routine changes, product code. Spec:
-[lane-liveness](../specs/lane-liveness.md).
+the heartbeat" becomes load-bearing. A bench/worktree with a
+non-terminal Status and a fresh heartbeat is LIVE — never adopted,
+never secured or pruned; a terminal Status (parked · failed · held ·
+shipped · superseded) or silence past the staleness window (~30 min,
+home: parallel-lanes §Canary) makes it RECLAIMABLE; doubt → ask. Read
+at the two previously blind sites — the claim check
+([LAWS §Workflow](../LAWS.md#workflow-non-negotiable)) and pickup
+§3's worktree sweep — fed by a per-worktree verdict the session-start
+hook computes and prints. Out of scope: the double-dispatch
+diagnostic (logged to [IDEAS](../IDEAS.md)), cloud/routine changes,
+product code. Spec: [lane-liveness](../specs/lane-liveness.md).
 
 ## Pending issues
 none.
 
 ## Left / idle
-Everything — work not yet begun; this is the birth stub.
+Nothing parked. The double-dispatch diagnostic deliberately lives in
+IDEAS, not here.
 
 ## The story
 Born 2026-07-16, the morning after the incident: a cockpit session
@@ -37,11 +40,44 @@ re-implemented the task, and removed the lane's worktree mid-flight.
 The lane survived (bench-first + push-every-commit) and the collision
 cost only duplicate work — but both blind spots were real: the claim
 check read Status words and PR state, never the heartbeat; pickup §3
-treated every dirty sibling worktree as dead by assumption.
+presumed every dirty sibling worktree dead.
+
+The one design call made here: the kickoff's LIVE clause ("last
+commit within the window, whatever the Status") and RECLAIMABLE
+clause ("terminal Status OR silent") overlap on a just-parked bench —
+the park stamp IS a fresh commit. Precedence had to go to the
+terminal Status, or a parked bench could not be lawfully resumed or
+respawned until the window lapsed, breaking the ordinary
+handoff→liftoff flow. That precedence is safe by the kickoff's own
+argument: the wake-lock guarantees no worker survives a Status it
+does not own, so a terminal word is authoritative regardless of
+heartbeat age. "Whatever the Status" now reads precisely: whatever
+NON-terminal word the Status shows (airborne, claimed, blocked, bench
+ready…), a fresh heartbeat means hands off.
+
+The hook's verdict was proven against a scratch worktree three ways —
+fresh commit + airborne → LIVE; a two-hour-backdated commit →
+RECLAIMABLE (silent past the window); Status stamped parked →
+RECLAIMABLE (terminal) — then the scratch was removed. One test
+gotcha: the `GIT_COMMITTER_DATE` env var rejects relative dates
+("2 hours ago") that `--date` would accept; an ISO timestamp works.
+
+Two small fidelity notes. The kickoff's pickup §3 replacement ended
+"Git wins where it disagrees with the board" — §3 already closes with
+exactly that rule, so the sentence was not duplicated. And the
+kickoff said to extend the hook's "existing worktree listing"; the
+hook had none (only gone-local branch removal), so the per-worktree
+block is new, placed right after it.
 
 ## Where to look
-Spec: [lane-liveness](../specs/lane-liveness.md). The incident:
+The rule:
+[parallel-lanes §Liveness](../skills/parallel-lanes.md#liveness--live-vs-reclaimable);
+window constant: its §Canary. Read-sites:
+[LAWS §Workflow](../LAWS.md#workflow-non-negotiable) claim-check
+clause · [pickup §3](../skills/pickup.md). The verdict:
+`.claude/hooks/session-start.mjs`. Vocabulary:
+[TEMPLATE](../memory/TEMPLATE.md). Decision:
+[D-042](../DECISIONS.md#d-042--2026-07--lane-liveness--derive-live-vs-reclaimable-from-the-commit-heartbeat-read-it-at-claim-check-and-session-start-cleanup-so-a-live-lane-is-never-adopted-or-pruned-amends-the-claim-check-clause-and-pickup-3-upholds-the-wake-lock-and-seat-invariance).
+The incident:
 [ledger-integrity history](../history/workshop/mechanism/ledger-integrity.md).
-Rule home once shipped: [parallel-lanes](../skills/parallel-lanes.md)
-§Liveness; window constant: its §Canary; hook:
-`.claude/hooks/session-start.mjs`.
+PR: [#142](https://github.com/wsher0901/roam/pull/142).

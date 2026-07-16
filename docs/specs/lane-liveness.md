@@ -76,29 +76,40 @@ the window lapsed.
 
 ## Done means
 
-- [ ] D-042 in [DECISIONS](../DECISIONS.md), anchors born resolving,
+- [x] D-042 in [DECISIONS](../DECISIONS.md), anchors born resolving,
       entry + ripple one commit.
-- [ ] LAWS claim-check clause reads through
+- [x] LAWS claim-check clause reads through
       [parallel-lanes §Liveness](../skills/parallel-lanes.md#liveness--live-vs-reclaimable);
       grep confirms both read-sites reference the rule.
-- [ ] parallel-lanes: §Liveness present; "staleness window" present in
+- [x] parallel-lanes: §Liveness present; "staleness window" present in
       §Canary; §Respawn points to §Liveness.
-- [ ] pickup §3: "died un-parked" appears ONLY inside the RECLAIMABLE
+- [x] pickup §3: "died un-parked" appears ONLY inside the RECLAIMABLE
       branch.
-- [ ] The hook prints branch · heartbeat age · Status word · verdict
+- [x] The hook prints branch · heartbeat age · Status word · verdict
       per worktree — verified against a scratch worktree (LIVE,
       silent-RECLAIMABLE, and terminal-RECLAIMABLE all exercised),
       scratch removed after.
-- [ ] TEMPLATE vocabulary covers {airborne · claimed · parked ·
+- [x] TEMPLATE vocabulary covers {airborne · claimed · parked ·
       respawned · superseded · failed · held · shipped}.
-- [ ] HOME §Terms + portrait clause in place.
-- [ ] IDEAS carries the double-dispatch diagnostic line.
-- [ ] check:links green · check:ledger green · full CI mirror green ·
+- [x] HOME §Terms + portrait clause in place.
+- [x] IDEAS carries the double-dispatch diagnostic line.
+- [x] check:links green · check:ledger green · full CI mirror green ·
       the pushed commit's Actions run green.
 
 ## Deviations
 
-<filled by /ship>
+- Precedence disambiguation: the kickoff's LIVE clause ("within the
+  window, whatever the Status") and RECLAIMABLE clause ("terminal
+  Status OR silent") overlap on a just-parked bench — the park stamp
+  IS a fresh commit. Terminal Status wins (see §The rule above);
+  otherwise a parked bench could not be resumed or respawned until
+  the window lapsed. Safe by the kickoff's own wake-lock argument.
+- pickup §3: the kickoff's replacement text ended "Git wins where it
+  disagrees with the board" — §3 already closes with exactly that
+  rule, so the sentence was not duplicated.
+- The hook had no "existing worktree listing" to extend (only
+  gone-local branch removal) — the per-worktree verdict block is new,
+  placed immediately after it.
 
 ## Open questions
 
