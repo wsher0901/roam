@@ -2,12 +2,12 @@
 type: spec
 id: full-pass-fixes
 title: Full-pass fixes — close the July full-pass audit's findings
-status: open
+status: shipped
 stage: workshop
 branch: chore/full-pass-fixes
-pr: —
+pr: 144
 opened: 2026-07-16
-shipped: —
+shipped: 2026-07-16
 ---
 # full-pass-fixes — close the July full-pass audit's findings
 
