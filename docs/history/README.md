@@ -27,6 +27,7 @@ Every weld prepends one line — the full chronology across all four
 doors, newest first. Frozen stories carry date only; entries from
 D-035 on carry time.
 
+- 2026-07-16 10:37 · lane-liveness — Lane liveness (D-042): live-vs-reclaimable derived from the commit heartbeat and read at the claim check and pickup's worktree sweep, fed by the session-start hook's verdict — a live lane is never adopted or pruned → workshop/mechanism · #142
 - 2026-07-16 08:57 · ledger-integrity — a CI gate (check:ledger) proving history/ files and the ledger index stay in one-to-one bijection by #PR, plus a ship §7 weld-staging line so a dropped or orphaned ledger line turns the build red instead of leaving a silent gap → workshop/mechanism · #140
 - 2026-07-15 15:35 · cap-confirm — the Max routine cap firmed to confirmed fact (15/day, flat across Max tiers): the SETUP and liftoff live-number hedges retired → workshop/definition · #138
 - 2026-07-15 14:39 · delegation-architecture — Delegation architecture (D-041): the away-mode chooser (local · handoff · go-remote · liftoff), the go-remote tether posture, idle-wait, label-spawned cloud lanes → workshop/mechanism · #136

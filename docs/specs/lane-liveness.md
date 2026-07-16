@@ -2,12 +2,12 @@
 type: spec
 id: lane-liveness
 title: Lane liveness — live-vs-reclaimable from the commit heartbeat, read at the two blind sites
-status: open
+status: shipped
 stage: workshop
 branch: docs/lane-liveness
-pr: —
+pr: 142
 opened: 2026-07-16
-shipped: —
+shipped: 2026-07-16
 ---
 # lane-liveness — live-vs-reclaimable from the commit heartbeat
 
