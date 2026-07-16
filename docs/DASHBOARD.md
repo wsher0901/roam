@@ -6,8 +6,8 @@ status: living
 
 # Dashboard — the state surface
 
-Stamp: 2026-07-16 · 18:01 · ship · work PC
-V1 5/34 · S1 2/7 · S2 3/5 · sessions: 1 main · 1 parallel
+Stamp: 2026-07-16 · 18:15 · handoff · work PC
+V1 5/34 · S1 2/7 · S2 3/5 · sessions: 0 main · 1 parallel
 (1 needs you) · needs-you 5
 How to read this board →
 [HOME §Reading the board](HOME.md#reading-the-board)
@@ -50,11 +50,14 @@ How to read this board →
 
 | Session | Task | State | Last push | Your move |
 |---|---|---|---|---|
-| main · cockpit (work PC) | Ops — the delegation maiden flight, block 1 ([verify list](skills/parallel-lanes.md#cloud-spawn--route-ladder)) | 🟡 holding idle | — | leg A respawn route (see Needs-you 5) |
-| cloud | [reviewer-subagent](https://github.com/wsher0901/roam/blob/chore/reviewer-subagent/docs/memory/reviewer-subagent.md) · [PR #146](https://github.com/wsher0901/roam/pull/146) | 🔴 cloud spawn failed — route 1, no session in ~13 min | 17:16 (failure record) | choose the respawn route (Needs-you 5) |
+| cloud | [reviewer-subagent](https://github.com/wsher0901/roam/blob/chore/reviewer-subagent/docs/memory/reviewer-subagent.md) · [PR #146](https://github.com/wsher0901/roam/pull/146) | 🔴 cloud spawn failed — route 1, no session in ~13 min | 18:15 (handoff rewrite + main sync) | choose the respawn route (Needs-you 5) |
 
-↳ main micro: preflight 🟢 · leg A label 🟢 → spawn 🔴 · leg B
-airborne → landed → shipped 🟢 · flight report ⚪ (block 2)
+↳ main micro: — (no live main session)
+
+Maiden flight, block 1 closed with this handoff: preflight 🟢 ·
+leg A label 🟢 → spawn 🔴 (the one open item) · leg B airborne →
+landed → shipped 🟢 · flight report ⚪ (block 2, on the founder's
+paste).
 
 Flight context: count:runs read 0 at preflight, 1 after the leg A
 label (the label-event proxy counts the trigger though no session
@@ -96,8 +99,9 @@ flowchart LR
   class S4,S5,S6,S7,S8 pending
 ```
 
-One Web thread concluded this sitting: the July full-pass audit —
-its findings shipped as full-pass-fixes
+Web/Design paste at this handoff: none (a bare trigger). One Web
+thread concluded this sitting: the July full-pass audit — its
+findings shipped as full-pass-fixes
 ([#144](https://github.com/wsher0901/roam/pull/144)); T3–T6
 source-vetting relaunch stays held (see You are here).
 
