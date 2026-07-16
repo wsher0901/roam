@@ -49,24 +49,24 @@ every edit below is exact.
 3. `docs/SETUP.md`, the "Models & effort" bullet in
    [§Once and done — cloud accounts](../SETUP.md#once-and-done--cloud-accounts)
    — replace the bullet's text with the founder's doctrine of
-   2026-07-16, verbatim (fenced here so the SETUP-relative link
-   checks only where it lands):
+   2026-07-16, verbatim per the fenced block below (fenced at top
+   level so the SETUP-relative link checks only where it lands):
 
-   ```text
-   - Models & effort (doctrine — the Web paste block's Model +
-     Effort line draws from here). Effort ladder: low · medium ·
-     high · xhigh · max. Reliance pair: Opus 4.8 — cockpit default,
-     all judgment/architecture work, at xhigh; Sonnet 5 (June 2026)
-     — fully-specified, speed-sensitive, or volume work, at high.
-     Brain-critical work: Fable 5 when available; until its return,
-     Opus 4.8 · xhigh holds the seat. The plateau: xhigh is the
-     working ceiling for judgment work — max only by explicit
-     founder tag for rare one-shots; ultracode only by explicit
-     founder tag for coverage-critical sweeps. Throttle order under
-     usage limits: reduce effort before downgrading the model.
-     Agent Teams: teammates are Sonnet 5
-     ([parallel-lanes §Vehicles](skills/parallel-lanes.md#vehicles)).
-   ```
+```text
+- Models & effort (doctrine — the Web paste block's Model + Effort
+  line draws from here). Effort ladder: low · medium · high · xhigh
+  · max. Reliance pair: Opus 4.8 — cockpit default, all
+  judgment/architecture work, at xhigh; Sonnet 5 (June 2026) —
+  fully-specified, speed-sensitive, or volume work, at high.
+  Brain-critical work: Fable 5 when available; until its return,
+  Opus 4.8 · xhigh holds the seat. The plateau: xhigh is the working
+  ceiling for judgment work — max only by explicit founder tag for
+  rare one-shots; ultracode only by explicit founder tag for
+  coverage-critical sweeps. Throttle order under usage limits:
+  reduce effort before downgrading the model. Agent Teams: teammates
+  are Sonnet 5
+  ([parallel-lanes §Vehicles](skills/parallel-lanes.md#vehicles)).
+```
 
 Weave: new mentions link to their homes; `npm run check:links`
 green.
