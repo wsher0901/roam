@@ -36,3 +36,9 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   ignoring `docs/**` in CI would leave that required check
   unreported and block every docs-only merge; adopt only with a
   matching protection carve-out.
+- 2026-07-16 (Claude Code, [lane-liveness](specs/lane-liveness.md)): diagnose how two
+  workers were dispatched to one id in the
+  [ledger-integrity](history/workshop/mechanism/ledger-integrity.md)
+  incident — liveness makes the collision harmless but not the
+  double-dispatch; check auto-dispatch + a manual paste, or a prior
+  session, spawning twice.

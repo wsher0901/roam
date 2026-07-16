@@ -61,7 +61,11 @@ founder.
 - When a task's work is complete, run ship yourself — never declare a
   task done in conversation without it.
 - Claim check before starting any task: open branches + draft PRs
-  answer it; ask the founder only on genuine ambiguity.
+  answer it, read through the liveness rule
+  ([parallel-lanes §Liveness](skills/parallel-lanes.md#liveness--live-vs-reclaimable))
+  — a bench with a live heartbeat is CLAIMED, never picked up; a
+  reclaimable one is adopted via respawn; on doubt, ask. Commits are
+  the heartbeat.
 - Dispatch & away-mode (the chooser): mid-session parallelizable work
   → LOCAL lane (background agents / worktrees). Leaving with nothing
   continuing → handoff. Leaving with work continuing: machine stays

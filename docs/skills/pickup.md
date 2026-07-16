@@ -34,9 +34,14 @@ Sources:
 Read ROADMAP · DASHBOARD · every active branch's memory/<id>.md ·
 live git (`git fetch --prune` first — stale remote-tracking refs
 lie — then `git branch -r`, `gh pr list --state open` including
-drafts). Check `git worktree list`: a dirty sibling worktree is a
-lane that died un-parked — secure it (commit + push on its branch)
-and surface it under NEEDS YOU. Relay any hook lines from session
+drafts). Check `git worktree list` against the liveness rule
+([parallel-lanes §Liveness](parallel-lanes.md#liveness--live-vs-reclaimable)),
+using the verdict the session-start hook printed: a LIVE worktree
+(heartbeat within the window) is a running lane — LEAVE IT, surface
+it under Sessions/NEEDS YOU as flying, never secure-or-prune. A
+RECLAIMABLE one (terminal Status or silent past the window) that is
+dirty is a lane that died un-parked — secure it (commit + push on
+its branch) and surface it. Relay any hook lines from session
 start (branches removed as welded elsewhere, or one it could not
 remove). Where the board and git disagree, git wins — say so
 plainly.

@@ -1102,3 +1102,52 @@ recording guarantee is preserved).
 ·
 [D-009](#d-009--2026-06--pacing-law-finish-first-flexible-cap)
 · this entry.
+
+## D-042 — 2026-07 — Lane liveness — derive live-vs-reclaimable from the commit heartbeat; read it at claim-check and session-start cleanup so a live lane is never adopted or pruned (amends the claim-check clause and pickup §3; upholds the wake-lock and seat-invariance)
+**Decision:** "commits are the heartbeat"
+([LAWS §Task anatomy](LAWS.md#task-anatomy)) is now load-bearing. A
+bench or worktree is LIVE — never adopted, never secured or pruned —
+when its memory Status is non-terminal and its branch's last commit
+falls within the staleness window (value settled in
+[parallel-lanes §Canary](skills/parallel-lanes.md#canary-handshake-both-sides),
+starting at ~30 minutes, tunable). It is RECLAIMABLE when its Status
+is terminal (parked · failed · held · shipped · superseded) — a
+terminal word outranks a fresh heartbeat, because the stamp commit IS
+the parking act and the wake-lock guarantees no worker survives a
+Status it does not own — OR when the branch is silent past the
+window. Genuine doubt → announce what you see and ask. The rule is
+read at the two previously blind sites: the claim check
+([LAWS §Workflow](LAWS.md#workflow-non-negotiable)) and
+[pickup §3](skills/pickup.md)'s worktree sweep, fed by a
+per-worktree verdict (branch · heartbeat age · Status word ·
+LIVE|RECLAIMABLE) the session-start hook computes and prints. The
+wake-lock backstops a misjudged window: a wrongly-reclaimed lane
+meets a Status it does not own on its next wake and self-terminates —
+the cost is a restart, never split-brain work.
+**Why:** the ledger-integrity incident
+([the story](history/workshop/mechanism/ledger-integrity.md)) — a
+cockpit session adopted a bench and removed a worktree that a live
+lane was flying. The lane's heartbeat (commits minutes old) was
+visible the whole time, but no rule told the claim check or the
+session-start cleanup to read it: the claim check consulted branches
+and PR state without asking "is someone flying this NOW", and pickup
+§3 presumed every dirty sibling worktree dead.
+**Alternatives rejected:** a hand-refreshed `claim:` frontmatter
+field (per-commit churn, can-forget; the git commit time is the same
+signal for free and derivation-law-aligned); a CI check (the
+collision is cross-branch, invisible to a single-branch CI run —
+enforcement is the two read-sites plus the hook's computed verdict).
+**Affects:** [LAWS §Workflow](LAWS.md#workflow-non-negotiable) ·
+[parallel-lanes §Liveness](skills/parallel-lanes.md#liveness--live-vs-reclaimable)
+(new) ·
+[parallel-lanes §Canary](skills/parallel-lanes.md#canary-handshake-both-sides)
+·
+[parallel-lanes §Respawn](skills/parallel-lanes.md#respawn-on-an-existing-bench-liftoff-adopt)
+· [pickup §3](skills/pickup.md) · the session-start hook
+(`.claude/hooks/session-start.mjs`) ·
+[TEMPLATE — the Status vocabulary](memory/TEMPLATE.md) ·
+[HOME §Terms](HOME.md#terms) ·
+[HOME §Lanes](HOME.md#lanes-local--cloud) · [IDEAS](IDEAS.md) (the
+double-dispatch diagnostic) ·
+[D-032](#d-032--2026-07--fleet-continuity--handoff-parks-every-local-lane-liftoff-respawns-parked-benches-wake-lock-parks-every-outcome-extends-the-d-020d-023-lane-law-upholds-d-009)
+(the wake-lock upheld) · this entry.
