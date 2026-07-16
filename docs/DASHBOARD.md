@@ -6,9 +6,9 @@ status: living
 
 # Dashboard — the state surface
 
-Stamp: 2026-07-16 · 12:48 · ship · work PC
-V1 5/34 · S1 2/7 · S2 3/5 · sessions: 0 main · 0 parallel ·
-needs-you 5
+Stamp: 2026-07-16 · 18:01 · ship · work PC
+V1 5/34 · S1 2/7 · S2 3/5 · sessions: 1 main · 1 parallel
+(1 needs you) · needs-you 5
 How to read this board →
 [HOME §Reading the board](HOME.md#reading-the-board)
 
@@ -30,50 +30,40 @@ How to read this board →
    [D-028](DECISIONS.md#d-028--2026-07--consolidation-recut--decision-policy--engine-brain-skeleton-form-project-policy-house-style-open-register-grows-69-upholds-d-021-extends-the-d-021-consolidation)
    · [V1.S3](ROADMAP.md#v1s3--engine-core--two-families-deep)
 4. ⚪ Write the reviewer-subagent spec — a small task queued after
-   the ops leg (since 07-13).
+   the ops leg; NOTE: now flying as the maiden's leg A payload, see
+   item 5 (since 07-13).
    → [SETUP §Staged](SETUP.md#staged--turns-on-when-its-stage-opens)
-5. ⚪ The delegation maiden flight (D-041): first real cloud lane —
-   records the route ladder's winning route + the verify checklist;
-   unblocked, the UI setup is complete (since 07-15).
-   → [parallel-lanes §Cloud spawn](skills/parallel-lanes.md#cloud-spawn--route-ladder)
+5. 🔴 The delegation maiden flight is MID-AIR: leg A (cloud, route 1
+   label-spawn) SPAWN FAILED — label fired 17:02:36, no session
+   evidence in ~13 min; leg B (local control) airborne. Your move:
+   check the routine's run record at claude.ai/code/routines, then
+   retry route 1 (remove + re-add the label) · route 2 (manual
+   claude.ai/code session on chore/reviewer-subagent) · or run leg A
+   locally (since 07-15).
+   → [leg A memory + failure record](https://github.com/wsher0901/roam/blob/chore/reviewer-subagent/docs/memory/reviewer-subagent.md)
+   · [PR #146](https://github.com/wsher0901/roam/pull/146) ·
+   [parallel-lanes §Canary](skills/parallel-lanes.md#canary-handshake-both-sides)
+   ·
+   [§Cloud spawn](skills/parallel-lanes.md#cloud-spawn--route-ladder)
 
 ## Sessions
 
-0 main · 0 parallel — operations idle. Shipped today: ledger-integrity
-([#140](https://github.com/wsher0901/roam/pull/140)) — the
-check:ledger CI gate keeping history/ and the ledger index in
-bijection, plus the ship §7 weld-staging tightening; and lane-liveness
-([#142](https://github.com/wsher0901/roam/pull/142), D-042) — commits
-are the heartbeat: live-vs-reclaimable read at the claim check and
-pickup's worktree sweep, fed by the session-start hook's per-worktree
-verdict, so a live lane is never adopted or pruned; and
-full-pass-fixes
-([#144](https://github.com/wsher0901/roam/pull/144)) — the July
-full-pass audit closed in one pass: the routine saved-prompt master,
-the count:runs cap read, collision hardening, the maiden-flight
-verify checklist, the Models & effort doctrine. The D-041 one-time
-UI setup is confirmed complete on the founder's word — the cloud
-lane path is fully armed for its maiden flight. The previous
-sitting shipped seven
-workshop tasks: the D-040 leaving-ritual inversion
-(handoff-inline-context,
-[#126](https://github.com/wsher0901/roam/pull/126)); four currency
-sweeps carrying it through the corpus — skills-precision-pass
-([#128](https://github.com/wsher0901/roam/pull/128)),
-home-currency-pass
-([#130](https://github.com/wsher0901/roam/pull/130)),
-retroactivity-sweep
-([#132](https://github.com/wsher0901/roam/pull/132)), laws-tightness
-([#134](https://github.com/wsher0901/roam/pull/134)); the capstone
-delegation-architecture
-([#136](https://github.com/wsher0901/roam/pull/136), D-041) — the
-away-mode chooser, the go-remote tether, idle-wait, and label-spawned
-cloud lanes; and cap-confirm
-([#138](https://github.com/wsher0901/roam/pull/138)) firming D-041's
-routine-cap budget into confirmed fact — 15/day, flat across Max
-tiers. No task is running.
+| Session | Task | State | Last push | Your move |
+|---|---|---|---|---|
+| main · cockpit (work PC) | Ops — the delegation maiden flight, block 1 ([verify list](skills/parallel-lanes.md#cloud-spawn--route-ladder)) | 🟡 holding idle | — | leg A respawn route (see Needs-you 5) |
+| cloud | [reviewer-subagent](https://github.com/wsher0901/roam/blob/chore/reviewer-subagent/docs/memory/reviewer-subagent.md) · [PR #146](https://github.com/wsher0901/roam/pull/146) | 🔴 cloud spawn failed — route 1, no session in ~13 min | 17:16 (failure record) | choose the respawn route (Needs-you 5) |
 
-↳ main micro: — (no live main session)
+↳ main micro: preflight 🟢 · leg A label 🟢 → spawn 🔴 · leg B
+airborne → landed → shipped 🟢 · flight report ⚪ (block 2)
+
+Flight context: count:runs read 0 at preflight, 1 after the leg A
+label (the label-event proxy counts the trigger though no session
+appeared), and 1 — unmoved — through leg B's whole local flight:
+local lanes are cap-free, as designed. Leg B flew the entire lane
+law unassisted (canary 17:18 → ack 17:19 → three edits → CI mirror
+→ Actions-green ready-flip → completion @mention) and was welded on
+the founder's word at 17:59
+([the story](history/workshop/definition/time-doctrine.md)).
 
 ## You are here
 
@@ -115,6 +105,7 @@ source-vetting relaunch stays held (see You are here).
 
 | When | What | PR |
 |---|---|---|
+| 07-16 17:59 | [Time is derived, never recalled: the derivation law gains its time clause, ship/handoff stamps read the shell clock, the Models & effort doctrine set to the 2026-07-16 statement — flown end-to-end by a local lane, the maiden's leg B](history/workshop/definition/time-doctrine.md) | [#147](https://github.com/wsher0901/roam/pull/147) |
 | 07-16 12:46 | [the July full-pass audit closed in one pass: external-item clearing, the routine saved-prompt master, the count:runs cap read, rejected-push wake + label idempotency, the reply-ack window, the maiden-flight verify list, the Models & effort doctrine, README + Web currency](history/workshop/mechanism/full-pass-fixes.md) | [#144](https://github.com/wsher0901/roam/pull/144) |
 | 07-16 10:37 | [Lane liveness (D-042): live-vs-reclaimable derived from the commit heartbeat and read at the claim check and pickup's worktree sweep, fed by the session-start hook's verdict — a live lane is never adopted or pruned](history/workshop/mechanism/lane-liveness.md) | [#142](https://github.com/wsher0901/roam/pull/142) |
 | 07-16 08:57 | [a CI gate (check:ledger) proving history/ files and the ledger index stay in one-to-one bijection by #PR, plus a ship §7 weld-staging line so a dropped or orphaned ledger line turns the build red instead of leaving a silent gap](history/workshop/mechanism/ledger-integrity.md) | [#140](https://github.com/wsher0901/roam/pull/140) |
@@ -124,4 +115,3 @@ source-vetting relaunch stays held (see You are here).
 | 07-15 12:08 | [Retroactivity sweep: repair three later-found gaps — HOME's surviving Cloud-ledger ghost, handoff's non-vocabulary "waiting", recall's FOUNDATION + DESIGN-KICKOFF routing omissions](history/workshop/definition/retroactivity-sweep.md) | [#132](https://github.com/wsher0901/roam/pull/132) |
 | 07-15 11:18 | [HOME currency pass: bring the bible current with D-040/D-032/D-039/#128 and close six newcomer-test gaps — four rewordings, five new Terms, the recall read-path](history/workshop/definition/home-currency-pass.md) | [#130](https://github.com/wsher0901/roam/pull/130) |
 | 07-15 10:24 | [Skills precision pass: codify already-decided behavior across the corpus (decide · handoff · liftoff · parallel-lanes · recall); the abort-ledger ghost fully retired](history/workshop/mechanism/skills-precision-pass.md) | [#128](https://github.com/wsher0901/roam/pull/128) |
-| 07-15 09:23 | [Handoff input inversion: the leaving message carries the Web/Design paste inline; the never-skipped question is retired; a bare trigger means none](history/workshop/mechanism/handoff-inline-context.md) | [#126](https://github.com/wsher0901/roam/pull/126) |
