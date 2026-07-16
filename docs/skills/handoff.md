@@ -79,7 +79,10 @@ Sections, in this order:
   below it one indented "→" line carrying every link (the
   receipts). Invariants: any 🔴 anywhere on the board also appears
   here; whenever any session's Your-move is non-empty, one
-  aggregated line mirrors here.
+  aggregated line mirrors here. An item whose completion happens
+  outside the repo (UI setup, account config) cannot be derived by
+  rituals: it clears on the founder's word at any ritual, and the
+  repaint drops it then.
 - Sessions — the single home for EVERY lane row, cloud and local
   alike (airborne · blocked · parked · failed · held), a failed or
   held row carrying its reason in Your move — the Needs-you mirror

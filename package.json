@@ -9,6 +9,7 @@
     "lint": "eslint",
     "check:links": "node scripts/check-links.mjs",
     "check:ledger": "node scripts/check-ledger.mjs",
+    "count:runs": "node scripts/count-routine-runs.mjs",
     "test": "vitest run",
     "test:watch": "vitest",
     "format": "prettier --write .",

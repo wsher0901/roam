@@ -104,6 +104,10 @@ generously longer than the canary window so a live lane between
 commits never reads dead; tunable, settled here
 ([§Liveness](#liveness--live-vs-reclaimable) consumes it; the
 wake-lock backstops misjudgment).
+Sibling constant — reply-ack window: ~15 minutes, founder-side:
+after replying to a `BLOCKED:` lane, no new commit on its branch
+within the window means the session expired — respawn per
+[§Respawn](#respawn-on-an-existing-bench-liftoff-adopt).
 - Lane side: first act on waking is one trivial commit — memory
   Status → "claimed by <vehicle> — <date>" — pushed to its branch;
   then WAIT for the cockpit's acknowledgment in memory before real
@@ -129,6 +133,8 @@ Sources:
 
 ## Wake-lock & parking
 On ANY resume or wake, a lane re-reads its memory Status FIRST. A
+rejected push is a wake: pull, re-read your memory Status FIRST, and
+obey it before any retry. A
 Status it does not own — parked · respawned · superseded · failed —
 means: push nothing new, terminate. Completion and a failed spawn
 still PARK: the outcome is already in memory, and nothing continues
@@ -162,7 +168,13 @@ Try in order; the maiden flight records the winner here per
 [LAWS §Self-improvement](../LAWS.md#self-improvement):
 
 1. **Label-spawn.** On the pre-birthed draft PR:
-   `gh pr edit <N> --add-label lane:cloud`. The lane-worker routine
+   `gh pr edit <N> --add-label lane:cloud`. Idempotency guard —
+   before labeling, read the PR's labels and the memory Status: a
+   claimed/airborne Status or an existing `lane:cloud` label means
+   the lane is already flying — never re-add the label to spawn
+   "again" (GitHub may also redeliver label events; the
+   rejected-push rule in
+   [§Wake-lock](#wake-lock--parking) is the backstop). The lane-worker routine
    (GitHub trigger `pull_request.labeled`, filtered to label
    `lane:cloud`) starts a cloud session on that PR. Its saved prompt:
    check out the PR's branch, read `docs/memory/<id>.md`, follow
@@ -174,6 +186,19 @@ Try in order; the maiden flight records the winner here per
    "follow parallel-lanes").
 
 Winning route: unrecorded — the maiden flight writes it.
+
+Maiden flight — verify (the flight records the winner AND each
+item's result here):
+
+- [ ] the routine fires on the label
+- [ ] the sandbox can push (the canary lands)
+- [ ] the sandbox can PR-comment + @mention
+- [ ] the founder's reply resumes the session in-thread
+- [ ] a blocked lane survives a real idle gap
+- [ ] the run decrements the cap counter (`npm run count:runs`)
+- [ ] dormant-baton case: a phone-label with no cockpit running —
+      does the strict no-ack timeout starve it? (If yes, a one-line
+      decide softens [§Canary](#canary-handshake-both-sides) later.)
 
 Sources:
 [LAWS §Self-improvement](../LAWS.md#self-improvement)
