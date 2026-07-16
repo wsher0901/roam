@@ -6,8 +6,8 @@ status: living
 
 # Dashboard — the state surface
 
-Stamp: 2026-07-16 · 17:20 · dispatch · work PC
-V1 5/34 · S1 2/7 · S2 3/5 · sessions: 1 main · 2 parallel
+Stamp: 2026-07-16 · 18:01 · ship · work PC
+V1 5/34 · S1 2/7 · S2 3/5 · sessions: 1 main · 1 parallel
 (1 needs you) · needs-you 5
 How to read this board →
 [HOME §Reading the board](HOME.md#reading-the-board)
@@ -50,19 +50,20 @@ How to read this board →
 
 | Session | Task | State | Last push | Your move |
 |---|---|---|---|---|
-| main · cockpit (work PC) | Ops — the delegation maiden flight, block 1 ([verify list](skills/parallel-lanes.md#cloud-spawn--route-ladder)) | 🟡 holding idle after this repaint | — | leg A respawn route (see Needs-you 5) |
-| local parallel (worktree, Agent View) | [time-doctrine](https://github.com/wsher0901/roam/blob/docs/time-doctrine/docs/memory/time-doctrine.md) · [PR #147](https://github.com/wsher0901/roam/pull/147) | 🟡 airborne — claimed 17:18 · acked 17:19 | 17:19 | — |
+| main · cockpit (work PC) | Ops — the delegation maiden flight, block 1 ([verify list](skills/parallel-lanes.md#cloud-spawn--route-ladder)) | 🟡 holding idle | — | leg A respawn route (see Needs-you 5) |
 | cloud | [reviewer-subagent](https://github.com/wsher0901/roam/blob/chore/reviewer-subagent/docs/memory/reviewer-subagent.md) · [PR #146](https://github.com/wsher0901/roam/pull/146) | 🔴 cloud spawn failed — route 1, no session in ~13 min | 17:16 (failure record) | choose the respawn route (Needs-you 5) |
 
 ↳ main micro: preflight 🟢 · leg A label 🟢 → spawn 🔴 · leg B
-airborne 🟢 · repaint 🟡 · flight report ⚪ (block 2, after the
-lanes land)
+airborne → landed → shipped 🟢 · flight report ⚪ (block 2)
 
 Flight context: count:runs read 0 at preflight, 1 after the leg A
 label (the label-event proxy counts the trigger though no session
-appeared), and 1 — unmoved — after leg B's local spawn: local lanes
-are cap-free, as designed. Both lanes' benches were verified on
-origin before any spawn.
+appeared), and 1 — unmoved — through leg B's whole local flight:
+local lanes are cap-free, as designed. Leg B flew the entire lane
+law unassisted (canary 17:18 → ack 17:19 → three edits → CI mirror
+→ Actions-green ready-flip → completion @mention) and was welded on
+the founder's word at 17:59
+([the story](history/workshop/definition/time-doctrine.md)).
 
 ## You are here
 
@@ -104,6 +105,7 @@ source-vetting relaunch stays held (see You are here).
 
 | When | What | PR |
 |---|---|---|
+| 07-16 17:59 | [Time is derived, never recalled: the derivation law gains its time clause, ship/handoff stamps read the shell clock, the Models & effort doctrine set to the 2026-07-16 statement — flown end-to-end by a local lane, the maiden's leg B](history/workshop/definition/time-doctrine.md) | [#147](https://github.com/wsher0901/roam/pull/147) |
 | 07-16 12:46 | [the July full-pass audit closed in one pass: external-item clearing, the routine saved-prompt master, the count:runs cap read, rejected-push wake + label idempotency, the reply-ack window, the maiden-flight verify list, the Models & effort doctrine, README + Web currency](history/workshop/mechanism/full-pass-fixes.md) | [#144](https://github.com/wsher0901/roam/pull/144) |
 | 07-16 10:37 | [Lane liveness (D-042): live-vs-reclaimable derived from the commit heartbeat and read at the claim check and pickup's worktree sweep, fed by the session-start hook's verdict — a live lane is never adopted or pruned](history/workshop/mechanism/lane-liveness.md) | [#142](https://github.com/wsher0901/roam/pull/142) |
 | 07-16 08:57 | [a CI gate (check:ledger) proving history/ files and the ledger index stay in one-to-one bijection by #PR, plus a ship §7 weld-staging line so a dropped or orphaned ledger line turns the build red instead of leaving a silent gap](history/workshop/mechanism/ledger-integrity.md) | [#140](https://github.com/wsher0901/roam/pull/140) |
@@ -113,4 +115,3 @@ source-vetting relaunch stays held (see You are here).
 | 07-15 12:08 | [Retroactivity sweep: repair three later-found gaps — HOME's surviving Cloud-ledger ghost, handoff's non-vocabulary "waiting", recall's FOUNDATION + DESIGN-KICKOFF routing omissions](history/workshop/definition/retroactivity-sweep.md) | [#132](https://github.com/wsher0901/roam/pull/132) |
 | 07-15 11:18 | [HOME currency pass: bring the bible current with D-040/D-032/D-039/#128 and close six newcomer-test gaps — four rewordings, five new Terms, the recall read-path](history/workshop/definition/home-currency-pass.md) | [#130](https://github.com/wsher0901/roam/pull/130) |
 | 07-15 10:24 | [Skills precision pass: codify already-decided behavior across the corpus (decide · handoff · liftoff · parallel-lanes · recall); the abort-ledger ghost fully retired](history/workshop/mechanism/skills-precision-pass.md) | [#128](https://github.com/wsher0901/roam/pull/128) |
-| 07-15 09:23 | [Handoff input inversion: the leaving message carries the Web/Design paste inline; the never-skipped question is retired; a bare trigger means none](history/workshop/mechanism/handoff-inline-context.md) | [#126](https://github.com/wsher0901/roam/pull/126) |
