@@ -108,6 +108,9 @@ pass). Task-local calls route to this task's memory.
 - SETUP's live-counter line gained "mechanical read:
   `npm run count:runs`" so the new script is discoverable from the
   cap's home (same-section weave, not a new finding).
+- At external review: parallel-lanes route 1's saved-prompt
+  paraphrase inverted to a pointer at the SETUP master (one home per
+  class — the route ladder says when it fires, never what it says).
 
 ## Open questions
 

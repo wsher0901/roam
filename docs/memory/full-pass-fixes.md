@@ -67,7 +67,10 @@ the route ladder" phrasing inverted to point at the master below
 (the route ladder describes when it fires, not the prompt text).
 The reply-ack window landed as a second "sibling constant" line in
 [parallel-lanes §Canary](../skills/parallel-lanes.md#canary-handshake-both-sides),
-mirroring the staleness window's form.
+mirroring the staleness window's form. At external review the
+route-1 saved-prompt paraphrase was inverted to a pointer at the
+SETUP master (one home per class — the route ladder says when it
+fires, never what it says).
 
 ## Where to look
 Spec: [full-pass-fixes](../specs/full-pass-fixes.md). The counter:

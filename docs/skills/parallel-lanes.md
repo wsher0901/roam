@@ -176,10 +176,9 @@ Try in order; the maiden flight records the winner here per
    rejected-push rule in
    [§Wake-lock](#wake-lock--parking) is the backstop). The lane-worker routine
    (GitHub trigger `pull_request.labeled`, filtered to label
-   `lane:cloud`) starts a cloud session on that PR. Its saved prompt:
-   check out the PR's branch, read `docs/memory/<id>.md`, follow
-   parallel-lanes, and @mention `wsher0901` in a PR comment on any
-   `BLOCKED:` and on completion. The GitHub push IS the notification
+   `lane:cloud`) starts a cloud session on that PR. Its saved prompt: the fenced master in
+   [SETUP §Once and done — cloud accounts](../SETUP.md#once-and-done--cloud-accounts).
+   The GitHub push IS the notification
    channel; the founder's PR-comment reply feeds the running session.
 2. **Manual.** claude.ai/code or the mobile app → new session ON the
    pre-birthed branch → paste the kickoff line (task ID + branch +
