@@ -68,7 +68,8 @@ active branch's memory + PR state, history/** frontmatter, the
 founder's step-2 paste. This section IS the board's definition;
 pickup and liftoff render by pointing here.
 
-Header: stamp (date · time · ritual · seat) · the glance line
+Header: stamp (date · time · ritual · seat) (stamp values are read
+from the shell clock, never typed) · the glance line
 ("V1 a/b · S1 a/b · S2 a/b · sessions: N main · M parallel
 (K needs you) · needs-you N") · one pointer line "How to read this
 board → [HOME §Reading the board](../HOME.md#reading-the-board)".

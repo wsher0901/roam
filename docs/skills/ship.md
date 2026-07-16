@@ -56,11 +56,13 @@ atomically:
   [legend](../history/README.md); ties → workshop/definition;
   frontmatter →
   type: history, shipped: <date HH:MM>, pr: #N (workshop PRs:
-  slug-keyed history file, no ROADMAP tick)
+  slug-keyed history file, no ROADMAP tick) (stamp values are read
+  from the shell clock, never typed)
 - spec frontmatter → status: shipped, pr, shipped date
 - append one line atop
   [the ledger](../history/README.md#the-ledger):
-  <date HH:MM> · <story title> → <quadrant> · #N
+  <date HH:MM> · <story title> → <quadrant> · #N (stamp values are
+  read from the shell clock, never typed)
 - Stage the whole move together — `git add -A docs/history
   docs/ROADMAP.md docs/specs` before the commit — so no piece (history
   file, ledger line, tick) is left unstaged; `check:ledger` is the net
