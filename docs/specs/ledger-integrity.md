@@ -2,12 +2,12 @@
 type: spec
 id: ledger-integrity
 title: Ledger integrity — a CI gate for the history ↔ ledger bijection
-status: open
+status: shipped
 stage: workshop
 branch: chore/ledger-integrity
-pr: —
+pr: 140
 opened: 2026-07-15
-shipped: —
+shipped: 2026-07-16
 ---
 # ledger-integrity — a CI gate for the history ↔ ledger bijection
 
