@@ -6,9 +6,7 @@ updated: 2026-07-16 · birth · work PC
 # time-doctrine — time is derived, never recalled
 
 ## Status
-bench ready, no worker yet — birthed 2026-07-16 17:03 by work PC
-(cockpit). Local worktree lane spawn imminent — the delegation
-maiden flight, leg B (the local live-lane control).
+claimed by local worktree lane — 2026-07-16 17:18
 
 ## What this task is
 Three exact, fully-specified edits
