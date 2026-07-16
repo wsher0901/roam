@@ -57,17 +57,53 @@ Sources:
 [TEMPLATE](../memory/TEMPLATE.md)
 
 ## Respawn on an existing bench (liftoff adopt)
-A parked lane's bench already lives on origin — skip birth. The
+A parked lane's bench already lives on origin — skip birth. Adoption
+presumes a RECLAIMABLE bench per [§Liveness](#liveness--live-vs-reclaimable)
+— a live heartbeat is never adopted. The
 cloud worker's first act is the canary ON that branch — memory
 Status → "claimed for respawn by <vehicle> — <date>" — then WAIT;
 the cockpit ack overwrites the parked Status with "airborne ·
 <url> · <date>". Everything after — diary, PR speech, landing — is
 the ordinary lane law.
 
+## Liveness — live vs reclaimable
+Commits are the heartbeat
+([LAWS §Task anatomy](../LAWS.md#task-anatomy)): a bench's branch
+tells you whether a worker is flying it — the board and even the
+Status word can lag; the heartbeat cannot
+([D-042](../DECISIONS.md#d-042--2026-07--lane-liveness--derive-live-vs-reclaimable-from-the-commit-heartbeat-read-it-at-claim-check-and-session-start-cleanup-so-a-live-lane-is-never-adopted-or-pruned-amends-the-claim-check-clause-and-pickup-3-upholds-the-wake-lock-and-seat-invariance)).
+Read at the two blind sites: the claim check
+([LAWS §Workflow](../LAWS.md#workflow-non-negotiable)) and
+[pickup §3](pickup.md)'s worktree sweep, fed by the session-start
+hook's printed per-worktree verdict.
+
+- LIVE — the memory Status is non-terminal and the branch's last
+  commit is within the staleness window
+  ([§Canary](#canary-handshake-both-sides) holds the value): a
+  worker is flying it. Hands off, whatever that Status says — never
+  adopt, never secure, never prune.
+- RECLAIMABLE — the Status is terminal (parked · failed · held ·
+  shipped · superseded) OR the branch is silent past the window. A
+  terminal Status outranks a fresh heartbeat: the stamp commit IS
+  the parking act, and the wake-lock guarantees no worker survives
+  a Status it does not own. Adopt via
+  [§Respawn](#respawn-on-an-existing-bench-liftoff-adopt); a dirty
+  reclaimable worktree is secured per [pickup §3](pickup.md).
+- Genuine doubt → announce what you see and ask the founder.
+
+The wake-lock is the backstop for a misjudged window: a lane wrongly
+judged reclaimable meets a Status it does not own on its next wake
+and self-terminates — the cost is a restart, never split-brain work.
+
 ## Canary handshake (both sides)
 The timeout constants live HERE and nowhere else — LAWS and liftoff
 point back to this section: the window is ~10 minutes (cloud) or ~2
 (local), and both sides use the SAME window.
+Sibling constant — liveness staleness window: ~30 minutes,
+generously longer than the canary window so a live lane between
+commits never reads dead; tunable, settled here
+([§Liveness](#liveness--live-vs-reclaimable) consumes it; the
+wake-lock backstops misjudgment).
 - Lane side: first act on waking is one trivial commit — memory
   Status → "claimed by <vehicle> — <date>" — pushed to its branch;
   then WAIT for the cockpit's acknowledgment in memory before real

@@ -597,6 +597,10 @@ While flying, a lane pushes every commit, never shares a file with
 any sibling (so merges can't collide), keeps its own memory at the
 four moments, and speaks only through its PR — `BLOCKED:` comments
 for questions, the ready-flip plus plain summary for completion.
+Those pushed commits are also the lane's heartbeat: the cockpit
+reads them for liveness and never adopts or prunes a lane whose
+heartbeat is fresh — reclaiming a bench takes a terminal Status or
+real silence past the staleness window.
 
 Sources:
 [four moments](skills/parallel-lanes.md#the-four-memory-moments-the-lanes-diary-rule)
@@ -962,6 +966,12 @@ the link for the full story.
   the cockpit in the lane's memory before real work starts. Home:
   [parallel-lanes §Canary
   handshake](skills/parallel-lanes.md#canary-handshake-both-sides).
+- **heartbeat / liveness** — commits are the heartbeat: a bench
+  whose branch committed within the staleness window is LIVE —
+  untouchable, never adopted or pruned; a terminal Status or
+  silence past the window makes it RECLAIMABLE. Home:
+  [parallel-lanes §Liveness](skills/parallel-lanes.md#liveness--live-vs-reclaimable)
+  · [LAWS §Workflow](LAWS.md#workflow-non-negotiable).
 - **park protocol / rescue-save** — how FULL
   [handoff](skills/handoff.md) stands a local lane down: rescue-save
   (a `wip:` commit + push) ONLY if the tree holds unsaved work, then

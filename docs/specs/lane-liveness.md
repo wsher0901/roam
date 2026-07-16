@@ -79,8 +79,7 @@ the window lapsed.
 - [ ] D-042 in [DECISIONS](../DECISIONS.md), anchors born resolving,
       entry + ripple one commit.
 - [ ] LAWS claim-check clause reads through
-      [parallel-lanes §Liveness](../skills/parallel-lanes.md) (anchor
-      tightened in the work commit, born resolving);
+      [parallel-lanes §Liveness](../skills/parallel-lanes.md#liveness--live-vs-reclaimable);
       grep confirms both read-sites reference the rule.
 - [ ] parallel-lanes: §Liveness present; "staleness window" present in
       §Canary; §Respawn points to §Liveness.

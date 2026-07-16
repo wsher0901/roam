@@ -3,7 +3,7 @@
 // Cross-platform (Windows, macOS, Linux, cloud). Must NEVER block or
 // fail a session: every step degrades gracefully and we always exit 0.
 import { execSync, execFileSync } from "node:child_process";
-import { readFileSync, existsSync, unlinkSync } from "node:fs";
+import { readFileSync, readdirSync, existsSync, unlinkSync } from "node:fs";
 import { join } from "node:path";
 
 function sh(cmd) {
@@ -71,6 +71,55 @@ for (const b of goneLocals) {
     gone !== null
       ? `[hook] removed local branch ${b} (${tip}) — welded elsewhere.`
       : `[hook] could not remove ${b} — leaving it; mention it in the briefing.`
+  );
+}
+
+// Lane liveness per sibling worktree (D-042; pickup §3 consumes the
+// verdict). Commits are the heartbeat: a terminal memory Status
+// (parked · failed · held · shipped · superseded) means RECLAIMABLE —
+// the wake-lock kills any straggler; otherwise a commit within the
+// staleness window means LIVE (hands off), and silence past it means
+// RECLAIMABLE. The window's single home is parallel-lanes §Canary
+// (~30 min) — keep this constant in step with it.
+const STALE_MINUTES = 30;
+const TERMINAL_RE = /\b(parked|failed|held|shipped|superseded)\b/i;
+const norm = (p) => p.replace(/\\/g, "/").toLowerCase();
+const wtBlocks = (sh("git worktree list --porcelain") ?? "")
+  .split(/\n\s*\n/)
+  .filter(Boolean);
+for (const block of wtBlocks) {
+  const wtPath = /^worktree (.+)$/m.exec(block)?.[1];
+  if (!wtPath || norm(wtPath) === norm(root)) continue; // self
+  const wtBranch =
+    /^branch refs\/heads\/(.+)$/m.exec(block)?.[1] ?? "(detached)";
+  const ct = shFile("git", ["-C", wtPath, "log", "-1", "--format=%ct"]);
+  const ageMin = ct
+    ? Math.round((Date.now() / 1000 - Number(ct)) / 60)
+    : null;
+  // The worktree's own memory Status word (a lane carries one task).
+  let statusWord = "—";
+  try {
+    const memDir = join(wtPath, "docs", "memory");
+    const mems = readdirSync(memDir).filter(
+      (f) => f.endsWith(".md") && f !== "README.md" && f !== "TEMPLATE.md"
+    );
+    if (mems.length === 1) {
+      const body = readFileSync(join(memDir, mems[0]), "utf8");
+      const m = /^## Status\s*\r?\n+(.+)$/m.exec(body);
+      if (m) statusWord = m[1].trim().split("—")[0].trim();
+    }
+  } catch {
+    // no memory readable — the heartbeat alone decides
+  }
+  const verdict = TERMINAL_RE.test(statusWord)
+    ? "RECLAIMABLE (terminal Status)"
+    : ageMin !== null && ageMin <= STALE_MINUTES
+      ? "LIVE — hands off"
+      : "RECLAIMABLE (silent past the window)";
+  console.log(
+    `[hook] lane worktree ${wtBranch} · last commit ${
+      ageMin === null ? "unknown" : `${ageMin} min ago`
+    } · Status: ${statusWord} · verdict: ${verdict} (parallel-lanes §Liveness).`
   );
 }
 
