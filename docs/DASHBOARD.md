@@ -6,7 +6,7 @@ status: living
 
 # Dashboard — the state surface
 
-Stamp: 2026-07-16 · 09:08 · ship · work PC
+Stamp: 2026-07-16 · 10:41 · ship · work PC
 V1 5/34 · S1 2/7 · S2 3/5 · sessions: 0 main · 0 parallel ·
 needs-you 6
 How to read this board →
@@ -47,7 +47,15 @@ How to read this board →
 
 ## Sessions
 
-0 main · 0 parallel — operations idle. This sitting shipped eight
+0 main · 0 parallel — operations idle. Shipped today: ledger-integrity
+([#140](https://github.com/wsher0901/roam/pull/140)) — the
+check:ledger CI gate keeping history/ and the ledger index in
+bijection, plus the ship §7 weld-staging tightening; and lane-liveness
+([#142](https://github.com/wsher0901/roam/pull/142), D-042) — commits
+are the heartbeat: live-vs-reclaimable read at the claim check and
+pickup's worktree sweep, fed by the session-start hook's per-worktree
+verdict, so a live lane is never adopted or pruned. The previous
+sitting shipped seven
 workshop tasks: the D-040 leaving-ritual inversion
 (handoff-inline-context,
 [#126](https://github.com/wsher0901/roam/pull/126)); four currency
@@ -64,11 +72,7 @@ away-mode chooser, the go-remote tether, idle-wait, and label-spawned
 cloud lanes; and cap-confirm
 ([#138](https://github.com/wsher0901/roam/pull/138)) firming D-041's
 routine-cap budget into confirmed fact — 15/day, flat across Max
-tiers; and ledger-integrity
-([#140](https://github.com/wsher0901/roam/pull/140)) — a CI gate
-keeping the history/ files and the ledger index in one-to-one
-bijection, plus a ship §7 weld-staging tightening so a dropped ledger
-line goes red, not silent. No task is running.
+tiers. No task is running.
 
 ↳ main micro: — (no live main session)
 
@@ -104,14 +108,15 @@ flowchart LR
 ```
 
 No open Web or Design threads — none surfaced this sitting.
-ledger-integrity shipped
-([#140](https://github.com/wsher0901/roam/pull/140)); T3–T6
+lane-liveness shipped
+([#142](https://github.com/wsher0901/roam/pull/142), D-042); T3–T6
 source-vetting relaunch stays held (see You are here).
 
 ## Shipped (latest — full record: [the ledger](history/README.md#the-ledger))
 
 | When | What | PR |
 |---|---|---|
+| 07-16 10:37 | [Lane liveness (D-042): live-vs-reclaimable derived from the commit heartbeat and read at the claim check and pickup's worktree sweep, fed by the session-start hook's verdict — a live lane is never adopted or pruned](history/workshop/mechanism/lane-liveness.md) | [#142](https://github.com/wsher0901/roam/pull/142) |
 | 07-16 08:57 | [a CI gate (check:ledger) proving history/ files and the ledger index stay in one-to-one bijection by #PR, plus a ship §7 weld-staging line so a dropped or orphaned ledger line turns the build red instead of leaving a silent gap](history/workshop/mechanism/ledger-integrity.md) | [#140](https://github.com/wsher0901/roam/pull/140) |
 | 07-15 15:35 | [the Max routine cap firmed to confirmed fact (15/day, flat across Max tiers): the SETUP and liftoff live-number hedges retired](history/workshop/definition/cap-confirm.md) | [#138](https://github.com/wsher0901/roam/pull/138) |
 | 07-15 14:39 | [Delegation architecture (D-041): the away-mode chooser (local · handoff · go-remote · liftoff), the go-remote tether posture, idle-wait, label-spawned cloud lanes](history/workshop/mechanism/delegation-architecture.md) | [#136](https://github.com/wsher0901/roam/pull/136) |
@@ -120,5 +125,4 @@ source-vetting relaunch stays held (see You are here).
 | 07-15 11:18 | [HOME currency pass: bring the bible current with D-040/D-032/D-039/#128 and close six newcomer-test gaps — four rewordings, five new Terms, the recall read-path](history/workshop/definition/home-currency-pass.md) | [#130](https://github.com/wsher0901/roam/pull/130) |
 | 07-15 10:24 | [Skills precision pass: codify already-decided behavior across the corpus (decide · handoff · liftoff · parallel-lanes · recall); the abort-ledger ghost fully retired](history/workshop/mechanism/skills-precision-pass.md) | [#128](https://github.com/wsher0901/roam/pull/128) |
 | 07-15 09:23 | [Handoff input inversion: the leaving message carries the Web/Design paste inline; the never-skipped question is retired; a bare trigger means none](history/workshop/mechanism/handoff-inline-context.md) | [#126](https://github.com/wsher0901/roam/pull/126) |
-| 07-14 14:50 | [Recall — the routing table's read mirror: founder questions answered from the files with receipts, never from memory; fires on its own judgment](history/workshop/mechanism/recall-skill.md) | [#123](https://github.com/wsher0901/roam/pull/123) |
 | 07-14 11:46 | [Leg-end restyle sweep: D-029 finishes its migration — every living doc carries its links below the prose](history/workshop/definition/restyle-sweep.md) | [#121](https://github.com/wsher0901/roam/pull/121) |
