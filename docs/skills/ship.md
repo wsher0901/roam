@@ -14,9 +14,9 @@ reliability law BEFORE surfacing it — then this same procedure.
 Be on the task's branch; know its ID (or workshop slug). Sync with
 main FIRST: merge current origin/main into the branch (merge, never
 rebase — the history is pushed); resolve anything. Then the
-full CI mirror — lint · format:check · check:links · tests ·
-build; fix failures first — what you test is exactly what main
-will contain after the weld.
+full CI mirror — lint · format:check · check:links · check:ledger ·
+tests · build; fix failures first — what you test is exactly what
+main will contain after the weld.
 
 ## 2 · Spec gate
 If a spec exists: verify every Done-means box honestly against the
@@ -61,6 +61,10 @@ atomically:
 - append one line atop
   [the ledger](../history/README.md#the-ledger):
   <date HH:MM> · <story title> → <quadrant> · #N
+- Stage the whole move together — `git add -A docs/history
+  docs/ROADMAP.md docs/specs` before the commit — so no piece (history
+  file, ledger line, tick) is left unstaged; `check:ledger` is the net
+  if it is.
 Push. The arbiter applies to welds too: arm
 `gh pr merge --auto --squash --delete-branch` and let it fire on
 the weld commit's green (~35s), or `gh pr checks --watch` then
