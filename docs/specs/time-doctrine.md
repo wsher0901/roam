@@ -2,12 +2,12 @@
 type: spec
 id: time-doctrine
 title: Time doctrine — time is derived, never recalled; Models & effort brought to the 2026-07-16 statement
-status: open
+status: shipped
 stage: workshop
 branch: docs/time-doctrine
-pr: —
+pr: 147
 opened: 2026-07-16
-shipped: —
+shipped: 2026-07-16
 ---
 # time-doctrine — time is derived, never recalled
 
@@ -73,19 +73,22 @@ green.
 
 ## Done means
 
-- [ ] The LAWS derivation-law bullet carries the time sentence.
-- [ ] ship §7's two stamp bullets and handoff §4's Header stamp line
+- [x] The LAWS derivation-law bullet carries the time sentence.
+- [x] ship §7's two stamp bullets and handoff §4's Header stamp line
       carry the clock parenthetical.
-- [ ] SETUP §Models & effort matches the 2026-07-16 doctrine
+- [x] SETUP §Models & effort matches the 2026-07-16 doctrine
       verbatim (reliance pair · Fable seat · the plateau · throttle
       order · teammates Sonnet 5 · the Web-line source note).
-- [ ] check:links green; full CI mirror green; the pushed commit's
+- [x] check:links green; full CI mirror green; the pushed commit's
       Actions run green; ready-flip only on green; completion
       comment @mentions wsher0901.
 
 ## Deviations
 
-<filled at ship>
+none — the lane flew the spec exactly (its report and memory record
+zero deviations). Boxes ticked by the cockpit at the weld, verified
+against the diff; the lane had recorded satisfaction in its memory
+and the PR body.
 
 ## Open questions
 

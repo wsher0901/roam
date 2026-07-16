@@ -27,6 +27,7 @@ Every weld prepends one line — the full chronology across all four
 doors, newest first. Frozen stories carry date only; entries from
 D-035 on carry time.
 
+- 2026-07-16 17:59 · time-doctrine — Time is derived, never recalled: the derivation law gains its time clause, ship/handoff stamps read the shell clock, and the Models & effort doctrine set to the founder's 2026-07-16 statement (reliance pair · the xhigh plateau) — flown end-to-end by a local lane, the maiden flight's leg B → workshop/definition · #147
 - 2026-07-16 12:46 · full-pass-fixes — the July full-pass audit closed in one pass: external-item clearing, the routine saved-prompt master, the count:runs cap read, rejected-push wake + label idempotency, the reply-ack window, the maiden-flight verify list, the Models & effort doctrine, README + Web currency → workshop/mechanism · #144
 - 2026-07-16 10:37 · lane-liveness — Lane liveness (D-042): live-vs-reclaimable derived from the commit heartbeat and read at the claim check and pickup's worktree sweep, fed by the session-start hook's verdict — a live lane is never adopted or pruned → workshop/mechanism · #142
 - 2026-07-16 08:57 · ledger-integrity — a CI gate (check:ledger) proving history/ files and the ledger index stay in one-to-one bijection by #PR, plus a ship §7 weld-staging line so a dropped or orphaned ledger line turns the build red instead of leaving a silent gap → workshop/mechanism · #140
