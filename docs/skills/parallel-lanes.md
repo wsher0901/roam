@@ -249,7 +249,9 @@ Maiden flight — verify (flown 2026-07-16; results of record):
       count: founder-attested 2026-07-17 — 1 run, matching the
       proxy
 - [ ] dormant-baton case — deferred: expected retired by the cloud
-      clerk (D-043, staged); stays open until proven
+      clerk (D-043; verified + PRIMARY since 2026-07-17 —
+      [cloud-clerk](../specs/cloud-clerk.md)); stays open until a
+      dormant-baton answer is proven live
 
 Wake-lock battle-tested live: a redelivered `pull_request.labeled`
 webhook at 21:57, citing a stale head SHA, met the
