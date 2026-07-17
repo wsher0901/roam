@@ -1,16 +1,16 @@
 ---
 type: memory
 id: agent-teams-brain
-updated: 2026-07-17 · bench birth · work PC
+updated: 2026-07-17 · 20:59 UTC · canary claim · cloud
 ---
 
 # agent-teams-brain — the Hands doctrine (D-045)
 
 ## Status
 
-bench ready, no worker yet — birthed 2026-07-17 by the cockpit
-(work PC) for the Shakedown Flight phase 2; awaiting cloud spawn
-via the label recipe.
+claimed by cloud — 2026-07-17 · 20:59 UTC. Canary pushed;
+awaiting the cockpit's airborne ack per parallel-lanes §Canary
+before real work.
 
 ## What this task is
 
