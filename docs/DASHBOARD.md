@@ -6,22 +6,22 @@ status: living
 
 # Dashboard — the state surface
 
-Stamp: 2026-07-17 · 16:43 · ship-tail · work PC
-V1 5/34 · S1 2/7 · S2 3/5 · sessions: 1 main · 0 parallel
+Stamp: 2026-07-17 · 17:05 · liftoff · work PC
+V1 5/34 · S1 2/7 · S2 3/5 · sessions: 0 main · 2 parallel
 (0 needs you) · needs-you 2
 How to read this board →
 [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
 
-1. 🟡 The ~3-minute ignition act, whenever you next sit at
-   claude.ai/code/routines: create the SECOND routine named
-   "clerk" (saved prompt = the charter master v2 + the spawn
-   preamble, both in SETUP), add the API trigger, generate the
-   fire token ONCE, and paste token + `trig_…` id into the
-   cockpit — it stores them in `.env.local`; the other seat
-   repeats at its next sitting. Prerequisite for the Shakedown
-   Flight phase 2 (N1–N6 · A1–A5) (since 07-17).
+1. 🟡 The next cockpit sitting owns the Shakedown phase-2
+   landing: reviews + merge words + welds for the two flying
+   lanes ([#170](https://github.com/wsher0901/roam/pull/170) ·
+   [#171](https://github.com/wsher0901/roam/pull/171)), the
+   N1–N6 / A1–A5 grading, and the full-forensics flight audit.
+   Also outstanding: the home seat repeats the clerk-credential
+   paste at its next sitting — the WORKING routine id is
+   `trig_`-prefixed (corrected live at A1) (since 07-17).
    → [SETUP §cloud accounts](SETUP.md#once-and-done--cloud-accounts)
    · [clerk-autospawn](specs/clerk-autospawn.md) ·
    [clerk-notify](specs/clerk-notify.md)
@@ -35,9 +35,30 @@ How to read this board →
 
 | Session | Task | State | Last push | Your move |
 |---|---|---|---|---|
-| main · cockpit | — (between tasks — the vercel-ignore hotfix shipped; production healed) | ⚪ | 16:41 ([#167](https://github.com/wsher0901/roam/pull/167) weld) | — |
+| main · cockpit | — closed at liftoff 17:05 (Shakedown phase 2 flies unattended) | ⚪ | 17:05 (this repaint) | — |
+| cloud · lane | agent-teams-brain ([#170](https://github.com/wsher0901/roam/pull/170)) — the Hands doctrine, D-045 (spec on the lane branch) | 🟡 airborne 17:01 (label→canary 110 s) | 17:00 (canary) | — (idle-waits on any BLOCKED:; the clerk announces) |
+| cloud · lane | check-memory ([#171](https://github.com/wsher0901/roam/pull/171)) — the memory-format CI gate (spec on the lane branch) | 🟡 airborne 17:04 (label→canary 189 s) | 17:03 (canary) | — (idle-waits on any BLOCKED:; the clerk announces) |
 
 ↳ main micro: — (no active task)
+
+Flight context — Shakedown phase 2, the first fully-unattended
+liftoff; founder driving; next cockpit sitting runs reviews +
+welds + the audit. The clerk flies on watch:
+[session_015Jd4wHuux5BitJ6HRwNMta](https://claude.ai/code/session_015Jd4wHuux5BitJ6HRwNMta),
+fired via `fire:clerk` in ~3 s (A1) with "arm the watch" as the
+payload. Cap arithmetic: `count:runs` reads 2 (the two lane
+labels) · the clerk fire is +1 and invisible to the proxy → day
+total 3, truly 12 remaining. Deviations on record: (1) fire 1
+answered 400 invalid_routine_id pre-spawn — the pasted id lacked
+the documented `trig_` prefix; corrected in `.env.local`, ONE
+sanctioned retry fired clean (no session was created by the
+failure; assumed unburned — confirm on the routines page at next
+glance); (2) fire-clerk's failure path exits via a cosmetic
+libuv assert on Windows (exit 127, not 1) — honest-nonzero
+holds; audit item for the next sitting; (3) the payloads' one
+shared file (SETUP) was resolved at construction — lane A owns
+it, lane B's CI-line mention + the LAWS mirror parenthetical are
+weld-deferred cockpit acts, declared in B's spec.
 
 ## You are here
 
@@ -75,10 +96,10 @@ Flight phase 1 underway: the watch
 ([#163](https://github.com/wsher0901/roam/pull/163)) welded after
 external review; the ignition
 ([#164](https://github.com/wsher0901/roam/pull/164)) welds next →
-next: the founder's ~3-min routine-creation act (Needs-you 1),
-then phase 2 flies the two checklists (N1–N6 · A1–A5). Last
-paste: inline at the 07-17 00:03 handoff. T3–T6 source-vetting
-relaunch stays held (see You are here).
+next: phase 2 is IN THE AIR (two lanes + the clerk on watch);
+results, gradings, and the audit land at the next cockpit
+sitting. Last paste: inline at the 07-17 00:03 handoff. T3–T6
+source-vetting relaunch stays held (see You are here).
 
 ## Shipped (latest — full record: [the ledger](history/README.md#the-ledger))
 
