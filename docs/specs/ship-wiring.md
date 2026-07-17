@@ -2,12 +2,12 @@
 type: spec
 id: ship-wiring
 title: Ship wiring — the pre-GATE critic wired in
-status: open
+status: shipped
 stage: workshop
 branch: docs/ship-wiring
-pr: —
+pr: 159
 opened: 2026-07-17
-shipped: —
+shipped: 2026-07-17 11:09
 ---
 # ship-wiring — the pre-GATE critic wired into ship
 
