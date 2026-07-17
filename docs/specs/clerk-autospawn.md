@@ -2,12 +2,12 @@
 type: spec
 id: clerk-autospawn
 title: Clerk-autospawn — API-fire the clerk at liftoff
-status: open
+status: shipped
 stage: workshop
 branch: docs/clerk-autospawn
-pr: —
+pr: 164
 opened: 2026-07-17
-shipped: —
+shipped: 2026-07-17 16:22
 ---
 
 # clerk-autospawn — API-fire the clerk at liftoff
