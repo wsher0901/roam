@@ -6,24 +6,25 @@ status: living
 
 # Dashboard — the state surface
 
-Stamp: 2026-07-17 · 23:31 · pickup · cloud
-V1 5/34 · S1 2/7 · S2 3/5 · sessions: 1 main · 2 parallel
-(2 need you) · needs-you 2
+Stamp: 2026-07-17 · 23:46 · ship · cloud
+V1 5/34 · S1 2/7 · S2 3/5 · sessions: 1 main · 0 parallel
+(0 need you) · needs-you 2
 How to read this board →
 [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
 
-1. 🟡 Both Shakedown phase-2 lanes are HOME — complete,
-   ready-flipped, Actions green
+1. 🟡 Both Shakedown phase-2 lanes are WELDED
    ([#170](https://github.com/wsher0901/roam/pull/170) ·
-   [#171](https://github.com/wsher0901/roam/pull/171)); this
-   sitting owes reviews + your merge words + the welds (incl.
-   B's two weld-deferred doc mentions), the N1–N6 / A1–A5
-   grading, and the full-forensics flight audit.
-   Also outstanding: the home seat repeats the clerk-credential
-   paste at its next sitting — the WORKING routine id is
-   `trig_`-prefixed (corrected live at A1) (since 07-17).
+   [#171](https://github.com/wsher0901/roam/pull/171), merge
+   words given in order at 23:43/23:45); this sitting still owes
+   the N1–N6 / A1–A5 grading and the full-forensics flight
+   audit. Also outstanding: the home seat repeats the
+   clerk-credential paste at its next sitting — the WORKING
+   routine id is `trig_`-prefixed (corrected live at A1) — and
+   the retired first-clerk branch `claude/session-1v6419` needs
+   a UI/normal-seat delete (the cloud git proxy refused the
+   delete push, HTTP 403; verified no unique work) (since 07-17).
    → [SETUP §cloud accounts](SETUP.md#once-and-done--cloud-accounts)
    · [clerk-autospawn](specs/clerk-autospawn.md) ·
    [clerk-notify](specs/clerk-notify.md)
@@ -37,16 +38,16 @@ How to read this board →
 
 | Session | Task | State | Last push | Your move |
 |---|---|---|---|---|
-| main · cockpit | — sat down at pickup 23:31 (Shakedown phase-2 landing pending) | ⚪ | 23:31 (this repaint) | — |
-| cloud · lane | agent-teams-brain ([#170](https://github.com/wsher0901/roam/pull/170)) — the Hands doctrine, D-045 (spec on the lane branch) | 🟢 complete, awaiting merge (ready + Actions green) | 21:08 | review + merge word |
-| cloud · lane | check-memory ([#171](https://github.com/wsher0901/roam/pull/171)) — the memory-format CI gate (spec on the lane branch) | 🟢 complete, awaiting merge (ready + Actions green) | 21:08 | review + merge word |
+| main · cockpit | Shakedown phase-2 landing — welds done; grading + flight audit next | 🟡 | 23:46 (this repaint) | — |
 
 ↳ main micro: — (no active task)
 
 Flight context — Shakedown phase 2, the first fully-unattended
-liftoff, LANDED: both payloads flew label→canary→work→ready
-unattended and sit complete at THE GATE; this sitting runs
-reviews + welds + the audit. The clerk stood the watch:
+liftoff, LANDED AND WELDED: both payloads flew
+label→canary→work→ready unattended, cleared the external Web
+review, and merged in the founder's order (#171 then #170, each
+on green); grading + the full-forensics audit remain this
+sitting. The clerk stood the watch:
 [session_015Jd4wHuux5BitJ6HRwNMta](https://claude.ai/code/session_015Jd4wHuux5BitJ6HRwNMta),
 fired via `fire:clerk` in ~3 s (A1) with "arm the watch" as the
 payload. Cap arithmetic: `count:runs` reads 2 (the two lane
@@ -58,10 +59,16 @@ sanctioned retry fired clean (no session was created by the
 failure; assumed unburned — confirm on the routines page at next
 glance); (2) fire-clerk's failure path exits via a cosmetic
 libuv assert on Windows (exit 127, not 1) — honest-nonzero
-holds; audit item for the next sitting; (3) the payloads' one
-shared file (SETUP) was resolved at construction — lane A owns
-it, lane B's CI-line mention + the LAWS mirror parenthetical are
-weld-deferred cockpit acts, declared in B's spec.
+holds; audit item for this sitting; (3) the payloads' one
+shared file (SETUP) was resolved at construction — lane A owned
+it, and lane B's two declared doc mentions landed as recorded
+cockpit acts in #171's weld commit (no merge conflict — the
+construction held); (4) the cloud git proxy refused the
+`claude/session-1v6419` branch-delete push — first attempt
+no-opped ("Everything up-to-date" with the ref surviving), the
+explicit-refspec retry answered HTTP 403 ("error: RPC failed;
+HTTP 403 curl 22 The requested URL returned error: 403") — step
+stopped per the founder's word: maiden data, not failure.
 
 ## You are here
 
@@ -98,16 +105,19 @@ flowchart LR
 Flight phase 1 underway: the watch
 ([#163](https://github.com/wsher0901/roam/pull/163)) welded after
 external review; the ignition
-([#164](https://github.com/wsher0901/roam/pull/164)) welds next →
-next: phase 2 has LANDED — both lanes complete at THE GATE;
-reviews, merge words, welds, gradings, and the audit run this
-sitting. Last paste: inline at the 07-17 00:03 handoff. T3–T6
+([#164](https://github.com/wsher0901/roam/pull/164)) welded →
+next: phase 2 is WELDED — #171 + #170 merged on the founder's
+ordered words; the N1–N6 / A1–A5 grading and the full-forensics
+audit close the flight this sitting. Last paste: inline at the
+07-17 00:03 handoff. T3–T6
 source-vetting relaunch stays held (see You are here).
 
 ## Shipped (latest — full record: [the ledger](history/README.md#the-ledger))
 
 | When | What | PR |
 |---|---|---|
+| 07-17 23:43 | [the Hands doctrine (D-045): solo · exploratory subagents · agent team · parallel lanes, the one-bench/many-benches/read-only litmus — the founder's passage verbatim into SETUP §Models & effort, D-045 into DECISIONS, a pointer in parallel-lanes §Vehicles; flown fully unattended as payload A of Shakedown phase 2](history/workshop/definition/agent-teams-brain.md) | [#170](https://github.com/wsher0901/roam/pull/170) |
+| 07-17 23:39 | [the memory-format CI gate: scripts/check-memory.mjs validates every task memory against TEMPLATE's locked format — frontmatter, six headings in order, dated Status, no surviving placeholders — wired into package.json, ci.yml, and ship §1's mirror; flown fully unattended as payload B of Shakedown phase 2, the two declared doc mentions landed at the weld](history/workshop/mechanism/check-memory.md) | [#171](https://github.com/wsher0901/roam/pull/171) |
 | 07-17 16:41 | [the ignore step fails toward build, never toward error: `\|\| exit 1` hardens the docs-only skip against Vercel's shallow-clone horizon (exit 128 turned four productions ERROR tonight; #153's "failure direction is always build" held for exit 1, not 128 — a shared miss, corrected); documented side-effect: a beyond-horizon docs-only push builds once and self-heals](history/workshop/mechanism/vercel-ignore-fix.md) | [#167](https://github.com/wsher0901/roam/pull/167) |
 | 07-17 16:22 | [liftoff ignites the clerk by API: fire-clerk.mjs + fire:clerk against the doc-verified routine-fire endpoint (per-routine token, dated experimental beta header, no idempotency — no auto-retry), the second routine's recipe + the machine-local secret path, manual paste retained as fallback; API fires count against the daily cap yet stay invisible to count:runs — liftoff budgets both (A1–A5 grade at the flight)](history/workshop/mechanism/clerk-autospawn.md) | [#164](https://github.com/wsher0901/roam/pull/164) |
 | 07-17 16:16 | [the clerk gains the standing watch (charter v2, duty 6): lane events reach the founder's phone as turn-end announcements — BLOCKED:/completions/CI-red; the watcher line opens in the mail slot (in verification, N1–N6 grade at the Shakedown Flight); the doorbell-mirror idea superseded; the reviewer agent-type failure graduated to defect](history/workshop/mechanism/clerk-notify.md) | [#163](https://github.com/wsher0901/roam/pull/163) |
@@ -116,5 +126,3 @@ source-vetting relaunch stays held (see You are here).
 | 07-16 23:55 | [leave at any instant, nothing lost: the nine-row mid-state audit proves every interruption parks clean — watch-duty named at park ("watching #N for X") + pickup's re-arm mirror, the unanswered-BLOCKED Needs-you surface ("lane #N awaits your reply"), the interrupt doctrine in one home (Esc lawful anywhere but THE WELD's atomic commit)](history/workshop/mechanism/handoff-anywhere.md) | [#155](https://github.com/wsher0901/roam/pull/155) |
 | 07-16 23:12 | [the delegation maiden flight closed on paper: D-043 (route ladder v2 — ready-flip-then-label the recipe of record, api-ignition + the cloud clerk staged, the Claude app the single away surface), the maiden verify checklist filled, §Answering a lane opened, squash-only + branch auto-delete enforced, the Vercel docs-only build skip live-fired both ways](history/workshop/mechanism/maiden-flight-report.md) | [#153](https://github.com/wsher0901/roam/pull/153) |
 | 07-16 22:36 | [the ship-time diff critic born: spec + `.claude/agents/reviewer.md` (read-only tools, advisory verdicts riding to THE GATE, Sonnet 5 · high) — flown end-to-end by the maiden flight's first live cloud lane, the spawn recipe proven: ready-flip, then label](history/workshop/mechanism/reviewer-subagent.md) | [#146](https://github.com/wsher0901/roam/pull/146) |
-| 07-16 17:59 | [Time is derived, never recalled: the derivation law gains its time clause, ship/handoff stamps read the shell clock, the Models & effort doctrine set to the 2026-07-16 statement — flown end-to-end by a local lane, the maiden's leg B](history/workshop/definition/time-doctrine.md) | [#147](https://github.com/wsher0901/roam/pull/147) |
-| 07-16 12:46 | [the July full-pass audit closed in one pass: external-item clearing, the routine saved-prompt master, the count:runs cap read, rejected-push wake + label idempotency, the reply-ack window, the maiden-flight verify list, the Models & effort doctrine, README + Web currency](history/workshop/mechanism/full-pass-fixes.md) | [#144](https://github.com/wsher0901/roam/pull/144) |
