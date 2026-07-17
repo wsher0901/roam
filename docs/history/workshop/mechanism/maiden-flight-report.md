@@ -1,33 +1,36 @@
 ---
-type: memory
-id: maiden-flight-report
-updated: 2026-07-16 · completion rewrite · home PC
+type: history
+slug: maiden-flight-report
+shipped: 2026-07-16 23:12
+pr: 153
 ---
 # maiden-flight-report — block 2, the flight closed on paper
 
 ## Status
-complete, awaiting merge — 2026-07-16 22:54. All contract items
-landed; repo settings PATCHed and GET-verified; the Vercel skip
-verified against current docs and tested on three real commits.
-THE GATE waits on the founder's word AFTER external Web review —
-ship stops at the announcement, per the kickoff brief.
+Shipped — merged as
+[#153](https://github.com/wsher0901/roam/pull/153) on the founder's
+word after external Web review. The delegation maiden flight is
+closed: D-043 on the books, the recipe of record in doctrine, the
+checklist filled, the enforcement done and live-fired. Two founder
+attestations remain pending where marked (the provider run count ·
+the phone buzz).
 
 ## What this task is
 The delegation maiden flight's second and final block: the flight
 report. One decide —
-[D-043](../DECISIONS.md#d-043--2026-07--cloud-ignition--away-command-redesign--route-ladder-v2-ready-flip-then-label-is-the-recipe-of-record-api-ignition-and-the-cloud-clerk-staged-the-claude-app-the-single-away-surface-amends-d-041-upholds-the-lane-law-and-the-wake-lock)
+[D-043](../../../DECISIONS.md#d-043--2026-07--cloud-ignition--away-command-redesign--route-ladder-v2-ready-flip-then-label-is-the-recipe-of-record-api-ignition-and-the-cloud-clerk-staged-the-claude-app-the-single-away-surface-amends-d-041-upholds-the-lane-law-and-the-wake-lock)
 — plus the explicit edit set across
-[parallel-lanes](../skills/parallel-lanes.md),
-[DECISIONS](../DECISIONS.md), [SETUP](../SETUP.md),
-[TEMPLATE](TEMPLATE.md), the [specs README](../specs/README.md),
-and [IDEAS](../IDEAS.md); two enforcement actions (repo settings
+[parallel-lanes](../../../skills/parallel-lanes.md),
+[DECISIONS](../../../DECISIONS.md), [SETUP](../../../SETUP.md),
+[TEMPLATE](../../../memory/TEMPLATE.md), the [specs README](../../../specs/README.md),
+and [IDEAS](../../../IDEAS.md); two enforcement actions (repo settings
 PATCH · the Vercel docs-only build skip). Contract:
-[the spec](../specs/maiden-flight-report.md).
+[the spec](../../../specs/maiden-flight-report.md).
 
 ## Pending issues
 Two founder attestations, marked "pending founder attest" where
 they land (the checklist in
-[parallel-lanes §Cloud spawn](../skills/parallel-lanes.md#cloud-spawn--route-ladder),
+[parallel-lanes §Cloud spawn](../../../skills/parallel-lanes.md#cloud-spawn--route-ladder),
 the doorbell-mirror IDEAS line): (a) the routine's run-history
 count at claude.ai/code/routines (expect 1); (b) whether the
 `BLOCKED:`/completion @mentions buzzed the phone's GitHub app. The
@@ -37,16 +40,16 @@ flight on the board.
 
 ## Left / idle
 Nothing in this task's scope. Staged for first need (in
-[SETUP §Staged](../SETUP.md#staged--turns-on-when-its-stage-opens)):
+[SETUP §Staged](../../../SETUP.md#staged--turns-on-when-its-stage-opens)):
 api-ignition (route 1b) · cloud-clerk. Separate follow-up task:
 wiring the reviewer subagent into ship.md.
 
 ## The story
 Born 2026-07-16 22:44 from the founder's fully-specified brief,
 minutes after leg A welded. The flight it closes:
-[leg A — reviewer-subagent](../history/workshop/mechanism/reviewer-subagent.md)
+[leg A — reviewer-subagent](reviewer-subagent.md)
 (the first live cloud lane) ·
-[leg B — time-doctrine](../history/workshop/definition/time-doctrine.md)
+[leg B — time-doctrine](../definition/time-doctrine.md)
 (the local control).
 
 The finding that earned a decide: the routine's labeled trigger
@@ -73,7 +76,7 @@ harmless mid-flight; (2) the work-PC mini-session that recorded the
 founder's route call (21:29–21:31) closed without a ritual repaint,
 and the next sitting's pickup healed the stale board exactly as
 designed (git outranks the board). Evidence for both appended to
-the double-dispatch diagnostic in [IDEAS](../IDEAS.md) — redelivery
+the double-dispatch diagnostic in [IDEAS](../../../IDEAS.md) — redelivery
 now the most plausible mechanism for the earlier incident.
 
 Block-2 execution, this branch: D-043 + ripple in one commit whose
@@ -102,15 +105,15 @@ mis-attribution) and the specs-README fence rule for quoted doc
 text.
 
 ## Where to look
-Spec: [maiden-flight-report](../specs/maiden-flight-report.md).
+Spec: [maiden-flight-report](../../../specs/maiden-flight-report.md).
 PR: [#153](https://github.com/wsher0901/roam/pull/153). The decide:
-[D-043](../DECISIONS.md#d-043--2026-07--cloud-ignition--away-command-redesign--route-ladder-v2-ready-flip-then-label-is-the-recipe-of-record-api-ignition-and-the-cloud-clerk-staged-the-claude-app-the-single-away-surface-amends-d-041-upholds-the-lane-law-and-the-wake-lock).
+[D-043](../../../DECISIONS.md#d-043--2026-07--cloud-ignition--away-command-redesign--route-ladder-v2-ready-flip-then-label-is-the-recipe-of-record-api-ignition-and-the-cloud-clerk-staged-the-claude-app-the-single-away-surface-amends-d-041-upholds-the-lane-law-and-the-wake-lock).
 The amended doctrine:
-[parallel-lanes §Cloud spawn](../skills/parallel-lanes.md#cloud-spawn--route-ladder)
+[parallel-lanes §Cloud spawn](../../../skills/parallel-lanes.md#cloud-spawn--route-ladder)
 ·
-[§Answering a lane](../skills/parallel-lanes.md#answering-a-lane-the-mail-slot).
+[§Answering a lane](../../../skills/parallel-lanes.md#answering-a-lane-the-mail-slot).
 The staged tasks:
-[SETUP §Staged](../SETUP.md#staged--turns-on-when-its-stage-opens).
+[SETUP §Staged](../../../SETUP.md#staged--turns-on-when-its-stage-opens).
 The flight legs:
-[leg A](../history/workshop/mechanism/reviewer-subagent.md) ·
-[leg B](../history/workshop/definition/time-doctrine.md).
+[leg A](reviewer-subagent.md) ·
+[leg B](../definition/time-doctrine.md).

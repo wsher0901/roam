@@ -2,12 +2,12 @@
 type: spec
 id: maiden-flight-report
 title: Maiden flight report — block 2, the flight closed on paper
-status: open
+status: shipped
 stage: workshop
 branch: docs/maiden-flight-report
 pr: 153
 opened: 2026-07-16
-shipped: —
+shipped: 2026-07-16 23:12
 ---
 # maiden-flight-report — block 2, the flight closed on paper
 
@@ -111,7 +111,10 @@ as "pending founder attest":
       append.
 - [x] Memory Story complete; both attestations marked pending
       founder attest.
-- [ ] check:links · check:ledger · full CI mirror green; the
-      pushed commit's Actions run green.
-- [ ] Ship runs to THE GATE and STOPS — merge only on the
-      founder's word after external Web review.
+- [x] check:links · check:ledger · full CI mirror green; the
+      pushed commit's Actions run green. (Ticked at the weld —
+      verified green on c7d35ae before THE GATE.)
+- [x] Ship runs to THE GATE and STOPS — merge only on the
+      founder's word after external Web review. (Ticked at the
+      weld — the gate was announced and held; the merge word
+      arrived after the founder's external review.)
