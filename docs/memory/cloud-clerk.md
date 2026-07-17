@@ -1,7 +1,7 @@
 ---
 type: memory
 id: cloud-clerk
-updated: 2026-07-16 · completion rewrite · home PC
+updated: 2026-07-16 · post-gate amendment · home PC
 ---
 
 # cloud-clerk — the founder's away-mode concierge
@@ -77,6 +77,15 @@ promotion to primary (GitHub app demoted to backstop) was written
 as a CONDITION into the answering-a-lane row rather than performed —
 it rides this same PR as a later commit only if C1–C6 comes back
 green, so the row never claims a verification that hasn't happened.
+
+Post-gate amendment (2026-07-16 23:53, founder instruction): the
+zombie-branch observation graduated into doctrine —
+[parallel-lanes §Cloud spawn](../skills/parallel-lanes.md#cloud-spawn--route-ladder)
+gained the post-weld session-hygiene sentence: end a welded lane's
+session at claude.ai/code, because an idle completed session can
+resurrect its deleted branch on wake events (observed live this
+sitting with reviewer-subagent's session, twice). The bench stays at
+THE GATE per its C1–C6 clause.
 
 ## Where to look
 

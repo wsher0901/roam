@@ -109,7 +109,13 @@ the checklist pending (founder instruction at kickoff, 07-16).
 
 ## Deviations
 
-<filled by /ship — or "none">
+One post-gate amendment on founder instruction (2026-07-16 23:53,
+same PR): [parallel-lanes §Cloud spawn](../skills/parallel-lanes.md#cloud-spawn--route-ladder)
+gained a session-hygiene sentence — after a cloud lane's weld, end
+its session at claude.ai/code; an idle completed session can
+resurrect its deleted branch on wake events (observed 2026-07-17).
+Outside the original five deliverables; the memory's story carries
+the observation.
 
 ## Open questions
 

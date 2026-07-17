@@ -255,6 +255,10 @@ webhook at 21:57, citing a stale head SHA, met the
 re-read-Status-first rule ([§Wake-lock](#wake-lock--parking)) and
 died harmless.
 
+After a cloud lane's weld, end its session at claude.ai/code — an
+idle completed session can resurrect its deleted branch on wake
+events (observed 2026-07-17).
+
 Sources:
 [LAWS §Self-improvement](../LAWS.md#self-improvement)
 [Cloud lane worker — SETUP](../SETUP.md#once-and-done--cloud-accounts)
