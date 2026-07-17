@@ -14,8 +14,9 @@ shipped: —
 **Links:**
 [reviewer-subagent spec](reviewer-subagent.md) ·
 [the critic's story](../history/workshop/mechanism/reviewer-subagent.md)
-· [ship](../skills/ship.md) · Decisions: D-044 (born on this
-branch) ·
+· [ship](../skills/ship.md) · Decisions:
+[D-044](../DECISIONS.md#d-044--2026-07--the-pre-gate-critic-goes-live--ships-gate-opens-by-invoking-the-reviewer-subagent-verdicts-advisory-riding-with-the-summary-turns-on-the-staged-reviewer-upholds-d-038-and-the-reviewer-frame)
+(born on this branch) ·
 [SETUP §Staged](../SETUP.md#staged--turns-on-when-its-stage-opens)
 
 ## Goal
@@ -54,19 +55,22 @@ plain-language summary. Executes the standing offer inboxed at the
 
 ## Done means
 
-- [ ] D-044 recorded — entry + ripple in the same commit, anchors
-      born resolving.
-- [ ] Ship §6 opens with the reviewer invocation, advisory framing
+- [x] D-044 recorded — entry + ripple in the same commit, anchors
+      born resolving (check:links green before the push).
+- [x] Ship §6 opens with the reviewer invocation, advisory framing
       explicit, section numbering untouched.
-- [ ] SETUP: the reviewer filed under repo-side; the §Staged line
+- [x] SETUP: the reviewer filed under repo-side; the §Staged line
       retired.
-- [ ] IDEAS: the 2026-07-17 ship.md-wiring line cleared.
-- [ ] Full CI mirror green · the pushed head's Actions run green ·
-      the reviewer flown on this PR before its own GATE.
+- [x] IDEAS: the 2026-07-17 ship.md-wiring line cleared.
+- [x] Full CI mirror green · the pushed head's Actions run green ·
+      the reviewer flown on this PR before its own GATE. (Ticked at
+      the flip — the box describes the very Actions run and reviewer
+      pass that follow this spec's final commit; both verified by
+      the cockpit before THE GATE is announced.)
 
 ## Deviations
 
-<filled by /ship — or "none">
+none
 
 ## Open questions
 

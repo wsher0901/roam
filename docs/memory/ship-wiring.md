@@ -1,24 +1,27 @@
 ---
 type: memory
 id: ship-wiring
-updated: 2026-07-17 · task birth · work PC
+updated: 2026-07-17 · ship · work PC
 ---
 # ship-wiring — the pre-GATE critic wired into ship
 
 ## Status
 
-claimed — cockpit · work PC · 2026-07-17. The cockpit works this
-bench directly; no dispatch. Any other worker seeing this Status
-self-terminates per the wake-lock.
+complete, awaiting merge — the D-044 entry + full ripple landed in
+one commit, the six-step CI mirror ran green on the work PC, and
+[#159](https://github.com/wsher0901/roam/pull/159) flips ready at
+this rewrite's push. THE GATE waits on the founder's word after the
+Web review; the reviewer's own maiden WIRED run rides at that gate.
 
 ## What this task is
 
-Execute the standing offer ([IDEAS](../IDEAS.md) 2026-07-17;
-founder go this morning): wire the shipped
+Execute the standing offer ([IDEAS](../IDEAS.md) inbox line of
+2026-07-17; founder go this morning): wire the shipped
 [reviewer subagent](../history/workshop/mechanism/reviewer-subagent.md)
 into [ship §6](../skills/ship.md#6--the-gate) as the pre-GATE
-advisory critic. One procedure edit plus its D-number; the reviewer
-itself is untouched. Contract:
+advisory critic. One procedure edit plus its D-number
+([D-044](../DECISIONS.md#d-044--2026-07--the-pre-gate-critic-goes-live--ships-gate-opens-by-invoking-the-reviewer-subagent-verdicts-advisory-riding-with-the-summary-turns-on-the-staged-reviewer-upholds-d-038-and-the-reviewer-frame));
+the reviewer itself is untouched. Contract:
 [the spec](../specs/ship-wiring.md).
 
 ## Pending issues
@@ -27,7 +30,8 @@ none
 
 ## Left / idle
 
-All work — bench just born.
+Nothing on the task side. Post-approval only: the atomic weld
+(ship §7) — this memory moves to history/workshop/mechanism/.
 
 ## The story
 
@@ -41,10 +45,19 @@ GATE's first act, not as a new numbered section — the vault weaves
 shipped histories; renumbering would break them all for zero
 function.
 
-D-044 landed on this branch (entry + ripple in one commit, per
+[D-044](../DECISIONS.md#d-044--2026-07--the-pre-gate-critic-goes-live--ships-gate-opens-by-invoking-the-reviewer-subagent-verdicts-advisory-riding-with-the-summary-turns-on-the-staged-reviewer-upholds-d-038-and-the-reviewer-frame)
+landed on this branch (entry + ripple in one commit, per
 [decide](../skills/decide.md)): ship §6 gained the critic, SETUP
-filed the reviewer under repo-side and retired its Staged line, the
-IDEAS inbox line cleared.
+filed the reviewer under
+[§Once and done — repo-side](../SETUP.md#once-and-done--repo-side-travels-with-git)
+and retired its §Staged line, the IDEAS inbox line cleared. Anchors
+born resolving: check:links green before that commit's push.
+
+Closing the work: branch synced with origin/main (already current),
+full CI mirror green in one pass (lint · format:check · check:links
+· check:ledger · test · build — 1895 links, 72↔72 ledger, 3 tests).
+This rewrite is the completion moment; the ready-flip and the
+critic's maiden wired run on this very PR follow it.
 
 Datum observed at bench birth, not this task's to act on: a fresh
 empty `claude/session-*` branch appeared on origin at main's tip
@@ -58,5 +71,6 @@ itself. Left for the founder's C-checklist notes.
 - The critic: `.claude/agents/reviewer.md` · its
   [spec](../specs/reviewer-subagent.md) ·
   [story](../history/workshop/mechanism/reviewer-subagent.md)
-- PR: draft on branch `docs/ship-wiring` (number lands here at
-  first push)
+- The decision:
+  [D-044](../DECISIONS.md#d-044--2026-07--the-pre-gate-critic-goes-live--ships-gate-opens-by-invoking-the-reviewer-subagent-verdicts-advisory-riding-with-the-summary-turns-on-the-staged-reviewer-upholds-d-038-and-the-reviewer-frame)
+- PR: [#159](https://github.com/wsher0901/roam/pull/159)
