@@ -45,6 +45,11 @@ its branch) and surface it. Relay any hook lines from session
 start (branches removed as welded elsewhere, or one it could not
 remove). Where the board and git disagree, git wins — say so
 plainly.
+Re-arm every named watch: any "watching #N for X" line found in a
+parked lane's memory or the board's flight-context line
+([handoff §1.5](handoff.md#15--park-the-local-lanes-full-only)
+writes them — watches die with sessions, the record must not) is
+re-armed now, so the duty resumes with the new sitting.
 
 Sources:
 [ROADMAP](../ROADMAP.md)

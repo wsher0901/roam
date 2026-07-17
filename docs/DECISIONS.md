@@ -1208,3 +1208,38 @@ attest, parked in [IDEAS](IDEAS.md)).
 idea lines + the double-dispatch resolution evidence) ·
 [D-041](#d-041--2026-07--delegation-architecture--the-away-mode-chooser-go-remote-tether-idle-wait-label-spawned-cloud-amends-d-032s-wake-lock-and-the-dispatch-law-upholds-the-baton-law-and-d-009)
 (the route ladder amended) · this entry.
+
+## D-044 — 2026-07 — The pre-GATE critic goes live — ship's gate opens by invoking the reviewer subagent, verdicts advisory riding with the summary (turns on the staged reviewer; upholds D-038 and the reviewer frame)
+**Decision:** every ship now runs the
+[reviewer subagent](history/workshop/mechanism/reviewer-subagent.md)
+as THE GATE's first act ([ship §6](skills/ship.md#6--the-gate)): the
+critic reads the branch's diff against its spec, the laws, and the
+memory diary, and its structured verdict rides to the founder
+VERBATIM alongside the plain summary. The verdict is advisory — a
+finding never halts ship by itself; the founder weighs it at the
+gate. The reviewer moves from
+[SETUP §Staged](SETUP.md#staged--turns-on-when-its-stage-opens) to
+[SETUP §Once and done — repo-side](SETUP.md#once-and-done--repo-side-travels-with-git):
+it is ON for every task, local or cloud, from this weld.
+**Why:** the critic existed but nothing summoned it — a step that
+must be remembered is not a ritual. Wired into §6, every diff gets
+a second pair of eyes at the exact moment the founder is asked for
+the merge word, at zero added founder friction (the advisory
+policy, the founder's 2026-07-17 call on
+[#146](https://github.com/wsher0901/roam/pull/146)).
+**Alternatives rejected:** a new numbered ship section (renumbers
+§6–§8 and breaks the ship-anchor weave — the agent file itself
+links §6) · blocking verdicts (the founder chose advisory;
+reversible by a later [decide](skills/decide.md)) · leaving
+invocation discretionary (guarantees drift — the critic would run
+only when remembered).
+**Affects:** [ship §6](skills/ship.md#6--the-gate) (the critic
+invocation) ·
+[SETUP §Once and done — repo-side](SETUP.md#once-and-done--repo-side-travels-with-git)
+(the reviewer filed live) ·
+[SETUP §Staged](SETUP.md#staged--turns-on-when-its-stage-opens)
+(the line retired) · [IDEAS](IDEAS.md) (the 2026-07-17 wiring line
+cleared) ·
+[D-038](#d-038--2026-07--ci-is-the-arbiter--actions-green-required-at-every-gate-local-gate-mirrors-all-six-ci-steps-d-anchors-born-resolving-upholds-d-027)
+(the arbiter upheld — the critic adds eyes, not a gate) · this
+entry.
