@@ -36,8 +36,8 @@ How to read this board →
 | Session | Task | State | Last push | Your move |
 |---|---|---|---|---|
 | main · cockpit | — closed at liftoff 17:05 (Shakedown phase 2 flies unattended) | ⚪ | 17:05 (this repaint) | — |
-| cloud · lane | [agent-teams-brain](specs/agent-teams-brain.md) ([#170](https://github.com/wsher0901/roam/pull/170)) — the Hands doctrine, D-045 | 🟡 airborne 17:01 (label→canary 110 s) | 17:00 (canary) | — (idle-waits on any BLOCKED:; the clerk announces) |
-| cloud · lane | [check-memory](specs/check-memory.md) ([#171](https://github.com/wsher0901/roam/pull/171)) — the memory-format CI gate | 🟡 airborne 17:04 (label→canary 189 s) | 17:03 (canary) | — (idle-waits on any BLOCKED:; the clerk announces) |
+| cloud · lane | agent-teams-brain ([#170](https://github.com/wsher0901/roam/pull/170)) — the Hands doctrine, D-045 (spec on the lane branch) | 🟡 airborne 17:01 (label→canary 110 s) | 17:00 (canary) | — (idle-waits on any BLOCKED:; the clerk announces) |
+| cloud · lane | check-memory ([#171](https://github.com/wsher0901/roam/pull/171)) — the memory-format CI gate (spec on the lane branch) | 🟡 airborne 17:04 (label→canary 189 s) | 17:03 (canary) | — (idle-waits on any BLOCKED:; the clerk announces) |
 
 ↳ main micro: — (no active task)
 
