@@ -6,15 +6,26 @@ status: living
 
 # Dashboard — the state surface
 
-Stamp: 2026-07-17 · 16:17 · ship-tail · work PC
+Stamp: 2026-07-17 · 16:25 · ship-tail · work PC
 V1 5/34 · S1 2/7 · S2 3/5 · sessions: 1 main · 0 parallel
-(0 needs you) · needs-you 1
+(0 needs you) · needs-you 2
 How to read this board →
 [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
 
-1. ⚪ Nine open engine questions sit parked in the Open register
+1. 🟡 The ~3-minute ignition act, whenever you next sit at
+   claude.ai/code/routines: create the SECOND routine named
+   "clerk" (saved prompt = the charter master v2 + the spawn
+   preamble, both in SETUP), add the API trigger, generate the
+   fire token ONCE, and paste token + `trig_…` id into the
+   cockpit — it stores them in `.env.local`; the other seat
+   repeats at its next sitting. Prerequisite for the Shakedown
+   Flight phase 2 (N1–N6 · A1–A5) (since 07-17).
+   → [SETUP §cloud accounts](SETUP.md#once-and-done--cloud-accounts)
+   · [clerk-autospawn](specs/clerk-autospawn.md) ·
+   [clerk-notify](specs/clerk-notify.md)
+2. ⚪ Nine open engine questions sit parked in the Open register
    until S3 opens (since 07-13).
    → [ENGINE §12](ENGINE.md#12-open-register) ·
    [D-028](DECISIONS.md#d-028--2026-07--consolidation-recut--decision-policy--engine-brain-skeleton-form-project-policy-house-style-open-register-grows-69-upholds-d-021-extends-the-d-021-consolidation)
@@ -24,9 +35,9 @@ How to read this board →
 
 | Session | Task | State | Last push | Your move |
 |---|---|---|---|---|
-| main · cockpit | [clerk-autospawn](specs/clerk-autospawn.md) — ship §7 in progress (Shakedown phase 1, weld 2 of 2) | 🟡 | 16:16 ([#163](https://github.com/wsher0901/roam/pull/163) weld) | — |
+| main · cockpit | — (between tasks — Shakedown phase 1 shipped: the watch + the ignition) | ⚪ | 16:22 ([#164](https://github.com/wsher0901/roam/pull/164) weld) | — |
 
-↳ main micro: — (the sibling weld runs now; [#164](https://github.com/wsher0901/roam/pull/164) syncs onto main, then welds on its post-sync green)
+↳ main micro: — (no active task)
 
 ## You are here
 
@@ -64,8 +75,8 @@ Flight phase 1 underway: the watch
 ([#163](https://github.com/wsher0901/roam/pull/163)) welded after
 external review; the ignition
 ([#164](https://github.com/wsher0901/roam/pull/164)) welds next →
-next: the founder's ~3-min routine-creation act (token + `trig_`
-id into the cockpit), then phase 2 flies the N/A checklists. Last
+next: the founder's ~3-min routine-creation act (Needs-you 1),
+then phase 2 flies the two checklists (N1–N6 · A1–A5). Last
 paste: inline at the 07-17 00:03 handoff. T3–T6 source-vetting
 relaunch stays held (see You are here).
 
@@ -73,6 +84,7 @@ relaunch stays held (see You are here).
 
 | When | What | PR |
 |---|---|---|
+| 07-17 16:22 | [liftoff ignites the clerk by API: fire-clerk.mjs + fire:clerk against the doc-verified routine-fire endpoint (per-routine token, dated experimental beta header, no idempotency — no auto-retry), the second routine's recipe + the machine-local secret path, manual paste retained as fallback; API fires count against the daily cap yet stay invisible to count:runs — liftoff budgets both (A1–A5 grade at the flight)](history/workshop/mechanism/clerk-autospawn.md) | [#164](https://github.com/wsher0901/roam/pull/164) |
 | 07-17 16:16 | [the clerk gains the standing watch (charter v2, duty 6): lane events reach the founder's phone as turn-end announcements — BLOCKED:/completions/CI-red; the watcher line opens in the mail slot (in verification, N1–N6 grade at the Shakedown Flight); the doorbell-mirror idea superseded; the reviewer agent-type failure graduated to defect](history/workshop/mechanism/clerk-notify.md) | [#163](https://github.com/wsher0901/roam/pull/163) |
 | 07-17 15:26 | [the away surface goes live: the clerk maiden flown founder-run, C1–C6 all green (~4.5h idle survival proven, run-count attest closed at 1), the promotion clause executed — clerk PRIMARY for machine-off answering, GitHub app demoted to backstop; clerk-notify + clerk-autospawn staged beside api-ignition](history/workshop/mechanism/cloud-clerk.md) | [#156](https://github.com/wsher0901/roam/pull/156) |
 | 07-17 11:09 | [the pre-GATE critic wired in (D-044): ship §6 opens by invoking the reviewer subagent — advisory verdicts riding to the founder with the summary; the critic's maiden wired run flew on its own PR (pass + the verdict-as-message clause)](history/workshop/mechanism/ship-wiring.md) | [#159](https://github.com/wsher0901/roam/pull/159) |
@@ -82,4 +94,3 @@ relaunch stays held (see You are here).
 | 07-16 17:59 | [Time is derived, never recalled: the derivation law gains its time clause, ship/handoff stamps read the shell clock, the Models & effort doctrine set to the 2026-07-16 statement — flown end-to-end by a local lane, the maiden's leg B](history/workshop/definition/time-doctrine.md) | [#147](https://github.com/wsher0901/roam/pull/147) |
 | 07-16 12:46 | [the July full-pass audit closed in one pass: external-item clearing, the routine saved-prompt master, the count:runs cap read, rejected-push wake + label idempotency, the reply-ack window, the maiden-flight verify list, the Models & effort doctrine, README + Web currency](history/workshop/mechanism/full-pass-fixes.md) | [#144](https://github.com/wsher0901/roam/pull/144) |
 | 07-16 10:37 | [Lane liveness (D-042): live-vs-reclaimable derived from the commit heartbeat and read at the claim check and pickup's worktree sweep, fed by the session-start hook's verdict — a live lane is never adopted or pruned](history/workshop/mechanism/lane-liveness.md) | [#142](https://github.com/wsher0901/roam/pull/142) |
-| 07-16 08:57 | [a CI gate (check:ledger) proving history/ files and the ledger index stay in one-to-one bijection by #PR, plus a ship §7 weld-staging line so a dropped or orphaned ledger line turns the build red instead of leaving a silent gap](history/workshop/mechanism/ledger-integrity.md) | [#140](https://github.com/wsher0901/roam/pull/140) |
