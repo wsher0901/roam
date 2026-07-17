@@ -6,9 +6,9 @@ status: living
 
 # Dashboard — the state surface
 
-Stamp: 2026-07-17 · 11:12 · ship-tail · work PC
+Stamp: 2026-07-17 · 12:19 · pickup-repaint · work PC
 V1 5/34 · S1 2/7 · S2 3/5 · sessions: 1 main · 0 parallel
-(0 needs you) · needs-you 4
+(0 needs you) · needs-you 3
 How to read this board →
 [HOME §Reading the board](HOME.md#reading-the-board)
 
@@ -31,12 +31,7 @@ How to read this board →
    routine run count (expect 1) · whether @mentions buzzed the
    phone — feeds the doorbell decision (since 07-16).
    → [parallel-lanes §Cloud spawn](skills/parallel-lanes.md#cloud-spawn--route-ladder)
-3. ⚪ Stale local branch `chore/reviewer-subagent` on the work PC —
-   its task shipped as #146 via the cloud lane; the local copy is a
-   superseded duplicate awaiting your deletion word (pushing it
-   would resurrect the zombie's branch) (since 07-17).
-   → [reviewer-subagent story](history/workshop/mechanism/reviewer-subagent.md)
-4. ⚪ Nine open engine questions sit parked in the Open register
+3. ⚪ Nine open engine questions sit parked in the Open register
    until S3 opens (since 07-13).
    → [ENGINE §12](ENGINE.md#12-open-register) ·
    [D-028](DECISIONS.md#d-028--2026-07--consolidation-recut--decision-policy--engine-brain-skeleton-form-project-policy-house-style-open-register-grows-69-upholds-d-021-extends-the-d-021-consolidation)
