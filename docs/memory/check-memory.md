@@ -1,16 +1,15 @@
 ---
 type: memory
 id: check-memory
-updated: 2026-07-17 · bench birth · work PC
+updated: 2026-07-17 · canary claim · cloud
 ---
 
 # check-memory — the memory-format CI gate
 
 ## Status
 
-bench ready, no worker yet — birthed 2026-07-17 by the cockpit
-(work PC) for the Shakedown Flight phase 2; awaiting cloud spawn
-via the label recipe.
+claimed by cloud — 2026-07-17. Canary handshake pushed; the bench
+was clean ("bench ready, no worker yet") at claim.
 
 ## What this task is
 
