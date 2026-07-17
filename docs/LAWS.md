@@ -83,7 +83,7 @@ founder.
   memory file.
 - Before saying "done": sync the branch with current main (merge,
   never rebase), then run the full CI mirror (lint · format · links ·
-  ledger · tests · build) and fix failures; "done" also requires the
+  ledger · memory · tests · build) and fix failures; "done" also requires the
   pushed commit's Actions run green — local green never suffices.
 - If the founder forgets any of this, do it anyway without being asked.
 - Pacing law:
