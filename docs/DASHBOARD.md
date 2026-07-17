@@ -6,28 +6,33 @@ status: living
 
 # Dashboard — the state surface
 
-Stamp: 2026-07-16 · 23:58 · ship · home PC
-V1 5/34 · S1 2/7 · S2 3/5 · sessions: 1 main · 0 parallel
-(0 needs you) · needs-you 3
+Stamp: 2026-07-17 · 00:06 · handoff · home PC
+V1 5/34 · S1 2/7 · S2 3/5 · sessions: 0 main · 0 parallel
+(0 needs you) · needs-you 4
 How to read this board →
 [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
 
-1. 🟡 Birth the cloud clerk tonight (claude.ai/code → new session on
-   wsher0901/roam → paste the charter from #156's SETUP) and run its
-   maiden C1–C6 — [#156](https://github.com/wsher0901/roam/pull/156)
-   gates on the results; C5 wants the overnight idle (since 07-16).
+1. 🟡 Tomorrow AM at claude.ai/code, in order: end the
+   reviewer-subagent zombie session (it resurrected its deleted
+   branch twice on wake events), birth the clerk (new session on
+   wsher0901/roam, charter from #156's SETUP), run C1–C3 + the C4
+   ergonomics note, idle ≥3h, then C5/C6 — results to the Web chat,
+   then [#156](https://github.com/wsher0901/roam/pull/156)'s merge
+   word + promotion clause (since 07-16).
    → [#156](https://github.com/wsher0901/roam/pull/156) ·
    [D-043](DECISIONS.md#d-043--2026-07--cloud-ignition--away-command-redesign--route-ladder-v2-ready-flip-then-label-is-the-recipe-of-record-api-ignition-and-the-cloud-clerk-staged-the-claude-app-the-single-away-surface-amends-d-041-upholds-the-lane-law-and-the-wake-lock)
-2. 🟡 End the reviewer-subagent cloud session at claude.ai/code — the
-   idle completed session resurrected its deleted branch twice
-   tonight on wake events; the branch is deleted again, the session
-   still lives (since 07-16).
-   → [#146](https://github.com/wsher0901/roam/pull/146) · the
-   hygiene rule rides
-   [#156](https://github.com/wsher0901/roam/pull/156)
-3. ⚪ Nine open engine questions sit parked in the Open register
+2. ⚪ ship.md wiring — wire the reviewer subagent into ship as the
+   pre-GATE advisory critic; Code's offer stands fully specified,
+   go not yet given (since 07-16).
+   → [IDEAS](IDEAS.md) ·
+   [reviewer-subagent](history/workshop/mechanism/reviewer-subagent.md)
+3. ⚪ Two maiden-flight attestations pending, no rush: the provider
+   routine run count (expect 1) · whether @mentions buzzed the
+   phone — feeds the doorbell decision (since 07-16).
+   → [parallel-lanes §Cloud spawn](skills/parallel-lanes.md#cloud-spawn--route-ladder)
+4. ⚪ Nine open engine questions sit parked in the Open register
    until S3 opens (since 07-13).
    → [ENGINE §12](ENGINE.md#12-open-register) ·
    [D-028](DECISIONS.md#d-028--2026-07--consolidation-recut--decision-policy--engine-brain-skeleton-form-project-policy-house-style-open-register-grows-69-upholds-d-021-extends-the-d-021-consolidation)
@@ -37,19 +42,17 @@ How to read this board →
 
 | Session | Task | State | Last push | Your move |
 |---|---|---|---|---|
-| main · cockpit (home PC) | — (ops sitting: two benches flown) | 🟡 holding | 23:57 (the weld) | — |
+| — | nothing running — operations halted at the 07-17 00:06 handoff | ⚪ | 00:04 (cloud-clerk memory rewrite) | — |
 
 ↳ main micro: — (no active task)
 
 Bench at THE GATE, no live worker:
 [#156 cloud-clerk](https://github.com/wsher0901/roam/pull/156) is
-complete and ready — its merge waits on the founder-run clerk maiden
-(C1–C6, Needs-you 1) and external review; a green checklist adds the
-promotion commit to the same PR before it gates. The two
-maiden-flight founder attestations (the provider run count · the
-phone buzz) still ride
-[parallel-lanes §Cloud spawn](skills/parallel-lanes.md#cloud-spawn--route-ladder)
-as pending — fill whenever convenient, no rush.
+complete and Actions-green — its merge waits on the founder-run
+clerk maiden (C1–C6, Needs-you 1) and external review; a green
+checklist adds the promotion commit to the same PR before it gates.
+The maiden plan is folded into the bench's memory (Pending issues),
+readable cold.
 
 ## You are here
 
@@ -82,11 +85,12 @@ flowchart LR
   class S4,S5,S6,S7,S8 pending
 ```
 
-No open Web or Design threads — external review of
-[#156](https://github.com/wsher0901/roam/pull/156) opens in the Web
-chat next. Last paste: none (a bare trigger, at the 07-16 18:15
-handoff). T3–T6 source-vetting relaunch stays held (see You are
-here).
+**"Roam — full-pass audit + maiden flight"** (Web) — maiden flight
+closed and codified; the session-continuity and cloud-clerk benches
+built the same night → next: tomorrow AM, the clerk-maiden results
+land back in this chat, then #156's merge word. Last paste: inline
+at the 07-17 00:03 handoff. T3–T6 source-vetting relaunch stays
+held (see You are here).
 
 ## Shipped (latest — full record: [the ledger](history/README.md#the-ledger))
 
