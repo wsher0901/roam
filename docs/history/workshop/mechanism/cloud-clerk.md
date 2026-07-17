@@ -9,10 +9,12 @@ pr: 156
 
 ## Status
 
-complete, awaiting merge — the clerk maiden flew founder-run
-2026-07-17 and came back all green; results folded below, the
-promotion clause executing on this PR. The founder's merge word is
-given, conditional on Actions green.
+Shipped — merged as
+[#156](https://github.com/wsher0901/roam/pull/156). The clerk
+maiden flew founder-run 2026-07-17 and came back all green;
+results folded below, the promotion clause executed on the PR.
+(Status line repaired to the shipped form at the clerk-notify
+weld — the 15:26 weld moved the file without restamping it.)
 
 ## What this task is
 

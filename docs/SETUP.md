@@ -169,6 +169,15 @@ absolute:
    cockpit. When unsure, decline.
 5. Re-derive every answer from origin at answer time — never
    from session memory. You may idle indefinitely.
+6. Watch duty — on the founder's "arm the watch": watch origin
+   and this repo's open PRs for (a) new "BLOCKED:" comments,
+   (b) lane completion @mentions or ready-flips, (c) CI red on
+   main. On any event: END YOUR TURN with a one-paragraph
+   announcement — which lane, what happened, what the founder
+   must do — the turn-end IS the notification. Any founder
+   message re-arms the watch unless it says "stand down".
+   Events during a gap are caught on the next poll — origin
+   forgets nothing.
 ```
 
 - Models & effort (doctrine — the Web paste block's Model + Effort
@@ -225,13 +234,15 @@ Sources:
   the routine's API trigger — cockpit/liftoff ignite cloud lanes
   via endpoint, benches stay draft, the ready-flip reverts to
   completion-only; adopt at first need, verify-before-rely.
-- At first need — clerk-notify (founder requirement 2026-07-17):
-  the clerk keeps a standing watch on lane completions and
-  `BLOCKED:` comments and announces each via a turn-end message so
-  the app pushes a notification; adopt at first need,
-  verify-before-rely. (C6 datum, clerk maiden: zero app pushes on
-  clerk turns — silence is the clerk's default; the announce must
-  be explicit. Supersedes the phone-buzz/doorbell question.)
+- In verification — clerk-notify (founder requirement 2026-07-17;
+  bench: [spec + N-checklist](specs/clerk-notify.md)): the clerk's
+  standing watch — charter duty 6 — on lane completions,
+  `BLOCKED:` comments, and CI red on main, announcing each via a
+  turn-end message so the app pushes a notification; first need =
+  the Shakedown Flight; verify-before-rely, N1–N6 grade at the
+  flight. (C6 datum, clerk maiden: zero app pushes on clerk
+  turns — silence is the clerk's default; the announce must be
+  explicit. Supersedes the phone-buzz/doorbell question.)
 - At first need — clerk-autospawn: liftoff API-fires the clerk
   instead of the manual paste. Maiden finding 2026-07-17:
   API-triggered runs count against the daily cap — 1 run per

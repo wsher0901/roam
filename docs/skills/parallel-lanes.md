@@ -161,6 +161,11 @@ never need GitHub:
   per
   [D-043](../DECISIONS.md#d-043--2026-07--cloud-ignition--away-command-redesign--route-ladder-v2-ready-flip-then-label-is-the-recipe-of-record-api-ignition-and-the-cloud-clerk-staged-the-claude-app-the-single-away-surface-amends-d-041-upholds-the-lane-law-and-the-wake-lock)) ·
   the GitHub app, four taps — demoted to backstop.
+The clerk can also be armed as a watcher (charter duty 6 — in
+verification until the N-checklist greens at the flight audit:
+[clerk-notify](../specs/clerk-notify.md)): its turn-end
+announcements are the notification channel for `BLOCKED:`
+comments, lane completions/ready-flips, and CI red on main.
 Never type into a session window — a window is not a slot: words
 landing there bypass the PR and die with the session (the record
 law: nothing important lives only in conversation). Plain language

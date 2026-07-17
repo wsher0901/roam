@@ -67,10 +67,21 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   lint — validate memory files against
   [TEMPLATE](memory/TEMPLATE.md)'s locked format (Status first,
   four sections, vocabulary words).
-- 2026-07-16 (Claude Code, maiden-flight-report): Slack/Telegram
-  doorbell mirror for lane @mentions — build only if the GitHub-app
-  buzz annoys; datum: the phone-buzz attestation (pending founder
-  attest, [D-043](DECISIONS.md#d-043--2026-07--cloud-ignition--away-command-redesign--route-ladder-v2-ready-flip-then-label-is-the-recipe-of-record-api-ignition-and-the-cloud-clerk-staged-the-claude-app-the-single-away-surface-amends-d-041-upholds-the-lane-law-and-the-wake-lock)).
+- 2026-07-16 (Claude Code, maiden-flight-report; rewritten
+  2026-07-17): Slack/Telegram doorbell mirror for lane @mentions —
+  SUPERSEDED by clerk-notify
+  ([spec](specs/clerk-notify.md)): the clerk's turn-end
+  announcements are the doorbell, and the phone-buzz attestation
+  closed as superseded (founder, 2026-07-17;
+  [D-043](DECISIONS.md#d-043--2026-07--cloud-ignition--away-command-redesign--route-ladder-v2-ready-flip-then-label-is-the-recipe-of-record-api-ignition-and-the-cloud-clerk-staged-the-claude-app-the-single-away-surface-amends-d-041-upholds-the-lane-law-and-the-wake-lock)).
+- 2026-07-17 (Claude Code, clerk-notify bench): DEFECT — the
+  reviewer agent-type fails to register in-session (the Agent tool
+  reports 'reviewer' not found); second recurrence 2026-07-17,
+  graduated to defect per the
+  [#159](https://github.com/wsher0901/roam/pull/159) rule; the
+  synchronous general-purpose fallback carries ship §6
+  ([ship-wiring story](history/workshop/mechanism/ship-wiring.md));
+  diagnose post-flight.
 - 2026-07-16 (Claude Code, maiden-flight-report): a separate bot
   identity for lane speech (optional) — lane comments currently
   post as the founder's own account, which blurs who is talking on
