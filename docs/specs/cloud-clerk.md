@@ -2,12 +2,12 @@
 type: spec
 id: cloud-clerk
 title: Cloud clerk — the founder's away-mode concierge
-status: open
+status: shipped
 stage: workshop
 branch: docs/cloud-clerk
-pr: —
+pr: 156
 opened: 2026-07-16
-shipped: —
+shipped: 2026-07-17 15:26
 ---
 
 # cloud-clerk — the founder's away-mode concierge
@@ -95,7 +95,7 @@ in this bench's memory (extra findings recorded there as C7).
 - [x] parallel-lanes' machine-off row names the cloud clerk (in
       verification).
 - [x] liftoff carries the conditional spawn/verify-the-clerk step.
-- [ ] Full CI mirror green; the pushed commit's Actions run green.
+- [x] Full CI mirror green; the pushed commit's Actions run green.
       (Ticked at the weld — the box describes the very Actions run
       that can only exist after this spec's final commit.)
 - [x] C1–C6 founder-run, results in this bench's memory — gates the
