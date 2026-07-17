@@ -1,18 +1,19 @@
 ---
-type: memory
-id: agent-teams-brain
-updated: 2026-07-17 · 21:07 UTC · completion · cloud
+type: history
+slug: agent-teams-brain
+shipped: 2026-07-17 23:43
+pr: 170
 ---
 
 # agent-teams-brain — the Hands doctrine (D-045)
 
 ## Status
 
-complete — cloud lane, 2026-07-17 · 21:07 UTC. All three edits
-rippled in one commit; full CI mirror green locally (lint · format
-· links · ledger · tests · build); Actions confirmation gates the
-ready-flip. Awaiting founder review + merge word — not the lane's
-call.
+shipped — 2026-07-17 23:43, [#170](https://github.com/wsher0901/roam/pull/170).
+All three edits rippled in one commit, flown to completion
+unattended, cleared by the external Web review, and welded second
+at the next cockpit sitting (after sibling #171, per the founder's
+ordered merge words).
 
 ## What this task is
 
@@ -20,7 +21,7 @@ Write the founder's Hands doctrine into its homes: the verbatim
 passage into SETUP §Models & effort, the D-045 entry into
 DECISIONS (lane-written decide, D-044 precedent), one pointer
 line into parallel-lanes §Vehicles — all three in one commit.
-Everything is decided in [the spec](../specs/agent-teams-brain.md);
+Everything is decided in [the spec](../../../specs/agent-teams-brain.md);
 zero lane decisions.
 
 ## Pending issues
@@ -29,9 +30,8 @@ none.
 
 ## Left / idle
 
-nothing — all three edits landed. The Done-means checkboxes and
-the spec's `pr:`/`shipped:` frontmatter stay for the cockpit to
-tick at the weld (never the lane's write).
+nothing — all three edits landed. The spec's `pr:`/`shipped:`
+frontmatter was filled by the cockpit at the weld, as recorded.
 
 ## The story
 
@@ -61,8 +61,8 @@ internal links.
 ## Where to look
 
 - Spec (the full contract + doctrine text):
-  [agent-teams-brain](../specs/agent-teams-brain.md)
-- Targets: [SETUP §Models & effort](../SETUP.md#once-and-done--cloud-accounts)
-  · [DECISIONS §D-045](../DECISIONS.md#d-045--2026-07--hands-doctrine-solo--subagents--agent-team--lanes--the-litmus-is-one-bench-many-hands-vs-many-benches-vs-read-only-upholds-d-020-and-d-041)
-  · [parallel-lanes §Vehicles](../skills/parallel-lanes.md#vehicles)
-- Lane law: [parallel-lanes](../skills/parallel-lanes.md)
+  [agent-teams-brain](../../../specs/agent-teams-brain.md)
+- Targets: [SETUP §Models & effort](../../../SETUP.md#once-and-done--cloud-accounts)
+  · [DECISIONS §D-045](../../../DECISIONS.md#d-045--2026-07--hands-doctrine-solo--subagents--agent-team--lanes--the-litmus-is-one-bench-many-hands-vs-many-benches-vs-read-only-upholds-d-020-and-d-041)
+  · [parallel-lanes §Vehicles](../../../skills/parallel-lanes.md#vehicles)
+- Lane law: [parallel-lanes](../../../skills/parallel-lanes.md)

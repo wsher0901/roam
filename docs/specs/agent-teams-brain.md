@@ -2,12 +2,12 @@
 type: spec
 id: agent-teams-brain
 title: Agent-teams doctrine — Hands: solo · subagents · team · lanes (D-045)
-status: open
+status: shipped
 stage: workshop
 branch: docs/agent-teams-brain
-pr: —
+pr: 170
 opened: 2026-07-17
-shipped: —
+shipped: 2026-07-17 23:43
 ---
 
 # agent-teams-brain — the Hands doctrine (D-045)
