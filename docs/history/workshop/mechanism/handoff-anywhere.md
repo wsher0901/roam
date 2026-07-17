@@ -1,32 +1,36 @@
 ---
-type: memory
-id: handoff-anywhere
-updated: 2026-07-16 · completion rewrite · home PC
+type: history
+slug: handoff-anywhere
+shipped: 2026-07-16 23:55
+pr: 155
 ---
 
 # handoff-anywhere — leave at any instant, nothing lost
 
 ## Status
 
-complete, awaiting merge — all four doctrine lines written and
-verified by grep, 2026-07-16 · home PC. THE GATE waits on the
-founder's approval, which follows external review in the Web chat
-(founder instruction at kickoff).
+Shipped — merged as
+[#155](https://github.com/wsher0901/roam/pull/155). The nine-row
+mid-state audit proved every interruption parks clean, and the four
+missing lines are law: watch-duty inheritance at park, pickup's
+re-arm mirror, the unanswered-`BLOCKED:` Needs-you surface, and the
+interrupt doctrine (Esc lawful anywhere but THE WELD's atomic
+commit).
 
 ## What this task is
 
 An audit plus the missing doctrine lines. The founder must be able
 to hand off or lift off at ANY instant of any sitting with nothing
-lost or forgotten. [The spec](../specs/handoff-anywhere.md)
+lost or forgotten. [The spec](../../../specs/handoff-anywhere.md)
 enumerates every mid-state a sitting can be in (nine rows) and
 verifies each parks clean — most already do by construction (pushed
 state + memory diaries; the 07-16 crash proved the involuntary case
 live). This bench wrote what was missing: watch-duty inheritance
-([handoff §1.5](../skills/handoff.md#15--park-the-local-lanes-full-only)),
+([handoff §1.5](../../../skills/handoff.md#15--park-the-local-lanes-full-only)),
 the re-arm mirror in
-[pickup §3](../skills/pickup.md#3--gather-git-outranks-the-board),
+[pickup §3](../../../skills/pickup.md#3--gather-git-outranks-the-board),
 the unanswered-`BLOCKED:` Needs-you surface
-([handoff §4](../skills/handoff.md#4--repaint-dashboard-the-board-spec--single-source)),
+([handoff §4](../../../skills/handoff.md#4--repaint-dashboard-the-board-spec--single-source)),
 and the interrupt doctrine paragraph in handoff's intro.
 
 ## Pending issues
@@ -49,7 +53,7 @@ touches SETUP + parallel-lanes + liftoff), so its spec is linkable
 only after both merge.
 
 The routing call (spec §Routing): the interrupt doctrine went to
-handoff's intro, not [HOME](../HOME.md) — the routing law sends
+handoff's intro, not [HOME](../../../HOME.md) — the routing law sends
 conditional knowledge (when leaving) to the relevant skill, and
 liftoff §1 runs handoff first, so one home covers both leaving
 roads. HOME stays rule-free per its own header.
@@ -64,7 +68,7 @@ either.
 
 ## Where to look
 
-- Spec: [handoff-anywhere](../specs/handoff-anywhere.md)
-- Targets: [handoff](../skills/handoff.md) (intro · §1.5 · §4) ·
-  [pickup §3](../skills/pickup.md#3--gather-git-outranks-the-board)
+- Spec: [handoff-anywhere](../../../specs/handoff-anywhere.md)
+- Targets: [handoff](../../../skills/handoff.md) (intro · §1.5 · §4) ·
+  [pickup §3](../../../skills/pickup.md#3--gather-git-outranks-the-board)
 - PR: [#155](https://github.com/wsher0901/roam/pull/155)

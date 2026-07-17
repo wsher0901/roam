@@ -2,12 +2,12 @@
 type: spec
 id: handoff-anywhere
 title: Handoff-anywhere — leave at any instant, nothing lost
-status: open
+status: shipped
 stage: workshop
 branch: docs/handoff-anywhere
-pr: —
+pr: 155
 opened: 2026-07-16
-shipped: —
+shipped: 2026-07-16 23:55
 ---
 
 # handoff-anywhere — leave at any instant, nothing lost
@@ -92,9 +92,10 @@ own header (it explains and links, duplicates no rule).
       (handoff intro), naming Esc and THE WELD's no-interrupt
       window.
 - [x] Verification greps pass (§Verification).
-- [ ] Full CI mirror green; the pushed commit's Actions run green.
+- [x] Full CI mirror green; the pushed commit's Actions run green.
       (Ticked at the weld — the box describes the very Actions run
-      that can only exist after this spec's final commit.)
+      that can only exist after this spec's final commit; verified
+      green by the cockpit before THE GATE.)
 
 ## Verification
 
