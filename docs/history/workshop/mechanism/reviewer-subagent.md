@@ -1,24 +1,25 @@
 ---
-type: memory
-id: reviewer-subagent
-updated: 2026-07-17 · 02:26 UTC · cloud
+type: history
+slug: reviewer-subagent
+shipped: 2026-07-16 22:36
+pr: 146
 ---
 # reviewer-subagent — the ship-time diff critic
 
 ## Status
-complete, awaiting merge — 2026-07-17 · 02:26 UTC. Both deliverables
-done: [the spec](../specs/reviewer-subagent.md) finalized with the
-founder's answers folded in, `.claude/agents/reviewer.md` written.
-Synced with main (clean merge, DASHBOARD-only diff on main's side).
-Full CI mirror green locally (lint · format:check · check:links ·
-check:ledger · test · build); the pushed commit's own Actions run is
-next to confirm before THE GATE. Nothing further for this lane —
-founder approval is the only remaining gate.
+Shipped — merged as
+[#146](https://github.com/wsher0901/roam/pull/146). Both
+deliverables landed: [the spec](../../../specs/reviewer-subagent.md)
+finalized with the founder's answers folded in
+(advisory verdicts · Sonnet 5 · high), and
+`.claude/agents/reviewer.md` written. Flown end-to-end by the
+delegation maiden flight's first live cloud lane — the spawn recipe
+proven along the way: ready-flip, then label.
 
 ## What this task is
 The ship-time diff critic
-([SETUP §Staged](../SETUP.md#staged--turns-on-when-its-stage-opens)):
-finalize [the spec](../specs/reviewer-subagent.md) and write the
+([SETUP §Staged](../../../SETUP.md#staged--turns-on-when-its-stage-opens)):
+finalize [the spec](../../../specs/reviewer-subagent.md) and write the
 agent file `.claude/agents/reviewer.md`. The frame is fixed
 (read-only tools · invoked before THE GATE · declared checks ·
 structured verdict · never edits, never merges, never blocks on
@@ -36,7 +37,7 @@ CI green. Block 2 of the flight (the flight-report bench, DASHBOARD
 Needs-you 5) is the cockpit's follow-up once this ships — the flight
 data in The story is this bench's contribution to that report,
 including the un-recorded winning route in
-[parallel-lanes §Cloud spawn](../skills/parallel-lanes.md#cloud-spawn--route-ladder).
+[parallel-lanes §Cloud spawn](../../../skills/parallel-lanes.md#cloud-spawn--route-ladder).
 
 ## Left / idle
 Nothing on the two deliverables or the lane's own process. Left for
@@ -49,7 +50,7 @@ Born 2026-07-16 17:01 as the payload of the delegation maiden
 flight (D-041, route 1 label-spawn). Founder attestations at
 preflight, recorded here until the block-2 flight bench exists: the
 routine was re-saved from
-[SETUP's seven-clause master](../SETUP.md#once-and-done--cloud-accounts),
+[SETUP's seven-clause master](../../../SETUP.md#once-and-done--cloud-accounts),
 and the Web Project box was pasted current — Needs-you clearing
 waits for the flight report. Preflight receipts (cockpit, 17:01):
 label `lane:cloud` exists · main requires the `checks` context ·
@@ -65,7 +66,7 @@ Claude app; the only actors on the PR were vercel[bot] and the
 label event itself. `count:runs` reads 1 — the label-event proxy
 counts the trigger whether or not a session materialized. Spawn
 declared failed at 17:16 per
-[§Canary](../skills/parallel-lanes.md#canary-handshake-both-sides)'s
+[§Canary](../../../skills/parallel-lanes.md#canary-handshake-both-sides)'s
 cockpit side; the label left in place as evidence (a route-1 retry
 needs remove + re-add anyway; the wake-lock starves any late-firing
 session).
@@ -103,7 +104,7 @@ remaining.
 Sibling context: leg B (the local control lane, time-doctrine) flew
 the entire lane law unassisted the same afternoon and was welded as
 [#147](https://github.com/wsher0901/roam/pull/147) —
-[the story](../history/workshop/definition/time-doctrine.md). The
+[the story](../definition/time-doctrine.md). The
 cap counter never moved for it. So the flight's local half was
 already proven before step 2 landed.
 
@@ -120,7 +121,7 @@ redelivery-safety expectation. Both reserved questions were then
 raised in one `BLOCKED:` comment (01:58) and the founder answered
 both together at ~02:04: advisory verdict policy, Sonnet 5 · high
 effort, both reversible by a later
-[decide](../skills/decide.md). The spec was folded and
+[decide](../../../skills/decide.md). The spec was folded and
 `.claude/agents/reviewer.md` written (read-only tools: Read, Grep,
 Glob · model sonnet · effort high · advisory structured-verdict
 output) immediately after.
@@ -129,7 +130,7 @@ Flight verdict (for the block-2 report): route 1 (label-spawn) DOES
 work, but only against a ready (non-draft) PR — draft PRs appear to
 be filtered from the trigger. The winning recipe: flip the PR ready,
 then apply (or re-apply) the `lane:cloud` label. This resolves
-[parallel-lanes §Cloud spawn](../skills/parallel-lanes.md#cloud-spawn--route-ladder)'s
+[parallel-lanes §Cloud spawn](../../../skills/parallel-lanes.md#cloud-spawn--route-ladder)'s
 "winning route: unrecorded" note — a cockpit follow-up should record
 it there directly.
 
@@ -141,10 +142,11 @@ This memory rewrite is the completion moment (lane-law diary moment
 follow immediately after this push.
 
 ## Where to look
-Spec: [reviewer-subagent](../specs/reviewer-subagent.md). PR:
+Spec: [reviewer-subagent](../../../specs/reviewer-subagent.md). PR:
 [#146](https://github.com/wsher0901/roam/pull/146). Lane law:
-[parallel-lanes](../skills/parallel-lanes.md) (§Canary · §Wake-lock
+[parallel-lanes](../../../skills/parallel-lanes.md) (§Canary · §Wake-lock
 · §Cloud spawn — the maiden-flight verify checklist lives there).
 The saved-prompt master + Models & effort doctrine:
-[SETUP §cloud](../SETUP.md#once-and-done--cloud-accounts). Board
-row: DASHBOARD §Sessions + Needs-you 5.
+[SETUP §cloud](../../../SETUP.md#once-and-done--cloud-accounts). Board
+row at flight time: [DASHBOARD](../../../DASHBOARD.md) §Sessions +
+Needs-you 5 (cleared at ship).

@@ -2,12 +2,12 @@
 type: spec
 id: reviewer-subagent
 title: Reviewer subagent — the ship-time diff critic
-status: open
+status: shipped
 stage: workshop
 branch: chore/reviewer-subagent
 pr: 146
 opened: 2026-07-16
-shipped: —
+shipped: 2026-07-16 22:36
 ---
 # reviewer-subagent — the ship-time diff critic
 
@@ -62,9 +62,13 @@ answered both in one reply, both reversible by a later
       frame honored, verdict format defined.
 - [x] Both reserved questions asked in ONE `BLOCKED:` comment with
       @mention; answers recorded in spec + memory.
-- [ ] Full CI mirror green; the pushed commit's Actions run green;
+- [x] Full CI mirror green; the pushed commit's Actions run green;
       ready-flip only on green; completion comment @mentions
-      wsher0901.
+      wsher0901. (Ticked at the weld — the box describes the very
+      Actions run that could only exist after the spec's final
+      commit; verified green by the cockpit before THE GATE. The
+      ready-flip itself predated green as ladder step 2's trigger
+      experiment, a recorded flight deviation.)
 
 ## Deviations
 
