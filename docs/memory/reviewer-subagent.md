@@ -6,14 +6,12 @@ updated: 2026-07-16 · handoff · work PC
 # reviewer-subagent — the ship-time diff critic
 
 ## Status
-cloud spawn failed — 2026-07-16 17:16 · route 1 (label-spawn): label
-applied 17:02:36, no canary, no comment, no check-run from any
-Claude app within ~13 min (window ~10). Lane stood down; the bench
-is intact on origin, PR
-[#146](https://github.com/wsher0901/roam/pull/146) draft. Waiting on
-the founder's route call — nothing proceeds without it. A
-late-firing session self-terminates on this Status per the
-wake-lock — it is not yours.
+bench ready — awaiting cloud spawn (retry) — 2026-07-16 21:29. The
+founder called the route: route 1 retry ladder (see Story). The
+bench is intact on origin, PR
+[#146](https://github.com/wsher0901/roam/pull/146) draft. A worker
+waking on this Status may claim it with the canary per
+[§Canary](../skills/parallel-lanes.md#canary-handshake-both-sides).
 
 ## What this task is
 The ship-time diff critic
@@ -72,6 +70,21 @@ declared failed at 17:16 per
 cockpit side; the label left in place as evidence (a route-1 retry
 needs remove + re-add anyway; the wake-lock starves any late-firing
 session).
+
+Retry ladder (route 1 diagnosis) — opened 2026-07-16 21:29 by the
+cockpit on the founder's route call. Founder's diagnosis first: the
+routine is verified Active, bound to wsher0901/roam, prompt current,
+model Opus 4.8, and shows ZERO runs ever — so the 07-15 labeled
+event never matched the routine at all; the `count:runs` proxy's 1
+was the raw label event, not a burned run. The GitHub App
+installation is verified healthy (roam selected, permissions
+current). Remaining suspects are discriminated one variable per
+step: Step 1 re-label on the draft as-is · Step 2 re-label with the
+PR flipped ready (tests the draft-filtering hypothesis; that flip is
+a trigger EXPERIMENT, not the completion signal — completion remains
+@mention + Actions green) · Step 3 stand route 1 down, route 2 next.
+`count:runs` before the ladder: 1 today · 14 remaining (the 17:02
+event). Observations land here as flight evidence.
 
 Sibling context: leg B (the local control lane, time-doctrine) flew
 the entire lane law unassisted the same afternoon and was welded as
