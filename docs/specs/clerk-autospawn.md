@@ -152,7 +152,8 @@ at the flight, after the merge.
 - grep `CLERK_FIRE_TOKEN` → `docs/SETUP.md` + `.env.example` +
   `scripts/fire-clerk.mjs`.
 - grep `fire:clerk` → `package.json` + `docs/skills/liftoff.md`.
-- grep `invisible to` → the liftoff §2 budget note.
+- grep `INVISIBLE to` → the liftoff §2 budget note + the SETUP
+  recipe (the staged line carries the lowercase mention).
 - grep `A1|A2|A3|A4|A5` → all five present in this spec.
 
 ## Deviations

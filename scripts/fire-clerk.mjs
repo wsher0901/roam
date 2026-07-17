@@ -35,7 +35,7 @@ function readEnvLocal() {
   const values = {};
   for (const line of text.split(/\r?\n/)) {
     const m = line.match(/^\s*([A-Z0-9_]+)\s*=\s*(.*)\s*$/);
-    if (m) values[m[1]] = m[2].replace(/^["']|["']$/g, "");
+    if (m) values[m[1]] = m[2].trim().replace(/^["']|["']$/g, "");
   }
   return values;
 }
@@ -67,6 +67,8 @@ try {
         "content-type": "application/json",
       },
       body: JSON.stringify(message ? { text: message } : {}),
+      // a hung connection must still end in an honest nonzero exit
+      signal: AbortSignal.timeout(30_000),
     },
   );
   const bodyText = await res.text();
@@ -84,7 +86,16 @@ try {
     );
     process.exit(1);
   }
-  const data = JSON.parse(bodyText);
+  let data;
+  try {
+    data = JSON.parse(bodyText);
+  } catch {
+    console.error(
+      "fire-clerk: 200 but a non-JSON body — the API shape may have " +
+        `shifted; re-verify against the routines-fire docs.\n${bodyText}`,
+    );
+    process.exit(1);
+  }
   if (!data.claude_code_session_url) {
     console.error(
       "fire-clerk: 200 but no claude_code_session_url in the response — " +
@@ -96,8 +107,9 @@ try {
   console.log(`clerk fired · session: ${data.claude_code_session_url}`);
 } catch (err) {
   console.error(
-    "fire-clerk: could not reach the fire endpoint (offline or DNS): " +
-      `${err.message}. Use the manual charter paste instead.`,
+    "fire-clerk: could not reach the fire endpoint (offline, DNS, or " +
+      `timed out after 30 s): ${err.message}. Use the manual charter ` +
+      "paste instead.",
   );
   process.exit(1);
 }
