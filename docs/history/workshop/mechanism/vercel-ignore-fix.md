@@ -54,12 +54,22 @@ self-healing).
 ## Post-merge proofs
 
 Recorded post-observation via the weld-commissioned record commit
-(the founder's merge word ordered both proofs into this file):
+(the founder's merge word ordered both proofs into this file);
+observed 2026-07-17, 16:42–16:45, via the Vercel API:
 
-- PROOF 1 — the weld's production deployment: PENDING OBSERVATION
-  at weld time; filled by the record commit.
-- PROOF 2 — the tail's docs-only production: PENDING OBSERVATION
-  at weld time; filled by the record commit.
+- PROOF 1 ✓ — the weld's production deployment BUILT and came back
+  READY: `dpl_3UgR8aN3x2WdanSBRA6AawGat5iT`, target production,
+  commit 4bbcdd3 (the [#167](https://github.com/wsher0901/roam/pull/167)
+  squash), building ~28 s, aliased to production. The bad-object
+  path now exits 1 and builds — the ERROR streak (four productions:
+  the [#163](https://github.com/wsher0901/roam/pull/163)–[#166](https://github.com/wsher0901/roam/pull/166)
+  merges) is broken.
+- PROOF 2 ✓ — the tail's docs-only production SKIPPED, never
+  ERRORED: `dpl_8PPmm7QPYceXhPogaSWW1WUADsKm`, target production,
+  commit fd325f7 (the [#168](https://github.com/wsher0901/roam/pull/168)
+  tail), state CANCELED by the ignored build step — the exit-0
+  skip path, healthy again now that the previous production SHA
+  sits one commit back, well inside the shallow clone.
 
 ## Where to look
 
