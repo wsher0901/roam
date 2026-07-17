@@ -32,11 +32,12 @@ resets the horizon, so the skip self-heals.
 
 ## Done means
 
-- [ ] `vercel.json`'s ignoreCommand ends `|| exit 1`.
-- [ ] SETUP §Vercel notes the hardening + the self-healing
+- [x] `vercel.json`'s ignoreCommand ends `|| exit 1`.
+- [x] SETUP §Vercel notes the hardening + the self-healing
       side-effect.
-- [ ] This PR's own preview deployment builds READY (it touches
-      `vercel.json`).
+- [x] This PR's own preview deployment builds READY (it touches
+      `vercel.json`) — built and completed on the edit commit,
+      2026-07-17.
 - [ ] Full CI mirror green; the pushed commit's Actions run green.
       (Ticked at the weld.)
 

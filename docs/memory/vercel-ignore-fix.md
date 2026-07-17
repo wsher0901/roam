@@ -1,15 +1,16 @@
 ---
 type: memory
 id: vercel-ignore-fix
-updated: 2026-07-17 · bench birth · work PC
+updated: 2026-07-17 · ship · work PC
 ---
 
 # vercel-ignore-fix — fail toward build, never toward error
 
 ## Status
 
-bench ready — claimed by the cockpit in-session (2026-07-17, work
-PC); hotfix, built directly.
+complete, awaiting merge — both edits on the PR, its own preview
+built READY as the spec demands. DO NOT MERGE — the review word
+follows in the Web chat.
 
 ## What this task is
 
@@ -28,7 +29,7 @@ GATE — DO NOT MERGE; the review word follows in the Web chat.
 
 ## Left / idle
 
-The two edits — the bench was just born.
+nothing — the post-merge proof is observation, not work.
 
 ## The story
 
@@ -37,6 +38,17 @@ deployments tonight (first evidence: "fatal: bad object b4afebf"
 on dpl_EnH6px3t), traced to Vercel's ~10-deep shallow clone no
 longer containing the previous SHA once #163's burst of commits
 pushed it past the horizon.
+
+The correction of record: [#153](https://github.com/wsher0901/roam/pull/153)'s
+claim that the ignore step's "failure direction is always build"
+held for exit 1 but NOT for exit 128 — Vercel treats non-0/1
+ignore-step exits as deployment ERRORS, a path nobody exercised
+until the shallow-clone horizon moved. A shared miss: the author,
+the critic, and the external review all passed it. Corrected today
+by making every git failure exit 1 explicitly; the only residue is
+benign and documented (a beyond-horizon docs-only push builds
+redundantly once, and that build resets the horizon —
+self-healing).
 
 ## Where to look
 
