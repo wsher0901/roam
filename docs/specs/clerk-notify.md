@@ -2,12 +2,12 @@
 type: spec
 id: clerk-notify
 title: Clerk-notify — the clerk's standing watch
-status: open
+status: shipped
 stage: workshop
 branch: docs/clerk-notify
-pr: —
+pr: 163
 opened: 2026-07-17
-shipped: —
+shipped: 2026-07-17 16:16
 ---
 
 # clerk-notify — the clerk's standing watch

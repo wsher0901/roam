@@ -1,29 +1,30 @@
 ---
-type: memory
-id: clerk-notify
-updated: 2026-07-17 · ship · work PC
+type: history
+slug: clerk-notify
+shipped: 2026-07-17 16:16
+pr: 163
 ---
 
 # clerk-notify — the clerk's standing watch
 
 ## Status
 
-complete, awaiting merge — all five deliverables are on the PR.
-DO NOT MERGE until the founder's word lands after external Web
-review (the Shakedown Flight rule); merge order: this PR before
-its stacked sibling
-[#164](https://github.com/wsher0901/roam/pull/164).
+Shipped — merged as
+[#163](https://github.com/wsher0901/roam/pull/163), after external
+Web review per the Shakedown Flight rule, ahead of its stacked
+sibling [#164](https://github.com/wsher0901/roam/pull/164). The
+N-checklist (N1–N6) grades at the flight.
 
 ## What this task is
 
 Execute the staged clerk-notify line
-([SETUP §Staged](../SETUP.md#staged--turns-on-when-its-stage-opens)):
+([SETUP §Staged](../../../SETUP.md#staged--turns-on-when-its-stage-opens)):
 charter v2 — the clerk gains duty 6, the standing watch, so lane
 events (`BLOCKED:` comments · completions/ready-flips · CI red on
 main) reach the founder's phone as turn-end announcements. Plus the
 answering-a-lane watcher line (in verification), the two dated
 IDEAS lines, and the spec's N-checklist + open watch-mechanic
-question. Contract: [the spec](../specs/clerk-notify.md). Runs to
+question. Contract: [the spec](../../../specs/clerk-notify.md). Runs to
 THE GATE only — DO NOT MERGE; external Web review precedes the
 merge word.
 
@@ -71,10 +72,10 @@ instead; the path weave arrives with the sibling's own merge.
 
 ## Where to look
 
-- Spec: [clerk-notify](../specs/clerk-notify.md)
+- Spec: [clerk-notify](../../../specs/clerk-notify.md)
 - Charter master (duty 6 lands here):
-  [SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts)
+  [SETUP §cloud accounts](../../../SETUP.md#once-and-done--cloud-accounts)
 - Watcher line:
-  [parallel-lanes §Answering a lane](../skills/parallel-lanes.md#answering-a-lane-the-mail-slot)
+  [parallel-lanes §Answering a lane](../../../skills/parallel-lanes.md#answering-a-lane-the-mail-slot)
 - Predecessor story:
-  [cloud-clerk](../history/workshop/mechanism/cloud-clerk.md)
+  [cloud-clerk](../../../history/workshop/mechanism/cloud-clerk.md)
