@@ -98,24 +98,47 @@ recorded in this bench's memory.
 
 ## Endpoint of record
 
-Verified at build time (2026-07-17) against the live docs; the
-script embeds exactly what the verification found, and the memory
-narrates the evidence. If the trigger endpoint is not publicly
-documented, the script embeds the UI-provided recipe as the
-founder pastes it and A1 is the live verification —
-verify-before-rely either way.
+Verified 2026-07-17 against the live docs — the endpoint is public
+and documented
+([routines-fire reference](https://platform.claude.com/docs/en/api/claude-code/routines-fire)
+· [API-trigger setup](https://code.claude.com/docs/en/routines#add-an-api-trigger)):
+
+- `POST https://api.anthropic.com/v1/claude_code/routines/{routine_id}/fire`
+  — routine_id is the `trig_…` id (the API-trigger modal shows
+  it).
+- Auth: `Authorization: Bearer <sk-ant-oat01-…>` — the
+  per-routine fire token, shown once at generation, scoped to
+  this routine only.
+- Required headers: `anthropic-version: 2023-06-01` ·
+  `anthropic-beta: experimental-cc-routine-2026-04-01` — the beta
+  header is EXPERIMENTAL and dated; expect it to move.
+- Body (optional): `{"text": "…"}`, ≤65,536 chars, freeform — it
+  reaches the routine wrapped as untrusted
+  `<routine-fire-payload>` text (how the spawn preamble's watch
+  arming can be nudged per fire).
+- Response 200: `{type: "routine_fire", claude_code_session_id,
+  claude_code_session_url}` — the URL liftoff's flight-plan
+  repaint records.
+- No idempotency key — the script never auto-retries (a blind
+  retry could spawn a second session); 429 = the daily cap or
+  usage limit, carrying `Retry-After`.
+- Cap semantics confirmed by the docs: API fires COUNT against
+  the per-account daily routine allowance (one-off scheduled runs
+  do not) — the A4 proxy-blindness note stands.
+
+A1 remains the live fire — verify-before-rely.
 
 ## Done means
 
-- [ ] SETUP §cloud accounts carries the "Clerk routine"
+- [x] SETUP §cloud accounts carries the "Clerk routine"
       subsection: recipe, founder post-merge acts, secret path.
-- [ ] `scripts/fire-clerk.mjs` exists, zero-dep, with honest
+- [x] `scripts/fire-clerk.mjs` exists, zero-dep, with honest
       failure; `package.json` carries `fire:clerk`.
-- [ ] liftoff's clerk step is API-first with the manual paste
+- [x] liftoff's clerk step is API-first with the manual paste
       fallback retained verbatim; §2 carries the budget note.
-- [ ] SETUP §Staged's clerk-autospawn line reads "in verification"
+- [x] SETUP §Staged's clerk-autospawn line reads "in verification"
       and links this bench.
-- [ ] `.env.example` carries the two placeholders.
+- [x] `.env.example` carries the two placeholders.
 - [ ] Full CI mirror green; the pushed commit's Actions run green.
       (Ticked at the weld, whenever the founder's merge word
       lands.)

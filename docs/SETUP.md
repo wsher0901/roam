@@ -194,10 +194,12 @@ summary, then arm the watch.
 ```
 
   No GitHub trigger. API trigger enabled. Founder acts
-  (post-merge, ~3 min): create the routine in the UI → generate
-  the fire token ONCE → copy the routine id from the routine's
-  URL → paste BOTH into the cockpit, which stores them
-  machine-locally in `.env.local` (`CLERK_FIRE_TOKEN` ·
+  (post-merge, ~3 min): create the routine in the UI → add the
+  API trigger and generate the fire token ONCE (`sk-ant-oat01-…`,
+  shown once, scoped to this routine only) → copy the routine id
+  (`trig_…` — the API-trigger modal shows it; the routine's URL
+  carries it too) → paste BOTH into the cockpit, which stores
+  them machine-locally in `.env.local` (`CLERK_FIRE_TOKEN` ·
   `CLERK_ROUTINE_ID`) — the documented secret path: per-machine,
   never this public repo
   ([LAWS §Safety](LAWS.md#safety-non-negotiable)); regenerate the
