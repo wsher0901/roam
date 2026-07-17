@@ -88,6 +88,14 @@ docs-only → skip · reviewer weld touching .claude/ → build · board
 micro-PR → skip). Note: the earlier IDEAS caveat about `paths-ignore`
 starving the required `checks` context does NOT apply here — the
 skip is Vercel-side only; GitHub Actions still runs on every PR.
+Live fire on its own PR: the first docs-only push after the skip
+landed came back "Canceled by Ignored Build Step" — working as
+built — and exposed an edge in the docs' canonical `HEAD^ HEAD`
+form (a single push bundling app commits under a docs-only HEAD
+would wrongly skip). Upgraded per the same docs page to
+`${VERCEL_GIT_PREVIOUS_SHA:-HEAD^}` — the last successfully
+deployed SHA when Vercel exposes it, parent-commit fallback; an
+unresolvable SHA exits nonzero, which builds — the safe direction.
 Conventions hardened while passing: TEMPLATE's
 refresh-updated-with-Status rule (the 07-16 stale-frontmatter seat
 mis-attribution) and the specs-README fence rule for quoted doc
