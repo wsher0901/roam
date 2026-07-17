@@ -134,6 +134,43 @@ lane:cloud.
    and merged — not your call.
 ```
 
+- Cloud clerk (session; verified 2026-07-17, C1–C6 green — the
+  PRIMARY machine-off answering surface, the GitHub app demoted to
+  backstop, per
+  [D-043](DECISIONS.md#d-043--2026-07--cloud-ignition--away-command-redesign--route-ladder-v2-ready-flip-then-label-is-the-recipe-of-record-api-ignition-and-the-cloud-clerk-staged-the-claude-app-the-single-away-surface-amends-d-041-upholds-the-lane-law-and-the-wake-lock)'s
+  promotion clause) — the founder's away-mode concierge: a
+  manually-born claude.ai/code session on wsher0901/roam with a
+  narrow read-and-relay charter; cap-free by construction (a plain
+  session, not a routine). Birth: claude.ai/code (browser or the
+  phone's Claude app) → new session on wsher0901/roam → paste the
+  charter master below. Checklist + maiden results: the cloud-clerk
+  bench ([spec](specs/cloud-clerk.md)).
+
+Clerk charter (master — the clerk session's opening paste is a copy;
+re-paste from here after any edit):
+
+```text
+You are the Roam cloud clerk — the founder's away-mode
+concierge. You are NOT a worker. Your charter is narrow and
+absolute:
+1. Repo access is READ-ONLY: clone fresh, read origin, report.
+   Never write files, never commit, push, merge, branch, or
+   open PRs. Never touch a bench, never hold the baton, never
+   spawn or label anything.
+2. On "how are the lanes?" or similar: fetch origin, read
+   docs/DASHBOARD.md, open PRs, and each lane's memory Status;
+   answer plainly — per-lane state, plus anything waiting on
+   the founder.
+3. On "reply to the lane on #N: <text>": post exactly <text> as
+   a PR comment on #N (it posts as the founder), then confirm
+   back with the comment link. Post ONLY what the founder
+   explicitly dictates in this session.
+4. Anything beyond this charter: decline and point to the
+   cockpit. When unsure, decline.
+5. Re-derive every answer from origin at answer time — never
+   from session memory. You may idle indefinitely.
+```
+
 - Models & effort (doctrine — the Web paste block's Model + Effort
   line draws from here). Effort ladder: low · medium · high · xhigh
   · max. Reliance pair: Opus 4.8 — cockpit default, all
@@ -188,13 +225,17 @@ Sources:
   the routine's API trigger — cockpit/liftoff ignite cloud lanes
   via endpoint, benches stay draft, the ready-flip reverts to
   completion-only; adopt at first need, verify-before-rely.
-- At first need — cloud-clerk
-  ([D-043](DECISIONS.md#d-043--2026-07--cloud-ignition--away-command-redesign--route-ladder-v2-ready-flip-then-label-is-the-recipe-of-record-api-ignition-and-the-cloud-clerk-staged-the-claude-app-the-single-away-surface-amends-d-041-upholds-the-lane-law-and-the-wake-lock)):
-  the manually-born, cap-free away-surface session with a narrow
-  charter (reads origin; posts PR comments only on founder
-  instruction; never writes files, never merges, never holds the
-  baton); the first post-adoption liftoff tests clerk longevity on
-  a trivial charter; adopt at first need, verify-before-rely.
+- At first need — clerk-notify (founder requirement 2026-07-17):
+  the clerk keeps a standing watch on lane completions and
+  `BLOCKED:` comments and announces each via a turn-end message so
+  the app pushes a notification; adopt at first need,
+  verify-before-rely. (C6 datum, clerk maiden: zero app pushes on
+  clerk turns — silence is the clerk's default; the announce must
+  be explicit. Supersedes the phone-buzz/doorbell question.)
+- At first need — clerk-autospawn: liftoff API-fires the clerk
+  instead of the manual paste. Maiden finding 2026-07-17:
+  API-triggered runs count against the daily cap — 1 run per
+  liftoff vs the manual paste's 0; decide at adoption.
 - Built-in exploratory subagents (parallel research inside one
   task) need no spec — distinct from roadmap [P] lanes, which are
   separate sessions on separate branches.

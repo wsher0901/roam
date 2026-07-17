@@ -154,10 +154,13 @@ never need GitHub:
   posts it verbatim as a PR comment.
 - Away, machine on: the same sentence to the tethered cockpit via
   the Claude app (Remote Control).
-- Away, machine off: the GitHub app, four taps (interim) — the
-  cloud clerk takes this seat once
-  [D-043](../DECISIONS.md#d-043--2026-07--cloud-ignition--away-command-redesign--route-ladder-v2-ready-flip-then-label-is-the-recipe-of-record-api-ignition-and-the-cloud-clerk-staged-the-claude-app-the-single-away-surface-amends-d-041-upholds-the-lane-law-and-the-wake-lock)'s
-  staged task lands.
+- Away, machine off: the cloud clerk — PRIMARY since 2026-07-17,
+  checklist C1–C6 green (charter + checklist:
+  [spec](../specs/cloud-clerk.md) ·
+  [SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts),
+  per
+  [D-043](../DECISIONS.md#d-043--2026-07--cloud-ignition--away-command-redesign--route-ladder-v2-ready-flip-then-label-is-the-recipe-of-record-api-ignition-and-the-cloud-clerk-staged-the-claude-app-the-single-away-surface-amends-d-041-upholds-the-lane-law-and-the-wake-lock)) ·
+  the GitHub app, four taps — demoted to backstop.
 Never type into a session window — a window is not a slot: words
 landing there bypass the PR and die with the session (the record
 law: nothing important lives only in conversation). Plain language
@@ -234,21 +237,30 @@ Maiden flight — verify (flown 2026-07-16; results of record):
       · completion 22:28)
 - [x] the founder's reply resumes the session in-thread — ✓ within
       the reply-ack window (reply 22:10 → lane commit 22:11)
-- [ ] a blocked lane survives a real idle gap — partial: a
-      14-minute block survived; multi-hour survival rides the
-      cloud-clerk longevity test (D-043, staged)
+- [x] a blocked lane survives a real idle gap — proven: a 14-minute
+      block survived (maiden), and the clerk maiden's C5 closed the
+      multi-hour case (~4.5h idle, environment reclaimed,
+      auto-revived on open with a fresh correct answer, 2026-07-17 —
+      [cloud-clerk](../specs/cloud-clerk.md))
 - [x] the run decrements the cap counter — our side ✓:
       `npm run count:runs` is a trigger-proxy UPPER bound (it
       counted a phantom event — a label that spawned no session;
       draft-fails burned zero provider runs); the provider's own
-      count: pending founder attest
+      count: founder-attested 2026-07-17 — 1 run, matching the
+      proxy
 - [ ] dormant-baton case — deferred: expected retired by the cloud
-      clerk (D-043, staged); stays open until proven
+      clerk (D-043; verified + PRIMARY since 2026-07-17 —
+      [cloud-clerk](../specs/cloud-clerk.md)); stays open until a
+      dormant-baton answer is proven live
 
 Wake-lock battle-tested live: a redelivered `pull_request.labeled`
 webhook at 21:57, citing a stale head SHA, met the
 re-read-Status-first rule ([§Wake-lock](#wake-lock--parking)) and
 died harmless.
+
+After a cloud lane's weld, end its session at claude.ai/code — an
+idle completed session can resurrect its deleted branch on wake
+events (observed 2026-07-17).
 
 Sources:
 [LAWS §Self-improvement](../LAWS.md#self-improvement)
