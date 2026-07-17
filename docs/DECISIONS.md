@@ -1206,5 +1206,5 @@ attest, parked in [IDEAS](IDEAS.md)).
 [SETUP §cloud accounts](SETUP.md#once-and-done--cloud-accounts)
 (the run-history sentence) · [IDEAS](IDEAS.md) (the away-redesign
 idea lines + the double-dispatch resolution evidence) ·
-[D-041](#d-041--2026-07--delegation-architecture--the-away-mode-chooser-local--handoff--go-remote--liftoff-the-go-remote-tether-posture-idle-wait-label-spawned-cloud-lanes)
+[D-041](#d-041--2026-07--delegation-architecture--the-away-mode-chooser-go-remote-tether-idle-wait-label-spawned-cloud-amends-d-032s-wake-lock-and-the-dispatch-law-upholds-the-baton-law-and-d-009)
 (the route ladder amended) · this entry.

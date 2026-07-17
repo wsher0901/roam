@@ -12,7 +12,7 @@ shipped: —
 # maiden-flight-report — block 2, the flight closed on paper
 
 **Links:**
-[D-041 — delegation architecture](../DECISIONS.md#d-041--2026-07--delegation-architecture--the-away-mode-chooser-local--handoff--go-remote--liftoff-the-go-remote-tether-posture-idle-wait-label-spawned-cloud-lanes)
+[D-041 — delegation architecture](../DECISIONS.md#d-041--2026-07--delegation-architecture--the-away-mode-chooser-go-remote-tether-idle-wait-label-spawned-cloud-amends-d-032s-wake-lock-and-the-dispatch-law-upholds-the-baton-law-and-d-009)
 · [parallel-lanes §Cloud spawn](../skills/parallel-lanes.md#cloud-spawn--route-ladder)
 · [SETUP §Staged](../SETUP.md#staged--turns-on-when-its-stage-opens) ·
 [SETUP §cloud](../SETUP.md#once-and-done--cloud-accounts) ·
@@ -90,26 +90,26 @@ as "pending founder attest":
 
 ## Done means
 
-- [ ] "ready-flip, then label" is the recipe of record in
+- [x] "ready-flip, then label" is the recipe of record in
       parallel-lanes §Cloud spawn; "Winning route: unrecorded" is
       gone; the three-point evidence is dated.
-- [ ] The maiden verify checklist is filled item-by-item with the
+- [x] The maiden verify checklist is filled item-by-item with the
       verdicts of record (1 ✓ ready-only · 2 ✓ 90s canary · 3 ✓ ·
       4 ✓ in-window resume · 5 partial → clerk test · 6 our side ✓
       + provider pending attest · 7 deferred → clerk).
-- [ ] "Answering a lane" exists in parallel-lanes.
-- [ ] D-043 in DECISIONS; its Affects matches the ripple commit's
+- [x] "Answering a lane" exists in parallel-lanes.
+- [x] D-043 in DECISIONS; its Affects matches the ripple commit's
       name-only diff.
-- [ ] SETUP: both staged lines · the run-history sentence · the
+- [x] SETUP: both staged lines · the run-history sentence · the
       repo-settings enforcement line · the Vercel skip line.
-- [ ] `gh api` GET shows squash-only true, merge-commit + rebase
+- [x] `gh api` GET shows squash-only true, merge-commit + rebase
       false, branch auto-delete true.
-- [ ] vercel.json docs-only skip in place, mechanism verified
+- [x] vercel.json docs-only skip in place, mechanism verified
       against current Vercel docs first.
-- [ ] TEMPLATE sentence + specs-README line landed.
-- [ ] IDEAS: seven dated lines + the double-dispatch resolution
+- [x] TEMPLATE sentence + specs-README line landed.
+- [x] IDEAS: seven dated lines + the double-dispatch resolution
       append.
-- [ ] Memory Story complete; both attestations marked pending
+- [x] Memory Story complete; both attestations marked pending
       founder attest.
 - [ ] check:links · check:ledger · full CI mirror green; the
       pushed commit's Actions run green.
