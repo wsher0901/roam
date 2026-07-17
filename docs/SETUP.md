@@ -79,8 +79,14 @@ Sources:
 - Vercel — project linked to the repo (deploys since V1.S2.T3).
   Docs-only pushes skip the build (`vercel.json` ignoreCommand,
   exit-0-skips per Vercel's ignored build step; verified against
-  Vercel docs 07-16): ritual micro-PRs produce no deploy, no bot
-  comment, no email; app PRs keep previews.
+  Vercel docs 07-16; hardened 07-17 with `|| exit 1` so any git
+  failure — e.g. exit 128 when `VERCEL_GIT_PREVIOUS_SHA` falls
+  outside Vercel's ~10-deep shallow clone — fails toward BUILD,
+  never toward a deployment ERROR): ritual micro-PRs produce no
+  deploy, no bot comment, no email; app PRs keep previews.
+  Documented side-effect of the hardening: a docs-only push whose
+  previous SHA sits beyond the clone horizon builds redundantly
+  ONCE — that build resets the horizon, so the skip self-heals.
 - claude.ai — the Roam Project; its settings box carries
   WEB-INSTRUCTIONS verbatim.
 - Cloud lane worker (routine) — created at claude.ai/code/routines;
