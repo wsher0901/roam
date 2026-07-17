@@ -6,11 +6,13 @@ updated: 2026-07-17 · 01:54 UTC · cloud
 # reviewer-subagent — the ship-time diff critic
 
 ## Status
-claimed by cloud — 2026-07-17 · 01:54 UTC. Ladder step 2 (ready-flip
-+ re-label) produced this session — the first live cloud spawn of
-the maiden flight. Waiting for the cockpit's airborne ack per
-[§Canary](../skills/parallel-lanes.md#canary-handshake-both-sides)
-before real work begins.
+airborne · cloud (label-spawned, ladder step 2) · 2026-07-16 21:55
+home PC (01:55 UTC). Cockpit ack per
+[§Canary](../skills/parallel-lanes.md#canary-handshake-both-sides) —
+the lane owns this bench now; real work may begin. Completion
+remains @mention + Actions green (the PR is already ready as a
+trigger artifact of ladder step 2 — the lane still writes its
+completion rewrite + plain summary before landing).
 
 ## What this task is
 The ship-time diff critic
