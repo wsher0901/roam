@@ -84,15 +84,17 @@ the checklist pending (founder instruction at kickoff, 07-16).
 
 ## Done means
 
-- [ ] The charter master is fenced verbatim in SETUP §cloud
+- [x] The charter master is fenced verbatim in SETUP §cloud
       accounts.
-- [ ] Checklist C1–C6 present in this spec.
-- [ ] SETUP §Staged's cloud-clerk line reads "in verification" and
+- [x] Checklist C1–C6 present in this spec.
+- [x] SETUP §Staged's cloud-clerk line reads "in verification" and
       links this bench.
-- [ ] parallel-lanes' machine-off row names the cloud clerk (in
+- [x] parallel-lanes' machine-off row names the cloud clerk (in
       verification).
-- [ ] liftoff carries the conditional spawn/verify-the-clerk step.
+- [x] liftoff carries the conditional spawn/verify-the-clerk step.
 - [ ] Full CI mirror green; the pushed commit's Actions run green.
+      (Ticked at the weld — the box describes the very Actions run
+      that can only exist after this spec's final commit.)
 - [ ] C1–C6 founder-run, results in this bench's memory — gates the
       merge, not the ready-flip (see §The clerk's verify checklist).
 
