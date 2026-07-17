@@ -55,6 +55,11 @@ Sources:
   bookmarks.json).
 - Skill stubs — .claude/skills/ (one folder per ritual); procedures
   live vault-readable in docs/skills/.
+- Reviewer subagent — `.claude/agents/reviewer.md`, the pre-GATE
+  advisory critic; [ship §6](skills/ship.md#6--the-gate) invokes it
+  at every gate
+  ([D-044](DECISIONS.md#d-044--2026-07--the-pre-gate-critic-goes-live--ships-gate-opens-by-invoking-the-reviewer-subagent-verdicts-advisory-riding-with-the-summary-turns-on-the-staged-reviewer-upholds-d-038-and-the-reviewer-frame)
+  · frame: [its spec](specs/reviewer-subagent.md)).
 
 Sources:
 [LAWS §Safety](LAWS.md#safety-non-negotiable)
@@ -171,9 +176,6 @@ Sources:
 
 - V1.S1.T7 — Supabase project provisioned; Supabase MCP configured
   (tokens per machine).
-- V1.S2.T2+ — reviewer subagent: read-only diff critic wired into
-  ship, judging each diff against FOUNDATION, the task's roadmap
-  line, the reliability law, and the no-secrets rule.
 - V1.S2.T5+ — playwright plugin ON (Claude renders and judges its
   own UI) · design-critic subagent paired with screenshots · Claude
   Design ↔ repo design-system sync, plus the optional Design MCP
