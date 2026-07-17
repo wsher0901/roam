@@ -1,16 +1,18 @@
 ---
-type: memory
-id: vercel-ignore-fix
-updated: 2026-07-17 · ship · work PC
+type: history
+slug: vercel-ignore-fix
+shipped: 2026-07-17 16:41
+pr: 167
 ---
 
 # vercel-ignore-fix — fail toward build, never toward error
 
 ## Status
 
-complete, awaiting merge — both edits on the PR, its own preview
-built READY as the spec demands. DO NOT MERGE — the review word
-follows in the Web chat.
+Shipped — merged as
+[#167](https://github.com/wsher0901/roam/pull/167), after external
+review in the Web chat. Both post-merge proofs are recorded below
+(the founder's weld instruction).
 
 ## What this task is
 
@@ -18,14 +20,13 @@ Harden `vercel.json`'s ignoreCommand with `|| exit 1` so a git
 failure (exit 128 on a beyond-horizon `VERCEL_GIT_PREVIOUS_SHA`)
 fails toward BUILD instead of a production deployment ERROR; note
 the hardening + self-healing side-effect in SETUP §Vercel.
-Contract: [the spec](../specs/vercel-ignore-fix.md). Runs to THE
+Contract: [the spec](../../../specs/vercel-ignore-fix.md). Runs to THE
 GATE — DO NOT MERGE; the review word follows in the Web chat.
 
 ## Pending issues
 
-- Post-merge proof pending: the weld's production must come back
-  READY; the tail's docs-only production after it must skip or
-  build, never ERROR.
+none — the two post-merge proofs were observed at the weld and are
+recorded here (§Post-merge proofs, below the story).
 
 ## Left / idle
 
@@ -50,10 +51,20 @@ benign and documented (a beyond-horizon docs-only push builds
 redundantly once, and that build resets the horizon —
 self-healing).
 
+## Post-merge proofs
+
+Recorded post-observation via the weld-commissioned record commit
+(the founder's merge word ordered both proofs into this file):
+
+- PROOF 1 — the weld's production deployment: PENDING OBSERVATION
+  at weld time; filled by the record commit.
+- PROOF 2 — the tail's docs-only production: PENDING OBSERVATION
+  at weld time; filled by the record commit.
+
 ## Where to look
 
-- Spec: [vercel-ignore-fix](../specs/vercel-ignore-fix.md)
-- The skip line: [SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts)
+- Spec: [vercel-ignore-fix](../../../specs/vercel-ignore-fix.md)
+- The skip line: [SETUP §cloud accounts](../../../SETUP.md#once-and-done--cloud-accounts)
 - The skip's birth claim under repair:
-  [maiden-flight-report](../history/workshop/mechanism/maiden-flight-report.md)
+  [maiden-flight-report](../../../history/workshop/mechanism/maiden-flight-report.md)
   ([#153](https://github.com/wsher0901/roam/pull/153))

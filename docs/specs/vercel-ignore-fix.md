@@ -2,12 +2,12 @@
 type: spec
 id: vercel-ignore-fix
 title: Vercel ignore-step hardening — fail toward build
-status: open
+status: shipped
 stage: workshop
 branch: chore/vercel-ignore-fix
-pr: —
+pr: 167
 opened: 2026-07-17
-shipped: —
+shipped: 2026-07-17 16:41
 ---
 
 # vercel-ignore-fix — fail toward build, never toward error
