@@ -1,18 +1,17 @@
 ---
 type: memory
 id: reviewer-subagent
-updated: 2026-07-17 · 01:54 UTC · cloud
+updated: 2026-07-17 · 01:58 UTC · cloud
 ---
 # reviewer-subagent — the ship-time diff critic
 
 ## Status
-airborne · cloud (label-spawned, ladder step 2) · 2026-07-16 21:55
-home PC (01:55 UTC). Cockpit ack per
-[§Canary](../skills/parallel-lanes.md#canary-handshake-both-sides) —
-the lane owns this bench now; real work may begin. Completion
-remains @mention + Actions green (the PR is already ready as a
-trigger artifact of ladder step 2 — the lane still writes its
-completion rewrite + plain summary before landing).
+BLOCKED — 2026-07-17 · 01:58 UTC. Both reserved questions (verdict
+policy · reviewer model+effort) raised in one `BLOCKED:` PR comment
+per [the spec](../specs/reviewer-subagent.md#reserved-for-the-founder--do-not-decide),
+@mention wsher0901. Idle-waiting in-thread on
+[PR #146](https://github.com/wsher0901/roam/pull/146) — the founder's
+reply resumes this session; no further work until it lands.
 
 ## What this task is
 The ship-time diff critic
