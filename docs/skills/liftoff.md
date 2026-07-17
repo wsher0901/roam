@@ -55,8 +55,8 @@ Sources:
 Dispatch each eligible lane — fresh births and respawns alike —
 cloud-side via the route ladder; route 1 (label-spawn) is one command
 per lane: `gh pr edit <N> --add-label lane:cloud`.
-One conditional step: spawn/verify the clerk (pending clerk
-verification — see the [cloud-clerk bench](../specs/cloud-clerk.md);
+One conditional step: spawn the clerk if it isn't already up
+(verified 2026-07-17 — [cloud-clerk](../specs/cloud-clerk.md);
 charter master:
 [SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts))
 — the away surface should be up before the founder walks away.

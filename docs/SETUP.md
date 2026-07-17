@@ -134,13 +134,17 @@ lane:cloud.
    and merged — not your call.
 ```
 
-- Cloud clerk (session; staged → in verification) — the founder's
-  away-mode concierge: a manually-born claude.ai/code session on
-  wsher0901/roam with a narrow read-and-relay charter; cap-free by
-  construction (a plain session, not a routine). Birth: claude.ai/code
-  (browser or the phone's Claude app) → new session on wsher0901/roam
-  → paste the charter master below. Verify checklist + status: the
-  cloud-clerk bench ([spec](specs/cloud-clerk.md)).
+- Cloud clerk (session; verified 2026-07-17, C1–C6 green — the
+  PRIMARY machine-off answering surface, the GitHub app demoted to
+  backstop, per
+  [D-043](DECISIONS.md#d-043--2026-07--cloud-ignition--away-command-redesign--route-ladder-v2-ready-flip-then-label-is-the-recipe-of-record-api-ignition-and-the-cloud-clerk-staged-the-claude-app-the-single-away-surface-amends-d-041-upholds-the-lane-law-and-the-wake-lock)'s
+  promotion clause) — the founder's away-mode concierge: a
+  manually-born claude.ai/code session on wsher0901/roam with a
+  narrow read-and-relay charter; cap-free by construction (a plain
+  session, not a routine). Birth: claude.ai/code (browser or the
+  phone's Claude app) → new session on wsher0901/roam → paste the
+  charter master below. Checklist + maiden results: the cloud-clerk
+  bench ([spec](specs/cloud-clerk.md)).
 
 Clerk charter (master — the clerk session's opening paste is a copy;
 re-paste from here after any edit):
@@ -221,16 +225,17 @@ Sources:
   the routine's API trigger — cockpit/liftoff ignite cloud lanes
   via endpoint, benches stay draft, the ready-flip reverts to
   completion-only; adopt at first need, verify-before-rely.
-- In verification — cloud-clerk
-  ([D-043](DECISIONS.md#d-043--2026-07--cloud-ignition--away-command-redesign--route-ladder-v2-ready-flip-then-label-is-the-recipe-of-record-api-ignition-and-the-cloud-clerk-staged-the-claude-app-the-single-away-surface-amends-d-041-upholds-the-lane-law-and-the-wake-lock);
-  bench: [spec + checklist C1–C6](specs/cloud-clerk.md)): the
-  manually-born, cap-free away-surface session with a narrow
-  charter (reads origin; posts PR comments only on founder
-  instruction; never writes files, never merges, never holds the
-  baton); charter master in
-  [§cloud accounts](#once-and-done--cloud-accounts); first need
-  named by the founder 07-16 — verification (C1–C6, longevity
-  included) rides the bench; verify-before-rely.
+- At first need — clerk-notify (founder requirement 2026-07-17):
+  the clerk keeps a standing watch on lane completions and
+  `BLOCKED:` comments and announces each via a turn-end message so
+  the app pushes a notification; adopt at first need,
+  verify-before-rely. (C6 datum, clerk maiden: zero app pushes on
+  clerk turns — silence is the clerk's default; the announce must
+  be explicit. Supersedes the phone-buzz/doorbell question.)
+- At first need — clerk-autospawn: liftoff API-fires the clerk
+  instead of the manual paste. Maiden finding 2026-07-17:
+  API-triggered runs count against the daily cap — 1 run per
+  liftoff vs the manual paste's 0; decide at adoption.
 - Built-in exploratory subagents (parallel research inside one
   task) need no spec — distinct from roadmap [P] lanes, which are
   separate sessions on separate branches.

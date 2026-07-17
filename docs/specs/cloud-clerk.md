@@ -120,6 +120,17 @@ resurrect its deleted branch on wake events (observed 2026-07-17).
 Outside the original five deliverables; the memory's story carries
 the observation.
 
+Promotion-commit extensions (founder instruction 2026-07-17, with
+the merge word):
+[SETUP §Staged](../SETUP.md#staged--turns-on-when-its-stage-opens)
+gained two lines beside api-ignition — clerk-notify and
+clerk-autospawn — and the cloud-clerk "in verification" staged line
+retired (the clerk is live; its home is now
+[SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts)).
+Post-promotion, §Verification greps 2–3 read historically: "in
+verification" no longer appears — the row now names the clerk
+PRIMARY. Narrated in the memory.
+
 ## Open questions
 
 none — promotion is conditional on the checklist (Plan 8).

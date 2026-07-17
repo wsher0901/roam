@@ -154,15 +154,13 @@ never need GitHub:
   posts it verbatim as a PR comment.
 - Away, machine on: the same sentence to the tethered cockpit via
   the Claude app (Remote Control).
-- Away, machine off: the GitHub app, four taps (interim) · the
-  cloud clerk (in verification — charter + checklist:
+- Away, machine off: the cloud clerk — PRIMARY since 2026-07-17,
+  checklist C1–C6 green (charter + checklist:
   [spec](../specs/cloud-clerk.md) ·
   [SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts),
   per
-  [D-043](../DECISIONS.md#d-043--2026-07--cloud-ignition--away-command-redesign--route-ladder-v2-ready-flip-then-label-is-the-recipe-of-record-api-ignition-and-the-cloud-clerk-staged-the-claude-app-the-single-away-surface-amends-d-041-upholds-the-lane-law-and-the-wake-lock)).
-  Promotion to primary — the GitHub app demoted to backstop — rides
-  the clerk bench's own PR before it gates, IF checklist C1–C6 is
-  green.
+  [D-043](../DECISIONS.md#d-043--2026-07--cloud-ignition--away-command-redesign--route-ladder-v2-ready-flip-then-label-is-the-recipe-of-record-api-ignition-and-the-cloud-clerk-staged-the-claude-app-the-single-away-surface-amends-d-041-upholds-the-lane-law-and-the-wake-lock)) ·
+  the GitHub app, four taps — demoted to backstop.
 Never type into a session window — a window is not a slot: words
 landing there bypass the PR and die with the session (the record
 law: nothing important lives only in conversation). Plain language
