@@ -1,15 +1,15 @@
 ---
 type: memory
 id: reviewer-subagent
-updated: 2026-07-16 · handoff · work PC
+updated: 2026-07-16 · retry ladder step 2 · home PC
 ---
 # reviewer-subagent — the ship-time diff critic
 
 ## Status
-bench ready — awaiting cloud spawn (retry) — 2026-07-16 21:29. The
-founder called the route: route 1 retry ladder (see Story). The
-bench is intact on origin, PR
-[#146](https://github.com/wsher0901/roam/pull/146) draft. A worker
+bench ready — awaiting cloud spawn (retry, ladder step 2) —
+2026-07-16 21:52. Ladder step 1 failed (see Story); step 2 fires
+next: PR flipped ready + re-label. The bench is intact on origin,
+PR [#146](https://github.com/wsher0901/roam/pull/146). A worker
 waking on this Status may claim it with the canary per
 [§Canary](../skills/parallel-lanes.md#canary-handshake-both-sides).
 
@@ -85,6 +85,21 @@ a trigger EXPERIMENT, not the completion signal — completion remains
 @mention + Actions green) · Step 3 stand route 1 down, route 2 next.
 `count:runs` before the ladder: 1 today · 14 remaining (the 17:02
 event). Observations land here as flight evidence.
+
+Step 1 result — FAILED. The re-label fired from the work-PC side at
+21:31:49 (unlabeled 21:31:17 → labeled 21:31:49, actor wsher0901),
+before this cockpit sat down; the home-PC cockpit discovered it via
+the counter (2 today · 13 remaining) and the PR timeline. Sixteen-plus
+minutes of evidence checks at 21:47–21:52 found nothing: branch tip
+unmoved at e46cce7, zero PR comments, zero check-runs, zero timeline
+actors besides the label event itself. A fresh labeled event on a
+verified-Active routine still spawned nothing — the draft-filtering
+hypothesis is now the lead suspect. Step 2 (flip
+[#146](https://github.com/wsher0901/roam/pull/146) ready + re-label)
+fires at ~21:53; the ready-flip is a trigger EXPERIMENT only —
+completion remains @mention + Actions green. Cap cost so far: each
+labeled event burns one proxy count; step 2 makes it 3 today · 12
+remaining.
 
 Sibling context: leg B (the local control lane, time-doctrine) flew
 the entire lane law unassisted the same afternoon and was welded as
