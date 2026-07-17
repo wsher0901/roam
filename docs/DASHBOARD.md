@@ -6,19 +6,21 @@ status: living
 
 # Dashboard — the state surface
 
-Stamp: 2026-07-17 · 17:05 · liftoff · work PC
-V1 5/34 · S1 2/7 · S2 3/5 · sessions: 0 main · 2 parallel
-(0 needs you) · needs-you 2
+Stamp: 2026-07-17 · 23:31 · pickup · cloud
+V1 5/34 · S1 2/7 · S2 3/5 · sessions: 1 main · 2 parallel
+(2 need you) · needs-you 2
 How to read this board →
 [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
 
-1. 🟡 The next cockpit sitting owns the Shakedown phase-2
-   landing: reviews + merge words + welds for the two flying
-   lanes ([#170](https://github.com/wsher0901/roam/pull/170) ·
-   [#171](https://github.com/wsher0901/roam/pull/171)), the
-   N1–N6 / A1–A5 grading, and the full-forensics flight audit.
+1. 🟡 Both Shakedown phase-2 lanes are HOME — complete,
+   ready-flipped, Actions green
+   ([#170](https://github.com/wsher0901/roam/pull/170) ·
+   [#171](https://github.com/wsher0901/roam/pull/171)); this
+   sitting owes reviews + your merge words + the welds (incl.
+   B's two weld-deferred doc mentions), the N1–N6 / A1–A5
+   grading, and the full-forensics flight audit.
    Also outstanding: the home seat repeats the clerk-credential
    paste at its next sitting — the WORKING routine id is
    `trig_`-prefixed (corrected live at A1) (since 07-17).
@@ -35,15 +37,16 @@ How to read this board →
 
 | Session | Task | State | Last push | Your move |
 |---|---|---|---|---|
-| main · cockpit | — closed at liftoff 17:05 (Shakedown phase 2 flies unattended) | ⚪ | 17:05 (this repaint) | — |
-| cloud · lane | agent-teams-brain ([#170](https://github.com/wsher0901/roam/pull/170)) — the Hands doctrine, D-045 (spec on the lane branch) | 🟡 airborne 17:01 (label→canary 110 s) | 17:00 (canary) | — (idle-waits on any BLOCKED:; the clerk announces) |
-| cloud · lane | check-memory ([#171](https://github.com/wsher0901/roam/pull/171)) — the memory-format CI gate (spec on the lane branch) | 🟡 airborne 17:04 (label→canary 189 s) | 17:03 (canary) | — (idle-waits on any BLOCKED:; the clerk announces) |
+| main · cockpit | — sat down at pickup 23:31 (Shakedown phase-2 landing pending) | ⚪ | 23:31 (this repaint) | — |
+| cloud · lane | agent-teams-brain ([#170](https://github.com/wsher0901/roam/pull/170)) — the Hands doctrine, D-045 (spec on the lane branch) | 🟢 complete, awaiting merge (ready + Actions green) | 21:08 | review + merge word |
+| cloud · lane | check-memory ([#171](https://github.com/wsher0901/roam/pull/171)) — the memory-format CI gate (spec on the lane branch) | 🟢 complete, awaiting merge (ready + Actions green) | 21:08 | review + merge word |
 
 ↳ main micro: — (no active task)
 
 Flight context — Shakedown phase 2, the first fully-unattended
-liftoff; founder driving; next cockpit sitting runs reviews +
-welds + the audit. The clerk flies on watch:
+liftoff, LANDED: both payloads flew label→canary→work→ready
+unattended and sit complete at THE GATE; this sitting runs
+reviews + welds + the audit. The clerk stood the watch:
 [session_015Jd4wHuux5BitJ6HRwNMta](https://claude.ai/code/session_015Jd4wHuux5BitJ6HRwNMta),
 fired via `fire:clerk` in ~3 s (A1) with "arm the watch" as the
 payload. Cap arithmetic: `count:runs` reads 2 (the two lane
@@ -96,8 +99,8 @@ Flight phase 1 underway: the watch
 ([#163](https://github.com/wsher0901/roam/pull/163)) welded after
 external review; the ignition
 ([#164](https://github.com/wsher0901/roam/pull/164)) welds next →
-next: phase 2 is IN THE AIR (two lanes + the clerk on watch);
-results, gradings, and the audit land at the next cockpit
+next: phase 2 has LANDED — both lanes complete at THE GATE;
+reviews, merge words, welds, gradings, and the audit run this
 sitting. Last paste: inline at the 07-17 00:03 handoff. T3–T6
 source-vetting relaunch stays held (see You are here).
 
