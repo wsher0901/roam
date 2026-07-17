@@ -1,16 +1,18 @@
 ---
 type: memory
 id: agent-teams-brain
-updated: 2026-07-17 · 20:59 UTC · canary claim · cloud
+updated: 2026-07-17 · 21:07 UTC · completion · cloud
 ---
 
 # agent-teams-brain — the Hands doctrine (D-045)
 
 ## Status
 
-airborne — cloud routine · 2026-07-17 17:01 (cockpit ack;
-label→canary 110 s). The lane works; the founder departs after
-spawn verification — Shakedown phase 2, unattended flight.
+complete — cloud lane, 2026-07-17 · 21:07 UTC. All three edits
+rippled in one commit; full CI mirror green locally (lint · format
+· links · ledger · tests · build); Actions confirmation gates the
+ready-flip. Awaiting founder review + merge word — not the lane's
+call.
 
 ## What this task is
 
@@ -23,24 +25,44 @@ zero lane decisions.
 
 ## Pending issues
 
-none at birth.
+none.
 
 ## Left / idle
 
-All three edits — no worker has claimed the bench yet.
+nothing — all three edits landed. The Done-means checkboxes and
+the spec's `pr:`/`shipped:` frontmatter stay for the cockpit to
+tick at the weld (never the lane's write).
 
 ## The story
 
-Born 2026-07-17 as payload A of the Shakedown Flight phase 2 —
-the first fully-unattended liftoff; the founder departs after
-spawn verification. Sibling lane (file-disjoint by construction):
+Born 2026-07-17 as payload A of the Shakedown Flight phase 2 — the
+first fully-unattended liftoff; the founder departs after spawn
+verification. Sibling lane (file-disjoint by construction):
 check-memory on `feat/check-memory`.
+
+Flown by the cloud routine: canary claimed at 20:59 UTC; the
+cockpit's airborne ack landed (label→canary 110 s) and the lane
+went to work. The three ripple edits — the Hands passage in SETUP
+§Models & effort (doctrine copied verbatim, D-045 weave-linked),
+the D-045 entry in DECISIONS (Affects held to the diff's touched
+surfaces; the upheld D-020/D-041 named in the heading, not
+Affects), and the pointer line in parallel-lanes §Vehicles — all
+committed together per the ripple rule.
+
+One dead end repaired en route: `npm run check:links` flagged a
+broken placeholder in the spec's own plan prose — a D-045 link
+still aimed at a target literally named "link", written at bench
+birth before the real anchor existed. Per the retroactivity law —
+a gap repaired the moment it is found — the placeholder was
+pointed at the real D-045 anchor in this same PR (the spec is in
+the task's touch-list). Links back to green: 0 broken across all
+internal links.
 
 ## Where to look
 
 - Spec (the full contract + doctrine text):
   [agent-teams-brain](../specs/agent-teams-brain.md)
-- Targets: [SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts)
-  (Models & effort region) · [DECISIONS](../DECISIONS.md) ·
-  [parallel-lanes §Vehicles](../skills/parallel-lanes.md#vehicles)
+- Targets: [SETUP §Models & effort](../SETUP.md#once-and-done--cloud-accounts)
+  · [DECISIONS §D-045](../DECISIONS.md#d-045--2026-07--hands-doctrine-solo--subagents--agent-team--lanes--the-litmus-is-one-bench-many-hands-vs-many-benches-vs-read-only-upholds-d-020-and-d-041)
+  · [parallel-lanes §Vehicles](../skills/parallel-lanes.md#vehicles)
 - Lane law: [parallel-lanes](../skills/parallel-lanes.md)

@@ -51,7 +51,8 @@ spec.
 1. `docs/SETUP.md`, inside the "Models & effort" bullet's region
    (directly after that bullet): a sibling bullet "Hands: solo ·
    subagents · team · lanes (doctrine,
-   [D-045](link))" carrying the doctrine text above verbatim,
+   [D-045](../DECISIONS.md#d-045--2026-07--hands-doctrine-solo--subagents--agent-team--lanes--the-litmus-is-one-bench-many-hands-vs-many-benches-vs-read-only-upholds-d-020-and-d-041))"
+   carrying the doctrine text above verbatim,
    formatted as the section's house style (indented bullet prose,
    · separators preserved).
 2. `docs/DECISIONS.md`: append D-045 following the file's house
