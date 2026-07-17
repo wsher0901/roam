@@ -9,6 +9,7 @@
     "lint": "eslint",
     "check:links": "node scripts/check-links.mjs",
     "check:ledger": "node scripts/check-ledger.mjs",
+    "check:memory": "node scripts/check-memory.mjs",
     "count:runs": "node scripts/count-routine-runs.mjs",
     "fire:clerk": "node scripts/fire-clerk.mjs",
     "test": "vitest run",

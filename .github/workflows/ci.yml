@@ -19,5 +19,6 @@ jobs:
       - run: npm run format:check
       - run: npm run check:links
       - run: npm run check:ledger
+      - run: npm run check:memory
       - run: npm test
       - run: npm run build

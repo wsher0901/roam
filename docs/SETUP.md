@@ -49,7 +49,7 @@ Sources:
   reset, rm -rf, repo delete, admin/foreign-repo merges.
 - Hooks — session-start (pull + print the board) ·
   user-prompt-submit (close-lock) · session-end (push safety net).
-- CI — .github/workflows/ci.yml: lint · tests · link check.
+- CI — .github/workflows/ci.yml: lint · format · links · ledger · memory · tests · build.
 - .gitattributes — LF normalization repo-side.
 - Vault-lens seed — .claude/vault-seed/ (graph.json ·
   bookmarks.json).
