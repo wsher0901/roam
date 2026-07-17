@@ -79,3 +79,8 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   missing-local-main anomaly — pickup found no local main branch on
   the home PC (healed 07-16 by rebuilding from origin, cause
   unknown); watch for recurrence.
+- 2026-07-17 (Web handoff, "Roam — full-pass audit + maiden
+  flight"): ship.md wiring — wire the
+  [reviewer subagent](history/workshop/mechanism/reviewer-subagent.md)
+  into [ship](skills/ship.md) as the pre-GATE advisory critic;
+  Code's offer stands fully specified, go not yet given.
