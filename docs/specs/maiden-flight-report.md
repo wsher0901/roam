@@ -5,7 +5,7 @@ title: Maiden flight report — block 2, the flight closed on paper
 status: open
 stage: workshop
 branch: docs/maiden-flight-report
-pr: —
+pr: 153
 opened: 2026-07-16
 shipped: —
 ---
