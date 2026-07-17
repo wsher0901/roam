@@ -1,17 +1,18 @@
 ---
 type: memory
 id: reviewer-subagent
-updated: 2026-07-17 · 01:58 UTC · cloud
+updated: 2026-07-17 · 02:05 UTC · cloud
 ---
 # reviewer-subagent — the ship-time diff critic
 
 ## Status
-BLOCKED — 2026-07-17 · 01:58 UTC. Both reserved questions (verdict
-policy · reviewer model+effort) raised in one `BLOCKED:` PR comment
-per [the spec](../specs/reviewer-subagent.md#reserved-for-the-founder--do-not-decide),
-@mention wsher0901. Idle-waiting in-thread on
-[PR #146](https://github.com/wsher0901/roam/pull/146) — the founder's
-reply resumes this session; no further work until it lands.
+airborne — cloud · 2026-07-17 02:05 UTC. Founder resolved both
+reserved questions in-thread on
+[PR #146](https://github.com/wsher0901/roam/pull/146): advisory
+verdict policy, Sonnet 5 · high effort, both reversible by a later
+[decide](../skills/decide.md). Both deliverables now exist (spec
+finalized, `.claude/agents/reviewer.md` written); running the CI
+mirror next, then the ready-flip and completion @mention.
 
 ## What this task is
 The ship-time diff critic
@@ -20,30 +21,27 @@ finalize [the spec](../specs/reviewer-subagent.md) and write the
 agent file `.claude/agents/reviewer.md`. The frame is fixed
 (read-only tools · invoked before THE GATE · declared checks ·
 structured verdict · never edits, never merges, never blocks on
-style). TWO QUESTIONS ARE RESERVED FOR THE FOUNDER — verdict policy
-(advisory vs blocking) and the reviewer's own model + effort — to be
-raised in one `BLOCKED:` PR comment, then idle-wait. Out of scope:
+style). Two questions were reserved for the founder — verdict policy
+and the reviewer's own model + effort — raised in one `BLOCKED:` PR
+comment and resolved (see The story · spec §Founder decisions). Out
+of scope:
 editing ship.md (cockpit follow-up), anything beyond the two
 deliverables. It is also the PAYLOAD of the delegation maiden
 flight's cloud leg (leg A) — the task and the flight test ride
 together.
 
 ## Pending issues
-The founder's route call, in Your-move terms (board Needs-you 5):
-1. Check claude.ai/code/routines — did route 1's label trigger
-   register a run at all? (Our `count:runs` proxy reads 1; whether
-   the provider burned a run only its own counter can say.)
-2. Then: retry route 1 (remove + re-add the `lane:cloud` label after
-   fixing whatever the run record shows) · route 2 (manual
-   claude.ai/code session ON branch `chore/reviewer-subagent`) · or
-   fly this task on a local lane instead.
-Block 2 of the flight (the flight-report bench) is pending the
-founder's paste — the flight data below rides here until it exists.
+None on the task itself — both reserved questions resolved. Block 2
+of the flight (the flight-report bench, DASHBOARD Needs-you 5) is
+still the cockpit's follow-up once this task ships; the flight data
+below is this bench's contribution to that report.
 
 ## Left / idle
-All task work — no worker ever claimed the bench. The bench itself
-is complete and rescuable: branch + spec + memory + draft PR on
-origin.
+Nothing on the two deliverables. Remaining before ready: the full CI
+mirror (this session), then the ready-flip refresh and completion
+@mention (the PR is already technically "ready" as a trigger artifact
+of ladder step 2, but the completion rewrite + summary still gate
+per the lane law).
 
 ## The story
 Born 2026-07-16 17:01 as the payload of the delegation maiden
@@ -105,9 +103,34 @@ Sibling context: leg B (the local control lane, time-doctrine) flew
 the entire lane law unassisted the same afternoon and was welded as
 [#147](https://github.com/wsher0901/roam/pull/147) —
 [the story](../history/workshop/definition/time-doctrine.md). The
-cap counter never moved for it. So the flight's local half is
-proven; only the cloud spawn path remains unproven, and this bench
-is the test article when the founder calls the route.
+cap counter never moved for it. So the flight's local half was
+already proven before step 2 landed.
+
+Step 2 result — SUCCEEDED. A cloud session woke on this bench at
+2026-07-17 01:54 UTC, confirming the draft-filtering hypothesis: the
+PR's ready-flip (part of step 2), not the label alone, was the
+missing variable. Canary pushed 01:54 (Status → "claimed by cloud");
+cockpit ack landed 01:55 ("airborne"); real work began. A stray
+redelivered `pull_request.labeled` webhook arrived afterward citing
+the pre-canary head SHA — the wake-lock's re-read-Status-first rule
+handled it cleanly: Status was this lane's own non-terminal claim, so
+no action was taken, matching the maiden-flight verify list's
+redelivery-safety expectation. Both reserved questions were then
+raised in one `BLOCKED:` comment (01:58) and the founder answered
+both together at ~02:04: advisory verdict policy, Sonnet 5 · high
+effort, both reversible by a later
+[decide](../skills/decide.md). The spec was folded and
+`.claude/agents/reviewer.md` written (read-only tools: Read, Grep,
+Glob · model sonnet · effort high · advisory structured-verdict
+output) immediately after.
+
+Flight verdict (for the block-2 report): route 1 (label-spawn) DOES
+work, but only against a ready (non-draft) PR — draft PRs appear to
+be filtered from the trigger. The winning recipe: flip the PR ready,
+then apply (or re-apply) the `lane:cloud` label. This resolves
+[parallel-lanes §Cloud spawn](../skills/parallel-lanes.md#cloud-spawn--route-ladder)'s
+"winning route: unrecorded" note — a cockpit follow-up should record
+it there directly.
 
 ## Where to look
 Spec: [reviewer-subagent](../specs/reviewer-subagent.md). PR:

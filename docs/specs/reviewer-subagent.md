@@ -5,7 +5,7 @@ title: Reviewer subagent — the ship-time diff critic
 status: open
 stage: workshop
 branch: chore/reviewer-subagent
-pr: —
+pr: 146
 opened: 2026-07-16
 shipped: —
 ---
@@ -35,19 +35,17 @@ and the agent file `.claude/agents/reviewer.md`.
 - Output: a structured verdict — pass, or findings with severity.
 - It never edits, never merges, never blocks on style.
 
-## RESERVED FOR THE FOUNDER — do not decide
+## Founder decisions (resolved 2026-07-17, PR comment)
 
-Raise BOTH questions in a SINGLE `BLOCKED:` PR comment (@mention
-wsher0901) per the lane law, then idle-wait for the reply:
+Both questions raised in one `BLOCKED:` comment on
+[PR #146](https://github.com/wsher0901/roam/pull/146); the founder
+answered both in one reply, both reversible by a later
+[decide](../skills/decide.md):
 
-1. Verdict policy — advisory (findings ride to the founder at THE
-   GATE) vs blocking (a 🔴 finding halts ship before THE GATE)?
-2. The reviewer's own model + effort under the
-   [Models & effort doctrine](../SETUP.md#once-and-done--cloud-accounts)
-   — Sonnet 5 · high (speed) vs Opus 4.8 · xhigh (depth)?
-
-Fold the answers into this spec (and narrate them in the memory)
-before the ready-flip.
+1. **Verdict policy — advisory.** Findings ride to the founder at
+   THE GATE alongside the summary; a finding never halts ship itself.
+2. **Model + effort — Sonnet 5 · high**, per the
+   [Models & effort doctrine](../SETUP.md#once-and-done--cloud-accounts).
 
 ## Out of scope
 
@@ -58,11 +56,11 @@ before the ready-flip.
 
 ## Done means
 
-- [ ] This spec finalized: the frame concrete, both reserved answers
+- [x] This spec finalized: the frame concrete, both reserved answers
       folded in from the founder's reply.
-- [ ] `.claude/agents/reviewer.md` exists — read-only toolset, the
+- [x] `.claude/agents/reviewer.md` exists — read-only toolset, the
       frame honored, verdict format defined.
-- [ ] Both reserved questions asked in ONE `BLOCKED:` comment with
+- [x] Both reserved questions asked in ONE `BLOCKED:` comment with
       @mention; answers recorded in spec + memory.
 - [ ] Full CI mirror green; the pushed commit's Actions run green;
       ready-flip only on green; completion comment @mentions
@@ -70,9 +68,11 @@ before the ready-flip.
 
 ## Deviations
 
-<filled at ship>
+None from the frame. The founder folded a standing caveat into the
+verdict answer itself: both the verdict policy and the reviewer's
+model/effort are reversible later via a normal
+[decide](../skills/decide.md), not locked forever by this spec.
 
 ## Open questions
 
-The two RESERVED-FOR-THE-FOUNDER questions above, until the founder
-answers on the PR.
+None — both resolved (see Founder decisions above).
