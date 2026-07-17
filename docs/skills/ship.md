@@ -38,7 +38,14 @@ plain language; add a Deviations section for anything done
 differently than the spec; preview link.
 
 ## 6 · THE GATE
-Summarize in plain language and ask. NEVER merge without the
+First, the critic
+([D-044](../DECISIONS.md#d-044--2026-07--the-pre-gate-critic-goes-live--ships-gate-opens-by-invoking-the-reviewer-subagent-verdicts-advisory-riding-with-the-summary-turns-on-the-staged-reviewer-upholds-d-038-and-the-reviewer-frame)):
+invoke the reviewer subagent (`.claude/agents/reviewer.md` — frame:
+[its spec](../specs/reviewer-subagent.md)) on the branch's diff.
+Its structured verdict is ADVISORY and rides to the founder
+verbatim alongside the summary — a finding never halts ship by
+itself; the founder weighs it at the gate.
+Then summarize in plain language and ask. NEVER merge without the
 founder's explicit yes — the conversational yes is the only gate;
 never infer it.
 

@@ -41,6 +41,17 @@ GATE's first act, not as a new numbered section — the vault weaves
 shipped histories; renumbering would break them all for zero
 function.
 
+D-044 landed on this branch (entry + ripple in one commit, per
+[decide](../skills/decide.md)): ship §6 gained the critic, SETUP
+filed the reviewer under repo-side and retired its Staged line, the
+IDEAS inbox line cleared.
+
+Datum observed at bench birth, not this task's to act on: a fresh
+empty `claude/session-*` branch appeared on origin at main's tip
+during the morning sitting — consistent with the clerk session's
+platform-side branch creation, zero commits from the session
+itself. Left for the founder's C-checklist notes.
+
 ## Where to look
 
 - Spec: [ship-wiring](../specs/ship-wiring.md)
