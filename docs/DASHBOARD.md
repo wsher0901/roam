@@ -6,32 +6,23 @@ status: living
 
 # Dashboard — the state surface
 
-Stamp: 2026-07-17 · 12:19 · pickup-repaint · work PC
+Stamp: 2026-07-17 · 15:29 · ship-tail · work PC
 V1 5/34 · S1 2/7 · S2 3/5 · sessions: 1 main · 0 parallel
-(0 needs you) · needs-you 3
+(0 needs you) · needs-you 2
 How to read this board →
 [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
 
-1. 🟡 This morning at claude.ai/code, in order: end the
-   reviewer-subagent zombie session (it resurrected its deleted
-   branch twice on wake events), birth the clerk (new session on
-   wsher0901/roam, charter from #156's SETUP), run C1–C3 + the C4
-   ergonomics note, idle ≥3h, then C5/C6 — results to the Web chat,
-   then [#156](https://github.com/wsher0901/roam/pull/156)'s merge
-   word + promotion clause (since 07-16).
-   → [#156](https://github.com/wsher0901/roam/pull/156) ·
-   [D-043](DECISIONS.md#d-043--2026-07--cloud-ignition--away-command-redesign--route-ladder-v2-ready-flip-then-label-is-the-recipe-of-record-api-ignition-and-the-cloud-clerk-staged-the-claude-app-the-single-away-surface-amends-d-041-upholds-the-lane-law-and-the-wake-lock)
-   · datum for the C-notes: an empty platform-side
-   `claude/session-*` branch appeared at birth, zero session
-   commits —
-   [ship-wiring §story](history/workshop/mechanism/ship-wiring.md)
-2. ⚪ Two maiden-flight attestations pending, no rush: the provider
-   routine run count (expect 1) · whether @mentions buzzed the
-   phone — feeds the doorbell decision (since 07-16).
+1. 🟢 Closed at this ship's tail, nothing left to do: the two
+   maiden-flight attestations — the provider run count confirmed at
+   1 (matches the `count:runs` proxy) and the phone-buzz/doorbell
+   question superseded by the staged clerk-notify line; both
+   recorded in their homes, this line drops at the next repaint
+   (since 07-16).
    → [parallel-lanes §Cloud spawn](skills/parallel-lanes.md#cloud-spawn--route-ladder)
-3. ⚪ Nine open engine questions sit parked in the Open register
+   · [SETUP §Staged](SETUP.md#staged--turns-on-when-its-stage-opens)
+2. ⚪ Nine open engine questions sit parked in the Open register
    until S3 opens (since 07-13).
    → [ENGINE §12](ENGINE.md#12-open-register) ·
    [D-028](DECISIONS.md#d-028--2026-07--consolidation-recut--decision-policy--engine-brain-skeleton-form-project-policy-house-style-open-register-grows-69-upholds-d-021-extends-the-d-021-consolidation)
@@ -41,17 +32,9 @@ How to read this board →
 
 | Session | Task | State | Last push | Your move |
 |---|---|---|---|---|
-| main · cockpit | — (between tasks — ship-wiring just shipped) | ⚪ | 11:11 ([#159](https://github.com/wsher0901/roam/pull/159) weld) | — |
+| main · cockpit | — (between tasks — cloud-clerk just shipped) | ⚪ | 15:27 ([#156](https://github.com/wsher0901/roam/pull/156) weld) | — |
 
 ↳ main micro: — (no active task)
-
-Bench at THE GATE, no live worker:
-[#156 cloud-clerk](https://github.com/wsher0901/roam/pull/156) is
-complete and Actions-green — its merge waits on the founder-run
-clerk maiden (C1–C6, Needs-you 1) and external review; a green
-checklist adds the promotion commit to the same PR before it gates.
-The maiden plan is folded into the bench's memory (Pending issues),
-readable cold.
 
 ## You are here
 
@@ -84,17 +67,19 @@ flowchart LR
   class S4,S5,S6,S7,S8 pending
 ```
 
-**"Roam — full-pass audit + maiden flight"** (Web) — maiden flight
-closed and codified; the cloud-clerk bench holds at THE GATE and
-the pre-GATE critic went live this morning (D-044, #159) → next:
-the clerk-maiden results land back in this chat, then #156's merge
-word. Last paste: inline at the 07-17 00:03 handoff. T3–T6
-source-vetting relaunch stays held (see You are here).
+**"Roam — full-pass audit + maiden flight"** (Web) — the clerk
+maiden flew all green 07-17 and
+[#156](https://github.com/wsher0901/roam/pull/156) welded: the away
+surface is live, clerk PRIMARY with the GitHub app as backstop →
+next: nothing owed this chat. Last paste: inline at the 07-17 00:03
+handoff. T3–T6 source-vetting relaunch stays held (see You are
+here).
 
 ## Shipped (latest — full record: [the ledger](history/README.md#the-ledger))
 
 | When | What | PR |
 |---|---|---|
+| 07-17 15:26 | [the away surface goes live: the clerk maiden flown founder-run, C1–C6 all green (~4.5h idle survival proven, run-count attest closed at 1), the promotion clause executed — clerk PRIMARY for machine-off answering, GitHub app demoted to backstop; clerk-notify + clerk-autospawn staged beside api-ignition](history/workshop/mechanism/cloud-clerk.md) | [#156](https://github.com/wsher0901/roam/pull/156) |
 | 07-17 11:09 | [the pre-GATE critic wired in (D-044): ship §6 opens by invoking the reviewer subagent — advisory verdicts riding to the founder with the summary; the critic's maiden wired run flew on its own PR (pass + the verdict-as-message clause)](history/workshop/mechanism/ship-wiring.md) | [#159](https://github.com/wsher0901/roam/pull/159) |
 | 07-16 23:55 | [leave at any instant, nothing lost: the nine-row mid-state audit proves every interruption parks clean — watch-duty named at park ("watching #N for X") + pickup's re-arm mirror, the unanswered-BLOCKED Needs-you surface ("lane #N awaits your reply"), the interrupt doctrine in one home (Esc lawful anywhere but THE WELD's atomic commit)](history/workshop/mechanism/handoff-anywhere.md) | [#155](https://github.com/wsher0901/roam/pull/155) |
 | 07-16 23:12 | [the delegation maiden flight closed on paper: D-043 (route ladder v2 — ready-flip-then-label the recipe of record, api-ignition + the cloud clerk staged, the Claude app the single away surface), the maiden verify checklist filled, §Answering a lane opened, squash-only + branch auto-delete enforced, the Vercel docs-only build skip live-fired both ways](history/workshop/mechanism/maiden-flight-report.md) | [#153](https://github.com/wsher0901/roam/pull/153) |
@@ -104,4 +89,3 @@ source-vetting relaunch stays held (see You are here).
 | 07-16 10:37 | [Lane liveness (D-042): live-vs-reclaimable derived from the commit heartbeat and read at the claim check and pickup's worktree sweep, fed by the session-start hook's verdict — a live lane is never adopted or pruned](history/workshop/mechanism/lane-liveness.md) | [#142](https://github.com/wsher0901/roam/pull/142) |
 | 07-16 08:57 | [a CI gate (check:ledger) proving history/ files and the ledger index stay in one-to-one bijection by #PR, plus a ship §7 weld-staging line so a dropped or orphaned ledger line turns the build red instead of leaving a silent gap](history/workshop/mechanism/ledger-integrity.md) | [#140](https://github.com/wsher0901/roam/pull/140) |
 | 07-15 15:35 | [the Max routine cap firmed to confirmed fact (15/day, flat across Max tiers): the SETUP and liftoff live-number hedges retired](history/workshop/definition/cap-confirm.md) | [#138](https://github.com/wsher0901/roam/pull/138) |
-| 07-15 14:39 | [Delegation architecture (D-041): the away-mode chooser (local · handoff · go-remote · liftoff), the go-remote tether posture, idle-wait, label-spawned cloud lanes](history/workshop/mechanism/delegation-architecture.md) | [#136](https://github.com/wsher0901/roam/pull/136) |
