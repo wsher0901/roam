@@ -2,12 +2,12 @@
 type: spec
 id: check-memory
 title: check:memory — the memory-format CI gate
-status: open
+status: shipped
 stage: workshop
 branch: feat/check-memory
-pr: —
+pr: 171
 opened: 2026-07-17
-shipped: —
+shipped: 2026-07-17 23:39
 ---
 
 # check-memory — the memory-format CI gate

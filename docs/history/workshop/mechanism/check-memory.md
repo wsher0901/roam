@@ -1,41 +1,44 @@
 ---
-type: memory
-id: check-memory
-updated: 2026-07-17 · completion · cloud
+type: history
+slug: check-memory
+shipped: 2026-07-17 23:39
+pr: 171
 ---
 
 # check-memory — the memory-format CI gate
 
 ## Status
 
-complete, awaiting merge — 2026-07-17. Airborne-acked by the cockpit
-at 17:04 (label→canary 189 s), then flown to completion unattended;
-the full CI mirror (incl. the new step) is green locally and this
-bench's own memory validates itself. Awaiting THE GATE.
+shipped — 2026-07-17 23:39, [#171](https://github.com/wsher0901/roam/pull/171).
+Airborne-acked by the cockpit at 17:04 (label→canary 189 s), flown
+to completion unattended, cleared by the external Web review, and
+welded at the next cockpit sitting with both weld-deferred doc
+mentions landing in the weld commit.
 
 ## What this task is
 
 The 2026-07-16 IDEAS line becomes machinery: `scripts/check-memory.mjs`
 validating every task memory in `docs/memory/` against
-[TEMPLATE](TEMPLATE.md)'s locked format, wired into package.json,
+[TEMPLATE](../../../memory/TEMPLATE.md)'s locked format, wired into package.json,
 ci.yml (after check:ledger), and ship §1's mirror list. The exact
-validation contract lived in [the spec](../specs/check-memory.md) —
+validation contract lived in [the spec](../../../specs/check-memory.md) —
 zero lane decisions.
 
 ## Pending issues
 
-Two doc mentions are declared weld-deferred in the spec's Deviations
-(cockpit acts at the next sitting, not lane work): SETUP's CI line
-gains the check:memory mention (SETUP is sibling-lane-owned this
-flight), and [LAWS §Workflow](../LAWS.md#workflow-non-negotiable)'s
-CI-mirror parenthetical gains its ledger-sibling mention (a law file,
-left to the cockpit).
+none at ship. The two weld-deferred doc mentions declared in the
+spec's Deviations (cockpit acts, not lane work) landed in the weld
+commit: SETUP's CI line gained the check:memory mention (SETUP was
+sibling-lane-owned this flight), and
+[LAWS §Workflow](../../../LAWS.md#workflow-non-negotiable)'s
+CI-mirror parenthetical gained its ledger-sibling mention (a law
+file, left to the cockpit).
 
 ## Left / idle
 
 Nothing — all six Done-means deliverables landed. The last box
-("the pushed commit's Actions run green") is the cockpit's to tick at
-the weld.
+("the pushed commit's Actions run green") was ticked at the weld:
+the lane's final push ran green on Actions before the merge word.
 
 ## The story
 
@@ -68,10 +71,10 @@ failure modes on one line and exited 1.
 
 ## Where to look
 
-- Spec (the full contract): [check-memory](../specs/check-memory.md)
-- The format it enforces: [TEMPLATE](TEMPLATE.md)
+- Spec (the full contract): [check-memory](../../../specs/check-memory.md)
+- The format it enforces: [TEMPLATE](../../../memory/TEMPLATE.md)
 - Style model: `scripts/check-ledger.mjs`
 - The gate: `scripts/check-memory.mjs`, wired in package.json,
-  `.github/workflows/ci.yml`, and [ship §1](../skills/ship.md#1--preflight)
-- Lane law: [parallel-lanes](../skills/parallel-lanes.md)
+  `.github/workflows/ci.yml`, and [ship §1](../../../skills/ship.md#1--preflight)
+- Lane law: [parallel-lanes](../../../skills/parallel-lanes.md)
 - Sibling lane: [#170](https://github.com/wsher0901/roam/pull/170)
