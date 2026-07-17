@@ -8,9 +8,9 @@ updated: 2026-07-17 · 20:59 UTC · canary claim · cloud
 
 ## Status
 
-claimed by cloud — 2026-07-17 · 20:59 UTC. Canary pushed;
-awaiting the cockpit's airborne ack per parallel-lanes §Canary
-before real work.
+airborne — cloud routine · 2026-07-17 17:01 (cockpit ack;
+label→canary 110 s). The lane works; the founder departs after
+spawn verification — Shakedown phase 2, unattended flight.
 
 ## What this task is
 
