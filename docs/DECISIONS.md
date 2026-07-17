@@ -1151,3 +1151,60 @@ enforcement is the two read-sites plus the hook's computed verdict).
 double-dispatch diagnostic) ·
 [D-032](#d-032--2026-07--fleet-continuity--handoff-parks-every-local-lane-liftoff-respawns-parked-benches-wake-lock-parks-every-outcome-extends-the-d-020d-023-lane-law-upholds-d-009)
 (the wake-lock upheld) · this entry.
+
+## D-043 — 2026-07 — Cloud ignition & away-command redesign — route ladder v2: ready-flip-then-label is the recipe of record, api-ignition and the cloud clerk staged, the Claude app the single away surface (amends D-041; upholds the lane law and the wake-lock)
+**Decision:** the maiden flight's finding of record: the cloud
+lane-worker routine's `pull_request.labeled` trigger does NOT fire
+on draft PRs. Three-point experiment (2026-07-16): 17:02 label on a
+draft → nothing · 21:31 re-label on the draft with the routine
+verified Active → nothing · 21:53 ready-flip + label → canary in
+90 seconds. Undocumented platform behavior — the provider's docs
+imply drafts pass unless filtered. Consequences, in three layers:
+(1) INTERIM route 1, live tonight — cockpit ignition is two acts:
+flip the bench's PR ready, then apply (or cycle) `lane:cloud`.
+Guard: for a cloud lane mid-flight, ready ≠ complete — completion
+remains @mention + Actions green + founder review, and the memory
+Status is the truth; the phone route is the same two acts in the
+GitHub app.
+(2) TARGET route 1b, staged — add the routine's API trigger so the
+cockpit and liftoff ignite via endpoint, benches stay draft, and
+the ready-flip reverts to meaning completion only.
+Adopt at first need; verify-before-rely.
+(3) AWAY-COMMAND architecture (founder requirements, 2026-07-16/17)
+— the single command surface is the Claude app across all postures:
+desk = Agent View + cockpit watches · away-machine-on = Remote
+Control → the tethered cockpit · away-machine-off = the CLOUD
+CLERK, a manually-born, cap-free cloud session with a narrow
+charter (reads origin; posts PR comments only on founder
+instruction; never writes files, never merges, never holds the
+baton). Staged; the first post-adoption liftoff tests clerk
+longevity on a trivial charter before anything depends on it. The
+GitHub app is demoted to doorbell/backstop. The maiden checklist's
+dormant-baton item is expected retired by the clerk and stays open
+until proven. The reply-ack window (~15 min,
+[parallel-lanes §Canary](skills/parallel-lanes.md#canary-handshake-both-sides))
+is confirmed live at first use (22:10 reply → 22:11 resume).
+**Why:** three draft labels burned trigger events and produced zero
+sessions across two sittings; one ready-flip produced a live lane
+in 90 seconds — the recipe had to become doctrine before the next
+liftoff relies on it. The away redesign follows the founder's
+stated requirement: one surface to command from, with GitHub
+reduced to a doorbell.
+**Alternatives rejected:** benches born ready permanently (erodes
+the completion signal — ready must keep meaning reviewable; hence
+route 1b staged to restore it) · the GitHub app as the away command
+surface (four-tap friction, a second surface; demoted to
+doorbell/backstop) · building a Slack/Telegram doorbell mirror now
+(build only if the GitHub-app buzz annoys — awaiting the founder's
+attest, parked in [IDEAS](IDEAS.md)).
+**Affects:**
+[parallel-lanes §Cloud spawn](skills/parallel-lanes.md#cloud-spawn--route-ladder)
+(recipe of record + the filled maiden checklist) ·
+[parallel-lanes §Answering a lane](skills/parallel-lanes.md#answering-a-lane-the-mail-slot)
+(new) · [SETUP §Staged](SETUP.md#staged--turns-on-when-its-stage-opens)
+(api-ignition · cloud-clerk) ·
+[SETUP §cloud accounts](SETUP.md#once-and-done--cloud-accounts)
+(the run-history sentence) · [IDEAS](IDEAS.md) (the away-redesign
+idea lines + the double-dispatch resolution evidence) ·
+[D-041](#d-041--2026-07--delegation-architecture--the-away-mode-chooser-local--handoff--go-remote--liftoff-the-go-remote-tether-posture-idle-wait-label-spawned-cloud-lanes)
+(the route ladder amended) · this entry.
