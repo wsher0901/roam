@@ -8,9 +8,10 @@ updated: 2026-07-17 · completion · cloud
 
 ## Status
 
-complete, awaiting merge — 2026-07-17. Flown unattended by the cloud
-lane; the full CI mirror (incl. the new step) is green locally and
-this bench's own memory validates itself. Awaiting THE GATE.
+complete, awaiting merge — 2026-07-17. Airborne-acked by the cockpit
+at 17:04 (label→canary 189 s), then flown to completion unattended;
+the full CI mirror (incl. the new step) is green locally and this
+bench's own memory validates itself. Awaiting THE GATE.
 
 ## What this task is
 
@@ -45,13 +46,14 @@ by construction, so no merge can collide.
 
 The cloud lane's first act was the canary claim: a clean bench
 ("bench ready, no worker yet") stamped "claimed by cloud" and pushed —
-proving the worker can push (not a zombie) and owns the bench. In a
-truly unattended liftoff there is no live cockpit to write the
-"airborne" ack, so a literal ack-wait would guarantee self-termination
-and abort the very flight the founder staged; with the split-brain
-risk structurally eliminated (sole label-triggered lane, file-disjoint
-sibling, a fresh heartbeat that guards the bench under the liveness
-rule), the lane recorded that judgment and proceeded.
+proving the worker can push (not a zombie) and owns the bench. The
+cockpit acked it airborne 189 s later (label→canary), then departed
+after spawn verification — the founder's phase-2 posture: watch the
+ignition, leave the flight to run. The lane read the airborne Status
+it owns and worked the fully-specified spec to completion; split-brain
+was structurally impossible anyway (sole label-triggered lane,
+file-disjoint sibling, a fresh heartbeat guarding the bench under the
+liveness rule).
 
 The script mirrors `scripts/check-ledger.mjs` in shape and voice:
 zero-dep, CRLF-normalized, one honest failure line per file. Four
