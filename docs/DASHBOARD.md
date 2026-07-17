@@ -6,8 +6,8 @@ status: living
 
 # Dashboard — the state surface
 
-Stamp: 2026-07-16 · 18:15 · handoff · work PC
-V1 5/34 · S1 2/7 · S2 3/5 · sessions: 0 main · 1 parallel
+Stamp: 2026-07-16 · 21:40 · pickup · home PC
+V1 5/34 · S1 2/7 · S2 3/5 · sessions: 1 main · 1 parallel
 (1 needs you) · needs-you 5
 How to read this board →
 [HOME §Reading the board](HOME.md#reading-the-board)
@@ -20,7 +20,8 @@ How to read this board →
    → master: [WEB-INSTRUCTIONS](WEB-INSTRUCTIONS.md) · the box is a
    copy · [history](history/workshop/definition/web-instructions.md)
 2. 🟡 Run the machine-setup Verify block on this home PC — the work
-   PC passed in full (since 07-13).
+   PC passed in full; you are on the home PC right now (since
+   07-13).
    → [machine-setup](skills/machine-setup.md) ·
    [vault lens](skills/machine-setup.md#vault-lens) (applied on both
    seats)
@@ -30,17 +31,17 @@ How to read this board →
    [D-028](DECISIONS.md#d-028--2026-07--consolidation-recut--decision-policy--engine-brain-skeleton-form-project-policy-house-style-open-register-grows-69-upholds-d-021-extends-the-d-021-consolidation)
    · [V1.S3](ROADMAP.md#v1s3--engine-core--two-families-deep)
 4. ⚪ Write the reviewer-subagent spec — a small task queued after
-   the ops leg; NOTE: now flying as the maiden's leg A payload, see
-   item 5 (since 07-13).
+   the ops leg; NOTE: still riding as the maiden's leg A payload,
+   see item 5 (since 07-13).
    → [SETUP §Staged](SETUP.md#staged--turns-on-when-its-stage-opens)
-5. 🔴 The delegation maiden flight is MID-AIR: leg A (cloud, route 1
-   label-spawn) SPAWN FAILED — label fired 17:02:36, no session
-   evidence in ~13 min; leg B (local control) airborne. Your move:
-   check the routine's run record at claude.ai/code/routines, then
-   retry route 1 (remove + re-add the label) · route 2 (manual
-   claude.ai/code session on chore/reviewer-subagent) · or run leg A
-   locally (since 07-15).
-   → [leg A memory + failure record](https://github.com/wsher0901/roam/blob/chore/reviewer-subagent/docs/memory/reviewer-subagent.md)
+5. 🟡 Run the route 1 retry ladder on the maiden's leg A — you
+   called the route at 21:29 after verifying the routine is Active
+   with ZERO runs ever (the 17:02 label event never matched it; the
+   count:runs 1 was the raw label event, not a burned run). Step 1
+   re-label the draft as-is · Step 2 re-label with the PR flipped
+   ready (trigger experiment only) · Step 3 stand route 1 down,
+   route 2 next. Bench is reset and ready (since 07-15).
+   → [memory + retry ladder](https://github.com/wsher0901/roam/blob/chore/reviewer-subagent/docs/memory/reviewer-subagent.md)
    · [PR #146](https://github.com/wsher0901/roam/pull/146) ·
    [parallel-lanes §Canary](skills/parallel-lanes.md#canary-handshake-both-sides)
    ·
@@ -50,22 +51,22 @@ How to read this board →
 
 | Session | Task | State | Last push | Your move |
 |---|---|---|---|---|
-| cloud | [reviewer-subagent](https://github.com/wsher0901/roam/blob/chore/reviewer-subagent/docs/memory/reviewer-subagent.md) · [PR #146](https://github.com/wsher0901/roam/pull/146) | 🔴 cloud spawn failed — route 1, no session in ~13 min | 18:15 (handoff rewrite + main sync) | choose the respawn route (Needs-you 5) |
+| main · cockpit (home PC) | Ops — the delegation maiden flight, block 1: route 1 retry ladder ([verify list](skills/parallel-lanes.md#cloud-spawn--route-ladder)) | 🟡 holding — briefing rendered | — | give the go on ladder Step 1 (Needs-you 5) |
+| cloud | [reviewer-subagent](https://github.com/wsher0901/roam/blob/chore/reviewer-subagent/docs/memory/reviewer-subagent.md) · [PR #146](https://github.com/wsher0901/roam/pull/146) | ⚪ bench ready — awaiting cloud spawn (retry) | 21:31 (bench reset) | run ladder Step 1 — remove + re-add the label (Needs-you 5) |
 
-↳ main micro: — (no live main session)
-
-Maiden flight, block 1 closed with this handoff: preflight 🟢 ·
-leg A label 🟢 → spawn 🔴 (the one open item) · leg B airborne →
-landed → shipped 🟢 · flight report ⚪ (block 2, on the founder's
-paste).
+↳ main micro: preflight 🟢 · leg A label 🟢 → spawn 🔴 → retry
+ladder ⚪ (step 1 next) · leg B airborne → landed → shipped 🟢 ·
+flight report ⚪ (block 2)
 
 Flight context: count:runs read 0 at preflight, 1 after the leg A
-label (the label-event proxy counts the trigger though no session
-appeared), and 1 — unmoved — through leg B's whole local flight:
-local lanes are cap-free, as designed. Leg B flew the entire lane
-law unassisted (canary 17:18 → ack 17:19 → three edits → CI mirror
-→ Actions-green ready-flip → completion @mention) and was welded on
-the founder's word at 17:59
+label, 1 — unmoved — through leg B's whole local flight (local
+lanes are cap-free, as designed). The founder's 21:29 diagnosis
+closed the mystery: the routine shows zero runs ever, so the label
+event never matched the routine at all — the proxy's 1 counted the
+raw event, not a session. Cap before the ladder: 1 today · 14
+remaining. Leg B flew the entire lane law unassisted (canary 17:18
+→ ack 17:19 → three edits → CI mirror → Actions-green ready-flip →
+completion @mention) and was welded on the founder's word at 17:59
 ([the story](history/workshop/definition/time-doctrine.md)).
 
 ## You are here
@@ -99,9 +100,9 @@ flowchart LR
   class S4,S5,S6,S7,S8 pending
 ```
 
-Web/Design paste at this handoff: none (a bare trigger). One Web
-thread concluded this sitting: the July full-pass audit — its
-findings shipped as full-pass-fixes
+No open Web or Design threads. Last paste: none (a bare trigger, at
+the 07-16 18:15 handoff). The July full-pass audit thread concluded
+and shipped as full-pass-fixes
 ([#144](https://github.com/wsher0901/roam/pull/144)); T3–T6
 source-vetting relaunch stays held (see You are here).
 
