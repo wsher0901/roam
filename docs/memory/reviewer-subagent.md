@@ -1,18 +1,19 @@
 ---
 type: memory
 id: reviewer-subagent
-updated: 2026-07-17 · 02:05 UTC · cloud
+updated: 2026-07-17 · 02:26 UTC · cloud
 ---
 # reviewer-subagent — the ship-time diff critic
 
 ## Status
-airborne — cloud · 2026-07-17 02:05 UTC. Founder resolved both
-reserved questions in-thread on
-[PR #146](https://github.com/wsher0901/roam/pull/146): advisory
-verdict policy, Sonnet 5 · high effort, both reversible by a later
-[decide](../skills/decide.md). Both deliverables now exist (spec
-finalized, `.claude/agents/reviewer.md` written); running the CI
-mirror next, then the ready-flip and completion @mention.
+complete, awaiting merge — 2026-07-17 · 02:26 UTC. Both deliverables
+done: [the spec](../specs/reviewer-subagent.md) finalized with the
+founder's answers folded in, `.claude/agents/reviewer.md` written.
+Synced with main (clean merge, DASHBOARD-only diff on main's side).
+Full CI mirror green locally (lint · format:check · check:links ·
+check:ledger · test · build); the pushed commit's own Actions run is
+next to confirm before THE GATE. Nothing further for this lane —
+founder approval is the only remaining gate.
 
 ## What this task is
 The ship-time diff critic
@@ -23,25 +24,25 @@ agent file `.claude/agents/reviewer.md`. The frame is fixed
 structured verdict · never edits, never merges, never blocks on
 style). Two questions were reserved for the founder — verdict policy
 and the reviewer's own model + effort — raised in one `BLOCKED:` PR
-comment and resolved (see The story · spec §Founder decisions). Out
-of scope:
-editing ship.md (cockpit follow-up), anything beyond the two
-deliverables. It is also the PAYLOAD of the delegation maiden
-flight's cloud leg (leg A) — the task and the flight test ride
-together.
+comment and resolved (see The story · spec §Founder decisions).
+Out of scope: editing `ship.md` (wiring the reviewer into the ritual
+is cockpit follow-up), anything beyond the two deliverables. It was
+also the PAYLOAD of the delegation maiden flight's cloud leg
+(leg A) — the task and the flight test rode together.
 
 ## Pending issues
-None on the task itself — both reserved questions resolved. Block 2
-of the flight (the flight-report bench, DASHBOARD Needs-you 5) is
-still the cockpit's follow-up once this task ships; the flight data
-below is this bench's contribution to that report.
+None. Both reserved questions resolved; both deliverables complete;
+CI green. Block 2 of the flight (the flight-report bench, DASHBOARD
+Needs-you 5) is the cockpit's follow-up once this ships — the flight
+data in The story is this bench's contribution to that report,
+including the un-recorded winning route in
+[parallel-lanes §Cloud spawn](../skills/parallel-lanes.md#cloud-spawn--route-ladder).
 
 ## Left / idle
-Nothing on the two deliverables. Remaining before ready: the full CI
-mirror (this session), then the ready-flip refresh and completion
-@mention (the PR is already technically "ready" as a trigger artifact
-of ladder step 2, but the completion rewrite + summary still gate
-per the lane law).
+Nothing on the two deliverables or the lane's own process. Left for
+the cockpit, out of this task's scope: wiring the reviewer into
+`ship.md` §6, and recording the winning cloud-spawn route in
+parallel-lanes.md.
 
 ## The story
 Born 2026-07-16 17:01 as the payload of the delegation maiden
@@ -131,6 +132,13 @@ then apply (or re-apply) the `lane:cloud` label. This resolves
 [parallel-lanes §Cloud spawn](../skills/parallel-lanes.md#cloud-spawn--route-ladder)'s
 "winning route: unrecorded" note — a cockpit follow-up should record
 it there directly.
+
+Closing this lane's work: full CI mirror run 02:20–02:26 UTC, all six
+checks green (lint, format:check, check:links, check:ledger, test,
+build); branch merged with current main first (clean, no conflicts).
+This memory rewrite is the completion moment (lane-law diary moment
+4) — the ready-flip refresh and completion `@wsher0901` comment
+follow immediately after this push.
 
 ## Where to look
 Spec: [reviewer-subagent](../specs/reviewer-subagent.md). PR:
