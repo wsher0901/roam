@@ -1,7 +1,7 @@
 ---
 type: memory
 id: cloud-clerk
-updated: 2026-07-17 · handoff · home PC
+updated: 2026-07-17 · ship · work PC
 ---
 
 # cloud-clerk — the founder's away-mode concierge
@@ -59,8 +59,8 @@ supersedes the phone-buzz question
 
 ## Left / idle
 
-Nothing on the cockpit's side. Founder-side: the maiden sequence
-above, then THE GATE.
+none — deliverables, maiden, and promotion are all done; nothing
+parked, nothing waiting. THE GATE is the only remaining act.
 
 ## The story
 
@@ -89,9 +89,34 @@ sitting with reviewer-subagent's session, twice). The bench stays at
 THE GATE per its C1–C6 clause.
 
 Handoff 2026-07-17 00:03: the founder left with the maiden plan
-scheduled for the morning (see Pending issues); this rewrite folds
-that plan from the leaving paste so a cold reader needs nothing
-from the closed session.
+scheduled for the morning; the plan was folded here from the
+leaving paste so a cold reader needed nothing from the closed
+session.
+
+The clerk maiden flew founder-run on the morning of 2026-07-17 —
+zombie session ended first, clerk born from the charter paste,
+C1–C3 + the C4 note, a ~4.5h idle gap, then C5/C6 — and came back
+all green (results verbatim in Pending issues). Notable beyond the
+passes: the idle gap was survived the hard way — the environment
+was reclaimed and auto-revived on open, on both phone and web, with
+a fresh correct clause-5 re-derivation; the known resume-hang did
+not occur. Two findings graduated straight into staged lines
+([SETUP §Staged](../SETUP.md#staged--turns-on-when-its-stage-opens)):
+the zero-push C6 datum seeded clerk-notify (announce via turn-end
+so the app pushes — supersedes the phone-buzz/doorbell question),
+and the API-cap finding (API-triggered runs count against the daily
+cap: 1 run per liftoff vs the manual paste's 0) rides
+clerk-autospawn, decide at adoption. The promotion clause then
+executed exactly as written at birth: the
+[answering-a-lane row](../skills/parallel-lanes.md#answering-a-lane-the-mail-slot)
+flipped to clerk-PRIMARY (the GitHub app demoted to backstop),
+[liftoff](../skills/liftoff.md)'s step dropped "pending
+verification", and the staged in-verification line retired — one
+commit, this PR, before THE GATE.
+
+Cargo, for the record (founder report, 2026-07-17): the Obsidian
+vault verified all-green — the day-one settings task closed, no
+bench needed.
 
 ## Where to look
 
