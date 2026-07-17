@@ -59,6 +59,24 @@ full CI mirror green in one pass (lint · format:check · check:links
 This rewrite is the completion moment; the ready-flip and the
 critic's maiden wired run on this very PR follow it.
 
+The critic's maiden WIRED run (this PR's own gate) returned
+**pass** — with two invocation gotchas, recorded here because they
+are invisible in the diff:
+
+1. The cockpit harness had NOT registered the `reviewer` agent type
+   from `.claude/agents/reviewer.md` this session — invoking it by
+   name failed. Deviation flown: a general-purpose agent pinned to
+   Sonnet was instructed to read and adopt the charter file
+   verbatim, read-only conduct enforced by instruction. The charter
+   frame, checks, and output shape were preserved; the vehicle
+   differed. If the registration gap recurs at the next ship, it
+   graduates to a defect worth its own fix.
+2. The stand-in's verdict needed an explicit message-relay nudge —
+   a background agent's plain-text output never reaches the
+   cockpit; the verdict arrived only after being asked to send it
+   as a message. Future §6 runs: request the verdict AS A MESSAGE
+   in the spawn prompt, or run the reviewer synchronously.
+
 Datum observed at bench birth, not this task's to act on: a fresh
 empty `claude/session-*` branch appeared on origin at main's tip
 during the morning sitting — consistent with the clerk session's
