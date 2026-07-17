@@ -1,31 +1,33 @@
 ---
 type: memory
 id: handoff-anywhere
-updated: 2026-07-16 · bench birth · home PC
+updated: 2026-07-16 · completion rewrite · home PC
 ---
 
 # handoff-anywhere — leave at any instant, nothing lost
 
 ## Status
 
-bench ready — birthed 2026-07-16 23:31 by the cockpit (home PC),
-which works this bench itself; no lane spawn planned.
+complete, awaiting merge — all four doctrine lines written and
+verified by grep, 2026-07-16 · home PC. THE GATE waits on the
+founder's approval, which follows external review in the Web chat
+(founder instruction at kickoff).
 
 ## What this task is
 
 An audit plus the missing doctrine lines. The founder must be able
 to hand off or lift off at ANY instant of any sitting with nothing
 lost or forgotten. [The spec](../specs/handoff-anywhere.md)
-enumerates every mid-state a sitting can be in and verifies each
-parks clean — most already do by construction (pushed state + memory
-diaries; the 07-16 crash proved the involuntary case live). This
-bench writes what's missing: watch-duty inheritance
+enumerates every mid-state a sitting can be in (nine rows) and
+verifies each parks clean — most already do by construction (pushed
+state + memory diaries; the 07-16 crash proved the involuntary case
+live). This bench wrote what was missing: watch-duty inheritance
 ([handoff §1.5](../skills/handoff.md#15--park-the-local-lanes-full-only)),
 the re-arm mirror in
 [pickup §3](../skills/pickup.md#3--gather-git-outranks-the-board),
 the unanswered-`BLOCKED:` Needs-you surface
 ([handoff §4](../skills/handoff.md#4--repaint-dashboard-the-board-spec--single-source)),
-and the interrupt doctrine paragraph in one home.
+and the interrupt doctrine paragraph in handoff's intro.
 
 ## Pending issues
 
@@ -33,8 +35,8 @@ none
 
 ## Left / idle
 
-Everything — the bench was just born. Next: the four doc edits, then
-verification greps, CI mirror, THE GATE.
+Nothing on this bench's own scope. THE GATE: founder approval after
+external review, then the weld.
 
 ## The story
 
@@ -46,9 +48,23 @@ construction (this bench touches handoff + pickup; the sibling
 touches SETUP + parallel-lanes + liftoff), so its spec is linkable
 only after both merge.
 
+The routing call (spec §Routing): the interrupt doctrine went to
+handoff's intro, not [HOME](../HOME.md) — the routing law sends
+conditional knowledge (when leaving) to the relevant skill, and
+liftoff §1 runs handoff first, so one home covers both leaving
+roads. HOME stays rule-free per its own header.
+
+One dead end worth its line: the first draft of the handoff edits
+wrapped the two greppable phrases across line breaks
+("watching #N for\nX", "lane #N awaits\nyour reply"), so the spec's
+own verification greps failed against freshly written text. Rewrapped
+so each phrase sits whole on one line — the greps are the contract,
+and a phrase a grep can't find is a record the next session can't
+either.
+
 ## Where to look
 
 - Spec: [handoff-anywhere](../specs/handoff-anywhere.md)
-- Targets: [handoff](../skills/handoff.md) ·
-  [pickup](../skills/pickup.md)
+- Targets: [handoff](../skills/handoff.md) (intro · §1.5 · §4) ·
+  [pickup §3](../skills/pickup.md#3--gather-git-outranks-the-board)
 - PR: [#155](https://github.com/wsher0901/roam/pull/155)

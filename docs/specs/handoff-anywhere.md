@@ -80,19 +80,21 @@ own header (it explains and links, duplicates no rule).
 
 ## Done means
 
-- [ ] The mid-state table is complete: all nine states enumerated,
+- [x] The mid-state table is complete: all nine states enumerated,
       each verified parking clean or gaining its line.
-- [ ] handoff §1.5 names watch-duty inheritance — "watching #N for
+- [x] handoff §1.5 names watch-duty inheritance — "watching #N for
       X" written at park.
-- [ ] pickup §3 carries the mirror line: re-arm every named watch
+- [x] pickup §3 carries the mirror line: re-arm every named watch
       found.
-- [ ] handoff §4's Needs-you invariants include "lane #N awaits
+- [x] handoff §4's Needs-you invariants include "lane #N awaits
       your reply" for an unanswered `BLOCKED:` lane.
-- [ ] The interrupt doctrine paragraph exists in exactly ONE home
+- [x] The interrupt doctrine paragraph exists in exactly ONE home
       (handoff intro), naming Esc and THE WELD's no-interrupt
       window.
-- [ ] Verification greps pass (§Verification).
+- [x] Verification greps pass (§Verification).
 - [ ] Full CI mirror green; the pushed commit's Actions run green.
+      (Ticked at the weld — the box describes the very Actions run
+      that can only exist after this spec's final commit.)
 
 ## Verification
 
@@ -108,7 +110,10 @@ own header (it explains and links, duplicates no rule).
 
 ## Deviations
 
-<filled by /ship — or "none">
+None from the plan. One in-flight fix worth naming: the first draft
+of the handoff edits wrapped the greppable phrases across line
+breaks, so the verification greps failed; rewrapped so each phrase
+sits whole on one line (the memory's story carries the lesson).
 
 ## Open questions
 
