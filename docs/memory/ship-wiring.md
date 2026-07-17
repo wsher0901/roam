@@ -74,8 +74,10 @@ are invisible in the diff:
 2. The stand-in's verdict needed an explicit message-relay nudge —
    a background agent's plain-text output never reaches the
    cockpit; the verdict arrived only after being asked to send it
-   as a message. Future §6 runs: request the verdict AS A MESSAGE
-   in the spawn prompt, or run the reviewer synchronously.
+   as a message. Graduated into the procedure at the founder's
+   merge word: §6 gained the invocation-mechanics clause (verdict
+   as a message, or run synchronously) in the same sitting, riding
+   this PR before the weld.
 
 Datum observed at bench birth, not this task's to act on: a fresh
 empty `claude/session-*` branch appeared on origin at main's tip

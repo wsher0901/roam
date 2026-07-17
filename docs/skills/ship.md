@@ -44,7 +44,11 @@ invoke the reviewer subagent (`.claude/agents/reviewer.md` — frame:
 [its spec](../specs/reviewer-subagent.md)) on the branch's diff.
 Its structured verdict is ADVISORY and rides to the founder
 verbatim alongside the summary — a finding never halts ship by
-itself; the founder weighs it at the gate.
+itself; the founder weighs it at the gate. Invocation mechanics:
+run the reviewer synchronously, or instruct it in the spawn prompt
+to deliver the verdict AS A MESSAGE — a background agent's
+plain-text output never reaches the cockpit; the verdict must be
+sent, not printed (maiden-run finding, 2026-07-17).
 Then summarize in plain language and ask. NEVER merge without the
 founder's explicit yes — the conversational yes is the only gate;
 never infer it.
