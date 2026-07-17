@@ -1,15 +1,18 @@
 ---
 type: memory
 id: clerk-notify
-updated: 2026-07-17 · bench birth · work PC
+updated: 2026-07-17 · ship · work PC
 ---
 
 # clerk-notify — the clerk's standing watch
 
 ## Status
 
-bench ready — claimed by the cockpit in-session (2026-07-17, work
-PC); the cockpit builds this bench directly, no lane dispatch.
+complete, awaiting merge — all five deliverables are on the PR.
+DO NOT MERGE until the founder's word lands after external Web
+review (the Shakedown Flight rule); merge order: this PR before
+its stacked sibling
+[#164](https://github.com/wsher0901/roam/pull/164).
 
 ## What this task is
 
@@ -33,16 +36,38 @@ merge word.
 
 ## Left / idle
 
-All edits — the bench was just born; spec + this stub are the
-first commits.
+nothing on this bench — the N-checklist grades at the flight,
+after the merge; the answering-a-lane watcher line un-verifies
+("in verification") until the flight audit greens it.
 
 ## The story
 
 Born 2026-07-17 from the founder's Shakedown Flight phase-1 paste
 ("two benches, one paste — the watch and the ignition"). Sibling
-bench: [clerk-autospawn](../specs/clerk-autospawn.md), which
+bench: clerk-autospawn
+([#164](https://github.com/wsher0901/roam/pull/164)), which
 branches after this bench's charter edit so the charter master
-stays single-homed in SETUP §cloud accounts.
+stays single-homed in SETUP §cloud accounts — its spec file lives
+only on its own branch until it merges, so this file links the PR,
+not the path.
+
+Built by the cockpit in one sitting (2026-07-17, 15:38–15:50):
+duty 6 appended verbatim from the founder's paste; the staged
+clerk-notify line flipped to in-verification per the cloud-clerk
+precedent (declared in the spec's Plan — executing a staged line
+moves it); the watcher line into the answering-a-lane mail slot;
+and the IDEAS pair — the doorbell-mirror line rewritten SUPERSEDED
+(the clerk's turn-end announcements are the doorbell now) and the
+reviewer agent-type registration failure graduated to a DEFECT
+line on its second recurrence (first: the ship-wiring maiden run's
+delivery finding chain; second: the cloud-clerk ship §6 this
+afternoon, where the Agent tool reported 'reviewer' not found and
+the synchronous general-purpose fallback carried the review).
+
+One mechanical call: the sibling's spec file cannot be linked by
+path from this branch (it does not exist here, and would 404 on
+main between the two merges) — sibling references link the PR
+instead; the path weave arrives with the sibling's own merge.
 
 ## Where to look
 

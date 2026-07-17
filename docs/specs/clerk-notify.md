@@ -20,7 +20,10 @@ shipped: —
 ·
 [D-043](../DECISIONS.md#d-043--2026-07--cloud-ignition--away-command-redesign--route-ladder-v2-ready-flip-then-label-is-the-recipe-of-record-api-ignition-and-the-cloud-clerk-staged-the-claude-app-the-single-away-surface-amends-d-041-upholds-the-lane-law-and-the-wake-lock)
 · [cloud-clerk story](../history/workshop/mechanism/cloud-clerk.md)
-· sibling bench: [clerk-autospawn](clerk-autospawn.md)
+· sibling bench:
+[clerk-autospawn — #164](https://github.com/wsher0901/roam/pull/164)
+(file link lands when the sibling merges — it does not exist on
+this branch by construction)
 
 ## Goal
 
@@ -39,9 +42,10 @@ N-checklist + open watch-mechanic question.
 ## Out of scope
 
 - clerk-autospawn — the sibling bench, same paste, own branch and
-  PR ([spec](clerk-autospawn.md)). File-disjoint except
-  `docs/SETUP.md` §cloud accounts: the sibling branches after this
-  bench's charter edit so the master stays single-homed.
+  PR ([#164](https://github.com/wsher0901/roam/pull/164)).
+  File-disjoint except `docs/SETUP.md` §cloud accounts: the
+  sibling branches after this bench's charter edit so the master
+  stays single-homed.
 - Implementing the watch mechanic — the cloud session prototypes
   it live at the flight; this bench records the question and
   constraints only (§Open questions).
@@ -90,15 +94,15 @@ audit.
 
 ## Done means
 
-- [ ] Duty 6 (watch duty) appended verbatim to the clerk charter
+- [x] Duty 6 (watch duty) appended verbatim to the clerk charter
       master — charter v2.
-- [ ] This spec carries the N-checklist and the open
+- [x] This spec carries the N-checklist and the open
       watch-mechanic question.
-- [ ] SETUP §Staged's clerk-notify line reads "in verification"
+- [x] SETUP §Staged's clerk-notify line reads "in verification"
       and links this bench.
-- [ ] parallel-lanes §Answering a lane names the clerk-as-watcher
+- [x] parallel-lanes §Answering a lane names the clerk-as-watcher
       (in verification).
-- [ ] IDEAS carries both dated lines.
+- [x] IDEAS carries both dated lines.
 - [ ] Full CI mirror green; the pushed commit's Actions run green.
       (Ticked at the weld, whenever the founder's merge word
       lands.)
