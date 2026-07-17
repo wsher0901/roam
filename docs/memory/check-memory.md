@@ -8,8 +8,9 @@ updated: 2026-07-17 · canary claim · cloud
 
 ## Status
 
-claimed by cloud — 2026-07-17. Canary handshake pushed; the bench
-was clean ("bench ready, no worker yet") at claim.
+airborne — cloud routine · 2026-07-17 17:04 (cockpit ack;
+label→canary 189 s). The lane works; the founder departs after
+spawn verification — Shakedown phase 2, unattended flight.
 
 ## What this task is
 
