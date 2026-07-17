@@ -188,6 +188,11 @@ re-reply.
   work is on origin.
 - Agent Teams (research/review tasks): lead Fable/Opus, at most 4
   Sonnet teammates (env flag already set in `.claude/settings.json`).
+- Choosing your hands — the solo · subagents · team · lanes doctrine
+  lives at
+  [SETUP §Models & effort](../SETUP.md#once-and-done--cloud-accounts)
+  per
+  [D-045](../DECISIONS.md#d-045--2026-07--hands-doctrine-solo--subagents--agent-team--lanes--the-litmus-is-one-bench-many-hands-vs-many-benches-vs-read-only-upholds-d-020-and-d-041).
 
 Sources:
 [dispatch law](../LAWS.md#workflow-non-negotiable)

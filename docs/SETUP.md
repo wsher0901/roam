@@ -229,6 +229,21 @@ summary, then arm the watch.
   reduce effort before downgrading the model. Agent Teams: teammates
   are Sonnet 5
   ([parallel-lanes §Vehicles](skills/parallel-lanes.md#vehicles)).
+- Hands: solo · subagents · team · lanes (doctrine,
+  [D-045](DECISIONS.md#d-045--2026-07--hands-doctrine-solo--subagents--agent-team--lanes--the-litmus-is-one-bench-many-hands-vs-many-benches-vs-read-only-upholds-d-020-and-d-041)).
+  The founder's choose-your-hands rule, verbatim:
+  - Solo (default): sequential or single-file work.
+  - Exploratory subagents: parallel READ-ONLY research inside one
+    task; no spec needed (existing sanction).
+  - Agent team: ONE task splittable into file-disjoint subparts
+    benefiting from cross-talk; founder present to steer — never
+    long-unattended; lead + 2–4 Sonnet 5 teammates (start 2);
+    delegate-mode lead for pure coordination; plan-approval for
+    teammates touching shared or hard-to-reverse surfaces; never for
+    ritual/law files, never across tasks.
+  - Parallel lanes: separate tasks, own benches, unattended-capable.
+  - Litmus: many hands on ONE bench with the founder watching =
+    team · many benches = lanes · reading only = subagents.
 - Supabase — arrives with V1.S1.T7 (see §Staged).
 
 Sources:

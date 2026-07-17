@@ -1243,3 +1243,34 @@ cleared) ·
 [D-038](#d-038--2026-07--ci-is-the-arbiter--actions-green-required-at-every-gate-local-gate-mirrors-all-six-ci-steps-d-anchors-born-resolving-upholds-d-027)
 (the arbiter upheld — the critic adds eyes, not a gate) · this
 entry.
+
+## D-045 — 2026-07 — Hands doctrine: solo · subagents · agent team · lanes — the litmus is one-bench-many-hands vs many-benches vs read-only (upholds D-020 and D-041)
+**Decision:** the founder's choose-your-hands rule is now doctrine,
+filed verbatim at
+[SETUP §Models & effort](SETUP.md#once-and-done--cloud-accounts):
+solo for sequential or single-file work (the default); exploratory
+subagents for parallel READ-ONLY research inside one task (no spec
+needed); an agent team for ONE task that splits into file-disjoint
+subparts benefiting from cross-talk with the founder present to
+steer — never long-unattended (lead + 2–4 Sonnet 5 teammates,
+start 2; delegate-mode lead for pure coordination; plan-approval
+for teammates touching shared or hard-to-reverse surfaces; never
+ritual/law files, never across tasks); parallel lanes for separate
+tasks on their own benches, unattended-capable. The litmus: many
+hands on ONE bench with the founder watching = team · many benches
+= lanes · reading only = subagents.
+**Why:** choosing the vehicle for a piece of work was ad-hoc — the
+same task could be handed to a team, a lane, or a solo pass with no
+rule saying which, and the costly wrong pick (an unattended team
+turned loose on a law file, say) had nothing to catch it. The
+one-bench-many-hands vs many-benches vs read-only litmus makes the
+choice mechanical: the vehicle now follows from the shape of the
+work, not the mood of the moment. Stated verbatim by the founder
+with the Shakedown phase-2 kickoff; filed lane-written per the
+[D-044](#d-044--2026-07--the-pre-gate-critic-goes-live--ships-gate-opens-by-invoking-the-reviewer-subagent-verdicts-advisory-riding-with-the-summary-turns-on-the-staged-reviewer-upholds-d-038-and-the-reviewer-frame)
+precedent.
+**Affects:**
+[SETUP §Models & effort](SETUP.md#once-and-done--cloud-accounts)
+(the Hands passage, doctrine verbatim) ·
+[parallel-lanes §Vehicles](skills/parallel-lanes.md#vehicles) (the
+pointer line) · this entry and its task memory.
