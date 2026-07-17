@@ -62,14 +62,20 @@ Sources:
 
 ## Once and done — cloud accounts
 
-- GitHub — wsher0901/roam, public, MIT; squash-merge; branch
-  auto-delete on merge.
+- GitHub — wsher0901/roam, public, MIT; squash-merge ONLY
+  (merge-commit and rebase disabled); branch auto-delete on merge.
+  Preflight drift found 07-16 (merge-commit + rebase enabled,
+  auto-delete off), fixed and enforced via `gh api` the same day.
 - GitHub branch protection — main requires the CI check (`checks`);
   red is unmergeable by machine.
 - GitHub auto-merge — enabled repo-wide; welds and micro-PRs arm
   `gh pr merge --auto --squash --delete-branch` to fire on `checks`
   green.
 - Vercel — project linked to the repo (deploys since V1.S2.T3).
+  Docs-only pushes skip the build (`vercel.json` ignoreCommand,
+  exit-0-skips per Vercel's ignored build step; verified against
+  Vercel docs 07-16): ritual micro-PRs produce no deploy, no bot
+  comment, no email; app PRs keep previews.
 - claude.ai — the Roam Project; its settings box carries
   WEB-INSTRUCTIONS verbatim.
 - Cloud lane worker (routine) — created at claude.ai/code/routines;
@@ -85,7 +91,9 @@ Sources:
   GitHub-triggered runs count, one-off manual runs do not; past 15,
   runs are rejected until the daily reset unless usage credits are on.
   Live counter: claude.ai/code/routines or claude.ai/settings/usage;
-  mechanical read: `npm run count:runs`.
+  mechanical read: `npm run count:runs`. Routine-born sessions
+  appear under the routine's run history at claude.ai/code/routines,
+  not the main sessions list.
 
 Saved prompt (master — the routine box is a copy; re-save from here
 after any edit):
@@ -173,6 +181,18 @@ Sources:
 - V1.S3.T1 — check-module skill encoded from the settled contract;
   runtime tool architecture settled (a source-type question under
   the reliability law).
+- At first need — api-ignition (route 1b,
+  [D-043](DECISIONS.md#d-043--2026-07--cloud-ignition--away-command-redesign--route-ladder-v2-ready-flip-then-label-is-the-recipe-of-record-api-ignition-and-the-cloud-clerk-staged-the-claude-app-the-single-away-surface-amends-d-041-upholds-the-lane-law-and-the-wake-lock)):
+  the routine's API trigger — cockpit/liftoff ignite cloud lanes
+  via endpoint, benches stay draft, the ready-flip reverts to
+  completion-only; adopt at first need, verify-before-rely.
+- At first need — cloud-clerk
+  ([D-043](DECISIONS.md#d-043--2026-07--cloud-ignition--away-command-redesign--route-ladder-v2-ready-flip-then-label-is-the-recipe-of-record-api-ignition-and-the-cloud-clerk-staged-the-claude-app-the-single-away-surface-amends-d-041-upholds-the-lane-law-and-the-wake-lock)):
+  the manually-born, cap-free away-surface session with a narrow
+  charter (reads origin; posts PR comments only on founder
+  instruction; never writes files, never merges, never holds the
+  baton); the first post-adoption liftoff tests clerk longevity on
+  a trivial charter; adopt at first need, verify-before-rely.
 - Built-in exploratory subagents (parallel research inside one
   task) need no spec — distinct from roadmap [P] lanes, which are
   separate sessions on separate branches.

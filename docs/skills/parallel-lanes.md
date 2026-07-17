@@ -147,6 +147,27 @@ bare detached background agent, invisible from the phone, parks on
 block as before. Blocked local lanes also park at handoff FULL — the
 machine is halting.
 
+## Answering a lane (the mail slot)
+Lanes speak and listen only through their PR; the founder's hands
+never need GitHub:
+- Desk: tell the cockpit "reply to the lane on #N: …" — the cockpit
+  posts it verbatim as a PR comment.
+- Away, machine on: the same sentence to the tethered cockpit via
+  the Claude app (Remote Control).
+- Away, machine off: the GitHub app, four taps (interim) — the
+  cloud clerk takes this seat once
+  [D-043](../DECISIONS.md#d-043--2026-07--cloud-ignition--away-command-redesign--route-ladder-v2-ready-flip-then-label-is-the-recipe-of-record-api-ignition-and-the-cloud-clerk-staged-the-claude-app-the-single-away-surface-amends-d-041-upholds-the-lane-law-and-the-wake-lock)'s
+  staged task lands.
+Never type into a session window — a window is not a slot: words
+landing there bypass the PR and die with the session (the record
+law: nothing important lives only in conversation). Plain language
+is founder instruction. After replying, expect a commit on the
+lane's branch within the reply-ack window (~15 min,
+[§Canary](#canary-handshake-both-sides)); silence past it means the
+session expired — respawn per
+[§Respawn](#respawn-on-an-existing-bench-liftoff-adopt), don't
+re-reply.
+
 ## Vehicles
 - LOCAL — the mid-session default per the chooser: background agents,
   or `claude -w` worktree sessions. Worktrees share the clone's disk;
@@ -164,40 +185,70 @@ Sources:
 [dispatch law](../LAWS.md#workflow-non-negotiable)
 
 ## Cloud spawn — route ladder
-Try in order; the maiden flight records the winner here per
-[LAWS §Self-improvement](../LAWS.md#self-improvement):
+Flown 2026-07-16 by the delegation maiden flight; the recipe of
+record below is
+[D-043](../DECISIONS.md#d-043--2026-07--cloud-ignition--away-command-redesign--route-ladder-v2-ready-flip-then-label-is-the-recipe-of-record-api-ignition-and-the-cloud-clerk-staged-the-claude-app-the-single-away-surface-amends-d-041-upholds-the-lane-law-and-the-wake-lock)'s
+interim route 1:
 
-1. **Label-spawn.** On the pre-birthed draft PR:
-   `gh pr edit <N> --add-label lane:cloud`. Idempotency guard —
-   before labeling, read the PR's labels and the memory Status: a
-   claimed/airborne Status or an existing `lane:cloud` label means
-   the lane is already flying — never re-add the label to spawn
-   "again" (GitHub may also redeliver label events; the
-   rejected-push rule in
-   [§Wake-lock](#wake-lock--parking) is the backstop). The lane-worker routine
-   (GitHub trigger `pull_request.labeled`, filtered to label
-   `lane:cloud`) starts a cloud session on that PR. Its saved prompt: the fenced master in
+1. **Label-spawn — recipe of record: ready-flip, then label.** On
+   the pre-birthed PR: flip it ready FIRST (`gh pr ready <N>`),
+   then apply — or cycle off/on — the `lane:cloud` label. The
+   routine's `pull_request.labeled` trigger does NOT fire on draft
+   PRs — undocumented platform behavior; three-point evidence,
+   2026-07-16: 17:02 label on a draft → nothing · 21:31 re-label on
+   the draft with the routine verified Active → nothing · 21:53
+   ready-flip + label → canary in 90 s. Guard: for a cloud lane
+   mid-flight, ready ≠ complete — completion remains @mention +
+   Actions green + founder review; the memory Status is the truth.
+   Phone route: the same two acts in the GitHub app. Idempotency
+   guard — before labeling, read the PR's labels and the memory
+   Status: a claimed/airborne Status or an existing `lane:cloud`
+   label means the lane is already flying — never re-add the label
+   to spawn "again" (GitHub may also redeliver label events; the
+   rejected-push rule in [§Wake-lock](#wake-lock--parking) is the
+   backstop). The lane-worker routine (GitHub trigger
+   `pull_request.labeled`, filtered to label `lane:cloud`) starts a
+   cloud session on that PR. Its saved prompt: the fenced master in
    [SETUP §Once and done — cloud accounts](../SETUP.md#once-and-done--cloud-accounts).
-   The GitHub push IS the notification
-   channel; the founder's PR-comment reply feeds the running session.
+   The GitHub push IS the notification channel; the founder's
+   PR-comment reply feeds the running session
+   ([§Answering a lane](#answering-a-lane-the-mail-slot)). Target,
+   staged
+   ([SETUP §Staged](../SETUP.md#staged--turns-on-when-its-stage-opens)):
+   api-ignition — the routine's API trigger, so benches stay draft
+   and the ready-flip reverts to meaning completion only.
 2. **Manual.** claude.ai/code or the mobile app → new session ON the
    pre-birthed branch → paste the kickoff line (task ID + branch +
    "follow parallel-lanes").
 
-Winning route: unrecorded — the maiden flight writes it.
+Winning route (recorded 2026-07-16): route 1 — ready-flip, then
+label.
 
-Maiden flight — verify (the flight records the winner AND each
-item's result here):
+Maiden flight — verify (flown 2026-07-16; results of record):
 
-- [ ] the routine fires on the label
-- [ ] the sandbox can push (the canary lands)
-- [ ] the sandbox can PR-comment + @mention
-- [ ] the founder's reply resumes the session in-thread
-- [ ] a blocked lane survives a real idle gap
-- [ ] the run decrements the cap counter (`npm run count:runs`)
-- [ ] dormant-baton case: a phone-label with no cockpit running —
-      does the strict no-ack timeout starve it? (If yes, a one-line
-      decide softens [§Canary](#canary-handshake-both-sides) later.)
+- [x] the routine fires on the label — ✓ on a READY PR only;
+      drafts are filtered (the three-point evidence above)
+- [x] the sandbox can push (the canary lands) — ✓ canary 90 s
+      after the label (21:54)
+- [x] the sandbox can PR-comment + @mention — ✓ (`BLOCKED:` 21:56
+      · completion 22:28)
+- [x] the founder's reply resumes the session in-thread — ✓ within
+      the reply-ack window (reply 22:10 → lane commit 22:11)
+- [ ] a blocked lane survives a real idle gap — partial: a
+      14-minute block survived; multi-hour survival rides the
+      cloud-clerk longevity test (D-043, staged)
+- [x] the run decrements the cap counter — our side ✓:
+      `npm run count:runs` is a trigger-proxy UPPER bound (it
+      counted a phantom event — a label that spawned no session;
+      draft-fails burned zero provider runs); the provider's own
+      count: pending founder attest
+- [ ] dormant-baton case — deferred: expected retired by the cloud
+      clerk (D-043, staged); stays open until proven
+
+Wake-lock battle-tested live: a redelivered `pull_request.labeled`
+webhook at 21:57, citing a stale head SHA, met the
+re-read-Status-first rule ([§Wake-lock](#wake-lock--parking)) and
+died harmless.
 
 Sources:
 [LAWS §Self-improvement](../LAWS.md#self-improvement)

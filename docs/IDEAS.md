@@ -41,9 +41,41 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   [ledger-integrity](history/workshop/mechanism/ledger-integrity.md)
   incident — liveness makes the collision harmless but not the
   double-dispatch; check auto-dispatch + a manual paste, or a prior
-  session, spawning twice.
+  session, spawning twice. — RESOLUTION EVIDENCE (2026-07-16,
+  maiden-flight-report): a live webhook redelivery was observed at
+  21:57 (a `pull_request.labeled` event citing a stale head SHA)
+  and the wake-lock held; the morning orphan is classified
+  manual-born; redelivery is the most plausible incident mechanism.
+  Founder downgrades or closes at next review.
 - 2026-07-16 (Web, full-pass audit): a check:board CI gate —
   machine-verify the [DASHBOARD](DASHBOARD.md) glance-line numbers
   against [ROADMAP](ROADMAP.md) checkbox counts at every PR; weigh
   against the board's deliberate least-authoritative status (git
   outranks it by design).
+- 2026-07-16 (Claude Code, maiden-flight-report): PreToolUse
+  permission-guard hooks — enforce the deny rails as hooks that
+  block dangerous tool calls before they run, not only as settings
+  permissions.
+- 2026-07-16 (Claude Code, maiden-flight-report): name Agent View
+  in [parallel-lanes §Vehicles](skills/parallel-lanes.md#vehicles),
+  and prefer supervisor-backed background sessions for local lanes
+  over bare detached spawns.
+- 2026-07-16 (Claude Code, maiden-flight-report): cloud-session
+  hygiene — unrecognized sessions at claude.ai/code archived on
+  sight.
+- 2026-07-16 (Claude Code, maiden-flight-report): a check:memory CI
+  lint — validate memory files against
+  [TEMPLATE](memory/TEMPLATE.md)'s locked format (Status first,
+  four sections, vocabulary words).
+- 2026-07-16 (Claude Code, maiden-flight-report): Slack/Telegram
+  doorbell mirror for lane @mentions — build only if the GitHub-app
+  buzz annoys; datum: the phone-buzz attestation (pending founder
+  attest, [D-043](DECISIONS.md#d-043--2026-07--cloud-ignition--away-command-redesign--route-ladder-v2-ready-flip-then-label-is-the-recipe-of-record-api-ignition-and-the-cloud-clerk-staged-the-claude-app-the-single-away-surface-amends-d-041-upholds-the-lane-law-and-the-wake-lock)).
+- 2026-07-16 (Claude Code, maiden-flight-report): a separate bot
+  identity for lane speech (optional) — lane comments currently
+  post as the founder's own account, which blurs who is talking on
+  a PR.
+- 2026-07-16 (Claude Code, maiden-flight-report): home-seat
+  missing-local-main anomaly — pickup found no local main branch on
+  the home PC (healed 07-16 by rebuilding from origin, cause
+  unknown); watch for recurrence.

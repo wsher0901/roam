@@ -29,7 +29,9 @@ rituals>
 
 ## Status vocabulary
 One state per Status line; the wake-lock licenses work ONLY on a
-lane's own live claim.
+lane's own live claim. Whenever the Status line is stamped, refresh
+the frontmatter `updated:` line in the same edit — a stale
+`updated:` mis-attributes the seat (found 2026-07-16).
 
 | State | Written by | Licenses |
 |---|---|---|
