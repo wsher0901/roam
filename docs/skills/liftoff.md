@@ -31,10 +31,14 @@ Then SORT what survives: fully-specified first, needs-input after
 (once flying they idle-wait for the founder's reply per the idle-wait
 law). The daily routine budget truncates from the bottom (Max plan:
 15 routine runs/day (confirmed; flat across Max tiers);
-GitHub-triggered spawns count against it): derive the consumed count
-— `npm run count:runs` — and truncate the sorted tail at the
-remaining number; if the script fails, say so and ask the founder
-for the remaining number — never guess (derivation law). A truncated
+GitHub-triggered spawns count against it, and so does every API
+fire — `fire:clerk` included
+([clerk-autospawn](../specs/clerk-autospawn.md)) — but API fires
+are INVISIBLE to `count:runs`, a label-event proxy): derive the
+consumed count — `npm run count:runs` PLUS the fires performed
+this sitting — and truncate the sorted tail at the remaining
+number; if the script fails, say so and ask the founder for the
+remaining number — never guess (derivation law). A truncated
 item → held with its reason.
 A parked lane that passes: respawn on its SAME branch in cloud —
 adopt, no second birth (parallel-lanes §Respawn).
@@ -55,11 +59,17 @@ Sources:
 Dispatch each eligible lane — fresh births and respawns alike —
 cloud-side via the route ladder; route 1 (label-spawn) is one command
 per lane: `gh pr edit <N> --add-label lane:cloud`.
-One conditional step: spawn the clerk if it isn't already up
-(verified 2026-07-17 — [cloud-clerk](../specs/cloud-clerk.md);
-charter master:
-[SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts))
-— the away surface should be up before the founder walks away.
+One conditional step: spawn the clerk if it isn't already up —
+the away surface should be up before the founder walks away.
+Primary: `npm run fire:clerk` (API-fire, in verification —
+[clerk-autospawn](../specs/clerk-autospawn.md)); record the
+returned session URL in the flight-plan repaint (§6). Fallback,
+retained verbatim: the manual charter paste — claude.ai/code
+(browser or the phone's Claude app) → new session on
+wsher0901/roam → paste the charter master from
+[SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts)
+(the clerk session itself verified 2026-07-17 —
+[cloud-clerk](../specs/cloud-clerk.md)).
 
 Sources:
 [route ladder](parallel-lanes.md#cloud-spawn--route-ladder)

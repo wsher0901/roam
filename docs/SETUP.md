@@ -180,6 +180,36 @@ absolute:
    forgets nothing.
 ```
 
+- Clerk routine (staged → in verification with
+  [clerk-autospawn](specs/clerk-autospawn.md)) — the API-fire
+  vehicle for the clerk: a SECOND routine at
+  claude.ai/code/routines named "clerk". Saved prompt = the clerk
+  charter master above VERBATIM (box-is-a-copy; re-save the
+  routine after any master edit) with this spawn preamble as its
+  top line:
+
+```text
+Spawned at liftoff via API. Greet with a fresh one-line lane
+summary, then arm the watch.
+```
+
+  No GitHub trigger. API trigger enabled. Founder acts
+  (post-merge, ~3 min): create the routine in the UI → add the
+  API trigger and generate the fire token ONCE (`sk-ant-oat01-…`,
+  shown once, scoped to this routine only) → copy the routine id
+  (`trig_…` — the API-trigger modal shows it; the routine's URL
+  carries it too) → paste BOTH into the cockpit, which stores
+  them machine-locally in `.env.local` (`CLERK_FIRE_TOKEN` ·
+  `CLERK_ROUTINE_ID`) — the documented secret path: per-machine,
+  never this public repo
+  ([LAWS §Safety](LAWS.md#safety-non-negotiable)); regenerate the
+  token if lost; the other seat repeats the paste at its next
+  sitting. Firing: `npm run fire:clerk`
+  (`scripts/fire-clerk.mjs`) — one daily-cap run per fire,
+  INVISIBLE to `npm run count:runs` (a label-event proxy);
+  [liftoff §2](skills/liftoff.md#2--triage-every-open-item)
+  budgets accordingly.
+
 - Models & effort (doctrine — the Web paste block's Model + Effort
   line draws from here). Effort ladder: low · medium · high · xhigh
   · max. Reliance pair: Opus 4.8 — cockpit default, all
@@ -243,10 +273,14 @@ Sources:
   flight. (C6 datum, clerk maiden: zero app pushes on clerk
   turns — silence is the clerk's default; the announce must be
   explicit. Supersedes the phone-buzz/doorbell question.)
-- At first need — clerk-autospawn: liftoff API-fires the clerk
-  instead of the manual paste. Maiden finding 2026-07-17:
-  API-triggered runs count against the daily cap — 1 run per
-  liftoff vs the manual paste's 0; decide at adoption.
+- In verification — clerk-autospawn (bench:
+  [spec + A-checklist](specs/clerk-autospawn.md)): liftoff
+  API-fires the clerk instead of the manual paste
+  (`npm run fire:clerk`; recipe:
+  [§cloud accounts](#once-and-done--cloud-accounts)). The API-cap
+  trade is accepted by the founder flying it — 1 daily-cap run
+  per fire vs the manual paste's 0, invisible to the `count:runs`
+  proxy; A1–A5 grade at the flight.
 - Built-in exploratory subagents (parallel research inside one
   task) need no spec — distinct from roadmap [P] lanes, which are
   separate sessions on separate branches.
