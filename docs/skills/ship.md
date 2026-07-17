@@ -15,7 +15,8 @@ Be on the task's branch; know its ID (or workshop slug). Sync with
 main FIRST: merge current origin/main into the branch (merge, never
 rebase — the history is pushed); resolve anything. Then the
 full CI mirror — lint · format:check · check:links · check:ledger ·
-tests · build; fix failures first — what you test is exactly what
+check:memory · tests · build; fix failures first — what you test is
+exactly what
 main will contain after the weld.
 
 ## 2 · Spec gate
