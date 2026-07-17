@@ -1,17 +1,16 @@
 ---
 type: memory
 id: reviewer-subagent
-updated: 2026-07-16 · retry ladder step 2 · home PC
+updated: 2026-07-17 · 01:54 UTC · cloud
 ---
 # reviewer-subagent — the ship-time diff critic
 
 ## Status
-bench ready — awaiting cloud spawn (retry, ladder step 2) —
-2026-07-16 21:52. Ladder step 1 failed (see Story); step 2 fires
-next: PR flipped ready + re-label. The bench is intact on origin,
-PR [#146](https://github.com/wsher0901/roam/pull/146). A worker
-waking on this Status may claim it with the canary per
-[§Canary](../skills/parallel-lanes.md#canary-handshake-both-sides).
+claimed by cloud — 2026-07-17 · 01:54 UTC. Ladder step 2 (ready-flip
++ re-label) produced this session — the first live cloud spawn of
+the maiden flight. Waiting for the cockpit's airborne ack per
+[§Canary](../skills/parallel-lanes.md#canary-handshake-both-sides)
+before real work begins.
 
 ## What this task is
 The ship-time diff critic
