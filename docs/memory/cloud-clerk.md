@@ -8,12 +8,10 @@ updated: 2026-07-17 · handoff · home PC
 
 ## Status
 
-complete, awaiting merge — the cockpit's five deliverables are on
-the PR and its head is Actions-green; the bench sits at THE GATE.
-The merge waits on the founder-run clerk maiden (C1–C6, planned
-07-17 morning) and external review in the Web chat; a green
-checklist adds the promotion commit to this same PR before it
-gates.
+complete, awaiting merge — the clerk maiden flew founder-run
+2026-07-17 and came back all green; results folded below, the
+promotion clause executing on this PR. The founder's merge word is
+given, conditional on Actions green.
 
 ## What this task is
 
@@ -33,34 +31,31 @@ conditional spawn/verify step.
 
 ## Pending issues
 
-The clerk maiden, founder-run — the 07-17 morning plan, folded from
-the founder's handoff paste (Web chat "Roam — full-pass audit +
-maiden flight"):
+none — the clerk maiden flew founder-run 2026-07-17, all green.
+Results, verbatim from the founder's report:
 
-1. End the reviewer-subagent zombie session at claude.ai/code
-   FIRST — it resurrected its deleted branch twice on 07-16 wake
-   events (branch_deletion 02:38Z → creation 02:43Z; deletion
-   03:29Z → creation 03:32Z, same tip ad86091, actor the app's
-   credentials). That observation became the session-hygiene
-   sentence in
-   [parallel-lanes §Cloud spawn](../skills/parallel-lanes.md#cloud-spawn--route-ladder).
-   Two datums it left: cloud sessions DO survive multi-hour idle
-   (encouraging for C5), and the app DOES push on wake events
-   (exactly what C6 probes — the clerk's charter forbids all
-   pushes).
-2. Birth the clerk: claude.ai/code → new session on wsher0901/roam
-   → paste the charter from this PR's SETUP.
-3. Run C1–C3 + note C4 ergonomics; idle ≥3h; then C5/C6. C2's
-   dictation target is [#155](https://github.com/wsher0901/roam/pull/155)
-   (merged — a comment on a merged PR is still a live, harmless
-   surface).
-4. Results go to the Web chat; then the founder's merge word for
-   [#156](https://github.com/wsher0901/roam/pull/156) + the
-   promotion clause (GitHub app demoted to backstop) IF green —
-   the promotion commit rides this PR before it gates.
+- C1 PASS (exceeds — fresh derivation verified externally;
+  delta-aware vs its morning report)
+- C2 PASS (comment live on
+  [#155](https://github.com/wsher0901/roam/pull/155), verbatim, as
+  founder; platform labels agent-posted replies by design)
+- C3 PASS (refused, cited charter, pointed to cockpit)
+- C4 PASS — founder note: "fine on the phone"
+- C5 PASS — ~4.5h idle, environment reclaimed, auto-revived on open
+  (both phone and web), clause-5 re-derivation, answer fresh and
+  correct; the known resume-hang did not occur
+- C6 — founder observed zero app pushes today (feeds clerk-notify)
+- C7 findings: platform footprint branch `claude/session-1v6419` —
+  empty, harness-made, charter's no-push held (clerk self-attested);
+  GitHub-proxy push restriction = infrastructure rail under the lane
+  laws; expiry+revival officially documented and now proven live.
 
-C5's datum also completes maiden verify item 5; C6 feeds the
-doorbell decision + attest b.
+Ripples recorded in their homes: C5 completes maiden verify item 5
+and the provider run-count attest closed at 1 run
+([parallel-lanes §Cloud spawn](../skills/parallel-lanes.md#cloud-spawn--route-ladder));
+C6's zero-push datum seeds the staged clerk-notify line, which
+supersedes the phone-buzz question
+([SETUP §Staged](../SETUP.md#staged--turns-on-when-its-stage-opens)).
 
 ## Left / idle
 

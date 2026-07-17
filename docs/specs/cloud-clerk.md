@@ -47,18 +47,21 @@ Founder-run; results recorded in this bench's memory. C1–C6 gate
 the MERGE, not the ready-flip — this bench rides to THE GATE with
 the checklist pending (founder instruction at kickoff, 07-16).
 
-- [ ] C1 — reports the board/lanes correctly from a fresh read.
-- [ ] C2 — posts a dictated comment (target: bench A's PR,
+- [x] C1 — reports the board/lanes correctly from a fresh read.
+- [x] C2 — posts a dictated comment (target: bench A's PR,
       [#155](https://github.com/wsher0901/roam/pull/155)) and the
       link checks out.
-- [ ] C3 — refuses an out-of-charter ask (e.g. "edit the README").
-- [ ] C4 — usable from the phone's Claude app; ergonomics noted.
-- [ ] C5 — longevity: idle ≥3h (overnight ideal), then answers
+- [x] C3 — refuses an out-of-charter ask (e.g. "edit the README").
+- [x] C4 — usable from the phone's Claude app; ergonomics noted.
+- [x] C5 — longevity: idle ≥3h (overnight ideal), then answers
       correctly. This datum also completes maiden verify item 5 —
       a blocked lane survives a real idle gap
       ([parallel-lanes §Cloud spawn](../skills/parallel-lanes.md#cloud-spawn--route-ladder)).
-- [ ] C6 — whether the app pushes anything on the clerk's turns
+- [x] C6 — whether the app pushes anything on the clerk's turns
       (feeds the doorbell decision + attest b).
+
+All six flown founder-run 2026-07-17, all green; results verbatim
+in this bench's memory (extra findings recorded there as C7).
 
 ## Plan
 
@@ -95,7 +98,7 @@ the checklist pending (founder instruction at kickoff, 07-16).
 - [ ] Full CI mirror green; the pushed commit's Actions run green.
       (Ticked at the weld — the box describes the very Actions run
       that can only exist after this spec's final commit.)
-- [ ] C1–C6 founder-run, results in this bench's memory — gates the
+- [x] C1–C6 founder-run, results in this bench's memory — gates the
       merge, not the ready-flip (see §The clerk's verify checklist).
 
 ## Verification

@@ -239,14 +239,17 @@ Maiden flight — verify (flown 2026-07-16; results of record):
       · completion 22:28)
 - [x] the founder's reply resumes the session in-thread — ✓ within
       the reply-ack window (reply 22:10 → lane commit 22:11)
-- [ ] a blocked lane survives a real idle gap — partial: a
-      14-minute block survived; multi-hour survival rides the
-      cloud-clerk longevity test (D-043, staged)
+- [x] a blocked lane survives a real idle gap — proven: a 14-minute
+      block survived (maiden), and the clerk maiden's C5 closed the
+      multi-hour case (~4.5h idle, environment reclaimed,
+      auto-revived on open with a fresh correct answer, 2026-07-17 —
+      [cloud-clerk](../specs/cloud-clerk.md))
 - [x] the run decrements the cap counter — our side ✓:
       `npm run count:runs` is a trigger-proxy UPPER bound (it
       counted a phantom event — a label that spawned no session;
       draft-fails burned zero provider runs); the provider's own
-      count: pending founder attest
+      count: founder-attested 2026-07-17 — 1 run, matching the
+      proxy
 - [ ] dormant-baton case — deferred: expected retired by the cloud
       clerk (D-043, staged); stays open until proven
 
