@@ -1,19 +1,19 @@
 ---
 type: memory
 id: cloud-clerk
-updated: 2026-07-16 · post-gate amendment · home PC
+updated: 2026-07-17 · handoff · home PC
 ---
 
 # cloud-clerk — the founder's away-mode concierge
 
 ## Status
 
-complete, awaiting merge — all five deliverables written and
-verified by grep, 2026-07-16 · home PC. THE GATE waits on TWO
-things, in order: the founder-run clerk maiden (checklist C1–C6 in
-[the spec](../specs/cloud-clerk.md) — results land HERE; a green
-checklist adds the promotion commit to this same PR), then founder
-approval after external review in the Web chat.
+complete, awaiting merge — the cockpit's five deliverables are on
+the PR and its head is Actions-green; the bench sits at THE GATE.
+The merge waits on the founder-run clerk maiden (C1–C6, planned
+07-17 morning) and external review in the Web chat; a green
+checklist adds the promotion commit to this same PR before it
+gates.
 
 ## What this task is
 
@@ -33,42 +33,48 @@ conditional spawn/verify step.
 
 ## Pending issues
 
-- The clerk maiden (C1–C6) is founder-run and pending; results land
-  here. C5 wants an overnight idle, so a clerk born tonight is
-  ideal timing. Clerk-birth instruction: claude.ai/code → new
-  session on wsher0901/roam → paste the charter from
-  [SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts).
-- Live evidence relevant to C5/C6, observed during this bench's
-  birth (2026-07-16 ~23:30 local): the reviewer-subagent cloud
-  session was still alive ~1h40m after its completion comment and
-  re-created its deleted branch at the SAME tip (ad86091) minutes
-  after each deletion — branch_deletion 02:38Z → branch_creation
-  02:43Z, deletion 03:29Z → creation 03:32Z, actor wsher0901 (the
-  app's credentials). Two datums: cloud sessions DO survive
-  multi-hour idle (C5's question, encouraging), and the app DOES
-  push on wake events without being asked (exactly what C6 probes —
-  a clerk must not do this; its charter forbids all pushes). The
-  founder should end that session in claude.ai/code, else the
-  branch keeps resurrecting.
+The clerk maiden, founder-run — the 07-17 morning plan, folded from
+the founder's handoff paste (Web chat "Roam — full-pass audit +
+maiden flight"):
+
+1. End the reviewer-subagent zombie session at claude.ai/code
+   FIRST — it resurrected its deleted branch twice on 07-16 wake
+   events (branch_deletion 02:38Z → creation 02:43Z; deletion
+   03:29Z → creation 03:32Z, same tip ad86091, actor the app's
+   credentials). That observation became the session-hygiene
+   sentence in
+   [parallel-lanes §Cloud spawn](../skills/parallel-lanes.md#cloud-spawn--route-ladder).
+   Two datums it left: cloud sessions DO survive multi-hour idle
+   (encouraging for C5), and the app DOES push on wake events
+   (exactly what C6 probes — the clerk's charter forbids all
+   pushes).
+2. Birth the clerk: claude.ai/code → new session on wsher0901/roam
+   → paste the charter from this PR's SETUP.
+3. Run C1–C3 + note C4 ergonomics; idle ≥3h; then C5/C6. C2's
+   dictation target is [#155](https://github.com/wsher0901/roam/pull/155)
+   (merged — a comment on a merged PR is still a live, harmless
+   surface).
+4. Results go to the Web chat; then the founder's merge word for
+   [#156](https://github.com/wsher0901/roam/pull/156) + the
+   promotion clause (GitHub app demoted to backstop) IF green —
+   the promotion commit rides this PR before it gates.
+
+C5's datum also completes maiden verify item 5; C6 feeds the
+doorbell decision + attest b.
 
 ## Left / idle
 
-Nothing on the cockpit's side of the bench. Founder-side: birth the
-clerk tonight, run C1–C6, then the conditional promotion commit +
-THE GATE.
+Nothing on the cockpit's side. Founder-side: the maiden sequence
+above, then THE GATE.
 
 ## The story
 
-Born 2026-07-16, late in the same sitting that closed the delegation
+Born 2026-07-16, late in the sitting that closed the delegation
 maiden flight, from the founder's ops paste ("session continuity &
 the cloud clerk — two benches, one paste"). Sibling bench:
-handoff-anywhere, on its own branch (docs/handoff-anywhere,
-[#155](https://github.com/wsher0901/roam/pull/155)) — file-disjoint
-by construction (this bench touches SETUP + parallel-lanes +
-liftoff; the sibling touches handoff + pickup). C2's dictation
-target is the sibling's PR
-[#155](https://github.com/wsher0901/roam/pull/155), so the clerk's
-comment lands on a live, harmless surface.
+handoff-anywhere — built the same night and welded the same night
+as [#155](https://github.com/wsher0901/roam/pull/155), its story now
+in history/workshop/mechanism/.
 
 Placement calls, for the record: the charter master sits directly
 beside the lane-worker master in SETUP §cloud accounts under the
@@ -87,6 +93,11 @@ resurrect its deleted branch on wake events (observed live this
 sitting with reviewer-subagent's session, twice). The bench stays at
 THE GATE per its C1–C6 clause.
 
+Handoff 2026-07-17 00:03: the founder left with the maiden plan
+scheduled for the morning (see Pending issues); this rewrite folds
+that plan from the leaving paste so a cold reader needs nothing
+from the closed session.
+
 ## Where to look
 
 - Spec (charter + checklist C1–C6):
@@ -97,3 +108,5 @@ THE GATE per its C1–C6 clause.
   [parallel-lanes §Answering a lane](../skills/parallel-lanes.md#answering-a-lane-the-mail-slot)
   · [liftoff §4](../skills/liftoff.md#4--spawn)
 - PR: [#156](https://github.com/wsher0901/roam/pull/156)
+- The Web chat carrying review + maiden results: "Roam — full-pass
+  audit + maiden flight"
