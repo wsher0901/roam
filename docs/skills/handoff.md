@@ -11,6 +11,14 @@ FULL = leaving phrase, explicit call, or liftoff's step 1.
 QUIET = ship's tail. QUIET skips steps 1.5–3 and never closes the
 session.
 
+The interrupt doctrine: Esc interrupts any running turn safely —
+state lives in pushed commits, and §1's secure-the-work catches the
+working tree. Interrupt-then-ritual is lawful ANYWHERE except THE
+WELD's atomic commit
+([ship §7](ship.md#7--on-approval--the-atomic-weld) — seconds long),
+the one no-interrupt window. Never wait for a turn to finish before
+leaving.
+
 ## 1 · Secure the work
 On the current task's branch: commit anything uncommitted, push.
 Nothing may exist only on this machine past this point.
@@ -31,6 +39,14 @@ running:
    happen). This is the ONE cockpit-written line a lane's memory may
    ever receive (the park protocol).
 4. Count the parked for the close line.
+5. Watch-duty inheritance: watches die with sessions — the record
+   must not. Any active watch (a canary watch, an Actions-green
+   watch, a background monitor) is NAMED at park —
+   "watching #N for X" — written into the parked lane's memory (a
+   lane-owned watch) or the board's flight-context line under
+   Sessions (a cockpit watch);
+   [pickup §3](pickup.md#3--gather-git-outranks-the-board) re-arms
+   every named watch it finds.
 QUIET never parks — mid-sitting lanes keep flying.
 Cloud lanes are machine-independent — handoff never parks or touches
 them; they keep flying and appear on the board
@@ -80,7 +96,10 @@ Sections, in this order:
   below it one indented "→" line carrying every link (the
   receipts). Invariants: any 🔴 anywhere on the board also appears
   here; whenever any session's Your-move is non-empty, one
-  aggregated line mirrors here. An item whose completion happens
+  aggregated line mirrors here; a parked lane whose `BLOCKED:`
+  question is still unanswered gets its own line —
+  "lane #N awaits your reply" — so the owed reply survives the
+  sitting. An item whose completion happens
   outside the repo (UI setup, account config) cannot be derived by
   rituals: it clears on the founder's word at any ritual, and the
   repaint drops it then.
