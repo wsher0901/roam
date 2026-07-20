@@ -172,21 +172,21 @@ liftoff fire, which cannot be rehearsed without burning a run.
 
 ## Done means
 
-- [ ] Every A box ticked with a one-line result, or explicitly
+- [x] Every A box ticked with a one-line result, or explicitly
       "pending founder attest".
-- [ ] Every N box ticked with a one-line result, or explicitly
+- [x] Every N box ticked with a one-line result, or explicitly
       "pending founder attest".
-- [ ] The §Forensics ledger's six findings closed (finding 1
+- [x] The §Forensics ledger's six findings closed (finding 1
       contingent only on A4's glance), narrated in the memory.
-- [ ] SETUP §Staged carries neither clerk line as "in
+- [x] SETUP §Staged carries neither clerk line as "in
       verification" — both resolved per the cloud-clerk precedent.
-- [ ] parallel-lanes: the watcher line has no "in verification";
+- [x] parallel-lanes: the watcher line has no "in verification";
       the session-hygiene sentence carries the confirmed
       resurrection clause.
-- [ ] IDEAS: the process-lesson line appended (dated); the
+- [x] IDEAS: the process-lesson line appended (dated); the
       double-dispatch line closed on the founder's gate word; the
       reviewer DEFECT line untouched.
-- [ ] Board-sweep content staged for the ship tail (executes
+- [x] Board-sweep content staged for the ship tail (executes
       post-weld).
 - [ ] Full CI mirror green; the pushed commit's Actions run green.
       (Ticked at the weld, whenever the founder's merge word

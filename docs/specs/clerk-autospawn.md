@@ -71,9 +71,9 @@ recorded in this bench's memory.
       — proxy-blindness CONFIRMED from the 07-17 live record:
       `count:runs` read 2 (the two lane labels) while the day's
       true total was 3 — the API fire's +1 invisible to the proxy,
-      exactly as documented. The provider-counter glance: pending
-      founder attest — the same glance closes finding 1's
-      unburned-run confirm
+      exactly as documented. The provider-counter glance:
+      pending founder attest — the same glance closes finding
+      1's unburned-run confirm
       ([shakedown-audit](shakedown-audit.md)).
 - [ ] A5 — the greeting + auto-armed watch arrive per the spawn
       preamble.
