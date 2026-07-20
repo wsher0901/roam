@@ -2,10 +2,12 @@
 type: spec
 id: flight-cockpit
 title: Flight Cockpit — the cockpit is the control tower online (D-046)
-status: open
+status: shipped
 stage: workshop
 branch: docs/flight-cockpit
+pr: 177
 opened: 2026-07-20
+shipped: 2026-07-20 15:40
 ---
 
 # flight-cockpit — the cockpit is the control tower online
@@ -170,9 +172,9 @@ retirement) confirmed at the shakedown-audit gate.
       ("tomorrow's baton-holder") and the files-table memory/
       row's ritual-time writer. Ground-act and board-naming lines
       stay "control tower".
-- [ ] Full CI mirror green; the pushed commit's Actions run
-      green. (Ticked at the weld, whenever the founder's merge
-      word lands.)
+- [x] Full CI mirror green; the pushed commit's Actions run
+      green. (Ticked at the weld, 2026-07-20 — the founder's
+      merge word.)
 
 ## Deviations
 

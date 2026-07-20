@@ -1,19 +1,20 @@
 ---
-type: memory
-id: flight-cockpit
-updated: 2026-07-20 · ship · work PC
+type: history
+slug: flight-cockpit
+shipped: 2026-07-20 15:40
+pr: 177
 ---
 
 # flight-cockpit — the cockpit is the control tower online
 
 ## Status
 
-Complete, awaiting merge — 2026-07-20, at THE GATE on the work-PC
-control tower. The external Web review is DONE: its one doctrine
-amendment (the baton-holder fold) is folded exactly as given and
-re-pushed; the critic re-ran; holding for the founder's merge word
-on the new head. Full CI mirror green; the fire vehicle's failure
-paths repro'd honest for both targets.
+Shipped — merged as
+[#177](https://github.com/wsher0901/roam/pull/177) on the
+founder's word, 2026-07-20, work PC — the first weld to pass under
+the no-solo-approval law it itself shipped: external Web review
+(one doctrine amendment, folded), three critic passes, every
+finding closed or founder-ruled, Actions green on the final head.
 
 ## What this task is
 
@@ -23,7 +24,7 @@ full authorship; no-solo-approval becomes law; liftoff auto-fires
 the cockpit briefed from the board; the CC-direct surface
 doctrine; staged clerk retirement; Remote Control demoted to
 backstop; the vocabulary rename (cockpit = cloud, control tower =
-ground). Contract: [the spec](../specs/flight-cockpit.md).
+ground). Contract: [the spec](../../../specs/flight-cockpit.md).
 
 ## Pending issues
 
@@ -120,13 +121,13 @@ without burning a run.
 
 ## Where to look
 
-Spec: [flight-cockpit](../specs/flight-cockpit.md). PR:
+Spec: [flight-cockpit](../../../specs/flight-cockpit.md). PR:
 [#177](https://github.com/wsher0901/roam/pull/177). The decide:
-[D-046](../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock).
-The law: [LAWS §Workflow](../LAWS.md#workflow-non-negotiable). The
+[D-046](../../../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock).
+The law: [LAWS §Workflow](../../../LAWS.md#workflow-non-negotiable). The
 charter master + routine recipe:
-[SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts).
-The fire: [liftoff §6](../skills/liftoff.md#6--ledger-handoff--fire-the-cockpit)
+[SETUP §cloud accounts](../../../SETUP.md#once-and-done--cloud-accounts).
+The fire: [liftoff §6](../../../skills/liftoff.md#6--ledger-handoff--fire-the-cockpit)
 · `scripts/fire.mjs`. Vocabulary:
-[HOME §Terms](../HOME.md#terms). Evidence:
-[shakedown-audit](../history/workshop/mechanism/shakedown-audit.md).
+[HOME §Terms](../../../HOME.md#terms). Evidence:
+[shakedown-audit](../../../history/workshop/mechanism/shakedown-audit.md).
