@@ -52,14 +52,35 @@ fires performed this sitting.
 Founder-run at the Shakedown Flight, after this PR merges; results
 recorded in this bench's memory.
 
-- [ ] A1 — `npm run fire:clerk` spawns the clerk; latency
+- [x] A1 — `npm run fire:clerk` spawns the clerk; latency
       recorded.
+      — graded 2026-07-19 ([shakedown-audit](shakedown-audit.md)):
+      fired in ~3 s at the 07-17 liftoff, payload "arm the watch".
+      Fire 1 answered 400 invalid_routine_id PRE-spawn (the pasted
+      id lacked the `trig_` prefix); corrected in `.env.local`,
+      ONE sanctioned retry clean — no session born of the failure
+      (audit finding 1).
 - [ ] A2 — where the session lands in the UI + phone findability.
+      — pending founder attest, asked at the
+      [shakedown-audit](shakedown-audit.md) gate.
 - [ ] A3 — the session is interactive from the phone's Claude app.
+      — pending founder attest, asked at the
+      [shakedown-audit](shakedown-audit.md) gate.
 - [ ] A4 — the provider's counter ticks +1 (founder glance) and
       the `count:runs` proxy-blindness is confirmed.
+      — proxy-blindness CONFIRMED from the 07-17 live record:
+      `count:runs` read 2 (the two lane labels) while the day's
+      true total was 3 — the API fire's +1 invisible to the proxy,
+      exactly as documented. The provider-counter glance: pending
+      founder attest — the same glance closes finding 1's
+      unburned-run confirm
+      ([shakedown-audit](shakedown-audit.md)).
 - [ ] A5 — the greeting + auto-armed watch arrive per the spawn
       preamble.
+      — pending founder attest, asked at the
+      [shakedown-audit](shakedown-audit.md) gate; the armed watch
+      itself is evidenced downstream — it announced the phase-2
+      landing (N2/N3: [clerk-notify](clerk-notify.md)).
 
 ## Plan
 

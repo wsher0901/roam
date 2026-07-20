@@ -62,14 +62,30 @@ audit.
 
 - [ ] N1 — the watch survives ≥60–120 min; the mechanic that
       worked is recorded (see §Open questions).
-- [ ] N2 — the announcement fires on a real event.
-- [ ] N3 — the push reaches the founder's phone.
+      — survival EVIDENCED from the live record (armed at the
+      07-17 liftoff, announced the phase-2 landing hours later);
+      the mechanic + timings await the clerk's self-report —
+      pending founder attest
+      ([shakedown-audit](shakedown-audit.md)).
+- [x] N2 — the announcement fires on a real event.
+      — graded 2026-07-19 ([shakedown-audit](shakedown-audit.md)):
+      fired on the real phase-2 landing, 2026-07-17 — the flight's
+      record rides the audit story to history/ at its weld.
+- [x] N3 — the push reaches the founder's phone.
+      — graded 2026-07-19: the 07-17 relay is on record — the
+      landing announcements reached the founder's phone
+      ([shakedown-audit](shakedown-audit.md)).
 - [ ] N4 — a founder message re-arms the watch.
+      — pending founder attest (clerk self-report, asked at the
+      [shakedown-audit](shakedown-audit.md) gate).
 - [ ] N5 — usage per watch-hour recorded.
+      — pending founder attest (clerk self-report).
 - [ ] N6 — side-measure: does an active watch prevent environment
       reclaim (the counterpart of the cloud-clerk maiden's C5
       reclaim datum —
       [story](../history/workshop/mechanism/cloud-clerk.md)).
+      — pending founder attest (clerk self-report: whether the
+      armed watch prevented reclaim across the 07-17 sitting).
 
 ## Plan
 
