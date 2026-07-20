@@ -70,12 +70,12 @@ meaning):
 
 ## Done means
 
-- [ ] The pickup stub's description names the baton-holder (control
+- [x] The pickup stub's description names the baton-holder (control
       tower or cockpit) as the briefing's actor; dispatched lanes
       still skip.
-- [ ] The session-start hook's directive says the same, meaning
+- [x] The session-start hook's directive says the same, meaning
       preserved, `node --check .claude/hooks/session-start.mjs`
       green.
-- [ ] The zero-stragglers grep, stated in the PR summary with its
+- [x] The zero-stragglers grep, stated in the PR summary with its
       output.
-- [ ] Full CI mirror green; the pushed commit's Actions run green.
+- [x] Full CI mirror green; the pushed commit's Actions run green.

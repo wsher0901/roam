@@ -1,14 +1,14 @@
 ---
 type: memory
 id: harness-vocab-rename
-updated: 2026-07-20 · completion · cloud lane
+updated: 2026-07-20 · pre-weld rewrite · cloud lane at the founder's word
 ---
 # harness-vocab-rename — the `.claude/` harness files learn the D-046 vocabulary
 
 ## Status
-complete — work pushed, CI mirror green, awaiting founder review on
-[#180](https://github.com/wsher0901/roam/pull/180) · cloud lane ·
-2026-07-20 21:45 UTC.
+complete, awaiting merge — the founder's word arrived 2026-07-20
+21:58 UTC, spoken directly into the lane's session; ship runs from
+this seat at that command.
 
 ## What this task is
 Finish the
@@ -54,6 +54,17 @@ zero stragglers. Branch synced with main (merge — main had moved by
 one board repaint); full CI mirror green (lint · format · links ·
 ledger · memory · tests · build). No decisions were needed and no
 dead ends hit — the spec's Plan was the whole flight.
+
+The weld (2026-07-20): the founder's "merge" arrived directly in
+the lane's session — a window turned mail slot by the founder's own
+hand. Deviation, recorded honestly: the
+[no-solo-approval law](../LAWS.md#workflow-non-negotiable) wants a
+non-author session's review before the word; none existed when the
+word came, so ship's gate critic — the reviewer subagent
+([D-044](../DECISIONS.md#d-044--2026-07--the-pre-gate-critic-goes-live--ships-gate-opens-by-invoking-the-reviewer-subagent-verdicts-advisory-riding-with-the-summary-turns-on-the-staged-reviewer-upholds-d-038-and-the-reviewer-frame)),
+a non-author reviewer though spawned from the author's seat — was
+run before the weld and its verdict rides in the PR. The founder's
+explicit word remains the gate that authorized the merge.
 
 ## Where to look
 - the contract: [spec](../specs/harness-vocab-rename.md)
