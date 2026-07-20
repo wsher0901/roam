@@ -6,8 +6,8 @@ status: living
 
 # Dashboard — the state surface
 
-Stamp: 2026-07-20 · 16:43 · liftoff · work PC
-V1 5/34 · S1 2/7 · S2 3/5 · sessions: 1 main · 0 parallel
+Stamp: 2026-07-20 · 17:41 · pickup · cockpit
+V1 5/34 · S1 2/7 · S2 3/5 · sessions: 1 main · 1 parallel
 (0 need you) · needs-you 2
 How to read this board →
 [HOME §Reading the board](HOME.md#reading-the-board)
@@ -20,10 +20,10 @@ How to read this board →
    owed: the home PC repeats the paste at its next sitting; the
    lane-worker routine box and the clerk routine/session paste
    owe a re-save from the updated SETUP masters (the rename
-   changed their wording). Also awaiting your word: the `.claude/`
-   harness files still say "cockpit" in the old ground meaning (a
-   small chore bench). Clears on your word at any ritual (since
-   07-20).
+   changed their wording). The harness-rename word ARRIVED at the
+   maiden's part-2 fire — that chore now flies as
+   [#180](https://github.com/wsher0901/roam/pull/180), off this
+   list (since 07-20).
    → [SETUP §cloud accounts](SETUP.md#once-and-done--cloud-accounts)
    · [flight-cockpit](specs/flight-cockpit.md) ·
    [D-046](DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
@@ -37,23 +37,30 @@ How to read this board →
 
 | Session | Task | State | Last push | Your move |
 |---|---|---|---|---|
-| main · control tower | liftoff — this session closes at the cockpit fire; the MAIDEN flies the outing | 🟡 | 16:43 (this repaint) | — |
+| main · cockpit | the cockpit maiden, part 2 — commanding the harness outing ([flight-cockpit](specs/flight-cockpit.md) drill) | 🟡 | 17:41 (airborne ack) | — |
+| cloud | [harness-vocab-rename](https://github.com/wsher0901/roam/blob/chore/harness-vocab-rename/docs/memory/harness-vocab-rename.md) · [#180](https://github.com/wsher0901/roam/pull/180) | 🟡 airborne | 17:40 (canary) | — |
 
-↳ main micro: — (no active task; the fleet is empty)
+↳ main micro: 🟢 claim check · 🟢 bench birth · 🟢 label-spawn ·
+🟢 canary ack · 🟡 the lane flies · ⚪ non-author review · ⚪ the
+founder's word
 
-Flight context — THE COCKPIT MAIDEN
+Flight context — THE COCKPIT MAIDEN, part 2
 ([D-046](DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)):
-this liftoff carries ZERO lanes (nothing eligible — T3–T6 held on
-relaunch briefs · Design T5 idle · the harness chore awaits the
-word), so the outing IS the maiden: `npm run fire:cockpit` with
-the board-derived flight plan as payload, fired after this
-repaint's weld. The cockpit adds its own Sessions row at its
-first repaint; its session URL rides the close report. Cap
-arithmetic at fire time: `count:runs` read 0 today; the fire is
-+1 and invisible to the proxy → day total 1, truly 14 remaining.
-The clerk stays armed as fallback (retirement staged for the
-maiden drill's closeout). Landing = final repaint → park →
-founder archives → branch verified dead.
+part 1 fired but could not push; the founder granted write access
+and re-fired with the part-2 payload (first act stamped 17:34).
+This flight the birth push landed FIRST TRY — the
+harness-vocab-rename bench went up bench-first (spec + memory +
+draft PR at birth), flew label-spawned by the recipe of record,
+canary 60s after the label, airborne ack 17:41. Cap arithmetic:
+proxy read 0 GitHub-triggered today; the part-2 fire (+1,
+proxy-invisible) + the label-spawn (+1) → day total 2, truly 13
+remaining. Named watch: the cockpit is watching
+[#180](https://github.com/wsher0901/roam/pull/180) for BLOCKED: /
+ready-flip (pickup re-arms it if this session dies). The clerk
+stays armed as fallback (retirement staged for the maiden drill's
+closeout). Landing = non-author review → the founder's word →
+weld → final repaint → park → founder archives → branch verified
+dead.
 
 ## You are here
 
