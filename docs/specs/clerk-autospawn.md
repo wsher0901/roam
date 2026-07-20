@@ -60,12 +60,17 @@ recorded in this bench's memory.
       id lacked the `trig_` prefix); corrected in `.env.local`,
       ONE sanctioned retry clean — no session born of the failure
       (audit finding 1).
-- [ ] A2 — where the session lands in the UI + phone findability.
-      — pending founder attest, asked at the
-      [shakedown-audit](shakedown-audit.md) gate.
-- [ ] A3 — the session is interactive from the phone's Claude app.
-      — pending founder attest, asked at the
-      [shakedown-audit](shakedown-audit.md) gate.
+- [x] A2 — where the session lands in the UI + phone findability.
+      — founder attest at the gate, 2026-07-20, hedge recorded as
+      given: the fired session appeared in the routines area, he
+      believes; findable on the phone — yes
+      ([shakedown-audit](shakedown-audit.md)).
+- [x] A3 — the session is interactive from the phone's Claude app.
+      — founder attest at the gate, 2026-07-20: yes — interactive
+      from the phone's Claude app. Datum for the record: no
+      browsable section held the session; the ONLY access path
+      was the push-notification tap
+      ([shakedown-audit](shakedown-audit.md)).
 - [ ] A4 — the provider's counter ticks +1 (founder glance) and
       the `count:runs` proxy-blindness is confirmed.
       — proxy-blindness CONFIRMED from the 07-17 live record:
@@ -77,10 +82,11 @@ recorded in this bench's memory.
       ([shakedown-audit](shakedown-audit.md)).
 - [ ] A5 — the greeting + auto-armed watch arrive per the spawn
       preamble.
-      — pending founder attest, asked at the
-      [shakedown-audit](shakedown-audit.md) gate; the armed watch
-      itself is evidenced downstream — it announced the phase-2
-      landing (N2/N3: [clerk-notify](clerk-notify.md)).
+      — pending founder attest — asked at the
+      [shakedown-audit](shakedown-audit.md) gate, 2026-07-20: the
+      founder does not recall. The armed watch itself is evidenced
+      downstream — it announced the phase-2 landing (N2/N3:
+      [clerk-notify](clerk-notify.md)).
 
 ## Plan
 

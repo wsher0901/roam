@@ -1,16 +1,17 @@
 ---
 type: memory
 id: shakedown-audit
-updated: 2026-07-19 · ship · home PC
+updated: 2026-07-20 · gate fold · work PC
 ---
 # shakedown-audit — close the Shakedown Flight on paper
 
 ## Status
-Complete, awaiting merge — 2026-07-19, at THE GATE on the home-PC
-cockpit. Full CI mirror green (lint · format · links 2070/0 ·
-ledger 79↔79 · memory · tests 3/3 · build); external Web review
-precedes the founder's merge word. Six founder attestations ride
-the gate ask (see Pending issues).
+At THE GATE, gate answers folded — 2026-07-20, work PC. The
+founder's answers are folded verbatim, hedges included (A2 · A3
+attested, A5 does-not-recall, the sidebar title unrecorded,
+liftoff folded in on "Q7"); re-pushed, awaiting the Actions run →
+the founder's merge word. The remaining attests pend exactly as
+written (see Pending issues).
 
 ## What this task is
 The Shakedown Flight (phases 1–2, 2026-07-17 → 2026-07-19) closes
@@ -22,26 +23,26 @@ ship tail. Founder-mandated in-session 2026-07-19. Contract:
 [the spec](../specs/shakedown-audit.md).
 
 ## Pending issues
-Founder attestations, asked at THE GATE (the maiden-flight-report
-precedent — recorded, never invented): A2 · A3 · A5, one line
-each · A4's routines-page glance (the same glance closes finding
-1's unburned-run confirm) · the clerk self-report paste covering
-N1 · N4 · N5 · N6 · the live ops surface Web chat's sidebar title
-(for the tail's thread-line repoint) · the founder's gate word
-making the double-dispatch IDEAS close effective. Answers that
-arrive at the gate are folded in before the weld; any that don't
-stay "pending founder attest" in the graded specs, exactly as
-written.
+Still pending founder attest after the 2026-07-20 gate answers,
+exactly as written in the graded specs (the maiden-flight-report
+precedent — recorded, never invented): A4's routines-page glance
+(the same glance closes finding 1's unburned-run confirm) · A5
+(asked — the founder does not recall) · the clerk self-report
+covering N1 · N4 · N5 · N6. Folded at the gate: A2 (hedged as
+given) · A3 (with the push-notification-tap datum) · the sidebar
+title (left unread; the board line will read "current ops chat
+(title unrecorded at weld)") · the liftoff repair (the founder's
+"Q7: fold it in"). The double-dispatch IDEAS close takes effect
+with the merge word, per the sweep commit.
 
 ## Left / idle
 Post-weld only: the ship tail's board sweep (Needs-you №1 clears
 entirely; the thread line repoints — the Friday Web chat's real
 sidebar title is "Comprehensive architecture review and system
-audit"; the live ops surface is the current Web chat). One found
-gap OUTSIDE the mandate's files-touched list, surfaced at the
-gate: [liftoff](../skills/liftoff.md)'s fire:clerk line still
-reads "in verification" — repaired on the founder's word there or
-in a follow-up.
+audit"; the live ops surface line reads "current ops chat (title
+unrecorded at weld)"). The liftoff found gap no longer idles —
+the founder's gate word folded its repair into this bench (see
+The story).
 
 ## The story
 Born minutes after the origin ref cleanup turned forensic: the
@@ -115,6 +116,26 @@ the standing §cloud accounts bullets took the verified stamps
 history. IDEAS: the double-dispatch diagnostic closed (effective
 on the founder's gate word), the detached-verification lesson
 inboxed as finding 6's proposal, the reviewer DEFECT left open.
+
+The gate answers came back 2026-07-20 and folded verbatim, hedges
+included. A2, attested hedged as given: the fired session appeared
+in the routines area, he believes; findable on the phone — yes.
+A3, attested clean, with a datum worth the record: no browsable
+section held the session — the ONLY access path was the
+push-notification tap. A5 was asked and the founder does not
+recall; it pends as written, beside A4's glance and the clerk
+self-report. The live ops chat's sidebar title came back unread,
+so the board line will say so honestly: "current ops chat (title
+unrecorded at weld)". And the founder's "Q7: fold it in" pulled
+the liftoff found gap into the bench — its fire:clerk line now
+carries the verified stamp instead of riding a follow-up
+(gate-word scope extension, on the deviations record).
+
+One story line, no new finding number: the attestation haze
+itself — the founder could not reconstruct where-did-what across
+Friday's three surfaces — is recorded as lived evidence for the
+single-surface redesign ([D-046](../DECISIONS.md), landing on its
+own bench).
 
 ## Where to look
 Spec: [shakedown-audit](../specs/shakedown-audit.md). PR:

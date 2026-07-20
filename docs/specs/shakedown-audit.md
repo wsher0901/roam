@@ -45,10 +45,13 @@ cleanup surfaced the resurrection incident (finding 5).
 - Adopting the detached-verification process lesson into
   [ship](../skills/ship.md) — this bench only appends the dated
   [IDEAS](../IDEAS.md) proposal; the founder decides later.
-- [liftoff](../skills/liftoff.md) — outside the mandate's
-  files-touched list; its fire:clerk line still reads "in
+- [liftoff](../skills/liftoff.md) — WAS outside the mandate's
+  files-touched list; its fire:clerk line still read "in
   verification" (found gap, surfaced at THE GATE for the founder's
-  word — repair rides a follow-up unless folded in there).
+  word — repair rides a follow-up unless folded in there). The
+  founder's gate answer — "Q7: fold it in", 2026-07-20 — folded
+  the repair into this bench: the line now carries the verified
+  stamp per the cloud-clerk precedent (see §Deviations).
 - Merging — external Web review precedes the merge word. This bench
   rides to THE GATE and holds.
 
@@ -90,8 +93,10 @@ cleanup surfaced the resurrection incident (finding 5).
    session-1v6419 deleted, resurrection on record · grading + audit
    = this bench); the thread line repoints — the Friday Web chat's
    real sidebar title is "Comprehensive architecture review and
-   system audit"; the live ops surface is the current Web chat
-   (founder supplies its title at THE GATE).
+   system audit"; the live ops surface line reads "current ops
+   chat (title unrecorded at weld)" — the founder's gate answer,
+   2026-07-20, left the sidebar title unread; the fallback wording
+   given with it is recorded verbatim.
 8. CI mirror green · ship §6 critic (synchronous fallback lawful —
    the DEFECT stands) · ready-flip → THE GATE. DO NOT MERGE.
 
@@ -188,6 +193,11 @@ liftoff fire, which cannot be rehearsed without burning a run.
       reviewer DEFECT line untouched.
 - [x] Board-sweep content staged for the ship tail (executes
       post-weld).
+- [x] The 2026-07-20 gate answers folded verbatim, hedges
+      included: A2 · A3 attested, A5's does-not-recall recorded,
+      the sidebar title recorded unread, liftoff's fire:clerk
+      line repaired in-bench on the founder's "Q7: fold it in";
+      everything unanswered pends exactly as written.
 - [ ] Full CI mirror green; the pushed commit's Actions run green.
       (Ticked at the weld, whenever the founder's merge word
       lands.)
@@ -202,6 +212,8 @@ liftoff fire, which cannot be rehearsed without burning a run.
   clerk lines.
 - grep `in verification` in `docs/skills/parallel-lanes.md` —
   absent from the watcher line.
+- grep `in verification` in `docs/skills/liftoff.md` — absent
+  (the gate-word fold).
 - grep `stays dead` in `docs/skills/parallel-lanes.md` — the
   confirmed session-hygiene clause.
 - grep `detached` in `docs/IDEAS.md` — the dated process-lesson
@@ -213,3 +225,8 @@ liftoff fire, which cannot be rehearsed without burning a run.
 - `scripts/fire-clerk.mjs` may be touched under the §Finding 2
   contained-fix clause — pre-declared in the kickoff; a scripts/
   change makes the push non-docs-only, so Vercel builds once.
+- Gate-word scope extension, 2026-07-20:
+  `docs/skills/liftoff.md` joins the files-touched list on the
+  founder's "Q7: fold it in" — the fire:clerk found gap repaired
+  in-bench instead of riding a follow-up (§Out of scope records
+  the flip).
