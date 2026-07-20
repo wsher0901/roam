@@ -46,7 +46,10 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   21:57 (a `pull_request.labeled` event citing a stale head SHA)
   and the wake-lock held; the morning orphan is classified
   manual-born; redelivery is the most plausible incident mechanism.
-  Founder downgrades or closes at next review.
+  — CLOSED 2026-07-19 on the founder's word at the
+  [shakedown-audit](specs/shakedown-audit.md) gate: redelivery is
+  the accepted mechanism (evidence above); the wake-lock remains
+  the standing guard.
 - 2026-07-16 (Web, full-pass audit): a check:board CI gate —
   machine-verify the [DASHBOARD](DASHBOARD.md) glance-line numbers
   against [ROADMAP](ROADMAP.md) checkbox counts at every PR; weigh
@@ -90,3 +93,11 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   missing-local-main anomaly — pickup found no local main branch on
   the home PC (healed 07-16 by rebuilding from origin, cause
   unknown); watch for recurrence.
+- 2026-07-19 (Claude Code,
+  [shakedown-audit](specs/shakedown-audit.md) finding 6): detached
+  background verification is not verification — the resurrection
+  spot-check ran as a detached background task, lost its exit code,
+  and its main-only answer aged into a false all-clear four minutes
+  later; proposal: [ship](skills/ship.md)'s verification norms gain
+  "verification commands run foreground; results quoted from
+  captured output" — founder decides at triage, not this bench.

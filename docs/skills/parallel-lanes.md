@@ -161,9 +161,10 @@ never need GitHub:
   per
   [D-043](../DECISIONS.md#d-043--2026-07--cloud-ignition--away-command-redesign--route-ladder-v2-ready-flip-then-label-is-the-recipe-of-record-api-ignition-and-the-cloud-clerk-staged-the-claude-app-the-single-away-surface-amends-d-041-upholds-the-lane-law-and-the-wake-lock)) ·
   the GitHub app, four taps — demoted to backstop.
-The clerk can also be armed as a watcher (charter duty 6 — in
-verification until the N-checklist greens at the flight audit:
-[clerk-notify](../specs/clerk-notify.md)): its turn-end
+The clerk can also be armed as a watcher (charter duty 6 —
+verified 2026-07-19 at the Shakedown Flight audit, N-checklist
+grades: [clerk-notify](../specs/clerk-notify.md) ·
+[shakedown-audit](../specs/shakedown-audit.md)): its turn-end
 announcements are the notification channel for `BLOCKED:`
 comments, lane completions/ready-flips, and CI red on main.
 Never type into a session window — a window is not a slot: words
@@ -270,7 +271,16 @@ died harmless.
 
 After a cloud lane's weld, end its session at claude.ai/code — an
 idle completed session can resurrect its deleted branch on wake
-events (observed 2026-07-17).
+events (observed 2026-07-17). CONFIRMED 2026-07-19 (the
+resurrection incident,
+[shakedown-audit](../specs/shakedown-audit.md) finding 5): ending
+or archiving a session in the UI does NOT reliably stop its
+heartbeat push — a retired session re-created its deleted branch
+four minutes after a verbatim "- [deleted]", at the byte-identical
+SHA. After ANY retirement, verify the branch stays dead (a later
+prune-fetch + ls-remote), and re-delete on sight — same-SHA
+resurrections carry no unique work by construction (session
+branches are born at main's HEAD).
 
 Sources:
 [LAWS §Self-improvement](../LAWS.md#self-improvement)

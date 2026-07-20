@@ -140,7 +140,11 @@ lane:cloud.
    and merged — not your call.
 ```
 
-- Cloud clerk (session; verified 2026-07-17, C1–C6 green — the
+- Cloud clerk (session; verified 2026-07-17, C1–C6 green; the
+  standing watch — charter duty 6 — verified 2026-07-19 at the
+  Shakedown Flight, N-checklist grades:
+  [clerk-notify](specs/clerk-notify.md) ·
+  [shakedown-audit](specs/shakedown-audit.md) — the
   PRIMARY machine-off answering surface, the GitHub app demoted to
   backstop, per
   [D-043](DECISIONS.md#d-043--2026-07--cloud-ignition--away-command-redesign--route-ladder-v2-ready-flip-then-label-is-the-recipe-of-record-api-ignition-and-the-cloud-clerk-staged-the-claude-app-the-single-away-surface-amends-d-041-upholds-the-lane-law-and-the-wake-lock)'s
@@ -186,8 +190,10 @@ absolute:
    forgets nothing.
 ```
 
-- Clerk routine (staged → in verification with
-  [clerk-autospawn](specs/clerk-autospawn.md)) — the API-fire
+- Clerk routine (verified 2026-07-19 at the Shakedown Flight,
+  A-checklist grades:
+  [clerk-autospawn](specs/clerk-autospawn.md) ·
+  [shakedown-audit](specs/shakedown-audit.md)) — the API-fire
   vehicle for the clerk: a SECOND routine at
   claude.ai/code/routines named "clerk". Saved prompt = the clerk
   charter master above VERBATIM (box-is-a-copy; re-save the
@@ -285,23 +291,6 @@ Sources:
   the routine's API trigger — cockpit/liftoff ignite cloud lanes
   via endpoint, benches stay draft, the ready-flip reverts to
   completion-only; adopt at first need, verify-before-rely.
-- In verification — clerk-notify (founder requirement 2026-07-17;
-  bench: [spec + N-checklist](specs/clerk-notify.md)): the clerk's
-  standing watch — charter duty 6 — on lane completions,
-  `BLOCKED:` comments, and CI red on main, announcing each via a
-  turn-end message so the app pushes a notification; first need =
-  the Shakedown Flight; verify-before-rely, N1–N6 grade at the
-  flight. (C6 datum, clerk maiden: zero app pushes on clerk
-  turns — silence is the clerk's default; the announce must be
-  explicit. Supersedes the phone-buzz/doorbell question.)
-- In verification — clerk-autospawn (bench:
-  [spec + A-checklist](specs/clerk-autospawn.md)): liftoff
-  API-fires the clerk instead of the manual paste
-  (`npm run fire:clerk`; recipe:
-  [§cloud accounts](#once-and-done--cloud-accounts)). The API-cap
-  trade is accepted by the founder flying it — 1 daily-cap run
-  per fire vs the manual paste's 0, invisible to the `count:runs`
-  proxy; A1–A5 grade at the flight.
 - Built-in exploratory subagents (parallel research inside one
   task) need no spec — distinct from roadmap [P] lanes, which are
   separate sessions on separate branches.

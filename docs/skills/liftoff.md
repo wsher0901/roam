@@ -61,8 +61,10 @@ cloud-side via the route ladder; route 1 (label-spawn) is one command
 per lane: `gh pr edit <N> --add-label lane:cloud`.
 One conditional step: spawn the clerk if it isn't already up —
 the away surface should be up before the founder walks away.
-Primary: `npm run fire:clerk` (API-fire, in verification —
-[clerk-autospawn](../specs/clerk-autospawn.md)); record the
+Primary: `npm run fire:clerk` (API-fire, verified 2026-07-19 at
+the Shakedown Flight, A-checklist grades:
+[clerk-autospawn](../specs/clerk-autospawn.md) ·
+[shakedown-audit](../specs/shakedown-audit.md)); record the
 returned session URL in the flight-plan repaint (§6). Fallback,
 retained verbatim: the manual charter paste — claude.ai/code
 (browser or the phone's Claude app) → new session on

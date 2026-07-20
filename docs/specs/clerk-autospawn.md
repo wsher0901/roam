@@ -52,14 +52,41 @@ fires performed this sitting.
 Founder-run at the Shakedown Flight, after this PR merges; results
 recorded in this bench's memory.
 
-- [ ] A1 — `npm run fire:clerk` spawns the clerk; latency
+- [x] A1 — `npm run fire:clerk` spawns the clerk; latency
       recorded.
-- [ ] A2 — where the session lands in the UI + phone findability.
-- [ ] A3 — the session is interactive from the phone's Claude app.
+      — graded 2026-07-19 ([shakedown-audit](shakedown-audit.md)):
+      fired in ~3 s at the 07-17 liftoff, payload "arm the watch".
+      Fire 1 answered 400 invalid_routine_id PRE-spawn (the pasted
+      id lacked the `trig_` prefix); corrected in `.env.local`,
+      ONE sanctioned retry clean — no session born of the failure
+      (audit finding 1).
+- [x] A2 — where the session lands in the UI + phone findability.
+      — founder attest at the gate, 2026-07-20, hedge recorded as
+      given: the fired session appeared in the routines area, he
+      believes; findable on the phone — yes
+      ([shakedown-audit](shakedown-audit.md)).
+- [x] A3 — the session is interactive from the phone's Claude app.
+      — founder attest at the gate, 2026-07-20: yes — interactive
+      from the phone's Claude app. Datum for the record: no
+      browsable section held the session; the ONLY access path
+      was the push-notification tap
+      ([shakedown-audit](shakedown-audit.md)).
 - [ ] A4 — the provider's counter ticks +1 (founder glance) and
       the `count:runs` proxy-blindness is confirmed.
+      — proxy-blindness CONFIRMED from the 07-17 live record:
+      `count:runs` read 2 (the two lane labels) while the day's
+      true total was 3 — the API fire's +1 invisible to the proxy,
+      exactly as documented. The provider-counter glance:
+      pending founder attest — the same glance closes finding
+      1's unburned-run confirm
+      ([shakedown-audit](shakedown-audit.md)).
 - [ ] A5 — the greeting + auto-armed watch arrive per the spawn
       preamble.
+      — pending founder attest — asked at the
+      [shakedown-audit](shakedown-audit.md) gate, 2026-07-20: the
+      founder does not recall. The armed watch itself is evidenced
+      downstream — it announced the phase-2 landing (N2/N3:
+      [clerk-notify](clerk-notify.md)).
 
 ## Plan
 
@@ -139,9 +166,10 @@ A1 remains the live fire — verify-before-rely.
 - [x] SETUP §Staged's clerk-autospawn line reads "in verification"
       and links this bench.
 - [x] `.env.example` carries the two placeholders.
-- [ ] Full CI mirror green; the pushed commit's Actions run green.
-      (Ticked at the weld, whenever the founder's merge word
-      lands.)
+- [x] Full CI mirror green; the pushed commit's Actions run green.
+      (Ticked 2026-07-20, a retroactivity repair — the box should
+      have flipped at #164's 2026-07-17 weld, which landed green;
+      found and repaired at the shakedown-audit weld.)
 
 The A-checklist is deliberately NOT a Done-means item — it grades
 at the flight, after the merge.
