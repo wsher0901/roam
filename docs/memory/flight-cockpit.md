@@ -1,52 +1,103 @@
 ---
 type: memory
 id: flight-cockpit
-updated: 2026-07-20 · birth · work PC
+updated: 2026-07-20 · ship · work PC
 ---
+
 # flight-cockpit — the cockpit is the control tower online
 
 ## Status
-In flight on the work-PC control tower — birthed 2026-07-20,
-bench-first, immediately after the shakedown-audit weld (#175)
-cleared STEP 0's gates. Authoring D-046 and its full ripple.
+
+Complete, awaiting merge — 2026-07-20, at THE GATE on the work-PC
+control tower. Full CI mirror green; the fire vehicle's failure
+paths repro'd honest for both targets. This bench is
+tower-authored, so the very law it ships routes it through
+external Web review before the founder's merge word. DO NOT MERGE
+without both.
 
 ## What this task is
+
 One decide (D-046), its doctrine, and the wiring: the cockpit
 becomes the control tower online — a cloud command session with
 full authorship; no-solo-approval becomes law; liftoff auto-fires
-the cockpit briefed from the board; the CC-direct surface doctrine;
-staged clerk retirement; Remote Control demoted to backstop; the
-vocabulary rename (cockpit = cloud, control tower = ground).
-Contract: [the spec](../specs/flight-cockpit.md).
+the cockpit briefed from the board; the CC-direct surface
+doctrine; staged clerk retirement; Remote Control demoted to
+backstop; the vocabulary rename (cockpit = cloud, control tower =
+ground). Contract: [the spec](../specs/flight-cockpit.md).
 
 ## Pending issues
-none yet — ②a (Remote Control as backstop, not retirement) was
-confirmed by the founder at the shakedown-audit gate, 2026-07-20.
+
+Founder manual acts ride the gate summary (no CLI surface exists):
+create the "cockpit" routine and paste the charter master
+verbatim; generate its token (password manager FIRST) and hand the
+control tower the `trig_` id + token for `.env.local` (the work PC
+repeats at its next sitting — this seat); and, because three SETUP
+master blocks changed wording (the lane worker's ack line · the
+clerk charter's point-to line), re-save those routine/session
+boxes from the masters (box-is-a-copy). The `.claude/` harness
+files still say "cockpit" in the ground meaning — outside the
+mandate's files-touched list, a follow-up candidate for the
+founder's word.
 
 ## Left / idle
-The whole mandate — work begins after the birth push.
+
+Staged, deliberately not executed here: the clerk retirement
+(executes at the cockpit maiden drill's closeout) · the summon
+button (a workflow_dispatch Action, adopt at first need) · the
+cockpit maiden itself — the first liftoff after the founder's
+manual acts flies it.
 
 ## The story
-Born minutes after the Shakedown Flight closed on paper: the
-founder's kickoff mandated the bench with a hard STEP 0 — refuse
-to start unless #175 is welded (this bench edits the same SETUP
-sections), origin is main-only, and main freshly pulled. The first
-attempt correctly stopped at the gate: #175 was still at THE GATE.
-The founder's gate answers were folded, #175 welded (squash
-5134d8a), the tail repainted the board (#176), and all three gates
-re-ran green — the bench was born from tip 60988c5. The lived
-evidence driving the redesign is on record in the audit: the
-founder could not reconstruct where-did-what across Friday's three
-surfaces (the attestation haze) — one surface, full authorship,
-is the answer D-046 writes down.
+
+Born minutes after the Shakedown Flight closed on paper, from a
+kickoff with a hard STEP 0: the first attempt correctly refused to
+start while [#175](https://github.com/wsher0901/roam/pull/175)
+sat at its gate (this bench edits the same SETUP sections); the
+gate answers were folded, #175 welded, the board repainted, and
+the bench was born from the fresh tip. The design's lived evidence
+is the audit's attestation haze — the founder could not
+reconstruct where-did-what across Friday's three narrow surfaces.
+One surface with full authorship is the answer: a cockpit that can
+act, reports decision-shaped, and leaves the ordinary paper trail.
+
+The one genuinely structural call was the baton: a cockpit that
+merges and repaints IS a baton-holder, so D-046's body says so
+plainly — liftoff closes the ground session before the fire, the
+one-writer invariant survives, and the baton is the cockpit's for
+the flight. The rename fell out mechanically once the vocabulary
+was fixed (cockpit = a control tower, online): every lane-law
+"cockpit" was ground-meaning and became "control tower", which
+covers the cloud cockpit by definition — 65 lines across eleven
+living files, each listed in the PR description. Two scope calls
+recorded as deviations: the memory TEMPLATE's Status table joined
+the rename (living doctrine; the zero-stragglers grep would fail
+without it), and the mail-slot's machine-off primary repointed
+clerk → cockpit (the charter says the cockpit inherits those
+rules; the clerk stays armed as fallback until its staged
+retirement). One found gap repaired in passing: `.env.example`
+still taught the exact id-transcription trap that caused fire-1's
+400 — it now carries the `trig_` note.
+
+The fire vehicle generalized cleanly: `fire-clerk.mjs` →
+`fire.mjs` with a target argument selecting the CLERK_/COCKPIT_
+env pairs, the `process.exitCode` drain idiom kept exactly as the
+audit's finding-2 repair left it. All five failure paths repro'd
+from a temp cwd with fake credentials — both targets' 401s reject
+pre-spawn (no session, zero cap burn), missing credentials,
+unknown target, and no target all end in an honest exit 1, no
+libuv assert. The success path is preserved by construction; its
+live proof is the next liftoff fire, which cannot be rehearsed
+without burning a run.
 
 ## Where to look
-Spec: [flight-cockpit](../specs/flight-cockpit.md). Kickoff: the
-founder's 2026-07-20 mandate (verbatim in the session; essence in
-the spec). Precedent evidence:
+
+Spec: [flight-cockpit](../specs/flight-cockpit.md). PR:
+[#177](https://github.com/wsher0901/roam/pull/177). The decide:
+[D-046](../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock).
+The law: [LAWS §Workflow](../LAWS.md#workflow-non-negotiable). The
+charter master + routine recipe:
+[SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts).
+The fire: [liftoff §6](../skills/liftoff.md#6--ledger-handoff--fire-the-cockpit)
+· `scripts/fire.mjs`. Vocabulary:
+[HOME §Terms](../HOME.md#terms). Evidence:
 [shakedown-audit](../history/workshop/mechanism/shakedown-audit.md).
-Files this bench edits: [DECISIONS](../DECISIONS.md) ·
-[LAWS](../LAWS.md) · [HOME](../HOME.md) · [SETUP](../SETUP.md) ·
-[liftoff](../skills/liftoff.md) · the living skills where the
-rename greps true · `scripts/fire.mjs` · `package.json` ·
-`.env.example`.

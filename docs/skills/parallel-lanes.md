@@ -16,10 +16,10 @@ Sources:
 ## The lane law (seat-blind — identical local or cloud)
 Every lane
 
-1. is born bench-first BY THE COCKPIT — branch, spec, memory stub,
-   draft PR pushed to origin BEFORE any session exists;
+1. is born bench-first BY THE CONTROL TOWER — branch, spec, memory
+   stub, draft PR pushed to origin BEFORE any session exists;
 2. runs the canary handshake before real work — its first act is a
-   trivial push; the cockpit writes airborne-or-failed into the
+   trivial push; the control tower writes airborne-or-failed into the
    pre-birthed memory; a lane seeing failed/aborted, a Status it does not
    own (parked · respawned · superseded), or no acknowledgment,
    self-terminates;
@@ -41,7 +41,7 @@ Sources:
 [IDEAS](../IDEAS.md)
 [ROADMAP](../ROADMAP.md)
 
-## Bench-first birth (cockpit procedure)
+## Bench-first birth (control-tower procedure)
 1. Pull main fresh.
 2. Branch `<prefix>/<id>-<slug>`.
 3. Spec `docs/specs/<id>-<slug>.md` — only if discussion opened the
@@ -62,7 +62,7 @@ presumes a RECLAIMABLE bench per [§Liveness](#liveness--live-vs-reclaimable)
 — a live heartbeat is never adopted. The
 cloud worker's first act is the canary ON that branch — memory
 Status → "claimed for respawn by <vehicle> — <date>" — then WAIT;
-the cockpit ack overwrites the parked Status with "airborne ·
+the control tower's ack overwrites the parked Status with "airborne ·
 <url> · <date>". Everything after — diary, PR speech, landing — is
 the ordinary lane law.
 
@@ -110,12 +110,13 @@ within the window means the session expired — respawn per
 [§Respawn](#respawn-on-an-existing-bench-liftoff-adopt).
 - Lane side: first act on waking is one trivial commit — memory
   Status → "claimed by <vehicle> — <date>" — pushed to its branch;
-  then WAIT for the cockpit's acknowledgment in memory before real
+  then WAIT for the control tower's acknowledgment in memory before
+  real
   work. Seeing "failed/aborted", a Status this lane does not own
   (parked · respawned · superseded), or no acknowledgment within that
   window (~10 min cloud / ~2 local): self-terminate cleanly (push
   whatever exists, stop).
-- Cockpit side: watch for the canary. On arrival, write "airborne ·
+- Control-tower side: watch for the canary. On arrival, write "airborne ·
   <vehicle or url> · <date>" into the lane's memory Status and push.
   No canary within ~10 minutes (cloud) or ~2 (local): write "spawn
   failed <date> — <reason> → run locally" into the memory and record
@@ -150,17 +151,22 @@ machine is halting.
 ## Answering a lane (the mail slot)
 Lanes speak and listen only through their PR; the founder's hands
 never need GitHub:
-- Desk: tell the cockpit "reply to the lane on #N: …" — the cockpit
+- Desk: tell the control tower "reply to the lane on #N: …" — the
+  control tower
   posts it verbatim as a PR comment.
-- Away, machine on: the same sentence to the tethered cockpit via
+- Away, machine off (the standard posture): THE COCKPIT — the away
+  surface since
+  [D-046](../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+  (charter:
+  [SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts));
+  it inherits these mail-slot rules whole — the same sentence in
+  its thread posts the reply. Fallbacks: the cloud clerk (verified
+  2026-07-17, C1–C6 green —
+  [spec](../specs/cloud-clerk.md); armed until its staged
+  retirement) · the GitHub app, four taps — backstop.
+- Away, machine on (backstop posture): the same sentence to the
+  tethered control tower via
   the Claude app (Remote Control).
-- Away, machine off: the cloud clerk — PRIMARY since 2026-07-17,
-  checklist C1–C6 green (charter + checklist:
-  [spec](../specs/cloud-clerk.md) ·
-  [SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts),
-  per
-  [D-043](../DECISIONS.md#d-043--2026-07--cloud-ignition--away-command-redesign--route-ladder-v2-ready-flip-then-label-is-the-recipe-of-record-api-ignition-and-the-cloud-clerk-staged-the-claude-app-the-single-away-surface-amends-d-041-upholds-the-lane-law-and-the-wake-lock)) ·
-  the GitHub app, four taps — demoted to backstop.
 The clerk can also be armed as a watcher (charter duty 6 —
 verified 2026-07-19 at the Shakedown Flight audit, N-checklist
 grades: [clerk-notify](../specs/clerk-notify.md) ·
@@ -181,7 +187,7 @@ re-reply.
 - LOCAL — the mid-session default per the chooser: background agents,
   or `claude -w` worktree sessions. Worktrees share the clone's disk;
   lanes stay file-disjoint by law. During go-remote every lane must
-  be RC-visible — inside the RC'd cockpit or an interactive
+  be RC-visible — inside the RC'd control tower or an interactive
   auto-connect session; a bare detached spawn is invisible from the
   phone and unlawful in tether posture.
 - CLOUD — liftoff only, via the route ladder (§Cloud spawn); never a
@@ -292,7 +298,8 @@ reliability law BEFORE surfacing it to the founder; then ship takes
 over. Flip draft→ready ONLY after `gh pr checks` reports the pushed
 commit's Actions run green — local green never suffices.
 Ideas-surfaced harvesting: any "Ideas surfaced" lines in a lane's
-memory move to IDEAS at the next cockpit ritual — lanes never write
+memory move to IDEAS at the next control-tower ritual — lanes never
+write
 main themselves.
 
 Sources:

@@ -1,13 +1,16 @@
 #!/usr/bin/env node
-// Clerk igniter: fires the "clerk" routine via its API trigger so
-// liftoff can raise the away surface in one command (SETUP §Once and
-// done — cloud accounts, Clerk routine; liftoff §4). Reads the
-// machine-local secrets from .env.local — CLERK_FIRE_TOKEN (the
-// per-routine bearer token, sk-ant-oat01-…, generated ONCE in the
-// routine's API-trigger UI) and CLERK_ROUTINE_ID (the trig_… id) —
-// and POSTs the documented routine-fire endpoint. An optional message
-// may ride along: `npm run fire:clerk -- "arm the watch"` (it reaches
-// the clerk as untrusted <routine-fire-payload> text).
+// Routine igniter: fires a named routine ("clerk" or "cockpit") via
+// its API trigger so liftoff can raise the away surface in one
+// command (SETUP §Once and done — cloud accounts; liftoff §4/§6).
+// Usage: `node scripts/fire.mjs <clerk|cockpit> [message…]` — wired
+// as `npm run fire:clerk` / `npm run fire:cockpit`. The target picks
+// the machine-local secret pair in .env.local — CLERK_/COCKPIT_
+// FIRE_TOKEN (the per-routine bearer token, sk-ant-oat01-…,
+// generated ONCE in the routine's API-trigger UI) and _ROUTINE_ID
+// (the trig_… id — the API-trigger modal shows it) — and POSTs the
+// documented routine-fire endpoint. An optional message rides along:
+// `npm run fire:cockpit -- "<flight plan>"` (it reaches the session
+// as untrusted <routine-fire-payload> text).
 //
 // Endpoint + headers verified against the live docs 2026-07-17
 // (platform.claude.com/docs/en/api/claude-code/routines-fire). The
@@ -25,6 +28,20 @@
 import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 
+const TARGETS = {
+  clerk: { token: "CLERK_FIRE_TOKEN", routineId: "CLERK_ROUTINE_ID" },
+  cockpit: { token: "COCKPIT_FIRE_TOKEN", routineId: "COCKPIT_ROUTINE_ID" },
+};
+
+const target = (process.argv[2] ?? "").trim();
+if (!(target in TARGETS)) {
+  console.error(
+    `fire: unknown target "${target}" — usage: node scripts/fire.mjs ` +
+      "<clerk|cockpit> [message…] (or npm run fire:clerk / fire:cockpit).",
+  );
+  process.exit(1);
+}
+
 function readEnvLocal() {
   let text;
   try {
@@ -41,19 +58,20 @@ function readEnvLocal() {
 }
 
 const env = readEnvLocal();
-const token = process.env.CLERK_FIRE_TOKEN ?? env.CLERK_FIRE_TOKEN;
-const routineId = process.env.CLERK_ROUTINE_ID ?? env.CLERK_ROUTINE_ID;
+const names = TARGETS[target];
+const token = process.env[names.token] ?? env[names.token];
+const routineId = process.env[names.routineId] ?? env[names.routineId];
 
 if (!token || !routineId) {
   console.error(
-    "fire-clerk: CLERK_FIRE_TOKEN and CLERK_ROUTINE_ID must be set in " +
-      ".env.local (machine-local; recipe: SETUP §Once and done — cloud " +
-      "accounts, Clerk routine). Fallback: the manual charter paste.",
+    `fire(${target}): ${names.token} and ${names.routineId} must be set ` +
+      "in .env.local (machine-local; recipe: SETUP §Once and done — " +
+      "cloud accounts). Fallback: the manual charter paste.",
   );
   process.exit(1);
 }
 
-const message = process.argv.slice(2).join(" ").trim();
+const message = process.argv.slice(3).join(" ").trim();
 
 // After the fetch, failures RETURN a code instead of calling
 // process.exit(): an abrupt exit while undici's network handles are
@@ -81,7 +99,7 @@ async function fire() {
     const bodyText = await res.text();
     if (!res.ok) {
       console.error(
-        `fire-clerk: the fire endpoint answered ${res.status}. ` +
+        `fire(${target}): the fire endpoint answered ${res.status}. ` +
           (res.status === 429
             ? "Daily routine cap or usage limit reached (Retry-After: " +
               (res.headers.get("retry-after") ?? "?") +
@@ -98,26 +116,26 @@ async function fire() {
       data = JSON.parse(bodyText);
     } catch {
       console.error(
-        "fire-clerk: 200 but a non-JSON body — the API shape may have " +
-          `shifted; re-verify against the routines-fire docs.\n${bodyText}`,
+        `fire(${target}): 200 but a non-JSON body — the API shape may ` +
+          `have shifted; re-verify against the routines-fire docs.\n${bodyText}`,
       );
       return 1;
     }
     if (!data.claude_code_session_url) {
       console.error(
-        "fire-clerk: 200 but no claude_code_session_url in the response — " +
-          "the API shape may have shifted; re-verify against the " +
-          `routines-fire docs.\n${bodyText}`,
+        `fire(${target}): 200 but no claude_code_session_url in the ` +
+          "response — the API shape may have shifted; re-verify against " +
+          `the routines-fire docs.\n${bodyText}`,
       );
       return 1;
     }
-    console.log(`clerk fired · session: ${data.claude_code_session_url}`);
+    console.log(`${target} fired · session: ${data.claude_code_session_url}`);
     return 0;
   } catch (err) {
     console.error(
-      "fire-clerk: could not reach the fire endpoint (offline, DNS, or " +
-        `timed out after 30 s): ${err.message}. Use the manual charter ` +
-        "paste instead.",
+      `fire(${target}): could not reach the fire endpoint (offline, ` +
+        `DNS, or timed out after 30 s): ${err.message}. Use the manual ` +
+        "charter paste instead.",
     );
     return 1;
   }

@@ -5,7 +5,8 @@ status: living
 ---
 # Pickup — the sit-down briefing
 
-Cockpit only — dispatched lanes and background agents skip it and
+Control tower only — dispatched lanes and background agents skip it
+and
 proceed with their kickoff. Runs unprompted on the founder's first
 message of a session. Assume the founder remembers NOTHING; plain
 English everywhere. Glyphs, here and on the board: 🟢 done ·
@@ -15,7 +16,7 @@ English everywhere. Glyphs, here and on the board: 🟢 done ·
 Read the DASHBOARD header stamp and announce "last ritual: <when> ·
 <seat>". Claiming happens on fresh origin (the session-start hook
 pulls main and removes welded-elsewhere local branches; if it could
-not, pull now). From this moment this session is the cockpit.
+not, pull now). From this moment this session is the control tower.
 
 Sources:
 [DASHBOARD](../DASHBOARD.md)

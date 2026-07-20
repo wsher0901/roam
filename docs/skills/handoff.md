@@ -5,7 +5,8 @@ status: living
 ---
 # Handoff — the leaving ritual
 
-Cockpit only — lanes never run this. FULL means operations halt on
+Control tower only — lanes never run this. FULL means operations
+halt on
 this machine. Two modes.
 FULL = leaving phrase, explicit call, or liftoff's step 1.
 QUIET = ship's tail. QUIET skips steps 1.5–3 and never closes the
@@ -36,7 +37,8 @@ running:
    "Status: parked — <date> · at handoff · <seat>", push — write
    "rescue-saved at handoff" in place of "at handoff" ONLY when step
    1.5.2 actually ran (the diary never claims a rescue that didn't
-   happen). This is the ONE cockpit-written line a lane's memory may
+   happen). This is the ONE control-tower-written line a lane's
+   memory may
    ever receive (the park protocol).
 4. Count the parked for the close line.
 5. Watch-duty inheritance: watches die with sessions — the record
@@ -44,7 +46,7 @@ running:
    watch, a background monitor) is NAMED at park —
    "watching #N for X" — written into the parked lane's memory (a
    lane-owned watch) or the board's flight-context line under
-   Sessions (a cockpit watch);
+   Sessions (a control-tower watch);
    [pickup §3](pickup.md#3--gather-git-outranks-the-board) re-arms
    every named watch it finds.
 QUIET never parks — mid-sitting lanes keep flying.
@@ -109,8 +111,9 @@ Sections, in this order:
   invariant then covers every 🔴/failed row. ONE table for every
   live session, under the plain
   header "## Sessions" (counts live in the glance line — the
-  header must keep a stable anchor). Columns: Session (main · cockpit / local parallel /
-  cloud — rows sorted in that order) · Task (linked to its roadmap
+  header must keep a stable anchor). Columns: Session (main · control tower / local parallel /
+  cloud — rows sorted in that order; during an away flight the
+  cockpit's own row reads main · cockpit) · Task (linked to its roadmap
   line or memory) · State (glyph + Status-vocabulary word; for
   main, append "· a/b" micro count) · Last push (age) · Your move
   (the founder-action, or —). Below the table, one "↳ main micro:"

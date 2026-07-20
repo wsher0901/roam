@@ -35,16 +35,16 @@ the frontmatter `updated:` line in the same edit — a stale
 
 | State | Written by | Licenses |
 |---|---|---|
-| bench ready | cockpit, at birth | claiming |
+| bench ready | control tower, at birth | claiming |
 | claimed — <vehicle · date> | the lane, canary | waiting for ack |
-| airborne — <url · date> | cockpit ack | the lane works |
+| airborne — <url · date> | control tower ack | the lane works |
 | blocked — <reason> | the lane (+ BLOCKED: PR comment) | waiting on founder |
 | parked — <date · reason> | handoff §1.5, liftoff §5, or the lane | nothing — until founder action |
 | claimed for respawn — <vehicle · date> | the cloud lane | waiting for ack |
-| respawned — <new vehicle · date> | cockpit/liftoff, at respawn | nothing — the bench belongs to the new lane; a prior worker self-terminates on sight |
+| respawned — <new vehicle · date> | control tower/liftoff, at respawn | nothing — the bench belongs to the new lane; a prior worker self-terminates on sight |
 | held: needs local — <reason> | liftoff §5 | nothing — local resume only |
-| cloud spawn failed — <reason> | cockpit, + the board's Sessions row (+ Needs-you mirror) | nothing — founder decides |
-| failed — <reason · date> | the lane (genuine error) or cockpit | nothing — founder decides |
-| superseded — <by> | cockpit | self-terminate on sight |
+| cloud spawn failed — <reason> | control tower, + the board's Sessions row (+ Needs-you mirror) | nothing — founder decides |
+| failed — <reason · date> | the lane (genuine error) or control tower | nothing — founder decides |
+| superseded — <by> | control tower | self-terminate on sight |
 | complete, awaiting merge | the finishing session | THE GATE |
 | shipped — merged #N | ship's weld (the memory moves to history/) | nothing — the bench is done |

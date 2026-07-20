@@ -112,30 +112,36 @@ retirement) confirmed at the shakedown-audit gate.
 
 ## Done means
 
-- [ ] D-046 appended to DECISIONS in house style, every clause
-      recorded by name; anchors born resolving.
-- [ ] HOME §Terms carries cockpit (cloud) + control tower
+- [x] D-046 appended to DECISIONS in house style, every clause
+      recorded by name; anchors born resolving (check:links
+      2155/0 with every D-046 link live).
+- [x] HOME §Terms carries cockpit (cloud) + control tower
       (ground); the rename leaves ZERO ground-meaning "cockpit"
-      in living doctrine (grep-proven); history/ and prior
-      DECISIONS untouched by the diff; every renamed line listed
-      in the PR description.
-- [ ] LAWS carries the no-solo-approval law with the #175
+      in living doctrine (grep-proven at the gate); history/ and
+      prior DECISIONS untouched by the diff; every renamed line
+      listed in the PR description.
+- [x] LAWS carries the no-solo-approval law with the #175
       precedent noted.
-- [ ] SETUP carries the cockpit charter master (the
+- [x] SETUP carries the cockpit charter master (the
       no-solo-approval law verbatim inside it), sibling of the
       clerk's section.
-- [ ] liftoff's cloud branch fires the cockpit with a
-      board-derived flight plan as payload; fire:clerk retained
-      as manual fallback.
-- [ ] `scripts/fire.mjs` exists (target clerk | cockpit), the
+- [x] liftoff's cloud branch fires the cockpit with a
+      board-derived flight plan as payload (§6); fire:clerk
+      retained as manual fallback (§4 ladder).
+- [x] `scripts/fire.mjs` exists (target clerk | cockpit), the
       drain idiom intact; `fire-clerk.mjs` is gone;
       package.json carries fire:cockpit AND fire:clerk;
       `.env.example` carries COCKPIT_FIRE_TOKEN +
       COCKPIT_ROUTINE_ID with the `trig_` note.
-- [ ] Failure paths repro'd for BOTH targets with fake
-      credentials from a temp cwd — 401 pre-spawn, zero cap
-      burn, honest exit 1.
-- [ ] The surface doctrine lands in HOME + SETUP's loop text;
+- [x] Failure paths repro'd 2026-07-20 for BOTH targets with
+      fake credentials from a temp cwd — 401 pre-spawn
+      (authentication_error, no session created, zero cap burn),
+      honest exit 1 on all five paths (401 ×2 ·
+      missing-credentials · unknown target · no target); no
+      libuv assert — the drain idiom held. The success path is
+      preserved by construction; its live proof is the next
+      liftoff fire (the clerk-autospawn clause).
+- [x] The surface doctrine lands in HOME + SETUP's loop text;
       the clerk sections carry "retirement staged (D-046)"; RC
       demoted in SETUP §Per machine; the summon button staged.
 - [ ] Full CI mirror green; the pushed commit's Actions run
@@ -144,7 +150,29 @@ retirement) confirmed at the shakedown-audit gate.
 
 ## Deviations
 
-none yet.
+- The rename extends to `docs/memory/TEMPLATE.md` (the Status
+  vocabulary's six writer-column mentions) — not one of the
+  mandate's four named classes, but living doctrine the
+  zero-stragglers verification clause covers; leaving it would
+  fail the grep proof.
+- `.env.example`'s pre-existing clerk comment ("routine id from
+  the routine's URL") corrected to the `trig_` note while adding
+  the COCKPIT_ pair — a retroactivity repair: that wording is the
+  exact transcription trap that caused the Shakedown Flight's
+  fire-1 400.
+- [parallel-lanes §Answering a lane](../skills/parallel-lanes.md#answering-a-lane-the-mail-slot):
+  the away-machine-off primary repoints from the clerk to the
+  cockpit (D-046 clause 1's "inherits the lane mail-slot rules");
+  the clerk stays listed as armed fallback until its staged
+  retirement — slightly beyond a pure rename, recorded here.
+- [handoff §4](../skills/handoff.md#4--repaint-dashboard-the-board-spec--single-source)'s
+  Session-column vocabulary gains "during an away flight the
+  cockpit's own row reads main · cockpit" — the board spec had to
+  say how a cockpit names itself.
+- The `.claude/` harness files (the pickup stub description · the
+  session-start hook's briefing directive) still say "cockpit" in
+  the ground meaning — outside the mandate's files-touched list;
+  surfaced at THE GATE as a follow-up candidate.
 
 ## Open questions
 
