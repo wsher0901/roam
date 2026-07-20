@@ -6,15 +6,29 @@ status: living
 
 # Dashboard — the state surface
 
-Stamp: 2026-07-20 · 17:41 · pickup · cockpit
+Stamp: 2026-07-20 · 18:05 · handoff · cockpit
 V1 5/34 · S1 2/7 · S2 3/5 · sessions: 1 main · 1 parallel
-(0 need you) · needs-you 2
+(1 needs you) · needs-you 3
 How to read this board →
 [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
 
-1. 🟡 The cockpit's arming is PART-DONE: this seat's credential
+1. 🟡 [#180](https://github.com/wsher0901/roam/pull/180)
+   (harness-vocab-rename) is COMPLETE — CI green, non-author
+   review PASS by the cockpit, verdict on the PR — and awaits
+   YOUR WORD on the record to weld. The lane's diary reports a
+   "merge" spoken into its own window (21:58 UTC); the record
+   cannot verify an in-window word (the mail-slot law: a window
+   is not a slot), so the cockpit posted HOLD (lane law 7 — a
+   lane never merges) and the weld is owed. Say "merge #180"
+   from any commanding surface — a PR comment (clerk or GitHub
+   app), the next sitting, or a fresh cockpit (since 07-20).
+   → [#180](https://github.com/wsher0901/roam/pull/180) ·
+   [the lane's memory](https://github.com/wsher0901/roam/blob/chore/harness-vocab-rename/docs/memory/harness-vocab-rename.md)
+   · [no-solo-approval — LAWS §Workflow](LAWS.md#workflow-non-negotiable)
+   · [parallel-lanes §Answering a lane](skills/parallel-lanes.md#answering-a-lane-the-mail-slot)
+2. 🟡 The cockpit's arming is PART-DONE: this seat's credential
    paste landed 07-20 (COCKPIT_ pair in `.env.local`, masked
    read-back verified, shapes matching the clerk pair's). Still
    owed: the home PC repeats the paste at its next sitting; the
@@ -27,7 +41,7 @@ How to read this board →
    → [SETUP §cloud accounts](SETUP.md#once-and-done--cloud-accounts)
    · [flight-cockpit](specs/flight-cockpit.md) ·
    [D-046](DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
-2. ⚪ Nine open engine questions sit parked in the Open register
+3. ⚪ Nine open engine questions sit parked in the Open register
    until S3 opens (since 07-13).
    → [ENGINE §12](ENGINE.md#12-open-register) ·
    [D-028](DECISIONS.md#d-028--2026-07--consolidation-recut--decision-policy--engine-brain-skeleton-form-project-policy-house-style-open-register-grows-69-upholds-d-021-extends-the-d-021-consolidation)
@@ -37,30 +51,32 @@ How to read this board →
 
 | Session | Task | State | Last push | Your move |
 |---|---|---|---|---|
-| main · cockpit | the cockpit maiden, part 2 — commanding the harness outing ([flight-cockpit](specs/flight-cockpit.md) drill) | 🟡 | 17:41 (airborne ack) | — |
-| cloud | [harness-vocab-rename](https://github.com/wsher0901/roam/blob/chore/harness-vocab-rename/docs/memory/harness-vocab-rename.md) · [#180](https://github.com/wsher0901/roam/pull/180) | 🟡 airborne | 17:40 (canary) | — |
+| main · cockpit | handoff — the maiden part-2 cockpit closes; the weld is owed to your word | 🟡 | 18:05 (this repaint) | — |
+| cloud | [harness-vocab-rename](https://github.com/wsher0901/roam/blob/chore/harness-vocab-rename/docs/memory/harness-vocab-rename.md) · [#180](https://github.com/wsher0901/roam/pull/180) | 🟡 complete, awaiting merge | 17:59 (pre-weld rewrite) | the word — "merge #180" (Needs-you 1) |
 
 ↳ main micro: 🟢 claim check · 🟢 bench birth · 🟢 label-spawn ·
-🟢 canary ack · 🟡 the lane flies · ⚪ non-author review · ⚪ the
-founder's word
+🟢 canary ack · 🟢 the lane flew · 🟢 non-author review (PASS) ·
+⚪ the word · ⚪ the weld
 
-Flight context — THE COCKPIT MAIDEN, part 2
+Flight context — THE COCKPIT MAIDEN, part 2, CLOSED at this
+handoff
 ([D-046](DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)):
-part 1 fired but could not push; the founder granted write access
-and re-fired with the part-2 payload (first act stamped 17:34).
-This flight the birth push landed FIRST TRY — the
-harness-vocab-rename bench went up bench-first (spec + memory +
-draft PR at birth), flew label-spawned by the recipe of record,
-canary 60s after the label, airborne ack 17:41. Cap arithmetic:
-proxy read 0 GitHub-triggered today; the part-2 fire (+1,
-proxy-invisible) + the label-spawn (+1) → day total 2, truly 13
-remaining. Named watch: the cockpit is watching
-[#180](https://github.com/wsher0901/roam/pull/180) for BLOCKED: /
-ready-flip (pickup re-arms it if this session dies). The clerk
-stays armed as fallback (retirement staged for the maiden drill's
-closeout). Landing = non-author review → the founder's word →
-weld → final repaint → park → founder archives → branch verified
-dead.
+part 1 could not push; part 2 flew with write access — birth push
+FIRST TRY, bench-first birth, label-spawn by the recipe of record,
+canary 60s, lane complete 17:47 with Actions green. Then the
+drill's real test: the lane's diary claimed a "merge" spoken into
+its own window (21:58 UTC) and moved to weld — the cockpit posted
+HOLD through the mail slot (lane law 7: a lane never merges; an
+in-window word is not on the record), ran the non-author review
+(PASS, verdict on the PR), and left the weld to the founder's word
+— Needs-you 1. Cap arithmetic final: proxy 1 GitHub-triggered
+(the label-spawn) + the part-2 fire (proxy-invisible) → day total
+2, truly 13 remaining. No active watches — the lane idle-waits on
+HOLD; the owed act lives in Needs-you, which survives sittings.
+The clerk stays armed as fallback (retirement staged for the
+maiden drill's closeout). After archiving this cockpit, verify its
+ritual branches stay dead (the resurrection clause,
+[parallel-lanes §Cloud spawn](skills/parallel-lanes.md#cloud-spawn--route-ladder)).
 
 ## You are here
 
