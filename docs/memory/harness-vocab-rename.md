@@ -1,13 +1,14 @@
 ---
 type: memory
 id: harness-vocab-rename
-updated: 2026-07-20 · birth · cockpit
+updated: 2026-07-20 · canary claim · cloud lane
 ---
 # harness-vocab-rename — the `.claude/` harness files learn the D-046 vocabulary
 
 ## Status
-bench ready, no worker yet — birthed 2026-07-20 by the cockpit
-(maiden part 2; label-spawn to follow).
+claimed by cloud — 2026-07-20 21:40 UTC. Awaiting the airborne ack
+per
+[parallel-lanes §Canary](../skills/parallel-lanes.md#canary-handshake-both-sides).
 
 ## What this task is
 Finish the
