@@ -1274,3 +1274,133 @@ precedent.
 (the Hands passage, doctrine verbatim) ·
 [parallel-lanes §Vehicles](skills/parallel-lanes.md#vehicles) (the
 pointer line) · this entry and its task memory.
+
+## D-046 — 2026-07 — Flight Cockpit — the cockpit is the control tower online: full-authorship cloud command session, the no-solo-approval law, liftoff auto-fires the cockpit, CC-direct surface doctrine, clerk retirement staged, Remote Control demoted to backstop, the cockpit/control-tower rename (amends D-041 and D-043; upholds the lane law and the wake-lock)
+**Decision:** the away command architecture becomes ONE surface
+with full authorship. By clause:
+(1) THE COCKPIT — the control tower online: a cloud command
+session with FULL authorship under the laws — authors benches,
+births lanes via labels, external-reviews lane PRs, merges on the
+founder's word, repaints the board, appends
+[IDEAS](IDEAS.md) lines, answers process questions by derivation
+(clones at birth; never from memory). Bounded flight lifetime:
+born at liftoff's fire or a founder summon; landing = final
+repaint → park → founder archives → verify its branch stays dead
+(the
+[parallel-lanes confirmed clause](skills/parallel-lanes.md#cloud-spawn--route-ladder)).
+Turn-end reports are decision-shaped — what happened · what needs
+your word · options + recommendation — and each turn-end message
+doubles as the app push (the N-verified channel,
+[clerk-notify](specs/clerk-notify.md)). It inherits the lane
+mail-slot rules, never shares a file with a lane it spawned,
+states cap arithmetic when spawning, and throttles per the
+standing order under limits. Charter master:
+[SETUP §cloud accounts](SETUP.md#once-and-done--cloud-accounts).
+The cockpit holds the baton for its flight — liftoff closes the
+ground session before the fire, so the one-writer invariant
+holds; supersession and the wake-lock backstop any overlap.
+(2) NO-SOLO-APPROVAL, now law
+([LAWS §Workflow](LAWS.md#workflow-non-negotiable)): no diff
+merges on its author's own approval — independent review first,
+then the founder's word. Lane-authored diffs: any non-author
+session's review (cockpit or control tower) + the founder's word,
+lawful from anywhere. Self-authored diffs (tower- or
+cockpit-authored): external Web review before the word.
+Precedent: [#175](https://github.com/wsher0901/roam/pull/175) —
+this generalizes the standing external-review practice.
+(3) THE LIFTOFF FIRE
+([liftoff §6](skills/liftoff.md#6--ledger-handoff--fire-the-cockpit)):
+the away chooser's cloud branch now ends by composing the flight
+plan FROM THE BOARD at that moment (in flight · owed · needs the
+founder's word) and firing the cockpit routine with it as the
+payload (`npm run fire:cockpit`) — the founder never opens the
+routines page. One cap-run per outing, accepted (extends the
+A4-recorded trade,
+[clerk-autospawn](specs/clerk-autospawn.md)). `fire:clerk`
+remains the manual fallback until the staged retirement.
+(4) CC-DIRECT SURFACE DOCTRINE: Claude Code direct is the
+standard working mode at both seats — discuss, decide, author,
+bookkeep in-session; the paste-block relay retires as a
+REQUIREMENT and remains a tool when the founder chooses Web as a
+thinking room; Web's one mandatory job is the external review of
+self-authored diffs (clause 2). Manual:
+[HOME §The daily loop](HOME.md#the-daily-loop); the loop text in
+[SETUP §cloud accounts](SETUP.md#once-and-done--cloud-accounts).
+(5) CLERK RETIREMENT, staged — executed at the cockpit maiden
+drill's closeout, when the maiden greens: archive the clerk
+session (+ the branch tripwire), delete its routine, retire
+`fire:clerk`, annotate the clerk's SETUP sections (verified
+record preserved; superseded by this entry). Until then the clerk
+stays armed; this bench only annotates its sections "retirement
+staged (D-046)".
+(6) REMOTE CONTROL demoted to backstop
+([SETUP §Per machine](SETUP.md#per-machine-procedure-machine-setup-skill)):
+toggles stay installed on both machines, never the plan;
+machine-off is the standard away posture. (The founder's ②a,
+confirmed 2026-07-20 at the
+[shakedown-audit](specs/shakedown-audit.md) gate.)
+(7) VOCABULARY RENAME — cockpit = the cloud command session (a
+control tower, online); control tower = the ground Claude Code
+session (called "cockpit" before this entry). Renamed in LIVING
+doctrine only — LAWS, HOME, SETUP, docs/skills/, the memory
+TEMPLATE; docs/history/ and prior DECISIONS entries stay AS
+WRITTEN (immutable record;
+[HOME §Terms](HOME.md#terms) disambiguates old texts). Every
+renamed line is listed in the bench PR's description.
+(8) THE SUMMON BUTTON, staged
+([SETUP §Staged](SETUP.md#staged--turns-on-when-its-stage-opens)):
+a workflow_dispatch GitHub Action holding the fire call, token in
+Actions secrets — two taps in the GitHub mobile app summon a
+cockpit with no desk. Adopt at first need, verify-before-rely.
+**Why:** the Shakedown Flight's audit recorded the lived
+evidence: the founder could not reconstruct where-did-what across
+Friday's three surfaces (the attestation haze,
+[shakedown-audit](history/workshop/mechanism/shakedown-audit.md))
+— three narrow surfaces (clerk · Remote Control · GitHub app)
+each held a sliver of command, and none held authorship. One
+surface with full authorship removes the haze: everything the
+founder does away from the desk happens in one session that can
+actually act, reports decision-shaped, and leaves the ordinary
+paper trail. No-solo-approval had been practice since the first
+external review; [#175](https://github.com/wsher0901/roam/pull/175)
+proved it load-bearing (the external review caught the
+resurrection incident a self-check had missed) — a rule that
+catches what its author cannot see must be law, not habit.
+**Alternatives rejected:** ②b — full Remote Control retirement
+(the founder chose backstop: toggles are cheap insurance; the
+posture change, not the uninstall, is the decision) · a
+read-only cockpit (a clerk v2 — authorship is exactly what the
+haze evidence indicts; answering without acting keeps three
+surfaces alive) · keeping the clerk beside the cockpit
+permanently (two overlapping cloud surfaces re-create the haze;
+the clerk's verified record is preserved and its duties fold
+into the cockpit charter) · renaming inside history/ and old
+DECISIONS entries (the record is immutable; the vocabulary entry
+disambiguates instead).
+**Affects:** [LAWS §Workflow](LAWS.md#workflow-non-negotiable)
+(the no-solo-approval law + the rename) ·
+[LAWS §Parallel lanes & cloud](LAWS.md#parallel-lanes--cloud)
+(the rename) · [HOME](HOME.md) (vocabulary entries · the surface
+doctrine in the manual passages · the rename) ·
+[SETUP §cloud accounts](SETUP.md#once-and-done--cloud-accounts)
+(the cockpit charter master + routine recipe · the clerk
+sections' staged-retirement annotations · the surface-doctrine
+loop text) ·
+[SETUP §Per machine](SETUP.md#per-machine-procedure-machine-setup-skill)
+(Remote Control backstop) ·
+[SETUP §Staged](SETUP.md#staged--turns-on-when-its-stage-opens)
+(the summon button) ·
+[liftoff](skills/liftoff.md) (the cockpit fire) ·
+[parallel-lanes](skills/parallel-lanes.md) ·
+[handoff](skills/handoff.md) · [pickup](skills/pickup.md) ·
+[ship](skills/ship.md) · [go-remote](skills/go-remote.md) ·
+[machine-setup](skills/machine-setup.md) ·
+[memory TEMPLATE](memory/TEMPLATE.md) (the rename) ·
+`scripts/fire.mjs` + `package.json` + `.env.example` (the fire
+vehicle generalized) ·
+[D-041](#d-041--2026-07--delegation-architecture--the-away-mode-chooser-go-remote-tether-idle-wait-label-spawned-cloud-amends-d-032s-wake-lock-and-the-dispatch-law-upholds-the-baton-law-and-d-009)
+(the away chooser amended: the cloud branch fires the cockpit;
+go-remote demoted to backstop posture) ·
+[D-043](#d-043--2026-07--cloud-ignition--away-command-redesign--route-ladder-v2-ready-flip-then-label-is-the-recipe-of-record-api-ignition-and-the-cloud-clerk-staged-the-claude-app-the-single-away-surface-amends-d-041-upholds-the-lane-law-and-the-wake-lock)
+(the away surface amended: the clerk superseded-on-maiden by the
+cockpit) · this entry.

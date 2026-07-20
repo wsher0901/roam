@@ -6,7 +6,8 @@ status: living
 # Ship — closing a task
 
 Run yourself the moment a task's work is complete — never declare
-done in conversation without it. Cockpit only. For a finished lane:
+done in conversation without it. Control tower only. For a finished
+lane:
 pre-review its ready PR against FOUNDATION, the ROADMAP line, and the
 reliability law BEFORE surfacing it — then this same procedure.
 
@@ -48,7 +49,7 @@ verbatim alongside the summary — a finding never halts ship by
 itself; the founder weighs it at the gate. Invocation mechanics:
 run the reviewer synchronously, or instruct it in the spawn prompt
 to deliver the verdict AS A MESSAGE — a background agent's
-plain-text output never reaches the cockpit; the verdict must be
+plain-text output never reaches the control tower; the verdict must be
 sent, not printed (maiden-run finding, 2026-07-17).
 Then summarize in plain language and ask. NEVER merge without the
 founder's explicit yes — the conversational yes is the only gate;

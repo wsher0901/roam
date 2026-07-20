@@ -48,7 +48,7 @@ status: living
 
 ## Vault lens
 
-Per machine, once — say "apply the vault lens" in any cockpit
+Per machine, once — say "apply the vault lens" in any control-tower
 session. The procedure that phrase runs:
 1. Ensure docs/.obsidian/ exists (create it if missing — Obsidian
    adopts it on next launch).

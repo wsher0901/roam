@@ -40,7 +40,7 @@ Sources:
 |---|---|
 | What are we building, and for whom? | [FOUNDATION.md](FOUNDATION.md) |
 | What's the plan, in what order? | [ROADMAP.md](ROADMAP.md), read with the [Roadmap manual](#roadmap-manual) |
-| Where are we right now? | [DASHBOARD.md](DASHBOARD.md) — or just talk: cockpit sessions brief unprompted ([pickup](skills/pickup.md)) |
+| Where are we right now? | [DASHBOARD.md](DASHBOARD.md) — or just talk: control-tower sessions brief unprompted ([pickup](skills/pickup.md)) |
 | What are the working laws? | [LAWS.md](LAWS.md) |
 | Why did we choose X? | [DECISIONS.md](DECISIONS.md); engine rules consolidated: [ENGINE](ENGINE.md) |
 | What does the workshop run on? | [SETUP.md](SETUP.md) |
@@ -61,14 +61,20 @@ you the sit-down summary: what shipped while you were away, which
 parallel sessions flipped state, what needs you. You give the merge
 words the summary asked for, answer any BLOCKED question, and the
 fleet moves on without you. Then the main session: you and the
-cockpit drive one task — discussion in the Web chat, a paste block,
-Code executes, THE GATE, external review, your yes, the weld. Somewhere
+control tower drive one task — discuss, decide, and author
+in-session (CC-direct, the standard working mode); THE GATE, the
+independent review the no-solo-approval law requires (external Web
+review when the diff is self-authored), your yes, the weld.
+Somewhere
 in the afternoon you say "run T3–T6 in parallel" and four benches
 are born, four lanes fly; the pacing law keeps only Now plus one
 parallel slot on your desk. Leaving is one sentence: "done for
 today" parks every local lane and halts the machine; "keep working
-while I'm out" lifts the eligible ones to the cloud first; "go remote"
-tethers the machine to your phone instead, so you drive the fleet from
+while I'm out" lifts the eligible ones to the cloud and fires the
+cockpit — the control tower online — briefed with the flight plan;
+"go remote"
+tethers the machine to your phone instead (a backstop posture), so
+you drive the fleet from
 your pocket.
 Either way the board is repainted before the lights go out, and the
 next seat — tomorrow, or your phone tonight — starts by reading it.
@@ -93,9 +99,11 @@ a draft PR (bench-first); commits flow as the work's heartbeat; the
 moment a task's work is complete, ship runs itself and asks for the
 merge — your conversational yes is the only gate. When you're done
 for the day, one leaving phrase ("done for today", "bye") runs
-handoff; "take it to the cloud" runs liftoff instead and hands the
-open work to cloud lanes; "go remote" tethers the machine to your
-phone instead. The first two close the session; go remote keeps it
+handoff; "take it to the cloud" runs liftoff instead — it hands the
+open work to cloud lanes and fires the cockpit, your away command
+deck, briefed from the board; "go remote" tethers the machine to
+your phone instead (backstop — machine-off is the standard away
+posture). The first two close the session; go remote keeps it
 open. Walk away.
 
 Sources:
@@ -124,8 +132,14 @@ itself. Genuine uncertainty and judgment calls still come to you;
 housekeeping never does.
 
 Four tools, four verbs — and only one of them writes. Claude WEB
-thinks: discussion, trade-offs, design of ideas; everything it
-concludes leaves as one paste block (WEB-INSTRUCTIONS). Claude DESIGN
+reviews (and thinks): its one MANDATORY job is the external review
+of self-authored diffs (the no-solo-approval law,
+[LAWS §Workflow](LAWS.md#workflow-non-negotiable)); as an optional
+thinking room, what it concludes still travels as a paste block
+(WEB-INSTRUCTIONS) — a tool since
+[D-046](DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock),
+not a requirement: CC-direct is the standard working mode at both
+seats — discuss, decide, author, bookkeep in-session. Claude DESIGN
 draws: a no-write surface whose deliverables enter the repo only as
 extracted token values (DESIGN-KICKOFF). Claude CODE writes: every
 repo change flows through it as a PR. Obsidian READS: the vault is
@@ -157,7 +171,7 @@ Sources:
 | [data/SOURCES.md](data/SOURCES.md) | the vetted source registry, one entry per source slot | source-vetting tasks (T2–T6), consolidated at [T7](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code) | living; grades move under the demotion law |
 | [data/SCHEMA.md](data/SCHEMA.md) | human-readable mirror of the SQL schema | [V1.S1.T7](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code) | placeholder until T7 ships |
 | [specs/](specs/README.md) | per-task contracts + [TEMPLATE](specs/TEMPLATE.md) | born at task birth when discussion opened the task; [ship](skills/ship.md) finalizes | open → shipped or superseded; never deleted |
-| [memory/](memory/README.md) | in-flight task stories in the locked format ([TEMPLATE](memory/TEMPLATE.md)) | the task's own seat — cockpit at rituals, lanes at their four moments | lives on the task's branch; MOVES to history/ at ship |
+| [memory/](memory/README.md) | in-flight task stories in the locked format ([TEMPLATE](memory/TEMPLATE.md)) | the task's own seat — baton-holder at rituals, lanes at their four moments | lives on the task's branch; MOVES to history/ at ship |
 | [history/](history/README.md) | permanent shipped narratives, one per task | [ship](skills/ship.md)'s atomic weld | frozen after landing (link repairs only) |
 | [skills/](skills/) | ritual procedures + workshop manuals, vault-readable | founder-approved PRs + promoted gotchas | living |
 | docs/.obsidian/ | Obsidian's own workspace config | Obsidian | gitignored, never committed |
@@ -257,7 +271,8 @@ Sources:
 **memory/** holds each task's living story in the locked format
 (Status first), rewritten cognitively at rituals and at the lane
 trigger moments. It is how a session that has never seen the task
-before — tomorrow's cockpit, a rescuer of a dead lane — picks it up
+before — tomorrow's baton-holder, a rescuer of a dead lane — picks
+it up
 cold. Without it, every interruption would cost the whole context.
 
 Sources:
@@ -324,7 +339,8 @@ Sources:
 
 ### Task anatomy & lifecycle
 
-**Birth — bench-first.** Every task, cockpit included, starts
+**Birth — bench-first.** Every task, control tower and cockpit
+included, starts
 identically: freshly pulled main → branch → spec (when discussion
 opened the task) + memory stub → a DRAFT PR pushed to origin BEFORE
 any session works it (D-023; procedure: parallel-lanes §Bench-first
@@ -336,7 +352,7 @@ whole life.
 
 Sources:
 [D-023](DECISIONS.md#d-023--2026-07--universal-draft-pr-at-birth--micro-pr-carve-out-recut-amends-d-002-d-008-d-020)
-[parallel-lanes §Bench-first birth](skills/parallel-lanes.md#bench-first-birth-cockpit-procedure)
+[parallel-lanes §Bench-first birth](skills/parallel-lanes.md#bench-first-birth-baton-holder-procedure)
 
 **Work — the heartbeat.** Commits are the heartbeat; every commit is
 pushed. Small steps live as checkboxes in the spec's Done-means (or
@@ -467,7 +483,8 @@ state. Each fires itself; the founder never has to remember one.
 running handoff in QUIET mode.)
 
 **pickup** — fires unprompted on the founder's first message of a
-cockpit session (dispatched lanes skip it). It claims the baton,
+control-tower session (dispatched lanes skip it). It claims the
+baton,
 reads ROADMAP + DASHBOARD + every active memory + live git,
 self-heals stranded micro-PRs, repaints the board if stale, and
 renders the sit-down briefing: you-are-here bars, cloud lanes, focus
@@ -519,9 +536,13 @@ Sources:
 the session. It runs a FULL handoff first (origin must be whole
 before anything spawns), triages every open item through the
 eligibility gate, births anything unbirthed bench-first, spawns
-eligible lanes cloud-side, verifies each canary handshake, and
-repaints the board as the flight plan — every lane airborne, held, or
-failed, each with its reason. From the trigger phrase on it needs
+eligible lanes cloud-side, verifies each canary handshake, repaints
+the board as the flight plan — every lane airborne, held, or
+failed, each with its reason — and ends by FIRING THE COCKPIT with
+that flight plan as its payload
+([D-046](DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)),
+handing it the baton for the flight. From the trigger phrase on it
+needs
 zero mid-ritual approvals: the founder is leaving.
 
 Sources:
@@ -529,11 +550,14 @@ Sources:
 
 ### The baton
 
-The cockpit is the ONE session the founder is actively driving — the
+The control tower is the ONE session the founder is actively
+driving — the
 only seat that runs rituals, writes main's bookkeeping, and repaints
 the board. The baton is the right to be that session: claimed by
 pickup on fresh origin, released by FULL handoff or liftoff (both of
-which close the session). Between cockpits the baton is dormant —
+which close the session — liftoff's fire hands the baton to the
+cockpit it summons, the control tower online, for the length of the
+flight). Between control towers the baton is dormant —
 nobody holds it, and lanes fly on regardless (baton law).
 
 Sources:
@@ -543,7 +567,8 @@ Sources:
 [baton law](LAWS.md#parallel-lanes--cloud)
 
 Why exactly one: the board and main's bookkeeping have a single
-writer at a time precisely so they can be trusted. Two cockpits
+writer at a time precisely so they can be trusted. Two control
+towers
 would mean two sessions repainting the same surface and running
 rituals against each other — the classic two-truths failure this
 architecture exists to prevent. The founder can sit anywhere, but
@@ -573,10 +598,12 @@ rules, so a task's artifacts never betray where they were made (the
 seat-invariance law — only ritual stamps name seats). Mechanics live
 in parallel-lanes; the shape of the law, in prose:
 
-The cockpit births every lane bench-first — branch, spec, memory
+The baton-holder (control tower or cockpit) births every lane
+bench-first — branch, spec,
+memory
 stub, draft PR, all verified on origin BEFORE any session exists.
 Then the canary handshake: the lane's first act is one trivial pushed
-commit (its memory Status → "claimed"); the cockpit answers by
+commit (its memory Status → "claimed"); the baton-holder answers by
 writing "airborne" into that same memory — or "spawn failed → run
 locally" into memory and the lane's Sessions row (+ Needs-you mirror)
 if no canary arrives. A lane that sees failed/aborted, or silence past the
@@ -597,7 +624,8 @@ While flying, a lane pushes every commit, never shares a file with
 any sibling (so merges can't collide), keeps its own memory at the
 four moments, and speaks only through its PR — `BLOCKED:` comments
 for questions, the ready-flip plus plain summary for completion.
-Those pushed commits are also the lane's heartbeat: the cockpit
+Those pushed commits are also the lane's heartbeat: the
+baton-holder
 reads them for liveness and never adopts or prunes a lane whose
 heartbeat is fresh — reclaiming a bench takes a terminal Status or
 real silence past the staleness window.
@@ -611,14 +639,14 @@ What a lane may touch:
 |---|---|
 | its own branch — code, spec, its memory | writes freely, pushing every commit |
 | its own PR | speaks through it: `BLOCKED:` comments, ready-flip, summary |
-| main — the [board](DASHBOARD.md), [IDEAS](IDEAS.md), [ROADMAP](ROADMAP.md) ticks, [history/](history/README.md), any merge | NEVER — cockpit rituals own all of main's bookkeeping |
+| main — the [board](DASHBOARD.md), [IDEAS](IDEAS.md), [ROADMAP](ROADMAP.md) ticks, [history/](history/README.md), any merge | NEVER — baton-holder rituals own all of main's bookkeeping |
 
 Why the ROADMAP tick is the founder's line: the checkbox is the only
 stored task state, and it flips only inside ship's weld, downstream
 of the founder's yes. If a lane could tick it, "done" would stop
 meaning "founder-approved and merged" — the one meaning it must keep.
 Ideas a lane surfaces reach IDEAS the same way: harvested by a
-cockpit ritual, never written by the lane.
+baton-holder ritual, never written by the lane.
 
 Sources:
 [ship](skills/ship.md)
@@ -645,9 +673,13 @@ background agent or a worktree session — while you drive the main
 task. Are you leaving? Then ask whether work should continue. If
 nothing continues, handoff parks the shop and closes the session. If
 work continues, one more question decides: is the machine staying on?
-If yes, go remote — the tether: the cockpit relocates to your phone,
-nothing is parked, nothing is closed, the baton stays put. If the
-machine is going dark, liftoff lifts the eligible work to the cloud.
+If the machine is going dark — the standard away posture since
+[D-046](DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+— liftoff lifts the eligible work to the cloud and fires the
+cockpit, briefed from the board. If it must stay on, go remote —
+the tether, the backstop posture: the control tower relocates to
+your phone,
+nothing is parked, nothing is closed, the baton stays put.
 
 ```mermaid
 flowchart TD
@@ -660,7 +692,10 @@ flowchart TD
 ```
 
 Each away leaf carries its own notification channel and reply loop.
-The tether pushes to the Claude app; you answer a blocked lane right
+After liftoff the cockpit IS the channel: its decision-shaped
+turn-end reports arrive as Claude-app pushes, and your replies in
+that one thread are command — one surface, full authorship. The
+tether pushes to the Claude app; you answer a blocked lane right
 in the app and it resumes in-thread. A cloud lane pushes through
 GitHub; you answer as a PR comment and the routine feeds your reply to
 the running session. After handoff there is no channel — and that is
@@ -754,7 +789,7 @@ Skills are model-invoked: the stub's description is what the model
 reads to know WHEN to fire — leaving phrases summon handoff,
 take-it-to-the-cloud phrasing summons liftoff, task completion
 summons ship, a roadmap-level statement summons decide, and the
-session-start hook directs cockpit sessions to render pickup
+session-start hook directs control-tower sessions to render pickup
 unprompted. Rituals fire on moments, not remembered commands — though
 the founder may invoke one directly when the invocation carries
 something: `/handoff` at the end of a leaving message is the inline
@@ -784,7 +819,8 @@ rituals, git outranks it. Glyphs: 🟢 done · 🟡 ongoing · 🔴 issue
 done · ░ remaining). Stage-map colors: green done · blue active ·
 orange locked behind a dependency · gray queued. Sections: Needs you
 (your action queue — one sentence per item, receipts on the line
-below) · Sessions (every live session, one table — main · cockpit /
+below) · Sessions (every live session, one table — main · control
+tower /
 local parallel / cloud — with what each needs from you) · You are
 here (version and stage bars) · Stage map (dependencies) · Claude Web
 + Design discussion (open chats by their exact titles, so you can
@@ -921,13 +957,24 @@ the link for the full story.
   QUIET is
   [ship](skills/ship.md)'s tail — repaint and recommend only, the
   session stays open. Home: [handoff](skills/handoff.md).
-- **cockpit** — the one session the founder is actively driving;
-  holder of the baton, sole runner of rituals and writer of main's
-  bookkeeping. Home: [§The baton](#the-baton) ·
+- **control tower** — the ground Claude Code session the founder
+  is actively driving; holder of the baton, sole runner of rituals
+  and writer of main's bookkeeping. Called "cockpit" before
+  [D-046](DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+  — [history/](history/README.md) files and DECISIONS entries
+  written before D-046 use "cockpit" in this ground meaning. Home:
+  [§The baton](#the-baton) ·
   [LAWS §Parallel lanes & cloud](LAWS.md#parallel-lanes--cloud).
-- **the baton** — the right to be the cockpit: claimed by
+- **cockpit** — the cloud command session: a control tower,
+  online, with full authorship; born at
+  [liftoff](skills/liftoff.md)'s fire (briefed by the
+  board-derived flight plan) or a founder summon, holding the
+  baton for its bounded flight. Charter:
+  [SETUP §cloud accounts](SETUP.md#once-and-done--cloud-accounts).
+- **the baton** — the right to be the control tower: claimed by
   [pickup](skills/pickup.md) on fresh origin, released by FULL
-  [handoff](skills/handoff.md) or [liftoff](skills/liftoff.md),
+  [handoff](skills/handoff.md) or [liftoff](skills/liftoff.md)
+  (whose fire hands it to the cockpit for the flight),
   dormant between sittings. Home: [§The baton](#the-baton).
 - **close-lock** — the physical end of a session: FULL
   [handoff](skills/handoff.md) and [liftoff](skills/liftoff.md) write
@@ -963,7 +1010,8 @@ the link for the full story.
   [parallel-lanes](skills/parallel-lanes.md#the-lane-law-seat-blind--identical-local-or-cloud).
 - **canary handshake** — a lane's first act: one trivial pushed
   commit proving it can reach origin, acknowledged (or failed) by
-  the cockpit in the lane's memory before real work starts. Home:
+  the baton-holder in the lane's memory before real work starts.
+  Home:
   [parallel-lanes §Canary
   handshake](skills/parallel-lanes.md#canary-handshake-both-sides).
 - **heartbeat / liveness** — commits are the heartbeat: a bench
@@ -976,7 +1024,7 @@ the link for the full story.
   [handoff](skills/handoff.md) stands a local lane down: rescue-save
   (a `wip:` commit + push) ONLY if the tree holds unsaved work, then
   one stamped Status line in the lane's memory — the only moment the
-  cockpit may touch a lane mid-flight. Home:
+  control tower may touch a lane mid-flight. Home:
   [LAWS §Parallel lanes & cloud](LAWS.md#parallel-lanes--cloud) ·
   [handoff §1.5](skills/handoff.md#15--park-the-local-lanes-full-only).
 - **wake-lock** — a lane's first act on ANY wake or resume: re-read
@@ -987,21 +1035,27 @@ the link for the full story.
   parking](skills/parallel-lanes.md#wake-lock--parking).
 - **respawn / adopt** — [liftoff](skills/liftoff.md) re-flying a
   parked lane on its EXISTING bench: no second birth; the worker
-  canaries on the same branch and the cockpit's ack overwrites the
+  canaries on the same branch and the baton-holder's ack
+  overwrites the
   parked Status. Home: [parallel-lanes
   §Respawn](skills/parallel-lanes.md#respawn-on-an-existing-bench-liftoff-adopt).
 - **the chooser (dispatch & away-mode)** — one variable per fork: at
   the keyboard → LOCAL lane; leaving + nothing continues → handoff;
-  leaving + continues + machine on → go-remote; leaving + continues +
-  machine dark → liftoff. Cloud only via liftoff's sanctioned routes;
+  leaving + continues + machine dark → liftoff (the standard away
+  posture — it fires the cockpit); leaving + continues + machine
+  must stay on → go-remote (backstop). Cloud only via liftoff's
+  sanctioned routes;
   nothing is ever silently parked — every held, failed, or waiting
   item is written into its memory and the board. Home:
   [§Delegation](#delegation--the-away-mode-chooser) ·
   [LAWS §Workflow](LAWS.md#workflow-non-negotiable).
 - **go-remote / tether** — the away-mode where the machine stays on
-  and the cockpit relocates to the founder's phone via Remote
+  and the control tower relocates to the founder's phone via Remote
   Control. A posture, not a leaving ritual: parks nothing, closes
-  nothing, keeps the baton. Home: [go-remote](skills/go-remote.md) ·
+  nothing, keeps the baton; a BACKSTOP since
+  [D-046](DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+  — machine-off + the cockpit is the plan.
+  Home: [go-remote](skills/go-remote.md) ·
   [§Delegation](#delegation--the-away-mode-chooser).
 - **idle-wait** — a blocked lane on a phone-reachable vehicle (cloud
   session · RC-tethered local session) stays alive and waits for the
@@ -1014,8 +1068,9 @@ the link for the full story.
   [parallel-lanes §Cloud
   spawn](skills/parallel-lanes.md#cloud-spawn--route-ladder).
 - **liftoff** — the leaving ritual's cloud variant: FULL handoff,
-  then triage, birth, spawn, handshake-verify, and a board repaint
-  that doubles as the flight plan. Home:
+  then triage, birth, spawn, handshake-verify, a board repaint
+  that doubles as the flight plan — and the cockpit fire, with
+  that flight plan as the payload. Home:
   [liftoff](skills/liftoff.md).
 - **memory file** — docs/memory/&lt;id&gt;.md: a task's living
   story in the locked format (Status first), on the task's branch,

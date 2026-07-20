@@ -41,9 +41,10 @@ founder.
 - Never work on main. Every task is born bench-first: freshly pulled
   main → branch feat/ | fix/ | docs/ | chore/<id>-<slug> → spec (if
   the task needed discussion) + memory stub as first commits →
-  **draft PR at birth**, every task, cockpit included — the task is
-  public and rescuable from its first minute; no work ever exists in
-  only one place → push every commit.
+  **draft PR at birth**, every task, control tower and cockpit
+  included — the
+  task is public and rescuable from its first minute; no work ever
+  exists in only one place → push every commit.
 - One task = one branch = one PR.
 - NEVER merge without the founder's explicit approval. Ready = tests +
   linter green, PR flipped ready, plain-language summary (+ preview
@@ -53,6 +54,15 @@ founder.
   and/or [IDEAS.md](IDEAS.md), written by a ritual (handoff · liftoff
   · ship's tail · pickup's stale-repaint) — merges immediately
   without asking.
+- No-solo-approval
+  ([D-046](DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock),
+  generalizing the standing external-review practice — precedent
+  [#175](https://github.com/wsher0901/roam/pull/175)): no diff
+  merges on its author's own approval. Independent review first,
+  then the founder's word. Lane-authored diffs: any non-author
+  session's review (cockpit or control tower) + the founder's word
+  is lawful from anywhere. Self-authored diffs (tower- or
+  cockpit-authored): external Web review before the word.
 - Leaving phrases ("done for today", "bye", "wrapping up") → run the
   full handoff immediately, unasked. "Take it to the cloud" (or any
   equivalent) → run liftoff. Both close the session. Leaving language
@@ -68,8 +78,12 @@ founder.
   the heartbeat.
 - Dispatch & away-mode (the chooser): mid-session parallelizable work
   → LOCAL lane (background agents / worktrees). Leaving with nothing
-  continuing → handoff. Leaving with work continuing: machine stays
-  on → go-remote (the tether) · machine going dark → liftoff (cloud).
+  continuing → handoff. Leaving with work continuing: machine going
+  dark → liftoff (cloud — fires the cockpit; the standard away
+  posture) · machine staying on → go-remote (the tether — a backstop
+  posture since
+  [D-046](DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock),
+  never the plan).
   Cloud dispatch only through liftoff's sanctioned routes
   ([parallel-lanes §Cloud spawn](skills/parallel-lanes.md#cloud-spawn--route-ladder)) —
   never an ad-hoc CLI spawn. Nothing is ever silently parked: every
@@ -118,11 +132,12 @@ history/ keeps the meaning.
 
 ## Parallel lanes & cloud
 The LANE LAW (seat-blind — identical local or cloud): every lane
-1. is born bench-first BY THE COCKPIT — branch, spec, memory stub,
-   draft PR laid on origin BEFORE the lane exists: public and
+1. is born bench-first BY THE BATON-HOLDER (control tower or
+   cockpit) — branch, spec, memory
+   stub, draft PR laid on origin BEFORE the lane exists: public and
    rescuable from its first minute;
 2. runs the canary handshake before real work — its first act is a
-   trivial push; the cockpit writes airborne-or-failed into the
+   trivial push; the baton-holder writes airborne-or-failed into the
    pre-birthed memory; a lane seeing failed/aborted, a Status it
    does not own (parked · respawned · superseded), or silence past
    the timeout (constants:
@@ -144,7 +159,8 @@ Seat-invariance law: a task's artifacts must be indistinguishable by
 seat; only ritual stamps name seats.
 - Park protocol: handoff FULL parks every live local lane — the park
   (a rescue-save if needed, then ONE stamped Status line) is the only
-  moment the cockpit may touch a lane's tree or diary mid-flight;
+  moment the control tower may touch a lane's tree or diary
+  mid-flight;
   liftoff is the only road from parked to cloud. Mechanics:
   [handoff §1.5](skills/handoff.md#15--park-the-local-lanes-full-only).
 - Idle-wait: a blocked lane on a resumable, phone-reachable vehicle
@@ -154,13 +170,18 @@ seat; only ritual stamps name seats.
   done · spawn failure · genuine error · a Status the lane does not
   own. Mechanics:
   [parallel-lanes §Wake-lock & parking](skills/parallel-lanes.md#wake-lock--parking).
-Baton law: exactly one cockpit — the session the founder is driving;
-the baton is the right to be that one driving session.
+Baton law: exactly one control tower — the session the founder is
+driving; the baton is the right to be that one driving session.
+The BATON-HOLDER — the commanding session; control tower on the
+ground, cockpit in flight.
 Claimed by pickup on fresh origin; released by FULL handoff or
-liftoff (which close the session). A session whose
+liftoff (which close the session — liftoff's fire hands the baton
+to the cockpit it summons, the control tower online:
+[D-046](DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)).
+A session whose
 [DASHBOARD](DASHBOARD.md) seat-stamp is superseded self-closes:
-push, write nothing. Between cockpits the baton is dormant; lanes
-fly on.
+push, write nothing. Between control towers the baton is dormant;
+lanes fly on.
 Cloud lanes launch only through liftoff's sanctioned routes; never
 end a session before its work is on origin.
 Mechanics: [parallel-lanes](skills/parallel-lanes.md) ·
