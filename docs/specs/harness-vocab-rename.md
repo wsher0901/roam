@@ -5,6 +5,7 @@ title: Harness vocab rename — `.claude/` learns the D-046 vocabulary
 status: open
 stage: workshop
 branch: chore/harness-vocab-rename
+pr: 180
 opened: 2026-07-20
 ---
 
