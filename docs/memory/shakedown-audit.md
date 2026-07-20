@@ -86,6 +86,24 @@ lesson: the first re-check read exit 0 because a `tail` pipe
 swallowed node's code — the foreground-and-quote rule (finding 6)
 applies to the auditor too.
 
+Findings 3 and 4 closed on the existing record, no new digging
+needed — which is itself the story: the shared-SETUP construction
+(lane A owned the file, lane B's two declared doc mentions landed
+as recorded cockpit acts in #171's weld) proved the lane law's
+never-share-a-file rule can be engineered at bench construction
+rather than hoped for; and the 07-17 cloud-proxy 403 dissolved the
+moment a founder-seat hand tried the same delete — the cloud rail
+was the actor all along (sessions may not delete claude/ refs),
+closing C7 and retroactively explaining Friday's "Everything
+up-to-date" no-op as the proxy's polite half of the same refusal.
+A gate-time note for the DEFECT ledger: ship §6's critic ran
+NATIVELY this sitting — the reviewer agent-type registered without
+the fallback, first success since the defect was graduated; the
+IDEAS line stays open per the mandate, the datum recorded here for
+its eventual diagnosis. The critic's one notable finding (this
+story's own missing narration of findings 3–4) was repaired before
+the gate — the paragraph above is that repair.
+
 Grading stayed strictly evidence-or-attest: A1, N2, N3 green from
 the live record; A4's proxy-blindness confirmed by the cap
 arithmetic (count:runs read 2, true total 3); six boxes carry
