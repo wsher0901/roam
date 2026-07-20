@@ -155,6 +155,18 @@ retirement) confirmed at the shakedown-audit gate.
       Deliberately untouched per the fold: handoff §1.5's
       local-park line (a ground act) · specs/ old-meaning
       "cockpit" (the immutable-record rule).
+- [x] Second fold, on the founder's "fold them" (2026-07-20,
+      after the critic's delta verdict): the remaining
+      lane-command actor lines widened to the baton-holder —
+      parallel-lanes' §Canary side label, the §Bench-first birth
+      heading (now "baton-holder procedure"; HOME's anchor
+      repointed), and the IDEAS-harvest line; HOME's mirrors —
+      the §Birth twin ("control tower and cockpit included"),
+      the §Lanes births/ack/heartbeat restatement (first use
+      glossed), the lane-table bookkeeping row, the
+      harvested-by line, and the canary-handshake + respawn term
+      entries' ack actor. Ground-act and board-naming lines
+      stay "control tower".
 - [ ] Full CI mirror green; the pushed commit's Actions run
       green. (Ticked at the weld, whenever the founder's merge
       word lands.)

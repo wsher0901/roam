@@ -91,12 +91,17 @@ parallel-lanes' lane-law/respawn-ack/wait lines, and the memory
 TEMPLATE's six writer cells. Two lines stay put deliberately:
 handoff §1.5's local park remains "control tower" (parking a LOCAL
 lane's tree is physically a ground act), and specs/ keep their
-old-meaning "cockpit" under the immutable-record rule. Two
-non-listed occurrences observed and left for the founder's word,
-surfaced at the gate: parallel-lanes §Canary's side label
-("Control-tower side:") and HOME §Lanes' manual restatement of the
-birth/ack acts — both reading aids to the now-amended law, not the
-law itself.
+old-meaning "cockpit" under the immutable-record rule. The critic's
+delta re-run then flagged the fold's own tail: the §Canary side
+label still said "Control-tower side:" (a live self-contradiction
+six lines under the just-widened wait line), the §Bench-first
+birth heading still read "(control-tower procedure)" — a genuine
+miss, the very act the amendment widened — plus the IDEAS-harvest
+line and HOME's §Lanes restatements. The founder's "fold them"
+closed the set: all lane-command actors now read baton-holder
+(first use per file glossed), the heading's anchor repointed in
+HOME, while ground acts (pickup, handoff's park, go-remote's
+relocation) and the board's column naming keep "control tower".
 
 The fire vehicle generalized cleanly: `fire-clerk.mjs` →
 `fire.mjs` with a target argument selecting the CLERK_/COCKPIT_

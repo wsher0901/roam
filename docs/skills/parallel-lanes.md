@@ -42,7 +42,7 @@ Sources:
 [IDEAS](../IDEAS.md)
 [ROADMAP](../ROADMAP.md)
 
-## Bench-first birth (control-tower procedure)
+## Bench-first birth (baton-holder procedure)
 1. Pull main fresh.
 2. Branch `<prefix>/<id>-<slug>`.
 3. Spec `docs/specs/<id>-<slug>.md` — only if discussion opened the
@@ -117,7 +117,7 @@ within the window means the session expired — respawn per
   (parked · respawned · superseded), or no acknowledgment within that
   window (~10 min cloud / ~2 local): self-terminate cleanly (push
   whatever exists, stop).
-- Control-tower side: watch for the canary. On arrival, write "airborne ·
+- Baton-holder side: watch for the canary. On arrival, write "airborne ·
   <vehicle or url> · <date>" into the lane's memory Status and push.
   No canary within ~10 minutes (cloud) or ~2 (local): write "spawn
   failed <date> — <reason> → run locally" into the memory and record
@@ -299,7 +299,7 @@ reliability law BEFORE surfacing it to the founder; then ship takes
 over. Flip draft→ready ONLY after `gh pr checks` reports the pushed
 commit's Actions run green — local green never suffices.
 Ideas-surfaced harvesting: any "Ideas surfaced" lines in a lane's
-memory move to IDEAS at the next control-tower ritual — lanes never
+memory move to IDEAS at the next baton-holder ritual — lanes never
 write
 main themselves.
 

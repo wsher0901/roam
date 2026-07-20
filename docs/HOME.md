@@ -339,7 +339,8 @@ Sources:
 
 ### Task anatomy & lifecycle
 
-**Birth — bench-first.** Every task, control tower included, starts
+**Birth — bench-first.** Every task, control tower and cockpit
+included, starts
 identically: freshly pulled main → branch → spec (when discussion
 opened the task) + memory stub → a DRAFT PR pushed to origin BEFORE
 any session works it (D-023; procedure: parallel-lanes §Bench-first
@@ -351,7 +352,7 @@ whole life.
 
 Sources:
 [D-023](DECISIONS.md#d-023--2026-07--universal-draft-pr-at-birth--micro-pr-carve-out-recut-amends-d-002-d-008-d-020)
-[parallel-lanes §Bench-first birth](skills/parallel-lanes.md#bench-first-birth-control-tower-procedure)
+[parallel-lanes §Bench-first birth](skills/parallel-lanes.md#bench-first-birth-baton-holder-procedure)
 
 **Work — the heartbeat.** Commits are the heartbeat; every commit is
 pushed. Small steps live as checkboxes in the spec's Done-means (or
@@ -597,11 +598,12 @@ rules, so a task's artifacts never betray where they were made (the
 seat-invariance law — only ritual stamps name seats). Mechanics live
 in parallel-lanes; the shape of the law, in prose:
 
-The control tower births every lane bench-first — branch, spec,
+The baton-holder (control tower or cockpit) births every lane
+bench-first — branch, spec,
 memory
 stub, draft PR, all verified on origin BEFORE any session exists.
 Then the canary handshake: the lane's first act is one trivial pushed
-commit (its memory Status → "claimed"); the control tower answers by
+commit (its memory Status → "claimed"); the baton-holder answers by
 writing "airborne" into that same memory — or "spawn failed → run
 locally" into memory and the lane's Sessions row (+ Needs-you mirror)
 if no canary arrives. A lane that sees failed/aborted, or silence past the
@@ -622,8 +624,8 @@ While flying, a lane pushes every commit, never shares a file with
 any sibling (so merges can't collide), keeps its own memory at the
 four moments, and speaks only through its PR — `BLOCKED:` comments
 for questions, the ready-flip plus plain summary for completion.
-Those pushed commits are also the lane's heartbeat: the control
-tower
+Those pushed commits are also the lane's heartbeat: the
+baton-holder
 reads them for liveness and never adopts or prunes a lane whose
 heartbeat is fresh — reclaiming a bench takes a terminal Status or
 real silence past the staleness window.
@@ -637,14 +639,14 @@ What a lane may touch:
 |---|---|
 | its own branch — code, spec, its memory | writes freely, pushing every commit |
 | its own PR | speaks through it: `BLOCKED:` comments, ready-flip, summary |
-| main — the [board](DASHBOARD.md), [IDEAS](IDEAS.md), [ROADMAP](ROADMAP.md) ticks, [history/](history/README.md), any merge | NEVER — control-tower rituals own all of main's bookkeeping |
+| main — the [board](DASHBOARD.md), [IDEAS](IDEAS.md), [ROADMAP](ROADMAP.md) ticks, [history/](history/README.md), any merge | NEVER — baton-holder rituals own all of main's bookkeeping |
 
 Why the ROADMAP tick is the founder's line: the checkbox is the only
 stored task state, and it flips only inside ship's weld, downstream
 of the founder's yes. If a lane could tick it, "done" would stop
 meaning "founder-approved and merged" — the one meaning it must keep.
 Ideas a lane surfaces reach IDEAS the same way: harvested by a
-control-tower ritual, never written by the lane.
+baton-holder ritual, never written by the lane.
 
 Sources:
 [ship](skills/ship.md)
@@ -1008,7 +1010,7 @@ the link for the full story.
   [parallel-lanes](skills/parallel-lanes.md#the-lane-law-seat-blind--identical-local-or-cloud).
 - **canary handshake** — a lane's first act: one trivial pushed
   commit proving it can reach origin, acknowledged (or failed) by
-  the control tower in the lane's memory before real work starts.
+  the baton-holder in the lane's memory before real work starts.
   Home:
   [parallel-lanes §Canary
   handshake](skills/parallel-lanes.md#canary-handshake-both-sides).
@@ -1033,7 +1035,7 @@ the link for the full story.
   parking](skills/parallel-lanes.md#wake-lock--parking).
 - **respawn / adopt** — [liftoff](skills/liftoff.md) re-flying a
   parked lane on its EXISTING bench: no second birth; the worker
-  canaries on the same branch and the control tower's ack
+  canaries on the same branch and the baton-holder's ack
   overwrites the
   parked Status. Home: [parallel-lanes
   §Respawn](skills/parallel-lanes.md#respawn-on-an-existing-bench-liftoff-adopt).
