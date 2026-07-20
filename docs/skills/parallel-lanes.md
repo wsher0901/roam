@@ -16,10 +16,11 @@ Sources:
 ## The lane law (seat-blind — identical local or cloud)
 Every lane
 
-1. is born bench-first BY THE CONTROL TOWER — branch, spec, memory
+1. is born bench-first BY THE BATON-HOLDER (control tower or
+   cockpit) — branch, spec, memory
    stub, draft PR pushed to origin BEFORE any session exists;
 2. runs the canary handshake before real work — its first act is a
-   trivial push; the control tower writes airborne-or-failed into the
+   trivial push; the baton-holder writes airborne-or-failed into the
    pre-birthed memory; a lane seeing failed/aborted, a Status it does not
    own (parked · respawned · superseded), or no acknowledgment,
    self-terminates;
@@ -62,7 +63,7 @@ presumes a RECLAIMABLE bench per [§Liveness](#liveness--live-vs-reclaimable)
 — a live heartbeat is never adopted. The
 cloud worker's first act is the canary ON that branch — memory
 Status → "claimed for respawn by <vehicle> — <date>" — then WAIT;
-the control tower's ack overwrites the parked Status with "airborne ·
+the baton-holder's ack overwrites the parked Status with "airborne ·
 <url> · <date>". Everything after — diary, PR speech, landing — is
 the ordinary lane law.
 
@@ -110,7 +111,7 @@ within the window means the session expired — respawn per
 [§Respawn](#respawn-on-an-existing-bench-liftoff-adopt).
 - Lane side: first act on waking is one trivial commit — memory
   Status → "claimed by <vehicle> — <date>" — pushed to its branch;
-  then WAIT for the control tower's acknowledgment in memory before
+  then WAIT for the baton-holder's acknowledgment in memory before
   real
   work. Seeing "failed/aborted", a Status this lane does not own
   (parked · respawned · superseded), or no acknowledgment within that

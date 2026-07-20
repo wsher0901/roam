@@ -144,6 +144,17 @@ retirement) confirmed at the shakedown-audit gate.
 - [x] The surface doctrine lands in HOME + SETUP's loop text;
       the clerk sections carry "retirement staged (D-046)"; RC
       demoted in SETUP §Per machine; the summon button staged.
+- [x] Gate-fold amendment (2026-07-20, from #177's external Web
+      review): the BATON-HOLDER defined once in LAWS beside the
+      baton law (the commanding session; control tower on the
+      ground, cockpit in flight); the lane-command actor becomes
+      "the baton-holder" in LAWS lane-law 1–2 + the bench-first
+      line ("control tower and cockpit included"), parallel-lanes
+      (the two lane-law lines · the respawn-ack · the lane's wait
+      line), and the memory TEMPLATE's six writer cells.
+      Deliberately untouched per the fold: handoff §1.5's
+      local-park line (a ground act) · specs/ old-meaning
+      "cockpit" (the immutable-record rule).
 - [ ] Full CI mirror green; the pushed commit's Actions run
       green. (Ticked at the weld, whenever the founder's merge
       word lands.)

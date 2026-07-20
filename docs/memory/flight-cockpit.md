@@ -9,11 +9,11 @@ updated: 2026-07-20 · ship · work PC
 ## Status
 
 Complete, awaiting merge — 2026-07-20, at THE GATE on the work-PC
-control tower. Full CI mirror green; the fire vehicle's failure
-paths repro'd honest for both targets. This bench is
-tower-authored, so the very law it ships routes it through
-external Web review before the founder's merge word. DO NOT MERGE
-without both.
+control tower. The external Web review is DONE: its one doctrine
+amendment (the baton-holder fold) is folded exactly as given and
+re-pushed; the critic re-ran; holding for the founder's merge word
+on the new head. Full CI mirror green; the fire vehicle's failure
+paths repro'd honest for both targets.
 
 ## What this task is
 
@@ -77,6 +77,26 @@ rules; the clerk stays armed as fallback until its staged
 retirement). One found gap repaired in passing: `.env.example`
 still taught the exact id-transcription trap that caused fire-1's
 400 — it now carries the `trig_` note.
+
+The external Web review returned one doctrine amendment, folded at
+the gate 2026-07-20: the rename had quietly narrowed the lane law
+against D-046's own grant — the decide and the charter give the
+cockpit lane command, but the renamed texts assigned birthing and
+acking to "the control tower" alone. The fix the review chose is
+the one the baton clause already implied: define the BATON-HOLDER
+once in LAWS beside the baton law (the commanding session; control
+tower on the ground, cockpit in flight) and make it the
+lane-command actor — LAWS lane-law 1–2 and the bench-first line,
+parallel-lanes' lane-law/respawn-ack/wait lines, and the memory
+TEMPLATE's six writer cells. Two lines stay put deliberately:
+handoff §1.5's local park remains "control tower" (parking a LOCAL
+lane's tree is physically a ground act), and specs/ keep their
+old-meaning "cockpit" under the immutable-record rule. Two
+non-listed occurrences observed and left for the founder's word,
+surfaced at the gate: parallel-lanes §Canary's side label
+("Control-tower side:") and HOME §Lanes' manual restatement of the
+birth/ack acts — both reading aids to the now-amended law, not the
+law itself.
 
 The fire vehicle generalized cleanly: `fire-clerk.mjs` →
 `fire.mjs` with a target argument selecting the CLERK_/COCKPIT_

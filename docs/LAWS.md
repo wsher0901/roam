@@ -41,7 +41,8 @@ founder.
 - Never work on main. Every task is born bench-first: freshly pulled
   main → branch feat/ | fix/ | docs/ | chore/<id>-<slug> → spec (if
   the task needed discussion) + memory stub as first commits →
-  **draft PR at birth**, every task, control tower included — the
+  **draft PR at birth**, every task, control tower and cockpit
+  included — the
   task is public and rescuable from its first minute; no work ever
   exists in only one place → push every commit.
 - One task = one branch = one PR.
@@ -131,11 +132,12 @@ history/ keeps the meaning.
 
 ## Parallel lanes & cloud
 The LANE LAW (seat-blind — identical local or cloud): every lane
-1. is born bench-first BY THE CONTROL TOWER — branch, spec, memory
+1. is born bench-first BY THE BATON-HOLDER (control tower or
+   cockpit) — branch, spec, memory
    stub, draft PR laid on origin BEFORE the lane exists: public and
    rescuable from its first minute;
 2. runs the canary handshake before real work — its first act is a
-   trivial push; the control tower writes airborne-or-failed into the
+   trivial push; the baton-holder writes airborne-or-failed into the
    pre-birthed memory; a lane seeing failed/aborted, a Status it
    does not own (parked · respawned · superseded), or silence past
    the timeout (constants:
@@ -170,6 +172,8 @@ seat; only ritual stamps name seats.
   [parallel-lanes §Wake-lock & parking](skills/parallel-lanes.md#wake-lock--parking).
 Baton law: exactly one control tower — the session the founder is
 driving; the baton is the right to be that one driving session.
+The BATON-HOLDER — the commanding session; control tower on the
+ground, cockpit in flight.
 Claimed by pickup on fresh origin; released by FULL handoff or
 liftoff (which close the session — liftoff's fire hands the baton
 to the cockpit it summons, the control tower online:
