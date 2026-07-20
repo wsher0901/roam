@@ -55,61 +55,72 @@ if (!token || !routineId) {
 
 const message = process.argv.slice(2).join(" ").trim();
 
-try {
-  const res = await fetch(
-    `https://api.anthropic.com/v1/claude_code/routines/${routineId}/fire`,
-    {
-      method: "POST",
-      headers: {
-        Authorization: `Bearer ${token}`,
-        "anthropic-version": "2023-06-01",
-        "anthropic-beta": "experimental-cc-routine-2026-04-01",
-        "content-type": "application/json",
-      },
-      body: JSON.stringify(message ? { text: message } : {}),
-      // a hung connection must still end in an honest nonzero exit
-      signal: AbortSignal.timeout(30_000),
-    },
-  );
-  const bodyText = await res.text();
-  if (!res.ok) {
-    console.error(
-      `fire-clerk: the fire endpoint answered ${res.status}. ` +
-        (res.status === 429
-          ? "Daily routine cap or usage limit reached (Retry-After: " +
-            (res.headers.get("retry-after") ?? "?") +
-            " s). Use the manual charter paste instead."
-          : "Not retrying (no idempotency key — a retry could spawn " +
-            "twice). Check the token and routine id, or use the manual " +
-            "charter paste.") +
-        `\n${bodyText}`,
-    );
-    process.exit(1);
-  }
-  let data;
+// After the fetch, failures RETURN a code instead of calling
+// process.exit(): an abrupt exit while undici's network handles are
+// still unwinding trips libuv's src\win\async.c assert on Windows and
+// turns the scripted 1 into a noisy 127 (Shakedown Flight finding,
+// 2026-07-19). process.exitCode lets the process drain and end with
+// the honest number.
+async function fire() {
   try {
-    data = JSON.parse(bodyText);
-  } catch {
-    console.error(
-      "fire-clerk: 200 but a non-JSON body — the API shape may have " +
-        `shifted; re-verify against the routines-fire docs.\n${bodyText}`,
+    const res = await fetch(
+      `https://api.anthropic.com/v1/claude_code/routines/${routineId}/fire`,
+      {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${token}`,
+          "anthropic-version": "2023-06-01",
+          "anthropic-beta": "experimental-cc-routine-2026-04-01",
+          "content-type": "application/json",
+        },
+        body: JSON.stringify(message ? { text: message } : {}),
+        // a hung connection must still end in an honest nonzero exit
+        signal: AbortSignal.timeout(30_000),
+      },
     );
-    process.exit(1);
-  }
-  if (!data.claude_code_session_url) {
+    const bodyText = await res.text();
+    if (!res.ok) {
+      console.error(
+        `fire-clerk: the fire endpoint answered ${res.status}. ` +
+          (res.status === 429
+            ? "Daily routine cap or usage limit reached (Retry-After: " +
+              (res.headers.get("retry-after") ?? "?") +
+              " s). Use the manual charter paste instead."
+            : "Not retrying (no idempotency key — a retry could spawn " +
+              "twice). Check the token and routine id, or use the manual " +
+              "charter paste.") +
+          `\n${bodyText}`,
+      );
+      return 1;
+    }
+    let data;
+    try {
+      data = JSON.parse(bodyText);
+    } catch {
+      console.error(
+        "fire-clerk: 200 but a non-JSON body — the API shape may have " +
+          `shifted; re-verify against the routines-fire docs.\n${bodyText}`,
+      );
+      return 1;
+    }
+    if (!data.claude_code_session_url) {
+      console.error(
+        "fire-clerk: 200 but no claude_code_session_url in the response — " +
+          "the API shape may have shifted; re-verify against the " +
+          `routines-fire docs.\n${bodyText}`,
+      );
+      return 1;
+    }
+    console.log(`clerk fired · session: ${data.claude_code_session_url}`);
+    return 0;
+  } catch (err) {
     console.error(
-      "fire-clerk: 200 but no claude_code_session_url in the response — " +
-        "the API shape may have shifted; re-verify against the " +
-        `routines-fire docs.\n${bodyText}`,
+      "fire-clerk: could not reach the fire endpoint (offline, DNS, or " +
+        `timed out after 30 s): ${err.message}. Use the manual charter ` +
+        "paste instead.",
     );
-    process.exit(1);
+    return 1;
   }
-  console.log(`clerk fired · session: ${data.claude_code_session_url}`);
-} catch (err) {
-  console.error(
-    "fire-clerk: could not reach the fire endpoint (offline, DNS, or " +
-      `timed out after 30 s): ${err.message}. Use the manual charter ` +
-      "paste instead.",
-  );
-  process.exit(1);
 }
+
+process.exitCode = await fire();

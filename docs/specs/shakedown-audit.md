@@ -113,7 +113,8 @@ the narrative lives in the memory (history/ after the weld).
    exits via a cosmetic libuv assert on Windows — exit 127, not the
    scripted 1. Honest-nonzero HOLDS (the failure direction is
    preserved); diagnosis + disposition: §Finding 2 — diagnosis
-   below.
+   below. CLOSED — contained fix applied 2026-07-19, both failure
+   paths re-run to an honest exit 1, assert gone.
 3. **Shared-SETUP construction held.** The phase-2 payloads' one
    shared file (SETUP) was resolved at construction — lane A
    ([#170](https://github.com/wsher0901/roam/pull/170)) owned it;
@@ -153,13 +154,21 @@ the narrative lives in the memory (history/ after the weld).
 
 ### Finding 2 — diagnosis
 
-Filled during this bench: reproduce both failure paths without
-firing (the missing-credentials exit; the bad-credentials 401 exit
-— neither reaches the routine, no cap run burned), observe the exit
-codes on Windows, and fix ONLY if the repair is contained to
-`scripts/fire-clerk.mjs` (declared deviation: scripts/ touched, so
-Vercel builds once); otherwise record + a dated
-[IDEAS](../IDEAS.md) line.
+Reproduced 2026-07-19 without firing (fake credentials from a
+temp cwd; the 401 rejects before any routine spawn — no cap run
+burned, the real `.env.local` never read). Result: the
+missing-credentials path (pre-fetch) already exits an honest 1;
+the bad-credentials path (401 answered after the fetch) died in
+libuv's `src\win\async.c` line-94 assert — exit 127 — because
+`process.exit(1)` fired while undici's network handles were still
+unwinding. Contained fix applied to `scripts/fire-clerk.mjs` (the
+pre-declared deviation): the post-fetch body now lives in an async
+function whose failure paths RETURN 1, assigned to
+`process.exitCode`, so the process drains and ends with the honest
+number. Re-run: both failure paths exit 1, assert gone. The
+success path is preserved by construction (same statements, return
+0 instead of fall-through) — its live verification is the next
+liftoff fire, which cannot be rehearsed without burning a run.
 
 ## Done means
 

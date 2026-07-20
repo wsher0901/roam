@@ -42,6 +42,14 @@ mandate — surfaced at THE GATE, repaired there or in a follow-up
 on the founder's word.
 
 ## The story
+Finding 2 closed first (2026-07-19 22:4x): both fire-clerk failure
+paths reproduced with fake credentials from a temp cwd — the 401
+path died in libuv's Windows assert exactly as the 07-17 record
+said (exit 127), the pre-fetch path was already honest. The fix is
+the canonical one — `process.exitCode` over `process.exit()` after
+async I/O — and both paths re-ran to an honest 1. The success path
+changed only structurally; its live proof is the next liftoff fire.
+
 Born minutes after the origin ref cleanup turned forensic: the
 07-19 sitting deleted three dead claude/ branches, and
 claude/session-1v6419 came back four minutes later at its
