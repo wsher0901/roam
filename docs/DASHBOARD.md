@@ -6,7 +6,7 @@ status: living
 
 # Dashboard — the state surface
 
-Stamp: 2026-07-20 · 15:42 · ship · work PC
+Stamp: 2026-07-20 · 16:43 · liftoff · work PC
 V1 5/34 · S1 2/7 · S2 3/5 · sessions: 1 main · 0 parallel
 (0 need you) · needs-you 2
 How to read this board →
@@ -14,18 +14,16 @@ How to read this board →
 
 ## Needs you
 
-1. 🟡 The cockpit is on paper but not yet armed — four manual
-   acts, founder-only (no CLI surface): create the "cockpit"
-   routine at claude.ai/code/routines and paste the charter
-   master VERBATIM; generate its fire token in the API-trigger
-   modal → password manager FIRST; hand the control tower the
-   `trig_` id + token → it writes `.env.local` (the work PC
-   repeats at its next sitting); re-save the lane-worker routine
-   box and the clerk routine/session paste from the updated SETUP
-   masters (the rename changed their wording). Also awaiting your
-   word: the `.claude/` harness files still say "cockpit" in the
-   old ground meaning (a small chore bench). Clears on your word
-   at any ritual (since 07-20).
+1. 🟡 The cockpit's arming is PART-DONE: this seat's credential
+   paste landed 07-20 (COCKPIT_ pair in `.env.local`, masked
+   read-back verified, shapes matching the clerk pair's). Still
+   owed: the home PC repeats the paste at its next sitting; the
+   lane-worker routine box and the clerk routine/session paste
+   owe a re-save from the updated SETUP masters (the rename
+   changed their wording). Also awaiting your word: the `.claude/`
+   harness files still say "cockpit" in the old ground meaning (a
+   small chore bench). Clears on your word at any ritual (since
+   07-20).
    → [SETUP §cloud accounts](SETUP.md#once-and-done--cloud-accounts)
    · [flight-cockpit](specs/flight-cockpit.md) ·
    [D-046](DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
@@ -39,20 +37,23 @@ How to read this board →
 
 | Session | Task | State | Last push | Your move |
 |---|---|---|---|---|
-| main · control tower | flight-cockpit SHIPPED ([#177](https://github.com/wsher0901/roam/pull/177)) — session at rest after the weld | 🟢 | 15:42 (this repaint) | — |
+| main · control tower | liftoff — this session closes at the cockpit fire; the MAIDEN flies the outing | 🟡 | 16:43 (this repaint) | — |
 
-↳ main micro: — (no active task)
+↳ main micro: — (no active task; the fleet is empty)
 
-Flight context — D-046 is WELDED (squash 446b5b3): the cockpit —
-the control tower online, full authorship — exists in doctrine;
-its maiden waits on Needs-you №1's manual acts, then the first
-liftoff fires it with the board-derived flight plan as payload.
-The weld itself was the no-solo-approval law's first subject:
-external Web review (one doctrine amendment — the BATON-HOLDER —
-folded to closure), three critic passes, the founder's word on
-the final green head. The clerk stays armed until the cockpit
-maiden drill's closeout (retirement staged). Remote Control is
-backstop; machine-off is the standard away posture.
+Flight context — THE COCKPIT MAIDEN
+([D-046](DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)):
+this liftoff carries ZERO lanes (nothing eligible — T3–T6 held on
+relaunch briefs · Design T5 idle · the harness chore awaits the
+word), so the outing IS the maiden: `npm run fire:cockpit` with
+the board-derived flight plan as payload, fired after this
+repaint's weld. The cockpit adds its own Sessions row at its
+first repaint; its session URL rides the close report. Cap
+arithmetic at fire time: `count:runs` read 0 today; the fire is
++1 and invisible to the proxy → day total 1, truly 14 remaining.
+The clerk stays armed as fallback (retirement staged for the
+maiden drill's closeout). Landing = final repaint → park →
+founder archives → branch verified dead.
 
 ## You are here
 
@@ -88,12 +89,13 @@ flowchart LR
 The live ops surface is the current ops chat (title unrecorded at
 the shakedown-audit weld) — its external review of
 [#177](https://github.com/wsher0901/roam/pull/177) is DONE (the
-baton-holder amendment, folded) → next: the cockpit maiden, after
-Needs-you №1's manual acts. Under the surface doctrine
+baton-holder amendment, folded) → next: grade the cockpit maiden.
+Last paste: none (bare trigger at the 07-20 liftoff). Under the
+surface doctrine
 ([D-046](DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)),
 Web's one mandatory job is the external review of self-authored
-diffs; the paste-block relay is a tool, not a requirement. T3–T6
-source-vetting relaunch stays held (see You are here).
+diffs. T3–T6 source-vetting relaunch stays held (see You are
+here).
 
 ## Shipped (latest — full record: [the ledger](history/README.md#the-ledger))
 
