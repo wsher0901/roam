@@ -171,7 +171,7 @@ Sources:
 | [data/SOURCES.md](data/SOURCES.md) | the vetted source registry, one entry per source slot | source-vetting tasks (T2–T6), consolidated at [T7](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code) | living; grades move under the demotion law |
 | [data/SCHEMA.md](data/SCHEMA.md) | human-readable mirror of the SQL schema | [V1.S1.T7](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code) | placeholder until T7 ships |
 | [specs/](specs/README.md) | per-task contracts + [TEMPLATE](specs/TEMPLATE.md) | born at task birth when discussion opened the task; [ship](skills/ship.md) finalizes | open → shipped or superseded; never deleted |
-| [memory/](memory/README.md) | in-flight task stories in the locked format ([TEMPLATE](memory/TEMPLATE.md)) | the task's own seat — control tower at rituals, lanes at their four moments | lives on the task's branch; MOVES to history/ at ship |
+| [memory/](memory/README.md) | in-flight task stories in the locked format ([TEMPLATE](memory/TEMPLATE.md)) | the task's own seat — baton-holder at rituals, lanes at their four moments | lives on the task's branch; MOVES to history/ at ship |
 | [history/](history/README.md) | permanent shipped narratives, one per task | [ship](skills/ship.md)'s atomic weld | frozen after landing (link repairs only) |
 | [skills/](skills/) | ritual procedures + workshop manuals, vault-readable | founder-approved PRs + promoted gotchas | living |
 | docs/.obsidian/ | Obsidian's own workspace config | Obsidian | gitignored, never committed |
@@ -271,7 +271,7 @@ Sources:
 **memory/** holds each task's living story in the locked format
 (Status first), rewritten cognitively at rituals and at the lane
 trigger moments. It is how a session that has never seen the task
-before — tomorrow's control tower, a rescuer of a dead lane — picks
+before — tomorrow's baton-holder, a rescuer of a dead lane — picks
 it up
 cold. Without it, every interruption would cost the whole context.
 

@@ -165,7 +165,10 @@ retirement) confirmed at the shakedown-audit gate.
       the §Lanes births/ack/heartbeat restatement (first use
       glossed), the lane-table bookkeeping row, the
       harvested-by line, and the canary-handshake + respawn term
-      entries' ack actor. Ground-act and board-naming lines
+      entries' ack actor; the critic's two residuals of the same
+      class closed on the same word — HOME's rescuer line
+      ("tomorrow's baton-holder") and the files-table memory/
+      row's ritual-time writer. Ground-act and board-naming lines
       stay "control tower".
 - [ ] Full CI mirror green; the pushed commit's Actions run
       green. (Ticked at the weld, whenever the founder's merge

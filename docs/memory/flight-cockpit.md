@@ -102,6 +102,10 @@ closed the set: all lane-command actors now read baton-holder
 (first use per file glossed), the heading's anchor repointed in
 HOME, while ground acts (pickup, handoff's park, go-remote's
 relocation) and the board's column naming keep "control tower".
+The critic's verification pass then caught the set's last two —
+HOME's rescuer line and the files-table memory row's ritual-time
+writer, the same class the word covered — folded on that same
+word; its verdict rode to the founder verbatim each round.
 
 The fire vehicle generalized cleanly: `fire-clerk.mjs` →
 `fire.mjs` with a target argument selecting the CLERK_/COCKPIT_
