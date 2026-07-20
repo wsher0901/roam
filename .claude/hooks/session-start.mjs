@@ -149,8 +149,9 @@ if (existsSync(dashboard)) {
 
 // Briefing directive for the session that just started.
 console.log(
-  "\n[hook] Briefing directive: if this is a cockpit session (the founder" +
-    " is driving it directly, not a dispatched lane or background agent)," +
+  "\n[hook] Briefing directive: if this is the baton-holder's session (the" +
+    " founder is commanding it — control tower on the ground, cockpit in" +
+    " flight — not a dispatched lane or background agent)," +
     " render the /pickup briefing before answering the founder's first" +
     " message — do not wait to be asked. Dispatched lanes and background" +
     " agents skip the briefing and proceed with their kickoff task."
