@@ -2,11 +2,12 @@
 type: spec
 id: harness-vocab-rename
 title: Harness vocab rename — `.claude/` learns the D-046 vocabulary
-status: open
+status: shipped
 stage: workshop
 branch: chore/harness-vocab-rename
 pr: 180
 opened: 2026-07-20
+shipped: 2026-07-20 22:01
 ---
 
 # harness-vocab-rename — the `.claude/` harness files learn the D-046 vocabulary
