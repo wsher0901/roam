@@ -1,17 +1,20 @@
 ---
-type: memory
-id: shakedown-audit
-updated: 2026-07-20 · gate fold · work PC
+type: history
+slug: shakedown-audit
+shipped: 2026-07-20 13:17
+pr: 175
 ---
 # shakedown-audit — close the Shakedown Flight on paper
 
 ## Status
-At THE GATE, gate answers folded — 2026-07-20, work PC. The
-founder's answers are folded verbatim, hedges included (A2 · A3
-attested, A5 does-not-recall, the sidebar title unrecorded,
-liftoff folded in on "Q7"); re-pushed, awaiting the Actions run →
-the founder's merge word. The remaining attests pend exactly as
-written (see Pending issues).
+Shipped — merged as
+[#175](https://github.com/wsher0901/roam/pull/175) on the
+founder's word, 2026-07-20, work PC. The Shakedown Flight (phases
+1–2) is closed on paper: checklists graded evidence-or-attest,
+six forensics findings closed, the staged clerk lines resolved
+verified, the 2026-07-20 gate answers folded verbatim — hedges
+included. The attests still pending where marked (A4's glance ·
+A5 · the clerk self-report) remain honest gaps, never invented.
 
 ## What this task is
 The Shakedown Flight (phases 1–2, 2026-07-17 → 2026-07-19) closes
@@ -20,7 +23,7 @@ specs, six recorded deviations closed as forensics findings, the
 two "in verification" staged lines resolved per the cloud-clerk
 precedent, the IDEAS sweep, and the board sweep staged for the
 ship tail. Founder-mandated in-session 2026-07-19. Contract:
-[the spec](../specs/shakedown-audit.md).
+[the spec](../../../specs/shakedown-audit.md).
 
 ## Pending issues
 Still pending founder attest after the 2026-07-20 gate answers,
@@ -134,20 +137,20 @@ carries the verified stamp instead of riding a follow-up
 One story line, no new finding number: the attestation haze
 itself — the founder could not reconstruct where-did-what across
 Friday's three surfaces — is recorded as lived evidence for the
-single-surface redesign ([D-046](../DECISIONS.md), landing on its
+single-surface redesign ([D-046](../../../DECISIONS.md), landing on its
 own bench).
 
 ## Where to look
-Spec: [shakedown-audit](../specs/shakedown-audit.md). PR:
+Spec: [shakedown-audit](../../../specs/shakedown-audit.md). PR:
 [#175](https://github.com/wsher0901/roam/pull/175). Graded specs:
-[clerk-autospawn](../specs/clerk-autospawn.md) ·
-[clerk-notify](../specs/clerk-notify.md). Flips:
-[SETUP §Staged](../SETUP.md#staged--turns-on-when-its-stage-opens)
-· [SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts)
+[clerk-autospawn](../../../specs/clerk-autospawn.md) ·
+[clerk-notify](../../../specs/clerk-notify.md). Flips:
+[SETUP §Staged](../../../SETUP.md#staged--turns-on-when-its-stage-opens)
+· [SETUP §cloud accounts](../../../SETUP.md#once-and-done--cloud-accounts)
 ·
-[parallel-lanes §Answering a lane](../skills/parallel-lanes.md#answering-a-lane-the-mail-slot)
+[parallel-lanes §Answering a lane](../../../skills/parallel-lanes.md#answering-a-lane-the-mail-slot)
 ·
-[parallel-lanes §Cloud spawn](../skills/parallel-lanes.md#cloud-spawn--route-ladder).
+[parallel-lanes §Cloud spawn](../../../skills/parallel-lanes.md#cloud-spawn--route-ladder).
 The flight's PRs:
 [#170](https://github.com/wsher0901/roam/pull/170) ·
 [#171](https://github.com/wsher0901/roam/pull/171). The clerk

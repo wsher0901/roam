@@ -166,9 +166,10 @@ A1 remains the live fire — verify-before-rely.
 - [x] SETUP §Staged's clerk-autospawn line reads "in verification"
       and links this bench.
 - [x] `.env.example` carries the two placeholders.
-- [ ] Full CI mirror green; the pushed commit's Actions run green.
-      (Ticked at the weld, whenever the founder's merge word
-      lands.)
+- [x] Full CI mirror green; the pushed commit's Actions run green.
+      (Ticked 2026-07-20, a retroactivity repair — the box should
+      have flipped at #164's 2026-07-17 weld, which landed green;
+      found and repaired at the shakedown-audit weld.)
 
 The A-checklist is deliberately NOT a Done-means item — it grades
 at the flight, after the merge.

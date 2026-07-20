@@ -2,10 +2,12 @@
 type: spec
 id: shakedown-audit
 title: Shakedown-audit — close the Shakedown Flight on paper
-status: open
+status: shipped
 stage: workshop
 branch: docs/shakedown-audit
+pr: 175
 opened: 2026-07-19
+shipped: 2026-07-20 13:17
 ---
 
 # shakedown-audit — close the Shakedown Flight on paper
@@ -198,9 +200,8 @@ liftoff fire, which cannot be rehearsed without burning a run.
       the sidebar title recorded unread, liftoff's fire:clerk
       line repaired in-bench on the founder's "Q7: fold it in";
       everything unanswered pends exactly as written.
-- [ ] Full CI mirror green; the pushed commit's Actions run green.
-      (Ticked at the weld, whenever the founder's merge word
-      lands.)
+- [x] Full CI mirror green; the pushed commit's Actions run green.
+      (Ticked at the weld, 2026-07-20 — the founder's merge word.)
 
 ## Verification
 

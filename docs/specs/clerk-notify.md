@@ -119,9 +119,10 @@ audit.
 - [x] parallel-lanes §Answering a lane names the clerk-as-watcher
       (in verification).
 - [x] IDEAS carries both dated lines.
-- [ ] Full CI mirror green; the pushed commit's Actions run green.
-      (Ticked at the weld, whenever the founder's merge word
-      lands.)
+- [x] Full CI mirror green; the pushed commit's Actions run green.
+      (Ticked 2026-07-20, a retroactivity repair — the box should
+      have flipped at #163's 2026-07-17 weld, which landed green;
+      found and repaired at the shakedown-audit weld.)
 
 The N-checklist is deliberately NOT a Done-means item — it grades
 at the flight, after the merge.
