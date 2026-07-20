@@ -6,8 +6,8 @@ status: living
 
 # Dashboard — the state surface
 
-Stamp: 2026-07-20 · 17:41 · pickup · cockpit
-V1 5/34 · S1 2/7 · S2 3/5 · sessions: 1 main · 1 parallel
+Stamp: 2026-07-20 · 22:04 · ship · cloud lane (founder-driven)
+V1 5/34 · S1 2/7 · S2 3/5 · sessions: 1 main · 0 parallel
 (0 need you) · needs-you 2
 How to read this board →
 [HOME §Reading the board](HOME.md#reading-the-board)
@@ -20,10 +20,11 @@ How to read this board →
    owed: the home PC repeats the paste at its next sitting; the
    lane-worker routine box and the clerk routine/session paste
    owe a re-save from the updated SETUP masters (the rename
-   changed their wording). The harness-rename word ARRIVED at the
-   maiden's part-2 fire — that chore now flies as
-   [#180](https://github.com/wsher0901/roam/pull/180), off this
-   list (since 07-20).
+   changed their wording). The harness-rename chore WELDED 07-20 as
+   [#180](https://github.com/wsher0901/roam/pull/180) — one owed
+   act remains: archive the lane's session at claude.ai/code, then
+   verify `chore/harness-vocab-rename` stays dead (the resurrection
+   rule) (since 07-20).
    → [SETUP §cloud accounts](SETUP.md#once-and-done--cloud-accounts)
    · [flight-cockpit](specs/flight-cockpit.md) ·
    [D-046](DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
@@ -38,29 +39,34 @@ How to read this board →
 | Session | Task | State | Last push | Your move |
 |---|---|---|---|---|
 | main · cockpit | the cockpit maiden, part 2 — commanding the harness outing ([flight-cockpit](specs/flight-cockpit.md) drill) | 🟡 | 17:41 (airborne ack) | — |
-| cloud | [harness-vocab-rename](https://github.com/wsher0901/roam/blob/chore/harness-vocab-rename/docs/memory/harness-vocab-rename.md) · [#180](https://github.com/wsher0901/roam/pull/180) | 🟡 airborne | 17:40 (canary) | — |
 
 ↳ main micro: 🟢 claim check · 🟢 bench birth · 🟢 label-spawn ·
-🟢 canary ack · 🟡 the lane flies · ⚪ non-author review · ⚪ the
-founder's word
+🟢 canary ack · 🟢 the lane flew · 🟢 review (the critic's PASS —
+see the deviation in
+[history](history/workshop/mechanism/harness-vocab-rename.md)) ·
+🟢 the founder's word · 🟢 weld ·
+⚪ archive the lane session + verify the branch stays dead
 
 Flight context — THE COCKPIT MAIDEN, part 2
 ([D-046](DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)):
 part 1 fired but could not push; the founder granted write access
 and re-fired with the part-2 payload (first act stamped 17:34).
-This flight the birth push landed FIRST TRY — the
-harness-vocab-rename bench went up bench-first (spec + memory +
-draft PR at birth), flew label-spawned by the recipe of record,
-canary 60s after the label, airborne ack 17:41. Cap arithmetic:
-proxy read 0 GitHub-triggered today; the part-2 fire (+1,
-proxy-invisible) + the label-spawn (+1) → day total 2, truly 13
-remaining. Named watch: the cockpit is watching
-[#180](https://github.com/wsher0901/roam/pull/180) for BLOCKED: /
-ready-flip (pickup re-arms it if this session dies). The clerk
-stays armed as fallback (retirement staged for the maiden drill's
-closeout). Landing = non-author review → the founder's word →
-weld → final repaint → park → founder archives → branch verified
-dead.
+The harness-vocab-rename bench went up bench-first, flew
+label-spawned by the recipe of record (canary 60s after the label,
+airborne ack 17:41), and WELDED 22:03 as
+[#180](https://github.com/wsher0901/roam/pull/180) — the founder's
+merge word spoken directly into the lane's session, ship run from
+that seat, the reviewer critic's PASS riding on the PR (the
+no-solo-approval deviation recorded honestly in the
+[history file](history/workshop/mechanism/harness-vocab-rename.md)).
+The #180 watch is OVER (merged; branch auto-deleted, verified 0
+refs at 22:04 — re-verify after the session archive per the
+resurrection rule). Cap arithmetic: proxy read 0 GitHub-triggered
+today; the part-2 fire (+1, proxy-invisible) + the label-spawn
+(+1) → day total 2, truly 13 remaining. The clerk stays armed as
+fallback (retirement staged for the maiden drill's closeout).
+Remaining maiden landing: founder archives the lane session →
+branch re-verified dead → grade the maiden.
 
 ## You are here
 
@@ -108,6 +114,7 @@ here).
 
 | When | What | PR |
 |---|---|---|
+| 07-20 22:01 | [the `.claude/` harness learns the D-046 vocabulary: the pickup stub's description and the session-start hook's briefing directive name the BATON-HOLDER (control tower on the ground, cockpit in flight) — wording only, zero stragglers by grep; flown as a label-spawned cloud lane, welded from the same seat on the founder's direct word with the reviewer critic's clean verdict](history/workshop/mechanism/harness-vocab-rename.md) | [#180](https://github.com/wsher0901/roam/pull/180) |
 | 07-20 15:40 | [the cockpit is the control tower online (D-046): full-authorship cloud command session fired by liftoff with the board-derived flight plan; the no-solo-approval law (external Web review for self-authored diffs — this weld its own first subject); the CC-direct surface doctrine; clerk retirement staged; Remote Control demoted to backstop; the cockpit/control-tower rename with the BATON-HOLDER as lane-command actor, folded to closure through one review amendment + three critic passes; fire.mjs generalized (clerk \| cockpit)](history/workshop/definition/flight-cockpit.md) | [#177](https://github.com/wsher0901/roam/pull/177) |
 | 07-20 13:17 | [the Shakedown Flight closes on paper: A/N checklists graded evidence-or-attest — the 07-20 gate answers folded verbatim, hedges included; six forensics findings closed (the exit-127 assert repaired to an honest 1, the resurrection incident's verify-the-branch-stays-dead ripple, the cloud-proxy 403 rail confirmed); both staged clerk lines resolved verified; liftoff's fire:clerk folded in on the founder's gate word; the attestation haze recorded as lived evidence for D-046](history/workshop/mechanism/shakedown-audit.md) | [#175](https://github.com/wsher0901/roam/pull/175) |
 | 07-17 23:43 | [the Hands doctrine (D-045): solo · exploratory subagents · agent team · parallel lanes, the one-bench/many-benches/read-only litmus — the founder's passage verbatim into SETUP §Models & effort, D-045 into DECISIONS, a pointer in parallel-lanes §Vehicles; flown fully unattended as payload A of Shakedown phase 2](history/workshop/definition/agent-teams-brain.md) | [#170](https://github.com/wsher0901/roam/pull/170) |
@@ -117,4 +124,3 @@ here).
 | 07-17 16:16 | [the clerk gains the standing watch (charter v2, duty 6): lane events reach the founder's phone as turn-end announcements — BLOCKED:/completions/CI-red; the watcher line opens in the mail slot (N1–N6 graded at the flight audit); the doorbell-mirror idea superseded; the reviewer agent-type failure graduated to defect](history/workshop/mechanism/clerk-notify.md) | [#163](https://github.com/wsher0901/roam/pull/163) |
 | 07-17 15:26 | [the away surface goes live: the clerk maiden flown founder-run, C1–C6 all green (~4.5h idle survival proven, run-count attest closed at 1), the promotion clause executed — clerk PRIMARY for machine-off answering, GitHub app demoted to backstop; clerk-notify + clerk-autospawn staged beside api-ignition](history/workshop/mechanism/cloud-clerk.md) | [#156](https://github.com/wsher0901/roam/pull/156) |
 | 07-17 11:09 | [the pre-GATE critic wired in (D-044): ship §6 opens by invoking the reviewer subagent — advisory verdicts riding to the founder with the summary; the critic's maiden wired run flew on its own PR (pass + the verdict-as-message clause)](history/workshop/mechanism/ship-wiring.md) | [#159](https://github.com/wsher0901/roam/pull/159) |
-| 07-16 23:55 | [leave at any instant, nothing lost: the nine-row mid-state audit proves every interruption parks clean — watch-duty named at park ("watching #N for X") + pickup's re-arm mirror, the unanswered-BLOCKED Needs-you surface ("lane #N awaits your reply"), the interrupt doctrine in one home (Esc lawful anywhere but THE WELD's atomic commit)](history/workshop/mechanism/handoff-anywhere.md) | [#155](https://github.com/wsher0901/roam/pull/155) |
