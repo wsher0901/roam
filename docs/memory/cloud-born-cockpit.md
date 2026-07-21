@@ -1,7 +1,7 @@
 ---
 type: memory
 id: cloud-born-cockpit
-updated: 2026-07-21 · gate 0b finding (TTY-only vehicle) · control tower (work PC)
+updated: 2026-07-21 · founder addendum (first-line clone guard) · control tower (work PC)
 ---
 # cloud-born-cockpit — the cockpit's birth vehicle becomes `claude --cloud`
 
@@ -87,11 +87,13 @@ before the founder's word.
 ## Left / idle
 
 Gate 0b (probe) · gate 0c (phone) · D-047 append · liftoff §6
-primary-birth rewrite · SETUP §cloud accounts (recipe + routine
-annotation + charter born-at + `gh` environment note) ·
-verification greps · CI mirror · THE GATE. Founder manual acts
-ride after the weld (routine box re-save · `gh` in the cloud
-environment's setup script · home-seat credential paste).
+primary-birth rewrite, whose composed flight plan now opens with
+the standing first-line clone-provenance directive (founder
+addendum) · SETUP §cloud accounts (recipe + routine annotation +
+charter born-at + `gh` environment note) · verification greps ·
+CI mirror · THE GATE. Founder manual acts ride after the weld
+(routine box re-save · `gh` in the cloud environment's setup
+script · home-seat credential paste).
 
 ## The story
 
@@ -124,7 +126,15 @@ primary path, not a guarantee. Which is precisely why this bench
 gates on evidence: the probe decides clone-vs-bundle for this
 repo in practice, and from a real TTY the vehicle should return
 immediately with a checklist and a session link (docs, v2.1.195+),
-not attach.
+not attach. Mid-gate the founder answered that fallback risk with
+an in-theme addendum, dual-written into the spec: every cockpit
+birth's composed flight plan opens with a standing FIRST LINE —
+"Before any act: verify your clone's HEAD equals origin/main's
+tip and your workspace contains nothing origin lacks; mismatch =
+report verbatim and STOP." Defense in depth: the one-time probe
+proves the primary path exists; the first line polices every
+flight after, so a silent bundle fallback (or any seeded ghost)
+dies at birth instead of writing history it should not own.
 
 ## Where to look
 

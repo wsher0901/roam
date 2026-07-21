@@ -96,7 +96,14 @@ turn; the gates prove the reform by evidence, not docs.
    SETUP §cloud accounts VERBATIM, then this flight plan:
    …composed from the board…>"`; `fire:cockpit` becomes fallback
    rung 2; the manual charter paste stays rung 3, retained
-   verbatim.
+   verbatim. Founder addendum (2026-07-21, in-theme): the
+   composed flight plan gains a standing FIRST-LINE directive for
+   every cockpit birth — "Before any act: verify your clone's
+   HEAD equals origin/main's tip and your workspace contains
+   nothing origin lacks; mismatch = report verbatim and STOP."
+   The per-flight guard against the documented bundle
+   auto-fallback: the one-time probe (gate 0b) proves the primary
+   path; this line polices every flight after.
 4. [SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts)
    — the cockpit recipe documents the `--cloud` birth (exact
    command shape); the routine's section annotated "fallback +
@@ -118,6 +125,9 @@ turn; the gates prove the reform by evidence, not docs.
 - D-047 appended, house style, amends D-046 clause 3.
 - Grep-verifiable: liftoff §6's primary path carries `--cloud`
   and not the fire; the fire present only as fallback.
+- liftoff §6's composed flight plan opens with the standing
+  first-line clone-provenance directive (founder addendum
+  2026-07-21), grep-verifiable.
 - SETUP recipe shows the exact `--cloud` command shape; routine
   annotated; charter born-at clause updated; `gh` environment
   note present.
