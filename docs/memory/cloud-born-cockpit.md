@@ -1,7 +1,7 @@
 ---
 type: memory
 id: cloud-born-cockpit
-updated: 2026-07-21 · founder addendum (first-line clone guard) · control tower (work PC)
+updated: 2026-07-21 · gate 0b second finding (bang-path also non-TTY) · control tower (work PC)
 ---
 # cloud-born-cockpit — the cockpit's birth vehicle becomes `claude --cloud`
 
@@ -56,7 +56,17 @@ before the founder's word.
   pseudo-console attempt crashed (`Assertion failed … winpty.cc,
   line 924` — no console to size from). The probe is handed to
   the founder's terminal; the TTY-only finding must shape
-  liftoff §6's command shape at the mandate.
+  liftoff §6's command shape at the mandate. SECOND FINDING
+  (2026-07-21): the founder fired the probe through the session's
+  `!` bang-prefix — SAME refusal, verbatim identical error. The
+  bang-path captures output (piped stdout), so it is non-TTY too:
+  `--cloud` cannot fire from inside a Claude Code session by ANY
+  route — not the harness shell, not the founder's bang-prefix.
+  The birth surface is a plain terminal outside the session.
+  Liftoff §6's primary rung must therefore read: the ritual
+  COMPOSES the full birth command (charter + flight plan) and
+  hands it to the founder to paste into a plain terminal; the
+  session itself cannot execute it.
 - Doc verification LANDED (claude-code-guide agent, official
   docs, 2026-02 era): `--cloud` is real and hidden from help;
   `--remote` survives as a deprecated alias. From a TTY it
@@ -134,7 +144,13 @@ tip and your workspace contains nothing origin lacks; mismatch =
 report verbatim and STOP." Defense in depth: the one-time probe
 proves the primary path exists; the first line polices every
 flight after, so a silent bundle fallback (or any seeded ghost)
-dies at birth instead of writing history it should not own.
+dies at birth instead of writing history it should not own. Then
+the founder fired the probe through the session's `!` prefix and
+hit the identical refusal — the bang-path pipes stdout, so it is
+non-TTY like everything else inside a session. The vehicle's
+demand is now fully mapped: a plain terminal, nothing less. The
+probe moves to the founder's own terminal window; liftoff §6's
+primary rung becomes compose-and-hand, not execute.
 
 ## Where to look
 
