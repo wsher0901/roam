@@ -5,7 +5,7 @@ title: Cloud-born cockpit — liftoff births the cockpit via claude --cloud (D-0
 status: open
 stage: workshop
 branch: docs/cloud-born-cockpit
-pr: TBD
+pr: 187
 opened: 2026-07-21
 ---
 

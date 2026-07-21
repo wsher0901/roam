@@ -84,5 +84,6 @@ running before any live probe.
   [#177](https://github.com/wsher0901/roam/pull/177) ·
   [#180](https://github.com/wsher0901/roam/pull/180) · the
   [harness-vocab-rename history](../history/workshop/mechanism/harness-vocab-rename.md).
-- Draft PR: TBD-at-birth (number lands in this file's next
-  commit).
+- Draft PR:
+  [#187](https://github.com/wsher0901/roam/pull/187) — the public
+  window; born draft with the bench.
