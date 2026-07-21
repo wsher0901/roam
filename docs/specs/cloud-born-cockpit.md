@@ -103,7 +103,20 @@ turn; the gates prove the reform by evidence, not docs.
    nothing origin lacks; mismatch = report verbatim and STOP."
    The per-flight guard against the documented bundle
    auto-fallback: the one-time probe (gate 0b) proves the primary
-   path; this line polices every flight after.
+   path; this line polices every flight after. Second founder
+   addendum (2026-07-21, in-theme): whichever invocation route
+   the probe proved becomes the primary rung — DECIDED by gate
+   0b's evidence: `--cloud` refuses every in-session route (the
+   harness shell, the founder's `!` bang-prefix, redirected
+   Start-Process — all piped, all refused verbatim), but the
+   AUTOMATED HIDDEN-CONSOLE birth (Start-Process hosting a winpty
+   pty, output captured to file) succeeded — created the session,
+   captured the link, returned. Rung ladder therefore: 1 the
+   automated hidden-console `--cloud` birth (automation
+   preserved) · 2 compose-and-hand (the ritual composes the full
+   command; the founder pastes it into a plain terminal) ·
+   3 `fire:cockpit` · 4 the manual charter paste, retained
+   verbatim.
 4. [SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts)
    — the cockpit recipe documents the `--cloud` birth (exact
    command shape); the routine's section annotated "fallback +
@@ -127,6 +140,10 @@ turn; the gates prove the reform by evidence, not docs.
   and not the fire; the fire present only as fallback.
 - liftoff §6's composed flight plan opens with the standing
   first-line clone-provenance directive (founder addendum
+  2026-07-21), grep-verifiable.
+- liftoff §6 carries the four-rung ladder in evidence order —
+  automated hidden-console birth · compose-and-hand ·
+  `fire:cockpit` · manual paste (second founder addendum,
   2026-07-21), grep-verifiable.
 - SETUP recipe shows the exact `--cloud` command shape; routine
   annotated; charter born-at clause updated; `gh` environment
