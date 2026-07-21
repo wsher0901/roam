@@ -1,19 +1,24 @@
 ---
 type: memory
 id: cloud-born-cockpit
-updated: 2026-07-21 · bench birth · control tower (work PC)
+updated: 2026-07-21 · gate 0b finding (TTY-only vehicle) · control tower (work PC)
 ---
 # cloud-born-cockpit — the cockpit's birth vehicle becomes `claude --cloud`
 
 ## Status
 
-claimed — control tower (work PC) · 2026-07-21. Bench born
-bench-first (spec + this stub + draft PR at birth). STEP-0 gates
-in progress: 0a PASSED — origin heads = `main` only at
+blocked — gate 0b needs the founder's terminal (the `--cloud`
+vehicle refuses non-TTY contexts; probe composed and handed to
+the founder 2026-07-21, gate 0c phone check rides the same
+probe). 0a PASSED — origin heads = `main` only at
 `5d1d4eaa820dfd9ac0fa80a0021cff23ea8057bd`, board shows no cockpit
 in flight (flight 2 landed,
 [#180](https://github.com/wsher0901/roam/pull/180) resolved by the
-founder's word). 0b and 0c pending.
+founder's word). Marker planted for 0b: throwaway commit
+`2ab9614` on LOCAL main only (never pushed), adding
+`docs/.probe-marker`; origin main tip stays `5d1d4ea`. The
+discriminator: a GitHub clone reports `5d1d4ea…` + marker ABSENT;
+a bundle-seeded sandbox reports `2ab9614…` and/or marker present.
 
 ## What this task is
 
@@ -36,10 +41,22 @@ before the founder's word.
 
 ## Pending issues
 
-- Gate 0b vehicle check, OPEN: `claude --help` on this seat (CLI
-  2.1.216) does not list a `--cloud` flag; a `--help`
-  short-circuit makes flag probing inconclusive. Doc verification
-  running (claude-code-guide agent) before the live probe fires.
+- Gate 0b, HALF-PROVEN — the vehicle EXISTS but is TTY-only. On
+  this seat (CLI 2.1.216) `--cloud` is hidden from `--help`, yet
+  the flag is real; fired from the harness's piped shell it
+  refused with (verbatim):
+  `Error: --cloud requires an interactive terminal.`
+  `Non-interactive invocations (piped stdout, --init-only,
+  --sdk-url) run locally and would silently ignore --cloud. Drop
+  --cloud, or run from a TTY.`
+  A clean rail (it refuses rather than silently running locally —
+  the D-020-era silent-wrong-thing failure mode is designed out),
+  but it means the probe — and, wiring-relevant, liftoff §6's
+  primary birth — can only fire from a real terminal. A `winpty`
+  pseudo-console attempt crashed (`Assertion failed … winpty.cc,
+  line 924` — no console to size from). The probe is handed to
+  the founder's terminal; the TTY-only finding must shape
+  liftoff §6's command shape at the mandate.
 - Gate 0c is founder-input: the phone-list answer must be
   recorded verbatim here mid-probe.
 
@@ -66,8 +83,17 @@ batch-1 T3+T5 once, and this bench must prove that ghost dead by
 probe. Gate 0a passed at birth: origin heads = `main` only
 (`5d1d4ea`), no cockpit in flight on the board. First friction,
 recorded honestly: this seat's CLI (2.1.216) does not list
-`--cloud` in its help; verification of the exact vehicle shape is
-running before any live probe.
+`--cloud` in its help — but the flag is REAL: fired from the
+harness's piped shell it refused cleanly, demanding an
+interactive terminal (verbatim error in Pending issues). That
+refusal is good news twice over — the vehicle exists on 2.1.216,
+and it fails loud instead of silently running locally (the exact
+failure family that killed batch-1 T3+T5). A winpty
+pseudo-console detour crashed for want of any console. So the
+probe goes to the only real TTY in the building: the founder's
+prompt — whom gate 0c summons mid-probe anyway. Marker `2ab9614`
+sits planted on local main, unpushed, waiting to catch any bundle
+ghost.
 
 ## Where to look
 
