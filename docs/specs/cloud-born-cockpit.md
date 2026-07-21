@@ -2,11 +2,12 @@
 type: spec
 id: cloud-born-cockpit
 title: Cloud-born cockpit — liftoff births the cockpit via claude --cloud (D-047)
-status: open
+status: shipped
 stage: workshop
 branch: docs/cloud-born-cockpit
 pr: 187
 opened: 2026-07-21
+shipped: 2026-07-21 14:56
 ---
 
 # cloud-born-cockpit — the cockpit's birth vehicle becomes `claude --cloud`
@@ -31,7 +32,7 @@ remaining the engine of the staged summon button. Evidence over
 docs: maiden flights 1–2 proved routine-born sessions never join
 the mobile GENERAL session list; the founder's command surface
 must be list-native. Founder-mandated 2026-07-21, kickoff
-verbatim in [the memory](../memory/cloud-born-cockpit.md).
+verbatim in [the memory](../history/workshop/mechanism/cloud-born-cockpit.md).
 
 ## Step 0 — three gates (all must pass or STOP and report)
 

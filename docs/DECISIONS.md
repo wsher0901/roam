@@ -1421,7 +1421,7 @@ prompt = the cockpit charter master from
 VERBATIM, then the board-derived flight plan. Sessions born this
 way join the mobile app's Code-tab GENERAL session list — the
 command surface is list-native (gate 0c, the founder's phone,
-verbatim in [the memory](memory/cloud-born-cockpit.md); moves to
+verbatim in [the memory](history/workshop/mechanism/cloud-born-cockpit.md); moved to
 history/ at ship).
 (2) THE RUNG LADDER, evidence order (decided by gate 0b's probe):
 1 the automated hidden-console `--cloud` birth · 2
@@ -1457,7 +1457,7 @@ unpushed marker commit absent from its history and pushed
 by evidence, the bundle ghost dead; 0c — the founder's phone,
 verbatim: the probe session appeared in the GENERAL session list
 "right off the bat … no link-open needed." Gate outputs verbatim:
-[the memory](memory/cloud-born-cockpit.md).
+[the memory](history/workshop/mechanism/cloud-born-cockpit.md).
 **Alternatives rejected:** keeping the routine fire primary (the
 maiden evidence indicts it: list-invisible sessions are exactly
 the command haze D-046 exists to remove) · compose-and-hand as

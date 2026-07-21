@@ -1,20 +1,23 @@
 ---
-type: memory
-id: cloud-born-cockpit
-updated: 2026-07-21 · gates all green; mandate run (D-047 wired) · probe session (cloud)
+type: history
+slug: cloud-born-cockpit
+shipped: 2026-07-21 14:56
+pr: 187
 ---
 # cloud-born-cockpit — the cockpit's birth vehicle becomes `claude --cloud`
 
 ## Status
 
-complete, awaiting merge (2026-07-21). External Web review done
-(founder-confirmed at the gate); the founder's word given. All
-three gates PASSED; the
+shipped — 2026-07-21 14:56,
+[#187](https://github.com/wsher0901/roam/pull/187). External Web
+review done (founder-confirmed at the gate); the founder's word
+given; the reviewer critic's clean pass rode with the summary.
+All three gates PASSED; the
 mandate is executed: D-047 appended,
-[liftoff §6](../skills/liftoff.md#6--ledger-handoff--fire-the-cockpit)
+[liftoff §6](../../../skills/liftoff.md#6--ledger-handoff--fire-the-cockpit)
 rewired (primary `--cloud` birth · four-rung ladder · the
 standing first line),
-[SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts)
+[SETUP §cloud accounts](../../../SETUP.md#once-and-done--cloud-accounts)
 wired (recipe · routine annotation · charter born-at · `gh`
 environment note). Tower-authored bench run to completion by the
 probe session on the founder's direct word — self-authored cloud
@@ -36,7 +39,7 @@ needed. Gates green — run the mandate."
 ## What this task is
 
 D-047, amending
-[D-046](../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+[D-046](../../../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
 clause 3, one theme: the cockpit's birth vehicle becomes
 `claude --cloud` (list-native on every device); the routine fire
 drops to the fallback rung, remaining the summon button's engine.
@@ -44,8 +47,8 @@ Three evidence gates preceded the mandate — flight/track check,
 seed-provenance + branch-create probe, the founder's phone-list
 check — because the vehicle's ancestor (`--remote`) bundle-seeded
 sandboxes and destroyed batch-1 T3+T5 at the
-[D-020](../DECISIONS.md#d-020--2026-07--parallel-lanes-v2-native-lanes-replace-hand-built-orchestration)
-turn. Contract: [the spec](../specs/cloud-born-cockpit.md).
+[D-020](../../../DECISIONS.md#d-020--2026-07--parallel-lanes-v2-native-lanes-replace-hand-built-orchestration)
+turn. Contract: [the spec](../../../specs/cloud-born-cockpit.md).
 Founder kickoff 2026-07-21, its terms carried into the spec
 verbatim; scope edges: docs only, nothing outside DECISIONS ·
 liftoff · SETUP · spec · this memory (+ DASHBOARD via the ship
@@ -178,22 +181,22 @@ under).
 
 ## Where to look
 
-- [The spec](../specs/cloud-born-cockpit.md) — contract, gates,
+- [The spec](../../../specs/cloud-born-cockpit.md) — contract, gates,
   done-means.
-- [D-047](../DECISIONS.md#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law)
+- [D-047](../../../DECISIONS.md#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law)
   — this bench's decision;
-  [D-046](../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+  [D-046](../../../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
   — the amended decision;
-  [flight-cockpit](../specs/flight-cockpit.md) the precedent
+  [flight-cockpit](../../../specs/flight-cockpit.md) the precedent
   bench.
-- [liftoff §6](../skills/liftoff.md#6--ledger-handoff--fire-the-cockpit)
+- [liftoff §6](../../../skills/liftoff.md#6--ledger-handoff--fire-the-cockpit)
   ·
-  [SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts)
+  [SETUP §cloud accounts](../../../SETUP.md#once-and-done--cloud-accounts)
   — the two wiring targets, now wired.
 - Maiden evidence:
   [#177](https://github.com/wsher0901/roam/pull/177) ·
   [#180](https://github.com/wsher0901/roam/pull/180) · the
-  [harness-vocab-rename history](../history/workshop/mechanism/harness-vocab-rename.md).
+  [harness-vocab-rename history](../../../history/workshop/mechanism/harness-vocab-rename.md).
 - Draft PR:
   [#187](https://github.com/wsher0901/roam/pull/187) — the public
   window; born draft with the bench, flipped ready at THE GATE.
