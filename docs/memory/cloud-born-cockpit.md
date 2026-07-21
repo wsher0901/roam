@@ -57,6 +57,30 @@ before the founder's word.
   line 924` — no console to size from). The probe is handed to
   the founder's terminal; the TTY-only finding must shape
   liftoff §6's command shape at the mandate.
+- Doc verification LANDED (claude-code-guide agent, official
+  docs, 2026-02 era): `--cloud` is real and hidden from help;
+  `--remote` survives as a deprecated alias. From a TTY it
+  RETURNS IMMEDIATELY (v2.1.195+; this seat runs 2.1.216) with a
+  live setup checklist, then a session link — exactly the
+  kickoff's expected shape. Primary repo path: FRESH CLONE from
+  the GitHub remote AT THE CURRENT BRANCH — local commits must be
+  pushed first. BUT the ancestor's ghost survives on paper: a
+  documented BUNDLING fallback (auto when GitHub access is
+  unavailable; forced via `CCR_FORCE_BUNDLE=1`) uploads the local
+  repo — full history, all branches, uncommitted tracked changes.
+  So clone-vs-bundle is a runtime outcome, not a doc guarantee —
+  the founder's evidence-gate is exactly right, and the probe
+  must catch which path fires for THIS repo. Env checked on this
+  seat: no `CCR_*` variables set. Prereqs per docs: claude.ai
+  sign-in (not API key) + GitHub App or `/web-setup` auth + cwd a
+  git repo with a GitHub remote — all believed present here
+  (maiden flights 1–2 ran cloud sessions with write access).
+  Sessions started this way DO appear in the mobile app's Code
+  tab per docs — gate 0c tests the GENERAL-list claim live.
+  Sources: code.claude.com/docs/en/claude-code-on-the-web
+  (§Move tasks between web and terminal · §Send local
+  repositories without GitHub) · code.claude.com/docs/en/mobile
+  (§Start and monitor cloud sessions).
 - Gate 0c is founder-input: the phone-list answer must be
   recorded verbatim here mid-probe.
 
@@ -93,7 +117,14 @@ pseudo-console detour crashed for want of any console. So the
 probe goes to the only real TTY in the building: the founder's
 prompt — whom gate 0c summons mid-probe anyway. Marker `2ab9614`
 sits planted on local main, unpushed, waiting to catch any bundle
-ghost.
+ghost. Then the doc report landed and sharpened the stakes: the
+bundle is not dead, it is a DOCUMENTED FALLBACK (auto on missing
+GitHub access, forcible by env var) — clone-from-GitHub is the
+primary path, not a guarantee. Which is precisely why this bench
+gates on evidence: the probe decides clone-vs-bundle for this
+repo in practice, and from a real TTY the vehicle should return
+immediately with a checklist and a session link (docs, v2.1.195+),
+not attach.
 
 ## Where to look
 
