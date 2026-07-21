@@ -7,7 +7,9 @@ updated: 2026-07-21 · gates all green; mandate run (D-047 wired) · probe sessi
 
 ## Status
 
-ready — at THE GATE (2026-07-21). All three gates PASSED; the
+complete, awaiting merge (2026-07-21). External Web review done
+(founder-confirmed at the gate); the founder's word given. All
+three gates PASSED; the
 mandate is executed: D-047 appended,
 [liftoff §6](../skills/liftoff.md#6--ledger-handoff--fire-the-cockpit)
 rewired (primary `--cloud` birth · four-rung ladder · the
@@ -16,8 +18,8 @@ standing first line),
 wired (recipe · routine annotation · charter born-at · `gh`
 environment note). Tower-authored bench run to completion by the
 probe session on the founder's direct word — self-authored cloud
-diff, so external Web review precedes the founder's word. DO NOT
-MERGE.
+diff; the external Web review preceded the word per the
+no-solo-approval law.
 
 Gate record: 0a PASSED — origin heads = `main` only at
 `5d1d4eaa820dfd9ac0fa80a0021cff23ea8057bd`, no cockpit in flight.
@@ -52,20 +54,18 @@ GATE waits for external Web review before the founder's word.
 
 ## Pending issues
 
-- External Web review of the diff (self-authored), then the
-  founder's word at THE GATE — the only remaining gates before
-  ship.
-- The pushed commit's Actions run must be green before "done" is
-  spoken (the local CI mirror ran green at this seat).
+none — external Web review done (founder-confirmed), the word
+given, Actions green on the pushed commit; the weld is the last
+act.
 
 ## Left / idle
 
-THE GATE (external review → founder's word) · ship (memory moves
-to history/, board repaint). Founder manual acts ride after the
-weld: re-save the cockpit routine box from the updated charter
-master · add the `gh` install to the roam cloud environment's
-setup script (claude.ai/code settings → Environments) · the home
-seat's credential paste (unchanged, still owed).
+The weld itself (ship §7, in motion). Founder manual acts ride
+after it: re-save the cockpit routine box from the updated
+charter master · add the `gh` install to the roam cloud
+environment's setup script (claude.ai/code settings →
+Environments) · the home seat's credential paste (unchanged,
+still owed).
 
 ## The story
 
