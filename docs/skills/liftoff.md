@@ -62,19 +62,15 @@ Sources:
 Dispatch each eligible lane — fresh births and respawns alike —
 cloud-side via the route ladder; route 1 (label-spawn) is one command
 per lane: `gh pr edit <N> --add-label lane:cloud`.
-The away surface is the COCKPIT, fired at §6 with the flight plan
-as its payload — not spawned here. Fallback ladder, until the
-clerk's staged retirement
+The away surface is the COCKPIT, born at §6 by the rung ladder
+([D-047](../DECISIONS.md#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law))
+— not spawned here. Backstop, until the clerk's staged retirement
 ([D-046](../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)):
-if the cockpit fire fails at §6, `npm run fire:clerk` (API-fire,
-verified 2026-07-19 at the Shakedown Flight, A-checklist grades:
+if every §6 rung fails, `npm run fire:clerk` (API-fire, verified
+2026-07-19 at the Shakedown Flight, A-checklist grades:
 [clerk-autospawn](../specs/clerk-autospawn.md) ·
-[shakedown-audit](../specs/shakedown-audit.md)); final fallback,
-retained verbatim: the manual charter paste — claude.ai/code
-(browser or the phone's Claude app) → new session on
-wsher0901/roam → paste the relevant charter master from
-[SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts)
-(the clerk session itself verified 2026-07-17 —
+[shakedown-audit](../specs/shakedown-audit.md); the clerk session
+itself verified 2026-07-17 —
 [cloud-clerk](../specs/cloud-clerk.md)).
 
 Sources:
@@ -100,19 +96,46 @@ table IS the flight plan: every airborne lane with its url, every
 abort and hold with its reason in Your move / State.
 Ship the micro-PR (board + any IDEAS harvest).
 
-Then THE COCKPIT FIRE
-([D-046](../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)):
-compose the flight plan FROM THE BOARD just painted — three
-parts, plain sentences: in flight (each airborne lane + url) ·
-owed (every parked/held item + reason) · needs the founder's word
-(every gate waiting) — and fire the cockpit routine with it as
-the payload: `npm run fire:cockpit -- "<flight plan>"`. The
-founder never opens the routines page. One cap-run per outing —
-the accepted trade, already counted in §2's budget. Record the
-returned session URL for the §7 close line (the cockpit adds its
-own Sessions row at its first repaint). Fire fails → fall back
-per §4's ladder (fire:clerk · the manual paste) and record the
-failure + fallback in the close line — nothing silently parked.
+Then THE COCKPIT BIRTH
+([D-047](../DECISIONS.md#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law),
+amending
+[D-046](../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+clause 3): compose the flight plan FROM THE BOARD just painted —
+three parts, plain sentences: in flight (each airborne lane +
+url) · owed (every parked/held item + reason) · needs the
+founder's word (every gate waiting) — and OPEN it with the
+standing first line, verbatim on every cockpit birth:
+
+> Before any act: verify your clone's HEAD equals origin/main's
+> tip and your workspace contains nothing origin lacks;
+> mismatch = report verbatim and STOP.
+
+The full birth prompt = the cockpit charter master from
+[SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts)
+adopted VERBATIM, then this flight plan. Birth by the rung
+ladder, evidence order (gate 0b, [D-047](../DECISIONS.md#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law)):
+
+1. The automated hidden-console `--cloud` birth (PRIMARY):
+   `claude --cloud "<birth prompt>"` fired from a hidden console
+   hosting a winpty pty (Start-Process, output captured to file)
+   — `--cloud` demands a real TTY and refuses every piped route
+   (the harness shell, the `!` bang-prefix, redirected
+   Start-Process — all refuse verbatim). The birth returns the
+   session link; sessions born this way are list-native — they
+   join the phone's Code-tab GENERAL session list.
+2. Compose-and-hand: the ritual composes the full command; the
+   founder pastes it into a plain terminal — nothing piped.
+3. `npm run fire:cockpit -- "<birth prompt>"` (the routine fire
+   — list-invisible, so never the plan; one cap-run, already
+   counted in §2's budget; the staged summon button's engine).
+4. The manual charter paste, retained verbatim: claude.ai/code
+   (browser or the phone's Claude app) → new session on
+   wsher0901/roam → paste the birth prompt.
+
+Record the rung that birthed the cockpit + the returned session
+URL for the §7 close line (the cockpit adds its own Sessions row
+at its first repaint). A failed rung falls to the next with its
+failure recorded in the close line — nothing silently parked.
 
 Sources:
 [DASHBOARD](../DASHBOARD.md)
