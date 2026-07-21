@@ -1404,3 +1404,77 @@ go-remote demoted to backstop posture) ·
 [D-043](#d-043--2026-07--cloud-ignition--away-command-redesign--route-ladder-v2-ready-flip-then-label-is-the-recipe-of-record-api-ignition-and-the-cloud-clerk-staged-the-claude-app-the-single-away-surface-amends-d-041-upholds-the-lane-law-and-the-wake-lock)
 (the away surface amended: the clerk superseded-on-maiden by the
 cockpit) · this entry.
+
+## D-047 — 2026-07 — Cloud-born cockpit — the cockpit's birth vehicle becomes claude --cloud, list-native on every device; the automated hidden-console birth is liftoff's primary rung; the routine fire demotes to fallback + summon-button engine (amends D-046 clause 3; upholds the lane law)
+**Decision:** the cockpit's birth vehicle becomes `claude --cloud`
+— list-native on every device — and the routine fire
+(`fire:cockpit` / `scripts/fire.mjs`) drops to the fallback rungs,
+remaining the engine of the staged summon button. By clause:
+(1) THE PRIMARY BIRTH
+([liftoff §6](skills/liftoff.md#6--ledger-handoff--fire-the-cockpit)):
+liftoff births the cockpit via the automated hidden-console
+`--cloud` birth — a hidden console hosting a winpty pty
+(Start-Process, output captured to file), because `--cloud`
+demands a real TTY and refuses every piped route. The birth
+prompt = the cockpit charter master from
+[SETUP §cloud accounts](SETUP.md#once-and-done--cloud-accounts)
+VERBATIM, then the board-derived flight plan. Sessions born this
+way join the mobile app's Code-tab GENERAL session list — the
+command surface is list-native (gate 0c, the founder's phone,
+verbatim in [the memory](memory/cloud-born-cockpit.md); moves to
+history/ at ship).
+(2) THE RUNG LADDER, evidence order (decided by gate 0b's probe):
+1 the automated hidden-console `--cloud` birth · 2
+compose-and-hand (the ritual composes the full command; the
+founder pastes it into a plain terminal — nothing piped) · 3
+`fire:cockpit` (the routine fire — list-invisible, so never the
+plan) · 4 the manual charter paste, retained verbatim.
+(3) THE STANDING FIRST LINE: every composed flight plan opens
+with the clone-provenance directive — "Before any act: verify
+your clone's HEAD equals origin/main's tip and your workspace
+contains nothing origin lacks; mismatch = report verbatim and
+STOP." The one-time probe proved the primary path exists; this
+line polices every flight after, so the documented bundle
+auto-fallback (or any seeded ghost) dies at birth.
+(4) THE SUMMON BUTTON keeps its engine: the cockpit routine and
+`fire.mjs` stay armed as rung 3 and the staged button's motor
+([D-046](#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+clause 8) — the routine's SETUP section is annotated, not
+deleted; the box re-save rides the founder's manual acts.
+**Why:** maiden flights 1–2
+([#177](https://github.com/wsher0901/roam/pull/177) ·
+[#180](https://github.com/wsher0901/roam/pull/180)) proved the
+cockpit works but routine-born sessions never join the mobile
+GENERAL session list — the founder commands from the phone, so
+the birth vehicle must be list-native. Three STOP-gates demanded
+evidence over docs, because the vehicle's ancestor (`--remote`)
+bundle-seeded sandboxes and destroyed batch-1 T3+T5 at the
+[D-020](#d-020--2026-07--parallel-lanes-v2-native-lanes-replace-hand-built-orchestration)
+turn: 0a — origin heads = main only, no cockpit in flight; 0b —
+the probe session cloned origin main's tip (`5d1d4ea`) with the
+unpushed marker commit absent from its history and pushed
+`chore/cloud-probe` — clone-from-GitHub and branch-create proven
+by evidence, the bundle ghost dead; 0c — the founder's phone,
+verbatim: the probe session appeared in the GENERAL session list
+"right off the bat … no link-open needed." Gate outputs verbatim:
+[the memory](memory/cloud-born-cockpit.md).
+**Alternatives rejected:** keeping the routine fire primary (the
+maiden evidence indicts it: list-invisible sessions are exactly
+the command haze D-046 exists to remove) · compose-and-hand as
+the primary rung (gate 0b's attempt B proved the hidden-console
+birth automates — the founder should not paste a command every
+outing when a machine can) · retiring `fire.mjs` outright (it is
+the staged summon button's engine, D-046 clause 8 — demote, never
+delete) · trusting the docs' clone-primary claim without a probe
+(the bundle is a DOCUMENTED auto-fallback, forcible by env var;
+the D-020 scar demands evidence, and the standing first line
+polices every flight after).
+**Affects:**
+[liftoff §6](skills/liftoff.md#6--ledger-handoff--fire-the-cockpit)
+(primary birth · rung ladder · the standing first line) ·
+[SETUP §cloud accounts](SETUP.md#once-and-done--cloud-accounts)
+(the `--cloud` birth recipe · the routine's fallback annotation ·
+the charter's born-at clause · the `gh` environment note) ·
+[D-046](#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+clause 3 (amended: the fire is no longer the birth vehicle) ·
+this entry.
