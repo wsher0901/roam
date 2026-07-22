@@ -114,3 +114,30 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   weigh: resolve `gh` via `process.env.ComSpec`/`shell: true` on
   win32, or print the underlying error instead of swallowing it in
   the catch.
+- 2026-07-22 (Claude Code, liftoff — the first cockpit birth flown
+  from the documented recipe): the rung-1 mechanics in
+  [liftoff §6](skills/liftoff.md#6--ledger-handoff--fire-the-cockpit)
+  and [SETUP §cloud accounts](SETUP.md#once-and-done--cloud-accounts)
+  do not reproduce AS WRITTEN — "a hidden console hosting a winpty
+  pty (Start-Process, output captured to file)" fails at the capture
+  step, twice, for the same reason: `winpty` itself refuses whenever
+  either of its own ends is redirected — `stdin is not a tty` when
+  Start-Process redirects the streams, `stdout is not a tty` when the
+  redirection happens inside the console (`> file 2>&1`), and this
+  Git-for-Windows build exposes no non-tty escape flag (`winpty
+  --help` lists only `--mouse`, `--showkey`, `--version`). What
+  actually birthed the cockpit at 2026-07-22, exit 0, link returned:
+  a hidden console with NO redirection anywhere — `Start-Process
+  powershell -WindowStyle Hidden -NoExit -File <launcher>`, the
+  launcher calling `claude --cloud "<prompt read from a file>"` — and
+  the output recovered afterwards by ATTACHING to that console
+  (`FreeConsole`/`AttachConsole(pid)` + `ReadConsoleOutputCharacterW`
+  over `CONOUT$`) instead of capturing a stream. The insight worth
+  keeping: a hidden console already gives `claude` a real TTY on both
+  ends, so winpty is not needed at all — it was the probe's scaffold,
+  and carrying it into the recipe added the one component that cannot
+  coexist with capture. Proposal for triage: rewrite rung 1's
+  mechanics to the console-attach shape and keep the working launcher
+  as a script (`scripts/`) so the next liftoff does not re-derive it;
+  the `-NoExit` console must be killed after the read, and the prompt
+  must reach `claude` as a file-read argument, never a pipe.
