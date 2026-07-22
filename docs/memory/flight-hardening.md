@@ -46,6 +46,27 @@ charter master (it is a copy, and this PR edits the master a second
 time after [#191](https://github.com/wsher0901/roam/pull/191)), and
 pruning the cloud environment's setup script.
 
+Two contradictions OUTSIDE the declared file list, found by the
+ship-gate critic and left unfixed here on purpose — the mandate
+closed the file list, and widening it silently is exactly the habit
+this bench exists to correct:
+
+1. [DASHBOARD](../DASHBOARD.md)'s Needs-you item 1 still tells the
+   founder to "add the `gh` install to the roam cloud
+   environment's setup script" — the precise act this PR proves
+   cannot succeed, in the old environment name. The board is
+   ritual-repainted, so THE SHIP TAIL must correct that line; it is
+   named here so the tail cannot miss it.
+2. [D-047](../DECISIONS.md#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law)'s
+   clause 1 still records the pty-wrapper shape as the primary
+   birth. Decisions are an append-only ledger amended by new
+   D-numbers rather than rewritten, and
+   [SETUP](../SETUP.md#once-and-done--cloud-accounts) now states
+   plainly that it corrects D-047's note — so a reader arriving via
+   SETUP is safe. A reader arriving at D-047 FIRST is not. Whether
+   that wants a pointer line, a fresh D-number, or nothing is the
+   founder's call at the gate, not this bench's.
+
 ## Left / idle
 
 nothing parked. The [IDEAS](../IDEAS.md) lines this bench does not
