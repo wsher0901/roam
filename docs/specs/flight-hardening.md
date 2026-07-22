@@ -155,5 +155,7 @@ the ship tail. Nothing outside this list.
       sentence recorded.
 - [x] [IDEAS](../IDEAS.md) lines this bench fixes are closed and
       dated naming this PR; the seven named lines stay open.
-- [ ] Full CI mirror green locally AND the pushed head's Actions run
-      green; ship §6's critic has run.
+- [x] Full CI mirror green locally AND the pushed head's Actions run
+      green; ship §6's critic has run (clean on all nine items; its
+      two findings sit outside the file list and are recorded in
+      [the memory](../memory/flight-hardening.md)'s Pending issues).
