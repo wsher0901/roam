@@ -109,20 +109,52 @@ Sibling constant — reply-ack window: ~15 minutes, founder-side:
 after replying to a `BLOCKED:` lane, no new commit on its branch
 within the window means the session expired — respawn per
 [§Respawn](#respawn-on-an-existing-bench-liftoff-adopt).
+
+THE ACK TOKEN — one canonical form, and this section is where it
+lives. The Status line BEGINS, exactly:
+
+```text
+airborne · <url> · <date>
+```
+
+Middots, not em-dashes; the token is the first thing on the line.
+Every other home of this token
+([TEMPLATE](../memory/TEMPLATE.md)'s state table, the lane-worker
+charter master in
+[SETUP](../SETUP.md#once-and-done--cloud-accounts)) copies THIS
+form — §Canary is the contract the lane's watcher actually reads,
+so it wins any disagreement.
+
+THE MATCH IS ANCHORED — the lane tests whether its Status line
+STARTS WITH `airborne ·`. Never a substring search anywhere in the
+memory, and never a search for the bare word: a lane's own claim
+prose ("waiting for the baton-holder's airborne ack") contains the
+word, so a substring match finds the lane's own writing and reads
+it as the ack. Both failure modes are lived, not hypothetical —
+2026-07-22, [#191](https://github.com/wsher0901/roam/pull/191): the
+watcher first matched its own claim text, and then, once the token
+mattered, missed an em-dash ack entirely, read the window as timed
+out, and staged a stand-down. Only the wake-lock's rejected-push
+rule ([§Wake-lock](#wake-lock--parking)) saved the flight.
+
 - Lane side: first act on waking is one trivial commit — memory
   Status → "claimed by <vehicle> — <date>" — pushed to its branch;
   then WAIT for the baton-holder's acknowledgment in memory before
   real
-  work. Seeing "failed/aborted", a Status this lane does not own
+  work. Test for it with the anchored match above. Seeing
+  "failed/aborted", a Status this lane does not own
   (parked · respawned · superseded), or no acknowledgment within that
   window (~10 min cloud / ~2 local): self-terminate cleanly (push
   whatever exists, stop).
-- Baton-holder side: watch for the canary. On arrival, write "airborne ·
-  <vehicle or url> · <date>" into the lane's memory Status and push.
-  No canary within ~10 minutes (cloud) or ~2 (local): write "spawn
-  failed <date> — <reason> → run locally" into the memory and record
-  the abort on the board — the lane's Sessions row + the Needs-you
-  mirror ([handoff §4](handoff.md)), then stand the lane down.
+- Baton-holder side: watch for the canary. On arrival, OVERWRITE the
+  lane's memory Status so the line begins exactly "airborne ·
+  <vehicle or url> · <date>" — write the token character-for-character,
+  never a paraphrase and never a decorated variant; the lane cannot
+  see a near-miss. Push. No canary within ~10 minutes (cloud) or ~2
+  (local): write "spawn failed <date> — <reason> → run locally" into
+  the memory and record the abort on the board — the lane's Sessions
+  row + the Needs-you mirror ([handoff §4](handoff.md)), then stand
+  the lane down.
 
 Sources:
 [DASHBOARD](../DASHBOARD.md)

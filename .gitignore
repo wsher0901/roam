@@ -160,3 +160,6 @@ docs/.obsidian/
 # Close-lock flag: written by handoff/liftoff as their last act,
 # cleared by the session-start hook (machine-local, never committed)
 .claude/session-closed
+# Tool state written into the repo root at cockpit birth
+# (rung 1 leaves .local/state/gh/device-id behind)
+.local/

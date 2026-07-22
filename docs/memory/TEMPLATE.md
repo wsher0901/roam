@@ -33,11 +33,18 @@ lane's own live claim. Whenever the Status line is stamped, refresh
 the frontmatter `updated:` line in the same edit — a stale
 `updated:` mis-attributes the seat (found 2026-07-16).
 
+The airborne row is the one MACHINE-CHECKED token in this table —
+a waiting lane polls for it — so its form is the contract in
+[parallel-lanes §Canary](../skills/parallel-lanes.md#canary-handshake-both-sides),
+copied here exactly, middots and all. Write it character-for-character;
+a near-miss is invisible to the lane (proven live 2026-07-22 —
+an em-dash ack cost a flight its handshake).
+
 | State | Written by | Licenses |
 |---|---|---|
 | bench ready | baton-holder, at birth | claiming |
 | claimed — <vehicle · date> | the lane, canary | waiting for ack |
-| airborne — <url · date> | baton-holder ack | the lane works |
+| airborne · <url> · <date> | baton-holder ack (the machine-checked token — exact form) | the lane works |
 | blocked — <reason> | the lane (+ BLOCKED: PR comment) | waiting on founder |
 | parked — <date · reason> | handoff §1.5, liftoff §5, or the lane | nothing — until founder action |
 | claimed for respawn — <vehicle · date> | the cloud lane | waiting for ack |
