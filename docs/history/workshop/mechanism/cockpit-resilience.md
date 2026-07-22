@@ -1,22 +1,24 @@
 ---
-type: memory
-id: cockpit-resilience
-updated: 2026-07-22 · completion · work PC
+type: history
+slug: cockpit-resilience
+shipped: 2026-07-22 16:36
+pr: 195
 ---
 
 # cockpit-resilience — a cockpit that survives, announces, and replaces its own connector loss
 
 ## Status
 
-complete, awaiting merge — 2026-07-22, work PC. The five rungs,
-the summon workflow, [D-048](../DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047), the corrections and the IDEAS triage
+shipped — 2026-07-22 16:36,
+[#195](https://github.com/wsher0901/roam/pull/195). The five rungs,
+the summon workflow, [D-048](../../../DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047), the corrections and the IDEAS triage
 all landed; the declared file list held with nothing outside it.
 The workflow was NOT fired and `ops/summon` was never pushed — the
 first fire is the founder's, after the weld and after the two
 repository secrets exist. Authored at this seat; the payload is
 tower-authored, so external Web review precedes the founder's word
 at the gate (no-solo-approval,
-[LAWS §Workflow](../LAWS.md#workflow-non-negotiable)).
+[LAWS §Workflow](../../../LAWS.md#workflow-non-negotiable)).
 
 ## What this task is
 
@@ -25,9 +27,9 @@ a cockpit can and cannot do once its GitHub connector dies: it
 stays a full author, it stops being a commander. This bench gives
 it the ladder back — five rungs (prevent · detect · repair in
 place · degrade · self-rescue) plus explicit supersession — and the
-decide, [D-048](../DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047), that settles which rescue vehicles are lawful.
+decide, [D-048](../../../DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047), that settles which rescue vehicles are lawful.
 
-The contract is [the spec](../specs/cockpit-resilience.md). The
+The contract is [the spec](../../../specs/cockpit-resilience.md). The
 first fire of the summon workflow is the FOUNDER's, after the weld:
 this bench never fires it and never pushes `ops/summon`.
 
@@ -130,17 +132,54 @@ founder-supplied text in a PUBLIC repo; and the checkout pins
 rather than whatever the pushed `ops/summon` commit happens to
 carry.
 
+**The gate fold, and the residual it names.** The founder's fold
+caught the limit of that second decision: on a `push` event GitHub
+runs the workflow DEFINITION from the pushed ref, not from the
+default branch. So `ref: main` protects the fire SCRIPT and
+cannot protect `summon.yml` itself — a push to `ops/summon`
+carrying an edited workflow would run the edited version. That is
+now an ACCEPTED residual, written in both homes: the workflow's
+own header, positioned so anyone about to harden the file reads it
+before re-deriving the hole, and a new `**Residual:**` field in
+[D-048](../../../DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047).
+The field is new to the log — 27 prior entries use only Decision ·
+Why · Alternatives rejected · Affects — so it was added to D-048
+alone rather than retrofitted, sitting between the rejections and
+Affects where an accepted risk reads naturally after the things
+that were refused. Accepted on these grounds: only the founder and
+the founder's own sessions can push to this repo, and the worst
+case is one unwanted routine fire, a cap run of recoverable noise,
+never repo write. Revisit if a session is ever observed authoring
+workflow files.
+
+**The gate.** Tower-authored, so no-solo-approval made external
+Web review a precondition of the founder's word rather than a
+courtesy after it — the same sequence [#193](https://github.com/wsher0901/roam/pull/193)
+established. The review returned PASS twice: first on `aa62baf` —
+seven files as declared, least-privilege permissions, secrets
+never echoed, the mandate passed as env (the correct injection
+defense on a public repo), the `ref: main` pin, the guarded
+ref-delete, honest exits on all four paths, tombstone and refusal
+guard verbatim, rungs 0/1/2/4/5 landed,
+[#193](https://github.com/wsher0901/roam/pull/193)'s reason
+corrected to by-design, the watch item filed as a hypothesis, and
+the gates re-run independently (links 2348/0, ledger 85↔85, memory
+valid). Both hardening calls were approved, and so was the
+sed-over-grep swap. Then again on `0af0d97` after the fold, the
+delta verified comment-only by filtering non-comment lines out of
+the workflow diff until nothing remained.
+
 ## Where to look
 
-- The contract: [the spec](../specs/cockpit-resilience.md) — the
+- The contract: [the spec](../../../specs/cockpit-resilience.md) — the
   five rungs, the decide's clauses, Done-means including the two
   unproven ones.
 - The dependency map this ladder climbs:
-  [SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts),
+  [SETUP §cloud accounts](../../../SETUP.md#once-and-done--cloud-accounts),
   written by
-  [flight-hardening](../history/workshop/mechanism/flight-hardening.md).
+  [flight-hardening](flight-hardening.md).
 - The fire vehicle reused as-is:
-  [`scripts/fire.mjs`](../../scripts/fire.mjs).
+  [`scripts/fire.mjs`](../../../../scripts/fire.mjs).
 - The flight that motivated all of it:
-  [lane-worker-baton](../history/workshop/mechanism/lane-worker-baton.md)
+  [lane-worker-baton](lane-worker-baton.md)
   ([#191](https://github.com/wsher0901/roam/pull/191)).

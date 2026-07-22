@@ -2,11 +2,12 @@
 type: spec
 id: cockpit-resilience
 title: Cockpit resilience — a cockpit that survives, announces, and replaces its own connector loss (D-048)
-status: in-flight
+status: shipped
 stage: workshop
 branch: feat/cockpit-resilience
 pr: 195
 opened: 2026-07-22
+shipped: 2026-07-22 16:36
 ---
 
 # cockpit-resilience — surviving, announcing, and replacing a lost GitHub connector
@@ -201,4 +202,4 @@ via the ship tail. Nothing outside this list.
       in-session revival — PROVEN / DISPROVEN. Currently: unproven.
 - [ ] AT THE NEXT DRILL (post-weld, recorded here): rung 5's mobile
       app can create a session on a repo — PROVEN / DISPROVEN.
-      Currently: unproven.
+      Currently: unproven — carried past the weld deliberately.
