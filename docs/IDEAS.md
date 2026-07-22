@@ -101,3 +101,16 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   later; proposal: [ship](skills/ship.md)'s verification norms gain
   "verification commands run foreground; results quoted from
   captured output" — founder decides at triage, not this bench.
+- 2026-07-22 (Claude Code, liftoff): DEFECT — `npm run count:runs`
+  fails at the work PC's Git Bash with the generic "could not read
+  GitHub" message while `node scripts/count-routine-runs.mjs` run
+  directly succeeds on the same seat, same second; `gh` is
+  authenticated and the same `gh api` call works by hand, so the
+  cause is the npm wrapper's environment (PATH mangling under Git
+  Bash leaves `execFileSync("gh", …)` unable to resolve the
+  executable), not GitHub. Cost: the script's honest failure sends
+  [liftoff §2](skills/liftoff.md#2--triage-every-open-item) to ask
+  the founder for a number the seat could have derived. Proposals to
+  weigh: resolve `gh` via `process.env.ComSpec`/`shell: true` on
+  win32, or print the underlying error instead of swallowing it in
+  the catch.
