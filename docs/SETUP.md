@@ -130,7 +130,7 @@ lane:cloud.
    Status is a claim you do not own, or it is terminal (parked ·
    failed · held · shipped · superseded): pull, re-read, push
    nothing further, and terminate — another worker owns this
-   bench. Otherwise WAIT for the control tower's airborne ack per
+   bench. Otherwise WAIT for the baton-holder's airborne ack per
    §Canary before real work.
 4. Do the task in the PR's memory file and spec. Push every
    commit to the PR's branch. On ANY rejected push: pull, re-read
