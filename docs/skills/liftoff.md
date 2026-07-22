@@ -190,6 +190,14 @@ URL for the §7 close line (the cockpit adds its own Sessions row
 at its first repaint). A failed rung falls to the next with its
 failure recorded in the close line — nothing silently parked.
 
+This ladder BIRTHS a cockpit; a cockpit that loses its GitHub
+connector IN FLIGHT climbs a different one — prevent · detect ·
+repair · degrade · self-rescue, ending in a push to `ops/summon`
+that fires a replacement
+([D-048](../DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047);
+procedure in the charter master,
+[SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts)).
+
 Sources:
 [DASHBOARD](../DASHBOARD.md)
 [Cockpit charter — SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts)

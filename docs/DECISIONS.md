@@ -1478,3 +1478,149 @@ the charter's born-at clause · the `gh` environment note) ·
 [D-046](#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
 clause 3 (amended: the fire is no longer the birth vehicle) ·
 this entry.
+
+## D-048 — 2026-07 — Cockpit resilience — the five-rung connector ladder; the summon workflow live on workflow_dispatch and a push to ops/summon; explicit supersession with tombstone and refusal guard; and the phone bootstrap; merge-on-signal and a cloud-environment token both REJECTED (upholds no-solo-approval and D-047)
+**Decision:** a cockpit survives, announces, and replaces its own
+GitHub connector loss, by a ladder that reaches OUTSIDE the
+session. By clause:
+(1) THE FIVE-RUNG LADDER, written into the cockpit charter master
+([SETUP §cloud accounts](SETUP.md#once-and-done--cloud-accounts)):
+R0 PREVENT — a watching cockpit polls on a cadence (fetch origin ·
+re-read the lane's Status · check the PR), reporting only on
+change, instead of sleeping on one long monitor; the cadence is a
+dial in minutes and the trade — usage and context — is stated in
+the charter, because this is a mitigation, not a guarantee. R1
+DETECT — one cheap connector probe immediately before ANY command
+act, reported in the same turn; never a command act on an
+unverified connector. R2 REPAIR IN PLACE — retry once (the client
+auto-reconnects with backoff, about five attempts, before marking
+a server failed), then attempt in-session revival from the shell
+(`claude mcp list` and whatever reconnect subcommand the installed
+version exposes — `claude mcp --help` first, never a guessed
+flag), then, failing both, TELL THE FOUNDER in one fixed sentence
+as its own whole turn. R3 DEGRADE — git-only work continues
+(author, commit, push, weld); commanding pauses; nothing is lost
+or redone; the surviving-acts map is cross-referenced, not
+restated. R4 SELF-RESCUE — push one empty commit to `ops/summon`,
+then land.
+(2) THE SUMMON WORKFLOW IS LIVE — `.github/workflows/summon.yml`,
+two triggers: a push to the reserved branch `ops/summon` (the
+self-rescue path) and `workflow_dispatch` with one optional
+`mandate` input. It runs `scripts/fire.mjs` for the cockpit target
+— the verified vehicle, reused as-is and never reimplemented —
+with `COCKPIT_FIRE_TOKEN` and `COCKPIT_ROUTINE_ID` from repository
+secrets, writes the fire status and any returned session URL to
+the run's step summary, and then deletes the `ops/summon` ref so
+one push is exactly one rescue. Concurrency `summon`,
+cancel-in-progress false: a second summon must never cancel a
+first mid-fire. The token is never echoed. This RESOLVES the
+summon button staged by
+[D-046](#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+clause 8
+([SETUP §Staged](SETUP.md#staged--turns-on-when-its-stage-opens)
+updated). The dispatch button is documented as present but UNUSED
+BY PREFERENCE — the founder does not use the GitHub app; it costs
+nothing and is never required.
+(3) THE PAYLOAD IS A POINTER, never a plan: "Summoned cockpit.
+Derive state from origin; the board's flight context is the
+authoritative flight plan (#193). You supersede the previous
+cockpit." — the board-authoritative rule from
+[#193](https://github.com/wsher0901/roam/pull/193), applied to the
+rescue path.
+(4) SUPERSESSION MADE EXPLICIT, so the founder never commands a
+dead cockpit by accident. A TOMBSTONE: a landed-and-superseded
+cockpit's final message is one fixed sentence, alone, nothing
+after it. A REFUSAL GUARD: on any founder message thereafter it
+re-derives from origin, and if the board's seat stamp is not its
+own it replies with the tombstone line and NOTHING else — no
+work, no writes; this is charter rule 7's supersession made loud.
+A SUCCESSOR DUTY: the replacement's first act after deriving
+state is a board repaint marking the predecessor landed ·
+superseded with its session URL and seating itself — the board
+always names exactly one live cockpit.
+(5) A SUMMONED COCKPIT IS ROUTINE-BORN and therefore
+LIST-INVISIBLE — reachable by push and by its board link, not by
+the phone's general session list. `--cloud`
+([D-047](#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law))
+therefore STAYS PRIMARY for a planned birth, because it is
+list-native; the routine is the rescue vehicle, not the plan.
+(6) RUNG 5, THE PHONE BOOTSTRAP — for no terminal and no GitHub, a
+paste recorded verbatim in SETUP that tells the session to clone
+the repo and read its own charter, so the paste carries a pointer
+rather than a doctrine copy. VERIFY BEFORE RELYING: whether the
+mobile app can create a session on a repo is unproven — tested at
+the next drill, recorded in
+[the spec](specs/cockpit-resilience.md)'s Done-means. Rung 2b's
+in-session revival is unproven on the same terms.
+(7) POINTER:
+[D-047](#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law)'s
+rung-1 mechanics are corrected by
+[#193](https://github.com/wsher0901/roam/pull/193);
+[liftoff §6](skills/liftoff.md#6--ledger-handoff--fire-the-cockpit)
+owns the birth shape. D-047's entry is left unannotated — this
+log is append-only and amendments live in new entries (the
+founder's ruling at the #193 gate).
+**Why:** the first end-to-end flight
+([#191](https://github.com/wsher0901/roam/pull/191)) lost its
+cockpit's GitHub connector mid-flight, stranding merge, label (so:
+lane spawn), PR-open, and CI-read. External research on 2026-07-22
+corrected the mechanism and with it the shape of the fix: a cloud
+session receives a SESSION-SCOPED GitHub MCP injection and has NO
+`gh` CLI BY DESIGN, so the connector is the sole API path and
+redundancy INSIDE the session is impossible — there is no second
+credential to hand out. Community reports attribute mid-session
+drops to idle timeout and context compression, which matches this
+flight exactly: the cockpit sat idle on a long monitor while its
+lane worked. Official docs put the client's own recovery at
+auto-reconnect with backoff up to five attempts, after which the
+server is marked failed and retried manually from `/mcp` — which
+is why R2 retries once and then asks the founder for `/mcp` by
+name. Since redundancy is impossible, resilience must be a ladder
+that leaves the session; and since a connector-dead cockpit can
+still PUSH (git, not API), the rescue trigger is a push.
+**Alternatives rejected:** MERGE-ON-SIGNAL — a GitHub Action
+merging on an agreed signal with the runner's own token, the
+obvious permanent fix and the one
+[#193](https://github.com/wsher0901/roam/pull/193) staged. Turned
+down for two reasons. It restores only MERGE, while a
+connector-dead cockpit still cannot spawn lanes or open benches —
+so it buys the smallest fraction of lost command. Decisively:
+every session pushes as the founder, so a push-triggered MERGE
+cannot distinguish the baton-holder from a lane, or from a
+redelivered webhook — it would break
+[no-solo-approval](LAWS.md#workflow-non-negotiable) structurally,
+not by accident. A push-triggered SUMMON passes the same test,
+which is why it is permitted: a stray spawn is recoverable noise
+(one cap run), not a law breach · A SCOPED GITHUB TOKEN IN THE
+CLOUD ENVIRONMENT — rejected for the same class of reason: every
+cloud session reads that environment, lanes included, so the token
+would hand lane sessions the command powers the lane law denies
+them · REDUNDANT IN-SESSION CONNECTORS — impossible by design, per
+the research above; the idea died on the facts, not on judgment ·
+POLLING AS A GUARANTEE — R0 reduces idle time but cannot prevent
+compression-driven drops, so it is written as a mitigation with
+its cost stated, never as the fix.
+**Residual:** on a `push` event GitHub runs the workflow
+definition FROM THE PUSHED REF, so the `ref: main` checkout pin
+protects the fire SCRIPT but not `summon.yml` itself — a push to
+`ops/summon` carrying an edited workflow would run the edited
+version. ACCEPTED: only the founder and the founder's own sessions
+can push to this repo, and the worst case is one unwanted routine
+fire (a cap run of recoverable noise), never repo write. Revisit
+if a session is ever observed authoring workflow files.
+**Affects:**
+[SETUP §cloud accounts](SETUP.md#once-and-done--cloud-accounts)
+(the charter's connector ladder · the summon workflow entry + its
+required repository secrets · the by-design environment
+correction · rung 5's bootstrap paste · the dependency map's
+recovery rung and its merge-on-signal reversal) ·
+[SETUP §Staged](SETUP.md#staged--turns-on-when-its-stage-opens)
+(the summon button resolves) ·
+[liftoff §6](skills/liftoff.md#6--ledger-handoff--fire-the-cockpit)
+(the in-flight ladder cross-reference) ·
+`.github/workflows/summon.yml` (new) ·
+[D-046](#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+clause 8 (the staged button resolves) ·
+[D-047](#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law)
+(upheld: `--cloud` stays primary; the routine is the rescue
+vehicle) · this entry.
