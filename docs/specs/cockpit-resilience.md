@@ -5,7 +5,7 @@ title: Cockpit resilience — a cockpit that survives, announces, and replaces i
 status: in-flight
 stage: workshop
 branch: feat/cockpit-resilience
-pr: TBD
+pr: 195
 opened: 2026-07-22
 ---
 
@@ -168,30 +168,30 @@ via the ship tail. Nothing outside this list.
 
 ## Done-means
 
-- [ ] The cockpit charter master carries rungs 0, 1, 2, 4b and the
+- [x] The cockpit charter master carries rungs 0, 1, 2, 4b and the
       cross-reference to rung 3, with rung 2c's warning in its fixed
       wording.
-- [ ] `.github/workflows/summon.yml` exists with BOTH triggers, runs
+- [x] `.github/workflows/summon.yml` exists with BOTH triggers, runs
       `scripts/fire.mjs` (not a reimplementation), takes both secrets
       from repository secrets, writes status + session URL to
       `$GITHUB_STEP_SUMMARY`, deletes the `ops/summon` ref, echoes no
       token, and sets concurrency `summon` /
       `cancel-in-progress: false`.
-- [ ] The workflow parses as strict YAML (and passes actionlint if
+- [x] The workflow parses as strict YAML (and passes actionlint if
       available).
-- [ ] The rung-5 phone bootstrap paste is recorded verbatim in SETUP,
+- [x] The rung-5 phone bootstrap paste is recorded verbatim in SETUP,
       marked verify-before-rely.
-- [ ] D-048 is in [DECISIONS](../DECISIONS.md) in house style with
+- [x] D-048 is in [DECISIONS](../DECISIONS.md) in house style with
       every named clause, including both rejections WITH their
       reasons.
-- [ ] SETUP §Staged's summon-button line resolves to live.
-- [ ] SETUP's cloud-environment reason is corrected to by-design.
-- [ ] [liftoff](../skills/liftoff.md) gains the recovery-ladder line
+- [x] SETUP §Staged's summon-button line resolves to live.
+- [x] SETUP's cloud-environment reason is corrected to by-design.
+- [x] [liftoff](../skills/liftoff.md) gains the recovery-ladder line
       and nothing else.
-- [ ] [IDEAS](../IDEAS.md): merge-on-signal and summon-staged closed
+- [x] [IDEAS](../IDEAS.md): merge-on-signal and summon-staged closed
       with outcomes; the routine-vs-interactive watch item opened as
       a hypothesis.
-- [ ] Nothing outside the FILES TOUCHED list; the workflow is NOT
+- [x] Nothing outside the FILES TOUCHED list; the workflow is NOT
       fired and `ops/summon` is NOT pushed from this bench.
 - [ ] Full CI mirror green locally AND the pushed head's Actions run
       green; ship §6's critic has run.

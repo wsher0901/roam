@@ -8,9 +8,12 @@ updated: 2026-07-22 · birth · work PC
 
 ## Status
 
-bench ready, no worker yet — birthed 2026-07-22 by the control
-tower (work PC), from main's fresh tip `13d669c` with origin heads
-= `main` only. Authored at this seat; the payload is
+complete, awaiting merge — 2026-07-22, work PC. The five rungs,
+the summon workflow, D-048, the corrections and the IDEAS triage
+all landed; the declared file list held with nothing outside it.
+The workflow was NOT fired and `ops/summon` was never pushed — the
+first fire is the founder's, after the weld and after the two
+repository secrets exist. Authored at this seat; the payload is
 tower-authored, so external Web review precedes the founder's word
 at the gate (no-solo-approval,
 [LAWS §Workflow](../LAWS.md#workflow-non-negotiable)).
@@ -45,7 +48,20 @@ research-sourced and dated, not as something this repo proved.
 
 ## Left / idle
 
-nothing parked. The bench is birthed and the work has not started.
+nothing parked. Two things wait on the founder rather than on
+code, both recorded on the board at the tail: the REQUIRED
+repository secrets (`COCKPIT_FIRE_TOKEN`, `COCKPIT_ROUTINE_ID`),
+without which self-rescue reports `missing-secrets` and fails
+honestly; and the OPTIONAL single web-side run, needed only if the
+founder ever wants the mobile Run-workflow button to appear, since
+GitHub Mobile hides it on a workflow with zero prior runs.
+
+One verification is deferred by nature: GitHub registers a
+workflow from the DEFAULT branch, so `summon.yml` cannot appear in
+`gh workflow list` until this PR merges. Confirmed instead at the
+bench: strict YAML parse, structural assertions on both triggers
+and the ref delete, `bash -n` on every run block, and the
+four-path behavioural test above.
 
 ## The story
 
@@ -69,6 +85,50 @@ OUTSIDE the session for a replacement.
 That last rung is why the summon workflow is triggered by a PUSH
 as well as a button: a push is something a connector-dead cockpit
 can still do, because pushing is git, not API.
+
+The same reasoning is what kills merge-on-signal, which
+[#193](https://github.com/wsher0901/roam/pull/193) had staged as
+the permanent fix and which this bench was told to reject with
+reasons. Writing those reasons out sharpened one of them: it is
+not merely that merge-on-signal restores too little (it does — a
+connector-dead cockpit still cannot spawn a lane or open a bench).
+It is that every session pushes as the FOUNDER, so a
+push-triggered merge has no way to tell the baton-holder from a
+lane, or from a redelivered webhook — the identity the
+no-solo-approval law depends on simply is not present in the
+signal. A push-triggered SUMMON survives the same test only
+because its worst failure is a stray spawn: one cap run of
+recoverable noise, not a law quietly broken.
+
+**A dead end worth recording, because it changed the shipped
+code.** The fire step first extracted the session URL with
+`grep -o 'https://[^[:space:]]*'`. Verifying it locally was
+impossible: in this seat's Git Bash EVERY `grep` invocation
+inside a script returns exit 2 and a usage banner — even
+`grep --version` — so the step could not be exercised at all. The
+pattern would have worked on `ubuntu-latest`, but "correct by
+inspection, untestable at the seat" is a poor trade when a POSIX
+alternative exists. The extraction is now
+`sed -n 's|.*\(https://[^ ]*\).*|\1|p'`, which runs here, needs no
+GNU extension, and — a real bonus — cannot fail the step on a
+no-match, because sed exits 0 where `grep -o` exits 1. That
+removed the `|| true` crutch the first draft needed.
+
+With sed in place the step was exercised against a stub
+`fire.mjs` on all four paths, and all four behave: a successful
+fire exits 0 with `status=fired` and the URL captured · a failed
+fire exits 1 with `status=failed` and an empty URL · absent
+secrets exit 1 with `status=missing-secrets` before any network
+call · and an optional `mandate` arrives appended to the pointer
+payload as a single argument.
+
+Two smaller hardening decisions, taken while writing rather than
+asked for: the summary step takes its values through `env` instead
+of interpolating `${{ }}` into the shell, because `mandate` is
+founder-supplied text in a PUBLIC repo; and the checkout pins
+`ref: main`, so a rescue always fires main's blessed `fire.mjs`
+rather than whatever the pushed `ops/summon` commit happens to
+carry.
 
 ## Where to look
 

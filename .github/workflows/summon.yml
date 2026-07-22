@@ -83,9 +83,10 @@ jobs:
           else
             echo "status=failed" >> "$GITHUB_OUTPUT"
           fi
-          # `|| true`: no match is an ordinary outcome on a failed
-          # fire, and grep's exit 1 must not pre-empt the honest code.
-          url="$(grep -o 'https://[^[:space:]]*' fire.out | head -n 1 || true)"
+          # POSIX sed, not grep -o: no match simply prints nothing and
+          # still exits 0, so a URL-less failed fire cannot pre-empt
+          # the honest exit code below.
+          url="$(sed -n 's|.*\(https://[^ ]*\).*|\1|p' fire.out | head -n 1)"
           echo "url=${url}" >> "$GITHUB_OUTPUT"
           exit "${code}"
 
