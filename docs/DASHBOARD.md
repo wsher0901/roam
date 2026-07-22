@@ -6,37 +6,33 @@ status: living
 
 # Dashboard — the state surface
 
-Stamp: 2026-07-21 · 15:00 · ship (quiet handoff) · cockpit
+Stamp: 2026-07-22 · 10:58 · liftoff · work PC
 V1 5/34 · S1 2/7 · S2 3/5 · sessions: 1 main · 0 parallel
-(0 need you) · needs-you 3
+(0 need you) · needs-you 2
 How to read this board →
 [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
 
-1. 🟡 `chore/cloud-probe` stands on origin and this cloud seat
-   CANNOT delete it (push --delete → 403, the C7 rail) — run
-   `git push origin --delete chore/cloud-probe` from a founder
-   seat, then verify it stays dead (the resurrection rule); the
-   gate-0b record believed it already deleted, so treat this as a
-   resurrection or a delete that never landed (since 07-21).
-   → [cloud-born-cockpit](specs/cloud-born-cockpit.md) ·
-   [the history file](history/workshop/mechanism/cloud-born-cockpit.md)
-2. 🟡 Cockpit arming + post-weld manual acts: re-save the cockpit
-   routine box from the CHARTER MASTER AS UPDATED BY
+1. 🟡 The box-is-a-copy re-saves and the post-weld manual acts,
+   one standing set: re-save the cockpit routine box from the
+   CHARTER MASTER AS UPDATED BY
    [D-047](DECISIONS.md#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law)
-   (born-at clause changed 07-21) · add the `gh` install to the
-   roam cloud environment's setup script (claude.ai/code settings
-   → Environments) · the home PC's credential paste · the
-   lane-worker routine box and clerk routine/session re-saves
-   from the updated SETUP masters · from the maiden closeout,
-   still owed: archive the maiden lane's session at
-   claude.ai/code, then verify `chore/harness-vocab-rename`
-   stays dead, and grade the maiden (since 07-20/21).
+   (born-at clause changed 07-21) · re-save the LANE-WORKER
+   routine box once this outing's `docs/SETUP.md` fix welds —
+   that fix edits the lane-worker charter master and the box is
+   a copy (founder-recorded at this liftoff) · add the `gh`
+   install to the roam cloud environment's setup script
+   (claude.ai/code settings → Environments) · the home PC's
+   credential paste · the clerk routine/session re-saves from
+   the updated SETUP masters · from the maiden closeout, still
+   owed: archive the maiden lane's session at claude.ai/code and
+   grade the maiden (since 07-20/21/22).
    → [SETUP §cloud accounts](SETUP.md#once-and-done--cloud-accounts)
    · [flight-cockpit](specs/flight-cockpit.md) ·
+   [cloud-born-cockpit](specs/cloud-born-cockpit.md) ·
    [D-046](DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
-3. ⚪ Nine open engine questions sit parked in the Open register
+2. ⚪ Nine open engine questions sit parked in the Open register
    until S3 opens (since 07-13).
    → [ENGINE §12](ENGINE.md#12-open-register) ·
    [D-028](DECISIONS.md#d-028--2026-07--consolidation-recut--decision-policy--engine-brain-skeleton-form-project-policy-house-style-open-register-grows-69-upholds-d-021-extends-the-d-021-consolidation)
@@ -46,24 +42,34 @@ How to read this board →
 
 | Session | Task | State | Last push | Your move |
 |---|---|---|---|---|
-| main · cockpit | [cloud-born-cockpit](history/workshop/mechanism/cloud-born-cockpit.md) SHIPPED ([#187](https://github.com/wsher0901/roam/pull/187)) — no task in flight | 🟢 | 15:00 (this repaint) | Needs-you 1–2, or say the next task |
+| main · control tower | liftoff — no task in flight at this seat; this outing's mandate rides to the cockpit | 🟢 | 10:58 (this repaint) | none — the cockpit reports next |
 
-↳ main micro: 🟢 gates 0a/0b/0c · 🟢 D-047 · 🟢 liftoff §6 ·
-🟢 SETUP · 🟢 the weld — task closed; next per the pacing law
+↳ main micro: the outing's mandate, all five steps owned by the
+cockpit — ⚪ birth the `docs/SETUP.md` bench · ⚪ fly it
+label-spawned · ⚪ non-author review · ⚪ bring the founder the
+word · ⚪ land on "land"
 
-Flight context — the cloud-born mandate
-([D-047](DECISIONS.md#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law)):
-the founder opened gate-0b's probe session FROM the phone's
-GENERAL list (gate 0c's own proof) and commanded the mandate and
-the merge word from it — that session became the acting seat
-(main · cockpit, this stamp; the work PC's 09:15 pickup stamp is
-hereby superseded — that session self-closes on sight per the
-baton law). [#187](https://github.com/wsher0901/roam/pull/187)
-welded 14:56 with the reviewer critic's clean pass and the
-founder-confirmed external Web review on record.
-`docs/cloud-born-cockpit` auto-deleted at merge and pruned dead;
-`chore/cloud-probe` is Needs-you 1 (the C7 rail blocked this
-seat's delete). No active watches.
+Flight context — the first end-to-end flight of the assembled
+chain
+([D-046](DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
++ [D-047](DECISIONS.md#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law)):
+the founder stays at the desk but commands from the phone only.
+The control tower flies ZERO lanes this outing — the cockpit
+births the single bench itself, by the founder's mandate, so the
+chain birth → label-spawn → non-author review → the founder's
+word → landing runs end-to-end for the first time. Payload, one
+theme: `docs/SETUP.md`'s lane-worker charter master still tells
+a lane to WAIT for "the control tower's" airborne ack where the
+amended lane law says BATON-HOLDER — that one phrase, nothing
+else. The closeout bench stays UNFLOWN by founder order (no spec
+yet; grading the maiden waits with it). Cap arithmetic at this
+liftoff: 0 GitHub-triggered runs today, 15 of 15 remaining; the
+cockpit's rung-1 `--cloud` birth is a plain cloud session and
+burns none of the cap; the one lane the cockpit spawns costs 1,
+leaving 14. Seat tripwire: origin heads = `main` only, so
+`chore/cloud-probe` and `chore/harness-vocab-rename` are both
+verified DEAD and the 07-21 probe-branch item clears — git
+outranks the board. No active watches.
 
 ## You are here
 
@@ -102,12 +108,14 @@ the shakedown-audit weld) — its external review of
 baton-holder amendment, folded); the external Web review of
 [#187](https://github.com/wsher0901/roam/pull/187) is DONE
 (founder-confirmed at the gate, chat title unrecorded) → next:
-grade the cockpit maiden. Last paste: none. Under the surface
-doctrine
+grade the cockpit maiden, once the closeout bench opens. Last
+paste: none — this outing's leaving message carried a mandate,
+not a Web/Design paste. Under the surface doctrine
 ([D-046](DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)),
 Web's one mandatory job is the external review of self-authored
-diffs. T3–T6 source-vetting relaunch stays held (see You are
-here).
+diffs — this outing's payload is lane-authored, so a non-author
+cockpit review plus the founder's word is lawful without it.
+T3–T6 source-vetting relaunch stays held (see You are here).
 
 ## Shipped (latest — full record: [the ledger](history/README.md#the-ledger))
 
