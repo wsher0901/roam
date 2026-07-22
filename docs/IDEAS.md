@@ -141,3 +141,59 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   as a script (`scripts/`) so the next liftoff does not re-derive it;
   the `-NoExit` console must be killed after the read, and the prompt
   must reach `claude` as a file-read argument, never a pipe.
+- 2026-07-22 (Claude Code, cockpit-outing closeout): HEADLINE —
+  the airborne-ack token disagrees across its two homes:
+  [TEMPLATE](memory/TEMPLATE.md) line 40 writes
+  `airborne — <url · date>` (em-dash) while
+  [parallel-lanes §Canary](skills/parallel-lanes.md#canary-handshake-both-sides)
+  lines 66/120 write `airborne · <url> · <date>` (middot). Proven
+  live on [#191](https://github.com/wsher0901/roam/pull/191): the
+  lane's watcher missed the em-dash ack, read the window as timed
+  out, staged a stand-down, and only the wake-lock's rejected-push
+  backstop saved the flight.
+- 2026-07-22 (Claude Code, cockpit-outing closeout): the lane
+  watcher matched its OWN claim text ("awaiting the airborne
+  ack") as if it were the ack — the recipe needs an anchored,
+  machine-checkable match (a line-start pattern on the Status
+  line), not a substring search.
+- 2026-07-22 (Claude Code, cockpit-outing closeout): DEFECT —
+  cockpit GitHub API flap with NO fallback: merge and PR-open are
+  API-only in the cloud environment (no `gh` there, and the
+  session's own `GITHUB_TOKEN` 401s), so one flap demotes a
+  cockpit from commander to author — exactly what happened on
+  [#191](https://github.com/wsher0901/roam/pull/191). Proposed
+  fix: a merge-on-signal GitHub Action using the runner's own
+  token (no new secret); interim recovery rung: land, then birth a
+  fresh cockpit or hand the baton back to the control tower.
+- 2026-07-22 (Claude Code, cockpit-outing closeout): the roam
+  cloud environment's setup script fails exit 100 — the `gh`
+  install plus the image's pre-existing `deadsnakes`/`ondrej` PPAs
+  are egress-blocked (403). Prune the PPAs; see
+  [SETUP §cloud accounts](SETUP.md#once-and-done--cloud-accounts).
+- 2026-07-22 (Claude Code, cockpit-outing closeout): the cockpit's
+  birth prompt arrived TRUNCATED mid-sentence, and it recovered
+  only because [liftoff](skills/liftoff.md) had already welded the
+  flight plan to the board. Proposed law: the
+  [DASHBOARD](DASHBOARD.md) is the authoritative flight plan and
+  the birth prompt is a pointer to it, never the carrier.
+- 2026-07-22 (Claude Code, cockpit-outing closeout): a stray
+  `.local/state/gh/device-id` was written into the repo root at
+  rung-1 birth — wants a `.gitignore` line.
+- 2026-07-22 (Claude Code, cockpit-outing closeout): the daily-cap
+  arithmetic is blind to API fires AND to trigger redeliveries —
+  today's "15 of 15 remaining" was wrong twice over. Fold both
+  blind spots into whatever counts runs for
+  [liftoff §2](skills/liftoff.md#2--triage-every-open-item).
+- 2026-07-22 (Claude Code, cockpit-outing closeout): non-author
+  review purity — on bench-first flights the baton-holder always
+  authors the memory stub and the airborne ack, so its review is
+  never STRICTLY non-author; the payload is lane-authored, which
+  is what the no-solo-approval law actually targets.
+  [LAWS](LAWS.md) wants one clarifying sentence.
+- 2026-07-22 (Claude Code, cockpit-outing closeout): four smaller
+  ones — session naming at birth (`[COCKPIT]`/`[LANE]` prefixes so
+  the phone's session list reads itself) · a notification taxonomy
+  that separates lane pings from cockpit decisions · self-authored
+  gates should carry the external review verdict onto the record
+  automatically · the docs say "roam environment" while the live
+  one is named "Default".
