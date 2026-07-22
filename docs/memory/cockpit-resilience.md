@@ -1,7 +1,7 @@
 ---
 type: memory
 id: cockpit-resilience
-updated: 2026-07-22 · birth · work PC
+updated: 2026-07-22 · completion · work PC
 ---
 
 # cockpit-resilience — a cockpit that survives, announces, and replaces its own connector loss
@@ -9,7 +9,7 @@ updated: 2026-07-22 · birth · work PC
 ## Status
 
 complete, awaiting merge — 2026-07-22, work PC. The five rungs,
-the summon workflow, D-048, the corrections and the IDEAS triage
+the summon workflow, [D-048](../DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047), the corrections and the IDEAS triage
 all landed; the declared file list held with nothing outside it.
 The workflow was NOT fired and `ops/summon` was never pushed — the
 first fire is the founder's, after the weld and after the two
@@ -25,7 +25,7 @@ a cockpit can and cannot do once its GitHub connector dies: it
 stays a full author, it stops being a commander. This bench gives
 it the ladder back — five rungs (prevent · detect · repair in
 place · degrade · self-rescue) plus explicit supersession — and the
-decide, D-048, that settles which rescue vehicles are lawful.
+decide, [D-048](../DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047), that settles which rescue vehicles are lawful.
 
 The contract is [the spec](../specs/cockpit-resilience.md). The
 first fire of the summon workflow is the FOUNDER's, after the weld:

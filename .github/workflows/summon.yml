@@ -124,6 +124,17 @@ jobs:
       # One push = exactly one rescue. The ref goes even when the fire
       # failed, so the next push is a clean trigger rather than a
       # non-fast-forward.
+      #
+      # Queued summons (concurrency `summon`, cancel-in-progress
+      # false) can each reach this step, and the loser would find the
+      # ref already gone: that is an ordinary outcome, not a failure,
+      # so it is reported rather than raised. A delete that fails for
+      # any OTHER reason still fails the job honestly.
       - name: Delete the ops/summon ref
         if: always() && github.event_name == 'push'
-        run: git push origin --delete ops/summon
+        run: |
+          if git ls-remote --exit-code --heads origin ops/summon >/dev/null 2>&1; then
+            git push origin --delete ops/summon
+          else
+            echo "ops/summon is already gone — an earlier summon run deleted it."
+          fi
