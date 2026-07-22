@@ -141,6 +141,12 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   as a script (`scripts/`) so the next liftoff does not re-derive it;
   the `-NoExit` console must be killed after the read, and the prompt
   must reach `claude` as a file-read argument, never a pipe.
+  — CLOSED 2026-07-22 by
+  [#193](https://github.com/wsher0901/roam/pull/193): rung 1 now
+  documents the console-attach shape, winpty is gone from both homes,
+  and the file-read argument plus the kill-after-read are written in.
+  The launcher-as-a-script half stays OPEN — no machinery was built
+  on that bench by mandate.
 - 2026-07-22 (Claude Code, cockpit-outing closeout): HEADLINE —
   the airborne-ack token disagrees across its two homes:
   [TEMPLATE](memory/TEMPLATE.md) line 40 writes
@@ -151,11 +157,18 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   lane's watcher missed the em-dash ack, read the window as timed
   out, staged a stand-down, and only the wake-lock's rejected-push
   backstop saved the flight.
+  — CLOSED 2026-07-22 by
+  [#193](https://github.com/wsher0901/roam/pull/193): §Canary now
+  owns the one canonical form and TEMPLATE copies it exactly.
 - 2026-07-22 (Claude Code, cockpit-outing closeout): the lane
   watcher matched its OWN claim text ("awaiting the airborne
   ack") as if it were the ack — the recipe needs an anchored,
   machine-checkable match (a line-start pattern on the Status
   line), not a substring search.
+  — CLOSED 2026-07-22 by
+  [#193](https://github.com/wsher0901/roam/pull/193): the anchored
+  start-of-Status-line match is stated in §Canary and in the
+  lane-worker charter master, both naming the self-match trap.
 - 2026-07-22 (Claude Code, cockpit-outing closeout): DEFECT —
   cockpit GitHub API flap with NO fallback: merge and PR-open are
   API-only in the cloud environment (no `gh` there, and the
@@ -165,20 +178,40 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   fix: a merge-on-signal GitHub Action using the runner's own
   token (no new secret); interim recovery rung: land, then birth a
   fresh cockpit or hand the baton back to the control tower.
+  — PARTLY CLOSED 2026-07-22 by
+  [#193](https://github.com/wsher0901/roam/pull/193): the
+  git-only/API-only dependency map and the four-step recovery rung
+  are now written into
+  [SETUP §cloud accounts](SETUP.md#once-and-done--cloud-accounts).
+  STAYS OPEN: the merge-on-signal Action itself — the permanent
+  fix, deliberately kept off that bench, needs its own.
 - 2026-07-22 (Claude Code, cockpit-outing closeout): the roam
   cloud environment's setup script fails exit 100 — the `gh`
   install plus the image's pre-existing `deadsnakes`/`ondrej` PPAs
   are egress-blocked (403). Prune the PPAs; see
   [SETUP §cloud accounts](SETUP.md#once-and-done--cloud-accounts).
+  — CLOSED 2026-07-22 by
+  [#193](https://github.com/wsher0901/roam/pull/193): SETUP now
+  says the environment has no `gh` and cannot get it, the script
+  must not attempt it, and the PPAs want pruning. The founder's
+  script edit remains a manual act on the board.
 - 2026-07-22 (Claude Code, cockpit-outing closeout): the cockpit's
   birth prompt arrived TRUNCATED mid-sentence, and it recovered
   only because [liftoff](skills/liftoff.md) had already welded the
   flight plan to the board. Proposed law: the
   [DASHBOARD](DASHBOARD.md) is the authoritative flight plan and
   the birth prompt is a pointer to it, never the carrier.
+  — CLOSED 2026-07-22 by
+  [#193](https://github.com/wsher0901/roam/pull/193): adopted, in
+  [liftoff §6](skills/liftoff.md#6--ledger-handoff--fire-the-cockpit)
+  and the cockpit charter master — the board governs a truncated or
+  contradicting birth prompt.
 - 2026-07-22 (Claude Code, cockpit-outing closeout): a stray
   `.local/state/gh/device-id` was written into the repo root at
   rung-1 birth — wants a `.gitignore` line.
+  — CLOSED 2026-07-22 by
+  [#193](https://github.com/wsher0901/roam/pull/193): `.local/` is
+  ignored.
 - 2026-07-22 (Claude Code, cockpit-outing closeout): the daily-cap
   arithmetic is blind to API fires AND to trigger redeliveries —
   today's "15 of 15 remaining" was wrong twice over. Fold both
@@ -190,6 +223,11 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   never STRICTLY non-author; the payload is lane-authored, which
   is what the no-solo-approval law actually targets.
   [LAWS](LAWS.md) wants one clarifying sentence.
+  — CLOSED 2026-07-22 by
+  [#193](https://github.com/wsher0901/roam/pull/193): the sentence
+  is in [LAWS §Workflow](LAWS.md#workflow-non-negotiable) —
+  "non-author" means the payload diff, and a baton-holder may never
+  review a payload it wrote itself.
 - 2026-07-22 (Claude Code, cockpit-outing closeout): four smaller
   ones — session naming at birth (`[COCKPIT]`/`[LANE]` prefixes so
   the phone's session list reads itself) · a notification taxonomy
@@ -197,3 +235,12 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   gates should carry the external review verdict onto the record
   automatically · the docs say "roam environment" while the live
   one is named "Default".
+  — PARTLY CLOSED 2026-07-22 by
+  [#193](https://github.com/wsher0901/roam/pull/193): the cockpit
+  title line `[COCKPIT] roam — <date>` is in liftoff's birth
+  prompt, marked VERIFY-BEFORE-RELY (confirm at the next birth
+  whether the platform takes it; drop it if not) with the
+  session-list doctrine beside it, and the environment is renamed
+  `Default` in SETUP. STAYS OPEN: the notification taxonomy, the
+  `[LANE]` half (no lane was born on that bench to test it), and
+  self-authored gates carrying the review verdict onto the record.

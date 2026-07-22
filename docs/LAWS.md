@@ -63,6 +63,10 @@ founder.
   session's review (cockpit or control tower) + the founder's word
   is lawful from anywhere. Self-authored diffs (tower- or
   cockpit-authored): external Web review before the word.
+  "Non-author" means the PAYLOAD DIFF: on bench-first flights the
+  baton-holder necessarily writes the memory stub and the airborne
+  ack, and neither makes it the payload's author — but a
+  baton-holder may never review a payload it wrote itself.
 - Leaving phrases ("done for today", "bye", "wrapping up") → run the
   full handoff immediately, unasked. "Take it to the cloud" (or any
   equivalent) → run liftoff. Both close the session. Leaving language

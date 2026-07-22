@@ -5,7 +5,7 @@ title: Flight hardening — correct every instruction the first end-to-end fligh
 status: in-flight
 stage: workshop
 branch: docs/flight-hardening
-pr: TBD
+pr: 193
 opened: 2026-07-22
 ---
 

@@ -77,8 +77,11 @@ Sources:
 [route ladder](parallel-lanes.md#cloud-spawn--route-ladder)
 
 ## 5 · Handshake-verify each
-- Canary arrives → write "airborne · <url>" into its memory (for a
-  respawn, this overwrites the parked Status).
+- Canary arrives → write the ack token into its memory, exactly as
+  [§Canary](parallel-lanes.md#canary-handshake-both-sides) fixes it
+  — the Status line begins "airborne · <url> · <date>" (for a
+  respawn, this overwrites the parked Status). Character-for-character:
+  the lane's match is anchored and cannot see a variant.
 - Fail or timeout → write "cloud spawn failed <date> — <reason> →
   parked" into its memory + the board's Sessions rows (+ Needs-you
   mirror) per [handoff §4](handoff.md).
@@ -103,26 +106,76 @@ amending
 clause 3): compose the flight plan FROM THE BOARD just painted —
 three parts, plain sentences: in flight (each airborne lane +
 url) · owed (every parked/held item + reason) · needs the
-founder's word (every gate waiting) — and OPEN it with the
-standing first line, verbatim on every cockpit birth:
+founder's word (every gate waiting).
+
+THE BOARD IS THE FLIGHT PLAN — the birth prompt is a pointer to
+it, never its carrier. The plan is WELDED TO THE BOARD FIRST (the
+micro-PR above, merged), and only then does anything spawn; the
+birth prompt carries the charter, the pointer, and a ONE-LINE
+mandate — not the full plan. A birth prompt is a delivery channel
+and channels truncate: this flight's mandate arrived cut
+mid-sentence on 2026-07-22 and the cockpit recovered only because
+the plan was already welded to the board. Where a birth prompt is
+truncated, garbled, or contradicts the board, the BOARD GOVERNS —
+the same "git outranks the note" reflex, applied to the prompt.
+
+OPEN the birth prompt with the standing first line, verbatim on
+every cockpit birth:
 
 > Before any act: verify your clone's HEAD equals origin/main's
 > tip and your workspace contains nothing origin lacks;
 > mismatch = report verbatim and STOP.
 
-The full birth prompt = the cockpit charter master from
+The full birth prompt = the title line (below), then the cockpit
+charter master from
 [SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts)
-adopted VERBATIM, then this flight plan. Birth by the rung
+adopted VERBATIM, then the clone-provenance line, the board
+pointer, and the one-line mandate.
+
+TITLE LINE — the prompt's first line is
+`[COCKPIT] roam — <date>`, so the founder's general session list
+reads itself at a glance. VERIFY BEFORE RELYING: whether the birth
+platform actually adopts a prompt-supplied title is UNPROVEN —
+confirm at the next birth, record the answer here, and drop the
+line if it does nothing. Doctrine, either way: the general session
+list is what the founder touches; routine run panels are the
+machinery's paper trail (archiving a session does not clear a run
+log, by design).
+
+Birth by the rung
 ladder, evidence order (gate 0b, [D-047](../DECISIONS.md#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law)):
 
-1. The automated hidden-console `--cloud` birth (PRIMARY):
-   `claude --cloud "<birth prompt>"` fired from a hidden console
-   hosting a winpty pty (Start-Process, output captured to file)
-   — `--cloud` demands a real TTY and refuses every piped route
-   (the harness shell, the `!` bang-prefix, redirected
-   Start-Process — all refuse verbatim). The birth returns the
-   session link; sessions born this way are list-native — they
-   join the phone's Code-tab GENERAL session list.
+1. The automated hidden-console `--cloud` birth (PRIMARY).
+   `--cloud` demands a real TTY on BOTH ends and refuses every
+   piped route verbatim (the harness shell, the `!` bang-prefix,
+   redirected `Start-Process`). A hidden console already gives it
+   that TTY, so no pty wrapper is involved — and none may be: any
+   redirection at all is what breaks this rung. The shape that
+   flew (2026-07-22, work PC, Git for Windows; recipe of record):
+   - Launch with NO redirection anywhere:
+     `Start-Process powershell -WindowStyle Hidden -NoExit -File <launcher>`,
+     the launcher calling `claude --cloud "<birth prompt>"`.
+   - Hand the birth prompt as a FILE-READ argument — the launcher
+     reads it from a file and passes it as one argument. Never a
+     pipe, never here-string plumbing.
+   - Recover the output AFTERWARDS by attaching to that console —
+     `FreeConsole` / `AttachConsole(<pid>)`, then
+     `ReadConsoleOutputCharacterW` over `CONOUT$` — instead of
+     capturing a stream. Kill the `-NoExit` console once read.
+   The birth returns the session link — `Created cloud session:
+   <title>` · `View: https://claude.ai/code/session_<id>` ·
+   `Resume with: claude --teleport session_<id>`. Sessions born
+   this way are list-native — they join the phone's Code-tab
+   GENERAL session list.
+   Why attach instead of capturing the stream: the recipe this
+   replaces wrapped the console in a pty and captured its output
+   to a file, and that shape CANNOT RUN — the wrapper refuses the
+   moment either of its own ends is redirected, so the capture is
+   exactly what kills it. Two failures, same cause, 2026-07-22;
+   forensics in
+   [cloud-born-cockpit](../history/workshop/mechanism/cloud-born-cockpit.md)
+   and the [IDEAS](../IDEAS.md) filing. Do not reintroduce a
+   wrapper: attach, read, kill.
 2. Compose-and-hand: the ritual composes the full command; the
    founder pastes it into a plain terminal — nothing piped.
 3. `npm run fire:cockpit -- "<birth prompt>"` (the routine fire
