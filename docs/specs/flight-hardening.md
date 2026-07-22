@@ -129,31 +129,31 @@ the ship tail. Nothing outside this list.
 
 ## Done-means
 
-- [ ] The airborne token is one canonical middot form, and every
+- [x] The airborne token is one canonical middot form, and every
       mention across [TEMPLATE](../memory/TEMPLATE.md),
       [parallel-lanes](../skills/parallel-lanes.md), and
       [SETUP](../SETUP.md) agrees with it by grep.
-- [ ] §Canary states the anchored-match rule; the lane-worker charter
+- [x] §Canary states the anchored-match rule; the lane-worker charter
       master carries the same sentence.
-- [ ] `winpty` is absent from
+- [x] `winpty` is absent from
       [liftoff](../skills/liftoff.md), and rung 1 documents the
       console-attach shape that flew. Rungs 2–4 unchanged.
-- [ ] The board-authoritative flight-plan rule appears in both
+- [x] The board-authoritative flight-plan rule appears in both
       [liftoff §6](../skills/liftoff.md#6--ledger-handoff--fire-the-cockpit)
       and the cockpit charter master.
-- [ ] [SETUP](../SETUP.md#once-and-done--cloud-accounts) carries the
+- [x] [SETUP](../SETUP.md#once-and-done--cloud-accounts) carries the
       API-dependency map and the four-step recovery rung, with the
       merge-on-signal Action marked staged.
-- [ ] "install `gh`" is absent from SETUP's cloud section; the
+- [x] "install `gh`" is absent from SETUP's cloud section; the
       environment is named `Default`; the egress-block and exit 100
       are recorded.
-- [ ] [LAWS](../LAWS.md#workflow-non-negotiable) carries the
+- [x] [LAWS](../LAWS.md#workflow-non-negotiable) carries the
       payload-diff clarifying sentence.
-- [ ] `.gitignore` ignores `.local/`.
-- [ ] liftoff's birth prompt opens with the `[COCKPIT]` title line,
+- [x] `.gitignore` ignores `.local/`.
+- [x] liftoff's birth prompt opens with the `[COCKPIT]` title line,
       marked verify-before-rely, with the session-list doctrine
       sentence recorded.
-- [ ] [IDEAS](../IDEAS.md) lines this bench fixes are closed and
+- [x] [IDEAS](../IDEAS.md) lines this bench fixes are closed and
       dated naming this PR; the seven named lines stay open.
 - [ ] Full CI mirror green locally AND the pushed head's Actions run
       green; ship §6's critic has run.
