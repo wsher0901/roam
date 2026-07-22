@@ -1,0 +1,128 @@
+# Summon — rung 4 of the cockpit resilience ladder (D-048).
+#
+# Reaches OUTSIDE a session to raise a fresh cockpit. Two ways in:
+#   * push to the reserved branch `ops/summon` — the self-rescue path.
+#     A cockpit whose GitHub connector has died can still PUSH (git,
+#     not API), so this is the one command act it retains.
+#   * workflow_dispatch — documented, present, and UNUSED BY
+#     PREFERENCE (the founder does not use the GitHub app). It costs
+#     nothing and is never required.
+#
+# The fire itself is NOT reimplemented here: scripts/fire.mjs is the
+# verified vehicle (SETUP §cloud accounts), reused as-is. It is
+# zero-dependency — node builtins only — so this job needs no
+# `npm ci`.
+#
+# One fire = one daily-cap routine run, invisible to `npm run
+# count:runs`. The endpoint has no idempotency key, so nothing here
+# retries: a failed fire is reported honestly and the founder decides.
+name: Summon
+
+on:
+  workflow_dispatch:
+    inputs:
+      mandate:
+        description: "Optional one-line mandate for the summoned cockpit (the board carries the plan)."
+        required: false
+        type: string
+  push:
+    branches: [ops/summon]
+
+# A second summon must never cancel a first mid-fire — a cancelled
+# fire could leave a session created but unreported.
+concurrency:
+  group: summon
+  cancel-in-progress: false
+
+permissions:
+  contents: write # only to delete the ops/summon ref after firing
+
+jobs:
+  summon:
+    runs-on: ubuntu-latest
+    steps:
+      # Always fire from main's blessed script, never from whatever
+      # the pushed ops/summon commit happens to carry.
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Fire the cockpit routine
+        id: fire
+        env:
+          COCKPIT_FIRE_TOKEN: ${{ secrets.COCKPIT_FIRE_TOKEN }}
+          COCKPIT_ROUTINE_ID: ${{ secrets.COCKPIT_ROUTINE_ID }}
+          MANDATE: ${{ inputs.mandate }}
+        run: |
+          set -o pipefail
+          if [ -z "${COCKPIT_FIRE_TOKEN}" ] || [ -z "${COCKPIT_ROUTINE_ID}" ]; then
+            echo "summon: COCKPIT_FIRE_TOKEN and COCKPIT_ROUTINE_ID must be set as repository secrets (Settings -> Secrets and variables -> Actions). Self-rescue cannot fire without them." >&2
+            echo "status=missing-secrets" >> "$GITHUB_OUTPUT"
+            exit 1
+          fi
+          # The payload is a POINTER, never a plan: the board is the
+          # authoritative flight plan (#193).
+          payload="Summoned cockpit. Derive state from origin; the board's flight context is the authoritative flight plan (#193). You supersede the previous cockpit."
+          if [ -n "${MANDATE}" ]; then
+            payload="${payload} Mandate: ${MANDATE}"
+          fi
+          # fire.mjs never prints the token; only its stdout/stderr
+          # reach the summary below.
+          set +e
+          node scripts/fire.mjs cockpit "${payload}" > fire.out 2> fire.err
+          code=$?
+          set -e
+          cat fire.out
+          cat fire.err >&2
+          if [ "${code}" -eq 0 ]; then
+            echo "status=fired" >> "$GITHUB_OUTPUT"
+          else
+            echo "status=failed" >> "$GITHUB_OUTPUT"
+          fi
+          # `|| true`: no match is an ordinary outcome on a failed
+          # fire, and grep's exit 1 must not pre-empt the honest code.
+          url="$(grep -o 'https://[^[:space:]]*' fire.out | head -n 1 || true)"
+          echo "url=${url}" >> "$GITHUB_OUTPUT"
+          exit "${code}"
+
+      - name: Report to the step summary
+        if: always()
+        # Values reach the script as env, never interpolated into it —
+        # `mandate` is founder-supplied text and this is a public repo.
+        env:
+          TRIGGER: ${{ github.event_name }}
+          STATUS: ${{ steps.fire.outputs.status || 'not-run' }}
+          URL: ${{ steps.fire.outputs.url }}
+        run: |
+          {
+            echo "## Summon — cockpit fire"
+            echo ""
+            echo "- trigger: \`${TRIGGER}\`"
+            echo "- status: \`${STATUS}\`"
+            if [ -n "${URL}" ]; then
+              echo "- session: ${URL}"
+            else
+              echo "- session: none returned"
+            fi
+            echo ""
+            if [ -s fire.err ]; then
+              echo "<details><summary>fire.mjs stderr</summary>"
+              echo ""
+              echo '```'
+              cat fire.err
+              echo '```'
+              echo ""
+              echo "</details>"
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      # One push = exactly one rescue. The ref goes even when the fire
+      # failed, so the next push is a clean trigger rather than a
+      # non-fast-forward.
+      - name: Delete the ops/summon ref
+        if: always() && github.event_name == 'push'
+        run: git push origin --delete ops/summon

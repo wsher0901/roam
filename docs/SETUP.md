@@ -309,16 +309,46 @@ summary, then arm the watch.
   [cloud-born-cockpit](specs/cloud-born-cockpit.md)).
 - Cloud environment (claude.ai/code settings → Environments) — the
   live environment is named **`Default`** (not "roam"; the earlier
-  name was wrong on paper only). It has NO `gh` AND CANNOT GET IT:
-  the install is egress-blocked (`cli.github.com` returns 403) and
-  the attempt fails the WHOLE setup script with exit 100, which
-  also surfaced the image's pre-existing `deadsnakes`/`ondrej`
-  PPAs failing the same way — prune those. The setup script must
-  therefore NOT attempt a `gh` install. The cockpit's GitHub MCP
-  connector is the sole API path (see the dependency map below).
-  This corrects the flight-1 note carried by
+  name was wrong on paper only). It has NO `gh`, and that is BY
+  DESIGN, not a defect to route around: a cloud session receives a
+  SESSION-SCOPED GitHub MCP injection and no `gh` CLI (external
+  research, 2026-07-22,
+  [D-048](DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)).
+  The connector is therefore the SOLE API path, and redundancy
+  inside a session is impossible — which is why resilience is a
+  ladder out of the session
+  ([cockpit-resilience](specs/cockpit-resilience.md)), not a second
+  credential.
+  The `cli.github.com` 403 that
+  [#193](https://github.com/wsher0901/roam/pull/193) recorded was
+  the SYMPTOM of that design, not the cause; it still matters
+  operationally, because attempting the install fails the WHOLE
+  setup script with exit 100 — which also surfaced the image's
+  pre-existing `deadsnakes`/`ondrej` PPAs failing the same way.
+  Prune those, and the setup script must NOT attempt a `gh`
+  install. This corrects the flight-1 note carried by
   [D-047](DECISIONS.md#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law),
   which asked for exactly the install that cannot succeed.
+- Summon workflow (`.github/workflows/summon.yml`) — rung 4 of the
+  connector ladder, LIVE
+  ([D-048](DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)).
+  Two triggers: a push to the reserved branch `ops/summon` (the
+  self-rescue path — a connector-dead cockpit can still push,
+  because pushing is git, not API) and `workflow_dispatch` with one
+  optional `mandate` input (present, costless, and UNUSED BY
+  PREFERENCE — the founder does not use the GitHub app). It runs
+  `scripts/fire.mjs` for the cockpit target — the verified vehicle,
+  reused as-is, never reimplemented — writes the fire status and any
+  returned session URL to the run's step summary, and then DELETES
+  the `ops/summon` ref, so one push is exactly one rescue. Its
+  payload is a POINTER, never a plan. FOUNDER ACT, REQUIRED before
+  self-rescue can work: add `COCKPIT_FIRE_TOKEN` and
+  `COCKPIT_ROUTINE_ID` as REPOSITORY SECRETS (Settings → Secrets and
+  variables → Actions) — the same values already in `.env.local`,
+  password manager first; the workflow reports `missing-secrets` and
+  fails honestly without them. A summoned cockpit is routine-born,
+  so it is LIST-INVISIBLE — reachable by its board link, which is
+  why `--cloud` stays the primary birth.
 
 Cockpit charter (master — the routine box is a copy; re-save from
 here after any edit):
@@ -370,6 +400,63 @@ verify every claim against origin before acting; git outranks it.
 7. Bounded flight: you exist for this flight only. A DASHBOARD
    seat-stamp that is not yours supersedes you: push what
    exists, write nothing more.
+
+THE CONNECTOR LADDER (D-048). Your GitHub MCP connector is your
+ONLY API path — no gh exists in a cloud session, by design — so
+losing it costs you command while leaving you a full author.
+Climb in order.
+
+R0 · PREVENT. Never sleep on one long monitor while waiting.
+   POLL on a cadence instead: fetch origin, re-read the lane's
+   memory Status, check the PR, and report ONLY on change. The
+   trade, plainly: polling costs usage and context, so the
+   cadence is a dial — minutes, not seconds, widened when
+   nothing is moving. Idle sessions are where connectors are
+   reported to drop; this is a mitigation, not a guarantee.
+R1 · DETECT. Immediately before ANY command act — merge, apply
+   a label, open a PR, read CI — run ONE cheap connector probe
+   first and report its result in the same turn. Never attempt a
+   command act on an unverified connector.
+R2 · REPAIR IN PLACE.
+   (a) Retry the failed call ONCE — the client auto-reconnects
+       with backoff (about five attempts) before marking a
+       server failed, so the retry may simply succeed.
+   (b) Try to revive it from the shell: run `claude mcp list`,
+       and any reconnect/restart subcommand your installed
+       version exposes — read `claude mcp --help` FIRST and
+       never guess a flag. Whether a session can revive its own
+       injected connector this way is UNPROVEN; if it works,
+       say so plainly so the answer reaches the record.
+   (c) If it cannot be revived, TELL THE FOUNDER — as its own
+       turn, this text alone, never buried in a paragraph:
+       "⚠️ CONNECTOR DOWN — type /mcp in this thread to retry
+       the GitHub server, then reply 'retry'. I keep authoring
+       meanwhile; nothing is lost."
+R3 · DEGRADE. Keep working git-only: author, commit, push,
+   weld. Commanding pauses; nothing is lost or redone. Which
+   acts survive and which do not: the dependency map in
+   SETUP §cloud accounts — do not re-derive it.
+R4 · SELF-RESCUE. Push ONE empty commit to the reserved branch
+   ops/summon — a push is git, not API, so it still works — then
+   LAND. That push fires .github/workflows/summon.yml, which
+   raises a replacement cockpit.
+R4b · SUPERSESSION. Never let the founder command a dead
+   cockpit by accident.
+   - TOMBSTONE: once you have landed superseded, your FINAL
+     message is exactly this, alone, with nothing after it:
+     "⛔ LANDED — SUPERSEDED. Do not command this session. A
+     replacement cockpit has been summoned and will greet you;
+     the board carries its link. Safe to archive me."
+   - REFUSAL GUARD: on ANY founder message after that,
+     re-derive from origin; if the board's seat stamp is not
+     yours, reply with the tombstone line and NOTHING ELSE — no
+     work, no writes. (This is rule 7's supersession, made
+     loud.)
+   - SUCCESSOR DUTY: if you ARE the replacement, your first act
+     after deriving state is a board repaint that marks the
+     predecessor landed · superseded with its session URL and
+     seats you — the board must always name exactly one live
+     cockpit.
 ```
 
 ### The cockpit's API dependency map + recovery rung
@@ -410,16 +497,46 @@ different job.
    daily cap; the new cockpit re-derives everything from git, so
    nothing is lost — only the session's conversation, which was
    never the record.
-4. **Last resort — the GitHub mobile app.** The founder's own four
-   taps. Always works; costs the founder's hands, which is the
-   thing this whole chain exists to spend sparingly.
+4. **Away with no desk — SELF-RESCUE.** Push one empty commit to
+   `ops/summon`; the summon workflow fires a replacement cockpit
+   and the dying one lands under the tombstone
+   ([D-048](DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)).
+5. **Last resort — the GitHub mobile app**, or the phone bootstrap
+   paste below when there is no terminal and no GitHub. The
+   founder's own hands; always works, and the thing this whole
+   chain exists to spend sparingly.
 
-**Staged, not built:** a merge-on-signal GitHub Action — the
-runner's own token merges on an agreed signal, needing no new
-secret — is the permanent fix, because it turns merge into
-something the git-only half can reach. It has its own bench; it is
-deliberately NOT part of
-[flight-hardening](specs/flight-hardening.md).
+The ladder as the cockpit itself runs it (R0–R4b) lives in the
+charter master above — this map is the WHY, the charter is the
+procedure.
+
+**Rejected, not staged:** a merge-on-signal GitHub Action. It was
+the obvious permanent fix and
+[D-048](DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)
+turns it down for two reasons: it would restore only MERGE while a
+connector-dead cockpit still cannot spawn lanes or open benches,
+and — decisively — every session pushes as the founder, so a
+push-triggered merge cannot tell the baton-holder from a lane or a
+redelivered webhook, which breaks no-solo-approval structurally. A
+push-triggered SUMMON is lawful by the same test: a stray spawn is
+recoverable noise (one cap run), not a law breach.
+
+**Rung 5 — the phone bootstrap**, for no terminal and no GitHub.
+Path: the Claude app → new session on wsher0901/roam → paste this
+verbatim. The session clones the repo, so it reads its own charter
+rather than carrying one:
+
+```text
+You are the Roam Flight Cockpit. Clone wsher0901/roam, read
+docs/SETUP.md §cloud accounts and adopt the cockpit charter
+master verbatim, then read the board's flight context — it is
+the authoritative flight plan.
+```
+
+VERIFY BEFORE RELYING: whether the mobile app can create a session
+on a repo is UNPROVEN — test at the next drill and record the
+answer in [cockpit-resilience](specs/cockpit-resilience.md)'s
+Done-means.
 
 - Models & effort (doctrine — the Web paste block's Model + Effort
   line draws from here). Effort ladder: low · medium · high · xhigh
@@ -497,12 +614,15 @@ Sources:
   lanes
   via endpoint, benches stay draft, the ready-flip reverts to
   completion-only; adopt at first need, verify-before-rely.
-- At first need — the summon button
-  ([D-046](DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)):
-  a workflow_dispatch GitHub Action holding the cockpit fire call,
-  token in Actions secrets — two taps in the GitHub mobile app
-  summon a cockpit with no desk. Adopt at first need,
-  verify-before-rely.
+- RESOLVED — the summon button is LIVE, no longer staged
+  ([D-048](DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047),
+  resolving the
+  [D-046](DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+  staging): `.github/workflows/summon.yml` holds the cockpit fire
+  call with the token in repository secrets. The dispatch button
+  shipped with it, but the PUSH trigger (`ops/summon`) is the
+  point — self-rescue, not taps. Recipe and the required founder
+  act: [§cloud accounts](#once-and-done--cloud-accounts).
 - Built-in exploratory subagents (parallel research inside one
   task) need no spec — distinct from roadmap [P] lanes, which are
   separate sessions on separate branches.

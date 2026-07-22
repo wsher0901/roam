@@ -185,6 +185,42 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   [SETUP §cloud accounts](SETUP.md#once-and-done--cloud-accounts).
   STAYS OPEN: the merge-on-signal Action itself — the permanent
   fix, deliberately kept off that bench, needs its own.
+  — CLOSED 2026-07-22 by
+  [#195](https://github.com/wsher0901/roam/pull/195), outcome
+  REJECTED-AND-REPLACED: merge-on-signal is turned down by
+  [D-048](DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)
+  — it restores only merge while a connector-dead cockpit still
+  cannot spawn lanes or open benches, and since every session
+  pushes as the founder a push-triggered MERGE cannot tell the
+  baton-holder from a lane or a redelivered webhook, breaking
+  no-solo-approval structurally. What ships instead is the
+  five-rung ladder ending in a push-triggered SUMMON, which passes
+  the same test because a stray spawn is recoverable noise, not a
+  law breach.
+- 2026-07-22 (Claude Code, cockpit-resilience bench): the summon
+  button, staged since
+  [D-046](DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+  clause 8 and carried in
+  [SETUP §Staged](SETUP.md#staged--turns-on-when-its-stage-opens)
+  as "adopt at first need". — CLOSED 2026-07-22 by
+  [#195](https://github.com/wsher0901/roam/pull/195), outcome
+  SHIPPED LIVE as `.github/workflows/summon.yml`, with the staging
+  line resolved. The button shipped, but the reason it shipped is
+  the PUSH trigger (`ops/summon`) — self-rescue by a
+  connector-dead cockpit, not taps in an app the founder does not
+  use.
+- 2026-07-22 (Claude Code, cockpit-resilience bench): WATCH ITEM,
+  a hypothesis and not a finding — community reports suggest
+  INTERACTIVE web sessions lose their claude.ai connectors while
+  ROUTINE sessions retain them. That matches
+  [#191](https://github.com/wsher0901/roam/pull/191) exactly: the
+  interactive cockpit went connector-dead while its routine-born
+  lane kept working. If it holds, the rescue vehicle is the
+  STURDIER SPECIES, and the `--cloud`-vs-routine choice settled by
+  [D-047](DECISIONS.md#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law)
+  (list-native beats sturdy) deserves re-decision. Evidence so
+  far: ONE data point plus one filed report. Watch across the next
+  flights; do not act on it yet.
 - 2026-07-22 (Claude Code, cockpit-outing closeout): the roam
   cloud environment's setup script fails exit 100 — the `gh`
   install plus the image's pre-existing `deadsnakes`/`ondrej` PPAs
