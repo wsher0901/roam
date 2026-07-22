@@ -1,18 +1,23 @@
 ---
-type: memory
-id: flight-hardening
-updated: 2026-07-22 · ship · work PC
+type: history
+slug: flight-hardening
+shipped: 2026-07-22 15:09
+pr: 193
 ---
 
 # flight-hardening — correct every instruction the first end-to-end flight proved wrong
 
 ## Status
 
-complete, awaiting merge — 2026-07-22, work PC. All nine mandate
+shipped — 2026-07-22 15:09,
+[#193](https://github.com/wsher0901/roam/pull/193). All nine mandate
 items landed; the declared file list held with nothing outside it.
-Tower-authored, so external Web review precedes the founder's word
-at the gate (no-solo-approval,
-[LAWS §Workflow](../LAWS.md#workflow-non-negotiable)).
+Tower-authored, so the no-solo-approval law
+([LAWS §Workflow](../../../LAWS.md#workflow-non-negotiable))
+required external Web review BEFORE the founder's word — the
+founder's first "merge" was held for exactly that, and the review
+was run and returned PASS on `d118af5` before the word was given
+again.
 
 ## What this task is
 
@@ -23,7 +28,7 @@ it that nearly failed failed against a WRITTEN instruction rather
 than a missing one: the repo, as it stood, told a future seat to do
 things that cannot work. This bench corrected those instructions in
 place, from lived evidence — nine items, one theme, listed in
-[the spec](../specs/flight-hardening.md).
+[the spec](../../../specs/flight-hardening.md).
 
 Nothing here is new machinery. The permanent fix for the API-flap
 class — a merge-on-signal GitHub Action that would turn merge into
@@ -32,45 +37,41 @@ for its own.
 
 ## Pending issues
 
-One item ships deliberately unproven: the `[COCKPIT] roam — <date>`
-title line (item 8). Whether the birth platform adopts a
-prompt-supplied title is untested — no cockpit was born on this
-bench — so it is marked VERIFY-BEFORE-RELY in
-[liftoff §6](../skills/liftoff.md#6--ledger-handoff--fire-the-cockpit):
+One item shipped deliberately unproven: the
+`[COCKPIT] roam — <date>` title line (item 8). Whether the birth
+platform adopts a prompt-supplied title is untested — no cockpit was
+born on this bench — so it is marked VERIFY-BEFORE-RELY in
+[liftoff §6](../../../skills/liftoff.md#6--ledger-handoff--fire-the-cockpit):
 confirm at the next birth, record the answer, drop the line if it
 does nothing. The doctrine sentence beside it stands either way.
 
 Two founder-side acts survive this weld and belong to the board,
 not to code: re-saving the lane-worker routine box from the changed
-charter master (it is a copy, and this PR edits the master a second
+charter master (it is a copy, and this PR edited the master a second
 time after [#191](https://github.com/wsher0901/roam/pull/191)), and
 pruning the cloud environment's setup script.
 
-Two contradictions OUTSIDE the declared file list, found by the
-ship-gate critic and left unfixed here on purpose — the mandate
-closed the file list, and widening it silently is exactly the habit
-this bench exists to correct:
+Both contradictions the ship-gate critic found OUTSIDE the declared
+file list are now resolved, and neither was resolved by widening
+this diff:
 
-1. [DASHBOARD](../DASHBOARD.md)'s Needs-you item 1 still tells the
-   founder to "add the `gh` install to the roam cloud
+1. [DASHBOARD](../../../DASHBOARD.md)'s Needs-you item 1 still told
+   the founder to "add the `gh` install to the roam cloud
    environment's setup script" — the precise act this PR proves
-   cannot succeed, in the old environment name. The board is
-   ritual-repainted, so THE SHIP TAIL must correct that line; it is
-   named here so the tail cannot miss it.
-2. [D-047](../DECISIONS.md#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law)'s
+   cannot succeed, under the old environment name. The board is
+   ritual-repainted, so the SHIP TAIL corrected it.
+2. [D-047](../../../DECISIONS.md#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law)'s
    clause 1 still records the pty-wrapper shape as the primary
-   birth. Decisions are an append-only ledger amended by new
-   D-numbers rather than rewritten, and
-   [SETUP](../SETUP.md#once-and-done--cloud-accounts) now states
-   plainly that it corrects D-047's note — so a reader arriving via
-   SETUP is safe. A reader arriving at D-047 FIRST is not. Whether
-   that wants a pointer line, a fresh D-number, or nothing is the
-   founder's call at the gate, not this bench's.
+   birth. FOUNDER'S RULING at the gate: leave D-047 untouched —
+   DECISIONS entries are never annotated after the fact in this
+   repo; amendments live in new entries. The pointer ("D-047's
+   rung-1 mechanics are corrected by #193; liftoff §6 owns the
+   shape") rides the next bench's decide.
 
 ## Left / idle
 
-nothing parked. The [IDEAS](../IDEAS.md) lines this bench does not
-fix were left open ON PURPOSE and named in the triage: the
+nothing parked. The [IDEAS](../../../IDEAS.md) lines this bench does
+not fix were left open ON PURPOSE and named in the triage: the
 merge-on-signal Action, the notification taxonomy, self-authored
 gates carrying the review verdict onto the record, the `count:runs`
 npm wrapper, cap arithmetic blind to fires and redeliveries, clerk
@@ -118,8 +119,8 @@ dead scaffold invites a future seat to reach for it again. What
 liftoff keeps is the PROHIBITION in behavioural terms — no wrapper,
 no redirection anywhere, attach-read-kill — plus pointers to the
 forensics in
-[cloud-born-cockpit](../history/workshop/mechanism/cloud-born-cockpit.md)
-and [IDEAS](../IDEAS.md), where the full diagnosis belongs. The
+[cloud-born-cockpit](cloud-born-cockpit.md) and
+[IDEAS](../../../IDEAS.md), where the full diagnosis belongs. The
 name still appears in the spec, which is a record of what was
 replaced.
 
@@ -134,28 +135,50 @@ routing law working as intended: one home for the procedure,
 pointers everywhere else.
 
 One correction found while verifying rather than while writing:
-[liftoff §5](../skills/liftoff.md#5--handshake-verify-each) told
-the baton-holder to write `"airborne · <url>"` — the middot form,
-but missing the date, so it was a THIRD variant of the token that
-the anchored match would technically accept while still drifting
-from the contract. It now points at §Canary and carries the full
-form.
+[liftoff §5](../../../skills/liftoff.md#5--handshake-verify-each)
+told the baton-holder to write `"airborne · <url>"` — the middot
+form, but missing the date, so it was a THIRD variant of the token
+that the anchored match would technically accept while still
+drifting from the contract. It now points at §Canary and carries the
+full form.
+
+**The gate ran the way the law intends, and that is itself worth
+recording.** The founder's first word was a bare "merge". Because
+the payload is tower-authored, the no-solo-approval law makes the
+external Web review a PRECONDITION of that word, not a formality
+after it — so the merge was held and the review requested, with an
+explicit waiver path offered rather than assumed. The founder ran
+the review and returned it verbatim for the record: PASS on
+`d118af5`, verified independently from the branch — nine files
+exactly as declared · `winpty` count zero in both liftoff and SETUP
+with `CONOUT$` present · every ack-token mention across TEMPLATE,
+parallel-lanes, liftoff and SETUP in the middot contract form, with
+anchored-match language in three places · the board-governs rule in
+both files · the API-dependency map correctly listing labeling under
+API-only, so it states that a connector-dead cockpit cannot spawn
+lanes · the environment correction blunt and correct · the LAWS
+sentence distinguishing bookkeeping from payload authorship and
+closing the loophole in the same breath · `.gitignore` with
+rationale · gates re-run by the reviewer (links 2296/0, ledger
+84↔84, memory valid) · Actions green. The out-of-mandate SETUP fix
+and the liftoff §5 third-variant catch were both APPROVED, on the
+grounds that leaving them would have shipped a contradiction.
 
 ## Where to look
 
-- The contract: [the spec](../specs/flight-hardening.md) — goal,
-  out of scope, the nine plan items, Done-means.
+- The contract: [the spec](../../../specs/flight-hardening.md) —
+  goal, out of scope, the nine plan items, Done-means.
 - The ack token, canonical home:
-  [parallel-lanes §Canary](../skills/parallel-lanes.md#canary-handshake-both-sides);
-  copies in [TEMPLATE](../memory/TEMPLATE.md)'s Status-vocabulary
-  table and the lane-worker charter master in
-  [SETUP](../SETUP.md#once-and-done--cloud-accounts).
+  [parallel-lanes §Canary](../../../skills/parallel-lanes.md#canary-handshake-both-sides);
+  copies in [TEMPLATE](../../../memory/TEMPLATE.md)'s
+  Status-vocabulary table and the lane-worker charter master in
+  [SETUP](../../../SETUP.md#once-and-done--cloud-accounts).
 - Rung 1's mechanics of record, and the board-authoritative
   flight-plan rule:
-  [liftoff §6](../skills/liftoff.md#6--ledger-handoff--fire-the-cockpit).
+  [liftoff §6](../../../skills/liftoff.md#6--ledger-handoff--fire-the-cockpit).
 - The API-dependency map and the recovery rung: the new subsection
-  in [SETUP](../SETUP.md#once-and-done--cloud-accounts), under the
-  cockpit charter.
+  in [SETUP](../../../SETUP.md#once-and-done--cloud-accounts), under
+  the cockpit charter.
 - The flight all of this comes from:
-  [lane-worker-baton](../history/workshop/mechanism/lane-worker-baton.md)
+  [lane-worker-baton](lane-worker-baton.md)
   ([#191](https://github.com/wsher0901/roam/pull/191)).

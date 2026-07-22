@@ -2,11 +2,12 @@
 type: spec
 id: flight-hardening
 title: Flight hardening — correct every instruction the first end-to-end flight proved wrong
-status: in-flight
+status: shipped
 stage: workshop
 branch: docs/flight-hardening
 pr: 193
 opened: 2026-07-22
+shipped: 2026-07-22 15:09
 ---
 
 # flight-hardening — the repo stops telling a future seat to do things that cannot work
@@ -158,4 +159,5 @@ the ship tail. Nothing outside this list.
 - [x] Full CI mirror green locally AND the pushed head's Actions run
       green; ship §6's critic has run (clean on all nine items; its
       two findings sit outside the file list and are recorded in
-      [the memory](../memory/flight-hardening.md)'s Pending issues).
+      [the story](../history/workshop/mechanism/flight-hardening.md)'s
+      Pending issues).
