@@ -16,6 +16,17 @@
 # One fire = one daily-cap routine run, invisible to `npm run
 # count:runs`. The endpoint has no idempotency key, so nothing here
 # retries: a failed fire is reported honestly and the founder decides.
+#
+# ACCEPTED RESIDUAL — read before hardening this file further. On a
+# `push` event GitHub runs the workflow definition FROM THE PUSHED
+# REF, not from the default branch. So the `ref: main` pin on the
+# checkout below protects the fire SCRIPT, but it cannot protect THIS
+# FILE: a push to `ops/summon` carrying an edited summon.yml would run
+# the edited version. Accepted, not overlooked — only the founder and
+# the founder's own sessions can push to this repo, and the worst case
+# is one unwanted routine fire (a cap run of recoverable noise), never
+# repo write. Revisit if a session is ever observed authoring workflow
+# files.
 name: Summon
 
 on:

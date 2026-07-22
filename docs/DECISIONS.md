@@ -1600,6 +1600,14 @@ the research above; the idea died on the facts, not on judgment ·
 POLLING AS A GUARANTEE — R0 reduces idle time but cannot prevent
 compression-driven drops, so it is written as a mitigation with
 its cost stated, never as the fix.
+**Residual:** on a `push` event GitHub runs the workflow
+definition FROM THE PUSHED REF, so the `ref: main` checkout pin
+protects the fire SCRIPT but not `summon.yml` itself — a push to
+`ops/summon` carrying an edited workflow would run the edited
+version. ACCEPTED: only the founder and the founder's own sessions
+can push to this repo, and the worst case is one unwanted routine
+fire (a cap run of recoverable noise), never repo write. Revisit
+if a session is ever observed authoring workflow files.
 **Affects:**
 [SETUP §cloud accounts](SETUP.md#once-and-done--cloud-accounts)
 (the charter's connector ladder · the summon workflow entry + its
