@@ -1,30 +1,22 @@
 ---
-type: memory
-id: lane-worker-baton
-updated: 2026-07-22 · lane complete · cloud
+type: history
+slug: lane-worker-baton
+shipped: 2026-07-22 16:19
+pr: 191
 ---
 # lane-worker-baton — the lane-worker charter's canary line names the baton-holder
 
 ## Status
-complete — 2026-07-22, awaiting review + the founder's word. The
-one-line `docs/SETUP.md` edit is made and pushed: the lane-worker
-charter box's step-3 last sentence now reads "WAIT for the
-**baton-holder's** airborne ack per §Canary" (was "the control
-tower's"). The six other "control tower" mentions in `docs/SETUP.md`
-are legitimate ground-meaning and stay untouched. Canary claim and
-cockpit airborne ack ([#191](https://github.com/wsher0901/roam/pull/191))
-both exchanged; PR ready-flip pending green Actions. Born by the
-cockpit on 2026-07-22, bench-first on fresh main (origin tip 4af463f,
-#190 merged).
+shipped — 2026-07-22 16:19, [#191](https://github.com/wsher0901/roam/pull/191).
 
 ## What this task is
 A single D-046 retroactivity straggler in
-[`docs/SETUP.md`](../SETUP.md). The lane-worker charter master — the
+[`docs/SETUP.md`](../../../SETUP.md). The lane-worker charter master — the
 fenced "You are a Roam cloud lane" box under
-[SETUP §Once and done — cloud accounts](../SETUP.md#once-and-done--cloud-accounts) —
+[SETUP §Once and done — cloud accounts](../../../SETUP.md#once-and-done--cloud-accounts) —
 still tells a lane, at step 3, to "WAIT for **the control tower's**
 airborne ack per §Canary before real work". The D-046 rename
-([flight-cockpit](../specs/flight-cockpit.md), #177) swept every
+([flight-cockpit](../../../specs/flight-cockpit.md), #177) swept every
 lane-command-actor line to the BATON-HOLDER, but this box was missed.
 The fix: change `the control tower's airborne ack` to
 `the baton-holder's airborne ack` on that one line. That one phrase,
@@ -36,9 +28,10 @@ none — the change is fully specified; no spec, steps live here and in
 the PR description.
 
 ## Left / idle
-nothing parked — the edit is done and pushed. Remaining before
-merge: green Actions on the pushed commit, ready-flip, completion
-comment, then the non-author cockpit review + the founder's word.
+nothing — shipped. The handshake-token disagreement surfaced in
+flight — TEMPLATE.md line 40 uses an em-dash after "airborne" while
+parallel-lanes §Canary uses a middot — is logged to IDEAS as its own
+future bench, not this payload.
 
 ## The story
 Born as the payload of the first end-to-end flight of the assembled
@@ -66,13 +59,13 @@ for the ack-format/poll match if the flight is repeated.
 
 ## Where to look
 - Target line:
-  [`docs/SETUP.md`](../SETUP.md) — the fenced "You are a Roam cloud
+  [`docs/SETUP.md`](../../../SETUP.md) — the fenced "You are a Roam cloud
   lane" charter master, step 3's last sentence: "Otherwise WAIT for
   the control tower's airborne ack per §Canary before real work."
 - Doctrine this aligns to:
-  [parallel-lanes §Canary handshake](../skills/parallel-lanes.md#canary-handshake-both-sides) —
+  [parallel-lanes §Canary handshake](../../../skills/parallel-lanes.md#canary-handshake-both-sides) —
   the lane side there already reads "the baton-holder's
   acknowledgment".
-- Why baton-holder: [flight-cockpit](../specs/flight-cockpit.md)
+- Why baton-holder: [flight-cockpit](../../../specs/flight-cockpit.md)
   (D-046) — the baton-holder is the lane-command actor (control tower
   on the ground, cockpit in flight).
