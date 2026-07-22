@@ -6,9 +6,10 @@ updated: 2026-07-22 · cockpit bench birth · cockpit
 # lane-worker-baton — the lane-worker charter's canary line names the baton-holder
 
 ## Status
-bench ready — born by the cockpit on 2026-07-22, bench-first on fresh
-main (origin tip 4af463f, #190 merged). Awaiting the cloud lane's
-canary claim.
+claimed by cloud — 2026-07-22. Canary pushed; awaiting the
+baton-holder's airborne ack in this Status before real work. Born by
+the cockpit on 2026-07-22, bench-first on fresh main (origin tip
+4af463f, #190 merged).
 
 ## What this task is
 A single D-046 retroactivity straggler in
