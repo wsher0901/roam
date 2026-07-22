@@ -193,8 +193,10 @@ via the ship tail. Nothing outside this list.
       a hypothesis.
 - [x] Nothing outside the FILES TOUCHED list; the workflow is NOT
       fired and `ops/summon` is NOT pushed from this bench.
-- [ ] Full CI mirror green locally AND the pushed head's Actions run
-      green; ship §6's critic has run.
+- [x] Full CI mirror green locally AND the pushed head's Actions run
+      green; ship §6's critic has run — three findings, all fixed on
+      this branch (the `ops/summon` delete guard, the D-048 weave
+      links, the stale `updated:` trigger word).
 - [ ] AT THE NEXT FLIGHT (post-weld, recorded here): rung 2b
       in-session revival — PROVEN / DISPROVEN. Currently: unproven.
 - [ ] AT THE NEXT DRILL (post-weld, recorded here): rung 5's mobile
