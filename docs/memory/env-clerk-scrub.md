@@ -8,17 +8,15 @@ updated: 2026-07-23 · lane birth · work PC
 
 ## Status
 
-claimed by cloud — 2026-07-23. The cloud lane woke on
-`chore/env-clerk-scrub`, ran the canary claim, and is waiting for
-the baton-holder's airborne ack (parallel-lanes §Canary) before
-touching the payload. Born bench-first by the control tower at
-liftoff from the current main tip (594b7fe): branch
-`chore/env-clerk-scrub`, spec, this memory, draft PR on origin
-before the lane exists. Awaiting the cloud lane's canary claim;
-the baton-holder writes the airborne ack once the lane pushes its
-claim (parallel-lanes §Canary). This is a LANE-authored diff, so
-the cockpit's non-author review plus the founder's word carries it
-— no external Web review needed.
+airborne · cloud · 2026-07-23. The baton-holder acked the cloud
+lane's canary at liftoff; the lane may now execute the payload —
+scrub the vestigial `CLERK_` comment from `.env.example` per
+[the spec](../specs/env-clerk-scrub.md) — and speak only through PR
+[#200](https://github.com/wsher0901/roam/pull/200). Born bench-first
+by the control tower from the current main tip (594b7fe): branch,
+spec, this memory, draft PR laid on origin before the lane existed.
+LANE-authored diff, so the cockpit's non-author review plus the
+founder's word carries it — no external Web review needed.
 
 ## What this task is
 
