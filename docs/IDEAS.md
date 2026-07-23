@@ -280,3 +280,33 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   `Default` in SETUP. STAYS OPEN: the notification taxonomy, the
   `[LANE]` half (no lane was born on that bench to test it), and
   self-authored gates carrying the review verdict onto the record.
+- 2026-07-23 (Claude Code, clerk-retirement bench): the clerk
+  retirement, staged since
+  [D-046](DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+  and carried in [SETUP](SETUP.md) as "executes at the cockpit
+  maiden drill's closeout — until then the clerk stays armed". The
+  founder deleted the routine on 2026-07-22, ahead of that
+  closeout, which inverted the risk: the repo went on advertising a
+  fallback rung and a notification channel that could no longer
+  fire. Filed and closed in one entry — it was never an open
+  question, only an execution the repo had not caught up with.
+  — CLOSED 2026-07-23 by
+  [#197](https://github.com/wsher0901/roam/pull/197), outcome
+  EXECUTED, no new D-number: D-046 decided the retirement and
+  [D-048](DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)
+  superseded its last function, so this bench executed a standing
+  decision (reasoning in
+  [the spec](specs/clerk-retirement.md), so no future seat hunts
+  for a missing decide).
+  [liftoff](skills/liftoff.md)'s ladder now bottoms out at the
+  D-048 phone bootstrap; `fire.mjs` takes `cockpit` only and a
+  stale `clerk` fails honestly; SETUP's clerk sections are
+  tombstoned, not deleted — C1–C6, N2/N3, A1/A4 stay on the
+  record. One catch beyond the mandate's file list, flagged at the
+  gate: [parallel-lanes §Mail slot](skills/parallel-lanes.md)
+  still armed the clerk as BOTH the away-surface fallback and the
+  notification watcher — the second the more dangerous, since a
+  fallback that cannot fire fails loudly while a notification
+  channel that cannot fire fails silently. Annotated the same way,
+  with the channel pointed at the cockpit's turn-end (charter rule
+  5) where it actually lives.

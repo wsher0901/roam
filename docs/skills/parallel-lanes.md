@@ -193,19 +193,28 @@ never need GitHub:
   (charter:
   [SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts));
   it inherits these mail-slot rules whole — the same sentence in
-  its thread posts the reply. Fallbacks: the cloud clerk (verified
-  2026-07-17, C1–C6 green —
-  [spec](../specs/cloud-clerk.md); armed until its staged
-  retirement) · the GitHub app, four taps — backstop.
+  its thread posts the reply. Fallback: the GitHub app, four taps
+  — backstop. (The cloud clerk stood here until its retirement on
+  2026-07-22, routine deleted —
+  [D-046](../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+  decided it,
+  [D-048](../DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)
+  superseded its last function. It is NOT armed and nothing
+  reaches for it; what it proved is kept as record —
+  [cloud-clerk](../specs/cloud-clerk.md), C1–C6 green.)
 - Away, machine on (backstop posture): the same sentence to the
   tethered control tower via
   the Claude app (Remote Control).
-The clerk can also be armed as a watcher (charter duty 6 —
-verified 2026-07-19 at the Shakedown Flight audit, N-checklist
-grades: [clerk-notify](../specs/clerk-notify.md) ·
-[shakedown-audit](../specs/shakedown-audit.md)): its turn-end
-announcements are the notification channel for `BLOCKED:`
-comments, lane completions/ready-flips, and CI red on main.
+The NOTIFICATION CHANNEL is the cockpit's turn-end report (charter
+rule 5,
+[SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts)):
+every turn-end IS the app push, carrying `BLOCKED:` comments, lane
+completions/ready-flips, and CI red on main. The clerk's watch duty
+was the ancestor of that rule — armable until 2026-07-22, verified
+2026-07-19 at the Shakedown Flight audit, N-checklist grades:
+[clerk-notify](../specs/clerk-notify.md) ·
+[shakedown-audit](../specs/shakedown-audit.md) — and is now record,
+not a channel to arm.
 Never type into a session window — a window is not a slot: words
 landing there bypass the PR and die with the session (the record
 law: nothing important lives only in conversation). Plain language
@@ -298,10 +307,13 @@ Maiden flight — verify (flown 2026-07-16; results of record):
       draft-fails burned zero provider runs); the provider's own
       count: founder-attested 2026-07-17 — 1 run, matching the
       proxy
-- [ ] dormant-baton case — deferred: expected retired by the cloud
-      clerk (D-043; verified + PRIMARY since 2026-07-17 —
-      [cloud-clerk](../specs/cloud-clerk.md)); stays open until a
-      dormant-baton answer is proven live
+- [ ] dormant-baton case — deferred, and its expected retirer is
+      gone: the cloud clerk was to close it
+      ([D-043](../DECISIONS.md#d-043--2026-07--cloud-ignition--away-command-redesign--route-ladder-v2-ready-flip-then-label-is-the-recipe-of-record-api-ignition-and-the-cloud-clerk-staged-the-claude-app-the-single-away-surface-amends-d-041-upholds-the-lane-law-and-the-wake-lock);
+      verified + PRIMARY 2026-07-17 —
+      [cloud-clerk](../specs/cloud-clerk.md)) but was retired
+      2026-07-22. The case now falls to the cockpit, and stays open
+      until a dormant-baton answer is proven live
 
 Wake-lock battle-tested live: a redelivered `pull_request.labeled`
 webhook at 21:57, citing a stale head SHA, met the

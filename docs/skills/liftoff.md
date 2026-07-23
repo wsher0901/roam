@@ -33,10 +33,12 @@ Then SORT what survives: fully-specified first, needs-input after
 law). The daily routine budget truncates from the bottom (Max plan:
 15 routine runs/day (confirmed; flat across Max tiers);
 GitHub-triggered spawns count against it, and so does every API
-fire — `fire:cockpit` (one per outing, the accepted trade —
+fire — `fire:cockpit`, the ONLY one since the clerk's retirement
+2026-07-22 (one per outing, the accepted trade —
 [D-046](../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock),
-extending the A4-recorded trade) and `fire:clerk` alike
-([clerk-autospawn](../specs/clerk-autospawn.md)) — but API fires
+extending the trade recorded at A4 —
+[clerk-autospawn](../specs/clerk-autospawn.md), now a retired
+record) — but API fires
 are INVISIBLE to `count:runs`, a label-event proxy): derive the
 consumed count — `npm run count:runs` PLUS the fires performed
 this sitting — and truncate the sorted tail at the remaining
@@ -64,14 +66,23 @@ cloud-side via the route ladder; route 1 (label-spawn) is one command
 per lane: `gh pr edit <N> --add-label lane:cloud`.
 The away surface is the COCKPIT, born at §6 by the rung ladder
 ([D-047](../DECISIONS.md#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law))
-— not spawned here. Backstop, until the clerk's staged retirement
-([D-046](../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)):
-if every §6 rung fails, `npm run fire:clerk` (API-fire, verified
-2026-07-19 at the Shakedown Flight, A-checklist grades:
+— not spawned here. The ladder BOTTOMS OUT at §6's rung 4, the
+phone bootstrap: the Claude app → a new session on wsher0901/roam
+→ the two-line bootstrap paste, recorded verbatim in
+[SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts)
+([D-048](../DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)).
+There is no rung beneath it. The clerk that once stood there was
+RETIRED 2026-07-22 and its routine deleted
+([D-046](../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+decided it;
+[D-048](../DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)
+superseded its last function) — a rung that cannot fire is worse
+than no rung, because it is reached only when everything above it
+has already failed. What the clerk PROVED is kept as record, not
+as a rung:
 [clerk-autospawn](../specs/clerk-autospawn.md) ·
-[shakedown-audit](../specs/shakedown-audit.md); the clerk session
-itself verified 2026-07-17 —
-[cloud-clerk](../specs/cloud-clerk.md)).
+[shakedown-audit](../specs/shakedown-audit.md) ·
+[cloud-clerk](../specs/cloud-clerk.md).
 
 Sources:
 [route ladder](parallel-lanes.md#cloud-spawn--route-ladder)
