@@ -6,24 +6,15 @@ status: living
 
 # Dashboard — the state surface
 
-Stamp: 2026-07-23 · 16:35 · liftoff · work PC
-V1 5/34 · S1 2/7 · S2 3/5 · sessions: 1 main · 1 parallel
-(1 need you) · needs-you 2
+Stamp: 2026-07-23 · 21:12 · ship · cloud
+V1 5/34 · S1 2/7 · S2 3/5 · sessions: 0 main · 0 parallel
+(0 need you) · needs-you 1
 How to read this board →
 [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
 
-1. 🟡 THE FLIGHT'S GATE — merge PR
-   [#200](https://github.com/wsher0901/roam/pull/200)
-   (env-clerk-scrub) on your word, once the cockpit has reviewed
-   the lane's diff as a non-author. Lane-authored, so the cockpit's
-   review plus your word carries it — no external Web review. The
-   cockpit relays and merges; command it from the phone (since
-   07-23).
-   → [#200](https://github.com/wsher0901/roam/pull/200) ·
-   [env-clerk-scrub](https://github.com/wsher0901/roam/pull/200)
-2. 🟡 The home PC's seat debt, owed at that machine's next sitting:
+1. 🟡 The home PC's seat debt, owed at that machine's next sitting:
    paste the `COCKPIT_` pair into its `.env.local` (password
    manager first) and bring `claude --version` to 2.1.195 or
    later. Optional and non-urgent while you are at the work PC
@@ -39,41 +30,18 @@ they are a register, not an action.
 
 ## Sessions
 
-| Session | Task | State | Last push | Your move |
-|---|---|---|---|---|
-| main · cockpit | THE FLIGHT — commands the env-clerk-scrub lane, reviews it non-author, merges on your word | 🟢 birthing at this liftoff (rung + url in the close line; the cockpit adds its own row at first repaint) | 16:35 | your word to merge [#200](https://github.com/wsher0901/roam/pull/200) after its review |
-| cloud · lane | [env-clerk-scrub](https://github.com/wsher0901/roam/pull/200) → [#200](https://github.com/wsher0901/roam/pull/200) | 🟢 airborne · cloud · 2026-07-23 | 16:33 (ack) | — (working; then cockpit review → your word) |
+No live session — the ground is dark. The env-clerk-scrub flight
+landed at 21:12: [#200](https://github.com/wsher0901/roam/pull/200)
+merged on the founder's word after the cockpit's non-author review,
+branch verified deleted, main at `7dc0b08`. The next pickup claims
+the baton fresh.
 
-↳ THE FLIGHT PLAN (the cockpit's authoritative mandate — read this,
-not the birth prompt, if they ever disagree):
-
-- **In flight.** The env-clerk-scrub lane
-  ([#200](https://github.com/wsher0901/roam/pull/200)), airborne and
-  acked, is scrubbing the vestigial `CLERK_` comment from
-  `.env.example` so the file carries zero `CLERK_` references. READ
-  THE LANE'S [spec](https://github.com/wsher0901/roam/pull/200) FIRST: the founder's
-  mandate said "remove the two `CLERK_` placeholder lines," but those
-  assignment lines were already removed by
-  [#197](https://github.com/wsher0901/roam/pull/197) — what remains
-  is comment prose, so the payload is the comment scrub, and the end
-  state matches the ask (no `CLERK_` anywhere). The cockpit reviews
-  the lane's diff as an independent non-author.
-- **Owed.** Nothing parked or held. One clean lane.
-- **Needs the founder's word.** The merge of
-  [#200](https://github.com/wsher0901/roam/pull/200) after the
-  cockpit's non-author review — lane-authored, so review + word
-  suffices. Plus the standing home-PC seat debt (Needs-you 2), a
-  founder act, not a gate.
-
-Cap arithmetic for this outing, stated plainly: `count:runs` reads
-15 remaining but is BLIND to the 07-23 summon-drill fire (one run),
-so the true budget was 14. Spent this liftoff: the label-spawn of
-[#200](https://github.com/wsher0901/roam/pull/200) (one
-GitHub-triggered run, visible to `count:runs`). The cockpit's
-rung-1 `--cloud` birth is list-native and NOT a routine run; a fall
-to rung 3 (`fire:cockpit`) would add one. So after this liftoff:
-13 actual remaining (12 if the cockpit fell to rung 3), while
-`count:runs` will read 14 — still blind to the summon fire.
+↳ FLIGHT CLOSED. The full-liftoff run-through flew its whole chain —
+bench-first birth → label-spawn → canary → cockpit airborne ack →
+lane one-file scrub → independent non-author review → the founder's
+merge word → weld — and landed clean. Nothing parked, held, or owed
+by the flight. One founder act stands outside it (the home-PC seat
+debt, Needs-you 1), a standing errand, not a gate.
 
 ## You are here
 
@@ -122,15 +90,16 @@ once the closeout bench opens. Under the surface doctrine
 ([D-046](DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)),
 Web's one mandatory job is the external review of self-authored
 diffs; this liftoff's payload
-([#200](https://github.com/wsher0901/roam/pull/200)) is
-LANE-authored, so the cockpit's non-author review plus your word
-carries it without Web.
+([#200](https://github.com/wsher0901/roam/pull/200)) was
+LANE-authored, so the cockpit's non-author review plus the founder's
+word carried it without Web.
 T3–T6 source-vetting relaunch stays held (see You are here).
 
 ## Shipped (latest — full record: [the ledger](history/README.md#the-ledger))
 
 | When | What | PR |
 |---|---|---|
+| 07-23 21:07 | [.env.example carries zero CLERK_ cruft: the vestigial clerk comment prose scrubbed from the "Routine fires" block so the file names only the live cockpit routine, the payload matching the founder's intent rather than the literal "two placeholder lines" (already gone by #197); flown as a full-liftoff run-through — bench-first birth, canary, cockpit airborne ack, one-file scrub — then carried through an independent non-author review that re-verified CI on the true merge tip after the lane cited a run one commit behind](history/workshop/mechanism/env-clerk-scrub.md) | [#200](https://github.com/wsher0901/roam/pull/200) |
 | 07-23 12:02 | [the repo stops pointing at a vehicle that cannot fire: the clerk routine was deleted 07-22, every live instruction reaching for the clerk removed and every verified record tombstoned (C1–C6, N2/N3, A1/A4 kept), liftoff's ladder bottomed out at the D-048 phone bootstrap, `fire.mjs` cockpit-only with the drain idiom untouched, no new D-number by design, and one live defect caught just outside the mandate's file list — parallel-lanes still armed the clerk as both fallback and notification watcher](history/workshop/mechanism/clerk-retirement.md) | [#197](https://github.com/wsher0901/roam/pull/197) |
 | 07-22 16:36 | [a cockpit that survives, announces, and replaces its own GitHub connector loss (D-048): redundancy inside a session ruled impossible, so resilience became a five-rung ladder OUT of the session (prevent · detect · repair · degrade · self-rescue) with a tombstone and refusal guard; `summon.yml` ships live on `workflow_dispatch` + a push to `ops/summon`, reusing `fire.mjs`; merge-on-signal REJECTED with reasons](history/workshop/mechanism/cockpit-resilience.md) | [#195](https://github.com/wsher0901/roam/pull/195) |
 | 07-22 16:19 | [the lane-worker charter's canary line names the baton-holder: the D-046 vocabulary sweep's one missed straggler; flown as the first end-to-end flight of the assembled chain, the wake-lock catching a mistimed em-dash-vs-middot ack in flight](history/workshop/mechanism/lane-worker-baton.md) | [#191](https://github.com/wsher0901/roam/pull/191) |
@@ -140,10 +109,9 @@ T3–T6 source-vetting relaunch stays held (see You are here).
 | 07-20 15:40 | [the cockpit is the control tower online (D-046): full-authorship cloud command session fired by liftoff; the no-solo-approval law; the CC-direct surface doctrine; clerk retirement staged; fire.mjs generalized (clerk \| cockpit)](history/workshop/definition/flight-cockpit.md) | [#177](https://github.com/wsher0901/roam/pull/177) |
 | 07-20 13:17 | [the Shakedown Flight closes on paper: A/N checklists graded evidence-or-attest; six forensics findings closed; both staged clerk lines resolved; liftoff's fire:clerk folded in on the founder's gate word](history/workshop/mechanism/shakedown-audit.md) | [#175](https://github.com/wsher0901/roam/pull/175) |
 | 07-17 23:43 | [the Hands doctrine (D-045): solo · exploratory subagents · agent team · parallel lanes, the one-bench/many-benches/read-only litmus; flown fully unattended as payload A of Shakedown phase 2](history/workshop/definition/agent-teams-brain.md) | [#170](https://github.com/wsher0901/roam/pull/170) |
-| 07-17 23:39 | [the memory-format CI gate: scripts/check-memory.mjs validates every task memory against TEMPLATE's locked format; flown fully unattended as payload B of Shakedown phase 2](history/workshop/mechanism/check-memory.md) | [#171](https://github.com/wsher0901/roam/pull/171) |
 
-Note: [#198](https://github.com/wsher0901/roam/pull/198) (board
-repaint) and [#199](https://github.com/wsher0901/roam/pull/199) (the
-cloud-birth probe finding into IDEAS) are chore/docs micro-PRs, not
-history/ stories, so they carry no ledger line — the ledger is
-history-keyed. #199's finding lives in [IDEAS](IDEAS.md).
+Note: [#201](https://github.com/wsher0901/roam/pull/201) (liftoff
+board weld) and [#202](https://github.com/wsher0901/roam/pull/202)
+(the liftoff flight harvest into IDEAS) are chore/docs micro-PRs,
+not history/ stories, so they carry no ledger line — the ledger is
+history-keyed. #202's findings live in [IDEAS](IDEAS.md).
