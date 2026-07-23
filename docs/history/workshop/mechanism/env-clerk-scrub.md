@@ -1,22 +1,20 @@
 ---
-type: memory
+type: history
 id: env-clerk-scrub
-updated: 2026-07-23 · lane complete · cloud
+updated: 2026-07-23 · weld · cloud
+shipped: 2026-07-23 21:07
+pr: 200
 ---
 
 # env-clerk-scrub — .env.example carries zero CLERK_ cruft
 
 ## Status
 
-work complete, PR ready — 2026-07-23 · cloud lane. The payload is
-pushed to [#200](https://github.com/wsher0901/roam/pull/200):
-`.env.example` now carries zero `CLERK_` references. Full CI mirror
-green locally (lint · format · links · ledger · memory · tests ·
-build); the pushed head's Actions run (30042874935) is confirmed
-green. The PR was born non-draft, so no ready-flip was needed;
-completion comment posted. Awaiting the cockpit's non-author review
-+ the founder's merge word — "done" is founder-approved and merged,
-not this lane's call.
+shipped — merged [#200](https://github.com/wsher0901/roam/pull/200),
+2026-07-23. Lane-authored, so the no-solo-approval law was satisfied
+by the cockpit's independent non-author review (PASS on `af53dca4`,
+CI green) plus the founder's merge word — no external Web review
+required for a lane-authored diff.
 
 ## What this task is
 
@@ -40,9 +38,9 @@ None.
 
 ## Left / idle
 
-Nothing left for the lane. The remaining steps are not the lane's:
-cockpit non-author review, then the founder's merge word. The lane
-never merges, never touches main.
+Nothing parked. The lane ran to its ready PR and stopped; the cockpit
+carried it from non-author review through the founder's word to the
+weld.
 
 ## The story
 
@@ -73,11 +71,22 @@ guidance and the `COCKPIT_` pair were left untouched. `grep -c CLERK
 .env.example` → 0; only `.env.example` changed. Full CI mirror ran
 green locally and the pushed head's Actions run is green.
 
+**2026-07-23, 21:07 UTC, cloud — cockpit review and weld.** The
+cockpit re-derived the state from a fresh clone, read the board as
+the authoritative flight plan, and reviewed the diff as an
+independent non-author. One thing the lane's own record got slightly
+ahead of: it cited Actions run 30042874935 as "the pushed head's"
+run, but that run was on `10e7f96` — one memory-doc commit behind the
+PR tip `af53dca4`. The cockpit re-verified on the real merge target:
+run #599 on `af53dca4`, `completed / success`, with `mergeable_state:
+clean`. Verdict PASS, posted to the PR. The founder's word followed;
+the cockpit welded from a synced branch.
+
 ## Where to look
 
-- Spec: [env-clerk-scrub](../specs/env-clerk-scrub.md) — the
+- Spec: [env-clerk-scrub](../../../specs/env-clerk-scrub.md) — the
   contract, the discrepancy, the Done-means.
 - The retirement that already removed the placeholder lines:
-  [clerk-retirement](../history/workshop/mechanism/clerk-retirement.md)
+  [clerk-retirement](clerk-retirement.md)
   ([#197](https://github.com/wsher0901/roam/pull/197)).
 - The file: `.env.example`, the "Routine fires" comment block.

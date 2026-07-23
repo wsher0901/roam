@@ -2,12 +2,12 @@
 type: spec
 id: env-clerk-scrub
 title: Scrub the vestigial CLERK_ references from .env.example so nothing points at a retired routine
-status: open
+status: shipped
 stage: workshop
 branch: chore/env-clerk-scrub
-pr: —
+pr: 200
 opened: 2026-07-23
-shipped: —
+shipped: 2026-07-23
 ---
 
 # env-clerk-scrub — .env.example carries zero CLERK_ cruft
