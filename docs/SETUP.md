@@ -158,10 +158,10 @@ lane:cloud.
   [D-048](DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)
   (connector ladder). Verified record kept: C1–C6, N2/N3, A1/A4
   green; the mechanisms it proved — API fire, standing watch,
-  turn-end push — live on in the cockpit. Everything below this
-  line is RECORD, not instruction: nothing here is armed, and no
-  ritual reaches for it.
-  (session; verified 2026-07-17, C1–C6 green; the
+  turn-end push — live on in the cockpit. The rest of THIS entry is
+  RECORD, not instruction: nothing in it is armed, and no ritual
+  reaches for it.
+  What it was: a session (verified 2026-07-17, C1–C6 green; the
   standing watch — charter duty 6 — verified 2026-07-19 at the
   Shakedown Flight, N-checklist grades:
   [clerk-notify](specs/clerk-notify.md) ·
@@ -172,13 +172,13 @@ lane:cloud.
   promotion clause) — the founder's away-mode concierge: a
   manually-born claude.ai/code session on wsher0901/roam with a
   narrow read-and-relay charter; cap-free by construction (a plain
-  session, not a routine). Birth: claude.ai/code (browser or the
-  phone's Claude app) → new session on wsher0901/roam → paste the
-  charter master below. Checklist + maiden results: the cloud-clerk
-  bench ([spec](specs/cloud-clerk.md)). The retirement
+  session, not a routine). It was born by paste: claude.ai/code
+  (browser or the phone's Claude app) → new session on
+  wsher0901/roam → the charter master below. Checklist + maiden
+  results: the cloud-clerk bench ([spec](specs/cloud-clerk.md)).
+  The retirement staged by
   [D-046](DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
-  staged EXECUTED on 2026-07-22, when the founder deleted the
-  routine.
+  EXECUTED on 2026-07-22, when the founder deleted the routine.
 
 Clerk charter (master) — **RETIRED 2026-07-22** — routine deleted;
 superseded by
@@ -234,17 +234,17 @@ absolute:
   turn-end push — live on in the cockpit. `fire:clerk` is gone
   from [`package.json`](../package.json) and
   [`scripts/fire.mjs`](../scripts/fire.mjs); `cockpit` is the only
-  target, and a stale `fire.mjs clerk` now fails honestly.
-  (verified 2026-07-19 at the Shakedown Flight,
+  target, and a stale `fire.mjs clerk` now fails honestly. The rest
+  of THIS entry is RECORD, not instruction — there is no box left
+  to re-save.
+  What it was (verified 2026-07-19 at the Shakedown Flight,
   A-checklist grades:
   [clerk-autospawn](specs/clerk-autospawn.md) ·
-  [shakedown-audit](specs/shakedown-audit.md)) — it was the
-  API-fire
-  vehicle for the clerk: a SECOND routine at
-  claude.ai/code/routines named "clerk". Saved prompt = the clerk
-  charter master above VERBATIM (box-is-a-copy; re-save the
-  routine after any master edit) with this spawn preamble as its
-  top line:
+  [shakedown-audit](specs/shakedown-audit.md)): the API-fire
+  vehicle for the clerk — a SECOND routine at
+  claude.ai/code/routines named "clerk", whose saved prompt was the
+  clerk charter master above VERBATIM, carrying this spawn preamble
+  as its top line:
 
 ```text
 Spawned at liftoff via API. Greet with a fresh one-line lane
