@@ -8,7 +8,10 @@ updated: 2026-07-23 · lane birth · work PC
 
 ## Status
 
-bench ready — 2026-07-23. Born bench-first by the control tower at
+claimed by cloud — 2026-07-23. The cloud lane woke on
+`chore/env-clerk-scrub`, ran the canary claim, and is waiting for
+the baton-holder's airborne ack (parallel-lanes §Canary) before
+touching the payload. Born bench-first by the control tower at
 liftoff from the current main tip (594b7fe): branch
 `chore/env-clerk-scrub`, spec, this memory, draft PR on origin
 before the lane exists. Awaiting the cloud lane's canary claim;
