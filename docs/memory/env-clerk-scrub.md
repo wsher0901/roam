@@ -12,10 +12,11 @@ work complete, PR ready — 2026-07-23 · cloud lane. The payload is
 pushed to [#200](https://github.com/wsher0901/roam/pull/200):
 `.env.example` now carries zero `CLERK_` references. Full CI mirror
 green locally (lint · format · links · ledger · memory · tests ·
-build); the pushed head's Actions run is confirmed green below. PR
-flipped ready, completion comment posted. Awaiting the cockpit's
-non-author review + the founder's merge word — "done" is
-founder-approved and merged, not this lane's call.
+build); the pushed head's Actions run (30042874935) is confirmed
+green. The PR was born non-draft, so no ready-flip was needed;
+completion comment posted. Awaiting the cockpit's non-author review
++ the founder's merge word — "done" is founder-approved and merged,
+not this lane's call.
 
 ## What this task is
 
