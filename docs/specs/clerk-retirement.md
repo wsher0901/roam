@@ -2,12 +2,12 @@
 type: spec
 id: clerk-retirement
 title: Clerk retirement — execute D-046's staged retirement so no live instruction points at a deleted routine
-status: open
+status: shipped
 stage: workshop
 branch: docs/clerk-retirement
-pr: —
+pr: 197
 opened: 2026-07-23
-shipped: —
+shipped: 2026-07-23 12:02
 ---
 
 # clerk-retirement — the repo stops pointing at a vehicle that cannot fire
@@ -142,11 +142,12 @@ the `COCKPIT_` pair and `claude --version` at 2.1.195 or later.
 [`.env.example`](../../.env.example) ·
 [`docs/SETUP.md`](../SETUP.md) · [`docs/IDEAS.md`](../IDEAS.md) ·
 [`docs/specs/clerk-retirement.md`](clerk-retirement.md) ·
-[`docs/memory/clerk-retirement.md`](../memory/clerk-retirement.md) ·
+`docs/memory/clerk-retirement.md` — at the weld it MOVED to
+[`docs/history/workshop/mechanism/clerk-retirement.md`](../history/workshop/mechanism/clerk-retirement.md) ·
 [DASHBOARD](../DASHBOARD.md) via the ship tail.
 
-ONE ADDITION to the mandate's list, flagged for the founder's word
-at the gate:
+ONE ADDITION to the mandate's list, flagged at the gate and
+APPROVED by the founder 2026-07-23:
 [`docs/skills/parallel-lanes.md`](../skills/parallel-lanes.md) — see
 Deviations.
 
@@ -246,9 +247,12 @@ still tells a seat the vehicle is armed, and the notification duty
 is pointed at the cockpit's turn-end (charter rule 5), which is
 where it actually lives now.
 
-If the founder prefers the mandate's list held strictly, this hunk
-drops on its own and the rest of the bench stands; the gap then
-wants its own chore PR under the retroactivity law.
+RULED 2026-07-23, at the gate: **APPROVED, and it stays.** The
+founder's reasoning, for the record — a silent notification channel
+is a worse failure than a loud fallback, and the mandate's grep said
+"fire" where that file says "arm", so this was a GAP IN THE MANDATE,
+not an overreach by the bench. The dormant-baton reassignment to the
+cockpit was ruled correct on the same pass.
 
 ## Open questions
 
