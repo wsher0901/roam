@@ -351,3 +351,30 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   list-native-beats-sturdy choice: if a list-native rescue is ever
   wanted, this is the path and the org-UUID gate is its remaining
   wall.
+- 2026-07-23 (Claude Code, liftoff — first cockpit birth flown from
+  a BACKGROUND job, the env-clerk-scrub outing): two flight
+  findings.
+  (1) The VERIFY-BEFORE-RELY title line in
+  [liftoff §6](skills/liftoff.md#6--ledger-handoff--fire-the-cockpit)
+  is DISPROVEN. The birth prompt opened with the title line
+  `[COCKPIT] roam — 2026-07-23`, but the platform IGNORED it and
+  auto-titled the session "Roam flight cockpit system
+  initialization" from the charter content. Per §6's own
+  instruction — "confirm at the next birth, record the answer here,
+  and drop the line if it does nothing" — the title line should be
+  DROPPED from the birth prompt: it does nothing. The session-list
+  doctrine stands (the session is list-native and the founder finds
+  it in the phone's general list), but the title is
+  platform-generated, not prompt-supplied. Wants a
+  [liftoff §6](skills/liftoff.md#6--ledger-handoff--fire-the-cockpit)
+  edit (a reviewed PR, not this micro).
+  (2) POSITIVE — rung 1 (the hidden-console `--cloud` birth) flew
+  CLEANLY from a background job. `Start-Process powershell
+  -WindowStyle Hidden` gave `claude` a real TTY, `claude --cloud`
+  returned exit 0 with the session link, and the launcher recovered
+  the URL by reading its OWN console screen buffer
+  (`ReadConsoleOutputCharacterW` over `CONOUT$`) — a simpler
+  self-read variant of the recipe of record's cross-process
+  `AttachConsole`. Confirms rung 1 works unattended; the self-read
+  launcher is worth keeping as a script if a future liftoff wants
+  it. Session born: `session_01XazSQ9TdZBwLEiEGEXYu6a`.
