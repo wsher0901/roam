@@ -292,14 +292,17 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   question, only an execution the repo had not caught up with.
   — CLOSED 2026-07-23 by
   [#197](https://github.com/wsher0901/roam/pull/197), outcome
-  EXECUTED, no new D-number: D-046 decided the retirement and
+  EXECUTED, no new D-number:
+  [D-046](DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+  decided the retirement and
   [D-048](DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)
   superseded its last function, so this bench executed a standing
   decision (reasoning in
   [the spec](specs/clerk-retirement.md), so no future seat hunts
   for a missing decide).
   [liftoff](skills/liftoff.md)'s ladder now bottoms out at the
-  D-048 phone bootstrap; `fire.mjs` takes `cockpit` only and a
+  [D-048](DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)
+  phone bootstrap; `fire.mjs` takes `cockpit` only and a
   stale `clerk` fails honestly; SETUP's clerk sections are
   tombstoned, not deleted — C1–C6, N2/N3, A1/A4 stay on the
   record. One catch beyond the mandate's file list, flagged at the

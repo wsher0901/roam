@@ -108,10 +108,16 @@ exit-127 repair and are not this bench's to touch.
 cloud-clerk section, its charter master, and the notify/autospawn
 sections each gain the tombstone:
 
-> RETIRED 2026-07-22 — routine deleted; superseded by D-046
-> (cockpit) and D-048 (connector ladder). Verified record kept:
+> RETIRED 2026-07-22 — routine deleted; superseded by
+> [D-046](../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+> (cockpit) and
+> [D-048](../DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)
+> (connector ladder). Verified record kept:
 > C1–C6, N2/N3, A1/A4 green; the mechanisms it proved — API fire,
 > standing watch, turn-end push — live on in the cockpit.
+
+(The D-numbers render as links wherever the tombstone lands, per the
+weave rule; the sentence itself is verbatim.)
 
 Plus a note that the `CLERK_` pair in both seats' `.env.local` is
 dead and may be removed at each seat's next sitting.
@@ -146,35 +152,78 @@ Deviations.
 
 ## Done-means
 
-- [ ] [liftoff](../skills/liftoff.md) contains no `fire:clerk` and
-      no clerk rung; §4's backstop ends at the D-048 phone
-      bootstrap; §2's budget names `fire:cockpit` only.
-- [ ] Every D-046 link in every touched file is byte-identical to
-      what it was before this bench.
-- [ ] [`scripts/fire.mjs`](../../scripts/fire.mjs) takes `cockpit`
+- [x] [liftoff](../skills/liftoff.md) contains no `fire:clerk` and
+      no clerk rung; §4's backstop ends at the
+      [D-048](../DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)
+      phone bootstrap; §2's budget names `fire:cockpit` only.
+- [x] Every D-046 link in every touched file is byte-identical to
+      what it was before this bench. Verified mechanically, not by
+      eye: the set of `DECISIONS.md#d-0NN-…` slugs in each touched
+      file was extracted before and after and compared — identical
+      for [liftoff](../skills/liftoff.md), [SETUP](../SETUP.md),
+      [IDEAS](../IDEAS.md); for
+      [parallel-lanes](../skills/parallel-lanes.md) the set is
+      purely ADDITIVE (one D-048 slug added, none lost, D-043
+      promoted from plain text to the anchor already used elsewhere
+      in that file — the weave rule).
+- [x] [`scripts/fire.mjs`](../../scripts/fire.mjs) takes `cockpit`
       only; the `process.exitCode` drain idiom and the honest exit
       codes are unchanged.
-- [ ] `node scripts/fire.mjs clerk` exits non-zero with an honest
-      unknown-target message.
-- [ ] `node scripts/fire.mjs cockpit` still rejects pre-spawn with
+- [x] `node scripts/fire.mjs clerk` exits non-zero with an honest
+      unknown-target message. RUN: exit 1, `fire: unknown target
+      "clerk" — usage: node scripts/fire.mjs cockpit [message…] (or
+      npm run fire:cockpit). cockpit is the only target: the clerk
+      was retired 2026-07-22 and its routine deleted.`
+- [x] `node scripts/fire.mjs cockpit` still rejects pre-spawn with
       fake credentials from a temp cwd — the
       [#175](https://github.com/wsher0901/roam/pull/175) method:
-      zero cap burn, honest exit 1.
-- [ ] [`package.json`](../../package.json) has no `fire:clerk` and
+      zero cap burn, honest exit 1. RUN: `the fire endpoint
+      answered 401` · `authentication_error` · exit 1. No session
+      created, no cap run spent, and the exit code is the honest 1
+      rather than the Windows 127 the drain idiom exists to
+      prevent.
+- [x] [`package.json`](../../package.json) has no `fire:clerk` and
       keeps `fire:cockpit`; [`.env.example`](../../.env.example)
       has no `CLERK_` placeholders and keeps the `COCKPIT_` pair.
-- [ ] [SETUP](../SETUP.md)'s clerk sections carry the tombstone
+- [x] [SETUP](../SETUP.md)'s clerk sections carry the tombstone
       verbatim, delete nothing, and note the dead `.env.local` pair
-      as a non-urgent founder act.
-- [ ] [IDEAS](../IDEAS.md) closes the clerk-retirement line, dated,
-      naming this PR; the seven named items stay open.
-- [ ] grep: no live instruction anywhere tells a seat to fire or
+      as a non-urgent founder act. The tombstone sentence is
+      verbatim; its two D-numbers are rendered as links, per the
+      weave rule.
+- [x] [IDEAS](../IDEAS.md) closes the clerk-retirement line, dated,
+      naming this PR; the seven named items stay open. NOTE: no
+      OPEN clerk-retirement line existed to close — the retirement
+      lived in [D-046](../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+      and [SETUP](../SETUP.md), never in the inbox. It is therefore
+      filed and closed in ONE entry, in the house shape, which is
+      the honest rendering.
+- [x] grep: no live instruction anywhere tells a seat to fire or
       arm the clerk — D-046 anchor slugs and `history/` prose
-      excepted.
-- [ ] `check:links` · `check:ledger` · `check:memory` green; the
+      excepted. Remaining matches outside `history/` are shipped
+      specs (records), the D-046/D-043 anchor slugs, and this
+      bench's own files.
+- [x] `check:links` · `check:ledger` · `check:memory` green; the
       full CI mirror green locally AND the pushed head's Actions
-      run green.
-- [ ] ship §6's critic has run and its verdict rides to the gate.
+      run green. Local: lint clean · format:check clean · 2421
+      links, 0 broken · 86 history ↔ 86 ledger · 1 memory valid ·
+      3 tests pass · build OK. Actions on the pushed head: `checks`
+      PASS.
+- [x] ship §6's critic has run and its verdict rides to the gate.
+      Three findings on the first head, all now resolved: (1) the
+      cloud-clerk entry's surviving "Birth: … paste the charter
+      master below" imperative contradicted its own tombstone —
+      already rewritten to past-tense record before the verdict
+      landed; (2) two orphaned parentheticals from splicing the
+      tombstone mid-bullet — same commit; (3) bare `D-046`/`D-048`
+      mentions in the new [IDEAS](../IDEAS.md) entry breaching the
+      weave rule — fixed here, along with the same slip in this
+      spec and the memory. Bare D-numbers that REMAIN are
+      deliberate and of two kinds: `D-049`, which does not exist
+      and cannot be linked, and meta-mentions that discuss the
+      anchor slugs themselves ("every D-046 link in the tree
+      survives") rather than citing the decision — linking those
+      would point a reader at the thing the sentence is already
+      about.
 
 ## Deviations
 
