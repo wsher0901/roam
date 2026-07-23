@@ -313,3 +313,41 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   channel that cannot fire fails silently. Annotated the same way,
   with the channel pointed at the cockpit's turn-end (charter rule
   5) where it actually lives.
+- 2026-07-23 (Claude Code, cloud-birth probe on the branch-only
+  `ops/probe-cloud`, never merged): can a GitHub Action birth a
+  LIST-NATIVE cockpit by running `claude --cloud` itself under a
+  real pty — so even an emergency cockpit lands in the phone's
+  general session list — instead of the routine fire that
+  `summon.yml` uses
+  ([D-048](DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)),
+  which yields a list-INVISIBLE session? RESULT, three gates deep:
+  (1) the pty (`script -qec '…' /dev/null`) DEFEATS the TTY refusal
+  that killed every piped `--cloud` route — the runner's terminal
+  is real, so the refusal recorded across the flight-hardening work
+  is NOT a wall for a pty; (2) a fresh-install CLI then blocks on
+  FIRST-RUN ONBOARDING (the theme picker) before it parses
+  `--cloud`, cleared by pre-seeding `~/.claude.json`
+  (`hasCompletedOnboarding` + `lastOnboardingVersion` — the theme
+  step is part of onboarding) plus the per-project
+  `hasTrustDialogAccepted` for the workspace-trust gate; keys
+  verified against a real install (2.1.218), never guessed; (3)
+  `--cloud` then runs FULLY HEADLESS, reaches the real cloud-birth,
+  and fails `Error: Unable to get organization UUID` (exit 1) — a
+  bare `setup-token` (`CLAUDE_CODE_OAUTH_TOKEN`) does not carry the
+  account's org identity, which a logged-in `~/.claude.json` caches
+  under `oauthAccount.organizationUuid`. That is WHY the routine
+  fire works where this does not: the routine runs inside Anthropic
+  infra with org context already established server-side, while the
+  `--cloud` CLI resolves it client-side from local auth state a
+  token alone does not populate. — DECISION (founder, 2026-07-23):
+  KEEP the proven routine fire as the rescue engine; do NOT seed
+  account identity into CI for an uncertain payoff. UNTRIED next
+  step if ever revisited: inject `oauthAccount` (accountUuid ·
+  organizationUuid · email) as masked repository secrets and retry
+  — it may be the last gate or reveal another (org-scoped auth the
+  setup-token may not carry). Bears on the interactive-vs-routine
+  connector hypothesis above and on
+  [D-047](DECISIONS.md#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law)'s
+  list-native-beats-sturdy choice: if a list-native rescue is ever
+  wanted, this is the path and the org-UUID gate is its remaining
+  wall.
