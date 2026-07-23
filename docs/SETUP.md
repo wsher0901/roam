@@ -151,7 +151,17 @@ lane:cloud.
    and merged — not your call.
 ```
 
-- Cloud clerk (session; verified 2026-07-17, C1–C6 green; the
+- Cloud clerk — **RETIRED 2026-07-22** — routine deleted;
+  superseded by
+  [D-046](DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+  (cockpit) and
+  [D-048](DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)
+  (connector ladder). Verified record kept: C1–C6, N2/N3, A1/A4
+  green; the mechanisms it proved — API fire, standing watch,
+  turn-end push — live on in the cockpit. The rest of THIS entry is
+  RECORD, not instruction: nothing in it is armed, and no ritual
+  reaches for it.
+  What it was: a session (verified 2026-07-17, C1–C6 green; the
   standing watch — charter duty 6 — verified 2026-07-19 at the
   Shakedown Flight, N-checklist grades:
   [clerk-notify](specs/clerk-notify.md) ·
@@ -162,16 +172,26 @@ lane:cloud.
   promotion clause) — the founder's away-mode concierge: a
   manually-born claude.ai/code session on wsher0901/roam with a
   narrow read-and-relay charter; cap-free by construction (a plain
-  session, not a routine). Birth: claude.ai/code (browser or the
-  phone's Claude app) → new session on wsher0901/roam → paste the
-  charter master below. Checklist + maiden results: the cloud-clerk
-  bench ([spec](specs/cloud-clerk.md)). Retirement staged
-  ([D-046](DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)):
-  executes at the cockpit maiden drill's closeout — until then the
-  clerk stays armed.
+  session, not a routine). It was born by paste: claude.ai/code
+  (browser or the phone's Claude app) → new session on
+  wsher0901/roam → the charter master below. Checklist + maiden
+  results: the cloud-clerk bench ([spec](specs/cloud-clerk.md)).
+  The retirement staged by
+  [D-046](DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+  EXECUTED on 2026-07-22, when the founder deleted the routine.
 
-Clerk charter (master — the clerk session's opening paste is a copy;
-re-paste from here after any edit):
+Clerk charter (master) — **RETIRED 2026-07-22** — routine deleted;
+superseded by
+[D-046](DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+(cockpit) and
+[D-048](DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)
+(connector ladder). Verified record kept: C1–C6, N2/N3, A1/A4
+green; the mechanisms it proved — API fire, standing watch,
+turn-end push — live on in the cockpit. There is no box left to
+re-save: the block below is kept as the EVIDENCE of what was
+verified, and duty 6 is the ancestor of the cockpit charter's
+rule 5 (the turn-end report IS the notification). Do not paste it
+anywhere.
 
 ```text
 You are the Roam cloud clerk — the founder's away-mode
@@ -204,40 +224,50 @@ absolute:
    forgets nothing.
 ```
 
-- Clerk routine (verified 2026-07-19 at the Shakedown Flight,
+- Clerk routine — **RETIRED 2026-07-22** — routine deleted;
+  superseded by
+  [D-046](DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+  (cockpit) and
+  [D-048](DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)
+  (connector ladder). Verified record kept: C1–C6, N2/N3, A1/A4
+  green; the mechanisms it proved — API fire, standing watch,
+  turn-end push — live on in the cockpit. `fire:clerk` is gone
+  from [`package.json`](../package.json) and
+  [`scripts/fire.mjs`](../scripts/fire.mjs); `cockpit` is the only
+  target, and a stale `fire.mjs clerk` now fails honestly. The rest
+  of THIS entry is RECORD, not instruction — there is no box left
+  to re-save.
+  What it was (verified 2026-07-19 at the Shakedown Flight,
   A-checklist grades:
   [clerk-autospawn](specs/clerk-autospawn.md) ·
-  [shakedown-audit](specs/shakedown-audit.md); retirement staged
-  ([D-046](DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
-  — executes at the cockpit maiden drill's closeout; until then
-  the clerk stays armed)) — the API-fire
-  vehicle for the clerk: a SECOND routine at
-  claude.ai/code/routines named "clerk". Saved prompt = the clerk
-  charter master above VERBATIM (box-is-a-copy; re-save the
-  routine after any master edit) with this spawn preamble as its
-  top line:
+  [shakedown-audit](specs/shakedown-audit.md)): the API-fire
+  vehicle for the clerk — a SECOND routine at
+  claude.ai/code/routines named "clerk", whose saved prompt was the
+  clerk charter master above VERBATIM, carrying this spawn preamble
+  as its top line:
 
 ```text
 Spawned at liftoff via API. Greet with a fresh one-line lane
 summary, then arm the watch.
 ```
 
-  No GitHub trigger. API trigger enabled. Founder acts
-  (post-merge, ~3 min): create the routine in the UI → add the
-  API trigger and generate the fire token ONCE (`sk-ant-oat01-…`,
-  shown once, scoped to this routine only) → copy the routine id
-  (`trig_…` — the API-trigger modal shows it; the routine's URL
-  carries it too) → paste BOTH into the control tower, which
-  stores them machine-locally in `.env.local` (`CLERK_FIRE_TOKEN`
-  · `CLERK_ROUTINE_ID`) — the documented secret path: per-machine,
+  It had no GitHub trigger and an enabled API trigger; its secret
+  pair lived machine-locally in `.env.local` (`CLERK_FIRE_TOKEN` ·
+  `CLERK_ROUTINE_ID`) — the documented secret path: per-machine,
   never this public repo
-  ([LAWS §Safety](LAWS.md#safety-non-negotiable)); regenerate the
-  token if lost; the other seat repeats the paste at its next
-  sitting. Firing: `npm run fire:clerk` (`scripts/fire.mjs`,
-  target clerk) — one daily-cap run per fire, INVISIBLE to
-  `npm run count:runs` (a label-event proxy);
-  [liftoff §2](skills/liftoff.md#2--triage-every-open-item)
-  budgets accordingly.
+  ([LAWS §Safety](LAWS.md#safety-non-negotiable)) — and firing was
+  `npm run fire:clerk`, one daily-cap run per fire and INVISIBLE
+  to `npm run count:runs`. That budget line is now
+  `fire:cockpit` alone
+  ([liftoff §2](skills/liftoff.md#2--triage-every-open-item)).
+
+  DEAD CREDENTIALS, a founder act and NOT urgent: the `CLERK_`
+  pair still sitting in both seats' `.env.local` points at a
+  deleted routine, so it is inert — it cannot fire anything and it
+  is not a leak (those files are gitignored and never left the
+  machines). Delete the two lines at each seat's next sitting,
+  whenever convenient. `.env.example` no longer carries the
+  placeholders.
 
 - Flight Cockpit routine
   ([D-046](DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock);

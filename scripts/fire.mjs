@@ -1,16 +1,23 @@
 #!/usr/bin/env node
-// Routine igniter: fires a named routine ("clerk" or "cockpit") via
-// its API trigger so liftoff can raise the away surface in one
-// command (SETUP §Once and done — cloud accounts; liftoff §4/§6).
-// Usage: `node scripts/fire.mjs <clerk|cockpit> [message…]` — wired
-// as `npm run fire:clerk` / `npm run fire:cockpit`. The target picks
-// the machine-local secret pair in .env.local — CLERK_/COCKPIT_
-// FIRE_TOKEN (the per-routine bearer token, sk-ant-oat01-…,
-// generated ONCE in the routine's API-trigger UI) and _ROUTINE_ID
-// (the trig_… id — the API-trigger modal shows it) — and POSTs the
-// documented routine-fire endpoint. An optional message rides along:
-// `npm run fire:cockpit -- "<flight plan>"` (it reaches the session
-// as untrusted <routine-fire-payload> text).
+// Routine igniter: fires a named routine via its API trigger so
+// liftoff can raise the away surface in one command (SETUP §Once and
+// done — cloud accounts; liftoff §6, and the summon workflow's
+// engine).
+// Usage: `node scripts/fire.mjs cockpit [message…]` — wired as
+// `npm run fire:cockpit`. The target picks the machine-local secret
+// pair in .env.local — COCKPIT_FIRE_TOKEN (the per-routine bearer
+// token, sk-ant-oat01-…, generated ONCE in the routine's API-trigger
+// UI) and COCKPIT_ROUTINE_ID (the trig_… id — the API-trigger modal
+// shows it) — and POSTs the documented routine-fire endpoint. An
+// optional message rides along: `npm run fire:cockpit -- "<flight
+// plan>"` (it reaches the session as untrusted
+// <routine-fire-payload> text).
+//
+// The map stays a MAP with one entry on purpose: `cockpit` is the
+// only routine since the clerk was retired 2026-07-22 (D-046 decided
+// it; D-048 superseded its last function), and the unknown-target
+// branch below is what makes a stale `fire:clerk` fail honestly
+// instead of silently doing nothing.
 //
 // Endpoint + headers verified against the live docs 2026-07-17
 // (platform.claude.com/docs/en/api/claude-code/routines-fire). The
@@ -29,7 +36,6 @@ import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 
 const TARGETS = {
-  clerk: { token: "CLERK_FIRE_TOKEN", routineId: "CLERK_ROUTINE_ID" },
   cockpit: { token: "COCKPIT_FIRE_TOKEN", routineId: "COCKPIT_ROUTINE_ID" },
 };
 
@@ -37,7 +43,9 @@ const target = (process.argv[2] ?? "").trim();
 if (!(target in TARGETS)) {
   console.error(
     `fire: unknown target "${target}" — usage: node scripts/fire.mjs ` +
-      "<clerk|cockpit> [message…] (or npm run fire:clerk / fire:cockpit).",
+      "cockpit [message…] (or npm run fire:cockpit). cockpit is the " +
+      "only target: the clerk was retired 2026-07-22 and its routine " +
+      "deleted.",
   );
   process.exit(1);
 }
