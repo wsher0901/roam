@@ -6,39 +6,23 @@ status: living
 
 # Dashboard — the state surface
 
-Stamp: 2026-07-24 · 17:24 · ship tail · work PC
+Stamp: 2026-07-24 · 17:28 · board correction · work PC
 V1 5/34 · S1 2/7 · S2 3/5 · sessions: 1 main · 0 parallel
-(0 need you) · needs-you 3
+(0 need you) · needs-you 0
 How to read this board →
 [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
 
-1. 🟡 Re-save the cockpit routine box from the edited master —
-   rule 6 changed, so the live box is one revision behind the repo
-   (since 07-24).
-   → [SETUP §cloud accounts](SETUP.md#once-and-done--cloud-accounts)
-   (the master) · [#221](https://github.com/wsher0901/roam/pull/221)
-   (what changed: rule 6 is now a three-line pointer to
-   [land](skills/land.md))
-2. 🟡 Set the two routine configs — lane worker and cockpit — to
-   Opus 5 at the next flight; the doctrine moved today and the
-   boxes have not (since 07-24).
-   → [SETUP §Models & effort](SETUP.md#once-and-done--cloud-accounts)
-   ·
-   [D-054](DECISIONS.md#d-054--2026-07--the-landing-skill--how-a-flight-ends-becomes-a-first-class-ritual-one-skill-with-two-modes-routed-by-fleet-state-retire--pause-and-transfer-the-fence-is-a-commit-so-the-resume-point-is-the-branch-tip-by-construction-wake-lock-mediated-with-its-honesty-clause-the-board-is-the-single-transfer-material-pickup-gains-the-fleet-resume-ask-and-its-cap-arithmetic-sessions-are-cattle-branches-are-the-work-charter-rule-6-becomes-a-pointer-the-effort-doctrine-moves-to-opus-5--xhigh-upholds-the-wake-lock-the-park-protocol-and-one-home-supersedes-the-opus-48-reliance-pair)
-   clause 7
-3. 🟡 At each seat: `/config` → **Default teammate model** →
-   **Default (leader's model)**. Without it, agent-team teammates
-   do NOT ride the lead's model — a teammate's model is fixed at
-   spawn and the repo cannot set this (since 07-24).
-   → [SETUP §Models & effort](SETUP.md#once-and-done--cloud-accounts)
-   (the founder-config bullet) ·
-   [HOME §Agent teams](HOME.md#agent-teams) (when to reach for a
-   team at all)
-
-All three are founder acts outside the repo, so no ritual can
-derive them done — they clear on your word at any ritual.
+Nothing — the board is CLEAR. All three standing manual acts
+cleared on the founder's word on 07-24: the cockpit routine box
+re-saved from the post-[D-054](DECISIONS.md#d-054--2026-07--the-landing-skill--how-a-flight-ends-becomes-a-first-class-ritual-one-skill-with-two-modes-routed-by-fleet-state-retire--pause-and-transfer-the-fence-is-a-commit-so-the-resume-point-is-the-branch-tip-by-construction-wake-lock-mediated-with-its-honesty-clause-the-board-is-the-single-transfer-material-pickup-gains-the-fleet-resume-ask-and-its-cap-arithmetic-sessions-are-cattle-branches-are-the-work-charter-rule-6-becomes-a-pointer-the-effort-doctrine-moves-to-opus-5--xhigh-upholds-the-wake-lock-the-park-protocol-and-one-home-supersedes-the-opus-48-reliance-pair)
+master (rule 6 now a pointer to [land](skills/land.md)); the
+lane-worker and cockpit routine configs set to Opus 5; and
+`/config` → Default teammate model → Default (leader's model) set
+at BOTH seats, so agent-team teammates ride the lead's model
+([HOME §Agent teams](HOME.md#agent-teams)). Every surface current;
+both seats fully armed.
 
 The nine open engine questions stay parked in
 [ENGINE §12](ENGINE.md#12-open-register) until
@@ -51,7 +35,7 @@ frontmatter oddity is folded there too
 
 | Session | Task | State | Last push | Your move |
 |---|---|---|---|---|
-| main · control tower | — (team-aware-leaving welded; nothing open, nothing parked) · 0/0 | 🟢 | 17:24 (this repaint) | the three manual acts above |
+| main · control tower | — (team-aware-leaving welded; nothing open, nothing parked) · 0/0 | 🟢 | 17:28 (this repaint) | — |
 
 ↳ main micro: — (no active task)
 
