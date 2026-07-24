@@ -319,11 +319,14 @@ summary, then arm the watch.
   runs it — the mechanics of record live THERE, this is the
   inventory entry). Exact command shape:
   `claude --cloud "<birth prompt>"` where the birth prompt = the
-  `[COCKPIT] roam — <date>` title line (verify-before-rely), the
   cockpit charter master below VERBATIM, the standing
   clone-provenance directive, a pointer to the board's flight
   context, and a one-line mandate — the board carries the plan
-  itself. `--cloud` demands a real TTY on both ends and refuses
+  itself. No title line: the prompt-supplied
+  `[COCKPIT] roam — <date>` first line was DISPROVEN at the
+  2026-07-23 birth (the platform auto-titles from charter
+  content); the answer of record lives in
+  [liftoff §6](skills/liftoff.md#6--ledger-handoff--fire-the-cockpit). `--cloud` demands a real TTY on both ends and refuses
   every piped route verbatim (the harness shell · the `!`
   bang-prefix · redirected Start-Process). The automated shape is
   a hidden console with NO REDIRECTION ANYWHERE — a hidden console
