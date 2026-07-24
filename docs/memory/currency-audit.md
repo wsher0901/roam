@@ -123,7 +123,8 @@ generation of staleness:
    pointer, after a mandate arrived truncated mid-sentence.
    `liftoff.md` says so emphatically. [HOME](../HOME.md)'s ritual
    portrait still says liftoff fires the cockpit "with that flight
-   plan as its payload" — the exact model #193 reversed.
+   plan as its payload" — the exact model
+   [#193](https://github.com/wsher0901/roam/pull/193) reversed.
 
 3. **`cloud-born-cockpit.md`, found beyond the known set.** The
    mandate named the clerk specs as the supersession-note set. This
@@ -146,12 +147,16 @@ generation of staleness:
 
 **Two questions answered rather than assumed.**
 [go-remote](../skills/go-remote.md) does NOT want retiring or a new
-annotation — it already carries the D-046 backstop wording, and
-D-046 explicitly rejected full Remote Control retirement
+annotation — it already carries the
+[D-046](../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+backstop wording, and
+[D-046](../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+explicitly rejected full Remote Control retirement
 (alternative ②b); demoted is not dead. And [HOME](../HOME.md)
 already describes the CC-direct surface doctrine correctly in §The
-daily loop — the paste block is named "a tool since D-046, not a
-requirement". The four HOME fixes are edge corrections, not a
+daily loop — the paste block is named "a tool since
+[D-046](../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock),
+not a requirement". The four HOME fixes are edge corrections, not a
 doctrine rewrite.
 
 **Orphans: none.** Rather than eyeball it, an inbound-reference
@@ -187,13 +192,25 @@ narrowed — the machine-local `COCKPIT_` pair gates only
 so the bullet claims exactly that. The retired-noun greps re-ran
 clean over the finished tree: every surviving hit is
 record-with-note, this bench's own artifacts, the board's ledger
-lines, doctrine-correct D-046 prose (the paste block described as
+lines, doctrine-correct
+[D-046](../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+prose (the paste block described as
 a tool, not a requirement), or the out-of-scope
 [WEB-INSTRUCTIONS](../WEB-INSTRUCTIONS.md). One reassurance worth
 keeping: the ground-meaning "cockpit" the session-start hook
-printed at this sitting's open came from the stale pre-#180 branch
+printed at this sitting's open came from the stale
+pre-[#180](https://github.com/wsher0901/roam/pull/180) branch
 this session began on — current main's hook says BATON-HOLDER,
 verified directly.
+
+**The critic's findings, repaired at the gate.** Ship §6's
+reviewer passed every one of the eleven changes and both
+law-classification judgments, and caught two weave-rule breaches
+in THIS diary's own prose — a bare `#193` and unlinked
+[D-046](../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+mentions in the story. Repaired on sight (the retroactivity law)
+before the ready-flip; a currency bench of all benches should not
+ship carrying its own staleness class.
 
 ## Where to look
 
