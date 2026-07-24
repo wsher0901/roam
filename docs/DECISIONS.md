@@ -1977,3 +1977,97 @@ the mechanical cases.
 ~300-char decide-anchor links in LAWS cost context and vault
 readability every session — a weave-rule-compatible shortening
 pattern is a future consideration, not now) · this entry.
+
+## D-054 — 2026-07 — the landing skill — how a flight ends becomes a first-class ritual: ONE skill with TWO modes routed by fleet state (retire · pause-and-transfer); the fence is a commit, so the resume point is the branch tip by construction (wake-lock-mediated, with its honesty clause); the board is the single transfer material; pickup gains the fleet-resume ask and its cap arithmetic; sessions are cattle, branches are the work; charter rule 6 becomes a pointer; the effort doctrine moves to Opus 5 · xhigh (upholds the wake-lock, the park protocol, and one-home; supersedes the Opus 4.8 reliance pair)
+
+**Decision:** landing becomes a ritual with a written procedure —
+[land](skills/land.md) plus its `.claude` stub — instead of a
+duty improvised from the charter each time. By clause:
+(1) ONE SKILL, TWO MODES, ROUTED BY STATE. Land's first act is to
+derive the fleet from origin; nothing flying routes to MODE R ·
+RETIRE, work flying routes to MODE P · PAUSE-AND-TRANSFER, and the
+founder's "ground the fleet" or "pause everything — I'm going
+local" forces MODE P outright. MODE R consolidates the duties
+charter rule 6 already carried (final repaint · every retired
+branch verified dead · "Safe to archive me") — no new law, one
+home.
+(2) THE FENCE. MODE P holds a live lane with a COMMIT on its
+branch: the memory rewritten to the full ⏸ block
+([D-050](#d-050--2026-07--session-lifecycle--closed--dead-the-close-locks-wall-softens-to-injected-read-only-doctrine-interrupt-capture-is-standing-format-the-claude-residue-sweep-is-pickup-hygiene-ideas-is-an-inbox-not-an-archive-amends-the-d-046-era-close-wall-design-upholds-the-park-protocol-and-no-solo-approval)'s
+shape — done so far · spec progress · what is left · the exact next
+step · why paused) under the existing terminal `held` Status, then
+pushed. The mechanism is the wake-lock: the fence makes the lane's
+next push non-fast-forward, the rejection is a wake, the lane
+re-reads a Status it does not own, and it stops — landing nothing
+after the fence. RESUME POINT = BRANCH TIP BY CONSTRUCTION; the
+only loss is an unpushed sliver, bounded by push-every-commit.
+HONESTY CLAUSE, written into the skill: the fence is
+wake-lock-mediated, not an interrupt, so a lane mid-turn may finish
+its current step — the report states last-observed state per lane
+and never claims a guaranteed freeze.
+(3) THE SINGLE MATERIAL. One artifact is passed down: the board's
+flight-context fleet-at-ground table (per lane — id · purpose ·
+progress · exact next step · held), with the Sessions row reading
+"no live cockpit — grounded for local pickup". Per-lane depth stays
+in each memory. No new file.
+(4) THE RESUME COUNTERPART. A grounded fleet makes
+[pickup](skills/pickup.md) render FLEET RESUME — after any ⏸
+INTERRUPTED lead, which keeps priority — then ask, in fixed words,
+whether to continue, with N and the cap arithmetic derived AT ASK
+TIME, plus the granular alternatives (`local <id>` at 0 cap runs ·
+`redeploy <id>` at 1 · `hold <id>`). Redeploy mechanics live in
+[pickup §6](skills/pickup.md#6--fleet-resume-on-the-founders-answer)
+once; [parallel-lanes](skills/parallel-lanes.md) points at it.
+(5) SESSIONS ARE CATTLE, BRANCHES ARE THE WORK. The landing report
+ends with the archive list — every fenced lane's session URL plus
+the cockpit's own — ordered AFTER the fences are pushed (the
+resurrection rule). Old sessions are never revived; resume births
+fresh workers on the fenced branches.
+(6) CHARTER RULE 6 BECOMES A POINTER — three lines naming the
+ritual, its two modes, and its skill; the duties move out.
+(7) THE EFFORT DOCTRINE. Opus 5 (released 2026-07-24 at Opus 4.8's
+price, the new Max default, no Fable-class cap) becomes the default
+for ALL work including reviews and architecture, at xhigh; Fable 5
+is an optional second opinion only; throttle-effort-before-model is
+unchanged. The Opus 4.8 / Sonnet 5 reliance pair is retired, and
+the two routine boxes are set to Opus 5 at the next flight.
+**Why:** the flight's ending was the one lifecycle moment with no
+written procedure, and its expensive case — a fleet still flying
+when the founder wants the work back at a desk — had no answer at
+all: archiving the sessions would have killed the workers and left
+nothing on the branches saying where they stopped. A commit is the
+only pause a lane can be made to obey, because a rejected push is
+the only signal that reliably reaches a running session; building
+the pause out of the mechanism that already exists means the resume
+point needs no bookkeeping to be correct — it IS the branch tip.
+Two modes in one skill rather than two skills because the spine is
+shared (derive · repaint · report · stop) and a fork inside a
+ritual is the house shape already, in handoff's FULL/QUIET. And the
+transfer rides the board because the board is already the artifact
+every seat reads first.
+**Alternatives rejected, each with its reason:** an instant lane
+freeze — lanes have no interrupt channel; the wake-lock IS the
+channel, and pretending otherwise would put a guarantee in writing
+that the mechanism cannot keep · auto-redeploy at pickup — spending
+cap runs is the founder's word, never a ritual's default ·
+pausing via session archive alone — it kills the worker and leaves
+no fence, which is the exact discrepancy this skill exists to
+prevent · reviving old lane sessions — no mechanism exists, and a
+fresh worker reading a complete fence is strictly more reliable
+than a revived session carrying stale in-context state; continuity
+is git's job · two separate skills — the shared spine would fork
+and drift, and mode-inside-skill is the house shape per handoff and
+pickup.
+**Affects:** [land](skills/land.md) (new — the ritual) ·
+`.claude/skills/land/SKILL.md` (new — the stub) ·
+`.claude/skills/handoff/SKILL.md` (the seat boundary: a desk, not a
+flight) · [pickup §5 + §6](skills/pickup.md#6--fleet-resume-on-the-founders-answer)
+(FLEET RESUME and the redeploy mechanics) ·
+[parallel-lanes §Respawn](skills/parallel-lanes.md#respawn-on-an-existing-bench-liftoff-adopt)
+(one pointer line) ·
+[SETUP §cloud accounts](SETUP.md#once-and-done--cloud-accounts)
+(charter rule 6 → a pointer; the cockpit inventory line; the
+Models & effort doctrine) · [HOME](HOME.md) (the ritual portrait
+and census, the three Terms entries, the Command card line, the
+merge-allowance sentence) ·
+[the spec](specs/landing-skill.md) + its memory · this entry.

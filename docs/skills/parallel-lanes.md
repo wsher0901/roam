@@ -66,6 +66,10 @@ Status → "claimed for respawn by <vehicle> — <date>" — then WAIT;
 the baton-holder's ack overwrites the parked Status with "airborne ·
 <url> · <date>". Everything after — diary, PR speech, landing — is
 the ordinary lane law.
+A GROUNDED FLEET — benches fenced by [land](land.md)'s MODE P —
+resumes through its own counterpart instead:
+[pickup §6](pickup.md#6--fleet-resume-on-the-founders-answer) holds
+those mechanics, and this page does not repeat them.
 
 ## Liveness — live vs reclaimable
 Commits are the heartbeat

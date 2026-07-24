@@ -1,0 +1,228 @@
+---
+type: skill-procedure
+title: Land
+status: living
+---
+
+# Land — the flight's ending ritual
+
+COCKPIT ONLY. Land ends a FLIGHT; [handoff](handoff.md) leaves a
+DESK — the ground's leaving ritual never runs in flight, and this
+one never runs on the ground. Fires on the founder's "land",
+"land it", "ground the fleet", "pause everything — I'm going
+local", or the flight's own natural end. It closes the session.
+
+ONE skill, TWO modes, routed by the fleet — because a flight ends
+in exactly two situations and they need opposite acts: the work is
+finished (retire it) or the work is still flying and the founder
+is walking back to a desk (pause it and hand it over). The mode is
+derived, never guessed.
+
+Sources:
+[cockpit charter — SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts)
+[D-054](../DECISIONS.md#d-054--2026-07--the-landing-skill--how-a-flight-ends-becomes-a-first-class-ritual-one-skill-with-two-modes-routed-by-fleet-state-retire--pause-and-transfer-the-fence-is-a-commit-so-the-resume-point-is-the-branch-tip-by-construction-wake-lock-mediated-with-its-honesty-clause-the-board-is-the-single-transfer-material-pickup-gains-the-fleet-resume-ask-and-its-cap-arithmetic-sessions-are-cattle-branches-are-the-work-charter-rule-6-becomes-a-pointer-the-effort-doctrine-moves-to-opus-5--xhigh-upholds-the-wake-lock-the-park-protocol-and-one-home-supersedes-the-opus-48-reliance-pair)
+
+## 0 · Derive the fleet, route the mode
+
+FIRST ACT, before any other: derive the fleet FROM ORIGIN, never
+from session memory (the derivation law) — `git fetch --prune`,
+then every open PR (drafts included), each one's head branch, each
+lane memory's Status, and each branch's last-commit time read
+through the liveness rule
+([parallel-lanes §Liveness](parallel-lanes.md#liveness--live-vs-reclaimable)).
+
+Route on what that returns:
+
+- **Nothing flying** — no live lane, nothing mid-bench →
+  **[MODE R · RETIRE](#mode-r--retire-the-flights-natural-end)**.
+- **Work flying** — any live lane, or the cockpit's own bench
+  still open →
+  **[MODE P · PAUSE-AND-TRANSFER](#mode-p--pause-and-transfer-the-founder-is-going-local)**.
+
+The founder's explicit phrases — "ground the fleet", "pause
+everything — I'm going local" — force MODE P DIRECTLY, whatever
+the fleet reads. An empty fleet still gets MODE P's board line and
+report, so the founder always lands on a board that says where the
+work is.
+
+Sources:
+[derivation law — LAWS §Knowledge & tracking](../LAWS.md#knowledge--tracking)
+
+## MODE R · RETIRE (the flight's natural end)
+
+The flight's work is done and merged. Three acts, then silence —
+these are the duties the cockpit charter's rule 6 used to carry;
+they live here now, in one home.
+
+1. **Final board repaint** per
+   [handoff §4](handoff.md#4--repaint-dashboard-the-board-spec--single-source)
+   — Shipped rolled to the newest history entries, and this
+   cockpit's Sessions row CLEARED (no live cockpit remains).
+   Shipped as a micro-PR exactly as
+   [handoff §5](handoff.md#5--ship-the-note) ships its note:
+   chore branch from freshly pulled main, board-only commit,
+   immediate squash-merge.
+2. **Every retired branch verified dead.** After any retirement,
+   re-fetch with `--prune` and re-list: a session can resurrect
+   its own deleted branch at the byte-identical SHA, and ending or
+   archiving it in the UI does not reliably stop that. Re-delete
+   on sight — a same-SHA resurrection carries no unique work by
+   construction. A branch carrying UNIQUE commits is never
+   deleted: surface it on the board's Needs-you instead.
+3. **The landing report**, in the founder's status template
+   ([HOME §Response doctrine](../HOME.md#response-doctrine)),
+   ending on this line and nothing after it:
+
+   ```text
+   Safe to archive me.
+   ```
+
+Then stop. Write nothing further.
+
+Sources:
+[parallel-lanes §Cloud spawn](parallel-lanes.md#cloud-spawn--route-ladder)
+(the resurrection rule)
+[DASHBOARD](../DASHBOARD.md)
+
+## MODE P · PAUSE-AND-TRANSFER (the founder is going local)
+
+Work is still flying and the founder is coming back to a desk. The
+job is not to stop the fleet dead — nothing can, see the honesty
+clause — but to make every lane's work FINDABLE, COMPLETE TO ITS
+LAST PUSH, and RESUMABLE from any seat. Run (a) through (f) in
+order; the order is the point.
+
+### (a) Fleet snapshot — derived live, before anything is touched
+
+Report the fleet BEFORE fencing anything, so the founder sees the
+flight as it actually was. It keeps the charter's rule-5 FLEET
+TABLE columns — id · purpose · verdict glyph — and adds the four a
+landing needs:
+
+| id | purpose | 🟢/🟡/🔴 | memory Status | PR head | CI | last push |
+|---|---|---|---|---|---|---|
+
+The glyph LEADS the row's verdict per the response doctrine, and
+every 🔴 names its fix. `purpose` is one line. `memory Status` is
+the Status-vocabulary word verbatim
+([TEMPLATE](../memory/TEMPLATE.md)). `CI` is the head commit's
+Actions state, read live. `last push` is an age, not a clock time.
+
+Nothing is touched until this table exists.
+
+### (b) FENCE each live lane
+
+THE FENCE IS A COMMIT. On the lane's branch, rewrite its memory to
+carry the FULL pause context in
+[D-050](../DECISIONS.md#d-050--2026-07--session-lifecycle--closed--dead-the-close-locks-wall-softens-to-injected-read-only-doctrine-interrupt-capture-is-standing-format-the-claude-residue-sweep-is-pickup-hygiene-ideas-is-an-inbox-not-an-archive-amends-the-d-046-era-close-wall-design-upholds-the-park-protocol-and-no-solo-approval)'s
+shape — a resuming seat must be able to continue from that block
+alone:
+
+- what it did so far
+- how much of the spec is done
+- what is left
+- the EXACT next step
+- why it paused — "landed for local pickup" with the date
+
+Status line — the terminal `held` state, whose
+[TEMPLATE](../memory/TEMPLATE.md) row names land as its second
+writer beside liftoff §5, one shape carrying two reasons:
+
+```text
+held — landed for local pickup <date>
+```
+
+Then PUSH. The push is the fence.
+
+**Why a commit stops a running lane.** The fence lands on the
+branch, so the lane's next push is non-fast-forward and is
+REJECTED. A rejected push IS a wake
+([parallel-lanes §Wake-lock](parallel-lanes.md#wake-lock--parking)):
+the lane must pull, re-read its own memory Status FIRST, and obey
+it before any retry. It then reads `held` — terminal, and a Status
+it does not own — so it pushes nothing further and terminates. The
+lane lands NOTHING after the fence. The resume point is therefore
+the branch tip BY CONSTRUCTION, and the only thing that can be
+lost is the lane's unpushed sliver — bounded by the lane law's
+push-every-commit rule (rule 3).
+
+**HONESTY CLAUSE.** The fence is WAKE-LOCK-MEDIATED, not an
+interrupt. Lanes have no interrupt channel; the wake-lock is the
+channel, and it acts at the lane's next push. A lane mid-turn may
+finish its current step before it wakes. So the report states the
+LAST-OBSERVED state per lane and never claims a guaranteed freeze
+— if a lane's tip moves once more after the fence, that is the
+mechanism working as designed, not a failure.
+
+**Relationship to the park protocol.** The park protocol's
+one-stamped-line limit governs [handoff](handoff.md)'s ground-side
+park of a LOCAL lane
+([handoff §1.5](handoff.md#15--park-the-local-lanes-full-only)).
+The fence is its flight-side counterpart and deliberately writes
+more: the transfer crosses a seat boundary, so the block a
+resuming seat reads must be complete, not a stamp.
+
+### (c) The cockpit's own bench
+
+Any bench the cockpit itself has open gets the SAME full pause
+block in its memory, with the same `held` Status, and is pushed.
+The cockpit's own work is not a special case — it transfers by the
+identical mechanism.
+
+### (d) THE SINGLE MATERIAL — the board
+
+One artifact is passed down, and it is the board's flight context
+under Sessions
+([handoff §4](handoff.md#4--repaint-dashboard-the-board-spec--single-source)
+stays the board's single definition; this is a rendering of the
+flight-context prose it already licenses, not a new section). The
+FLEET-AT-GROUND table — one row per lane:
+
+| id | purpose | progress | exact next step | state |
+|---|---|---|---|---|
+
+`progress` and `exact next step` are lifted FROM EACH LANE'S
+FENCE, so the board and the memories cannot disagree. `state`
+reads `held`. The Sessions row for the flight itself reads:
+
+```text
+no live cockpit — grounded for local pickup <date>
+```
+
+Per-lane depth stays in each memory; the board carries the summary
+and the pointers. NO new file — one home per class.
+
+Ship it as the micro-PR per
+[handoff §5](handoff.md#5--ship-the-note).
+
+### (e) The landing report
+
+In the founder's status template
+([HOME §Response doctrine](../HOME.md#response-doctrine)), ending
+on this line:
+
+```text
+Grounded. Safe to archive me — pickup at any seat resumes the fleet.
+```
+
+### (f) Session disposal
+
+SESSIONS ARE CATTLE; BRANCHES ARE THE WORK. The landing report
+ends with the ARCHIVE LIST — every fenced lane's session URL plus
+the cockpit's own — and that list comes AFTER the fences are
+pushed, never before (the resurrection rule: a session that is
+archived while it still has unpushed intent can wake and write).
+
+Old sessions are NEVER revived. Resume births FRESH workers on the
+fenced branches — a fresh worker reading a complete fence is
+strictly more reliable than a revived session carrying stale
+in-context state. Continuity is git's job, not a session's.
+
+`claude/*` workspace residue needs no duty here: pickup's existing
+sweep collects it
+([pickup §3](pickup.md#3--gather-git-outranks-the-board)).
+
+Sources:
+[pickup §6 — the resume counterpart](pickup.md#6--fleet-resume-on-the-founders-answer)
+[lane law — LAWS §Parallel lanes & cloud](../LAWS.md#parallel-lanes--cloud)
+[TEMPLATE — the Status vocabulary](../memory/TEMPLATE.md)

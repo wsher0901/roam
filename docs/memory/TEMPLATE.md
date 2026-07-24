@@ -62,7 +62,7 @@ an em-dash ack cost a flight its handshake).
 | interrupted — <date> · <why> | the interrupting seat (Esc · founder redirect · handoff park), with the ⏸ capture block filled in Status | resume via pickup's ⏸ lead ("continue?") or the founder's word |
 | claimed for respawn — <vehicle · date> | the cloud lane | waiting for ack |
 | respawned — <new vehicle · date> | baton-holder/liftoff, at respawn | nothing — the bench belongs to the new lane; a prior worker self-terminates on sight |
-| held: needs local — <reason> | liftoff §5 | nothing — local resume only |
+| held — <reason> | two writers, one shape: liftoff §5 (`held: needs local — <reason>`) · [land](../skills/land.md) MODE P (b), the fence (`held — landed for local pickup <date>`) | nothing — resume only on the founder's word: adopt the branch locally, or redeploy via [pickup §6](../skills/pickup.md#6--fleet-resume-on-the-founders-answer) |
 | cloud spawn failed — <reason> | baton-holder, + the board's Sessions row (+ Needs-you mirror) | nothing — founder decides |
 | failed — <reason · date> | the lane (genuine error) or baton-holder | nothing — founder decides |
 | superseded — <by> | baton-holder | self-terminate on sight |
