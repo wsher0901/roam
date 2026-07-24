@@ -77,13 +77,23 @@ TWO MODES, ONE SKILL rather than two skills: the spine is shared
 already the house shape in handoff's FULL/QUIET. Two skills would
 have forked that spine and drifted.
 
-NO NEW VOCABULARY WAS NEEDED, and that was checked rather than
-assumed. The fence's Status uses the EXISTING terminal `held`
-state from [TEMPLATE](TEMPLATE.md), and pickup's redeploy flips
-back to the existing `bench ready`. So the locked memory format
-stays untouched, and every wake-lock consumer — including the
-lane-worker charter's rule 3, which already lists `held` as
-terminal — obeys the fence without an edit.
+NO NEW STATE WAS NEEDED — but one row did need widening, and the
+critic caught the overclaim before the gate. The fence uses the
+EXISTING terminal `held` state and pickup's redeploy flips back to
+the existing `bench ready`, so no consumer needed an edit: the
+lane-worker charter's rule 3 already lists `held` as terminal, and
+`.claude/hooks/session-start.mjs` matches the bare word (verified
+on this bench, not assumed). What was NOT true is the stronger
+claim first written here — that nothing changed. [TEMPLATE](TEMPLATE.md)
+documented exactly one `held` line shape, liftoff §5's
+"needs local", so the fence would have been a second, undocumented
+writer of a differently-shaped line. The retroactivity law says
+backfill in the same PR, so that row now carries ONE shape with
+BOTH writers named. Second finding, also taken: MODE P (a)'s
+snapshot table had dropped the charter's glyph column, so the
+response doctrine's "glyph verdicts lead" was not plainly
+satisfied — the column is back and the framing no longer claims a
+closer match to rule 5 than it delivers.
 
 ONE RIPPLE BEYOND THE MANDATE'S FILE LIST, taken deliberately and
 disclosed rather than smuggled. Making land a ritual makes six of

@@ -94,32 +94,49 @@ pointer line) · `.claude/skills/land/SKILL.md` (new) ·
 this spec + [the memory](../memory/landing-skill.md) ·
 [DASHBOARD](../DASHBOARD.md) via the ship tail.
 
-One ripple beyond that list, disclosed rather than smuggled:
-HOME's ritual-census heading is renamed (five → the rituals) because
-land makes a sixth, and the retroactivity law requires the backfill
-in this PR; its one inbound link lives in the shipped
-[currency-audit](currency-audit.md) spec and is repaired as a pure
-link repair. Both are called out at THE GATE.
+TWO ripples beyond that list, both required by the retroactivity
+law and disclosed rather than smuggled — called out at THE GATE:
+
+1. HOME's ritual-census heading is renamed (five → the rituals)
+   because land makes a sixth; that moved its anchor, so its one
+   inbound link — in the shipped
+   [currency-audit](currency-audit.md) spec — is repaired. A pure
+   link repair, the one edit history/ frozen files allow.
+2. [TEMPLATE](../memory/TEMPLATE.md)'s `held` row is widened to
+   ONE shape with BOTH writers named (liftoff §5 · land's fence).
+   The critic caught it: the fence would otherwise have been a
+   second, undocumented writer of a differently-shaped `held`
+   line.
 
 ## Done means
 
-- [ ] Both modes present in [land](../skills/land.md), with the
+- [x] Both modes present in [land](../skills/land.md), with the
       fence mechanism (commit → rejected push → wake-lock →
       terminal Status) and the honesty clause written out.
-- [ ] The fleet-table shapes in land and pickup match the
+      (Critic-confirmed: §0, MODE R, MODE P (a)–(f).)
+- [x] The fleet-table shapes in land and pickup match the
       [response doctrine](../HOME.md#response-doctrine) template.
-- [ ] Charter rule 6 is a pointer with ZERO duplicated duties
-      (grep: the retire/fence duties appear in land only).
-- [ ] The land stub's boundary is explicit; the handoff stub
-      mirrors it.
-- [ ] The effort-doctrine line updated in exactly ONE home
+      (Repaired pre-flip — MODE P (a) had dropped the glyph
+      column; it is back and leads the row.)
+- [x] Charter rule 6 is a pointer with ZERO duplicated duties
+      (grep: the retire/fence duties appear in land only —
+      critic-confirmed across all of SETUP).
+- [x] The land stub's boundary is explicit; the handoff stub
+      mirrors it. (Both verified live: the harness registered
+      `land` mid-bench with the boundary in its description.)
+- [x] The effort-doctrine line updated in exactly ONE home
       ([SETUP §Models & effort](../SETUP.md#once-and-done--cloud-accounts));
-      no second copy anywhere.
-- [ ] `check:links` · `check:ledger` · `check:memory` green.
-- [ ] Full CI mirror green locally AND the pushed head's Actions
-      run green.
-- [ ] [ship §6](../skills/ship.md) critic runs; verdict rides to
-      the founder verbatim.
+      no second copy anywhere. (`time-doctrine`'s fenced block is
+      frozen record, not a live copy — critic-confirmed.)
+- [x] `check:links` · `check:ledger` · `check:memory` green.
+      (2026-07-24, work PC: 2895 links / 0 broken · 94 ↔ 94 · 1
+      memory valid.)
+- [x] Full CI mirror green locally AND the pushed head's Actions
+      run green. (Local block run verbatim; Actions green on
+      `a6c0921`, re-verified on the post-critic head.)
+- [x] [ship §6](../skills/ship.md) critic runs; verdict rides to
+      the founder verbatim. (Ran 2026-07-24:
+      PASS-WITH-FINDINGS — one 🟡, one ⚪, BOTH repaired pre-flip.)
 
 ## Pending
 
@@ -131,7 +148,14 @@ routine configs to Opus 5.
 
 ## Deviations
 
-<!-- filled by ship -->
+The seven mandated items landed as specified. Two files were
+touched beyond the mandate's list, both forced by the
+retroactivity law and both listed under Files touched above:
+[currency-audit](currency-audit.md) (one link repair, caused by
+HOME's ritual-census rename) and
+[TEMPLATE](../memory/TEMPLATE.md) (the `held` row widened to name
+land as its second writer). Neither changes behaviour; both keep a
+live file from contradicting this bench.
 
 ## Open questions
 

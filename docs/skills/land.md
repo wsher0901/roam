@@ -95,16 +95,18 @@ order; the order is the point.
 ### (a) Fleet snapshot — derived live, before anything is touched
 
 Report the fleet BEFORE fencing anything, so the founder sees the
-flight as it actually was. It is the charter's rule-5 FLEET TABLE
-extended with the three landing columns — one row per lane:
+flight as it actually was. It keeps the charter's rule-5 FLEET
+TABLE columns — id · purpose · verdict glyph — and adds the four a
+landing needs:
 
-| id | purpose | memory Status | PR head | CI | last push |
-|---|---|---|---|---|---|
+| id | purpose | 🟢/🟡/🔴 | memory Status | PR head | CI | last push |
+|---|---|---|---|---|---|---|
 
-`purpose` is one line. `memory Status` is the Status-vocabulary
-word verbatim ([TEMPLATE](../memory/TEMPLATE.md)). `CI` is the
-head commit's Actions state, read live. `last push` is an age, not
-a clock time. Glyph verdicts lead per the response doctrine.
+The glyph LEADS the row's verdict per the response doctrine, and
+every 🔴 names its fix. `purpose` is one line. `memory Status` is
+the Status-vocabulary word verbatim
+([TEMPLATE](../memory/TEMPLATE.md)). `CI` is the head commit's
+Actions state, read live. `last push` is an age, not a clock time.
 
 Nothing is touched until this table exists.
 
@@ -122,9 +124,9 @@ alone:
 - the EXACT next step
 - why it paused — "landed for local pickup" with the date
 
-Status line, the existing terminal `held` state
-([TEMPLATE](../memory/TEMPLATE.md)'s vocabulary, reason-carrying
-like liftoff's variant):
+Status line — the terminal `held` state, whose
+[TEMPLATE](../memory/TEMPLATE.md) row names land as its second
+writer beside liftoff §5, one shape carrying two reasons:
 
 ```text
 held — landed for local pickup <date>
