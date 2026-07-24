@@ -1,23 +1,25 @@
 ---
-type: memory
+type: history
 id: gh-second-path
-updated: 2026-07-23 22:24 · complete · home PC
+updated: 2026-07-23 22:38 · weld · home PC
+shipped: 2026-07-23 22:38
+pr: 207
 ---
 
 # gh-second-path — a second API path through the GitHub proxy
 
 ## Status
 
-complete, awaiting merge — 2026-07-23 22:24 · home PC. The probe
-STOP held, the founder witnessed the REST read 4b GREEN and
-ordered the mandate with four folds, and the mandate is RUN:
-D-049 + full ripple (SETUP's environment entry and two-path API
-map, the charter's automatic R2 gh rung, self-ID by session env,
-the Claude-Session trailer note, liftoff's seating + `/tasks`
-lines), two dated supersession notes, four findings to
-[IDEAS](../IDEAS.md). At THE GATE — tower-authored, so external
-Web review precedes the founder's word. DO NOT MERGE on this
-session's say-so.
+shipped — merged [#207](https://github.com/wsher0901/roam/pull/207),
+2026-07-23. Tower-authored, so the no-solo-approval law was
+satisfied by the external Web review — PASS on `2b97a86`: eight
+files (the mandate list + IDEAS per the founder's 4b fold),
+D-049's three-revision Why with the REST shaping and the
+placeholder clause verified, R2's gh rung verified verbatim
+(API-read probe, never an env echo, command continues, only both
+paths dead demote), both supersession notes pure additions, the
+gates re-run by the reviewer (links 2648/0 · ledger 89↔89 ·
+memory valid), Actions green — plus the founder's merge word.
 
 ## What this task is
 
@@ -29,17 +31,14 @@ the GitHub proxy via a proxy-injected placeholder. If proven, the
 cockpit gains a second API path (D-049) and a connector flap stops
 costing command. What stays true either way: the raw token is a
 placeholder — only gh-through-proxy works. Contract and mandate:
-[the spec](../specs/gh-second-path.md).
+[the spec](../../../specs/gh-second-path.md).
 
 ## Pending issues
 
-- Tower-authored, so [no-solo-approval](../LAWS.md) requires an
-  external Web review before the founder's word at THE GATE. DO
-  NOT MERGE.
 - **Manual acts owed after the weld (founder):** re-save the
   cockpit routine box from the updated charter master (it gained
-  the R2 gh rung and the self-URL line) · archive the FOUR probe
-  sessions (§Where to look).
+  the R2 gh rung and the self-URL line) · archive the five
+  sessions of this outing (§Where to look).
 - **The `claude/*` tripwire FIRED LATE, harmlessly:** five
   session-workspace branches surfaced on origin after the flight
   — one per session of this outing (the four probes + the
@@ -47,14 +46,17 @@ placeholder — only gh-through-proxy works. Contract and mandate:
   this bench, ZERO unique work verified per branch. They were
   absent from the mid-flight check: the platform creates them
   lazily, so a probe-cleanup tripwire must re-run at the GATE,
-  not only mid-flight. Held for the founder's word: delete the
-  five when archiving the five sessions.
+  not only mid-flight. The founder's weld order: HOLD the five
+  deletions until the founder confirms "sessions archived" — then
+  delete all five, wait 60s, `fetch --prune`, and confirm origin
+  heads = `main` only. The hold rides the board's Needs-you until
+  that word lands.
 
 ## Left / idle
 
 Nothing is left on the bench — the mandate is fully run and
 verification is at the gate. The queued next bench, unchanged:
-[WEB-INSTRUCTIONS](../WEB-INSTRUCTIONS.md) v5
+[WEB-INSTRUCTIONS](../../../WEB-INSTRUCTIONS.md) v5
 (named by [#204](https://github.com/wsher0901/roam/pull/204)).
 
 ## The story
@@ -68,7 +70,7 @@ environment's setup script now carries
 
 **The probe (session 1 — the gate).** Born by rung 1, the
 hidden-console `--cloud` birth with the self-read buffer recovery
-(the 07-23 [IDEAS](../IDEAS.md) variant), exit 0, list-native,
+(the 07-23 [IDEAS](../../../IDEAS.md) variant), exit 0, list-native,
 platform-auto-titled — consistent with
 [#204](https://github.com/wsher0901/roam/pull/204)'s title-line
 finding. The five commands ran IN THE CLOUD at birth; outputs
@@ -84,7 +86,7 @@ retrieved afterward by teleport-print, verbatim:
    substitutes real credentials. **GREEN.** (One deliberate
    deviation from record-verbatim: the object's public-profile
    body is elided here — this repo is public and
-   [LAWS §Safety](../LAWS.md#safety-non-negotiable) outranks the
+   [LAWS §Safety](../../../LAWS.md#safety-non-negotiable) outranks the
    mandate's verbatim clause; the `login` field carries the whole
    probative weight.)
 4. `gh pr list --repo wsher0901/roam` → exit 1, verbatim: `HTTP
@@ -159,7 +161,7 @@ run `command -v gh` — probe-don't-assume extends to a session's
 OWN toolset. The founder ordered the mandate run with four folds:
 REST-shaped wording throughout · gh probes are API reads, never
 env-var echoes (the classifier treats `GH_TOKEN` as a secret) ·
-the bluff finding to memory + [IDEAS](../IDEAS.md) · the three
+the bluff finding to memory + [IDEAS](../../../IDEAS.md) · the three
 vehicle findings ride first-class.
 
 **The mandate run (same sitting).** D-049 landed with its full
@@ -178,7 +180,7 @@ noted as the free audit link, and liftoff §7's `/tasks` +
 teleport line. Then the two supersession notes (cockpit-resilience
 kept its ladder, lost its sole-path premise; flight-hardening's
 one gh correction corrected in turn, its other eight standing) and
-the four findings into [IDEAS](../IDEAS.md). The sole-path grep
+the four findings into [IDEAS](../../../IDEAS.md). The sole-path grep
 came back clean on the finished tree: every surviving hit is
 record, a note quoting what it overturns, or D-049's own history.
 
@@ -192,9 +194,20 @@ a lesson: the platform creates workspace branches AFTER a check
 can pass, so the cleanup tripwire belongs at the gate too. The
 five ride to the founder with the session archives.
 
+**The gate.** The external Web review returned PASS on `2b97a86`
+— eight files as declared, D-049's three-revision Why with the
+REST shaping and the placeholder clause verified, R2's gh rung
+verified verbatim, both supersession notes pure additions, the
+gates re-run independently (links 2648/0 · ledger 89↔89 · memory
+valid · Actions green). The merge word followed, with one
+sequencing order: the five workspace-branch deletions HOLD until
+the founder confirms the five sessions are archived — archive
+before delete, so no session is orphaned from its workspace while
+it still exists.
+
 ## Where to look
 
-- [the spec](../specs/gh-second-path.md) — the contract: probe
+- [the spec](../../../specs/gh-second-path.md) — the contract: probe
   PASS shape, the five mandate items, the file list.
 - [#207](https://github.com/wsher0901/roam/pull/207) — the draft
   PR; the hold is mirrored there as a `BLOCKED:` comment.
@@ -208,9 +221,9 @@ five ride to the founder with the session archives.
      truncated mid-quote.
   4. `session_01U1iBQkYD52PkRVnmLREc88` — 4b attempt; complete
      prompt, no-op birth turn.
-- [cockpit-resilience](../specs/cockpit-resilience.md) ·
-  [flight-hardening](../specs/flight-hardening.md) — the two
+- [cockpit-resilience](../../../specs/cockpit-resilience.md) ·
+  [flight-hardening](../../../specs/flight-hardening.md) — the two
   record claims a green probe would overturn (supersession notes
   only, if the mandate ever runs).
-- [D-048](../DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)
+- [D-048](../../../DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)
   — the ladder D-049 would amend.

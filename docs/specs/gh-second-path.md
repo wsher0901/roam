@@ -2,12 +2,12 @@
 type: spec
 id: gh-second-path
 title: gh second path — the cockpit gains a second API path through the GitHub proxy (D-049)
-status: open
+status: shipped
 stage: workshop
 branch: docs/gh-second-path
 pr: 207
 opened: 2026-07-23
-shipped: —
+shipped: 2026-07-23 22:38
 ---
 
 # gh-second-path — a connector flap stops costing command
@@ -151,13 +151,14 @@ the four findings ride first-class) · this spec +
       2026-07-23 on the finished tree; every hit adjudicated.
 - [x] `check:links` · `check:ledger` · `check:memory` green.
       (2026-07-23, home PC, on the completion tree.)
-- [ ] Full CI mirror green locally AND the pushed head's Actions
-      run green. (Local mirror green 2026-07-23; the final head's
-      run is watched at the gate — ticks at the weld, the
+- [x] Full CI mirror green locally AND the pushed head's Actions
+      run green. (Ticked at the weld, 2026-07-23 — Actions green
+      on `2b97a86`, re-verified by the external review; the
       [shakedown-audit](shakedown-audit.md) precedent.)
-- [ ] [ship §6](../skills/ship.md) critic runs; verdict rides to
-      the founder verbatim. (Runs at the gate announcement; ticks
-      at the weld.)
+- [x] [ship §6](../skills/ship.md) critic runs; verdict rides to
+      the founder verbatim. (Ticked at the weld — ran 2026-07-23:
+      faithful-to-spec verdict, two ⚪ findings repaired before
+      the flip.)
 
 ## Pending
 
