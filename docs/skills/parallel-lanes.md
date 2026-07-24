@@ -239,8 +239,11 @@ re-reply.
 - CLOUD — liftoff only, via the route ladder (§Cloud spawn); never a
   CLI spawn. Push canary first; never end a cloud session before its
   work is on origin.
-- Agent Teams (research/review tasks): lead Fable/Opus, at most 4
-  Sonnet teammates (env flag already set in `.claude/settings.json`).
+- Agent teams — NOT a lane vehicle. Exploration and review at a
+  ground seat only; lanes remain the authorship mechanism. The
+  boundary, its two risks, and the model/effort rules live in
+  [HOME §Agent teams](../HOME.md#agent-teams); this page does not
+  restate them.
 - Choosing your hands — the solo · subagents · team · lanes doctrine
   lives at
   [SETUP §Models & effort](../SETUP.md#once-and-done--cloud-accounts)

@@ -288,6 +288,38 @@ whole.
   Trade to weigh: a dead-at-birth session leaves no board URL;
   mitigations — `/tasks` lists it, and the missing greeting IS the
   signal. Its own small bench, next after session-lifecycle.
+- 2026-07-24 (Claude Code + the founder, the agent-teams bench —
+  [D-055](DECISIONS.md#d-055--2026-07--agent-teams--the-boundary-teams-are-for-exploration-and-review-at-a-ground-seat-lanes-remain-the-authorship-mechanism-two-risks-become-law-single-sitting-only--an-explicit-carve-out-to-d-050s-interrupt-promise--and-a-teammate-authored-diff-is-self-authored-under-no-solo-approval-the-reviewers-model-settled-by-verification-not-guess-the-founder-side-config-recorded-upholds-the-lane-law-no-solo-approval-and-one-home-gives-the-experimental-flag-its-consumer)):
+  FIRST INTENDED USE of an agent team — THE CHRONICLE LAYER. Three
+  threads (the away surface · the lane system · the information
+  system), ONE teammate each, disjoint files, a single sitting:
+  the documented best-fit shape, and it satisfies both risk rules
+  by construction (nothing spans sittings; the synthesis is
+  review-shaped, not bench authorship). The team is NOT built on
+  the [D-055](DECISIONS.md#d-055--2026-07--agent-teams--the-boundary-teams-are-for-exploration-and-review-at-a-ground-seat-lanes-remain-the-authorship-mechanism-two-risks-become-law-single-sitting-only--an-explicit-carve-out-to-d-050s-interrupt-promise--and-a-teammate-authored-diff-is-self-authored-under-no-solo-approval-the-reviewers-model-settled-by-verification-not-guess-the-founder-side-config-recorded-upholds-the-lane-law-no-solo-approval-and-one-home-gives-the-experimental-flag-its-consumer)
+  bench — that one writes the rules only.
+- 2026-07-24 (Claude Code, the agent-teams bench, found by the
+  ship §6 critic): ENFORCEMENT GAP — the single-sitting rule
+  ([HOME §Agent teams](HOME.md#agent-teams) risk (a)) says a live
+  team is finished or shut down before the sitting ends, but NO
+  RITUAL ACTS ON IT: [handoff §1.5](skills/handoff.md#15--park-the-local-lanes-full-only)
+  parks LANES and is silent about teams, and the park protocol is
+  lane-only. The rule is documented in two surfaces and enforced
+  in none. Candidate fix: one clause in handoff §1.5 — "a live
+  team is finished or shut down, never parked; a parked team does
+  not exist." Deliberately deferred from
+  [D-055](DECISIONS.md#d-055--2026-07--agent-teams--the-boundary-teams-are-for-exploration-and-review-at-a-ground-seat-lanes-remain-the-authorship-mechanism-two-risks-become-law-single-sitting-only--an-explicit-carve-out-to-d-050s-interrupt-promise--and-a-teammate-authored-diff-is-self-authored-under-no-solo-approval-the-reviewers-model-settled-by-verification-not-guess-the-founder-side-config-recorded-upholds-the-lane-law-no-solo-approval-and-one-home-gives-the-experimental-flag-its-consumer)
+  (ritual machinery was out of scope), and recorded here so it is
+  not silently lost.
+- 2026-07-24 (Claude Code, the agent-teams bench): BOX PROVENANCE
+  — stamp each external master in [SETUP](SETUP.md) with
+  "last pasted: <date> · <sha>" so box currency becomes DERIVABLE
+  instead of remembered. Today's box-currency check had to be
+  driven from dates the founder recalled by hand; a stamp beside
+  each master would let any seat answer "which boxes are stale?"
+  mechanically. OFF-THEME for
+  [D-055](DECISIONS.md#d-055--2026-07--agent-teams--the-boundary-teams-are-for-exploration-and-review-at-a-ground-seat-lanes-remain-the-authorship-mechanism-two-risks-become-law-single-sitting-only--an-explicit-carve-out-to-d-050s-interrupt-promise--and-a-teammate-authored-diff-is-self-authored-under-no-solo-approval-the-reviewers-model-settled-by-verification-not-guess-the-founder-side-config-recorded-upholds-the-lane-law-no-solo-approval-and-one-home-gives-the-experimental-flag-its-consumer)
+  — its own micro-bench, or fold it into the next SETUP touch.
 - 2026-07-24 (the founder, at the landing-skill gate —
   [#221](https://github.com/wsher0901/roam/pull/221)): AGENT TEAMS
   is the next bench, and it must settle the SUBAGENT-MODEL line.
