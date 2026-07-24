@@ -137,21 +137,21 @@ every cockpit birth:
 > tip and your workspace contains nothing origin lacks;
 > mismatch = report verbatim and STOP.
 
-The full birth prompt = the title line (below), then the cockpit
-charter master from
+The full birth prompt = the cockpit charter master from
 [SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts)
 adopted VERBATIM, then the clone-provenance line, the board
 pointer, and the one-line mandate.
 
-TITLE LINE — the prompt's first line is
-`[COCKPIT] roam — <date>`, so the founder's general session list
-reads itself at a glance. VERIFY BEFORE RELYING: whether the birth
-platform actually adopts a prompt-supplied title is UNPROVEN —
-confirm at the next birth, record the answer here, and drop the
-line if it does nothing. Doctrine, either way: the general session
-list is what the founder touches; routine run panels are the
-machinery's paper trail (archiving a session does not clear a run
-log, by design).
+TITLE LINE — none. The verify-before-rely answer, recorded here as
+the instruction it replaces required: a prompt-supplied first line
+`[COCKPIT] roam — <date>` was DISPROVEN at the 2026-07-23 birth —
+the platform ignored it and auto-titled the session from charter
+content, so the line does nothing and is dropped (the observation:
+[IDEAS](../IDEAS.md), the 2026-07-23 liftoff harvest; this edit is
+the reviewed PR that harvest called for). Doctrine, unchanged
+either way: the general session list is what the founder touches;
+routine run panels are the machinery's paper trail (archiving a
+session does not clear a run log, by design).
 
 Birth by the rung
 ladder, evidence order (gate 0b, [D-047](../DECISIONS.md#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law)):

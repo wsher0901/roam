@@ -157,7 +157,7 @@ Sources:
 | File | What it is | Who writes it | When / lifecycle |
 |---|---|---|---|
 | [LAWS.md](LAWS.md) | the universal working laws every session loads (root [CLAUDE.md](../CLAUDE.md) imports it) | founder-approved PRs | living; changes rare and deliberate |
-| [FOUNDATION.md](FOUNDATION.md) | timeless product identity & principles | founder-approved PRs (paste block + D-number) | living; only sentences no shipped version can falsify |
+| [FOUNDATION.md](FOUNDATION.md) | timeless product identity & principles | founder-approved PRs (+ D-number) | living; only sentences no shipped version can falsify |
 | [ROADMAP.md](ROADMAP.md) | the version ladder — versions → stages → task checkboxes; the ONLY stored task state | structure via [decide](skills/decide.md); ticks via [ship](skills/ship.md)'s weld | living, rolling-wave depth |
 | [DASHBOARD.md](DASHBOARD.md) | the rendered state surface | rituals only — never hand-edited | living; repainted at ritual moments, never trusted over git |
 | [DECISIONS.md](DECISIONS.md) | the decision log, one D-number per choice | [decide](skills/decide.md) | append-only; entries are never rewritten |
@@ -538,10 +538,12 @@ before anything spawns), triages every open item through the
 eligibility gate, births anything unbirthed bench-first, spawns
 eligible lanes cloud-side, verifies each canary handshake, repaints
 the board as the flight plan — every lane airborne, held, or
-failed, each with its reason — and ends by FIRING THE COCKPIT with
-that flight plan as its payload
+failed, each with its reason — and ends by FIRING THE COCKPIT
 ([D-046](DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)),
-handing it the baton for the flight. From the trigger phrase on it
+handing it the baton for the flight. The board IS the flight plan
+and the birth prompt only points at it — a prompt is a delivery
+channel and channels truncate, so where they disagree the board
+governs ([#193](https://github.com/wsher0901/roam/pull/193)). From the trigger phrase on it
 needs
 zero mid-ritual approvals: the founder is leaving.
 
@@ -700,8 +702,10 @@ in the app and it resumes in-thread. A cloud lane pushes through
 GitHub; you answer as a PR comment and the routine feeds your reply to
 the running session. After handoff there is no channel — and that is
 correct: nothing is flying, so silence is the right state until the
-next pickup. The cloud launch route is proven once, at the maiden
-flight, which records which route won.
+next pickup. The cloud launch route was proven once, at the
+2026-07-16 maiden flight; the recorded winner is route 1 —
+label-spawn, ready-flip then label
+([parallel-lanes §Cloud spawn](skills/parallel-lanes.md#cloud-spawn--route-ladder)).
 
 Sources:
 [chooser law — LAWS §Workflow](LAWS.md#workflow-non-negotiable)
@@ -1370,7 +1374,9 @@ Sources:
 **The skills**, one line each: pickup — the sit-down briefing,
 unprompted · handoff — the leaving ritual, FULL or QUIET · ship —
 task close, gate, and weld · decide — the decision recorder + ripple ·
-liftoff — hand the workshop to the cloud · recall — ask about anything
+liftoff — hand the workshop to the cloud · go-remote — the phone
+tether, the backstop away posture (machine stays on) · recall — ask
+about anything
 past, ongoing, or future; answered from the files with receipts,
 never from memory, on its own judgment · parallel-lanes — the lane
 manual (consulted, not fired) · machine-setup — per-machine setup and
@@ -1382,6 +1388,7 @@ Sources:
 [ship](skills/ship.md)
 [decide](skills/decide.md)
 [liftoff](skills/liftoff.md)
+[go-remote](skills/go-remote.md)
 [recall](skills/recall.md)
 [parallel-lanes](skills/parallel-lanes.md)
 [machine-setup](skills/machine-setup.md)

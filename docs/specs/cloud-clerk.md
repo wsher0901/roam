@@ -12,6 +12,16 @@ shipped: 2026-07-17 15:26
 
 # cloud-clerk — the founder's away-mode concierge
 
+> **SUPERSESSION NOTE — added 2026-07-23.** The clerk was RETIRED
+> 2026-07-22 and its routine deleted; superseded by
+> [D-046](../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+> (the cockpit takes its duties) and
+> [D-048](../DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)
+> (the connector ladder takes its last function). Executed by
+> [#197](https://github.com/wsher0901/roam/pull/197). Everything
+> below is RECORD of what the clerk was and proved — not
+> instruction; nothing in it can fire.
+
 **Links:**
 [D-043](../DECISIONS.md#d-043--2026-07--cloud-ignition--away-command-redesign--route-ladder-v2-ready-flip-then-label-is-the-recipe-of-record-api-ignition-and-the-cloud-clerk-staged-the-claude-app-the-single-away-surface-amends-d-041-upholds-the-lane-law-and-the-wake-lock)
 · [SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts)
