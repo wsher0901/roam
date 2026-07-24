@@ -1856,3 +1856,72 @@ extensions) ·
 [#193](https://github.com/wsher0901/roam/pull/193)) ·
 [D-049](#d-049--2026-07--gh-second-path--gh-api-rest-through-the-github-proxy-is-the-cockpits-second-api-path-a-connector-flap-stops-costing-command-r2-gains-the-automatic-gh-rung-self-id-by-session-env-amends-d-048-corrects-the-193-api-map-upholds-d-047-and-verify-before-rely)
 (upheld: the self-URL is the mechanism) · this entry.
+
+## D-052 — 2026-07 — response doctrine — one standard for every surface speaking to the founder: answer-first, explicit steps, purpose-shaped explanation, live-derived state, glyph verdicts; the command card; the fleet-table report; the ritual status templates; WEB-INSTRUCTIONS v5 ships (retires the v4 paste-block-loop master, upholds D-046's CC-direct doctrine and the derivation law)
+
+**Decision:** how every surface speaks to the founder is ONE
+standard with ONE home, by clause:
+(1) THE RESPONSE DOCTRINE lives in
+[HOME §Response doctrine](HOME.md#response-doctrine), five
+clauses: (a) answer first — a question's first line is its
+answer, a task's first line the exact next act · (b) steps are
+explicit — never "give the word"; the word itself and where it
+goes, and every prompt handed to the founder carries WHERE ·
+WHAT · WHY · (c) explanation is purpose-shaped and LAST, concise
+by law · (d) state is derived live (the derivation law restated
+as style) · (e) glyph verdicts — 🟢/🟡/🔴 lead every status item,
+every 🔴 naming the fix AND where. Every ritual and charter
+REFERENCES the section; none copies it.
+(2) THE COMMAND CARD lives in
+[HOME §Command card](HOME.md#command-card) — the founder's
+platform commands, one line each (what · when);
+[liftoff §7](skills/liftoff.md#7--close) and the charter's R2
+point at it instead of re-listing.
+(3) THE COCKPIT REPORT is the fleet-table shape (charter rule 5):
+FLEET TABLE (id · purpose · 🟢/🟡/🔴 · waiting-on) → NEEDS YOUR
+WORD (the exact word and where to type it) → OPTIONS + REC →
+context last. One message carries everything a decision needs —
+the founder's Web↔Code loop minimized by design.
+(4) THE RITUAL STATUS TEMPLATE — liftoff §7, handoff §6, and
+pickup §5 render the founder's four-part shape: WORKING ON · WHAT
+HAPPENED (context → narrative → issue → resolution) ·
+SUPPLEMENTAL · PARALLEL/RECENT FLIGHTS (🟢 all-good / ⏸
+resume-needed per item, every ⏸ with its exact resume word).
+Pickup's ⏸ INTERRUPTED lead
+([D-050](#d-050--2026-07--session-lifecycle--closed--dead-the-close-locks-wall-softens-to-injected-read-only-doctrine-interrupt-capture-is-standing-format-the-claude-residue-sweep-is-pickup-hygiene-ideas-is-an-inbox-not-an-archive-amends-the-d-046-era-close-wall-design-upholds-the-park-protocol-and-no-solo-approval))
+stays above everything. The close reports and briefs were
+REWRITTEN to the template, not annotated.
+(5) WEB-INSTRUCTIONS SHIPS AT v5 — the master describes the
+system AS IT IS: Web's role (the mandatory external review under
+no-solo-approval + optional thinking room; never a writer), the
+five-surface map, CC-direct with the paste-block-loop language
+DEAD, the review procedure ending in an on-the-record word-paste,
+the doctrine restated compactly, the live-status and
+prompt-delivery rules, the brief and WEB HANDOFF aligned to
+clause 4's template. The master-copy pattern stands: edit via PR,
+re-paste into the claude.ai box — the box is a copy.
+**Why — the founder's stated goal, verbatim:** minimum reading
+time to decision, explicit steps over abstractions,
+purpose-shaped explanation. The v4 master still described the
+paste-block loop as THE working mode — a surface teaching a
+retired doctrine to every chat that opened it; the report shapes
+had grown one-off per ritual; and the founder's own commands
+lived scattered across five files or nowhere. One standard, one
+home each.
+**Rejected:** copying the doctrine into each ritual (one home,
+the routing law — copies drift; the currency audit exists because
+they drift) · keeping v4's structure and patching lines (stale in
+its bones was [#204](https://github.com/wsher0901/roam/pull/204)'s
+verdict — a rewrite was named the moment the audit ruled it out
+of mechanical scope).
+**Affects:**
+[HOME §Response doctrine](HOME.md#response-doctrine) +
+[HOME §Command card](HOME.md#command-card) (new) ·
+[SETUP §cloud accounts](SETUP.md#once-and-done--cloud-accounts)
+(charter rule 5 + the R2 card pointer) ·
+[liftoff §7](skills/liftoff.md#7--close) ·
+[handoff §6](skills/handoff.md#6--close-full-only) ·
+[pickup §5](skills/pickup.md#5--render-the-sit-down-summary-exactly-this-shape)
+· [WEB-INSTRUCTIONS](WEB-INSTRUCTIONS.md) (v4 → v5) ·
+[D-046](#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+(upheld: CC-direct finally reaches the Web master) · this entry.

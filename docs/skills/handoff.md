@@ -161,8 +161,20 @@ Sources:
 [IDEAS](../IDEAS.md)
 
 ## 6 · Close (FULL only)
-Report one line — "Handoff shipped (#N) · M lanes parked.
-Operations halted — safe to power off." Then, as the ritual's LAST
+The close report follows the response doctrine
+([HOME §Response doctrine](../HOME.md#response-doctrine)) in the
+founder's status template:
+- WORKING ON — what was on the bench when the sitting ended (or
+  "nothing open").
+- WHAT HAPPENED — the sitting in short sentences, context →
+  narrative → issue → resolution, ending "Handoff shipped (#N) ·
+  M lanes parked. Operations halted — safe to power off."
+- SUPPLEMENTAL — parallel Web or Design work, if any (the step-2
+  paste).
+- PARALLEL/RECENT FLIGHTS — one line per parked lane or live
+  cloud flight: 🟢 all good · ⏸ resume needed; every ⏸ carries
+  the exact resume word and where it goes.
+Then, as the ritual's LAST
 act, write `.claude/session-closed` with content "Closed at handoff
 #<N> · <date> · <seat>" — the close-lock: from that moment the
 prompt hook stamps every later prompt with the closed-session
