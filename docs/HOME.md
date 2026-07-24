@@ -486,7 +486,11 @@ running handoff in QUIET mode.)
 control-tower session (dispatched lanes skip it). It claims the
 baton,
 reads ROADMAP + DASHBOARD + every active memory + live git,
-self-heals stranded micro-PRs, repaints the board if stale, and
+self-heals stranded micro-PRs, sweeps `claude/*` workspace residue
+(cloud sessions leave heads they cannot delete —
+[pickup §3](skills/pickup.md#3--gather-git-outranks-the-board)
+verifies zero unique work, holds on live-session doubt, else
+deletes), repaints the board if stale, and
 renders the sit-down briefing: you-are-here bars, cloud lanes, focus
 blocks, needs-you list, one next action. The founder sees the whole
 workshop in one screen and starts talking.
