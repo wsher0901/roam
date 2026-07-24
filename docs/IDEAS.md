@@ -390,3 +390,31 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   resolution folded to
   [V1.S3](ROADMAP.md#v1s3--engine-core--two-families-deep)'s first
   engine bench, which will touch ENGINE anyway.
+- 2026-07-23 (Claude Code + the founder, the gh-second-path probe
+  — [#207](https://github.com/wsher0901/roam/pull/207)): four
+  findings from the probe flight, all first-class.
+  (1) A fresh cloud session BLUFFED "gh isn't available" from its
+  environment briefing WITHOUT PROBING, and self-corrected only
+  when made to run `command -v gh` (founder-witnessed at the 4b
+  session). Probe-don't-assume extends to a session's OWN toolset:
+  a session's beliefs about its environment are claims, not facts,
+  until a command answers.
+  (2) TELEPORT RELOCATES EXECUTION. `claude --teleport <id>
+  --print` moves a cloud session's execution to the local machine:
+  reading what already ran in the cloud is faithful, but anything
+  run AFTER the teleport runs locally — no proxy, local permission
+  gate. A probe must carry its commands in the BIRTH prompt; a
+  teleported session is a local session from then on.
+  (3) THE BIRTH CHANNEL TRUNCATES ON NESTED QUOTES — one probe
+  prompt arrived cut mid-command exactly inside a quoted `--jq`
+  expression ([#193](https://github.com/wsher0901/roam/pull/193)'s
+  "channels truncate", reproduced live with the trigger
+  identified: nested quoting, jq the specimen). Birth prompts
+  want zero nested quotes.
+  (4) A BIRTH TURN CAN NO-OP — two probe sessions received their
+  prompt (one provably complete) yet executed nothing, the first
+  turn closing "No response requested", apparently misread amid
+  the session-start hook dump; both honestly refused to fabricate
+  outputs when later asked to report. Of four birth prompts, one
+  executed. Watch the pattern; a birth prompt is not yet a
+  guaranteed command channel.
