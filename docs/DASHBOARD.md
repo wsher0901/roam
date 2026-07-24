@@ -6,31 +6,20 @@ status: living
 
 # Dashboard — the state surface
 
-Stamp: 2026-07-23 · 22:41 · ship · home PC
+Stamp: 2026-07-23 · 23:03 · ship · home PC
 V1 5/34 · S1 2/7 · S2 3/5 · sessions: 1 main · 0 parallel
-(0 need you) · needs-you 3
+(0 need you) · needs-you 2
 How to read this board →
 [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
 
-1. 🟡 HELD on your word "sessions archived": five `claude/*`
-   workspace branches sit on origin — one per session of the
-   [#207](https://github.com/wsher0901/roam/pull/207) probe
-   outing, each verified zero-unique-work. Archive the five
-   sessions first (four probes + your 4b session; URLs in
-   [the story](history/workshop/mechanism/gh-second-path.md)),
-   then say "sessions archived" — the tower deletes all five,
-   waits 60s, prunes, and confirms origin heads = `main` only
-   (since 07-23).
-   → [#207](https://github.com/wsher0901/roam/pull/207) ·
-   [gh-second-path](history/workshop/mechanism/gh-second-path.md)
-2. 🟡 Re-save the cockpit routine box from the updated charter
+1. 🟡 Re-save the cockpit routine box from the updated charter
    master — it gained the R2 gh rung and the self-URL line at
    [#207](https://github.com/wsher0901/roam/pull/207)'s weld
    (since 07-23).
    → [SETUP §cloud accounts](SETUP.md#once-and-done--cloud-accounts)
-3. 🟡 The home-PC seat debt, HALF-CLEARED: the version half is met
+2. 🟡 The home-PC seat debt, HALF-CLEARED: the version half is met
    (claude 2.1.218), so only the `COCKPIT_` paste remains —
    password manager first, into this seat's `.env.local`
    (currently empty) (since 07-21).
@@ -48,7 +37,7 @@ frontmatter oddity is folded there too
 
 | Session | Task | State | Last push | Your move |
 |---|---|---|---|---|
-| main · control tower | — (gh-second-path shipped [#207](https://github.com/wsher0901/roam/pull/207); no bench open) | 🟢 | 22:41 (this repaint) | say "sessions archived" when done |
+| main · control tower | — (gh-second-path shipped [#207](https://github.com/wsher0901/roam/pull/207); no bench open) | 🟢 | 23:03 (this repaint) | — |
 
 ↳ main micro: — (no active task)
 
@@ -56,8 +45,10 @@ Ground state, nothing in flight. Two benches welded this sitting —
 the currency audit ([#204](https://github.com/wsher0901/roam/pull/204))
 and the gh second path
 ([#207](https://github.com/wsher0901/roam/pull/207), D-049: the
-cockpit's second API path, probe-proven). Origin carries `main`
-plus the five HELD workspace branches (Needs-you 1). The next
+cockpit's second API path, probe-proven). The probe outing's five
+sessions are archived and their five workspace branches deleted on
+the founder's word — origin heads = `main` only, prune-confirmed
+23:03. The next
 named bench, unopened:
 [WEB-INSTRUCTIONS](WEB-INSTRUCTIONS.md) v5 — stale in its bones
 (v4 paste-block loop, no cockpit), needs a rewrite
