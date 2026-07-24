@@ -5,7 +5,7 @@ title: Session lifecycle — close-lock softening, interrupt capture, and the tw
 status: open
 stage: workshop
 branch: docs/session-lifecycle
-pr: —
+pr: 211
 opened: 2026-07-23
 shipped: —
 ---
@@ -112,29 +112,37 @@ ordered subset).
 
 ## Done means
 
-- [ ] The read-only-close clause present in BOTH rituals' close
-      steps (grep), HOME's two passages agree, the Terms line
-      exists, and the hook injects instead of blocking.
-- [ ] R4b's tombstone and the seat-stamp law byte-untouched.
-- [ ] TEMPLATE carries the ⏸ interrupt block and the
+- [x] The read-only-close clause present in BOTH rituals' close
+      steps (grep 2026-07-23), HOME's two passages agree, the
+      Terms line exists, and the hook injects instead of blocking
+      (both paths run live: silent exit 0 without the flag,
+      doctrine on stdout + exit 0 with it).
+- [x] R4b's tombstone and the seat-stamp law byte-untouched.
+      (SETUP has zero diff lines on this branch.)
+- [x] TEMPLATE carries the ⏸ interrupt block and the
       `interrupted` state row; handoff §3 carries the capture
-      duty; pickup §5 carries the ⏸ lead line (grep).
-- [ ] `check:memory` green with the changed TEMPLATE — explicitly
+      duty; pickup §5 carries the ⏸ lead line (grep 2026-07-23).
+- [x] `check:memory` green with the changed TEMPLATE — explicitly
       including TEMPLATE tolerance (it is excluded by the
       validator and extra sections are tolerated); the validator
-      unchanged, or minimally extended with the reason recorded.
-- [ ] The `claude/*` sweep clause present in pickup §3 (grep);
+      unchanged.
+- [x] The `claude/*` sweep clause present in pickup §3 (grep);
       HOME's pickup portrait points at it.
-- [ ] The compaction rule in IDEAS' header AND handoff §3's
+- [x] The compaction rule in IDEAS' header AND handoff §3's
       harvest step (grep); the first compaction performed —
-      before/after line counts in the memory.
-- [ ] The two queued ideas appended, deduped against the inbox.
-- [ ] Liftoff rung 3 reads "the summon engine, fired locally".
-- [ ] `check:links` · `check:ledger` · `check:memory` green.
+      420→266 lines, 11 closed entries deleted, 24 kept (counts
+      also in the memory).
+- [x] The two queued ideas appended, deduped against the inbox.
+- [x] Liftoff rung 3 reads "the summon engine, fired locally".
+- [x] `check:links` · `check:ledger` · `check:memory` green.
+      (2026-07-23, home PC, on the completion tree.)
 - [ ] Full CI mirror green locally AND the pushed head's Actions
-      run green.
+      run green. (Local mirror green 2026-07-23; the final head's
+      run is watched at the gate — ticks at the weld, the
+      [shakedown-audit](shakedown-audit.md) precedent.)
 - [ ] [ship §6](../skills/ship.md) critic runs; verdict rides to
-      the founder verbatim.
+      the founder verbatim. (Runs at the gate announcement; ticks
+      at the weld.)
 
 ## Pending
 
@@ -147,7 +155,21 @@ v5 rewrite itself stays queued
 
 ## Deviations
 
-<filled by /ship: anything done differently than planned — or "none">
+- The hook (`.claude/hooks/user-prompt-submit.mjs`) joined the
+  diff beyond the mandate's file list — pre-flagged in this spec's
+  §The wall and carried to the gate; the
+  [#197](https://github.com/wsher0901/roam/pull/197) precedent.
+- The compaction deleted 11 entries, not a guessed number — the
+  sweep ran as a script with two safety asserts (every deleted
+  entry must carry a CLOSED/SUPERSEDED marker; the count must
+  match the pre-registered census), and the first run's assert
+  CAUGHT two markers split by prettier's reflow — fixed and
+  re-run, zero collateral.
+- Two closed-entry stays exercised on day one: the cloud-birth
+  probe entry (its closure record lives only in itself) and the
+  partly-closed winpty + four-smaller entries stayed whole, per
+  the header rule's own stay clauses.
+- Everything else landed as specified.
 
 ## Open questions
 
