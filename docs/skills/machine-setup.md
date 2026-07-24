@@ -45,6 +45,13 @@ status: living
     push-notification toggles. This registers every session for the
     phone so go-remote can tether it. Requires CLI ≥ 2.1.110 (claude
     update covers it).
+11. The `COCKPIT_` pair — paste `COCKPIT_FIRE_TOKEN` +
+    `COCKPIT_ROUTINE_ID` into this machine's `.env.local`, recipe
+    and doctrine in
+    [SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts)
+    (a pointer — the secret path lives only there, never in this
+    file). Without it this seat cannot run `npm run fire:cockpit`,
+    the cockpit birth ladder's routine-fire rung.
 
 ## Vault lens
 
