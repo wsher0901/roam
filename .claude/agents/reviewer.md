@@ -2,7 +2,7 @@
 name: reviewer
 description: Ship-time diff critic. Invoke once a task's PR is ready to flip and before THE GATE — reviews the diff against its spec and the working laws, and returns a structured verdict. Never edits, merges, or blocks on style.
 tools: Read, Grep, Glob
-model: sonnet
+model: opus
 effort: high
 ---
 

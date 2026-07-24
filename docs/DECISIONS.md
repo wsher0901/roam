@@ -2071,3 +2071,99 @@ Models & effort doctrine) · [HOME](HOME.md) (the ritual portrait
 and census, the three Terms entries, the Command card line, the
 merge-allowance sentence) ·
 [the spec](specs/landing-skill.md) + its memory · this entry.
+
+## D-055 — 2026-07 — agent teams — the boundary: teams are for EXPLORATION AND REVIEW at a ground seat, lanes remain the authorship mechanism; two risks become law (single-sitting only — an explicit carve-out to D-050's interrupt promise — and a teammate-authored diff is self-authored under no-solo-approval); the reviewer's model settled by verification, not guess; the founder-side config recorded (upholds the lane law, no-solo-approval, and one-home; gives the experimental flag its consumer)
+
+**Decision:** agent teams get a written place in this workshop and
+a written fence around it. By clause:
+(1) THE BOUNDARY, its home
+[HOME §Agent teams](HOME.md#agent-teams): teams are for
+EXPLORATION AND REVIEW AT A GROUND SEAT; LANES REMAIN THE
+AUTHORSHIP MECHANISM. A team never authors a bench, never merges,
+never runs a ritual. The reasons are stated, not asserted: lanes
+are cloud-isolated, PR-gated, canary-claimed and wake-locked with
+days of hardening behind them, while teams are local, in-session,
+share ONE working tree, and have no PR isolation; and bench
+authoring is sequential same-file work — the exact shape the
+official guidance points away from teams and back at a single
+session or subagents.
+(2) RISK A — SINGLE-SITTING ONLY. `/resume` and `/rewind` do not
+restore in-process teammates, and a resumed lead may go on
+messaging teammates that no longer exist, so a team is never left
+mid-flight expecting pickup to restore it. This is an explicit
+CARVE-OUT to
+[D-050](#d-050--2026-07--session-lifecycle--closed--dead-the-close-locks-wall-softens-to-injected-read-only-doctrine-interrupt-capture-is-standing-format-the-claude-residue-sweep-is-pickup-hygiene-ideas-is-an-inbox-not-an-archive-amends-the-d-046-era-close-wall-design-upholds-the-park-protocol-and-no-solo-approval)'s
+interrupt promise, written where that promise is read (the
+Command card's Esc line and the new section): the ⏸ block
+preserves the LEAD's work, never the team. An interrupt is safe
+for your session and fatal to your teammates.
+(3) RISK B — A TEAMMATE-AUTHORED DIFF IS SELF-AUTHORED. A
+teammate is a full session pushing as the founder, so it earns no
+independent review merely by being a second agent: no-solo-
+approval applies unchanged, external Web review before the word.
+One clause in
+[LAWS §Workflow](LAWS.md#workflow-non-negotiable), beside the
+existing rule.
+(4) THE REVIEWER'S MODEL, SETTLED BY VERIFICATION. `claude update`
+reported already-current at 2.1.219; `/model` is interactive and
+unavailable from the harness, so the alias was resolved
+mechanically instead — a headless `--model opus` run billed
+`canonicalModel: claude-opus-5`. The `opus` ALIAS therefore
+resolves to Opus 5, and `.claude/agents/reviewer.md` takes the
+alias rather than a pin: aliases track the recommended version and
+survive deprecations, which is the brittleness a
+`claude-opus-5` pin would have carried. `effort: high` is kept.
+This one line is a TWO-SURFACE decision — reviewer.md governs the
+ship §6 critic AND any teammate spawned from that definition;
+noted with it, a teammate spawned this way does NOT receive the
+definition's `skills` or `mcpServers`, only its `model` and
+`tools`.
+(5) THE FOUNDER-SIDE CONFIG, recorded in
+[SETUP §Models & effort](SETUP.md#once-and-done--cloud-accounts)
+so any seat sets it up identically: `/config` → Default teammate
+model → Default (leader's model), the ONLY way teammates ride the
+lead's pick, since a teammate's model is fixed at spawn; effort
+inherits automatically; `teammateMode` stays in-process, because
+split panes need tmux or iTerm2 and are unsupported in Windows
+Terminal — what both seats run; permissions need no per-teammate
+setup, since teammates start with the lead's and the deny rails
+therefore cover the team; and the
+`CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS` flag, armed in
+`.claude/settings.json` with nothing reaching for it, now has a
+documented consumer.
+**Why:** the flag was already on, so the question was not whether
+teams would be used but whether their first use would be governed.
+The workshop's parallelism is already solved for authorship —
+lanes are the mechanism the last month hardened, and every
+property that makes them safe (cloud isolation, the PR gate, the
+canary, the wake-lock) is a property teams structurally lack. What
+teams add is the thing lanes cannot do: several minds on ONE
+question, arguing. Drawing the line at exploration-and-review
+keeps each mechanism where its guarantees hold, and turns the two
+failure modes that would otherwise be discovered the expensive way
+— a lost team at a resume, an unreviewed teammate diff — into
+rules written before the first team exists.
+**Alternatives rejected, each with its reason:** teams for bench
+authorship — the documented anti-pattern (sequential, same-file,
+dependency-heavy work), and lanes already solve it with
+isolation and a PR gate that teams have no equivalent of · teams
+in the cockpit — a session has exactly ONE team and teammates
+cannot spawn their own, so a cloud command session's parallelism
+is lanes by construction, not preference · changing
+`settings.json`'s permissions for teammates — they inherit the
+lead's, teammate prompts surface in the lead session, and the deny
+list is precisely what makes catastrophes impossible; loosening it
+for teams would trade the one structural guarantee for
+convenience.
+**Affects:** [HOME §Agent teams](HOME.md#agent-teams) (new) +
+its Command card carve-out clause ·
+[LAWS §Workflow](LAWS.md#workflow-non-negotiable) (one clause) ·
+[SETUP §Models & effort](SETUP.md#once-and-done--cloud-accounts)
+(the founder config bullet; the retired Sonnet-teammate default;
+the reviewer's line) ·
+[parallel-lanes §Vehicles](skills/parallel-lanes.md#vehicles)
+(the stale team entry becomes a pointer) ·
+`.claude/agents/reviewer.md` (`model: opus`) ·
+[IDEAS](IDEAS.md) (two lines: the chronicle layer as the first
+intended use; box-provenance stamps) ·
+[the spec](specs/agent-teams.md) + its memory · this entry.

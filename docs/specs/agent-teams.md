@@ -80,6 +80,16 @@ flown here.
 [the memory](../memory/agent-teams.md) ·
 [DASHBOARD](../DASHBOARD.md) via the ship tail.
 
+ONE ripple beyond that list, disclosed rather than smuggled and
+called out at THE GATE:
+[parallel-lanes §Vehicles](../skills/parallel-lanes.md#vehicles)
+carried a SECOND, now-contradicting copy of the team rules ("lead
+Fable/Opus, at most 4 Sonnet teammates"). Once teammates ride the
+lead's model, that line is both stale and a one-home violation
+sitting in the manual consulted before every dispatch, so it
+becomes a pointer to [HOME §Agent teams](../HOME.md#agent-teams).
+The retroactivity law requires the backfill in this PR.
+
 ## Done means
 
 - [ ] The boundary is in HOME, with its reasons, and says plainly

@@ -67,6 +67,11 @@ founder.
   baton-holder necessarily writes the memory stub and the airborne
   ack, and neither makes it the payload's author — but a
   baton-holder may never review a payload it wrote itself.
+  A TEAMMATE-AUTHORED DIFF IS SELF-AUTHORED: an agent-team
+  teammate is a full session pushing as the founder, so it earns
+  no independent review merely by being a second agent — external
+  Web review before the word, exactly as for any self-authored
+  diff ([HOME §Agent teams](HOME.md#agent-teams)).
 - Leaving phrases ("done for today", "bye", "wrapping up") → run the
   full handoff immediately, unasked. "Take it to the cloud" (or any
   equivalent) → run liftoff. Both close the session. Leaving language

@@ -934,7 +934,9 @@ does · when to reach for it. Rituals point here; none re-lists.
 - Esc — interrupts the running turn, safe everywhere except the
   weld's atomic commit;
   [D-050](DECISIONS.md#d-050--2026-07--session-lifecycle--closed--dead-the-close-locks-wall-softens-to-injected-read-only-doctrine-interrupt-capture-is-standing-format-the-claude-residue-sweep-is-pickup-hygiene-ideas-is-an-inbox-not-an-archive-amends-the-d-046-era-close-wall-design-upholds-the-park-protocol-and-no-solo-approval)'s
-  ⏸ capture catches what was in flight.
+  ⏸ capture catches what was in flight. ONE CARVE-OUT: the ⏸
+  block preserves the LEAD's work, never a live agent team —
+  [§Agent teams](#agent-teams) risk (a).
 - `/model` · `/effort` · `/rename` — argument forms work in cloud
   sessions (e.g. `/model opus`); reach for them to retune or
   retitle a flight in place.
@@ -942,6 +944,75 @@ does · when to reach for it. Rituals point here; none re-lists.
 Sources:
 [liftoff §7](skills/liftoff.md#7--close)
 [SETUP §cloud accounts](SETUP.md#once-and-done--cloud-accounts)
+
+## Agent teams
+
+THE BOUNDARY, and it is the whole of this section: **agent teams
+are for EXPLORATION AND REVIEW at a ground seat. LANES REMAIN THE
+AUTHORSHIP MECHANISM.** A team never authors a bench, never
+merges, and never runs a ritual
+([D-055](DECISIONS.md#d-055--2026-07--agent-teams--the-boundary-teams-are-for-exploration-and-review-at-a-ground-seat-lanes-remain-the-authorship-mechanism-two-risks-become-law-single-sitting-only--an-explicit-carve-out-to-d-050s-interrupt-promise--and-a-teammate-authored-diff-is-self-authored-under-no-solo-approval-the-reviewers-model-settled-by-verification-not-guess-the-founder-side-config-recorded-upholds-the-lane-law-no-solo-approval-and-one-home-gives-the-experimental-flag-its-consumer)).
+
+What a team IS, in one line: several full Claude Code sessions —
+a fixed lead plus teammates, each with its own context window —
+sharing a task list and messaging each other directly. That last
+part is the difference from
+[exploratory subagents](#terms), which only report back to
+whoever called them.
+
+WHY THE LINE IS DRAWN THERE, stated rather than asserted:
+
+- Lanes are cloud-isolated, PR-gated, canary-claimed and
+  wake-locked, with days of hardening behind them
+  ([parallel-lanes](skills/parallel-lanes.md)). Teams are local,
+  in-session, share ONE working tree, and have no PR isolation of
+  any kind.
+- Authoring a bench is sequential, same-file work — the exact
+  shape the official guidance points AWAY from teams and back at
+  a single session or subagents.
+- What teams are documented to be strong at is what this workshop
+  actually wants from them: research and review, competing-
+  hypothesis debugging, and new modules with disjoint files.
+
+TWO RISKS, BOTH LAW:
+
+**(a) SINGLE-SITTING ONLY.** A team lives and dies inside one
+sitting. `/resume` and `/rewind` do NOT restore in-process
+teammates, and a resumed lead may go on messaging teammates that
+no longer exist. So a team is never left mid-flight expecting a
+later pickup to restore it — finish it or shut it down before the
+sitting ends. This is an explicit CARVE-OUT to
+[D-050](DECISIONS.md#d-050--2026-07--session-lifecycle--closed--dead-the-close-locks-wall-softens-to-injected-read-only-doctrine-interrupt-capture-is-standing-format-the-claude-residue-sweep-is-pickup-hygiene-ideas-is-an-inbox-not-an-archive-amends-the-d-046-era-close-wall-design-upholds-the-park-protocol-and-no-solo-approval)'s
+interrupt promise: the ⏸ capture block preserves THE LEAD's work,
+never the team. Read together, the two say one thing — an
+interrupt is safe for your session and fatal to your teammates.
+
+**(b) A TEAMMATE-AUTHORED DIFF IS SELF-AUTHORED.** A teammate is
+a full session pushing as the founder, so it earns no independent
+review by existing: the no-solo-approval law applies unchanged —
+external Web review before the founder's word
+([LAWS §Workflow](LAWS.md#workflow-non-negotiable)).
+
+MODEL & EFFORT, the trap worth knowing: teammates do NOT inherit
+the lead's `/model` — that is a `/config` setting, and a
+teammate's model is FIXED AT SPAWN. Effort, by contrast, IS
+inherited. The founder-side configuration lives once, in
+[SETUP §Models & effort](SETUP.md#once-and-done--cloud-accounts);
+this section does not repeat it.
+
+A teammate may also be spawned FROM a subagent definition, which
+gives `.claude/agents/reviewer.md` a double life: its `model` and
+`tools` govern BOTH the ship-time critic and any teammate spawned
+from it, so that one line is a two-surface decision. Its `skills`
+and `mcpServers` frontmatter are NOT applied to a teammate —
+teammates load those from project and user settings like any
+ordinary session.
+
+Sources:
+[D-055](DECISIONS.md#d-055--2026-07--agent-teams--the-boundary-teams-are-for-exploration-and-review-at-a-ground-seat-lanes-remain-the-authorship-mechanism-two-risks-become-law-single-sitting-only--an-explicit-carve-out-to-d-050s-interrupt-promise--and-a-teammate-authored-diff-is-self-authored-under-no-solo-approval-the-reviewers-model-settled-by-verification-not-guess-the-founder-side-config-recorded-upholds-the-lane-law-no-solo-approval-and-one-home-gives-the-experimental-flag-its-consumer)
+[LAWS §Workflow](LAWS.md#workflow-non-negotiable)
+[parallel-lanes](skills/parallel-lanes.md)
+[SETUP §Models & effort](SETUP.md#once-and-done--cloud-accounts)
 
 ## Where information goes
 One home per class. New information APPENDS there via the named

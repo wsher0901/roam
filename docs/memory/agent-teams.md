@@ -87,6 +87,33 @@ the founder asked to avoid. `effort: high` is retained; the
 doctrine's throttle order (reduce effort before downgrading the
 model) is untouched.
 
+WHERE THE BOUNDARY WENT, and why there. The natural pull was to
+put it in [parallel-lanes](../skills/parallel-lanes.md) — it is
+about parallelism — but that is the LANE manual, and filing the
+team rules there would have implied teams are a lane vehicle,
+which is precisely the claim this bench denies. So the boundary
+lives in [HOME](../HOME.md) beside the Command card (it is a
+founder-facing standing choice), and parallel-lanes keeps one
+line saying teams are NOT a lane vehicle, pointing home.
+
+THE CARVE-OUT WAS WRITTEN TWICE ON PURPOSE, in both places the
+interrupt promise is actually read: the full statement in
+HOME §Agent teams risk (a), and a clause on the Command card's
+Esc line — because that line is where a founder meets the promise
+"Esc is safe", and a promise and its exception must not live one
+scroll apart. The sentence that ties them: an interrupt is safe
+for your session and fatal to your teammates.
+
+ONE RIPPLE BEYOND THE MANDATE'S FILE LIST, disclosed rather than
+smuggled. parallel-lanes §Vehicles carried a second copy of the
+team rules — "lead Fable/Opus, at most 4 Sonnet teammates". Once
+teammates ride the LEAD's model by config, that line is stale AND
+a one-home violation, and it sits in the manual consulted before
+every dispatch, so it was reduced to a pointer. Same class as the
+TEMPLATE row on the previous bench, and taken for the same
+reason: the retroactivity law requires the backfill in the PR
+that changes the convention.
+
 ## Where to look
 
 - [the spec](../specs/agent-teams.md) — goal, plan, Done-means.

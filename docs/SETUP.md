@@ -650,11 +650,44 @@ Done-means.
   founder tag for rare one-shots; ultracode only by explicit
   founder tag for coverage-critical sweeps. Throttle order under
   usage limits, unchanged: reduce effort before downgrading the
-  model. Agent Teams: teammates are Sonnet 5
-  ([parallel-lanes §Vehicles](skills/parallel-lanes.md#vehicles)).
-  The two routine boxes — lane worker and cockpit — are read at
-  the next flight and set to Opus 5; that is a founder act in the
-  routines UI, not a repo file.
+  model. Agent-team teammates ride the LEAD's model by config (see
+  the next bullet), so the whole seat runs one pick; the Sonnet-5
+  teammate default recorded here before
+  [D-055](DECISIONS.md#d-055--2026-07--agent-teams--the-boundary-teams-are-for-exploration-and-review-at-a-ground-seat-lanes-remain-the-authorship-mechanism-two-risks-become-law-single-sitting-only--an-explicit-carve-out-to-d-050s-interrupt-promise--and-a-teammate-authored-diff-is-self-authored-under-no-solo-approval-the-reviewers-model-settled-by-verification-not-guess-the-founder-side-config-recorded-upholds-the-lane-law-no-solo-approval-and-one-home-gives-the-experimental-flag-its-consumer)
+  is retired. The `.claude/agents/reviewer.md` critic runs
+  `model: opus` · `effort: high` — the ALIAS, not a pin, because
+  the alias resolves to Opus 5 today (verified 2026-07-24 on CLI
+  2.1.219: a headless `--model opus` run billed
+  `canonicalModel: claude-opus-5`) and aliases survive
+  deprecations where a pin does not. The two routine boxes — lane
+  worker and cockpit — are read at the next flight and set to
+  Opus 5; that is a founder act in the routines UI, not a repo
+  file.
+- Agent teams — FOUNDER-SIDE CONFIG, so any seat can set it up
+  identically. The boundary that governs WHEN to reach for one
+  lives in [HOME §Agent teams](HOME.md#agent-teams); this bullet
+  is the machine setup only.
+  - `/config` → **Default teammate model** → **Default (leader's
+    model)**. Teammates do NOT inherit the lead's `/model`
+    otherwise, and a teammate's model is FIXED AT SPAWN — this
+    setting is the only way they ride the lead's pick.
+  - Effort needs no setting: teammates inherit the lead's effort
+    level automatically.
+  - `teammateMode` stays **in-process** (the default). Split
+    panes require tmux or iTerm2 and are NOT supported in Windows
+    Terminal — which is what both seats run, so split-pane mode
+    is unavailable here by construction, not by choice.
+  - `CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS: "1"` is already set in
+    `.claude/settings.json`. It sat armed with nothing reaching
+    for it until
+    [D-055](DECISIONS.md#d-055--2026-07--agent-teams--the-boundary-teams-are-for-exploration-and-review-at-a-ground-seat-lanes-remain-the-authorship-mechanism-two-risks-become-law-single-sitting-only--an-explicit-carve-out-to-d-050s-interrupt-promise--and-a-teammate-authored-diff-is-self-authored-under-no-solo-approval-the-reviewers-model-settled-by-verification-not-guess-the-founder-side-config-recorded-upholds-the-lane-law-no-solo-approval-and-one-home-gives-the-experimental-flag-its-consumer)
+    gave it a documented consumer; that gap is now closed.
+  - Permissions need no per-teammate setup: teammates start with
+    the LEAD's permission settings, teammate prompts surface in
+    the lead session, and a teammate can neither approve a prompt
+    on the founder's behalf nor relay a denied action to a
+    sibling. The deny rails in `.claude/settings.json` therefore
+    cover the team as they cover the seat.
 - Hands: solo · subagents · team · lanes (doctrine,
   [D-045](DECISIONS.md#d-045--2026-07--hands-doctrine-solo--subagents--agent-team--lanes--the-litmus-is-one-bench-many-hands-vs-many-benches-vs-read-only-upholds-d-020-and-d-041)).
   The founder's choose-your-hands rule, verbatim:
