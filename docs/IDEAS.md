@@ -305,9 +305,14 @@ whole.
   RITUAL ACTS ON IT: [handoff §1.5](skills/handoff.md#15--park-the-local-lanes-full-only)
   parks LANES and is silent about teams, and the park protocol is
   lane-only. The rule is documented in two surfaces and enforced
-  in none. Candidate fix: one clause in handoff §1.5 — "a live
-  team is finished or shut down, never parked; a parked team does
-  not exist." Deliberately deferred from
+  in none. Candidate fix: one clause in
+  [handoff §1.5](skills/handoff.md#15--park-the-local-lanes-full-only)
+  — "a live team is finished or shut down, never parked; a parked
+  team does not exist." WIDENED by the founder at the D-055 gate:
+  [land](skills/land.md) needs the same clause, since a FLIGHT can
+  end with a team still running exactly as a sitting can — so the
+  follow-up bench touches both leaving rituals, not one.
+  Deliberately deferred from
   [D-055](DECISIONS.md#d-055--2026-07--agent-teams--the-boundary-teams-are-for-exploration-and-review-at-a-ground-seat-lanes-remain-the-authorship-mechanism-two-risks-become-law-single-sitting-only--an-explicit-carve-out-to-d-050s-interrupt-promise--and-a-teammate-authored-diff-is-self-authored-under-no-solo-approval-the-reviewers-model-settled-by-verification-not-guess-the-founder-side-config-recorded-upholds-the-lane-law-no-solo-approval-and-one-home-gives-the-experimental-flag-its-consumer)
   (ritual machinery was out of scope), and recorded here so it is
   not silently lost.
