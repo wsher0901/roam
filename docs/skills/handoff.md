@@ -74,6 +74,13 @@ memory/<id>.md cognitively in the locked format
 ([TEMPLATE](../memory/TEMPLATE.md)). Fold in any step-2 paste lines
 that concern this task; the paste as a whole lands on the board (§4).
 Sentences, written for a reader returning cold.
+PARKING INTERRUPTED WORK: when the handoff cuts a task mid-flight —
+or the task already sits interrupted by Esc or a founder redirect —
+the rewrite takes the `interrupted` state and fills the ⏸ capture
+block ([TEMPLATE](../memory/TEMPLATE.md)): original mandate · the
+plan · done so far · exact next step · why paused. A lane's diary
+stays the lane's — §1.5's one-line park stamp is the park
+protocol's limit.
 Commit, push, return to main. Harvest any "Ideas surfaced" lines
 from lane memories → IDEAS.
 

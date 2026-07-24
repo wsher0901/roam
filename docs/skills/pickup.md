@@ -68,6 +68,12 @@ Sources:
 [handoff §4–§5](handoff.md)
 
 ## 5 · Render the sit-down summary (exactly this shape)
+- ⏸ FIRST, above everything: whenever any memory's Status reads
+  interrupted, LEAD the briefing with one line per interrupted
+  task, drawn from its ⏸ capture block
+  ([TEMPLATE](../memory/TEMPLATE.md)) —
+  "⏸ INTERRUPTED: <one line> — continue?" — before the ruled
+  header renders.
 - Ruled header: "── pickup · <date> · <seat> ──". Caption line:
   "Last handoff: <FULL | liftoff> · <date HH:MM> · <seat>". Then
   THE EXIT TABLE — one row per task parked or lifted at that

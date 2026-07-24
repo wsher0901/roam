@@ -10,6 +10,18 @@ updated: <date · ritual-or-trigger · seat>
 surface — one state from the vocabulary below, plus what just
 happened>
 
+Whenever the state is `interrupted`, the ⏸ capture block follows
+the Status line, EVERY field filled — a resuming seat must be able
+to continue from this block alone:
+
+**⏸ Interrupt capture**
+
+- ORIGINAL MANDATE: <verbatim, or a pointer to where it lives>
+- THE PLAN: <the plan of record at the moment of pause>
+- DONE SO FAR: <checkpoints already reached>
+- EXACT NEXT STEP: <the single next action a resuming seat takes>
+- WHY PAUSED: <Esc · founder redirect · handoff park — and the reason>
+
 ## What this task is
 <the kickoff's essence in prose — goal and scope edges>
 
@@ -47,6 +59,7 @@ an em-dash ack cost a flight its handshake).
 | airborne · <url> · <date> | baton-holder ack (the machine-checked token — exact form) | the lane works |
 | blocked — <reason> | the lane (+ BLOCKED: PR comment) | waiting on founder |
 | parked — <date · reason> | handoff §1.5, liftoff §5, or the lane | nothing — until founder action |
+| interrupted — <date> · <why> | the interrupting seat (Esc · founder redirect · handoff park), with the ⏸ capture block filled in Status | resume via pickup's ⏸ lead ("continue?") or the founder's word |
 | claimed for respawn — <vehicle · date> | the cloud lane | waiting for ack |
 | respawned — <new vehicle · date> | baton-holder/liftoff, at respawn | nothing — the bench belongs to the new lane; a prior worker self-terminates on sight |
 | held: needs local — <reason> | liftoff §5 | nothing — local resume only |
