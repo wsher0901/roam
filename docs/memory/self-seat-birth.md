@@ -63,7 +63,7 @@ anymore, so nothing needs it kept alive.
 
 **What actually changed, in one breath.** The board weld still
 precedes the fire (board-governs, untouched); the Sessions row is
-born "cockpit · fired <time> · self-seat pending"; the launcher
+born `cockpit · fired <time> · self-seat pending`; the launcher
 fires and reports exit status only; the cockpit's first act after
 deriving state repaints the board seating itself by
 `https://claude.ai/code/${CLAUDE_CODE_REMOTE_SESSION_ID/#cse_/session_}`
