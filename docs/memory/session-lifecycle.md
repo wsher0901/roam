@@ -109,6 +109,30 @@ re-run: 11 deleted, 24 kept, 420→266 lines, zero collateral. The
 assert-first shape is the lesson — a compaction that deletes
 record-adjacent text should refuse to run on a census mismatch.
 
+**The eleven deleted, enumerated** (so a later reader can confirm
+independently, not trust the narration; each was explicitly
+CLOSED/SUPERSEDED before this outing, closing artifact in
+parentheses): 1. the double-dispatch diagnosis (closed 07-19,
+[#175](https://github.com/wsher0901/roam/pull/175)'s gate) ·
+2. the Slack/Telegram doorbell mirror (superseded 07-17,
+clerk-notify) · 3. the airborne-ack em-dash/middot disagreement
+(closed 07-22, [#193](https://github.com/wsher0901/roam/pull/193))
+· 4. the watcher self-match trap (07-22, #193) · 5. the cockpit
+API-flap-no-fallback defect (07-22,
+[#195](https://github.com/wsher0901/roam/pull/195),
+rejected-and-replaced) · 6. the staged summon button (07-22, #195,
+shipped live) · 7. the setup-script exit-100 (07-22, #193) ·
+8. the truncated birth prompt / board-governs (07-22, #193) ·
+9. the stray `.local` device-id gitignore (07-22, #193) ·
+10. non-author review purity (07-22, #193) · 11. the clerk
+retirement execution note (07-23 midday,
+[#197](https://github.com/wsher0901/roam/pull/197)). The script
+itself was ephemeral by the mandate's file list (no new
+machinery); its logic, for the record: split the file into
+top-level dated entries · match each against the census's unique
+markers · assert every match contains CLOSED or SUPERSEDED ·
+assert the match count equals the census (11) · only then write.
+
 **The rest landed flat:** liftoff §7 and handoff §6 carry the
 read-only close; HOME's two close-lock passages agree and Terms
 gained "closed ≠ dead"; pickup §3 carries the standing sweep
