@@ -48,6 +48,23 @@ work is.
 Sources:
 [derivation law — LAWS §Knowledge & tracking](../LAWS.md#knowledge--tracking)
 
+## Teams — not this ritual's case (both modes)
+
+Stated once here so neither mode repeats it: A COCKPIT CANNOT
+LEAD AN AGENT TEAM. A session has exactly one team and teammates
+cannot spawn their own, and a cloud session's parallelism is
+LANES by construction, not preference
+([D-055](../DECISIONS.md#d-055--2026-07--agent-teams--the-boundary-teams-are-for-exploration-and-review-at-a-ground-seat-lanes-remain-the-authorship-mechanism-two-risks-become-law-single-sitting-only--an-explicit-carve-out-to-d-050s-interrupt-promise--and-a-teammate-authored-diff-is-self-authored-under-no-solo-approval-the-reviewers-model-settled-by-verification-not-guess-the-founder-side-config-recorded-upholds-the-lane-law-no-solo-approval-and-one-home-gives-the-experimental-flag-its-consumer);
+teams are exploration and review at a GROUND seat,
+[HOME §Agent teams](../HOME.md#agent-teams)). So neither MODE R
+nor MODE P has a team to shut down, and land carries no team
+procedure at all.
+
+A ground seat leaving with a live team is
+[handoff §1.2](handoff.md#12--shut-the-team-down-full-only)'s
+duty — capture the findings, then shut down by name. That
+procedure has ONE home and this is not it.
+
 ## MODE R · RETIRE (the flight's natural end)
 
 The flight's work is done and merged. Three acts, then silence —

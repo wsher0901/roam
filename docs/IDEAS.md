@@ -316,6 +316,16 @@ whole.
   [D-055](DECISIONS.md#d-055--2026-07--agent-teams--the-boundary-teams-are-for-exploration-and-review-at-a-ground-seat-lanes-remain-the-authorship-mechanism-two-risks-become-law-single-sitting-only--an-explicit-carve-out-to-d-050s-interrupt-promise--and-a-teammate-authored-diff-is-self-authored-under-no-solo-approval-the-reviewers-model-settled-by-verification-not-guess-the-founder-side-config-recorded-upholds-the-lane-law-no-solo-approval-and-one-home-gives-the-experimental-flag-its-consumer)
   (ritual machinery was out of scope), and recorded here so it is
   not silently lost.
+  — CLOSED 2026-07-24 by
+  [#225](https://github.com/wsher0901/roam/pull/225)
+  ([D-056](DECISIONS.md#d-056--2026-07--team-aware-leaving-rituals--no-ritual-lets-a-live-agent-team-outlive-the-sitting-that-made-it-handoff-shuts-the-team-down-before-parking-anything-and-captures-its-findings-into-the-record-first-land-states-the-cockpit-cannot-lead-a-team-case-once-and-routes-the-ground-seat-to-handoff-pickup-gains-the-ghost-teammate-recovery-note-and-the--block-gains-what-the-team-had-found-closes-d-055s-deferred-gap-upholds-one-home-and-the-park-protocol)),
+  which SHARPENED the candidate rather than adopting it: the
+  prohibition survives, but inside a larger duty — CAPTURE THE
+  FINDINGS FIRST, then shut down by name, then report what each
+  teammate returned. Both rituals covered as the founder's gate
+  word asked, though not symmetrically: handoff carries the
+  procedure and land carries a routing line, because a cockpit
+  cannot lead a team at all.
 - 2026-07-24 (Claude Code, the agent-teams bench): BOX PROVENANCE
   — stamp each external master in [SETUP](SETUP.md) with
   "last pasted: <date> · <sha>" so box currency becomes DERIVABLE

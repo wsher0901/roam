@@ -981,7 +981,13 @@ sitting. `/resume` and `/rewind` do NOT restore in-process
 teammates, and a resumed lead may go on messaging teammates that
 no longer exist. So a team is never left mid-flight expecting a
 later pickup to restore it — finish it or shut it down before the
-sitting ends. This is an explicit CARVE-OUT to
+sitting ends. ENFORCED, not merely stated:
+[handoff §1.2](skills/handoff.md#12--shut-the-team-down-full-only)
+captures the team's findings and shuts it down BEFORE anything is
+parked, and [pickup §2](skills/pickup.md#2--self-heal) carries the
+ghost-teammate recovery note for the case that slips through
+([D-056](DECISIONS.md#d-056--2026-07--team-aware-leaving-rituals--no-ritual-lets-a-live-agent-team-outlive-the-sitting-that-made-it-handoff-shuts-the-team-down-before-parking-anything-and-captures-its-findings-into-the-record-first-land-states-the-cockpit-cannot-lead-a-team-case-once-and-routes-the-ground-seat-to-handoff-pickup-gains-the-ghost-teammate-recovery-note-and-the--block-gains-what-the-team-had-found-closes-d-055s-deferred-gap-upholds-one-home-and-the-park-protocol)).
+This is an explicit CARVE-OUT to
 [D-050](DECISIONS.md#d-050--2026-07--session-lifecycle--closed--dead-the-close-locks-wall-softens-to-injected-read-only-doctrine-interrupt-capture-is-standing-format-the-claude-residue-sweep-is-pickup-hygiene-ideas-is-an-inbox-not-an-archive-amends-the-d-046-era-close-wall-design-upholds-the-park-protocol-and-no-solo-approval)'s
 interrupt promise: the ⏸ capture block preserves THE LEAD's work,
 never the team. Read together, the two say one thing — an

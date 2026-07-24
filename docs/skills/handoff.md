@@ -24,6 +24,46 @@ leaving.
 On the current task's branch: commit anything uncommitted, push.
 Nothing may exist only on this machine past this point.
 
+## 1.2 · Shut the team down (FULL only)
+BEFORE anything is parked. If this session leads a live agent
+team, that team does not survive the sitting: `/resume` and
+`/rewind` do not restore in-process teammates, so a team left
+running is not paused work — it is abandoned work, with a lead
+that will go on messaging teammates who no longer exist
+([HOME §Agent teams](../HOME.md#agent-teams) risk (a)).
+
+THE ORDER IS THE POINT, because the processes are not what is at
+risk. Teammates die cheaply and respawn cheaply; what dies
+irrecoverably is what they FOUND, since a team's output lives in
+transcripts that vanish with the session.
+
+1. CAPTURE FIRST, before a single shutdown request. Write the
+   team's findings INTO THE RECORD: the open bench's
+   `memory/<id>.md` when a bench is open, else a dated
+   [IDEAS](../IDEAS.md) line. Per teammate — what it was working
+   on, what it found, what it left unfinished. A finding that
+   reaches no file did not happen.
+2. THEN SHUT DOWN, BY NAME. Ask each teammate by name to shut
+   down. A teammate may approve and exit gracefully, or reject
+   with an explanation.
+3. REPORT WHAT EACH RETURNED. Shutdown is NOT INSTANT — a
+   teammate finishes its current request or tool call first, so
+   this step waits rather than assuming. A teammate that REFUSES
+   or HANGS is named plainly in the close report (§6), never
+   smoothed into a clean exit: an unreported hang is precisely
+   the failure this step exists to prevent.
+
+A live team is never PARKED. Parking is a lane act — a lane
+survives on its branch, which is why a stamped Status can hold
+it. A team has no branch and no Status; a parked team does not
+exist.
+
+QUIET never shuts a team down — mid-sitting teams keep working.
+
+Sources:
+[HOME §Agent teams](../HOME.md#agent-teams)
+[IDEAS](../IDEAS.md)
+
 ## 1.5 · Park the local lanes (FULL only)
 Every live local lane gets parked — no question asked, none left
 running:
@@ -168,7 +208,10 @@ founder's status template:
   "nothing open").
 - WHAT HAPPENED — the sitting in short sentences, context →
   narrative → issue → resolution, ending "Handoff shipped (#N) ·
-  M lanes parked. Operations halted — safe to power off."
+  M lanes parked. Operations halted — safe to power off." When a
+  team was shut down at §1.2, that line also carries it —
+  "team shut down (N teammates)" — and any teammate that refused
+  or hung is named here, with where its findings landed.
 - SUPPLEMENTAL — parallel Web or Design work, if any (the step-2
   paste).
 - PARALLEL/RECENT FLIGHTS — one line per parked lane or live

@@ -27,9 +27,23 @@ If an open PR touches ONLY DASHBOARD.md and/or IDEAS.md, it is a
 stranded micro-PR: squash-merge it now, pull, and report it in the
 briefing header.
 
+GHOST TEAMMATES — the resume case, and a recovery note rather
+than a step. A session reached by `/resume` or `/rewind` can
+inherit a LEAD whose teammates no longer exist: the team config
+still lists members, but the processes died with the previous
+session, and messaging them silently accomplishes nothing. If
+that is what this session is, say so plainly in the briefing and
+OFFER FRESH TEAMMATES — never message the ghosts, and never
+report their silence as progress. Whatever the dead team had
+found should already be in the record; if it is not, it is gone,
+and the honest report says that too
+([handoff §1.2](handoff.md#12--shut-the-team-down-full-only) is
+what prevents the case).
+
 Sources:
 [DASHBOARD](../DASHBOARD.md)
 [IDEAS](../IDEAS.md)
+[HOME §Agent teams](../HOME.md#agent-teams)
 
 ## 3 · Gather (git outranks the board)
 Read ROADMAP · DASHBOARD · every active branch's memory/<id>.md ·
