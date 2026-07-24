@@ -1,22 +1,24 @@
 ---
-type: memory
+type: history
 id: session-lifecycle
-updated: 2026-07-23 23:19 · complete · home PC
+updated: 2026-07-23 23:38 · weld · home PC
+shipped: 2026-07-23 23:38
+pr: 211
 ---
 
 # session-lifecycle — what start, pause, and close leave behind
 
 ## Status
 
-complete, awaiting merge — 2026-07-23 23:19 · home PC. All six
-mandate items are applied and verified: the close-lock softened to
-read-only conversational in both rituals + HOME + the wall hook
-(the one flagged gap file) · the ⏸ interrupt capture in TEMPLATE,
-handoff, and pickup · the `claude/*` residue sweep as standing
-pickup hygiene · IDEAS' compaction rule + the FIRST compaction
-(420→266 lines, 11 deleted, 24 kept) · the two queued ideas
-appended · the rung-3 polish. At THE GATE — tower-authored, so
-external Web review precedes the founder's word. DO NOT MERGE.
+shipped — merged [#211](https://github.com/wsher0901/roam/pull/211),
+2026-07-23. Tower-authored, so the no-solo-approval law was
+satisfied by the external Web review — PASS on `edc0c9a` plus the
+D-050 gate-fold append (nine files verified, SETUP zero-diff, the
+wall hook read line-by-line: record untouched, wall softened
+exactly as ordered with the R4b carve-out in the injected text;
+gates re-run 2657/0 · 90↔90 · memory valid; Actions green) — plus
+the founder's merge word, given once the D-050 head's delta was
+confirmed DECISIONS-only and green.
 
 ## What this task is
 
@@ -26,32 +28,24 @@ wall softened; R4b tombstone and seat-stamp law kept strict) ·
 interrupted work leaves a structured ⏸ capture block and pickup
 leads with "continue?" · cloud workspace residue is swept on a
 standing rule, not ad-hoc founder orders · IDEAS is an inbox, not
-an archive. Contract: [the spec](../specs/session-lifecycle.md).
+an archive. Contract: [the spec](../../../specs/session-lifecycle.md).
 
 ## Pending issues
 
-- **The one file beyond the mandate's list, for the founder's
-  word at the gate:** the close-lock's wall is
-  `.claude/hooks/user-prompt-submit.mjs` (it exited 2 on any
-  prompt after the flag — doctrine-only softening could not
-  operate). Softened per the
-  [#197](https://github.com/wsher0901/roam/pull/197)
-  gap-in-the-mandate precedent: on a closed session it now exits
-  0 and injects the read-only doctrine as context. Both paths run
-  live at implementation.
-- Founder context on record, NOT re-flagged: the cockpit routine
-  box re-saved 07-24 post-D-049 · the seat debt cleared this
-  sitting.
-- Tower-authored → external Web review before the word. DO NOT
-  MERGE.
+None open at the weld. The two gate questions were both answered
+by the founder's word (see §The gate in the story): the hook gap
+APPROVED, and the D-number question answered with the D-050 gate
+fold — the conventions are decide-gated after all. Founder
+context that was never re-flagged: the cockpit routine box
+re-saved 07-24 post-D-049 · the seat debt cleared this sitting.
 
 ## Left / idle
 
 Nothing is left on the bench — verification is at the gate. The
 queue after the word, both founder-stated and now in
-[IDEAS](../IDEAS.md): SELF-SEAT BIRTH (its own small bench, next)
+[IDEAS](../../../IDEAS.md): SELF-SEAT BIRTH (its own small bench, next)
 · THE CHRONICLE LAYER (after
-[WEB-INSTRUCTIONS](../WEB-INSTRUCTIONS.md) v5, its own chat).
+[WEB-INSTRUCTIONS](../../../WEB-INSTRUCTIONS.md) v5, its own chat).
 
 ## The story
 
@@ -142,16 +136,34 @@ lesson that workspace branches are born lazily); pickup §5 leads
 with ⏸ when any Status reads interrupted; the two queued ideas
 went in deduped; rung 3 reads "the summon engine, fired locally".
 
+**The gate.** Ship §6's critic passed the doctrine ("one
+doctrine, four homes"), the compaction stays, and the tolerance
+claims; its two repairable findings (the eleven deletions
+enumerated · the script's assert logic on the record) were fixed
+before the flip, and its third — no D-number for standing
+convention changes — rode to the founder as a question. The
+founder's answer WAS the gate fold: D-050, appended pure (73
+insertions, `docs/DECISIONS.md` only, head `1ffebdf`), four
+clauses — closed ≠ dead with full removal REJECTED (the
+two-writers risk is real) and R4b + seat-stamp explicitly strict
+· interrupt capture standing · the sweep as pickup hygiene,
+archive-before-delete held · inbox-not-archive. The external Web
+review returned PASS on `edc0c9a` plus the append — nine files,
+SETUP zero-diff, the hook read line-by-line, the gates re-run
+independently — and the merge word followed, conditioned on the
+D-050 head being DECISIONS-only and green: both confirmed before
+the weld.
+
 ## Where to look
 
-- [the spec](../specs/session-lifecycle.md) — the contract; the
+- [the spec](../../../specs/session-lifecycle.md) — the contract; the
   hook gap is its own section; Deviations records the compaction
   asserts.
 - [#211](https://github.com/wsher0901/roam/pull/211) — the draft
   PR.
 - [#197](https://github.com/wsher0901/roam/pull/197) — the
   gap-in-the-mandate precedent the hook fix rides on.
-- [TEMPLATE](../memory/TEMPLATE.md) — the ⏸ block and the
+- [TEMPLATE](../../../memory/TEMPLATE.md) — the ⏸ block and the
   `interrupted` state row.
-- [IDEAS](../IDEAS.md) — the compaction rule in the header; the
+- [IDEAS](../../../IDEAS.md) — the compaction rule in the header; the
   chronicle-layer and self-seat-birth entries at the tail.

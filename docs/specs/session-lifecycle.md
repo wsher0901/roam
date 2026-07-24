@@ -2,12 +2,12 @@
 type: spec
 id: session-lifecycle
 title: Session lifecycle — close-lock softening, interrupt capture, and the two cleanup gaps
-status: open
+status: shipped
 stage: workshop
 branch: docs/session-lifecycle
 pr: 211
 opened: 2026-07-23
-shipped: —
+shipped: 2026-07-23 23:38
 ---
 
 # session-lifecycle — what a session's start, pause, and close leave behind
@@ -103,8 +103,9 @@ the founder's word at the gate.
 · [pickup](../skills/pickup.md) ·
 [TEMPLATE](../memory/TEMPLATE.md) · [IDEAS](../IDEAS.md) ·
 [HOME](../HOME.md) · `.claude/hooks/user-prompt-submit.mjs` (the
-gap above, flagged) · this spec +
-[the memory](../memory/session-lifecycle.md) ·
+gap above, flagged) · [DECISIONS](../DECISIONS.md) (joined at the
+gate: the founder's D-050 fold, a pure append) · this spec +
+[the memory](../history/workshop/mechanism/session-lifecycle.md) ·
 [DASHBOARD](../DASHBOARD.md) via the ship tail.
 `scripts/check-memory.mjs`: untouched — verification confirmed
 tolerance (it skips TEMPLATE and checks the six headings as an
@@ -136,13 +137,16 @@ ordered subset).
 - [x] Liftoff rung 3 reads "the summon engine, fired locally".
 - [x] `check:links` · `check:ledger` · `check:memory` green.
       (2026-07-23, home PC, on the completion tree.)
-- [ ] Full CI mirror green locally AND the pushed head's Actions
-      run green. (Local mirror green 2026-07-23; the final head's
-      run is watched at the gate — ticks at the weld, the
+- [x] Full CI mirror green locally AND the pushed head's Actions
+      run green. (Ticked at the weld, 2026-07-23 — Actions green
+      on `edc0c9a` and again on the D-050 head `1ffebdf`,
+      re-verified by the external review; the
       [shakedown-audit](shakedown-audit.md) precedent.)
-- [ ] [ship §6](../skills/ship.md) critic runs; verdict rides to
-      the founder verbatim. (Runs at the gate announcement; ticks
-      at the weld.)
+- [x] [ship §6](../skills/ship.md) critic runs; verdict rides to
+      the founder verbatim. (Ticked at the weld — ran 2026-07-23:
+      doctrine-consistent verdict; two repairable findings fixed
+      pre-flip; its D-number question answered by the founder's
+      D-050 gate fold.)
 
 ## Pending
 
@@ -169,6 +173,7 @@ v5 rewrite itself stays queued
   probe entry (its closure record lives only in itself) and the
   partly-closed winpty + four-smaller entries stayed whole, per
   the header rule's own stay clauses.
+- [DECISIONS](../DECISIONS.md) joined the diff at the gate itself — the founder answered the critic's routing question by ordering the D-050 fold (a pure 73-line append, verified DECISIONS-only and green before the word held).
 - Everything else landed as specified.
 
 ## Open questions
