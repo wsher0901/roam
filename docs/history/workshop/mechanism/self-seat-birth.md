@@ -1,39 +1,45 @@
 ---
-type: memory
+type: history
 id: self-seat-birth
-updated: 2026-07-24 00:07 · complete · home PC
+updated: 2026-07-24 00:28 · weld · home PC
+shipped: 2026-07-24 00:28
+pr: 213
 ---
 
 # self-seat-birth — blind fire, the cockpit seats itself
 
 ## Status
 
-complete, awaiting merge — 2026-07-24 00:07 · home PC. All five
-mandate items applied and verified: rung 1 fires BLIND (exit
-status only, no capture) with the failure shape written in place ·
-liftoff §7 reports no URL · SETUP's inventory aligns · the
-charter's rule 1 carries the SELF-SEAT duty with the rule-7
-collision case · D-051 in DECISIONS · both record notes extended
-one dated sentence. At THE GATE — tower-authored, so external Web
-review precedes the founder's word. DO NOT MERGE.
+shipped — merged [#213](https://github.com/wsher0901/roam/pull/213),
+2026-07-24. Tower-authored, so the no-solo-approval law was
+satisfied by the external Web review — PASS on `342e344`: seven
+files as declared, rung 1 verified blind (capture machinery
+absent; remaining "attach" mentions are ledger anchors only), the
+self-seat duty and the stray-collision factual note verified in
+every home, the missing-push failure shape in both homes, the
+gates re-run by the reviewer (links 2715/0 · ledger 91↔91 ·
+memory valid), Actions green — plus the founder's merge word,
+with the critic's tombstone correction APPROVED in the same
+breath: a fresh stray must state facts, not recite a
+predecessor's death.
 
 ## What this task is
 
 Liftoff's rung 1 fires `claude --cloud` BLIND — the console-attach
 output capture is DELETED, not maintained — and the cockpit seats
 ITSELF on the board via its
-[D-049](../DECISIONS.md#d-049--2026-07--gh-second-path--gh-api-rest-through-the-github-proxy-is-the-cockpits-second-api-path-a-connector-flap-stops-costing-command-r2-gains-the-automatic-gh-rung-self-id-by-session-env-amends-d-048-corrects-the-193-api-map-upholds-d-047-and-verify-before-rely)
+[D-049](../../../DECISIONS.md#d-049--2026-07--gh-second-path--gh-api-rest-through-the-github-proxy-is-the-cockpits-second-api-path-a-connector-flap-stops-costing-command-r2-gains-the-automatic-gh-rung-self-id-by-session-env-amends-d-048-corrects-the-193-api-map-upholds-d-047-and-verify-before-rely)
 env-derived self-URL, the mechanism successor-duty already uses.
 The trade is named where both actors read it. Contract:
-[the spec](../specs/self-seat-birth.md).
+[the spec](../../../specs/self-seat-birth.md).
 
 ## Pending issues
 
 - **The live test is deliberately deferred** to the first real
   flight after this weld — the founder's word tonight, on the
-  record here and in [D-051](../DECISIONS.md#d-051--2026-07--self-seat-birth--liftoff-fires---cloud-blind-and-the-cockpit-seats-itself-by-its-env-derived-self-url-the-console-attach-launcher-is-retired-amends-d-047s-rung-1-mechanics-as-corrected-by-193-upholds-d-049-and-board-governs)'s
+  record here and in [D-051](../../../DECISIONS.md#d-051--2026-07--self-seat-birth--liftoff-fires---cloud-blind-and-the-cockpit-seats-itself-by-its-env-derived-self-url-the-console-attach-launcher-is-retired-amends-d-047s-rung-1-mechanics-as-corrected-by-193-upholds-d-049-and-board-governs)'s
   Why.
-- Tower-authored, so [no-solo-approval](../LAWS.md) requires an
+- Tower-authored, so [no-solo-approval](../../../LAWS.md) requires an
   external Web review before the founder's word at THE GATE. DO
   NOT MERGE.
 
@@ -89,12 +95,12 @@ touched.
 
 ## Where to look
 
-- [the spec](../specs/self-seat-birth.md) — the contract;
+- [the spec](../../../specs/self-seat-birth.md) — the contract;
   Deviations records the anchor-slug grep exception.
 - [#213](https://github.com/wsher0901/roam/pull/213) — the draft
   PR.
-- [liftoff §6](../skills/liftoff.md#6--ledger-handoff--fire-the-cockpit)
-  · [SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts)
+- [liftoff §6](../../../skills/liftoff.md#6--ledger-handoff--fire-the-cockpit)
+  · [SETUP §cloud accounts](../../../SETUP.md#once-and-done--cloud-accounts)
   — the two live homes.
-- [D-051](../DECISIONS.md#d-051--2026-07--self-seat-birth--liftoff-fires---cloud-blind-and-the-cockpit-seats-itself-by-its-env-derived-self-url-the-console-attach-launcher-is-retired-amends-d-047s-rung-1-mechanics-as-corrected-by-193-upholds-d-049-and-board-governs)
+- [D-051](../../../DECISIONS.md#d-051--2026-07--self-seat-birth--liftoff-fires---cloud-blind-and-the-cockpit-seats-itself-by-its-env-derived-self-url-the-console-attach-launcher-is-retired-amends-d-047s-rung-1-mechanics-as-corrected-by-193-upholds-d-049-and-board-governs)
   — the decision, trade and retirement dated.

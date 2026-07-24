@@ -2,12 +2,12 @@
 type: spec
 id: self-seat-birth
 title: Self-seat birth — liftoff fires --cloud blind; the cockpit seats itself (D-051)
-status: open
+status: shipped
 stage: workshop
 branch: docs/self-seat-birth
 pr: 213
 opened: 2026-07-24
-shipped: —
+shipped: 2026-07-24 00:28
 ---
 
 # self-seat-birth — the fragilest component is deleted, not maintained
@@ -102,7 +102,7 @@ under us.
 [DECISIONS](../DECISIONS.md) ·
 [cloud-born-cockpit](cloud-born-cockpit.md) +
 [flight-hardening](flight-hardening.md) (note extensions, step 5)
-· this spec + [the memory](../memory/self-seat-birth.md) ·
+· this spec + [the memory](../history/workshop/mechanism/self-seat-birth.md) ·
 [DASHBOARD](../DASHBOARD.md) via the ship tail.
 
 ## Done means
@@ -121,10 +121,13 @@ under us.
 - [x] The two record notes extended by one dated sentence each —
       note only.
 - [x] `check:links` · `check:ledger` · `check:memory` green. (2026-07-24, home PC, on the completion tree.)
-- [ ] Full CI mirror green locally AND the pushed head's Actions
-      run green.
-- [ ] [ship §6](../skills/ship.md) critic runs; verdict rides to
-      the founder verbatim.
+- [x] Full CI mirror green locally AND the pushed head's Actions
+      run green. (Ticked at the weld, 2026-07-24 — Actions green
+      on `342e344`, re-verified by the external review.)
+- [x] [ship §6](../skills/ship.md) critic runs; verdict rides to
+      the founder verbatim. (Ticked at the weld — ran 2026-07-24:
+      one 🟡 finding, the tombstone correction, repaired pre-flip
+      and APPROVED at the gate.)
 
 ## Pending
 
