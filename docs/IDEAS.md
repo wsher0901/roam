@@ -354,7 +354,11 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
 - 2026-07-23 (Claude Code, liftoff — first cockpit birth flown from
   a BACKGROUND job, the env-clerk-scrub outing): two flight
   findings.
-  (1) The VERIFY-BEFORE-RELY title line in
+  (1) — CLOSED 2026-07-23 by
+  [#204](https://github.com/wsher0901/roam/pull/204), the reviewed
+  PR this entry asked for: the title line is dropped from both
+  homes and the answer recorded in liftoff §6. —
+  The VERIFY-BEFORE-RELY title line in
   [liftoff §6](skills/liftoff.md#6--ledger-handoff--fire-the-cockpit)
   is DISPROVEN. The birth prompt opened with the title line
   `[COCKPIT] roam — 2026-07-23`, but the platform IGNORED it and
@@ -378,3 +382,11 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   `AttachConsole`. Confirms rung 1 works unattended; the self-read
   launcher is worth keeping as a script if a future liftoff wants
   it. Session born: `session_01XazSQ9TdZBwLEiEGEXYu6a`.
+- 2026-07-23 (the founder, at the currency-audit gate —
+  [#204](https://github.com/wsher0901/roam/pull/204)):
+  [ENGINE](ENGINE.md)'s frontmatter reads `type: spec` though the
+  file is a living consolidation — flagged UNCLEAR by the audit,
+  deliberately unchanged. The founder's word: it STAYS for now;
+  resolution folded to
+  [V1.S3](ROADMAP.md#v1s3--engine-core--two-families-deep)'s first
+  engine bench, which will touch ENGINE anyway.
