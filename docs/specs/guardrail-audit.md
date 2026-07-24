@@ -2,12 +2,12 @@
 type: spec
 id: guardrail-audit
 title: Guardrail audit — the harness at best practice; two promotions and the proof on record ([D-053](../DECISIONS.md#d-053--2026-07--guardrail-audit--the-harness-found-already-at-best-practice-against-anthropics-guidance-two-promotions-ship-the-verification-loop-as-a-copy-runnable-block-in-laws-two-stub-descriptions-sharpened-five-alternatives-rejected-with-reasons-upholds-the-routing-law-and-one-home))
-status: open
+status: shipped
 stage: workshop
 branch: docs/guardrail-audit
 pr: 218
 opened: 2026-07-24
-shipped: —
+shipped: 2026-07-24 01:33
 ---
 
 # guardrail-audit — already compliant; ship the two real improvements
@@ -58,7 +58,7 @@ proof as [D-053](../DECISIONS.md#d-053--2026-07--guardrail-audit--the-harness-fo
 [LAWS](../LAWS.md) · `.claude/skills/liftoff/SKILL.md` ·
 `.claude/skills/ship/SKILL.md` · [DECISIONS](../DECISIONS.md) ·
 [IDEAS](../IDEAS.md) · this spec +
-[the memory](../memory/guardrail-audit.md) ·
+[the memory](../history/workshop/definition/guardrail-audit.md) ·
 [DASHBOARD](../DASHBOARD.md) via the ship tail.
 
 ## Done means
@@ -71,10 +71,14 @@ proof as [D-053](../DECISIONS.md#d-053--2026-07--guardrail-audit--the-harness-fo
 - [x] [D-053](../DECISIONS.md#d-053--2026-07--guardrail-audit--the-harness-found-already-at-best-practice-against-anthropics-guidance-two-promotions-ship-the-verification-loop-as-a-copy-runnable-block-in-laws-two-stub-descriptions-sharpened-five-alternatives-rejected-with-reasons-upholds-the-routing-law-and-one-home) in DECISIONS, house style, the audit's findings and
       the rejected list with reasons; the IDEAS line appended.
 - [x] `check:links` · `check:ledger` · `check:memory` green. (2026-07-24, home PC, on the completion tree.)
-- [ ] Full CI mirror green locally AND the pushed head's Actions
-      run green.
-- [ ] [ship §6](../skills/ship.md) critic runs; verdict rides to
-      the founder verbatim.
+- [x] Full CI mirror green locally AND the pushed head's Actions
+      run green. (Ticked at the weld, 2026-07-24 — the LAWS block
+      itself run verbatim as the mirror; Actions green on
+      `bd2f6ef`, re-verified by the external review.)
+- [x] [ship §6](../skills/ship.md) critic runs; verdict rides to
+      the founder verbatim. (Ticked at the weld — ran 2026-07-24:
+      one 🟡, the bench's own bare D-053 mentions, repaired
+      pre-flip.)
 
 ## Pending
 
