@@ -6,18 +6,28 @@ status: living
 
 # Dashboard — the state surface
 
-Stamp: 2026-07-23 · 21:12 · ship · cloud
-V1 5/34 · S1 2/7 · S2 3/5 · sessions: 0 main · 0 parallel
-(0 need you) · needs-you 1
+Stamp: 2026-07-23 · 18:06 · handoff · work PC
+V1 5/34 · S1 2/7 · S2 3/5 · sessions: 1 main · 0 parallel
+(1 need you) · needs-you 2
 How to read this board →
 [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
 
-1. 🟡 The home PC's seat debt, owed at that machine's next sitting:
+1. 🟡 Resume the parked currency-audit bench at the home PC —
+   [#204](https://github.com/wsher0901/roam/pull/204). Its analysis
+   is DONE and written down; eleven specified changes remain
+   unapplied. Read the spec first: it is the work order, and
+   nothing needs re-deriving (since 07-23).
+   → [#204](https://github.com/wsher0901/roam/pull/204) ·
+   [the spec](https://github.com/wsher0901/roam/blob/docs/currency-audit/docs/specs/currency-audit.md)
+   ·
+   [the memory](https://github.com/wsher0901/roam/blob/docs/currency-audit/docs/memory/currency-audit.md)
+   (both ride the branch — not on main until the weld)
+2. 🟡 The home PC's seat debt, owed at that machine's next sitting:
    paste the `COCKPIT_` pair into its `.env.local` (password
    manager first) and bring `claude --version` to 2.1.195 or
-   later. Optional and non-urgent while you are at the work PC
+   later. You are moving to that machine now, so it comes due
    (since 07-21).
    → [SETUP §cloud accounts](SETUP.md#once-and-done--cloud-accounts)
    · [SETUP §Per machine](SETUP.md#per-machine-procedure-machine-setup-skill)
@@ -30,18 +40,25 @@ they are a register, not an action.
 
 ## Sessions
 
-No live session — the ground is dark. The env-clerk-scrub flight
-landed at 21:12: [#200](https://github.com/wsher0901/roam/pull/200)
-merged on the founder's word after the cockpit's non-author review,
-branch verified deleted, main at `7dc0b08`. The next pickup claims
-the baton fresh.
+| Session | Task | State | Last push | Your move |
+|---|---|---|---|---|
+| main · work PC | currency-audit — docs currency audit ([#204](https://github.com/wsher0901/roam/pull/204)) | ⚪ parked — 07-23 18:02 · at handoff | 07-23 18:02 | resume it at the home PC |
 
-↳ FLIGHT CLOSED. The full-liftoff run-through flew its whole chain —
-bench-first birth → label-spawn → canary → cockpit airborne ack →
-lane one-file scrub → independent non-author review → the founder's
-merge word → weld — and landed clean. Nothing parked, held, or owed
-by the flight. One founder act stands outside it (the home-PC seat
-debt, Needs-you 1), a standing errand, not a gate.
+↳ main micro: 🟢⚪⚪⚪🟢🟢🟢⚪⚪ (4/9 Done-means)
+
+The ground goes dark with this handoff — the work PC is halting and
+the founder is moving to the home PC. No lane was ever spawned on
+this bench: the control tower worked it directly, so nothing is
+flying and nothing needed parking but the bench itself.
+
+The bench is whole on origin — branch `docs/currency-audit`
+(`af1f2d7`), spec, memory, and the draft PR all verified present at
+park. Its ANALYSIS is finished and written into the spec; what
+remains is applying eleven already-specified changes. That ordering
+was deliberate: the audit's value is the finding, and a finding that
+lives only in a session is lost, so it was landed before any edit.
+Ships to THE GATE when done — tower-authored, so external Web review
+precedes the founder's word.
 
 ## You are here
 
@@ -93,6 +110,12 @@ diffs; this liftoff's payload
 ([#200](https://github.com/wsher0901/roam/pull/200)) was
 LANE-authored, so the cockpit's non-author review plus the founder's
 word carried it without Web.
+This handoff carried NO Web/Design paste — the leaving message was
+a bare trigger, so there is none to record. One review is now owed
+ahead: [#204](https://github.com/wsher0901/roam/pull/204) is
+TOWER-authored, so it needs an external Web review before the
+founder's word — not yet, though; the bench is parked mid-work and
+the review belongs at its gate.
 T3–T6 source-vetting relaunch stays held (see You are here).
 
 ## Shipped (latest — full record: [the ledger](history/README.md#the-ledger))
