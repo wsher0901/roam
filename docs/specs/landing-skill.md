@@ -5,7 +5,7 @@ title: The landing skill — how a flight ends becomes a first-class ritual ([D-
 status: open
 stage: workshop
 branch: docs/landing-skill
-pr: —
+pr: 221
 opened: 2026-07-24
 shipped: —
 ---

@@ -475,12 +475,13 @@ not recorded — that fix belongs to [handoff](skills/handoff.md)'s
 harvest, not to recall. Home: [recall](skills/recall.md) ·
 [D-039](DECISIONS.md#d-039--2026-07--recall--questions-answered-from-files-never-from-memory-the-d-036-routing-tables-read-mirror-model-invoked-at-discretion).
 
-### The five rituals
+### The rituals
 
 Rituals are the workshop's verbs — the only writers of shared
 state. Each fires itself; the founder never has to remember one.
 (How they fire: [§Skills](#skills). Two are a pair: ship ends by
-running handoff in QUIET mode.)
+running handoff in QUIET mode. Two split by seat: handoff leaves a
+DESK, land ends a FLIGHT.)
 
 **pickup** — fires unprompted on the founder's first message of a
 control-tower session (dispatched lanes skip it). It claims the
@@ -553,6 +554,26 @@ zero mid-ritual approvals: the founder is leaving.
 
 Sources:
 [liftoff](skills/liftoff.md)
+
+**land** — the flight's ending ritual, and the cockpit's alone:
+handoff leaves a desk, land ends a flight. It derives the fleet
+from origin and routes itself into one of two modes. RETIRE, when
+nothing is flying: a final board repaint, every retired branch
+verified dead, and a report ending "Safe to archive me." PAUSE-AND-
+TRANSFER, when work is still flying and the founder is walking back
+to a desk: a live fleet snapshot first, then a FENCE on each lane —
+a commit carrying the full pause block, which makes the lane's next
+push non-fast-forward, wakes it into a Status it does not own, and
+stops it, so the resume point is the branch tip by construction. The
+board's fleet-at-ground table is the single thing passed down; the
+old sessions are archived, never revived, and
+[pickup §6](skills/pickup.md#6--fleet-resume-on-the-founders-answer)
+births fresh workers on the fenced branches when the founder says
+continue.
+
+Sources:
+[land](skills/land.md)
+[D-054](DECISIONS.md#d-054--2026-07--the-landing-skill--how-a-flight-ends-becomes-a-first-class-ritual-one-skill-with-two-modes-routed-by-fleet-state-retire--pause-and-transfer-the-fence-is-a-commit-so-the-resume-point-is-the-branch-tip-by-construction-wake-lock-mediated-with-its-honesty-clause-the-board-is-the-single-transfer-material-pickup-gains-the-fleet-resume-ask-and-its-cap-arithmetic-sessions-are-cattle-branches-are-the-work-charter-rule-6-becomes-a-pointer-the-effort-doctrine-moves-to-opus-5--xhigh-upholds-the-wake-lock-the-park-protocol-and-one-home-supersedes-the-opus-48-reliance-pair)
 
 ### The baton
 
@@ -798,7 +819,8 @@ Sources:
 
 Skills are model-invoked: the stub's description is what the model
 reads to know WHEN to fire — leaving phrases summon handoff,
-take-it-to-the-cloud phrasing summons liftoff, task completion
+take-it-to-the-cloud phrasing summons liftoff, landing phrases
+summon land (in flight, never on the ground), task completion
 summons ship, a roadmap-level statement summons decide, and the
 session-start hook directs control-tower sessions to render pickup
 unprompted. Rituals fire on moments, not remembered commands — though
@@ -810,13 +832,15 @@ paste's carrier
 Sources:
 [handoff](skills/handoff.md)
 [liftoff](skills/liftoff.md)
+[land](skills/land.md)
 [ship](skills/ship.md)
 [decide](skills/decide.md)
 [pickup](skills/pickup.md)
 
 One more deliberate narrowing: no session holds a standing merge
-permission — it is granted per-ritual. The stubs for ship, handoff,
-and liftoff carry `allowed-tools: Bash(gh pr merge --squash
+permission — it is granted per-ritual. The stubs for the five
+board-writing rituals — pickup, ship, handoff, liftoff, land —
+carry `allowed-tools: Bash(gh pr merge --squash
 --delete-branch:*)` — the only merge allowance anywhere — so the
 capability to merge exists exactly where a ritual (and, for
 non-micro PRs, the founder's fresh yes) is present, and nowhere
@@ -900,6 +924,13 @@ does · when to reach for it. Rituals point here; none re-lists.
 - `claude --cloud "<prompt>"` — births a cloud session from a
   terminal; rung 2's compose-and-hand shape
   ([liftoff §6](skills/liftoff.md#6--ledger-handoff--fire-the-cockpit)).
+- "land" · "ground the fleet" · "pause everything — I'm going
+  local" — your word that ENDS A FLIGHT; type it to the cockpit,
+  which runs [land](skills/land.md). It retires the flight when
+  nothing is flying, or fences every live lane and hands the fleet
+  back to your desk when work still is. Reach for the first when an
+  outing is done, the others when you are returning to a keyboard
+  and want the work waiting there.
 - Esc — interrupts the running turn, safe everywhere except the
   weld's atomic commit;
   [D-050](DECISIONS.md#d-050--2026-07--session-lifecycle--closed--dead-the-close-locks-wall-softens-to-injected-read-only-doctrine-interrupt-capture-is-standing-format-the-claude-residue-sweep-is-pickup-hygiene-ideas-is-an-inbox-not-an-archive-amends-the-d-046-era-close-wall-design-upholds-the-park-protocol-and-no-solo-approval)'s
@@ -1026,12 +1057,14 @@ the link for the full story.
 
 ### Workflow & rituals
 
-- **the rituals** — the five self-firing procedures that own all
+- **the rituals** — the six self-firing procedures that own all
   shared state: [pickup](skills/pickup.md) (sit-down briefing) ·
-  [handoff](skills/handoff.md) (leaving) · [ship](skills/ship.md)
+  [handoff](skills/handoff.md) (leaving a desk) ·
+  [ship](skills/ship.md)
   (task close) · [decide](skills/decide.md) (decision recorder) ·
-  [liftoff](skills/liftoff.md) (hand the workshop to the cloud).
-  Explained: [§The five rituals](#the-five-rituals).
+  [liftoff](skills/liftoff.md) (hand the workshop to the cloud) ·
+  [land](skills/land.md) (ending a flight).
+  Explained: [§The rituals](#the-rituals).
 - **FULL / QUIET (handoff modes)** — FULL is the real leaving
   ritual (secure, read the inline paste, rewrite, repaint, close);
   QUIET is
@@ -1160,6 +1193,29 @@ the link for the full story.
   that doubles as the flight plan — and the cockpit fire, with
   that flight plan as the payload. Home:
   [liftoff](skills/liftoff.md).
+- **land** — the flight's ending ritual, cockpit-only, and
+  liftoff's bookend: derive the fleet from origin, then RETIRE
+  (nothing flying — final repaint, branches verified dead, "safe to
+  archive me") or PAUSE-AND-TRANSFER (work still flying and the
+  founder walking back to a desk). Handoff leaves a DESK; land ends
+  a FLIGHT. Home: [land](skills/land.md).
+- **fence** — the pause act itself: a COMMIT on a live lane's
+  branch carrying the full ⏸ block and a terminal `held` Status.
+  It works through the wake-lock, not an interrupt — the lane's
+  next push is rejected, it re-reads a Status it does not own, and
+  it stops — so the resume point is the branch tip BY
+  CONSTRUCTION, the only loss being an unpushed sliver. Honest
+  limit: a lane mid-turn may finish its current step first, so a
+  landing report states last-observed state, never a guaranteed
+  freeze. Home:
+  [land MODE P](skills/land.md#b-fence-each-live-lane).
+- **grounded fleet** — what a MODE P landing leaves behind: every
+  lane fenced and `held`, the board's fleet-at-ground table naming
+  each one's progress and exact next step, and no live cockpit.
+  Resumable from ANY seat: the next
+  [pickup](skills/pickup.md) asks, and the founder's word
+  redeploys the fleet, adopts a branch locally, or holds it. Home:
+  [pickup §6](skills/pickup.md#6--fleet-resume-on-the-founders-answer).
 - **memory file** — docs/memory/&lt;id&gt;.md: a task's living
   story in the locked format (Status first), on the task's branch,
   rewritten at rituals and the lane moments; MOVES to history/ at
@@ -1458,7 +1514,9 @@ Sources:
 **The skills**, one line each: pickup — the sit-down briefing,
 unprompted · handoff — the leaving ritual, FULL or QUIET · ship —
 task close, gate, and weld · decide — the decision recorder + ripple ·
-liftoff — hand the workshop to the cloud · go-remote — the phone
+liftoff — hand the workshop to the cloud · land — the flight's ending
+ritual, cockpit-only: retire a finished flight, or fence a live one
+and hand it back to the desk · go-remote — the phone
 tether, the backstop away posture (machine stays on) · recall — ask
 about anything
 past, ongoing, or future; answered from the files with receipts,
@@ -1472,6 +1530,7 @@ Sources:
 [ship](skills/ship.md)
 [decide](skills/decide.md)
 [liftoff](skills/liftoff.md)
+[land](skills/land.md)
 [go-remote](skills/go-remote.md)
 [recall](skills/recall.md)
 [parallel-lanes](skills/parallel-lanes.md)

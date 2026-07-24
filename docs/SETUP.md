@@ -287,11 +287,8 @@ summary, then arm the watch.
   [liftoff §6](skills/liftoff.md#6--ledger-handoff--fire-the-cockpit)'s
   birth (rung ladder; the charter master + the board-derived
   flight plan ride as the birth prompt) or a founder summon;
-  landing = final
-  repaint → park → founder archives → verify its branch stays
-  dead
-  ([parallel-lanes §Cloud spawn](skills/parallel-lanes.md#cloud-spawn--route-ladder),
-  the confirmed clause). Vehicle: a THIRD routine at
+  landing runs [land](skills/land.md) — two modes, the duties
+  there. Vehicle: a THIRD routine at
   claude.ai/code/routines named "cockpit". Saved prompt = the
   cockpit charter master below VERBATIM (box-is-a-copy; re-save
   the routine after any master edit). No GitHub trigger. API
@@ -459,11 +456,13 @@ verify every claim against origin before acting; git outranks it.
    turn-end message IS the app push: it is the notification
    channel. (The founder's side of every command named here
    lives in HOME §Command card.)
-6. Landing: on the founder's word (or the flight's natural end)
-   — final board repaint, park anything still open with its
-   reason, then stop; the founder archives the session. After
-   any retirement the branch must be verified dead — a session
-   can resurrect its deleted branch; re-delete on sight.
+6. Landing: LAND is the ritual — run it, never improvise an
+   ending. TWO modes, routed by the fleet you derive at landing
+   time: MODE R (retire) when nothing is flying, MODE P
+   (pause-and-transfer) when work still is; the founder's
+   "ground the fleet" or "pause everything — I'm going local"
+   forces MODE P. The procedure is docs/skills/land.md — every
+   landing duty lives there, not in this charter.
 7. Bounded flight: you exist for this flight only. A DASHBOARD
    seat-stamp that is not yours supersedes you: push what
    exists, write nothing more.
@@ -639,17 +638,23 @@ Done-means.
 
 - Models & effort (doctrine — the Web paste block's Model + Effort
   line draws from here). Effort ladder: low · medium · high · xhigh
-  · max. Reliance pair: Opus 4.8 — control tower default, all
-  judgment/architecture work, at xhigh; Sonnet 5 (June 2026) —
-  fully-specified, speed-sensitive, or volume work, at high.
-  Brain-critical work: Fable 5 when available; until its return,
-  Opus 4.8 · xhigh holds the seat. The plateau: xhigh is the working
-  ceiling for judgment work — max only by explicit founder tag for
-  rare one-shots; ultracode only by explicit founder tag for
-  coverage-critical sweeps. Throttle order under usage limits:
-  reduce effort before downgrading the model. Agent Teams: teammates
-  are Sonnet 5
+  · max. THE DEFAULT, one pick for everything: **Opus 5 · xhigh**
+  — ALL work, reviews and architecture included (released
+  2026-07-24 at Opus 4.8's price, $5/$25, the new Max default, and
+  carrying no Fable-class cap, so there is nothing left for a
+  second tier to buy). It RETIRES the Opus 4.8 / Sonnet 5 reliance
+  pair
+  ([D-054](DECISIONS.md#d-054--2026-07--the-landing-skill--how-a-flight-ends-becomes-a-first-class-ritual-one-skill-with-two-modes-routed-by-fleet-state-retire--pause-and-transfer-the-fence-is-a-commit-so-the-resume-point-is-the-branch-tip-by-construction-wake-lock-mediated-with-its-honesty-clause-the-board-is-the-single-transfer-material-pickup-gains-the-fleet-resume-ask-and-its-cap-arithmetic-sessions-are-cattle-branches-are-the-work-charter-rule-6-becomes-a-pointer-the-effort-doctrine-moves-to-opus-5--xhigh-upholds-the-wake-lock-the-park-protocol-and-one-home-supersedes-the-opus-48-reliance-pair)).
+  Fable 5: an optional SECOND OPINION only, never the seat. The
+  plateau: xhigh is the working ceiling — max only by explicit
+  founder tag for rare one-shots; ultracode only by explicit
+  founder tag for coverage-critical sweeps. Throttle order under
+  usage limits, unchanged: reduce effort before downgrading the
+  model. Agent Teams: teammates are Sonnet 5
   ([parallel-lanes §Vehicles](skills/parallel-lanes.md#vehicles)).
+  The two routine boxes — lane worker and cockpit — are read at
+  the next flight and set to Opus 5; that is a founder act in the
+  routines UI, not a repo file.
 - Hands: solo · subagents · team · lanes (doctrine,
   [D-045](DECISIONS.md#d-045--2026-07--hands-doctrine-solo--subagents--agent-team--lanes--the-litmus-is-one-bench-many-hands-vs-many-benches-vs-read-only-upholds-d-020-and-d-041)).
   The founder's choose-your-hands rule, verbatim:

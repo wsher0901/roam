@@ -89,6 +89,25 @@ shape below is the founder's status template.
   ([TEMPLATE](../memory/TEMPLATE.md)) —
   "⏸ INTERRUPTED: <one line> — continue?" — before anything else
   renders.
+- FLEET RESUME, second (the ⏸ lead keeps priority): whenever the
+  board shows a GROUNDED FLEET — a Sessions row reading "no live
+  cockpit — grounded for local pickup <date>", written by
+  [land](land.md)'s MODE P — render one row PER LANE straight from
+  the board's fleet-at-ground table (id · purpose · progress ·
+  exact next step · held), then THE ASK, in these exact words:
+  "Continue? — 'continue' redeploys the whole fleet: each held lane
+  flips to resumed and re-labels `lane:cloud` (N cap runs, N fresh
+  workers claim by canary and read their fences)."
+  Then the granular alternatives, one line each: "'local <id>' —
+  adopt the branch at this desk and continue (0 cap runs)" ·
+  "'redeploy <id>' — one lane, 1 cap run" · "'hold <id>' — leave it
+  parked". N is DERIVED AT ASK TIME (the lane count), and the cap
+  arithmetic is stated aloud beside it — remaining runs from
+  `npm run count:runs` plus any fires this sitting, against the
+  15/day cap ([liftoff §2](liftoff.md#2--triage-every-open-item));
+  if the script fails, say so and ask for the number rather than
+  guessing. The founder's answer runs
+  [§6](#6--fleet-resume-on-the-founders-answer).
 - Ruled header: "── pickup · <date> · <seat> ──". Caption line:
   "Last handoff: <FULL | liftoff> · <date HH:MM> · <seat>".
 - WORKING ON — the bench this sitting resumes (or "nothing
@@ -119,3 +138,41 @@ Sources:
 [HOME §Response doctrine](../HOME.md#response-doctrine)
 [TEMPLATE — the Status vocabulary](../memory/TEMPLATE.md)
 [pacing law — LAWS §Workflow](../LAWS.md#workflow-non-negotiable)
+
+## 6 · Fleet resume (on the founder's answer)
+
+Runs only after §5's FLEET RESUME ask, and only on the founder's
+word — a ritual never spends cap runs by default. The redeploy
+mechanics live HERE and nowhere else; every other page points at
+this section.
+
+Per lane, by the answer given:
+
+- **'continue'** (the whole fleet) or **'redeploy <id>'** (one
+  lane) — REDEPLOY. On the lane's fenced branch: flip the memory
+  Status to "bench ready — resumed <date>" (the existing
+  `bench ready` state, [TEMPLATE](../memory/TEMPLATE.md)) and push
+  — that push releases the fence, since `held` is what a waking
+  worker would otherwise obey. Then re-apply the `lane:cloud`
+  label per
+  [parallel-lanes §Cloud spawn](parallel-lanes.md#cloud-spawn--route-ladder)
+  (ready-flip first if the PR is a draft), and run the canary
+  handshake as the baton-holder side of
+  [§Canary](parallel-lanes.md#canary-handshake-both-sides) — the
+  fresh worker claims, and the ack token is written
+  character-for-character. The worker reads its own fence for the
+  exact next step; no second birth, the bench already exists.
+- **'local <id>'** — ADOPT AT THIS DESK. Check the branch out here
+  and continue from its fence. Zero cap runs; the Status becomes
+  this seat's ordinary working state.
+- **'hold <id>'** — leave it. The fence stands, the board keeps
+  its row, and the lane resumes at some later sitting.
+
+Anything redeployed or adopted stops being a grounded-fleet row at
+the next repaint; anything held keeps its row so the owed work
+survives the sitting.
+
+Sources:
+[land](land.md)
+[parallel-lanes §Respawn](parallel-lanes.md#respawn-on-an-existing-bench-liftoff-adopt)
+[TEMPLATE — the Status vocabulary](../memory/TEMPLATE.md)
