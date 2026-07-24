@@ -1,26 +1,20 @@
 ---
 type: memory
 id: currency-audit
-updated: 2026-07-23 21:07 · claimed · home PC
+updated: 2026-07-23 21:14 · complete · home PC
 ---
 
 # currency-audit — docs currency audit
 
 ## Status
 
-claimed — control tower · home PC · 2026-07-23 21:07. Adopted from
-the 07-23 18:02 park on the founder's resume mandate, exactly as
-the park Status directed: the PART A/B/C analysis stands as
-written, and this seat now applies the eleven specified changes
-from [the spec](../specs/currency-audit.md) — seven LIVING-STALE
-fixes, four dated supersession notes — then the verification chain
-to THE GATE.
-
-Bench artifacts, all verified on origin at adoption:
-branch `docs/currency-audit` (af1f2d7) · spec · this memory · draft
-PR [#204](https://github.com/wsher0901/roam/pull/204) (OPEN, draft).
-Adoption used only what is on origin — nothing from the other seat
-was assumed to survive.
+complete, awaiting merge — 2026-07-23 21:14 · home PC. All eleven
+specified changes are applied and pushed: seven LIVING-STALE fixes
+(liftoff §6 · SETUP · four HOME edges · machine-setup) and four
+dated supersession notes (the clerk spec trio ·
+cloud-born-cockpit). The retired-noun greps re-run clean. At THE
+GATE — tower-authored, so external Web review precedes the
+founder's word. DO NOT MERGE on this session's say-so.
 
 ## What this task is
 
@@ -39,50 +33,30 @@ edges: [the spec](../specs/currency-audit.md).
 
 ## Pending issues
 
-- **Nothing is fixed yet.** The bench parked after analysis, before
-  edits. Eleven changes are specified and waiting: seven
-  LIVING-STALE instruction fixes and four dated supersession notes.
-- The ORPHAN question is ANSWERED, not open: there are none, proven
-  mechanically. There is no orphan list to bring to the gate.
-- Two items want the founder's word at the gate, both recorded in
-  the spec: ENGINE.md's `type: spec` frontmatter (UNCLEAR — flagged,
-  not changed), and confirmation that the PART C recommendations
-  match intent.
+- Three things want the founder at the gate, all on record in
+  [the spec](../specs/currency-audit.md): ENGINE.md's `type: spec`
+  frontmatter (UNCLEAR — flagged, not changed), confirmation that
+  the PART C recommendations match intent, and the ORPHAN answer
+  (there are none, proven mechanically — the list to bring is
+  empty).
 - Tower-authored, so [no-solo-approval](../LAWS.md) requires an
-  external Web review before the founder's word. Ships to THE GATE —
+  external Web review before the founder's word. At THE GATE —
   DO NOT MERGE.
+- The stale origin ref `chore/liftoff-findings` survives its
+  squash-merge ([#202](https://github.com/wsher0901/roam/pull/202);
+  tip verified equal to the PR head at merge, zero unique commits —
+  re-verified at adoption). Deleting remote refs is not this
+  bench's business; a one-click UI delete whenever convenient.
 
 ## Left / idle
 
-Everything below is specified in
-[the spec](../specs/currency-audit.md); this is the work order.
-
-**PART B.1 — seven LIVING-STALE fixes:**
-1. [liftoff §6](../skills/liftoff.md) — drop the disproven
-   `[COCKPIT] roam — <date>` title line and record the answer.
-2. [SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts)
-   — same title line, second home.
-3. [HOME §The five rituals](../HOME.md#the-five-rituals) — the
-   cockpit birth prompt is a POINTER, not the flight plan's carrier.
-4. [HOME §The files](../HOME.md#the-files--what-each-one-is-for) —
-   FOUNDATION's writer drops "paste block".
-5. [HOME §Equipment](../HOME.md#equipment--environment) — the skills
-   list gains [go-remote](../skills/go-remote.md).
-6. [HOME §Delegation](../HOME.md#delegation--the-away-mode-chooser)
-   — name the maiden's recorded winning route.
-7. [machine-setup](../skills/machine-setup.md) — one per-machine
-   bullet for the `COCKPIT_` pair, pointing at SETUP (a pointer,
-   never a second copy of the secret path).
-
-**PART B.2 — four dated supersession notes (note only, no rewrite):**
-[cloud-clerk](../specs/cloud-clerk.md) ·
-[clerk-notify](../specs/clerk-notify.md) ·
-[clerk-autospawn](../specs/clerk-autospawn.md) ·
-[cloud-born-cockpit](../specs/cloud-born-cockpit.md).
-
-**Then:** weave-lint, the full CI mirror, Actions green,
-[ship §6](../skills/ship.md#6--the-gate)'s critic, external Web
-review, THE GATE.
+Nothing is left on this bench — the work order is fully executed
+and verification is at the gate. After the founder's word, the
+weld ticks the last two Done-means boxes (Actions on the final
+head · the critic run), per the
+[shakedown-audit](../specs/shakedown-audit.md) precedent. The next
+bench after this one:
+[WEB-INSTRUCTIONS](../WEB-INSTRUCTIONS.md) v5 (see Where to look).
 
 ## The story
 
@@ -185,6 +159,41 @@ census ran over every tracked file (markdown links, bare paths, bare
 filename mentions). Every in-scope file has at least one inbound
 reference. The only zero-inbound file is this memory, which is the
 normal state of an in-flight memory — it joins the graph at ship.
+
+**Adoption (home PC, 2026-07-23 evening).** The founder resumed
+the bench with a re-derivation mandate: trust only origin. The
+bench was found whole at `af1f2d7` and adopted as the park Status
+directed — nothing re-derived, nothing assumed to have survived
+from the other seat. The STEP 0 tripwire fired on the same
+`chore/liftoff-findings` ref the birth had already adjudicated;
+re-verified (merged as
+[#202](https://github.com/wsher0901/roam/pull/202), tip equal to
+the PR head at merge, zero unique commits) and left alone again.
+The mandate's machine-local tidy ran: this seat's `.env.local`
+carried exactly the two dead `CLERK_` lines — removed, nothing
+committed (the file is gitignored), masked read-back clean. The
+founder's acts arrived as context and were NOT re-flagged as owed:
+OAuth secret deleted · clerk routine deleted · the `Default`
+environment's setup script emptied · both routine boxes re-saved
+07-23 · workflow permissions verified.
+
+**Implementation (same sitting).** The eleven changes landed in
+four pushed commits (title-line pair · HOME edges · machine-setup
+· the four notes), each note a dated blockquote directly under its
+spec's title so a reader reaching for a recipe hits the note
+first. One deviation, recorded in the spec: fix 7's rationale
+narrowed — the machine-local `COCKPIT_` pair gates only
+`fire:cockpit` (the summon workflow runs on repository secrets),
+so the bullet claims exactly that. The retired-noun greps re-ran
+clean over the finished tree: every surviving hit is
+record-with-note, this bench's own artifacts, the board's ledger
+lines, doctrine-correct D-046 prose (the paste block described as
+a tool, not a requirement), or the out-of-scope
+[WEB-INSTRUCTIONS](../WEB-INSTRUCTIONS.md). One reassurance worth
+keeping: the ground-meaning "cockpit" the session-start hook
+printed at this sitting's open came from the stale pre-#180 branch
+this session began on — current main's hook says BATON-HOLDER,
+verified directly.
 
 ## Where to look
 

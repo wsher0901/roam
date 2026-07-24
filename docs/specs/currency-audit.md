@@ -5,7 +5,7 @@ title: Docs currency audit — every live instruction that points at retired mac
 status: open
 stage: workshop
 branch: docs/currency-audit
-pr: —
+pr: 204
 opened: 2026-07-23
 shipped: —
 ---
@@ -185,7 +185,34 @@ is no orphan list to bring to the gate.
 
 ## PART B — what was fixed
 
-<!-- filled by PART B; each file with its bucket and the law that dates it -->
+Implemented 2026-07-23 at the home PC, from this spec's PART A
+table after adoption from the 18:02 park — eleven changes: seven
+LIVING-STALE fixes, four dated supersession notes.
+
+### B.1 — the seven LIVING-STALE fixes
+
+| # | File | The fix | The law that dates it |
+|---|---|---|---|
+| 1 | [skills/liftoff.md](../skills/liftoff.md) §6 | the `[COCKPIT] roam — <date>` title line dropped from the birth-prompt composition; the TITLE LINE paragraph now records the verify-before-rely answer in place — DISPROVEN at the 2026-07-23 birth, the platform auto-titles from charter content; the session-list doctrine kept unchanged | [#202](https://github.com/wsher0901/roam/pull/202)'s harvest, executing [#193](https://github.com/wsher0901/roam/pull/193)'s own instruction |
+| 2 | [SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts) | the title line dropped from the exact-command-shape sentence; a no-title-line note names [liftoff §6](../skills/liftoff.md#6--ledger-handoff--fire-the-cockpit) as the answer of record | same |
+| 3 | [HOME §The five rituals](../HOME.md#the-five-rituals) | the liftoff portrait no longer fires the cockpit "with that flight plan as its payload" — it now says the board IS the flight plan, the birth prompt only points at it, and the board governs where they disagree | [#193](https://github.com/wsher0901/roam/pull/193) |
+| 4 | [HOME §The files](../HOME.md#the-files--what-each-one-is-for) | FOUNDATION's writer: "founder-approved PRs (paste block + D-number)" → "founder-approved PRs (+ D-number)" | [D-046](../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock) |
+| 5 | [HOME §Equipment](../HOME.md#equipment--environment) | the skills list names all nine — [go-remote](../skills/go-remote.md) added ("the phone tether, the backstop away posture"), plus its Sources line | the routing law |
+| 6 | [HOME §Delegation](../HOME.md#delegation--the-away-mode-chooser) | the pending-voiced maiden sentence now names the recorded winner: route 1 — label-spawn, ready-flip then label, 2026-07-16 | [parallel-lanes §Cloud spawn](../skills/parallel-lanes.md#cloud-spawn--route-ladder) |
+| 7 | [skills/machine-setup.md](../skills/machine-setup.md) | the one-time-per-machine list gains item 11: the `COCKPIT_` pair, pointing at [SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts) for the recipe — a pointer, never a second copy of the secret path | [D-047](../DECISIONS.md#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law) (rung 3) |
+
+### B.2 — the four supersession notes
+
+Each is one dated blockquote directly under the spec's title, so a
+reader reaching for the content hits the note first. No body text
+was rewritten anywhere.
+
+| File | The note says |
+|---|---|
+| [cloud-clerk](cloud-clerk.md) | clerk RETIRED 2026-07-22, routine deleted; [D-046](../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)/[D-048](../DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047) supersede, [#197](https://github.com/wsher0901/roam/pull/197) executed; everything below is record, nothing can fire |
+| [clerk-notify](clerk-notify.md) | the standing watch can no longer be armed; what duty 6 proved lives on as the cockpit charter's turn-end report |
+| [clerk-autospawn](clerk-autospawn.md) | `fire:clerk` gone, a stale target fails honestly; the proven API-fire lives on as `fire:cockpit`, the birth ladder's routine-fire rung |
+| [cloud-born-cockpit](cloud-born-cockpit.md) | the D-047 decision STANDS; the two DISPROVEN recipes named (the `winpty` capture shape · the `gh` install), each with its correction of record ([liftoff §6](../skills/liftoff.md#6--ledger-handoff--fire-the-cockpit) · [SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts) · [flight-hardening](flight-hardening.md)) |
 
 ## PART C — recommendations
 
@@ -266,31 +293,41 @@ question:
 
 ## Where this bench stopped
 
-PART A is COMPLETE — every file classified, the orphan census run,
-the retired-noun greps done. PART B and PART C are ANALYSED and
-written up above, but **no fix has been applied to any file yet**:
-the seven LIVING-STALE edits and the four supersession notes are
-specified here and remain to be made. The next seat implements from
-this spec; nothing needs re-deriving.
+COMPLETE. PART A ran at the work PC (2026-07-23, parked 18:02);
+PART B was implemented at the home PC the same evening after
+adoption from the park — all eleven changes applied, the
+retired-noun greps re-run clean (every surviving hit is
+record-with-note, this bench's own artifacts, the board's ledger
+lines, or the out-of-scope
+[WEB-INSTRUCTIONS](../WEB-INSTRUCTIONS.md)). Ships to THE GATE and
+does NOT merge: tower-authored, so external Web review precedes
+the founder's word.
 
 ## Done means
 
-- [ ] The classification table covers EVERY file read, none
-      unclassified.
-- [ ] Greps for each retired noun return only record-with-
-      supersession-note or zero.
-- [ ] Every LIVING-STALE instruction fixed, or explicitly deferred
-      with a reason.
-- [ ] Every RECORD file whose machinery is retired carries a dated
-      supersession note — note only, no rewrite.
-- [ ] The ORPHAN list is complete, nothing deleted, each entry
-      carrying a home or a retire recommendation.
-- [ ] A PART C recommendation exists for each named surface.
-- [ ] `check:links` · `check:ledger` · `check:memory` green.
+- [x] The classification table covers EVERY file read, none
+      unclassified. (PART A, 2026-07-23.)
+- [x] Greps for each retired noun return only record-with-
+      supersession-note or zero. (Re-run after implementation,
+      2026-07-23 — every hit adjudicated.)
+- [x] Every LIVING-STALE instruction fixed, or explicitly deferred
+      with a reason. (Seven fixed, none deferred.)
+- [x] Every RECORD file whose machinery is retired carries a dated
+      supersession note — note only, no rewrite. (Four notes.)
+- [x] The ORPHAN list is complete, nothing deleted, each entry
+      carrying a home or a retire recommendation. (The census
+      answer is NONE — there are no orphans, so the complete list
+      is empty; nothing was deleted.)
+- [x] A PART C recommendation exists for each named surface.
+- [x] `check:links` · `check:ledger` · `check:memory` green.
+      (2026-07-23, home PC, on the completion tree.)
 - [ ] Full CI mirror green locally AND the pushed head's Actions run
-      green.
+      green. (Local mirror green 2026-07-23; the final head's run is
+      watched at the gate and this box ticks at the weld — the
+      [shakedown-audit](shakedown-audit.md) precedent.)
 - [ ] [ship §6](../skills/ship.md) critic runs; verdict rides to the
-      founder verbatim.
+      founder verbatim. (Runs at the gate announcement; ticks at
+      the weld.)
 
 ## Pending
 
@@ -303,7 +340,13 @@ Deliberately untouched here.
 
 ## Deviations
 
-<filled by /ship: anything done differently than planned — or "none">
+- Fix 7's rationale narrowed at implementation: PART A/C claimed a
+  seat without the `COCKPIT_` pair "could not fire the cockpit or
+  the summon self-rescue"; the machine-setup bullet as written
+  claims only `npm run fire:cockpit` — the summon workflow runs on
+  repository secrets, not machine-local env, so the local pair
+  gates the routine-fire rung alone. Narrower claim, same fix.
+- Everything else landed as specified.
 
 ## Open questions
 
