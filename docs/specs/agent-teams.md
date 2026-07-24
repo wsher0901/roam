@@ -2,12 +2,12 @@
 type: spec
 id: agent-teams
 title: Agent teams — where they fit this workshop and where they must not ([D-055](../DECISIONS.md#d-055--2026-07--agent-teams--the-boundary-teams-are-for-exploration-and-review-at-a-ground-seat-lanes-remain-the-authorship-mechanism-two-risks-become-law-single-sitting-only--an-explicit-carve-out-to-d-050s-interrupt-promise--and-a-teammate-authored-diff-is-self-authored-under-no-solo-approval-the-reviewers-model-settled-by-verification-not-guess-the-founder-side-config-recorded-upholds-the-lane-law-no-solo-approval-and-one-home-gives-the-experimental-flag-its-consumer))
-status: open
+status: shipped
 stage: workshop
 branch: docs/agent-teams
 pr: 223
 opened: 2026-07-24
-shipped: —
+shipped: 2026-07-24 16:44
 ---
 
 # agent-teams — the boundary, two risks, and the reviewer's model
@@ -77,7 +77,8 @@ flown here.
 [SETUP](../SETUP.md) (the founder config note) ·
 `.claude/agents/reviewer.md` · [DECISIONS](../DECISIONS.md) ·
 [IDEAS](../IDEAS.md) · this spec +
-[the memory](../memory/agent-teams.md) ·
+[the memory](../history/workshop/definition/agent-teams.md)
+(moved to history/ at the weld) ·
 [DASHBOARD](../DASHBOARD.md) via the ship tail.
 
 THREE stale copies of the old team rule had to be repaired beyond
