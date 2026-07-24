@@ -6,7 +6,7 @@ status: living
 
 # Dashboard — the state surface
 
-Stamp: 2026-07-24 · 16:47 · ship tail · work PC
+Stamp: 2026-07-24 · 17:24 · ship tail · work PC
 V1 5/34 · S1 2/7 · S2 3/5 · sessions: 1 main · 0 parallel
 (0 need you) · needs-you 3
 How to read this board →
@@ -51,25 +51,28 @@ frontmatter oddity is folded there too
 
 | Session | Task | State | Last push | Your move |
 |---|---|---|---|---|
-| main · control tower | — (agent-teams welded; nothing open, nothing parked) · 0/0 | 🟢 | 16:47 (this repaint) | the three manual acts above |
+| main · control tower | — (team-aware-leaving welded; nothing open, nothing parked) · 0/0 | 🟢 | 17:24 (this repaint) | the three manual acts above |
 
 ↳ main micro: — (no active task)
 
 The work PC picked the baton up at 13:26 on a clean floor and has
-welded TWO benches: THE LANDING SKILL
+welded THREE benches: THE LANDING SKILL
 ([#221](https://github.com/wsher0901/roam/pull/221),
 [D-054](DECISIONS.md#d-054--2026-07--the-landing-skill--how-a-flight-ends-becomes-a-first-class-ritual-one-skill-with-two-modes-routed-by-fleet-state-retire--pause-and-transfer-the-fence-is-a-commit-so-the-resume-point-is-the-branch-tip-by-construction-wake-lock-mediated-with-its-honesty-clause-the-board-is-the-single-transfer-material-pickup-gains-the-fleet-resume-ask-and-its-cap-arithmetic-sessions-are-cattle-branches-are-the-work-charter-rule-6-becomes-a-pointer-the-effort-doctrine-moves-to-opus-5--xhigh-upholds-the-wake-lock-the-park-protocol-and-one-home-supersedes-the-opus-48-reliance-pair))
 and AGENT TEAMS
 ([#223](https://github.com/wsher0901/roam/pull/223),
-[D-055](DECISIONS.md#d-055--2026-07--agent-teams--the-boundary-teams-are-for-exploration-and-review-at-a-ground-seat-lanes-remain-the-authorship-mechanism-two-risks-become-law-single-sitting-only--an-explicit-carve-out-to-d-050s-interrupt-promise--and-a-teammate-authored-diff-is-self-authored-under-no-solo-approval-the-reviewers-model-settled-by-verification-not-guess-the-founder-side-config-recorded-upholds-the-lane-law-no-solo-approval-and-one-home-gives-the-experimental-flag-its-consumer)).
+[D-055](DECISIONS.md#d-055--2026-07--agent-teams--the-boundary-teams-are-for-exploration-and-review-at-a-ground-seat-lanes-remain-the-authorship-mechanism-two-risks-become-law-single-sitting-only--an-explicit-carve-out-to-d-050s-interrupt-promise--and-a-teammate-authored-diff-is-self-authored-under-no-solo-approval-the-reviewers-model-settled-by-verification-not-guess-the-founder-side-config-recorded-upholds-the-lane-law-no-solo-approval-and-one-home-gives-the-experimental-flag-its-consumer)),
+and TEAM-AWARE LEAVING
+([#225](https://github.com/wsher0901/roam/pull/225),
+[D-056](DECISIONS.md#d-056--2026-07--team-aware-leaving-rituals--no-ritual-lets-a-live-agent-team-outlive-the-sitting-that-made-it-handoff-shuts-the-team-down-before-parking-anything-and-captures-its-findings-into-the-record-first-land-states-the-cockpit-cannot-lead-a-team-case-once-and-routes-the-ground-seat-to-handoff-pickup-gains-the-ghost-teammate-recovery-note-and-the--block-gains-what-the-team-had-found-closes-d-055s-deferred-gap-upholds-one-home-and-the-park-protocol)),
+which closed the gap D-055 deferred.
 Origin carries `main` only; no lane flew, nothing is parked. The
-queue, in order: THE TEAM-AWARE LEAVING RITUALS — the one gap
-[D-055](DECISIONS.md#d-055--2026-07--agent-teams--the-boundary-teams-are-for-exploration-and-review-at-a-ground-seat-lanes-remain-the-authorship-mechanism-two-risks-become-law-single-sitting-only--an-explicit-carve-out-to-d-050s-interrupt-promise--and-a-teammate-authored-diff-is-self-authored-under-no-solo-approval-the-reviewers-model-settled-by-verification-not-guess-the-founder-side-config-recorded-upholds-the-lane-law-no-solo-approval-and-one-home-gives-the-experimental-flag-its-consumer)
-deferred, widened at its gate: a live team can outlive a sitting
-AND a flight, so [handoff](skills/handoff.md) and
-[land](skills/land.md) both need the clause
-([IDEAS](IDEAS.md) carries the candidate) · THE CHRONICLE LAYER
-(its own chat; also the first intended agent-team use).
+queue: THE CHRONICLE LAYER (its own chat; also the first intended
+agent-team use — three threads, one teammate each, disjoint
+files, a single sitting) · and one small deferred road, filed in
+[IDEAS](IDEAS.md): the SUPERSEDED-SEAT self-close, the only exit
+from a sitting that runs no ritual, so a superseded tower leading
+a team would lose its findings.
 
 ## You are here
 
@@ -141,6 +144,7 @@ T3–T6 source-vetting relaunch stays held (see You are here).
 
 | When | What | PR |
 |---|---|---|
+| 07-24 17:21 | [no ritual lets a live agent team outlive the sitting that made it (D-056): D-055 had made single-sitting-only law and left it enforced by nothing. THE DECISION IS AN INVERSION of the candidate clause that opened the bench — "never park a live team" governs the PROCESSES, which are not what is at risk: teammates die cheaply and respawn cheaply, while what dies irrecoverably is what they FOUND, since a team's output lives in transcripts that vanish with the session. So the duty became CAPTURE, THEN KILL — handoff §1.2, before any park: findings into the record first (this session's OWN bench memory, never a lane's diary, else an IDEAS line riding §5's micro-PR), then shutdown by name, then report, with the not-instant honesty and refusals named in the close report on the road out. land routes to handoff with zero duplicated procedure; pickup gains the ghost-teammate note; TEMPLATE's ⏸ block gains conditional TEAM FINDINGS. The critic found THREE already-shipped holes — the liftoff road with nowhere to land, a wording that licensed writing into a lane's diary, and an IDEAS fallback with no committing vehicle — plus a logic error in the bench's own justification, rewritten as policy: D-056 corrects D-055's reasoning FORWARD, that entry left unedited under append-only](history/workshop/mechanism/team-aware-leaving.md) | [#225](https://github.com/wsher0901/roam/pull/225) |
 | 07-24 16:44 | [where agent teams fit this workshop and where they must not (D-055): the experimental flag was already ON with nothing reaching for it, so the question was never whether teams get used but whether their first use would be governed. THE BOUNDARY — teams are for EXPLORATION AND REVIEW at a ground seat, LANES REMAIN THE AUTHORSHIP MECHANISM, and a team never authors a bench, never merges, never runs a ritual — with the reasons stated rather than asserted; TWO RISKS AS LAW: single-sitting only (an explicit carve-out to D-050's interrupt promise, written in BOTH places that promise is read — an interrupt is safe for your session and fatal to your teammates) and a teammate-authored diff is SELF-AUTHORED under no-solo-approval; the reviewer's model settled by VERIFICATION — the `opus` alias resolved mechanically from a headless run's own billing record and recorded before `reviewer.md` was touched, an order the external review checked in the log rather than trusting; three rejections with reasons. The critic ran TWICE: the first as Sonnet 5 (this session's definition was cut at startup, before the edit), the second forced onto Opus 5 — and the Opus pass found a THIRD stale copy plus the missing D-045/D-020 forward pointer, so of three stale copies the bench found one and the critic found two](history/workshop/definition/agent-teams.md) | [#223](https://github.com/wsher0901/roam/pull/223) |
 | 07-24 15:20 | [how a flight ends becomes a first-class ritual (D-054): land ships as ONE skill with TWO modes routed by the fleet the cockpit derives from origin — RETIRE, consolidating the duties charter rule 6 already carried, and PAUSE-AND-TRANSFER, answering the case that had none; its core is THE FENCE, a commit that makes the lane's next push non-fast-forward so the wake-lock turns the rejection into a stop and the resume point is the branch tip BY CONSTRUCTION, with the honesty clause beside it (wake-lock-mediated, never a guaranteed freeze); the board's fleet-at-ground table is the single material passed down, sessions are cattle and branches are the work, pickup gains the FLEET RESUME ask with live cap arithmetic, rule 6 reduces to a pointer, and the effort doctrine moves to Opus 5 · xhigh; five alternatives rejected with reasons; the critic's two findings repaired pre-flip, the 🟡 one judged REQUIRED by one-home at the external review](history/workshop/mechanism/landing-skill.md) | [#221](https://github.com/wsher0901/roam/pull/221) |
 | 07-24 01:33 | [the harness found ALREADY AT BEST PRACTICE, the proof welded to the record (D-053): the founder's maximum-depth audit of the whole governing layer against Anthropic's guidance; the two real improvements shipped — LAWS' verification loop promoted to a copy-runnable block (proven live: this bench's gate ran the block verbatim as its mirror) and two stub trigger-surfaces sharpened, the harness picking both up mid-bench; five alternatives rejected with reasons; the critic's one finding — the hygiene bench's own bare D-053 mentions — repaired pre-flip](history/workshop/definition/guardrail-audit.md) | [#218](https://github.com/wsher0901/roam/pull/218) |
@@ -150,7 +154,6 @@ T3–T6 source-vetting relaunch stays held (see You are here).
 | 07-23 22:38 | [the cockpit gains a second API path (D-049): gh installs from the allowlisted Ubuntu archive and authenticates through the GitHub proxy — REST-shaped (gh api works repo-scoped; GraphQL porcelain 403s, the proxy pointing to REST); the probe flew NON-PASS on its own definition, STOP held, and the gate reopened on the founder-witnessed REST read; the API map two-pathed (only both paths dead demote), the charter R2 gains the automatic gh rung, self-ID from session env, the Claude-Session trailer noted; five findings ride first-class incl. the toolset bluff (probe-don't-assume extends to a session's own tools) and teleport-relocates-execution](history/workshop/mechanism/gh-second-path.md) | [#207](https://github.com/wsher0901/roam/pull/207) |
 | 07-23 21:29 | [the docs currency audit: the clerk sweep came back already-clean (#197 held) — the real catch was the NEXT generation of staleness: the disproven `[COCKPIT]` title line dropped from liftoff §6 + SETUP with the verify-before-rely answer recorded in place, #193's board-governs doctrine landed in HOME's manual plus three more HOME edges (FOUNDATION's writer drops the paste block, go-remote joins the skills list, §Delegation names route 1 the recorded maiden winner), cloud-born-cockpit's two disproven recipes supersession-noted beyond the known clerk set, machine-setup gains the COCKPIT_ pair as step 11; four dated notes, zero deletions, zero record-body rewrites, orphans NONE by inbound-reference census; flown across two seats through a park, adopted from origin alone](history/workshop/mechanism/currency-audit.md) | [#204](https://github.com/wsher0901/roam/pull/204) |
 | 07-23 21:07 | [.env.example carries zero CLERK_ cruft: the vestigial clerk comment prose scrubbed from the "Routine fires" block so the file names only the live cockpit routine, the payload matching the founder's intent rather than the literal "two placeholder lines" (already gone by #197); flown as a full-liftoff run-through — bench-first birth, canary, cockpit airborne ack, one-file scrub — then carried through an independent non-author review that re-verified CI on the true merge tip after the lane cited a run one commit behind](history/workshop/mechanism/env-clerk-scrub.md) | [#200](https://github.com/wsher0901/roam/pull/200) |
-| 07-23 12:02 | [the repo stops pointing at a vehicle that cannot fire: the clerk routine was deleted 07-22, every live instruction reaching for the clerk removed and every verified record tombstoned (C1–C6, N2/N3, A1/A4 kept), liftoff's ladder bottomed out at the D-048 phone bootstrap, `fire.mjs` cockpit-only with the drain idiom untouched, no new D-number by design, and one live defect caught just outside the mandate's file list — parallel-lanes still armed the clerk as both fallback and notification watcher](history/workshop/mechanism/clerk-retirement.md) | [#197](https://github.com/wsher0901/roam/pull/197) |
 
 Note: [#201](https://github.com/wsher0901/roam/pull/201) (liftoff
 board weld) and [#202](https://github.com/wsher0901/roam/pull/202)
