@@ -582,8 +582,11 @@ seat-stamp superseded — the founder has sat down somewhere else —
 self-closes: push what exists, write nothing. And release is
 physical, not merely procedural — the close-lock: FULL handoff and
 liftoff end by writing `.claude/session-closed` as their last act,
-and from then on the prompt hook rejects every input to that session
-("this session is closed — open a fresh `claude`"). The session-start
+and from then on the prompt hook stamps every input to that session
+with the closed-session doctrine: closed ≠ dead — the session is
+READ-ONLY CONVERSATIONAL, answering by fresh derivation from
+origin, naming the current baton-holder, refusing every write,
+command act, and ritual. The session-start
 hook deletes the flag before anything else, so new sessions are
 always live.
 
@@ -980,11 +983,19 @@ the link for the full story.
   [handoff](skills/handoff.md) or [liftoff](skills/liftoff.md)
   (whose fire hands it to the cockpit for the flight),
   dormant between sittings. Home: [§The baton](#the-baton).
-- **close-lock** — the physical end of a session: FULL
+- **close-lock** — the end of a session as a working seat: FULL
   [handoff](skills/handoff.md) and [liftoff](skills/liftoff.md) write
   `.claude/session-closed` as their last act; from that moment the
-  prompt hook rejects every further input. Home:
+  prompt hook stamps every further input with the closed-session
+  doctrine. Home:
   [§The baton](#the-baton).
+- **closed ≠ dead** — a session past its close-lock stays a
+  read-only reference desk: it answers by fresh derivation from
+  origin, names the current baton-holder, and never writes,
+  commands, or runs a ritual. One session is stricter, not softer:
+  a superseded cockpit is tombstone-only (charter R4b). Home:
+  [liftoff §7](skills/liftoff.md#7--close) ·
+  [handoff §6](skills/handoff.md#6--close-full-only).
 - **seat** — where a session physically runs: work PC, home PC, or
   a cloud lane. Ritual stamps name seats; nothing else does.
   Home: [machine-setup](skills/machine-setup.md).

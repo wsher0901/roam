@@ -155,8 +155,12 @@ Report one line — "Handoff shipped (#N) · M lanes parked.
 Operations halted — safe to power off." Then, as the ritual's LAST
 act, write `.claude/session-closed` with content "Closed at handoff
 #<N> · <date> · <seat>" — the close-lock: from that moment the
-prompt hook rejects any further input to this session, and the
-session ends. QUIET instead returns to the sitting and recommends
+prompt hook stamps every later prompt with the closed-session
+doctrine, and the session ends AS A WORKING SEAT. Closed ≠ dead:
+addressed after the close it stays READ-ONLY CONVERSATIONAL —
+answers by fresh derivation from origin, always names the current
+baton-holder, and refuses every write, command act, and ritual.
+QUIET instead returns to the sitting and recommends
 NEXT per the pacing law.
 
 Sources:
