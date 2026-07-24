@@ -288,6 +288,25 @@ whole.
   Trade to weigh: a dead-at-birth session leaves no board URL;
   mitigations — `/tasks` lists it, and the missing greeting IS the
   signal. Its own small bench, next after session-lifecycle.
+- 2026-07-24 (the founder, at the landing-skill gate —
+  [#221](https://github.com/wsher0901/roam/pull/221)): AGENT TEAMS
+  is the next bench, and it must settle the SUBAGENT-MODEL line.
+  The boundary set at this gate:
+  [D-054](DECISIONS.md#d-054--2026-07--the-landing-skill--how-a-flight-ends-becomes-a-first-class-ritual-one-skill-with-two-modes-routed-by-fleet-state-retire--pause-and-transfer-the-fence-is-a-commit-so-the-resume-point-is-the-branch-tip-by-construction-wake-lock-mediated-with-its-honesty-clause-the-board-is-the-single-transfer-material-pickup-gains-the-fleet-resume-ask-and-its-cap-arithmetic-sessions-are-cattle-branches-are-the-work-charter-rule-6-becomes-a-pointer-the-effort-doctrine-moves-to-opus-5--xhigh-upholds-the-wake-lock-the-park-protocol-and-one-home-supersedes-the-opus-48-reliance-pair)'s
+  effort doctrine governs SURFACES AND SESSIONS, not subagent
+  internals — so `.claude/agents/reviewer.md` keeping
+  `model: sonnet` · `effort: high` is no contradiction and nothing
+  changed at that gate. Two things the bench must weigh together:
+  (a) a subagent definition spawned as an AGENT-TEAM TEAMMATE
+  honors its OWN `model` and `tools`, so that one line will govern
+  the ship-time critic AND any review teammate; (b) the alias
+  question, to be VERIFIED rather than guessed — `opus` may still
+  resolve to Opus 4.8, while `claude-opus-5` pins but is
+  deprecation-brittle. Data point for the same bench: the
+  `reviewer` agent-type registered and ran cleanly in-session on
+  2026-07-24 (work PC), which the 2026-07-17 defect line above
+  says it could not — the defect may be gone; confirm before
+  closing it.
 - 2026-07-24 (the founder, the guardrail audit —
   [D-053](DECISIONS.md#d-053--2026-07--guardrail-audit--the-harness-found-already-at-best-practice-against-anthropics-guidance-two-promotions-ship-the-verification-loop-as-a-copy-runnable-block-in-laws-two-stub-descriptions-sharpened-five-alternatives-rejected-with-reasons-upholds-the-routing-law-and-one-home)):
   the four ~300-character decide-anchor links in
