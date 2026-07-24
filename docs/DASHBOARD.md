@@ -6,25 +6,21 @@ status: living
 
 # Dashboard — the state surface
 
-Stamp: 2026-07-23 · 23:06 · ship · home PC
+Stamp: 2026-07-23 · 23:42 · ship · home PC
 V1 5/34 · S1 2/7 · S2 3/5 · sessions: 1 main · 0 parallel
-(0 need you) · needs-you 1
+(0 need you) · needs-you 0
 How to read this board →
 [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
 
-1. 🟡 Re-save the cockpit routine box from the updated charter
-   master — it gained the R2 gh rung and the self-URL line at
-   [#207](https://github.com/wsher0901/roam/pull/207)'s weld
-   (since 07-23).
-   → [SETUP §cloud accounts](SETUP.md#once-and-done--cloud-accounts)
-
-The home-PC seat debt is CLEARED (07-23): claude 2.1.218 and the
-`COCKPIT_` pair pasted, masked-verified (token 108 chars
-`sk-ant-oat` shape · id 29 chars `trig_` prefix), machine-local
-and gitignored — BOTH SEATS FULLY ARMED for `fire:cockpit` and
-the summon self-rescue.
+Nothing. The board is clear — a first for this stretch: the
+cockpit routine box was re-saved 07-24 post-D-049 (founder act,
+cleared on the founder's word at
+[#211](https://github.com/wsher0901/roam/pull/211)'s mandate),
+and the home-seat debt cleared earlier this sitting (claude
+2.1.218 · the `COCKPIT_` pair masked-verified) — BOTH SEATS FULLY
+ARMED for `fire:cockpit` and the summon self-rescue.
 
 The nine open engine questions stay parked in
 [ENGINE §12](ENGINE.md#12-open-register) until
@@ -37,23 +33,22 @@ frontmatter oddity is folded there too
 
 | Session | Task | State | Last push | Your move |
 |---|---|---|---|---|
-| main · control tower | — (gh-second-path shipped [#207](https://github.com/wsher0901/roam/pull/207); no bench open) | 🟢 | 23:03 (this repaint) | — |
+| main · control tower | — (session-lifecycle shipped [#211](https://github.com/wsher0901/roam/pull/211); no bench open) | 🟢 | 23:42 (this repaint) | — |
 
 ↳ main micro: — (no active task)
 
-Ground state, nothing in flight. Two benches welded this sitting —
-the currency audit ([#204](https://github.com/wsher0901/roam/pull/204))
-and the gh second path
-([#207](https://github.com/wsher0901/roam/pull/207), D-049: the
-cockpit's second API path, probe-proven). The probe outing's five
-sessions are archived and their five workspace branches deleted on
-the founder's word — origin heads = `main` only, prune-confirmed
-23:03. The next
-named bench, unopened:
-[WEB-INSTRUCTIONS](WEB-INSTRUCTIONS.md) v5 — stale in its bones
-(v4 paste-block loop, no cockpit), needs a rewrite
-([#204](https://github.com/wsher0901/roam/pull/204)'s spec names
-it in Pending).
+Ground state, nothing in flight. THREE benches welded this
+sitting — the currency audit
+([#204](https://github.com/wsher0901/roam/pull/204)), the gh
+second path ([#207](https://github.com/wsher0901/roam/pull/207),
+D-049), and session lifecycle
+([#211](https://github.com/wsher0901/roam/pull/211), D-050:
+closed ≠ dead · interrupt capture · the residue sweep · IDEAS
+compaction). The queue, founder-stated and recorded in
+[IDEAS](IDEAS.md): SELF-SEAT BIRTH (its own small bench, next) ·
+[WEB-INSTRUCTIONS](WEB-INSTRUCTIONS.md) v5 (the master rewrite,
+named by [#204](https://github.com/wsher0901/roam/pull/204)) ·
+THE CHRONICLE LAYER (after v5, its own chat).
 
 ## You are here
 
@@ -90,21 +85,23 @@ flowchart LR
 
 The live ops surface is the current ops chat (title unrecorded at
 the shakedown-audit weld). Its most recent external review —
-[#207](https://github.com/wsher0901/roam/pull/207) (gh second
-path, tower-authored) — is DONE, verdict PASS on `2b97a86` (eight
-files as declared, D-049's Why and R2's gh rung verified verbatim,
-both supersession notes pure additions, the gates re-run
-independently), delivered inline with the founder's merge word.
-Earlier reviews, all DONE:
-[#204](https://github.com/wsher0901/roam/pull/204) (PASS on
-`614e0f8`) · [#199](https://github.com/wsher0901/roam/pull/199) ·
+[#211](https://github.com/wsher0901/roam/pull/211) (session
+lifecycle, tower-authored) — is DONE, verdict PASS on `edc0c9a`
+plus the pure-append D-050 head `1ffebdf` (nine files, SETUP
+zero-diff, the wall hook read line-by-line, the gates re-run
+independently), delivered inline with the founder's conditioned
+merge word. Earlier reviews, all DONE:
+[#207](https://github.com/wsher0901/roam/pull/207) (PASS on
+`2b97a86`) · [#204](https://github.com/wsher0901/roam/pull/204)
+(PASS on `614e0f8`) ·
+[#199](https://github.com/wsher0901/roam/pull/199) ·
 [#197](https://github.com/wsher0901/roam/pull/197) ·
 [#193](https://github.com/wsher0901/roam/pull/193) ·
 [#195](https://github.com/wsher0901/roam/pull/195) → next: grade
 the cockpit maiden, once the closeout bench opens; the
 [WEB-INSTRUCTIONS](WEB-INSTRUCTIONS.md) v5 bench, when opened,
-rewrites the Project-instructions master itself. Under the surface
-doctrine
+rewrites the Project-instructions master; THE CHRONICLE LAYER
+gets its own chat after v5. Under the surface doctrine
 ([D-046](DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)),
 Web's one mandatory job is the external review of self-authored
 diffs.
@@ -114,6 +111,7 @@ T3–T6 source-vetting relaunch stays held (see You are here).
 
 | When | What | PR |
 |---|---|---|
+| 07-23 23:38 | [what a session's start, pause, and close leave behind (D-050): closed ≠ dead — the close-lock's wall softens to injected read-only doctrine, one doctrine in four homes and the wall hook itself (the one flagged gap file, both paths run live), full removal REJECTED, R4b + seat-stamp byte-strict; the ⏸ interrupt capture standing (block · state · pickup's "continue?" lead); the claude/* residue sweep graduates to pickup hygiene; IDEAS becomes an inbox-not-archive with the first assert-first compaction (420→266, 11 deleted enumerated, both stay-clauses exercised); chronicle layer + self-seat birth queued](history/workshop/mechanism/session-lifecycle.md) | [#211](https://github.com/wsher0901/roam/pull/211) |
 | 07-23 22:38 | [the cockpit gains a second API path (D-049): gh installs from the allowlisted Ubuntu archive and authenticates through the GitHub proxy — REST-shaped (gh api works repo-scoped; GraphQL porcelain 403s, the proxy pointing to REST); the probe flew NON-PASS on its own definition, STOP held, and the gate reopened on the founder-witnessed REST read; the API map two-pathed (only both paths dead demote), the charter R2 gains the automatic gh rung, self-ID from session env, the Claude-Session trailer noted; five findings ride first-class incl. the toolset bluff (probe-don't-assume extends to a session's own tools) and teleport-relocates-execution](history/workshop/mechanism/gh-second-path.md) | [#207](https://github.com/wsher0901/roam/pull/207) |
 | 07-23 21:29 | [the docs currency audit: the clerk sweep came back already-clean (#197 held) — the real catch was the NEXT generation of staleness: the disproven `[COCKPIT]` title line dropped from liftoff §6 + SETUP with the verify-before-rely answer recorded in place, #193's board-governs doctrine landed in HOME's manual plus three more HOME edges (FOUNDATION's writer drops the paste block, go-remote joins the skills list, §Delegation names route 1 the recorded maiden winner), cloud-born-cockpit's two disproven recipes supersession-noted beyond the known clerk set, machine-setup gains the COCKPIT_ pair as step 11; four dated notes, zero deletions, zero record-body rewrites, orphans NONE by inbound-reference census; flown across two seats through a park, adopted from origin alone](history/workshop/mechanism/currency-audit.md) | [#204](https://github.com/wsher0901/roam/pull/204) |
 | 07-23 21:07 | [.env.example carries zero CLERK_ cruft: the vestigial clerk comment prose scrubbed from the "Routine fires" block so the file names only the live cockpit routine, the payload matching the founder's intent rather than the literal "two placeholder lines" (already gone by #197); flown as a full-liftoff run-through — bench-first birth, canary, cockpit airborne ack, one-file scrub — then carried through an independent non-author review that re-verified CI on the true merge tip after the lane cited a run one commit behind](history/workshop/mechanism/env-clerk-scrub.md) | [#200](https://github.com/wsher0901/roam/pull/200) |
@@ -123,7 +121,6 @@ T3–T6 source-vetting relaunch stays held (see You are here).
 | 07-22 15:09 | [the repo stops telling a future seat to do things that cannot work: nine corrections from the first end-to-end chain flight — one canonical anchored ack token, rung 1's impossible recipe replaced by the console-attach shape that flew, the board promoted to authoritative flight plan, a git-only vs API-only dependency map, the cloud environment corrected to `Default`, one LAWS sentence fixing "non-author" to the payload diff — the gh half since corrected in turn by D-049](history/workshop/mechanism/flight-hardening.md) | [#193](https://github.com/wsher0901/roam/pull/193) |
 | 07-21 14:56 | [the cockpit's birth vehicle becomes `claude --cloud` (D-047): the automated hidden-console birth is liftoff §6's primary rung — list-native — with compose-and-hand, the routine fire, and the manual paste as fallbacks; three STOP-gates proved clone-from-GitHub and branch-create by live probe](history/workshop/mechanism/cloud-born-cockpit.md) | [#187](https://github.com/wsher0901/roam/pull/187) |
 | 07-20 22:01 | [the `.claude/` harness learns the D-046 vocabulary: the pickup stub and session-start hook name the BATON-HOLDER (control tower on the ground, cockpit in flight); flown as a label-spawned cloud lane](history/workshop/mechanism/harness-vocab-rename.md) | [#180](https://github.com/wsher0901/roam/pull/180) |
-| 07-20 15:40 | [the cockpit is the control tower online (D-046): full-authorship cloud command session fired by liftoff; the no-solo-approval law; the CC-direct surface doctrine; clerk retirement staged; fire.mjs generalized (clerk \| cockpit)](history/workshop/definition/flight-cockpit.md) | [#177](https://github.com/wsher0901/roam/pull/177) |
 
 Note: [#201](https://github.com/wsher0901/roam/pull/201) (liftoff
 board weld) and [#202](https://github.com/wsher0901/roam/pull/202)
