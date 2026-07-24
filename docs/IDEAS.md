@@ -60,10 +60,6 @@ whole.
 - 2026-07-16 (Claude Code, maiden-flight-report): cloud-session
   hygiene — unrecognized sessions at claude.ai/code archived on
   sight.
-- 2026-07-16 (Claude Code, maiden-flight-report): a check:memory CI
-  lint — validate memory files against
-  [TEMPLATE](memory/TEMPLATE.md)'s locked format (Status first,
-  four sections, vocabulary words).
 - 2026-07-17 (Claude Code, clerk-notify bench): DEFECT — the
   reviewer agent-type fails to register in-session (the Agent tool
   reports 'reviewer' not found); second recurrence 2026-07-17,
@@ -280,53 +276,6 @@ whole.
   footnotes; the primary sources stay immutable beneath. Queued
   after the [WEB-INSTRUCTIONS](WEB-INSTRUCTIONS.md) v5 rewrite —
   its own chat.
-- 2026-07-23 (the founder, ops chat, queued): SELF-SEAT BIRTH —
-  liftoff fires `claude --cloud` BLIND (no console capture at all);
-  the cockpit seats ITSELF via its env-derived self-URL
-  ([D-049](DECISIONS.md#d-049--2026-07--gh-second-path--gh-api-rest-through-the-github-proxy-is-the-cockpits-second-api-path-a-connector-flap-stops-costing-command-r2-gains-the-automatic-gh-rung-self-id-by-session-env-amends-d-048-corrects-the-193-api-map-upholds-d-047-and-verify-before-rely)),
-  deleting the fragilest launcher component — the console read.
-  Trade to weigh: a dead-at-birth session leaves no board URL;
-  mitigations — `/tasks` lists it, and the missing greeting IS the
-  signal. Its own small bench, next after session-lifecycle.
-- 2026-07-24 (Claude Code + the founder, the agent-teams bench —
-  [D-055](DECISIONS.md#d-055--2026-07--agent-teams--the-boundary-teams-are-for-exploration-and-review-at-a-ground-seat-lanes-remain-the-authorship-mechanism-two-risks-become-law-single-sitting-only--an-explicit-carve-out-to-d-050s-interrupt-promise--and-a-teammate-authored-diff-is-self-authored-under-no-solo-approval-the-reviewers-model-settled-by-verification-not-guess-the-founder-side-config-recorded-upholds-the-lane-law-no-solo-approval-and-one-home-gives-the-experimental-flag-its-consumer)):
-  FIRST INTENDED USE of an agent team — THE CHRONICLE LAYER. Three
-  threads (the away surface · the lane system · the information
-  system), ONE teammate each, disjoint files, a single sitting:
-  the documented best-fit shape, and it satisfies both risk rules
-  by construction (nothing spans sittings; the synthesis is
-  review-shaped, not bench authorship). The team is NOT built on
-  the [D-055](DECISIONS.md#d-055--2026-07--agent-teams--the-boundary-teams-are-for-exploration-and-review-at-a-ground-seat-lanes-remain-the-authorship-mechanism-two-risks-become-law-single-sitting-only--an-explicit-carve-out-to-d-050s-interrupt-promise--and-a-teammate-authored-diff-is-self-authored-under-no-solo-approval-the-reviewers-model-settled-by-verification-not-guess-the-founder-side-config-recorded-upholds-the-lane-law-no-solo-approval-and-one-home-gives-the-experimental-flag-its-consumer)
-  bench — that one writes the rules only.
-- 2026-07-24 (Claude Code, the agent-teams bench, found by the
-  ship §6 critic): ENFORCEMENT GAP — the single-sitting rule
-  ([HOME §Agent teams](HOME.md#agent-teams) risk (a)) says a live
-  team is finished or shut down before the sitting ends, but NO
-  RITUAL ACTS ON IT: [handoff §1.5](skills/handoff.md#15--park-the-local-lanes-full-only)
-  parks LANES and is silent about teams, and the park protocol is
-  lane-only. The rule is documented in two surfaces and enforced
-  in none. Candidate fix: one clause in
-  [handoff §1.5](skills/handoff.md#15--park-the-local-lanes-full-only)
-  — "a live team is finished or shut down, never parked; a parked
-  team does not exist." WIDENED by the founder at the D-055 gate:
-  [land](skills/land.md) needs the same clause, since a FLIGHT can
-  end with a team still running exactly as a sitting can — so the
-  follow-up bench touches both leaving rituals, not one.
-  Deliberately deferred from
-  [D-055](DECISIONS.md#d-055--2026-07--agent-teams--the-boundary-teams-are-for-exploration-and-review-at-a-ground-seat-lanes-remain-the-authorship-mechanism-two-risks-become-law-single-sitting-only--an-explicit-carve-out-to-d-050s-interrupt-promise--and-a-teammate-authored-diff-is-self-authored-under-no-solo-approval-the-reviewers-model-settled-by-verification-not-guess-the-founder-side-config-recorded-upholds-the-lane-law-no-solo-approval-and-one-home-gives-the-experimental-flag-its-consumer)
-  (ritual machinery was out of scope), and recorded here so it is
-  not silently lost.
-  — CLOSED 2026-07-24 by
-  [#225](https://github.com/wsher0901/roam/pull/225)
-  ([D-056](DECISIONS.md#d-056--2026-07--team-aware-leaving-rituals--no-ritual-lets-a-live-agent-team-outlive-the-sitting-that-made-it-handoff-shuts-the-team-down-before-parking-anything-and-captures-its-findings-into-the-record-first-land-states-the-cockpit-cannot-lead-a-team-case-once-and-routes-the-ground-seat-to-handoff-pickup-gains-the-ghost-teammate-recovery-note-and-the--block-gains-what-the-team-had-found-closes-d-055s-deferred-gap-upholds-one-home-and-the-park-protocol)),
-  which SHARPENED the candidate rather than adopting it: the
-  prohibition survives, but inside a larger duty — CAPTURE THE
-  FINDINGS FIRST, then shut down by name, then report what each
-  teammate returned. Both rituals covered as the founder's gate
-  word asked, though not symmetrically: handoff carries the
-  procedure and land carries a routing line, because a cockpit
-  does not lead a team (policy — the D-055 boundary, not a
-  platform limit).
 - 2026-07-24 (Claude Code, the team-aware-leaving bench, found by
   the ship §6 critic on its Opus pass): THE ONE UNCOVERED ROAD OUT
   of a sitting. [D-056](DECISIONS.md#d-056--2026-07--team-aware-leaving-rituals--no-ritual-lets-a-live-agent-team-outlive-the-sitting-that-made-it-handoff-shuts-the-team-down-before-parking-anything-and-captures-its-findings-into-the-record-first-land-states-the-cockpit-cannot-lead-a-team-case-once-and-routes-the-ground-seat-to-handoff-pickup-gains-the-ghost-teammate-recovery-note-and-the--block-gains-what-the-team-had-found-closes-d-055s-deferred-gap-upholds-one-home-and-the-park-protocol)

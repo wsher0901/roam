@@ -6,7 +6,7 @@ status: living
 
 # Dashboard — the state surface
 
-Stamp: 2026-07-24 · 17:28 · board correction · work PC
+Stamp: 2026-07-24 · 17:38 · handoff · work PC
 V1 5/34 · S1 2/7 · S2 3/5 · sessions: 1 main · 0 parallel
 (0 need you) · needs-you 0
 How to read this board →
@@ -35,28 +35,31 @@ frontmatter oddity is folded there too
 
 | Session | Task | State | Last push | Your move |
 |---|---|---|---|---|
-| main · control tower | — (team-aware-leaving welded; nothing open, nothing parked) · 0/0 | 🟢 | 17:28 (this repaint) | — |
+| main · control tower | — (sitting closed at handoff; nothing open, nothing parked) · 0/0 | 🟢 | 17:38 (this repaint) | — |
 
 ↳ main micro: — (no active task)
 
-The work PC picked the baton up at 13:26 on a clean floor and has
-welded THREE benches: THE LANDING SKILL
+The GROUND GOES DARK with this handoff — the work PC is halting.
+No team was led, no lane flew, no bench was open, so nothing
+needed shutting down and nothing needed parking; origin carries
+`main` only and the next pickup claims a clean floor. THREE
+BENCHES welded this sitting, each closing the gap the one before
+it opened: THE LANDING SKILL
 ([#221](https://github.com/wsher0901/roam/pull/221),
-[D-054](DECISIONS.md#d-054--2026-07--the-landing-skill--how-a-flight-ends-becomes-a-first-class-ritual-one-skill-with-two-modes-routed-by-fleet-state-retire--pause-and-transfer-the-fence-is-a-commit-so-the-resume-point-is-the-branch-tip-by-construction-wake-lock-mediated-with-its-honesty-clause-the-board-is-the-single-transfer-material-pickup-gains-the-fleet-resume-ask-and-its-cap-arithmetic-sessions-are-cattle-branches-are-the-work-charter-rule-6-becomes-a-pointer-the-effort-doctrine-moves-to-opus-5--xhigh-upholds-the-wake-lock-the-park-protocol-and-one-home-supersedes-the-opus-48-reliance-pair))
-and AGENT TEAMS
-([#223](https://github.com/wsher0901/roam/pull/223),
+[D-054](DECISIONS.md#d-054--2026-07--the-landing-skill--how-a-flight-ends-becomes-a-first-class-ritual-one-skill-with-two-modes-routed-by-fleet-state-retire--pause-and-transfer-the-fence-is-a-commit-so-the-resume-point-is-the-branch-tip-by-construction-wake-lock-mediated-with-its-honesty-clause-the-board-is-the-single-transfer-material-pickup-gains-the-fleet-resume-ask-and-its-cap-arithmetic-sessions-are-cattle-branches-are-the-work-charter-rule-6-becomes-a-pointer-the-effort-doctrine-moves-to-opus-5--xhigh-upholds-the-wake-lock-the-park-protocol-and-one-home-supersedes-the-opus-48-reliance-pair)),
+AGENT TEAMS ([#223](https://github.com/wsher0901/roam/pull/223),
 [D-055](DECISIONS.md#d-055--2026-07--agent-teams--the-boundary-teams-are-for-exploration-and-review-at-a-ground-seat-lanes-remain-the-authorship-mechanism-two-risks-become-law-single-sitting-only--an-explicit-carve-out-to-d-050s-interrupt-promise--and-a-teammate-authored-diff-is-self-authored-under-no-solo-approval-the-reviewers-model-settled-by-verification-not-guess-the-founder-side-config-recorded-upholds-the-lane-law-no-solo-approval-and-one-home-gives-the-experimental-flag-its-consumer)),
 and TEAM-AWARE LEAVING
 ([#225](https://github.com/wsher0901/roam/pull/225),
 [D-056](DECISIONS.md#d-056--2026-07--team-aware-leaving-rituals--no-ritual-lets-a-live-agent-team-outlive-the-sitting-that-made-it-handoff-shuts-the-team-down-before-parking-anything-and-captures-its-findings-into-the-record-first-land-states-the-cockpit-cannot-lead-a-team-case-once-and-routes-the-ground-seat-to-handoff-pickup-gains-the-ghost-teammate-recovery-note-and-the--block-gains-what-the-team-had-found-closes-d-055s-deferred-gap-upholds-one-home-and-the-park-protocol)),
-which closed the gap D-055 deferred.
-Origin carries `main` only; no lane flew, nothing is parked. The
-queue: THE CHRONICLE LAYER (its own chat; also the first intended
+plus two board micro-PRs
+([#224](https://github.com/wsher0901/roam/pull/224) ·
+[#227](https://github.com/wsher0901/roam/pull/227)). The queue:
+THE CHRONICLE LAYER (its own chat; also the first intended
 agent-team use — three threads, one teammate each, disjoint
-files, a single sitting) · and one small deferred road, filed in
-[IDEAS](IDEAS.md): the SUPERSEDED-SEAT self-close, the only exit
-from a sitting that runs no ritual, so a superseded tower leading
-a team would lose its findings.
+files, a single sitting) · and one deferred road filed in
+[IDEAS](IDEAS.md), the SUPERSEDED-SEAT self-close, the only exit
+from a sitting that runs no ritual.
 
 ## You are here
 
@@ -93,19 +96,21 @@ flowchart LR
 
 The live ops surface is the current ops chat, governed by the v5
 master. Its most recent external review —
-[#223](https://github.com/wsher0901/roam/pull/223) (agent teams,
-tower-authored) — is DONE, verdict PASS on `9b798b2` (ten files:
-the mandate's list plus two required by one-home; the review
-CHECKED THE VERIFICATION ORDER IN THE LOG rather than taking it on
-trust — `cb5648c` memory-only, `7aa7a4e` the first commit touching
-`reviewer.md` — and confirmed the boundary, both risks with the
-carve-out in BOTH homes, the inline supersessions with D-045 and
-D-020 left unedited under the append-only law; gates re-run
-independently). Before it,
+[#225](https://github.com/wsher0901/roam/pull/225) (team-aware
+leaving, tower-authored) — is DONE, verdict PASS on `fc4dcf7`
+(ten files: the mandate's list plus the disclosed `liftoff`
+ripple, judged REQUIRED and not drift because liftoff skips
+handoff §6; it verified capture-before-shutdown, the destination
+disambiguated away from a lane's diary, the IDEAS fallback's
+committing vehicle, the policy basis for the cockpit rule, and
+D-056 correcting D-055's reasoning FORWARD under append-only;
+gates re-run independently). Before it,
+[#223](https://github.com/wsher0901/roam/pull/223) (agent teams)
+— PASS on `9b798b2`, the review checking the alias-verification
+ORDER in the log rather than trusting it — and
 [#221](https://github.com/wsher0901/roam/pull/221) (the landing
-skill) — PASS on `3e4d1ba`, twelve files, TEMPLATE's held-row
-unification judged REQUIRED by one-home rather than merely
-allowed. Earlier reviews, all DONE:
+skill) — PASS on `3e4d1ba`. Earlier reviews, all DONE:
+Earlier reviews, all DONE:
 [#218](https://github.com/wsher0901/roam/pull/218) (PASS on
 `bd2f6ef`) · [#216](https://github.com/wsher0901/roam/pull/216)
 (PASS on `5f4be89`) ·
