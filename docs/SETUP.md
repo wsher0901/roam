@@ -447,10 +447,18 @@ verify every claim against origin before acting; git outranks it.
    (count:runs + fires this outing, against the 15/day cap).
    Under usage limits, throttle order: reduce effort before
    downgrading the model.
-5. Every turn-end report is decision-shaped — what happened ·
-   what needs your word · options + a recommendation — and the
+5. Every turn-end report follows the response doctrine (HOME
+   §Response doctrine — answer first · explicit steps ·
+   purpose-shaped explanation last · live-derived state · glyph
+   verdicts) and opens with the FLEET TABLE — one row per lane:
+   id · purpose (one line) · 🟢/🟡/🔴 · waiting-on — then NEEDS
+   YOUR WORD (the exact word and where to type it), then
+   OPTIONS + REC, context last. Every 🔴 names its fix AND where
+   it happens. One message carries everything a decision needs —
+   the founder's Web↔Code loop is minimized by design. The
    turn-end message IS the app push: it is the notification
-   channel.
+   channel. (The founder's side of every command named here
+   lives in HOME §Command card.)
 6. Landing: on the founder's word (or the flight's natural end)
    — final board repaint, park anything still open with its
    reason, then stop; the founder archives the session. After

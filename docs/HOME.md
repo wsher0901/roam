@@ -843,6 +843,75 @@ Sources:
 [the ledger](history/README.md#the-ledger)
 [handoff §4](skills/handoff.md)
 
+## Response doctrine
+
+How every surface speaks to the founder — ONE standard, this its
+one home
+([D-052](DECISIONS.md#d-052--2026-07--response-doctrine--one-standard-for-every-surface-speaking-to-the-founder-answer-first-explicit-steps-purpose-shaped-explanation-live-derived-state-glyph-verdicts-the-command-card-the-fleet-table-report-the-ritual-status-templates-web-instructions-v5-ships-retires-the-v4-paste-block-loop-master-upholds-d-046s-cc-direct-doctrine-and-the-derivation-law)).
+Rituals and charters REFERENCE this section; none copies it.
+
+(a) ANSWER FIRST. A question's first line is its answer; a task's
+first line is the exact next act. Everything else follows.
+
+(b) STEPS ARE EXPLICIT. Never "give the word" — state the word
+itself and where it goes: 'paste merge into the Claude Code
+session'. Every prompt handed to the founder carries three
+one-liners: WHERE it goes · WHAT it is · WHY (its purpose).
+
+(c) EXPLANATION IS PURPOSE-SHAPED AND LAST. "To accomplish X, ..."
+— never an unanchored list of acts. Concise by law: the founder
+reads fast to decide fast; technicalities compress to one line or
+link to the record instead of flooding the reply.
+
+(d) STATE IS DERIVED LIVE. Any status or GitHub claim comes from
+origin at answer time (the derivation law, restated as style).
+
+(e) GLYPH VERDICTS. 🟢/🟡/🔴 lead every status item; every 🔴
+names the fix AND where it happens.
+
+Sources:
+[D-052](DECISIONS.md#d-052--2026-07--response-doctrine--one-standard-for-every-surface-speaking-to-the-founder-answer-first-explicit-steps-purpose-shaped-explanation-live-derived-state-glyph-verdicts-the-command-card-the-fleet-table-report-the-ritual-status-templates-web-instructions-v5-ships-retires-the-v4-paste-block-loop-master-upholds-d-046s-cc-direct-doctrine-and-the-derivation-law)
+[LAWS §Knowledge & tracking](LAWS.md#knowledge--tracking)
+
+## Command card
+
+The platform commands the founder uses — one line each: what it
+does · when to reach for it. Rituals point here; none re-lists.
+
+- `/tasks` — lists the cloud sessions from any terminal; press `t`
+  on one to teleport in. Reach for it to find a flight from any
+  later sitting.
+- `claude --teleport [id]` / `/teleport` — pulls a cloud session
+  into this terminal. Reach for it to drive a flight from the
+  desk. (Execution RELOCATES to this machine —
+  [D-049](DECISIONS.md#d-049--2026-07--gh-second-path--gh-api-rest-through-the-github-proxy-is-the-cockpits-second-api-path-a-connector-flap-stops-costing-command-r2-gains-the-automatic-gh-rung-self-id-by-session-env-amends-d-048-corrects-the-193-api-map-upholds-d-047-and-verify-before-rely)'s
+  probe finding: a teleported session is a local session from
+  then on.)
+- `/mcp` — retries a failed connector in the current session; the
+  founder rung of the charter ladder's R2. Reach for it when a
+  session reports CONNECTOR DOWN.
+- `/compact` · `/context` — context management: compact the
+  conversation · inspect what fills it. Reach for them when a
+  long session slows or forgets.
+- `/schedule` — creates and manages routines from the CLI. Reach
+  for it to stand up recurring cloud runs.
+- `/remote-env` — picks the default cloud environment. Reach for
+  it if a cloud birth lands in the wrong environment.
+- `claude --cloud "<prompt>"` — births a cloud session from a
+  terminal; rung 2's compose-and-hand shape
+  ([liftoff §6](skills/liftoff.md#6--ledger-handoff--fire-the-cockpit)).
+- Esc — interrupts the running turn, safe everywhere except the
+  weld's atomic commit;
+  [D-050](DECISIONS.md#d-050--2026-07--session-lifecycle--closed--dead-the-close-locks-wall-softens-to-injected-read-only-doctrine-interrupt-capture-is-standing-format-the-claude-residue-sweep-is-pickup-hygiene-ideas-is-an-inbox-not-an-archive-amends-the-d-046-era-close-wall-design-upholds-the-park-protocol-and-no-solo-approval)'s
+  ⏸ capture catches what was in flight.
+- `/model` · `/effort` · `/rename` — argument forms work in cloud
+  sessions (e.g. `/model opus`); reach for them to retune or
+  retitle a flight in place.
+
+Sources:
+[liftoff §7](skills/liftoff.md#7--close)
+[SETUP §cloud accounts](SETUP.md#once-and-done--cloud-accounts)
+
 ## Where information goes
 One home per class. New information APPENDS there via the named
 vehicle; changed information UPSERTS in place via the same writer —

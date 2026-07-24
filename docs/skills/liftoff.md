@@ -223,14 +223,26 @@ Sources:
 [Cockpit charter — SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts)
 
 ## 7 · Close
-Report "N airborne, M parked · cockpit fired (<rung> · exit
-<code>) · self-seat pending — safe to walk away." Liftoff no
-longer reports a cockpit URL
+The close report follows the response doctrine
+([HOME §Response doctrine](../HOME.md#response-doctrine)) in the
+founder's status template:
+- WORKING ON — one line: what this liftoff dispatched.
+- WHAT HAPPENED — context → narrative → issue → resolution, short
+  sentences, ending "N airborne, M parked · cockpit fired
+  (<rung> · exit <code>) · self-seat pending — safe to walk
+  away."
+- SUPPLEMENTAL — parallel Web or Design work, if any (the step-2
+  paste's threads).
+- PARALLEL/RECENT FLIGHTS — one line per lane: 🟢 all good · ⏸
+  resume needed; every ⏸ carries the exact resume word and where
+  it goes.
+Liftoff no longer reports a cockpit URL
 ([D-051](../DECISIONS.md#d-051--2026-07--self-seat-birth--liftoff-fires---cloud-blind-and-the-cockpit-seats-itself-by-its-env-derived-self-url-the-console-attach-launcher-is-retired-amends-d-047s-rung-1-mechanics-as-corrected-by-193-upholds-d-049-and-board-governs))
 — the cockpit's greeting push and its self-seat repaint carry
-it. At the tower, `/tasks` lists the cloud sessions
-and `t` teleports into one — the flight stays reachable from any
-later terminal. Then, as the ritual's LAST act, write
+it. The founder's commands for reaching the flight afterwards —
+`/tasks`, teleport, and kin — live in
+[HOME §Command card](../HOME.md#command-card); the close report
+points there rather than re-listing. Then, as the ritual's LAST act, write
 `.claude/session-closed` with content "Closed at liftoff · ledger
 #<N> · <date> · <seat>" — the close-lock. CLOSED ≠ DEAD: a closed
 session remains READ-ONLY CONVERSATIONAL — addressed after its

@@ -78,33 +78,37 @@ Sources:
 [handoff §4–§5](handoff.md)
 
 ## 5 · Render the sit-down summary (exactly this shape)
-- ⏸ FIRST, above everything: whenever any memory's Status reads
+The briefing follows the response doctrine
+([HOME §Response doctrine](../HOME.md#response-doctrine)); the
+shape below is the founder's status template.
+- ⏸ FIRST, above everything
+  ([D-050](../DECISIONS.md#d-050--2026-07--session-lifecycle--closed--dead-the-close-locks-wall-softens-to-injected-read-only-doctrine-interrupt-capture-is-standing-format-the-claude-residue-sweep-is-pickup-hygiene-ideas-is-an-inbox-not-an-archive-amends-the-d-046-era-close-wall-design-upholds-the-park-protocol-and-no-solo-approval)):
+  whenever any memory's Status reads
   interrupted, LEAD the briefing with one line per interrupted
   task, drawn from its ⏸ capture block
   ([TEMPLATE](../memory/TEMPLATE.md)) —
-  "⏸ INTERRUPTED: <one line> — continue?" — before the ruled
-  header renders.
+  "⏸ INTERRUPTED: <one line> — continue?" — before anything else
+  renders.
 - Ruled header: "── pickup · <date> · <seat> ──". Caption line:
-  "Last handoff: <FULL | liftoff> · <date HH:MM> · <seat>". Then
-  THE EXIT TABLE — one row per task parked or lifted at that
-  handoff: | Task you left | At exit | Now | Your move |. "Now" is
-  the current Status-vocabulary state + last-push age; if nothing
-  was left, one row: "nothing parked · nothing lifted". Repaint,
-  self-heal, or hook notes append as small lines under the table,
-  only if any exist.
-- RECENT SUMMARY — a short plain paragraph: what the founder
-  actually did last sitting and where it stopped, rebuilt from the
-  main task's memory Story plus the handoff note. Short sentences,
-  everyday words, written for a tired reader.
-- PENDING ISSUES — anything that went wrong or was left worrying
-  (memories' Pending-issues + the handoff note), each with its
-  current standing. If none, exactly: "No issues from last
-  sitting."
-- OPEN CHAT + DESIGN DISCUSSION — mirror the board's section:
-  verbatim titles bold in quotes, surface tag, one topic line,
-  next step each.
-- NEEDS YOUR ATTENTION — the board's Needs-you verbatim; any 🔴 or
-  ready rows from the exit table fold in at the top.
+  "Last handoff: <FULL | liftoff> · <date HH:MM> · <seat>".
+- WORKING ON — the bench this sitting resumes (or "nothing
+  open"); its first line is the exact next act.
+- WHAT HAPPENED — the last sitting rebuilt from the main task's
+  memory Story plus the handoff note: context → narrative →
+  issue → resolution. Short sentences, everyday words, written
+  for a tired reader. Anything that went wrong or was left
+  worrying rides here with its current standing — or exactly:
+  "No issues from last sitting." Repaint, self-heal, or hook
+  notes append as small lines here, only if any exist.
+- SUPPLEMENTAL — parallel Web or Design work, if any: verbatim
+  chat titles bold in quotes, surface tag, one topic line, next
+  step each.
+- PARALLEL/RECENT FLIGHTS — one line per parked lane, live cloud
+  flight, or task left at the last handoff: 🟢 all good · ⏸
+  resume needed (current Status-vocabulary state + last-push
+  age); every ⏸ carries the exact resume word and where it goes.
+  The board's Needs-you folds in here glyph-led, every 🔴 naming
+  the fix AND where it happens.
 - NEXT — Now: one action · Parallel: one or "—" (the pacing law).
 No ritual self-narration ("baton claimed" and kin stay silent
 mechanics). Everything else lives on the board
@@ -112,5 +116,6 @@ mechanics). Everything else lives on the board
 claim check happens in conversation before any task starts.
 
 Sources:
+[HOME §Response doctrine](../HOME.md#response-doctrine)
 [TEMPLATE — the Status vocabulary](../memory/TEMPLATE.md)
 [pacing law — LAWS §Workflow](../LAWS.md#workflow-non-negotiable)
