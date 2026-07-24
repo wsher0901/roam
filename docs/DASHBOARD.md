@@ -14,13 +14,15 @@ How to read this board →
 
 ## Needs you
 
-Nothing. The board is clear — a first for this stretch: the
-cockpit routine box was re-saved 07-24 post-D-049 (founder act,
-cleared on the founder's word at
-[#211](https://github.com/wsher0901/roam/pull/211)'s mandate),
-and the home-seat debt cleared earlier this sitting (claude
-2.1.218 · the `COCKPIT_` pair masked-verified) — BOTH SEATS FULLY
-ARMED for `fire:cockpit` and the summon self-rescue.
+1. 🟡 Re-save the cockpit routine box from the updated charter
+   master — it gained the SELF-SEAT duty and the stray's
+   factual-note close at
+   [#213](https://github.com/wsher0901/roam/pull/213)'s weld
+   (since 07-24).
+   → [SETUP §cloud accounts](SETUP.md#once-and-done--cloud-accounts)
+
+Both seats stay FULLY ARMED for `fire:cockpit` and the summon
+self-rescue (the seat debts cleared 07-23).
 
 The nine open engine questions stay parked in
 [ENGINE §12](ENGINE.md#12-open-register) until
@@ -37,17 +39,18 @@ frontmatter oddity is folded there too
 
 ↳ main micro: — (no active task)
 
-Ground state, nothing in flight. THREE benches welded this
+Ground state, nothing in flight. FOUR benches welded this
 sitting — the currency audit
 ([#204](https://github.com/wsher0901/roam/pull/204)), the gh
 second path ([#207](https://github.com/wsher0901/roam/pull/207),
-D-049), and session lifecycle
-([#211](https://github.com/wsher0901/roam/pull/211), D-050:
-closed ≠ dead · interrupt capture · the residue sweep · IDEAS
-compaction). The queue, founder-stated and recorded in
-[IDEAS](IDEAS.md): SELF-SEAT BIRTH (its own small bench, next) ·
-[WEB-INSTRUCTIONS](WEB-INSTRUCTIONS.md) v5 (the master rewrite,
-named by [#204](https://github.com/wsher0901/roam/pull/204)) ·
+D-049), session lifecycle
+([#211](https://github.com/wsher0901/roam/pull/211), D-050), and
+self-seat birth
+([#213](https://github.com/wsher0901/roam/pull/213), D-051: rung
+1 fires blind, the cockpit seats itself — THE LIVE TEST rides the
+next real flight by the founder's word). The queue: the
+RESPONSE-DOCTRINE bench (D-052 — its STEP 0 gate now passes;
+[WEB-INSTRUCTIONS](WEB-INSTRUCTIONS.md) v5 rides inside it) ·
 THE CHRONICLE LAYER (after v5, its own chat).
 
 ## You are here
@@ -85,12 +88,14 @@ flowchart LR
 
 The live ops surface is the current ops chat (title unrecorded at
 the shakedown-audit weld). Its most recent external review —
-[#211](https://github.com/wsher0901/roam/pull/211) (session
-lifecycle, tower-authored) — is DONE, verdict PASS on `edc0c9a`
-plus the pure-append D-050 head `1ffebdf` (nine files, SETUP
-zero-diff, the wall hook read line-by-line, the gates re-run
-independently), delivered inline with the founder's conditioned
-merge word. Earlier reviews, all DONE:
+[#213](https://github.com/wsher0901/roam/pull/213) (self-seat
+birth, tower-authored) — is DONE, verdict PASS on `342e344`
+(seven files, rung 1 verified blind, the stray's factual-note
+close verified in every home, the gates re-run independently),
+delivered inline with the founder's merge word and the critic's
+tombstone correction APPROVED. Earlier reviews, all DONE:
+[#211](https://github.com/wsher0901/roam/pull/211) (PASS on
+`edc0c9a` + `1ffebdf`) ·
 [#207](https://github.com/wsher0901/roam/pull/207) (PASS on
 `2b97a86`) · [#204](https://github.com/wsher0901/roam/pull/204)
 (PASS on `614e0f8`) ·
