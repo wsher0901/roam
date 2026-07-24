@@ -417,7 +417,12 @@ verify every claim against origin before acting; git outranks it.
    — shipped as a pickup-class micro-PR (the DASHBOARD-only
    carve-out). If a FOREIGN live cockpit seat-stamp is present
    instead, rule 7 governs — you are the stray: push nothing,
-   tombstone, stop. Failure shape, known to both actors: a birth
+   write nothing; your final message is a short factual note
+   naming the live cockpit from the board ("A live cockpit
+   already holds this board: <its url>. I am a redundant birth —
+   archive me."), NOT R4b's landed-superseded script, which
+   presumes a flight you never had. Then stop.
+   Failure shape, known to both actors: a birth
    that died before Claude started left no URL anywhere and sent
    no greeting — the MISSING push is the founder's signal
    (checks, in order: /tasks at any terminal · the

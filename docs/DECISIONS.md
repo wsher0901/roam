@@ -1805,7 +1805,10 @@ derivation): a cockpit finding "self-seat pending" — or no live
 cockpit — on the board repaints it seating itself with its
 env-derived URL, as a pickup-class DASHBOARD-only micro-PR. A
 FOREIGN live cockpit seat-stamp instead means rule 7 governs: the
-new session is the stray — push nothing, tombstone, stop.
+new session is the stray — push nothing, write nothing, close with
+a short factual note naming the live cockpit (NOT R4b's
+landed-superseded script, which presumes a flight the stray never
+had), stop.
 (3) THE CONSOLE-ATTACH LAUNCHER IS RETIRED — the component is
 DELETED from the recipe, not maintained. Disproof and retirement
 dated: the attach-and-read shape flew 2026-07-22 and again

@@ -69,7 +69,11 @@ deriving state repaints the board seating itself by
 `https://claude.ai/code/${CLAUDE_CODE_REMOTE_SESSION_ID/#cse_/session_}`
 as a pickup-class DASHBOARD-only micro-PR. A FOREIGN live cockpit
 stamp instead means rule 7: the new session is the stray — push
-nothing, tombstone, stop. A birth that dies before Claude starts
+nothing, write nothing, close with a short factual note naming
+the live cockpit, stop. (The critic sharpened this at the gate:
+"tombstone" would have read as R4b's landed-superseded script — a
+backwards story for a stray that never flew; the short-note shape
+replaced the word in all three homes before the flip.) A birth that dies before Claude starts
 sends no greeting — the MISSING push is the signal, and the
 founder's checks run `/tasks` → the claude.ai/code list → retry.
 The pending row goes stale honestly; an honest stale row beats a

@@ -68,7 +68,10 @@ under us.
    cockpit), repaint it seating YOURSELF — the env-derived URL,
    the D-049 line — as a pickup-class micro-PR (DASHBOARD-only
    carve-out). A FOREIGN live cockpit seat-stamp instead → rule 7
-   governs: you are the stray — push nothing, tombstone, stop.
+   governs: you are the stray — push nothing, write nothing, close
+   with a short factual note naming the live cockpit (not R4b's
+   landed-superseded script — clarified at the gate on the
+   critic's finding), stop.
 3. **The failure shape, in both homes** (liftoff §6 + the
    charter): a birth that dies before Claude starts leaves no URL
    anywhere and sends no greeting — the MISSING push IS the
@@ -135,6 +138,11 @@ response-doctrine bench (D-052) opens once this welds — its STEP
 ## Deviations
 
 - The rung-1 grep's single surviving "console" hit sits inside D-051's own anchor slug — the unavoidable-and-harmless class [#204](https://github.com/wsher0901/roam/pull/204) adjudicated for the D-046 slug; recorded rather than worked around.
+- The critic caught that "tombstone" in the collision case would
+  read as R4b's landed-superseded script — a factually backwards
+  story for a fresh stray that never flew. Clarified in all three
+  homes before the flip: the stray closes with a short factual
+  note naming the live cockpit, then stops.
 - Everything else landed as specified.
 
 ## Open questions
