@@ -1925,3 +1925,55 @@ of mechanical scope).
 · [WEB-INSTRUCTIONS](WEB-INSTRUCTIONS.md) (v4 → v5) ·
 [D-046](#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
 (upheld: CC-direct finally reaches the Web master) · this entry.
+
+## D-053 — 2026-07 — guardrail audit — the harness found ALREADY AT BEST PRACTICE against Anthropic's guidance; two promotions ship (the verification loop as a copy-runnable block in LAWS, two stub descriptions sharpened); five alternatives rejected with reasons (upholds the routing law and one-home)
+
+**Decision:** the founder's maximum-depth audit of the whole
+governing layer — [LAWS](LAWS.md) · [HOME](HOME.md) · the
+[SETUP §cloud accounts](SETUP.md#once-and-done--cloud-accounts)
+charter · all nine `.claude/skills/` stubs · all three
+`.claude/hooks/` · the reviewer agent · settings · `AGENTS.md` —
+read against Anthropic's guidance (the always-loaded file
+governs · verification loops multiply quality · sparse emphasis
+outperforms shouting) found the harness ALREADY COMPLIANT: marker
+density 1–7 per file, thin single-source stubs, mechanics living
+in hooks (including the injected pickup directive and the
+session-end gone-guard), and the constitution always-loaded via
+the root CLAUDE.md import. This entry is the audit's record; the
+decision is the audit's only two real improvements:
+(1) THE VERIFICATION LOOP, PROMOTED — the CI-mirror sentence in
+[LAWS §Workflow](LAWS.md#workflow-non-negotiable)'s
+before-saying-done bullet becomes a labeled, ordered,
+copy-runnable block (`check:links` → `check:ledger` →
+`check:memory` → `lint` + `format:check` → `test` + `build`),
+the bullet's sync-first and Actions-green clauses kept around
+it. Wording-only; zero semantic change.
+(2) TWO STUB DESCRIPTIONS SHARPENED, one line each — the liftoff
+stub gains its condition and boundary (fires when the machine is
+going dark; watch-from-phone intent belongs to go-remote, never
+liftoff), the ship stub gains its moment (fires the moment the
+payload is complete and the CI mirror is green, BEFORE any "done"
+claim in conversation). No other stub changed: the audit read all
+nine and the rest are precise — recall the house exemplar.
+**Why:** verification loops earn their promotion by being run,
+and a copy-runnable block is run more reliably than prose; a
+stub's description is its trigger surface, and the two sharpened
+lines close the two real mis-fire risks the audit found (liftoff
+vs go-remote intent, ship-before-done timing). Everything else
+scored at best practice — the proof belongs on the record so no
+future audit re-derives it.
+**Rejected, each with its reason:** a separate BRIEF.md and
+`.claude/rules/` — one always-loaded home; the founder's routing
+law · a marker-economy pass — density already sparse, churn
+without gain · duplicating [HOME](HOME.md)'s routing table into
+LAWS — breaks one-home · a session-shape law line — the
+session-start hook already injects the directive every session ·
+settings/hook changes — the deny list and existing hooks cover
+the mechanical cases.
+**Affects:**
+[LAWS §Workflow](LAWS.md#workflow-non-negotiable) (the block) ·
+`.claude/skills/liftoff/SKILL.md` + `.claude/skills/ship/SKILL.md`
+(the two descriptions) · [IDEAS](IDEAS.md) (one line: the
+~300-char decide-anchor links in LAWS cost context and vault
+readability every session — a weave-rule-compatible shortening
+pattern is a future consideration, not now) · this entry.
