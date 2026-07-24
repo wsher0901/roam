@@ -12,6 +12,16 @@ shipped: 2026-07-17 16:16
 
 # clerk-notify — the clerk's standing watch
 
+> **SUPERSESSION NOTE — added 2026-07-23.** The clerk was RETIRED
+> 2026-07-22 and its routine deleted
+> ([D-046](../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock),
+> executed by [#197](https://github.com/wsher0901/roam/pull/197)),
+> so the standing watch described below can no longer be armed.
+> What duty 6 proved lives on: it is the ancestor of the cockpit
+> charter's turn-end report — the report IS the notification
+> ([SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts)).
+> Everything below is RECORD, not instruction.
+
 **Links:**
 [SETUP §Staged](../SETUP.md#staged--turns-on-when-its-stage-opens)
 · [SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts)

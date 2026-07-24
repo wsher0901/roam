@@ -12,6 +12,25 @@ shipped: 2026-07-21 14:56
 
 # cloud-born-cockpit — the cockpit's birth vehicle becomes `claude --cloud`
 
+> **SUPERSESSION NOTE — added 2026-07-23.** The D-047 decision this
+> spec carries STANDS, but two recipes below were DISPROVEN in
+> flight on 2026-07-22 and must not be followed: (1) the `winpty`
+> pty wrapper with output captured to file — it cannot run, the
+> wrapper refuses the moment either of its ends is redirected; the
+> shape of record is the hidden console with NO redirection,
+> attach-and-read afterwards
+> ([liftoff §6](../skills/liftoff.md#6--ledger-handoff--fire-the-cockpit));
+> (2) "the roam cloud environment's setup script must install
+> `gh`" — the live environment is named `Default`, has no `gh` BY
+> DESIGN (a cloud session gets a session-scoped GitHub MCP
+> injection instead), and the install fails the whole setup script
+> with exit 100
+> ([SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts)).
+> Corrections of record:
+> [flight-hardening](flight-hardening.md) and that SETUP section.
+> Read the working mechanics from liftoff §6, never from here —
+> everything below is RECORD of the decision and its evidence.
+
 **Links:** [DECISIONS](../DECISIONS.md) ·
 [SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts) ·
 [liftoff](../skills/liftoff.md) ·
