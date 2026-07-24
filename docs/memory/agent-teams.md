@@ -1,17 +1,19 @@
 ---
 type: memory
 id: agent-teams
-updated: 2026-07-24 16:04 · birth · work PC
+updated: 2026-07-24 16:25 · ship §4 · work PC
 ---
 
 # agent-teams — where teams fit, and where they must not (D-055)
 
 ## Status
 
-bench ready — birthed 2026-07-24 16:04 by the control tower at the
-work PC, which flies it itself (no lane; tower-authored, so the
-no-solo-approval law puts an external Web review before the
-founder's word). Branch `docs/agent-teams`, born from `fa38619`
+complete, awaiting merge — payload written and the full gate run
+green locally on 2026-07-24 at the work PC; two critic passes run
+and every finding repaired. PR
+[#223](https://github.com/wsher0901/roam/pull/223). Tower-authored,
+so the no-solo-approval law puts an external Web review before the
+founder's word. Branch `docs/agent-teams`, born from `fa38619`
 with origin carrying `main` alone and zero open PRs.
 
 ## What this task is
@@ -28,13 +30,21 @@ built here. Contract: [the spec](../specs/agent-teams.md).
 
 ## Pending issues
 
-None yet.
+- ENFORCEMENT GAP, deliberately deferred and filed to
+  [IDEAS](../IDEAS.md) rather than left silent: risk (a) says a
+  team is finished or shut down before the sitting ends, but no
+  ritual acts on it — [handoff §1.5](../skills/handoff.md#15--park-the-local-lanes-full-only)
+  parks LANES and says nothing about a live team, and the park
+  protocol is lane-only. The rule is documented in two places and
+  enforced in none. Ritual machinery is out of this bench's
+  scope, so the clause is queued, not smuggled in.
+- The reviewer's new model takes effect for sessions started
+  AFTER the merge — see the story's note on the first critic run.
 
 ## Left / idle
 
-Everything: the bench is birthed, the payload is unwritten. Order
-of work is the spec's Plan 1–7, with step 4's verification
-recorded here BEFORE `.claude/agents/reviewer.md` is touched.
+Nothing. The payload is complete; what remains is the external
+Web review of this tower-authored diff, then the founder's word.
 
 ## The story
 
@@ -54,11 +64,15 @@ spawned from a subagent definition honors that definition's
 applied; teammates load CLAUDE.md and project context but not the
 lead's conversation history; `/resume` and `/rewind` do not
 restore in-process teammates and a resumed lead may message
-teammates that no longer exist. Two facts the page adds, both
+teammates that no longer exist. Three facts the page adds, all
 load-bearing for this bench: "One team per session" and "No
 nested teams" — which independently justify the cockpit
-rejection — and split-pane mode is explicitly unsupported in
-Windows Terminal, which is what both seats run.
+rejection — split-pane mode explicitly unsupported in Windows
+Terminal, which is what both seats run; and on permissions,
+"Teammates start with the lead's permission settings", teammate
+prompts surface in the lead session, and "a teammate that was
+denied an action cannot relay it to another teammate to bypass
+the check" — the sentence SETUP's permission line rests on.
 
 THE ALIAS ANSWER, recorded BEFORE `.claude/agents/reviewer.md`
 was touched — the mandate's order, kept. `claude update` reported
@@ -104,15 +118,41 @@ Esc line — because that line is where a founder meets the promise
 scroll apart. The sentence that ties them: an interrupt is safe
 for your session and fatal to your teammates.
 
-ONE RIPPLE BEYOND THE MANDATE'S FILE LIST, disclosed rather than
-smuggled. parallel-lanes §Vehicles carried a second copy of the
-team rules — "lead Fable/Opus, at most 4 Sonnet teammates". Once
-teammates ride the LEAD's model by config, that line is stale AND
-a one-home violation, and it sits in the manual consulted before
-every dispatch, so it was reduced to a pointer. Same class as the
-TEMPLATE row on the previous bench, and taken for the same
-reason: the retroactivity law requires the backfill in the PR
-that changes the convention.
+TWO COPIES OF THE OLD TEAM RULE HAD TO GO, and I only found one
+of them myself. The one I found:
+[parallel-lanes §Vehicles](../skills/parallel-lanes.md#vehicles)
+carried "lead Fable/Opus, at most 4 Sonnet teammates" — stale AND
+a one-home violation once teammates ride the lead's model, sitting
+in the manual consulted before every dispatch, so it was reduced
+to a pointer. That is the one ripple beyond the mandate's file
+list, disclosed rather than smuggled; same class as the TEMPLATE
+row on the previous bench, and taken for the same reason (the
+retroactivity law requires the backfill in the PR that changes the
+convention).
+
+THE ONE THE CRITIC FOUND, and it was the better catch: SETUP's own
+D-045 Hands rule still said "lead + 2–4 Sonnet 5 teammates" —
+EIGHT LINES BELOW the text this bench added to retire exactly that
+default, inside a file I was already editing. I had swept other
+files for duplicates and not the one under my hands. Fixed in
+place with the supersession named inline, so the founder's
+verbatim rule keeps its provenance while the retired clause stops
+contradicting its own file; D-055's Affects line now names both
+copies. Second finding, also taken: two bare `D-055` mentions in
+the IDEAS lines, a weave-rule miss `check:links` cannot catch
+because it verifies resolution, not completeness.
+
+THE CRITIC RAN AS SONNET 5 THE FIRST TIME — a live finding about
+the change this bench just made. `.claude/agents/reviewer.md` now
+says `model: opus`, but the first critic run reported itself as
+`claude-sonnet-5`: the agent definition this session holds was
+loaded at session start, when the file still said `sonnet`, and
+editing the file mid-session does not re-cut it. So the new model
+takes effect for sessions started after the merge, not for the
+session that makes the change. To satisfy the mandate's
+verification honestly rather than by assertion, the critic was
+re-run with an explicit model override, and both runs are
+reported.
 
 ## Where to look
 

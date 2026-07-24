@@ -2130,7 +2130,15 @@ setup, since teammates start with the lead's and the deny rails
 therefore cover the team; and the
 `CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS` flag, armed in
 `.claude/settings.json` with nothing reaching for it, now has a
-documented consumer.
+documented consumer. RETIRED BY THIS CLAUSE, named so the forward
+pointer exists: the Sonnet-5 teammate default recorded in
+[D-045](#d-045--2026-07--hands-doctrine-solo--subagents--agent-team--lanes--the-litmus-is-one-bench-many-hands-vs-many-benches-vs-read-only-upholds-d-020-and-d-041)'s
+Hands doctrine ("lead + 2–4 Sonnet 5 teammates") and in
+[D-020](#d-020--2026-07--parallel-lanes-v2-native-lanes-replace-hand-built-orchestration)'s
+team rule ("teammates Sonnet, max 4") — teammates ride the LEAD's
+model by config. Those entries stand unedited per the log's
+append-only law; this is their forward pointer, and the live copy
+in SETUP carries the supersession inline.
 **Why:** the flag was already on, so the question was not whether
 teams would be used but whether their first use would be governed.
 The workshop's parallelism is already solved for authorship —
@@ -2159,8 +2167,9 @@ convenience.
 its Command card carve-out clause ·
 [LAWS §Workflow](LAWS.md#workflow-non-negotiable) (one clause) ·
 [SETUP §Models & effort](SETUP.md#once-and-done--cloud-accounts)
-(the founder config bullet; the retired Sonnet-teammate default;
-the reviewer's line) ·
+(the founder config bullet; the retired Sonnet-teammate default in
+BOTH its copies — the Models & effort line and the D-045 Hands
+rule's agent-team clause; the reviewer's line) ·
 [parallel-lanes §Vehicles](skills/parallel-lanes.md#vehicles)
 (the stale team entry becomes a pointer) ·
 `.claude/agents/reviewer.md` (`model: opus`) ·

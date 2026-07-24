@@ -990,8 +990,10 @@ interrupt is safe for your session and fatal to your teammates.
 **(b) A TEAMMATE-AUTHORED DIFF IS SELF-AUTHORED.** A teammate is
 a full session pushing as the founder, so it earns no independent
 review by existing: the no-solo-approval law applies unchanged —
-external Web review before the founder's word
-([LAWS §Workflow](LAWS.md#workflow-non-negotiable)).
+external Web review before the founder's word. The law's home is
+[LAWS §Workflow](LAWS.md#workflow-non-negotiable); it is restated
+here deliberately, because this is where teams are read and a
+rule met one scroll from its exception is a rule missed.
 
 MODEL & EFFORT, the trap worth knowing: teammates do NOT inherit
 the lead's `/model` — that is a `/config` setting, and a

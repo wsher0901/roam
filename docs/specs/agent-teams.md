@@ -5,7 +5,7 @@ title: Agent teams — where they fit this workshop and where they must not ([D-
 status: open
 stage: workshop
 branch: docs/agent-teams
-pr: —
+pr: 223
 opened: 2026-07-24
 shipped: —
 ---
@@ -80,44 +80,78 @@ flown here.
 [the memory](../memory/agent-teams.md) ·
 [DASHBOARD](../DASHBOARD.md) via the ship tail.
 
-ONE ripple beyond that list, disclosed rather than smuggled and
-called out at THE GATE:
-[parallel-lanes §Vehicles](../skills/parallel-lanes.md#vehicles)
-carried a SECOND, now-contradicting copy of the team rules ("lead
-Fable/Opus, at most 4 Sonnet teammates"). Once teammates ride the
-lead's model, that line is both stale and a one-home violation
-sitting in the manual consulted before every dispatch, so it
-becomes a pointer to [HOME §Agent teams](../HOME.md#agent-teams).
-The retroactivity law requires the backfill in this PR.
+THREE stale copies of the old team rule had to be repaired beyond
+that list — each disclosed rather than smuggled, all called out at
+THE GATE, all required by the retroactivity law and by
+[decide §2](../skills/decide.md)'s ripple checklist ("update or
+mark superseded any spec the pivot invalidates"):
+
+1. [parallel-lanes §Vehicles](../skills/parallel-lanes.md#vehicles)
+   — "lead Fable/Opus, at most 4 Sonnet teammates", in the manual
+   consulted before every dispatch. Reduced to a pointer.
+2. [SETUP](../SETUP.md)'s D-045 Hands rule — "lead + 2–4 Sonnet 5
+   teammates", eight lines below the text retiring that default,
+   in a file already being edited. Superseded inline, provenance
+   kept.
+3. [reviewer-subagent](reviewer-subagent.md) — "Model + effort —
+   Sonnet 5 · high", recorded as a resolved founder decision and
+   pointed at from SETUP as the critic's frame, so it contradicted
+   `.claude/agents/reviewer.md` directly. Superseded inline.
+
+Copies 2 and 3 were found by the critic, not by me.
 
 ## Done means
 
-- [ ] The boundary is in HOME, with its reasons, and says plainly
+- [x] The boundary is in HOME, with its reasons, and says plainly
       that teams never author a bench, never merge, never run a
-      ritual.
-- [ ] Both risks are present AND cross-referenced — (a) against
+      ritual. (Critic-confirmed on both passes.)
+- [x] Both risks are present AND cross-referenced — (a) against
       D-050's interrupt promise as an explicit carve-out, (b)
-      against the no-solo-approval law.
-- [ ] The `opus`-alias answer is recorded VERBATIM in the memory,
+      against the no-solo-approval law. (Carve-out written twice
+      on purpose: the full statement in §Agent teams and a clause
+      on the Command card's Esc line, where the promise is read.)
+- [x] The `opus`-alias answer is recorded VERBATIM in the memory,
       and the recording commit precedes the `reviewer.md` edit.
-- [ ] `reviewer.md` carries the chosen model with its reason;
-      `effort: high` retained.
-- [ ] SETUP carries the founder-side config, including the
+      (Commit `cb5648c`, pushed before the edit.)
+- [x] `reviewer.md` carries the chosen model with its reason;
+      `effort: high` retained. (`model: opus` — the alias, since
+      it resolves to Opus 5; no brittle pin.)
+- [x] SETUP carries the founder-side config, including the
       Windows Terminal constraint and the flag's resolved
       no-consumer note.
-- [ ] `check:links` · `check:ledger` · `check:memory` green.
-- [ ] Full CI mirror green locally AND the pushed head's Actions
-      run green.
-- [ ] [ship §6](../skills/ship.md) critic runs ON ITS NEW MODEL;
-      the report names which model ran it.
+- [x] `check:links` · `check:ledger` · `check:memory` green.
+      (2026-07-24, work PC.)
+- [x] Full CI mirror green locally AND the pushed head's Actions
+      run green. (Green on `7aa7a4e`; re-verified on the
+      post-critic head.)
+- [x] [ship §6](../skills/ship.md#6--the-gate) critic runs ON ITS
+      NEW MODEL; the report names which model ran it. (TWO passes:
+      the first ran as `claude-sonnet-5` — the session's agent
+      definition was cut at session start, before the edit — and
+      the second, forced with an explicit override, ran as
+      `claude-opus-5` · effort high. Both verdicts
+      PASS-WITH-FINDINGS; every finding repaired pre-flip.)
 
 ## Pending
 
-None at birth.
+MANUAL ACT, founder-side, after the weld: `/config` → Default
+teammate model → **Default (leader's model)** at each seat. The
+repo cannot set it.
+
+Deferred by design and filed to [IDEAS](../IDEAS.md): risk (a) is
+documented but enforced by no ritual — handoff parks lanes and
+says nothing about a live team. Ritual machinery is out of this
+bench's scope.
 
 ## Deviations
 
-<!-- filled by ship -->
+The seven mandated items landed as specified. Beyond the mandate's
+file list, three stale copies of the retired Sonnet-teammate rule
+were repaired (listed under Files touched) — two of them found by
+the critic, not by me; and `docs/specs/reviewer-subagent.md` was
+added to D-055's ripple per
+[decide §2](../skills/decide.md). No behaviour changes in any of
+the three; each removes a live contradiction with this bench.
 
 ## Open questions
 

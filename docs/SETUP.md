@@ -677,9 +677,10 @@ Done-means.
     panes require tmux or iTerm2 and are NOT supported in Windows
     Terminal — which is what both seats run, so split-pane mode
     is unavailable here by construction, not by choice.
-  - `CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS: "1"` is already set in
-    `.claude/settings.json`. It sat armed with nothing reaching
-    for it until
+  - The experimental flag inventoried in
+    [§Once and done — repo-side](#once-and-done--repo-side-travels-with-git)
+    ("Env: Agent Teams ON") sat armed with nothing reaching for it
+    until
     [D-055](DECISIONS.md#d-055--2026-07--agent-teams--the-boundary-teams-are-for-exploration-and-review-at-a-ground-seat-lanes-remain-the-authorship-mechanism-two-risks-become-law-single-sitting-only--an-explicit-carve-out-to-d-050s-interrupt-promise--and-a-teammate-authored-diff-is-self-authored-under-no-solo-approval-the-reviewers-model-settled-by-verification-not-guess-the-founder-side-config-recorded-upholds-the-lane-law-no-solo-approval-and-one-home-gives-the-experimental-flag-its-consumer)
     gave it a documented consumer; that gap is now closed.
   - Permissions need no per-teammate setup: teammates start with
@@ -690,16 +691,22 @@ Done-means.
     cover the team as they cover the seat.
 - Hands: solo · subagents · team · lanes (doctrine,
   [D-045](DECISIONS.md#d-045--2026-07--hands-doctrine-solo--subagents--agent-team--lanes--the-litmus-is-one-bench-many-hands-vs-many-benches-vs-read-only-upholds-d-020-and-d-041)).
-  The founder's choose-your-hands rule, verbatim:
+  The founder's choose-your-hands rule, verbatim — one clause
+  superseded inline and marked:
   - Solo (default): sequential or single-file work.
   - Exploratory subagents: parallel READ-ONLY research inside one
     task; no spec needed (existing sanction).
   - Agent team: ONE task splittable into file-disjoint subparts
     benefiting from cross-talk; founder present to steer — never
-    long-unattended; lead + 2–4 Sonnet 5 teammates (start 2);
+    long-unattended; lead + 2–4 teammates (start 2 — the original
+    wording said "Sonnet 5 teammates", retired by
+    [D-055](DECISIONS.md#d-055--2026-07--agent-teams--the-boundary-teams-are-for-exploration-and-review-at-a-ground-seat-lanes-remain-the-authorship-mechanism-two-risks-become-law-single-sitting-only--an-explicit-carve-out-to-d-050s-interrupt-promise--and-a-teammate-authored-diff-is-self-authored-under-no-solo-approval-the-reviewers-model-settled-by-verification-not-guess-the-founder-side-config-recorded-upholds-the-lane-law-no-solo-approval-and-one-home-gives-the-experimental-flag-its-consumer):
+    teammates now ride the LEAD's model by config);
     delegate-mode lead for pure coordination; plan-approval for
     teammates touching shared or hard-to-reverse surfaces; never for
-    ritual/law files, never across tasks.
+    ritual/law files, never across tasks. WHEN to reach for a team
+    at all — the boundary and its two risks — lives at
+    [HOME §Agent teams](HOME.md#agent-teams).
   - Parallel lanes: separate tasks, own benches, unattended-capable.
   - Litmus: many hands on ONE bench with the founder watching =
     team · many benches = lanes · reading only = subagents.
