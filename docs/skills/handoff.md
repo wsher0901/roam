@@ -74,8 +74,18 @@ memory/<id>.md cognitively in the locked format
 ([TEMPLATE](../memory/TEMPLATE.md)). Fold in any step-2 paste lines
 that concern this task; the paste as a whole lands on the board (§4).
 Sentences, written for a reader returning cold.
+PARKING INTERRUPTED WORK: when the handoff cuts a task mid-flight —
+or the task already sits interrupted by Esc or a founder redirect —
+the rewrite takes the `interrupted` state and fills the ⏸ capture
+block ([TEMPLATE](../memory/TEMPLATE.md)): original mandate · the
+plan · done so far · exact next step · why paused. A lane's diary
+stays the lane's — §1.5's one-line park stamp is the park
+protocol's limit.
 Commit, push, return to main. Harvest any "Ideas surfaced" lines
-from lane memories → IDEAS.
+from lane memories → IDEAS. Harvesting COMPACTS: per
+[IDEAS](../IDEAS.md)' header rule, delete entries already CLOSED
+in an outing older than the current one — the closing artifact
+(the decide, the PR, the history file) is the record.
 
 Sources:
 [IDEAS](../IDEAS.md)
@@ -155,8 +165,12 @@ Report one line — "Handoff shipped (#N) · M lanes parked.
 Operations halted — safe to power off." Then, as the ritual's LAST
 act, write `.claude/session-closed` with content "Closed at handoff
 #<N> · <date> · <seat>" — the close-lock: from that moment the
-prompt hook rejects any further input to this session, and the
-session ends. QUIET instead returns to the sitting and recommends
+prompt hook stamps every later prompt with the closed-session
+doctrine, and the session ends AS A WORKING SEAT. Closed ≠ dead:
+addressed after the close it stays READ-ONLY CONVERSATIONAL —
+answers by fresh derivation from origin, always names the current
+baton-holder, and refuses every write, command act, and ritual.
+QUIET instead returns to the sitting and recommends
 NEXT per the pacing law.
 
 Sources:

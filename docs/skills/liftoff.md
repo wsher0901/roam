@@ -191,7 +191,7 @@ ladder, evidence order (gate 0b, [D-047](../DECISIONS.md#d-047--2026-07--cloud-b
    founder pastes it into a plain terminal — nothing piped.
 3. `npm run fire:cockpit -- "<birth prompt>"` (the routine fire
    — list-invisible, so never the plan; one cap-run, already
-   counted in §2's budget; the staged summon button's engine).
+   counted in §2's budget; the summon engine, fired locally).
 4. The manual charter paste, retained verbatim: claude.ai/code
    (browser or the phone's Claude app) → new session on
    wsher0901/roam → paste the birth prompt.
@@ -225,6 +225,15 @@ to walk away." At the tower, `/tasks` lists the cloud sessions
 and `t` teleports into one — the flight stays reachable from any
 later terminal. Then, as the ritual's LAST act, write
 `.claude/session-closed` with content "Closed at liftoff · ledger
-#<N> · <date> · <seat>" — the close-lock. End the session. The
+#<N> · <date> · <seat>" — the close-lock. CLOSED ≠ DEAD: a closed
+session remains READ-ONLY CONVERSATIONAL — addressed after its
+close it answers by fresh derivation from origin (state,
+explanations, pointers), always names the current baton-holder,
+and refuses every write, command act, and ritual. The close-lock
+record is unchanged; only the wall is soft. Strictness kept where
+it must be: a SUPERSEDED cockpit stays tombstone-only (charter
+R4b — a replaced cockpit is a hazard, not a reference desk), and
+the seat-stamp supersession law is untouched. End the session as
+a working seat. The
 baton is now the cockpit's for the flight
 ([LAWS §Parallel lanes & cloud](../LAWS.md#parallel-lanes--cloud)).

@@ -51,6 +51,16 @@ parked lane's memory or the board's flight-context line
 ([handoff §1.5](handoff.md#15--park-the-local-lanes-full-only)
 writes them — watches die with sessions, the record must not) is
 re-armed now, so the duty resumes with the new sitting.
+THE `claude/*` RESIDUE SWEEP (standing hygiene — every cloud
+session lazily leaves a workspace head on origin, and cloud
+sessions cannot delete branches): list `claude/*` heads from the
+fetch; for each, verify ZERO unique commits vs main
+(`git log origin/main..origin/<head>`); if its session may still
+be LIVE, HOLD and ask the founder — archive-before-delete, the
+resurrection rule; else delete it, then the 60s `fetch --prune`
+tripwire re-lists heads (the platform creates them lazily — a
+clean mid-flight check proves nothing). A head carrying unique
+commits is NEVER swept — surface it under Needs-you.
 
 Sources:
 [ROADMAP](../ROADMAP.md)
@@ -68,6 +78,12 @@ Sources:
 [handoff §4–§5](handoff.md)
 
 ## 5 · Render the sit-down summary (exactly this shape)
+- ⏸ FIRST, above everything: whenever any memory's Status reads
+  interrupted, LEAD the briefing with one line per interrupted
+  task, drawn from its ⏸ capture block
+  ([TEMPLATE](../memory/TEMPLATE.md)) —
+  "⏸ INTERRUPTED: <one line> — continue?" — before the ruled
+  header renders.
 - Ruled header: "── pickup · <date> · <seat> ──". Caption line:
   "Last handoff: <FULL | liftoff> · <date HH:MM> · <seat>". Then
   THE EXIT TABLE — one row per task parked or lifted at that
