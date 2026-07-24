@@ -2,12 +2,12 @@
 type: spec
 id: response-doctrine
 title: Response doctrine + WEB-INSTRUCTIONS v5 — one standard for how every surface speaks to the founder (D-052)
-status: open
+status: shipped
 stage: workshop
 branch: docs/response-doctrine
 pr: 216
 opened: 2026-07-24
-shipped: —
+shipped: 2026-07-24 00:51
 ---
 
 # response-doctrine — minimum reading time to decision
@@ -93,7 +93,7 @@ R2 pointer) · [liftoff](../skills/liftoff.md) ·
 [handoff](../skills/handoff.md) · [pickup](../skills/pickup.md) ·
 [WEB-INSTRUCTIONS](../WEB-INSTRUCTIONS.md) ·
 [DECISIONS](../DECISIONS.md) · this spec +
-[the memory](../memory/response-doctrine.md) ·
+[the memory](../history/workshop/definition/response-doctrine.md) ·
 [DASHBOARD](../DASHBOARD.md) via the ship tail.
 
 ## Done means
@@ -114,10 +114,13 @@ R2 pointer) · [liftoff](../skills/liftoff.md) ·
 - [x] D-052 in DECISIONS, house style, the founder's goal
       verbatim.
 - [x] `check:links` · `check:ledger` · `check:memory` green. (2026-07-24, home PC, on the completion tree.)
-- [ ] Full CI mirror green locally AND the pushed head's Actions
-      run green.
-- [ ] [ship §6](../skills/ship.md) critic runs; verdict rides to
-      the founder verbatim.
+- [x] Full CI mirror green locally AND the pushed head's Actions
+      run green. (Ticked at the weld, 2026-07-24 — Actions green
+      on `5f4be89`, re-verified by the external review.)
+- [x] [ship §6](../skills/ship.md) critic runs; verdict rides to
+      the founder verbatim. (Ticked at the weld — ran 2026-07-24:
+      PASS, no findings; its one spot-check observation repaired
+      pre-flip.)
 
 ## Pending
 

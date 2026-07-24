@@ -1,23 +1,27 @@
 ---
-type: memory
+type: history
 id: response-doctrine
-updated: 2026-07-24 00:40 · complete · home PC
+updated: 2026-07-24 00:51 · weld · home PC
+shipped: 2026-07-24 00:51
+pr: 216
 ---
 
 # response-doctrine — one standard for speaking to the founder
 
 ## Status
 
-complete, awaiting merge — 2026-07-24 00:40 · home PC. All six
-mandate items applied and verified: §Response doctrine (five
-clauses) and §Command card in HOME · the charter's fleet-table
-rule 5 with the R2 card pointer · the four-part status template
-in liftoff §7, handoff §6, and pickup §5 (the ⏸ lead above
-everything) · WEB-INSTRUCTIONS at v5 with zero "paste block" hits
-· [D-052](../DECISIONS.md#d-052--2026-07--response-doctrine--one-standard-for-every-surface-speaking-to-the-founder-answer-first-explicit-steps-purpose-shaped-explanation-live-derived-state-glyph-verdicts-the-command-card-the-fleet-table-report-the-ritual-status-templates-web-instructions-v5-ships-retires-the-v4-paste-block-loop-master-upholds-d-046s-cc-direct-doctrine-and-the-derivation-law)
-with the founder's goal verbatim. At THE GATE —
-tower-authored, so external Web review precedes the founder's
-word. DO NOT MERGE.
+shipped — merged [#216](https://github.com/wsher0901/roam/pull/216),
+2026-07-24. Tower-authored, so the no-solo-approval law was
+satisfied by the external Web review — PASS on `5f4be89`: nine
+files as declared, HOME carrying both new sections with the
+teleport relocation warning placed where it will be read, the
+charter's rule 5 the fleet table verbatim, the four-part template
+in all three rituals, WEB-INSTRUCTIONS at v5 with zero
+paste-block survivals and the mandatory-review role leading,
+D-052's five clauses restating the founder's requirements
+faithfully, the gates re-run by the reviewer (links 2774/0 ·
+ledger 92↔92 · memory valid), Actions green — plus the founder's
+merge word.
 
 ## What this task is
 
@@ -29,18 +33,16 @@ finally describes CC-direct instead of teaching every new chat
 the retired paste-block loop. The founder's stated goal,
 verbatim: minimum reading time to decision, explicit steps over
 abstractions, purpose-shaped explanation. Contract:
-[the spec](../specs/response-doctrine.md).
+[the spec](../../../specs/response-doctrine.md).
 
 ## Pending issues
 
-- Tower-authored, so [no-solo-approval](../LAWS.md) requires an
-  external Web review before the founder's word at THE GATE. DO
-  NOT MERGE.
-- Manual acts after the weld, once, covering both benches
-  (founder): re-save the cockpit routine box from the final
-  charter master (rule 5 changed here, rule 1 at
-  [#213](https://github.com/wsher0901/roam/pull/213)) · copy the
-  v5 master into the claude.ai Roam Project's instructions box.
+None open at the weld. Manual acts owed (founder), once, covering
+both benches: re-save the cockpit routine box from the final
+charter master (rule 1 changed at
+[#213](https://github.com/wsher0901/roam/pull/213), rule 5 here)
+· copy the v5 master into the claude.ai Roam Project's
+instructions box. Both ride the board's Needs-you.
 
 ## Left / idle
 
@@ -61,7 +63,7 @@ landed as top-level HOME sections between §Reading the board and
 §Where information goes — the board-reading manual, the
 response-reading manual, and the routing law now sit adjacent,
 all founder-facing. The card's teleport line carries the
-[D-049](../DECISIONS.md#d-049--2026-07--gh-second-path--gh-api-rest-through-the-github-proxy-is-the-cockpits-second-api-path-a-connector-flap-stops-costing-command-r2-gains-the-automatic-gh-rung-self-id-by-session-env-amends-d-048-corrects-the-193-api-map-upholds-d-047-and-verify-before-rely)
+[D-049](../../../DECISIONS.md#d-049--2026-07--gh-second-path--gh-api-rest-through-the-github-proxy-is-the-cockpits-second-api-path-a-connector-flap-stops-costing-command-r2-gains-the-automatic-gh-rung-self-id-by-session-env-amends-d-048-corrects-the-193-api-map-upholds-d-047-and-verify-before-rely)
 relocation warning — the card is exactly where the founder will
 read it before teleporting.
 
@@ -73,7 +75,7 @@ PARALLEL/RECENT FLIGHTS (per-item 🟢/⏸ with exact resume words —
 the same information, decision-shaped); PENDING ISSUES folded
 into WHAT HAPPENED with its "No issues from last sitting." form
 kept; the ⏸ INTERRUPTED lead
-([D-050](../DECISIONS.md#d-050--2026-07--session-lifecycle--closed--dead-the-close-locks-wall-softens-to-injected-read-only-doctrine-interrupt-capture-is-standing-format-the-claude-residue-sweep-is-pickup-hygiene-ideas-is-an-inbox-not-an-archive-amends-the-d-046-era-close-wall-design-upholds-the-park-protocol-and-no-solo-approval))
+([D-050](../../../DECISIONS.md#d-050--2026-07--session-lifecycle--closed--dead-the-close-locks-wall-softens-to-injected-read-only-doctrine-interrupt-capture-is-standing-format-the-claude-residue-sweep-is-pickup-hygiene-ideas-is-an-inbox-not-an-archive-amends-the-d-046-era-close-wall-design-upholds-the-park-protocol-and-no-solo-approval))
 stayed above everything, and the NEXT line survives — the pacing
 law wants it.
 
@@ -81,7 +83,7 @@ law wants it.
 Web a surface that "produces paste blocks" and Claude Code "the
 ONLY repo writer", and its §Loop taught the full relay — the
 exact doctrine
-[D-046](../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+[D-046](../../../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
 retired. v5 leads with the MANDATORY job (the external review,
 with a four-step procedure ending in the on-the-record word-paste
 the founder hands to Code verbatim), maps all five surfaces, and
@@ -101,13 +103,13 @@ the clause labels.
 
 ## Where to look
 
-- [the spec](../specs/response-doctrine.md) — the contract;
+- [the spec](../../../specs/response-doctrine.md) — the contract;
   Deviations records the v5-restatement ruling.
 - [#216](https://github.com/wsher0901/roam/pull/216) — the draft
   PR.
-- [HOME §Response doctrine](../HOME.md#response-doctrine) ·
-  [HOME §Command card](../HOME.md#command-card) — the two new
+- [HOME §Response doctrine](../../../HOME.md#response-doctrine) ·
+  [HOME §Command card](../../../HOME.md#command-card) — the two new
   homes.
-- [WEB-INSTRUCTIONS](../WEB-INSTRUCTIONS.md) — v5.
-- [D-052](../DECISIONS.md#d-052--2026-07--response-doctrine--one-standard-for-every-surface-speaking-to-the-founder-answer-first-explicit-steps-purpose-shaped-explanation-live-derived-state-glyph-verdicts-the-command-card-the-fleet-table-report-the-ritual-status-templates-web-instructions-v5-ships-retires-the-v4-paste-block-loop-master-upholds-d-046s-cc-direct-doctrine-and-the-derivation-law)
+- [WEB-INSTRUCTIONS](../../../WEB-INSTRUCTIONS.md) — v5.
+- [D-052](../../../DECISIONS.md#d-052--2026-07--response-doctrine--one-standard-for-every-surface-speaking-to-the-founder-answer-first-explicit-steps-purpose-shaped-explanation-live-derived-state-glyph-verdicts-the-command-card-the-fleet-table-report-the-ritual-status-templates-web-instructions-v5-ships-retires-the-v4-paste-block-loop-master-upholds-d-046s-cc-direct-doctrine-and-the-derivation-law)
   — the decision, the founder's goal verbatim in the Why.
