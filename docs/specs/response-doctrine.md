@@ -5,7 +5,7 @@ title: Response doctrine + WEB-INSTRUCTIONS v5 — one standard for how every su
 status: open
 stage: workshop
 branch: docs/response-doctrine
-pr: —
+pr: 216
 opened: 2026-07-24
 shipped: —
 ---
@@ -98,22 +98,22 @@ R2 pointer) · [liftoff](../skills/liftoff.md) ·
 
 ## Done means
 
-- [ ] §Response doctrine and §Command card exist in HOME; every
+- [x] §Response doctrine and §Command card exist in HOME; every
       ritual and the charter REFERENCES (never copies) them
       (grep).
-- [ ] The fleet table in the charter's rule 5; every 🔴 names its
+- [x] The fleet table in the charter's rule 5; every 🔴 names its
       fix and where.
-- [ ] The four-part status template in all three rituals; pickup's
+- [x] The four-part status template in all three rituals; pickup's
       ⏸ lead stays above everything.
-- [ ] "paste block" absent from WEB-INSTRUCTIONS as a live
+- [x] "paste block" absent from WEB-INSTRUCTIONS as a live
       mechanism (historical mentions in record excepted); v5
       carries the surfaces map, CC-direct, the review procedure,
       the doctrine, the live-status and prompt-delivery rules, the
       aligned brief, the modernized WEB HANDOFF, and the
       master-copy pattern line.
-- [ ] D-052 in DECISIONS, house style, the founder's goal
+- [x] D-052 in DECISIONS, house style, the founder's goal
       verbatim.
-- [ ] `check:links` · `check:ledger` · `check:memory` green.
+- [x] `check:links` · `check:ledger` · `check:memory` green. (2026-07-24, home PC, on the completion tree.)
 - [ ] Full CI mirror green locally AND the pushed head's Actions
       run green.
 - [ ] [ship §6](../skills/ship.md) critic runs; verdict rides to
@@ -130,7 +130,8 @@ CHRONICLE LAYER (its own chat).
 
 ## Deviations
 
-<filled by /ship: anything done differently than planned — or "none">
+- v5 RESTATES doctrine clauses (a)-(e) compactly inside its fenced box — the mandate ordered exactly that restatement; the one-home rule is judged against LIVING prose, where only HOME carries the clauses and every other home references.
+- none beyond that — the file list held exactly.
 
 ## Open questions
 
