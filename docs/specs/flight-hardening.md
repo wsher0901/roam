@@ -24,6 +24,11 @@ shipped: 2026-07-22 15:09
 > REST-shaped. The live map:
 > [SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts).
 > The other eight corrections stand. Everything below is RECORD.
+> (Extended 2026-07-24: a second correction — rung 1's
+> console-attach shape — was later retired in turn by
+> [D-051](../DECISIONS.md#d-051--2026-07--self-seat-birth--liftoff-fires---cloud-blind-and-the-cockpit-seats-itself-by-its-env-derived-self-url-the-console-attach-launcher-is-retired-amends-d-047s-rung-1-mechanics-as-corrected-by-193-upholds-d-049-and-board-governs):
+> the fire is blind, the cockpit self-seats. The remaining
+> corrections stand.)
 
 **Links:** [LAWS](../LAWS.md) ·
 [SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts) ·

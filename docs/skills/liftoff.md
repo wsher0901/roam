@@ -107,7 +107,11 @@ Sources:
 ## 6 · Ledger handoff & fire the cockpit
 Repaint DASHBOARD per [handoff §4](handoff.md) — the Sessions
 table IS the flight plan: every airborne lane with its url, every
-abort and hold with its reason in Your move / State.
+abort and hold with its reason in Your move / State. The
+cockpit's own row is written at this weld, BEFORE the fire, as
+"cockpit · fired <time> · self-seat pending" — the cockpit
+rewrites it with its real URL at its self-seat repaint
+([D-051](../DECISIONS.md#d-051--2026-07--self-seat-birth--liftoff-fires---cloud-blind-and-the-cockpit-seats-itself-by-its-env-derived-self-url-the-console-attach-launcher-is-retired-amends-d-047s-rung-1-mechanics-as-corrected-by-193-upholds-d-049-and-board-governs)).
 Ship the micro-PR (board + any IDEAS harvest).
 
 Then THE COCKPIT BIRTH
@@ -156,37 +160,38 @@ session does not clear a run log, by design).
 Birth by the rung
 ladder, evidence order (gate 0b, [D-047](../DECISIONS.md#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law)):
 
-1. The automated hidden-console `--cloud` birth (PRIMARY).
+1. The automated hidden-window `--cloud` birth, fired BLIND
+   (PRIMARY —
+   [D-051](../DECISIONS.md#d-051--2026-07--self-seat-birth--liftoff-fires---cloud-blind-and-the-cockpit-seats-itself-by-its-env-derived-self-url-the-console-attach-launcher-is-retired-amends-d-047s-rung-1-mechanics-as-corrected-by-193-upholds-d-049-and-board-governs)).
    `--cloud` demands a real TTY on BOTH ends and refuses every
    piped route verbatim (the harness shell, the `!` bang-prefix,
-   redirected `Start-Process`). A hidden console already gives it
+   redirected `Start-Process`); a hidden window already supplies
    that TTY, so no pty wrapper is involved — and none may be: any
-   redirection at all is what breaks this rung. The shape that
-   flew (2026-07-22, work PC, Git for Windows; recipe of record):
+   redirection at all is what breaks this rung. The shape:
    - Launch with NO redirection anywhere:
-     `Start-Process powershell -WindowStyle Hidden -NoExit -File <launcher>`,
+     `Start-Process powershell -WindowStyle Hidden -File <launcher>`,
      the launcher calling `claude --cloud "<birth prompt>"`.
    - Hand the birth prompt as a FILE-READ argument — the launcher
      reads it from a file and passes it as one argument. Never a
      pipe, never here-string plumbing.
-   - Recover the output AFTERWARDS by attaching to that console —
-     `FreeConsole` / `AttachConsole(<pid>)`, then
-     `ReadConsoleOutputCharacterW` over `CONOUT$` — instead of
-     capturing a stream. Kill the `-NoExit` console once read.
-   The birth returns the session link — `Created cloud session:
-   <title>` · `View: https://claude.ai/code/session_<id>` ·
-   `Resume with: claude --teleport session_<id>`. Sessions born
-   this way are list-native — they join the phone's Code-tab
-   GENERAL session list.
-   Why attach instead of capturing the stream: the recipe this
-   replaces wrapped the console in a pty and captured its output
-   to a file, and that shape CANNOT RUN — the wrapper refuses the
-   moment either of its own ends is redirected, so the capture is
-   exactly what kills it. Two failures, same cause, 2026-07-22;
-   forensics in
-   [cloud-born-cockpit](../history/workshop/mechanism/cloud-born-cockpit.md)
-   and the [IDEAS](../IDEAS.md) filing. Do not reintroduce a
-   wrapper: attach, read, kill.
+   - Capture NOTHING — exit status only. The fire is blind by
+     design: the output-recovery machinery this rung once carried
+     existed solely to hand the tower a session URL, and the
+     cockpit now SEATS ITSELF on the board via its env-derived
+     self-URL
+     ([D-049](../DECISIONS.md#d-049--2026-07--gh-second-path--gh-api-rest-through-the-github-proxy-is-the-cockpits-second-api-path-a-connector-flap-stops-costing-command-r2-gains-the-automatic-gh-rung-self-id-by-session-env-amends-d-048-corrects-the-193-api-map-upholds-d-047-and-verify-before-rely);
+     the charter's self-seat duty). Liftoff no longer reports a
+     session URL — the cockpit's greeting push and its self-seat
+     repaint carry it.
+   Sessions born this way are list-native — they join the phone's
+   Code-tab GENERAL session list.
+   FAILURE SHAPE: a birth that dies before Claude starts leaves
+   no URL anywhere and sends no greeting — the MISSING push IS
+   the signal. Founder's checks, in order: `/tasks` at any
+   terminal · the claude.ai/code list (list-native even when the
+   clone failed) · retry the fire. The board's "self-seat
+   pending" row goes stale honestly rather than carrying a
+   scraped URL that may be wrong.
 2. Compose-and-hand: the ritual composes the full command; the
    founder pastes it into a plain terminal — nothing piped.
 3. `npm run fire:cockpit -- "<birth prompt>"` (the routine fire
@@ -196,15 +201,13 @@ ladder, evidence order (gate 0b, [D-047](../DECISIONS.md#d-047--2026-07--cloud-b
    (browser or the phone's Claude app) → new session on
    wsher0901/roam → paste the birth prompt.
 
-Record the rung that birthed the cockpit + the returned session
-URL for the §7 close line (the cockpit adds its own Sessions row
-at its first repaint — its OWN url derived from the session env
-per
+Record the rung that fired + its exit status for the §7 close
+line. There is no returned URL to record — the cockpit seats
+itself (the charter's self-seat duty; its OWN url derived from
+the session env per
 [D-049](../DECISIONS.md#d-049--2026-07--gh-second-path--gh-api-rest-through-the-github-proxy-is-the-cockpits-second-api-path-a-connector-flap-stops-costing-command-r2-gains-the-automatic-gh-rung-self-id-by-session-env-amends-d-048-corrects-the-193-api-map-upholds-d-047-and-verify-before-rely),
-`https://claude.ai/code/${CLAUDE_CODE_REMOTE_SESSION_ID/#cse_/session_}`,
-never scraped from a console; the tower's console-attach read of
-a BIRTH's output stays — that is for a session it cannot ask). A
-failed rung falls to the next with its
+`https://claude.ai/code/${CLAUDE_CODE_REMOTE_SESSION_ID/#cse_/session_}`).
+A failed rung falls to the next with its
 failure recorded in the close line — nothing silently parked.
 
 This ladder BIRTHS a cockpit; a cockpit that loses its GitHub
@@ -220,8 +223,12 @@ Sources:
 [Cockpit charter — SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts)
 
 ## 7 · Close
-Report "N airborne, M parked · cockpit <url or fallback> — safe
-to walk away." At the tower, `/tasks` lists the cloud sessions
+Report "N airborne, M parked · cockpit fired (<rung> · exit
+<code>) · self-seat pending — safe to walk away." Liftoff no
+longer reports a cockpit URL
+([D-051](../DECISIONS.md#d-051--2026-07--self-seat-birth--liftoff-fires---cloud-blind-and-the-cockpit-seats-itself-by-its-env-derived-self-url-the-console-attach-launcher-is-retired-amends-d-047s-rung-1-mechanics-as-corrected-by-193-upholds-d-049-and-board-governs))
+— the cockpit's greeting push and its self-seat repaint carry
+it. At the tower, `/tasks` lists the cloud sessions
 and `t` teleports into one — the flight stays reachable from any
 later terminal. Then, as the ritual's LAST act, write
 `.claude/session-closed` with content "Closed at liftoff · ledger

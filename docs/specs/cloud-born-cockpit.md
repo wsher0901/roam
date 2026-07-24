@@ -30,6 +30,11 @@ shipped: 2026-07-21 14:56
 > [flight-hardening](flight-hardening.md) and that SETUP section.
 > Read the working mechanics from liftoff §6, never from here —
 > everything below is RECORD of the decision and its evidence.
+> (Extended 2026-07-24: the attach-and-read replacement shape was
+> itself RETIRED by
+> [D-051](../DECISIONS.md#d-051--2026-07--self-seat-birth--liftoff-fires---cloud-blind-and-the-cockpit-seats-itself-by-its-env-derived-self-url-the-console-attach-launcher-is-retired-amends-d-047s-rung-1-mechanics-as-corrected-by-193-upholds-d-049-and-board-governs)
+> — the fire is now BLIND and the cockpit seats itself via its
+> D-049 env-derived self-URL; liftoff §6 stays the live home.)
 
 **Links:** [DECISIONS](../DECISIONS.md) ·
 [SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts) ·

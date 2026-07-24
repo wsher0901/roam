@@ -329,14 +329,14 @@ summary, then arm the watch.
   [liftoff §6](skills/liftoff.md#6--ledger-handoff--fire-the-cockpit). `--cloud` demands a real TTY on both ends and refuses
   every piped route verbatim (the harness shell · the `!`
   bang-prefix · redirected Start-Process). The automated shape is
-  a hidden console with NO REDIRECTION ANYWHERE — a hidden console
-  already supplies the TTY, so no pty wrapper is used or
-  permitted — the prompt handed in as a file-read argument, and
-  the output recovered afterwards by ATTACHING to that console and
-  reading `CONOUT$`. It creates the session and RETURNS —
-  `Created cloud session: <title>` ·
-  `View: https://claude.ai/code/session_<id>` ·
-  `Resume with: claude --teleport session_<id>`. Sessions born
+  a hidden window with NO REDIRECTION ANYWHERE — it already
+  supplies the TTY, so no pty wrapper is used or permitted — the
+  prompt handed in as a file-read argument, and NOTHING captured:
+  the fire is BLIND by design
+  ([D-051](DECISIONS.md#d-051--2026-07--self-seat-birth--liftoff-fires---cloud-blind-and-the-cockpit-seats-itself-by-its-env-derived-self-url-the-console-attach-launcher-is-retired-amends-d-047s-rung-1-mechanics-as-corrected-by-193-upholds-d-049-and-board-governs)),
+  exit status only — the cockpit seats ITSELF on the board via
+  its env-derived self-URL (the charter's SELF-SEAT duty).
+  Sessions born
   this way are list-native: they join the phone's Code-tab
   GENERAL session list (gate 0c evidence,
   [cloud-born-cockpit](specs/cloud-born-cockpit.md)).
@@ -409,6 +409,26 @@ verify every claim against origin before acting; git outranks it.
    in your first report and proceed from the board. Obey the laws
    in full; answer every process question by derivation from the
    clone at answer time, never from session memory.
+   SELF-SEAT DUTY (D-051): after deriving state, if the board's
+   Sessions row reads "self-seat pending" — or carries no live
+   cockpit — repaint it seating YOURSELF, your url derived from
+   the session env (D-049):
+   https://claude.ai/code/${CLAUDE_CODE_REMOTE_SESSION_ID/#cse_/session_}
+   — shipped as a pickup-class micro-PR (the DASHBOARD-only
+   carve-out). If a FOREIGN live cockpit seat-stamp is present
+   instead, rule 7 governs — you are the stray: push nothing,
+   write nothing; your final message is a short factual note
+   naming the live cockpit from the board ("A live cockpit
+   already holds this board: <its url>. I am a redundant birth —
+   archive me."), NOT R4b's landed-superseded script, which
+   presumes a flight you never had. Then stop.
+   Failure shape, known to both actors: a birth
+   that died before Claude started left no URL anywhere and sent
+   no greeting — the MISSING push is the founder's signal
+   (checks, in order: /tasks at any terminal · the
+   claude.ai/code list · retry the fire); the pending row goes
+   stale honestly rather than carrying a scraped URL that may be
+   wrong.
 2. Full authorship under the laws: author benches (bench-first,
    every task), birth lanes via ready-flip + label, review lane
    PRs as an independent reviewer, merge on the founder's word,
