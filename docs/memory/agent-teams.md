@@ -60,6 +60,33 @@ nested teams" — which independently justify the cockpit
 rejection — and split-pane mode is explicitly unsupported in
 Windows Terminal, which is what both seats run.
 
+THE ALIAS ANSWER, recorded BEFORE `.claude/agents/reviewer.md`
+was touched — the mandate's order, kept. `claude update` reported
+"Claude Code is up to date (2.1.219)", so 2.1.219 is the version
+this answer belongs to. `/model` is interactive and cannot be run
+from this harness, so the alias was resolved MECHANICALLY instead,
+from a headless run's own usage telemetry — stronger evidence than
+a UI label, because it is what the API was actually billed for.
+The command and the decisive fragment of its JSON, verbatim:
+
+```text
+$ claude -p "Reply with only the word: ok" --model opus --output-format json
+
+"modelUsage":{"claude-opus-5":{"inputTokens":2,"outputTokens":4,
+"cacheReadInputTokens":20812,"cacheCreationInputTokens":22110,
+"webSearchRequests":0,"costUSD":0.23161600000000002,
+"contextWindow":1000000,"maxOutputTokens":64000,
+"canonicalModel":"claude-opus-5","provider":"firstParty"}}
+```
+
+VERDICT: on CLI 2.1.219 the `opus` alias RESOLVES TO OPUS 5 —
+`canonicalModel` is `claude-opus-5`, not a 4.8 build. So the alias
+is taken and no pin is written: aliases track the recommended
+version and survive deprecations, which is exactly the brittleness
+the founder asked to avoid. `effort: high` is retained; the
+doctrine's throttle order (reduce effort before downgrading the
+model) is untouched.
+
 ## Where to look
 
 - [the spec](../specs/agent-teams.md) — goal, plan, Done-means.
