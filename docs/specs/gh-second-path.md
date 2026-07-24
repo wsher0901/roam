@@ -53,7 +53,7 @@ gh-through-proxy works.
 ## The probe (the gate — zero cap; a `--cloud` session is not a routine run)
 
 Birth a probe session by rung 1 with the five-command prompt
-(verbatim in [the memory](../memory/gh-second-path.md)):
+(verbatim in [the memory](../history/workshop/mechanism/gh-second-path.md)):
 (1) `gh --version` — did the setup script install it? ·
 (2) `echo $GH_TOKEN` — expect the literal placeholder ·
 (3) `gh api user` — does the proxy substitute real credentials? ·
@@ -123,7 +123,7 @@ amendment; the memory narrates it.
 [flight-hardening](flight-hardening.md) (supersession notes only)
 · [IDEAS](../IDEAS.md) (added by the founder's post-probe fold:
 the four findings ride first-class) · this spec +
-[the memory](../memory/gh-second-path.md) ·
+[the memory](../history/workshop/mechanism/gh-second-path.md) ·
 [DASHBOARD](../DASHBOARD.md) via the ship tail.
 
 ## Done means
