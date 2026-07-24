@@ -5,7 +5,7 @@ title: gh second path — the cockpit gains a second API path through the GitHub
 status: open
 stage: workshop
 branch: docs/gh-second-path
-pr: —
+pr: 207
 opened: 2026-07-23
 shipped: —
 ---
@@ -68,6 +68,20 @@ The first birth after the setup-script change runs setup fresh
 Cleanup: the probe session URL reported for founder archive; any
 `claude/*` branch it left is a tripwire.
 
+**Resolution, 2026-07-23:** the probe flew NON-PASS on (4) — a
+GraphQL-allowlist 403, not an auth failure — and the STOP held:
+the mandate did not run. The founder then WITNESSED the REST read
+in a fresh interactive cloud session (`command -v gh` →
+`/usr/bin/gh`, the cached setup-script install; `GH_TOKEN` set at
+length 14 — the classifier lawfully refused the echo, and 14 is
+the `proxy-injected` fingerprint; `gh api
+repos/wsher0901/roam/pulls --jq '.[0].number'` → `207`) and
+ordered the mandate run with four folds: REST-shaped wording
+throughout · gh probes are API reads, never env-var echoes · the
+toolset-bluff finding to memory + IDEAS · the three vehicle
+findings ride first-class. This paragraph is that contract
+amendment; the memory narrates it.
+
 ## Plan (mandate — probe green only)
 
 1. **DECIDE — D-049**, house style. The Why carries the honest
@@ -107,34 +121,43 @@ Cleanup: the probe session URL reported for founder archive; any
 [liftoff](../skills/liftoff.md) ·
 [cockpit-resilience](cockpit-resilience.md) +
 [flight-hardening](flight-hardening.md) (supersession notes only)
-· this spec + [the memory](../memory/gh-second-path.md) ·
+· [IDEAS](../IDEAS.md) (added by the founder's post-probe fold:
+the four findings ride first-class) · this spec +
+[the memory](../memory/gh-second-path.md) ·
 [DASHBOARD](../DASHBOARD.md) via the ship tail.
 
 ## Done means
 
-- [ ] Probe outputs recorded VERBATIM in the memory; PASS shape
-      confirmed (or STOP — the mandate never ran).
-- [ ] D-049 in DECISIONS, house style, the three-revision Why,
+- [x] Probe outputs recorded VERBATIM in the memory; PASS shape
+      confirmed (or STOP — the mandate never ran). (The STOP DID
+      hold on the NON-PASS shape; the founder's witnessed 4b +
+      folds opened the gate — see §Resolution.)
+- [x] D-049 in DECISIONS, house style, the three-revision Why,
       the placeholder-token truth recorded.
-- [ ] SETUP's API-dependency map: two paths per act (MCP
-      connector · gh-through-proxy).
-- [ ] Dated supersession notes on
+- [x] SETUP's API-dependency map: two paths per act (MCP
+      connector · gh-through-proxy, REST-shaped).
+- [x] Dated supersession notes on
       [cockpit-resilience](cockpit-resilience.md) and
       [flight-hardening](flight-hardening.md) — note only, no
       rewrite.
-- [ ] The R2 gh rung present in the charter master; the CONNECTOR
+- [x] The R2 gh rung present in the charter master; the CONNECTOR
       DOWN message and self-rescue one rung deeper.
-- [ ] Self-ID: the documented self-URL replaces console-buffer
+- [x] Self-ID: the documented self-URL replaces console-buffer
       scraping for a session stating its OWN url; the
       Claude-Session trailer noted in SETUP.
-- [ ] liftoff §7 carries the `/tasks` + teleport line.
-- [ ] Grep: no LIVING doc still claims the MCP connector is the
-      SOLE API path (record + supersession notes excepted).
-- [ ] `check:links` · `check:ledger` · `check:memory` green.
+- [x] liftoff §7 carries the `/tasks` + teleport line.
+- [x] Grep: no LIVING doc still claims the MCP connector is the
+      SOLE API path (record + supersession notes excepted) — run
+      2026-07-23 on the finished tree; every hit adjudicated.
+- [x] `check:links` · `check:ledger` · `check:memory` green.
+      (2026-07-23, home PC, on the completion tree.)
 - [ ] Full CI mirror green locally AND the pushed head's Actions
-      run green.
+      run green. (Local mirror green 2026-07-23; the final head's
+      run is watched at the gate — ticks at the weld, the
+      [shakedown-audit](shakedown-audit.md) precedent.)
 - [ ] [ship §6](../skills/ship.md) critic runs; verdict rides to
-      the founder verbatim.
+      the founder verbatim. (Runs at the gate announcement; ticks
+      at the weld.)
 
 ## Pending
 
@@ -146,7 +169,19 @@ session. **The queued next bench**, unchanged:
 
 ## Deviations
 
-<filled by /ship: anything done differently than planned — or "none">
+- The probe's (4) came back a GraphQL-allowlist 403 rather than
+  the expected authenticated success; STOP held, and the gate
+  reopened only on the founder's witnessed 4b + the four folds
+  (§Resolution). The map and R2 are worded REST-shaped as folded.
+- [IDEAS](../IDEAS.md) joined the file list on the founder's
+  fold — the four probe findings ride first-class.
+- One verbatim-clause exception: probe (3)'s `gh api user` reply
+  is recorded by its `login` field with the public-profile body
+  elided — [LAWS §Safety](../LAWS.md#safety-non-negotiable)
+  outranks the verbatim clause in a public repo.
+- FOUR probe sessions exist to archive, not one — the 4b
+  follow-up burned three births on channel failures (the memory
+  and [IDEAS](../IDEAS.md) carry the specimens).
 
 ## Open questions
 

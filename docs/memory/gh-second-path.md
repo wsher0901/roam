@@ -1,21 +1,23 @@
 ---
 type: memory
 id: gh-second-path
-updated: 2026-07-23 22:01 · blocked · home PC
+updated: 2026-07-23 22:24 · complete · home PC
 ---
 
 # gh-second-path — a second API path through the GitHub proxy
 
 ## Status
 
-blocked — the probe came back NON-PASS · 2026-07-23 22:01 ·
-control tower · home PC. Four of five probe commands matched the
-expected shape; (4) `gh pr list` hit a GraphQL allowlist 403, not
-an auth failure. Per the mandate — "any other shape: STOP, record,
-and hold for the founder" — THE MANDATE HAS NOT RUN. The full
-verbatim record is in §The story; the founder's word decides
-whether the mandate proceeds on the REST-shaped reading, is
-amended, or the bench parks.
+complete, awaiting merge — 2026-07-23 22:24 · home PC. The probe
+STOP held, the founder witnessed the REST read 4b GREEN and
+ordered the mandate with four folds, and the mandate is RUN:
+D-049 + full ripple (SETUP's environment entry and two-path API
+map, the charter's automatic R2 gh rung, self-ID by session env,
+the Claude-Session trailer note, liftoff's seating + `/tasks`
+lines), two dated supersession notes, four findings to
+[IDEAS](../IDEAS.md). At THE GATE — tower-authored, so external
+Web review precedes the founder's word. DO NOT MERGE on this
+session's say-so.
 
 ## What this task is
 
@@ -31,31 +33,22 @@ placeholder — only gh-through-proxy works. Contract and mandate:
 
 ## Pending issues
 
-- **Held for the founder's word: the probe shape.** (1)(2)(3)(5)
-  GREEN, (4) DEVIATED — the proxy serves only a pinned set of
-  PR-review GraphQL operations and its own 403 text directs to
-  REST via `gh api`. The second path exists but appears
-  REST-SHAPED; whether that satisfies the mandate's intent is the
-  founder's call, not this seat's.
-- **The REST follow-up (4b) is UNTESTED in the cloud** after three
-  birth attempts — the follow-up birth-prompt channel failed 3/3
-  (§The story records each specimen). Testing it needs either a
-  founder-run command in a cloud session or a future probe with
-  the lessons below applied.
-- **Four probe sessions await founder archive** (§Where to look
-  lists all four URLs). None pushed anything; the `claude/*`
-  tripwire came back clean — origin carries only `main` and this
-  bench.
 - Tower-authored, so [no-solo-approval](../LAWS.md) requires an
-  external Web review before any eventual gate word. DO NOT MERGE.
+  external Web review before the founder's word at THE GATE. DO
+  NOT MERGE.
+- **Manual acts owed after the weld (founder):** re-save the
+  cockpit routine box from the updated charter master (it gained
+  the R2 gh rung and the self-URL line) · archive the FOUR probe
+  sessions (§Where to look).
+- The `claude/*` tripwire stayed clean throughout — origin
+  carries only `main` and this bench.
 
 ## Left / idle
 
-The ENTIRE mandate, unrun by the gate rule: D-049 · SETUP's
-two-path API map + two supersession notes · the charter's R2 gh
-rung · self-ID adoption · liftoff §7's `/tasks` line. Manual acts
-after any eventual weld (founder): routine box re-save · probe
-session archive.
+Nothing is left on the bench — the mandate is fully run and
+verification is at the gate. The queued next bench, unchanged:
+[WEB-INSTRUCTIONS](../WEB-INSTRUCTIONS.md) v5
+(named by [#204](https://github.com/wsher0901/roam/pull/204)).
 
 ## The story
 
@@ -143,6 +136,44 @@ authenticated and succeeded, and the 403's own text directs to
 REST — but the repo-scoped REST read the mandate's map needs has
 not been witnessed. Held rather than assumed: verify-before-rely
 is this bench's whole premise.
+
+**The founder's 4b, and the gate reopening.** The founder ran 4b
+in a fresh interactive cloud session and witnessed it GREEN:
+`command -v gh` → `/usr/bin/gh` (the environment cache DID carry
+the setup-script install) · `GH_TOKEN` set at length 14 — the
+permission classifier lawfully refused to echo it, and 14
+characters is exactly the `proxy-injected` fingerprint · `gh api
+repos/wsher0901/roam/pulls --jq '.[0].number'` → `207`, this very
+bench's PR. The repo-scoped REST read through the proxy is
+PROVEN. The same sitting yielded a fifth finding: that fresh
+session first BLUFFED "gh isn't available" from its environment
+briefing without probing, and self-corrected only when made to
+run `command -v gh` — probe-don't-assume extends to a session's
+OWN toolset. The founder ordered the mandate run with four folds:
+REST-shaped wording throughout · gh probes are API reads, never
+env-var echoes (the classifier treats `GH_TOKEN` as a secret) ·
+the bluff finding to memory + [IDEAS](../IDEAS.md) · the three
+vehicle findings ride first-class.
+
+**The mandate run (same sitting).** D-049 landed with its full
+ripple in one decide commit: the honest three-revision Why
+(egress-blocked → "MCP sole path" → installable +
+proxy-authenticated, each once written as certain), SETUP's
+environment entry reversed onto the new evidence, the API map
+rewritten two-path REST-shaped, the charter's connector-ladder
+preamble reworded and R2 gaining the automatic gh rung as (b) —
+CONNECTOR DOWN and the self-rescue dropping one rung deeper — the
+successor-duty and liftoff-seating self-URL from
+`CLAUDE_CODE_REMOTE_SESSION_ID` (the tower's console-attach read
+of a BIRTH's output deliberately kept: that recipe serves a
+session the tower cannot ask), the `Claude-Session:` trailer
+noted as the free audit link, and liftoff §7's `/tasks` +
+teleport line. Then the two supersession notes (cockpit-resilience
+kept its ladder, lost its sole-path premise; flight-hardening's
+one gh correction corrected in turn, its other eight standing) and
+the four findings into [IDEAS](../IDEAS.md). The sole-path grep
+came back clean on the finished tree: every surviving hit is
+record, a note quoting what it overturns, or D-049's own history.
 
 ## Where to look
 
