@@ -14,7 +14,7 @@ labeled copy-runnable block in
 [LAWS §Workflow](../LAWS.md#workflow-non-negotiable) with
 sync-first and Actions-green intact around it · both stub
 descriptions carry their new clause with the diff-stat proving no
-other stub changed · D-053 records the audit as proof with the
+other stub changed · [D-053](../DECISIONS.md#d-053--2026-07--guardrail-audit--the-harness-found-already-at-best-practice-against-anthropics-guidance-two-promotions-ship-the-verification-loop-as-a-copy-runnable-block-in-laws-two-stub-descriptions-sharpened-five-alternatives-rejected-with-reasons-upholds-the-routing-law-and-one-home) records the audit as proof with the
 five rejected alternatives reasoned · the IDEAS line is in. At
 THE GATE — tower-authored, so external Web review precedes the
 founder's word. DO NOT MERGE.
@@ -27,7 +27,7 @@ the harness ALREADY AT BEST PRACTICE against Anthropic's guidance
 quality · sparse emphasis outperforms shouting). This bench ships
 the audit's only two real improvements — the verification loop
 promoted to a copy-runnable block in LAWS, two stub descriptions
-sharpened — and records the proof as D-053, the audit AS the
+sharpened — and records the proof as [D-053](../DECISIONS.md#d-053--2026-07--guardrail-audit--the-harness-found-already-at-best-practice-against-anthropics-guidance-two-promotions-ship-the-verification-loop-as-a-copy-runnable-block-in-laws-two-stub-descriptions-sharpened-five-alternatives-rejected-with-reasons-upholds-the-routing-law-and-one-home), the audit AS the
 record. Contract: [the spec](../specs/guardrail-audit.md).
 
 ## Pending issues
@@ -52,7 +52,7 @@ the mandate's exact order, sync-first before it and
 Actions-green after it byte-kept. The two stub lines went in as
 given; the harness picked the new descriptions up live within the
 sitting (the skill listing refreshed mid-bench — the always-loaded
-surface governs, exactly the audit's premise). D-053 wrote the
+surface governs, exactly the audit's premise). [D-053](../DECISIONS.md#d-053--2026-07--guardrail-audit--the-harness-found-already-at-best-practice-against-anthropics-guidance-two-promotions-ship-the-verification-loop-as-a-copy-runnable-block-in-laws-two-stub-descriptions-sharpened-five-alternatives-rejected-with-reasons-upholds-the-routing-law-and-one-home) wrote the
 audit as the record: compliant findings, the two promotions, the
 five rejections each with its reason, and the decide-anchor
 length filed to IDEAS as a future consideration, not now.
