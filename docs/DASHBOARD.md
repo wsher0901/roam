@@ -6,59 +6,50 @@ status: living
 
 # Dashboard — the state surface
 
-Stamp: 2026-07-23 · 18:06 · handoff · work PC
+Stamp: 2026-07-23 · 21:33 · ship · home PC
 V1 5/34 · S1 2/7 · S2 3/5 · sessions: 1 main · 0 parallel
-(1 need you) · needs-you 2
+(0 need you) · needs-you 1
 How to read this board →
 [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
 
-1. 🟡 Resume the parked currency-audit bench at the home PC —
-   [#204](https://github.com/wsher0901/roam/pull/204). Its analysis
-   is DONE and written down; eleven specified changes remain
-   unapplied. Read the spec first: it is the work order, and
-   nothing needs re-deriving (since 07-23).
-   → [#204](https://github.com/wsher0901/roam/pull/204) ·
-   [the spec](https://github.com/wsher0901/roam/blob/docs/currency-audit/docs/specs/currency-audit.md)
-   ·
-   [the memory](https://github.com/wsher0901/roam/blob/docs/currency-audit/docs/memory/currency-audit.md)
-   (both ride the branch — not on main until the weld)
-2. 🟡 The home PC's seat debt, owed at that machine's next sitting:
-   paste the `COCKPIT_` pair into its `.env.local` (password
-   manager first) and bring `claude --version` to 2.1.195 or
-   later. You are moving to that machine now, so it comes due
-   (since 07-21).
+1. 🟡 The home-PC seat debt is now HALF-CLEARED: `claude --version`
+   reads 2.1.218 (≥ 2.1.195, verified this sitting), so only the
+   `COCKPIT_` paste remains — password manager first, into this
+   seat's `.env.local`, which is now EMPTY after the dead clerk
+   pair was removed at [#204](https://github.com/wsher0901/roam/pull/204)'s
+   adoption (since 07-21).
    → [SETUP §cloud accounts](SETUP.md#once-and-done--cloud-accounts)
-   · [SETUP §Per machine](SETUP.md#per-machine-procedure-machine-setup-skill)
-   · [machine-setup](skills/machine-setup.md)
+   · [machine-setup](skills/machine-setup.md) (names it now — step
+   11, added by [#204](https://github.com/wsher0901/roam/pull/204))
 
 The nine open engine questions stay parked in
 [ENGINE §12](ENGINE.md#12-open-register) until
 [V1.S3](ROADMAP.md#v1s3--engine-core--two-families-deep) opens;
-they are a register, not an action.
+they are a register, not an action. ENGINE's `type: spec`
+frontmatter oddity is folded there too
+([IDEAS](IDEAS.md), the founder's 07-23 gate word).
 
 ## Sessions
 
 | Session | Task | State | Last push | Your move |
 |---|---|---|---|---|
-| main · work PC | currency-audit — docs currency audit ([#204](https://github.com/wsher0901/roam/pull/204)) | ⚪ parked — 07-23 18:02 · at handoff | 07-23 18:02 | resume it at the home PC |
+| main · control tower | — (currency-audit shipped [#204](https://github.com/wsher0901/roam/pull/204); no bench open) | 🟢 | 21:33 (this repaint) | — |
 
-↳ main micro: 🟢⚪⚪⚪🟢🟢🟢⚪⚪ (4/9 Done-means)
+↳ main micro: — (no active task)
 
-The ground goes dark with this handoff — the work PC is halting and
-the founder is moving to the home PC. No lane was ever spawned on
-this bench: the control tower worked it directly, so nothing is
-flying and nothing needed parking but the bench itself.
-
-The bench is whole on origin — branch `docs/currency-audit`
-(`af1f2d7`), spec, memory, and the draft PR all verified present at
-park. Its ANALYSIS is finished and written into the spec; what
-remains is applying eleven already-specified changes. That ordering
-was deliberate: the audit's value is the finding, and a finding that
-lives only in a session is lost, so it was landed before any edit.
-Ships to THE GATE when done — tower-authored, so external Web review
-precedes the founder's word.
+Ground state, nothing in flight: the currency-audit bench flew
+across two seats through a park — analysis at the work PC, welded
+to the spec before any edit; implementation adopted at the home PC
+from origin alone — and is WELDED. Origin carries main only
+(verified at the weld sitting: the stale `chore/liftoff-findings`
+head deleted on the founder's gate order, the bench branch
+auto-deleted at merge). The next named bench, unopened:
+[WEB-INSTRUCTIONS](WEB-INSTRUCTIONS.md) v5 — stale in its bones
+(v4 paste-block loop, no cockpit), needs a rewrite, not mechanical
+fixes ([#204](https://github.com/wsher0901/roam/pull/204)'s spec
+names it in Pending).
 
 ## You are here
 
@@ -95,33 +86,32 @@ flowchart LR
 
 The live ops surface is the current ops chat (title unrecorded at
 the shakedown-audit weld). Its most recent external review —
-[#199](https://github.com/wsher0901/roam/pull/199) (the cloud-birth
-probe finding, IDEAS append) — is DONE, verdict PASS on `0fe69a9`
-(single file, append-only). Earlier reviews, all DONE:
-[#197](https://github.com/wsher0901/roam/pull/197) (PASS on
-`0fe69a9`) ·
+[#204](https://github.com/wsher0901/roam/pull/204) (the currency
+audit, tower-authored) — is DONE, verdict PASS on `614e0f8` (ten
+files as declared, zero deletions, zero record-body rewrites, the
+gates re-run independently), delivered inline with the founder's
+merge word. Earlier reviews, all DONE:
+[#199](https://github.com/wsher0901/roam/pull/199) (PASS on
+`0fe69a9`) · [#197](https://github.com/wsher0901/roam/pull/197)
+(PASS on `0fe69a9`) ·
 [#193](https://github.com/wsher0901/roam/pull/193) (PASS on
 `d118af5`) · [#195](https://github.com/wsher0901/roam/pull/195)
 (PASS on `aa62baf`/`0af0d97`) → next: grade the cockpit maiden,
-once the closeout bench opens. Under the surface doctrine
+once the closeout bench opens; the
+[WEB-INSTRUCTIONS](WEB-INSTRUCTIONS.md) v5 bench, when opened,
+rewrites the Project-instructions master itself. Under the surface
+doctrine
 ([D-046](DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)),
 Web's one mandatory job is the external review of self-authored
-diffs; this liftoff's payload
-([#200](https://github.com/wsher0901/roam/pull/200)) was
-LANE-authored, so the cockpit's non-author review plus the founder's
-word carried it without Web.
-This handoff carried NO Web/Design paste — the leaving message was
-a bare trigger, so there is none to record. One review is now owed
-ahead: [#204](https://github.com/wsher0901/roam/pull/204) is
-TOWER-authored, so it needs an external Web review before the
-founder's word — not yet, though; the bench is parked mid-work and
-the review belongs at its gate.
+diffs — exactly the job it did for
+[#204](https://github.com/wsher0901/roam/pull/204).
 T3–T6 source-vetting relaunch stays held (see You are here).
 
 ## Shipped (latest — full record: [the ledger](history/README.md#the-ledger))
 
 | When | What | PR |
 |---|---|---|
+| 07-23 21:29 | [the docs currency audit: the clerk sweep came back already-clean (#197 held) — the real catch was the NEXT generation of staleness: the disproven `[COCKPIT]` title line dropped from liftoff §6 + SETUP with the verify-before-rely answer recorded in place, #193's board-governs doctrine landed in HOME's manual plus three more HOME edges (FOUNDATION's writer drops the paste block, go-remote joins the skills list, §Delegation names route 1 the recorded maiden winner), cloud-born-cockpit's two disproven recipes supersession-noted beyond the known clerk set, machine-setup gains the COCKPIT_ pair as step 11; four dated notes, zero deletions, zero record-body rewrites, orphans NONE by inbound-reference census; flown across two seats through a park, adopted from origin alone](history/workshop/mechanism/currency-audit.md) | [#204](https://github.com/wsher0901/roam/pull/204) |
 | 07-23 21:07 | [.env.example carries zero CLERK_ cruft: the vestigial clerk comment prose scrubbed from the "Routine fires" block so the file names only the live cockpit routine, the payload matching the founder's intent rather than the literal "two placeholder lines" (already gone by #197); flown as a full-liftoff run-through — bench-first birth, canary, cockpit airborne ack, one-file scrub — then carried through an independent non-author review that re-verified CI on the true merge tip after the lane cited a run one commit behind](history/workshop/mechanism/env-clerk-scrub.md) | [#200](https://github.com/wsher0901/roam/pull/200) |
 | 07-23 12:02 | [the repo stops pointing at a vehicle that cannot fire: the clerk routine was deleted 07-22, every live instruction reaching for the clerk removed and every verified record tombstoned (C1–C6, N2/N3, A1/A4 kept), liftoff's ladder bottomed out at the D-048 phone bootstrap, `fire.mjs` cockpit-only with the drain idiom untouched, no new D-number by design, and one live defect caught just outside the mandate's file list — parallel-lanes still armed the clerk as both fallback and notification watcher](history/workshop/mechanism/clerk-retirement.md) | [#197](https://github.com/wsher0901/roam/pull/197) |
 | 07-22 16:36 | [a cockpit that survives, announces, and replaces its own GitHub connector loss (D-048): redundancy inside a session ruled impossible, so resilience became a five-rung ladder OUT of the session (prevent · detect · repair · degrade · self-rescue) with a tombstone and refusal guard; `summon.yml` ships live on `workflow_dispatch` + a push to `ops/summon`, reusing `fire.mjs`; merge-on-signal REJECTED with reasons](history/workshop/mechanism/cockpit-resilience.md) | [#195](https://github.com/wsher0901/roam/pull/195) |
@@ -131,7 +121,6 @@ T3–T6 source-vetting relaunch stays held (see You are here).
 | 07-20 22:01 | [the `.claude/` harness learns the D-046 vocabulary: the pickup stub and session-start hook name the BATON-HOLDER (control tower on the ground, cockpit in flight); flown as a label-spawned cloud lane](history/workshop/mechanism/harness-vocab-rename.md) | [#180](https://github.com/wsher0901/roam/pull/180) |
 | 07-20 15:40 | [the cockpit is the control tower online (D-046): full-authorship cloud command session fired by liftoff; the no-solo-approval law; the CC-direct surface doctrine; clerk retirement staged; fire.mjs generalized (clerk \| cockpit)](history/workshop/definition/flight-cockpit.md) | [#177](https://github.com/wsher0901/roam/pull/177) |
 | 07-20 13:17 | [the Shakedown Flight closes on paper: A/N checklists graded evidence-or-attest; six forensics findings closed; both staged clerk lines resolved; liftoff's fire:clerk folded in on the founder's gate word](history/workshop/mechanism/shakedown-audit.md) | [#175](https://github.com/wsher0901/roam/pull/175) |
-| 07-17 23:43 | [the Hands doctrine (D-045): solo · exploratory subagents · agent team · parallel lanes, the one-bench/many-benches/read-only litmus; flown fully unattended as payload A of Shakedown phase 2](history/workshop/definition/agent-teams-brain.md) | [#170](https://github.com/wsher0901/roam/pull/170) |
 
 Note: [#201](https://github.com/wsher0901/roam/pull/201) (liftoff
 board weld) and [#202](https://github.com/wsher0901/roam/pull/202)
