@@ -2,12 +2,12 @@
 type: spec
 id: currency-audit
 title: Docs currency audit — every live instruction that points at retired machinery, and every orphan
-status: open
+status: shipped
 stage: workshop
 branch: docs/currency-audit
 pr: 204
 opened: 2026-07-23
-shipped: —
+shipped: 2026-07-23 21:29
 ---
 
 # currency-audit — no live instruction points at machinery that cannot fire
@@ -321,13 +321,14 @@ the founder's word.
 - [x] A PART C recommendation exists for each named surface.
 - [x] `check:links` · `check:ledger` · `check:memory` green.
       (2026-07-23, home PC, on the completion tree.)
-- [ ] Full CI mirror green locally AND the pushed head's Actions run
-      green. (Local mirror green 2026-07-23; the final head's run is
-      watched at the gate and this box ticks at the weld — the
+- [x] Full CI mirror green locally AND the pushed head's Actions run
+      green. (Ticked at the weld, 2026-07-23 — Actions green on
+      `614e0f8`, re-verified by the external review; the
       [shakedown-audit](shakedown-audit.md) precedent.)
-- [ ] [ship §6](../skills/ship.md) critic runs; verdict rides to the
-      founder verbatim. (Runs at the gate announcement; ticks at
-      the weld.)
+- [x] [ship §6](../skills/ship.md) critic runs; verdict rides to the
+      founder verbatim. (Ticked at the weld — ran 2026-07-23: PASS
+      on the eleven changes; two advisory weave findings in the
+      memory's prose, repaired before the ready-flip.)
 
 ## Pending
 

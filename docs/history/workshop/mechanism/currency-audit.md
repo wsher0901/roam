@@ -1,20 +1,22 @@
 ---
-type: memory
+type: history
 id: currency-audit
-updated: 2026-07-23 21:14 · complete · home PC
+updated: 2026-07-23 21:29 · weld · home PC
+shipped: 2026-07-23 21:29
+pr: 204
 ---
 
 # currency-audit — docs currency audit
 
 ## Status
 
-complete, awaiting merge — 2026-07-23 21:14 · home PC. All eleven
-specified changes are applied and pushed: seven LIVING-STALE fixes
-(liftoff §6 · SETUP · four HOME edges · machine-setup) and four
-dated supersession notes (the clerk spec trio ·
-cloud-born-cockpit). The retired-noun greps re-run clean. At THE
-GATE — tower-authored, so external Web review precedes the
-founder's word. DO NOT MERGE on this session's say-so.
+shipped — merged [#204](https://github.com/wsher0901/roam/pull/204),
+2026-07-23. Tower-authored, so the no-solo-approval law was
+satisfied by the external Web review — PASS on `614e0f8`: ten files
+as declared, zero deletions, zero record-body rewrites, all four
+supersession notes verified, the gates re-run by the reviewer
+(links 2593/0 · ledger 88↔88 · memory valid), Actions green — plus
+the founder's merge word.
 
 ## What this task is
 
@@ -29,34 +31,27 @@ Governing principle: **annotation beats deletion**. history/, specs,
 and DECISIONS entries are immutable record — a superseded record
 earns a dated supersession note naming what replaced it, nothing
 more. Nothing is deleted in this bench, orphans included. Scope
-edges: [the spec](../specs/currency-audit.md).
+edges: [the spec](../../../specs/currency-audit.md).
 
 ## Pending issues
 
-- Three things want the founder at the gate, all on record in
-  [the spec](../specs/currency-audit.md): ENGINE.md's `type: spec`
-  frontmatter (UNCLEAR — flagged, not changed), confirmation that
-  the PART C recommendations match intent, and the ORPHAN answer
-  (there are none, proven mechanically — the list to bring is
-  empty).
-- Tower-authored, so [no-solo-approval](../LAWS.md) requires an
-  external Web review before the founder's word. At THE GATE —
-  DO NOT MERGE.
-- The stale origin ref `chore/liftoff-findings` survives its
-  squash-merge ([#202](https://github.com/wsher0901/roam/pull/202);
-  tip verified equal to the PR head at merge, zero unique commits —
-  re-verified at adoption). Deleting remote refs is not this
-  bench's business; a one-click UI delete whenever convenient.
+None open at the weld. The three gate items were answered by the
+founder's word (see §The gate in the story): ENGINE.md's
+frontmatter stays, folded to
+[V1.S3](../../../ROADMAP.md#v1s3--engine-core--two-families-deep)'s
+first engine bench; all five PART C recommendations confirmed;
+the empty orphan list accepted. The stale
+`chore/liftoff-findings` origin ref
+([#202](https://github.com/wsher0901/roam/pull/202)'s
+squash-leftover) was deleted at the founder's gate order —
+executed at the weld sitting, origin confirmed main-plus-bench
+only.
 
 ## Left / idle
 
-Nothing is left on this bench — the work order is fully executed
-and verification is at the gate. After the founder's word, the
-weld ticks the last two Done-means boxes (Actions on the final
-head · the critic run), per the
-[shakedown-audit](../specs/shakedown-audit.md) precedent. The next
-bench after this one:
-[WEB-INSTRUCTIONS](../WEB-INSTRUCTIONS.md) v5 (see Where to look).
+Nothing is left on this bench. The next bench after this one:
+[WEB-INSTRUCTIONS](../../../WEB-INSTRUCTIONS.md) v5 (see Where to
+look).
 
 ## The story
 
@@ -108,11 +103,11 @@ already handled. What this bench actually caught is a different
 generation of staleness:
 
 1. **A verify-before-rely instruction whose verification already
-   happened.** [liftoff §6](../skills/liftoff.md) tells a future
+   happened.** [liftoff §6](../../../skills/liftoff.md) tells a future
    seat to confirm the `[COCKPIT]` title line at the next birth and
    drop it if it does nothing. That birth HAPPENED on 2026-07-23:
    the platform ignored the line and auto-titled from charter
-   content. [IDEAS](../IDEAS.md) records it as DISPROVEN and says
+   content. [IDEAS](../../../IDEAS.md) records it as DISPROVEN and says
    plainly that it "wants a liftoff §6 edit (a reviewed PR, not this
    micro)". This bench is that PR. The instruction is not merely
    stale — it is a standing order to redo work already done.
@@ -121,7 +116,7 @@ generation of staleness:
    [#193](https://github.com/wsher0901/roam/pull/193) made the board
    the authoritative flight plan and demoted the birth prompt to a
    pointer, after a mandate arrived truncated mid-sentence.
-   `liftoff.md` says so emphatically. [HOME](../HOME.md)'s ritual
+   `liftoff.md` says so emphatically. [HOME](../../../HOME.md)'s ritual
    portrait still says liftoff fires the cockpit "with that flight
    plan as its payload" — the exact model
    [#193](https://github.com/wsher0901/roam/pull/193) reversed.
@@ -138,7 +133,7 @@ generation of staleness:
    points at them.
 
 4. **A per-machine obligation missing from the per-machine
-   procedure.** [machine-setup](../skills/machine-setup.md) points
+   procedure.** [machine-setup](../../../skills/machine-setup.md) points
    at nothing retired — its flaw is omission. It never names the
    `COCKPIT_` pair, though SETUP says each seat must paste it and
    the board tracks it as an open seat debt. A seat could complete
@@ -146,16 +141,16 @@ generation of staleness:
    summon self-rescue.
 
 **Two questions answered rather than assumed.**
-[go-remote](../skills/go-remote.md) does NOT want retiring or a new
+[go-remote](../../../skills/go-remote.md) does NOT want retiring or a new
 annotation — it already carries the
-[D-046](../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+[D-046](../../../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
 backstop wording, and
-[D-046](../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+[D-046](../../../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
 explicitly rejected full Remote Control retirement
-(alternative ②b); demoted is not dead. And [HOME](../HOME.md)
+(alternative ②b); demoted is not dead. And [HOME](../../../HOME.md)
 already describes the CC-direct surface doctrine correctly in §The
 daily loop — the paste block is named "a tool since
-[D-046](../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock),
+[D-046](../../../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock),
 not a requirement". The four HOME fixes are edge corrections, not a
 doctrine rewrite.
 
@@ -193,10 +188,10 @@ so the bullet claims exactly that. The retired-noun greps re-ran
 clean over the finished tree: every surviving hit is
 record-with-note, this bench's own artifacts, the board's ledger
 lines, doctrine-correct
-[D-046](../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+[D-046](../../../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
 prose (the paste block described as
 a tool, not a requirement), or the out-of-scope
-[WEB-INSTRUCTIONS](../WEB-INSTRUCTIONS.md). One reassurance worth
+[WEB-INSTRUCTIONS](../../../WEB-INSTRUCTIONS.md). One reassurance worth
 keeping: the ground-meaning "cockpit" the session-start hook
 printed at this sitting's open came from the stale
 pre-[#180](https://github.com/wsher0901/roam/pull/180) branch
@@ -207,32 +202,45 @@ verified directly.
 reviewer passed every one of the eleven changes and both
 law-classification judgments, and caught two weave-rule breaches
 in THIS diary's own prose — a bare `#193` and unlinked
-[D-046](../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+[D-046](../../../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
 mentions in the story. Repaired on sight (the retroactivity law)
 before the ready-flip; a currency bench of all benches should not
 ship carrying its own staleness class.
 
+**The gate.** The external Web review returned PASS on `614e0f8` —
+ten files as declared, zero deletions, zero record-body rewrites,
+all four supersession notes verified, the title-line disproof
+confirmed recorded in place, and the gates re-run independently by
+the reviewer (links 2593/0 · ledger 88↔88 · memory valid · Actions
+green). The founder's answers, for the record: ENGINE.md's
+`type: spec` frontmatter STAYS, its resolution folded to
+[V1.S3](../../../ROADMAP.md#v1s3--engine-core--two-families-deep)'s
+first engine bench · all five PART C recommendations confirmed ·
+the empty orphan list accepted. The merge word followed, with one
+more order executed at the weld sitting: the stale
+`chore/liftoff-findings` head deleted from origin.
+
 ## Where to look
 
-- [the spec](../specs/currency-audit.md) — the deliverable: the full
+- [the spec](../../../specs/currency-audit.md) — the deliverable: the full
   classification table, the eleven specified changes with the law
   that dates each, and the PART C recommendations. **Read this
   first; it is the work order.**
 - [#204](https://github.com/wsher0901/roam/pull/204) — the draft PR,
   the public window.
 - [#197](https://github.com/wsher0901/roam/pull/197)
-  ([story](../history/workshop/mechanism/clerk-retirement.md)) — the
+  ([story](../../../history/workshop/mechanism/clerk-retirement.md)) — the
   defect class this bench generalizes.
-- [IDEAS](../IDEAS.md), the 2026-07-23 liftoff-harvest entry — where
+- [IDEAS](../../../IDEAS.md), the 2026-07-23 liftoff-harvest entry — where
   the title line is recorded DISPROVEN, with the edit it wants.
-- [D-046](../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+- [D-046](../../../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
   ·
-  [D-047](../DECISIONS.md#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law)
+  [D-047](../../../DECISIONS.md#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law)
   ·
-  [D-048](../DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)
+  [D-048](../../../DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)
   — the law every finding is judged against.
 - **The next bench after this one:**
-  [WEB-INSTRUCTIONS.md](../WEB-INSTRUCTIONS.md) v5. Confirmed stale
+  [WEB-INSTRUCTIONS.md](../../../WEB-INSTRUCTIONS.md) v5. Confirmed stale
   at v4 (the paste-block loop; "Claude Code: the ONLY repo writer";
   no cockpit). Deliberately untouched here — it needs a rewrite, not
   mechanical fixes.
