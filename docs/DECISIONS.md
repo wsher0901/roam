@@ -2193,7 +2193,10 @@ name, THEN report what each returned. Two honesty clauses ride
 with it: shutdown is NOT INSTANT, because a teammate finishes its
 current request or tool call first, so the step waits rather than
 assumes; and a teammate that REFUSES or HANGS is named plainly in
-the close report, never smoothed into a clean exit. A live team is
+THE CLOSE REPORT ON THE ROAD OUT —
+[handoff §6](skills/handoff.md#6--close-full-only) ordinarily, or
+[liftoff §7](skills/liftoff.md#7--close) when the sitting ends in
+liftoff, which skips §6 — never smoothed into a clean exit. A live team is
 never PARKED — parking is a lane act, and a lane survives on its
 branch, which is what a stamped Status holds; a team has no branch
 and no Status, so a parked team does not exist. QUIET never shuts
@@ -2219,8 +2222,9 @@ ritual step.
 (4) THE ⏸ BLOCK GAINS ONE CONDITIONAL FIELD
 ([TEMPLATE](memory/TEMPLATE.md)): TEAM FINDINGS, written only when
 a team was live at the pause — the one field git cannot
-re-derive, since teammates do not survive an interrupt and their
-transcripts die with them. Omitted entirely when no team was
+re-derive, since teammates do not survive the SITTING (`/resume`
+and `/rewind` do not restore them) and their transcripts die with
+them. Omitted entirely when no team was
 running.
 **Why:** [D-055](#d-055--2026-07--agent-teams--the-boundary-teams-are-for-exploration-and-review-at-a-ground-seat-lanes-remain-the-authorship-mechanism-two-risks-become-law-single-sitting-only--an-explicit-carve-out-to-d-050s-interrupt-promise--and-a-teammate-authored-diff-is-self-authored-under-no-solo-approval-the-reviewers-model-settled-by-verification-not-guess-the-founder-side-config-recorded-upholds-the-lane-law-no-solo-approval-and-one-home-gives-the-experimental-flag-its-consumer)
 made single-sitting-only law and left it enforced by nothing: a
@@ -2245,8 +2249,9 @@ explicit that `/resume` and `/rewind` do not restore in-process
 teammates; building bookkeeping on a capability that does not
 exist would fail silently, which is the failure mode this
 workshop spends the most effort avoiding · duplicating the
-shutdown procedure into land — one home; land cannot host a team
-at all, so a copy there would be a procedure that can never run,
+shutdown procedure into land — one home; land has no team to host
+BY THE BOUNDARY, so a copy there would be a procedure that can
+never run,
 drifting quietly out of step with the one that can.
 **Affects:**
 [handoff §1.2](skills/handoff.md#12--shut-the-team-down-full-only)
@@ -2255,6 +2260,14 @@ drifting quietly out of step with the one that can.
 (the routing section) ·
 [pickup §2](skills/pickup.md#2--self-heal) (the ghost note) ·
 [TEMPLATE](memory/TEMPLATE.md) (the ⏸ field) ·
+[handoff §3](skills/handoff.md#3--rewrite-the-memories-full-only)
+(the ⏸ enumeration + the never-lossy clause) ·
+[handoff §5](skills/handoff.md#5--ship-the-note) (the micro-PR
+carries an IDEAS findings line) ·
+[liftoff §1](skills/liftoff.md#1--full-handoff-first) +
+[§7](skills/liftoff.md#7--close) (the shutdown named in what
+handoff FULL does, and the close line carried by pointer — without
+it the report has nowhere to land on the liftoff road) ·
 [HOME §Agent teams](HOME.md#agent-teams) (risk (a) gains its
 enforcement pointer) · [IDEAS](IDEAS.md) (the candidate line
 closed by this PR) · [the spec](specs/team-aware-leaving.md) +

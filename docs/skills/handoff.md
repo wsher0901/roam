@@ -40,7 +40,10 @@ transcripts that vanish with the session.
 1. CAPTURE FIRST, before a single shutdown request. Write the
    team's findings INTO THE RECORD: THIS SESSION'S OWN open
    bench — its `memory/<id>.md` — else a dated
-   [IDEAS](../IDEAS.md) line. NEVER a lane's diary: §1.5's
+   [IDEAS](../IDEAS.md) line — which rides §5's micro-PR, NOT
+   this branch: §1.2 runs on the task branch, so an IDEAS line
+   written here would be swept into a task commit or left dirty.
+   NEVER a lane's diary: §1.5's
    one-line park stamp is the only thing the control tower may
    ever write there (the park protocol), and a findings block is
    not that line. Per teammate — what it was working
@@ -202,7 +205,8 @@ Sources:
 
 ## 5 · Ship the note
 Branch chore/handoff-<date> from main, commit ONLY DASHBOARD.md
-(+ IDEAS.md if harvested), push, PR "chore: handoff", squash-merge
+(+ IDEAS.md if harvested OR if §1.2 captured team findings
+there), push, PR "chore: handoff", squash-merge
 as soon as its checks pass — `gh pr merge --auto --squash
 --delete-branch` (the micro-PR carve-out, now ~35s). If the merge
 fails, leave the PR open — the next pickup self-heals it.
@@ -220,9 +224,12 @@ founder's status template:
 - WHAT HAPPENED — the sitting in short sentences, context →
   narrative → issue → resolution, ending "Handoff shipped (#N) ·
   M lanes parked. Operations halted — safe to power off." When a
-  team was shut down at §1.2, that line also carries it —
-  "team shut down (N teammates)" — and any teammate that refused
-  or hung is named here, with where its findings landed.
+  team was shut down at [§1.2](#12--shut-the-team-down-full-only),
+  that line also carries it — "team shut down (N teammates)" — and
+  any teammate that refused or hung is named here, with where its
+  findings landed. This wording is the single home of the team
+  close line; [liftoff §7](liftoff.md#7--close) carries it by
+  pointer.
 - SUPPLEMENTAL — parallel Web or Design work, if any (the step-2
   paste).
 - PARALLEL/RECENT FLIGHTS — one line per parked lane or live

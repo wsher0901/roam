@@ -935,7 +935,10 @@ does · when to reach for it. Rituals point here; none re-lists.
   weld's atomic commit;
   [D-050](DECISIONS.md#d-050--2026-07--session-lifecycle--closed--dead-the-close-locks-wall-softens-to-injected-read-only-doctrine-interrupt-capture-is-standing-format-the-claude-residue-sweep-is-pickup-hygiene-ideas-is-an-inbox-not-an-archive-amends-the-d-046-era-close-wall-design-upholds-the-park-protocol-and-no-solo-approval)'s
   ⏸ capture catches what was in flight. ONE CARVE-OUT: the ⏸
-  block preserves the LEAD's work, never a live agent team —
+  block preserves the LEAD's work, never the teammates
+  themselves — what they FOUND survives only if written down,
+  which is the block's conditional TEAM FINDINGS field
+  ([TEMPLATE](memory/TEMPLATE.md)). See
   [§Agent teams](#agent-teams) risk (a).
 - `/model` · `/effort` · `/rename` — argument forms work in cloud
   sessions (e.g. `/model opus`); reach for them to retune or
@@ -990,8 +993,13 @@ ghost-teammate recovery note for the case that slips through
 This is an explicit CARVE-OUT to
 [D-050](DECISIONS.md#d-050--2026-07--session-lifecycle--closed--dead-the-close-locks-wall-softens-to-injected-read-only-doctrine-interrupt-capture-is-standing-format-the-claude-residue-sweep-is-pickup-hygiene-ideas-is-an-inbox-not-an-archive-amends-the-d-046-era-close-wall-design-upholds-the-park-protocol-and-no-solo-approval)'s
 interrupt promise: the ⏸ capture block preserves THE LEAD's work,
-never the team. Read together, the two say one thing — an
-interrupt is safe for your session and fatal to your teammates.
+never the teammates themselves. What they FOUND survives only
+because the block carries a conditional TEAM FINDINGS field
+([TEMPLATE](memory/TEMPLATE.md)) and
+[handoff §1.2](skills/handoff.md#12--shut-the-team-down-full-only)
+captures it first. Read together, the three say one thing — an
+interrupt is safe for your session and fatal to your teammates,
+so their findings must already be on disk.
 
 **(b) A TEAMMATE-AUTHORED DIFF IS SELF-AUTHORED.** A teammate is
 a full session pushing as the founder, so it earns no independent

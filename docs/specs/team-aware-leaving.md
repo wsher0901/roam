@@ -112,12 +112,17 @@ shutdown report has nowhere to land on the liftoff road.
 - [x] `check:links` · `check:ledger` · `check:memory` green.
       (2026-07-24, work PC.)
 - [x] Full CI mirror green locally AND the pushed head's Actions
-      run green. (Green on `01b46f8`; re-verified on the
-      post-critic head.)
+      run green. (Green on `01b46f8` and again on `8742226`;
+      the final head is re-verified before the ready-flip and its
+      SHA named in the PR summary.)
 - [x] [ship §6](../skills/ship.md#6--the-gate) critic runs; the
-      report names which model ran it. (Two passes — see
-      Deviations; the mandate's premise about the model was
-      wrong and the memory records why.)
+      report names which model ran it. TWO passes: pass 1 ran on
+      this session's pre-edit definition and DECLINED to name its
+      model when asked; pass 2, forced with an explicit override,
+      opened with "Opus 5 (1M context) · effort high" and found
+      three things pass 1 missed. The mandate's premise about
+      which model this session would cut was wrong — the memory
+      records why.
 
 ## Pending
 

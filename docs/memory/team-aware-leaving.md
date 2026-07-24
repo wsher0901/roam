@@ -1,7 +1,7 @@
 ---
 type: memory
 id: team-aware-leaving
-updated: 2026-07-24 17:04 · ship §4 · work PC
+updated: 2026-07-24 17:12 · ship §6 critic repairs · work PC
 ---
 
 # team-aware-leaving — the rituals learn about live teams (D-056)
@@ -124,8 +124,32 @@ critic should be Opus — but this is the SAME session that made
 that change, and an agent definition is cut at session start, so
 the first pass ran on the old definition. It also declined to
 state its model despite being asked, which is itself the reason
-not to trust self-report: the second pass was therefore forced
-with an explicit override and asked again.
+not to trust self-report. The second pass was forced with an
+explicit override and asked again: it answered **Opus 5 (1M
+context) · effort high** on its first line, and was sharper for
+the third bench running — it traced EVERY road out of a sitting
+(handoff FULL, handoff QUIET, liftoff, land, go-remote, Esc) and
+found two the first pass had not.
+
+THE THIRD SILENT-LOSS HOLE, found by that pass and the subtlest
+of the three: the IDEAS fallback had no COMMITTING VEHICLE. §1.2
+runs on the task branch, so a dated IDEAS line written there
+would be swept into a task commit or left dirty — and §5 commits
+IDEAS only "if harvested", which a findings-only write is not. In
+the no-bench-open case the fallback was written for, the findings
+would have been lost exactly as if nothing had been captured.
+§1.2 now routes that line to §5's micro-PR explicitly and §5's
+condition was widened to name it.
+
+ONE ROAD STAYS UNCOVERED, and it is recorded rather than
+papered over: a SUPERSEDED SEAT self-closes with "push, write
+nothing" ([LAWS](../LAWS.md#parallel-lanes--cloud)), which is an
+exit no ritual runs — a superseded tower leading a team would
+lose its findings. The goal sentence says NO ritual lets a team
+outlive its sitting, and that remains true; this is a road with
+no ritual on it at all. Filed to [IDEAS](../IDEAS.md) rather than
+solved here, because touching the supersession rule is a
+different bench.
 
 ## Where to look
 

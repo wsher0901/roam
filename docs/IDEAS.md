@@ -325,7 +325,25 @@ whole.
   teammate returned. Both rituals covered as the founder's gate
   word asked, though not symmetrically: handoff carries the
   procedure and land carries a routing line, because a cockpit
-  cannot lead a team at all.
+  does not lead a team (policy — the D-055 boundary, not a
+  platform limit).
+- 2026-07-24 (Claude Code, the team-aware-leaving bench, found by
+  the ship §6 critic on its Opus pass): THE ONE UNCOVERED ROAD OUT
+  of a sitting. [D-056](DECISIONS.md#d-056--2026-07--team-aware-leaving-rituals--no-ritual-lets-a-live-agent-team-outlive-the-sitting-that-made-it-handoff-shuts-the-team-down-before-parking-anything-and-captures-its-findings-into-the-record-first-land-states-the-cockpit-cannot-lead-a-team-case-once-and-routes-the-ground-seat-to-handoff-pickup-gains-the-ghost-teammate-recovery-note-and-the--block-gains-what-the-team-had-found-closes-d-055s-deferred-gap-upholds-one-home-and-the-park-protocol)
+  covers handoff FULL, handoff QUIET, liftoff, land, go-remote and
+  Esc — every exit that RUNS A RITUAL. The SUPERSEDED-SEAT
+  self-close does not run one: a session whose board seat-stamp is
+  no longer its own must "push, write nothing"
+  ([LAWS §Parallel lanes & cloud](LAWS.md#parallel-lanes--cloud)),
+  so a superseded control tower leading a team would lose its
+  findings with no capture step anywhere. Candidate fixes to weigh:
+  one clause in
+  [handoff §1.2](skills/handoff.md#12--shut-the-team-down-full-only)
+  ("a superseded seat captures findings before self-closing — the
+  capture writes only its OWN homes, so it is not a write to
+  another seat's surface"), or an explicit carve-out in the
+  supersession rule itself. Touching supersession is its own bench;
+  recorded here rather than solved in passing.
 - 2026-07-24 (Claude Code, the agent-teams bench): BOX PROVENANCE
   — stamp each external master in [SETUP](SETUP.md) with
   "last pasted: <date> · <sha>" so box currency becomes DERIVABLE
