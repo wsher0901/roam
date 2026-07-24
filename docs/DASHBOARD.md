@@ -6,7 +6,7 @@ status: living
 
 # Dashboard — the state surface
 
-Stamp: 2026-07-24 · 01:39 · ship · home PC
+Stamp: 2026-07-24 · 01:42 · handoff · home PC
 V1 5/34 · S1 2/7 · S2 3/5 · sessions: 1 main · 0 parallel
 (0 need you) · needs-you 0
 How to read this board →
@@ -33,11 +33,14 @@ frontmatter oddity is folded there too
 
 | Session | Task | State | Last push | Your move |
 |---|---|---|---|---|
-| main · control tower | — (guardrail-audit shipped [#218](https://github.com/wsher0901/roam/pull/218); no bench open) | 🟢 | 01:39 (this repaint) | — |
+| main · control tower | — (sitting closed at handoff; nothing open, nothing parked) | 🟢 | 01:42 (this repaint) | — |
 
 ↳ main micro: — (no active task)
 
-Ground state, nothing in flight. SIX benches welded this sitting
+The ground goes dark with this handoff — the home PC is halting;
+no lane was flying and no bench was open, so nothing needed
+parking. Origin carries `main` only; the next pickup claims a
+clean floor. SIX benches welded this sitting
 — the currency audit
 ([#204](https://github.com/wsher0901/roam/pull/204)), the gh
 second path ([#207](https://github.com/wsher0901/roam/pull/207),
