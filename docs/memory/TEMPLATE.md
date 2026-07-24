@@ -12,7 +12,9 @@ happened>
 
 Whenever the state is `interrupted`, the ⏸ capture block follows
 the Status line, EVERY field filled — a resuming seat must be able
-to continue from this block alone:
+to continue from this block alone. One field is conditional and
+named as such: TEAM FINDINGS appears only when an agent team was
+live at the pause, and is omitted entirely otherwise:
 
 **⏸ Interrupt capture**
 
@@ -21,6 +23,13 @@ to continue from this block alone:
 - DONE SO FAR: <checkpoints already reached>
 - EXACT NEXT STEP: <the single next action a resuming seat takes>
 - WHY PAUSED: <Esc · founder redirect · handoff park — and the reason>
+- TEAM FINDINGS: <only when an agent team was live at the pause —
+  what each teammate had found. Teammates do not survive the
+  SITTING — `/resume` and `/rewind` do not restore them — and
+  their transcripts die with them, so this is the one field git
+  cannot re-derive. Omit the line entirely when no
+  team was running.
+  ([handoff §1.2](../skills/handoff.md#12--shut-the-team-down-full-only))>
 
 ## What this task is
 <the kickoff's essence in prose — goal and scope edges>

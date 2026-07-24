@@ -935,7 +935,10 @@ does · when to reach for it. Rituals point here; none re-lists.
   weld's atomic commit;
   [D-050](DECISIONS.md#d-050--2026-07--session-lifecycle--closed--dead-the-close-locks-wall-softens-to-injected-read-only-doctrine-interrupt-capture-is-standing-format-the-claude-residue-sweep-is-pickup-hygiene-ideas-is-an-inbox-not-an-archive-amends-the-d-046-era-close-wall-design-upholds-the-park-protocol-and-no-solo-approval)'s
   ⏸ capture catches what was in flight. ONE CARVE-OUT: the ⏸
-  block preserves the LEAD's work, never a live agent team —
+  block preserves the LEAD's work, never the teammates
+  themselves — what they FOUND survives only if written down,
+  which is the block's conditional TEAM FINDINGS field
+  ([TEMPLATE](memory/TEMPLATE.md)). See
   [§Agent teams](#agent-teams) risk (a).
 - `/model` · `/effort` · `/rename` — argument forms work in cloud
   sessions (e.g. `/model opus`); reach for them to retune or
@@ -981,11 +984,22 @@ sitting. `/resume` and `/rewind` do NOT restore in-process
 teammates, and a resumed lead may go on messaging teammates that
 no longer exist. So a team is never left mid-flight expecting a
 later pickup to restore it — finish it or shut it down before the
-sitting ends. This is an explicit CARVE-OUT to
+sitting ends. ENFORCED, not merely stated:
+[handoff §1.2](skills/handoff.md#12--shut-the-team-down-full-only)
+captures the team's findings and shuts it down BEFORE anything is
+parked, and [pickup §2](skills/pickup.md#2--self-heal) carries the
+ghost-teammate recovery note for the case that slips through
+([D-056](DECISIONS.md#d-056--2026-07--team-aware-leaving-rituals--no-ritual-lets-a-live-agent-team-outlive-the-sitting-that-made-it-handoff-shuts-the-team-down-before-parking-anything-and-captures-its-findings-into-the-record-first-land-states-the-cockpit-cannot-lead-a-team-case-once-and-routes-the-ground-seat-to-handoff-pickup-gains-the-ghost-teammate-recovery-note-and-the--block-gains-what-the-team-had-found-closes-d-055s-deferred-gap-upholds-one-home-and-the-park-protocol)).
+This is an explicit CARVE-OUT to
 [D-050](DECISIONS.md#d-050--2026-07--session-lifecycle--closed--dead-the-close-locks-wall-softens-to-injected-read-only-doctrine-interrupt-capture-is-standing-format-the-claude-residue-sweep-is-pickup-hygiene-ideas-is-an-inbox-not-an-archive-amends-the-d-046-era-close-wall-design-upholds-the-park-protocol-and-no-solo-approval)'s
 interrupt promise: the ⏸ capture block preserves THE LEAD's work,
-never the team. Read together, the two say one thing — an
-interrupt is safe for your session and fatal to your teammates.
+never the teammates themselves. What they FOUND survives only
+because the block carries a conditional TEAM FINDINGS field
+([TEMPLATE](memory/TEMPLATE.md)) and
+[handoff §1.2](skills/handoff.md#12--shut-the-team-down-full-only)
+captures it first. Read together, the three say one thing — an
+interrupt is safe for your session and fatal to your teammates,
+so their findings must already be on disk.
 
 **(b) A TEAMMATE-AUTHORED DIFF IS SELF-AUTHORED.** A teammate is
 a full session pushing as the founder, so it earns no independent

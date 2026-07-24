@@ -2176,3 +2176,99 @@ rule's agent-team clause; the reviewer's line) ·
 [IDEAS](IDEAS.md) (two lines: the chronicle layer as the first
 intended use; box-provenance stamps) ·
 [the spec](specs/agent-teams.md) + its memory · this entry.
+
+## D-056 — 2026-07 — team-aware leaving rituals — no ritual lets a live agent team outlive the sitting that made it: handoff SHUTS THE TEAM DOWN BEFORE PARKING ANYTHING and captures its findings into the record first, land states the cockpit-cannot-lead-a-team case once and routes the ground seat to handoff, pickup gains the ghost-teammate recovery note, and the ⏸ block gains what the team had found (closes D-055's deferred gap; upholds one-home and the park protocol)
+
+**Decision:** the leaving rituals learn about live teams. By
+clause:
+(1) HANDOFF SHUTS THE TEAM DOWN, in a new step BEFORE anything is
+parked
+([handoff §1.2](skills/handoff.md#12--shut-the-team-down-full-only)),
+and the ORDER inside that step is the decision: CAPTURE FIRST —
+the team's findings go into the record before a single shutdown
+request, to the open bench's memory when a bench is open, else a
+dated [IDEAS](IDEAS.md) line, per teammate (what it was working
+on, what it found, what it left unfinished) — THEN shut down by
+name, THEN report what each returned. Two honesty clauses ride
+with it: shutdown is NOT INSTANT, because a teammate finishes its
+current request or tool call first, so the step waits rather than
+assumes; and a teammate that REFUSES or HANGS is named plainly in
+THE CLOSE REPORT ON THE ROAD OUT —
+[handoff §6](skills/handoff.md#6--close-full-only) ordinarily, or
+[liftoff §7](skills/liftoff.md#7--close) when the sitting ends in
+liftoff, which skips §6 — never smoothed into a clean exit. A live team is
+never PARKED — parking is a lane act, and a lane survives on its
+branch, which is what a stamped Status holds; a team has no branch
+and no Status, so a parked team does not exist. QUIET never shuts
+a team down.
+(2) LAND STATES THE COCKPIT CASE ONCE AND POINTS. A cockpit does
+not lead a team, and the basis is stated as what it is — POLICY,
+not a platform limit:
+[D-055](#d-055--2026-07--agent-teams--the-boundary-teams-are-for-exploration-and-review-at-a-ground-seat-lanes-remain-the-authorship-mechanism-two-risks-become-law-single-sitting-only--an-explicit-carve-out-to-d-050s-interrupt-promise--and-a-teammate-authored-diff-is-self-authored-under-no-solo-approval-the-reviewers-model-settled-by-verification-not-guess-the-founder-side-config-recorded-upholds-the-lane-law-no-solo-approval-and-one-home-gives-the-experimental-flag-its-consumer)
+puts teams at a ground seat and makes lanes the cloud's
+parallelism. The platform would let any session spawn teammates;
+the boundary is what says a cockpit does not. Resting the rule on
+one-team-per-session instead would have founded it on a mechanism
+that does not imply it and could change — so neither MODE R nor
+MODE P has a team to shut down, and land carries no team
+procedure at all, only the routing line to handoff.
+(3) PICKUP GAINS THE GHOST-TEAMMATE NOTE
+([pickup §2](skills/pickup.md#2--self-heal)), one paragraph: a
+session reached by `/resume` or `/rewind` can inherit a lead whose
+teammates are gone — the config still lists members, the processes
+are dead. Say so, offer fresh teammates, never message the ghosts
+and never report their silence as progress. A recovery note, not a
+ritual step.
+(4) THE ⏸ BLOCK GAINS ONE CONDITIONAL FIELD
+([TEMPLATE](memory/TEMPLATE.md)): TEAM FINDINGS, written only when
+a team was live at the pause — the one field git cannot
+re-derive, since teammates do not survive the SITTING (`/resume`
+and `/rewind` do not restore them) and their transcripts die with
+them. Omitted entirely when no team was
+running.
+**Why:** [D-055](#d-055--2026-07--agent-teams--the-boundary-teams-are-for-exploration-and-review-at-a-ground-seat-lanes-remain-the-authorship-mechanism-two-risks-become-law-single-sitting-only--an-explicit-carve-out-to-d-050s-interrupt-promise--and-a-teammate-authored-diff-is-self-authored-under-no-solo-approval-the-reviewers-model-settled-by-verification-not-guess-the-founder-side-config-recorded-upholds-the-lane-law-no-solo-approval-and-one-home-gives-the-experimental-flag-its-consumer)
+made single-sitting-only law and left it enforced by nothing: a
+rule documented in two surfaces and acted on by no ritual is a
+rule that will be broken the first time a team is running when the
+founder says "done for today". And the loss it prevents is not the
+one the wording first suggests. Teammates are cheap — they die
+cheaply and respawn cheaply, and the IDEAS candidate line that
+opened this bench ("a live team is finished or shut down, never
+parked") stopped at the processes. What cannot be re-derived is
+what the team FOUND, because a team's output lives in transcripts
+that vanish with the session while git keeps everything else. So
+the duty inverts: capture, then kill. That inversion is the
+decision; the prohibition survives inside it.
+**Alternatives rejected, each with its reason:** auto-shutdown
+without reporting — a silent teardown is fast and loses exactly
+the thing worth keeping; the findings and the refusals are the
+output, and a ritual that swallows them is worse than one that
+does nothing, because it looks clean · trying to persist a team
+across sittings — no mechanism exists and the official docs are
+explicit that `/resume` and `/rewind` do not restore in-process
+teammates; building bookkeeping on a capability that does not
+exist would fail silently, which is the failure mode this
+workshop spends the most effort avoiding · duplicating the
+shutdown procedure into land — one home; land has no team to host
+BY THE BOUNDARY, so a copy there would be a procedure that can
+never run,
+drifting quietly out of step with the one that can.
+**Affects:**
+[handoff §1.2](skills/handoff.md#12--shut-the-team-down-full-only)
+(new) + [§6](skills/handoff.md#6--close-full-only)'s close line ·
+[land](skills/land.md#teams--not-this-rituals-case-both-modes)
+(the routing section) ·
+[pickup §2](skills/pickup.md#2--self-heal) (the ghost note) ·
+[TEMPLATE](memory/TEMPLATE.md) (the ⏸ field) ·
+[handoff §3](skills/handoff.md#3--rewrite-the-memories-full-only)
+(the ⏸ enumeration + the never-lossy clause) ·
+[handoff §5](skills/handoff.md#5--ship-the-note) (the micro-PR
+carries an IDEAS findings line) ·
+[liftoff §1](skills/liftoff.md#1--full-handoff-first) +
+[§7](skills/liftoff.md#7--close) (the shutdown named in what
+handoff FULL does, and the close line carried by pointer — without
+it the report has nowhere to land on the liftoff road) ·
+[HOME §Agent teams](HOME.md#agent-teams) (risk (a) gains its
+enforcement pointer) · [IDEAS](IDEAS.md) (the candidate line
+closed by this PR) · [the spec](specs/team-aware-leaving.md) +
+its memory · this entry.

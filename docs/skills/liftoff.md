@@ -12,10 +12,15 @@ leaving. Control tower only. Closes the session — and hands the
 baton to the cockpit it fires (§6).
 
 ## 1 · FULL handoff first
-Run handoff FULL — origin must be whole (work pushed, every local
+Run handoff FULL — origin must be whole (work pushed, any live
+agent team captured and shut down by its
+[step 1.2](handoff.md#12--shut-the-team-down-full-only), every local
 lane parked by its step 1.5, memories rewritten, board repainted,
 micro-PR merged) before anything spawns. Skip handoff §6 entirely —
 no close report, no close-lock write; liftoff §7 is the only close.
+Because [§6](handoff.md#6--close-full-only) is skipped, ITS team
+line lands HERE instead: §7's report carries the shutdown result,
+refusals and hangs included.
 
 Sources:
 [handoff](handoff.md)
@@ -230,7 +235,11 @@ founder's status template:
 - WHAT HAPPENED — context → narrative → issue → resolution, short
   sentences, ending "N airborne, M parked · cockpit fired
   (<rung> · exit <code>) · self-seat pending — safe to walk
-  away."
+  away." When [handoff §1.2](handoff.md#12--shut-the-team-down-full-only)
+  shut a team down, this report carries
+  [handoff §6](handoff.md#6--close-full-only)'s team line verbatim
+  — that section is its single home. This report is the ONLY close
+  on the liftoff road, so a team result dropped here is lost.
 - SUPPLEMENTAL — parallel Web or Design work, if any (the step-2
   paste's threads).
 - PARALLEL/RECENT FLIGHTS — one line per lane: 🟢 all good · ⏸
