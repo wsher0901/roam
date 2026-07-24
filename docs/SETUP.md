@@ -342,26 +342,32 @@ summary, then arm the watch.
   [cloud-born-cockpit](specs/cloud-born-cockpit.md)).
 - Cloud environment (claude.ai/code settings → Environments) — the
   live environment is named **`Default`** (not "roam"; the earlier
-  name was wrong on paper only). It has NO `gh`, and that is BY
-  DESIGN, not a defect to route around: a cloud session receives a
-  SESSION-SCOPED GitHub MCP injection and no `gh` CLI (external
-  research, 2026-07-22,
-  [D-048](DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)).
-  The connector is therefore the SOLE API path, and redundancy
-  inside a session is impossible — which is why resilience is a
-  ladder out of the session
-  ([cockpit-resilience](specs/cockpit-resilience.md)), not a second
-  credential.
-  The `cli.github.com` 403 that
-  [#193](https://github.com/wsher0901/roam/pull/193) recorded was
-  the SYMPTOM of that design, not the cause; it still matters
-  operationally, because attempting the install fails the WHOLE
-  setup script with exit 100 — which also surfaced the image's
-  pre-existing `deadsnakes`/`ondrej` PPAs failing the same way.
-  Prune those, and the setup script must NOT attempt a `gh`
-  install. This corrects the flight-1 note carried by
-  [D-047](DECISIONS.md#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law),
-  which asked for exactly the install that cannot succeed.
+  name was wrong on paper only). Its setup script installs `gh`
+  from the UBUNTU ARCHIVE —
+  `apt update || true && apt install -y gh || true` — and gh
+  AUTHENTICATES AUTOMATICALLY through the session's GitHub proxy:
+  `GH_TOKEN` is the literal 14-character placeholder
+  `proxy-injected` and the proxy substitutes real credentials in
+  transit
+  ([D-049](DECISIONS.md#d-049--2026-07--gh-second-path--gh-api-rest-through-the-github-proxy-is-the-cockpits-second-api-path-a-connector-flap-stops-costing-command-r2-gains-the-automatic-gh-rung-self-id-by-session-env-amends-d-048-corrects-the-193-api-map-upholds-d-047-and-verify-before-rely),
+  probe-proven 2026-07-23). The path is REST-SHAPED: `gh api`
+  calls work repo-scoped; porcelain riding GraphQL (`gh pr list`)
+  is proxy-blocked against a pinned set of PR-review operations,
+  the proxy's own 403 pointing to REST. A foreign repo answers a
+  scoped 403 naming `add_repo` — the attached-repo boundary
+  holds. The session ALSO receives its SESSION-SCOPED GitHub MCP
+  injection — two API paths, one credential boundary.
+  History of the reading, kept honest: the `cli.github.com` 403
+  that [#193](https://github.com/wsher0901/roam/pull/193)
+  recorded (exit 100, the whole setup script failing) was a WRONG
+  APT SOURCE, not a design wall — `cli.github.com` is
+  egress-blocked where the Ubuntu archive is allowlisted; the
+  "no gh BY DESIGN, MCP the sole path" reading
+  ([D-048](DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)'s
+  premise, community-sourced) fell to the official docs plus the
+  live probe. The image's pre-existing `deadsnakes`/`ondrej` PPA
+  failures remain real — the `|| true` guards keep them from
+  failing the script.
 - Summon workflow (`.github/workflows/summon.yml`) — rung 4 of the
   connector ladder, LIVE
   ([D-048](DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)).
@@ -434,10 +440,13 @@ verify every claim against origin before acting; git outranks it.
    seat-stamp that is not yours supersedes you: push what
    exists, write nothing more.
 
-THE CONNECTOR LADDER (D-048). Your GitHub MCP connector is your
-ONLY API path — no gh exists in a cloud session, by design — so
-losing it costs you command while leaving you a full author.
-Climb in order.
+THE CONNECTOR LADDER (D-048, amended by D-049). You have TWO API
+paths: your GitHub MCP connector, and gh through the session's
+GitHub proxy — REST-shaped, gh api calls only; porcelain riding
+GraphQL (gh pr list) is proxy-blocked, its own 403 pointing to
+REST. A single flap costs you nothing while the other path
+holds; only both paths dead cost you command while leaving you a
+full author. Climb in order.
 
 R0 · PREVENT. Never sleep on one long monitor while waiting.
    POLL on a cadence instead: fetch origin, re-read the lane's
@@ -454,14 +463,25 @@ R2 · REPAIR IN PLACE.
    (a) Retry the failed call ONCE — the client auto-reconnects
        with backoff (about five attempts) before marking a
        server failed, so the retry may simply succeed.
-   (b) Try to revive it from the shell: run `claude mcp list`,
-       and any reconnect/restart subcommand your installed
-       version exposes — read `claude mcp --help` FIRST and
-       never guess a flag. Whether a session can revive its own
-       injected connector this way is UNPROVEN; if it works,
-       say so plainly so the answer reaches the record.
-   (c) If it cannot be revived, TELL THE FOUNDER — as its own
-       turn, this text alone, never buried in a paragraph:
+   (b) THE gh RUNG (D-049, automatic): retry the SAME act via
+       the second path — gh api REST through the proxy (shape:
+       gh api repos/OWNER/REPO/pulls), never porcelain that
+       rides GraphQL (gh pr list is proxy-blocked; its 403
+       points to REST). Probe with an API READ first — gh api
+       user or equivalent, NEVER an env-var echo: permission
+       classifiers treat GH_TOKEN as a secret and block the
+       echo. If gh succeeds, command CONTINUES — report the
+       flap in the same turn and carry on; the climb ends here.
+   (c) Try to revive the connector from the shell: run
+       `claude mcp list`, and any reconnect/restart subcommand
+       your installed version exposes — read `claude mcp --help`
+       FIRST and never guess a flag. Whether a session can
+       revive its own injected connector this way is UNPROVEN;
+       if it works, say so plainly so the answer reaches the
+       record.
+   (d) Only when BOTH paths are dead and revival failed, TELL
+       THE FOUNDER — as its own turn, this text alone, never
+       buried in a paragraph:
        "⚠️ CONNECTOR DOWN — type /mcp in this thread to retry
        the GitHub server, then reply 'retry'. I keep authoring
        meanwhile; nothing is lost."
@@ -489,7 +509,9 @@ R4b · SUPERSESSION. Never let the founder command a dead
      after deriving state is a board repaint that marks the
      predecessor landed · superseded with its session URL and
      seats you — the board must always name exactly one live
-     cockpit.
+     cockpit. Your OWN url, here and at any seating, is derived
+     from the session env (D-049), never scraped from a console:
+     https://claude.ai/code/${CLAUDE_CODE_REMOTE_SESSION_ID/#cse_/session_}
 ```
 
 ### The cockpit's API dependency map + recovery rung
@@ -509,17 +531,33 @@ is still a full AUTHOR.
 merge · read check runs. A cockpit that has lost the API has lost
 COMMAND.
 
-The cockpit's ONLY API path is its **GitHub MCP connector**. There
-is no fallback underneath it: `gh` is unavailable in the cloud
-environment and cannot be installed (above), and the session's own
-`GITHUB_TOKEN` returns 401. So a single connector flap demotes a
-cockpit from commander to author — not a degraded mode, a
-different job.
+The cockpit has TWO API paths
+([D-049](DECISIONS.md#d-049--2026-07--gh-second-path--gh-api-rest-through-the-github-proxy-is-the-cockpits-second-api-path-a-connector-flap-stops-costing-command-r2-gains-the-automatic-gh-rung-self-id-by-session-env-amends-d-048-corrects-the-193-api-map-upholds-d-047-and-verify-before-rely),
+probe-proven 2026-07-23): the **GitHub MCP connector**, and
+**`gh api` REST through the session's GitHub proxy** (the
+environment entry above carries the mechanics). Each API-only act
+— open a PR · apply a label · merge · read check runs — runs on
+either path; the second is REST-SHAPED, so it is always a
+`gh api` call, never porcelain that rides GraphQL (`gh pr list`
+is proxy-blocked, its own 403 pointing to REST). What stays true:
+the raw `GH_TOKEN`/`GITHUB_TOKEN` is a placeholder — a script
+reading it directly still 401s; only gh-through-proxy works. So a
+single connector flap no longer demotes a cockpit from commander
+to author — R2's gh rung carries the act and command continues;
+only BOTH paths dead demote, and then the recovery rungs below
+apply.
+
+One free audit link rides every commit either way: from CLI
+v2.1.179 the harness appends an automatic `Claude-Session:` git
+trailer naming the authoring session — any commit on origin can
+be traced back to the session that wrote it without any scraping.
 
 **Recovery rung, in order:**
 
-1. **Retry the connector once.** Flaps are often transient; one
-   retry, then stop guessing.
+1. **Retry the connector once, then the gh rung.** Flaps are
+   often transient: one retry, then the SAME act via `gh api`
+   (the charter's R2). If gh carries it, command continues and
+   the rungs below never fire — they exist for BOTH paths dead.
 2. **At a desk — hand the baton back.** Land: final board repaint,
    park the tail with its reason written down, hand the baton to
    the control tower, which has `gh` and finishes the merge. (This

@@ -1624,3 +1624,88 @@ clause 8 (the staged button resolves) ·
 [D-047](#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law)
 (upheld: `--cloud` stays primary; the routine is the rescue
 vehicle) · this entry.
+
+## D-049 — 2026-07 — gh second path — gh api REST through the GitHub proxy is the cockpit's second API path; a connector flap stops costing command; R2 gains the automatic gh rung; self-ID by session env (amends D-048, corrects the #193 API map, upholds D-047 and verify-before-rely)
+
+**Decision:** the cockpit has a SECOND API path — `gh` through the
+GitHub proxy, REST-shaped — and a connector flap stops costing
+command. By clause:
+(1) THE SECOND PATH IS REAL AND REST-SHAPED, adopted on live
+evidence, not docs (the probe of 2026-07-23,
+[#207](https://github.com/wsher0901/roam/pull/207), plus the
+founder-witnessed REST read): `gh` 2.45.0 installs from the
+UBUNTU ARCHIVE (allowlisted) via the cloud environment's setup
+script — `apt update || true && apt install -y gh || true` — and
+authenticates AUTOMATICALLY through the proxy: `GH_TOKEN` is the
+literal 14-character placeholder `proxy-injected`, and the proxy
+substitutes real credentials in transit. `gh api` REST works
+repo-scoped: `gh api user` answered the authenticated login;
+`gh api repos/wsher0901/roam/pulls` answered this repo's open PR
+(founder-witnessed, 2026-07-23). Porcelain riding GraphQL is
+PROXY-BLOCKED: `gh pr list` 403s against a pinned set of
+PR-review operations, and the proxy's own message points to REST.
+The second path is therefore written REST-SHAPED everywhere: the
+path is `gh api`, never bare porcelain.
+(2) WHAT STAYS TRUE: the raw token is a placeholder — a script
+reading `GH_TOKEN`/`GITHUB_TOKEN` directly still 401s; only
+gh-through-proxy works. The attached-repo boundary holds: a
+foreign repo answers a scoped 403 naming `add_repo`. And
+permission classifiers treat `GH_TOKEN` as a SECRET — any gh
+probe is an API READ (`gh api user` or equivalent), never an
+env-var echo, which the classifier lawfully blocks.
+(3) THE API MAP IS CORRECTED: merge · label · PR-open · CI-read
+each now have TWO paths — the MCP connector, and `gh api` REST
+through the proxy. A single connector flap no longer demotes a
+cockpit from commander to author; only BOTH paths dead do.
+(4) R2 GAINS THE AUTOMATIC gh RUNG, between the MCP retry and
+the shell revival: on MCP failure, retry the SAME act via
+`gh api`; if it succeeds, command CONTINUES — report the flap in
+the same turn and carry on. The founder-facing CONNECTOR DOWN
+message and the self-rescue drop one rung deeper.
+(5) SELF-ID BY SESSION ENV: successor-duty and board seating use
+the documented self-URL —
+`https://claude.ai/code/${CLAUDE_CODE_REMOTE_SESSION_ID/#cse_/session_}`
+— replacing console-buffer scraping wherever a session states its
+OWN url. (The tower reading ANOTHER session's birth output over
+`CONOUT$` is untouched — that is D-047's recipe for a session it
+cannot ask.) The automatic `Claude-Session:` git trailer (CLI
+v2.1.179+) is noted in SETUP as the free audit link from any
+commit back to its authoring session.
+**Why — the honest three-revision history, kept because each
+revision was once written as certain:** FIRST reading
+([#193](https://github.com/wsher0901/roam/pull/193)): the `gh`
+install is EGRESS-BLOCKED — the `cli.github.com` 403 failed the
+whole setup script with exit 100, so "the setup script must not
+attempt a gh install." SECOND reading
+([D-048](#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047),
+sourced from a community report): no `gh` BY DESIGN, the MCP
+connector the SOLE API path, redundancy in-session impossible.
+THIRD reading (the official docs, then the probe): installable
+AND proxy-authenticated — the earlier failure was the WRONG APT
+SOURCE, not a design wall; the Ubuntu archive is allowlisted
+where `cli.github.com` is egress-blocked. The correction rode
+evidence: verify-before-rely, upheld. D-048's LADDER architecture
+survives intact — resilience still ends OUTSIDE the session — but
+its bottom premise softens: the ladder is climbed less often,
+because R2 now usually ends the climb.
+**Rejected:** BARE-PORCELAIN WORDING for the map ("gh works") —
+the probe proved porcelain-GraphQL is blocked; writing the path
+REST-shaped is what keeps a future seat from rediscovering the
+403 · ENV-VAR-ECHO PROBES — blocked by permission classifiers and
+needless when an API read answers more.
+**Affects:**
+[SETUP §cloud accounts](SETUP.md#once-and-done--cloud-accounts)
+(the environment entry's no-gh premise reversed · the charter's
+connector-ladder preamble + R2 · the API dependency map's
+two-path rewrite · the self-URL + trailer notes) ·
+[liftoff §6](skills/liftoff.md#6--ledger-handoff--fire-the-cockpit)
+(the seating parenthetical gains the self-URL) ·
+[liftoff §7](skills/liftoff.md#7--close) (the `/tasks` + teleport
+line) · [cockpit-resilience](specs/cockpit-resilience.md) +
+[flight-hardening](specs/flight-hardening.md) (dated supersession
+notes on the overturned premises — record kept) ·
+[D-048](#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)
+(amended: the ladder keeps its shape, R2 gains the gh rung) ·
+[D-047](#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law)
+(upheld: `--cloud` births and the console-attach recovery are
+untouched) · this entry.

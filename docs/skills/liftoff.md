@@ -198,7 +198,13 @@ ladder, evidence order (gate 0b, [D-047](../DECISIONS.md#d-047--2026-07--cloud-b
 
 Record the rung that birthed the cockpit + the returned session
 URL for the §7 close line (the cockpit adds its own Sessions row
-at its first repaint). A failed rung falls to the next with its
+at its first repaint — its OWN url derived from the session env
+per
+[D-049](../DECISIONS.md#d-049--2026-07--gh-second-path--gh-api-rest-through-the-github-proxy-is-the-cockpits-second-api-path-a-connector-flap-stops-costing-command-r2-gains-the-automatic-gh-rung-self-id-by-session-env-amends-d-048-corrects-the-193-api-map-upholds-d-047-and-verify-before-rely),
+`https://claude.ai/code/${CLAUDE_CODE_REMOTE_SESSION_ID/#cse_/session_}`,
+never scraped from a console; the tower's console-attach read of
+a BIRTH's output stays — that is for a session it cannot ask). A
+failed rung falls to the next with its
 failure recorded in the close line — nothing silently parked.
 
 This ladder BIRTHS a cockpit; a cockpit that loses its GitHub
@@ -215,7 +221,9 @@ Sources:
 
 ## 7 · Close
 Report "N airborne, M parked · cockpit <url or fallback> — safe
-to walk away." Then, as the ritual's LAST act, write
+to walk away." At the tower, `/tasks` lists the cloud sessions
+and `t` teleports into one — the flight stays reachable from any
+later terminal. Then, as the ritual's LAST act, write
 `.claude/session-closed` with content "Closed at liftoff · ledger
 #<N> · <date> · <seat>" — the close-lock. End the session. The
 baton is now the cockpit's for the flight
