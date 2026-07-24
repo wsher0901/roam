@@ -5,7 +5,7 @@ title: Self-seat birth — liftoff fires --cloud blind; the cockpit seats itself
 status: open
 stage: workshop
 branch: docs/self-seat-birth
-pr: —
+pr: 213
 opened: 2026-07-24
 shipped: —
 ---
@@ -104,20 +104,20 @@ under us.
 
 ## Done means
 
-- [ ] `CONOUT` and `console` absent from liftoff §6's rung 1
+- [x] `CONOUT` and `console` absent from liftoff §6's rung 1
       (records excepted); the blind-fire shape written; §7's
       close line carries "self-seat pending", no URL.
-- [ ] SETUP's inventory copy of the automated shape aligns with
+- [x] SETUP's inventory copy of the automated shape aligns with
       rung 1 (no attach, no capture).
-- [ ] The self-seat duty in the charter's rule 1 with the rule-7
+- [x] The self-seat duty in the charter's rule 1 with the rule-7
       foreign-stamp collision case.
-- [ ] The failure shape present in BOTH homes (missing push =
+- [x] The failure shape present in BOTH homes (missing push =
       the signal; /tasks · list · retry; the stale row honest).
-- [ ] D-051 in DECISIONS, house style, the trade and the
+- [x] D-051 in DECISIONS, house style, the trade and the
       retirement dated.
-- [ ] The two record notes extended by one dated sentence each —
+- [x] The two record notes extended by one dated sentence each —
       note only.
-- [ ] `check:links` · `check:ledger` · `check:memory` green.
+- [x] `check:links` · `check:ledger` · `check:memory` green. (2026-07-24, home PC, on the completion tree.)
 - [ ] Full CI mirror green locally AND the pushed head's Actions
       run green.
 - [ ] [ship §6](../skills/ship.md) critic runs; verdict rides to
@@ -134,7 +134,8 @@ response-doctrine bench (D-052) opens once this welds — its STEP
 
 ## Deviations
 
-<filled by /ship: anything done differently than planned — or "none">
+- The rung-1 grep's single surviving "console" hit sits inside D-051's own anchor slug — the unavoidable-and-harmless class [#204](https://github.com/wsher0901/roam/pull/204) adjudicated for the D-046 slug; recorded rather than worked around.
+- Everything else landed as specified.
 
 ## Open questions
 
