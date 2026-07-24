@@ -40,8 +40,15 @@ placeholder — only gh-through-proxy works. Contract and mandate:
   cockpit routine box from the updated charter master (it gained
   the R2 gh rung and the self-URL line) · archive the FOUR probe
   sessions (§Where to look).
-- The `claude/*` tripwire stayed clean throughout — origin
-  carries only `main` and this bench.
+- **The `claude/*` tripwire FIRED LATE, harmlessly:** five
+  session-workspace branches surfaced on origin after the flight
+  — one per session of this outing (the four probes + the
+  founder's 4b session) — each tip a commit already on `main` or
+  this bench, ZERO unique work verified per branch. They were
+  absent from the mid-flight check: the platform creates them
+  lazily, so a probe-cleanup tripwire must re-run at the GATE,
+  not only mid-flight. Held for the founder's word: delete the
+  five when archiving the five sessions.
 
 ## Left / idle
 
@@ -174,6 +181,16 @@ one gh correction corrected in turn, its other eight standing) and
 the four findings into [IDEAS](../IDEAS.md). The sole-path grep
 came back clean on the finished tree: every surviving hit is
 record, a note quoting what it overturns, or D-049's own history.
+
+**The tripwire's late fire.** At the pre-gate fetch, FIVE
+`claude/*` workspace branches surfaced on origin — one per
+session of this outing, none present at the mid-flight check.
+Each was verified zero-unique-work (tips are this bench's birth
+commit or main's tip — the platform branches a session's
+workspace from the repo head at its birth, lazily). Harmless, and
+a lesson: the platform creates workspace branches AFTER a check
+can pass, so the cleanup tripwire belongs at the gate too. The
+five ride to the founder with the session archives.
 
 ## Where to look
 
