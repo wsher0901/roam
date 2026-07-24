@@ -2,12 +2,12 @@
 type: spec
 id: landing-skill
 title: The landing skill — how a flight ends becomes a first-class ritual ([D-054](../DECISIONS.md#d-054--2026-07--the-landing-skill--how-a-flight-ends-becomes-a-first-class-ritual-one-skill-with-two-modes-routed-by-fleet-state-retire--pause-and-transfer-the-fence-is-a-commit-so-the-resume-point-is-the-branch-tip-by-construction-wake-lock-mediated-with-its-honesty-clause-the-board-is-the-single-transfer-material-pickup-gains-the-fleet-resume-ask-and-its-cap-arithmetic-sessions-are-cattle-branches-are-the-work-charter-rule-6-becomes-a-pointer-the-effort-doctrine-moves-to-opus-5--xhigh-upholds-the-wake-lock-the-park-protocol-and-one-home-supersedes-the-opus-48-reliance-pair))
-status: open
+status: shipped
 stage: workshop
 branch: docs/landing-skill
 pr: 221
 opened: 2026-07-24
-shipped: —
+shipped: 2026-07-24 15:20
 ---
 
 # landing-skill — one skill, two modes, and the fence
@@ -91,7 +91,9 @@ a grounded fleet is resumable from any seat.
 pointer line) · `.claude/skills/land/SKILL.md` (new) ·
 `.claude/skills/handoff/SKILL.md` · [docs/SETUP.md](../SETUP.md) ·
 [docs/HOME.md](../HOME.md) · [docs/DECISIONS.md](../DECISIONS.md) ·
-this spec + [the memory](../memory/landing-skill.md) ·
+this spec +
+[the memory](../history/workshop/mechanism/landing-skill.md)
+(moved to history/ at the weld) ·
 [DASHBOARD](../DASHBOARD.md) via the ship tail.
 
 TWO ripples beyond that list, both required by the retroactivity
@@ -159,9 +161,14 @@ live file from contradicting this bench.
 
 ## Open questions
 
-1. `.claude/agents/reviewer.md` pins `model: sonnet` · `effort:
-   high`. The new doctrine says Opus 5 · xhigh is the default for
-   ALL work INCLUDING REVIEWS — which reads as covering the
-   ship-time critic. The file is outside this bench's mandate and
-   the change carries a real cost, so it is NOT edited here: the
-   founder's call at THE GATE.
+None — the one raised was ANSWERED at the gate. `.claude/agents/reviewer.md`
+keeps `model: sonnet` · `effort: high`: the effort doctrine governs
+SURFACES AND SESSIONS, not subagent internals, so there is no
+contradiction with
+[D-054](../DECISIONS.md#d-054--2026-07--the-landing-skill--how-a-flight-ends-becomes-a-first-class-ritual-one-skill-with-two-modes-routed-by-fleet-state-retire--pause-and-transfer-the-fence-is-a-commit-so-the-resume-point-is-the-branch-tip-by-construction-wake-lock-mediated-with-its-honesty-clause-the-board-is-the-single-transfer-material-pickup-gains-the-fleet-resume-ask-and-its-cap-arithmetic-sessions-are-cattle-branches-are-the-work-charter-rule-6-becomes-a-pointer-the-effort-doctrine-moves-to-opus-5--xhigh-upholds-the-wake-lock-the-park-protocol-and-one-home-supersedes-the-opus-48-reliance-pair)'s
+clause 7 to fix. It rides the AGENT TEAMS bench, where it is
+decided beside a widening fact (a subagent definition spawned as a
+team teammate honors its OWN `model` and `tools`, so that line
+governs the critic AND any review teammate) and with the alias
+question verified rather than guessed — story:
+[history](../history/workshop/mechanism/landing-skill.md).
