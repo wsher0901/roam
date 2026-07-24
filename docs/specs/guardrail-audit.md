@@ -5,7 +5,7 @@ title: Guardrail audit — the harness at best practice; two promotions and the 
 status: open
 stage: workshop
 branch: docs/guardrail-audit
-pr: —
+pr: 218
 opened: 2026-07-24
 shipped: —
 ---
@@ -63,14 +63,14 @@ proof as D-053 — the audit AS the record.
 
 ## Done means
 
-- [ ] The verification block present in LAWS, labeled, ordered,
+- [x] The verification block present in LAWS, labeled, ordered,
       copy-runnable; the sync-first and Actions-green clauses
       intact around it; zero semantic change.
-- [ ] Both stub descriptions carry their new clause; grep
+- [x] Both stub descriptions carry their new clause; grep
       confirms no other stub changed.
-- [ ] D-053 in DECISIONS, house style, the audit's findings and
+- [x] D-053 in DECISIONS, house style, the audit's findings and
       the rejected list with reasons; the IDEAS line appended.
-- [ ] `check:links` · `check:ledger` · `check:memory` green.
+- [x] `check:links` · `check:ledger` · `check:memory` green. (2026-07-24, home PC, on the completion tree.)
 - [ ] Full CI mirror green locally AND the pushed head's Actions
       run green.
 - [ ] [ship §6](../skills/ship.md) critic runs; verdict rides to
@@ -83,7 +83,7 @@ box re-save. The queue: THE CHRONICLE LAYER (its own chat).
 
 ## Deviations
 
-<filled by /ship: anything done differently than planned — or "none">
+none — the three items landed exactly as mandated; the diff-stat proves the two stubs are the only .claude/skills/ changes.
 
 ## Open questions
 

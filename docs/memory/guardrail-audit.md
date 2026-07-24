@@ -1,17 +1,23 @@
 ---
 type: memory
 id: guardrail-audit
-updated: 2026-07-24 01:17 · birth · home PC
+updated: 2026-07-24 01:19 · complete · home PC
 ---
 
 # guardrail-audit — already compliant; two promotions and the proof
 
 ## Status
 
-bench ready — 2026-07-24 01:17 · control tower · home PC. Born
-bench-first from fresh `main` (`7d3c9ec`, origin verified
-main-only). Next act: implement the three mandate items from
-[the spec](../specs/guardrail-audit.md).
+complete, awaiting merge — 2026-07-24 01:19 · home PC. All three
+mandate items applied and verified: the verification loop is a
+labeled copy-runnable block in
+[LAWS §Workflow](../LAWS.md#workflow-non-negotiable) with
+sync-first and Actions-green intact around it · both stub
+descriptions carry their new clause with the diff-stat proving no
+other stub changed · D-053 records the audit as proof with the
+five rejected alternatives reasoned · the IDEAS line is in. At
+THE GATE — tower-authored, so external Web review precedes the
+founder's word. DO NOT MERGE.
 
 ## What this task is
 
@@ -32,13 +38,24 @@ record. Contract: [the spec](../specs/guardrail-audit.md).
 
 ## Left / idle
 
-The three mandate items (the spec's Plan), then verification, the
-gate. Manual acts after the weld: none.
+Nothing is left on the bench — verification is at the gate.
+Manual acts after the weld: none — the charter is untouched.
 
 ## The story
 
 **Birth.** STEP 0 held: origin heads = `main` only, the bench cut
 from `7d3c9ec`, tree clean.
+
+**The three items, flat.** The block landed as a fenced `sh`
+block inside the done-bullet — wording-only, the five commands in
+the mandate's exact order, sync-first before it and
+Actions-green after it byte-kept. The two stub lines went in as
+given; the harness picked the new descriptions up live within the
+sitting (the skill listing refreshed mid-bench — the always-loaded
+surface governs, exactly the audit's premise). D-053 wrote the
+audit as the record: compliant findings, the two promotions, the
+five rejections each with its reason, and the decide-anchor
+length filed to IDEAS as a future consideration, not now.
 
 ## Where to look
 
