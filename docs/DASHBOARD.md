@@ -6,9 +6,9 @@ status: living
 
 # Dashboard — the state surface
 
-Stamp: 2026-07-23 · 23:42 · ship · home PC
+Stamp: 2026-07-24 · 00:31 · ship · home PC
 V1 5/34 · S1 2/7 · S2 3/5 · sessions: 1 main · 0 parallel
-(0 need you) · needs-you 0
+(0 need you) · needs-you 1
 How to read this board →
 [HOME §Reading the board](HOME.md#reading-the-board)
 
@@ -33,7 +33,7 @@ frontmatter oddity is folded there too
 
 | Session | Task | State | Last push | Your move |
 |---|---|---|---|---|
-| main · control tower | — (session-lifecycle shipped [#211](https://github.com/wsher0901/roam/pull/211); no bench open) | 🟢 | 23:42 (this repaint) | — |
+| main · control tower | — (self-seat-birth shipped [#213](https://github.com/wsher0901/roam/pull/213); the response-doctrine bench opens next) | 🟢 | 00:31 (this repaint) | — |
 
 ↳ main micro: — (no active task)
 
@@ -111,6 +111,7 @@ T3–T6 source-vetting relaunch stays held (see You are here).
 
 | When | What | PR |
 |---|---|---|
+| 07-24 00:28 | [the fragilest component is deleted, not maintained (D-051): rung 1 fires `claude --cloud` BLIND — nothing captured, exit status only — and the cockpit SEATS ITSELF by its D-049 env-derived self-URL; the console-attach capture retired dated (it never failed — it was the component most likely to break silently); the missing greeting push IS the failure signal (/tasks · the list · retry), the pending row going stale honestly; the stray-collision close sharpened by the critic to a short factual note, never R4b's script; THE LIVE TEST rides the next real flight by the founder's word](history/workshop/mechanism/self-seat-birth.md) | [#213](https://github.com/wsher0901/roam/pull/213) |
 | 07-23 23:38 | [what a session's start, pause, and close leave behind (D-050): closed ≠ dead — the close-lock's wall softens to injected read-only doctrine, one doctrine in four homes and the wall hook itself (the one flagged gap file, both paths run live), full removal REJECTED, R4b + seat-stamp byte-strict; the ⏸ interrupt capture standing (block · state · pickup's "continue?" lead); the claude/* residue sweep graduates to pickup hygiene; IDEAS becomes an inbox-not-archive with the first assert-first compaction (420→266, 11 deleted enumerated, both stay-clauses exercised); chronicle layer + self-seat birth queued](history/workshop/mechanism/session-lifecycle.md) | [#211](https://github.com/wsher0901/roam/pull/211) |
 | 07-23 22:38 | [the cockpit gains a second API path (D-049): gh installs from the allowlisted Ubuntu archive and authenticates through the GitHub proxy — REST-shaped (gh api works repo-scoped; GraphQL porcelain 403s, the proxy pointing to REST); the probe flew NON-PASS on its own definition, STOP held, and the gate reopened on the founder-witnessed REST read; the API map two-pathed (only both paths dead demote), the charter R2 gains the automatic gh rung, self-ID from session env, the Claude-Session trailer noted; five findings ride first-class incl. the toolset bluff (probe-don't-assume extends to a session's own tools) and teleport-relocates-execution](history/workshop/mechanism/gh-second-path.md) | [#207](https://github.com/wsher0901/roam/pull/207) |
 | 07-23 21:29 | [the docs currency audit: the clerk sweep came back already-clean (#197 held) — the real catch was the NEXT generation of staleness: the disproven `[COCKPIT]` title line dropped from liftoff §6 + SETUP with the verify-before-rely answer recorded in place, #193's board-governs doctrine landed in HOME's manual plus three more HOME edges (FOUNDATION's writer drops the paste block, go-remote joins the skills list, §Delegation names route 1 the recorded maiden winner), cloud-born-cockpit's two disproven recipes supersession-noted beyond the known clerk set, machine-setup gains the COCKPIT_ pair as step 11; four dated notes, zero deletions, zero record-body rewrites, orphans NONE by inbound-reference census; flown across two seats through a park, adopted from origin alone](history/workshop/mechanism/currency-audit.md) | [#204](https://github.com/wsher0901/roam/pull/204) |
@@ -120,7 +121,6 @@ T3–T6 source-vetting relaunch stays held (see You are here).
 | 07-22 16:19 | [the lane-worker charter's canary line names the baton-holder: the D-046 vocabulary sweep's one missed straggler; flown as the first end-to-end flight of the assembled chain, the wake-lock catching a mistimed em-dash-vs-middot ack in flight](history/workshop/mechanism/lane-worker-baton.md) | [#191](https://github.com/wsher0901/roam/pull/191) |
 | 07-22 15:09 | [the repo stops telling a future seat to do things that cannot work: nine corrections from the first end-to-end chain flight — one canonical anchored ack token, rung 1's impossible recipe replaced by the console-attach shape that flew, the board promoted to authoritative flight plan, a git-only vs API-only dependency map, the cloud environment corrected to `Default`, one LAWS sentence fixing "non-author" to the payload diff — the gh half since corrected in turn by D-049](history/workshop/mechanism/flight-hardening.md) | [#193](https://github.com/wsher0901/roam/pull/193) |
 | 07-21 14:56 | [the cockpit's birth vehicle becomes `claude --cloud` (D-047): the automated hidden-console birth is liftoff §6's primary rung — list-native — with compose-and-hand, the routine fire, and the manual paste as fallbacks; three STOP-gates proved clone-from-GitHub and branch-create by live probe](history/workshop/mechanism/cloud-born-cockpit.md) | [#187](https://github.com/wsher0901/roam/pull/187) |
-| 07-20 22:01 | [the `.claude/` harness learns the D-046 vocabulary: the pickup stub and session-start hook name the BATON-HOLDER (control tower on the ground, cockpit in flight); flown as a label-spawned cloud lane](history/workshop/mechanism/harness-vocab-rename.md) | [#180](https://github.com/wsher0901/roam/pull/180) |
 
 Note: [#201](https://github.com/wsher0901/roam/pull/201) (liftoff
 board weld) and [#202](https://github.com/wsher0901/roam/pull/202)
