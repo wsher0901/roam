@@ -1684,7 +1684,9 @@ THIRD reading (the official docs, then the probe): installable
 AND proxy-authenticated — the earlier failure was the WRONG APT
 SOURCE, not a design wall; the Ubuntu archive is allowlisted
 where `cli.github.com` is egress-blocked. The correction rode
-evidence: verify-before-rely, upheld. D-048's LADDER architecture
+evidence: verify-before-rely, upheld.
+[D-048](#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)'s
+LADDER architecture
 survives intact — resilience still ends OUTSIDE the session — but
 its bottom premise softens: the ladder is climbed less often,
 because R2 now usually ends the climb.

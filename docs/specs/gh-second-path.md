@@ -176,8 +176,9 @@ session. **The queued next bench**, unchanged:
 - [IDEAS](../IDEAS.md) joined the file list on the founder's
   fold — the four probe findings ride first-class.
 - One verbatim-clause exception: probe (3)'s `gh api user` reply
-  is recorded by its `login` field with the public-profile body
-  elided — [LAWS §Safety](../LAWS.md#safety-non-negotiable)
+  is recorded by its `login` and public numeric `id` fields with
+  the rest of the profile body elided —
+  [LAWS §Safety](../LAWS.md#safety-non-negotiable)
   outranks the verbatim clause in a public repo.
 - FOUR probe sessions exist to archive, not one — the 4b
   follow-up burned three births on channel failures (the memory
