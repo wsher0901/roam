@@ -1711,3 +1711,76 @@ notes on the overturned premises — record kept) ·
 [D-047](#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law)
 (upheld: `--cloud` births and the console-attach recovery are
 untouched) · this entry.
+
+## D-050 — 2026-07 — session lifecycle — closed ≠ dead: the close-lock's wall softens to injected read-only doctrine; interrupt capture is standing format; the claude/* residue sweep is pickup hygiene; IDEAS is an inbox, not an archive (amends the D-046-era close-wall design, upholds the park protocol and no-solo-approval)
+
+**Decision:** what a session's start, pause, and close leave
+behind is deliberate, by four clauses:
+(1) CLOSED ≠ DEAD. The close-lock's WALL softens from a
+mechanical block (the prompt hook's exit 2, rejecting every
+post-close input) to INJECTED READ-ONLY DOCTRINE (exit 0, stdout
+as context): a closed session, addressed after its close, answers
+by fresh derivation from origin — state, explanations, pointers —
+always names the current baton-holder, and refuses every write,
+command act, and ritual. The close-lock RECORD
+(`.claude/session-closed`, written by FULL
+[handoff](skills/handoff.md) and [liftoff](skills/liftoff.md) as
+their last act; cleared by session-start) is unchanged. FULL
+REMOVAL of the lock is REJECTED — the two-writers risk the lock
+was built for is real: two sessions driving one clone corrupts
+state, and the softened wall still ends the session as a working
+seat. Strictness explicitly KEPT: a superseded cockpit stays
+TOMBSTONE-ONLY (charter R4b — a replaced cockpit is a hazard, not
+a reference desk), and the seat-stamp supersession law is
+untouched.
+(2) INTERRUPT CAPTURE is standing format. Interrupted work —
+Esc, founder redirect, or a handoff parking mid-task — leaves the
+⏸ capture block in its memory (ORIGINAL MANDATE · THE PLAN · DONE
+SO FAR · EXACT NEXT STEP · WHY PAUSED), the `interrupted` state
+in [TEMPLATE](memory/TEMPLATE.md)'s vocabulary, and a pickup
+briefing that LEADS with "⏸ INTERRUPTED — continue?". The park
+protocol holds: a lane's diary still receives only the one-line
+park stamp; the capture duty is the tower's, for tower-owned
+memories ([handoff §3](skills/handoff.md#3--rewrite-the-memories-full-only)).
+(3) THE `claude/*` RESIDUE SWEEP is pickup hygiene. Every cloud
+session lazily leaves a workspace head it cannot delete; pickup
+sweeps them on a standing rule — zero-unique-work verified per
+head, HOLD on live-session doubt (ARCHIVE-BEFORE-DELETE held),
+else delete plus the 60s prune tripwire
+([pickup §3](skills/pickup.md#3--gather-git-outranks-the-board)).
+(4) IDEAS IS AN INBOX, NOT AN ARCHIVE. At every harvest, entries
+already closed in an outing older than the current one are
+DELETED — the closing artifact (the decide, the PR, the history
+file) is the record and the ledger finds it; the two stays (a
+closed entry whose only record is itself · a partly-closed entry)
+are written into [IDEAS](IDEAS.md)' header with the rule.
+**Why:** a hard wall made a closed session's knowledge
+unreachable when the founder is exactly the person standing at
+the desk asking; softening to read-only keeps the lock's purpose
+(one driving seat per clone) while ending the pointless
+open-a-fresh-session round-trip for a question. Interrupts were
+losing their context to memory rewrites shaped for planned parks;
+the ⏸ block makes resumption exact. The residue sweep and the
+compaction turn two founder-ordered one-offs (five branches swept
+2026-07-24 · the inbox at 420 lines) into standing rules with
+their safety rails named. Decided at
+[#211](https://github.com/wsher0901/roam/pull/211)'s gate on the
+critic's routing question — the founder's word made the
+conventions decide-gated.
+**Rejected:** FULL close-lock removal (above — the two-writers
+risk is real) · sweeping a `claude/*` head that carries unique
+commits (never — surfaced to the founder instead) · compacting
+entries whose only record is themselves (the stay clause exists
+for exactly that).
+**Affects:**
+[liftoff §7](skills/liftoff.md#7--close) ·
+[handoff §3](skills/handoff.md#3--rewrite-the-memories-full-only)
++ [handoff §6](skills/handoff.md#6--close-full-only) ·
+[pickup §3](skills/pickup.md#3--gather-git-outranks-the-board) +
+[pickup §5](skills/pickup.md#5--render-the-sit-down-summary-exactly-this-shape)
+· [TEMPLATE](memory/TEMPLATE.md) (the ⏸ block + the state row) ·
+[IDEAS](IDEAS.md) (the header rule + the first compaction) ·
+[HOME](HOME.md) (two close-lock passages · the closed-≠-dead
+Terms line · the pickup portrait) ·
+`.claude/hooks/user-prompt-submit.mjs` (the wall itself) ·
+[#211](https://github.com/wsher0901/roam/pull/211) · this entry.
