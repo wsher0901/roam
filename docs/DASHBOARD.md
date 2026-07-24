@@ -6,9 +6,9 @@ status: living
 
 # Dashboard — the state surface
 
-Stamp: 2026-07-23 · 23:03 · ship · home PC
+Stamp: 2026-07-23 · 23:06 · ship · home PC
 V1 5/34 · S1 2/7 · S2 3/5 · sessions: 1 main · 0 parallel
-(0 need you) · needs-you 2
+(0 need you) · needs-you 1
 How to read this board →
 [HOME §Reading the board](HOME.md#reading-the-board)
 
@@ -19,12 +19,12 @@ How to read this board →
    [#207](https://github.com/wsher0901/roam/pull/207)'s weld
    (since 07-23).
    → [SETUP §cloud accounts](SETUP.md#once-and-done--cloud-accounts)
-2. 🟡 The home-PC seat debt, HALF-CLEARED: the version half is met
-   (claude 2.1.218), so only the `COCKPIT_` paste remains —
-   password manager first, into this seat's `.env.local`
-   (currently empty) (since 07-21).
-   → [SETUP §cloud accounts](SETUP.md#once-and-done--cloud-accounts)
-   · [machine-setup](skills/machine-setup.md) step 11
+
+The home-PC seat debt is CLEARED (07-23): claude 2.1.218 and the
+`COCKPIT_` pair pasted, masked-verified (token 108 chars
+`sk-ant-oat` shape · id 29 chars `trig_` prefix), machine-local
+and gitignored — BOTH SEATS FULLY ARMED for `fire:cockpit` and
+the summon self-rescue.
 
 The nine open engine questions stay parked in
 [ENGINE §12](ENGINE.md#12-open-register) until
