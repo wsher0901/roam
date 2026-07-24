@@ -1,24 +1,26 @@
 ---
 type: memory
 id: currency-audit
-updated: 2026-07-23 18:02 · handoff · work PC
+updated: 2026-07-23 21:07 · claimed · home PC
 ---
 
 # currency-audit — docs currency audit
 
 ## Status
 
-parked — 2026-07-23 18:02 · at handoff · work PC. The founder is
-moving to the home PC. **PART A is complete and PART B/C are fully
-analysed and written into [the spec](../specs/currency-audit.md) —
-but NO fix has been applied to any file yet.** The next seat
-implements from the spec; nothing needs re-deriving.
+claimed — control tower · home PC · 2026-07-23 21:07. Adopted from
+the 07-23 18:02 park on the founder's resume mandate, exactly as
+the park Status directed: the PART A/B/C analysis stands as
+written, and this seat now applies the eleven specified changes
+from [the spec](../specs/currency-audit.md) — seven LIVING-STALE
+fixes, four dated supersession notes — then the verification chain
+to THE GATE.
 
-Bench artifacts, all verified on origin at park:
-branch `docs/currency-audit` (e728033) · spec · this memory · draft
+Bench artifacts, all verified on origin at adoption:
+branch `docs/currency-audit` (af1f2d7) · spec · this memory · draft
 PR [#204](https://github.com/wsher0901/roam/pull/204) (OPEN, draft).
-Working tree clean, everything pushed — nothing lives only on this
-machine.
+Adoption used only what is on origin — nothing from the other seat
+was assumed to survive.
 
 ## What this task is
 
