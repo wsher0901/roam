@@ -82,7 +82,10 @@ plan · done so far · exact next step · why paused. A lane's diary
 stays the lane's — §1.5's one-line park stamp is the park
 protocol's limit.
 Commit, push, return to main. Harvest any "Ideas surfaced" lines
-from lane memories → IDEAS.
+from lane memories → IDEAS. Harvesting COMPACTS: per
+[IDEAS](../IDEAS.md)' header rule, delete entries already CLOSED
+in an outing older than the current one — the closing artifact
+(the decide, the PR, the history file) is the record.
 
 Sources:
 [IDEAS](../IDEAS.md)
