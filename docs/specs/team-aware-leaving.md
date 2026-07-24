@@ -5,7 +5,7 @@ title: Team-aware leaving rituals — no ritual lets a live team outlive its sit
 status: open
 stage: workshop
 branch: docs/team-aware-leaving
-pr: —
+pr: 225
 opened: 2026-07-24
 shipped: —
 ---
@@ -60,10 +60,12 @@ transcripts that die with it. So the duty is not "kill the team"
    refuses or hangs is reported plainly, never smoothed into a
    clean exit.
 2. **[land](../skills/land.md) — state the cockpit case ONCE and
-   point.** A cockpit cannot lead a team (one team per session; a
-   cloud session's parallelism is lanes), so both modes say that
-   plainly in one place and route the ground-seat case to
-   handoff. Zero duplicated procedure.
+   point.** A cockpit does not lead a team — by POLICY, not
+   platform limit: D-055 puts teams at a ground seat and makes
+   lanes the cloud's parallelism (corrected mid-bench; the memory
+   narrates why the first justification was wrong). Both modes
+   say that plainly in one place and route the ground-seat case
+   to handoff. Zero duplicated procedure.
 3. **[pickup](../skills/pickup.md) — the ghost-teammate note.**
    One paragraph: a resumed session may inherit a lead whose
    teammates are gone; say so and offer fresh teammates rather
@@ -84,32 +86,57 @@ transcripts that die with it. So the duty is not "kill the team"
 [DECISIONS](../DECISIONS.md) · [IDEAS](../IDEAS.md) (close the
 candidate) · this spec + [the memory](../memory/team-aware-leaving.md)
 · [DASHBOARD](../DASHBOARD.md) via the ship tail.
+PLUS, beyond the list and disclosed under Deviations:
+[liftoff](../skills/liftoff.md) §1 and §7 — without it the
+shutdown report has nowhere to land on the liftoff road.
 
 ## Done means
 
-- [ ] handoff carries the shutdown duty BEFORE the park, with the
+- [x] handoff carries the shutdown duty BEFORE the park, with the
       not-instant honesty and the refuses-or-hangs clause.
-- [ ] The findings-capture destination is named explicitly (bench
-      memory, else IDEAS) and ordered BEFORE teardown.
-- [ ] land states the cockpit-cannot-lead-a-team case ONCE and
-      points at handoff; grep confirms zero duplicated procedure.
-- [ ] pickup's note is ONE paragraph and reads as recovery, not
+      (§1.2, between §1 and §1.5; critic-confirmed on position
+      and ordering.)
+- [x] The findings-capture destination is named explicitly and
+      ordered BEFORE teardown — and SCOPED after a critic finding:
+      this session's OWN bench memory, else IDEAS, never a lane's
+      diary (which the park protocol reserves).
+- [x] land states the cockpit case ONCE and points at handoff;
+      grep confirms zero duplicated procedure. (Its justification
+      was rewritten after the critic showed the stated mechanism
+      did not imply the conclusion — the basis is policy.)
+- [x] pickup's note is ONE paragraph and reads as recovery, not
       ritual.
-- [ ] TEMPLATE's ⏸ block carries the team-findings line.
-- [ ] IDEAS' candidate line is closed, naming this PR.
-- [ ] `check:links` · `check:ledger` · `check:memory` green.
-- [ ] Full CI mirror green locally AND the pushed head's Actions
-      run green.
-- [ ] [ship §6](../skills/ship.md#6--the-gate) critic runs; the
-      report names which model ran it.
+- [x] TEMPLATE's ⏸ block carries the team-findings line, marked
+      conditional, with the preamble reconciled.
+- [x] IDEAS' candidate line is closed, naming this PR.
+- [x] `check:links` · `check:ledger` · `check:memory` green.
+      (2026-07-24, work PC.)
+- [x] Full CI mirror green locally AND the pushed head's Actions
+      run green. (Green on `01b46f8`; re-verified on the
+      post-critic head.)
+- [x] [ship §6](../skills/ship.md#6--the-gate) critic runs; the
+      report names which model ran it. (Two passes — see
+      Deviations; the mandate's premise about the model was
+      wrong and the memory records why.)
 
 ## Pending
 
-None at birth.
+None. No founder act follows this weld.
 
 ## Deviations
 
-<!-- filled by ship -->
+One ripple beyond the mandate's file list, disclosed at THE GATE:
+[liftoff](../skills/liftoff.md) §1 and §7. The critic found that
+§1.2 routed refusals and hangs to handoff §6 — which liftoff
+SKIPS — so on the liftoff road the report had nowhere to land.
+§1.2 now names the destination by road, and liftoff §7 carries
+the team clause. Taken because the alternative was shipping the
+exact silent loss this bench exists to prevent.
+
+The mandate's premise about the critic's model was wrong and is
+corrected on the record: this session STARTED BEFORE
+`reviewer.md`'s change, so its agent definition was cut with the
+old model. Two passes were run; the memory records both.
 
 ## Open questions
 

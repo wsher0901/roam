@@ -12,7 +12,9 @@ happened>
 
 Whenever the state is `interrupted`, the ⏸ capture block follows
 the Status line, EVERY field filled — a resuming seat must be able
-to continue from this block alone:
+to continue from this block alone. One field is conditional and
+named as such: TEAM FINDINGS appears only when an agent team was
+live at the pause, and is omitted entirely otherwise:
 
 **⏸ Interrupt capture**
 

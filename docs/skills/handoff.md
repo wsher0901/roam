@@ -9,7 +9,7 @@ Control tower only — lanes never run this. FULL means operations
 halt on
 this machine. Two modes.
 FULL = leaving phrase, explicit call, or liftoff's step 1.
-QUIET = ship's tail. QUIET skips steps 1.5–3 and never closes the
+QUIET = ship's tail. QUIET skips steps 1.2–3 and never closes the
 session.
 
 The interrupt doctrine: Esc interrupts any running turn safely —
@@ -38,9 +38,12 @@ irrecoverably is what they FOUND, since a team's output lives in
 transcripts that vanish with the session.
 
 1. CAPTURE FIRST, before a single shutdown request. Write the
-   team's findings INTO THE RECORD: the open bench's
-   `memory/<id>.md` when a bench is open, else a dated
-   [IDEAS](../IDEAS.md) line. Per teammate — what it was working
+   team's findings INTO THE RECORD: THIS SESSION'S OWN open
+   bench — its `memory/<id>.md` — else a dated
+   [IDEAS](../IDEAS.md) line. NEVER a lane's diary: §1.5's
+   one-line park stamp is the only thing the control tower may
+   ever write there (the park protocol), and a findings block is
+   not that line. Per teammate — what it was working
    on, what it found, what it left unfinished. A finding that
    reaches no file did not happen.
 2. THEN SHUT DOWN, BY NAME. Ask each teammate by name to shut
@@ -49,9 +52,13 @@ transcripts that vanish with the session.
 3. REPORT WHAT EACH RETURNED. Shutdown is NOT INSTANT — a
    teammate finishes its current request or tool call first, so
    this step waits rather than assuming. A teammate that REFUSES
-   or HANGS is named plainly in the close report (§6), never
-   smoothed into a clean exit: an unreported hang is precisely
-   the failure this step exists to prevent.
+   or HANGS is named plainly in the CLOSE REPORT, never smoothed
+   into a clean exit: an unreported hang is precisely the failure
+   this step exists to prevent. Which close report depends on the
+   road out — [§6](#6--close-full-only) on an ordinary handoff,
+   [liftoff §7](liftoff.md#7--close) when the sitting ends in
+   liftoff (which skips §6 entirely). Both carry it; neither may
+   drop it.
 
 A live team is never PARKED. Parking is a lane act — a lane
 survives on its branch, which is why a stamped Status can hold
@@ -118,7 +125,11 @@ PARKING INTERRUPTED WORK: when the handoff cuts a task mid-flight —
 or the task already sits interrupted by Esc or a founder redirect —
 the rewrite takes the `interrupted` state and fills the ⏸ capture
 block ([TEMPLATE](../memory/TEMPLATE.md)): original mandate · the
-plan · done so far · exact next step · why paused. A lane's diary
+plan · done so far · exact next step · why paused · and, ONLY when
+a team was live at the pause, team findings — folded in from
+§1.2's capture, which ran minutes earlier. The §3 rewrite is
+cognitive but never lossy: whatever §1.2 wrote into this memory
+survives it. A lane's diary
 stays the lane's — §1.5's one-line park stamp is the park
 protocol's limit.
 Commit, push, return to main. Harvest any "Ideas surfaced" lines

@@ -2198,13 +2198,17 @@ never PARKED — parking is a lane act, and a lane survives on its
 branch, which is what a stamped Status holds; a team has no branch
 and no Status, so a parked team does not exist. QUIET never shuts
 a team down.
-(2) LAND STATES THE COCKPIT CASE ONCE AND POINTS. A cockpit cannot
-lead a team — one team per session, no nested teams, and a cloud
-session's parallelism is lanes
-([D-055](#d-055--2026-07--agent-teams--the-boundary-teams-are-for-exploration-and-review-at-a-ground-seat-lanes-remain-the-authorship-mechanism-two-risks-become-law-single-sitting-only--an-explicit-carve-out-to-d-050s-interrupt-promise--and-a-teammate-authored-diff-is-self-authored-under-no-solo-approval-the-reviewers-model-settled-by-verification-not-guess-the-founder-side-config-recorded-upholds-the-lane-law-no-solo-approval-and-one-home-gives-the-experimental-flag-its-consumer))
-— so neither MODE R nor MODE P has a team to shut down, and land
-carries no team procedure at all, only the routing line to
-handoff.
+(2) LAND STATES THE COCKPIT CASE ONCE AND POINTS. A cockpit does
+not lead a team, and the basis is stated as what it is — POLICY,
+not a platform limit:
+[D-055](#d-055--2026-07--agent-teams--the-boundary-teams-are-for-exploration-and-review-at-a-ground-seat-lanes-remain-the-authorship-mechanism-two-risks-become-law-single-sitting-only--an-explicit-carve-out-to-d-050s-interrupt-promise--and-a-teammate-authored-diff-is-self-authored-under-no-solo-approval-the-reviewers-model-settled-by-verification-not-guess-the-founder-side-config-recorded-upholds-the-lane-law-no-solo-approval-and-one-home-gives-the-experimental-flag-its-consumer)
+puts teams at a ground seat and makes lanes the cloud's
+parallelism. The platform would let any session spawn teammates;
+the boundary is what says a cockpit does not. Resting the rule on
+one-team-per-session instead would have founded it on a mechanism
+that does not imply it and could change — so neither MODE R nor
+MODE P has a team to shut down, and land carries no team
+procedure at all, only the routing line to handoff.
 (3) PICKUP GAINS THE GHOST-TEAMMATE NOTE
 ([pickup §2](skills/pickup.md#2--self-heal)), one paragraph: a
 session reached by `/resume` or `/rewind` can inherit a lead whose
