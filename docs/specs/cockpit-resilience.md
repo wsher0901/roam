@@ -12,6 +12,20 @@ shipped: 2026-07-22 16:36
 
 # cockpit-resilience — surviving, announcing, and replacing a lost GitHub connector
 
+> **SUPERSESSION NOTE — added 2026-07-23.** This spec's premise —
+> the MCP connector is the SOLE API path, `gh` unavailable by
+> design, redundancy in-session impossible — was OVERTURNED by
+> live probe
+> ([D-049](../DECISIONS.md#d-049--2026-07--gh-second-path--gh-api-rest-through-the-github-proxy-is-the-cockpits-second-api-path-a-connector-flap-stops-costing-command-r2-gains-the-automatic-gh-rung-self-id-by-session-env-amends-d-048-corrects-the-193-api-map-upholds-d-047-and-verify-before-rely),
+> [#207](https://github.com/wsher0901/roam/pull/207)): `gh`
+> installs from the Ubuntu archive and authenticates through the
+> GitHub proxy, REST-shaped (`gh api`; GraphQL porcelain blocked).
+> The LADDER this spec built SURVIVES — resilience still ends
+> outside the session — but R2 now carries an automatic gh rung
+> and a single flap no longer costs command. The live procedure:
+> [SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts).
+> Everything below is RECORD of the D-048 decision as made.
+
 **Links:** [DECISIONS](../DECISIONS.md) ·
 [SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts) ·
 [liftoff](../skills/liftoff.md) · [IDEAS](../IDEAS.md) ·

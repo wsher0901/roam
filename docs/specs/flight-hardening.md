@@ -12,6 +12,19 @@ shipped: 2026-07-22 15:09
 
 # flight-hardening — the repo stops telling a future seat to do things that cannot work
 
+> **SUPERSESSION NOTE — added 2026-07-23.** One correction below
+> was itself corrected by live probe
+> ([D-049](../DECISIONS.md#d-049--2026-07--gh-second-path--gh-api-rest-through-the-github-proxy-is-the-cockpits-second-api-path-a-connector-flap-stops-costing-command-r2-gains-the-automatic-gh-rung-self-id-by-session-env-amends-d-048-corrects-the-193-api-map-upholds-d-047-and-verify-before-rely),
+> [#207](https://github.com/wsher0901/roam/pull/207)): "the
+> environment cannot install `gh` … the MCP connector is the sole
+> API path" read an egress block as a design wall. The
+> `cli.github.com` 403 → exit 100 this spec recorded was REAL but
+> source-specific — the Ubuntu archive is allowlisted, the setup
+> script now installs `gh` from it, and the proxy authenticates it
+> REST-shaped. The live map:
+> [SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts).
+> The other eight corrections stand. Everything below is RECORD.
+
 **Links:** [LAWS](../LAWS.md) ·
 [SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts) ·
 [liftoff](../skills/liftoff.md) ·
