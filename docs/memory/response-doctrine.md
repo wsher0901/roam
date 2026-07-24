@@ -14,7 +14,8 @@ clauses) and §Command card in HOME · the charter's fleet-table
 rule 5 with the R2 card pointer · the four-part status template
 in liftoff §7, handoff §6, and pickup §5 (the ⏸ lead above
 everything) · WEB-INSTRUCTIONS at v5 with zero "paste block" hits
-· D-052 with the founder's goal verbatim. At THE GATE —
+· [D-052](../DECISIONS.md#d-052--2026-07--response-doctrine--one-standard-for-every-surface-speaking-to-the-founder-answer-first-explicit-steps-purpose-shaped-explanation-live-derived-state-glyph-verdicts-the-command-card-the-fleet-table-report-the-ritual-status-templates-web-instructions-v5-ships-retires-the-v4-paste-block-loop-master-upholds-d-046s-cc-direct-doctrine-and-the-derivation-law)
+with the founder's goal verbatim. At THE GATE —
 tower-authored, so external Web review precedes the founder's
 word. DO NOT MERGE.
 
@@ -95,7 +96,7 @@ around it.
 **One verification nuance worth keeping:** the "references, never
 copies" check was run as a negative grep for clause-(b)'s
 distinctive phrasing ("state the word") outside HOME, v5, and
-D-052 — zero hits; the rituals carry only the section name and
+the D-052 entry — zero hits; the rituals carry only the section name and
 the clause labels.
 
 ## Where to look
