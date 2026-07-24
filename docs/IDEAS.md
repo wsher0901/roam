@@ -288,3 +288,10 @@ whole.
   Trade to weigh: a dead-at-birth session leaves no board URL;
   mitigations — `/tasks` lists it, and the missing greeting IS the
   signal. Its own small bench, next after session-lifecycle.
+- 2026-07-24 (the founder, the guardrail audit —
+  [D-053](DECISIONS.md#d-053--2026-07--guardrail-audit--the-harness-found-already-at-best-practice-against-anthropics-guidance-two-promotions-ship-the-verification-loop-as-a-copy-runnable-block-in-laws-two-stub-descriptions-sharpened-five-alternatives-rejected-with-reasons-upholds-the-routing-law-and-one-home)):
+  the four ~300-character decide-anchor links in
+  [LAWS](LAWS.md) cost context and vault readability every
+  session — a weave-rule-compatible shortening pattern (a stable
+  short anchor per D-number, or an anchor-alias convention) is a
+  future consideration, not now.

@@ -100,8 +100,18 @@ founder.
   implementation calls are not decisions; they go in the task's
   memory file.
 - Before saying "done": sync the branch with current main (merge,
-  never rebase), then run the full CI mirror (lint · format · links ·
-  ledger · memory · tests · build) and fix failures; "done" also requires the
+  never rebase), then the verification loop, fixing failures as
+  they surface. Verification, exact order, before any "done":
+
+  ```sh
+  npm run check:links
+  npm run check:ledger
+  npm run check:memory
+  npm run lint && npm run format:check
+  npm test && npm run build
+  ```
+
+  "done" also requires the
   pushed commit's Actions run green — local green never suffices.
 - If the founder forgets any of this, do it anyway without being asked.
 - Pacing law:
