@@ -1,45 +1,47 @@
 ---
-type: memory
+type: history
 id: team-aware-leaving
-updated: 2026-07-24 17:12 · ship §6 critic repairs · work PC
+updated: 2026-07-24 17:21 · weld · work PC
+shipped: 2026-07-24 17:21
+pr: 225
 ---
 
 # team-aware-leaving — the rituals learn about live teams (D-056)
 
 ## Status
 
-complete, awaiting merge — payload written and the full gate run
-green locally on 2026-07-24 at the work PC; the critic run and
-every finding repaired. PR
-[#225](https://github.com/wsher0901/roam/pull/225). Tower-authored,
-so the no-solo-approval law puts an external Web review before the
-founder's word. Branch `docs/team-aware-leaving`, born from
+shipped — merged [#225](https://github.com/wsher0901/roam/pull/225)
+on 2026-07-24 at the work PC. Tower-authored, so the
+no-solo-approval law put an external Web review before the
+founder's word: PASS on `fc4dcf7`, ten files, gates re-run
+independently (links 3095/0 · ledger 96↔96 · memory valid ·
+Actions green). Branch `docs/team-aware-leaving`, born from
 `27415fa` with origin carrying `main` alone and zero open PRs.
 
 ## What this task is
 
 One theme: no ritual lets a live agent team outlive the sitting
 that made it.
-[D-055](../DECISIONS.md#d-055--2026-07--agent-teams--the-boundary-teams-are-for-exploration-and-review-at-a-ground-seat-lanes-remain-the-authorship-mechanism-two-risks-become-law-single-sitting-only--an-explicit-carve-out-to-d-050s-interrupt-promise--and-a-teammate-authored-diff-is-self-authored-under-no-solo-approval-the-reviewers-model-settled-by-verification-not-guess-the-founder-side-config-recorded-upholds-the-lane-law-no-solo-approval-and-one-home-gives-the-experimental-flag-its-consumer)
+[D-055](../../../DECISIONS.md#d-055--2026-07--agent-teams--the-boundary-teams-are-for-exploration-and-review-at-a-ground-seat-lanes-remain-the-authorship-mechanism-two-risks-become-law-single-sitting-only--an-explicit-carve-out-to-d-050s-interrupt-promise--and-a-teammate-authored-diff-is-self-authored-under-no-solo-approval-the-reviewers-model-settled-by-verification-not-guess-the-founder-side-config-recorded-upholds-the-lane-law-no-solo-approval-and-one-home-gives-the-experimental-flag-its-consumer)
 made single-sitting-only law and left it unenforced — handoff
 parks lanes, land fences them, neither mentioned a team. This
-bench gives [handoff](../skills/handoff.md) the
-shutdown-and-capture duty, gives [land](../skills/land.md) the
+bench gives [handoff](../../../skills/handoff.md) the
+shutdown-and-capture duty, gives [land](../../../skills/land.md) the
 cockpit case with a routing line, gives
-[pickup](../skills/pickup.md) a ghost-teammate recovery note, and
+[pickup](../../../skills/pickup.md) a ghost-teammate recovery note, and
 gives the ⏸ block the one field a dead team leaves behind.
-Contract: [the spec](../specs/team-aware-leaving.md).
+Contract: [the spec](../../../specs/team-aware-leaving.md).
 
 ## Pending issues
 
 None open. The one ripple beyond the mandate's file list —
-[liftoff](../skills/liftoff.md) — is described in the story and
+[liftoff](../../../skills/liftoff.md) — is described in the story and
 disclosed at the gate.
 
 ## Left / idle
 
-Nothing. The payload is complete; what remains is the external
-Web review of this tower-authored diff, then the founder's word.
+Nothing. Shipped whole; the one deferred item is the
+superseded-seat road below, filed to IDEAS with candidate fixes.
 
 ## The story
 
@@ -49,7 +51,7 @@ zero open PRs.
 
 THE CANDIDATE CLAUSE WAS SHARPENED, NOT OBEYED — the mandate's
 own instruction, and the sharpening is the decision.
-[IDEAS](../IDEAS.md) proposed "a live team is finished or shut
+[IDEAS](../../../IDEAS.md) proposed "a live team is finished or shut
 down, never parked; a parked team does not exist." A good crisp
 prohibition and an incomplete rule: it governs the PROCESSES,
 which are not what is at risk. Teammates die cheaply and respawn
@@ -73,7 +75,7 @@ caught it. I had written that a cockpit "cannot" lead a team
 because a session has exactly one team and teammates cannot spawn
 their own — but a cockpit is not a teammate, so that mechanism
 does not imply the conclusion at all. The real basis is POLICY:
-[D-055](../DECISIONS.md#d-055--2026-07--agent-teams--the-boundary-teams-are-for-exploration-and-review-at-a-ground-seat-lanes-remain-the-authorship-mechanism-two-risks-become-law-single-sitting-only--an-explicit-carve-out-to-d-050s-interrupt-promise--and-a-teammate-authored-diff-is-self-authored-under-no-solo-approval-the-reviewers-model-settled-by-verification-not-guess-the-founder-side-config-recorded-upholds-the-lane-law-no-solo-approval-and-one-home-gives-the-experimental-flag-its-consumer)
+[D-055](../../../DECISIONS.md#d-055--2026-07--agent-teams--the-boundary-teams-are-for-exploration-and-review-at-a-ground-seat-lanes-remain-the-authorship-mechanism-two-risks-become-law-single-sitting-only--an-explicit-carve-out-to-d-050s-interrupt-promise--and-a-teammate-authored-diff-is-self-authored-under-no-solo-approval-the-reviewers-model-settled-by-verification-not-guess-the-founder-side-config-recorded-upholds-the-lane-law-no-solo-approval-and-one-home-gives-the-experimental-flag-its-consumer)
 puts teams at a ground seat and makes lanes the cloud's
 parallelism. The platform would let any session spawn teammates;
 the boundary is what says a cockpit does not. Both homes now say
@@ -86,7 +88,7 @@ failure this bench exists to prevent — a team result lost
 silently.
 
 The first: §1.2 routed refusals and hangs to "the close report
-(§6)", but [liftoff](../skills/liftoff.md) runs handoff FULL and
+(§6)", but [liftoff](../../../skills/liftoff.md) runs handoff FULL and
 then SKIPS §6 entirely, and liftoff §7 carried no team line. On
 the liftoff road the refusal report had nowhere to land. Fixed on
 both sides — §1.2 now names which close report by road, and
@@ -101,7 +103,7 @@ The second: "the open bench's `memory/<id>.md`" never said WHOSE
 bench. If the open bench belonged to a LANE, the wording licensed
 the control tower to write a multi-line findings block into a
 lane's diary — which
-[§1.5](../skills/handoff.md#15--park-the-local-lanes-full-only)
+[§1.5](../../../skills/handoff.md#15--park-the-local-lanes-full-only)
 calls the one control-tower-written line a lane's memory may ever
 receive. D-056's own title claims it upholds the park protocol,
 and the draft quietly broke it. Now scoped: THIS SESSION'S OWN
@@ -143,27 +145,49 @@ condition was widened to name it.
 
 ONE ROAD STAYS UNCOVERED, and it is recorded rather than
 papered over: a SUPERSEDED SEAT self-closes with "push, write
-nothing" ([LAWS](../LAWS.md#parallel-lanes--cloud)), which is an
+nothing" ([LAWS](../../../LAWS.md#parallel-lanes--cloud)), which is an
 exit no ritual runs — a superseded tower leading a team would
 lose its findings. The goal sentence says NO ritual lets a team
 outlive its sitting, and that remains true; this is a road with
-no ritual on it at all. Filed to [IDEAS](../IDEAS.md) rather than
+no ritual on it at all. Filed to [IDEAS](../../../IDEAS.md) rather than
 solved here, because touching the supersession rule is a
 different bench.
 
+THE EXTERNAL REVIEW, the mandatory one for a tower-authored diff:
+PASS on `fc4dcf7`, ten files, gates re-run independently. It
+called the liftoff ripple REQUIRED, NOT DRIFT — liftoff skips
+handoff §6, so the shutdown report lands in §7 by necessity — and
+noted the shape this bench took toward its predecessor: D-056
+CORRECTS D-055'S MECHANISM-BASED REASONING FORWARD while leaving
+that entry unedited under the append-only law. A decision log that
+cannot be rewritten still has to be able to change its mind; the
+forward correction is how.
+
+TWO CORRECTIONS THE FOUNDER ACCEPTED ONTO THE RECORD AS HIS OWN,
+kept here because a workshop that only records the assistant's
+errors records half the truth. First, the mandate's premise about
+the critic's model was wrong: agent definitions are cut at session
+startup, so this session kept the old one no matter what
+`reviewer.md` said. Second — the larger one — the candidate clause
+he wrote ("never park a live team") was inverted by this bench to
+CAPTURE, THEN KILL, and he judged the inversion the better
+decision, for the reason the bench found rather than the one it
+was given: teammates are cheap, and their findings are the only
+irrecoverable thing.
+
 ## Where to look
 
-- [the spec](../specs/team-aware-leaving.md) — goal, plan,
+- [the spec](../../../specs/team-aware-leaving.md) — goal, plan,
   Done-means.
-- [handoff §1.2](../skills/handoff.md#12--shut-the-team-down-full-only)
+- [handoff §1.2](../../../skills/handoff.md#12--shut-the-team-down-full-only)
   — the shutdown duty, the one home.
-- [land](../skills/land.md#teams--not-this-rituals-case-both-modes)
+- [land](../../../skills/land.md#teams--not-this-rituals-case-both-modes)
   — the cockpit case and the routing line.
-- [pickup §2](../skills/pickup.md#2--self-heal) — the
+- [pickup §2](../../../skills/pickup.md#2--self-heal) — the
   ghost-teammate note.
-- [TEMPLATE](TEMPLATE.md) — the conditional ⏸ field.
-- [liftoff §1 + §7](../skills/liftoff.md#7--close) — the disclosed
+- [TEMPLATE](../../../memory/TEMPLATE.md) — the conditional ⏸ field.
+- [liftoff §1 + §7](../../../skills/liftoff.md#7--close) — the disclosed
   ripple.
-- [DECISIONS](../DECISIONS.md) —
-  [D-056](../DECISIONS.md#d-056--2026-07--team-aware-leaving-rituals--no-ritual-lets-a-live-agent-team-outlive-the-sitting-that-made-it-handoff-shuts-the-team-down-before-parking-anything-and-captures-its-findings-into-the-record-first-land-states-the-cockpit-cannot-lead-a-team-case-once-and-routes-the-ground-seat-to-handoff-pickup-gains-the-ghost-teammate-recovery-note-and-the--block-gains-what-the-team-had-found-closes-d-055s-deferred-gap-upholds-one-home-and-the-park-protocol),
+- [DECISIONS](../../../DECISIONS.md) —
+  [D-056](../../../DECISIONS.md#d-056--2026-07--team-aware-leaving-rituals--no-ritual-lets-a-live-agent-team-outlive-the-sitting-that-made-it-handoff-shuts-the-team-down-before-parking-anything-and-captures-its-findings-into-the-record-first-land-states-the-cockpit-cannot-lead-a-team-case-once-and-routes-the-ground-seat-to-handoff-pickup-gains-the-ghost-teammate-recovery-note-and-the--block-gains-what-the-team-had-found-closes-d-055s-deferred-gap-upholds-one-home-and-the-park-protocol),
   the entry this bench records.

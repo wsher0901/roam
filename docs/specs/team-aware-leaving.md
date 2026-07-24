@@ -2,12 +2,12 @@
 type: spec
 id: team-aware-leaving
 title: Team-aware leaving rituals — no ritual lets a live team outlive its sitting ([D-056](../DECISIONS.md#d-056--2026-07--team-aware-leaving-rituals--no-ritual-lets-a-live-agent-team-outlive-the-sitting-that-made-it-handoff-shuts-the-team-down-before-parking-anything-and-captures-its-findings-into-the-record-first-land-states-the-cockpit-cannot-lead-a-team-case-once-and-routes-the-ground-seat-to-handoff-pickup-gains-the-ghost-teammate-recovery-note-and-the--block-gains-what-the-team-had-found-closes-d-055s-deferred-gap-upholds-one-home-and-the-park-protocol))
-status: open
+status: shipped
 stage: workshop
 branch: docs/team-aware-leaving
 pr: 225
 opened: 2026-07-24
-shipped: —
+shipped: 2026-07-24 17:21
 ---
 
 # team-aware-leaving — the rituals learn about live teams
@@ -84,7 +84,9 @@ transcripts that die with it. So the duty is not "kill the team"
 [TEMPLATE](../memory/TEMPLATE.md) · [HOME](../HOME.md) (only if
 §Agent teams needs the pointer) ·
 [DECISIONS](../DECISIONS.md) · [IDEAS](../IDEAS.md) (close the
-candidate) · this spec + [the memory](../memory/team-aware-leaving.md)
+candidate) · this spec +
+[the memory](../history/workshop/mechanism/team-aware-leaving.md)
+(moved to history/ at the weld)
 · [DASHBOARD](../DASHBOARD.md) via the ship tail.
 PLUS, beyond the list and disclosed under Deviations:
 [liftoff](../skills/liftoff.md) §1 and §7 — without it the
