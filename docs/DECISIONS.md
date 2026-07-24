@@ -1784,3 +1784,72 @@ for exactly that).
 Terms line · the pickup portrait) ·
 `.claude/hooks/user-prompt-submit.mjs` (the wall itself) ·
 [#211](https://github.com/wsher0901/roam/pull/211) · this entry.
+
+## D-051 — 2026-07 — self-seat birth — liftoff fires --cloud blind and the cockpit seats itself by its env-derived self-URL; the console-attach launcher is retired (amends D-047's rung-1 mechanics as corrected by #193, upholds D-049 and board-governs)
+
+**Decision:** liftoff's rung 1 fires `claude --cloud` BLIND — no
+output capture, no console attach, no `CONOUT$` read; exit status
+only — and the cockpit SEATS ITSELF on the board as its first
+act, by the same env-derived self-URL mechanism
+([D-049](#d-049--2026-07--gh-second-path--gh-api-rest-through-the-github-proxy-is-the-cockpits-second-api-path-a-connector-flap-stops-costing-command-r2-gains-the-automatic-gh-rung-self-id-by-session-env-amends-d-048-corrects-the-193-api-map-upholds-d-047-and-verify-before-rely))
+successor-duty already uses. By clause:
+(1) THE BLIND FIRE: the hidden window supplies the TTY `--cloud`
+demands; the launcher hands the birth prompt as a file-read
+argument and captures NOTHING. The flight-plan board weld still
+precedes the fire (board-governs, unchanged); its Sessions row is
+written "cockpit · fired <time> · self-seat pending", and liftoff
+no longer reports a session URL — the cockpit's greeting push and
+its self-seat repaint carry it.
+(2) THE SELF-SEAT DUTY (charter rule 1, with the first-act
+derivation): a cockpit finding "self-seat pending" — or no live
+cockpit — on the board repaints it seating itself with its
+env-derived URL, as a pickup-class DASHBOARD-only micro-PR. A
+FOREIGN live cockpit seat-stamp instead means rule 7 governs: the
+new session is the stray — push nothing, tombstone, stop.
+(3) THE CONSOLE-ATTACH LAUNCHER IS RETIRED — the component is
+DELETED from the recipe, not maintained. Disproof and retirement
+dated: the attach-and-read shape flew 2026-07-22 and again
+2026-07-23 (a background-job birth), but it existed solely to
+hand the tower a session URL for the board weld, and capturing a
+TUI's console buffer is the component most likely to break
+SILENTLY on any platform UI change — the 2026-07-23 title-line
+experiment on the same flight proved platform behavior shifts
+under us. Retired 2026-07-24, this decision.
+(4) THE TRADE, NAMED: a birth that dies before Claude starts
+leaves no URL anywhere and sends no greeting. Mitigations, in the
+founder's order of reach: the MISSING push IS the signal ·
+`/tasks` at any terminal · the claude.ai/code list (the session
+is list-native even when its clone failed) · retry the fire. The
+board's "self-seat pending" row goes stale HONESTLY rather than
+carrying a scraped URL that may be wrong.
+**Why:** the capture machinery served exactly one purpose — a
+URL for the board — and
+[D-049](#d-049--2026-07--gh-second-path--gh-api-rest-through-the-github-proxy-is-the-cockpits-second-api-path-a-connector-flap-stops-costing-command-r2-gains-the-automatic-gh-rung-self-id-by-session-env-amends-d-048-corrects-the-193-api-map-upholds-d-047-and-verify-before-rely)
+gave every session self-knowledge, making the fragile half
+redundant. Deleting is strictly simpler than maintaining. The
+first REAL flight after this weld is the live test of
+self-seating — testing deliberately deferred to it on the
+founder's word, 2026-07-23/24, on the record in
+[the spec](specs/self-seat-birth.md).
+**Rejected:** KEEPING THE LAUNCHER AS A FALLBACK — a fallback
+that breaks silently is worse than none (the clerk-retirement
+lesson, generalized to components) · SCRAPING AS VERIFICATION —
+a scraped URL can be wrong while looking right; the self-seat
+URL is derived from the session's own env, which cannot
+mis-identify.
+**Affects:**
+[liftoff §6](skills/liftoff.md#6--ledger-handoff--fire-the-cockpit)
+(rung 1 blind · the Sessions-row shape · the record line) +
+[liftoff §7](skills/liftoff.md#7--close) (the close line, no
+URL) ·
+[SETUP §cloud accounts](SETUP.md#once-and-done--cloud-accounts)
+(the inventory shape · charter rule 1's self-seat duty + failure
+shape) ·
+[cloud-born-cockpit](specs/cloud-born-cockpit.md) +
+[flight-hardening](specs/flight-hardening.md) (one-sentence note
+extensions) ·
+[D-047](#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law)
+(amended: rung 1's mechanics, as previously corrected by
+[#193](https://github.com/wsher0901/roam/pull/193)) ·
+[D-049](#d-049--2026-07--gh-second-path--gh-api-rest-through-the-github-proxy-is-the-cockpits-second-api-path-a-connector-flap-stops-costing-command-r2-gains-the-automatic-gh-rung-self-id-by-session-env-amends-d-048-corrects-the-193-api-map-upholds-d-047-and-verify-before-rely)
+(upheld: the self-URL is the mechanism) · this entry.
