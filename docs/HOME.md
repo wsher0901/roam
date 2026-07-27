@@ -171,7 +171,7 @@ Sources:
 | [data/SOURCES.md](data/SOURCES.md) | the vetted source registry, one entry per source slot | source-vetting tasks (T2–T6), consolidated at [T7](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code) | living; grades move under the demotion law |
 | [data/SCHEMA.md](data/SCHEMA.md) | human-readable mirror of the SQL schema | [V1.S1.T7](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code) | placeholder until T7 ships |
 | [record/specs/](record/specs/README.md) | per-task contracts + [TEMPLATE](record/specs/TEMPLATE.md) | born at task birth when discussion opened the task; [ship](skills/ship.md) finalizes | open → shipped or superseded; never deleted |
-| [memory/](memory/README.md) | in-flight task stories in the locked format ([TEMPLATE](memory/TEMPLATE.md)) | the task's own seat — baton-holder at rituals, lanes at their four moments | lives on the task's branch; MOVES to history/ at ship |
+| [memory/](memory/README.md) | in-flight task stories in the locked format ([TEMPLATE](memory/TEMPLATE.md)) | the task's own seat — baton-holder at rituals, lanes at their four moments | lives on the task's branch; MOVES to record/history/ at ship |
 | [record/history/](record/history/README.md) | permanent shipped narratives, one per task | [ship](skills/ship.md)'s atomic weld | frozen after landing (link repairs only) |
 | [skills/](skills) | ritual procedures + workshop manuals, vault-readable | founder-approved PRs + promoted gotchas | living |
 | docs/.obsidian/ | Obsidian's own workspace config | Obsidian | gitignored, never committed |
@@ -280,7 +280,8 @@ Sources:
 
 **history/** is where memories retire: one narrative file per shipped
 task, moved at the weld with its shipped date and PR number. Git
-keeps the technical record; history/ keeps the meaning. Without it,
+keeps the technical record; record/history/ keeps the meaning.
+Without it,
 "why does this exist?" would eventually have no answer a human can
 read.
 
@@ -370,7 +371,8 @@ memory's final rewrite, the draft→ready flip, a plain-language
 summary — then THE GATE: the founder's explicit yes, never inferred.
 On approval comes the weld: ONE bookkeeping commit on the same
 branch — the ROADMAP checkbox ticks, the memory file MOVES to
-history/ (frontmatter gains its shipped date and PR number), the spec
+record/history/ (frontmatter gains its shipped date and PR number),
+the spec
 finalizes — then squash-merge, branch deleted, main pulled. Why
 atomic: state and work land together or die together. There is no
 instant where main claims "done" without containing the work, or
@@ -1305,7 +1307,8 @@ the link for the full story.
   [pickup §6](skills/pickup.md#6--fleet-resume-on-the-founders-answer).
 - **memory file** — docs/memory/&lt;id&gt;.md: a task's living
   story in the locked format (Status first), on the task's branch,
-  rewritten at rituals and the lane moments; MOVES to history/ at
+  rewritten at rituals and the lane moments; MOVES to
+  record/history/ at
   ship. Home: [memory/](memory/README.md) ·
   [§Information relay & retention](#information-relay--retention).
 - **history file** — docs/record/history/&lt;id&gt;.md: the memory's final

@@ -70,7 +70,10 @@ const failures = [];
 for (const abs of files) {
   const rel = abs.slice(root.length + 1).replaceAll("\\", "/");
   const text = stripCodeFences(read(abs));
-  const linkRe = /!?\[[^\]]*\]\(([^)\s]+)(?:\s+"[^"]*")?\)/g;
+  // Link text may nest one bracket pair (e.g. a backticked `[TAG]`);
+  // a text-blind `[^\]]*` silently skips such links entirely
+  // (found by the record-shelf bench's critic, 2026-07-27).
+  const linkRe = /!?\[(?:[^[\]]|\[[^\]]*\])*\]\(([^)\s]+)(?:\s+"[^"]*")?\)/g;
   let m;
   while ((m = linkRe.exec(text)) !== null) {
     const target = m[1];

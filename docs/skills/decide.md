@@ -32,7 +32,7 @@ Apply what the decision demands, in the SAME commit as the entry:
 [ROADMAP](../ROADMAP.md) (structure — reorder/add/cut; progress
 ticks never need a D-number) · [LAWS](../LAWS.md) and
 [HOME](../HOME.md) (when the decision changes a working rule or its
-manual entry) · [docs/specs/](../record/specs/README.md)
+manual entry) · [docs/record/specs/](../record/specs/README.md)
 (update or mark superseded any spec the pivot invalidates) ·
 [ENGINE](../ENGINE.md) (when it consolidates the
 changed rule) · [IDEAS](../IDEAS.md) (spawned ideas). The Affects

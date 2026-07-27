@@ -144,10 +144,10 @@ Every task carries three artifacts on its branch:
   it ready with a plain summary.
 Contract changes dual-write: the spec gets the edit; memory narrates
 it and why. Memory is never its own PR — rewrites are commits on the
-task branch; it reaches main once, at ship, as history/.
+task branch; it reaches main once, at ship, as record/history/.
 At ship, memory MOVES to `docs/record/history/<id>.md` (final form,
 frontmatter shipped: + pr:). Git keeps the technical record;
-history/ keeps the meaning.
+record/history/ keeps the meaning.
 
 ## Parallel lanes & cloud
 The LANE LAW (seat-blind — identical local or cloud): every lane

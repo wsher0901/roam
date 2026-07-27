@@ -49,8 +49,11 @@ append-only governs meaning, not bytes.
 4. Sweep every broken link: frozen files linking UP to living
    roots gain one `../`; living files linking DOWN gain `record/`.
 5. Rewire the machinery that hardcodes paths:
-   `scripts/check-ledger.mjs` · ship's weld destination · recall +
-   HOME's routing table · LAWS' routing clauses ·
+   `scripts/check-ledger.mjs` ·
+   [ship](../../skills/ship.md)'s weld destination ·
+   [recall](../../skills/recall.md) +
+   [HOME](../../HOME.md)'s routing table ·
+   [LAWS](../../LAWS.md)' routing clauses ·
    `.claude/agents/reviewer.md` ·
    `.claude/vault-seed/graph.json` (`-path:history` →
    `-path:record`) · then grep the whole tree for `docs/history`,
@@ -59,17 +62,18 @@ append-only governs meaning, not bytes.
 
 ## Done means
 
-- [ ] `docs/record/history/`, `docs/record/specs/`, and
+- [x] `docs/record/history/`, `docs/record/specs/`, and
       `docs/record/DECISIONS.md` exist on the branch as recorded
       renames; `docs/history`, `docs/specs`, `docs/DECISIONS.md`
       are gone.
-- [ ] The D-number entry exists in `docs/record/DECISIONS.md` with
+- [x] The D-number entry exists in `docs/record/DECISIONS.md` with
       the enabling ruling, and every anchor to it resolves.
-- [ ] `npm run check:links` reports 0 broken.
-- [ ] `check:ledger` + `check:memory` green after their path
+- [x] `npm run check:links` reports 0 broken (and the checker
+      itself was hardened en route — see Deviations).
+- [x] `check:ledger` + `check:memory` green after their path
       updates; full CI mirror green; the pushed head's Actions run
       green.
-- [ ] The review criterion, mechanically checkable: the PR diff
+- [x] The review criterion, mechanically checkable: the PR diff
       over `record/history/**` and `record/specs/**` contains ONLY
       link-path-segment hunks — with one stated exception, this
       bench's own spec, the sole NEW file under `record/specs/`
@@ -77,11 +81,23 @@ append-only governs meaning, not bytes.
 
 ## Deviations
 
-none — the plan ran as written. Two details disclosed: one link
-(a wrapped, multi-line link in the currency-audit spec) needed a
-manual repair because the line-based sweep could not see it — the
-checker caught it; and recall.md needed zero edits beyond the
-automatic sweep (its prose names surfaces by concept, not path).
+none in the plan itself; disclosed catches under the
+[#197](https://github.com/wsher0901/roam/pull/197) rule: (1) one
+wrapped multi-line link in the currency-audit spec needed a
+manual repair — the line-based sweep could not see it, the
+checker caught it; (2) recall.md needed zero edits beyond the
+automatic sweep (its prose names surfaces by concept, not path);
+(3) OUT-OF-MANDATE FIX — the critic found a broken
+[DASHBOARD](../../DASHBOARD.md) ledger-table link whose text
+nests a bracket pair (`` `[COCKPIT]` ``), which the checker's
+link regex silently skipped: the link is repaired AND
+`scripts/check-links.mjs` is hardened to parse one nested bracket
+level, so the blind-spot class cannot recur — fix, annotate,
+disclose; (4) `docs/record/specs/README.md` still names the dead
+`docs/specs/<id>-<short-name>.md` path in prose — it is a
+`status: living` file inside the frozen shelf, and the mandate's
+zero-prose-in-record/ line outranks the repair, so it is left
+untouched and surfaced at the gate for the founder's ruling.
 
 ## Open questions
 

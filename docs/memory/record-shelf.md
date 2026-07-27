@@ -1,7 +1,7 @@
 ---
 type: memory
 id: record-shelf
-updated: 2026-07-27 19:42 · ship (complete, awaiting merge) · home PC
+updated: 2026-07-27 19:55 · critic repairs folded, at the gate · home PC
 ---
 
 # record-shelf — the frozen record moves under one roof
@@ -32,13 +32,23 @@ segments only, zero prose changes anywhere in `record/`.
 
 ## Pending issues
 
-none
+One founder ruling owed, surfaced at the gate:
+`docs/record/specs/README.md` (a `status: living` door doc inside
+the frozen shelf) still names the dead
+`docs/specs/<id>-<short-name>.md` path in its prose. The
+mandate's zero-prose-changes-in-record/ line outranks the repair,
+so it was left as-is — the founder's word can license the
+one-line prose fix (this bench's PR or a later one).
 
 ## Left / idle
 
-Verification and the gate report. Post-weld manual act (per seat,
-reported at the gate, not performed): "apply the vault lens"
-re-seeds the graph filter.
+The gate report. TWO post-weld manual acts (reported at the gate,
+not performed): "apply the vault lens" once per seat re-seeds the
+graph filter; and the
+[WEB-INSTRUCTIONS](../WEB-INSTRUCTIONS.md) box re-paste — this
+diff edits that file, and the Web Project box is a copy that must
+be re-pasted after every edit
+([HOME §file table](../HOME.md#where-information-goes)).
 
 ## The story
 
@@ -66,7 +76,22 @@ agent's two paths, the vault-seed graph filter (`-path:history` →
 nothing), ship's weld destination + staging command,
 parallel-lanes' spec path, LAWS' task anatomy, HOME's labels and
 routing tables, WEB-INSTRUCTIONS' two paths, machine-setup's lens
-prose.
+prose. THE CRITIC ROUND (per
+[ship §6](../skills/ship.md#6--the-gate)): the reviewer subagent
+returned one real catch and a tail of label repairs. The catch —
+a broken [DASHBOARD](../DASHBOARD.md) ledger-table link whose
+text nests `` `[COCKPIT]` ``, defeating BOTH the checker's and
+the sweep's text-blind link regex; the link is repaired and
+`check-links.mjs` hardened to parse one nested bracket level
+(out-of-mandate, taken under the
+[#197](https://github.com/wsher0901/roam/pull/197) rule). Folded
+label repairs: decide.md's spec-path label; the bare `history/`
+shorthands in [LAWS](../LAWS.md), [HOME](../HOME.md), and the
+memory [TEMPLATE](TEMPLATE.md) now say `record/history/`; the
+spec + this memory gained weave links over their machinery lists;
+the spec's Done-means ticked at ship per house style. NOT taken:
+the critic's suggestion to repair `record/specs/README.md`'s
+prose — see Pending issues, the founder's ruling outranks it.
 
 ## Where to look
 
