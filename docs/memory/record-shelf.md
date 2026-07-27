@@ -1,20 +1,22 @@
 ---
 type: memory
 id: record-shelf
-updated: 2026-07-27 19:35 · decision landed · home PC
+updated: 2026-07-27 19:42 · ship (complete, awaiting merge) · home PC
 ---
 
 # record-shelf — the frozen record moves under one roof
 
 ## Status
 
-In work at the control tower — home PC, born 2026-07-27 19:29;
-payload landed 19:35. Bench 1 of the founder's three-bench queue
-(record shelf → ATLAS → chronicle layer), strict order, one
-session, each ending at THE GATE. The moves, the
+Complete, awaiting merge — 2026-07-27 19:42, home PC. Bench 1 of
+the founder's three-bench queue (record shelf → ATLAS → chronicle
+layer). The moves, the
 [D-057](../record/DECISIONS.md#d-057--2026-07--the-record-shelf--the-frozen-record-moves-under-one-roof-docsrecord-is-born-history--specs--decisions-in-memory-stays-living-at-root-the-enabling-ruling--a-mechanical-link-path-segment-repair-inside-a-frozen-file-is-maintenance-not-a-content-edit-append-only-governs-meaning-not-bytes-intra-record-links-resolve-by-construction-upholds-append-only-one-home-and-the-weave-rule)
-entry, the sweep, and the machinery are all in; verification
-next, then the gate.
+entry, the sweep, and the machinery are all in; every local gate
+green; the review criterion proven mechanically (the record diff,
+links normalized, is byte-identical line-for-line — the sole
+exception the bench's own spec). At THE GATE — no merge without
+the founder's word.
 
 ## What this task is
 

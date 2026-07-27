@@ -77,8 +77,11 @@ append-only governs meaning, not bytes.
 
 ## Deviations
 
-<filled by /ship: anything done differently than planned — or
-"none">
+none — the plan ran as written. Two details disclosed: one link
+(a wrapped, multi-line link in the currency-audit spec) needed a
+manual repair because the line-based sweep could not see it — the
+checker caught it; and recall.md needed zero edits beyond the
+automatic sweep (its prose names surfaces by concept, not path).
 
 ## Open questions
 
