@@ -71,7 +71,7 @@ session. The procedure that phrase runs:
 
 The lens itself: color groups — history gray · data blue · skills
 green · memory+specs yellow · everything ungrouped (the core docs)
-keeps the accent color; default graph filter `-path:history` (clear
+keeps the accent color; default graph filter `-path:record` (clear
 it in Graph view whenever you want the archive visible); Bookmarks —
 [DASHBOARD](../DASHBOARD.md) · [HOME](../HOME.md) ·
 [ROADMAP](../ROADMAP.md) · [LAWS](../LAWS.md), the front door on

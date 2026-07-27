@@ -40,9 +40,9 @@ law). The daily routine budget truncates from the bottom (Max plan:
 GitHub-triggered spawns count against it, and so does every API
 fire — `fire:cockpit`, the ONLY one since the clerk's retirement
 2026-07-22 (one per outing, the accepted trade —
-[D-046](../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock),
+[D-046](../record/DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock),
 extending the trade recorded at A4 —
-[clerk-autospawn](../specs/clerk-autospawn.md), now a retired
+[clerk-autospawn](../record/specs/clerk-autospawn.md), now a retired
 record) — but API fires
 are INVISIBLE to `count:runs`, a label-event proxy): derive the
 consumed count — `npm run count:runs` PLUS the fires performed
@@ -70,24 +70,24 @@ Dispatch each eligible lane — fresh births and respawns alike —
 cloud-side via the route ladder; route 1 (label-spawn) is one command
 per lane: `gh pr edit <N> --add-label lane:cloud`.
 The away surface is the COCKPIT, born at §6 by the rung ladder
-([D-047](../DECISIONS.md#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law))
+([D-047](../record/DECISIONS.md#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law))
 — not spawned here. The ladder BOTTOMS OUT at §6's rung 4, the
 phone bootstrap: the Claude app → a new session on wsher0901/roam
 → the two-line bootstrap paste, recorded verbatim in
 [SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts)
-([D-048](../DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)).
+([D-048](../record/DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)).
 There is no rung beneath it. The clerk that once stood there was
 RETIRED 2026-07-22 and its routine deleted
-([D-046](../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+([D-046](../record/DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
 decided it;
-[D-048](../DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)
+[D-048](../record/DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)
 superseded its last function) — a rung that cannot fire is worse
 than no rung, because it is reached only when everything above it
 has already failed. What the clerk PROVED is kept as record, not
 as a rung:
-[clerk-autospawn](../specs/clerk-autospawn.md) ·
-[shakedown-audit](../specs/shakedown-audit.md) ·
-[cloud-clerk](../specs/cloud-clerk.md).
+[clerk-autospawn](../record/specs/clerk-autospawn.md) ·
+[shakedown-audit](../record/specs/shakedown-audit.md) ·
+[cloud-clerk](../record/specs/cloud-clerk.md).
 
 Sources:
 [route ladder](parallel-lanes.md#cloud-spawn--route-ladder)
@@ -116,13 +116,13 @@ abort and hold with its reason in Your move / State. The
 cockpit's own row is written at this weld, BEFORE the fire, as
 "cockpit · fired <time> · self-seat pending" — the cockpit
 rewrites it with its real URL at its self-seat repaint
-([D-051](../DECISIONS.md#d-051--2026-07--self-seat-birth--liftoff-fires---cloud-blind-and-the-cockpit-seats-itself-by-its-env-derived-self-url-the-console-attach-launcher-is-retired-amends-d-047s-rung-1-mechanics-as-corrected-by-193-upholds-d-049-and-board-governs)).
+([D-051](../record/DECISIONS.md#d-051--2026-07--self-seat-birth--liftoff-fires---cloud-blind-and-the-cockpit-seats-itself-by-its-env-derived-self-url-the-console-attach-launcher-is-retired-amends-d-047s-rung-1-mechanics-as-corrected-by-193-upholds-d-049-and-board-governs)).
 Ship the micro-PR (board + any IDEAS harvest).
 
 Then THE COCKPIT BIRTH
-([D-047](../DECISIONS.md#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law),
+([D-047](../record/DECISIONS.md#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law),
 amending
-[D-046](../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+[D-046](../record/DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
 clause 3): compose the flight plan FROM THE BOARD just painted —
 three parts, plain sentences: in flight (each airborne lane +
 url) · owed (every parked/held item + reason) · needs the
@@ -163,11 +163,11 @@ routine run panels are the machinery's paper trail (archiving a
 session does not clear a run log, by design).
 
 Birth by the rung
-ladder, evidence order (gate 0b, [D-047](../DECISIONS.md#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law)):
+ladder, evidence order (gate 0b, [D-047](../record/DECISIONS.md#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law)):
 
 1. The automated hidden-window `--cloud` birth, fired BLIND
    (PRIMARY —
-   [D-051](../DECISIONS.md#d-051--2026-07--self-seat-birth--liftoff-fires---cloud-blind-and-the-cockpit-seats-itself-by-its-env-derived-self-url-the-console-attach-launcher-is-retired-amends-d-047s-rung-1-mechanics-as-corrected-by-193-upholds-d-049-and-board-governs)).
+   [D-051](../record/DECISIONS.md#d-051--2026-07--self-seat-birth--liftoff-fires---cloud-blind-and-the-cockpit-seats-itself-by-its-env-derived-self-url-the-console-attach-launcher-is-retired-amends-d-047s-rung-1-mechanics-as-corrected-by-193-upholds-d-049-and-board-governs)).
    `--cloud` demands a real TTY on BOTH ends and refuses every
    piped route verbatim (the harness shell, the `!` bang-prefix,
    redirected `Start-Process`); a hidden window already supplies
@@ -184,7 +184,7 @@ ladder, evidence order (gate 0b, [D-047](../DECISIONS.md#d-047--2026-07--cloud-b
      existed solely to hand the tower a session URL, and the
      cockpit now SEATS ITSELF on the board via its env-derived
      self-URL
-     ([D-049](../DECISIONS.md#d-049--2026-07--gh-second-path--gh-api-rest-through-the-github-proxy-is-the-cockpits-second-api-path-a-connector-flap-stops-costing-command-r2-gains-the-automatic-gh-rung-self-id-by-session-env-amends-d-048-corrects-the-193-api-map-upholds-d-047-and-verify-before-rely);
+     ([D-049](../record/DECISIONS.md#d-049--2026-07--gh-second-path--gh-api-rest-through-the-github-proxy-is-the-cockpits-second-api-path-a-connector-flap-stops-costing-command-r2-gains-the-automatic-gh-rung-self-id-by-session-env-amends-d-048-corrects-the-193-api-map-upholds-d-047-and-verify-before-rely);
      the charter's self-seat duty). Liftoff no longer reports a
      session URL — the cockpit's greeting push and its self-seat
      repaint carry it.
@@ -210,7 +210,7 @@ Record the rung that fired + its exit status for the §7 close
 line. There is no returned URL to record — the cockpit seats
 itself (the charter's self-seat duty; its OWN url derived from
 the session env per
-[D-049](../DECISIONS.md#d-049--2026-07--gh-second-path--gh-api-rest-through-the-github-proxy-is-the-cockpits-second-api-path-a-connector-flap-stops-costing-command-r2-gains-the-automatic-gh-rung-self-id-by-session-env-amends-d-048-corrects-the-193-api-map-upholds-d-047-and-verify-before-rely),
+[D-049](../record/DECISIONS.md#d-049--2026-07--gh-second-path--gh-api-rest-through-the-github-proxy-is-the-cockpits-second-api-path-a-connector-flap-stops-costing-command-r2-gains-the-automatic-gh-rung-self-id-by-session-env-amends-d-048-corrects-the-193-api-map-upholds-d-047-and-verify-before-rely),
 `https://claude.ai/code/${CLAUDE_CODE_REMOTE_SESSION_ID/#cse_/session_}`).
 A failed rung falls to the next with its
 failure recorded in the close line — nothing silently parked.
@@ -219,7 +219,7 @@ This ladder BIRTHS a cockpit; a cockpit that loses its GitHub
 connector IN FLIGHT climbs a different one — prevent · detect ·
 repair · degrade · self-rescue, ending in a push to `ops/summon`
 that fires a replacement
-([D-048](../DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047);
+([D-048](../record/DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047);
 procedure in the charter master,
 [SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts)).
 
@@ -246,7 +246,7 @@ founder's status template:
   resume needed; every ⏸ carries the exact resume word and where
   it goes.
 Liftoff no longer reports a cockpit URL
-([D-051](../DECISIONS.md#d-051--2026-07--self-seat-birth--liftoff-fires---cloud-blind-and-the-cockpit-seats-itself-by-its-env-derived-self-url-the-console-attach-launcher-is-retired-amends-d-047s-rung-1-mechanics-as-corrected-by-193-upholds-d-049-and-board-governs))
+([D-051](../record/DECISIONS.md#d-051--2026-07--self-seat-birth--liftoff-fires---cloud-blind-and-the-cockpit-seats-itself-by-its-env-derived-self-url-the-console-attach-launcher-is-retired-amends-d-047s-rung-1-mechanics-as-corrected-by-193-upholds-d-049-and-board-governs))
 — the cockpit's greeting push and its self-seat repaint carry
 it. The founder's commands for reaching the flight afterwards —
 `/tasks`, teleport, and kin — live in

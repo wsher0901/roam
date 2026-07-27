@@ -8,8 +8,8 @@ status: living
 Loaded into every session via the root CLAUDE.md import (`@docs/LAWS.md`).
 Universal laws only. Manuals and explanations: [HOME.md](HOME.md).
 Rationale and sources for every law: [ENGINE.md](ENGINE.md) ·
-[DECISIONS.md](DECISIONS.md).
-Procedures: [docs/skills/](skills/). Route new lessons per
+[DECISIONS.md](record/DECISIONS.md).
+Procedures: [docs/skills/](skills). Route new lessons per
 § Self-improvement.
 
 ## What we're building
@@ -55,7 +55,7 @@ founder.
   · ship's tail · pickup's stale-repaint) — merges immediately
   without asking.
 - No-solo-approval
-  ([D-046](DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock),
+  ([D-046](record/DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock),
   generalizing the standing external-review practice — precedent
   [#175](https://github.com/wsher0901/roam/pull/175)): no diff
   merges on its author's own approval. Independent review first,
@@ -91,7 +91,7 @@ founder.
   dark → liftoff (cloud — fires the cockpit; the standard away
   posture) · machine staying on → go-remote (the tether — a backstop
   posture since
-  [D-046](DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock),
+  [D-046](record/DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock),
   never the plan).
   Cloud dispatch only through liftoff's sanctioned routes
   ([parallel-lanes §Cloud spawn](skills/parallel-lanes.md#cloud-spawn--route-ladder)) —
@@ -132,7 +132,7 @@ founder.
 
 ## Task anatomy
 Every task carries three artifacts on its branch:
-- **spec** `docs/specs/<id>-<slug>.md` — the stable contract: goal,
+- **spec** `docs/record/specs/<id>-<slug>.md` — the stable contract: goal,
   out of scope, plan, Done-means. Born from the discussion that
   opened the task; skipped only when the ROADMAP line already fully
   specifies it (steps then live in the PR description).
@@ -145,7 +145,7 @@ Every task carries three artifacts on its branch:
 Contract changes dual-write: the spec gets the edit; memory narrates
 it and why. Memory is never its own PR — rewrites are commits on the
 task branch; it reaches main once, at ship, as history/.
-At ship, memory MOVES to `docs/history/<id>.md` (final form,
+At ship, memory MOVES to `docs/record/history/<id>.md` (final form,
 frontmatter shipped: + pr:). Git keeps the technical record;
 history/ keeps the meaning.
 
@@ -196,7 +196,7 @@ ground, cockpit in flight.
 Claimed by pickup on fresh origin; released by FULL handoff or
 liftoff (which close the session — liftoff's fire hands the baton
 to the cockpit it summons, the control tower online:
-[D-046](DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)).
+[D-046](record/DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)).
 A session whose
 [DASHBOARD](DASHBOARD.md) seat-stamp is superseded self-closes:
 push, write nothing. Between control towers the baton is dormant;
@@ -211,7 +211,7 @@ Mechanics: [parallel-lanes](skills/parallel-lanes.md) ·
   (identity) → [ROADMAP](ROADMAP.md) (versions → stages → task
   checkboxes — the ONLY stored task state; ticked only by ship) →
   spec (contract) → memory (story) → draft PR (in-flight) →
-  [history/](history/) (shipped narrative). [DASHBOARD](DASHBOARD.md)
+  [history/](record/history) (shipped narrative). [DASHBOARD](DASHBOARD.md)
   renders it all — repainted only by rituals, never hand-edited,
   never stale-trusted: git outranks every note.
 - Weave rule: in any docs/ file, every mention of a roadmap ID,
@@ -242,9 +242,9 @@ Mechanics: [parallel-lanes](skills/parallel-lanes.md) ·
 - Standing choices with rationale: how ROAM'S BRAIN works →
   [ENGINE.md](ENGINE.md), the engine on paper; workshop whys live in
   these laws' one-line glosses, [HOME](HOME.md), and their D-numbers
-  in [DECISIONS.md](DECISIONS.md).
+  in [DECISIONS.md](record/DECISIONS.md).
 - Rituals live as skill stubs in `.claude/skills/` that only point;
-  every procedure lives vault-readable in [docs/skills/](skills/) —
+  every procedure lives vault-readable in [docs/skills/](skills) —
   a stub cannot drift from its procedure.
 - Claude Design is a no-write surface: only extracted values (tokens,
   constants) enter the repo via a paste block — never markup or
@@ -266,9 +266,9 @@ Mechanics: [parallel-lanes](skills/parallel-lanes.md) ·
 - When the founder corrects you, update the right home so the mistake
   never repeats. Route first: universal law → here · conditional
   knowledge (when doing X) → the relevant skill · procedure → its
-  [docs/skills/](skills/) page · explanation/manual → [HOME](HOME.md)
+  [docs/skills/](skills) page · explanation/manual → [HOME](HOME.md)
   · standing choice + rationale → its D-number in
-  [DECISIONS.md](DECISIONS.md). This file holds universals only.
+  [DECISIONS.md](record/DECISIONS.md). This file holds universals only.
 
 ## Tech stack (decided)
 Next.js App Router (TS, React 19) + Supabase + Vercel; brain = Claude

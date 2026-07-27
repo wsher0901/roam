@@ -7,5 +7,5 @@ status: living
 
 One file per active task in the locked format
 ([TEMPLATE](TEMPLATE.md)), living on the task's branch and moved to
-[history/](../history/) at ship; manual:
+[history/](../record/history) at ship; manual:
 [HOME](../HOME.md#the-files--what-each-one-is-for).

@@ -12,7 +12,7 @@ task's memory file. Runs UNASKED the moment the founder states or
 confirms such a change; never leave a decision only in conversation.
 
 ## 1 · Number & entry
-Read the last D-number in [DECISIONS.md](../DECISIONS.md); next = +1.
+Read the last D-number in [DECISIONS.md](../record/DECISIONS.md); next = +1.
 Append in exactly this format:
 
 ## D-0XX — YYYY-MM — <short title>
@@ -32,7 +32,7 @@ Apply what the decision demands, in the SAME commit as the entry:
 [ROADMAP](../ROADMAP.md) (structure — reorder/add/cut; progress
 ticks never need a D-number) · [LAWS](../LAWS.md) and
 [HOME](../HOME.md) (when the decision changes a working rule or its
-manual entry) · [docs/specs/](../specs/README.md)
+manual entry) · [docs/specs/](../record/specs/README.md)
 (update or mark superseded any spec the pivot invalidates) ·
 [ENGINE](../ENGINE.md) (when it consolidates the
 changed rule) · [IDEAS](../IDEAS.md) (spawned ideas). The Affects

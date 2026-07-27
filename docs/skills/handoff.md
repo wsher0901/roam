@@ -102,7 +102,7 @@ running:
 QUIET never parks — mid-sitting lanes keep flying.
 Cloud lanes are machine-independent — handoff never parks or touches
 them; they keep flying and appear on the board
-([D-032](../DECISIONS.md#d-032--2026-07--fleet-continuity--handoff-parks-every-local-lane-liftoff-respawns-parked-benches-wake-lock-parks-every-outcome-extends-the-d-020d-023-lane-law-upholds-d-009)
+([D-032](../record/DECISIONS.md#d-032--2026-07--fleet-continuity--handoff-parks-every-local-lane-liftoff-respawns-parked-benches-wake-lock-parks-every-outcome-extends-the-d-020d-023-lane-law-upholds-d-009)
 parks LOCAL lanes only).
 
 Sources:
@@ -194,7 +194,7 @@ Sections, in this order:
 - Shipped — table of the ~10 newest history/** entries by
   frontmatter; When renders "MM-DD HH:MM" when frontmatter carries
   time, bare date for legacy stories; the header links
-  [the ledger](../history/README.md#the-ledger).
+  [the ledger](../record/history/README.md#the-ledger).
 
 Counts are computed at render time, never carried.
 

@@ -556,7 +556,7 @@ grade, freshness, coverage notes, cost, the spike script path,
 retention_rights (store-raw / derived-only / cache-only / none),
 license_class, and attribution duties. Retention and license are
 PRIMARY selection criteria: caching-prohibited sources disqualify a
-slot from the asset layer ([D-015](../DECISIONS.md#d-015--2026-06--data-asset-law-bitemporal-append-only-license-segmented)).
+slot from the asset layer ([D-015](../record/DECISIONS.md#d-015--2026-06--data-asset-law-bitemporal-append-only-license-segmented)).
 
 ## Appendix A — Traveler parameters (TP-01..47) — per D-011 + D-012
 The floor: origin + dates always suffices. Dates carry: start, end,
@@ -565,7 +565,7 @@ boundary times (earliest departure / latest return). When flexibility
 ≠ fixed, trip_length_nights is the single non-negotiable ask
 (statistics-based default if declined). Every field below is OPTIONAL
 and defaults to Null.
-Ask tiers ([D-012](../DECISIONS.md#d-012--2026-06--elicitation--inference-policy-ask-tiers-provenance-upsert)): U = upfront (capped at six questions: origin,
+Ask tiers ([D-012](../record/DECISIONS.md#d-012--2026-06--elicitation--inference-policy-ask-tiers-provenance-upsert)): U = upfront (capped at six questions: origin,
 dates+flexibility+length, who's going, budget, multi-city, one
 interest pass; language joins contextually for international scope) ·
 L = later/contextual · N = never (inferred, defaulted,
@@ -574,7 +574,7 @@ Provenance: every field stores {stated | inferred | default} +
 updated_at. Supersede: stated > inferred > default; newer > older.
 Stated-only class (never inferred): [TP-22](#appendix-a--traveler-parameters-tp-0147--per-d-011--d-012), [TP-41](#appendix-a--traveler-parameters-tp-0147--per-d-011--d-012), [TP-45](#appendix-a--traveler-parameters-tp-0147--per-d-011--d-012), allergy
 details inside [TP-21](#appendix-a--traveler-parameters-tp-0147--per-d-011--d-012). Tiers: engine / brain-only / socket. Extension
-is append-only ([D-011](../DECISIONS.md#d-011--2026-06--traveler-input-vocabulary-rich-nullable-tiered-append-only)). No source slots — the source is the traveler;
+is append-only ([D-011](../record/DECISIONS.md#d-011--2026-06--traveler-input-vocabulary-rich-nullable-tiered-append-only)). No source slots — the source is the traveler;
 validation lands in T7.
 
 | ID | Field | Values | Ask | Consumed by | Tier |
@@ -621,7 +621,7 @@ validation lands in T7.
 | TP-40 | Reference trips | [{place, sentiment, why}] | N — synthesized from anything said | brain steering ("more like Kyoto") | brain |
 | TP-41 | Nationality / passports | [ISO] | N — account page when auth exists; NEVER inferred | keys visa socket | socket |
 | TP-42 | Verified-only strictness | labeled/strict | S — default labeled | rung 4–5 render policy | engine |
-| TP-43 | Units | metric/us | S — default metric ([D-013](../DECISIONS.md#d-013--2026-06--canonical-units-si-storage-display-time-conversion)) | display conversion | engine |
+| TP-43 | Units | metric/us | S — default metric ([D-013](../record/DECISIONS.md#d-013--2026-06--canonical-units-si-storage-display-time-conversion)) | display conversion | engine |
 | TP-44 | Time commitments | [{what, where, when, recurring}] | L / capture | Plan anchors; pre-locked items | engine |
 | TP-45 | Special conditions | pregnancy, recovery, etc. | N — stated-only | adjust + warn; liability guard | brain |
 | TP-46 | Pets along | {along, type} | N — capture | [FE-09](#f-fe-09--venue-attributes) pet filter | brain |
@@ -635,7 +635,7 @@ validation lands in T7.
   ([ENGINE §6](../ENGINE.md#6-synthesize--build-the-plan); T7 schemas it).
 
 ## Appendix C — Telemetry vocabulary (what the app records)
-([V1.S1.T1](../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code) amendment review, purposes P3–P6; [D-014](../DECISIONS.md#d-014--2026-06--telemetry-posture-capture-now-use-later), [D-015](../DECISIONS.md#d-015--2026-06--data-asset-law-bitemporal-append-only-license-segmented))
+([V1.S1.T1](../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code) amendment review, purposes P3–P6; [D-014](../record/DECISIONS.md#d-014--2026-06--telemetry-posture-capture-now-use-later), [D-015](../record/DECISIONS.md#d-015--2026-06--data-asset-law-bitemporal-append-only-license-segmented))
 Moved whole from the retired TELEMETRY.md — see the D-number above
 for provenance.
 
@@ -717,7 +717,7 @@ freshness window) · schema_drift (live payload keys vs the [FACTS.md](FACTS.md)
 Dictionary line — the Dictionary IS the drift contract) ·
 ladder_falls (runtime degradations down the reliability ladder, and
 where).
-Demotion law ([D-015](../DECISIONS.md#d-015--2026-06--data-asset-law-bitemporal-append-only-license-segmented)): sustained failure, drift, or §2 miscalibration
+Demotion law ([D-015](../record/DECISIONS.md#d-015--2026-06--data-asset-law-bitemporal-append-only-license-segmented)): sustained failure, drift, or §2 miscalibration
 -> grade demotion -> renders fall down the ladder automatically;
 promotion only via re-vetting (a T2–T6-style spike rerun). Grades are
 earned, never grandfathered.
@@ -730,4 +730,4 @@ Tables implied: events · eval_runs (cases live in the repo) ·
 claim_ledger · actuals · source_health, plus coverage views. Fact
 cache: bitemporal (valid_for, recorded_at), append-only supersede
 chains; license-segmented layers with per-layer attribution; world
-data strictly separated from traveler and event data ([D-015](../DECISIONS.md#d-015--2026-06--data-asset-law-bitemporal-append-only-license-segmented)).
+data strictly separated from traveler and event data ([D-015](../record/DECISIONS.md#d-015--2026-06--data-asset-law-bitemporal-append-only-license-segmented)).

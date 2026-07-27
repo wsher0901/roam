@@ -96,7 +96,7 @@ The briefing follows the response doctrine
 ([HOME §Response doctrine](../HOME.md#response-doctrine)); the
 shape below is the founder's status template.
 - ⏸ FIRST, above everything
-  ([D-050](../DECISIONS.md#d-050--2026-07--session-lifecycle--closed--dead-the-close-locks-wall-softens-to-injected-read-only-doctrine-interrupt-capture-is-standing-format-the-claude-residue-sweep-is-pickup-hygiene-ideas-is-an-inbox-not-an-archive-amends-the-d-046-era-close-wall-design-upholds-the-park-protocol-and-no-solo-approval)):
+  ([D-050](../record/DECISIONS.md#d-050--2026-07--session-lifecycle--closed--dead-the-close-locks-wall-softens-to-injected-read-only-doctrine-interrupt-capture-is-standing-format-the-claude-residue-sweep-is-pickup-hygiene-ideas-is-an-inbox-not-an-archive-amends-the-d-046-era-close-wall-design-upholds-the-park-protocol-and-no-solo-approval)):
   whenever any memory's Status reads
   interrupted, LEAD the briefing with one line per interrupted
   task, drawn from its ⏸ capture block
