@@ -2,12 +2,12 @@
 type: spec
 id: atlas
 title: ATLAS — the system spine, the workshop depicted as diagrams on one page ([D-058](../DECISIONS.md#d-058--2026-07--atlas--the-system-spine-the-workshop-depicted-as-six-diagrams-on-one-page-the-posture-is-the-boards--it-renders-originates-nothing-dated-stamp-least-authoritative-the-prose-governs-every-box-linked-to-its-owning-doctrine-so-a-currency-audit-verifies-it-mechanically-upholds-the-derivation-law-one-home-and-the-weave-rule))
-status: open
+status: shipped
 stage: workshop
 branch: docs/atlas
-pr: —
+pr: 231
 opened: 2026-07-27
-shipped: —
+shipped: 2026-07-27 20:42
 ---
 
 # atlas — the workshop as diagrams, rendering and originating nothing
