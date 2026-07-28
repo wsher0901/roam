@@ -2618,7 +2618,12 @@ making them wait for a cloud session to notice is the tail
 wagging the dog; the baton belongs to the seat the founder is
 driving.
 
-**Affects:** [land](../skills/land.md) (the trigger table — three
+**Affects:**
+[LAWS §Parallel lanes & cloud](../LAWS.md#parallel-lanes--cloud)
+(the supersession clause gains its one carve-out: a superseded
+COCKPIT self-retires by the landing ritual instead of "push,
+write nothing", and still writes no board) ·
+[land](../skills/land.md) (the trigger table — three
 scenarios plus manual retire) ·
 [pickup §6](../skills/pickup.md#6--fleet-resume-on-the-founders-answer)
 (the decisions-pending takeover + the supersession write) ·

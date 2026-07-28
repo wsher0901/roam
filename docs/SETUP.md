@@ -417,7 +417,9 @@ verify every claim against origin before acting; git outranks it.
    https://claude.ai/code/${CLAUDE_CODE_REMOTE_SESSION_ID/#cse_/session_}
    — shipped as a pickup-class micro-PR (the DASHBOARD-only
    carve-out). If a FOREIGN live cockpit seat-stamp is present
-   instead, rule 7 governs — you are the stray: push nothing,
+   instead, you are a STRAY BIRTH, not a superseded flight —
+   rule 7's landing ritual is NOT yours to run: you have no
+   lanes, no bench, and no baton to hand back, so push nothing,
    write nothing; your final message is a short factual note
    naming the live cockpit from the board ("A live cockpit
    already holds this board: <its url>. I am a redundant birth —

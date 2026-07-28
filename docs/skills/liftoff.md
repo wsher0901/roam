@@ -273,9 +273,12 @@ close it answers by fresh derivation from origin (state,
 explanations, pointers), always names the current baton-holder,
 and refuses every write, command act, and ritual. The close-lock
 record is unchanged; only the wall is soft. Strictness kept where
-it must be: a SUPERSEDED cockpit stays tombstone-only (charter
-R4b — a replaced cockpit is a hazard, not a reference desk), and
-the seat-stamp supersession law is untouched. End the session as
+it must be: a SUPERSEDED cockpit ends tombstone-only (charter
+R4b — a replaced cockpit is a hazard, not a reference desk),
+though the tombstone is now its LAST word after the landing
+ritual rather than instead of one, and the supersession law
+carries that one carve-out
+([D-061](../record/DECISIONS.md#d-061--2026-07--the-landing-doctrine-recut-to-three-scenarios--the-cockpits-standing-job-advise-on-fleet-status-and-on-each-gate-reaching-decision-execute-the-founders-rulings-from-the-phone-auto-land-when-the-fleet-empties-and-nothing-awaits-the-founder-desk-takeover-when-pickup-finds-a-live-cockpit-holding-decisions-and-the-founders-freeze-unchanged-the-tombstone-wake-rule-makes-a-superseded-cockpit-retire-by-the-full-ritual-amends-d-054s-two-mode-routing-upholds-no-solo-approval-and-the-derivation-law)). End the session as
 a working seat. The
 baton is now the cockpit's for the flight
 ([LAWS §Parallel lanes & cloud](../LAWS.md#parallel-lanes--cloud)).

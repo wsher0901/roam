@@ -76,38 +76,62 @@ FREEZE stays exactly what it is today.
 
 ## Done means
 
-- [ ] D-061 exists carrying all four clauses (standing job · three
+- [x] D-061 exists carrying all four clauses (standing job · three
       scenarios · the tombstone wake-rule), anchors resolving, no
       clause weaker or stronger than the founder's words.
-- [ ] [land](../../skills/land.md) opens with a trigger table
+- [x] [land](../../skills/land.md) opens with a trigger table
       naming all three scenarios plus manual retire, and each
       routes to a procedure that exists.
-- [ ] AUTO-LAND is written with all four of its guards: same-turn
+- [x] AUTO-LAND is written with all four of its guards: same-turn
       both-true, never at birth, never on a timer, never silent —
       and the accepted cost (one re-liftoff) stated in the report.
-- [ ] [pickup §6](../../skills/pickup.md#6--fleet-resume-on-the-founders-answer)
+- [x] [pickup §6](../../skills/pickup.md#6--fleet-resume-on-the-founders-answer)
       carries the takeover: adopt the decision queue with each
       gate's advice, write COCKPIT SUPERSEDED with the takeover
       stamp, proceed.
-- [ ] The cockpit charter master carries the standing job, the
+- [x] The cockpit charter master carries the standing job, the
       auto-land clause, and the tombstone wake-rule; the wake-rule
       reads board-first.
-- [ ] [ATLAS](../../ATLAS.md) diagram 3 shows the three exits and
+- [x] [ATLAS](../../ATLAS.md) diagram 3 shows the three exits and
       every box still maps to owning prose.
-- [ ] No MODE R/P statement anywhere in living docs contradicts
+- [x] No MODE R/P statement anywhere in living docs contradicts
       the recut.
-- [ ] The [IDEAS](../../IDEAS.md) superseded-seat line is closed
-      citing D-061, and the closure claims no more than the decide
-      actually covers.
-- [ ] Files touched: nothing outside the mandate's list.
-- [ ] `check:links` · `check:ledger` · `check:memory` · lint ·
+- [x] The [IDEAS](../../IDEAS.md) superseded-seat line is closed
+      citing D-061 TO THE EXTENT the decide actually covers it,
+      and the closure claims no more than that.
+- [x] Files touched: nothing outside the mandate's list.
+- [x] `check:links` · `check:ledger` · `check:memory` · lint ·
       format · test · build green; Actions green on the pushed
       head; ship §6 critic run.
 
 ## Deviations
 
-<filled by ship>
+Three, all disclosed at the gate:
+
+1. **LAWS was AMENDED, not merely swept.** The plan called for a
+   sweep of MODE R/P statements; the ship §6 critic found that
+   the statement the recut actually overturns is the SUPERSESSION
+   clause in
+   [LAWS §Parallel lanes & cloud](../../LAWS.md#parallel-lanes--cloud)
+   — "push, write nothing", which D-061 rejects by name. LAWS
+   outranks a skill, so leaving it would have made the wake-rule
+   unenforceable. The clause now carries one carve-out.
+2. **A carve-out was added that the mandate did not name:** a
+   superseded cockpit's landing WRITES NO BOARD. Without it, the
+   trigger-2 routing had a superseded cockpit repainting main's
+   bookkeeping concurrently with the desk that holds the baton,
+   and MODE R's cleared Sessions row would have erased the
+   takeover stamp.
+3. **The IDEAS line is marked PARTLY CLOSED, not closed.** The
+   mandate said clause 3 closes it; reading the line showed its
+   case is a superseded GROUND tower leading a TEAM, and a
+   cockpit never leads one, so the team-findings gap survives.
+   The closure cites D-061 for the road it does close and names
+   what remains.
 
 ## Open questions
 
-none at birth.
+One, for the founder: generalizing the tombstone wake-rule to ANY
+superseded seat would close the IDEAS line properly. That is a
+further LAWS amendment rather than a sweep, so it was not taken
+here.

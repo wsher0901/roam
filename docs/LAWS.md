@@ -199,8 +199,12 @@ to the cockpit it summons, the control tower online:
 [D-046](record/DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)).
 A session whose
 [DASHBOARD](DASHBOARD.md) seat-stamp is superseded self-closes:
-push, write nothing. Between control towers the baton is dormant;
-lanes fly on.
+push, write nothing — EXCEPT a superseded COCKPIT, which
+self-retires by the landing ritual instead, so its lanes are
+fenced rather than abandoned, and which still writes no board
+because the baton has already moved
+([D-061](record/DECISIONS.md#d-061--2026-07--the-landing-doctrine-recut-to-three-scenarios--the-cockpits-standing-job-advise-on-fleet-status-and-on-each-gate-reaching-decision-execute-the-founders-rulings-from-the-phone-auto-land-when-the-fleet-empties-and-nothing-awaits-the-founder-desk-takeover-when-pickup-finds-a-live-cockpit-holding-decisions-and-the-founders-freeze-unchanged-the-tombstone-wake-rule-makes-a-superseded-cockpit-retire-by-the-full-ritual-amends-d-054s-two-mode-routing-upholds-no-solo-approval-and-the-derivation-law)).
+Between control towers the baton is dormant; lanes fly on.
 Cloud lanes launch only through liftoff's sanctioned routes; never
 end a session before its work is on origin.
 Mechanics: [parallel-lanes](skills/parallel-lanes.md) ·

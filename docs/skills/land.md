@@ -10,11 +10,12 @@ COCKPIT ONLY. Land ends a FLIGHT; [handoff](handoff.md) leaves a
 DESK — the ground's leaving ritual never runs in flight, and this
 one never runs on the ground. It closes the session.
 
-ONE skill, TWO modes, routed by the fleet — because a flight ends
-in exactly two situations and they need opposite acts: the work is
+ONE skill, TWO modes, routed by the fleet — because a flight can
+END IN only two STATES and they need opposite acts: the work is
 finished (retire it) or the work is still flying and the founder
 is walking back to a desk (pause it and hand it over). The mode is
-derived, never guessed.
+derived, never guessed. How many things can START a landing is a
+different question, and the trigger table below answers it.
 
 ## The trigger table — what starts a landing
 
@@ -55,7 +56,19 @@ awaiting the founder. The moment both are true in the same turn,
 run the full ritual unprompted — retire the lanes' sessions,
 push, deliver the landing report naming the re-open paths, then
 retire. Derive both halves from origin at test time, never from
-what the last turn remembered.
+what the last turn remembered:
+
+- **No working lanes** — §0's derivation, read through the
+  liveness rule
+  ([parallel-lanes §Liveness](parallel-lanes.md#liveness--live-vs-reclaimable)):
+  no lane with a non-terminal Status and a heartbeat in the
+  window, and no bench of your own still open.
+- **No decisions awaiting the founder** — ALL THREE clear, or the
+  test fails: no open `BLOCKED:` comment on any PR · no PR
+  standing ready at THE GATE waiting for the founder's word ·
+  nothing in the board's Needs-you that this flight put there.
+  This half is the one that decides whether a premature fire
+  happens, so it is enumerated rather than judged.
 
 FOUR GUARDS, each of which has to hold:
 
@@ -103,6 +116,20 @@ Then run the ritual from
 [§0](#0--derive-the-fleet-route-the-mode) and let the fleet pick
 the mode — MODE R if the flight is empty, MODE P if lanes are
 still airborne, which fences them for the desk to resume.
+
+**THE ONE CARVE-OUT, and it is not optional: A SUPERSEDED
+COCKPIT WRITES NO BOARD.** Both modes normally end in a board
+micro-PR — MODE R clears the Sessions row, MODE P ships the
+fleet-at-ground table. Here the DESK already holds the baton and
+has already stamped the takeover, so those writes would be a
+second seat repainting main's bookkeeping, and MODE R's cleared
+row would erase the desk's own stamp. So in this scenario alone:
+run every LANE duty (fence what flies, push, verify retired
+branches dead) and the report — SKIP the board step entirely.
+The desk owns the board from its takeover write onward, and the
+fences you push are what it reads. This is
+[LAWS](../LAWS.md#parallel-lanes--cloud)' supersession clause
+applied here, not an exception to it.
 
 ## Scenario 3 · THE FOUNDER'S FREEZE (word-only)
 

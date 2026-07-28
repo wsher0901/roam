@@ -1,14 +1,16 @@
 ---
 type: memory
 id: land-doctrine-v2
-updated: 2026-07-28 15:30 · the ripple lands · work PC
+updated: 2026-07-28 15:40 · ship · work PC
 ---
 # land-doctrine-v2 — three scenarios, one ritual
 
 ## Status
 
-in flight — 2026-07-28, work PC. D-061 is minted and the whole
-ripple has landed:
+complete, awaiting merge — 2026-07-28, work PC. D-061 is minted,
+the whole ripple has landed, and the ship §6 critic's round is
+repaired (thirteen findings; the three structural ones changed
+the doctrine, not just the wording — see the critic round below):
 [land](../skills/land.md)'s trigger table and three scenario
 sections, [pickup](../skills/pickup.md#the-desk-takeover--a-live-cockpit-holding-decisions)'s
 desk takeover, [liftoff §7](../skills/liftoff.md#7--close)'s
@@ -99,6 +101,74 @@ still-flying lanes get FENCED, and the desk resumes them through
 as an ordinary grounded fleet. That keeps "the full ritual"
 literally true and makes the handover coherent in the case the
 mandate did not spell out.
+
+### The critic round (ship §6, pre-flip)
+
+Thirteen findings on `a06f2a9`, and three of them were structural
+— the bench had written a doctrine that contradicted itself in
+ways no link checker sees. All repaired before the flip.
+
+1. **LAWS still said the opposite.**
+   [LAWS §Parallel lanes & cloud](../LAWS.md#parallel-lanes--cloud)
+   read "a session whose seat-stamp is superseded self-closes:
+   push, write nothing" — the exact behaviour D-061 REJECTS by
+   name in its own alternatives. LAWS is imported into every
+   session and outranks a skill, so a superseded cockpit would
+   have read the law and stopped. The mandate's "sweep LAWS for
+   MODE R/P statements the recut outdates" pointed at the right
+   file; the outdated statement was not a MODE statement, which
+   is why the first pass missed it. The clause now carries its
+   one carve-out.
+2. **TWO SEATS WRITING THE BOARD.** Routing trigger 2 through §0
+   meant a superseded cockpit would run MODE R's board repaint —
+   whose Sessions-row clear would ERASE the desk's own takeover
+   stamp — or MODE P's fleet-at-ground micro-PR, while the desk
+   already held the baton. That is precisely the failure the
+   baton law exists to prevent, invented by this bench. The fix
+   is the carve-out now stated in
+   [land §Scenario 2](../skills/land.md#scenario-2--desk-takeover-the-desk-fires-it):
+   a superseded cockpit runs every LANE duty and the report, and
+   SKIPS the board step entirely.
+3. **The takeover was unreachable by reading pickup top-down.**
+   It had been filed under §6, whose opening line reads "runs
+   only after §5's FLEET RESUME ask" — and §5's ask renders only
+   for a GROUNDED fleet, which is exactly what a live cockpit is
+   not. §6 now names TWO ENTRY DOORS, and §3's gather routes the
+   live-cockpit-with-decisions case straight to the takeover.
+4. **The resume mechanics would have killed a healthy lane.** The
+   first draft said the desk handles "fenced or flying lanes …
+   exactly as any other fleet" — but `redeploy` writes
+   `bench ready` onto a branch, and on a LIVE lane that is a
+   Status the worker does not own, so the wake-lock would
+   terminate it. The desk now LEAVES LIVE LANES ALONE; the
+   superseded cockpit's own landing fences them, and they become
+   an ordinary grounded fleet for the next resume ask.
+5. **Auto-land's second half had no recipe.** "No decisions
+   awaiting the founder" was left to judgment while the first
+   half routed to the liveness rule — and it is the half that
+   decides whether a premature fire happens. It is now
+   enumerated: no open `BLOCKED:` comment · no PR standing ready
+   at THE GATE · nothing this flight put in Needs-you.
+
+The rest, all repaired: land's own preamble still said a flight
+ends "in exactly two situations" (end-STATES, not triggers —
+reworded); the charter's stray-birth case pointed at rule 7,
+which now mandates a ritual a stray must not run (disambiguated —
+a stray has no lanes, no bench, no baton); liftoff's and HOME's
+"tombstone-only" lines under-described the new order (the
+tombstone is the LAST word after the ritual, not instead of it);
+ATLAS's caption counted four exits while the diagram drew three
+(the manual-retire edge added); the COCKPIT SUPERSEDED string had
+no format or location (now specified, citing handoff §4 as the
+board spec); and the literal count "FOUR" had been restated in
+five places — a derivation-law smell — so HOME now points at the
+trigger table instead of counting.
+
+Two the critic raised and I did not change: the census of where
+the doctrine is restated (the charter copy is deliberate — it is
+an offline surface that must be unmissable), and the spec's
+Done-means #8 wording, which was corrected instead to say the
+IDEAS line closes only to the extent D-061 covers it.
 
 ## Where to look
 

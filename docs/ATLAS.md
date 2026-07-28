@@ -87,8 +87,9 @@ Boxes: [the hook and the daily loop — HOME](HOME.md#the-daily-loop)
 ## 3 · Away & return
 
 The chooser decides how a sitting ends; land and pickup close the
-circle — sessions are cattle, branches are the work. A flight ends
-four ways and only two are the founder's word
+circle — sessions are cattle, branches are the work. A flight can
+be ended by the cockpit itself, by a desk taking over, or by the
+founder's word
 ([D-061](record/DECISIONS.md#d-061--2026-07--the-landing-doctrine-recut-to-three-scenarios--the-cockpits-standing-job-advise-on-fleet-status-and-on-each-gate-reaching-decision-execute-the-founders-rulings-from-the-phone-auto-land-when-the-fleet-empties-and-nothing-awaits-the-founder-desk-takeover-when-pickup-finds-a-live-cockpit-holding-decisions-and-the-founders-freeze-unchanged-the-tombstone-wake-rule-makes-a-superseded-cockpit-retire-by-the-full-ritual-amends-d-054s-two-mode-routing-upholds-no-solo-approval-and-the-derivation-law)).
 
 ```mermaid
@@ -104,9 +105,11 @@ flowchart TD
   T -->|"work done AND nothing awaits the founder — same turn"| AL["AUTO-LAND: the cockpit fires it, unprompted — never at birth, never on a timer, never silent"]
   T -->|"founder returns to a desk with gates undecided"| SUP["DESK TAKEOVER: pickup adopts the decision queue, writes COCKPIT SUPERSEDED — the cockpit self-retires on its next wake"]
   T -->|"the founder's word: ground the fleet"| FR["THE FREEZE — word-only, forces MODE P"]
+  T -->|"the founder's word: land"| MR["MANUAL RETIRE — on an empty fleet"]
   AL --> LA{"land — mode derived from the fleet"}
   SUP --> LA
   FR --> LA
+  MR --> LA
   LA -->|"nothing flying"| R["MODE R retire: final repaint, retired branches verified dead"]
   LA -->|"work flying"| PP["MODE P pause-and-transfer: THE FENCE — a pushed commit per lane writing Status held; the board carries the fleet-at-ground table"]
   R --> PU["pickup — the next sitting claims the baton"]
