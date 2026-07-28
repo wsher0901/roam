@@ -8,19 +8,138 @@ status: living
 
 COCKPIT ONLY. Land ends a FLIGHT; [handoff](handoff.md) leaves a
 DESK — the ground's leaving ritual never runs in flight, and this
-one never runs on the ground. Fires on the founder's "land",
-"land it", "ground the fleet", "pause everything — I'm going
-local", or the flight's own natural end. It closes the session.
+one never runs on the ground. It closes the session.
 
-ONE skill, TWO modes, routed by the fleet — because a flight ends
-in exactly two situations and they need opposite acts: the work is
+ONE skill, TWO modes, routed by the fleet — because a flight can
+END IN only two STATES and they need opposite acts: the work is
 finished (retire it) or the work is still flying and the founder
 is walking back to a desk (pause it and hand it over). The mode is
-derived, never guessed.
+derived, never guessed. How many things can START a landing is a
+different question, and the trigger table below answers it.
+
+## The trigger table — what starts a landing
+
+Four ways a flight ends, and only two of them begin with the
+founder speaking
+([D-061](../record/DECISIONS.md#d-061--2026-07--the-landing-doctrine-recut-to-three-scenarios--the-cockpits-standing-job-advise-on-fleet-status-and-on-each-gate-reaching-decision-execute-the-founders-rulings-from-the-phone-auto-land-when-the-fleet-empties-and-nothing-awaits-the-founder-desk-takeover-when-pickup-finds-a-live-cockpit-holding-decisions-and-the-founders-freeze-unchanged-the-tombstone-wake-rule-makes-a-superseded-cockpit-retire-by-the-full-ritual-amends-d-054s-two-mode-routing-upholds-no-solo-approval-and-the-derivation-law)).
+Read this table first; it routes to the mode, and the mode is
+never chosen any other way.
+
+| # | Trigger | Who fires it | Mode |
+|---|---|---|---|
+| 1 | AUTO-LAND — no working lanes AND no decisions awaiting the founder, both true in the SAME turn | the cockpit, unprompted → [§Scenario 1](#scenario-1--auto-land-the-cockpit-fires-it) | MODE R |
+| 2 | DESK TAKEOVER — a pickup adopts this flight's decision queue and writes COCKPIT SUPERSEDED | the desk; this cockpit obeys the [wake-rule](#scenario-2--desk-takeover-the-desk-fires-it) | derived (§0) |
+| 3 | THE FOUNDER'S FREEZE — "ground the fleet", "pause everything — I'm going local" | the founder, word-only → [§Scenario 3](#scenario-3--the-founders-freeze-word-only) | MODE P |
+| 4 | MANUAL RETIRE — a bare "land" or "land it" on an empty fleet | the founder | MODE R |
+
+Triggers 1 and 4 reach MODE R by construction — each fires only
+when nothing is flying. Trigger 2 does NOT: a desk can take the
+decision queue while lanes are still airborne, so a superseded
+cockpit derives its mode at §0 like any other landing, and lanes
+that are still flying get FENCED. That is the intended handover —
+the desk adopted the DECISIONS, and it resumes the fenced lanes
+through [pickup §6](pickup.md#6--fleet-resume-on-the-founders-answer)
+like any grounded fleet. Trigger 3 is the only one that forces a
+mode against the fleet: it is MODE P even when nothing is flying,
+so the founder always lands on a board that says where the work
+is.
 
 Sources:
 [cockpit charter — SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts)
 [D-054](../record/DECISIONS.md#d-054--2026-07--the-landing-skill--how-a-flight-ends-becomes-a-first-class-ritual-one-skill-with-two-modes-routed-by-fleet-state-retire--pause-and-transfer-the-fence-is-a-commit-so-the-resume-point-is-the-branch-tip-by-construction-wake-lock-mediated-with-its-honesty-clause-the-board-is-the-single-transfer-material-pickup-gains-the-fleet-resume-ask-and-its-cap-arithmetic-sessions-are-cattle-branches-are-the-work-charter-rule-6-becomes-a-pointer-the-effort-doctrine-moves-to-opus-5--xhigh-upholds-the-wake-lock-the-park-protocol-and-one-home-supersedes-the-opus-48-reliance-pair)
+[D-061](../record/DECISIONS.md#d-061--2026-07--the-landing-doctrine-recut-to-three-scenarios--the-cockpits-standing-job-advise-on-fleet-status-and-on-each-gate-reaching-decision-execute-the-founders-rulings-from-the-phone-auto-land-when-the-fleet-empties-and-nothing-awaits-the-founder-desk-takeover-when-pickup-finds-a-live-cockpit-holding-decisions-and-the-founders-freeze-unchanged-the-tombstone-wake-rule-makes-a-superseded-cockpit-retire-by-the-full-ritual-amends-d-054s-two-mode-routing-upholds-no-solo-approval-and-the-derivation-law)
+
+## Scenario 1 · AUTO-LAND (the cockpit fires it)
+
+THE TEST, read in ONE turn: no working lanes, AND no decisions
+awaiting the founder. The moment both are true in the same turn,
+run the full ritual unprompted — retire the lanes' sessions,
+push, deliver the landing report naming the re-open paths, then
+retire. Derive both halves from origin at test time, never from
+what the last turn remembered:
+
+- **No working lanes** — §0's derivation, read through the
+  liveness rule
+  ([parallel-lanes §Liveness](parallel-lanes.md#liveness--live-vs-reclaimable)):
+  no lane with a non-terminal Status and a heartbeat in the
+  window, and no bench of your own still open.
+- **No decisions awaiting the founder** — ALL THREE clear, or the
+  test fails: no open `BLOCKED:` comment on any PR · no PR
+  standing ready at THE GATE waiting for the founder's word ·
+  nothing in the board's Needs-you that this flight put there.
+  This half is the one that decides whether a premature fire
+  happens, so it is enumerated rather than judged.
+
+FOUR GUARDS, each of which has to hold:
+
+1. **Never at birth.** A fresh cockpit waits for at least one
+   founder command before the test can fire at all. A cockpit
+   born into an already-quiet fleet would otherwise land before
+   it has done anything.
+2. **Never on a timer.** No idle countdown, no scheduled check. A
+   clock cannot see whether a gate is waiting.
+3. **Never silent.** The landing report always ships. A landing
+   with no report is indistinguishable from a crash.
+4. **Both-true in the SAME turn.** Not "lanes finished earlier
+   and the last gate cleared now" reconstructed from memory —
+   both conditions are re-derived and must hold together at the
+   moment of the test.
+
+THE ACCEPTED COST, stated in the report rather than hidden: if
+the fire was premature, it costs ONE RE-LIFTOFF. So the report
+names the re-open paths — which branches, which PRs, and that a
+fresh liftoff resumes them — and never implies the flight could
+not be restarted.
+
+Then run [MODE R](#mode-r--retire-the-flights-natural-end).
+
+## Scenario 2 · DESK TAKEOVER (the desk fires it)
+
+The founder returns to a seat while this flight still holds
+undecided gates. The DESK acts —
+[pickup §6](pickup.md#6--fleet-resume-on-the-founders-answer)
+adopts the decision queue, surfaces each gate with this cockpit's
+advice, and writes COCKPIT SUPERSEDED to the board with the
+takeover stamp.
+
+THE TOMBSTONE WAKE-RULE — this cockpit's whole duty in this
+scenario: ON ANY WAKE, READ THE BOARD FIRST. If it says
+superseded, self-retire by the full landing ritual and write
+nothing else. Not "push and stop": a session that vanishes
+mid-flight leaves its lanes unfenced and its row stale, and the
+ritual is barely more expensive than silence. The tombstone line
+and refusal guard in the charter's R4b are how that retirement
+speaks
+([SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts)).
+
+Then run the ritual from
+[§0](#0--derive-the-fleet-route-the-mode) and let the fleet pick
+the mode — MODE R if the flight is empty, MODE P if lanes are
+still airborne, which fences them for the desk to resume.
+
+**THE ONE CARVE-OUT, and it is not optional: A SUPERSEDED
+COCKPIT WRITES NO BOARD.** Both modes normally end in a board
+micro-PR — MODE R clears the Sessions row, MODE P ships the
+fleet-at-ground table. Here the DESK already holds the baton and
+has already stamped the takeover, so those writes would be a
+second seat repainting main's bookkeeping, and MODE R's cleared
+row would erase the desk's own stamp. So in this scenario alone:
+run every LANE duty (fence what flies, push, verify retired
+branches dead) and the report — SKIP the board step entirely.
+The desk owns the board from its takeover write onward, and the
+fences you push are what it reads. This is
+[LAWS](../LAWS.md#parallel-lanes--cloud)' supersession clause
+applied here, not an exception to it.
+
+## Scenario 3 · THE FOUNDER'S FREEZE (word-only)
+
+"Ground the fleet" · "pause everything — I'm going local" — and
+nothing else fires this. It forces
+[MODE P](#mode-p--pause-and-transfer-the-founder-is-going-local)
+whatever the fleet reads: the fence, the board transfer, resume
+at any desk. The mechanics are unchanged from
+[D-054](../record/DECISIONS.md#d-054--2026-07--the-landing-skill--how-a-flight-ends-becomes-a-first-class-ritual-one-skill-with-two-modes-routed-by-fleet-state-retire--pause-and-transfer-the-fence-is-a-commit-so-the-resume-point-is-the-branch-tip-by-construction-wake-lock-mediated-with-its-honesty-clause-the-board-is-the-single-transfer-material-pickup-gains-the-fleet-resume-ask-and-its-cap-arithmetic-sessions-are-cattle-branches-are-the-work-charter-rule-6-becomes-a-pointer-the-effort-doctrine-moves-to-opus-5--xhigh-upholds-the-wake-lock-the-park-protocol-and-one-home-supersedes-the-opus-48-reliance-pair);
+this scenario only names the trigger.
 
 ## 0 · Derive the fleet, route the mode
 
@@ -39,11 +158,12 @@ Route on what that returns:
   still open →
   **[MODE P · PAUSE-AND-TRANSFER](#mode-p--pause-and-transfer-the-founder-is-going-local)**.
 
-The founder's explicit phrases — "ground the fleet", "pause
-everything — I'm going local" — force MODE P DIRECTLY, whatever
-the fleet reads. An empty fleet still gets MODE P's board line and
-report, so the founder always lands on a board that says where the
-work is.
+Trigger 3 — the founder's freeze — overrides this routing and
+forces MODE P whatever the fleet reads. An empty fleet still gets
+MODE P's board line and report, so the founder always lands on a
+board that says where the work is. Triggers 1, 2 and 4 route
+here normally: 1 and 4 reach MODE R by construction, and 2 lands
+in whichever mode its fleet dictates.
 
 Sources:
 [derivation law — LAWS §Knowledge & tracking](../LAWS.md#knowledge--tracking)
@@ -65,7 +185,11 @@ procedure at all.
 A ground seat leaving with a live team is
 [handoff §1.2](handoff.md#12--shut-the-team-down-full-only)'s
 duty — capture the findings, then shut down by name. That
-procedure has ONE home and this is not it.
+procedure has ONE home and this is not it. A ground tower that is
+SUPERSEDED while leading a team follows the same duty on the
+generalized wake-rule
+([D-062](../record/DECISIONS.md#d-062--2026-07--the-wake-rule-generalized--any-superseded-seat-exits-by-its-own-closing-ritual-never-bare-a-cockpit-by-the-landing-ritual-a-ground-control-tower-by-capture-then-close-with-team-findings-captured-first-no-superseded-seat-writes-a-board-because-the-baton-has-already-moved-closes-d-056s-deferred-road-in-full-upholds-d-056-and-d-061)):
+capture first, then close, and write no board.
 
 ## MODE R · RETIRE (the flight's natural end)
 

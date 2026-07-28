@@ -198,9 +198,16 @@ liftoff (which close the session — liftoff's fire hands the baton
 to the cockpit it summons, the control tower online:
 [D-046](record/DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)).
 A session whose
-[DASHBOARD](DASHBOARD.md) seat-stamp is superseded self-closes:
-push, write nothing. Between control towers the baton is dormant;
-lanes fly on.
+[DASHBOARD](DASHBOARD.md) seat-stamp is superseded EXITS BY ITS
+OWN CLOSING RITUAL, never bare
+([D-062](record/DECISIONS.md#d-062--2026-07--the-wake-rule-generalized--any-superseded-seat-exits-by-its-own-closing-ritual-never-bare-a-cockpit-by-the-landing-ritual-a-ground-control-tower-by-capture-then-close-with-team-findings-captured-first-no-superseded-seat-writes-a-board-because-the-baton-has-already-moved-closes-d-056s-deferred-road-in-full-upholds-d-056-and-d-061)):
+a cockpit by [land](skills/land.md), so its lanes are fenced
+rather than abandoned; a ground control tower by
+[handoff](skills/handoff.md)'s capture-then-close, TEAM FINDINGS
+CAPTURED FIRST if a team is live. No superseded seat writes a
+board — the baton has already moved, and the exit writes only its
+own homes. Between control towers the baton is dormant; lanes fly
+on.
 Cloud lanes launch only through liftoff's sanctioned routes; never
 end a session before its work is on origin.
 Mechanics: [parallel-lanes](skills/parallel-lanes.md) ·

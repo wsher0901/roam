@@ -60,6 +60,12 @@ its branch) and surface it. Relay any hook lines from session
 start (branches removed as welded elsewhere, or one it could not
 remove). Where the board and git disagree, git wins — say so
 plainly.
+A LIVE COCKPIT HOLDING PENDING DECISIONS routes straight to
+[§6's desk takeover](#the-desk-takeover--a-live-cockpit-holding-decisions)
+— not to §5's fleet-resume ask, which renders only for a grounded
+fleet. "Pending decisions" is read the same way the cockpit reads
+it: open `BLOCKED:` comments, PRs standing ready at THE GATE, and
+this flight's own Needs-you lines.
 Re-arm every named watch: any "watching #N for X" line found in a
 parked lane's memory or the board's flight-context line
 ([handoff §1.5](handoff.md#15--park-the-local-lanes-full-only)
@@ -155,10 +161,63 @@ Sources:
 
 ## 6 · Fleet resume (on the founder's answer)
 
-Runs only after §5's FLEET RESUME ask, and only on the founder's
-word — a ritual never spends cap runs by default. The redeploy
-mechanics live HERE and nowhere else; every other page points at
-this section.
+TWO ENTRY DOORS, and they are not the same door. THE RESUME
+MECHANICS (redeploy · adopt · hold) run only after §5's FLEET
+RESUME ask and only on the founder's word — a ritual never spends
+cap runs by default; the redeploy mechanics live HERE and nowhere
+else, and every other page points at this section. THE DESK
+TAKEOVER below has its OWN trigger — §3's gather finding a live
+cockpit that holds pending decisions — and needs no §5 ask,
+because §5's ask renders only for a GROUNDED fleet, which is
+exactly what this case is not.
+
+### The desk takeover — a LIVE cockpit holding decisions
+
+Reached from [§3](#3--gather-git-outranks-the-board), not from
+§5's ask. The case that outranks the resume mechanics
+([D-061](../record/DECISIONS.md#d-061--2026-07--the-landing-doctrine-recut-to-three-scenarios--the-cockpits-standing-job-advise-on-fleet-status-and-on-each-gate-reaching-decision-execute-the-founders-rulings-from-the-phone-auto-land-when-the-fleet-empties-and-nothing-awaits-the-founder-desk-takeover-when-pickup-finds-a-live-cockpit-holding-decisions-and-the-founders-freeze-unchanged-the-tombstone-wake-rule-makes-a-superseded-cockpit-retire-by-the-full-ritual-amends-d-054s-two-mode-routing-upholds-no-solo-approval-and-the-derivation-law),
+scenario 2): §3's gather finds a cockpit that is LIVE and holding
+PENDING DECISIONS — gates that reached decision and are waiting
+on the founder. The founder is here, at this desk. Two commanding
+seats cannot both hold the baton, so the desk takes it:
+
+1. **ADOPT THE DECISION QUEUE.** Surface every pending gate at
+   this desk, each one carrying the cockpit's own advice — read
+   from its PR comments and the board's flight context, never
+   re-invented. The founder answers them here.
+2. **WRITE COCKPIT SUPERSEDED** to the board — the Sessions row
+   for that flight, per the board spec
+   ([handoff §4](handoff.md#4--repaint-dashboard-the-board-spec--single-source)),
+   in this exact shape so the old cockpit can recognize it:
+
+   ```text
+   COCKPIT SUPERSEDED — desk takeover <date · time · seat> · <its session url>
+   ```
+
+   This is the board write the supersession rests on: the old
+   cockpit learns it is superseded by READING this row, and from
+   this moment the desk owns the board.
+3. **PROCEED** with the rest of pickup — but LEAVE THE LANES
+   ALONE. The resume mechanics below apply to FENCED branches
+   only: `redeploy` writes `bench ready` onto a branch, which on
+   a LIVE lane is a Status the worker does not own, so the
+   wake-lock would kill a healthy lane; `local <id>` would check
+   out a branch a live worker is still pushing to. A live lane is
+   CLAIMED, never adopted
+   ([parallel-lanes §Liveness](parallel-lanes.md#liveness--live-vs-reclaimable)).
+   The superseded cockpit's own landing is what fences them, and
+   they become an ordinary grounded fleet for the NEXT resume ask
+   — this sitting's or a later one's.
+
+The other side of this is the cockpit's TOMBSTONE WAKE-RULE — on
+any wake, read the board first; if superseded, self-retire by the
+full landing ritual, minus the board step
+([land §Scenario 2](land.md#scenario-2--desk-takeover-the-desk-fires-it)).
+The desk does not WAIT for that retirement — the board write
+transfers the baton immediately, and the retirement is the old
+seat's own duty — but it does not touch that seat's live lanes
+before the fences land either. Nothing is lost by the wait: the
+lanes keep working, and their branches are the work.
 
 Per lane, by the answer given:
 
