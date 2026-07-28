@@ -1,7 +1,7 @@
 ---
 type: memory
 id: chronicle-answers
-updated: 2026-07-28 12:49 · ship · work PC
+updated: 2026-07-28 13:13 · external review repairs · work PC
 ---
 # chronicle-answers — the nine owed endings become record
 
@@ -14,10 +14,14 @@ CLOSE, flag A ADD the row, flag B note-the-dangle, flag C the weld
 repoint. All nine endings, the nine changed shelf rows and the new
 Shelf III one, the census restamp 65 → 66, the T3–T6 relaunch
 brief, the three [IDEAS](../IDEAS.md) lines and the defect line's
-closure are in. Four files touched, none outside the declared set;
-the full CI mirror is green locally. Awaiting the external Web
-review the no-solo-approval law requires of a tower-authored
-payload, then the founder's word.
+closure are in. The external review returned two repairs, both
+landed: the three-phase order minted as
+[D-060](../record/DECISIONS.md#d-060--2026-07--the-three-phase-standing-order--settle-and-test-the-vault-then-roam-v1s1t3t6-and-v1s2t5-are-paused-until-phase-2-closes-the-founders-2026-07-28-sequencing-recorded-per-laws-pause-routing-upholds-the-pacing-law)
+(the founder amending the files-touched to admit a pure append),
+and item 6's second half answered — the phone still carries the
+app, so the ending is a demotion. Five files touched, none
+outside the amended set; the full CI mirror is green locally.
+Awaiting the founder's word.
 
 ## What this task is
 
@@ -36,16 +40,14 @@ Contract: [the spec](../record/specs/chronicle-answers.md).
   [no-solo-approval](../LAWS.md#workflow-non-negotiable) requires
   an external Web review before the founder's word at THE GATE. DO
   NOT MERGE.
-- **Item 6 is settled in half.** Whether Remote Control still
-  exists on the founder's phone was never asked, and the census
-  asked it. One sentence from the founder closes it; until then
-  the ending says so plainly.
-- **A decide may be owed.** The three-phase sequencing order
-  pauses roadmap-level work, which
-  [LAWS §Workflow](../LAWS.md#workflow-non-negotiable) routes to
-  decide — but this bench's mandate fixed the files touched and a
-  D-number lies outside them. Raised at THE GATE for the founder
-  to rule: fold a decide in, or open a follow-up bench.
+- **A weld step that now covers three files.** The INDEX links
+  this memory twice and
+  [D-060](../record/DECISIONS.md#d-060--2026-07--the-three-phase-standing-order--settle-and-test-the-vault-then-roam-v1s1t3t6-and-v1s2t5-are-paused-until-phase-2-closes-the-founders-2026-07-28-sequencing-recorded-per-laws-pause-routing-upholds-the-pacing-law)
+  links it once, all at the LIVING path. The weld commit repoints
+  all three — the DECISIONS one being a mechanical link-path
+  repair inside a frozen file, which
+  [D-057](../record/DECISIONS.md#d-057--2026-07--the-record-shelf--the-frozen-record-moves-under-one-roof-docsrecord-is-born-history--specs--decisions-in-memory-stays-living-at-root-the-enabling-ruling--a-mechanical-link-path-segment-repair-inside-a-frozen-file-is-maintenance-not-a-content-edit-append-only-governs-meaning-not-bytes-intra-record-links-resolve-by-construction-upholds-append-only-one-home-and-the-weave-rule)
+  rules is maintenance, not a content edit.
 - **A weld step that cannot be forgotten:** this file's links from
   [the INDEX](../chronicle/INDEX.md) point at the LIVING path
   (`../memory/chronicle-answers.md`) because that is what
@@ -200,7 +202,7 @@ re-evaluation, carried into the relaunch. Each is marked
   pre-accepts B-grade: US and major ports verified, everywhere
   else labeled.
 
-### The founder's sequencing order (standing, 2026-07-28)
+### The founder's sequencing order — now [D-060](../record/DECISIONS.md#d-060--2026-07--the-three-phase-standing-order--settle-and-test-the-vault-then-roam-v1s1t3t6-and-v1s2t5-are-paused-until-phase-2-closes-the-founders-2026-07-28-sequencing-recorded-per-laws-pause-routing-upholds-the-pacing-law)
 
 - **PHASE 1 — SETTLE & TEST:** this bench, then the first-story
   shakedown flight (blind cockpit birth · the fence /
@@ -219,7 +221,25 @@ re-evaluation, carried into the relaunch. Each is marked
   design foundations. T3–T6 does not start before phases 1–2
   close.
 
-The order goes on the board at the ship tail, under Now/Next.
+The order goes on the board at the ship tail, under Now/Next,
+citing the decide.
+
+**The decision landed as
+[D-060](../record/DECISIONS.md#d-060--2026-07--the-three-phase-standing-order--settle-and-test-the-vault-then-roam-v1s1t3t6-and-v1s2t5-are-paused-until-phase-2-closes-the-founders-2026-07-28-sequencing-recorded-per-laws-pause-routing-upholds-the-pacing-law)**
+at the external review's word — the critic had flagged the gap
+and the reviewer confirmed it. The pause is what forced the
+D-number:
+[V1.S1](../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
+T3–T6 and
+[V1.S2.T5](../ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)
+are HELD until phase 2 closes, and
+[LAWS §Workflow](../LAWS.md#workflow-non-negotiable) routes a
+paused stage to a decide rather than to conversation. The
+founder amended this bench's files-touched at the gate to admit
+`record/DECISIONS.md` as a pure append; the
+[ROADMAP](../ROADMAP.md) stays untouched on purpose, since a
+pause is sequencing and the unticked boxes already tell the
+truth.
 
 ### The founder's four rulings on the drafting batch
 
@@ -246,10 +266,11 @@ carries:
 2. **Item 6 answered only half its question.** The census asked
    two things — whether the tether was ever used AND whether
    Remote Control still exists on the founder's phone. Only the
-   first was asked on 2026-07-28. The second is now named as
-   STILL OWED rather than silently dropped, with what turns on it
-   (retirement-by-platform, not demotion) stated; the shelf row's
-   confidence drops to medium for the same reason.
+   first was asked on 2026-07-28, so the second was written as
+   STILL OWED rather than silently dropped. The founder then
+   answered it at the external review: the app IS still on the
+   phone, so the ending is a demotion and not
+   retirement-by-platform, and the row returns to high.
 3. **Item 2 hardened a hedge.** "I don't think so" had become
    "confirmed NEVER RUN", propped on the ledger's silence — but a
    landing need not leave a ledger line. The ending now rests on
@@ -268,11 +289,17 @@ fills it at the weld. One rides to the tail: the
 [DASHBOARD](../DASHBOARD.md) carries its own "65 proposed stories"
 literal, which the ship tail's repaint must restamp to 66.
 
-The critic's third notable finding is not repairable here and
-goes to the founder at THE GATE: the three-phase sequencing order
-pauses roadmap work, which LAWS routes to decide, while this
-bench's mandate fixed the files touched and excluded a D-number.
-That tension is the founder's call, not the bench's.
+The critic's third notable finding went to the founder at THE
+GATE, since the bench could not settle it alone: the three-phase
+sequencing order pauses roadmap work, which LAWS routes to
+decide, while the mandate had fixed the files touched and
+excluded a D-number. The external review agreed with the critic,
+and the founder amended the files-touched to admit a pure append.
+The order is now
+[D-060](../record/DECISIONS.md#d-060--2026-07--the-three-phase-standing-order--settle-and-test-the-vault-then-roam-v1s1t3t6-and-v1s2t5-are-paused-until-phase-2-closes-the-founders-2026-07-28-sequencing-recorded-per-laws-pause-routing-upholds-the-pacing-law) —
+a finding the ship-time critic raised and the external reviewer
+confirmed, which is the two-layer review working exactly as
+designed.
 
 ## Where to look
 

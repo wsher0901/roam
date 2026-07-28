@@ -84,15 +84,22 @@ that.
    board holds its own literal copy of that count).
 8. **AT THE WELD, an extra step beyond
    [ship §7](../../skills/ship.md#7--on-approval--the-atomic-weld):**
-   [the INDEX](../../chronicle/INDEX.md) links to this bench's
-   memory TWICE — the §Founder input owed preamble and item 1 —
-   at the LIVING path `../memory/chronicle-answers.md`, because
-   that is the only path `check:links` can resolve while the
-   bench is in flight. The weld commit moves the memory to
-   `record/history/`, so the SAME commit repoints both links to
-   `../record/history/workshop/definition/chronicle-answers.md`.
-   Missing this turns the weld's own Actions run red — which is
-   the net, but the repair belongs in the weld commit itself.
+   THREE links point at this bench's memory at its LIVING path
+   `../memory/chronicle-answers.md`, because that is the only
+   path `check:links` can resolve while the bench is in flight —
+   [the INDEX](../../chronicle/INDEX.md) twice (the §Founder
+   input owed preamble and item 1) and
+   [D-060](../DECISIONS.md#d-060--2026-07--the-three-phase-standing-order--settle-and-test-the-vault-then-roam-v1s1t3t6-and-v1s2t5-are-paused-until-phase-2-closes-the-founders-2026-07-28-sequencing-recorded-per-laws-pause-routing-upholds-the-pacing-law)'s
+   Why once. The weld commit moves the memory to
+   `record/history/`, so the SAME commit repoints all three to
+   `../record/history/workshop/definition/chronicle-answers.md`
+   (from DECISIONS.md: `history/workshop/definition/…`). The
+   DECISIONS one is a mechanical link-path repair inside a frozen
+   file — maintenance under
+   [D-057](../DECISIONS.md#d-057--2026-07--the-record-shelf--the-frozen-record-moves-under-one-roof-docsrecord-is-born-history--specs--decisions-in-memory-stays-living-at-root-the-enabling-ruling--a-mechanical-link-path-segment-repair-inside-a-frozen-file-is-maintenance-not-a-content-edit-append-only-governs-meaning-not-bytes-intra-record-links-resolve-by-construction-upholds-append-only-one-home-and-the-weave-rule),
+   not a content edit. Missing this turns the weld's own Actions
+   run red — which is the net, but the repair belongs in the weld
+   commit itself.
 
 ## Done means
 
@@ -123,8 +130,11 @@ that.
       restamped 65 → 66 wherever the INDEX states it.
 - [x] Files touched: nothing outside
       [the INDEX](../../chronicle/INDEX.md), this bench's memory,
-      this spec, [IDEAS](../../IDEAS.md), and
-      [DASHBOARD](../../DASHBOARD.md) via the ship tail.
+      this spec, [IDEAS](../../IDEAS.md),
+      [DECISIONS](../DECISIONS.md) (a pure append — the
+      files-touched amended by the founder at the gate to admit
+      [D-060](../DECISIONS.md#d-060--2026-07--the-three-phase-standing-order--settle-and-test-the-vault-then-roam-v1s1t3t6-and-v1s2t5-are-paused-until-phase-2-closes-the-founders-2026-07-28-sequencing-recorded-per-laws-pause-routing-upholds-the-pacing-law)),
+      and [DASHBOARD](../../DASHBOARD.md) via the ship tail.
 - [x] `check:links` · `check:ledger` · `check:memory` · lint ·
       format · test · build green locally; the pushed head's
       Actions run green; ship §6 critic run.
@@ -151,6 +161,21 @@ departure from the goal:
    founder's ruling the bench memory notes the dangle plainly and
    does NOT call the diagnostic open; no fourth IDEAS line was
    spent.
+
+3. **A D-number was minted and the files-touched amended.** The
+   external review upheld the critic's finding that the
+   three-phase order pauses roadmap work and therefore belongs in
+   [DECISIONS](../DECISIONS.md), not only in a bench memory. The
+   founder amended the mandate's files-touched to admit a pure
+   append, and
+   [D-060](../DECISIONS.md#d-060--2026-07--the-three-phase-standing-order--settle-and-test-the-vault-then-roam-v1s1t3t6-and-v1s2t5-are-paused-until-phase-2-closes-the-founders-2026-07-28-sequencing-recorded-per-laws-pause-routing-upholds-the-pacing-law)
+   landed. The [ROADMAP](../../ROADMAP.md) stays untouched by
+   ruling: a pause is sequencing, and the unticked boxes already
+   tell the truth.
+4. **Item 6's second half came back answered.** The Claude app is
+   still on the founder's phone (2026-07-28), so the ending is a
+   demotion rather than retirement-by-platform, and the shelf
+   row's confidence returns to high.
 
 Plus four accuracy repairs the ship §6 critic caught pre-flip,
 all narrowing claims to the evidence: item 5's "no cockpit ever

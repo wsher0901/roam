@@ -2471,3 +2471,72 @@ story prose is not.
 (one routing row) · [IDEAS](../IDEAS.md) (the 07-23 line closed) ·
 [the spec](specs/chronicle-layer.md) + its memory (in flight on
 the bench; moves to history at the weld) · this entry.
+
+## D-060 — 2026-07 — The three-phase standing order — settle and test, the vault, then Roam: V1.S1.T3–T6 and V1.S2.T5 are PAUSED until phase 2 closes (the founder's 2026-07-28 sequencing, recorded per LAWS' pause routing; upholds the pacing law)
+
+**Decision:** work proceeds in three phases, in this order, on the
+founder's word of 2026-07-28:
+
+1. **PHASE 1 — SETTLE & TEST.** The answering bench (the census's
+   nine owed endings written into the record), then the
+   first-story shakedown flight: blind cockpit birth · the fence
+   and [land](../skills/land.md) MODE P ·
+   [pickup §6](../skills/pickup.md#6--fleet-resume-on-the-founders-answer)
+   fleet-resume · land MODE R.
+2. **PHASE 2 — THE VAULT.** Chronicle story lanes plus a
+   connections-and-content polish pass. The phase OPENS with a
+   founder scope ruling that is deliberately not made here: all
+   66 census stories, or the load-bearing dozen first.
+3. **PHASE 3 — ROAM.**
+   [V1.S1](../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
+   T3–T6 relaunched FROM SCRATCH per the brief in the answering
+   bench's memory, audit riders included, plus
+   [V1.S2.T5](../ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)
+   design foundations.
+
+**V1.S1.T3–T6 and V1.S2.T5 are PAUSED until phase 2 closes.** That
+pause is what makes this a decision rather than a preference: it
+is a stage held, and
+[LAWS §Workflow](../LAWS.md#workflow-non-negotiable) routes a
+paused stage to a D-number rather than to conversation.
+
+**Why:** phase 1 exists because two pieces of flight machinery
+shipped and were never flown —
+[land](../record/DECISIONS.md#d-054--2026-07--the-landing-skill--how-a-flight-ends-becomes-a-first-class-ritual-one-skill-with-two-modes-routed-by-fleet-state-retire--pause-and-transfer-the-fence-is-a-commit-so-the-resume-point-is-the-branch-tip-by-construction-wake-lock-mediated-with-its-honesty-clause-the-board-is-the-single-transfer-material-pickup-gains-the-fleet-resume-ask-and-its-cap-arithmetic-sessions-are-cattle-branches-are-the-work-charter-rule-6-becomes-a-pointer-the-effort-doctrine-moves-to-opus-5--xhigh-upholds-the-wake-lock-the-park-protocol-and-one-home-supersedes-the-opus-48-reliance-pair)
+and
+[self-seat birth](../record/DECISIONS.md#d-051--2026-07--self-seat-birth--liftoff-fires---cloud-blind-and-the-cockpit-seats-itself-by-its-env-derived-self-url-the-console-attach-launcher-is-retired-amends-d-047s-rung-1-mechanics-as-corrected-by-193-upholds-d-049-and-board-governs) —
+and [the answering bench](../memory/chronicle-answers.md)'s own
+derivations confirmed it: no landing appears in the record and no
+weld since #213 is cockpit-seated. Product work carried by untested away-machinery
+is work that cannot be rescued when the machinery fails, which is
+exactly what the batch-1 lanes proved in June
+([D-020](DECISIONS.md#d-020--2026-07--parallel-lanes-v2-native-lanes-replace-hand-built-orchestration)).
+Phase 2 comes second because the chronicle is written from a
+record that is fresh now and gets staler with every bench.
+Phase 3 comes last because T3–T6 restart FROM SCRATCH anyway: the
+relaunch loses nothing by waiting and gains a proven vehicle.
+
+**Alternatives rejected:** running T3–T6 in parallel with the
+vault work — it is the exact shape the pacing law
+([D-009](DECISIONS.md#d-009--2026-06--pacing-law-finish-first-flexible-cap))
+forbids, and the parallel slot it would fill is better spent on
+the shakedown flight the phase exists for · fixing the phase-2
+scope now (all 66 vs the load-bearing dozen) — the ruling depends
+on how the first story weld actually reads, which nobody knows
+yet; deciding it early would bind the founder to a number chosen
+blind · leaving the order in the bench memory and on the board
+only — a memory is task-local and a board is repainted; a paused
+stage outlives both, and LAWS routes it here · recutting the
+[ROADMAP](../ROADMAP.md) to express the pause structurally — a
+pause is sequencing, not structure: the boxes stay unticked and
+therefore stay truthful, and a recut would have to be undone when
+phase 3 opens.
+
+**Affects:** [LAWS §Workflow](../LAWS.md#workflow-non-negotiable)
+(cited as the routing authority, unchanged) ·
+[the spec](specs/chronicle-answers.md) + its memory (in flight on
+the bench; moves to history at the weld) ·
+[DASHBOARD](../DASHBOARD.md) (the ship tail's SEQUENCING note
+cites this entry) · [ROADMAP](../ROADMAP.md) deliberately
+UNTOUCHED — the pause is sequencing, and the unticked T3–T6 and
+T5 boxes already tell the truth · this entry.
