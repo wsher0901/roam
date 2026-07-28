@@ -6,26 +6,25 @@ status: living
 
 # Dashboard — the state surface
 
-Stamp: 2026-07-27 · 21:49 · handoff · home PC
+Stamp: 2026-07-28 · 13:22 · ship tail · work PC
 V1 5/34 · S1 2/7 · S2 3/5 · sessions: 1 main · 0 parallel
-(0 need you) · needs-you 2
+(0 need you) · needs-you 1
 How to read this board →
 [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
 
-1. 🟡 "apply the vault lens" once per seat — the [#229](https://github.com/wsher0901/roam/pull/229)
-   weld moved the frozen record under `docs/record/`, so each
-   seat's Obsidian graph filter re-seeds to `-path:record` on
-   that phrase (since 07-27).
+1. 🟡 "apply the vault lens" at the HOME PC — it re-seeds each
+   seat's Obsidian graph filter to `-path:record` after the
+   [#229](https://github.com/wsher0901/roam/pull/229) record move.
+   WORK PC DONE 2026-07-28 · HOME PC OWED — a per-seat act clears
+   only when every seat runs it (since 07-27).
    → [machine-setup §Vault lens](skills/machine-setup.md#vault-lens) ·
    [D-057](record/DECISIONS.md#d-057--2026-07--the-record-shelf--the-frozen-record-moves-under-one-roof-docsrecord-is-born-history--specs--decisions-in-memory-stays-living-at-root-the-enabling-ruling--a-mechanical-link-path-segment-repair-inside-a-frozen-file-is-maintenance-not-a-content-edit-append-only-governs-meaning-not-bytes-intra-record-links-resolve-by-construction-upholds-append-only-one-home-and-the-weave-rule)
-2. 🟡 Re-paste the WEB-INSTRUCTIONS box in the Web project —
-   [#229](https://github.com/wsher0901/roam/pull/229) edited
-   [WEB-INSTRUCTIONS](WEB-INSTRUCTIONS.md) (two record paths), and
-   the box is a copy that must be re-pasted after every edit
-   (since 07-27).
-   → [HOME §Where information goes](HOME.md#where-information-goes)
+
+The WEB-INSTRUCTIONS re-paste CLEARED — the founder re-pasted the
+box on 2026-07-28, recorded at
+[#236](https://github.com/wsher0901/roam/pull/236).
 
 The nine open engine questions stay parked in
 [ENGINE §12](ENGINE.md#12-open-register) until
@@ -38,49 +37,60 @@ frontmatter oddity is folded there too
 
 | Session | Task | State | Last push | Your move |
 |---|---|---|---|---|
-| main · control tower | — (sitting closed at handoff; the 07-27 queue closed 3/3, nothing open, nothing parked) · 0/0 | 🟢 | 21:49 (this repaint) | — |
+| main · control tower | — ([chronicle-answers](record/history/workshop/definition/chronicle-answers.md) shipped [#236](https://github.com/wsher0901/roam/pull/236); nothing open) · 0/0 | 🟢 | 13:22 (this repaint) | — |
 
 ↳ main micro: — (no active task)
 
-THE GROUND GOES DARK with this handoff — the home PC is halting.
-The 07-27 three-bench queue CLOSED AT 3/3 this sitting, each
-bench through its own external review and the founder's word; the
-first agent-team use ran and was shut down inside the sitting
-(captures pushed before the shutdown requests; the three silent
-shutdown responses named honestly and filed as maiden-grading
-evidence). Origin carries `main` only; the next pickup claims a
-clean floor. THE NEXT SITTING'S NATURAL OPENER: the nine-answers
-sitting (Claude Code) — answering
-[the INDEX's founder-input-owed register](chronicle/INDEX.md)
-(answer 1 doubles as the T3–T6 relaunch brief), then the first
-story weld, its own bench, carrying the deferred ship
-synthesis-at-weld step. Three fresh harvest lines rode into
-[IDEAS](IDEAS.md) with this handoff (HARNESS V2 · KNOW-WHEN ·
-the effort-`max` VERIFY). THE WELDS: THE RECORD SHELF
-([#229](https://github.com/wsher0901/roam/pull/229),
-[D-057](record/DECISIONS.md#d-057--2026-07--the-record-shelf--the-frozen-record-moves-under-one-roof-docsrecord-is-born-history--specs--decisions-in-memory-stays-living-at-root-the-enabling-ruling--a-mechanical-link-path-segment-repair-inside-a-frozen-file-is-maintenance-not-a-content-edit-append-only-governs-meaning-not-bytes-intra-record-links-resolve-by-construction-upholds-append-only-one-home-and-the-weave-rule))
-— docs/record/ born, 155 renames, the checker hardened; ATLAS
-([#231](https://github.com/wsher0901/roam/pull/231),
-[D-058](record/DECISIONS.md#d-058--2026-07--atlas--the-system-spine-the-workshop-depicted-as-six-diagrams-on-one-page-the-posture-is-the-boards--it-renders-originates-nothing-dated-stamp-least-authoritative-the-prose-governs-every-box-linked-to-its-owning-doctrine-so-a-currency-audit-verifies-it-mechanically-upholds-the-derivation-law-one-home-and-the-weave-rule))
-— [the system spine](ATLAS.md), six diagrams rendering the
-workshop; and THE CHRONICLE LAYER
-([#233](https://github.com/wsher0901/roam/pull/233),
-[D-059](record/DECISIONS.md#d-059--2026-07--the-chronicle-layer--living-stories-above-the-frozen-record-one-story-per-item-the-ending-rule--settled-in-any-format-means-the-story-is-written-a-later-fix-is-incorporated-and-the-ending-rewritten-at-that-weld-retirement-is-a-settlement-docschronicle-one-file-per-story-indexmd-shelving-four-shelves-immutability-beneath--record-untouched-stories-link-down-as-footnotes-down-links-only--a-story-never-cites-another-storys-prose-supersedes-the-07-23-three-chapter-shape-the-ship-synthesis-at-weld-step-deferred-to-the-first-story-weld))
-— the story layer decided and
-[its census drafted](chronicle/INDEX.md) at 65 proposed stories,
-by the workshop's first agent-team use. NO BENCH 4 — the master
-mandate is complete; nothing is open, origin carries `main` only.
-The census's NINE founder-input-owed endings live in
-[the INDEX](chronicle/INDEX.md) — a register for future story
-welds, not an action; the first story weld (its own bench)
-carries the deferred ship synthesis-at-weld step.
+SEQUENCING — the standing order, now
+[D-060](record/DECISIONS.md#d-060--2026-07--the-three-phase-standing-order--settle-and-test-the-vault-then-roam-v1s1t3t6-and-v1s2t5-are-paused-until-phase-2-closes-the-founders-2026-07-28-sequencing-recorded-per-laws-pause-routing-upholds-the-pacing-law):
+**PHASE 1 — SETTLE & TEST** (this bench, then the first-story
+shakedown flight: blind cockpit birth · the fence /
+[land](skills/land.md) MODE P ·
+[pickup](skills/pickup.md#6--fleet-resume-on-the-founders-answer)
+fleet-resume · land MODE R) → **PHASE 2 — THE VAULT** (chronicle
+story lanes + a connections-and-content polish pass; the phase
+opens with the founder's scope ruling, all 66 vs the load-bearing
+dozen) → **PHASE 3 — ROAM**
+([V1.S1](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
+T3–T6 relaunched from scratch per
+[the brief](record/history/workshop/definition/chronicle-answers.md),
+audit riders included, plus
+[V1.S2.T5](ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)).
+T3–T6 and T5 are PAUSED until phase 2 closes.
+
+THIS SITTING: the nine-answers bench
+([#236](https://github.com/wsher0901/roam/pull/236)) closed the
+census's founder-owed register — all nine endings written, three
+of them recording UNCERTAINTY as the settled state because that
+is what the answer was. Two the bench derived rather than asking
+twice: both summon secrets exist by name (values never read), and
+no weld since [#213](https://github.com/wsher0901/roam/pull/213)
+is cockpit-seated. T3–T6: RELAUNCH FROM SCRATCH, briefed with
+four audit riders. The reviewer registration defect CLOSED after
+five clean native runs. The chronicle layer settled and took its
+own shelf row —
+[the census](chronicle/INDEX.md) now stands at 66. The ship-time
+critic earned its keep: four of its nine findings were the bench
+breaking its own no-rounding rule in text already approved, all
+narrowed back to the evidence pre-flip, and the external review
+upheld a fifth — the standing order pauses roadmap work, so
+[D-060](record/DECISIONS.md#d-060--2026-07--the-three-phase-standing-order--settle-and-test-the-vault-then-roam-v1s1t3t6-and-v1s2t5-are-paused-until-phase-2-closes-the-founders-2026-07-28-sequencing-recorded-per-laws-pause-routing-upholds-the-pacing-law)
+landed as a pure append. Three fresh
+[IDEAS](IDEAS.md) lines (the S3.T1 pair · decide tags · the
+go-remote retirement question); the 07-17 defect line closed
+citing the bench. NEXT: the first-story shakedown flight, phase
+1's second half — it also proves [land](skills/land.md) and the
+blind cockpit birth, the two pieces this bench confirmed have
+never flown.
 
 ## You are here
 
 V1 — The demo · 5/34 █████░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-S1 · Data Definition · 2/7 ██░░░░░ → T3–T6 source vetting ⚪ held
-(awaiting relaunch briefs)
-S2 · Skeleton & design · 3/5 ███░░ → T5 Design foundations ⚪ idle
+S1 · Data Definition · 2/7 ██░░░░░ → T3–T6 source vetting ⚪ paused
+(relaunch from scratch, briefed; phase 3 per
+[D-060](record/DECISIONS.md#d-060--2026-07--the-three-phase-standing-order--settle-and-test-the-vault-then-roam-v1s1t3t6-and-v1s2t5-are-paused-until-phase-2-closes-the-founders-2026-07-28-sequencing-recorded-per-laws-pause-routing-upholds-the-pacing-law))
+S2 · Skeleton & design · 3/5 ███░░ → T5 Design foundations ⚪ paused
+(phase 3)
 S3–S8 · queued in order · 0/22
 
 ## Stage map
@@ -108,27 +118,29 @@ flowchart LR
 
 ## Claude Web + Design discussion
 
-**"Ops — chronicle, record shelf & atlas"** (Web) — the sitting's
-ops chat, governed by the v5 master; its review duty is
-DISCHARGED: it decided the 07-27 three-bench queue, carried all
-three external reviews to DONE, and delivered the closing IDEAS
-harvest inline with the founder's leaving message. → next: the
-nine-answers sitting (Claude Code) — answer 1 doubles as the
-T3–T6 relaunch brief; then the first story weld. Most recent:
-[#233](https://github.com/wsher0901/roam/pull/233) (the chronicle
-layer, tower-authored) — PASS on `dea1e6e`, verified across four
-layers on the reviewer's own clone: the D-056 capture-then-kill
-order proven from the push log, the census audited against the
-reviewer's own independent ledger list (all 99 lines spanned; no
-invented ending), the founder's four folds delta-verified. Before
-it, [#231](https://github.com/wsher0901/roam/pull/231) (ATLAS) —
-PASS on `657040c`, all 46 links fragment-verified, diagram
-accuracy hand-checked — and
-[#229](https://github.com/wsher0901/roam/pull/229) (the record
-shelf) — PASS on `999c061`, 155 rename pairs proven
-prose-invariant. → next: the first story weld's review, when the
-founder opens that bench (it carries the deferred ship
-synthesis-at-weld step).
+**"Ops — chronicle, record shelf & atlas"** (Web) — the ops chat,
+governed by the v5 master; its review duty is DISCHARGED for this
+sitting. It answered the census's nine owed endings, ruled the
+four drafting-batch flags, and carried
+[#236](https://github.com/wsher0901/roam/pull/236)'s external
+review to PASS on `4ee7ab1` — verified independently on the
+reviewer's own clone: every ending traced to the founder's quoted
+words with uncertainty preserved where that was the answer, both
+derivations honest (secrets by name only; the weld derivation
+naming its own limit), the dangling double-dispatch pointer noted
+without being counted as evidence, gates re-run (links · ledger
+100↔100 · memory valid). Its two repairs both landed:
+[D-060](record/DECISIONS.md#d-060--2026-07--the-three-phase-standing-order--settle-and-test-the-vault-then-roam-v1s1t3t6-and-v1s2t5-are-paused-until-phase-2-closes-the-founders-2026-07-28-sequencing-recorded-per-laws-pause-routing-upholds-the-pacing-law)
+minted for the standing order, and item 6 completed (the phone
+still carries the app → demotion, not retirement-by-platform).
+→ next: the first-story shakedown flight's review, and the
+first story weld after it (which carries the deferred ship
+synthesis-at-weld step). Before this: the 07-27 queue —
+[#233](https://github.com/wsher0901/roam/pull/233) (PASS on
+`dea1e6e`) · [#231](https://github.com/wsher0901/roam/pull/231)
+(PASS on `657040c`) ·
+[#229](https://github.com/wsher0901/roam/pull/229) (PASS on
+`999c061`).
 Earlier reviews, all DONE:
 [#225](https://github.com/wsher0901/roam/pull/225) (PASS on
 `fc4dcf7`) · [#223](https://github.com/wsher0901/roam/pull/223)
@@ -155,6 +167,7 @@ T3–T6 source-vetting relaunch stays held (see You are here).
 
 | When | What | PR |
 |---|---|---|
+| 07-28 13:22 | [the census's nine founder-owed endings are answered and written into the record: the founder ruled on all nine, and the INDEX's owed register became nine settled-for-now endings — THREE RECORDING UNCERTAINTY AS THE SETTLED STATE, because that is what the answer was; two the bench DERIVED rather than asking twice (both summon secrets exist by name, values never read; no weld since #213 is cockpit-seated — a derivation whose own limit is named, since no weld is weaker than no flight); T3–T6 RELAUNCH FROM SCRATCH with the external reviewer's four audit riders each marked verify-licenses-at-spike, the failure evidence held to exactly what the record carries and one dangling pointer noted honestly rather than counted; the reviewer registration defect CLOSED after five clean native runs; the chronicle layer settled and took its own shelf row, the census restamping 65 → 66. THE SHIP-TIME CRITIC EARNED ITS KEEP — four of its nine findings were the bench breaking its own no-rounding rule in text the founder had already approved, all narrowed back to the evidence pre-flip, and the external review upheld a fifth: the standing order pauses roadmap work, so the founder amended the files-touched and D-060 landed as a pure append](record/history/workshop/definition/chronicle-answers.md) | [#236](https://github.com/wsher0901/roam/pull/236) |
 | 07-27 21:34 | [the story layer is decided and its shelves are drafted (D-059): living stories above the frozen record, governed by the founder's six rulings — ONE STORY PER ITEM, and the ending rule at the design's heart (settled in any format means written; a later fix is INCORPORATED and the ending rewritten at that weld — never a second story); docs/chronicle/ born with INDEX.md as a DRAFT CENSUS of 65 proposed stories across four shelves, produced by the workshop's FIRST AGENT-TEAM USE — three read-only teammates, one shelf each, the lead reading the Roam shelf itself; the D-056 discipline ran in the externally-corrected order (captures pushed BEFORE shutdown, proven from the push log at review); nine endings the record cannot derive marked founder-input-owed rather than guessed, the T3–T6 batch-1 arc leading them; the founder's four folds landed at the review; the ship synthesis-at-weld step deferred by ruling to the first story weld](record/history/workshop/definition/chronicle-layer.md) | [#233](https://github.com/wsher0901/roam/pull/233) |
 | 07-27 20:42 | [the workshop gains its system spine (D-058): docs/ATLAS.md is born — six mermaid diagrams on one page (the task loop with the weld's four acts inside it, the file flow, away & return closed into a circle, a lane's life, the surfaces, the state surfaces), composed FROM the living prose at HEAD; the posture IS the decision — renders, originates nothing, dated stamp, least-authoritative, every doctrine box linked to its owning section through checker-visible weave lines (in-diagram click-links rejected with both mechanical reasons on record); HOME gains the routing row whose upsert rule doubles as the maintenance law, plus the review-licensed catalog entry; the critic's one real catch was the sharpest possible for this page — the ack token drawn with a non-canonical separator, the #191 failure class — repaired character-for-character](record/history/workshop/definition/atlas.md) | [#231](https://github.com/wsher0901/roam/pull/231) |
 | 07-27 20:13 | [the frozen record moves under one roof (D-057): docs/record/ is born and history, specs, and DECISIONS move in as 155 recorded renames (memory/ stays living at root); THE ENABLING RULING — a link-path-segment repair inside a frozen file is MAINTENANCE, not a content edit, append-only governs meaning not bytes; the review criterion stated machine-checkably (record diff with link targets blanked = byte-identical, sole exception the bench's own spec) and proven on the reviewer's own clone; the sweep one deterministic recompute, 1,580 links across 158 files, its by-construction premise qualified honestly by the external review (eight docs-root-relative intra-record links were broken and repaired the same way); the critic's real catch — a DASHBOARD ledger link with nested brackets invisible to the checker — repaired AND check-links.mjs hardened, 13 previously-skipped links entering the count](record/history/workshop/definition/record-shelf.md) | [#229](https://github.com/wsher0901/roam/pull/229) |
@@ -164,7 +177,6 @@ T3–T6 source-vetting relaunch stays held (see You are here).
 | 07-24 01:33 | [the harness found ALREADY AT BEST PRACTICE, the proof welded to the record (D-053): the founder's maximum-depth audit of the whole governing layer against Anthropic's guidance; the two real improvements shipped — LAWS' verification loop promoted to a copy-runnable block (proven live: this bench's gate ran the block verbatim as its mirror) and two stub trigger-surfaces sharpened, the harness picking both up mid-bench; five alternatives rejected with reasons; the critic's one finding — the hygiene bench's own bare D-053 mentions — repaired pre-flip](record/history/workshop/definition/guardrail-audit.md) | [#218](https://github.com/wsher0901/roam/pull/218) |
 | 07-24 00:51 | [one standard for how every surface speaks to the founder (D-052): the goal verbatim — minimum reading time to decision, explicit steps over abstractions, purpose-shaped explanation — five clauses in ONE home (HOME §Response doctrine), the founder's §Command card with D-049's teleport warning where it will be read, the cockpit's FLEET TABLE report, the four-part status template rewritten into all three rituals (pickup's ⏸ lead above everything), and WEB-INSTRUCTIONS v4 → v5 — the paste-block loop dead, the mandatory-review role leading, the on-the-record word-paste in the procedure](record/history/workshop/definition/response-doctrine.md) | [#216](https://github.com/wsher0901/roam/pull/216) |
 | 07-24 00:28 | [the fragilest component is deleted, not maintained (D-051): rung 1 fires `claude --cloud` BLIND — nothing captured, exit status only — and the cockpit SEATS ITSELF by its D-049 env-derived self-URL; the console-attach capture retired dated (it never failed — it was the component most likely to break silently); the missing greeting push IS the failure signal (/tasks · the list · retry), the pending row going stale honestly; the stray-collision close sharpened by the critic to a short factual note, never R4b's script; THE LIVE TEST rides the next real flight by the founder's word](record/history/workshop/mechanism/self-seat-birth.md) | [#213](https://github.com/wsher0901/roam/pull/213) |
-| 07-23 23:38 | [what a session's start, pause, and close leave behind (D-050): closed ≠ dead — the close-lock's wall softens to injected read-only doctrine, one doctrine in four homes and the wall hook itself (the one flagged gap file, both paths run live), full removal REJECTED, R4b + seat-stamp byte-strict; the ⏸ interrupt capture standing (block · state · pickup's "continue?" lead); the claude/* residue sweep graduates to pickup hygiene; IDEAS becomes an inbox-not-archive with the first assert-first compaction (420→266, 11 deleted enumerated, both stay-clauses exercised); chronicle layer + self-seat birth queued](record/history/workshop/mechanism/session-lifecycle.md) | [#211](https://github.com/wsher0901/roam/pull/211) |
 
 Note: [#201](https://github.com/wsher0901/roam/pull/201) (liftoff
 board weld) and [#202](https://github.com/wsher0901/roam/pull/202)
