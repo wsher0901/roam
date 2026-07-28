@@ -78,7 +78,7 @@ whole.
   general-purpose fallback stays documented in
   [ship §6](skills/ship.md#6--the-gate) as the re-open path if it
   recurs. Closing artifact:
-  [the answering bench](memory/chronicle-answers.md).
+  [the answering bench](record/history/workshop/definition/chronicle-answers.md).
 - 2026-07-16 (Claude Code, maiden-flight-report): a separate bot
   identity for lane speech (optional) — lane comments currently
   post as the founder's own account, which blurs who is talking on

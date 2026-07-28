@@ -2,12 +2,12 @@
 type: spec
 id: chronicle-answers
 title: The census's nine founder-owed endings, answered and written into the record
-status: open
+status: shipped
 stage: workshop
 branch: docs/chronicle-answers
-pr: —
+pr: 236
 opened: 2026-07-28
-shipped: —
+shipped: 2026-07-28 13:22
 ---
 
 # chronicle-answers — the nine owed endings become record
@@ -184,7 +184,7 @@ weld); item 6's silently-dropped second half (whether Remote
 Control still exists on the phone — now named as still owed);
 item 2's hedge hardened into "confirmed"; item 4's single failed
 emulation generalized into "ungradable". Detail in
-[the memory's critic round](../../memory/chronicle-answers.md).
+[the memory's critic round](../history/workshop/definition/chronicle-answers.md).
 
 ## Open questions
 

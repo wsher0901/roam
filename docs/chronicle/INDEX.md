@@ -131,7 +131,7 @@ rule: each is rewritten at the weld that changes it, never
 duplicated. Two were also DERIVED on the answering bench (3 and
 5). Three record UNCERTAINTY as their settled state, because that
 is what the answer was — nothing here was rounded up or down.
-Written by [the answering bench](../memory/chronicle-answers.md).
+Written by [the answering bench](../record/history/workshop/definition/chronicle-answers.md).
 
 1. THE T3–T6 BATCH-1 ARC — settled: RELAUNCH FROM SCRATCH. The
    cloud sessions failed, and the work was never re-flown or
@@ -145,7 +145,7 @@ Written by [the answering bench](../memory/chronicle-answers.md).
    ([D-018](../record/DECISIONS.md#d-018--2026-06--fix-routing-triage-after-lane-review-extends-d-017))
    — and nothing further is derivable. The relaunch brief, with
    its four audit riders, lives in
-   [the answering bench](../memory/chronicle-answers.md).
+   [the answering bench](../record/history/workshop/definition/chronicle-answers.md).
 2. land — settled: NO RECORDED RUN, and the founder does not
    believe it ever ran ("I don't think so"). Nothing in the record
    contradicts him; nothing strengthens it either, since a landing
