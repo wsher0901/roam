@@ -1,7 +1,7 @@
 ---
 type: memory
 id: atlas
-updated: 2026-07-27 20:31 · ship (complete, awaiting merge) · home PC
+updated: 2026-07-27 20:38 · critic repairs folded, at the gate · home PC
 ---
 
 # atlas — the workshop as diagrams, rendering and originating nothing
@@ -36,8 +36,10 @@ none
 
 ## Left / idle
 
-The six diagrams, the decision entry, HOME's one line,
-verification, the critic, the gate report.
+The founder's word, the weld, and the tail repaint. One boundary
+rides the gate report for a ruling: ATLAS has no entry in
+[HOME §The files](../HOME.md#the-files--what-each-one-is-for)'s
+catalog — the mandate's one-line cap on HOME excluded it.
 
 ## The story
 
@@ -53,7 +55,24 @@ line under each diagram, NOT as in-diagram click directives —
 sandboxed mermaid ignores click directives, so only prose links
 are mechanically verifiable and actually clickable. Diagram
 wording stays caption-short; every doctrine claim in a box is
-traceable through its weave line to the section that owns it.
+traceable through its weave line to the section that owns it. THE
+CRITIC ROUND ([ship §6](../skills/ship.md#6--the-gate)): the
+reviewer hand-verified every weave anchor and all six diagrams
+against their owning prose, and its one real catch was an
+ACCURACY failure of exactly the class the page must not commit —
+diagram 4's ack-token box read "airborne + url + date" where
+[parallel-lanes §Canary](../skills/parallel-lanes.md#canary-handshake-both-sides)
+fixes middots character-for-character (the
+[#191](https://github.com/wsher0901/roam/pull/191) failure class);
+repaired to the canonical form. Folded with it: the fence box
+reworded (a PUSHED commit writing Status held — "held commit"
+read backwards), the cockpit box now says same ROLE, cloud seat
+(seat vocabulary), diagram 4's spawn box gained the LOCAL vehicle
+(lanes are seat-blind), the micro-PR carve-out now depicted
+(diagram 1's tail + diagram 5's edge label), and diagram 1's
+weld-subgraph edge moved after the subgraph declaration (mermaid
+cluster-edge ordering). Spec ticks + Deviations filled per house
+style; the HOME-catalog boundary rides the gate report.
 
 ## Where to look
 

@@ -67,23 +67,27 @@ doctrine, so a currency audit verifies it mechanically.
 
 ## Done means
 
-- [ ] `docs/ATLAS.md` exists: six mermaid diagrams, one-line
+- [x] `docs/ATLAS.md` exists: six mermaid diagrams, one-line
       caption each, a dated stamp, and the least-authoritative
       posture stated on the page.
-- [ ] Every box that carries doctrine links to the prose section
+- [x] Every box that carries doctrine links to the prose section
       that owns it; every ATLAS link resolves
       (`npm run check:links` 0 broken).
-- [ ] The D-number entry exists with the posture, and its anchor
+- [x] The D-number entry exists with the posture, and its anchor
       resolves.
-- [ ] [HOME](../../HOME.md) carries exactly ONE new routing-table
+- [x] [HOME](../../HOME.md) carries exactly ONE new routing-table
       line (system map → ATLAS).
-- [ ] Full CI mirror green; the pushed head's Actions run green;
+- [x] Full CI mirror green; the pushed head's Actions run green;
       ship §6 critic run.
 
 ## Deviations
 
-<filled by /ship: anything done differently than planned — or
-"none">
+none in the plan itself; one boundary disclosed at the gate:
+ATLAS is a new docs/ root file but is ABSENT from
+[HOME §The files](../../HOME.md#the-files--what-each-one-is-for)'s
+catalog — the mandate capped HOME at exactly ONE routing-table
+line, so the catalog entry is left for the founder's ruling (a
+follow-up chore line, or a licensed second HOME edit).
 
 ## Open questions
 

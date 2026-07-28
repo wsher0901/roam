@@ -29,16 +29,16 @@ flowchart TD
   W --> V["sync with main + the verification loop + Actions green"]
   V --> C["the critic — reviewer subagent, advisory"]
   C --> G{"THE GATE — independent review, then the founder's word"}
-  G -->|"the word"| WELD
-  G -->|"no word"| WAIT["wait — never merge"]
   subgraph WELD["the atomic weld — ONE bookkeeping commit"]
     T1["ROADMAP checkbox ticked"]
     T2["memory moves to record/history quadrant"]
     T3["spec frontmatter goes shipped"]
     T4["ledger line prepended"]
   end
+  G -->|"the word"| WELD
+  G -->|"no word"| WAIT["wait — never merge"]
   WELD --> SQ["squash-merge + branch deleted + main pulled"]
-  SQ --> TAIL["ship's tail — QUIET board repaint, micro-PR"]
+  SQ --> TAIL["ship's tail — QUIET board repaint, a micro-PR that merges unasked (the one carve-out)"]
 ```
 
 Boxes: [bench-first birth — LAWS §Workflow](LAWS.md#workflow-non-negotiable)
@@ -99,7 +99,7 @@ flowchart TD
   F --> CP["the cockpit — the control tower online, holds the baton"]
   CP --> LA{"land — mode derived from the fleet"}
   LA -->|"nothing flying"| R["MODE R retire: final repaint, retired branches verified dead"]
-  LA -->|"work flying"| PP["MODE P pause-and-transfer: THE FENCE — a held commit per lane, the board carries the fleet-at-ground table"]
+  LA -->|"work flying"| PP["MODE P pause-and-transfer: THE FENCE — a pushed commit per lane writing Status held; the board carries the fleet-at-ground table"]
   R --> PU["pickup — the next sitting claims the baton"]
   PP --> PU
   H --> PU
@@ -124,10 +124,10 @@ baton-holder on the founder's word.
 
 ```mermaid
 flowchart TD
-  B["bench pre-birthed by the baton-holder: branch + spec + memory stub + draft PR on origin"] --> S["spawn — cloud route 1: ready-flip, then the lane:cloud label"]
+  B["bench pre-birthed by the baton-holder: branch + spec + memory stub + draft PR on origin"] --> S["spawn — LOCAL: background agent or worktree · CLOUD: route 1, ready-flip then the lane:cloud label"]
   S --> CL["canary claim — one trivial push, Status: claimed by vehicle + date"]
   CL --> ACK{"ack within the window?"}
-  ACK -->|yes| AIR["Status begins exactly: airborne + url + date"]
+  ACK -->|yes| AIR["Status begins exactly: airborne · url · date — middots, character-for-character"]
   ACK -->|"no, or a Status the lane does not own"| TERM["self-terminate — push what exists, stop"]
   AIR --> WK["work: every commit pushed, diary at the four moments, no file shared with a sibling"]
   WK --> BL["BLOCKED: PR comment — idle-wait on a phone-reachable vehicle"]
@@ -157,9 +157,9 @@ their PRs, teams explore and review, Web and Design never write.
 flowchart TD
   subgraph BATON["the baton-holder — exactly one commanding session"]
     T["control tower — the desk seat"]
-    CK["cockpit — the same seat, online, in flight"]
+    CK["cockpit — the control tower ONLINE: same role, a cloud seat"]
   end
-  BATON -->|"rituals own ALL of main's bookkeeping; merges only on the founder's word"| MAIN["main: DASHBOARD + IDEAS + ROADMAP ticks + record/"]
+  BATON -->|"rituals own ALL of main's bookkeeping; merges on the founder's word — sole carve-out: ritual micro-PRs"| MAIN["main: DASHBOARD + IDEAS + ROADMAP ticks + record/"]
   LN["lanes — workers on pre-birthed benches"] -->|"own branch + own diary + PR speech, nothing else"| BR["task branches on origin"]
   LN -.->|never| MAIN
   TM["agent teams — exploration and review at a ground seat, single sitting"] -.->|"never author a bench, never merge, never run a ritual"| MAIN
