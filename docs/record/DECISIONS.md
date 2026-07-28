@@ -2636,3 +2636,79 @@ its own maintenance duty) · [IDEAS](../IDEAS.md) (the
 superseded-seat line) · [the spec](specs/land-doctrine-v2.md) +
 its memory (in flight on the bench; moves to history at the weld)
 · this entry.
+
+## D-062 — 2026-07 — The wake-rule generalized — ANY superseded seat exits by its own closing ritual, never bare: a cockpit by the landing ritual, a ground control tower by capture-then-close with team findings captured first; no superseded seat writes a board, because the baton has already moved (closes D-056's deferred road in full; upholds D-056 and D-061)
+
+**Decision:** the tombstone wake-rule stops being a cockpit rule
+and becomes THE rule for every seat. ANY session that finds
+itself superseded — its [DASHBOARD](../DASHBOARD.md) seat-stamp
+no longer its own — EXITS BY ITS OWN CLOSING RITUAL, never
+bare:
+
+- a COCKPIT by the landing ritual
+  ([D-061](#d-061--2026-07--the-landing-doctrine-recut-to-three-scenarios--the-cockpits-standing-job-advise-on-fleet-status-and-on-each-gate-reaching-decision-execute-the-founders-rulings-from-the-phone-auto-land-when-the-fleet-empties-and-nothing-awaits-the-founder-desk-takeover-when-pickup-finds-a-live-cockpit-holding-decisions-and-the-founders-freeze-unchanged-the-tombstone-wake-rule-makes-a-superseded-cockpit-retire-by-the-full-ritual-amends-d-054s-two-mode-routing-upholds-no-solo-approval-and-the-derivation-law)
+  clause 3), so its lanes are fenced rather than abandoned;
+- a GROUND CONTROL TOWER by
+  [D-056](#d-056--2026-07--team-aware-leaving-rituals--no-ritual-lets-a-live-agent-team-outlive-the-sitting-that-made-it-handoff-shuts-the-team-down-before-parking-anything-and-captures-its-findings-into-the-record-first-land-states-the-cockpit-cannot-lead-a-team-case-once-and-routes-the-ground-seat-to-handoff-pickup-gains-the-ghost-teammate-recovery-note-and-the--block-gains-what-the-team-had-found-closes-d-055s-deferred-gap-upholds-one-home-and-the-park-protocol)'s
+  capture-then-close — and IF A TEAM IS LIVE, ITS FINDINGS ARE
+  CAPTURED FIRST, before anything else, exactly as that entry
+  orders it.
+
+EVERY superseded seat WRITES NO BOARD. The baton has already
+moved to whoever superseded it, and two seats repainting main's
+bookkeeping is the failure the baton law exists to prevent. The
+exit writes the seat's OWN homes — its bench memory, its lanes'
+fences — and nothing that belongs to the seat now holding the
+baton.
+
+This CLOSES IN FULL the road
+[D-056](#d-056--2026-07--team-aware-leaving-rituals--no-ritual-lets-a-live-agent-team-outlive-the-sitting-that-made-it-handoff-shuts-the-team-down-before-parking-anything-and-captures-its-findings-into-the-record-first-land-states-the-cockpit-cannot-lead-a-team-case-once-and-routes-the-ground-seat-to-handoff-pickup-gains-the-ghost-teammate-recovery-note-and-the--block-gains-what-the-team-had-found-closes-d-055s-deferred-gap-upholds-one-home-and-the-park-protocol)
+left open and its bench filed rather than solved in passing.
+
+**Why:** D-056 covered every exit that RUNS A RITUAL — handoff
+FULL and QUIET, liftoff, land, go-remote, Esc — and supersession
+was the one road out that ran none: "push, write nothing". That
+made it the single place where a team's findings could die
+silently, since a team's output lives in transcripts that vanish
+with the session and nothing was licensed to write it down.
+[D-061](#d-061--2026-07--the-landing-doctrine-recut-to-three-scenarios--the-cockpits-standing-job-advise-on-fleet-status-and-on-each-gate-reaching-decision-execute-the-founders-rulings-from-the-phone-auto-land-when-the-fleet-empties-and-nothing-awaits-the-founder-desk-takeover-when-pickup-finds-a-live-cockpit-holding-decisions-and-the-founders-freeze-unchanged-the-tombstone-wake-rule-makes-a-superseded-cockpit-retire-by-the-full-ritual-amends-d-054s-two-mode-routing-upholds-no-solo-approval-and-the-derivation-law)
+fixed that for the cockpit and, in doing so, showed the shape of
+the general answer — a superseded seat is not a seat that must
+vanish, it is a seat that must HAND OVER — but it fixed it only
+where the landing doctrine reached, and a cockpit is the one seat
+that never leads a team. So the fix landed everywhere except the
+case that raised the problem. Generalizing costs nothing new:
+every seat already HAS a closing ritual, and the rule is simply
+that supersession routes to it rather than around it.
+
+The no-board clause is what keeps the generalization safe. The
+reason supersession originally said "write nothing" was to stop
+a dead seat from fighting a live one over shared surfaces — a
+real hazard, and it survives intact here, narrowed to what
+actually causes it.
+
+**Alternatives rejected:** leaving supersession bare and adding a
+capture clause to
+[handoff §1.2](../skills/handoff.md#12--shut-the-team-down-full-only)
+only — the candidate the D-056 bench filed; it fixes the team
+case and leaves the deeper oddity standing, that one road out of
+a sitting still runs no ritual at all · letting a superseded seat
+run its ritual INCLUDING the board write — the hazard the
+original clause existed to prevent, and D-061's bench had already
+found it live (a superseded cockpit's MODE R repaint would erase
+the takeover stamp of the desk that superseded it) · a separate
+supersession ritual of its own — a fifth road out to maintain,
+when every seat already carries the ritual that knows how to
+close it.
+
+**Affects:**
+[LAWS §Parallel lanes & cloud](../LAWS.md#parallel-lanes--cloud)
+(the supersession clause reworded from D-061's cockpit exception
+to this general rule) ·
+[land §Teams](../skills/land.md#teams--not-this-rituals-case-both-modes)
+(one sentence: a superseded tower leading a team captures, then
+closes, and writes no board) · [HOME §Terms](../HOME.md#terms)
+(the supersession entry gains the generalized line) ·
+[IDEAS](../IDEAS.md) (the superseded-seat line CLOSED in full) ·
+[the spec](specs/land-doctrine-v2.md) + its memory (in flight on
+the bench; moves to history at the weld) · this entry.

@@ -1332,8 +1332,16 @@ the link for the full story.
   board write is what transfers the baton; the old cockpit learns
   of it by the TOMBSTONE WAKE-RULE — on any wake, read the board
   first, and if superseded, self-retire by the full landing
-  ritual rather than merely stopping. Home:
-  [pickup §the desk takeover](skills/pickup.md#the-desk-takeover--a-live-cockpit-holding-decisions).
+  ritual rather than merely stopping. THE RULE IS GENERAL, not a
+  cockpit rule
+  ([D-062](record/DECISIONS.md#d-062--2026-07--the-wake-rule-generalized--any-superseded-seat-exits-by-its-own-closing-ritual-never-bare-a-cockpit-by-the-landing-ritual-a-ground-control-tower-by-capture-then-close-with-team-findings-captured-first-no-superseded-seat-writes-a-board-because-the-baton-has-already-moved-closes-d-056s-deferred-road-in-full-upholds-d-056-and-d-061)):
+  ANY superseded seat exits by its OWN closing ritual, never bare
+  — a cockpit by [land](skills/land.md), a ground control tower
+  by [handoff](skills/handoff.md)'s capture-then-close with team
+  findings captured first — and NO superseded seat writes a
+  board, because the baton has already moved. Home:
+  [pickup §the desk takeover](skills/pickup.md#the-desk-takeover--a-live-cockpit-holding-decisions)
+  · [LAWS §Parallel lanes & cloud](LAWS.md#parallel-lanes--cloud).
 - **fence** — the pause act itself: a COMMIT on a live lane's
   branch carrying the full ⏸ block and a terminal `held` Status.
   It works through the wake-lock, not an interrupt — the lane's

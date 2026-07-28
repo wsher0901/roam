@@ -185,7 +185,11 @@ procedure at all.
 A ground seat leaving with a live team is
 [handoff §1.2](handoff.md#12--shut-the-team-down-full-only)'s
 duty — capture the findings, then shut down by name. That
-procedure has ONE home and this is not it.
+procedure has ONE home and this is not it. A ground tower that is
+SUPERSEDED while leading a team follows the same duty on the
+generalized wake-rule
+([D-062](../record/DECISIONS.md#d-062--2026-07--the-wake-rule-generalized--any-superseded-seat-exits-by-its-own-closing-ritual-never-bare-a-cockpit-by-the-landing-ritual-a-ground-control-tower-by-capture-then-close-with-team-findings-captured-first-no-superseded-seat-writes-a-board-because-the-baton-has-already-moved-closes-d-056s-deferred-road-in-full-upholds-d-056-and-d-061)):
+capture first, then close, and write no board.
 
 ## MODE R · RETIRE (the flight's natural end)
 

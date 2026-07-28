@@ -309,21 +309,25 @@ whole.
   another seat's surface"), or an explicit carve-out in the
   supersession rule itself. Touching supersession is its own bench;
   recorded here rather than solved in passing.
-  PARTLY CLOSED 2026-07-28 by
-  [D-061](record/DECISIONS.md#d-061--2026-07--the-landing-doctrine-recut-to-three-scenarios--the-cockpits-standing-job-advise-on-fleet-status-and-on-each-gate-reaching-decision-execute-the-founders-rulings-from-the-phone-auto-land-when-the-fleet-empties-and-nothing-awaits-the-founder-desk-takeover-when-pickup-finds-a-live-cockpit-holding-decisions-and-the-founders-freeze-unchanged-the-tombstone-wake-rule-makes-a-superseded-cockpit-retire-by-the-full-ritual-amends-d-054s-two-mode-routing-upholds-no-solo-approval-and-the-derivation-law),
-  which is what the founder's ruling reached: the TOMBSTONE
-  WAKE-RULE turns a superseded COCKPIT'S exit into a ritual —
-  read the board first, then self-retire by the full landing
-  ritual rather than "push, write nothing" — so that road is no
-  longer ritual-less. WHAT SURVIVES, stated rather than rounded
-  away: the line's actual case was a superseded CONTROL TOWER
-  (ground seat) leading a TEAM, and a cockpit never leads one
-  ([land §Teams](skills/land.md#teams--not-this-rituals-case-both-modes)),
-  so the team-findings gap is untouched — the ground seat's
-  supersession still reads "push, write nothing" in
-  [LAWS](LAWS.md#parallel-lanes--cloud). D-061 sets the precedent
-  a future bench can generalize (a superseded seat retires by its
-  own ritual); it did not generalize it.
+  CLOSED 2026-07-28, in two steps, and the steps are the record
+  of how it closed. FIRST,
+  [D-061](record/DECISIONS.md#d-061--2026-07--the-landing-doctrine-recut-to-three-scenarios--the-cockpits-standing-job-advise-on-fleet-status-and-on-each-gate-reaching-decision-execute-the-founders-rulings-from-the-phone-auto-land-when-the-fleet-empties-and-nothing-awaits-the-founder-desk-takeover-when-pickup-finds-a-live-cockpit-holding-decisions-and-the-founders-freeze-unchanged-the-tombstone-wake-rule-makes-a-superseded-cockpit-retire-by-the-full-ritual-amends-d-054s-two-mode-routing-upholds-no-solo-approval-and-the-derivation-law)
+  closed THE COCKPIT ROAD: its tombstone wake-rule turned a
+  superseded cockpit's exit into a ritual — read the board first,
+  then self-retire by the full landing ritual rather than "push,
+  write nothing". That left this line's ACTUAL case standing,
+  since a cockpit never leads a team
+  ([land §Teams](skills/land.md#teams--not-this-rituals-case-both-modes)):
+  a superseded CONTROL TOWER (ground seat) leading one still had
+  nowhere to put its findings. So the bench recorded the gap
+  rather than claiming a fix, and the founder ruled at the
+  [#238](https://github.com/wsher0901/roam/pull/238) gate. SECOND,
+  [D-062](record/DECISIONS.md#d-062--2026-07--the-wake-rule-generalized--any-superseded-seat-exits-by-its-own-closing-ritual-never-bare-a-cockpit-by-the-landing-ritual-a-ground-control-tower-by-capture-then-close-with-team-findings-captured-first-no-superseded-seat-writes-a-board-because-the-baton-has-already-moved-closes-d-056s-deferred-road-in-full-upholds-d-056-and-d-061)
+  closed THE TOWER-AND-TEAM ROAD by generalizing the wake-rule to
+  ANY superseded seat: a tower exits by capture-then-close with
+  team findings captured FIRST, and no superseded seat writes a
+  board. [LAWS](LAWS.md#parallel-lanes--cloud) now carries the
+  general rule; the road that ran no ritual no longer exists.
 - 2026-07-24 (Claude Code, the agent-teams bench): BOX PROVENANCE
   — stamp each external master in [SETUP](SETUP.md) with
   "last pasted: <date> · <sha>" so box currency becomes DERIVABLE
