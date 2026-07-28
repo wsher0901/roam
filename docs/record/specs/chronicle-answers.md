@@ -79,8 +79,9 @@ that.
 7. Verification loop, full CI mirror, Actions green, ship §6
    critic; ship to THE GATE. Tower-authored — external Web review
    precedes the founder's word. The ship tail's board repaint
-   carries the founder's standing three-phase order and the two
-   Needs-you corrections.
+   carries the founder's standing three-phase order, the two
+   Needs-you corrections, and the census restamp 65 → 66 (the
+   board holds its own literal copy of that count).
 8. **AT THE WELD, an extra step beyond
    [ship §7](../../skills/ship.md#7--on-approval--the-atomic-weld):**
    [the INDEX](../../chronicle/INDEX.md) links to this bench's
@@ -150,6 +151,15 @@ departure from the goal:
    founder's ruling the bench memory notes the dangle plainly and
    does NOT call the diagnostic open; no fourth IDEAS line was
    spent.
+
+Plus four accuracy repairs the ship §6 critic caught pre-flip,
+all narrowing claims to the evidence: item 5's "no cockpit ever
+seated itself" (the derivation only shows no cockpit-seated
+weld); item 6's silently-dropped second half (whether Remote
+Control still exists on the phone — now named as still owed);
+item 2's hedge hardened into "confirmed"; item 4's single failed
+emulation generalized into "ungradable". Detail in
+[the memory's critic round](../../memory/chronicle-answers.md).
 
 ## Open questions
 

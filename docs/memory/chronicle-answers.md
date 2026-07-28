@@ -36,6 +36,16 @@ Contract: [the spec](../record/specs/chronicle-answers.md).
   [no-solo-approval](../LAWS.md#workflow-non-negotiable) requires
   an external Web review before the founder's word at THE GATE. DO
   NOT MERGE.
+- **Item 6 is settled in half.** Whether Remote Control still
+  exists on the founder's phone was never asked, and the census
+  asked it. One sentence from the founder closes it; until then
+  the ending says so plainly.
+- **A decide may be owed.** The three-phase sequencing order
+  pauses roadmap-level work, which
+  [LAWS §Workflow](../LAWS.md#workflow-non-negotiable) routes to
+  decide — but this bench's mandate fixed the files touched and a
+  D-number lies outside them. Raised at THE GATE for the founder
+  to rule: fold a decide in, or open a follow-up bench.
 - **A weld step that cannot be forgotten:** this file's links from
   [the INDEX](../chronicle/INDEX.md) point at the LIVING path
   (`../memory/chronicle-answers.md`) because that is what
@@ -83,8 +93,10 @@ Three of the nine settled exactly that way.
 
 ### What the bench derived, so the founder did not have to
 
-Two answers were "not sure", and two of those were mechanically
-answerable:
+Three endings record uncertainty as their settled state (items 3,
+4 and 5). Two of those were mechanically answerable, so the bench
+answered what it could rather than handing the founder a question
+a shell command settles:
 
 - **The summon secrets (item 3).** `gh secret list` returns
   exactly the two names `.github/workflows/summon.yml` reads:
@@ -95,10 +107,12 @@ answerable:
 - **The self-seat birth (item 5).** Every weld since
   [#213](https://github.com/wsher0901/roam/pull/213) — #216, #218,
   #221, #223, #225, #229, #231, #233 — carries a ground-seat stamp
-  (home PC or work PC). No cockpit ever seated itself on the
-  board, so the record is as uncertain as the founder is, and the
-  ending says "no confirmed flight" rather than inventing either
-  answer.
+  (home PC or work PC), so no cockpit-seated WELD exists. The
+  critic caught the bench overreaching here on its first pass: no
+  weld is weaker than no flight, since a cockpit could have seated
+  itself and produced no weld. The ending was softened to say
+  exactly that — the record is as uncertain as the founder is, and
+  "no confirmed flight" is the whole of what either can support.
 
 ### The one interactive item: the reviewer defect, CLOSED
 
@@ -217,6 +231,48 @@ restamps 65 → 66; **flag B** — the dangling double-dispatch
 pointer is noted plainly and the diagnostic is NOT called open, no
 fourth IDEAS line; **flag C** — living link now, repoint as an
 explicit weld step. Everything else approved as drafted.
+
+### The critic round (ship §6, pre-flip)
+
+The critic returned nine findings on `98d89f5`, and its two
+sharpest were about the bench's own governing rule — that
+uncertainty is never rounded. Four repairs landed before the flip,
+all of them softening claims back to what the evidence actually
+carries:
+
+1. **Item 5 overreached.** "No cockpit ever seated itself" was
+   written from a derivation that only shows no cockpit-seated
+   WELD. Softened, and the gap named explicitly.
+2. **Item 6 answered only half its question.** The census asked
+   two things — whether the tether was ever used AND whether
+   Remote Control still exists on the founder's phone. Only the
+   first was asked on 2026-07-28. The second is now named as
+   STILL OWED rather than silently dropped, with what turns on it
+   (retirement-by-platform, not demotion) stated; the shelf row's
+   confidence drops to medium for the same reason.
+3. **Item 2 hardened a hedge.** "I don't think so" had become
+   "confirmed NEVER RUN", propped on the ledger's silence — but a
+   landing need not leave a ledger line. The ending now rests on
+   the founder's hedge and claims nothing beyond it.
+4. **Item 4 generalized one failure.** "Ungradable on demand"
+   became "no drill has yet worked", since one failed emulation
+   does not prove no method exists.
+
+The remaining findings were minor and handled: the `ship §6`
+fallback is now linked in both INDEX mentions, and the "two
+answers, two of those" sentence above was an editing artifact,
+rewritten. Two were checked and dismissed: the new census row's
+`#236` span is this bench's real PR number, and the spec's
+`pr: —` is correct until [ship §7](../skills/ship.md#7--on-approval--the-atomic-weld)
+fills it at the weld. One rides to the tail: the
+[DASHBOARD](../DASHBOARD.md) carries its own "65 proposed stories"
+literal, which the ship tail's repaint must restamp to 66.
+
+The critic's third notable finding is not repairable here and
+goes to the founder at THE GATE: the three-phase sequencing order
+pauses roadmap work, which LAWS routes to decide, while this
+bench's mandate fixed the files touched and excluded a D-number.
+That tension is the founder's call, not the bench's.
 
 ## Where to look
 
