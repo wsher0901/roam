@@ -6,9 +6,9 @@ status: living
 
 # Dashboard — the state surface
 
-Stamp: 2026-07-28 · 13:22 · ship tail · work PC
+Stamp: 2026-07-28 · 17:16 · ship tail · work PC
 V1 5/34 · S1 2/7 · S2 3/5 · sessions: 1 main · 0 parallel
-(0 need you) · needs-you 1
+(0 need you) · needs-you 2
 How to read this board →
 [HOME §Reading the board](HOME.md#reading-the-board)
 
@@ -21,6 +21,15 @@ How to read this board →
    only when every seat runs it (since 07-27).
    → [machine-setup §Vault lens](skills/machine-setup.md#vault-lens) ·
    [D-057](record/DECISIONS.md#d-057--2026-07--the-record-shelf--the-frozen-record-moves-under-one-roof-docsrecord-is-born-history--specs--decisions-in-memory-stays-living-at-root-the-enabling-ruling--a-mechanical-link-path-segment-repair-inside-a-frozen-file-is-maintenance-not-a-content-edit-append-only-governs-meaning-not-bytes-intra-record-links-resolve-by-construction-upholds-append-only-one-home-and-the-weave-rule)
+
+2. 🟡 RE-SAVE THE COCKPIT ROUTINE BOX at
+   claude.ai/code/routines — [#238](https://github.com/wsher0901/roam/pull/238)
+   edited the charter MASTER (the standing job · auto-land ·
+   the tombstone wake-rule), and the routine's saved prompt is a
+   COPY. Until it is re-saved, a routine-fired cockpit is born
+   without any of the three (since 07-28).
+   → [SETUP §cloud accounts](SETUP.md#once-and-done--cloud-accounts) ·
+   [D-061](record/DECISIONS.md#d-061--2026-07--the-landing-doctrine-recut-to-three-scenarios--the-cockpits-standing-job-advise-on-fleet-status-and-on-each-gate-reaching-decision-execute-the-founders-rulings-from-the-phone-auto-land-when-the-fleet-empties-and-nothing-awaits-the-founder-desk-takeover-when-pickup-finds-a-live-cockpit-holding-decisions-and-the-founders-freeze-unchanged-the-tombstone-wake-rule-makes-a-superseded-cockpit-retire-by-the-full-ritual-amends-d-054s-two-mode-routing-upholds-no-solo-approval-and-the-derivation-law)
 
 The WEB-INSTRUCTIONS re-paste CLEARED — the founder re-pasted the
 box on 2026-07-28, recorded at
@@ -37,14 +46,14 @@ frontmatter oddity is folded there too
 
 | Session | Task | State | Last push | Your move |
 |---|---|---|---|---|
-| main · control tower | — ([chronicle-answers](record/history/workshop/definition/chronicle-answers.md) shipped [#236](https://github.com/wsher0901/roam/pull/236); nothing open) · 0/0 | 🟢 | 13:22 (this repaint) | — |
+| main · control tower | — ([land-doctrine-v2](record/history/workshop/mechanism/land-doctrine-v2.md) shipped [#238](https://github.com/wsher0901/roam/pull/238); nothing open) · 0/0 | 🟢 | 17:16 (this repaint) | — |
 
 ↳ main micro: — (no active task)
 
 SEQUENCING — the standing order, now
 [D-060](record/DECISIONS.md#d-060--2026-07--the-three-phase-standing-order--settle-and-test-the-vault-then-roam-v1s1t3t6-and-v1s2t5-are-paused-until-phase-2-closes-the-founders-2026-07-28-sequencing-recorded-per-laws-pause-routing-upholds-the-pacing-law):
-**PHASE 1 — SETTLE & TEST** (this bench, then the first-story
-shakedown flight: blind cockpit birth · the fence /
+**PHASE 1 — SETTLE & TEST** (two benches down; next the
+first-story shakedown flight: blind cockpit birth · the fence /
 [land](skills/land.md) MODE P ·
 [pickup](skills/pickup.md#6--fleet-resume-on-the-founders-answer)
 fleet-resume · land MODE R) → **PHASE 2 — THE VAULT** (chronicle
@@ -78,10 +87,35 @@ upheld a fifth — the standing order pauses roadmap work, so
 landed as a pure append. Three fresh
 [IDEAS](IDEAS.md) lines (the S3.T1 pair · decide tags · the
 go-remote retirement question); the 07-17 defect line closed
-citing the bench. NEXT: the first-story shakedown flight, phase
-1's second half — it also proves [land](skills/land.md) and the
-blind cockpit birth, the two pieces this bench confirmed have
-never flown.
+citing the bench.
+
+THEN THE LANDING RECUT
+([#238](https://github.com/wsher0901/roam/pull/238)) — phase 1's
+first half finished: a flight no longer ends only when the
+founder says so.
+[D-061](record/DECISIONS.md#d-061--2026-07--the-landing-doctrine-recut-to-three-scenarios--the-cockpits-standing-job-advise-on-fleet-status-and-on-each-gate-reaching-decision-execute-the-founders-rulings-from-the-phone-auto-land-when-the-fleet-empties-and-nothing-awaits-the-founder-desk-takeover-when-pickup-finds-a-live-cockpit-holding-decisions-and-the-founders-freeze-unchanged-the-tombstone-wake-rule-makes-a-superseded-cockpit-retire-by-the-full-ritual-amends-d-054s-two-mode-routing-upholds-no-solo-approval-and-the-derivation-law)
+gives the cockpit a written STANDING JOB (advise on every gate,
+execute rulings, never merge on its own advice), AUTO-LAND when
+the fleet empties and nothing awaits the founder, and a DESK
+TAKEOVER when the founder returns mid-flight; the freeze is
+unchanged. THE CRITIC FOUND THREE STRUCTURAL FAULTS the bench had
+built itself — LAWS still said "push, write nothing" (the exact
+behaviour D-061 rejects by name, and LAWS outranks a skill); a
+superseded cockpit would have repainted the board and erased the
+takeover stamp of the desk that superseded it; and the takeover
+sat behind an entry guard that excluded its own trigger. All
+repaired pre-flip. The external review then directed the
+generalization the bench had flagged rather than assumed:
+[D-062](record/DECISIONS.md#d-062--2026-07--the-wake-rule-generalized--any-superseded-seat-exits-by-its-own-closing-ritual-never-bare-a-cockpit-by-the-landing-ritual-a-ground-control-tower-by-capture-then-close-with-team-findings-captured-first-no-superseded-seat-writes-a-board-because-the-baton-has-already-moved-closes-d-056s-deferred-road-in-full-upholds-d-056-and-d-061)
+— ANY superseded seat exits by its own closing ritual, team
+findings captured first, no board written — which closes the
+[D-056](record/DECISIONS.md#d-056--2026-07--team-aware-leaving-rituals--no-ritual-lets-a-live-agent-team-outlive-the-sitting-that-made-it-handoff-shuts-the-team-down-before-parking-anything-and-captures-its-findings-into-the-record-first-land-states-the-cockpit-cannot-lead-a-team-case-once-and-routes-the-ground-seat-to-handoff-pickup-gains-the-ghost-teammate-recovery-note-and-the--block-gains-what-the-team-had-found-closes-d-055s-deferred-gap-upholds-one-home-and-the-park-protocol)
+deferred road in full.
+
+NEXT: the first-story shakedown flight, phase 1's second half —
+it proves [land](skills/land.md) and the blind cockpit birth, the
+two pieces confirmed never flown, and it is now the first flight
+that can end by itself.
 
 ## You are here
 
@@ -167,6 +201,7 @@ T3–T6 source-vetting relaunch stays held (see You are here).
 
 | When | What | PR |
 |---|---|---|
+| 07-28 17:13 | [the landing doctrine recut to the founder's three-scenario model (D-061), and supersession stops being the one road out that runs no ritual (D-062): D-054 routed landing by the FLEET but left the TRIGGER in one place — the founder's word — which fits exactly one of the three situations a flight actually ends in. The cockpit gains a written STANDING JOB (advise on fleet status and on each gate reaching decision, execute the founder's rulings, NEVER merge on its own advice); AUTO-LAND fires the full ritual unprompted the same turn no lanes work AND nothing awaits the founder, behind four guards, one re-liftoff the stated cost of an early fire; DESK TAKEOVER hands the baton back when the founder returns mid-flight; the freeze is unchanged. THE SHIP-TIME CRITIC FOUND THREE STRUCTURAL FAULTS THE BENCH BUILT ITSELF — LAWS still said "push, write nothing", the exact behaviour D-061 rejects BY NAME and LAWS outranks a skill; a superseded cockpit would have repainted the board and ERASED the takeover stamp of the desk that superseded it; and the takeover sat behind an entry guard admitting only a grounded fleet, unreachable reading pickup top-down — all repaired pre-flip, plus a fourth that would have killed a healthy lane. The external review then directed the generalization the bench flagged rather than assumed: D-062, ANY superseded seat exiting by its own closing ritual with team findings captured first and no board written, closing the D-056 deferred road in full](record/history/workshop/mechanism/land-doctrine-v2.md) | [#238](https://github.com/wsher0901/roam/pull/238) |
 | 07-28 13:22 | [the census's nine founder-owed endings are answered and written into the record: the founder ruled on all nine, and the INDEX's owed register became nine settled-for-now endings — THREE RECORDING UNCERTAINTY AS THE SETTLED STATE, because that is what the answer was; two the bench DERIVED rather than asking twice (both summon secrets exist by name, values never read; no weld since #213 is cockpit-seated — a derivation whose own limit is named, since no weld is weaker than no flight); T3–T6 RELAUNCH FROM SCRATCH with the external reviewer's four audit riders each marked verify-licenses-at-spike, the failure evidence held to exactly what the record carries and one dangling pointer noted honestly rather than counted; the reviewer registration defect CLOSED after five clean native runs; the chronicle layer settled and took its own shelf row, the census restamping 65 → 66. THE SHIP-TIME CRITIC EARNED ITS KEEP — four of its nine findings were the bench breaking its own no-rounding rule in text the founder had already approved, all narrowed back to the evidence pre-flip, and the external review upheld a fifth: the standing order pauses roadmap work, so the founder amended the files-touched and D-060 landed as a pure append](record/history/workshop/definition/chronicle-answers.md) | [#236](https://github.com/wsher0901/roam/pull/236) |
 | 07-27 21:34 | [the story layer is decided and its shelves are drafted (D-059): living stories above the frozen record, governed by the founder's six rulings — ONE STORY PER ITEM, and the ending rule at the design's heart (settled in any format means written; a later fix is INCORPORATED and the ending rewritten at that weld — never a second story); docs/chronicle/ born with INDEX.md as a DRAFT CENSUS of 65 proposed stories across four shelves, produced by the workshop's FIRST AGENT-TEAM USE — three read-only teammates, one shelf each, the lead reading the Roam shelf itself; the D-056 discipline ran in the externally-corrected order (captures pushed BEFORE shutdown, proven from the push log at review); nine endings the record cannot derive marked founder-input-owed rather than guessed, the T3–T6 batch-1 arc leading them; the founder's four folds landed at the review; the ship synthesis-at-weld step deferred by ruling to the first story weld](record/history/workshop/definition/chronicle-layer.md) | [#233](https://github.com/wsher0901/roam/pull/233) |
 | 07-27 20:42 | [the workshop gains its system spine (D-058): docs/ATLAS.md is born — six mermaid diagrams on one page (the task loop with the weld's four acts inside it, the file flow, away & return closed into a circle, a lane's life, the surfaces, the state surfaces), composed FROM the living prose at HEAD; the posture IS the decision — renders, originates nothing, dated stamp, least-authoritative, every doctrine box linked to its owning section through checker-visible weave lines (in-diagram click-links rejected with both mechanical reasons on record); HOME gains the routing row whose upsert rule doubles as the maintenance law, plus the review-licensed catalog entry; the critic's one real catch was the sharpest possible for this page — the ack token drawn with a non-canonical separator, the #191 failure class — repaired character-for-character](record/history/workshop/definition/atlas.md) | [#231](https://github.com/wsher0901/roam/pull/231) |
@@ -176,7 +211,6 @@ T3–T6 source-vetting relaunch stays held (see You are here).
 | 07-24 15:20 | [how a flight ends becomes a first-class ritual (D-054): land ships as ONE skill with TWO modes routed by the fleet the cockpit derives from origin — RETIRE, consolidating the duties charter rule 6 already carried, and PAUSE-AND-TRANSFER, answering the case that had none; its core is THE FENCE, a commit that makes the lane's next push non-fast-forward so the wake-lock turns the rejection into a stop and the resume point is the branch tip BY CONSTRUCTION, with the honesty clause beside it (wake-lock-mediated, never a guaranteed freeze); the board's fleet-at-ground table is the single material passed down, sessions are cattle and branches are the work, pickup gains the FLEET RESUME ask with live cap arithmetic, rule 6 reduces to a pointer, and the effort doctrine moves to Opus 5 · xhigh; five alternatives rejected with reasons; the critic's two findings repaired pre-flip, the 🟡 one judged REQUIRED by one-home at the external review](record/history/workshop/mechanism/landing-skill.md) | [#221](https://github.com/wsher0901/roam/pull/221) |
 | 07-24 01:33 | [the harness found ALREADY AT BEST PRACTICE, the proof welded to the record (D-053): the founder's maximum-depth audit of the whole governing layer against Anthropic's guidance; the two real improvements shipped — LAWS' verification loop promoted to a copy-runnable block (proven live: this bench's gate ran the block verbatim as its mirror) and two stub trigger-surfaces sharpened, the harness picking both up mid-bench; five alternatives rejected with reasons; the critic's one finding — the hygiene bench's own bare D-053 mentions — repaired pre-flip](record/history/workshop/definition/guardrail-audit.md) | [#218](https://github.com/wsher0901/roam/pull/218) |
 | 07-24 00:51 | [one standard for how every surface speaks to the founder (D-052): the goal verbatim — minimum reading time to decision, explicit steps over abstractions, purpose-shaped explanation — five clauses in ONE home (HOME §Response doctrine), the founder's §Command card with D-049's teleport warning where it will be read, the cockpit's FLEET TABLE report, the four-part status template rewritten into all three rituals (pickup's ⏸ lead above everything), and WEB-INSTRUCTIONS v4 → v5 — the paste-block loop dead, the mandatory-review role leading, the on-the-record word-paste in the procedure](record/history/workshop/definition/response-doctrine.md) | [#216](https://github.com/wsher0901/roam/pull/216) |
-| 07-24 00:28 | [the fragilest component is deleted, not maintained (D-051): rung 1 fires `claude --cloud` BLIND — nothing captured, exit status only — and the cockpit SEATS ITSELF by its D-049 env-derived self-URL; the console-attach capture retired dated (it never failed — it was the component most likely to break silently); the missing greeting push IS the failure signal (/tasks · the list · retry), the pending row going stale honestly; the stray-collision close sharpened by the critic to a short factual note, never R4b's script; THE LIVE TEST rides the next real flight by the founder's word](record/history/workshop/mechanism/self-seat-birth.md) | [#213](https://github.com/wsher0901/roam/pull/213) |
 
 Note: [#201](https://github.com/wsher0901/roam/pull/201) (liftoff
 board weld) and [#202](https://github.com/wsher0901/roam/pull/202)
