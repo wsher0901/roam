@@ -160,6 +160,36 @@ word — a ritual never spends cap runs by default. The redeploy
 mechanics live HERE and nowhere else; every other page points at
 this section.
 
+### The desk takeover — a LIVE cockpit holding decisions
+
+Before the resume mechanics, the case that outranks them
+([D-061](../record/DECISIONS.md#d-061--2026-07--the-landing-doctrine-recut-to-three-scenarios--the-cockpits-standing-job-advise-on-fleet-status-and-on-each-gate-reaching-decision-execute-the-founders-rulings-from-the-phone-auto-land-when-the-fleet-empties-and-nothing-awaits-the-founder-desk-takeover-when-pickup-finds-a-live-cockpit-holding-decisions-and-the-founders-freeze-unchanged-the-tombstone-wake-rule-makes-a-superseded-cockpit-retire-by-the-full-ritual-amends-d-054s-two-mode-routing-upholds-no-solo-approval-and-the-derivation-law),
+scenario 2): §3's gather finds a cockpit that is LIVE and holding
+PENDING DECISIONS — gates that reached decision and are waiting
+on the founder. The founder is here, at this desk. Two commanding
+seats cannot both hold the baton, so the desk takes it:
+
+1. **ADOPT THE DECISION QUEUE.** Surface every pending gate at
+   this desk, each one carrying the cockpit's own advice — read
+   from its PR comments and the board's flight context, never
+   re-invented. The founder answers them here.
+2. **WRITE COCKPIT SUPERSEDED** to the board with the takeover
+   stamp (date · time · seat, from the shell clock), naming the
+   superseded session's URL. This is the board write the
+   supersession rests on — the old cockpit learns it is
+   superseded by READING it.
+3. **PROCEED** with the rest of pickup. The fenced or flying
+   lanes are handled by the resume mechanics below exactly as
+   any other fleet.
+
+The other side of this is the cockpit's TOMBSTONE WAKE-RULE — on
+any wake, read the board first; if superseded, self-retire by the
+full landing ritual
+([land §Scenario 2](land.md#scenario-2--desk-takeover-the-desk-fires-it)).
+The desk does not wait for that retirement to finish: the board
+write is what transfers the baton, and the retirement is the old
+seat's own duty.
+
 Per lane, by the answer given:
 
 - **'continue'** (the whole fleet) or **'redeploy <id>'** (one

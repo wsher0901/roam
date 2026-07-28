@@ -2540,3 +2540,94 @@ the bench; moves to history at the weld) ·
 cites this entry) · [ROADMAP](../ROADMAP.md) deliberately
 UNTOUCHED — the pause is sequencing, and the unticked T3–T6 and
 T5 boxes already tell the truth · this entry.
+
+## D-061 — 2026-07 — The landing doctrine recut to three scenarios — the cockpit's standing job (advise on fleet status and on each gate reaching decision, execute the founder's rulings from the phone), AUTO-LAND when the fleet empties and nothing awaits the founder, DESK TAKEOVER when pickup finds a live cockpit holding decisions, and the founder's FREEZE unchanged; the tombstone wake-rule makes a superseded cockpit retire by the full ritual (amends D-054's two-mode routing, upholds no-solo-approval and the derivation law)
+
+**Decision:** four clauses, from the founder's three-scenario model
+(Web ops chat, 2026-07-28).
+
+**(1) THE COCKPIT'S STANDING JOB**, stated so a flight stops
+improvising it: ADVISE the founder on fleet status and on each
+gate as it reaches decision, and EXECUTE the founder's rulings
+from the phone. The merge boundary is
+[no-solo-approval](../LAWS.md#workflow-non-negotiable) restated
+for the seat rather than amended — LANE-AUTHORED diffs may merge
+on cockpit review plus the founder's word; COCKPIT-AUTHORED diffs
+always take external Web review before the word. THE COCKPIT
+NEVER MERGES ON ITS OWN ADVICE.
+
+**(2) SCENARIO 1 — AUTO-LAND.** In the same turn that BOTH become
+true — no working lanes AND no decisions awaiting the founder —
+the cockpit runs the full landing ritual UNPROMPTED: retire the
+lanes' sessions, push, deliver the landing report naming the
+re-open paths, retire itself. Four guards, each load-bearing:
+never at birth (a fresh cockpit waits for at least one command),
+never on a timer, never silent, and the both-true test is read in
+ONE turn rather than remembered across turns. The accepted cost
+of a premature fire is ONE RE-LIFTOFF, and the report states it
+so the founder is never guessing whether the landing was right.
+
+**(3) SCENARIO 2 — DESK TAKEOVER.** When [pickup](../skills/pickup.md)
+finds a LIVE cockpit holding PENDING DECISIONS, the desk adopts
+the decision queue — each gate surfaced with the cockpit's advice
+— writes COCKPIT SUPERSEDED to the board with the takeover stamp,
+and proceeds. The cockpit charter gains THE TOMBSTONE WAKE-RULE:
+on any wake, read the board FIRST; if superseded, self-retire by
+the full landing ritual, writing nothing else.
+
+**(4) SCENARIO 3 — THE FOUNDER'S FREEZE.** "Ground the fleet"
+stays WORD-ONLY MODE P — the fence, the board transfer, resume at
+any desk. Mechanics unchanged. A bare "land" on an empty fleet
+stays legal as a manual retire.
+
+**Why:** [D-054](#d-054--2026-07--the-landing-skill--how-a-flight-ends-becomes-a-first-class-ritual-one-skill-with-two-modes-routed-by-fleet-state-retire--pause-and-transfer-the-fence-is-a-commit-so-the-resume-point-is-the-branch-tip-by-construction-wake-lock-mediated-with-its-honesty-clause-the-board-is-the-single-transfer-material-pickup-gains-the-fleet-resume-ask-and-its-cap-arithmetic-sessions-are-cattle-branches-are-the-work-charter-rule-6-becomes-a-pointer-the-effort-doctrine-moves-to-opus-5--xhigh-upholds-the-wake-lock-the-park-protocol-and-one-home-supersedes-the-opus-48-reliance-pair)
+routed landing by the FLEET but left the TRIGGER in one place —
+the founder's word. That is one trigger for three situations, and
+the two it does not fit are the expensive ones. A flight whose
+work is finished and whose gates are all answered has nothing
+left to do but burn: every extra turn costs usage and the founder
+must remember to say "land" from wherever they are, so the
+cockpit lands ITSELF. A founder who instead walks back to a desk
+while gates are still undecided creates the opposite problem —
+two live commanding seats, which the baton law forbids — so the
+desk takes the queue and says so on the board, and the wake-rule
+makes the old cockpit read that before it acts on anything. The
+one scenario D-054 did fit, the founder's freeze, is left exactly
+as it is.
+
+The standing job is written down for the same reason: a cockpit
+that improvises its role improvises the merge boundary too, and
+the boundary is the one thing no seat may loosen for itself.
+
+**Alternatives rejected:** a TIMER for auto-land (land after N
+idle minutes) — a clock cannot see whether a gate is waiting, and
+the failure mode is a fleet that lands while the founder is
+typing a ruling; the both-true test reads state, which is what
+the derivation law asks for · SILENT auto-land — a landing that
+leaves no report is indistinguishable from a crash, and the
+founder's next pickup would have to reconstruct why the fleet is
+gone · asking the founder to confirm before auto-landing — that
+is the word-triggered landing we already have, and it re-creates
+the exact cost this scenario exists to remove · letting the
+superseded cockpit simply STOP (today's "push, write nothing") —
+a session that vanishes mid-flight leaves its lanes unfenced and
+its board row stale; retiring by the ritual is barely more
+expensive and leaves the board true · letting the DESK defer to
+the live cockpit until it lands — the founder is at the desk, and
+making them wait for a cloud session to notice is the tail
+wagging the dog; the baton belongs to the seat the founder is
+driving.
+
+**Affects:** [land](../skills/land.md) (the trigger table — three
+scenarios plus manual retire) ·
+[pickup §6](../skills/pickup.md#6--fleet-resume-on-the-founders-answer)
+(the decisions-pending takeover + the supersession write) ·
+[liftoff](../skills/liftoff.md) and the cockpit charter master in
+[SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts)
+(the standing job · the auto-land clause · the tombstone
+wake-rule) · [HOME §Terms](../HOME.md#terms) (the two lands and
+supersession) · [ATLAS](../ATLAS.md) diagram 3 (re-rendered per
+its own maintenance duty) · [IDEAS](../IDEAS.md) (the
+superseded-seat line) · [the spec](specs/land-doctrine-v2.md) +
+its memory (in flight on the bench; moves to history at the weld)
+· this entry.

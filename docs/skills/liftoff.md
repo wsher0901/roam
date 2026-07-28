@@ -245,6 +245,20 @@ founder's status template:
 - PARALLEL/RECENT FLIGHTS — one line per lane: 🟢 all good · ⏸
   resume needed; every ⏸ carries the exact resume word and where
   it goes.
+
+WHAT THE FIRED COCKPIT WILL DO, stated in the close so the
+founder is never surprised by it
+([D-061](../record/DECISIONS.md#d-061--2026-07--the-landing-doctrine-recut-to-three-scenarios--the-cockpits-standing-job-advise-on-fleet-status-and-on-each-gate-reaching-decision-execute-the-founders-rulings-from-the-phone-auto-land-when-the-fleet-empties-and-nothing-awaits-the-founder-desk-takeover-when-pickup-finds-a-live-cockpit-holding-decisions-and-the-founders-freeze-unchanged-the-tombstone-wake-rule-makes-a-superseded-cockpit-retire-by-the-full-ritual-amends-d-054s-two-mode-routing-upholds-no-solo-approval-and-the-derivation-law)):
+its STANDING JOB is to advise on fleet status and on each gate as
+it reaches decision, and to execute the founder's rulings from
+the phone — never merging on its own advice. And it may END THE
+FLIGHT ITSELF: the same turn no lanes are working and nothing
+awaits the founder, it runs the full landing ritual unprompted
+and reports, one re-liftoff being the stated cost if that fire
+was early ([land](land.md#the-trigger-table--what-starts-a-landing)).
+So a flight going quiet is not a flight to check on — the landing
+report arrives on its own.
+
 Liftoff no longer reports a cockpit URL
 ([D-051](../record/DECISIONS.md#d-051--2026-07--self-seat-birth--liftoff-fires---cloud-blind-and-the-cockpit-seats-itself-by-its-env-derived-self-url-the-console-attach-launcher-is-retired-amends-d-047s-rung-1-mechanics-as-corrected-by-193-upholds-d-049-and-board-governs))
 — the cockpit's greeting push and its self-seat repaint carry
