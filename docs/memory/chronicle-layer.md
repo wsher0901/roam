@@ -1,7 +1,7 @@
 ---
 type: memory
 id: chronicle-layer
-updated: 2026-07-27 21:09 · team captures 1–2 of 3 (away-surface · lane-system) · home PC
+updated: 2026-07-27 21:18 · team captures complete (3 of 3) · home PC
 ---
 
 # chronicle-layer — the story layer is decided; the census drafts its shelves
@@ -221,6 +221,94 @@ REGISTRATION DEFECT: graduated 07-17, ran natively at #175 and
 again 07-24; the standing IDEAS line says "confirm before
 closing" — needs the founder's word to write closed or carry
 open.
+
+### Team findings — capture 3 of 3: information-system (the information-system shelf)
+
+Returned 2026-07-27, twenty-eight proposed stories (the largest
+shelf); condensed here, complete in the INDEX census:
+
+1. THE NARRATIVE LAYER (memory→history) — #1 → #56 → #71 →
+   #108 → #110 → #229. Ending: living; 98 stories on the shelf.
+   High.
+2. THE MEMORY TEMPLATE — #71 → #108 → #128 → #171 → #211 →
+   #221 → #225. Ending: one home, CI-enforced by check:memory.
+   High.
+3. THE LEDGER + ITS GATE — #110 → #138/#139 → #140 → #229.
+   Ending: CI-guarded bijection, 98↔98. High.
+4. LINK INTEGRITY (weave + checker) — #57 → #76 → #78 → #117 →
+   #108/#229 (moves as recomputes) → #229 (nested-bracket
+   hardening). Ending: 3,175/0 at #231. High.
+5. CI IS THE ARBITER + AUTO-MERGE — #117 → #119. Ending: no
+   gate passes on local green. High.
+6. DASHBOARD — #60 → #62 → #71 → #78 → #110 → #113 → #193 →
+   #213 → #221. Ending: sole rendered state surface; 2 open
+   Needs-you today. High.
+7. THE ROUTING LAW — #113 → #115 → #132 → #144. Ending:
+   standing, the most-cited law. High.
+8. RECALL — #123 → #128/#132. Ending: shipped, the read mirror.
+   High.
+9. HOME.MD — #23 → #58 → #76 → #113 → #121 → #130 → #204 →
+   #216 → #231. Ending: the living manual. High.
+10. LAWS.MD — #1 → #62 → #71 → #89 → #115 → #121 → #134 →
+    #147 → #218. Ending: the always-loaded constitution, audited
+    at best practice. High.
+11. DECISIONS + DECIDE — #1 → #56 → #89 → #117 → #134 → #211 →
+    #229. Ending: append-only D-001…D-058; append-only governs
+    meaning, not bytes. High.
+12. IDEAS — the LAWS clause → #144/#193 → #211 (inbox-not-
+    archive, first compaction 420→266). Ending: self-pruning
+    inbox. High.
+13. THE SESSION HOOKS — #2 → #53 → #78 → #101 → #142 → #211.
+    Ending: three Node hooks; the close-lock instructs, no
+    longer blocks. High.
+14. SESSION LIFECYCLE DOCTRINE — #78 → #211. Ending: closed ≠
+    dead; ⏸ capture standing; residue swept by rule. High.
+15. RETROACTIVITY + CURRENCY SWEEPS — #57 → #78 → #121 → #128 →
+    #130 → #132 → #134 → #144 → #204. Ending: standing law with
+    a repeatable vehicle; #204 the last full run. High.
+16. THE CORPUS WRITING LAWS — #99 → #121. Ending: complete,
+    exceptions on record. High.
+17. THE DERIVATION LAW — #62 → #110 → #147. Ending: standing,
+    two clauses. High.
+18. THE SPECS SYSTEM — #58 → #71 → #204 → #229. Ending: one
+    contract per task, frozen at ship, superseded by dated note.
+    High.
+19. THE RECORD SHELF — #229. Ending: born and settled. High.
+20. ATLAS — #231. Ending: born and settled with its maintenance
+    law. High.
+21. THE RESPONSE DOCTRINE — #216. Ending: settled, one home.
+    High.
+22. WEB-INSTRUCTIONS — #80 → #144 → #204 → #216 → #229. Ending:
+    v5 master; the box re-paste OPEN as Needs-you 2. High.
+23. THE GUARDRAIL AUDIT (event) — #218. Ending: closed —
+    already at best practice. High.
+24. THE DOCS CURRENCY AUDIT (event) — #197 → #204. Ending:
+    closed; the principle promoted (annotation beats deletion).
+    High.
+25. THE VAULT LENS — #82 → #91 → #229. Ending: seeded in git;
+    re-seed OPEN as Needs-you 1. High.
+26. THE PER-MACHINE SEAT — #3 → #66 → #91 → #204. Ending: one
+    procedure, field traps promoted in. High.
+27. SETUP.MD — #15 → #17 → #21 → #99 → #147 → #197 → #221.
+    Ending: the single inventory. MEDIUM — shared file; claims
+    only the inventory thread.
+28. THE RETIREMENT PATTERN — #71 → #99 → #106 → #76 → #128 →
+    #197. Ending: settled convention (instruction deleted,
+    record kept). MEDIUM — assembled across benches; fold
+    candidate into 15.
+
+FOUNDER INPUT OWED (information-system): 1. the chronicle layer
+itself — no ending until this bench settles. 2. the two open
+manual acts (vault lens · box re-paste) — the record says OPEN,
+only the founder can say done. 3. whether the retirement pattern
+stands alone or folds into the currency practice.
+
+SHELF-BOUNDARY FLAGS (items no teammate claimed, adjudicated by
+the lead at INDEX composition): ship and pickup (the rituals) ·
+the pacing law · the micro-PR carve-out · the Design surface
+(DESIGN-KICKOFF) — added to the census by the lead, shelved
+under the information system (ship · pickup · micro-PRs) and
+Roam (Design), flagged for the founder's veto.
 
 ## Where to look
 
