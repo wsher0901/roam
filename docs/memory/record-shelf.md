@@ -1,7 +1,7 @@
 ---
 type: memory
 id: record-shelf
-updated: 2026-07-27 19:55 · critic repairs folded, at the gate · home PC
+updated: 2026-07-27 20:08 · external-review repairs · home PC
 ---
 
 # record-shelf — the frozen record moves under one roof
@@ -62,7 +62,13 @@ annotate, disclose at the gate. Intra-record links keep resolving
 by construction (all three surfaces move together, so their
 relative distances are preserved); the sweep therefore touches
 only frozen→living links (one `../` deeper) and living→frozen
-links (gain `record/`). Execution notes: the sweep ran as a
+links (gain `record/`). The premise held only for file-relative
+links: eight docs-root-relative intra-record links across six
+record files (five history stories, one spec) WERE broken by the
+move and were rewritten file-relative by the same recompute —
+prose untouched and targets verified resolving by the external
+review, which caught the mandate's own premise here. Execution
+notes: the sweep ran as a
 one-shot deterministic script — resolve every link from the
 file's OLD location, map moved targets into `record/`, recompute
 the relative path from the NEW location — so unmoved
