@@ -23,8 +23,7 @@ ending the record cannot derive reads
 "founder input owed", never a guess. Span cells name the PRs and
 decides that advanced the item; per-item source files are in the
 census capture
-([the bench memory](../memory/chronicle-layer.md) — its link
-re-aims to record/history/ at the bench's weld).
+([the bench memory](../record/history/workshop/definition/chronicle-layer.md)).
 
 ## Shelf I — the away surface
 
