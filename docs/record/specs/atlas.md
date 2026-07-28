@@ -1,7 +1,7 @@
 ---
 type: spec
 id: atlas
-title: ATLAS — the system spine, the workshop depicted as diagrams on one page
+title: ATLAS — the system spine, the workshop depicted as diagrams on one page ([D-058](../DECISIONS.md#d-058--2026-07--atlas--the-system-spine-the-workshop-depicted-as-six-diagrams-on-one-page-the-posture-is-the-boards--it-renders-originates-nothing-dated-stamp-least-authoritative-the-prose-governs-every-box-linked-to-its-owning-doctrine-so-a-currency-audit-verifies-it-mechanically-upholds-the-derivation-law-one-home-and-the-weave-rule))
 status: open
 stage: workshop
 branch: docs/atlas
@@ -12,10 +12,13 @@ shipped: —
 
 # atlas — the workshop as diagrams, rendering and originating nothing
 
-**Links:** decision minted on this bench (the next D-number; this
-spec gains the anchor link the commit the entry exists) · queue:
-the founder's 2026-07-27 three-bench mandate (bench 2 of 3, after
-the record shelf, before the chronicle layer).
+**Links:**
+[D-058](../DECISIONS.md#d-058--2026-07--atlas--the-system-spine-the-workshop-depicted-as-six-diagrams-on-one-page-the-posture-is-the-boards--it-renders-originates-nothing-dated-stamp-least-authoritative-the-prose-governs-every-box-linked-to-its-owning-doctrine-so-a-currency-audit-verifies-it-mechanically-upholds-the-derivation-law-one-home-and-the-weave-rule)
+· queue: the founder's 2026-07-27 three-bench mandate (bench 2 of
+3, after the record shelf
+([D-057](../DECISIONS.md#d-057--2026-07--the-record-shelf--the-frozen-record-moves-under-one-roof-docsrecord-is-born-history--specs--decisions-in-memory-stays-living-at-root-the-enabling-ruling--a-mechanical-link-path-segment-repair-inside-a-frozen-file-is-maintenance-not-a-content-edit-append-only-governs-meaning-not-bytes-intra-record-links-resolve-by-construction-upholds-append-only-one-home-and-the-weave-rule),
+[#229](https://github.com/wsher0901/roam/pull/229)), before the
+chronicle layer).
 
 ## Goal
 

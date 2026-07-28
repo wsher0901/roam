@@ -1048,6 +1048,7 @@ never duplicates it.
 | Any decision | [DECISIONS](record/DECISIONS.md) | decide, append-only | never — amendments are new entries |
 | Plan structure | [ROADMAP](ROADMAP.md) | decide-gated PR | structure via D; ticks by ship only |
 | Status · progress · counts | [DASHBOARD](DASHBOARD.md) | ritual repaint, at render time | the repaint IS the upsert; never hand-edited |
+| System map — the workshop as diagrams | [ATLAS](ATLAS.md) | the bench that changes what a diagram depicts | full re-render in that same PR; renders, originates nothing — the prose governs |
 | Unvisited idea | [IDEAS](IDEAS.md) | ritual harvest / micro-PR | promoted out via decide when adopted |
 | Engine rule / OPEN slot fill | [ENGINE](ENGINE.md) | decide | decide — the register shrinks by D-number |
 | Tooling · stack · config inventory | [SETUP](SETUP.md) | ops PR | ops PR; status never (the board's job) |

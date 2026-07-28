@@ -2347,3 +2347,56 @@ moved surfaces, ~1580 links across 158 files — living files gain
 `record/`, frozen files gain one `../`) ·
 [the spec](specs/record-shelf.md) + [its
 memory](history/workshop/definition/record-shelf.md) · this entry.
+
+## D-058 — 2026-07 — ATLAS — the system spine: the workshop depicted as six diagrams on one page; the posture is the board's — IT RENDERS, ORIGINATES NOTHING: dated stamp, least-authoritative, the prose governs, every box linked to its owning doctrine so a currency audit verifies it mechanically (upholds the derivation law, one-home, and the weave rule)
+
+**Decision:** `docs/ATLAS.md` is born — the system spine, six
+mermaid diagrams with one-line captions depicting the workshop on
+one page: the task loop · the file flow · away & return · a
+lane's life · the surfaces · the state surfaces. Its posture is
+[the board](../DASHBOARD.md)'s: IT RENDERS, ORIGINATES NOTHING —
+stamped with its date, least-authoritative, the prose governs on
+any disagreement; beneath every diagram a weave line links each
+doctrine-carrying box to the
+[HOME](../HOME.md)/skill section that owns the doctrine, so a
+currency audit verifies the page mechanically.
+[HOME §Where information goes](../HOME.md#where-information-goes)
+gains exactly ONE routing-table row (system map → ATLAS), whose
+upsert rule doubles as the page's maintenance law: the bench that
+changes what a diagram depicts re-renders the diagram in the same
+PR.
+
+**Why:** the workshop's mechanisms live in prose across LAWS,
+HOME, and nine skills — correct, single-homed, and invisible as a
+whole. A newcomer (or the founder after a week away) has no one
+page that shows the machine's SHAPE: how a task flows, where a
+sitting reads and writes, how leaving and returning connect, what
+a lane's life looks like, who may write what, and where state
+actually lives. Diagrams answer shape questions faster than
+prose — but a second authoritative home would drift, so the atlas
+takes the one posture that cannot: it renders what the prose
+says, links every box to where the doctrine lives, and loses
+every argument with its sources.
+
+**Alternatives rejected:** scattering the diagrams into their
+owning docs — HOME already carries the chooser diagram beside its
+prose and that stays right; a SPINE needs one page, and
+scattering re-creates the exact search problem the atlas exists
+to solve · an authoritative atlas (diagrams as the source of
+doctrine) — two homes for one rule violates
+[one-home](../LAWS.md#knowledge--tracking) and drifts; the
+board's renders-originates-nothing posture already proved the
+safe pattern · auto-generating the diagrams by parsing the docs —
+over-engineering with no stable parse source; the derivation law
+governs values, and composition is judgment · in-diagram
+click-links instead of prose weave lines — links inside mermaid
+fences are stripped by `check-links.mjs` before scanning and
+GitHub's sandboxed mermaid renderer does not honor click
+directives, so the mechanically-verifiable requirement would fail
+on both ends; the weave lines beneath each diagram are what the
+checker and a currency audit can actually read.
+
+**Affects:** `docs/ATLAS.md` (born) ·
+[HOME §Where information goes](../HOME.md#where-information-goes)
+(one row) · [the spec](specs/atlas.md) + its memory (in flight on
+the bench; moves to history at the weld) · this entry.
