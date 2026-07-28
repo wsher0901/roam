@@ -1,20 +1,20 @@
 ---
 type: memory
 id: chronicle-answers
-updated: 2026-07-28 12:26 · birth · work PC
+updated: 2026-07-28 13:04 · drafting batch approved · work PC
 ---
 # chronicle-answers — the nine owed endings become record
 
 ## Status
 
-bench ready — born 2026-07-28 at the work PC, control tower. Spec
-and this stub are the first commits; the draft PR is the public
-window. Next: derive the two derivable items (summon secret names ·
-whether any weld since
-[#213](https://github.com/wsher0901/roam/pull/213) was
-cockpit-seated), then show the founder the full nine-ending draft
-in ONE batch for approval before anything is written into
-[the INDEX](../chronicle/INDEX.md).
+in flight — the founder approved the full drafting batch on
+2026-07-28 (work PC, control tower) with four rulings: item 7
+CLOSE, flag A ADD the row, flag B note-the-dangle, flag C the weld
+repoint. The nine endings and the new Shelf III row are written
+into [the INDEX](../chronicle/INDEX.md); the relaunch brief and the
+answers are below. Next: the three
+[IDEAS](../IDEAS.md) lines and the defect line's closure, then the
+verification loop, the critic, and THE GATE.
 
 ## What this task is
 
@@ -23,24 +23,28 @@ marked nine endings "founder input owed" rather than guessing
 them. The founder answered all nine in the Web ops chat on
 2026-07-28. This bench writes the answers into the record — the
 INDEX's owed register and the shelf rows they touch — plus the
-T3–T6 relaunch brief and three fresh
-[IDEAS](../IDEAS.md) lines. No story is written here; the first
-story weld is its own bench. Contract:
-[the spec](../record/specs/chronicle-answers.md).
+T3–T6 relaunch brief and three fresh [IDEAS](../IDEAS.md) lines.
+No story is written here; the first story weld is its own bench.
+Contract: [the spec](../record/specs/chronicle-answers.md).
 
 ## Pending issues
 
-- **The one interactive item:** the reviewer agent-type
-  registration defect (item 7) — the founder rules close or carry
-  at the drafting batch, and the ruling is what gets written.
 - Tower-authored, so
   [no-solo-approval](../LAWS.md#workflow-non-negotiable) requires
   an external Web review before the founder's word at THE GATE. DO
   NOT MERGE.
+- **A weld step that cannot be forgotten:** this file's links from
+  [the INDEX](../chronicle/INDEX.md) point at the LIVING path
+  (`../memory/chronicle-answers.md`) because that is what
+  `check:links` can resolve while the bench is in flight. The weld
+  moves this file to `record/history/`, so the same weld commit
+  must repoint both links — the register preamble and item 1 — to
+  `../record/history/workshop/definition/chronicle-answers.md`.
+  Recorded in the spec's Plan as an explicit step.
 
 ## Left / idle
 
-nothing — the bench is at its first step.
+nothing parked.
 
 ## The story
 
@@ -52,14 +56,176 @@ the census's honesty rule was that an underivable ending reads
 so the answers are the only thing that can fill them — and the
 same honesty runs forward: where the founder said "not sure", the
 ending records uncertainty rather than rounding it to yes or no.
+Three of the nine settled exactly that way.
+
+### The nine answers, as given (Web ops chat, 2026-07-28)
+
+1. **T3–T6 batch-1:** "The initial parallel cloud session failed.
+   So, I will most likely start from scratch."
+2. **land:** never run — "I don't think so."
+3. **The summon secrets:** unsure; never tested.
+4. **[D-048](../record/DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)
+   rungs 2b/5:** never tested — "we were not able to emulate
+   this."
+5. **[D-051](../record/DECISIONS.md#d-051--2026-07--self-seat-birth--liftoff-fires---cloud-blind-and-the-cockpit-seats-itself-by-its-env-derived-self-url-the-console-attach-launcher-is-retired-amends-d-047s-rung-1-mechanics-as-corrected-by-193-upholds-d-049-and-board-governs)
+   self-seat birth:** not sure it has flown.
+6. **go-remote:** never used — "unsure whether this will ever be
+   useful given that if cloud works fine, it is superior."
+7. **The reviewer registration defect:** the founder did not know
+   what it referred to — so the bench explained it and asked.
+8. **The manual acts:** vault lens applied on the work PC
+   2026-07-28 (home PC still owed); WEB-INSTRUCTIONS box
+   re-pasted 2026-07-28.
+9. **The chronicle layer:** settled — confirmed.
+
+### What the bench derived, so the founder did not have to
+
+Two answers were "not sure", and two of those were mechanically
+answerable:
+
+- **The summon secrets (item 3).** `gh secret list` returns
+  exactly the two names `.github/workflows/summon.yml` reads:
+  `COCKPIT_FIRE_TOKEN` and `COCKPIT_ROUTINE_ID`, both created
+  2026-07-22. Names only — no value was read, printed, or written
+  anywhere. So the workflow is armed on paper; whether the values
+  work is a different question, and nothing has ever fired it.
+- **The self-seat birth (item 5).** Every weld since
+  [#213](https://github.com/wsher0901/roam/pull/213) — #216, #218,
+  #221, #223, #225, #229, #231, #233 — carries a ground-seat stamp
+  (home PC or work PC). No cockpit ever seated itself on the
+  board, so the record is as uncertain as the founder is, and the
+  ending says "no confirmed flight" rather than inventing either
+  answer.
+
+### The one interactive item: the reviewer defect, CLOSED
+
+The defect, from the record: on 2026-07-17 the `reviewer`
+agent-type failed to register inside a running session (the Agent
+tool reported it not found), and after a second recurrence the
+same day it was graduated from gotcha to defect, with ship's
+critic step falling back to a general-purpose agent. It has not
+recurred since — native runs at
+[#175](https://github.com/wsher0901/roam/pull/175) (the first
+native registration), again 2026-07-24, and at all three benches
+of the 07-27 queue
+([#229](https://github.com/wsher0901/roam/pull/229) ·
+[#231](https://github.com/wsher0901/roam/pull/231) ·
+[#233](https://github.com/wsher0901/roam/pull/233)), each with a
+critic round on record.
+
+The founder's ruling: **CLOSE.** Five clean native registrations
+are the confirmation the standing inbox line asked for. The
+fallback path stays documented in
+[ship §6](../skills/ship.md#6--the-gate), which is the re-open
+route if it ever recurs — so closing the line loses nothing.
+
+### THE T3–T6 RELAUNCH BRIEF
+
+**The decision: RELAUNCH FROM SCRATCH.** No salvage, no partial
+adoption — [V1.S1](../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
+T3–T6 are re-planned as new work when phase 3 opens. The ROADMAP's
+unticked boxes already tell that truth, so nothing is ticked or
+un-ticked here.
+
+**What the record actually knows about the failure.** The founder
+recalls only that the cloud sessions failed. The record holds the
+vehicle's post-mortem
+([D-020](../record/DECISIONS.md#d-020--2026-07--parallel-lanes-v2-native-lanes-replace-hand-built-orchestration):
+bundle-seeded sandboxes could not push; T3+T5 work destroyed) and
+the fix-routing triage
+([D-018](../record/DECISIONS.md#d-018--2026-06--fix-routing-triage-after-lane-review-extends-d-017)).
+T4 and T6 were never even recorded as failed. That is the whole of
+it — nothing else about why these four lanes died is derivable,
+and nothing is invented here.
+
+**One dangling pointer, found while checking that evidence.** The
+double-dispatch diagnostic is no longer in
+[IDEAS](../IDEAS.md) — it was compacted away when IDEAS became an
+inbox-not-archive
+([D-050](../record/DECISIONS.md#d-050--2026-07--session-lifecycle--closed--dead-the-close-locks-wall-softens-to-injected-read-only-doctrine-interrupt-capture-is-standing-format-the-claude-residue-sweep-is-pickup-hygiene-ideas-is-an-inbox-not-an-archive-amends-the-d-046-era-close-wall-design-upholds-the-park-protocol-and-no-solo-approval)) —
+yet both
+[D-042](../record/DECISIONS.md#d-042--2026-07--lane-liveness--derive-live-vs-reclaimable-from-the-commit-heartbeat-read-it-at-claim-check-and-session-start-cleanup-so-a-live-lane-is-never-adopted-or-pruned-amends-the-claim-check-clause-and-pickup-3-upholds-the-wake-lock-and-seat-invariance)
+and
+[the lane-liveness story](../record/history/workshop/mechanism/lane-liveness.md)
+still point at IDEAS for it. Both are frozen record and cannot be
+edited, so the pointer stays dangling and is recorded here rather
+than repaired. It is NOT called an open diagnostic: it is a
+pointer with nothing behind it, and it carries no weight as
+evidence for the relaunch.
+
+**THE AUDIT RIDERS** — from the external reviewer's product
+re-evaluation, carried into the relaunch. Each is marked
+**verify licenses at spike**:
+
+- **T4 · Feasibility** — *verify licenses at spike.* Google-class
+  sources may serve display-time rungs but NEVER enter the asset
+  layer: that collides with the license-segmented storage law
+  ([D-015](../record/DECISIONS.md#d-015--2026-06--data-asset-law-bitemporal-append-only-license-segmented)).
+  The asset layer builds on Overture Maps / Foursquare OS Places /
+  OSM plus first-party data, and demo destinations are chosen by
+  data coverage rather than by wish.
+- **T5 · Time & transport** — *verify licenses at spike.* V1
+  scopes to route existence
+  ([F-TT-02](../data/FACTS.md#f-tt-02--route-existence-)) plus
+  typical block times, at rung 3–4 and labeled as such.
+  Schedule-level flight data
+  ([F-TT-03](../data/FACTS.md#f-tt-03--flight-schedule-blocks-))
+  moves to V3-with-budget; backward-chained departure logistics
+  needs no schedule API.
+- **T6 · Crowds & calendar** — *verify licenses at spike.*
+  [F-CC-06](../data/FACTS.md#f-cc-06--venue-busyness-curves-)
+  busyness lands as C-grade curated curves — venue-type × day ×
+  season, built the way
+  [F-WX-13](../data/FACTS.md#f-wx-13--activity-weather-sensitivity-profiles-15-types)
+  is built, and ours.
+- **T3 · Sky & sea** — *verify licenses at spike.*
+  [F-SS-04](../data/FACTS.md#f-ss-04--tide-tables-) tides
+  pre-accepts B-grade: US and major ports verified, everywhere
+  else labeled.
+
+### The founder's sequencing order (standing, 2026-07-28)
+
+- **PHASE 1 — SETTLE & TEST:** this bench, then the first-story
+  shakedown flight (blind cockpit birth · the fence /
+  [land](../skills/land.md) MODE P ·
+  [pickup](../skills/pickup.md#6--fleet-resume-on-the-founders-answer)
+  fleet-resume · land MODE R). Items 2 and 5 get their test here.
+- **PHASE 2 — THE VAULT:** chronicle story lanes plus a
+  connections-and-content polish pass; the phase opens with the
+  founder's scope ruling — all 66 stories, or the load-bearing
+  dozen first.
+- **PHASE 3 — ROAM:**
+  [V1.S1](../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
+  T3–T6 relaunch from scratch (the brief above, audit riders
+  included) plus
+  [V1.S2.T5](../ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)
+  design foundations. T3–T6 does not start before phases 1–2
+  close.
+
+The order goes on the board at the ship tail, under Now/Next.
+
+### The founder's four rulings on the drafting batch
+
+The batch was shown in one piece before anything was written, per
+the mandate. The rulings: **item 7 CLOSE** (above); **flag A ADD**
+— the chronicle layer is settled and the ending rule says settled
+means written, so it earns its own Shelf III row and the census
+restamps 65 → 66; **flag B** — the dangling double-dispatch
+pointer is noted plainly and the diagnostic is NOT called open, no
+fourth IDEAS line; **flag C** — living link now, repoint as an
+explicit weld step. Everything else approved as drafted.
 
 ## Where to look
 
-- [the spec](../record/specs/chronicle-answers.md) — the contract.
-- [the census](../chronicle/INDEX.md) — the nine live in
-  [§Founder input owed](../chronicle/INDEX.md#founder-input-owed).
+- [the spec](../record/specs/chronicle-answers.md) — the contract,
+  including the weld's repoint step.
+- [the census](../chronicle/INDEX.md) — the nine endings live in
+  [§Founder input owed](../chronicle/INDEX.md#founder-input-owed);
+  nine shelf rows changed and one was added.
 - [the census bench](../record/history/workshop/definition/chronicle-layer.md)
   ([#233](https://github.com/wsher0901/roam/pull/233)) — how the
   nine were arrived at, and the per-shelf team captures.
+- [IDEAS](../IDEAS.md) — three new 2026-07-28 lines; the 07-17
+  reviewer defect line closed citing this bench.
 - the Web ops chat, 2026-07-28 — the founder's answers, quoted
-  into this memory when the batch is approved.
+  above.

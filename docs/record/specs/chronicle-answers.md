@@ -81,6 +81,17 @@ that.
    precedes the founder's word. The ship tail's board repaint
    carries the founder's standing three-phase order and the two
    Needs-you corrections.
+8. **AT THE WELD, an extra step beyond
+   [ship §7](../../skills/ship.md#7--on-approval--the-atomic-weld):**
+   [the INDEX](../../chronicle/INDEX.md) links to this bench's
+   memory TWICE — the §Founder input owed preamble and item 1 —
+   at the LIVING path `../memory/chronicle-answers.md`, because
+   that is the only path `check:links` can resolve while the
+   bench is in flight. The weld commit moves the memory to
+   `record/history/`, so the SAME commit repoints both links to
+   `../record/history/workshop/definition/chronicle-answers.md`.
+   Missing this turns the weld's own Actions run red — which is
+   the net, but the repair belongs in the weld commit itself.
 
 ## Done means
 
@@ -106,6 +117,9 @@ that.
       three-phase sequencing order.
 - [ ] Three dated 2026-07-28 lines exist in
       [IDEAS](../../IDEAS.md), woven per the weave rule.
+- [ ] The chronicle layer carries its own Shelf III census row
+      (the founder's 2026-07-28 ruling), and the census count is
+      restamped 65 → 66 wherever the INDEX states it.
 - [ ] Files touched: nothing outside
       [the INDEX](../../chronicle/INDEX.md), this bench's memory,
       this spec, [IDEAS](../../IDEAS.md), and

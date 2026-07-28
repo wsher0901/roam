@@ -67,7 +67,18 @@ whole.
   [#159](https://github.com/wsher0901/roam/pull/159) rule; the
   synchronous general-purpose fallback carries ship §6
   ([ship-wiring story](record/history/workshop/mechanism/ship-wiring.md));
-  diagnose post-flight.
+  diagnose post-flight. CLOSED 2026-07-28 on the founder's word,
+  the confirmation this line asked for being five clean native
+  registrations —
+  [#175](https://github.com/wsher0901/roam/pull/175), 2026-07-24,
+  and all three benches of the 07-27 queue
+  ([#229](https://github.com/wsher0901/roam/pull/229) ·
+  [#231](https://github.com/wsher0901/roam/pull/231) ·
+  [#233](https://github.com/wsher0901/roam/pull/233)). The
+  general-purpose fallback stays documented in
+  [ship §6](skills/ship.md#6--the-gate) as the re-open path if it
+  recurs. Closing artifact:
+  [the answering bench](memory/chronicle-answers.md).
 - 2026-07-16 (Claude Code, maiden-flight-report): a separate bot
   identity for lane speech (optional) — lane comments currently
   post as the founder's own account, which blurs who is talking on
@@ -325,7 +336,8 @@ whole.
   `reviewer` agent-type registered and ran cleanly in-session on
   2026-07-24 (work PC), which the 2026-07-17 defect line above
   says it could not — the defect may be gone; confirm before
-  closing it.
+  closing it. (Confirmed and closed 2026-07-28 — see the defect
+  line above.)
 - 2026-07-24 (the founder, the guardrail audit —
   [D-053](record/DECISIONS.md#d-053--2026-07--guardrail-audit--the-harness-found-already-at-best-practice-against-anthropics-guidance-two-promotions-ship-the-verification-loop-as-a-copy-runnable-block-in-laws-two-stub-descriptions-sharpened-five-alternatives-rejected-with-reasons-upholds-the-routing-law-and-one-home)):
   the four ~300-character decide-anchor links in
@@ -369,3 +381,28 @@ whole.
   whether Opus 5 honors it before any touch of the
   [D-054](record/DECISIONS.md#d-054--2026-07--the-landing-skill--how-a-flight-ends-becomes-a-first-class-ritual-one-skill-with-two-modes-routed-by-fleet-state-retire--pause-and-transfer-the-fence-is-a-commit-so-the-resume-point-is-the-branch-tip-by-construction-wake-lock-mediated-with-its-honesty-clause-the-board-is-the-single-transfer-material-pickup-gains-the-fleet-resume-ask-and-its-cap-arithmetic-sessions-are-cattle-branches-are-the-work-charter-rule-6-becomes-a-pointer-the-effort-doctrine-moves-to-opus-5--xhigh-upholds-the-wake-lock-the-park-protocol-and-one-home-supersedes-the-opus-48-reliance-pair)
   effort doctrine.
+- 2026-07-28 (the founder + the external reviewer, ops chat):
+  THE S3.T1 PAIR — when the check contract is born
+  ([V1.S3](ROADMAP.md#v1s3--engine-core--two-families-deep) T1),
+  rule both halves by D-number in one decide. (a) THE EVAL-SET
+  GATE, filling
+  [ENGINE](ENGINE.md#12-open-register)'s OPEN-9: a ~50-trip golden
+  set with hand-checked ground truth, its calibration read before
+  [V1.S4](ROADMAP.md#v1s4--suggest) opens. (b) THE LLM-BOUNDARY
+  RULE, a new open-register slot (OPEN-10 as the next free
+  number): the LLM resolves LANGUAGE at Intake and phrases at
+  Render, and never originates a fact, a score, or a rank.
+- 2026-07-28 (the founder + the external reviewer, ops chat):
+  DECIDE TAGS — candidate convention: every new
+  [DECISIONS](record/DECISIONS.md) heading opens with `[product]`
+  or `[workshop]`, forward-only, since append-only leaves existing
+  entries untouched. Rule it at the next product decide.
+- 2026-07-28 (the founder + the external reviewer, ops chat):
+  GO-REMOTE RETIREMENT QUESTION — the founder, 2026-07-28: never
+  used; "if cloud works fine, it is superior." Decide
+  keep-as-backstop vs retire AFTER the cloud path is proven in a
+  real flight — not before, since retiring the backstop while its
+  replacement is unproven leaves nothing beneath.
+  → [go-remote](skills/go-remote.md) ·
+  [D-046](record/DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+  (the demotion).
