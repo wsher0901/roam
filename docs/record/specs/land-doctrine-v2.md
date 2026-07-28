@@ -127,11 +127,14 @@ Three, all disclosed at the gate:
    case is a superseded GROUND tower leading a TEAM, and a
    cockpit never leads one, so the team-findings gap survives.
    The closure cites D-061 for the road it does close and names
-   what remains.
+   what remains. SUPERSEDED WITHIN THIS BENCH: the external
+   review directed the generalization, D-062 landed, and the
+   line is now CLOSED in full — see Open questions.
 
 ## Open questions
 
-One, for the founder: generalizing the tombstone wake-rule to ANY
-superseded seat would close the IDEAS line properly. That is a
-further LAWS amendment rather than a sweep, so it was not taken
-here.
+none — the one that stood at the first flip (whether to generalize
+the tombstone wake-rule to ANY superseded seat) WAS TAKEN on this
+same bench, at the external review's direction: it is
+[D-062](../DECISIONS.md#d-062--2026-07--the-wake-rule-generalized--any-superseded-seat-exits-by-its-own-closing-ritual-never-bare-a-cockpit-by-the-landing-ritual-a-ground-control-tower-by-capture-then-close-with-team-findings-captured-first-no-superseded-seat-writes-a-board-because-the-baton-has-already-moved-closes-d-056s-deferred-road-in-full-upholds-d-056-and-d-061),
+which closes the [IDEAS](../../IDEAS.md) line in full.
