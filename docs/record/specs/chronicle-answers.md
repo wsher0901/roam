@@ -95,46 +95,64 @@ that.
 
 ## Done means
 
-- [ ] All nine entries in
+- [x] All nine entries in
       [§Founder input owed](../../chronicle/INDEX.md#founder-input-owed)
       carry an ending traceable to the founder's 2026-07-28 answers
       or to a named derivation; none is invented, and every "not
       sure" reads as uncertainty rather than a resolved state.
-- [ ] Every shelf row the answers touch carries the matching
+- [x] Every shelf row the answers touch carries the matching
       ending and confidence; rows unaffected by the answers are
       untouched.
-- [ ] Item 3's ending names which summon-required secrets exist by
+- [x] Item 3's ending names which summon-required secrets exist by
       NAME, derived from `gh secret list` — no value anywhere.
-- [ ] Item 5's ending states "no confirmed flight", derived from
+- [x] Item 5's ending states "no confirmed flight", derived from
       the weld stamps since
       [#213](https://github.com/wsher0901/roam/pull/213).
-- [ ] Item 7 carries the founder's ruling; if closed, the standing
+- [x] Item 7 carries the founder's ruling; if closed, the standing
       [IDEAS](../../IDEAS.md) confirm-line closes citing this
       bench.
-- [ ] Items 2 · 4 · 5 · 6 each name where their test lives.
-- [ ] The memory carries the T3–T6 relaunch brief with all four
+- [x] Items 2 · 4 · 5 · 6 each name where their test lives.
+- [x] The memory carries the T3–T6 relaunch brief with all four
       audit riders, each marked "verify licenses at spike", and the
       three-phase sequencing order.
-- [ ] Three dated 2026-07-28 lines exist in
+- [x] Three dated 2026-07-28 lines exist in
       [IDEAS](../../IDEAS.md), woven per the weave rule.
-- [ ] The chronicle layer carries its own Shelf III census row
+- [x] The chronicle layer carries its own Shelf III census row
       (the founder's 2026-07-28 ruling), and the census count is
       restamped 65 → 66 wherever the INDEX states it.
-- [ ] Files touched: nothing outside
+- [x] Files touched: nothing outside
       [the INDEX](../../chronicle/INDEX.md), this bench's memory,
       this spec, [IDEAS](../../IDEAS.md), and
       [DASHBOARD](../../DASHBOARD.md) via the ship tail.
-- [ ] `check:links` · `check:ledger` · `check:memory` · lint ·
+- [x] `check:links` · `check:ledger` · `check:memory` · lint ·
       format · test · build green locally; the pushed head's
       Actions run green; ship §6 critic run.
 
 ## Deviations
 
-<filled by ship>
+Two, both ruled by the founder at the drafting batch and neither a
+departure from the goal:
+
+1. **A row was ADDED, not just updated.** The chronicle layer had
+   an owed ending but no census row — the census enumerated what
+   existed before it. On the founder's ruling it took its own
+   Shelf III row, since the ending rule says a settled item's
+   story gets written, and the census restamped 65 → 66. The plan
+   had assumed the answers would only rewrite existing rows.
+2. **One finding surfaced while checking the founder's item-1
+   evidence:** the double-dispatch diagnostic is no longer in
+   [IDEAS](../../IDEAS.md) (compacted away at
+   [D-050](../DECISIONS.md#d-050--2026-07--session-lifecycle--closed--dead-the-close-locks-wall-softens-to-injected-read-only-doctrine-interrupt-capture-is-standing-format-the-claude-residue-sweep-is-pickup-hygiene-ideas-is-an-inbox-not-an-archive-amends-the-d-046-era-close-wall-design-upholds-the-park-protocol-and-no-solo-approval)),
+   while
+   [D-042](../DECISIONS.md#d-042--2026-07--lane-liveness--derive-live-vs-reclaimable-from-the-commit-heartbeat-read-it-at-claim-check-and-session-start-cleanup-so-a-live-lane-is-never-adopted-or-pruned-amends-the-claim-check-clause-and-pickup-3-upholds-the-wake-lock-and-seat-invariance)
+   and the frozen lane-liveness story still point at IDEAS for it.
+   Both pointers are frozen record and cannot be repaired. On the
+   founder's ruling the bench memory notes the dangle plainly and
+   does NOT call the diagnostic open; no fourth IDEAS line was
+   spent.
 
 ## Open questions
 
-One, and it is the bench's single interactive step: the reviewer
-agent-type registration defect — close it or carry it open. The
-founder rules at the drafting batch; the ruling is written into
-item 7's ending.
+none — the bench's single interactive step (the reviewer
+agent-type registration defect) was ruled CLOSE by the founder on
+2026-07-28, and that ruling is written into item 7's ending.

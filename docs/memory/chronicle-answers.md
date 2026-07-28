@@ -1,20 +1,23 @@
 ---
 type: memory
 id: chronicle-answers
-updated: 2026-07-28 13:04 · drafting batch approved · work PC
+updated: 2026-07-28 12:49 · ship · work PC
 ---
 # chronicle-answers — the nine owed endings become record
 
 ## Status
 
-in flight — the founder approved the full drafting batch on
+complete, awaiting merge — everything the mandate asked for is
+written and pushed. The founder approved the full drafting batch on
 2026-07-28 (work PC, control tower) with four rulings: item 7
 CLOSE, flag A ADD the row, flag B note-the-dangle, flag C the weld
-repoint. The nine endings and the new Shelf III row are written
-into [the INDEX](../chronicle/INDEX.md); the relaunch brief and the
-answers are below. Next: the three
-[IDEAS](../IDEAS.md) lines and the defect line's closure, then the
-verification loop, the critic, and THE GATE.
+repoint. All nine endings, the nine changed shelf rows and the new
+Shelf III one, the census restamp 65 → 66, the T3–T6 relaunch
+brief, the three [IDEAS](../IDEAS.md) lines and the defect line's
+closure are in. Four files touched, none outside the declared set;
+the full CI mirror is green locally. Awaiting the external Web
+review the no-solo-approval law requires of a tower-authored
+payload, then the founder's word.
 
 ## What this task is
 
