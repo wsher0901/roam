@@ -1,23 +1,29 @@
 ---
 type: memory
 id: chronicle-layer
-updated: 2026-07-27 21:26 · the landing (D-059 + ripple + INDEX) · home PC
+updated: 2026-07-27 21:20 · ship pass (complete, awaiting merge) · home PC
 ---
 
 # chronicle-layer — the story layer is decided; the census drafts its shelves
 
 ## Status
 
-In work at the control tower — home PC, born 2026-07-27 20:52;
-landing 21:26. Bench 3 of the founder's three-bench queue (record
-shelf ✓ [#229](https://github.com/wsher0901/roam/pull/229) →
-ATLAS ✓ [#231](https://github.com/wsher0901/roam/pull/231) →
-chronicle layer). All three team captures are pushed (`f955ac5`
-and before); shutdown was requested from all three teammates BY
-NAME at 21:14, after the captures were on origin — responses are
-reported in The story as they arrive (shutdown is not instant).
-The landing commit carries D-059 + its ripple + the census INDEX.
-No story is written on this bench.
+complete, awaiting merge — 2026-07-27 21:20, home PC. Bench 3 of
+the founder's three-bench queue (record shelf ✓
+[#229](https://github.com/wsher0901/roam/pull/229) → ATLAS ✓
+[#231](https://github.com/wsher0901/roam/pull/231) → chronicle
+layer; born 20:52 this sitting). All three team captures are
+pushed (`f955ac5` and before); shutdown was requested from all
+three teammates BY NAME at 21:14, AFTER the captures were on
+origin; by this ship pass no teammate had sent an explicit
+shutdown response — named plainly per the not-instant honesty
+clause rather than smoothed into a clean exit, with the risk
+bounded: all three are read-only agents whose deliverables were
+already captured, and none can write to the tree. The landing
+commit carries the decide + its ripple + the census INDEX. No
+story is written on this bench. At THE GATE — no merge without
+the founder's word; the census rides the gate report for the
+veto.
 
 ## What this task is
 
@@ -39,9 +45,12 @@ none
 
 ## Left / idle
 
-The teammates' shutdown responses (requested 21:14, not instant —
-reported in The story as they arrive), verification, the critic,
-and the gate report carrying the census for the veto.
+The founder's veto over the census, the weld, and the tail
+repaint. One ruling owed (the HOME catalog row for chronicle/ —
+the ATLAS precedent) and one open honesty note: the teammates'
+shutdown responses had not arrived by gate time (requested 21:14;
+read-only agents, deliverables captured and pushed first, so
+nothing can write).
 
 ## The story
 
@@ -315,6 +324,23 @@ the pacing law · the micro-PR carve-out · the Design surface
 (DESIGN-KICKOFF) — added to the census by the lead, shelved
 under the information system (ship · pickup · micro-PRs) and
 Roam (Design), flagged for the founder's veto.
+
+### The critic round (ship, pre-gate)
+
+The reviewer verified the census honesty on eleven spot-checks
+across all four shelves (the T3–T6 arc confirmed ending-free),
+proved the capture-before-shutdown order from the push log, and
+confirmed record/ untouched except the decide append. Its
+findings, folded: the INDEX header compressed from a six-ruling
+restatement to a pointer plus the two operational rules
+(one-home); the narrative-layer row re-stamped as a dated census
+figure (a typed derived count, and stale by one — the shelf holds
+99); this diary Status moved to the vocabulary state and its
+stamp corrected to an honest clock read (the 21:26 stamp was
+typed, not read — exactly the derivation-law clause); two bare
+decide mentions reworded or woven. NOT taken, surfaced for the
+founder instead: the HOME catalog row for chronicle/ (the
+ATLAS-precedent ruling).
 
 ## Where to look
 

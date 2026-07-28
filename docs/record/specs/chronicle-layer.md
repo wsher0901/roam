@@ -75,26 +75,41 @@ veto.
 
 ## Done means
 
-- [ ] The D-number entry exists with all six rulings verbatim in
+- [x] The D-number entry exists with all six rulings verbatim in
       substance, anchors born resolving.
-- [ ] `docs/chronicle/INDEX.md` exists as a draft census — four
+- [x] `docs/chronicle/INDEX.md` exists as a draft census — four
       shelves, every proposal carrying item · span · one-sentence
       ending · confidence; underivable endings marked "founder
       input owed" (the T3–T6 batch-1 arc among them).
-- [ ] [HOME](../../HOME.md) carries exactly ONE new routing-table
+- [x] [HOME](../../HOME.md) carries exactly ONE new routing-table
       line; the [IDEAS](../../IDEAS.md) 07-23 line is closed
       citing the decide.
-- [ ] The team's findings are captured in the bench memory; the
-      team was shut down by name with each teammate's return
-      reported (no live team outlives the sitting).
-- [ ] Full CI mirror green; the pushed head's Actions run green;
+- [x] The team's findings are captured in the bench memory
+      (pushed BEFORE the shutdown requests, per the external
+      reviewer's sequencing correction); shutdown requested from
+      each teammate by name, each return reported — the
+      no-response state at gate time named honestly in the
+      memory Status.
+- [x] Full CI mirror green; the pushed head's Actions run green;
       ship §6 critic run. record/ untouched except the DECISIONS
-      append.
+      append (verified by the critic against the branch diff).
 
 ## Deviations
 
-<filled by /ship: anything done differently than planned — or
-"none">
+none in the plan itself; disclosed at the gate: (1) the critic
+found the INDEX header restating all six rulings — a living copy
+of a frozen entry — compressed to a pointer plus the two rules
+its reader operates by (one-home); (2) one typed derived count in
+the census ("98 stories") re-stamped as a dated census figure per
+the derivation law, and one memory stamp corrected to an honest
+clock read; (3) `docs/chronicle/` has a routing row but no row in
+[HOME §The files](../../HOME.md#the-files--what-each-one-is-for)'s
+catalog — the mandate's one-routing-line cap excluded it, the
+exact class the founder licensed for ATLAS at its external
+review; surfaced for the same ruling; (4) the teammates' shutdown
+responses had not arrived by gate time — reported honestly, risk
+bounded (read-only agents, deliverables already captured and
+pushed).
 
 ## Open questions
 
