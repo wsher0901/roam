@@ -74,33 +74,64 @@ full-copy and changelog laws.
 
 ## Done means
 
-- [ ] The master's fence carries the v6 text byte-faithful — no
+- [x] The master's fence carries the v6 text byte-faithful — no
       reconstruction, no silent carry-over; every section the new
       text drops is named in the memory and at the gate.
-- [ ] The file keeps its frontmatter and header prose, and gains
+- [x] The file keeps its frontmatter and header prose, and gains
       a `## Version history` table with the v4, v5 and v6 rows,
       v6's date read from the clock and its vehicle this PR.
-- [ ] [HOME §Response doctrine](../../HOME.md#response-doctrine)
+- [x] [HOME §Response doctrine](../../HOME.md#response-doctrine)
       carries the seven rules with the v6 text's numbering and
       wording, its framing lines intact, and both D-numbers in
       Sources.
-- [ ] The D-number exists with Decision · Why · Alternatives
+- [x] The D-number exists with Decision · Why · Alternatives
       rejected · Affects, anchors resolving, and its Affects line
       matches the edits actually made.
-- [ ] One dated 2026-07-28 [IDEAS](../../IDEAS.md) line carries
+- [x] One dated 2026-07-28 [IDEAS](../../IDEAS.md) line carries
       all three of the founder's report requirements.
-- [ ] Files touched: nothing outside
+- [x] Files touched: nothing outside
       [WEB-INSTRUCTIONS](../../WEB-INSTRUCTIONS.md),
       [HOME](../../HOME.md), [DECISIONS](../DECISIONS.md),
       [IDEAS](../../IDEAS.md), this spec, and this bench's memory.
-- [ ] `check:links` · `check:ledger` · `check:memory` · lint ·
+- [x] `check:links` · `check:ledger` · `check:memory` · lint ·
       format · test · build green; Actions green on the pushed
       head; ship §6 critic run.
 
 ## Deviations
 
-<filled by ship>
+1. **THE GAP — two v5 sections the v6 text does not carry.** The
+   approved text drops `## Conversation & pacing` and `## Style`
+   entirely. Flagged, never reconstructed, per the mandate and the
+   [#80](https://github.com/wsher0901/roam/pull/80) precedent; the
+   full content, what survives elsewhere, and what survives
+   nowhere are in the bench memory, and the founder rules at THE
+   GATE.
+2. **THE SANCTIONED RESTATEMENT, recorded as
+   [#216](https://github.com/wsher0901/roam/pull/216) recorded
+   it.** The v6 box carries all seven doctrine rules verbatim
+   while [HOME](../../HOME.md#response-doctrine) says "Rituals and
+   charters REFERENCE this section; none copies it." This is the
+   same exemption v5 was granted: the Web box is an OFFLINE
+   surface pasted into another product, so it cannot follow a
+   link, and the one-home rule is judged against LIVING prose.
+   Recorded here so the copy is on the record with a ruling
+   attached rather than standing bare — and it is now
+   byte-identical to HOME, which is the condition that keeps the
+   exemption honest.
+3. **Byte-faithfulness is asserted by the bench and NOT
+   independently verified here.** The ship §6 critic had no shell
+   and could not diff against `main`; it confirmed no paraphrase
+   seams and that every internal cross-reference resolves, and the
+   bench confirmed the structural invariants mechanically. The
+   independent byte-check belongs to the external Web review,
+   which holds the founder's own copy of the approved text.
 
 ## Open questions
 
-none at birth.
+Three, all outside this bench's files and none silently fixed —
+the founder rules: (1) [the census](../../chronicle/INDEX.md)
+carries three statements this weld falsifies, though ship has no
+chronicle step yet; (2) the cockpit charter's rule 5 still glosses
+doctrine v1's clauses; (3) the supplied v6 text uses ⏳ for
+"queued", a glyph outside doctrine rule 7's own set. Detail in the
+bench memory's critic round.
