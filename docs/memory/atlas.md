@@ -1,21 +1,22 @@
 ---
 type: memory
 id: atlas
-updated: 2026-07-27 20:27 · payload landed · home PC
+updated: 2026-07-27 20:31 · ship (complete, awaiting merge) · home PC
 ---
 
 # atlas — the workshop as diagrams, rendering and originating nothing
 
 ## Status
 
-In work at the control tower — home PC, born 2026-07-27 20:20;
-payload landed 20:27. Bench 2 of the founder's three-bench queue
-(record shelf ✓ → ATLAS → chronicle layer); bench 1 welded as
-[#229](https://github.com/wsher0901/roam/pull/229) earlier this
-sitting. The page, the
+Complete, awaiting merge — 2026-07-27 20:31, home PC. Bench 2 of
+the founder's three-bench queue (record shelf ✓
+[#229](https://github.com/wsher0901/roam/pull/229) → ATLAS →
+chronicle layer). The page, the
 [D-058](../record/DECISIONS.md#d-058--2026-07--atlas--the-system-spine-the-workshop-depicted-as-six-diagrams-on-one-page-the-posture-is-the-boards--it-renders-originates-nothing-dated-stamp-least-authoritative-the-prose-governs-every-box-linked-to-its-owning-doctrine-so-a-currency-audit-verifies-it-mechanically-upholds-the-derivation-law-one-home-and-the-weave-rule)
-entry, and HOME's one routing row are in; verification and the
-critic next, then the gate.
+entry, and HOME's one routing row are in; every local gate green
+(links 3171/0 · ledger 98↔98 · memory valid · lint · format ·
+tests · build). At THE GATE — no merge without the founder's
+word.
 
 ## What this task is
 
