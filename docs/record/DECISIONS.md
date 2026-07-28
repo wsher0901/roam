@@ -2400,3 +2400,74 @@ checker and a currency audit can actually read.
 [HOME §Where information goes](../HOME.md#where-information-goes)
 (one row) · [the spec](specs/atlas.md) + its memory (in flight on
 the bench; moves to history at the weld) · this entry.
+
+## D-059 — 2026-07 — the chronicle layer — living stories above the frozen record: ONE STORY PER ITEM; the ending rule — settled in any format means the story is written, a later fix is INCORPORATED and the ending rewritten at that weld, retirement is a settlement; docs/chronicle/ one file per story, INDEX.md shelving four shelves; immutability beneath — record/ untouched, stories link DOWN as footnotes; down-links only — a story never cites another story's prose; supersedes the 07-23 three-chapter shape (the ship synthesis-at-weld step deferred to the first story weld)
+
+**Decision:** the chronicle layer exists, governed by the
+founder's six rulings (ops chat, 2026-07-27), recorded verbatim
+in substance:
+
+1. UNIT — one living story per ITEM: an event, a system piece
+   (skill, command, instruction, architecture, workflow), or a
+   Roam piece (feature, change, decision). Each story tells: the
+   item · the events that raised it · the changes and actions in
+   order · what it ended up as.
+2. ENDING RULE — settled in ANY format ⇒ the story is written. A
+   later fix to the same item is INCORPORATED into the existing
+   story and the ending rewritten at that weld — never a second
+   story. Retirement is a settlement like any other.
+3. STRUCTURE — `docs/chronicle/`, one file per story;
+   `docs/chronicle/INDEX.md` shelves them — the away surface ·
+   the lane system · the information system · Roam.
+4. IMMUTABILITY BENEATH — `record/` stays untouched; stories
+   link DOWN into it as footnotes.
+5. DOWN-LINKS ONLY — a story never cites another story's prose;
+   cross-references ride decide anchors or ledger lines.
+6. SUPERSEDES the three-chapter shape queued in
+   [IDEAS](../IDEAS.md) on 2026-07-23 — that line closes citing
+   this decide.
+
+Deferred by the founder's ruling to the first story weld: the
+ship-ritual synthesis-at-weld step (its own bench, touching
+[ship](../skills/ship.md)). This bench writes NO story: it births
+`chronicle/INDEX.md` as a DRAFT census — the proposed story list,
+each entry carrying item · span · one-sentence current ending ·
+confidence, underivable endings marked "founder input owed" — for
+the founder's veto at the gate.
+
+**Why:** the record is complete and tells no thread. git holds
+every diff, [record/history/](history/README.md) every shipped
+narrative, [DECISIONS](DECISIONS.md) every choice — but the READER
+who asks "what is the cockpit and how did it come to work this
+way?" must reassemble the answer from a dozen frozen files every
+time. A story layer answers thread-shaped questions once, and the
+ending rule keeps it honest: because every story names its
+CURRENT ending, a later weld has exactly one place to rewrite,
+and the layer can stay living without ever touching the frozen
+sources beneath it. One story per ITEM (not per chapter) is what
+makes the rewrite duty tractable — an item can SETTLE, a chapter
+never does.
+
+**Alternatives rejected:** the three-chapter shape (the 07-23
+IDEAS line — the away surface, the lane system, the information
+system as three mega-narratives) — a chapter-scale unit never
+settles, so the rewrite duty would fire at every weld and each
+rewrite would churn a whole chapter; the founder's ruling keeps
+the three threads as SHELVES and moves the story unit down to the
+item, which settles · stories inside `record/` — the layer is
+living by definition and `record/` is the frozen shelf
+([D-057](DECISIONS.md#d-057--2026-07--the-record-shelf--the-frozen-record-moves-under-one-roof-docsrecord-is-born-history--specs--decisions-in-memory-stays-living-at-root-the-enabling-ruling--a-mechanical-link-path-segment-repair-inside-a-frozen-file-is-maintenance-not-a-content-edit-append-only-governs-meaning-not-bytes-intra-record-links-resolve-by-construction-upholds-append-only-one-home-and-the-weave-rule));
+mixing them would re-blur the boundary bench 1 just drew ·
+writing the first stories on this bench — the census must survive
+the founder's veto first; a story written before its item is
+confirmed on the list is speculative work the veto would discard ·
+cross-links between stories — two stories citing each other's
+prose would couple their rewrites and break the one-place-to-
+rewrite property; decide anchors and ledger lines are stable,
+story prose is not.
+
+**Affects:** `docs/chronicle/INDEX.md` (born, draft census) ·
+[HOME §Where information goes](../HOME.md#where-information-goes)
+(one routing row) · [IDEAS](../IDEAS.md) (the 07-23 line closed) ·
+[the spec](specs/chronicle-layer.md) + its memory (in flight on
+the bench; moves to history at the weld) · this entry.

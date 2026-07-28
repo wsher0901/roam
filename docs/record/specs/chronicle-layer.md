@@ -1,7 +1,7 @@
 ---
 type: spec
 id: chronicle-layer
-title: The chronicle layer — living stories above the frozen record, and the census that shelves them
+title: The chronicle layer — living stories above the frozen record, and the census that shelves them ([D-059](../DECISIONS.md#d-059--2026-07--the-chronicle-layer--living-stories-above-the-frozen-record-one-story-per-item-the-ending-rule--settled-in-any-format-means-the-story-is-written-a-later-fix-is-incorporated-and-the-ending-rewritten-at-that-weld-retirement-is-a-settlement-docschronicle-one-file-per-story-indexmd-shelving-four-shelves-immutability-beneath--record-untouched-stories-link-down-as-footnotes-down-links-only--a-story-never-cites-another-storys-prose-supersedes-the-07-23-three-chapter-shape-the-ship-synthesis-at-weld-step-deferred-to-the-first-story-weld))
 status: open
 stage: workshop
 branch: docs/chronicle-layer
@@ -12,10 +12,12 @@ shipped: —
 
 # chronicle-layer — the story layer is decided; the census drafts its shelves
 
-**Links:** decision minted on this bench (the next D-number; this
-spec gains the anchor link the commit the entry exists) · queue:
-the founder's 2026-07-27 three-bench mandate (bench 3 of 3, after
-the record shelf and ATLAS).
+**Links:**
+[D-059](../DECISIONS.md#d-059--2026-07--the-chronicle-layer--living-stories-above-the-frozen-record-one-story-per-item-the-ending-rule--settled-in-any-format-means-the-story-is-written-a-later-fix-is-incorporated-and-the-ending-rewritten-at-that-weld-retirement-is-a-settlement-docschronicle-one-file-per-story-indexmd-shelving-four-shelves-immutability-beneath--record-untouched-stories-link-down-as-footnotes-down-links-only--a-story-never-cites-another-storys-prose-supersedes-the-07-23-three-chapter-shape-the-ship-synthesis-at-weld-step-deferred-to-the-first-story-weld)
+· queue: the founder's 2026-07-27 three-bench mandate (bench 3 of
+3, after the record shelf
+([#229](https://github.com/wsher0901/roam/pull/229)) and ATLAS
+([#231](https://github.com/wsher0901/roam/pull/231))).
 
 ## Goal
 
