@@ -2,12 +2,12 @@
 type: spec
 id: land-doctrine-v2
 title: The landing doctrine recut to the founder's three-scenario model (D-061)
-status: open
+status: shipped
 stage: workshop
 branch: docs/land-doctrine-v2
-pr: —
+pr: 238
 opened: 2026-07-28
-shipped: —
+shipped: 2026-07-28 17:13
 ---
 
 # land-doctrine-v2 — three scenarios, one ritual
