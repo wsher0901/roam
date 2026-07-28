@@ -6,7 +6,7 @@ status: living
 
 # Dashboard — the state surface
 
-Stamp: 2026-07-27 · 21:41 · ship-tail · home PC
+Stamp: 2026-07-27 · 21:49 · handoff · home PC
 V1 5/34 · S1 2/7 · S2 3/5 · sessions: 1 main · 0 parallel
 (0 need you) · needs-you 2
 How to read this board →
@@ -38,14 +38,26 @@ frontmatter oddity is folded there too
 
 | Session | Task | State | Last push | Your move |
 |---|---|---|---|---|
-| main · control tower | — (the 07-27 three-bench queue COMPLETE · 3/3; the sitting returns to the founder) | 🟢 | 21:41 (this repaint) | — |
+| main · control tower | — (sitting closed at handoff; the 07-27 queue closed 3/3, nothing open, nothing parked) · 0/0 | 🟢 | 21:49 (this repaint) | — |
 
-↳ main micro: 🟢 bench 1 record shelf (#229) · 🟢 bench 2 ATLAS
-(#231) · 🟢 bench 3 chronicle layer (#233)
+↳ main micro: — (no active task)
 
-THE QUEUE IS COMPLETE — three benches welded in one sitting, each
-through its own external review and the founder's word: THE
-RECORD SHELF ([#229](https://github.com/wsher0901/roam/pull/229),
+THE GROUND GOES DARK with this handoff — the home PC is halting.
+The 07-27 three-bench queue CLOSED AT 3/3 this sitting, each
+bench through its own external review and the founder's word; the
+first agent-team use ran and was shut down inside the sitting
+(captures pushed before the shutdown requests; the three silent
+shutdown responses named honestly and filed as maiden-grading
+evidence). Origin carries `main` only; the next pickup claims a
+clean floor. THE NEXT SITTING'S NATURAL OPENER: the nine-answers
+sitting (Claude Code) — answering
+[the INDEX's founder-input-owed register](chronicle/INDEX.md)
+(answer 1 doubles as the T3–T6 relaunch brief), then the first
+story weld, its own bench, carrying the deferred ship
+synthesis-at-weld step. Three fresh harvest lines rode into
+[IDEAS](IDEAS.md) with this handoff (HARNESS V2 · KNOW-WHEN ·
+the effort-`max` VERIFY). THE WELDS: THE RECORD SHELF
+([#229](https://github.com/wsher0901/roam/pull/229),
 [D-057](record/DECISIONS.md#d-057--2026-07--the-record-shelf--the-frozen-record-moves-under-one-roof-docsrecord-is-born-history--specs--decisions-in-memory-stays-living-at-root-the-enabling-ruling--a-mechanical-link-path-segment-repair-inside-a-frozen-file-is-maintenance-not-a-content-edit-append-only-governs-meaning-not-bytes-intra-record-links-resolve-by-construction-upholds-append-only-one-home-and-the-weave-rule))
 — docs/record/ born, 155 renames, the checker hardened; ATLAS
 ([#231](https://github.com/wsher0901/roam/pull/231),
@@ -96,9 +108,13 @@ flowchart LR
 
 ## Claude Web + Design discussion
 
-The live ops surface is the current ops chat, governed by the v5
-master — it decided the 07-27 three-bench queue and carried all
-three of its external reviews to DONE. Most recent:
+**"Ops — chronicle, record shelf & atlas"** (Web) — the sitting's
+ops chat, governed by the v5 master; its review duty is
+DISCHARGED: it decided the 07-27 three-bench queue, carried all
+three external reviews to DONE, and delivered the closing IDEAS
+harvest inline with the founder's leaving message. → next: the
+nine-answers sitting (Claude Code) — answer 1 doubles as the
+T3–T6 relaunch brief; then the first story weld. Most recent:
 [#233](https://github.com/wsher0901/roam/pull/233) (the chronicle
 layer, tower-authored) — PASS on `dea1e6e`, verified across four
 layers on the reviewer's own clone: the D-056 capture-then-kill
