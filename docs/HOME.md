@@ -160,6 +160,7 @@ Sources:
 | [FOUNDATION.md](FOUNDATION.md) | timeless product identity & principles | founder-approved PRs (+ D-number) | living; only sentences no shipped version can falsify |
 | [ROADMAP.md](ROADMAP.md) | the version ladder — versions → stages → task checkboxes; the ONLY stored task state | structure via [decide](skills/decide.md); ticks via [ship](skills/ship.md)'s weld | living, rolling-wave depth |
 | [DASHBOARD.md](DASHBOARD.md) | the rendered state surface | rituals only — never hand-edited | living; repainted at ritual moments, never trusted over git |
+| [ATLAS.md](ATLAS.md) | the system spine — the workshop as six diagrams on one page; renders, originates nothing (the prose governs) | the bench that changes what a diagram depicts — re-rendered in that same PR | living; dated stamp, least-authoritative; loses every disagreement with its linked prose |
 | [DECISIONS.md](record/DECISIONS.md) | the decision log, one D-number per choice | [decide](skills/decide.md) | append-only; entries are never rewritten |
 | [SETUP.md](SETUP.md) | everything the workshop runs on — stack, configs, tools; once-and-done vs per-machine vs staged | ops PRs | living |
 | [ENGINE.md](ENGINE.md) | the engine on paper — pipeline stages, decided rules in slots, OPEN register | [decide](skills/decide.md) ripples; invents nothing | living consolidation; seeds the [V1.S3](ROADMAP.md#v1s3--engine-core--two-families-deep) contract |
@@ -1048,6 +1049,7 @@ never duplicates it.
 | Any decision | [DECISIONS](record/DECISIONS.md) | decide, append-only | never — amendments are new entries |
 | Plan structure | [ROADMAP](ROADMAP.md) | decide-gated PR | structure via D; ticks by ship only |
 | Status · progress · counts | [DASHBOARD](DASHBOARD.md) | ritual repaint, at render time | the repaint IS the upsert; never hand-edited |
+| System map — the workshop as diagrams | [ATLAS](ATLAS.md) | the bench that changes what a diagram depicts | full re-render in that same PR; renders, originates nothing — the prose governs |
 | Unvisited idea | [IDEAS](IDEAS.md) | ritual harvest / micro-PR | promoted out via decide when adopted |
 | Engine rule / OPEN slot fill | [ENGINE](ENGINE.md) | decide | decide — the register shrinks by D-number |
 | Tooling · stack · config inventory | [SETUP](SETUP.md) | ops PR | ops PR; status never (the board's job) |
