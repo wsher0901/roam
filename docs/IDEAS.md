@@ -333,3 +333,39 @@ whole.
   session — a weave-rule-compatible shortening pattern (a stable
   short anchor per D-number, or an anchor-alias convention) is a
   future consideration, not now.
+
+- 2026-07-27 (the founder + the external reviewer, ops chat):
+  HARNESS V2 — one bench growing the hook layer from 3 events to
+  the guard set, absorbing three open lines of this inbox at
+  triage (the 2026-07-16 PreToolUse-guard line · the [LANE]
+  session-naming half of the 07-22 four-smaller-ones line · that
+  line's notification-taxonomy item): PreToolUse guards with
+  permission-rule `if` filters; a Stop prompt-type hook as a
+  done-means self-check; SessionStart `sessionTitle` for
+  [COCKPIT]/[LANE] naming — the supported mechanism the disproven
+  prompt title line lacked; Notification matchers
+  (agent_needs_input vs agent_completed) + terminalSequence for
+  the taxonomy; TeammateIdle + SubagentStop observability, first
+  evidence the three silent teammate shutdowns at the
+  [#233](https://github.com/wsher0901/roam/pull/233) census,
+  filed as maiden-grading data; PreCompact capture before context
+  compaction. Source: the official hooks reference, fetched
+  2026-07-27.
+- 2026-07-27 (the founder + the external reviewer, ops chat):
+  KNOW-WHEN — a decide licensing every session to PROPOSE agent
+  teams and parallel lanes unprompted per the
+  [D-045](record/DECISIONS.md#d-045--2026-07--hands-doctrine-solo--subagents--agent-team--lanes--the-litmus-is-one-bench-many-hands-vs-many-benches-vs-read-only-upholds-d-020-and-d-041)
+  litmus (the founder's word remains the only trigger; spend
+  stays a founder decision), gated on grading the
+  [#233](https://github.com/wsher0901/roam/pull/233) team maiden;
+  plus adopt `.claude/rules/*.md` path-scoped conditional rules
+  as the knowledge-loading architecture for
+  [V1.S3](ROADMAP.md#v1s3--engine-core--two-families-deep)+
+  engine work — token cost falls, and the right rules load when
+  their files are touched.
+- 2026-07-27 (the founder + the external reviewer, ops chat):
+  VERIFY — the platform hooks reference (2026-07-27) lists an
+  effort level `max` above xhigh with auto-downgrade; probe
+  whether Opus 5 honors it before any touch of the
+  [D-054](record/DECISIONS.md#d-054--2026-07--the-landing-skill--how-a-flight-ends-becomes-a-first-class-ritual-one-skill-with-two-modes-routed-by-fleet-state-retire--pause-and-transfer-the-fence-is-a-commit-so-the-resume-point-is-the-branch-tip-by-construction-wake-lock-mediated-with-its-honesty-clause-the-board-is-the-single-transfer-material-pickup-gains-the-fleet-resume-ask-and-its-cap-arithmetic-sessions-are-cattle-branches-are-the-work-charter-rule-6-becomes-a-pointer-the-effort-doctrine-moves-to-opus-5--xhigh-upholds-the-wake-lock-the-park-protocol-and-one-home-supersedes-the-opus-48-reliance-pair)
+  effort doctrine.
