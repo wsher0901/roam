@@ -889,27 +889,29 @@ one home
 ([D-052](record/DECISIONS.md#d-052--2026-07--response-doctrine--one-standard-for-every-surface-speaking-to-the-founder-answer-first-explicit-steps-purpose-shaped-explanation-live-derived-state-glyph-verdicts-the-command-card-the-fleet-table-report-the-ritual-status-templates-web-instructions-v5-ships-retires-the-v4-paste-block-loop-master-upholds-d-046s-cc-direct-doctrine-and-the-derivation-law)).
 Rituals and charters REFERENCE this section; none copies it.
 
-(a) ANSWER FIRST. A question's first line is its answer; a task's
-first line is the exact next act. Everything else follows.
-
-(b) STEPS ARE EXPLICIT. Never "give the word" — state the word
-itself and where it goes: 'paste merge into the Claude Code
-session'. Every prompt handed to the founder carries three
-one-liners: WHERE it goes · WHAT it is · WHY (its purpose).
-
-(c) EXPLANATION IS PURPOSE-SHAPED AND LAST. "To accomplish X, ..."
-— never an unanchored list of acts. Concise by law: the founder
-reads fast to decide fast; technicalities compress to one line or
-link to the record instead of flooding the reply.
-
-(d) STATE IS DERIVED LIVE. Any status or GitHub claim comes from
-origin at answer time (the derivation law, restated as style).
-
-(e) GLYPH VERDICTS. 🟢/🟡/🔴 lead every status item; every 🔴
-names the fix AND where it happens.
+1. TWO CHANNELS — sentences for the founder; fenced blocks for
+   machines. No technical content outside a fence.
+2. THREE QUESTIONS, IN ORDER, WITH TIMING — every response
+   answers: what's the situation? what is needed from the founder
+   — counted? what exactly does the founder do, and WHEN — now ·
+   after <event> · nothing? A step added mid-discussion states
+   its place in the sequence.
+3. PROCESS IS PROOF, NOT PROSE — verification detail lives in the
+   block or the record; the prose states only the outcome.
+4. HUMAN-READABLE — short sentences, plain words; jargon only
+   when load-bearing, translated on first use. If it looks
+   stressful to read, it already failed.
+5. DEPTH ON REQUEST — "more" opens the detail; never volunteered.
+6. STATE IS DERIVED LIVE — any status or GitHub claim comes from
+   origin at answer time.
+7. GLYPH VERDICTS — 🟢/🟡/🔴/⏸ lead every status item; every
+   🔴/⏸ names the fix or resume word AND where it goes.
 
 Sources:
+[D-063](record/DECISIONS.md#d-063--2026-07--response-doctrine-v2--web-instructions-v6--two-channels-sentences-for-the-founder-fenced-blocks-for-machines-process-is-proof-not-prose-the-chat-start-ingest-contract-the-relay-rule--origin-is-the-only-courier-codes-output-is-never-pasted-to-web-reviews-speak-in-goal-and-outcome-the-core-file-alert-the-agenda-convention-brief-renders-the-full-picture-the-master-gains-a-version-history-amends-d-052)
+(v2 — the current form)
 [D-052](record/DECISIONS.md#d-052--2026-07--response-doctrine--one-standard-for-every-surface-speaking-to-the-founder-answer-first-explicit-steps-purpose-shaped-explanation-live-derived-state-glyph-verdicts-the-command-card-the-fleet-table-report-the-ritual-status-templates-web-instructions-v5-ships-retires-the-v4-paste-block-loop-master-upholds-d-046s-cc-direct-doctrine-and-the-derivation-law)
+(v1 — the standard's origin)
 [LAWS §Knowledge & tracking](LAWS.md#knowledge--tracking)
 
 ## Command card
