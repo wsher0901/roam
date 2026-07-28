@@ -36,9 +36,9 @@ Sources:
   so it can later lift into a Python worker.
 
 Sources:
-[D-001 — tech stack](DECISIONS.md#d-001--2026-06--tech-stack)
-[D-005 — stack re-trial + frontend layer](DECISIONS.md#d-005--2026-06--stack-re-trial-vs-foundation-v1-d-001-upheld--frontend-layer)
-[D-007 — shadcn on Base UI](DECISIONS.md#d-007--2026-06--shadcnui-builds-on-base-ui-not-radix)
+[D-001 — tech stack](record/DECISIONS.md#d-001--2026-06--tech-stack)
+[D-005 — stack re-trial + frontend layer](record/DECISIONS.md#d-005--2026-06--stack-re-trial-vs-foundation-v1-d-001-upheld--frontend-layer)
+[D-007 — shadcn on Base UI](record/DECISIONS.md#d-007--2026-06--shadcnui-builds-on-base-ui-not-radix)
 
 ## Once and done — repo-side (travels with git)
 
@@ -58,12 +58,12 @@ Sources:
 - Reviewer subagent — `.claude/agents/reviewer.md`, the pre-GATE
   advisory critic; [ship §6](skills/ship.md#6--the-gate) invokes it
   at every gate
-  ([D-044](DECISIONS.md#d-044--2026-07--the-pre-gate-critic-goes-live--ships-gate-opens-by-invoking-the-reviewer-subagent-verdicts-advisory-riding-with-the-summary-turns-on-the-staged-reviewer-upholds-d-038-and-the-reviewer-frame)
-  · frame: [its spec](specs/reviewer-subagent.md)).
+  ([D-044](record/DECISIONS.md#d-044--2026-07--the-pre-gate-critic-goes-live--ships-gate-opens-by-invoking-the-reviewer-subagent-verdicts-advisory-riding-with-the-summary-turns-on-the-staged-reviewer-upholds-d-038-and-the-reviewer-frame)
+  · frame: [its spec](record/specs/reviewer-subagent.md)).
 
 Sources:
 [LAWS §Safety](LAWS.md#safety-non-negotiable)
-[skills folder](skills/)
+[skills folder](skills)
 
 ## Once and done — cloud accounts
 
@@ -89,7 +89,7 @@ Sources:
   ONCE — that build resets the horizon, so the skip self-heals.
 - claude.ai — the Roam Project; its settings box carries
   WEB-INSTRUCTIONS verbatim. Surface doctrine
-  ([D-046](DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)):
+  ([D-046](record/DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)):
   CC-direct is the standard working mode at both seats — discuss,
   decide, author, and bookkeep in-session; the paste-block relay
   is retired as a requirement and remains a tool when the founder
@@ -153,9 +153,9 @@ lane:cloud.
 
 - Cloud clerk — **RETIRED 2026-07-22** — routine deleted;
   superseded by
-  [D-046](DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+  [D-046](record/DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
   (cockpit) and
-  [D-048](DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)
+  [D-048](record/DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)
   (connector ladder). Verified record kept: C1–C6, N2/N3, A1/A4
   green; the mechanisms it proved — API fire, standing watch,
   turn-end push — live on in the cockpit. The rest of THIS entry is
@@ -164,27 +164,27 @@ lane:cloud.
   What it was: a session (verified 2026-07-17, C1–C6 green; the
   standing watch — charter duty 6 — verified 2026-07-19 at the
   Shakedown Flight, N-checklist grades:
-  [clerk-notify](specs/clerk-notify.md) ·
-  [shakedown-audit](specs/shakedown-audit.md) — the
+  [clerk-notify](record/specs/clerk-notify.md) ·
+  [shakedown-audit](record/specs/shakedown-audit.md) — the
   PRIMARY machine-off answering surface, the GitHub app demoted to
   backstop, per
-  [D-043](DECISIONS.md#d-043--2026-07--cloud-ignition--away-command-redesign--route-ladder-v2-ready-flip-then-label-is-the-recipe-of-record-api-ignition-and-the-cloud-clerk-staged-the-claude-app-the-single-away-surface-amends-d-041-upholds-the-lane-law-and-the-wake-lock)'s
+  [D-043](record/DECISIONS.md#d-043--2026-07--cloud-ignition--away-command-redesign--route-ladder-v2-ready-flip-then-label-is-the-recipe-of-record-api-ignition-and-the-cloud-clerk-staged-the-claude-app-the-single-away-surface-amends-d-041-upholds-the-lane-law-and-the-wake-lock)'s
   promotion clause) — the founder's away-mode concierge: a
   manually-born claude.ai/code session on wsher0901/roam with a
   narrow read-and-relay charter; cap-free by construction (a plain
   session, not a routine). It was born by paste: claude.ai/code
   (browser or the phone's Claude app) → new session on
   wsher0901/roam → the charter master below. Checklist + maiden
-  results: the cloud-clerk bench ([spec](specs/cloud-clerk.md)).
+  results: the cloud-clerk bench ([spec](record/specs/cloud-clerk.md)).
   The retirement staged by
-  [D-046](DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+  [D-046](record/DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
   EXECUTED on 2026-07-22, when the founder deleted the routine.
 
 Clerk charter (master) — **RETIRED 2026-07-22** — routine deleted;
 superseded by
-[D-046](DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+[D-046](record/DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
 (cockpit) and
-[D-048](DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)
+[D-048](record/DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)
 (connector ladder). Verified record kept: C1–C6, N2/N3, A1/A4
 green; the mechanisms it proved — API fire, standing watch,
 turn-end push — live on in the cockpit. There is no box left to
@@ -226,9 +226,9 @@ absolute:
 
 - Clerk routine — **RETIRED 2026-07-22** — routine deleted;
   superseded by
-  [D-046](DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+  [D-046](record/DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
   (cockpit) and
-  [D-048](DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)
+  [D-048](record/DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)
   (connector ladder). Verified record kept: C1–C6, N2/N3, A1/A4
   green; the mechanisms it proved — API fire, standing watch,
   turn-end push — live on in the cockpit. `fire:clerk` is gone
@@ -239,8 +239,8 @@ absolute:
   to re-save.
   What it was (verified 2026-07-19 at the Shakedown Flight,
   A-checklist grades:
-  [clerk-autospawn](specs/clerk-autospawn.md) ·
-  [shakedown-audit](specs/shakedown-audit.md)): the API-fire
+  [clerk-autospawn](record/specs/clerk-autospawn.md) ·
+  [shakedown-audit](record/specs/shakedown-audit.md)): the API-fire
   vehicle for the clerk — a SECOND routine at
   claude.ai/code/routines named "clerk", whose saved prompt was the
   clerk charter master above VERBATIM, carrying this spawn preamble
@@ -270,10 +270,10 @@ summary, then arm the watch.
   placeholders.
 
 - Flight Cockpit routine
-  ([D-046](DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock);
-  bench: [flight-cockpit](specs/flight-cockpit.md)) — FALLBACK +
+  ([D-046](record/DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock);
+  bench: [flight-cockpit](record/specs/flight-cockpit.md)) — FALLBACK +
   summon-button engine
-  ([D-047](DECISIONS.md#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law)):
+  ([D-047](record/DECISIONS.md#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law)):
   the primary birth is liftoff §6's `--cloud` birth (recipe
   below); this routine fires only at rung 3 of the ladder and
   remains the staged summon button's engine. The cockpit itself:
@@ -310,7 +310,7 @@ summary, then arm the watch.
   budgets it).
 
 - The cockpit's `--cloud` birth
-  ([D-047](DECISIONS.md#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law)
+  ([D-047](record/DECISIONS.md#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law)
   — the PRIMARY vehicle;
   [liftoff §6](skills/liftoff.md#6--ledger-handoff--fire-the-cockpit)
   runs it — the mechanics of record live THERE, this is the
@@ -330,13 +330,13 @@ summary, then arm the watch.
   supplies the TTY, so no pty wrapper is used or permitted — the
   prompt handed in as a file-read argument, and NOTHING captured:
   the fire is BLIND by design
-  ([D-051](DECISIONS.md#d-051--2026-07--self-seat-birth--liftoff-fires---cloud-blind-and-the-cockpit-seats-itself-by-its-env-derived-self-url-the-console-attach-launcher-is-retired-amends-d-047s-rung-1-mechanics-as-corrected-by-193-upholds-d-049-and-board-governs)),
+  ([D-051](record/DECISIONS.md#d-051--2026-07--self-seat-birth--liftoff-fires---cloud-blind-and-the-cockpit-seats-itself-by-its-env-derived-self-url-the-console-attach-launcher-is-retired-amends-d-047s-rung-1-mechanics-as-corrected-by-193-upholds-d-049-and-board-governs)),
   exit status only — the cockpit seats ITSELF on the board via
   its env-derived self-URL (the charter's SELF-SEAT duty).
   Sessions born
   this way are list-native: they join the phone's Code-tab
   GENERAL session list (gate 0c evidence,
-  [cloud-born-cockpit](specs/cloud-born-cockpit.md)).
+  [cloud-born-cockpit](record/specs/cloud-born-cockpit.md)).
 - Cloud environment (claude.ai/code settings → Environments) — the
   live environment is named **`Default`** (not "roam"; the earlier
   name was wrong on paper only). Its setup script installs `gh`
@@ -346,7 +346,7 @@ summary, then arm the watch.
   `GH_TOKEN` is the literal 14-character placeholder
   `proxy-injected` and the proxy substitutes real credentials in
   transit
-  ([D-049](DECISIONS.md#d-049--2026-07--gh-second-path--gh-api-rest-through-the-github-proxy-is-the-cockpits-second-api-path-a-connector-flap-stops-costing-command-r2-gains-the-automatic-gh-rung-self-id-by-session-env-amends-d-048-corrects-the-193-api-map-upholds-d-047-and-verify-before-rely),
+  ([D-049](record/DECISIONS.md#d-049--2026-07--gh-second-path--gh-api-rest-through-the-github-proxy-is-the-cockpits-second-api-path-a-connector-flap-stops-costing-command-r2-gains-the-automatic-gh-rung-self-id-by-session-env-amends-d-048-corrects-the-193-api-map-upholds-d-047-and-verify-before-rely),
   probe-proven 2026-07-23). The path is REST-SHAPED: `gh api`
   calls work repo-scoped; porcelain riding GraphQL (`gh pr list`)
   is proxy-blocked against a pinned set of PR-review operations,
@@ -360,14 +360,14 @@ summary, then arm the watch.
   APT SOURCE, not a design wall — `cli.github.com` is
   egress-blocked where the Ubuntu archive is allowlisted; the
   "no gh BY DESIGN, MCP the sole path" reading
-  ([D-048](DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)'s
+  ([D-048](record/DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)'s
   premise, community-sourced) fell to the official docs plus the
   live probe. The image's pre-existing `deadsnakes`/`ondrej` PPA
   failures remain real — the `|| true` guards keep them from
   failing the script.
 - Summon workflow (`.github/workflows/summon.yml`) — rung 4 of the
   connector ladder, LIVE
-  ([D-048](DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)).
+  ([D-048](record/DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)).
   Two triggers: a push to the reserved branch `ops/summon` (the
   self-rescue path — a connector-dead cockpit can still push,
   because pushing is git, not API) and `workflow_dispatch` with one
@@ -559,7 +559,7 @@ merge · read check runs. A cockpit that has lost the API has lost
 COMMAND.
 
 The cockpit has TWO API paths
-([D-049](DECISIONS.md#d-049--2026-07--gh-second-path--gh-api-rest-through-the-github-proxy-is-the-cockpits-second-api-path-a-connector-flap-stops-costing-command-r2-gains-the-automatic-gh-rung-self-id-by-session-env-amends-d-048-corrects-the-193-api-map-upholds-d-047-and-verify-before-rely),
+([D-049](record/DECISIONS.md#d-049--2026-07--gh-second-path--gh-api-rest-through-the-github-proxy-is-the-cockpits-second-api-path-a-connector-flap-stops-costing-command-r2-gains-the-automatic-gh-rung-self-id-by-session-env-amends-d-048-corrects-the-193-api-map-upholds-d-047-and-verify-before-rely),
 probe-proven 2026-07-23): the **GitHub MCP connector**, and
 **`gh api` REST through the session's GitHub proxy** (the
 environment entry above carries the mechanics). Each API-only act
@@ -598,7 +598,7 @@ be traced back to the session that wrote it without any scraping.
 4. **Away with no desk — SELF-RESCUE.** Push one empty commit to
    `ops/summon`; the summon workflow fires a replacement cockpit
    and the dying one lands under the tombstone
-   ([D-048](DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)).
+   ([D-048](record/DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)).
 5. **Last resort — the GitHub mobile app**, or the phone bootstrap
    paste below when there is no terminal and no GitHub. The
    founder's own hands; always works, and the thing this whole
@@ -610,7 +610,7 @@ procedure.
 
 **Rejected, not staged:** a merge-on-signal GitHub Action. It was
 the obvious permanent fix and
-[D-048](DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)
+[D-048](record/DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)
 turns it down for two reasons: it would restore only MERGE while a
 connector-dead cockpit still cannot spawn lanes or open benches,
 and — decisively — every session pushes as the founder, so a
@@ -633,7 +633,7 @@ the authoritative flight plan.
 
 VERIFY BEFORE RELYING: whether the mobile app can create a session
 on a repo is UNPROVEN — test at the next drill and record the
-answer in [cockpit-resilience](specs/cockpit-resilience.md)'s
+answer in [cockpit-resilience](record/specs/cockpit-resilience.md)'s
 Done-means.
 
 - Models & effort (doctrine — the Web paste block's Model + Effort
@@ -644,7 +644,7 @@ Done-means.
   carrying no Fable-class cap, so there is nothing left for a
   second tier to buy). It RETIRES the Opus 4.8 / Sonnet 5 reliance
   pair
-  ([D-054](DECISIONS.md#d-054--2026-07--the-landing-skill--how-a-flight-ends-becomes-a-first-class-ritual-one-skill-with-two-modes-routed-by-fleet-state-retire--pause-and-transfer-the-fence-is-a-commit-so-the-resume-point-is-the-branch-tip-by-construction-wake-lock-mediated-with-its-honesty-clause-the-board-is-the-single-transfer-material-pickup-gains-the-fleet-resume-ask-and-its-cap-arithmetic-sessions-are-cattle-branches-are-the-work-charter-rule-6-becomes-a-pointer-the-effort-doctrine-moves-to-opus-5--xhigh-upholds-the-wake-lock-the-park-protocol-and-one-home-supersedes-the-opus-48-reliance-pair)).
+  ([D-054](record/DECISIONS.md#d-054--2026-07--the-landing-skill--how-a-flight-ends-becomes-a-first-class-ritual-one-skill-with-two-modes-routed-by-fleet-state-retire--pause-and-transfer-the-fence-is-a-commit-so-the-resume-point-is-the-branch-tip-by-construction-wake-lock-mediated-with-its-honesty-clause-the-board-is-the-single-transfer-material-pickup-gains-the-fleet-resume-ask-and-its-cap-arithmetic-sessions-are-cattle-branches-are-the-work-charter-rule-6-becomes-a-pointer-the-effort-doctrine-moves-to-opus-5--xhigh-upholds-the-wake-lock-the-park-protocol-and-one-home-supersedes-the-opus-48-reliance-pair)).
   Fable 5: an optional SECOND OPINION only, never the seat. The
   plateau: xhigh is the working ceiling — max only by explicit
   founder tag for rare one-shots; ultracode only by explicit
@@ -653,7 +653,7 @@ Done-means.
   model. Agent-team teammates ride the LEAD's model by config (see
   the next bullet), so the whole seat runs one pick; the Sonnet-5
   teammate default recorded here before
-  [D-055](DECISIONS.md#d-055--2026-07--agent-teams--the-boundary-teams-are-for-exploration-and-review-at-a-ground-seat-lanes-remain-the-authorship-mechanism-two-risks-become-law-single-sitting-only--an-explicit-carve-out-to-d-050s-interrupt-promise--and-a-teammate-authored-diff-is-self-authored-under-no-solo-approval-the-reviewers-model-settled-by-verification-not-guess-the-founder-side-config-recorded-upholds-the-lane-law-no-solo-approval-and-one-home-gives-the-experimental-flag-its-consumer)
+  [D-055](record/DECISIONS.md#d-055--2026-07--agent-teams--the-boundary-teams-are-for-exploration-and-review-at-a-ground-seat-lanes-remain-the-authorship-mechanism-two-risks-become-law-single-sitting-only--an-explicit-carve-out-to-d-050s-interrupt-promise--and-a-teammate-authored-diff-is-self-authored-under-no-solo-approval-the-reviewers-model-settled-by-verification-not-guess-the-founder-side-config-recorded-upholds-the-lane-law-no-solo-approval-and-one-home-gives-the-experimental-flag-its-consumer)
   is retired. The `.claude/agents/reviewer.md` critic runs
   `model: opus` · `effort: high` — the ALIAS, not a pin, because
   the alias resolves to Opus 5 today (verified 2026-07-24 on CLI
@@ -681,7 +681,7 @@ Done-means.
     [§Once and done — repo-side](#once-and-done--repo-side-travels-with-git)
     ("Env: Agent Teams ON") sat armed with nothing reaching for it
     until
-    [D-055](DECISIONS.md#d-055--2026-07--agent-teams--the-boundary-teams-are-for-exploration-and-review-at-a-ground-seat-lanes-remain-the-authorship-mechanism-two-risks-become-law-single-sitting-only--an-explicit-carve-out-to-d-050s-interrupt-promise--and-a-teammate-authored-diff-is-self-authored-under-no-solo-approval-the-reviewers-model-settled-by-verification-not-guess-the-founder-side-config-recorded-upholds-the-lane-law-no-solo-approval-and-one-home-gives-the-experimental-flag-its-consumer)
+    [D-055](record/DECISIONS.md#d-055--2026-07--agent-teams--the-boundary-teams-are-for-exploration-and-review-at-a-ground-seat-lanes-remain-the-authorship-mechanism-two-risks-become-law-single-sitting-only--an-explicit-carve-out-to-d-050s-interrupt-promise--and-a-teammate-authored-diff-is-self-authored-under-no-solo-approval-the-reviewers-model-settled-by-verification-not-guess-the-founder-side-config-recorded-upholds-the-lane-law-no-solo-approval-and-one-home-gives-the-experimental-flag-its-consumer)
     gave it a documented consumer; that gap is now closed.
   - Permissions need no per-teammate setup: teammates start with
     the LEAD's permission settings, teammate prompts surface in
@@ -690,7 +690,7 @@ Done-means.
     sibling. The deny rails in `.claude/settings.json` therefore
     cover the team as they cover the seat.
 - Hands: solo · subagents · team · lanes (doctrine,
-  [D-045](DECISIONS.md#d-045--2026-07--hands-doctrine-solo--subagents--agent-team--lanes--the-litmus-is-one-bench-many-hands-vs-many-benches-vs-read-only-upholds-d-020-and-d-041)).
+  [D-045](record/DECISIONS.md#d-045--2026-07--hands-doctrine-solo--subagents--agent-team--lanes--the-litmus-is-one-bench-many-hands-vs-many-benches-vs-read-only-upholds-d-020-and-d-041)).
   The founder's choose-your-hands rule, verbatim — one clause
   superseded inline and marked:
   - Solo (default): sequential or single-file work.
@@ -700,7 +700,7 @@ Done-means.
     benefiting from cross-talk; founder present to steer — never
     long-unattended; lead + 2–4 teammates (start 2 — the original
     wording said "Sonnet 5 teammates", retired by
-    [D-055](DECISIONS.md#d-055--2026-07--agent-teams--the-boundary-teams-are-for-exploration-and-review-at-a-ground-seat-lanes-remain-the-authorship-mechanism-two-risks-become-law-single-sitting-only--an-explicit-carve-out-to-d-050s-interrupt-promise--and-a-teammate-authored-diff-is-self-authored-under-no-solo-approval-the-reviewers-model-settled-by-verification-not-guess-the-founder-side-config-recorded-upholds-the-lane-law-no-solo-approval-and-one-home-gives-the-experimental-flag-its-consumer):
+    [D-055](record/DECISIONS.md#d-055--2026-07--agent-teams--the-boundary-teams-are-for-exploration-and-review-at-a-ground-seat-lanes-remain-the-authorship-mechanism-two-risks-become-law-single-sitting-only--an-explicit-carve-out-to-d-050s-interrupt-promise--and-a-teammate-authored-diff-is-self-authored-under-no-solo-approval-the-reviewers-model-settled-by-verification-not-guess-the-founder-side-config-recorded-upholds-the-lane-law-no-solo-approval-and-one-home-gives-the-experimental-flag-its-consumer):
     teammates now ride the LEAD's model by config);
     delegate-mode lead for pure coordination; plan-approval for
     teammates touching shared or hard-to-reverse surfaces; never for
@@ -732,7 +732,7 @@ Sources:
   MCP config); never in this public repo.
 - Remote Control — toggles installed on both machines, BACKSTOP
   only, never the plan
-  ([D-046](DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)):
+  ([D-046](record/DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)):
   machine-off is the standard away posture — the cockpit flies the
   outing; go-remote remains the backstop for a machine that must
   stay on.
@@ -753,15 +753,15 @@ Sources:
   runtime tool architecture settled (a source-type question under
   the reliability law).
 - At first need — api-ignition (route 1b,
-  [D-043](DECISIONS.md#d-043--2026-07--cloud-ignition--away-command-redesign--route-ladder-v2-ready-flip-then-label-is-the-recipe-of-record-api-ignition-and-the-cloud-clerk-staged-the-claude-app-the-single-away-surface-amends-d-041-upholds-the-lane-law-and-the-wake-lock)):
+  [D-043](record/DECISIONS.md#d-043--2026-07--cloud-ignition--away-command-redesign--route-ladder-v2-ready-flip-then-label-is-the-recipe-of-record-api-ignition-and-the-cloud-clerk-staged-the-claude-app-the-single-away-surface-amends-d-041-upholds-the-lane-law-and-the-wake-lock)):
   the routine's API trigger — control tower/liftoff ignite cloud
   lanes
   via endpoint, benches stay draft, the ready-flip reverts to
   completion-only; adopt at first need, verify-before-rely.
 - RESOLVED — the summon button is LIVE, no longer staged
-  ([D-048](DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047),
+  ([D-048](record/DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047),
   resolving the
-  [D-046](DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+  [D-046](record/DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
   staging): `.github/workflows/summon.yml` holds the cockpit fire
   call with the token in repository secrets. The dispatch button
   shipped with it, but the PUSH trigger (`ops/summon`) is the

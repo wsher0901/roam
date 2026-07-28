@@ -29,8 +29,8 @@ One question may hit several classes; route each part.
 
 Sources:
 [the routing table — HOME §Where information goes](../HOME.md#where-information-goes)
-[the ledger](../history/README.md#the-ledger)
-[the door legend](../history/README.md)
+[the ledger](../record/history/README.md#the-ledger)
+[the door legend](../record/history/README.md)
 
 ## 2 · Look it up — read, don't recall
 Open the routed homes and take the answer FROM them. Quote
@@ -51,8 +51,8 @@ Example shape:
 automatically — no question asked — and liftoff is the only road to
 the cloud. It shipped the same day you asked for it.
 Sources:
-[D-032](../DECISIONS.md#d-032--2026-07--fleet-continuity--handoff-parks-every-local-lane-liftoff-respawns-parked-benches-wake-lock-parks-every-outcome-extends-the-d-020d-023-lane-law-upholds-d-009)
-[the story](../history/workshop/mechanism/fleet-continuity.md)"
+[D-032](../record/DECISIONS.md#d-032--2026-07--fleet-continuity--handoff-parks-every-local-lane-liftoff-respawns-parked-benches-wake-lock-parks-every-outcome-extends-the-d-020d-023-lane-law-upholds-d-009)
+[the story](../record/history/workshop/mechanism/fleet-continuity.md)"
 
 ## 4 · The honesty rails
 - Not found → say exactly that: "not recorded", plus where it WOULD

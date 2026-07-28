@@ -10,7 +10,7 @@ COMPACTION — an inbox, not an archive: at every harvest, entries
 already CLOSED or fully SUPERSEDED in an outing OLDER than the
 current one are DELETED — the closing artifact (the decide, the PR,
 the history file) is the record, and
-[the ledger](history/README.md#the-ledger) finds it. Two stays: a
+[the ledger](record/history/README.md#the-ledger) finds it. Two stays: a
 closed entry whose only record is ITSELF keeps its place until the
 content has an external home, and a partly-closed entry stays
 whole.
@@ -30,16 +30,16 @@ whole.
   export — the world-facts asset (revision series, forecast-vs-actual
   calibration pairs, coverage maps) as a licensable product someday;
   stays possible only because of the license-segmented storage law
-  ([D-015](DECISIONS.md#d-015--2026-06--data-asset-law-bitemporal-append-only-license-segmented)).
-- 2026-07-14 (Claude Code, [ci-trust](history/workshop/mechanism/ci-trust.md) weld): anchor-generating
+  ([D-015](record/DECISIONS.md#d-015--2026-06--data-asset-law-bitemporal-append-only-license-segmented)).
+- 2026-07-14 (Claude Code, [ci-trust](record/history/workshop/mechanism/ci-trust.md) weld): anchor-generating
   helper for D-links — a small step or script that emits the exact
   GitHub heading slug for a new D-number, so the heading and every
   link to it are born matching; kills the recurring first-push
   anchor stumble at its source (the pattern behind
-  [D-038](DECISIONS.md#d-038--2026-07--ci-is-the-arbiter--actions-green-required-at-every-gate-local-gate-mirrors-all-six-ci-steps-d-anchors-born-resolving-upholds-d-027)).
+  [D-038](record/DECISIONS.md#d-038--2026-07--ci-is-the-arbiter--actions-green-required-at-every-gate-local-gate-mirrors-all-six-ci-steps-d-anchors-born-resolving-upholds-d-027)).
 - 2026-07-14 (Claude Code, ci-trust weld) — caveat on the
   paths-ignore idea above: with
-  [D-038](DECISIONS.md#d-038--2026-07--ci-is-the-arbiter--actions-green-required-at-every-gate-local-gate-mirrors-all-six-ci-steps-d-anchors-born-resolving-upholds-d-027)
+  [D-038](record/DECISIONS.md#d-038--2026-07--ci-is-the-arbiter--actions-green-required-at-every-gate-local-gate-mirrors-all-six-ci-steps-d-anchors-born-resolving-upholds-d-027)
   branch protection now requiring the `checks` context on main,
   ignoring `docs/**` in CI would leave that required check
   unreported and block every docs-only merge; adopt only with a
@@ -66,7 +66,7 @@ whole.
   graduated to defect per the
   [#159](https://github.com/wsher0901/roam/pull/159) rule; the
   synchronous general-purpose fallback carries ship §6
-  ([ship-wiring story](history/workshop/mechanism/ship-wiring.md));
+  ([ship-wiring story](record/history/workshop/mechanism/ship-wiring.md));
   diagnose post-flight.
 - 2026-07-16 (Claude Code, maiden-flight-report): a separate bot
   identity for lane speech (optional) — lane comments currently
@@ -77,7 +77,7 @@ whole.
   the home PC (healed 07-16 by rebuilding from origin, cause
   unknown); watch for recurrence.
 - 2026-07-19 (Claude Code,
-  [shakedown-audit](specs/shakedown-audit.md) finding 6): detached
+  [shakedown-audit](record/specs/shakedown-audit.md) finding 6): detached
   background verification is not verification — the resurrection
   spot-check ran as a detached background task, lost its exit code,
   and its main-only answer aged into a false all-clear four minutes
@@ -138,7 +138,7 @@ whole.
   interactive cockpit went connector-dead while its routine-born
   lane kept working. If it holds, the rescue vehicle is the
   STURDIER SPECIES, and the `--cloud`-vs-routine choice settled by
-  [D-047](DECISIONS.md#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law)
+  [D-047](record/DECISIONS.md#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law)
   (list-native beats sturdy) deserves re-decision. Evidence so
   far: ONE data point plus one filed report. Watch across the next
   flights; do not act on it yet.
@@ -169,7 +169,7 @@ whole.
   real pty — so even an emergency cockpit lands in the phone's
   general session list — instead of the routine fire that
   `summon.yml` uses
-  ([D-048](DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)),
+  ([D-048](record/DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)),
   which yields a list-INVISIBLE session? RESULT, three gates deep:
   (1) the pty (`script -qec '…' /dev/null`) DEFEATS the TTY refusal
   that killed every piped `--cloud` route — the runner's terminal
@@ -197,7 +197,7 @@ whole.
   — it may be the last gate or reveal another (org-scoped auth the
   setup-token may not carry). Bears on the interactive-vs-routine
   connector hypothesis above and on
-  [D-047](DECISIONS.md#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law)'s
+  [D-047](record/DECISIONS.md#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law)'s
   list-native-beats-sturdy choice: if a list-native rescue is ever
   wanted, this is the path and the org-UUID gate is its remaining
   wall.
@@ -278,7 +278,7 @@ whole.
   its own chat.
 - 2026-07-24 (Claude Code, the team-aware-leaving bench, found by
   the ship §6 critic on its Opus pass): THE ONE UNCOVERED ROAD OUT
-  of a sitting. [D-056](DECISIONS.md#d-056--2026-07--team-aware-leaving-rituals--no-ritual-lets-a-live-agent-team-outlive-the-sitting-that-made-it-handoff-shuts-the-team-down-before-parking-anything-and-captures-its-findings-into-the-record-first-land-states-the-cockpit-cannot-lead-a-team-case-once-and-routes-the-ground-seat-to-handoff-pickup-gains-the-ghost-teammate-recovery-note-and-the--block-gains-what-the-team-had-found-closes-d-055s-deferred-gap-upholds-one-home-and-the-park-protocol)
+  of a sitting. [D-056](record/DECISIONS.md#d-056--2026-07--team-aware-leaving-rituals--no-ritual-lets-a-live-agent-team-outlive-the-sitting-that-made-it-handoff-shuts-the-team-down-before-parking-anything-and-captures-its-findings-into-the-record-first-land-states-the-cockpit-cannot-lead-a-team-case-once-and-routes-the-ground-seat-to-handoff-pickup-gains-the-ghost-teammate-recovery-note-and-the--block-gains-what-the-team-had-found-closes-d-055s-deferred-gap-upholds-one-home-and-the-park-protocol)
   covers handoff FULL, handoff QUIET, liftoff, land, go-remote and
   Esc — every exit that RUNS A RITUAL. The SUPERSEDED-SEAT
   self-close does not run one: a session whose board seat-stamp is
@@ -300,13 +300,13 @@ whole.
   driven from dates the founder recalled by hand; a stamp beside
   each master would let any seat answer "which boxes are stale?"
   mechanically. OFF-THEME for
-  [D-055](DECISIONS.md#d-055--2026-07--agent-teams--the-boundary-teams-are-for-exploration-and-review-at-a-ground-seat-lanes-remain-the-authorship-mechanism-two-risks-become-law-single-sitting-only--an-explicit-carve-out-to-d-050s-interrupt-promise--and-a-teammate-authored-diff-is-self-authored-under-no-solo-approval-the-reviewers-model-settled-by-verification-not-guess-the-founder-side-config-recorded-upholds-the-lane-law-no-solo-approval-and-one-home-gives-the-experimental-flag-its-consumer)
+  [D-055](record/DECISIONS.md#d-055--2026-07--agent-teams--the-boundary-teams-are-for-exploration-and-review-at-a-ground-seat-lanes-remain-the-authorship-mechanism-two-risks-become-law-single-sitting-only--an-explicit-carve-out-to-d-050s-interrupt-promise--and-a-teammate-authored-diff-is-self-authored-under-no-solo-approval-the-reviewers-model-settled-by-verification-not-guess-the-founder-side-config-recorded-upholds-the-lane-law-no-solo-approval-and-one-home-gives-the-experimental-flag-its-consumer)
   — its own micro-bench, or fold it into the next SETUP touch.
 - 2026-07-24 (the founder, at the landing-skill gate —
   [#221](https://github.com/wsher0901/roam/pull/221)): AGENT TEAMS
   is the next bench, and it must settle the SUBAGENT-MODEL line.
   The boundary set at this gate:
-  [D-054](DECISIONS.md#d-054--2026-07--the-landing-skill--how-a-flight-ends-becomes-a-first-class-ritual-one-skill-with-two-modes-routed-by-fleet-state-retire--pause-and-transfer-the-fence-is-a-commit-so-the-resume-point-is-the-branch-tip-by-construction-wake-lock-mediated-with-its-honesty-clause-the-board-is-the-single-transfer-material-pickup-gains-the-fleet-resume-ask-and-its-cap-arithmetic-sessions-are-cattle-branches-are-the-work-charter-rule-6-becomes-a-pointer-the-effort-doctrine-moves-to-opus-5--xhigh-upholds-the-wake-lock-the-park-protocol-and-one-home-supersedes-the-opus-48-reliance-pair)'s
+  [D-054](record/DECISIONS.md#d-054--2026-07--the-landing-skill--how-a-flight-ends-becomes-a-first-class-ritual-one-skill-with-two-modes-routed-by-fleet-state-retire--pause-and-transfer-the-fence-is-a-commit-so-the-resume-point-is-the-branch-tip-by-construction-wake-lock-mediated-with-its-honesty-clause-the-board-is-the-single-transfer-material-pickup-gains-the-fleet-resume-ask-and-its-cap-arithmetic-sessions-are-cattle-branches-are-the-work-charter-rule-6-becomes-a-pointer-the-effort-doctrine-moves-to-opus-5--xhigh-upholds-the-wake-lock-the-park-protocol-and-one-home-supersedes-the-opus-48-reliance-pair)'s
   effort doctrine governs SURFACES AND SESSIONS, not subagent
   internals — so `.claude/agents/reviewer.md` keeping
   `model: sonnet` · `effort: high` is no contradiction and nothing
@@ -322,7 +322,7 @@ whole.
   says it could not — the defect may be gone; confirm before
   closing it.
 - 2026-07-24 (the founder, the guardrail audit —
-  [D-053](DECISIONS.md#d-053--2026-07--guardrail-audit--the-harness-found-already-at-best-practice-against-anthropics-guidance-two-promotions-ship-the-verification-loop-as-a-copy-runnable-block-in-laws-two-stub-descriptions-sharpened-five-alternatives-rejected-with-reasons-upholds-the-routing-law-and-one-home)):
+  [D-053](record/DECISIONS.md#d-053--2026-07--guardrail-audit--the-harness-found-already-at-best-practice-against-anthropics-guidance-two-promotions-ship-the-verification-loop-as-a-copy-runnable-block-in-laws-two-stub-descriptions-sharpened-five-alternatives-rejected-with-reasons-upholds-the-routing-law-and-one-home)):
   the four ~300-character decide-anchor links in
   [LAWS](LAWS.md) cost context and vault readability every
   session — a weave-rule-compatible shortening pattern (a stable

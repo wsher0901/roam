@@ -41,9 +41,9 @@ differently than the spec; preview link.
 
 ## 6 · THE GATE
 First, the critic
-([D-044](../DECISIONS.md#d-044--2026-07--the-pre-gate-critic-goes-live--ships-gate-opens-by-invoking-the-reviewer-subagent-verdicts-advisory-riding-with-the-summary-turns-on-the-staged-reviewer-upholds-d-038-and-the-reviewer-frame)):
+([D-044](../record/DECISIONS.md#d-044--2026-07--the-pre-gate-critic-goes-live--ships-gate-opens-by-invoking-the-reviewer-subagent-verdicts-advisory-riding-with-the-summary-turns-on-the-staged-reviewer-upholds-d-038-and-the-reviewer-frame)):
 invoke the reviewer subagent (`.claude/agents/reviewer.md` — frame:
-[its spec](../specs/reviewer-subagent.md)) on the branch's diff.
+[its spec](../record/specs/reviewer-subagent.md)) on the branch's diff.
 Its structured verdict is ADVISORY and rides to the founder
 verbatim alongside the summary — a finding never halts ship by
 itself; the founder weighs it at the gate. Invocation mechanics:
@@ -65,19 +65,19 @@ One bookkeeping commit on the SAME branch, so state and work merge
 atomically:
 - tick the task's [ROADMAP](../ROADMAP.md) checkbox
 - git mv docs/memory/<id>.md →
-  docs/history/<quadrant>/<id>.md — quadrant per the
-  [legend](../history/README.md); ties → workshop/definition;
+  docs/record/history/<quadrant>/<id>.md — quadrant per the
+  [legend](../record/history/README.md); ties → workshop/definition;
   frontmatter →
   type: history, shipped: <date HH:MM>, pr: #N (workshop PRs:
   slug-keyed history file, no ROADMAP tick) (stamp values are read
   from the shell clock, never typed)
 - spec frontmatter → status: shipped, pr, shipped date
 - append one line atop
-  [the ledger](../history/README.md#the-ledger):
+  [the ledger](../record/history/README.md#the-ledger):
   <date HH:MM> · <story title> → <quadrant> · #N (stamp values are
   read from the shell clock, never typed)
-- Stage the whole move together — `git add -A docs/history
-  docs/ROADMAP.md docs/specs` before the commit — so no piece (history
+- Stage the whole move together — `git add -A docs/record/history
+  docs/ROADMAP.md docs/record/specs` before the commit — so no piece (history
   file, ledger line, tick) is left unstaged; `check:ledger` is the net
   if it is.
 Push. The arbiter applies to welds too: arm

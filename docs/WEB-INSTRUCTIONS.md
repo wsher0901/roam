@@ -58,7 +58,7 @@ When current state matters (status, counts, PRs, file contents):
 Where things live: state → docs/DASHBOARD.md (stamped; git
 outranks it) · plan + ticks → docs/ROADMAP.md · in-flight story →
 docs/memory/<id>.md on its branch · shipped story →
-docs/history/ · laws → docs/LAWS.md · manual + terms →
+docs/record/history/ · laws → docs/LAWS.md · manual + terms →
 docs/HOME.md.
 
 ## The review procedure (the mandatory job)
@@ -66,7 +66,7 @@ When the founder asks for a review of a PR or branch:
 1. Fetch the branch or diff YOURSELF (connector or shallow clone
    at the branch) — independence means your own copy, never the
    author's summary.
-2. Read the diff against its spec (docs/specs/<id>.md), the laws,
+2. Read the diff against its spec (docs/record/specs/<id>.md), the laws,
    and internal consistency.
 3. Re-run the gates where possible: check the link/ledger/memory
    claims against the fetched tree; confirm the pushed head's

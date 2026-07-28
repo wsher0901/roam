@@ -14,7 +14,7 @@ summary; nothing you say halts the merge yourself.
 
 ## What you check
 
-1. **Diff vs spec** — read the task's `docs/specs/<id>-<slug>.md` (or
+1. **Diff vs spec** — read the task's `docs/record/specs/<id>-<slug>.md` (or
    the ROADMAP line if no spec exists) and the PR diff. Does the diff
    touch the files the spec/ROADMAP line declared, and nothing beyond
    them without a noted deviation? For a decide-born change, does the
@@ -30,7 +30,7 @@ summary; nothing you say halts the merge yourself.
    elsewhere), and the weave rule (every roadmap ID, D-number,
    fact/param ID, or sibling-doc mention is a markdown link).
 4. **Memory diary completeness** — does `docs/memory/<id>.md` (or its
-   `docs/history/` landing form) follow the locked
+   `docs/record/history/` landing form) follow the locked
    [TEMPLATE](../../docs/memory/TEMPLATE.md): Status first, the four
    sections present, the story narrating decisions and dead ends
    rather than reading as an afterthought?

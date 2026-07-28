@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-// Ledger-integrity gate: proves the docs/history/**/*.md stories and
-// the ledger index in docs/history/README.md stay in one-to-one
+// Ledger-integrity gate: proves the docs/record/history/**/*.md stories
+// and the ledger index in docs/record/history/README.md stay in one-to-one
 // bijection, so a dropped or orphaned ledger line goes red instead of
 // leaving a silent gap (ship §7's invariant, machine-checked).
 //
@@ -20,10 +20,10 @@ import { resolve, dirname, join, relative } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
-const historyDir = join(root, "docs", "history");
+const historyDir = join(root, "docs", "record", "history");
 const ledgerPath = join(historyDir, "README.md");
 
-// The four legend doors (history/README.md). A quadrant on a file path
+// The four legend doors (record/history/README.md). A quadrant on a file path
 // or a ledger line must be one of these.
 const DOORS = new Set([
   "product/definition",
@@ -37,7 +37,7 @@ const read = (p) => readFileSync(p, "utf8").replace(/\r\n/g, "\n");
 
 const failures = [];
 
-// --- walk the history stories (every .md under docs/history except
+// --- walk the history stories (every .md under docs/record/history except
 // the README index), keyed by their frontmatter PR ---
 function walk(dir) {
   const out = [];

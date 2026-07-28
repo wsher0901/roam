@@ -76,4 +76,4 @@ an em-dash ack cost a flight its handshake).
 | failed — <reason · date> | the lane (genuine error) or baton-holder | nothing — founder decides |
 | superseded — <by> | baton-holder | self-terminate on sight |
 | complete, awaiting merge | the finishing session | THE GATE |
-| shipped — merged #N | ship's weld (the memory moves to history/) | nothing — the bench is done |
+| shipped — merged #N | ship's weld (the memory moves to record/history/) | nothing — the bench is done |

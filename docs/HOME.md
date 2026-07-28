@@ -31,7 +31,7 @@ Sources:
 [FOUNDATION.md](FOUNDATION.md)
 [LAWS.md](LAWS.md)
 [ENGINE.md](ENGINE.md)
-[DECISIONS.md](DECISIONS.md)
+[DECISIONS.md](record/DECISIONS.md)
 [DASHBOARD.md](DASHBOARD.md)
 
 ## Start here — the questions
@@ -42,14 +42,14 @@ Sources:
 | What's the plan, in what order? | [ROADMAP.md](ROADMAP.md), read with the [Roadmap manual](#roadmap-manual) |
 | Where are we right now? | [DASHBOARD.md](DASHBOARD.md) — or just talk: control-tower sessions brief unprompted ([pickup](skills/pickup.md)) |
 | What are the working laws? | [LAWS.md](LAWS.md) |
-| Why did we choose X? | [DECISIONS.md](DECISIONS.md); engine rules consolidated: [ENGINE](ENGINE.md) |
+| Why did we choose X? | [DECISIONS.md](record/DECISIONS.md); engine rules consolidated: [ENGINE](ENGINE.md) |
 | What does the workshop run on? | [SETUP.md](SETUP.md) |
 | How does anything work around here? | [§The mechanisms](#the-mechanisms) |
 | What does a term mean? | [§Terms](#terms) |
-| What's the contract of a task? | its spec in [docs/specs/](specs/README.md) |
+| What's the contract of a task? | its spec in [docs/record/specs/](record/specs/README.md) |
 | What's the story of a task in flight? | its memory file in [docs/memory/](memory/README.md), living on the task's branch |
-| What's the story of a shipped task? | its file in [docs/history/](history/README.md) |
-| What has shipped? | [DASHBOARD §Shipped](DASHBOARD.md#shipped-latest--full-record-the-ledger), derived from [history/](history/README.md) |
+| What's the story of a shipped task? | its file in [docs/record/history/](record/history/README.md) |
+| What has shipped? | [DASHBOARD §Shipped](DASHBOARD.md#shipped-latest--full-record-the-ledger), derived from [history/](record/history/README.md) |
 | How do I read the data files? | [§Reading the data files](#reading-the-data-files) |
 | I'm sitting at a new or second machine | [machine-setup](skills/machine-setup.md) |
 | How do I start a Design session? | [DESIGN-KICKOFF.md](DESIGN-KICKOFF.md) |
@@ -137,7 +137,7 @@ of self-authored diffs (the no-solo-approval law,
 [LAWS §Workflow](LAWS.md#workflow-non-negotiable)); as an optional
 thinking room, what it concludes still travels as a paste block
 (WEB-INSTRUCTIONS) — a tool since
-[D-046](DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock),
+[D-046](record/DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock),
 not a requirement: CC-direct is the standard working mode at both
 seats — discuss, decide, author, bookkeep in-session. Claude DESIGN
 draws: a no-write surface whose deliverables enter the repo only as
@@ -160,20 +160,20 @@ Sources:
 | [FOUNDATION.md](FOUNDATION.md) | timeless product identity & principles | founder-approved PRs (+ D-number) | living; only sentences no shipped version can falsify |
 | [ROADMAP.md](ROADMAP.md) | the version ladder — versions → stages → task checkboxes; the ONLY stored task state | structure via [decide](skills/decide.md); ticks via [ship](skills/ship.md)'s weld | living, rolling-wave depth |
 | [DASHBOARD.md](DASHBOARD.md) | the rendered state surface | rituals only — never hand-edited | living; repainted at ritual moments, never trusted over git |
-| [DECISIONS.md](DECISIONS.md) | the decision log, one D-number per choice | [decide](skills/decide.md) | append-only; entries are never rewritten |
+| [DECISIONS.md](record/DECISIONS.md) | the decision log, one D-number per choice | [decide](skills/decide.md) | append-only; entries are never rewritten |
 | [SETUP.md](SETUP.md) | everything the workshop runs on — stack, configs, tools; once-and-done vs per-machine vs staged | ops PRs | living |
 | [ENGINE.md](ENGINE.md) | the engine on paper — pipeline stages, decided rules in slots, OPEN register | [decide](skills/decide.md) ripples; invents nothing | living consolidation; seeds the [V1.S3](ROADMAP.md#v1s3--engine-core--two-families-deep) contract |
-| [IDEAS.md](IDEAS.md) | the single untriaged inbox — no Issues, no boards ([D-023](DECISIONS.md#d-023--2026-07--universal-draft-pr-at-birth--micro-pr-carve-out-recut-amends-d-002-d-008-d-020)) | Claude Code, the moment an idea or defect is voiced | lines leave only by triage into [ROADMAP](ROADMAP.md) via decide |
+| [IDEAS.md](IDEAS.md) | the single untriaged inbox — no Issues, no boards ([D-023](record/DECISIONS.md#d-023--2026-07--universal-draft-pr-at-birth--micro-pr-carve-out-recut-amends-d-002-d-008-d-020)) | Claude Code, the moment an idea or defect is voiced | lines leave only by triage into [ROADMAP](ROADMAP.md) via decide |
 | [DESIGN-KICKOFF.md](DESIGN-KICKOFF.md) | the Claude Design session preamble + governance rules | ops PRs | living until the repo-synced design system replaces it |
 | [WEB-INSTRUCTIONS.md](WEB-INSTRUCTIONS.md) | master copy of the Claude Web Project-instructions box | ops PRs | living; re-pasted into the box after every edit (the box is a copy, never the source) |
 | HOME.md | this manual & encyclopedia; zero live state | founder-approved PRs | living |
 | [data/FACTS.md](data/FACTS.md) | every fact the engine must know + every traveler parameter + the telemetry vocabulary ([Appendix C](data/FACTS.md#appendix-c--telemetry-vocabulary-what-the-app-records)) | [V1.S1](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code) tasks via PRs | living; IDs stable, extension append-only |
 | [data/SOURCES.md](data/SOURCES.md) | the vetted source registry, one entry per source slot | source-vetting tasks (T2–T6), consolidated at [T7](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code) | living; grades move under the demotion law |
 | [data/SCHEMA.md](data/SCHEMA.md) | human-readable mirror of the SQL schema | [V1.S1.T7](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code) | placeholder until T7 ships |
-| [specs/](specs/README.md) | per-task contracts + [TEMPLATE](specs/TEMPLATE.md) | born at task birth when discussion opened the task; [ship](skills/ship.md) finalizes | open → shipped or superseded; never deleted |
-| [memory/](memory/README.md) | in-flight task stories in the locked format ([TEMPLATE](memory/TEMPLATE.md)) | the task's own seat — baton-holder at rituals, lanes at their four moments | lives on the task's branch; MOVES to history/ at ship |
-| [history/](history/README.md) | permanent shipped narratives, one per task | [ship](skills/ship.md)'s atomic weld | frozen after landing (link repairs only) |
-| [skills/](skills/) | ritual procedures + workshop manuals, vault-readable | founder-approved PRs + promoted gotchas | living |
+| [record/specs/](record/specs/README.md) | per-task contracts + [TEMPLATE](record/specs/TEMPLATE.md) | born at task birth when discussion opened the task; [ship](skills/ship.md) finalizes | open → shipped or superseded; never deleted |
+| [memory/](memory/README.md) | in-flight task stories in the locked format ([TEMPLATE](memory/TEMPLATE.md)) | the task's own seat — baton-holder at rituals, lanes at their four moments | lives on the task's branch; MOVES to record/history/ at ship |
+| [record/history/](record/history/README.md) | permanent shipped narratives, one per task | [ship](skills/ship.md)'s atomic weld | frozen after landing (link repairs only) |
+| [skills/](skills) | ritual procedures + workshop manuals, vault-readable | founder-approved PRs + promoted gotchas | living |
 | docs/.obsidian/ | Obsidian's own workspace config | Obsidian | gitignored, never committed |
 | [../CLAUDE.md](../CLAUDE.md) | two-line shim importing [LAWS](LAWS.md) into every session | ops PRs | changes only if LAWS moves |
 | [../AGENTS.md](../AGENTS.md) | vendor note for non-Claude agents (Next.js docs pointer) | scaffold | rarely touched |
@@ -182,7 +182,7 @@ Sources:
 | `.claude/settings.local.json` | machine-local config (tokens, per-machine plugins) | each machine, by hand | gitignored; never in the repo |
 | `.claude/hooks/session-start.mjs` | session-start hook: sync main, inject the board, order the briefing | ops PRs | living |
 | `.claude/hooks/session-end.mjs` | session-end hook: the crash net — auto-commit + push WIP on lane branches | ops PRs | living |
-| `.claude/skills/*/SKILL.md` | trigger stubs, one per ritual/manual — each only points to its [docs/skills/](skills/) procedure | ops PRs | point-only; never hold procedure text |
+| `.claude/skills/*/SKILL.md` | trigger stubs, one per ritual/manual — each only points to its [docs/skills/](skills) procedure | ops PRs | point-only; never hold procedure text |
 
 Portraits of the load-bearing ones — what each is FOR, and what
 would break without it:
@@ -239,7 +239,7 @@ questions stay settled. Without it the same debates would replay
 forever, and nobody could tell a principle from an accident.
 
 Sources:
-[DECISIONS](DECISIONS.md)
+[DECISIONS](record/DECISIONS.md)
 
 **ENGINE** — The engine's blueprint, shaped like the engine itself:
 ten pipeline stages, each with inputs, outputs, a short procedure,
@@ -265,7 +265,7 @@ conclusions don't evaporate with the chat. Without specs, ship would
 have nothing objective to gate on, and "done" would mean "tired".
 
 Sources:
-[specs/](specs/README.md)
+[specs/](record/specs/README.md)
 [ship](skills/ship.md)
 
 **memory/** holds each task's living story in the locked format
@@ -280,12 +280,13 @@ Sources:
 
 **history/** is where memories retire: one narrative file per shipped
 task, moved at the weld with its shipped date and PR number. Git
-keeps the technical record; history/ keeps the meaning. Without it,
+keeps the technical record; record/history/ keeps the meaning.
+Without it,
 "why does this exist?" would eventually have no answer a human can
 read.
 
 Sources:
-[history/](history/README.md)
+[history/](record/history/README.md)
 
 **IDEAS** is the one inbox: any idea or defect voiced outside the
 current task's scope becomes a dated line, unasked. Without it, stray
@@ -302,7 +303,7 @@ because they only point. Without this split, the workshop's
 automation would be invisible and unauditable.
 
 Sources:
-[skills/](skills/)
+[skills/](skills)
 
 **data/** is the engine's ground truth on paper: FACTS (what the
 engine must know, what it may be told, and what the app records about
@@ -335,7 +336,7 @@ explains why they fit together.
 
 Sources:
 [LAWS](LAWS.md)
-[docs/skills/](skills/)
+[docs/skills/](skills)
 
 ### Task anatomy & lifecycle
 
@@ -351,7 +352,7 @@ see and claim it. The draft PR is the task's public window for its
 whole life.
 
 Sources:
-[D-023](DECISIONS.md#d-023--2026-07--universal-draft-pr-at-birth--micro-pr-carve-out-recut-amends-d-002-d-008-d-020)
+[D-023](record/DECISIONS.md#d-023--2026-07--universal-draft-pr-at-birth--micro-pr-carve-out-recut-amends-d-002-d-008-d-020)
 [parallel-lanes §Bench-first birth](skills/parallel-lanes.md#bench-first-birth-baton-holder-procedure)
 
 **Work — the heartbeat.** Commits are the heartbeat; every commit is
@@ -370,7 +371,8 @@ memory's final rewrite, the draft→ready flip, a plain-language
 summary — then THE GATE: the founder's explicit yes, never inferred.
 On approval comes the weld: ONE bookkeeping commit on the same
 branch — the ROADMAP checkbox ticks, the memory file MOVES to
-history/ (frontmatter gains its shipped date and PR number), the spec
+record/history/ (frontmatter gains its shipped date and PR number),
+the spec
 finalizes — then squash-merge, branch deleted, main pulled. Why
 atomic: state and work land together or die together. There is no
 instant where main claims "done" without containing the work, or
@@ -382,7 +384,7 @@ slug, minus the tick.)
 Sources:
 [ship](skills/ship.md)
 [ROADMAP](ROADMAP.md)
-[history/](history/README.md)
+[history/](record/history/README.md)
 
 **Status is never stored — it is read.** A task's status is not a
 field anywhere. It is read from the bench, the box, and the note:
@@ -473,7 +475,7 @@ honesty rails: "not recorded" beats reconstruction, and because chats
 are disposable, anything that never left a conversation is truthfully
 not recorded — that fix belongs to [handoff](skills/handoff.md)'s
 harvest, not to recall. Home: [recall](skills/recall.md) ·
-[D-039](DECISIONS.md#d-039--2026-07--recall--questions-answered-from-files-never-from-memory-the-d-036-routing-tables-read-mirror-model-invoked-at-discretion).
+[D-039](record/DECISIONS.md#d-039--2026-07--recall--questions-answered-from-files-never-from-memory-the-d-036-routing-tables-read-mirror-model-invoked-at-discretion).
 
 ### The rituals
 
@@ -535,7 +537,7 @@ ones get their own branch and the founder's approval.
 
 Sources:
 [decide](skills/decide.md)
-[DECISIONS](DECISIONS.md)
+[DECISIONS](record/DECISIONS.md)
 
 **liftoff** — fires on "take it to the cloud" and equivalents; closes
 the session. It runs a FULL handoff first (origin must be whole
@@ -544,7 +546,7 @@ eligibility gate, births anything unbirthed bench-first, spawns
 eligible lanes cloud-side, verifies each canary handshake, repaints
 the board as the flight plan — every lane airborne, held, or
 failed, each with its reason — and ends by FIRING THE COCKPIT
-([D-046](DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)),
+([D-046](record/DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)),
 handing it the baton for the flight. The board IS the flight plan
 and the birth prompt only points at it — a prompt is a delivery
 channel and channels truncate, so where they disagree the board
@@ -573,7 +575,7 @@ continue.
 
 Sources:
 [land](skills/land.md)
-[D-054](DECISIONS.md#d-054--2026-07--the-landing-skill--how-a-flight-ends-becomes-a-first-class-ritual-one-skill-with-two-modes-routed-by-fleet-state-retire--pause-and-transfer-the-fence-is-a-commit-so-the-resume-point-is-the-branch-tip-by-construction-wake-lock-mediated-with-its-honesty-clause-the-board-is-the-single-transfer-material-pickup-gains-the-fleet-resume-ask-and-its-cap-arithmetic-sessions-are-cattle-branches-are-the-work-charter-rule-6-becomes-a-pointer-the-effort-doctrine-moves-to-opus-5--xhigh-upholds-the-wake-lock-the-park-protocol-and-one-home-supersedes-the-opus-48-reliance-pair)
+[D-054](record/DECISIONS.md#d-054--2026-07--the-landing-skill--how-a-flight-ends-becomes-a-first-class-ritual-one-skill-with-two-modes-routed-by-fleet-state-retire--pause-and-transfer-the-fence-is-a-commit-so-the-resume-point-is-the-branch-tip-by-construction-wake-lock-mediated-with-its-honesty-clause-the-board-is-the-single-transfer-material-pickup-gains-the-fleet-resume-ask-and-its-cap-arithmetic-sessions-are-cattle-branches-are-the-work-charter-rule-6-becomes-a-pointer-the-effort-doctrine-moves-to-opus-5--xhigh-upholds-the-wake-lock-the-park-protocol-and-one-home-supersedes-the-opus-48-reliance-pair)
 
 ### The baton
 
@@ -648,7 +650,7 @@ Sources:
 [lane law](LAWS.md#parallel-lanes--cloud)
 [parallel-lanes](skills/parallel-lanes.md)
 [bench-first](#task-anatomy--lifecycle)
-[D-020](DECISIONS.md#d-020--2026-07--parallel-lanes-v2-native-lanes-replace-hand-built-orchestration)
+[D-020](record/DECISIONS.md#d-020--2026-07--parallel-lanes-v2-native-lanes-replace-hand-built-orchestration)
 
 While flying, a lane pushes every commit, never shares a file with
 any sibling (so merges can't collide), keeps its own memory at the
@@ -669,7 +671,7 @@ What a lane may touch:
 |---|---|
 | its own branch — code, spec, its memory | writes freely, pushing every commit |
 | its own PR | speaks through it: `BLOCKED:` comments, ready-flip, summary |
-| main — the [board](DASHBOARD.md), [IDEAS](IDEAS.md), [ROADMAP](ROADMAP.md) ticks, [history/](history/README.md), any merge | NEVER — baton-holder rituals own all of main's bookkeeping |
+| main — the [board](DASHBOARD.md), [IDEAS](IDEAS.md), [ROADMAP](ROADMAP.md) ticks, [history/](record/history/README.md), any merge | NEVER — baton-holder rituals own all of main's bookkeeping |
 
 Why the ROADMAP tick is the founder's line: the checkbox is the only
 stored task state, and it flips only inside ship's weld, downstream
@@ -704,7 +706,7 @@ task. Are you leaving? Then ask whether work should continue. If
 nothing continues, handoff parks the shop and closes the session. If
 work continues, one more question decides: is the machine staying on?
 If the machine is going dark — the standard away posture since
-[D-046](DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+[D-046](record/DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
 — liftoff lifts the eligible work to the cloud and fires the
 cockpit, briefed from the board. If it must stay on, go remote —
 the tether, the backstop posture: the control tower relocates to
@@ -752,8 +754,8 @@ immediately without asking (D-002 as recut by D-023).
 Sources:
 [DASHBOARD.md](DASHBOARD.md)
 [IDEAS.md](IDEAS.md)
-[D-002](DECISIONS.md#d-002--2026-06--handoff-note-merge-policy)
-[D-023](DECISIONS.md#d-023--2026-07--universal-draft-pr-at-birth--micro-pr-carve-out-recut-amends-d-002-d-008-d-020)
+[D-002](record/DECISIONS.md#d-002--2026-06--handoff-note-merge-policy)
+[D-023](record/DECISIONS.md#d-023--2026-07--universal-draft-pr-at-birth--micro-pr-carve-out-recut-amends-d-002-d-008-d-020)
 
 Why it is safe: both files are derived or inbox surfaces — the
 board is repainted wholesale from sources by the next ritual
@@ -813,8 +815,8 @@ cannot drift from its procedure (D-024; now a law in LAWS §Knowledge
 & tracking).
 
 Sources:
-[docs/skills/](skills/)
-[D-024](DECISIONS.md#d-024--2026-07--architecture-v2-memoryhistory-narrative-layer-dashboard-as-sole-state-surface-rituals-as-skills-amends-d-008-retires-handoffmd--shiplogmd)
+[docs/skills/](skills)
+[D-024](record/DECISIONS.md#d-024--2026-07--architecture-v2-memoryhistory-narrative-layer-dashboard-as-sole-state-surface-rituals-as-skills-amends-d-008-retires-handoffmd--shiplogmd)
 [LAWS §Knowledge & tracking](LAWS.md#knowledge--tracking)
 
 Skills are model-invoked: the stub's description is what the model
@@ -827,7 +829,7 @@ unprompted. Rituals fire on moments, not remembered commands — though
 the founder may invoke one directly when the invocation carries
 something: `/handoff` at the end of a leaving message is the inline
 paste's carrier
-([D-040](DECISIONS.md#d-040--2026-07--handoff-input-inversion--the-leaving-message-carries-the-webdesign-paste-inline-the-never-skipped-question-is-retired-a-bare-trigger-means-none-amends-the-two-touchpoints-laws-wording-upholds-d-032)).
+([D-040](record/DECISIONS.md#d-040--2026-07--handoff-input-inversion--the-leaving-message-carries-the-webdesign-paste-inline-the-never-skipped-question-is-retired-a-bare-trigger-means-none-amends-the-two-touchpoints-laws-wording-upholds-d-032)).
 
 Sources:
 [handoff](skills/handoff.md)
@@ -864,14 +866,14 @@ ledger). The board's shape is defined once, in handoff §4.
 
 Sources:
 [DASHBOARD](DASHBOARD.md)
-[the ledger](history/README.md#the-ledger)
+[the ledger](record/history/README.md#the-ledger)
 [handoff §4](skills/handoff.md)
 
 ## Response doctrine
 
 How every surface speaks to the founder — ONE standard, this its
 one home
-([D-052](DECISIONS.md#d-052--2026-07--response-doctrine--one-standard-for-every-surface-speaking-to-the-founder-answer-first-explicit-steps-purpose-shaped-explanation-live-derived-state-glyph-verdicts-the-command-card-the-fleet-table-report-the-ritual-status-templates-web-instructions-v5-ships-retires-the-v4-paste-block-loop-master-upholds-d-046s-cc-direct-doctrine-and-the-derivation-law)).
+([D-052](record/DECISIONS.md#d-052--2026-07--response-doctrine--one-standard-for-every-surface-speaking-to-the-founder-answer-first-explicit-steps-purpose-shaped-explanation-live-derived-state-glyph-verdicts-the-command-card-the-fleet-table-report-the-ritual-status-templates-web-instructions-v5-ships-retires-the-v4-paste-block-loop-master-upholds-d-046s-cc-direct-doctrine-and-the-derivation-law)).
 Rituals and charters REFERENCE this section; none copies it.
 
 (a) ANSWER FIRST. A question's first line is its answer; a task's
@@ -894,7 +896,7 @@ origin at answer time (the derivation law, restated as style).
 names the fix AND where it happens.
 
 Sources:
-[D-052](DECISIONS.md#d-052--2026-07--response-doctrine--one-standard-for-every-surface-speaking-to-the-founder-answer-first-explicit-steps-purpose-shaped-explanation-live-derived-state-glyph-verdicts-the-command-card-the-fleet-table-report-the-ritual-status-templates-web-instructions-v5-ships-retires-the-v4-paste-block-loop-master-upholds-d-046s-cc-direct-doctrine-and-the-derivation-law)
+[D-052](record/DECISIONS.md#d-052--2026-07--response-doctrine--one-standard-for-every-surface-speaking-to-the-founder-answer-first-explicit-steps-purpose-shaped-explanation-live-derived-state-glyph-verdicts-the-command-card-the-fleet-table-report-the-ritual-status-templates-web-instructions-v5-ships-retires-the-v4-paste-block-loop-master-upholds-d-046s-cc-direct-doctrine-and-the-derivation-law)
 [LAWS §Knowledge & tracking](LAWS.md#knowledge--tracking)
 
 ## Command card
@@ -908,7 +910,7 @@ does · when to reach for it. Rituals point here; none re-lists.
 - `claude --teleport [id]` / `/teleport` — pulls a cloud session
   into this terminal. Reach for it to drive a flight from the
   desk. (Execution RELOCATES to this machine —
-  [D-049](DECISIONS.md#d-049--2026-07--gh-second-path--gh-api-rest-through-the-github-proxy-is-the-cockpits-second-api-path-a-connector-flap-stops-costing-command-r2-gains-the-automatic-gh-rung-self-id-by-session-env-amends-d-048-corrects-the-193-api-map-upholds-d-047-and-verify-before-rely)'s
+  [D-049](record/DECISIONS.md#d-049--2026-07--gh-second-path--gh-api-rest-through-the-github-proxy-is-the-cockpits-second-api-path-a-connector-flap-stops-costing-command-r2-gains-the-automatic-gh-rung-self-id-by-session-env-amends-d-048-corrects-the-193-api-map-upholds-d-047-and-verify-before-rely)'s
   probe finding: a teleported session is a local session from
   then on.)
 - `/mcp` — retries a failed connector in the current session; the
@@ -933,7 +935,7 @@ does · when to reach for it. Rituals point here; none re-lists.
   and want the work waiting there.
 - Esc — interrupts the running turn, safe everywhere except the
   weld's atomic commit;
-  [D-050](DECISIONS.md#d-050--2026-07--session-lifecycle--closed--dead-the-close-locks-wall-softens-to-injected-read-only-doctrine-interrupt-capture-is-standing-format-the-claude-residue-sweep-is-pickup-hygiene-ideas-is-an-inbox-not-an-archive-amends-the-d-046-era-close-wall-design-upholds-the-park-protocol-and-no-solo-approval)'s
+  [D-050](record/DECISIONS.md#d-050--2026-07--session-lifecycle--closed--dead-the-close-locks-wall-softens-to-injected-read-only-doctrine-interrupt-capture-is-standing-format-the-claude-residue-sweep-is-pickup-hygiene-ideas-is-an-inbox-not-an-archive-amends-the-d-046-era-close-wall-design-upholds-the-park-protocol-and-no-solo-approval)'s
   ⏸ capture catches what was in flight. ONE CARVE-OUT: the ⏸
   block preserves the LEAD's work, never the teammates
   themselves — what they FOUND survives only if written down,
@@ -954,7 +956,7 @@ THE BOUNDARY, and it is the whole of this section: **agent teams
 are for EXPLORATION AND REVIEW at a ground seat. LANES REMAIN THE
 AUTHORSHIP MECHANISM.** A team never authors a bench, never
 merges, and never runs a ritual
-([D-055](DECISIONS.md#d-055--2026-07--agent-teams--the-boundary-teams-are-for-exploration-and-review-at-a-ground-seat-lanes-remain-the-authorship-mechanism-two-risks-become-law-single-sitting-only--an-explicit-carve-out-to-d-050s-interrupt-promise--and-a-teammate-authored-diff-is-self-authored-under-no-solo-approval-the-reviewers-model-settled-by-verification-not-guess-the-founder-side-config-recorded-upholds-the-lane-law-no-solo-approval-and-one-home-gives-the-experimental-flag-its-consumer)).
+([D-055](record/DECISIONS.md#d-055--2026-07--agent-teams--the-boundary-teams-are-for-exploration-and-review-at-a-ground-seat-lanes-remain-the-authorship-mechanism-two-risks-become-law-single-sitting-only--an-explicit-carve-out-to-d-050s-interrupt-promise--and-a-teammate-authored-diff-is-self-authored-under-no-solo-approval-the-reviewers-model-settled-by-verification-not-guess-the-founder-side-config-recorded-upholds-the-lane-law-no-solo-approval-and-one-home-gives-the-experimental-flag-its-consumer)).
 
 What a team IS, in one line: several full Claude Code sessions —
 a fixed lead plus teammates, each with its own context window —
@@ -989,9 +991,9 @@ sitting ends. ENFORCED, not merely stated:
 captures the team's findings and shuts it down BEFORE anything is
 parked, and [pickup §2](skills/pickup.md#2--self-heal) carries the
 ghost-teammate recovery note for the case that slips through
-([D-056](DECISIONS.md#d-056--2026-07--team-aware-leaving-rituals--no-ritual-lets-a-live-agent-team-outlive-the-sitting-that-made-it-handoff-shuts-the-team-down-before-parking-anything-and-captures-its-findings-into-the-record-first-land-states-the-cockpit-cannot-lead-a-team-case-once-and-routes-the-ground-seat-to-handoff-pickup-gains-the-ghost-teammate-recovery-note-and-the--block-gains-what-the-team-had-found-closes-d-055s-deferred-gap-upholds-one-home-and-the-park-protocol)).
+([D-056](record/DECISIONS.md#d-056--2026-07--team-aware-leaving-rituals--no-ritual-lets-a-live-agent-team-outlive-the-sitting-that-made-it-handoff-shuts-the-team-down-before-parking-anything-and-captures-its-findings-into-the-record-first-land-states-the-cockpit-cannot-lead-a-team-case-once-and-routes-the-ground-seat-to-handoff-pickup-gains-the-ghost-teammate-recovery-note-and-the--block-gains-what-the-team-had-found-closes-d-055s-deferred-gap-upholds-one-home-and-the-park-protocol)).
 This is an explicit CARVE-OUT to
-[D-050](DECISIONS.md#d-050--2026-07--session-lifecycle--closed--dead-the-close-locks-wall-softens-to-injected-read-only-doctrine-interrupt-capture-is-standing-format-the-claude-residue-sweep-is-pickup-hygiene-ideas-is-an-inbox-not-an-archive-amends-the-d-046-era-close-wall-design-upholds-the-park-protocol-and-no-solo-approval)'s
+[D-050](record/DECISIONS.md#d-050--2026-07--session-lifecycle--closed--dead-the-close-locks-wall-softens-to-injected-read-only-doctrine-interrupt-capture-is-standing-format-the-claude-residue-sweep-is-pickup-hygiene-ideas-is-an-inbox-not-an-archive-amends-the-d-046-era-close-wall-design-upholds-the-park-protocol-and-no-solo-approval)'s
 interrupt promise: the ⏸ capture block preserves THE LEAD's work,
 never the teammates themselves. What they FOUND survives only
 because the block carries a conditional TEAM FINDINGS field
@@ -1025,7 +1027,7 @@ teammates load those from project and user settings like any
 ordinary session.
 
 Sources:
-[D-055](DECISIONS.md#d-055--2026-07--agent-teams--the-boundary-teams-are-for-exploration-and-review-at-a-ground-seat-lanes-remain-the-authorship-mechanism-two-risks-become-law-single-sitting-only--an-explicit-carve-out-to-d-050s-interrupt-promise--and-a-teammate-authored-diff-is-self-authored-under-no-solo-approval-the-reviewers-model-settled-by-verification-not-guess-the-founder-side-config-recorded-upholds-the-lane-law-no-solo-approval-and-one-home-gives-the-experimental-flag-its-consumer)
+[D-055](record/DECISIONS.md#d-055--2026-07--agent-teams--the-boundary-teams-are-for-exploration-and-review-at-a-ground-seat-lanes-remain-the-authorship-mechanism-two-risks-become-law-single-sitting-only--an-explicit-carve-out-to-d-050s-interrupt-promise--and-a-teammate-authored-diff-is-self-authored-under-no-solo-approval-the-reviewers-model-settled-by-verification-not-guess-the-founder-side-config-recorded-upholds-the-lane-law-no-solo-approval-and-one-home-gives-the-experimental-flag-its-consumer)
 [LAWS §Workflow](LAWS.md#workflow-non-negotiable)
 [parallel-lanes](skills/parallel-lanes.md)
 [SETUP §Models & effort](SETUP.md#once-and-done--cloud-accounts)
@@ -1039,11 +1041,11 @@ never duplicates it.
 | Information | Home | Appended by | Upserted by |
 |---|---|---|---|
 | Task story · decisions-in-flight · dead ends · blocks | its [memory/<id>.md](memory/TEMPLATE.md) | the working session, at the four diary moments | cognitive rewrite at handoff; frozen at weld |
-| Shipped narrative | [history/](history/README.md) (four doors) | the atomic weld, quadrant per the legend | frozen — link repairs only |
-| Chronology of everything shipped | [the ledger](history/README.md#the-ledger) | one weld-prepended line | never — append-only |
+| Shipped narrative | [record/history/](record/history/README.md) (four doors) | the atomic weld, quadrant per the legend | frozen — link repairs only |
+| Chronology of everything shipped | [the ledger](record/history/README.md#the-ledger) | one weld-prepended line | never — append-only |
 | Fresh gotcha / machine trap | the task's memory, or [DASHBOARD](DASHBOARD.md) Needs-you | the session / a ritual | promoted to LAWS · a skill · SETUP via PR when permanent |
 | Permanent workshop rule | [LAWS](LAWS.md) | PR + D-number | D-number PR only |
-| Any decision | [DECISIONS](DECISIONS.md) | decide, append-only | never — amendments are new entries |
+| Any decision | [DECISIONS](record/DECISIONS.md) | decide, append-only | never — amendments are new entries |
 | Plan structure | [ROADMAP](ROADMAP.md) | decide-gated PR | structure via D; ticks by ship only |
 | Status · progress · counts | [DASHBOARD](DASHBOARD.md) | ritual repaint, at render time | the repaint IS the upsert; never hand-edited |
 | Unvisited idea | [IDEAS](IDEAS.md) | ritual harvest / micro-PR | promoted out via decide when adopted |
@@ -1085,19 +1087,19 @@ the link for the full story.
 - **rolling wave** — the planning-depth law: the active version
   fully staged and tasked, the next a rough bucket, the one after
   name-only, sockets pooled unversioned
-  ([D-004](DECISIONS.md#d-004--2026-06--planning-notation--rolling-wave-depth),
+  ([D-004](record/DECISIONS.md#d-004--2026-06--planning-notation--rolling-wave-depth),
   amended by
-  [D-022](DECISIONS.md#d-022--2026-07--version-ladder--lifespan-split-amends-d-004)).
+  [D-022](record/DECISIONS.md#d-022--2026-07--version-ladder--lifespan-split-amends-d-004)).
   Home: [§Roadmap manual](#roadmap-manual).
 - **spec** — a task's stable contract (goal, scope edges, plan,
   Done-means), born from the discussion that opened the task;
   skipped when the roadmap line is already fully specified.
-  Home: [specs/](specs/README.md) ·
+  Home: [specs/](record/specs/README.md) ·
   [§Task anatomy](#task-anatomy--lifecycle).
 - **frontmatter** — the YAML block (type / title / status, plus
   per-class keys) atop every doc; renders as a table on GitHub and
   as Properties in Obsidian. Templates:
-  [specs/TEMPLATE](specs/TEMPLATE.md) ·
+  [specs/TEMPLATE](record/specs/TEMPLATE.md) ·
   [memory/TEMPLATE](memory/TEMPLATE.md).
 - **weave rule** — every mention of a roadmap ID, D-number, fact or
   parameter ID, or sibling doc in docs/ is a markdown link, never
@@ -1140,7 +1142,7 @@ the link for the full story.
   rewrite. Home: [ROADMAP §Pool](ROADMAP.md#pool--unversioned-sockets).
 - **D-number** — one permanently recorded decision (D-001, D-002,
   …) with rationale and rejected alternatives.
-  Home: [DECISIONS](DECISIONS.md).
+  Home: [DECISIONS](record/DECISIONS.md).
 
 ### Workflow & rituals
 
@@ -1160,8 +1162,8 @@ the link for the full story.
 - **control tower** — the ground Claude Code session the founder
   is actively driving; holder of the baton, sole runner of rituals
   and writer of main's bookkeeping. Called "cockpit" before
-  [D-046](DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
-  — [history/](history/README.md) files and DECISIONS entries
+  [D-046](record/DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+  — [history/](record/history/README.md) files and DECISIONS entries
   written before D-046 use "cockpit" in this ground meaning. Home:
   [§The baton](#the-baton) ·
   [LAWS §Parallel lanes & cloud](LAWS.md#parallel-lanes--cloud).
@@ -1199,7 +1201,7 @@ the link for the full story.
 - **bench-first** — the universal birth order: branch → spec (if
   discussed) → memory stub → draft PR, all pushed to origin BEFORE
   any session works the task
-  ([D-023](DECISIONS.md#d-023--2026-07--universal-draft-pr-at-birth--micro-pr-carve-out-recut-amends-d-002-d-008-d-020)).
+  ([D-023](record/DECISIONS.md#d-023--2026-07--universal-draft-pr-at-birth--micro-pr-carve-out-recut-amends-d-002-d-008-d-020)).
   Home: [§Task anatomy](#task-anatomy--lifecycle).
 - **lane** — one parallel work stream (background agent, worktree
   session, or cloud session) flying one task on its own branch.
@@ -1238,7 +1240,7 @@ the link for the full story.
 - **wake-lock** — a lane's first act on ANY wake or resume: re-read
   its own memory Status; a Status it does not own (parked · respawned
   · superseded · failed) means push nothing and terminate
-  ([D-032](DECISIONS.md#d-032--2026-07--fleet-continuity--handoff-parks-every-local-lane-liftoff-respawns-parked-benches-wake-lock-parks-every-outcome-extends-the-d-020d-023-lane-law-upholds-d-009)).
+  ([D-032](record/DECISIONS.md#d-032--2026-07--fleet-continuity--handoff-parks-every-local-lane-liftoff-respawns-parked-benches-wake-lock-parks-every-outcome-extends-the-d-020d-023-lane-law-upholds-d-009)).
   Home: [parallel-lanes §Wake-lock &
   parking](skills/parallel-lanes.md#wake-lock--parking).
 - **respawn / adopt** — [liftoff](skills/liftoff.md) re-flying a
@@ -1261,7 +1263,7 @@ the link for the full story.
   and the control tower relocates to the founder's phone via Remote
   Control. A posture, not a leaving ritual: parks nothing, closes
   nothing, keeps the baton; a BACKSTOP since
-  [D-046](DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+  [D-046](record/DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
   — machine-off + the cockpit is the plan.
   Home: [go-remote](skills/go-remote.md) ·
   [§Delegation](#delegation--the-away-mode-chooser).
@@ -1305,13 +1307,14 @@ the link for the full story.
   [pickup §6](skills/pickup.md#6--fleet-resume-on-the-founders-answer).
 - **memory file** — docs/memory/&lt;id&gt;.md: a task's living
   story in the locked format (Status first), on the task's branch,
-  rewritten at rituals and the lane moments; MOVES to history/ at
+  rewritten at rituals and the lane moments; MOVES to
+  record/history/ at
   ship. Home: [memory/](memory/README.md) ·
   [§Information relay & retention](#information-relay--retention).
-- **history file** — docs/history/&lt;id&gt;.md: the memory's final
+- **history file** — docs/record/history/&lt;id&gt;.md: the memory's final
   form, landed by the weld with shipped date and PR number; the
   permanent narrative beside git's technical record.
-  Home: [history/](history/README.md).
+  Home: [history/](record/history/README.md).
 - **atomic weld** — ship's single bookkeeping commit (ROADMAP tick
   + memory→history move + spec finalize) merged together with the
   work, so state and work land or die together. Home:
@@ -1325,9 +1328,9 @@ the link for the full story.
 - **micro-PR** — the one self-merging PR class: written by a
   ritual, touching ONLY [DASHBOARD.md](DASHBOARD.md) and/or
   [IDEAS.md](IDEAS.md)
-  ([D-002](DECISIONS.md#d-002--2026-06--handoff-note-merge-policy)
+  ([D-002](record/DECISIONS.md#d-002--2026-06--handoff-note-merge-policy)
   as amended by
-  [D-023](DECISIONS.md#d-023--2026-07--universal-draft-pr-at-birth--micro-pr-carve-out-recut-amends-d-002-d-008-d-020)).
+  [D-023](record/DECISIONS.md#d-023--2026-07--universal-draft-pr-at-birth--micro-pr-carve-out-recut-amends-d-002-d-008-d-020)).
   Home: [§Micro-PRs](#micro-prs).
 - **the board** — [DASHBOARD.md](DASHBOARD.md): the one rendered
   state surface, repainted wholesale by rituals, stamped, and
@@ -1353,7 +1356,7 @@ the link for the full story.
 - **pacing law** — finish-first: the ongoing task and pending
   blocks outrank new tasks; at most "Now" plus one parallel slot
   needs the founder's attention; stopping is a valid next step
-  ([D-009](DECISIONS.md#d-009--2026-06--pacing-law-finish-first-flexible-cap)).
+  ([D-009](record/DECISIONS.md#d-009--2026-06--pacing-law-finish-first-flexible-cap)).
 
 ### Product & engine
 
@@ -1369,7 +1372,7 @@ the link for the full story.
 - **planning brain** — Claude (server-side API) doing the
   conversational planning; consumes the engine's verdicts, never
   invents facts
-  ([D-005](DECISIONS.md#d-005--2026-06--stack-re-trial-vs-foundation-v1-d-001-upheld--frontend-layer)).
+  ([D-005](record/DECISIONS.md#d-005--2026-06--stack-re-trial-vs-foundation-v1-d-001-upheld--frontend-layer)).
 - **check module** — one pluggable condition checker per fact
   family; adding one never rewrites what exists — it adds a module,
   and every new check re-tunes the rankings by design. Home:
@@ -1382,7 +1385,7 @@ the link for the full story.
 - **reliability ladder** — the six fallback rungs for
   coverage-risky facts: global source → regional source → computed
   → estimated (labeled) → LLM-research grade (unverified) → refusal
-  ([D-010](DECISIONS.md#d-010--2026-06--global-coverage-via-graded-fallback-ladders);
+  ([D-010](record/DECISIONS.md#d-010--2026-06--global-coverage-via-graded-fallback-ladders);
   [ENGINE §3](ENGINE.md#3-acquire--get-the-facts)).
 - **preferences-as-defaults** — the engine honors a stated
   preference but surfaces a significantly better alternative when
@@ -1391,16 +1394,16 @@ the link for the full story.
 - **provenance** — every stored traveler value is marked stated,
   inferred, or default; stated beats inferred beats default, newer
   beats older
-  ([D-012](DECISIONS.md#d-012--2026-06--elicitation--inference-policy-ask-tiers-provenance-upsert);
+  ([D-012](record/DECISIONS.md#d-012--2026-06--elicitation--inference-policy-ask-tiers-provenance-upsert);
   [ENGINE §2](ENGINE.md#2-intake--resolve-the-traveler)).
 - **floor input** — the guaranteed minimum: origin + dates is
   always enough to get a plan
-  ([D-011](DECISIONS.md#d-011--2026-06--traveler-input-vocabulary-rich-nullable-tiered-append-only)).
+  ([D-011](record/DECISIONS.md#d-011--2026-06--traveler-input-vocabulary-rich-nullable-tiered-append-only)).
   Home: [FOUNDATION §What Roam is](FOUNDATION.md#what-roam-is).
 - **fact cache** — the bitemporal, append-only store of every
   fetched fact: valid_for (when true in the world) + recorded_at
   (when we learned it); values are superseded, never overwritten
-  ([D-015](DECISIONS.md#d-015--2026-06--data-asset-law-bitemporal-append-only-license-segmented)).
+  ([D-015](record/DECISIONS.md#d-015--2026-06--data-asset-law-bitemporal-append-only-license-segmented)).
   Explained: [§Reading the data files](#reading-the-data-files).
 - **freshness window** — the maximum cache staleness a fact
   tolerates before refetch; windows tighten as the activity date
@@ -1417,7 +1420,7 @@ the link for the full story.
   [FOUNDATION §The dataset](FOUNDATION.md#the-dataset--the-quiet-asset).
 - **SI-canonical units** — all storage and engine math is
   SI/metric; conversion to US units happens only at display time
-  ([D-013](DECISIONS.md#d-013--2026-06--canonical-units-si-storage-display-time-conversion);
+  ([D-013](record/DECISIONS.md#d-013--2026-06--canonical-units-si-storage-display-time-conversion);
   [ENGINE §7](ENGINE.md#7-render--honest-pixels)).
 
 ## Reading the data files
@@ -1492,7 +1495,7 @@ failure, drift, or miscalibration, promoted only by re-vetting
 
 Sources:
 [ENGINE §7](ENGINE.md#7-render--honest-pixels)
-[D-015](DECISIONS.md#d-015--2026-06--data-asset-law-bitemporal-append-only-license-segmented)
+[D-015](record/DECISIONS.md#d-015--2026-06--data-asset-law-bitemporal-append-only-license-segmented)
 
 **The reliability ladder.** Facts marked ⚠ are coverage-risky:
 nothing global and authoritative serves them everywhere. Each
@@ -1506,7 +1509,7 @@ reliability law bending: quality degrades HONESTLY, rung by labeled
 rung.
 
 Sources:
-[D-010](DECISIONS.md#d-010--2026-06--global-coverage-via-graded-fallback-ladders)
+[D-010](record/DECISIONS.md#d-010--2026-06--global-coverage-via-graded-fallback-ladders)
 
 **Freshness windows.** Every fact declares the maximum cache
 staleness it tolerates before refetch — from 1–3 hours (near-term
@@ -1524,14 +1527,14 @@ attributed layers; world data stays strictly separate from traveler
 and event data.
 
 Sources:
-[D-015](DECISIONS.md#d-015--2026-06--data-asset-law-bitemporal-append-only-license-segmented)
+[D-015](record/DECISIONS.md#d-015--2026-06--data-asset-law-bitemporal-append-only-license-segmented)
 [quiet asset](FOUNDATION.md#the-dataset--the-quiet-asset)
 
 **Units.** Everything stored or computed is SI/metric, exclusively;
 conversion to US units happens only at render time (D-013).
 
 Sources:
-[D-013](DECISIONS.md#d-013--2026-06--canonical-units-si-storage-display-time-conversion)
+[D-013](record/DECISIONS.md#d-013--2026-06--canonical-units-si-storage-display-time-conversion)
 
 **A SOURCES entry** records, per slot: the facts served · the chosen
 source and why · the confirmed payload keys (checked against the
@@ -1546,7 +1549,7 @@ Dictionary keys.
 
 Sources:
 [SOURCES](data/SOURCES.md)
-[D-015](DECISIONS.md#d-015--2026-06--data-asset-law-bitemporal-append-only-license-segmented)
+[D-015](record/DECISIONS.md#d-015--2026-06--data-asset-law-bitemporal-append-only-license-segmented)
 
 **The traveler side.** FACTS Appendix A holds the TP parameters —
 everything a traveler may TELL the engine. Each row carries an ask
@@ -1561,8 +1564,8 @@ traveler inputs.
 
 Sources:
 [FACTS Appendix A](data/FACTS.md#appendix-a--traveler-parameters-tp-0147--per-d-011--d-012)
-[D-011](DECISIONS.md#d-011--2026-06--traveler-input-vocabulary-rich-nullable-tiered-append-only)
-[D-012](DECISIONS.md#d-012--2026-06--elicitation--inference-policy-ask-tiers-provenance-upsert)
+[D-011](record/DECISIONS.md#d-011--2026-06--traveler-input-vocabulary-rich-nullable-tiered-append-only)
+[D-012](record/DECISIONS.md#d-012--2026-06--elicitation--inference-policy-ask-tiers-provenance-upsert)
 [Appendix B](data/FACTS.md#appendix-b--plan-parameters-t7-must-schema-not-world-facts)
 
 **Telemetry.** Appendix C defines three registers: behavior events
@@ -1573,7 +1576,7 @@ drift, ladder falls — the demotion law's evidence).
 
 Sources:
 [Appendix C](data/FACTS.md#appendix-c--telemetry-vocabulary-what-the-app-records)
-[D-014](DECISIONS.md#d-014--2026-06--telemetry-posture-capture-now-use-later)
+[D-014](record/DECISIONS.md#d-014--2026-06--telemetry-posture-capture-now-use-later)
 
 ## Equipment & environment
 
@@ -1593,9 +1596,9 @@ gate is real).
 Sources:
 [engine/](../engine/README.md)
 [SETUP §Stack](SETUP.md#stack)
-[D-001](DECISIONS.md#d-001--2026-06--tech-stack)
-[D-005](DECISIONS.md#d-005--2026-06--stack-re-trial-vs-foundation-v1-d-001-upheld--frontend-layer)
-[D-007](DECISIONS.md#d-007--2026-06--shadcnui-builds-on-base-ui-not-radix)
+[D-001](record/DECISIONS.md#d-001--2026-06--tech-stack)
+[D-005](record/DECISIONS.md#d-005--2026-06--stack-re-trial-vs-foundation-v1-d-001-upheld--frontend-layer)
+[D-007](record/DECISIONS.md#d-007--2026-06--shadcnui-builds-on-base-ui-not-radix)
 [ship](skills/ship.md)
 
 **The skills**, one line each: pickup — the sit-down briefing,
@@ -1667,9 +1670,9 @@ Sources:
 ## Roadmap manual
 
 How to read [ROADMAP.md](ROADMAP.md)
-([D-004](DECISIONS.md#d-004--2026-06--planning-notation--rolling-wave-depth),
+([D-004](record/DECISIONS.md#d-004--2026-06--planning-notation--rolling-wave-depth),
 amended by
-[D-022](DECISIONS.md#d-022--2026-07--version-ladder--lifespan-split-amends-d-004)):
+[D-022](record/DECISIONS.md#d-022--2026-07--version-ladder--lifespan-split-amends-d-004)):
 
 - **Notation** — Vn = Version · Vn.Sm = Stage (ordered, each with a
   completion criterion) · Vn.Sm.Tk = Task, the PR-sized unit (one task =
@@ -1686,7 +1689,7 @@ amended by
   workshop/ops tasks with no roadmap line; never hand-assigned
   labels beyond these ([IDEAS](IDEAS.md) is the inbox for
   everything unnumbered —
-  [D-023](DECISIONS.md#d-023--2026-07--universal-draft-pr-at-birth--micro-pr-carve-out-recut-amends-d-002-d-008-d-020)).
+  [D-023](record/DECISIONS.md#d-023--2026-07--universal-draft-pr-at-birth--micro-pr-carve-out-recut-amends-d-002-d-008-d-020)).
 - **Small steps** — checkboxes in the task's spec or PR
   description, never in [ROADMAP](ROADMAP.md).
 - **Depth (rolling wave)** — active version fully staged and
