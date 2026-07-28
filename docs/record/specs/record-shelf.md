@@ -2,12 +2,12 @@
 type: spec
 id: record-shelf
 title: The record shelf — docs/record/ is born, the frozen record in one place ([D-057](../DECISIONS.md#d-057--2026-07--the-record-shelf--the-frozen-record-moves-under-one-roof-docsrecord-is-born-history--specs--decisions-in-memory-stays-living-at-root-the-enabling-ruling--a-mechanical-link-path-segment-repair-inside-a-frozen-file-is-maintenance-not-a-content-edit-append-only-governs-meaning-not-bytes-intra-record-links-resolve-by-construction-upholds-append-only-one-home-and-the-weave-rule))
-status: open
+status: shipped
 stage: workshop
 branch: docs/record-shelf
-pr: —
+pr: 229
 opened: 2026-07-27
-shipped: —
+shipped: 2026-07-27 20:13
 ---
 
 # record-shelf — the frozen record moves under one roof

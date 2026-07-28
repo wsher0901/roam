@@ -2346,4 +2346,4 @@ whole-corpus mechanical link sweep (every relative link into the
 moved surfaces, ~1580 links across 158 files — living files gain
 `record/`, frozen files gain one `../`) ·
 [the spec](specs/record-shelf.md) + [its
-memory](../memory/record-shelf.md) · this entry.
+memory](history/workshop/definition/record-shelf.md) · this entry.
