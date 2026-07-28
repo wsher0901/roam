@@ -275,7 +275,12 @@ whole.
   welds that advance it, linking down into decides and history as
   footnotes; the primary sources stay immutable beneath. Queued
   after the [WEB-INSTRUCTIONS](WEB-INSTRUCTIONS.md) v5 rewrite —
-  its own chat.
+  its own chat. — CLOSED 2026-07-27 by
+  [D-059](record/DECISIONS.md#d-059--2026-07--the-chronicle-layer--living-stories-above-the-frozen-record-one-story-per-item-the-ending-rule--settled-in-any-format-means-the-story-is-written-a-later-fix-is-incorporated-and-the-ending-rewritten-at-that-weld-retirement-is-a-settlement-docschronicle-one-file-per-story-indexmd-shelving-four-shelves-immutability-beneath--record-untouched-stories-link-down-as-footnotes-down-links-only--a-story-never-cites-another-storys-prose-supersedes-the-07-23-three-chapter-shape-the-ship-synthesis-at-weld-step-deferred-to-the-first-story-weld):
+  one story per ITEM supersedes the three-chapter shape — the
+  three threads survive as INDEX shelves (plus Roam); the census
+  is the D-059 bench's draft
+  [INDEX](chronicle/INDEX.md).
 - 2026-07-24 (Claude Code, the team-aware-leaving bench, found by
   the ship §6 critic on its Opus pass): THE ONE UNCOVERED ROAD OUT
   of a sitting. [D-056](record/DECISIONS.md#d-056--2026-07--team-aware-leaving-rituals--no-ritual-lets-a-live-agent-team-outlive-the-sitting-that-made-it-handoff-shuts-the-team-down-before-parking-anything-and-captures-its-findings-into-the-record-first-land-states-the-cockpit-cannot-lead-a-team-case-once-and-routes-the-ground-seat-to-handoff-pickup-gains-the-ghost-teammate-recovery-note-and-the--block-gains-what-the-team-had-found-closes-d-055s-deferred-gap-upholds-one-home-and-the-park-protocol)
