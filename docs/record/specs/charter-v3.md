@@ -2,12 +2,12 @@
 type: spec
 id: charter-v3
 title: The box-master diet — the cockpit charter slimmed to rules, invariants and pointers (D-065)
-status: open
+status: shipped
 stage: workshop
 branch: docs/charter-v3
-pr: —
+pr: 246
 opened: 2026-07-29
-shipped: —
+shipped: 2026-07-29 12:17
 ---
 
 # charter-v3 — a box carries rules, not procedures

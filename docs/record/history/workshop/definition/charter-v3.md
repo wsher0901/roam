@@ -1,14 +1,16 @@
 ---
-type: memory
+type: history
 id: charter-v3
-updated: 2026-07-29 12:06 · ship · work PC
+updated: 2026-07-29 12:17 · weld · work PC
+shipped: 2026-07-29 12:17
+pr: 246
 ---
 # charter-v3 — a box carries rules, not procedures
 
 ## Status
 
 complete, awaiting merge — 2026-07-29, work PC. D-065 is minted,
-the ladder lives in [HOME](../HOME.md) under a title naming both
+the ladder lives in [HOME](../../../../HOME.md) under a title naming both
 halves, and the charter's fence is v3 — **170 lines → 82, and the
 new fence is BYTE-IDENTICAL to the approved text (4,694 bytes in,
 4,694 out)**. Every one of the 168 removed lines is accounted for
@@ -18,18 +20,18 @@ Awaiting the external Web review, then the founder's word.
 ## What this task is
 
 THE BOX-MASTER DIET.
-[D-064](../record/DECISIONS.md#d-064--2026-07--the-box-master-class--the-setup-entry-contract--every-external-box-master-is-its-own-top-level-file-on-the-web-instructions-pattern-cockpit-chartermd-and-lane-workermd-extracted-verbatim-setup-compresses-to-a-replication-spec-under-the-entry-contract-what--where--values--verify--source-design-kickoff-joins-the-class-on-paper)
+[D-064](../../../DECISIONS.md#d-064--2026-07--the-box-master-class--the-setup-entry-contract--every-external-box-master-is-its-own-top-level-file-on-the-web-instructions-pattern-cockpit-chartermd-and-lane-workermd-extracted-verbatim-setup-compresses-to-a-replication-spec-under-the-entry-contract-what--where--values--verify--source-design-kickoff-joins-the-class-on-paper)
 gave box masters their own files but never said what belongs
 inside one. The answer: standing rules, invariants and pointers —
 procedures live in their repo homes and are derived at need,
-values live in [SETUP](../SETUP.md), and provenance labels do not
+values live in [SETUP](../../../../SETUP.md), and provenance labels do not
 ride boxes. The cockpit charter is the first file cut to it.
-Contract: [the spec](../record/specs/charter-v3.md).
+Contract: [the spec](../../../specs/charter-v3.md).
 
 ## Pending issues
 
 - Tower-authored, so
-  [no-solo-approval](../LAWS.md#workflow-non-negotiable) requires
+  [no-solo-approval](../../../../LAWS.md#workflow-non-negotiable) requires
   an external Web review before the founder's word at THE GATE. DO
   NOT MERGE.
 - **A founder act follows:** the charter master changes again, so
@@ -65,7 +67,7 @@ proved byte-identical to the approved text (4,694 bytes both
 ways).
 
 **Relocated in this bench, to
-[HOME §The cockpit's API paths & recovery ladder](../HOME.md#the-cockpits-api-paths--recovery-ladder):**
+[HOME §The cockpit's API paths & recovery ladder](../../../../HOME.md#the-cockpits-api-paths--recovery-ladder):**
 the whole ladder — R0's polling-cadence rationale ("idle sessions
 are where connectors are reported to drop; this is a mitigation,
 not a guarantee") · R1's probe-before-command rule · R2 (a) the
@@ -89,18 +91,18 @@ it, and HOME says why.
 **Already had a home; nothing to do:** THE BIRTH-FAILURE SHAPE,
 which the mandate flagged as a known orphan. The destination
 check says otherwise —
-[liftoff §6](../skills/liftoff.md#6--ledger-handoff--fire-the-cockpit)
+[liftoff §6](../../../../skills/liftoff.md#6--ledger-handoff--fire-the-cockpit)
 carries it in full, and better than the fence did ("a birth that
 dies before Claude starts leaves no URL anywhere and sends no
 greeting — the MISSING push IS the signal", with the founder's
-three checks in order), while [SETUP](../SETUP.md) carries it as
+three checks in order), while [SETUP](../../../../SETUP.md) carries it as
 that entry's VERIFY. It already sits where the mandate would have
 put it. The flag was a false alarm and is recorded as one rather
 than acted on.
 
 **Dropped by the diet's own rule, value intact elsewhere:** the
 literal "15/day cap". v3 says "the daily routine cap — the number
-lives in SETUP", and [SETUP](../SETUP.md) carries `15 runs/day`
+lives in SETUP", and [SETUP](../../../../SETUP.md) carries `15 runs/day`
 with its full arithmetic. Clause 3 working as designed.
 
 **Dropped with nothing lost:** the provenance labels — `(D-047)`,
@@ -109,21 +111,21 @@ session wanting the reasoning greps the clone it already has.
 
 ### Every file touched
 
-- **[COCKPIT-CHARTER](../COCKPIT-CHARTER.md)** — fence to v3,
+- **[COCKPIT-CHARTER](../../../../COCKPIT-CHARTER.md)** — fence to v3,
   header laws unchanged, a v3 version row.
-- **[HOME](../HOME.md)** — the section absorbs the ladder and is
+- **[HOME](../../../../HOME.md)** — the section absorbs the ladder and is
   retitled `The cockpit's API paths & recovery ladder`; the
   charter/HOME split is stated at its head; Sources now name the
   charter as the standing-duty half.
-- **[DECISIONS](../record/DECISIONS.md)** — D-065 appended.
-- **Pointer edits:** [SETUP](../SETUP.md) (the closing pointer to
-  the retitled section) · [land](../skills/land.md) (its
+- **[DECISIONS](../../../DECISIONS.md)** — D-065 appended.
+- **Pointer edits:** [SETUP](../../../../SETUP.md) (the closing pointer to
+  the retitled section) · [land](../../../../skills/land.md) (its
   "charter's R4b" citation now splits correctly — rule 8 for the
-  line, HOME for the procedure) · [DASHBOARD](../DASHBOARD.md),
+  line, HOME for the procedure) · [DASHBOARD](../../../../DASHBOARD.md),
   see Deviations.
 
 `charter rule 5` citations in
-[parallel-lanes](../skills/parallel-lanes.md) stay valid by
+[parallel-lanes](../../../../skills/parallel-lanes.md) stay valid by
 construction: rule 5 keeps its number in v3.
 
 ### The critic round (ship §6, pre-flip)
@@ -138,16 +140,16 @@ sweep greps the DESTINATION. This bench greped `charter's R4b`,
 and missed every phrasing it had not predicted. Two of the four
 were FALSE after the diff, not merely stale:
 
-1. [SETUP](../SETUP.md) still said "the ladder as the cockpit
+1. [SETUP](../../../../SETUP.md) still said "the ladder as the cockpit
    itself runs it (R0–R4b) is in COCKPIT-CHARTER.md" — two lines
    BELOW the pointer this bench had just repaired, sending a
    reader to the one file that no longer holds it.
-2. [liftoff](../skills/liftoff.md) sent a baton-holder to "the
+2. [liftoff](../../../../skills/liftoff.md) sent a baton-holder to "the
    charter master" for the recovery procedure — in a ritual read
    while FIRING a cockpit, the worst possible moment to be
    misrouted.
 
-Two more were merely stale: [HOME](../HOME.md) called it "the
+Two more were merely stale: [HOME](../../../../HOME.md) called it "the
 charter ladder's R2" inside the file that now owns it, and both
 HOME and liftoff cited "(charter R4b)", a label the charter no
 longer has. `land.md` had got exactly this split right, so the fix
@@ -174,10 +176,10 @@ close that.
 
 ## Where to look
 
-- [the spec](../record/specs/charter-v3.md) — the contract.
-- [COCKPIT-CHARTER](../COCKPIT-CHARTER.md) — the master, now at
+- [the spec](../../../specs/charter-v3.md) — the contract.
+- [COCKPIT-CHARTER](../../../../COCKPIT-CHARTER.md) — the master, now at
   v3.
-- [HOME](../HOME.md) — where the ladder lands, beside the
+- [HOME](../../../../HOME.md) — where the ladder lands, beside the
   dependency map that already explains it.
 - the Web ops chat, 2026-07-29 — where v3 was drafted and
   approved.
