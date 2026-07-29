@@ -78,35 +78,54 @@ dependency map that already explains it.
 
 ## Done means
 
-- [ ] D-065 exists with Decision · Why · Alternatives rejected ·
+- [x] D-065 exists with Decision · Why · Alternatives rejected ·
       Affects, anchors resolving, stating the diet's four clauses
       (rules/invariants/pointers · procedures in repo homes ·
       values in SETUP · no provenance labels).
-- [ ] [HOME](../../HOME.md) carries the whole ladder — R0, R1,
+- [x] [HOME](../../HOME.md) carries the whole ladder — R0, R1,
       R2 a–d, R3, R4, R4b — with the CONNECTOR DOWN script
       verbatim, under a title naming both the paths and the
       ladder.
-- [ ] The charter/HOME split is stated in BOTH files: the charter
+- [x] The charter/HOME split is stated in BOTH files: the charter
       holds the standing duty and the exact tombstone line, HOME
       holds the procedure.
-- [ ] The charter's fence is the approved v3 text byte-faithful;
+- [x] The charter's fence is the approved v3 text byte-faithful;
       header laws unchanged; the version table carries a v3 row.
-- [ ] EVERY sentence removed from the old fence is accounted for
+- [x] EVERY sentence removed from the old fence is accounted for
       — at an existing home or relocated here — and the accounting
       is in the memory. The birth-failure shape has a named home.
-- [ ] Every citation into the charter's moved content or the old
+- [x] Every citation into the charter's moved content or the old
       HOME anchor re-points; "charter rule 5" references stay
       valid by construction.
-- [ ] Files touched: nothing outside the mandate's list;
+- [x] Files touched: nothing outside the mandate's list;
       [DASHBOARD](../../DASHBOARD.md) untouched.
-- [ ] `check:links` · `check:ledger` · `check:memory` · lint ·
+- [x] `check:links` · `check:ledger` · `check:memory` · lint ·
       format · test · build green; Actions green on the pushed
       head; ship §6 critic run.
 
 ## Deviations
 
-<filled by ship>
+1. **[DASHBOARD](../../DASHBOARD.md) was touched — one link, and
+   the mandate's own verification clause required it.** The
+   mandate says the board stays untouched because the ship tail
+   owes the re-save line, and that content DID stay for the tail.
+   But the board also carried a link to the HOME anchor this
+   bench retitles, so leaving it would have shipped a broken
+   anchor and made "Actions green on the pushed head"
+   unreachable. One anchor repaired, nothing else; the board's
+   Needs-you content still rides the tail.
+2. **The mandate's "known orphan" was not one.** The
+   birth-failure shape already lives in
+   [liftoff §6](../../skills/liftoff.md#6--ledger-handoff--fire-the-cockpit)
+   and again as SETUP's VERIFY for that entry — exactly where the
+   mandate proposed putting it. Nothing was relocated; the check
+   is recorded in the memory so the next reader knows the
+   question was asked and answered rather than skipped.
 
 ## Open questions
 
-none at birth.
+none. The other two masters
+([LANE-WORKER](../../LANE-WORKER.md),
+[WEB-INSTRUCTIONS](../../WEB-INSTRUCTIONS.md)) are governed by
+the diet from now on but deliberately not recut here — each is
+its own verifiable diff.

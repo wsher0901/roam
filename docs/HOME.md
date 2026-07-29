@@ -713,7 +713,17 @@ Sources:
 [liftoff](skills/liftoff.md)
 [chooser law — LAWS §Workflow](LAWS.md#workflow-non-negotiable)
 
-### The cockpit's API dependency map + recovery
+### The cockpit's API paths & recovery ladder
+
+THE SPLIT WITH THE CHARTER, stated so neither file claims the
+other's job
+([D-065](record/DECISIONS.md#d-065--2026-07--the-box-master-diet--a-box-master-carries-standing-rules-invariants-and-pointers-procedures-live-in-their-repo-homes-and-are-derived-at-need-values-live-in-setup-provenance-labels-do-not-ride-boxes-the-session-that-needs-a-decisions-text-greps-the-clone-the-cockpit-charter-goes-v3-on-the-principle-the-connector-ladder-moves-to-home-upholds-d-064-amends-the-charters-d-061d-048-embeddings-by-relocation-not-repeal)):
+[COCKPIT-CHARTER.md](COCKPIT-CHARTER.md) carries the STANDING
+DUTY — probe before commanding, climb this ladder, never
+improvise — and the one line a superseded session must be able to
+say without reading anything. THIS SECTION CARRIES THE PROCEDURE:
+the two paths, what dies with each, and the rungs in order. A
+cockpit reads it from its own clone at the moment it needs it.
 
 A cockpit's powers split cleanly in two, and knowing which half
 just died is the whole of the recovery. Written from the flight of
@@ -751,33 +761,107 @@ v2.1.179 the harness appends an automatic `Claude-Session:` git
 trailer naming the authoring session — any commit on origin can
 be traced back to the session that wrote it without any scraping.
 
-**Recovery rung, in order:**
+**THE LADDER — climb in order.** This is the procedure the
+charter's rule 6 sends a cockpit here to read.
 
-1. **Retry the connector once, then the gh rung.** Flaps are
-   often transient: one retry, then the SAME act via `gh api`
-   (the charter's R2). If gh carries it, command continues and
-   the rungs below never fire — they exist for BOTH paths dead.
-2. **At a desk — hand the baton back.** Land: final board
-   repaint, park the tail with its reason written down, hand the
-   baton to the control tower, which has `gh` and finishes the
-   merge. (This is what the 2026-07-22 flight did.)
-3. **Away — birth a fresh cockpit.** Land first, then birth a
-   replacement by
-   [liftoff §6](skills/liftoff.md#6--ledger-handoff--fire-the-cockpit)'s
-   ladder. A `--cloud` birth is free, list-native, and draws no
-   daily cap; the new cockpit re-derives everything from git, so
-   nothing is lost — only the session's conversation, which was
-   never the record.
-4. **Away with no desk — SELF-RESCUE.** Push one empty commit to
-   `ops/summon`; the summon workflow fires a replacement cockpit
-   and the dying one lands under the tombstone
-   ([D-048](record/DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)).
-5. **Last resort — the GitHub mobile app**, or the phone
-   bootstrap paste
-   ([SETUP §cloud accounts](SETUP.md#once-and-done--cloud-accounts))
-   when there is no terminal and no GitHub. The founder's own
-   hands; always works, and the thing this whole chain exists to
-   spend sparingly.
+**R0 · PREVENT.** Never sleep on one long monitor while waiting.
+POLL on a cadence instead: fetch origin, re-read the lane's
+memory Status, check the PR, and report ONLY on change. The
+trade, plainly: polling costs usage and context, so the cadence
+is a dial — minutes, not seconds, widened when nothing is moving.
+Idle sessions are where connectors are reported to drop; this is
+a mitigation, not a guarantee.
+
+**R1 · DETECT.** Immediately before ANY command act — merge,
+apply a label, open a PR, read CI — run ONE cheap connector probe
+first and report its result in the same turn. Never attempt a
+command act on an unverified connector.
+
+**R2 · REPAIR IN PLACE.**
+
+- **(a) Retry once.** The client auto-reconnects with backoff
+  (about five attempts) before marking a server failed, so the
+  retry may simply succeed.
+- **(b) THE gh RUNG — automatic.** Retry the SAME act via the
+  second path: `gh api` REST through the proxy (shape: `gh api
+  repos/OWNER/REPO/pulls`), never porcelain that rides GraphQL
+  (`gh pr list` is proxy-blocked; its 403 points to REST). Probe
+  with an API READ first — `gh api user` or equivalent, NEVER an
+  env-var echo: permission classifiers treat `GH_TOKEN` as a
+  secret and block the echo. If gh succeeds, COMMAND CONTINUES —
+  report the flap in the same turn and carry on; the climb ends
+  here.
+- **(c) Try to revive the connector from the shell.** Run
+  `claude mcp list`, and any reconnect/restart subcommand your
+  installed version exposes — read `claude mcp --help` FIRST and
+  never guess a flag. Whether a session can revive its own
+  injected connector this way is UNPROVEN; if it works, say so
+  plainly so the answer reaches the record.
+- **(d) Only when BOTH paths are dead and revival failed, TELL
+  THE FOUNDER** — as its own turn, this text alone, never buried
+  in a paragraph:
+
+  ```text
+  ⚠️ CONNECTOR DOWN — type /mcp in this thread to retry
+  the GitHub server, then reply 'retry'. I keep authoring
+  meanwhile; nothing is lost.
+  ```
+
+**R3 · DEGRADE.** Keep working git-only: author, commit, push,
+weld. Commanding pauses; nothing is lost or redone. Which acts
+survive and which do not is the dependency map above — do not
+re-derive it. Then, by where the founder is:
+
+- **At a desk — hand the baton back.** Land: final board repaint,
+  park the tail with its reason written down, hand the baton to
+  the control tower, which has `gh` and finishes the merge. (This
+  is what the 2026-07-22 flight did.)
+- **Away — birth a fresh cockpit.** Land first, then birth a
+  replacement by
+  [liftoff §6](skills/liftoff.md#6--ledger-handoff--fire-the-cockpit)'s
+  ladder. A `--cloud` birth is free, list-native, and draws no
+  daily cap; the new cockpit re-derives everything from git, so
+  nothing is lost — only the session's conversation, which was
+  never the record.
+
+**R4 · SELF-RESCUE.** Push ONE empty commit to the reserved
+branch `ops/summon` — a push is git, not API, so it still works —
+then LAND. That push fires `.github/workflows/summon.yml`, which
+raises a replacement cockpit, and the dying one lands under the
+tombstone.
+
+**R4b · SUPERSESSION.** Never let the founder command a dead
+cockpit by accident.
+
+- **TOMBSTONE** — once you have landed superseded, your FINAL
+  message is exactly this, alone, with nothing after it. THE
+  CHARTER CARRIES THIS LINE TOO, deliberately: a superseded
+  session must be able to say it without reading anything.
+
+  ```text
+  ⛔ LANDED — SUPERSEDED. Do not command this session. A
+  replacement cockpit has been summoned and will greet you;
+  the board carries its link. Safe to archive me.
+  ```
+
+- **REFUSAL GUARD** — on ANY founder message after that,
+  re-derive from origin; if the board's seat stamp is not yours,
+  reply with the tombstone line and NOTHING ELSE — no work, no
+  writes.
+- **SUCCESSOR DUTY** — if you ARE the replacement, your first act
+  after deriving state is a board repaint that marks the
+  predecessor landed · superseded with its session URL and seats
+  you. The board must always name exactly one live cockpit. Your
+  OWN url, here and at any seating, is derived from the session
+  env, never scraped from a console:
+  `https://claude.ai/code/${CLAUDE_CODE_REMOTE_SESSION_ID/#cse_/session_}`
+
+**LAST RESORT, beneath every rung — the GitHub mobile app**, or
+the phone bootstrap paste
+([SETUP §cloud accounts](SETUP.md#once-and-done--cloud-accounts))
+when there is no terminal and no GitHub. The founder's own hands;
+always works, and the thing this whole chain exists to spend
+sparingly.
 
 **Rejected, not staged:** a merge-on-signal GitHub Action. It was
 the obvious permanent fix and
@@ -790,12 +874,11 @@ redelivered webhook, which breaks no-solo-approval structurally. A
 push-triggered SUMMON is lawful by the same test: a stray spawn is
 recoverable noise (one cap run), not a law breach.
 
-The ladder as the cockpit itself runs it (R0–R4b) is the
-procedure, and it lives in
-[COCKPIT-CHARTER.md](COCKPIT-CHARTER.md) — this map is the WHY.
-
 Sources:
-[COCKPIT-CHARTER](COCKPIT-CHARTER.md)
+[COCKPIT-CHARTER](COCKPIT-CHARTER.md) (the standing duty and the
+tombstone line; this section is the procedure it points at)
+[D-065](record/DECISIONS.md#d-065--2026-07--the-box-master-diet--a-box-master-carries-standing-rules-invariants-and-pointers-procedures-live-in-their-repo-homes-and-are-derived-at-need-values-live-in-setup-provenance-labels-do-not-ride-boxes-the-session-that-needs-a-decisions-text-greps-the-clone-the-cockpit-charter-goes-v3-on-the-principle-the-connector-ladder-moves-to-home-upholds-d-064-amends-the-charters-d-061d-048-embeddings-by-relocation-not-repeal)
+(the diet that moved the ladder here)
 [SETUP §cloud accounts](SETUP.md#once-and-done--cloud-accounts)
 [D-048](record/DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)
 [D-049](record/DECISIONS.md#d-049--2026-07--gh-second-path--gh-api-rest-through-the-github-proxy-is-the-cockpits-second-api-path-a-connector-flap-stops-costing-command-r2-gains-the-automatic-gh-rung-self-id-by-session-env-amends-d-048-corrects-the-193-api-map-upholds-d-047-and-verify-before-rely)

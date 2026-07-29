@@ -2916,3 +2916,95 @@ from its own file) · the living-doc pointer sweep
 memory (in flight on the bench; moves to history at the weld) ·
 this entry. The frozen record is deliberately UNTOUCHED — its
 citations of the old location were true when written.
+
+## D-065 — 2026-07 — The box-master diet — a box master carries standing rules, invariants, and pointers; procedures live in their repo homes and are derived at need; values live in SETUP; provenance labels do not ride boxes (the session that needs a decision's text greps the clone); the cockpit charter goes v3 on the principle, the connector ladder moves to HOME (upholds D-064, amends the charter's D-061/D-048 embeddings by relocation, not repeal)
+
+**Decision:** THE BOX-MASTER DIET — what belongs INSIDE a box
+master, which
+[D-064](#d-064--2026-07--the-box-master-class--the-setup-entry-contract--every-external-box-master-is-its-own-top-level-file-on-the-web-instructions-pattern-cockpit-chartermd-and-lane-workermd-extracted-verbatim-setup-compresses-to-a-replication-spec-under-the-entry-contract-what--where--values--verify--source-design-kickoff-joins-the-class-on-paper)
+gave a home and a shape but never a content rule. Four clauses:
+
+1. **A box carries STANDING RULES, INVARIANTS, and POINTERS** —
+   what its reader must always do, what must always hold, and
+   where to look for everything else.
+2. **PROCEDURES LIVE IN THEIR REPO HOMES** and are derived at
+   need. A box's reader has the clone; a procedure copied into
+   the box is a second home that drifts.
+3. **VALUES LIVE IN [SETUP](../SETUP.md)** — the box names the
+   thing and points; the number, the path, and the exact setting
+   stay in the replication spec that exists to carry them.
+4. **PROVENANCE LABELS DO NOT RIDE BOXES.** A rule in a box is
+   stated, not attributed: the session that needs a decision's
+   reasoning greps the clone it already has, and the D-number tag
+   costs every future reader attention it does not need.
+
+THE COCKPIT CHARTER GOES V3 on the principle — eight rules, no
+embedded procedure. THE CONNECTOR LADDER MOVES TO
+[HOME](../HOME.md), joining the dependency map that already
+explains it, under one title naming both. THE SPLIT IS STATED IN
+BOTH FILES so neither claims the other's job: the charter holds
+the STANDING DUTY (climb the ladder, never improvise) and the one
+thing a superseded session must say WITHOUT reading anything —
+the exact tombstone line; HOME holds the PROCEDURE.
+
+This AMENDS BY RELOCATION, never by repeal. Every rung, every
+script, and the cap arithmetic all survive at a named home;
+[D-061](#d-061--2026-07--the-landing-doctrine-recut-to-three-scenarios--the-cockpits-standing-job-advise-on-fleet-status-and-on-each-gate-reaching-decision-execute-the-founders-rulings-from-the-phone-auto-land-when-the-fleet-empties-and-nothing-awaits-the-founder-desk-takeover-when-pickup-finds-a-live-cockpit-holding-decisions-and-the-founders-freeze-unchanged-the-tombstone-wake-rule-makes-a-superseded-cockpit-retire-by-the-full-ritual-amends-d-054s-two-mode-routing-upholds-no-solo-approval-and-the-derivation-law)'s
+wake-rule and
+[D-048](#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)'s
+five rungs are unchanged in force and moved in address.
+
+**Why:** a box master is the one artifact in this workshop that a
+session carries INSTEAD OF READING the repo — it is pasted into
+another product's box and arrives before the clone does. That
+makes its length a direct cost: every line is context the session
+spends before it has done anything, and every procedure inside it
+is a copy that cannot be kept in step with the file it duplicates.
+The cockpit charter had drifted furthest — it carried a five-rung
+recovery procedure, its sub-rungs, and a founder-facing script,
+all of which a cockpit could derive from its own clone at the
+moment it actually needed them, which is the only moment they
+matter.
+
+The rules/invariants/pointers cut is not arbitrary. A rule must
+ride the box because there is no moment to look it up: rule 8's
+tombstone line must be sayable by a session that has just learned
+it is superseded and must write nothing else. A procedure must
+NOT ride it, because its moment always comes with a clone
+attached. That test — "is there a moment where this is needed and
+the repo is not available?" — is what sorts one from the other.
+
+Provenance labels fail the same test twice over. `(D-061)` beside
+a rule tells the reader nothing they can act on; if they want the
+reasoning they have `grep`, and if they do not, the tag is
+noise sitting in the most expensive real estate in the repo.
+
+**Alternatives rejected:** keeping the ladder in the charter and
+merely trimming its prose — the length was a symptom; the disease
+is a procedure with two homes, and a shorter copy drifts exactly
+as fast · moving the ladder to [SETUP](../SETUP.md) instead of
+HOME — SETUP is a replication spec under
+[D-064](#d-064--2026-07--the-box-master-class--the-setup-entry-contract--every-external-box-master-is-its-own-top-level-file-on-the-web-instructions-pattern-cockpit-chartermd-and-lane-workermd-extracted-verbatim-setup-compresses-to-a-replication-spec-under-the-entry-contract-what--where--values--verify--source-design-kickoff-joins-the-class-on-paper)'s
+entry contract, and a recovery ladder is neither a value nor a
+verify; HOME already held the dependency map that the ladder is
+the answer to, so the two belong in one section · dropping the
+tombstone line from the charter and pointing at HOME for it too —
+the one case where the reader provably cannot read: a superseded
+session's whole duty is to say one sentence and write nothing,
+so that sentence must already be in hand · applying the diet to
+all three masters in this bench — [LANE-WORKER](../LANE-WORKER.md)
+and [WEB-INSTRUCTIONS](../WEB-INSTRUCTIONS.md) are governed by the
+principle from now on, but each recut is its own verifiable diff,
+and bench 1 already proved that a verbatim-critical change is only
+checkable when it is the only thing in view.
+
+**Affects:** [COCKPIT-CHARTER](../COCKPIT-CHARTER.md) (the fence
+recut to v3; header laws unchanged; a v3 version row) ·
+[HOME](../HOME.md) (the cockpit section absorbs the full ladder
+and is retitled to name both the paths and the ladder) · the
+citation sweep into the moved content ·
+[the spec](specs/charter-v3.md) + its memory (in flight on the
+bench; moves to history at the weld) · this entry.
+[LANE-WORKER](../LANE-WORKER.md) and
+[WEB-INSTRUCTIONS](../WEB-INSTRUCTIONS.md) are governed from now
+on but NOT recut here.

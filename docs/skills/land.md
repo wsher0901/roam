@@ -108,8 +108,10 @@ superseded, self-retire by the full landing ritual and write
 nothing else. Not "push and stop": a session that vanishes
 mid-flight leaves its lanes unfenced and its row stale, and the
 ritual is barely more expensive than silence. The tombstone line
-and refusal guard in the charter's R4b are how that retirement
-speaks ([COCKPIT-CHARTER.md](../COCKPIT-CHARTER.md)).
+and refusal guard are how that retirement speaks — the charter's
+rule 8 carries the exact tombstone line, and the full procedure
+(refusal guard, successor duty) is
+[HOME §The cockpit's API paths & recovery ladder](../HOME.md#the-cockpits-api-paths--recovery-ladder).
 
 Then run the ritual from
 [§0](#0--derive-the-fleet-route-the-mode) and let the fleet pick

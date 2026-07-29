@@ -356,7 +356,7 @@ flight plan.
 
 THE WHY behind the cockpit's two API paths, what dies when each
 one does, and the recovery ladder that follows:
-[HOME §The cockpit's API dependency map](HOME.md#the-cockpits-api-dependency-map--recovery).
+[HOME §The cockpit's API paths & recovery ladder](HOME.md#the-cockpits-api-paths--recovery-ladder).
 The ladder as the cockpit itself runs it (R0–R4b) is in
 [COCKPIT-CHARTER.md](COCKPIT-CHARTER.md).
 

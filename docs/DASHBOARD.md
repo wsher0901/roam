@@ -183,7 +183,7 @@ the CLERK CHARTER TEXT, which the clerk's own specs cite SETUP
 for, so it moved whole to a new
 [record/retired/](record/retired/clerk-charter.md) shelf rather
 than being deleted. The cockpit's WHY moved to
-[HOME](HOME.md#the-cockpits-api-dependency-map--recovery), and the
+[HOME](HOME.md#the-cockpits-api-paths--recovery-ladder), and the
 cascade rode along: the charter's R3 line followed the map, its
 version table now v2.
 
