@@ -2,12 +2,12 @@
 type: spec
 id: setup-recut
 title: SETUP compressed to the entry contract — bench 2 of the SETUP recut
-status: open
+status: shipped
 stage: workshop
 branch: docs/setup-recut
-pr: —
+pr: 244
 opened: 2026-07-29
-shipped: —
+shipped: 2026-07-29 11:05
 ---
 
 # setup-recut — the container becomes a replication spec
