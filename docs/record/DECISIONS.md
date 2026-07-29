@@ -3036,8 +3036,10 @@ every sitting (compressing, never deleting);
 [liftoff](../skills/liftoff.md),
 [decide](../skills/decide.md) and
 [parallel-lanes](../skills/parallel-lanes.md) cite it at their
-write steps; and the ship-time critic and the external review
-grade IDEAS diffs against it like any other contract.
+write steps. The ship-time critic and the external review grade
+IDEAS diffs against it AS THEY ALREADY GRADE ANY CONTRACT — that
+clause needs no new wiring, and neither [ship](../skills/ship.md)
+nor [WEB-INSTRUCTIONS](../WEB-INSTRUCTIONS.md) is edited here.
 
 **Why:** the inbox had become the least readable file in the repo
 — single entries running past twenty lines, several ideas bundled
@@ -3083,8 +3085,10 @@ CLOSED and cites the contract; §1.2's IDEAS instruction cites it)
 · [liftoff](../skills/liftoff.md) ·
 [decide](../skills/decide.md) ·
 [parallel-lanes](../skills/parallel-lanes.md) (one citing line
-each at their write steps) · [HOME](../HOME.md) (the IDEAS
-routing row, if it states the old delete behaviour) ·
+each at their write steps) · [HOME](../HOME.md) (the IDEAS routing
+row and lifecycle, the outcome-ledger row, the micro-PR safety
+argument, and a files-table + routing row for the new
+`record/probes/` shelf) ·
 `docs/record/probes/cloud-birth-in-ci.md` (born — a probe
 narrative the contract evicts and nothing else recorded) ·
 [the spec](specs/ideas-contract.md) + its memory (in flight on

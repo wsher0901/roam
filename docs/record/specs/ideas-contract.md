@@ -74,36 +74,54 @@ here, so the shape survives the next sitting.
 
 ## Done means
 
-- [ ] D-066 exists with Decision · Why · Alternatives rejected ·
+- [x] D-066 exists with Decision · Why · Alternatives rejected ·
       Affects, anchors resolving, and states the contract plus the
       amendment to D-050's compaction law.
-- [ ] [IDEAS](../../IDEAS.md)'s header is the contract verbatim
+- [x] [IDEAS](../../IDEAS.md)'s header is the contract verbatim
       with the D-number woven as a short-text link.
-- [ ] Two sections exist: OPEN (newest first) and CLOSED (one line
+- [x] Two sections exist: OPEN (newest first) and CLOSED (one line
       each). Every line carries a leading glyph — ⏳ / 🟢 / ⚪.
-- [ ] Every entry's status was VERIFIED against the ledger,
+- [x] Every entry's status was VERIFIED against the ledger,
       DECISIONS, PRs and history — not taken from the entry's own
       note. Entries the record cannot settle stay OPEN and are
       listed as counted founder rulings in the memory.
-- [ ] Multi-part entries are split so each idea closes on its own.
-- [ ] No narrative was dropped without a confirmed record home;
+- [x] Multi-part entries are split so each idea closes on its own.
+- [x] No narrative was dropped without a confirmed record home;
       anything relocated is named in the memory with its
       destination.
-- [ ] [handoff](../../skills/handoff.md) harvests by COMPRESSING
+- [x] [handoff](../../skills/handoff.md) harvests by COMPRESSING
       to CLOSED, deletes nothing, and cites the contract; §1.2
       cites it too; [liftoff](../../skills/liftoff.md),
       [decide](../../skills/decide.md) and
       [parallel-lanes](../../skills/parallel-lanes.md) each cite
       it at their write step.
-- [ ] Files touched: nothing outside the mandate's list.
-- [ ] `check:links` · `check:ledger` · `check:memory` · lint ·
+- [x] Files touched: nothing outside the mandate's list.
+- [x] `check:links` · `check:ledger` · `check:memory` · lint ·
       format · test · build green; Actions green on the pushed
       head; ship §6 critic run.
 
 ## Deviations
 
-<filled by ship>
+1. **[HOME](../../HOME.md) took four edits, not the conditional
+   one.** The mandate licensed a single conditional line (the
+   IDEAS row, if it stated the old delete behaviour). It did — but
+   three more statements drifted with the contract: the routing
+   row's lifecycle column, the micro-PR SAFETY ARGUMENT (which
+   reasoned "IDEAS only ever gains lines", no longer true now that
+   harvests compress and relocate), and the absence of any home
+   for the new `record/probes/` shelf in either the files table or
+   the routing table. The probes registration is the same class of
+   miss the last three benches each made once; it is fixed here
+   rather than left for a fourth.
+2. **A fifth verdict changed at the critic round.** "Keep the
+   self-read launcher as a script" was carried forward as OPEN and
+   is DECLINED: [D-051](../DECISIONS.md#d-051--2026-07--self-seat-birth--liftoff-fires---cloud-blind-and-the-cockpit-seats-itself-by-its-env-derived-self-url-the-console-attach-launcher-is-retired-amends-d-047s-rung-1-mechanics-as-corrected-by-193-upholds-d-049-and-board-governs)
+   retires the launcher, and names keeping-it-as-a-fallback among
+   its rejected options. The verification pass had checked the
+   entry against the record and still missed it, which is recorded
+   in the memory rather than smoothed over.
 
 ## Open questions
 
-none at birth.
+none. Every entry settled from the record; no founder rulings are
+owed at this gate.

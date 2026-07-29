@@ -8,12 +8,12 @@ updated: 2026-07-29 14:52 · ship · work PC
 ## Status
 
 complete, awaiting merge — 2026-07-29, work PC. D-066 is minted,
-IDEAS is rewritten to the contract (443 lines → 208, with MORE
-ideas visible, not fewer: 26 bundled entries became 29 open lines
-and 11 closed ones), and the enforcement is wired into all five
+IDEAS is rewritten to the contract (443 lines → ~220, with MORE
+ideas visible, not fewer: 26 bundled entries became 30 open lines
+and 12 closed ones), and the enforcement is wired into all five
 writing files. Every status was VERIFIED against the record, not
-taken from the entry's own note — and four verdicts changed as a
-result. Full CI mirror green. NO founder rulings are owed: every
+taken from the entry's own note — and FIVE verdicts changed as a
+result, the fifth caught by the critic. Full CI mirror green. NO founder rulings are owed: every
 entry settled from the record.
 
 ## What this task is
@@ -80,8 +80,10 @@ different from what the file claimed or implied.
    version line. The idea got what it asked for by a different
    mechanism, three benches later, and no one closed it.
 
-Everything else verified as the file stated. NOTHING was left
-unsettled, so there are no counted founder rulings at this gate.
+A FIFTH changed at the critic round — see the critic section: the
+self-read launcher is DECLINED, not open. Everything else verified
+as the file stated. NOTHING was left unsettled, so there are no
+counted founder rulings at this gate.
 
 ### THE STANDING DUTY — what was homeless, and where it went
 
@@ -116,6 +118,64 @@ file hid ideas inside other ideas — the "four smaller ones" entry
 was four, the rung-1 entry was two, the daily-cap entry was two.
 Splitting them is what let three of them close and the rest stand
 up as separate work.
+
+### The critic round (ship §6, pre-flip)
+
+Nine findings, and the first is the one that matters: **A FIFTH
+VERDICT WAS WRONG, and the verification pass had already looked at
+that entry.**
+
+"Keep the self-read launcher as a script" was carried forward as
+OPEN. It is DECLINED:
+[D-051](../record/DECISIONS.md#d-051--2026-07--self-seat-birth--liftoff-fires---cloud-blind-and-the-cockpit-seats-itself-by-its-env-derived-self-url-the-console-attach-launcher-is-retired-amends-d-047s-rung-1-mechanics-as-corrected-by-193-upholds-d-049-and-board-governs)
+retires the console-attach launcher — "the component is DELETED
+from the recipe, not maintained" — and names KEEPING THE LAUNCHER
+AS A FALLBACK among its rejected options, two days AFTER the idea
+was filed. The blind fire captures nothing, so there is no output
+for a launcher to read.
+
+Why it slipped is worth naming: the entry reads as a leftover
+half of a PARTLY-CLOSED bundle, and I verified the half that had
+closed (rung 1's mechanics, #193) without asking whether anything
+LATER had ruled on the remainder. Verify-before-classify has to
+mean verifying against the WHOLE record, not just the artifact the
+entry names.
+
+Two structural repairs followed:
+
+- **The new `record/probes/` shelf was unregistered** — no row in
+  HOME's files table, none in the routing table. That is the same
+  miss the last three benches each made once with a new class, so
+  it is fixed here rather than left for a fourth. HOME also gained
+  the outcome-ledger routing row.
+- **The micro-PR safety argument had drifted.** It reasoned that
+  IDEAS "only ever gains dated inbox lines", so a bad merge could
+  at worst be noisy. Harvests now COMPRESS and RELOCATE lines, so
+  a bad merge can lose an outcome — the argument is rewritten to
+  say what actually protects it (git, plus the closing vehicle
+  each line names).
+
+Also repaired: HARNESS V2 absorbed "three older lines" without
+naming them — an unnamed absorption is exactly where an idea
+disappears, so the three are now named and the two that had been
+swallowed are back as their own OPEN lines; the gh-second-path
+pointer was a trailing unglyphed paragraph outside both sections
+and is now a glyph-led CLOSED line; BOX PROVENANCE was marked
+fully closed when the routine boxes still have no staleness
+signal, now stated precisely; both sections were NOT newest-first
+on day one — the file broke the rule in its own header — and both
+are now sorted, the sort key having needed a second pass because
+HARNESS V2's inline dates outrank its attribution date.
+
+And the spec's Done-means were all still unticked at the gate.
+
+WHAT THE CRITIC COULD NOT DO, and I did: the exhaustive
+old-vs-new idea enumeration. It had no shell, so it could not read
+`origin/main:docs/IDEAS.md`. I ran it — 26 keyword probes across
+every distinct idea in the old file, including those buried inside
+multi-part bullets. Two flagged ABSENT on the first pass and both
+were my regex, not the file (`\|` does not alternate under
+`grep -E`). **NO IDEA WAS LOST.**
 
 ## Where to look
 

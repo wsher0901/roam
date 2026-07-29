@@ -64,8 +64,11 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   self-check, SessionStart `sessionTitle` for `[COCKPIT]`/`[LANE]`
   naming, Notification matchers for the alert taxonomy,
   TeammateIdle + SubagentStop observability, PreCompact capture.
-  Absorbs three older lines of this inbox at triage. (2026-07-27,
-  the founder + the external reviewer)
+  AT TRIAGE IT ABSORBS THREE LINES OF THIS INBOX, named so none
+  can vanish silently: the PreToolUse-guard line (2026-07-16),
+  the `[LANE]` naming half of the 07-22 session-naming line, and
+  the notification-taxonomy line (2026-07-22). (2026-07-27, the
+  founder + the external reviewer)
 - ⏳ Shorten the ~300-character decide-anchor links that cost
   context and vault readability every session — a stable short
   anchor per D-number, or an anchor-alias convention, either way
@@ -75,11 +78,14 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   `type: spec` though it is a living consolidation. The founder's
   word: it stays for now, resolved at the first engine bench,
   which touches ENGINE anyway. (2026-07-23, the founder)
-- ⏳ Keep the self-read launcher as a script so a future liftoff
-  does not re-derive it — the hidden-console birth recovered its
-  own URL by reading its console buffer, and no machinery was
-  built on the bench that proved it. (2026-07-22, Claude Code) →
-  [liftoff §6](skills/liftoff.md#6--ledger-handoff--fire-the-cockpit)
+- ⏳ Separate lane pings from cockpit decisions in the
+  notification taxonomy — absorbed by HARNESS V2 above at triage.
+  (2026-07-22, Claude Code)
+- ⏳ Name cloud sessions at birth with `[COCKPIT]`/`[LANE]`
+  prefixes so the phone's session list reads itself — the
+  prompt-supplied title was disproven, but SessionStart
+  `sessionTitle` is the supported mechanism; absorbed by HARNESS
+  V2 above at triage. (2026-07-22, Claude Code)
 - ⏳ Make the daily-cap arithmetic account for TRIGGER
   REDELIVERIES — liftoff now adds API fires by hand, but a
   redelivered webhook still burns a run nobody counted.
@@ -127,12 +133,6 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
 - ⏳ Write a helper that emits the exact GitHub heading slug for a
   new D-number, so the heading and every link to it are born
   matching. (2026-07-14, Claude Code)
-- ⏳ Add `paths-ignore: docs/**` so docs-only PRs skip the full CI
-  run — BLOCKED as written: branch protection requires the
-  `checks` context, so ignoring `docs/**` would leave it
-  unreported and block every docs-only merge. Adopt only with a
-  matching protection carve-out. (2026-06-11, Claude Code;
-  blocker found 2026-07-14)
 - ⏳ Licence or export the world-facts asset someday — revision
   series, forecast-vs-actual calibration pairs, coverage maps.
   Possible only because storage is licence-segmented.
@@ -144,17 +144,29 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
 - ⏳ Build a reachability globe showing how far the traveller's
   max-travel-hours reaches; open question, heuristic distance
   rings versus true flight-time isochrones. (2026-06-12, Web)
+- ⏳ Add `paths-ignore: docs/**` so docs-only PRs skip the full CI
+  run — BLOCKED as written: branch protection requires the
+  `checks` context, so ignoring `docs/**` would leave it
+  unreported and block every docs-only merge. Adopt only with a
+  matching protection carve-out. (2026-06-11, Claude Code;
+  blocker found 2026-07-14)
 
 ## Closed
 
 The outcome ledger — one line each, newest first. A closed idea
 keeps its answer, never its narrative.
 
-- 🟢 Box currency became derivable: every box master now carries a
-  version-history table, and a fresh Web chat drift-checks its box
-  against the master's version line. Asked 2026-07-24 as "stamp
-  each master with last-pasted date + sha". →
+- 🟢 Box currency became derivable on the MASTER side: every box
+  master now carries a version-history table, and a fresh Web chat
+  drift-checks its box against the master's version line. The
+  routine boxes still have no staleness signal of their own — the
+  founder re-saves them by hand and the board tracks the owing.
+  Asked 2026-07-24 as "stamp each master with last-pasted date +
+  sha". →
   [D-064](record/DECISIONS.md#d-064--2026-07--the-box-master-class--the-setup-entry-contract--every-external-box-master-is-its-own-top-level-file-on-the-web-instructions-pattern-cockpit-chartermd-and-lane-workermd-extracted-verbatim-setup-compresses-to-a-replication-spec-under-the-entry-contract-what--where--values--verify--source-design-kickoff-joins-the-class-on-paper)
+  ·
+  [D-063](record/DECISIONS.md#d-063--2026-07--response-doctrine-v2--web-instructions-v6--two-channels-sentences-for-the-founder-fenced-blocks-for-machines-process-is-proof-not-prose-the-chat-start-ingest-contract-the-relay-rule--origin-is-the-only-courier-codes-output-is-never-pasted-to-web-reviews-speak-in-goal-and-outcome-the-core-file-alert-the-agenda-convention-brief-renders-the-full-picture-the-master-gains-a-version-history-amends-d-052)
+  (the drift-check)
 - 🟢 The superseded-seat exit — the one road out of a sitting that
   ran no ritual, so a superseded tower leading a team lost its
   findings. Closed in two steps: the cockpit road first, then
@@ -167,32 +179,23 @@ keeps its answer, never its narrative.
   native runs; ship's general-purpose fallback stays the
   documented re-open path. →
   [the answering bench](record/history/workshop/definition/chronicle-answers.md)
-- 🟢 The subagent-model question — settled by verification rather
-  than guess: the critic runs the `opus` alias, and teammates ride
-  the lead's model by config. →
-  [D-055](record/DECISIONS.md#d-055--2026-07--agent-teams--the-boundary-teams-are-for-exploration-and-review-at-a-ground-seat-lanes-remain-the-authorship-mechanism-two-risks-become-law-single-sitting-only--an-explicit-carve-out-to-d-050s-interrupt-promise--and-a-teammate-authored-diff-is-self-authored-under-no-solo-approval-the-reviewers-model-settled-by-verification-not-guess-the-founder-side-config-recorded-upholds-the-lane-law-no-solo-approval-and-one-home-gives-the-experimental-flag-its-consumer)
 - 🟢 The chronicle layer — living stories above the frozen record;
   one story per ITEM superseded the three-chapter shape, the three
   threads surviving as shelves. →
   [D-059](record/DECISIONS.md#d-059--2026-07--the-chronicle-layer--living-stories-above-the-frozen-record-one-story-per-item-the-ending-rule--settled-in-any-format-means-the-story-is-written-a-later-fix-is-incorporated-and-the-ending-rewritten-at-that-weld-retirement-is-a-settlement-docschronicle-one-file-per-story-indexmd-shelving-four-shelves-immutability-beneath--record-untouched-stories-link-down-as-footnotes-down-links-only--a-story-never-cites-another-storys-prose-supersedes-the-07-23-three-chapter-shape-the-ship-synthesis-at-weld-step-deferred-to-the-first-story-weld)
-- 🟢 The daily-cap arithmetic's API-fire blind spot — liftoff now
-  adds the fires performed this sitting to the script's count.
-  (The redelivery half stays open, above.) →
-  [liftoff §2](skills/liftoff.md#2--triage-every-open-item)
+- 🟢 The subagent-model question — settled by verification rather
+  than guess: the critic runs the `opus` alias, and teammates ride
+  the lead's model by config. →
+  [D-055](record/DECISIONS.md#d-055--2026-07--agent-teams--the-boundary-teams-are-for-exploration-and-review-at-a-ground-seat-lanes-remain-the-authorship-mechanism-two-risks-become-law-single-sitting-only--an-explicit-carve-out-to-d-050s-interrupt-promise--and-a-teammate-authored-diff-is-self-authored-under-no-solo-approval-the-reviewers-model-settled-by-verification-not-guess-the-founder-side-config-recorded-upholds-the-lane-law-no-solo-approval-and-one-home-gives-the-experimental-flag-its-consumer)
+- ⚪ Keeping the console-attach launcher as a script — DECLINED
+  (retired): the blind fire captures nothing, so there is no
+  output to read; D-051 deletes the component rather than
+  maintaining it, and names keeping-it-as-a-fallback among its
+  rejected options. Asked 2026-07-22. →
+  [D-051](record/DECISIONS.md#d-051--2026-07--self-seat-birth--liftoff-fires---cloud-blind-and-the-cockpit-seats-itself-by-its-env-derived-self-url-the-console-attach-launcher-is-retired-amends-d-047s-rung-1-mechanics-as-corrected-by-193-upholds-d-049-and-board-governs)
 - 🟢 The cockpit birth-prompt title line — DISPROVEN at the
   2026-07-23 birth: the platform auto-titles from charter content
   and ignored it, so the line was dropped from both homes. →
-  [#204](https://github.com/wsher0901/roam/pull/204)
-- 🟢 Rung 1's mechanics rewritten to the console-attach shape:
-  winpty is gone from both homes, the prompt reaches `claude` as a
-  file-read argument, and the console is killed after the read. →
-  [#193](https://github.com/wsher0901/roam/pull/193)
-- 🟢 The cloud environment renamed `Default` in SETUP — the docs
-  had said "roam". →
-  [#193](https://github.com/wsher0901/roam/pull/193)
-- 🟢 Session naming at birth: the prompt-supplied `[COCKPIT]` title
-  was disproven, and the supported mechanism — SessionStart
-  `sessionTitle` — is folded into HARNESS V2, above. →
   [#204](https://github.com/wsher0901/roam/pull/204)
 - ⚪ Birthing a list-native cockpit from a GitHub Action —
   DECLINED (cost): the probe reached a real cloud-birth and died
@@ -200,9 +203,19 @@ keeps its answer, never its narrative.
   judged too much for an uncertain payoff. The routine fire stays
   the rescue engine. →
   [the probe record](record/probes/cloud-birth-in-ci.md)
-
-The findings from the gh-second-path probe flight — a session
-bluffing about its own toolset, teleport relocating execution,
-birth prompts truncating on nested quotes, and a birth turn
-no-opping — are not ideas and live in
-[their story](record/history/workshop/mechanism/gh-second-path.md).
+- 🟢 The gh-second-path probe findings — a session bluffing about
+  its own toolset, teleport relocating execution, birth prompts
+  truncating on nested quotes, a birth turn no-opping. Not ideas;
+  they live in the record and this line is the pointer. →
+  [their story](record/history/workshop/mechanism/gh-second-path.md)
+- 🟢 The daily-cap arithmetic's API-fire blind spot — liftoff now
+  adds the fires performed this sitting to the script's count.
+  (The redelivery half stays open, above.) →
+  [liftoff §2](skills/liftoff.md#2--triage-every-open-item)
+- 🟢 Rung 1's mechanics rewritten to the console-attach shape:
+  winpty is gone from both homes, the prompt reaches `claude` as a
+  file-read argument, and the console is killed after the read. →
+  [#193](https://github.com/wsher0901/roam/pull/193)
+- 🟢 The cloud environment renamed `Default` in SETUP — the docs
+  had said "roam". →
+  [#193](https://github.com/wsher0901/roam/pull/193)

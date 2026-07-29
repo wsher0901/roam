@@ -177,6 +177,7 @@ Sources:
 | [memory/](memory/README.md) | in-flight task stories in the locked format ([TEMPLATE](memory/TEMPLATE.md)) | the task's own seat — baton-holder at rituals, lanes at their four moments | lives on the task's branch; MOVES to record/history/ at ship |
 | [record/history/](record/history/README.md) | permanent shipped narratives, one per task | [ship](skills/ship.md)'s atomic weld | frozen after landing (link repairs only) |
 | [record/retired/](record/retired/clerk-charter.md) | retired ARTIFACTS kept whole — a box master or config text that is dead but still cited (RECORD, never instruction) | the bench that retires the thing, when its text lives nowhere else | frozen; never re-armed, never pasted |
+| [record/probes/](record/probes/cloud-birth-in-ci.md) | PROBE RESULTS that shipped no bench — what was tried, what it cost, where it died, and the untried next step | the bench that evicts the narrative, when no branch or story carried it | frozen; a revisit writes a new record, never edits this one |
 | [chronicle/](chronicle/INDEX.md) | living stories above the frozen record, one per settled item — [INDEX](chronicle/INDEX.md) is the door | the weld that settles or advances an item | incorporated, the ending rewritten in place — never a second story |
 | [skills/](skills) | ritual procedures + workshop manuals, vault-readable | founder-approved PRs + promoted gotchas | living |
 | docs/.obsidian/ | Obsidian's own workspace config | Obsidian | gitignored, never committed |
@@ -946,9 +947,12 @@ Sources:
 
 Why it is safe: both files are derived or inbox surfaces — the
 board is repainted wholesale from sources by the next ritual
-anyway, and IDEAS only ever gains dated inbox lines — so the worst
-possible bad merge is a stale rendering or a noisy line, each
-healed mechanically. No code, no laws, no contracts, no history can
+anyway, and IDEAS gains lines and COMPRESSES settled ones into its
+outcome ledger, never deleting an outcome — so the worst possible
+bad merge is a stale rendering or a noisy line, each healed
+mechanically, and a mis-compressed line is recoverable from git
+plus the closing vehicle it names. No code, no laws, no contracts,
+no history can
 ride one. And the physical gate survives: main still takes no
 direct pushes, and `.claude/settings.json` grants no session a
 standing `gh pr merge` allowance (its bypass variants are
@@ -1247,7 +1251,9 @@ never duplicates it.
 | Status · progress · counts | [DASHBOARD](DASHBOARD.md) | ritual repaint, at render time | the repaint IS the upsert; never hand-edited |
 | System map — the workshop as diagrams | [ATLAS](ATLAS.md) | the bench that changes what a diagram depicts | full re-render in that same PR; renders, originates nothing — the prose governs |
 | Living story of a settled item | [chronicle/](chronicle/INDEX.md) | the weld that settles the item writes its story | the weld that advances it — incorporated, the ending rewritten in place; never a second story |
-| Unvisited idea | [IDEAS](IDEAS.md) | ritual harvest / micro-PR | promoted out via decide when adopted |
+| Unvisited idea | [IDEAS](IDEAS.md) §Open | ritual harvest / micro-PR, per the entry contract at that file's head | triaged out via decide when adopted; when settled it COMPRESSES to one line and moves to §Closed — never deleted |
+| A settled idea's outcome | [IDEAS](IDEAS.md) §Closed — the outcome ledger | the ritual or decide that settled it | one line each, its closing vehicle linked; frozen thereafter |
+| Probe result with no bench | [record/probes/](record/probes/cloud-birth-in-ci.md) | the bench that evicts it from IDEAS | frozen — a revisit writes a new record |
 | Engine rule / OPEN slot fill | [ENGINE](ENGINE.md) | decide | decide — the register shrinks by D-number |
 | Tooling · stack · config inventory | [SETUP](SETUP.md) | ops PR | ops PR; status never (the board's job) |
 | External-box master text (a box this repo authors, another product stores) | its own top-level master file — [WEB-INSTRUCTIONS](WEB-INSTRUCTIONS.md) · [COCKPIT-CHARTER](COCKPIT-CHARTER.md) · [LANE-WORKER](LANE-WORKER.md) · [DESIGN-KICKOFF](DESIGN-KICKOFF.md) ([D-064](record/DECISIONS.md#d-064--2026-07--the-box-master-class--the-setup-entry-contract--every-external-box-master-is-its-own-top-level-file-on-the-web-instructions-pattern-cockpit-chartermd-and-lane-workermd-extracted-verbatim-setup-compresses-to-a-replication-spec-under-the-entry-contract-what--where--values--verify--source-design-kickoff-joins-the-class-on-paper)) | ops PR | ops PR + a version-history row; the box is re-pasted/re-saved after every merge |
