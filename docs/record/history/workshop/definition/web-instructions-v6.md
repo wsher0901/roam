@@ -1,7 +1,9 @@
 ---
-type: memory
+type: history
 id: web-instructions-v6
-updated: 2026-07-29 09:09 · external review repairs · work PC
+updated: 2026-07-29 09:19 · weld · work PC
+shipped: 2026-07-29 09:19
+pr: 240
 ---
 # web-instructions-v6 — the Web surface rewritten, the doctrine recut
 
@@ -10,8 +12,8 @@ updated: 2026-07-29 09:09 · external review repairs · work PC
 complete, awaiting merge — 2026-07-29, work PC, after the external
 review's repair round. All four original edits are in (the
 master's fence with its version-history table,
-[HOME §Response doctrine](../HOME.md#response-doctrine)'s seven v2
-rules, D-063, the [IDEAS](../IDEAS.md) sweep line), and the
+[HOME §Response doctrine](../../../../HOME.md#response-doctrine)'s seven v2
+rules, D-063, the [IDEAS](../../../../IDEAS.md) sweep line), and the
 review's five repairs on top: ⏳ admitted to the glyph set in BOTH
 homes, the ROADMAP-stage guardrail revived into Agenda, the
 explicit-go law written into Prompt delivery, the review's prose
@@ -30,12 +32,12 @@ rather than prose, plus the chat-start ingest contract, the relay
 rule, the review's goal-and-outcome output, the core-file alert,
 the agenda convention, a full-picture brief, and the master's own
 full-copy and changelog laws. Contract:
-[the spec](../record/specs/web-instructions-v6.md).
+[the spec](../../../specs/web-instructions-v6.md).
 
 ## Pending issues
 
 - Tower-authored, so
-  [no-solo-approval](../LAWS.md#workflow-non-negotiable) requires
+  [no-solo-approval](../../../../LAWS.md#workflow-non-negotiable) requires
   an external Web review before the founder's word at THE GATE. DO
   NOT MERGE.
 - **Two founder acts follow this bench, and one of them is
@@ -58,8 +60,8 @@ nothing parked.
 ## The story
 
 Born 2026-07-28 at the work PC, the third bench of the sitting
-after [the nine owed endings](../record/history/workshop/definition/chronicle-answers.md)
-and [the landing recut](../record/history/workshop/mechanism/land-doctrine-v2.md).
+after [the nine owed endings](chronicle-answers.md)
+and [the landing recut](../mechanism/land-doctrine-v2.md).
 
 ### THE GAP — two v5 sections the v6 text does not carry
 
@@ -78,7 +80,7 @@ front of them rather than from memory:
   and a proposed title when discussion drifts into a distinct
   workstream; chat naming (roadmap IDs, or "Ops —" plus the
   topic); never
-  encourage work ahead of its [ROADMAP](../ROADMAP.md) stage;
+  encourage work ahead of its [ROADMAP](../../../../ROADMAP.md) stage;
   finish-first, with recommendations needing the founder's
   attention CAPPED AT TWO; and folding any roadmap-level change or
   new idea into the delivered prompt.
@@ -100,9 +102,9 @@ unsure — two rules with the IDENTICAL survival path, so they get
 the identical verdict (the critic caught the bench grading them
 asymmetrically on its first pass): the 2–3-options-with-a-
 recommendation rule, in
-[LAWS §Who you're working with](../LAWS.md#who-youre-working-with),
+[LAWS §Who you're working with](../../../../LAWS.md#who-youre-working-with),
 and the finish-first cap on what needs the founder's attention, in
-the [pacing law](../LAWS.md#workflow-non-negotiable). Both are
+the [pacing law](../../../../LAWS.md#workflow-non-negotiable). Both are
 reachable but no longer STATED on the Web surface, and a rule the
 surface must go looking for is weaker than one in its own box.
 
@@ -169,7 +171,7 @@ that can do it, and this bench does not claim it.
 THREE FINDINGS ARE OUT OF THIS BENCH'S FILES and go to the
 founder rather than being silently fixed:
 
-1. **[the census](../chronicle/INDEX.md) carries three statements
+1. **[the census](../../../../chronicle/INDEX.md) carries three statements
    this weld falsifies** — the response-doctrine row's ending
    ("Settled: one home in HOME"), the WEB-INSTRUCTIONS row ("v5
    lives as the repo master"), and §Founder input owed item 8,
@@ -177,14 +179,14 @@ founder rather than being silently fixed:
    change re-opens it. The chronicle's ending rule says a later
    fix is incorporated at the weld that advances the item —
    but ship carries no chronicle step yet, deferred by
-   [D-059](../record/DECISIONS.md#d-059--2026-07--the-chronicle-layer--living-stories-above-the-frozen-record-one-story-per-item-the-ending-rule--settled-in-any-format-means-the-story-is-written-a-later-fix-is-incorporated-and-the-ending-rewritten-at-that-weld-retirement-is-a-settlement-docschronicle-one-file-per-story-indexmd-shelving-four-shelves-immutability-beneath--record-untouched-stories-link-down-as-footnotes-down-links-only--a-story-never-cites-another-storys-prose-supersedes-the-07-23-three-chapter-shape-the-ship-synthesis-at-weld-step-deferred-to-the-first-story-weld)
+   [D-059](../../../DECISIONS.md#d-059--2026-07--the-chronicle-layer--living-stories-above-the-frozen-record-one-story-per-item-the-ending-rule--settled-in-any-format-means-the-story-is-written-a-later-fix-is-incorporated-and-the-ending-rewritten-at-that-weld-retirement-is-a-settlement-docschronicle-one-file-per-story-indexmd-shelving-four-shelves-immutability-beneath--record-untouched-stories-link-down-as-footnotes-down-links-only--a-story-never-cites-another-storys-prose-supersedes-the-07-23-three-chapter-shape-the-ship-synthesis-at-weld-step-deferred-to-the-first-story-weld)
    to the first story weld. So this may be a deliberate wait
    rather than a miss.
 2. **The cockpit charter's rule 5 glosses doctrine v1's clauses**
    ("answer first · explicit steps · purpose-shaped explanation
    last · live-derived state · glyph verdicts") while pointing at
    the section that no longer contains them
-   ([SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts)).
+   ([SETUP §cloud accounts](../../../../SETUP.md#once-and-done--cloud-accounts)).
    The retroactivity law wants that backfilled in the same PR; the
    spec put the report RESTYLE out of scope, but a five-word stale
    gloss is not a restyle.
@@ -221,7 +223,7 @@ payload never changed shape:
    pointer.** It listed doctrine v1's five clauses while pointing
    at the section that now holds seven different ones — the exact
    stale-copy the one-home rule exists to prevent, and the
-   [retroactivity law](../LAWS.md#knowledge--tracking) wants it
+   [retroactivity law](../../../../LAWS.md#knowledge--tracking) wants it
    backfilled in the PR that caused it. This is the ship §6
    critic's finding 2, which this bench had routed to the founder
    rather than fixing, now ruled and fixed.
@@ -229,16 +231,16 @@ payload never changed shape:
 The critic's other routed finding — the census carrying three
 statements this weld falsifies — was NOT ruled in this round and
 stays open for the founder; ship still has no chronicle step
-(deferred by [D-059](../record/DECISIONS.md#d-059--2026-07--the-chronicle-layer--living-stories-above-the-frozen-record-one-story-per-item-the-ending-rule--settled-in-any-format-means-the-story-is-written-a-later-fix-is-incorporated-and-the-ending-rewritten-at-that-weld-retirement-is-a-settlement-docschronicle-one-file-per-story-indexmd-shelving-four-shelves-immutability-beneath--record-untouched-stories-link-down-as-footnotes-down-links-only--a-story-never-cites-another-storys-prose-supersedes-the-07-23-three-chapter-shape-the-ship-synthesis-at-weld-step-deferred-to-the-first-story-weld)
+(deferred by [D-059](../../../DECISIONS.md#d-059--2026-07--the-chronicle-layer--living-stories-above-the-frozen-record-one-story-per-item-the-ending-rule--settled-in-any-format-means-the-story-is-written-a-later-fix-is-incorporated-and-the-ending-rewritten-at-that-weld-retirement-is-a-settlement-docschronicle-one-file-per-story-indexmd-shelving-four-shelves-immutability-beneath--record-untouched-stories-link-down-as-footnotes-down-links-only--a-story-never-cites-another-storys-prose-supersedes-the-07-23-three-chapter-shape-the-ship-synthesis-at-weld-step-deferred-to-the-first-story-weld)
 to the first story weld), so the wait may be the right answer.
 
 ## Where to look
 
-- [the spec](../record/specs/web-instructions-v6.md) — the
+- [the spec](../../../specs/web-instructions-v6.md) — the
   contract.
-- [WEB-INSTRUCTIONS](../WEB-INSTRUCTIONS.md) — the master being
+- [WEB-INSTRUCTIONS](../../../../WEB-INSTRUCTIONS.md) — the master being
   rewritten.
-- [HOME §Response doctrine](../HOME.md#response-doctrine) — the
+- [HOME §Response doctrine](../../../../HOME.md#response-doctrine) — the
   doctrine's one home.
 - the Web ops chat, 2026-07-28 — where v6 was drafted and
   approved.

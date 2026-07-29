@@ -2,12 +2,12 @@
 type: spec
 id: web-instructions-v6
 title: Web instructions v6 + response doctrine v2 — two channels, the ingest contract, the relay rule
-status: open
+status: shipped
 stage: workshop
 branch: docs/web-instructions-v6
-pr: —
+pr: 240
 opened: 2026-07-28
-shipped: —
+shipped: 2026-07-29 09:19
 ---
 
 # web-instructions-v6 — the Web surface rewritten, the doctrine recut
