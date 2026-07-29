@@ -451,9 +451,8 @@ verify every claim against origin before acting; git outranks it.
    Under usage limits, throttle order: reduce effort before
    downgrading the model.
 5. Every turn-end report follows the response doctrine (HOME
-   §Response doctrine — answer first · explicit steps ·
-   purpose-shaped explanation last · live-derived state · glyph
-   verdicts) and opens with the FLEET TABLE — one row per lane:
+   §Response doctrine) and opens with the FLEET TABLE — one row
+   per lane:
    id · purpose (one line) · 🟢/🟡/🔴 · waiting-on — then NEEDS
    YOUR WORD (the exact word and where to type it), then
    OPTIONS + REC, context last. Every 🔴 names its fix AND where

@@ -117,11 +117,12 @@ When the founder asks for a review of a PR or branch:
    Actions run is green.
 4. OUTPUT — two channels. Human channel first: what this bench
    set out to accomplish, and whether it did — plain sentences,
-   issues named plainly; no receipts, gate numbers, or shas in
-   the prose. On PASS: "Paste below into the Code session to
-   merge" + ONE fenced block carrying the merge word and the
-   on-the-record verdict (sha + what was verified — the record's
-   copy, never the founder's reading). On FINDINGS: count them,
+   issues named plainly; no receipts, gate numbers, shas, or
+   verification narrative in the prose. On PASS: "Paste below
+   into the Code session to merge" + ONE fenced block carrying
+   the merge word and the on-the-record verdict (sha + what was
+   verified — the record's copy, never the founder's reading).
+   On FINDINGS: count them,
    founder decisions first, one plain line each; any repair
    prompt follows §Prompt delivery. A verdict is per-sha: any new
    commit voids it — re-review before any merge word.
@@ -142,7 +143,7 @@ When the founder asks for a review of a PR or branch:
 5. DEPTH ON REQUEST — "more" opens the detail; never volunteered.
 6. STATE IS DERIVED LIVE — any status or GitHub claim comes from
    origin at answer time.
-7. GLYPH VERDICTS — 🟢/🟡/🔴/⏸ lead every status item; every
+7. GLYPH VERDICTS — 🟢/🟡/🔴/⏸/⏳ lead every status item; every
    🔴/⏸ names the fix or resume word AND where it goes.
 
 ## Prompt delivery
@@ -163,8 +164,9 @@ ends in ONE prompt for Claude Code, packaged so:
   NOT MERGE. The founder never needs to read it.
 - AFTER — what happens next and what the founder's next word is.
 Ideas or defects voiced here ride the next delivered prompt as
-IDEAS lines. Never leave a decision only in chat. Content is
-shown for approval before any block is generated.
+IDEAS lines. Never leave a decision only in chat. THE BLOCK COMES
+ONLY ON THE FOUNDER'S EXPLICIT GO — a proposal and its block never
+share a message; content is shown and agreed first.
 
 ## This file's own laws
 - Master: docs/WEB-INSTRUCTIONS.md — edited only via PR; this box
@@ -181,6 +183,7 @@ settled (outcome in the same line) · 🟡 in discussion · ⏳
 queued. Render it on item switch, on the word "agenda", and
 inside any brief or handoff — not every message. On a tangent:
 name the deviation, hold the place, return when it resolves.
+Never encourage work ahead of its ROADMAP stage.
 
 ## "brief" — the full picture
 On the word "brief": run the full ingest (the chat-start contract,

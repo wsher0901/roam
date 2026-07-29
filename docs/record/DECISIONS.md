@@ -2728,7 +2728,7 @@ PROCESS IS PROOF, NOT PROSE — verification detail lives in the
 block or the record, the prose states only the outcome;
 human-readable, and "if it looks stressful to read, it already
 failed"; depth on request; state derived live; glyph verdicts,
-now including ⏸.
+now including ⏸ and ⏳.
 
 V6 ADDS what v5 had no home for. THE CHAT-START INGEST CONTRACT —
 what a fresh chat reads before answering (this box drift-checked
@@ -2748,12 +2748,17 @@ voids it. THE CORE-FILE ALERT — a prompt touching LAWS, HOME,
 FOUNDATION, ROADMAP structure, ENGINE, SETUP, or any master names
 each file and its change before the block, so the founder can
 ponder once more. THE AGENDA CONVENTION — a chat-local numbered
-ledger, rendered on item switch and inside any brief or handoff.
-BRIEF RENDERS THE FULL PICTURE — a richer pickup: where we are ·
-working on · needs you, counted · just happened · parallel · next.
-The no-solo-approval gloss is restated for the seat rather than
-amended, and the Web handoff becomes a labelled instruction line
-plus one fenced paste.
+ledger, rendered on item switch and inside any brief or handoff;
+it also carries the one guardrail revived from v5's retired
+sections, NEVER ENCOURAGE WORK AHEAD OF ITS ROADMAP STAGE. THE
+EXPLICIT-GO LAW — a proposal and its block never share a message;
+the block is generated only on the founder's explicit go, so
+agreeing to an idea is never mistaken for agreeing to the mandate
+that implements it. BRIEF RENDERS THE FULL PICTURE — a richer
+pickup: where we are · working on · needs you, counted · just
+happened · parallel · next. The no-solo-approval gloss is restated
+for the seat rather than amended, and the Web handoff becomes a
+labelled instruction line plus one fenced paste.
 
 THE MASTER GAINS A VERSION HISTORY — a table at its bottom
 (version · date · vehicle · one-line change) and, as its own law,
@@ -2806,5 +2811,8 @@ how a recut half-lands, so it is filed to
 rewritten to the seven v2 rules; framing and one-home clause
 kept) · [WEB-INSTRUCTIONS](../WEB-INSTRUCTIONS.md) (the fenced
 master replaced with v6; a version-history table added below it) ·
+[SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts)
+(the cockpit charter's rule 5 gloss reduced to a pure pointer —
+it named doctrine v1's clauses, which this entry retires) ·
 [IDEAS](../IDEAS.md) (the ritual/report-shape sweep filed) · this
 entry.

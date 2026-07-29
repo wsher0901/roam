@@ -118,7 +118,19 @@ full-copy and changelog laws.
    attached rather than standing bare — and it is now
    byte-identical to HOME, which is the condition that keeps the
    exemption honest.
-3. **Byte-faithfulness is asserted by the bench and NOT
+3. **SETUP was added to files-touched at the external review.**
+   The mandate's list did not include it; the review ruled that
+   the cockpit charter's rule 5, which glossed doctrine v1's five
+   clauses while pointing at the section this bench rewrites,
+   must be reduced to a pure pointer in the PR that causes the
+   staleness — the
+   [retroactivity law](../../LAWS.md#knowledge--tracking) rather
+   than the report restyle this spec scoped out. The routine-box
+   re-save it implies is ALREADY OWED from
+   [#238](https://github.com/wsher0901/roam/pull/238)'s charter
+   change: one re-save covers both, and it keeps riding the
+   board's existing Needs-you item.
+4. **Byte-faithfulness is asserted by the bench and NOT
    independently verified here.** The ship §6 critic had no shell
    and could not diff against `main`; it confirmed no paraphrase
    seams and that every internal cross-reference resolves, and the
@@ -128,10 +140,14 @@ full-copy and changelog laws.
 
 ## Open questions
 
-Three, all outside this bench's files and none silently fixed —
-the founder rules: (1) [the census](../../chronicle/INDEX.md)
-carries three statements this weld falsifies, though ship has no
-chronicle step yet; (2) the cockpit charter's rule 5 still glosses
-doctrine v1's clauses; (3) the supplied v6 text uses ⏳ for
-"queued", a glyph outside doctrine rule 7's own set. Detail in the
-bench memory's critic round.
+One. Two of the three routed at the first gate were ruled at the
+external review and are done — the charter gloss is now a pure
+pointer (deviation 3), and ⏳ was ADMITTED to doctrine rule 7 in
+both homes rather than struck from Agenda. WHAT REMAINS:
+[the census](../../chronicle/INDEX.md) carries three statements
+this weld falsifies (the response-doctrine row's ending, the
+WEB-INSTRUCTIONS row, and §Founder input owed item 8, which this
+master change re-opens). Ship carries no chronicle step yet —
+deferred by
+[D-059](../DECISIONS.md#d-059--2026-07--the-chronicle-layer--living-stories-above-the-frozen-record-one-story-per-item-the-ending-rule--settled-in-any-format-means-the-story-is-written-a-later-fix-is-incorporated-and-the-ending-rewritten-at-that-weld-retirement-is-a-settlement-docschronicle-one-file-per-story-indexmd-shelving-four-shelves-immutability-beneath--record-untouched-stories-link-down-as-footnotes-down-links-only--a-story-never-cites-another-storys-prose-supersedes-the-07-23-three-chapter-shape-the-ship-synthesis-at-weld-step-deferred-to-the-first-story-weld)
+to the first story weld — so the wait may be the right answer.

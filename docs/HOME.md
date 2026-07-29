@@ -904,7 +904,7 @@ Rituals and charters REFERENCE this section; none copies it.
 5. DEPTH ON REQUEST — "more" opens the detail; never volunteered.
 6. STATE IS DERIVED LIVE — any status or GitHub claim comes from
    origin at answer time.
-7. GLYPH VERDICTS — 🟢/🟡/🔴/⏸ lead every status item; every
+7. GLYPH VERDICTS — 🟢/🟡/🔴/⏸/⏳ lead every status item; every
    🔴/⏸ names the fix or resume word AND where it goes.
 
 Sources:
