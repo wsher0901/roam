@@ -3008,3 +3008,84 @@ bench; moves to history at the weld) · this entry.
 [LANE-WORKER](../LANE-WORKER.md) and
 [WEB-INSTRUCTIONS](../WEB-INSTRUCTIONS.md) are governed from now
 on but NOT recut here.
+
+## D-066 — 2026-07 — The IDEAS entry contract — one idea per line, one line per idea, plain language, links short-text at the tail; glyph first (open · developed with vehicle · declined with a one-word why); two sections, OPEN newest-first and CLOSED one line each; closed entries COMPRESS AND STAY as the outcome ledger (amends the delete-at-harvest compaction law); multi-part thoughts split so closure is per-idea; findings and probe stories live in the record, never here; enforcement — the header is the law, handoff's harvest grooms to it every sitting, liftoff/decide/parallel-lanes cite it at their write steps, the critic and the external review grade IDEAS diffs against it
+
+**Decision:** [IDEAS](../IDEAS.md) gains an ENTRY CONTRACT, stated
+at its own head and enforced by every file that writes there.
+
+**THE SHAPE.** One idea per line, one line per idea — a plain
+sentence a tired reader scans, jargon translated, links short-text
+at the tail. GLYPH FIRST: ⏳ open · 🟢 developed (vehicle linked) ·
+⚪ declined (one-word why). TWO SECTIONS: OPEN, newest first ·
+CLOSED, one line each. A MULTI-PART THOUGHT SPLITS into separate
+lines so closure is per-idea. FINDINGS AND PROBE STORIES ARE NOT
+IDEAS — they live in the record; a line here points at them.
+
+**THE AMENDMENT.** [D-050](#d-050--2026-07--session-lifecycle--closed--dead-the-close-locks-wall-softens-to-injected-read-only-doctrine-interrupt-capture-is-standing-format-the-claude-residue-sweep-is-pickup-hygiene-ideas-is-an-inbox-not-an-archive-amends-the-d-046-era-close-wall-design-upholds-the-park-protocol-and-no-solo-approval)
+made IDEAS an inbox-not-an-archive and DELETED closed entries at
+every harvest. That half is amended: CLOSED ENTRIES COMPRESS AND
+STAY, one line each, as THE OUTCOME LEDGER. The inbox-not-archive
+principle survives in the compression — a closed idea keeps one
+line and its closing vehicle, never its narrative.
+
+**THE ENFORCEMENT**, because a shape with no enforcer decays back
+in one sitting: the header IS the law;
+[handoff](../skills/handoff.md)'s harvest grooms the file to it
+every sitting (compressing, never deleting);
+[liftoff](../skills/liftoff.md),
+[decide](../skills/decide.md) and
+[parallel-lanes](../skills/parallel-lanes.md) cite it at their
+write steps; and the ship-time critic and the external review
+grade IDEAS diffs against it like any other contract.
+
+**Why:** the inbox had become the least readable file in the repo
+— single entries running past twenty lines, several ideas bundled
+into one bullet so no part could close without the others, and
+probe narratives sitting where a scanning reader expects a
+sentence. The founder's actual use of this file is a thirty-second
+scan for "what is open?", and the file had stopped answering it.
+
+The delete-at-harvest half was worse than unreadable: it made the
+file unable to answer "what did we decide about X?". A closed idea
+deleted leaves the reasoning discoverable only by knowing which
+PR to look in — which is precisely the knowledge a person asking
+the question does not have. Compression keeps the answer at one
+line's cost.
+
+Splitting multi-part thoughts is what makes closure honest. The
+07-22 "four smaller ones" entry sat PARTLY CLOSED for a week
+because one of its four had shipped and three had not; under the
+contract those are four lines and three of them are still open,
+which is both true and actionable.
+
+**Alternatives rejected:** keeping delete-at-harvest and relying
+on [the ledger](../record/history/README.md#the-ledger) to answer
+outcome questions — the ledger is keyed by PR and tells you what
+shipped, not what was CONSIDERED and declined; a declined idea
+leaves no ledger line at all, so its outcome would vanish
+entirely · a separate `DECLINED.md` — a second file to keep in
+step, when one section header does the same work · letting
+entries stay long and merely sorting them — length is the
+symptom; the disease is that an entry mixing four ideas and a
+probe narrative cannot be classified, closed, or scanned · a
+CI check enforcing the shape mechanically — the contract's
+clauses are judgments (is this one idea? is this plain?), and a
+checker that cannot judge them would either pass everything or
+block on formatting; the critic and the external review already
+grade contracts, and they can read.
+
+**Affects:** [IDEAS](../IDEAS.md) (the header becomes the
+contract; every entry re-derived under it, status verified
+against the record) ·
+[handoff](../skills/handoff.md) (the harvest step compresses to
+CLOSED and cites the contract; §1.2's IDEAS instruction cites it)
+· [liftoff](../skills/liftoff.md) ·
+[decide](../skills/decide.md) ·
+[parallel-lanes](../skills/parallel-lanes.md) (one citing line
+each at their write steps) · [HOME](../HOME.md) (the IDEAS
+routing row, if it states the old delete behaviour) ·
+`docs/record/probes/cloud-birth-in-ci.md` (born — a probe
+narrative the contract evicts and nothing else recorded) ·
+[the spec](specs/ideas-contract.md) + its memory (in flight on
+the bench; moves to history at the weld) · this entry.

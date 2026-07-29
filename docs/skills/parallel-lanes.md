@@ -349,9 +349,10 @@ reliability law BEFORE surfacing it to the founder; then ship takes
 over. Flip draft→ready ONLY after `gh pr checks` reports the pushed
 commit's Actions run green — local green never suffices.
 Ideas-surfaced harvesting: any "Ideas surfaced" lines in a lane's
-memory move to IDEAS at the next baton-holder ritual — lanes never
-write
-main themselves.
+memory move to IDEAS at the next baton-holder ritual, landing PER
+THE ENTRY CONTRACT at [IDEAS](../IDEAS.md)' head — one idea per
+line, glyph first, a multi-part finding split so each part closes
+on its own. Lanes never write main themselves.
 
 Sources:
 [FOUNDATION](../FOUNDATION.md)

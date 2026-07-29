@@ -35,7 +35,10 @@ ticks never need a D-number) · [LAWS](../LAWS.md) and
 manual entry) · [docs/record/specs/](../record/specs/README.md)
 (update or mark superseded any spec the pivot invalidates) ·
 [ENGINE](../ENGINE.md) (when it consolidates the
-changed rule) · [IDEAS](../IDEAS.md) (spawned ideas). The Affects
+changed rule) · [IDEAS](../IDEAS.md) (spawned ideas — each landing
+per the entry contract at that file's head, one idea per line,
+glyph first; an idea this decide CLOSES is compressed to one line
+and moved to CLOSED, never deleted). The Affects
 line and the actual edits must match exactly.
 
 ## 3 · Weave

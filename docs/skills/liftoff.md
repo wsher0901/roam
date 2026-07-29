@@ -117,7 +117,10 @@ cockpit's own row is written at this weld, BEFORE the fire, as
 "cockpit · fired <time> · self-seat pending" — the cockpit
 rewrites it with its real URL at its self-seat repaint
 ([D-051](../record/DECISIONS.md#d-051--2026-07--self-seat-birth--liftoff-fires---cloud-blind-and-the-cockpit-seats-itself-by-its-env-derived-self-url-the-console-attach-launcher-is-retired-amends-d-047s-rung-1-mechanics-as-corrected-by-193-upholds-d-049-and-board-governs)).
-Ship the micro-PR (board + any IDEAS harvest).
+Ship the micro-PR (board + any IDEAS harvest — entries land per
+the entry contract at [IDEAS](../IDEAS.md)' head, and a harvest
+COMPRESSES closed entries into its CLOSED section rather than
+deleting them).
 
 Then THE COCKPIT BIRTH
 ([D-047](../record/DECISIONS.md#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law),

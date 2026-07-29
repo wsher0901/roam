@@ -40,7 +40,8 @@ transcripts that vanish with the session.
 1. CAPTURE FIRST, before a single shutdown request. Write the
    team's findings INTO THE RECORD: THIS SESSION'S OWN open
    bench — its `memory/<id>.md` — else a dated
-   [IDEAS](../IDEAS.md) line — which rides §5's micro-PR, NOT
+   [IDEAS](../IDEAS.md) line PER THE ENTRY CONTRACT at that
+   file's head — which rides §5's micro-PR, NOT
    this branch: §1.2 runs on the task branch, so an IDEAS line
    written here would be swept into a task commit or left dirty.
    NEVER a lane's diary: §1.5's
@@ -136,10 +137,16 @@ survives it. A lane's diary
 stays the lane's — §1.5's one-line park stamp is the park
 protocol's limit.
 Commit, push, return to main. Harvest any "Ideas surfaced" lines
-from lane memories → IDEAS. Harvesting COMPACTS: per
-[IDEAS](../IDEAS.md)' header rule, delete entries already CLOSED
-in an outing older than the current one — the closing artifact
-(the decide, the PR, the history file) is the record.
+from lane memories → IDEAS, each landing PER THE ENTRY CONTRACT at
+[IDEAS](../IDEAS.md)' head: one idea per line, glyph first, plain
+sentence, links short-text at the tail, a multi-part thought split
+so each part can close on its own.
+HARVESTING ALSO GROOMS, and it COMPRESSES — IT NEVER DELETES. Any
+entry that closed or was superseded since the last sitting is
+rewritten as ONE line with its closing vehicle linked and MOVED to
+the CLOSED section, which is the outcome ledger: a closed idea
+keeps its answer, never its narrative. Deleting one would strand
+the question "what did we decide about this?" with no home.
 
 Sources:
 [IDEAS](../IDEAS.md)
