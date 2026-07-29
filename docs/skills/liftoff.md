@@ -220,7 +220,8 @@ connector IN FLIGHT climbs a different one — prevent · detect ·
 repair · degrade · self-rescue, ending in a push to `ops/summon`
 that fires a replacement
 ([D-048](../record/DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047);
-procedure in [the charter master](../COCKPIT-CHARTER.md)).
+procedure in
+[HOME §The cockpit's API paths & recovery ladder](../HOME.md#the-cockpits-api-paths--recovery-ladder)).
 
 Sources:
 [DASHBOARD](../DASHBOARD.md)
@@ -274,8 +275,10 @@ close it answers by fresh derivation from origin (state,
 explanations, pointers), always names the current baton-holder,
 and refuses every write, command act, and ritual. The close-lock
 record is unchanged; only the wall is soft. Strictness kept where
-it must be: a SUPERSEDED cockpit ends tombstone-only (charter
-R4b — a replaced cockpit is a hazard, not a reference desk),
+it must be: a SUPERSEDED cockpit ends tombstone-only (the
+charter's rule 8 carries the line; the supersession procedure is
+[HOME's ladder](../HOME.md#the-cockpits-api-paths--recovery-ladder)
+— a replaced cockpit is a hazard, not a reference desk),
 though the tombstone is now its LAST word after the landing
 ritual rather than instead of one, and the supersession law
 carries that one carve-out
