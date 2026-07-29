@@ -176,6 +176,7 @@ Sources:
 | [record/specs/](record/specs/README.md) | per-task contracts + [TEMPLATE](record/specs/TEMPLATE.md) | born at task birth when discussion opened the task; [ship](skills/ship.md) finalizes | open → shipped or superseded; never deleted |
 | [memory/](memory/README.md) | in-flight task stories in the locked format ([TEMPLATE](memory/TEMPLATE.md)) | the task's own seat — baton-holder at rituals, lanes at their four moments | lives on the task's branch; MOVES to record/history/ at ship |
 | [record/history/](record/history/README.md) | permanent shipped narratives, one per task | [ship](skills/ship.md)'s atomic weld | frozen after landing (link repairs only) |
+| [record/retired/](record/retired/clerk-charter.md) | retired ARTIFACTS kept whole — a box master or config text that is dead but still cited (RECORD, never instruction) | the bench that retires the thing, when its text lives nowhere else | frozen; never re-armed, never pasted |
 | [chronicle/](chronicle/INDEX.md) | living stories above the frozen record, one per settled item — [INDEX](chronicle/INDEX.md) is the door | the weld that settles or advances an item | incorporated, the ending rewritten in place — never a second story |
 | [skills/](skills) | ritual procedures + workshop manuals, vault-readable | founder-approved PRs + promoted gotchas | living |
 | docs/.obsidian/ | Obsidian's own workspace config | Obsidian | gitignored, never committed |
@@ -712,6 +713,93 @@ Sources:
 [liftoff](skills/liftoff.md)
 [chooser law — LAWS §Workflow](LAWS.md#workflow-non-negotiable)
 
+### The cockpit's API dependency map + recovery
+
+A cockpit's powers split cleanly in two, and knowing which half
+just died is the whole of the recovery. Written from the flight of
+2026-07-22, where the connector dropped after the weld and the
+cockpit could not press merge on its own work
+([#191](https://github.com/wsher0901/roam/pull/191)).
+
+**Git-only acts — ALWAYS available** (they need the clone, nothing
+else): clone · read · edit · commit · push · review a diff · write
+a weld (the bookkeeping commit). A cockpit that has lost the API
+is still a full AUTHOR.
+
+**API-only acts**: open a PR · apply a label (so: spawn a lane) ·
+merge · read check runs. A cockpit that has lost the API has lost
+COMMAND.
+
+The cockpit has TWO API paths
+([D-049](record/DECISIONS.md#d-049--2026-07--gh-second-path--gh-api-rest-through-the-github-proxy-is-the-cockpits-second-api-path-a-connector-flap-stops-costing-command-r2-gains-the-automatic-gh-rung-self-id-by-session-env-amends-d-048-corrects-the-193-api-map-upholds-d-047-and-verify-before-rely),
+probe-proven 2026-07-23): the **GitHub MCP connector**, and
+**`gh api` REST through the session's GitHub proxy** (the
+mechanics and their VERIFY probe live at
+[SETUP §cloud accounts](SETUP.md#once-and-done--cloud-accounts)).
+Each API-only act runs on either path; the second is REST-SHAPED,
+so it is always a `gh api` call, never porcelain that rides
+GraphQL (`gh pr list` is proxy-blocked, its own 403 pointing to
+REST). What stays true: the raw `GH_TOKEN`/`GITHUB_TOKEN` is a
+placeholder — a script reading it directly still 401s; only
+gh-through-proxy works. So a single connector flap no longer
+demotes a cockpit from commander to author — R2's gh rung carries
+the act and command continues; only BOTH paths dead demote, and
+then the recovery rungs apply.
+
+One free audit link rides every commit either way: from CLI
+v2.1.179 the harness appends an automatic `Claude-Session:` git
+trailer naming the authoring session — any commit on origin can
+be traced back to the session that wrote it without any scraping.
+
+**Recovery rung, in order:**
+
+1. **Retry the connector once, then the gh rung.** Flaps are
+   often transient: one retry, then the SAME act via `gh api`
+   (the charter's R2). If gh carries it, command continues and
+   the rungs below never fire — they exist for BOTH paths dead.
+2. **At a desk — hand the baton back.** Land: final board
+   repaint, park the tail with its reason written down, hand the
+   baton to the control tower, which has `gh` and finishes the
+   merge. (This is what the 2026-07-22 flight did.)
+3. **Away — birth a fresh cockpit.** Land first, then birth a
+   replacement by
+   [liftoff §6](skills/liftoff.md#6--ledger-handoff--fire-the-cockpit)'s
+   ladder. A `--cloud` birth is free, list-native, and draws no
+   daily cap; the new cockpit re-derives everything from git, so
+   nothing is lost — only the session's conversation, which was
+   never the record.
+4. **Away with no desk — SELF-RESCUE.** Push one empty commit to
+   `ops/summon`; the summon workflow fires a replacement cockpit
+   and the dying one lands under the tombstone
+   ([D-048](record/DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)).
+5. **Last resort — the GitHub mobile app**, or the phone
+   bootstrap paste
+   ([SETUP §cloud accounts](SETUP.md#once-and-done--cloud-accounts))
+   when there is no terminal and no GitHub. The founder's own
+   hands; always works, and the thing this whole chain exists to
+   spend sparingly.
+
+**Rejected, not staged:** a merge-on-signal GitHub Action. It was
+the obvious permanent fix and
+[D-048](record/DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)
+turns it down for two reasons: it would restore only MERGE while a
+connector-dead cockpit still cannot spawn lanes or open benches,
+and — decisively — every session pushes as the founder, so a
+push-triggered merge cannot tell the baton-holder from a lane or a
+redelivered webhook, which breaks no-solo-approval structurally. A
+push-triggered SUMMON is lawful by the same test: a stray spawn is
+recoverable noise (one cap run), not a law breach.
+
+The ladder as the cockpit itself runs it (R0–R4b) is the
+procedure, and it lives in
+[COCKPIT-CHARTER.md](COCKPIT-CHARTER.md) — this map is the WHY.
+
+Sources:
+[COCKPIT-CHARTER](COCKPIT-CHARTER.md)
+[SETUP §cloud accounts](SETUP.md#once-and-done--cloud-accounts)
+[D-048](record/DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)
+[D-049](record/DECISIONS.md#d-049--2026-07--gh-second-path--gh-api-rest-through-the-github-proxy-is-the-cockpits-second-api-path-a-connector-flap-stops-costing-command-r2-gains-the-automatic-gh-rung-self-id-by-session-env-amends-d-048-corrects-the-193-api-map-upholds-d-047-and-verify-before-rely)
+
 ### Delegation — the away-mode chooser
 
 Where work runs is one decision, one variable at each fork. Are you at
@@ -1077,6 +1165,7 @@ never duplicates it.
 | Unvisited idea | [IDEAS](IDEAS.md) | ritual harvest / micro-PR | promoted out via decide when adopted |
 | Engine rule / OPEN slot fill | [ENGINE](ENGINE.md) | decide | decide — the register shrinks by D-number |
 | Tooling · stack · config inventory | [SETUP](SETUP.md) | ops PR | ops PR; status never (the board's job) |
+| External-box master text (a box this repo authors, another product stores) | its own top-level master file — [WEB-INSTRUCTIONS](WEB-INSTRUCTIONS.md) · [COCKPIT-CHARTER](COCKPIT-CHARTER.md) · [LANE-WORKER](LANE-WORKER.md) · [DESIGN-KICKOFF](DESIGN-KICKOFF.md) ([D-064](record/DECISIONS.md#d-064--2026-07--the-box-master-class--the-setup-entry-contract--every-external-box-master-is-its-own-top-level-file-on-the-web-instructions-pattern-cockpit-chartermd-and-lane-workermd-extracted-verbatim-setup-compresses-to-a-replication-spec-under-the-entry-contract-what--where--values--verify--source-design-kickoff-joins-the-class-on-paper)) | ops PR | ops PR + a version-history row; the box is re-pasted/re-saved after every merge |
 | Fact vocabulary (F-* · TP-* · telemetry) | [FACTS](data/FACTS.md) | decide; IDs append-only | definitions via D; IDs never reused |
 | Source vetting verdicts | `SOURCES-<family>` → [SOURCES](data/SOURCES.md) at T7 | vetting lanes | grade moves via demotion evidence + D |
 | Design-session governance | [DESIGN-KICKOFF](DESIGN-KICKOFF.md) | ops PR | ops PR |

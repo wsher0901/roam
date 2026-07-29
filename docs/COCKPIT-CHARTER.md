@@ -168,7 +168,8 @@ R2 · REPAIR IN PLACE.
 R3 · DEGRADE. Keep working git-only: author, commit, push,
    weld. Commanding pauses; nothing is lost or redone. Which
    acts survive and which do not: the dependency map in
-   SETUP §cloud accounts — do not re-derive it.
+   HOME §The cockpit's API dependency map + recovery — do not
+   re-derive it.
 R4 · SELF-RESCUE. Push ONE empty commit to the reserved branch
    ops/summon — a push is git, not API, so it still works — then
    LAND. That push fires .github/workflows/summon.yml, which
@@ -199,6 +200,7 @@ R4b · SUPERSESSION. Never let the founder command a dead
 | Version | Date | Vehicle | Change |
 | --- | --- | --- | --- |
 | v1 | 2026-07-29 | [#242](https://github.com/wsher0901/roam/pull/242) | extracted verbatim from SETUP §cloud accounts under [D-064](record/DECISIONS.md#d-064--2026-07--the-box-master-class--the-setup-entry-contract--every-external-box-master-is-its-own-top-level-file-on-the-web-instructions-pattern-cockpit-chartermd-and-lane-workermd-extracted-verbatim-setup-compresses-to-a-replication-spec-under-the-entry-contract-what--where--values--verify--source-design-kickoff-joins-the-class-on-paper) (prior evolution: SETUP's git history) |
+| v2 | 2026-07-29 | [#244](https://github.com/wsher0901/roam/pull/244) | R3's dependency-map pointer follows the map to [HOME](HOME.md#the-cockpits-api-dependency-map--recovery); charter text otherwise unchanged |
 
 Sources:
 [D-064](record/DECISIONS.md#d-064--2026-07--the-box-master-class--the-setup-entry-contract--every-external-box-master-is-its-own-top-level-file-on-the-web-instructions-pattern-cockpit-chartermd-and-lane-workermd-extracted-verbatim-setup-compresses-to-a-replication-spec-under-the-entry-contract-what--where--values--verify--source-design-kickoff-joins-the-class-on-paper)
