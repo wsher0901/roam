@@ -2,12 +2,12 @@
 type: spec
 id: box-masters
 title: The box-master class + the SETUP entry contract (D-064) — bench 1 of the SETUP recut
-status: open
+status: shipped
 stage: workshop
 branch: docs/box-masters
-pr: —
+pr: 242
 opened: 2026-07-29
-shipped: —
+shipped: 2026-07-29 10:31
 ---
 
 # box-masters — every external box gets its own master file
