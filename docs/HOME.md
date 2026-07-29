@@ -761,8 +761,9 @@ v2.1.179 the harness appends an automatic `Claude-Session:` git
 trailer naming the authoring session — any commit on origin can
 be traced back to the session that wrote it without any scraping.
 
-**THE LADDER — climb in order.** This is the procedure the
-charter's rule 6 sends a cockpit here to read.
+**THE LADDER — climb in order.** This is the procedure
+[the charter](COCKPIT-CHARTER.md)'s rule 6 sends a cockpit here to
+read.
 
 **R0 · PREVENT.** Never sleep on one long monitor while waiting.
 POLL on a cadence instead: fetch origin, re-read the lane's
@@ -1102,8 +1103,9 @@ does · when to reach for it. Rituals point here; none re-lists.
   probe finding: a teleported session is a local session from
   then on.)
 - `/mcp` — retries a failed connector in the current session; the
-  founder rung of the charter ladder's R2. Reach for it when a
-  session reports CONNECTOR DOWN.
+  founder rung of
+  [the recovery ladder](#the-cockpits-api-paths--recovery-ladder)'s
+  R2. Reach for it when a session reports CONNECTOR DOWN.
 - `/compact` · `/context` — context management: compact the
   conversation · inspect what fills it. Reach for them when a
   long session slows or forgets.
@@ -1388,7 +1390,10 @@ the link for the full story.
   read-only reference desk: it answers by fresh derivation from
   origin, names the current baton-holder, and never writes,
   commands, or runs a ritual. One session is stricter, not softer:
-  a superseded cockpit ends tombstone-only (charter R4b) — and
+  a superseded cockpit ends tombstone-only (the charter's rule 8
+  carries the line; the procedure is
+  [the recovery ladder](#the-cockpits-api-paths--recovery-ladder)'s
+  R4b) — and
   since [D-061](record/DECISIONS.md#d-061--2026-07--the-landing-doctrine-recut-to-three-scenarios--the-cockpits-standing-job-advise-on-fleet-status-and-on-each-gate-reaching-decision-execute-the-founders-rulings-from-the-phone-auto-land-when-the-fleet-empties-and-nothing-awaits-the-founder-desk-takeover-when-pickup-finds-a-live-cockpit-holding-decisions-and-the-founders-freeze-unchanged-the-tombstone-wake-rule-makes-a-superseded-cockpit-retire-by-the-full-ritual-amends-d-054s-two-mode-routing-upholds-no-solo-approval-and-the-derivation-law)
   that tombstone is its last word AFTER a landing ritual (minus
   the board step), not instead of one. Home:

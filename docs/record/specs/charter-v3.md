@@ -97,8 +97,9 @@ dependency map that already explains it.
 - [x] Every citation into the charter's moved content or the old
       HOME anchor re-points; "charter rule 5" references stay
       valid by construction.
-- [x] Files touched: nothing outside the mandate's list;
-      [DASHBOARD](../../DASHBOARD.md) untouched.
+- [x] Files touched: nothing outside the mandate's list, PLUS
+      [DASHBOARD](../../DASHBOARD.md) for one link — see
+      Deviation 1; its Needs-you content still rides the tail.
 - [x] `check:links` · `check:ledger` · `check:memory` · lint ·
       format · test · build green; Actions green on the pushed
       head; ship §6 critic run.
