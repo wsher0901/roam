@@ -128,11 +128,68 @@ THE RETIRED CLERK's two "charter master above/below" references
 also stay: they point at the CLERK charter, which is still in
 SETUP as retired record and does not move until bench 2.
 
+### The critic round (ship §6, pre-flip)
+
+Eight findings on `018dbb2`, and the first one is the lesson of
+this bench: **THE SWEEP MISSED THREE.** The grep that drove it
+searched for the phrases the mandate named — "charter master",
+"fenced master", "saved prompt" — and three living citations
+locate the charter without using any of them:
+[parallel-lanes](../skills/parallel-lanes.md)' "(charter:
+[SETUP §cloud accounts])" and "the cockpit's turn-end report
+(charter rule 5, [SETUP …])", and [land](../skills/land.md)'s
+"the tombstone line and refusal guard in the charter's R4b …
+([SETUP …])". A grep for the WORDS a pointer uses cannot find a
+pointer that uses different words; the honest sweep is a grep for
+the DESTINATION — every living link into `SETUP §cloud accounts`
+— read one by one. All three repointed. The Done-means box that
+claimed the sweep complete had been ticked against the narrower
+grep, which is exactly the defect a critic round exists to catch.
+
+Also repaired: SETUP's new pointer paragraph left `liftoff` as
+plain text (weave rule) and restated box-is-a-copy a hundred
+lines from the bullet that already said it (the routing law in
+miniature) — now one sentence that points and does not repeat;
+and the memory's "Where to look" still described SETUP in the
+present tense as where the masters live, which would have frozen
+into the record as false.
+
+ONE FINDING GOES TO THE FOUNDER AND IS NOT FIXED HERE, because
+it is outside this bench's files and the ship tail is its
+natural home: [the board](../DASHBOARD.md)'s standing Needs-you
+item "RE-SAVE THE COCKPIT ROUTINE BOX" still routes to
+`SETUP §cloud accounts` for the text to paste — the text this
+bench removed from SETUP. It is the highest-consequence stale
+pointer of the set, since it is the live instruction for the very
+box this bench is about, and the sibling WEB-INSTRUCTIONS item
+already shows the convention. THE SHIP TAIL REPOINTS IT.
+
+Two more the critic raised, both left for a ruling rather than
+churned: [WEB-INSTRUCTIONS](../WEB-INSTRUCTIONS.md), the exemplar
+the class was drawn from, does not itself carry the class's
+header-laws element — its laws sit INSIDE its fence, which is
+arguably right, since the Web surface reads the box and not the
+file around it; and the box-master class is a new information
+class with no row in
+[HOME §Where information goes](../HOME.md#where-information-goes),
+the mirror of the [#233](https://github.com/wsher0901/roam/pull/233)
+precedent this bench's own deviation 1 cites in the other
+direction.
+
+THE VERBATIM CLAIM WAS NOT INDEPENDENTLY VERIFIED by the critic —
+it had no shell. It checked what it could (both fences internally
+coherent, every cross-reference intact, external descriptions of
+charter content matching) and said plainly that this is evidence,
+not proof. The bench's own byte-comparison stands as the
+mechanical proof, and the method is written above so the external
+review can re-run it.
+
 ## Where to look
 
 - [the spec](../record/specs/box-masters.md) — the contract.
 - [WEB-INSTRUCTIONS](../WEB-INSTRUCTIONS.md) — the pattern.
 - [SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts)
-  — where both masters live until this bench moves them.
+  — where both masters lived until this bench, and where all their
+  routine wiring stays.
 - the Web ops chat, 2026-07-29 — where the SETUP recut was
   planned and approved.

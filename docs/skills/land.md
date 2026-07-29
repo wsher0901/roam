@@ -109,8 +109,7 @@ nothing else. Not "push and stop": a session that vanishes
 mid-flight leaves its lanes unfenced and its row stale, and the
 ritual is barely more expensive than silence. The tombstone line
 and refusal guard in the charter's R4b are how that retirement
-speaks
-([SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts)).
+speaks ([COCKPIT-CHARTER.md](../COCKPIT-CHARTER.md)).
 
 Then run the ritual from
 [§0](#0--derive-the-fleet-route-the-mode) and let the fleet pick

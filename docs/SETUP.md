@@ -353,10 +353,10 @@ summary, then arm the watch.
   so it is LIST-INVISIBLE — reachable by its board link, which is
   why `--cloud` stays the primary birth.
 
-The cockpit charter — the routine's saved prompt, and the text
-liftoff adopts into every `--cloud` birth: the master in
-[COCKPIT-CHARTER.md](COCKPIT-CHARTER.md) (box-is-a-copy —
-re-save the routine from there after any edit).
+The charter itself — the text both the routine and
+[liftoff](skills/liftoff.md)'s `--cloud` birth adopt — is its own
+master: [COCKPIT-CHARTER.md](COCKPIT-CHARTER.md), which carries
+its own re-save law.
 
 ### The cockpit's API dependency map + recovery rung
 
