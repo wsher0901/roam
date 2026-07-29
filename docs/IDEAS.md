@@ -425,3 +425,21 @@ whole.
   → [go-remote](skills/go-remote.md) ·
   [D-046](record/DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
   (the demotion).
+- 2026-07-28 (the founder, the Web ops chat — filed by the
+  [D-063](record/DECISIONS.md#d-063--2026-07--response-doctrine-v2--web-instructions-v6--two-channels-sentences-for-the-founder-fenced-blocks-for-machines-process-is-proof-not-prose-the-chat-start-ingest-contract-the-relay-rule--origin-is-the-only-courier-codes-output-is-never-pasted-to-web-reviews-speak-in-goal-and-outcome-the-core-file-alert-the-agenda-convention-brief-renders-the-full-picture-the-master-gains-a-version-history-amends-d-052)
+  bench, its own bench after this one): RITUAL/REPORT-SHAPE SWEEP
+  — restyle every Code-side report surface to doctrine v2's two
+  channels: [ship §6](skills/ship.md#6--the-gate)'s gate report ·
+  [pickup §5](skills/pickup.md#5--render-the-sit-down-summary-exactly-this-shape) ·
+  [handoff §6](skills/handoff.md#6--close-full-only) ·
+  [liftoff §7](skills/liftoff.md#7--close) ·
+  [land](skills/land.md)'s two reports · the cockpit charter's
+  rule 5 ([SETUP §cloud accounts](SETUP.md#once-and-done--cloud-accounts)).
+  THE FOUNDER'S THREE REQUIREMENTS for every Code gate or
+  completion report, to be written into each: (a) LEAD WITH
+  WHETHER IT WENT WELL OR NOT, in plain sentences — the verdict
+  before the evidence; (b) STATE THE EXACT WORD the founder
+  carries to Web ("review" / "review PR #N") AND WHEN to carry it;
+  (c) CALL OUT ANYTHING THAT NEVER REACHED ORIGIN which the
+  founder must copy-paste — the relay rule's exception class, the
+  only content Web cannot derive for itself.

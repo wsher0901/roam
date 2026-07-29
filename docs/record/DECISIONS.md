@@ -2712,3 +2712,107 @@ closes, and writes no board) · [HOME §Terms](../HOME.md#terms)
 [IDEAS](../IDEAS.md) (the superseded-seat line CLOSED in full) ·
 [the spec](specs/land-doctrine-v2.md) + its memory (in flight on
 the bench; moves to history at the weld) · this entry.
+
+## D-063 — 2026-07 — response doctrine v2 + Web instructions v6 — two channels: sentences for the founder, fenced blocks for machines; process is proof, not prose; the chat-start ingest contract; the relay rule — origin is the only courier, Code's output is never pasted to Web; reviews speak in goal-and-outcome; the core-file alert; the agenda convention; brief renders the full picture; the master gains a version history (amends D-052)
+
+**Decision:** the response doctrine goes to V2 in its one home
+([HOME §Response doctrine](../HOME.md#response-doctrine)), and the
+Web surface's instruction master goes v5 → v6 carrying it.
+
+THE DOCTRINE, seven rules, led by the one that reorganizes every
+other: TWO CHANNELS — sentences for the founder, fenced blocks for
+machines, and NO TECHNICAL CONTENT OUTSIDE A FENCE. Then: three
+questions in order WITH TIMING (what is the situation · what is
+needed, counted · what exactly does the founder do, and WHEN);
+PROCESS IS PROOF, NOT PROSE — verification detail lives in the
+block or the record, the prose states only the outcome;
+human-readable, and "if it looks stressful to read, it already
+failed"; depth on request; state derived live; glyph verdicts,
+now including ⏸ and ⏳.
+
+V6 ADDS what v5 had no home for. THE CHAT-START INGEST CONTRACT —
+what a fresh chat reads before answering (this box drift-checked
+against the master's version line, LAWS, the board, the roadmap,
+live git plus every open bench's memory Status), with the rest
+declared act-gated, topic-gated, or never-proactively. THE RELAY
+RULE — ORIGIN IS THE ONLY COURIER: everything Code produces is on
+origin by law, so the Web surface never asks the founder to paste
+Code's output; the founder's messages are triggers ("review",
+"review PR N", "brief"), outcomes are confirmed by re-deriving,
+and the sole exception is content that never reached origin (a
+crash, a pre-commit error, a platform-UI fact). REVIEWS SPEAK IN
+GOAL-AND-OUTCOME — what the bench set out to do and whether it
+did, in plain sentences, with receipts and shas confined to the
+fenced verdict, and a verdict that is PER-SHA: any new commit
+voids it. THE CORE-FILE ALERT — a prompt touching LAWS, HOME,
+FOUNDATION, ROADMAP structure, ENGINE, SETUP, or any master names
+each file and its change before the block, so the founder can
+ponder once more. THE AGENDA CONVENTION — a chat-local numbered
+ledger, rendered on item switch and inside any brief or handoff;
+it also carries the one guardrail revived from v5's retired
+sections, NEVER ENCOURAGE WORK AHEAD OF ITS ROADMAP STAGE. THE
+EXPLICIT-GO LAW — a proposal and its block never share a message;
+the block is generated only on the founder's explicit go, so
+agreeing to an idea is never mistaken for agreeing to the mandate
+that implements it. BRIEF RENDERS THE FULL PICTURE — a richer
+pickup: where we are · working on · needs you, counted · just
+happened · parallel · next. The no-solo-approval gloss is restated
+for the seat rather than amended, and the Web handoff becomes a
+labelled instruction line plus one fenced paste.
+
+THE MASTER GAINS A VERSION HISTORY — a table at its bottom
+(version · date · vehicle · one-line change) and, as its own law,
+FULL COPY, ALWAYS: whenever a version is compiled or the master
+merges, the surface in hand prints the COMPLETE new text for the
+box paste, never a diff.
+
+**Why:** [D-052](#d-052--2026-07--response-doctrine--one-standard-for-every-surface-speaking-to-the-founder-answer-first-explicit-steps-purpose-shaped-explanation-live-derived-state-glyph-verdicts-the-command-card-the-fleet-table-report-the-ritual-status-templates-web-instructions-v5-ships-retires-the-v4-paste-block-loop-master-upholds-d-046s-cc-direct-doctrine-and-the-derivation-law)
+set one standard for how every surface speaks, and it worked — but
+it optimized the SHAPE of a reply (answer first, explicit steps,
+purpose last) while leaving its CONTENTS mixed. A single paragraph
+would carry a status, a sha, a gate count, and an instruction, and
+the founder — a solo builder without a CS background — had to
+sort the machine's business from their own. Two channels fixes
+that at the root: if it is for a machine it goes in a fence, and
+what remains in prose is by construction readable. Process-is-
+proof follows from it: a gate that ran is proven by the record,
+not by narrating the run.
+
+The v6 additions are all failures already paid for. Chats were
+being started with a status question answered from stale
+Project-knowledge, so the ingest contract makes the first read
+explicit and drift-checks the box against its own master. The
+founder was repeatedly asked to ferry Code's output into Web when
+that output was already on origin — the relay rule ends it and
+names the one class that genuinely cannot travel any other way.
+Reviews were arriving as receipt-dumps the founder had to
+interpret; the goal-and-outcome shape says what a review is FOR.
+And a master with no version history could not be drift-checked
+at all, which is what makes the ingest contract's first step
+possible.
+
+**Alternatives rejected:** keeping doctrine v1 and fixing only the
+Web box — the box already said "follow HOME §Response doctrine",
+so the fix would have created two doctrines and the copy would
+have won by proximity · a machine-readable header on every
+response instead of fenced blocks — more structure for the reader
+to parse, not less, and the fence is a boundary the founder
+already recognizes · letting the relay rule be advisory ("prefer
+origin") — the failure it fixes is a habit, and a preference does
+not break a habit · rewriting the rituals' report shapes in this
+same bench — ship §6, pickup §5, handoff §6, liftoff §7, land's
+reports and the charter's rule 5 all speak in v1's shape; sweeping
+six surfaces while the doctrine itself is still being minted is
+how a recut half-lands, so it is filed to
+[IDEAS](../IDEAS.md) as its own bench.
+
+**Affects:**
+[HOME §Response doctrine](../HOME.md#response-doctrine) (the body
+rewritten to the seven v2 rules; framing and one-home clause
+kept) · [WEB-INSTRUCTIONS](../WEB-INSTRUCTIONS.md) (the fenced
+master replaced with v6; a version-history table added below it) ·
+[SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts)
+(the cockpit charter's rule 5 gloss reduced to a pure pointer —
+it named doctrine v1's clauses, which this entry retires) ·
+[IDEAS](../IDEAS.md) (the ritual/report-shape sweep filed) · this
+entry.
