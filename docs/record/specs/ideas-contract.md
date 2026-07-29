@@ -2,12 +2,12 @@
 type: spec
 id: ideas-contract
 title: The IDEAS entry contract — one idea per line, closed entries compress and stay (D-066)
-status: open
+status: shipped
 stage: workshop
 branch: docs/ideas-contract
-pr: —
+pr: 248
 opened: 2026-07-29
-shipped: —
+shipped: 2026-07-29 14:56
 ---
 
 # ideas-contract — the inbox becomes readable, and keeps its outcomes

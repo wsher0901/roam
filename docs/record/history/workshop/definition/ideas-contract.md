@@ -1,7 +1,9 @@
 ---
-type: memory
+type: history
 id: ideas-contract
-updated: 2026-07-29 14:52 · ship · work PC
+updated: 2026-07-29 14:56 · weld · work PC
+shipped: 2026-07-29 14:56
+pr: 248
 ---
 # ideas-contract — the inbox becomes readable, and keeps its outcomes
 
@@ -18,19 +20,19 @@ entry settled from the record.
 
 ## What this task is
 
-[IDEAS](../IDEAS.md) is the single inbox and had stopped being
+[IDEAS](../../../../IDEAS.md) is the single inbox and had stopped being
 scannable: twenty-line entries, probe narratives that belong in
 the record, several ideas bundled per bullet so nothing closed
 cleanly, and a compaction law that DELETED what closed — so the
 file could never answer "what did we decide about X?". THE ENTRY
 CONTRACT fixes both halves, and closed entries now COMPRESS AND
 STAY as the outcome ledger. Contract:
-[the spec](../record/specs/ideas-contract.md).
+[the spec](../../../specs/ideas-contract.md).
 
 ## Pending issues
 
 - Tower-authored, so
-  [no-solo-approval](../LAWS.md#workflow-non-negotiable) requires
+  [no-solo-approval](../../../../LAWS.md#workflow-non-negotiable) requires
   an external Web review before the founder's word at THE GATE. DO
   NOT MERGE.
 
@@ -42,7 +44,7 @@ nothing parked.
 
 Born 2026-07-29 at the work PC, the fifth bench of the sitting and
 the third in a row about the same disease: a file that had grown
-into a container. [SETUP](../SETUP.md) held masters and
+into a container. [SETUP](../../../../SETUP.md) held masters and
 narratives; the cockpit charter held a procedure; IDEAS holds
 probe stories, findings, and multi-idea bundles that cannot close.
 Each recut answers the same question differently — what is this
@@ -56,7 +58,7 @@ different from what the file claimed or implied.
 
 1. **"Name Agent View in parallel-lanes" — claimed nothing, and
    is NOT done.** `grep -c 'Agent View'` on
-   [parallel-lanes](../skills/parallel-lanes.md) returns 0. It
+   [parallel-lanes](../../../../skills/parallel-lanes.md) returns 0. It
    had sat since 07-16 reading like housekeeping already handled.
    STAYS OPEN.
 2. **The `count:runs` defect is NOT fixed.**
@@ -65,7 +67,7 @@ different from what the file claimed or implied.
    exactly the failure the entry describes. STAYS OPEN — and it
    still costs liftoff a number it could derive.
 3. **The daily-cap entry was HALF closed, and nobody had noticed.**
-   [liftoff §2](../skills/liftoff.md#2--triage-every-open-item)
+   [liftoff §2](../../../../skills/liftoff.md#2--triage-every-open-item)
    now reads "`npm run count:runs` PLUS the fires performed this
    sitting" — so the API-fire blind spot IS fixed. The REDELIVERY
    blind spot is not mentioned anywhere. Split: one line closed,
@@ -73,9 +75,9 @@ different from what the file claimed or implied.
    per-idea rule earning its place on its first use.
 4. **BOX PROVENANCE is CLOSED, though nothing said so.** It asked
    for "last pasted: date + sha" stamps so box currency becomes
-   derivable. [D-064](../record/DECISIONS.md#d-064--2026-07--the-box-master-class--the-setup-entry-contract--every-external-box-master-is-its-own-top-level-file-on-the-web-instructions-pattern-cockpit-chartermd-and-lane-workermd-extracted-verbatim-setup-compresses-to-a-replication-spec-under-the-entry-contract-what--where--values--verify--source-design-kickoff-joins-the-class-on-paper)
+   derivable. [D-064](../../../DECISIONS.md#d-064--2026-07--the-box-master-class--the-setup-entry-contract--every-external-box-master-is-its-own-top-level-file-on-the-web-instructions-pattern-cockpit-chartermd-and-lane-workermd-extracted-verbatim-setup-compresses-to-a-replication-spec-under-the-entry-contract-what--where--values--verify--source-design-kickoff-joins-the-class-on-paper)
    gave every master a version-history table and
-   [D-063](../record/DECISIONS.md#d-063--2026-07--response-doctrine-v2--web-instructions-v6--two-channels-sentences-for-the-founder-fenced-blocks-for-machines-process-is-proof-not-prose-the-chat-start-ingest-contract-the-relay-rule--origin-is-the-only-courier-codes-output-is-never-pasted-to-web-reviews-speak-in-goal-and-outcome-the-core-file-alert-the-agenda-convention-brief-renders-the-full-picture-the-master-gains-a-version-history-amends-d-052)
+   [D-063](../../../DECISIONS.md#d-063--2026-07--response-doctrine-v2--web-instructions-v6--two-channels-sentences-for-the-founder-fenced-blocks-for-machines-process-is-proof-not-prose-the-chat-start-ingest-contract-the-relay-rule--origin-is-the-only-courier-codes-output-is-never-pasted-to-web-reviews-speak-in-goal-and-outcome-the-core-file-alert-the-agenda-convention-brief-renders-the-full-picture-the-master-gains-a-version-history-amends-d-052)
    made a fresh Web chat drift-check its box against the master's
    version line. The idea got what it asked for by a different
    mechanism, three benches later, and no one closed it.
@@ -94,7 +96,7 @@ pointer's target.
   its own toolset · teleport relocating execution · birth prompts
   truncating on nested quotes · a birth turn no-opping) — ALL
   FOUR already live in
-  [their story](../record/history/workshop/mechanism/gh-second-path.md).
+  [their story](../mechanism/gh-second-path.md).
   The IDEAS copy was a duplicate; it compresses to a pointer. My
   first grep said otherwise and was wrong — it searched my
   phrasings, not the file's, which is the same trap the last
@@ -105,7 +107,7 @@ pointer's target.
   a flight to learn that a pty defeats the TTY refusal, that
   first-run onboarding blocks `--cloud`, and that a bare
   setup-token carries no org identity. It moved WHOLE to
-  [a new probe record](../record/probes/cloud-birth-in-ci.md),
+  [a new probe record](../../../probes/cloud-birth-in-ci.md),
   with the founder's decision and the untried next step intact.
   That is a new `record/probes/` shelf — a probe is neither a
   shipped story nor a retired artifact.
@@ -127,7 +129,7 @@ that entry.**
 
 "Keep the self-read launcher as a script" was carried forward as
 OPEN. It is DECLINED:
-[D-051](../record/DECISIONS.md#d-051--2026-07--self-seat-birth--liftoff-fires---cloud-blind-and-the-cockpit-seats-itself-by-its-env-derived-self-url-the-console-attach-launcher-is-retired-amends-d-047s-rung-1-mechanics-as-corrected-by-193-upholds-d-049-and-board-governs)
+[D-051](../../../DECISIONS.md#d-051--2026-07--self-seat-birth--liftoff-fires---cloud-blind-and-the-cockpit-seats-itself-by-its-env-derived-self-url-the-console-attach-launcher-is-retired-amends-d-047s-rung-1-mechanics-as-corrected-by-193-upholds-d-049-and-board-governs)
 retires the console-attach launcher — "the component is DELETED
 from the recipe, not maintained" — and names KEEPING THE LAUNCHER
 AS A FALLBACK among its rejected options, two days AFTER the idea
@@ -179,8 +181,8 @@ were my regex, not the file (`\|` does not alternate under
 
 ## Where to look
 
-- [the spec](../record/specs/ideas-contract.md) — the contract.
-- [IDEAS](../IDEAS.md) — the file being rewritten.
-- [D-050](../record/DECISIONS.md#d-050--2026-07--session-lifecycle--closed--dead-the-close-locks-wall-softens-to-injected-read-only-doctrine-interrupt-capture-is-standing-format-the-claude-residue-sweep-is-pickup-hygiene-ideas-is-an-inbox-not-an-archive-amends-the-d-046-era-close-wall-design-upholds-the-park-protocol-and-no-solo-approval)
+- [the spec](../../../specs/ideas-contract.md) — the contract.
+- [IDEAS](../../../../IDEAS.md) — the file being rewritten.
+- [D-050](../../../DECISIONS.md#d-050--2026-07--session-lifecycle--closed--dead-the-close-locks-wall-softens-to-injected-read-only-doctrine-interrupt-capture-is-standing-format-the-claude-residue-sweep-is-pickup-hygiene-ideas-is-an-inbox-not-an-archive-amends-the-d-046-era-close-wall-design-upholds-the-park-protocol-and-no-solo-approval)
   — the delete-at-harvest law this amends.
 - the Web ops chat, 2026-07-29 — where the contract was approved.
