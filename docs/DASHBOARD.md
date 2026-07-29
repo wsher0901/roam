@@ -6,9 +6,9 @@ status: living
 
 # Dashboard — the state surface
 
-Stamp: 2026-07-28 · 17:16 · ship tail · work PC
+Stamp: 2026-07-29 · 09:22 · ship tail · work PC
 V1 5/34 · S1 2/7 · S2 3/5 · sessions: 1 main · 0 parallel
-(0 need you) · needs-you 2
+(0 need you) · needs-you 3
 How to read this board →
 [HOME §Reading the board](HOME.md#reading-the-board)
 
@@ -25,15 +25,26 @@ How to read this board →
 2. 🟡 RE-SAVE THE COCKPIT ROUTINE BOX at
    claude.ai/code/routines — [#238](https://github.com/wsher0901/roam/pull/238)
    edited the charter MASTER (the standing job · auto-land ·
-   the tombstone wake-rule), and the routine's saved prompt is a
-   COPY. Until it is re-saved, a routine-fired cockpit is born
-   without any of the three (since 07-28).
+   the tombstone wake-rule) and
+   [#240](https://github.com/wsher0901/roam/pull/240) edited it
+   again (rule 5's gloss → a pure pointer); the routine's saved
+   prompt is a COPY. ONE re-save covers both. Until it happens, a
+   routine-fired cockpit is born without any of them (since
+   07-28).
    → [SETUP §cloud accounts](SETUP.md#once-and-done--cloud-accounts) ·
    [D-061](record/DECISIONS.md#d-061--2026-07--the-landing-doctrine-recut-to-three-scenarios--the-cockpits-standing-job-advise-on-fleet-status-and-on-each-gate-reaching-decision-execute-the-founders-rulings-from-the-phone-auto-land-when-the-fleet-empties-and-nothing-awaits-the-founder-desk-takeover-when-pickup-finds-a-live-cockpit-holding-decisions-and-the-founders-freeze-unchanged-the-tombstone-wake-rule-makes-a-superseded-cockpit-retire-by-the-full-ritual-amends-d-054s-two-mode-routing-upholds-no-solo-approval-and-the-derivation-law)
 
-The WEB-INSTRUCTIONS re-paste CLEARED — the founder re-pasted the
-box on 2026-07-28, recorded at
-[#236](https://github.com/wsher0901/roam/pull/236).
+3. 🟡 RE-PASTE THE WEB-INSTRUCTIONS BOX in the Claude Web project
+   — [#240](https://github.com/wsher0901/roam/pull/240) shipped
+   the master at v6, and the box is a copy. v6 makes this its own
+   law (FULL COPY, ALWAYS), and the version line in the box is
+   what a fresh chat drift-checks against at ingest, so a stale
+   box now announces itself (since 07-29).
+   → [WEB-INSTRUCTIONS](WEB-INSTRUCTIONS.md) ·
+   [D-063](record/DECISIONS.md#d-063--2026-07--response-doctrine-v2--web-instructions-v6--two-channels-sentences-for-the-founder-fenced-blocks-for-machines-process-is-proof-not-prose-the-chat-start-ingest-contract-the-relay-rule--origin-is-the-only-courier-codes-output-is-never-pasted-to-web-reviews-speak-in-goal-and-outcome-the-core-file-alert-the-agenda-convention-brief-renders-the-full-picture-the-master-gains-a-version-history-amends-d-052)
+
+The 07-28 re-paste ([#236](https://github.com/wsher0901/roam/pull/236))
+cleared its own item; item 3 is a NEW one, opened by the v6 master.
 
 The nine open engine questions stay parked in
 [ENGINE §12](ENGINE.md#12-open-register) until
@@ -46,13 +57,13 @@ frontmatter oddity is folded there too
 
 | Session | Task | State | Last push | Your move |
 |---|---|---|---|---|
-| main · control tower | — ([land-doctrine-v2](record/history/workshop/mechanism/land-doctrine-v2.md) shipped [#238](https://github.com/wsher0901/roam/pull/238); nothing open) · 0/0 | 🟢 | 17:16 (this repaint) | — |
+| main · control tower | — ([web-instructions-v6](record/history/workshop/definition/web-instructions-v6.md) shipped [#240](https://github.com/wsher0901/roam/pull/240); nothing open) · 0/0 | 🟢 | 09:22 (this repaint) | — |
 
 ↳ main micro: — (no active task)
 
 SEQUENCING — the standing order, now
 [D-060](record/DECISIONS.md#d-060--2026-07--the-three-phase-standing-order--settle-and-test-the-vault-then-roam-v1s1t3t6-and-v1s2t5-are-paused-until-phase-2-closes-the-founders-2026-07-28-sequencing-recorded-per-laws-pause-routing-upholds-the-pacing-law):
-**PHASE 1 — SETTLE & TEST** (two benches down; next the
+**PHASE 1 — SETTLE & TEST** (three benches down; next the
 first-story shakedown flight: blind cockpit birth · the fence /
 [land](skills/land.md) MODE P ·
 [pickup](skills/pickup.md#6--fleet-resume-on-the-founders-answer)
@@ -111,6 +122,23 @@ generalization the bench had flagged rather than assumed:
 findings captured first, no board written — which closes the
 [D-056](record/DECISIONS.md#d-056--2026-07--team-aware-leaving-rituals--no-ritual-lets-a-live-agent-team-outlive-the-sitting-that-made-it-handoff-shuts-the-team-down-before-parking-anything-and-captures-its-findings-into-the-record-first-land-states-the-cockpit-cannot-lead-a-team-case-once-and-routes-the-ground-seat-to-handoff-pickup-gains-the-ghost-teammate-recovery-note-and-the--block-gains-what-the-team-had-found-closes-d-055s-deferred-gap-upholds-one-home-and-the-park-protocol)
 deferred road in full.
+
+AND THE WEB SURFACE REWRITTEN
+([#240](https://github.com/wsher0901/roam/pull/240)) — the master
+goes v5 → v6 and the response doctrine v1 → v2 with it
+([D-063](record/DECISIONS.md#d-063--2026-07--response-doctrine-v2--web-instructions-v6--two-channels-sentences-for-the-founder-fenced-blocks-for-machines-process-is-proof-not-prose-the-chat-start-ingest-contract-the-relay-rule--origin-is-the-only-courier-codes-output-is-never-pasted-to-web-reviews-speak-in-goal-and-outcome-the-core-file-alert-the-agenda-convention-brief-renders-the-full-picture-the-master-gains-a-version-history-amends-d-052)).
+TWO CHANNELS is the change everything else follows from:
+sentences for you, fenced blocks for machines, nothing technical
+outside a fence. v6 adds the chat-start ingest contract, THE
+RELAY RULE (origin is the only courier — you are never asked to
+ferry Code's output to Web), reviews that speak in
+goal-and-outcome, the core-file alert, an agenda, a full-picture
+brief, and the master's own version history. THE BENCH'S HARDEST
+ACT WAS REFUSING TO WRITE: ordered to replace the box
+byte-faithful, it found the approved text dropped two whole v5
+sections and flagged them with their content rather than
+reconstructing what you had not supplied — you then ruled each,
+reviving one guardrail and letting three go on purpose.
 
 NEXT: the first-story shakedown flight, phase 1's second half —
 it proves [land](skills/land.md) and the blind cockpit birth, the
@@ -201,6 +229,7 @@ T3–T6 source-vetting relaunch stays held (see You are here).
 
 | When | What | PR |
 |---|---|---|
+| 07-29 09:19 | [the Web surface's instruction master goes v5 → v6 and the response doctrine v1 → v2 with it (D-063): D-052 optimized the SHAPE of a reply while leaving its CONTENTS mixed — one paragraph carrying a status, a sha, a gate count and an instruction, with the founder left to sort the machine's business from their own. TWO CHANNELS fixes it at the root (sentences for the founder, fenced blocks for machines, no technical content outside a fence), and PROCESS IS PROOF, NOT PROSE follows from it; seven rules, one home, carried word-identical in the box. v6 adds what v5 had no home for: the chat-start INGEST CONTRACT with the box drift-checked against its own master's version line; THE RELAY RULE — origin is the only courier, so the founder is never asked to ferry Code's output, the one exception named honestly; reviews in GOAL-AND-OUTCOME with per-sha verdicts; the core-file alert; the agenda convention; a full-picture brief; and the FULL COPY, ALWAYS law with the version-history table that makes the drift-check possible. THE BENCH'S HARDEST ACT WAS REFUSING TO WRITE — ordered to replace the fence byte-faithful, it found the approved text dropped two whole v5 sections and FLAGGED them with their full content rather than reconstructing what the founder had not supplied; the founder then ruled each, reviving the ROADMAP-stage guardrail and letting three go on purpose, so the record says which were deliberate. The critic caught the bench's own ship hygiene and an ⏳ used outside rule 7's glyph set; the external review resolved that one the other way — ADMITTING ⏳ to the doctrine in both homes — and added the explicit-go law, the prose ban widened to verification narrative, and the charter rule 5 gloss reduced to a pure pointer](record/history/workshop/definition/web-instructions-v6.md) | [#240](https://github.com/wsher0901/roam/pull/240) |
 | 07-28 17:13 | [the landing doctrine recut to the founder's three-scenario model (D-061), and supersession stops being the one road out that runs no ritual (D-062): D-054 routed landing by the FLEET but left the TRIGGER in one place — the founder's word — which fits exactly one of the three situations a flight actually ends in. The cockpit gains a written STANDING JOB (advise on fleet status and on each gate reaching decision, execute the founder's rulings, NEVER merge on its own advice); AUTO-LAND fires the full ritual unprompted the same turn no lanes work AND nothing awaits the founder, behind four guards, one re-liftoff the stated cost of an early fire; DESK TAKEOVER hands the baton back when the founder returns mid-flight; the freeze is unchanged. THE SHIP-TIME CRITIC FOUND THREE STRUCTURAL FAULTS THE BENCH BUILT ITSELF — LAWS still said "push, write nothing", the exact behaviour D-061 rejects BY NAME and LAWS outranks a skill; a superseded cockpit would have repainted the board and ERASED the takeover stamp of the desk that superseded it; and the takeover sat behind an entry guard admitting only a grounded fleet, unreachable reading pickup top-down — all repaired pre-flip, plus a fourth that would have killed a healthy lane. The external review then directed the generalization the bench flagged rather than assumed: D-062, ANY superseded seat exiting by its own closing ritual with team findings captured first and no board written, closing the D-056 deferred road in full](record/history/workshop/mechanism/land-doctrine-v2.md) | [#238](https://github.com/wsher0901/roam/pull/238) |
 | 07-28 13:22 | [the census's nine founder-owed endings are answered and written into the record: the founder ruled on all nine, and the INDEX's owed register became nine settled-for-now endings — THREE RECORDING UNCERTAINTY AS THE SETTLED STATE, because that is what the answer was; two the bench DERIVED rather than asking twice (both summon secrets exist by name, values never read; no weld since #213 is cockpit-seated — a derivation whose own limit is named, since no weld is weaker than no flight); T3–T6 RELAUNCH FROM SCRATCH with the external reviewer's four audit riders each marked verify-licenses-at-spike, the failure evidence held to exactly what the record carries and one dangling pointer noted honestly rather than counted; the reviewer registration defect CLOSED after five clean native runs; the chronicle layer settled and took its own shelf row, the census restamping 65 → 66. THE SHIP-TIME CRITIC EARNED ITS KEEP — four of its nine findings were the bench breaking its own no-rounding rule in text the founder had already approved, all narrowed back to the evidence pre-flip, and the external review upheld a fifth: the standing order pauses roadmap work, so the founder amended the files-touched and D-060 landed as a pure append](record/history/workshop/definition/chronicle-answers.md) | [#236](https://github.com/wsher0901/roam/pull/236) |
 | 07-27 21:34 | [the story layer is decided and its shelves are drafted (D-059): living stories above the frozen record, governed by the founder's six rulings — ONE STORY PER ITEM, and the ending rule at the design's heart (settled in any format means written; a later fix is INCORPORATED and the ending rewritten at that weld — never a second story); docs/chronicle/ born with INDEX.md as a DRAFT CENSUS of 65 proposed stories across four shelves, produced by the workshop's FIRST AGENT-TEAM USE — three read-only teammates, one shelf each, the lead reading the Roam shelf itself; the D-056 discipline ran in the externally-corrected order (captures pushed BEFORE shutdown, proven from the push log at review); nine endings the record cannot derive marked founder-input-owed rather than guessed, the T3–T6 batch-1 arc leading them; the founder's four folds landed at the review; the ship synthesis-at-weld step deferred by ruling to the first story weld](record/history/workshop/definition/chronicle-layer.md) | [#233](https://github.com/wsher0901/roam/pull/233) |
@@ -210,7 +239,6 @@ T3–T6 source-vetting relaunch stays held (see You are here).
 | 07-24 16:44 | [where agent teams fit this workshop and where they must not (D-055): the experimental flag was already ON with nothing reaching for it, so the question was never whether teams get used but whether their first use would be governed. THE BOUNDARY — teams are for EXPLORATION AND REVIEW at a ground seat, LANES REMAIN THE AUTHORSHIP MECHANISM, and a team never authors a bench, never merges, never runs a ritual — with the reasons stated rather than asserted; TWO RISKS AS LAW: single-sitting only (an explicit carve-out to D-050's interrupt promise, written in BOTH places that promise is read — an interrupt is safe for your session and fatal to your teammates) and a teammate-authored diff is SELF-AUTHORED under no-solo-approval; the reviewer's model settled by VERIFICATION — the `opus` alias resolved mechanically from a headless run's own billing record and recorded before `reviewer.md` was touched, an order the external review checked in the log rather than trusting; three rejections with reasons. The critic ran TWICE: the first as Sonnet 5 (this session's definition was cut at startup, before the edit), the second forced onto Opus 5 — and the Opus pass found a THIRD stale copy plus the missing D-045/D-020 forward pointer, so of three stale copies the bench found one and the critic found two](record/history/workshop/definition/agent-teams.md) | [#223](https://github.com/wsher0901/roam/pull/223) |
 | 07-24 15:20 | [how a flight ends becomes a first-class ritual (D-054): land ships as ONE skill with TWO modes routed by the fleet the cockpit derives from origin — RETIRE, consolidating the duties charter rule 6 already carried, and PAUSE-AND-TRANSFER, answering the case that had none; its core is THE FENCE, a commit that makes the lane's next push non-fast-forward so the wake-lock turns the rejection into a stop and the resume point is the branch tip BY CONSTRUCTION, with the honesty clause beside it (wake-lock-mediated, never a guaranteed freeze); the board's fleet-at-ground table is the single material passed down, sessions are cattle and branches are the work, pickup gains the FLEET RESUME ask with live cap arithmetic, rule 6 reduces to a pointer, and the effort doctrine moves to Opus 5 · xhigh; five alternatives rejected with reasons; the critic's two findings repaired pre-flip, the 🟡 one judged REQUIRED by one-home at the external review](record/history/workshop/mechanism/landing-skill.md) | [#221](https://github.com/wsher0901/roam/pull/221) |
 | 07-24 01:33 | [the harness found ALREADY AT BEST PRACTICE, the proof welded to the record (D-053): the founder's maximum-depth audit of the whole governing layer against Anthropic's guidance; the two real improvements shipped — LAWS' verification loop promoted to a copy-runnable block (proven live: this bench's gate ran the block verbatim as its mirror) and two stub trigger-surfaces sharpened, the harness picking both up mid-bench; five alternatives rejected with reasons; the critic's one finding — the hygiene bench's own bare D-053 mentions — repaired pre-flip](record/history/workshop/definition/guardrail-audit.md) | [#218](https://github.com/wsher0901/roam/pull/218) |
-| 07-24 00:51 | [one standard for how every surface speaks to the founder (D-052): the goal verbatim — minimum reading time to decision, explicit steps over abstractions, purpose-shaped explanation — five clauses in ONE home (HOME §Response doctrine), the founder's §Command card with D-049's teleport warning where it will be read, the cockpit's FLEET TABLE report, the four-part status template rewritten into all three rituals (pickup's ⏸ lead above everything), and WEB-INSTRUCTIONS v4 → v5 — the paste-block loop dead, the mandatory-review role leading, the on-the-record word-paste in the procedure](record/history/workshop/definition/response-doctrine.md) | [#216](https://github.com/wsher0901/roam/pull/216) |
 
 Note: [#201](https://github.com/wsher0901/roam/pull/201) (liftoff
 board weld) and [#202](https://github.com/wsher0901/roam/pull/202)
