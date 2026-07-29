@@ -6,9 +6,9 @@ status: living
 
 # Dashboard — the state surface
 
-Stamp: 2026-07-29 · 10:35 · ship tail · work PC
+Stamp: 2026-07-29 · 11:09 · ship tail · work PC
 V1 5/34 · S1 2/7 · S2 3/5 · sessions: 1 main · 0 parallel
-(0 need you) · needs-you 3
+(0 need you) · needs-you 4
 How to read this board →
 [HOME §Reading the board](HOME.md#reading-the-board)
 
@@ -28,10 +28,11 @@ How to read this board →
    the tombstone wake-rule) and
    [#240](https://github.com/wsher0901/roam/pull/240) edited it
    again (rule 5's gloss → a pure pointer); the routine's saved
-   prompt is a COPY. ONE re-save covers both, and the text to
-   paste now lives in its own file. Until it happens, a
-   routine-fired cockpit is born without any of them (since
-   07-28).
+   prompt is a COPY, now at v2 after
+   [#244](https://github.com/wsher0901/roam/pull/244) re-pointed
+   its R3 line. ONE re-save covers all three, and the text to
+   paste lives in its own file. Until it happens, a routine-fired
+   cockpit is born without any of them (since 07-28).
    → [COCKPIT-CHARTER.md](COCKPIT-CHARTER.md) (the text) ·
    [SETUP §cloud accounts](SETUP.md#once-and-done--cloud-accounts)
    (where the routine lives) ·
@@ -45,6 +46,17 @@ How to read this board →
    box now announces itself (since 07-29).
    → [WEB-INSTRUCTIONS](WEB-INSTRUCTIONS.md) ·
    [D-063](record/DECISIONS.md#d-063--2026-07--response-doctrine-v2--web-instructions-v6--two-channels-sentences-for-the-founder-fenced-blocks-for-machines-process-is-proof-not-prose-the-chat-start-ingest-contract-the-relay-rule--origin-is-the-only-courier-codes-output-is-never-pasted-to-web-reviews-speak-in-goal-and-outcome-the-core-file-alert-the-agenda-convention-brief-renders-the-full-picture-the-master-gains-a-version-history-amends-d-052)
+
+4. ⚪ DELETE THE DEAD `CLERK_` LINES from each seat's
+   `.env.local` — the `CLERK_FIRE_TOKEN`/`CLERK_ROUTINE_ID` pair
+   points at a routine deleted 2026-07-22. It is INERT and NOT a
+   leak: those files are gitignored and never left the machines.
+   Whenever convenient, no urgency. It left
+   [SETUP](SETUP.md) at
+   [#244](https://github.com/wsher0901/roam/pull/244) because it
+   is founder-facing status, which the entry contract keeps off
+   an inventory file (since 07-29).
+   → [the retired clerk charter](record/retired/clerk-charter.md)
 
 The 07-28 re-paste ([#236](https://github.com/wsher0901/roam/pull/236))
 cleared its own item; item 3 is a NEW one, opened by the v6 master.
@@ -60,7 +72,7 @@ frontmatter oddity is folded there too
 
 | Session | Task | State | Last push | Your move |
 |---|---|---|---|---|
-| main · control tower | — ([box-masters](record/history/workshop/definition/box-masters.md) shipped [#242](https://github.com/wsher0901/roam/pull/242); nothing open) · 0/0 | 🟢 | 10:35 (this repaint) | — |
+| main · control tower | — ([setup-recut](record/history/workshop/definition/setup-recut.md) shipped [#244](https://github.com/wsher0901/roam/pull/244); nothing open) · 0/0 | 🟢 | 11:09 (this repaint) | — |
 
 ↳ main micro: — (no active task)
 
@@ -159,11 +171,27 @@ sweep missed three, because it grepped the phrases the mandate
 named rather than the DESTINATION — a grep for the words a
 pointer uses cannot find a pointer that uses different words.
 
+AND BENCH 2 CLOSED THE RECUT
+([#244](https://github.com/wsher0901/roam/pull/244)) — SETUP stops
+being a container and becomes the replication spec it was always
+for: every entry answers WHAT · WHERE · VALUES · VERIFY · SOURCE,
+and the file goes 596 → 439 lines WHILE GAINING 28 VERIFY probes.
+The shrink is narrative, not substance, and it was proven so — a
+mechanical token sweep for every non-default value, old file
+against new. The standing duty caught the one thing with no home:
+the CLERK CHARTER TEXT, which the clerk's own specs cite SETUP
+for, so it moved whole to a new
+[record/retired/](record/retired/clerk-charter.md) shelf rather
+than being deleted. The cockpit's WHY moved to
+[HOME](HOME.md#the-cockpits-api-dependency-map--recovery), and the
+cascade rode along: the charter's R3 line followed the map, its
+version table now v2.
+
 NEXT: the first-story shakedown flight, phase 1's second half —
 it proves [land](skills/land.md) and the blind cockpit birth, the
 two pieces confirmed never flown, and it is now the first flight
-that can end by itself. Bench 2 (SETUP's compression) is the
-other open thread, whenever the founder calls it.
+that can end by itself. THE SETUP RECUT IS COMPLETE, both benches
+shipped.
 
 ## You are here
 
@@ -249,6 +277,7 @@ T3–T6 source-vetting relaunch stays held (see You are here).
 
 | When | What | PR |
 |---|---|---|
+| 07-29 11:05 | [SETUP stops being a container and becomes the replication spec it was always for (D-064's second half, no new decide): every entry answers WHAT · WHERE it is configured · VALUES · VERIFY · SOURCE, and the file goes 596 → 439 LINES WHILE GAINING A VERIFY PROBE PER ENTRY — 28 of them, real commands wherever one exists and an honest "none — UI-only" where none does. THE SHRINK IS NARRATIVE, NOT SUBSTANCE, and it was proven rather than asserted: a mechanical token sweep for every non-default value, old file against new, the two flags resolving clean. THE STANDING DUTY RAN BEFORE ANY DELETION and caught the one thing with no home anywhere — the CLERK CHARTER TEXT and its spawn preamble, which the clerk's own specs CITE SETUP for rather than carrying, so compressing without relocating would have orphaned every citation; they moved whole to a new record/retired/ shelf, placed there rather than under history/ because history is ledger-bound, reasoning the critic verified by reading check-ledger.mjs itself. The cockpit's WHY moved to HOME with SETUP keeping one pointer, and the cascade rode along: the charter's R3 line cited the map's old address from INSIDE the fenced master, so that line moved and the master's version table went to v2. THE CRITIC'S SHARPEST FINDING WAS RIGHT ABOUT THE PROBLEM AND WRONG ABOUT THE CAUSE — it read the header as a paraphrase that dropped D-064's secrets clause, but the header is VERBATIM; what it found is that D-064 and the mandated header state VALUES differently, which on a PUBLIC repo is not the same rule, so the text was left untouched, a carve-out sentence added beneath it, and the wording question raised for the founder rather than settled by the bench](record/history/workshop/definition/setup-recut.md) | [#244](https://github.com/wsher0901/roam/pull/244) |
 | 07-29 10:31 | [the box-master becomes a CLASS and the two masters buried in SETUP move out verbatim (D-064): a master for an EXTERNAL BOX — text this repo authors but another product stores — is its own top-level file with four required elements (header laws: box-is-a-copy · re-save after any edit · FULL COPY, ALWAYS; ONE fenced master; a version-history table; a Sources block). COCKPIT-CHARTER.md and LANE-WORKER.md born; DESIGN-KICKOFF joins ON PAPER rather than being churned. The SETUP ENTRY CONTRACT decided — WHAT · WHERE · VALUES · VERIFY · SOURCE — under which bench 2 compresses SETUP back into the replication spec it is for. THE VERBATIM MOVE WAS PROVEN, NOT ASSERTED: each fence extracted by FENCE BOUNDARY and diffed — 9,819 bytes in and out, zero-line diff, re-proven on the reviewer's own clone; the bench's own first attempt is on the record as the instructive failure, a line-range match throwing a 150-line phantom diff because the phone-bootstrap paste also opens "You are the Roam Flight Cockpit". SETUP keeps every wiring fact and loses only the two blocks, 37 lines and 174. THE CRITIC'S FIRST FINDING IS THE LESSON: the sweep MISSED THREE, because it grepped the phrases the mandate named while three citations locate the charter without using any of them — a grep for the WORDS a pointer uses cannot find a pointer that uses different words, so the honest sweep greps the DESTINATION and reads each hit](record/history/workshop/definition/box-masters.md) | [#242](https://github.com/wsher0901/roam/pull/242) |
 | 07-29 09:19 | [the Web surface's instruction master goes v5 → v6 and the response doctrine v1 → v2 with it (D-063): D-052 optimized the SHAPE of a reply while leaving its CONTENTS mixed — one paragraph carrying a status, a sha, a gate count and an instruction, with the founder left to sort the machine's business from their own. TWO CHANNELS fixes it at the root (sentences for the founder, fenced blocks for machines, no technical content outside a fence), and PROCESS IS PROOF, NOT PROSE follows from it; seven rules, one home, carried word-identical in the box. v6 adds what v5 had no home for: the chat-start INGEST CONTRACT with the box drift-checked against its own master's version line; THE RELAY RULE — origin is the only courier, so the founder is never asked to ferry Code's output, the one exception named honestly; reviews in GOAL-AND-OUTCOME with per-sha verdicts; the core-file alert; the agenda convention; a full-picture brief; and the FULL COPY, ALWAYS law with the version-history table that makes the drift-check possible. THE BENCH'S HARDEST ACT WAS REFUSING TO WRITE — ordered to replace the fence byte-faithful, it found the approved text dropped two whole v5 sections and FLAGGED them with their full content rather than reconstructing what the founder had not supplied; the founder then ruled each, reviving the ROADMAP-stage guardrail and letting three go on purpose, so the record says which were deliberate. The critic caught the bench's own ship hygiene and an ⏳ used outside rule 7's glyph set; the external review resolved that one the other way — ADMITTING ⏳ to the doctrine in both homes — and added the explicit-go law, the prose ban widened to verification narrative, and the charter rule 5 gloss reduced to a pure pointer](record/history/workshop/definition/web-instructions-v6.md) | [#240](https://github.com/wsher0901/roam/pull/240) |
 | 07-28 17:13 | [the landing doctrine recut to the founder's three-scenario model (D-061), and supersession stops being the one road out that runs no ritual (D-062): D-054 routed landing by the FLEET but left the TRIGGER in one place — the founder's word — which fits exactly one of the three situations a flight actually ends in. The cockpit gains a written STANDING JOB (advise on fleet status and on each gate reaching decision, execute the founder's rulings, NEVER merge on its own advice); AUTO-LAND fires the full ritual unprompted the same turn no lanes work AND nothing awaits the founder, behind four guards, one re-liftoff the stated cost of an early fire; DESK TAKEOVER hands the baton back when the founder returns mid-flight; the freeze is unchanged. THE SHIP-TIME CRITIC FOUND THREE STRUCTURAL FAULTS THE BENCH BUILT ITSELF — LAWS still said "push, write nothing", the exact behaviour D-061 rejects BY NAME and LAWS outranks a skill; a superseded cockpit would have repainted the board and ERASED the takeover stamp of the desk that superseded it; and the takeover sat behind an entry guard admitting only a grounded fleet, unreachable reading pickup top-down — all repaired pre-flip, plus a fourth that would have killed a healthy lane. The external review then directed the generalization the bench flagged rather than assumed: D-062, ANY superseded seat exiting by its own closing ritual with team findings captured first and no board written, closing the D-056 deferred road in full](record/history/workshop/mechanism/land-doctrine-v2.md) | [#238](https://github.com/wsher0901/roam/pull/238) |
@@ -258,7 +287,6 @@ T3–T6 source-vetting relaunch stays held (see You are here).
 | 07-27 20:13 | [the frozen record moves under one roof (D-057): docs/record/ is born and history, specs, and DECISIONS move in as 155 recorded renames (memory/ stays living at root); THE ENABLING RULING — a link-path-segment repair inside a frozen file is MAINTENANCE, not a content edit, append-only governs meaning not bytes; the review criterion stated machine-checkably (record diff with link targets blanked = byte-identical, sole exception the bench's own spec) and proven on the reviewer's own clone; the sweep one deterministic recompute, 1,580 links across 158 files, its by-construction premise qualified honestly by the external review (eight docs-root-relative intra-record links were broken and repaired the same way); the critic's real catch — a DASHBOARD ledger link with nested brackets invisible to the checker — repaired AND check-links.mjs hardened, 13 previously-skipped links entering the count](record/history/workshop/definition/record-shelf.md) | [#229](https://github.com/wsher0901/roam/pull/229) |
 | 07-24 17:21 | [no ritual lets a live agent team outlive the sitting that made it (D-056): D-055 had made single-sitting-only law and left it enforced by nothing. THE DECISION IS AN INVERSION of the candidate clause that opened the bench — "never park a live team" governs the PROCESSES, which are not what is at risk: teammates die cheaply and respawn cheaply, while what dies irrecoverably is what they FOUND, since a team's output lives in transcripts that vanish with the session. So the duty became CAPTURE, THEN KILL — handoff §1.2, before any park: findings into the record first (this session's OWN bench memory, never a lane's diary, else an IDEAS line riding §5's micro-PR), then shutdown by name, then report, with the not-instant honesty and refusals named in the close report on the road out. land routes to handoff with zero duplicated procedure; pickup gains the ghost-teammate note; TEMPLATE's ⏸ block gains conditional TEAM FINDINGS. The critic found THREE already-shipped holes — the liftoff road with nowhere to land, a wording that licensed writing into a lane's diary, and an IDEAS fallback with no committing vehicle — plus a logic error in the bench's own justification, rewritten as policy: D-056 corrects D-055's reasoning FORWARD, that entry left unedited under append-only](record/history/workshop/mechanism/team-aware-leaving.md) | [#225](https://github.com/wsher0901/roam/pull/225) |
 | 07-24 16:44 | [where agent teams fit this workshop and where they must not (D-055): the experimental flag was already ON with nothing reaching for it, so the question was never whether teams get used but whether their first use would be governed. THE BOUNDARY — teams are for EXPLORATION AND REVIEW at a ground seat, LANES REMAIN THE AUTHORSHIP MECHANISM, and a team never authors a bench, never merges, never runs a ritual — with the reasons stated rather than asserted; TWO RISKS AS LAW: single-sitting only (an explicit carve-out to D-050's interrupt promise, written in BOTH places that promise is read — an interrupt is safe for your session and fatal to your teammates) and a teammate-authored diff is SELF-AUTHORED under no-solo-approval; the reviewer's model settled by VERIFICATION — the `opus` alias resolved mechanically from a headless run's own billing record and recorded before `reviewer.md` was touched, an order the external review checked in the log rather than trusting; three rejections with reasons. The critic ran TWICE: the first as Sonnet 5 (this session's definition was cut at startup, before the edit), the second forced onto Opus 5 — and the Opus pass found a THIRD stale copy plus the missing D-045/D-020 forward pointer, so of three stale copies the bench found one and the critic found two](record/history/workshop/definition/agent-teams.md) | [#223](https://github.com/wsher0901/roam/pull/223) |
-| 07-24 15:20 | [how a flight ends becomes a first-class ritual (D-054): land ships as ONE skill with TWO modes routed by the fleet the cockpit derives from origin — RETIRE, consolidating the duties charter rule 6 already carried, and PAUSE-AND-TRANSFER, answering the case that had none; its core is THE FENCE, a commit that makes the lane's next push non-fast-forward so the wake-lock turns the rejection into a stop and the resume point is the branch tip BY CONSTRUCTION, with the honesty clause beside it (wake-lock-mediated, never a guaranteed freeze); the board's fleet-at-ground table is the single material passed down, sessions are cattle and branches are the work, pickup gains the FLEET RESUME ask with live cap arithmetic, rule 6 reduces to a pointer, and the effort doctrine moves to Opus 5 · xhigh; five alternatives rejected with reasons; the critic's two findings repaired pre-flip, the 🟡 one judged REQUIRED by one-home at the external review](record/history/workshop/mechanism/landing-skill.md) | [#221](https://github.com/wsher0901/roam/pull/221) |
 
 Note: [#201](https://github.com/wsher0901/roam/pull/201) (liftoff
 board weld) and [#202](https://github.com/wsher0901/roam/pull/202)
