@@ -5,12 +5,18 @@ status: living
 ---
 # Setup — everything the workshop runs on
 
-Pure listing, no explanations. What exists and where it's
-configured, split by lifetime: once-and-done (repo-side or cloud) ·
-per-machine · staged for a future stage. Status lives on the
-DASHBOARD, never here. The invocable procedure for the per-machine
-column is the machine-setup skill — say "I'm on a new PC" or "apply
-the vault lens".
+THE ENTRY CONTRACT
+([D-064](record/DECISIONS.md#d-064--2026-07--the-box-master-class--the-setup-entry-contract--every-external-box-master-is-its-own-top-level-file-on-the-web-instructions-pattern-cockpit-chartermd-and-lane-workermd-extracted-verbatim-setup-compresses-to-a-replication-spec-under-the-entry-contract-what--where--values--verify--source-design-kickoff-joins-the-class-on-paper)):
+every entry is a replication spec — WHAT (the thing) · WHERE it is
+configured (the exact screen, file, or command) · VALUES (every
+non-default choice, exactly) · VERIFY (one probe that proves it
+still holds) · SOURCE (the D-number or PR that carries the why).
+An entry drops discovery stories, prior readings, and retired
+detail — those live in the record, one pointer each. Status lives
+on the DASHBOARD, never here. Split by lifetime: once-and-done
+(repo-side or cloud) · per-machine · staged. The invocable
+procedure for the per-machine column is the machine-setup skill —
+say "I'm on a new PC" or "apply the vault lens".
 
 Sources:
 [machine-setup](skills/machine-setup.md)
@@ -18,22 +24,33 @@ Sources:
 
 ## Stack
 
+WHAT · WHERE · VALUES — the decided stack, in `package.json` and
+the repo layout:
+
 - Next.js App Router — TypeScript, React 19
 - Supabase — Postgres + Auth
 - Vercel — hosting, deploys, previews
-- Claude API — server-side only; scoring engine isolated in engine/
-- Frontend: Tailwind v4 · shadcn/ui on Base UI ("nova" preset, not
+- Claude API — server-side only; scoring engine isolated in
+  `engine/`
+- Frontend: Tailwind v4 · shadcn/ui on Base UI ("nova" preset, NOT
   Radix) · Motion · MapLibre GL · dnd-kit · Vercel AI SDK ("AI SDK
-  UI" flavor; not the paused RSC/streamUI variant) · TanStack Query ·
-  Zustand
-- Performance doctrine, verbatim from D-005: "stream-first (UI never
-  blocks on the brain; partial results render as they resolve),
-  cache-heavy (every fetched fact stored in Postgres with a
-  freshness window — the dataset asset and the speed mechanism are
-  the same feature), parallel fan-out across the five check
-  families, DB region co-located with pooled connections." Riders:
-  the engine streams and caches from day one; hard engine boundary
-  so it can later lift into a Python worker.
+  UI" flavor; NOT the paused RSC/streamUI variant) · TanStack
+  Query · Zustand
+- Layout: app code in `src/`, engine in `engine/` (hard boundary,
+  no app imports), spike scripts in `scripts/spikes/`
+
+Performance doctrine, verbatim from
+[D-005](record/DECISIONS.md#d-005--2026-06--stack-re-trial-vs-foundation-v1-d-001-upheld--frontend-layer):
+"stream-first (UI never blocks on the brain; partial results
+render as they resolve), cache-heavy (every fetched fact stored in
+Postgres with a freshness window — the dataset asset and the speed
+mechanism are the same feature), parallel fan-out across the five
+check families, DB region co-located with pooled connections."
+Riders: the engine streams and caches from day one; the hard
+engine boundary exists so it can later lift into a Python worker.
+
+VERIFY: `npm ls next react tailwindcss` resolves; the engine
+boundary is lint-enforced (`npm run lint`).
 
 Sources:
 [D-001 — tech stack](record/DECISIONS.md#d-001--2026-06--tech-stack)
@@ -42,404 +59,224 @@ Sources:
 
 ## Once and done — repo-side (travels with git)
 
-- .claude/settings.json — plugins: context7 · frontend-design ·
-  security-guidance ON; playwright OFF (staged); superpowers OFF.
-  Env: Agent Teams ON; claude.ai MCP servers OFF inside Code.
-- Permission rails in the same file — denied: force-push, hard
-  reset, rm -rf, repo delete, admin/foreign-repo merges.
-- Hooks — session-start (pull + print the board) ·
-  user-prompt-submit (close-lock) · session-end (push safety net).
-- CI — .github/workflows/ci.yml: lint · format · links · ledger · memory · tests · build.
-- .gitattributes — LF normalization repo-side.
-- Vault-lens seed — .claude/vault-seed/ (graph.json ·
-  bookmarks.json).
-- Skill stubs — .claude/skills/ (one folder per ritual); procedures
-  live vault-readable in docs/skills/.
-- Reviewer subagent — `.claude/agents/reviewer.md`, the pre-GATE
-  advisory critic; [ship §6](skills/ship.md#6--the-gate) invokes it
-  at every gate
-  ([D-044](record/DECISIONS.md#d-044--2026-07--the-pre-gate-critic-goes-live--ships-gate-opens-by-invoking-the-reviewer-subagent-verdicts-advisory-riding-with-the-summary-turns-on-the-staged-reviewer-upholds-d-038-and-the-reviewer-frame)
-  · frame: [its spec](record/specs/reviewer-subagent.md)).
+Everything here is a committed file, so VERIFY is "read the file"
+and replication is `git clone`.
+
+- **Claude settings** — `.claude/settings.json`. VALUES: plugins
+  context7 · frontend-design · security-guidance ON; playwright
+  OFF (staged); superpowers OFF. Env: Agent Teams ON; claude.ai
+  MCP servers OFF inside Code.
+- **Permission rails** — the same file. VALUES denied: force-push,
+  hard reset, `rm -rf`, repo delete, admin/foreign-repo merges.
+- **Hooks** — `.claude/hooks/`. VALUES: session-start (pull +
+  print the board) · user-prompt-submit (close-lock) · session-end
+  (push safety net).
+- **CI** — `.github/workflows/ci.yml`. VALUES, in order: lint ·
+  format · links · ledger · memory · tests · build.
+- **Line endings** — `.gitattributes`, LF normalization repo-side.
+- **Vault-lens seed** — `.claude/vault-seed/` (`graph.json` ·
+  `bookmarks.json`); applied per machine by the machine-setup
+  skill.
+- **Skill stubs** — `.claude/skills/`, one folder per ritual;
+  procedures live vault-readable in [docs/skills/](skills).
+- **Reviewer subagent** — `.claude/agents/reviewer.md`, the
+  pre-GATE advisory critic. VALUES: `model: opus` · `effort:
+  high`; [ship §6](skills/ship.md#6--the-gate) invokes it at every
+  gate.
+
+VERIFY (all repo-side at once): `npm run lint && npm run
+format:check && npm run check:links && npm run check:ledger && npm
+run check:memory` — the same set CI runs.
 
 Sources:
 [LAWS §Safety](LAWS.md#safety-non-negotiable)
 [skills folder](skills)
+[D-044 — the pre-GATE critic](record/DECISIONS.md#d-044--2026-07--the-pre-gate-critic-goes-live--ships-gate-opens-by-invoking-the-reviewer-subagent-verdicts-advisory-riding-with-the-summary-turns-on-the-staged-reviewer-upholds-d-038-and-the-reviewer-frame)
+· frame: [its spec](record/specs/reviewer-subagent.md)
 
 ## Once and done — cloud accounts
 
-- GitHub — wsher0901/roam, public, MIT; squash-merge ONLY
-  (merge-commit and rebase disabled); branch auto-delete on merge.
-  Preflight drift found 07-16 (merge-commit + rebase enabled,
-  auto-delete off), fixed and enforced via `gh api` the same day.
-- GitHub branch protection — main requires the CI check (`checks`);
-  red is unmergeable by machine.
-- GitHub auto-merge — enabled repo-wide; welds and micro-PRs arm
-  `gh pr merge --auto --squash --delete-branch` to fire on `checks`
-  green.
-- Vercel — project linked to the repo (deploys since V1.S2.T3).
-  Docs-only pushes skip the build (`vercel.json` ignoreCommand,
-  exit-0-skips per Vercel's ignored build step; verified against
-  Vercel docs 07-16; hardened 07-17 with `|| exit 1` so any git
-  failure — e.g. exit 128 when `VERCEL_GIT_PREVIOUS_SHA` falls
-  outside Vercel's ~10-deep shallow clone — fails toward BUILD,
-  never toward a deployment ERROR): ritual micro-PRs produce no
-  deploy, no bot comment, no email; app PRs keep previews.
-  Documented side-effect of the hardening: a docs-only push whose
-  previous SHA sits beyond the clone horizon builds redundantly
-  ONCE — that build resets the horizon, so the skip self-heals.
-- claude.ai — the Roam Project; its settings box carries
-  WEB-INSTRUCTIONS verbatim. Surface doctrine
-  ([D-046](record/DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)):
-  CC-direct is the standard working mode at both seats — discuss,
-  decide, author, and bookkeep in-session; the paste-block relay
-  is retired as a requirement and remains a tool when the founder
-  chooses Web as a thinking room; Web's one mandatory job is the
-  external review of self-authored diffs (the no-solo-approval
-  law, [LAWS §Workflow](LAWS.md#workflow-non-negotiable)).
-- Cloud lane worker (routine) — created at claude.ai/code/routines;
-  trigger GitHub `pull_request.labeled` filtered to label `lane:cloud`
-  on wsher0901/roam; the Claude GitHub App installed on the repo
-  (`/web-setup` alone is NOT enough); "Allow unrestricted branch
-  pushes" ON (lanes push feat/|fix/|docs/|chore/, never claude/);
-  saved prompt: the master in
-  [LANE-WORKER.md](LANE-WORKER.md) (box-is-a-copy — re-save the
-  routine from there after any edit); when it fires:
+- **GitHub repository** — github.com/wsher0901/roam.
+  WHERE: Settings → General. VALUES: public, MIT; SQUASH-MERGE
+  ONLY (merge-commit and rebase disabled); branch auto-delete on
+  merge ON; auto-merge enabled repo-wide (welds and micro-PRs arm
+  `gh pr merge --auto --squash --delete-branch`).
+  VERIFY: `gh api repos/wsher0901/roam --jq '{squash:.allow_squash_merge, merge:.allow_merge_commit, rebase:.allow_rebase_merge, autodelete:.delete_branch_on_merge, automerge:.allow_auto_merge}'`
+  → `true,false,false,true,true`.
+  SOURCE: drift found and fixed 07-16 —
+  [the maiden-flight report](record/history/workshop/mechanism/maiden-flight-report.md).
+
+- **Branch protection** — WHERE: Settings → Branches → `main`.
+  VALUES: requires the CI check named `checks`; red is unmergeable
+  by machine.
+  VERIFY: `gh api repos/wsher0901/roam/branches/main/protection --jq '.required_status_checks.contexts'`
+  → contains `checks`.
+  SOURCE: [D-038](record/DECISIONS.md#d-038--2026-07--ci-is-the-arbiter--actions-green-required-at-every-gate-local-gate-mirrors-all-six-ci-steps-d-anchors-born-resolving-upholds-d-027).
+
+- **Vercel project** — WHERE: the Vercel dashboard, linked to the
+  repo (deploys since [V1.S2.T3](ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)).
+  VALUES: `vercel.json` carries an `ignoreCommand` so docs-only
+  pushes skip the build (exit-0-skips), hardened with `|| exit 1`
+  so any git failure fails toward BUILD, never toward a deployment
+  ERROR. Effect: ritual micro-PRs produce no deploy, no bot
+  comment, no email; app PRs keep previews.
+  VERIFY: `cat vercel.json` shows the `ignoreCommand` with its
+  `|| exit 1` tail; a docs-only PR shows "Canceled by Ignored
+  Build Step".
+  SOURCE: [vercel-ignore-fix](record/history/workshop/mechanism/vercel-ignore-fix.md)
+  (including the known side-effect: a docs-only push whose
+  previous SHA sits beyond Vercel's shallow-clone horizon builds
+  redundantly ONCE, which resets the horizon and self-heals).
+
+- **claude.ai Project** — WHERE: claude.ai → the Roam Project →
+  settings. VALUES: the instructions box carries
+  [WEB-INSTRUCTIONS](WEB-INSTRUCTIONS.md) VERBATIM (box-is-a-copy;
+  re-paste after every master edit). Working mode is CC-DIRECT at
+  both seats; Web's one mandatory job is the external review of
+  self-authored diffs.
+  VERIFY: the box's version line matches the master's newest
+  Version-history row.
+  SOURCE: [D-046](record/DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+  (surface doctrine) ·
+  [LAWS §Workflow](LAWS.md#workflow-non-negotiable)
+  (no-solo-approval).
+
+- **Cloud lane-worker routine** — WHERE: claude.ai/code/routines.
+  VALUES: trigger GitHub `pull_request.labeled` filtered to label
+  `lane:cloud` on wsher0901/roam; the Claude GitHub App INSTALLED
+  on the repo (`/web-setup` alone is NOT enough); "Allow
+  unrestricted branch pushes" ON (lanes push
+  `feat/|fix/|docs/|chore/`, never `claude/`); saved prompt = the
+  master in [LANE-WORKER.md](LANE-WORKER.md) VERBATIM
+  (box-is-a-copy — re-save after any master edit); model set to
+  Opus 5.
+  VERIFY: `gh api repos/wsher0901/roam/labels --jq '.[].name'`
+  contains `lane:cloud`; the routine's saved prompt matches the
+  master. Routine settings themselves are UI-only.
+  SOURCE: when it fires —
   [parallel-lanes §Cloud spawn](skills/parallel-lanes.md#cloud-spawn--route-ladder).
-  Plan: Max 20x — routine cap is 15 runs/day (confirmed via Anthropic's
-  routines docs; the cap is flat across Max tiers — 20x buys
-  throughput, not routine slots). Per-account, not per-routine;
-  GitHub-triggered runs count, one-off manual runs do not; past 15,
-  runs are rejected until the daily reset unless usage credits are on.
-  Live counter: claude.ai/code/routines or claude.ai/settings/usage;
-  mechanical read: `npm run count:runs`. Routine-born sessions
-  appear under the routine's run history at claude.ai/code/routines,
-  not the main sessions list.
 
-- Cloud clerk — **RETIRED 2026-07-22** — routine deleted;
-  superseded by
+- **Routine run cap** — WHERE: the Anthropic account (Max 20x).
+  VALUES: 15 runs/day, FLAT across Max tiers (20x buys throughput,
+  not routine slots); per-account, not per-routine;
+  GitHub-triggered runs count, one-off manual runs do not; past
+  15, runs are rejected until the daily reset unless usage credits
+  are on. Routine-born sessions appear under the routine's run
+  history, not the main sessions list.
+  VERIFY: `npm run count:runs` (mechanical read); live counter at
+  claude.ai/code/routines or claude.ai/settings/usage.
+  SOURCE: [liftoff §2](skills/liftoff.md#2--triage-every-open-item)
+  budgets it.
+
+- **Cloud clerk — RETIRED 2026-07-22**, routine deleted. Nothing
+  is armed and no ritual reaches for it. Superseded by
   [D-046](record/DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
-  (cockpit) and
+  (the cockpit) and
   [D-048](record/DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)
-  (connector ladder). Verified record kept: C1–C6, N2/N3, A1/A4
+  (the connector ladder). Verified record: C1–C6, N2/N3, A1/A4
   green; the mechanisms it proved — API fire, standing watch,
-  turn-end push — live on in the cockpit. The rest of THIS entry is
-  RECORD, not instruction: nothing in it is armed, and no ritual
-  reaches for it.
-  What it was: a session (verified 2026-07-17, C1–C6 green; the
-  standing watch — charter duty 6 — verified 2026-07-19 at the
-  Shakedown Flight, N-checklist grades:
+  turn-end push — live on in the cockpit.
+  The retired charter text, its spawn preamble, and the full
+  account: [the retired clerk charter](record/retired/clerk-charter.md).
+  Evidence: [cloud-clerk](record/specs/cloud-clerk.md) ·
   [clerk-notify](record/specs/clerk-notify.md) ·
-  [shakedown-audit](record/specs/shakedown-audit.md) — the
-  PRIMARY machine-off answering surface, the GitHub app demoted to
-  backstop, per
-  [D-043](record/DECISIONS.md#d-043--2026-07--cloud-ignition--away-command-redesign--route-ladder-v2-ready-flip-then-label-is-the-recipe-of-record-api-ignition-and-the-cloud-clerk-staged-the-claude-app-the-single-away-surface-amends-d-041-upholds-the-lane-law-and-the-wake-lock)'s
-  promotion clause) — the founder's away-mode concierge: a
-  manually-born claude.ai/code session on wsher0901/roam with a
-  narrow read-and-relay charter; cap-free by construction (a plain
-  session, not a routine). It was born by paste: claude.ai/code
-  (browser or the phone's Claude app) → new session on
-  wsher0901/roam → the charter master below. Checklist + maiden
-  results: the cloud-clerk bench ([spec](record/specs/cloud-clerk.md)).
-  The retirement staged by
-  [D-046](record/DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
-  EXECUTED on 2026-07-22, when the founder deleted the routine.
-
-Clerk charter (master) — **RETIRED 2026-07-22** — routine deleted;
-superseded by
-[D-046](record/DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
-(cockpit) and
-[D-048](record/DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)
-(connector ladder). Verified record kept: C1–C6, N2/N3, A1/A4
-green; the mechanisms it proved — API fire, standing watch,
-turn-end push — live on in the cockpit. There is no box left to
-re-save: the block below is kept as the EVIDENCE of what was
-verified, and duty 6 is the ancestor of the cockpit charter's
-rule 5 (the turn-end report IS the notification). Do not paste it
-anywhere.
-
-```text
-You are the Roam cloud clerk — the founder's away-mode
-concierge. You are NOT a worker. Your charter is narrow and
-absolute:
-1. Repo access is READ-ONLY: clone fresh, read origin, report.
-   Never write files, never commit, push, merge, branch, or
-   open PRs. Never touch a bench, never hold the baton, never
-   spawn or label anything.
-2. On "how are the lanes?" or similar: fetch origin, read
-   docs/DASHBOARD.md, open PRs, and each lane's memory Status;
-   answer plainly — per-lane state, plus anything waiting on
-   the founder.
-3. On "reply to the lane on #N: <text>": post exactly <text> as
-   a PR comment on #N (it posts as the founder), then confirm
-   back with the comment link. Post ONLY what the founder
-   explicitly dictates in this session.
-4. Anything beyond this charter: decline and point to the
-   control tower. When unsure, decline.
-5. Re-derive every answer from origin at answer time — never
-   from session memory. You may idle indefinitely.
-6. Watch duty — on the founder's "arm the watch": watch origin
-   and this repo's open PRs for (a) new "BLOCKED:" comments,
-   (b) lane completion @mentions or ready-flips, (c) CI red on
-   main. On any event: END YOUR TURN with a one-paragraph
-   announcement — which lane, what happened, what the founder
-   must do — the turn-end IS the notification. Any founder
-   message re-arms the watch unless it says "stand down".
-   Events during a gap are caught on the next poll — origin
-   forgets nothing.
-```
-
-- Clerk routine — **RETIRED 2026-07-22** — routine deleted;
-  superseded by
-  [D-046](record/DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
-  (cockpit) and
-  [D-048](record/DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)
-  (connector ladder). Verified record kept: C1–C6, N2/N3, A1/A4
-  green; the mechanisms it proved — API fire, standing watch,
-  turn-end push — live on in the cockpit. `fire:clerk` is gone
-  from [`package.json`](../package.json) and
-  [`scripts/fire.mjs`](../scripts/fire.mjs); `cockpit` is the only
-  target, and a stale `fire.mjs clerk` now fails honestly. The rest
-  of THIS entry is RECORD, not instruction — there is no box left
-  to re-save.
-  What it was (verified 2026-07-19 at the Shakedown Flight,
-  A-checklist grades:
   [clerk-autospawn](record/specs/clerk-autospawn.md) ·
-  [shakedown-audit](record/specs/shakedown-audit.md)): the API-fire
-  vehicle for the clerk — a SECOND routine at
-  claude.ai/code/routines named "clerk", whose saved prompt was the
-  clerk charter master above VERBATIM, carrying this spawn preamble
-  as its top line:
+  [shakedown-audit](record/specs/shakedown-audit.md).
 
-```text
-Spawned at liftoff via API. Greet with a fresh one-line lane
-summary, then arm the watch.
-```
+- **Flight Cockpit routine** — WHERE: claude.ai/code/routines, a
+  routine named "cockpit". VALUES: saved prompt = the master in
+  [COCKPIT-CHARTER.md](COCKPIT-CHARTER.md) VERBATIM
+  (box-is-a-copy; re-save after any master edit); NO GitHub
+  trigger; API trigger ENABLED; model set to Opus 5. It is the
+  FALLBACK birth (rung 3) and the summon workflow's engine — the
+  primary birth is `--cloud`, below.
+  FOUNDER ACTS, once (~3 min): create the routine → add the API
+  trigger and generate the fire token ONCE (`sk-ant-oat01-…`,
+  shown once, scoped to this routine only) → password manager
+  FIRST → copy the routine id (`trig_…`, shown in the API-trigger
+  modal) → store both machine-locally in `.env.local` as
+  `COCKPIT_FIRE_TOKEN` · `COCKPIT_ROUTINE_ID` (per-machine, NEVER
+  this public repo); regenerate the token if lost; the other seat
+  repeats the paste at its next sitting.
+  FIRING: `npm run fire:cockpit -- "<flight plan>"` — one
+  daily-cap run per fire, INVISIBLE to `npm run count:runs`.
+  VERIFY: `.env.local` contains both names (`grep -c COCKPIT_
+  .env.local` → 2); the routine itself is UI-only.
+  SOURCE: [D-046](record/DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+  · [D-047](record/DECISIONS.md#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law)
+  · bench: [flight-cockpit](record/specs/flight-cockpit.md).
 
-  It had no GitHub trigger and an enabled API trigger; its secret
-  pair lived machine-locally in `.env.local` (`CLERK_FIRE_TOKEN` ·
-  `CLERK_ROUTINE_ID`) — the documented secret path: per-machine,
-  never this public repo
-  ([LAWS §Safety](LAWS.md#safety-non-negotiable)) — and firing was
-  `npm run fire:clerk`, one daily-cap run per fire and INVISIBLE
-  to `npm run count:runs`. That budget line is now
-  `fire:cockpit` alone
-  ([liftoff §2](skills/liftoff.md#2--triage-every-open-item)).
-
-  DEAD CREDENTIALS, a founder act and NOT urgent: the `CLERK_`
-  pair still sitting in both seats' `.env.local` points at a
-  deleted routine, so it is inert — it cannot fire anything and it
-  is not a leak (those files are gitignored and never left the
-  machines). Delete the two lines at each seat's next sitting,
-  whenever convenient. `.env.example` no longer carries the
-  placeholders.
-
-- Flight Cockpit routine
-  ([D-046](record/DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock);
-  bench: [flight-cockpit](record/specs/flight-cockpit.md)) — FALLBACK +
-  summon-button engine
-  ([D-047](record/DECISIONS.md#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law)):
-  the primary birth is liftoff §6's `--cloud` birth (recipe
-  below); this routine fires only at rung 3 of the ladder and
-  remains the staged summon button's engine. The cockpit itself:
-  the control
-  tower online: a cloud command session with FULL authorship —
-  authors benches, births lanes via labels, external-reviews lane
-  PRs, merges on the founder's word, repaints the board, appends
-  [IDEAS](IDEAS.md) lines, answers process questions by
-  derivation (clones at birth; never from memory). Bounded flight
-  lifetime: born at
-  [liftoff §6](skills/liftoff.md#6--ledger-handoff--fire-the-cockpit)'s
-  birth (rung ladder; the master in
-  [COCKPIT-CHARTER.md](COCKPIT-CHARTER.md) + the board-derived
-  flight plan ride as the birth prompt) or a founder summon;
-  landing runs [land](skills/land.md) — two modes, the duties
-  there. Vehicle: a THIRD routine at
-  claude.ai/code/routines named "cockpit". Saved prompt: the
-  master in [COCKPIT-CHARTER.md](COCKPIT-CHARTER.md) VERBATIM
-  (box-is-a-copy; re-save the routine after any master edit).
-  No GitHub trigger. API
-  trigger enabled. Founder acts (post-merge, ~3 min): create the
-  routine in the UI → add the API trigger and generate the fire
-  token ONCE (`sk-ant-oat01-…`, shown once, scoped to this
-  routine only) → password manager FIRST → copy the routine id
-  (`trig_…` — the API-trigger modal shows it) → hand the control
-  tower the pair, which stores them machine-locally in
-  `.env.local` (`COCKPIT_FIRE_TOKEN` · `COCKPIT_ROUTINE_ID`) —
-  per-machine, never this public repo
-  ([LAWS §Safety](LAWS.md#safety-non-negotiable)); regenerate the
-  token if lost; the other seat repeats the paste at its next
-  sitting. Firing: `npm run fire:cockpit -- "<flight plan>"`
-  (`scripts/fire.mjs`, target cockpit) — one daily-cap run per
-  fire, INVISIBLE to `npm run count:runs`; one cap-run per outing
-  is the accepted trade
-  ([liftoff §2](skills/liftoff.md#2--triage-every-open-item)
-  budgets it).
-
-- The cockpit's `--cloud` birth
-  ([D-047](record/DECISIONS.md#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law)
-  — the PRIMARY vehicle;
+- **The cockpit's `--cloud` birth — the PRIMARY vehicle.**
+  WHERE: any terminal at a seat;
   [liftoff §6](skills/liftoff.md#6--ledger-handoff--fire-the-cockpit)
-  runs it — the mechanics of record live THERE, this is the
-  inventory entry). Exact command shape:
-  `claude --cloud "<birth prompt>"` where the birth prompt = the
-  master in [COCKPIT-CHARTER.md](COCKPIT-CHARTER.md) VERBATIM,
-  the standing
-  clone-provenance directive, a pointer to the board's flight
-  context, and a one-line mandate — the board carries the plan
-  itself. No title line: the prompt-supplied
-  `[COCKPIT] roam — <date>` first line was DISPROVEN at the
-  2026-07-23 birth (the platform auto-titles from charter
-  content); the answer of record lives in
-  [liftoff §6](skills/liftoff.md#6--ledger-handoff--fire-the-cockpit). `--cloud` demands a real TTY on both ends and refuses
-  every piped route verbatim (the harness shell · the `!`
-  bang-prefix · redirected Start-Process). The automated shape is
-  a hidden window with NO REDIRECTION ANYWHERE — it already
-  supplies the TTY, so no pty wrapper is used or permitted — the
-  prompt handed in as a file-read argument, and NOTHING captured:
-  the fire is BLIND by design
-  ([D-051](record/DECISIONS.md#d-051--2026-07--self-seat-birth--liftoff-fires---cloud-blind-and-the-cockpit-seats-itself-by-its-env-derived-self-url-the-console-attach-launcher-is-retired-amends-d-047s-rung-1-mechanics-as-corrected-by-193-upholds-d-049-and-board-governs)),
-  exit status only — the cockpit seats ITSELF on the board via
-  its env-derived self-URL (the charter's SELF-SEAT duty).
-  Sessions born
-  this way are list-native: they join the phone's Code-tab
-  GENERAL session list (gate 0c evidence,
-  [cloud-born-cockpit](record/specs/cloud-born-cockpit.md)).
-- Cloud environment (claude.ai/code settings → Environments) — the
-  live environment is named **`Default`** (not "roam"; the earlier
-  name was wrong on paper only). Its setup script installs `gh`
-  from the UBUNTU ARCHIVE —
-  `apt update || true && apt install -y gh || true` — and gh
-  AUTHENTICATES AUTOMATICALLY through the session's GitHub proxy:
-  `GH_TOKEN` is the literal 14-character placeholder
+  runs it and holds the mechanics of record.
+  VALUES: `claude --cloud "<birth prompt>"`, where the birth
+  prompt = the master in
+  [COCKPIT-CHARTER.md](COCKPIT-CHARTER.md) VERBATIM + the standing
+  clone-provenance directive + a pointer to the board's flight
+  context + a one-line mandate. NO title line. `--cloud` demands a
+  real TTY on BOTH ends and refuses every piped route (the harness
+  shell · the `!` bang-prefix · redirected `Start-Process`), so
+  the automated shape is a hidden window with NO REDIRECTION
+  ANYWHERE — no pty wrapper is used or permitted — the prompt
+  handed in as a file-read argument, NOTHING captured. The fire is
+  BLIND by design, exit status only; the cockpit seats ITSELF on
+  the board via its env-derived self-URL. Sessions born this way
+  are LIST-NATIVE (they join the phone's Code-tab general list).
+  VERIFY: exit 0 from the fire, then the cockpit's own greeting
+  push and self-seat repaint on the board — a MISSING push is the
+  failure signal.
+  SOURCE: [D-047](record/DECISIONS.md#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law)
+  · [D-051](record/DECISIONS.md#d-051--2026-07--self-seat-birth--liftoff-fires---cloud-blind-and-the-cockpit-seats-itself-by-its-env-derived-self-url-the-console-attach-launcher-is-retired-amends-d-047s-rung-1-mechanics-as-corrected-by-193-upholds-d-049-and-board-governs)
+  (blind fire) ·
+  [cloud-born-cockpit](record/specs/cloud-born-cockpit.md).
+
+- **Cloud environment** — WHERE: claude.ai/code settings →
+  Environments. VALUES: the live environment is named **`Default`**
+  (not "roam"). Its setup script installs `gh` from the UBUNTU
+  ARCHIVE — `apt update || true && apt install -y gh || true` (the
+  `|| true` guards keep the image's pre-existing
+  `deadsnakes`/`ondrej` PPA failures from failing the script).
+  `gh` AUTHENTICATES AUTOMATICALLY through the session's GitHub
+  proxy: `GH_TOKEN` is the literal 14-character placeholder
   `proxy-injected` and the proxy substitutes real credentials in
-  transit
-  ([D-049](record/DECISIONS.md#d-049--2026-07--gh-second-path--gh-api-rest-through-the-github-proxy-is-the-cockpits-second-api-path-a-connector-flap-stops-costing-command-r2-gains-the-automatic-gh-rung-self-id-by-session-env-amends-d-048-corrects-the-193-api-map-upholds-d-047-and-verify-before-rely),
-  probe-proven 2026-07-23). The path is REST-SHAPED: `gh api`
-  calls work repo-scoped; porcelain riding GraphQL (`gh pr list`)
-  is proxy-blocked against a pinned set of PR-review operations,
-  the proxy's own 403 pointing to REST. A foreign repo answers a
-  scoped 403 naming `add_repo` — the attached-repo boundary
-  holds. The session ALSO receives its SESSION-SCOPED GitHub MCP
-  injection — two API paths, one credential boundary.
-  History of the reading, kept honest: the `cli.github.com` 403
-  that [#193](https://github.com/wsher0901/roam/pull/193)
-  recorded (exit 100, the whole setup script failing) was a WRONG
-  APT SOURCE, not a design wall — `cli.github.com` is
-  egress-blocked where the Ubuntu archive is allowlisted; the
-  "no gh BY DESIGN, MCP the sole path" reading
-  ([D-048](record/DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)'s
-  premise, community-sourced) fell to the official docs plus the
-  live probe. The image's pre-existing `deadsnakes`/`ondrej` PPA
-  failures remain real — the `|| true` guards keep them from
-  failing the script.
-- Summon workflow (`.github/workflows/summon.yml`) — rung 4 of the
-  connector ladder, LIVE
-  ([D-048](record/DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)).
-  Two triggers: a push to the reserved branch `ops/summon` (the
-  self-rescue path — a connector-dead cockpit can still push,
-  because pushing is git, not API) and `workflow_dispatch` with one
-  optional `mandate` input (present, costless, and UNUSED BY
-  PREFERENCE — the founder does not use the GitHub app). It runs
-  `scripts/fire.mjs` for the cockpit target — the verified vehicle,
-  reused as-is, never reimplemented — writes the fire status and any
-  returned session URL to the run's step summary, and then DELETES
-  the `ops/summon` ref, so one push is exactly one rescue. Its
-  payload is a POINTER, never a plan. FOUNDER ACT, REQUIRED before
-  self-rescue can work: add `COCKPIT_FIRE_TOKEN` and
-  `COCKPIT_ROUTINE_ID` as REPOSITORY SECRETS (Settings → Secrets and
-  variables → Actions) — the same values already in `.env.local`,
-  password manager first; the workflow reports `missing-secrets` and
-  fails honestly without them. A summoned cockpit is routine-born,
-  so it is LIST-INVISIBLE — reachable by its board link, which is
-  why `--cloud` stays the primary birth.
+  transit. The path is REST-SHAPED — `gh api` works repo-scoped;
+  porcelain riding GraphQL (`gh pr list`) is proxy-blocked, its
+  403 pointing to REST. A foreign repo answers a scoped 403 naming
+  `add_repo`. The session ALSO receives a session-scoped GitHub
+  MCP injection — two API paths, one credential boundary.
+  VERIFY (from inside a cloud session): `gh api user` succeeds;
+  `gh pr list` 403s pointing to REST.
+  SOURCE: [D-049](record/DECISIONS.md#d-049--2026-07--gh-second-path--gh-api-rest-through-the-github-proxy-is-the-cockpits-second-api-path-a-connector-flap-stops-costing-command-r2-gains-the-automatic-gh-rung-self-id-by-session-env-amends-d-048-corrects-the-193-api-map-upholds-d-047-and-verify-before-rely),
+  probe-proven 2026-07-23; the corrected earlier reading is in
+  [gh-second-path](record/history/workshop/mechanism/gh-second-path.md).
 
-The charter itself — the text both the routine and
-[liftoff](skills/liftoff.md)'s `--cloud` birth adopt — is its own
-master: [COCKPIT-CHARTER.md](COCKPIT-CHARTER.md), which carries
-its own re-save law.
+- **Summon workflow** — WHERE: `.github/workflows/summon.yml`
+  (rung 4 of the connector ladder, LIVE). VALUES: two triggers — a
+  push to the reserved branch `ops/summon` (the self-rescue path;
+  pushing is git, not API, so a connector-dead cockpit can still
+  do it) and `workflow_dispatch` with one optional `mandate` input
+  (present, costless, UNUSED BY PREFERENCE). It runs
+  `scripts/fire.mjs` for the cockpit target — the verified
+  vehicle, reused as-is, never reimplemented — writes fire status
+  and any returned session URL to the run's step summary, then
+  DELETES the `ops/summon` ref, so one push is exactly one rescue.
+  Its payload is a POINTER, never a plan. A summoned cockpit is
+  routine-born, so it is LIST-INVISIBLE — reachable by its board
+  link, which is why `--cloud` stays primary.
+  FOUNDER ACT, REQUIRED before self-rescue works: add
+  `COCKPIT_FIRE_TOKEN` and `COCKPIT_ROUTINE_ID` as REPOSITORY
+  SECRETS (Settings → Secrets and variables → Actions) — the same
+  values already in `.env.local`, password manager first. Without
+  them the workflow reports `missing-secrets` and fails honestly.
+  VERIFY: `gh secret list` shows both names (values never
+  readable).
+  SOURCE: [D-048](record/DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047).
 
-### The cockpit's API dependency map + recovery rung
-
-A cockpit's powers split cleanly in two, and knowing which half
-just died is the whole of the recovery. Written from the flight of
-2026-07-22, where the connector dropped after the weld and the
-cockpit could not press merge on its own work
-([#191](https://github.com/wsher0901/roam/pull/191)).
-
-**Git-only acts — ALWAYS available** (they need the clone, nothing
-else): clone · read · edit · commit · push · review a diff · write
-a weld (the bookkeeping commit). A cockpit that has lost the API
-is still a full AUTHOR.
-
-**API-only acts**: open a PR · apply a label (so: spawn a lane) ·
-merge · read check runs. A cockpit that has lost the API has lost
-COMMAND.
-
-The cockpit has TWO API paths
-([D-049](record/DECISIONS.md#d-049--2026-07--gh-second-path--gh-api-rest-through-the-github-proxy-is-the-cockpits-second-api-path-a-connector-flap-stops-costing-command-r2-gains-the-automatic-gh-rung-self-id-by-session-env-amends-d-048-corrects-the-193-api-map-upholds-d-047-and-verify-before-rely),
-probe-proven 2026-07-23): the **GitHub MCP connector**, and
-**`gh api` REST through the session's GitHub proxy** (the
-environment entry above carries the mechanics). Each API-only act
-— open a PR · apply a label · merge · read check runs — runs on
-either path; the second is REST-SHAPED, so it is always a
-`gh api` call, never porcelain that rides GraphQL (`gh pr list`
-is proxy-blocked, its own 403 pointing to REST). What stays true:
-the raw `GH_TOKEN`/`GITHUB_TOKEN` is a placeholder — a script
-reading it directly still 401s; only gh-through-proxy works. So a
-single connector flap no longer demotes a cockpit from commander
-to author — R2's gh rung carries the act and command continues;
-only BOTH paths dead demote, and then the recovery rungs below
-apply.
-
-One free audit link rides every commit either way: from CLI
-v2.1.179 the harness appends an automatic `Claude-Session:` git
-trailer naming the authoring session — any commit on origin can
-be traced back to the session that wrote it without any scraping.
-
-**Recovery rung, in order:**
-
-1. **Retry the connector once, then the gh rung.** Flaps are
-   often transient: one retry, then the SAME act via `gh api`
-   (the charter's R2). If gh carries it, command continues and
-   the rungs below never fire — they exist for BOTH paths dead.
-2. **At a desk — hand the baton back.** Land: final board repaint,
-   park the tail with its reason written down, hand the baton to
-   the control tower, which has `gh` and finishes the merge. (This
-   is what the 2026-07-22 flight did.)
-3. **Away — birth a fresh cockpit.** Land first, then birth a
-   replacement by [liftoff §6](skills/liftoff.md#6--ledger-handoff--fire-the-cockpit)'s
-   ladder. A `--cloud` birth is free, list-native, and draws no
-   daily cap; the new cockpit re-derives everything from git, so
-   nothing is lost — only the session's conversation, which was
-   never the record.
-4. **Away with no desk — SELF-RESCUE.** Push one empty commit to
-   `ops/summon`; the summon workflow fires a replacement cockpit
-   and the dying one lands under the tombstone
-   ([D-048](record/DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)).
-5. **Last resort — the GitHub mobile app**, or the phone bootstrap
-   paste below when there is no terminal and no GitHub. The
-   founder's own hands; always works, and the thing this whole
-   chain exists to spend sparingly.
-
-The ladder as the cockpit itself runs it (R0–R4b) lives in
-[COCKPIT-CHARTER.md](COCKPIT-CHARTER.md) — this map is the WHY,
-the charter is the procedure.
-
-**Rejected, not staged:** a merge-on-signal GitHub Action. It was
-the obvious permanent fix and
-[D-048](record/DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)
-turns it down for two reasons: it would restore only MERGE while a
-connector-dead cockpit still cannot spawn lanes or open benches,
-and — decisively — every session pushes as the founder, so a
-push-triggered merge cannot tell the baton-holder from a lane or a
-redelivered webhook, which breaks no-solo-approval structurally. A
-push-triggered SUMMON is lawful by the same test: a stray spawn is
-recoverable noise (one cap run), not a law breach.
-
-**Rung 5 — the phone bootstrap**, for no terminal and no GitHub.
-Path: the Claude app → new session on wsher0901/roam → paste this
-verbatim. The session clones the repo, so it reads its own charter
-rather than carrying one:
+- **The phone bootstrap** — rung 5, for no terminal and no GitHub.
+  WHERE: the Claude app → new session on wsher0901/roam → paste
+  verbatim. The session clones the repo, so it reads its own
+  charter rather than carrying one:
 
 ```text
 You are the Roam Flight Cockpit. Clone wsher0901/roam, read
@@ -448,111 +285,117 @@ then read the board's flight context — it is the authoritative
 flight plan.
 ```
 
-VERIFY BEFORE RELYING: whether the mobile app can create a session
-on a repo is UNPROVEN — test at the next drill and record the
-answer in [cockpit-resilience](record/specs/cockpit-resilience.md)'s
-Done-means.
+  VERIFY: none — UI-only, and whether the mobile app can create a
+  session on a repo is UNPROVEN. Test at the next drill and record
+  the answer in
+  [cockpit-resilience](record/specs/cockpit-resilience.md)'s
+  Done-means.
 
-- Models & effort (doctrine — the Web paste block's Model + Effort
-  line draws from here). Effort ladder: low · medium · high · xhigh
-  · max. THE DEFAULT, one pick for everything: **Opus 5 · xhigh**
-  — ALL work, reviews and architecture included (released
-  2026-07-24 at Opus 4.8's price, $5/$25, the new Max default, and
-  carrying no Fable-class cap, so there is nothing left for a
-  second tier to buy). It RETIRES the Opus 4.8 / Sonnet 5 reliance
-  pair
-  ([D-054](record/DECISIONS.md#d-054--2026-07--the-landing-skill--how-a-flight-ends-becomes-a-first-class-ritual-one-skill-with-two-modes-routed-by-fleet-state-retire--pause-and-transfer-the-fence-is-a-commit-so-the-resume-point-is-the-branch-tip-by-construction-wake-lock-mediated-with-its-honesty-clause-the-board-is-the-single-transfer-material-pickup-gains-the-fleet-resume-ask-and-its-cap-arithmetic-sessions-are-cattle-branches-are-the-work-charter-rule-6-becomes-a-pointer-the-effort-doctrine-moves-to-opus-5--xhigh-upholds-the-wake-lock-the-park-protocol-and-one-home-supersedes-the-opus-48-reliance-pair)).
-  Fable 5: an optional SECOND OPINION only, never the seat. The
-  plateau: xhigh is the working ceiling — max only by explicit
-  founder tag for rare one-shots; ultracode only by explicit
-  founder tag for coverage-critical sweeps. Throttle order under
-  usage limits, unchanged: reduce effort before downgrading the
-  model. Agent-team teammates ride the LEAD's model by config (see
-  the next bullet), so the whole seat runs one pick; the Sonnet-5
-  teammate default recorded here before
+- **Models & effort** — WHERE: `/model` and `/effort` per session;
+  `.claude/agents/reviewer.md` for the critic; the routines UI for
+  the two boxes. VALUES: effort ladder low · medium · high · xhigh
+  · max. THE DEFAULT, one pick for everything: **Opus 5 · xhigh**,
+  all work included. xhigh is the working ceiling — `max` only by
+  explicit founder tag for rare one-shots; ultracode only by
+  explicit founder tag for coverage-critical sweeps. Fable 5 is an
+  optional SECOND OPINION only, never the seat. Throttle order
+  under usage limits: reduce effort BEFORE downgrading the model.
+  The critic runs `model: opus` · `effort: high` — the ALIAS, not
+  a pin, because the alias resolves to Opus 5 and aliases survive
+  deprecations where a pin does not. Both routine boxes are set to
+  Opus 5 (a founder act in the routines UI, not a repo file).
+  VERIFY: `grep -E 'model|effort' .claude/agents/reviewer.md`;
+  `/model` in any session reports the current pick.
+  SOURCE: [D-054](record/DECISIONS.md#d-054--2026-07--the-landing-skill--how-a-flight-ends-becomes-a-first-class-ritual-one-skill-with-two-modes-routed-by-fleet-state-retire--pause-and-transfer-the-fence-is-a-commit-so-the-resume-point-is-the-branch-tip-by-construction-wake-lock-mediated-with-its-honesty-clause-the-board-is-the-single-transfer-material-pickup-gains-the-fleet-resume-ask-and-its-cap-arithmetic-sessions-are-cattle-branches-are-the-work-charter-rule-6-becomes-a-pointer-the-effort-doctrine-moves-to-opus-5--xhigh-upholds-the-wake-lock-the-park-protocol-and-one-home-supersedes-the-opus-48-reliance-pair)
+  (the Opus 5 · xhigh doctrine, retiring the Opus 4.8 / Sonnet 5
+  reliance pair) ·
   [D-055](record/DECISIONS.md#d-055--2026-07--agent-teams--the-boundary-teams-are-for-exploration-and-review-at-a-ground-seat-lanes-remain-the-authorship-mechanism-two-risks-become-law-single-sitting-only--an-explicit-carve-out-to-d-050s-interrupt-promise--and-a-teammate-authored-diff-is-self-authored-under-no-solo-approval-the-reviewers-model-settled-by-verification-not-guess-the-founder-side-config-recorded-upholds-the-lane-law-no-solo-approval-and-one-home-gives-the-experimental-flag-its-consumer)
-  is retired. The `.claude/agents/reviewer.md` critic runs
-  `model: opus` · `effort: high` — the ALIAS, not a pin, because
-  the alias resolves to Opus 5 today (verified 2026-07-24 on CLI
-  2.1.219: a headless `--model opus` run billed
-  `canonicalModel: claude-opus-5`) and aliases survive
-  deprecations where a pin does not. The two routine boxes — lane
-  worker and cockpit — are read at the next flight and set to
-  Opus 5; that is a founder act in the routines UI, not a repo
-  file.
-- Agent teams — FOUNDER-SIDE CONFIG, so any seat can set it up
-  identically. The boundary that governs WHEN to reach for one
-  lives in [HOME §Agent teams](HOME.md#agent-teams); this bullet
-  is the machine setup only.
-  - `/config` → **Default teammate model** → **Default (leader's
-    model)**. Teammates do NOT inherit the lead's `/model`
-    otherwise, and a teammate's model is FIXED AT SPAWN — this
-    setting is the only way they ride the lead's pick.
-  - Effort needs no setting: teammates inherit the lead's effort
-    level automatically.
-  - `teammateMode` stays **in-process** (the default). Split
-    panes require tmux or iTerm2 and are NOT supported in Windows
-    Terminal — which is what both seats run, so split-pane mode
-    is unavailable here by construction, not by choice.
-  - The experimental flag inventoried in
-    [§Once and done — repo-side](#once-and-done--repo-side-travels-with-git)
-    ("Env: Agent Teams ON") sat armed with nothing reaching for it
-    until
-    [D-055](record/DECISIONS.md#d-055--2026-07--agent-teams--the-boundary-teams-are-for-exploration-and-review-at-a-ground-seat-lanes-remain-the-authorship-mechanism-two-risks-become-law-single-sitting-only--an-explicit-carve-out-to-d-050s-interrupt-promise--and-a-teammate-authored-diff-is-self-authored-under-no-solo-approval-the-reviewers-model-settled-by-verification-not-guess-the-founder-side-config-recorded-upholds-the-lane-law-no-solo-approval-and-one-home-gives-the-experimental-flag-its-consumer)
-    gave it a documented consumer; that gap is now closed.
-  - Permissions need no per-teammate setup: teammates start with
-    the LEAD's permission settings, teammate prompts surface in
-    the lead session, and a teammate can neither approve a prompt
-    on the founder's behalf nor relay a denied action to a
-    sibling. The deny rails in `.claude/settings.json` therefore
-    cover the team as they cover the seat.
-- Hands: solo · subagents · team · lanes (doctrine,
-  [D-045](record/DECISIONS.md#d-045--2026-07--hands-doctrine-solo--subagents--agent-team--lanes--the-litmus-is-one-bench-many-hands-vs-many-benches-vs-read-only-upholds-d-020-and-d-041)).
-  The founder's choose-your-hands rule, verbatim — one clause
-  superseded inline and marked:
-  - Solo (default): sequential or single-file work.
-  - Exploratory subagents: parallel READ-ONLY research inside one
-    task; no spec needed (existing sanction).
-  - Agent team: ONE task splittable into file-disjoint subparts
-    benefiting from cross-talk; founder present to steer — never
-    long-unattended; lead + 2–4 teammates (start 2 — the original
-    wording said "Sonnet 5 teammates", retired by
-    [D-055](record/DECISIONS.md#d-055--2026-07--agent-teams--the-boundary-teams-are-for-exploration-and-review-at-a-ground-seat-lanes-remain-the-authorship-mechanism-two-risks-become-law-single-sitting-only--an-explicit-carve-out-to-d-050s-interrupt-promise--and-a-teammate-authored-diff-is-self-authored-under-no-solo-approval-the-reviewers-model-settled-by-verification-not-guess-the-founder-side-config-recorded-upholds-the-lane-law-no-solo-approval-and-one-home-gives-the-experimental-flag-its-consumer):
-    teammates now ride the LEAD's model by config);
-    delegate-mode lead for pure coordination; plan-approval for
-    teammates touching shared or hard-to-reverse surfaces; never for
-    ritual/law files, never across tasks. WHEN to reach for a team
-    at all — the boundary and its two risks — lives at
-    [HOME §Agent teams](HOME.md#agent-teams).
-  - Parallel lanes: separate tasks, own benches, unattended-capable.
-  - Litmus: many hands on ONE bench with the founder watching =
-    team · many benches = lanes · reading only = subagents.
-- Supabase — arrives with V1.S1.T7 (see §Staged).
+  (the alias verified rather than guessed).
+
+- **Agent teams — founder-side config**, so any seat sets it up
+  identically. WHERE: `/config`. VALUES: **Default teammate
+  model** → **Default (leader's model)** — teammates do NOT
+  inherit the lead's `/model` otherwise, and a teammate's model is
+  FIXED AT SPAWN, so this setting is the only way they ride the
+  lead's pick. Effort needs no setting (teammates inherit the
+  lead's automatically). `teammateMode` stays **in-process** (the
+  default): split panes need tmux or iTerm2 and are NOT supported
+  in Windows Terminal, which both seats run — unavailable by
+  construction, not by choice. Permissions need no per-teammate
+  setup: teammates start with the LEAD's settings, their prompts
+  surface in the lead session, and a teammate can neither approve
+  a prompt for the founder nor relay a denied action to a sibling
+  — so `.claude/settings.json`'s deny rails cover the team as they
+  cover the seat.
+  VERIFY: `/config` shows Default teammate model = Default
+  (leader's model).
+  SOURCE: WHEN to reach for a team —
+  [HOME §Agent teams](HOME.md#agent-teams) ·
+  [D-055](record/DECISIONS.md#d-055--2026-07--agent-teams--the-boundary-teams-are-for-exploration-and-review-at-a-ground-seat-lanes-remain-the-authorship-mechanism-two-risks-become-law-single-sitting-only--an-explicit-carve-out-to-d-050s-interrupt-promise--and-a-teammate-authored-diff-is-self-authored-under-no-solo-approval-the-reviewers-model-settled-by-verification-not-guess-the-founder-side-config-recorded-upholds-the-lane-law-no-solo-approval-and-one-home-gives-the-experimental-flag-its-consumer).
+
+- **Hands: solo · subagents · team · lanes** — the founder's
+  choose-your-hands rule. VALUES: solo (default) for sequential or
+  single-file work · exploratory subagents for parallel READ-ONLY
+  research inside one task (no spec needed) · agent team for ONE
+  task splittable into file-disjoint subparts benefiting from
+  cross-talk, founder present to steer, never long-unattended,
+  lead + 2–4 teammates (start 2), delegate-mode lead for pure
+  coordination, plan-approval for teammates touching shared or
+  hard-to-reverse surfaces, NEVER for ritual/law files and never
+  across tasks · parallel lanes for separate tasks on their own
+  benches, unattended-capable. LITMUS: many hands on ONE bench
+  with the founder watching = team · many benches = lanes ·
+  reading only = subagents.
+  VERIFY: none — a judgment rule, not a setting.
+  SOURCE: [D-045](record/DECISIONS.md#d-045--2026-07--hands-doctrine-solo--subagents--agent-team--lanes--the-litmus-is-one-bench-many-hands-vs-many-benches-vs-read-only-upholds-d-020-and-d-041)
+  · the boundary at [HOME §Agent teams](HOME.md#agent-teams).
+
+- **Supabase** — arrives with
+  [V1.S1.T7](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code);
+  see [§Staged](#staged--turns-on-when-its-stage-opens).
+
+THE WHY behind the cockpit's two API paths, what dies when each
+one does, and the recovery ladder that follows:
+[HOME §The cockpit's API dependency map](HOME.md#the-cockpits-api-dependency-map--recovery).
+The ladder as the cockpit itself runs it (R0–R4b) is in
+[COCKPIT-CHARTER.md](COCKPIT-CHARTER.md).
 
 Sources:
 [WEB-INSTRUCTIONS](WEB-INSTRUCTIONS.md)
+[COCKPIT-CHARTER](COCKPIT-CHARTER.md)
+[LANE-WORKER](LANE-WORKER.md)
 [V1.S2 — skeleton](ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)
 
 ## Per machine (procedure: machine-setup skill)
 
-- One clone per machine — work PC and home PC paths in
-  machine-setup §The law.
-- Git identity + noreply email; core.autocrlf=true;
-  git config roam.machine "<seat label>".
-- claude CLI current (claude update); gh auth login.
-- Obsidian — vault at <clone>\docs; vault lens applied once.
-- VS Code — Settings Sync ON (personal GitHub), Auto Save, word
-  wrap.
-- ccstatusline — optional status bar.
-- Vercel CLI — npm i -g vercel + vercel login (S2+ deploy work).
-- MCP tokens — machine-local only (.env, settings.local.json, local
-  MCP config); never in this public repo.
-- Remote Control — toggles installed on both machines, BACKSTOP
-  only, never the plan
-  ([D-046](record/DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)):
-  machine-off is the standard away posture — the cockpit flies the
-  outing; go-remote remains the backstop for a machine that must
-  stay on.
+- **One clone per machine** — WHERE: the seat paths in
+  [machine-setup §The law](skills/machine-setup.md).
+  VERIFY: exactly one clone exists on the machine.
+- **Git identity** — VALUES: personal name + GitHub noreply email;
+  `core.autocrlf=true`; `git config roam.machine "<seat label>"`.
+  VERIFY: `git config roam.machine` returns the seat label.
+- **CLI tooling** — VALUES: `claude` current (`claude update`);
+  `gh` authenticated.
+  VERIFY: `claude --version`; `gh auth status`.
+- **Obsidian** — VALUES: vault opened at `<clone>\docs`; the vault
+  lens applied once per seat.
+  VERIFY: `docs/.obsidian/graph.json` matches
+  `.claude/vault-seed/graph.json`.
+- **VS Code** — VALUES: Settings Sync ON (personal GitHub), Auto
+  Save, word wrap. VERIFY: none — UI-only.
+- **ccstatusline** — optional status bar. VERIFY: none — optional.
+- **Vercel CLI** — VALUES: `npm i -g vercel` + `vercel login`
+  (needed for S2+ deploy work). VERIFY: `vercel whoami`.
+- **Secrets** — VALUES: machine-local only (`.env`, `.env.local`,
+  `settings.local.json`, local MCP config); NEVER this public
+  repo. VERIFY: `git check-ignore .env.local` succeeds.
+- **Remote Control** — VALUES: toggles installed on both machines,
+  BACKSTOP only, never the plan — machine-off is the standard away
+  posture (the cockpit flies the outing); go-remote remains the
+  backstop for a machine that must stay on.
+  VERIFY: `/config` → "Enable Remote Control for all sessions" =
+  true.
+  SOURCE: [D-046](record/DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock).
 
 Sources:
 [machine-setup](skills/machine-setup.md)
@@ -560,33 +403,33 @@ Sources:
 
 ## Staged — turns on when its stage opens
 
-- V1.S1.T7 — Supabase project provisioned; Supabase MCP configured
-  (tokens per machine).
-- V1.S2.T5+ — playwright plugin ON (Claude renders and judges its
-  own UI) · design-critic subagent paired with screenshots · Claude
-  Design ↔ repo design-system sync, plus the optional Design MCP
-  server — mechanics in DESIGN-KICKOFF.
-- V1.S3.T1 — check-module skill encoded from the settled contract;
-  runtime tool architecture settled (a source-type question under
-  the reliability law).
-- At first need — api-ignition (route 1b,
-  [D-043](record/DECISIONS.md#d-043--2026-07--cloud-ignition--away-command-redesign--route-ladder-v2-ready-flip-then-label-is-the-recipe-of-record-api-ignition-and-the-cloud-clerk-staged-the-claude-app-the-single-away-surface-amends-d-041-upholds-the-lane-law-and-the-wake-lock)):
-  the routine's API trigger — control tower/liftoff ignite cloud
-  lanes
-  via endpoint, benches stay draft, the ready-flip reverts to
-  completion-only; adopt at first need, verify-before-rely.
-- RESOLVED — the summon button is LIVE, no longer staged
-  ([D-048](record/DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047),
-  resolving the
-  [D-046](record/DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
-  staging): `.github/workflows/summon.yml` holds the cockpit fire
-  call with the token in repository secrets. The dispatch button
-  shipped with it, but the PUSH trigger (`ops/summon`) is the
-  point — self-rescue, not taps. Recipe and the required founder
-  act: [§cloud accounts](#once-and-done--cloud-accounts).
-- Built-in exploratory subagents (parallel research inside one
-  task) need no spec — distinct from roadmap [P] lanes, which are
-  separate sessions on separate branches.
+Nothing here is armed. Each line names its stage and what turns on.
+
+- **[V1.S1.T7](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)**
+  — Supabase project provisioned; Supabase MCP configured (tokens
+  per machine).
+- **[V1.S2.T5+](ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)**
+  — playwright plugin ON (Claude renders and judges its own UI) ·
+  design-critic subagent paired with screenshots · Claude Design ↔
+  repo design-system sync, plus the optional Design MCP server —
+  mechanics in [DESIGN-KICKOFF](DESIGN-KICKOFF.md).
+- **[V1.S3.T1](ROADMAP.md#v1s3--engine-core--two-families-deep)** —
+  check-module skill encoded from the settled contract; runtime
+  tool architecture settled (a source-type question under the
+  reliability law).
+- **At first need** — api-ignition (route 1b): the routine's API
+  trigger lets the control tower and liftoff ignite cloud lanes by
+  endpoint, benches stay draft, and the ready-flip reverts to
+  completion-only. Adopt at first need, verify-before-rely.
+  SOURCE: [D-043](record/DECISIONS.md#d-043--2026-07--cloud-ignition--away-command-redesign--route-ladder-v2-ready-flip-then-label-is-the-recipe-of-record-api-ignition-and-the-cloud-clerk-staged-the-claude-app-the-single-away-surface-amends-d-041-upholds-the-lane-law-and-the-wake-lock).
+- **RESOLVED, no longer staged** — the summon button is LIVE; its
+  recipe and the required founder act are in
+  [§cloud accounts](#once-and-done--cloud-accounts). The dispatch
+  button shipped with it, but the PUSH trigger (`ops/summon`) is
+  the point — self-rescue, not taps.
+- **Needs no spec** — built-in exploratory subagents (parallel
+  research inside one task), distinct from roadmap [P] lanes,
+  which are separate sessions on separate branches.
 
 Sources:
 [DESIGN-KICKOFF](DESIGN-KICKOFF.md)
