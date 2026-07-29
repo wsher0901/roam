@@ -167,6 +167,8 @@ Sources:
 | [IDEAS.md](IDEAS.md) | the single untriaged inbox — no Issues, no boards ([D-023](record/DECISIONS.md#d-023--2026-07--universal-draft-pr-at-birth--micro-pr-carve-out-recut-amends-d-002-d-008-d-020)) | Claude Code, the moment an idea or defect is voiced | lines leave only by triage into [ROADMAP](ROADMAP.md) via decide |
 | [DESIGN-KICKOFF.md](DESIGN-KICKOFF.md) | the Claude Design session preamble + governance rules | ops PRs | living until the repo-synced design system replaces it |
 | [WEB-INSTRUCTIONS.md](WEB-INSTRUCTIONS.md) | master copy of the Claude Web Project-instructions box | ops PRs | living; re-pasted into the box after every edit (the box is a copy, never the source) |
+| [COCKPIT-CHARTER.md](COCKPIT-CHARTER.md) | master copy of the cockpit routine's saved prompt, adopted verbatim into every `--cloud` birth | ops PRs | living; re-saved into the routine box after every edit (the box is a copy) |
+| [LANE-WORKER.md](LANE-WORKER.md) | master copy of the cloud lane-worker routine's saved prompt | ops PRs | living; re-saved into the routine box after every edit (the box is a copy) |
 | HOME.md | this manual & encyclopedia; zero live state | founder-approved PRs | living |
 | [data/FACTS.md](data/FACTS.md) | every fact the engine must know + every traveler parameter + the telemetry vocabulary ([Appendix C](data/FACTS.md#appendix-c--telemetry-vocabulary-what-the-app-records)) | [V1.S1](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code) tasks via PRs | living; IDs stable, extension append-only |
 | [data/SOURCES.md](data/SOURCES.md) | the vetted source registry, one entry per source slot | source-vetting tasks (T2–T6), consolidated at [T7](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code) | living; grades move under the demotion law |
@@ -1196,6 +1198,8 @@ the link for the full story.
   [liftoff](skills/liftoff.md)'s fire (briefed by the
   board-derived flight plan) or a founder summon, holding the
   baton for its bounded flight. Charter:
+  [COCKPIT-CHARTER.md](COCKPIT-CHARTER.md) (the master); its
+  routine wiring:
   [SETUP §cloud accounts](SETUP.md#once-and-done--cloud-accounts).
 - **the baton** — the right to be the control tower: claimed by
   [pickup](skills/pickup.md) on fresh origin, released by FULL

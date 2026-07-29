@@ -146,10 +146,10 @@ every cockpit birth:
 > tip and your workspace contains nothing origin lacks;
 > mismatch = report verbatim and STOP.
 
-The full birth prompt = the cockpit charter master from
-[SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts)
-adopted VERBATIM, then the clone-provenance line, the board
-pointer, and the one-line mandate.
+The full birth prompt = the master in
+[COCKPIT-CHARTER.md](../COCKPIT-CHARTER.md) adopted VERBATIM,
+then the clone-provenance line, the board pointer, and the
+one-line mandate.
 
 TITLE LINE — none. The verify-before-rely answer, recorded here as
 the instruction it replaces required: a prompt-supplied first line
@@ -220,12 +220,13 @@ connector IN FLIGHT climbs a different one — prevent · detect ·
 repair · degrade · self-rescue, ending in a push to `ops/summon`
 that fires a replacement
 ([D-048](../record/DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047);
-procedure in the charter master,
-[SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts)).
+procedure in [the charter master](../COCKPIT-CHARTER.md)).
 
 Sources:
 [DASHBOARD](../DASHBOARD.md)
-[Cockpit charter — SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts)
+[COCKPIT-CHARTER — the master](../COCKPIT-CHARTER.md)
+[SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts)
+(the routine's wiring and the fire recipe)
 
 ## 7 · Close
 The close report follows the response doctrine

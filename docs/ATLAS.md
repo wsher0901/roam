@@ -122,7 +122,7 @@ flowchart TD
 Boxes: [the chooser — HOME §Delegation](HOME.md#delegation--the-away-mode-chooser)
 · [handoff](skills/handoff.md) · [go-remote](skills/go-remote.md)
 · [liftoff](skills/liftoff.md)
-· [the cockpit's standing job — SETUP §cloud accounts](SETUP.md#once-and-done--cloud-accounts)
+· [the cockpit's standing job — COCKPIT-CHARTER](COCKPIT-CHARTER.md)
 · [the trigger table — land](skills/land.md#the-trigger-table--what-starts-a-landing)
 · [AUTO-LAND](skills/land.md#scenario-1--auto-land-the-cockpit-fires-it)
 · [DESK TAKEOVER](skills/land.md#scenario-2--desk-takeover-the-desk-fires-it)

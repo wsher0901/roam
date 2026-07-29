@@ -2816,3 +2816,103 @@ master replaced with v6; a version-history table added below it) ·
 it named doctrine v1's clauses, which this entry retires) ·
 [IDEAS](../IDEAS.md) (the ritual/report-shape sweep filed) · this
 entry.
+
+## D-064 — 2026-07 — The box-master class + the SETUP entry contract — every external-box master is its own top-level file on the WEB-INSTRUCTIONS pattern; COCKPIT-CHARTER.md and LANE-WORKER.md extracted verbatim; SETUP compresses to a replication spec under the entry contract (WHAT · WHERE · VALUES · VERIFY · SOURCE); DESIGN-KICKOFF joins the class on paper
+
+**Decision:** two things, and the second is why the first matters.
+
+**(1) THE BOX-MASTER CLASS.** A master for any EXTERNAL BOX — text
+this repo authors but another product stores — is its OWN
+TOP-LEVEL FILE under `docs/`, built on the shape
+[WEB-INSTRUCTIONS](../WEB-INSTRUCTIONS.md) proved at
+[D-063](#d-063--2026-07--response-doctrine-v2--web-instructions-v6--two-channels-sentences-for-the-founder-fenced-blocks-for-machines-process-is-proof-not-prose-the-chat-start-ingest-contract-the-relay-rule--origin-is-the-only-courier-codes-output-is-never-pasted-to-web-reviews-speak-in-goal-and-outcome-the-core-file-alert-the-agenda-convention-brief-renders-the-full-picture-the-master-gains-a-version-history-amends-d-052).
+FOUR ELEMENTS, all four required:
+
+- HEADER LAWS in prose — the box is a COPY, never the source;
+  RE-SAVE after any edit; FULL COPY, ALWAYS (any surface
+  compiling a new version prints the complete text, never a
+  diff).
+- ONE FENCED MASTER — the exact text that goes in the box, and
+  nothing else inside the fence.
+- A VERSION-HISTORY table — version · date · vehicle · one-line
+  change.
+- A SOURCES block pointing at the wiring that stays elsewhere.
+
+Two masters move into the class NOW, both extracted VERBATIM:
+`docs/COCKPIT-CHARTER.md` (the cockpit routine's saved prompt,
+and the text liftoff adopts into every `--cloud` birth) and
+`docs/LANE-WORKER.md` (the lane-worker routine's saved prompt).
+[DESIGN-KICKOFF](../DESIGN-KICKOFF.md) JOINS THE CLASS ON PAPER —
+it is a box master by definition, and it retrofits at its next
+natural edit rather than being churned now.
+
+**(2) THE SETUP ENTRY CONTRACT.** [SETUP](../SETUP.md) is a
+REPLICATION SPEC — what a person needs to rebuild this workshop on
+a new machine or a new account — so every entry answers five
+fields and nothing more: **WHAT** it is · **WHERE** it lives
+(the console, the path, the URL) · **VALUES** (names only; never
+a secret value) · **VERIFY** (how to know it works) · **SOURCE**
+(the pointer to whatever governs it). Anything that is not one of
+those five belongs elsewhere: the CLERK RECORD relocates to the
+record shelf, and the cockpit's WHY relocates to
+[HOME](../HOME.md). THE COMPRESSION IS A FOLLOW-UP BENCH; this
+entry decides the contract and clears the two masters out of the
+way so that bench has less to move.
+
+**Why:** SETUP had become a container rather than a spec. It held
+the cockpit charter and the lane-worker prompt in full — two of
+the longest texts in the repo — plus a retired clerk's complete
+record, plus the reasoning for why the cockpit works as it does,
+none of which a person rebuilding the workshop needs at the
+moment they are rebuilding it. The cost is not aesthetic: a
+master buried inside a section about routine wiring is hard to
+find, hard to diff, and impossible to version, and the re-save
+duty it carries has nowhere to be stated where its reader will
+see it. WEB-INSTRUCTIONS had already solved exactly this for the
+Web box, and the solution generalized without modification.
+
+The class also makes the re-save duty CHECKABLE. Each master now
+carries its own version history, so "which boxes are stale?" —
+a question the founder previously answered from memory, and which
+[IDEAS](../IDEAS.md) has carried as an open line since 07-24 —
+becomes a question about files.
+
+The entry contract's five fields come from what SETUP is FOR. A
+replication spec is read under pressure, by someone who has
+something broken or missing; every field answers a question that
+person actually asks, and prose that answers none of them is
+weight they carry while looking for the line that does.
+
+**Alternatives rejected:** leaving both masters in SETUP and
+adding a version-history table there — the table would sit in a
+file whose other sections version independently, so it would
+describe nothing precisely · one combined `BOX-MASTERS.md`
+holding every master — the boxes are pasted independently into
+different products, and a combined file would make every paste a
+selective copy, which is exactly what FULL COPY, ALWAYS exists to
+forbid · retrofitting
+[DESIGN-KICKOFF](../DESIGN-KICKOFF.md) in this same bench — it is
+untouched otherwise and nothing forces the churn; the class
+states it belongs, and the next real edit to that file lands the
+shape · compressing SETUP here rather than in a follow-up — the
+compression moves a retired clerk's whole record and the cockpit
+why into two other files, which is a bench's worth of relocation
+on its own; doing it beside a verbatim extraction would make the
+diff unreviewable, and a verbatim move is only verifiable when it
+is the ONLY thing in view.
+
+**Affects:** `docs/COCKPIT-CHARTER.md` (born — the charter
+extracted verbatim) · `docs/LANE-WORKER.md` (born — the
+lane-worker prompt extracted verbatim) ·
+[SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts)
+(both embedded masters replaced by one pointer line each; every
+wiring fact kept; the phone bootstrap now adopting the charter
+from its own file) · the living-doc pointer sweep
+([liftoff](../skills/liftoff.md) ·
+[land](../skills/land.md) ·
+[parallel-lanes](../skills/parallel-lanes.md) ·
+[HOME](../HOME.md) · [ATLAS](../ATLAS.md) ·
+`scripts/fire.mjs`) · [the spec](specs/box-masters.md) + its
+memory (in flight on the bench; moves to history at the weld) ·
+this entry. The frozen record is deliberately UNTOUCHED — its
+citations of the old location were true when written.

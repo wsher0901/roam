@@ -78,32 +78,49 @@ contract and clears the two masters out of the way.
 
 ## Done means
 
-- [ ] The D-number exists with Decision · Why · Alternatives
+- [x] The D-number exists with Decision · Why · Alternatives
       rejected · Affects, anchors resolving, and states the class
       (its four elements) plus the entry contract's five fields.
-- [ ] [COCKPIT-CHARTER.md](../../COCKPIT-CHARTER.md) and
+- [x] [COCKPIT-CHARTER.md](../../COCKPIT-CHARTER.md) and
       [LANE-WORKER.md](../../LANE-WORKER.md) exist, each with
       frontmatter · header laws · ONE fenced master · a one-row
       version history · Sources.
-- [ ] Both fences are BYTE-FAITHFUL to what SETUP carried — no
+- [x] Both fences are BYTE-FAITHFUL to what SETUP carried — no
       reconstruction; any gap flagged, never filled.
-- [ ] [SETUP](../../SETUP.md) keeps every wiring fact (routine
+- [x] [SETUP](../../SETUP.md) keeps every wiring fact (routine
       location, triggers, caps, token recipes, birth mechanics)
       and carries one pointer line per master; no SETUP-internal
       reference still says the master is "below" or in that
       section; the phone bootstrap adopts from the new file.
-- [ ] Every living-doc citation of the masters' old location
+- [x] Every living-doc citation of the masters' old location
       re-points; the frozen record is untouched; each touched
       file is named in the memory.
-- [ ] Files touched: nothing outside the mandate's list.
-- [ ] `check:links` · `check:ledger` · `check:memory` · lint ·
+- [x] Files touched: nothing outside the mandate's list.
+- [x] `check:links` · `check:ledger` · `check:memory` · lint ·
       format · test · build green; Actions green on the pushed
       head; ship §6 critic run.
 
 ## Deviations
 
-<filled by ship>
+1. **[HOME](../../HOME.md)'s file catalog gained two rows** — one
+   per new master. The mandate licensed HOME as a POINTER file,
+   and a catalog row is new content rather than a repointed
+   citation, so it is disclosed. The reason it was taken anyway:
+   [WEB-INSTRUCTIONS](../../WEB-INSTRUCTIONS.md) carries a
+   catalog row, and its two new siblings being invisible in the
+   same table is the drift the catalog exists to prevent. The
+   opposite call — the [#233](https://github.com/wsher0901/roam/pull/233)
+   precedent, where a new surface got a routing row but no
+   catalog entry and the gap was surfaced for a ruling — was the
+   alternative; here the row already existed for the sibling, so
+   consistency argued louder than restraint.
+2. **`scripts/fire.mjs` was touched** — anticipated by the
+   mandate's "scripts" clause but not by its named list. One
+   comment line: the fallback named SETUP as where the manual
+   charter paste comes from, which the extraction falsifies.
 
 ## Open questions
 
-none at birth.
+none. Bench 2 (SETUP's compression under the entry contract) is
+the follow-up this bench's D-number already declares, not an open
+question here.

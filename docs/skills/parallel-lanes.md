@@ -123,9 +123,8 @@ airborne · <url> · <date>
 
 Middots, not em-dashes; the token is the first thing on the line.
 Every other home of this token
-([TEMPLATE](../memory/TEMPLATE.md)'s state table, the lane-worker
-charter master in
-[SETUP](../SETUP.md#once-and-done--cloud-accounts)) copies THIS
+([TEMPLATE](../memory/TEMPLATE.md)'s state table, the
+[lane-worker master](../LANE-WORKER.md)) copies THIS
 form — §Canary is the contract the lane's watcher actually reads,
 so it wins any disagreement.
 
@@ -277,7 +276,9 @@ interim route 1:
    rejected-push rule in [§Wake-lock](#wake-lock--parking) is the
    backstop). The lane-worker routine (GitHub trigger
    `pull_request.labeled`, filtered to label `lane:cloud`) starts a
-   cloud session on that PR. Its saved prompt: the fenced master in
+   cloud session on that PR. Its saved prompt: the master in
+   [LANE-WORKER.md](../LANE-WORKER.md); the routine's wiring
+   (trigger, GitHub App, caps) stays at
    [SETUP §Once and done — cloud accounts](../SETUP.md#once-and-done--cloud-accounts).
    The GitHub push IS the notification channel; the founder's
    PR-comment reply feeds the running session
