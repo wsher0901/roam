@@ -4,442 +4,218 @@ title: Ideas Inbox
 status: living
 ---
 # Ideas Inbox
-Unsorted ideas land here. Nothing in this file is scope until it is
+
+THE ENTRY CONTRACT
+([D-066](record/DECISIONS.md#d-066--2026-07--the-ideas-entry-contract--one-idea-per-line-one-line-per-idea-plain-language-links-short-text-at-the-tail-glyph-first-open--developed-with-vehicle--declined-with-a-one-word-why-two-sections-open-newest-first-and-closed-one-line-each-closed-entries-compress-and-stay-as-the-outcome-ledger-amends-the-delete-at-harvest-compaction-law-multi-part-thoughts-split-so-closure-is-per-idea-findings-and-probe-stories-live-in-the-record-never-here-enforcement--the-header-is-the-law-handoffs-harvest-grooms-to-it-every-sitting-liftoffdecideparallel-lanes-cite-it-at-their-write-steps-the-critic-and-the-external-review-grade-ideas-diffs-against-it)):
+one idea per line, one line per idea — a plain sentence a tired
+reader scans, jargon translated, links short-text at the tail.
+Glyph first: ⏳ open · 🟢 developed (vehicle linked) · ⚪ declined
+(one-word why). Two sections: OPEN, newest first · CLOSED, one
+line each — the outcome ledger; closed entries compress and stay.
+A multi-part thought splits into separate lines so closure is
+per-idea. Findings and probe stories are not ideas — they live in
+the record; a line here points at them. Nothing is scope until
 triaged into [ROADMAP](ROADMAP.md) via decide.
-COMPACTION — an inbox, not an archive: at every harvest, entries
-already CLOSED or fully SUPERSEDED in an outing OLDER than the
-current one are DELETED — the closing artifact (the decide, the PR,
-the history file) is the record, and
-[the ledger](record/history/README.md#the-ledger) finds it. Two stays: a
-closed entry whose only record is ITSELF keeps its place until the
-content has an external home, and a partly-closed entry stays
-whole.
 
-- 2026-06-11 (Claude Code, after [V1.S2.T2](ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)): add `paths-ignore:
-  docs/**` to the CI workflow so docs-only PRs (e.g. handoff
-  micro-PRs) skip the full lint/test/build + preview deploy — weigh
-  against losing the CI gate on docs-only changes before adopting.
-- 2026-06-12 (Web, [V1.S1.T1](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code) amendment review): reachability globe —
-  visualize how far the traveler's max-travel-hours reaches on a
-  globe/map; open question: heuristic distance rings vs true
-  flight-time isochrones.
-- 2026-06-12 (Web, [V1.S1.T1](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code) amendment review): multi-origin trips and
-  group preference merging — friends converging from different
-  cities; merging several travelers' inputs into one plan.
-- 2026-06-12 (Web, [V1.S1.T1](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code) amendment review): dataset licensing /
-  export — the world-facts asset (revision series, forecast-vs-actual
-  calibration pairs, coverage maps) as a licensable product someday;
-  stays possible only because of the license-segmented storage law
-  ([D-015](record/DECISIONS.md#d-015--2026-06--data-asset-law-bitemporal-append-only-license-segmented)).
-- 2026-07-14 (Claude Code, [ci-trust](record/history/workshop/mechanism/ci-trust.md) weld): anchor-generating
-  helper for D-links — a small step or script that emits the exact
-  GitHub heading slug for a new D-number, so the heading and every
-  link to it are born matching; kills the recurring first-push
-  anchor stumble at its source (the pattern behind
-  [D-038](record/DECISIONS.md#d-038--2026-07--ci-is-the-arbiter--actions-green-required-at-every-gate-local-gate-mirrors-all-six-ci-steps-d-anchors-born-resolving-upholds-d-027)).
-- 2026-07-14 (Claude Code, ci-trust weld) — caveat on the
-  paths-ignore idea above: with
-  [D-038](record/DECISIONS.md#d-038--2026-07--ci-is-the-arbiter--actions-green-required-at-every-gate-local-gate-mirrors-all-six-ci-steps-d-anchors-born-resolving-upholds-d-027)
-  branch protection now requiring the `checks` context on main,
-  ignoring `docs/**` in CI would leave that required check
-  unreported and block every docs-only merge; adopt only with a
-  matching protection carve-out.
-- 2026-07-16 (Web, full-pass audit): a check:board CI gate —
-  machine-verify the [DASHBOARD](DASHBOARD.md) glance-line numbers
-  against [ROADMAP](ROADMAP.md) checkbox counts at every PR; weigh
-  against the board's deliberate least-authoritative status (git
-  outranks it by design).
-- 2026-07-16 (Claude Code, maiden-flight-report): PreToolUse
-  permission-guard hooks — enforce the deny rails as hooks that
-  block dangerous tool calls before they run, not only as settings
-  permissions.
-- 2026-07-16 (Claude Code, maiden-flight-report): name Agent View
-  in [parallel-lanes §Vehicles](skills/parallel-lanes.md#vehicles),
-  and prefer supervisor-backed background sessions for local lanes
-  over bare detached spawns.
-- 2026-07-16 (Claude Code, maiden-flight-report): cloud-session
-  hygiene — unrecognized sessions at claude.ai/code archived on
-  sight.
-- 2026-07-17 (Claude Code, clerk-notify bench): DEFECT — the
-  reviewer agent-type fails to register in-session (the Agent tool
-  reports 'reviewer' not found); second recurrence 2026-07-17,
-  graduated to defect per the
-  [#159](https://github.com/wsher0901/roam/pull/159) rule; the
-  synchronous general-purpose fallback carries ship §6
-  ([ship-wiring story](record/history/workshop/mechanism/ship-wiring.md));
-  diagnose post-flight. CLOSED 2026-07-28 on the founder's word,
-  the confirmation this line asked for being five clean native
-  registrations —
-  [#175](https://github.com/wsher0901/roam/pull/175), 2026-07-24,
-  and all three benches of the 07-27 queue
-  ([#229](https://github.com/wsher0901/roam/pull/229) ·
-  [#231](https://github.com/wsher0901/roam/pull/231) ·
-  [#233](https://github.com/wsher0901/roam/pull/233)). The
-  general-purpose fallback stays documented in
-  [ship §6](skills/ship.md#6--the-gate) as the re-open path if it
-  recurs. Closing artifact:
-  [the answering bench](record/history/workshop/definition/chronicle-answers.md).
-- 2026-07-16 (Claude Code, maiden-flight-report): a separate bot
-  identity for lane speech (optional) — lane comments currently
-  post as the founder's own account, which blurs who is talking on
-  a PR.
-- 2026-07-16 (Claude Code, maiden-flight-report): home-seat
-  missing-local-main anomaly — pickup found no local main branch on
-  the home PC (healed 07-16 by rebuilding from origin, cause
-  unknown); watch for recurrence.
-- 2026-07-19 (Claude Code,
-  [shakedown-audit](record/specs/shakedown-audit.md) finding 6): detached
-  background verification is not verification — the resurrection
-  spot-check ran as a detached background task, lost its exit code,
-  and its main-only answer aged into a false all-clear four minutes
-  later; proposal: [ship](skills/ship.md)'s verification norms gain
-  "verification commands run foreground; results quoted from
-  captured output" — founder decides at triage, not this bench.
-- 2026-07-22 (Claude Code, liftoff): DEFECT — `npm run count:runs`
-  fails at the work PC's Git Bash with the generic "could not read
-  GitHub" message while `node scripts/count-routine-runs.mjs` run
-  directly succeeds on the same seat, same second; `gh` is
-  authenticated and the same `gh api` call works by hand, so the
-  cause is the npm wrapper's environment (PATH mangling under Git
-  Bash leaves `execFileSync("gh", …)` unable to resolve the
-  executable), not GitHub. Cost: the script's honest failure sends
-  [liftoff §2](skills/liftoff.md#2--triage-every-open-item) to ask
-  the founder for a number the seat could have derived. Proposals to
-  weigh: resolve `gh` via `process.env.ComSpec`/`shell: true` on
-  win32, or print the underlying error instead of swallowing it in
-  the catch.
-- 2026-07-22 (Claude Code, liftoff — the first cockpit birth flown
-  from the documented recipe): the rung-1 mechanics in
-  [liftoff §6](skills/liftoff.md#6--ledger-handoff--fire-the-cockpit)
-  and [SETUP §cloud accounts](SETUP.md#once-and-done--cloud-accounts)
-  do not reproduce AS WRITTEN — "a hidden console hosting a winpty
-  pty (Start-Process, output captured to file)" fails at the capture
-  step, twice, for the same reason: `winpty` itself refuses whenever
-  either of its own ends is redirected — `stdin is not a tty` when
-  Start-Process redirects the streams, `stdout is not a tty` when the
-  redirection happens inside the console (`> file 2>&1`), and this
-  Git-for-Windows build exposes no non-tty escape flag (`winpty
-  --help` lists only `--mouse`, `--showkey`, `--version`). What
-  actually birthed the cockpit at 2026-07-22, exit 0, link returned:
-  a hidden console with NO redirection anywhere — `Start-Process
-  powershell -WindowStyle Hidden -NoExit -File <launcher>`, the
-  launcher calling `claude --cloud "<prompt read from a file>"` — and
-  the output recovered afterwards by ATTACHING to that console
-  (`FreeConsole`/`AttachConsole(pid)` + `ReadConsoleOutputCharacterW`
-  over `CONOUT$`) instead of capturing a stream. The insight worth
-  keeping: a hidden console already gives `claude` a real TTY on both
-  ends, so winpty is not needed at all — it was the probe's scaffold,
-  and carrying it into the recipe added the one component that cannot
-  coexist with capture. Proposal for triage: rewrite rung 1's
-  mechanics to the console-attach shape and keep the working launcher
-  as a script (`scripts/`) so the next liftoff does not re-derive it;
-  the `-NoExit` console must be killed after the read, and the prompt
-  must reach `claude` as a file-read argument, never a pipe.
-  — CLOSED 2026-07-22 by
-  [#193](https://github.com/wsher0901/roam/pull/193): rung 1 now
-  documents the console-attach shape, winpty is gone from both homes,
-  and the file-read argument plus the kill-after-read are written in.
-  The launcher-as-a-script half stays OPEN — no machinery was built
-  on that bench by mandate.
-- 2026-07-22 (Claude Code, cockpit-resilience bench): WATCH ITEM,
-  a hypothesis and not a finding — community reports suggest
-  INTERACTIVE web sessions lose their claude.ai connectors while
-  ROUTINE sessions retain them. That matches
-  [#191](https://github.com/wsher0901/roam/pull/191) exactly: the
-  interactive cockpit went connector-dead while its routine-born
-  lane kept working. If it holds, the rescue vehicle is the
-  STURDIER SPECIES, and the `--cloud`-vs-routine choice settled by
-  [D-047](record/DECISIONS.md#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law)
-  (list-native beats sturdy) deserves re-decision. Evidence so
-  far: ONE data point plus one filed report. Watch across the next
-  flights; do not act on it yet.
-- 2026-07-22 (Claude Code, cockpit-outing closeout): the daily-cap
-  arithmetic is blind to API fires AND to trigger redeliveries —
-  today's "15 of 15 remaining" was wrong twice over. Fold both
-  blind spots into whatever counts runs for
-  [liftoff §2](skills/liftoff.md#2--triage-every-open-item).
-- 2026-07-22 (Claude Code, cockpit-outing closeout): four smaller
-  ones — session naming at birth (`[COCKPIT]`/`[LANE]` prefixes so
-  the phone's session list reads itself) · a notification taxonomy
-  that separates lane pings from cockpit decisions · self-authored
-  gates should carry the external review verdict onto the record
-  automatically · the docs say "roam environment" while the live
-  one is named "Default".
-  — PARTLY CLOSED 2026-07-22 by
-  [#193](https://github.com/wsher0901/roam/pull/193): the cockpit
-  title line `[COCKPIT] roam — <date>` is in liftoff's birth
-  prompt, marked VERIFY-BEFORE-RELY (confirm at the next birth
-  whether the platform takes it; drop it if not) with the
-  session-list doctrine beside it, and the environment is renamed
-  `Default` in SETUP. STAYS OPEN: the notification taxonomy, the
-  `[LANE]` half (no lane was born on that bench to test it), and
-  self-authored gates carrying the review verdict onto the record.
-- 2026-07-23 (Claude Code, cloud-birth probe on the branch-only
-  `ops/probe-cloud`, never merged): can a GitHub Action birth a
-  LIST-NATIVE cockpit by running `claude --cloud` itself under a
-  real pty — so even an emergency cockpit lands in the phone's
-  general session list — instead of the routine fire that
-  `summon.yml` uses
-  ([D-048](record/DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)),
-  which yields a list-INVISIBLE session? RESULT, three gates deep:
-  (1) the pty (`script -qec '…' /dev/null`) DEFEATS the TTY refusal
-  that killed every piped `--cloud` route — the runner's terminal
-  is real, so the refusal recorded across the flight-hardening work
-  is NOT a wall for a pty; (2) a fresh-install CLI then blocks on
-  FIRST-RUN ONBOARDING (the theme picker) before it parses
-  `--cloud`, cleared by pre-seeding `~/.claude.json`
-  (`hasCompletedOnboarding` + `lastOnboardingVersion` — the theme
-  step is part of onboarding) plus the per-project
-  `hasTrustDialogAccepted` for the workspace-trust gate; keys
-  verified against a real install (2.1.218), never guessed; (3)
-  `--cloud` then runs FULLY HEADLESS, reaches the real cloud-birth,
-  and fails `Error: Unable to get organization UUID` (exit 1) — a
-  bare `setup-token` (`CLAUDE_CODE_OAUTH_TOKEN`) does not carry the
-  account's org identity, which a logged-in `~/.claude.json` caches
-  under `oauthAccount.organizationUuid`. That is WHY the routine
-  fire works where this does not: the routine runs inside Anthropic
-  infra with org context already established server-side, while the
-  `--cloud` CLI resolves it client-side from local auth state a
-  token alone does not populate. — DECISION (founder, 2026-07-23):
-  KEEP the proven routine fire as the rescue engine; do NOT seed
-  account identity into CI for an uncertain payoff. UNTRIED next
-  step if ever revisited: inject `oauthAccount` (accountUuid ·
-  organizationUuid · email) as masked repository secrets and retry
-  — it may be the last gate or reveal another (org-scoped auth the
-  setup-token may not carry). Bears on the interactive-vs-routine
-  connector hypothesis above and on
-  [D-047](record/DECISIONS.md#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law)'s
-  list-native-beats-sturdy choice: if a list-native rescue is ever
-  wanted, this is the path and the org-UUID gate is its remaining
-  wall.
-- 2026-07-23 (Claude Code, liftoff — first cockpit birth flown from
-  a BACKGROUND job, the env-clerk-scrub outing): two flight
-  findings.
-  (1) — CLOSED 2026-07-23 by
-  [#204](https://github.com/wsher0901/roam/pull/204), the reviewed
-  PR this entry asked for: the title line is dropped from both
-  homes and the answer recorded in liftoff §6. —
-  The VERIFY-BEFORE-RELY title line in
-  [liftoff §6](skills/liftoff.md#6--ledger-handoff--fire-the-cockpit)
-  is DISPROVEN. The birth prompt opened with the title line
-  `[COCKPIT] roam — 2026-07-23`, but the platform IGNORED it and
-  auto-titled the session "Roam flight cockpit system
-  initialization" from the charter content. Per §6's own
-  instruction — "confirm at the next birth, record the answer here,
-  and drop the line if it does nothing" — the title line should be
-  DROPPED from the birth prompt: it does nothing. The session-list
-  doctrine stands (the session is list-native and the founder finds
-  it in the phone's general list), but the title is
-  platform-generated, not prompt-supplied. Wants a
-  [liftoff §6](skills/liftoff.md#6--ledger-handoff--fire-the-cockpit)
-  edit (a reviewed PR, not this micro).
-  (2) POSITIVE — rung 1 (the hidden-console `--cloud` birth) flew
-  CLEANLY from a background job. `Start-Process powershell
-  -WindowStyle Hidden` gave `claude` a real TTY, `claude --cloud`
-  returned exit 0 with the session link, and the launcher recovered
-  the URL by reading its OWN console screen buffer
-  (`ReadConsoleOutputCharacterW` over `CONOUT$`) — a simpler
-  self-read variant of the recipe of record's cross-process
-  `AttachConsole`. Confirms rung 1 works unattended; the self-read
-  launcher is worth keeping as a script if a future liftoff wants
-  it. Session born: `session_01XazSQ9TdZBwLEiEGEXYu6a`.
-- 2026-07-23 (the founder, at the currency-audit gate —
-  [#204](https://github.com/wsher0901/roam/pull/204)):
-  [ENGINE](ENGINE.md)'s frontmatter reads `type: spec` though the
-  file is a living consolidation — flagged UNCLEAR by the audit,
-  deliberately unchanged. The founder's word: it STAYS for now;
-  resolution folded to
-  [V1.S3](ROADMAP.md#v1s3--engine-core--two-families-deep)'s first
-  engine bench, which will touch ENGINE anyway.
-- 2026-07-23 (Claude Code + the founder, the gh-second-path probe
-  — [#207](https://github.com/wsher0901/roam/pull/207)): four
-  findings from the probe flight, all first-class.
-  (1) A fresh cloud session BLUFFED "gh isn't available" from its
-  environment briefing WITHOUT PROBING, and self-corrected only
-  when made to run `command -v gh` (founder-witnessed at the 4b
-  session). Probe-don't-assume extends to a session's OWN toolset:
-  a session's beliefs about its environment are claims, not facts,
-  until a command answers.
-  (2) TELEPORT RELOCATES EXECUTION. `claude --teleport <id>
-  --print` moves a cloud session's execution to the local machine:
-  reading what already ran in the cloud is faithful, but anything
-  run AFTER the teleport runs locally — no proxy, local permission
-  gate. A probe must carry its commands in the BIRTH prompt; a
-  teleported session is a local session from then on.
-  (3) THE BIRTH CHANNEL TRUNCATES ON NESTED QUOTES — one probe
-  prompt arrived cut mid-command exactly inside a quoted `--jq`
-  expression ([#193](https://github.com/wsher0901/roam/pull/193)'s
-  "channels truncate", reproduced live with the trigger
-  identified: nested quoting, jq the specimen). Birth prompts
-  want zero nested quotes.
-  (4) A BIRTH TURN CAN NO-OP — two probe sessions received their
-  prompt (one provably complete) yet executed nothing, the first
-  turn closing "No response requested", apparently misread amid
-  the session-start hook dump; both honestly refused to fabricate
-  outputs when later asked to report. Of four birth prompts, one
-  executed. Watch the pattern; a birth prompt is not yet a
-  guaranteed command channel.
-- 2026-07-23 (the founder, ops chat, queued): THE CHRONICLE LAYER —
-  a small set of living "book" chapters ABOVE the record: each
-  tells one thread (the away surface; the lane system; the
-  information system) as ONE cohesive narrative, REWRITTEN at the
-  welds that advance it, linking down into decides and history as
-  footnotes; the primary sources stay immutable beneath. Queued
-  after the [WEB-INSTRUCTIONS](WEB-INSTRUCTIONS.md) v5 rewrite —
-  its own chat. — CLOSED 2026-07-27 by
-  [D-059](record/DECISIONS.md#d-059--2026-07--the-chronicle-layer--living-stories-above-the-frozen-record-one-story-per-item-the-ending-rule--settled-in-any-format-means-the-story-is-written-a-later-fix-is-incorporated-and-the-ending-rewritten-at-that-weld-retirement-is-a-settlement-docschronicle-one-file-per-story-indexmd-shelving-four-shelves-immutability-beneath--record-untouched-stories-link-down-as-footnotes-down-links-only--a-story-never-cites-another-storys-prose-supersedes-the-07-23-three-chapter-shape-the-ship-synthesis-at-weld-step-deferred-to-the-first-story-weld):
-  one story per ITEM supersedes the three-chapter shape — the
-  three threads survive as INDEX shelves (plus Roam); the census
-  is the D-059 bench's draft
-  [INDEX](chronicle/INDEX.md).
-- 2026-07-24 (Claude Code, the team-aware-leaving bench, found by
-  the ship §6 critic on its Opus pass): THE ONE UNCOVERED ROAD OUT
-  of a sitting. [D-056](record/DECISIONS.md#d-056--2026-07--team-aware-leaving-rituals--no-ritual-lets-a-live-agent-team-outlive-the-sitting-that-made-it-handoff-shuts-the-team-down-before-parking-anything-and-captures-its-findings-into-the-record-first-land-states-the-cockpit-cannot-lead-a-team-case-once-and-routes-the-ground-seat-to-handoff-pickup-gains-the-ghost-teammate-recovery-note-and-the--block-gains-what-the-team-had-found-closes-d-055s-deferred-gap-upholds-one-home-and-the-park-protocol)
-  covers handoff FULL, handoff QUIET, liftoff, land, go-remote and
-  Esc — every exit that RUNS A RITUAL. The SUPERSEDED-SEAT
-  self-close does not run one: a session whose board seat-stamp is
-  no longer its own must "push, write nothing"
-  ([LAWS §Parallel lanes & cloud](LAWS.md#parallel-lanes--cloud)),
-  so a superseded control tower leading a team would lose its
-  findings with no capture step anywhere. Candidate fixes to weigh:
-  one clause in
-  [handoff §1.2](skills/handoff.md#12--shut-the-team-down-full-only)
-  ("a superseded seat captures findings before self-closing — the
-  capture writes only its OWN homes, so it is not a write to
-  another seat's surface"), or an explicit carve-out in the
-  supersession rule itself. Touching supersession is its own bench;
-  recorded here rather than solved in passing.
-  CLOSED 2026-07-28, in two steps, and the steps are the record
-  of how it closed. FIRST,
-  [D-061](record/DECISIONS.md#d-061--2026-07--the-landing-doctrine-recut-to-three-scenarios--the-cockpits-standing-job-advise-on-fleet-status-and-on-each-gate-reaching-decision-execute-the-founders-rulings-from-the-phone-auto-land-when-the-fleet-empties-and-nothing-awaits-the-founder-desk-takeover-when-pickup-finds-a-live-cockpit-holding-decisions-and-the-founders-freeze-unchanged-the-tombstone-wake-rule-makes-a-superseded-cockpit-retire-by-the-full-ritual-amends-d-054s-two-mode-routing-upholds-no-solo-approval-and-the-derivation-law)
-  closed THE COCKPIT ROAD: its tombstone wake-rule turned a
-  superseded cockpit's exit into a ritual — read the board first,
-  then self-retire by the full landing ritual rather than "push,
-  write nothing". That left this line's ACTUAL case standing,
-  since a cockpit never leads a team
-  ([land §Teams](skills/land.md#teams--not-this-rituals-case-both-modes)):
-  a superseded CONTROL TOWER (ground seat) leading one still had
-  nowhere to put its findings. So the bench recorded the gap
-  rather than claiming a fix, and the founder ruled at the
-  [#238](https://github.com/wsher0901/roam/pull/238) gate. SECOND,
-  [D-062](record/DECISIONS.md#d-062--2026-07--the-wake-rule-generalized--any-superseded-seat-exits-by-its-own-closing-ritual-never-bare-a-cockpit-by-the-landing-ritual-a-ground-control-tower-by-capture-then-close-with-team-findings-captured-first-no-superseded-seat-writes-a-board-because-the-baton-has-already-moved-closes-d-056s-deferred-road-in-full-upholds-d-056-and-d-061)
-  closed THE TOWER-AND-TEAM ROAD by generalizing the wake-rule to
-  ANY superseded seat: a tower exits by capture-then-close with
-  team findings captured FIRST, and no superseded seat writes a
-  board. [LAWS](LAWS.md#parallel-lanes--cloud) now carries the
-  general rule; the road that ran no ritual no longer exists.
-- 2026-07-24 (Claude Code, the agent-teams bench): BOX PROVENANCE
-  — stamp each external master in [SETUP](SETUP.md) with
-  "last pasted: <date> · <sha>" so box currency becomes DERIVABLE
-  instead of remembered. Today's box-currency check had to be
-  driven from dates the founder recalled by hand; a stamp beside
-  each master would let any seat answer "which boxes are stale?"
-  mechanically. OFF-THEME for
-  [D-055](record/DECISIONS.md#d-055--2026-07--agent-teams--the-boundary-teams-are-for-exploration-and-review-at-a-ground-seat-lanes-remain-the-authorship-mechanism-two-risks-become-law-single-sitting-only--an-explicit-carve-out-to-d-050s-interrupt-promise--and-a-teammate-authored-diff-is-self-authored-under-no-solo-approval-the-reviewers-model-settled-by-verification-not-guess-the-founder-side-config-recorded-upholds-the-lane-law-no-solo-approval-and-one-home-gives-the-experimental-flag-its-consumer)
-  — its own micro-bench, or fold it into the next SETUP touch.
-- 2026-07-24 (the founder, at the landing-skill gate —
-  [#221](https://github.com/wsher0901/roam/pull/221)): AGENT TEAMS
-  is the next bench, and it must settle the SUBAGENT-MODEL line.
-  The boundary set at this gate:
-  [D-054](record/DECISIONS.md#d-054--2026-07--the-landing-skill--how-a-flight-ends-becomes-a-first-class-ritual-one-skill-with-two-modes-routed-by-fleet-state-retire--pause-and-transfer-the-fence-is-a-commit-so-the-resume-point-is-the-branch-tip-by-construction-wake-lock-mediated-with-its-honesty-clause-the-board-is-the-single-transfer-material-pickup-gains-the-fleet-resume-ask-and-its-cap-arithmetic-sessions-are-cattle-branches-are-the-work-charter-rule-6-becomes-a-pointer-the-effort-doctrine-moves-to-opus-5--xhigh-upholds-the-wake-lock-the-park-protocol-and-one-home-supersedes-the-opus-48-reliance-pair)'s
-  effort doctrine governs SURFACES AND SESSIONS, not subagent
-  internals — so `.claude/agents/reviewer.md` keeping
-  `model: sonnet` · `effort: high` is no contradiction and nothing
-  changed at that gate. Two things the bench must weigh together:
-  (a) a subagent definition spawned as an AGENT-TEAM TEAMMATE
-  honors its OWN `model` and `tools`, so that one line will govern
-  the ship-time critic AND any review teammate; (b) the alias
-  question, to be VERIFIED rather than guessed — `opus` may still
-  resolve to Opus 4.8, while `claude-opus-5` pins but is
-  deprecation-brittle. Data point for the same bench: the
-  `reviewer` agent-type registered and ran cleanly in-session on
-  2026-07-24 (work PC), which the 2026-07-17 defect line above
-  says it could not — the defect may be gone; confirm before
-  closing it. (Confirmed and closed 2026-07-28 — see the defect
-  line above.)
-- 2026-07-24 (the founder, the guardrail audit —
-  [D-053](record/DECISIONS.md#d-053--2026-07--guardrail-audit--the-harness-found-already-at-best-practice-against-anthropics-guidance-two-promotions-ship-the-verification-loop-as-a-copy-runnable-block-in-laws-two-stub-descriptions-sharpened-five-alternatives-rejected-with-reasons-upholds-the-routing-law-and-one-home)):
-  the four ~300-character decide-anchor links in
-  [LAWS](LAWS.md) cost context and vault readability every
-  session — a weave-rule-compatible shortening pattern (a stable
-  short anchor per D-number, or an anchor-alias convention) is a
-  future consideration, not now.
+## Open
 
-- 2026-07-27 (the founder + the external reviewer, ops chat):
-  HARNESS V2 — one bench growing the hook layer from 3 events to
-  the guard set, absorbing three open lines of this inbox at
-  triage (the 2026-07-16 PreToolUse-guard line · the [LANE]
-  session-naming half of the 07-22 four-smaller-ones line · that
-  line's notification-taxonomy item): PreToolUse guards with
-  permission-rule `if` filters; a Stop prompt-type hook as a
-  done-means self-check; SessionStart `sessionTitle` for
-  [COCKPIT]/[LANE] naming — the supported mechanism the disproven
-  prompt title line lacked; Notification matchers
-  (agent_needs_input vs agent_completed) + terminalSequence for
-  the taxonomy; TeammateIdle + SubagentStop observability, first
-  evidence the three silent teammate shutdowns at the
-  [#233](https://github.com/wsher0901/roam/pull/233) census,
-  filed as maiden-grading data; PreCompact capture before context
-  compaction. Source: the official hooks reference, fetched
-  2026-07-27.
-- 2026-07-27 (the founder + the external reviewer, ops chat):
-  KNOW-WHEN — a decide licensing every session to PROPOSE agent
-  teams and parallel lanes unprompted per the
-  [D-045](record/DECISIONS.md#d-045--2026-07--hands-doctrine-solo--subagents--agent-team--lanes--the-litmus-is-one-bench-many-hands-vs-many-benches-vs-read-only-upholds-d-020-and-d-041)
-  litmus (the founder's word remains the only trigger; spend
-  stays a founder decision), gated on grading the
-  [#233](https://github.com/wsher0901/roam/pull/233) team maiden;
-  plus adopt `.claude/rules/*.md` path-scoped conditional rules
-  as the knowledge-loading architecture for
-  [V1.S3](ROADMAP.md#v1s3--engine-core--two-families-deep)+
-  engine work — token cost falls, and the right rules load when
-  their files are touched.
-- 2026-07-27 (the founder + the external reviewer, ops chat):
-  VERIFY — the platform hooks reference (2026-07-27) lists an
-  effort level `max` above xhigh with auto-downgrade; probe
-  whether Opus 5 honors it before any touch of the
-  [D-054](record/DECISIONS.md#d-054--2026-07--the-landing-skill--how-a-flight-ends-becomes-a-first-class-ritual-one-skill-with-two-modes-routed-by-fleet-state-retire--pause-and-transfer-the-fence-is-a-commit-so-the-resume-point-is-the-branch-tip-by-construction-wake-lock-mediated-with-its-honesty-clause-the-board-is-the-single-transfer-material-pickup-gains-the-fleet-resume-ask-and-its-cap-arithmetic-sessions-are-cattle-branches-are-the-work-charter-rule-6-becomes-a-pointer-the-effort-doctrine-moves-to-opus-5--xhigh-upholds-the-wake-lock-the-park-protocol-and-one-home-supersedes-the-opus-48-reliance-pair)
-  effort doctrine.
-- 2026-07-28 (the founder + the external reviewer, ops chat):
-  THE S3.T1 PAIR — when the check contract is born
-  ([V1.S3](ROADMAP.md#v1s3--engine-core--two-families-deep) T1),
-  rule both halves by D-number in one decide. (a) THE EVAL-SET
-  GATE, filling
-  [ENGINE](ENGINE.md#12-open-register)'s OPEN-9: a ~50-trip golden
-  set with hand-checked ground truth, its calibration read before
-  [V1.S4](ROADMAP.md#v1s4--suggest) opens. (b) THE LLM-BOUNDARY
-  RULE, a new open-register slot (OPEN-10 as the next free
-  number): the LLM resolves LANGUAGE at Intake and phrases at
-  Render, and never originates a fact, a score, or a rank.
-- 2026-07-28 (the founder + the external reviewer, ops chat):
-  DECIDE TAGS — candidate convention: every new
-  [DECISIONS](record/DECISIONS.md) heading opens with `[product]`
-  or `[workshop]`, forward-only, since append-only leaves existing
-  entries untouched. Rule it at the next product decide.
-- 2026-07-28 (the founder + the external reviewer, ops chat):
-  GO-REMOTE RETIREMENT QUESTION — the founder, 2026-07-28: never
-  used; "if cloud works fine, it is superior." Decide
-  keep-as-backstop vs retire AFTER the cloud path is proven in a
-  real flight — not before, since retiring the backstop while its
-  replacement is unproven leaves nothing beneath.
-  → [go-remote](skills/go-remote.md) ·
-  [D-046](record/DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
-  (the demotion).
-- 2026-07-28 (the founder, the Web ops chat — filed by the
-  [D-063](record/DECISIONS.md#d-063--2026-07--response-doctrine-v2--web-instructions-v6--two-channels-sentences-for-the-founder-fenced-blocks-for-machines-process-is-proof-not-prose-the-chat-start-ingest-contract-the-relay-rule--origin-is-the-only-courier-codes-output-is-never-pasted-to-web-reviews-speak-in-goal-and-outcome-the-core-file-alert-the-agenda-convention-brief-renders-the-full-picture-the-master-gains-a-version-history-amends-d-052)
-  bench, its own bench after this one): RITUAL/REPORT-SHAPE SWEEP
-  — restyle every Code-side report surface to doctrine v2's two
-  channels: [ship §6](skills/ship.md#6--the-gate)'s gate report ·
+- ⏳ Restyle every Code-side report surface to doctrine v2's two
+  channels, and write in the founder's three requirements: lead
+  with whether it went well, state the exact word to carry to Web
+  and when, and call out anything that never reached origin.
+  (2026-07-28, the founder) →
+  [ship §6](skills/ship.md#6--the-gate) ·
   [pickup §5](skills/pickup.md#5--render-the-sit-down-summary-exactly-this-shape) ·
   [handoff §6](skills/handoff.md#6--close-full-only) ·
   [liftoff §7](skills/liftoff.md#7--close) ·
-  [land](skills/land.md)'s two reports · the cockpit charter's
-  rule 5 ([SETUP §cloud accounts](SETUP.md#once-and-done--cloud-accounts)).
-  THE FOUNDER'S THREE REQUIREMENTS for every Code gate or
-  completion report, to be written into each: (a) LEAD WITH
-  WHETHER IT WENT WELL OR NOT, in plain sentences — the verdict
-  before the evidence; (b) STATE THE EXACT WORD the founder
-  carries to Web ("review" / "review PR #N") AND WHEN to carry it;
-  (c) CALL OUT ANYTHING THAT NEVER REACHED ORIGIN which the
-  founder must copy-paste — the relay rule's exception class, the
-  only content Web cannot derive for itself.
+  [land](skills/land.md)
+- ⏳ Decide whether to keep go-remote as a backstop or retire it —
+  never used, and the founder judges the cloud path superior if it
+  works; rule only AFTER a real cloud flight proves that path.
+  (2026-07-28, the founder) → [go-remote](skills/go-remote.md)
+- ⏳ Open every new decide heading with `[product]` or
+  `[workshop]`, forward-only. Rule it at the next product decide.
+  (2026-07-28, the founder + the external reviewer)
+- ⏳ When the check contract is born, rule the EVAL-SET GATE by
+  D-number: a ~50-trip golden set with hand-checked ground truth,
+  its calibration read before [V1.S4](ROADMAP.md#v1s4--suggest)
+  opens. Fills OPEN-9. (2026-07-28, the founder + the external
+  reviewer) → [ENGINE](ENGINE.md#12-open-register)
+- ⏳ Rule the LLM-BOUNDARY RULE by D-number in the same decide:
+  the LLM resolves language at Intake and phrases at Render, and
+  never originates a fact, a score, or a rank. A new
+  open-register slot. (2026-07-28, the founder + the external
+  reviewer) → [ENGINE](ENGINE.md#12-open-register)
+- ⏳ Probe whether Opus 5 honours the `max` effort level the
+  platform hooks reference lists above xhigh, before any touch of
+  the effort doctrine. (2026-07-27, the founder + the external
+  reviewer) → [SETUP](SETUP.md#once-and-done--cloud-accounts)
+- ⏳ Adopt `.claude/rules/*.md` path-scoped conditional rules as
+  the knowledge-loading architecture for engine work — token cost
+  falls, and the right rules load when their files are touched.
+  (2026-07-27, the founder + the external reviewer)
+- ⏳ Licence every session to PROPOSE agent teams and parallel
+  lanes unprompted per the hands litmus, the founder's word
+  staying the only trigger. Gated on grading the first team use.
+  (2026-07-27, the founder + the external reviewer) →
+  [D-045](record/DECISIONS.md#d-045--2026-07--hands-doctrine-solo--subagents--agent-team--lanes--the-litmus-is-one-bench-many-hands-vs-many-benches-vs-read-only-upholds-d-020-and-d-041)
+- ⏳ HARNESS V2 — one bench growing the hook layer from three
+  events to the guard set: PreToolUse guards, a Stop done-means
+  self-check, SessionStart `sessionTitle` for `[COCKPIT]`/`[LANE]`
+  naming, Notification matchers for the alert taxonomy,
+  TeammateIdle + SubagentStop observability, PreCompact capture.
+  AT TRIAGE IT ABSORBS THREE LINES OF THIS INBOX, named so none
+  can vanish silently: the PreToolUse-guard line (2026-07-16),
+  the `[LANE]` naming half of the 07-22 session-naming line, and
+  the notification-taxonomy line (2026-07-22). (2026-07-27, the
+  founder + the external reviewer)
+- ⏳ Shorten the ~300-character decide-anchor links that cost
+  context and vault readability every session — a stable short
+  anchor per D-number, or an anchor-alias convention, either way
+  weave-rule-compatible. (2026-07-24, the founder) →
+  [LAWS](LAWS.md)
+- ⏳ Give [ENGINE](ENGINE.md) the right frontmatter — it reads
+  `type: spec` though it is a living consolidation. The founder's
+  word: it stays for now, resolved at the first engine bench,
+  which touches ENGINE anyway. (2026-07-23, the founder)
+- ⏳ Separate lane pings from cockpit decisions in the
+  notification taxonomy — absorbed by HARNESS V2 above at triage.
+  (2026-07-22, Claude Code)
+- ⏳ Name cloud sessions at birth with `[COCKPIT]`/`[LANE]`
+  prefixes so the phone's session list reads itself — the
+  prompt-supplied title was disproven, but SessionStart
+  `sessionTitle` is the supported mechanism; absorbed by HARNESS
+  V2 above at triage. (2026-07-22, Claude Code)
+- ⏳ Make the daily-cap arithmetic account for TRIGGER
+  REDELIVERIES — liftoff now adds API fires by hand, but a
+  redelivered webhook still burns a run nobody counted.
+  (2026-07-22, Claude Code) →
+  [liftoff §2](skills/liftoff.md#2--triage-every-open-item)
+- ⏳ Carry the external review verdict onto the record
+  automatically at self-authored gates, instead of the founder
+  pasting it. (2026-07-22, Claude Code)
+- ⏳ WATCH — community reports suggest interactive web sessions
+  lose their connectors while routine sessions keep them, which
+  would make the rescue vehicle the sturdier species and reopen
+  the list-native-beats-sturdy choice. One data point plus one
+  filed report; do not act yet. (2026-07-22, Claude Code) →
+  [D-047](record/DECISIONS.md#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law)
+- ⏳ DEFECT — `npm run count:runs` fails at the work PC's Git Bash
+  while the same script run directly succeeds; the npm wrapper's
+  PATH leaves `execFileSync("gh", …)` unable to resolve the
+  executable. Fix by resolving `gh` through the shell on win32, or
+  at least print the swallowed error. (2026-07-22, Claude Code) →
+  `scripts/count-routine-runs.mjs`
+- ⏳ Make verification commands run in the FOREGROUND with results
+  quoted from captured output — a detached background check lost
+  its exit code and aged into a false all-clear. (2026-07-19,
+  Claude Code) → [ship](skills/ship.md)
+- ⏳ WATCH — the home PC once had no local `main` branch at
+  pickup, healed by rebuilding from origin, cause unknown.
+  (2026-07-16, Claude Code)
+- ⏳ Give lanes a separate bot identity so PR comments do not post
+  as the founder's own account. (2026-07-16, Claude Code)
+- ⏳ Archive unrecognized cloud sessions on sight, as standing
+  hygiene. (2026-07-16, Claude Code)
+- ⏳ Prefer supervisor-backed background sessions over bare
+  detached spawns for local lanes. (2026-07-16, Claude Code) →
+  [parallel-lanes](skills/parallel-lanes.md#vehicles)
+- ⏳ Name Agent View in the lane vehicles list. (2026-07-16,
+  Claude Code) →
+  [parallel-lanes](skills/parallel-lanes.md#vehicles)
+- ⏳ Enforce the deny rails as PreToolUse hooks that block
+  dangerous tool calls before they run, not only as settings
+  permissions. (2026-07-16, Claude Code)
+- ⏳ Add a `check:board` CI gate machine-verifying the board's
+  glance-line numbers against ROADMAP checkbox counts — weigh
+  against the board's deliberate least-authoritative status.
+  (2026-07-16, Web) → [DASHBOARD](DASHBOARD.md)
+- ⏳ Write a helper that emits the exact GitHub heading slug for a
+  new D-number, so the heading and every link to it are born
+  matching. (2026-07-14, Claude Code)
+- ⏳ Licence or export the world-facts asset someday — revision
+  series, forecast-vs-actual calibration pairs, coverage maps.
+  Possible only because storage is licence-segmented.
+  (2026-06-12, Web) →
+  [D-015](record/DECISIONS.md#d-015--2026-06--data-asset-law-bitemporal-append-only-license-segmented)
+- ⏳ Support multi-origin trips and group preference merging —
+  friends converging from different cities, several travellers'
+  inputs merged into one plan. (2026-06-12, Web)
+- ⏳ Build a reachability globe showing how far the traveller's
+  max-travel-hours reaches; open question, heuristic distance
+  rings versus true flight-time isochrones. (2026-06-12, Web)
+- ⏳ Add `paths-ignore: docs/**` so docs-only PRs skip the full CI
+  run — BLOCKED as written: branch protection requires the
+  `checks` context, so ignoring `docs/**` would leave it
+  unreported and block every docs-only merge. Adopt only with a
+  matching protection carve-out. (2026-06-11, Claude Code;
+  blocker found 2026-07-14)
+
+## Closed
+
+The outcome ledger — one line each, newest first. A closed idea
+keeps its answer, never its narrative.
+
+- 🟢 Box currency became derivable on the MASTER side: every box
+  master now carries a version-history table, and a fresh Web chat
+  drift-checks its box against the master's version line. The
+  routine boxes still have no staleness signal of their own — the
+  founder re-saves them by hand and the board tracks the owing.
+  Asked 2026-07-24 as "stamp each master with last-pasted date +
+  sha". →
+  [D-064](record/DECISIONS.md#d-064--2026-07--the-box-master-class--the-setup-entry-contract--every-external-box-master-is-its-own-top-level-file-on-the-web-instructions-pattern-cockpit-chartermd-and-lane-workermd-extracted-verbatim-setup-compresses-to-a-replication-spec-under-the-entry-contract-what--where--values--verify--source-design-kickoff-joins-the-class-on-paper)
+  ·
+  [D-063](record/DECISIONS.md#d-063--2026-07--response-doctrine-v2--web-instructions-v6--two-channels-sentences-for-the-founder-fenced-blocks-for-machines-process-is-proof-not-prose-the-chat-start-ingest-contract-the-relay-rule--origin-is-the-only-courier-codes-output-is-never-pasted-to-web-reviews-speak-in-goal-and-outcome-the-core-file-alert-the-agenda-convention-brief-renders-the-full-picture-the-master-gains-a-version-history-amends-d-052)
+  (the drift-check)
+- 🟢 The superseded-seat exit — the one road out of a sitting that
+  ran no ritual, so a superseded tower leading a team lost its
+  findings. Closed in two steps: the cockpit road first, then
+  generalized to ANY superseded seat. →
+  [D-061](record/DECISIONS.md#d-061--2026-07--the-landing-doctrine-recut-to-three-scenarios--the-cockpits-standing-job-advise-on-fleet-status-and-on-each-gate-reaching-decision-execute-the-founders-rulings-from-the-phone-auto-land-when-the-fleet-empties-and-nothing-awaits-the-founder-desk-takeover-when-pickup-finds-a-live-cockpit-holding-decisions-and-the-founders-freeze-unchanged-the-tombstone-wake-rule-makes-a-superseded-cockpit-retire-by-the-full-ritual-amends-d-054s-two-mode-routing-upholds-no-solo-approval-and-the-derivation-law)
+  ·
+  [D-062](record/DECISIONS.md#d-062--2026-07--the-wake-rule-generalized--any-superseded-seat-exits-by-its-own-closing-ritual-never-bare-a-cockpit-by-the-landing-ritual-a-ground-control-tower-by-capture-then-close-with-team-findings-captured-first-no-superseded-seat-writes-a-board-because-the-baton-has-already-moved-closes-d-056s-deferred-road-in-full-upholds-d-056-and-d-061)
+- 🟢 The reviewer agent-type registration defect, graduated
+  2026-07-17 — closed on the founder's word after five clean
+  native runs; ship's general-purpose fallback stays the
+  documented re-open path. →
+  [the answering bench](record/history/workshop/definition/chronicle-answers.md)
+- 🟢 The chronicle layer — living stories above the frozen record;
+  one story per ITEM superseded the three-chapter shape, the three
+  threads surviving as shelves. →
+  [D-059](record/DECISIONS.md#d-059--2026-07--the-chronicle-layer--living-stories-above-the-frozen-record-one-story-per-item-the-ending-rule--settled-in-any-format-means-the-story-is-written-a-later-fix-is-incorporated-and-the-ending-rewritten-at-that-weld-retirement-is-a-settlement-docschronicle-one-file-per-story-indexmd-shelving-four-shelves-immutability-beneath--record-untouched-stories-link-down-as-footnotes-down-links-only--a-story-never-cites-another-storys-prose-supersedes-the-07-23-three-chapter-shape-the-ship-synthesis-at-weld-step-deferred-to-the-first-story-weld)
+- 🟢 The subagent-model question — settled by verification rather
+  than guess: the critic runs the `opus` alias, and teammates ride
+  the lead's model by config. →
+  [D-055](record/DECISIONS.md#d-055--2026-07--agent-teams--the-boundary-teams-are-for-exploration-and-review-at-a-ground-seat-lanes-remain-the-authorship-mechanism-two-risks-become-law-single-sitting-only--an-explicit-carve-out-to-d-050s-interrupt-promise--and-a-teammate-authored-diff-is-self-authored-under-no-solo-approval-the-reviewers-model-settled-by-verification-not-guess-the-founder-side-config-recorded-upholds-the-lane-law-no-solo-approval-and-one-home-gives-the-experimental-flag-its-consumer)
+- ⚪ Keeping the console-attach launcher as a script — DECLINED
+  (retired): the blind fire captures nothing, so there is no
+  output to read; D-051 deletes the component rather than
+  maintaining it, and names keeping-it-as-a-fallback among its
+  rejected options. Asked 2026-07-22. →
+  [D-051](record/DECISIONS.md#d-051--2026-07--self-seat-birth--liftoff-fires---cloud-blind-and-the-cockpit-seats-itself-by-its-env-derived-self-url-the-console-attach-launcher-is-retired-amends-d-047s-rung-1-mechanics-as-corrected-by-193-upholds-d-049-and-board-governs)
+- 🟢 The cockpit birth-prompt title line — DISPROVEN at the
+  2026-07-23 birth: the platform auto-titles from charter content
+  and ignored it, so the line was dropped from both homes. →
+  [#204](https://github.com/wsher0901/roam/pull/204)
+- ⚪ Birthing a list-native cockpit from a GitHub Action —
+  DECLINED (cost): the probe reached a real cloud-birth and died
+  on the org-UUID gate, and seeding account identity into CI was
+  judged too much for an uncertain payoff. The routine fire stays
+  the rescue engine. →
+  [the probe record](record/probes/cloud-birth-in-ci.md)
+- 🟢 The gh-second-path probe findings — a session bluffing about
+  its own toolset, teleport relocating execution, birth prompts
+  truncating on nested quotes, a birth turn no-opping. Not ideas;
+  they live in the record and this line is the pointer. →
+  [their story](record/history/workshop/mechanism/gh-second-path.md)
+- 🟢 The daily-cap arithmetic's API-fire blind spot — liftoff now
+  adds the fires performed this sitting to the script's count.
+  (The redelivery half stays open, above.) →
+  [liftoff §2](skills/liftoff.md#2--triage-every-open-item)
+- 🟢 Rung 1's mechanics rewritten to the console-attach shape:
+  winpty is gone from both homes, the prompt reaches `claude` as a
+  file-read argument, and the console is killed after the read. →
+  [#193](https://github.com/wsher0901/roam/pull/193)
+- 🟢 The cloud environment renamed `Default` in SETUP — the docs
+  had said "roam". →
+  [#193](https://github.com/wsher0901/roam/pull/193)
