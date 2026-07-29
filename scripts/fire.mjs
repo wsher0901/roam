@@ -30,8 +30,8 @@
 // count:runs + fires performed this sitting. Retries are NOT
 // automatic: the endpoint has no idempotency key, so a blind retry
 // could spawn a second session. On any failure this script exits
-// nonzero and says why; the manual charter paste (SETUP) is the
-// fallback.
+// nonzero and says why; the manual charter paste
+// (docs/COCKPIT-CHARTER.md) is the fallback.
 import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 

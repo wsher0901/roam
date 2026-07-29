@@ -123,9 +123,8 @@ airborne · <url> · <date>
 
 Middots, not em-dashes; the token is the first thing on the line.
 Every other home of this token
-([TEMPLATE](../memory/TEMPLATE.md)'s state table, the lane-worker
-charter master in
-[SETUP](../SETUP.md#once-and-done--cloud-accounts)) copies THIS
+([TEMPLATE](../memory/TEMPLATE.md)'s state table, the
+[lane-worker master](../LANE-WORKER.md)) copies THIS
 form — §Canary is the contract the lane's watcher actually reads,
 so it wins any disagreement.
 
@@ -194,8 +193,7 @@ never need GitHub:
 - Away, machine off (the standard posture): THE COCKPIT — the away
   surface since
   [D-046](../record/DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
-  (charter:
-  [SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts));
+  (charter: [COCKPIT-CHARTER.md](../COCKPIT-CHARTER.md));
   it inherits these mail-slot rules whole — the same sentence in
   its thread posts the reply. Fallback: the GitHub app, four taps
   — backstop. (The cloud clerk stood here until its retirement on
@@ -209,9 +207,8 @@ never need GitHub:
 - Away, machine on (backstop posture): the same sentence to the
   tethered control tower via
   the Claude app (Remote Control).
-The NOTIFICATION CHANNEL is the cockpit's turn-end report (charter
-rule 5,
-[SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts)):
+The NOTIFICATION CHANNEL is the cockpit's turn-end report
+([charter rule 5](../COCKPIT-CHARTER.md)):
 every turn-end IS the app push, carrying `BLOCKED:` comments, lane
 completions/ready-flips, and CI red on main. The clerk's watch duty
 was the ancestor of that rule — armable until 2026-07-22, verified
@@ -277,7 +274,9 @@ interim route 1:
    rejected-push rule in [§Wake-lock](#wake-lock--parking) is the
    backstop). The lane-worker routine (GitHub trigger
    `pull_request.labeled`, filtered to label `lane:cloud`) starts a
-   cloud session on that PR. Its saved prompt: the fenced master in
+   cloud session on that PR. Its saved prompt: the master in
+   [LANE-WORKER.md](../LANE-WORKER.md); the routine's wiring
+   (trigger, GitHub App, caps) stays at
    [SETUP §Once and done — cloud accounts](../SETUP.md#once-and-done--cloud-accounts).
    The GitHub push IS the notification channel; the founder's
    PR-comment reply feeds the running session
