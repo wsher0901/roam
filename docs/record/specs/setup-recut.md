@@ -81,37 +81,65 @@ reproduces the configuration with ZERO GIT ARCHAEOLOGY.
 
 ## Done means
 
-- [ ] SETUP's header carries the entry contract verbatim with
+- [x] SETUP's header carries the entry contract verbatim with
       D-064 woven; frontmatter, title and Sources intact.
-- [ ] Every entry follows WHAT · WHERE · VALUES · VERIFY ·
+- [x] Every entry follows WHAT · WHERE · VALUES · VERIFY ·
       SOURCE, keeps EVERY non-default value, and carries a VERIFY
       probe or an honest "none — UI-only".
-- [ ] No fact was deleted without a confirmed home; anything
+- [x] No fact was deleted without a confirmed home; anything
       unique that left SETUP is named in the memory with where it
       went.
-- [ ] The clerk is ONE tombstone entry; its charter text and
+- [x] The clerk is ONE tombstone entry; its charter text and
       spawn preamble survive at a named record location.
-- [ ] The dependency map + recovery rungs live in
+- [x] The dependency map + recovery rungs live in
       [HOME](../../HOME.md); SETUP keeps one pointer;
       [COCKPIT-CHARTER](../../COCKPIT-CHARTER.md)'s R3 line points
       at the new HOME anchor and its version table reads v2 with a
       changelog row.
-- [ ] Every living link into SETUP §cloud accounts whose target
+- [x] Every living link into SETUP §cloud accounts whose target
       content moved is re-pointed; the frozen record is untouched.
-- [ ] [HOME §Where information goes](../../HOME.md#where-information-goes)
+- [x] [HOME §Where information goes](../../HOME.md#where-information-goes)
       carries the box-master routing line.
-- [ ] THE ACCEPTANCE BAR holds: each entry reproduces its
+- [x] THE ACCEPTANCE BAR holds: each entry reproduces its
       configuration from SETUP alone.
-- [ ] Files touched: nothing outside the mandate's list;
+- [x] Files touched: nothing outside the mandate's list;
       DECISIONS and DASHBOARD untouched.
-- [ ] `check:links` · `check:ledger` · `check:memory` · lint ·
+- [x] `check:links` · `check:ledger` · `check:memory` · lint ·
       format · test · build green; Actions green on the pushed
       head; ship §6 critic run.
 
 ## Deviations
 
-<filled by ship>
+1. **A carve-out sentence was added beside the verbatim contract.**
+   The header text is verbatim as mandated — but it states VALUES
+   as "every non-default choice, exactly", while
+   [D-064](../DECISIONS.md#d-064--2026-07--the-box-master-class--the-setup-entry-contract--every-external-box-master-is-its-own-top-level-file-on-the-web-instructions-pattern-cockpit-chartermd-and-lane-workermd-extracted-verbatim-setup-compresses-to-a-replication-spec-under-the-entry-contract-what--where--values--verify--source-design-kickoff-joins-the-class-on-paper)
+   states the same field as "names only; never a secret value".
+   For a PUBLIC repo's config file that difference matters, so the
+   mandated text is untouched and ONE adjacent sentence restates
+   the secrets carve-out beneath it, citing D-064 and
+   [LAWS §Safety](../../LAWS.md#safety-non-negotiable). Which
+   wording governs is the founder's to settle.
+2. **[HOME](../../HOME.md)'s file catalog gained a row** for the
+   new `record/retired/` shelf. Not a compression edit; taken
+   because this same bench added a routing row for the box-master
+   class, and registering one new class while leaving the other
+   invisible is the drift the catalog exists to prevent. The
+   shelf has no README door yet, unlike `specs/` and `history/` —
+   left for the founder rather than invented here.
+3. **The five fields are applied at SECTION granularity in three
+   places**, which is narrower than Done-means #2 reads: the
+   repo-side bullets share one VERIFY and one Sources block (each
+   is a committed file, so the probe is the same command),
+   `§Staged` bullets carry stage-and-trigger rather than
+   VALUES/VERIFY (nothing is armed to verify), and most
+   `§Per machine` bullets carry no SOURCE (the machine-setup skill
+   is the section's source). The intent is met; the box's wording
+   is broader than the file.
 
 ## Open questions
 
-none at birth.
+Two, both for the founder: (1) which VALUES wording governs — the
+header's or D-064's (see deviation 1); (2) whether
+`record/retired/` should gain a README door like its sibling
+shelves.

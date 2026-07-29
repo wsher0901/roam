@@ -176,6 +176,7 @@ Sources:
 | [record/specs/](record/specs/README.md) | per-task contracts + [TEMPLATE](record/specs/TEMPLATE.md) | born at task birth when discussion opened the task; [ship](skills/ship.md) finalizes | open → shipped or superseded; never deleted |
 | [memory/](memory/README.md) | in-flight task stories in the locked format ([TEMPLATE](memory/TEMPLATE.md)) | the task's own seat — baton-holder at rituals, lanes at their four moments | lives on the task's branch; MOVES to record/history/ at ship |
 | [record/history/](record/history/README.md) | permanent shipped narratives, one per task | [ship](skills/ship.md)'s atomic weld | frozen after landing (link repairs only) |
+| [record/retired/](record/retired/clerk-charter.md) | retired ARTIFACTS kept whole — a box master or config text that is dead but still cited (RECORD, never instruction) | the bench that retires the thing, when its text lives nowhere else | frozen; never re-armed, never pasted |
 | [chronicle/](chronicle/INDEX.md) | living stories above the frozen record, one per settled item — [INDEX](chronicle/INDEX.md) is the door | the weld that settles or advances an item | incorporated, the ending rewritten in place — never a second story |
 | [skills/](skills) | ritual procedures + workshop manuals, vault-readable | founder-approved PRs + promoted gotchas | living |
 | docs/.obsidian/ | Obsidian's own workspace config | Obsidian | gitignored, never committed |

@@ -18,6 +18,13 @@ on the DASHBOARD, never here. Split by lifetime: once-and-done
 procedure for the per-machine column is the machine-setup skill —
 say "I'm on a new PC" or "apply the vault lens".
 
+ONE CARVE-OUT ON VALUES, because this repo is PUBLIC: secrets are
+recorded by NAME ONLY, never by value — the value lives in
+`.env.local` or a repository secret, and the entry names where.
+[D-064](record/DECISIONS.md#d-064--2026-07--the-box-master-class--the-setup-entry-contract--every-external-box-master-is-its-own-top-level-file-on-the-web-instructions-pattern-cockpit-chartermd-and-lane-workermd-extracted-verbatim-setup-compresses-to-a-replication-spec-under-the-entry-contract-what--where--values--verify--source-design-kickoff-joins-the-class-on-paper)
+states the field that way, and
+[LAWS §Safety](LAWS.md#safety-non-negotiable) makes it absolute.
+
 Sources:
 [machine-setup](skills/machine-setup.md)
 [DASHBOARD](DASHBOARD.md)
@@ -169,19 +176,11 @@ Sources:
   budgets it.
 
 - **Cloud clerk — RETIRED 2026-07-22**, routine deleted. Nothing
-  is armed and no ritual reaches for it. Superseded by
-  [D-046](record/DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
-  (the cockpit) and
-  [D-048](record/DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)
-  (the connector ladder). Verified record: C1–C6, N2/N3, A1/A4
-  green; the mechanisms it proved — API fire, standing watch,
-  turn-end push — live on in the cockpit.
-  The retired charter text, its spawn preamble, and the full
-  account: [the retired clerk charter](record/retired/clerk-charter.md).
-  Evidence: [cloud-clerk](record/specs/cloud-clerk.md) ·
-  [clerk-notify](record/specs/clerk-notify.md) ·
-  [clerk-autospawn](record/specs/clerk-autospawn.md) ·
-  [shakedown-audit](record/specs/shakedown-audit.md).
+  is armed and no ritual reaches for it, so there is nothing here
+  to reproduce. The charter text, the spawn preamble, the
+  supersession, the verified record and the evidence pointers all
+  live in one place:
+  [the retired clerk charter](record/retired/clerk-charter.md).
 
 - **Flight Cockpit routine** — WHERE: claude.ai/code/routines, a
   routine named "cockpit". VALUES: saved prompt = the master in
@@ -286,10 +285,11 @@ flight plan.
 ```
 
   VERIFY: none — UI-only, and whether the mobile app can create a
-  session on a repo is UNPROVEN. Test at the next drill and record
-  the answer in
-  [cockpit-resilience](record/specs/cockpit-resilience.md)'s
-  Done-means.
+  session on a repo is UNPROVEN. Test at the next drill; the
+  question was raised by
+  [cockpit-resilience](record/specs/cockpit-resilience.md), which
+  is frozen record now, so the ANSWER lands in that drill's own
+  bench and comes back here as a VERIFY line.
 
 - **Models & effort** — WHERE: `/model` and `/effort` per session;
   `.claude/agents/reviewer.md` for the critic; the routines UI for
@@ -369,7 +369,7 @@ Sources:
 ## Per machine (procedure: machine-setup skill)
 
 - **One clone per machine** — WHERE: the seat paths in
-  [machine-setup §The law](skills/machine-setup.md).
+  [machine-setup §The law](skills/machine-setup.md#the-law).
   VERIFY: exactly one clone exists on the machine.
 - **Git identity** — VALUES: personal name + GitHub noreply email;
   `core.autocrlf=true`; `git config roam.machine "<seat label>"`.

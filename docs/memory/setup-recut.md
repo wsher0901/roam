@@ -152,6 +152,60 @@ it — laws in header prose would be invisible to the one actor
 bound by them. So the fence carries them by necessity, and the
 exemplar is correct as it stands.
 
+### The critic round (ship §6, pre-flip)
+
+Seven findings on `903eb04`. The sharpest was RIGHT ABOUT THE
+PROBLEM AND WRONG ABOUT THE CAUSE, which is worth recording
+because the difference decided the repair.
+
+It read SETUP's header as a PARAPHRASE of
+[D-064](../record/DECISIONS.md#d-064--2026-07--the-box-master-class--the-setup-entry-contract--every-external-box-master-is-its-own-top-level-file-on-the-web-instructions-pattern-cockpit-chartermd-and-lane-workermd-extracted-verbatim-setup-compresses-to-a-replication-spec-under-the-entry-contract-what--where--values--verify--source-design-kickoff-joins-the-class-on-paper)
+that had dropped the secrets clause. Checked: the header is
+VERBATIM to the mandate, word for word. What the critic actually
+found is a discrepancy between two statements of the same
+contract — D-064 says VALUES means "names only; never a secret
+value"; the mandated header says "every non-default choice,
+exactly". On a PUBLIC repo's config file those are not the same
+rule, and the header alone reads as the weaker one.
+
+So the mandated text was left untouched and ONE adjacent sentence
+now carries the carve-out beneath it, citing D-064 and
+[LAWS §Safety](../LAWS.md#safety-non-negotiable). Which wording
+governs is the founder's call, not the bench's — raised at the
+gate. Nothing was ever homeless: the secrets rule is stated at
+every entry that touches one and again at §Per machine.
+
+The rest, repaired: the new `record/retired/` shelf was missing
+from [HOME](../HOME.md)'s file catalog while this same bench added
+a routing row for the box-master class — the same habit applied to
+one new class and not the other; the clerk tombstone REPEATED four
+lines of the retired file's account instead of pointing at it (the
+routing law the recut exists to enforce, breached inside the
+recut); a `machine-setup §The law` link named a section without
+its anchor; and the phone-bootstrap entry still told a future seat
+to record an answer in a spec that is now FROZEN — pre-existing,
+but it survived a pass whose whole job was auditing sentences like
+that, so it is reworded to send the answer to the drill's own
+bench.
+
+Left as a deviation rather than fixed: the five fields land at
+SECTION granularity in three places (repo-side shares one VERIFY;
+`§Staged` has nothing armed to verify; `§Per machine` shares its
+source).
+
+WHAT THE CRITIC COULD NOT CHECK: it had no shell, so the
+old-vs-new SETUP fact enumeration and the two byte-faithfulness
+checks are corroborated, not proved. It did the inverse test
+instead — a full destination grep of all 18 living pointers into
+SETUP, confirming each target's content is still there — and
+independently verified the `record/retired/` reasoning by READING
+`check-ledger.mjs`: a file under `history/` must sit in a legend
+door AND carry `pr:` frontmatter matched to a ledger line, so a
+retired artifact there would fail CI twice. Scope it could not
+confirm mechanically; the bench did: `git diff --name-only`
+returns exactly the six declared files, with DECISIONS and
+DASHBOARD untouched.
+
 ## Where to look
 
 - [the spec](../record/specs/setup-recut.md) — the contract.
