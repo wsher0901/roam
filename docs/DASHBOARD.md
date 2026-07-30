@@ -6,19 +6,30 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-07-30 · 13:52 by report-shapes · from work PC
-Control tower at the work PC · needs-you 2 · git outranks this
+Painted 2026-07-30 · 14:20 by report-shapes · from work PC
+Control tower at the work PC · needs-you 4 · git outranks this
 board. How to read it →
 [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
 
-1. 🟡 **Apply the vault lens at the HOME PC** — when you next sit
+1. 🟡 **Say "review" in the Web chat** — now. `report-shapes`
+   stands at THE GATE and is tower-authored, so the external
+   review precedes your word. (since 07-30)
+   → [PR #250](https://github.com/wsher0901/roam/pull/250)
+2. 🟡 **Re-save the cockpit routine box** — right after
+   `report-shapes` merges. The board's section rename pushed the
+   [charter](COCKPIT-CHARTER.md) to v4, and a master edit that
+   never reaches the box is silent: the next routine-fired cockpit
+   would read a deleted heading. The full text prints in the
+   shipped report. (since 07-30)
+   → [SETUP §Flight Cockpit routine](SETUP.md#staged--turns-on-when-its-stage-opens)
+3. 🟡 **Apply the vault lens at the HOME PC** — when you next sit
    there. It re-seeds that seat's Obsidian graph filter to
    `-path:record`; the work PC is done, and a per-seat act clears
    only when every seat runs it. (since 07-27)
    → [machine-setup §Vault lens](skills/machine-setup.md#vault-lens)
-2. ⚪ **Delete the dead `CLERK_` lines** from each seat's
+4. ⚪ **Delete the dead `CLERK_` lines** from each seat's
    `.env.local` — whenever convenient. They point at a routine
    deleted 07-22: inert, gitignored, never a leak. (since 07-29)
    → [the retired clerk charter](record/retired/clerk-charter.md)
@@ -26,8 +37,7 @@ board. How to read it →
 ## The baton
 
 CONTROL TOWER — work PC, since 2026-07-30 (pickup)
-Last flight: none this sitting — the floor has been ground-side
-throughout.
+Last flight: none — the floor has been ground-side this sitting.
 
 ## In flight
 
@@ -77,31 +87,10 @@ one phase per line:
 
 ## Where we are (Roam)
 
-V1 — The demo · 5/34 █████░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+V1 — The demo · 5/34 █████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 S1 · Data Definition · 2/7 ██░░░░░ (T3–T6 paused → phase 3)
 S2 · Skeleton & design · 3/5 ███░░ (T5 paused → phase 3)
 S3–S8 · queued in order · 0/22
-
-```mermaid
-flowchart LR
-  S1["S1 Data Definition<br/>2/7"]
-  S2["S2 Skeleton + design<br/>3/5"]
-  S3["S3 Engine core<br/>0/7"]
-  S4["S4 Suggest<br/>0/3"]
-  S5["S5 Plan<br/>0/3"]
-  S6["S6 Edit + revalidate<br/>0/3"]
-  S7["S7 Other families<br/>0/3"]
-  S8["S8 Demo polish<br/>0/3"]
-  S1 --> S3 --> S4 --> S5 --> S6 --> S7 --> S8
-  S2 --> S3
-  classDef done fill:#2e7d32,stroke:#1b5e20,color:#ffffff
-  classDef active fill:#1565c0,stroke:#0d47a1,color:#ffffff
-  classDef locked fill:#ef6c00,stroke:#e65100,color:#ffffff
-  classDef pending fill:#616161,stroke:#424242,color:#ffffff
-  class S1,S2 active
-  class S3 locked
-  class S4,S5,S6,S7,S8 pending
-```
 
 ## Web + Design
 

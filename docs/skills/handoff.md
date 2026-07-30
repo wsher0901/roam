@@ -97,7 +97,7 @@ running:
    watch, a background monitor) is NAMED at park —
    "watching #N for X" — written into the parked lane's memory (a
    lane-owned watch) or the board's flight-context line under
-   Sessions (a control-tower watch);
+   IN FLIGHT (a control-tower watch);
    [pickup §3](pickup.md#3--gather-git-outranks-the-board) re-arms
    every named watch it finds.
 QUIET never parks — mid-sitting lanes keep flying.
@@ -190,12 +190,27 @@ Sections, in this order:
   (BY THIS PICKUP). EACH WRITER PAINTS ITS OWN CASE and the
   wording is law:
   [liftoff §6](liftoff.md#6--ledger-handoff--fire-the-cockpit) the
-  cockpit line · [land](land.md) both no-live-seat cases ·
+  cockpit line · [land](land.md) its three no-live-seat renderings ·
   [pickup](pickup.md) the plain claim and the takeover.
 - **IN FLIGHT** — one row per live seat or lane: Who (the
   commander's bench · `<id>`, or `lane · <id>`) · For · State
   🟢/🟡/🔴 · Move. Cloud and local alike; a failed or held row
-  carries its reason in Move.
+  carries its reason in Move. TWO THINGS RIDE BENEATH THIS
+  TABLE when they exist, and nothing else does:
+  - THE FLIGHT-CONTEXT LINE — what a seat is mid-way through
+    that its rows cannot say, and any NAMED WATCH a control
+    tower owns ("watching #N for X"), written at
+    [handoff §1.5](#15--park-the-local-lanes-full-only) and
+    re-armed by
+    [pickup §3](pickup.md#3--gather-git-outranks-the-board).
+    Watches die with sessions; this line is why the record does
+    not.
+  - THE FLEET-AT-GROUND TABLE — after a MODE P landing only:
+    id · purpose · progress · exact next step · state, each cell
+    lifted FROM THE LANE'S OWN FENCE so board and memory cannot
+    disagree ([land](land.md) writes it,
+    [pickup §6](pickup.md#6--fleet-resume-on-the-founders-answer)
+    reads it).
 - **WORKING ON** — one line per active theme, and the standing
   order as its own list, ONE PHASE PER LINE.
 - **RECENT** — Completed: one line each with its PR. Issues: ✓
@@ -234,7 +249,7 @@ rule 8). Its ONE JOB is: everything is recorded, and you owe
 nothing before powering off.
 
 ```text
-CLOSED — the sitting is recorded; origin clean. <glyph>
+<glyph> CLOSED — the sitting is recorded; origin clean.
 
 Your act: nothing. <Or, if anything genuinely remains: the act ·
 where · when.>

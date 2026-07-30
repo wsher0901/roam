@@ -19,6 +19,12 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
 
 ## Open
 
+- ⏳ The Roam stage map — the S1→S8 flowchart dropped from the
+  board at [#250](https://github.com/wsher0901/roam/pull/250),
+  since WHERE WE ARE is the bars and nothing else; stage order
+  still lives in the ROADMAP headings, so decide whether the
+  picture is wanted back in ATLAS. (2026-07-30, the board diet) →
+  [ATLAS](ATLAS.md)
 - ⏳ OBSIDIAN SEAT TOGGLES — add Readable-line-length OFF +
   Strict-line-breaks ON to machine-setup's Obsidian step.
   (2026-07-29, the founder) →

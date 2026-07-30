@@ -459,7 +459,7 @@ whole?
 |---|---|---|
 | A machine dies mid-work | every pushed commit — and pushing every commit is law; the bench artifacts (branch, spec, memory, draft PR) live on origin from birth | at most the working tree's unpushed edits |
 | A session ends uncleanly on a lane branch | the session-end hook auto-commits and pushes WIP as an explicit `wip:` commit | nothing, if the network held; otherwise the commit waits locally for the next push |
-| A lane dies or a spawn fails | the pre-birthed bench; every pushed commit; the failure itself, written into the lane's memory and the lane's Sessions row (+ Needs-you mirror) — nothing is silently parked ([dispatch law](LAWS.md#workflow-non-negotiable)) | only the lane's unpushed thoughts |
+| A lane dies or a spawn fails | the pre-birthed bench; every pushed commit; the failure itself, written into the lane's memory and the lane's In-flight row (+ Needs-you mirror) — nothing is silently parked ([dispatch law](LAWS.md#workflow-non-negotiable)) | only the lane's unpushed thoughts |
 | A ritual is skipped | all git state, and therefore all status — status is read, not stored; the next [pickup](skills/pickup.md) reconciles and repaints | the day's Web/Design narrative, if FULL handoff (which reads the paste from the leaving message) never ran — that knowledge has no other carrier |
 | Weeks away | everything: the board renders where things stand, memories hold each story, pickup rebuilds the briefing from sources | nothing — at worst the board is stale until pickup heals it |
 
@@ -654,7 +654,7 @@ stub, draft PR, all verified on origin BEFORE any session exists.
 Then the canary handshake: the lane's first act is one trivial pushed
 commit (its memory Status → "claimed"); the baton-holder answers by
 writing "airborne" into that same memory — or "spawn failed → run
-locally" into memory and the lane's Sessions row (+ Needs-you mirror)
+locally" into memory and the lane's In-flight row (+ Needs-you mirror)
 if no canary arrives. A lane that sees failed/aborted, or silence past the
 timeout, self-terminates cleanly. Why this dance: the bench proves
 the world can see the task; the canary proves the lane can reach the
@@ -1938,7 +1938,7 @@ graph. Deliberately OUTSIDE the vault: the `.claude/` machinery
 stubs (CLAUDE.md, AGENTS.md, README — import shims and public front
 door), and all code. docs/.obsidian/ (the app's workspace state)
 stays gitignored. In Obsidian the founder READS; the one write
-surface is quick capture into IDEAS. The board's Shipped table is
+surface is quick capture into IDEAS. The board's Recent section is
 static markdown re-derived at every repaint — no Obsidian community
 plugin is needed anywhere; the one table-rendering plugin the board
 once leaned on is retired. Per-machine graph and bookmark tuning:

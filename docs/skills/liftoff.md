@@ -99,7 +99,7 @@ Sources:
   respawn, this overwrites the parked Status). Character-for-character:
   the lane's match is anchored and cannot see a variant.
 - Fail or timeout → write "cloud spawn failed <date> — <reason> →
-  parked" into its memory + the board's Sessions rows (+ Needs-you
+  parked" into its memory + the board's In-flight rows (+ Needs-you
   mirror) per [handoff §4](handoff.md).
 - Ineligible → write "held: needs local — <reason>" into its memory
   + those same board rows.
@@ -110,9 +110,9 @@ Sources:
 [dispatch law — LAWS §Workflow](../LAWS.md#workflow-non-negotiable)
 
 ## 6 · Ledger handoff & fire the cockpit
-Repaint DASHBOARD per [handoff §4](handoff.md) — the Sessions
-table IS the flight plan: every airborne lane with its url, every
-abort and hold with its reason in Your move / State. The
+Repaint DASHBOARD per [handoff §4](handoff.md) — IN FLIGHT IS THE
+FLIGHT PLAN: every airborne lane with its url, every abort and
+hold with its reason in Move / State. The
 cockpit's own row is written at this weld, BEFORE the fire, as
 "cockpit · fired <time> · self-seat pending" — the cockpit
 rewrites it with its real URL at its self-seat repaint
@@ -248,7 +248,7 @@ rule 8). Its ONE JOB is: the flight is airborne, and where to
 reach it.
 
 ```text
-AIRBORNE — cockpit fired (<rung> · exit <code>). <glyph>
+<glyph> AIRBORNE — cockpit fired (<rung> · exit <code>).
 N lanes airborne, M parked · self-seat pending.
 
 Your act: <greet the cockpit at <where> when its greeting push

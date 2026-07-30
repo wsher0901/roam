@@ -44,9 +44,11 @@ First, the critic
 ([D-044](../record/DECISIONS.md#d-044--2026-07--the-pre-gate-critic-goes-live--ships-gate-opens-by-invoking-the-reviewer-subagent-verdicts-advisory-riding-with-the-summary-turns-on-the-staged-reviewer-upholds-d-038-and-the-reviewer-frame)):
 invoke the reviewer subagent (`.claude/agents/reviewer.md` — frame:
 [its spec](../record/specs/reviewer-subagent.md)) on the branch's diff.
-Its structured verdict is ADVISORY and rides to the founder
-verbatim alongside the summary — a finding never halts ship by
-itself; the founder weighs it at the gate. Invocation mechanics:
+Its structured verdict is ADVISORY — a finding never halts ship by
+itself; the founder weighs it at the gate. The verdict reaches the
+founder as a FINDING COUNT in the gate report plus the written
+round on origin (next paragraph), not as a verbatim dump in the
+message. Invocation mechanics:
 run the reviewer synchronously, or instruct it in the spawn prompt
 to deliver the verdict AS A MESSAGE — a background agent's
 plain-text output never reaches the control tower; the verdict must be
@@ -69,7 +71,7 @@ THE GATE REPORT — render EXACTLY this shape
 Its ONE JOB is: ready, and the word.
 
 ```text
-THE GATE — <id> is ready. <🟢 clean | 🟡 N rulings ride the review.>
+<🟢 | 🟡> THE GATE — <id> is ready. <clean | N rulings ride the review>.
 
 Your act, now: in the Web chat, say "review."
 <one line: what the review brings back.>
@@ -129,7 +131,7 @@ THE SHIPPED REPORT — render EXACTLY this shape
 Its ONE JOB is: confirmation, what you owe, what is next.
 
 ```text
-SHIPPED — <id> merged; origin clean. <glyph>
+<glyph> SHIPPED — <id> merged; origin clean.
 
 Needs you — <N | nothing>:
 <each: the act · where it happens · when — one line>
@@ -145,7 +147,8 @@ first:
 ```text
 🔴 BLOCKED — <one line: what stopped it>.
 
-Your act: <the exact word | nothing — the fix is mine>.
+Your act: <the exact word · where you type it · when | nothing —
+the fix is mine>.
 Then: <what follows>. A new head voids the review verdict —
 after my push, say "review" again.
 ```

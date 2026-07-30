@@ -1,7 +1,7 @@
 ---
 type: memory
 id: report-shapes
-updated: 2026-07-30 13:58 · ship · work PC
+updated: 2026-07-30 14:30 · ship · work PC
 ---
 # report-shapes — five slots, one job per surface
 
@@ -13,7 +13,8 @@ fenced templates, the board writers are aligned to the mandated
 baton vocabulary, the board is migrated to the new sections, the
 anchor sweep is clean, and the IDEAS line this bench cashes is
 closed 🟢. THE STANDING DUTY FOUND ONE REAL GAP and it is fixed
-(below). Full CI mirror green.
+(below); the critic's twelve findings are repaired, including two
+blocking ones (below). Full CI mirror green.
 
 ## What this task is
 
@@ -130,13 +131,82 @@ repo's history, and the next decide pays it again.
 - **[DASHBOARD](../DASHBOARD.md)** — the one-time migration
   repaint.
 - **[IDEAS](../IDEAS.md)** — the sweep line closed 🟢 citing this
-  PR; the Obsidian seat-toggles line appended. 30 open, 13 closed.
+  PR; the Obsidian seat-toggles line appended, and the dropped
+  stage map parked (below). 31 open, 13 closed.
 - **[DECISIONS](../record/DECISIONS.md)** — D-067 appended.
+- **[COCKPIT-CHARTER](../COCKPIT-CHARTER.md)** — v4, forced by the
+  rename (below).
+- **[recall](../skills/recall.md)** ·
+  **[parallel-lanes](../skills/parallel-lanes.md)** ·
+  **[the memory TEMPLATE](../memory/TEMPLATE.md)** — each addressed
+  the board by a retired section name; swept.
 
 The anchor sweep found exactly one live casualty: HOME's
 start-here row pointed at the board's old `#shipped-…` heading,
 which the migration retires. `check:links` went red before the fix
 and green after — the proof is mechanical.
+
+## The critic round
+
+Twelve findings, two blocking. Repaired:
+
+- **BLOCKING — a named watch had lost its board home.** The board
+  spec's IN FLIGHT section is the successor to Sessions, but the
+  flight-context line and the fleet-at-ground table had been left
+  homeless by the rewrite, orphaning
+  [handoff §1.5](../skills/handoff.md#15--park-the-local-lanes-full-only)'s
+  watch-duty inheritance. Both now ride explicitly beneath the
+  In-flight table, and nothing else does.
+- **BLOCKING — the pointer sweep missed sites, again.** Three
+  files still said "under Sessions". THE LESSON, RECORDED AT
+  [#246](https://github.com/wsher0901/roam/pull/246) AND REPEATED
+  HERE ANYWAY: grep the DESTINATION (`Sessions`, `Shipped`), never
+  the phrases you predict. Worse, my first re-sweep reported CLEAN
+  because it was still the wrong grep — a clean result from a bad
+  probe is more dangerous than a red one. The final sweep is by
+  bare section name, and its three legitimate survivors (ordinary
+  sentence-initial "Sessions" in SETUP and liftoff, the charter's
+  own version-history row naming the rename) were read one by one
+  rather than pattern-excluded.
+- **The glyph led in one template of six.** Rule 7 says the glyph
+  LEADS; five templates trailed it. All six now open with it.
+- **YOUR ACT lacked its surface** in ship's failure branch. Rule 8
+  requires exact word · which surface · when.
+- **Templates that contradicted their own prose.** ship §6 still
+  said the critic verdict "rides to the founder verbatim alongside
+  the summary" — the very clause the standing duty had just
+  replaced with a finding count plus the written round. land §(f)
+  said the landing report "ends with the ARCHIVE LIST" while §(e)'s
+  EXACTLY-this-shape template had no such slot; the list is
+  off-origin by nature (session urls exist nowhere else), so it now
+  rides in the OFF-ORIGIN slot.
+- **pickup's template had no OFF-ORIGIN slot** — yet §2's stranded
+  micro-PR, the ghost-teammate case, and the session-start hook
+  lines are exactly session-only content. Slot added, conditional.
+- **The board broke four of its own new rules.** WHERE WE ARE says
+  "the bars and nothing else" and carried a stage flowchart; a seat
+  owed the founder a move (the gate) with no Needs-you mirror while
+  the glance read 2; the V1 bar rendered 33 segments for 34 tasks;
+  and THE BATON used a no-prior-flight line no writer defined. The
+  flowchart is dropped and parked in [IDEAS](../IDEAS.md) — position
+  renders once, and the dependency order it drew still lives in the
+  ROADMAP headings. The no-flight line is now law in
+  [pickup §3](../skills/pickup.md#3--gather-git-outranks-the-board),
+  because a silent BATON section reads as an unpainted one.
+- **[D-067](../record/DECISIONS.md)'s Affects** named neither the
+  section rename nor the files it swept.
+
+### The charter had to go to v4 — a scope deviation
+
+The spec put the box-masters out of scope. But renaming the board's
+sections broke
+[the cockpit charter](../COCKPIT-CHARTER.md)'s rule 1, which told
+an arriving cockpit to read its own seat from a section that no
+longer exists — unfollowable at the very next flight. Fixing it
+means a master edit and a version bump, which RE-OPENS the
+routine-box re-save the founder had just confirmed cleared. Taken
+anyway, and surfaced at the gate: a master that points at a deleted
+heading is worse than a re-save.
 
 ## Where to look
 

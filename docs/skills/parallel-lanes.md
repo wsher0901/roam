@@ -155,7 +155,7 @@ rule ([§Wake-lock](#wake-lock--parking)) saved the flight.
   never a paraphrase and never a decorated variant; the lane cannot
   see a near-miss. Push. No canary within ~10 minutes (cloud) or ~2
   (local): write "spawn failed <date> — <reason> → run locally" into
-  the memory and record the abort on the board — the lane's Sessions
+  the memory and record the abort on the board — the lane's In-flight
   row + the Needs-you mirror ([handoff §4](handoff.md)), then stand
   the lane down.
 

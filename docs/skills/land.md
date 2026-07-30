@@ -120,7 +120,7 @@ still airborne, which fences them for the desk to resume.
 
 **THE ONE CARVE-OUT, and it is not optional: A SUPERSEDED
 COCKPIT WRITES NO BOARD.** Both modes normally end in a board
-micro-PR — MODE R clears the Sessions row, MODE P ships the
+micro-PR — MODE R clears the In-flight row, MODE P ships the
 fleet-at-ground table. Here the DESK already holds the baton and
 has already stamped the takeover, so those writes would be a
 second seat repainting main's bookkeeping, and MODE R's cleared
@@ -200,8 +200,9 @@ they live here now, in one home.
 
 1. **Final board repaint** per
    [handoff §4](handoff.md#4--repaint-dashboard-the-board-spec--single-source)
-   — Shipped rolled to the newest history entries, and this
-   cockpit's Sessions row CLEARED (no live cockpit remains).
+   — RECENT rolled to the newest history entries, and this
+   cockpit's In-flight row CLEARED and THE BATON repainted (no
+   live cockpit remains).
    Shipped as a micro-PR exactly as
    [handoff §5](handoff.md#5--ship-the-note) ships its note:
    chore branch from freshly pulled main, board-only commit,
@@ -227,8 +228,8 @@ they live here now, in one home.
    owed.
 
    ```text
-   LANDED — <via AUTO-LAND — fleet empty, nothing awaited you |
-   via MANUAL-LAND>. <glyph> Origin clean.
+   <glyph> LANDED — <via AUTO-LAND — fleet empty, nothing awaited
+   you | via MANUAL-LAND>. Origin clean.
 
    Your act: nothing. <Or: the act · where · when.>
 
@@ -342,7 +343,7 @@ identical mechanism.
 ### (d) THE SINGLE MATERIAL — the board
 
 One artifact is passed down, and it is the board's flight context
-under Sessions
+under IN FLIGHT
 ([handoff §4](handoff.md#4--repaint-dashboard-the-board-spec--single-source)
 stays the board's single definition; this is a rendering of the
 flight-context prose it already licenses, not a new section). The
@@ -353,7 +354,7 @@ FLEET-AT-GROUND table — one row per lane:
 
 `progress` and `exact next step` are lifted FROM EACH LANE'S
 FENCE, so the board and the memories cannot disagree. `state`
-reads `held`. The Sessions row for the flight itself reads:
+reads `held`. THE BATON section for the flight itself reads:
 
 ```text
 no live cockpit — grounded for local pickup <date>
@@ -373,10 +374,13 @@ rule 8). Its ONE JOB is: the fleet is frozen and findable, and
 resuming it is one word at any desk.
 
 ```text
-GROUNDED — N lanes fenced, all pushed. <glyph>
+<glyph> GROUNDED — N lanes fenced, all pushed.
 
 Your act: nothing now. At any desk, pickup asks and "continue"
 redeploys the fleet.
+
+OFF-ORIGIN — the archive list, these sessions are done:
+<one line per fenced lane's session url, plus this cockpit's own>
 
 This flight: <one line>. Each lane's exact next step is in its
 fence and on the board's fleet-at-ground table.
@@ -397,10 +401,11 @@ first, report second. The last line is exact.
 
 ### (f) Session disposal
 
-SESSIONS ARE CATTLE; BRANCHES ARE THE WORK. The landing report
-ends with the ARCHIVE LIST — every fenced lane's session URL plus
-the cockpit's own — and that list comes AFTER the fences are
-pushed, never before (the resurrection rule: a session that is
+SESSIONS ARE CATTLE; BRANCHES ARE THE WORK. The ARCHIVE LIST —
+every fenced lane's session url plus the cockpit's own — rides in
+the landing report's OFF-ORIGIN slot ([§(e)](#e-the-landing-report):
+those urls exist nowhere on origin), and it is rendered AFTER the
+fences are pushed, never before (the resurrection rule: a session that is
 archived while it still has unpushed intent can wake and write).
 
 Old sessions are NEVER revived. Resume births FRESH workers on the

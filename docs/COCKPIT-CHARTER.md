@@ -41,7 +41,7 @@ outranks it.
    board governs — say so plainly and proceed from the board.
    Answer every process question by derivation from the clone at
    answer time, never from session memory.
-   SELF-SEAT: if the board's Sessions row reads "self-seat
+   SELF-SEAT: if the board's BATON section reads "self-seat
    pending" or names no live cockpit, repaint it seating
    yourself (a DASHBOARD-only micro-PR), your url derived from
    the session env:
@@ -113,6 +113,7 @@ outranks it.
 | --- | --- | --- | --- |
 | v1 | 2026-07-29 | [#242](https://github.com/wsher0901/roam/pull/242) | extracted verbatim from SETUP §cloud accounts under [D-064](record/DECISIONS.md#d-064--2026-07--the-box-master-class--the-setup-entry-contract--every-external-box-master-is-its-own-top-level-file-on-the-web-instructions-pattern-cockpit-chartermd-and-lane-workermd-extracted-verbatim-setup-compresses-to-a-replication-spec-under-the-entry-contract-what--where--values--verify--source-design-kickoff-joins-the-class-on-paper) (prior evolution: SETUP's git history) |
 | v2 | 2026-07-29 | [#244](https://github.com/wsher0901/roam/pull/244) | R3's dependency-map pointer follows the map to [HOME](HOME.md#the-cockpits-api-paths--recovery-ladder); charter text otherwise unchanged |
+| v4 | 2026-07-30 | [#250](https://github.com/wsher0901/roam/pull/250) | rule 1's self-seat pointer follows the board's section rename — Sessions → [THE BATON](DASHBOARD.md#the-baton) ([D-067](record/DECISIONS.md#d-067--2026-07--the-report-skeleton--the-board-diet--every-founder-facing-report-ritual-or-not-renders-five-slots-in-order-verdict-glyph--state--finding-count--your-act-exact-word-or-paste--surface--when-or-nothing--off-origin-content-existing-only-in-the-session-else-omitted--one-breath-context--a-pointer-to-the-record-never-a-retelling-one-job-per-surface--the-gate-report-carries-ready--the-word-the-external-review-carries-decisions-the-shipped-report-carries-confirmation--needs-you--next-push-first-report-second--beyond-the-founders-acts-and-off-origin-content-a-report-may-contain-nothing-not-already-on-origin-the-dashboard-is-the-standing-report-and-diets-to-the-same-principle-state-and-acts-only-stories-live-in-the-record-position-lives-once-the-bars-needs-you-carries-the-urgency-ladder-the-baton-renders-state-never-doctrine-with-the-cause-vocabulary-auto-land--manual-land--desk-takeover-by-this-pickup-working-on-splits-from-where-we-are-and-the-sitting-narrative--essay-ledger-rows--review-receipts-die-into-the-record)); charter text otherwise unchanged |
 | v3 | 2026-07-29 | [#246](https://github.com/wsher0901/roam/pull/246) | [D-065](record/DECISIONS.md#d-065--2026-07--the-box-master-diet--a-box-master-carries-standing-rules-invariants-and-pointers-procedures-live-in-their-repo-homes-and-are-derived-at-need-values-live-in-setup-provenance-labels-do-not-ride-boxes-the-session-that-needs-a-decisions-text-greps-the-clone-the-cockpit-charter-goes-v3-on-the-principle-the-connector-ladder-moves-to-home-upholds-d-064-amends-the-charters-d-061d-048-embeddings-by-relocation-not-repeal) — slim recut: rules + invariants + pointers; ladder to HOME; labels dropped |
 
 Sources:

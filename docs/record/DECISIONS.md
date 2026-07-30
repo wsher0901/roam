@@ -3190,7 +3190,15 @@ work-report turn-end at rule 8) ·
 · [land](../skills/land.md) (each ritual's founder-facing report
 rewritten to a fenced render-exactly-this template, with the board
 writers aligned to the baton case renderings) ·
-[DASHBOARD](../DASHBOARD.md) (the one-time migration repaint) ·
-[IDEAS](../IDEAS.md) (the sweep line closes; one line appended) ·
+[DASHBOARD](../DASHBOARD.md) (the one-time migration repaint;
+the stage flowchart drops, since position renders once) ·
+[IDEAS](../IDEAS.md) (the sweep line closes; two lines appended) ·
+THE SECTION RENAME RIPPLE — Sessions → THE BATON + IN FLIGHT,
+Shipped → RECENT — swept through
+[COCKPIT-CHARTER](../COCKPIT-CHARTER.md) (v4: rule 1's self-seat
+pointer), [recall](../skills/recall.md),
+[parallel-lanes](../skills/parallel-lanes.md), and
+[the memory TEMPLATE](../memory/TEMPLATE.md), each of which
+addressed the board by its old section names ·
 [the spec](specs/report-shapes.md) + its memory (in flight on the
 bench; moves to history at the weld) · this entry.

@@ -96,7 +96,10 @@ CONTROL TOWER — <seat>, since <t> (pickup)
 
 with a last-flight line preserving its CAUSE: `Last flight:
 LANDED <t> via AUTO-LAND — clean` · or `via MANUAL-LAND` (adding
-` · N lanes frozen → fleet-resume` when it froze work).
+` · N lanes frozen → fleet-resume` when it froze work). When
+nothing has flown, the line still renders — `Last flight: none —
+the floor has been ground-side this sitting` — because a silent
+BATON section reads as an unpainted one.
 
 On a DESK TAKEOVER
 ([§6](#the-desk-takeover--a-live-cockpit-holding-decisions)):
@@ -133,7 +136,7 @@ shape below is the founder's status template.
   "⏸ INTERRUPTED: <one line> — continue?" — before anything else
   renders.
 - FLEET RESUME, second (the ⏸ lead keeps priority): whenever the
-  board shows a GROUNDED FLEET — a Sessions row reading "no live
+  board shows a GROUNDED FLEET — a BATON line reading "no live
   cockpit — grounded for local pickup <date>", written by
   [land](land.md)'s MODE P — render one row PER LANE straight from
   the board's fleet-at-ground table (id · purpose · progress ·
@@ -169,11 +172,20 @@ shape below is the founder's status template.
   Working on: <the bench this sitting resumes, exact next act —
   or what the board says is next>.
 
-  Your act, if you want it now: <the single word or step |
-  nothing — say the word and I start>.
+  Your act, if you want it now: <the single word or step · where
+  you say it · when | nothing — say the word and I start>.
+
+  [OFF-ORIGIN — what only this session can tell you:
+  <the stranded micro-PR merged by §2 · ghost teammates and the
+  offer of fresh ones · any session-start hook line>]
 
   Shipped lately: <one line> → the ledger.
   ```
+
+  The OFF-ORIGIN block is OMITTED ENTIRELY when nothing qualifies
+  — its presence is the signal. §2's self-heal and §3's hook
+  relay have no home on origin, so they ride HERE or they are
+  lost.
 
   The floor state, the counts and Needs-you are DERIVED from the
   board and git at render time, never recalled. Self-check before
@@ -217,8 +229,8 @@ seats cannot both hold the baton, so the desk takes it:
    this desk, each one carrying the cockpit's own advice — read
    from its PR comments and the board's flight context, never
    re-invented. The founder answers them here.
-2. **WRITE COCKPIT SUPERSEDED** to the board — the Sessions row
-   for that flight, per the board spec
+2. **WRITE COCKPIT SUPERSEDED** to the board — THE BATON section,
+   per the board spec
    ([handoff §4](handoff.md#4--repaint-dashboard-the-board-spec--single-source)),
    in this exact shape so the old cockpit can recognize it:
 
