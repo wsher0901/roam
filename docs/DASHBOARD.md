@@ -6,29 +6,17 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-07-30 · 15:35 by ship's tail · from work PC
-Control tower at the work PC · needs-you 3 · git outranks this
+Painted 2026-07-30 · 15:46 by a micro repaint · from work PC
+Control tower at the work PC · needs-you 0 · git outranks this
 board. How to read it →
 [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
 
-1. 🔴 **Re-save the cockpit routine box at v4** — before the next
-   cloud flight. The board's section rename pushed the
-   [charter](COCKPIT-CHARTER.md) to v4, and a master edit that
-   never reaches the box is silent: a routine-fired cockpit would
-   read a deleted heading. The full text printed in the shipped
-   report; the file is the source. (since 07-30)
-   → [SETUP §Flight Cockpit routine](SETUP.md#once-and-done--cloud-accounts)
-2. 🟡 **Apply the vault lens at the HOME PC** — when you next sit
-   there. It re-seeds that seat's Obsidian graph filter to
-   `-path:record`; the work PC is done, and a per-seat act clears
-   only when every seat runs it. (since 07-27)
-   → [machine-setup §Vault lens](skills/machine-setup.md#vault-lens)
-3. ⚪ **Delete the dead `CLERK_` lines** from each seat's
-   `.env.local` — whenever convenient. They point at a routine
-   deleted 07-22: inert, gitignored, never a leak. (since 07-29)
-   → [the retired clerk charter](record/retired/clerk-charter.md)
+Nothing — the queue is clear. All three standing acts were
+confirmed done on 2026-07-30: the cockpit routine box re-saved at
+v4, the vault lens applied at the HOME PC (every seat now done),
+and the dead `CLERK_` lines deleted from each seat's `.env.local`.
 
 ## The baton
 
@@ -102,4 +90,5 @@ S3–S8 · queued in order · 0/22
 
 The first-story shakedown flight — phase 1's second half; it
 proves [land](skills/land.md) and the blind cockpit birth, and it
-is the first flight that can end by itself.
+is the first flight that can end by itself. Its precondition is
+met: the routine box now carries the v4 charter.

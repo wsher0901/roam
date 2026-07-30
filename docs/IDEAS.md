@@ -19,6 +19,10 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
 
 ## Open
 
+- ⏳ CHARTER VERSION-TABLE ORDER — the v4 row sits above v3 in
+  the [cockpit charter](COCKPIT-CHARTER.md)'s history table;
+  straighten it at the charter's next natural touch.
+  (2026-07-30, the external review)
 - ⏳ The Roam stage map — the S1→S8 flowchart dropped from the
   board at [#250](https://github.com/wsher0901/roam/pull/250),
   since WHERE WE ARE is the bars and nothing else; stage order
