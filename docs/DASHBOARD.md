@@ -6,7 +6,7 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-07-30 · 14:20 by report-shapes · from work PC
+Painted 2026-07-30 · 14:47 by report-shapes · from work PC
 Control tower at the work PC · needs-you 4 · git outranks this
 board. How to read it →
 [HOME §Reading the board](HOME.md#reading-the-board)
@@ -23,7 +23,7 @@ board. How to read it →
    never reaches the box is silent: the next routine-fired cockpit
    would read a deleted heading. The full text prints in the
    shipped report. (since 07-30)
-   → [SETUP §Flight Cockpit routine](SETUP.md#staged--turns-on-when-its-stage-opens)
+   → [SETUP §Flight Cockpit routine](SETUP.md#once-and-done--cloud-accounts)
 3. 🟡 **Apply the vault lens at the HOME PC** — when you next sit
    there. It re-seeds that seat's Obsidian graph filter to
    `-path:record`; the work PC is done, and a per-seat act clears
@@ -94,9 +94,10 @@ S3–S8 · queued in order · 0/22
 
 ## Web + Design
 
-- (Web) "Ops — docs audit" — the sitting's ops chat; carries the
-  external review of each bench. → next: review this bench when
-  you say the word.
+- (Web) "GitHub workflow protocol and web instructions setup" —
+  the sitting's ops chat; carries the external review of each
+  bench. → next: re-review this bench's new tip when you say the
+  word.
 
 ## Next
 

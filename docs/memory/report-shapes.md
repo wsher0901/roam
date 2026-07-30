@@ -1,7 +1,7 @@
 ---
 type: memory
 id: report-shapes
-updated: 2026-07-30 14:30 · ship · work PC
+updated: 2026-07-30 14:47 · ship · work PC
 ---
 # report-shapes — five slots, one job per surface
 
@@ -32,9 +32,10 @@ same principle, because it is the standing report. Contract:
   [no-solo-approval](../LAWS.md#workflow-non-negotiable) requires
   an external Web review before the founder's word at THE GATE. DO
   NOT MERGE.
-- **One founder-confirmable at the gate:** the exact title of the
-  current Web docs-audit chat, which the board's Web row must
-  carry verbatim from the sidebar.
+- ~~One founder-confirmable at the gate: the Web chat title.~~
+  RESOLVED at the external review, 2026-07-30 — the founder
+  confirmed it as "GitHub workflow protocol and web instructions
+  setup", and the board's Web row now carries it verbatim.
 
 ## Left / idle
 
@@ -195,6 +196,30 @@ Twelve findings, two blocking. Repaired:
   because a silent BATON section reads as an unpainted one.
 - **[D-067](../record/DECISIONS.md)'s Affects** named neither the
   section rename nor the files it swept.
+
+### The review round — two repairs the critic could not reach
+
+The external review returned two, both on the board, both landed
+on the founder's word:
+
+- **THE WEB ROW'S TITLE WAS A GUESS.** It read "Ops — docs audit",
+  which is what the chat is ABOUT, not what it is CALLED. The
+  board spec requires the VERBATIM sidebar title, and only the
+  founder can read that sidebar — which is exactly why the spec
+  carried it as a founder-confirmable from birth. Confirmed
+  2026-07-30 as "GitHub workflow protocol and web instructions
+  setup"; the open question closes.
+- **THE RE-SAVE ITEM POINTED AT THE WRONG SETUP SECTION.** Its
+  arrow targeted §Staged, while the Flight Cockpit routine's entry
+  actually lives under §Once and done — cloud accounts. THE
+  LESSON, AND IT IS A NEW ONE: `check:links` proves an anchor
+  EXISTS, never that it is the RIGHT anchor. Both headings are
+  real, so the gate stayed green while the founder would have
+  landed a screen away from the entry. A destination-grep catches
+  a DELETED heading; nothing mechanical catches a plausible wrong
+  one — only reading the target does. This is the same family as
+  the rename ripple above: the tooling verifies form, and meaning
+  is still mine to check.
 
 ### The charter had to go to v4 — a scope deviation
 
