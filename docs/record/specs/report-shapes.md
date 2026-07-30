@@ -2,12 +2,12 @@
 type: spec
 id: report-shapes
 title: The report skeleton + the board diet (D-067)
-status: open
+status: shipped
 stage: workshop
 branch: docs/report-shapes
 pr: 250
 opened: 2026-07-30
-shipped: —
+shipped: 2026-07-30
 ---
 
 # report-shapes — five slots, one job per surface
