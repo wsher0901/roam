@@ -97,7 +97,7 @@ running:
    watch, a background monitor) is NAMED at park —
    "watching #N for X" — written into the parked lane's memory (a
    lane-owned watch) or the board's flight-context line under
-   Sessions (a control-tower watch);
+   IN FLIGHT (a control-tower watch);
    [pickup §3](pickup.md#3--gather-git-outranks-the-board) re-arms
    every named watch it finds.
 QUIET never parks — mid-sitting lanes keep flying.
@@ -155,59 +155,79 @@ Sources:
 Regenerate wholesale from sources — ROADMAP checkboxes, every
 active branch's memory + PR state, history/** frontmatter, the
 founder's step-2 paste. This section IS the board's definition;
-pickup and liftoff render by pointing here.
+pickup, liftoff, land and ship's tail render by pointing here.
 
-Header: stamp (date · time · ritual · seat) (stamp values are read
-from the shell clock, never typed) · the glance line
-("V1 a/b · S1 a/b · S2 a/b · sessions: N main · M parallel
-(K needs you) · needs-you N") · one pointer line "How to read this
-board → [HOME §Reading the board](../HOME.md#reading-the-board)".
+THE BOARD IS THE STANDING REPORT, so it obeys the report skeleton
+([HOME §Response doctrine](../HOME.md#response-doctrine), rule 8;
+[D-067](../record/DECISIONS.md#d-067--2026-07--the-report-skeleton--the-board-diet--every-founder-facing-report-ritual-or-not-renders-five-slots-in-order-verdict-glyph--state--finding-count--your-act-exact-word-or-paste--surface--when-or-nothing--off-origin-content-existing-only-in-the-session-else-omitted--one-breath-context--a-pointer-to-the-record-never-a-retelling-one-job-per-surface--the-gate-report-carries-ready--the-word-the-external-review-carries-decisions-the-shipped-report-carries-confirmation--needs-you--next-push-first-report-second--beyond-the-founders-acts-and-off-origin-content-a-report-may-contain-nothing-not-already-on-origin-the-dashboard-is-the-standing-report-and-diets-to-the-same-principle-state-and-acts-only-stories-live-in-the-record-position-lives-once-the-bars-needs-you-carries-the-urgency-ladder-the-baton-renders-state-never-doctrine-with-the-cause-vocabulary-auto-land--manual-land--desk-takeover-by-this-pickup-working-on-splits-from-where-we-are-and-the-sitting-narrative--essay-ledger-rows--review-receipts-die-into-the-record)):
+STATE AND ACTS ONLY. No sitting narrative, no essay-length rows,
+no review receipts — those live in the record, and the board
+points. Counts and positions are computed at render time, never
+carried.
+
+**The painted line + glance**, stamp values read from the shell
+clock, never typed:
+
+```text
+Painted <date> · <time> by <ritual> · from <seat>
+<flight/seat one-liner> · needs-you <N> · git outranks this board
+```
 
 Sections, in this order:
-- Needs you — numbered. Each item: one plain sentence a tired
-  founder parses at a glance, glyph-led, ending "(since <MM-DD>)";
-  below it one indented "→" line carrying every link (the
-  receipts). Invariants: any 🔴 anywhere on the board also appears
-  here; whenever any session's Your-move is non-empty, one
-  aggregated line mirrors here; a parked lane whose `BLOCKED:`
-  question is still unanswered gets its own line —
-  "lane #N awaits your reply" — so the owed reply survives the
-  sitting. An item whose completion happens
-  outside the repo (UI setup, account config) cannot be derived by
-  rituals: it clears on the founder's word at any ritual, and the
-  repaint drops it then.
-- Sessions — the single home for EVERY lane row, cloud and local
-  alike (airborne · blocked · parked · failed · held), a failed or
-  held row carrying its reason in Your move — the Needs-you mirror
-  invariant then covers every 🔴/failed row. ONE table for every
-  live session, under the plain
-  header "## Sessions" (counts live in the glance line — the
-  header must keep a stable anchor). Columns: Session (main · control tower / local parallel /
-  cloud — rows sorted in that order; during an away flight the
-  cockpit's own row reads main · cockpit) · Task (linked to its roadmap
-  line or memory) · State (glyph + Status-vocabulary word; for
-  main, append "· a/b" micro count) · Last push (age) · Your move
-  (the founder-action, or —). Below the table, one "↳ main micro:"
-  line: the main task's sub-items as glyphs — derived from its
-  spec's Done-means when a spec exists, else its memory's
-  Left/idle.
-- You are here — the version bar, then one bar per open stage,
-  each ending → its current task + glyph.
-- Stage map — the mermaid dependency graph, counts recomputed from
-  ROADMAP checkboxes; no legend on the board (it lives in HOME).
-- Claude Web + Design discussion — one line per open chat or
-  errand: the VERBATIM chat title first, bold in quotes, then
-  (Web|Design), the one-liner, "→ next: <step>".
-- Shipped — table of the ~10 newest history/** entries by
-  frontmatter; When renders "MM-DD HH:MM" when frontmatter carries
-  time, bare date for legacy stories; the header links
-  [the ledger](../record/history/README.md#the-ledger).
 
-Counts are computed at render time, never carried.
+- **NEEDS YOU** — the action queue on an URGENCY LADDER, numbered:
+  🔴 blocking now · 🟡 needed, carrying its timing word · ⚪
+  whenever. Each item is ONE act — what · where it happens · when
+  — ending "(since <MM-DD>)", with an indented "→" line carrying
+  the links. Invariants: any 🔴 anywhere on the board also appears
+  here; whenever a seat or lane owes the founder a move, one line
+  mirrors here; a parked lane whose `BLOCKED:` question is still
+  unanswered gets its own line. An item completed OUTSIDE the repo
+  (UI setup, a box paste) cannot be derived — it clears on the
+  founder's word at any ritual, and the repaint drops it then.
+- **THE BATON** — who holds it, as STATE never doctrine, in the
+  one cause vocabulary: AUTO-LAND · MANUAL-LAND · DESK TAKEOVER
+  (BY THIS PICKUP). EACH WRITER PAINTS ITS OWN CASE and the
+  wording is law:
+  [liftoff §6](liftoff.md#6--ledger-handoff--fire-the-cockpit) the
+  cockpit line · [land](land.md) its three no-live-seat renderings ·
+  [pickup](pickup.md) the plain claim and the takeover.
+- **IN FLIGHT** — one row per live seat or lane: Who (the
+  commander's bench · `<id>`, or `lane · <id>`) · For · State
+  🟢/🟡/🔴 · Move. Cloud and local alike; a failed or held row
+  carries its reason in Move. TWO THINGS RIDE BENEATH THIS
+  TABLE when they exist, and nothing else does:
+  - THE FLIGHT-CONTEXT LINE — what a seat is mid-way through
+    that its rows cannot say, and any NAMED WATCH a control
+    tower owns ("watching #N for X"), written at
+    [handoff §1.5](#15--park-the-local-lanes-full-only) and
+    re-armed by
+    [pickup §3](pickup.md#3--gather-git-outranks-the-board).
+    Watches die with sessions; this line is why the record does
+    not.
+  - THE FLEET-AT-GROUND TABLE — after a MODE P landing only:
+    id · purpose · progress · exact next step · state, each cell
+    lifted FROM THE LANE'S OWN FENCE so board and memory cannot
+    disagree ([land](land.md) writes it,
+    [pickup §6](pickup.md#6--fleet-resume-on-the-founders-answer)
+    reads it).
+- **WORKING ON** — one line per active theme, and the standing
+  order as its own list, ONE PHASE PER LINE.
+- **RECENT** — Completed: one line each with its PR. Issues: ✓
+  resolved, one line with its vehicle · ⏳ open, one line pointing
+  at the issue's home.
+- **WHERE WE ARE (Roam)** — the bars and nothing else; a paused
+  tick POINTS AT the standing order rather than re-explaining it.
+  Position lives here once.
+- **WEB + DESIGN** — "(Web)" or "(Design)", then the VERBATIM chat
+  title in quotes, then one line; a ⏸ row carries its exact resume
+  word. [pickup](pickup.md) and handoff maintain these rows.
+- **NEXT** — one line.
 
 Sources:
 [DASHBOARD](../DASHBOARD.md)
 [ROADMAP](../ROADMAP.md)
+[HOME §Reading the board](../HOME.md#reading-the-board)
 [TEMPLATE — the Status vocabulary](../memory/TEMPLATE.md)
 
 ## 5 · Ship the note
@@ -223,25 +243,40 @@ Sources:
 [IDEAS](../IDEAS.md)
 
 ## 6 · Close (FULL only)
-The close report follows the response doctrine
-([HOME §Response doctrine](../HOME.md#response-doctrine)) in the
-founder's status template:
-- WORKING ON — what was on the bench when the sitting ended (or
-  "nothing open").
-- WHAT HAPPENED — the sitting in short sentences, context →
-  narrative → issue → resolution, ending "Handoff shipped (#N) ·
-  M lanes parked. Operations halted — safe to power off." When a
-  team was shut down at [§1.2](#12--shut-the-team-down-full-only),
-  that line also carries it — "team shut down (N teammates)" — and
-  any teammate that refused or hung is named here, with where its
-  findings landed. This wording is the single home of the team
-  close line; [liftoff §7](liftoff.md#7--close) carries it by
-  pointer.
-- SUPPLEMENTAL — parallel Web or Design work, if any (the step-2
-  paste).
-- PARALLEL/RECENT FLIGHTS — one line per parked lane or live
-  cloud flight: 🟢 all good · ⏸ resume needed; every ⏸ carries
-  the exact resume word and where it goes.
+THE CLOSE REPORT — render EXACTLY this shape
+([HOME §Response doctrine](../HOME.md#response-doctrine),
+rule 8). Its ONE JOB is: everything is recorded, and you owe
+nothing before powering off.
+
+```text
+<glyph> CLOSED — the sitting is recorded; origin clean.
+
+Your act: nothing. <Or, if anything genuinely remains: the act ·
+where · when.>
+
+[OFF-ORIGIN — carry this to <surface>: <content> | omit]
+
+This sitting: <1–3 plain sentences>. Handoff shipped (#N) ·
+M lanes parked<, team shut down (N teammates)>.
+Operations halted — safe to power off.
+
+Waiting for you next time: <one line per parked lane or live
+flight — 🟢 all good · ⏸ its exact resume word and where it
+goes; or "nothing">.
+(Story: the memories and the ledger.)
+```
+
+The team clause appears only when
+[§1.2](#12--shut-the-team-down-full-only) shut one down, and any
+teammate that REFUSED OR HUNG is named there with where its
+findings landed — this wording is the single home of the team
+close line; [liftoff §7](liftoff.md#7--close) carries it by
+pointer. The OFF-ORIGIN block is omitted entirely when nothing
+qualifies; the step-2 Web/Design paste lands on the board, not
+here. Self-check before sending: verdict first? the founder's
+word named with its surface and its when? off-origin called out
+or omitted? Push first, report second — nothing here that is not
+on origin, except the founder's acts and off-origin content.
 Then, as the ritual's LAST
 act, write `.claude/session-closed` with content "Closed at handoff
 #<N> · <date> · <seat>" — the close-lock: from that moment the

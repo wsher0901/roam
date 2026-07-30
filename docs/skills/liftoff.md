@@ -99,7 +99,7 @@ Sources:
   respawn, this overwrites the parked Status). Character-for-character:
   the lane's match is anchored and cannot see a variant.
 - Fail or timeout → write "cloud spawn failed <date> — <reason> →
-  parked" into its memory + the board's Sessions rows (+ Needs-you
+  parked" into its memory + the board's In-flight rows (+ Needs-you
   mirror) per [handoff §4](handoff.md).
 - Ineligible → write "held: needs local — <reason>" into its memory
   + those same board rows.
@@ -110,9 +110,9 @@ Sources:
 [dispatch law — LAWS §Workflow](../LAWS.md#workflow-non-negotiable)
 
 ## 6 · Ledger handoff & fire the cockpit
-Repaint DASHBOARD per [handoff §4](handoff.md) — the Sessions
-table IS the flight plan: every airborne lane with its url, every
-abort and hold with its reason in Your move / State. The
+Repaint DASHBOARD per [handoff §4](handoff.md) — IN FLIGHT IS THE
+FLIGHT PLAN: every airborne lane with its url, every abort and
+hold with its reason in Move / State. The
 cockpit's own row is written at this weld, BEFORE the fire, as
 "cockpit · fired <time> · self-seat pending" — the cockpit
 rewrites it with its real URL at its self-seat repaint
@@ -121,6 +121,15 @@ Ship the micro-PR (board + any IDEAS harvest — entries land per
 the entry contract at [IDEAS](../IDEAS.md)' head, and a harvest
 COMPRESSES closed entries into its CLOSED section rather than
 deleting them).
+
+THE BOARD'S BATON LINE, painted by liftoff — wording is law:
+
+```text
+COCKPIT — live since <t> (liftoff) · <url>
+```
+
+with ` · awaiting your word on N items` appended when that is
+true.
 
 Then THE COCKPIT BIRTH
 ([D-047](../record/DECISIONS.md#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law),
@@ -233,23 +242,41 @@ Sources:
 (the routine's wiring and the fire recipe)
 
 ## 7 · Close
-The close report follows the response doctrine
-([HOME §Response doctrine](../HOME.md#response-doctrine)) in the
-founder's status template:
-- WORKING ON — one line: what this liftoff dispatched.
-- WHAT HAPPENED — context → narrative → issue → resolution, short
-  sentences, ending "N airborne, M parked · cockpit fired
-  (<rung> · exit <code>) · self-seat pending — safe to walk
-  away." When [handoff §1.2](handoff.md#12--shut-the-team-down-full-only)
-  shut a team down, this report carries
-  [handoff §6](handoff.md#6--close-full-only)'s team line verbatim
-  — that section is its single home. This report is the ONLY close
-  on the liftoff road, so a team result dropped here is lost.
-- SUPPLEMENTAL — parallel Web or Design work, if any (the step-2
-  paste's threads).
-- PARALLEL/RECENT FLIGHTS — one line per lane: 🟢 all good · ⏸
-  resume needed; every ⏸ carries the exact resume word and where
-  it goes.
+THE LIFTOFF CLOSE — render EXACTLY this shape
+([HOME §Response doctrine](../HOME.md#response-doctrine),
+rule 8). Its ONE JOB is: the flight is airborne, and where to
+reach it.
+
+```text
+<glyph> AIRBORNE — cockpit fired (<rung> · exit <code>).
+N lanes airborne, M parked · self-seat pending.
+
+Your act: <greet the cockpit at <where> when its greeting push
+lands | nothing — walk away>.
+
+[OFF-ORIGIN — the birth FAILED: <what was seen, exit code, and
+which rung> | omit]
+
+This liftoff: <one line: what it dispatched><, team shut down
+(N teammates)>.
+Safe to walk away. (Fleet: the board.)
+
+Waiting: <one line per lane — 🟢 all good · ⏸ its exact resume
+word and where it goes>.
+```
+
+The OFF-ORIGIN block appears ONLY on a birth failure — a blind
+fire captures nothing, so the exit code and what was observed
+exist only in this session and cannot be derived. When
+[handoff §1.2](handoff.md#12--shut-the-team-down-full-only) shut a
+team down, this report carries
+[handoff §6](handoff.md#6--close-full-only)'s team line verbatim —
+that section is its single home, and this is the ONLY close on the
+liftoff road, so a team result dropped here is lost. Self-check
+before sending: verdict first? the founder's word named with its
+surface and its when? off-origin called out or omitted? Push
+first, report second — nothing here that is not on origin, except
+the founder's acts and off-origin content.
 
 WHAT THE FIRED COCKPIT WILL DO, stated in the close so the
 founder is never surprised by it
