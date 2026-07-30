@@ -3093,3 +3093,104 @@ argument, and a files-table + routing row for the new
 narrative the contract evicts and nothing else recorded) ·
 [the spec](specs/ideas-contract.md) + its memory (in flight on
 the bench; moves to history at the weld) · this entry.
+
+## D-067 — 2026-07 — The report skeleton + the board diet — every founder-facing report, ritual or not, renders five slots in order: VERDICT (glyph + state + finding count) · YOUR ACT (exact word or paste · surface · when, or "nothing") · OFF-ORIGIN (content existing only in the session, else omitted) · one-breath context · a pointer to the record, never a retelling; one job per surface — the gate report carries ready + the word, the external review carries decisions, the shipped report carries confirmation + needs-you + next; PUSH FIRST, REPORT SECOND — beyond the founder's acts and off-origin content, a report may contain nothing not already on origin; the DASHBOARD is the standing report and diets to the same principle: state and acts only, stories live in the record, position lives once (the bars), Needs-you carries the urgency ladder, the baton renders state never doctrine with the cause vocabulary AUTO-LAND · MANUAL-LAND · DESK TAKEOVER (BY THIS PICKUP), WORKING ON splits from WHERE WE ARE, and the sitting narrative + essay ledger rows + review receipts die into the record
+
+**Decision:** two halves of one principle — what a report contains,
+and what the standing report contains.
+
+**THE REPORT SKELETON.** Every founder-facing work-report turn-end,
+on every surface, ritual or not, renders FIVE SLOTS IN ORDER:
+
+1. **VERDICT** — glyph + state + finding count. Whether it went
+   well, before anything else.
+2. **YOUR ACT** — the exact word or paste · which surface · when.
+   Or the word "nothing", which is an answer.
+3. **OFF-ORIGIN** — content that exists ONLY in this session and
+   therefore cannot be derived. Omitted entirely when there is
+   none, so its presence means something.
+4. **One-breath context** — what this was for and how it went, in
+   a sentence or three.
+5. **A pointer to the record** — never a retelling.
+
+**ONE JOB PER SURFACE.** The gate report carries READY + THE WORD.
+The external review carries DECISIONS. The shipped report carries
+CONFIRMATION + NEEDS-YOU + NEXT. A surface that does two jobs makes
+the founder sort them.
+
+**PUSH FIRST, REPORT SECOND.** Beyond the founder's acts and
+off-origin content, a report may contain NOTHING that is not
+already on origin. The report is a pointer with a verdict on it,
+not a second copy of the work.
+
+**THE BOARD DIETS TO THE SAME PRINCIPLE**, because
+[the DASHBOARD](../DASHBOARD.md) is the standing report — the one
+that renders when no one is speaking. State and acts only. Stories
+live in the record. POSITION LIVES ONCE, in the bars. NEEDS-YOU
+CARRIES AN URGENCY LADDER — 🔴 blocking now · 🟡 needed, with its
+timing word · ⚪ whenever — so the founder can triage by glyph.
+THE BATON RENDERS STATE, NEVER DOCTRINE, in one cause vocabulary:
+AUTO-LAND · MANUAL-LAND · DESK TAKEOVER (BY THIS PICKUP). WORKING
+ON splits from WHERE WE ARE, because a theme in progress and a
+stage's position are different questions. And the sitting
+narrative, the essay-length ledger rows, and the review receipts
+DIE INTO THE RECORD, which is where they were always meant to go.
+
+**Why:** [D-063](#d-063--2026-07--response-doctrine-v2--web-instructions-v6--two-channels-sentences-for-the-founder-fenced-blocks-for-machines-process-is-proof-not-prose-the-chat-start-ingest-contract-the-relay-rule--origin-is-the-only-courier-codes-output-is-never-pasted-to-web-reviews-speak-in-goal-and-outcome-the-core-file-alert-the-agenda-convention-brief-renders-the-full-picture-the-master-gains-a-version-history-amends-d-052)
+settled HOW a surface speaks — two channels, process as proof. It
+never settled WHAT A REPORT CONTAINS, so each ritual grew its own
+answer. The founder ends up reading six different layouts to
+answer the same three questions every single time: did it go well,
+what do I do, and where does it go. Six shapes for one job is a
+tax paid on every turn-end.
+
+The slot order is not cosmetic. VERDICT first because a founder
+scanning on a phone needs the answer before the evidence. YOUR ACT
+second because it is the only part that requires them. OFF-ORIGIN
+third and OMITTED WHEN EMPTY because its whole value is that its
+presence is a signal — this is the one class of content the relay
+rule says cannot travel any other way. Context and pointer last,
+because they are the parts a reader can skip.
+
+Push-first is the rule that makes the rest safe. If a report may
+only say what origin already holds, then a lost message costs
+nothing, a re-read costs nothing, and the founder never has to
+treat a chat transcript as a system of record.
+
+The board earns the same treatment for the same reason: it is a
+report that renders continuously. It had accumulated a sitting
+narrative that re-told what the ledger holds, ledger rows the
+length of essays, and review receipts — all of it prose a reader
+must cross to reach the two things the board exists to answer:
+what is the state, and what do I owe?
+
+**Alternatives rejected:** a per-ritual style guide instead of one
+skeleton — six guides drift into six shapes again, which is the
+disease · making the slots optional "as appropriate" — the whole
+value is that the founder learns ONE shape and can find any slot
+without reading; optional slots restore the sorting cost · keeping
+the board's sitting narrative as a "what happened" convenience —
+it duplicates the ledger and the histories, and a duplicate is the
+thing that goes stale while looking authoritative · dropping the
+OFF-ORIGIN slot and letting sessions mention such content inline —
+it is the one content class that cannot be re-derived, so it needs
+a named place a founder can trust, not a sentence that might be
+missed · a CI check enforcing slot order — the slots are prose
+judgments; the critic and the external review already grade
+contracts and can read.
+
+**Affects:**
+[HOME §Response doctrine](../HOME.md#response-doctrine) (rule 8,
+appended; rules 1–7 untouched) ·
+[HOME §Reading the board](../HOME.md#reading-the-board) (rewritten
+to the new section map) · `CLAUDE.md` (one line pointing every
+work-report turn-end at rule 8) ·
+[ship](../skills/ship.md) · [pickup](../skills/pickup.md) ·
+[handoff](../skills/handoff.md) · [liftoff](../skills/liftoff.md)
+· [land](../skills/land.md) (each ritual's founder-facing report
+rewritten to a fenced render-exactly-this template, with the board
+writers aligned to the baton case renderings) ·
+[DASHBOARD](../DASHBOARD.md) (the one-time migration repaint) ·
+[IDEAS](../IDEAS.md) (the sweep line closes; one line appended) ·
+[the spec](specs/report-shapes.md) + its memory (in flight on the
+bench; moves to history at the weld) · this entry.

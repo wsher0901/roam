@@ -19,16 +19,10 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
 
 ## Open
 
-- ⏳ Restyle every Code-side report surface to doctrine v2's two
-  channels, and write in the founder's three requirements: lead
-  with whether it went well, state the exact word to carry to Web
-  and when, and call out anything that never reached origin.
-  (2026-07-28, the founder) →
-  [ship §6](skills/ship.md#6--the-gate) ·
-  [pickup §5](skills/pickup.md#5--render-the-sit-down-summary-exactly-this-shape) ·
-  [handoff §6](skills/handoff.md#6--close-full-only) ·
-  [liftoff §7](skills/liftoff.md#7--close) ·
-  [land](skills/land.md)
+- ⏳ OBSIDIAN SEAT TOGGLES — add Readable-line-length OFF +
+  Strict-line-breaks ON to machine-setup's Obsidian step.
+  (2026-07-29, the founder) →
+  [machine-setup](skills/machine-setup.md)
 - ⏳ Decide whether to keep go-remote as a backstop or retire it —
   never used, and the founder judges the cloud path superior if it
   works; rule only AFTER a real cloud flight proves that path.
@@ -156,6 +150,12 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
 The outcome ledger — one line each, newest first. A closed idea
 keeps its answer, never its narrative.
 
+- 🟢 The ritual report sweep — every founder-facing report now
+  renders one skeleton (verdict · your act · off-origin · context
+  · pointer), one job per surface, push first and report second;
+  the board diets to the same principle. Asked 2026-07-28 with
+  the founder's three requirements, all three written in. →
+  [#250](https://github.com/wsher0901/roam/pull/250)
 - 🟢 Box currency became derivable on the MASTER side: every box
   master now carries a version-history table, and a fresh Web chat
   drift-checks its box against the master's version line. The

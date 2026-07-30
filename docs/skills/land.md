@@ -213,13 +213,39 @@ they live here now, in one home.
    on sight — a same-SHA resurrection carries no unique work by
    construction. A branch carrying UNIQUE commits is never
    deleted: surface it on the board's Needs-you instead.
-3. **The landing report**, in the founder's status template
-   ([HOME §Response doctrine](../HOME.md#response-doctrine)),
-   ending on this line and nothing after it:
+   THE BOARD'S BATON LINE, painted by this mode — the wording is
+   law, and which case applies is derived, never chosen:
+   - AUTO-LAND: `No live seat — awaiting next pickup`, plus
+     `Last flight: LANDED <t> via AUTO-LAND — fleet empty,
+     nothing owed you · clean`.
+   - MANUAL RETIRE on an empty fleet: `No live seat — LANDED <t>
+     via MANUAL-LAND · awaiting next pickup`.
+
+3. **THE LANDING REPORT** — render EXACTLY this shape
+   ([HOME §Response doctrine](../HOME.md#response-doctrine),
+   rule 8). Its ONE JOB is: the flight is over and nothing is
+   owed.
 
    ```text
+   LANDED — <via AUTO-LAND — fleet empty, nothing awaited you |
+   via MANUAL-LAND>. <glyph> Origin clean.
+
+   Your act: nothing. <Or: the act · where · when.>
+
+   This flight: <one line: what it accomplished>.
+   To re-open: <the branch or PR, and that a fresh liftoff
+   resumes it>.
+
    Safe to archive me.
    ```
+
+   On an AUTO-LAND, the report also states the ACCEPTED COST in
+   one clause — if the fire was premature it costs one
+   re-liftoff — so the founder never has to guess whether the
+   landing was right. Self-check: verdict first? the founder's
+   word named with its surface and its when? off-origin called
+   out or omitted? Push first, report second. The last line is
+   exactly `Safe to archive me.`
 
 Then stop. Write nothing further.
 
@@ -341,13 +367,33 @@ Ship it as the micro-PR per
 
 ### (e) The landing report
 
-In the founder's status template
-([HOME §Response doctrine](../HOME.md#response-doctrine)), ending
-on this line:
+Render EXACTLY this shape
+([HOME §Response doctrine](../HOME.md#response-doctrine),
+rule 8). Its ONE JOB is: the fleet is frozen and findable, and
+resuming it is one word at any desk.
 
 ```text
+GROUNDED — N lanes fenced, all pushed. <glyph>
+
+Your act: nothing now. At any desk, pickup asks and "continue"
+redeploys the fleet.
+
+This flight: <one line>. Each lane's exact next step is in its
+fence and on the board's fleet-at-ground table.
+
 Grounded. Safe to archive me — pickup at any seat resumes the fleet.
 ```
+
+THE BOARD'S BATON LINE, painted by this mode — wording is law:
+`No live seat — LANDED <t> via MANUAL-LAND · awaiting next
+pickup`, plus ` · N lanes frozen → fleet-resume` when the freeze
+caught work mid-flight.
+
+The HONESTY CLAUSE governs the numbers: the report states the
+LAST-OBSERVED state per lane and never claims a guaranteed
+freeze. Self-check: verdict first? the founder's word named with
+its surface and its when? off-origin called out or omitted? Push
+first, report second. The last line is exact.
 
 ### (f) Session disposal
 

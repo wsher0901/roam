@@ -51,9 +51,42 @@ run the reviewer synchronously, or instruct it in the spawn prompt
 to deliver the verdict AS A MESSAGE — a background agent's
 plain-text output never reaches the control tower; the verdict must be
 sent, not printed (maiden-run finding, 2026-07-17).
-Then summarize in plain language and ask. NEVER merge without the
+THEN WRITE THE CRITIC ROUND INTO THE MEMORY AND PUSH — the
+findings, what was repaired, and what was dismissed with its
+reason. This step exists because of PUSH FIRST, REPORT SECOND
+([HOME §Response doctrine](../HOME.md#response-doctrine), rule 8):
+the gate report states a FINDING COUNT and points, so the findings
+themselves must already be on origin. A verdict that lives only in
+the session is a verdict the founder cannot re-read and the
+external review cannot check.
+
+Then render THE GATE REPORT and stop. NEVER merge without the
 founder's explicit yes — the conversational yes is the only gate;
 never infer it.
+
+THE GATE REPORT — render EXACTLY this shape
+([HOME §Response doctrine](../HOME.md#response-doctrine), rule 8).
+Its ONE JOB is: ready, and the word.
+
+```text
+THE GATE — <id> is ready. <🟢 clean | 🟡 N rulings ride the review.>
+
+Your act, now: in the Web chat, say "review."
+<one line: what the review brings back.>
+
+[OFF-ORIGIN — copy this to the Web chat with your "review":
+<the content that exists only in this session>]
+
+This bench: <1–3 plain sentences, goal → outcome>.
+DO NOT MERGE — tower-authored. (Story: the bench memory.)
+```
+
+The OFF-ORIGIN block is OMITTED ENTIRELY when nothing qualifies —
+its presence is the signal. Self-check before sending: verdict
+first? the founder's word named with its surface and its when?
+off-origin called out or omitted? Push first, report second —
+nothing here that is not on origin, except the founder's acts and
+off-origin content.
 
 - Actions is the arbiter: after the final push, run
   `gh pr checks <pr> --watch`. THE GATE may be announced ONLY when
@@ -87,6 +120,39 @@ squash-merge. Confirm merged, then pull main.
 
 ## 8 · Tail
 Run handoff in QUIET mode (board repaint per
-[handoff §4](handoff.md) — the Shipped table now shows this task).
-Then recommend exactly ONE
-next action + at most one parallel slot per the pacing law.
+[handoff §4](handoff.md) — RECENT now shows this task). The tail
+paints: the painted line, the glance, Needs you, In flight,
+Working on, Recent, the bars, and Next.
+
+THE SHIPPED REPORT — render EXACTLY this shape
+([HOME §Response doctrine](../HOME.md#response-doctrine), rule 8).
+Its ONE JOB is: confirmation, what you owe, what is next.
+
+```text
+SHIPPED — <id> merged; origin clean. <glyph>
+
+Needs you — <N | nothing>:
+<each: the act · where it happens · when — one line>
+
+Next: <a single act; if it is a Web word, name it exactly>.
+
+(Nothing new since the review; lessons live in the memory.)
+```
+
+If the weld FAILED, render this instead — the verdict is still
+first:
+
+```text
+🔴 BLOCKED — <one line: what stopped it>.
+
+Your act: <the exact word | nothing — the fix is mine>.
+Then: <what follows>. A new head voids the review verdict —
+after my push, say "review" again.
+```
+
+Self-check before sending: verdict first? the founder's word named
+with its surface and its when? off-origin called out or omitted?
+Push first, report second — nothing here that is not on origin,
+except the founder's acts and off-origin content. Then recommend
+exactly ONE next action + at most one parallel slot per the pacing
+law.

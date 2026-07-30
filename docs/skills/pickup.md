@@ -86,6 +86,29 @@ Sources:
 [ROADMAP](../ROADMAP.md)
 [DASHBOARD](../DASHBOARD.md)
 
+### The baton line pickup paints — wording is law
+
+Plain claim:
+
+```text
+CONTROL TOWER — <seat>, since <t> (pickup)
+```
+
+with a last-flight line preserving its CAUSE: `Last flight:
+LANDED <t> via AUTO-LAND — clean` · or `via MANUAL-LAND` (adding
+` · N lanes frozen → fleet-resume` when it froze work).
+
+On a DESK TAKEOVER
+([§6](#the-desk-takeover--a-live-cockpit-holding-decisions)):
+
+```text
+CONTROL TOWER — <seat>, since <t> (pickup — DESK TAKEOVER)
+Last flight: LANDED <t> BY THIS PICKUP — was awaiting your word
+on N items (now in Needs you) · N lanes fenced → fleet-resume
+```
+
+The awaiting clause appears only when it is true.
+
 ## 4 · Repaint if stale
 If the board disagrees with its sources (ROADMAP checkboxes,
 branch/PR reality, memory Status lines), REPAINT it now per the
@@ -128,27 +151,36 @@ shape below is the founder's status template.
   if the script fails, say so and ask for the number rather than
   guessing. The founder's answer runs
   [§6](#6--fleet-resume-on-the-founders-answer).
-- Ruled header: "── pickup · <date> · <seat> ──". Caption line:
-  "Last handoff: <FULL | liftoff> · <date HH:MM> · <seat>".
-- WORKING ON — the bench this sitting resumes (or "nothing
-  open"); its first line is the exact next act.
-- WHAT HAPPENED — the last sitting rebuilt from the main task's
-  memory Story plus the handoff note: context → narrative →
-  issue → resolution. Short sentences, everyday words, written
-  for a tired reader. Anything that went wrong or was left
-  worrying rides here with its current standing — or exactly:
-  "No issues from last sitting." Repaint, self-heal, or hook
-  notes append as small lines here, only if any exist.
-- SUPPLEMENTAL — parallel Web or Design work, if any: verbatim
-  chat titles bold in quotes, surface tag, one topic line, next
-  step each.
-- PARALLEL/RECENT FLIGHTS — one line per parked lane, live cloud
-  flight, or task left at the last handoff: 🟢 all good · ⏸
-  resume needed (current Status-vocabulary state + last-push
-  age); every ⏸ carries the exact resume word and where it goes.
-  The board's Needs-you folds in here glyph-led, every 🔴 naming
-  the fix AND where it happens.
-- NEXT — Now: one action · Parallel: one or "—" (the pacing law).
+- THE SIT-DOWN — render EXACTLY this shape
+  ([HOME §Response doctrine](../HOME.md#response-doctrine),
+  rule 8). Its ONE JOB is: where you are, and what you can do
+  now.
+
+  ```text
+  ── pickup · <date> · <seat> ──
+  <🟢 | 🟡 | 🔴> <seat> has the baton. <floor state: N open
+  benches, N lanes, or "clean floor">.
+
+  Needs you — <N | nothing>:
+  <each, from the board, glyph-led: the act · where · when>
+
+  In flight: <one line per live seat or lane, or "nothing">.
+
+  Working on: <the bench this sitting resumes, exact next act —
+  or what the board says is next>.
+
+  Your act, if you want it now: <the single word or step |
+  nothing — say the word and I start>.
+
+  Shipped lately: <one line> → the ledger.
+  ```
+
+  The floor state, the counts and Needs-you are DERIVED from the
+  board and git at render time, never recalled. Self-check before
+  sending: verdict first? the founder's word named with its
+  surface and its when? off-origin called out or omitted? Push
+  first, report second — nothing here that is not on origin,
+  except the founder's acts and off-origin content.
 No ritual self-narration ("baton claimed" and kin stay silent
 mechanics). Everything else lives on the board
 ([handoff §4](handoff.md)) — point, don't repeat. Then STOP — the

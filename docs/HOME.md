@@ -49,7 +49,7 @@ Sources:
 | What's the contract of a task? | its spec in [docs/record/specs/](record/specs/README.md) |
 | What's the story of a task in flight? | its memory file in [docs/memory/](memory/README.md), living on the task's branch |
 | What's the story of a shipped task? | its file in [docs/record/history/](record/history/README.md) |
-| What has shipped? | [DASHBOARD §Shipped](DASHBOARD.md#shipped-latest--full-record-the-ledger), derived from [history/](record/history/README.md) |
+| What has shipped? | [DASHBOARD §Recent](DASHBOARD.md#recent) for the last few; [the ledger](record/history/README.md#the-ledger) for all of it |
 | How do I read the data files? | [§Reading the data files](#reading-the-data-files) |
 | I'm sitting at a new or second machine | [machine-setup](skills/machine-setup.md) |
 | How do I start a Design session? | [DESIGN-KICKOFF.md](DESIGN-KICKOFF.md) |
@@ -1040,25 +1040,55 @@ non-micro PRs, the founder's fresh yes) is present, and nowhere
 else.
 
 ## Reading the board
-The DASHBOARD is repainted only at ritual moments — pickup when stale
-· handoff · liftoff · ship's tail — never hand-edited; between
-rituals, git outranks it. Glyphs: 🟢 done · 🟡 ongoing · 🔴 issue
-(always mirrored into Needs you) · ⚪ idle. Bars fill left to right (█
-done · ░ remaining). Stage-map colors: green done · blue active ·
-orange locked behind a dependency · gray queued. Sections: Needs you
-(your action queue — one sentence per item, receipts on the line
-below) · Sessions (every live session, one table — main · control
-tower /
-local parallel / cloud — with what each needs from you) · You are
-here (version and stage bars) · Stage map (dependencies) · Claude Web
-+ Design discussion (open chats by their exact titles, so you can
-search them) · Shipped (the ten newest; the full chronology is the
-ledger). The board's shape is defined once, in handoff §4.
+The DASHBOARD is THE STANDING REPORT — the one that renders when
+nobody is speaking — so it obeys the same skeleton as any other
+report: STATE AND ACTS ONLY. Stories live in the record; position
+lives once, in the bars; nothing here is retold from the ledger
+([D-067](record/DECISIONS.md#d-067--2026-07--the-report-skeleton--the-board-diet--every-founder-facing-report-ritual-or-not-renders-five-slots-in-order-verdict-glyph--state--finding-count--your-act-exact-word-or-paste--surface--when-or-nothing--off-origin-content-existing-only-in-the-session-else-omitted--one-breath-context--a-pointer-to-the-record-never-a-retelling-one-job-per-surface--the-gate-report-carries-ready--the-word-the-external-review-carries-decisions-the-shipped-report-carries-confirmation--needs-you--next-push-first-report-second--beyond-the-founders-acts-and-off-origin-content-a-report-may-contain-nothing-not-already-on-origin-the-dashboard-is-the-standing-report-and-diets-to-the-same-principle-state-and-acts-only-stories-live-in-the-record-position-lives-once-the-bars-needs-you-carries-the-urgency-ladder-the-baton-renders-state-never-doctrine-with-the-cause-vocabulary-auto-land--manual-land--desk-takeover-by-this-pickup-working-on-splits-from-where-we-are-and-the-sitting-narrative--essay-ledger-rows--review-receipts-die-into-the-record)).
+It is repainted only at ritual moments — pickup when stale ·
+handoff · liftoff · ship's tail — never hand-edited; between
+rituals, GIT OUTRANKS IT.
+
+Glyphs: 🟢 done · 🟡 ongoing · 🔴 issue · ⚪ idle · ⏸ paused.
+Bars fill left to right (█ done · ░ remaining). Stage-map colors:
+green done · blue active · orange locked behind a dependency ·
+gray queued.
+
+THE SECTIONS, in order:
+
+- **The painted line + glance** — "Painted &lt;date&gt; ·
+  &lt;time&gt; by &lt;ritual&gt; · from &lt;seat&gt;", then the
+  flight/seat, the needs-you count, and the standing reminder that
+  git outranks this board.
+- **NEEDS YOU** — your action queue, on an URGENCY LADDER: 🔴
+  blocking now · 🟡 needed, carrying its timing word · ⚪
+  whenever. Each item is one act with its surface and its
+  since-date.
+- **THE BATON** — who holds it, as STATE never doctrine, in one
+  cause vocabulary: AUTO-LAND · MANUAL-LAND · DESK TAKEOVER (BY
+  THIS PICKUP). A last-flight line preserves the cause.
+- **IN FLIGHT** — one row per live seat or lane: Who (the
+  commander's bench, or a lane) · For · State 🟢/🟡/🔴 · Move.
+- **WORKING ON** — one line per active theme, and the standing
+  order as its own list, one phase per line.
+- **RECENT** — Completed, one line each with its PR; Issues, ✓
+  resolved with its vehicle · ⏳ open, pointing at the issue's
+  home.
+- **WHERE WE ARE (Roam)** — the bars, and nothing else; a paused
+  tick points at the order rather than re-explaining it.
+- **WEB + DESIGN** — "(Web)" or "(Design)" then the chat title in
+  quotes; a ⏸ row carries its exact resume word.
+- **NEXT** — one line.
+
+The board's shape is defined once, in
+[handoff §4](skills/handoff.md#4--repaint-dashboard-the-board-spec--single-source);
+every repainting ritual paints THAT shape.
 
 Sources:
 [DASHBOARD](DASHBOARD.md)
 [the ledger](record/history/README.md#the-ledger)
 [handoff §4](skills/handoff.md)
+[D-067](record/DECISIONS.md#d-067--2026-07--the-report-skeleton--the-board-diet--every-founder-facing-report-ritual-or-not-renders-five-slots-in-order-verdict-glyph--state--finding-count--your-act-exact-word-or-paste--surface--when-or-nothing--off-origin-content-existing-only-in-the-session-else-omitted--one-breath-context--a-pointer-to-the-record-never-a-retelling-one-job-per-surface--the-gate-report-carries-ready--the-word-the-external-review-carries-decisions-the-shipped-report-carries-confirmation--needs-you--next-push-first-report-second--beyond-the-founders-acts-and-off-origin-content-a-report-may-contain-nothing-not-already-on-origin-the-dashboard-is-the-standing-report-and-diets-to-the-same-principle-state-and-acts-only-stories-live-in-the-record-position-lives-once-the-bars-needs-you-carries-the-urgency-ladder-the-baton-renders-state-never-doctrine-with-the-cause-vocabulary-auto-land--manual-land--desk-takeover-by-this-pickup-working-on-splits-from-where-we-are-and-the-sitting-narrative--essay-ledger-rows--review-receipts-die-into-the-record)
 
 ## Response doctrine
 
@@ -1084,8 +1114,19 @@ Rituals and charters REFERENCE this section; none copies it.
    origin at answer time.
 7. GLYPH VERDICTS — 🟢/🟡/🔴/⏸/⏳ lead every status item; every
    🔴/⏸ names the fix or resume word AND where it goes.
+8. THE REPORT SKELETON — every work-report turn-end, on every
+   surface, ritual or not, renders five slots in order: VERDICT
+   (glyph + state + finding count) · YOUR ACT (exact word or
+   paste · which surface · when — or "nothing") · OFF-ORIGIN
+   (content that exists only in the session, else the slot is
+   omitted) · one-breath context · a pointer to the record, never
+   a retelling. PUSH FIRST, REPORT SECOND: beyond the founder's
+   acts and off-origin content, a report may contain nothing that
+   is not already on origin.
 
 Sources:
+[D-067](record/DECISIONS.md#d-067--2026-07--the-report-skeleton--the-board-diet--every-founder-facing-report-ritual-or-not-renders-five-slots-in-order-verdict-glyph--state--finding-count--your-act-exact-word-or-paste--surface--when-or-nothing--off-origin-content-existing-only-in-the-session-else-omitted--one-breath-context--a-pointer-to-the-record-never-a-retelling-one-job-per-surface--the-gate-report-carries-ready--the-word-the-external-review-carries-decisions-the-shipped-report-carries-confirmation--needs-you--next-push-first-report-second--beyond-the-founders-acts-and-off-origin-content-a-report-may-contain-nothing-not-already-on-origin-the-dashboard-is-the-standing-report-and-diets-to-the-same-principle-state-and-acts-only-stories-live-in-the-record-position-lives-once-the-bars-needs-you-carries-the-urgency-ladder-the-baton-renders-state-never-doctrine-with-the-cause-vocabulary-auto-land--manual-land--desk-takeover-by-this-pickup-working-on-splits-from-where-we-are-and-the-sitting-narrative--essay-ledger-rows--review-receipts-die-into-the-record)
+(v2 + rule 8 — the report skeleton and the board diet)
 [D-063](record/DECISIONS.md#d-063--2026-07--response-doctrine-v2--web-instructions-v6--two-channels-sentences-for-the-founder-fenced-blocks-for-machines-process-is-proof-not-prose-the-chat-start-ingest-contract-the-relay-rule--origin-is-the-only-courier-codes-output-is-never-pasted-to-web-reviews-speak-in-goal-and-outcome-the-core-file-alert-the-agenda-convention-brief-renders-the-full-picture-the-master-gains-a-version-history-amends-d-052)
 (v2 — the current form)
 [D-052](record/DECISIONS.md#d-052--2026-07--response-doctrine--one-standard-for-every-surface-speaking-to-the-founder-answer-first-explicit-steps-purpose-shaped-explanation-live-derived-state-glyph-verdicts-the-command-card-the-fleet-table-report-the-ritual-status-templates-web-instructions-v5-ships-retires-the-v4-paste-block-loop-master-upholds-d-046s-cc-direct-doctrine-and-the-derivation-law)
