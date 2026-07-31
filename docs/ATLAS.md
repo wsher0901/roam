@@ -76,7 +76,7 @@ flowchart LR
   READS --> WRITES
 ```
 
-Boxes: [the hook and the daily loop — HOME](HOME.md#the-daily-loop)
+Boxes: [the hook and the day — HOME](HOME.md#a-day-in-the-workshop)
 · [the board's writers — HOME §The board](HOME.md#the-board)
 · [the repaint spec — handoff §4](skills/handoff.md#4--repaint-dashboard-the-board-spec--single-source)
 · [ticks by ship only — HOME §Where information goes](HOME.md#where-information-goes)

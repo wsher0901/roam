@@ -55,79 +55,66 @@ Sources:
 | How do I start a Design session? | [DESIGN-KICKOFF.md](DESIGN-KICKOFF.md) |
 | I've been away for weeks | open [DASHBOARD.md](DASHBOARD.md), then just talk — [pickup](skills/pickup.md) rebuilds the rest |
 
-## One day in the workshop
-You sit down and type anything — pickup claims the baton and hands
-you the sit-down summary: what shipped while you were away, which
-parallel sessions flipped state, what needs you. You give the merge
-words the summary asked for, answer any BLOCKED question, and the
-fleet moves on without you. Then the main session: you and the
-control tower drive one task — discuss, decide, and author
-in-session (CC-direct, the standard working mode); THE GATE, the
-independent review the no-solo-approval law requires (external Web
-review when the diff is self-authored), your yes, the weld.
-Somewhere
-in the afternoon you say "run T3–T6 in parallel" and four benches
-are born, four lanes fly; the pacing law keeps only Now plus one
-parallel slot on your desk. Leaving is one sentence: "done for
-today" parks every local lane and halts the machine; "keep working
-while I'm out" lifts the eligible ones to the cloud and fires the
-cockpit — the control tower online — briefed with the flight plan;
-"go remote"
+## A day in the workshop
+
+You sit down at either PC and open Claude Code in the repo — the
+session hook pulls main and reads the board before you type a word.
+Say anything ("hi" works): pickup claims the baton and hands you
+the sit-down briefing — what shipped while you were away, which
+sessions flipped state, what needs you, one recommended next step.
+You give the words the briefing asked for, answer any `BLOCKED:`
+question, and the fleet moves on without you.
+
+Then the main session: you and the control tower drive one task —
+discuss, decide, and author in-session (CC-direct, the standard
+working mode). Every task is born on its own branch with a draft
+PR; commits flow as the work's heartbeat. The moment a task's work
+is complete, ship runs itself and brings you THE GATE — the
+independent review the no-solo-approval law requires, external and
+on the Web surface when the diff is self-authored — then your yes,
+then the weld.
+
+Somewhere in the afternoon you say "run T3–T6 in parallel" and four
+benches are born, four lanes fly; the pacing law keeps only Now plus
+one parallel slot on your desk. Leaving is one sentence: "done for
+today" parks every local lane and halts the machine; "take it to
+the cloud" lifts the eligible ones and fires the cockpit — the
+control tower online — briefed with the flight plan; "go remote"
 tethers the machine to your phone instead (a backstop posture), so
-you drive the fleet from
-your pocket.
-Either way the board is repainted before the lights go out, and the
-next seat — tomorrow, or your phone tonight — starts by reading it.
-Nothing important ever lives only in a conversation.
+you drive the fleet from your pocket. The first two close the
+session; go remote keeps it open. Either way the board is repainted
+before the lights go out, and the next seat — tomorrow, or your
+phone tonight — starts by reading it. Nothing important ever lives
+only in a conversation.
 
 Sources:
 [pickup](skills/pickup.md)
+[ship](skills/ship.md)
 [handoff](skills/handoff.md)
 [liftoff](skills/liftoff.md)
-[ship](skills/ship.md)
+[bench-first](#task-anatomy--lifecycle)
 [pacing law — LAWS §Workflow](LAWS.md#workflow-non-negotiable)
 
-## The daily loop
+The three touchpoints
+([LAWS §The three touchpoints](LAWS.md#the-three-touchpoints)) are
+the founder's ONLY ritual duties:
 
-The founder's whole day, as the system sees it: sit down at either
-PC and open Claude Code in the repo — the session hook pulls main and
-reads the board before you type a word. Say anything ("hi" works);
-the sitting begins with the pickup briefing rendering itself — where
-everything stands, what needs you, one recommended next step. Then
-work: talk, decide, review. Every task is born on its own branch with
-a draft PR (bench-first); commits flow as the work's heartbeat; the
-moment a task's work is complete, ship runs itself and asks for the
-merge — your conversational yes is the only gate. When you're done
-for the day, one leaving phrase ("done for today", "bye") runs
-handoff; "take it to the cloud" runs liftoff instead — it hands the
-open work to cloud lanes and fires the cockpit, your away command
-deck, briefed from the board; "go remote" tethers the machine to
-your phone instead (backstop — machine-off is the standard away
-posture). The first two close the session; go remote keeps it
-open. Walk away.
+1. **The merge word** — every merge waits for your explicit yes;
+   the sole exception is the micro-PR.
+2. **The review word** — when a diff is self-authored, THE GATE
+   asks you to say "review" on the Web surface; that review
+   precedes the merge word.
+3. **The leaving ritual** — the leaving phrase or `/handoff`, with
+   the Web/Design paste carried inline before it — no question
+   asked (and pasting Web/Design blocks into Code during the day).
 
 Sources:
-[pickup](skills/pickup.md)
-[bench-first](#task-anatomy--lifecycle)
-[ship](skills/ship.md)
-[handoff](skills/handoff.md)
-[liftoff](skills/liftoff.md)
-
-The two touchpoints (LAWS §The two touchpoints) are the founder's
-ONLY ritual duties:
-
-1. **Final merge approval** — every merge waits for your explicit
-   yes; the sole exception is the micro-PR.
-2. **The leaving ritual** — the leaving phrase or `/handoff`, with
-   the Web/Design paste carried inline before it — no question asked
-   (and pasting Web/Design blocks into Code during the day).
-
-Sources:
-[LAWS §The two touchpoints](LAWS.md#the-two-touchpoints)
+[LAWS §The three touchpoints](LAWS.md#the-three-touchpoints)
 [micro-PR](#micro-prs)
+[THE GATE — ship §6](skills/ship.md#6--the-gate)
 
 The promise behind the design: everything else — recording,
-bookkeeping, status, claim checks, dispatch, briefings — runs
+bookkeeping, status, claim checks, delegation, briefings — runs
 itself. Genuine uncertainty and judgment calls still come to you;
 housekeeping never does.
 
@@ -459,7 +446,7 @@ whole?
 |---|---|---|
 | A machine dies mid-work | every pushed commit — and pushing every commit is law; the bench artifacts (branch, spec, memory, draft PR) live on origin from birth | at most the working tree's unpushed edits |
 | A session ends uncleanly on a lane branch | the session-end hook auto-commits and pushes WIP as an explicit `wip:` commit | nothing, if the network held; otherwise the commit waits locally for the next push |
-| A lane dies or a spawn fails | the pre-birthed bench; every pushed commit; the failure itself, written into the lane's memory and the lane's In-flight row (+ Needs-you mirror) — nothing is silently parked ([dispatch law](LAWS.md#workflow-non-negotiable)) | only the lane's unpushed thoughts |
+| A lane dies or a spawn fails | the pre-birthed bench; every pushed commit; the failure itself, written into the lane's memory and the lane's In-flight row (+ Needs-you mirror) — nothing is silently parked ([the chooser law](LAWS.md#workflow-non-negotiable)) | only the lane's unpushed thoughts |
 | A ritual is skipped | all git state, and therefore all status — status is read, not stored; the next [pickup](skills/pickup.md) reconciles and repaints | the day's Web/Design narrative, if FULL handoff (which reads the paste from the leaving message) never ran — that knowledge has no other carrier |
 | Weeks away | everything: the board renders where things stand, memories hold each story, pickup rebuilds the briefing from sources | nothing — at worst the board is stale until pickup heals it |
 
@@ -492,7 +479,7 @@ running handoff in QUIET mode. Two split by seat: handoff leaves a
 DESK, land ends a FLIGHT.)
 
 **pickup** — fires unprompted on the founder's first message of a
-control-tower session (dispatched lanes skip it). It claims the
+control-tower session (delegated lanes skip it). It claims the
 baton,
 reads ROADMAP + DASHBOARD + every active memory + live git,
 self-heals stranded micro-PRs, sweeps `claude/*` workspace residue
@@ -701,9 +688,9 @@ Sources:
 [ship](skills/ship.md)
 [IDEAS](IDEAS.md)
 
-Dispatch is one fork of the away-mode chooser (next section):
+Delegation is one fork of the chooser law (next section):
 mid-session lanes default LOCAL (background agents, worktrees); CLOUD
-dispatch happens only through liftoff, whose gate is now hard
+delegation happens only through liftoff, whose gate is now hard
 disqualifiers — secrets exposure, cloud-incompatible needs, or a
 file-collision with a flying sibling — with fully-specified the sort
 key, not a bar. Ineligible, held, or waiting items are never silently
@@ -1054,35 +1041,12 @@ Bars fill left to right (█ done · ░ remaining). Stage-map colors:
 green done · blue active · orange locked behind a dependency ·
 gray queued.
 
-THE SECTIONS, in order:
-
-- **The painted line + glance** — "Painted &lt;date&gt; ·
-  &lt;time&gt; by &lt;ritual&gt; · from &lt;seat&gt;", then the
-  flight/seat, the needs-you count, and the standing reminder that
-  git outranks this board.
-- **NEEDS YOU** — your action queue, on an URGENCY LADDER: 🔴
-  blocking now · 🟡 needed, carrying its timing word · ⚪
-  whenever. Each item is one act with its surface and its
-  since-date.
-- **THE BATON** — who holds it, as STATE never doctrine, in one
-  cause vocabulary: AUTO-LAND · MANUAL-LAND · DESK TAKEOVER (BY
-  THIS PICKUP). A last-flight line preserves the cause.
-- **IN FLIGHT** — one row per live seat or lane: Who (the
-  commander's bench, or a lane) · For · State 🟢/🟡/🔴 · Move.
-- **WORKING ON** — one line per active theme, and the standing
-  order as its own list, one phase per line.
-- **RECENT** — Completed, one line each with its PR; Issues, ✓
-  resolved with its vehicle · ⏳ open, pointing at the issue's
-  home.
-- **WHERE WE ARE (Roam)** — the bars, and nothing else; a paused
-  tick points at the order rather than re-explaining it.
-- **WEB + DESIGN** — "(Web)" or "(Design)" then the chat title in
-  quotes; a ⏸ row carries its exact resume word.
-- **NEXT** — one line.
-
-The board's shape is defined once, in
-[handoff §4](skills/handoff.md#4--repaint-dashboard-the-board-spec--single-source);
-every repainting ritual paints THAT shape.
+THE SECTIONS, in order: the painted line + glance · NEEDS YOU ·
+THE BATON · IN FLIGHT · WORKING ON · RECENT · WHERE WE ARE (Roam)
+· WEB + DESIGN · NEXT. What each one may contain is defined ONCE,
+in [handoff §4](skills/handoff.md#4--repaint-dashboard-the-board-spec--single-source),
+and every repainting ritual paints THAT shape — this page does not
+restate it, so the two can never drift.
 
 Sources:
 [DASHBOARD](DASHBOARD.md)
@@ -1387,6 +1351,13 @@ the link for the full story.
 - **socket** — a named future capability deliberately excluded from
   the current version but designed to plug in later without a
   rewrite. Home: [ROADMAP §Pool](ROADMAP.md#pool--unversioned-sockets).
+- **the short-anchor law** — a decision's heading is its link
+  address, so it is kept to eight words at most and NEVER edited
+  afterwards; the full statement lives one line below it, marked
+  `In full:`. That is why a citation reads
+  `#d-068--the-short-anchor-law` rather than a paragraph. Home:
+  [D-068](record/DECISIONS.md#d-068--the-short-anchor-law) ·
+  [decide](skills/decide.md).
 - **D-number** — one permanently recorded decision (D-001, D-002,
   …) with rationale and rejected alternatives.
   Home: [DECISIONS](record/DECISIONS.md).
@@ -1504,7 +1475,7 @@ the link for the full story.
   overwrites the
   parked Status. Home: [parallel-lanes
   §Respawn](skills/parallel-lanes.md#respawn-on-an-existing-bench-liftoff-adopt).
-- **the chooser (dispatch & away-mode)** — one variable per fork: at
+- **the chooser law (delegation & away-mode)** — one variable per fork: at
   the keyboard → LOCAL lane; leaving + nothing continues → handoff;
   leaving + continues + machine dark → liftoff (the standard away
   posture — it fires the cockpit); leaving + continues + machine
@@ -1616,17 +1587,52 @@ the link for the full story.
   as amended by
   [D-023](record/DECISIONS.md#d-023--universal-draft-pr-at-birth-and-micro-pr-carve-out)).
   Home: [§Micro-PRs](#micro-prs).
+- **box master** — a top-level file holding the exact text of an
+  EXTERNAL box you paste into a web UI (the Web instructions, the
+  cockpit charter, the lane-worker prompt). The file is the
+  source; the box is a copy, so an edit here rides a PR and then a
+  re-save, which sits on the board's Needs-you until you do it.
+  Home:
+  [LAWS §Knowledge & tracking](LAWS.md#knowledge--tracking) ·
+  [§Where information goes](#where-information-goes) (the row that
+  names every master and its re-save).
 - **the board** — [DASHBOARD.md](DASHBOARD.md): the one rendered
   state surface, repainted wholesale by rituals, stamped, and
   always outranked by git. Home: [§The board](#the-board).
-- **the two touchpoints** — the founder's only ritual duties: final
-  merge approval, and the leaving ritual (with its Web/Design
-  paste). Home: [§The daily loop](#the-daily-loop) ·
-  [LAWS §The two touchpoints](LAWS.md#the-two-touchpoints).
+- **the three touchpoints** — the founder's only ritual duties:
+  THE MERGE WORD, THE REVIEW WORD (a self-authored diff takes your
+  "review" to the Web surface before it can take your yes), and
+  THE LEAVING RITUAL with its Web/Design paste. Home:
+  [§A day in the workshop](#a-day-in-the-workshop) ·
+  [LAWS §The three touchpoints](LAWS.md#the-three-touchpoints).
+- **the entry contract** — the rule printed at the head of
+  [IDEAS.md](IDEAS.md) saying what one line there must look like:
+  one idea per line, one line per idea, plain language, a glyph
+  first, links short at the tail. The header IS the law — every
+  writer grooms to it. Home:
+  [D-066](record/DECISIONS.md#d-066--the-ideas-entry-contract).
+- **the report skeleton** — the five slots every founder-facing
+  turn-end renders, in order: the VERDICT, YOUR ACT, anything
+  OFF-ORIGIN, one breath of context, and a pointer to the record.
+  Push first and report second — apart from your own acts, a
+  report says nothing that is not already on origin. Home:
+  [§Response doctrine](#response-doctrine) rule 8 ·
+  [D-067](record/DECISIONS.md#d-067--the-report-skeleton-and-the-board-diet).
+- **the urgency ladder** — how the board's Needs-you is ordered so
+  you can read it top-down: 🔴 blocking now · 🟡 needed, carrying
+  its timing word · ⚪ whenever. Home:
+  [handoff §4](skills/handoff.md#4--repaint-dashboard-the-board-spec--single-source)
+  (the board spec, where every section's contents are defined).
+- **the outcome ledger** — the CLOSED half of
+  [IDEAS.md](IDEAS.md). A closed idea is compressed to one line
+  and KEPT, never deleted, so "what did we decide about that?"
+  has an answer even when the idea was declined rather than
+  built. Home:
+  [D-066](record/DECISIONS.md#d-066--the-ideas-entry-contract).
 - **paste block** — the single copy-paste artifact a Claude Web
   chat produces when its discussion changed something; delivered
   only when its content reaches the repo through Claude Code.
-  Home: [§The daily loop](#the-daily-loop).
+  Home: [§A day in the workshop](#a-day-in-the-workshop).
 - **claim check** — the mandatory "is this task already open
   elsewhere?" question before any task starts, answered by open
   branches + draft PRs; the founder is asked only on genuine

@@ -107,7 +107,7 @@ Sources:
 Nothing is ever silently parked without its reason on record.
 
 Sources:
-[dispatch law — LAWS §Workflow](../LAWS.md#workflow-non-negotiable)
+[chooser law — LAWS §Workflow](../LAWS.md#workflow-non-negotiable)
 
 ## 6 · Ledger handoff & fire the cockpit
 Repaint DASHBOARD per [handoff §4](handoff.md) — IN FLIGHT IS THE
@@ -257,7 +257,7 @@ lands | nothing — walk away>.
 [OFF-ORIGIN — the birth FAILED: <what was seen, exit code, and
 which rung> | omit]
 
-This liftoff: <one line: what it dispatched><, team shut down
+This liftoff: <one line: what it delegated><, team shut down
 (N teammates)>.
 Safe to walk away. (Fleet: the board.)
 

@@ -40,7 +40,7 @@ console.log(
     "by FRESH derivation from origin (state, explanations, pointers), " +
     "name the current baton-holder from the board, and REFUSE every " +
     "write, command act, and ritual — no commits, no pushes, no " +
-    "merges, no board edits, no dispatch. A superseded cockpit " +
+    "merges, no board edits, no delegation. A superseded cockpit " +
     "answers only with its tombstone (charter R4b). To work, open a " +
     "fresh `claude` session.",
 );

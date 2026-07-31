@@ -25,110 +25,111 @@ current version: [ROADMAP.md](ROADMAP.md). Progress:
 - Pick the best tool for the job that is stable and has a large
   community — never niche or bleeding-edge for its own sake.
 
-## The two touchpoints
-The founder's only ritual touchpoints:
-1. Final merge approval — the only merge gate.
-2. The leaving ritual — "done for today" (handoff) or "take it to
-   the cloud" (liftoff), with the Web/Design context carried inline
-   in the leaving message — no question asked. Both END the session.
-Everything else — recording, bookkeeping, claims, dispatch — runs
-itself. Genuine uncertainty and judgment calls still come to the
-founder.
+## The three touchpoints
+The founder's only ritual duties. Everything else — recording,
+bookkeeping, claims, delegation — runs itself; genuine uncertainty
+and judgment calls still come to the founder.
+
+1. **The merge word** — the only merge gate; the sole exception
+   is the micro-PR (§ Workflow).
+2. **The review word** — a self-authored diff at THE GATE takes
+   the founder's "review" to the Web surface; the review precedes
+   the merge word (no-solo-approval, § Workflow).
+3. **The leaving ritual** — "done for today" (handoff) or "take
+   it to the cloud" (liftoff), with the Web/Design context carried
+   inline in the leaving message; no question is asked. Both END
+   the session.
 
 ## Workflow (non-negotiable)
-- Two computers + cloud. ALWAYS `git pull` at session start; commit +
-  push before finishing. (pickup and handoff do this.)
-- Never work on main. Every task is born bench-first: freshly pulled
-  main → branch feat/ | fix/ | docs/ | chore/<id>-<slug> → spec (if
-  the task needed discussion) + memory stub as first commits →
-  **draft PR at birth**, every task, control tower and cockpit
-  included — the
-  task is public and rescuable from its first minute; no work ever
-  exists in only one place → push every commit.
-- One task = one branch = one PR.
-- NEVER merge without the founder's explicit approval. Ready = tests +
-  linter green, PR flipped ready, plain-language summary (+ preview
-  link) → ask. On approval: the atomic weld, then
-  squash-merge, delete branch, pull main. (ship does this.) Sole
-  exception: the micro-PR — touches ONLY [DASHBOARD.md](DASHBOARD.md)
-  and/or [IDEAS.md](IDEAS.md), written by a ritual (handoff · liftoff
-  · ship's tail · pickup's stale-repaint) — merges immediately
-  without asking.
-- No-solo-approval
-  ([D-046](record/DECISIONS.md#d-046--flight-cockpit-the-control-tower-online),
-  generalizing the standing external-review practice — precedent
-  [#175](https://github.com/wsher0901/roam/pull/175)): no diff
-  merges on its author's own approval. Independent review first,
-  then the founder's word. Lane-authored diffs: any non-author
-  session's review (cockpit or control tower) + the founder's word
-  is lawful from anywhere. Self-authored diffs (tower- or
-  cockpit-authored): external Web review before the word.
-  "Non-author" means the PAYLOAD DIFF: on bench-first flights the
-  baton-holder necessarily writes the memory stub and the airborne
-  ack, and neither makes it the payload's author — but a
-  baton-holder may never review a payload it wrote itself.
-  A TEAMMATE-AUTHORED DIFF IS SELF-AUTHORED: an agent-team
-  teammate is a full session pushing as the founder, so it earns
-  no independent review merely by being a second agent — external
-  Web review before the word, exactly as for any self-authored
-  diff ([HOME §Agent teams](HOME.md#agent-teams)).
-- Leaving phrases ("done for today", "bye", "wrapping up") → run the
-  full handoff immediately, unasked. "Take it to the cloud" (or any
-  equivalent) → run liftoff. Both close the session. Leaving language
-  carrying watch-from-phone intent ("go remote" and close variants)
-  summons go-remote, NEVER handoff.
-- When a task's work is complete, run ship yourself — never declare a
-  task done in conversation without it.
-- Claim check before starting any task: open branches + draft PRs
-  answer it, read through the liveness rule
-  ([parallel-lanes §Liveness](skills/parallel-lanes.md#liveness--live-vs-reclaimable))
-  — a bench with a live heartbeat is CLAIMED, never picked up; a
-  reclaimable one is adopted via respawn; on doubt, ask. Commits are
-  the heartbeat.
-- Dispatch & away-mode (the chooser): mid-session parallelizable work
-  → LOCAL lane (background agents / worktrees). Leaving with nothing
-  continuing → handoff. Leaving with work continuing: machine going
-  dark → liftoff (cloud — fires the cockpit; the standard away
-  posture) · machine staying on → go-remote (the tether — a backstop
-  posture since
-  [D-046](record/DECISIONS.md#d-046--flight-cockpit-the-control-tower-online),
-  never the plan).
-  Cloud dispatch only through liftoff's sanctioned routes
-  ([parallel-lanes §Cloud spawn](skills/parallel-lanes.md#cloud-spawn--route-ladder)) —
-  never an ad-hoc CLI spawn. Nothing is ever silently parked: every
-  held, failed, or waiting item is recorded in its own memory +
-  [DASHBOARD](DASHBOARD.md).
-- When the founder states or confirms a roadmap-level change — a
-  task added, subtracted, moved, or pivoted; a stage reordered or
-  paused — or any standing product/workshop convention change, run
-  decide unasked — entry + ripple in the same commit. Task-local
-  implementation calls are not decisions; they go in the task's
-  memory file.
-- Before saying "done": sync the branch with current main (merge,
-  never rebase), then the verification loop, fixing failures as
-  they surface. Verification, exact order, before any "done":
-
-  ```sh
-  npm run check:links
-  npm run check:ledger
-  npm run check:memory
-  npm run lint && npm run format:check
-  npm test && npm run build
-  ```
-
-  "done" also requires the
-  pushed commit's Actions run green — local green never suffices.
-- If the founder forgets any of this, do it anyway without being asked.
-- Pacing law:
-  the ongoing task and pending blocks outrank new tasks. At most
-  "Now:" + one parallel slot needs the founder's attention.
-  Fully-specified no-decision [P] work may run as extra lanes at your
-  discretion; "more" unlocks the full menu. Stopping is a valid next
-  step.
-- The moment the founder voices an idea or a defect outside the
-  current task's scope, append one dated line to [IDEAS.md](IDEAS.md)
-  unasked — the single inbox; nothing is scope until triaged into
-  [ROADMAP](ROADMAP.md) via decide. (No GitHub Issues, no boards.)
+- **TWO COMPUTERS + CLOUD.** Always `git pull` at session start;
+  commit and push before finishing. (pickup and handoff do this.)
+- **BENCH-FIRST BIRTH.** Never work on main. Every task is born
+  from freshly pulled main → branch `feat/` | `fix/` | `docs/` |
+  `chore/<id>-<slug>` → spec (when the task needed discussion) +
+  memory stub as first commits → **draft PR at birth**, every task,
+  control tower and cockpit alike. The task is public and
+  rescuable from its first minute; no work ever exists in only one
+  place. Push every commit. → § Task anatomy
+- **ONE TASK = ONE BRANCH = ONE PR.**
+- **THE MERGE GATE.** Never merge without the founder's explicit
+  approval. Ready means green, flipped, and summarized in plain
+  language; on the word, ship performs the atomic weld and merges.
+  Sole exception: the MICRO-PR — only [DASHBOARD](DASHBOARD.md) and/or
+  [IDEAS](IDEAS.md), written by a ritual (handoff · liftoff ·
+  ship's tail · pickup's stale-repaint) — merges immediately
+  without asking. → [ship](skills/ship.md) ·
+  [HOME §Micro-PRs](HOME.md#micro-prs) ·
+  [D-023](record/DECISIONS.md#d-023--universal-draft-pr-at-birth-and-micro-pr-carve-out)
+- **NO-SOLO-APPROVAL.** No diff merges on its author's own
+  approval: independent review first, then the founder's word.
+  Lane-authored diffs take any non-author session's review
+  (cockpit or control tower) + the word, from anywhere.
+  Self-authored diffs — tower-, cockpit- OR TEAMMATE-authored,
+  since a teammate is a full session pushing as the founder — take
+  an external Web review before the word. "NON-AUTHOR" MEANS THE
+  PAYLOAD DIFF: a baton-holder necessarily writes the memory stub
+  and the airborne ack on bench-first flights, and neither makes
+  it the payload's author — but it may never review a payload it
+  wrote itself. →
+  [D-046](record/DECISIONS.md#d-046--flight-cockpit-the-control-tower-online)
+  (precedent [#175](https://github.com/wsher0901/roam/pull/175)) ·
+  [HOME §Agent teams](HOME.md#agent-teams)
+- **LEAVING PHRASES ARE COMMANDS.** "done for today", "bye",
+  "wrapping up" → run the full handoff immediately, unasked.
+  "Take it to the cloud" or any equivalent → liftoff. Both close
+  the session. Leaving language carrying watch-from-phone intent
+  ("go remote" and close variants) summons go-remote, NEVER
+  handoff. → [handoff](skills/handoff.md) ·
+  [liftoff](skills/liftoff.md) · [go-remote](skills/go-remote.md)
+- **SHIP CLOSES A TASK.** When a task's work is complete, run ship
+  yourself — never declare a task done in conversation without it.
+  → [ship](skills/ship.md)
+- **CLAIM CHECK BEFORE STARTING.** Open branches + draft PRs
+  answer it, read through the liveness rule: a bench with a live
+  heartbeat is CLAIMED, never picked up; a reclaimable one is
+  adopted via respawn; on doubt, ask. Commits are the heartbeat. →
+  [parallel-lanes §Liveness](skills/parallel-lanes.md#liveness--live-vs-reclaimable)
+- **DELEGATION & AWAY-MODE (the chooser law).** Mid-session
+  parallelizable work → a LOCAL lane (background agents /
+  worktrees). Leaving with nothing continuing → handoff. Leaving
+  with work continuing: machine going dark → liftoff (cloud —
+  fires the cockpit; the standard away posture) · machine staying
+  on → go-remote (the tether — a backstop posture, never the
+  plan). Cloud lanes launch ONLY through liftoff's sanctioned
+  routes, never an ad-hoc CLI spawn. →
+  [parallel-lanes §Cloud spawn](skills/parallel-lanes.md#cloud-spawn--route-ladder)
+  ·
+  [D-046](record/DECISIONS.md#d-046--flight-cockpit-the-control-tower-online)
+- **NOTHING IS SILENTLY PARKED.** Every held, failed, or waiting
+  item is recorded in its own memory + [DASHBOARD](DASHBOARD.md).
+- **DECIDE RUNS UNASKED** the moment the founder states or
+  confirms a roadmap-level change — a task added, subtracted,
+  moved, or pivoted; a stage reordered or paused — or any standing
+  product/workshop convention change. Entry + ripple in the same
+  commit. Task-local implementation calls are NOT decisions; they
+  go in the task's memory. → [decide](skills/decide.md)
+- **BEFORE SAYING "DONE".** Sync the branch with current main
+  (merge, never rebase), then run the verification loop, fixing
+  failures as they surface. The exact commands, in their exact
+  order, live in [ship §1](skills/ship.md#1--preflight) — their
+  one home. "Done" also requires the PUSHED commit's Actions run
+  green; local green never suffices. →
+  [D-038](record/DECISIONS.md#d-038--ci-is-the-arbiter)
+- **PACING LAW.** The ongoing task and pending blocks outrank new
+  tasks. At most "Now:" + one parallel slot needs the founder's
+  attention. Fully-specified no-decision [P] work may run as extra
+  lanes at your discretion; "more" unlocks the full menu. Stopping
+  is a valid next step. →
+  [D-009](record/DECISIONS.md#d-009--pacing-law)
+- **IDEAS IS THE ONLY INBOX.** The moment the founder voices an
+  idea or a defect outside the current task's scope, append one
+  DATED line to [IDEAS](IDEAS.md) unasked, per its entry
+  contract.
+  Nothing is scope until triaged into [ROADMAP](ROADMAP.md) via
+  decide. (No GitHub Issues, no boards.) →
+  [D-066](record/DECISIONS.md#d-066--the-ideas-entry-contract)
+- **IF THE FOUNDER FORGETS ANY OF THIS, DO IT ANYWAY** without
+  being asked.
 
 ## Task anatomy
 Every task carries three artifacts on its branch:
@@ -150,68 +151,63 @@ frontmatter shipped: + pr:). Git keeps the technical record;
 record/history/ keeps the meaning.
 
 ## Parallel lanes & cloud
-The LANE LAW (seat-blind — identical local or cloud): every lane
-1. is born bench-first BY THE BATON-HOLDER (control tower or
-   cockpit) — branch, spec, memory
-   stub, draft PR laid on origin BEFORE the lane exists: public and
-   rescuable from its first minute;
-2. runs the canary handshake before real work — its first act is a
-   trivial push; the baton-holder writes airborne-or-failed into the
-   pre-birthed memory; a lane seeing failed/aborted, a Status it
-   does not own (parked · respawned · superseded), or silence past
-   the timeout (constants:
-   [parallel-lanes §Canary](skills/parallel-lanes.md#canary-handshake-both-sides)),
-   self-terminates after pushing what exists — a worker that cannot
-   push is a zombie writing into the void;
-3. pushes every commit — unpushed work does not exist;
-4. never shares a file with any sibling — merges cannot collide by
-   construction;
-5. writes ITS OWN memory at four moments — handshake claim, each
-   decision or dead end (invisible in the final diff, so written
-   down), blocking, completion (before the ready-flip);
-6. speaks through its PR — `BLOCKED:` comments, ready-flip + plain
-   summary;
-7. never writes main — no [DASHBOARD](DASHBOARD.md), no
-   [IDEAS](IDEAS.md), no [ROADMAP](ROADMAP.md) ticks, no history/,
-   no merges: "done" must keep meaning founder-approved and merged.
-Seat-invariance law: a task's artifacts must be indistinguishable by
-seat; only ritual stamps name seats.
-- Park protocol: handoff FULL parks every live local lane — the park
-  (a rescue-save if needed, then ONE stamped Status line) is the only
-  moment the control tower may touch a lane's tree or diary
-  mid-flight;
-  liftoff is the only road from parked to cloud. Mechanics:
-  [handoff §1.5](skills/handoff.md#15--park-the-local-lanes-full-only).
-- Idle-wait: a blocked lane on a resumable, phone-reachable vehicle
-  (cloud session · RC-visible local session) stays alive and waits —
-  the founder's reply resumes it in-thread. Blocked local lanes still
-  park at handoff FULL (the machine is halting). Termination only on:
-  done · spawn failure · genuine error · a Status the lane does not
-  own. Mechanics:
-  [parallel-lanes §Wake-lock & parking](skills/parallel-lanes.md#wake-lock--parking).
-Baton law: exactly one control tower — the session the founder is
-driving; the baton is the right to be that one driving session.
-The BATON-HOLDER — the commanding session; control tower on the
-ground, cockpit in flight.
-Claimed by pickup on fresh origin; released by FULL handoff or
-liftoff (which close the session — liftoff's fire hands the baton
-to the cockpit it summons, the control tower online:
-[D-046](record/DECISIONS.md#d-046--flight-cockpit-the-control-tower-online)).
-A session whose
-[DASHBOARD](DASHBOARD.md) seat-stamp is superseded EXITS BY ITS
-OWN CLOSING RITUAL, never bare
-([D-062](record/DECISIONS.md#d-062--the-wake-rule-generalized)):
-a cockpit by [land](skills/land.md), so its lanes are fenced
-rather than abandoned; a ground control tower by
-[handoff](skills/handoff.md)'s capture-then-close, TEAM FINDINGS
-CAPTURED FIRST if a team is live. No superseded seat writes a
-board — the baton has already moved, and the exit writes only its
-own homes. Between control towers the baton is dormant; lanes fly
-on.
-Cloud lanes launch only through liftoff's sanctioned routes; never
-end a session before its work is on origin.
-Mechanics: [parallel-lanes](skills/parallel-lanes.md) ·
-[liftoff](skills/liftoff.md) · [go-remote](skills/go-remote.md).
+- **THE LANE LAW** (seat-blind — identical local or cloud). Every
+  lane is BORN BENCH-FIRST BY THE BATON-HOLDER, with branch, spec,
+  memory stub and draft PR laid on origin BEFORE the lane exists;
+  it then runs the CANARY HANDSHAKE before real work — a trivial
+  first push, answered by the baton-holder writing
+  airborne-or-failed into the pre-birthed memory. It pushes every
+  commit, never shares a file with a sibling (so merges cannot
+  collide by construction), writes ITS OWN memory at four moments
+  — claim, each decision or dead end, blocking, completion — and
+  speaks through its PR.
+  TWO PROHIBITIONS ARE ABSOLUTE: a lane NEVER WRITES MAIN — no
+  [DASHBOARD](DASHBOARD.md), no [IDEAS](IDEAS.md), no
+  [ROADMAP](ROADMAP.md) ticks, no history/, no merges, because
+  "done" must keep meaning founder-approved and merged; and a lane
+  seeing failed/aborted, a Status it does not own (parked ·
+  respawned · superseded), or silence past the timeout
+  SELF-TERMINATES AFTER PUSHING WHAT EXISTS — a worker that cannot
+  push is a zombie writing into the void. → the seven duties
+  enumerated:
+  [parallel-lanes §The lane law](skills/parallel-lanes.md#the-lane-law-seat-blind--identical-local-or-cloud)
+  · the canary constants:
+  [§Canary](skills/parallel-lanes.md#canary-handshake-both-sides)
+- **SEAT-INVARIANCE.** A task's artifacts must be indistinguishable
+  by seat; only ritual stamps name seats.
+- **BATON LAW.** Exactly one control tower — the session the
+  founder is driving — and the baton is the right to be that
+  session. The BATON-HOLDER is the commanding session: control
+  tower on the ground, cockpit in flight. Claimed by pickup on
+  fresh origin; released by FULL handoff or liftoff, which close
+  the session (liftoff's fire hands the baton to the cockpit it
+  summons). Between control towers the baton is dormant; lanes fly
+  on. →
+  [D-046](record/DECISIONS.md#d-046--flight-cockpit-the-control-tower-online)
+- **NO SUPERSEDED SEAT EXITS BARE.** A session whose
+  [DASHBOARD](DASHBOARD.md) seat-stamp is superseded exits by its
+  OWN closing ritual: a cockpit by [land](skills/land.md), so its
+  lanes are fenced rather than abandoned; a ground control tower by
+  [handoff](skills/handoff.md)'s capture-then-close, TEAM FINDINGS
+  CAPTURED FIRST if a team is live. It writes no board — the baton
+  has already moved. →
+  [D-062](record/DECISIONS.md#d-062--the-wake-rule-generalized)
+- **PARK PROTOCOL.** Handoff FULL parks every live local lane, and
+  that park — a rescue-save if needed, then ONE stamped Status
+  line — is the ONLY moment the control tower may touch a lane's
+  tree or diary mid-flight. Liftoff is the only road from parked
+  to cloud. →
+  [handoff §1.5](skills/handoff.md#15--park-the-local-lanes-full-only)
+- **IDLE-WAIT.** A blocked lane on a resumable, phone-reachable
+  vehicle (cloud session · RC-visible local session) stays alive
+  and waits — the founder's reply resumes it in-thread. Blocked
+  LOCAL lanes still park at handoff FULL, because the machine is
+  halting. Termination only on: done · spawn failure · genuine
+  error · a Status the lane does not own. →
+  [parallel-lanes §Wake-lock & parking](skills/parallel-lanes.md#wake-lock--parking)
+- **NEVER END A SESSION BEFORE ITS WORK IS ON ORIGIN.** →
+  [parallel-lanes](skills/parallel-lanes.md) ·
+  [liftoff](skills/liftoff.md) · [go-remote](skills/go-remote.md)
 
 ## Knowledge & tracking
 - One ladder, one home per level: [FOUNDATION](FOUNDATION.md)
@@ -233,6 +229,28 @@ Mechanics: [parallel-lanes](skills/parallel-lanes.md) ·
 - Retroactivity law: when a convention is adopted OR changed, backfill
   every pre-existing file in the same PR; any later-found gap is
   repaired the moment it is found (current PR, or a chore PR).
+- **Verification law:** nothing unrecorded may be dropped, and no
+  status may be asserted without the record confirming it. VERIFY
+  BEFORE DROP — before deleting or compressing any narrative,
+  verify its content is present at the home you are pointing to;
+  what has no home stays where it is, or gains one first. VERIFY
+  BEFORE CLASSIFY — before calling anything done, open, dead, or
+  shipped, check the record rather than the note that claims it.
+- **Sweep law:** any pointer or citation sweep greps THE
+  DESTINATION — the heading, anchor, or name being replaced —
+  never the phrasings you predict will surround it. THE PROOF OF A
+  SWEEP IS A RE-RUN RETURNING ZERO; a sweep that merely ran is not
+  a sweep that finished, and a clean result from a bad pattern is
+  more dangerous than a red one.
+- **Box masters** are a class: a box master is its own top-level
+  file carrying rules, invariants and pointers — never procedures,
+  never values. The external box is a COPY, never the source;
+  edits ride PRs into the master; the re-save rides
+  [DASHBOARD](DASHBOARD.md) Needs-you until it is done, because a
+  master change that never reaches its box fails SILENTLY. →
+  [D-064](record/DECISIONS.md#d-064--the-box-master-class-and-setup-entry-contract)
+  ·
+  [D-065](record/DECISIONS.md#d-065--the-box-master-diet)
 - One home per class (the routing law): every information class
   has exactly ONE home — the table in
   [HOME §Where information goes](HOME.md#where-information-goes).
