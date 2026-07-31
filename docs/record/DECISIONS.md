@@ -3390,17 +3390,9 @@ addressed the board by its old section names ·
 [the spec](specs/report-shapes.md) + its memory (in flight on the
 bench; moves to history at the weld) · this entry.
 
-## D-068 — the short-anchor law
+## D-068 — The short-anchor law
 
-In full: 2026-07 — The short-anchor law — every DECISIONS entry
-heading is a SHORT NAME (8 words maximum) and the complete
-title or statement lives verbatim in the entry body as its first
-line, "In full: …"; anchors FREEZE AT MINT, so a short name is
-never edited after it is written; every citation repo-wide links
-the short anchor; D-001 through D-067 are retrofitted in the
-minting PR as a content-preserving format change sanctioned by
-the retroactivity law — append-only protects the words, and every
-word survives one line lower.
+In full: 2026-07 — The short-anchor law — every DECISIONS entry heading is a SHORT NAME (8 words maximum) and the complete title or statement lives verbatim in the entry body as its first line, "In full: …"; anchors FREEZE AT MINT, so a short name is never edited after it is written; every citation repo-wide links the short anchor; D-001 through D-067 are retrofitted in the minting PR as a content-preserving format change sanctioned by the retroactivity law — append-only protects the words, and every word survives one line lower.
 
 **Decision:** a decision heading carries a short name, eight words
 at most: `## D-0XX — <short name>`. The complete statement — and
@@ -3445,7 +3437,10 @@ brevity is exactly the kind a later reader would want to "improve".
 **Affects:** [DECISIONS](DECISIONS.md) (all 68 entries: short
 headings, `In full:` lines, 92 internal citations repointed) ·
 [decide](../skills/decide.md) (§1's entry format, the freeze rule,
-the why) · THE CITING SWEEP by destination-grep — 23 living files
+the why; §3 gains THE VERBATIM CARVE-OUT — the weave rule does not
+reach the `In full:` line, whose plain D-numbers are frozen text) ·
+[HOME](../HOME.md) (the ledger's file-catalog row: append-only
+governs meaning, not bytes) · THE CITING SWEEP by destination-grep — 23 living files
 ([LAWS](../LAWS.md) · [HOME](../HOME.md) · [ATLAS](../ATLAS.md) ·
 [ENGINE](../ENGINE.md) · [ROADMAP](../ROADMAP.md) ·
 [SETUP](../SETUP.md) · [IDEAS](../IDEAS.md) ·

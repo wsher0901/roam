@@ -5,7 +5,7 @@ title: The short-anchor law (D-068)
 status: open
 stage: workshop
 branch: docs/anchor-diet
-pr: —
+pr: 253
 opened: 2026-07-31
 shipped: —
 ---
@@ -78,32 +78,49 @@ one line down.
 
 ## Done means
 
-- [ ] D-068 exists in the NEW format, with Decision · Why ·
+- [x] D-068 exists in the NEW format, with Decision · Why ·
       Alternatives rejected · Affects, and states the heading law,
       the `In full:` line, the freeze-at-mint rule, and the
       retrofit's sanction.
-- [ ] All 67 prior entries carry a short heading (≤8 words) and an
+- [x] All 67 prior entries carry a short heading (≤8 words) and an
       `In full:` line whose text is the old heading verbatim.
-- [ ] WORD-PRESERVATION PROVEN MECHANICALLY: every word of every
+- [x] WORD-PRESERVATION PROVEN MECHANICALLY: every word of every
       old heading is present in its `In full:` line, checked by
       script against the pre-retrofit file, zero exceptions.
-- [ ] [decide](../../skills/decide.md) carries the heading law and
+- [x] [decide](../../skills/decide.md) carries the heading law and
       its one-line why.
-- [ ] Every `DECISIONS.md#d-` citation in the tree points at a
+- [x] Every `DECISIONS.md#d-` citation in the tree points at a
       short anchor; `check:links` green is the proof.
-- [ ] Frozen-shelf files took pointer-only repairs — proven by a
+- [x] Frozen-shelf files took pointer-only repairs — proven by a
       diff that shows changed anchor text and nothing else — and
       each is named in the memory.
-- [ ] No master's fence changed; no box re-save results.
-- [ ] [IDEAS](../../IDEAS.md): the LAWS-ANCHOR line closes 🟢 with
+- [x] No master's fence changed; no box re-save results.
+- [x] [IDEAS](../../IDEAS.md): the LAWS-ANCHOR line closes 🟢 with
       this PR as its vehicle, in CLOSED per the entry contract.
-- [ ] `check:links` · `check:ledger` · `check:memory` · lint ·
+- [x] `check:links` · `check:ledger` · `check:memory` · lint ·
       format · test · build green; Actions green on the pushed
       head; ship §6 critic run.
 
 ## Deviations
 
-<filled by ship>
+1. **The sweep's destination pattern was wrong twice**, and the
+   mandate's `DECISIONS.md#d-` grep is why the second one was
+   invisible: 92 citations INSIDE DECISIONS itself are bare
+   `](#d-046--…)` anchors with no filename. `check:links` caught
+   them. The story records both misses.
+2. **[HOME](../../HOME.md) and
+   [decide](../../skills/decide.md) §3 took edits beyond the
+   citing sweep** — HOME's ledger row asserted entries "are never
+   rewritten", and decide's weave rule reached into the verbatim
+   `In full:` line. Both were contradictions this bench CREATED,
+   so both are repaired in the PR that created them, per the
+   retroactivity law.
+3. **[DASHBOARD](../../DASHBOARD.md) took one pointer line**,
+   which is a hand edit to a rituals-only file. A dead anchor
+   there fails `check:links`, so the alternative was a red gate.
+   Named in [D-068](../DECISIONS.md#d-068--the-short-anchor-law)'s
+   Affects: the rituals-only rule governs the board's STATE, and
+   nothing was repainted.
 
 ## Open questions
 

@@ -1,7 +1,7 @@
 ---
 type: memory
 id: anchor-diet
-updated: 2026-07-31 13:35 · ship · work PC
+updated: 2026-07-31 14:05 · ship · work PC
 ---
 
 # anchor-diet — short stable anchors for the decision ledger
@@ -14,7 +14,9 @@ minted in the new format as its own first instance, all 67 prior
 entries are retrofitted with word preservation proven per entry,
 848 citations are repointed across 152 files, and
 [decide](../skills/decide.md) writes the new format from here on.
-Full CI mirror green; Actions green on the pushed head.
+Full CI mirror green; Actions green on the pushed head. The
+critic returned eight findings, three notable; all eight are
+repaired (below).
 
 ## What this task is
 
@@ -60,12 +62,26 @@ entry.
 
 **WORD PRESERVATION, per entry, against the pre-retrofit file.**
 The retrofit is only lawful because nothing is lost, so "nothing
-is lost" could not be a claim in a commit message. The script
-captured all 67 headings BEFORE rewriting, then re-read the file
-after and compared each `In full:` line to the heading it
-replaced: byte-identical, all 67, or the run aborts. The date rode
-along inside that text, which is why it is still in the record
-even though it left the heading.
+is lost" could not be a claim in a commit message. The date rode
+along inside the heading text, which is why it is still in the
+record even though it left the heading.
+
+THE PROOF IS REPRODUCIBLE FROM GIT ALONE — the critic asked for
+this, and it was right to: a legality argument that only its
+author can run is not a proof. Anyone, at any seat, can re-derive
+it from the two committed versions of the file:
+
+```sh
+git show main:docs/record/DECISIONS.md   > /tmp/before.md
+git show HEAD:docs/record/DECISIONS.md   > /tmp/after.md
+```
+
+Then, for each `## D-0XX — …` heading in `before.md`, the text
+after the D-number must appear byte-identical as that entry's
+`In full:` line in `after.md`. Run at 2026-07-31: 67 entries
+checked, 0 mismatches. No throwaway script is committed, because
+the two file versions ARE the evidence and they live in git
+forever.
 
 **POINTER-ONLY, per frozen file.** 128 of the 152 changed files
 sit on the frozen shelves — history, specs, chronicle, retired,
@@ -143,6 +159,46 @@ OWED.
   [the cloud-birth-in-CI probe](../record/probes/cloud-birth-in-ci.md).
 - **[IDEAS](../IDEAS.md)** — the LAWS-ANCHOR line closes 🟢 and
   moves to CLOSED as one line, per the entry contract.
+
+## The critic round
+
+Eight findings, three notable. All repaired:
+
+- **HOME's manual said the ledger's entries "are never
+  rewritten"** — flatly contradicted by 68 re-headed entries. The
+  row now states the real rule, which is
+  [D-057](../record/DECISIONS.md#d-057--the-record-shelf)'s:
+  append-only governs MEANING, not bytes. No entry's words are
+  ever changed or removed; a mechanical format or link repair is
+  maintenance.
+- **The weave rule now reached into frozen text.**
+  [decide](../skills/decide.md) §3 says every D-number in an entry
+  is a link — but the `In full:` line is a VERBATIM QUOTATION, and
+  roughly forty of them carry plain "(amends D-009)" clauses. A
+  later reader "repairing" one would be altering the record. §3
+  gains the carve-out, absolute and stated as such.
+- **The word-preservation proof was mine alone.** It ran, and it
+  passed, and the critic could not re-run it — which makes it an
+  assertion, not a proof, on the one claim that licenses touching
+  an append-only file. The story now carries the two `git show`
+  commands that re-derive it from committed state; no script is
+  needed, because the before-and-after files ARE the evidence.
+- **D-068's own entry was the one entry not written the way its
+  format was applied** — a lowercase heading against every other
+  entry's capital, and a hard-wrapped `In full:` line against 67
+  single-line ones. Both normalized while the anchor was still
+  cheap to change; capitalization does not move the slug.
+- **decide's template put the heading and `In full:` on
+  consecutive lines** while every real entry separates them with a
+  blank line. Template corrected to what the file actually does.
+- **The board took a hand edit.** One pointer line — a dead anchor
+  had to be repaired or `check:links` goes red. Named in D-068's
+  Affects and here rather than passed over: the board's
+  rituals-only rule governs its STATE, and a link repair is the
+  same maintenance D-057 licenses on the shelves. Nothing was
+  repainted.
+- **The spec's Done-means were unticked** at a gate presenting
+  itself as complete. Ticked honestly.
 
 ## Where to look
 

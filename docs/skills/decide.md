@@ -16,6 +16,7 @@ Read the last D-number in [DECISIONS.md](../record/DECISIONS.md); next = +1.
 Append in exactly this format:
 
 ## D-0XX — <short name, 8 words maximum>
+
 In full: <the complete title or statement, however long>
 
 **Decision:** <what we chose, plain language>
@@ -56,6 +57,12 @@ line and the actual edits must match exactly.
 Every D-number, roadmap ID, fact ID, and doc mention in the entry is
 a markdown link; anchors derived from the target file's actual
 headings; link only targets that exist.
+
+ONE CARVE-OUT, and it is absolute: THE `In full:` LINE IS A
+VERBATIM QUOTATION and the weave rule does not reach it. Plain
+D-numbers inside it stay plain. A later reader who "repairs" one
+is altering frozen text — the words in that line are the record
+([D-068](../record/DECISIONS.md#d-068--the-short-anchor-law)).
 
 ## 4 · Delivery
 Invoked inside an open task: the entry rides that task's PR, and the
