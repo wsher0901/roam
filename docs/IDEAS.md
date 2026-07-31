@@ -19,6 +19,12 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
 
 ## Open
 
+- ⏳ The baton case table has no case for a GROUND HANDOFF — the
+  ritual releases the baton, but no row says what THE BATON
+  section should then read, so this sitting's close had to write
+  a line the table does not define. Mint the case where the
+  others live. (2026-07-31, the handoff that hit it) →
+  [handoff §4](skills/handoff.md#4--repaint-dashboard-the-board-spec--single-source)
 - ⏳ The links gate is destination-blind — it proves an anchor
   EXISTS, never that it is the RIGHT one, and never that a
   mention became a link at all; both misses have already shipped
