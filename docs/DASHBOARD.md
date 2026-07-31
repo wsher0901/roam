@@ -6,7 +6,7 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-07-31 · 15:34 by ship's tail · from work PC
+Painted 2026-07-31 · 16:26 by ship's tail · from work PC
 Control tower at the work PC · needs-you 0 · git outranks this
 board. How to read it →
 [HOME §Reading the board](HOME.md#reading-the-board)
@@ -29,9 +29,9 @@ Nothing in flight — the floor is clear.
 
 ## Working on
 
-- The workshop diet — eight benches deep, and it has reached the
-  file every session reads. LAWS is a register now; the diet has
-  no named next file.
+- The workshop diet — nine benches deep. The last one left the
+  documents and walked the FLIGHT PATH instead, which is where
+  the remaining bugs turned out to be.
 
 The standing order
 ([D-060](record/DECISIONS.md#d-060--the-three-phase-standing-order)),
@@ -49,27 +49,28 @@ one phase per line:
 
 **Completed**
 
+- Baton renderings single-homed — one case table at handoff §4;
+  three flight-path contradictions repaired, one of them found
+  by the critic.
+  [#257](https://github.com/wsher0901/roam/pull/257)
 - The law register — LAWS recut to NAME → rule → pointer; three
   laws written down (verification · sweep · box-master); the
   touchpoints go to three.
   [#255](https://github.com/wsher0901/roam/pull/255)
-- The short-anchor law — decision anchors go from 1,038
-  characters to 57; all 67 prior entries retrofitted, 848
-  citations swept.
-  [#253](https://github.com/wsher0901/roam/pull/253)
 - The report skeleton + the board diet — one shape for every
   founder-facing report; the board diets to the same principle.
   [#250](https://github.com/wsher0901/roam/pull/250)
 **Issues**
 
+- ✓ Three flight-path bugs no gate could see — a url painted
+  before it exists, one landing painted two ways, and a fenced
+  fleet nobody offers to resume — found by walking the path
+  rather than reading the files.
+  [#257](https://github.com/wsher0901/roam/pull/257)
 - ✓ Two laws this workshop kept re-learning are now written down
   — verify before drop, and the proof of a sweep is a re-run
   returning zero.
   [#255](https://github.com/wsher0901/roam/pull/255)
-- ✓ A destination-grep is only as good as its pattern — an
-  underscore and a bare `](#d-…)` form hid 132 citations from the
-  anchor sweep until re-running it returned zero; resolved at
-  [#253](https://github.com/wsher0901/roam/pull/253).
 - ⏳ `npm run count:runs` fails under the work PC's Git Bash while
   the script run directly succeeds. → its line in
   [IDEAS](IDEAS.md)
