@@ -1,7 +1,9 @@
 ---
-type: memory
+type: history
 id: atlas-census
-updated: 2026-07-31 16:51 · ship · work PC
+updated: 2026-07-31 16:59 · weld · work PC
+shipped: 2026-07-31 16:59
+pr: 259
 ---
 
 # atlas-census — the delivery chain, drawn
@@ -9,8 +11,8 @@ updated: 2026-07-31 16:51 · ship · work PC
 ## Status
 
 complete, awaiting merge — 2026-07-31, work PC.
-[D-071](../record/DECISIONS.md#d-071--atlas-gains-the-enforcement-mesh)
-is minted, [ATLAS](../ATLAS.md) carries seven diagrams, and the
+[D-071](../../../DECISIONS.md#d-071--atlas-gains-the-enforcement-mesh)
+is minted, [ATLAS](../../../../ATLAS.md) carries seven diagrams, and the
 new §7 renders the enforcement chain with its honest gaps. ALL
 SEVEN MERMAID BLOCKS PARSE against the real grammar (below).
 Full CI mirror green. The critic returned eight findings, three
@@ -22,12 +24,12 @@ ATLAS drew six things the workshop DOES and nothing about how any
 of it is ENFORCED. Diagram 7 draws the delivery chain from
 `CLAUDE.md`'s ambient import to the founder's word, and names the
 three joints that are judgment only. Contract:
-[the spec](../record/specs/atlas-census.md).
+[the spec](../../../specs/atlas-census.md).
 
 ## Pending issues
 
 - Tower-authored, so
-  [no-solo-approval](../LAWS.md#workflow-non-negotiable) requires
+  [no-solo-approval](../../../../LAWS.md#workflow-non-negotiable) requires
   an external Web review before the founder's word at THE GATE. DO
   NOT MERGE.
 
@@ -104,7 +106,7 @@ dashed box is a real miss this workshop has already paid for:
   it.
 
 **AND THE CITATION FOR THEIR PATH FORWARD WAS FALSE.** I pointed
-the note at the HARNESS V2 line in [IDEAS](../IDEAS.md), having
+the note at the HARNESS V2 line in [IDEAS](../../../../IDEAS.md), having
 verified only that the line EXISTS — which is what the spec asked
 for, and not enough. The critic read it: HARNESS V2 names six
 hook-event items, and not one is a link-destination check, a
@@ -136,31 +138,31 @@ NOTHING WAS ADDED TO THE MANIFEST for a one-time check.
 
 ### Every file touched
 
-- **[ATLAS](../ATLAS.md)** — §7 added; the header six → seven; the
+- **[ATLAS](../../../../ATLAS.md)** — §7 added; the header six → seven; the
   stamp refreshed from the shell clock; diagram 1's Boxes line
   re-homes the verification loop at
-  [ship §1](../skills/ship.md#1--preflight) with LAWS kept beside
+  [ship §1](../../../../skills/ship.md#1--preflight) with LAWS kept beside
   it as the law's home; diagrams 3 and 6 gain the baton
   case-table citation.
-- **[HOME](../HOME.md)** — the files-table ATLAS row, six →
+- **[HOME](../../../../HOME.md)** — the files-table ATLAS row, six →
   seven. One row.
-- **[DECISIONS](../record/DECISIONS.md)** — D-071 appended.
+- **[DECISIONS](../../../DECISIONS.md)** — D-071 appended.
 
 ### The sweep
 
 Destination-grep for "six diagrams" across the tree. Every
 survivor is FROZEN RECORD and correct as written — the
-[D-058](../record/DECISIONS.md#d-058--atlas-the-system-spine)
+[D-058](../../../DECISIONS.md#d-058--atlas-the-system-spine)
 entry's `In full:` line, the atlas bench's
-[story](../record/history/workshop/definition/atlas.md) and
-[spec](../record/specs/atlas.md) — each recording what was true
+[story](atlas.md) and
+[spec](../../../specs/atlas.md) — each recording what was true
 when written. NO LIVING FILE says six. NOTHING NEEDED REPOINTING
 and no frozen file was touched: the change is additive, and no
 anchor was renamed.
 
 ## Where to look
 
-- [the spec](../record/specs/atlas-census.md) — the contract.
-- [ATLAS §7](../ATLAS.md) — the mesh.
-- [D-071](../record/DECISIONS.md#d-071--atlas-gains-the-enforcement-mesh).
+- [the spec](../../../specs/atlas-census.md) — the contract.
+- [ATLAS §7](../../../../ATLAS.md) — the mesh.
+- [D-071](../../../DECISIONS.md#d-071--atlas-gains-the-enforcement-mesh).
 - the Web ops chat, 2026-07-31 — where the census was approved.

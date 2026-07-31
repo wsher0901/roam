@@ -2,12 +2,12 @@
 type: spec
 id: atlas-census
 title: Atlas gains the enforcement mesh (D-071)
-status: open
+status: shipped
 stage: workshop
 branch: docs/atlas-census
 pr: 259
 opened: 2026-07-31
-shipped: —
+shipped: 2026-07-31
 ---
 
 # atlas-census — the delivery chain, drawn
