@@ -5,7 +5,7 @@ title: The law register and the manual groom (D-069)
 status: open
 stage: workshop
 branch: docs/laws-home-groom
-pr: —
+pr: 255
 opened: 2026-07-31
 shipped: —
 ---
@@ -92,42 +92,62 @@ uses, and §Reading the board stops duplicating the board spec.
 
 ## Done means
 
-- [ ] D-069 exists in the D-068 format, with Decision · Why ·
+- [x] D-069 exists in the D-068 format, with Decision · Why ·
       Alternatives rejected · Affects.
-- [ ] Every law in §Workflow and §Parallel lanes & cloud renders
+- [x] Every law in §Workflow and §Parallel lanes & cloud renders
       as NAME → 1–3 sentences → pointer.
-- [ ] THE VERIFICATION LAW APPLIED TO ITS OWN BIRTH: every
+- [x] THE VERIFICATION LAW APPLIED TO ITS OWN BIRTH: every
       sentence the recut drops is verified present at the
       pointer's target, and each load-bearing nuance (the
       payload-diff rule, the teammate rule, supersession, the
       canary constants) either survives as a sentence or points
       at a verified home. Named in the memory, one by one.
-- [ ] The three new laws are in §Knowledge & tracking, each with
+- [x] The three new laws are in §Knowledge & tracking, each with
       its D-number where one exists.
-- [ ] §The three touchpoints exists, carrying the review word;
+- [x] §The three touchpoints exists, carrying the review word;
       every citation of the old anchor re-points.
-- [ ] No lane-spawning "dispatch" survives in LAWS or HOME.
-- [ ] The verification fence is gone from LAWS and its literal
+- [x] No lane-spawning "dispatch" survives in LAWS or HOME.
+- [x] The verification fence is gone from LAWS and its literal
       commands are verified present in
       [ship](../../skills/ship.md).
-- [ ] HOME carries ONE day section; both old anchors' citations
+- [x] HOME carries ONE day section; both old anchors' citations
       re-point.
-- [ ] §Terms carries the six new rows, each passing the newcomer
+- [x] §Terms carries the six new rows, each passing the newcomer
       test, each in a fitting subsection.
-- [ ] §Reading the board keeps the reading keys and points at
+- [x] §Reading the board keeps the reading keys and points at
       handoff §4 for the map — verified to carry it.
-- [ ] [decide](../../skills/decide.md) carries the new-vocabulary
+- [x] [decide](../../skills/decide.md) carries the new-vocabulary
       ripple line.
-- [ ] THE SWEEP PROVEN: `check:links` green AND a re-run of the
+- [x] THE SWEEP PROVEN: `check:links` green AND a re-run of the
       destination grep returns zero. No hit inside a master fence
       (or it is reported, not edited).
-- [ ] `check:links` · `check:ledger` · `check:memory` · lint ·
+- [x] `check:links` · `check:ledger` · `check:memory` · lint ·
       format · test · build green; Actions green on the pushed
       head; ship §6 critic run.
 
 ## Deviations
 
-<filled by ship>
+1. **Four files outside the mandate's list were swept** — the
+   `.claude/skills/parallel-lanes/SKILL.md` and
+   `.claude/skills/pickup/SKILL.md` stubs, and the
+   `session-start` and `user-prompt-submit` hooks. Each carried
+   the retired "dispatch" vocabulary, and the two stubs MIRROR
+   the first line of skills this PR reworded — a stub may not
+   drift from its procedure
+   ([LAWS §Knowledge & tracking](../../LAWS.md#knowledge--tracking)).
+   The hooks inject that vocabulary into every sitting. Leaving
+   them would have made the sweep a half-sweep in the same PR
+   that mints the sweep law.
+2. **LAWS grew rather than shrank.** The recut compressed what it
+   touched — §Workflow 731 → 711 words, §Parallel lanes 495 →
+   462 — but three new laws landed, so the file went 2,136 →
+   2,318 words. Compression was never the goal the verification
+   law would trade meaning for.
+3. **The sweep's re-run returns zero over LIVING files only.**
+   Seven frozen stories still narrate "the daily loop" and "the
+   two touchpoints" as what they were at the time; their LINKS
+   are repaired and their prose is not. Stated because the memory
+   first claimed a flat zero.
 
 ## Open questions
 

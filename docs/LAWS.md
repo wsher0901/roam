@@ -30,8 +30,8 @@ The founder's only ritual duties. Everything else — recording,
 bookkeeping, claims, delegation — runs itself; genuine uncertainty
 and judgment calls still come to the founder.
 
-1. **The merge word** — the only merge gate. No diff merges
-   without it.
+1. **The merge word** — the only merge gate; the sole exception
+   is the micro-PR (§ Workflow).
 2. **The review word** — a self-authored diff at THE GATE takes
    the founder's "review" to the Web surface; the review precedes
    the merge word (no-solo-approval, § Workflow).
@@ -123,7 +123,8 @@ and judgment calls still come to the founder.
   [D-009](record/DECISIONS.md#d-009--pacing-law)
 - **IDEAS IS THE ONLY INBOX.** The moment the founder voices an
   idea or a defect outside the current task's scope, append one
-  line to [IDEAS](IDEAS.md) unasked, per its entry contract.
+  DATED line to [IDEAS](IDEAS.md) unasked, per its entry
+  contract.
   Nothing is scope until triaged into [ROADMAP](ROADMAP.md) via
   decide. (No GitHub Issues, no boards.) →
   [D-066](record/DECISIONS.md#d-066--the-ideas-entry-contract)
@@ -159,7 +160,7 @@ record/history/ keeps the meaning.
   commit, never shares a file with a sibling (so merges cannot
   collide by construction), writes ITS OWN memory at four moments
   — claim, each decision or dead end, blocking, completion — and
-  speaks only through its PR.
+  speaks through its PR.
   TWO PROHIBITIONS ARE ABSOLUTE: a lane NEVER WRITES MAIN — no
   [DASHBOARD](DASHBOARD.md), no [IDEAS](IDEAS.md), no
   [ROADMAP](ROADMAP.md) ticks, no history/, no merges, because
@@ -168,8 +169,10 @@ record/history/ keeps the meaning.
   respawned · superseded), or silence past the timeout
   SELF-TERMINATES AFTER PUSHING WHAT EXISTS — a worker that cannot
   push is a zombie writing into the void. → the seven duties
-  enumerated, and the canary constants:
-  [parallel-lanes](skills/parallel-lanes.md#canary-handshake-both-sides)
+  enumerated:
+  [parallel-lanes §The lane law](skills/parallel-lanes.md#the-lane-law-seat-blind--identical-local-or-cloud)
+  · the canary constants:
+  [§Canary](skills/parallel-lanes.md#canary-handshake-both-sides)
 - **SEAT-INVARIANCE.** A task's artifacts must be indistinguishable
   by seat; only ritual stamps name seats.
 - **BATON LAW.** Exactly one control tower — the session the

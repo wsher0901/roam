@@ -3533,7 +3533,14 @@ restatements go to three; the vocabulary sweep) ·
 [ship](../skills/ship.md) (§1 gains the literal verification loop
 — the content's home, laid before the fence died) ·
 [decide](../skills/decide.md) (§2's ripple gains: new vocabulary
-minted → a HOME §Terms row in the same PR) · THE ANCHOR SWEEP —
+minted → a HOME §Terms row in the same PR) · THE VOCABULARY SWEEP
+also reaches [parallel-lanes](../skills/parallel-lanes.md),
+[liftoff](../skills/liftoff.md), [pickup](../skills/pickup.md) —
+two of which CITED "the dispatch law" by a name LAWS no longer
+uses — and, beyond the doc tree, the two `.claude/` skill stubs
+that mirror those skills' first lines plus the two session hooks
+that inject the same vocabulary (SETUP's "dispatch button" stays:
+it names the GitHub feature) · THE ANCHOR SWEEP —
 [ATLAS](../ATLAS.md) and this file, plus pointer-only repairs on
 three frozen files · [the spec](specs/laws-home-groom.md) + its
 memory (in flight on the bench; moves to history at the weld) ·

@@ -1351,6 +1351,13 @@ the link for the full story.
 - **socket** — a named future capability deliberately excluded from
   the current version but designed to plug in later without a
   rewrite. Home: [ROADMAP §Pool](ROADMAP.md#pool--unversioned-sockets).
+- **the short-anchor law** — a decision's heading is its link
+  address, so it is kept to eight words at most and NEVER edited
+  afterwards; the full statement lives one line below it, marked
+  `In full:`. That is why a citation reads
+  `#d-068--the-short-anchor-law` rather than a paragraph. Home:
+  [D-068](record/DECISIONS.md#d-068--the-short-anchor-law) ·
+  [decide](skills/decide.md).
 - **D-number** — one permanently recorded decision (D-001, D-002,
   …) with rationale and rejected alternatives.
   Home: [DECISIONS](record/DECISIONS.md).
@@ -1589,13 +1596,6 @@ the link for the full story.
   [LAWS §Knowledge & tracking](LAWS.md#knowledge--tracking) ·
   [§Where information goes](#where-information-goes) (the row that
   names every master and its re-save).
-- **the short-anchor law** — a decision's heading is its link
-  address, so it is kept to eight words at most and NEVER edited
-  afterwards; the full statement lives one line below it, marked
-  `In full:`. That is why a citation reads
-  `#d-068--the-short-anchor-law` rather than a paragraph. Home:
-  [D-068](record/DECISIONS.md#d-068--the-short-anchor-law) ·
-  [decide](skills/decide.md).
 - **the board** — [DASHBOARD.md](DASHBOARD.md): the one rendered
   state surface, repainted wholesale by rituals, stamped, and
   always outranked by git. Home: [§The board](#the-board).
@@ -1621,8 +1621,8 @@ the link for the full story.
 - **the urgency ladder** — how the board's Needs-you is ordered so
   you can read it top-down: 🔴 blocking now · 🟡 needed, carrying
   its timing word · ⚪ whenever. Home:
-  [§Reading the board](#reading-the-board) ·
-  [handoff §4](skills/handoff.md#4--repaint-dashboard-the-board-spec--single-source).
+  [handoff §4](skills/handoff.md#4--repaint-dashboard-the-board-spec--single-source)
+  (the board spec, where every section's contents are defined).
 - **the outcome ledger** — the CLOSED half of
   [IDEAS.md](IDEAS.md). A closed idea is compressed to one line
   and KEPT, never deleted, so "what did we decide about that?"

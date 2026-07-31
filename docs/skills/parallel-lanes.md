@@ -4,9 +4,9 @@ title: Parallel lanes
 status: living
 ---
 
-# Parallel lanes — dispatching, flying, reviewing
+# Parallel lanes — delegating, flying, reviewing
 
-Consult before dispatching, running, or reviewing ANY lane, local or
+Consult before delegating, running, or reviewing ANY lane, local or
 cloud. The law below is stated in LAWS §Parallel lanes & cloud; this
 page adds the mechanics.
 
@@ -175,7 +175,7 @@ obey it before any retry. A
 Status it does not own — parked · respawned · superseded · failed —
 means: push nothing new, terminate. Completion and a failed spawn
 still PARK: the outcome is already in memory, and nothing continues
-without a founder-initiated action (the merge word, a fresh dispatch).
+without a founder-initiated action (the merge word, a fresh delegation).
 A `BLOCKED:` lane splits by vehicle: on a phone-reachable vehicle
 (cloud session · RC-tethered local session) it IDLE-WAITS — alive,
 silent, zero-cost — for the founder's reply (a PR comment on cloud, a
@@ -248,7 +248,7 @@ re-reply.
   [D-045](../record/DECISIONS.md#d-045--hands-doctrine).
 
 Sources:
-[dispatch law](../LAWS.md#workflow-non-negotiable)
+[chooser law](../LAWS.md#workflow-non-negotiable)
 
 ## Cloud spawn — route ladder
 Flown 2026-07-16 by the delegation maiden flight; the recipe of

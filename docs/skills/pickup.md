@@ -5,7 +5,7 @@ status: living
 ---
 # Pickup — the sit-down briefing
 
-Control tower only — dispatched lanes and background agents skip it
+Control tower only — delegated lanes and background agents skip it
 and
 proceed with their kickoff. Runs unprompted on the founder's first
 message of a session. Assume the founder remembers NOTHING; plain

@@ -1,7 +1,7 @@
 ---
 type: memory
 id: laws-home-groom
-updated: 2026-07-31 13:48 · ship · work PC
+updated: 2026-07-31 13:57 · ship · work PC
 ---
 
 # laws-home-groom — the register recut and the manual groom
@@ -13,7 +13,8 @@ complete, awaiting merge — 2026-07-31, work PC.
 is minted, LAWS' two long sections render as a register, three
 laws are written down for the first time, the touchpoints read
 three, "dispatch" is gone, and HOME's two day sections are one.
-Full CI mirror green.
+Full CI mirror green. The critic returned nine findings, five
+notable; all nine are repaired (below).
 
 ## What this task is
 
@@ -120,9 +121,19 @@ exceptions):
 [handoff-inline-context history](../record/history/workshop/mechanism/handoff-inline-context.md)
 · [its spec](../record/specs/handoff-inline-context.md). NO HIT
 LANDED INSIDE A MASTER FENCE — all three fences were checked
-directly and are clean. The prose forms were swept too ("the two
-touchpoints", "the daily loop"), which `check:links` cannot see;
-both re-runs return zero.
+directly and are clean.
+
+THE PROSE FORMS were swept too — "the two touchpoints", "the
+daily loop" — which `check:links` cannot see. THE RE-RUN RETURNS
+ZERO ACROSS LIVING FILES, and NOT across the frozen shelves,
+where seven stories and specs still narrate "the daily loop" and
+"the two touchpoints" as the things they were at the time. That
+is correct and no edit is owed — a frozen story records what was
+true when it was written, and only its LINKS are repaired. The
+distinction is written here because the first draft of this
+memory claimed a flat zero, and the critic caught it: the bench
+that minted "the proof of a sweep is a re-run returning zero"
+must state exactly which set it returned zero over.
 
 THE ACCIDENT, recorded because it nearly shipped: compressing
 §Reading the board, I anchored the cut on the sentence "The
@@ -134,6 +145,55 @@ and the span was excised. The lesson is the sweep law's, one level
 up: an anchor string chosen for a cut must be checked for
 uniqueness first, exactly as a grep pattern must be re-run to
 zero.
+
+## The critic round
+
+Nine findings, five notable. All repaired:
+
+- **A touchpoint stated the merge law more broadly than the law.**
+  My §The three touchpoints added "No diff merges without it" —
+  words the old text never carried — ten lines above THE MERGE
+  GATE's micro-PR carve-out, in the one file every session loads.
+  Corrected to name the exception.
+- **"DATED" WAS DROPPED TO A HOME THAT DOES NOT CARRY IT.** The
+  old law said "append one DATED line"; I compressed it to "per
+  its entry contract" — and neither the
+  [IDEAS](../IDEAS.md) header nor
+  [D-066](../record/DECISIONS.md#d-066--the-ideas-entry-contract)
+  requires a date, though every live entry has one. This is
+  exactly the failure the verification law names, committed by
+  the PR that mints it. The word is restored.
+- **One pointer was carrying two claims.** The lane law sent the
+  reader to §Canary for BOTH the seven enumerated duties and the
+  canary constants; the duties live under a different heading.
+  Two pointers now.
+- **The memory asserted a zero the re-run does not produce** (see
+  above).
+- **The vocabulary sweep stopped at LAWS and HOME** while
+  [D-069](../record/DECISIONS.md#d-069--the-law-register-and-the-manual-groom)
+  said "throughout" — and two live files still CITED "the
+  dispatch law", a law that no longer exists under that name.
+  Swept through [parallel-lanes](../skills/parallel-lanes.md),
+  [liftoff](../skills/liftoff.md), [pickup](../skills/pickup.md),
+  and — beyond the mandate's file list, disclosed as a deviation
+  — the `.claude/` stub whose description MIRRORS
+  parallel-lanes' first line (a stub may not drift from its
+  procedure) and the two session hooks that inject the same
+  vocabulary into every sitting. SETUP's "dispatch button" stays:
+  it names the GitHub feature, which is the one place the word is
+  still correct.
+- **"Speaks ONLY through its PR"** was a one-word strengthening
+  neither the mechanics page nor the idle-wait law beside it
+  supports. Dropped.
+- **A new Terms row pointed at a home that no longer carried the
+  term** — the urgency ladder's first pointer went to §Reading
+  the board, which this same PR had just compressed past it. Now
+  points at the board spec.
+- **The short-anchor law was misfiled** in Workflow & rituals,
+  away from the weave, retroactivity and derivation laws and from
+  D-number itself, the thing it governs. Moved to Naming &
+  structure.
+- **The spec's Done-means were unticked.** Ticked.
 
 ## Where to look
 
