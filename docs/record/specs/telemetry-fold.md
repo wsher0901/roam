@@ -18,7 +18,7 @@ shipped: 2026-07-13
 [ROADMAP](../../ROADMAP.md) ·
 [HOME](../../HOME.md) ·
 Decisions:
-[D-033](../DECISIONS.md#d-033--2026-07--telemetry-folds-into-facts-appendix-c-file-retired-upholds-d-014-extends-the-d-030-retirement-pattern)
+[D-033](../DECISIONS.md#d-033--telemetry-folds-into-facts)
 
 ## Goal
 The telemetry vocabulary lives where the founder's charter puts
@@ -35,7 +35,7 @@ one event, threshold, or definition changes.
 1. Bench birth: branch docs/telemetry-fold → this spec + memory
    stub → draft PR.
 2. Run [decide](../../skills/decide.md)
-   ([D-033](../DECISIONS.md#d-033--2026-07--telemetry-folds-into-facts-appendix-c-file-retired-upholds-d-014-extends-the-d-030-retirement-pattern)):
+   ([D-033](../DECISIONS.md#d-033--telemetry-folds-into-facts)):
    entry + ripple in the same commit — Appendix C appended to
    [FACTS](../../data/FACTS.md) (four headings demoted and renamed
    C1–C4, body byte-faithful), data/TELEMETRY.md deleted, the

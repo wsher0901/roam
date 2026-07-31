@@ -121,7 +121,7 @@ THE FROZEN RECORD. `record/specs/**` and the existing DECISIONS
 entries cite the masters' old home dozens of times, and every one
 of those citations was TRUE WHEN WRITTEN. Append-only governs
 meaning
-([D-057](../../../DECISIONS.md#d-057--2026-07--the-record-shelf--the-frozen-record-moves-under-one-roof-docsrecord-is-born-history--specs--decisions-in-memory-stays-living-at-root-the-enabling-ruling--a-mechanical-link-path-segment-repair-inside-a-frozen-file-is-maintenance-not-a-content-edit-append-only-governs-meaning-not-bytes-intra-record-links-resolve-by-construction-upholds-append-only-one-home-and-the-weave-rule)),
+([D-057](../../../DECISIONS.md#d-057--the-record-shelf)),
 and these are not broken links — `SETUP §cloud accounts` still
 exists and still holds the wiring those entries were describing.
 Repointing them would rewrite history to match the present.

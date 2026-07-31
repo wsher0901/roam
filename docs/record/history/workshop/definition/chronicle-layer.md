@@ -66,7 +66,7 @@ ops chat. The bench's discipline: teammates write NOTHING to the
 tree; the record stays untouched except the DECISIONS append; no
 ending is invented — what the record cannot derive is owed by the
 founder, not guessed. The decision
-([D-059](../../../DECISIONS.md#d-059--2026-07--the-chronicle-layer--living-stories-above-the-frozen-record-one-story-per-item-the-ending-rule--settled-in-any-format-means-the-story-is-written-a-later-fix-is-incorporated-and-the-ending-rewritten-at-that-weld-retirement-is-a-settlement-docschronicle-one-file-per-story-indexmd-shelving-four-shelves-immutability-beneath--record-untouched-stories-link-down-as-footnotes-down-links-only--a-story-never-cites-another-storys-prose-supersedes-the-07-23-three-chapter-shape-the-ship-synthesis-at-weld-step-deferred-to-the-first-story-weld),
+([D-059](../../../DECISIONS.md#d-059--the-chronicle-layer),
 this bench) and its ripple landed in one commit with the census
 INDEX, per anchors-born-resolving; its D-mentions in this diary
 were woven into links in that same landing. Sequencing per the
@@ -145,8 +145,8 @@ response doctrine's ritual templates (#216).
 FOUNDER INPUT OWED (away-surface): 1. whether land has ever
 actually run, and in which mode. 2. whether the summon workflow's
 repository secrets exist and self-rescue is armed today.
-3. whether [D-048](../../../DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)'s rungs 2b and 5 were ever tested. 4. whether
-[D-051](../../../DECISIONS.md#d-051--2026-07--self-seat-birth--liftoff-fires---cloud-blind-and-the-cockpit-seats-itself-by-its-env-derived-self-url-the-console-attach-launcher-is-retired-amends-d-047s-rung-1-mechanics-as-corrected-by-193-upholds-d-049-and-board-governs)'s blind-fire + self-seat pair has been exercised together
+3. whether [D-048](../../../DECISIONS.md#d-048--cockpit-resilience)'s rungs 2b and 5 were ever tested. 4. whether
+[D-051](../../../DECISIONS.md#d-051--self-seat-birth)'s blind-fire + self-seat pair has been exercised together
 on a real flight. 5. whether the go-remote tether has ever been
 used and Remote Control still exists on the phone — if not, its
 ending is retirement-by-platform, not demotion.
@@ -155,68 +155,68 @@ ending is retirement-by-platform, not demotion.
 
 Returned 2026-07-27, fifteen proposed stories:
 
-1. THE LANE LAW (system piece, high) — spans [D-020](../../../DECISIONS.md#d-020--2026-07--parallel-lanes-v2-native-lanes-replace-hand-built-orchestration)/#51 → [D-023](../../../DECISIONS.md#d-023--2026-07--universal-draft-pr-at-birth--micro-pr-carve-out-recut-amends-d-002-d-008-d-020) →
-   [D-032](../../../DECISIONS.md#d-032--2026-07--fleet-continuity--handoff-parks-every-local-lane-liftoff-respawns-parked-benches-wake-lock-parks-every-outcome-extends-the-d-020d-023-lane-law-upholds-d-009) → [D-041](../../../DECISIONS.md#d-041--2026-07--delegation-architecture--the-away-mode-chooser-go-remote-tether-idle-wait-label-spawned-cloud-amends-d-032s-wake-lock-and-the-dispatch-law-upholds-the-baton-law-and-d-009) → [D-042](../../../DECISIONS.md#d-042--2026-07--lane-liveness--derive-live-vs-reclaimable-from-the-commit-heartbeat-read-it-at-claim-check-and-session-start-cleanup-so-a-live-lane-is-never-adopted-or-pruned-amends-the-claim-check-clause-and-pickup-3-upholds-the-wake-lock-and-seat-invariance) → [D-043](../../../DECISIONS.md#d-043--2026-07--cloud-ignition--away-command-redesign--route-ladder-v2-ready-flip-then-label-is-the-recipe-of-record-api-ignition-and-the-cloud-clerk-staged-the-claude-app-the-single-away-surface-amends-d-041-upholds-the-lane-law-and-the-wake-lock) → [D-046](../../../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock) (birth actor becomes
+1. THE LANE LAW (system piece, high) — spans [D-020](../../../DECISIONS.md#d-020--parallel-lanes-v2)/#51 → [D-023](../../../DECISIONS.md#d-023--universal-draft-pr-at-birth-and-micro-pr-carve-out) →
+   [D-032](../../../DECISIONS.md#d-032--fleet-continuity) → [D-041](../../../DECISIONS.md#d-041--delegation-architecture) → [D-042](../../../DECISIONS.md#d-042--lane-liveness) → [D-043](../../../DECISIONS.md#d-043--cloud-ignition-and-away-command-redesign) → [D-046](../../../DECISIONS.md#d-046--flight-cockpit-the-control-tower-online) (birth actor becomes
    the baton-holder) → #180 → #191 (first end-to-end flight) →
-   #193 (non-author pinned to the payload diff) → [D-054](../../../DECISIONS.md#d-054--2026-07--the-landing-skill--how-a-flight-ends-becomes-a-first-class-ritual-one-skill-with-two-modes-routed-by-fleet-state-retire--pause-and-transfer-the-fence-is-a-commit-so-the-resume-point-is-the-branch-tip-by-construction-wake-lock-mediated-with-its-honesty-clause-the-board-is-the-single-transfer-material-pickup-gains-the-fleet-resume-ask-and-its-cap-arithmetic-sessions-are-cattle-branches-are-the-work-charter-rule-6-becomes-a-pointer-the-effort-doctrine-moves-to-opus-5--xhigh-upholds-the-wake-lock-the-park-protocol-and-one-home-supersedes-the-opus-48-reliance-pair) → [D-055](../../../DECISIONS.md#d-055--2026-07--agent-teams--the-boundary-teams-are-for-exploration-and-review-at-a-ground-seat-lanes-remain-the-authorship-mechanism-two-risks-become-law-single-sitting-only--an-explicit-carve-out-to-d-050s-interrupt-promise--and-a-teammate-authored-diff-is-self-authored-under-no-solo-approval-the-reviewers-model-settled-by-verification-not-guess-the-founder-side-config-recorded-upholds-the-lane-law-no-solo-approval-and-one-home-gives-the-experimental-flag-its-consumer)
-   (teams not a vehicle) → [D-058](../../../DECISIONS.md#d-058--2026-07--atlas--the-system-spine-the-workshop-depicted-as-six-diagrams-on-one-page-the-posture-is-the-boards--it-renders-originates-nothing-dated-stamp-least-authoritative-the-prose-governs-every-box-linked-to-its-owning-doctrine-so-a-currency-audit-verifies-it-mechanically-upholds-the-derivation-law-one-home-and-the-weave-rule). Ending: seven clauses in LAWS,
+   #193 (non-author pinned to the payload diff) → [D-054](../../../DECISIONS.md#d-054--the-landing-skill) → [D-055](../../../DECISIONS.md#d-055--agent-teams-the-boundary)
+   (teams not a vehicle) → [D-058](../../../DECISIONS.md#d-058--atlas-the-system-spine). Ending: seven clauses in LAWS,
    mechanics in parallel-lanes, seat-blind, guarded by
    seat-invariance.
 2. THE CANARY HANDSHAKE + ACK TOKEN (system piece, high) — spans
-   [D-020](../../../DECISIONS.md#d-020--2026-07--parallel-lanes-v2-native-lanes-replace-hand-built-orchestration) → #144 → [D-042](../../../DECISIONS.md#d-042--2026-07--lane-liveness--derive-live-vs-reclaimable-from-the-commit-heartbeat-read-it-at-claim-check-and-session-start-cleanup-so-a-live-lane-is-never-adopted-or-pruned-amends-the-claim-check-clause-and-pickup-3-upholds-the-wake-lock-and-seat-invariance) → #191 (the em-dash ack near-miss) →
+   [D-020](../../../DECISIONS.md#d-020--parallel-lanes-v2) → #144 → [D-042](../../../DECISIONS.md#d-042--lane-liveness) → #191 (the em-dash ack near-miss) →
    #193 (one canonical anchored form, §Canary the sole home) →
    #231 (ATLAS's box repaired, same class). Ending: §Canary owns
    the token and all three timeout constants; anchored prefix
    match; TEMPLATE and the charter master are copies.
-3. THE WAKE-LOCK (system piece, high) — spans [D-032](../../../DECISIONS.md#d-032--2026-07--fleet-continuity--handoff-parks-every-local-lane-liftoff-respawns-parked-benches-wake-lock-parks-every-outcome-extends-the-d-020d-023-lane-law-upholds-d-009) → [D-041](../../../DECISIONS.md#d-041--2026-07--delegation-architecture--the-away-mode-chooser-go-remote-tether-idle-wait-label-spawned-cloud-amends-d-032s-wake-lock-and-the-dispatch-law-upholds-the-baton-law-and-d-009)
+3. THE WAKE-LOCK (system piece, high) — spans [D-032](../../../DECISIONS.md#d-032--fleet-continuity) → [D-041](../../../DECISIONS.md#d-041--delegation-architecture)
    (idle-wait carve-out) → #146/#153 (kills a redelivered
-   webhook) → #180 → #191 → [D-054](../../../DECISIONS.md#d-054--2026-07--the-landing-skill--how-a-flight-ends-becomes-a-first-class-ritual-one-skill-with-two-modes-routed-by-fleet-state-retire--pause-and-transfer-the-fence-is-a-commit-so-the-resume-point-is-the-branch-tip-by-construction-wake-lock-mediated-with-its-honesty-clause-the-board-is-the-single-transfer-material-pickup-gains-the-fleet-resume-ask-and-its-cap-arithmetic-sessions-are-cattle-branches-are-the-work-charter-rule-6-becomes-a-pointer-the-effort-doctrine-moves-to-opus-5--xhigh-upholds-the-wake-lock-the-park-protocol-and-one-home-supersedes-the-opus-48-reliance-pair) (the fence rides it). Ending:
+   webhook) → #180 → #191 → [D-054](../../../DECISIONS.md#d-054--the-landing-skill) (the fence rides it). Ending:
    the backstop under liveness misjudgment and the only thing
    that can stop a running lane.
 4. LANE LIVENESS (system piece, high; the #140 collision folded
-   in as the raising event) — spans #140 → [D-042](../../../DECISIONS.md#d-042--2026-07--lane-liveness--derive-live-vs-reclaimable-from-the-commit-heartbeat-read-it-at-claim-check-and-session-start-cleanup-so-a-live-lane-is-never-adopted-or-pruned-amends-the-claim-check-clause-and-pickup-3-upholds-the-wake-lock-and-seat-invariance) → [D-054](../../../DECISIONS.md#d-054--2026-07--the-landing-skill--how-a-flight-ends-becomes-a-first-class-ritual-one-skill-with-two-modes-routed-by-fleet-state-retire--pause-and-transfer-the-fence-is-a-commit-so-the-resume-point-is-the-branch-tip-by-construction-wake-lock-mediated-with-its-honesty-clause-the-board-is-the-single-transfer-material-pickup-gains-the-fleet-resume-ask-and-its-cap-arithmetic-sessions-are-cattle-branches-are-the-work-charter-rule-6-becomes-a-pointer-the-effort-doctrine-moves-to-opus-5--xhigh-upholds-the-wake-lock-the-park-protocol-and-one-home-supersedes-the-opus-48-reliance-pair).
+   in as the raising event) — spans #140 → [D-042](../../../DECISIONS.md#d-042--lane-liveness) → [D-054](../../../DECISIONS.md#d-054--the-landing-skill).
    Ending: live = non-terminal Status + heartbeat in window;
    terminal word outranks a fresh heartbeat; read at the claim
    check and pickup §3, fed by the hook's verdict.
 5. FLEET CONTINUITY / PARK PROTOCOL / RESPAWN (system piece,
-   high) — spans [D-032](../../../DECISIONS.md#d-032--2026-07--fleet-continuity--handoff-parks-every-local-lane-liftoff-respawns-parked-benches-wake-lock-parks-every-outcome-extends-the-d-020d-023-lane-law-upholds-d-009) → [D-041](../../../DECISIONS.md#d-041--2026-07--delegation-architecture--the-away-mode-chooser-go-remote-tether-idle-wait-label-spawned-cloud-amends-d-032s-wake-lock-and-the-dispatch-law-upholds-the-baton-law-and-d-009) → #155 → [D-042](../../../DECISIONS.md#d-042--2026-07--lane-liveness--derive-live-vs-reclaimable-from-the-commit-heartbeat-read-it-at-claim-check-and-session-start-cleanup-so-a-live-lane-is-never-adopted-or-pruned-amends-the-claim-check-clause-and-pickup-3-upholds-the-wake-lock-and-seat-invariance) → [D-054](../../../DECISIONS.md#d-054--2026-07--the-landing-skill--how-a-flight-ends-becomes-a-first-class-ritual-one-skill-with-two-modes-routed-by-fleet-state-retire--pause-and-transfer-the-fence-is-a-commit-so-the-resume-point-is-the-branch-tip-by-construction-wake-lock-mediated-with-its-honesty-clause-the-board-is-the-single-transfer-material-pickup-gains-the-fleet-resume-ask-and-its-cap-arithmetic-sessions-are-cattle-branches-are-the-work-charter-rule-6-becomes-a-pointer-the-effort-doctrine-moves-to-opus-5--xhigh-upholds-the-wake-lock-the-park-protocol-and-one-home-supersedes-the-opus-48-reliance-pair) → [D-056](../../../DECISIONS.md#d-056--2026-07--team-aware-leaving-rituals--no-ritual-lets-a-live-agent-team-outlive-the-sitting-that-made-it-handoff-shuts-the-team-down-before-parking-anything-and-captures-its-findings-into-the-record-first-land-states-the-cockpit-cannot-lead-a-team-case-once-and-routes-the-ground-seat-to-handoff-pickup-gains-the-ghost-teammate-recovery-note-and-the--block-gains-what-the-team-had-found-closes-d-055s-deferred-gap-upholds-one-home-and-the-park-protocol).
+   high) — spans [D-032](../../../DECISIONS.md#d-032--fleet-continuity) → [D-041](../../../DECISIONS.md#d-041--delegation-architecture) → #155 → [D-042](../../../DECISIONS.md#d-042--lane-liveness) → [D-054](../../../DECISIONS.md#d-054--the-landing-skill) → [D-056](../../../DECISIONS.md#d-056--team-aware-leaving-rituals).
    Ending: the park is ONE stamped line at handoff FULL;
    §Respawn covers adoption; pickup §6 owns grounded-fleet
    resume.
 6. THE CLOUD SPAWN ROUTE LADDER + LANE-WORKER ROUTINE (system
-   piece, high) — spans [D-041](../../../DECISIONS.md#d-041--2026-07--delegation-architecture--the-away-mode-chooser-go-remote-tether-idle-wait-label-spawned-cloud-amends-d-032s-wake-lock-and-the-dispatch-law-upholds-the-baton-law-and-d-009) → #144 → #146 → [D-043](../../../DECISIONS.md#d-043--2026-07--cloud-ignition--away-command-redesign--route-ladder-v2-ready-flip-then-label-is-the-recipe-of-record-api-ignition-and-the-cloud-clerk-staged-the-claude-app-the-single-away-surface-amends-d-041-upholds-the-lane-law-and-the-wake-lock)
+   piece, high) — spans [D-041](../../../DECISIONS.md#d-041--delegation-architecture) → #144 → #146 → [D-043](../../../DECISIONS.md#d-043--cloud-ignition-and-away-command-redesign)
    (ready-flip-then-label, three-point evidence) → #191/#180 →
-   #197 → [D-054](../../../DECISIONS.md#d-054--2026-07--the-landing-skill--how-a-flight-ends-becomes-a-first-class-ritual-one-skill-with-two-modes-routed-by-fleet-state-retire--pause-and-transfer-the-fence-is-a-commit-so-the-resume-point-is-the-branch-tip-by-construction-wake-lock-mediated-with-its-honesty-clause-the-board-is-the-single-transfer-material-pickup-gains-the-fleet-resume-ask-and-its-cap-arithmetic-sessions-are-cattle-branches-are-the-work-charter-rule-6-becomes-a-pointer-the-effort-doctrine-moves-to-opus-5--xhigh-upholds-the-wake-lock-the-park-protocol-and-one-home-supersedes-the-opus-48-reliance-pair). Ending: two rungs; api-ignition staged; the
+   #197 → [D-054](../../../DECISIONS.md#d-054--the-landing-skill). Ending: two rungs; api-ignition staged; the
    verify checklist carries one open box — the dormant-baton
    case, reassigned to the cockpit, open until proven live.
-7. LANE VEHICLES (system piece, high) — spans [D-016](../../../DECISIONS.md#d-016--2026-06--parallel-ready-menu-amends-d-009) → [D-017](../../../DECISIONS.md#d-017--2026-06--cloud-sessions-are-the-parallel-lane-vehicle-amends-d-016) →
-   #48 (erratum) → [D-019](../../../DECISIONS.md#d-019--2026-06--launch-mechanics-correction-amends-d-017) → [D-020](../../../DECISIONS.md#d-020--2026-07--parallel-lanes-v2-native-lanes-replace-hand-built-orchestration) (all retired for native
-   agents + worktrees) → [D-041](../../../DECISIONS.md#d-041--2026-07--delegation-architecture--the-away-mode-chooser-go-remote-tether-idle-wait-label-spawned-cloud-amends-d-032s-wake-lock-and-the-dispatch-law-upholds-the-baton-law-and-d-009) → [D-055](../../../DECISIONS.md#d-055--2026-07--agent-teams--the-boundary-teams-are-for-exploration-and-review-at-a-ground-seat-lanes-remain-the-authorship-mechanism-two-risks-become-law-single-sitting-only--an-explicit-carve-out-to-d-050s-interrupt-promise--and-a-teammate-authored-diff-is-self-authored-under-no-solo-approval-the-reviewers-model-settled-by-verification-not-guess-the-founder-side-config-recorded-upholds-the-lane-law-no-solo-approval-and-one-home-gives-the-experimental-flag-its-consumer). Ending: exactly two
+7. LANE VEHICLES (system piece, high) — spans [D-016](../../../DECISIONS.md#d-016--parallel-ready-menu) → [D-017](../../../DECISIONS.md#d-017--cloud-sessions-are-the-lane-vehicle) →
+   #48 (erratum) → [D-019](../../../DECISIONS.md#d-019--launch-mechanics-correction) → [D-020](../../../DECISIONS.md#d-020--parallel-lanes-v2) (all retired for native
+   agents + worktrees) → [D-041](../../../DECISIONS.md#d-041--delegation-architecture) → [D-055](../../../DECISIONS.md#d-055--agent-teams-the-boundary). Ending: exactly two
    vehicles (LOCAL default, CLOUD via liftoff) plus one named
    exclusion (teams).
-8. THE PARALLEL-READY MENU (system piece, high) — spans [D-016](../../../DECISIONS.md#d-016--2026-06--parallel-ready-menu-amends-d-009) →
-   [D-020](../../../DECISIONS.md#d-020--2026-07--parallel-lanes-v2-native-lanes-replace-hand-built-orchestration). Ending: retired; survives only as the pacing law's [P]
+8. THE PARALLEL-READY MENU (system piece, high) — spans [D-016](../../../DECISIONS.md#d-016--parallel-ready-menu) →
+   [D-020](../../../DECISIONS.md#d-020--parallel-lanes-v2). Ending: retired; survives only as the pacing law's [P]
    clause. (Teammate note: may sit better on the pacing-law
    shelf — a proposal, not a claim.)
-9. FIX-ROUTING TRIAGE (system piece, high) — spans [D-018](../../../DECISIONS.md#d-018--2026-06--fix-routing-triage-after-lane-review-extends-d-017) →
-   [D-020](../../../DECISIONS.md#d-020--2026-07--parallel-lanes-v2-native-lanes-replace-hand-built-orchestration). Ending: absorbed to one pre-review sentence in
+9. FIX-ROUTING TRIAGE (system piece, high) — spans [D-018](../../../DECISIONS.md#d-018--fix-routing-triage-after-lane-review) →
+   [D-020](../../../DECISIONS.md#d-020--parallel-lanes-v2). Ending: absorbed to one pre-review sentence in
    parallel-lanes; the three-route ladder is record-only.
-10. THE HANDS DOCTRINE (system piece, high) — spans [D-045](../../../DECISIONS.md#d-045--2026-07--hands-doctrine-solo--subagents--agent-team--lanes--the-litmus-is-one-bench-many-hands-vs-many-benches-vs-read-only-upholds-d-020-and-d-041)
-    (verbatim into SETUP) → [D-054](../../../DECISIONS.md#d-054--2026-07--the-landing-skill--how-a-flight-ends-becomes-a-first-class-ritual-one-skill-with-two-modes-routed-by-fleet-state-retire--pause-and-transfer-the-fence-is-a-commit-so-the-resume-point-is-the-branch-tip-by-construction-wake-lock-mediated-with-its-honesty-clause-the-board-is-the-single-transfer-material-pickup-gains-the-fleet-resume-ask-and-its-cap-arithmetic-sessions-are-cattle-branches-are-the-work-charter-rule-6-becomes-a-pointer-the-effort-doctrine-moves-to-opus-5--xhigh-upholds-the-wake-lock-the-park-protocol-and-one-home-supersedes-the-opus-48-reliance-pair) (Opus 5 · xhigh single pick) →
-    [D-055](../../../DECISIONS.md#d-055--2026-07--agent-teams--the-boundary-teams-are-for-exploration-and-review-at-a-ground-seat-lanes-remain-the-authorship-mechanism-two-risks-become-law-single-sitting-only--an-explicit-carve-out-to-d-050s-interrupt-promise--and-a-teammate-authored-diff-is-self-authored-under-no-solo-approval-the-reviewers-model-settled-by-verification-not-guess-the-founder-side-config-recorded-upholds-the-lane-law-no-solo-approval-and-one-home-gives-the-experimental-flag-its-consumer) (the Sonnet-teammate clause retired). Ending: one
+10. THE HANDS DOCTRINE (system piece, high) — spans [D-045](../../../DECISIONS.md#d-045--hands-doctrine)
+    (verbatim into SETUP) → [D-054](../../../DECISIONS.md#d-054--the-landing-skill) (Opus 5 · xhigh single pick) →
+    [D-055](../../../DECISIONS.md#d-055--agent-teams-the-boundary) (the Sonnet-teammate clause retired). Ending: one
     litmus at SETUP §Models & effort.
-11. AGENT TEAMS (system piece, high) — spans [D-020](../../../DECISIONS.md#d-020--2026-07--parallel-lanes-v2-native-lanes-replace-hand-built-orchestration) (flag on) →
-    [D-045](../../../DECISIONS.md#d-045--2026-07--hands-doctrine-solo--subagents--agent-team--lanes--the-litmus-is-one-bench-many-hands-vs-many-benches-vs-read-only-upholds-d-020-and-d-041) → [D-055](../../../DECISIONS.md#d-055--2026-07--agent-teams--the-boundary-teams-are-for-exploration-and-review-at-a-ground-seat-lanes-remain-the-authorship-mechanism-two-risks-become-law-single-sitting-only--an-explicit-carve-out-to-d-050s-interrupt-promise--and-a-teammate-authored-diff-is-self-authored-under-no-solo-approval-the-reviewers-model-settled-by-verification-not-guess-the-founder-side-config-recorded-upholds-the-lane-law-no-solo-approval-and-one-home-gives-the-experimental-flag-its-consumer) (the boundary + two risks) → [D-056](../../../DECISIONS.md#d-056--2026-07--team-aware-leaving-rituals--no-ritual-lets-a-live-agent-team-outlive-the-sitting-that-made-it-handoff-shuts-the-team-down-before-parking-anything-and-captures-its-findings-into-the-record-first-land-states-the-cockpit-cannot-lead-a-team-case-once-and-routes-the-ground-seat-to-handoff-pickup-gains-the-ghost-teammate-recovery-note-and-the--block-gains-what-the-team-had-found-closes-d-055s-deferred-gap-upholds-one-home-and-the-park-protocol)
+11. AGENT TEAMS (system piece, high) — spans [D-020](../../../DECISIONS.md#d-020--parallel-lanes-v2) (flag on) →
+    [D-045](../../../DECISIONS.md#d-045--hands-doctrine) → [D-055](../../../DECISIONS.md#d-055--agent-teams-the-boundary) (the boundary + two risks) → [D-056](../../../DECISIONS.md#d-056--team-aware-leaving-rituals)
     (capture-then-kill). Ending: boundary at HOME §Agent teams;
     the superseded-seat road stays uncovered and filed.
 12. THE REVIEWER SUBAGENT (system piece, high) — spans #146 →
-    [D-044](../../../DECISIONS.md#d-044--2026-07--the-pre-gate-critic-goes-live--ships-gate-opens-by-invoking-the-reviewer-subagent-verdicts-advisory-riding-with-the-summary-turns-on-the-staged-reviewer-upholds-d-038-and-the-reviewer-frame) (wired at ship §6) → #175 (first native registration)
-    → #180 → [D-054](../../../DECISIONS.md#d-054--2026-07--the-landing-skill--how-a-flight-ends-becomes-a-first-class-ritual-one-skill-with-two-modes-routed-by-fleet-state-retire--pause-and-transfer-the-fence-is-a-commit-so-the-resume-point-is-the-branch-tip-by-construction-wake-lock-mediated-with-its-honesty-clause-the-board-is-the-single-transfer-material-pickup-gains-the-fleet-resume-ask-and-its-cap-arithmetic-sessions-are-cattle-branches-are-the-work-charter-rule-6-becomes-a-pointer-the-effort-doctrine-moves-to-opus-5--xhigh-upholds-the-wake-lock-the-park-protocol-and-one-home-supersedes-the-opus-48-reliance-pair) → [D-055](../../../DECISIONS.md#d-055--2026-07--agent-teams--the-boundary-teams-are-for-exploration-and-review-at-a-ground-seat-lanes-remain-the-authorship-mechanism-two-risks-become-law-single-sitting-only--an-explicit-carve-out-to-d-050s-interrupt-promise--and-a-teammate-authored-diff-is-self-authored-under-no-solo-approval-the-reviewers-model-settled-by-verification-not-guess-the-founder-side-config-recorded-upholds-the-lane-law-no-solo-approval-and-one-home-gives-the-experimental-flag-its-consumer) (model = the opus alias by billing
+    [D-044](../../../DECISIONS.md#d-044--the-pre-gate-critic-goes-live) (wired at ship §6) → #175 (first native registration)
+    → #180 → [D-054](../../../DECISIONS.md#d-054--the-landing-skill) → [D-055](../../../DECISIONS.md#d-055--agent-teams-the-boundary) (model = the opus alias by billing
     verification). Ending: read-only critic on model: opus,
     advisory verdicts at THE GATE, run on essentially every
     recent bench.
 13. THE DELEGATION MAIDEN FLIGHT 07-16 (event, high) — spans
-    #146 · #147 · [D-043](../../../DECISIONS.md#d-043--2026-07--cloud-ignition--away-command-redesign--route-ladder-v2-ready-flip-then-label-is-the-recipe-of-record-api-ignition-and-the-cloud-clerk-staged-the-claude-app-the-single-away-surface-amends-d-041-upholds-the-lane-law-and-the-wake-lock). Ending: closed by #153 — route 1 works
+    #146 · #147 · [D-043](../../../DECISIONS.md#d-043--cloud-ignition-and-away-command-redesign). Ending: closed by #153 — route 1 works
     on ready PRs only; count:runs is an upper-bound proxy; two
     crash tests absorbed.
 14. SHAKEDOWN PHASE 2, THE LANE HALF 07-17 (event, high) —
@@ -225,8 +225,8 @@ Returned 2026-07-27, fifteen proposed stories:
     construction.
 15. THE BATCH-1 LANE LAUNCH 06-12 (event, MEDIUM — the
     machinery's ending is derivable, the four tasks' is not) —
-    spans [D-016](../../../DECISIONS.md#d-016--2026-06--parallel-ready-menu-amends-d-009) → [D-017](../../../DECISIONS.md#d-017--2026-06--cloud-sessions-are-the-parallel-lane-vehicle-amends-d-016) → [D-019](../../../DECISIONS.md#d-019--2026-06--launch-mechanics-correction-amends-d-017) → [D-020](../../../DECISIONS.md#d-020--2026-07--parallel-lanes-v2-native-lanes-replace-hand-built-orchestration). Ending: the machinery
-    retired by [D-020](../../../DECISIONS.md#d-020--2026-07--parallel-lanes-v2-native-lanes-replace-hand-built-orchestration) (bundle-seeded sandboxes could not push;
+    spans [D-016](../../../DECISIONS.md#d-016--parallel-ready-menu) → [D-017](../../../DECISIONS.md#d-017--cloud-sessions-are-the-lane-vehicle) → [D-019](../../../DECISIONS.md#d-019--launch-mechanics-correction) → [D-020](../../../DECISIONS.md#d-020--parallel-lanes-v2). Ending: the machinery
+    retired by [D-020](../../../DECISIONS.md#d-020--parallel-lanes-v2) (bundle-seeded sandboxes could not push;
     T3+T5 work destroyed); the tasks' fate is owed.
 
 Shelf-boundary calls: #221/#225 leaving-ritual surfaces, the
@@ -275,7 +275,7 @@ shelf); condensed here, complete in the INDEX census:
     #147 → #218. Ending: the always-loaded constitution, audited
     at best practice. High.
 11. DECISIONS + DECIDE — #1 → #56 → #89 → #117 → #134 → #211 →
-    #229. Ending: append-only [D-001](../../../DECISIONS.md#d-001--2026-06--tech-stack)…[D-058](../../../DECISIONS.md#d-058--2026-07--atlas--the-system-spine-the-workshop-depicted-as-six-diagrams-on-one-page-the-posture-is-the-boards--it-renders-originates-nothing-dated-stamp-least-authoritative-the-prose-governs-every-box-linked-to-its-owning-doctrine-so-a-currency-audit-verifies-it-mechanically-upholds-the-derivation-law-one-home-and-the-weave-rule); append-only governs
+    #229. Ending: append-only [D-001](../../../DECISIONS.md#d-001--tech-stack)…[D-058](../../../DECISIONS.md#d-058--atlas-the-system-spine); append-only governs
     meaning, not bytes. High.
 12. IDEAS — the LAWS clause → #144/#193 → #211 (inbox-not-
     archive, first compaction 420→266). Ending: self-pruning

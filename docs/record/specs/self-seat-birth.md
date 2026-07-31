@@ -15,9 +15,9 @@ shipped: 2026-07-24 00:28
 **Links:**
 [liftoff §6](../../skills/liftoff.md#6--ledger-handoff--fire-the-cockpit)
 · [SETUP §cloud accounts](../../SETUP.md#once-and-done--cloud-accounts) ·
-[D-049](../DECISIONS.md#d-049--2026-07--gh-second-path--gh-api-rest-through-the-github-proxy-is-the-cockpits-second-api-path-a-connector-flap-stops-costing-command-r2-gains-the-automatic-gh-rung-self-id-by-session-env-amends-d-048-corrects-the-193-api-map-upholds-d-047-and-verify-before-rely)
+[D-049](../DECISIONS.md#d-049--gh-second-path)
 (the self-URL mechanism) ·
-[D-047](../DECISIONS.md#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law)
+[D-047](../DECISIONS.md#d-047--cloud-born-cockpit)
 (whose rung-1 mechanics this amends) ·
 [cloud-born-cockpit](cloud-born-cockpit.md) ·
 [flight-hardening](flight-hardening.md)
@@ -28,7 +28,7 @@ Liftoff's rung 1 fires `claude --cloud` BLIND — no output
 capture, no console attach, no `CONOUT$` read; exit status only.
 The cockpit seats ITSELF on the board as its first act, using its
 env-derived self-URL
-([D-049](../DECISIONS.md#d-049--2026-07--gh-second-path--gh-api-rest-through-the-github-proxy-is-the-cockpits-second-api-path-a-connector-flap-stops-costing-command-r2-gains-the-automatic-gh-rung-self-id-by-session-env-amends-d-048-corrects-the-193-api-map-upholds-d-047-and-verify-before-rely))
+([D-049](../DECISIONS.md#d-049--gh-second-path))
 — the same mechanism successor-duty already uses. The launcher's
 fragilest component is DELETED, not maintained.
 
@@ -83,10 +83,10 @@ under us.
 4. **DECIDE — D-051**, house style: blind fire + self-seat; the
    console-attach launcher RETIRED (disproof and retirement
    dated); the trade named; amends
-   [D-047](../DECISIONS.md#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law)'s
+   [D-047](../DECISIONS.md#d-047--cloud-born-cockpit)'s
    rung-1 mechanics as corrected by
    [#193](https://github.com/wsher0901/roam/pull/193); upholds
-   [D-049](../DECISIONS.md#d-049--2026-07--gh-second-path--gh-api-rest-through-the-github-proxy-is-the-cockpits-second-api-path-a-connector-flap-stops-costing-command-r2-gains-the-automatic-gh-rung-self-id-by-session-env-amends-d-048-corrects-the-193-api-map-upholds-d-047-and-verify-before-rely)
+   [D-049](../DECISIONS.md#d-049--gh-second-path)
    and board-governs.
 5. **Supersession-note extension** where a record names
    console-attach as the STANDING shape:

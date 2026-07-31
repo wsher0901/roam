@@ -14,7 +14,7 @@ amendment 2) · New [TELEMETRY.md](../../../../data/FACTS.md#appendix-c--telemet
 Roam captures about its own behavior — usage events, a claim
 ledger, eval runs, actuals, source health — captured from day one,
 used later
-([D-014](../../../DECISIONS.md#d-014--2026-06--telemetry-posture-capture-now-use-later))
+([D-014](../../../DECISIONS.md#d-014--telemetry-posture))
 → [PR #35](https://github.com/wsher0901/roam/pull/35)
 
 ## Story

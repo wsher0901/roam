@@ -14,7 +14,7 @@ shipped: 2026-07-29 11:05
 
 **Links:**
 [SETUP](../../SETUP.md) (the file being recut) ·
-[D-064](../DECISIONS.md#d-064--2026-07--the-box-master-class--the-setup-entry-contract--every-external-box-master-is-its-own-top-level-file-on-the-web-instructions-pattern-cockpit-chartermd-and-lane-workermd-extracted-verbatim-setup-compresses-to-a-replication-spec-under-the-entry-contract-what--where--values--verify--source-design-kickoff-joins-the-class-on-paper)
+[D-064](../DECISIONS.md#d-064--the-box-master-class-and-setup-entry-contract)
 (the decide this bench executes — no new D-number) ·
 [bench 1](../history/workshop/definition/box-masters.md)
 ([#242](https://github.com/wsher0901/roam/pull/242)) · source: the
@@ -22,7 +22,7 @@ founder's approved plan, Web ops chat 2026-07-29.
 
 ## Goal
 
-[D-064](../DECISIONS.md#d-064--2026-07--the-box-master-class--the-setup-entry-contract--every-external-box-master-is-its-own-top-level-file-on-the-web-instructions-pattern-cockpit-chartermd-and-lane-workermd-extracted-verbatim-setup-compresses-to-a-replication-spec-under-the-entry-contract-what--where--values--verify--source-design-kickoff-joins-the-class-on-paper)
+[D-064](../DECISIONS.md#d-064--the-box-master-class-and-setup-entry-contract)
 decided the SETUP ENTRY CONTRACT and bench 1 cleared the two
 masters out. This bench executes the rest: every entry compressed
 to WHAT · WHERE · VALUES · VERIFY · SOURCE, the retired clerk
@@ -36,7 +36,7 @@ reproduces the configuration with ZERO GIT ARCHAEOLOGY.
 ## Out of scope
 
 - **A new decide.**
-  [D-064](../DECISIONS.md#d-064--2026-07--the-box-master-class--the-setup-entry-contract--every-external-box-master-is-its-own-top-level-file-on-the-web-instructions-pattern-cockpit-chartermd-and-lane-workermd-extracted-verbatim-setup-compresses-to-a-replication-spec-under-the-entry-contract-what--where--values--verify--source-design-kickoff-joins-the-class-on-paper)
+  [D-064](../DECISIONS.md#d-064--the-box-master-class-and-setup-entry-contract)
   already records this bench; [DECISIONS](../DECISIONS.md) is not
   touched.
 - **The board.** The dead `CLERK_` credentials line is
@@ -113,7 +113,7 @@ reproduces the configuration with ZERO GIT ARCHAEOLOGY.
 1. **A carve-out sentence was added beside the verbatim contract.**
    The header text is verbatim as mandated — but it states VALUES
    as "every non-default choice, exactly", while
-   [D-064](../DECISIONS.md#d-064--2026-07--the-box-master-class--the-setup-entry-contract--every-external-box-master-is-its-own-top-level-file-on-the-web-instructions-pattern-cockpit-chartermd-and-lane-workermd-extracted-verbatim-setup-compresses-to-a-replication-spec-under-the-entry-contract-what--where--values--verify--source-design-kickoff-joins-the-class-on-paper)
+   [D-064](../DECISIONS.md#d-064--the-box-master-class-and-setup-entry-contract)
    states the same field as "names only; never a secret value".
    For a PUBLIC repo's config file that difference matters, so the
    mandated text is untouched and ONE adjacent sentence restates

@@ -41,7 +41,7 @@ differently than the spec; preview link.
 
 ## 6 · THE GATE
 First, the critic
-([D-044](../record/DECISIONS.md#d-044--2026-07--the-pre-gate-critic-goes-live--ships-gate-opens-by-invoking-the-reviewer-subagent-verdicts-advisory-riding-with-the-summary-turns-on-the-staged-reviewer-upholds-d-038-and-the-reviewer-frame)):
+([D-044](../record/DECISIONS.md#d-044--the-pre-gate-critic-goes-live)):
 invoke the reviewer subagent (`.claude/agents/reviewer.md` — frame:
 [its spec](../record/specs/reviewer-subagent.md)) on the branch's diff.
 Its structured verdict is ADVISORY — a finding never halts ship by

@@ -14,13 +14,13 @@ shipped: 2026-07-28 17:13
 
 **Links:**
 [land](../../skills/land.md) ·
-[D-054](../DECISIONS.md#d-054--2026-07--the-landing-skill--how-a-flight-ends-becomes-a-first-class-ritual-one-skill-with-two-modes-routed-by-fleet-state-retire--pause-and-transfer-the-fence-is-a-commit-so-the-resume-point-is-the-branch-tip-by-construction-wake-lock-mediated-with-its-honesty-clause-the-board-is-the-single-transfer-material-pickup-gains-the-fleet-resume-ask-and-its-cap-arithmetic-sessions-are-cattle-branches-are-the-work-charter-rule-6-becomes-a-pointer-the-effort-doctrine-moves-to-opus-5--xhigh-upholds-the-wake-lock-the-park-protocol-and-one-home-supersedes-the-opus-48-reliance-pair)
+[D-054](../DECISIONS.md#d-054--the-landing-skill)
 (the skill this recuts) · source: the founder's three-scenario
 model, Web ops chat 2026-07-28.
 
 ## Goal
 
-[D-054](../DECISIONS.md#d-054--2026-07--the-landing-skill--how-a-flight-ends-becomes-a-first-class-ritual-one-skill-with-two-modes-routed-by-fleet-state-retire--pause-and-transfer-the-fence-is-a-commit-so-the-resume-point-is-the-branch-tip-by-construction-wake-lock-mediated-with-its-honesty-clause-the-board-is-the-single-transfer-material-pickup-gains-the-fleet-resume-ask-and-its-cap-arithmetic-sessions-are-cattle-branches-are-the-work-charter-rule-6-becomes-a-pointer-the-effort-doctrine-moves-to-opus-5--xhigh-upholds-the-wake-lock-the-park-protocol-and-one-home-supersedes-the-opus-48-reliance-pair)
+[D-054](../DECISIONS.md#d-054--the-landing-skill)
 gave landing two modes routed by the fleet, and both wait for the
 founder to say "land". The founder's 2026-07-28 model says a
 flight actually ends in THREE situations, and only one of them
@@ -136,5 +136,5 @@ Three, all disclosed at the gate:
 none — the one that stood at the first flip (whether to generalize
 the tombstone wake-rule to ANY superseded seat) WAS TAKEN on this
 same bench, at the external review's direction: it is
-[D-062](../DECISIONS.md#d-062--2026-07--the-wake-rule-generalized--any-superseded-seat-exits-by-its-own-closing-ritual-never-bare-a-cockpit-by-the-landing-ritual-a-ground-control-tower-by-capture-then-close-with-team-findings-captured-first-no-superseded-seat-writes-a-board-because-the-baton-has-already-moved-closes-d-056s-deferred-road-in-full-upholds-d-056-and-d-061),
+[D-062](../DECISIONS.md#d-062--the-wake-rule-generalized),
 which closes the [IDEAS](../../IDEAS.md) line in full.

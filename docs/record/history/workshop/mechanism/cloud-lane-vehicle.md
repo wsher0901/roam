@@ -9,7 +9,7 @@ pr: 41
 
 ## What shipped
 
-([D-017](../../../DECISIONS.md#d-017--2026-06--cloud-sessions-are-the-parallel-lane-vehicle-amends-d-016))
+([D-017](../../../DECISIONS.md#d-017--cloud-sessions-are-the-lane-vehicle))
 · Parallel lanes run as Claude Code cloud sessions launched from
 Claude Desktop — each in its own isolated clone, on its own branch,
 shipping its own PR; same-machine worktrees demoted to fallback →

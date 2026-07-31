@@ -11,7 +11,7 @@ Shipped — merged as
 [PR #134](https://github.com/wsher0901/roam/pull/134) on the founder's
 word. Every gate on the way out waited on the pushed commit's Actions
 run going green
-([D-038](../../../DECISIONS.md#d-038--2026-07--ci-is-the-arbiter--actions-green-required-at-every-gate-local-gate-mirrors-all-six-ci-steps-d-anchors-born-resolving-upholds-d-027)).
+([D-038](../../../DECISIONS.md#d-038--ci-is-the-arbiter)).
 
 ## What this task is
 Apply Option C to LAWS: keep the command and its one-line why (D-027
@@ -39,7 +39,7 @@ last four sweeps. LAWS had accreted procedure grain the one-home
 routing law wants in a skill: the park-protocol bullet spelled out the
 rescue-save wip-commit mechanics that already live in handoff §1.5.
 Option C keeps LAWS at command + one-line why (upholding
-[D-027](../../../DECISIONS.md#d-027--2026-07--laws-polish--glossed-lane-law-provenance-re-homed-to-consolidations-ship-syncs-with-main-before-the-weld)),
+[D-027](../../../DECISIONS.md#d-027--laws-polish)),
 moves the grain out, and links the mechanics home. Two smaller fixes
 ride along: the decide trigger in LAWS still read the old
 "add/cut/reorder/pivot/pause" where the stub and HOME now say

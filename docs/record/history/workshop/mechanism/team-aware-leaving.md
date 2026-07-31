@@ -22,7 +22,7 @@ Actions green). Branch `docs/team-aware-leaving`, born from
 
 One theme: no ritual lets a live agent team outlive the sitting
 that made it.
-[D-055](../../../DECISIONS.md#d-055--2026-07--agent-teams--the-boundary-teams-are-for-exploration-and-review-at-a-ground-seat-lanes-remain-the-authorship-mechanism-two-risks-become-law-single-sitting-only--an-explicit-carve-out-to-d-050s-interrupt-promise--and-a-teammate-authored-diff-is-self-authored-under-no-solo-approval-the-reviewers-model-settled-by-verification-not-guess-the-founder-side-config-recorded-upholds-the-lane-law-no-solo-approval-and-one-home-gives-the-experimental-flag-its-consumer)
+[D-055](../../../DECISIONS.md#d-055--agent-teams-the-boundary)
 made single-sitting-only law and left it unenforced — handoff
 parks lanes, land fences them, neither mentioned a team. This
 bench gives [handoff](../../../../skills/handoff.md) the
@@ -75,7 +75,7 @@ caught it. I had written that a cockpit "cannot" lead a team
 because a session has exactly one team and teammates cannot spawn
 their own — but a cockpit is not a teammate, so that mechanism
 does not imply the conclusion at all. The real basis is POLICY:
-[D-055](../../../DECISIONS.md#d-055--2026-07--agent-teams--the-boundary-teams-are-for-exploration-and-review-at-a-ground-seat-lanes-remain-the-authorship-mechanism-two-risks-become-law-single-sitting-only--an-explicit-carve-out-to-d-050s-interrupt-promise--and-a-teammate-authored-diff-is-self-authored-under-no-solo-approval-the-reviewers-model-settled-by-verification-not-guess-the-founder-side-config-recorded-upholds-the-lane-law-no-solo-approval-and-one-home-gives-the-experimental-flag-its-consumer)
+[D-055](../../../DECISIONS.md#d-055--agent-teams-the-boundary)
 puts teams at a ground seat and makes lanes the cloud's
 parallelism. The platform would let any session spawn teammates;
 the boundary is what says a cockpit does not. Both homes now say
@@ -189,5 +189,5 @@ irrecoverable thing.
 - [liftoff §1 + §7](../../../../skills/liftoff.md#7--close) — the disclosed
   ripple.
 - [DECISIONS](../../../DECISIONS.md) —
-  [D-056](../../../DECISIONS.md#d-056--2026-07--team-aware-leaving-rituals--no-ritual-lets-a-live-agent-team-outlive-the-sitting-that-made-it-handoff-shuts-the-team-down-before-parking-anything-and-captures-its-findings-into-the-record-first-land-states-the-cockpit-cannot-lead-a-team-case-once-and-routes-the-ground-seat-to-handoff-pickup-gains-the-ghost-teammate-recovery-note-and-the--block-gains-what-the-team-had-found-closes-d-055s-deferred-gap-upholds-one-home-and-the-park-protocol),
+  [D-056](../../../DECISIONS.md#d-056--team-aware-leaving-rituals),
   the entry this bench records.

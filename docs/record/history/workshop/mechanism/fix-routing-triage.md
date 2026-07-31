@@ -9,7 +9,7 @@ pr: 43
 
 ## What shipped
 
-([D-018](../../../DECISIONS.md#d-018--2026-06--fix-routing-triage-after-lane-review-extends-d-017))
+([D-018](../../../DECISIONS.md#d-018--fix-routing-triage-after-lane-review))
 · Claude now reviews finished lane PRs before the founder does and
 routes each fix by smallest-sufficient-context — stay on the lane's
 branch, teleport into the lane, or open a new lane — with the

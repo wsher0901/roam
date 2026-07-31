@@ -11,7 +11,7 @@ Shipped — merged as
 [PR #140](https://github.com/wsher0901/roam/pull/140) on the founder's
 word. Every gate on the way out waited on the pushed commit's Actions
 run going green
-([D-038](../../../DECISIONS.md#d-038--2026-07--ci-is-the-arbiter--actions-green-required-at-every-gate-local-gate-mirrors-all-six-ci-steps-d-anchors-born-resolving-upholds-d-027)).
+([D-038](../../../DECISIONS.md#d-038--ci-is-the-arbiter)).
 
 ## What this task is
 A CI gate enforcing the ship §7 invariant — history/ files and the

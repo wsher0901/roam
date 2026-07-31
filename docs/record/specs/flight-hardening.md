@@ -14,7 +14,7 @@ shipped: 2026-07-22 15:09
 
 > **SUPERSESSION NOTE — added 2026-07-23.** One correction below
 > was itself corrected by live probe
-> ([D-049](../DECISIONS.md#d-049--2026-07--gh-second-path--gh-api-rest-through-the-github-proxy-is-the-cockpits-second-api-path-a-connector-flap-stops-costing-command-r2-gains-the-automatic-gh-rung-self-id-by-session-env-amends-d-048-corrects-the-193-api-map-upholds-d-047-and-verify-before-rely),
+> ([D-049](../DECISIONS.md#d-049--gh-second-path),
 > [#207](https://github.com/wsher0901/roam/pull/207)): "the
 > environment cannot install `gh` … the MCP connector is the sole
 > API path" read an egress block as a design wall. The
@@ -26,7 +26,7 @@ shipped: 2026-07-22 15:09
 > The other eight corrections stand. Everything below is RECORD.
 > (Extended 2026-07-24: a second correction — rung 1's
 > console-attach shape — was later retired in turn by
-> [D-051](../DECISIONS.md#d-051--2026-07--self-seat-birth--liftoff-fires---cloud-blind-and-the-cockpit-seats-itself-by-its-env-derived-self-url-the-console-attach-launcher-is-retired-amends-d-047s-rung-1-mechanics-as-corrected-by-193-upholds-d-049-and-board-governs):
+> [D-051](../DECISIONS.md#d-051--self-seat-birth):
 > the fire is blind, the cockpit self-seats. The remaining
 > corrections stand.)
 
@@ -46,8 +46,8 @@ and its closeout filings
 One theme: **the repo currently tells a future seat to do things
 that cannot work.** The first end-to-end flight of the assembled
 chain
-([D-046](../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
-+ [D-047](../DECISIONS.md#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law))
+([D-046](../DECISIONS.md#d-046--flight-cockpit-the-control-tower-online)
++ [D-047](../DECISIONS.md#d-047--cloud-born-cockpit))
 flew liftoff → cloud-born cockpit → bench birth → label-spawned
 lane → canary → non-author review → the founder's word → the weld,
 and every step that nearly failed failed against a WRITTEN
@@ -111,7 +111,7 @@ bench.
    resort, the GitHub mobile app. The merge-on-signal Action is noted
    as STAGED.
 5. **Cloud environment — correct
-   [D-047](../DECISIONS.md#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law)'s
+   [D-047](../DECISIONS.md#d-047--cloud-born-cockpit)'s
    note.** The environment cannot install `gh` — the install is
    egress-blocked (`cli.github.com` 403) and fails the whole setup
    script with exit 100. Replace with: no `gh`, cannot install it,

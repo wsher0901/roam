@@ -51,7 +51,7 @@ Example shape:
 automatically — no question asked — and liftoff is the only road to
 the cloud. It shipped the same day you asked for it.
 Sources:
-[D-032](../record/DECISIONS.md#d-032--2026-07--fleet-continuity--handoff-parks-every-local-lane-liftoff-respawns-parked-benches-wake-lock-parks-every-outcome-extends-the-d-020d-023-lane-law-upholds-d-009)
+[D-032](../record/DECISIONS.md#d-032--fleet-continuity)
 [the story](../record/history/workshop/mechanism/fleet-continuity.md)"
 
 ## 4 · The honesty rails

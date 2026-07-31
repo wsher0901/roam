@@ -10,7 +10,7 @@ pr: 87
 Shipped — merged as
 [PR #87](https://github.com/wsher0901/roam/pull/87) on the founder's
 word after the external review. All edits landed as
-[D-026](../../../DECISIONS.md#d-026--2026-07--roadmap-recut--plain-language-v1-completion-criteria-per-family-vetting-outputs-upholds-d-020-d-022)
+[D-026](../../../DECISIONS.md#d-026--roadmap-recut)
 entry + ripple in one commit; every Done-means box verified.
 
 ## What this task is
@@ -22,7 +22,7 @@ decision; the V1 block becomes a prose goal a stranger can read
 law); "Done when" became "Completion criteria" in ROADMAP and the
 living docs (the spec term "Done-means" is a different artifact and
 kept its name). Plus the
-[D-020](../../../DECISIONS.md#d-020--2026-07--parallel-lanes-v2-native-lanes-replace-hand-built-orchestration)
+[D-020](../../../DECISIONS.md#d-020--parallel-lanes-v2)
 alignment: T3–T6 each write their own `SOURCES-<family>.md` file so
 four [P] lanes never share a file; T7 consolidates the four into
 SOURCES.md and deletes them. Ticked tasks now link their
@@ -41,7 +41,7 @@ Born from the roadmap-recut Web-chat workshop: the founder arrived
 with edits 1–8 verbatim and the mechanism pre-decided (one D-number,
 entry + ripple in the same commit). D-025 was
 [DECISIONS](../../../DECISIONS.md)' tail, so this landed as
-[D-026](../../../DECISIONS.md#d-026--2026-07--roadmap-recut--plain-language-v1-completion-criteria-per-family-vetting-outputs-upholds-d-020-d-022).
+[D-026](../../../DECISIONS.md#d-026--roadmap-recut).
 The term-rename hit list, derived at execution time: ROADMAP's nine
 "Done when" occurrences and three [HOME](../../../../HOME.md) lines (ROADMAP
 portrait · version/stage/task term · Roadmap-manual notation
@@ -61,6 +61,6 @@ confirms FOUNDATION.md and DASHBOARD.md untouched.
 - PR: [#87](https://github.com/wsher0901/roam/pull/87)
   (squash-merged 2026-07-13)
 - decision:
-  [D-026](../../../DECISIONS.md#d-026--2026-07--roadmap-recut--plain-language-v1-completion-criteria-per-family-vetting-outputs-upholds-d-020-d-022)
+  [D-026](../../../DECISIONS.md#d-026--roadmap-recut)
 - edited files: [ROADMAP](../../../../ROADMAP.md) · [HOME](../../../../HOME.md)
 - the roadmap-recut workshop chat (Web) — where edits 1–8 were cut

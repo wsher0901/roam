@@ -20,7 +20,7 @@ Appendix C — Telemetry vocabulary (what the app records) — holding
 TELEMETRY's three families and storage note verbatim (headings
 demoted to C1–C4, body byte-faithful); data/TELEMETRY.md retired;
 data/ tightened to FACTS · SOURCES · SCHEMA. Recorded as
-[D-033](../../../DECISIONS.md#d-033--2026-07--telemetry-folds-into-facts-appendix-c-file-retired-upholds-d-014-extends-the-d-030-retirement-pattern).
+[D-033](../../../DECISIONS.md#d-033--telemetry-folds-into-facts).
 
 ## Pending issues
 none
@@ -49,7 +49,7 @@ table + data/ paragraph + three manual links — including the
 "four documents" count, re-derived to three — and
 [SCHEMA](../../../../data/SCHEMA.md)'s single link) were reworded to name
 FACTS Appendix C; frozen records (the
-[D-014](../../../DECISIONS.md#d-014--2026-06--telemetry-posture-capture-now-use-later)
+[D-014](../../../DECISIONS.md#d-014--telemetry-posture)
 entry's two links,
 [telemetry-inventory](../../product/definition/telemetry-inventory.md)'s one)
 kept their historical prose and only retargeted destinations.
@@ -59,7 +59,7 @@ No deviations from the brief.
 
 ## Where to look
 Spec: [telemetry-fold](../../../specs/telemetry-fold.md) · decision:
-[D-033](../../../DECISIONS.md#d-033--2026-07--telemetry-folds-into-facts-appendix-c-file-retired-upholds-d-014-extends-the-d-030-retirement-pattern)
+[D-033](../../../DECISIONS.md#d-033--telemetry-folds-into-facts)
 · PR [#106](https://github.com/wsher0901/roam/pull/106) · the new
 home:
 [FACTS Appendix C](../../../../data/FACTS.md#appendix-c--telemetry-vocabulary-what-the-app-records).

@@ -137,7 +137,7 @@ of self-authored diffs (the no-solo-approval law,
 [LAWS §Workflow](LAWS.md#workflow-non-negotiable)); as an optional
 thinking room, what it concludes still travels as a paste block
 (WEB-INSTRUCTIONS) — a tool since
-[D-046](record/DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock),
+[D-046](record/DECISIONS.md#d-046--flight-cockpit-the-control-tower-online),
 not a requirement: CC-direct is the standard working mode at both
 seats — discuss, decide, author, bookkeep in-session. Claude DESIGN
 draws: a no-write surface whose deliverables enter the repo only as
@@ -164,7 +164,7 @@ Sources:
 | [DECISIONS.md](record/DECISIONS.md) | the decision log, one D-number per choice | [decide](skills/decide.md) | append-only; entries are never rewritten |
 | [SETUP.md](SETUP.md) | everything the workshop runs on — stack, configs, tools; once-and-done vs per-machine vs staged | ops PRs | living |
 | [ENGINE.md](ENGINE.md) | the engine on paper — pipeline stages, decided rules in slots, OPEN register | [decide](skills/decide.md) ripples; invents nothing | living consolidation; seeds the [V1.S3](ROADMAP.md#v1s3--engine-core--two-families-deep) contract |
-| [IDEAS.md](IDEAS.md) | the single untriaged inbox — no Issues, no boards ([D-023](record/DECISIONS.md#d-023--2026-07--universal-draft-pr-at-birth--micro-pr-carve-out-recut-amends-d-002-d-008-d-020)); OPEN + CLOSED under the entry contract at its head ([D-066](record/DECISIONS.md#d-066--2026-07--the-ideas-entry-contract--one-idea-per-line-one-line-per-idea-plain-language-links-short-text-at-the-tail-glyph-first-open--developed-with-vehicle--declined-with-a-one-word-why-two-sections-open-newest-first-and-closed-one-line-each-closed-entries-compress-and-stay-as-the-outcome-ledger-amends-the-delete-at-harvest-compaction-law-multi-part-thoughts-split-so-closure-is-per-idea-findings-and-probe-stories-live-in-the-record-never-here-enforcement--the-header-is-the-law-handoffs-harvest-grooms-to-it-every-sitting-liftoffdecideparallel-lanes-cite-it-at-their-write-steps-the-critic-and-the-external-review-grade-ideas-diffs-against-it)) | Claude Code, the moment an idea or defect is voiced | triaged out into [ROADMAP](ROADMAP.md) via decide; closed ideas COMPRESS to one line and STAY as the outcome ledger |
+| [IDEAS.md](IDEAS.md) | the single untriaged inbox — no Issues, no boards ([D-023](record/DECISIONS.md#d-023--universal-draft-pr-at-birth-and-micro-pr-carve-out)); OPEN + CLOSED under the entry contract at its head ([D-066](record/DECISIONS.md#d-066--the-ideas-entry-contract)) | Claude Code, the moment an idea or defect is voiced | triaged out into [ROADMAP](ROADMAP.md) via decide; closed ideas COMPRESS to one line and STAY as the outcome ledger |
 | [DESIGN-KICKOFF.md](DESIGN-KICKOFF.md) | the Claude Design session preamble + governance rules | ops PRs | living until the repo-synced design system replaces it |
 | [WEB-INSTRUCTIONS.md](WEB-INSTRUCTIONS.md) | master copy of the Claude Web Project-instructions box | ops PRs | living; re-pasted into the box after every edit (the box is a copy, never the source) |
 | [COCKPIT-CHARTER.md](COCKPIT-CHARTER.md) | master copy of the cockpit routine's saved prompt, adopted verbatim into every `--cloud` birth | ops PRs | living; re-saved into the routine box after every edit (the box is a copy) |
@@ -358,7 +358,7 @@ see and claim it. The draft PR is the task's public window for its
 whole life.
 
 Sources:
-[D-023](record/DECISIONS.md#d-023--2026-07--universal-draft-pr-at-birth--micro-pr-carve-out-recut-amends-d-002-d-008-d-020)
+[D-023](record/DECISIONS.md#d-023--universal-draft-pr-at-birth-and-micro-pr-carve-out)
 [parallel-lanes §Bench-first birth](skills/parallel-lanes.md#bench-first-birth-baton-holder-procedure)
 
 **Work — the heartbeat.** Commits are the heartbeat; every commit is
@@ -481,7 +481,7 @@ honesty rails: "not recorded" beats reconstruction, and because chats
 are disposable, anything that never left a conversation is truthfully
 not recorded — that fix belongs to [handoff](skills/handoff.md)'s
 harvest, not to recall. Home: [recall](skills/recall.md) ·
-[D-039](record/DECISIONS.md#d-039--2026-07--recall--questions-answered-from-files-never-from-memory-the-d-036-routing-tables-read-mirror-model-invoked-at-discretion).
+[D-039](record/DECISIONS.md#d-039--recall-answers-from-files).
 
 ### The rituals
 
@@ -552,7 +552,7 @@ eligibility gate, births anything unbirthed bench-first, spawns
 eligible lanes cloud-side, verifies each canary handshake, repaints
 the board as the flight plan — every lane airborne, held, or
 failed, each with its reason — and ends by FIRING THE COCKPIT
-([D-046](record/DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)),
+([D-046](record/DECISIONS.md#d-046--flight-cockpit-the-control-tower-online)),
 handing it the baton for the flight. The board IS the flight plan
 and the birth prompt only points at it — a prompt is a delivery
 channel and channels truncate, so where they disagree the board
@@ -566,7 +566,7 @@ Sources:
 **land** — the flight's ending ritual, and the cockpit's alone:
 handoff leaves a desk, land ends a flight. Several things can START one and
 only some are the founder's word
-([D-061](record/DECISIONS.md#d-061--2026-07--the-landing-doctrine-recut-to-three-scenarios--the-cockpits-standing-job-advise-on-fleet-status-and-on-each-gate-reaching-decision-execute-the-founders-rulings-from-the-phone-auto-land-when-the-fleet-empties-and-nothing-awaits-the-founder-desk-takeover-when-pickup-finds-a-live-cockpit-holding-decisions-and-the-founders-freeze-unchanged-the-tombstone-wake-rule-makes-a-superseded-cockpit-retire-by-the-full-ritual-amends-d-054s-two-mode-routing-upholds-no-solo-approval-and-the-derivation-law)):
+([D-061](record/DECISIONS.md#d-061--the-landing-doctrine-recut-to-three-scenarios)):
 AUTO-LAND, which the cockpit fires itself the same turn no lanes
 are working and nothing awaits the founder; DESK TAKEOVER, when a
 pickup adopts the flight's decision queue and writes COCKPIT
@@ -592,7 +592,7 @@ continue.
 
 Sources:
 [land](skills/land.md)
-[D-054](record/DECISIONS.md#d-054--2026-07--the-landing-skill--how-a-flight-ends-becomes-a-first-class-ritual-one-skill-with-two-modes-routed-by-fleet-state-retire--pause-and-transfer-the-fence-is-a-commit-so-the-resume-point-is-the-branch-tip-by-construction-wake-lock-mediated-with-its-honesty-clause-the-board-is-the-single-transfer-material-pickup-gains-the-fleet-resume-ask-and-its-cap-arithmetic-sessions-are-cattle-branches-are-the-work-charter-rule-6-becomes-a-pointer-the-effort-doctrine-moves-to-opus-5--xhigh-upholds-the-wake-lock-the-park-protocol-and-one-home-supersedes-the-opus-48-reliance-pair)
+[D-054](record/DECISIONS.md#d-054--the-landing-skill)
 
 ### The baton
 
@@ -667,7 +667,7 @@ Sources:
 [lane law](LAWS.md#parallel-lanes--cloud)
 [parallel-lanes](skills/parallel-lanes.md)
 [bench-first](#task-anatomy--lifecycle)
-[D-020](record/DECISIONS.md#d-020--2026-07--parallel-lanes-v2-native-lanes-replace-hand-built-orchestration)
+[D-020](record/DECISIONS.md#d-020--parallel-lanes-v2)
 
 While flying, a lane pushes every commit, never shares a file with
 any sibling (so merges can't collide), keeps its own memory at the
@@ -718,7 +718,7 @@ Sources:
 
 THE SPLIT WITH THE CHARTER, stated so neither file claims the
 other's job
-([D-065](record/DECISIONS.md#d-065--2026-07--the-box-master-diet--a-box-master-carries-standing-rules-invariants-and-pointers-procedures-live-in-their-repo-homes-and-are-derived-at-need-values-live-in-setup-provenance-labels-do-not-ride-boxes-the-session-that-needs-a-decisions-text-greps-the-clone-the-cockpit-charter-goes-v3-on-the-principle-the-connector-ladder-moves-to-home-upholds-d-064-amends-the-charters-d-061d-048-embeddings-by-relocation-not-repeal)):
+([D-065](record/DECISIONS.md#d-065--the-box-master-diet)):
 [COCKPIT-CHARTER.md](COCKPIT-CHARTER.md) carries the STANDING
 DUTY — probe before commanding, climb this ladder, never
 improvise — and the one line a superseded session must be able to
@@ -742,7 +742,7 @@ merge · read check runs. A cockpit that has lost the API has lost
 COMMAND.
 
 The cockpit has TWO API paths
-([D-049](record/DECISIONS.md#d-049--2026-07--gh-second-path--gh-api-rest-through-the-github-proxy-is-the-cockpits-second-api-path-a-connector-flap-stops-costing-command-r2-gains-the-automatic-gh-rung-self-id-by-session-env-amends-d-048-corrects-the-193-api-map-upholds-d-047-and-verify-before-rely),
+([D-049](record/DECISIONS.md#d-049--gh-second-path),
 probe-proven 2026-07-23): the **GitHub MCP connector**, and
 **`gh api` REST through the session's GitHub proxy** (the
 mechanics and their VERIFY probe live at
@@ -867,7 +867,7 @@ sparingly.
 
 **Rejected, not staged:** a merge-on-signal GitHub Action. It was
 the obvious permanent fix and
-[D-048](record/DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)
+[D-048](record/DECISIONS.md#d-048--cockpit-resilience)
 turns it down for two reasons: it would restore only MERGE while a
 connector-dead cockpit still cannot spawn lanes or open benches,
 and — decisively — every session pushes as the founder, so a
@@ -879,11 +879,11 @@ recoverable noise (one cap run), not a law breach.
 Sources:
 [COCKPIT-CHARTER](COCKPIT-CHARTER.md) (the standing duty and the
 tombstone line; this section is the procedure it points at)
-[D-065](record/DECISIONS.md#d-065--2026-07--the-box-master-diet--a-box-master-carries-standing-rules-invariants-and-pointers-procedures-live-in-their-repo-homes-and-are-derived-at-need-values-live-in-setup-provenance-labels-do-not-ride-boxes-the-session-that-needs-a-decisions-text-greps-the-clone-the-cockpit-charter-goes-v3-on-the-principle-the-connector-ladder-moves-to-home-upholds-d-064-amends-the-charters-d-061d-048-embeddings-by-relocation-not-repeal)
+[D-065](record/DECISIONS.md#d-065--the-box-master-diet)
 (the diet that moved the ladder here)
 [SETUP §cloud accounts](SETUP.md#once-and-done--cloud-accounts)
-[D-048](record/DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)
-[D-049](record/DECISIONS.md#d-049--2026-07--gh-second-path--gh-api-rest-through-the-github-proxy-is-the-cockpits-second-api-path-a-connector-flap-stops-costing-command-r2-gains-the-automatic-gh-rung-self-id-by-session-env-amends-d-048-corrects-the-193-api-map-upholds-d-047-and-verify-before-rely)
+[D-048](record/DECISIONS.md#d-048--cockpit-resilience)
+[D-049](record/DECISIONS.md#d-049--gh-second-path)
 
 ### Delegation — the away-mode chooser
 
@@ -894,7 +894,7 @@ task. Are you leaving? Then ask whether work should continue. If
 nothing continues, handoff parks the shop and closes the session. If
 work continues, one more question decides: is the machine staying on?
 If the machine is going dark — the standard away posture since
-[D-046](record/DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+[D-046](record/DECISIONS.md#d-046--flight-cockpit-the-control-tower-online)
 — liftoff lifts the eligible work to the cloud and fires the
 cockpit, briefed from the board. If it must stay on, go remote —
 the tether, the backstop posture: the control tower relocates to
@@ -942,8 +942,8 @@ immediately without asking (D-002 as recut by D-023).
 Sources:
 [DASHBOARD.md](DASHBOARD.md)
 [IDEAS.md](IDEAS.md)
-[D-002](record/DECISIONS.md#d-002--2026-06--handoff-note-merge-policy)
-[D-023](record/DECISIONS.md#d-023--2026-07--universal-draft-pr-at-birth--micro-pr-carve-out-recut-amends-d-002-d-008-d-020)
+[D-002](record/DECISIONS.md#d-002--handoff-note-merge-policy)
+[D-023](record/DECISIONS.md#d-023--universal-draft-pr-at-birth-and-micro-pr-carve-out)
 
 Why it is safe: both files are derived or inbox surfaces — the
 board is repainted wholesale from sources by the next ritual
@@ -1007,7 +1007,7 @@ cannot drift from its procedure (D-024; now a law in LAWS §Knowledge
 
 Sources:
 [docs/skills/](skills)
-[D-024](record/DECISIONS.md#d-024--2026-07--architecture-v2-memoryhistory-narrative-layer-dashboard-as-sole-state-surface-rituals-as-skills-amends-d-008-retires-handoffmd--shiplogmd)
+[D-024](record/DECISIONS.md#d-024--architecture-v2-narrative-layer-and-skills)
 [LAWS §Knowledge & tracking](LAWS.md#knowledge--tracking)
 
 Skills are model-invoked: the stub's description is what the model
@@ -1020,7 +1020,7 @@ unprompted. Rituals fire on moments, not remembered commands — though
 the founder may invoke one directly when the invocation carries
 something: `/handoff` at the end of a leaving message is the inline
 paste's carrier
-([D-040](record/DECISIONS.md#d-040--2026-07--handoff-input-inversion--the-leaving-message-carries-the-webdesign-paste-inline-the-never-skipped-question-is-retired-a-bare-trigger-means-none-amends-the-two-touchpoints-laws-wording-upholds-d-032)).
+([D-040](record/DECISIONS.md#d-040--handoff-input-inversion)).
 
 Sources:
 [handoff](skills/handoff.md)
@@ -1044,7 +1044,7 @@ The DASHBOARD is THE STANDING REPORT — the one that renders when
 nobody is speaking — so it obeys the same skeleton as any other
 report: STATE AND ACTS ONLY. Stories live in the record; position
 lives once, in the bars; nothing here is retold from the ledger
-([D-067](record/DECISIONS.md#d-067--2026-07--the-report-skeleton--the-board-diet--every-founder-facing-report-ritual-or-not-renders-five-slots-in-order-verdict-glyph--state--finding-count--your-act-exact-word-or-paste--surface--when-or-nothing--off-origin-content-existing-only-in-the-session-else-omitted--one-breath-context--a-pointer-to-the-record-never-a-retelling-one-job-per-surface--the-gate-report-carries-ready--the-word-the-external-review-carries-decisions-the-shipped-report-carries-confirmation--needs-you--next-push-first-report-second--beyond-the-founders-acts-and-off-origin-content-a-report-may-contain-nothing-not-already-on-origin-the-dashboard-is-the-standing-report-and-diets-to-the-same-principle-state-and-acts-only-stories-live-in-the-record-position-lives-once-the-bars-needs-you-carries-the-urgency-ladder-the-baton-renders-state-never-doctrine-with-the-cause-vocabulary-auto-land--manual-land--desk-takeover-by-this-pickup-working-on-splits-from-where-we-are-and-the-sitting-narrative--essay-ledger-rows--review-receipts-die-into-the-record)).
+([D-067](record/DECISIONS.md#d-067--the-report-skeleton-and-the-board-diet)).
 It is repainted only at ritual moments — pickup when stale ·
 handoff · liftoff · ship's tail — never hand-edited; between
 rituals, GIT OUTRANKS IT.
@@ -1088,13 +1088,13 @@ Sources:
 [DASHBOARD](DASHBOARD.md)
 [the ledger](record/history/README.md#the-ledger)
 [handoff §4](skills/handoff.md)
-[D-067](record/DECISIONS.md#d-067--2026-07--the-report-skeleton--the-board-diet--every-founder-facing-report-ritual-or-not-renders-five-slots-in-order-verdict-glyph--state--finding-count--your-act-exact-word-or-paste--surface--when-or-nothing--off-origin-content-existing-only-in-the-session-else-omitted--one-breath-context--a-pointer-to-the-record-never-a-retelling-one-job-per-surface--the-gate-report-carries-ready--the-word-the-external-review-carries-decisions-the-shipped-report-carries-confirmation--needs-you--next-push-first-report-second--beyond-the-founders-acts-and-off-origin-content-a-report-may-contain-nothing-not-already-on-origin-the-dashboard-is-the-standing-report-and-diets-to-the-same-principle-state-and-acts-only-stories-live-in-the-record-position-lives-once-the-bars-needs-you-carries-the-urgency-ladder-the-baton-renders-state-never-doctrine-with-the-cause-vocabulary-auto-land--manual-land--desk-takeover-by-this-pickup-working-on-splits-from-where-we-are-and-the-sitting-narrative--essay-ledger-rows--review-receipts-die-into-the-record)
+[D-067](record/DECISIONS.md#d-067--the-report-skeleton-and-the-board-diet)
 
 ## Response doctrine
 
 How every surface speaks to the founder — ONE standard, this its
 one home
-([D-052](record/DECISIONS.md#d-052--2026-07--response-doctrine--one-standard-for-every-surface-speaking-to-the-founder-answer-first-explicit-steps-purpose-shaped-explanation-live-derived-state-glyph-verdicts-the-command-card-the-fleet-table-report-the-ritual-status-templates-web-instructions-v5-ships-retires-the-v4-paste-block-loop-master-upholds-d-046s-cc-direct-doctrine-and-the-derivation-law)).
+([D-052](record/DECISIONS.md#d-052--response-doctrine)).
 Rituals and charters REFERENCE this section; none copies it.
 
 1. TWO CHANNELS — sentences for the founder; fenced blocks for
@@ -1125,11 +1125,11 @@ Rituals and charters REFERENCE this section; none copies it.
    is not already on origin.
 
 Sources:
-[D-067](record/DECISIONS.md#d-067--2026-07--the-report-skeleton--the-board-diet--every-founder-facing-report-ritual-or-not-renders-five-slots-in-order-verdict-glyph--state--finding-count--your-act-exact-word-or-paste--surface--when-or-nothing--off-origin-content-existing-only-in-the-session-else-omitted--one-breath-context--a-pointer-to-the-record-never-a-retelling-one-job-per-surface--the-gate-report-carries-ready--the-word-the-external-review-carries-decisions-the-shipped-report-carries-confirmation--needs-you--next-push-first-report-second--beyond-the-founders-acts-and-off-origin-content-a-report-may-contain-nothing-not-already-on-origin-the-dashboard-is-the-standing-report-and-diets-to-the-same-principle-state-and-acts-only-stories-live-in-the-record-position-lives-once-the-bars-needs-you-carries-the-urgency-ladder-the-baton-renders-state-never-doctrine-with-the-cause-vocabulary-auto-land--manual-land--desk-takeover-by-this-pickup-working-on-splits-from-where-we-are-and-the-sitting-narrative--essay-ledger-rows--review-receipts-die-into-the-record)
+[D-067](record/DECISIONS.md#d-067--the-report-skeleton-and-the-board-diet)
 (v2 + rule 8 — the report skeleton and the board diet)
-[D-063](record/DECISIONS.md#d-063--2026-07--response-doctrine-v2--web-instructions-v6--two-channels-sentences-for-the-founder-fenced-blocks-for-machines-process-is-proof-not-prose-the-chat-start-ingest-contract-the-relay-rule--origin-is-the-only-courier-codes-output-is-never-pasted-to-web-reviews-speak-in-goal-and-outcome-the-core-file-alert-the-agenda-convention-brief-renders-the-full-picture-the-master-gains-a-version-history-amends-d-052)
+[D-063](record/DECISIONS.md#d-063--response-doctrine-v2-and-web-instructions-v6)
 (v2 — the current form)
-[D-052](record/DECISIONS.md#d-052--2026-07--response-doctrine--one-standard-for-every-surface-speaking-to-the-founder-answer-first-explicit-steps-purpose-shaped-explanation-live-derived-state-glyph-verdicts-the-command-card-the-fleet-table-report-the-ritual-status-templates-web-instructions-v5-ships-retires-the-v4-paste-block-loop-master-upholds-d-046s-cc-direct-doctrine-and-the-derivation-law)
+[D-052](record/DECISIONS.md#d-052--response-doctrine)
 (v1 — the standard's origin)
 [LAWS §Knowledge & tracking](LAWS.md#knowledge--tracking)
 
@@ -1144,7 +1144,7 @@ does · when to reach for it. Rituals point here; none re-lists.
 - `claude --teleport [id]` / `/teleport` — pulls a cloud session
   into this terminal. Reach for it to drive a flight from the
   desk. (Execution RELOCATES to this machine —
-  [D-049](record/DECISIONS.md#d-049--2026-07--gh-second-path--gh-api-rest-through-the-github-proxy-is-the-cockpits-second-api-path-a-connector-flap-stops-costing-command-r2-gains-the-automatic-gh-rung-self-id-by-session-env-amends-d-048-corrects-the-193-api-map-upholds-d-047-and-verify-before-rely)'s
+  [D-049](record/DECISIONS.md#d-049--gh-second-path)'s
   probe finding: a teleported session is a local session from
   then on.)
 - `/mcp` — retries a failed connector in the current session; the
@@ -1171,13 +1171,13 @@ does · when to reach for it. Rituals point here; none re-lists.
   the cockpit AUTO-LANDS itself the moment no lanes are working
   and nothing awaits your word, and its landing report arrives
   unprompted — so a quiet flight is not one to go check on
-  ([D-061](record/DECISIONS.md#d-061--2026-07--the-landing-doctrine-recut-to-three-scenarios--the-cockpits-standing-job-advise-on-fleet-status-and-on-each-gate-reaching-decision-execute-the-founders-rulings-from-the-phone-auto-land-when-the-fleet-empties-and-nothing-awaits-the-founder-desk-takeover-when-pickup-finds-a-live-cockpit-holding-decisions-and-the-founders-freeze-unchanged-the-tombstone-wake-rule-makes-a-superseded-cockpit-retire-by-the-full-ritual-amends-d-054s-two-mode-routing-upholds-no-solo-approval-and-the-derivation-law)).
+  ([D-061](record/DECISIONS.md#d-061--the-landing-doctrine-recut-to-three-scenarios)).
   And if you simply sit down at a desk while the flight still
   holds questions for you, [pickup](skills/pickup.md) takes the
   queue over — no landing word needed.
 - Esc — interrupts the running turn, safe everywhere except the
   weld's atomic commit;
-  [D-050](record/DECISIONS.md#d-050--2026-07--session-lifecycle--closed--dead-the-close-locks-wall-softens-to-injected-read-only-doctrine-interrupt-capture-is-standing-format-the-claude-residue-sweep-is-pickup-hygiene-ideas-is-an-inbox-not-an-archive-amends-the-d-046-era-close-wall-design-upholds-the-park-protocol-and-no-solo-approval)'s
+  [D-050](record/DECISIONS.md#d-050--session-lifecycle-closed-is-not-dead)'s
   ⏸ capture catches what was in flight. ONE CARVE-OUT: the ⏸
   block preserves the LEAD's work, never the teammates
   themselves — what they FOUND survives only if written down,
@@ -1198,7 +1198,7 @@ THE BOUNDARY, and it is the whole of this section: **agent teams
 are for EXPLORATION AND REVIEW at a ground seat. LANES REMAIN THE
 AUTHORSHIP MECHANISM.** A team never authors a bench, never
 merges, and never runs a ritual
-([D-055](record/DECISIONS.md#d-055--2026-07--agent-teams--the-boundary-teams-are-for-exploration-and-review-at-a-ground-seat-lanes-remain-the-authorship-mechanism-two-risks-become-law-single-sitting-only--an-explicit-carve-out-to-d-050s-interrupt-promise--and-a-teammate-authored-diff-is-self-authored-under-no-solo-approval-the-reviewers-model-settled-by-verification-not-guess-the-founder-side-config-recorded-upholds-the-lane-law-no-solo-approval-and-one-home-gives-the-experimental-flag-its-consumer)).
+([D-055](record/DECISIONS.md#d-055--agent-teams-the-boundary)).
 
 What a team IS, in one line: several full Claude Code sessions —
 a fixed lead plus teammates, each with its own context window —
@@ -1233,9 +1233,9 @@ sitting ends. ENFORCED, not merely stated:
 captures the team's findings and shuts it down BEFORE anything is
 parked, and [pickup §2](skills/pickup.md#2--self-heal) carries the
 ghost-teammate recovery note for the case that slips through
-([D-056](record/DECISIONS.md#d-056--2026-07--team-aware-leaving-rituals--no-ritual-lets-a-live-agent-team-outlive-the-sitting-that-made-it-handoff-shuts-the-team-down-before-parking-anything-and-captures-its-findings-into-the-record-first-land-states-the-cockpit-cannot-lead-a-team-case-once-and-routes-the-ground-seat-to-handoff-pickup-gains-the-ghost-teammate-recovery-note-and-the--block-gains-what-the-team-had-found-closes-d-055s-deferred-gap-upholds-one-home-and-the-park-protocol)).
+([D-056](record/DECISIONS.md#d-056--team-aware-leaving-rituals)).
 This is an explicit CARVE-OUT to
-[D-050](record/DECISIONS.md#d-050--2026-07--session-lifecycle--closed--dead-the-close-locks-wall-softens-to-injected-read-only-doctrine-interrupt-capture-is-standing-format-the-claude-residue-sweep-is-pickup-hygiene-ideas-is-an-inbox-not-an-archive-amends-the-d-046-era-close-wall-design-upholds-the-park-protocol-and-no-solo-approval)'s
+[D-050](record/DECISIONS.md#d-050--session-lifecycle-closed-is-not-dead)'s
 interrupt promise: the ⏸ capture block preserves THE LEAD's work,
 never the teammates themselves. What they FOUND survives only
 because the block carries a conditional TEAM FINDINGS field
@@ -1269,7 +1269,7 @@ teammates load those from project and user settings like any
 ordinary session.
 
 Sources:
-[D-055](record/DECISIONS.md#d-055--2026-07--agent-teams--the-boundary-teams-are-for-exploration-and-review-at-a-ground-seat-lanes-remain-the-authorship-mechanism-two-risks-become-law-single-sitting-only--an-explicit-carve-out-to-d-050s-interrupt-promise--and-a-teammate-authored-diff-is-self-authored-under-no-solo-approval-the-reviewers-model-settled-by-verification-not-guess-the-founder-side-config-recorded-upholds-the-lane-law-no-solo-approval-and-one-home-gives-the-experimental-flag-its-consumer)
+[D-055](record/DECISIONS.md#d-055--agent-teams-the-boundary)
 [LAWS §Workflow](LAWS.md#workflow-non-negotiable)
 [parallel-lanes](skills/parallel-lanes.md)
 [SETUP §Models & effort](SETUP.md#once-and-done--cloud-accounts)
@@ -1297,7 +1297,7 @@ never duplicates it.
 | Probe result with no bench | [record/probes/](record/probes/cloud-birth-in-ci.md) | the bench that evicts it from IDEAS | frozen — a revisit writes a new record |
 | Engine rule / OPEN slot fill | [ENGINE](ENGINE.md) | decide | decide — the register shrinks by D-number |
 | Tooling · stack · config inventory | [SETUP](SETUP.md) | ops PR | ops PR; status never (the board's job) |
-| External-box master text (a box this repo authors, another product stores) | its own top-level master file — [WEB-INSTRUCTIONS](WEB-INSTRUCTIONS.md) · [COCKPIT-CHARTER](COCKPIT-CHARTER.md) · [LANE-WORKER](LANE-WORKER.md) · [DESIGN-KICKOFF](DESIGN-KICKOFF.md) ([D-064](record/DECISIONS.md#d-064--2026-07--the-box-master-class--the-setup-entry-contract--every-external-box-master-is-its-own-top-level-file-on-the-web-instructions-pattern-cockpit-chartermd-and-lane-workermd-extracted-verbatim-setup-compresses-to-a-replication-spec-under-the-entry-contract-what--where--values--verify--source-design-kickoff-joins-the-class-on-paper)) | ops PR | ops PR + a version-history row; the box is re-pasted/re-saved after every merge |
+| External-box master text (a box this repo authors, another product stores) | its own top-level master file — [WEB-INSTRUCTIONS](WEB-INSTRUCTIONS.md) · [COCKPIT-CHARTER](COCKPIT-CHARTER.md) · [LANE-WORKER](LANE-WORKER.md) · [DESIGN-KICKOFF](DESIGN-KICKOFF.md) ([D-064](record/DECISIONS.md#d-064--the-box-master-class-and-setup-entry-contract)) | ops PR | ops PR + a version-history row; the box is re-pasted/re-saved after every merge |
 | Fact vocabulary (F-* · TP-* · telemetry) | [FACTS](data/FACTS.md) | decide; IDs append-only | definitions via D; IDs never reused |
 | Source vetting verdicts | `SOURCES-<family>` → [SOURCES](data/SOURCES.md) at T7 | vetting lanes | grade moves via demotion evidence + D |
 | Design-session governance | [DESIGN-KICKOFF](DESIGN-KICKOFF.md) | ops PR | ops PR |
@@ -1334,9 +1334,9 @@ the link for the full story.
 - **rolling wave** — the planning-depth law: the active version
   fully staged and tasked, the next a rough bucket, the one after
   name-only, sockets pooled unversioned
-  ([D-004](record/DECISIONS.md#d-004--2026-06--planning-notation--rolling-wave-depth),
+  ([D-004](record/DECISIONS.md#d-004--planning-notation-and-rolling-wave-depth),
   amended by
-  [D-022](record/DECISIONS.md#d-022--2026-07--version-ladder--lifespan-split-amends-d-004)).
+  [D-022](record/DECISIONS.md#d-022--version-ladder-and-lifespan-split)).
   Home: [§Roadmap manual](#roadmap-manual).
 - **spec** — a task's stable contract (goal, scope edges, plan,
   Done-means), born from the discussion that opened the task;
@@ -1409,7 +1409,7 @@ the link for the full story.
 - **control tower** — the ground Claude Code session the founder
   is actively driving; holder of the baton, sole runner of rituals
   and writer of main's bookkeeping. Called "cockpit" before
-  [D-046](record/DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+  [D-046](record/DECISIONS.md#d-046--flight-cockpit-the-control-tower-online)
   — [history/](record/history/README.md) files and DECISIONS entries
   written before D-046 use "cockpit" in this ground meaning. Home:
   [§The baton](#the-baton) ·
@@ -1441,7 +1441,7 @@ the link for the full story.
   carries the line; the procedure is
   [the recovery ladder](#the-cockpits-api-paths--recovery-ladder)'s
   R4b) — and
-  since [D-061](record/DECISIONS.md#d-061--2026-07--the-landing-doctrine-recut-to-three-scenarios--the-cockpits-standing-job-advise-on-fleet-status-and-on-each-gate-reaching-decision-execute-the-founders-rulings-from-the-phone-auto-land-when-the-fleet-empties-and-nothing-awaits-the-founder-desk-takeover-when-pickup-finds-a-live-cockpit-holding-decisions-and-the-founders-freeze-unchanged-the-tombstone-wake-rule-makes-a-superseded-cockpit-retire-by-the-full-ritual-amends-d-054s-two-mode-routing-upholds-no-solo-approval-and-the-derivation-law)
+  since [D-061](record/DECISIONS.md#d-061--the-landing-doctrine-recut-to-three-scenarios)
   that tombstone is its last word AFTER a landing ritual (minus
   the board step), not instead of one. Home:
   [liftoff §7](skills/liftoff.md#7--close) ·
@@ -1456,7 +1456,7 @@ the link for the full story.
 - **bench-first** — the universal birth order: branch → spec (if
   discussed) → memory stub → draft PR, all pushed to origin BEFORE
   any session works the task
-  ([D-023](record/DECISIONS.md#d-023--2026-07--universal-draft-pr-at-birth--micro-pr-carve-out-recut-amends-d-002-d-008-d-020)).
+  ([D-023](record/DECISIONS.md#d-023--universal-draft-pr-at-birth-and-micro-pr-carve-out)).
   Home: [§Task anatomy](#task-anatomy--lifecycle).
 - **lane** — one parallel work stream (background agent, worktree
   session, or cloud session) flying one task on its own branch.
@@ -1495,7 +1495,7 @@ the link for the full story.
 - **wake-lock** — a lane's first act on ANY wake or resume: re-read
   its own memory Status; a Status it does not own (parked · respawned
   · superseded · failed) means push nothing and terminate
-  ([D-032](record/DECISIONS.md#d-032--2026-07--fleet-continuity--handoff-parks-every-local-lane-liftoff-respawns-parked-benches-wake-lock-parks-every-outcome-extends-the-d-020d-023-lane-law-upholds-d-009)).
+  ([D-032](record/DECISIONS.md#d-032--fleet-continuity)).
   Home: [parallel-lanes §Wake-lock &
   parking](skills/parallel-lanes.md#wake-lock--parking).
 - **respawn / adopt** — [liftoff](skills/liftoff.md) re-flying a
@@ -1518,7 +1518,7 @@ the link for the full story.
   and the control tower relocates to the founder's phone via Remote
   Control. A posture, not a leaving ritual: parks nothing, closes
   nothing, keeps the baton; a BACKSTOP since
-  [D-046](record/DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+  [D-046](record/DECISIONS.md#d-046--flight-cockpit-the-control-tower-online)
   — machine-off + the cockpit is the plan.
   Home: [go-remote](skills/go-remote.md) ·
   [§Delegation](#delegation--the-away-mode-chooser).
@@ -1544,7 +1544,7 @@ the link for the full story.
   founder walking back to a desk). Handoff leaves a DESK; land ends
   a FLIGHT. Not every landing starts with your word — the trigger
   table is the single home of which do
-  ([D-061](record/DECISIONS.md#d-061--2026-07--the-landing-doctrine-recut-to-three-scenarios--the-cockpits-standing-job-advise-on-fleet-status-and-on-each-gate-reaching-decision-execute-the-founders-rulings-from-the-phone-auto-land-when-the-fleet-empties-and-nothing-awaits-the-founder-desk-takeover-when-pickup-finds-a-live-cockpit-holding-decisions-and-the-founders-freeze-unchanged-the-tombstone-wake-rule-makes-a-superseded-cockpit-retire-by-the-full-ritual-amends-d-054s-two-mode-routing-upholds-no-solo-approval-and-the-derivation-law)).
+  ([D-061](record/DECISIONS.md#d-061--the-landing-doctrine-recut-to-three-scenarios)).
   Home:
   [land §the trigger table](skills/land.md#the-trigger-table--what-starts-a-landing).
 - **the two lands** — the distinction worth holding: a landing the
@@ -1564,7 +1564,7 @@ the link for the full story.
   first, and if superseded, self-retire by the full landing
   ritual rather than merely stopping. THE RULE IS GENERAL, not a
   cockpit rule
-  ([D-062](record/DECISIONS.md#d-062--2026-07--the-wake-rule-generalized--any-superseded-seat-exits-by-its-own-closing-ritual-never-bare-a-cockpit-by-the-landing-ritual-a-ground-control-tower-by-capture-then-close-with-team-findings-captured-first-no-superseded-seat-writes-a-board-because-the-baton-has-already-moved-closes-d-056s-deferred-road-in-full-upholds-d-056-and-d-061)):
+  ([D-062](record/DECISIONS.md#d-062--the-wake-rule-generalized)):
   ANY superseded seat exits by its OWN closing ritual, never bare
   — a cockpit by [land](skills/land.md), a ground control tower
   by [handoff](skills/handoff.md)'s capture-then-close with team
@@ -1612,9 +1612,9 @@ the link for the full story.
 - **micro-PR** — the one self-merging PR class: written by a
   ritual, touching ONLY [DASHBOARD.md](DASHBOARD.md) and/or
   [IDEAS.md](IDEAS.md)
-  ([D-002](record/DECISIONS.md#d-002--2026-06--handoff-note-merge-policy)
+  ([D-002](record/DECISIONS.md#d-002--handoff-note-merge-policy)
   as amended by
-  [D-023](record/DECISIONS.md#d-023--2026-07--universal-draft-pr-at-birth--micro-pr-carve-out-recut-amends-d-002-d-008-d-020)).
+  [D-023](record/DECISIONS.md#d-023--universal-draft-pr-at-birth-and-micro-pr-carve-out)).
   Home: [§Micro-PRs](#micro-prs).
 - **the board** — [DASHBOARD.md](DASHBOARD.md): the one rendered
   state surface, repainted wholesale by rituals, stamped, and
@@ -1640,7 +1640,7 @@ the link for the full story.
 - **pacing law** — finish-first: the ongoing task and pending
   blocks outrank new tasks; at most "Now" plus one parallel slot
   needs the founder's attention; stopping is a valid next step
-  ([D-009](record/DECISIONS.md#d-009--2026-06--pacing-law-finish-first-flexible-cap)).
+  ([D-009](record/DECISIONS.md#d-009--pacing-law)).
 
 ### Product & engine
 
@@ -1656,7 +1656,7 @@ the link for the full story.
 - **planning brain** — Claude (server-side API) doing the
   conversational planning; consumes the engine's verdicts, never
   invents facts
-  ([D-005](record/DECISIONS.md#d-005--2026-06--stack-re-trial-vs-foundation-v1-d-001-upheld--frontend-layer)).
+  ([D-005](record/DECISIONS.md#d-005--stack-re-trial-upholds-d-001)).
 - **check module** — one pluggable condition checker per fact
   family; adding one never rewrites what exists — it adds a module,
   and every new check re-tunes the rankings by design. Home:
@@ -1669,7 +1669,7 @@ the link for the full story.
 - **reliability ladder** — the six fallback rungs for
   coverage-risky facts: global source → regional source → computed
   → estimated (labeled) → LLM-research grade (unverified) → refusal
-  ([D-010](record/DECISIONS.md#d-010--2026-06--global-coverage-via-graded-fallback-ladders);
+  ([D-010](record/DECISIONS.md#d-010--global-coverage-via-graded-fallback-ladders);
   [ENGINE §3](ENGINE.md#3-acquire--get-the-facts)).
 - **preferences-as-defaults** — the engine honors a stated
   preference but surfaces a significantly better alternative when
@@ -1678,16 +1678,16 @@ the link for the full story.
 - **provenance** — every stored traveler value is marked stated,
   inferred, or default; stated beats inferred beats default, newer
   beats older
-  ([D-012](record/DECISIONS.md#d-012--2026-06--elicitation--inference-policy-ask-tiers-provenance-upsert);
+  ([D-012](record/DECISIONS.md#d-012--elicitation-and-inference-policy);
   [ENGINE §2](ENGINE.md#2-intake--resolve-the-traveler)).
 - **floor input** — the guaranteed minimum: origin + dates is
   always enough to get a plan
-  ([D-011](record/DECISIONS.md#d-011--2026-06--traveler-input-vocabulary-rich-nullable-tiered-append-only)).
+  ([D-011](record/DECISIONS.md#d-011--traveler-input-vocabulary)).
   Home: [FOUNDATION §What Roam is](FOUNDATION.md#what-roam-is).
 - **fact cache** — the bitemporal, append-only store of every
   fetched fact: valid_for (when true in the world) + recorded_at
   (when we learned it); values are superseded, never overwritten
-  ([D-015](record/DECISIONS.md#d-015--2026-06--data-asset-law-bitemporal-append-only-license-segmented)).
+  ([D-015](record/DECISIONS.md#d-015--data-asset-law)).
   Explained: [§Reading the data files](#reading-the-data-files).
 - **freshness window** — the maximum cache staleness a fact
   tolerates before refetch; windows tighten as the activity date
@@ -1704,7 +1704,7 @@ the link for the full story.
   [FOUNDATION §The dataset](FOUNDATION.md#the-dataset--the-quiet-asset).
 - **SI-canonical units** — all storage and engine math is
   SI/metric; conversion to US units happens only at display time
-  ([D-013](record/DECISIONS.md#d-013--2026-06--canonical-units-si-storage-display-time-conversion);
+  ([D-013](record/DECISIONS.md#d-013--canonical-units-si-storage);
   [ENGINE §7](ENGINE.md#7-render--honest-pixels)).
 
 ## Reading the data files
@@ -1779,7 +1779,7 @@ failure, drift, or miscalibration, promoted only by re-vetting
 
 Sources:
 [ENGINE §7](ENGINE.md#7-render--honest-pixels)
-[D-015](record/DECISIONS.md#d-015--2026-06--data-asset-law-bitemporal-append-only-license-segmented)
+[D-015](record/DECISIONS.md#d-015--data-asset-law)
 
 **The reliability ladder.** Facts marked ⚠ are coverage-risky:
 nothing global and authoritative serves them everywhere. Each
@@ -1793,7 +1793,7 @@ reliability law bending: quality degrades HONESTLY, rung by labeled
 rung.
 
 Sources:
-[D-010](record/DECISIONS.md#d-010--2026-06--global-coverage-via-graded-fallback-ladders)
+[D-010](record/DECISIONS.md#d-010--global-coverage-via-graded-fallback-ladders)
 
 **Freshness windows.** Every fact declares the maximum cache
 staleness it tolerates before refetch — from 1–3 hours (near-term
@@ -1811,14 +1811,14 @@ attributed layers; world data stays strictly separate from traveler
 and event data.
 
 Sources:
-[D-015](record/DECISIONS.md#d-015--2026-06--data-asset-law-bitemporal-append-only-license-segmented)
+[D-015](record/DECISIONS.md#d-015--data-asset-law)
 [quiet asset](FOUNDATION.md#the-dataset--the-quiet-asset)
 
 **Units.** Everything stored or computed is SI/metric, exclusively;
 conversion to US units happens only at render time (D-013).
 
 Sources:
-[D-013](record/DECISIONS.md#d-013--2026-06--canonical-units-si-storage-display-time-conversion)
+[D-013](record/DECISIONS.md#d-013--canonical-units-si-storage)
 
 **A SOURCES entry** records, per slot: the facts served · the chosen
 source and why · the confirmed payload keys (checked against the
@@ -1833,7 +1833,7 @@ Dictionary keys.
 
 Sources:
 [SOURCES](data/SOURCES.md)
-[D-015](record/DECISIONS.md#d-015--2026-06--data-asset-law-bitemporal-append-only-license-segmented)
+[D-015](record/DECISIONS.md#d-015--data-asset-law)
 
 **The traveler side.** FACTS Appendix A holds the TP parameters —
 everything a traveler may TELL the engine. Each row carries an ask
@@ -1848,8 +1848,8 @@ traveler inputs.
 
 Sources:
 [FACTS Appendix A](data/FACTS.md#appendix-a--traveler-parameters-tp-0147--per-d-011--d-012)
-[D-011](record/DECISIONS.md#d-011--2026-06--traveler-input-vocabulary-rich-nullable-tiered-append-only)
-[D-012](record/DECISIONS.md#d-012--2026-06--elicitation--inference-policy-ask-tiers-provenance-upsert)
+[D-011](record/DECISIONS.md#d-011--traveler-input-vocabulary)
+[D-012](record/DECISIONS.md#d-012--elicitation-and-inference-policy)
 [Appendix B](data/FACTS.md#appendix-b--plan-parameters-t7-must-schema-not-world-facts)
 
 **Telemetry.** Appendix C defines three registers: behavior events
@@ -1860,7 +1860,7 @@ drift, ladder falls — the demotion law's evidence).
 
 Sources:
 [Appendix C](data/FACTS.md#appendix-c--telemetry-vocabulary-what-the-app-records)
-[D-014](record/DECISIONS.md#d-014--2026-06--telemetry-posture-capture-now-use-later)
+[D-014](record/DECISIONS.md#d-014--telemetry-posture)
 
 ## Equipment & environment
 
@@ -1880,9 +1880,9 @@ gate is real).
 Sources:
 [engine/](../engine/README.md)
 [SETUP §Stack](SETUP.md#stack)
-[D-001](record/DECISIONS.md#d-001--2026-06--tech-stack)
-[D-005](record/DECISIONS.md#d-005--2026-06--stack-re-trial-vs-foundation-v1-d-001-upheld--frontend-layer)
-[D-007](record/DECISIONS.md#d-007--2026-06--shadcnui-builds-on-base-ui-not-radix)
+[D-001](record/DECISIONS.md#d-001--tech-stack)
+[D-005](record/DECISIONS.md#d-005--stack-re-trial-upholds-d-001)
+[D-007](record/DECISIONS.md#d-007--shadcnui-builds-on-base-ui)
 [ship](skills/ship.md)
 
 **The skills**, one line each: pickup — the sit-down briefing,
@@ -1954,9 +1954,9 @@ Sources:
 ## Roadmap manual
 
 How to read [ROADMAP.md](ROADMAP.md)
-([D-004](record/DECISIONS.md#d-004--2026-06--planning-notation--rolling-wave-depth),
+([D-004](record/DECISIONS.md#d-004--planning-notation-and-rolling-wave-depth),
 amended by
-[D-022](record/DECISIONS.md#d-022--2026-07--version-ladder--lifespan-split-amends-d-004)):
+[D-022](record/DECISIONS.md#d-022--version-ladder-and-lifespan-split)):
 
 - **Notation** — Vn = Version · Vn.Sm = Stage (ordered, each with a
   completion criterion) · Vn.Sm.Tk = Task, the PR-sized unit (one task =
@@ -1973,7 +1973,7 @@ amended by
   workshop/ops tasks with no roadmap line; never hand-assigned
   labels beyond these ([IDEAS](IDEAS.md) is the inbox for
   everything unnumbered —
-  [D-023](record/DECISIONS.md#d-023--2026-07--universal-draft-pr-at-birth--micro-pr-carve-out-recut-amends-d-002-d-008-d-020)).
+  [D-023](record/DECISIONS.md#d-023--universal-draft-pr-at-birth-and-micro-pr-carve-out)).
 - **Small steps** — checkboxes in the task's spec or PR
   description, never in [ROADMAP](ROADMAP.md).
 - **Depth (rolling wave)** — active version fully staged and

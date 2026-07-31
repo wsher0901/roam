@@ -16,7 +16,7 @@ shipped: 2026-07-30
 [HOME §Response doctrine](../../HOME.md#response-doctrine) (where
 rule 8 lands) · [DASHBOARD](../../DASHBOARD.md) (the standing
 report) ·
-[D-063](../DECISIONS.md#d-063--2026-07--response-doctrine-v2--web-instructions-v6--two-channels-sentences-for-the-founder-fenced-blocks-for-machines-process-is-proof-not-prose-the-chat-start-ingest-contract-the-relay-rule--origin-is-the-only-courier-codes-output-is-never-pasted-to-web-reviews-speak-in-goal-and-outcome-the-core-file-alert-the-agenda-convention-brief-renders-the-full-picture-the-master-gains-a-version-history-amends-d-052)
+[D-063](../DECISIONS.md#d-063--response-doctrine-v2-and-web-instructions-v6)
 (doctrine v2, which this extends) · cashes the top open
 [IDEAS](../../IDEAS.md) line · source: the founder's approved
 model, Web ops chat 2026-07-29/30.

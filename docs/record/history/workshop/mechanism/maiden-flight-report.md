@@ -18,7 +18,7 @@ the phone buzz).
 ## What this task is
 The delegation maiden flight's second and final block: the flight
 report. One decide —
-[D-043](../../../DECISIONS.md#d-043--2026-07--cloud-ignition--away-command-redesign--route-ladder-v2-ready-flip-then-label-is-the-recipe-of-record-api-ignition-and-the-cloud-clerk-staged-the-claude-app-the-single-away-surface-amends-d-041-upholds-the-lane-law-and-the-wake-lock)
+[D-043](../../../DECISIONS.md#d-043--cloud-ignition-and-away-command-redesign)
 — plus the explicit edit set across
 [parallel-lanes](../../../../skills/parallel-lanes.md),
 [DECISIONS](../../../DECISIONS.md), [SETUP](../../../../SETUP.md),
@@ -107,7 +107,7 @@ text.
 ## Where to look
 Spec: [maiden-flight-report](../../../specs/maiden-flight-report.md).
 PR: [#153](https://github.com/wsher0901/roam/pull/153). The decide:
-[D-043](../../../DECISIONS.md#d-043--2026-07--cloud-ignition--away-command-redesign--route-ladder-v2-ready-flip-then-label-is-the-recipe-of-record-api-ignition-and-the-cloud-clerk-staged-the-claude-app-the-single-away-surface-amends-d-041-upholds-the-lane-law-and-the-wake-lock).
+[D-043](../../../DECISIONS.md#d-043--cloud-ignition-and-away-command-redesign).
 The amended doctrine:
 [parallel-lanes §Cloud spawn](../../../../skills/parallel-lanes.md#cloud-spawn--route-ladder)
 ·

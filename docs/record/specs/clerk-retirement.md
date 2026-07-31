@@ -13,9 +13,9 @@ shipped: 2026-07-23 12:02
 # clerk-retirement — the repo stops pointing at a vehicle that cannot fire
 
 **Links:**
-[D-046](../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+[D-046](../DECISIONS.md#d-046--flight-cockpit-the-control-tower-online)
 (staged the retirement) ·
-[D-048](../DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)
+[D-048](../DECISIONS.md#d-048--cockpit-resilience)
 (superseded its last function) ·
 [liftoff](../../skills/liftoff.md) ·
 [SETUP §cloud accounts](../../SETUP.md#once-and-done--cloud-accounts) ·
@@ -44,11 +44,11 @@ instructions go. Records are annotated with a tombstone and stay.
 Deliberate, and recorded here so a future seat does not hunt for a
 decide that was never written.
 
-[D-046](../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+[D-046](../DECISIONS.md#d-046--flight-cockpit-the-control-tower-online)
 already DECIDED the retirement — its clerk-retirement-staged clause
 is the decision, and it named the trigger (the cockpit maiden
 drill's closeout).
-[D-048](../DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)
+[D-048](../DECISIONS.md#d-048--cockpit-resilience)
 then superseded the clerk's last unique function: the connector
 ladder ends in a phone bootstrap — Claude app, new session on the
 repo, the two-line bootstrap paste — which is the same
@@ -86,7 +86,7 @@ ladder.** Two live instructions go:
 - §4's backstop rung ("Backstop, until the clerk's staged
   retirement … `npm run fire:clerk`") is rewritten so the ladder
   ends where
-  [D-048](../DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)
+  [D-048](../DECISIONS.md#d-048--cockpit-resilience)
   ends it: the phone bootstrap — Claude app, new session on the
   repo, the two-line bootstrap paste.
 - §2's budget line drops `fire:clerk` from the cap arithmetic;
@@ -109,9 +109,9 @@ cloud-clerk section, its charter master, and the notify/autospawn
 sections each gain the tombstone:
 
 > RETIRED 2026-07-22 — routine deleted; superseded by
-> [D-046](../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+> [D-046](../DECISIONS.md#d-046--flight-cockpit-the-control-tower-online)
 > (cockpit) and
-> [D-048](../DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)
+> [D-048](../DECISIONS.md#d-048--cockpit-resilience)
 > (connector ladder). Verified record kept:
 > C1–C6, N2/N3, A1/A4 green; the mechanisms it proved — API fire,
 > standing watch, turn-end push — live on in the cockpit.
@@ -155,7 +155,7 @@ Deviations.
 
 - [x] [liftoff](../../skills/liftoff.md) contains no `fire:clerk` and
       no clerk rung; §4's backstop ends at the
-      [D-048](../DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)
+      [D-048](../DECISIONS.md#d-048--cockpit-resilience)
       phone bootstrap; §2's budget names `fire:cockpit` only.
 - [x] Every D-046 link in every touched file is byte-identical to
       what it was before this bench. Verified mechanically, not by
@@ -194,7 +194,7 @@ Deviations.
 - [x] [IDEAS](../../IDEAS.md) closes the clerk-retirement line, dated,
       naming this PR; the seven named items stay open. NOTE: no
       OPEN clerk-retirement line existed to close — the retirement
-      lived in [D-046](../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+      lived in [D-046](../DECISIONS.md#d-046--flight-cockpit-the-control-tower-online)
       and [SETUP](../../SETUP.md), never in the inbox. It is therefore
       filed and closed in ONE entry, in the house shape, which is
       the honest rendering.

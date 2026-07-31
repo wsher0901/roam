@@ -9,8 +9,8 @@ pr: 69
 
 ## What shipped
 
-([D-021](../../../DECISIONS.md#d-021--2026-07--plan-synthesis-principles-re-home-to-decision-policy),
-[D-022](../../../DECISIONS.md#d-022--2026-07--version-ladder--lifespan-split-amends-d-004))
+([D-021](../../../DECISIONS.md#d-021--plan-synthesis-principles-re-home),
+[D-022](../../../DECISIONS.md#d-022--version-ladder-and-lifespan-split))
 · [FOUNDATION](../../../../FOUNDATION.md) now holds only timeless identity
 while [ROADMAP](../../../../ROADMAP.md) carries everything a shipped version
 can falsify — the V1/V2/V3 ladder with testable done-whens,

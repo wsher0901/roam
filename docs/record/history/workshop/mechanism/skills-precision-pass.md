@@ -12,7 +12,7 @@ Shipped — merged as
 word, with one gate-approved amendment (the ghost retirement widened
 to HOME + TEMPLATE). Every gate on the way out waited on the pushed
 commit's Actions run going green
-([D-038](../../../DECISIONS.md#d-038--2026-07--ci-is-the-arbiter--actions-green-required-at-every-gate-local-gate-mirrors-all-six-ci-steps-d-anchors-born-resolving-upholds-d-027)).
+([D-038](../../../DECISIONS.md#d-038--ci-is-the-arbiter)).
 
 ## What this task is
 Codify already-decided behavior across the skill corpus and repair
@@ -36,12 +36,12 @@ Nothing parked.
 
 ## The story
 Born this session from the kickoff, immediately after
-[D-040](../../../DECISIONS.md#d-040--2026-07--handoff-input-inversion--the-leaving-message-carries-the-webdesign-paste-inline-the-never-skipped-question-is-retired-a-bare-trigger-means-none-amends-the-two-touchpoints-laws-wording-upholds-d-032)
+[D-040](../../../DECISIONS.md#d-040--handoff-input-inversion)
 shipped. The audit found seven precision defects where a skill's
 wording lagged an already-made decision: decide's ripple list omitted
 LAWS/HOME; the handoff park stamp claimed a rescue-save that may not
 have run; handoff never said cloud lanes are exempt from parking
-([D-032](../../../DECISIONS.md#d-032--2026-07--fleet-continuity--handoff-parks-every-local-lane-liftoff-respawns-parked-benches-wake-lock-parks-every-outcome-extends-the-d-020d-023-lane-law-upholds-d-009)
+([D-032](../../../DECISIONS.md#d-032--fleet-continuity)
 parks LOCAL only); §3 folded the whole paste per-task instead of the
 task-relevant lines; the Sessions table wasn't named as the single
 home for every lane row (the erratum); the retired "abort ledger" /

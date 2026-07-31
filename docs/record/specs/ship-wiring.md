@@ -15,7 +15,7 @@ shipped: 2026-07-17 11:09
 [reviewer-subagent spec](reviewer-subagent.md) ·
 [the critic's story](../history/workshop/mechanism/reviewer-subagent.md)
 · [ship](../../skills/ship.md) · Decisions:
-[D-044](../DECISIONS.md#d-044--2026-07--the-pre-gate-critic-goes-live--ships-gate-opens-by-invoking-the-reviewer-subagent-verdicts-advisory-riding-with-the-summary-turns-on-the-staged-reviewer-upholds-d-038-and-the-reviewer-frame)
+[D-044](../DECISIONS.md#d-044--the-pre-gate-critic-goes-live)
 (born on this branch) ·
 [SETUP §Staged](../../SETUP.md#staged--turns-on-when-its-stage-opens)
 

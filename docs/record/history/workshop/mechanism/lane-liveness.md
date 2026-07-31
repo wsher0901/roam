@@ -11,12 +11,12 @@ Shipped — merged as
 [PR #142](https://github.com/wsher0901/roam/pull/142) on the founder's
 word. Every gate on the way out waited on the pushed commit's Actions
 run going green
-([D-038](../../../DECISIONS.md#d-038--2026-07--ci-is-the-arbiter--actions-green-required-at-every-gate-local-gate-mirrors-all-six-ci-steps-d-anchors-born-resolving-upholds-d-027)).
+([D-038](../../../DECISIONS.md#d-038--ci-is-the-arbiter)).
 
 ## What this task is
 The fix for the ledger-integrity parallel-lane incident: "commits are
 the heartbeat" becomes load-bearing
-([D-042](../../../DECISIONS.md#d-042--2026-07--lane-liveness--derive-live-vs-reclaimable-from-the-commit-heartbeat-read-it-at-claim-check-and-session-start-cleanup-so-a-live-lane-is-never-adopted-or-pruned-amends-the-claim-check-clause-and-pickup-3-upholds-the-wake-lock-and-seat-invariance)).
+([D-042](../../../DECISIONS.md#d-042--lane-liveness)).
 A bench/worktree with a non-terminal Status and a fresh heartbeat is
 LIVE — never adopted, never secured or pruned; a terminal Status
 (parked · failed · held · shipped · superseded) or silence past the
@@ -80,6 +80,6 @@ window constant: its §Canary. Read-sites:
 clause · [pickup §3](../../../../skills/pickup.md). The verdict:
 `.claude/hooks/session-start.mjs`. Vocabulary:
 [TEMPLATE](../../../../memory/TEMPLATE.md). Decision:
-[D-042](../../../DECISIONS.md#d-042--2026-07--lane-liveness--derive-live-vs-reclaimable-from-the-commit-heartbeat-read-it-at-claim-check-and-session-start-cleanup-so-a-live-lane-is-never-adopted-or-pruned-amends-the-claim-check-clause-and-pickup-3-upholds-the-wake-lock-and-seat-invariance).
+[D-042](../../../DECISIONS.md#d-042--lane-liveness).
 The incident: [ledger-integrity](ledger-integrity.md).
 PR: [#142](https://github.com/wsher0901/roam/pull/142).

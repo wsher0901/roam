@@ -4,9 +4,17 @@ title: Decisions Log
 status: append-only
 ---
 # Decisions Log
-Format: D-NNN | date | decision | why | alternatives rejected.
+Format: a SHORT heading (8 words maximum) that is the anchor, an
+`In full:` line carrying the complete statement and the date, then
+decision | why | alternatives rejected | affects. Headings FREEZE
+AT MINT — every citation in the repo depends on them
+([D-068](#d-068--the-short-anchor-law), written by
+[decide](../skills/decide.md)).
 
-## D-001 — 2026-06 — Tech stack
+## D-001 — Tech stack
+
+In full: 2026-06 — Tech stack
+
 Decision: Next.js (TypeScript) + Supabase (Postgres + Auth) + Vercel;
 planning brain = Claude API server-side; scoring engine isolated as its
 own tested module.
@@ -16,7 +24,10 @@ demo to real users without a rewrite (Supabase auth = multi-user built in).
 Alternatives rejected: Python backend + JS frontend (two stacks to
 maintain); mobile-first v1 (web decided).
 
-## D-002 — 2026-06 — Handoff-note merge policy
+## D-002 — Handoff-note merge policy
+
+In full: 2026-06 — Handoff-note merge policy
+
 Decision: main stays PR-only for everything, with one narrow carve-out —
 a PR containing only a docs/HANDOFF.md update (written by /handoff or
 /ship) is opened and squash-merged immediately without approval.
@@ -29,7 +40,10 @@ physical guarantee for the only identity that pushes); approval
 micro-PRs (taxes the handoff habit; unapproved notes strand the other
 machine with stale briefings).
 
-## D-003 — 2026-06 — Roam V1 scope (Foundation V1)
+## D-003 — Roam V1 scope
+
+In full: 2026-06 — Roam V1 scope (Foundation V1)
+
 Decision: V1 = one no-modes engine running Suggest -> Plan -> Edit-with-
 revalidation over five pluggable check families (weather per activity;
 sky & sea; feasibility; time & transport; crowds & calendar), pre-trip
@@ -48,7 +62,10 @@ fixed modes per question type; live prices or booking in V1; mid-trip
 companion in V1; excluding transport from V1 (reversed during blueprint —
 included as reasoning, not transactions).
 
-## D-004 — 2026-06 — Planning notation & rolling-wave depth
+## D-004 — Planning notation and rolling-wave depth
+
+In full: 2026-06 — Planning notation & rolling-wave depth
+
 Decision: single notation Vn / Vn.Sm / Vn.Sm.Tk (Version -> Stage ->
 Task; small steps are checkboxes inside a task). [ROADMAP](../ROADMAP.md) plans rolling
 wave: V1 fully detailed, V2 a rough named bucket, everything else pooled
@@ -63,8 +80,11 @@ Alternatives rejected: spec all versions now (guesswork + heavy upkeep;
 penalizes new ideas); V1-only with no version buckets (loses the
 per-version narrative).
 
-## D-005 — 2026-06 — Stack re-trial vs Foundation V1: D-001 upheld + frontend layer
-Decision: [D-001](#d-001--2026-06--tech-stack) upheld and extended — Next.js App Router (TypeScript,
+## D-005 — Stack re-trial upholds D-001
+
+In full: 2026-06 — Stack re-trial vs Foundation V1: D-001 upheld + frontend layer
+
+Decision: [D-001](#d-001--tech-stack) upheld and extended — Next.js App Router (TypeScript,
 React 19) + Supabase (Postgres + Auth) + Vercel, planning brain = Claude
 API server-side, now with a named frontend layer: Tailwind v4 +
 shadcn/ui (design system), Motion (animation), MapLibre GL (maps),
@@ -96,7 +116,10 @@ auth and the preview-URL flow the rituals assume); exotic frontends
 (Svelte/Solid/Qwik — thinner ecosystem for Roam's needs, less
 Claude-Code-trodden); AI SDK RSC/streamUI variant (development paused).
 
-## D-006 — 2026-06 — V1 roadmap cut (stages & tasks)
+## D-006 — V1 roadmap cut
+
+In full: 2026-06 — V1 roadmap cut (stages & tasks)
+
 Decision: V1 ships in 8 stages — S1 Data Definition gate running
 parallel with S2 skeleton/design, S3 engine core + Weather and Sky & sea
 deep, S4 Suggest, S5 Plan, S6 Edit+revalidate, S7 remaining three
@@ -115,13 +138,16 @@ UI (long dark period, no momentum); thin vertical slices of everything
 at once (rework risk; violates depth-first); auth in V1 (the demo does
 not need it; Supabase makes it a V2 addition, not a rewrite).
 
-## D-007 — 2026-06 — shadcn/ui builds on Base UI, not Radix
+## D-007 — shadcn/ui builds on Base UI
+
+In full: 2026-06 — shadcn/ui builds on Base UI, not Radix
+
 Decision: Roam's shadcn/ui components use the Base UI primitive library
 (shadcn's current default, "nova" preset) rather than the legacy Radix
 option; confirmed with the [V1.S2.T1](../ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1) scaffold approval.
 Why:
 - shadcn's docs, CLI defaults, and new components now target Base UI —
-  the well-trodden path [D-005](#d-005--2026-06--stack-re-trial-vs-foundation-v1-d-001-upheld--frontend-layer) optimizes for points there for greenfield
+  the well-trodden path [D-005](#d-005--stack-re-trial-upholds-d-001) optimizes for points there for greenfield
   apps;
 - nothing existed to migrate, and switching costs only grow as
   components accumulate (they are vendored files);
@@ -131,7 +157,10 @@ catalog of examples, but new shadcn development has moved off it);
 deferring the choice (every added component would deepen whichever
 default we ignored).
 
-## D-008 — 2026-06 — Cockpit, derived state, automatic recording
+## D-008 — Cockpit, derived state, automatic recording
+
+In full: 2026-06 — Cockpit, derived state, automatic recording
+
 Decision: [docs/HOME.md](../HOME.md) is the cockpit (pointers, routing, daily loop,
 information hierarchy; stores no state). Recording and sequencing are
 system-enforced: /ship runs itself at task completion and ends by
@@ -141,7 +170,7 @@ parallel/sequential; ideas are captured to [IDEAS.md](../IDEAS.md) the moment vo
 (Code appends directly; Web bakes APPENDs into blocks); Web chats
 speak in Lane Status footers and Resume Primers, with done/change
 calls confirmed by one question; git outranks notes; nothing starts
-without the claim question; the [D-002](#d-002--2026-06--handoff-note-merge-policy) carve-out extends to
+without the claim question; the [D-002](#d-002--handoff-note-merge-policy) carve-out extends to
 [docs/IDEAS.md](../IDEAS.md) additions.
 Why:
 - the human surface shrinks to pasting blocks, yes/no confirmations,
@@ -155,7 +184,10 @@ on the user to remember /ship, idea capture, or lane reporting (the
 failures this design exists to remove); PR approval for idea capture
 (kills the habit).
 
-## D-009 — 2026-06 — Pacing law (finish-first, flexible cap)
+## D-009 — Pacing law
+
+In full: 2026-06 — Pacing law (finish-first, flexible cap)
+
 Decision: all briefings and completions (/pickup, /ship, "brief")
 recommend in finish-first order — open lanes and pending blocks
 outrank new tasks. Items needing the builder's attention are capped at
@@ -175,7 +207,10 @@ Alternatives rejected: full menus at every completion (the fatigue
 this law removes); a rigid cap (wastes parallel capacity on
 no-overview work); no cap (lane sprawl across two machines).
 
-## D-010 — 2026-06 — Global coverage via graded fallback ladders
+## D-010 — Global coverage via graded fallback ladders
+
+In full: 2026-06 — Global coverage via graded fallback ladders
+
 Decision: V1 fact coverage is global from day one — no geography cut.
 Every coverage-risky fact in [docs/data/FACTS.md](../data/FACTS.md) declares a fallback
 ladder, vetted top-down in [V1.S1.T2–T6](../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code): (1) sources global by
@@ -196,7 +231,10 @@ but kills international demo scenarios and only defers sourcing work we
 must do anyway); US plus a named shortlist (bounded, but creates a
 two-tier product and still leaves the ladder unbuilt).
 
-## D-011 — 2026-06 — Traveler input vocabulary: rich, nullable, tiered, append-only
+## D-011 — Traveler input vocabulary
+
+In full: 2026-06 — Traveler input vocabulary: rich, nullable, tiered, append-only
+
 Decision: V1 collects the traveler vocabulary [TP-01..26](../data/FACTS.md#appendix-a--traveler-parameters-tp-0147--per-d-011--d-012) defined in
 [docs/data/FACTS.md](../data/FACTS.md) Appendix A. The floor never changes: origin + dates
 always suffices (dates may carry optional earliest-departure /
@@ -218,7 +256,10 @@ supplements (the brain can read them, deterministic checks cannot);
 exhaustive "all inputs ever" enumeration (stalls the gate and fakes
 capability for fields nothing consumes).
 
-## D-012 — 2026-06 — Elicitation & inference policy (ask tiers, provenance, upsert)
+## D-012 — Elicitation and inference policy
+
+In full: 2026-06 — Elicitation & inference policy (ask tiers, provenance, upsert)
+
 Decision: Every traveler field in [docs/data/FACTS.md](../data/FACTS.md) Appendix A carries
 an ask tier. Upfront = asked before the first draft, capped at six
 questions: origin, dates + flexibility (+ trip length when dates are
@@ -244,7 +285,10 @@ Alternatives rejected: ask-everything-upfront forms (fatigue,
 abandonment); no structured asks (engine rules starve); merged
 pace/density (conflates speed with fullness).
 
-## D-013 — 2026-06 — Canonical units: SI storage, display-time conversion
+## D-013 — Canonical units, SI storage
+
+In full: 2026-06 — Canonical units: SI storage, display-time conversion
+
 Decision: All storage and engine math use SI/metric exclusively, never
 mixed. Conversion to US units happens only at render time via a
 settings-tier units field (default metric for development and as the
@@ -258,7 +302,10 @@ Why:
 Alternatives rejected: store-as-entered (mixed units inside math);
 imperial-canonical (every upstream source is SI-native).
 
-## D-014 — 2026-06 — Telemetry posture: capture now, use later
+## D-014 — Telemetry posture
+
+In full: 2026-06 — Telemetry posture: capture now, use later
+
 Decision: V1 captures the behavior-event corpus defined in
 [docs/data/TELEMETRY.md §1](../data/FACTS.md#c1--behavior-events-d-014) from day one, under: consent-gated
 collection (GPC/DNT respected; consent grants/withdrawals logged),
@@ -280,7 +327,10 @@ Alternatives rejected: defer capture entirely (permanent data loss);
 click-only logging without exposures (position-biased, unusable);
 use-now ranking tuning (violates [FOUNDATION](../FOUNDATION.md)'s Later).
 
-## D-015 — 2026-06 — Data-asset law: bitemporal, append-only, license-segmented
+## D-015 — Data-asset law
+
+In full: 2026-06 — Data-asset law: bitemporal, append-only, license-segmented
+
 Decision: The fact cache is bitemporal — every value carries valid_for
 (when it is true in the world) and recorded_at (when we learned it) —
 and append-only: values are superseded, never overwritten; revision
@@ -307,19 +357,22 @@ Alternatives rejected: overwrite-in-place caching (destroys the
 asset); a single blended store (license contamination); static grades
 (the reliability law dies of old age).
 
-## D-016 — 2026-06 — Parallel-ready menu (amends D-009)
+## D-016 — Parallel-ready menu
+
+In full: 2026-06 — Parallel-ready menu (amends D-009)
+
 Decision: every briefing and completion (/pickup, /ship, "brief")
 ALWAYS appends a "Parallel-ready:" list — every task that is [P],
 unblocked, and not already claimed by an open lane — each item labeled
 with its tool (-> Claude Code / -> CLAUDE WEB), its branch name, and,
 for a second session on the same machine, the exact git worktree
-launch command. The list is informational and exempt from the [D-009](#d-009--2026-06--pacing-law-finish-first-flexible-cap)
+launch command. The list is informational and exempt from the [D-009](#d-009--pacing-law)
 two-item attention cap: the cap still governs what needs the
 builder's attention; finish-first still orders the recommendations;
 the menu never converts into asks.
 Why:
 - parallel capacity was invisible unless explicitly requested —
-  [D-009](#d-009--2026-06--pacing-law-finish-first-flexible-cap)'s discretionary clause hid throughput the builder wanted to
+  [D-009](#d-009--pacing-law)'s discretionary clause hid throughput the builder wanted to
   see;
 - listing lanes with ready-to-paste launch commands makes opening a
   second lane a zero-thought action;
@@ -328,9 +381,12 @@ Why:
 Alternatives rejected: keep it discretionary (the invisibility this
 fixes); fold parallel items into the attention cap (blows the fatigue
 budget); a standing PARALLEL.md file (rots; derived state belongs in
-briefings, not files — [D-008](#d-008--2026-06--cockpit-derived-state-automatic-recording)).
+briefings, not files — [D-008](#d-008--cockpit-derived-state-automatic-recording)).
 
-## D-017 — 2026-06 — Cloud sessions are the parallel-lane vehicle (amends D-016)
+## D-017 — Cloud sessions are the lane vehicle
+
+In full: 2026-06 — Cloud sessions are the parallel-lane vehicle (amends D-016)
+
 Decision: the launch command in the Parallel-ready menu is a
 paste-ready kickoff prompt for a Claude Code CLOUD session, launched
 from Claude Desktop's Code tab, claude.ai/code, or a terminal via
@@ -369,7 +425,7 @@ remain available as offline fallbacks only. Unchanged: never two
 sessions in one checkout; the claim question before starting any
 lane; founder approval before any merge.
 Why:
-- [D-016](#d-016--2026-06--parallel-ready-menu-amends-d-009)'s worktree recipe encoded an assumption, not the practice —
+- [D-016](#d-016--parallel-ready-menu)'s worktree recipe encoded an assumption, not the practice —
   the builder's actual parallel workflow is Desktop-launched cloud
   sessions;
 - cloud lanes are machine-independent: launchable from either
@@ -382,7 +438,10 @@ to one computer and its local state — contradicts the two-computer
 reality); second-machine-only parallelism (both lanes should be
 launchable from one seat).
 
-## D-018 — 2026-06 — Fix-routing triage after lane review (extends D-017)
+## D-018 — Fix-routing triage after lane review
+
+In full: 2026-06 — Fix-routing triage after lane review (extends D-017)
+
 Decision: when cloud lanes finish, Claude Code reviews the lane PRs
 itself FIRST — before the founder reads them — and surfaces every
 issue needing founder attention, each with a routing recommendation
@@ -404,7 +463,7 @@ agree or override. The founder's verdict routes. Execution:
   — attaching a terminal to a session is physically the founder's
   keystroke, never Claude's;
 - "new lane" → Claude launches it itself via `claude --remote`
-  under the [D-017](#d-017--2026-06--cloud-sessions-are-the-parallel-lane-vehicle-amends-d-016) protocol — the routing verdict doubles as the
+  under the [D-017](#d-017--cloud-sessions-are-the-lane-vehicle) protocol — the routing verdict doubles as the
   launch approval.
 Why:
 - the founder always reads the work, but pre-chewed issues plus a
@@ -419,7 +478,10 @@ exactly where the founder wants overview); always-teleport
 (heavyweight; hijacks a terminal); always-new-session (loses lane
 context, splits a task across PRs).
 
-## D-019 — 2026-06 — Launch mechanics correction (amends D-017)
+## D-019 — Launch mechanics correction
+
+In full: 2026-06 — Launch mechanics correction (amends D-017)
+
 Decision: `claude --remote` enforces a TTY guard — it refuses every
 non-interactive invocation. Verified at first live launch: Claude's
 own shell is headless AND the `!` prefix pipes output back into the
@@ -429,7 +491,7 @@ line per approved lane) OUTSIDE the repo — never committed, the
 repo is public — and opens it as a visible console window on the
 founder's screen (Start-Process). The lanes launch in that attended
 window, print their session URLs, and the founder closes it.
-[D-017](#d-017--2026-06--cloud-sessions-are-the-parallel-lane-vehicle-amends-d-016) is otherwise unchanged: explicit founder approval still
+[D-017](#d-017--cloud-sessions-are-the-lane-vehicle) is otherwise unchanged: explicit founder approval still
 triggers the launch, Claude still prepares and fires everything,
 and the session IDs are recorded in HANDOFF as open lanes.
 Why:
@@ -439,23 +501,26 @@ Why:
 - discovered live (both headless and `!` routes failed at first
   launch); docs must encode verified reality, not assumptions —
   this is the second correction of an assumed mechanic (worktrees
-  in [D-016](#d-016--2026-06--parallel-ready-menu-amends-d-009) → cloud in [D-017](#d-017--2026-06--cloud-sessions-are-the-parallel-lane-vehicle-amends-d-016); headless launch in [D-017](#d-017--2026-06--cloud-sessions-are-the-parallel-lane-vehicle-amends-d-016) → attended
+  in [D-016](#d-016--parallel-ready-menu) → cloud in [D-017](#d-017--cloud-sessions-are-the-lane-vehicle); headless launch in [D-017](#d-017--cloud-sessions-are-the-lane-vehicle) → attended
   window here).
 Alternatives rejected: faking a TTY from the headless shell
 (defeats the guard's purpose); founder hand-typing each launch
 command (error-prone, scales badly past two lanes).
 
-## D-020 — 2026-07 — Parallel lanes v2: native lanes replace hand-built orchestration
+## D-020 — Parallel lanes v2
+
+In full: 2026-07 — Parallel lanes v2: native lanes replace hand-built orchestration
+
 Decision: lanes run locally as background agents (dispatched from
 `claude agents`) or `claude -w` worktree sessions; every lane opens a
 draft PR at birth and pushes every commit. Supersedes the launch
 mechanics of
-[D-016](#d-016--2026-06--parallel-ready-menu-amends-d-009),
-[D-017](#d-017--2026-06--cloud-sessions-are-the-parallel-lane-vehicle-amends-d-016),
-[D-018](#d-018--2026-06--fix-routing-triage-after-lane-review-extends-d-017)
-and [D-019](#d-019--2026-06--launch-mechanics-correction-amends-d-017);
+[D-016](#d-016--parallel-ready-menu),
+[D-017](#d-017--cloud-sessions-are-the-lane-vehicle),
+[D-018](#d-018--fix-routing-triage-after-lane-review)
+and [D-019](#d-019--launch-mechanics-correction);
 closes the
-[D-020](#d-020--2026-07--parallel-lanes-v2-native-lanes-replace-hand-built-orchestration)
+[D-020](#d-020--parallel-lanes-v2)
 pending item from HANDOFF. Lane law (June 12
 post-mortem, kept as belt-and-suspenders): push-first canary before
 real work in any cloud session, push after every commit, never end or
@@ -467,7 +532,7 @@ Agent Teams (experimental env flag in `.claude/settings.json`) may be
 used or proposed for research/review tasks: lead Fable/Opus, teammates
 Sonnet, max 4 teammates. Cloud sessions only via claude.ai/code and
 only after the push canary passes.
-[D-018](#d-018--2026-06--fix-routing-triage-after-lane-review-extends-d-017)'s
+[D-018](#d-018--fix-routing-triage-after-lane-review)'s
 pre-review behavior survives: finished lane PRs are pre-reviewed
 against [FOUNDATION](../FOUNDATION.md), the roadmap line, and the
 reliability law before being surfaced. [CLAUDE.md](../../CLAUDE.md) is slimmed
@@ -478,9 +543,9 @@ Why:
 - `claude --remote` bundle-seeded sandboxes on this machine (no origin
   remote -> push impossible) destroyed batch-1 T3+T5 work;
 - three launch-mechanic corrections in a row
-  ([D-016](#d-016--2026-06--parallel-ready-menu-amends-d-009) ->
-  [D-017](#d-017--2026-06--cloud-sessions-are-the-parallel-lane-vehicle-amends-d-016)
-  -> [D-019](#d-019--2026-06--launch-mechanics-correction-amends-d-017))
+  ([D-016](#d-016--parallel-ready-menu) ->
+  [D-017](#d-017--cloud-sessions-are-the-lane-vehicle)
+  -> [D-019](#d-019--launch-mechanics-correction))
   showed the machinery was ours to maintain on shifting ground;
 - Claude Code now ships the same capability natively (background
   agents that auto commit+push+draft-PR, Agent Teams, `claude -w`),
@@ -489,7 +554,10 @@ Alternatives rejected: keep repairing `--remote` (broken CLI-side, not
 ours to fix); pure sequential work (leaves S1's [P] lanes serialized
 now that loss-proof parallelism is native).
 
-## D-021 — 2026-07 — Plan-synthesis principles re-home to DECISION-POLICY
+## D-021 — Plan-synthesis principles re-home
+
+In full: 2026-07 — Plan-synthesis principles re-home to DECISION-POLICY
+
 **Decision:** [docs/DECISION-POLICY](../ENGINE.md) is the
 canonical home of the plan-synthesis rules (preferences-as-defaults,
 constraint priority, warn-don't-block, composition- and
@@ -509,7 +577,10 @@ duplicating in both (drift).
 [ROADMAP](../ROADMAP.md) S3/S5 binding-requirements links · all corpus
 links to the old anchor.
 
-## D-022 — 2026-07 — Version ladder + lifespan split (amends D-004)
+## D-022 — Version ladder and lifespan split
+
+In full: 2026-07 — Version ladder + lifespan split (amends D-004)
+
 **Decision:** versions are outcome milestones — V1 "The demo", V2
 "Real users", V3 "The product", then an unversioned Pool (done-whens
 as written in [ROADMAP §The versions](../ROADMAP.md#the-versions)).
@@ -531,18 +602,21 @@ pool is the plan's coarsest layer).
 **Affects:** [ROADMAP](../ROADMAP.md) (ladder, V1 scope block, V2/V3/Pool,
 notation → [HOME](../HOME.md)) · [FOUNDATION](../FOUNDATION.md) v3 ·
 [HOME §Roadmap manual](../HOME.md#roadmap-manual) ·
-[D-004](#d-004--2026-06--planning-notation--rolling-wave-depth)
+[D-004](#d-004--planning-notation-and-rolling-wave-depth)
 (amended).
 
-## D-023 — 2026-07 — Universal draft-PR-at-birth + micro-PR carve-out recut (amends D-002, D-008, D-020)
+## D-023 — Universal draft-PR-at-birth and micro-PR carve-out
+
+In full: 2026-07 — Universal draft-PR-at-birth + micro-PR carve-out recut (amends D-002, D-008, D-020)
+
 **Decision:** every task — cockpit included — is born bench-first:
 freshly pulled main → branch → spec (when discussion opened the
 task) + memory stub → a DRAFT PR pushed to origin BEFORE any session
 works it. The self-merging micro-PR class is redefined to touch ONLY
 [DASHBOARD.md](../DASHBOARD.md) and/or [IDEAS.md](../IDEAS.md) (it was the
 handoff-note file and/or IDEAS —
-[D-002](#d-002--2026-06--handoff-note-merge-policy),
-[D-008](#d-008--2026-06--cockpit-derived-state-automatic-recording)).
+[D-002](#d-002--handoff-note-merge-policy),
+[D-008](#d-008--cockpit-derived-state-automatic-recording)).
 GitHub Issues and the project board are retired;
 [IDEAS.md](../IDEAS.md) is the single inbox, triaged into
 [ROADMAP](../ROADMAP.md) via decide.
@@ -551,7 +625,7 @@ GitHub Issues and the project board are retired;
   exists in only one place, which the two-computers-plus-cloud
   reality demands;
 - seat-invariance
-  ([D-024](#d-024--2026-07--architecture-v2-memoryhistory-narrative-layer-dashboard-as-sole-state-surface-rituals-as-skills-amends-d-008-retires-handoffmd--shiplogmd))
+  ([D-024](#d-024--architecture-v2-narrative-layer-and-skills))
   needs one birth procedure for cockpit and lanes alike —
   special-casing the cockpit created two classes of task;
 - two trackers (Issues/board beside the docs) meant two truths; one
@@ -562,16 +636,19 @@ beside [IDEAS.md](../IDEAS.md) (the split brain this recut removes);
 widening the micro-PR class further (every added file weakens the
 only no-approval merge path).
 **Affects:** [LAWS §Workflow](../LAWS.md#workflow-non-negotiable) ·
-[D-002](#d-002--2026-06--handoff-note-merge-policy) (amended) ·
-[D-008](#d-008--2026-06--cockpit-derived-state-automatic-recording)
+[D-002](#d-002--handoff-note-merge-policy) (amended) ·
+[D-008](#d-008--cockpit-derived-state-automatic-recording)
 (amended) ·
-[D-020](#d-020--2026-07--parallel-lanes-v2-native-lanes-replace-hand-built-orchestration)
+[D-020](#d-020--parallel-lanes-v2)
 (amended: lane birth becomes the universal birth) ·
 [parallel-lanes](../skills/parallel-lanes.md) ·
 [liftoff](../skills/liftoff.md) · [HOME](../HOME.md) tables ·
 [GLOSSARY](../HOME.md#terms) micro-PR entry.
 
-## D-024 — 2026-07 — Architecture v2: memory/history narrative layer, DASHBOARD as sole state surface, rituals as skills (amends D-008; retires HANDOFF.md + SHIPLOG.md)
+## D-024 — Architecture v2, narrative layer and skills
+
+In full: 2026-07 — Architecture v2: memory/history narrative layer, DASHBOARD as sole state surface, rituals as skills (amends D-008; retires HANDOFF.md + SHIPLOG.md)
+
 **Decision:** every task carries docs/memory/&lt;id&gt;.md — the
 living story in the locked format — rewritten cognitively at rituals
 and at the lane trigger moments, and moved to
@@ -613,17 +690,20 @@ unreadable in Obsidian).
 (deleted) · eight skills · session-start hook · settings.json ·
 [HOME](../HOME.md) · [GLOSSARY](../HOME.md#terms) ·
 [specs/README](specs/README.md) ·
-[D-008](#d-008--2026-06--cockpit-derived-state-automatic-recording)
+[D-008](#d-008--cockpit-derived-state-automatic-recording)
 (amended).
 
-## D-025 — 2026-07 — FOUNDATION v4 — principles recut, open family set, lifespan repair (extends D-012; upholds D-021/D-022)
+## D-025 — FOUNDATION v4 principles recut
+
+In full: 2026-07 — FOUNDATION v4 — principles recut, open family set, lifespan repair (extends D-012; upholds D-021/D-022)
+
 **Decision:** recut [FOUNDATION](../FOUNDATION.md)'s identity for
 honesty and openness, carrying the new cohort layer into
 [DECISION-POLICY §5](../ENGINE.md#2-intake--resolve-the-traveler):
 - "What Roam is": Roam STARTS as the pre-trip brain — the boundary
   moves by roadmap decision, never by drift (lifespan is version
   scope in [ROADMAP](../ROADMAP.md), per
-  [D-022](#d-022--2026-07--version-ladder--lifespan-split-amends-d-004));
+  [D-022](#d-022--version-ladder-and-lifespan-split));
 - "What Roam checks" drops "the five families" from its header: each
   family is a pluggable check module — five today, the set is open,
   and any condition the founder or Claude finds load-bearing enters
@@ -639,29 +719,29 @@ honesty and openness, carrying the new cohort layer into
   drive;
 - [DECISION-POLICY §5](../ENGINE.md#2-intake--resolve-the-traveler)
   extends
-  [D-012](#d-012--2026-06--elicitation--inference-policy-ask-tiers-provenance-upsert)'s
+  [D-012](#d-012--elicitation-and-inference-policy)'s
   supersede order with the cohort layer; activation is version
   scope — cohort learning is not V1;
 - [HOME](../HOME.md)'s FOUNDATION portrait and check-module term align;
   the renamed anchor (what-roam-checks) is repaired repo-wide. The
   engine-reasoning rules stay consolidated in
   [DECISION-POLICY](../ENGINE.md), per
-  [D-021](#d-021--2026-07--plan-synthesis-principles-re-home-to-decision-policy).
+  [D-021](#d-021--plan-synthesis-principles-re-home).
 **Why:** the plug-in principle overpromised zero blast radius — the
 structure holds, but rankings re-tune with every added check; the
 in-app list read as closed; the personalization principle
 contradicted
-[D-012](#d-012--2026-06--elicitation--inference-policy-ask-tiers-provenance-upsert)'s
+[D-012](#d-012--elicitation-and-inference-policy)'s
 inferred provenance and blocked the cohort layer; "five" in the
 header made the count part of the identity; and the pre-trip clause
 duplicated a [ROADMAP](../ROADMAP.md) refusal against
-[D-022](#d-022--2026-07--version-ladder--lifespan-split-amends-d-004) —
+[D-022](#d-022--version-ladder-and-lifespan-split) —
 lifespan belongs to version scope, not identity.
 **Alternatives rejected:** keep the header and add only an
 extensibility sentence (the count stays in the anchor — the identity
 keeps saying five); single-source personalization ("whatever the
 traveler supplies") — already false per
-[D-012](#d-012--2026-06--elicitation--inference-policy-ask-tiers-provenance-upsert),
+[D-012](#d-012--elicitation-and-inference-policy),
 which infers fields with provenance.
 **Affects:** [FOUNDATION](../FOUNDATION.md) ·
 [DECISION-POLICY §5](../ENGINE.md#2-intake--resolve-the-traveler) ·
@@ -670,13 +750,16 @@ links to the renamed anchor:
 [DECISION-POLICY §3](../ENGINE.md#7-render--honest-pixels) ·
 [HOME §Terms](../HOME.md#terms).
 
-## D-026 — 2026-07 — ROADMAP recut — plain-language V1, completion criteria, per-family vetting outputs (upholds D-020, D-022)
+## D-026 — ROADMAP recut
+
+In full: 2026-07 — ROADMAP recut — plain-language V1, completion criteria, per-family vetting outputs (upholds D-020, D-022)
+
 **Decision:** recut [ROADMAP](../ROADMAP.md) into a plain-language read:
 - the depth paragraph now opens by saying the plan is living, never
   a promise — it changes whenever reality disagrees, every change
   landing as a D-number via [decide](../skills/decide.md) — before
   naming the rolling wave
-  ([D-022](#d-022--2026-07--version-ladder--lifespan-split-amends-d-004));
+  ([D-022](#d-022--version-ladder-and-lifespan-split));
 - "Done when" → "Completion criteria" in the versions table and all
   eight stage lines; the spec-level term "Done-means" is a different
   artifact and keeps its name;
@@ -685,7 +768,7 @@ links to the renamed anchor:
   against the derivation law;
 - T3–T6 each write their own `SOURCES-<family>.md` file so four [P]
   lanes never share a file
-  ([D-020](#d-020--2026-07--parallel-lanes-v2-native-lanes-replace-hand-built-orchestration));
+  ([D-020](#d-020--parallel-lanes-v2));
   T7 consolidates the four into [SOURCES.md](../data/SOURCES.md) and
   deletes them;
 - ticked tasks link their [history/](history/README.md) stories;
@@ -695,18 +778,21 @@ links to the renamed anchor:
 buried the goal under anchors; "Active stages" stored status against
 the derivation law; T3–T6 "same outputs" implied four [P] lanes
 writing one shared file, contradicting
-[D-020](#d-020--2026-07--parallel-lanes-v2-native-lanes-replace-hand-built-orchestration);
+[D-020](#d-020--parallel-lanes-v2);
 "Done when" collided with the spec term "Done-means".
 **Alternatives rejected:** sequential T3–T6 (serializes S1's liftoff
 batch, amends
-[D-020](#d-020--2026-07--parallel-lanes-v2-native-lanes-replace-hand-built-orchestration));
+[D-020](#d-020--parallel-lanes-v2));
 a shared SOURCES.md with per-family sections (the merge-conflict
-risk [D-020](#d-020--2026-07--parallel-lanes-v2-native-lanes-replace-hand-built-orchestration)
+risk [D-020](#d-020--parallel-lanes-v2)
 exists to eliminate).
 **Affects:** [ROADMAP](../ROADMAP.md) · [HOME](../HOME.md) (term rename) ·
 this entry.
 
-## D-027 — 2026-07 — LAWS polish — glossed lane law, provenance re-homed to consolidations, ship syncs with main before the weld
+## D-027 — LAWS polish
+
+In full: 2026-07 — LAWS polish — glossed lane law, provenance re-homed to consolidations, ship syncs with main before the weld
+
 **Decision:** [LAWS](../LAWS.md) drops its four inline D-citations
 (bench-first, micro-PR, pacing, stack) — the weave rule stands for
 relationships and retroactivity, but provenance is the
@@ -717,7 +803,7 @@ The bench-first bullet and the seven-point lane law carry one-line
 whys; the baton law states what the baton IS.
 [PROJECT-POLICY §Workshop choices](../SETUP.md)
 gains the pacing law — the one LAWS rule not yet consolidated — with
-its [D-009](#d-009--2026-06--pacing-law-finish-first-flexible-cap)
+its [D-009](#d-009--pacing-law)
 provenance. [ship](../skills/ship.md)'s Preflight now merges current
 origin/main into the branch before gating (merge, never rebase), so
 what is tested is exactly what main will contain after the weld;
@@ -734,7 +820,10 @@ consolidations already exist for this); rebase instead of merge
 [ship](../skills/ship.md) · [HOME](../HOME.md) (ship portrait) · this
 entry.
 
-## D-028 — 2026-07 — Consolidation recut — DECISION-POLICY → ENGINE, brain-skeleton form; PROJECT-POLICY house style; OPEN register grows 6–9 (upholds D-021; extends the D-021 consolidation)
+## D-028 — Consolidation recut, DECISION-POLICY becomes ENGINE
+
+In full: 2026-07 — Consolidation recut — DECISION-POLICY → ENGINE, brain-skeleton form; PROJECT-POLICY house style; OPEN register grows 6–9 (upholds D-021; extends the D-021 consolidation)
+
 **Decision:** the engine consolidation is renamed
 [ENGINE.md](../ENGINE.md) and reshaped from topic-prose into the
 pipeline form (Intake → Acquire → Judge → Aggregate → Synthesize →
@@ -767,7 +856,10 @@ line · [HOME](../HOME.md) (table row, portrait, terms) ·
 link) · [DECISIONS](DECISIONS.md) / [history/](history/README.md) /
 finalized [specs](specs/README.md) (link targets only) · this entry.
 
-## D-029 — 2026-07 — Corpus writing laws — readability-first; links below prose
+## D-029 — Corpus writing laws
+
+In full: 2026-07 — Corpus writing laws — readability-first; links below prose
+
 **Decision:** two laws over every living markdown file.
 1. Readability-first: every living md is written for the founder's
    reading first, bounded only by material cost to Claude's parsing
@@ -803,7 +895,10 @@ founder).
 this entry demonstrates the format in [SETUP.md](../SETUP.md) · this
 entry.
 
-## D-030 — 2026-07 — Setup consolidation — SETUP.md; equipment-plan and PROJECT-POLICY retired (extends D-024's retirement pattern; amends the D-021 consolidation split)
+## D-030 — Setup consolidation
+
+In full: 2026-07 — Setup consolidation — SETUP.md; equipment-plan and PROJECT-POLICY retired (extends D-024's retirement pattern; amends the D-021 consolidation split)
+
 **Decision:** [SETUP.md](../SETUP.md) is the single listing-style
 inventory (stack · once-and-done repo-side · once-and-done cloud ·
 per-machine · staged-by-stage; status lives on the DASHBOARD, never
@@ -811,7 +906,7 @@ here). equipment-plan retires — content re-homed: Design staging →
 DESIGN-KICKOFF; stack/plugins/MCPs/staged tooling and the subagent
 plan → SETUP §Staged; runtime-tool note → SETUP §Staged (S3.T1
 line). PROJECT-POLICY retires — Stack + the
-[D-005](#d-005--2026-06--stack-re-trial-vs-foundation-v1-d-001-upheld--frontend-layer)
+[D-005](#d-005--stack-re-trial-upholds-d-001)
 doctrine → SETUP §Stack; the stubs rule → LAWS; whys already live
 in LAWS' glosses and HOME. SETUP.md is the successor-of-record:
 every frozen link to either retired file retargets to SETUP.md (or
@@ -830,7 +925,10 @@ stub (deleted) · PROJECT-POLICY (deleted) ·
 [machine-setup](../skills/machine-setup.md) · [LAWS](../LAWS.md) ·
 [HOME](../HOME.md) · frozen-link retargets · this entry.
 
-## D-031 — 2026-07 — Stale-branch hygiene — gone-guard on the session-end net; welded-elsewhere locals auto-removed at session start
+## D-031 — Stale-branch hygiene
+
+In full: 2026-07 — Stale-branch hygiene — gone-guard on the session-end net; welded-elsewhere locals auto-removed at session start
+
 **Decision:** session-end never pushes a branch whose tracking was
 configured but whose remote is gone; session-start, after its
 prune, force-deletes local branches marked gone — excluding main,
@@ -849,7 +947,10 @@ fatigue; founder call); pushing the guard into LAWS prose
 `.claude/hooks/session-start.mjs`) · [pickup](../skills/pickup.md) ·
 this entry.
 
-## D-032 — 2026-07 — Fleet continuity — handoff parks every local lane; liftoff respawns parked benches; wake-lock parks every outcome (extends the D-020/D-023 lane law; upholds D-009)
+## D-032 — Fleet continuity
+
+In full: 2026-07 — Fleet continuity — handoff parks every local lane; liftoff respawns parked benches; wake-lock parks every outcome (extends the D-020/D-023 lane law; upholds D-009)
+
 **Decision:** handoff FULL gains the Park step — every live local
 lane is rescue-saved (wip commit + push, only if its tree holds
 unsaved work) and stamped parked with ONE cockpit-written Status
@@ -878,7 +979,10 @@ what matters).
 [LAWS §Parallel lanes & cloud](../LAWS.md#parallel-lanes--cloud) ·
 this entry.
 
-## D-033 — 2026-07 — TELEMETRY folds into FACTS (Appendix C); file retired (upholds D-014; extends the D-030 retirement pattern)
+## D-033 — TELEMETRY folds into FACTS
+
+In full: 2026-07 — TELEMETRY folds into FACTS (Appendix C); file retired (upholds D-014; extends the D-030 retirement pattern)
+
 **Decision:** FACTS gains Appendix C — Telemetry vocabulary (what
 the app records) — holding TELEMETRY's three families and storage
 note verbatim; data/TELEMETRY.md retires; data/ tightens to FACTS ·
@@ -897,12 +1001,15 @@ brain blueprint; T7 and SCHEMA read FACTS anyway).
 [ENGINE §10](../ENGINE.md#10-learn--the-loop-back) ·
 [ROADMAP](../ROADMAP.md) · [HOME](../HOME.md) ·
 [SCHEMA](../data/SCHEMA.md) · frozen link repairs
-([D-014](DECISIONS.md#d-014--2026-06--telemetry-posture-capture-now-use-later)
+([D-014](DECISIONS.md#d-014--telemetry-posture)
 entry ·
 [telemetry-inventory](history/product/definition/telemetry-inventory.md)) ·
 this entry.
 
-## D-034 — 2026-07 — History quadrants — product×workshop · definition×implementation; memory TEMPLATE owns format + Status vocabulary (extends D-024's narrative layer and D-032's states)
+## D-034 — History quadrants
+
+In full: 2026-07 — History quadrants — product×workshop · definition×implementation; memory TEMPLATE owns format + Status vocabulary (extends D-024's narrative layer and D-032's states)
+
 **Decision:** four doors — history/product/definition ·
 history/product/build · history/workshop/definition ·
 history/workshop/mechanism; the weld assigns per the README legend
@@ -924,7 +1031,10 @@ task) · [history/README](history/README.md) ·
 [ROADMAP](../ROADMAP.md) · [DECISIONS](DECISIONS.md) ·
 [DASHBOARD](../DASHBOARD.md) · specs · this entry.
 
-## D-035 — 2026-07 — State surfaces v2 — Sessions table with a type column; sentence-first Needs-you; verbatim chat titles; welds stamp time and write the ledger; handoff §4 is the single board spec (amends D-024's surface; extends D-029)
+## D-035 — State surfaces v2
+
+In full: 2026-07 — State surfaces v2 — Sessions table with a type column; sentence-first Needs-you; verbatim chat titles; welds stamp time and write the ledger; handoff §4 is the single board spec (amends D-024's surface; extends D-029)
+
 **Decision:** the board's sections, order, and rendering rules are
 exactly [handoff §4](../skills/handoff.md); pickup renders deltas and
 points at the board instead of mirroring it; ship's weld stamps
@@ -946,7 +1056,10 @@ times into frozen stories (invents data).
 [ship](../skills/ship.md) · [history/README](history/README.md) ·
 [HOME](../HOME.md) · this entry.
 
-## D-036 — 2026-07 — Information routing — one home per class, append vs upsert; HOME carries the table; Sessions anchor stabilized
+## D-036 — Information routing, one home per class
+
+In full: 2026-07 — Information routing — one home per class, append vs upsert; HOME carries the table; Sessions anchor stabilized
+
 **Decision:** every information class has exactly ONE home; new
 information APPENDS via that home's named vehicle, changed
 information UPSERTS in place via the same writer — never a second
@@ -963,7 +1076,10 @@ counts in the Sessions header (unstable anchor, proven).
 **Affects:** [HOME](../HOME.md) · [handoff §4](../skills/handoff.md) ·
 this entry.
 
-## D-037 — 2026-07 — Pickup speaks the founder's shape — exit table · Recent Summary · Pending Issues; LAWS binds the routing law (completes D-036)
+## D-037 — Pickup speaks the founder's shape
+
+In full: 2026-07 — Pickup speaks the founder's shape — exit table · Recent Summary · Pending Issues; LAWS binds the routing law (completes D-036)
+
 **Decision:** [LAWS §Knowledge & tracking](../LAWS.md#knowledge--tracking)
 gains the one-home clause pointing at
 [HOME's table](../HOME.md#where-information-goes); pickup §5 renders
@@ -982,7 +1098,10 @@ renders, LAWS binds — D-036).
 **Affects:** [LAWS](../LAWS.md) · [pickup](../skills/pickup.md) ·
 this entry.
 
-## D-038 — 2026-07 — CI is the arbiter — Actions-green required at every gate; local gate mirrors all six CI steps; D-anchors born resolving (upholds D-027)
+## D-038 — CI is the arbiter
+
+In full: 2026-07 — CI is the arbiter — Actions-green required at every gate; local gate mirrors all six CI steps; D-anchors born resolving (upholds D-027)
+
 **Decision:** THE GATE, every lane's ready-flip, and LAWS' "done"
 all require the pushed commit's GitHub Actions run to be green —
 local green never suffices; the preflight gate becomes the full CI
@@ -993,7 +1112,7 @@ same commit; local-green + CI-red is a STOP-and-investigate finding,
 never a merge. Machine-enforced (founder said yes, 2026-07-14): main
 is branch-protected — the `checks` run is a required status check
 with enforce_admins on, so red is unmergeable by GitHub itself. This
-widens [D-027](#d-027--2026-07--laws-polish--glossed-lane-law-provenance-re-homed-to-consolidations-ship-syncs-with-main-before-the-weld)'s
+widens [D-027](#d-027--laws-polish)'s
 sync-with-main-before-the-weld preflight to the whole pipeline.
 Self-merge paths — the weld and micro-PRs — arm
 `gh pr merge --auto` and fire on green: immediacy yields to the
@@ -1015,20 +1134,23 @@ and per-machine hooks don't travel with the repo).
 [SETUP §Once and done](../SETUP.md#once-and-done--cloud-accounts) ·
 this entry.
 
-## D-039 — 2026-07 — Recall — questions answered from files, never from memory (the D-036 routing table's read mirror; model-invoked at discretion)
+## D-039 — Recall, answers from files
+
+In full: 2026-07 — Recall — questions answered from files, never from memory (the D-036 routing table's read mirror; model-invoked at discretion)
+
 **Decision:** a seventh skill, read-only, fired by Claude's own
 judgment whenever a founder question concerns anything recorded —
 past, ongoing, or future — or whenever an answer would otherwise come
 from conversational memory; it classifies, opens the routed homes, and
 answers sentence-first with a
-[D-029](#d-029--2026-07--corpus-writing-laws--readability-first-links-below-prose)
+[D-029](#d-029--corpus-writing-laws)
 Sources block; not-found means "not recorded" plus where it would
 live — never an invention; git outranks the board and the answer says
 so on conflict.
 **Why:** the founder asked one already-answered question three times
 in a day — the corpus had it, retrieval had friction; writes were
 routed by
-[D-036](#d-036--2026-07--information-routing--one-home-per-class-append-vs-upsert-home-carries-the-table-sessions-anchor-stabilized),
+[D-036](#d-036--information-routing-one-home-per-class),
 reads never were; keyword gating would under-fire.
 **Alternatives rejected:** folding into [pickup](../skills/pickup.md) (a
 moment, not on-demand); a search index (the routing table IS the
@@ -1036,7 +1158,10 @@ index); explicit-keyword triggering (founder wants discretion).
 **Affects:** [the new skill](../skills/recall.md) + stub ·
 [HOME](../HOME.md#equipment--environment) · this entry.
 
-## D-040 — 2026-07 — Handoff input inversion — the leaving message carries the Web/Design paste inline; the never-skipped question is retired; a bare trigger means none (amends the two-touchpoints law's wording; upholds D-032)
+## D-040 — Handoff input inversion
+
+In full: 2026-07 — Handoff input inversion — the leaving message carries the Web/Design paste inline; the never-skipped question is retired; a bare trigger means none (amends the two-touchpoints law's wording; upholds D-032)
+
 **Decision:** a FULL handoff never prompts the founder after it is
 invoked — the message that triggered it IS the input. Any text
 preceding the trigger (a leaving phrase or `/handoff`) is the
@@ -1060,10 +1185,13 @@ before the trigger is unambiguous).
 · [LAWS §The two touchpoints](../LAWS.md#the-two-touchpoints) ·
 [HOME](../HOME.md) (manual entry · retention row · handoff walkthrough) ·
 [WEB-INSTRUCTIONS](../WEB-INSTRUCTIONS.md) ·
-[D-032](#d-032--2026-07--fleet-continuity--handoff-parks-every-local-lane-liftoff-respawns-parked-benches-wake-lock-parks-every-outcome-extends-the-d-020d-023-lane-law-upholds-d-009)
+[D-032](#d-032--fleet-continuity)
 · this entry.
 
-## D-041 — 2026-07 — Delegation architecture — the away-mode chooser, go-remote tether, idle-wait, label-spawned cloud (amends D-032's wake-lock and the dispatch law; upholds the baton law and D-009)
+## D-041 — Delegation architecture
+
+In full: 2026-07 — Delegation architecture — the away-mode chooser, go-remote tether, idle-wait, label-spawned cloud (amends D-032's wake-lock and the dispatch law; upholds the baton law and D-009)
+
 **Decision:** away-mode is one variable per fork, not a pile of
 rituals. At the keyboard → a LOCAL lane. Leaving with nothing
 continuing → handoff. Leaving with work continuing: machine staying on
@@ -1090,7 +1218,7 @@ the baton law survives unamended); `/fire` API wiring as the primary
 route (a bearer token on two machines vs a zero-secret label — and the
 label is also phone-drivable); keeping park-on-block everywhere (idle
 costs nothing where a phone can reach, and
-[D-032](#d-032--2026-07--fleet-continuity--handoff-parks-every-local-lane-liftoff-respawns-parked-benches-wake-lock-parks-every-outcome-extends-the-d-020d-023-lane-law-upholds-d-009)'s
+[D-032](#d-032--fleet-continuity)'s
 recording guarantee is preserved).
 **Affects:** [LAWS §Workflow](../LAWS.md#workflow-non-negotiable) ·
 [LAWS §Parallel lanes & cloud](../LAWS.md#parallel-lanes--cloud) ·
@@ -1098,12 +1226,15 @@ recording guarantee is preserved).
 [liftoff](../skills/liftoff.md) · [go-remote](../skills/go-remote.md) (new)
 · [machine-setup](../skills/machine-setup.md) · [SETUP](../SETUP.md) ·
 [HOME §Delegation](../HOME.md#delegation--the-away-mode-chooser) ·
-[D-032](#d-032--2026-07--fleet-continuity--handoff-parks-every-local-lane-liftoff-respawns-parked-benches-wake-lock-parks-every-outcome-extends-the-d-020d-023-lane-law-upholds-d-009)
+[D-032](#d-032--fleet-continuity)
 ·
-[D-009](#d-009--2026-06--pacing-law-finish-first-flexible-cap)
+[D-009](#d-009--pacing-law)
 · this entry.
 
-## D-042 — 2026-07 — Lane liveness — derive live-vs-reclaimable from the commit heartbeat; read it at claim-check and session-start cleanup so a live lane is never adopted or pruned (amends the claim-check clause and pickup §3; upholds the wake-lock and seat-invariance)
+## D-042 — Lane liveness
+
+In full: 2026-07 — Lane liveness — derive live-vs-reclaimable from the commit heartbeat; read it at claim-check and session-start cleanup so a live lane is never adopted or pruned (amends the claim-check clause and pickup §3; upholds the wake-lock and seat-invariance)
+
 **Decision:** "commits are the heartbeat"
 ([LAWS §Task anatomy](../LAWS.md#task-anatomy)) is now load-bearing. A
 bench or worktree is LIVE — never adopted, never secured or pruned —
@@ -1149,10 +1280,13 @@ enforcement is the two read-sites plus the hook's computed verdict).
 [HOME §Terms](../HOME.md#terms) ·
 [HOME §Lanes](../HOME.md#lanes-local--cloud) · [IDEAS](../IDEAS.md) (the
 double-dispatch diagnostic) ·
-[D-032](#d-032--2026-07--fleet-continuity--handoff-parks-every-local-lane-liftoff-respawns-parked-benches-wake-lock-parks-every-outcome-extends-the-d-020d-023-lane-law-upholds-d-009)
+[D-032](#d-032--fleet-continuity)
 (the wake-lock upheld) · this entry.
 
-## D-043 — 2026-07 — Cloud ignition & away-command redesign — route ladder v2: ready-flip-then-label is the recipe of record, api-ignition and the cloud clerk staged, the Claude app the single away surface (amends D-041; upholds the lane law and the wake-lock)
+## D-043 — Cloud ignition and away-command redesign
+
+In full: 2026-07 — Cloud ignition & away-command redesign — route ladder v2: ready-flip-then-label is the recipe of record, api-ignition and the cloud clerk staged, the Claude app the single away surface (amends D-041; upholds the lane law and the wake-lock)
+
 **Decision:** the maiden flight's finding of record: the cloud
 lane-worker routine's `pull_request.labeled` trigger does NOT fire
 on draft PRs. Three-point experiment (2026-07-16): 17:02 label on a
@@ -1206,10 +1340,13 @@ attest, parked in [IDEAS](../IDEAS.md)).
 [SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts)
 (the run-history sentence) · [IDEAS](../IDEAS.md) (the away-redesign
 idea lines + the double-dispatch resolution evidence) ·
-[D-041](#d-041--2026-07--delegation-architecture--the-away-mode-chooser-go-remote-tether-idle-wait-label-spawned-cloud-amends-d-032s-wake-lock-and-the-dispatch-law-upholds-the-baton-law-and-d-009)
+[D-041](#d-041--delegation-architecture)
 (the route ladder amended) · this entry.
 
-## D-044 — 2026-07 — The pre-GATE critic goes live — ship's gate opens by invoking the reviewer subagent, verdicts advisory riding with the summary (turns on the staged reviewer; upholds D-038 and the reviewer frame)
+## D-044 — The pre-GATE critic goes live
+
+In full: 2026-07 — The pre-GATE critic goes live — ship's gate opens by invoking the reviewer subagent, verdicts advisory riding with the summary (turns on the staged reviewer; upholds D-038 and the reviewer frame)
+
 **Decision:** every ship now runs the
 [reviewer subagent](history/workshop/mechanism/reviewer-subagent.md)
 as THE GATE's first act ([ship §6](../skills/ship.md#6--the-gate)): the
@@ -1240,11 +1377,14 @@ invocation) ·
 [SETUP §Staged](../SETUP.md#staged--turns-on-when-its-stage-opens)
 (the line retired) · [IDEAS](../IDEAS.md) (the 2026-07-17 wiring line
 cleared) ·
-[D-038](#d-038--2026-07--ci-is-the-arbiter--actions-green-required-at-every-gate-local-gate-mirrors-all-six-ci-steps-d-anchors-born-resolving-upholds-d-027)
+[D-038](#d-038--ci-is-the-arbiter)
 (the arbiter upheld — the critic adds eyes, not a gate) · this
 entry.
 
-## D-045 — 2026-07 — Hands doctrine: solo · subagents · agent team · lanes — the litmus is one-bench-many-hands vs many-benches vs read-only (upholds D-020 and D-041)
+## D-045 — Hands doctrine
+
+In full: 2026-07 — Hands doctrine: solo · subagents · agent team · lanes — the litmus is one-bench-many-hands vs many-benches vs read-only (upholds D-020 and D-041)
+
 **Decision:** the founder's choose-your-hands rule is now doctrine,
 filed verbatim at
 [SETUP §Models & effort](../SETUP.md#once-and-done--cloud-accounts):
@@ -1267,7 +1407,7 @@ one-bench-many-hands vs many-benches vs read-only litmus makes the
 choice mechanical: the vehicle now follows from the shape of the
 work, not the mood of the moment. Stated verbatim by the founder
 with the Shakedown phase-2 kickoff; filed lane-written per the
-[D-044](#d-044--2026-07--the-pre-gate-critic-goes-live--ships-gate-opens-by-invoking-the-reviewer-subagent-verdicts-advisory-riding-with-the-summary-turns-on-the-staged-reviewer-upholds-d-038-and-the-reviewer-frame)
+[D-044](#d-044--the-pre-gate-critic-goes-live)
 precedent.
 **Affects:**
 [SETUP §Models & effort](../SETUP.md#once-and-done--cloud-accounts)
@@ -1275,7 +1415,10 @@ precedent.
 [parallel-lanes §Vehicles](../skills/parallel-lanes.md#vehicles) (the
 pointer line) · this entry and its task memory.
 
-## D-046 — 2026-07 — Flight Cockpit — the cockpit is the control tower online: full-authorship cloud command session, the no-solo-approval law, liftoff auto-fires the cockpit, CC-direct surface doctrine, clerk retirement staged, Remote Control demoted to backstop, the cockpit/control-tower rename (amends D-041 and D-043; upholds the lane law and the wake-lock)
+## D-046 — Flight Cockpit, the control tower online
+
+In full: 2026-07 — Flight Cockpit — the cockpit is the control tower online: full-authorship cloud command session, the no-solo-approval law, liftoff auto-fires the cockpit, CC-direct surface doctrine, clerk retirement staged, Remote Control demoted to backstop, the cockpit/control-tower rename (amends D-041 and D-043; upholds the lane law and the wake-lock)
+
 **Decision:** the away command architecture becomes ONE surface
 with full authorship. By clause:
 (1) THE COCKPIT — the control tower online: a cloud command
@@ -1398,14 +1541,17 @@ loop text) ·
 [memory TEMPLATE](../memory/TEMPLATE.md) (the rename) ·
 `scripts/fire.mjs` + `package.json` + `.env.example` (the fire
 vehicle generalized) ·
-[D-041](#d-041--2026-07--delegation-architecture--the-away-mode-chooser-go-remote-tether-idle-wait-label-spawned-cloud-amends-d-032s-wake-lock-and-the-dispatch-law-upholds-the-baton-law-and-d-009)
+[D-041](#d-041--delegation-architecture)
 (the away chooser amended: the cloud branch fires the cockpit;
 go-remote demoted to backstop posture) ·
-[D-043](#d-043--2026-07--cloud-ignition--away-command-redesign--route-ladder-v2-ready-flip-then-label-is-the-recipe-of-record-api-ignition-and-the-cloud-clerk-staged-the-claude-app-the-single-away-surface-amends-d-041-upholds-the-lane-law-and-the-wake-lock)
+[D-043](#d-043--cloud-ignition-and-away-command-redesign)
 (the away surface amended: the clerk superseded-on-maiden by the
 cockpit) · this entry.
 
-## D-047 — 2026-07 — Cloud-born cockpit — the cockpit's birth vehicle becomes claude --cloud, list-native on every device; the automated hidden-console birth is liftoff's primary rung; the routine fire demotes to fallback + summon-button engine (amends D-046 clause 3; upholds the lane law)
+## D-047 — Cloud-born cockpit
+
+In full: 2026-07 — Cloud-born cockpit — the cockpit's birth vehicle becomes claude --cloud, list-native on every device; the automated hidden-console birth is liftoff's primary rung; the routine fire demotes to fallback + summon-button engine (amends D-046 clause 3; upholds the lane law)
+
 **Decision:** the cockpit's birth vehicle becomes `claude --cloud`
 — list-native on every device — and the routine fire
 (`fire:cockpit` / `scripts/fire.mjs`) drops to the fallback rungs,
@@ -1438,7 +1584,7 @@ line polices every flight after, so the documented bundle
 auto-fallback (or any seeded ghost) dies at birth.
 (4) THE SUMMON BUTTON keeps its engine: the cockpit routine and
 `fire.mjs` stay armed as rung 3 and the staged button's motor
-([D-046](#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+([D-046](#d-046--flight-cockpit-the-control-tower-online)
 clause 8) — the routine's SETUP section is annotated, not
 deleted; the box re-save rides the founder's manual acts.
 **Why:** maiden flights 1–2
@@ -1449,7 +1595,7 @@ GENERAL session list — the founder commands from the phone, so
 the birth vehicle must be list-native. Three STOP-gates demanded
 evidence over docs, because the vehicle's ancestor (`--remote`)
 bundle-seeded sandboxes and destroyed batch-1 T3+T5 at the
-[D-020](#d-020--2026-07--parallel-lanes-v2-native-lanes-replace-hand-built-orchestration)
+[D-020](#d-020--parallel-lanes-v2)
 turn: 0a — origin heads = main only, no cockpit in flight; 0b —
 the probe session cloned origin main's tip (`5d1d4ea`) with the
 unpushed marker commit absent from its history and pushed
@@ -1475,11 +1621,14 @@ polices every flight after).
 [SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts)
 (the `--cloud` birth recipe · the routine's fallback annotation ·
 the charter's born-at clause · the `gh` environment note) ·
-[D-046](#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+[D-046](#d-046--flight-cockpit-the-control-tower-online)
 clause 3 (amended: the fire is no longer the birth vehicle) ·
 this entry.
 
-## D-048 — 2026-07 — Cockpit resilience — the five-rung connector ladder; the summon workflow live on workflow_dispatch and a push to ops/summon; explicit supersession with tombstone and refusal guard; and the phone bootstrap; merge-on-signal and a cloud-environment token both REJECTED (upholds no-solo-approval and D-047)
+## D-048 — Cockpit resilience
+
+In full: 2026-07 — Cockpit resilience — the five-rung connector ladder; the summon workflow live on workflow_dispatch and a push to ops/summon; explicit supersession with tombstone and refusal guard; and the phone bootstrap; merge-on-signal and a cloud-environment token both REJECTED (upholds no-solo-approval and D-047)
+
 **Decision:** a cockpit survives, announces, and replaces its own
 GitHub connector loss, by a ladder that reaches OUTSIDE the
 session. By clause:
@@ -1515,7 +1664,7 @@ one push is exactly one rescue. Concurrency `summon`,
 cancel-in-progress false: a second summon must never cancel a
 first mid-fire. The token is never echoed. This RESOLVES the
 summon button staged by
-[D-046](#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+[D-046](#d-046--flight-cockpit-the-control-tower-online)
 clause 8
 ([SETUP §Staged](../SETUP.md#staged--turns-on-when-its-stage-opens)
 updated). The dispatch button is documented as present but UNUSED
@@ -1541,7 +1690,7 @@ always names exactly one live cockpit.
 (5) A SUMMONED COCKPIT IS ROUTINE-BORN and therefore
 LIST-INVISIBLE — reachable by push and by its board link, not by
 the phone's general session list. `--cloud`
-([D-047](#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law))
+([D-047](#d-047--cloud-born-cockpit))
 therefore STAYS PRIMARY for a planned birth, because it is
 list-native; the routine is the rescue vehicle, not the plan.
 (6) RUNG 5, THE PHONE BOOTSTRAP — for no terminal and no GitHub, a
@@ -1553,7 +1702,7 @@ the next drill, recorded in
 [the spec](specs/cockpit-resilience.md)'s Done-means. Rung 2b's
 in-session revival is unproven on the same terms.
 (7) POINTER:
-[D-047](#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law)'s
+[D-047](#d-047--cloud-born-cockpit)'s
 rung-1 mechanics are corrected by
 [#193](https://github.com/wsher0901/roam/pull/193);
 [liftoff §6](../skills/liftoff.md#6--ledger-handoff--fire-the-cockpit)
@@ -1619,13 +1768,15 @@ recovery rung and its merge-on-signal reversal) ·
 [liftoff §6](../skills/liftoff.md#6--ledger-handoff--fire-the-cockpit)
 (the in-flight ladder cross-reference) ·
 `.github/workflows/summon.yml` (new) ·
-[D-046](#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+[D-046](#d-046--flight-cockpit-the-control-tower-online)
 clause 8 (the staged button resolves) ·
-[D-047](#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law)
+[D-047](#d-047--cloud-born-cockpit)
 (upheld: `--cloud` stays primary; the routine is the rescue
 vehicle) · this entry.
 
-## D-049 — 2026-07 — gh second path — gh api REST through the GitHub proxy is the cockpit's second API path; a connector flap stops costing command; R2 gains the automatic gh rung; self-ID by session env (amends D-048, corrects the #193 API map, upholds D-047 and verify-before-rely)
+## D-049 — gh second path
+
+In full: 2026-07 — gh second path — gh api REST through the GitHub proxy is the cockpit's second API path; a connector flap stops costing command; R2 gains the automatic gh rung; self-ID by session env (amends D-048, corrects the #193 API map, upholds D-047 and verify-before-rely)
 
 **Decision:** the cockpit has a SECOND API path — `gh` through the
 GitHub proxy, REST-shaped — and a connector flap stops costing
@@ -1677,7 +1828,7 @@ revision was once written as certain:** FIRST reading
 install is EGRESS-BLOCKED — the `cli.github.com` 403 failed the
 whole setup script with exit 100, so "the setup script must not
 attempt a gh install." SECOND reading
-([D-048](#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047),
+([D-048](#d-048--cockpit-resilience),
 sourced from a community report): no `gh` BY DESIGN, the MCP
 connector the SOLE API path, redundancy in-session impossible.
 THIRD reading (the official docs, then the probe): installable
@@ -1685,7 +1836,7 @@ AND proxy-authenticated — the earlier failure was the WRONG APT
 SOURCE, not a design wall; the Ubuntu archive is allowlisted
 where `cli.github.com` is egress-blocked. The correction rode
 evidence: verify-before-rely, upheld.
-[D-048](#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)'s
+[D-048](#d-048--cockpit-resilience)'s
 LADDER architecture
 survives intact — resilience still ends OUTSIDE the session — but
 its bottom premise softens: the ladder is climbed less often,
@@ -1706,13 +1857,15 @@ two-path rewrite · the self-URL + trailer notes) ·
 line) · [cockpit-resilience](specs/cockpit-resilience.md) +
 [flight-hardening](specs/flight-hardening.md) (dated supersession
 notes on the overturned premises — record kept) ·
-[D-048](#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)
+[D-048](#d-048--cockpit-resilience)
 (amended: the ladder keeps its shape, R2 gains the gh rung) ·
-[D-047](#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law)
+[D-047](#d-047--cloud-born-cockpit)
 (upheld: `--cloud` births and the console-attach recovery are
 untouched) · this entry.
 
-## D-050 — 2026-07 — session lifecycle — closed ≠ dead: the close-lock's wall softens to injected read-only doctrine; interrupt capture is standing format; the claude/* residue sweep is pickup hygiene; IDEAS is an inbox, not an archive (amends the D-046-era close-wall design, upholds the park protocol and no-solo-approval)
+## D-050 — Session lifecycle, closed is not dead
+
+In full: 2026-07 — session lifecycle — closed ≠ dead: the close-lock's wall softens to injected read-only doctrine; interrupt capture is standing format; the claude/* residue sweep is pickup hygiene; IDEAS is an inbox, not an archive (amends the D-046-era close-wall design, upholds the park protocol and no-solo-approval)
 
 **Decision:** what a session's start, pause, and close leave
 behind is deliberate, by four clauses:
@@ -1785,13 +1938,15 @@ Terms line · the pickup portrait) ·
 `.claude/hooks/user-prompt-submit.mjs` (the wall itself) ·
 [#211](https://github.com/wsher0901/roam/pull/211) · this entry.
 
-## D-051 — 2026-07 — self-seat birth — liftoff fires --cloud blind and the cockpit seats itself by its env-derived self-URL; the console-attach launcher is retired (amends D-047's rung-1 mechanics as corrected by #193, upholds D-049 and board-governs)
+## D-051 — Self-seat birth
+
+In full: 2026-07 — self-seat birth — liftoff fires --cloud blind and the cockpit seats itself by its env-derived self-URL; the console-attach launcher is retired (amends D-047's rung-1 mechanics as corrected by #193, upholds D-049 and board-governs)
 
 **Decision:** liftoff's rung 1 fires `claude --cloud` BLIND — no
 output capture, no console attach, no `CONOUT$` read; exit status
 only — and the cockpit SEATS ITSELF on the board as its first
 act, by the same env-derived self-URL mechanism
-([D-049](#d-049--2026-07--gh-second-path--gh-api-rest-through-the-github-proxy-is-the-cockpits-second-api-path-a-connector-flap-stops-costing-command-r2-gains-the-automatic-gh-rung-self-id-by-session-env-amends-d-048-corrects-the-193-api-map-upholds-d-047-and-verify-before-rely))
+([D-049](#d-049--gh-second-path))
 successor-duty already uses. By clause:
 (1) THE BLIND FIRE: the hidden window supplies the TTY `--cloud`
 demands; the launcher hands the birth prompt as a file-read
@@ -1827,7 +1982,7 @@ board's "self-seat pending" row goes stale HONESTLY rather than
 carrying a scraped URL that may be wrong.
 **Why:** the capture machinery served exactly one purpose — a
 URL for the board — and
-[D-049](#d-049--2026-07--gh-second-path--gh-api-rest-through-the-github-proxy-is-the-cockpits-second-api-path-a-connector-flap-stops-costing-command-r2-gains-the-automatic-gh-rung-self-id-by-session-env-amends-d-048-corrects-the-193-api-map-upholds-d-047-and-verify-before-rely)
+[D-049](#d-049--gh-second-path)
 gave every session self-knowledge, making the fragile half
 redundant. Deleting is strictly simpler than maintaining. The
 first REAL flight after this weld is the live test of
@@ -1851,13 +2006,15 @@ shape) ·
 [cloud-born-cockpit](specs/cloud-born-cockpit.md) +
 [flight-hardening](specs/flight-hardening.md) (one-sentence note
 extensions) ·
-[D-047](#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law)
+[D-047](#d-047--cloud-born-cockpit)
 (amended: rung 1's mechanics, as previously corrected by
 [#193](https://github.com/wsher0901/roam/pull/193)) ·
-[D-049](#d-049--2026-07--gh-second-path--gh-api-rest-through-the-github-proxy-is-the-cockpits-second-api-path-a-connector-flap-stops-costing-command-r2-gains-the-automatic-gh-rung-self-id-by-session-env-amends-d-048-corrects-the-193-api-map-upholds-d-047-and-verify-before-rely)
+[D-049](#d-049--gh-second-path)
 (upheld: the self-URL is the mechanism) · this entry.
 
-## D-052 — 2026-07 — response doctrine — one standard for every surface speaking to the founder: answer-first, explicit steps, purpose-shaped explanation, live-derived state, glyph verdicts; the command card; the fleet-table report; the ritual status templates; WEB-INSTRUCTIONS v5 ships (retires the v4 paste-block-loop master, upholds D-046's CC-direct doctrine and the derivation law)
+## D-052 — Response doctrine
+
+In full: 2026-07 — response doctrine — one standard for every surface speaking to the founder: answer-first, explicit steps, purpose-shaped explanation, live-derived state, glyph verdicts; the command card; the fleet-table report; the ritual status templates; WEB-INSTRUCTIONS v5 ships (retires the v4 paste-block-loop master, upholds D-046's CC-direct doctrine and the derivation law)
 
 **Decision:** how every surface speaks to the founder is ONE
 standard with ONE home, by clause:
@@ -1888,7 +2045,7 @@ HAPPENED (context → narrative → issue → resolution) ·
 SUPPLEMENTAL · PARALLEL/RECENT FLIGHTS (🟢 all-good / ⏸
 resume-needed per item, every ⏸ with its exact resume word).
 Pickup's ⏸ INTERRUPTED lead
-([D-050](#d-050--2026-07--session-lifecycle--closed--dead-the-close-locks-wall-softens-to-injected-read-only-doctrine-interrupt-capture-is-standing-format-the-claude-residue-sweep-is-pickup-hygiene-ideas-is-an-inbox-not-an-archive-amends-the-d-046-era-close-wall-design-upholds-the-park-protocol-and-no-solo-approval))
+([D-050](#d-050--session-lifecycle-closed-is-not-dead))
 stays above everything. The close reports and briefs were
 REWRITTEN to the template, not annotated.
 (5) WEB-INSTRUCTIONS SHIPS AT v5 — the master describes the
@@ -1923,10 +2080,12 @@ of mechanical scope).
 [handoff §6](../skills/handoff.md#6--close-full-only) ·
 [pickup §5](../skills/pickup.md#5--render-the-sit-down-summary-exactly-this-shape)
 · [WEB-INSTRUCTIONS](../WEB-INSTRUCTIONS.md) (v4 → v5) ·
-[D-046](#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+[D-046](#d-046--flight-cockpit-the-control-tower-online)
 (upheld: CC-direct finally reaches the Web master) · this entry.
 
-## D-053 — 2026-07 — guardrail audit — the harness found ALREADY AT BEST PRACTICE against Anthropic's guidance; two promotions ship (the verification loop as a copy-runnable block in LAWS, two stub descriptions sharpened); five alternatives rejected with reasons (upholds the routing law and one-home)
+## D-053 — Guardrail audit
+
+In full: 2026-07 — guardrail audit — the harness found ALREADY AT BEST PRACTICE against Anthropic's guidance; two promotions ship (the verification loop as a copy-runnable block in LAWS, two stub descriptions sharpened); five alternatives rejected with reasons (upholds the routing law and one-home)
 
 **Decision:** the founder's maximum-depth audit of the whole
 governing layer — [LAWS](../LAWS.md) · [HOME](../HOME.md) · the
@@ -1978,7 +2137,9 @@ the mechanical cases.
 readability every session — a weave-rule-compatible shortening
 pattern is a future consideration, not now) · this entry.
 
-## D-054 — 2026-07 — the landing skill — how a flight ends becomes a first-class ritual: ONE skill with TWO modes routed by fleet state (retire · pause-and-transfer); the fence is a commit, so the resume point is the branch tip by construction (wake-lock-mediated, with its honesty clause); the board is the single transfer material; pickup gains the fleet-resume ask and its cap arithmetic; sessions are cattle, branches are the work; charter rule 6 becomes a pointer; the effort doctrine moves to Opus 5 · xhigh (upholds the wake-lock, the park protocol, and one-home; supersedes the Opus 4.8 reliance pair)
+## D-054 — The landing skill
+
+In full: 2026-07 — the landing skill — how a flight ends becomes a first-class ritual: ONE skill with TWO modes routed by fleet state (retire · pause-and-transfer); the fence is a commit, so the resume point is the branch tip by construction (wake-lock-mediated, with its honesty clause); the board is the single transfer material; pickup gains the fleet-resume ask and its cap arithmetic; sessions are cattle, branches are the work; charter rule 6 becomes a pointer; the effort doctrine moves to Opus 5 · xhigh (upholds the wake-lock, the park protocol, and one-home; supersedes the Opus 4.8 reliance pair)
 
 **Decision:** landing becomes a ritual with a written procedure —
 [land](../skills/land.md) plus its `.claude` stub — instead of a
@@ -1993,7 +2154,7 @@ branch verified dead · "Safe to archive me") — no new law, one
 home.
 (2) THE FENCE. MODE P holds a live lane with a COMMIT on its
 branch: the memory rewritten to the full ⏸ block
-([D-050](#d-050--2026-07--session-lifecycle--closed--dead-the-close-locks-wall-softens-to-injected-read-only-doctrine-interrupt-capture-is-standing-format-the-claude-residue-sweep-is-pickup-hygiene-ideas-is-an-inbox-not-an-archive-amends-the-d-046-era-close-wall-design-upholds-the-park-protocol-and-no-solo-approval)'s
+([D-050](#d-050--session-lifecycle-closed-is-not-dead)'s
 shape — done so far · spec progress · what is left · the exact next
 step · why paused) under the existing terminal `held` Status, then
 pushed. The mechanism is the wake-lock: the fence makes the lane's
@@ -2072,7 +2233,9 @@ and census, the three Terms entries, the Command card line, the
 merge-allowance sentence) ·
 [the spec](specs/landing-skill.md) + its memory · this entry.
 
-## D-055 — 2026-07 — agent teams — the boundary: teams are for EXPLORATION AND REVIEW at a ground seat, lanes remain the authorship mechanism; two risks become law (single-sitting only — an explicit carve-out to D-050's interrupt promise — and a teammate-authored diff is self-authored under no-solo-approval); the reviewer's model settled by verification, not guess; the founder-side config recorded (upholds the lane law, no-solo-approval, and one-home; gives the experimental flag its consumer)
+## D-055 — Agent teams, the boundary
+
+In full: 2026-07 — agent teams — the boundary: teams are for EXPLORATION AND REVIEW at a ground seat, lanes remain the authorship mechanism; two risks become law (single-sitting only — an explicit carve-out to D-050's interrupt promise — and a teammate-authored diff is self-authored under no-solo-approval); the reviewer's model settled by verification, not guess; the founder-side config recorded (upholds the lane law, no-solo-approval, and one-home; gives the experimental flag its consumer)
 
 **Decision:** agent teams get a written place in this workshop and
 a written fence around it. By clause:
@@ -2092,7 +2255,7 @@ restore in-process teammates, and a resumed lead may go on
 messaging teammates that no longer exist, so a team is never left
 mid-flight expecting pickup to restore it. This is an explicit
 CARVE-OUT to
-[D-050](#d-050--2026-07--session-lifecycle--closed--dead-the-close-locks-wall-softens-to-injected-read-only-doctrine-interrupt-capture-is-standing-format-the-claude-residue-sweep-is-pickup-hygiene-ideas-is-an-inbox-not-an-archive-amends-the-d-046-era-close-wall-design-upholds-the-park-protocol-and-no-solo-approval)'s
+[D-050](#d-050--session-lifecycle-closed-is-not-dead)'s
 interrupt promise, written where that promise is read (the
 Command card's Esc line and the new section): the ⏸ block
 preserves the LEAD's work, never the team. An interrupt is safe
@@ -2132,9 +2295,9 @@ therefore cover the team; and the
 `.claude/settings.json` with nothing reaching for it, now has a
 documented consumer. RETIRED BY THIS CLAUSE, named so the forward
 pointer exists: the Sonnet-5 teammate default recorded in
-[D-045](#d-045--2026-07--hands-doctrine-solo--subagents--agent-team--lanes--the-litmus-is-one-bench-many-hands-vs-many-benches-vs-read-only-upholds-d-020-and-d-041)'s
+[D-045](#d-045--hands-doctrine)'s
 Hands doctrine ("lead + 2–4 Sonnet 5 teammates") and in
-[D-020](#d-020--2026-07--parallel-lanes-v2-native-lanes-replace-hand-built-orchestration)'s
+[D-020](#d-020--parallel-lanes-v2)'s
 team rule ("teammates Sonnet, max 4") — teammates ride the LEAD's
 model by config. Those entries stand unedited per the log's
 append-only law; this is their forward pointer, and the live copy
@@ -2177,7 +2340,9 @@ rule's agent-team clause; the reviewer's line) ·
 intended use; box-provenance stamps) ·
 [the spec](specs/agent-teams.md) + its memory · this entry.
 
-## D-056 — 2026-07 — team-aware leaving rituals — no ritual lets a live agent team outlive the sitting that made it: handoff SHUTS THE TEAM DOWN BEFORE PARKING ANYTHING and captures its findings into the record first, land states the cockpit-cannot-lead-a-team case once and routes the ground seat to handoff, pickup gains the ghost-teammate recovery note, and the ⏸ block gains what the team had found (closes D-055's deferred gap; upholds one-home and the park protocol)
+## D-056 — Team-aware leaving rituals
+
+In full: 2026-07 — team-aware leaving rituals — no ritual lets a live agent team outlive the sitting that made it: handoff SHUTS THE TEAM DOWN BEFORE PARKING ANYTHING and captures its findings into the record first, land states the cockpit-cannot-lead-a-team case once and routes the ground seat to handoff, pickup gains the ghost-teammate recovery note, and the ⏸ block gains what the team had found (closes D-055's deferred gap; upholds one-home and the park protocol)
 
 **Decision:** the leaving rituals learn about live teams. By
 clause:
@@ -2204,7 +2369,7 @@ a team down.
 (2) LAND STATES THE COCKPIT CASE ONCE AND POINTS. A cockpit does
 not lead a team, and the basis is stated as what it is — POLICY,
 not a platform limit:
-[D-055](#d-055--2026-07--agent-teams--the-boundary-teams-are-for-exploration-and-review-at-a-ground-seat-lanes-remain-the-authorship-mechanism-two-risks-become-law-single-sitting-only--an-explicit-carve-out-to-d-050s-interrupt-promise--and-a-teammate-authored-diff-is-self-authored-under-no-solo-approval-the-reviewers-model-settled-by-verification-not-guess-the-founder-side-config-recorded-upholds-the-lane-law-no-solo-approval-and-one-home-gives-the-experimental-flag-its-consumer)
+[D-055](#d-055--agent-teams-the-boundary)
 puts teams at a ground seat and makes lanes the cloud's
 parallelism. The platform would let any session spawn teammates;
 the boundary is what says a cockpit does not. Resting the rule on
@@ -2226,7 +2391,7 @@ re-derive, since teammates do not survive the SITTING (`/resume`
 and `/rewind` do not restore them) and their transcripts die with
 them. Omitted entirely when no team was
 running.
-**Why:** [D-055](#d-055--2026-07--agent-teams--the-boundary-teams-are-for-exploration-and-review-at-a-ground-seat-lanes-remain-the-authorship-mechanism-two-risks-become-law-single-sitting-only--an-explicit-carve-out-to-d-050s-interrupt-promise--and-a-teammate-authored-diff-is-self-authored-under-no-solo-approval-the-reviewers-model-settled-by-verification-not-guess-the-founder-side-config-recorded-upholds-the-lane-law-no-solo-approval-and-one-home-gives-the-experimental-flag-its-consumer)
+**Why:** [D-055](#d-055--agent-teams-the-boundary)
 made single-sitting-only law and left it enforced by nothing: a
 rule documented in two surfaces and acted on by no ritual is a
 rule that will be broken the first time a team is running when the
@@ -2273,7 +2438,9 @@ enforcement pointer) · [IDEAS](../IDEAS.md) (the candidate line
 closed by this PR) · [the spec](specs/team-aware-leaving.md) +
 its memory · this entry.
 
-## D-057 — 2026-07 — the record shelf — the frozen record moves under one roof: docs/record/ is born (history · specs · DECISIONS in; memory stays living at root); THE ENABLING RULING — a mechanical link-path-segment repair inside a frozen file is MAINTENANCE, not a content edit, append-only governs meaning not bytes; intra-record links resolve by construction (upholds append-only, one-home, and the weave rule)
+## D-057 — The record shelf
+
+In full: 2026-07 — the record shelf — the frozen record moves under one roof: docs/record/ is born (history · specs · DECISIONS in; memory stays living at root); THE ENABLING RULING — a mechanical link-path-segment repair inside a frozen file is MAINTENANCE, not a content edit, append-only governs meaning not bytes; intra-record links resolve by construction (upholds append-only, one-home, and the weave rule)
 
 **Decision:** `docs/record/` is born — the frozen shelf, one roof
 for the three append-only surfaces. Recorded renames (`git mv`):
@@ -2348,7 +2515,9 @@ moved surfaces, ~1580 links across 158 files — living files gain
 [the spec](specs/record-shelf.md) + [its
 memory](history/workshop/definition/record-shelf.md) · this entry.
 
-## D-058 — 2026-07 — ATLAS — the system spine: the workshop depicted as six diagrams on one page; the posture is the board's — IT RENDERS, ORIGINATES NOTHING: dated stamp, least-authoritative, the prose governs, every box linked to its owning doctrine so a currency audit verifies it mechanically (upholds the derivation law, one-home, and the weave rule)
+## D-058 — ATLAS, the system spine
+
+In full: 2026-07 — ATLAS — the system spine: the workshop depicted as six diagrams on one page; the posture is the board's — IT RENDERS, ORIGINATES NOTHING: dated stamp, least-authoritative, the prose governs, every box linked to its owning doctrine so a currency audit verifies it mechanically (upholds the derivation law, one-home, and the weave rule)
 
 **Decision:** `docs/ATLAS.md` is born — the system spine, six
 mermaid diagrams with one-line captions depicting the workshop on
@@ -2401,7 +2570,9 @@ checker and a currency audit can actually read.
 (one row) · [the spec](specs/atlas.md) + its memory (in flight on
 the bench; moves to history at the weld) · this entry.
 
-## D-059 — 2026-07 — the chronicle layer — living stories above the frozen record: ONE STORY PER ITEM; the ending rule — settled in any format means the story is written, a later fix is INCORPORATED and the ending rewritten at that weld, retirement is a settlement; docs/chronicle/ one file per story, INDEX.md shelving four shelves; immutability beneath — record/ untouched, stories link DOWN as footnotes; down-links only — a story never cites another story's prose; supersedes the 07-23 three-chapter shape (the ship synthesis-at-weld step deferred to the first story weld)
+## D-059 — The chronicle layer
+
+In full: 2026-07 — the chronicle layer — living stories above the frozen record: ONE STORY PER ITEM; the ending rule — settled in any format means the story is written, a later fix is INCORPORATED and the ending rewritten at that weld, retirement is a settlement; docs/chronicle/ one file per story, INDEX.md shelving four shelves; immutability beneath — record/ untouched, stories link DOWN as footnotes; down-links only — a story never cites another story's prose; supersedes the 07-23 three-chapter shape (the ship synthesis-at-weld step deferred to the first story weld)
 
 **Decision:** the chronicle layer exists, governed by the
 founder's six rulings (ops chat, 2026-07-27), recorded verbatim
@@ -2456,7 +2627,7 @@ rewrite would churn a whole chapter; the founder's ruling keeps
 the three threads as SHELVES and moves the story unit down to the
 item, which settles · stories inside `record/` — the layer is
 living by definition and `record/` is the frozen shelf
-([D-057](DECISIONS.md#d-057--2026-07--the-record-shelf--the-frozen-record-moves-under-one-roof-docsrecord-is-born-history--specs--decisions-in-memory-stays-living-at-root-the-enabling-ruling--a-mechanical-link-path-segment-repair-inside-a-frozen-file-is-maintenance-not-a-content-edit-append-only-governs-meaning-not-bytes-intra-record-links-resolve-by-construction-upholds-append-only-one-home-and-the-weave-rule));
+([D-057](DECISIONS.md#d-057--the-record-shelf));
 mixing them would re-blur the boundary bench 1 just drew ·
 writing the first stories on this bench — the census must survive
 the founder's veto first; a story written before its item is
@@ -2472,7 +2643,9 @@ story prose is not.
 [the spec](specs/chronicle-layer.md) + its memory (in flight on
 the bench; moves to history at the weld) · this entry.
 
-## D-060 — 2026-07 — The three-phase standing order — settle and test, the vault, then Roam: V1.S1.T3–T6 and V1.S2.T5 are PAUSED until phase 2 closes (the founder's 2026-07-28 sequencing, recorded per LAWS' pause routing; upholds the pacing law)
+## D-060 — The three-phase standing order
+
+In full: 2026-07 — The three-phase standing order — settle and test, the vault, then Roam: V1.S1.T3–T6 and V1.S2.T5 are PAUSED until phase 2 closes (the founder's 2026-07-28 sequencing, recorded per LAWS' pause routing; upholds the pacing law)
 
 **Decision:** work proceeds in three phases, in this order, on the
 founder's word of 2026-07-28:
@@ -2502,15 +2675,15 @@ paused stage to a D-number rather than to conversation.
 
 **Why:** phase 1 exists because two pieces of flight machinery
 shipped and were never flown —
-[land](../record/DECISIONS.md#d-054--2026-07--the-landing-skill--how-a-flight-ends-becomes-a-first-class-ritual-one-skill-with-two-modes-routed-by-fleet-state-retire--pause-and-transfer-the-fence-is-a-commit-so-the-resume-point-is-the-branch-tip-by-construction-wake-lock-mediated-with-its-honesty-clause-the-board-is-the-single-transfer-material-pickup-gains-the-fleet-resume-ask-and-its-cap-arithmetic-sessions-are-cattle-branches-are-the-work-charter-rule-6-becomes-a-pointer-the-effort-doctrine-moves-to-opus-5--xhigh-upholds-the-wake-lock-the-park-protocol-and-one-home-supersedes-the-opus-48-reliance-pair)
+[land](../record/DECISIONS.md#d-054--the-landing-skill)
 and
-[self-seat birth](../record/DECISIONS.md#d-051--2026-07--self-seat-birth--liftoff-fires---cloud-blind-and-the-cockpit-seats-itself-by-its-env-derived-self-url-the-console-attach-launcher-is-retired-amends-d-047s-rung-1-mechanics-as-corrected-by-193-upholds-d-049-and-board-governs) —
+[self-seat birth](../record/DECISIONS.md#d-051--self-seat-birth) —
 and [the answering bench](history/workshop/definition/chronicle-answers.md)'s own
 derivations confirmed it: no landing appears in the record and no
 weld since #213 is cockpit-seated. Product work carried by untested away-machinery
 is work that cannot be rescued when the machinery fails, which is
 exactly what the batch-1 lanes proved in June
-([D-020](DECISIONS.md#d-020--2026-07--parallel-lanes-v2-native-lanes-replace-hand-built-orchestration)).
+([D-020](DECISIONS.md#d-020--parallel-lanes-v2)).
 Phase 2 comes second because the chronicle is written from a
 record that is fresh now and gets staler with every bench.
 Phase 3 comes last because T3–T6 restart FROM SCRATCH anyway: the
@@ -2518,7 +2691,7 @@ relaunch loses nothing by waiting and gains a proven vehicle.
 
 **Alternatives rejected:** running T3–T6 in parallel with the
 vault work — it is the exact shape the pacing law
-([D-009](DECISIONS.md#d-009--2026-06--pacing-law-finish-first-flexible-cap))
+([D-009](DECISIONS.md#d-009--pacing-law))
 forbids, and the parallel slot it would fill is better spent on
 the shakedown flight the phase exists for · fixing the phase-2
 scope now (all 66 vs the load-bearing dozen) — the ruling depends
@@ -2541,7 +2714,9 @@ cites this entry) · [ROADMAP](../ROADMAP.md) deliberately
 UNTOUCHED — the pause is sequencing, and the unticked T3–T6 and
 T5 boxes already tell the truth · this entry.
 
-## D-061 — 2026-07 — The landing doctrine recut to three scenarios — the cockpit's standing job (advise on fleet status and on each gate reaching decision, execute the founder's rulings from the phone), AUTO-LAND when the fleet empties and nothing awaits the founder, DESK TAKEOVER when pickup finds a live cockpit holding decisions, and the founder's FREEZE unchanged; the tombstone wake-rule makes a superseded cockpit retire by the full ritual (amends D-054's two-mode routing, upholds no-solo-approval and the derivation law)
+## D-061 — The landing doctrine recut to three scenarios
+
+In full: 2026-07 — The landing doctrine recut to three scenarios — the cockpit's standing job (advise on fleet status and on each gate reaching decision, execute the founder's rulings from the phone), AUTO-LAND when the fleet empties and nothing awaits the founder, DESK TAKEOVER when pickup finds a live cockpit holding decisions, and the founder's FREEZE unchanged; the tombstone wake-rule makes a superseded cockpit retire by the full ritual (amends D-054's two-mode routing, upholds no-solo-approval and the derivation law)
 
 **Decision:** four clauses, from the founder's three-scenario model
 (Web ops chat, 2026-07-28).
@@ -2580,7 +2755,7 @@ stays WORD-ONLY MODE P — the fence, the board transfer, resume at
 any desk. Mechanics unchanged. A bare "land" on an empty fleet
 stays legal as a manual retire.
 
-**Why:** [D-054](#d-054--2026-07--the-landing-skill--how-a-flight-ends-becomes-a-first-class-ritual-one-skill-with-two-modes-routed-by-fleet-state-retire--pause-and-transfer-the-fence-is-a-commit-so-the-resume-point-is-the-branch-tip-by-construction-wake-lock-mediated-with-its-honesty-clause-the-board-is-the-single-transfer-material-pickup-gains-the-fleet-resume-ask-and-its-cap-arithmetic-sessions-are-cattle-branches-are-the-work-charter-rule-6-becomes-a-pointer-the-effort-doctrine-moves-to-opus-5--xhigh-upholds-the-wake-lock-the-park-protocol-and-one-home-supersedes-the-opus-48-reliance-pair)
+**Why:** [D-054](#d-054--the-landing-skill)
 routed landing by the FLEET but left the TRIGGER in one place —
 the founder's word. That is one trigger for three situations, and
 the two it does not fit are the expensive ones. A flight whose
@@ -2637,7 +2812,9 @@ superseded-seat line) · [the spec](specs/land-doctrine-v2.md) +
 its memory (in flight on the bench; moves to history at the weld)
 · this entry.
 
-## D-062 — 2026-07 — The wake-rule generalized — ANY superseded seat exits by its own closing ritual, never bare: a cockpit by the landing ritual, a ground control tower by capture-then-close with team findings captured first; no superseded seat writes a board, because the baton has already moved (closes D-056's deferred road in full; upholds D-056 and D-061)
+## D-062 — The wake-rule generalized
+
+In full: 2026-07 — The wake-rule generalized — ANY superseded seat exits by its own closing ritual, never bare: a cockpit by the landing ritual, a ground control tower by capture-then-close with team findings captured first; no superseded seat writes a board, because the baton has already moved (closes D-056's deferred road in full; upholds D-056 and D-061)
 
 **Decision:** the tombstone wake-rule stops being a cockpit rule
 and becomes THE rule for every seat. ANY session that finds
@@ -2646,10 +2823,10 @@ no longer its own — EXITS BY ITS OWN CLOSING RITUAL, never
 bare:
 
 - a COCKPIT by the landing ritual
-  ([D-061](#d-061--2026-07--the-landing-doctrine-recut-to-three-scenarios--the-cockpits-standing-job-advise-on-fleet-status-and-on-each-gate-reaching-decision-execute-the-founders-rulings-from-the-phone-auto-land-when-the-fleet-empties-and-nothing-awaits-the-founder-desk-takeover-when-pickup-finds-a-live-cockpit-holding-decisions-and-the-founders-freeze-unchanged-the-tombstone-wake-rule-makes-a-superseded-cockpit-retire-by-the-full-ritual-amends-d-054s-two-mode-routing-upholds-no-solo-approval-and-the-derivation-law)
+  ([D-061](#d-061--the-landing-doctrine-recut-to-three-scenarios)
   clause 3), so its lanes are fenced rather than abandoned;
 - a GROUND CONTROL TOWER by
-  [D-056](#d-056--2026-07--team-aware-leaving-rituals--no-ritual-lets-a-live-agent-team-outlive-the-sitting-that-made-it-handoff-shuts-the-team-down-before-parking-anything-and-captures-its-findings-into-the-record-first-land-states-the-cockpit-cannot-lead-a-team-case-once-and-routes-the-ground-seat-to-handoff-pickup-gains-the-ghost-teammate-recovery-note-and-the--block-gains-what-the-team-had-found-closes-d-055s-deferred-gap-upholds-one-home-and-the-park-protocol)'s
+  [D-056](#d-056--team-aware-leaving-rituals)'s
   capture-then-close — and IF A TEAM IS LIVE, ITS FINDINGS ARE
   CAPTURED FIRST, before anything else, exactly as that entry
   orders it.
@@ -2662,7 +2839,7 @@ fences — and nothing that belongs to the seat now holding the
 baton.
 
 This CLOSES IN FULL the road
-[D-056](#d-056--2026-07--team-aware-leaving-rituals--no-ritual-lets-a-live-agent-team-outlive-the-sitting-that-made-it-handoff-shuts-the-team-down-before-parking-anything-and-captures-its-findings-into-the-record-first-land-states-the-cockpit-cannot-lead-a-team-case-once-and-routes-the-ground-seat-to-handoff-pickup-gains-the-ghost-teammate-recovery-note-and-the--block-gains-what-the-team-had-found-closes-d-055s-deferred-gap-upholds-one-home-and-the-park-protocol)
+[D-056](#d-056--team-aware-leaving-rituals)
 left open and its bench filed rather than solved in passing.
 
 **Why:** D-056 covered every exit that RUNS A RITUAL — handoff
@@ -2671,7 +2848,7 @@ was the one road out that ran none: "push, write nothing". That
 made it the single place where a team's findings could die
 silently, since a team's output lives in transcripts that vanish
 with the session and nothing was licensed to write it down.
-[D-061](#d-061--2026-07--the-landing-doctrine-recut-to-three-scenarios--the-cockpits-standing-job-advise-on-fleet-status-and-on-each-gate-reaching-decision-execute-the-founders-rulings-from-the-phone-auto-land-when-the-fleet-empties-and-nothing-awaits-the-founder-desk-takeover-when-pickup-finds-a-live-cockpit-holding-decisions-and-the-founders-freeze-unchanged-the-tombstone-wake-rule-makes-a-superseded-cockpit-retire-by-the-full-ritual-amends-d-054s-two-mode-routing-upholds-no-solo-approval-and-the-derivation-law)
+[D-061](#d-061--the-landing-doctrine-recut-to-three-scenarios)
 fixed that for the cockpit and, in doing so, showed the shape of
 the general answer — a superseded seat is not a seat that must
 vanish, it is a seat that must HAND OVER — but it fixed it only
@@ -2713,7 +2890,9 @@ closes, and writes no board) · [HOME §Terms](../HOME.md#terms)
 [the spec](specs/land-doctrine-v2.md) + its memory (in flight on
 the bench; moves to history at the weld) · this entry.
 
-## D-063 — 2026-07 — response doctrine v2 + Web instructions v6 — two channels: sentences for the founder, fenced blocks for machines; process is proof, not prose; the chat-start ingest contract; the relay rule — origin is the only courier, Code's output is never pasted to Web; reviews speak in goal-and-outcome; the core-file alert; the agenda convention; brief renders the full picture; the master gains a version history (amends D-052)
+## D-063 — Response doctrine v2 and Web instructions v6
+
+In full: 2026-07 — response doctrine v2 + Web instructions v6 — two channels: sentences for the founder, fenced blocks for machines; process is proof, not prose; the chat-start ingest contract; the relay rule — origin is the only courier, Code's output is never pasted to Web; reviews speak in goal-and-outcome; the core-file alert; the agenda convention; brief renders the full picture; the master gains a version history (amends D-052)
 
 **Decision:** the response doctrine goes to V2 in its one home
 ([HOME §Response doctrine](../HOME.md#response-doctrine)), and the
@@ -2766,7 +2945,7 @@ FULL COPY, ALWAYS: whenever a version is compiled or the master
 merges, the surface in hand prints the COMPLETE new text for the
 box paste, never a diff.
 
-**Why:** [D-052](#d-052--2026-07--response-doctrine--one-standard-for-every-surface-speaking-to-the-founder-answer-first-explicit-steps-purpose-shaped-explanation-live-derived-state-glyph-verdicts-the-command-card-the-fleet-table-report-the-ritual-status-templates-web-instructions-v5-ships-retires-the-v4-paste-block-loop-master-upholds-d-046s-cc-direct-doctrine-and-the-derivation-law)
+**Why:** [D-052](#d-052--response-doctrine)
 set one standard for how every surface speaks, and it worked — but
 it optimized the SHAPE of a reply (answer first, explicit steps,
 purpose last) while leaving its CONTENTS mixed. A single paragraph
@@ -2817,7 +2996,9 @@ it named doctrine v1's clauses, which this entry retires) ·
 [IDEAS](../IDEAS.md) (the ritual/report-shape sweep filed) · this
 entry.
 
-## D-064 — 2026-07 — The box-master class + the SETUP entry contract — every external-box master is its own top-level file on the WEB-INSTRUCTIONS pattern; COCKPIT-CHARTER.md and LANE-WORKER.md extracted verbatim; SETUP compresses to a replication spec under the entry contract (WHAT · WHERE · VALUES · VERIFY · SOURCE); DESIGN-KICKOFF joins the class on paper
+## D-064 — The box-master class and SETUP entry contract
+
+In full: 2026-07 — The box-master class + the SETUP entry contract — every external-box master is its own top-level file on the WEB-INSTRUCTIONS pattern; COCKPIT-CHARTER.md and LANE-WORKER.md extracted verbatim; SETUP compresses to a replication spec under the entry contract (WHAT · WHERE · VALUES · VERIFY · SOURCE); DESIGN-KICKOFF joins the class on paper
 
 **Decision:** two things, and the second is why the first matters.
 
@@ -2825,7 +3006,7 @@ entry.
 this repo authors but another product stores — is its OWN
 TOP-LEVEL FILE under `docs/`, built on the shape
 [WEB-INSTRUCTIONS](../WEB-INSTRUCTIONS.md) proved at
-[D-063](#d-063--2026-07--response-doctrine-v2--web-instructions-v6--two-channels-sentences-for-the-founder-fenced-blocks-for-machines-process-is-proof-not-prose-the-chat-start-ingest-contract-the-relay-rule--origin-is-the-only-courier-codes-output-is-never-pasted-to-web-reviews-speak-in-goal-and-outcome-the-core-file-alert-the-agenda-convention-brief-renders-the-full-picture-the-master-gains-a-version-history-amends-d-052).
+[D-063](#d-063--response-doctrine-v2-and-web-instructions-v6).
 FOUR ELEMENTS, all four required:
 
 - HEADER LAWS in prose — the box is a COPY, never the source;
@@ -2917,11 +3098,13 @@ memory (in flight on the bench; moves to history at the weld) ·
 this entry. The frozen record is deliberately UNTOUCHED — its
 citations of the old location were true when written.
 
-## D-065 — 2026-07 — The box-master diet — a box master carries standing rules, invariants, and pointers; procedures live in their repo homes and are derived at need; values live in SETUP; provenance labels do not ride boxes (the session that needs a decision's text greps the clone); the cockpit charter goes v3 on the principle, the connector ladder moves to HOME (upholds D-064, amends the charter's D-061/D-048 embeddings by relocation, not repeal)
+## D-065 — The box-master diet
+
+In full: 2026-07 — The box-master diet — a box master carries standing rules, invariants, and pointers; procedures live in their repo homes and are derived at need; values live in SETUP; provenance labels do not ride boxes (the session that needs a decision's text greps the clone); the cockpit charter goes v3 on the principle, the connector ladder moves to HOME (upholds D-064, amends the charter's D-061/D-048 embeddings by relocation, not repeal)
 
 **Decision:** THE BOX-MASTER DIET — what belongs INSIDE a box
 master, which
-[D-064](#d-064--2026-07--the-box-master-class--the-setup-entry-contract--every-external-box-master-is-its-own-top-level-file-on-the-web-instructions-pattern-cockpit-chartermd-and-lane-workermd-extracted-verbatim-setup-compresses-to-a-replication-spec-under-the-entry-contract-what--where--values--verify--source-design-kickoff-joins-the-class-on-paper)
+[D-064](#d-064--the-box-master-class-and-setup-entry-contract)
 gave a home and a shape but never a content rule. Four clauses:
 
 1. **A box carries STANDING RULES, INVARIANTS, and POINTERS** —
@@ -2949,9 +3132,9 @@ the exact tombstone line; HOME holds the PROCEDURE.
 
 This AMENDS BY RELOCATION, never by repeal. Every rung, every
 script, and the cap arithmetic all survive at a named home;
-[D-061](#d-061--2026-07--the-landing-doctrine-recut-to-three-scenarios--the-cockpits-standing-job-advise-on-fleet-status-and-on-each-gate-reaching-decision-execute-the-founders-rulings-from-the-phone-auto-land-when-the-fleet-empties-and-nothing-awaits-the-founder-desk-takeover-when-pickup-finds-a-live-cockpit-holding-decisions-and-the-founders-freeze-unchanged-the-tombstone-wake-rule-makes-a-superseded-cockpit-retire-by-the-full-ritual-amends-d-054s-two-mode-routing-upholds-no-solo-approval-and-the-derivation-law)'s
+[D-061](#d-061--the-landing-doctrine-recut-to-three-scenarios)'s
 wake-rule and
-[D-048](#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)'s
+[D-048](#d-048--cockpit-resilience)'s
 five rungs are unchanged in force and moved in address.
 
 **Why:** a box master is the one artifact in this workshop that a
@@ -2984,7 +3167,7 @@ merely trimming its prose — the length was a symptom; the disease
 is a procedure with two homes, and a shorter copy drifts exactly
 as fast · moving the ladder to [SETUP](../SETUP.md) instead of
 HOME — SETUP is a replication spec under
-[D-064](#d-064--2026-07--the-box-master-class--the-setup-entry-contract--every-external-box-master-is-its-own-top-level-file-on-the-web-instructions-pattern-cockpit-chartermd-and-lane-workermd-extracted-verbatim-setup-compresses-to-a-replication-spec-under-the-entry-contract-what--where--values--verify--source-design-kickoff-joins-the-class-on-paper)'s
+[D-064](#d-064--the-box-master-class-and-setup-entry-contract)'s
 entry contract, and a recovery ladder is neither a value nor a
 verify; HOME already held the dependency map that the ladder is
 the answer to, so the two belong in one section · dropping the
@@ -3009,7 +3192,9 @@ bench; moves to history at the weld) · this entry.
 [WEB-INSTRUCTIONS](../WEB-INSTRUCTIONS.md) are governed from now
 on but NOT recut here.
 
-## D-066 — 2026-07 — The IDEAS entry contract — one idea per line, one line per idea, plain language, links short-text at the tail; glyph first (open · developed with vehicle · declined with a one-word why); two sections, OPEN newest-first and CLOSED one line each; closed entries COMPRESS AND STAY as the outcome ledger (amends the delete-at-harvest compaction law); multi-part thoughts split so closure is per-idea; findings and probe stories live in the record, never here; enforcement — the header is the law, handoff's harvest grooms to it every sitting, liftoff/decide/parallel-lanes cite it at their write steps, the critic and the external review grade IDEAS diffs against it
+## D-066 — The IDEAS entry contract
+
+In full: 2026-07 — The IDEAS entry contract — one idea per line, one line per idea, plain language, links short-text at the tail; glyph first (open · developed with vehicle · declined with a one-word why); two sections, OPEN newest-first and CLOSED one line each; closed entries COMPRESS AND STAY as the outcome ledger (amends the delete-at-harvest compaction law); multi-part thoughts split so closure is per-idea; findings and probe stories live in the record, never here; enforcement — the header is the law, handoff's harvest grooms to it every sitting, liftoff/decide/parallel-lanes cite it at their write steps, the critic and the external review grade IDEAS diffs against it
 
 **Decision:** [IDEAS](../IDEAS.md) gains an ENTRY CONTRACT, stated
 at its own head and enforced by every file that writes there.
@@ -3022,7 +3207,7 @@ CLOSED, one line each. A MULTI-PART THOUGHT SPLITS into separate
 lines so closure is per-idea. FINDINGS AND PROBE STORIES ARE NOT
 IDEAS — they live in the record; a line here points at them.
 
-**THE AMENDMENT.** [D-050](#d-050--2026-07--session-lifecycle--closed--dead-the-close-locks-wall-softens-to-injected-read-only-doctrine-interrupt-capture-is-standing-format-the-claude-residue-sweep-is-pickup-hygiene-ideas-is-an-inbox-not-an-archive-amends-the-d-046-era-close-wall-design-upholds-the-park-protocol-and-no-solo-approval)
+**THE AMENDMENT.** [D-050](#d-050--session-lifecycle-closed-is-not-dead)
 made IDEAS an inbox-not-an-archive and DELETED closed entries at
 every harvest. That half is amended: CLOSED ENTRIES COMPRESS AND
 STAY, one line each, as THE OUTCOME LEDGER. The inbox-not-archive
@@ -3094,7 +3279,9 @@ narrative the contract evicts and nothing else recorded) ·
 [the spec](specs/ideas-contract.md) + its memory (in flight on
 the bench; moves to history at the weld) · this entry.
 
-## D-067 — 2026-07 — The report skeleton + the board diet — every founder-facing report, ritual or not, renders five slots in order: VERDICT (glyph + state + finding count) · YOUR ACT (exact word or paste · surface · when, or "nothing") · OFF-ORIGIN (content existing only in the session, else omitted) · one-breath context · a pointer to the record, never a retelling; one job per surface — the gate report carries ready + the word, the external review carries decisions, the shipped report carries confirmation + needs-you + next; PUSH FIRST, REPORT SECOND — beyond the founder's acts and off-origin content, a report may contain nothing not already on origin; the DASHBOARD is the standing report and diets to the same principle: state and acts only, stories live in the record, position lives once (the bars), Needs-you carries the urgency ladder, the baton renders state never doctrine with the cause vocabulary AUTO-LAND · MANUAL-LAND · DESK TAKEOVER (BY THIS PICKUP), WORKING ON splits from WHERE WE ARE, and the sitting narrative + essay ledger rows + review receipts die into the record
+## D-067 — The report skeleton and the board diet
+
+In full: 2026-07 — The report skeleton + the board diet — every founder-facing report, ritual or not, renders five slots in order: VERDICT (glyph + state + finding count) · YOUR ACT (exact word or paste · surface · when, or "nothing") · OFF-ORIGIN (content existing only in the session, else omitted) · one-breath context · a pointer to the record, never a retelling; one job per surface — the gate report carries ready + the word, the external review carries decisions, the shipped report carries confirmation + needs-you + next; PUSH FIRST, REPORT SECOND — beyond the founder's acts and off-origin content, a report may contain nothing not already on origin; the DASHBOARD is the standing report and diets to the same principle: state and acts only, stories live in the record, position lives once (the bars), Needs-you carries the urgency ladder, the baton renders state never doctrine with the cause vocabulary AUTO-LAND · MANUAL-LAND · DESK TAKEOVER (BY THIS PICKUP), WORKING ON splits from WHERE WE ARE, and the sitting narrative + essay ledger rows + review receipts die into the record
 
 **Decision:** two halves of one principle — what a report contains,
 and what the standing report contains.
@@ -3136,7 +3323,7 @@ stage's position are different questions. And the sitting
 narrative, the essay-length ledger rows, and the review receipts
 DIE INTO THE RECORD, which is where they were always meant to go.
 
-**Why:** [D-063](#d-063--2026-07--response-doctrine-v2--web-instructions-v6--two-channels-sentences-for-the-founder-fenced-blocks-for-machines-process-is-proof-not-prose-the-chat-start-ingest-contract-the-relay-rule--origin-is-the-only-courier-codes-output-is-never-pasted-to-web-reviews-speak-in-goal-and-outcome-the-core-file-alert-the-agenda-convention-brief-renders-the-full-picture-the-master-gains-a-version-history-amends-d-052)
+**Why:** [D-063](#d-063--response-doctrine-v2-and-web-instructions-v6)
 settled HOW a surface speaks — two channels, process as proof. It
 never settled WHAT A REPORT CONTAINS, so each ritual grew its own
 answer. The founder ends up reading six different layouts to
@@ -3201,4 +3388,73 @@ pointer), [recall](../skills/recall.md),
 [the memory TEMPLATE](../memory/TEMPLATE.md), each of which
 addressed the board by its old section names ·
 [the spec](specs/report-shapes.md) + its memory (in flight on the
+bench; moves to history at the weld) · this entry.
+
+## D-068 — the short-anchor law
+
+In full: 2026-07 — The short-anchor law — every DECISIONS entry
+heading is a SHORT NAME (8 words maximum) and the complete
+title or statement lives verbatim in the entry body as its first
+line, "In full: …"; anchors FREEZE AT MINT, so a short name is
+never edited after it is written; every citation repo-wide links
+the short anchor; D-001 through D-067 are retrofitted in the
+minting PR as a content-preserving format change sanctioned by
+the retroactivity law — append-only protects the words, and every
+word survives one line lower.
+
+**Decision:** a decision heading carries a short name, eight words
+at most: `## D-0XX — <short name>`. The complete statement — and
+the date — move verbatim to the entry's first body line, prefixed
+`In full:`. The anchor that name produces is FROZEN AT MINT and
+never edited afterwards. Every citation in the repo links the
+short anchor. D-001 through D-067 are retrofitted in this PR;
+[decide](../skills/decide.md) writes the new format from here on.
+
+**Why:** the heading IS the anchor, and the anchor is quoted
+ambient-wide — [LAWS](../LAWS.md), every skill, every story, every
+frozen shelf. A statement-length heading therefore charges its full
+length to every citing file, on every read, forever.
+[D-067](#d-067--the-report-skeleton-and-the-board-diet) made the
+bill impossible to ignore: a 1,038-character anchor, cited five
+times, written by the very bench that was dieting every other
+surface in the workshop. Nothing is lost by the cut, because
+nothing is deleted — the statement moves one line down, where it
+is read once instead of quoted a hundred times. FREEZING AT MINT
+is what makes a short name safe to depend on: an anchor edit
+breaks every citation in the repo at once, and a name chosen for
+brevity is exactly the kind a later reader would want to "improve".
+
+**Alternatives rejected:**
+
+- **An alias convention** (a short anchor beside the long heading)
+  — GitHub has no heading-alias mechanism; the only way to mint a
+  second anchor is a second heading, which splits every entry in
+  two and doubles what the weave rule must maintain.
+- **Shortening new entries only, leaving D-001–D-067 alone** —
+  cheaper today, and it leaves the repo with two anchor
+  conventions forever, which the retroactivity law exists to
+  prevent. The retrofit is mechanical and its links gate proves
+  it.
+- **Deleting the long titles outright** — faster, and it would
+  destroy the record. The statements ARE the decisions; several
+  of them are the only place a clause is written in full.
+- **A numeric-only anchor** (`#d-068`) — shortest of all, and
+  unreadable: a citation would carry no meaning at the point of
+  use, which is the one thing the weave rule buys.
+
+**Affects:** [DECISIONS](DECISIONS.md) (all 68 entries: short
+headings, `In full:` lines, 92 internal citations repointed) ·
+[decide](../skills/decide.md) (§1's entry format, the freeze rule,
+the why) · THE CITING SWEEP by destination-grep — 23 living files
+([LAWS](../LAWS.md) · [HOME](../HOME.md) · [ATLAS](../ATLAS.md) ·
+[ENGINE](../ENGINE.md) · [ROADMAP](../ROADMAP.md) ·
+[SETUP](../SETUP.md) · [IDEAS](../IDEAS.md) ·
+[DASHBOARD](../DASHBOARD.md) · the three box masters' version
+tables · [data/](../data/FACTS.md) · eight skills) and 128 frozen
+files on the history, specs, chronicle, retired and probe shelves,
+which take POINTER-ONLY repairs under
+[D-057](#d-057--the-record-shelf)'s enabling ruling — a mechanical
+link repair inside a frozen file is maintenance, not a content
+edit · [IDEAS](../IDEAS.md) (the LAWS-ANCHOR line closes 🟢) ·
+[the spec](specs/anchor-diet.md) + its memory (in flight on the
 bench; moves to history at the weld) · this entry.

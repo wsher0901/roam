@@ -103,7 +103,7 @@ running:
 QUIET never parks — mid-sitting lanes keep flying.
 Cloud lanes are machine-independent — handoff never parks or touches
 them; they keep flying and appear on the board
-([D-032](../record/DECISIONS.md#d-032--2026-07--fleet-continuity--handoff-parks-every-local-lane-liftoff-respawns-parked-benches-wake-lock-parks-every-outcome-extends-the-d-020d-023-lane-law-upholds-d-009)
+([D-032](../record/DECISIONS.md#d-032--fleet-continuity)
 parks LOCAL lanes only).
 
 Sources:
@@ -159,7 +159,7 @@ pickup, liftoff, land and ship's tail render by pointing here.
 
 THE BOARD IS THE STANDING REPORT, so it obeys the report skeleton
 ([HOME §Response doctrine](../HOME.md#response-doctrine), rule 8;
-[D-067](../record/DECISIONS.md#d-067--2026-07--the-report-skeleton--the-board-diet--every-founder-facing-report-ritual-or-not-renders-five-slots-in-order-verdict-glyph--state--finding-count--your-act-exact-word-or-paste--surface--when-or-nothing--off-origin-content-existing-only-in-the-session-else-omitted--one-breath-context--a-pointer-to-the-record-never-a-retelling-one-job-per-surface--the-gate-report-carries-ready--the-word-the-external-review-carries-decisions-the-shipped-report-carries-confirmation--needs-you--next-push-first-report-second--beyond-the-founders-acts-and-off-origin-content-a-report-may-contain-nothing-not-already-on-origin-the-dashboard-is-the-standing-report-and-diets-to-the-same-principle-state-and-acts-only-stories-live-in-the-record-position-lives-once-the-bars-needs-you-carries-the-urgency-ladder-the-baton-renders-state-never-doctrine-with-the-cause-vocabulary-auto-land--manual-land--desk-takeover-by-this-pickup-working-on-splits-from-where-we-are-and-the-sitting-narrative--essay-ledger-rows--review-receipts-die-into-the-record)):
+[D-067](../record/DECISIONS.md#d-067--the-report-skeleton-and-the-board-diet)):
 STATE AND ACTS ONLY. No sitting narrative, no essay-length rows,
 no review receipts — those live in the record, and the board
 points. Counts and positions are computed at render time, never

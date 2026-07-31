@@ -9,8 +9,8 @@ pr: 9
 
 ## What shipped
 
-([D-005](../../../DECISIONS.md#d-005--2026-06--stack-re-trial-vs-foundation-v1-d-001-upheld--frontend-layer))
-· The [D-001](../../../DECISIONS.md#d-001--2026-06--tech-stack) stack
+([D-005](../../../DECISIONS.md#d-005--stack-re-trial-upholds-d-001))
+· The [D-001](../../../DECISIONS.md#d-001--tech-stack) stack
 survives a re-trial against the written product definition, and the
 frontend layer gets names: Tailwind v4, shadcn/ui, Motion, MapLibre,
 dnd-kit, AI SDK, TanStack Query + Zustand →

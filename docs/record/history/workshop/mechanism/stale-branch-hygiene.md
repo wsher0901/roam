@@ -13,7 +13,7 @@ founder's word after the external review. All verification green:
 1167 links / 0 broken, node --check clean on both hooks, smoke run
 exit 0, exactly the six named files in the diff, lint + tests +
 format clean. Both hook patches, the pickup payload, and the
-[D-031](../../../DECISIONS.md#d-031--2026-07--stale-branch-hygiene--gone-guard-on-the-session-end-net-welded-elsewhere-locals-auto-removed-at-session-start)
+[D-031](../../../DECISIONS.md#d-031--stale-branch-hygiene)
 entry landed in one commit.
 
 Sources:
@@ -67,7 +67,7 @@ Execution notes, in order:
 
 ## Where to look
 - decision:
-  [D-031](../../../DECISIONS.md#d-031--2026-07--stale-branch-hygiene--gone-guard-on-the-session-end-net-welded-elsewhere-locals-auto-removed-at-session-start)
+  [D-031](../../../DECISIONS.md#d-031--stale-branch-hygiene)
 
 ## Where to look
 - spec: [../specs/stale-branch-hygiene.md](../../../specs/stale-branch-hygiene.md)

@@ -16,7 +16,7 @@ shipped: 2026-07-22 16:36
 > the MCP connector is the SOLE API path, `gh` unavailable by
 > design, redundancy in-session impossible — was OVERTURNED by
 > live probe
-> ([D-049](../DECISIONS.md#d-049--2026-07--gh-second-path--gh-api-rest-through-the-github-proxy-is-the-cockpits-second-api-path-a-connector-flap-stops-costing-command-r2-gains-the-automatic-gh-rung-self-id-by-session-env-amends-d-048-corrects-the-193-api-map-upholds-d-047-and-verify-before-rely),
+> ([D-049](../DECISIONS.md#d-049--gh-second-path),
 > [#207](https://github.com/wsher0901/roam/pull/207)): `gh`
 > installs from the Ubuntu archive and authenticates through the
 > GitHub proxy, REST-shaped (`gh api`; GraphQL porcelain blocked).
@@ -41,7 +41,7 @@ One theme: **a cockpit that survives, announces, and replaces its
 own GitHub connector loss.** [#193](https://github.com/wsher0901/roam/pull/193)
 wrote down WHAT a connector-dead cockpit can and cannot do. This
 bench gives it the ladder to climb back — five rungs, plus the
-decide ([D-048](../DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)) that settles which rescue vehicles are lawful and
+decide ([D-048](../DECISIONS.md#d-048--cockpit-resilience)) that settles which rescue vehicles are lawful and
 which are not.
 
 ## Why (the decide's evidence)
@@ -68,7 +68,7 @@ of the mechanism:
 
 - Firing the summon workflow, or pushing `ops/summon`, from this
   bench. The first fire is the founder's, after the weld.
-- Merge-on-signal — REJECTED by [D-048](../DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047) with reasons, not deferred.
+- Merge-on-signal — REJECTED by [D-048](../DECISIONS.md#d-048--cockpit-resilience) with reasons, not deferred.
 - A scoped GitHub token in the cloud environment — REJECTED for the
   same class of reason.
 - Any file outside the FILES TOUCHED list.
@@ -149,11 +149,11 @@ GitHub app); it costs nothing and is never required.
 
 ## Plan — the decide and the corrections
 
-**[D-048](../DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)**, house style, clauses by name: the five-rung resilience
+**[D-048](../DECISIONS.md#d-048--cockpit-resilience)**, house style, clauses by name: the five-rung resilience
 ladder · the summon workflow live with both triggers (SETUP §Staged
 resolves) · a summoned cockpit is routine-born and list-invisible,
 reachable by push and the board link, so `--cloud`
-([D-047](../DECISIONS.md#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law))
+([D-047](../DECISIONS.md#d-047--cloud-born-cockpit))
 stays PRIMARY because it is list-native · MERGE-ON-SIGNAL REJECTED
 with reasons · a scoped token in the cloud environment rejected for
 the same reason · a POINTER clause: D-047's rung-1 mechanics are
@@ -196,7 +196,7 @@ via the ship tail. Nothing outside this list.
       available).
 - [x] The rung-5 phone bootstrap paste is recorded verbatim in SETUP,
       marked verify-before-rely.
-- [x] [D-048](../DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047) is in [DECISIONS](../DECISIONS.md) in house style with
+- [x] [D-048](../DECISIONS.md#d-048--cockpit-resilience) is in [DECISIONS](../DECISIONS.md) in house style with
       every named clause, including both rejections WITH their
       reasons.
 - [x] SETUP §Staged's summon-button line resolves to live.

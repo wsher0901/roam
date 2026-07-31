@@ -14,7 +14,7 @@ shipped: 2026-07-17 16:22
 
 > **SUPERSESSION NOTE — added 2026-07-23.** The clerk was RETIRED
 > 2026-07-22 and its routine deleted
-> ([D-046](../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock),
+> ([D-046](../DECISIONS.md#d-046--flight-cockpit-the-control-tower-online),
 > executed by [#197](https://github.com/wsher0901/roam/pull/197)):
 > `npm run fire:clerk` is gone from
 > [`package.json`](../../../package.json), and a stale `clerk` target
@@ -28,7 +28,7 @@ shipped: 2026-07-17 16:22
 [SETUP §Staged](../../SETUP.md#staged--turns-on-when-its-stage-opens)
 · [SETUP §cloud accounts](../../SETUP.md#once-and-done--cloud-accounts)
 · [liftoff](../../skills/liftoff.md) ·
-[D-043](../DECISIONS.md#d-043--2026-07--cloud-ignition--away-command-redesign--route-ladder-v2-ready-flip-then-label-is-the-recipe-of-record-api-ignition-and-the-cloud-clerk-staged-the-claude-app-the-single-away-surface-amends-d-041-upholds-the-lane-law-and-the-wake-lock)
+[D-043](../DECISIONS.md#d-043--cloud-ignition-and-away-command-redesign)
 · [cloud-clerk story](../history/workshop/mechanism/cloud-clerk.md)
 · sibling bench: [clerk-notify](clerk-notify.md)
 

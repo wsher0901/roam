@@ -20,9 +20,9 @@ shipped: 2026-07-15
 [SETUP](../../SETUP.md) ·
 [HOME](../../HOME.md) ·
 Decisions:
-[D-032 — wake-lock amended here](../DECISIONS.md#d-032--2026-07--fleet-continuity--handoff-parks-every-local-lane-liftoff-respawns-parked-benches-wake-lock-parks-every-outcome-extends-the-d-020d-023-lane-law-upholds-d-009)
+[D-032 — wake-lock amended here](../DECISIONS.md#d-032--fleet-continuity)
 ·
-[D-009 — pacing law, upheld](../DECISIONS.md#d-009--2026-06--pacing-law-finish-first-flexible-cap)
+[D-009 — pacing law, upheld](../DECISIONS.md#d-009--pacing-law)
 
 ## Goal
 

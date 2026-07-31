@@ -17,7 +17,7 @@ shipped: 2026-07-23
 the retirement:
 [clerk-retirement](../history/workshop/mechanism/clerk-retirement.md)
 ([#197](https://github.com/wsher0901/roam/pull/197)) ·
-[D-046](../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+[D-046](../DECISIONS.md#d-046--flight-cockpit-the-control-tower-online)
 
 ## Goal
 

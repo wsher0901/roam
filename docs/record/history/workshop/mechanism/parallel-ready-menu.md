@@ -9,7 +9,7 @@ pr: 39
 
 ## What shipped
 
-([D-016](../../../DECISIONS.md#d-016--2026-06--parallel-ready-menu-amends-d-009))
+([D-016](../../../DECISIONS.md#d-016--parallel-ready-menu))
 · Briefings and completions now list every unblocked parallel-safe
 task with a ready-to-paste launch command, without breaking the
 two-item attention cap →

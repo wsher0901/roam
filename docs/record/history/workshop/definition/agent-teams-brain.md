@@ -63,6 +63,6 @@ internal links.
 - Spec (the full contract + doctrine text):
   [agent-teams-brain](../../../specs/agent-teams-brain.md)
 - Targets: [SETUP §Models & effort](../../../../SETUP.md#once-and-done--cloud-accounts)
-  · [DECISIONS §D-045](../../../DECISIONS.md#d-045--2026-07--hands-doctrine-solo--subagents--agent-team--lanes--the-litmus-is-one-bench-many-hands-vs-many-benches-vs-read-only-upholds-d-020-and-d-041)
+  · [DECISIONS §D-045](../../../DECISIONS.md#d-045--hands-doctrine)
   · [parallel-lanes §Vehicles](../../../../skills/parallel-lanes.md#vehicles)
 - Lane law: [parallel-lanes](../../../../skills/parallel-lanes.md)

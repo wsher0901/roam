@@ -128,7 +128,7 @@ The briefing follows the response doctrine
 ([HOME §Response doctrine](../HOME.md#response-doctrine)); the
 shape below is the founder's status template.
 - ⏸ FIRST, above everything
-  ([D-050](../record/DECISIONS.md#d-050--2026-07--session-lifecycle--closed--dead-the-close-locks-wall-softens-to-injected-read-only-doctrine-interrupt-capture-is-standing-format-the-claude-residue-sweep-is-pickup-hygiene-ideas-is-an-inbox-not-an-archive-amends-the-d-046-era-close-wall-design-upholds-the-park-protocol-and-no-solo-approval)):
+  ([D-050](../record/DECISIONS.md#d-050--session-lifecycle-closed-is-not-dead)):
   whenever any memory's Status reads
   interrupted, LEAD the briefing with one line per interrupted
   task, drawn from its ⏸ capture block
@@ -219,7 +219,7 @@ exactly what this case is not.
 
 Reached from [§3](#3--gather-git-outranks-the-board), not from
 §5's ask. The case that outranks the resume mechanics
-([D-061](../record/DECISIONS.md#d-061--2026-07--the-landing-doctrine-recut-to-three-scenarios--the-cockpits-standing-job-advise-on-fleet-status-and-on-each-gate-reaching-decision-execute-the-founders-rulings-from-the-phone-auto-land-when-the-fleet-empties-and-nothing-awaits-the-founder-desk-takeover-when-pickup-finds-a-live-cockpit-holding-decisions-and-the-founders-freeze-unchanged-the-tombstone-wake-rule-makes-a-superseded-cockpit-retire-by-the-full-ritual-amends-d-054s-two-mode-routing-upholds-no-solo-approval-and-the-derivation-law),
+([D-061](../record/DECISIONS.md#d-061--the-landing-doctrine-recut-to-three-scenarios),
 scenario 2): §3's gather finds a cockpit that is LIVE and holding
 PENDING DECISIONS — gates that reached decision and are waiting
 on the founder. The founder is here, at this desk. Two commanding

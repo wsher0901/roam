@@ -17,7 +17,7 @@ shipped: 2026-07-13
 [parallel-lanes](../../skills/parallel-lanes.md) ·
 [LAWS §Parallel lanes & cloud](../../LAWS.md#parallel-lanes--cloud) ·
 Decisions:
-[D-032](../DECISIONS.md#d-032--2026-07--fleet-continuity--handoff-parks-every-local-lane-liftoff-respawns-parked-benches-wake-lock-parks-every-outcome-extends-the-d-020d-023-lane-law-upholds-d-009)
+[D-032](../DECISIONS.md#d-032--fleet-continuity)
 
 ## Goal
 "Handoff" means operations halt — every live local lane is parked
@@ -39,7 +39,7 @@ bows out.
 1. Bench birth: branch docs/fleet-continuity → this spec + memory
    stub → draft PR.
 2. Run [decide](../../skills/decide.md)
-   ([D-032](../DECISIONS.md#d-032--2026-07--fleet-continuity--handoff-parks-every-local-lane-liftoff-respawns-parked-benches-wake-lock-parks-every-outcome-extends-the-d-020d-023-lane-law-upholds-d-009)):
+   ([D-032](../DECISIONS.md#d-032--fleet-continuity)):
    entry + ripple in the same commit — payload A overwrites
    [handoff](../../skills/handoff.md), payload B overwrites
    [liftoff](../../skills/liftoff.md), two surgical edits + two

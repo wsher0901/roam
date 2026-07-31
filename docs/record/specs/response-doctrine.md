@@ -17,9 +17,9 @@ shipped: 2026-07-24 00:51
 · [liftoff](../../skills/liftoff.md) · [handoff](../../skills/handoff.md)
 · [pickup](../../skills/pickup.md) ·
 [WEB-INSTRUCTIONS](../../WEB-INSTRUCTIONS.md) ·
-[D-046](../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+[D-046](../DECISIONS.md#d-046--flight-cockpit-the-control-tower-online)
 (the CC-direct doctrine v5 finally reflects) ·
-[D-050](../DECISIONS.md#d-050--2026-07--session-lifecycle--closed--dead-the-close-locks-wall-softens-to-injected-read-only-doctrine-interrupt-capture-is-standing-format-the-claude-residue-sweep-is-pickup-hygiene-ideas-is-an-inbox-not-an-archive-amends-the-d-046-era-close-wall-design-upholds-the-park-protocol-and-no-solo-approval)
+[D-050](../DECISIONS.md#d-050--session-lifecycle-closed-is-not-dead)
 (pickup's ⏸ lead stays above everything)
 
 ## Goal
@@ -68,7 +68,7 @@ explanation.
    Design work, if any) · PARALLEL/RECENT FLIGHTS with 🟢
    all-good / ⏸ resume-needed per item. Pickup's ⏸ INTERRUPTED
    lead
-   ([D-050](../DECISIONS.md#d-050--2026-07--session-lifecycle--closed--dead-the-close-locks-wall-softens-to-injected-read-only-doctrine-interrupt-capture-is-standing-format-the-claude-residue-sweep-is-pickup-hygiene-ideas-is-an-inbox-not-an-archive-amends-the-d-046-era-close-wall-design-upholds-the-park-protocol-and-no-solo-approval))
+   ([D-050](../DECISIONS.md#d-050--session-lifecycle-closed-is-not-dead))
    stays above everything. The close reports and briefs are
    REWRITTEN to the template, not merely annotated.
 5. **WEB-INSTRUCTIONS v5** — the full master rewrite, describing

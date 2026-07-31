@@ -17,7 +17,7 @@ shipped: 2026-07-13
 [handoff](../../skills/handoff.md) ·
 [memory TEMPLATE](../../memory/TEMPLATE.md) ·
 Decisions:
-[D-034](../DECISIONS.md#d-034--2026-07--history-quadrants--productworkshop--definitionimplementation-memory-template-owns-format--status-vocabulary-extends-d-024s-narrative-layer-and-d-032s-states)
+[D-034](../DECISIONS.md#d-034--history-quadrants)
 
 ## Goal
 Any future issue has exactly one door — history reorganizes into
@@ -36,7 +36,7 @@ only — no story content changes (frozen class).
 1. Bench birth: branch docs/history-quadrants → this spec + memory
    stub → draft PR.
 2. Run [decide](../../skills/decide.md)
-   ([D-034](../DECISIONS.md#d-034--2026-07--history-quadrants--productworkshop--definitionimplementation-memory-template-owns-format--status-vocabulary-extends-d-024s-narrative-layer-and-d-032s-states)):
+   ([D-034](../DECISIONS.md#d-034--history-quadrants)):
    entry + ripple in the same commit — the four quadrant dirs and
    50 git mv moves per the fixed mapping, the README legend
    payload, the repo-wide link ripple (flat history links →

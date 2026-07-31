@@ -60,7 +60,7 @@ ops chat. The diagrams are composed FROM the living docs at HEAD
 — LAWS, HOME, and the ritual and lane skills — never from
 memory; each was drawn after reading its owning prose in this
 sitting. THE ONE STRUCTURAL CALL, recorded in
-[D-058](../../../DECISIONS.md#d-058--2026-07--atlas--the-system-spine-the-workshop-depicted-as-six-diagrams-on-one-page-the-posture-is-the-boards--it-renders-originates-nothing-dated-stamp-least-authoritative-the-prose-governs-every-box-linked-to-its-owning-doctrine-so-a-currency-audit-verifies-it-mechanically-upholds-the-derivation-law-one-home-and-the-weave-rule)'s
+[D-058](../../../DECISIONS.md#d-058--atlas-the-system-spine)'s
 rejections: the box→doctrine links live as a prose "Boxes:" weave
 line under each diagram, NOT as in-diagram click directives —
 `check-links.mjs` strips code fences before scanning and GitHub's

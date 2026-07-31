@@ -61,7 +61,7 @@ That bench is why this one exists: its derivations confirmed that
 ever seated itself in flight, so the landing doctrine is about to
 get its first real test on the first-story shakedown flight —
 which makes now the moment to fix what the model was missing.
-[D-054](../../../DECISIONS.md#d-054--2026-07--the-landing-skill--how-a-flight-ends-becomes-a-first-class-ritual-one-skill-with-two-modes-routed-by-fleet-state-retire--pause-and-transfer-the-fence-is-a-commit-so-the-resume-point-is-the-branch-tip-by-construction-wake-lock-mediated-with-its-honesty-clause-the-board-is-the-single-transfer-material-pickup-gains-the-fleet-resume-ask-and-its-cap-arithmetic-sessions-are-cattle-branches-are-the-work-charter-rule-6-becomes-a-pointer-the-effort-doctrine-moves-to-opus-5--xhigh-upholds-the-wake-lock-the-park-protocol-and-one-home-supersedes-the-opus-48-reliance-pair)
+[D-054](../../../DECISIONS.md#d-054--the-landing-skill)
 assumed every landing begins with the founder saying "land"; the
 founder's model says only one of the three does.
 
@@ -176,7 +176,7 @@ IDEAS line closes only to the extent D-061 covers it.
 
 - [the spec](../../../specs/land-doctrine-v2.md) — the contract.
 - [land](../../../../skills/land.md) — the skill being recut.
-- [D-054](../../../DECISIONS.md#d-054--2026-07--the-landing-skill--how-a-flight-ends-becomes-a-first-class-ritual-one-skill-with-two-modes-routed-by-fleet-state-retire--pause-and-transfer-the-fence-is-a-commit-so-the-resume-point-is-the-branch-tip-by-construction-wake-lock-mediated-with-its-honesty-clause-the-board-is-the-single-transfer-material-pickup-gains-the-fleet-resume-ask-and-its-cap-arithmetic-sessions-are-cattle-branches-are-the-work-charter-rule-6-becomes-a-pointer-the-effort-doctrine-moves-to-opus-5--xhigh-upholds-the-wake-lock-the-park-protocol-and-one-home-supersedes-the-opus-48-reliance-pair) —
+- [D-054](../../../DECISIONS.md#d-054--the-landing-skill) —
   what it supersedes in part.
 - the Web ops chat, 2026-07-28 — the founder's three-scenario
   model, quoted into this memory as the bench proceeds.

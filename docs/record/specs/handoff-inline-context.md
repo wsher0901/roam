@@ -18,7 +18,7 @@ shipped: 2026-07-15
 [WEB-INSTRUCTIONS](../../WEB-INSTRUCTIONS.md) ·
 [decide](../../skills/decide.md) ·
 Decisions:
-[D-032 — fleet continuity, upheld](../DECISIONS.md#d-032--2026-07--fleet-continuity--handoff-parks-every-local-lane-liftoff-respawns-parked-benches-wake-lock-parks-every-outcome-extends-the-d-020d-023-lane-law-upholds-d-009)
+[D-032 — fleet continuity, upheld](../DECISIONS.md#d-032--fleet-continuity)
 
 ## Goal
 

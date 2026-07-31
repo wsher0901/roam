@@ -14,7 +14,7 @@ shipped: 2026-07-29 14:56
 
 **Links:**
 [IDEAS](../../IDEAS.md) (the file being rewritten) ·
-[D-050](../DECISIONS.md#d-050--2026-07--session-lifecycle--closed--dead-the-close-locks-wall-softens-to-injected-read-only-doctrine-interrupt-capture-is-standing-format-the-claude-residue-sweep-is-pickup-hygiene-ideas-is-an-inbox-not-an-archive-amends-the-d-046-era-close-wall-design-upholds-the-park-protocol-and-no-solo-approval)
+[D-050](../DECISIONS.md#d-050--session-lifecycle-closed-is-not-dead)
 (the delete-at-harvest law this amends) · source: the founder's
 approved contract, Web ops chat 2026-07-29.
 
@@ -24,7 +24,7 @@ approved contract, Web ops chat 2026-07-29.
 being scannable: entries ran to twenty lines, carried probe
 narratives and findings that belong in the record, bundled several
 ideas into one bullet so nothing could close cleanly, and — under
-[D-050](../DECISIONS.md#d-050--2026-07--session-lifecycle--closed--dead-the-close-locks-wall-softens-to-injected-read-only-doctrine-interrupt-capture-is-standing-format-the-claude-residue-sweep-is-pickup-hygiene-ideas-is-an-inbox-not-an-archive-amends-the-d-046-era-close-wall-design-upholds-the-park-protocol-and-no-solo-approval)'s
+[D-050](../DECISIONS.md#d-050--session-lifecycle-closed-is-not-dead)'s
 compaction law — DELETED what closed, so the file could never
 answer "what did we decide about X?".
 
@@ -115,7 +115,7 @@ here, so the shape survives the next sitting.
    rather than left for a fourth.
 2. **A fifth verdict changed at the critic round.** "Keep the
    self-read launcher as a script" was carried forward as OPEN and
-   is DECLINED: [D-051](../DECISIONS.md#d-051--2026-07--self-seat-birth--liftoff-fires---cloud-blind-and-the-cockpit-seats-itself-by-its-env-derived-self-url-the-console-attach-launcher-is-retired-amends-d-047s-rung-1-mechanics-as-corrected-by-193-upholds-d-049-and-board-governs)
+   is DECLINED: [D-051](../DECISIONS.md#d-051--self-seat-birth)
    retires the launcher, and names keeping-it-as-a-fallback among
    its rejected options. The verification pass had checked the
    entry against the record and still missed it, which is recorded

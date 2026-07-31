@@ -32,7 +32,7 @@ shipped: 2026-07-21 14:56
 > everything below is RECORD of the decision and its evidence.
 > (Extended 2026-07-24: the attach-and-read replacement shape was
 > itself RETIRED by
-> [D-051](../DECISIONS.md#d-051--2026-07--self-seat-birth--liftoff-fires---cloud-blind-and-the-cockpit-seats-itself-by-its-env-derived-self-url-the-console-attach-launcher-is-retired-amends-d-047s-rung-1-mechanics-as-corrected-by-193-upholds-d-049-and-board-governs)
+> [D-051](../DECISIONS.md#d-051--self-seat-birth)
 > — the fire is now BLIND and the cockpit seats itself via its
 > D-049 env-derived self-URL; liftoff §6 stays the live home.)
 
@@ -48,7 +48,7 @@ amends) · evidence base: cockpit maiden flights 1–2
 ## Goal
 
 One decide (D-047, amending
-[D-046](../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+[D-046](../DECISIONS.md#d-046--flight-cockpit-the-control-tower-online)
 clause 3) and its wiring, one theme: the cockpit's birth vehicle
 becomes `claude --cloud` — list-native on every device — and the
 routine fire (fire:cockpit / fire.mjs) drops to the fallback rung,
@@ -62,7 +62,7 @@ verbatim in [the memory](../history/workshop/mechanism/cloud-born-cockpit.md).
 
 Context for rigor: this vehicle's ancestor (`--remote`)
 bundle-seeded sandboxes and destroyed batch-1 T3+T5 at the
-[D-020](../DECISIONS.md#d-020--2026-07--parallel-lanes-v2-native-lanes-replace-hand-built-orchestration)
+[D-020](../DECISIONS.md#d-020--parallel-lanes-v2)
 turn; the gates prove the reform by evidence, not docs.
 
 - **0a Flight + track check** — the board shows no cockpit in

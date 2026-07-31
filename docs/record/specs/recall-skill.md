@@ -15,9 +15,9 @@ shipped: 2026-07-14
 [HOME](../../HOME.md) ·
 [decide](../../skills/decide.md) ·
 Decisions:
-[D-039 — this task's decision](../DECISIONS.md#d-039--2026-07--recall--questions-answered-from-files-never-from-memory-the-d-036-routing-tables-read-mirror-model-invoked-at-discretion)
+[D-039 — this task's decision](../DECISIONS.md#d-039--recall-answers-from-files)
 ·
-[D-036 — the routing table this mirrors](../DECISIONS.md#d-036--2026-07--information-routing--one-home-per-class-append-vs-upsert-home-carries-the-table-sessions-anchor-stabilized)
+[D-036 — the routing table this mirrors](../DECISIONS.md#d-036--information-routing-one-home-per-class)
 
 ## Goal
 
@@ -32,7 +32,7 @@ read-only: it edits nothing, ever.
 - Any write path — recall never edits, commits, repaints, or merges.
 - Any board or ritual change.
 - New routing: recall MIRRORS the
-  [D-036](../DECISIONS.md#d-036--2026-07--information-routing--one-home-per-class-append-vs-upsert-home-carries-the-table-sessions-anchor-stabilized)
+  [D-036](../DECISIONS.md#d-036--information-routing-one-home-per-class)
   routing table for reads; it adds no homes.
 
 ## Plan

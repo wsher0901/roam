@@ -16,7 +16,7 @@ shipped: 2026-07-29 09:19
 [WEB-INSTRUCTIONS](../../WEB-INSTRUCTIONS.md) (the master) ·
 [HOME §Response doctrine](../../HOME.md#response-doctrine) (the
 doctrine's one home) ·
-[D-052](../DECISIONS.md#d-052--2026-07--response-doctrine--one-standard-for-every-surface-speaking-to-the-founder-answer-first-explicit-steps-purpose-shaped-explanation-live-derived-state-glyph-verdicts-the-command-card-the-fleet-table-report-the-ritual-status-templates-web-instructions-v5-ships-retires-the-v4-paste-block-loop-master-upholds-d-046s-cc-direct-doctrine-and-the-derivation-law)
+[D-052](../DECISIONS.md#d-052--response-doctrine)
 (what this amends) · source: the founder's approved v6 text, Web
 ops chat 2026-07-28.
 
@@ -61,7 +61,7 @@ full-copy and changelog laws.
    as the v6 text states them, keeping the section's framing —
    one home, "Rituals and charters REFERENCE this section; none
    copies it" — and adding the new D-number beside
-   [D-052](../DECISIONS.md#d-052--2026-07--response-doctrine--one-standard-for-every-surface-speaking-to-the-founder-answer-first-explicit-steps-purpose-shaped-explanation-live-derived-state-glyph-verdicts-the-command-card-the-fleet-table-report-the-ritual-status-templates-web-instructions-v5-ships-retires-the-v4-paste-block-loop-master-upholds-d-046s-cc-direct-doctrine-and-the-derivation-law)
+   [D-052](../DECISIONS.md#d-052--response-doctrine)
    in Sources.
 4. Run [decide](../../skills/decide.md) — the next D-number,
    anchors born resolving.
@@ -149,5 +149,5 @@ this weld falsifies (the response-doctrine row's ending, the
 WEB-INSTRUCTIONS row, and §Founder input owed item 8, which this
 master change re-opens). Ship carries no chronicle step yet —
 deferred by
-[D-059](../DECISIONS.md#d-059--2026-07--the-chronicle-layer--living-stories-above-the-frozen-record-one-story-per-item-the-ending-rule--settled-in-any-format-means-the-story-is-written-a-later-fix-is-incorporated-and-the-ending-rewritten-at-that-weld-retirement-is-a-settlement-docschronicle-one-file-per-story-indexmd-shelving-four-shelves-immutability-beneath--record-untouched-stories-link-down-as-footnotes-down-links-only--a-story-never-cites-another-storys-prose-supersedes-the-07-23-three-chapter-shape-the-ship-synthesis-at-weld-step-deferred-to-the-first-story-weld)
+[D-059](../DECISIONS.md#d-059--the-chronicle-layer)
 to the first story weld — so the wait may be the right answer.

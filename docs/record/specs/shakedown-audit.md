@@ -22,7 +22,7 @@ shipped: 2026-07-20 13:17
 ·
 [parallel-lanes §Cloud spawn](../../skills/parallel-lanes.md#cloud-spawn--route-ladder)
 ·
-[D-043](../DECISIONS.md#d-043--2026-07--cloud-ignition--away-command-redesign--route-ladder-v2-ready-flip-then-label-is-the-recipe-of-record-api-ignition-and-the-cloud-clerk-staged-the-claude-app-the-single-away-surface-amends-d-041-upholds-the-lane-law-and-the-wake-lock)
+[D-043](../DECISIONS.md#d-043--cloud-ignition-and-away-command-redesign)
 · precedent:
 [maiden-flight-report](../history/workshop/mechanism/maiden-flight-report.md)
 

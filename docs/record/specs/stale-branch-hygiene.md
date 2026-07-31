@@ -15,7 +15,7 @@ shipped: 2026-07-13
 [pickup](../../skills/pickup.md) ·
 [DASHBOARD](../../DASHBOARD.md) ·
 Decisions:
-[D-031](../DECISIONS.md#d-031--2026-07--stale-branch-hygiene--gone-guard-on-the-session-end-net-welded-elsewhere-locals-auto-removed-at-session-start)
+[D-031](../DECISIONS.md#d-031--stale-branch-hygiene)
 
 ## Goal
 The safety net can never resurrect a welded branch;

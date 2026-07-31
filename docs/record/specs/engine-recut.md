@@ -13,8 +13,8 @@ shipped: 2026-07-13
 **Links:** [ENGINE](../../ENGINE.md) ·
 [PROJECT-POLICY](../../SETUP.md) · [LAWS](../../LAWS.md) ·
 [HOME](../../HOME.md) · [ROADMAP](../../ROADMAP.md) · Decisions:
-[D-021](../DECISIONS.md#d-021--2026-07--plan-synthesis-principles-re-home-to-decision-policy) ·
-[D-028](../DECISIONS.md#d-028--2026-07--consolidation-recut--decision-policy--engine-brain-skeleton-form-project-policy-house-style-open-register-grows-69-upholds-d-021-extends-the-d-021-consolidation)
+[D-021](../DECISIONS.md#d-021--plan-synthesis-principles-re-home) ·
+[D-028](../DECISIONS.md#d-028--consolidation-recut-decision-policy-becomes-engine)
 
 ## Goal
 The engine consolidation becomes an operational skeleton — pipeline

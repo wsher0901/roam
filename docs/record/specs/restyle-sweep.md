@@ -20,7 +20,7 @@ shipped: 2026-07-14
 [DESIGN-KICKOFF](../../DESIGN-KICKOFF.md) ·
 [parallel-lanes](../../skills/parallel-lanes.md) ·
 Decisions:
-[D-029](../DECISIONS.md#d-029--2026-07--corpus-writing-laws--readability-first-links-below-prose)
+[D-029](../DECISIONS.md#d-029--corpus-writing-laws)
 
 ## Goal
 

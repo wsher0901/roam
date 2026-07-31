@@ -15,7 +15,7 @@ shipped: 2026-07-13
 [HOME](../../HOME.md) ·
 [handoff](../../skills/handoff.md) ·
 Decisions:
-[D-036](../DECISIONS.md#d-036--2026-07--information-routing--one-home-per-class-append-vs-upsert-home-carries-the-table-sessions-anchor-stabilized)
+[D-036](../DECISIONS.md#d-036--information-routing-one-home-per-class)
 
 ## Goal
 [HOME](../../HOME.md) answers "where does information go" in one table
@@ -34,7 +34,7 @@ becomes repaint-stable.
 1. Bench birth: branch docs/home-knowledge → this spec + memory
    stub → draft PR.
 2. Run [decide](../../skills/decide.md)
-   ([D-036](../DECISIONS.md#d-036--2026-07--information-routing--one-home-per-class-append-vs-upsert-home-carries-the-table-sessions-anchor-stabilized)):
+   ([D-036](../DECISIONS.md#d-036--information-routing-one-home-per-class)):
    entry + ripple in the same commit — [handoff](../../skills/handoff.md)
    §4's Sessions bullet gains the plain-header rule; [HOME](../../HOME.md)
    gains §Where information goes (after §Reading the board) and

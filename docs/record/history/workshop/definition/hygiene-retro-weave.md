@@ -15,7 +15,7 @@ pre-existing docs corpus carries the same markdown-link density as
 new files (266 links added machine-executed, per the new
 retroactivity law in [CLAUDE.md](../../../../../CLAUDE.md)), and
 [HOME.md](../../../../HOME.md) sheds the dead cloud-lane machinery superseded
-by [D-020](../../../DECISIONS.md#d-020--2026-07--parallel-lanes-v2-native-lanes-replace-hand-built-orchestration)
+by [D-020](../../../DECISIONS.md#d-020--parallel-lanes-v2)
 → [PR #57](https://github.com/wsher0901/roam/pull/57)
 
 ## Story

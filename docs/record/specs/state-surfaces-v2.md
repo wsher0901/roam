@@ -19,7 +19,7 @@ shipped: 2026-07-13
 [history/README](../history/README.md) ·
 [HOME](../../HOME.md) ·
 Decisions:
-[D-035](../DECISIONS.md#d-035--2026-07--state-surfaces-v2--sessions-table-with-a-type-column-sentence-first-needs-you-verbatim-chat-titles-welds-stamp-time-and-write-the-ledger-handoff-4-is-the-single-board-spec-amends-d-024s-surface-extends-d-029)
+[D-035](../DECISIONS.md#d-035--state-surfaces-v2)
 
 ## Goal
 [handoff](../../skills/handoff.md) §4 becomes the single board spec
@@ -42,7 +42,7 @@ by this PR's own ship-tail, first act under the new law.
 1. Bench birth: branch docs/state-surfaces-v2 → this spec + memory
    stub → draft PR.
 2. Run [decide](../../skills/decide.md)
-   ([D-035](../DECISIONS.md#d-035--2026-07--state-surfaces-v2--sessions-table-with-a-type-column-sentence-first-needs-you-verbatim-chat-titles-welds-stamp-time-and-write-the-ledger-handoff-4-is-the-single-board-spec-amends-d-024s-surface-extends-d-029)):
+   ([D-035](../DECISIONS.md#d-035--state-surfaces-v2)):
    entry + ripple in the same commit — payload A overwrites
    [handoff](../../skills/handoff.md), payload B overwrites
    [pickup](../../skills/pickup.md), five surgical edits

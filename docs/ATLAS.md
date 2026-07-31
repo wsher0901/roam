@@ -90,7 +90,7 @@ The chooser decides how a sitting ends; land and pickup close the
 circle — sessions are cattle, branches are the work. A flight can
 be ended by the cockpit itself, by a desk taking over, or by the
 founder's word
-([D-061](record/DECISIONS.md#d-061--2026-07--the-landing-doctrine-recut-to-three-scenarios--the-cockpits-standing-job-advise-on-fleet-status-and-on-each-gate-reaching-decision-execute-the-founders-rulings-from-the-phone-auto-land-when-the-fleet-empties-and-nothing-awaits-the-founder-desk-takeover-when-pickup-finds-a-live-cockpit-holding-decisions-and-the-founders-freeze-unchanged-the-tombstone-wake-rule-makes-a-superseded-cockpit-retire-by-the-full-ritual-amends-d-054s-two-mode-routing-upholds-no-solo-approval-and-the-derivation-law)).
+([D-061](record/DECISIONS.md#d-061--the-landing-doctrine-recut-to-three-scenarios)).
 
 ```mermaid
 flowchart TD

@@ -19,7 +19,7 @@ This plan is living, never a promise: it changes whenever reality
 disagrees, and every change lands as a decision — a D-number via
 [decide](skills/decide.md) — nothing here is fixed. Detail fades on
 purpose (the rolling wave,
-[D-022](record/DECISIONS.md#d-022--2026-07--version-ladder--lifespan-split-amends-d-004)):
+[D-022](record/DECISIONS.md#d-022--version-ladder-and-lifespan-split)):
 the active version is fully staged and tasked, the next is a rough
 bucket, the one after only a name, and the rest waits in the
 [Pool](#pool--unversioned-sockets).
@@ -59,7 +59,7 @@ schema is written.
 - [ ] V1.S1.T3 [P] Vet sources: Sky & sea — sun/moon math, tides (NOAA
       for US; global gaps labeled), aurora/nature timing; same
       outputs -> `docs/data/SOURCES-sky-sea.md` (lane-disjoint per
-      [D-020](record/DECISIONS.md#d-020--2026-07--parallel-lanes-v2-native-lanes-replace-hand-built-orchestration);
+      [D-020](record/DECISIONS.md#d-020--parallel-lanes-v2);
       consolidated at T7)
 - [ ] V1.S1.T4 [P] Vet sources: Feasibility — places + opening hours,
       routing/distances, seasonal closures, cost-estimate basis; same
@@ -80,7 +80,7 @@ schema is written.
       grade -> rendered as unverified"
       Also covers: [FACTS Appendix C](data/FACTS.md#appendix-c--telemetry-vocabulary-what-the-app-records) tables (events, claim
       ledger, eval runs, actuals, source health) and the bitemporal
-      append-only fact-cache law ([D-014](record/DECISIONS.md#d-014--2026-06--telemetry-posture-capture-now-use-later), [D-015](record/DECISIONS.md#d-015--2026-06--data-asset-law-bitemporal-append-only-license-segmented)).
+      append-only fact-cache law ([D-014](record/DECISIONS.md#d-014--telemetry-posture), [D-015](record/DECISIONS.md#d-015--data-asset-law)).
 
 ### V1.S2 — Skeleton & design foundations (parallel lane with S1)
 Completion criteria: a styled shell is deployed on Vercel with CI green and the
@@ -104,7 +104,7 @@ database connected.
 
 ### V1.S3 — Engine core + two families deep
 Binding requirements: [ENGINE — Aggregate · Synthesize · Gate](ENGINE.md#5-aggregate--one-score)
-(canonical since [D-021](record/DECISIONS.md#d-021--2026-07--plan-synthesis-principles-re-home-to-decision-policy)).
+(canonical since [D-021](record/DECISIONS.md#d-021--plan-synthesis-principles-re-home)).
 Completion criteria: a CLI harness returns scored, sourced, explained verdicts
 for any destination + dates using Weather and Sky & sea.
 - [ ] V1.S3.T1 [seq] Check contract + orchestrator — CheckModule
@@ -126,7 +126,7 @@ for any destination + dates using Weather and Sky & sea.
       runs with zero live calls
 - [ ] V1.S3.T7 [P after T2] Actuals harvester — scheduled job that
       records observed values once a fact's valid_for passes; pairs
-      with the claim ledger for calibration ([D-015](record/DECISIONS.md#d-015--2026-06--data-asset-law-bitemporal-append-only-license-segmented); spec:
+      with the claim ledger for calibration ([D-015](record/DECISIONS.md#d-015--data-asset-law); spec:
       [FACTS Appendix C2](data/FACTS.md#c2--quality--ground-truth-p5))
 
 ### V1.S4 — Suggest
@@ -142,7 +142,7 @@ trip options in the app.
 
 ### V1.S5 — Plan
 Binding requirements: [ENGINE — Aggregate · Synthesize · Gate](ENGINE.md#5-aggregate--one-score)
-(canonical since [D-021](record/DECISIONS.md#d-021--2026-07--plan-synthesis-principles-re-home-to-decision-policy)).
+(canonical since [D-021](record/DECISIONS.md#d-021--plan-synthesis-principles-re-home)).
 Completion criteria: selecting an option yields a persisted day-by-day plan
 rendered on timeline + map.
 - [ ] V1.S5.T1 [seq] Plan builder — sequence activities by scores,

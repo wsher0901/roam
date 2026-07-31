@@ -17,9 +17,9 @@ shipped: 2026-07-23 22:38
 [liftoff](../../skills/liftoff.md) ·
 [cockpit-resilience](cockpit-resilience.md) ·
 [flight-hardening](flight-hardening.md) ·
-[D-047](../DECISIONS.md#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law)
+[D-047](../DECISIONS.md#d-047--cloud-born-cockpit)
 ·
-[D-048](../DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)
+[D-048](../DECISIONS.md#d-048--cockpit-resilience)
 
 ## Goal
 
@@ -88,11 +88,11 @@ amendment; the memory narrates it.
    three-revision history: egress-blocked
    ([#193](https://github.com/wsher0901/roam/pull/193)'s reading)
    → "by design, MCP sole path"
-   ([D-048](../DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)'s
+   ([D-048](../DECISIONS.md#d-048--cockpit-resilience)'s
    premise, sourced from a community report) → installable +
    proxy-authenticated (the official docs, proven by this probe).
    Corrects the API-dependency map and amends
-   [D-048](../DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)'s
+   [D-048](../DECISIONS.md#d-048--cockpit-resilience)'s
    ladder. Records what stays true: the raw token is a
    placeholder; only gh-through-proxy works.
 2. **SETUP — the API-dependency map rewritten**: merge · label ·

@@ -24,7 +24,7 @@ gate became the full CI mirror (lint · format:check · check:links ·
 tests · build); [decide](../../../../skills/decide.md) now runs check:links
 before an entry's first push, so a D-number heading and every link to
 it are born resolving. Recorded as
-[D-038](../../../DECISIONS.md#d-038--2026-07--ci-is-the-arbiter--actions-green-required-at-every-gate-local-gate-mirrors-all-six-ci-steps-d-anchors-born-resolving-upholds-d-027).
+[D-038](../../../DECISIONS.md#d-038--ci-is-the-arbiter).
 
 ## Pending issues
 
@@ -73,7 +73,7 @@ first-push stumble; see the run-log pattern in this task's story).
 ## Where to look
 
 Spec: [ci-trust](../../../specs/ci-trust.md) · decision:
-[D-038](../../../DECISIONS.md#d-038--2026-07--ci-is-the-arbiter--actions-green-required-at-every-gate-local-gate-mirrors-all-six-ci-steps-d-anchors-born-resolving-upholds-d-027)
+[D-038](../../../DECISIONS.md#d-038--ci-is-the-arbiter)
 · PR [#117](https://github.com/wsher0901/roam/pull/117) · targets:
 [ship](../../../../skills/ship.md) ·
 [parallel-lanes](../../../../skills/parallel-lanes.md) ·
