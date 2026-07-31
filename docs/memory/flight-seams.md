@@ -1,7 +1,7 @@
 ---
 type: memory
 id: flight-seams
-updated: 2026-07-31 15:57 · ship · work PC
+updated: 2026-07-31 16:06 · ship · work PC
 ---
 
 # flight-seams — one case table, and the flight path repaired
@@ -10,10 +10,12 @@ updated: 2026-07-31 15:57 · ship · work PC
 
 complete, awaiting merge — 2026-07-31, work PC.
 [D-070](../record/DECISIONS.md#d-070--baton-renderings-single-homed)
-is minted, the seven BATON renderings live in one case table at
+is minted, every BATON rendering lives in one case table at
 [handoff §4](../skills/handoff.md#4--repaint-dashboard-the-board-spec--single-source),
 the three writers cite their cases, and both flight-path
-contradictions are gone. Full CI mirror green.
+contradictions are gone. Full CI mirror green. The critic returned
+eight findings — one of them a THIRD contradiction this bench had
+not been sent to find — and all eight are repaired (below).
 
 ## What this task is
 
@@ -73,7 +75,7 @@ only reason neither has cost anything yet.
 Correcting the two wordings in place would have left the
 four-copy structure that produced them, and the next wording
 change re-opens the same bug. THE CASE TABLE makes drift
-impossible by construction: seven rows, exact wording, each
+impossible by construction: one row per case, exact wording, each
 naming its writer, and every writer cites its row instead of
 restating it. There is now one place to change a rendering.
 
@@ -131,6 +133,50 @@ are the case table's own rows and one line in
 what [D-054](../record/DECISIONS.md#d-054--the-landing-skill)
 decided at the time and is correct as written. NO HIT LANDED
 INSIDE A MASTER FENCE — all three were checked directly.
+
+## The critic round
+
+Eight findings. The important one is a bug the mandate did not
+know about:
+
+- **THE DESK-TAKEOVER BRANCH HAD NO WRITER FOR THE MODE P BOARD
+  MATERIAL.** A fleet fenced by a SUPERSEDED cockpit never gets a
+  fleet-at-ground table or a grounded marker — that cockpit
+  writes NO board, by
+  [land Scenario 2](../skills/land.md#scenario-2--desk-takeover-the-desk-fires-it)'s
+  carve-out — so the re-keyed trigger could not fire for it and
+  the lanes would sit findable but unoffered. THE SAME SILENT
+  STALL THIS BENCH SET OUT TO REMOVE, surviving in the one branch
+  the audit had not walked.
+  [pickup §6](../skills/pickup.md#6--fleet-resume-on-the-founders-answer)
+  step 3 now names THE DESK as that writer, at the first repaint
+  that finds the fences pushed. Disclosed as a deviation: it
+  assigns a write that had no owner, which is a hair beyond "only
+  what a ritual writes".
+- **One wording block still lived outside the table** — pickup
+  §6's fenced SUPERSEDED line, agreeing with row 7 today and free
+  to drift tomorrow. It was the exact thing D-070 forbids,
+  surviving inside the PR that mints D-070. Now a citation.
+- **MODE R's baton rule sat in step 2 while step 1 does the paint
+  AND ships it** — the instruction arrived after its own paint had
+  merged. Moved into step 1, and step 1's third phrasing of the
+  state ("no live cockpit remains") is gone.
+- **The literal count.** D-070, the spec and this memory all said
+  "seven cases" for a table with eight rows — a derived value
+  written as a literal, which the derivation law forbids for
+  exactly this reason. All three now say "one row per case".
+- **The charter cannot cite the table back** — it is a fenced
+  master and rule 1 is the self-seat case's writer. The table now
+  states the deferral and why the two stay in step; reported
+  rather than silently left.
+- **The cause-line transformation was unstated** — AUTO-LAND
+  writes its own `Last flight:` line, the other cases carry the
+  cause inline, and pickup's plain claim must restate it from
+  either. Now said in one sentence.
+- **ship §8 carried a second copy of the section map.** Replaced
+  with "every section EXCEPT two" plus the pointer at the map's
+  home — the same duplication class D-070 exists to close.
+- **The spec's Done-means were unticked.** Ticked.
 
 ## Where to look
 

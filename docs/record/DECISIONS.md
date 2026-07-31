@@ -3552,7 +3552,7 @@ In full: 2026-07 — Baton renderings single-homed — every board BATON renderi
 
 **Decision:** every BATON rendering moves into ONE CASE TABLE at
 [handoff §4](../skills/handoff.md#4--repaint-dashboard-the-board-spec--single-source)'s
-BATON bullet — seven cases, exact wording, each naming its
+BATON bullet — one row per case, exact wording, each naming its
 writer. [liftoff](../skills/liftoff.md),
 [land](../skills/land.md) and [pickup](../skills/pickup.md) CITE
 their cases and keep one line of local context; no "wording is
@@ -3620,9 +3620,11 @@ fire-time case and states that a blind fire has no url; §2's cap
 points at SETUP) · [land](../skills/land.md) (MODE R step 2 cites
 its two cases; MODE P §(d) and §(e) cite the ONE grounded case —
 the conflicting rendering dies) · [pickup](../skills/pickup.md)
-(§3's block cites its three cases; §5's fleet-resume trigger
-re-keys and its cap points at SETUP; §6 gains the ordering
-sentence; the header declares baton-holder-only) ·
+(§3's block cites its cases; §5's fleet-resume trigger re-keys
+and its cap points at SETUP; §6 gains the ordering sentence AND
+names THE DESK as the writer of the MODE P board material in the
+takeover branch, where the superseded cockpit writes no board and
+that write had no owner; the header declares baton-holder-only) ·
 [ship](../skills/ship.md) (the header declares
 baton-holder-only; §8 names the carried-forward sections) ·
 [recall](../skills/recall.md) (§1's Why/provenance and Past-work

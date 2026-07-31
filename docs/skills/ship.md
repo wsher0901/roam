@@ -136,9 +136,9 @@ squash-merge. Confirm merged, then pull main.
 
 ## 8 · Tail
 Run handoff in QUIET mode (board repaint per
-[handoff §4](handoff.md) — RECENT now shows this task). The tail
-paints: the painted line, the glance, Needs you, In flight,
-Working on, Recent, the bars, and Next. THE BATON and WEB +
+[handoff §4](handoff.md#4--repaint-dashboard-the-board-spec--single-source),
+which owns the section list — RECENT now shows this task). The
+tail repaints every section EXCEPT two: THE BATON and WEB +
 DESIGN are carried forward unchanged unless this weld changed
 them.
 

@@ -203,6 +203,12 @@ Sections, in this order:
   | Desk takeover, write 1 (at adopt) | `COCKPIT SUPERSEDED — desk takeover <date · time · seat> · <its session url>` | [pickup §6](pickup.md#6--fleet-resume-on-the-founders-answer) |
   | Desk takeover, write 2 (final repaint) | `CONTROL TOWER — <seat>, since <t> (pickup — DESK TAKEOVER)`, plus `Last flight: LANDED <t> BY THIS PICKUP — was awaiting your word on N items (now in Needs you) · N lanes fenced → fleet-resume` (the awaiting clause only when true) | [pickup](pickup.md) §4's repaint |
 
+  THE LAST-FLIGHT LINE IS ALWAYS ITS OWN LINE. AUTO-LAND writes
+  one directly; the other landing cases carry their cause INLINE
+  in the seat line, and pickup's plain claim restates that cause
+  as `Last flight: LANDED <t> via <CAUSE>` — the cause word
+  survives the move, the phrasing around it need not.
+
   TWO CASES DESERVE THEIR REASON. THE FIRE-TIME LINE CARRIES NO
   URL because the fire is BLIND
   ([D-051](../record/DECISIONS.md#d-051--self-seat-birth)):
@@ -211,7 +217,12 @@ Sections, in this order:
   also matters beyond this board — the charter's rule 1 sends an
   arriving cockpit to THE BATON to learn whether a live seat
   already exists, and `self-seat pending` is what tells it to
-  seat itself.
+  seat itself. THE CHARTER CANNOT CITE THIS TABLE BACK — it is a
+  fenced master, and a fence is not edited by a bench
+  ([D-065](../record/DECISIONS.md#d-065--the-box-master-diet)); its
+  rule 1 tells the cockpit to READ this section, which is what
+  keeps the two in step, and any future change to the self-seat
+  wording is a charter version bump, not a table edit alone.
   THE DESK TAKEOVER'S TWO WRITES ARE ORDERED: write 1 lands the
   moment the desk adopts the decision queue, so the old cockpit
   can recognise its own supersession by reading the board; write

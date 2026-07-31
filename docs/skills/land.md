@@ -200,9 +200,13 @@ they live here now, in one home.
 
 1. **Final board repaint** per
    [handoff §4](handoff.md#4--repaint-dashboard-the-board-spec--single-source)
-   — RECENT rolled to the newest history entries, and this
-   cockpit's In-flight row CLEARED and THE BATON repainted (no
-   live cockpit remains).
+   — RECENT rolled to the newest history entries, this cockpit's
+   In-flight row CLEARED, and THE BATON repainted from THIS
+   MODE'S CASE in
+   [handoff §4's case table](handoff.md#4--repaint-dashboard-the-board-spec--single-source)
+   — AUTO-LAND or MANUAL RETIRE ON AN EMPTY FLEET. WHICH CASE
+   APPLIES IS DERIVED, NEVER CHOSEN: the fire that started this
+   landing decides it.
    Shipped as a micro-PR exactly as
    [handoff §5](handoff.md#5--ship-the-note) ships its note:
    chore branch from freshly pulled main, board-only commit,
@@ -214,11 +218,7 @@ they live here now, in one home.
    on sight — a same-SHA resurrection carries no unique work by
    construction. A branch carrying UNIQUE commits is never
    deleted: surface it on the board's Needs-you instead.
-   THE BOARD'S BATON LINE: paint this mode's case from
-   [handoff §4's case table](handoff.md#4--repaint-dashboard-the-board-spec--single-source),
-   its single home — AUTO-LAND or MANUAL RETIRE ON AN EMPTY
-   FLEET. WHICH CASE APPLIES IS DERIVED, NEVER CHOSEN: the fire
-   that started this landing decides it.
+
 
 3. **THE LANDING REPORT** — render EXACTLY this shape
    ([HOME §Response doctrine](../HOME.md#response-doctrine),

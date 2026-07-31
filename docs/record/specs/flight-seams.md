@@ -5,7 +5,7 @@ title: Baton renderings single-homed (D-070)
 status: open
 stage: workshop
 branch: docs/flight-seams
-pr: —
+pr: 257
 opened: 2026-07-31
 shipped: —
 ---
@@ -65,7 +65,8 @@ carries forward, and recall's routing table has no chronicle door.
 2. [decide](../../skills/decide.md) for D-070, short heading per
    [D-068](../DECISIONS.md#d-068--the-short-anchor-law).
 3. [handoff §4](../../skills/handoff.md): the BATON bullet becomes
-   THE CASE TABLE — seven cases, exact wording, writer named.
+   THE CASE TABLE — one row per case, exact wording, writer
+   named.
 4. Repoint the three writers; delete every local "wording is law"
    duplicate. The fire-time case becomes "COCKPIT — fired
    &lt;t&gt; (liftoff) · self-seat pending"; MODE P's two
@@ -88,39 +89,60 @@ carries forward, and recall's routing table has no chronicle door.
 
 ## Done means
 
-- [ ] D-070 exists in the D-068 format, with Decision · Why ·
+- [x] D-070 exists in the D-068 format, with Decision · Why ·
       Alternatives rejected · Affects.
-- [ ] handoff §4's BATON bullet carries all seven cases with
-      exact wording and a named writer each.
-- [ ] liftoff, land and pickup CITE their cases; no "wording is
+- [x] handoff §4's BATON bullet carries EVERY case with exact
+      wording and a named writer each — the liftoff fire, the
+      cockpit's self-seat, both land MODE R cases, MODE P, the
+      plain claim, and the takeover's two ordered writes.
+- [x] liftoff, land and pickup CITE their cases; no "wording is
       law" wording block survives outside the table.
-- [ ] THE URL CONTRADICTION IS GONE: liftoff's baton line no
+- [x] THE URL CONTRADICTION IS GONE: liftoff's baton line no
       longer contains a url, and one line states that a blind fire
       cannot know one.
-- [ ] MODE P PAINTS ONE LINE, cited identically by land §(d) and
+- [x] MODE P PAINTS ONE LINE, cited identically by land §(d) and
       §(e).
-- [ ] Pickup's fleet-resume trigger keys on the fleet-at-ground
+- [x] Pickup's fleet-resume trigger keys on the fleet-at-ground
       table's presence + the grounded marker — verified to match
       what land MODE P actually writes.
-- [ ] No hard-coded daily cap survives in pickup or liftoff; the
+- [x] No hard-coded daily cap survives in pickup or liftoff; the
       count:runs mechanics and the ask-on-script-failure rule are
       unchanged.
-- [ ] pickup and ship both open with the baton-holder-only line,
+- [x] pickup and ship both open with the baton-holder-only line,
       and each stub mirrors its procedure.
-- [ ] The desk takeover's two board writes carry their ordering
+- [x] The desk takeover's two board writes carry their ordering
       sentence.
-- [ ] ship §8 names the carried-forward sections; recall §1 has
+- [x] ship §8 names the carried-forward sections; recall §1 has
       the chronicle door.
-- [ ] THE SWEEP PROVEN: `check:links` green AND a destination-grep
+- [x] THE SWEEP PROVEN: `check:links` green AND a destination-grep
       re-run returning zero over living files. No hit inside a
       master fence (or it is reported, not edited).
-- [ ] `check:links` · `check:ledger` · `check:memory` · lint ·
+- [x] `check:links` · `check:ledger` · `check:memory` · lint ·
       format · test · build green; Actions green on the pushed
       head; ship §6 critic run.
 
 ## Deviations
 
-<filled by ship>
+1. **The desk-takeover branch needed a WRITER, not just a
+   trigger.** The critic found that a fleet fenced by a superseded
+   cockpit never gets a fleet-at-ground table or a grounded
+   marker at all — [land Scenario 2](../../skills/land.md)'s
+   carve-out has that cockpit write NO board — so the re-keyed
+   trigger could not fire for it, and the lanes would sit
+   findable but unoffered. [pickup §6](../../skills/pickup.md)
+   step 3 now names THE DESK as the writer of that board material,
+   at the first repaint that finds the fences pushed. This is
+   slightly beyond "only what a ritual writes, and where the
+   wording is defined" — it assigns a write that had no owner —
+   but leaving it would have shipped the exact stall this bench
+   set out to remove.
+2. **The cockpit charter cannot cite the table back.** Its rule 1
+   is the writer of the self-seat case, and it is a fenced master
+   this bench may not edit. The table now states the deferral and
+   why the two stay in step: rule 1 sends the cockpit to READ
+   THE BATON, and a future change to that wording is a charter
+   version bump, not a table edit alone. Reported rather than
+   silently deferred.
 
 ## Open questions
 

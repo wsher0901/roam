@@ -88,7 +88,7 @@ Sources:
 
 ### The baton line pickup paints
 
-Pickup owns THREE cases in
+Pickup's cases live in
 [handoff §4's case table](handoff.md#4--repaint-dashboard-the-board-spec--single-source),
 which is their single home: THE PLAIN CLAIM (with its
 last-flight line, and the none-yet floor line when nothing has
@@ -223,15 +223,11 @@ seats cannot both hold the baton, so the desk takes it:
    this desk, each one carrying the cockpit's own advice — read
    from its PR comments and the board's flight context, never
    re-invented. The founder answers them here.
-2. **WRITE COCKPIT SUPERSEDED** to the board — THE BATON section,
-   per the board spec
-   ([handoff §4](handoff.md#4--repaint-dashboard-the-board-spec--single-source)),
-   in this exact shape so the old cockpit can recognize it:
-
-   ```text
-   COCKPIT SUPERSEDED — desk takeover <date · time · seat> · <its session url>
-   ```
-
+2. **WRITE COCKPIT SUPERSEDED** to the board's BATON section —
+   the DESK TAKEOVER WRITE-1 case in
+   [handoff §4's case table](handoff.md#4--repaint-dashboard-the-board-spec--single-source),
+   which is its single home; paint the wording from there, exactly,
+   so the old cockpit can recognize it.
    This is the board write the supersession rests on: the old
    cockpit learns it is superseded by READING this row, and from
    this moment the desk owns the board.
@@ -250,9 +246,19 @@ seats cannot both hold the baton, so the desk takes it:
    out a branch a live worker is still pushing to. A live lane is
    CLAIMED, never adopted
    ([parallel-lanes §Liveness](parallel-lanes.md#liveness--live-vs-reclaimable)).
-   The superseded cockpit's own landing is what fences them, and
-   they become an ordinary grounded fleet for the NEXT resume ask
-   — this sitting's or a later one's.
+   The superseded cockpit's own landing is what fences them.
+   BUT IT WRITES NO BOARD — a superseded seat never does
+   ([land Scenario 2](land.md#scenario-2--desk-takeover-the-desk-fires-it)'s
+   carve-out) — so THE DESK IS THE WRITER OF THE MODE P BOARD
+   MATERIAL IN THIS BRANCH. At the first repaint that finds the
+   fences pushed — this sitting's
+   [§4](#4--repaint-if-stale), or a later pickup's, whichever
+   arrives after the retirement — paint the fleet-at-ground table
+   under IN FLIGHT and add the `grounded for local pickup` marker
+   to THE BATON line, both lifted from the fences. Without that
+   write, §5's two-fact trigger never fires and the fenced lanes
+   sit findable but unoffered — exactly the stall this table
+   exists to prevent.
 
 The other side of this is the cockpit's TOMBSTONE WAKE-RULE — on
 any wake, read the board first; if superseded, self-retire by the
