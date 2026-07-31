@@ -6,7 +6,7 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-07-31 · 13:20 by ship's tail · from work PC
+Painted 2026-07-31 · 15:34 by ship's tail · from work PC
 Control tower at the work PC · needs-you 0 · git outranks this
 board. How to read it →
 [HOME §Reading the board](HOME.md#reading-the-board)
@@ -29,9 +29,9 @@ Nothing in flight — the floor is clear.
 
 ## Working on
 
-- The workshop diet — seven benches deep: what each file is FOR,
-  and what that excludes. The record's own citations were the
-  last surface; the diet has no named next file.
+- The workshop diet — eight benches deep, and it has reached the
+  file every session reads. LAWS is a register now; the diet has
+  no named next file.
 
 The standing order
 ([D-060](record/DECISIONS.md#d-060--the-three-phase-standing-order)),
@@ -49,6 +49,10 @@ one phase per line:
 
 **Completed**
 
+- The law register — LAWS recut to NAME → rule → pointer; three
+  laws written down (verification · sweep · box-master); the
+  touchpoints go to three.
+  [#255](https://github.com/wsher0901/roam/pull/255)
 - The short-anchor law — decision anchors go from 1,038
   characters to 57; all 67 prior entries retrofitted, 848
   citations swept.
@@ -56,19 +60,16 @@ one phase per line:
 - The report skeleton + the board diet — one shape for every
   founder-facing report; the board diets to the same principle.
   [#250](https://github.com/wsher0901/roam/pull/250)
-- The box-master diet — the cockpit charter cut to rules and
-  pointers; the connector ladder moved to HOME.
-  [#246](https://github.com/wsher0901/roam/pull/246)
 **Issues**
 
+- ✓ Two laws this workshop kept re-learning are now written down
+  — verify before drop, and the proof of a sweep is a re-run
+  returning zero.
+  [#255](https://github.com/wsher0901/roam/pull/255)
 - ✓ A destination-grep is only as good as its pattern — an
   underscore and a bare `](#d-…)` form hid 132 citations from the
   anchor sweep until re-running it returned zero; resolved at
   [#253](https://github.com/wsher0901/roam/pull/253).
-- ✓ check:links proves an anchor EXISTS, never that it is the
-  RIGHT one — a Needs-you arrow pointed at a real but wrong SETUP
-  heading through every green gate; caught at the external review
-  of [#250](https://github.com/wsher0901/roam/pull/250).
 - ⏳ `npm run count:runs` fails under the work PC's Git Bash while
   the script run directly succeeds. → its line in
   [IDEAS](IDEAS.md)
