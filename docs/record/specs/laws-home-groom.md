@@ -2,12 +2,12 @@
 type: spec
 id: laws-home-groom
 title: The law register and the manual groom (D-069)
-status: open
+status: shipped
 stage: workshop
 branch: docs/laws-home-groom
 pr: 255
 opened: 2026-07-31
-shipped: —
+shipped: 2026-07-31
 ---
 
 # laws-home-groom — the register recut and the manual groom

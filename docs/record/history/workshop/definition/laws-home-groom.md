@@ -1,7 +1,9 @@
 ---
-type: memory
+type: history
 id: laws-home-groom
-updated: 2026-07-31 13:57 · ship · work PC
+updated: 2026-07-31 15:31 · weld · work PC
+shipped: 2026-07-31 15:31
+pr: 255
 ---
 
 # laws-home-groom — the register recut and the manual groom
@@ -9,7 +11,7 @@ updated: 2026-07-31 13:57 · ship · work PC
 ## Status
 
 complete, awaiting merge — 2026-07-31, work PC.
-[D-069](../record/DECISIONS.md#d-069--the-law-register-and-the-manual-groom)
+[D-069](../../../DECISIONS.md#d-069--the-law-register-and-the-manual-groom)
 is minted, LAWS' two long sections render as a register, three
 laws are written down for the first time, the touchpoints read
 three, "dispatch" is gone, and HOME's two day sections are one.
@@ -18,18 +20,18 @@ notable; all nine are repaired (below).
 
 ## What this task is
 
-[LAWS](../LAWS.md) loads into every session through the root
+[LAWS](../../../../LAWS.md) loads into every session through the root
 `CLAUDE.md` import, so its length is a tax paid on every sitting
 and its shape is what a session actually obeys. It had drifted
 from a REGISTER into prose. The recut restores the shape — NAME →
 one to three plain sentences → a pointer — and writes down three
 laws the workshop had learned but never recorded. Contract:
-[the spec](../record/specs/laws-home-groom.md).
+[the spec](../../../specs/laws-home-groom.md).
 
 ## Pending issues
 
 - Tower-authored, so
-  [no-solo-approval](../LAWS.md#workflow-non-negotiable) requires
+  [no-solo-approval](../../../../LAWS.md#workflow-non-negotiable) requires
   an external Web review before the founder's word at THE GATE. DO
   NOT MERGE.
 
@@ -50,10 +52,10 @@ then stored only in a story, which is exactly how a workshop
 repeats itself:
 
 - **THE VERIFICATION LAW** was born twice — verify-before-drop at
-  [the SETUP recut](../record/history/workshop/definition/setup-recut.md),
+  [the SETUP recut](setup-recut.md),
   which rescued the clerk charter and the org-UUID probe from
   deletion, and verify-before-classify at
-  [the IDEAS contract](../record/history/workshop/definition/ideas-contract.md),
+  [the IDEAS contract](ideas-contract.md),
   where checking the record against each entry's own note changed
   FIVE verdicts.
 - **THE SWEEP LAW** was paid for four times. The sharpest two:
@@ -64,9 +66,9 @@ repeats itself:
   hid 40 citations. Hence the clause that matters most: THE PROOF
   OF A SWEEP IS A RE-RUN RETURNING ZERO.
 - **THE BOX-MASTER LINE** existed as
-  [D-064](../record/DECISIONS.md#d-064--the-box-master-class-and-setup-entry-contract)
+  [D-064](../../../DECISIONS.md#d-064--the-box-master-class-and-setup-entry-contract)
   and
-  [D-065](../record/DECISIONS.md#d-065--the-box-master-diet)
+  [D-065](../../../DECISIONS.md#d-065--the-box-master-diet)
   but never as a law, so the rule a session most needs to know —
   the box is a COPY and the re-save rides Needs-you, because a
   master change that never reaches its box fails SILENTLY — was
@@ -75,7 +77,7 @@ repeats itself:
 ### The third touchpoint is a correction, not an addition
 
 The review word has been law since
-[D-046](../record/DECISIONS.md#d-046--flight-cockpit-the-control-tower-online),
+[D-046](../../../DECISIONS.md#d-046--flight-cockpit-the-control-tower-online),
 and the founder has said it at every gate for weeks — while the
 file naming the founder's duties still said there were two. A
 touchpoint list that omits a real duty is worse than no list.
@@ -88,14 +90,14 @@ home BEFORE the sentence went, one by one:
 
 | what the recut wanted to drop | verified home | verdict |
 |---|---|---|
-| the seven lane duties, enumerated | [parallel-lanes](../skills/parallel-lanes.md) carries all seven, verbatim in substance | COMPRESSED to prose naming every one; the two absolute prohibitions (never writes main · self-terminate after pushing) stay explicit |
-| ready-flip + weld mechanics | [ship](../skills/ship.md) §5 and §7 | COMPRESSED to one sentence |
-| the verification command list | [ship §1](../skills/ship.md#1--preflight) — WHICH DID NOT CARRY IT | ADDED TO SHIP FIRST, then the fence died. The content had a home before the copy went, never after |
-| the micro-PR definition | [HOME §Micro-PRs](../HOME.md#micro-prs) | kept in headline form + pointer |
+| the seven lane duties, enumerated | [parallel-lanes](../../../../skills/parallel-lanes.md) carries all seven, verbatim in substance | COMPRESSED to prose naming every one; the two absolute prohibitions (never writes main · self-terminate after pushing) stay explicit |
+| ready-flip + weld mechanics | [ship](../../../../skills/ship.md) §5 and §7 | COMPRESSED to one sentence |
+| the verification command list | [ship §1](../../../../skills/ship.md#1--preflight) — WHICH DID NOT CARRY IT | ADDED TO SHIP FIRST, then the fence died. The content had a home before the copy went, never after |
+| the micro-PR definition | [HOME §Micro-PRs](../../../../HOME.md#micro-prs) | kept in headline form + pointer |
 | the payload-diff rule | NOWHERE ELSE IN THE REPO | KEPT AS A SENTENCE — the law forbids dropping it |
 | branch prefixes (feat/fix/docs/chore) | NOWHERE ELSE | KEPT |
-| the teammate rule | [HOME §Agent teams](../HOME.md#agent-teams) (b), which itself names LAWS as the home | kept, folded into the self-authored clause |
-| supersession, canary constants | [D-062](../record/DECISIONS.md#d-062--the-wake-rule-generalized) · [parallel-lanes §Canary](../skills/parallel-lanes.md#canary-handshake-both-sides) | kept as sentences + pointers |
+| the teammate rule | [HOME §Agent teams](../../../../HOME.md#agent-teams) (b), which itself names LAWS as the home | kept, folded into the self-authored clause |
+| supersession, canary constants | [D-062](../../../DECISIONS.md#d-062--the-wake-rule-generalized) · [parallel-lanes §Canary](../../../../skills/parallel-lanes.md#canary-handshake-both-sides) | kept as sentences + pointers |
 
 Two of those checks changed the plan. The verification list had NO
 home — ship named the steps but never the commands — so ship
@@ -116,10 +118,10 @@ destination-grep found six citing files; three are frozen and took
 POINTER-ONLY repairs, proven mechanically (every changed line in
 those three contains one of the three anchor names, zero
 exceptions):
-[home-knowledge](../record/history/workshop/definition/home-knowledge.md)
+[home-knowledge](home-knowledge.md)
 ·
-[handoff-inline-context history](../record/history/workshop/mechanism/handoff-inline-context.md)
-· [its spec](../record/specs/handoff-inline-context.md). NO HIT
+[handoff-inline-context history](../../../history/workshop/mechanism/handoff-inline-context.md)
+· [its spec](../../../specs/handoff-inline-context.md). NO HIT
 LANDED INSIDE A MASTER FENCE — all three fences were checked
 directly and are clean.
 
@@ -158,8 +160,8 @@ Nine findings, five notable. All repaired:
 - **"DATED" WAS DROPPED TO A HOME THAT DOES NOT CARRY IT.** The
   old law said "append one DATED line"; I compressed it to "per
   its entry contract" — and neither the
-  [IDEAS](../IDEAS.md) header nor
-  [D-066](../record/DECISIONS.md#d-066--the-ideas-entry-contract)
+  [IDEAS](../../../../IDEAS.md) header nor
+  [D-066](../../../DECISIONS.md#d-066--the-ideas-entry-contract)
   requires a date, though every live entry has one. This is
   exactly the failure the verification law names, committed by
   the PR that mints it. The word is restored.
@@ -170,11 +172,11 @@ Nine findings, five notable. All repaired:
 - **The memory asserted a zero the re-run does not produce** (see
   above).
 - **The vocabulary sweep stopped at LAWS and HOME** while
-  [D-069](../record/DECISIONS.md#d-069--the-law-register-and-the-manual-groom)
+  [D-069](../../../DECISIONS.md#d-069--the-law-register-and-the-manual-groom)
   said "throughout" — and two live files still CITED "the
   dispatch law", a law that no longer exists under that name.
-  Swept through [parallel-lanes](../skills/parallel-lanes.md),
-  [liftoff](../skills/liftoff.md), [pickup](../skills/pickup.md),
+  Swept through [parallel-lanes](../../../../skills/parallel-lanes.md),
+  [liftoff](../../../../skills/liftoff.md), [pickup](../../../../skills/pickup.md),
   and — beyond the mandate's file list, disclosed as a deviation
   — the `.claude/` stub whose description MIRRORS
   parallel-lanes' first line (a stub may not drift from its
@@ -197,7 +199,7 @@ Nine findings, five notable. All repaired:
 
 ## Where to look
 
-- [the spec](../record/specs/laws-home-groom.md) — the contract.
-- [LAWS](../LAWS.md) — the register.
-- [D-069](../record/DECISIONS.md#d-069--the-law-register-and-the-manual-groom).
+- [the spec](../../../specs/laws-home-groom.md) — the contract.
+- [LAWS](../../../../LAWS.md) — the register.
+- [D-069](../../../DECISIONS.md#d-069--the-law-register-and-the-manual-groom).
 - the Web ops chat, 2026-07-31 — where the founder approved it.
