@@ -35,8 +35,10 @@ First the HARD DISQUALIFIERS — any one keeps it on the ground:
 
 Then SORT what survives: fully-specified first, needs-input after
 (once flying they idle-wait for the founder's reply per the idle-wait
-law). The daily routine budget truncates from the bottom (Max plan:
-15 routine runs/day (confirmed; flat across Max tiers);
+law). The daily routine budget truncates from the bottom (the
+DAILY ROUTINE CAP — the number lives in
+[SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts),
+read at triage time, never carried here;
 GitHub-triggered spawns count against it, and so does every API
 fire — `fire:cockpit`, the ONLY one since the clerk's retirement
 2026-07-22 (one per outing, the accepted trade —
@@ -122,14 +124,13 @@ the entry contract at [IDEAS](../IDEAS.md)' head, and a harvest
 COMPRESSES closed entries into its CLOSED section rather than
 deleting them).
 
-THE BOARD'S BATON LINE, painted by liftoff — wording is law:
-
-```text
-COCKPIT — live since <t> (liftoff) · <url>
-```
-
-with ` · awaiting your word on N items` appended when that is
-true.
+THE BOARD'S BATON LINE: paint the FIRE-TIME case from
+[handoff §4's case table](handoff.md#4--repaint-dashboard-the-board-spec--single-source),
+which is its single home. LIFTOFF NEVER KNOWS THE URL — the fire
+is blind
+([D-051](../record/DECISIONS.md#d-051--self-seat-birth)), so the
+line ends `self-seat pending` and the cockpit's own repaint
+rewrites it to the live form.
 
 Then THE COCKPIT BIRTH
 ([D-047](../record/DECISIONS.md#d-047--cloud-born-cockpit),

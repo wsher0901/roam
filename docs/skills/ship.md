@@ -5,11 +5,13 @@ status: living
 ---
 # Ship — closing a task
 
-Run yourself the moment a task's work is complete — never declare
-done in conversation without it. Control tower only. For a finished
-lane:
-pre-review its ready PR against FOUNDATION, the ROADMAP line, and the
-reliability law BEFORE surfacing it — then this same procedure.
+Baton-holder only (control tower, or the cockpit in flight);
+lanes never run this — a lane speaks through its PR and the
+baton-holder ships it. Run yourself the moment a task's work is
+complete; never declare done in conversation without it. For a
+FINISHED LANE: pre-review its ready PR against FOUNDATION, the
+ROADMAP line, and the reliability law BEFORE surfacing it — then
+this same procedure.
 
 ## 1 · Preflight
 Be on the task's branch; know its ID (or workshop slug). Sync with
@@ -134,9 +136,11 @@ squash-merge. Confirm merged, then pull main.
 
 ## 8 · Tail
 Run handoff in QUIET mode (board repaint per
-[handoff §4](handoff.md) — RECENT now shows this task). The tail
-paints: the painted line, the glance, Needs you, In flight,
-Working on, Recent, the bars, and Next.
+[handoff §4](handoff.md#4--repaint-dashboard-the-board-spec--single-source),
+which owns the section list — RECENT now shows this task). The
+tail repaints every section EXCEPT two: THE BATON and WEB +
+DESIGN are carried forward unchanged unless this weld changed
+them.
 
 THE SHIPPED REPORT — render EXACTLY this shape
 ([HOME §Response doctrine](../HOME.md#response-doctrine), rule 8).
