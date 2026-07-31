@@ -42,7 +42,7 @@ across the flight path.
 ### Both bugs were invisible to every gate, and both bite only in the air
 
 **LIFTOFF PAINTED A URL IT CANNOT HAVE.** Its BATON line read
-`COCKPIT — live since <t> (liftoff) · <url>` — while its own IN
+`COCKPIT — live since [time] (liftoff) · [url]` — while its own IN
 FLIGHT row, three paragraphs earlier in the same section, read
 `self-seat pending`. The two were written at different times and
 never read together:
@@ -56,8 +56,8 @@ seat itself. A liftoff writing `live since … · <url>` would have
 told a fresh cockpit that someone else was already flying.
 
 **MODE P PAINTED TWO DIFFERENT LINES FOR ONE LANDING.** land §(d)
-wrote `no live cockpit — grounded for local pickup <date>`; §(e),
-twenty lines later, wrote `No live seat — LANDED <t> via
+wrote `no live cockpit — grounded for local pickup [date]`; §(e),
+twenty lines later, wrote `No live seat — LANDED [time] via
 MANUAL-LAND · awaiting next pickup`. Pickup's fleet-resume
 trigger matched the FIRST string. So a board painted by §(e)
 would have offered NO FLEET RESUME at the next sit-down — the
