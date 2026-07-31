@@ -56,4 +56,4 @@ decision:
 table:
 [HOME §Where information goes](../../../../HOME.md#where-information-goes)
 · the story:
-[HOME §One day in the workshop](../../../../HOME.md#one-day-in-the-workshop).
+[HOME §One day in the workshop](../../../../HOME.md#a-day-in-the-workshop).

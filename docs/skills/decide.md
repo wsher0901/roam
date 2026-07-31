@@ -50,8 +50,11 @@ manual entry) · [docs/record/specs/](../record/specs/README.md)
 changed rule) · [IDEAS](../IDEAS.md) (spawned ideas — each landing
 per the entry contract at that file's head, one idea per line,
 glyph first; an idea this decide CLOSES is compressed to one line
-and moved to CLOSED, never deleted). The Affects
-line and the actual edits must match exactly.
+and moved to CLOSED, never deleted). NEW VOCABULARY MINTED → a
+[HOME §Terms](../HOME.md#terms) row in the SAME PR: a word the
+workshop starts using without a plain-language home is a word the
+founder meets cold. The Affects line and the actual edits must
+match exactly.
 
 ## 3 · Weave
 Every D-number, roadmap ID, fact ID, and doc mention in the entry is

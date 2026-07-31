@@ -13,7 +13,7 @@ shipped: 2026-07-15
 
 **Links:**
 [handoff](../../skills/handoff.md) ·
-[LAWS §The two touchpoints](../../LAWS.md#the-two-touchpoints) ·
+[LAWS §The two touchpoints](../../LAWS.md#the-three-touchpoints) ·
 [HOME](../../HOME.md) ·
 [WEB-INSTRUCTIONS](../../WEB-INSTRUCTIONS.md) ·
 [decide](../../skills/decide.md) ·
@@ -47,7 +47,7 @@ in the leaving loop — is retired. Zero founder input after invocation.
    - [handoff §2](../../skills/handoff.md) rewritten wholesale to the
      inline-paste behavior (kept numbered 2 so steps 3–4 resolve; the
      QUIET exclusion line unchanged);
-   - [LAWS §The two touchpoints](../../LAWS.md#the-two-touchpoints) — the
+   - [LAWS §The two touchpoints](../../LAWS.md#the-three-touchpoints) — the
      "when asked" clause reworded to "carried inline … no question
      asked";
    - [HOME](../../HOME.md) — three spots: the manual entry (retitled +

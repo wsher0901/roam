@@ -14,11 +14,23 @@ reliability law BEFORE surfacing it — then this same procedure.
 ## 1 · Preflight
 Be on the task's branch; know its ID (or workshop slug). Sync with
 main FIRST: merge current origin/main into the branch (merge, never
-rebase — the history is pushed); resolve anything. Then the
-full CI mirror — lint · format:check · check:links · check:ledger ·
-check:memory · tests · build; fix failures first — what you test is
-exactly what
-main will contain after the weld.
+rebase — the history is pushed); resolve anything. Then THE
+VERIFICATION LOOP — the full CI mirror, and THIS IS ITS ONE HOME,
+the literal commands in their exact order
+([LAWS §Workflow](../LAWS.md#workflow-non-negotiable) points
+here rather than repeating them):
+
+```sh
+npm run check:links
+npm run check:ledger
+npm run check:memory
+npm run lint && npm run format:check
+npm test && npm run build
+```
+
+Fix failures first — what you test is exactly what main will
+contain after the weld. Local green never suffices: "done" also
+requires the PUSHED head's Actions run green.
 
 ## 2 · Spec gate
 If a spec exists: verify every Done-means box honestly against the

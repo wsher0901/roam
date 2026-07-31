@@ -1182,7 +1182,7 @@ carries); auto-detecting the paste's shape (brittle — verbatim text
 before the trigger is unambiguous).
 **Affects:**
 [handoff §2](../skills/handoff.md#2--the-inline-webdesign-paste-full-only)
-· [LAWS §The two touchpoints](../LAWS.md#the-two-touchpoints) ·
+· [LAWS §The two touchpoints](../LAWS.md#the-three-touchpoints) ·
 [HOME](../HOME.md) (manual entry · retention row · handoff walkthrough) ·
 [WEB-INSTRUCTIONS](../WEB-INSTRUCTIONS.md) ·
 [D-032](#d-032--fleet-continuity)
@@ -1467,7 +1467,7 @@ bookkeep in-session; the paste-block relay retires as a
 REQUIREMENT and remains a tool when the founder chooses Web as a
 thinking room; Web's one mandatory job is the external review of
 self-authored diffs (clause 2). Manual:
-[HOME §The daily loop](../HOME.md#the-daily-loop); the loop text in
+[HOME §The daily loop](../HOME.md#a-day-in-the-workshop); the loop text in
 [SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts).
 (5) CLERK RETIREMENT, staged — executed at the cockpit maiden
 drill's closeout, when the maiden greens: archive the clerk
@@ -3453,3 +3453,88 @@ link repair inside a frozen file is maintenance, not a content
 edit · [IDEAS](../IDEAS.md) (the LAWS-ANCHOR line closes 🟢) ·
 [the spec](specs/anchor-diet.md) + its memory (in flight on the
 bench; moves to history at the weld) · this entry.
+
+## D-069 — The law register and the manual groom
+
+In full: 2026-07 — LAWS recut to the register shape — every law renders NAME → the rule in one to three plain sentences → one pointer to its mechanics and its D-number; three laws minted: THE VERIFICATION LAW (nothing unrecorded may be dropped and no status may be asserted without the record confirming it — verify before drop, verify before classify), THE SWEEP LAW (any pointer or citation sweep greps the DESTINATION, never predicted phrasings; the proof of a sweep is a re-run returning zero), THE BOX-MASTER LINE (the class exists in law: a box master is its own top-level file carrying rules, invariants, and pointers; the box is a copy; edits ride PRs; the re-save rides Needs-you — D-064 / D-065); the founder's touchpoints corrected to three (the review word added); dispatch→delegation vocabulary swept in LAWS and HOME; the verification command block becomes a pointer to its one home; HOME groomed — the two day sections merged, six Terms rows added, the board section reduced to reading keys plus the handoff §4 pointer, decide's ripple gains the new-vocabulary line.
+
+**Decision:** [LAWS](../LAWS.md) is a REGISTER, not prose. Every
+law in §Workflow and §Parallel lanes & cloud now renders as
+**NAME** → the rule in one to three plain sentences → a pointer to
+its mechanics and its D-number. Three laws the workshop already
+practised are written down — THE VERIFICATION LAW, THE SWEEP LAW,
+and THE BOX-MASTER LINE. §The two touchpoints becomes §THE THREE
+TOUCHPOINTS, adding the review word. "Dispatch" gives way to
+"delegation" throughout, and the dispatch law unifies with THE
+CHOOSER LAW. The verification command fence leaves LAWS for a
+pointer at [ship §1](../skills/ship.md#1--preflight), which gains
+the literal list. [HOME](../HOME.md) grooms alongside: its two
+overlapping day sections merge into §A day in the workshop,
+§Terms gains six rows, and §Reading the board stops restating the
+board spec.
+
+**Why:** LAWS loads into EVERY session through the root
+`CLAUDE.md` import, so its length is a tax paid on every sitting
+and its shape is what a session actually obeys. It had drifted:
+several laws ran as paragraphs re-explaining mechanics that live
+in a skill, and the verification loop was quoted in full where its
+one home is ship — a second copy the routing law forbids, and one
+that had already begun to drift from what ship performs.
+
+The three minted laws are not new behaviour; they are behaviour
+the workshop had learned the hard way and stored only in stories.
+VERIFY-BEFORE-DROP and VERIFY-BEFORE-CLASSIFY were born at the
+[SETUP recut](history/workshop/definition/setup-recut.md) and the
+[IDEAS contract](history/workshop/definition/ideas-contract.md);
+THE SWEEP LAW was paid for four separate times — most sharply at
+[#250](https://github.com/wsher0901/roam/pull/250), where a
+re-sweep reported CLEAN because it was still the wrong grep, and
+at [#253](https://github.com/wsher0901/roam/pull/253), where an
+underscore hid 40 citations. A lesson that lives only in a story
+is a lesson the next bench repeats.
+
+THE THIRD TOUCHPOINT is a correction, not an addition: the review
+word has been law since
+[D-046](DECISIONS.md#d-046--flight-cockpit-the-control-tower-online),
+and the founder has been saying it at every gate for weeks, while
+the file that names the founder's duties still said there were
+two. A touchpoint list that omits a real duty is worse than no
+list.
+
+**Alternatives rejected:**
+
+- **Compress by deleting the nuances** (the payload-diff rule, the
+  teammate rule, the canary constants) — it would have halved
+  §Workflow. The verification law, applied to its own birth,
+  forbids it: the payload-diff rule has NO other home in the repo,
+  so it stays as a sentence.
+- **Move the verification loop to HOME instead of ship** — HOME is
+  a manual; a session about to say "done" is reading ship. One
+  home, and it is the one already being read at that moment.
+- **Leave "dispatch"** — it is the shorter word, and it now names
+  a phone feature. Two meanings for one word in a file read by
+  every session is a bug, not a style question.
+- **A separate bench for HOME** — the touchpoint count, the
+  vocabulary, and the board section are the SAME edits on both
+  sides; splitting them would leave main inconsistent between two
+  merges.
+
+**Affects:** [LAWS](../LAWS.md) (§Workflow and §Parallel lanes &
+cloud recut to the register; §The three touchpoints replaces §The
+two touchpoints — the heading anchor changes; the three new laws
+in §Knowledge & tracking; the verification fence becomes a
+pointer; the vocabulary sweep) · [HOME](../HOME.md) (§One day in
+the workshop + §The daily loop merge into §A day in the workshop —
+both anchors die; §Terms gains six rows — box master · the entry
+contract · the report skeleton · the urgency ladder · the outcome
+ledger · the short-anchor law; §Reading the board keeps the
+reading keys and points at handoff §4 for the map; the touchpoint
+restatements go to three; the vocabulary sweep) ·
+[ship](../skills/ship.md) (§1 gains the literal verification loop
+— the content's home, laid before the fence died) ·
+[decide](../skills/decide.md) (§2's ripple gains: new vocabulary
+minted → a HOME §Terms row in the same PR) · THE ANCHOR SWEEP —
+[ATLAS](../ATLAS.md) and this file, plus pointer-only repairs on
+three frozen files · [the spec](specs/laws-home-groom.md) + its
+memory (in flight on the bench; moves to history at the weld) ·
+this entry.

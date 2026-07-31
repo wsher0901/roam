@@ -74,7 +74,7 @@ Spec:
 [handoff-inline-context](../../../specs/handoff-inline-context.md) ·
 the ripple targets:
 [handoff §2](../../../../skills/handoff.md#2--the-inline-webdesign-paste-full-only),
-[LAWS §The two touchpoints](../../../../LAWS.md#the-two-touchpoints),
+[LAWS §The two touchpoints](../../../../LAWS.md#the-three-touchpoints),
 [HOME](../../../../HOME.md),
 [WEB-INSTRUCTIONS](../../../../WEB-INSTRUCTIONS.md) · decision:
 [D-040](../../../DECISIONS.md#d-040--handoff-input-inversion)
