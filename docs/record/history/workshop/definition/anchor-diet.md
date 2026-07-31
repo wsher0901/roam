@@ -1,7 +1,9 @@
 ---
-type: memory
+type: history
 id: anchor-diet
-updated: 2026-07-31 14:05 · ship · work PC
+updated: 2026-07-31 13:18 · weld · work PC
+shipped: 2026-07-31 13:18
+pr: 253
 ---
 
 # anchor-diet — short stable anchors for the decision ledger
@@ -9,11 +11,11 @@ updated: 2026-07-31 14:05 · ship · work PC
 ## Status
 
 complete, awaiting merge — 2026-07-31, work PC.
-[D-068](../record/DECISIONS.md#d-068--the-short-anchor-law) is
+[D-068](../../../DECISIONS.md#d-068--the-short-anchor-law) is
 minted in the new format as its own first instance, all 67 prior
 entries are retrofitted with word preservation proven per entry,
 848 citations are repointed across 152 files, and
-[decide](../skills/decide.md) writes the new format from here on.
+[decide](../../../../skills/decide.md) writes the new format from here on.
 Full CI mirror green; Actions green on the pushed head. The
 critic returned eight findings, three notable; all eight are
 repaired (below).
@@ -28,12 +30,12 @@ mint. D-001 through D-067 are retrofitted here — a
 content-preserving format change sanctioned by the retroactivity
 law: append-only protects the words, and every word survives one
 line lower. Contract:
-[the spec](../record/specs/anchor-diet.md).
+[the spec](../../../specs/anchor-diet.md).
 
 ## Pending issues
 
 - Tower-authored, so
-  [no-solo-approval](../LAWS.md#workflow-non-negotiable) requires
+  [no-solo-approval](../../../../LAWS.md#workflow-non-negotiable) requires
   an external Web review before the founder's word at THE GATE. DO
   NOT MERGE.
 
@@ -86,7 +88,7 @@ forever.
 **POINTER-ONLY, per frozen file.** 128 of the 152 changed files
 sit on the frozen shelves — history, specs, chronicle, retired,
 probes — where
-[D-057](../record/DECISIONS.md#d-057--the-record-shelf)'s enabling
+[D-057](../../../DECISIONS.md#d-057--the-record-shelf)'s enabling
 ruling licenses a mechanical link repair as MAINTENANCE, not a
 content edit. The proof is a diff walk: every added or removed
 line in every one of those 128 files must contain a DECISIONS
@@ -102,7 +104,7 @@ wrong twice, and only re-running the grep to ZERO found it:
 
 - **The slug character class was too narrow.** My first pattern
   allowed `[a-z0-9-]`, and
-  [D-048](../record/DECISIONS.md#d-048--cockpit-resilience)'s
+  [D-048](../../../DECISIONS.md#d-048--cockpit-resilience)'s
   anchor contains `workflow_dispatch` — an UNDERSCORE. The match
   truncated mid-anchor, so 40 citations across 19 files were
   silently skipped while the sweep reported success. Fixed to
@@ -121,9 +123,9 @@ the receipt.
 
 ### The masters, and why no box re-save results
 
-[WEB-INSTRUCTIONS](../WEB-INSTRUCTIONS.md),
-[COCKPIT-CHARTER](../COCKPIT-CHARTER.md) and
-[LANE-WORKER](../LANE-WORKER.md) all cite D-numbers — but only in
+[WEB-INSTRUCTIONS](../../../../WEB-INSTRUCTIONS.md),
+[COCKPIT-CHARTER](../../../../COCKPIT-CHARTER.md) and
+[LANE-WORKER](../../../../LANE-WORKER.md) all cite D-numbers — but only in
 their VERSION-HISTORY TABLES, which sit BELOW their fences and are
 ordinary prose. All three fences were verified byte-identical
 against `HEAD` after the sweep. NO BOX RE-SAVE OR RE-PASTE IS
@@ -131,33 +133,33 @@ OWED.
 
 ### Every file touched
 
-- **[DECISIONS](../record/DECISIONS.md)** — 68 entries reheaded,
+- **[DECISIONS](../../../DECISIONS.md)** — 68 entries reheaded,
   68 `In full:` lines inserted, 92 internal citations repointed,
   the file's format header rewritten to the new law.
-- **[decide](../skills/decide.md)** — §1's entry format, the
+- **[decide](../../../../skills/decide.md)** — §1's entry format, the
   freeze-at-mint rule, and the one line on why anchors are
   expensive.
-- **23 living files** — [LAWS](../LAWS.md) · [HOME](../HOME.md) ·
-  [ATLAS](../ATLAS.md) · [ENGINE](../ENGINE.md) ·
-  [ROADMAP](../ROADMAP.md) · [SETUP](../SETUP.md) ·
-  [IDEAS](../IDEAS.md) · [DASHBOARD](../DASHBOARD.md) · the three
+- **23 living files** — [LAWS](../../../../LAWS.md) · [HOME](../../../../HOME.md) ·
+  [ATLAS](../../../../ATLAS.md) · [ENGINE](../../../../ENGINE.md) ·
+  [ROADMAP](../../../../ROADMAP.md) · [SETUP](../../../../SETUP.md) ·
+  [IDEAS](../../../../IDEAS.md) · [DASHBOARD](../../../../DASHBOARD.md) · the three
   box masters' version tables ·
-  [FACTS](../data/FACTS.md) · [SCHEMA](../data/SCHEMA.md) ·
-  [SOURCES](../data/SOURCES.md) · and eight skills
-  ([go-remote](../skills/go-remote.md) ·
-  [handoff](../skills/handoff.md) · [land](../skills/land.md) ·
-  [liftoff](../skills/liftoff.md) ·
-  [parallel-lanes](../skills/parallel-lanes.md) ·
-  [pickup](../skills/pickup.md) · [recall](../skills/recall.md) ·
-  [ship](../skills/ship.md)).
+  [FACTS](../../../../data/FACTS.md) · [SCHEMA](../../../../data/SCHEMA.md) ·
+  [SOURCES](../../../../data/SOURCES.md) · and eight skills
+  ([go-remote](../../../../skills/go-remote.md) ·
+  [handoff](../../../../skills/handoff.md) · [land](../../../../skills/land.md) ·
+  [liftoff](../../../../skills/liftoff.md) ·
+  [parallel-lanes](../../../../skills/parallel-lanes.md) ·
+  [pickup](../../../../skills/pickup.md) · [recall](../../../../skills/recall.md) ·
+  [ship](../../../../skills/ship.md)).
 - **128 frozen files** — pointer-only, per the proof above: 69 on
-  [history/](../record/history/README.md), 56 in
-  [specs/](../record/specs/README.md),
-  [chronicle/INDEX](../chronicle/INDEX.md),
-  [the retired clerk charter](../record/retired/clerk-charter.md),
+  [history/](../../../history/README.md), 56 in
+  [specs/](../../../specs/README.md),
+  [chronicle/INDEX](../../../../chronicle/INDEX.md),
+  [the retired clerk charter](../../../retired/clerk-charter.md),
   and
-  [the cloud-birth-in-CI probe](../record/probes/cloud-birth-in-ci.md).
-- **[IDEAS](../IDEAS.md)** — the LAWS-ANCHOR line closes 🟢 and
+  [the cloud-birth-in-CI probe](../../../probes/cloud-birth-in-ci.md).
+- **[IDEAS](../../../../IDEAS.md)** — the LAWS-ANCHOR line closes 🟢 and
   moves to CLOSED as one line, per the entry contract.
 
 ## The critic round
@@ -167,12 +169,12 @@ Eight findings, three notable. All repaired:
 - **HOME's manual said the ledger's entries "are never
   rewritten"** — flatly contradicted by 68 re-headed entries. The
   row now states the real rule, which is
-  [D-057](../record/DECISIONS.md#d-057--the-record-shelf)'s:
+  [D-057](../../../DECISIONS.md#d-057--the-record-shelf)'s:
   append-only governs MEANING, not bytes. No entry's words are
   ever changed or removed; a mechanical format or link repair is
   maintenance.
 - **The weave rule now reached into frozen text.**
-  [decide](../skills/decide.md) §3 says every D-number in an entry
+  [decide](../../../../skills/decide.md) §3 says every D-number in an entry
   is a link — but the `In full:` line is a VERBATIM QUOTATION, and
   roughly forty of them carry plain "(amends D-009)" clauses. A
   later reader "repairing" one would be altering the record. §3
@@ -202,8 +204,8 @@ Eight findings, three notable. All repaired:
 
 ## Where to look
 
-- [the spec](../record/specs/anchor-diet.md) — the contract.
-- [D-068](../record/DECISIONS.md#d-068--the-short-anchor-law) —
+- [the spec](../../../specs/anchor-diet.md) — the contract.
+- [D-068](../../../DECISIONS.md#d-068--the-short-anchor-law) —
   the law, and the first entry written in the format it defines.
-- [decide](../skills/decide.md) — the writer, from here on.
+- [decide](../../../../skills/decide.md) — the writer, from here on.
 - the Web ops chat, 2026-07-30 — where the founder approved it.

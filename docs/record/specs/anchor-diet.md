@@ -2,12 +2,12 @@
 type: spec
 id: anchor-diet
 title: The short-anchor law (D-068)
-status: open
+status: shipped
 stage: workshop
 branch: docs/anchor-diet
 pr: 253
 opened: 2026-07-31
-shipped: —
+shipped: 2026-07-31
 ---
 
 # anchor-diet — short stable anchors for the decision ledger
