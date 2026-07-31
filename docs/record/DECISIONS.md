@@ -3545,3 +3545,89 @@ it names the GitHub feature) · THE ANCHOR SWEEP —
 three frozen files · [the spec](specs/laws-home-groom.md) + its
 memory (in flight on the bench; moves to history at the weld) ·
 this entry.
+
+## D-070 — Baton renderings single-homed
+
+In full: 2026-07 — Baton renderings single-homed — every board BATON rendering lives in ONE case table at handoff §4's BATON bullet, each case naming its writer; liftoff, land, and pickup cite their cases instead of re-mandating wording; the fire-time line is "COCKPIT — fired <t> (liftoff) · self-seat pending" (a blind fire has no url; the cockpit's self-seat repaint rewrites it to the live form), which also aligns the phrase with the BATON section the charter's rule 1 reads; MODE P paints ONE line — "No live seat — LANDED <t> via MANUAL-LAND · N lanes frozen → grounded for local pickup <date>" — and pickup's fleet-resume trigger keys on the fleet-at-ground table's presence plus that grounded marker, never on a competing string; cap values point at SETUP; pickup and ship run by the baton-holder; the takeover's two board writes get their ordering sentence; ship's tail names its carried-forward sections; recall gains the chronicle door.
+
+**Decision:** every BATON rendering moves into ONE CASE TABLE at
+[handoff §4](../skills/handoff.md#4--repaint-dashboard-the-board-spec--single-source)'s
+BATON bullet — seven cases, exact wording, each naming its
+writer. [liftoff](../skills/liftoff.md),
+[land](../skills/land.md) and [pickup](../skills/pickup.md) CITE
+their cases and keep one line of local context; no "wording is
+law" block survives outside the table. Two renderings are
+corrected in the move: the FIRE-TIME LINE becomes `COCKPIT —
+fired <t> (liftoff) · self-seat pending`, and MODE P paints ONE
+line ending `grounded for local pickup <date>`. Pickup's
+fleet-resume trigger re-keys on TWO FACTS TOGETHER — a
+fleet-at-ground table under IN FLIGHT plus that marker. Five
+smaller seams close alongside: the daily cap points at
+[SETUP](../SETUP.md#once-and-done--cloud-accounts) instead of
+being hard-coded twice, pickup and ship declare themselves
+baton-holder-only, the desk takeover's two board writes state
+their order, ship's tail names the sections it carries forward,
+and [recall](../skills/recall.md) gains the chronicle door.
+
+**Why:**
+[D-067](#d-067--the-report-skeleton-and-the-board-diet) said each
+writer paints its own case and the wording is law — and then left
+the wordings in four files. Prose agreement has no linter, so they
+drifted into two contradictions that a gate cannot see and only a
+FLIGHT can:
+
+- **Liftoff painted a url it cannot have.** Its BATON line said
+  `COCKPIT — live since <t> (liftoff) · <url>` while its own IN
+  FLIGHT row, three paragraphs earlier, said `self-seat pending`
+  — because [D-051](#d-051--self-seat-birth) made the fire BLIND.
+  The line would have been written from a value that does not
+  exist, on the very board an arriving cockpit reads to decide
+  whether to seat itself.
+- **MODE P painted two different lines for one landing.** §(d)
+  wrote `no live cockpit — grounded for local pickup <date>` and
+  §(e) wrote `No live seat — LANDED <t> via MANUAL-LAND ·
+  awaiting next pickup`. Pickup's resume trigger matched the
+  FIRST string, so a board painted by §(e) would have silently
+  offered no fleet resume — the fleet still fenced, still
+  findable, and never surfaced.
+
+A rendering quoted in four places is four places to drift. The
+table makes drift impossible by construction: there is one row to
+change, and every writer reads it.
+
+**Alternatives rejected:**
+
+- **Fix the two contradictions in place** — cheapest, and it
+  leaves the four-copy structure that produced them. The next
+  wording change re-opens the same bug.
+- **Move the renderings into the board file itself** —
+  [DASHBOARD](../DASHBOARD.md) is rendered output, repainted
+  wholesale by rituals; a spec cannot live in the artifact it
+  specifies.
+- **Keep pickup's trigger as a string match, just corrected** — a
+  string match on prose is what broke; keying on the
+  fleet-at-ground table's PRESENCE plus a short marker survives
+  any future rewording of the sentence around it.
+- **Leave the daily cap written out** — it is a value, and values
+  live in SETUP. It had already been written twice, and a number
+  duplicated is a number that goes stale in one of its homes.
+
+**Affects:**
+[handoff §4](../skills/handoff.md#4--repaint-dashboard-the-board-spec--single-source)
+(the BATON bullet becomes the case table — the single home) ·
+[liftoff](../skills/liftoff.md) (§6's baton block cites the
+fire-time case and states that a blind fire has no url; §2's cap
+points at SETUP) · [land](../skills/land.md) (MODE R step 2 cites
+its two cases; MODE P §(d) and §(e) cite the ONE grounded case —
+the conflicting rendering dies) · [pickup](../skills/pickup.md)
+(§3's block cites its three cases; §5's fleet-resume trigger
+re-keys and its cap points at SETUP; §6 gains the ordering
+sentence; the header declares baton-holder-only) ·
+[ship](../skills/ship.md) (the header declares
+baton-holder-only; §8 names the carried-forward sections) ·
+[recall](../skills/recall.md) (§1's Why/provenance and Past-work
+rows gain the chronicle door, and Why/provenance now names the
+short-heading grep + `In full:` per
+[D-068](#d-068--the-short-anchor-law)) ·
+[the spec](specs/flight-seams.md) + its memory (in flight on the
+bench; moves to history at the weld) · this entry.

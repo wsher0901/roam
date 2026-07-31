@@ -187,11 +187,37 @@ Sections, in this order:
   founder's word at any ritual, and the repaint drops it then.
 - **THE BATON** — who holds it, as STATE never doctrine, in the
   one cause vocabulary: AUTO-LAND · MANUAL-LAND · DESK TAKEOVER
-  (BY THIS PICKUP). EACH WRITER PAINTS ITS OWN CASE and the
-  wording is law:
-  [liftoff §6](liftoff.md#6--ledger-handoff--fire-the-cockpit) the
-  cockpit line · [land](land.md) its three no-live-seat renderings ·
-  [pickup](pickup.md) the plain claim and the takeover.
+  (BY THIS PICKUP). THIS TABLE IS THE SINGLE HOME OF EVERY
+  RENDERING — the wording is law, each writer paints its own case
+  and CITES this row rather than restating it
+  ([D-070](../record/DECISIONS.md#d-070--baton-renderings-single-homed)).
+
+  | Case | Exact wording | Writer |
+  |---|---|---|
+  | Liftoff fires the cockpit | `COCKPIT — fired <t> (liftoff) · self-seat pending` | [liftoff §6](liftoff.md#6--ledger-handoff--fire-the-cockpit) |
+  | The cockpit seats itself | `COCKPIT — live since <t> (liftoff) · <url>`, plus ` · awaiting your word on N items` when true | the cockpit's self-seat repaint ([COCKPIT-CHARTER](../COCKPIT-CHARTER.md) rule 1) |
+  | AUTO-LAND | `No live seat — awaiting next pickup`, plus `Last flight: LANDED <t> via AUTO-LAND — fleet empty, nothing owed you · clean` | [land](land.md) MODE R |
+  | Manual retire, empty fleet | `No live seat — LANDED <t> via MANUAL-LAND · awaiting next pickup` | [land](land.md) MODE R |
+  | MODE P, fleet grounded | `No live seat — LANDED <t> via MANUAL-LAND · N lanes frozen → grounded for local pickup <date>` | [land](land.md) MODE P |
+  | Pickup's plain claim | `CONTROL TOWER — <seat>, since <t> (pickup)`, plus a last-flight line preserving its CAUSE — or, when nothing has flown, `Last flight: none — the floor has been ground-side this sitting` | [pickup §3](pickup.md#3--gather-git-outranks-the-board) |
+  | Desk takeover, write 1 (at adopt) | `COCKPIT SUPERSEDED — desk takeover <date · time · seat> · <its session url>` | [pickup §6](pickup.md#6--fleet-resume-on-the-founders-answer) |
+  | Desk takeover, write 2 (final repaint) | `CONTROL TOWER — <seat>, since <t> (pickup — DESK TAKEOVER)`, plus `Last flight: LANDED <t> BY THIS PICKUP — was awaiting your word on N items (now in Needs you) · N lanes fenced → fleet-resume` (the awaiting clause only when true) | [pickup](pickup.md) §4's repaint |
+
+  TWO CASES DESERVE THEIR REASON. THE FIRE-TIME LINE CARRIES NO
+  URL because the fire is BLIND
+  ([D-051](../record/DECISIONS.md#d-051--self-seat-birth)):
+  liftoff cannot know the session's address, and the cockpit's own
+  self-seat repaint rewrites the row to the live form. The phrase
+  also matters beyond this board — the charter's rule 1 sends an
+  arriving cockpit to THE BATON to learn whether a live seat
+  already exists, and `self-seat pending` is what tells it to
+  seat itself.
+  THE DESK TAKEOVER'S TWO WRITES ARE ORDERED: write 1 lands the
+  moment the desk adopts the decision queue, so the old cockpit
+  can recognise its own supersession by reading the board; write
+  2 REPLACES it at the sitting's repaint, once the takeover is
+  complete. The wake-rule keys on the seat-stamp not being the
+  reader's own, so either write satisfies it.
 - **IN FLIGHT** — one row per live seat or lane: Who (the
   commander's bench · `<id>`, or `lane · <id>`) · For · State
   🟢/🟡/🔴 · Move. Cloud and local alike; a failed or held row

@@ -214,13 +214,11 @@ they live here now, in one home.
    on sight — a same-SHA resurrection carries no unique work by
    construction. A branch carrying UNIQUE commits is never
    deleted: surface it on the board's Needs-you instead.
-   THE BOARD'S BATON LINE, painted by this mode — the wording is
-   law, and which case applies is derived, never chosen:
-   - AUTO-LAND: `No live seat — awaiting next pickup`, plus
-     `Last flight: LANDED <t> via AUTO-LAND — fleet empty,
-     nothing owed you · clean`.
-   - MANUAL RETIRE on an empty fleet: `No live seat — LANDED <t>
-     via MANUAL-LAND · awaiting next pickup`.
+   THE BOARD'S BATON LINE: paint this mode's case from
+   [handoff §4's case table](handoff.md#4--repaint-dashboard-the-board-spec--single-source),
+   its single home — AUTO-LAND or MANUAL RETIRE ON AN EMPTY
+   FLEET. WHICH CASE APPLIES IS DERIVED, NEVER CHOSEN: the fire
+   that started this landing decides it.
 
 3. **THE LANDING REPORT** — render EXACTLY this shape
    ([HOME §Response doctrine](../HOME.md#response-doctrine),
@@ -354,11 +352,12 @@ FLEET-AT-GROUND table — one row per lane:
 
 `progress` and `exact next step` are lifted FROM EACH LANE'S
 FENCE, so the board and the memories cannot disagree. `state`
-reads `held`. THE BATON section for the flight itself reads:
-
-```text
-no live cockpit — grounded for local pickup <date>
-```
+reads `held`. THE BATON section for the flight itself takes the
+MODE P case from
+[handoff §4's case table](handoff.md#4--repaint-dashboard-the-board-spec--single-source)
+— ONE line, ending `grounded for local pickup <date>`, which is
+the marker [pickup §5](pickup.md#5--render-the-sit-down-summary-exactly-this-shape)
+reads alongside this table to offer the fleet resume.
 
 Per-lane depth stays in each memory; the board carries the summary
 and the pointers. NO new file — one home per class.
@@ -388,10 +387,10 @@ fence and on the board's fleet-at-ground table.
 Grounded. Safe to archive me — pickup at any seat resumes the fleet.
 ```
 
-THE BOARD'S BATON LINE, painted by this mode — wording is law:
-`No live seat — LANDED <t> via MANUAL-LAND · awaiting next
-pickup`, plus ` · N lanes frozen → fleet-resume` when the freeze
-caught work mid-flight.
+THE BOARD'S BATON LINE is the one §(d) already painted — the
+MODE P case in
+[handoff §4's case table](handoff.md#4--repaint-dashboard-the-board-spec--single-source).
+This step paints nothing new; there is exactly one line.
 
 The HONESTY CLAUSE governs the numbers: the report states the
 LAST-OBSERVED state per lane and never claims a guaranteed

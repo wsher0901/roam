@@ -5,9 +5,9 @@ status: living
 ---
 # Pickup — the sit-down briefing
 
-Control tower only — delegated lanes and background agents skip it
-and
-proceed with their kickoff. Runs unprompted on the founder's first
+Baton-holder only (control tower, or the cockpit in flight);
+lanes never run this — delegated lanes and background agents skip
+it and proceed with their kickoff. Runs unprompted on the founder's first
 message of a session. Assume the founder remembers NOTHING; plain
 English everywhere. Glyphs, here and on the board: 🟢 done ·
 🟡 ongoing · 🔴 issue · ⚪ idle.
@@ -86,31 +86,17 @@ Sources:
 [ROADMAP](../ROADMAP.md)
 [DASHBOARD](../DASHBOARD.md)
 
-### The baton line pickup paints — wording is law
+### The baton line pickup paints
 
-Plain claim:
-
-```text
-CONTROL TOWER — <seat>, since <t> (pickup)
-```
-
-with a last-flight line preserving its CAUSE: `Last flight:
-LANDED <t> via AUTO-LAND — clean` · or `via MANUAL-LAND` (adding
-` · N lanes frozen → fleet-resume` when it froze work). When
-nothing has flown, the line still renders — `Last flight: none —
-the floor has been ground-side this sitting` — because a silent
-BATON section reads as an unpainted one.
-
-On a DESK TAKEOVER
-([§6](#the-desk-takeover--a-live-cockpit-holding-decisions)):
-
-```text
-CONTROL TOWER — <seat>, since <t> (pickup — DESK TAKEOVER)
-Last flight: LANDED <t> BY THIS PICKUP — was awaiting your word
-on N items (now in Needs you) · N lanes fenced → fleet-resume
-```
-
-The awaiting clause appears only when it is true.
+Pickup owns THREE cases in
+[handoff §4's case table](handoff.md#4--repaint-dashboard-the-board-spec--single-source),
+which is their single home: THE PLAIN CLAIM (with its
+last-flight line, and the none-yet floor line when nothing has
+flown — a silent BATON section reads as an unpainted one), and
+the DESK TAKEOVER'S TWO ORDERED WRITES
+([§6](#the-desk-takeover--a-live-cockpit-holding-decisions)).
+Paint the wording from there; which case applies is derived from
+what §3 found, never chosen.
 
 ## 4 · Repaint if stale
 If the board disagrees with its sources (ROADMAP checkboxes,
@@ -136,9 +122,14 @@ shape below is the founder's status template.
   "⏸ INTERRUPTED: <one line> — continue?" — before anything else
   renders.
 - FLEET RESUME, second (the ⏸ lead keeps priority): whenever the
-  board shows a GROUNDED FLEET — a BATON line reading "no live
-  cockpit — grounded for local pickup <date>", written by
-  [land](land.md)'s MODE P — render one row PER LANE straight from
+  board shows a GROUNDED FLEET. THE TRIGGER IS TWO FACTS
+  TOGETHER, never a string match on a phrase that may be
+  reworded: a FLEET-AT-GROUND TABLE stands under IN FLIGHT, AND
+  the BATON line carries the marker `grounded for local pickup`
+  (the MODE P case in
+  [handoff §4's table](handoff.md#4--repaint-dashboard-the-board-spec--single-source),
+  written by [land](land.md) MODE P). Then render one row PER
+  LANE straight from
   the board's fleet-at-ground table (id · purpose · progress ·
   exact next step · held), then THE ASK, in these exact words:
   "Continue? — 'continue' redeploys the whole fleet: each held lane
@@ -150,7 +141,10 @@ shape below is the founder's status template.
   parked". N is DERIVED AT ASK TIME (the lane count), and the cap
   arithmetic is stated aloud beside it — remaining runs from
   `npm run count:runs` plus any fires this sitting, against the
-  15/day cap ([liftoff §2](liftoff.md#2--triage-every-open-item));
+  daily routine cap — the number lives in
+  [SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts),
+  read at ask time
+  ([liftoff §2](liftoff.md#2--triage-every-open-item));
   if the script fails, say so and ask for the number rather than
   guessing. The founder's answer runs
   [§6](#6--fleet-resume-on-the-founders-answer).
@@ -241,6 +235,13 @@ seats cannot both hold the baton, so the desk takes it:
    This is the board write the supersession rests on: the old
    cockpit learns it is superseded by READING this row, and from
    this moment the desk owns the board.
+   THE ORDER IS PART OF THE RULE: this SUPERSEDED line lands NOW,
+   at adopt, and [§4](#4--repaint-if-stale)'s repaint REPLACES it
+   with the takeover claim once the takeover is complete. The
+   wake-rule keys on the seat-stamp not being the reader's own,
+   so the old cockpit self-retires correctly on either line —
+   which is why the desk never has to wait for that retirement
+   before repainting.
 3. **PROCEED** with the rest of pickup — but LEAVE THE LANES
    ALONE. The resume mechanics below apply to FENCED branches
    only: `redeploy` writes `bench ready` onto a branch, which on

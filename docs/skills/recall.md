@@ -20,8 +20,8 @@ One question may hit several classes; route each part.
 
 | Class | Sounds like | Open, in order |
 |---|---|---|
-| Why / provenance | "why is X this way", "what did we decide about" | DECISIONS (title grep) → the consolidation carrying the rule (LAWS gloss · ENGINE · SETUP · FOUNDATION for identity) → the quadrant story |
-| Past work | "what happened with", "what was that task", "what issues did we hit" | the ledger (chronology) → the quadrant door per the legend → the story — its narrative, Pending issues, and dead ends — + its D + PR |
+| Why / provenance | "why is X this way", "what did we decide about" | DECISIONS (short-heading grep, then the entry's `In full:` line) → the consolidation carrying the rule (LAWS gloss · ENGINE · SETUP · FOUNDATION for identity) → the quadrant story → [chronicle/INDEX](../chronicle/INDEX.md) for the item's LIVING story, read alongside the frozen record |
+| Past work | "what happened with", "what was that task", "what issues did we hit" | the ledger (chronology) → the quadrant door per the legend → the story — its narrative, Pending issues, and dead ends — + its D + PR → [chronicle/INDEX](../chronicle/INDEX.md) when the item has a living story, which carries what happened SINCE |
 | Ongoing — status · pauses · issues | "status of", "where is X at", "why is it parked/blocked" | memory/<id>.md Status + Story + Pending issues → `gh pr view/checks` → the board's In-flight row · Needs-you |
 | Future trajectory | "what's next", "when will", "where are we headed" | ROADMAP (ladder · stage/task lines) → ENGINE §12 Open register → SETUP §Staged → IDEAS |
 | Term / mechanism | "what is a", "how does X work" | HOME (Terms · portraits · Reading the board · Where information goes) → DESIGN-KICKOFF for design-session governance |
@@ -31,6 +31,7 @@ Sources:
 [the routing table — HOME §Where information goes](../HOME.md#where-information-goes)
 [the ledger](../record/history/README.md#the-ledger)
 [the door legend](../record/history/README.md)
+[the chronicle shelves](../chronicle/INDEX.md)
 
 ## 2 · Look it up — read, don't recall
 Open the routed homes and take the answer FROM them. Quote
