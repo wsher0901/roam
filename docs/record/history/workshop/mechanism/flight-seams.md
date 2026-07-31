@@ -1,7 +1,9 @@
 ---
-type: memory
+type: history
 id: flight-seams
-updated: 2026-07-31 16:06 · ship · work PC
+updated: 2026-07-31 16:23 · weld · work PC
+shipped: 2026-07-31 16:23
+pr: 257
 ---
 
 # flight-seams — one case table, and the flight path repaired
@@ -9,9 +11,9 @@ updated: 2026-07-31 16:06 · ship · work PC
 ## Status
 
 complete, awaiting merge — 2026-07-31, work PC.
-[D-070](../record/DECISIONS.md#d-070--baton-renderings-single-homed)
+[D-070](../../../DECISIONS.md#d-070--baton-renderings-single-homed)
 is minted, every BATON rendering lives in one case table at
-[handoff §4](../skills/handoff.md#4--repaint-dashboard-the-board-spec--single-source),
+[handoff §4](../../../../skills/handoff.md#4--repaint-dashboard-the-board-spec--single-source),
 the three writers cite their cases, and both flight-path
 contradictions are gone. Full CI mirror green. The critic returned
 eight findings — one of them a THIRD contradiction this bench had
@@ -19,16 +21,16 @@ not been sent to find — and all eight are repaired (below).
 
 ## What this task is
 
-[D-067](../record/DECISIONS.md#d-067--the-report-skeleton-and-the-board-diet)
+[D-067](../../../DECISIONS.md#d-067--the-report-skeleton-and-the-board-diet)
 said each writer paints its own BATON case and called the wording
 law — then left the wordings in four files. Prose agreement has no
 linter. Contract:
-[the spec](../record/specs/flight-seams.md).
+[the spec](../../../specs/flight-seams.md).
 
 ## Pending issues
 
 - Tower-authored, so
-  [no-solo-approval](../LAWS.md#workflow-non-negotiable) requires
+  [no-solo-approval](../../../../LAWS.md#workflow-non-negotiable) requires
   an external Web review before the founder's word at THE GATE. DO
   NOT MERGE.
 
@@ -48,7 +50,7 @@ across the flight path.
 FLIGHT row, three paragraphs earlier in the same section, read
 `self-seat pending`. The two were written at different times and
 never read together:
-[D-051](../record/DECISIONS.md#d-051--self-seat-birth) made the
+[D-051](../../../DECISIONS.md#d-051--self-seat-birth) made the
 fire BLIND, updated the row, and left the baton line quoting a
 value that no longer exists at fire time. THE COST WOULD HAVE
 LANDED ON THE NEXT COCKPIT BIRTH: the charter's rule 1 sends an
@@ -103,7 +105,7 @@ classify, and the classification here was "no drift".
 
 - **The daily cap was hard-coded twice** — pickup §5 and liftoff
   §2 both wrote the number. It is a VALUE, and values live in
-  [SETUP](../SETUP.md#once-and-done--cloud-accounts) (verified to
+  [SETUP](../../../../SETUP.md#once-and-done--cloud-accounts) (verified to
   carry it before the two copies died). The `count:runs`
   mechanics and the ask-on-script-failure rule are untouched.
 - **The desk takeover's two board writes had no stated order** —
@@ -116,10 +118,10 @@ classify, and the classification here was "no drift".
   clause now names THE BATON and WEB + DESIGN.
 - **recall had no chronicle door** — the Why/provenance and
   Past-work rows now point at
-  [chronicle/INDEX](../chronicle/INDEX.md) for the item's LIVING
+  [chronicle/INDEX](../../../../chronicle/INDEX.md) for the item's LIVING
   story, and Why/provenance names the short-heading grep plus the
   `In full:` line per
-  [D-068](../record/DECISIONS.md#d-068--the-short-anchor-law).
+  [D-068](../../../DECISIONS.md#d-068--the-short-anchor-law).
 
 ### The sweep
 
@@ -129,8 +131,8 @@ returned ZERO citations of it anywhere in the tree, so nothing
 needed repointing. NO FROZEN FILE WAS TOUCHED. The two retired
 wordings re-run to zero across living files; their only survivors
 are the case table's own rows and one line in
-[DECISIONS](../record/DECISIONS.md), which is the frozen record of
-what [D-054](../record/DECISIONS.md#d-054--the-landing-skill)
+[DECISIONS](../../../DECISIONS.md), which is the frozen record of
+what [D-054](../../../DECISIONS.md#d-054--the-landing-skill)
 decided at the time and is correct as written. NO HIT LANDED
 INSIDE A MASTER FENCE — all three were checked directly.
 
@@ -143,12 +145,12 @@ know about:
   MATERIAL.** A fleet fenced by a SUPERSEDED cockpit never gets a
   fleet-at-ground table or a grounded marker — that cockpit
   writes NO board, by
-  [land Scenario 2](../skills/land.md#scenario-2--desk-takeover-the-desk-fires-it)'s
+  [land Scenario 2](../../../../skills/land.md#scenario-2--desk-takeover-the-desk-fires-it)'s
   carve-out — so the re-keyed trigger could not fire for it and
   the lanes would sit findable but unoffered. THE SAME SILENT
   STALL THIS BENCH SET OUT TO REMOVE, surviving in the one branch
   the audit had not walked.
-  [pickup §6](../skills/pickup.md#6--fleet-resume-on-the-founders-answer)
+  [pickup §6](../../../../skills/pickup.md#6--fleet-resume-on-the-founders-answer)
   step 3 now names THE DESK as that writer, at the first repaint
   that finds the fences pushed. Disclosed as a deviation: it
   assigns a write that had no owner, which is a hair beyond "only
@@ -180,8 +182,8 @@ know about:
 
 ## Where to look
 
-- [the spec](../record/specs/flight-seams.md) — the contract.
-- [handoff §4](../skills/handoff.md#4--repaint-dashboard-the-board-spec--single-source)
+- [the spec](../../../specs/flight-seams.md) — the contract.
+- [handoff §4](../../../../skills/handoff.md#4--repaint-dashboard-the-board-spec--single-source)
   — the case table, the single home.
-- [D-070](../record/DECISIONS.md#d-070--baton-renderings-single-homed).
+- [D-070](../../../DECISIONS.md#d-070--baton-renderings-single-homed).
 - the Web ops chat, 2026-07-31 — where the audit was approved.

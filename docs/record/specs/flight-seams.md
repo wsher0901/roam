@@ -2,12 +2,12 @@
 type: spec
 id: flight-seams
 title: Baton renderings single-homed (D-070)
-status: open
+status: shipped
 stage: workshop
 branch: docs/flight-seams
 pr: 257
 opened: 2026-07-31
-shipped: —
+shipped: 2026-07-31
 ---
 
 # flight-seams — one case table, and the flight path repaired
