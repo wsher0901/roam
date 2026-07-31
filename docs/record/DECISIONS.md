@@ -3633,3 +3633,71 @@ short-heading grep + `In full:` per
 [D-068](#d-068--the-short-anchor-law)) ·
 [the spec](specs/flight-seams.md) + its memory (in flight on the
 bench; moves to history at the weld) · this entry.
+
+## D-071 — Atlas gains the enforcement mesh
+
+In full: 2026-07 — ATLAS grows a seventh diagram rendering the enforcement & update mesh — the delivery chain from ambient law to the founder's word — with every box linking the prose home that owns its doctrine; ATLAS's header and HOME's files-table row update six to seven; diagram 1's verification-loop box gains ship §1 as the commands' home; diagrams 3 and 6 gain the baton case-table citation; the stamp refreshes. ATLAS still renders and originates nothing — the prose governs.
+
+**Decision:** [ATLAS](../ATLAS.md) gains §7, THE ENFORCEMENT &
+UPDATE MESH: one flowchart of the delivery chain from
+`CLAUDE.md`'s ambient import through the register, act-time
+skills, the point-only stubs (the five board-writers carrying the
+ONLY merge allowance), the three session hooks, CI, the summon
+workflow, the settings denies, the critic and the external review,
+ending at THE FOUNDER'S WORD as sole merge authority. A DASHED
+SIDE-NOTE names the three joints that are judgment only. The
+header and [HOME](../HOME.md)'s files-table row go six → seven;
+diagram 1 cites [ship §1](../skills/ship.md#1--preflight) as the
+verification commands' home; diagrams 3 and 6 cite
+[handoff §4](../skills/handoff.md#4--repaint-dashboard-the-board-spec--single-source)'s
+baton case table. EVERY BOX LINKS A PROSE HOME, never a machinery
+file: ATLAS renders, and doctrine lives in prose.
+
+**Why:** the enforcement layer is the one part of this workshop
+that exists almost entirely OUTSIDE the doc tree — in
+`.claude/`, `.github/`, and a settings file — and it is the part
+a session is least able to discover by reading. Each piece is
+recorded where it belongs, and no page had ever drawn them as ONE
+CHAIN, so their INTERLOCKS were invisible. The census surfaced one
+immediately: CI fires on pull requests and on main, not on every
+push, which would leave a branch uncovered until its PR existed —
+and it is the BENCH-FIRST LAW, giving every task a draft PR in its
+first minute, that closes the hole. Neither law covers the floor
+alone, and nothing in the repo said so.
+
+THE DASHED BOX IS THE POINT AS MUCH AS THE CHAIN. A picture of
+enforcement invites the belief that everything is enforced, which
+is the more expensive error: the links gate proves an anchor
+EXISTS and never that it is the RIGHT one (a Needs-you arrow rode
+a real-but-wrong heading through every green gate at
+[#250](https://github.com/wsher0901/roam/pull/250)); nothing
+checks the derivation law (a bar rendered 33 segments for 34
+tasks, same bench); and board freshness is only ever repaired at a
+ritual. Drawing those three as gaps, with their recorded path
+forward, is what keeps the diagram honest.
+
+**Alternatives rejected:**
+
+- **A prose section in [HOME](../HOME.md) instead** — the value
+  here is precisely the SHAPE, which is what a diagram carries
+  and a paragraph does not. HOME already names each piece; what
+  was missing was their order.
+- **Linking the machinery files from the boxes** — the shortest
+  path from box to truth, and it would make ATLAS a second source
+  for rules that live in prose. A hook file says what it DOES,
+  never why it is lawful.
+- **Drawing the mesh without the gaps** — a cleaner picture and a
+  false one. A map that shows only the covered ground is how a
+  session comes to trust a gate that does not exist.
+- **Waiting for HARNESS V2 to close the gaps first** — the gaps
+  are true today, and a diagram that waits for the world to be
+  tidy never ships.
+
+**Affects:** [ATLAS](../ATLAS.md) (§7 added; the header six →
+seven; the stamp refreshed; diagram 1's Boxes line re-homes the
+verification loop at ship §1 with LAWS kept beside it as the
+law's home; diagrams 3 and 6 gain the baton case-table citation) ·
+[HOME](../HOME.md) (the files-table ATLAS row, six → seven —
+one row, nothing else) ·
+[the spec](specs/atlas-census.md) + its memory (in flight on the
+bench; moves to history at the weld) · this entry.

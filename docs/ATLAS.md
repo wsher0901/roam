@@ -6,9 +6,9 @@ status: living
 
 # Atlas — the system spine
 
-Stamp: 2026-07-28 · diagram 3 re-rendered for the landing recut ·
+Stamp: 2026-07-31 · diagram 7 added — the enforcement mesh ·
 work PC (born 2026-07-27 by the atlas bench · home PC).
-The workshop depicted as six diagrams on one page. THIS PAGE
+The workshop depicted as seven diagrams on one page. THIS PAGE
 RENDERS, IT ORIGINATES NOTHING — like [the board](DASHBOARD.md),
 it is among the least authoritative files in the repo: every box
 links to the prose section that owns the doctrine, and on any
@@ -44,7 +44,9 @@ flowchart TD
 
 Boxes: [bench-first birth — LAWS §Workflow](LAWS.md#workflow-non-negotiable)
 · [the heartbeat — LAWS §Task anatomy](LAWS.md#task-anatomy)
-· [the verification loop — LAWS §Workflow](LAWS.md#workflow-non-negotiable)
+· [the verification loop — ship §1](skills/ship.md#1--preflight)
+  (the commands' one home) ·
+  [the law requiring it — LAWS §Workflow](LAWS.md#workflow-non-negotiable)
 · [the critic — ship §6](skills/ship.md#6--the-gate)
 · [THE GATE and no-solo-approval — LAWS §Workflow](LAWS.md#workflow-non-negotiable)
 · [the atomic weld — ship §7](skills/ship.md#7--on-approval--the-atomic-weld)
@@ -131,7 +133,8 @@ Boxes: [the chooser — HOME §Delegation](HOME.md#delegation--the-away-mode-cho
 · [MODE R](skills/land.md#mode-r--retire-the-flights-natural-end)
 · [MODE P and the fence](skills/land.md#mode-p--pause-and-transfer-the-founder-is-going-local)
 · [the fleet resume — pickup §6](skills/pickup.md#6--fleet-resume-on-the-founders-answer)
-· [the baton — HOME](HOME.md#the-baton).
+· [the baton — HOME](HOME.md#the-baton)
+· [every BATON rendering — handoff §4's case table](skills/handoff.md#4--repaint-dashboard-the-board-spec--single-source).
 
 ## 4 · A lane's life
 
@@ -211,4 +214,55 @@ Boxes: [the derivation law and the ladder — LAWS §Knowledge & tracking](LAWS.
 · [the Status vocabulary — TEMPLATE](memory/TEMPLATE.md#status-vocabulary)
 · [the board's repaint model — HOME §The board](HOME.md#the-board)
 · [how to read it — HOME §Reading the board](HOME.md#reading-the-board)
-· [the board spec — handoff §4](skills/handoff.md#4--repaint-dashboard-the-board-spec--single-source).
+· [the board spec, and every BATON rendering — handoff §4's case table](skills/handoff.md#4--repaint-dashboard-the-board-spec--single-source).
+
+## 7 · The enforcement & update mesh
+
+How a law reaches an act. Every layer below is a DELIVERY stage —
+none of them originates doctrine, and the prose each box links is
+where the rule actually lives.
+
+```mermaid
+flowchart TD
+  IMP["CLAUDE.md — the ambient import, loaded into every session"] --> REG["the LAWS register — NAME, rule, pointer"]
+  REG --> SK["skills — the procedure, read at act time"]
+  SK --> ST["point-only stubs — a stub cannot drift from its procedure"]
+  ST --> MRG["the five board-writing stubs carry the ONLY merge allowance"]
+  REG --> HK["three session hooks"]
+  HK --> H1["session-start — pull main, inject the board, clear the close-lock"]
+  HK --> H2["user-prompt-submit — stamp a closed session read-only"]
+  HK --> H3["session-end — the crash net: WIP committed and pushed on a lane branch"]
+  MRG --> CI
+  H3 --> CI["CI on every PR and on main — lint, format:check, check:links, check:ledger, check:memory, test, build"]
+  CI --> SUM["the summon workflow — a push to ops/summon is the cockpit's self-rescue"]
+  SUM --> DEN["settings denies — force-push, hard reset, admin merges, cross-repo merges"]
+  DEN --> CR["the critic — advisory, and its round is pushed to the memory before the gate"]
+  CR --> XR["the external Web review — no-solo-approval, before the word"]
+  XR --> W["THE FOUNDER'S WORD — the sole merge authority"]
+  JUD["JUDGMENT ONLY — no gate covers these: the links gate proves an anchor EXISTS, never that it is the RIGHT one; nothing checks the derivation law; board freshness is only ever repaired at a ritual"]
+  CI -.->|"the honest gap"| JUD
+  classDef gap fill:#4e342e,stroke:#3e2723,color:#ffffff,stroke-dasharray: 5 5
+  class JUD gap
+```
+
+DRAFT-PR-AT-BIRTH IS WHAT MAKES CI UNIVERSAL: the workflow fires
+on pull requests and on main, so a branch would be uncovered
+until its PR existed — and the bench-first law gives every task a
+draft PR in its first minute. The two laws interlock; neither
+covers the floor alone.
+
+THE DASHED BOX IS NOT DECORATION. Each of its three joints was
+learned from a real miss on this workshop's own benches, and each
+has a recorded path forward in the
+[HARNESS V2 line](IDEAS.md) — the one inbox entry that carries
+the guard set.
+
+Boxes: [the ambient import and the hooks — HOME §The files](HOME.md#the-files--what-each-one-is-for)
+· [the register itself — LAWS](LAWS.md)
+· [skills and their point-only stubs — HOME §Skills](HOME.md#skills)
+· [the merge allowance and the micro-PR carve-out — HOME §Micro-PRs](HOME.md#micro-prs)
+· [the verification loop the checks mirror — ship §1](skills/ship.md#1--preflight)
+· [the critic — ship §6](skills/ship.md#6--the-gate)
+· [no-solo-approval — LAWS §Workflow](LAWS.md#workflow-non-negotiable)
+· [the founder's word — LAWS §The three touchpoints](LAWS.md#the-three-touchpoints)
+· [the wiring inventory — SETUP](SETUP.md).
