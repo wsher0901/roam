@@ -9,8 +9,8 @@ pr: 7
 
 ## What shipped
 
-([D-003](../../../DECISIONS.md#d-003--2026-06--roam-v1-scope-foundation-v1),
-[D-004](../../../DECISIONS.md#d-004--2026-06--planning-notation--rolling-wave-depth))
+([D-003](../../../DECISIONS.md#d-003--roam-v1-scope),
+[D-004](../../../DECISIONS.md#d-004--planning-notation-and-rolling-wave-depth))
 · [FOUNDATION.md](../../../../FOUNDATION.md) becomes the full product
 definition — the Suggest → Plan → Edit spine, the five check
 families, the reliability law — and Vn.Sm.Tk becomes the one

@@ -18,7 +18,7 @@ Shelf III one, the census restamp 65 → 66, the T3–T6 relaunch
 brief, the three [IDEAS](../../../../IDEAS.md) lines and the defect line's
 closure are in. The external review returned two repairs, both
 landed: the three-phase order minted as
-[D-060](../../../DECISIONS.md#d-060--2026-07--the-three-phase-standing-order--settle-and-test-the-vault-then-roam-v1s1t3t6-and-v1s2t5-are-paused-until-phase-2-closes-the-founders-2026-07-28-sequencing-recorded-per-laws-pause-routing-upholds-the-pacing-law)
+[D-060](../../../DECISIONS.md#d-060--the-three-phase-standing-order)
 (the founder amending the files-touched to admit a pure append),
 and item 6's second half answered — the phone still carries the
 app, so the ending is a demotion. Five files touched, none
@@ -44,11 +44,11 @@ Contract: [the spec](../../../specs/chronicle-answers.md).
   NOT MERGE.
 - **A weld step that now covers three files.** The INDEX links
   this memory twice and
-  [D-060](../../../DECISIONS.md#d-060--2026-07--the-three-phase-standing-order--settle-and-test-the-vault-then-roam-v1s1t3t6-and-v1s2t5-are-paused-until-phase-2-closes-the-founders-2026-07-28-sequencing-recorded-per-laws-pause-routing-upholds-the-pacing-law)
+  [D-060](../../../DECISIONS.md#d-060--the-three-phase-standing-order)
   links it once, all at the LIVING path. The weld commit repoints
   all three — the DECISIONS one being a mechanical link-path
   repair inside a frozen file, which
-  [D-057](../../../DECISIONS.md#d-057--2026-07--the-record-shelf--the-frozen-record-moves-under-one-roof-docsrecord-is-born-history--specs--decisions-in-memory-stays-living-at-root-the-enabling-ruling--a-mechanical-link-path-segment-repair-inside-a-frozen-file-is-maintenance-not-a-content-edit-append-only-governs-meaning-not-bytes-intra-record-links-resolve-by-construction-upholds-append-only-one-home-and-the-weave-rule)
+  [D-057](../../../DECISIONS.md#d-057--the-record-shelf)
   rules is maintenance, not a content edit.
 - **A weld step that cannot be forgotten:** this file's links from
   [the INDEX](../../../../chronicle/INDEX.md) point at the LIVING path
@@ -69,7 +69,7 @@ Born 2026-07-28 at the work PC, the sitting after the 07-27
 three-bench queue closed 3/3. The mandate is narrow on purpose:
 the census's honesty rule was that an underivable ending reads
 "founder input owed" and never a guess
-([D-059](../../../DECISIONS.md#d-059--2026-07--the-chronicle-layer--living-stories-above-the-frozen-record-one-story-per-item-the-ending-rule--settled-in-any-format-means-the-story-is-written-a-later-fix-is-incorporated-and-the-ending-rewritten-at-that-weld-retirement-is-a-settlement-docschronicle-one-file-per-story-indexmd-shelving-four-shelves-immutability-beneath--record-untouched-stories-link-down-as-footnotes-down-links-only--a-story-never-cites-another-storys-prose-supersedes-the-07-23-three-chapter-shape-the-ship-synthesis-at-weld-step-deferred-to-the-first-story-weld)),
+([D-059](../../../DECISIONS.md#d-059--the-chronicle-layer)),
 so the answers are the only thing that can fill them — and the
 same honesty runs forward: where the founder said "not sure", the
 ending records uncertainty rather than rounding it to yes or no.
@@ -81,10 +81,10 @@ Three of the nine settled exactly that way.
    So, I will most likely start from scratch."
 2. **land:** never run — "I don't think so."
 3. **The summon secrets:** unsure; never tested.
-4. **[D-048](../../../DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)
+4. **[D-048](../../../DECISIONS.md#d-048--cockpit-resilience)
    rungs 2b/5:** never tested — "we were not able to emulate
    this."
-5. **[D-051](../../../DECISIONS.md#d-051--2026-07--self-seat-birth--liftoff-fires---cloud-blind-and-the-cockpit-seats-itself-by-its-env-derived-self-url-the-console-attach-launcher-is-retired-amends-d-047s-rung-1-mechanics-as-corrected-by-193-upholds-d-049-and-board-governs)
+5. **[D-051](../../../DECISIONS.md#d-051--self-seat-birth)
    self-seat birth:** not sure it has flown.
 6. **go-remote:** never used — "unsure whether this will ever be
    useful given that if cloud works fine, it is superior."
@@ -151,10 +151,10 @@ un-ticked here.
 **What the record actually knows about the failure.** The founder
 recalls only that the cloud sessions failed. The record holds the
 vehicle's post-mortem
-([D-020](../../../DECISIONS.md#d-020--2026-07--parallel-lanes-v2-native-lanes-replace-hand-built-orchestration):
+([D-020](../../../DECISIONS.md#d-020--parallel-lanes-v2):
 bundle-seeded sandboxes could not push; T3+T5 work destroyed) and
 the fix-routing triage
-([D-018](../../../DECISIONS.md#d-018--2026-06--fix-routing-triage-after-lane-review-extends-d-017)).
+([D-018](../../../DECISIONS.md#d-018--fix-routing-triage-after-lane-review)).
 T4 and T6 were never even recorded as failed. That is the whole of
 it — nothing else about why these four lanes died is derivable,
 and nothing is invented here.
@@ -163,9 +163,9 @@ and nothing is invented here.
 double-dispatch diagnostic is no longer in
 [IDEAS](../../../../IDEAS.md) — it was compacted away when IDEAS became an
 inbox-not-archive
-([D-050](../../../DECISIONS.md#d-050--2026-07--session-lifecycle--closed--dead-the-close-locks-wall-softens-to-injected-read-only-doctrine-interrupt-capture-is-standing-format-the-claude-residue-sweep-is-pickup-hygiene-ideas-is-an-inbox-not-an-archive-amends-the-d-046-era-close-wall-design-upholds-the-park-protocol-and-no-solo-approval)) —
+([D-050](../../../DECISIONS.md#d-050--session-lifecycle-closed-is-not-dead)) —
 yet both
-[D-042](../../../DECISIONS.md#d-042--2026-07--lane-liveness--derive-live-vs-reclaimable-from-the-commit-heartbeat-read-it-at-claim-check-and-session-start-cleanup-so-a-live-lane-is-never-adopted-or-pruned-amends-the-claim-check-clause-and-pickup-3-upholds-the-wake-lock-and-seat-invariance)
+[D-042](../../../DECISIONS.md#d-042--lane-liveness)
 and
 [the lane-liveness story](../mechanism/lane-liveness.md)
 still point at IDEAS for it. Both are frozen record and cannot be
@@ -181,7 +181,7 @@ re-evaluation, carried into the relaunch. Each is marked
 - **T4 · Feasibility** — *verify licenses at spike.* Google-class
   sources may serve display-time rungs but NEVER enter the asset
   layer: that collides with the license-segmented storage law
-  ([D-015](../../../DECISIONS.md#d-015--2026-06--data-asset-law-bitemporal-append-only-license-segmented)).
+  ([D-015](../../../DECISIONS.md#d-015--data-asset-law)).
   The asset layer builds on Overture Maps / Foursquare OS Places /
   OSM plus first-party data, and demo destinations are chosen by
   data coverage rather than by wish.
@@ -204,7 +204,7 @@ re-evaluation, carried into the relaunch. Each is marked
   pre-accepts B-grade: US and major ports verified, everywhere
   else labeled.
 
-### The founder's sequencing order — now [D-060](../../../DECISIONS.md#d-060--2026-07--the-three-phase-standing-order--settle-and-test-the-vault-then-roam-v1s1t3t6-and-v1s2t5-are-paused-until-phase-2-closes-the-founders-2026-07-28-sequencing-recorded-per-laws-pause-routing-upholds-the-pacing-law)
+### The founder's sequencing order — now [D-060](../../../DECISIONS.md#d-060--the-three-phase-standing-order)
 
 - **PHASE 1 — SETTLE & TEST:** this bench, then the first-story
   shakedown flight (blind cockpit birth · the fence /
@@ -227,7 +227,7 @@ The order goes on the board at the ship tail, under Now/Next,
 citing the decide.
 
 **The decision landed as
-[D-060](../../../DECISIONS.md#d-060--2026-07--the-three-phase-standing-order--settle-and-test-the-vault-then-roam-v1s1t3t6-and-v1s2t5-are-paused-until-phase-2-closes-the-founders-2026-07-28-sequencing-recorded-per-laws-pause-routing-upholds-the-pacing-law)**
+[D-060](../../../DECISIONS.md#d-060--the-three-phase-standing-order)**
 at the external review's word — the critic had flagged the gap
 and the reviewer confirmed it. The pause is what forced the
 D-number:
@@ -298,7 +298,7 @@ decide, while the mandate had fixed the files touched and
 excluded a D-number. The external review agreed with the critic,
 and the founder amended the files-touched to admit a pure append.
 The order is now
-[D-060](../../../DECISIONS.md#d-060--2026-07--the-three-phase-standing-order--settle-and-test-the-vault-then-roam-v1s1t3t6-and-v1s2t5-are-paused-until-phase-2-closes-the-founders-2026-07-28-sequencing-recorded-per-laws-pause-routing-upholds-the-pacing-law) —
+[D-060](../../../DECISIONS.md#d-060--the-three-phase-standing-order) —
 a finding the ship-time critic raised and the external reviewer
 confirmed, which is the two-layer review working exactly as
 designed.

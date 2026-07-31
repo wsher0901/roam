@@ -9,7 +9,7 @@ pr: 5
 
 ## What shipped
 
-([D-002](../../../DECISIONS.md#d-002--2026-06--handoff-note-merge-policy))
+([D-002](../../../DECISIONS.md#d-002--handoff-note-merge-policy))
 · Main stays PR-only for everything, with one narrow exception:
 handoff micro-PRs self-merge immediately, so end-of-session notes
 never strand → [PR #5](https://github.com/wsher0901/roam/pull/5)

@@ -14,7 +14,7 @@ word after external review, with one amendment made at the gate:
 `gh pr checks` added to the stub's read-only allowed-tools (the
 procedure's §1 needs it). Every gate on the way out waited on the
 pushed commit's Actions run going green
-([D-038](../../../DECISIONS.md#d-038--2026-07--ci-is-the-arbiter--actions-green-required-at-every-gate-local-gate-mirrors-all-six-ci-steps-d-anchors-born-resolving-upholds-d-027)).
+([D-038](../../../DECISIONS.md#d-038--ci-is-the-arbiter)).
 
 ## What this task is
 
@@ -23,11 +23,11 @@ about past, ongoing, or future work FROM the corpus — classified,
 looked up, and quoted with receipts — instead of from a session's
 conversational memory, and it fires on Claude's own judgment with no
 keyword gate. It is the read mirror of
-[D-036](../../../DECISIONS.md#d-036--2026-07--information-routing--one-home-per-class-append-vs-upsert-home-carries-the-table-sessions-anchor-stabilized)'s
+[D-036](../../../DECISIONS.md#d-036--information-routing-one-home-per-class)'s
 routing table (which governed writes only): recall adds no homes, it
 just reads the ones already routed. It never edits anything. Recorded
 as
-[D-039](../../../DECISIONS.md#d-039--2026-07--recall--questions-answered-from-files-never-from-memory-the-d-036-routing-tables-read-mirror-model-invoked-at-discretion).
+[D-039](../../../DECISIONS.md#d-039--recall-answers-from-files).
 
 ## Pending issues
 
@@ -40,19 +40,19 @@ Nothing parked.
 ## The story
 
 Born this session from the kickoff. Writes were routed by
-[D-036](../../../DECISIONS.md#d-036--2026-07--information-routing--one-home-per-class-append-vs-upsert-home-carries-the-table-sessions-anchor-stabilized);
+[D-036](../../../DECISIONS.md#d-036--information-routing-one-home-per-class);
 reads never were, so an already-answered question could be asked
 three times in a day with the corpus holding the answer the whole
 time. Recall closes that gap on the read side without touching the
 write side: it classifies a question into the routing table's
 classes, opens the routed homes, and answers sentence-first with a
-[D-029](../../../DECISIONS.md#d-029--2026-07--corpus-writing-laws--readability-first-links-below-prose)
+[D-029](../../../DECISIONS.md#d-029--corpus-writing-laws)
 Sources block — and when the corpus is silent, it says "not recorded"
 plus where the fact would live, never an invention.
 
 The build shipped as one decide commit (entry + full ripple), so the
 D-039 heading and every inbound link to it were born resolving
-([D-038](../../../DECISIONS.md#d-038--2026-07--ci-is-the-arbiter--actions-green-required-at-every-gate-local-gate-mirrors-all-six-ci-steps-d-anchors-born-resolving-upholds-d-027));
+([D-038](../../../DECISIONS.md#d-038--ci-is-the-arbiter));
 the bench (branch, spec, memory stub, draft PR #123) came first.
 
 Three judgment calls surfaced at the gate, each preserving the
@@ -81,7 +81,7 @@ kickoff's intent rather than its letter:
 Spec: [recall-skill](../../../specs/recall-skill.md) · the procedure:
 [recall](../../../../skills/recall.md) · the trigger stub:
 .claude/skills/recall/SKILL.md · decision:
-[D-039](../../../DECISIONS.md#d-039--2026-07--recall--questions-answered-from-files-never-from-memory-the-d-036-routing-tables-read-mirror-model-invoked-at-discretion)
+[D-039](../../../DECISIONS.md#d-039--recall-answers-from-files)
 · the mirror source:
-[D-036](../../../DECISIONS.md#d-036--2026-07--information-routing--one-home-per-class-append-vs-upsert-home-carries-the-table-sessions-anchor-stabilized)
+[D-036](../../../DECISIONS.md#d-036--information-routing-one-home-per-class)
 · PR [#123](https://github.com/wsher0901/roam/pull/123).

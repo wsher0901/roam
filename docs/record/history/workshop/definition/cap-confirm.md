@@ -12,14 +12,14 @@ Shipped — merged as
 word, after their external review of the factual claim (15/day, flat
 across Max tiers). Every gate on the way out waited on the pushed
 commit's Actions run going green
-([D-038](../../../DECISIONS.md#d-038--2026-07--ci-is-the-arbiter--actions-green-required-at-every-gate-local-gate-mirrors-all-six-ci-steps-d-anchors-born-resolving-upholds-d-027)).
+([D-038](../../../DECISIONS.md#d-038--ci-is-the-arbiter)).
 
 ## What this task is
 A currency touch, not a decision. The Max routine cap is verified —
 15 runs/day, flat across Max tiers per Anthropic's routines docs — so
 the two docs that still hedged toward a live counter get firmed into
 stated fact. Codifies the budget already written into
-[D-041](../../../DECISIONS.md#d-041--2026-07--delegation-architecture--the-away-mode-chooser-go-remote-tether-idle-wait-label-spawned-cloud-amends-d-032s-wake-lock-and-the-dispatch-law-upholds-the-baton-law-and-d-009);
+[D-041](../../../DECISIONS.md#d-041--delegation-architecture);
 no new decide. Two doc edits, one commit:
 [SETUP §cloud](../../../../SETUP.md) Cloud-lane-worker entry and
 [liftoff §2](../../../../skills/liftoff.md). Out of scope: any change to
@@ -34,7 +34,7 @@ Nothing parked.
 
 ## The story
 Born this session from the kickoff. The delegation architecture
-([D-041](../../../DECISIONS.md#d-041--2026-07--delegation-architecture--the-away-mode-chooser-go-remote-tether-idle-wait-label-spawned-cloud-amends-d-032s-wake-lock-and-the-dispatch-law-upholds-the-baton-law-and-d-009))
+([D-041](../../../DECISIONS.md#d-041--delegation-architecture))
 wrote the daily routine budget as a documented-but-unverified number,
 hedged in two places pending a live check. That check is done; this
 task retires the hedges. The firmed text adds the grain the hedges
@@ -50,6 +50,6 @@ quote was paraphrased so the corpus sweep stays clean.
 ## Where to look
 Edits: [SETUP.md](../../../../SETUP.md) Cloud-lane-worker entry ·
 [skills/liftoff.md §2](../../../../skills/liftoff.md). Source decision:
-[D-041](../../../DECISIONS.md#d-041--2026-07--delegation-architecture--the-away-mode-chooser-go-remote-tether-idle-wait-label-spawned-cloud-amends-d-032s-wake-lock-and-the-dispatch-law-upholds-the-baton-law-and-d-009).
+[D-041](../../../DECISIONS.md#d-041--delegation-architecture).
 PR: [#138](https://github.com/wsher0901/roam/pull/138). Live counter:
 claude.ai/code/routines or claude.ai/settings/usage.

@@ -18,7 +18,7 @@ shipped: 2026-07-17 23:43
 [DECISIONS](../DECISIONS.md) ·
 [parallel-lanes §Vehicles](../../skills/parallel-lanes.md#vehicles) ·
 precedent for a lane-written decide:
-[D-044](../DECISIONS.md#d-044--2026-07--the-pre-gate-critic-goes-live--ships-gate-opens-by-invoking-the-reviewer-subagent-verdicts-advisory-riding-with-the-summary-turns-on-the-staged-reviewer-upholds-d-038-and-the-reviewer-frame)
+[D-044](../DECISIONS.md#d-044--the-pre-gate-critic-goes-live)
 
 ## Goal
 
@@ -51,7 +51,7 @@ spec.
 1. `docs/SETUP.md`, inside the "Models & effort" bullet's region
    (directly after that bullet): a sibling bullet "Hands: solo ·
    subagents · team · lanes (doctrine,
-   [D-045](../DECISIONS.md#d-045--2026-07--hands-doctrine-solo--subagents--agent-team--lanes--the-litmus-is-one-bench-many-hands-vs-many-benches-vs-read-only-upholds-d-020-and-d-041))"
+   [D-045](../DECISIONS.md#d-045--hands-doctrine))"
    carrying the doctrine text above verbatim,
    formatted as the section's house style (indented bullet prose,
    · separators preserved).
@@ -70,7 +70,7 @@ spec.
 3. `docs/skills/parallel-lanes.md` §Vehicles: ONE pointer line —
    the choose-your-hands doctrine lives at SETUP §Models & effort
    (weave-linked) per D-045 (weave-linked, exact anchor).
-4. Anchor discipline ([D-038](../DECISIONS.md#d-038--2026-07--ci-is-the-arbiter--actions-green-required-at-every-gate-local-gate-mirrors-all-six-ci-steps-d-anchors-born-resolving-upholds-d-027)):
+4. Anchor discipline ([D-038](../DECISIONS.md#d-038--ci-is-the-arbiter)):
    every link to D-045 must use the exact GitHub slug of the
    heading as committed — `npm run check:links` is the net; run it
    before every push.

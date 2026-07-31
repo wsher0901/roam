@@ -17,9 +17,9 @@ shipped: 2026-07-15
 [recall](../../skills/recall.md) ·
 [retroactivity law — LAWS §Knowledge & tracking](../../LAWS.md#knowledge--tracking) ·
 Decisions codified (this pass decides nothing):
-[D-036](../DECISIONS.md#d-036--2026-07--information-routing--one-home-per-class-append-vs-upsert-home-carries-the-table-sessions-anchor-stabilized)
+[D-036](../DECISIONS.md#d-036--information-routing-one-home-per-class)
 ·
-[D-039](../DECISIONS.md#d-039--2026-07--recall--questions-answered-from-files-never-from-memory-the-d-036-routing-tables-read-mirror-model-invoked-at-discretion)
+[D-039](../DECISIONS.md#d-039--recall-answers-from-files)
 
 ## Goal
 

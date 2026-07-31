@@ -28,7 +28,7 @@ predecessor's death.
 Liftoff's rung 1 fires `claude --cloud` BLIND — the console-attach
 output capture is DELETED, not maintained — and the cockpit seats
 ITSELF on the board via its
-[D-049](../../../DECISIONS.md#d-049--2026-07--gh-second-path--gh-api-rest-through-the-github-proxy-is-the-cockpits-second-api-path-a-connector-flap-stops-costing-command-r2-gains-the-automatic-gh-rung-self-id-by-session-env-amends-d-048-corrects-the-193-api-map-upholds-d-047-and-verify-before-rely)
+[D-049](../../../DECISIONS.md#d-049--gh-second-path)
 env-derived self-URL, the mechanism successor-duty already uses.
 The trade is named where both actors read it. Contract:
 [the spec](../../../specs/self-seat-birth.md).
@@ -37,7 +37,7 @@ The trade is named where both actors read it. Contract:
 
 - **The live test is deliberately deferred** to the first real
   flight after this weld — the founder's word tonight, on the
-  record here and in [D-051](../../../DECISIONS.md#d-051--2026-07--self-seat-birth--liftoff-fires---cloud-blind-and-the-cockpit-seats-itself-by-its-env-derived-self-url-the-console-attach-launcher-is-retired-amends-d-047s-rung-1-mechanics-as-corrected-by-193-upholds-d-049-and-board-governs)'s
+  record here and in [D-051](../../../DECISIONS.md#d-051--self-seat-birth)'s
   Why.
 - Tower-authored, so [no-solo-approval](../../../../LAWS.md) requires an
   external Web review before the founder's word at THE GATE. DO
@@ -102,5 +102,5 @@ touched.
 - [liftoff §6](../../../../skills/liftoff.md#6--ledger-handoff--fire-the-cockpit)
   · [SETUP §cloud accounts](../../../../SETUP.md#once-and-done--cloud-accounts)
   — the two live homes.
-- [D-051](../../../DECISIONS.md#d-051--2026-07--self-seat-birth--liftoff-fires---cloud-blind-and-the-cockpit-seats-itself-by-its-env-derived-self-url-the-console-attach-launcher-is-retired-amends-d-047s-rung-1-mechanics-as-corrected-by-193-upholds-d-049-and-board-governs)
+- [D-051](../../../DECISIONS.md#d-051--self-seat-birth)
   — the decision, trade and retirement dated.

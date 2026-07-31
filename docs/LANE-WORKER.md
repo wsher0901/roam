@@ -60,10 +60,10 @@ lane:cloud.
 
 | Version | Date | Vehicle | Change |
 | --- | --- | --- | --- |
-| v1 | 2026-07-29 | [#242](https://github.com/wsher0901/roam/pull/242) | extracted verbatim from SETUP §cloud accounts under [D-064](record/DECISIONS.md#d-064--2026-07--the-box-master-class--the-setup-entry-contract--every-external-box-master-is-its-own-top-level-file-on-the-web-instructions-pattern-cockpit-chartermd-and-lane-workermd-extracted-verbatim-setup-compresses-to-a-replication-spec-under-the-entry-contract-what--where--values--verify--source-design-kickoff-joins-the-class-on-paper) (prior evolution: SETUP's git history) |
+| v1 | 2026-07-29 | [#242](https://github.com/wsher0901/roam/pull/242) | extracted verbatim from SETUP §cloud accounts under [D-064](record/DECISIONS.md#d-064--the-box-master-class-and-setup-entry-contract) (prior evolution: SETUP's git history) |
 
 Sources:
-[D-064](record/DECISIONS.md#d-064--2026-07--the-box-master-class--the-setup-entry-contract--every-external-box-master-is-its-own-top-level-file-on-the-web-instructions-pattern-cockpit-chartermd-and-lane-workermd-extracted-verbatim-setup-compresses-to-a-replication-spec-under-the-entry-contract-what--where--values--verify--source-design-kickoff-joins-the-class-on-paper)
+[D-064](record/DECISIONS.md#d-064--the-box-master-class-and-setup-entry-contract)
 [SETUP §cloud accounts](SETUP.md#once-and-done--cloud-accounts)
 (the routine's wiring: location, trigger, GitHub App requirement,
 caps)

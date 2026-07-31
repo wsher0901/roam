@@ -225,5 +225,5 @@ it still exists.
   [flight-hardening](../../../specs/flight-hardening.md) — the two
   record claims a green probe would overturn (supersession notes
   only, if the mandate ever runs).
-- [D-048](../../../DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)
+- [D-048](../../../DECISIONS.md#d-048--cockpit-resilience)
   — the ladder D-049 would amend.

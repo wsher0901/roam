@@ -10,8 +10,8 @@ pr: 71
 ## What shipped
 
 The workshop's operating system, replaced in one PR
-([D-023](../../../DECISIONS.md#d-023--2026-07--universal-draft-pr-at-birth--micro-pr-carve-out-recut-amends-d-002-d-008-d-020),
-[D-024](../../../DECISIONS.md#d-024--2026-07--architecture-v2-memoryhistory-narrative-layer-dashboard-as-sole-state-surface-rituals-as-skills-amends-d-008-retires-handoffmd--shiplogmd)):
+([D-023](../../../DECISIONS.md#d-023--universal-draft-pr-at-birth-and-micro-pr-carve-out),
+[D-024](../../../DECISIONS.md#d-024--architecture-v2-narrative-layer-and-skills)):
 [LAWS.md](../../../../LAWS.md) became the constitution (root CLAUDE.md is now
 a two-line import), [PROJECT-POLICY](../../../../SETUP.md) was born
 beside [DECISION-POLICY](../../../../ENGINE.md), the five rituals

@@ -13,7 +13,7 @@ shipped: 2026-07-20 22:01
 # harness-vocab-rename — the `.claude/` harness files learn the D-046 vocabulary
 
 **Links:**
-[D-046](../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+[D-046](../DECISIONS.md#d-046--flight-cockpit-the-control-tower-online)
 · [flight-cockpit](flight-cockpit.md) (provenance: its Out-of-scope
 + Deviations surfaced this follow-up) ·
 [pickup](../../skills/pickup.md) ·
@@ -22,7 +22,7 @@ shipped: 2026-07-20 22:01
 ## Goal
 
 The
-[D-046](../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+[D-046](../DECISIONS.md#d-046--flight-cockpit-the-control-tower-online)
 rename (cockpit = the control tower online; the commanding session
 generically = the BATON-HOLDER) deliberately left the `.claude/`
 harness files untouched — outside the mandate's files-touched list,

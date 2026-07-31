@@ -76,7 +76,7 @@ Commits are the heartbeat
 ([LAWS §Task anatomy](../LAWS.md#task-anatomy)): a bench's branch
 tells you whether a worker is flying it — the board and even the
 Status word can lag; the heartbeat cannot
-([D-042](../record/DECISIONS.md#d-042--2026-07--lane-liveness--derive-live-vs-reclaimable-from-the-commit-heartbeat-read-it-at-claim-check-and-session-start-cleanup-so-a-live-lane-is-never-adopted-or-pruned-amends-the-claim-check-clause-and-pickup-3-upholds-the-wake-lock-and-seat-invariance)).
+([D-042](../record/DECISIONS.md#d-042--lane-liveness)).
 Read at the two blind sites: the claim check
 ([LAWS §Workflow](../LAWS.md#workflow-non-negotiable)) and
 [pickup §3](pickup.md)'s worktree sweep, fed by the session-start
@@ -192,15 +192,15 @@ never need GitHub:
   posts it verbatim as a PR comment.
 - Away, machine off (the standard posture): THE COCKPIT — the away
   surface since
-  [D-046](../record/DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+  [D-046](../record/DECISIONS.md#d-046--flight-cockpit-the-control-tower-online)
   (charter: [COCKPIT-CHARTER.md](../COCKPIT-CHARTER.md));
   it inherits these mail-slot rules whole — the same sentence in
   its thread posts the reply. Fallback: the GitHub app, four taps
   — backstop. (The cloud clerk stood here until its retirement on
   2026-07-22, routine deleted —
-  [D-046](../record/DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+  [D-046](../record/DECISIONS.md#d-046--flight-cockpit-the-control-tower-online)
   decided it,
-  [D-048](../record/DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)
+  [D-048](../record/DECISIONS.md#d-048--cockpit-resilience)
   superseded its last function. It is NOT armed and nothing
   reaches for it; what it proved is kept as record —
   [cloud-clerk](../record/specs/cloud-clerk.md), C1–C6 green.)
@@ -245,7 +245,7 @@ re-reply.
   lives at
   [SETUP §Models & effort](../SETUP.md#once-and-done--cloud-accounts)
   per
-  [D-045](../record/DECISIONS.md#d-045--2026-07--hands-doctrine-solo--subagents--agent-team--lanes--the-litmus-is-one-bench-many-hands-vs-many-benches-vs-read-only-upholds-d-020-and-d-041).
+  [D-045](../record/DECISIONS.md#d-045--hands-doctrine).
 
 Sources:
 [dispatch law](../LAWS.md#workflow-non-negotiable)
@@ -253,7 +253,7 @@ Sources:
 ## Cloud spawn — route ladder
 Flown 2026-07-16 by the delegation maiden flight; the recipe of
 record below is
-[D-043](../record/DECISIONS.md#d-043--2026-07--cloud-ignition--away-command-redesign--route-ladder-v2-ready-flip-then-label-is-the-recipe-of-record-api-ignition-and-the-cloud-clerk-staged-the-claude-app-the-single-away-surface-amends-d-041-upholds-the-lane-law-and-the-wake-lock)'s
+[D-043](../record/DECISIONS.md#d-043--cloud-ignition-and-away-command-redesign)'s
 interim route 1:
 
 1. **Label-spawn — recipe of record: ready-flip, then label.** On
@@ -315,7 +315,7 @@ Maiden flight — verify (flown 2026-07-16; results of record):
       proxy
 - [ ] dormant-baton case — deferred, and its expected retirer is
       gone: the cloud clerk was to close it
-      ([D-043](../record/DECISIONS.md#d-043--2026-07--cloud-ignition--away-command-redesign--route-ladder-v2-ready-flip-then-label-is-the-recipe-of-record-api-ignition-and-the-cloud-clerk-staged-the-claude-app-the-single-away-surface-amends-d-041-upholds-the-lane-law-and-the-wake-lock);
+      ([D-043](../record/DECISIONS.md#d-043--cloud-ignition-and-away-command-redesign);
       verified + PRIMARY 2026-07-17 —
       [cloud-clerk](../record/specs/cloud-clerk.md)) but was retired
       2026-07-22. The case now falls to the cockpit, and stays open

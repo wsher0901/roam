@@ -17,7 +17,7 @@ shipped: 2026-07-23 23:38
 [pickup](../../skills/pickup.md) ·
 [TEMPLATE](../../memory/TEMPLATE.md) · [IDEAS](../../IDEAS.md) ·
 [HOME](../../HOME.md) ·
-[D-049](../DECISIONS.md#d-049--2026-07--gh-second-path--gh-api-rest-through-the-github-proxy-is-the-cockpits-second-api-path-a-connector-flap-stops-costing-command-r2-gains-the-automatic-gh-rung-self-id-by-session-env-amends-d-048-corrects-the-193-api-map-upholds-d-047-and-verify-before-rely)
+[D-049](../DECISIONS.md#d-049--gh-second-path)
 (the self-URL the residue sweep and self-seat idea build on)
 
 ## Goal

@@ -12,7 +12,7 @@ shipped: 2026-07-16 23:12
 # maiden-flight-report — block 2, the flight closed on paper
 
 **Links:**
-[D-041 — delegation architecture](../DECISIONS.md#d-041--2026-07--delegation-architecture--the-away-mode-chooser-go-remote-tether-idle-wait-label-spawned-cloud-amends-d-032s-wake-lock-and-the-dispatch-law-upholds-the-baton-law-and-d-009)
+[D-041 — delegation architecture](../DECISIONS.md#d-041--delegation-architecture)
 · [parallel-lanes §Cloud spawn](../../skills/parallel-lanes.md#cloud-spawn--route-ladder)
 · [SETUP §Staged](../../SETUP.md#staged--turns-on-when-its-stage-opens) ·
 [SETUP §cloud](../../SETUP.md#once-and-done--cloud-accounts) ·

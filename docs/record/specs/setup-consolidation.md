@@ -18,8 +18,8 @@ shipped: 2026-07-13
 [DESIGN-KICKOFF](../../DESIGN-KICKOFF.md) ·
 [machine-setup](../../skills/machine-setup.md) ·
 Decisions:
-[D-029](../DECISIONS.md#d-029--2026-07--corpus-writing-laws--readability-first-links-below-prose) ·
-[D-030](../DECISIONS.md#d-030--2026-07--setup-consolidation--setupmd-equipment-plan-and-project-policy-retired-extends-d-024s-retirement-pattern-amends-the-d-021-consolidation-split)
+[D-029](../DECISIONS.md#d-029--corpus-writing-laws) ·
+[D-030](../DECISIONS.md#d-030--setup-consolidation)
 
 ## Goal
 The workshop's tooling inventory lives in one listing-style file

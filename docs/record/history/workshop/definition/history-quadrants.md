@@ -27,7 +27,7 @@ owner of the locked format and the post-D-032 Status vocabulary the
 wake-lock reads; [ship](../../../../skills/ship.md) §4/§7 and
 [handoff](../../../../skills/handoff.md) §3/§4 now point at TEMPLATE
 instead of re-enumerating. Recorded as
-[D-034](../../../DECISIONS.md#d-034--2026-07--history-quadrants--productworkshop--definitionimplementation-memory-template-owns-format--status-vocabulary-extends-d-024s-narrative-layer-and-d-032s-states).
+[D-034](../../../DECISIONS.md#d-034--history-quadrants).
 
 ## Pending issues
 none
@@ -63,7 +63,7 @@ No deviations from the brief.
 ## Where to look
 Spec: [history-quadrants](../../../specs/history-quadrants.md) ·
 decision:
-[D-034](../../../DECISIONS.md#d-034--2026-07--history-quadrants--productworkshop--definitionimplementation-memory-template-owns-format--status-vocabulary-extends-d-024s-narrative-layer-and-d-032s-states)
+[D-034](../../../DECISIONS.md#d-034--history-quadrants)
 · PR [#108](https://github.com/wsher0901/roam/pull/108) · legend:
 [history/README](../../README.md) · vocabulary:
 [TEMPLATE §Status vocabulary](../../../../memory/TEMPLATE.md#status-vocabulary).

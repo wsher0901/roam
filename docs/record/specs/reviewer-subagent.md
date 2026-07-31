@@ -47,7 +47,7 @@ answered both in one reply, both reversible by a later
 2. **Model + effort — Sonnet 5 · high**, per the
    [Models & effort doctrine](../../SETUP.md#once-and-done--cloud-accounts).
    — SUPERSEDED 2026-07-24 by
-   [D-055](../DECISIONS.md#d-055--2026-07--agent-teams--the-boundary-teams-are-for-exploration-and-review-at-a-ground-seat-lanes-remain-the-authorship-mechanism-two-risks-become-law-single-sitting-only--an-explicit-carve-out-to-d-050s-interrupt-promise--and-a-teammate-authored-diff-is-self-authored-under-no-solo-approval-the-reviewers-model-settled-by-verification-not-guess-the-founder-side-config-recorded-upholds-the-lane-law-no-solo-approval-and-one-home-gives-the-experimental-flag-its-consumer):
+   [D-055](../DECISIONS.md#d-055--agent-teams-the-boundary):
    the critic now runs `model: opus` · `effort: high` — the alias,
    verified to resolve to Opus 5. The founder's answer above is
    kept as the record of what was decided in 2026-07;

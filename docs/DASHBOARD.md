@@ -34,7 +34,7 @@ Nothing in flight — the floor is clear.
   diet has no named next file.
 
 The standing order
-([D-060](record/DECISIONS.md#d-060--2026-07--the-three-phase-standing-order--settle-and-test-the-vault-then-roam-v1s1t3t6-and-v1s2t5-are-paused-until-phase-2-closes-the-founders-2026-07-28-sequencing-recorded-per-laws-pause-routing-upholds-the-pacing-law)),
+([D-060](record/DECISIONS.md#d-060--the-three-phase-standing-order)),
 one phase per line:
 
 - PHASE 1 — settle & test: benches done; the first-story shakedown

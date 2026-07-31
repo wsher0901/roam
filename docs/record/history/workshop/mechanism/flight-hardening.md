@@ -60,7 +60,7 @@ this diff:
    environment's setup script" — the precise act this PR proves
    cannot succeed, under the old environment name. The board is
    ritual-repainted, so the SHIP TAIL corrected it.
-2. [D-047](../../../DECISIONS.md#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law)'s
+2. [D-047](../../../DECISIONS.md#d-047--cloud-born-cockpit)'s
    clause 1 still records the pty-wrapper shape as the primary
    birth. FOUNDER'S RULING at the gate: leave D-047 untouched —
    DECISIONS entries are never annotated after the fact in this

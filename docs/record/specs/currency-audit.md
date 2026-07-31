@@ -17,11 +17,11 @@ shipped: 2026-07-23 21:29
 the class of defect this hunts:
 [clerk-retirement](../history/workshop/mechanism/clerk-retirement.md)
 ([#197](https://github.com/wsher0901/roam/pull/197)) ·
-[D-046](../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+[D-046](../DECISIONS.md#d-046--flight-cockpit-the-control-tower-online)
 ·
-[D-047](../DECISIONS.md#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law)
+[D-047](../DECISIONS.md#d-047--cloud-born-cockpit)
 ·
-[D-048](../DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)
+[D-048](../DECISIONS.md#d-048--cockpit-resilience)
 
 ## Goal
 
@@ -79,9 +79,9 @@ supersession note naming what replaced it — nothing more.
 
 | Law | What it makes current |
 |---|---|
-| [D-046](../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock) | cockpit = the control tower online; no-solo-approval; CC-direct surface doctrine; Remote Control demoted to backstop |
-| [D-047](../DECISIONS.md#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law) | `--cloud` birth is the route of record; the routine demoted to backstop |
-| [D-048](../DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047) | the connector ladder; the summon workflow; the tombstone |
+| [D-046](../DECISIONS.md#d-046--flight-cockpit-the-control-tower-online) | cockpit = the control tower online; no-solo-approval; CC-direct surface doctrine; Remote Control demoted to backstop |
+| [D-047](../DECISIONS.md#d-047--cloud-born-cockpit) | `--cloud` birth is the route of record; the routine demoted to backstop |
+| [D-048](../DECISIONS.md#d-048--cockpit-resilience) | the connector ladder; the summon workflow; the tombstone |
 | [#193](https://github.com/wsher0901/roam/pull/193) | board-governs; the API dependency map |
 | [#197](https://github.com/wsher0901/roam/pull/197) | the clerk is retired — routine deleted |
 
@@ -101,10 +101,10 @@ record and out of scope by the governing principle.
 | [skills/liftoff.md](../../skills/liftoff.md) §6 | the `[COCKPIT] roam — <date>` TITLE LINE still reads "UNPROVEN — confirm at the next birth, record the answer here, and drop the line if it does nothing". The confirmation HAPPENED: the 2026-07-23 birth carried the line and the platform ignored it, auto-titling from charter content. | [#202](https://github.com/wsher0901/roam/pull/202)'s harvest, executing [#193](https://github.com/wsher0901/roam/pull/193)'s own verify-before-rely instruction |
 | [SETUP.md](../../SETUP.md) §cloud accounts | the same title line, second home: the birth-prompt composition still lists it as a component | same |
 | [HOME.md](../../HOME.md) §The five rituals | liftoff "ends by FIRING THE COCKPIT with that flight plan **as its payload**" — the pre-board-governs model | [#193](https://github.com/wsher0901/roam/pull/193): the board IS the flight plan; the birth prompt is a pointer, never its carrier |
-| [HOME.md](../../HOME.md) §The files | FOUNDATION's writer reads "founder-approved PRs (paste block + D-number)" — asserts the paste block as a required write path, and disagrees with HOME's own routing table | [D-046](../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock) — CC-direct is standard; the relay is a tool, not a requirement |
+| [HOME.md](../../HOME.md) §The files | FOUNDATION's writer reads "founder-approved PRs (paste block + D-number)" — asserts the paste block as a required write path, and disagrees with HOME's own routing table | [D-046](../DECISIONS.md#d-046--flight-cockpit-the-control-tower-online) — CC-direct is standard; the relay is a tool, not a requirement |
 | [HOME.md](../../HOME.md) §Equipment | "The skills, one line each" omits [go-remote](../../skills/go-remote.md) entirely — eight of nine named | routing law: every living file wants a home |
 | [HOME.md](../../HOME.md) §Delegation | "The cloud launch route is proven once, at the maiden flight, which records which route won" — reads as pending; the maiden flew 2026-07-16 and route 1 won | [parallel-lanes §Cloud spawn](../../skills/parallel-lanes.md#cloud-spawn--route-ladder) records the winner |
-| [skills/machine-setup.md](../../skills/machine-setup.md) | ACCURATE BUT INCOMPLETE: the canonical per-machine procedure never mentions the `COCKPIT_` pair, though [SETUP §cloud accounts](../../SETUP.md#once-and-done--cloud-accounts) says each seat must paste it and the board tracks it as an open seat debt. A seat could finish machine-setup and still not be able to fire `fire:cockpit` or the summon self-rescue. | [D-047](../DECISIONS.md#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law) (rung 3) · [D-048](../DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047) (self-rescue) |
+| [skills/machine-setup.md](../../skills/machine-setup.md) | ACCURATE BUT INCOMPLETE: the canonical per-machine procedure never mentions the `COCKPIT_` pair, though [SETUP §cloud accounts](../../SETUP.md#once-and-done--cloud-accounts) says each seat must paste it and the board tracks it as an open seat debt. A seat could finish machine-setup and still not be able to fire `fire:cockpit` or the summon self-rescue. | [D-047](../DECISIONS.md#d-047--cloud-born-cockpit) (rung 3) · [D-048](../DECISIONS.md#d-048--cockpit-resilience) (self-rescue) |
 
 ### RECORD-NEEDS-SUPERSESSION-NOTE — note only, never a rewrite
 
@@ -196,10 +196,10 @@ LIVING-STALE fixes, four dated supersession notes.
 | 1 | [skills/liftoff.md](../../skills/liftoff.md) §6 | the `[COCKPIT] roam — <date>` title line dropped from the birth-prompt composition; the TITLE LINE paragraph now records the verify-before-rely answer in place — DISPROVEN at the 2026-07-23 birth, the platform auto-titles from charter content; the session-list doctrine kept unchanged | [#202](https://github.com/wsher0901/roam/pull/202)'s harvest, executing [#193](https://github.com/wsher0901/roam/pull/193)'s own instruction |
 | 2 | [SETUP §cloud accounts](../../SETUP.md#once-and-done--cloud-accounts) | the title line dropped from the exact-command-shape sentence; a no-title-line note names [liftoff §6](../../skills/liftoff.md#6--ledger-handoff--fire-the-cockpit) as the answer of record | same |
 | 3 | [HOME §The rituals](../../HOME.md#the-rituals) | the liftoff portrait no longer fires the cockpit "with that flight plan as its payload" — it now says the board IS the flight plan, the birth prompt only points at it, and the board governs where they disagree | [#193](https://github.com/wsher0901/roam/pull/193) |
-| 4 | [HOME §The files](../../HOME.md#the-files--what-each-one-is-for) | FOUNDATION's writer: "founder-approved PRs (paste block + D-number)" → "founder-approved PRs (+ D-number)" | [D-046](../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock) |
+| 4 | [HOME §The files](../../HOME.md#the-files--what-each-one-is-for) | FOUNDATION's writer: "founder-approved PRs (paste block + D-number)" → "founder-approved PRs (+ D-number)" | [D-046](../DECISIONS.md#d-046--flight-cockpit-the-control-tower-online) |
 | 5 | [HOME §Equipment](../../HOME.md#equipment--environment) | the skills list names all nine — [go-remote](../../skills/go-remote.md) added ("the phone tether, the backstop away posture"), plus its Sources line | the routing law |
 | 6 | [HOME §Delegation](../../HOME.md#delegation--the-away-mode-chooser) | the pending-voiced maiden sentence now names the recorded winner: route 1 — label-spawn, ready-flip then label, 2026-07-16 | [parallel-lanes §Cloud spawn](../../skills/parallel-lanes.md#cloud-spawn--route-ladder) |
-| 7 | [skills/machine-setup.md](../../skills/machine-setup.md) | the one-time-per-machine list gains item 11: the `COCKPIT_` pair, pointing at [SETUP §cloud accounts](../../SETUP.md#once-and-done--cloud-accounts) for the recipe — a pointer, never a second copy of the secret path | [D-047](../DECISIONS.md#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law) (rung 3) |
+| 7 | [skills/machine-setup.md](../../skills/machine-setup.md) | the one-time-per-machine list gains item 11: the `COCKPIT_` pair, pointing at [SETUP §cloud accounts](../../SETUP.md#once-and-done--cloud-accounts) for the recipe — a pointer, never a second copy of the secret path | [D-047](../DECISIONS.md#d-047--cloud-born-cockpit) (rung 3) |
 
 ### B.2 — the four supersession notes
 
@@ -209,7 +209,7 @@ was rewritten anywhere.
 
 | File | The note says |
 |---|---|
-| [cloud-clerk](cloud-clerk.md) | clerk RETIRED 2026-07-22, routine deleted; [D-046](../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)/[D-048](../DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047) supersede, [#197](https://github.com/wsher0901/roam/pull/197) executed; everything below is record, nothing can fire |
+| [cloud-clerk](cloud-clerk.md) | clerk RETIRED 2026-07-22, routine deleted; [D-046](../DECISIONS.md#d-046--flight-cockpit-the-control-tower-online)/[D-048](../DECISIONS.md#d-048--cockpit-resilience) supersede, [#197](https://github.com/wsher0901/roam/pull/197) executed; everything below is record, nothing can fire |
 | [clerk-notify](clerk-notify.md) | the standing watch can no longer be armed; what duty 6 proved lives on as the cockpit charter's turn-end report |
 | [clerk-autospawn](clerk-autospawn.md) | `fire:clerk` gone, a stale target fails honestly; the proven API-fire lives on as `fire:cockpit`, the birth ladder's routine-fire rung |
 | [cloud-born-cockpit](cloud-born-cockpit.md) | the D-047 decision STANDS; the two DISPROVEN recipes named (the `winpty` capture shape · the `gh` install), each with its correction of record ([liftoff §6](../../skills/liftoff.md#6--ledger-handoff--fire-the-cockpit) · [SETUP §cloud accounts](../../SETUP.md#once-and-done--cloud-accounts) · [flight-hardening](flight-hardening.md)) |
@@ -222,14 +222,14 @@ THE GATE for the founder's word.
 **[skills/go-remote.md](../../skills/go-remote.md) — KEEP AS IS. No
 retirement, no new annotation.** It already carries the backstop
 annotation this bench went looking for, in its §0, naming
-[D-046](../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+[D-046](../DECISIONS.md#d-046--flight-cockpit-the-control-tower-online)
 and stating "machine-off + the cockpit is the standard away plan;
 tether only when the machine must stay on". [SETUP §Per
 machine](../../SETUP.md#per-machine-procedure-machine-setup-skill) and
 [HOME §Delegation](../../HOME.md#delegation--the-away-mode-chooser)
 agree. Retiring it would be wrong on the merits: a machine that must
 stay on is a real case the cockpit does not cover, and
-[D-046](../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+[D-046](../DECISIONS.md#d-046--flight-cockpit-the-control-tower-online)
 explicitly REJECTED full Remote Control retirement (alternative ②b).
 Demoted is not dead.
 
@@ -244,7 +244,7 @@ mechanical): one per-machine bullet pointing at
 for the recipe — a pointer, never a second copy of the secret path.
 
 **[skills/recall.md](../../skills/recall.md) — CURRENT, no change.**
-Post-[D-047](../DECISIONS.md#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law)/[D-048](../DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)
+Post-[D-047](../DECISIONS.md#d-047--cloud-born-cockpit)/[D-048](../DECISIONS.md#d-048--cockpit-resilience)
 it holds up: it is a READ path, it names no vehicle, and its routing
 table points only at homes that still exist. Its honesty rails even
 anticipate this bench — frozen wording is quoted as historical with
@@ -334,7 +334,7 @@ the founder's word.
 
 **The next bench: [WEB-INSTRUCTIONS.md](../../WEB-INSTRUCTIONS.md) v5.**
 It carries the Project-instructions master at v4 — written around the
-paste-block loop, with no cockpit in it. Post-[D-046](../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+paste-block loop, with no cockpit in it. Post-[D-046](../DECISIONS.md#d-046--flight-cockpit-the-control-tower-online)
 that master is stale in its bones, not at its edges, so it needs a
 full rewrite rather than the mechanical fixes this bench applies.
 Deliberately untouched here.

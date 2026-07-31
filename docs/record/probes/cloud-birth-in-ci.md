@@ -17,7 +17,7 @@ than delete a result that cost a flight to learn.
 cockpit by running `claude --cloud` itself under a real pty — so
 that even an emergency cockpit lands in the phone's general
 session list — instead of the routine fire `summon.yml` uses
-([D-048](../DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)),
+([D-048](../DECISIONS.md#d-048--cockpit-resilience)),
 which yields a list-INVISIBLE session?
 
 **THE RESULT, three gates deep.**
@@ -53,12 +53,12 @@ into CI for an uncertain payoff.
 repository secrets and retry — it may be the last gate, or reveal
 another (org-scoped auth the setup-token may not carry). It bears
 on
-[D-047](../DECISIONS.md#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law)'s
+[D-047](../DECISIONS.md#d-047--cloud-born-cockpit)'s
 list-native-beats-sturdy choice: if a list-native rescue is ever
 wanted, this is the path and the org-UUID gate is its remaining
 wall.
 
 Sources:
-[D-047](../DECISIONS.md#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law) ·
-[D-048](../DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047) ·
+[D-047](../DECISIONS.md#d-047--cloud-born-cockpit) ·
+[D-048](../DECISIONS.md#d-048--cockpit-resilience) ·
 [cockpit-resilience](../specs/cockpit-resilience.md)

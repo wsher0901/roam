@@ -23,9 +23,9 @@ What it was: the founder's away-mode concierge — a manually-born
 `claude.ai/code` session on wsher0901/roam with a narrow
 read-and-relay charter, cap-free by construction (a plain session,
 not a routine), born by paste. Superseded by
-[D-046](../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+[D-046](../DECISIONS.md#d-046--flight-cockpit-the-control-tower-online)
 (the cockpit) and
-[D-048](../DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)
+[D-048](../DECISIONS.md#d-048--cockpit-resilience)
 (the connector ladder). Its duty 6 is the ancestor of the cockpit
 charter's rule 5 — the turn-end report IS the notification.
 

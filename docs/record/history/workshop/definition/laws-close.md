@@ -23,7 +23,7 @@ six-section sit-down: the exit table (what you left → its state
 now → your move) · RECENT SUMMARY in plain prose · PENDING ISSUES ·
 OPEN CHAT + DESIGN DISCUSSION · NEEDS YOUR ATTENTION · NEXT —
 ritual self-narration silent. Recorded as
-[D-037](../../../DECISIONS.md#d-037--2026-07--pickup-speaks-the-founders-shape--exit-table--recent-summary--pending-issues-laws-binds-the-routing-law-completes-d-036).
+[D-037](../../../DECISIONS.md#d-037--pickup-speaks-the-founders-shape).
 
 ## Pending issues
 One verification nuance, resolved and reported at THE GATE: the
@@ -53,7 +53,7 @@ verbatim title remains a founder-written placeholder on the board.
 
 ## Where to look
 Spec: [laws-close](../../../specs/laws-close.md) · decision:
-[D-037](../../../DECISIONS.md#d-037--2026-07--pickup-speaks-the-founders-shape--exit-table--recent-summary--pending-issues-laws-binds-the-routing-law-completes-d-036)
+[D-037](../../../DECISIONS.md#d-037--pickup-speaks-the-founders-shape)
 · PR [#115](https://github.com/wsher0901/roam/pull/115) · targets:
 [LAWS §Knowledge & tracking](../../../../LAWS.md#knowledge--tracking) ·
 [pickup §5](../../../../skills/pickup.md).

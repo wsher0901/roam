@@ -39,7 +39,7 @@ needed. Gates green — run the mandate."
 ## What this task is
 
 D-047, amending
-[D-046](../../../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+[D-046](../../../DECISIONS.md#d-046--flight-cockpit-the-control-tower-online)
 clause 3, one theme: the cockpit's birth vehicle becomes
 `claude --cloud` (list-native on every device); the routine fire
 drops to the fallback rung, remaining the summon button's engine.
@@ -47,7 +47,7 @@ Three evidence gates preceded the mandate — flight/track check,
 seed-provenance + branch-create probe, the founder's phone-list
 check — because the vehicle's ancestor (`--remote`) bundle-seeded
 sandboxes and destroyed batch-1 T3+T5 at the
-[D-020](../../../DECISIONS.md#d-020--2026-07--parallel-lanes-v2-native-lanes-replace-hand-built-orchestration)
+[D-020](../../../DECISIONS.md#d-020--parallel-lanes-v2)
 turn. Contract: [the spec](../../../specs/cloud-born-cockpit.md).
 Founder kickoff 2026-07-21, its terms carried into the spec
 verbatim; scope edges: docs only, nothing outside DECISIONS ·
@@ -183,9 +183,9 @@ under).
 
 - [The spec](../../../specs/cloud-born-cockpit.md) — contract, gates,
   done-means.
-- [D-047](../../../DECISIONS.md#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law)
+- [D-047](../../../DECISIONS.md#d-047--cloud-born-cockpit)
   — this bench's decision;
-  [D-046](../../../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+  [D-046](../../../DECISIONS.md#d-046--flight-cockpit-the-control-tower-online)
   — the amended decision;
   [flight-cockpit](../../../specs/flight-cockpit.md) the precedent
   bench.

@@ -11,15 +11,15 @@ shipped: 2026-07-13
 ---
 # roadmap-recut — ROADMAP recut: plain-language V1, completion criteria, per-family vetting outputs
 **Links:** [ROADMAP](../../ROADMAP.md) · [HOME](../../HOME.md) · Decisions:
-[D-020](../DECISIONS.md#d-020--2026-07--parallel-lanes-v2-native-lanes-replace-hand-built-orchestration) ·
-[D-022](../DECISIONS.md#d-022--2026-07--version-ladder--lifespan-split-amends-d-004) ·
+[D-020](../DECISIONS.md#d-020--parallel-lanes-v2) ·
+[D-022](../DECISIONS.md#d-022--version-ladder-and-lifespan-split) ·
 Terms: [version / stage / task](../../HOME.md#terms)
 
 ## Goal
 Make [ROADMAP](../../ROADMAP.md) a clean plain-language read (living-plan
 note, prose V1 goal), rename Done-when → Completion criteria, and
 align T3–T6 outputs with
-[D-020](../DECISIONS.md#d-020--2026-07--parallel-lanes-v2-native-lanes-replace-hand-built-orchestration)'s
+[D-020](../DECISIONS.md#d-020--parallel-lanes-v2)'s
 lane-disjoint rule.
 
 ## Out of scope

@@ -9,11 +9,11 @@ pr: 51
 
 ## What shipped
 
-([D-020](../../../DECISIONS.md#d-020--2026-07--parallel-lanes-v2-native-lanes-replace-hand-built-orchestration))
+([D-020](../../../DECISIONS.md#d-020--parallel-lanes-v2))
 · Lanes now run as Claude Code background agents or worktree
 sessions with a draft PR from birth and every commit pushed — the
 hand-built cloud-session launch machinery
-([D-016](../../../DECISIONS.md#d-016--2026-06--parallel-ready-menu-amends-d-009)–[D-019](../../../DECISIONS.md#d-019--2026-06--launch-mechanics-correction-amends-d-017)
+([D-016](../../../DECISIONS.md#d-016--parallel-ready-menu)–[D-019](../../../DECISIONS.md#d-019--launch-mechanics-correction)
 mechanics) is retired, [CLAUDE.md](../../../../../CLAUDE.md) is slimmed, and the
 equipment plan moves to a skill →
 [PR #51](https://github.com/wsher0901/roam/pull/51)

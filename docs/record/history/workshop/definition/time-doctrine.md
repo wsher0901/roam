@@ -13,7 +13,7 @@ founder's word. Flown end-to-end by a LOCAL lane (worktree +
 background session, Sonnet 5) as leg B of the delegation maiden
 flight; the cockpit welded on approval. Every gate waited on the
 pushed commit's Actions run going green
-([D-038](../../../DECISIONS.md#d-038--2026-07--ci-is-the-arbiter--actions-green-required-at-every-gate-local-gate-mirrors-all-six-ci-steps-d-anchors-born-resolving-upholds-d-027)).
+([D-038](../../../DECISIONS.md#d-038--ci-is-the-arbiter)).
 
 ## What this task is
 Three exact, fully-specified edits

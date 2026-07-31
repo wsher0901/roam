@@ -15,13 +15,13 @@ shipped: 2026-07-29 12:17
 **Links:**
 [COCKPIT-CHARTER](../../COCKPIT-CHARTER.md) (the master being
 recut) · [HOME](../../HOME.md) (where the ladder lands) ·
-[D-064](../DECISIONS.md#d-064--2026-07--the-box-master-class--the-setup-entry-contract--every-external-box-master-is-its-own-top-level-file-on-the-web-instructions-pattern-cockpit-chartermd-and-lane-workermd-extracted-verbatim-setup-compresses-to-a-replication-spec-under-the-entry-contract-what--where--values--verify--source-design-kickoff-joins-the-class-on-paper)
+[D-064](../DECISIONS.md#d-064--the-box-master-class-and-setup-entry-contract)
 (the class this refines) · source: the founder's approved v3 text,
 Web ops chat 2026-07-29.
 
 ## Goal
 
-[D-064](../DECISIONS.md#d-064--2026-07--the-box-master-class--the-setup-entry-contract--every-external-box-master-is-its-own-top-level-file-on-the-web-instructions-pattern-cockpit-chartermd-and-lane-workermd-extracted-verbatim-setup-compresses-to-a-replication-spec-under-the-entry-contract-what--where--values--verify--source-design-kickoff-joins-the-class-on-paper)
+[D-064](../DECISIONS.md#d-064--the-box-master-class-and-setup-entry-contract)
 gave box masters their own files; it did not say what belongs
 INSIDE one. This bench answers that with THE BOX-MASTER DIET: a
 master carries STANDING RULES, INVARIANTS, and POINTERS.
@@ -39,9 +39,9 @@ dependency map that already explains it.
 
 - **Repealing anything.** The ladder, the tombstone scripts and
   the cap arithmetic all survive — they RELOCATE. This amends
-  [D-061](../DECISIONS.md#d-061--2026-07--the-landing-doctrine-recut-to-three-scenarios--the-cockpits-standing-job-advise-on-fleet-status-and-on-each-gate-reaching-decision-execute-the-founders-rulings-from-the-phone-auto-land-when-the-fleet-empties-and-nothing-awaits-the-founder-desk-takeover-when-pickup-finds-a-live-cockpit-holding-decisions-and-the-founders-freeze-unchanged-the-tombstone-wake-rule-makes-a-superseded-cockpit-retire-by-the-full-ritual-amends-d-054s-two-mode-routing-upholds-no-solo-approval-and-the-derivation-law)
+  [D-061](../DECISIONS.md#d-061--the-landing-doctrine-recut-to-three-scenarios)
   and
-  [D-048](../DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)
+  [D-048](../DECISIONS.md#d-048--cockpit-resilience)
   BY RELOCATION, never by repeal.
 - **Cutting the other masters.** [LANE-WORKER](../../LANE-WORKER.md)
   and [WEB-INSTRUCTIONS](../../WEB-INSTRUCTIONS.md) are governed

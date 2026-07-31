@@ -9,7 +9,7 @@ pr: 23
 
 ## What shipped
 
-([D-008](../../../DECISIONS.md#d-008--2026-06--cockpit-derived-state-automatic-recording))
+([D-008](../../../DECISIONS.md#d-008--cockpit-derived-state-automatic-recording))
 · New [HOME.md](../../../../HOME.md) answers where every kind of information
 lives, which tool to use, and what the daily loop is; the rituals
 are upgraded so recording and status come from the system instead

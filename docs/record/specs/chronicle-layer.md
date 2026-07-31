@@ -1,7 +1,7 @@
 ---
 type: spec
 id: chronicle-layer
-title: The chronicle layer — living stories above the frozen record, and the census that shelves them ([D-059](../DECISIONS.md#d-059--2026-07--the-chronicle-layer--living-stories-above-the-frozen-record-one-story-per-item-the-ending-rule--settled-in-any-format-means-the-story-is-written-a-later-fix-is-incorporated-and-the-ending-rewritten-at-that-weld-retirement-is-a-settlement-docschronicle-one-file-per-story-indexmd-shelving-four-shelves-immutability-beneath--record-untouched-stories-link-down-as-footnotes-down-links-only--a-story-never-cites-another-storys-prose-supersedes-the-07-23-three-chapter-shape-the-ship-synthesis-at-weld-step-deferred-to-the-first-story-weld))
+title: The chronicle layer — living stories above the frozen record, and the census that shelves them ([D-059](../DECISIONS.md#d-059--the-chronicle-layer))
 status: shipped
 stage: workshop
 branch: docs/chronicle-layer
@@ -13,7 +13,7 @@ shipped: 2026-07-27 21:34
 # chronicle-layer — the story layer is decided; the census drafts its shelves
 
 **Links:**
-[D-059](../DECISIONS.md#d-059--2026-07--the-chronicle-layer--living-stories-above-the-frozen-record-one-story-per-item-the-ending-rule--settled-in-any-format-means-the-story-is-written-a-later-fix-is-incorporated-and-the-ending-rewritten-at-that-weld-retirement-is-a-settlement-docschronicle-one-file-per-story-indexmd-shelving-four-shelves-immutability-beneath--record-untouched-stories-link-down-as-footnotes-down-links-only--a-story-never-cites-another-storys-prose-supersedes-the-07-23-three-chapter-shape-the-ship-synthesis-at-weld-step-deferred-to-the-first-story-weld)
+[D-059](../DECISIONS.md#d-059--the-chronicle-layer)
 · queue: the founder's 2026-07-27 three-bench mandate (bench 3 of
 3, after the record shelf
 ([#229](https://github.com/wsher0901/roam/pull/229)) and ATLAS
@@ -59,7 +59,7 @@ veto.
    gains one routing-table line (stories → chronicle/), the IDEAS
    07-23 line closes citing the decide.
 3. THE CENSUS, per [HOME §Agent teams](../../HOME.md#agent-teams)
-   and the [D-056](../DECISIONS.md#d-056--2026-07--team-aware-leaving-rituals--no-ritual-lets-a-live-agent-team-outlive-the-sitting-that-made-it-handoff-shuts-the-team-down-before-parking-anything-and-captures-its-findings-into-the-record-first-land-states-the-cockpit-cannot-lead-a-team-case-once-and-routes-the-ground-seat-to-handoff-pickup-gains-the-ghost-teammate-recovery-note-and-the--block-gains-what-the-team-had-found-closes-d-055s-deferred-gap-upholds-one-home-and-the-park-protocol)
+   and the [D-056](../DECISIONS.md#d-056--team-aware-leaving-rituals)
    leaving duty: a ground-seat team, one sitting, exploration
    only — three teammates (away surface · lane system ·
    information system), read-only toolsets, each reading the

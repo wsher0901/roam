@@ -15,14 +15,14 @@ shipped: 2026-07-29 10:31
 **Links:**
 [WEB-INSTRUCTIONS](../../WEB-INSTRUCTIONS.md) (the pattern being
 generalized) · [SETUP](../../SETUP.md) (the file being relieved) ·
-[D-063](../DECISIONS.md#d-063--2026-07--response-doctrine-v2--web-instructions-v6--two-channels-sentences-for-the-founder-fenced-blocks-for-machines-process-is-proof-not-prose-the-chat-start-ingest-contract-the-relay-rule--origin-is-the-only-courier-codes-output-is-never-pasted-to-web-reviews-speak-in-goal-and-outcome-the-core-file-alert-the-agenda-convention-brief-renders-the-full-picture-the-master-gains-a-version-history-amends-d-052)
+[D-063](../DECISIONS.md#d-063--response-doctrine-v2-and-web-instructions-v6)
 (where the pattern was proven) · source: the founder's approved
 SETUP-recut plan, Web ops chat 2026-07-29.
 
 ## Goal
 
 [WEB-INSTRUCTIONS](../../WEB-INSTRUCTIONS.md) proved a shape at
-[D-063](../DECISIONS.md#d-063--2026-07--response-doctrine-v2--web-instructions-v6--two-channels-sentences-for-the-founder-fenced-blocks-for-machines-process-is-proof-not-prose-the-chat-start-ingest-contract-the-relay-rule--origin-is-the-only-courier-codes-output-is-never-pasted-to-web-reviews-speak-in-goal-and-outcome-the-core-file-alert-the-agenda-convention-brief-renders-the-full-picture-the-master-gains-a-version-history-amends-d-052):
+[D-063](../DECISIONS.md#d-063--response-doctrine-v2-and-web-instructions-v6):
 a master for an external box is its OWN top-level file, carrying
 its own laws (box-is-a-copy · re-save after any edit · FULL COPY,
 ALWAYS), one fenced master, and a version-history table. This

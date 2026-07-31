@@ -16,5 +16,5 @@ line; the storage-shape laws in
 and [Appendix B](FACTS.md#appendix-b--plan-parameters-t7-must-schema-not-world-facts);
 the telemetry tables in
 [FACTS Appendix C4](FACTS.md#c4--storage-note-for-v1s1t7);
-and [D-015](../record/DECISIONS.md#d-015--2026-06--data-asset-law-bitemporal-append-only-license-segmented)'s
+and [D-015](../record/DECISIONS.md#d-015--data-asset-law)'s
 license-segmented layers.

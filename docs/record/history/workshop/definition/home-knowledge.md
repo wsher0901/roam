@@ -25,7 +25,7 @@ pointers ([§Reading the board](../../../../HOME.md#reading-the-board)
 + the board spec in [handoff §4](../../../../skills/handoff.md));
 handoff §4's Sessions bullet gained the plain-header rule so the
 board's Sessions anchor survives every repaint. Recorded as
-[D-036](../../../DECISIONS.md#d-036--2026-07--information-routing--one-home-per-class-append-vs-upsert-home-carries-the-table-sessions-anchor-stabilized).
+[D-036](../../../DECISIONS.md#d-036--information-routing-one-home-per-class).
 
 ## Pending issues
 none
@@ -51,7 +51,7 @@ sweep rather than silently diverging from the payload.
 ## Where to look
 Spec: [home-knowledge](../../../specs/home-knowledge.md) ·
 decision:
-[D-036](../../../DECISIONS.md#d-036--2026-07--information-routing--one-home-per-class-append-vs-upsert-home-carries-the-table-sessions-anchor-stabilized)
+[D-036](../../../DECISIONS.md#d-036--information-routing-one-home-per-class)
 · PR [#113](https://github.com/wsher0901/roam/pull/113) · the
 table:
 [HOME §Where information goes](../../../../HOME.md#where-information-goes)

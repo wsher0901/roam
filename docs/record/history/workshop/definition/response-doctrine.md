@@ -63,7 +63,7 @@ landed as top-level HOME sections between §Reading the board and
 §Where information goes — the board-reading manual, the
 response-reading manual, and the routing law now sit adjacent,
 all founder-facing. The card's teleport line carries the
-[D-049](../../../DECISIONS.md#d-049--2026-07--gh-second-path--gh-api-rest-through-the-github-proxy-is-the-cockpits-second-api-path-a-connector-flap-stops-costing-command-r2-gains-the-automatic-gh-rung-self-id-by-session-env-amends-d-048-corrects-the-193-api-map-upholds-d-047-and-verify-before-rely)
+[D-049](../../../DECISIONS.md#d-049--gh-second-path)
 relocation warning — the card is exactly where the founder will
 read it before teleporting.
 
@@ -75,7 +75,7 @@ PARALLEL/RECENT FLIGHTS (per-item 🟢/⏸ with exact resume words —
 the same information, decision-shaped); PENDING ISSUES folded
 into WHAT HAPPENED with its "No issues from last sitting." form
 kept; the ⏸ INTERRUPTED lead
-([D-050](../../../DECISIONS.md#d-050--2026-07--session-lifecycle--closed--dead-the-close-locks-wall-softens-to-injected-read-only-doctrine-interrupt-capture-is-standing-format-the-claude-residue-sweep-is-pickup-hygiene-ideas-is-an-inbox-not-an-archive-amends-the-d-046-era-close-wall-design-upholds-the-park-protocol-and-no-solo-approval))
+([D-050](../../../DECISIONS.md#d-050--session-lifecycle-closed-is-not-dead))
 stayed above everything, and the NEXT line survives — the pacing
 law wants it.
 
@@ -83,7 +83,7 @@ law wants it.
 Web a surface that "produces paste blocks" and Claude Code "the
 ONLY repo writer", and its §Loop taught the full relay — the
 exact doctrine
-[D-046](../../../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+[D-046](../../../DECISIONS.md#d-046--flight-cockpit-the-control-tower-online)
 retired. v5 leads with the MANDATORY job (the external review,
 with a four-step procedure ending in the on-the-record word-paste
 the founder hands to Code verbatim), maps all five surfaces, and
@@ -111,5 +111,5 @@ the clause labels.
   [HOME §Command card](../../../../HOME.md#command-card) — the two new
   homes.
 - [WEB-INSTRUCTIONS](../../../../WEB-INSTRUCTIONS.md) — v5.
-- [D-052](../../../DECISIONS.md#d-052--2026-07--response-doctrine--one-standard-for-every-surface-speaking-to-the-founder-answer-first-explicit-steps-purpose-shaped-explanation-live-derived-state-glyph-verdicts-the-command-card-the-fleet-table-report-the-ritual-status-templates-web-instructions-v5-ships-retires-the-v4-paste-block-loop-master-upholds-d-046s-cc-direct-doctrine-and-the-derivation-law)
+- [D-052](../../../DECISIONS.md#d-052--response-doctrine)
   — the decision, the founder's goal verbatim in the Why.

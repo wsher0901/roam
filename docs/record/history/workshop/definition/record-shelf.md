@@ -18,7 +18,7 @@ an external Web review before the founder's word: PASS on
 complete (138 edited + 17 exact), prose invariance proven
 mechanically (link targets blanked, all 155 pairs
 byte-identical; sole prose change in record/ = the
-[D-057](../../../DECISIONS.md#d-057--2026-07--the-record-shelf--the-frozen-record-moves-under-one-roof-docsrecord-is-born-history--specs--decisions-in-memory-stays-living-at-root-the-enabling-ruling--a-mechanical-link-path-segment-repair-inside-a-frozen-file-is-maintenance-not-a-content-edit-append-only-governs-meaning-not-bytes-intra-record-links-resolve-by-construction-upholds-append-only-one-home-and-the-weave-rule)
+[D-057](../../../DECISIONS.md#d-057--the-record-shelf)
 append), every internal link re-resolved under the reviewer's
 own resolver (2,870 checked, 0 real failures) independent of the
 hardened checker, gates re-run (links 3106/0 · ledger 97↔97 ·

@@ -11,7 +11,7 @@ Shipped — merged as
 [PR #136](https://github.com/wsher0901/roam/pull/136) on the founder's
 word. Every gate on the way out waited on the pushed commit's Actions
 run going green
-([D-038](../../../DECISIONS.md#d-038--2026-07--ci-is-the-arbiter--actions-green-required-at-every-gate-local-gate-mirrors-all-six-ci-steps-d-anchors-born-resolving-upholds-d-027)).
+([D-038](../../../DECISIONS.md#d-038--ci-is-the-arbiter)).
 
 ## What this task is
 THE delegation decide, reserved across the last five kickoffs. It
@@ -61,13 +61,13 @@ GitHub-label routine rather than /fire API bearer-token wiring
 phone-drivable). Park-on-block softens to idle-wait only where a phone
 can reach the lane, and D-032's recording guarantee is preserved
 (rejected: keeping park-on-block everywhere). Recorded as
-[D-041](../../../DECISIONS.md#d-041--2026-07--delegation-architecture--the-away-mode-chooser-go-remote-tether-idle-wait-label-spawned-cloud-amends-d-032s-wake-lock-and-the-dispatch-law-upholds-the-baton-law-and-d-009).
+[D-041](../../../DECISIONS.md#d-041--delegation-architecture).
 
 ## Where to look
 Spec:
 [delegation-architecture](../../../specs/delegation-architecture.md) ·
 the new skill: [go-remote](../../../../skills/go-remote.md) · the
 decision:
-[D-041](../../../DECISIONS.md#d-041--2026-07--delegation-architecture--the-away-mode-chooser-go-remote-tether-idle-wait-label-spawned-cloud-amends-d-032s-wake-lock-and-the-dispatch-law-upholds-the-baton-law-and-d-009)
+[D-041](../../../DECISIONS.md#d-041--delegation-architecture)
 · the amended law:
-[D-032](../../../DECISIONS.md#d-032--2026-07--fleet-continuity--handoff-parks-every-local-lane-liftoff-respawns-parked-benches-wake-lock-parks-every-outcome-extends-the-d-020d-023-lane-law-upholds-d-009).
+[D-032](../../../DECISIONS.md#d-032--fleet-continuity).

@@ -14,7 +14,7 @@ binding-requirements links name stages, not numbers). All
 verification green: 1128 links / 0 broken, lint clean, 3/3 tests,
 zero old-filename hits in tracked files, zero old anchors repo-wide,
 ROADMAP checkboxes untouched. The rename, both payload rewrites, the
-[D-028](../../../DECISIONS.md#d-028--2026-07--consolidation-recut--decision-policy--engine-brain-skeleton-form-project-policy-house-style-open-register-grows-69-upholds-d-021-extends-the-d-021-consolidation)
+[D-028](../../../DECISIONS.md#d-028--consolidation-recut-decision-policy-becomes-engine)
 entry, and the full retroactive ripple landed in one commit, per
 the [decide](../../../../skills/decide.md) same-commit law.
 
@@ -97,7 +97,7 @@ Execution notes and judgment calls, in order:
 - PR: [#95](https://github.com/wsher0901/roam/pull/95)
   (squash-merged 2026-07-13)
 - decision:
-  [D-028](../../../DECISIONS.md#d-028--2026-07--consolidation-recut--decision-policy--engine-brain-skeleton-form-project-policy-house-style-open-register-grows-69-upholds-d-021-extends-the-d-021-consolidation)
+  [D-028](../../../DECISIONS.md#d-028--consolidation-recut-decision-policy-becomes-engine)
 - the two rewritten files: [../ENGINE.md](../../../../ENGINE.md) ·
   [../PROJECT-POLICY.md](../../../../SETUP.md)
 - the workshop brief (Web chat) — payloads + anchor map + mechanism

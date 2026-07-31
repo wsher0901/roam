@@ -22,7 +22,7 @@ of 2026-07-17; founder go the same morning): wire the shipped
 [reviewer subagent](reviewer-subagent.md) into
 [ship §6](../../../../skills/ship.md#6--the-gate) as the pre-GATE
 advisory critic. One procedure edit plus its D-number
-([D-044](../../../DECISIONS.md#d-044--2026-07--the-pre-gate-critic-goes-live--ships-gate-opens-by-invoking-the-reviewer-subagent-verdicts-advisory-riding-with-the-summary-turns-on-the-staged-reviewer-upholds-d-038-and-the-reviewer-frame));
+([D-044](../../../DECISIONS.md#d-044--the-pre-gate-critic-goes-live));
 the reviewer itself untouched. Contract:
 [the spec](../../../specs/ship-wiring.md).
 
@@ -48,7 +48,7 @@ GATE's first act, not as a new numbered section — the vault weaves
 shipped histories; renumbering would break them all for zero
 function.
 
-[D-044](../../../DECISIONS.md#d-044--2026-07--the-pre-gate-critic-goes-live--ships-gate-opens-by-invoking-the-reviewer-subagent-verdicts-advisory-riding-with-the-summary-turns-on-the-staged-reviewer-upholds-d-038-and-the-reviewer-frame)
+[D-044](../../../DECISIONS.md#d-044--the-pre-gate-critic-goes-live)
 landed on this branch (entry + ripple in one commit, per
 [decide](../../../../skills/decide.md)): ship §6 gained the critic,
 SETUP filed the reviewer under
@@ -92,5 +92,5 @@ itself. Left for the founder's C-checklist notes.
   [spec](../../../specs/reviewer-subagent.md) ·
   [story](reviewer-subagent.md)
 - The decision:
-  [D-044](../../../DECISIONS.md#d-044--2026-07--the-pre-gate-critic-goes-live--ships-gate-opens-by-invoking-the-reviewer-subagent-verdicts-advisory-riding-with-the-summary-turns-on-the-staged-reviewer-upholds-d-038-and-the-reviewer-frame)
+  [D-044](../../../DECISIONS.md#d-044--the-pre-gate-critic-goes-live)
 - PR: [#159](https://github.com/wsher0901/roam/pull/159)

@@ -14,7 +14,7 @@ shipped: 2026-07-17 16:16
 
 > **SUPERSESSION NOTE — added 2026-07-23.** The clerk was RETIRED
 > 2026-07-22 and its routine deleted
-> ([D-046](../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock),
+> ([D-046](../DECISIONS.md#d-046--flight-cockpit-the-control-tower-online),
 > executed by [#197](https://github.com/wsher0901/roam/pull/197)),
 > so the standing watch described below can no longer be armed.
 > What duty 6 proved lives on: it is the ancestor of the cockpit
@@ -28,7 +28,7 @@ shipped: 2026-07-17 16:16
 ·
 [parallel-lanes §Answering a lane](../../skills/parallel-lanes.md#answering-a-lane-the-mail-slot)
 ·
-[D-043](../DECISIONS.md#d-043--2026-07--cloud-ignition--away-command-redesign--route-ladder-v2-ready-flip-then-label-is-the-recipe-of-record-api-ignition-and-the-cloud-clerk-staged-the-claude-app-the-single-away-surface-amends-d-041-upholds-the-lane-law-and-the-wake-lock)
+[D-043](../DECISIONS.md#d-043--cloud-ignition-and-away-command-redesign)
 · [cloud-clerk story](../history/workshop/mechanism/cloud-clerk.md)
 · sibling bench:
 [clerk-autospawn — #164](https://github.com/wsher0901/roam/pull/164)

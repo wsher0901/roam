@@ -9,7 +9,7 @@ pr: 46
 
 ## What shipped
 
-([D-019](../../../DECISIONS.md#d-019--2026-06--launch-mechanics-correction-amends-d-017))
+([D-019](../../../DECISIONS.md#d-019--launch-mechanics-correction))
 · Live testing showed `claude --remote` refuses every
 non-interactive shell, so lane launches now go through a visible,
 attended console window opened from a launcher kept outside this

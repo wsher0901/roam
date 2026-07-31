@@ -18,7 +18,7 @@ shipped: 2026-07-14
 [parallel-lanes](../../skills/parallel-lanes.md) ·
 [SETUP](../../SETUP.md) ·
 Decisions:
-[D-027](../DECISIONS.md#d-027--2026-07--laws-polish--glossed-lane-law-provenance-re-homed-to-consolidations-ship-syncs-with-main-before-the-weld)
+[D-027](../DECISIONS.md#d-027--laws-polish)
 
 ## Goal
 

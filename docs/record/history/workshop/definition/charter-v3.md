@@ -20,7 +20,7 @@ Awaiting the external Web review, then the founder's word.
 ## What this task is
 
 THE BOX-MASTER DIET.
-[D-064](../../../DECISIONS.md#d-064--2026-07--the-box-master-class--the-setup-entry-contract--every-external-box-master-is-its-own-top-level-file-on-the-web-instructions-pattern-cockpit-chartermd-and-lane-workermd-extracted-verbatim-setup-compresses-to-a-replication-spec-under-the-entry-contract-what--where--values--verify--source-design-kickoff-joins-the-class-on-paper)
+[D-064](../../../DECISIONS.md#d-064--the-box-master-class-and-setup-entry-contract)
 gave box masters their own files but never said what belongs
 inside one. The answer: standing rules, invariants and pointers —
 procedures live in their repo homes and are derived at need,

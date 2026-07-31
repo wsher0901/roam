@@ -1,7 +1,7 @@
 ---
 type: spec
 id: agent-teams
-title: Agent teams — where they fit this workshop and where they must not ([D-055](../DECISIONS.md#d-055--2026-07--agent-teams--the-boundary-teams-are-for-exploration-and-review-at-a-ground-seat-lanes-remain-the-authorship-mechanism-two-risks-become-law-single-sitting-only--an-explicit-carve-out-to-d-050s-interrupt-promise--and-a-teammate-authored-diff-is-self-authored-under-no-solo-approval-the-reviewers-model-settled-by-verification-not-guess-the-founder-side-config-recorded-upholds-the-lane-law-no-solo-approval-and-one-home-gives-the-experimental-flag-its-consumer))
+title: Agent teams — where they fit this workshop and where they must not ([D-055](../DECISIONS.md#d-055--agent-teams-the-boundary))
 status: shipped
 stage: workshop
 branch: docs/agent-teams
@@ -47,7 +47,7 @@ flown here.
    Reasons stated, not asserted. Teams never author a bench, never
    merge, never run a ritual.
 2. **Risk (a) — SINGLE-SITTING ONLY**, written as a carve-out
-   where [D-050](../DECISIONS.md#d-050--2026-07--session-lifecycle--closed--dead-the-close-locks-wall-softens-to-injected-read-only-doctrine-interrupt-capture-is-standing-format-the-claude-residue-sweep-is-pickup-hygiene-ideas-is-an-inbox-not-an-archive-amends-the-d-046-era-close-wall-design-upholds-the-park-protocol-and-no-solo-approval)'s
+   where [D-050](../DECISIONS.md#d-050--session-lifecycle-closed-is-not-dead)'s
    interrupt promise lives, so the two cannot be read as
    contradicting: the ⏸ block preserves the LEAD's work, never the
    team.
@@ -68,7 +68,7 @@ flown here.
    experimental flag now has a consumer.
 6. **[IDEAS](../../IDEAS.md), two lines**: the chronicle layer as the
    first intended use, and box provenance stamps (off-theme here).
-7. **[D-055](../DECISIONS.md#d-055--2026-07--agent-teams--the-boundary-teams-are-for-exploration-and-review-at-a-ground-seat-lanes-remain-the-authorship-mechanism-two-risks-become-law-single-sitting-only--an-explicit-carve-out-to-d-050s-interrupt-promise--and-a-teammate-authored-diff-is-self-authored-under-no-solo-approval-the-reviewers-model-settled-by-verification-not-guess-the-founder-side-config-recorded-upholds-the-lane-law-no-solo-approval-and-one-home-gives-the-experimental-flag-its-consumer)**,
+7. **[D-055](../DECISIONS.md#d-055--agent-teams-the-boundary)**,
    house style, with the three rejections and their reasons.
 
 ## Files touched — nothing outside

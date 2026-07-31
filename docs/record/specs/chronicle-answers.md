@@ -13,7 +13,7 @@ shipped: 2026-07-28 13:22
 # chronicle-answers — the nine owed endings become record
 
 **Links:**
-[D-059](../DECISIONS.md#d-059--2026-07--the-chronicle-layer--living-stories-above-the-frozen-record-one-story-per-item-the-ending-rule--settled-in-any-format-means-the-story-is-written-a-later-fix-is-incorporated-and-the-ending-rewritten-at-that-weld-retirement-is-a-settlement-docschronicle-one-file-per-story-indexmd-shelving-four-shelves-immutability-beneath--record-untouched-stories-link-down-as-footnotes-down-links-only--a-story-never-cites-another-storys-prose-supersedes-the-07-23-three-chapter-shape-the-ship-synthesis-at-weld-step-deferred-to-the-first-story-weld)
+[D-059](../DECISIONS.md#d-059--the-chronicle-layer)
 (the layer and its ending rule) ·
 [the census](../../chronicle/INDEX.md) ·
 [the census bench](../history/workshop/definition/chronicle-layer.md)
@@ -28,7 +28,7 @@ nine endings blank because the record could not derive them —
 The founder answered all nine in the Web ops chat on 2026-07-28.
 This bench writes those answers into the record: each owed ending
 becomes a settled-for-now ending per
-[D-059](../DECISIONS.md#d-059--2026-07--the-chronicle-layer--living-stories-above-the-frozen-record-one-story-per-item-the-ending-rule--settled-in-any-format-means-the-story-is-written-a-later-fix-is-incorporated-and-the-ending-rewritten-at-that-weld-retirement-is-a-settlement-docschronicle-one-file-per-story-indexmd-shelving-four-shelves-immutability-beneath--record-untouched-stories-link-down-as-footnotes-down-links-only--a-story-never-cites-another-storys-prose-supersedes-the-07-23-three-chapter-shape-the-ship-synthesis-at-weld-step-deferred-to-the-first-story-weld),
+[D-059](../DECISIONS.md#d-059--the-chronicle-layer),
 the [V1.S1](../../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
 T3–T6 relaunch brief is written into this bench's memory with its
 four audit riders, and three fresh lines enter
@@ -89,14 +89,14 @@ that.
    path `check:links` can resolve while the bench is in flight —
    [the INDEX](../../chronicle/INDEX.md) twice (the §Founder
    input owed preamble and item 1) and
-   [D-060](../DECISIONS.md#d-060--2026-07--the-three-phase-standing-order--settle-and-test-the-vault-then-roam-v1s1t3t6-and-v1s2t5-are-paused-until-phase-2-closes-the-founders-2026-07-28-sequencing-recorded-per-laws-pause-routing-upholds-the-pacing-law)'s
+   [D-060](../DECISIONS.md#d-060--the-three-phase-standing-order)'s
    Why once. The weld commit moves the memory to
    `record/history/`, so the SAME commit repoints all three to
    `../record/history/workshop/definition/chronicle-answers.md`
    (from DECISIONS.md: `history/workshop/definition/…`). The
    DECISIONS one is a mechanical link-path repair inside a frozen
    file — maintenance under
-   [D-057](../DECISIONS.md#d-057--2026-07--the-record-shelf--the-frozen-record-moves-under-one-roof-docsrecord-is-born-history--specs--decisions-in-memory-stays-living-at-root-the-enabling-ruling--a-mechanical-link-path-segment-repair-inside-a-frozen-file-is-maintenance-not-a-content-edit-append-only-governs-meaning-not-bytes-intra-record-links-resolve-by-construction-upholds-append-only-one-home-and-the-weave-rule),
+   [D-057](../DECISIONS.md#d-057--the-record-shelf),
    not a content edit. Missing this turns the weld's own Actions
    run red — which is the net, but the repair belongs in the weld
    commit itself.
@@ -133,7 +133,7 @@ that.
       this spec, [IDEAS](../../IDEAS.md),
       [DECISIONS](../DECISIONS.md) (a pure append — the
       files-touched amended by the founder at the gate to admit
-      [D-060](../DECISIONS.md#d-060--2026-07--the-three-phase-standing-order--settle-and-test-the-vault-then-roam-v1s1t3t6-and-v1s2t5-are-paused-until-phase-2-closes-the-founders-2026-07-28-sequencing-recorded-per-laws-pause-routing-upholds-the-pacing-law)),
+      [D-060](../DECISIONS.md#d-060--the-three-phase-standing-order)),
       and [DASHBOARD](../../DASHBOARD.md) via the ship tail.
 - [x] `check:links` · `check:ledger` · `check:memory` · lint ·
       format · test · build green locally; the pushed head's
@@ -153,9 +153,9 @@ departure from the goal:
 2. **One finding surfaced while checking the founder's item-1
    evidence:** the double-dispatch diagnostic is no longer in
    [IDEAS](../../IDEAS.md) (compacted away at
-   [D-050](../DECISIONS.md#d-050--2026-07--session-lifecycle--closed--dead-the-close-locks-wall-softens-to-injected-read-only-doctrine-interrupt-capture-is-standing-format-the-claude-residue-sweep-is-pickup-hygiene-ideas-is-an-inbox-not-an-archive-amends-the-d-046-era-close-wall-design-upholds-the-park-protocol-and-no-solo-approval)),
+   [D-050](../DECISIONS.md#d-050--session-lifecycle-closed-is-not-dead)),
    while
-   [D-042](../DECISIONS.md#d-042--2026-07--lane-liveness--derive-live-vs-reclaimable-from-the-commit-heartbeat-read-it-at-claim-check-and-session-start-cleanup-so-a-live-lane-is-never-adopted-or-pruned-amends-the-claim-check-clause-and-pickup-3-upholds-the-wake-lock-and-seat-invariance)
+   [D-042](../DECISIONS.md#d-042--lane-liveness)
    and the frozen lane-liveness story still point at IDEAS for it.
    Both pointers are frozen record and cannot be repaired. On the
    founder's ruling the bench memory notes the dangle plainly and
@@ -168,7 +168,7 @@ departure from the goal:
    [DECISIONS](../DECISIONS.md), not only in a bench memory. The
    founder amended the mandate's files-touched to admit a pure
    append, and
-   [D-060](../DECISIONS.md#d-060--2026-07--the-three-phase-standing-order--settle-and-test-the-vault-then-roam-v1s1t3t6-and-v1s2t5-are-paused-until-phase-2-closes-the-founders-2026-07-28-sequencing-recorded-per-laws-pause-routing-upholds-the-pacing-law)
+   [D-060](../DECISIONS.md#d-060--the-three-phase-standing-order)
    landed. The [ROADMAP](../../ROADMAP.md) stays untouched by
    ruling: a pause is sequencing, and the unticked boxes already
    tell the truth.

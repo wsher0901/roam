@@ -1,7 +1,7 @@
 ---
 type: spec
 id: team-aware-leaving
-title: Team-aware leaving rituals — no ritual lets a live team outlive its sitting ([D-056](../DECISIONS.md#d-056--2026-07--team-aware-leaving-rituals--no-ritual-lets-a-live-agent-team-outlive-the-sitting-that-made-it-handoff-shuts-the-team-down-before-parking-anything-and-captures-its-findings-into-the-record-first-land-states-the-cockpit-cannot-lead-a-team-case-once-and-routes-the-ground-seat-to-handoff-pickup-gains-the-ghost-teammate-recovery-note-and-the--block-gains-what-the-team-had-found-closes-d-055s-deferred-gap-upholds-one-home-and-the-park-protocol))
+title: Team-aware leaving rituals — no ritual lets a live team outlive its sitting ([D-056](../DECISIONS.md#d-056--team-aware-leaving-rituals))
 status: shipped
 stage: workshop
 branch: docs/team-aware-leaving
@@ -23,7 +23,7 @@ shipped: 2026-07-24 17:21
 
 One theme: NO RITUAL LETS A LIVE AGENT TEAM OUTLIVE THE SITTING
 THAT MADE IT.
-[D-055](../DECISIONS.md#d-055--2026-07--agent-teams--the-boundary-teams-are-for-exploration-and-review-at-a-ground-seat-lanes-remain-the-authorship-mechanism-two-risks-become-law-single-sitting-only--an-explicit-carve-out-to-d-050s-interrupt-promise--and-a-teammate-authored-diff-is-self-authored-under-no-solo-approval-the-reviewers-model-settled-by-verification-not-guess-the-founder-side-config-recorded-upholds-the-lane-law-no-solo-approval-and-one-home-gives-the-experimental-flag-its-consumer)
+[D-055](../DECISIONS.md#d-055--agent-teams-the-boundary)
 made single-sitting-only law and left it unenforced: handoff parks
 lanes, land fences them, and neither mentions a team. Because
 `/resume` and `/rewind` do not restore in-process teammates, a
@@ -73,7 +73,7 @@ transcripts that die with it. So the duty is not "kill the team"
 4. **[TEMPLATE](../../memory/TEMPLATE.md) — the ⏸ block gains one
    line** when a team was live at interrupt time: WHAT THE TEAM
    HAD FOUND, because that is the part git cannot re-derive.
-5. **[D-056](../DECISIONS.md#d-056--2026-07--team-aware-leaving-rituals--no-ritual-lets-a-live-agent-team-outlive-the-sitting-that-made-it-handoff-shuts-the-team-down-before-parking-anything-and-captures-its-findings-into-the-record-first-land-states-the-cockpit-cannot-lead-a-team-case-once-and-routes-the-ground-seat-to-handoff-pickup-gains-the-ghost-teammate-recovery-note-and-the--block-gains-what-the-team-had-found-closes-d-055s-deferred-gap-upholds-one-home-and-the-park-protocol)**,
+5. **[D-056](../DECISIONS.md#d-056--team-aware-leaving-rituals)**,
    house style, with the three rejections and their reasons; and
    [IDEAS](../../IDEAS.md)' candidate line CLOSED, naming this PR.
 

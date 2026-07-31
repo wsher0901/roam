@@ -15,11 +15,11 @@ shipped: 2026-07-15
 [HOME](../../HOME.md) ·
 [recall](../../skills/recall.md) ·
 Decisions codified (this pass decides nothing):
-[D-040](../DECISIONS.md#d-040--2026-07--handoff-input-inversion--the-leaving-message-carries-the-webdesign-paste-inline-the-never-skipped-question-is-retired-a-bare-trigger-means-none-amends-the-two-touchpoints-laws-wording-upholds-d-032)
+[D-040](../DECISIONS.md#d-040--handoff-input-inversion)
 ·
-[D-032](../DECISIONS.md#d-032--2026-07--fleet-continuity--handoff-parks-every-local-lane-liftoff-respawns-parked-benches-wake-lock-parks-every-outcome-extends-the-d-020d-023-lane-law-upholds-d-009)
+[D-032](../DECISIONS.md#d-032--fleet-continuity)
 ·
-[D-039](../DECISIONS.md#d-039--2026-07--recall--questions-answered-from-files-never-from-memory-the-d-036-routing-tables-read-mirror-model-invoked-at-discretion)
+[D-039](../DECISIONS.md#d-039--recall-answers-from-files)
 
 ## Goal
 

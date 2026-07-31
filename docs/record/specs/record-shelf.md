@@ -1,7 +1,7 @@
 ---
 type: spec
 id: record-shelf
-title: The record shelf — docs/record/ is born, the frozen record in one place ([D-057](../DECISIONS.md#d-057--2026-07--the-record-shelf--the-frozen-record-moves-under-one-roof-docsrecord-is-born-history--specs--decisions-in-memory-stays-living-at-root-the-enabling-ruling--a-mechanical-link-path-segment-repair-inside-a-frozen-file-is-maintenance-not-a-content-edit-append-only-governs-meaning-not-bytes-intra-record-links-resolve-by-construction-upholds-append-only-one-home-and-the-weave-rule))
+title: The record shelf — docs/record/ is born, the frozen record in one place ([D-057](../DECISIONS.md#d-057--the-record-shelf))
 status: shipped
 stage: workshop
 branch: docs/record-shelf
@@ -13,7 +13,7 @@ shipped: 2026-07-27 20:13
 # record-shelf — the frozen record moves under one roof
 
 **Links:**
-[D-057](../DECISIONS.md#d-057--2026-07--the-record-shelf--the-frozen-record-moves-under-one-roof-docsrecord-is-born-history--specs--decisions-in-memory-stays-living-at-root-the-enabling-ruling--a-mechanical-link-path-segment-repair-inside-a-frozen-file-is-maintenance-not-a-content-edit-append-only-governs-meaning-not-bytes-intra-record-links-resolve-by-construction-upholds-append-only-one-home-and-the-weave-rule)
+[D-057](../DECISIONS.md#d-057--the-record-shelf)
 · queue: the founder's 2026-07-27 three-bench mandate (bench 1 of
 3).
 

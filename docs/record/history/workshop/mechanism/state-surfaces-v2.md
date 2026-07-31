@@ -30,7 +30,7 @@ shipped: <date HH:MM> and prepends one line to
 [liftoff](../../../../skills/liftoff.md) §6 renders the flight plan
 through the Sessions table. The PR edited SPECS only; the board
 itself was repainted by this task's own ship-tail. Recorded as
-[D-035](../../../DECISIONS.md#d-035--2026-07--state-surfaces-v2--sessions-table-with-a-type-column-sentence-first-needs-you-verbatim-chat-titles-welds-stamp-time-and-write-the-ledger-handoff-4-is-the-single-board-spec-amends-d-024s-surface-extends-d-029).
+[D-035](../../../DECISIONS.md#d-035--state-surfaces-v2).
 
 ## Pending issues
 none — the tail rider's chat titles came with the merge word; the
@@ -59,7 +59,7 @@ merge into a paragraph; weld prepends follow the same shape.
 ## Where to look
 Spec: [state-surfaces-v2](../../../specs/state-surfaces-v2.md) ·
 decision:
-[D-035](../../../DECISIONS.md#d-035--2026-07--state-surfaces-v2--sessions-table-with-a-type-column-sentence-first-needs-you-verbatim-chat-titles-welds-stamp-time-and-write-the-ledger-handoff-4-is-the-single-board-spec-amends-d-024s-surface-extends-d-029)
+[D-035](../../../DECISIONS.md#d-035--state-surfaces-v2)
 · PR [#110](https://github.com/wsher0901/roam/pull/110) · board
 spec: [handoff §4](../../../../skills/handoff.md) · ledger:
 [history/README §The ledger](../../README.md#the-ledger) · legend:

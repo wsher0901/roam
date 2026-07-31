@@ -1,7 +1,7 @@
 ---
 type: spec
 id: landing-skill
-title: The landing skill — how a flight ends becomes a first-class ritual ([D-054](../DECISIONS.md#d-054--2026-07--the-landing-skill--how-a-flight-ends-becomes-a-first-class-ritual-one-skill-with-two-modes-routed-by-fleet-state-retire--pause-and-transfer-the-fence-is-a-commit-so-the-resume-point-is-the-branch-tip-by-construction-wake-lock-mediated-with-its-honesty-clause-the-board-is-the-single-transfer-material-pickup-gains-the-fleet-resume-ask-and-its-cap-arithmetic-sessions-are-cattle-branches-are-the-work-charter-rule-6-becomes-a-pointer-the-effort-doctrine-moves-to-opus-5--xhigh-upholds-the-wake-lock-the-park-protocol-and-one-home-supersedes-the-opus-48-reliance-pair))
+title: The landing skill — how a flight ends becomes a first-class ritual ([D-054](../DECISIONS.md#d-054--the-landing-skill))
 status: shipped
 stage: workshop
 branch: docs/landing-skill
@@ -36,7 +36,7 @@ a grounded fleet is resumable from any seat.
 
 - Any new interrupt channel for lanes — there is none; the
   wake-lock IS the channel
-  ([D-054](../DECISIONS.md#d-054--2026-07--the-landing-skill--how-a-flight-ends-becomes-a-first-class-ritual-one-skill-with-two-modes-routed-by-fleet-state-retire--pause-and-transfer-the-fence-is-a-commit-so-the-resume-point-is-the-branch-tip-by-construction-wake-lock-mediated-with-its-honesty-clause-the-board-is-the-single-transfer-material-pickup-gains-the-fleet-resume-ask-and-its-cap-arithmetic-sessions-are-cattle-branches-are-the-work-charter-rule-6-becomes-a-pointer-the-effort-doctrine-moves-to-opus-5--xhigh-upholds-the-wake-lock-the-park-protocol-and-one-home-supersedes-the-opus-48-reliance-pair)
+  ([D-054](../DECISIONS.md#d-054--the-landing-skill)
   rejects an instant freeze with its reason).
 - Auto-redeploy at pickup — spending cap runs is the founder's
   word, never a ritual's default.
@@ -69,7 +69,7 @@ a grounded fleet is resumable from any seat.
    [parallel-lanes](../../skills/parallel-lanes.md) gains ONE pointer
    line.
 3. **`.claude/skills/land/SKILL.md` — the stub**, trigger-precise
-   per [D-053](../DECISIONS.md#d-053--2026-07--guardrail-audit--the-harness-found-already-at-best-practice-against-anthropics-guidance-two-promotions-ship-the-verification-loop-as-a-copy-runnable-block-in-laws-two-stub-descriptions-sharpened-five-alternatives-rejected-with-reasons-upholds-the-routing-law-and-one-home)'s
+   per [D-053](../DECISIONS.md#d-053--guardrail-audit)'s
    standard, COCKPIT-ONLY, naming the boundary: land ends a FLIGHT,
    handoff leaves a DESK. The handoff stub gains the mirror clause.
 4. **Charter rule 6 → a pointer** (three lines: land is the ritual
@@ -80,7 +80,7 @@ a grounded fleet is resumable from any seat.
 6. **The effort doctrine** — Opus 5 · xhigh becomes the default for
    ALL work including reviews and architecture; Fable 5 an optional
    second opinion; throttle-effort-before-model unchanged.
-7. **[D-054](../DECISIONS.md#d-054--2026-07--the-landing-skill--how-a-flight-ends-becomes-a-first-class-ritual-one-skill-with-two-modes-routed-by-fleet-state-retire--pause-and-transfer-the-fence-is-a-commit-so-the-resume-point-is-the-branch-tip-by-construction-wake-lock-mediated-with-its-honesty-clause-the-board-is-the-single-transfer-material-pickup-gains-the-fleet-resume-ask-and-its-cap-arithmetic-sessions-are-cattle-branches-are-the-work-charter-rule-6-becomes-a-pointer-the-effort-doctrine-moves-to-opus-5--xhigh-upholds-the-wake-lock-the-park-protocol-and-one-home-supersedes-the-opus-48-reliance-pair)**,
+7. **[D-054](../DECISIONS.md#d-054--the-landing-skill)**,
    house style, with the five rejections and their reasons.
 
 ## Files touched — nothing outside
@@ -165,7 +165,7 @@ None — the one raised was ANSWERED at the gate. `.claude/agents/reviewer.md`
 keeps `model: sonnet` · `effort: high`: the effort doctrine governs
 SURFACES AND SESSIONS, not subagent internals, so there is no
 contradiction with
-[D-054](../DECISIONS.md#d-054--2026-07--the-landing-skill--how-a-flight-ends-becomes-a-first-class-ritual-one-skill-with-two-modes-routed-by-fleet-state-retire--pause-and-transfer-the-fence-is-a-commit-so-the-resume-point-is-the-branch-tip-by-construction-wake-lock-mediated-with-its-honesty-clause-the-board-is-the-single-transfer-material-pickup-gains-the-fleet-resume-ask-and-its-cap-arithmetic-sessions-are-cattle-branches-are-the-work-charter-rule-6-becomes-a-pointer-the-effort-doctrine-moves-to-opus-5--xhigh-upholds-the-wake-lock-the-park-protocol-and-one-home-supersedes-the-opus-48-reliance-pair)'s
+[D-054](../DECISIONS.md#d-054--the-landing-skill)'s
 clause 7 to fix. It rides the AGENT TEAMS bench, where it is
 decided beside a widening fact (a subagent definition spawned as a
 team teammate honors its OWN `model` and `tools`, so that line

@@ -15,7 +15,7 @@ shipped: 2026-07-14
 [LAWS](../../LAWS.md) ·
 [pickup](../../skills/pickup.md) ·
 Decisions:
-[D-037](../DECISIONS.md#d-037--2026-07--pickup-speaks-the-founders-shape--exit-table--recent-summary--pending-issues-laws-binds-the-routing-law-completes-d-036)
+[D-037](../DECISIONS.md#d-037--pickup-speaks-the-founders-shape)
 
 ## Goal
 The constitution binds the one-home routing law; pickup's sit-down
@@ -33,7 +33,7 @@ wording as a spec requirement.
 1. Bench birth: branch docs/laws-close → this spec + memory stub →
    draft PR.
 2. Run [decide](../../skills/decide.md)
-   ([D-037](../DECISIONS.md#d-037--2026-07--pickup-speaks-the-founders-shape--exit-table--recent-summary--pending-issues-laws-binds-the-routing-law-completes-d-036)):
+   ([D-037](../DECISIONS.md#d-037--pickup-speaks-the-founders-shape)):
    entry + ripple in the same commit — the routing-law bullet
    inserted in [LAWS §Knowledge & tracking](../../LAWS.md#knowledge--tracking)
    after the Retroactivity bullet; [pickup](../../skills/pickup.md) §5

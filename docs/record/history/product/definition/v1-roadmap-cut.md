@@ -9,7 +9,7 @@ pr: 11
 
 ## What shipped
 
-([D-006](../../../DECISIONS.md#d-006--2026-06--v1-roadmap-cut-stages--tasks))
+([D-006](../../../DECISIONS.md#d-006--v1-roadmap-cut))
 · [ROADMAP.md](../../../../ROADMAP.md) now holds the complete V1 cut — 8
 ordered stages, 33 PR-sized tasks, from the data gate to demo
 polish → [PR #11](https://github.com/wsher0901/roam/pull/11)

@@ -19,7 +19,7 @@ weld — the 15:26 weld moved the file without restamping it.)
 ## What this task is
 
 Execute
-[D-043](../../../DECISIONS.md#d-043--2026-07--cloud-ignition--away-command-redesign--route-ladder-v2-ready-flip-then-label-is-the-recipe-of-record-api-ignition-and-the-cloud-clerk-staged-the-claude-app-the-single-away-surface-amends-d-041-upholds-the-lane-law-and-the-wake-lock)'s
+[D-043](../../../DECISIONS.md#d-043--cloud-ignition-and-away-command-redesign)'s
 staged cloud-clerk task (first need named by the founder 07-16/17):
 the manually-born, cap-free away-surface session with a narrow
 read-and-relay charter. This bench wrote the charter MASTER into

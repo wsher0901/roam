@@ -17,7 +17,7 @@ was touched: [COCKPIT-CHARTER.md](../../../../COCKPIT-CHARTER.md) exists on
 freshly pulled main, so
 [#242](https://github.com/wsher0901/roam/pull/242) is merged. No
 new decide;
-[D-064](../../../DECISIONS.md#d-064--2026-07--the-box-master-class--the-setup-entry-contract--every-external-box-master-is-its-own-top-level-file-on-the-web-instructions-pattern-cockpit-chartermd-and-lane-workermd-extracted-verbatim-setup-compresses-to-a-replication-spec-under-the-entry-contract-what--where--values--verify--source-design-kickoff-joins-the-class-on-paper)
+[D-064](../../../DECISIONS.md#d-064--the-box-master-class-and-setup-entry-contract)
 already records this bench, and [DECISIONS](../../../DECISIONS.md)
 is untouched.
 
@@ -161,7 +161,7 @@ PROBLEM AND WRONG ABOUT THE CAUSE, which is worth recording
 because the difference decided the repair.
 
 It read SETUP's header as a PARAPHRASE of
-[D-064](../../../DECISIONS.md#d-064--2026-07--the-box-master-class--the-setup-entry-contract--every-external-box-master-is-its-own-top-level-file-on-the-web-instructions-pattern-cockpit-chartermd-and-lane-workermd-extracted-verbatim-setup-compresses-to-a-replication-spec-under-the-entry-contract-what--where--values--verify--source-design-kickoff-joins-the-class-on-paper)
+[D-064](../../../DECISIONS.md#d-064--the-box-master-class-and-setup-entry-contract)
 that had dropped the secrets clause. Checked: the header is
 VERBATIM to the mandate, word for word. What the critic actually
 found is a discrepancy between two statements of the same
@@ -212,6 +212,6 @@ DASHBOARD untouched.
 
 - [the spec](../../../specs/setup-recut.md) — the contract.
 - [SETUP](../../../../SETUP.md) — the file being recut.
-- [D-064](../../../DECISIONS.md#d-064--2026-07--the-box-master-class--the-setup-entry-contract--every-external-box-master-is-its-own-top-level-file-on-the-web-instructions-pattern-cockpit-chartermd-and-lane-workermd-extracted-verbatim-setup-compresses-to-a-replication-spec-under-the-entry-contract-what--where--values--verify--source-design-kickoff-joins-the-class-on-paper)
+- [D-064](../../../DECISIONS.md#d-064--the-box-master-class-and-setup-entry-contract)
   — the entry contract this bench executes.
 - the Web ops chat, 2026-07-29 — where the recut was planned.

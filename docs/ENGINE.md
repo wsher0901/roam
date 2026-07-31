@@ -27,7 +27,7 @@ the grade scale is provisional until T7. Written for the builder
 first — the session implementing or reviewing the engine — and for
 the founder auditing what has been decided. Sections 2–9 of the old
 form are canonical here since
-[D-021](record/DECISIONS.md#d-021--2026-07--plan-synthesis-principles-re-home-to-decision-policy).
+[D-021](record/DECISIONS.md#d-021--plan-synthesis-principles-re-home).
 
 ## 1. The shape of one thought
 Every request — a first ask, a full plan, or a single edit — runs
@@ -87,11 +87,11 @@ Rules:
   is version scope, and cohort learning is not V1.
 
 Sources:
-[D-011](record/DECISIONS.md#d-011--2026-06--traveler-input-vocabulary-rich-nullable-tiered-append-only)
+[D-011](record/DECISIONS.md#d-011--traveler-input-vocabulary)
 ·
-[D-012](record/DECISIONS.md#d-012--2026-06--elicitation--inference-policy-ask-tiers-provenance-upsert)
+[D-012](record/DECISIONS.md#d-012--elicitation-and-inference-policy)
 ·
-[D-025](record/DECISIONS.md#d-025--2026-07--foundation-v4--principles-recut-open-family-set-lifespan-repair-extends-d-012-upholds-d-021d-022)
+[D-025](record/DECISIONS.md#d-025--foundation-v4-principles-recut)
 ·
 [FACTS Appendix A](data/FACTS.md#appendix-a--traveler-parameters-tp-0147--per-d-011--d-012)
 · [ROADMAP](ROADMAP.md)
@@ -126,7 +126,7 @@ Rules:
   date nears.
 
 Sources:
-[D-010](record/DECISIONS.md#d-010--2026-06--global-coverage-via-graded-fallback-ladders)
+[D-010](record/DECISIONS.md#d-010--global-coverage-via-graded-fallback-ladders)
 · [FACTS §How to read this file](data/FACTS.md#how-to-read-this-file)
 · [F-WX-11](data/FACTS.md#f-wx-11--climate-normals-by-date-of-year) ·
 [FOUNDATION §What Roam checks](FOUNDATION.md#what-roam-checks)
@@ -186,7 +186,7 @@ Rules:
   limits bind.
 
 Sources: canonical here since
-[D-021](record/DECISIONS.md#d-021--2026-07--plan-synthesis-principles-re-home-to-decision-policy)
+[D-021](record/DECISIONS.md#d-021--plan-synthesis-principles-re-home)
 ·
 [TP-30, FACTS Appendix A](data/FACTS.md#appendix-a--traveler-parameters-tp-0147--per-d-011--d-012)
 
@@ -230,7 +230,7 @@ Rules:
   acceptance provenance.
 
 Sources: canonical here since
-[D-021](record/DECISIONS.md#d-021--2026-07--plan-synthesis-principles-re-home-to-decision-policy)
+[D-021](record/DECISIONS.md#d-021--plan-synthesis-principles-re-home)
 ·
 [FACTS Appendix B](data/FACTS.md#appendix-b--plan-parameters-t7-must-schema-not-world-facts)
 
@@ -263,9 +263,9 @@ Rules:
 
 Sources: [SOURCES.md](data/SOURCES.md) (incl.
 [§activity-profiles](data/SOURCES.md#activity-profiles)) ·
-[D-010](record/DECISIONS.md#d-010--2026-06--global-coverage-via-graded-fallback-ladders)
+[D-010](record/DECISIONS.md#d-010--global-coverage-via-graded-fallback-ladders)
 ·
-[D-013](record/DECISIONS.md#d-013--2026-06--canonical-units-si-storage-display-time-conversion)
+[D-013](record/DECISIONS.md#d-013--canonical-units-si-storage)
 ·
 [FACTS Appendix A](data/FACTS.md#appendix-a--traveler-parameters-tp-0147--per-d-011--d-012)
 · [FOUNDATION §Principles](FOUNDATION.md#principles) ·
@@ -290,9 +290,9 @@ Rules:
   with venues.
 
 Sources: canonical here since
-[D-021](record/DECISIONS.md#d-021--2026-07--plan-synthesis-principles-re-home-to-decision-policy)
+[D-021](record/DECISIONS.md#d-021--plan-synthesis-principles-re-home)
 ·
-[D-010](record/DECISIONS.md#d-010--2026-06--global-coverage-via-graded-fallback-ladders)
+[D-010](record/DECISIONS.md#d-010--global-coverage-via-graded-fallback-ladders)
 · [ROADMAP §V1 — The demo](ROADMAP.md#v1--the-demo--active)
 
 ## 9. Re-validate — edits and drift
@@ -337,9 +337,9 @@ Rules:
   eval-set gate is OPEN-9.
 
 Sources:
-[D-014](record/DECISIONS.md#d-014--2026-06--telemetry-posture-capture-now-use-later)
+[D-014](record/DECISIONS.md#d-014--telemetry-posture)
 ·
-[D-015](record/DECISIONS.md#d-015--2026-06--data-asset-law-bitemporal-append-only-license-segmented)
+[D-015](record/DECISIONS.md#d-015--data-asset-law)
 · [FACTS Appendix C3](data/FACTS.md#c3--source-health-p6)
 
 ## 11. Invariants — the reliability law
@@ -360,9 +360,9 @@ Sources:
 Sources:
 [FOUNDATION §The reliability law](FOUNDATION.md#the-reliability-law)
 ·
-[D-013](record/DECISIONS.md#d-013--2026-06--canonical-units-si-storage-display-time-conversion)
+[D-013](record/DECISIONS.md#d-013--canonical-units-si-storage)
 ·
-[D-025](record/DECISIONS.md#d-025--2026-07--foundation-v4--principles-recut-open-family-set-lifespan-repair-extends-d-012-upholds-d-021d-022)
+[D-025](record/DECISIONS.md#d-025--foundation-v4-principles-recut)
 
 ## 12. Open register
 Undecided slots, numbered; referenced inline as OPEN-n. Filling one

@@ -16,9 +16,9 @@ shipped: 2026-07-15
 [handoff §1.5](../../skills/handoff.md#15--park-the-local-lanes-full-only) ·
 [ship](../../skills/ship.md) ·
 Decisions applied (this pass decides nothing):
-[D-027 — LAWS keeps command + one-line whys](../DECISIONS.md#d-027--2026-07--laws-polish--glossed-lane-law-provenance-re-homed-to-consolidations-ship-syncs-with-main-before-the-weld)
+[D-027 — LAWS keeps command + one-line whys](../DECISIONS.md#d-027--laws-polish)
 ·
-[D-036 — one-home routing](../DECISIONS.md#d-036--2026-07--information-routing--one-home-per-class-append-vs-upsert-home-carries-the-table-sessions-anchor-stabilized)
+[D-036 — one-home routing](../DECISIONS.md#d-036--information-routing-one-home-per-class)
 
 ## Goal
 

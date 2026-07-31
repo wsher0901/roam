@@ -71,9 +71,9 @@ before any payload edit — public and rescuable from its first minute.
 
 **No new D-number, and why that is written down.** The temptation
 was a D-049. It would have been wrong.
-[D-046](../../../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+[D-046](../../../DECISIONS.md#d-046--flight-cockpit-the-control-tower-online)
 already DECIDED the retirement and named its trigger;
-[D-048](../../../DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)
+[D-048](../../../DECISIONS.md#d-048--cockpit-resilience)
 then superseded the clerk's last unique function, the last-resort
 reach, by ending the connector ladder at the phone bootstrap. A
 decide records a roadmap-level CHANGE; nothing here changed that was
@@ -84,7 +84,7 @@ retirement executed" does not go hunting for the decide that
 authorized it.
 
 **What the founder's early deletion actually did.**
-[D-046](../../../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+[D-046](../../../DECISIONS.md#d-046--flight-cockpit-the-control-tower-online)
 staged the
 retirement to execute "at the cockpit maiden drill's closeout". The
 founder deleted the routine on 07-22, ahead of that closeout. That
@@ -223,9 +223,9 @@ posture was right — but the flag is what made the call possible.
 - PR: [#197](https://github.com/wsher0901/roam/pull/197) — the public
   window; the deviation is flagged in its summary.
 - The decision that staged this:
-  [D-046](../../../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock).
+  [D-046](../../../DECISIONS.md#d-046--flight-cockpit-the-control-tower-online).
 - The decision that superseded the clerk's last function:
-  [D-048](../../../DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047).
+  [D-048](../../../DECISIONS.md#d-048--cockpit-resilience).
 - What the clerk proved, kept as record:
   [cloud-clerk](../../../specs/cloud-clerk.md) (C1–C6) ·
   [clerk-notify](../../../specs/clerk-notify.md) (N2/N3) ·

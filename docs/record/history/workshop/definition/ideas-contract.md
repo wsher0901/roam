@@ -75,9 +75,9 @@ different from what the file claimed or implied.
    per-idea rule earning its place on its first use.
 4. **BOX PROVENANCE is CLOSED, though nothing said so.** It asked
    for "last pasted: date + sha" stamps so box currency becomes
-   derivable. [D-064](../../../DECISIONS.md#d-064--2026-07--the-box-master-class--the-setup-entry-contract--every-external-box-master-is-its-own-top-level-file-on-the-web-instructions-pattern-cockpit-chartermd-and-lane-workermd-extracted-verbatim-setup-compresses-to-a-replication-spec-under-the-entry-contract-what--where--values--verify--source-design-kickoff-joins-the-class-on-paper)
+   derivable. [D-064](../../../DECISIONS.md#d-064--the-box-master-class-and-setup-entry-contract)
    gave every master a version-history table and
-   [D-063](../../../DECISIONS.md#d-063--2026-07--response-doctrine-v2--web-instructions-v6--two-channels-sentences-for-the-founder-fenced-blocks-for-machines-process-is-proof-not-prose-the-chat-start-ingest-contract-the-relay-rule--origin-is-the-only-courier-codes-output-is-never-pasted-to-web-reviews-speak-in-goal-and-outcome-the-core-file-alert-the-agenda-convention-brief-renders-the-full-picture-the-master-gains-a-version-history-amends-d-052)
+   [D-063](../../../DECISIONS.md#d-063--response-doctrine-v2-and-web-instructions-v6)
    made a fresh Web chat drift-check its box against the master's
    version line. The idea got what it asked for by a different
    mechanism, three benches later, and no one closed it.
@@ -129,7 +129,7 @@ that entry.**
 
 "Keep the self-read launcher as a script" was carried forward as
 OPEN. It is DECLINED:
-[D-051](../../../DECISIONS.md#d-051--2026-07--self-seat-birth--liftoff-fires---cloud-blind-and-the-cockpit-seats-itself-by-its-env-derived-self-url-the-console-attach-launcher-is-retired-amends-d-047s-rung-1-mechanics-as-corrected-by-193-upholds-d-049-and-board-governs)
+[D-051](../../../DECISIONS.md#d-051--self-seat-birth)
 retires the console-attach launcher — "the component is DELETED
 from the recipe, not maintained" — and names KEEPING THE LAUNCHER
 AS A FALLBACK among its rejected options, two days AFTER the idea
@@ -183,6 +183,6 @@ were my regex, not the file (`\|` does not alternate under
 
 - [the spec](../../../specs/ideas-contract.md) — the contract.
 - [IDEAS](../../../../IDEAS.md) — the file being rewritten.
-- [D-050](../../../DECISIONS.md#d-050--2026-07--session-lifecycle--closed--dead-the-close-locks-wall-softens-to-injected-read-only-doctrine-interrupt-capture-is-standing-format-the-claude-residue-sweep-is-pickup-hygiene-ideas-is-an-inbox-not-an-archive-amends-the-d-046-era-close-wall-design-upholds-the-park-protocol-and-no-solo-approval)
+- [D-050](../../../DECISIONS.md#d-050--session-lifecycle-closed-is-not-dead)
   — the delete-at-harvest law this amends.
 - the Web ops chat, 2026-07-29 — where the contract was approved.

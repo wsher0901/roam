@@ -9,7 +9,7 @@ pr: 27
 
 ## What shipped
 
-([D-009](../../../DECISIONS.md#d-009--2026-06--pacing-law-finish-first-flexible-cap))
+([D-009](../../../DECISIONS.md#d-009--pacing-law))
 · Recommendations needing the founder's attention are capped at
 "Now + one parallel slot", open lanes always outrank new tasks, and
 stopping is a valid next step →

@@ -179,7 +179,7 @@ founder rather than being silently fixed:
    change re-opens it. The chronicle's ending rule says a later
    fix is incorporated at the weld that advances the item —
    but ship carries no chronicle step yet, deferred by
-   [D-059](../../../DECISIONS.md#d-059--2026-07--the-chronicle-layer--living-stories-above-the-frozen-record-one-story-per-item-the-ending-rule--settled-in-any-format-means-the-story-is-written-a-later-fix-is-incorporated-and-the-ending-rewritten-at-that-weld-retirement-is-a-settlement-docschronicle-one-file-per-story-indexmd-shelving-four-shelves-immutability-beneath--record-untouched-stories-link-down-as-footnotes-down-links-only--a-story-never-cites-another-storys-prose-supersedes-the-07-23-three-chapter-shape-the-ship-synthesis-at-weld-step-deferred-to-the-first-story-weld)
+   [D-059](../../../DECISIONS.md#d-059--the-chronicle-layer)
    to the first story weld. So this may be a deliberate wait
    rather than a miss.
 2. **The cockpit charter's rule 5 glosses doctrine v1's clauses**
@@ -231,7 +231,7 @@ payload never changed shape:
 The critic's other routed finding — the census carrying three
 statements this weld falsifies — was NOT ruled in this round and
 stays open for the founder; ship still has no chronicle step
-(deferred by [D-059](../../../DECISIONS.md#d-059--2026-07--the-chronicle-layer--living-stories-above-the-frozen-record-one-story-per-item-the-ending-rule--settled-in-any-format-means-the-story-is-written-a-later-fix-is-incorporated-and-the-ending-rewritten-at-that-weld-retirement-is-a-settlement-docschronicle-one-file-per-story-indexmd-shelving-four-shelves-immutability-beneath--record-untouched-stories-link-down-as-footnotes-down-links-only--a-story-never-cites-another-storys-prose-supersedes-the-07-23-three-chapter-shape-the-ship-synthesis-at-weld-step-deferred-to-the-first-story-weld)
+(deferred by [D-059](../../../DECISIONS.md#d-059--the-chronicle-layer)
 to the first story weld), so the wait may be the right answer.
 
 ## Where to look

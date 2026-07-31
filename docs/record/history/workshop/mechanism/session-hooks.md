@@ -14,7 +14,7 @@ session now opens synced and briefed on any OS (cross-platform Node
 hooks replace the Windows-only one), a session-end safety net
 auto-pushes unfinished lane work so it can never be lost, and
 routine git/GitHub commands are pre-approved — reliability work for
-the [D-020](../../../DECISIONS.md#d-020--2026-07--parallel-lanes-v2-native-lanes-replace-hand-built-orchestration)
+the [D-020](../../../DECISIONS.md#d-020--parallel-lanes-v2)
 lanes → [PR #53](https://github.com/wsher0901/roam/pull/53)
 
 ## Story

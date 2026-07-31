@@ -12,8 +12,8 @@ shipped: 2026-07-13
 # laws-polish — LAWS polish: glossed lane law, provenance to consolidations, ship syncs with main
 **Links:** [LAWS](../../LAWS.md) · [PROJECT-POLICY](../../SETUP.md) ·
 [ship](../../skills/ship.md) · [HOME](../../HOME.md) · Decisions:
-[D-009](../DECISIONS.md#d-009--2026-06--pacing-law-finish-first-flexible-cap) ·
-[D-023](../DECISIONS.md#d-023--2026-07--universal-draft-pr-at-birth--micro-pr-carve-out-recut-amends-d-002-d-008-d-020)
+[D-009](../DECISIONS.md#d-009--pacing-law) ·
+[D-023](../DECISIONS.md#d-023--universal-draft-pr-at-birth-and-micro-pr-carve-out)
 
 ## Goal
 [LAWS](../../LAWS.md) reads as pure plain-language commands (D-cites
@@ -42,7 +42,7 @@ gains a sync-with-main preflight.
      origin/main before gating;
    - [PROJECT-POLICY §Workshop choices](../../SETUP.md)
      gains the pacing law with its
-     [D-009](../DECISIONS.md#d-009--2026-06--pacing-law-finish-first-flexible-cap)
+     [D-009](../DECISIONS.md#d-009--pacing-law)
      provenance;
    - [HOME](../../HOME.md)'s ship portrait mentions the sync.
 3. Verify (below) · [ship](../../skills/ship.md) to THE GATE — no
@@ -52,7 +52,7 @@ gains a sync-with-main preflight.
 - [x] Edits 1–8 landed verbatim
 - [x] Zero D-number mentions left in [LAWS](../../LAWS.md)
 - [x] [PROJECT-POLICY](../../SETUP.md) carries the pacing law
-      with [D-009](../DECISIONS.md#d-009--2026-06--pacing-law-finish-first-flexible-cap)
+      with [D-009](../DECISIONS.md#d-009--pacing-law)
 - [x] [ship.md](../../skills/ship.md) and [LAWS](../../LAWS.md) both carry
       the main-sync step
 - [x] `node scripts/check-links.mjs` passes

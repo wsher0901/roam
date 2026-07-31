@@ -19,8 +19,8 @@ tail added the reviewer-subagent Needs-you line to the board.
 
 Sources:
 [spec](../../../specs/setup-consolidation.md)
-[D-029](../../../DECISIONS.md#d-029--2026-07--corpus-writing-laws--readability-first-links-below-prose)
-[D-030](../../../DECISIONS.md#d-030--2026-07--setup-consolidation--setupmd-equipment-plan-and-project-policy-retired-extends-d-024s-retirement-pattern-amends-the-d-021-consolidation-split)
+[D-029](../../../DECISIONS.md#d-029--corpus-writing-laws)
+[D-030](../../../DECISIONS.md#d-030--setup-consolidation)
 
 ## What this task is
 One listing-style inventory file — SETUP.md — is born, holding the

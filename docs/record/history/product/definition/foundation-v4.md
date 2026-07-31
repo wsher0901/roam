@@ -10,7 +10,7 @@ pr: 85
 Shipped — merged as
 [PR #85](https://github.com/wsher0901/roam/pull/85) on the founder's
 word after the external review. All edits landed as
-[D-025](../../../DECISIONS.md#d-025--2026-07--foundation-v4--principles-recut-open-family-set-lifespan-repair-extends-d-012-upholds-d-021d-022)
+[D-025](../../../DECISIONS.md#d-025--foundation-v4-principles-recut)
 entry + ripple in one commit; every Done-means box verified.
 
 ## What this task is
@@ -18,11 +18,11 @@ A docs-only recut of [FOUNDATION](../../../../FOUNDATION.md), fully specified
 in the Web-chat workshop (slug foundation-v4). Four honesty repairs
 to the identity file — the lifespan clause stops duplicating a
 ROADMAP refusal
-([D-022](../../../DECISIONS.md#d-022--2026-07--version-ladder--lifespan-split-amends-d-004)),
+([D-022](../../../DECISIONS.md#d-022--version-ladder-and-lifespan-split)),
 the family set opens (five today, not five by definition), the
 plug-in principle admits that rankings re-tune, the in-app list
 opens — plus layered personalization extending
-[D-012](../../../DECISIONS.md#d-012--2026-06--elicitation--inference-policy-ask-tiers-provenance-upsert)
+[D-012](../../../DECISIONS.md#d-012--elicitation-and-inference-policy)
 with a cohort-prior layer, carried into
 [DECISION-POLICY §5](../../../../ENGINE.md#2-intake--resolve-the-traveler).
 ROADMAP explicitly untouched (version scope keeps "all five
@@ -44,7 +44,7 @@ open branches and zero open PRs — the cockpit took the lane
 directly. The next D-number was computed from
 [DECISIONS](../../../DECISIONS.md)' tail as instructed: D-024 was last, so
 this landed as
-[D-025](../../../DECISIONS.md#d-025--2026-07--foundation-v4--principles-recut-open-family-set-lifespan-repair-extends-d-012-upholds-d-021d-022).
+[D-025](../../../DECISIONS.md#d-025--foundation-v4-principles-recut).
 The anchor-ripple hit list, derived at execution time, was smaller
 than the workshop expected: exactly two hits
 ([DECISION-POLICY §3](../../../../ENGINE.md#7-render--honest-pixels)
@@ -61,7 +61,7 @@ ROADMAP absent from the branch diff.
 - PR: [#85](https://github.com/wsher0901/roam/pull/85) (squash-merged
   2026-07-12)
 - decision:
-  [D-025](../../../DECISIONS.md#d-025--2026-07--foundation-v4--principles-recut-open-family-set-lifespan-repair-extends-d-012-upholds-d-021d-022)
+  [D-025](../../../DECISIONS.md#d-025--foundation-v4-principles-recut)
 - edited files: [FOUNDATION](../../../../FOUNDATION.md) ·
   [DECISION-POLICY §5](../../../../ENGINE.md#2-intake--resolve-the-traveler) ·
   [HOME](../../../../HOME.md) (portrait + check-module term)

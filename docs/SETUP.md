@@ -6,7 +6,7 @@ status: living
 # Setup — everything the workshop runs on
 
 THE ENTRY CONTRACT
-([D-064](record/DECISIONS.md#d-064--2026-07--the-box-master-class--the-setup-entry-contract--every-external-box-master-is-its-own-top-level-file-on-the-web-instructions-pattern-cockpit-chartermd-and-lane-workermd-extracted-verbatim-setup-compresses-to-a-replication-spec-under-the-entry-contract-what--where--values--verify--source-design-kickoff-joins-the-class-on-paper)):
+([D-064](record/DECISIONS.md#d-064--the-box-master-class-and-setup-entry-contract)):
 every entry is a replication spec — WHAT (the thing) · WHERE it is
 configured (the exact screen, file, or command) · VALUES (every
 non-default choice, exactly) · VERIFY (one probe that proves it
@@ -21,7 +21,7 @@ say "I'm on a new PC" or "apply the vault lens".
 ONE CARVE-OUT ON VALUES, because this repo is PUBLIC: secrets are
 recorded by NAME ONLY, never by value — the value lives in
 `.env.local` or a repository secret, and the entry names where.
-[D-064](record/DECISIONS.md#d-064--2026-07--the-box-master-class--the-setup-entry-contract--every-external-box-master-is-its-own-top-level-file-on-the-web-instructions-pattern-cockpit-chartermd-and-lane-workermd-extracted-verbatim-setup-compresses-to-a-replication-spec-under-the-entry-contract-what--where--values--verify--source-design-kickoff-joins-the-class-on-paper)
+[D-064](record/DECISIONS.md#d-064--the-box-master-class-and-setup-entry-contract)
 states the field that way, and
 [LAWS §Safety](LAWS.md#safety-non-negotiable) makes it absolute.
 
@@ -47,7 +47,7 @@ the repo layout:
   no app imports), spike scripts in `scripts/spikes/`
 
 Performance doctrine, verbatim from
-[D-005](record/DECISIONS.md#d-005--2026-06--stack-re-trial-vs-foundation-v1-d-001-upheld--frontend-layer):
+[D-005](record/DECISIONS.md#d-005--stack-re-trial-upholds-d-001):
 "stream-first (UI never blocks on the brain; partial results
 render as they resolve), cache-heavy (every fetched fact stored in
 Postgres with a freshness window — the dataset asset and the speed
@@ -60,9 +60,9 @@ VERIFY: `npm ls next react tailwindcss` resolves; the engine
 boundary is lint-enforced (`npm run lint`).
 
 Sources:
-[D-001 — tech stack](record/DECISIONS.md#d-001--2026-06--tech-stack)
-[D-005 — stack re-trial + frontend layer](record/DECISIONS.md#d-005--2026-06--stack-re-trial-vs-foundation-v1-d-001-upheld--frontend-layer)
-[D-007 — shadcn on Base UI](record/DECISIONS.md#d-007--2026-06--shadcnui-builds-on-base-ui-not-radix)
+[D-001 — tech stack](record/DECISIONS.md#d-001--tech-stack)
+[D-005 — stack re-trial + frontend layer](record/DECISIONS.md#d-005--stack-re-trial-upholds-d-001)
+[D-007 — shadcn on Base UI](record/DECISIONS.md#d-007--shadcnui-builds-on-base-ui)
 
 ## Once and done — repo-side (travels with git)
 
@@ -98,7 +98,7 @@ run check:memory` — the same set CI runs.
 Sources:
 [LAWS §Safety](LAWS.md#safety-non-negotiable)
 [skills folder](skills)
-[D-044 — the pre-GATE critic](record/DECISIONS.md#d-044--2026-07--the-pre-gate-critic-goes-live--ships-gate-opens-by-invoking-the-reviewer-subagent-verdicts-advisory-riding-with-the-summary-turns-on-the-staged-reviewer-upholds-d-038-and-the-reviewer-frame)
+[D-044 — the pre-GATE critic](record/DECISIONS.md#d-044--the-pre-gate-critic-goes-live)
 · frame: [its spec](record/specs/reviewer-subagent.md)
 
 ## Once and done — cloud accounts
@@ -118,7 +118,7 @@ Sources:
   by machine.
   VERIFY: `gh api repos/wsher0901/roam/branches/main/protection --jq '.required_status_checks.contexts'`
   → contains `checks`.
-  SOURCE: [D-038](record/DECISIONS.md#d-038--2026-07--ci-is-the-arbiter--actions-green-required-at-every-gate-local-gate-mirrors-all-six-ci-steps-d-anchors-born-resolving-upholds-d-027).
+  SOURCE: [D-038](record/DECISIONS.md#d-038--ci-is-the-arbiter).
 
 - **Vercel project** — WHERE: the Vercel dashboard, linked to the
   repo (deploys since [V1.S2.T3](ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)).
@@ -143,7 +143,7 @@ Sources:
   self-authored diffs.
   VERIFY: the box's version line matches the master's newest
   Version-history row.
-  SOURCE: [D-046](record/DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+  SOURCE: [D-046](record/DECISIONS.md#d-046--flight-cockpit-the-control-tower-online)
   (surface doctrine) ·
   [LAWS §Workflow](LAWS.md#workflow-non-negotiable)
   (no-solo-approval).
@@ -201,8 +201,8 @@ Sources:
   daily-cap run per fire, INVISIBLE to `npm run count:runs`.
   VERIFY: `.env.local` contains both names (`grep -c COCKPIT_
   .env.local` → 2); the routine itself is UI-only.
-  SOURCE: [D-046](record/DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
-  · [D-047](record/DECISIONS.md#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law)
+  SOURCE: [D-046](record/DECISIONS.md#d-046--flight-cockpit-the-control-tower-online)
+  · [D-047](record/DECISIONS.md#d-047--cloud-born-cockpit)
   · bench: [flight-cockpit](record/specs/flight-cockpit.md).
 
 - **The cockpit's `--cloud` birth — the PRIMARY vehicle.**
@@ -225,8 +225,8 @@ Sources:
   VERIFY: exit 0 from the fire, then the cockpit's own greeting
   push and self-seat repaint on the board — a MISSING push is the
   failure signal.
-  SOURCE: [D-047](record/DECISIONS.md#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law)
-  · [D-051](record/DECISIONS.md#d-051--2026-07--self-seat-birth--liftoff-fires---cloud-blind-and-the-cockpit-seats-itself-by-its-env-derived-self-url-the-console-attach-launcher-is-retired-amends-d-047s-rung-1-mechanics-as-corrected-by-193-upholds-d-049-and-board-governs)
+  SOURCE: [D-047](record/DECISIONS.md#d-047--cloud-born-cockpit)
+  · [D-051](record/DECISIONS.md#d-051--self-seat-birth)
   (blind fire) ·
   [cloud-born-cockpit](record/specs/cloud-born-cockpit.md).
 
@@ -246,7 +246,7 @@ Sources:
   MCP injection — two API paths, one credential boundary.
   VERIFY (from inside a cloud session): `gh api user` succeeds;
   `gh pr list` 403s pointing to REST.
-  SOURCE: [D-049](record/DECISIONS.md#d-049--2026-07--gh-second-path--gh-api-rest-through-the-github-proxy-is-the-cockpits-second-api-path-a-connector-flap-stops-costing-command-r2-gains-the-automatic-gh-rung-self-id-by-session-env-amends-d-048-corrects-the-193-api-map-upholds-d-047-and-verify-before-rely),
+  SOURCE: [D-049](record/DECISIONS.md#d-049--gh-second-path),
   probe-proven 2026-07-23; the corrected earlier reading is in
   [gh-second-path](record/history/workshop/mechanism/gh-second-path.md).
 
@@ -270,7 +270,7 @@ Sources:
   them the workflow reports `missing-secrets` and fails honestly.
   VERIFY: `gh secret list` shows both names (values never
   readable).
-  SOURCE: [D-048](record/DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047).
+  SOURCE: [D-048](record/DECISIONS.md#d-048--cockpit-resilience).
 
 - **The phone bootstrap** — rung 5, for no terminal and no GitHub.
   WHERE: the Claude app → new session on wsher0901/roam → paste
@@ -306,10 +306,10 @@ flight plan.
   Opus 5 (a founder act in the routines UI, not a repo file).
   VERIFY: `grep -E 'model|effort' .claude/agents/reviewer.md`;
   `/model` in any session reports the current pick.
-  SOURCE: [D-054](record/DECISIONS.md#d-054--2026-07--the-landing-skill--how-a-flight-ends-becomes-a-first-class-ritual-one-skill-with-two-modes-routed-by-fleet-state-retire--pause-and-transfer-the-fence-is-a-commit-so-the-resume-point-is-the-branch-tip-by-construction-wake-lock-mediated-with-its-honesty-clause-the-board-is-the-single-transfer-material-pickup-gains-the-fleet-resume-ask-and-its-cap-arithmetic-sessions-are-cattle-branches-are-the-work-charter-rule-6-becomes-a-pointer-the-effort-doctrine-moves-to-opus-5--xhigh-upholds-the-wake-lock-the-park-protocol-and-one-home-supersedes-the-opus-48-reliance-pair)
+  SOURCE: [D-054](record/DECISIONS.md#d-054--the-landing-skill)
   (the Opus 5 · xhigh doctrine, retiring the Opus 4.8 / Sonnet 5
   reliance pair) ·
-  [D-055](record/DECISIONS.md#d-055--2026-07--agent-teams--the-boundary-teams-are-for-exploration-and-review-at-a-ground-seat-lanes-remain-the-authorship-mechanism-two-risks-become-law-single-sitting-only--an-explicit-carve-out-to-d-050s-interrupt-promise--and-a-teammate-authored-diff-is-self-authored-under-no-solo-approval-the-reviewers-model-settled-by-verification-not-guess-the-founder-side-config-recorded-upholds-the-lane-law-no-solo-approval-and-one-home-gives-the-experimental-flag-its-consumer)
+  [D-055](record/DECISIONS.md#d-055--agent-teams-the-boundary)
   (the alias verified rather than guessed).
 
 - **Agent teams — founder-side config**, so any seat sets it up
@@ -331,7 +331,7 @@ flight plan.
   (leader's model).
   SOURCE: WHEN to reach for a team —
   [HOME §Agent teams](HOME.md#agent-teams) ·
-  [D-055](record/DECISIONS.md#d-055--2026-07--agent-teams--the-boundary-teams-are-for-exploration-and-review-at-a-ground-seat-lanes-remain-the-authorship-mechanism-two-risks-become-law-single-sitting-only--an-explicit-carve-out-to-d-050s-interrupt-promise--and-a-teammate-authored-diff-is-self-authored-under-no-solo-approval-the-reviewers-model-settled-by-verification-not-guess-the-founder-side-config-recorded-upholds-the-lane-law-no-solo-approval-and-one-home-gives-the-experimental-flag-its-consumer).
+  [D-055](record/DECISIONS.md#d-055--agent-teams-the-boundary).
 
 - **Hands: solo · subagents · team · lanes** — the founder's
   choose-your-hands rule. VALUES: solo (default) for sequential or
@@ -347,7 +347,7 @@ flight plan.
   with the founder watching = team · many benches = lanes ·
   reading only = subagents.
   VERIFY: none — a judgment rule, not a setting.
-  SOURCE: [D-045](record/DECISIONS.md#d-045--2026-07--hands-doctrine-solo--subagents--agent-team--lanes--the-litmus-is-one-bench-many-hands-vs-many-benches-vs-read-only-upholds-d-020-and-d-041)
+  SOURCE: [D-045](record/DECISIONS.md#d-045--hands-doctrine)
   · the boundary at [HOME §Agent teams](HOME.md#agent-teams).
 
 - **Supabase** — arrives with
@@ -396,7 +396,7 @@ Sources:
   backstop for a machine that must stay on.
   VERIFY: `/config` → "Enable Remote Control for all sessions" =
   true.
-  SOURCE: [D-046](record/DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock).
+  SOURCE: [D-046](record/DECISIONS.md#d-046--flight-cockpit-the-control-tower-online).
 
 Sources:
 [machine-setup](skills/machine-setup.md)
@@ -422,7 +422,7 @@ Nothing here is armed. Each line names its stage and what turns on.
   trigger lets the control tower and liftoff ignite cloud lanes by
   endpoint, benches stay draft, and the ready-flip reverts to
   completion-only. Adopt at first need, verify-before-rely.
-  SOURCE: [D-043](record/DECISIONS.md#d-043--2026-07--cloud-ignition--away-command-redesign--route-ladder-v2-ready-flip-then-label-is-the-recipe-of-record-api-ignition-and-the-cloud-clerk-staged-the-claude-app-the-single-away-surface-amends-d-041-upholds-the-lane-law-and-the-wake-lock).
+  SOURCE: [D-043](record/DECISIONS.md#d-043--cloud-ignition-and-away-command-redesign).
 - **RESOLVED, no longer staged** — the summon button is LIVE; its
   recipe and the required founder act are in
   [§cloud accounts](#once-and-done--cloud-accounts). The dispatch

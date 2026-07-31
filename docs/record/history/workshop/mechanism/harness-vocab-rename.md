@@ -13,7 +13,7 @@ shipped — 2026-07-20 22:01, [#180](https://github.com/wsher0901/roam/pull/180)
 
 ## What this task is
 Finish the
-[D-046](../../../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+[D-046](../../../DECISIONS.md#d-046--flight-cockpit-the-control-tower-online)
 rename inside the `.claude/` harness: the pickup stub's description
 and the session-start hook's briefing directive still say "cockpit"
 in the old ground meaning; both learn the baton-holder vocabulary
@@ -62,7 +62,7 @@ hand. Deviation, recorded honestly: the
 [no-solo-approval law](../../../../LAWS.md#workflow-non-negotiable) wants a
 non-author session's review before the word; none existed when the
 word came, so ship's gate critic — the reviewer subagent
-([D-044](../../../DECISIONS.md#d-044--2026-07--the-pre-gate-critic-goes-live--ships-gate-opens-by-invoking-the-reviewer-subagent-verdicts-advisory-riding-with-the-summary-turns-on-the-staged-reviewer-upholds-d-038-and-the-reviewer-frame)),
+([D-044](../../../DECISIONS.md#d-044--the-pre-gate-critic-goes-live)),
 a non-author reviewer though spawned from the author's seat — was
 run before the weld and its verdict rides in the PR. The founder's
 explicit word remains the gate that authorized the merge.
@@ -74,5 +74,5 @@ explicit word remains the gate that authorized the merge.
   directive string near the file's end)
 - provenance: [flight-cockpit](../../../specs/flight-cockpit.md)
   (Out-of-scope + Deviations) ·
-  [D-046](../../../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+  [D-046](../../../DECISIONS.md#d-046--flight-cockpit-the-control-tower-online)
   · [#177](https://github.com/wsher0901/roam/pull/177)

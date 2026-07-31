@@ -22,7 +22,7 @@ lane law gains the wake-lock — a lane waking on a Status it does
 not own (parked · respawned · superseded) bows out, and every lane
 outcome parks until the founder acts. Mechanism: one
 [decide](../../../../skills/decide.md) entry
-([D-032](../../../DECISIONS.md#d-032--2026-07--fleet-continuity--handoff-parks-every-local-lane-liftoff-respawns-parked-benches-wake-lock-parks-every-outcome-extends-the-d-020d-023-lane-law-upholds-d-009))
+([D-032](../../../DECISIONS.md#d-032--fleet-continuity))
 whose ripple overwrites handoff + liftoff with fixed payloads and
 lands four surgical edits + two insertions across
 [parallel-lanes](../../../../skills/parallel-lanes.md) and
@@ -54,7 +54,7 @@ No deviations from the brief anywhere.
 
 ## Where to look
 Spec: [fleet-continuity](../../../specs/fleet-continuity.md) · decision:
-[D-032](../../../DECISIONS.md#d-032--2026-07--fleet-continuity--handoff-parks-every-local-lane-liftoff-respawns-parked-benches-wake-lock-parks-every-outcome-extends-the-d-020d-023-lane-law-upholds-d-009)
+[D-032](../../../DECISIONS.md#d-032--fleet-continuity)
 · PR [#104](https://github.com/wsher0901/roam/pull/104) (the brief
 lives verbatim in the founder's kickoff message; the PR description
 mirrors its plan) · targets: [handoff](../../../../skills/handoff.md) ·

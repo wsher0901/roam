@@ -11,7 +11,7 @@ Shipped — merged as
 [PR #130](https://github.com/wsher0901/roam/pull/130) on the founder's
 word. Every gate on the way out waited on the pushed commit's Actions
 run going green
-([D-038](../../../DECISIONS.md#d-038--2026-07--ci-is-the-arbiter--actions-green-required-at-every-gate-local-gate-mirrors-all-six-ci-steps-d-anchors-born-resolving-upholds-d-027)).
+([D-038](../../../DECISIONS.md#d-038--ci-is-the-arbiter)).
 
 ## What this task is
 Bring HOME (the project's bible, the most human-readable surface)
@@ -31,8 +31,8 @@ Nothing parked.
 
 ## The story
 Born this session from the kickoff, after
-[D-040](../../../DECISIONS.md#d-040--2026-07--handoff-input-inversion--the-leaving-message-carries-the-webdesign-paste-inline-the-never-skipped-question-is-retired-a-bare-trigger-means-none-amends-the-two-touchpoints-laws-wording-upholds-d-032),
-[D-039](../../../DECISIONS.md#d-039--2026-07--recall--questions-answered-from-files-never-from-memory-the-d-036-routing-tables-read-mirror-model-invoked-at-discretion),
+[D-040](../../../DECISIONS.md#d-040--handoff-input-inversion),
+[D-039](../../../DECISIONS.md#d-039--recall-answers-from-files),
 and the skills precision pass shipped. HOME had drifted: it still said
 handoff "asks" its Web/Design question and that the founder "never
 types a slash", and it had no Terms entries for several load-bearing

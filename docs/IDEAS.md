@@ -6,7 +6,7 @@ status: living
 # Ideas Inbox
 
 THE ENTRY CONTRACT
-([D-066](record/DECISIONS.md#d-066--2026-07--the-ideas-entry-contract--one-idea-per-line-one-line-per-idea-plain-language-links-short-text-at-the-tail-glyph-first-open--developed-with-vehicle--declined-with-a-one-word-why-two-sections-open-newest-first-and-closed-one-line-each-closed-entries-compress-and-stay-as-the-outcome-ledger-amends-the-delete-at-harvest-compaction-law-multi-part-thoughts-split-so-closure-is-per-idea-findings-and-probe-stories-live-in-the-record-never-here-enforcement--the-header-is-the-law-handoffs-harvest-grooms-to-it-every-sitting-liftoffdecideparallel-lanes-cite-it-at-their-write-steps-the-critic-and-the-external-review-grade-ideas-diffs-against-it)):
+([D-066](record/DECISIONS.md#d-066--the-ideas-entry-contract)):
 one idea per line, one line per idea — a plain sentence a tired
 reader scans, jargon translated, links short-text at the tail.
 Glyph first: ⏳ open · 🟢 developed (vehicle linked) · ⚪ declined
@@ -62,7 +62,7 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   lanes unprompted per the hands litmus, the founder's word
   staying the only trigger. Gated on grading the first team use.
   (2026-07-27, the founder + the external reviewer) →
-  [D-045](record/DECISIONS.md#d-045--2026-07--hands-doctrine-solo--subagents--agent-team--lanes--the-litmus-is-one-bench-many-hands-vs-many-benches-vs-read-only-upholds-d-020-and-d-041)
+  [D-045](record/DECISIONS.md#d-045--hands-doctrine)
 - ⏳ HARNESS V2 — one bench growing the hook layer from three
   events to the guard set: PreToolUse guards, a Stop done-means
   self-check, SessionStart `sessionTitle` for `[COCKPIT]`/`[LANE]`
@@ -73,11 +73,6 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   the `[LANE]` naming half of the 07-22 session-naming line, and
   the notification-taxonomy line (2026-07-22). (2026-07-27, the
   founder + the external reviewer)
-- ⏳ Shorten the ~300-character decide-anchor links that cost
-  context and vault readability every session — a stable short
-  anchor per D-number, or an anchor-alias convention, either way
-  weave-rule-compatible. (2026-07-24, the founder) →
-  [LAWS](LAWS.md)
 - ⏳ Give [ENGINE](ENGINE.md) the right frontmatter — it reads
   `type: spec` though it is a living consolidation. The founder's
   word: it stays for now, resolved at the first engine bench,
@@ -103,7 +98,7 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   would make the rescue vehicle the sturdier species and reopen
   the list-native-beats-sturdy choice. One data point plus one
   filed report; do not act yet. (2026-07-22, Claude Code) →
-  [D-047](record/DECISIONS.md#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law)
+  [D-047](record/DECISIONS.md#d-047--cloud-born-cockpit)
 - ⏳ DEFECT — `npm run count:runs` fails at the work PC's Git Bash
   while the same script run directly succeeds; the npm wrapper's
   PATH leaves `execFileSync("gh", …)` unable to resolve the
@@ -141,7 +136,7 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   series, forecast-vs-actual calibration pairs, coverage maps.
   Possible only because storage is licence-segmented.
   (2026-06-12, Web) →
-  [D-015](record/DECISIONS.md#d-015--2026-06--data-asset-law-bitemporal-append-only-license-segmented)
+  [D-015](record/DECISIONS.md#d-015--data-asset-law)
 - ⏳ Support multi-origin trips and group preference merging —
   friends converging from different cities, several travellers'
   inputs merged into one plan. (2026-06-12, Web)
@@ -160,6 +155,11 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
 The outcome ledger — one line each, newest first. A closed idea
 keeps its answer, never its narrative.
 
+- 🟢 Shorten the decide-anchor links — done as THE SHORT-ANCHOR
+  LAW: headings carry a short name (8 words max), the full
+  statement moves to an `In full:` line, anchors freeze at mint;
+  D-001–D-067 retrofitted. (2026-07-24 → closed 2026-07-31) →
+  [#253](https://github.com/wsher0901/roam/pull/253)
 - 🟢 The ritual report sweep — every founder-facing report now
   renders one skeleton (verdict · your act · off-origin · context
   · pointer), one job per surface, push first and report second;
@@ -173,17 +173,17 @@ keeps its answer, never its narrative.
   founder re-saves them by hand and the board tracks the owing.
   Asked 2026-07-24 as "stamp each master with last-pasted date +
   sha". →
-  [D-064](record/DECISIONS.md#d-064--2026-07--the-box-master-class--the-setup-entry-contract--every-external-box-master-is-its-own-top-level-file-on-the-web-instructions-pattern-cockpit-chartermd-and-lane-workermd-extracted-verbatim-setup-compresses-to-a-replication-spec-under-the-entry-contract-what--where--values--verify--source-design-kickoff-joins-the-class-on-paper)
+  [D-064](record/DECISIONS.md#d-064--the-box-master-class-and-setup-entry-contract)
   ·
-  [D-063](record/DECISIONS.md#d-063--2026-07--response-doctrine-v2--web-instructions-v6--two-channels-sentences-for-the-founder-fenced-blocks-for-machines-process-is-proof-not-prose-the-chat-start-ingest-contract-the-relay-rule--origin-is-the-only-courier-codes-output-is-never-pasted-to-web-reviews-speak-in-goal-and-outcome-the-core-file-alert-the-agenda-convention-brief-renders-the-full-picture-the-master-gains-a-version-history-amends-d-052)
+  [D-063](record/DECISIONS.md#d-063--response-doctrine-v2-and-web-instructions-v6)
   (the drift-check)
 - 🟢 The superseded-seat exit — the one road out of a sitting that
   ran no ritual, so a superseded tower leading a team lost its
   findings. Closed in two steps: the cockpit road first, then
   generalized to ANY superseded seat. →
-  [D-061](record/DECISIONS.md#d-061--2026-07--the-landing-doctrine-recut-to-three-scenarios--the-cockpits-standing-job-advise-on-fleet-status-and-on-each-gate-reaching-decision-execute-the-founders-rulings-from-the-phone-auto-land-when-the-fleet-empties-and-nothing-awaits-the-founder-desk-takeover-when-pickup-finds-a-live-cockpit-holding-decisions-and-the-founders-freeze-unchanged-the-tombstone-wake-rule-makes-a-superseded-cockpit-retire-by-the-full-ritual-amends-d-054s-two-mode-routing-upholds-no-solo-approval-and-the-derivation-law)
+  [D-061](record/DECISIONS.md#d-061--the-landing-doctrine-recut-to-three-scenarios)
   ·
-  [D-062](record/DECISIONS.md#d-062--2026-07--the-wake-rule-generalized--any-superseded-seat-exits-by-its-own-closing-ritual-never-bare-a-cockpit-by-the-landing-ritual-a-ground-control-tower-by-capture-then-close-with-team-findings-captured-first-no-superseded-seat-writes-a-board-because-the-baton-has-already-moved-closes-d-056s-deferred-road-in-full-upholds-d-056-and-d-061)
+  [D-062](record/DECISIONS.md#d-062--the-wake-rule-generalized)
 - 🟢 The reviewer agent-type registration defect, graduated
   2026-07-17 — closed on the founder's word after five clean
   native runs; ship's general-purpose fallback stays the
@@ -192,17 +192,17 @@ keeps its answer, never its narrative.
 - 🟢 The chronicle layer — living stories above the frozen record;
   one story per ITEM superseded the three-chapter shape, the three
   threads surviving as shelves. →
-  [D-059](record/DECISIONS.md#d-059--2026-07--the-chronicle-layer--living-stories-above-the-frozen-record-one-story-per-item-the-ending-rule--settled-in-any-format-means-the-story-is-written-a-later-fix-is-incorporated-and-the-ending-rewritten-at-that-weld-retirement-is-a-settlement-docschronicle-one-file-per-story-indexmd-shelving-four-shelves-immutability-beneath--record-untouched-stories-link-down-as-footnotes-down-links-only--a-story-never-cites-another-storys-prose-supersedes-the-07-23-three-chapter-shape-the-ship-synthesis-at-weld-step-deferred-to-the-first-story-weld)
+  [D-059](record/DECISIONS.md#d-059--the-chronicle-layer)
 - 🟢 The subagent-model question — settled by verification rather
   than guess: the critic runs the `opus` alias, and teammates ride
   the lead's model by config. →
-  [D-055](record/DECISIONS.md#d-055--2026-07--agent-teams--the-boundary-teams-are-for-exploration-and-review-at-a-ground-seat-lanes-remain-the-authorship-mechanism-two-risks-become-law-single-sitting-only--an-explicit-carve-out-to-d-050s-interrupt-promise--and-a-teammate-authored-diff-is-self-authored-under-no-solo-approval-the-reviewers-model-settled-by-verification-not-guess-the-founder-side-config-recorded-upholds-the-lane-law-no-solo-approval-and-one-home-gives-the-experimental-flag-its-consumer)
+  [D-055](record/DECISIONS.md#d-055--agent-teams-the-boundary)
 - ⚪ Keeping the console-attach launcher as a script — DECLINED
   (retired): the blind fire captures nothing, so there is no
   output to read; D-051 deletes the component rather than
   maintaining it, and names keeping-it-as-a-fallback among its
   rejected options. Asked 2026-07-22. →
-  [D-051](record/DECISIONS.md#d-051--2026-07--self-seat-birth--liftoff-fires---cloud-blind-and-the-cockpit-seats-itself-by-its-env-derived-self-url-the-console-attach-launcher-is-retired-amends-d-047s-rung-1-mechanics-as-corrected-by-193-upholds-d-049-and-board-governs)
+  [D-051](record/DECISIONS.md#d-051--self-seat-birth)
 - 🟢 The cockpit birth-prompt title line — DISPROVEN at the
   2026-07-23 birth: the platform auto-titles from charter content
   and ignored it, so the line was dropped from both homes. →

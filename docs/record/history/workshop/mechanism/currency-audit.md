@@ -143,14 +143,14 @@ generation of staleness:
 **Two questions answered rather than assumed.**
 [go-remote](../../../../skills/go-remote.md) does NOT want retiring or a new
 annotation — it already carries the
-[D-046](../../../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+[D-046](../../../DECISIONS.md#d-046--flight-cockpit-the-control-tower-online)
 backstop wording, and
-[D-046](../../../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+[D-046](../../../DECISIONS.md#d-046--flight-cockpit-the-control-tower-online)
 explicitly rejected full Remote Control retirement
 (alternative ②b); demoted is not dead. And [HOME](../../../../HOME.md)
 already describes the CC-direct surface doctrine correctly in §The
 daily loop — the paste block is named "a tool since
-[D-046](../../../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock),
+[D-046](../../../DECISIONS.md#d-046--flight-cockpit-the-control-tower-online),
 not a requirement". The four HOME fixes are edge corrections, not a
 doctrine rewrite.
 
@@ -188,7 +188,7 @@ so the bullet claims exactly that. The retired-noun greps re-ran
 clean over the finished tree: every surviving hit is
 record-with-note, this bench's own artifacts, the board's ledger
 lines, doctrine-correct
-[D-046](../../../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+[D-046](../../../DECISIONS.md#d-046--flight-cockpit-the-control-tower-online)
 prose (the paste block described as
 a tool, not a requirement), or the out-of-scope
 [WEB-INSTRUCTIONS](../../../../WEB-INSTRUCTIONS.md). One reassurance worth
@@ -202,7 +202,7 @@ verified directly.
 reviewer passed every one of the eleven changes and both
 law-classification judgments, and caught two weave-rule breaches
 in THIS diary's own prose — a bare `#193` and unlinked
-[D-046](../../../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+[D-046](../../../DECISIONS.md#d-046--flight-cockpit-the-control-tower-online)
 mentions in the story. Repaired on sight (the retroactivity law)
 before the ready-flip; a currency bench of all benches should not
 ship carrying its own staleness class.
@@ -233,11 +233,11 @@ more order executed at the weld sitting: the stale
   defect class this bench generalizes.
 - [IDEAS](../../../../IDEAS.md), the 2026-07-23 liftoff-harvest entry — where
   the title line is recorded DISPROVEN, with the edit it wants.
-- [D-046](../../../DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock)
+- [D-046](../../../DECISIONS.md#d-046--flight-cockpit-the-control-tower-online)
   ·
-  [D-047](../../../DECISIONS.md#d-047--2026-07--cloud-born-cockpit--the-cockpits-birth-vehicle-becomes-claude---cloud-list-native-on-every-device-the-automated-hidden-console-birth-is-liftoffs-primary-rung-the-routine-fire-demotes-to-fallback--summon-button-engine-amends-d-046-clause-3-upholds-the-lane-law)
+  [D-047](../../../DECISIONS.md#d-047--cloud-born-cockpit)
   ·
-  [D-048](../../../DECISIONS.md#d-048--2026-07--cockpit-resilience--the-five-rung-connector-ladder-the-summon-workflow-live-on-workflow_dispatch-and-a-push-to-opssummon-explicit-supersession-with-tombstone-and-refusal-guard-and-the-phone-bootstrap-merge-on-signal-and-a-cloud-environment-token-both-rejected-upholds-no-solo-approval-and-d-047)
+  [D-048](../../../DECISIONS.md#d-048--cockpit-resilience)
   — the law every finding is judged against.
 - **The next bench after this one:**
   [WEB-INSTRUCTIONS.md](../../../../WEB-INSTRUCTIONS.md) v5. Confirmed stale

@@ -13,15 +13,15 @@ shipped: 2026-07-12
 **Links:** [FOUNDATION](../../FOUNDATION.md) ·
 [DECISION-POLICY §5](../../ENGINE.md#2-intake--resolve-the-traveler) ·
 [HOME](../../HOME.md) · Decisions:
-[D-012](../DECISIONS.md#d-012--2026-06--elicitation--inference-policy-ask-tiers-provenance-upsert) ·
-[D-021](../DECISIONS.md#d-021--2026-07--plan-synthesis-principles-re-home-to-decision-policy) ·
-[D-022](../DECISIONS.md#d-022--2026-07--version-ladder--lifespan-split-amends-d-004) ·
+[D-012](../DECISIONS.md#d-012--elicitation-and-inference-policy) ·
+[D-021](../DECISIONS.md#d-021--plan-synthesis-principles-re-home) ·
+[D-022](../DECISIONS.md#d-022--version-ladder-and-lifespan-split) ·
 Terms: [check module](../../HOME.md#terms)
 
 ## Goal
 Recut [FOUNDATION](../../FOUNDATION.md)'s principles for honesty and the
 founder's corrections; open the family set; repair the one
-[D-022](../DECISIONS.md#d-022--2026-07--version-ladder--lifespan-split-amends-d-004)
+[D-022](../DECISIONS.md#d-022--version-ladder-and-lifespan-split)
 violation (the pre-trip lifespan clause duplicating a ROADMAP refusal).
 
 ## Out of scope

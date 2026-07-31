@@ -17,7 +17,7 @@ state-changes: the control tower simply relocates from the desk to the
 founder's pocket. Every live lane keeps flying; the founder will drive
 from the phone through Remote Control (RC) instead of the keyboard.
 A BACKSTOP posture since
-[D-046](../record/DECISIONS.md#d-046--2026-07--flight-cockpit--the-cockpit-is-the-control-tower-online-full-authorship-cloud-command-session-the-no-solo-approval-law-liftoff-auto-fires-the-cockpit-cc-direct-surface-doctrine-clerk-retirement-staged-remote-control-demoted-to-backstop-the-cockpitcontrol-tower-rename-amends-d-041-and-d-043-upholds-the-lane-law-and-the-wake-lock):
+[D-046](../record/DECISIONS.md#d-046--flight-cockpit-the-control-tower-online):
 machine-off + the cockpit is the standard away plan; tether only
 when the machine must stay on.
 
