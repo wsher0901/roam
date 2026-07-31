@@ -5,7 +5,7 @@ title: Atlas gains the enforcement mesh (D-071)
 status: open
 stage: workshop
 branch: docs/atlas-census
-pr: —
+pr: 259
 opened: 2026-07-31
 shipped: —
 ---
@@ -23,17 +23,19 @@ task loop, the file flow, away and return, a lane's life, the
 surfaces, the state surfaces. It draws nothing about HOW ANY OF IT
 IS ENFORCED. The enforcement layer is real and multi-stage — an
 ambient import, a register, act-time skills, point-only stubs, three
-hooks, CI on every push, a summon workflow, settings denies, an
+hooks, CI, a summon workflow, settings denies, an
 advisory critic, an external review, and finally the founder's word
 — and a session can read every one of those files without ever
 seeing them as ONE CHAIN.
 
 Diagram 7 draws that chain. And because a picture of enforcement
 invites the belief that everything IS enforced, it also names —
-honestly, in its own dashed box — THE THREE JOINTS THAT ARE
-JUDGMENT ONLY: the links gate is destination-blind, no gate checks
-derivation, and board freshness fires only at rituals. Each of the
-three was learned from a real miss on this workshop's own benches.
+honestly, in its own dashed box — THE JOINTS THAT ARE JUDGMENT
+ONLY: the links gate is destination-blind, no gate checks
+derivation, board freshness fires only at rituals, and — the one
+the first draft missed — nothing mechanical enforces that the
+review happened or that the word was given. Each was learned from
+a real miss, or is a rail this workshop has chosen not to build.
 
 ATLAS's posture is unchanged: IT RENDERS, IT ORIGINATES NOTHING.
 Every box links the PROSE HOME that owns its doctrine, never the
@@ -73,40 +75,62 @@ source for a rule.
 
 ## Done means
 
-- [ ] D-071 exists in the D-068 format, with Decision · Why ·
+- [x] D-071 exists in the D-068 format, with Decision · Why ·
       Alternatives rejected · Affects.
-- [ ] ATLAS carries seven diagrams; the header says seven and the
+- [x] ATLAS carries seven diagrams; the header says seven and the
       stamp is a clock read, not a typed date.
-- [ ] §7 renders the full chain: ambient import → register →
+- [x] §7 renders the full chain: ambient import → register →
       skills → stubs (the five board-writers carrying the ONLY
       merge allowance) → the three hooks, each named by its job →
-      CI's six checks + the summon workflow → the settings denies
-      → the critic → the external review → THE FOUNDER'S WORD as
-      sole merge authority.
-- [ ] THE DASHED NOTE names all three judgment-only joints and
-      points at their recorded path in
-      [IDEAS](../../IDEAS.md) — verified to exist before it is
-      cited.
-- [ ] EVERY BOX IN §7 LINKS A PROSE HOME, and no box links a
+      CI's seven checks → the critic → the external review → THE
+      FOUNDER'S WORD as sole merge authority, with the denies and
+      the summon workflow drawn APART from the cascade because
+      neither is a delivery stage.
+- [x] THE DASHED NOTE names every judgment-only joint and points
+      at [IDEAS](../../IDEAS.md), where each has a line — the
+      coverage VERIFIED, not assumed, and written where it was
+      missing.
+- [x] EVERY BOX IN §7 LINKS A PROSE HOME, and no box links a
       machinery file (`.claude/`, `.github/`, `scripts/`) — the
       diagram renders doctrine, and doctrine lives in prose.
-- [ ] Each claim drawn in §7 is verified against the actual
+- [x] Each claim drawn in §7 is verified against the actual
       wiring before it is drawn; anything the record does not
       carry is left out, not invented.
-- [ ] Diagram 1's verification-loop citation is ship §1; diagrams
+- [x] Diagram 1's verification-loop citation is ship §1; diagrams
       3 and 6 cite the baton case table.
-- [ ] HOME's ATLAS row says seven diagrams.
-- [ ] THE SWEEP PROVEN: `check:links` green AND a destination-grep
+- [x] HOME's ATLAS row says seven diagrams.
+- [x] THE SWEEP PROVEN: `check:links` green AND a destination-grep
       re-run returning zero over living files.
-- [ ] The mermaid block renders (no parse error), confirmed
+- [x] The mermaid block renders (no parse error), confirmed
       before the gate.
-- [ ] `check:links` · `check:ledger` · `check:memory` · lint ·
+- [x] `check:links` · `check:ledger` · `check:memory` · lint ·
       format · test · build green; Actions green on the pushed
       head; ship §6 critic run.
 
 ## Deviations
 
-<filled by ship>
+1. **THE MANDATE'S PICTURE OF CI WAS WRONG TWICE, AND THE WIRING
+   WON BOTH TIMES.** CI does NOT run "on every push" — it fires
+   on `pull_request` and on push to main, and what actually
+   closes that hole is the bench-first law giving every task a
+   draft PR in its first minute. And CI runs SEVEN checks, not
+   six; the mandate's list omitted `format:check`. Both are drawn
+   as they are, and the interlock became the diagram's best
+   single insight.
+2. **[IDEAS](../../IDEAS.md) gained three lines** — one per
+   judgment-only gap — which is outside the mandate's file list.
+   The critic found that the HARNESS V2 line the diagram pointed
+   at does NOT cover any of the three, so the drawn sentence
+   asserted coverage that did not exist. Naming a gap in a
+   diagram and giving it no inbox line is the silent parking the
+   laws forbid; the alternative was to delete the honest note,
+   which was the whole point of drawing it.
+3. **A FOURTH GAP was added to the dashed box**, also from the
+   critic: nothing mechanical enforces that the external review
+   happened or that the word was given — the ritual merge
+   allowance is unconditional once a ritual is running. It sits
+   at the chain's terminus, on its most load-bearing node, and
+   the first draft drew it as if gated.
 
 ## Open questions
 

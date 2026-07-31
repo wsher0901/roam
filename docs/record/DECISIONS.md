@@ -3672,9 +3672,12 @@ EXISTS and never that it is the RIGHT one (a Needs-you arrow rode
 a real-but-wrong heading through every green gate at
 [#250](https://github.com/wsher0901/roam/pull/250)); nothing
 checks the derivation law (a bar rendered 33 segments for 34
-tasks, same bench); and board freshness is only ever repaired at a
-ritual. Drawing those three as gaps, with their recorded path
-forward, is what keeps the diagram honest.
+tasks, same bench); board freshness is only ever repaired at a
+ritual; and THE TERMINUS ITSELF is judgment — nothing mechanical
+enforces that the external review happened or that the word was
+given, since the ritual merge allowance is unconditional once a
+ritual is running. Drawing those as gaps, each with an
+[IDEAS](../IDEAS.md) line, is what keeps the diagram honest.
 
 **Alternatives rejected:**
 
@@ -3698,6 +3701,8 @@ seven; the stamp refreshed; diagram 1's Boxes line re-homes the
 verification loop at ship §1 with LAWS kept beside it as the
 law's home; diagrams 3 and 6 gain the baton case-table citation) ·
 [HOME](../HOME.md) (the files-table ATLAS row, six → seven —
-one row, nothing else) ·
+one row, nothing else) · [IDEAS](../IDEAS.md) (one line per
+judgment-only gap, because a gap named in a diagram and absent
+from the inbox is silently parked) ·
 [the spec](specs/atlas-census.md) + its memory (in flight on the
 bench; moves to history at the weld) · this entry.

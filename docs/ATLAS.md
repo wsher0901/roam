@@ -229,38 +229,54 @@ flowchart TD
   SK --> ST["point-only stubs — a stub cannot drift from its procedure"]
   ST --> MRG["the five board-writing stubs carry the ONLY merge allowance"]
   REG --> HK["three session hooks"]
-  HK --> H1["session-start — pull main, inject the board, clear the close-lock"]
+  HK --> H1["session-start — pull main, inject the board, direct a control-tower session to render pickup, hand over the lane-liveness verdict, clear the close-lock"]
   HK --> H2["user-prompt-submit — stamp a closed session read-only"]
   HK --> H3["session-end — the crash net: WIP committed and pushed on a lane branch"]
   MRG --> CI
   H3 --> CI["CI on every PR and on main — lint, format:check, check:links, check:ledger, check:memory, test, build"]
-  CI --> SUM["the summon workflow — a push to ops/summon is the cockpit's self-rescue"]
-  SUM --> DEN["settings denies — force-push, hard reset, admin merges, cross-repo merges"]
-  DEN --> CR["the critic — advisory, and its round is pushed to the memory before the gate"]
+  CI --> CR["the critic — advisory, and its round is pushed to the memory before the gate"]
   CR --> XR["the external Web review — no-solo-approval, before the word"]
   XR --> W["THE FOUNDER'S WORD — the sole merge authority"]
-  JUD["JUDGMENT ONLY — no gate covers these: the links gate proves an anchor EXISTS, never that it is the RIGHT one; nothing checks the derivation law; board freshness is only ever repaired at a ritual"]
+  DEN["ALWAYS ON, not a stage — the settings denies: force-push, hard reset, rm -rf, repo delete, admin and cross-repo merges, evaluated at every tool call"]
+  SUM["OUT OF BAND, not a stage — the summon workflow: a push to ops/summon is the cockpit's self-rescue when its connectors are dead"]
+  JUD["JUDGMENT ONLY — no gate covers these: the links gate proves an anchor EXISTS, never that it is the RIGHT one, and never that a mention became a link at all; nothing checks the derivation law; board freshness is only ever repaired at a ritual; AND THE TERMINUS ITSELF — no machine enforces that the review happened or that the word was given"]
+  DEN -.-> SK
+  SUM -.-> IMP
   CI -.->|"the honest gap"| JUD
+  W -.->|"the honest gap"| JUD
   classDef gap fill:#4e342e,stroke:#3e2723,color:#ffffff,stroke-dasharray: 5 5
+  classDef ambient fill:#37474f,stroke:#263238,color:#ffffff
   class JUD gap
+  class DEN,SUM ambient
 ```
 
 DRAFT-PR-AT-BIRTH IS WHAT MAKES CI UNIVERSAL: the workflow fires
 on pull requests and on main, so a branch would be uncovered
-until its PR existed — and the bench-first law gives every task a
-draft PR in its first minute. The two laws interlock; neither
-covers the floor alone.
+until its PR existed — and the
+[bench-first law](LAWS.md#workflow-non-negotiable) gives every
+task a draft PR in its first minute. The two laws interlock;
+neither covers the floor alone.
 
-THE DASHED BOX IS NOT DECORATION. Each of its three joints was
-learned from a real miss on this workshop's own benches, and each
-has a recorded path forward in the
-[HARNESS V2 line](IDEAS.md) — the one inbox entry that carries
-the guard set.
+TWO BOXES ARE NOT STAGES, and are drawn apart from the cascade
+for that reason: THE DENIES are ambient permission rails
+evaluated at every tool call in every session, and THE SUMMON
+WORKFLOW is out-of-band — a cockpit's self-rescue when its
+connectors are dead, never a step in delivering a law to an act.
 
-Boxes: [the ambient import and the hooks — HOME §The files](HOME.md#the-files--what-each-one-is-for)
+THE DASHED BOX IS NOT DECORATION. Each joint in it is a real miss
+this workshop has already paid for, or a rail it has chosen not
+to build — including the TERMINUS, where nothing mechanical
+enforces that the external review happened or that the word was
+given; the ritual allowance is unconditional once a ritual is
+running. Their inbox lines are in [IDEAS](IDEAS.md); the
+guard-shaped ones would be hosted by the HARNESS V2 bench, which
+does not name them today.
+
+Boxes: [the ambient import and the session hooks — HOME §The files](HOME.md#the-files--what-each-one-is-for)
+· [the close-lock the prompt hook enforces — HOME §Terms](HOME.md#terms)
 · [the register itself — LAWS](LAWS.md)
 · [skills and their point-only stubs — HOME §Skills](HOME.md#skills)
-· [the merge allowance and the micro-PR carve-out — HOME §Micro-PRs](HOME.md#micro-prs)
+· [the merge allowance, its narrowness, and the micro-PR carve-out — HOME §Micro-PRs](HOME.md#micro-prs)
 · [the verification loop the checks mirror — ship §1](skills/ship.md#1--preflight)
 · [the critic — ship §6](skills/ship.md#6--the-gate)
 · [no-solo-approval — LAWS §Workflow](LAWS.md#workflow-non-negotiable)

@@ -19,6 +19,21 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
 
 ## Open
 
+- ⏳ The links gate is destination-blind — it proves an anchor
+  EXISTS, never that it is the RIGHT one, and never that a
+  mention became a link at all; both misses have already shipped
+  past green gates. A checker that reads the target heading is
+  the shape. (2026-07-31, the mechanism census) →
+  [ATLAS §7](ATLAS.md)
+- ⏳ Nothing checks the derivation law — a bar rendered 33
+  segments for 34 tasks and every gate stayed green. Counts and
+  bars on the board are the checkable class. (2026-07-31, the
+  mechanism census) → [ATLAS §7](ATLAS.md)
+- ⏳ Board freshness is judgment only — it is repaired at
+  rituals, so between them the board is stale by design and only
+  the "git outranks it" habit protects a reader. Decide whether
+  that is a gap to close or a property to keep. (2026-07-31, the
+  mechanism census) → [ATLAS §7](ATLAS.md)
 - ⏳ CHARTER VERSION-TABLE ORDER — the v4 row sits above v3 in
   the [cockpit charter](COCKPIT-CHARTER.md)'s history table;
   straighten it at the charter's next natural touch.

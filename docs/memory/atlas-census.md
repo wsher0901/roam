@@ -1,7 +1,7 @@
 ---
 type: memory
 id: atlas-census
-updated: 2026-07-31 16:42 · ship · work PC
+updated: 2026-07-31 16:51 · ship · work PC
 ---
 
 # atlas-census — the delivery chain, drawn
@@ -11,9 +11,10 @@ updated: 2026-07-31 16:42 · ship · work PC
 complete, awaiting merge — 2026-07-31, work PC.
 [D-071](../record/DECISIONS.md#d-071--atlas-gains-the-enforcement-mesh)
 is minted, [ATLAS](../ATLAS.md) carries seven diagrams, and the
-new §7 renders the enforcement chain with its three honest gaps.
-ALL SEVEN MERMAID BLOCKS PARSE against the real grammar (below).
-Full CI mirror green.
+new §7 renders the enforcement chain with its honest gaps. ALL
+SEVEN MERMAID BLOCKS PARSE against the real grammar (below).
+Full CI mirror green. The critic returned eight findings, three
+notable, and two of them corrected the DRAWING ITSELF (below).
 
 ## What this task is
 
@@ -64,7 +65,29 @@ wiring won both times:
   `format:check`. Drawn as it runs: lint · format:check ·
   check:links · check:ledger · check:memory · test · build.
 
-### The three gaps are the point as much as the chain
+### The critic corrected the drawing twice, and both were real
+
+**THE CASCADE MISSTATED WHEN TWO LAYERS FIRE.** I had drawn
+CI → summon → denies as one linear chain. Neither belongs there:
+THE DENIES are ambient permission rails evaluated at EVERY TOOL
+CALL in every session, and THE SUMMON WORKFLOW is out-of-band — a
+cockpit's self-rescue when its connectors are dead, never a step
+in delivering a law to an act. Both are now drawn APART from the
+cascade and labelled as such. The §7 lead sentence ("every layer
+below is a DELIVERY stage") is exactly what made the sequential
+reading wrong, and this is the one layer a session cannot
+discover by reading.
+
+**A FOURTH GAP SAT AT THE TERMINUS, DRAWN AS IF GATED.** Nothing
+mechanical enforces that the external review happened or that the
+word was given: the five ritual stubs' merge allowance is
+unconditional once a ritual is running, and the deny list blocks
+only the `--admin` and `--repo` bypasses. The most load-bearing
+node in the whole diagram — "THE FOUNDER'S WORD — the sole merge
+authority" — is judgment, and the first draft did not say so. It
+does now.
+
+### The gaps are the point as much as the chain
 
 A picture of enforcement invites the belief that everything is
 enforced, which is the more expensive error. Each gap in the
@@ -80,8 +103,21 @@ dashed box is a real miss this workshop has already paid for:
   rituals the board is stale by design, which is why git outranks
   it.
 
-Their recorded path forward is the HARNESS V2 line in
-[IDEAS](../IDEAS.md), verified to exist before it was cited.
+**AND THE CITATION FOR THEIR PATH FORWARD WAS FALSE.** I pointed
+the note at the HARNESS V2 line in [IDEAS](../IDEAS.md), having
+verified only that the line EXISTS — which is what the spec asked
+for, and not enough. The critic read it: HARNESS V2 names six
+hook-event items, and not one is a link-destination check, a
+derivation check, or a staleness check. THE SENTENCE ASSERTED
+COVERAGE THAT DID NOT EXIST — verify-before-classify, failed on
+the exact bench whose subject is honest gaps.
+
+The repair is the one the laws require: a gap named in a diagram
+and absent from the inbox is SILENTLY PARKED, so each gap got its
+own IDEAS line, per the entry contract, closing per-idea. That is
+outside the mandate's file list and is disclosed as a deviation —
+the alternative was deleting the honest note, which was the whole
+point of drawing it.
 
 ### The mermaid was PARSED, not eyeballed
 
