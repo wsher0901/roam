@@ -3775,8 +3775,8 @@ also where the close-lock lives — the one mechanism that makes
 **Affects:** [ATLAS](../ATLAS.md) (the header law; seven → eight;
 the stamp refreshed; all seven diagrams rewrapped, 2 and 6
 converted to TD; diagram 1's intake band and Boxes-line cites for
-IDEAS, decide and the roadmap manual; §5, §7 and the new §8 gain
-the prose that now carries the displaced sentences) ·
+IDEAS, decide and the roadmap manual; §1, §5, §7 and the new §8
+gain the prose that now carries the displaced sentences) ·
 [HOME](../HOME.md) (the files-table ATLAS row, seven → eight —
 one row, nothing else) · [IDEAS](../IDEAS.md) (the width-gate
 line, and one defect line for a missing HOME row found while

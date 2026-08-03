@@ -29,8 +29,9 @@ the only thing this page has to offer.
 
 One task = one branch = one PR — born public, gated only by the
 founder's word, welded atomically. Upstream of the bench sits THE
-INTAKE BAND: nothing is scope until a voiced thought has passed
-through the inbox and the triage.
+INTAKE BAND — how a voiced thought reaches a branch: nothing is
+scope until triaged into the [ROADMAP](ROADMAP.md) via
+[decide](skills/decide.md).
 
 ```mermaid
 flowchart TD
@@ -171,7 +172,7 @@ flowchart TD
   B["the bench, pre-birthed —<br/>branch · spec · memory stub · draft PR"] --> S["spawn —<br/>local agent/worktree · cloud route 1"]
   S --> CL["canary claim —<br/>one trivial push, Status: claimed"]
   CL --> ACK{"ack within the window?"}
-  ACK -->|yes| AIR["airborne · url · date —<br/>the exact ack token"]
+  ACK -->|yes| AIR["airborne · url · date —<br/>the ack token"]
   ACK -->|"no, or a Status it does not own"| TERM["self-terminate — push what exists, stop"]
   AIR --> WK["work — every commit pushed,<br/>the diary at four moments"]
   WK --> BL["BLOCKED: a PR comment —<br/>idle-wait, the founder replies"]

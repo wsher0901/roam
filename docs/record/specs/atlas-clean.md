@@ -101,7 +101,7 @@ one thing ATLAS does own.
    voiced idea or defect → the [IDEAS](../../IDEAS.md) line (the
    entry contract) → [decide](../../skills/decide.md), the triage →
    the [ROADMAP](../../ROADMAP.md) line → the bench. The Boxes line
-   gains IDEAS, decide, and ROADMAP §How-to-read.
+   gains IDEAS, decide, and the roadmap manual.
 5. **New `## 8 · A sitting`** — the ground cycle, `flowchart TD`,
    labels under the law: session-start hook (pull · board ·
    close-lock cleared) → pickup (the claim + the sit-down) → the
@@ -129,41 +129,41 @@ one thing ATLAS does own.
 
 ## Done means
 
-- [ ] D-072 exists in the
+- [x] D-072 exists in the
       [D-068](../DECISIONS.md#d-068--the-short-anchor-law) format —
       short heading, `In full:`, Decision · Why · Alternatives
       rejected · Affects — and its Affects line matches the files
       actually edited, exactly.
-- [ ] ATLAS's header carries THE RENDERING LAW in plain lines, says
+- [x] ATLAS's header carries THE RENDERING LAW in plain lines, says
       EIGHT diagrams, and is restamped from a clock read; the born
       line is unchanged.
-- [ ] EVERY mermaid block on the page is `flowchart TD` — diagrams
+- [x] EVERY mermaid block on the page is `flowchart TD` — diagrams
       2 and 6 converted.
-- [ ] THE WIDTH PROOF, run MECHANICALLY, not by eye: every label
+- [x] THE WIDTH PROOF, run MECHANICALLY, not by eye: every label
       line on the page scanned against the 45-character cap and
       every block against TD orientation, ZERO VIOLATIONS, the
       result recorded in the memory.
-- [ ] VERIFY-BEFORE-DROP RECEIPTS: every sentence that left a node
+- [x] VERIFY-BEFORE-DROP RECEIPTS: every sentence that left a node
       is named in the memory with where it now lives — section
       prose, a Boxes-line target, or the linked skill. Nothing
       unrecorded was dropped.
-- [ ] Diagram 7's four judgment joints are all four present in the
+- [x] Diagram 7's four judgment joints are all four present in the
       section prose, verified rather than assumed.
-- [ ] Diagram 1 draws the intake band ending at the bench, and its
-      Boxes line cites IDEAS, decide, and ROADMAP §How-to-read.
-- [ ] §8 renders the ground cycle end to end, including the QUIET
+- [x] Diagram 1 draws the intake band ending at the bench, and its
+      Boxes line cites IDEAS, decide, and the roadmap manual.
+- [x] §8 renders the ground cycle end to end, including the QUIET
       side node and the closed-session read-only state, every box
       linking a PROSE home.
-- [ ] HOME's files-table ATLAS row says eight diagrams.
-- [ ] ALL EIGHT MERMAID BLOCKS PARSE against the real grammar
+- [x] HOME's files-table ATLAS row says eight diagrams.
+- [x] ALL EIGHT MERMAID BLOCKS PARSE against the real grammar
       (`mermaid.parse()` under `jsdom`, packages `--no-save`, tree
       restored with `npm ci`), not merely eyeballed.
-- [ ] THE SWEEP PROVEN: a destination-grep re-run returns zero over
+- [x] THE SWEEP PROVEN: a destination-grep re-run returns zero over
       living files, and every frozen survivor is named in the
       memory with why it stands.
-- [ ] Nothing outside the named files is touched: ATLAS · HOME (one
+- [x] Nothing outside the named files is touched: ATLAS · HOME (one
       row) · DECISIONS · IDEAS · sweep-proven pointers if any · this
       spec + memory.
-- [ ] `check:links` · `check:ledger` · `check:memory` · lint ·
+- [x] `check:links` · `check:ledger` · `check:memory` · lint ·
       format · test · build green; Actions green on the PUSHED head;
       [ship §6](../../skills/ship.md#6--the-gate) critic run.
