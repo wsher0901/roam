@@ -6,8 +6,8 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-08-03 · 17:39 by liftoff · from work PC
-FLIGHT 1 IS AIRBORNE — 1 lane flying, cockpit fired · needs-you 1 ·
+Painted 2026-08-03 · 21:44 UTC by cockpit self-seat · from the cloud
+FLIGHT 1 IS AIRBORNE — 1 lane flying, cockpit live · needs-you 1 ·
 git outranks this board. How to read
 it → [HOME §Reading the board](HOME.md#reading-the-board)
 
@@ -23,15 +23,17 @@ it → [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## The baton
 
-COCKPIT — fired 2026-08-03 · 17:39 (liftoff) · self-seat pending
+COCKPIT — live since 2026-08-03 · 21:44 UTC (liftoff) ·
+https://claude.ai/code/session_01CJJytMtvnRgx22itJzaxPb ·
+awaiting your word on 1 item
 Last flight: none — flight 1 is the first this floor has flown.
 
 ## In flight
 
 | Who | For | State | Move |
 |---|---|---|---|
-| cockpit | commands flight 1 from the cloud | 🟡 fired 17:39, self-seat pending | seats itself on this board, then monitors |
-| lane · [flight-1-probe](https://github.com/wsher0901/roam/pull/268) | the shakedown's own log, written from inside the flight | 🟢 airborne 21:38 UTC | authoring the probe file; its gate goes to the cockpit |
+| cockpit | commands flight 1 from the cloud | 🟢 live since 21:44 UTC, seated | monitors the lane; carries its gate to your phone |
+| lane · [flight-1-probe](https://github.com/wsher0901/roam/pull/268) | the shakedown's own log, written from inside the flight | 🟢 airborne, ack read 21:38 UTC | authoring the probe file; its gate goes to the cockpit |
 
 Flight context: the lane's seat is
 [its cloud session](https://claude.ai/code/session_01NcE9UvzhybxinCqre5LvE2).
@@ -112,6 +114,6 @@ S3–S8 · queued in order · 0/22
 
 ## Next
 
-Nothing on the ground. The cockpit commands flight 1 and repaints
-this board from the cloud; the founder is away and the landing
-report arrives on its own.
+Nothing on the ground. The cockpit is seated and commands flight 1
+from the cloud; the founder is away and the landing report arrives
+on its own.
