@@ -1,7 +1,7 @@
 ---
 type: probe-record
 title: Flight 1 — the shakedown, logged from inside it (2026-08-03)
-status: living
+status: frozen
 ---
 
 # Flight 1 — the shakedown, logged from inside the lane
@@ -147,8 +147,15 @@ written AT the moment rather than reconstructed at the end.
   the founder. Recorded as absent rather than omitted: a probe that
   silently drops a moment reads the same as one that never reached
   it.
-- **MOMENT 4, completion** — appended at the moment it happens, in
-  its own commit, below this line.
+- **21:45 — MOMENT 4, completion.** Branch synced with the main that
+  had moved under it (#269 landed mid-flight), the full verification
+  loop run green — links 4481/0 broken, ledger 114↔114, memory
+  valid, lint, format, 3 tests, build — and the simulation law
+  checked mechanically rather than asserted: this lane's own two
+  commits touch `docs/memory/flight-1-probe.md` and this file, and
+  nothing else. The merge of `main` brings main's own files along, as
+  a merge must; the lane authored none of them. Written before the
+  completion comment, per the contract's ordering.
 
 ## WHAT A GREEN FLIGHT PROVES
 
@@ -207,6 +214,12 @@ otherwise would launder assumption into the record. The ground can
 close those four in a sentence each; the lane can only mark where its
 sight ends. **That boundary — five links visible from inside, four
 only from outside — is this flight's actual result.**
+
+This log is frozen as written: it is the view from ONE seat, and
+editing it later from the ground would destroy the only thing it
+records that nothing else can. The four unobservable links belong to
+whoever can see them — the bench's entry in
+[record/history/](../history), written after the weld.
 
 Sources:
 [the spec](../specs/flight-1-probe.md) ·

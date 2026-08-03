@@ -1,13 +1,16 @@
 ---
 type: memory
 id: flight-1-probe
-updated: 2026-08-03 21:42 UTC · probe authored · cloud
+updated: 2026-08-03 21:46 UTC · completion · cloud
 ---
 # flight-1-probe — the shakedown's simulated cargo
 
 ## Status
 
-airborne · https://claude.ai/code/session_01NcE9UvzhybxinCqre5LvE2 · 2026-08-03
+complete, awaiting merge — 2026-08-03. The probe file is written,
+the verification loop is green, and the PR carries the completion
+comment. THE LANE HAS NOT MERGED AND WILL NOT: "done" means
+founder-approved and merged, and neither half is the lane's.
 
 ## What this task is
 
@@ -29,12 +32,22 @@ memory. Nothing else, on any branch, for any reason. Contract:
 
 ## Pending issues
 
-none yet. The lane speaks through its PR; questions go there as
-`BLOCKED:` comments, and the founder's reply resumes it in-thread.
+None blocking, and none were raised in flight — no `BLOCKED:`
+comment was posted, because nothing on this flight was ambiguous
+enough to need the founder. Three findings are queued as "Ideas
+surfaced" below for the baton-holder to harvest; none of them is
+this bench's to fix, per the spec's out-of-scope (flight 1 OBSERVES;
+repairs are separate benches triaged through
+[IDEAS](../IDEAS.md)).
 
 ## Left / idle
 
-nothing parked.
+Nothing parked. Four of the nine chain links are unclosed BY
+CONSTRUCTION — the non-author review, the founder's word, the weld,
+and the auto-land all happen after this lane's last push. They are
+recorded as "not observable from this seat", which is the correct
+result rather than an open item, and they belong to this bench's
+entry in [record/history/](../record/history) after the weld.
 
 ## The story
 
@@ -81,16 +94,46 @@ per the entry contract):
   no-op and a signal that carries no information; the staged
   `api-ignition` target is what would give it back.
 
-The lane's own duties are the ordinary ones and are not relaxed for
+2026-08-03 21:46 UTC — MOMENT 4, COMPLETION. `main` had moved under
+the branch mid-flight (#269, liftoff's own flight plan), so the sync
+came first: merged, never rebased. Then the full verification loop,
+green end to end — 4481 links / 0 broken, ledger 114 ↔ 114, memory
+format valid, lint, format, 3 tests, build. The simulation law was
+CHECKED rather than asserted: this lane's own two commits touch
+`docs/memory/flight-1-probe.md` and the probe file, and nothing
+else. The merge commit carries main's own files, as any merge must,
+and the lane authored none of them — a distinction worth stating,
+because a bare branch diff cannot make it.
+
+MOMENT 3, BLOCKING, DID NOT OCCUR — recorded as absent rather than
+omitted, since a diary that silently drops a moment reads the same
+as one that never reached it.
+
+THE ONE CONTRACT STEP THIS LANE COULD NOT PERFORM is the ready-flip:
+route 1 spawns by flipping the PR ready and THEN labelling, so the
+PR was already ready when this lane woke. There was no flip left to
+make, and the ready state therefore carries no information about
+completion. What this lane can actually signal is the memory Status,
+the pushed commits, and the @mention comment — which is exactly the
+guard
+[§Cloud spawn](../skills/parallel-lanes.md#cloud-spawn--route-ladder)
+already writes down, now met in the wild rather than in theory.
+
+The lane's own duties are the ordinary ones and were not relaxed for
 a test flight — the canary claim first, then WAIT for the ack
 tested by the ANCHORED match, the diary at
 [the four moments](../skills/parallel-lanes.md#the-four-memory-moments-the-lanes-diary-rule),
-every commit pushed, and no merge ever.
+every commit pushed, and no merge ever. All held.
 
 ## Where to look
 
+- [the probe](../record/probes/flight-1-shakedown.md) — THE PAYLOAD:
+  the flight's own log, frozen as the view from one seat.
 - [the spec](../record/specs/flight-1-probe.md) — the contract and
   the simulation law.
+- [PR #268](https://github.com/wsher0901/roam/pull/268) — the
+  flight's public window; the canary, the ack, and the completion
+  comment are all on it.
 - [liftoff](../skills/liftoff.md) · [land](../skills/land.md) ·
   [parallel-lanes](../skills/parallel-lanes.md) — the machinery
   under test.
