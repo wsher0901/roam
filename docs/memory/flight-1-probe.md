@@ -107,6 +107,17 @@ with the sync merge, authored on `main` by the founder in #269. A
 bare branch diff cannot tell those apart from the lane's own work;
 `git log --author` can, which is why the check was run that way.
 
+A DEAD END WORTH KEEPING, caught inside moment 4. The first CI
+watcher this lane wrote asked "is any check complete, and none still
+running?" — and it answered GREEN while the Actions job did not yet
+exist, because the only check registered at that instant was
+Vercel's. SILENCE READ AS SUCCESS. The replacement asks the only
+question that is actually safe: is the job NAMED `checks` completed,
+and is its conclusion `success`? A gate that does not name what it
+is waiting for will pass the moment nothing is looking — the same
+shape as the substring-versus-anchored match this flight opened
+with, met twice in one flight from opposite directions.
+
 MOMENT 3, BLOCKING, DID NOT OCCUR — recorded as absent rather than
 omitted, since a diary that silently drops a moment reads the same
 as one that never reached it.
