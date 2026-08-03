@@ -1,14 +1,13 @@
 ---
 type: memory
 id: flight-1-probe
-updated: 2026-08-03 17:35 · birth · work PC
+updated: 2026-08-03 21:38 UTC · canary claim · cloud
 ---
 # flight-1-probe — the shakedown's simulated cargo
 
 ## Status
 
-bench ready, no worker yet — birthed 2026-08-03 by the control
-tower at the work PC.
+claimed by cloud — 2026-08-03
 
 ## What this task is
 
@@ -42,6 +41,12 @@ nothing parked.
 Birthed 2026-08-03 17:35 at the work PC by
 [liftoff](../skills/liftoff.md) §3, bench-first: branch, spec, this
 stub and a draft PR laid on origin BEFORE any worker exists.
+
+2026-08-03 21:38 UTC — MOMENT 1, THE HANDSHAKE CLAIM. A cloud lane
+woke on this bench and posted this canary: Status → claimed by
+cloud. Now waiting for the baton-holder's ack, tested by the
+ANCHORED match (does the Status line START WITH the token), never a
+substring search.
 
 The lane's own duties are the ordinary ones and are not relaxed for
 a test flight — the canary claim first, then WAIT for the ack
