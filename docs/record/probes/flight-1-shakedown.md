@@ -38,8 +38,12 @@ offset, in which case the offset is shown as the source wrote it.
 
 The birth in the order this seat can put it:
 
-- **21:36:34Z** — the earliest event this seat can see on the PR at
-  all: the Vercel bot's deployment comment.
+- **21:36:28Z** — PR #268 created (`created_at`). Its body opens
+  "**Draft PR at birth**", and the PR this lane read was NOT draft:
+  a ready-flip happened between creation and this lane's wake, 25
+  seconds before the container's own checkout.
+- **21:36:34Z** — the Vercel bot's deployment comment, the earliest
+  PR event this seat can see with a timestamp of its own.
 - **21:36:45Z** — the PR's `updated_at` on this seat's first read.
   What edit that stamp belongs to is **not observable from this
   seat**; the PR API returns the stamp, not its cause.
@@ -59,7 +63,8 @@ ground cannot see as cheaply:
    before this session's environment was created. Bench-first birth
    is not a claim the lane has to take on trust — it is the state of
    the tree the lane wakes into.
-2. **The session-start hook fired on the wrong branch and said so.**
+2. **The session-start hook ran on a branch that was not the bench,
+   and said so plainly.**
    Its line read "on `claude/lucid-allen-7gxtus` — pull skipped": the
    container names a session branch of its own at the PR head, and
    the lane has to step off it deliberately. The hook printed the
@@ -174,8 +179,12 @@ The nine links of the chain, each an observation or the exact words
    the PR API returns current state and one `updated_at`, and this
    seat could not read the PR's event timeline (the issue-timeline
    call rejects a PR number with "Could not resolve to an Issue").
-   That the spawn worked at all is observed; that it worked BECAUSE
-   the flip preceded the label is not.
+   What narrows it: the PR was created at 21:36:28Z with a body that
+   opens "Draft PR at birth" and was READY when this lane read it, so
+   A FLIP DEMONSTRABLY HAPPENED in the ~25 seconds before the
+   container's checkout. That the spawn worked is observed; that a
+   flip happened is observed; that the flip preceded the LABEL — the
+   one thing route 1 actually fixes — is not.
 3. **Canary inside the window** — ✅ OBSERVED. Canary 21:38:01, ack
    authored 21:38:53, detected 21:39:15. 74 seconds against a
    ~10-minute window.
