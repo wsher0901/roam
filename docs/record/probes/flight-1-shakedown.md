@@ -156,11 +156,15 @@ written AT the moment rather than reconstructed at the end.
   had moved under it (#269 landed mid-flight), the full verification
   loop run green — links 4481/0 broken, ledger 114↔114, memory
   valid, lint, format, 3 tests, build — and the simulation law
-  checked mechanically rather than asserted: this lane's own two
-  commits touch `docs/memory/flight-1-probe.md` and this file, and
-  nothing else. The merge of `main` brings main's own files along, as
-  a merge must; the lane authored none of them. Written before the
-  completion comment, per the contract's ordering.
+  checked mechanically rather than asserted: EVERY commit this lane
+  authored touches `docs/memory/flight-1-probe.md` and this file and
+  nothing else, listed rather than claimed. The branch's other
+  changed files — `DASHBOARD.md`, `IDEAS.md` — arrived in the sync
+  merge, authored on `main` by the founder in #269; the lane wrote
+  none of them. The distinction matters because a bare branch diff
+  cannot make it: the diff shows the files, `git log --author` shows
+  the hand. Written before the completion comment, per the contract's
+  ordering.
 
 ## WHAT A GREEN FLIGHT PROVES
 

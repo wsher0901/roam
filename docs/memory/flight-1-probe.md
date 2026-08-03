@@ -99,11 +99,13 @@ the branch mid-flight (#269, liftoff's own flight plan), so the sync
 came first: merged, never rebased. Then the full verification loop,
 green end to end — 4481 links / 0 broken, ledger 114 ↔ 114, memory
 format valid, lint, format, 3 tests, build. The simulation law was
-CHECKED rather than asserted: this lane's own two commits touch
-`docs/memory/flight-1-probe.md` and the probe file, and nothing
-else. The merge commit carries main's own files, as any merge must,
-and the lane authored none of them — a distinction worth stating,
-because a bare branch diff cannot make it.
+CHECKED rather than asserted: every commit this lane authored
+touches `docs/memory/flight-1-probe.md` and the probe file and
+nothing else, listed rather than claimed. The branch's other changed
+files — [DASHBOARD](../DASHBOARD.md), [IDEAS](../IDEAS.md) — came in
+with the sync merge, authored on `main` by the founder in #269. A
+bare branch diff cannot tell those apart from the lane's own work;
+`git log --author` can, which is why the check was run that way.
 
 MOMENT 3, BLOCKING, DID NOT OCCUR — recorded as absent rather than
 omitted, since a diary that silently drops a moment reads the same
