@@ -19,6 +19,12 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
 
 ## Open
 
+- ⏳ LIFTOFF REPAINTS THE BOARD TWICE — §1's handoff paints a
+  ground board and ships a micro-PR, then §6 overwrites it with the
+  flight plan minutes later; the first board is never read by
+  anyone and its baton line has no defined case. Found by running
+  the ritual exactly at flight 1. (2026-08-03, Claude Code) →
+  [liftoff §1](skills/liftoff.md#1--full-handoff-first)
 - ⏳ HOME's files table has NO ROW for
   `.claude/hooks/user-prompt-submit.mjs`, though the hook exists
   and enforces the close-lock; its two siblings both have rows.
@@ -134,7 +140,10 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   while the same script run directly succeeds; the npm wrapper's
   PATH leaves `execFileSync("gh", …)` unable to resolve the
   executable. Fix by resolving `gh` through the shell on win32, or
-  at least print the swallowed error. (2026-07-22, Claude Code) →
+  at least print the swallowed error. NOT REPRODUCED at flight 1's
+  triage (2026-08-03) — both paths returned the same count, so the
+  fault is intermittent or already gone; confirm before spending a
+  bench on it. (2026-07-22, Claude Code) →
   `scripts/count-routine-runs.mjs`
 - ⏳ Make verification commands run in the FOREGROUND with results
   quoted from captured output — a detached background check lost

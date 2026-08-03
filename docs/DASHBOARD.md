@@ -6,9 +6,9 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-08-03 · 17:33 by handoff · from work PC
-Control tower at the work PC, closing the sitting into a liftoff —
-nothing airborne yet · needs-you 1 · git outranks this board. How to read
+Painted 2026-08-03 · 17:39 by liftoff · from work PC
+FLIGHT 1 IS AIRBORNE — 1 lane flying, cockpit fired · needs-you 1 ·
+git outranks this board. How to read
 it → [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
@@ -23,12 +23,22 @@ it → [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## The baton
 
-CONTROL TOWER — work PC, since 2026-08-03 · 09:01 (pickup)
-Last flight: none — the floor has been ground-side this sitting.
+COCKPIT — fired 2026-08-03 · 17:39 (liftoff) · self-seat pending
+Last flight: none — flight 1 is the first this floor has flown.
 
 ## In flight
 
-Nothing in flight — the floor is clear.
+| Who | For | State | Move |
+|---|---|---|---|
+| cockpit | commands flight 1 from the cloud | 🟡 fired 17:39, self-seat pending | seats itself on this board, then monitors |
+| lane · [flight-1-probe](https://github.com/wsher0901/roam/pull/268) | the shakedown's own log, written from inside the flight | 🟢 airborne 21:38 UTC | authoring the probe file; its gate goes to the cockpit |
+
+Flight context: the lane's seat is
+[its cloud session](https://claude.ai/code/session_01NcE9UvzhybxinCqre5LvE2).
+FLIGHT 1 OF THE TEST PROGRAM — the machinery is the subject and the
+cargo is deliberately trivial, so any failure observed is a failure
+of the machinery. The cockpit carries the lane's gate to the phone;
+its own AUTO-LAND duty ends the flight unprompted.
 
 ## Working on
 
@@ -42,8 +52,8 @@ The standing order
 ([D-060](record/DECISIONS.md#d-060--the-three-phase-standing-order)),
 one phase per line:
 
-- PHASE 1 — settle & test: the audit is done; THE TEST PROGRAM
-  opens now — flight 1, the shakedown, is lifting off.
+- PHASE 1 — settle & test: the audit is done; THE TEST PROGRAM has
+  opened — flight 1, the shakedown, is airborne.
 - PHASE 2 — the vault: chronicle story lanes + a polish pass;
   opens with your scope ruling (all 66, or the load-bearing dozen).
 - PHASE 3 — Roam: T3–T6 relaunched from scratch, plus
@@ -102,6 +112,6 @@ S3–S8 · queued in order · 0/22
 
 ## Next
 
-[Liftoff](skills/liftoff.md) is running. The flight plan lands on
-this board at the fire; from then on the cockpit commands and the
-board is repainted from the cloud.
+Nothing on the ground. The cockpit commands flight 1 and repaints
+this board from the cloud; the founder is away and the landing
+report arrives on its own.
