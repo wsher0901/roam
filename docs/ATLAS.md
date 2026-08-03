@@ -6,9 +6,9 @@ status: living
 
 # Atlas — the system spine
 
-Stamp: 2026-07-31 · diagram 7 added — the enforcement mesh ·
+Stamp: 2026-08-03 · no-scroll rewrap + diagrams 1 and 8 ·
 work PC (born 2026-07-27 by the atlas bench · home PC).
-The workshop depicted as seven diagrams on one page. THIS PAGE
+The workshop depicted as eight diagrams on one page. THIS PAGE
 RENDERS, IT ORIGINATES NOTHING — like [the board](DASHBOARD.md),
 it is among the least authoritative files in the repo: every box
 links to the prose section that owns the doctrine, and on any
@@ -16,20 +16,38 @@ disagreement THE PROSE GOVERNS. A bench that changes what a
 diagram depicts re-renders the diagram in the same PR
 ([HOME §Where information goes](HOME.md#where-information-goes)).
 
+THE RENDERING LAW, and every re-render obeys it
+([D-072](record/DECISIONS.md#d-072--the-atlas-no-scroll-law)): every
+diagram is TOP-DOWN — `flowchart TD`, never `LR`. A NODE LABEL IS A
+NAME, NEVER A SENTENCE: at most two lines via `<br/>`, and no line
+over 45 characters. Whatever a box wants to explain belongs in the
+prose under its diagram or in the home its Boxes line links —
+a page that scrolls sideways cannot show a shape, and the shape is
+the only thing this page has to offer.
+
 ## 1 · The task loop
 
 One task = one branch = one PR — born public, gated only by the
-founder's word, welded atomically.
+founder's word, welded atomically. Upstream of the bench sits THE
+INTAKE BAND — how a voiced thought reaches a branch: nothing is
+scope until triaged into the [ROADMAP](ROADMAP.md) via
+[decide](skills/decide.md).
 
 ```mermaid
 flowchart TD
-  P["freshly pulled main"] --> B["bench-first birth: branch + spec + memory stub + draft PR"]
+  subgraph INTAKE["INTAKE — how a thought becomes a bench"]
+    IN["a voiced idea or defect"] -->|"the entry contract"| IDL["one dated IDEAS line —<br/>the only inbox"]
+    IDL --> DCD["decide — the triage"]
+    DCD -->|"nothing is scope until triaged"| RML["a ROADMAP line —<br/>the only stored task state"]
+  end
+  RML --> P["freshly pulled main"]
+  P --> B["bench-first birth —<br/>branch · spec · memory stub · draft PR"]
   B --> W["work — every commit pushed, the heartbeat"]
   W --> M["memory rewritten at trigger moments"]
   M --> W
-  W --> V["sync with main + the verification loop + Actions green"]
+  W --> V["sync with main —<br/>verification loop · Actions green"]
   V --> C["the critic — reviewer subagent, advisory"]
-  C --> G{"THE GATE — independent review, then the founder's word"}
+  C --> G{"THE GATE —<br/>review, then the founder's word"}
   subgraph WELD["the atomic weld — ONE bookkeeping commit"]
     T1["ROADMAP checkbox ticked"]
     T2["memory moves to record/history quadrant"]
@@ -39,10 +57,17 @@ flowchart TD
   G -->|"the word"| WELD
   G -->|"no word"| WAIT["wait — never merge"]
   WELD --> SQ["squash-merge + branch deleted + main pulled"]
-  SQ --> TAIL["ship's tail — QUIET board repaint, a micro-PR that merges unasked (the one carve-out)"]
+  SQ --> TAIL["ship's tail —<br/>QUIET repaint, the micro-PR carve-out"]
 ```
 
-Boxes: [bench-first birth — LAWS §Workflow](LAWS.md#workflow-non-negotiable)
+THE GATE's review is an INDEPENDENT one — no diff merges on its
+author's own approval, which is why the box names the review and
+the word as two separate acts.
+
+Boxes: [the only inbox and its entry contract — IDEAS](IDEAS.md)
+· [the triage — decide](skills/decide.md)
+· [the ROADMAP and how to read it — HOME §Roadmap manual](HOME.md#roadmap-manual)
+· [bench-first birth — LAWS §Workflow](LAWS.md#workflow-non-negotiable)
 · [the heartbeat — LAWS §Task anatomy](LAWS.md#task-anatomy)
 · [the verification loop — ship §1](skills/ship.md#1--preflight)
   (the commands' one home) ·
@@ -59,9 +84,9 @@ What a sitting reads at start, and which writer owns each surface
 — one home per class, never a second copy.
 
 ```mermaid
-flowchart LR
+flowchart TD
   subgraph READS["session start reads"]
-    H["session-start hook: pull main, print the board"] --> D1["DASHBOARD"]
+    H["session-start hook —<br/>pull main, print the board"] --> D1["DASHBOARD"]
     D1 --> L["LAWS — always loaded via the CLAUDE.md import"]
     L --> ME["the active memory — the story so far"]
   end
@@ -102,23 +127,23 @@ flowchart TD
   B -->|yes| C{"machine staying on?"}
   C -->|yes| G["go-remote — the tether, a backstop posture"]
   C -->|no| F["liftoff — eligible work to the cloud"]
-  F --> CP["the cockpit — the control tower online, holds the baton; advises on gates, executes rulings"]
+  F --> CP["the cockpit —<br/>the control tower online"]
   CP --> T{"what ends the flight?"}
-  T -->|"work done AND nothing awaits the founder — same turn"| AL["AUTO-LAND: the cockpit fires it, unprompted — never at birth, never on a timer, never silent"]
-  T -->|"founder returns to a desk with gates undecided"| SUP["DESK TAKEOVER: pickup adopts the decision queue, writes COCKPIT SUPERSEDED — the cockpit self-retires on its next wake"]
+  T -->|"work done, nothing awaiting"| AL["AUTO-LAND —<br/>the cockpit fires it, unprompted"]
+  T -->|"the founder returns to a desk"| SUP["DESK TAKEOVER —<br/>pickup adopts the decision queue"]
   T -->|"the founder's word: ground the fleet"| FR["THE FREEZE — word-only, forces MODE P"]
   T -->|"the founder's word: land"| MR["MANUAL RETIRE — on an empty fleet"]
   AL --> LA{"land — mode derived from the fleet"}
   SUP --> LA
   FR --> LA
   MR --> LA
-  LA -->|"nothing flying"| R["MODE R retire: final repaint, retired branches verified dead"]
-  LA -->|"work flying"| PP["MODE P pause-and-transfer: THE FENCE — a pushed commit per lane writing Status held; the board carries the fleet-at-ground table"]
+  LA -->|"nothing flying"| R["MODE R — retire:<br/>final repaint, branches verified dead"]
+  LA -->|"work flying"| PP["MODE P — pause-and-transfer:<br/>THE FENCE, one pushed commit per lane"]
   R --> PU["pickup — the next sitting claims the baton"]
   PP --> PU
   H --> PU
   G -->|"leaving phrase from the phone"| H
-  PU -->|"fleet resume ask"| RES["fresh workers claim the fenced branches — old sessions never revived"]
+  PU -->|"fleet resume ask"| RES["fresh workers claim<br/>the fenced branches"]
 ```
 
 Boxes: [the chooser — HOME §Delegation](HOME.md#delegation--the-away-mode-chooser)
@@ -144,18 +169,18 @@ baton-holder on the founder's word.
 
 ```mermaid
 flowchart TD
-  B["bench pre-birthed by the baton-holder: branch + spec + memory stub + draft PR on origin"] --> S["spawn — LOCAL: background agent or worktree · CLOUD: route 1, ready-flip then the lane:cloud label"]
-  S --> CL["canary claim — one trivial push, Status: claimed by vehicle + date"]
+  B["the bench, pre-birthed —<br/>branch · spec · memory stub · draft PR"] --> S["spawn —<br/>local agent/worktree · cloud route 1"]
+  S --> CL["canary claim —<br/>one trivial push, Status: claimed"]
   CL --> ACK{"ack within the window?"}
-  ACK -->|yes| AIR["Status begins exactly: airborne · url · date — middots, character-for-character"]
-  ACK -->|"no, or a Status the lane does not own"| TERM["self-terminate — push what exists, stop"]
-  AIR --> WK["work: every commit pushed, diary at the four moments, no file shared with a sibling"]
-  WK --> BL["BLOCKED: PR comment — idle-wait on a phone-reachable vehicle"]
-  BL -->|"the founder's reply resumes it in-thread"| WK
-  WK --> DONE["completion: final memory rewrite, then ready-flip + plain summary"]
-  DONE --> RV["non-author review + the founder's word — a lane never merges"]
+  ACK -->|yes| AIR["airborne · url · date —<br/>the ack token"]
+  ACK -->|"no, or a Status it does not own"| TERM["self-terminate — push what exists, stop"]
+  AIR --> WK["work — every commit pushed,<br/>the diary at four moments"]
+  WK --> BL["BLOCKED: a PR comment —<br/>idle-wait, the founder replies"]
+  BL -->|"the reply resumes it in-thread"| WK
+  WK --> DONE["completion —<br/>final rewrite, ready-flip + summary"]
+  DONE --> RV["non-author review +<br/>the founder's word"]
   RV --> MG["merged by the baton-holder"]
-  WK -.->|"a rejected push is a wake: re-read own Status first"| WLK["wake-lock — a foreign Status means terminate"]
+  WK -.->|"a rejected push is a wake"| WLK["wake-lock — a foreign Status means terminate"]
   WLK -.-> TERM
 ```
 
@@ -172,20 +197,23 @@ Boxes: [the lane law — parallel-lanes](skills/parallel-lanes.md#the-lane-law-s
 
 Who may write what: one baton-holder commands, lanes speak through
 their PRs, teams explore and review, Web and Design never write.
+Every merge into main waits for the founder's word and is performed
+by the baton-holder as the atomic weld — the sole carve-out being
+the ritual micro-PR, which merges itself.
 
 ```mermaid
 flowchart TD
-  subgraph BATON["the baton-holder — exactly one commanding session"]
+  subgraph BATON["the baton-holder —<br/>exactly one commanding session"]
     T["control tower — the desk seat"]
-    CK["cockpit — the control tower ONLINE: same role, a cloud seat"]
+    CK["cockpit —<br/>the control tower ONLINE"]
   end
-  BATON -->|"rituals own ALL of main's bookkeeping; merges on the founder's word — sole carve-out: ritual micro-PRs"| MAIN["main: DASHBOARD + IDEAS + ROADMAP ticks + record/"]
-  LN["lanes — workers on pre-birthed benches"] -->|"own branch + own diary + PR speech, nothing else"| BR["task branches on origin"]
+  BATON -->|"rituals own main's bookkeeping"| MAIN["main —<br/>DASHBOARD · IDEAS · ROADMAP · record/"]
+  LN["lanes — workers on pre-birthed benches"] -->|"own branch · own diary · PR speech"| BR["task branches on origin"]
   LN -.->|never| MAIN
-  TM["agent teams — exploration and review at a ground seat, single sitting"] -.->|"never author a bench, never merge, never run a ritual"| MAIN
-  W["Claude Web — the external review of self-authored diffs"] -.->|"no-write surface"| MAIN
-  DS["Claude Design — extracted tokens only, via paste block"] -.->|"no-write surface"| MAIN
-  BR -->|"THE GATE: review + the word, then the baton-holder welds"| MAIN
+  TM["agent teams —<br/>explore and review, one sitting"] -.->|"never a bench, a merge, or a ritual"| MAIN
+  W["Claude Web —<br/>the external review"] -.->|"no-write surface"| MAIN
+  DS["Claude Design —<br/>extracted tokens only"] -.->|"no-write surface"| MAIN
+  BR -->|"THE GATE — review, then the word"| MAIN
 ```
 
 Boxes: [the baton law — LAWS §Parallel lanes & cloud](LAWS.md#parallel-lanes--cloud)
@@ -201,11 +229,11 @@ Status is derived, never carried — every count is computed at
 render time, and git outranks every note.
 
 ```mermaid
-flowchart LR
-  G["git and origin — branches, commits, PRs: the heartbeat"] --> BD["DASHBOARD — rendered wholesale at ritual moments, stamped, least authoritative"]
-  R["ROADMAP checkboxes — the ONLY stored task state, ticked only by ship"] --> BD
-  M["memory Status lines — the handshake surface, one state from the locked vocabulary"] --> BD
-  HF["record/history frontmatter — shipped stamps + PR numbers"] --> BD
+flowchart TD
+  G["git and origin —<br/>the heartbeat: branches, commits, PRs"] --> BD["DASHBOARD —<br/>rendered at rituals, least authoritative"]
+  R["ROADMAP checkboxes —<br/>the ONLY stored task state"] --> BD
+  M["memory Status lines —<br/>the handshake surface"] --> BD
+  HF["record/history frontmatter —<br/>shipped stamps + PR numbers"] --> BD
   BD -.->|"on any disagreement"| G
 ```
 
@@ -224,22 +252,22 @@ where the rule actually lives.
 
 ```mermaid
 flowchart TD
-  IMP["CLAUDE.md — the ambient import, loaded into every session"] --> REG["the LAWS register — NAME, rule, pointer"]
+  IMP["CLAUDE.md —<br/>the ambient import"] --> REG["the LAWS register — NAME, rule, pointer"]
   REG --> SK["skills — the procedure, read at act time"]
-  SK --> ST["point-only stubs — a stub cannot drift from its procedure"]
-  ST --> MRG["the five board-writing stubs carry the ONLY merge allowance"]
+  SK --> ST["point-only stubs"]
+  ST --> MRG["the five board-writing stubs —<br/>the ONLY merge allowance"]
   REG --> HK["three session hooks"]
-  HK --> H1["session-start — pull main, inject the board, direct a control-tower session to render pickup, hand over the lane-liveness verdict, clear the close-lock"]
-  HK --> H2["user-prompt-submit — stamp a closed session read-only"]
-  HK --> H3["session-end — the crash net: WIP committed and pushed on a lane branch"]
+  HK --> H1["session-start"]
+  HK --> H2["user-prompt-submit"]
+  HK --> H3["session-end — the crash net"]
   MRG --> CI
-  H3 --> CI["CI on every PR and on main — lint, format:check, check:links, check:ledger, check:memory, test, build"]
-  CI --> CR["the critic — advisory, and its round is pushed to the memory before the gate"]
-  CR --> XR["the external Web review — no-solo-approval, before the word"]
-  XR --> W["THE FOUNDER'S WORD — the sole merge authority"]
-  DEN["ALWAYS ON, not a stage — the settings denies: force-push, hard reset, rm -rf, repo delete, admin and cross-repo merges, evaluated at every tool call"]
-  SUM["OUT OF BAND, not a stage — the summon workflow: a push to ops/summon is the cockpit's self-rescue when its connectors are dead"]
-  JUD["JUDGMENT ONLY — no gate covers these: the links gate proves an anchor EXISTS, never that it is the RIGHT one, and never that a mention became a link at all; nothing checks the derivation law; board freshness is only ever repaired at a ritual; AND THE TERMINUS ITSELF — no machine enforces that the review happened or that the word was given"]
+  H3 --> CI["CI — every PR and main:<br/>seven checks"]
+  CI --> CR["the critic — advisory"]
+  CR --> XR["the external Web review —<br/>no-solo-approval"]
+  XR --> W["THE FOUNDER'S WORD —<br/>the sole merge authority"]
+  DEN["THE DENIES —<br/>ambient permission rails"]
+  SUM["THE SUMMON WORKFLOW —<br/>out of band"]
+  JUD["JUDGMENT ONLY —<br/>four joints, named below"]
   DEN -.-> SK
   SUM -.-> IMP
   CI -.->|"the honest gap"| JUD
@@ -257,20 +285,41 @@ until its PR existed — and the
 task a draft PR in its first minute. The two laws interlock;
 neither covers the floor alone.
 
+THE THREE HOOKS, each drawn as a name and each doing one job:
+SESSION-START syncs main, injects the board, orders the briefing,
+hands over the lane-liveness verdict, and clears the close-lock ·
+USER-PROMPT-SUBMIT stamps a closed session read-only ·
+SESSION-END is the crash net, committing and pushing WIP on a lane
+branch. CI's seven checks are the same commands the verification
+loop runs, and [ship §1](skills/ship.md#1--preflight) is their one
+home.
+
 TWO BOXES ARE NOT STAGES, and are drawn apart from the cascade
 for that reason: THE DENIES are ambient permission rails
-evaluated at every tool call in every session, and THE SUMMON
-WORKFLOW is out-of-band — a cockpit's self-rescue when its
+evaluated at every tool call in every session — force-push, hard
+reset, `rm -rf`, repo delete, admin and cross-repo merges — and
+THE SUMMON WORKFLOW is out-of-band, a push to the reserved
+`ops/summon` branch that is a cockpit's self-rescue when its
 connectors are dead, never a step in delivering a law to an act.
 
-THE DASHED BOX IS NOT DECORATION. Each joint in it is a real miss
-this workshop has already paid for, or a rail it has chosen not
-to build — including the TERMINUS, where nothing mechanical
-enforces that the external review happened or that the word was
-given; the ritual allowance is unconditional once a ritual is
-running. Their inbox lines are in [IDEAS](IDEAS.md); the
-guard-shaped ones would be hosted by the HARNESS V2 bench, which
-does not name them today.
+THE DASHED BOX IS NOT DECORATION, and its FOUR JOINTS are these:
+
+1. **The links gate is destination-blind** — it proves an anchor
+   EXISTS, never that it is the RIGHT one, and never that a
+   mention became a link at all.
+2. **Nothing checks the derivation law** — a bar can render the
+   wrong number of segments and every gate stays green.
+3. **Board freshness is only ever repaired at a ritual**, so
+   between rituals the board is stale by design.
+4. **THE TERMINUS ITSELF** — nothing mechanical enforces that the
+   external review happened or that the word was given; the
+   ritual merge allowance is unconditional once a ritual is
+   running.
+
+Each is a real miss this workshop has already paid for, or a rail
+it has chosen not to build. Their inbox lines are in
+[IDEAS](IDEAS.md); the guard-shaped ones would be hosted by the
+HARNESS V2 bench, which does not name them today.
 
 Boxes: [the ambient import and the session hooks — HOME §The files](HOME.md#the-files--what-each-one-is-for)
 · [the close-lock the prompt hook enforces — HOME §Terms](HOME.md#terms)
@@ -282,3 +331,45 @@ Boxes: [the ambient import and the session hooks — HOME §The files](HOME.md#t
 · [no-solo-approval — LAWS §Workflow](LAWS.md#workflow-non-negotiable)
 · [the founder's word — LAWS §The three touchpoints](LAWS.md#the-three-touchpoints)
 · [the wiring inventory — SETUP](SETUP.md).
+
+## 8 · A sitting
+
+The ordinary ground day, end to end. Seven diagrams above draw
+tasks, lanes, seats and surfaces; this one draws the CONTAINER
+they happen inside — one sitting, opened by a hook and closed by a
+ritual. The work loop in the middle is diagram 1, run once per
+task.
+
+```mermaid
+flowchart TD
+  HK["the session-start hook —<br/>pull · the board · close-lock cleared"] --> PU["pickup —<br/>the claim + the sit-down"]
+  PU --> WORK["the work loop —<br/>each task runs diagram 1"]
+  WORK --> HF["handoff FULL —<br/>capture · park · repaint"]
+  HF --> CR["the close report —<br/>then the close-lock is written"]
+  CR -->|"the prompt hook stamps it"| CLS["the closed session —<br/>read-only, never dead"]
+  CLS --> NX["the next sitting"]
+  NX --> HK
+  WORK -.->|"a weld ships"| QT["QUIET — ship's tail:<br/>a board repaint, no close"]
+  QT -.->|"returns to the sitting"| WORK
+```
+
+TWO ENDINGS ARE NOT DRAWN HERE because they are not ground
+endings: LIFTOFF closes the sitting by handing the baton to a
+cockpit, and LAND ends a FLIGHT rather than a desk. Both live in
+[§3](#3--away--return), which is where the chooser belongs.
+
+THE CLOSE-LOCK IS WHY THIS CYCLE HAS AN END AND NOT A FADE. Handoff
+writes `.claude/session-closed` as its last act; from that moment
+the prompt hook stamps every further input, and the session stays
+CONVERSATIONAL BUT READ-ONLY — it answers by fresh derivation from
+origin, names whoever now holds the baton, and refuses every write,
+command act and ritual. The session-start hook deletes the flag
+before anything else, so the next sitting is always born live.
+
+Boxes: [pickup](skills/pickup.md)
+· [handoff, and the board spec it renders — handoff §4](skills/handoff.md#4--repaint-dashboard-the-board-spec--single-source)
+· [the close report — handoff §6](skills/handoff.md#6--close-full-only)
+· [ship's QUIET tail — ship §8](skills/ship.md#8--tail)
+· [the hooks — HOME §The files](HOME.md#the-files--what-each-one-is-for)
+· [close-lock and closed ≠ dead — HOME §Terms](HOME.md#terms)
+· [the away-mode chooser — HOME §Delegation](HOME.md#delegation--the-away-mode-chooser).

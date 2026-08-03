@@ -19,6 +19,16 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
 
 ## Open
 
+- ⏳ HOME's files table has NO ROW for
+  `.claude/hooks/user-prompt-submit.mjs`, though the hook exists
+  and enforces the close-lock; its two siblings both have rows.
+  Found while redrawing the mesh. (2026-08-03, Claude Code) →
+  [HOME §The files](HOME.md#the-files--what-each-one-is-for)
+- ⏳ ATLAS WIDTH GATE — a standing lint (max label line ≤48 chars,
+  TD only) so the no-scroll law survives future re-renders
+  mechanically; the law as minted says 45, so settle which number
+  the lint enforces at triage. (2026-07-31, the founder) →
+  [ATLAS's header law](ATLAS.md)
 - ⏳ The baton case table has no case for a GROUND HANDOFF — the
   ritual releases the baton, but no row says what THE BATON
   section should then read, so this sitting's close had to write
