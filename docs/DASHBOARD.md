@@ -6,14 +6,19 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-08-03 · 09:01 by pickup · from work PC
+Painted 2026-08-03 · 14:19 by ship's tail · from work PC
 Control tower at the work PC, clean floor — no lanes, no open
-benches · needs-you 0 · git outranks this board. How to read
+benches · needs-you 1 · git outranks this board. How to read
 it → [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
 
-Nothing — the queue is clear.
+1. ⚪ RULE THE WIDTH-GATE NUMBER — the [ATLAS](ATLAS.md) rendering
+   law caps a label line at 45 characters, but the inbox line for
+   the future lint says 48; a gate built at 48 would pass labels
+   that break the law. The external review recommends 45. Say
+   which, at any ritual, whenever suits. (since 08-03)
+   → [its line in IDEAS](IDEAS.md)
 
 ## The baton
 
@@ -28,8 +33,8 @@ Nothing in flight — the floor is clear.
 
 - THE WORKSHOP DOCS & INSTRUCTIONS AUDIT — COMPLETE, end to end:
   the governing docs, all ten skills, the machinery, and ATLAS.
-  Ten benches, [D-063](record/DECISIONS.md#d-063--response-doctrine-v2-and-web-instructions-v6)
-  through [D-071](record/DECISIONS.md#d-071--atlas-gains-the-enforcement-mesh).
+  Eleven benches, [D-063](record/DECISIONS.md#d-063--response-doctrine-v2-and-web-instructions-v6)
+  through [D-072](record/DECISIONS.md#d-072--the-atlas-no-scroll-law).
 
 The standing order
 ([D-060](record/DECISIONS.md#d-060--the-three-phase-standing-order)),
@@ -47,15 +52,15 @@ one phase per line:
 
 **Completed**
 
+- The Atlas no-scroll law — ATLAS stops scrolling sideways; all
+  seven diagrams rewrapped, plus the intake band and a sitting.
+  [#263](https://github.com/wsher0901/roam/pull/263)
 - Atlas gains the enforcement mesh — the delivery chain from
   ambient law to your word, drawn once, with four honest gaps.
   [#259](https://github.com/wsher0901/roam/pull/259)
 - Baton renderings single-homed — one case table at handoff §4;
   three flight-path contradictions repaired.
   [#257](https://github.com/wsher0901/roam/pull/257)
-- The law register — LAWS recut to NAME → rule → pointer; three
-  laws written down; the touchpoints go to three.
-  [#255](https://github.com/wsher0901/roam/pull/255)
 
 **Issues**
 
@@ -70,6 +75,9 @@ one phase per line:
 - ⏳ `npm run count:runs` fails under the work PC's Git Bash while
   the script run directly succeeds. → its line in
   [IDEAS](IDEAS.md)
+- ⏳ HOME's files table has no row for the user-prompt-submit
+  hook, though it exists and enforces the close-lock. → its line
+  in [IDEAS](IDEAS.md)
 
 ## Where we are (Roam)
 
@@ -81,9 +89,9 @@ S3–S8 · queued in order · 0/22
 ## Web + Design
 
 - (Web) "GitHub workflow protocol and web instructions setup" —
-  the audit's ops chat; it carried the external review of all ten
-  benches. → next: nothing owed; it opens again at the next
-  bench's gate.
+  the audit's ops chat; it carried the external review of all
+  eleven benches, atlas-clean included. → next: nothing owed; it
+  opens again at the next bench's gate.
 
 ## Next
 
