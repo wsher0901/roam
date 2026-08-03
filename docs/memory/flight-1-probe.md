@@ -7,10 +7,13 @@ updated: 2026-08-03 21:46 UTC · completion · cloud
 
 ## Status
 
-complete, awaiting merge — 2026-08-03. The probe file is written,
-the verification loop is green, and the PR carries the completion
-comment. THE LANE HAS NOT MERGED AND WILL NOT: "done" means
-founder-approved and merged, and neither half is the lane's.
+complete, awaiting merge — 2026-08-03. The probe file is written and
+the verification loop is green; the completion comment follows this
+commit on the PR. A redelivered `pull_request.labeled` webhook woke
+this lane after completion at 21:49 UTC and met this Status: it
+started no work and re-claimed nothing. THE LANE HAS NOT MERGED AND
+WILL NOT — "done" means founder-approved and merged, and neither
+half is the lane's.
 
 ## What this task is
 
@@ -106,6 +109,15 @@ files — [DASHBOARD](../DASHBOARD.md), [IDEAS](../IDEAS.md) — came in
 with the sync merge, authored on `main` by the founder in #269. A
 bare branch diff cannot tell those apart from the lane's own work;
 `git log --author` can, which is why the check was run that way.
+
+2026-08-03 21:49 UTC — AFTER COMPLETION, A REDELIVERED
+`pull_request.labeled` WEBHOOK WOKE THIS LANE, citing the birth SHA
+`c8fe3d9`, five commits stale. The wake-lock did its job: Status
+re-read first, found `complete, awaiting merge` — this lane's own —
+and completion parks, so nothing was re-run and nothing was
+re-claimed. Worth naming precisely: the save came from the STATUS
+READ, not from noticing the stale SHA, which the lane never
+compared. The rule is written the way it is for a reason.
 
 A DEAD END WORTH KEEPING, caught inside moment 4. The first CI
 watcher this lane wrote asked "is any check complete, and none still

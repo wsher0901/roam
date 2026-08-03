@@ -147,6 +147,18 @@ written AT the moment rather than reconstructed at the end.
   cannot be. The stricter test would have been correct here and
   brittle in the recorded failure; the anchor is what does the
   safety work, not the middot.
+- **21:49 — THE WAKE-LOCK MET A REDELIVERED WEBHOOK, LIVE.** After
+  completion, a second `pull_request.labeled` event arrived for this
+  PR, citing `c8fe3d9` — THE BIRTH SHA, five commits stale. The lane
+  did what the rule says and re-read its memory Status before
+  anything else: `complete, awaiting merge`, its own. Completion
+  parks, so the wake started no work, re-claimed nothing, and wrote
+  no duplicate. This is a second occurrence of the redelivery first
+  recorded on 2026-07-16, and it died the same harmless death — but
+  note WHAT did the saving. Not the stale SHA, which the lane never
+  compared; THE STATUS READ. A wake that trusted the event's SHA
+  instead would have found a branch five commits ahead of the SHA it
+  was handed, and had to guess what that meant.
 - **MOMENT 3, blocking — DID NOT OCCUR.** No `BLOCKED:` comment was
   posted, because nothing on this flight was ambiguous enough to need
   the founder. Recorded as absent rather than omitted: a probe that
