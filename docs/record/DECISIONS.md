@@ -3782,3 +3782,86 @@ one row, nothing else) · [IDEAS](../IDEAS.md) (the width-gate
 line, and one defect line for a missing HOME row found while
 redrawing) · [the spec](specs/atlas-clean.md) + its memory (in
 flight on the bench; moves to history at the weld) · this entry.
+
+## D-073 — Atlas becomes designed figures
+
+In full: 2026-08 — ATLAS's eight diagrams are re-authored as static SVG figures under docs/atlas/, embedded by image link, in one visual language — THE FIGURE LAW, which supersedes D-072's mermaid mechanics while keeping its principle (no horizontal scroll, names never sentences): fixed 740-wide viewBox, self-painted panel, actor lanes, cards as acts, quoted trigger words as chips on the crossings they cause, files as badges in the origin lane, double-checked coordinates, the return track for loops, the fixed palette, generic sans-serif and monospace only (no webfonts); lanes encode the chain's dominant dimension — actors by default, surfaces or stores when the chain is about data; every figure re-drawn by the bench that changes what it depicts, in the same PR; the Boxes line under each figure keeps carrying the prose links, since links cannot live inside an embedded SVG.
+
+**Decision:** [ATLAS](../ATLAS.md)'s eight chains are re-authored
+as hand-written static SVG figures under [docs/atlas/](../atlas),
+embedded by image link, and THE FIGURE LAW goes into ATLAS's
+header with its full fixed vocabulary — canvas, lanes, actor
+tones, cards, chips, badges, edges, type and the coordinate audit.
+It SUPERSEDES
+[D-072](DECISIONS.md#d-072--the-atlas-no-scroll-law)'s mermaid
+mechanics — `flowchart TD`, the `<br/>` ceiling, the 45-character
+cap — while keeping its principle intact: no horizontal scroll,
+and a label is a NAME, never a sentence. LANES ENCODE THE CHAIN'S
+DOMINANT DIMENSION: actors by default, surfaces or stores when the
+chain is about data. Section headings are unchanged, so every
+anchor quoted elsewhere still resolves.
+
+**Why:** D-072 fixed the symptom and revealed the ceiling.
+Mermaid renders a GRAPH — nodes laid out by dependency — and what
+these eight chains actually are is a set of HANDOFFS BETWEEN
+ACTORS: you, the control tower, the Web surface, the machine.
+Mermaid has no way to say WHO OWNS AN ACT, so ownership had to be
+smuggled into node text, which is precisely the pressure that
+inflated the labels D-072 had to cut back. Every figure read as a
+flowchart of steps rather than a picture of a workshop.
+
+SWIMLANES PUT OWNERSHIP IN THE GEOMETRY. An act sits in its
+owner's lane; a crossing between lanes IS a handoff; and the exact
+word that causes a crossing rides on it as a quoted chip. A reader
+now learns the two things they most need — WHO DOES WHAT, and WHAT
+DO I SAY — before reading a single label. That is a capability
+mermaid could not be talked into; it needed a different medium.
+
+THE COST IS PAID KNOWINGLY. Hand-authored SVG cannot be
+regenerated from a text graph, so a figure is only as current as
+the bench that last touched it — which is why the re-draw duty is
+written into the law itself, and why the header carries the full
+vocabulary rather than a reference to a sample nobody can open.
+Links cannot live inside an embedded SVG either, so the Boxes line
+under each figure is promoted from convention to load-bearing
+structure: it is the only path from a drawn box to its prose home.
+
+**Alternatives rejected:**
+
+- **Staying on mermaid and living with the ceiling** — the labels
+  would re-inflate at the first bench that needed to say who owned
+  a step, because the medium leaves nowhere else to put it. D-072
+  would have to be re-fought rather than superseded.
+- **Mermaid's own `sequenceDiagram`** — it does model actors, and
+  it models them as a strict message ordering, which most of these
+  chains are not: the intake band, the four flight endings and the
+  enforcement mesh are branching structures, not conversations.
+  One figure would have fit; seven would have been distorted.
+- **A build step that generates the SVG from a spec file** — the
+  right answer at ten times the volume, and here it would mean
+  inventing and maintaining a diagram DSL for eight pictures that
+  change a few times a year. The mechanical gate that IS worth
+  building is a conformance lint, and it goes to
+  [IDEAS](../IDEAS.md).
+- **Letting each figure find its own look** — expressive, and it
+  would destroy the one thing a shared language buys: that a
+  reader learns the vocabulary once and then reads all eight.
+  Hence a FIXED palette and a FIXED device set, checked
+  mechanically.
+- **Keeping the mermaid blocks alongside the figures** — two
+  sources for one picture, guaranteed to drift, and the drift
+  would be invisible because nothing compares them.
+
+**Affects:** [ATLAS](../ATLAS.md) (the figure law replaces the
+mermaid rendering law; the stamp refreshed; every mermaid block
+retired and replaced by an image embed; section prose kept and
+trimmed where a figure now shows what a sentence said; the eight
+headings and every Boxes line unchanged) ·
+[docs/atlas/](../atlas) (eight new SVG figures — task-loop,
+file-flow, flight, lane-life, surfaces, state-surfaces,
+enforcement-mesh, sitting) · [HOME](../HOME.md) (the files-table
+ATLAS row — one row, nothing else) · [IDEAS](../IDEAS.md) (the
+width-gate line re-scoped to the figure gate; the 48-vs-45
+conflict dies with the mermaid medium) ·
+[the spec](specs/atlas-figures.md) + its memory (in flight on the
+bench; moves to history at the weld) · this entry.

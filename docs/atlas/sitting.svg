@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 758" width="740" height="758" font-family="sans-serif" role="img" aria-label="A sitting — the ordinary ground day from the session-start hook through pickup, the work loop, handoff and the close-lock, to a closed session and the next sitting.">
+  <defs>
+    <marker id="tip" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L8 4 L0 8 Z" fill="#8A887F"/>
+    </marker>
+    <marker id="tipd" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L8 4 L0 8 Z" fill="#B3B0A5"/>
+    </marker>
+  </defs>
+
+  <rect class="panel" x="0.5" y="0.5" width="739" height="757" rx="16" fill="#FAF9F5" stroke="#E5E2D9"/>
+
+  <text x="28" y="36" font-size="17" font-weight="600" fill="#3D3D3A">A sitting</text>
+  <text x="28" y="55" font-size="11" fill="#8A887F">The ordinary ground day — the container every other figure happens inside.</text>
+
+  <rect class="lane" x="24" y="98" width="150" height="598" rx="10" fill="#FCF4E4" opacity="0.55"/>
+  <rect class="lane" x="174" y="98" width="190" height="598" rx="10" fill="#F3F1E9" opacity="0.6"/>
+  <rect class="lane" x="364" y="98" width="220" height="598" rx="10" fill="#F2F1FB" opacity="0.55"/>
+  <rect class="lane" x="584" y="98" width="132" height="598" rx="10" fill="#F1EFE6" opacity="0.6"/>
+
+  <g font-size="11" font-weight="600" letter-spacing="1" text-anchor="middle">
+    <text x="99" y="82" fill="#854F0B">YOU</text>
+    <text x="269" y="82" fill="#57554E">THE MACHINE</text>
+    <text x="474" y="82" fill="#534AB7">THE CONTROL TOWER</text>
+    <text x="650" y="82" fill="#57554E">ORIGIN</text>
+  </g>
+  <rect x="69" y="88" width="60" height="3" rx="1.5" fill="#EF9F27"/>
+  <rect x="239" y="88" width="60" height="3" rx="1.5" fill="#B3B0A5"/>
+  <rect x="444" y="88" width="60" height="3" rx="1.5" fill="#7F77DD"/>
+  <rect x="620" y="88" width="60" height="3" rx="1.5" fill="#B3B0A5"/>
+
+  <g class="card">
+    <rect x="186" y="112" width="166" height="48" rx="10" fill="#FFFFFF" stroke="#E5E2D9"/>
+    <circle cx="202" cy="136" r="8.5" fill="#F3F1E9"/>
+    <text x="202" y="139.5" font-size="10" font-weight="600" fill="#57554E" text-anchor="middle">1</text>
+    <text x="218" y="133" font-size="12.5" font-weight="600" fill="#3D3D3A">session-start</text>
+    <text x="218" y="148" font-size="10" fill="#8A887F">pull · board · unlock</text>
+  </g>
+
+  <path d="M352 136 L370 136 L370 190 L372 190" fill="none" stroke="#8A887F" stroke-width="1.3" marker-end="url(#tip)"/>
+  <g class="card">
+    <rect x="376" y="176" width="196" height="48" rx="10" fill="#FFFFFF" stroke="#E5E2D9"/>
+    <circle cx="392" cy="200" r="8.5" fill="#EEEDFE"/>
+    <text x="392" y="203.5" font-size="10" font-weight="600" fill="#534AB7" text-anchor="middle">2</text>
+    <text x="408" y="197" font-size="12.5" font-weight="600" fill="#3D3D3A">pickup</text>
+    <text x="408" y="212" font-size="10" fill="#8A887F">the claim + the sit-down</text>
+  </g>
+  <line x1="572" y1="200" x2="588" y2="200" stroke="#B3B0A5" stroke-width="1.3" stroke-dasharray="4 3" marker-end="url(#tipd)"/>
+  <g class="badge">
+    <rect x="592" y="189" width="116" height="22" rx="8" fill="#F3F1E9"/>
+    <text x="650" y="204" font-size="10" font-family="monospace" fill="#57554E" text-anchor="middle">the board</text>
+  </g>
+  <text x="650" y="222" font-size="9" fill="#B3B0A5" text-anchor="middle">repainted if stale</text>
+
+  <line x1="474" y1="224" x2="474" y2="236" stroke="#8A887F" stroke-width="1.3" marker-end="url(#tip)"/>
+  <g class="card">
+    <rect x="376" y="240" width="196" height="48" rx="10" fill="#FFFFFF" stroke="#E5E2D9"/>
+    <circle cx="392" cy="264" r="8.5" fill="#EEEDFE"/>
+    <text x="392" y="267.5" font-size="10" font-weight="600" fill="#534AB7" text-anchor="middle">3</text>
+    <text x="408" y="261" font-size="12.5" font-weight="600" fill="#3D3D3A">the work loop</text>
+    <text x="408" y="276" font-size="10" fill="#8A887F">each task runs figure 1</text>
+  </g>
+
+  <path d="M474 288 L474 300" fill="none" stroke="#B3B0A5" stroke-width="1.3" stroke-dasharray="4 3" marker-end="url(#tipd)"/>
+  <g class="card">
+    <rect x="376" y="304" width="196" height="48" rx="10" fill="#FFFFFF" stroke="#E5E2D9"/>
+    <circle cx="392" cy="328" r="8.5" fill="#EEEDFE"/>
+    <text x="392" y="331.5" font-size="10" font-weight="600" fill="#534AB7" text-anchor="middle">4</text>
+    <text x="408" y="325" font-size="12.5" font-weight="600" fill="#3D3D3A">QUIET — ship's tail</text>
+    <text x="408" y="340" font-size="10" fill="#8A887F">a board repaint, no close</text>
+  </g>
+  <path d="M376 328 L370 328 L370 264 L372 264" fill="none" stroke="#B3B0A5" stroke-width="1.3" stroke-dasharray="4 3" marker-end="url(#tipd)"/>
+  <text x="269" y="332" font-size="9" fill="#B3B0A5" text-anchor="middle">a weld ships, and the</text>
+  <text x="269" y="343" font-size="9" fill="#B3B0A5" text-anchor="middle">sitting carries on</text>
+
+  <line x1="162" y1="404" x2="372" y2="404" stroke="#8A887F" stroke-width="1.3" marker-end="url(#tip)"/>
+  <g class="chip">
+    <rect x="36" y="395" width="126" height="18" rx="9" fill="#FAEEDA" stroke="#EAD3A2"/>
+    <text x="99" y="407.5" font-size="10" font-family="monospace" fill="#854F0B" text-anchor="middle">"done for today"</text>
+  </g>
+  <g class="card">
+    <rect x="376" y="380" width="196" height="48" rx="10" fill="#FFFFFF" stroke="#E5E2D9"/>
+    <circle cx="392" cy="404" r="8.5" fill="#EEEDFE"/>
+    <text x="392" y="407.5" font-size="10" font-weight="600" fill="#534AB7" text-anchor="middle">5</text>
+    <text x="408" y="401" font-size="12.5" font-weight="600" fill="#3D3D3A">handoff FULL</text>
+    <text x="408" y="416" font-size="10" fill="#8A887F">capture · park · repaint</text>
+  </g>
+
+  <line x1="474" y1="428" x2="474" y2="440" stroke="#8A887F" stroke-width="1.3" marker-end="url(#tip)"/>
+  <g class="card">
+    <rect x="376" y="444" width="196" height="48" rx="10" fill="#FFFFFF" stroke="#E5E2D9"/>
+    <circle cx="392" cy="468" r="8.5" fill="#EEEDFE"/>
+    <text x="392" y="471.5" font-size="10" font-weight="600" fill="#534AB7" text-anchor="middle">6</text>
+    <text x="408" y="465" font-size="12.5" font-weight="600" fill="#3D3D3A">the close report</text>
+    <text x="408" y="480" font-size="10" fill="#8A887F">then the close-lock</text>
+  </g>
+  <line x1="572" y1="468" x2="588" y2="468" stroke="#B3B0A5" stroke-width="1.3" stroke-dasharray="4 3" marker-end="url(#tipd)"/>
+  <g class="badge">
+    <rect x="592" y="457" width="116" height="22" rx="8" fill="#F3F1E9"/>
+    <text x="650" y="472" font-size="10" font-family="monospace" fill="#57554E" text-anchor="middle">session-closed</text>
+  </g>
+  <text x="650" y="490" font-size="9" fill="#B3B0A5" text-anchor="middle">written as the last act</text>
+
+  <path d="M376 468 L370 468 L370 532 L356 532" fill="none" stroke="#B3B0A5" stroke-width="1.3" stroke-dasharray="4 3" marker-end="url(#tipd)"/>
+  <g class="card">
+    <rect x="186" y="508" width="166" height="48" rx="10" fill="#FFFFFF" stroke="#E5E2D9"/>
+    <circle cx="202" cy="532" r="8.5" fill="#F3F1E9"/>
+    <text x="202" y="535.5" font-size="10" font-weight="600" fill="#57554E" text-anchor="middle">7</text>
+    <text x="218" y="529" font-size="12.5" font-weight="600" fill="#3D3D3A">the prompt hook</text>
+    <text x="218" y="544" font-size="10" fill="#8A887F">stamps every input</text>
+  </g>
+
+  <path d="M352 532 L370 532 L370 586 L372 586" fill="none" stroke="#B3B0A5" stroke-width="1.3" stroke-dasharray="4 3" marker-end="url(#tipd)"/>
+  <g class="card">
+    <rect x="376" y="572" width="196" height="48" rx="10" fill="#FFFFFF" stroke="#E5E2D9"/>
+    <circle cx="392" cy="596" r="8.5" fill="#EEEDFE"/>
+    <text x="392" y="599.5" font-size="10" font-weight="600" fill="#534AB7" text-anchor="middle">8</text>
+    <text x="408" y="593" font-size="12.5" font-weight="600" fill="#3D3D3A">the closed session</text>
+    <text x="408" y="608" font-size="10" fill="#8A887F">read-only, and never dead</text>
+  </g>
+
+  <line x1="474" y1="620" x2="474" y2="632" stroke="#8A887F" stroke-width="1.3" marker-end="url(#tip)"/>
+  <g class="card">
+    <rect x="376" y="636" width="196" height="48" rx="10" fill="#FFFFFF" stroke="#E5E2D9"/>
+    <circle cx="392" cy="660" r="8.5" fill="#EEEDFE"/>
+    <text x="392" y="663.5" font-size="10" font-weight="600" fill="#534AB7" text-anchor="middle">9</text>
+    <text x="408" y="657" font-size="12.5" font-weight="600" fill="#3D3D3A">the next sitting</text>
+    <text x="408" y="672" font-size="10" fill="#8A887F">the flag is deleted first</text>
+  </g>
+
+  <path d="M572 660 L578 660 L578 108 L356 108" fill="none" stroke="#B3B0A5" stroke-width="1.3" stroke-dasharray="4 3" marker-end="url(#tipd)"/>
+  <g class="chip">
+    <rect x="430" y="99" width="88" height="18" rx="9" fill="#FFFFFF" stroke="#B3B0A5"/>
+    <text x="474" y="111.5" font-size="10" font-family="monospace" fill="#57554E" text-anchor="middle">↻ born live</text>
+  </g>
+
+  <text x="28" y="722" font-size="9.5" fill="#B3B0A5">Liftoff and land are not drawn here — liftoff hands the baton to a cockpit, and land ends a FLIGHT rather than a desk.</text>
+  <text x="28" y="740" font-size="9.5" fill="#B3B0A5">Lane = who owns the act · chip = the exact phrase that causes the crossing · dashed = the machine acting, or a file landing.</text>
+</svg>

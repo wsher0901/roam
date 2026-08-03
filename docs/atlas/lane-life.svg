@@ -1,0 +1,181 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 912" width="740" height="912" font-family="sans-serif" role="img" aria-label="A lane's life — pre-birthed bench, canary claim, the ack token, work, blocking, completion and the merge, drawn as swimlanes across you, the baton-holder, the lane and origin.">
+  <defs>
+    <marker id="tip" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L8 4 L0 8 Z" fill="#8A887F"/>
+    </marker>
+    <marker id="tipd" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L8 4 L0 8 Z" fill="#B3B0A5"/>
+    </marker>
+  </defs>
+
+  <rect class="panel" x="0.5" y="0.5" width="739" height="911" rx="16" fill="#FAF9F5" stroke="#E5E2D9"/>
+
+  <text x="28" y="36" font-size="17" font-weight="600" fill="#3D3D3A">A lane's life</text>
+  <text x="28" y="55" font-size="11" fill="#8A887F">Claimed by canary, licensed by the ack token, bounded by the wake-lock — and never its own merger.</text>
+
+  <rect class="lane" x="24" y="98" width="140" height="778" rx="10" fill="#FCF4E4" opacity="0.55"/>
+  <rect class="lane" x="164" y="98" width="220" height="778" rx="10" fill="#F2F1FB" opacity="0.55"/>
+  <rect class="lane" x="384" y="98" width="200" height="778" rx="10" fill="#F3F1E9" opacity="0.6"/>
+  <rect class="lane" x="584" y="98" width="132" height="778" rx="10" fill="#F1EFE6" opacity="0.6"/>
+
+  <g font-size="11" font-weight="600" letter-spacing="1" text-anchor="middle">
+    <text x="94" y="82" fill="#854F0B">YOU</text>
+    <text x="274" y="82" fill="#534AB7">THE BATON-HOLDER</text>
+    <text x="484" y="82" fill="#57554E">THE LANE</text>
+    <text x="650" y="82" fill="#57554E">ORIGIN</text>
+  </g>
+  <rect x="64" y="88" width="60" height="3" rx="1.5" fill="#EF9F27"/>
+  <rect x="244" y="88" width="60" height="3" rx="1.5" fill="#7F77DD"/>
+  <rect x="454" y="88" width="60" height="3" rx="1.5" fill="#B3B0A5"/>
+  <rect x="620" y="88" width="60" height="3" rx="1.5" fill="#B3B0A5"/>
+
+  <g class="card">
+    <rect x="178" y="112" width="192" height="48" rx="10" fill="#FFFFFF" stroke="#E5E2D9"/>
+    <circle cx="194" cy="136" r="8.5" fill="#EEEDFE"/>
+    <text x="194" y="139.5" font-size="10" font-weight="600" fill="#534AB7" text-anchor="middle">1</text>
+    <text x="210" y="133" font-size="12.5" font-weight="600" fill="#3D3D3A">the bench, pre-born</text>
+    <text x="210" y="148" font-size="10" fill="#8A887F">branch · spec · memory · PR</text>
+  </g>
+  <line x1="370" y1="136" x2="588" y2="136" stroke="#B3B0A5" stroke-width="1.3" stroke-dasharray="4 3" marker-end="url(#tipd)"/>
+  <g class="badge">
+    <rect x="592" y="125" width="116" height="22" rx="8" fill="#F3F1E9"/>
+    <text x="650" y="140" font-size="10" font-family="monospace" fill="#57554E" text-anchor="middle">on origin</text>
+  </g>
+  <text x="650" y="158" font-size="9" fill="#B3B0A5" text-anchor="middle">before the lane exists</text>
+
+  <line x1="274" y1="160" x2="274" y2="172" stroke="#8A887F" stroke-width="1.3" marker-end="url(#tip)"/>
+  <g class="card">
+    <rect x="178" y="176" width="192" height="48" rx="10" fill="#FFFFFF" stroke="#E5E2D9"/>
+    <circle cx="194" cy="200" r="8.5" fill="#EEEDFE"/>
+    <text x="194" y="203.5" font-size="10" font-weight="600" fill="#534AB7" text-anchor="middle">2</text>
+    <text x="210" y="197" font-size="12.5" font-weight="600" fill="#3D3D3A">spawn</text>
+    <text x="210" y="212" font-size="10" fill="#8A887F">local agent · cloud route 1</text>
+  </g>
+
+  <path d="M370 200 L392 200 L392 240 L398 240" fill="none" stroke="#8A887F" stroke-width="1.3" marker-end="url(#tip)"/>
+  <g class="card">
+    <rect x="398" y="240" width="172" height="48" rx="10" fill="#FFFFFF" stroke="#E5E2D9"/>
+    <circle cx="414" cy="264" r="8.5" fill="#F3F1E9"/>
+    <text x="414" y="267.5" font-size="10" font-weight="600" fill="#57554E" text-anchor="middle">3</text>
+    <text x="430" y="261" font-size="12.5" font-weight="600" fill="#3D3D3A">canary claim</text>
+    <text x="430" y="276" font-size="10" fill="#8A887F">one trivial push</text>
+  </g>
+  <line x1="570" y1="264" x2="588" y2="264" stroke="#B3B0A5" stroke-width="1.3" stroke-dasharray="4 3" marker-end="url(#tipd)"/>
+  <g class="badge">
+    <rect x="592" y="253" width="116" height="22" rx="8" fill="#F3F1E9"/>
+    <text x="650" y="268" font-size="10" font-family="monospace" fill="#57554E" text-anchor="middle">Status: claimed</text>
+  </g>
+
+  <path d="M398 288 L392 288 L392 328 L374 328" fill="none" stroke="#8A887F" stroke-width="1.3" marker-end="url(#tip)"/>
+  <g class="card">
+    <rect x="178" y="304" width="192" height="48" rx="10" fill="#FFFFFF" stroke="#E5E2D9"/>
+    <circle cx="194" cy="328" r="8.5" fill="#EEEDFE"/>
+    <text x="194" y="331.5" font-size="10" font-weight="600" fill="#534AB7" text-anchor="middle">4</text>
+    <text x="210" y="325" font-size="12.5" font-weight="600" fill="#3D3D3A">the ack</text>
+    <text x="210" y="340" font-size="10" fill="#8A887F">within the window?</text>
+  </g>
+
+  <path d="M370 328 L392 328 L392 392 L398 392" fill="none" stroke="#8A887F" stroke-width="1.3" marker-end="url(#tip)"/>
+  <g class="chip">
+    <rect x="336" y="360" width="40" height="16" rx="9" fill="#FFFFFF" stroke="#B3B0A5"/>
+    <text x="356" y="371.5" font-size="10" font-family="monospace" fill="#57554E" text-anchor="middle">yes</text>
+  </g>
+  <g class="card">
+    <rect x="398" y="368" width="172" height="48" rx="10" fill="#FFFFFF" stroke="#E5E2D9"/>
+    <circle cx="414" cy="392" r="8.5" fill="#F3F1E9"/>
+    <text x="414" y="395.5" font-size="10" font-weight="600" fill="#57554E" text-anchor="middle">5</text>
+    <text x="430" y="389" font-size="12.5" font-weight="600" fill="#3D3D3A">airborne · url</text>
+    <text x="430" y="404" font-size="10" fill="#8A887F">the ack token</text>
+  </g>
+
+  <line x1="484" y1="416" x2="484" y2="428" stroke="#8A887F" stroke-width="1.3" marker-end="url(#tip)"/>
+  <g class="card">
+    <rect x="398" y="432" width="172" height="48" rx="10" fill="#FFFFFF" stroke="#E5E2D9"/>
+    <circle cx="414" cy="456" r="8.5" fill="#F3F1E9"/>
+    <text x="414" y="459.5" font-size="10" font-weight="600" fill="#57554E" text-anchor="middle">6</text>
+    <text x="430" y="453" font-size="12.5" font-weight="600" fill="#3D3D3A">work</text>
+    <text x="430" y="468" font-size="10" fill="#8A887F">every commit pushed</text>
+  </g>
+  <line x1="570" y1="456" x2="588" y2="456" stroke="#B3B0A5" stroke-width="1.3" stroke-dasharray="4 3" marker-end="url(#tipd)"/>
+  <g class="badge">
+    <rect x="592" y="445" width="116" height="22" rx="8" fill="#F3F1E9"/>
+    <text x="650" y="460" font-size="10" font-family="monospace" fill="#57554E" text-anchor="middle">the diary</text>
+  </g>
+  <text x="650" y="478" font-size="9" fill="#B3B0A5" text-anchor="middle">four moments — and never</text>
+  <text x="650" y="489" font-size="9" fill="#B3B0A5" text-anchor="middle">a file a sibling touches</text>
+
+  <line x1="484" y1="480" x2="484" y2="492" stroke="#8A887F" stroke-width="1.3" marker-end="url(#tip)"/>
+  <g class="card">
+    <rect x="398" y="496" width="172" height="48" rx="10" fill="#FFFFFF" stroke="#E5E2D9"/>
+    <circle cx="414" cy="520" r="8.5" fill="#F3F1E9"/>
+    <text x="414" y="523.5" font-size="10" font-weight="600" fill="#57554E" text-anchor="middle">7</text>
+    <text x="430" y="517" font-size="12.5" font-weight="600" fill="#3D3D3A">BLOCKED: a comment</text>
+    <text x="430" y="532" font-size="10" fill="#8A887F">idle-wait on the PR</text>
+  </g>
+  <path d="M94 520 L94 520 L394 520" fill="none" stroke="#8A887F" stroke-width="1.3" marker-end="url(#tip)"/>
+  <g class="chip">
+    <rect x="36" y="511" width="116" height="18" rx="9" fill="#FAEEDA" stroke="#EAD3A2"/>
+    <text x="94" y="523.5" font-size="10" font-family="monospace" fill="#854F0B" text-anchor="middle">your reply</text>
+  </g>
+  <path d="M574 520 L578 520 L578 444 L574 444" fill="none" stroke="#B3B0A5" stroke-width="1.3" stroke-dasharray="4 3" marker-end="url(#tipd)"/>
+  <g class="chip">
+    <rect x="536" y="475" width="78" height="18" rx="9" fill="#FFFFFF" stroke="#B3B0A5"/>
+    <text x="575" y="487.5" font-size="10" font-family="monospace" fill="#57554E" text-anchor="middle">↻ resumes</text>
+  </g>
+
+  <line x1="484" y1="544" x2="484" y2="556" stroke="#8A887F" stroke-width="1.3" marker-end="url(#tip)"/>
+  <g class="card">
+    <rect x="398" y="560" width="172" height="48" rx="10" fill="#FFFFFF" stroke="#E5E2D9"/>
+    <circle cx="414" cy="584" r="8.5" fill="#F3F1E9"/>
+    <text x="414" y="587.5" font-size="10" font-weight="600" fill="#57554E" text-anchor="middle">8</text>
+    <text x="430" y="581" font-size="12.5" font-weight="600" fill="#3D3D3A">completion</text>
+    <text x="430" y="596" font-size="10" fill="#8A887F">final rewrite, ready-flip</text>
+  </g>
+
+  <path d="M398 608 L392 608 L392 648 L374 648" fill="none" stroke="#8A887F" stroke-width="1.3" marker-end="url(#tip)"/>
+  <g class="card">
+    <rect x="178" y="624" width="192" height="48" rx="10" fill="#FFFFFF" stroke="#E5E2D9"/>
+    <circle cx="194" cy="648" r="8.5" fill="#EEEDFE"/>
+    <text x="194" y="651.5" font-size="10" font-weight="600" fill="#534AB7" text-anchor="middle">9</text>
+    <text x="210" y="645" font-size="12.5" font-weight="600" fill="#3D3D3A">non-author review</text>
+    <text x="210" y="660" font-size="10" fill="#8A887F">a lane never merges itself</text>
+  </g>
+
+  <line x1="274" y1="672" x2="274" y2="684" stroke="#8A887F" stroke-width="1.3" marker-end="url(#tip)"/>
+  <g class="card">
+    <rect x="178" y="688" width="192" height="48" rx="10" fill="#FFFFFF" stroke="#E5E2D9"/>
+    <circle cx="194" cy="712" r="8.5" fill="#EEEDFE"/>
+    <text x="194" y="715.5" font-size="10" font-weight="600" fill="#534AB7" text-anchor="middle">10</text>
+    <text x="210" y="709" font-size="12.5" font-weight="600" fill="#3D3D3A">merged</text>
+    <text x="210" y="724" font-size="10" fill="#8A887F">by the baton-holder</text>
+  </g>
+  <line x1="152" y1="712" x2="174" y2="712" stroke="#8A887F" stroke-width="1.3" marker-end="url(#tip)"/>
+  <g class="chip">
+    <rect x="36" y="703" width="116" height="18" rx="9" fill="#FAEEDA" stroke="#EAD3A2"/>
+    <text x="94" y="715.5" font-size="10" font-family="monospace" fill="#854F0B" text-anchor="middle">the word</text>
+  </g>
+
+  <text x="392" y="774" font-size="9" font-weight="600" letter-spacing="0.8" fill="#B3B0A5">THE WAKE-LOCK — THE OTHER ENDING</text>
+  <path d="M484 480 L378 480 L378 802 L394 802" fill="none" stroke="#B3B0A5" stroke-width="1.3" stroke-dasharray="4 3" marker-end="url(#tipd)"/>
+  <g class="card">
+    <rect x="398" y="778" width="172" height="48" rx="10" fill="#FFFFFF" stroke="#E5E2D9"/>
+    <circle cx="414" cy="802" r="8.5" fill="#F3F1E9"/>
+    <text x="414" y="805.5" font-size="10" font-weight="600" fill="#57554E" text-anchor="middle">11</text>
+    <text x="430" y="799" font-size="12.5" font-weight="600" fill="#3D3D3A">a rejected push</text>
+    <text x="430" y="814" font-size="10" fill="#8A887F">re-read own Status first</text>
+  </g>
+  <line x1="484" y1="826" x2="484" y2="838" stroke="#B3B0A5" stroke-width="1.3" stroke-dasharray="4 3" marker-end="url(#tipd)"/>
+  <g class="card">
+    <rect x="398" y="842" width="172" height="24" rx="10" fill="#FFFFFF" stroke="#E5E2D9"/>
+    <text x="484" y="858" font-size="12.5" font-weight="600" fill="#3D3D3A" text-anchor="middle">self-terminate</text>
+  </g>
+  <path d="M370 328 L378 328 L378 480" fill="none" stroke="#B3B0A5" stroke-width="1.3" stroke-dasharray="4 3"/>
+  <g class="chip">
+    <rect x="196" y="770" width="174" height="18" rx="9" fill="#FFFFFF" stroke="#B3B0A5"/>
+    <text x="283" y="782.5" font-size="10" font-family="monospace" fill="#57554E" text-anchor="middle">no ack, or a foreign Status</text>
+  </g>
+  <text x="94" y="854" font-size="9" fill="#B3B0A5">push what</text>
+  <text x="94" y="865" font-size="9" fill="#B3B0A5">exists, stop</text>
+
+  <text x="28" y="896" font-size="9.5" fill="#B3B0A5">Lane = who owns the act · chip = the word or rule on the crossing · dashed = the machine, a file landing, or a wake.</text>
+</svg>
