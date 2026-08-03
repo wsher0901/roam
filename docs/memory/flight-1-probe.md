@@ -1,13 +1,17 @@
 ---
 type: memory
 id: flight-1-probe
-updated: 2026-08-03 21:46 UTC · completion · cloud
+updated: 2026-08-03 22:11 UTC · critic round · cockpit
 ---
 # flight-1-probe — the shakedown's simulated cargo
 
 ## Status
 
-complete, awaiting merge — 2026-08-03. The probe file is written and
+HELD AT THE WELD — 2026-08-03 22:11 UTC. The founder's word to merge
+was given; the pre-gate critic then returned TEN FINDINGS, two of
+them cutting at the payload's own standard, and the word was given
+before that verdict existed. The weld waits on the founder weighing
+it. Everything else below stands: the probe file is written and
 the verification loop is green; the completion comment follows this
 commit on the PR. A redelivered `pull_request.labeled` webhook woke
 this lane after completion at 21:49 UTC and met this Status: it
@@ -149,6 +153,79 @@ a test flight — the canary claim first, then WAIT for the ack
 tested by the ANCHORED match, the diary at
 [the four moments](../skills/parallel-lanes.md#the-four-memory-moments-the-lanes-diary-rule),
 every commit pushed, and no merge ever. All held.
+
+2026-08-03 22:11 UTC — THE CRITIC ROUND
+([ship §6](../skills/ship.md#6--the-gate)), written by the cockpit,
+which reviewed this bench as a non-author and did not write the
+payload. TEN FINDINGS. Nothing has been repaired yet: the founder's
+merge word was given before this verdict existed, so the weld is
+held rather than driven through.
+
+TWO CUT AT THE PAYLOAD'S OWN STANDARD, and both are confirmed
+against the sources rather than taken from the critic:
+
+- **The flip is inferred, not observed.** The probe's BORN section
+  and checklist item 2 both conclude "A FLIP DEMONSTRABLY HAPPENED"
+  from three things: `created_at`, the PR's CURRENT ready state, and
+  the fact that the PR BODY opens "Draft PR at birth". A PR created
+  ready carrying that same boilerplate body is indistinguishable
+  from one created draft and flipped — and the probe says two lines
+  earlier that it could not read the PR's event timeline. The
+  honest value is the one the spec demands: "not observable from
+  this seat". This is the exact move
+  [the spec](../record/specs/flight-1-probe.md) forbids, in the
+  section written to prove the instinct holds.
+- **Checklist item 5 contradicts item 2 twelve lines apart.** Item 5
+  states the PR was ready "because route 1 spawns by flipping ready
+  and then labelling" — the ordering as established fact, lifted
+  from
+  [§Cloud spawn](../skills/parallel-lanes.md#cloud-spawn--route-ladder).
+  Item 2 states that same ordering is NOT observable from this seat.
+  One of the two is wrong, and the doc-derived one is load-bearing
+  for the flight's only ⚠️ result.
+
+A THIRD IS THE MOST CONSEQUENTIAL FOR THE TEST PROGRAM, because it
+means the flight did not test what it reports testing.
+[§Canary](../skills/parallel-lanes.md#canary-handshake-both-sides)
+fixes the match as "STARTS WITH `airborne ·` … never a substring
+search anywhere in the memory, AND NEVER A SEARCH FOR THE BARE
+WORD". This lane deliberately matched the bare word, reasoning that
+the anchor does the safety work — thoughtful, and recorded as
+MOMENT 2. But the spec's simulation law says the rituals are NOT
+special-cased for the test, and that friction produced by running
+one exactly as written is a FINDING. THE LANE CHANGED THE
+INSTRUMENT IT WAS MEASURING WITH. So checklist item 3's green was
+measured against a matcher §Canary does not sanction, and the
+implied skill change is queued nowhere — it would have evaporated
+at the weld. The probe compounds it: THE CANARY section says the
+watcher tested "STARTS WITH the token", which is not what MOMENT 2
+records it doing.
+
+FOUR MORE, smaller and all real: the memory's `updated:` stamp was
+three minutes stale against the Status it stamped (repaired in this
+commit, and it is [TEMPLATE](../memory/TEMPLATE.md)'s named 07-16
+failure met again) · the probe claims its DIARY was "written AT the
+moment" though the file was authored after the ack, and probe and
+memory disagree on when moments 2 and 4 happened · "25 seconds
+before the checkout" pins an instant where only a 25-second window
+is observable · the weave rule is missed twice, "§Canary's lane
+side versus TEMPLATE's state table" as plain text here and
+`DASHBOARD.md` / `IDEAS.md` as bare code spans in the probe.
+
+TWO THE COCKPIT CLOSED FROM THE RECORD rather than passing on. The
+critic could not see the current tip, so it read Done-means 7 as
+unclosed and the mechanical simulation-law check as run against a
+stale head. Both are closed: Actions is green on the synced head
+`e0d8385` (job `checks`, success 22:06:17Z), and the sync merge
+brought exactly one file, `DASHBOARD.md`, from main — so no
+lane-authored file moved and the check still holds.
+
+The critic also verified clean, for the record: the probe's
+arithmetic reconciles end to end, the ack token matches §Canary
+character-for-character, both cited prior incidents are supported,
+`record/probes/` is a pre-existing home, the memory carries every
+TEMPLATE section in order, and no living doc, skill, law or master
+was touched.
 
 ## Where to look
 
