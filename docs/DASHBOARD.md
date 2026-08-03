@@ -6,9 +6,9 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-07-31 · 17:25 by handoff · from work PC
-No live seat — handoff closed the sitting 2026-07-31 · awaiting
-next pickup · needs-you 0 · git outranks this board. How to read
+Painted 2026-08-03 · 09:01 by pickup · from work PC
+Control tower at the work PC, clean floor — no lanes, no open
+benches · needs-you 0 · git outranks this board. How to read
 it → [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
@@ -17,9 +17,8 @@ Nothing — the queue is clear.
 
 ## The baton
 
-No live seat — handoff closed the sitting 2026-07-31 · awaiting
-next pickup
-Last flight: none — the floor has been ground-side throughout.
+CONTROL TOWER — work PC, since 2026-08-03 · 09:01 (pickup)
+Last flight: none — the floor has been ground-side this sitting.
 
 ## In flight
 
