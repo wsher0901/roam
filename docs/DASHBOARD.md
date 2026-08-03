@@ -6,9 +6,9 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-08-03 · 16:17 by ship's tail · from work PC
-Control tower at the work PC, clean floor — no lanes, no open
-benches · needs-you 1 · git outranks this board. How to read
+Painted 2026-08-03 · 17:33 by handoff · from work PC
+Control tower at the work PC, closing the sitting into a liftoff —
+nothing airborne yet · needs-you 1 · git outranks this board. How to read
 it → [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
@@ -42,8 +42,8 @@ The standing order
 ([D-060](record/DECISIONS.md#d-060--the-three-phase-standing-order)),
 one phase per line:
 
-- PHASE 1 — settle & test: the audit is done; the first-story
-  shakedown flight remains.
+- PHASE 1 — settle & test: the audit is done; THE TEST PROGRAM
+  opens now — flight 1, the shakedown, is lifting off.
 - PHASE 2 — the vault: chronicle story lanes + a polish pass;
   opens with your scope ruling (all 66, or the load-bearing dozen).
 - PHASE 3 — Roam: T3–T6 relaunched from scratch, plus
@@ -96,13 +96,12 @@ S3–S8 · queued in order · 0/22
 
 - (Web) "GitHub workflow protocol and web instructions setup" —
   the audit's ops chat; it carried the external review of all
-  twelve benches, and rendered three figures to pixels for the
-  last one. → next: nothing owed; it opens again at the next
-  bench's gate.
+  twelve benches, and approved THE TEST PROGRAM whose flight 1 is
+  this shakedown. → next: nothing owed; it opens again at the
+  lane's gate, which the cockpit carries.
 
 ## Next
 
-The first-story shakedown flight — phase 1's second half. It
-proves [land](skills/land.md) and the blind cockpit birth, and it
-is the first flight that can end by itself. Say the word at the
-control tower; [liftoff](skills/liftoff.md) flies it.
+[Liftoff](skills/liftoff.md) is running. The flight plan lands on
+this board at the fire; from then on the cockpit commands and the
+board is repainted from the cloud.
