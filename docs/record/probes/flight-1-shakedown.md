@@ -30,22 +30,22 @@ offset, in which case the offset is shown as the source wrote it.
 | Branch worked | `docs/flight-1-probe` | `git status` |
 | Branch at wake | `claude/lucid-allen-7gxtus`, created at `c8fe3d9` | reflog + session-start hook line |
 | Head at wake | `c8fe3d9` — "flight-1-probe bench born — spec + memory stub" | `git log` |
-| Base | `main` at `41d3c61` | PR #268 API response |
+| Base at wake | `main` at `41d3c61` (it moved mid-flight — see MOMENT 4) | PR #268 API response |
 | Git identity | `Claude <noreply@anthropic.com>` | `git config` |
 | Remote | a local HTTP git proxy on `127.0.0.1`, not `github.com` directly | `git remote -v` |
 | PR at wake | #268, **state ready — NOT draft**, label `lane:cloud` present | PR #268 API response |
 | Trigger named to the lane | "a pull request labeled `lane:cloud`" | this session's own kickoff prompt |
 
-Observed timeline of the birth, tightest first:
+The birth in the order this seat can put it:
 
 - **21:36:34Z** — the earliest event this seat can see on the PR at
   all: the Vercel bot's deployment comment.
 - **21:36:45Z** — the PR's `updated_at` on this seat's first read.
   What edit that stamp belongs to is **not observable from this
   seat**; the PR API returns the stamp, not its cause.
-- **21:36:53** — the container's own git checkout of `c8fe3d9`,
-  four seconds before this session got a turn. THE ENVIRONMENT WAS
-  BORN ON THE PR HEAD, not on `main` — the clone arrives already
+- **21:36:53** — the container's own git checkout of `c8fe3d9`, 35
+  seconds before this session's first clock read. THE ENVIRONMENT
+  WAS BORN ON THE PR HEAD, not on `main` — the clone arrives already
   standing on the bench.
 - **21:37:28** — this session's first clock read, and its checkout
   of `docs/flight-1-probe`.
