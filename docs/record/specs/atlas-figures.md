@@ -103,36 +103,36 @@ load-bearing rather than decorative.
 
 ## Done means
 
-- [ ] D-073 exists in the
+- [x] D-073 exists in the
       [D-068](../DECISIONS.md#d-068--the-short-anchor-law) format,
       names what it supersedes in
       [D-072](../DECISIONS.md#d-072--the-atlas-no-scroll-law), and
       its Affects line matches the files actually edited, exactly.
-- [ ] ATLAS's header carries THE FIGURE LAW with its full fixed
+- [x] ATLAS's header carries THE FIGURE LAW with its full fixed
       vocabulary; the mermaid rendering-law text is gone; the stamp
       is a clock read; the born line is unchanged.
-- [ ] EIGHT SVG figures exist under `docs/atlas/`, one per chain.
-- [ ] ZERO mermaid blocks remain in ATLAS.
-- [ ] EVERY SVG IS WELL-FORMED XML, proven mechanically by a
+- [x] EIGHT SVG figures exist under `docs/atlas/`, one per chain.
+- [x] ZERO mermaid blocks remain in ATLAS.
+- [x] EVERY SVG IS WELL-FORMED XML, proven mechanically by a
       parser, not by eye.
-- [ ] THE BOUNDS AUDIT, run MECHANICALLY per figure: nothing past
+- [x] THE BOUNDS AUDIT, run MECHANICALLY per figure: nothing past
       x=740, no negative coordinates, height tight to content, no
       text escaping its box — zero violations, recorded in the
       memory.
-- [ ] PALETTE AND FONT CONFORMANCE proven mechanically: every fill
+- [x] PALETTE AND FONT CONFORMANCE proven mechanically: every fill
       and stroke is a law hex, every font-family is generic, and no
       figure references an external resource.
-- [ ] CONTENT-FIDELITY RECEIPTS: for each of the eight, every node,
+- [x] CONTENT-FIDELITY RECEIPTS: for each of the eight, every node,
       edge, trigger word and honest gap of the retired mermaid
       block is accounted for — carried over, or dropped with a
       named justification, in the memory.
-- [ ] All eight section headings are byte-identical to before, and
+- [x] All eight section headings are byte-identical to before, and
       all eight embeds resolve (`check:links` green).
-- [ ] HOME's files-table ATLAS row names the new medium.
-- [ ] The IDEAS line is re-scoped, not duplicated; the dead
+- [x] HOME's files-table ATLAS row names the new medium.
+- [x] The IDEAS line is re-scoped, not duplicated; the dead
       48-vs-45 conflict is explained in the memory.
-- [ ] Nothing outside the named files is touched.
-- [ ] `check:links` · `check:ledger` · `check:memory` · lint ·
+- [x] Nothing outside the named files is touched.
+- [x] `check:links` · `check:ledger` · `check:memory` · lint ·
       format · test · build green; Actions green on the PUSHED
       head; [ship §6](../../skills/ship.md#6--the-gate) critic run
       against every figure's SOURCE.

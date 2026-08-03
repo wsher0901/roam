@@ -141,5 +141,5 @@
   <text x="638" y="353" font-size="9" fill="#B3B0A5" text-anchor="middle">inbox in the workshop</text>
 
   <text x="28" y="500" font-size="9.5" fill="#B3B0A5">Ship appears three times because it writes three surfaces — the lane is the store, and a card is one write into it.</text>
-  <text x="28" y="520" font-size="9.5" fill="#B3B0A5">Lane = the surface written · card = one write, titled by its writer · chip = the rule on that write · dashed = the machine.</text>
+  <text x="28" y="520" font-size="9.5" fill="#B3B0A5">Lane = the surface written · card = one write, titled by its writer · chip = the rule on that crossing · dashed = the machine.</text>
 </svg>

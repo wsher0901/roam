@@ -40,15 +40,15 @@
     <text x="122" y="200.5" font-size="10" font-family="monospace" fill="#534AB7" text-anchor="middle">rituals own it</text>
   </g>
 
-  <line x1="290" y1="238" x2="290" y2="152" stroke="#B3B0A5" stroke-width="1.3" stroke-dasharray="4 3" marker-end="url(#tipd)"/>
+  <line x1="264" y1="280" x2="264" y2="152" stroke="#B3B0A5" stroke-width="1.3" stroke-dasharray="4 3" marker-end="url(#tipd)"/>
   <g class="chip">
-    <rect x="250" y="212" width="80" height="18" rx="9" fill="#FFFFFF" stroke="#B3B0A5"/>
-    <text x="290" y="224.5" font-size="10" font-family="monospace" fill="#57554E" text-anchor="middle">never</text>
+    <rect x="224" y="212" width="80" height="18" rx="9" fill="#FFFFFF" stroke="#B3B0A5"/>
+    <text x="264" y="224.5" font-size="10" font-family="monospace" fill="#57554E" text-anchor="middle">never</text>
   </g>
-  <line x1="352" y1="238" x2="352" y2="152" stroke="#8A887F" stroke-width="1.3" marker-end="url(#tip)"/>
+  <line x1="360" y1="336" x2="360" y2="152" stroke="#8A887F" stroke-width="1.3" marker-end="url(#tip)"/>
   <g class="chip">
-    <rect x="290" y="180" width="124" height="18" rx="9" fill="#FFFFFF" stroke="#B3B0A5"/>
-    <text x="352" y="192.5" font-size="10" font-family="monospace" fill="#57554E" text-anchor="middle">only at THE GATE</text>
+    <rect x="325" y="180" width="70" height="18" rx="9" fill="#FFFFFF" stroke="#B3B0A5"/>
+    <text x="360" y="192.5" font-size="10" font-family="monospace" fill="#57554E" text-anchor="middle">THE GATE</text>
   </g>
 
   <line x1="486" y1="238" x2="486" y2="152" stroke="#B3B0A5" stroke-width="1.3" stroke-dasharray="4 3" marker-end="url(#tipd)"/>
@@ -64,7 +64,7 @@
   </g>
 
   <rect class="lane" x="24" y="238" width="196" height="160" rx="10" fill="#F2F1FB" opacity="0.55"/>
-  <rect class="lane" x="220" y="238" width="196" height="160" rx="10" fill="#F3F1E9" opacity="0.7"/>
+  <rect class="lane" x="220" y="238" width="196" height="160" rx="10" fill="#F3F1E9" opacity="0.6"/>
   <rect class="lane" x="416" y="238" width="140" height="160" rx="10" fill="#F1EFE6" opacity="0.6"/>
   <rect class="lane" x="556" y="238" width="160" height="160" rx="10" fill="#E9F7F1" opacity="0.55"/>
 
@@ -91,16 +91,15 @@
   </g>
 
   <g class="card">
-    <rect x="232" y="280" width="156" height="44" rx="10" fill="#FFFFFF" stroke="#E5E2D9"/>
-    <text x="246" y="300" font-size="12.5" font-weight="600" fill="#3D3D3A">lanes</text>
-    <text x="246" y="314" font-size="10" fill="#8A887F">workers on benches</text>
+    <rect x="232" y="280" width="108" height="44" rx="10" fill="#FFFFFF" stroke="#E5E2D9"/>
+    <text x="244" y="300" font-size="12.5" font-weight="600" fill="#3D3D3A">lanes</text>
+    <text x="244" y="314" font-size="10" fill="#8A887F">the workers</text>
   </g>
   <g class="badge">
-    <rect x="232" y="336" width="156" height="24" rx="8" fill="#F3F1E9"/>
-    <text x="310" y="352" font-size="10" font-family="monospace" fill="#57554E" text-anchor="middle">its own branch</text>
+    <rect x="232" y="336" width="108" height="24" rx="8" fill="#F3F1E9"/>
+    <text x="286" y="352" font-size="10" font-family="monospace" fill="#57554E" text-anchor="middle">its own branch</text>
   </g>
-  <text x="310" y="374" font-size="9" fill="#B3B0A5" text-anchor="middle">own diary · PR speech · nothing else</text>
-  <path d="M388 348 L402 348 L402 240" fill="none" stroke="#8A887F" stroke-width="1.3"/>
+  <text x="300" y="376" font-size="9" fill="#B3B0A5" text-anchor="middle">own diary · PR speech · nothing else</text>
 
   <g class="card">
     <rect x="428" y="280" width="116" height="44" rx="10" fill="#FFFFFF" stroke="#E5E2D9"/>
@@ -123,5 +122,5 @@
   </g>
 
   <text x="28" y="420" font-size="9.5" fill="#B3B0A5">A lane's branch reaches main only at THE GATE, welded by the baton-holder on your word — the sole carve-out is the ritual micro-PR.</text>
-  <text x="28" y="440" font-size="9.5" fill="#B3B0A5">Lane = who is acting · solid arrow = it may write · dashed arrow = it may not · chip = the rule on that crossing.</text>
+  <text x="28" y="440" font-size="9.5" fill="#B3B0A5">Lane = who is acting · solid arrow = this reaches main · dashed = it never does · chip = the rule on that crossing.</text>
 </svg>

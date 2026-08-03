@@ -14,9 +14,9 @@
   <text x="28" y="55" font-size="11" fill="#8A887F">How a law reaches an act — every stage below DELIVERS doctrine; none of them originates it.</text>
 
   <rect class="lane" x="24" y="98" width="200" height="634" rx="10" fill="#F1EFE6" opacity="0.6"/>
-  <rect class="lane" x="224" y="98" width="200" height="634" rx="10" fill="#F3F1E9" opacity="0.7"/>
+  <rect class="lane" x="224" y="98" width="200" height="634" rx="10" fill="#F3F1E9" opacity="0.6"/>
   <rect class="lane" x="424" y="98" width="144" height="634" rx="10" fill="#FCF4E4" opacity="0.55"/>
-  <rect class="lane" x="568" y="98" width="148" height="634" rx="10" fill="#F1EFE6" opacity="0.45"/>
+  <rect class="lane" x="568" y="98" width="148" height="634" rx="10" fill="#F1EFE6" opacity="0.5"/>
 
   <g font-size="11" font-weight="600" letter-spacing="1" text-anchor="middle">
     <text x="124" y="82" fill="#57554E">THE DOCUMENTS</text>
@@ -80,15 +80,15 @@
   <path d="M324 224 L324 236" fill="none" stroke="#8A887F" stroke-width="1.3" marker-end="url(#tip)"/>
   <g class="card">
     <rect x="236" y="240" width="176" height="32" rx="10" fill="#FFFFFF" stroke="#E5E2D9"/>
-    <text x="324" y="260" font-size="11.5" font-weight="600" fill="#3D3D3A" text-anchor="middle">session-start</text>
+    <text x="324" y="260" font-size="12.5" font-weight="600" fill="#3D3D3A" text-anchor="middle">session-start</text>
   </g>
   <g class="card">
     <rect x="236" y="280" width="176" height="32" rx="10" fill="#FFFFFF" stroke="#E5E2D9"/>
-    <text x="324" y="300" font-size="11.5" font-weight="600" fill="#3D3D3A" text-anchor="middle">user-prompt-submit</text>
+    <text x="324" y="300" font-size="12.5" font-weight="600" fill="#3D3D3A" text-anchor="middle">user-prompt-submit</text>
   </g>
   <g class="card">
     <rect x="236" y="320" width="176" height="32" rx="10" fill="#FFFFFF" stroke="#E5E2D9"/>
-    <text x="324" y="340" font-size="11.5" font-weight="600" fill="#3D3D3A" text-anchor="middle">session-end</text>
+    <text x="324" y="340" font-size="12.5" font-weight="600" fill="#3D3D3A" text-anchor="middle">session-end</text>
   </g>
 
   <path d="M212 392 L224 392 L224 456 L232 456" fill="none" stroke="#8A887F" stroke-width="1.3" marker-end="url(#tip)"/>

@@ -1,7 +1,7 @@
 ---
 type: memory
 id: atlas-figures
-updated: 2026-08-03 15:47 · payload complete · work PC
+updated: 2026-08-03 16:12 · critic round · work PC
 ---
 # atlas-figures — ATLAS re-authored as designed SVG
 
@@ -81,7 +81,12 @@ TEXT ELEMENT CONTAINED INSIDE ITS OWN CARD, CHIP OR BADGE RECT, by
 estimating advance width from font size, weight, family and
 letter-spacing · every `fill` and `stroke` drawn from the law's
 fixed palette · every `font-family` generic · and no external
-reference or scripting construct anywhere.
+reference or scripting construct anywhere. AFTER THE CRITIC ROUND
+it also checks the law's GEOMETRY AND TYPE SCALE — panel, card,
+chip and badge radii; lane-wash fill and opacity; and every
+font-size against the scale, with cards held to the fixed 12.5/10
+pair. Each new check was probe-tested by deliberately breaking a
+figure and confirming it fired.
 
 FINAL: **8 figures · 0 violations.** It earned its keep immediately
 — the first pass of `task-loop.svg` failed with ELEVEN text
@@ -108,7 +113,10 @@ accounted for below.
   · spec → shipped · ledger line), the `no word → wait, never
   merge` branch as a lane caption, and the memory return loop as a
   drawn ↻ track. GAINED, from prose that had no box: the external
-  Web review as its own card in its own lane. DROPPED: the words
+  Web review as its own card, tinted web-teal inside the CHECKS &
+  REVIEW lane — the one COMPOSITE lane on the page, holding two
+  machine acts beside one Web act, which its title says plainly.
+  DROPPED: the words
   "reviewer subagent" from the critic card — the mechanism lives at
   [ship §6](../skills/ship.md#6--the-gate), which the Boxes line
   cites.
@@ -181,6 +189,72 @@ line is RE-SCOPED in place, per verify-before-classify, to the
 ATLAS FIGURE GATE — viewBox, palette hexes, generic fonts,
 coordinate bounds — and the conflict note is gone with the medium
 that created it. The line was not duplicated and not deleted.
+
+### The critic's round
+
+EIGHT FINDINGS, and one of them was a REGRESSION I had re-introduced
+— the most useful thing the critic did all bench. All eight
+repaired:
+
+1. **🔴 A false claim of exactness, re-introduced.**
+   `lane-life.svg` card 5 read `airborne · url` with the subline
+   "the exact ack token", while the canonical token is
+   `airborne · <url> · <date>`
+   ([§Canary](../skills/parallel-lanes.md#canary-handshake-both-sides)).
+   This is the SAME defect
+   [#263](https://github.com/wsher0901/roam/pull/263)'s critic
+   removed one bench ago, and the medium change carried it back in.
+   It matters because the token is matched by prefix and a
+   near-miss is invisible to a waiting lane. The word "exact" is
+   gone; the exact form stays where it is owned.
+2. **The surfaces figure contradicted lane rule 7.** The LANES lane
+   carried a dashed `never` arrow AND a solid `only at THE GATE`
+   arrow into main, under a legend reading "solid = it may write" —
+   which says a lane may write main. Worse, the solid arrow
+   originated from nothing: the branch badge's connector dead-ended
+   at the lane edge. Repaired by making the two arrows about two
+   different subjects, which is the actual doctrine: the LANE never
+   writes main (dashed, from the lane card), while ITS BRANCH
+   reaches main at THE GATE (solid, now genuinely starting at the
+   branch badge). The legend says "this reaches main" rather than
+   "it may write".
+3. **The spec's Done-means was entirely unticked** at the gate —
+   the same miss as the previous bench. Ticked.
+4. **The figures deviated from the law their own page states**, and
+   the auditor's checks were narrower than the Done-means claimed:
+   chips at `rx` 8 not 9 · lane washes at 0.7 and 0.45 outside the
+   0.5–0.6 band · card type at 11.5px and a 9px subline against the
+   fixed 12.5/10 pair. All corrected in the figures, AND the
+   auditor extended to cover radii, washes and the type scale so
+   the claim and the check now match.
+5. **Two lane washes the law did not name** — machine `#F3F1E9` and
+   the store lanes' `#F1EFE6`. The law's four-wash list predated
+   its own dominant-dimension clause, which requires store and
+   machine lanes. THE LAW WAS WIDENED rather than the figures bent:
+   both washes are now named in ATLAS's header.
+6. **Cards without numbered circles.** `surfaces.svg` enumerates
+   rather than sequences, and the hook sub-cards and the terminal
+   `self-terminate` card are children of numbered ones. The law now
+   says a numbered circle is carried WHEN THE FIGURE READS AS A
+   SEQUENCE, and names the two exceptions — a description of what
+   the figures are, not a loosening to fit them.
+7. **The chip device was under-specified.** The law said a chip
+   carries "the EXACT word quoted", but most chips carry a rule or
+   an answer, and three figure footers had quietly redefined the
+   device locally. The law now names BOTH uses and makes the
+   quotation marks the tell — quoted means it is something you say
+   — and the three footers are unified to one wording.
+8. **Two geometry slips**: the `leaving phrase` chip floated 78px
+   away from the crossing it labels, and the `no ack` path stopped
+   10px short of the wake-lock track it joins, leaving a visible
+   break in the only line carrying "no ack → self-terminate". Both
+   closed.
+
+The critic also verified, and I re-checked: D-073's Affects matches
+the changed files exactly, zero mermaid blocks remain, all eight
+viewBoxes are 740, every hex is a law colour, every font is
+generic, no figure carries an external reference, and the section
+headings are byte-identical.
 
 ## Where to look
 

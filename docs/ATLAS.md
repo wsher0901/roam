@@ -32,20 +32,29 @@ image link:
 - **Lanes encode the chain's dominant dimension** — actors by
   default, surfaces or stores when the chain is about data. Pale
   washes at 0.5–0.6 opacity (you `#FCF4E4` · tower or cockpit
-  `#F2F1FB` · web `#E9F7F1` · origin `#F1EFE6`), an 11px/600
-  header in the actor's dark tone, and a 60×3 rail underline in
-  the actor's mid tone.
+  `#F2F1FB` · web `#E9F7F1` · machine `#F3F1E9` · origin, and any
+  store or surface lane, `#F1EFE6`), an 11px/600 header in the
+  actor's dark tone, and a 60×3 rail underline in the actor's mid
+  tone.
 - **Actor tones**, fixed: you amber (`#EF9F27` mid · `#854F0B`
   dark · `#FAEEDA` tint · `#EAD3A2` edge) · tower purple
   (`#7F77DD` · `#534AB7` · `#EEEDFE`) · web teal (`#5DCAA5` ·
   `#0F6E56` · `#E1F5EE` · `#B5E4D2`) · machine gray (`#B3B0A5` ·
   `#57554E` · `#F3F1E9`).
 - **Cards are acts** — white, `#E5E2D9` stroke, `rx` 10, a
-  numbered circle in the owner's tint, a 12.5px/600 title and one
-  10px subline. A CARD LABEL IS A NAME, NEVER A SENTENCE.
-- **Chips are trigger words** — a pill at `rx` 9, monospace 10px,
-  carrying the EXACT word quoted, placed ON the crossing it
-  causes, white or owner-tinted with the owner's edge stroke.
+  12.5px/600 title and one 10px subline. A CARD LABEL IS A NAME,
+  NEVER A SENTENCE. A card carries a numbered circle in the
+  owner's tint WHEN THE FIGURE READS AS A SEQUENCE; a figure that
+  enumerates rather than sequences, and a card that is a child or
+  a terminal of a numbered one, carry none.
+- **Chips ride ON the crossing they cause** — a pill at `rx` 9,
+  monospace 10px, white or owner-tinted with the owner's edge
+  stroke. A chip carries EITHER the exact founder word, ALWAYS IN
+  QUOTES, or the rule or answer that governs the crossing,
+  unquoted. The quotation marks are the tell: quoted means it is
+  something you say.
+- **Captions are 9–9.5px `#B3B0A5`**, set outside any box, for
+  what a badge or a lane needs said and a label must not carry.
 - **Badges are files and outputs** — `#F3F1E9`, `rx` 8, monospace
   9.5–10.5px, in the origin lane, with a small "created" or "the
   record" caption where it earns one.
