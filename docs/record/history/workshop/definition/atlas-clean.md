@@ -1,15 +1,17 @@
 ---
-type: memory
+type: history
 id: atlas-clean
-updated: 2026-08-03 13:55 · payload complete · work PC
+updated: 2026-08-03 14:17 · weld · work PC
+shipped: 2026-08-03 14:17
+pr: 263
 ---
 # atlas-clean — the no-scroll law, and the two missing chains
 
 ## Status
 
-complete, awaiting merge — 2026-08-03, work PC.
-[D-072](../record/DECISIONS.md#d-072--the-atlas-no-scroll-law) is
-minted, [ATLAS](../ATLAS.md)'s header carries THE RENDERING LAW,
+shipped — merged #263, 2026-08-03, work PC.
+[D-072](../../../DECISIONS.md#d-072--the-atlas-no-scroll-law) is
+minted, [ATLAS](../../../../ATLAS.md)'s header carries THE RENDERING LAW,
 all seven existing diagrams are rewrapped under it, and the two
 missing chains are drawn — diagram 1's intake band and the new §8,
 a sitting. THE WIDTH PROOF RETURNS ZERO VIOLATIONS across 8 blocks
@@ -18,18 +20,18 @@ grammar. Full CI mirror green.
 
 ## What this task is
 
-[ATLAS](../ATLAS.md)'s node labels carried sentences, so its
+[ATLAS](../../../../ATLAS.md)'s node labels carried sentences, so its
 diagrams rendered wider than a screen and the page could not be
 read as a shape. This bench writes the fix down as a law in
 ATLAS's own header — top-down only, and a node label is a NAME
 never a sentence — brings all seven existing diagrams under it,
 and closes two coverage gaps. Contract:
-[the spec](../record/specs/atlas-clean.md).
+[the spec](../../../specs/atlas-clean.md).
 
 ## Pending issues
 
 - Tower-authored, so
-  [no-solo-approval](../LAWS.md#workflow-non-negotiable) requires
+  [no-solo-approval](../../../../LAWS.md#workflow-non-negotiable) requires
   an external Web review before the founder's word at THE GATE. DO
   NOT MERGE.
 
@@ -67,7 +69,7 @@ alike — edge labels widen a render exactly as node labels do,
 and diagrams 3 and 5 held the two worst of them), splits on
 `<br/>`, and checks both the two-line ceiling and the 45-char cap,
 plus the first line of every block for TD orientation. The
-standing-lint idea in [IDEAS](../IDEAS.md) is this scanner, moved
+standing-lint idea in [IDEAS](../../../../IDEAS.md) is this scanner, moved
 into CI.
 
 ### Verify-before-drop, clause by clause — and one real catch
@@ -80,61 +82,61 @@ nothing lost. Diagram 2 appears nowhere below because its single
 over-cap label lost nothing at all. Every clause and its home:
 
 - **§1** — "independent" (THE GATE) →
-  [no-solo-approval](../LAWS.md#workflow-non-negotiable), cited;
+  [no-solo-approval](../../../../LAWS.md#workflow-non-negotiable), cited;
   ALSO written into §1's prose. "merges unasked / the one
-  carve-out" → [HOME §Micro-PRs](../HOME.md#micro-prs), which says
+  carve-out" → [HOME §Micro-PRs](../../../../HOME.md#micro-prs), which says
   "squash-merges immediately without asking".
 - **§3** — the cockpit's "advises on gates, executes rulings" →
-  [the charter](../COCKPIT-CHARTER.md)'s "YOUR STANDING JOB:
+  [the charter](../../../../COCKPIT-CHARTER.md)'s "YOUR STANDING JOB:
   ADVISE", which is its only home, with "holds the baton" at
-  [HOME §The baton](../HOME.md#the-baton) · AUTO-LAND's "never at
+  [HOME §The baton](../../../../HOME.md#the-baton) · AUTO-LAND's "never at
   birth, never on a timer, never silent" →
-  [land Scenario 1](../skills/land.md#scenario-1--auto-land-the-cockpit-fires-it)'s
+  [land Scenario 1](../../../../skills/land.md#scenario-1--auto-land-the-cockpit-fires-it)'s
   FOUR GUARDS, verbatim · DESK TAKEOVER's "writes COCKPIT
   SUPERSEDED, self-retires on next wake" →
-  [pickup §6](../skills/pickup.md#6--fleet-resume-on-the-founders-answer)
+  [pickup §6](../../../../skills/pickup.md#6--fleet-resume-on-the-founders-answer)
   write-1 and
-  [land Scenario 2](../skills/land.md#scenario-2--desk-takeover-the-desk-fires-it)'s
+  [land Scenario 2](../../../../skills/land.md#scenario-2--desk-takeover-the-desk-fires-it)'s
   tombstone wake-rule · MODE P's "Status held" and "the
   fleet-at-ground table" →
-  [land MODE P](../skills/land.md#mode-p--pause-and-transfer-the-founder-is-going-local)
+  [land MODE P](../../../../skills/land.md#mode-p--pause-and-transfer-the-founder-is-going-local)
   and
-  [handoff §4](../skills/handoff.md#4--repaint-dashboard-the-board-spec--single-source)
+  [handoff §4](../../../../skills/handoff.md#4--repaint-dashboard-the-board-spec--single-source)
   · "old sessions never revived" → §3's OWN prose ("sessions are
   cattle, branches are the work") and
-  [land](../skills/land.md#mode-r--retire-the-flights-natural-end)'s
+  [land](../../../../skills/land.md#mode-r--retire-the-flights-natural-end)'s
   "Old sessions are NEVER revived".
 - **§4** — "by the baton-holder / on origin" →
-  [parallel-lanes §Bench-first birth](../skills/parallel-lanes.md#bench-first-birth-baton-holder-procedure)
+  [parallel-lanes §Bench-first birth](../../../../skills/parallel-lanes.md#bench-first-birth-baton-holder-procedure)
   · "ready-flip then the lane:cloud label" →
-  [§Cloud spawn](../skills/parallel-lanes.md#cloud-spawn--route-ladder)'s
+  [§Cloud spawn](../../../../skills/parallel-lanes.md#cloud-spawn--route-ladder)'s
   route ladder · "middots, character-for-character" →
-  [§Canary](../skills/parallel-lanes.md#canary-handshake-both-sides),
+  [§Canary](../../../../skills/parallel-lanes.md#canary-handshake-both-sides),
   which carries the token form exactly · "no file shared with a
   sibling" →
-  [the lane law](../skills/parallel-lanes.md#the-lane-law-seat-blind--identical-local-or-cloud)'s
+  [the lane law](../../../../skills/parallel-lanes.md#the-lane-law-seat-blind--identical-local-or-cloud)'s
   duty 4 · "on a phone-reachable vehicle" and "re-read own Status
   first" →
-  [§Wake-lock & parking](../skills/parallel-lanes.md#wake-lock--parking)
+  [§Wake-lock & parking](../../../../skills/parallel-lanes.md#wake-lock--parking)
   · "a lane never merges" → §4's own prose plus diagram 5's
   `never` edge.
 - **§5** — "same role, a cloud seat" →
-  [HOME §The baton](../HOME.md#the-baton) · "at a ground seat" →
-  [HOME §Agent teams](../HOME.md#agent-teams) · "of self-authored
-  diffs" → [no-solo-approval](../LAWS.md#workflow-non-negotiable)
+  [HOME §The baton](../../../../HOME.md#the-baton) · "at a ground seat" →
+  [HOME §Agent teams](../../../../HOME.md#agent-teams) · "of self-authored
+  diffs" → [no-solo-approval](../../../../LAWS.md#workflow-non-negotiable)
   · "via paste block" →
-  [LAWS §Knowledge & tracking](../LAWS.md#knowledge--tracking) ·
+  [LAWS §Knowledge & tracking](../../../../LAWS.md#knowledge--tracking) ·
   "nothing else" → drawn by the `never` edge itself.
 - **§6** — "wholesale" and "stamped" →
-  [HOME §The board](../HOME.md#the-board) · "ticked only by ship"
-  → [LAWS §Knowledge & tracking](../LAWS.md#knowledge--tracking),
+  [HOME §The board](../../../../HOME.md#the-board) · "ticked only by ship"
+  → [LAWS §Knowledge & tracking](../../../../LAWS.md#knowledge--tracking),
   and drawn in §2 · "one state from the locked vocabulary" →
-  [TEMPLATE's Status vocabulary](TEMPLATE.md#status-vocabulary).
+  [TEMPLATE's Status vocabulary](../../../../memory/TEMPLATE.md#status-vocabulary).
 - **§7** — "loaded into every session" →
-  [LAWS](../LAWS.md)' own header · "a stub cannot drift from its
-  procedure" → [HOME §Skills](../HOME.md#skills) · the critic's
+  [LAWS](../../../../LAWS.md)' own header · "a stub cannot drift from its
+  procedure" → [HOME §Skills](../../../../HOME.md#skills) · the critic's
   "round pushed to the memory before the gate" →
-  [ship §6](../skills/ship.md#6--the-gate), which is where that
+  [ship §6](../../../../skills/ship.md#6--the-gate), which is where that
   duty is written.
 
 FOUR SENTENCES HAD NO HOME AND WERE WRITTEN INTO PROSE, which is
@@ -148,13 +150,13 @@ the whole reason the rule exists:
    them. §7's prose now enumerates all four.
 2. **§7's three hooks and CI's seven checks** — the hook boxes are
    now bare names, so a paragraph states each hook's job and sends
-   the checks to [ship §1](../skills/ship.md#1--preflight) as
+   the checks to [ship §1](../../../../skills/ship.md#1--preflight) as
    their one home.
 3. **§7's deny list and the `ops/summon` mechanism** — the
    apart-from-the-cascade paragraph already carried "ambient rails
    evaluated at every tool call" and "self-rescue when connectors
    are dead", but not the VALUES or the branch name; both are
-   verified against [SETUP](../SETUP.md) and now sit in that
+   verified against [SETUP](../../../../SETUP.md) and now sit in that
    paragraph.
 4. **§5's weld and carve-out clause** — "merges on the founder's
    word, sole carve-out ritual micro-PRs" and "then the
@@ -188,25 +190,25 @@ THE RE-RUN RETURNS SEVEN HITS AND ZERO STALE ONES. Two are this
 very paragraph describing the sweep, which is the self-reference
 any honest sweep receipt creates and is named here rather than
 grepped around. The other five are correct as written:
-[the atlas-census history](../record/history/workshop/definition/atlas-census.md)
+[the atlas-census history](atlas-census.md)
 (FROZEN — true at [#259](https://github.com/wsher0901/roam/pull/259)'s
-ship), [its spec](../record/specs/atlas-census.md) ×2 (a SHIPPED
+ship), [its spec](../../../specs/atlas-census.md) ×2 (a SHIPPED
 spec's Done-means, that bench's frozen contract),
-[this bench's own spec](../record/specs/atlas-clean.md) (quoting
+[this bench's own spec](../../../specs/atlas-clean.md) (quoting
 the search string), and
-[D-072](../record/DECISIONS.md#d-072--the-atlas-no-scroll-law)'s
+[D-072](../../../DECISIONS.md#d-072--the-atlas-no-scroll-law)'s
 Affects line, which says "all seven diagrams rewrapped" and is a
 true statement about what this bench did. A SECOND grep for
 `carries seven` and `SEVEN MERMAID` caught one more frozen line —
-[the ledger](../record/history/README.md)'s atlas-census entry,
+[the ledger](../../README.md)'s atlas-census entry,
 which says "a seventh diagram"; it is untouched for the same
 reason. No `In full:` line quotes any of these phrases, so the
-[D-068](../record/DECISIONS.md#d-068--the-short-anchor-law)
+[D-068](../../../DECISIONS.md#d-068--the-short-anchor-law)
 carve-out was not needed.
 
 ### The parse proof
 
-The [atlas-census](../record/history/workshop/definition/atlas-census.md)
+The [atlas-census](atlas-census.md)
 method, reused: `mermaid` under `jsdom`, `mermaid.parse()` per
 block. ALL EIGHT PARSE. Two frictions worth recording for the next
 run — the proof script must live INSIDE the repo (an ESM import
@@ -221,8 +223,8 @@ in with `--no-save` and the tree was restored with `npm ci`;
 
 **The roadmap-manual citation.** The mandate and the spec both said
 diagram 1's Boxes line should cite "ROADMAP §How-to-read". No such
-heading exists: [ROADMAP](../ROADMAP.md)'s own header points at
-[HOME §Roadmap manual](../HOME.md#roadmap-manual), which is where
+heading exists: [ROADMAP](../../../../ROADMAP.md)'s own header points at
+[HOME §Roadmap manual](../../../../HOME.md#roadmap-manual), which is where
 the notation actually lives. The Boxes line cites the real home and
 the spec's wording was corrected to match — a citation to a
 heading that does not exist would have shipped past
@@ -271,8 +273,8 @@ the law holds against itself. REPAIRED, all of them:
    is a receipt no gate can revalidate. All woven.
 5. **§1's new lead overstated the law** — it read as though every
    idea must pass through IDEAS before decide, where
-   [LAWS](../LAWS.md#workflow-non-negotiable) says only "nothing is
-   scope until triaged", and [decide](../skills/decide.md) runs
+   [LAWS](../../../../LAWS.md#workflow-non-negotiable) says only "nothing is
+   scope until triaged", and [decide](../../../../skills/decide.md) runs
    unasked on a founder's statement with no inbox line in between.
    ATLAS originates nothing; the sentence now matches its home.
 6. **The sweep receipt claimed five survivors including the
@@ -292,13 +294,41 @@ the law holds against itself. REPAIRED, all of them:
     dropping the angle brackets the canonical form carries (mermaid
     cannot hold them). The false claim of exactness is gone; the
     exact form stays where it belongs, in
-    [§Canary](../skills/parallel-lanes.md#canary-handshake-both-sides).
+    [§Canary](../../../../skills/parallel-lanes.md#canary-handshake-both-sides).
+
+### The external review
+
+PASS on `d6340bc`, 2026-08-03 — the reviewer re-ran the WIDTH
+PROOF with its OWN scanner on its OWN clone rather than trusting
+this bench's numbers: 8 blocks, all `flowchart TD`, every node and
+edge label line at or under 45 characters, zero violations. It
+confirmed the rendering law in ATLAS's header citing
+[D-072](../../../DECISIONS.md#d-072--the-atlas-no-scroll-law);
+diagram 1's intake band and §8 present with lawful Boxes cites;
+THE FOUR RESCUED SENTENCES living in prose — the four judgment
+joints enumerated in §7, the hooks' duties in their paragraph;
+HOME's single-row change; both [IDEAS](../../../../IDEAS.md) lines
+filed, the width-gate line carrying its 48-vs-45 note. All three
+master fences byte-identical. Doc gates re-run independently —
+4,392 links, zero broken; Actions green on the tip.
+
+ON THE RECORD, THE REVIEWER'S RECOMMENDATION for the width-gate
+triage: **45 wins when the gate is built**, not 48.
+
+ONE DESCRIPTION IN THE VERDICT IS OFF BY A LINE, corrected here so
+the record is right: the surviving `seven diagrams` hit inside
+DECISIONS sits in D-072's **Affects** line, not in a frozen
+`In full:` quotation, so the
+[D-068](../../../DECISIONS.md#d-068--the-short-anchor-law)
+carve-out is not what protects it — it stands because it is a true
+statement about what this bench did. The conclusion is the same:
+untouched, correctly.
 
 ## Where to look
 
-- [the spec](../record/specs/atlas-clean.md) — the contract.
-- [D-072](../record/DECISIONS.md#d-072--the-atlas-no-scroll-law) —
+- [the spec](../../../specs/atlas-clean.md) — the contract.
+- [D-072](../../../DECISIONS.md#d-072--the-atlas-no-scroll-law) —
   the law and its rejected alternatives.
-- [ATLAS](../ATLAS.md) — the header law, §1's intake band, §8.
-- [the atlas-census bench](../record/history/workshop/definition/atlas-census.md)
+- [ATLAS](../../../../ATLAS.md) — the header law, §1's intake band, §8.
+- [the atlas-census bench](atlas-census.md)
   — the predecessor, and the parse-proof method's origin.

@@ -2,10 +2,12 @@
 type: spec
 id: atlas-clean
 title: The Atlas no-scroll law (D-072)
-status: draft
+status: shipped
 stage: workshop
 branch: docs/atlas-clean
+pr: 263
 opened: 2026-08-03
+shipped: 2026-08-03
 ---
 
 # atlas-clean — the no-scroll law, and the two missing chains
