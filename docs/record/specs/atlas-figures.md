@@ -2,10 +2,12 @@
 type: spec
 id: atlas-figures
 title: Atlas becomes designed figures (D-073)
-status: draft
+status: shipped
 stage: workshop
 branch: docs/atlas-figures
+pr: 265
 opened: 2026-08-03
+shipped: 2026-08-03
 ---
 
 # atlas-figures — ATLAS re-authored as designed SVG

@@ -1,17 +1,19 @@
 ---
-type: memory
+type: history
 id: atlas-figures
-updated: 2026-08-03 16:12 · critic round · work PC
+updated: 2026-08-03 16:15 · weld · work PC
+shipped: 2026-08-03 16:15
+pr: 265
 ---
 # atlas-figures — ATLAS re-authored as designed SVG
 
 ## Status
 
-complete, awaiting merge — 2026-08-03, work PC.
-[D-073](../record/DECISIONS.md#d-073--atlas-becomes-designed-figures)
-is minted, THE FIGURE LAW is in [ATLAS](../ATLAS.md)'s header, and
+shipped — merged #265, 2026-08-03, work PC.
+[D-073](../../../DECISIONS.md#d-073--atlas-becomes-designed-figures)
+is minted, THE FIGURE LAW is in [ATLAS](../../../../ATLAS.md)'s header, and
 all eight chains are re-authored as hand-written swimlane SVG under
-[docs/atlas/](../atlas). ZERO MERMAID BLOCKS REMAIN. The figure
+[docs/atlas/](../../../../atlas). ZERO MERMAID BLOCKS REMAIN. The figure
 audit returns 0 violations across 8 figures. Full CI mirror green.
 
 ## What this task is
@@ -20,18 +22,18 @@ ATLAS's eight chains are re-authored from mermaid into designed
 static SVG figures in one visual language: swimlanes where THE LANE
 IS THE OWNER, acts as cards, and the exact trigger word riding as a
 chip on the crossing it causes. Contract:
-[the spec](../record/specs/atlas-figures.md).
+[the spec](../../../specs/atlas-figures.md).
 
 ## Pending issues
 
 - Tower-authored, so
-  [no-solo-approval](../LAWS.md#workflow-non-negotiable) requires an
+  [no-solo-approval](../../../../LAWS.md#workflow-non-negotiable) requires an
   external Web review before the founder's word at THE GATE. DO NOT
   MERGE.
 - **One scope question for the founder, not a defect.**
-  [HOME](../HOME.md) carries its OWN small mermaid block — the
+  [HOME](../../../../HOME.md) carries its OWN small mermaid block — the
   away-mode chooser at
-  [§Delegation](../HOME.md#delegation--the-away-mode-chooser). The
+  [§Delegation](../../../../HOME.md#delegation--the-away-mode-chooser). The
   figure law is ATLAS's PRESENTATION law and this bench's file scope
   gave HOME exactly one row, so it was deliberately not touched.
   Whether D-073 should reach HOME's diagram is a decide-level
@@ -48,7 +50,7 @@ language from the same day's Web ops chat.
 
 ### Why the medium had to change, not just the labels
 
-[D-072](../record/DECISIONS.md#d-072--the-atlas-no-scroll-law) was
+[D-072](../../../DECISIONS.md#d-072--the-atlas-no-scroll-law) was
 one bench old and already at its ceiling. It had banned sentences
 inside mermaid labels, which fixed the scrolling — but the reason
 those sentences kept appearing was structural: mermaid draws a
@@ -63,7 +65,7 @@ carry ownership at all.
 ### The approved sample is a paste block, not a file
 
 Recorded because a later reader will wonder where it went.
-[LAWS §Knowledge & tracking](../LAWS.md#knowledge--tracking) makes
+[LAWS §Knowledge & tracking](../../../../LAWS.md#knowledge--tracking) makes
 Claude Design a NO-WRITE surface: only extracted VALUES enter the
 repo, never markup or bundles. The mandate's vocabulary section IS
 that paste block — palette, type sizes, radii, stroke weights,
@@ -100,7 +102,7 @@ it derives width from character count and font metrics with a
 conservative factor. Stated plainly so nobody mistakes it for a
 pixel-exact guarantee; it is a tight upper bound, and the figures
 are laid out with padding on top of it. Making this mechanical for
-real is the re-scoped [IDEAS](../IDEAS.md) line.
+real is the re-scoped [IDEAS](../../../../IDEAS.md) line.
 
 ### Content fidelity, figure by figure
 
@@ -118,7 +120,7 @@ accounted for below.
   machine acts beside one Web act, which its title says plainly.
   DROPPED: the words
   "reviewer subagent" from the critic card — the mechanism lives at
-  [ship §6](../skills/ship.md#6--the-gate), which the Boxes line
+  [ship §6](../../../../skills/ship.md#6--the-gate), which the Boxes line
   cites.
 - **§2 file flow** — the 4-step read chain and all 8 writes
   carried. The mermaid's `READS --> WRITES` edge became the dashed
@@ -151,7 +153,7 @@ accounted for below.
   four-joint box kept as a NAME pointing at the prose, exactly as
   the mandate required. The deny VALUES and the `ops/summon`
   mechanism ride as captions, both verified against
-  [SETUP](../SETUP.md).
+  [SETUP](../../../../SETUP.md).
 - **§8 a sitting** — all 9 nodes carried, including the QUIET side
   path and its return, the prompt hook's stamping, and the
   born-live return track.
@@ -163,7 +165,7 @@ NOTHING WAS DROPPED SILENTLY. The single drop is named above
 
 Section headings were left byte-identical, which was the point:
 the destination-grep for ATLAS anchors finds only
-[D-072](../record/DECISIONS.md#d-072--the-atlas-no-scroll-law)'s
+[D-072](../../../DECISIONS.md#d-072--the-atlas-no-scroll-law)'s
 own citations of `#1--the-task-loop` and `#8--a-sitting`, and both
 still resolve. ZERO POINTER REPAIRS NEEDED. A grep for `mermaid`
 across living files returns only this bench's own prose, the
@@ -200,7 +202,7 @@ repaired:
    `lane-life.svg` card 5 read `airborne · url` with the subline
    "the exact ack token", while the canonical token is
    `airborne · <url> · <date>`
-   ([§Canary](../skills/parallel-lanes.md#canary-handshake-both-sides)).
+   ([§Canary](../../../../skills/parallel-lanes.md#canary-handshake-both-sides)).
    This is the SAME defect
    [#263](https://github.com/wsher0901/roam/pull/263)'s critic
    removed one bench ago, and the medium change carried it back in.
@@ -256,12 +258,46 @@ viewBoxes are 740, every hex is a law colour, every font is
 generic, no figure carries an external reference, and the section
 headings are byte-identical.
 
+### The external review
+
+PASS on `21316c6`, 2026-08-03 — the reviewer RE-RAN THE FIGURE
+AUDIT with its own tooling on its own clone: 8 SVGs, zero
+violations across well-formed XML, viewBox, palette purity, generic
+fonts and bounds. It then went further than any gate here can:
+THREE FIGURES WERE RENDERED TO PIXELS AND INSPECTED — the task
+loop, the flight and the enforcement mesh — with composition, chips
+and doctrine all judged sound. That is the one check this bench
+could not perform on itself, since the auditor measures an
+ESTIMATE of text width and never a raster.
+
+Content fidelity was verified by token audit, with two wording
+variants judged lawful rather than flagged: MANUAL RETIRE, which
+matches the case table's row name, and the merge word, which is
+lawful under the widened chip rule. Both repairs from the critic
+round were verified in the shipped sources — the ack-token
+regression and the surfaces gate-semantics fix. ATLAS carries the
+figure law with zero mermaid blocks and eight resolving embeds;
+headings identical to merge-base, so the sweep is genuinely zero.
+HOME took one row and its own chooser diagram stands untouched,
+the ruling deferred and recorded. All three master fences are
+byte-identical. Doc gates re-run independently — 4,450 links, zero
+broken; Actions green on the tip.
+
+ONE OBSERVATION FOR WHOEVER BUILDS THE FIGURE GATE: the reviewer
+noted the audit tooling is embedded in this memory as prose, with
+no script and no CI change. That is correct for this bench — the
+mandate's file scope excluded both — but it means the 0-violations
+result is reproducible only by re-authoring the auditor from this
+description. The re-scoped [IDEAS](../../../../IDEAS.md) line is
+the path to making it permanent, and this paragraph is the spec it
+should be built from.
+
 ## Where to look
 
-- [the spec](../record/specs/atlas-figures.md) — the contract.
-- [D-073](../record/DECISIONS.md#d-073--atlas-becomes-designed-figures)
+- [the spec](../../../specs/atlas-figures.md) — the contract.
+- [D-073](../../../DECISIONS.md#d-073--atlas-becomes-designed-figures)
   — the figure law and its rejected alternatives.
-- [ATLAS](../ATLAS.md) — the gallery; [docs/atlas/](../atlas) — the
+- [ATLAS](../../../../ATLAS.md) — the gallery; [docs/atlas/](../../../../atlas) — the
   eight figures.
-- [the atlas-clean bench](../record/history/workshop/definition/atlas-clean.md)
+- [the atlas-clean bench](atlas-clean.md)
   — the predecessor whose mechanics this supersedes.
