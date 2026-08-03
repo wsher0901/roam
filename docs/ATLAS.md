@@ -6,26 +6,65 @@ status: living
 
 # Atlas — the system spine
 
-Stamp: 2026-08-03 · no-scroll rewrap + diagrams 1 and 8 ·
+Stamp: 2026-08-03 · re-authored as designed figures ·
 work PC (born 2026-07-27 by the atlas bench · home PC).
-The workshop depicted as eight diagrams on one page. THIS PAGE
-RENDERS, IT ORIGINATES NOTHING — like [the board](DASHBOARD.md),
-it is among the least authoritative files in the repo: every box
-links to the prose section that owns the doctrine, and on any
-disagreement THE PROSE GOVERNS. A bench that changes what a
-diagram depicts re-renders the diagram in the same PR
+The workshop depicted as eight designed figures on one page. THIS
+PAGE RENDERS, IT ORIGINATES NOTHING — like [the board](DASHBOARD.md),
+it is among the least authoritative files in the repo: every figure
+is accompanied by the Boxes line that links the prose owning its
+doctrine, and on any disagreement THE PROSE GOVERNS. A bench that
+changes what a figure depicts re-draws that figure in the same PR
 ([HOME §Where information goes](HOME.md#where-information-goes)).
 
-THE RENDERING LAW, and every re-render obeys it
-([D-072](record/DECISIONS.md#d-072--the-atlas-no-scroll-law)): every
-diagram is TOP-DOWN — `flowchart TD`, never `LR`. A NODE LABEL IS A
-NAME, NEVER A SENTENCE: at most two lines via `<br/>`, and no line
-over 45 characters. Whatever a box wants to explain belongs in the
-prose under its diagram or in the home its Boxes line links —
-a page that scrolls sideways cannot show a shape, and the shape is
-the only thing this page has to offer.
+THE FIGURE LAW, and every re-render obeys it
+([D-073](record/DECISIONS.md#d-073--atlas-becomes-designed-figures),
+superseding [D-072](record/DECISIONS.md#d-072--the-atlas-no-scroll-law)'s
+mermaid mechanics while keeping its principle — no horizontal
+scroll, and a label is a NAME, never a sentence). Figures are
+hand-authored static SVG under [docs/atlas/](atlas), embedded by
+image link:
+
+- **The canvas.** A fixed `viewBox` 740 wide; height grows with
+  content and is kept tight to it. Self-painted panel — `#FAF9F5`
+  fill, `#E5E2D9` stroke, `rx` 16 — with a 17px/600 `#3D3D3A`
+  title, an 11px `#8A887F` subtitle, and a 9.5px `#B3B0A5` footer
+  key restating the devices.
+- **Lanes encode the chain's dominant dimension** — actors by
+  default, surfaces or stores when the chain is about data. Pale
+  washes at 0.5–0.6 opacity (you `#FCF4E4` · tower or cockpit
+  `#F2F1FB` · web `#E9F7F1` · origin `#F1EFE6`), an 11px/600
+  header in the actor's dark tone, and a 60×3 rail underline in
+  the actor's mid tone.
+- **Actor tones**, fixed: you amber (`#EF9F27` mid · `#854F0B`
+  dark · `#FAEEDA` tint · `#EAD3A2` edge) · tower purple
+  (`#7F77DD` · `#534AB7` · `#EEEDFE`) · web teal (`#5DCAA5` ·
+  `#0F6E56` · `#E1F5EE` · `#B5E4D2`) · machine gray (`#B3B0A5` ·
+  `#57554E` · `#F3F1E9`).
+- **Cards are acts** — white, `#E5E2D9` stroke, `rx` 10, a
+  numbered circle in the owner's tint, a 12.5px/600 title and one
+  10px subline. A CARD LABEL IS A NAME, NEVER A SENTENCE.
+- **Chips are trigger words** — a pill at `rx` 9, monospace 10px,
+  carrying the EXACT word quoted, placed ON the crossing it
+  causes, white or owner-tinted with the owner's edge stroke.
+- **Badges are files and outputs** — `#F3F1E9`, `rx` 8, monospace
+  9.5–10.5px, in the origin lane, with a small "created" or "the
+  record" caption where it earns one.
+- **Edges**: solid `#8A887F` at 1.3 is an act's flow; dashed
+  `#B3B0A5` is the machine, a file landing, or a return; one
+  chevron marker; a loop is a drawn return track carrying the ↻
+  pill.
+- **Type is generic only** — `sans-serif` and `monospace`, no
+  webfonts, no external references of any kind.
+- **Coordinates are audited before commit**: no text outside its
+  box, no unintended overlaps, nothing past x=740.
+
+THE BOXES LINE UNDER EACH FIGURE IS LOAD-BEARING, not decoration:
+links cannot live inside an embedded SVG, so the line beneath is
+the only path from a drawn box to the prose that owns it.
 
 ## 1 · The task loop
+
+![The task loop — from a voiced idea to a welded merge, drawn as swimlanes across you, the control tower, checks and review, and origin.](atlas/task-loop.svg)
 
 One task = one branch = one PR — born public, gated only by the
 founder's word, welded atomically. Upstream of the bench sits THE
@@ -33,36 +72,9 @@ INTAKE BAND — how a voiced thought reaches a branch: nothing is
 scope until triaged into the [ROADMAP](ROADMAP.md) via
 [decide](skills/decide.md).
 
-```mermaid
-flowchart TD
-  subgraph INTAKE["INTAKE — how a thought becomes a bench"]
-    IN["a voiced idea or defect"] -->|"the entry contract"| IDL["one dated IDEAS line —<br/>the only inbox"]
-    IDL --> DCD["decide — the triage"]
-    DCD -->|"nothing is scope until triaged"| RML["a ROADMAP line —<br/>the only stored task state"]
-  end
-  RML --> P["freshly pulled main"]
-  P --> B["bench-first birth —<br/>branch · spec · memory stub · draft PR"]
-  B --> W["work — every commit pushed, the heartbeat"]
-  W --> M["memory rewritten at trigger moments"]
-  M --> W
-  W --> V["sync with main —<br/>verification loop · Actions green"]
-  V --> C["the critic — reviewer subagent, advisory"]
-  C --> G{"THE GATE —<br/>review, then the founder's word"}
-  subgraph WELD["the atomic weld — ONE bookkeeping commit"]
-    T1["ROADMAP checkbox ticked"]
-    T2["memory moves to record/history quadrant"]
-    T3["spec frontmatter goes shipped"]
-    T4["ledger line prepended"]
-  end
-  G -->|"the word"| WELD
-  G -->|"no word"| WAIT["wait — never merge"]
-  WELD --> SQ["squash-merge + branch deleted + main pulled"]
-  SQ --> TAIL["ship's tail —<br/>QUIET repaint, the micro-PR carve-out"]
-```
-
 THE GATE's review is an INDEPENDENT one — no diff merges on its
-author's own approval, which is why the box names the review and
-the word as two separate acts.
+author's own approval, which is why the figure draws the review
+and the word as two separate acts, in two different lanes.
 
 Boxes: [the only inbox and its entry contract — IDEAS](IDEAS.md)
 · [the triage — decide](skills/decide.md)
@@ -80,28 +92,14 @@ Boxes: [the only inbox and its entry contract — IDEAS](IDEAS.md)
 
 ## 2 · The file flow
 
-What a sitting reads at start, and which writer owns each surface
-— one home per class, never a second copy.
+![The file flow — what a sitting reads at start, and which ritual writes each surface, drawn with one lane per store.](atlas/file-flow.svg)
 
-```mermaid
-flowchart TD
-  subgraph READS["session start reads"]
-    H["session-start hook —<br/>pull main, print the board"] --> D1["DASHBOARD"]
-    D1 --> L["LAWS — always loaded via the CLAUDE.md import"]
-    L --> ME["the active memory — the story so far"]
-  end
-  subgraph WRITES["ritual writers"]
-    PK["pickup"] -->|"stale repaint"| BOARD["DASHBOARD"]
-    HF["handoff"] -->|"memory rewrites + repaint + note"| BOARD
-    LF["liftoff"] -->|"flight-plan repaint"| BOARD
-    SH["ship"] -->|"weld + tail repaint"| BOARD
-    SH -->|"tick"| RM["ROADMAP"]
-    SH -->|"memory + ledger"| REC["record/history"]
-    DE["decide"] -->|"entry + ripple, same commit"| DEC["record/DECISIONS + affected files"]
-    ANY["any voiced idea or defect"] -->|"one dated line, unasked"| ID["IDEAS — the single inbox"]
-  end
-  READS --> WRITES
-```
+What a sitting reads at start, and which writer owns each surface
+— one home per class, never a second copy. THE LANE IS THE STORE
+here rather than the actor, because that is what this chain is
+about; a card is one write INTO the lane it sits in, titled by the
+ritual that performs it. Ship appears three times for exactly that
+reason.
 
 Boxes: [the hook and the day — HOME](HOME.md#a-day-in-the-workshop)
 · [the board's writers — HOME §The board](HOME.md#the-board)
@@ -113,38 +111,18 @@ Boxes: [the hook and the day — HOME](HOME.md#a-day-in-the-workshop)
 
 ## 3 · Away & return
 
+![Away and return — the chooser, the flight, the four endings, and the resume, drawn as swimlanes across you, the ground seat, the cockpit and origin.](atlas/flight.svg)
+
 The chooser decides how a sitting ends; land and pickup close the
 circle — sessions are cattle, branches are the work. A flight can
 be ended by the cockpit itself, by a desk taking over, or by the
 founder's word
 ([D-061](record/DECISIONS.md#d-061--the-landing-doctrine-recut-to-three-scenarios)).
 
-```mermaid
-flowchart TD
-  A{"leaving the machine?"} -->|no| LL["parallelizable work: LOCAL lane"]
-  A -->|yes| B{"should work continue?"}
-  B -->|no| H["handoff — park the shop, close the session"]
-  B -->|yes| C{"machine staying on?"}
-  C -->|yes| G["go-remote — the tether, a backstop posture"]
-  C -->|no| F["liftoff — eligible work to the cloud"]
-  F --> CP["the cockpit —<br/>the control tower online"]
-  CP --> T{"what ends the flight?"}
-  T -->|"work done, nothing awaiting"| AL["AUTO-LAND —<br/>the cockpit fires it, unprompted"]
-  T -->|"the founder returns to a desk"| SUP["DESK TAKEOVER —<br/>pickup adopts the decision queue"]
-  T -->|"the founder's word: ground the fleet"| FR["THE FREEZE — word-only, forces MODE P"]
-  T -->|"the founder's word: land"| MR["MANUAL RETIRE — on an empty fleet"]
-  AL --> LA{"land — mode derived from the fleet"}
-  SUP --> LA
-  FR --> LA
-  MR --> LA
-  LA -->|"nothing flying"| R["MODE R — retire:<br/>final repaint, branches verified dead"]
-  LA -->|"work flying"| PP["MODE P — pause-and-transfer:<br/>THE FENCE, one pushed commit per lane"]
-  R --> PU["pickup — the next sitting claims the baton"]
-  PP --> PU
-  H --> PU
-  G -->|"leaving phrase from the phone"| H
-  PU -->|"fleet resume ask"| RES["fresh workers claim<br/>the fenced branches"]
-```
+TWO OF THE FOUR ENDINGS ARE YOURS TO SPEAK and two are derived,
+which is why only two carry chips: AUTO-LAND fires on a condition
+the cockpit tests, DESK TAKEOVER fires because you sat down
+somewhere else, while THE FREEZE and MANUAL RETIRE wait on a word.
 
 Boxes: [the chooser — HOME §Delegation](HOME.md#delegation--the-away-mode-chooser)
 · [handoff](skills/handoff.md) · [go-remote](skills/go-remote.md)
@@ -163,26 +141,14 @@ Boxes: [the chooser — HOME §Delegation](HOME.md#delegation--the-away-mode-cho
 
 ## 4 · A lane's life
 
+![A lane's life — pre-birthed bench, canary claim, the ack token, work, blocking, completion and the merge, drawn as swimlanes across you, the baton-holder, the lane and origin.](atlas/lane-life.svg)
+
 A worker on a pre-birthed bench: claimed by canary, licensed by
 the ack token, bounded by the wake-lock, merged only by the
-baton-holder on the founder's word.
-
-```mermaid
-flowchart TD
-  B["the bench, pre-birthed —<br/>branch · spec · memory stub · draft PR"] --> S["spawn —<br/>local agent/worktree · cloud route 1"]
-  S --> CL["canary claim —<br/>one trivial push, Status: claimed"]
-  CL --> ACK{"ack within the window?"}
-  ACK -->|yes| AIR["airborne · url · date —<br/>the ack token"]
-  ACK -->|"no, or a Status it does not own"| TERM["self-terminate — push what exists, stop"]
-  AIR --> WK["work — every commit pushed,<br/>the diary at four moments"]
-  WK --> BL["BLOCKED: a PR comment —<br/>idle-wait, the founder replies"]
-  BL -->|"the reply resumes it in-thread"| WK
-  WK --> DONE["completion —<br/>final rewrite, ready-flip + summary"]
-  DONE --> RV["non-author review +<br/>the founder's word"]
-  RV --> MG["merged by the baton-holder"]
-  WK -.->|"a rejected push is a wake"| WLK["wake-lock — a foreign Status means terminate"]
-  WLK -.-> TERM
-```
+baton-holder on the founder's word. Read the lanes and the shape
+states the boundary on its own — the BATON-HOLDER lane opens the
+bench and closes the merge, and everything between belongs to THE
+LANE, which never once crosses into main.
 
 Boxes: [the lane law — parallel-lanes](skills/parallel-lanes.md#the-lane-law-seat-blind--identical-local-or-cloud)
 · [bench-first birth](skills/parallel-lanes.md#bench-first-birth-baton-holder-procedure)
@@ -195,26 +161,13 @@ Boxes: [the lane law — parallel-lanes](skills/parallel-lanes.md#the-lane-law-s
 
 ## 5 · The surfaces
 
+![The surfaces — who may write main, drawn as four writer lanes reaching up into one bookkeeping band.](atlas/surfaces.svg)
+
 Who may write what: one baton-holder commands, lanes speak through
 their PRs, teams explore and review, Web and Design never write.
 Every merge into main waits for the founder's word and is performed
 by the baton-holder as the atomic weld — the sole carve-out being
 the ritual micro-PR, which merges itself.
-
-```mermaid
-flowchart TD
-  subgraph BATON["the baton-holder —<br/>exactly one commanding session"]
-    T["control tower — the desk seat"]
-    CK["cockpit —<br/>the control tower ONLINE"]
-  end
-  BATON -->|"rituals own main's bookkeeping"| MAIN["main —<br/>DASHBOARD · IDEAS · ROADMAP · record/"]
-  LN["lanes — workers on pre-birthed benches"] -->|"own branch · own diary · PR speech"| BR["task branches on origin"]
-  LN -.->|never| MAIN
-  TM["agent teams —<br/>explore and review, one sitting"] -.->|"never a bench, a merge, or a ritual"| MAIN
-  W["Claude Web —<br/>the external review"] -.->|"no-write surface"| MAIN
-  DS["Claude Design —<br/>extracted tokens only"] -.->|"no-write surface"| MAIN
-  BR -->|"THE GATE — review, then the word"| MAIN
-```
 
 Boxes: [the baton law — LAWS §Parallel lanes & cloud](LAWS.md#parallel-lanes--cloud)
 · [the cockpit — HOME §The baton](HOME.md#the-baton)
@@ -225,17 +178,12 @@ Boxes: [the baton law — LAWS §Parallel lanes & cloud](LAWS.md#parallel-lanes-
 
 ## 6 · State surfaces
 
-Status is derived, never carried — every count is computed at
-render time, and git outranks every note.
+![State surfaces — four stores of truth feeding one rendered board, with git outranking it on any disagreement.](atlas/state-surfaces.svg)
 
-```mermaid
-flowchart TD
-  G["git and origin —<br/>the heartbeat: branches, commits, PRs"] --> BD["DASHBOARD —<br/>rendered at rituals, least authoritative"]
-  R["ROADMAP checkboxes —<br/>the ONLY stored task state"] --> BD
-  M["memory Status lines —<br/>the handshake surface"] --> BD
-  HF["record/history frontmatter —<br/>shipped stamps + PR numbers"] --> BD
-  BD -.->|"on any disagreement"| G
-```
+Status is derived, never carried — every count is computed at
+render time, and git outranks every note. The four lanes are the
+STORES this time, and the single card beneath them is the only
+thing in the workshop that is rendered rather than stored.
 
 Boxes: [the derivation law and the ladder — LAWS §Knowledge & tracking](LAWS.md#knowledge--tracking)
 · [ticks by ship only — LAWS §Knowledge & tracking](LAWS.md#knowledge--tracking)
@@ -246,37 +194,11 @@ Boxes: [the derivation law and the ladder — LAWS §Knowledge & tracking](LAWS.
 
 ## 7 · The enforcement & update mesh
 
-How a law reaches an act. Every layer below is a DELIVERY stage —
-none of them originates doctrine, and the prose each box links is
-where the rule actually lives.
+![The enforcement and update mesh — the delivery chain from the ambient import to the founder's word, with the denies and summon drawn apart, and the four judgment-only joints named.](atlas/enforcement-mesh.svg)
 
-```mermaid
-flowchart TD
-  IMP["CLAUDE.md —<br/>the ambient import"] --> REG["the LAWS register — NAME, rule, pointer"]
-  REG --> SK["skills — the procedure, read at act time"]
-  SK --> ST["point-only stubs"]
-  ST --> MRG["the five board-writing stubs —<br/>the ONLY merge allowance"]
-  REG --> HK["three session hooks"]
-  HK --> H1["session-start"]
-  HK --> H2["user-prompt-submit"]
-  HK --> H3["session-end — the crash net"]
-  MRG --> CI
-  H3 --> CI["CI — every PR and main:<br/>seven checks"]
-  CI --> CR["the critic — advisory"]
-  CR --> XR["the external Web review —<br/>no-solo-approval"]
-  XR --> W["THE FOUNDER'S WORD —<br/>the sole merge authority"]
-  DEN["THE DENIES —<br/>ambient permission rails"]
-  SUM["THE SUMMON WORKFLOW —<br/>out of band"]
-  JUD["JUDGMENT ONLY —<br/>four joints, named below"]
-  DEN -.-> SK
-  SUM -.-> IMP
-  CI -.->|"the honest gap"| JUD
-  W -.->|"the honest gap"| JUD
-  classDef gap fill:#4e342e,stroke:#3e2723,color:#ffffff,stroke-dasharray: 5 5
-  classDef ambient fill:#37474f,stroke:#263238,color:#ffffff
-  class JUD gap
-  class DEN,SUM ambient
-```
+How a law reaches an act. Every stage is a DELIVERY stage — none
+of them originates doctrine, and the prose each box links is where
+the rule actually lives.
 
 DRAFT-PR-AT-BIRTH IS WHAT MAKES CI UNIVERSAL: the workflow fires
 on pull requests and on main, so a branch would be uncovered
@@ -294,13 +216,13 @@ branch. CI's seven checks are the same commands the verification
 loop runs, and [ship §1](skills/ship.md#1--preflight) is their one
 home.
 
-TWO BOXES ARE NOT STAGES, and are drawn apart from the cascade
-for that reason: THE DENIES are ambient permission rails
-evaluated at every tool call in every session — force-push, hard
-reset, `rm -rf`, repo delete, admin and cross-repo merges — and
-THE SUMMON WORKFLOW is out-of-band, a push to the reserved
-`ops/summon` branch that is a cockpit's self-rescue when its
-connectors are dead, never a step in delivering a law to an act.
+TWO CARDS ARE NOT STAGES, and sit in a lane of their own for that
+reason: THE DENIES are ambient permission rails evaluated at every
+tool call in every session — force-push, hard reset, `rm -rf`,
+repo delete, admin and cross-repo merges — and THE SUMMON
+WORKFLOW is out-of-band, a push to the reserved `ops/summon`
+branch that is a cockpit's self-rescue when its connectors are
+dead, never a step in delivering a law to an act.
 
 THE DASHED BOX IS NOT DECORATION, and its FOUR JOINTS are these:
 
@@ -334,24 +256,13 @@ Boxes: [the ambient import and the session hooks — HOME §The files](HOME.md#t
 
 ## 8 · A sitting
 
-The ordinary ground day, end to end. Seven diagrams above draw
+![A sitting — the ordinary ground day from the session-start hook through pickup, the work loop, handoff and the close-lock, to a closed session and the next sitting.](atlas/sitting.svg)
+
+The ordinary ground day, end to end. Seven figures above draw
 tasks, lanes, seats and surfaces; this one draws the CONTAINER
 they happen inside — one sitting, opened by a hook and closed by a
-ritual. The work loop in the middle is diagram 1, run once per
+ritual. The work loop in the middle is figure 1, run once per
 task.
-
-```mermaid
-flowchart TD
-  HK["the session-start hook —<br/>pull · the board · close-lock cleared"] --> PU["pickup —<br/>the claim + the sit-down"]
-  PU --> WORK["the work loop —<br/>each task runs diagram 1"]
-  WORK --> HF["handoff FULL —<br/>capture · park · repaint"]
-  HF --> CR["the close report —<br/>then the close-lock is written"]
-  CR -->|"the prompt hook stamps it"| CLS["the closed session —<br/>read-only, never dead"]
-  CLS --> NX["the next sitting"]
-  NX --> HK
-  WORK -.->|"a weld ships"| QT["QUIET — ship's tail:<br/>a board repaint, no close"]
-  QT -.->|"returns to the sitting"| WORK
-```
 
 TWO ENDINGS ARE NOT DRAWN HERE because they are not ground
 endings: LIFTOFF closes the sitting by handing the baton to a

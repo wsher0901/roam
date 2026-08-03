@@ -1,0 +1,165 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 808" width="740" height="808" font-family="sans-serif" role="img" aria-label="The enforcement and update mesh — the delivery chain from the ambient import to the founder's word, with the denies and summon drawn apart, and the four judgment-only joints named.">
+  <defs>
+    <marker id="tip" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L8 4 L0 8 Z" fill="#8A887F"/>
+    </marker>
+    <marker id="tipd" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L8 4 L0 8 Z" fill="#B3B0A5"/>
+    </marker>
+  </defs>
+
+  <rect class="panel" x="0.5" y="0.5" width="739" height="807" rx="16" fill="#FAF9F5" stroke="#E5E2D9"/>
+
+  <text x="28" y="36" font-size="17" font-weight="600" fill="#3D3D3A">The enforcement &amp; update mesh</text>
+  <text x="28" y="55" font-size="11" fill="#8A887F">How a law reaches an act — every stage below DELIVERS doctrine; none of them originates it.</text>
+
+  <rect class="lane" x="24" y="98" width="200" height="634" rx="10" fill="#F1EFE6" opacity="0.6"/>
+  <rect class="lane" x="224" y="98" width="200" height="634" rx="10" fill="#F3F1E9" opacity="0.7"/>
+  <rect class="lane" x="424" y="98" width="144" height="634" rx="10" fill="#FCF4E4" opacity="0.55"/>
+  <rect class="lane" x="568" y="98" width="148" height="634" rx="10" fill="#F1EFE6" opacity="0.45"/>
+
+  <g font-size="11" font-weight="600" letter-spacing="1" text-anchor="middle">
+    <text x="124" y="82" fill="#57554E">THE DOCUMENTS</text>
+    <text x="324" y="82" fill="#57554E">THE MACHINE</text>
+    <text x="496" y="82" fill="#854F0B">THE HUMAN GATE</text>
+    <text x="642" y="82" fill="#57554E">DRAWN APART</text>
+  </g>
+  <rect x="94" y="88" width="60" height="3" rx="1.5" fill="#B3B0A5"/>
+  <rect x="294" y="88" width="60" height="3" rx="1.5" fill="#B3B0A5"/>
+  <rect x="466" y="88" width="60" height="3" rx="1.5" fill="#EF9F27"/>
+  <rect x="612" y="88" width="60" height="3" rx="1.5" fill="#B3B0A5"/>
+
+  <g class="card">
+    <rect x="36" y="112" width="176" height="48" rx="10" fill="#FFFFFF" stroke="#E5E2D9"/>
+    <circle cx="52" cy="136" r="8.5" fill="#F3F1E9"/>
+    <text x="52" y="139.5" font-size="10" font-weight="600" fill="#57554E" text-anchor="middle">1</text>
+    <text x="68" y="133" font-size="12.5" font-weight="600" fill="#3D3D3A">CLAUDE.md</text>
+    <text x="68" y="148" font-size="10" fill="#8A887F">the ambient import</text>
+  </g>
+  <line x1="124" y1="160" x2="124" y2="172" stroke="#8A887F" stroke-width="1.3" marker-end="url(#tip)"/>
+  <g class="card">
+    <rect x="36" y="176" width="176" height="48" rx="10" fill="#FFFFFF" stroke="#E5E2D9"/>
+    <circle cx="52" cy="200" r="8.5" fill="#F3F1E9"/>
+    <text x="52" y="203.5" font-size="10" font-weight="600" fill="#57554E" text-anchor="middle">2</text>
+    <text x="68" y="197" font-size="12.5" font-weight="600" fill="#3D3D3A">the LAWS register</text>
+    <text x="68" y="212" font-size="10" fill="#8A887F">NAME · rule · pointer</text>
+  </g>
+  <line x1="124" y1="224" x2="124" y2="236" stroke="#8A887F" stroke-width="1.3" marker-end="url(#tip)"/>
+  <g class="card">
+    <rect x="36" y="240" width="176" height="48" rx="10" fill="#FFFFFF" stroke="#E5E2D9"/>
+    <circle cx="52" cy="264" r="8.5" fill="#F3F1E9"/>
+    <text x="52" y="267.5" font-size="10" font-weight="600" fill="#57554E" text-anchor="middle">3</text>
+    <text x="68" y="261" font-size="12.5" font-weight="600" fill="#3D3D3A">skills</text>
+    <text x="68" y="276" font-size="10" fill="#8A887F">read at act time</text>
+  </g>
+  <line x1="124" y1="288" x2="124" y2="300" stroke="#8A887F" stroke-width="1.3" marker-end="url(#tip)"/>
+  <g class="card">
+    <rect x="36" y="304" width="176" height="48" rx="10" fill="#FFFFFF" stroke="#E5E2D9"/>
+    <circle cx="52" cy="328" r="8.5" fill="#F3F1E9"/>
+    <text x="52" y="331.5" font-size="10" font-weight="600" fill="#57554E" text-anchor="middle">4</text>
+    <text x="68" y="325" font-size="12.5" font-weight="600" fill="#3D3D3A">point-only stubs</text>
+    <text x="68" y="340" font-size="10" fill="#8A887F">cannot drift</text>
+  </g>
+  <line x1="124" y1="352" x2="124" y2="364" stroke="#8A887F" stroke-width="1.3" marker-end="url(#tip)"/>
+  <g class="card">
+    <rect x="36" y="368" width="176" height="48" rx="10" fill="#FFFFFF" stroke="#E5E2D9"/>
+    <circle cx="52" cy="392" r="8.5" fill="#F3F1E9"/>
+    <text x="52" y="395.5" font-size="10" font-weight="600" fill="#57554E" text-anchor="middle">5</text>
+    <text x="68" y="389" font-size="12.5" font-weight="600" fill="#3D3D3A">five board-writers</text>
+    <text x="68" y="404" font-size="10" fill="#8A887F">the ONLY merge allowance</text>
+  </g>
+
+  <line x1="212" y1="200" x2="232" y2="200" stroke="#8A887F" stroke-width="1.3" marker-end="url(#tip)"/>
+  <g class="card">
+    <rect x="236" y="176" width="176" height="48" rx="10" fill="#FFFFFF" stroke="#E5E2D9"/>
+    <circle cx="252" cy="200" r="8.5" fill="#F3F1E9"/>
+    <text x="252" y="203.5" font-size="10" font-weight="600" fill="#57554E" text-anchor="middle">6</text>
+    <text x="268" y="197" font-size="12.5" font-weight="600" fill="#3D3D3A">the session hooks</text>
+    <text x="268" y="212" font-size="10" fill="#8A887F">three, each one job</text>
+  </g>
+  <path d="M324 224 L324 236" fill="none" stroke="#8A887F" stroke-width="1.3" marker-end="url(#tip)"/>
+  <g class="card">
+    <rect x="236" y="240" width="176" height="32" rx="10" fill="#FFFFFF" stroke="#E5E2D9"/>
+    <text x="324" y="260" font-size="11.5" font-weight="600" fill="#3D3D3A" text-anchor="middle">session-start</text>
+  </g>
+  <g class="card">
+    <rect x="236" y="280" width="176" height="32" rx="10" fill="#FFFFFF" stroke="#E5E2D9"/>
+    <text x="324" y="300" font-size="11.5" font-weight="600" fill="#3D3D3A" text-anchor="middle">user-prompt-submit</text>
+  </g>
+  <g class="card">
+    <rect x="236" y="320" width="176" height="32" rx="10" fill="#FFFFFF" stroke="#E5E2D9"/>
+    <text x="324" y="340" font-size="11.5" font-weight="600" fill="#3D3D3A" text-anchor="middle">session-end</text>
+  </g>
+
+  <path d="M212 392 L224 392 L224 456 L232 456" fill="none" stroke="#8A887F" stroke-width="1.3" marker-end="url(#tip)"/>
+  <line x1="324" y1="352" x2="324" y2="428" stroke="#8A887F" stroke-width="1.3" marker-end="url(#tip)"/>
+  <g class="card">
+    <rect x="236" y="432" width="176" height="48" rx="10" fill="#FFFFFF" stroke="#E5E2D9"/>
+    <circle cx="252" cy="456" r="8.5" fill="#F3F1E9"/>
+    <text x="252" y="459.5" font-size="10" font-weight="600" fill="#57554E" text-anchor="middle">7</text>
+    <text x="268" y="453" font-size="12.5" font-weight="600" fill="#3D3D3A">CI — PR and main</text>
+    <text x="268" y="468" font-size="10" fill="#8A887F">seven checks</text>
+  </g>
+  <line x1="324" y1="480" x2="324" y2="492" stroke="#8A887F" stroke-width="1.3" marker-end="url(#tip)"/>
+  <g class="card">
+    <rect x="236" y="496" width="176" height="48" rx="10" fill="#FFFFFF" stroke="#E5E2D9"/>
+    <circle cx="252" cy="520" r="8.5" fill="#F3F1E9"/>
+    <text x="252" y="523.5" font-size="10" font-weight="600" fill="#57554E" text-anchor="middle">8</text>
+    <text x="268" y="517" font-size="12.5" font-weight="600" fill="#3D3D3A">the critic</text>
+    <text x="268" y="532" font-size="10" fill="#8A887F">advisory, never halts</text>
+  </g>
+
+  <path d="M412 520 L418 520 L418 584 L430 584" fill="none" stroke="#8A887F" stroke-width="1.3" marker-end="url(#tip)"/>
+  <g class="card">
+    <rect x="434" y="560" width="124" height="60" rx="10" fill="#FFFFFF" stroke="#B5E4D2"/>
+    <circle cx="449" cy="575" r="8.5" fill="#E1F5EE"/>
+    <text x="449" y="578.5" font-size="10" font-weight="600" fill="#0F6E56" text-anchor="middle">9</text>
+    <text x="496" y="596" font-size="12.5" font-weight="600" fill="#3D3D3A" text-anchor="middle">the external</text>
+    <text x="496" y="609" font-size="12.5" font-weight="600" fill="#3D3D3A" text-anchor="middle">Web review</text>
+  </g>
+  <text x="496" y="634" font-size="9" fill="#B3B0A5" text-anchor="middle">no-solo-approval</text>
+  <line x1="496" y1="640" x2="496" y2="656" stroke="#8A887F" stroke-width="1.3" marker-end="url(#tip)"/>
+  <g class="card">
+    <rect x="434" y="660" width="124" height="60" rx="10" fill="#FFFFFF" stroke="#EAD3A2"/>
+    <circle cx="449" cy="675" r="8.5" fill="#FAEEDA"/>
+    <text x="449" y="678.5" font-size="10" font-weight="600" fill="#854F0B" text-anchor="middle">10</text>
+    <text x="496" y="696" font-size="12.5" font-weight="600" fill="#3D3D3A" text-anchor="middle">YOUR WORD</text>
+    <text x="496" y="710" font-size="10" fill="#8A887F" text-anchor="middle">the sole authority</text>
+  </g>
+
+  <g class="card">
+    <rect x="578" y="240" width="128" height="48" rx="10" fill="#FFFFFF" stroke="#E5E2D9"/>
+    <text x="642" y="262" font-size="12.5" font-weight="600" fill="#3D3D3A" text-anchor="middle">THE DENIES</text>
+    <text x="642" y="277" font-size="10" fill="#8A887F" text-anchor="middle">ambient rails</text>
+  </g>
+  <text x="642" y="302" font-size="9" fill="#B3B0A5" text-anchor="middle">force-push · hard reset</text>
+  <text x="642" y="313" font-size="9" fill="#B3B0A5" text-anchor="middle">rm -rf · repo delete</text>
+  <text x="642" y="324" font-size="9" fill="#B3B0A5" text-anchor="middle">admin + cross-repo merges</text>
+  <path d="M578 264 L216 264" fill="none" stroke="#B3B0A5" stroke-width="1.3" stroke-dasharray="4 3" marker-end="url(#tipd)"/>
+  <text x="642" y="342" font-size="9" fill="#B3B0A5" text-anchor="middle">every tool call, every session</text>
+
+  <g class="card">
+    <rect x="578" y="368" width="128" height="48" rx="10" fill="#FFFFFF" stroke="#E5E2D9"/>
+    <text x="642" y="390" font-size="12.5" font-weight="600" fill="#3D3D3A" text-anchor="middle">THE SUMMON</text>
+    <text x="642" y="405" font-size="10" fill="#8A887F" text-anchor="middle">out of band</text>
+  </g>
+  <path d="M578 392 L570 392 L570 136 L216 136" fill="none" stroke="#B3B0A5" stroke-width="1.3" stroke-dasharray="4 3" marker-end="url(#tipd)"/>
+  <text x="642" y="430" font-size="9" fill="#B3B0A5" text-anchor="middle">a push to ops/summon —</text>
+  <text x="642" y="441" font-size="9" fill="#B3B0A5" text-anchor="middle">the cockpit's self-rescue</text>
+
+  <g class="card">
+    <rect x="578" y="592" width="128" height="60" rx="10" fill="#F3F1E9" stroke="#B3B0A5" stroke-dasharray="5 4"/>
+    <text x="642" y="616" font-size="12.5" font-weight="600" fill="#3D3D3A" text-anchor="middle">JUDGMENT ONLY</text>
+    <text x="642" y="632" font-size="10" fill="#8A887F" text-anchor="middle">four joints, named</text>
+    <text x="642" y="645" font-size="10" fill="#8A887F" text-anchor="middle">in the prose below</text>
+  </g>
+  <path d="M412 456 L420 456 L420 610 L574 610" fill="none" stroke="#B3B0A5" stroke-width="1.3" stroke-dasharray="4 3" marker-end="url(#tipd)"/>
+  <path d="M558 690 L566 690 L566 640 L574 640" fill="none" stroke="#B3B0A5" stroke-width="1.3" stroke-dasharray="4 3" marker-end="url(#tipd)"/>
+  <g class="chip">
+    <rect x="440" y="530" width="122" height="18" rx="9" fill="#FFFFFF" stroke="#B3B0A5"/>
+    <text x="501" y="542.5" font-size="10" font-family="monospace" fill="#57554E" text-anchor="middle">the honest gap</text>
+  </g>
+
+  <text x="28" y="756" font-size="9.5" fill="#B3B0A5">Draft-PR-at-birth is what makes CI universal — the workflow fires on pull requests and on main, so the two laws interlock.</text>
+  <text x="28" y="776" font-size="9.5" fill="#B3B0A5">Lane = who delivers the stage · dashed = not a stage at all · the dashed box marks where nothing mechanical is watching.</text>
+</svg>

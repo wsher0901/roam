@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 460" width="740" height="460" font-family="sans-serif" role="img" aria-label="The surfaces — who may write main, drawn as four writer lanes reaching up into one bookkeeping band.">
+  <defs>
+    <marker id="tip" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L8 4 L0 8 Z" fill="#8A887F"/>
+    </marker>
+    <marker id="tipd" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L8 4 L0 8 Z" fill="#B3B0A5"/>
+    </marker>
+  </defs>
+
+  <rect class="panel" x="0.5" y="0.5" width="739" height="459" rx="16" fill="#FAF9F5" stroke="#E5E2D9"/>
+
+  <text x="28" y="36" font-size="17" font-weight="600" fill="#3D3D3A">The surfaces</text>
+  <text x="28" y="55" font-size="11" fill="#8A887F">Who may write main — one baton-holder commands, and every merge waits for your word.</text>
+
+  <g class="card">
+    <rect x="24" y="72" width="692" height="42" rx="10" fill="#FFFFFF" stroke="#E5E2D9"/>
+    <text x="370" y="98" font-size="12.5" font-weight="600" fill="#3D3D3A" text-anchor="middle">main — the bookkeeping, and the only thing a merge can touch</text>
+  </g>
+  <g class="badge">
+    <rect x="24" y="122" width="164" height="24" rx="8" fill="#F3F1E9"/>
+    <text x="106" y="138" font-size="10" font-family="monospace" fill="#57554E" text-anchor="middle">DASHBOARD</text>
+  </g>
+  <g class="badge">
+    <rect x="200" y="122" width="164" height="24" rx="8" fill="#F3F1E9"/>
+    <text x="282" y="138" font-size="10" font-family="monospace" fill="#57554E" text-anchor="middle">IDEAS</text>
+  </g>
+  <g class="badge">
+    <rect x="376" y="122" width="164" height="24" rx="8" fill="#F3F1E9"/>
+    <text x="458" y="138" font-size="10" font-family="monospace" fill="#57554E" text-anchor="middle">ROADMAP ticks</text>
+  </g>
+  <g class="badge">
+    <rect x="552" y="122" width="164" height="24" rx="8" fill="#F3F1E9"/>
+    <text x="634" y="138" font-size="10" font-family="monospace" fill="#57554E" text-anchor="middle">record/</text>
+  </g>
+
+  <line x1="122" y1="238" x2="122" y2="152" stroke="#8A887F" stroke-width="1.3" marker-end="url(#tip)"/>
+  <g class="chip">
+    <rect x="68" y="188" width="108" height="18" rx="9" fill="#EEEDFE" stroke="#7F77DD"/>
+    <text x="122" y="200.5" font-size="10" font-family="monospace" fill="#534AB7" text-anchor="middle">rituals own it</text>
+  </g>
+
+  <line x1="290" y1="238" x2="290" y2="152" stroke="#B3B0A5" stroke-width="1.3" stroke-dasharray="4 3" marker-end="url(#tipd)"/>
+  <g class="chip">
+    <rect x="250" y="212" width="80" height="18" rx="9" fill="#FFFFFF" stroke="#B3B0A5"/>
+    <text x="290" y="224.5" font-size="10" font-family="monospace" fill="#57554E" text-anchor="middle">never</text>
+  </g>
+  <line x1="352" y1="238" x2="352" y2="152" stroke="#8A887F" stroke-width="1.3" marker-end="url(#tip)"/>
+  <g class="chip">
+    <rect x="290" y="180" width="124" height="18" rx="9" fill="#FFFFFF" stroke="#B3B0A5"/>
+    <text x="352" y="192.5" font-size="10" font-family="monospace" fill="#57554E" text-anchor="middle">only at THE GATE</text>
+  </g>
+
+  <line x1="486" y1="238" x2="486" y2="152" stroke="#B3B0A5" stroke-width="1.3" stroke-dasharray="4 3" marker-end="url(#tipd)"/>
+  <g class="chip">
+    <rect x="428" y="212" width="116" height="18" rx="9" fill="#FFFFFF" stroke="#B3B0A5"/>
+    <text x="486" y="224.5" font-size="10" font-family="monospace" fill="#57554E" text-anchor="middle">never</text>
+  </g>
+
+  <line x1="636" y1="238" x2="636" y2="152" stroke="#B3B0A5" stroke-width="1.3" stroke-dasharray="4 3" marker-end="url(#tipd)"/>
+  <g class="chip">
+    <rect x="578" y="212" width="116" height="18" rx="9" fill="#E1F5EE" stroke="#B5E4D2"/>
+    <text x="636" y="224.5" font-size="10" font-family="monospace" fill="#0F6E56" text-anchor="middle">no-write</text>
+  </g>
+
+  <rect class="lane" x="24" y="238" width="196" height="160" rx="10" fill="#F2F1FB" opacity="0.55"/>
+  <rect class="lane" x="220" y="238" width="196" height="160" rx="10" fill="#F3F1E9" opacity="0.7"/>
+  <rect class="lane" x="416" y="238" width="140" height="160" rx="10" fill="#F1EFE6" opacity="0.6"/>
+  <rect class="lane" x="556" y="238" width="160" height="160" rx="10" fill="#E9F7F1" opacity="0.55"/>
+
+  <g font-size="11" font-weight="600" letter-spacing="1" text-anchor="middle">
+    <text x="122" y="258" fill="#534AB7">THE BATON-HOLDER</text>
+    <text x="318" y="258" fill="#57554E">LANES</text>
+    <text x="486" y="258" fill="#57554E">AGENT TEAMS</text>
+    <text x="636" y="258" fill="#0F6E56">WEB &amp; DESIGN</text>
+  </g>
+  <rect x="92" y="264" width="60" height="3" rx="1.5" fill="#7F77DD"/>
+  <rect x="288" y="264" width="60" height="3" rx="1.5" fill="#B3B0A5"/>
+  <rect x="456" y="264" width="60" height="3" rx="1.5" fill="#B3B0A5"/>
+  <rect x="606" y="264" width="60" height="3" rx="1.5" fill="#5DCAA5"/>
+
+  <g class="card">
+    <rect x="36" y="280" width="172" height="44" rx="10" fill="#FFFFFF" stroke="#E5E2D9"/>
+    <text x="50" y="300" font-size="12.5" font-weight="600" fill="#3D3D3A">control tower</text>
+    <text x="50" y="314" font-size="10" fill="#8A887F">the desk seat</text>
+  </g>
+  <g class="card">
+    <rect x="36" y="332" width="172" height="44" rx="10" fill="#FFFFFF" stroke="#E5E2D9"/>
+    <text x="50" y="352" font-size="12.5" font-weight="600" fill="#3D3D3A">the cockpit</text>
+    <text x="50" y="366" font-size="10" fill="#8A887F">the same role, a cloud seat</text>
+  </g>
+
+  <g class="card">
+    <rect x="232" y="280" width="156" height="44" rx="10" fill="#FFFFFF" stroke="#E5E2D9"/>
+    <text x="246" y="300" font-size="12.5" font-weight="600" fill="#3D3D3A">lanes</text>
+    <text x="246" y="314" font-size="10" fill="#8A887F">workers on benches</text>
+  </g>
+  <g class="badge">
+    <rect x="232" y="336" width="156" height="24" rx="8" fill="#F3F1E9"/>
+    <text x="310" y="352" font-size="10" font-family="monospace" fill="#57554E" text-anchor="middle">its own branch</text>
+  </g>
+  <text x="310" y="374" font-size="9" fill="#B3B0A5" text-anchor="middle">own diary · PR speech · nothing else</text>
+  <path d="M388 348 L402 348 L402 240" fill="none" stroke="#8A887F" stroke-width="1.3"/>
+
+  <g class="card">
+    <rect x="428" y="280" width="116" height="44" rx="10" fill="#FFFFFF" stroke="#E5E2D9"/>
+    <text x="486" y="300" font-size="12.5" font-weight="600" fill="#3D3D3A" text-anchor="middle">agent teams</text>
+    <text x="486" y="314" font-size="10" fill="#8A887F" text-anchor="middle">explore + review</text>
+  </g>
+  <text x="486" y="342" font-size="9" fill="#B3B0A5" text-anchor="middle">one sitting, at a ground</text>
+  <text x="486" y="353" font-size="9" fill="#B3B0A5" text-anchor="middle">seat — never a bench,</text>
+  <text x="486" y="364" font-size="9" fill="#B3B0A5" text-anchor="middle">a merge, or a ritual</text>
+
+  <g class="card">
+    <rect x="568" y="280" width="136" height="44" rx="10" fill="#FFFFFF" stroke="#B5E4D2"/>
+    <text x="636" y="300" font-size="12.5" font-weight="600" fill="#3D3D3A" text-anchor="middle">Claude Web</text>
+    <text x="636" y="314" font-size="10" fill="#8A887F" text-anchor="middle">the external review</text>
+  </g>
+  <g class="card">
+    <rect x="568" y="332" width="136" height="44" rx="10" fill="#FFFFFF" stroke="#B5E4D2"/>
+    <text x="636" y="352" font-size="12.5" font-weight="600" fill="#3D3D3A" text-anchor="middle">Claude Design</text>
+    <text x="636" y="366" font-size="10" fill="#8A887F" text-anchor="middle">extracted tokens only</text>
+  </g>
+
+  <text x="28" y="420" font-size="9.5" fill="#B3B0A5">A lane's branch reaches main only at THE GATE, welded by the baton-holder on your word — the sole carve-out is the ritual micro-PR.</text>
+  <text x="28" y="440" font-size="9.5" fill="#B3B0A5">Lane = who is acting · solid arrow = it may write · dashed arrow = it may not · chip = the rule on that crossing.</text>
+</svg>

@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 400" width="740" height="400" font-family="sans-serif" role="img" aria-label="State surfaces — four stores of truth feeding one rendered board, with git outranking it on any disagreement.">
+  <defs>
+    <marker id="tip" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L8 4 L0 8 Z" fill="#8A887F"/>
+    </marker>
+    <marker id="tipd" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L8 4 L0 8 Z" fill="#B3B0A5"/>
+    </marker>
+  </defs>
+
+  <rect class="panel" x="0.5" y="0.5" width="739" height="399" rx="16" fill="#FAF9F5" stroke="#E5E2D9"/>
+
+  <text x="28" y="36" font-size="17" font-weight="600" fill="#3D3D3A">State surfaces</text>
+  <text x="28" y="55" font-size="11" fill="#8A887F">Status is derived, never carried — the board is a rendering of the truth, not the truth.</text>
+
+  <rect class="lane" x="24" y="98" width="173" height="126" rx="10" fill="#F1EFE6" opacity="0.6"/>
+  <rect class="lane" x="197" y="98" width="173" height="126" rx="10" fill="#F1EFE6" opacity="0.6"/>
+  <rect class="lane" x="370" y="98" width="173" height="126" rx="10" fill="#F1EFE6" opacity="0.6"/>
+  <rect class="lane" x="543" y="98" width="173" height="126" rx="10" fill="#F1EFE6" opacity="0.6"/>
+
+  <g font-size="11" font-weight="600" letter-spacing="1" text-anchor="middle">
+    <text x="110" y="82" fill="#57554E">GIT &amp; ORIGIN</text>
+    <text x="283" y="82" fill="#57554E">ROADMAP</text>
+    <text x="456" y="82" fill="#57554E">THE MEMORIES</text>
+    <text x="629" y="82" fill="#57554E">record/history</text>
+  </g>
+  <rect x="80" y="88" width="60" height="3" rx="1.5" fill="#B3B0A5"/>
+  <rect x="253" y="88" width="60" height="3" rx="1.5" fill="#B3B0A5"/>
+  <rect x="426" y="88" width="60" height="3" rx="1.5" fill="#B3B0A5"/>
+  <rect x="599" y="88" width="60" height="3" rx="1.5" fill="#B3B0A5"/>
+
+  <g class="card">
+    <rect x="38" y="112" width="145" height="60" rx="10" fill="#FFFFFF" stroke="#E5E2D9"/>
+    <circle cx="53" cy="127" r="8.5" fill="#F3F1E9"/>
+    <text x="53" y="130.5" font-size="10" font-weight="600" fill="#57554E" text-anchor="middle">1</text>
+    <text x="110" y="148" font-size="12.5" font-weight="600" fill="#3D3D3A" text-anchor="middle">git and origin</text>
+    <text x="110" y="162" font-size="10" fill="#8A887F" text-anchor="middle">the heartbeat</text>
+  </g>
+  <text x="110" y="188" font-size="9" fill="#B3B0A5" text-anchor="middle">branches · commits · PRs</text>
+
+  <g class="card">
+    <rect x="211" y="112" width="145" height="60" rx="10" fill="#FFFFFF" stroke="#E5E2D9"/>
+    <circle cx="226" cy="127" r="8.5" fill="#F3F1E9"/>
+    <text x="226" y="130.5" font-size="10" font-weight="600" fill="#57554E" text-anchor="middle">2</text>
+    <text x="283" y="148" font-size="12.5" font-weight="600" fill="#3D3D3A" text-anchor="middle">the checkboxes</text>
+    <text x="283" y="162" font-size="10" fill="#8A887F" text-anchor="middle">the only task state</text>
+  </g>
+  <text x="283" y="188" font-size="9" fill="#B3B0A5" text-anchor="middle">stored once · ticked only by ship</text>
+
+  <g class="card">
+    <rect x="384" y="112" width="145" height="60" rx="10" fill="#FFFFFF" stroke="#E5E2D9"/>
+    <circle cx="399" cy="127" r="8.5" fill="#F3F1E9"/>
+    <text x="399" y="130.5" font-size="10" font-weight="600" fill="#57554E" text-anchor="middle">3</text>
+    <text x="456" y="148" font-size="12.5" font-weight="600" fill="#3D3D3A" text-anchor="middle">Status lines</text>
+    <text x="456" y="162" font-size="10" fill="#8A887F" text-anchor="middle">the handshake surface</text>
+  </g>
+  <text x="456" y="188" font-size="9" fill="#B3B0A5" text-anchor="middle">one state, from the locked vocabulary</text>
+
+  <g class="card">
+    <rect x="557" y="112" width="145" height="60" rx="10" fill="#FFFFFF" stroke="#E5E2D9"/>
+    <circle cx="572" cy="127" r="8.5" fill="#F3F1E9"/>
+    <text x="572" y="130.5" font-size="10" font-weight="600" fill="#57554E" text-anchor="middle">4</text>
+    <text x="629" y="148" font-size="12.5" font-weight="600" fill="#3D3D3A" text-anchor="middle">the frontmatter</text>
+    <text x="629" y="162" font-size="10" fill="#8A887F" text-anchor="middle">shipped stamps</text>
+  </g>
+  <text x="629" y="188" font-size="9" fill="#B3B0A5" text-anchor="middle">and the PR numbers</text>
+
+  <line x1="110" y1="200" x2="110" y2="284" stroke="#8A887F" stroke-width="1.3" marker-end="url(#tip)"/>
+  <line x1="283" y1="200" x2="283" y2="284" stroke="#8A887F" stroke-width="1.3" marker-end="url(#tip)"/>
+  <line x1="456" y1="200" x2="456" y2="284" stroke="#8A887F" stroke-width="1.3" marker-end="url(#tip)"/>
+  <line x1="629" y1="200" x2="629" y2="284" stroke="#8A887F" stroke-width="1.3" marker-end="url(#tip)"/>
+  <text x="370" y="236" font-size="9" font-weight="600" letter-spacing="0.8" fill="#B3B0A5" text-anchor="middle">COMPUTED AT RENDER TIME — NEVER CARRIED</text>
+
+  <g class="card">
+    <rect x="24" y="290" width="692" height="52" rx="10" fill="#FFFFFF" stroke="#E5E2D9"/>
+    <circle cx="44" cy="316" r="8.5" fill="#F3F1E9"/>
+    <text x="44" y="319.5" font-size="10" font-weight="600" fill="#57554E" text-anchor="middle">5</text>
+    <text x="62" y="312" font-size="12.5" font-weight="600" fill="#3D3D3A">DASHBOARD</text>
+    <text x="62" y="328" font-size="10" fill="#8A887F">rendered wholesale at rituals · stamped with date, ritual and seat · the least authoritative file in the repo</text>
+  </g>
+
+  <path d="M40 290 L32 290 L32 168 L34 168" fill="none" stroke="#B3B0A5" stroke-width="1.3" stroke-dasharray="4 3" marker-end="url(#tipd)"/>
+  <g class="chip">
+    <rect x="36" y="245" width="122" height="18" rx="9" fill="#FFFFFF" stroke="#B3B0A5"/>
+    <text x="97" y="257.5" font-size="10" font-family="monospace" fill="#57554E" text-anchor="middle">git outranks it</text>
+  </g>
+
+  <text x="28" y="374" font-size="9.5" fill="#B3B0A5">Lane = a store of truth · solid arrow = it is read to render the board · dashed = the board loses every disagreement.</text>
+</svg>

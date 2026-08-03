@@ -1,0 +1,217 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 928" width="740" height="928" font-family="sans-serif" role="img" aria-label="The task loop — from a voiced idea to a welded merge, drawn as swimlanes across you, the control tower, checks and review, and origin.">
+  <defs>
+    <marker id="tip" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L8 4 L0 8 Z" fill="#8A887F"/>
+    </marker>
+    <marker id="tipd" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L8 4 L0 8 Z" fill="#B3B0A5"/>
+    </marker>
+  </defs>
+
+  <rect class="panel" x="0.5" y="0.5" width="739" height="927" rx="16" fill="#FAF9F5" stroke="#E5E2D9"/>
+
+  <text x="28" y="36" font-size="17" font-weight="600" fill="#3D3D3A">The task loop</text>
+  <text x="28" y="55" font-size="11" fill="#8A887F">One task = one branch = one PR — from a voiced idea to a welded merge.</text>
+
+  <rect class="lane" x="24" y="98" width="168" height="796" rx="10" fill="#FCF4E4" opacity="0.55"/>
+  <rect class="lane" x="192" y="98" width="236" height="796" rx="10" fill="#F2F1FB" opacity="0.55"/>
+  <rect class="lane" x="428" y="98" width="156" height="796" rx="10" fill="#E9F7F1" opacity="0.55"/>
+  <rect class="lane" x="584" y="98" width="132" height="796" rx="10" fill="#F1EFE6" opacity="0.6"/>
+
+  <g font-size="11" font-weight="600" letter-spacing="1" text-anchor="middle">
+    <text x="108" y="82" fill="#854F0B">YOU</text>
+    <text x="310" y="82" fill="#534AB7">THE CONTROL TOWER</text>
+    <text x="506" y="82" fill="#0F6E56">CHECKS &amp; REVIEW</text>
+    <text x="650" y="82" fill="#57554E">ORIGIN</text>
+  </g>
+  <rect x="78" y="88" width="60" height="3" rx="1.5" fill="#EF9F27"/>
+  <rect x="280" y="88" width="60" height="3" rx="1.5" fill="#7F77DD"/>
+  <rect x="476" y="88" width="60" height="3" rx="1.5" fill="#5DCAA5"/>
+  <rect x="620" y="88" width="60" height="3" rx="1.5" fill="#B3B0A5"/>
+
+  <text x="34" y="110" font-size="9" font-weight="600" letter-spacing="0.8" fill="#B3B0A5">INTAKE</text>
+
+  <g class="card">
+    <rect x="38" y="114" width="140" height="52" rx="10" fill="#FFFFFF" stroke="#E5E2D9"/>
+    <circle cx="53" cy="129" r="8.5" fill="#FAEEDA"/>
+    <text x="53" y="132.5" font-size="10" font-weight="600" fill="#854F0B" text-anchor="middle">1</text>
+    <text x="108" y="150" font-size="12.5" font-weight="600" fill="#3D3D3A" text-anchor="middle">a voiced idea</text>
+    <text x="108" y="162" font-size="10" fill="#8A887F" text-anchor="middle">or a defect</text>
+  </g>
+
+  <path d="M108 166 L108 199 L202 199" fill="none" stroke="#8A887F" stroke-width="1.3" marker-end="url(#tip)"/>
+  <g class="chip">
+    <rect x="112" y="171" width="108" height="18" rx="9" fill="#FAEEDA" stroke="#EAD3A2"/>
+    <text x="166" y="183.5" font-size="10" font-family="monospace" fill="#854F0B" text-anchor="middle">entry contract</text>
+  </g>
+  <g class="card">
+    <rect x="206" y="176" width="208" height="46" rx="10" fill="#FFFFFF" stroke="#E5E2D9"/>
+    <circle cx="222" cy="199" r="8.5" fill="#EEEDFE"/>
+    <text x="222" y="202.5" font-size="10" font-weight="600" fill="#534AB7" text-anchor="middle">2</text>
+    <text x="238" y="196" font-size="12.5" font-weight="600" fill="#3D3D3A">one dated IDEAS line</text>
+    <text x="238" y="211" font-size="10" fill="#8A887F">the only inbox, unasked</text>
+  </g>
+  <line x1="414" y1="199" x2="588" y2="199" stroke="#B3B0A5" stroke-width="1.3" stroke-dasharray="4 3" marker-end="url(#tipd)"/>
+  <g class="badge">
+    <rect x="592" y="188" width="116" height="22" rx="8" fill="#F3F1E9"/>
+    <text x="650" y="203" font-size="10" font-family="monospace" fill="#57554E" text-anchor="middle">docs/IDEAS.md</text>
+  </g>
+
+  <line x1="310" y1="222" x2="310" y2="234" stroke="#8A887F" stroke-width="1.3" marker-end="url(#tip)"/>
+  <g class="card">
+    <rect x="206" y="238" width="208" height="46" rx="10" fill="#FFFFFF" stroke="#E5E2D9"/>
+    <circle cx="222" cy="261" r="8.5" fill="#EEEDFE"/>
+    <text x="222" y="264.5" font-size="10" font-weight="600" fill="#534AB7" text-anchor="middle">3</text>
+    <text x="238" y="258" font-size="12.5" font-weight="600" fill="#3D3D3A">decide — the triage</text>
+    <text x="238" y="273" font-size="10" fill="#8A887F">nothing is scope untriaged</text>
+  </g>
+  <line x1="414" y1="261" x2="588" y2="261" stroke="#B3B0A5" stroke-width="1.3" stroke-dasharray="4 3" marker-end="url(#tipd)"/>
+  <g class="badge">
+    <rect x="592" y="250" width="116" height="22" rx="8" fill="#F3F1E9"/>
+    <text x="650" y="265" font-size="10" font-family="monospace" fill="#57554E" text-anchor="middle">a ROADMAP line</text>
+  </g>
+  <text x="650" y="283" font-size="9" fill="#B3B0A5" text-anchor="middle">the only stored task state</text>
+
+  <line x1="310" y1="284" x2="310" y2="296" stroke="#8A887F" stroke-width="1.3" marker-end="url(#tip)"/>
+  <g class="card">
+    <rect x="206" y="300" width="208" height="46" rx="10" fill="#FFFFFF" stroke="#E5E2D9"/>
+    <circle cx="222" cy="323" r="8.5" fill="#EEEDFE"/>
+    <text x="222" y="326.5" font-size="10" font-weight="600" fill="#534AB7" text-anchor="middle">4</text>
+    <text x="238" y="320" font-size="12.5" font-weight="600" fill="#3D3D3A">bench-first birth</text>
+    <text x="238" y="335" font-size="10" fill="#8A887F">from freshly pulled main</text>
+  </g>
+  <line x1="414" y1="323" x2="588" y2="323" stroke="#B3B0A5" stroke-width="1.3" stroke-dasharray="4 3" marker-end="url(#tipd)"/>
+  <g class="badge">
+    <rect x="592" y="303" width="116" height="20" rx="8" fill="#F3F1E9"/>
+    <text x="650" y="317" font-size="9.5" font-family="monospace" fill="#57554E" text-anchor="middle">branch · spec</text>
+  </g>
+  <g class="badge">
+    <rect x="592" y="325" width="116" height="20" rx="8" fill="#F3F1E9"/>
+    <text x="650" y="339" font-size="9.5" font-family="monospace" fill="#57554E" text-anchor="middle">memory · draft PR</text>
+  </g>
+  <text x="650" y="357" font-size="9" fill="#B3B0A5" text-anchor="middle">created — public, minute one</text>
+
+  <line x1="310" y1="346" x2="310" y2="376" stroke="#8A887F" stroke-width="1.3" marker-end="url(#tip)"/>
+  <g class="card">
+    <rect x="206" y="380" width="208" height="46" rx="10" fill="#FFFFFF" stroke="#E5E2D9"/>
+    <circle cx="222" cy="403" r="8.5" fill="#EEEDFE"/>
+    <text x="222" y="406.5" font-size="10" font-weight="600" fill="#534AB7" text-anchor="middle">5</text>
+    <text x="238" y="400" font-size="12.5" font-weight="600" fill="#3D3D3A">work</text>
+    <text x="238" y="415" font-size="10" fill="#8A887F">commits are the heartbeat</text>
+  </g>
+  <path d="M414 394 L498 394 L498 384 L588 384" fill="none" stroke="#B3B0A5" stroke-width="1.3" stroke-dasharray="4 3" marker-end="url(#tipd)"/>
+  <g class="badge">
+    <rect x="592" y="373" width="116" height="22" rx="8" fill="#F3F1E9"/>
+    <text x="650" y="388" font-size="10" font-family="monospace" fill="#57554E" text-anchor="middle">the memory</text>
+  </g>
+  <text x="650" y="406" font-size="9" fill="#B3B0A5" text-anchor="middle">rewritten at trigger moments</text>
+  <path d="M592 418 L498 418 L498 428 L418 428" fill="none" stroke="#B3B0A5" stroke-width="1.3" stroke-dasharray="4 3" marker-end="url(#tipd)"/>
+  <g class="chip">
+    <rect x="459" y="409" width="78" height="18" rx="9" fill="#FFFFFF" stroke="#B3B0A5"/>
+    <text x="498" y="421.5" font-size="10" font-family="monospace" fill="#57554E" text-anchor="middle">↻ rewrite</text>
+  </g>
+
+  <line x1="310" y1="426" x2="310" y2="442" stroke="#8A887F" stroke-width="1.3" marker-end="url(#tip)"/>
+  <g class="card">
+    <rect x="206" y="446" width="208" height="46" rx="10" fill="#FFFFFF" stroke="#E5E2D9"/>
+    <circle cx="222" cy="469" r="8.5" fill="#EEEDFE"/>
+    <text x="222" y="472.5" font-size="10" font-weight="600" fill="#534AB7" text-anchor="middle">6</text>
+    <text x="238" y="466" font-size="12.5" font-weight="600" fill="#3D3D3A">sync, then verify</text>
+    <text x="238" y="481" font-size="10" fill="#8A887F">the loop, then Actions</text>
+  </g>
+  <line x1="414" y1="469" x2="436" y2="469" stroke="#8A887F" stroke-width="1.3" marker-end="url(#tip)"/>
+  <g class="card">
+    <rect x="440" y="443" width="132" height="52" rx="10" fill="#FFFFFF" stroke="#E5E2D9"/>
+    <circle cx="455" cy="458" r="8.5" fill="#F3F1E9"/>
+    <text x="455" y="461.5" font-size="10" font-weight="600" fill="#57554E" text-anchor="middle">7</text>
+    <text x="506" y="479" font-size="12.5" font-weight="600" fill="#3D3D3A" text-anchor="middle">Actions green</text>
+    <text x="506" y="491" font-size="10" fill="#8A887F" text-anchor="middle">on the pushed head</text>
+  </g>
+
+  <line x1="506" y1="495" x2="506" y2="505" stroke="#8A887F" stroke-width="1.3" marker-end="url(#tip)"/>
+  <g class="card">
+    <rect x="440" y="509" width="132" height="52" rx="10" fill="#FFFFFF" stroke="#E5E2D9"/>
+    <circle cx="455" cy="524" r="8.5" fill="#F3F1E9"/>
+    <text x="455" y="527.5" font-size="10" font-weight="600" fill="#57554E" text-anchor="middle">8</text>
+    <text x="506" y="545" font-size="12.5" font-weight="600" fill="#3D3D3A" text-anchor="middle">the critic</text>
+    <text x="506" y="557" font-size="10" fill="#8A887F" text-anchor="middle">advisory only</text>
+  </g>
+
+  <line x1="506" y1="561" x2="506" y2="571" stroke="#8A887F" stroke-width="1.3" marker-end="url(#tip)"/>
+  <g class="card">
+    <rect x="440" y="575" width="132" height="62" rx="10" fill="#FFFFFF" stroke="#B5E4D2"/>
+    <circle cx="455" cy="590" r="8.5" fill="#E1F5EE"/>
+    <text x="455" y="593.5" font-size="10" font-weight="600" fill="#0F6E56" text-anchor="middle">9</text>
+    <text x="506" y="610" font-size="12.5" font-weight="600" fill="#3D3D3A" text-anchor="middle">the external</text>
+    <text x="506" y="623" font-size="12.5" font-weight="600" fill="#3D3D3A" text-anchor="middle">Web review</text>
+    <text x="506" y="633" font-size="9" fill="#8A887F" text-anchor="middle">no-solo-approval</text>
+  </g>
+  <path d="M108 166 L108 606 L436 606" fill="none" stroke="#8A887F" stroke-width="1.3" marker-end="url(#tip)"/>
+  <g class="chip">
+    <rect x="118" y="597" width="72" height="18" rx="9" fill="#E1F5EE" stroke="#B5E4D2"/>
+    <text x="154" y="609.5" font-size="10" font-family="monospace" fill="#0F6E56" text-anchor="middle">"review"</text>
+  </g>
+
+  <path d="M108 615 L108 674 L202 674" fill="none" stroke="#8A887F" stroke-width="1.3" marker-end="url(#tip)"/>
+  <g class="chip">
+    <rect x="112" y="641" width="72" height="18" rx="9" fill="#FAEEDA" stroke="#EAD3A2"/>
+    <text x="148" y="653.5" font-size="10" font-family="monospace" fill="#854F0B" text-anchor="middle">the word</text>
+  </g>
+  <path d="M440 633 L424 633 L424 664 L418 664" fill="none" stroke="#8A887F" stroke-width="1.3" marker-end="url(#tip)"/>
+  <g class="card">
+    <rect x="206" y="651" width="208" height="46" rx="10" fill="#FFFFFF" stroke="#E5E2D9"/>
+    <circle cx="222" cy="674" r="8.5" fill="#EEEDFE"/>
+    <text x="222" y="677.5" font-size="10" font-weight="600" fill="#534AB7" text-anchor="middle">10</text>
+    <text x="238" y="671" font-size="12.5" font-weight="600" fill="#3D3D3A">THE GATE</text>
+    <text x="238" y="686" font-size="10" fill="#8A887F">the review, then the word</text>
+  </g>
+  <text x="38" y="681" font-size="9" fill="#B3B0A5">no word → it waits,</text>
+  <text x="38" y="693" font-size="9" fill="#B3B0A5">never merged</text>
+
+  <line x1="310" y1="697" x2="310" y2="709" stroke="#8A887F" stroke-width="1.3" marker-end="url(#tip)"/>
+  <g class="card">
+    <rect x="206" y="713" width="208" height="46" rx="10" fill="#FFFFFF" stroke="#E5E2D9"/>
+    <circle cx="222" cy="736" r="8.5" fill="#EEEDFE"/>
+    <text x="222" y="739.5" font-size="10" font-weight="600" fill="#534AB7" text-anchor="middle">11</text>
+    <text x="238" y="733" font-size="12.5" font-weight="600" fill="#3D3D3A">the atomic weld</text>
+    <text x="238" y="748" font-size="10" fill="#8A887F">ONE bookkeeping commit</text>
+  </g>
+  <line x1="414" y1="736" x2="588" y2="736" stroke="#B3B0A5" stroke-width="1.3" stroke-dasharray="4 3" marker-end="url(#tipd)"/>
+  <g class="badge">
+    <rect x="592" y="691" width="116" height="19" rx="8" fill="#F3F1E9"/>
+    <text x="650" y="704.5" font-size="9.5" font-family="monospace" fill="#57554E" text-anchor="middle">ROADMAP tick</text>
+  </g>
+  <g class="badge">
+    <rect x="592" y="713" width="116" height="19" rx="8" fill="#F3F1E9"/>
+    <text x="650" y="726.5" font-size="9.5" font-family="monospace" fill="#57554E" text-anchor="middle">memory → history</text>
+  </g>
+  <g class="badge">
+    <rect x="592" y="735" width="116" height="19" rx="8" fill="#F3F1E9"/>
+    <text x="650" y="748.5" font-size="9.5" font-family="monospace" fill="#57554E" text-anchor="middle">spec → shipped</text>
+  </g>
+  <g class="badge">
+    <rect x="592" y="757" width="116" height="19" rx="8" fill="#F3F1E9"/>
+    <text x="650" y="770.5" font-size="9.5" font-family="monospace" fill="#57554E" text-anchor="middle">ledger line</text>
+  </g>
+  <text x="650" y="788" font-size="9" fill="#B3B0A5" text-anchor="middle">the record</text>
+
+  <line x1="310" y1="759" x2="310" y2="771" stroke="#8A887F" stroke-width="1.3" marker-end="url(#tip)"/>
+  <g class="card">
+    <rect x="206" y="775" width="208" height="46" rx="10" fill="#FFFFFF" stroke="#E5E2D9"/>
+    <circle cx="222" cy="798" r="8.5" fill="#EEEDFE"/>
+    <text x="222" y="801.5" font-size="10" font-weight="600" fill="#534AB7" text-anchor="middle">12</text>
+    <text x="238" y="795" font-size="12.5" font-weight="600" fill="#3D3D3A">squash-merge</text>
+    <text x="238" y="810" font-size="10" fill="#8A887F">branch deleted, main pulled</text>
+  </g>
+
+  <line x1="310" y1="821" x2="310" y2="833" stroke="#8A887F" stroke-width="1.3" marker-end="url(#tip)"/>
+  <g class="card">
+    <rect x="206" y="837" width="208" height="46" rx="10" fill="#FFFFFF" stroke="#E5E2D9"/>
+    <circle cx="222" cy="860" r="8.5" fill="#EEEDFE"/>
+    <text x="222" y="863.5" font-size="10" font-weight="600" fill="#534AB7" text-anchor="middle">13</text>
+    <text x="238" y="857" font-size="12.5" font-weight="600" fill="#3D3D3A">ship's QUIET tail</text>
+    <text x="238" y="872" font-size="10" fill="#8A887F">a micro-PR that self-merges</text>
+  </g>
+
+  <text x="28" y="912" font-size="9.5" fill="#B3B0A5">Lane = who owns the act · card = an act · chip = the word that causes the crossing · badge = what lands on origin.</text>
+</svg>
