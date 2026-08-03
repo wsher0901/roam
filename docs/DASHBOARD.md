@@ -6,19 +6,20 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-08-03 · 14:19 by ship's tail · from work PC
+Painted 2026-08-03 · 16:17 by ship's tail · from work PC
 Control tower at the work PC, clean floor — no lanes, no open
 benches · needs-you 1 · git outranks this board. How to read
 it → [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
 
-1. ⚪ RULE THE WIDTH-GATE NUMBER — the [ATLAS](ATLAS.md) rendering
-   law caps a label line at 45 characters, but the inbox line for
-   the future lint says 48; a gate built at 48 would pass labels
-   that break the law. The external review recommends 45. Say
-   which, at any ritual, whenever suits. (since 08-03)
-   → [its line in IDEAS](IDEAS.md)
+1. ⚪ RULE WHETHER THE FIGURE LAW REACHES HOME — [ATLAS](ATLAS.md)
+   is now eight designed SVG figures under
+   [D-073](record/DECISIONS.md#d-073--atlas-becomes-designed-figures),
+   but [HOME](HOME.md) keeps its own small mermaid chooser diagram,
+   deliberately untouched. Whether it converts is a decide-level
+   ruling. Say the word at any ritual, whenever suits. (since 08-03)
+   → [the bench's story](record/history/workshop/definition/atlas-figures.md)
 
 ## The baton
 
@@ -32,9 +33,10 @@ Nothing in flight — the floor is clear.
 ## Working on
 
 - THE WORKSHOP DOCS & INSTRUCTIONS AUDIT — COMPLETE, end to end:
-  the governing docs, all ten skills, the machinery, and ATLAS.
-  Eleven benches, [D-063](record/DECISIONS.md#d-063--response-doctrine-v2-and-web-instructions-v6)
-  through [D-072](record/DECISIONS.md#d-072--the-atlas-no-scroll-law).
+  the governing docs, all ten skills, the machinery, and ATLAS —
+  which now renders as designed figures rather than mermaid.
+  Twelve benches, [D-063](record/DECISIONS.md#d-063--response-doctrine-v2-and-web-instructions-v6)
+  through [D-073](record/DECISIONS.md#d-073--atlas-becomes-designed-figures).
 
 The standing order
 ([D-060](record/DECISIONS.md#d-060--the-three-phase-standing-order)),
@@ -52,15 +54,15 @@ one phase per line:
 
 **Completed**
 
+- Atlas becomes designed figures — eight hand-drawn SVG swimlanes
+  where the lane is the owner; mermaid retired.
+  [#265](https://github.com/wsher0901/roam/pull/265)
 - The Atlas no-scroll law — ATLAS stops scrolling sideways; all
   seven diagrams rewrapped, plus the intake band and a sitting.
   [#263](https://github.com/wsher0901/roam/pull/263)
 - Atlas gains the enforcement mesh — the delivery chain from
   ambient law to your word, drawn once, with four honest gaps.
   [#259](https://github.com/wsher0901/roam/pull/259)
-- Baton renderings single-homed — one case table at handoff §4;
-  three flight-path contradictions repaired.
-  [#257](https://github.com/wsher0901/roam/pull/257)
 
 **Issues**
 
@@ -78,6 +80,10 @@ one phase per line:
 - ⏳ HOME's files table has no row for the user-prompt-submit
   hook, though it exists and enforces the close-lock. → its line
   in [IDEAS](IDEAS.md)
+- ⏳ The figure audit that proved all eight ATLAS figures lives
+  only as prose in the bench's story — no script, no CI gate, so
+  the result is reproducible only by re-authoring it. → its line
+  in [IDEAS](IDEAS.md)
 
 ## Where we are (Roam)
 
@@ -90,8 +96,9 @@ S3–S8 · queued in order · 0/22
 
 - (Web) "GitHub workflow protocol and web instructions setup" —
   the audit's ops chat; it carried the external review of all
-  eleven benches, atlas-clean included. → next: nothing owed; it
-  opens again at the next bench's gate.
+  twelve benches, and rendered three figures to pixels for the
+  last one. → next: nothing owed; it opens again at the next
+  bench's gate.
 
 ## Next
 
