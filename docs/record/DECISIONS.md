@@ -3706,3 +3706,79 @@ judgment-only gap, because a gap named in a diagram and absent
 from the inbox is silently parked) ·
 [the spec](specs/atlas-census.md) + its memory (in flight on the
 bench; moves to history at the weld) · this entry.
+
+## D-072 — The Atlas no-scroll law
+
+In full: 2026-08 — ATLAS gains a RENDERING LAW written into its own header: every diagram is top-down (flowchart TD, never LR), and a node label is a NAME and never a sentence — at most two lines via <br/>, no line over 45 characters — with every sentence a node used to carry living in the prose under its diagram or in the home its Boxes line links; every future re-render obeys. All seven existing diagrams are brought under the law in the same PR, and coverage closes in two places: diagram 1 gains the work-intake band (voiced idea or defect → IDEAS line → decide → ROADMAP line → the bench), and a new diagram 8 "A sitting" draws the ground cycle (session-start hook → pickup → the work loop → handoff FULL → the close-lock → the closed session). ATLAS's header and HOME's files-table row go seven to eight. ATLAS still renders and originates nothing — the prose governs.
+
+**Decision:** [ATLAS](../ATLAS.md)'s header gains THE RENDERING
+LAW beside "THIS PAGE RENDERS, IT ORIGINATES NOTHING": TOP-DOWN
+ONLY, and A NODE LABEL IS A NAME, NEVER A SENTENCE — two `<br/>`
+lines at most, 45 characters at most per line. Everything a box
+wants to explain goes to the PROSE under its diagram or to the
+home its Boxes line already links. All seven existing diagrams
+are rewrapped to the law in the same PR — diagrams 2 and 6
+converting `LR` → `TD` — and two missing chains are drawn:
+[diagram 1](../ATLAS.md#1--the-task-loop) gains THE INTAKE BAND
+upstream of the bench, and a new
+[diagram 8](../ATLAS.md#8--a-sitting) draws A SITTING end to end.
+The header and [HOME](../HOME.md)'s files-table row go seven →
+eight.
+
+**Why:** ATLAS is the page a cold reader opens to see the workshop
+WHOLE, and it could not be read that way. Labels had become a
+place to explain — one box in §7 ran to 340 characters, written by
+this workshop one bench earlier — so mermaid rendered boxes wider
+than any screen and two diagrams flowed sideways on top of that.
+The reader scrolled horizontally to finish a single box, and THE
+SHAPE, which is the only thing a diagram offers that prose does
+not, was lost behind the scrollbar. The cause is a category error
+rather than sloppiness, which is why the fix is a LAW and not a
+tidy-up: a diagram carries structure, prose carries sentences, and
+ATLAS already has prose under every diagram plus a Boxes line
+linking each doctrine's real home. Writing the rule into the
+header is what makes the next re-render obey it — a rewrap alone
+would decay at the first bench that added a box.
+
+THE TWO NEW CHAINS ARE COVERAGE, not decoration. Diagram 1 began
+at "freshly pulled main" — the bench already existing — so the
+single-inbox law, one of the most-cited rules in the workshop,
+appeared in no picture at all; a newcomer could not see how a
+voiced thought BECOMES work. And nothing drew the ordinary ground
+day, the container every other diagram happens inside, which is
+also where the close-lock lives — the one mechanism that makes
+"closed" mean something precise rather than "the session stopped".
+
+**Alternatives rejected:**
+
+- **Rewrap without writing the law down** — the page would be
+  clean today and drift at the next bench, exactly as it drifted
+  into this state. A convention nobody can cite is a convention
+  that loses to the next author's convenience.
+- **A mechanical width lint in the same bench** — the right idea
+  and the wrong moment: the gate belongs with the other
+  harness-shaped guards, and building it here would mean shipping
+  an untested check against a page still being rewritten. It goes
+  to [IDEAS](../IDEAS.md) as a line, per the single-inbox law.
+- **Deleting the displaced sentences outright** — faster, and it
+  would have destroyed real doctrine that lived NOWHERE ELSE. The
+  verify-before-drop rule caught four such sentences in §7 alone;
+  every one of them is now in prose.
+- **Wrapping labels but keeping `LR` for the two wide diagrams** —
+  LR is what forces horizontal growth in the first place; keeping
+  it would leave the law true in letter and false on screen.
+- **A larger character cap (60 or 80)** — 45 is what fits a
+  two-line box at a readable width on a laptop half-screen and in
+  Obsidian's default pane, which is where this page is actually
+  read.
+
+**Affects:** [ATLAS](../ATLAS.md) (the header law; seven → eight;
+the stamp refreshed; all seven diagrams rewrapped, 2 and 6
+converted to TD; diagram 1's intake band and Boxes-line cites for
+IDEAS, decide and the roadmap manual; §5, §7 and the new §8 gain
+the prose that now carries the displaced sentences) ·
+[HOME](../HOME.md) (the files-table ATLAS row, seven → eight —
+one row, nothing else) · [IDEAS](../IDEAS.md) (the width-gate
+line, and one defect line for a missing HOME row found while
+redrawing) · [the spec](specs/atlas-clean.md) + its memory (in
+flight on the bench; moves to history at the weld) · this entry.
