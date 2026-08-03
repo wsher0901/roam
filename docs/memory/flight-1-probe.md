@@ -1,13 +1,13 @@
 ---
 type: memory
 id: flight-1-probe
-updated: 2026-08-03 21:38 UTC · canary claim · cloud
+updated: 2026-08-03 17:38 · airborne ack · work PC
 ---
 # flight-1-probe — the shakedown's simulated cargo
 
 ## Status
 
-claimed by cloud — 2026-08-03
+airborne · https://claude.ai/code/session_01NcE9UvzhybxinCqre5LvE2 · 2026-08-03
 
 ## What this task is
 
