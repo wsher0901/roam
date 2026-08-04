@@ -1,12 +1,42 @@
 ---
 type: memory
 id: cloud-git-identity
-updated: 2026-08-04 15:04 UTC · completion · cloud
+updated: 2026-08-04 16:01 UTC · fenced by land MODE P · cloud
 ---
 # cloud-git-identity — the third seat joins the one-time list
 
 ## Status
-complete, awaiting merge — 2026-08-04
+held — landed for local pickup 2026-08-04
+
+THE PAUSE BLOCK — a resuming seat can continue from this alone.
+
+- **What it did.** The full payload, complete and green. Nothing
+  was interrupted.
+- **How much of the spec is done.** ALL of it, confirmed line by
+  line by the cockpit's independent review
+  ([the verdict](https://github.com/wsher0901/roam/pull/279#issuecomment-5181501454)).
+- **What is left.** NO WORK. Only the founder's merge word.
+- **THE EXACT NEXT STEP.** Give the merge word on
+  [#279](https://github.com/wsher0901/roam/pull/279), then
+  [ship](../skills/ship.md) welds it. At
+  [pickup §6](../skills/pickup.md#6--fleet-resume-on-the-founders-answer)
+  answer `local cloud-git-identity` — adopt at the desk, zero cap
+  runs — never `redeploy`, which would spawn a worker onto finished
+  work.
+- **Why it paused.** Landed for local pickup 2026-08-04 on the
+  founder's freeze word, so the gate reaches the desk through
+  pickup's resume ask. The lane was already complete; nothing was
+  frozen mid-work.
+
+CARRY THIS TO THE DESK — the review found a gap this bench's own
+change creates and was not scoped to fix: `machine-setup` step 1 now
+covers three seats while step 2 (`roam.machine`) still names only
+"work PC" and "home PC". The cockpit set `cloud` by inference and
+that string is now in ritual stamps on the board. Triage after the
+weld, not here.
+
+THE COMPLETION STATE THIS FENCE REPLACED was
+`complete, awaiting merge — 2026-08-04`, and it remains true.
 
 The payload is on origin at `9a522fa` and that pushed head's Actions
 run is GREEN (`checks` ✓, 15:03 UTC) — not merely local green. The
