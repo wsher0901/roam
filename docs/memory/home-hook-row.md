@@ -1,12 +1,12 @@
 ---
 type: memory
 id: home-hook-row
-updated: 2026-08-04 15:47 UTC · completion · cloud
+updated: 2026-08-04 15:46 UTC · completion · cloud
 ---
 # home-hook-row — the hook that enforces the close-lock gets a row
 
 ## Status
-complete, awaiting merge — 2026-08-04 15:47 UTC
+complete, awaiting merge — 2026-08-04 15:46 UTC
 
 LANE C of FLIGHT 2 flew on its second dispatch and landed its
 cargo. The row is in [HOME](../HOME.md)'s files table, the
@@ -69,6 +69,25 @@ split-brain work.
 
 The five audit findings are open by design: this lane reports, the
 ground triages. They are not blockers.
+
+A SIXTH FINDING, AND THIS LANE IS THE CULPRIT. Its stamps drifted:
+it read the shell clock once on waking and then EXTRAPOLATED the
+later ones from the shape of its own work, so the completion
+carried `15:47 UTC` while the clock read `15:45:54` and the commit
+it described landed at `15:44:35`. Stamped ~2.5 minutes into the
+future. Caught only by reading `date -u` again to check, which
+nothing required.
+
+That is a live breach of the derivation law's second half — time is
+derived, never recalled — and the shape of the miss is worth more
+than the two minutes: EVERY GATE PASSED. `check:memory` validated
+the file, `check:links` was green, CI was green, because a stamp
+that is well-formed and plausible is indistinguishable from a stamp
+that is true. A lane's own diary is the one artifact in this
+workshop whose accuracy rests entirely on the lane's discipline,
+and this one's discipline slipped in the direction that looks
+tidiest — round numbers, evenly spaced. Corrected here from a fresh
+clock read.
 
 ## Left / idle
 Nothing of the mandate. Every Done-means line in
@@ -269,6 +288,35 @@ must be. It reads correctly only if you already know the birth
 artifacts are excluded. That is a wording trap for a future lane
 that obeys precisely, and it is the kind of thing only a real
 flight surfaces.
+
+2026-08-04 15:46 UTC · a redelivered webhook, caught live · cloud —
+A SECOND `pull_request.labeled` EVENT FIRED FOR THIS PR while this
+lane was waiting on its final CI run, and it cited head SHA
+`8400157` — the pre-canary commit, FIVE COMMITS BEHIND the branch's
+actual head. That is the redelivered-webhook signature from the
+record (2026-07-16, 21:57), observed a second time and from inside,
+and it is the strongest evidence yet for the latency-not-loss
+reading in Pending issues: this route redelivers stale events, so a
+bench can be dispatched against a head that no longer exists.
+
+The wake-lock disposed of it correctly and cheaply. This session
+re-read the Status from ORIGIN before doing anything — found
+`complete, awaiting merge`, a line it had written itself and
+therefore owns — and so continued its remaining duties instead of
+re-canarying. Worth being precise about why that is the right
+outcome rather than a lucky one: the rule is not "ignore duplicate
+triggers", it is "obey the Status". A FRESH session waking on that
+same event would have read the same line, NOT owned it, and
+self-terminated — also correct. Same rule, two seats, two correct
+and opposite actions.
+
+The near-miss worth naming: had this lane treated the trigger as a
+kickoff and re-run its first act, it would have overwritten a
+completion Status with a fresh claim and re-done finished work. The
+only thing standing between those two outcomes is reading origin
+first. The instruction to do that is one line in the lane law, and
+this flight has now produced two live cases where it was the whole
+defence.
 
 ## Where to look
 - [the spec](../record/specs/home-hook-row.md) — the mandate, the
