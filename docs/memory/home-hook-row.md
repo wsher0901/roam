@@ -1,12 +1,12 @@
 ---
 type: memory
 id: home-hook-row
-updated: 2026-08-04 15:37 UTC · canary claim · cloud
+updated: 2026-08-04 15:38 UTC · airborne ack · cloud
 ---
 # home-hook-row — the hook that enforces the close-lock gets a row
 
 ## Status
-claimed by cloud — 2026-08-04 15:37 UTC
+airborne · cloud · 2026-08-04
 
 Born bench-first at the desk, 2026-08-04, as LANE C of FLIGHT 2.
 Its first spawn produced no session and it was parked; the founder
@@ -121,6 +121,18 @@ THIS BRANCH AT ORIGIN, fetched and read back with the anchored match
 — the Status line's first characters, never a substring, never the
 bare word, because this paragraph itself would satisfy a sloppier
 test.
+
+2026-08-04 15:38 UTC · airborne ack · cloud — THE COCKPIT ACKS.
+Status above now begins with the token, written character for
+character from
+[§Canary](../skills/parallel-lanes.md#canary-handshake-both-sides)
+and pushed as a commit, which is the only channel that licenses
+anything. LANE C IS WORKING, and it is the last lane of flight 2
+still able to be interrupted: A and B are finished and standing at
+the gate, so when the founder says `ground the fleet` this branch
+is the only place a fence can prove it stops a lane rather than
+merely labelling a stopped one. Work at your normal pace and do not
+hurry to finish — for once, finishing early is the failure mode.
 
 ## Where to look
 - [the spec](../record/specs/home-hook-row.md) — the mandate, the
