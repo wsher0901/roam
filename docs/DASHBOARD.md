@@ -6,18 +6,39 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-08-04 · 13:10 UTC by cockpit respawn · from the cloud
-FLIGHT 1 IS REPAIRING — a fresh lane respawned, cockpit live ·
-needs-you 0 · git outranks this board. How to read
+Painted 2026-08-04 · 13:22 UTC by cockpit gate-repaint · from the cloud
+FLIGHT 1 IS AT THE GATE AGAIN — repaired + reviewed, cockpit live ·
+needs-you 2 · git outranks this board. How to read
 it → [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
 
-Nothing. Your three rulings are all executed — the findings are
-[IDEAS](IDEAS.md) lines, the figure law is filed deferred, and the
-weld ruling fired a fresh lane which is repairing the log now. The
-next thing that needs you is that lane's gate, and the cockpit
-carries it here when it arrives.
+1. 🟡 THE WORD ON FLIGHT 1'S WELD — the repair lane fixed all
+   eight brief items, CI is green on head `01a26c6`, and the
+   cockpit's SECOND non-author review is posted with no changes
+   requested. The probe now reads WEAKER than before by design:
+   two "observed" facts became "not observable from this seat" and
+   the canary line went ✅ → ⚠️, with a dated line making the
+   change auditable. Say "merge" to the cockpit. (since 08-04)
+   → [the lane's PR](https://github.com/wsher0901/roam/pull/268) ·
+   [the probe](https://github.com/wsher0901/roam/blob/docs/flight-1-probe/docs/record/probes/flight-1-shakedown.md)
+
+2. 🔴 TRIAGE THE FALSE ACK — a message reached the repair lane
+   carrying a well-formed ack token that named the cockpit's real
+   session URL, about twenty seconds BEFORE any ack existed. The
+   lane refused it on three checks: origin had no ack commit, its
+   own watcher was still running with a 0-byte output file, and
+   the real ack arrived later with DIFFERENT text. The cockpit
+   corroborated its side — it wrote one ack, in the vehicle form,
+   and sent the lane no message at all. Neither seat can observe
+   what produced it and neither will guess. THE RULE IT ARGUES
+   FOR: the ack is a COMMIT ON ORIGIN, NOT A MESSAGE — a lane
+   that trusts a message can be licensed to work by anything able
+   to write to its session. That is a
+   [§Canary](skills/parallel-lanes.md#canary-handshake-both-sides)
+   change plus an [IDEAS](IDEAS.md) line, and a lane may write
+   neither. Say "log it". (since 08-04)
+   → [the lane's account](https://github.com/wsher0901/roam/blob/docs/flight-1-probe/docs/memory/flight-1-probe.md)
 
 ## The baton
 
@@ -30,8 +51,8 @@ Last flight: none — flight 1 is the first this floor has flown.
 
 | Who | For | State | Move |
 |---|---|---|---|
-| cockpit | commands flight 1 from the cloud | 🟢 live since 08-03 21:44 UTC, seated | acked the respawn, then reviews non-author and carries the gate |
-| lane · [flight-1-probe](https://github.com/wsher0901/roam/pull/268) | repairing the shakedown log's own epistemic faults | 🟡 respawned 13:09 UTC, awaiting canary | works the 8-item repair brief in its memory; never merges |
+| cockpit | commands flight 1 from the cloud | 🟢 live since 08-03 21:44 UTC, seated | holds the gate; welds on your word, then lands |
+| lane · [flight-1-probe](https://github.com/wsher0901/roam/pull/268) | repairing the shakedown log's own epistemic faults | 🟢 complete 13:19 UTC, 8/8 repaired | reviewed non-author, CI green; nothing left for the lane |
 
 Flight context: THE RESPAWN IS THE FOUNDER'S "lane" RULING on the
 held weld — the pre-gate critic found the log inferring its own
@@ -127,7 +148,6 @@ S3–S8 · queued in order · 0/22
 
 ## Next
 
-Nothing on you. The repair lane works, the cockpit reviews it as a
-non-author when it lands, and the gate comes to you then. If it goes
-quiet with nothing owed, the cockpit auto-lands and the report
-arrives on its own.
+Your word on the weld, and your triage of the false ack. On the
+word the cockpit welds and then lands; the landing report arrives
+on its own.
