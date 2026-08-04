@@ -1,16 +1,19 @@
 ---
 type: memory
 id: cloud-git-identity
-updated: 2026-08-04 14:29 UTC · bench birth · work PC
+updated: 2026-08-04 14:57 UTC · canary claim · cloud
 ---
 # cloud-git-identity — the third seat joins the one-time list
 
 ## Status
-bench ready
+claimed by cloud — 2026-08-04
 
-Born bench-first at the desk, 2026-08-04, as LANE B of FLIGHT 2.
-Nothing claimed yet. The next seat to write here is the lane, with
-its canary claim.
+Born bench-first at the desk, 2026-08-04, as LANE B of FLIGHT 2. A
+cloud lane woke on the label at 14:56 UTC and claims this bench with
+this commit. It now waits for the baton-holder's ack — the Status
+line beginning with the anchored token
+([§Canary](../skills/parallel-lanes.md#canary-handshake-both-sides))
+— before any real work.
 
 ## What this task is
 [machine-setup](../skills/machine-setup.md)'s one-time list gives a
