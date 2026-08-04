@@ -34,6 +34,21 @@ it → [HOME §Reading the board](HOME.md#reading-the-board)
 ## The baton
 
 COCKPIT — fired 15:09 UTC (liftoff) · self-seat pending
+
+⚠️ **TWO BIRTHS WERE FIRED, and any arriving cockpit must read this
+before seating itself.** Liftoff fired rung 1 twice — 15:11 UTC and
+15:12 UTC — because the first fire's exit status was not captured
+and its speed was misread as a failure; the second fire returned
+exit 0 in 6.8s, which is what a successful dispatch looks like, so
+the first is presumed to have dispatched too. THE RULE IS
+UNCHANGED AND THE BOARD IS THE ARBITER: the first session to seat
+itself holds the baton. A cockpit that arrives and finds a FOREIGN
+live cockpit already seated is a STRAY BIRTH under
+[the charter](COCKPIT-CHARTER.md)'s rule 1 — push nothing, write
+nothing, name the live cockpit and stop. DO NOT run the landing
+ritual for this: a stray never flew, so rule 8's tombstone is the
+wrong script and fencing this flight's lanes would end flight 2 on
+an accident rather than on the founder's word.
 Last flight: LANDED 2026-08-04 · 13:53 UTC via AUTO-LAND — fleet
 empty, nothing owed you · clean
 
