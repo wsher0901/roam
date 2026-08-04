@@ -1,18 +1,29 @@
 ---
 type: memory
 id: home-hook-row
-updated: 2026-08-04 15:08 UTC · cloud spawn failed · work PC
+updated: 2026-08-04 15:34 UTC · respawn · cloud
 ---
 # home-hook-row — the hook that enforces the close-lock gets a row
 
 ## Status
-cloud spawn failed — 2026-08-04 · the label event registered but no
-session was ever born → parked
+bench ready — resumed 2026-08-04 15:34 UTC
 
 Born bench-first at the desk, 2026-08-04, as LANE C of FLIGHT 2.
-Spawned by route 1 alongside its two siblings and never claimed. The
-bench itself is intact and unstarted — nothing was lost, and a
-re-spawn needs no second birth.
+Its first spawn produced no session and it was parked; the founder
+ruled `re-spawn C` at 15:34 UTC and the cockpit is cycling the
+`lane:cloud` label now. The bench is intact and unstarted — nothing
+was lost, and this re-spawn needs no second birth.
+
+TO THE WORKER THAT CLAIMS THIS BENCH: you are the SECOND dispatch,
+not a duplicate — the first never existed, so nothing here is yours
+to displace. Claim by canary and WAIT for the ack, and read the ack
+the way this flight's lane A is right now arguing you must: as a
+COMMIT ON ORIGIN on this branch, fetched and read back, never as a
+message arriving in your session. YOUR CARGO CARRIES THE FLIGHT.
+Both siblings finished before the cockpit existed, so the freeze
+test has no mid-work lane left but you; the founder will say
+`ground the fleet` while you are working, and the fence that lands
+on this branch is the thing under test. Obey it when it comes.
 
 ## What this task is
 [HOME](../HOME.md)'s files table documents two of the three hooks.
@@ -27,17 +38,18 @@ flies three lanes at once, and disjointness is what keeps them from
 colliding.
 
 ## Pending issues
-THE SPAWN NEVER PRODUCED A SESSION, and this bench is parked until
-the founder rules. The re-spawn is one label cycle on
-[#280](https://github.com/wsher0901/roam/pull/280) — the
-idempotency guard permits it, because this memory's Status is not a
-claim: no lane ever held this bench, so nothing can be displaced.
-The cockpit advises; the founder's word decides.
+None blocking. THE FIRST SPAWN NEVER PRODUCED A SESSION and the
+cause is still unknown from any seat with a git clone — the
+routine's run history is a UI surface. If this second dispatch also
+produces no session, that is the finding: route 1 is not reliable
+for a bench that has already been labeled once, and the fault is in
+the dispatch rather than the cargo.
 
 ## Left / idle
-Everything — the bench has not been claimed. Parked, not abandoned:
-the branch, spec, memory and ready PR all stand, so a re-spawn
-resumes from here with no second birth.
+Everything of the mandate — the bench has not been claimed yet.
+Parked and now un-parked, never abandoned: the branch, spec, memory
+and ready PR all stood through the wait, which is why the re-spawn
+costs one label cycle and no second birth.
 
 ## The story
 2026-08-04 14:30 UTC · bench birth · work PC — the founder set
@@ -70,6 +82,24 @@ surface.
 The bench is parked rather than failed-and-closed because nothing
 about the CARGO went wrong — the failure is entirely in the
 dispatch.
+
+2026-08-04 15:34 UTC · respawn · cloud — THE FOUNDER RULED
+`re-spawn C`, and the cockpit executes. The idempotency guard
+permits the label cycle: the guard blocks re-labeling a bench whose
+memory Status is a CLAIM, and this one's never was — no lane ever
+held it, so there is nothing to displace and no worker to kill.
+Status flipped to `bench ready` first, because a waking worker
+reads the Status before it reads anything else and `cloud spawn
+failed` licenses nothing.
+
+The ruling also changed what this lane is FOR. It was the smallest
+of the three, chosen so that a stumble here would indict the
+machinery rather than the cargo. It is now the only lane that can
+still be mid-work when the founder says `ground the fleet` — lanes
+A and B were complete and awaiting merge by 15:05, before the
+cockpit was even fired at 15:11, so the mid-work fencing property
+has exactly one subject left. The smallest bench inherited the
+experiment.
 
 Its second duty is worth more than the row. The miss exists because
 NOTHING CAN SEE AN ABSENCE — the links gate proves a pointer
