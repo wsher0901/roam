@@ -6,51 +6,30 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-08-04 · 13:35 UTC by ship's tail · from the cloud
-FLIGHT 1 HAS SHIPPED — fleet empty, cockpit live · needs-you 1 ·
+Painted 2026-08-04 · 13:53 UTC by land (AUTO-LAND) · from the cloud
+FLIGHT 1 IS DOWN — no live seat, floor clean · needs-you 0 ·
 git outranks this board. How to read
 it → [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
 
-1. 🔴 TRIAGE THE FALSE ACK — the one thing flight 1 raised that
-   you have not yet ruled on. A message reached the repair lane
-   carrying a well-formed ack token naming the cockpit's real
-   session URL, about twenty seconds BEFORE any ack existed. The
-   lane refused it on three checks: origin had no ack commit, its
-   own watcher was still running with a 0-byte output file, and
-   the real ack arrived later with DIFFERENT text. The cockpit
-   corroborated its side — one ack, written in the vehicle form,
-   and no message sent to the lane at all. Neither seat can
-   observe what produced it and neither will guess. THE RULE IT
-   ARGUES FOR: the ack is a COMMIT ON ORIGIN, NOT A MESSAGE — a
-   lane that trusts a message can be licensed to work by anything
-   able to write to its session. That is a
-   [§Canary](skills/parallel-lanes.md#canary-handshake-both-sides)
-   change plus an [IDEAS](IDEAS.md) line, and a lane may write
-   neither. Say "log it" at any ritual. (since 08-04)
-   → [the flight's story](record/history/workshop/mechanism/flight-1-probe.md)
+Nothing. Flight 1 flew, shipped, and closed every question it
+raised — five findings and two deferrals are [IDEAS](IDEAS.md)
+lines, and the false ack is filed with the
+[§Canary](skills/parallel-lanes.md#canary-handshake-both-sides)
+change it argues for. The next flight's scope is yours to set when
+you sit down.
 
 ## The baton
 
-COCKPIT — live since 2026-08-03 · 21:44 UTC (liftoff) ·
-https://claude.ai/code/session_01CJJytMtvnRgx22itJzaxPb ·
-awaiting your word on 1 item
-Last flight: none — flight 1 is the first this floor has flown.
+No live seat — awaiting next pickup
+Last flight: LANDED 2026-08-04 · 13:53 UTC via AUTO-LAND — fleet
+empty, nothing owed you · clean
 
 ## In flight
 
-| Who | For | State | Move |
-|---|---|---|---|
-| cockpit | commanded flight 1 from the cloud | 🟢 live since 08-03 21:44 UTC, seated | nothing flying; holds only your false-ack ruling |
-
-Flight context: FLIGHT 1 IS DOWN AND MERGED as
-[#268](https://github.com/wsher0901/roam/pull/268). It flew twice —
-the shakedown, then a repair leg after the pre-gate critic caught
-the log inferring its own ready-flip; the founder ruled a FRESH
-lane for the repair so authorship stayed off the reviewing seat.
-The cockpit's AUTO-LAND is deliberately held: it requires nothing
-awaiting the founder, and the false-ack line above awaits you.
+Nothing flying. The cockpit that commanded flight 1 has landed and
+holds nothing; its branches are merged and deleted.
 
 ## Working on
 
@@ -93,9 +72,10 @@ one phase per line:
 
 **Issues**
 
-- ⏳ THE FALSE ACK — flight 1's sharpest finding, still awaiting
-  your triage; it argues the ack must be a commit on origin, never
-  a message. → Needs-you above
+- ⏳ THE FALSE ACK — flight 1's sharpest finding: a message
+  carrying a well-formed ack token reached a lane before any ack
+  existed, and only a check against origin caught it. → its line
+  in [IDEAS](IDEAS.md)
 - ⏳ The §Canary word-vs-token match question is DEFERRED by the
   founder — filed, no ruling made. → its line in [IDEAS](IDEAS.md)
 - ⏳ FLIGHT 1 SURFACED FIVE, now all inbox lines: no git-identity
@@ -141,6 +121,6 @@ S3–S8 · queued in order · 0/22
 
 ## Next
 
-Your triage of the false ack — the last thing flight 1 owes you.
-On it the cockpit lands and the flight ends; the landing report
-arrives on its own.
+Nothing owed. Whenever you next sit down, pickup briefs you and
+the standing order's phase 1 asks only what the next flight should
+carry.

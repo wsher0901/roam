@@ -19,6 +19,19 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
 
 ## Open
 
+- ⏳ THE ACK MUST BE A COMMIT ON ORIGIN, NEVER A MESSAGE — during
+  flight 1's repair leg a message reached the lane carrying a
+  well-formed ack token naming the cockpit's real session URL,
+  about twenty seconds before any ack commit existed; the lane
+  refused it because origin held no ack and its own watcher had
+  emitted zero bytes. What produced it was not observable from
+  either seat and neither guessed. The rule it argues for: a lane
+  reads its licence to work from the BRANCH, never from a
+  notification — otherwise anything able to write to a lane's
+  session can start it working. Change
+  [§Canary](skills/parallel-lanes.md#canary-handshake-both-sides)
+  to say so. (2026-08-04, flight 1) →
+  [the flight's story](record/history/workshop/mechanism/flight-1-probe.md)
 - ⏳ SHOULD §CANARY'S ACK MATCH ANCHOR ON THE WORD OR THE TOKEN —
   [§Canary](skills/parallel-lanes.md#canary-handshake-both-sides)
   fixes the test at "STARTS WITH `airborne ·`", never the bare
