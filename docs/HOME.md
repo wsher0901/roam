@@ -174,6 +174,7 @@ Sources:
 | `.claude/settings.json` | shared harness config — hooks wiring, permission allow/deny lists, plugins, env flags | ops PRs | living |
 | `.claude/settings.local.json` | machine-local config (tokens, per-machine plugins) | each machine, by hand | gitignored; never in the repo |
 | `.claude/hooks/session-start.mjs` | session-start hook: sync main, inject the board, order the briefing | ops PRs | living |
+| `.claude/hooks/user-prompt-submit.mjs` | user-prompt-submit hook: the close-lock — once a FULL [handoff](skills/handoff.md) or [liftoff](skills/liftoff.md) has written `.claude/session-closed`, it stamps every prompt with the closed-session doctrine, making the session read-only conversational (closed ≠ dead) rather than refusing it; silent on a live session | ops PRs | living |
 | `.claude/hooks/session-end.mjs` | session-end hook: the crash net — auto-commit + push WIP on lane branches | ops PRs | living |
 | `.claude/skills/*/SKILL.md` | trigger stubs, one per ritual/manual — each only points to its [docs/skills/](skills) procedure | ops PRs | point-only; never hold procedure text |
 
