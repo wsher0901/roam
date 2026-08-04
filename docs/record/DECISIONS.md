@@ -3865,3 +3865,89 @@ width-gate line re-scoped to the figure gate; the 48-vs-45
 conflict dies with the mermaid medium) ·
 [the spec](specs/atlas-figures.md) + its memory (in flight on the
 bench; moves to history at the weld) · this entry.
+
+## D-074 — Phase 1 closes on flights 3 and 4
+
+In full: 2026-08-04 — The mid-work freeze test is neither retired nor re-flown on ordinary cargo: it becomes A DETERMINISTIC DRILL — one bench specced to HOLD AT A CHECKPOINT UNTIL ACKED, so that "mid-work" is guaranteed by construction rather than raced against a lane's runtime — and it folds into the failure-drill flight rather than earning a flight of its own; and PHASE 1 OF THE THREE-PHASE STANDING ORDER (D-060) NOW CLOSES ON TWO REMAINING FLIGHTS, not on the freeze property alone: flight 3, the desk takeover of a LIVE cockpit holding a decision, and flight 4, the failure drill (the connector rungs, summon, and the freeze checkpoint together). The founder's word of 2026-08-04, after flight 2 measured the freeze window closed for the third time.
+
+**Decision:** two rulings, taken together on the founder's word:
+
+1. **THE FREEZE TEST BECOMES A DETERMINISTIC DRILL.** The
+   wake-lock's rejected-push rule — does a fence actually STOP a
+   live worker — is tested by a bench whose spec tells it to HOLD
+   AT A CHECKPOINT UNTIL ACKED. Mid-work then holds by
+   construction, for as long as the drill needs, instead of being
+   raced against how fast the cargo happens to finish. It rides the
+   failure-drill flight; it does not get a flight of its own.
+2. **PHASE 1 CLOSES ON FLIGHTS 3 AND 4**, amending
+   [D-060](#d-060--the-three-phase-standing-order)'s phase 1, which
+   named the shakedown flight as its test leg and is silent on what
+   follows it. FLIGHT 3 — the desk takeover of a LIVE cockpit
+   holding a decision
+   ([D-061](#d-061--the-landing-doctrine-recut-to-three-scenarios)
+   scenario 2, and
+   [pickup §6](../skills/pickup.md#6--fleet-resume-on-the-founders-answer)'s
+   other entry door, never flown). FLIGHT 4 — the failure drill:
+   the connector rungs, summon, and the freeze checkpoint, run
+   together as deliberate failures rather than hoped-for ones.
+   Phase 2 opens when both have flown, not when the freeze property
+   alone is settled.
+
+Neither flight is scope yet. Both are filed as
+[IDEAS](../IDEAS.md) lines per the entry contract
+([D-066](#d-066--the-ideas-entry-contract)), and each becomes scope
+only when triaged — this entry fixes the CLOSING CONDITION of a
+phase, which is the standing order's shape, not a task list.
+
+**Why:** flight 2 measured the thing that defeats the freeze test,
+and the measurement is what makes this a decision rather than a
+retry. A cloud lane carrying doc-sized cargo runs about five
+minutes from licence to completion; lane C ran 4m48s and the
+founder's word arrived seventeen minutes after that. Every fence
+therefore landed on a finished bench, and the property has now gone
+unobserved three times. THE FAILURE IS STRUCTURAL, NOT BAD LUCK: any
+duty timed against "the fleet is mid-work" is unrunnable by
+construction on cargo this size, so a fourth attempt of the same
+shape would fail the same way. A checkpoint that holds until acked
+removes the race entirely — the drill decides when mid-work ends,
+rather than the cargo deciding for it.
+
+Phase 1 gains its two flights for the same reason it existed at
+all: [D-060](#d-060--the-three-phase-standing-order) opened it
+because machinery had shipped and never been flown. That argument
+does not stop at the shakedown. The desk takeover and the failure
+paths are exactly the same class — designed, load-bearing, and
+never exercised — and closing phase 1 while they stay untested
+would carry the original risk into phase 2 under a different name.
+
+**Alternatives rejected:**
+
+- **RETIRE THE FREEZE TEST** — rejected: the rejected-push rule is
+  load-bearing and remains the single largest untested claim in the
+  machinery. Retiring it converts an unproven behaviour into a
+  permanently unproven one, which is the state phase 1 was created
+  to end.
+- **ANOTHER FLIGHT ON LONGER CARGO** — rejected: it buys a bigger
+  window rather than a guaranteed one, still races the lane's
+  runtime, and costs a full flight to test one property
+  probabilistically. The checkpoint gets certainty for a fraction
+  of the cargo.
+- **GIVE THE FREEZE DRILL ITS OWN FLIGHT** — rejected: it shares
+  its whole apparatus with the other failure paths, and a flight
+  that exercises one deliberate failure is cheaper to run as part
+  of a flight that exercises several.
+- **CLOSE PHASE 1 ON THE FREEZE ALONE** — rejected by the founder:
+  it would declare the away-machinery settled while its takeover
+  and failure paths had never once been run.
+- **MAKE THE FLIGHTS SCOPE NOW** — rejected: nothing is scope until
+  triaged ([D-066](#d-066--the-ideas-entry-contract)), and the
+  founder filed them deliberately as inbox lines. Workshop flights
+  never appear in the [ROADMAP](../ROADMAP.md) in any case — flights
+  1 and 2 shipped as workshop benches with no tick.
+
+**Affects:** [D-060](#d-060--the-three-phase-standing-order) (its
+phase 1 closing condition, amended here and left otherwise intact) ·
+[IDEAS](../IDEAS.md) (three lines: the deterministic drill, flight
+3, flight 4) · [DASHBOARD](../DASHBOARD.md) (the standing order's
+phase 1 line and Needs-you, at the next ritual repaint — the board
+is never hand-edited) · this entry.

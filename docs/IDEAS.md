@@ -19,6 +19,35 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
 
 ## Open
 
+- ⏳ FLIGHT 4 — THE FAILURE DRILL: the connector rungs, summon, and
+  the freeze checkpoint exercised together as DELIBERATE failures
+  rather than hoped-for ones, so the paths that only run when
+  something breaks are run on purpose at least once. Phase 1 closes
+  on this flight and flight 3
+  ([D-074](record/DECISIONS.md#d-074--phase-1-closes-on-flights-3-and-4)).
+  Not scope until triaged. (2026-08-04, the founder) →
+  [parallel-lanes §Cloud spawn](skills/parallel-lanes.md#cloud-spawn--route-ladder)
+- ⏳ FLIGHT 3 — THE DESK TAKEOVER OF A LIVE COCKPIT HOLDING A
+  DECISION: pickup's OTHER entry door, where the founder sits down
+  at a desk while a cockpit is still flying and holding gates, so
+  the board write transfers the baton and the old seat self-retires
+  by reading its own supersession. Designed at
+  [D-061](record/DECISIONS.md#d-061--the-landing-doctrine-recut-to-three-scenarios)
+  scenario 2, never flown; flight 2 could not reach it because its
+  fleet was already at ground. Not scope until triaged.
+  (2026-08-04, the founder) →
+  [pickup §6](skills/pickup.md#6--fleet-resume-on-the-founders-answer)
+- ⏳ A DETERMINISTIC FREEZE DRILL — one bench SPECCED TO HOLD AT A
+  CHECKPOINT UNTIL ACKED, so that "mid-work" is guaranteed by
+  construction instead of raced against how fast the cargo happens
+  to finish. This is what finally tests the wake-lock's
+  rejected-push rule — does a fence actually STOP a live worker —
+  which three flights have now failed to observe because every
+  fence landed on a finished bench. Folds into flight 4 rather than
+  earning a flight of its own
+  ([D-074](record/DECISIONS.md#d-074--phase-1-closes-on-flights-3-and-4)).
+  (2026-08-04, the founder) →
+  [§Wake-lock](skills/parallel-lanes.md#wake-lock--parking)
 - ⏳ NOTHING REQUIRES READING A PR'S COMMENTS BEFORE ACTING ON ITS
   BENCH — flight 2's cockpit read
   [#280](https://github.com/wsher0901/roam/pull/280)'s metadata,
