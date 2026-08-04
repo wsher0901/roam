@@ -6,7 +6,7 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-08-04 · 15:14 UTC by the cockpit's self-seat · from
+Painted 2026-08-04 · 15:17 UTC by the cockpit's self-seat · from
 the cloud
 FLIGHT 2 — 2 lanes DONE at the gate, 1 never spawned; the mid-work
 window closed before the cockpit was born · needs-you 3 ·
@@ -27,7 +27,7 @@ it → [HOME §Reading the board](HOME.md#reading-the-board)
 2. 🟡 **SAY THE FREEZE WORD — `ground the fleet` — in the cockpit
    session on your phone.** Still owed, but ITS PREMISE HAS
    CHANGED: lanes A and B finished at 15:04–15:05 UTC, before the
-   cockpit was fired at 15:09, so there is nothing mid-work left
+   cockpit was fired at all, so there is nothing mid-work left
    for MODE P to fence unless lane C is revived first (item 1).
    Said now, the word still exercises MODE P and the grounded-fleet
    resume; it no longer exercises the mid-work fencing. The exact
@@ -47,9 +47,25 @@ it → [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## The baton
 
-COCKPIT — live since 15:14 UTC (liftoff) ·
+COCKPIT — live since 15:17 UTC (liftoff) ·
 https://claude.ai/code/session_01HbmFzb7mq4z9u8p3PjjkGT · awaiting
 your word on 3 items
+
+⚠️ **TWO BIRTHS WERE FIRED, AND THIS SEAT IS THE ANSWER TO IT.**
+Liftoff fired rung 1 twice — 15:11 UTC and 15:12 UTC — because the
+first fire's exit status was not captured and its speed was misread
+as a failure; the second fire returned exit 0 in 6.8s, which is
+what a successful dispatch looks like, so the first is presumed to
+have dispatched too
+([#282](https://github.com/wsher0901/roam/pull/282) disclosed it).
+THE BOARD IS THE ARBITER and the seat above is now taken: the
+cockpit at that url read this board, found `self-seat pending`, and
+seated itself. THE TWIN, IF IT LIVES, IS A STRAY BIRTH under
+[the charter](COCKPIT-CHARTER.md)'s rule 1 — push nothing, write
+nothing, name the live cockpit above and stop. DO NOT run the
+landing ritual for this: a stray never flew, so rule 8's tombstone
+is the wrong script and fencing this flight's lanes would end
+flight 2 on an accident rather than on the founder's word.
 Last flight: LANDED 2026-08-04 · 13:53 UTC via AUTO-LAND — fleet
 empty, nothing owed you · clean
 
@@ -57,7 +73,7 @@ empty, nothing owed you · clean
 
 | Who | For | State | Move |
 |---|---|---|---|
-| cockpit | commands flight 2 from the cloud | 🟡 | live since 15:14 UTC · awaiting your word on 3 items |
+| cockpit | commands flight 2 from the cloud | 🟡 | live since 15:17 UTC · awaiting your word on 3 items |
 | lane · canary-ack-commit | §Canary: the ack is a commit on origin, never a message | 🟢 | COMPLETE 15:05 UTC · green · at the gate · [#278](https://github.com/wsher0901/roam/pull/278) |
 | lane · cloud-git-identity | machine-setup: the cloud seat's git identity | 🟢 | COMPLETE 15:04 UTC · green · at the gate · [#279](https://github.com/wsher0901/roam/pull/279) |
 | lane · home-hook-row | HOME: the close-lock hook's missing row | 🔴 | cloud spawn failed — label registered 14:54:43Z, no session ever born; bench intact, parked pending your word · [#280](https://github.com/wsher0901/roam/pull/280) |
@@ -122,11 +138,11 @@ one phase per line:
 
 - 🔴 THE MID-WORK WINDOW CLOSED BEFORE THE COCKPIT OPENED — lanes
   A and B pushed their completion rewrites at 15:04 and 15:05 UTC;
-  [liftoff](skills/liftoff.md) fired the cockpit at 15:09 and it
-  seated itself at 15:14. The cockpit's one non-standard duty was
-  conditioned on a fleet state that had already passed, and no
-  amount of promptness on its part could have recovered it: the
-  fire comes after the lanes, by construction. Flight 2's first
+  [liftoff](skills/liftoff.md) fired the cockpit at 15:11 and 15:12
+  and it seated itself at 15:17. The cockpit's one non-standard
+  duty was conditioned on a fleet state that had already passed,
+  and no amount of promptness on its part could have recovered it:
+  the fire comes after the lanes, by construction. Flight 2's first
   finding, and an argument that the freeze test needs a lane
   deliberately slower than the cockpit's own birth. → Needs-you 1
   and 2
