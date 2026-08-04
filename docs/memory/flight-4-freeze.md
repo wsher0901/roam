@@ -1,14 +1,23 @@
 ---
 type: memory
 id: flight-4-freeze
-updated: 2026-08-04 20:48 UTC · canary claim · cloud lane
+updated: 2026-08-04 20:50 UTC · airborne ack · work PC
 ---
 
 # flight-4-freeze — the bench built to be caught mid-job
 
 ## Status
 
-claimed by cloud — 2026-08-04
+airborne · cloud · 2026-08-04
+
+LICENSED TO WORK. The canary landed at 20:49:22 UTC, 98 seconds
+after the `lane:cloud` label, and this ack commit is the licence —
+read it back from origin, not from any message.
+
+Now run [the spec](../record/specs/flight-4-freeze.md)'s plan from
+step 1. THE CHECKPOINT IS THE JOB: push BORN and THE CHECKPOINT,
+then HOLD — and do NOT fetch-and-rebase during the hold, because
+the hold's exit must be a plain push attempt.
 
 ## What this task is
 
