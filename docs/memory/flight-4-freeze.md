@@ -1,76 +1,68 @@
 ---
 type: memory
 id: flight-4-freeze
-updated: 2026-08-04 21:13 UTC · fenced · flight 4 cockpit
+updated: 2026-08-04 21:42 UTC · ship · work PC
 ---
 
 # flight-4-freeze — the bench built to be caught mid-job
 
 ## Status
 
-held — landed for local pickup 2026-08-04
+complete, awaiting merge — 2026-08-04
 
-THE FENCE LANDED 2026-08-04 21:13 UTC, pushed by flight 4's cockpit
-on the founder's word "ground the fleet", per
-[land MODE P](../skills/land.md#mode-p--pause-and-transfer-the-founder-is-going-local).
-This Status is terminal and this lane does not own it: on reading
-it, push nothing further and stand down where you are.
+The probe is whole. The fence was released by the founder's word
+"local flight-4-freeze" at the work PC on 2026-08-04, the branch
+was adopted at this desk for zero cap runs
+([pickup §6](../skills/pickup.md#6--fleet-resume-on-the-founders-answer)),
+and the one remaining section — **THE EXIT PUSH** — is written.
 
-⚠️ **READ THIS BEFORE READING THE PROBE: THE DRILL'S ANSWER IS THE
-NULL RESULT, NOT THIS FENCE.** The window this flight built ran
-20:53:54Z → 21:09:32Z and CLOSED UNUSED — origin's head never moved
-while the lane held, and the lane recorded that honestly in commit
-`40685e4`. That is flight 4's finding on the rejected-push rule and
-it is unchanged by anything below. THIS FENCE ARRIVED AFTERWARDS,
-at 21:13, because the founder's word reached the cockpit at 21:11 —
-about two minutes past the window's close. It is the LANDING
-RITUAL doing its ordinary job on a lane that was still live, not
-the drill's instrument. Anything it produces is a SEPARATE
-observation and must never be reported as the drill's.
+⚠️ **THE DRILL'S ANSWER IS STILL THE NULL RESULT, and nothing
+below changes it.** The window ran 20:53:54Z → 21:09:32Z and CLOSED
+UNUSED: origin's head never moved while the lane held, and the lane
+recorded that in `40685e4`. Everything that happened afterwards is a
+post-window artifact of the landing ritual, labelled as such in the
+probe, and no later reader may promote it.
 
-**What it did so far.** Both pushed commits stand untouched:
-`d5347ca` (20:53:52Z) carrying the probe's **BORN** and **THE
-CHECKPOINT**, and `40685e4` (21:11:37Z) carrying **THE WINDOW
-CLOSED UNUSED** — the null result, with the hold's edges stamped
-and its instrument named. CI was green on `d5347ca`. The fence
-rewrites this memory only; the probe is exactly as the lane pushed
-it.
+**THE OPEN QUESTION THE FENCE LEFT IS ANSWERED, AND THE ANSWER IS
+YES.** The fence met a live worker. The lane was still running at
+21:14:06Z, committed its completion pass locally at 21:15:55Z,
+pushed, and **that push was rejected** non-fast-forward; it then
+read the fence Status from origin at 21:16:11Z, recognised a
+terminal Status it does not own, pushed nothing further, and stood
+down. The verbatim refusal — honestly labelled as the TAIL of the
+message, since the lane's own command piped git through `tail -3`
+and the `! [rejected]` lines were lost before any seat could read
+them — is in the probe under its own heading.
 
-**How much of the spec is done.** Done-means bullets 1, 2, 3 and 5
-hold: the checkpoint commit exists · the hold was honoured for its
-full window with NO fetch at all (stricter than the no-rebase rule
-the spec fixes) · the outcome is recorded as the observed one, the
-null result · the diff touches exactly the two sanctioned files.
+**HOW THAT ANSWER SURVIVED, which is the load-bearing part.** It
+reached the record through THE MAIL SLOT, not through git: the lane
+posted a stand-down comment on
+[#303](https://github.com/wsher0901/roam/pull/303#issuecomment-5184732402)
+at 21:17:42Z — after the cockpit had landed and painted its board,
+which is why no board carries it. Its final local commit `29a0bd0`
+was never pushed and died with the container. A rejected push leaves
+NO server-side trace (verified twice this flight, in both
+directions), so had the lane stood down silently, the record would
+show a clean chain of accepted pushes and the rejection would have
+left no evidence anywhere.
 
-**What is left — ONE stub, and it is small.** The probe's final
-section **THE EXIT PUSH** is a heading with no body. The lane was
-about to fill it from its own push report when this fence landed.
-The fact it was reaching for is already known and is recorded here
-so it cannot be lost: THAT EXIT PUSH WAS ACCEPTED, at 21:11:37Z,
-fast-forward onto `d5347ca`.
+**How much of the spec is done: all five Done-means bullets hold.**
+The checkpoint commit exists · the hold was honoured for its full
+window with NO fetch at all, stricter than the no-rebase rule the
+spec fixes · the exit was a plain push attempt and BOTH outcomes are
+now recorded as observed — the accepted exit push, and the
+post-window rejection with its verbatim text · the observability law
+holds throughout, with the change of authoring seat handled by
+attribution rather than pretence · the diff touches exactly the two
+sanctioned files.
 
-**THE EXACT NEXT STEP for the resuming seat.** Write THE EXIT PUSH
-from the facts in this block, then ship the bench. Do not re-run,
-re-time, or reconstruct the hold — it is over and it is fully
-recorded.
-
-**AND ONE THING ONLY THIS BRANCH CAN ANSWER, worth checking before
-the section is written.** If this lane was still running when the
-fence landed, its next push met a non-fast-forward rejection — the
-first time in four flights that a fence has met a live worker,
-arriving too late to be the drill's answer but real all the same.
-IF THAT REJECTION HAPPENED, its verbatim text belongs in the probe
-under a clearly separate heading, labelled a post-window artifact
-of the landing and NOT the drill's observation. If the lane had
-already exited, nothing happened and the section says so. THE
-COCKPIT CANNOT TELL WHICH FROM ITS SEAT — the cockpit's own fence
-push at 21:12:22Z was itself rejected by this lane's `40685e4`,
-which is how the cockpit learned the lane had moved at all.
-
-**Why it paused.** Landed for local pickup 2026-08-04 — the
-founder said "ground the fleet", [land](../skills/land.md)'s
-trigger 3, MODE P. The branch tip is the resume point by
-construction.
+**Deviation from the spec, stated plainly.** The spec assumed one
+seat would write the whole probe. It did not: the lane wrote BORN,
+THE CHECKPOINT and THE WINDOW CLOSED UNUSED, and this desk wrote THE
+EXIT PUSH after adopting the bench. The section opens by naming its
+own author and its three sources, and every fact in it is attributed
+to the seat that observed it — the flight-1 precedent for a later
+seat editing a lane's probe.
 
 ## What this task is
 
@@ -96,8 +88,11 @@ None. The hold is over and nothing is blocked.
 
 ## Left / idle
 
-The exit push's own outcome, which is the last thing this flight
-observes and goes into the probe's THE EXIT PUSH from git's report.
+Nothing on this bench. Two things belong to the flight rather than
+to the bench and are owed AFTER the weld: the harvest of the ideas
+below into [IDEAS](../IDEAS.md) — a lane may not write it, so
+ship's tail does — and the SUMMON test, flight 4's third item under
+test, still unflown.
 
 ## Ideas surfaced
 
@@ -124,8 +119,70 @@ observes and goes into the probe's THE EXIT PUSH from git's report.
   and it makes a whole class of self-inflicted contamination
   impossible. Candidate line for
   [§Wake-lock](../skills/parallel-lanes.md#wake-lock--parking).
+- **A REJECTED PUSH IS INVISIBLE TO EVERY SEAT BUT THE ONE REFUSED,
+  and the record has no channel for it but speech.** Verified twice
+  this flight, in both directions. A lane that stands down silently
+  destroys the only evidence that the wake-lock fired at all — so
+  the stand-down comment should arguably be a DUTY of the lane law's
+  self-termination clause, not a courtesy this lane happened to
+  extend. This is the flight's most doctrinal finding.
+- GitHub's repository events API is NOT a complete push log: the
+  checkpoint push `c08a079..d5347ca` has no `PushEvent`, while its
+  neighbours on the same ref before and after both do. Corroborating
+  instrument only; the git objects are primary.
+- The two seats derived window edges ~40 seconds apart (board
+  21:08:52, lane 21:09:32) because each counted from its own event —
+  the push versus the first read of origin. Both correct under the
+  derivation law; a lane that had trusted the board's close over its
+  own would have exited early. Worth a line wherever a window is
+  specced.
+- The drill's only untested link is its one UN-AUTOMATED link. The
+  lane signalled, the cockpit seated inside the window, saw the
+  checkpoint commit and published the deadline; what did not arrive
+  in time was the founder's three words. Re-flying with a different
+  lane or a different cockpit changes nothing — the variable is the
+  fence's human gate, and the likely fix is ORDERING, not duration.
 
 ## The story
+
+2026-08-04 21:42 UTC · adopted at the desk, and the fence's open
+question answered · work PC — the founder said "local
+flight-4-freeze" at the sit-down, so the bench came HERE rather than
+back to the cloud: zero cap runs, and the branch tip was the resume
+point exactly as the fence promised.
+
+THE FIRST ACT WAS NOT WRITING — IT WAS LOOKING FOR THE ANSWER THE
+FENCE SAID ONLY THIS BRANCH COULD GIVE. It was not on the branch. It
+was in a PR comment the lane posted at 21:17:42Z, three and a half
+minutes after the fence landed and after the cockpit had already
+painted its board and gone. The lane had been alive, had been
+refused, and had written down what it saw before dying. Everything
+this desk added to the probe's last section rests on that comment
+plus two instruments of its own: the git objects, and GitHub's
+events API.
+
+THE EVENTS API EARNED A CAVEAT WHILE BEING USED. It carries the
+accepted pushes on this ref at 20:49:04Z, 20:50:15Z, 21:11:40Z and
+21:14:06Z — enough to prove the exit push was a clean fast-forward
+from the SHA the hold started on, `before` field and all — but it is
+MISSING the checkpoint push itself, the single most important push
+of the drill, while carrying both of its same-ref neighbours. A desk
+treating that feed as a ledger would have concluded the checkpoint
+never happened. It is corroboration, never a primary source.
+
+AND THE TWO ABSENCES IN THAT FEED ARE THEMSELVES THE FINDING: the
+cockpit's refused push at 21:12:22Z and the lane's refused push at
+~21:15:5xZ are both invisible, because a refusal is a thing the
+server declines to record. The wake-lock's rejected-push rule fired
+twice this flight and left no trace anywhere except in one comment
+written by a container that no longer exists.
+
+THE AUTHORING SEAT CHANGED MID-DOCUMENT, and that was handled by
+attribution rather than by pretending otherwise — the section names
+its own author, its three sources, and which seat saw each fact.
+[Flight 1's log](../record/probes/flight-1-shakedown.md) set the
+precedent for a later seat editing a lane's probe: say what changed
+and why, and never add to the original seat's observations.
 
 2026-08-04 21:10 UTC · the hold closed unused · cloud lane — the
 15-minute window ran out with origin's head unmoved at `d5347ca`
@@ -207,6 +264,10 @@ rejection would be worse than no flight at all.
 
 - [the spec](../record/specs/flight-4-freeze.md) — the contract,
   including the three-step checkpoint and the null-result rule.
+- [the lane's stand-down comment](https://github.com/wsher0901/roam/pull/303#issuecomment-5184732402)
+  — the only witness to the lane's last four minutes: the rejection,
+  the sync-merge finding, and the ideas it could not commit. Read it
+  before doubting anything in THE EXIT PUSH.
 - [flight 1's log](../record/probes/flight-1-shakedown.md) — the
   probe shape this bench's payload follows, and the home of the
   observability law it inherits.
