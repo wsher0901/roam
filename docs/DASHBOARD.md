@@ -6,72 +6,86 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-08-04 · 15:44 UTC by the cockpit · from the cloud
-FLIGHT 2 — ALL 3 LANES DONE, all at the gate; no lane is working ·
-needs-you 2 ·
-git outranks this board. How to read
-it → [HOME §Reading the board](HOME.md#reading-the-board)
+Painted 2026-08-04 · 16:02 UTC by land (MODE P) · from the cloud
+FLIGHT 2 IS GROUNDED — 3 lanes fenced, all complete and green,
+waiting at your desk · needs-you 2 · git outranks this board. How to
+read it → [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
 
-1. 🟡 **THE MERGE WORD ON THREE PRs —
-   [#278](https://github.com/wsher0901/roam/pull/278) ·
-   [#279](https://github.com/wsher0901/roam/pull/279) ·
-   [#280](https://github.com/wsher0901/roam/pull/280).** All three
-   lanes are complete and Actions-green on their pushed heads; the
-   whole of flight 2's cargo is now standing at THE GATE. Every one
-   is LANE-AUTHORED, so the law asks any non-author session's
-   review and then your word — the cockpit authored no payload
-   among them (a memory stub and an ack are not authorship) and can
-   review all three on request. Nothing expires; they wait as long
-   as you need. (since 08-04)
-   → [LAWS §no-solo-approval](LAWS.md#workflow-non-negotiable)
-2. 🟡 **RULE THE FREEZE TEST — run MODE P anyway, or reschedule
-   it.** The mid-work window closed a second time: lane C was acked
-   airborne 15:38 and complete 15:43, FOUR MINUTES AND FORTY-EIGHT
-   SECONDS, so there is again no working lane to fence. Saying
-   `ground the fleet` now still exercises MODE P's other half — the
-   fence commits, the fleet-at-ground table, the `grounded for
-   local pickup` marker, and the resume ask at your next pickup,
-   none of which has ever been flown either. What it cannot test is
-   whether a fence STOPS a live worker. The alternative is to merge
-   the cargo and reschedule the mid-work half onto a flight whose
-   lanes run in tens of minutes. (since 08-04)
-   → [land §Scenario 3](skills/land.md#scenario-3--the-founders-freeze-word-only)
+1. 🟡 **SIT DOWN AT A DESK AND RUN [pickup](skills/pickup.md) — it
+   asks, and your answer moves all three.** The whole of flight 2's
+   cargo is fenced, complete and green, waiting in the
+   fleet-at-ground table below. THE ANSWER THIS FLEET WANTS IS
+   `local <id>`, ONE PER LANE — adopt the branch at the desk, zero
+   cap runs, give the merge word, weld. Do NOT answer `continue`:
+   it redeploys three fresh cloud workers onto finished benches,
+   costs three cap runs, and gives them nothing to do. Each lane's
+   fence says the same thing in its own words. (since 08-04)
+   → [pickup §6](skills/pickup.md#6--fleet-resume-on-the-founders-answer)
+   · [LAWS §no-solo-approval](LAWS.md#workflow-non-negotiable)
+2. 🟡 **RESCHEDULE THE MID-WORK FREEZE TEST, or retire it.** It is
+   now unproven for the THIRD time and the reason is measured, not
+   guessed: lane C ran 4m48s from licence to done, and the founder's
+   word arrived 17 minutes after that. The fence landed on a
+   finished bench, so the wake-lock's rejected-push rule — does a
+   fence actually STOP a live worker — remains the one designed
+   behaviour this workshop has never observed. It needs a lane whose
+   cargo runs for tens of minutes, or a bench specced to HOLD at a
+   checkpoint until acked. Your call whether that earns its own
+   flight. (since 08-04)
+   → [parallel-lanes §Wake-lock](skills/parallel-lanes.md#wake-lock--parking)
+   · [land MODE P](skills/land.md#mode-p--pause-and-transfer-the-founder-is-going-local)
    · [the trigger table](skills/land.md#the-trigger-table--what-starts-a-landing)
 
 ## The baton
 
-COCKPIT — live since 15:18 UTC (liftoff) ·
-https://claude.ai/code/session_01HbmFzb7mq4z9u8p3PjjkGT · awaiting
-your word on 2 items
+No live seat — LANDED 2026-08-04 · 16:02 UTC via MANUAL-LAND ·
+3 lanes frozen → grounded for local pickup 2026-08-04
 
-Last flight: LANDED 2026-08-04 · 13:53 UTC via AUTO-LAND — fleet
-empty, nothing owed you · clean
-
-⚠️ **TWO BIRTHS WERE FIRED, AND THE SEAT ABOVE IS NOW TAKEN.**
-Liftoff fired rung 1 twice — 15:11 UTC and 15:12 UTC — because the
-first fire's exit status was not captured and its speed was misread
-as a failure; the second fire returned exit 0 in 6.8s, which is
-what a successful dispatch looks like, so the first is presumed to
-have dispatched too. THE RULE IS UNCHANGED AND THE BOARD IS THE
-ARBITER: the first session to seat itself holds the baton, and it
-has — the cockpit at the url above read `self-seat pending` on this
-board and seated itself. THE TWIN, IF IT LIVES, IS A STRAY BIRTH
-under [the charter](COCKPIT-CHARTER.md)'s rule 1 — push nothing,
-write nothing, name the live cockpit above and stop. DO NOT run the
-landing ritual for this: a stray never flew, so rule 8's tombstone
-is the wrong script and fencing this flight's lanes would end
-flight 2 on an accident rather than on the founder's word.
+⚠️ **THE DOUBLE BIRTH RESOLVED ITSELF, and the record is worth
+keeping.** Liftoff fired rung 1 twice — 15:11 and 15:12 UTC —
+because the first fire's exit status was not captured and its speed
+was misread as a failure. BOTH COCKPITS WERE REAL AND BOTH REACHED
+THIS BOARD. They raced to seat: the winner merged its self-seat at
+[#283](https://github.com/wsher0901/roam/pull/283), and the twin's
+own attempt survives as
+[#285](https://github.com/wsher0901/roam/pull/285), opened 15:17:33
+and closed unmerged. The board-is-the-arbiter rule was flown for
+real, against a genuine two-session race, and it held with no
+collision and no lost work. Nothing is owed here; the note stands
+because the next double fire will be read against it.
 
 ## In flight
 
-| Who | For | State | Move |
-|---|---|---|---|
-| cockpit | commands flight 2 from the cloud | 🟡 | live since 15:18 UTC · awaiting your word on 2 items |
-| lane · canary-ack-commit | §Canary: the ack is a commit on origin, never a message | 🟢 | COMPLETE 15:05 UTC, awaiting merge · [#278](https://github.com/wsher0901/roam/pull/278) |
-| lane · cloud-git-identity | machine-setup: the cloud seat's git identity | 🟢 | COMPLETE 15:04 UTC, awaiting merge · [#279](https://github.com/wsher0901/roam/pull/279) |
-| lane · home-hook-row | HOME: the close-lock hook's missing row | 🟢 | COMPLETE 15:43 UTC, awaiting merge — respawned on your word, acked 15:38, done in 4m48s · [#280](https://github.com/wsher0901/roam/pull/280) |
+Nothing flying. THE FLEET IS AT GROUND — three benches fenced by
+[land](skills/land.md) MODE P at 16:02 UTC, each complete to its
+last push and resumable from any seat.
+
+**THE FLEET AT GROUND** — `progress` and `exact next step` are
+lifted from each lane's own fence, so this table and the memories
+cannot disagree.
+
+| id | purpose | progress | exact next step | state |
+|---|---|---|---|---|
+| canary-ack-commit | §Canary: a lane's licence is an ack commit on origin, never a message | DONE — spec fully met incl. the negative one; green on `e0891f1`; reviewed | answer `local canary-ack-commit` at pickup, then the merge word on [#278](https://github.com/wsher0901/roam/pull/278) | held |
+| cloud-git-identity | machine-setup: the cloud seat's git identity | DONE — spec fully met; green on `974a8ef`; reviewed; carries one triage note to the desk | answer `local cloud-git-identity` at pickup, then the merge word on [#279](https://github.com/wsher0901/roam/pull/279) | held |
+| home-hook-row | HOME: the close-lock hook's missing row | DONE — row in, 5-finding table audit reported; green on `14c935d`; reviewed | answer `local home-hook-row` at pickup, then the merge word on [#280](https://github.com/wsher0901/roam/pull/280) | held |
+
+NO LANE HERE WANTS A WORKER. All three are finished; `redeploy`
+would spend three cap runs to spawn sessions with nothing to do.
+`local <id>` adopts each branch at the desk for zero cap runs, which
+is the whole reason this fleet was grounded rather than merged from
+the phone.
+
+⚠️ **ONE STRAY BRANCH, DELIBERATELY NOT DELETED** —
+`chore/cockpit-seat-repaint` carries one unique commit (`b8a907a`),
+the twin cockpit's losing self-seat board draft behind the closed
+[#285](https://github.com/wsher0901/roam/pull/285). The
+resurrection rule forbids deleting a branch with unique commits, so
+it is surfaced here instead. Its content is a superseded board
+repaint and nothing else; safe to delete at the desk once you have
+looked.
 
 FLIGHT CONTEXT — flight 2 is a TEST FLIGHT and its cargo is real.
 The three benches carry flight 1's own findings back into the
@@ -109,29 +123,40 @@ whose work is measured in TENS of minutes, or a bench whose spec
 tells it to hold at a checkpoint until acked. That is a decision
 for a later flight, and it is Needs-you 2.
 
-WHAT REMAINS TESTABLE TODAY, unchanged and never once flown: MODE
-P's other half. Say `ground the fleet` on a fleet of three
-COMPLETED lanes and the fence commits, the fleet-at-ground table,
-the `grounded for local pickup` marker and the resume ask at the
-next pickup all run for real. Only the rejected-push rule — does a
-fence STOP a live worker — stays unproven, because there is no live
-worker left to stop.
+THE FOUNDER SAID `ground the fleet` AT 16:00 UTC, holding the
+merges deliberately so the gates would travel to the desk through
+pickup's resume ask rather than being decided from a phone. MODE P
+ran at 16:02: three fences written and pushed, this board painted,
+the flight closed. WHAT THAT PROVED, and it is the first time any
+of it has been flown — the fence commit lands on a branch and
+carries the full pause block; the fleet-at-ground table renders
+from the fences rather than from the cockpit's memory; the
+`grounded for local pickup` marker is on THE BATON line where
+[pickup §5](skills/pickup.md#5--render-the-sit-down-summary-exactly-this-shape)'s
+two-fact trigger reads it. The resume ask itself is the last
+untested link and it fires at the next sit-down.
 
-All three PRs stand ready at THE GATE meanwhile, so AUTO-LAND
-cannot fire and nothing is lost by any amount of waiting.
+WHAT STAYS UNPROVEN, for the third time and now for a measured
+reason: the wake-lock's rejected-push rule. All three fences landed
+on finished benches, so no lane was ever stopped by one. That
+behaviour is designed, load-bearing, and has never been observed —
+the single largest untested claim left in the machinery.
 
 ## Working on
 
-- FLIGHT 2 OF THE TEST PROGRAM — the fleet path flown for the
-  first time, carrying three of flight 1's repairs as real cargo.
-  Scope set by the founder 2026-08-04.
+- FLIGHT 2 OF THE TEST PROGRAM — FLOWN AND GROUNDED 2026-08-04. The
+  fleet path exercised for the first time end to end, carrying three
+  of flight 1's repairs as real cargo; all three are fenced at the
+  gate above, awaiting the desk. Scope set by the founder 2026-08-04.
 
 The standing order
 ([D-060](record/DECISIONS.md#d-060--the-three-phase-standing-order)),
 one phase per line:
 
 - PHASE 1 — settle & test: the audit is done; flight 1 shipped and
-  FLIGHT 2 IS FLYING — the fleet path is what it tests.
+  FLIGHT 2 HAS FLOWN AND GROUNDED. Its cargo welds at your next
+  sit-down; one property it went to test is still unproven and
+  Needs-you 2 asks whether that earns another flight.
 - PHASE 2 — the vault: chronicle story lanes + a polish pass;
   opens with your scope ruling (all 66, or the load-bearing dozen).
 - PHASE 3 — Roam: T3–T6 relaunched from scratch, plus
@@ -265,9 +290,9 @@ S3–S8 · queued in order · 0/22
 
 ## Next
 
-Nothing is urgent any more — the timed part of this flight is over
-and it produced a measurement instead of a pass. Flight 2's whole
-cargo sits green at the gate waiting for your word, and the freeze
-question is now a scheduling call rather than a race: run MODE P
-today on a finished fleet, or keep the word for a flight with
-slower lanes. Either way the three PRs keep; they expire never.
+Sit down at either desk and run [pickup](skills/pickup.md). It will
+find the marker on THE BATON line and the fleet-at-ground table
+above, and ask you the resume question — the last link of the fleet
+path that has never been flown. Answer `local <id>` three times,
+give the merge word, and flight 2's cargo welds for zero cap runs.
+Nothing expires and nothing is urgent.
