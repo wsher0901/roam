@@ -1,36 +1,38 @@
 ---
 type: memory
 id: home-hook-row
-updated: 2026-08-04 16:02 UTC · fenced by land MODE P · cloud
+updated: 2026-08-04 16:34 UTC · adopted at the desk by pickup · work PC
 ---
 # home-hook-row — the hook that enforces the close-lock gets a row
 
 ## Status
-held — landed for local pickup 2026-08-04
+complete, awaiting merge — 2026-08-04
 
-THE PAUSE BLOCK — a resuming seat can continue from this alone.
+ADOPTED AT THE DESK. The founder answered `local home-hook-row` at
+[pickup §6](../skills/pickup.md#6--fleet-resume-on-the-founders-answer)
+on 2026-08-04; the work PC took this branch for zero cap runs and
+the bench became this seat's ordinary gate-standing work. The
+payload is unchanged by the adoption — the Status returns to the
+completion state the fence replaced.
 
-- **What it did.** The row in [HOME](../HOME.md)'s files table, plus
-  the end-to-end table audit the spec asked for: five findings
-  reported, none fixed, which was the mandate.
-- **How much of the spec is done.** ALL of it, confirmed by the
-  cockpit's independent review, which re-read the hook itself and
-  independently re-checked three of the five audit findings before
-  agreeing with them
-  ([the verdict](https://github.com/wsher0901/roam/pull/280#issuecomment-5181505025)).
-- **What is left.** NO WORK on the mandate. Only the founder's merge
-  word. The five audit findings are for GROUND TRIAGE after the
-  weld, never for this bench.
-- **THE EXACT NEXT STEP.** Give the merge word on
-  [#280](https://github.com/wsher0901/roam/pull/280), then
-  [ship](../skills/ship.md) welds it. At
-  [pickup §6](../skills/pickup.md#6--fleet-resume-on-the-founders-answer)
-  answer `local home-hook-row` — adopt at the desk, zero cap runs —
-  never `redeploy`.
-- **Why it paused.** Landed for local pickup 2026-08-04 on the
-  founder's freeze word.
+WHAT REMAINS IS THE FOUNDER'S MERGE WORD on
+[#280](https://github.com/wsher0901/roam/pull/280), then
+[ship](../skills/ship.md)'s weld. The mandate is fully met — the row
+plus the five-finding audit, reported and not fixed, which is what
+the spec asked for — and the cockpit's independent review re-read
+the hook itself and re-checked three of the five findings before
+agreeing
+([the verdict](https://github.com/wsher0901/roam/pull/280#issuecomment-5181505025)),
+so [no-solo-approval](../LAWS.md#workflow-non-negotiable) is already
+satisfied by a non-author seat. THE FIVE AUDIT FINDINGS REMAIN
+GROUND TRIAGE for after the weld, never for this bench.
 
-THE LANE ASKED FOR THIS FENCE BY NAME, and the fence answers it.
+THE FENCE THIS REPLACED, kept because the flight is the record:
+`held — landed for local pickup 2026-08-04`, written by
+[land](../skills/land.md) MODE P at 16:02 UTC on the founder's
+freeze word.
+
+THE LANE ASKED FOR THAT FENCE BY NAME, and the fence answered it.
 The line below — "the freeze test caught its subject at the gate,
 not at the bench" — is CORRECT, and it is the flight's honest
 result. This bench was the designated subject of the mid-work
