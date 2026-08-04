@@ -6,9 +6,9 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-08-04 · 20:24 UTC by ship's tail · from work PC
-FLIGHT 3 COMPLETE — welded, harvested, clean floor · needs-you 0 ·
-git outranks this board. How to read it →
+Painted 2026-08-04 · 20:33 UTC by ship's tail · from work PC
+FLIGHT 3 COMPLETE — welded, harvested, both seats reported · clean
+floor · needs-you 0 · git outranks this board. How to read it →
 [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
@@ -50,11 +50,11 @@ verified to survive in the closed PR — which is where to read it.
 
 ## In flight
 
-Nothing — clean floor. One session remains open but is not flying:
-the superseded cockpit
-(`session_01AUaEBaTyuYDYfELjrG85mo`) retires itself by
-[land](skills/land.md)'s Scenario 2 on its next wake, writing no
-board. Safe to archive.
+Nothing — clean floor. Flight 3's cockpit
+(`session_01AUaEBaTyuYDYfELjrG85mo`) HAS RETIRED: it woke, read its
+supersession here, landed by [land](skills/land.md)'s Scenario 2,
+wrote no board, and reported two findings on its way out. Safe to
+archive.
 
 FLIGHT 3, MEASURED END TO END — label 19:39:53, canary 19:41:26,
 ack 19:42:37, cargo 19:47:07, CI green 19:47:55, reviewed 19:51,
@@ -125,15 +125,28 @@ one phase per line:
 
 **Issues**
 
-- ✓ THE DESK TAKEOVER DOOR IS FLOWN. Both of pickup §6's entry
-  doors have now carried real traffic: flight 2 took the grounded
-  fleet, flight 3 the live cockpit. The two-fact trigger fired off
-  origin, write 1 landed at adopt
-  ([#298](https://github.com/wsher0901/roam/pull/298)) and this
-  repaint replaced it. What the flight did NOT test is the half
-  that needs the other seat: whether the cockpit actually reads its
-  own tombstone and self-retires. That is observed after the fact,
-  by its silence and its unwritten board, not asserted here.
+- ✓ THE DESK TAKEOVER DOOR IS FLOWN, AND NOW FROM BOTH SEATS. Both
+  of pickup §6's entry doors have carried real traffic: flight 2
+  took the grounded fleet, flight 3 the live cockpit. The half this
+  board could not assert at the takeover — whether the cockpit
+  actually reads its own tombstone and self-retires — IS NOW
+  OBSERVED: the superseded seat woke, read its supersession off
+  this board, retired by [land](skills/land.md)'s Scenario 2, and
+  wrote no board. It also returned two findings while doing it,
+  which is a stronger result than silence would have been.
+- ⏳ **MASTER ITEM QUEUED** — THE TOMBSTONE LINE LIES UNDER DESK
+  TAKEOVER. The charter's rule 8 makes a retiring seat announce a
+  replacement cockpit that a desk takeover never summons; the
+  retiring seat refused to speak it, correctly. The fix is a
+  charter edit, so it carries the box-master duty: **v5** plus a
+  **box re-save**, and the re-save takes a Needs-you line the
+  moment that edit merges — not before, since there is nothing yet
+  to re-save. → its line in [IDEAS](IDEAS.md)
+- ⏳ A SUPERSEDED SEAT HAS NO CHANNEL BUT SPEECH — it may write no
+  board, so a finding it holds at retirement reaches you only in
+  its final message, and the tombstone is fixed text. Unruled: may
+  that message carry ONE off-origin block? → its line in
+  [IDEAS](IDEAS.md)
 - ✓ THE LANE'S FOUR FINDINGS ARE HARVESTED — one new line
   (`check-memory.mjs` strips code spans with a newline-forbidding
   regex, so a backticked placeholder that WRAPS is reported

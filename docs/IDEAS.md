@@ -19,6 +19,35 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
 
 ## Open
 
+- ⏳ **MASTER ITEM** · THE TOMBSTONE LINE LIES UNDER DESK TAKEOVER —
+  [the charter](COCKPIT-CHARTER.md)'s rule 8 makes a retiring seat
+  say "a replacement cockpit has been summoned and will greet you;
+  the board carries its link", and under a desk takeover no such
+  cockpit exists: the DESK took the baton, and the board carries a
+  control-tower line, not a successor's link. The same presumption
+  runs through the rule's SUCCESSOR DUTY, which is written for a
+  replacement cockpit and has no reading when the successor is a
+  desk. Flight 3's retiring seat REFUSED TO SPEAK IT, which is the
+  right call and also the proof — a seat that may write nothing
+  caught a false sentence in its own final message and had no way
+  to fix it. THE FIX IS A CHARTER EDIT, so it carries the box-master
+  duty with it: bump to **v5** with a version-history row, and the
+  **box re-save** rides [DASHBOARD](DASHBOARD.md) Needs-you until it
+  is done, because a master change that never reaches its box fails
+  silently. For the fix bench. (2026-08-04, flight 3's cockpit at
+  retirement) →
+  [LAWS §Knowledge & tracking](LAWS.md#knowledge--tracking)
+- ⏳ A SUPERSEDED SEAT HAS NO CHANNEL BUT SPEECH — it may write no
+  board by [land](skills/land.md) Scenario 2's carve-out, so any
+  finding it is holding at retirement can reach the founder only in
+  its final message, and the tombstone line is fixed text with no
+  room for one. Flight 3's cockpit hit this with two findings in
+  hand. THE QUESTION TO RULE: may the tombstone message carry ONE
+  off-origin block, or does a mute seat stay mute and accept that
+  what it knows dies with it? Filed unruled — it trades the
+  push-first law against losing a finding entirely. (2026-08-04,
+  flight 3's cockpit at retirement) →
+  [the charter](COCKPIT-CHARTER.md)
 - ⏳ RUNG 1'S BIRTH PROMPT ARRIVES UTF-8-MANGLED ON WINDOWS —
   crossing the `--cloud` argument mojibakes the text, so a cockpit
   is born reading a corrupted mandate. It cost this flight nothing
