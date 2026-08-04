@@ -19,6 +19,57 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
 
 ## Open
 
+- ⏳ THE TWO API PATHS ARE NOT INTERCHANGEABLE, AND THE LADDER SAYS
+  THEY ARE — [HOME's ladder](HOME.md#the-cockpits-api-paths--recovery-ladder)
+  states "each API-only act runs on either path". From a
+  routine-born cloud cockpit that is false in BOTH directions:
+  `gh api` merged nothing (`403 — merging into a protected base
+  branch is not permitted for this session type`) while the MCP
+  connector merged the same PR the same minute, and separately the
+  session's own harness prompt declared `gh` unavailable while
+  `/usr/bin/gh` 2.45.0 answered a probe in one second. So each path
+  can do something the other cannot, and the ladder's R2(b) rung —
+  "if gh succeeds, COMMAND CONTINUES" — silently assumes a merge
+  that a cloud seat cannot perform. Worth splitting the dependency
+  map by ACT rather than by path. (2026-08-04, flight 4's cockpit)
+  → [the fence PR](https://github.com/wsher0901/roam/pull/303)
+- ⏳ A FIFTEEN-MINUTE WINDOW IS STILL TOO NARROW WHEN THE COCKPIT
+  IS BORN INTO IT — flight 4 widened the answerable window from
+  under two minutes to fifteen and it STILL closed unused, by about
+  two minutes. The reason is not the width: the lane reached its
+  checkpoint at 20:53:52 and the cockpit was fired at 20:55:00, so
+  the window was already running before the cockpit existed, and
+  the cockpit spent its first four minutes deriving state and
+  seating itself (both mandatory, neither skippable). The founder's
+  word landed at 21:11 against a 21:08:52 close. The fix is
+  probably ordering, not duration — fire the cockpit BEFORE the
+  lane is licensed, so the tower is seated when the window opens.
+  (2026-08-04, flight 4's cockpit) →
+  [the drill's log](https://github.com/wsher0901/roam/pull/303)
+- ⏳ THE SELF-SEAT BATON WORDING IS LAW AND THIS FLIGHT DID NOT
+  MATCH IT — [handoff §4's case table](skills/handoff.md#4--repaint-dashboard-the-board-spec--single-source)
+  fixes the cockpit's seat line as `COCKPIT — live since <t>
+  (liftoff) · <url>`, and flight 4's cockpit painted `COCKPIT —
+  SEATED <t> · <url>` instead. Nothing broke and the MODE P
+  repaint has already replaced the line, but the table says the
+  wording is law and each writer CITES the row rather than
+  restating it — so a writer working from the charter's rule 1
+  alone never sees the row. The charter's self-seat sentence could
+  carry the link. (2026-08-04, flight 4's cockpit) →
+  [#306](https://github.com/wsher0901/roam/pull/306)
+- ⏳ THE SUMMON ONE-LINER HAS NO WRITTEN HOME — [SETUP](SETUP.md)
+  and [HOME](HOME.md) both carry the RECIPE ("push ONE empty commit
+  to the reserved branch `ops/summon`") and
+  `.github/workflows/summon.yml` confirms the trigger, but no file
+  carries a command a founder can paste. Rung 4 is the self-rescue
+  path, reached only when everything above it has failed, so the
+  moment it is needed is the worst possible moment to be composing
+  git plumbing from prose. Either write the literal command into
+  SETUP beside the recipe, or add an npm script. Found while
+  preparing flight 4's post-landing duty, where the desk is told to
+  hand over the "exact one-liner, never improvised" and the record
+  cannot supply one. (2026-08-04, flight 4's liftoff) →
+  [SETUP §cloud accounts](SETUP.md#once-and-done--cloud-accounts)
 - ⏳ **MASTER ITEM** · THE TOMBSTONE LINE LIES UNDER DESK TAKEOVER —
   [the charter](COCKPIT-CHARTER.md)'s rule 8 makes a retiring seat
   say "a replacement cockpit has been summoned and will greet you;
