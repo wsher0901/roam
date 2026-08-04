@@ -1,7 +1,8 @@
 ---
-type: memory
-id: home-hook-row
-updated: 2026-08-04 16:34 UTC · adopted at the desk by pickup · work PC
+type: history
+slug: home-hook-row
+shipped: 2026-08-04 16:44
+pr: 280
 ---
 # home-hook-row — the hook that enforces the close-lock gets a row
 
@@ -9,7 +10,7 @@ updated: 2026-08-04 16:34 UTC · adopted at the desk by pickup · work PC
 complete, awaiting merge — 2026-08-04
 
 ADOPTED AT THE DESK. The founder answered `local home-hook-row` at
-[pickup §6](../skills/pickup.md#6--fleet-resume-on-the-founders-answer)
+[pickup §6](../../../../skills/pickup.md#6--fleet-resume-on-the-founders-answer)
 on 2026-08-04; the work PC took this branch for zero cap runs and
 the bench became this seat's ordinary gate-standing work. The
 payload is unchanged by the adoption — the Status returns to the
@@ -17,19 +18,19 @@ completion state the fence replaced.
 
 WHAT REMAINS IS THE FOUNDER'S MERGE WORD on
 [#280](https://github.com/wsher0901/roam/pull/280), then
-[ship](../skills/ship.md)'s weld. The mandate is fully met — the row
+[ship](../../../../skills/ship.md)'s weld. The mandate is fully met — the row
 plus the five-finding audit, reported and not fixed, which is what
 the spec asked for — and the cockpit's independent review re-read
 the hook itself and re-checked three of the five findings before
 agreeing
 ([the verdict](https://github.com/wsher0901/roam/pull/280#issuecomment-5181505025)),
-so [no-solo-approval](../LAWS.md#workflow-non-negotiable) is already
+so [no-solo-approval](../../../../LAWS.md#workflow-non-negotiable) is already
 satisfied by a non-author seat. THE FIVE AUDIT FINDINGS REMAIN
 GROUND TRIAGE for after the weld, never for this bench.
 
 THE FENCE THIS REPLACED, kept because the flight is the record:
 `held — landed for local pickup 2026-08-04`, written by
-[land](../skills/land.md) MODE P at 16:02 UTC on the founder's
+[land](../../../../skills/land.md) MODE P at 16:02 UTC on the founder's
 freeze word.
 
 THE LANE ASKED FOR THAT FENCE BY NAME, and the fence answered it.
@@ -46,7 +47,7 @@ That is the measurement flight 2 produced instead of the pass it
 went looking for.
 
 LANE C of FLIGHT 2 flew on its second dispatch and landed its
-cargo. The row is in [HOME](../HOME.md)'s files table, the
+cargo. The row is in [HOME](../../../../HOME.md)'s files table, the
 end-to-end audit the spec asked for is run and reported (five
 findings below, none of them fixed here — that was the mandate),
 main is merged in, the full verification loop is green locally, and
@@ -63,13 +64,13 @@ bench. Whatever Status a fence writes here outranks this line, and
 this lane self-terminates on sight of one it does not own.
 
 ## What this task is
-[HOME](../HOME.md)'s files table documents two of the three hooks.
+[HOME](../../../../HOME.md)'s files table documents two of the three hooks.
 `.claude/hooks/user-prompt-submit.mjs` — the one that enforces the
 close-lock, making a closed session read-only conversational rather
 than dead — has no row. This bench writes it.
 
 Scope edges and the full mandate:
-[the spec](../record/specs/home-hook-row.md). The two files this
+[the spec](../../../specs/home-hook-row.md). The two files this
 lane may touch are named there and are not negotiable — flight 2
 flies three lanes at once, and disjointness is what keeps them from
 colliding.
@@ -128,12 +129,12 @@ clock read.
 
 ## Left / idle
 Nothing of the mandate. Every Done-means line in
-[the spec](../record/specs/home-hook-row.md) is met, including the
+[the spec](../../../specs/home-hook-row.md) is met, including the
 honest-answer clause — the audit found further undocumented files,
 so they are listed rather than the "none found" alternative.
 
 Left for the GROUND, never for this lane: the merge and the
-founder's word; the [IDEAS](../IDEAS.md) line this repair closes,
+founder's word; the [IDEAS](../../../../IDEAS.md) line this repair closes,
 closed at the ground after the weld; and triage of the five
 findings, of which the `.claude/agents/reviewer.md` gap is the one
 that most resembles the miss this bench just repaired.
@@ -223,7 +224,7 @@ after.)
 2026-08-04 15:38 UTC · airborne ack · cloud — THE COCKPIT ACKS.
 Status above now begins with the token, written character for
 character from
-[§Canary](../skills/parallel-lanes.md#canary-handshake-both-sides)
+[§Canary](../../../../skills/parallel-lanes.md#canary-handshake-both-sides)
 and pushed as a commit, which is the only channel that licenses
 anything. LANE C IS WORKING, and it is the last lane of flight 2
 still able to be interrupted: A and B are finished and standing at
@@ -260,7 +261,7 @@ them):
    siblings in `.claude/` (settings, all three hooks, the skill
    stubs) all have rows. HOME mentions it once in prose. It defines
    the reviewer subagent that
-   [no-solo-approval](../LAWS.md#workflow-non-negotiable) leans on,
+   [no-solo-approval](../../../../LAWS.md#workflow-non-negotiable) leans on,
    so a reader scanning the table for what enforces review finds
    nothing.
 2. `.claude/vault-seed/` (`bookmarks.json`, `graph.json`) — NO ROW
@@ -268,19 +269,19 @@ them):
    this manual entirely.
 3. `scripts/*.mjs` — the five scripts have no rows, and
    `check-links.mjs` appears by filename in NEITHER HOME nor
-   [SETUP](../SETUP.md). `npm run check:links` is named in the
+   [SETUP](../../../../SETUP.md). `npm run check:links` is named in the
    Done-means of nearly every bench in this repo; the thing those
    Done-means invoke has no documented home under its own name.
 4. `.github/workflows/ci.yml` and `summon.yml` — no rows; both
    prose-mentioned. CI is the arbiter
-   ([D-038](../record/DECISIONS.md#d-038--ci-is-the-arbiter)) and
+   ([D-038](../../../DECISIONS.md#d-038--ci-is-the-arbiter)) and
    summon fires the cockpit, so both are load-bearing.
 5. Root build and toolchain config — `package.json`,
    `next.config.ts`, `tsconfig.json`, `vercel.json`,
    `vitest.config.ts`, `eslint.config.mjs`, `postcss.config.mjs`,
    `components.json`, `.prettierrc`, `.gitattributes`: no rows,
    consistently. THIS ONE IS A NULL RESULT, NOT A GAP — the
-   consistency reads as deliberate and [SETUP §Stack](../SETUP.md#stack)
+   consistency reads as deliberate and [SETUP §Stack](../../../../SETUP.md#stack)
    is their home. Recorded so the next reader does not re-derive it.
 
 One tempting explanation was TESTED AND FAILS: "SETUP covers it, so
@@ -356,15 +357,15 @@ this flight has now produced two live cases where it was the whole
 defence.
 
 ## Where to look
-- [the spec](../record/specs/home-hook-row.md) — the mandate, the
+- [the spec](../../../specs/home-hook-row.md) — the mandate, the
   fleet law, and Done-means.
-- [§The files](../HOME.md#the-files--what-each-one-is-for) — the
+- [§The files](../../../../HOME.md#the-files--what-each-one-is-for) — the
   table under edit; the two sibling hook rows show the shape.
 - `.claude/hooks/user-prompt-submit.mjs` — read it before describing
   it; the lane may read what it may not write.
-- [IDEAS](../IDEAS.md) — the line this repair closes, closed at the
+- [IDEAS](../../../../IDEAS.md) — the line this repair closes, closed at the
   ground after the weld and never by this lane; the
   destination-blind-links-gate line is its neighbour and stays open.
 
 ## Status vocabulary
-See [TEMPLATE](TEMPLATE.md).
+See [TEMPLATE](../../../../memory/TEMPLATE.md).

@@ -2,10 +2,12 @@
 type: spec
 id: home-hook-row
 title: HOME's files table gains the third hook row
-status: draft
+status: shipped
 stage: workshop
 branch: docs/home-hook-row
 opened: 2026-08-04
+shipped: 2026-08-04
+pr: 280
 ---
 
 # home-hook-row — the hook that enforces the close-lock gets a row
