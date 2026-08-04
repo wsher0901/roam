@@ -1,7 +1,7 @@
 ---
 type: memory
 id: canary-ack-commit
-updated: 2026-08-04 15:00 UTC · airborne ack · work PC
+updated: 2026-08-04 15:02 UTC · payload written · cloud
 ---
 # canary-ack-commit — a lane reads its licence from the branch
 
@@ -71,11 +71,65 @@ finding" clause:
   reliable identifier the contract never mentions, and without it a
   fleet lane must guess and race its siblings for a bench. Worth a
   line in the lane-worker master.
-- THE CLOUD SEAT'S GIT IDENTITY WAS `Claude
-  <noreply@anthropic.com>` on arrival, exactly as lane B's bench
-  predicts; this lane set it from main's existing convention before
-  committing. Independent confirmation of lane B's cargo, observed
-  rather than inferred.
+- THE CLOUD SEAT'S GIT IDENTITY WAS THE DEFAULT ON ARRIVAL —
+  user.name `Claude`, user.email the anthropic no-reply address —
+  exactly as lane B's bench predicts; this lane set it from main's
+  existing convention before committing. Independent confirmation
+  of lane B's cargo, observed rather than inferred. (Writing that
+  address in angle brackets fails `check:memory`, which reads
+  `<…>` as an unresolved placeholder — a fourth small friction,
+  and the checker is right to be blunt about it.)
+
+2026-08-04 15:00 UTC · licensed · cloud — THE ACK ARRIVED AS THE
+RULE SAYS IT SHOULD, and this lane proved the rule by obeying it
+before writing it. The licence was not read from anything delivered
+to the session: a poller fetched `origin/fix/canary-ack-commit`
+every 30 s and read the Status line out of the file AS ORIGIN HELD
+IT, tested with
+[§Canary](../skills/parallel-lanes.md#canary-handshake-both-sides)'s
+matcher exactly as written — `airborne ·`, anchored at the start of
+the line, middot included. It matched at 14:59:30 UTC on commit
+`27dde18`, authored by the founder's GitHub identity. Nothing
+resembling flight 1's false ack arrived this time; had one, the
+check would have been unmoved, because it never looked at messages
+at all.
+
+A THIRD FRICTION, and the one this bench most wanted to meet: A
+SECOND `pull_request.labeled` FIRING REACHED THIS SESSION at 14:59
+UTC, carrying the BIRTH head SHA `ae7d826` — already two commits
+stale. That is the redelivery
+[§Cloud spawn](../skills/parallel-lanes.md#cloud-spawn--route-ladder)
+records from 2026-07-16, met live a second time. It cost nothing:
+[§Wake-lock](../skills/parallel-lanes.md#wake-lock--parking)'s
+re-read-Status-first rule ran on the wake, found this lane's own
+non-terminal Status on origin, and the firing died harmless. Worth
+noting that the redelivery's own payload is exactly the kind of
+message the new rule refuses to treat as licence — it named a head
+SHA, not an ack, but it arrived with the authority of the trigger.
+
+2026-08-04 15:02 UTC · the payload decision · cloud — the edit is
+THREE TOUCHES rather than one paragraph, because the Done-means asks
+for the rule where the LANE reads it and not only in prose above the
+bullets:
+
+- A new `THE LICENCE IS A COMMIT ON ORIGIN` paragraph, third in the
+  section's existing run of capitalised lead-ins after `THE ACK
+  TOKEN` and `THE MATCH IS ANCHORED`. It names the 2026-08-04
+  incident the way the section already names its 2026-07-22 pair —
+  dated, PR-linked, lived — and states honestly what neither seat
+  could observe: what produced the false message.
+- The LANE-SIDE bullet gains the operative sentence: what it waits
+  for is a COMMIT — fetch the branch and read the Status as origin
+  holds it, never from a message arriving in the session, and never
+  from the working copy alone.
+- The BATON-HOLDER bullet's bare "Push." becomes "Push — AND THE
+  PUSH IS THE ACK", closing the reading in which telling the lane by
+  some other channel would do.
+
+THE DEFERRED QUESTION CAME OUT UNRULED, and that was checked rather
+than merely intended: the diff touches no line of the `THE MATCH IS
+ANCHORED` paragraph, so what the matcher anchors on is exactly what
+it was.
 
 ## Where to look
 - [the spec](../record/specs/canary-ack-commit.md) — the mandate,
