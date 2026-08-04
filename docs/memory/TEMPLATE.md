@@ -61,6 +61,14 @@ copied here exactly, middots and all. Write it character-for-character;
 a near-miss is invisible to the lane (proven live 2026-07-22 —
 an em-dash ack cost a flight its handshake).
 
+Every `<date>` slot below is load-bearing: `scripts/check-memory.mjs`
+demands a `YYYY-MM-DD` stamp in the Status BODY, so a row copied
+verbatim without one goes red — which flight 2's lanes A
+([#278](https://github.com/wsher0901/roam/pull/278)) and B
+([#279](https://github.com/wsher0901/roam/pull/279)) each discovered
+independently on 2026-08-04, evidence about the table rather than
+about either seat.
+
 | State | Written by | Licenses |
 |---|---|---|
 | bench ready | baton-holder, at birth | claiming |
@@ -75,5 +83,5 @@ an em-dash ack cost a flight its handshake).
 | cloud spawn failed — <reason> | baton-holder, + the board's In-flight row (+ Needs-you mirror) | nothing — founder decides |
 | failed — <reason · date> | the lane (genuine error) or baton-holder | nothing — founder decides |
 | superseded — <by> | baton-holder | self-terminate on sight |
-| complete, awaiting merge | the finishing session | THE GATE |
+| complete, awaiting merge — <date> | the finishing session | THE GATE |
 | shipped — merged #N | ship's weld (the memory moves to record/history/) | nothing — the bench is done |
