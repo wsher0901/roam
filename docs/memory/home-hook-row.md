@@ -1,12 +1,12 @@
 ---
 type: memory
 id: home-hook-row
-updated: 2026-08-04 15:45 UTC · completion · cloud
+updated: 2026-08-04 15:47 UTC · completion · cloud
 ---
 # home-hook-row — the hook that enforces the close-lock gets a row
 
 ## Status
-complete, awaiting merge — 2026-08-04 15:45 UTC
+complete, awaiting merge — 2026-08-04 15:47 UTC
 
 LANE C of FLIGHT 2 flew on its second dispatch and landed its
 cargo. The row is in [HOME](../HOME.md)'s files table, the
@@ -38,16 +38,34 @@ flies three lanes at once, and disjointness is what keeps them from
 colliding.
 
 ## Pending issues
-None blocking, and the one that stood at birth is ANSWERED. The
-first spawn produced no session; the open question was whether
-route 1 is unreliable for a bench that has already been labeled
-once. It is not — the second dispatch on this same bench woke,
-canaried inside a minute, and flew. So the first spawn's silence
-was a ONE-OFF IN THE DISPATCH, not a property of re-labeling, and
-`re-spawn` is a working remedy rather than a hopeful one. What
-caused the first miss remains unknown from any seat with a git
-clone, and the routine's run history — a UI surface — is still the
-only place that could say.
+None blocking, and the birth question is ANSWERED — though NOT in
+the direction this lane first wrote, and the correction is the
+useful part.
+
+THE FIRST SPAWN WAS NEVER LOST. It was LATE. A cloud session did
+reach this bench at 15:21 UTC — ~27 minutes after the 14:54:43Z
+label, against a ~10-minute canary window — found the Status
+already reading `cloud spawn failed … parked`, and self-terminated
+without claiming, exactly as the wake-lock requires. It said so in
+a PR comment at 15:22, and that comment is the evidence; this lane
+had written "the first spawn produced no session" from the ground's
+15:08 view before reading it. The ground could not see the arrival;
+the arriving session could, and reported it.
+
+So the failure mode is DISPATCH LATENCY EXCEEDING THE CANARY
+WINDOW, not a dead trigger — a materially different repair from the
+one a lost-spawn diagnosis would suggest. This lane's own arrival
+adds the other end of the range: the re-label at ~15:35 produced a
+session in about two minutes. Same route, same bench, ~27 min then
+~2 min. The variance is the finding, and the canary window is
+currently narrower than the observed spread.
+
+One consequence worth stating plainly for the ruling: because a
+label can produce a session long after the window closes, a
+re-spawn can put two sessions on one bench. THE WAKE-LOCK HOLDS —
+the loser meets a Status it does not own and dies, which is what
+happened at 15:21 — so the cost is a burned cap run, never
+split-brain work.
 
 The five audit findings are open by design: this lane reports, the
 ground triages. They are not blockers.
@@ -134,6 +152,17 @@ THIS BRANCH AT ORIGIN, fetched and read back with the anchored match
 — the Status line's first characters, never a substring, never the
 bare word, because this paragraph itself would satisfy a sloppier
 test.
+
+(CORRECTED at 15:47, and left standing rather than rewritten so the
+mistake is legible: the sentence above about route 1 was written
+before this lane read the PR, and it is wrong in an instructive
+way. The first dispatch DID arrive — 27 minutes late, at 15:21 —
+and died on the parked Status. "Silence from the ground" and "no
+session" are not the same claim, and this lane conflated them for
+ten minutes. The corrected reading is in Pending issues; the
+evidence was sitting in a PR comment the whole time, which is an
+argument for reading the PR before writing the diary rather than
+after.)
 
 2026-08-04 15:38 UTC · airborne ack · cloud — THE COCKPIT ACKS.
 Status above now begins with the token, written character for
