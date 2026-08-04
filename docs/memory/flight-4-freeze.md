@@ -1,23 +1,25 @@
 ---
 type: memory
 id: flight-4-freeze
-updated: 2026-08-04 20:50 UTC · airborne ack · work PC
+updated: 2026-08-04 20:53 UTC · the checkpoint · cloud lane
 ---
 
 # flight-4-freeze — the bench built to be caught mid-job
 
 ## Status
 
-airborne · cloud · 2026-08-04
+airborne · cloud · 2026-08-04 — AT THE CHECKPOINT, HOLDING
 
-LICENSED TO WORK. The canary landed at 20:49:22 UTC, 98 seconds
-after the `lane:cloud` label, and this ack commit is the licence —
-read it back from origin, not from any message.
+Step 1 of [the spec](../record/specs/flight-4-freeze.md)'s plan is
+done and pushed: the probe carries BORN and THE CHECKPOINT. THIS
+LANE IS NOW ALIVE AND STOPPED, which is the state the drill was
+built to produce. Step 2 is running — up to 15 minutes polling
+origin for an ack-to-proceed comment on
+[#303](https://github.com/wsher0901/roam/pull/303) or a fence
+commit, with NO fetch-and-rebase, so the hold's exit is a plain
+push attempt.
 
-Now run [the spec](../record/specs/flight-4-freeze.md)'s plan from
-step 1. THE CHECKPOINT IS THE JOB: push BORN and THE CHECKPOINT,
-then HOLD — and do NOT fetch-and-rebase during the hold, because
-the hold's exit must be a plain push attempt.
+A fence landing now meets a live worker. That is the whole point.
 
 ## What this task is
 
@@ -39,15 +41,48 @@ TWO FILES ONLY — the probe and this memory.
 
 ## Pending issues
 
-None. Waiting on the baton-holder's ack commit before real work
-begins.
+None. The lane is holding by design, not blocked.
 
 ## Left / idle
 
-The whole mandate. The next act is the baton-holder's ack, then
-step 1 of [the spec](../record/specs/flight-4-freeze.md)'s plan.
+The hold's outcome, and the probe section that records it — either
+the rejection, verbatim, or THE WINDOW CLOSED UNUSED. Nothing else
+is left.
+
+## Ideas surfaced
+
+- §Canary disagrees with itself about the ack token's middle field:
+  the canonical block reads `airborne · <url> · <date>`, the
+  baton-holder bullet says `airborne · <vehicle or url> · <date>`.
+  This flight's ack wrote a vehicle (`cloud`) — canonical under the
+  bullet, not under the block. Nothing broke; the section simply
+  cannot be quoted from one place. Detail in the probe's THE
+  CHECKPOINT.
+- A cloud lane's remote is not a constant across flights: flight 1
+  observed a local HTTP git proxy on `127.0.0.1`, this flight
+  observed `github.com` directly, same spawn route, a day apart.
+  Worth knowing before any doctrine is written that assumes one.
 
 ## The story
+
+2026-08-04 20:53 UTC · MOMENT 2, the checkpoint · cloud lane — the
+probe's BORN and THE CHECKPOINT are written and this commit pushes
+them. THE DECISION RECORDED HERE IS THE MATCHER: this lane armed
+the anchored test on the FULL token `airborne ·`, the form
+[§Canary](../skills/parallel-lanes.md#canary-handshake-both-sides)
+fixes, and not on the bare word that
+[flight 1](../record/probes/flight-1-shakedown.md) substituted and
+recorded as its most consequential finding. That choice is what
+makes this flight's handshake green a green for the contract rather
+than for a modified instrument. The ack itself arrived as commit
+`c08a079` at 20:50:12Z and was read back from origin at 20:50:27Z —
+85 seconds after the canary, ~14% of the window.
+
+A redelivered `pull_request.labeled` webhook citing the birth SHA
+`771bd45` — two commits stale — reached this session at ~20:50:2x.
+The wake-lock was obeyed: Status re-read from origin FIRST, no
+duplicate claim, no second canary. Third recorded occurrence of
+that redelivery, third harmless death.
 
 2026-08-04 20:48 UTC · canary claim · cloud lane — claimed by a
 cloud session on branch `docs/flight-4-freeze`, PR
