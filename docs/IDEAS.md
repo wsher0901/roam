@@ -19,6 +19,27 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
 
 ## Open
 
+- ⏳ RUNG 1'S BIRTH PROMPT ARRIVES UTF-8-MANGLED ON WINDOWS —
+  crossing the `--cloud` argument mojibakes the text, so a cockpit
+  is born reading a corrupted mandate. It cost this flight nothing
+  because [the charter](COCKPIT-CHARTER.md)'s rule 1 absorbed it —
+  a garbled birth prompt loses to the board, the same reflex as
+  "git outranks the note" — but that clause is a BACKSTOP, not a
+  fix. What it protects is only what the board already says; a
+  prompt that cannot be read cannot carry anything else, so the
+  one-line mandate is the part silently lost. (2026-08-04, the
+  founder) →
+  [liftoff §6](skills/liftoff.md#6--ledger-handoff--fire-the-cockpit)
+- ⏳ `check-memory.mjs` CANNOT SEE A CODE SPAN THAT WRAPS — it
+  strips backtick spans with a regex that forbids newlines inside
+  the span, so a legitimately backticked placeholder broken across
+  two source lines survives the strip and is reported unresolved.
+  The workaround it forces is "reflow your prose", which is a
+  formatting rule wearing a correctness rule's clothes. Hit live
+  while the lane was quoting the very row it had just amended.
+  Distinct from the angle-bracket line below: that one is the rule
+  being bluntly right, this one is the STRIP being wrong.
+  (2026-08-04, flight 3's lane) → `scripts/check-memory.mjs`
 - ⏳ LIFTOFF STAMPS THE FIRE TIME BEFORE IT FIRES — the baton line
   is painted into the board, and the board is welded, BEFORE the
   cockpit is launched, so `COCKPIT — fired <t>` names a moment
@@ -69,8 +90,10 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   desk never sees it because its clone was built once and stayed
   built. The three DOC gates run on bare node and pass before it,
   so a doc-cargo lane can verify itself before paying for an
-  install. Met independently by flight 1's cockpit and flight 2's
-  lanes B and C. (2026-08-04, flight 2 lane B) →
+  install. Met independently by flight 1's cockpit, flight 2's
+  lanes B and C, and flight 3's lane — four seats, which makes it a
+  property of the cloud path rather than a run of bad luck.
+  (2026-08-04, flight 2 lane B) →
   [ship §1](skills/ship.md#1--preflight)
 - ⏳ FLIGHT 4 — THE FAILURE DRILL: the connector rungs, summon, and
   the freeze checkpoint exercised together as DELIBERATE failures
@@ -180,7 +203,11 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   exactly as designed, and the point worth recording is that the
   wake-lock backstop is LOAD-BEARING rather than theoretical: the
   same rule made a live lane carry on and would have made a fresh
-  session self-terminate. (2026-08-04, flight 2 lanes A and C) →
+  session self-terminate. FLIGHT 3 MET A THIRD, citing the stale
+  birth SHA mid-handshake, absorbed the same way — and sharpened
+  the limit: all three landed on a lane that was WAITING, never
+  one mid-push, so the rejected-push rule stays unobserved.
+  (2026-08-04, flight 2 lanes A and C · flight 3's lane) →
   [§Wake-lock](skills/parallel-lanes.md#wake-lock--parking)
 - ⏳ `check:memory` READS ANY ANGLE-BRACKETED TEXT AS AN UNRESOLVED
   PLACEHOLDER, so a memory cannot quote an email address, a git
@@ -246,8 +273,11 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
 - ⏳ ON A ROUTE-1 CLOUD LANE THE READY-FLIP IS CONSUMED BY THE
   SPAWN, so the lane's completion contract carries a step that is
   a no-op and a signal that carries no information; the staged
-  `api-ignition` target is what would give it back. (2026-08-03,
-  flight 1) →
+  `api-ignition` target is what would give it back. REPRODUCED at
+  flight 3, which makes it a property of the route rather than an
+  incident — the memory Status is the only completion signal a
+  route-1 lane has. (2026-08-03, flight 1 · 2026-08-04, flight 3's
+  lane) →
   [§Cloud spawn](skills/parallel-lanes.md#cloud-spawn--route-ladder)
 - ⏳ LIFTOFF REPAINTS THE BOARD TWICE — §1's handoff paints a
   ground board and ships a micro-PR, then §6 overwrites it with the
