@@ -169,15 +169,51 @@ one phase per line:
   cannot be fixed by more of it; the property under test needs a
   lane that runs for tens of minutes, or a bench specced to hold at
   a checkpoint. → the flight-context line above · Needs-you 2
-- 🟡 LANE C'S FIRST SPAWN PRODUCED NO SESSION — the label
-  registered on GitHub and `count:runs` counted it, but nothing was
-  ever born; the phantom-label case, met live for the second time.
-  THE RESPAWN AT 15:35 ANSWERED ONE QUESTION: an identical label
-  cycle on the same PR canaried in two minutes, so the silence was
-  not caused by the bench having been labeled before. The first
-  failure's cause remains unknown from any seat with a git clone —
-  the routine's run history is a UI surface. → its bench memory, on
-  the branch behind [#280](https://github.com/wsher0901/roam/pull/280)
+- 🔴 THE CANARY WINDOW IS NARROWER THAN THE DISPATCH SPREAD — and
+  lane C's "spawn produced no session" was WRONG, corrected from
+  first-hand evidence. A cloud session DID reach that bench, at
+  15:21 UTC, ~27 minutes after the 14:54:43Z label and long past
+  the ~10-minute window; it found the parked Status, self-terminated
+  without claiming, and said so in a PR comment at 15:22 that names
+  its own stale clone head. The respawn's session arrived in ~2
+  minutes. SAME ROUTE, SAME BENCH, ~27 MIN THEN ~2 MIN: the failure
+  mode is DISPATCH LATENCY, not a dead trigger — a materially
+  different repair from the one a lost-spawn reading suggests, and
+  an argument for a window wider than the observed spread.
+  Consequence, already backstopped: a re-spawn can put two sessions
+  on one bench, and the wake-lock kills the loser at the cost of a
+  burned cap run, never split-brain work — which is exactly what
+  happened at 15:21.
+  → [the comment](https://github.com/wsher0901/roam/pull/280#issuecomment-5181103787)
+  · its bench memory, on the branch behind [#280](https://github.com/wsher0901/roam/pull/280)
+- 🔴 THE COCKPIT REPEATED THE WRONG DIAGNOSIS FOR 25 MINUTES, and
+  the reason is worth more than the error. It read
+  [#280](https://github.com/wsher0901/roam/pull/280)'s metadata
+  before the respawn, saw `comments: 2`, and did not open them; the
+  contradicting evidence was one call away and sat unread from
+  15:22 to 15:47. The board it painted, and the advice it gave the
+  founder, both carried "no session was ever born" as fact. NOTHING
+  IN THE WORKSHOP CATCHES THIS: a PR's comments are the lane's only
+  channel for what a git clone cannot show, and no gate, ritual or
+  law requires reading them before acting on a bench.
+  → its line in [IDEAS](IDEAS.md), when the harvest runs
+- 🟡 A LANE'S STAMPS DRIFTED ~2.5 MINUTES INTO THE FUTURE — lane C
+  read the shell clock once on waking and extrapolated the rest
+  from the shape of its own work, so a completion carried `15:47`
+  while the clock read `15:45:54`. It caught and corrected itself.
+  A live breach of the derivation law's second half, and EVERY GATE
+  PASSED IT: `check:memory`, `check:links` and CI were all green,
+  because a plausible stamp is indistinguishable from a true one.
+  → its bench memory, on the branch behind [#280](https://github.com/wsher0901/roam/pull/280)
+- 🟡 A REDELIVERED `pull_request.labeled` CAUGHT LIVE — a second
+  event fired for [#280](https://github.com/wsher0901/roam/pull/280)
+  at ~15:46 citing head `8400157`, five commits behind the branch.
+  The lane re-read its Status from origin, found a line it owned,
+  and carried on; a FRESH session would have found the same line,
+  not owned it, and self-terminated. Same rule, two seats, two
+  correct opposite actions — the read-origin-first rule doing the
+  whole job.
+  → its bench memory, on the branch behind [#280](https://github.com/wsher0901/roam/pull/280)
 - ⏳ THE FALSE ACK — flight 1's sharpest finding: a message
   carrying a well-formed ack token reached a lane before any ack
   existed, and only a check against origin caught it. NOW IN
