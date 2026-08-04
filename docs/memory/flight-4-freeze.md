@@ -1,25 +1,25 @@
 ---
 type: memory
 id: flight-4-freeze
-updated: 2026-08-04 20:53 UTC · the checkpoint · cloud lane
+updated: 2026-08-04 21:10 UTC · the hold closed unused · cloud lane
 ---
 
 # flight-4-freeze — the bench built to be caught mid-job
 
 ## Status
 
-airborne · cloud · 2026-08-04 — AT THE CHECKPOINT, HOLDING
+airborne · cloud · 2026-08-04 — THE HOLD CLOSED UNUSED, exiting
 
-Step 1 of [the spec](../record/specs/flight-4-freeze.md)'s plan is
-done and pushed: the probe carries BORN and THE CHECKPOINT. THIS
-LANE IS NOW ALIVE AND STOPPED, which is the state the drill was
-built to produce. Step 2 is running — up to 15 minutes polling
-origin for an ack-to-proceed comment on
-[#303](https://github.com/wsher0901/roam/pull/303) or a fence
-commit, with NO fetch-and-rebase, so the hold's exit is a plain
-push attempt.
+The hold ran its full 15 minutes (20:54:32Z → 21:09:49Z) and NO
+FENCE ARRIVED: origin's head never moved off `d5347ca` and no
+ack-to-proceed comment reached
+[#303](https://github.com/wsher0901/roam/pull/303). That is the
+null result [the spec](../record/specs/flight-4-freeze.md) names,
+and it is written as one — never a staged rejection.
 
-A fence landing now meets a live worker. That is the whole point.
+The lane held with `ls-remote` only, performing NO fetch at all, so
+the no-rebase instruction held by construction rather than by
+discipline. The exit is the plain push attempt the spec requires.
 
 ## What this task is
 
@@ -41,13 +41,12 @@ TWO FILES ONLY — the probe and this memory.
 
 ## Pending issues
 
-None. The lane is holding by design, not blocked.
+None. The hold is over and nothing is blocked.
 
 ## Left / idle
 
-The hold's outcome, and the probe section that records it — either
-the rejection, verbatim, or THE WINDOW CLOSED UNUSED. Nothing else
-is left.
+The exit push's own outcome, which is the last thing this flight
+observes and goes into the probe's THE EXIT PUSH from git's report.
 
 ## Ideas surfaced
 
@@ -62,8 +61,38 @@ is left.
   observed a local HTTP git proxy on `127.0.0.1`, this flight
   observed `github.com` directly, same spawn route, a day apart.
   Worth knowing before any doctrine is written that assumes one.
+- The freeze drill's apparatus works and is re-flyable as-is; only
+  the fence was missing. If it is re-flown, the variable to change
+  is the fence side — the hold produced a live, stopped worker for
+  16 minutes and would have produced one for any window asked of
+  it. Whether 15 minutes is enough for a fence to be summoned is
+  not a lane's call.
+- A lane holding for a signal should poll with `git ls-remote`, not
+  `git fetch`: it reads origin without writing local refs, so no
+  later step can fast-forward past what it was watching for. Cheap,
+  and it makes a whole class of self-inflicted contamination
+  impossible. Candidate line for
+  [§Wake-lock](../skills/parallel-lanes.md#wake-lock--parking).
 
 ## The story
+
+2026-08-04 21:10 UTC · the hold closed unused · cloud lane — the
+15-minute window ran out with origin's head unmoved at `d5347ca`
+and no ack-to-proceed comment on
+[#303](https://github.com/wsher0901/roam/pull/303). The bench held
+the alive-and-stopped state for the whole window — the state three
+previous flights could not offer a fence — and the fence did not
+come. THE RULE UNDER TEST IS STILL UNOBSERVED, but for a new
+reason: before, there was no live worker to stop; this time there
+was one, and no event arrived. WHY is not observable from this
+seat, and the probe says so rather than guessing.
+
+One instrument decision worth keeping: the hold polled with
+`git ls-remote` and never fetched, so a fast-forward past a fence
+was impossible by construction rather than avoided by discipline.
+For a drill whose experiment a single reflexive `git pull` would
+destroy, that is the difference between a safeguard and an
+intention.
 
 2026-08-04 20:53 UTC · MOMENT 2, the checkpoint · cloud lane — the
 probe's BORN and THE CHECKPOINT are written and this commit pushes

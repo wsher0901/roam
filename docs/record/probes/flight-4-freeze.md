@@ -225,6 +225,81 @@ is met as a rejected push. That rejection, if it comes, is the
 drill's entire object; if it does not come, the honest null result
 is.
 
+## THE WINDOW CLOSED UNUSED
+
+**No fence arrived. This section is the honest null result, and it
+is written because nothing else happened — not as a fallback for a
+rejection this lane failed to produce.**
+
+What the hold actually was, as this seat ran it:
+
+| Fact | Value | How this seat saw it |
+|---|---|---|
+| Checkpoint push | `d5347ca`, **20:53:54Z** | git's push report |
+| Hold's first read of origin | **20:54:32Z** | the poll's own first line |
+| Hold deadline | **21:09:32Z** — 15 minutes, as the spec fixes it | computed at hold start, printed |
+| Poll instrument | `git ls-remote origin refs/heads/docs/flight-4-freeze`, every 20s | the script |
+| Fetches performed during the hold | **none** | the local `origin/docs/flight-4-freeze` ref still read `d5347ca` at exit |
+| Origin head at timeout | `d5347ca` — unmoved for the whole window | the poll's final read, **21:09:49Z** |
+| PR comments during the hold | one, the Vercel bot's, `created_at` 20:47:15Z — no ack-to-proceed | four GitHub API reads across the window |
+
+**THE NO-REBASE INSTRUCTION WAS HONOURED BY CONSTRUCTION, NOT BY
+DISCIPLINE.** [The spec](../specs/flight-4-freeze.md) forbids
+fetch-and-rebase during the hold; this lane went one step stricter
+and performed **no fetch at all**, polling with `ls-remote`, which
+reads the remote's ref without writing anything into the local
+repository. The difference matters for a drill: a lane that merely
+resolves not to rebase can still be undone by a habit, and the
+experiment it destroys is unrecoverable. A lane that never fetches
+cannot fast-forward past a fence even by accident. The local
+`origin/docs/flight-4-freeze` ref reading `d5347ca` at exit is the
+evidence, and it is checkable by anyone from the reflog.
+
+**What this flight established, and what it did not.**
+
+- ✅ **OBSERVED — the bench reached the alive-and-stopped state the
+  drill needed.** From the checkpoint push at 20:53:54Z until this
+  section was written, a worker sat on this branch, licensed,
+  mid-job, with its next act pending. That state is what three
+  previous flights could not offer a fence, and it existed here for
+  the full specced window.
+- ✅ **OBSERVED — the window was real and its edges are stamped.**
+  Roughly sixteen minutes, 20:53:54Z to the exit push below, during
+  which any commit landing on `docs/flight-4-freeze` would have met
+  a live worker rather than a finished one.
+- ❌ **THE RULE UNDER TEST REMAINS UNOBSERVED, for the fourth
+  flight — but for a NEW reason, and the distinction is the
+  finding.** Flights 1 through 3 missed
+  [the wake-lock's rejected-push rule](../../skills/parallel-lanes.md#wake-lock--parking)
+  because every fence landed on a bench that had already finished:
+  there was no live worker to stop. This flight had the live
+  worker and did not get the fence. The apparatus was the missing
+  half before; this time the apparatus was ready and the event
+  never came.
+- **WHY NO FENCE ARRIVED IS *not observable from this seat*.**
+  Whether the cockpit was watching for the checkpoint push, whether
+  a fence was attempted and failed, whether the seat that would
+  land it was occupied at all — none of that is readable from a
+  lane. This log records that no commit reached the branch and no
+  comment reached the PR inside the window, and stops there. The
+  cause belongs to whoever can see it.
+
+**THE EXIT WAS A PLAIN PUSH ATTEMPT, as specced.** The hold ended
+with the commit carrying this section pushed without a preceding
+fetch, merge, or rebase — so that a fence landed meanwhile would
+have been met as a rejection and nothing else. Its outcome is
+recorded immediately below, from git's own report rather than from
+expectation.
+
+## THE EXIT PUSH
+
+*Recorded after the attempt, from git's report.*
+
+Everything above this heading was pushed as one commit; whether
+that push was accepted or refused is the last thing this flight
+observes, and it is written into this section from the push's own
+output.
+
 Sources:
 [the spec](../specs/flight-4-freeze.md) ·
 [flight 1's log](flight-1-shakedown.md) ·
