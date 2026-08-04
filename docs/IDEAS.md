@@ -19,6 +19,19 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
 
 ## Open
 
+- ⏳ THE SESSION-START BRANCH SWEEP IS BLIND TO A BRANCH THAT
+  CARRIES NO UPSTREAM — it filters `git branch -vv` for
+  `[origin/…: gone]`, a marker git prints only when the local
+  branch has upstream tracking config, so a branch never pushed
+  with `-u` (or one whose config was lost) shows no bracket at all
+  and survives every sweep forever, long after its work has
+  shipped. Found when `docs/flight-1-probe` outlived the merge of
+  [#268](https://github.com/wsher0901/roam/pull/268) and had to be
+  removed by hand at pickup. Reproduced both ways at the desk: with
+  the upstream config restored the sweep catches it, so the squash
+  merge is NOT the cause and an ancestry test is not the fix — the
+  sweep needs a second arm for the no-upstream case. (2026-08-04,
+  the founder + pickup) → `.claude/hooks/session-start.mjs`
 - ⏳ THE ACK MUST BE A COMMIT ON ORIGIN, NEVER A MESSAGE — during
   flight 1's repair leg a message reached the lane carrying a
   well-formed ack token naming the cockpit's real session URL,
