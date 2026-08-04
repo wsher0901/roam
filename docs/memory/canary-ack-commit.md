@@ -1,12 +1,12 @@
 ---
 type: memory
 id: canary-ack-commit
-updated: 2026-08-04 14:58 UTC · canary claim · cloud
+updated: 2026-08-04 15:00 UTC · airborne ack · work PC
 ---
 # canary-ack-commit — a lane reads its licence from the branch
 
 ## Status
-claimed by cloud — 2026-08-04
+airborne · cloud · 2026-08-04
 
 Born bench-first at the desk, 2026-08-04, as LANE A of FLIGHT 2. A
 cloud lane woke on the `lane:cloud` label at 14:56 UTC and claims
