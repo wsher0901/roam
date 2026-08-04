@@ -1,17 +1,19 @@
 ---
 type: memory
 id: cloud-git-identity
-updated: 2026-08-04 15:02 UTC · payload complete · cloud
+updated: 2026-08-04 15:04 UTC · completion · cloud
 ---
 # cloud-git-identity — the third seat joins the one-time list
 
 ## Status
-airborne · cloud · 2026-08-04
+complete, awaiting merge — 2026-08-04
 
-Payload written and the CI mirror is green locally. The lane is at
-its fourth diary moment: the next acts are the push, the Actions
-check on the pushed head, the ready-flip and the completion comment.
-The lane does not merge.
+The payload is on origin at `9a522fa` and that pushed head's Actions
+run is GREEN (`checks` ✓, 15:03 UTC) — not merely local green. The
+PR was already ready when the lane arrived, route 1 having flipped
+it to fire the label, so there was no flip left to perform; the lane
+says so rather than claiming the act. What remains is the founder's:
+an external review, then the word. THE LANE DOES NOT MERGE.
 
 ## What this task is
 [machine-setup](../skills/machine-setup.md)'s one-time list gives a
@@ -129,6 +131,30 @@ rare rejection rather than about every commit a cloud seat makes.
    designed, but it means the step arrives already proven on exactly
    one seat and never yet run by a seat that read it — the first
    cloud lane to follow it cold is the real test.
+5. THE REDELIVERED LABEL EVENT FIRED AGAIN, AND THE WAKE-LOCK HELD
+   AGAIN. At 15:03 UTC a second `pull_request.labeled` webhook
+   arrived for this PR citing head `aa3f8c4` — the bench-birth
+   commit, three commits stale. This is the case
+   [§Cloud spawn](../skills/parallel-lanes.md#cloud-spawn--route-ladder)
+   records from 2026-07-16, but that instance woke a lane that had
+   not started; this one hit a lane MID-FLIGHT, between its payload
+   push and its completion comment. The rule did its job unchanged:
+   re-read Status from origin FIRST, find `airborne · cloud ·
+   2026-08-04` — non-terminal and this lane's own — and therefore
+   neither re-canary nor restart, but continue in place. Worth
+   noting because the stale SHA is what makes the duplicate legible;
+   a redelivery citing the CURRENT head would be indistinguishable
+   from a fresh spawn on the Status check alone, and only the
+   already-claimed Status would stop it.
+6. `complete, awaiting merge` WRITTEN VERBATIM FAILS THE GATE. It is
+   the one row in [TEMPLATE](TEMPLATE.md)'s vocabulary carrying no
+   `<date>` placeholder, while `check:memory` requires a YYYY-MM-DD
+   stamp somewhere in the Status body — so a lane that copies the
+   table exactly, as this one did, goes red with "Status carries no
+   date". Prose elsewhere in the body satisfies it, which is why the
+   gap has survived; a lane writing a terse Status trips it. Cheap
+   fix either way — a `— <date>` in that row, or the checker
+   exempting it — but it is the founder's call, not this lane's.
 
 ## Where to look
 - [the spec](../record/specs/cloud-git-identity.md) — the mandate,
