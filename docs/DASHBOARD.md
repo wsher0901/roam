@@ -6,41 +6,46 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-08-04 · 20:51 UTC by liftoff · from work PC
-FLIGHT 4 IS THE FLIGHT PLAN — 1 lane airborne, cockpit firing ·
-needs-you 1 (expected, not yet owed) · git outranks this board. How
-to read it → [HOME §Reading the board](HOME.md#reading-the-board)
+Painted 2026-08-04 · 20:59 UTC by cockpit self-seat · from cloud
+FLIGHT 4 IS THE FLIGHT PLAN — 1 lane at the checkpoint and HOLDING,
+cockpit seated · needs-you 1 (OWED NOW, and it expires) · git
+outranks this board. How to read it →
+[HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
 
-1. 🟡 **"GROUND THE FLEET" — WHEN THE COCKPIT PINGS YOU, AND NOT
-   BEFORE.** The cockpit will push you ONE message the moment the
-   lane's checkpoint commit lands: *"THE WINDOW IS OPEN — the lane
-   holds until `<t+15m UTC>`. Say 'ground the fleet'."* Those three
-   words, in the cockpit's thread, fire
-   [land](skills/land.md) MODE P, whose fence is the whole
-   experiment. THE WINDOW IS 15 MINUTES WIDE AND IT IS THE FIRST
-   ONE EVER BUILT TO BE ANSWERABLE — flights 1–3 measured windows
-   under two minutes, too narrow for a human. Saying nothing is
-   also a result: the lane writes THE WINDOW CLOSED UNUSED and
-   completes honestly. (since 08-04)
+1. 🟡 **"GROUND THE FLEET" — THE WINDOW IS OPEN AND IT CLOSES
+   21:08:52 UTC.** The lane's checkpoint commit landed
+   (`d5347ca`, pushed 20:53:52 UTC) and the lane is now alive and
+   stopped, polling origin for up to 15 minutes. Those three words,
+   in the cockpit's thread, fire [land](skills/land.md) MODE P,
+   whose fence is the whole experiment. THE WINDOW IS 15 MINUTES
+   WIDE AND IT IS THE FIRST ONE EVER BUILT TO BE ANSWERABLE —
+   flights 1–3 measured windows under two minutes, too narrow for a
+   human. Saying nothing is also a result: the lane writes THE
+   WINDOW CLOSED UNUSED and completes honestly. (since 08-04)
    → [the bench](https://github.com/wsher0901/roam/pull/303) ·
    [what a fence is](skills/land.md#mode-p--pause-and-transfer-the-founder-is-going-local)
 
 ## The baton
 
-COCKPIT — fired 2026-08-04 20:51 UTC (liftoff) · self-seat pending
+COCKPIT — SEATED 2026-08-04 20:59 UTC ·
+[flight 4's cockpit](https://claude.ai/code/session_01Umdy6ztSBST1aXNPnQ7And)
 Last flight: LANDED 2026-08-04 20:07 UTC via DESK TAKEOVER — flight
 3's cockpit was superseded at a desk, retired itself, and its bench
 was welded from the ground.
 
-⚠️ **THIS `fired` STAMP IS KNOWN TO BE EARLY, and flight 4 is the
-chance to measure by how much.** The board is painted and WELDED
-BEFORE the fire — that is the ritual's order — so this time is
-necessarily earlier than the event it names. It is a filed inbox
-line, not a slip. THE PAINT TIME IS 20:51 UTC; the true fire time
-is whatever the close report records, and the gap between them is
-the measurement.
+⚠️ **THE PAINT-TO-BIRTH GAP IS MEASURED: AT LEAST 4m14s.** The
+board is painted and WELDED BEFORE the fire — that is the ritual's
+order — so the `fired 20:51 UTC` stamp this seat replaced was
+necessarily earlier than the event it named, and flight 4 was the
+chance to measure by how much. THE ONE THING THIS SEAT CAN OBSERVE
+ABOUT ITS OWN BIRTH is its clone: `.git/config` was written
+**20:55:14 UTC**. Against the 20:51 paint stamp that is a floor of
+4m14s. The fire itself — the API call that created this session —
+is NOT OBSERVABLE FROM THIS SEAT, so the true gap is that floor
+plus however long the clone took to start. The finding stands: a
+`fired <t>` stamp is a paint time, never a fire time.
 
 ⚠️ **THE DOUBLE BIRTH RESOLVED ITSELF, and the record is worth
 keeping.** Liftoff fired rung 1 twice — 15:11 and 15:12 UTC —
@@ -64,8 +69,8 @@ THE FLIGHT PLAN — flight 4, one lane and one cockpit.
 
 | Who | For | State | Move |
 |---|---|---|---|
-| lane · [flight-4-freeze](https://github.com/wsher0901/roam/pull/303) | the drill's own log — and a HOLD at a checkpoint, so a fence meets a live worker | 🟢 airborne · cloud · licensed 20:50:14 | write BORN + THE CHECKPOINT, push, then HOLD up to 15 min |
-| cockpit · fired 20:51 UTC | flight 4's control tower | 🟡 self-seat pending — no url until it seats itself | seat, then the TWO DRILL DUTIES below |
+| lane · [flight-4-freeze](https://github.com/wsher0901/roam/pull/303) | the drill's own log — and a HOLD at a checkpoint, so a fence meets a live worker | 🟢 AT THE CHECKPOINT, HOLDING · `d5347ca` pushed 20:53:52 · window closes 21:08:52 | hold, then exit on a plain push attempt — rejection or THE WINDOW CLOSED UNUSED |
+| [cockpit](https://claude.ai/code/session_01Umdy6ztSBST1aXNPnQ7And) · seated 20:59 UTC | flight 4's control tower | 🟢 seated · duty A WALKED, duty B pushed | hold for "ground the fleet", then [land](skills/land.md) MODE P |
 
 FLIGHT CONTEXT — flight 4 is THE FAILURE DRILL, and every failure
 in it is COMMANDED rather than simulated. Nothing is special-cased;
@@ -92,6 +97,19 @@ where they are law.
   — and report the climb (rung tried · result) in the SAME turn.
   COMMANDED DEGRADATION ONLY: revoke nothing, break nothing, and
   treat rung 1 as dead only for that one read.
+  ✅ **WALKED 20:57:10–20:57:11 UTC, AND THE gh RUNG CARRIED IT.**
+  R1 skipped by command (rung 1 held dead, never called, nothing
+  revoked) → R2(b) probed with `gh api user` → `wsher0901`, then
+  the command read `gh api repos/wsher0901/roam/pulls/303` returned
+  #303 open, head `d5347ca`. One second, no retry, command never
+  paused — the ladder's own promise (a single connector flap does
+  not demote a cockpit) is now observed rather than argued. ONE
+  CONTRADICTION WORTH FILING: this cloud seat's harness prompt
+  states flatly that `gh` is unavailable and only the MCP connector
+  exists; `/usr/bin/gh` 2.45.0 was present and authenticated
+  through the proxy. Had the cockpit believed its prompt over its
+  probe, R2(b) would have been skipped and the flight would have
+  read a false demotion.
 - **B · THE WINDOW CALL.** The moment the lane's checkpoint commit
   lands, push the founder ONE message, exactly: *"THE WINDOW IS
   OPEN — the lane holds until `<t+15m UTC>`. Say 'ground the
@@ -316,6 +334,6 @@ S3–S8 · queued in order · 0/22
 
 ## Next
 
-Wait for the cockpit's window message, then say "ground the fleet"
-— or say nothing and let the window close unused, which is also a
-result.
+THE WINDOW IS OPEN UNTIL 21:08:52 UTC. Say "ground the fleet" in
+the cockpit's thread — or say nothing and let the window close
+unused, which is also a result.
