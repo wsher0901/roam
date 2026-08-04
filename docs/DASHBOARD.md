@@ -6,34 +6,39 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-08-04 · 15:39 UTC by the cockpit · from the cloud
-FLIGHT 2 IS AIRBORNE — 1 lane WORKING, 2 at the gate · needs-you 2 ·
+Painted 2026-08-04 · 15:44 UTC by the cockpit · from the cloud
+FLIGHT 2 — ALL 3 LANES DONE, all at the gate; no lane is working ·
+needs-you 2 ·
 git outranks this board. How to read
 it → [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
 
-1. 🔴 **SAY THE FREEZE WORD NOW — `ground the fleet`, in the
-   cockpit session on your phone. THE WINDOW IS OPEN AND IT
-   CLOSES BY ITSELF.** You ruled `re-spawn C` at 15:34; lane C
-   canaried at 15:37 and was acked airborne at 15:38, so for the
-   first time in this flight a lane is genuinely MID-WORK — which
-   is the one property MODE P has never been tested against. It
-   stops being true the moment C finishes, and C's cargo is one
-   table row. The word is exact: a bare "land" is
-   [land](skills/land.md)'s trigger 4 and routes to MODE R, which
-   fences nothing. (since 08-04)
+1. 🟡 **THE MERGE WORD ON THREE PRs —
+   [#278](https://github.com/wsher0901/roam/pull/278) ·
+   [#279](https://github.com/wsher0901/roam/pull/279) ·
+   [#280](https://github.com/wsher0901/roam/pull/280).** All three
+   lanes are complete and Actions-green on their pushed heads; the
+   whole of flight 2's cargo is now standing at THE GATE. Every one
+   is LANE-AUTHORED, so the law asks any non-author session's
+   review and then your word — the cockpit authored no payload
+   among them (a memory stub and an ack are not authorship) and can
+   review all three on request. Nothing expires; they wait as long
+   as you need. (since 08-04)
+   → [LAWS §no-solo-approval](LAWS.md#workflow-non-negotiable)
+2. 🟡 **RULE THE FREEZE TEST — run MODE P anyway, or reschedule
+   it.** The mid-work window closed a second time: lane C was acked
+   airborne 15:38 and complete 15:43, FOUR MINUTES AND FORTY-EIGHT
+   SECONDS, so there is again no working lane to fence. Saying
+   `ground the fleet` now still exercises MODE P's other half — the
+   fence commits, the fleet-at-ground table, the `grounded for
+   local pickup` marker, and the resume ask at your next pickup,
+   none of which has ever been flown either. What it cannot test is
+   whether a fence STOPS a live worker. The alternative is to merge
+   the cargo and reschedule the mid-work half onto a flight whose
+   lanes run in tens of minutes. (since 08-04)
    → [land §Scenario 3](skills/land.md#scenario-3--the-founders-freeze-word-only)
    · [the trigger table](skills/land.md#the-trigger-table--what-starts-a-landing)
-2. 🟡 **THE MERGE WORD ON [#278](https://github.com/wsher0901/roam/pull/278)
-   AND [#279](https://github.com/wsher0901/roam/pull/279)** — both
-   complete, both Actions-green on the pushed head, both standing
-   at THE GATE since 15:05. Both are LANE-AUTHORED, so the law asks
-   any non-author session's review and then your word; the cockpit
-   is a non-author of both and can supply the review on request.
-   Nothing expires here — they wait as long as you need.
-   (since 08-04)
-   → [LAWS §no-solo-approval](LAWS.md#workflow-non-negotiable)
 
 ## The baton
 
@@ -64,9 +69,9 @@ flight 2 on an accident rather than on the founder's word.
 | Who | For | State | Move |
 |---|---|---|---|
 | cockpit | commands flight 2 from the cloud | 🟡 | live since 15:18 UTC · awaiting your word on 2 items |
-| lane · home-hook-row | HOME: the close-lock hook's missing row | 🟡 | WORKING — respawned on your word, canary 15:37, acked airborne 15:38 · the flight's only interruptible lane · [#280](https://github.com/wsher0901/roam/pull/280) |
 | lane · canary-ack-commit | §Canary: the ack is a commit on origin, never a message | 🟢 | COMPLETE 15:05 UTC, awaiting merge · [#278](https://github.com/wsher0901/roam/pull/278) |
 | lane · cloud-git-identity | machine-setup: the cloud seat's git identity | 🟢 | COMPLETE 15:04 UTC, awaiting merge · [#279](https://github.com/wsher0901/roam/pull/279) |
+| lane · home-hook-row | HOME: the close-lock hook's missing row | 🟢 | COMPLETE 15:43 UTC, awaiting merge — respawned on your word, acked 15:38, done in 4m48s · [#280](https://github.com/wsher0901/roam/pull/280) |
 
 FLIGHT CONTEXT — flight 2 is a TEST FLIGHT and its cargo is real.
 The three benches carry flight 1's own findings back into the
@@ -86,24 +91,33 @@ moment of its existence found a working fleet. The recut turned the
 duty into a decision to carry, the cockpit carried it with three
 options, and THE FOUNDER RULED `re-spawn C` AT 15:34.
 
-That ruling restored the experiment. Lane C canaried at 15:37 and
-was acked airborne at 15:38, so a lane is working again and the
-freeze word has a subject. THE WINDOW IS SELF-CLOSING: C's cargo is
-one table row plus a table audit, and when it finishes, the
-mid-work property leaves with it — which is exactly how the first
-attempt was lost. The freeze word is Needs-you 1 for that reason
-and nothing else.
+That ruling restored the experiment for FOUR MINUTES AND FORTY-EIGHT
+SECONDS. Lane C canaried 15:37, was acked airborne 15:38:20, and
+pushed its completion at 15:43:08. THE WINDOW CLOSED A SECOND TIME,
+and this time nothing about the timing was anyone's fault: the
+cockpit acked within seventy seconds of the canary and pushed the
+founder's phone within another minute. The window is simply shorter
+than a human answering a phone.
 
-WHAT THE FREEZE IS EXPECTED TO PROVE, so the result can be read
-against it afterwards: that MODE P's fence, written onto a branch
-whose worker is still running, actually STOPS that worker — the
-wake-lock's rejected-push rule, never once exercised. A and B get
-fenced at the gate alongside C, which tests the cheaper half:
-whether the fleet-at-ground table and the `grounded for local
-pickup` marker bring all three back at the next pickup's resume
-ask.
+THE MEASUREMENT IS THE FINDING, and it is worth more than the test
+it defeated. A cloud lane carrying doc-sized cargo runs about five
+minutes from licence to completion. Any duty timed against "the
+fleet is mid-work" is therefore unrunnable by construction on cargo
+this size — not unlucky twice, but impossible twice, and it would
+be impossible a third time. What the mid-work half needs is a lane
+whose work is measured in TENS of minutes, or a bench whose spec
+tells it to hold at a checkpoint until acked. That is a decision
+for a later flight, and it is Needs-you 2.
 
-Both finished PRs stand ready at THE GATE meanwhile, so AUTO-LAND
+WHAT REMAINS TESTABLE TODAY, unchanged and never once flown: MODE
+P's other half. Say `ground the fleet` on a fleet of three
+COMPLETED lanes and the fence commits, the fleet-at-ground table,
+the `grounded for local pickup` marker and the resume ask at the
+next pickup all run for real. Only the rejected-push rule — does a
+fence STOP a live worker — stays unproven, because there is no live
+worker left to stop.
+
+All three PRs stand ready at THE GATE meanwhile, so AUTO-LAND
 cannot fire and nothing is lost by any amount of waiting.
 
 ## Working on
@@ -145,22 +159,61 @@ one phase per line:
 
 **Issues**
 
-- 🔴 THE MID-WORK WINDOW CLOSES BEFORE A COCKPIT CAN OPEN — lanes
-  A and B pushed their completion rewrites at 15:04 and 15:05;
-  liftoff fired the cockpit at 15:11 and 15:12 and it seated at
-  15:18. The fire comes after the lanes by construction, so a duty
-  timed against "the fleet is mid-work" cannot be discharged by
-  promptness. Answered for THIS flight by respawning lane C, which
-  is a manual save and not a fix. → the flight-context line above
-- 🟡 LANE C'S FIRST SPAWN PRODUCED NO SESSION — the label
-  registered on GitHub and `count:runs` counted it, but nothing was
-  ever born; the phantom-label case, met live for the second time.
-  THE RESPAWN AT 15:35 ANSWERED ONE QUESTION: an identical label
-  cycle on the same PR canaried in two minutes, so the silence was
-  not caused by the bench having been labeled before. The first
-  failure's cause remains unknown from any seat with a git clone —
-  the routine's run history is a UI surface. → its bench memory, on
-  the branch behind [#280](https://github.com/wsher0901/roam/pull/280)
+- 🔴 THE MID-WORK FREEZE TEST IS UNRUNNABLE ON DOC-SIZED CARGO, now
+  measured twice. Attempt 1: A and B finished at 15:04–15:05, before
+  the cockpit was fired at 15:11 — the fire comes after the lanes by
+  construction. Attempt 2, with the respawned lane C and a cockpit
+  already seated and watching: acked 15:38:20, complete 15:43:08 —
+  FOUR MINUTES FORTY-EIGHT SECONDS, of which the cockpit spent about
+  two on its ack and its push. The failure is not promptness and
+  cannot be fixed by more of it; the property under test needs a
+  lane that runs for tens of minutes, or a bench specced to hold at
+  a checkpoint. → the flight-context line above · Needs-you 2
+- 🔴 THE CANARY WINDOW IS NARROWER THAN THE DISPATCH SPREAD — and
+  lane C's "spawn produced no session" was WRONG, corrected from
+  first-hand evidence. A cloud session DID reach that bench, at
+  15:21 UTC, ~27 minutes after the 14:54:43Z label and long past
+  the ~10-minute window; it found the parked Status, self-terminated
+  without claiming, and said so in a PR comment at 15:22 that names
+  its own stale clone head. The respawn's session arrived in ~2
+  minutes. SAME ROUTE, SAME BENCH, ~27 MIN THEN ~2 MIN: the failure
+  mode is DISPATCH LATENCY, not a dead trigger — a materially
+  different repair from the one a lost-spawn reading suggests, and
+  an argument for a window wider than the observed spread.
+  Consequence, already backstopped: a re-spawn can put two sessions
+  on one bench, and the wake-lock kills the loser at the cost of a
+  burned cap run, never split-brain work — which is exactly what
+  happened at 15:21.
+  → [the comment](https://github.com/wsher0901/roam/pull/280#issuecomment-5181103787)
+  · its bench memory, on the branch behind [#280](https://github.com/wsher0901/roam/pull/280)
+- 🔴 THE COCKPIT REPEATED THE WRONG DIAGNOSIS FOR 25 MINUTES, and
+  the reason is worth more than the error. It read
+  [#280](https://github.com/wsher0901/roam/pull/280)'s metadata
+  before the respawn, saw `comments: 2`, and did not open them; the
+  contradicting evidence was one call away and sat unread from
+  15:22 to 15:47. The board it painted, and the advice it gave the
+  founder, both carried "no session was ever born" as fact. NOTHING
+  IN THE WORKSHOP CATCHES THIS: a PR's comments are the lane's only
+  channel for what a git clone cannot show, and no gate, ritual or
+  law requires reading them before acting on a bench.
+  → its line in [IDEAS](IDEAS.md), when the harvest runs
+- 🟡 A LANE'S STAMPS DRIFTED ~2.5 MINUTES INTO THE FUTURE — lane C
+  read the shell clock once on waking and extrapolated the rest
+  from the shape of its own work, so a completion carried `15:47`
+  while the clock read `15:45:54`. It caught and corrected itself.
+  A live breach of the derivation law's second half, and EVERY GATE
+  PASSED IT: `check:memory`, `check:links` and CI were all green,
+  because a plausible stamp is indistinguishable from a true one.
+  → its bench memory, on the branch behind [#280](https://github.com/wsher0901/roam/pull/280)
+- 🟡 A REDELIVERED `pull_request.labeled` CAUGHT LIVE — a second
+  event fired for [#280](https://github.com/wsher0901/roam/pull/280)
+  at ~15:46 citing head `8400157`, five commits behind the branch.
+  The lane re-read its Status from origin, found a line it owned,
+  and carried on; a FRESH session would have found the same line,
+  not owned it, and self-terminated. Same rule, two seats, two
+  correct opposite actions — the read-origin-first rule doing the
+  whole job.
+  → its bench memory, on the branch behind [#280](https://github.com/wsher0901/roam/pull/280)
 - ⏳ THE FALSE ACK — flight 1's sharpest finding: a message
   carrying a well-formed ack token reached a lane before any ack
   existed, and only a check against origin caught it. NOW IN
@@ -212,8 +265,9 @@ S3–S8 · queued in order · 0/22
 
 ## Next
 
-Say `ground the fleet` while lane C is still working — the cockpit
-has pushed your phone and the window closes on its own when C
-finishes. The fleet freezes mid-work, which is the whole
-experiment, and everything after that is the next pickup's. The two
-finished PRs keep until you want them; they expire never.
+Nothing is urgent any more — the timed part of this flight is over
+and it produced a measurement instead of a pass. Flight 2's whole
+cargo sits green at the gate waiting for your word, and the freeze
+question is now a scheduling call rather than a race: run MODE P
+today on a finished fleet, or keep the word for a flight with
+slower lanes. Either way the three PRs keep; they expire never.
