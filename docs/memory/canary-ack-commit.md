@@ -1,39 +1,39 @@
 ---
 type: memory
 id: canary-ack-commit
-updated: 2026-08-04 16:00 UTC · fenced by land MODE P · cloud
+updated: 2026-08-04 16:30 UTC · adopted at the desk by pickup · work PC
 ---
 # canary-ack-commit — a lane reads its licence from the branch
 
 ## Status
-held — landed for local pickup 2026-08-04
+complete, awaiting merge — 2026-08-04
 
-THE PAUSE BLOCK — a resuming seat can continue from this alone.
+ADOPTED AT THE DESK. The fence is discharged: the founder answered
+`local canary-ack-commit` at
+[pickup §6](../skills/pickup.md#6--fleet-resume-on-the-founders-answer)
+on 2026-08-04, the work PC checked this branch out for zero cap
+runs, and the bench is now this seat's ordinary gate-standing work.
+Nothing about the payload changed in the adoption — the Status is
+back to the completion state the fence had replaced, which was
+true the whole time it read `held`.
 
-- **What it did.** The full payload, complete and merged-clean. The
-  work below is finished; nothing was interrupted.
-- **How much of the spec is done.** ALL of it. Every Done-means
-  line in [the spec](../record/specs/canary-ack-commit.md) is met,
-  including the negative one, and the cockpit's independent review
-  confirmed each line against the diff
-  ([the verdict](https://github.com/wsher0901/roam/pull/278#issuecomment-5181499155)).
-- **What is left.** NO WORK. Only the founder's merge word.
-- **THE EXACT NEXT STEP.** Give the merge word on
-  [#278](https://github.com/wsher0901/roam/pull/278), then
-  [ship](../skills/ship.md) welds it. Do NOT redeploy this bench —
-  a fresh worker would find nothing to do. At
-  [pickup §6](../skills/pickup.md#6--fleet-resume-on-the-founders-answer)
-  the right answer for this row is `local canary-ack-commit`
-  (adopt at the desk, zero cap runs), never `redeploy`.
-- **Why it paused.** Landed for local pickup 2026-08-04 on the
-  founder's freeze word, so the gate travels to the desk through
-  pickup's resume ask rather than being decided from the phone.
-  The lane was already complete when the word came; nothing was
-  frozen mid-work.
+WHAT REMAINS IS THE FOUNDER'S MERGE WORD on
+[#278](https://github.com/wsher0901/roam/pull/278), and then
+[ship](../skills/ship.md)'s weld. Every Done-means line in
+[the spec](../record/specs/canary-ack-commit.md) is met, including
+the negative one, and the cockpit's independent review confirmed
+each line against the diff
+([the verdict](https://github.com/wsher0901/roam/pull/278#issuecomment-5181499155))
+— so [no-solo-approval](../LAWS.md#workflow-non-negotiable) is
+already satisfied by a non-author seat.
 
-THE COMPLETION STATE THIS FENCE REPLACED was
-`complete, awaiting merge — 2026-08-04`, and it remains true —
-`held` records who may act next, not a regression in the work.
+THE FENCE THIS REPLACED, kept because the flight is the record:
+`held — landed for local pickup 2026-08-04`, written by
+[land](../skills/land.md) MODE P at 16:00 UTC on the founder's
+freeze word, so this gate would travel to a desk through pickup's
+resume ask rather than being decided from a phone. That is exactly
+the path it travelled. The lane was already complete when the word
+came; nothing was frozen mid-work.
 
 The payload is written, pushed, and green: `docs/skills/parallel-lanes.md`
 [§Canary](../skills/parallel-lanes.md#canary-handshake-both-sides)
