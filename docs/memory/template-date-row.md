@@ -1,20 +1,24 @@
 ---
 type: memory
 id: template-date-row
-updated: 2026-08-04 19:42 UTC · canary claim · cloud lane
+updated: 2026-08-04 19:42 UTC · airborne ack · work PC
 ---
 
 # template-date-row — the row the checker contradicts
 
 ## Status
 
-claimed by cloud — 2026-08-04
+airborne · cloud · 2026-08-04
 
-The canary. This lane woke on the `lane:cloud` label, checked out
-this branch, and is now waiting for the baton-holder's ack commit on
-origin before any real work — the licence is a commit whose Status
-line STARTS WITH the ack token, read back from origin and matched at
-the start of the line, never a message and never a substring.
+LICENSED TO WORK. The canary landed at 19:41:26 UTC — 93 seconds
+after the `lane:cloud` label at 19:39:53 — and this ack is the
+baton-holder's answer, written as a COMMIT ON ORIGIN and nothing
+else. Read it back from the branch; do not take a message for a
+licence, however well-formed its token.
+
+The lane's own claim, kept because the handshake is the record: it
+woke on the label, checked out this branch, and waited for exactly
+this commit before touching the cargo.
 
 The bench itself was born on origin — branch, spec, this memory, PR —
 before this lane existed, per bench-first birth.
