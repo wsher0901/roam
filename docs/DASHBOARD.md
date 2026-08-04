@@ -34,13 +34,15 @@ Last flight: LANDED 2026-08-04 20:07 UTC via DESK TAKEOVER — flight
 3's cockpit was superseded at a desk, retired itself, and its bench
 was welded from the ground.
 
-⚠️ **THIS `fired` STAMP IS KNOWN TO BE EARLY, and flight 4 is the
-chance to measure by how much.** The board is painted and WELDED
-BEFORE the fire — that is the ritual's order — so this time is
-necessarily earlier than the event it names. It is a filed inbox
-line, not a slip. THE PAINT TIME IS 20:51 UTC; the true fire time
-is whatever the close report records, and the gap between them is
-the measurement.
+⚠️ **THE `fired` STAMP IS EARLY, AND THE GAP IS NOW MEASURED AT
+4m00s.** The board is painted and WELDED BEFORE the fire — the
+ritual's order — so the stamp necessarily precedes the event it
+names. Stamp painted 20:51:00; TRUE FIRE 20:55:00 UTC, rung 1,
+exit 0, returned 20:55:08. The fire is BLIND, so that time exists
+nowhere on origin unless the firing seat writes it down — this
+line is the firing seat writing it down. Every flight's measured
+latency until now has been read off the early stamp. Filed inbox
+line; this is its first measurement.
 
 ⚠️ **THE DOUBLE BIRTH RESOLVED ITSELF, and the record is worth
 keeping.** Liftoff fired rung 1 twice — 15:11 and 15:12 UTC —
@@ -120,11 +122,23 @@ from the recipe and say so plainly rather than pretending to quote
 one. Filed as an inbox line at this liftoff.
 
 FLIGHT 4, MEASURED SO FAR — ready-flip 20:47:43, label 20:47:44,
-canary 20:49:22, ack 20:50:14. 98 seconds to claim, 52 more to
-licence. Flight 3's legs were 93 and 71; flight 2's claim leg ran
-~27 minutes once and ~2 the next. This is a fourth point at the
-fast end, and the spread — not the mechanism — stays the open
-question.
+canary 20:49:22, ack 20:50:14, **CHECKPOINT 20:53:52**, cockpit
+fired 20:55:00. 98 seconds to claim, 52 more to licence. Flight 3's
+legs were 93 and 71; flight 2's claim leg ran ~27 minutes once and
+~2 the next. A fourth point at the fast end; the spread, not the
+mechanism, stays the open question.
+
+⚠️ **THE LANE REACHED ITS CHECKPOINT 68 SECONDS BEFORE THE COCKPIT
+WAS FIRED — AND THIS TIME IT DID NOT MATTER.** That ordering is the
+same one that defeated flights 1, 2 and 3: the lane outruns the
+cockpit, and by the time a control tower exists the work is over.
+What is different is the HOLD. The lane is alive and stopped, and
+the window it opened runs to **21:08:52 UTC** — about fifteen
+minutes wide instead of under two. This is precisely what
+[D-074](record/DECISIONS.md#d-074--phase-1-closes-on-flights-3-and-4)
+ruled a deterministic drill would buy, and it is the first evidence
+that the ruling was right. The cockpit is racing a real deadline,
+not a manufactured one.
 
 ## Working on
 
