@@ -19,6 +19,16 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
 
 ## Open
 
+- ⏳ SHOULD §CANARY'S ACK MATCH ANCHOR ON THE WORD OR THE TOKEN —
+  [§Canary](skills/parallel-lanes.md#canary-handshake-both-sides)
+  fixes the test at "STARTS WITH `airborne ·`", never the bare
+  word; flight 1's first lane deliberately anchored on the word
+  instead, reasoning that the anchor does the safety work while the
+  middot only adds brittleness against the em-dash ack of
+  2026-07-22. The counter is that the token is what keeps the ack
+  from matching by accident. Filed DEFERRED — no ruling made.
+  (2026-08-04, the founder) →
+  [the probe's CANARY section](record/probes/flight-1-shakedown.md)
 - ⏳ WHETHER THE FIGURE LAW REACHES HOME — [ATLAS](ATLAS.md) is
   eight designed SVG figures under
   [D-073](record/DECISIONS.md#d-073--atlas-becomes-designed-figures),

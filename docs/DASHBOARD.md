@@ -6,39 +6,30 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-08-04 · 13:22 UTC by cockpit gate-repaint · from the cloud
-FLIGHT 1 IS AT THE GATE AGAIN — repaired + reviewed, cockpit live ·
-needs-you 2 · git outranks this board. How to read
+Painted 2026-08-04 · 13:35 UTC by ship's tail · from the cloud
+FLIGHT 1 HAS SHIPPED — fleet empty, cockpit live · needs-you 1 ·
+git outranks this board. How to read
 it → [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
 
-1. 🟡 THE WORD ON FLIGHT 1'S WELD — the repair lane fixed all
-   eight brief items, CI is green on head `01a26c6`, and the
-   cockpit's SECOND non-author review is posted with no changes
-   requested. The probe now reads WEAKER than before by design:
-   two "observed" facts became "not observable from this seat" and
-   the canary line went ✅ → ⚠️, with a dated line making the
-   change auditable. Say "merge" to the cockpit. (since 08-04)
-   → [the lane's PR](https://github.com/wsher0901/roam/pull/268) ·
-   [the probe](https://github.com/wsher0901/roam/blob/docs/flight-1-probe/docs/record/probes/flight-1-shakedown.md)
-
-2. 🔴 TRIAGE THE FALSE ACK — a message reached the repair lane
-   carrying a well-formed ack token that named the cockpit's real
+1. 🔴 TRIAGE THE FALSE ACK — the one thing flight 1 raised that
+   you have not yet ruled on. A message reached the repair lane
+   carrying a well-formed ack token naming the cockpit's real
    session URL, about twenty seconds BEFORE any ack existed. The
    lane refused it on three checks: origin had no ack commit, its
    own watcher was still running with a 0-byte output file, and
    the real ack arrived later with DIFFERENT text. The cockpit
-   corroborated its side — it wrote one ack, in the vehicle form,
-   and sent the lane no message at all. Neither seat can observe
-   what produced it and neither will guess. THE RULE IT ARGUES
-   FOR: the ack is a COMMIT ON ORIGIN, NOT A MESSAGE — a lane
-   that trusts a message can be licensed to work by anything able
-   to write to its session. That is a
+   corroborated its side — one ack, written in the vehicle form,
+   and no message sent to the lane at all. Neither seat can
+   observe what produced it and neither will guess. THE RULE IT
+   ARGUES FOR: the ack is a COMMIT ON ORIGIN, NOT A MESSAGE — a
+   lane that trusts a message can be licensed to work by anything
+   able to write to its session. That is a
    [§Canary](skills/parallel-lanes.md#canary-handshake-both-sides)
    change plus an [IDEAS](IDEAS.md) line, and a lane may write
-   neither. Say "log it". (since 08-04)
-   → [the lane's account](https://github.com/wsher0901/roam/blob/docs/flight-1-probe/docs/memory/flight-1-probe.md)
+   neither. Say "log it" at any ritual. (since 08-04)
+   → [the flight's story](record/history/workshop/mechanism/flight-1-probe.md)
 
 ## The baton
 
@@ -51,21 +42,15 @@ Last flight: none — flight 1 is the first this floor has flown.
 
 | Who | For | State | Move |
 |---|---|---|---|
-| cockpit | commands flight 1 from the cloud | 🟢 live since 08-03 21:44 UTC, seated | holds the gate; welds on your word, then lands |
-| lane · [flight-1-probe](https://github.com/wsher0901/roam/pull/268) | repairing the shakedown log's own epistemic faults | 🟢 complete 13:19 UTC, 8/8 repaired | reviewed non-author, CI green; nothing left for the lane |
+| cockpit | commanded flight 1 from the cloud | 🟢 live since 08-03 21:44 UTC, seated | nothing flying; holds only your false-ack ruling |
 
-Flight context: THE RESPAWN IS THE FOUNDER'S "lane" RULING on the
-held weld — the pre-gate critic found the log inferring its own
-ready-flip and contradicting itself on the route-1 ordering, and a
-FRESH lane repairs that rather than the cockpit, so authorship stays
-off the reviewer and the non-author review survives. The first
-lane's seat was
-[its cloud session](https://claude.ai/code/session_01NcE9UvzhybxinCqre5LvE2),
-now superseded. Cap: this is fire 1 of today against 15 routine
-runs/day; the remaining count is NOT readable from this seat —
-`npm run count:runs` needs the `gh` CLI, which the cloud has not
-got, so it is stated as unknown rather than guessed. The cockpit's
-AUTO-LAND duty ends the flight unprompted.
+Flight context: FLIGHT 1 IS DOWN AND MERGED as
+[#268](https://github.com/wsher0901/roam/pull/268). It flew twice —
+the shakedown, then a repair leg after the pre-gate critic caught
+the log inferring its own ready-flip; the founder ruled a FRESH
+lane for the repair so authorship stayed off the reviewing seat.
+The cockpit's AUTO-LAND is deliberately held: it requires nothing
+awaiting the founder, and the false-ack line above awaits you.
 
 ## Working on
 
@@ -79,9 +64,9 @@ The standing order
 ([D-060](record/DECISIONS.md#d-060--the-three-phase-standing-order)),
 one phase per line:
 
-- PHASE 1 — settle & test: the audit is done; THE TEST PROGRAM has
-  opened — flight 1 has flown, and its log is being repaired by a
-  second lane before the weld.
+- PHASE 1 — settle & test: the audit is done; THE TEST PROGRAM's
+  flight 1 has FLOWN AND SHIPPED. The next flight's scope is yours
+  to set.
 - PHASE 2 — the vault: chronicle story lanes + a polish pass;
   opens with your scope ruling (all 66, or the load-bearing dozen).
 - PHASE 3 — Roam: T3–T6 relaunched from scratch, plus
@@ -92,6 +77,10 @@ one phase per line:
 
 **Completed**
 
+- Flight 1, the shakedown — the flight machinery flown end to end
+  on trivial cargo and logged from inside itself; five of nine
+  chain links proved visible from a lane's seat, four not.
+  [#268](https://github.com/wsher0901/roam/pull/268)
 - Atlas becomes designed figures — eight hand-drawn SVG swimlanes
   where the lane is the owner; mermaid retired.
   [#265](https://github.com/wsher0901/roam/pull/265)
@@ -104,6 +93,11 @@ one phase per line:
 
 **Issues**
 
+- ⏳ THE FALSE ACK — flight 1's sharpest finding, still awaiting
+  your triage; it argues the ack must be a commit on origin, never
+  a message. → Needs-you above
+- ⏳ The §Canary word-vs-token match question is DEFERRED by the
+  founder — filed, no ruling made. → its line in [IDEAS](IDEAS.md)
 - ⏳ FLIGHT 1 SURFACED FIVE, now all inbox lines: no git-identity
   step for the cloud seat · GitHub cannot record the non-author
   review · a memory's `updated:` stamp carries no timezone · the
@@ -142,12 +136,11 @@ S3–S8 · queued in order · 0/22
 
 - (Web) "GitHub workflow protocol and web instructions setup" —
   the audit's ops chat; it carried the external review of all
-  twelve benches, and approved THE TEST PROGRAM whose flight 1 is
-  this shakedown. → next: nothing owed; it opens again at the
-  lane's gate, which the cockpit carries.
+  twelve benches, and approved THE TEST PROGRAM whose flight 1 has
+  now shipped. → next: nothing owed.
 
 ## Next
 
-Your word on the weld, and your triage of the false ack. On the
-word the cockpit welds and then lands; the landing report arrives
-on its own.
+Your triage of the false ack — the last thing flight 1 owes you.
+On it the cockpit lands and the flight ends; the landing report
+arrives on its own.
