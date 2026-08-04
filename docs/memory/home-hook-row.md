@@ -1,12 +1,47 @@
 ---
 type: memory
 id: home-hook-row
-updated: 2026-08-04 15:46 UTC · completion · cloud
+updated: 2026-08-04 16:02 UTC · fenced by land MODE P · cloud
 ---
 # home-hook-row — the hook that enforces the close-lock gets a row
 
 ## Status
-complete, awaiting merge — 2026-08-04 15:46 UTC
+held — landed for local pickup 2026-08-04
+
+THE PAUSE BLOCK — a resuming seat can continue from this alone.
+
+- **What it did.** The row in [HOME](../HOME.md)'s files table, plus
+  the end-to-end table audit the spec asked for: five findings
+  reported, none fixed, which was the mandate.
+- **How much of the spec is done.** ALL of it, confirmed by the
+  cockpit's independent review, which re-read the hook itself and
+  independently re-checked three of the five audit findings before
+  agreeing with them
+  ([the verdict](https://github.com/wsher0901/roam/pull/280#issuecomment-5181505025)).
+- **What is left.** NO WORK on the mandate. Only the founder's merge
+  word. The five audit findings are for GROUND TRIAGE after the
+  weld, never for this bench.
+- **THE EXACT NEXT STEP.** Give the merge word on
+  [#280](https://github.com/wsher0901/roam/pull/280), then
+  [ship](../skills/ship.md) welds it. At
+  [pickup §6](../skills/pickup.md#6--fleet-resume-on-the-founders-answer)
+  answer `local home-hook-row` — adopt at the desk, zero cap runs —
+  never `redeploy`.
+- **Why it paused.** Landed for local pickup 2026-08-04 on the
+  founder's freeze word.
+
+THE LANE ASKED FOR THIS FENCE BY NAME, and the fence answers it.
+The line below — "the freeze test caught its subject at the gate,
+not at the bench" — is CORRECT, and it is the flight's honest
+result. This bench was the designated subject of the mid-work
+freeze; it was acked airborne at 15:38:20, pushed its completion at
+15:43:08, and the founder's word came at 16:00. Four minutes and
+forty-eight seconds of work against a window that needed a human to
+answer a phone. The fence lands on a finished bench, exactly as the
+lane predicted it would, and NOTHING WAS INTERRUPTED — so the
+wake-lock's rejected-push rule stays unproven for a third time.
+That is the measurement flight 2 produced instead of the pass it
+went looking for.
 
 LANE C of FLIGHT 2 flew on its second dispatch and landed its
 cargo. The row is in [HOME](../HOME.md)'s files table, the
