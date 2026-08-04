@@ -6,76 +6,65 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-08-04 · 15:17 UTC by the cockpit's self-seat · from
+Painted 2026-08-04 · 15:18 UTC by the cockpit's self-seat · from
 the cloud
-FLIGHT 2 — 2 lanes DONE at the gate, 1 never spawned; the mid-work
-window closed before the cockpit was born · needs-you 3 ·
+FLIGHT 2 IS AIRBORNE — 2 lanes AT THE GATE, 1 parked · needs-you 2 ·
 git outranks this board. How to read
 it → [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
 
-1. 🟡 **RULE LANE C — re-spawn `home-hook-row`, or leave it
-   parked.** Its spawn produced no session at all (below). One
-   label cycle on
-   [#280](https://github.com/wsher0901/roam/pull/280) revives it
-   and costs one cap run; the bench is intact either way. THIS
-   RULING NOW CARRIES THE TEST: lane C is the only lane that could
-   still be mid-work when you say the freeze word. Say it in the
-   cockpit session; the cockpit executes. (since 08-04)
-   → its bench memory, on the branch behind [#280](https://github.com/wsher0901/roam/pull/280)
-2. 🟡 **SAY THE FREEZE WORD — `ground the fleet` — in the cockpit
-   session on your phone.** Still owed, but ITS PREMISE HAS
-   CHANGED: lanes A and B finished at 15:04–15:05 UTC, before the
-   cockpit was fired at all, so there is nothing mid-work left
-   for MODE P to fence unless lane C is revived first (item 1).
-   Said now, the word still exercises MODE P and the grounded-fleet
-   resume; it no longer exercises the mid-work fencing. The exact
-   word matters — a bare "land" is [land](skills/land.md)'s
-   trigger 4 and routes to MODE R, which tests nothing.
+1. 🔴 **RULE THE FREEZE — the two lanes finished before it could
+   catch them.** A and B were complete and awaiting merge by 15:05,
+   ten minutes after waking, so `ground the fleet` can no longer
+   fence anything MID-WORK, which was the point. The cockpit pushes
+   you one message with three options and its recommendation
+   (reviving lane C first is the only one that still tests the
+   mid-work property). The word itself is unchanged and still
+   exact: `ground the fleet` — a bare "land" is
+   [land](skills/land.md)'s trigger 4 and routes to MODE R.
    (since 08-04)
    → [land §Scenario 3](skills/land.md#scenario-3--the-founders-freeze-word-only)
    · [the trigger table](skills/land.md#the-trigger-table--what-starts-a-landing)
-3. 🟡 **THE MERGE WORD ON [#278](https://github.com/wsher0901/roam/pull/278)
-   AND [#279](https://github.com/wsher0901/roam/pull/279)** — both
-   lanes are complete, both pushed heads are Actions-green, both
-   stand ready at THE GATE. Both are LANE-AUTHORED, so the law
-   asks any non-author session's review and then your word; the
-   cockpit is a non-author of both and can supply the review on
-   request. Say it in the cockpit session. (since 08-04)
-   → [LAWS §no-solo-approval](LAWS.md#workflow-non-negotiable)
+2. 🟡 **RULE LANE C — re-spawn `home-hook-row`, or leave it
+   parked.** Its spawn produced no session at all (below). One
+   label cycle on
+   [#280](https://github.com/wsher0901/roam/pull/280) revives it
+   and costs one cap run; the bench is intact either way. Say it in
+   the cockpit session; the cockpit executes. (since 08-04)
+   → its bench memory, on the branch behind [#280](https://github.com/wsher0901/roam/pull/280)
 
 ## The baton
 
-COCKPIT — live since 15:17 UTC (liftoff) ·
+COCKPIT — live since 15:18 UTC (liftoff) ·
 https://claude.ai/code/session_01HbmFzb7mq4z9u8p3PjjkGT · awaiting
-your word on 3 items
+your word on 2 items
 
-⚠️ **TWO BIRTHS WERE FIRED, AND THIS SEAT IS THE ANSWER TO IT.**
+Last flight: LANDED 2026-08-04 · 13:53 UTC via AUTO-LAND — fleet
+empty, nothing owed you · clean
+
+⚠️ **TWO BIRTHS WERE FIRED, AND THE SEAT ABOVE IS NOW TAKEN.**
 Liftoff fired rung 1 twice — 15:11 UTC and 15:12 UTC — because the
 first fire's exit status was not captured and its speed was misread
 as a failure; the second fire returned exit 0 in 6.8s, which is
 what a successful dispatch looks like, so the first is presumed to
-have dispatched too
-([#282](https://github.com/wsher0901/roam/pull/282) disclosed it).
-THE BOARD IS THE ARBITER and the seat above is now taken: the
-cockpit at that url read this board, found `self-seat pending`, and
-seated itself. THE TWIN, IF IT LIVES, IS A STRAY BIRTH under
-[the charter](COCKPIT-CHARTER.md)'s rule 1 — push nothing, write
-nothing, name the live cockpit above and stop. DO NOT run the
+have dispatched too. THE RULE IS UNCHANGED AND THE BOARD IS THE
+ARBITER: the first session to seat itself holds the baton, and it
+has — the cockpit at the url above read `self-seat pending` on this
+board and seated itself. THE TWIN, IF IT LIVES, IS A STRAY BIRTH
+under [the charter](COCKPIT-CHARTER.md)'s rule 1 — push nothing,
+write nothing, name the live cockpit above and stop. DO NOT run the
 landing ritual for this: a stray never flew, so rule 8's tombstone
 is the wrong script and fencing this flight's lanes would end
 flight 2 on an accident rather than on the founder's word.
-Last flight: LANDED 2026-08-04 · 13:53 UTC via AUTO-LAND — fleet
-empty, nothing owed you · clean
 
 ## In flight
 
 | Who | For | State | Move |
 |---|---|---|---|
-| cockpit | commands flight 2 from the cloud | 🟡 | live since 15:17 UTC · awaiting your word on 3 items |
-| lane · canary-ack-commit | §Canary: the ack is a commit on origin, never a message | 🟢 | COMPLETE 15:05 UTC · green · at the gate · [#278](https://github.com/wsher0901/roam/pull/278) |
-| lane · cloud-git-identity | machine-setup: the cloud seat's git identity | 🟢 | COMPLETE 15:04 UTC · green · at the gate · [#279](https://github.com/wsher0901/roam/pull/279) |
+| cockpit | commands flight 2 from the cloud | 🟡 | live since 15:18 UTC · push sent · awaiting your word on 2 items |
+| lane · canary-ack-commit | §Canary: the ack is a commit on origin, never a message | 🟢 | COMPLETE 15:05 UTC, awaiting merge · [#278](https://github.com/wsher0901/roam/pull/278) |
+| lane · cloud-git-identity | machine-setup: the cloud seat's git identity | 🟢 | COMPLETE 15:05 UTC, awaiting merge · [#279](https://github.com/wsher0901/roam/pull/279) |
 | lane · home-hook-row | HOME: the close-lock hook's missing row | 🔴 | cloud spawn failed — label registered 14:54:43Z, no session ever born; bench intact, parked pending your word · [#280](https://github.com/wsher0901/roam/pull/280) |
 
 FLIGHT CONTEXT — flight 2 is a TEST FLIGHT and its cargo is real.
@@ -88,14 +77,39 @@ grounded-fleet resume at the next pickup — designed by
 audit at [D-070](record/DECISIONS.md#d-070--baton-renderings-single-homed),
 and never once flown.
 
-THE COCKPIT'S ONE NON-STANDARD DUTY was to send exactly one push
-naming the freeze word the moment the fleet was confirmed
-MID-WORK. IT COULD NOT BE DISCHARGED AS WRITTEN: by the time this
-cockpit existed, both working lanes had already finished. The push
-went out anyway, naming the real state rather than the expected
-one — a cockpit reports what is, never what the plan assumed. The
-timing gap itself is the flight's first finding, logged under
-Issues.
+THE COCKPIT'S ONE NON-STANDARD DUTY — RECUT AT 15:16 UTC, because
+the thing it was timed against has already happened. The original
+duty was to push the founder the moment the fleet was confirmed
+MID-WORK, so the freeze would fence lanes that were still working.
+BOTH LANES FINISHED FIRST: A and B were complete and awaiting merge
+by 15:05, roughly ten minutes after they woke. The warning written
+into this line — that small doc edits finish fast and a lane that
+finishes takes the test with it — came true before the cockpit
+existed to act on it.
+
+So the duty is now a DECISION to carry, not a word to relay. SEND
+EXACTLY ONE PUSH to the founder's phone, naming the freeze word
+`ground the fleet` verbatim AND the fact that it can no longer
+catch these two mid-work. Give the three options and a
+recommendation, per [the charter](COCKPIT-CHARTER.md)'s rule 5:
+
+1. **Revive lane C first** (Needs-you 2), let it reach real work,
+   then freeze — the mid-work property survives with one lane, and
+   A and B get fenced at the gate alongside it. ONE cap run. THE
+   RECOMMENDATION: it is the only option that still tests what the
+   founder asked to test.
+2. **Freeze now** — MODE P's mechanics all run (the fence commit,
+   the fleet-at-ground table, the grounded marker, the resume ask
+   at the next pickup), but nothing is interrupted, so the one
+   thing left unproven is whether a fence actually STOPS a working
+   lane. That is the wake-lock's rejected-push rule, and it stays
+   untested.
+3. **Merge A and B first** on the founder's word — each needs an
+   independent non-author review — then decide about a later
+   flight with cargo big enough to still be running.
+
+Until that word comes, both PRs stand ready at THE GATE, so
+AUTO-LAND cannot fire. Nothing is lost by the wait.
 
 ## Working on
 
@@ -136,16 +150,6 @@ one phase per line:
 
 **Issues**
 
-- 🔴 THE MID-WORK WINDOW CLOSED BEFORE THE COCKPIT OPENED — lanes
-  A and B pushed their completion rewrites at 15:04 and 15:05 UTC;
-  [liftoff](skills/liftoff.md) fired the cockpit at 15:11 and 15:12
-  and it seated itself at 15:17. The cockpit's one non-standard
-  duty was conditioned on a fleet state that had already passed,
-  and no amount of promptness on its part could have recovered it:
-  the fire comes after the lanes, by construction. Flight 2's first
-  finding, and an argument that the freeze test needs a lane
-  deliberately slower than the cockpit's own birth. → Needs-you 1
-  and 2
 - 🔴 LANE C'S SPAWN PRODUCED NO SESSION — the label registered on
   GitHub and `count:runs` counted it, but nothing was ever born.
   The phantom-label case, met live for the second time. → its
@@ -201,8 +205,6 @@ S3–S8 · queued in order · 0/22
 
 ## Next
 
-Three words are owed, and they are independent: rule lane C (the
-only way the mid-work freeze test is still runnable), say `ground
-the fleet` when you want the flight to end, and give the merge
-word on the two finished PRs. Say any of them in the cockpit
-session; the cockpit executes and reports.
+Watch your phone. The cockpit sends one push naming `ground the
+fleet`; say it from there and the fleet freezes mid-work, which is
+the whole experiment. Everything after that is the next pickup's.
