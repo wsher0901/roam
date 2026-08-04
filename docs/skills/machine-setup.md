@@ -24,6 +24,23 @@ status: living
    the work PC, where the company identity is global; global
    elsewhere). core.autocrlf=true is fine — .gitattributes
    normalizes repo-side either way.
+   THE CLOUD SEAT is the third seat, and the one nobody sits at. It
+   boots as `Claude <noreply@anthropic.com>`, set globally in the
+   image's own gitconfig, so it inherits neither desk and must set
+   the same personal name + GitHub noreply email itself, repo-local,
+   before its first commit. Left alone it authors under a name no
+   other commit in this history carries — exactly the tell
+   [seat-invariance](../LAWS.md#parallel-lanes--cloud) forbids. It
+   need not be told the value: `git log -1 --format='%an <%ae>'
+   origin/main` returns it.
+   THE TRAP is that the founder's REAL address is the WRONG value
+   here — GitHub rejects a push carrying it outright, for email
+   privacy, which is how flight 1's cockpit met this gap, on its
+   very first push
+   ([the story](../record/history/workshop/mechanism/flight-1-probe.md)).
+   And this step alone is not once-per-machine: a cloud seat is
+   built fresh for every flight and inherits nothing from the last
+   one, so for that seat it runs ONCE PER SEAT BIRTH.
 2. git config roam.machine "work PC" (or "home PC") — this is the
    seat label the ritual stamps use ([DASHBOARD](../DASHBOARD.md)
    header, memory updated: lines).
