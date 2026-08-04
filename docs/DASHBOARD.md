@@ -6,21 +6,15 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-08-04 · 19:10 UTC by ship's tail · from work PC
+Painted 2026-08-04 · 19:14 UTC by ship's tail · from work PC
 FLIGHT 2 SHIPPED AND PHASE 1 RESCOPED — two flights left to fly ·
-needs-you 1 · git outranks this board. How to read it →
+needs-you 0 · git outranks this board. How to read it →
 [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
 
-1. ⚪ **LOOK AT ONE STRAY BRANCH, THEN IT CAN GO.**
-   `chore/cockpit-seat-repaint` carries one unique commit
-   (`b8a907a`), the twin cockpit's losing self-seat board draft
-   behind the closed
-   [#285](https://github.com/wsher0901/roam/pull/285). The
-   resurrection rule forbids deleting a branch with unique commits,
-   so it waits here. Its content is a superseded board repaint and
-   nothing else. (since 08-04)
+Nothing. The floor is clean and origin carries main and nothing
+else.
 
 ## The baton
 
@@ -39,7 +33,10 @@ own attempt survives as
 and closed unmerged. The board-is-the-arbiter rule was flown for
 real, against a genuine two-session race, and it held with no
 collision and no lost work. Nothing is owed here; the note stands
-because the next double fire will be read against it.
+because the next double fire will be read against it. THE LOSER'S
+BRANCH WAS SWEPT 2026-08-04 on the founder's word, after its one
+unique commit (`b8a907a`, a DASHBOARD-only superseded draft) was
+verified to survive in the closed PR — which is where to read it.
 
 ## In flight
 
