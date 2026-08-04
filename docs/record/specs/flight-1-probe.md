@@ -2,10 +2,12 @@
 type: spec
 id: flight-1-probe
 title: Flight 1 — the shakedown probe
-status: draft
+status: shipped
 stage: workshop
 branch: docs/flight-1-probe
 opened: 2026-08-03
+shipped: 2026-08-04
+pr: 268
 ---
 
 # flight-1-probe — the shakedown's simulated cargo
