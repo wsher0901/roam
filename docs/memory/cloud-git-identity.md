@@ -1,12 +1,12 @@
 ---
 type: memory
 id: cloud-git-identity
-updated: 2026-08-04 14:57 UTC · canary claim · cloud
+updated: 2026-08-04 14:58 UTC · airborne ack · work PC
 ---
 # cloud-git-identity — the third seat joins the one-time list
 
 ## Status
-claimed by cloud — 2026-08-04
+airborne · cloud · 2026-08-04
 
 Born bench-first at the desk, 2026-08-04, as LANE B of FLIGHT 2. A
 cloud lane woke on the label at 14:56 UTC and claims this bench with
