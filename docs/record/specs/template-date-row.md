@@ -2,10 +2,12 @@
 type: spec
 id: template-date-row
 title: The complete-awaiting-merge row gains its date slot
-status: draft
+status: shipped
 stage: workshop
 branch: docs/template-date-row
 opened: 2026-08-04
+shipped: 2026-08-04
+pr: 295
 ---
 
 # template-date-row — the row the checker contradicts
@@ -46,14 +48,14 @@ same day is evidence about the table, not about either seat.
 
 ## Done means
 
-- [ ] The `complete, awaiting merge` row in
+- [x] The `complete, awaiting merge` row in
       [§Status vocabulary](../../memory/TEMPLATE.md#status-vocabulary)
       carries a `<date>` slot in the form its dated neighbours use.
-- [ ] One line in [TEMPLATE](../../memory/TEMPLATE.md) records the
+- [x] One line in [TEMPLATE](../../memory/TEMPLATE.md) records the
       two independent discoveries (flight 2, lanes A and B).
-- [ ] `npm run check:memory` passes, and a Status body written
+- [x] `npm run check:memory` passes, and a Status body written
       verbatim from the amended row would now satisfy it.
-- [ ] The diff touches TWO files and no others:
+- [x] The diff touches TWO files and no others:
       `docs/memory/TEMPLATE.md` and this bench's memory.
 
 ## Out of scope
