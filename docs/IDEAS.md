@@ -19,6 +19,19 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
 
 ## Open
 
+- ⏳ THE SUMMON ONE-LINER HAS NO WRITTEN HOME — [SETUP](SETUP.md)
+  and [HOME](HOME.md) both carry the RECIPE ("push ONE empty commit
+  to the reserved branch `ops/summon`") and
+  `.github/workflows/summon.yml` confirms the trigger, but no file
+  carries a command a founder can paste. Rung 4 is the self-rescue
+  path, reached only when everything above it has failed, so the
+  moment it is needed is the worst possible moment to be composing
+  git plumbing from prose. Either write the literal command into
+  SETUP beside the recipe, or add an npm script. Found while
+  preparing flight 4's post-landing duty, where the desk is told to
+  hand over the "exact one-liner, never improvised" and the record
+  cannot supply one. (2026-08-04, flight 4's liftoff) →
+  [SETUP §cloud accounts](SETUP.md#once-and-done--cloud-accounts)
 - ⏳ **MASTER ITEM** · THE TOMBSTONE LINE LIES UNDER DESK TAKEOVER —
   [the charter](COCKPIT-CHARTER.md)'s rule 8 makes a retiring seat
   say "a replacement cockpit has been summoned and will greet you;

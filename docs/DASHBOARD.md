@@ -6,31 +6,41 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-08-04 · 20:42 UTC by handoff · from work PC
-GROUND BOARD BEFORE FLIGHT 4 LIFTS OFF — clean floor, nothing
-parked · needs-you 0 · git outranks this board. How to read it →
-[HOME §Reading the board](HOME.md#reading-the-board)
+Painted 2026-08-04 · 20:51 UTC by liftoff · from work PC
+FLIGHT 4 IS THE FLIGHT PLAN — 1 lane airborne, cockpit firing ·
+needs-you 1 (expected, not yet owed) · git outranks this board. How
+to read it → [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
 
-Nothing.
+1. 🟡 **"GROUND THE FLEET" — WHEN THE COCKPIT PINGS YOU, AND NOT
+   BEFORE.** The cockpit will push you ONE message the moment the
+   lane's checkpoint commit lands: *"THE WINDOW IS OPEN — the lane
+   holds until `<t+15m UTC>`. Say 'ground the fleet'."* Those three
+   words, in the cockpit's thread, fire
+   [land](skills/land.md) MODE P, whose fence is the whole
+   experiment. THE WINDOW IS 15 MINUTES WIDE AND IT IS THE FIRST
+   ONE EVER BUILT TO BE ANSWERABLE — flights 1–3 measured windows
+   under two minutes, too narrow for a human. Saying nothing is
+   also a result: the lane writes THE WINDOW CLOSED UNUSED and
+   completes honestly. (since 08-04)
+   → [the bench](https://github.com/wsher0901/roam/pull/303) ·
+   [what a fence is](skills/land.md#mode-p--pause-and-transfer-the-founder-is-going-local)
 
 ## The baton
 
-CONTROL TOWER — work PC, since 2026-08-04 20:07 UTC (pickup —
-DESK TAKEOVER)
-Last flight: LANDED 2026-08-04 20:07 UTC BY THIS PICKUP — was
-awaiting your word on 1 item (now in Needs you) · 0 lanes fenced,
-nothing was flying.
+COCKPIT — fired 2026-08-04 20:51 UTC (liftoff) · self-seat pending
+Last flight: LANDED 2026-08-04 20:07 UTC via DESK TAKEOVER — flight
+3's cockpit was superseded at a desk, retired itself, and its bench
+was welded from the ground.
 
-The superseded cockpit
-(`session_01AUaEBaTyuYDYfELjrG85mo`) self-retires by
-[land](skills/land.md)'s Scenario 2 on its next wake, reading its
-supersession off this board and writing none itself. Write 1
-landed at `f747b45`
-([#298](https://github.com/wsher0901/roam/pull/298), 20:07 UTC);
-this line replaces it. Either line satisfies the wake-rule, so the
-desk did not wait for that retirement.
+⚠️ **THIS `fired` STAMP IS KNOWN TO BE EARLY, and flight 4 is the
+chance to measure by how much.** The board is painted and WELDED
+BEFORE the fire — that is the ritual's order — so this time is
+necessarily earlier than the event it names. It is a filed inbox
+line, not a slip. THE PAINT TIME IS 20:51 UTC; the true fire time
+is whatever the close report records, and the gap between them is
+the measurement.
 
 ⚠️ **THE DOUBLE BIRTH RESOLVED ITSELF, and the record is worth
 keeping.** Liftoff fired rung 1 twice — 15:11 and 15:12 UTC —
@@ -50,18 +60,70 @@ verified to survive in the closed PR — which is where to read it.
 
 ## In flight
 
-Nothing — clean floor. Flight 3's cockpit
-(`session_01AUaEBaTyuYDYfELjrG85mo`) HAS RETIRED: it woke, read its
-supersession here, landed by [land](skills/land.md)'s Scenario 2,
-wrote no board, and reported two findings on its way out. Safe to
-archive.
+THE FLIGHT PLAN — flight 4, one lane and one cockpit.
 
-FLIGHT 3, MEASURED END TO END — label 19:39:53, canary 19:41:26,
-ack 19:42:37, cargo 19:47:07, CI green 19:47:55, reviewed 19:51,
-superseded 20:07, welded 20:22. 93 seconds to claim, 71 more to
-licence, 4m30s of licensed work on doc-sized cargo. Flight 2
-measured the claim leg at ~27 minutes once and ~2 the next; this is
-a third point at the fast end, and the spread stays the open
+| Who | For | State | Move |
+|---|---|---|---|
+| lane · [flight-4-freeze](https://github.com/wsher0901/roam/pull/303) | the drill's own log — and a HOLD at a checkpoint, so a fence meets a live worker | 🟢 airborne · cloud · licensed 20:50:14 | write BORN + THE CHECKPOINT, push, then HOLD up to 15 min |
+| cockpit · fired 20:51 UTC | flight 4's control tower | 🟡 self-seat pending — no url until it seats itself | seat, then the TWO DRILL DUTIES below |
+
+FLIGHT CONTEXT — flight 4 is THE FAILURE DRILL, and every failure
+in it is COMMANDED rather than simulated. Nothing is special-cased;
+the machinery meets a real fence, not a rehearsed one. Three things
+are under test:
+
+1. **THE REJECTED-PUSH RULE** — does a fence actually STOP a live
+   worker. Unobserved across three flights because every fence
+   landed on a finished bench. The lane is specced to HOLD so this
+   fence has someone to meet.
+2. **THE CONNECTOR RECOVERY LADDER** — walked one rung down, on
+   command, by a cockpit that is otherwise healthy.
+3. **THE SUMMON WORKFLOW** — fired after the weld by the desk; its
+   routine-born cockpit is the v4 charter box's FIRST LIVE TEST.
+
+**THE COCKPIT'S TWO DRILL DUTIES.** These are the cockpit's
+mandate; the birth prompt is only a pointer here, so this board is
+where they are law.
+
+- **A · THE LADDER WALK.** BEFORE acking the lane's checkpoint
+  push, perform ONE command read with **rung 1 treated as dead** —
+  probe, then use the `gh` fallback per
+  [HOME's recovery ladder](HOME.md#the-cockpits-api-paths--recovery-ladder)
+  — and report the climb (rung tried · result) in the SAME turn.
+  COMMANDED DEGRADATION ONLY: revoke nothing, break nothing, and
+  treat rung 1 as dead only for that one read.
+- **B · THE WINDOW CALL.** The moment the lane's checkpoint commit
+  lands, push the founder ONE message, exactly: *"THE WINDOW IS
+  OPEN — the lane holds until `<t+15m UTC>`. Say 'ground the
+  fleet'."* On that word, run [land](skills/land.md) MODE P exactly
+  as written. THE LANDING REPORT MUST STATE, AS OBSERVED OR AS
+  NOT-OBSERVED, WHETHER THE FENCE MET A LIVE WORKER — that sentence
+  is the flight's entire product, and an inferred answer is worth
+  less than an honest "not observable from this seat".
+
+**AFTER THE LANDING, THE DESK'S ONE EXTRA DUTY** — recorded here so
+it survives this flight's landing and the next pickup. Once the
+desk has resumed, welded the bench, and closed the bench's gate, it
+hands the founder the summon one-liner (the push that fires
+`.github/workflows/summon.yml`) plus one sentence on what to
+expect. The routine-born cockpit that arrives is PART OF THE DRILL:
+it seats or reports per its charter, HOLDS — auto-land never fires
+at birth — and retires on the founder's "land" via MODE R. Its
+birth is the v4 routine box's first live test, and the desk notes
+that in the harvest.
+
+⚠️ **THE LITERAL ONE-LINER HAS NO WRITTEN HOME.** SETUP and HOME
+carry the RECIPE — "push ONE empty commit to the reserved branch
+`ops/summon`" — and the workflow confirms the trigger, but no file
+carries a command a founder can paste. The desk must compose it
+from the recipe and say so plainly rather than pretending to quote
+one. Filed as an inbox line at this liftoff.
+
+FLIGHT 4, MEASURED SO FAR — ready-flip 20:47:43, label 20:47:44,
+canary 20:49:22, ack 20:50:14. 98 seconds to claim, 52 more to
+licence. Flight 3's legs were 93 and 71; flight 2's claim leg ran
+~27 minutes once and ~2 the next. This is a fourth point at the
+fast end, and the spread — not the mechanism — stays the open
 question.
 
 ## Working on
@@ -254,5 +316,6 @@ S3–S8 · queued in order · 0/22
 
 ## Next
 
-Flight 4 lifts off from this board — the bench is birthed next, and
-the flight plan replaces this ground board before anything fires.
+Wait for the cockpit's window message, then say "ground the fleet"
+— or say nothing and let the window close unused, which is also a
+result.
