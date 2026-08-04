@@ -19,6 +19,99 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
 
 ## Open
 
+- ⏳ NOTHING REQUIRES READING A PR'S COMMENTS BEFORE ACTING ON ITS
+  BENCH — flight 2's cockpit read
+  [#280](https://github.com/wsher0901/roam/pull/280)'s metadata,
+  saw `comments: 2`, did not open them, and repeated a wrong
+  diagnosis to the founder for 25 minutes while the contradicting
+  evidence sat one call away. A PR's comments are a lane's ONLY
+  channel for what a git clone cannot show, and no gate, ritual or
+  law names them as a read. (2026-08-04, flight 2 the cockpit) →
+  [parallel-lanes](skills/parallel-lanes.md)
+- ⏳ THE CANARY WINDOW IS NARROWER THAN THE OBSERVED DISPATCH
+  SPREAD — the same route onto the same bench produced a session in
+  ~27 minutes once and ~2 minutes the next time, so the ~10-minute
+  window is set inside the spread rather than outside it. The late
+  session found a parked Status and self-terminated correctly, so
+  the wake-lock held and the cost was one burned cap run, never
+  split-brain work; the failure mode is DISPATCH LATENCY, not a
+  dead trigger, which is a materially different repair from what a
+  lost-spawn reading suggests. (2026-08-04, flight 2 lane C) →
+  [§Canary](skills/parallel-lanes.md#canary-handshake-both-sides)
+- ⏳ NOTHING CHECKS THAT A STAMP IS TRUE, ONLY THAT IT IS
+  WELL-FORMED — a lane read the shell clock once on waking and
+  extrapolated its later stamps from the shape of its own work,
+  landing ~2.5 minutes in the FUTURE, and `check:memory`,
+  `check:links` and CI all passed it green because a plausible
+  stamp is indistinguishable from a true one. It caught itself
+  only by re-reading the clock, which nothing required. Distinct
+  from the counts-and-bars derivation line below: this is the time
+  half of the same law. (2026-08-04, flight 2 lane C) →
+  [LAWS §Knowledge & tracking](LAWS.md#knowledge--tracking)
+- ⏳ A CLOUD LANE CANNOT TELL WHICH BENCH IS ITS OWN FROM THE
+  CONTRACT — the lane-worker prompt says "that PR" but a fleet
+  labels several at once, and neither the prompt nor the
+  checked-out branch names one. The identifier exists in the
+  ENVIRONMENT (`CCR_TRIGGER_PR_NUMBER`, agreeing with
+  `CCR_TRIGGER_HEAD_SHA` and `CLAUDE_CODE_BASE_REF`) and no
+  document mentions it, so without it a fleet lane guesses and
+  races its siblings. (2026-08-04, flight 2 lane A) →
+  [LANE-WORKER](LANE-WORKER.md)
+- ⏳ HOME'S FILES TABLE HAS FOUR MORE GAPS, found by the audit that
+  rode lane C: `.claude/agents/reviewer.md` (defines the subagent
+  no-solo-approval leans on) · `.claude/vault-seed/` (no row and no
+  mention anywhere, prose included) · `scripts/*.mjs` (all five,
+  and `check-links.mjs` appears by filename in neither HOME nor
+  SETUP while nearly every bench's Done-means invokes it) ·
+  `.github/workflows/ci.yml` and `summon.yml`. Root build config is
+  a NULL RESULT, not a gap — consistently absent and SETUP is its
+  home. (2026-08-04, flight 2 lane C) →
+  [HOME §The files](HOME.md#the-files--what-each-one-is-for)
+- ⏳ A TABLE-COVERAGE GATE IS CHECKABLE WHERE THE GENERAL CASE IS
+  NOT — the audit's real find was that HOME's absences are not
+  scattered but cluster on ONE SIDE OF AN UNDECLARED BOUNDARY: the
+  table documents writing completely and machinery partially. "Every
+  file under `.claude/`, `scripts/` and `.github/workflows/` has a
+  row or a declared exclusion" is a script's job, unlike "every
+  mention became a pointer". The tempting excuse was tested and
+  FAILS — `.claude/settings.json` is in SETUP twice and still
+  carries a row. (2026-08-04, flight 2 lane C) →
+  [HOME §The files](HOME.md#the-files--what-each-one-is-for)
+- ⏳ MACHINE-SETUP STEP 2 NAMES TWO SEATS WHERE STEP 1 NOW NAMES
+  THREE — `git config roam.machine "work PC" (or "home PC")` has no
+  cloud value, so a cloud seat reaching it must invent one; flight
+  2's cockpit set `cloud` by inference and that string is now in
+  ritual stamps on the board. Either step 2 names the cloud label,
+  or the seat-label vocabulary lives in one place both steps cite.
+  Surfaced by the change that created it. (2026-08-04, flight 2
+  lane B) → [machine-setup](skills/machine-setup.md)
+- ⏳ A LANE'S PROOF THAT IT OBEYED §CANARY LIVES ONLY IN ITS PROSE —
+  a lane that polls origin and matches the anchored token leaves no
+  evidence but its own diary saying so; nothing mechanical
+  distinguishes it from one that trusted a message. The same shape
+  as the hole [#278](https://github.com/wsher0901/roam/pull/278)
+  just closed, one level up. (2026-08-04, flight 2 lane A) →
+  [§Canary](skills/parallel-lanes.md#canary-handshake-both-sides)
+- ⏳ THE `pull_request.labeled` REDELIVERY IS NOT RARE — flight 2
+  met two live, one within four minutes of its lane's first firing
+  and one citing a five-commit-stale head SHA. Both were absorbed
+  exactly as designed, and the point worth recording is that the
+  wake-lock backstop is LOAD-BEARING rather than theoretical: the
+  same rule made a live lane carry on and would have made a fresh
+  session self-terminate. (2026-08-04, flight 2 lanes A and C) →
+  [§Wake-lock](skills/parallel-lanes.md#wake-lock--parking)
+- ⏳ `check:memory` READS ANY ANGLE-BRACKETED TEXT AS AN UNRESOLVED
+  PLACEHOLDER, so a memory cannot quote an email address, a git
+  identity, or an XML-ish token in its natural form. The rule is
+  right to be blunt, but the failure message does not say that a
+  legitimate quotation is what tripped it. (2026-08-04, flight 2
+  lane A) → `scripts/check-memory.mjs`
+- ⏳ TWO OF THE TEMPLATE'S STATUS ROWS CARRY NO DATE SLOT WHILE THE
+  CHECKER DEMANDS A DATE — `complete, awaiting merge` and
+  `bench ready` are written in the vocabulary table without the
+  `— <date>` their neighbours have, so copying the row verbatim
+  goes red. A lane hit it doing exactly that. (2026-08-04, flight 2
+  lane A) → [TEMPLATE](memory/TEMPLATE.md)
 - ⏳ THE SESSION-START BRANCH SWEEP IS BLIND TO A BRANCH THAT
   CARRIES NO UPSTREAM — it filters `git branch -vv` for
   `[origin/…: gone]`, a marker git prints only when the local
@@ -32,19 +125,6 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   merge is NOT the cause and an ancestry test is not the fix — the
   sweep needs a second arm for the no-upstream case. (2026-08-04,
   the founder + pickup) → `.claude/hooks/session-start.mjs`
-- ⏳ THE ACK MUST BE A COMMIT ON ORIGIN, NEVER A MESSAGE — during
-  flight 1's repair leg a message reached the lane carrying a
-  well-formed ack token naming the cockpit's real session URL,
-  about twenty seconds before any ack commit existed; the lane
-  refused it because origin held no ack and its own watcher had
-  emitted zero bytes. What produced it was not observable from
-  either seat and neither guessed. The rule it argues for: a lane
-  reads its licence to work from the BRANCH, never from a
-  notification — otherwise anything able to write to a lane's
-  session can start it working. Change
-  [§Canary](skills/parallel-lanes.md#canary-handshake-both-sides)
-  to say so. (2026-08-04, flight 1) →
-  [the flight's story](record/history/workshop/mechanism/flight-1-probe.md)
 - ⏳ SHOULD §CANARY'S ACK MATCH ANCHOR ON THE WORD OR THE TOKEN —
   [§Canary](skills/parallel-lanes.md#canary-handshake-both-sides)
   fixes the test at "STARTS WITH `airborne ·`", never the bare
@@ -69,12 +149,6 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   through the platform's own mechanism. Found when the cockpit
   tried to approve flight 1. (2026-08-03, flight 1) →
   [LAWS §Workflow](LAWS.md#workflow-non-negotiable)
-- ⏳ THE CLOUD SEAT HAS NO GIT-IDENTITY STEP — the one-time list
-  covers the work PC and the home PC only, so a cloud seat starts
-  as `Claude <noreply@anthropic.com>` and a push carrying the
-  founder's real address is rejected outright for email privacy.
-  Found by the cockpit's first push at flight 1. (2026-08-03,
-  flight 1) → [machine-setup](skills/machine-setup.md)
 - ⏳ A memory's `updated:` stamp carries no timezone, so two seats
   writing in the same minute read four hours apart on the page —
   flight 1's ack reads `17:38` from the work PC and its canary
@@ -99,11 +173,6 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   anyone and its baton line has no defined case. Found by running
   the ritual exactly at flight 1. (2026-08-03, Claude Code) →
   [liftoff §1](skills/liftoff.md#1--full-handoff-first)
-- ⏳ HOME's files table has NO ROW for
-  `.claude/hooks/user-prompt-submit.mjs`, though the hook exists
-  and enforces the close-lock; its two siblings both have rows.
-  Found while redrawing the mesh. (2026-08-03, Claude Code) →
-  [HOME §The files](HOME.md#the-files--what-each-one-is-for)
 - ⏳ ATLAS FIGURE GATE — a standing lint for the figure law
   (viewBox 740 · palette hexes · generic fonts · coordinate
   bounds), so the law survives re-renders mechanically.
@@ -269,6 +338,25 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
 The outcome ledger — one line each, newest first. A closed idea
 keeps its answer, never its narrative.
 
+- 🟢 The ack must be a commit on origin, never a message — written
+  into [§Canary](skills/parallel-lanes.md#canary-handshake-both-sides)
+  in all three places a reader meets the handshake, with flight 1's
+  false ack named as the case and its unobservable cause stated
+  rather than guessed. Asked 2026-08-04, flight 1. →
+  [#278](https://github.com/wsher0901/roam/pull/278)
+- 🟢 The cloud seat's missing git-identity step — added to
+  [machine-setup](skills/machine-setup.md) with a derivation recipe
+  instead of a literal value, the founder's real address named as
+  the WRONG one with GitHub's email-privacy reason, and the cadence
+  answered: once per seat birth. Proved on a cold cloud seat before
+  it merged. Asked 2026-08-03, flight 1. →
+  [#279](https://github.com/wsher0901/roam/pull/279)
+- 🟢 HOME's missing row for the close-lock hook — written, and
+  verified against the hook's source rather than its own claim
+  (silent on a live session; a stamp, not a refusal, on a closed
+  one). The audit that rode along found four further gaps and a
+  checkable boundary; both are open lines above. Asked 2026-08-03. →
+  [#280](https://github.com/wsher0901/roam/pull/280)
 - 🟢 Shorten the decide-anchor links — done as THE SHORT-ANCHOR
   LAW: headings carry a short name (8 words max), the full
   statement moves to an `In full:` line, anchors freeze at mint;
