@@ -6,21 +6,39 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-08-04 · 19:35 UTC by handoff · from work PC
-FLIGHT 3 IS LIFTING OFF — the desk takeover, one lane of cargo ·
-needs-you 0 · git outranks this board. How to read it →
+Painted 2026-08-04 · 20:11 UTC by pickup · from work PC
+FLIGHT 3 LANDED BY DESK TAKEOVER — 1 gate adopted here · needs-you 1
+· git outranks this board. How to read it →
 [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
 
-Nothing. The floor is clean and origin carries main and nothing
-else.
+1. 🟡 **THE MERGE WORD ON
+   [#295](https://github.com/wsher0901/roam/pull/295)** — green on
+   `a9fa374`, reviewed non-author by the superseded cockpit, so
+   only your word is missing. Say it HERE, at this desk; this desk
+   runs [ship](skills/ship.md). Withholding it is still a valid
+   answer — the flight it was testing is already over. (since
+   08-04)
+   → [the verdict + the spec](https://github.com/wsher0901/roam/pull/295)
+   · four lane findings ride to [IDEAS](IDEAS.md) at the weld
 
 ## The baton
 
-CONTROL TOWER — work PC, since 2026-08-04 16:27 UTC (pickup)
-Last flight: LANDED 2026-08-04 16:02 UTC via MANUAL-LAND — its
-three fenced lanes were adopted at this desk and are now welded.
+CONTROL TOWER — work PC, since 2026-08-04 20:07 UTC (pickup —
+DESK TAKEOVER)
+Last flight: LANDED 2026-08-04 20:07 UTC BY THIS PICKUP — was
+awaiting your word on 1 item (now in Needs you) · 0 lanes fenced,
+nothing was flying.
+
+The superseded cockpit
+(`session_01AUaEBaTyuYDYfELjrG85mo`) self-retires by
+[land](skills/land.md)'s Scenario 2 on its next wake, reading its
+supersession off this board and writing none itself. Write 1
+landed at `f747b45`
+([#298](https://github.com/wsher0901/roam/pull/298), 20:07 UTC);
+this line replaces it. Either line satisfies the wake-rule, so the
+desk did not wait for that retirement.
 
 ⚠️ **THE DOUBLE BIRTH RESOLVED ITSELF, and the record is worth
 keeping.** Liftoff fired rung 1 twice — 15:11 and 15:12 UTC —
@@ -40,24 +58,34 @@ verified to survive in the closed PR — which is where to read it.
 
 ## In flight
 
-Nothing flying. The floor is clean — no lanes, no benches, no open
-PRs.
+| Who | For | State | Move |
+|---|---|---|---|
+| bench · [template-date-row](https://github.com/wsher0901/roam/pull/295) | TEMPLATE's `complete, awaiting merge` row gains its `<date>` slot | 🟢 complete · green on `a9fa374` · reviewed · AT THE GATE | your word, then ship welds it from this desk |
+| cockpit · [session](https://claude.ai/code/session_01AUaEBaTyuYDYfELjrG85mo) | flight 3's control tower | 🟡 superseded 20:07 UTC · retires on its next wake | nothing — it lands by Scenario 2 and writes no board |
+
+FLIGHT CONTEXT — flight 3 flew its object and the object was the
+landing. It tested
+[pickup §6](skills/pickup.md#the-desk-takeover--a-live-cockpit-holding-decisions)'s
+OTHER entry door — a desk taking the baton from a cockpit that is
+LIVE and holding a gate
+([D-061](record/DECISIONS.md#d-061--the-landing-doctrine-recut-to-three-scenarios)
+scenario 2, never once flown; flight 2 could not reach it because
+its fleet was already at ground). The door fired at 20:07 UTC on
+the two facts it keys on — a live cockpit, a gate awaiting the
+founder — with the lane finished and nothing to fence.
+
+THE WHOLE ROUTE, MEASURED — label 19:39:53, canary 19:41:26, ack
+19:42:37, cargo 19:47:07, CI green 19:47:55, reviewed 19:51,
+superseded 20:07. 93 seconds to claim, 71 more to licence, 4m30s of
+licensed work on doc-sized cargo. Flight 2 measured the claim leg
+at ~27 minutes once and ~2 the next; this is a third point at the
+fast end, and the spread stays the open question.
 
 ## Working on
 
-- FLIGHT 3 OF THE TEST PROGRAM — THE DESK TAKEOVER, lifting off
-  2026-08-04. Founder-approved in the Web ops chat, cashing the
-  flight-3 line
-  [D-074](record/DECISIONS.md#d-074--phase-1-closes-on-flights-3-and-4)
-  opened. WHAT IS UNDER TEST is
-  [pickup §6](skills/pickup.md#6--fleet-resume-on-the-founders-answer)'s
-  OTHER entry door — a desk taking the baton from a cockpit that is
-  LIVE and holding a gate, designed at
-  [D-061](record/DECISIONS.md#d-061--the-landing-doctrine-recut-to-three-scenarios)
-  scenario 2 and never once flown. Flight 2 could not reach it
-  because its fleet was already at ground when the founder sat
-  down. The cargo is real but deliberately small, so that any
-  failure is the machinery's.
+- FLIGHT 3 — FLOWN AND LANDED 2026-08-04 by the desk takeover it
+  existed to test. What remains of it is one merge word and, at the
+  weld, the harvest of its lane's four findings.
 
 The standing order
 ([D-060](record/DECISIONS.md#d-060--the-three-phase-standing-order),
@@ -65,10 +93,10 @@ phase 1's closing condition amended by
 [D-074](record/DECISIONS.md#d-074--phase-1-closes-on-flights-3-and-4)),
 one phase per line:
 
-- PHASE 1 — settle & test: the audit is done and flights 1 and 2
-  have shipped. FLIGHT 3 IS FLYING NOW; what then remains is
-  FLIGHT 4 (the failure drill — connector rungs, summon, and the
-  deterministic freeze checkpoint). → its line in [IDEAS](IDEAS.md)
+- PHASE 1 — settle & test: the audit is done and flights 1–3 have
+  flown. What remains is FLIGHT 4 (the failure drill — connector
+  rungs, summon, and the deterministic freeze checkpoint). → its
+  line in [IDEAS](IDEAS.md)
 - PHASE 2 — the vault: chronicle story lanes + a polish pass;
   opens with your scope ruling (all 66, or the load-bearing dozen).
 - PHASE 3 — Roam: T3–T6 relaunched from scratch, plus
@@ -105,38 +133,48 @@ one phase per line:
 
 **Issues**
 
-- ✓ THE MID-WORK FREEZE TEST IS UNRUNNABLE ON DOC-SIZED CARGO —
-  measured twice (A and B finished before the cockpit was even
-  fired; lane C ran 4m48s against a window needing a human to
-  answer a phone), and RULED rather than retried: it becomes a
-  deterministic drill, a bench specced to hold at a checkpoint
-  until acked, folded into flight 4. The failure was structural,
-  so a fourth attempt of the same shape would have failed the same
-  way. →
-  [D-074](record/DECISIONS.md#d-074--phase-1-closes-on-flights-3-and-4)
+- ✓ THE DESK TAKEOVER DOOR IS FLOWN. Both of pickup §6's entry
+  doors have now carried real traffic: flight 2 took the grounded
+  fleet, flight 3 the live cockpit. The two-fact trigger fired off
+  origin, write 1 landed at adopt
+  ([#298](https://github.com/wsher0901/roam/pull/298)) and this
+  repaint replaced it. What the flight did NOT test is the half
+  that needs the other seat: whether the cockpit actually reads its
+  own tombstone and self-retires. That is observed after the fact,
+  by its silence and its unwritten board, not asserted here.
+- ⏳ FOUR LANE FINDINGS AWAIT HARVEST AT THE WELD — a lane may not
+  write [IDEAS](IDEAS.md) itself. Two are fresh sightings that
+  sharpen existing lines (the `npm ci` gap; route 1 eating the
+  ready-flip, now a property rather than an incident), one is new
+  (`check-memory.mjs` strips code spans with a newline-forbidding
+  regex, so a backticked placeholder that WRAPS survives the strip
+  and is reported unresolved), and one adds a third redelivery
+  sighting. → their block in the lane's memory, on
+  [#295](https://github.com/wsher0901/roam/pull/295)
+- ⏳ THE MID-WORK WINDOW IS REAL AND UNDER TWO MINUTES — a fired
+  cockpit and an unfinished lane overlapped by at most 1m47s, which
+  retires flight 2's "closes by construction" without touching
+  [D-074](record/DECISIONS.md#d-074--phase-1-closes-on-flights-3-and-4)'s
+  ruling. → its line in [IDEAS](IDEAS.md)
+- ⏳ THE BOARD'S `fired <t>` STAMP CANNOT BE THE FIRE TIME — it is
+  painted before the weld that precedes the fire, so every measured
+  latency has been read off a time that had not happened. → its
+  line in [IDEAS](IDEAS.md)
 - ⏳ THE WAKE-LOCK'S REJECTED-PUSH RULE IS STILL UNOBSERVED — does a
-  fence actually STOP a live worker. Three flights have failed to
-  see it because every fence landed on a finished bench. It is the
-  single largest untested claim left in the machinery, and flight
-  4's checkpoint drill is now the thing that tests it. → its line
-  in [IDEAS](IDEAS.md)
-- ✓ THE FLEET PATH IS PROVEN END TO END. Flight 2's last untested
-  link — the grounded-fleet resume at pickup — was flown at this
-  sitting: the two-fact trigger fired, the ask rendered, the
-  founder answered `local` three times, and all three benches were
-  adopted for ZERO cap runs and welded. Every link of the path has
-  now carried real cargo.
+  fence actually STOP a live worker. Three flights missed it
+  because every fence landed on a finished bench; flight 4's
+  checkpoint drill is what tests it. → its line in [IDEAS](IDEAS.md)
+- ✓ THE MID-WORK FREEZE TEST IS UNRUNNABLE ON DOC-SIZED CARGO —
+  ruled rather than retried; it becomes a deterministic drill
+  folded into flight 4. →
+  [D-074](record/DECISIONS.md#d-074--phase-1-closes-on-flights-3-and-4)
+- ✓ THE FLEET PATH IS PROVEN END TO END — flight 2's grounded-fleet
+  resume was flown, three benches adopted for zero cap runs, and a
+  per-SHA check confirmed the review verdicts covered what merged.
   [#278](https://github.com/wsher0901/roam/pull/278) ·
   [#279](https://github.com/wsher0901/roam/pull/279) ·
   [#280](https://github.com/wsher0901/roam/pull/280)
-- ✓ THE PER-SHA GATE CHECK, run at the founder's instruction before
-  the merges: for each bench the reviewed head was diffed to the
-  current head, and the delta was exactly three classes — the fence
-  Status, the desk's adoption bookkeeping, and the main sync — with
-  every payload and spec blob byte-identical to what the cockpit
-  reviewed, and main itself having moved only DASHBOARD in between.
-  The review verdicts covered what actually merged.
-- ⏳ Flight 2 surfaced ELEVEN new inbox lines, harvested at this
+- ⏳ Flight 2 surfaced ELEVEN new inbox lines, harvested at that
   tail because a lane may not write [IDEAS](IDEAS.md) itself: the
   dispatch-latency window · nothing requiring a PR's comments be
   read · stamps that are checked for shape but never for truth · a
@@ -189,6 +227,5 @@ S3–S8 · queued in order · 0/22
 
 ## Next
 
-Liftoff is running. This board is the GROUND board it paints at
-its step 1; the flight plan replaces it at step 6, before the
-cockpit is fired.
+Your word on [#295](https://github.com/wsher0901/roam/pull/295),
+and this desk ships it — or say nothing and it keeps until you do.
