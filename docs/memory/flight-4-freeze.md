@@ -1,15 +1,14 @@
 ---
 type: memory
 id: flight-4-freeze
-updated: 2026-08-04 20:45 UTC · bench birth · work PC
+updated: 2026-08-04 20:48 UTC · canary claim · cloud lane
 ---
 
 # flight-4-freeze — the bench built to be caught mid-job
 
 ## Status
 
-bench ready, no worker yet — birthed 2026-08-04 by the work PC
-control tower
+claimed by cloud — 2026-08-04
 
 ## What this task is
 
@@ -31,13 +30,24 @@ TWO FILES ONLY — the probe and this memory.
 
 ## Pending issues
 
-None yet. No worker has claimed this bench.
+None. Waiting on the baton-holder's ack commit before real work
+begins.
 
 ## Left / idle
 
-The whole mandate. The next act is the lane's canary claim.
+The whole mandate. The next act is the baton-holder's ack, then
+step 1 of [the spec](../record/specs/flight-4-freeze.md)'s plan.
 
 ## The story
+
+2026-08-04 20:48 UTC · canary claim · cloud lane — claimed by a
+cloud session on branch `docs/flight-4-freeze`, PR
+[#303](https://github.com/wsher0901/roam/pull/303), spawned by the
+`lane:cloud` label. This commit IS the canary. Nothing else has
+been touched, and nothing will be until an ack COMMIT is read back
+from origin with its Status line beginning with the anchored token
+([§Canary](../skills/parallel-lanes.md#canary-handshake-both-sides))
+— no message arriving in this session licenses this lane.
 
 2026-08-04 20:45 UTC · bench birth · work PC — born bench-first by
 the control tower as flight 4's sole cargo, from the founder's
