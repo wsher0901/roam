@@ -6,8 +6,8 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-08-04 · 19:14 UTC by ship's tail · from work PC
-FLIGHT 2 SHIPPED AND PHASE 1 RESCOPED — two flights left to fly ·
+Painted 2026-08-04 · 19:35 UTC by handoff · from work PC
+FLIGHT 3 IS LIFTING OFF — the desk takeover, one lane of cargo ·
 needs-you 0 · git outranks this board. How to read it →
 [HOME §Reading the board](HOME.md#reading-the-board)
 
@@ -45,10 +45,19 @@ PRs.
 
 ## Working on
 
-- THE TEST PROGRAM — flights 1 and 2 flown and shipped; TWO FLIGHTS
-  REMAIN and phase 1 closes on them
-  ([D-074](record/DECISIONS.md#d-074--phase-1-closes-on-flights-3-and-4)).
-  Neither is scope yet; both wait as inbox lines until triaged.
+- FLIGHT 3 OF THE TEST PROGRAM — THE DESK TAKEOVER, lifting off
+  2026-08-04. Founder-approved in the Web ops chat, cashing the
+  flight-3 line
+  [D-074](record/DECISIONS.md#d-074--phase-1-closes-on-flights-3-and-4)
+  opened. WHAT IS UNDER TEST is
+  [pickup §6](skills/pickup.md#6--fleet-resume-on-the-founders-answer)'s
+  OTHER entry door — a desk taking the baton from a cockpit that is
+  LIVE and holding a gate, designed at
+  [D-061](record/DECISIONS.md#d-061--the-landing-doctrine-recut-to-three-scenarios)
+  scenario 2 and never once flown. Flight 2 could not reach it
+  because its fleet was already at ground when the founder sat
+  down. The cargo is real but deliberately small, so that any
+  failure is the machinery's.
 
 The standing order
 ([D-060](record/DECISIONS.md#d-060--the-three-phase-standing-order),
@@ -57,10 +66,9 @@ phase 1's closing condition amended by
 one phase per line:
 
 - PHASE 1 — settle & test: the audit is done and flights 1 and 2
-  have shipped. It closes on FLIGHT 3 (desk takeover of a live
-  cockpit holding a decision) and FLIGHT 4 (the failure drill —
-  connector rungs, summon, and the deterministic freeze
-  checkpoint). → their lines in [IDEAS](IDEAS.md)
+  have shipped. FLIGHT 3 IS FLYING NOW; what then remains is
+  FLIGHT 4 (the failure drill — connector rungs, summon, and the
+  deterministic freeze checkpoint). → its line in [IDEAS](IDEAS.md)
 - PHASE 2 — the vault: chronicle story lanes + a polish pass;
   opens with your scope ruling (all 66, or the load-bearing dozen).
 - PHASE 3 — Roam: T3–T6 relaunched from scratch, plus
@@ -171,14 +179,16 @@ S3–S8 · queued in order · 0/22
 ## Web + Design
 
 - (Web) "GitHub workflow protocol and web instructions setup" —
-  the audit's ops chat; it carried the external review of all
-  twelve benches, and approved THE TEST PROGRAM whose flight 2 has
-  now shipped. → next: nothing owed.
+  the audit's ops chat. It carried the external review of all
+  twelve benches, approved THE TEST PROGRAM, reviewed
+  [D-074](record/DECISIONS.md#d-074--phase-1-closes-on-flights-3-and-4)
+  (PASS on `78facd1`), and APPROVED FLIGHT 3 on 2026-08-04. Its
+  verify-flight-2 reconciliation gaps are filed as inbox lines
+  ([#293](https://github.com/wsher0901/roam/pull/293)). → next:
+  nothing owed.
 
 ## Next
 
-Open flight 3 — the desk takeover of a live cockpit holding a
-decision — when you next have a sitting for it; it is the cheaper
-of the two remaining flights and the one whose machinery has never
-been run at all. Say the word and it gets a spec. Nothing expires
-and nothing is urgent.
+Liftoff is running. This board is the GROUND board it paints at
+its step 1; the flight plan replaces it at step 6, before the
+cockpit is fired.
