@@ -1,21 +1,22 @@
 ---
 type: memory
 id: canary-ack-commit
-updated: 2026-08-04 15:02 UTC · payload written · cloud
+updated: 2026-08-04 15:05 UTC · completion · cloud
 ---
 # canary-ack-commit — a lane reads its licence from the branch
 
 ## Status
-airborne · cloud · 2026-08-04
+complete, awaiting merge — 2026-08-04
 
-Born bench-first at the desk, 2026-08-04, as LANE A of FLIGHT 2. A
-cloud lane woke on the `lane:cloud` label at 14:56 UTC and claims
-this bench with this commit. It now waits for the baton-holder's
-ack, tested for as
+The payload is written, pushed, and green: `docs/skills/parallel-lanes.md`
 [§Canary](../skills/parallel-lanes.md#canary-handshake-both-sides)
-prescribes — the anchored token at the start of this Status line —
-and read from the branch on origin, never from anything delivered to
-the session. No real work until then.
+now states that a lane's licence to work is an ack COMMIT ON ORIGIN
+and never a message, in all three places a reader of that section
+meets the handshake. Every Done-means line in
+[the spec](../record/specs/canary-ack-commit.md) is met, including
+the negative one: the deferred word-versus-token question comes out
+UNRULED. The lane has not merged and will not — that is the
+founder's word after an external review.
 
 ## What this task is
 One rule into
@@ -33,15 +34,53 @@ flies three lanes at once, and disjointness is what keeps them from
 colliding.
 
 ## Pending issues
-None yet.
+Nothing blocking. The word-versus-token match question was held
+rather than solved, as instructed, and is verifiably untouched — see
+the last line of the story.
 
-One thing to hold carefully rather than solve: the word-versus-token
-match question is FILED DEFERRED by the founder and sits in the same
-section this bench edits. It must come out of this bench unruled.
+IDEAS SURFACED — four, for the baton-holder to harvest at its next
+ritual; a lane may not write [IDEAS](../IDEAS.md) itself. Written
+one per line so each closes on its own, per the entry contract:
+
+- ⏳ A CLOUD LANE CANNOT TELL WHICH BENCH IS ITS OWN FROM THE
+  CONTRACT — the lane-worker prompt says "that PR" but a fleet
+  labels several at once, and neither the prompt nor the checked-out
+  branch names one; the trigger's identity is in the environment
+  (`CCR_TRIGGER_PR_NUMBER`, agreeing with `CCR_TRIGGER_HEAD_SHA` and
+  `CLAUDE_CODE_BASE_REF`), which no document mentions, so without it
+  a fleet lane guesses and races its siblings. (2026-08-04, flight 2
+  lane A) → [LANE-WORKER](../LANE-WORKER.md)
+- ⏳ THE `pull_request.labeled` REDELIVERY IS NOT RARE — flight 2's
+  lane A met one within four minutes of its first firing, carrying a
+  two-commit-stale head SHA; the wake-lock absorbed it exactly as
+  designed, which is the point worth recording: the backstop is
+  load-bearing, not theoretical. (2026-08-04, flight 2 lane A) →
+  [§Wake-lock](../skills/parallel-lanes.md#wake-lock--parking)
+- ⏳ A LANE'S PROOF THAT IT OBEYED §CANARY LIVES ONLY IN ITS PROSE —
+  this lane polled origin and matched the anchored token, and the
+  only evidence of that is this file saying so; nothing mechanical
+  distinguishes a lane that checked the branch from one that trusted
+  a message, which is the same shape as the gap the payload closes.
+  (2026-08-04, flight 2 lane A) →
+  [§Canary](../skills/parallel-lanes.md#canary-handshake-both-sides)
+- ⏳ `check:memory` READS ANY ANGLE-BRACKETED TEXT AS AN UNRESOLVED
+  PLACEHOLDER, so a memory cannot quote an email address, a git
+  identity, or an XML-ish token in its natural form; the rule is
+  right to be blunt but the failure message does not say that a
+  legitimate quotation is what tripped it. (2026-08-04, flight 2
+  lane A) → `scripts/check-memory.mjs`
+- ⏳ TWO OF THE TEMPLATE'S STATUS ROWS CARRY NO DATE SLOT WHILE THE
+  CHECKER DEMANDS A DATE — `complete, awaiting merge` and
+  `bench ready` are written in the vocabulary table without the
+  `— <date>` its neighbours have, but `check:memory` requires a date
+  in the Status body, so writing the row verbatim goes red. Copied
+  the state from the table and hit it. (2026-08-04, flight 2 lane A)
+  → [TEMPLATE](TEMPLATE.md)
 
 ## Left / idle
-The whole payload — the lane is claimed but unlicensed until the ack
-commit lands on origin.
+Nothing. The payload is complete and pushed; what remains is not the
+lane's: the external review, the founder's word, the weld, and the
+closing of this repair's [IDEAS](../IDEAS.md) line at the ground.
 
 ## The story
 2026-08-04 14:28 UTC · bench birth · work PC — the founder set
@@ -130,6 +169,25 @@ THE DEFERRED QUESTION CAME OUT UNRULED, and that was checked rather
 than merely intended: the diff touches no line of the `THE MATCH IS
 ANCHORED` paragraph, so what the matcher anchors on is exactly what
 it was.
+
+2026-08-04 15:05 UTC · completion · cloud — the fourth diary moment,
+written before the ready-flip as the diary rule requires. The
+verification loop ran in full and in order
+([ship §1](../skills/ship.md#1--preflight)): `check:links` 4551
+links across 228 files, 0 broken · `check:ledger` 115 ↔ 115 ·
+`check:memory` valid · `lint` + `format:check` clean · `test` 3
+passing · `build` green. `git merge origin/main` was already up to
+date, so no sync commit was needed. The branch's whole diff against
+its birth commit touches EXACTLY the two files the fleet law names,
+checked with `git diff --name-only` rather than asserted.
+
+One note the founder should have when reading this bench next to
+its siblings: the ready-flip is not this lane's signal. Route 1
+spawns a cloud lane by flipping the PR ready and THEN labelling, so
+#278 arrived already ready and the lane had nothing to flip —
+flight 1's "route 1 consumes the ready-flip" finding, met again and
+unchanged. What completion actually means here is this Status line
+plus the completion comment on the PR.
 
 ## Where to look
 - [the spec](../record/specs/canary-ack-commit.md) — the mandate,
