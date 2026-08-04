@@ -30,11 +30,22 @@ git outranks this board. How to read it →
 
 ## The baton
 
-COCKPIT — live since 2026-08-04 19:47 UTC (liftoff) ·
-https://claude.ai/code/session_01AUaEBaTyuYDYfELjrG85mo · awaiting
-your word on 1 item
+COCKPIT SUPERSEDED — desk takeover 2026-08-04 · 20:07 UTC · work PC
+· https://claude.ai/code/session_01AUaEBaTyuYDYfELjrG85mo
 Last flight: LANDED 2026-08-04 16:02 UTC via MANUAL-LAND — flight
 2's three fenced lanes were adopted at the desk and welded.
+
+The founder sat down at the work PC while flight 3's cockpit was
+LIVE and holding the gate on
+[#295](https://github.com/wsher0901/roam/pull/295). Two commanding
+seats cannot both hold the baton, so the desk took it and adopted
+the decision queue
+([pickup §6](skills/pickup.md#the-desk-takeover--a-live-cockpit-holding-decisions)).
+This line is write 1 — landed at adopt, so the cockpit can
+recognise its own supersession by reading this board and
+self-retire by [land](skills/land.md)'s Scenario 2. That
+retirement writes NO board; this sitting's repaint replaces this
+line with the takeover claim.
 
 ⚠️ **THE DOUBLE BIRTH RESOLVED ITSELF, and the record is worth
 keeping.** Liftoff fired rung 1 twice — 15:11 and 15:12 UTC —
