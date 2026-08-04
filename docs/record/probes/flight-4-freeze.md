@@ -13,6 +13,16 @@ and then stops mid-job so that a fence landing on this branch meets
 a worker that is still alive. Contract:
 [the spec](../specs/flight-4-freeze.md).
 
+⚠️ **THIS LOG HAS TWO AUTHORS, AND A READER MUST KNOW IT BEFORE THE
+FIRST SECTION.** Everything down to and including **THE WINDOW
+CLOSED UNUSED** was written by the cloud lane, from inside the hold.
+The final section, **THE EXIT PUSH**, was written afterwards by the
+WORK PC DESK that adopted the fenced bench — the fence landed before
+the lane could fill that heading. The observability law is kept
+across the change of hand by ATTRIBUTION, and that section opens by
+naming its own author, its four sources, and which seat saw each
+fact. Nothing above it was rewritten.
+
 **THE RULE THIS FILE OBEYS.** Everything below is either something
 this seat OBSERVED — a clock read, a git object, an API response —
 or the exact words **"not observable from this seat"**. Nothing is
@@ -27,7 +37,9 @@ which case the offset is shown as the source wrote it.
 This file was pushed carrying BORN and THE CHECKPOINT and nothing
 else, precisely so that the drill's outcome could not be
 pre-narrated. Whatever section follows them was written after the
-hold ended, from what the hold actually produced.
+hold ended, from what the hold actually produced — and, for the last
+section, by the second seat named above, from what survived the
+lane's death.
 
 ## BORN
 
@@ -267,6 +279,12 @@ evidence, and it is checkable by anyone from the reflog.
   Roughly sixteen minutes, 20:53:54Z to the exit push below, during
   which any commit landing on `docs/flight-4-freeze` would have met
   a live worker rather than a finished one.
+  *(Desk note, added with the last section and not by the lane: the
+  lane's own words stand, but the exit push is now stamped at
+  21:11:37Z, which makes this span 17m43s. The specced window proper
+  — 20:53:54Z to the 21:09:32Z deadline — is 15m38s. Neither number
+  changes the finding; both are written down so the arithmetic is
+  checkable.)*
 - ❌ **THE RULE UNDER TEST REMAINS UNOBSERVED, for the fourth
   flight — but for a NEW reason, and the distinction is the
   finding.** Flights 1 through 3 missed
@@ -312,9 +330,11 @@ seat" means the lane; below it, the lane is called the lane and the
 desk is called the desk, and nothing is written as an observation
 that neither of them made.
 
-Three sources, and no fourth:
+Four sources, and no fifth. Two of them are DOCUMENTS WRITTEN BY
+OTHER SEATS, not observations — the distinction is marked at every
+use below, because a document read is not an event seen:
 
-1. **Git objects on origin** — the desk reads them directly.
+1. **Git objects on origin** — the desk reads them directly. Primary.
 2. **GitHub's repository events API** — the server's own record of
    which pushes it accepted, and when. Read by the desk; its limits
    are stated below, because they turned out to matter.
@@ -325,7 +345,16 @@ Three sources, and no fourth:
    any of it. It is the only surviving witness to the lane's last
    four minutes: the lane's final local commit `29a0bd0` was never
    pushed and died with the container, exactly as the lane said it
-   would.
+   would. A DOCUMENT, and the lane itself relays cockpit-sourced
+   figures inside it — those are marked as source 4, not as the
+   lane's.
+4. **THE COCKPIT'S FENCE BLOCK** — the Status this branch carried at
+   `7870659`, and the board it painted at
+   [#307](https://github.com/wsher0901/roam/pull/307). A DOCUMENT
+   written by a seat that is gone. Everything the cockpit alone
+   could see — its own refused push, the moment the founder's word
+   reached it — exists nowhere else, and this section neither
+   promotes those figures to observations nor drops them.
 
 ### The push itself — ACCEPTED
 
@@ -351,10 +380,22 @@ half of the finding.
 ### THE REJECTION THAT CAME AFTERWARDS — a post-window artifact, NOT the drill's answer
 
 The fence's own block demanded this be looked for and, if found,
-labelled. It was found. **YES — the fence met a live worker.** The
-lane was still running at 21:14:06Z, finished its completion pass,
-committed locally at **21:15:55Z**, pushed, and **that push was
-rejected**. Git's refusal, as the lane captured it:
+labelled. It was found. **YES — the fence met a live worker**, and
+the proof is an ordering rather than a continuity claim:
+
+- The fence commit `7870659` was **accepted by origin at 21:14:06Z**
+  (desk · events API; its `before` field is `40685e4`).
+- The lane **committed its completion pass at 21:15:55Z and pushed**
+  — a minute and forty-nine seconds LATER — **and that push was
+  rejected** (lane · its own git report, relayed in the stand-down
+  comment).
+
+A seat that pushes at 21:15:55Z is alive at 21:15:55Z, which is
+after the fence landed; nothing here needs the lane to have been
+continuously awake across 21:14:06Z, and that is deliberately not
+asserted. WHAT THE LANE WAS DOING AT THE INSTANT THE FENCE LANDED IS
+**not observable from this seat**. Git's refusal, as the lane
+captured it:
 
 ```text
 hint: the same ref. If you want to integrate the remote changes, use
@@ -385,34 +426,60 @@ bench was built to be. It is the first time in four flights that a
 fence has met a live worker, and it is a post-window artifact. No
 later reader may promote it.
 
-**THE SYMMETRY IS THE PART WORTH KEEPING.** The cockpit's fence
-push at 21:12:22Z was rejected by this lane's `40685e4`; this lane's
-push at ~21:15:5xZ was rejected by the cockpit's `7870659`. Both
-seats were live, both were moving, and **each learned the other
-existed by being refused**. The mechanism the drill could not
-observe inside its window was observed twice outside it, once in
-each direction.
+**THE SYMMETRY IS THE PART WORTH KEEPING — and one half of it is a
+document, not an observation.** The lane's push at ~21:15:5xZ was
+rejected by the cockpit's `7870659`: that half is the lane's own,
+captured above. The other half — the cockpit's fence push at
+**21:12:22Z**, rejected by this lane's `40685e4` — is SOURCE 4, the
+cockpit's fence block, read by the desk and relayed by the lane;
+neither the desk nor the lane watched it happen, and no git object
+or API response records it, for exactly the reason the next section
+gives. It is kept because only the refused seat can ever attest a
+refusal, and this is that seat's attestation. So: both seats were
+live, both were moving, and **each learned the other existed by
+being refused** — the second half on the cockpit's word.
+
+The mechanism the drill could not observe inside its window is
+attested twice outside it, once in each direction. **THE LANE'S
+FROZEN TEXT ABOVE STILL READS "THE RULE UNDER TEST REMAINS
+UNOBSERVED", AND IT IS LEFT EXACTLY AS THE LANE WROTE IT** — true of
+the window, which is what the drill measures. This paragraph is the
+forward pointer, not a correction of it.
 
 ### What the sync merge made visible — the lane's last finding
 
-Reported by the lane in its stand-down comment; the desk did not
-observe it and records it as the lane's. Merging current `main` at
-completion brought `9cb9214`
-([#306](https://github.com/wsher0901/roam/pull/306), authored
-21:01:35Z), whose board records a cockpit **seated 20:59Z** that saw
-this lane's checkpoint commit, named `d5347ca`, computed the window
-and published the call. **So the proximate cause of the null result
-is readable, and no mechanical link failed:** the lane signalled,
-the cockpit seated inside the window, saw the signal, computed the
-deadline, and published it. What did not happen on time was the
-founder's three words — which arrived at ~21:11, about two minutes
-after the close. THE DRILL'S ONE UN-AUTOMATED LINK IS THE ONLY ONE
-THAT DID NOT HOLD.
+Reported by the lane in its stand-down comment. The desk did not
+observe any of it; the lane did not observe most of it either, and
+the split matters. Merging current `main` at completion brought
+`9cb9214` ([#306](https://github.com/wsher0901/roam/pull/306),
+authored 21:01:35Z) into the lane's working copy — that much is the
+lane's own act. What the lane then READ in that board was a cockpit
+**seated 20:59Z** that saw this lane's checkpoint commit, named
+`d5347ca`, computed the window and published the call.
 
-Two limits the lane stated about its own claim, kept verbatim in
-substance: it observed a **document**, not the events that document
-asserts; and whether the founder was absent or deliberately silent
-is **not observable from this seat**.
+**So the proximate cause of the null result is readable, and no
+mechanical link failed:** the lane signalled, the cockpit seated
+inside the window, saw the signal, computed the deadline, and
+published it. What did not happen on time was the founder's three
+words.
+
+**WHEN THOSE WORDS ARRIVED IS SOURCE 4, AND THE CHAIN MATTERS
+BECAUSE IT LOOKS LIKE THE LANE'S AND IS NOT.** The figure — **~21:11**
+— cannot come from `9cb9214`, which was authored at 21:01:35Z, ten
+minutes before the event it would have to describe. Its only home is
+the cockpit's fence block: the founder's word reached the cockpit,
+and the cockpit is the sole seat that could time it. The lane
+relayed that figure; this section names its real source. Measured
+against the lane's own close of 21:09:32Z it is about ninety seconds
+late, and against the cockpit's close of 21:08:52Z about two minutes
+— two numbers because the two seats derived two closes, immediately
+below.
+
+Two limits the lane stated about its own claim, kept in substance:
+it observed a **document**, not the events that document asserts;
+and whether the founder was absent or deliberately silent is **not
+observable from this seat**. Both apply with more force now that the
+document is named.
 
 **The two seats computed different window edges, and both were
 right.** The cockpit's board put the close at 21:08:52; the lane's
@@ -424,13 +491,16 @@ exited early.
 
 ### What the desk observed on its own, and why it changes the instrument list
 
-**A REJECTED PUSH LEAVES NO SERVER-SIDE TRACE — verified twice in
-this flight's own record.** The events API shows pushes on this ref
-at 20:49:04Z, 20:50:15Z, 21:11:40Z and 21:14:06Z, and nothing
-between or after. The cockpit's refused attempt at 21:12:22Z and the
-lane's refused attempt at ~21:15:5xZ are both absent, because a
-refusal is a thing the server declines to record. THE CONSEQUENCE IS
-DOCTRINAL: the most interesting event of this flight is knowable
+**A REJECTED PUSH LEAVES NO SERVER-SIDE TRACE — and this is the
+desk's own observation, from the two refusals the other seats
+reported.** The events API shows pushes on this ref at 20:49:04Z,
+20:50:15Z, 21:11:40Z and 21:14:06Z, and nothing between or after.
+The cockpit's refused attempt at 21:12:22Z and the lane's refused
+attempt at ~21:15:5xZ are both absent from it. That the two attempts
+happened is source 3 and source 4; that the server recorded neither
+is the desk's. A refusal is a thing the server declines to record.
+THE CONSEQUENCE IS DOCTRINAL: the most interesting event of this
+flight is knowable
 only because a lane wrote it into a PR comment before dying. Had the
 lane stood down silently, the record would show a clean chain of
 accepted pushes and the rejection would have left no evidence
@@ -443,11 +513,16 @@ push — `c08a079..d5347ca`, the single most important push of this
 drill — HAS NO `PushEvent` in the feed, while its neighbours on the
 same ref at 20:50:15Z and 21:11:40Z both do, and the feed's window
 covers 19:10Z → 21:18Z continuously. WHY IT IS MISSING IS **not
-observable from this seat**; the desk notes only that it landed in
-the same second as an unrelated push to `main` (`4a2957c`,
-20:53:51Z). A desk using this feed as a push ledger would have
-concluded the checkpoint push never happened. It is a corroborating
-instrument, never a primary one — the git objects are primary.
+observable from this seat**, and no explanation is offered — the
+desk records only the bare adjacency it can read, that the feed's
+nearest event is an unrelated push to `main` (`4a2957c`) accepted at
+20:53:51Z, three seconds before the lane's own report of the
+checkpoint push at 20:53:54Z. THAT IS AN ADJACENCY, NOT A CAUSE, and
+by the paragraph above the desk cannot even read a server-side time
+for the push that is missing. A desk using this feed as a push
+ledger would have concluded the checkpoint push never happened. It
+is a corroborating instrument, never a primary one — the git objects
+are primary.
 
 Sources:
 [the spec](../specs/flight-4-freeze.md) ·

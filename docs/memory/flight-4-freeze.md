@@ -1,7 +1,7 @@
 ---
 type: memory
 id: flight-4-freeze
-updated: 2026-08-04 21:42 UTC · ship · work PC
+updated: 2026-08-04 21:54 UTC · ship · critic round · work PC
 ---
 
 # flight-4-freeze — the bench built to be caught mid-job
@@ -24,15 +24,19 @@ post-window artifact of the landing ritual, labelled as such in the
 probe, and no later reader may promote it.
 
 **THE OPEN QUESTION THE FENCE LEFT IS ANSWERED, AND THE ANSWER IS
-YES.** The fence met a live worker. The lane was still running at
-21:14:06Z, committed its completion pass locally at 21:15:55Z,
-pushed, and **that push was rejected** non-fast-forward; it then
-read the fence Status from origin at 21:16:11Z, recognised a
-terminal Status it does not own, pushed nothing further, and stood
-down. The verbatim refusal — honestly labelled as the TAIL of the
-message, since the lane's own command piped git through `tail -3`
-and the `! [rejected]` lines were lost before any seat could read
-them — is in the probe under its own heading.
+YES.** The fence met a live worker, and the proof is an ORDERING,
+not a continuity claim: the fence commit `7870659` was accepted by
+origin at 21:14:06Z, and the lane committed its completion pass at
+21:15:55Z — a minute and forty-nine seconds later — pushed, and
+**that push was rejected** non-fast-forward. A seat that pushes at
+21:15:55Z is alive then, which is after the fence landed; what the
+lane was doing at the fence's instant is not observable and is not
+asserted. It then read the fence Status from origin at 21:16:11Z,
+recognised a terminal Status it does not own, pushed nothing
+further, and stood down. The verbatim refusal — honestly labelled as
+the TAIL of the message, since the lane's own command piped git
+through `tail -3` and the `! [rejected]` lines were lost before any
+seat could read them — is in the probe under its own heading.
 
 **HOW THAT ANSWER SURVIVED, which is the load-bearing part.** It
 reached the record through THE MAIL SLOT, not through git: the lane
@@ -49,27 +53,41 @@ left no evidence anywhere.
 **How much of the spec is done: all five Done-means bullets hold.**
 The checkpoint commit exists · the hold was honoured for its full
 window with NO fetch at all, stricter than the no-rebase rule the
-spec fixes · the exit was a plain push attempt and BOTH outcomes are
-now recorded as observed — the accepted exit push, and the
-post-window rejection with its verbatim text · the observability law
-holds throughout, with the change of authoring seat handled by
-attribution rather than pretence · the diff touches exactly the two
-sanctioned files.
+spec fixes · the exit was a plain push attempt and it was ACCEPTED,
+which is bullet 3's second branch, and the separate post-window
+rejection is recorded beside it with its verbatim text and its own
+heading · the observability law holds throughout, with the change of
+authoring seat handled by attribution rather than pretence · the
+payload diff touches exactly the two sanctioned files — the branch
+diff shows three, because the spec rode in on the BIRTH commit
+`771bd45` laid by the control tower before the lane existed. Flight
+1 shipped on the identical reading.
 
-**Deviation from the spec, stated plainly.** The spec assumed one
-seat would write the whole probe. It did not: the lane wrote BORN,
-THE CHECKPOINT and THE WINDOW CLOSED UNUSED, and this desk wrote THE
-EXIT PUSH after adopting the bench. The section opens by naming its
-own author and its three sources, and every fact in it is attributed
-to the seat that observed it — the flight-1 precedent for a later
-seat editing a lane's probe.
+**Deviations from the spec, stated plainly.**
+
+1. **The probe has two authors.** The spec assumed one seat would
+   write the whole log. The lane wrote BORN, THE CHECKPOINT and THE
+   WINDOW CLOSED UNUSED; this desk wrote THE EXIT PUSH after
+   adopting the bench. The section opens by naming its own author
+   and its four sources, and every fact in it is attributed to the
+   seat that observed it — the
+   [flight 1](../record/probes/flight-1-shakedown.md) precedent for
+   a later seat editing a lane's probe, including its rule that the
+   reader must meet the correction at the TOP of the file, not
+   buried in it.
+2. **Two of those four sources are DOCUMENTS, not observations** —
+   the lane's stand-down comment and the cockpit's fence block. Two
+   facts this flight cares about (the cockpit's own refused push at
+   21:12:22Z, and the moment the founder's word reached it) exist
+   nowhere but a document written by a seat that is gone. They are
+   kept and labelled rather than promoted or dropped.
 
 ## What this task is
 
 FLIGHT 4 OF THE TEST PROGRAM — the failure drill. This bench
-authors `docs/record/probes/flight-4-freeze.md`, the drill's own
-log, and HOLDS at a checkpoint partway through so that a fence
-landing on this branch meets a worker that is still alive.
+authors [the probe](../record/probes/flight-4-freeze.md), the
+drill's own log, and HOLDS at a checkpoint partway through so that a
+fence landing on this branch meets a worker that is still alive.
 
 THE HOLD IS THE CARGO. Three flights have fenced a bench and none
 has observed
@@ -96,7 +114,8 @@ test, still unflown.
 
 ## Ideas surfaced
 
-- §Canary disagrees with itself about the ack token's middle field:
+- [§Canary](../skills/parallel-lanes.md#canary-handshake-both-sides)
+  disagrees with itself about the ack token's middle field:
   the canonical block reads `airborne · <url> · <date>`, the
   baton-holder bullet says `airborne · <vehicle or url> · <date>`.
   This flight's ack wrote a vehicle (`cloud`) — canonical under the
@@ -144,6 +163,61 @@ test, still unflown.
   fence's human gate, and the likely fix is ORDERING, not duration.
 
 ## The story
+
+2026-08-04 21:54 UTC · THE CRITIC ROUND · work PC — the pre-gate
+critic ([D-044](../record/DECISIONS.md#d-044--the-pre-gate-critic-goes-live))
+ran on the branch diff and returned **PASS-WITH-FINDINGS: two
+severe, five notable, four minor**. Every finding fell in ONE class,
+and it was the class this bench is about: THE EXIT PUSH staked its
+whole compliance on "every fact names which seat saw it and with
+what instrument", and several of its load-bearing lines did neither.
+All were repaired; none were dismissed.
+
+**The two severe ones were the same defect twice — AN UNDECLARED
+FOURTH SOURCE.** The section announced "three sources, and no
+fourth" and then used two figures that can come from none of them:
+the cockpit's own refused push at 21:12:22Z, and the moment the
+founder's word reached the cockpit (~21:11). Both are cockpit-only
+knowledge, relayed through the lane's comment and the fence block.
+The second was worse than unattributed — it was attributed to the
+LANE via a sync merge that brought `9cb9214`, a board authored
+21:01:35Z, *ten minutes before the event it would have to describe*.
+The chain was impossible on its face and the critic caught it by
+arithmetic. THE REPAIR: a fourth source is declared — the cockpit's
+fence block — and marked as a DOCUMENT rather than an observation,
+with both figures routed to it explicitly.
+
+**The notable ones, and what each cost.** "The lane was still
+running at 21:14:06Z" was an inference wearing an observation's
+clothes, and it silently borrowed a stamp that belongs to the
+fence's ACCEPTED push; it is now an ordering argument — the lane
+pushed at 21:15:55Z, which is after 21:14:06Z, and continuity across
+the fence is explicitly NOT asserted · the missing-`PushEvent`
+paragraph offered a "same second" coincidence that was three seconds
+off and whose premise the same paragraph had just declared
+unreadable; the explanation is withdrawn and only the bare adjacency
+kept · the file's preamble still told a reader the whole log was
+single-seat, with the correction 280 lines below — flight 1's
+precedent is explicit that the reader must never find a silently
+edited frozen file, so the two-author warning now sits above the
+first section · the memory asserted "the diff touches exactly the
+two sanctioned files" flat, where the branch shows three; it now
+says payload-versus-birth-commit and names the flight-1 reading ·
+and the memory never linked its own payload, which is fixed.
+
+**The minor ones** — a 16-minutes-versus-17m43s span in the lane's
+frozen text (annotated with a desk note rather than rewritten), a
+sentence that made the exit push read as both accepted and refused,
+and a missing forward pointer from the lane's "still unobserved"
+bullet to the two attested rejections outside the window.
+
+**AND ONE PROCESS FINDING WORTH MORE THAN THE PROSE ONES.** The
+payload section was written by the desk that is running ship, so
+this is a SELF-AUTHORED DIFF under
+[no-solo-approval](../LAWS.md#workflow-non-negotiable): it takes an
+EXTERNAL WEB REVIEW before the founder's word. A subagent of the
+authoring session is not that review, and this round does not
+pretend to be.
 
 2026-08-04 21:42 UTC · adopted at the desk, and the fence's open
 question answered · work PC — the founder said "local
@@ -262,6 +336,10 @@ rejection would be worse than no flight at all.
 
 ## Where to look
 
+- [the probe](../record/probes/flight-4-freeze.md) — **THE
+  PAYLOAD**, and the only place the drill's own account lives. Read
+  its two-author warning first; the last section, THE EXIT PUSH, was
+  written by the desk that adopted this bench.
 - [the spec](../record/specs/flight-4-freeze.md) — the contract,
   including the three-step checkpoint and the null-result rule.
 - [the lane's stand-down comment](https://github.com/wsher0901/roam/pull/303#issuecomment-5184732402)
