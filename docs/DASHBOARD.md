@@ -6,22 +6,14 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-08-04 · 20:11 UTC by pickup · from work PC
-FLIGHT 3 LANDED BY DESK TAKEOVER — 1 gate adopted here · needs-you 1
-· git outranks this board. How to read it →
+Painted 2026-08-04 · 20:24 UTC by ship's tail · from work PC
+FLIGHT 3 COMPLETE — welded, harvested, clean floor · needs-you 0 ·
+git outranks this board. How to read it →
 [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
 
-1. 🟡 **THE MERGE WORD ON
-   [#295](https://github.com/wsher0901/roam/pull/295)** — green on
-   `a9fa374`, reviewed non-author by the superseded cockpit, so
-   only your word is missing. Say it HERE, at this desk; this desk
-   runs [ship](skills/ship.md). Withholding it is still a valid
-   answer — the flight it was testing is already over. (since
-   08-04)
-   → [the verdict + the spec](https://github.com/wsher0901/roam/pull/295)
-   · four lane findings ride to [IDEAS](IDEAS.md) at the weld
+Nothing.
 
 ## The baton
 
@@ -58,34 +50,24 @@ verified to survive in the closed PR — which is where to read it.
 
 ## In flight
 
-| Who | For | State | Move |
-|---|---|---|---|
-| bench · [template-date-row](https://github.com/wsher0901/roam/pull/295) | TEMPLATE's `complete, awaiting merge` row gains its `<date>` slot | 🟢 complete · green on `a9fa374` · reviewed · AT THE GATE | your word, then ship welds it from this desk |
-| cockpit · [session](https://claude.ai/code/session_01AUaEBaTyuYDYfELjrG85mo) | flight 3's control tower | 🟡 superseded 20:07 UTC · retires on its next wake | nothing — it lands by Scenario 2 and writes no board |
+Nothing — clean floor. One session remains open but is not flying:
+the superseded cockpit
+(`session_01AUaEBaTyuYDYfELjrG85mo`) retires itself by
+[land](skills/land.md)'s Scenario 2 on its next wake, writing no
+board. Safe to archive.
 
-FLIGHT CONTEXT — flight 3 flew its object and the object was the
-landing. It tested
-[pickup §6](skills/pickup.md#the-desk-takeover--a-live-cockpit-holding-decisions)'s
-OTHER entry door — a desk taking the baton from a cockpit that is
-LIVE and holding a gate
-([D-061](record/DECISIONS.md#d-061--the-landing-doctrine-recut-to-three-scenarios)
-scenario 2, never once flown; flight 2 could not reach it because
-its fleet was already at ground). The door fired at 20:07 UTC on
-the two facts it keys on — a live cockpit, a gate awaiting the
-founder — with the lane finished and nothing to fence.
-
-THE WHOLE ROUTE, MEASURED — label 19:39:53, canary 19:41:26, ack
-19:42:37, cargo 19:47:07, CI green 19:47:55, reviewed 19:51,
-superseded 20:07. 93 seconds to claim, 71 more to licence, 4m30s of
-licensed work on doc-sized cargo. Flight 2 measured the claim leg
-at ~27 minutes once and ~2 the next; this is a third point at the
-fast end, and the spread stays the open question.
+FLIGHT 3, MEASURED END TO END — label 19:39:53, canary 19:41:26,
+ack 19:42:37, cargo 19:47:07, CI green 19:47:55, reviewed 19:51,
+superseded 20:07, welded 20:22. 93 seconds to claim, 71 more to
+licence, 4m30s of licensed work on doc-sized cargo. Flight 2
+measured the claim leg at ~27 minutes once and ~2 the next; this is
+a third point at the fast end, and the spread stays the open
+question.
 
 ## Working on
 
-- FLIGHT 3 — FLOWN AND LANDED 2026-08-04 by the desk takeover it
-  existed to test. What remains of it is one merge word and, at the
-  weld, the harvest of its lane's four findings.
+- FLIGHT 3 — FLOWN, LANDED AND WELDED 2026-08-04. Nothing remains
+  of it; phase 1 now stands on flight 4 alone.
 
 The standing order
 ([D-060](record/DECISIONS.md#d-060--the-three-phase-standing-order),
@@ -107,6 +89,16 @@ one phase per line:
 
 **Completed**
 
+- TEMPLATE's `complete, awaiting merge` row gains its `<date>` slot
+  — the vocabulary table stopped contradicting its own checker;
+  flight 3's sole cargo, flown by a cloud lane and welded from the
+  desk that superseded its cockpit.
+  [#295](https://github.com/wsher0901/roam/pull/295)
+- THE DESK TAKEOVER — flight 3's real cargo: a desk took the baton
+  from a LIVE cockpit holding an open gate, the second of pickup
+  §6's two doors and the last one never flown.
+  [#298](https://github.com/wsher0901/roam/pull/298) ·
+  [#299](https://github.com/wsher0901/roam/pull/299)
 - D-074 — the mid-work freeze test becomes a DETERMINISTIC DRILL (a
   bench that holds at a checkpoint until acked), and phase 1's
   closing condition moves to flights 3 and 4.
@@ -142,15 +134,21 @@ one phase per line:
   that needs the other seat: whether the cockpit actually reads its
   own tombstone and self-retires. That is observed after the fact,
   by its silence and its unwritten board, not asserted here.
-- ⏳ FOUR LANE FINDINGS AWAIT HARVEST AT THE WELD — a lane may not
-  write [IDEAS](IDEAS.md) itself. Two are fresh sightings that
-  sharpen existing lines (the `npm ci` gap; route 1 eating the
-  ready-flip, now a property rather than an incident), one is new
+- ✓ THE LANE'S FOUR FINDINGS ARE HARVESTED — one new line
   (`check-memory.mjs` strips code spans with a newline-forbidding
-  regex, so a backticked placeholder that WRAPS survives the strip
-  and is reported unresolved), and one adds a third redelivery
-  sighting. → their block in the lane's memory, on
-  [#295](https://github.com/wsher0901/roam/pull/295)
+  regex, so a backticked placeholder that WRAPS is reported
+  unresolved) and three upserts onto existing lines: the `npm ci`
+  gap now has four independent seats, route 1 eating the ready-flip
+  is a property rather than an incident, and the redelivery line
+  carries a third sighting plus the limit all three share — every
+  one landed on a WAITING lane, never a mid-push one. → their lines
+  in [IDEAS](IDEAS.md)
+- ⏳ RUNG 1'S BIRTH PROMPT ARRIVES UTF-8-MANGLED ON WINDOWS,
+  crossing the `--cloud` argument. The charter's garbled-prompt
+  clause absorbed it, so it cost this flight nothing — but that
+  clause protects only what the board already says, and the
+  one-line mandate is what a corrupted prompt silently drops. → its
+  line in [IDEAS](IDEAS.md)
 - ⏳ THE MID-WORK WINDOW IS REAL AND UNDER TWO MINUTES — a fired
   cockpit and an unfinished lane overlapped by at most 1m47s, which
   retires flight 2's "closes by construction" without touching
@@ -227,5 +225,6 @@ S3–S8 · queued in order · 0/22
 
 ## Next
 
-Your word on [#295](https://github.com/wsher0901/roam/pull/295),
-and this desk ships it — or say nothing and it keeps until you do.
+Phase 1 stands on FLIGHT 4 alone — the failure drill: connector
+rungs, summon, and the deterministic freeze checkpoint that finally
+tests whether a fence stops a live worker.
