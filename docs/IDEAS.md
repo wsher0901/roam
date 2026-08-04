@@ -19,6 +19,44 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
 
 ## Open
 
+- ⏳ WHETHER THE FIGURE LAW REACHES HOME — [ATLAS](ATLAS.md) is
+  eight designed SVG figures under
+  [D-073](record/DECISIONS.md#d-073--atlas-becomes-designed-figures),
+  while [HOME](HOME.md) keeps its own small mermaid chooser
+  diagram; whether it converts is a decide-level ruling. Filed
+  DEFERRED — no ruling made. (2026-08-03, the founder) →
+  [HOME](HOME.md)
+- ⏳ GITHUB CANNOT RECORD THE NON-AUTHOR REVIEW — every seat
+  authenticates as the one account, so `APPROVE` is refused as
+  self-approval on every lane PR; the independent review can only
+  ever be a comment, which means no-solo-approval is unenforceable
+  through the platform's own mechanism. Found when the cockpit
+  tried to approve flight 1. (2026-08-03, flight 1) →
+  [LAWS §Workflow](LAWS.md#workflow-non-negotiable)
+- ⏳ THE CLOUD SEAT HAS NO GIT-IDENTITY STEP — the one-time list
+  covers the work PC and the home PC only, so a cloud seat starts
+  as `Claude <noreply@anthropic.com>` and a push carrying the
+  founder's real address is rejected outright for email privacy.
+  Found by the cockpit's first push at flight 1. (2026-08-03,
+  flight 1) → [machine-setup](skills/machine-setup.md)
+- ⏳ A memory's `updated:` stamp carries no timezone, so two seats
+  writing in the same minute read four hours apart on the page —
+  flight 1's ack reads `17:38` from the work PC and its canary
+  `21:38 UTC` from the cloud, and a cold reader cannot order the
+  file's own stamps. (2026-08-03, flight 1) →
+  [TEMPLATE](memory/TEMPLATE.md)
+- ⏳ THE CLAIM STATUS FORM DIFFERS BETWEEN ITS TWO HOMES —
+  [§Canary](skills/parallel-lanes.md#canary-handshake-both-sides)'s
+  lane side and [TEMPLATE](memory/TEMPLATE.md)'s state table write
+  it differently, and only the `airborne` row is machine-checked,
+  so the claim row can drift between them without anything going
+  red. (2026-08-03, flight 1)
+- ⏳ ON A ROUTE-1 CLOUD LANE THE READY-FLIP IS CONSUMED BY THE
+  SPAWN, so the lane's completion contract carries a step that is
+  a no-op and a signal that carries no information; the staged
+  `api-ignition` target is what would give it back. (2026-08-03,
+  flight 1) →
+  [§Cloud spawn](skills/parallel-lanes.md#cloud-spawn--route-ladder)
 - ⏳ LIFTOFF REPAINTS THE BOARD TWICE — §1's handoff paints a
   ground board and ships a micro-PR, then §6 overwrites it with the
   flight plan minutes later; the first board is never read by
