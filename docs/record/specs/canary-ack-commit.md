@@ -2,10 +2,12 @@
 type: spec
 id: canary-ack-commit
 title: The ack is a commit on origin, never a message
-status: draft
+status: shipped
 stage: workshop
 branch: fix/canary-ack-commit
 opened: 2026-08-04
+shipped: 2026-08-04
+pr: 278
 ---
 
 # canary-ack-commit — a lane reads its licence from the branch

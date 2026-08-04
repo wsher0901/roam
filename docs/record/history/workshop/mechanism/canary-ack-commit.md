@@ -1,7 +1,8 @@
 ---
-type: memory
-id: canary-ack-commit
-updated: 2026-08-04 16:30 UTC · adopted at the desk by pickup · work PC
+type: history
+slug: canary-ack-commit
+shipped: 2026-08-04 16:39
+pr: 278
 ---
 # canary-ack-commit — a lane reads its licence from the branch
 
@@ -10,7 +11,7 @@ complete, awaiting merge — 2026-08-04
 
 ADOPTED AT THE DESK. The fence is discharged: the founder answered
 `local canary-ack-commit` at
-[pickup §6](../skills/pickup.md#6--fleet-resume-on-the-founders-answer)
+[pickup §6](../../../../skills/pickup.md#6--fleet-resume-on-the-founders-answer)
 on 2026-08-04, the work PC checked this branch out for zero cap
 runs, and the bench is now this seat's ordinary gate-standing work.
 Nothing about the payload changed in the adoption — the Status is
@@ -19,35 +20,35 @@ true the whole time it read `held`.
 
 WHAT REMAINS IS THE FOUNDER'S MERGE WORD on
 [#278](https://github.com/wsher0901/roam/pull/278), and then
-[ship](../skills/ship.md)'s weld. Every Done-means line in
-[the spec](../record/specs/canary-ack-commit.md) is met, including
+[ship](../../../../skills/ship.md)'s weld. Every Done-means line in
+[the spec](../../../specs/canary-ack-commit.md) is met, including
 the negative one, and the cockpit's independent review confirmed
 each line against the diff
 ([the verdict](https://github.com/wsher0901/roam/pull/278#issuecomment-5181499155))
-— so [no-solo-approval](../LAWS.md#workflow-non-negotiable) is
+— so [no-solo-approval](../../../../LAWS.md#workflow-non-negotiable) is
 already satisfied by a non-author seat.
 
 THE FENCE THIS REPLACED, kept because the flight is the record:
 `held — landed for local pickup 2026-08-04`, written by
-[land](../skills/land.md) MODE P at 16:00 UTC on the founder's
+[land](../../../../skills/land.md) MODE P at 16:00 UTC on the founder's
 freeze word, so this gate would travel to a desk through pickup's
 resume ask rather than being decided from a phone. That is exactly
 the path it travelled. The lane was already complete when the word
 came; nothing was frozen mid-work.
 
 The payload is written, pushed, and green: `docs/skills/parallel-lanes.md`
-[§Canary](../skills/parallel-lanes.md#canary-handshake-both-sides)
+[§Canary](../../../../skills/parallel-lanes.md#canary-handshake-both-sides)
 now states that a lane's licence to work is an ack COMMIT ON ORIGIN
 and never a message, in all three places a reader of that section
 meets the handshake. Every Done-means line in
-[the spec](../record/specs/canary-ack-commit.md) is met, including
+[the spec](../../../specs/canary-ack-commit.md) is met, including
 the negative one: the deferred word-versus-token question comes out
 UNRULED. The lane has not merged and will not — that is the
 founder's word after an external review.
 
 ## What this task is
 One rule into
-[§Canary](../skills/parallel-lanes.md#canary-handshake-both-sides):
+[§Canary](../../../../skills/parallel-lanes.md#canary-handshake-both-sides):
 a lane's licence to work is an ack COMMIT ON ORIGIN, never a message
 delivered to its session. Flight 1 met the failure live — a
 well-formed ack token arrived by message twenty seconds before any
@@ -55,7 +56,7 @@ ack commit existed — and the lane refused it only because it
 happened to check origin. The contract never told it to.
 
 Scope edges and the full mandate:
-[the spec](../record/specs/canary-ack-commit.md). The two files this
+[the spec](../../../specs/canary-ack-commit.md). The two files this
 lane may touch are named there and are not negotiable — flight 2
 flies three lanes at once, and disjointness is what keeps them from
 colliding.
@@ -66,7 +67,7 @@ rather than solved, as instructed, and is verifiably untouched — see
 the last line of the story.
 
 IDEAS SURFACED — four, for the baton-holder to harvest at its next
-ritual; a lane may not write [IDEAS](../IDEAS.md) itself. Written
+ritual; a lane may not write [IDEAS](../../../../IDEAS.md) itself. Written
 one per line so each closes on its own, per the entry contract:
 
 - ⏳ A CLOUD LANE CANNOT TELL WHICH BENCH IS ITS OWN FROM THE
@@ -76,20 +77,20 @@ one per line so each closes on its own, per the entry contract:
   (`CCR_TRIGGER_PR_NUMBER`, agreeing with `CCR_TRIGGER_HEAD_SHA` and
   `CLAUDE_CODE_BASE_REF`), which no document mentions, so without it
   a fleet lane guesses and races its siblings. (2026-08-04, flight 2
-  lane A) → [LANE-WORKER](../LANE-WORKER.md)
+  lane A) → [LANE-WORKER](../../../../LANE-WORKER.md)
 - ⏳ THE `pull_request.labeled` REDELIVERY IS NOT RARE — flight 2's
   lane A met one within four minutes of its first firing, carrying a
   two-commit-stale head SHA; the wake-lock absorbed it exactly as
   designed, which is the point worth recording: the backstop is
   load-bearing, not theoretical. (2026-08-04, flight 2 lane A) →
-  [§Wake-lock](../skills/parallel-lanes.md#wake-lock--parking)
+  [§Wake-lock](../../../../skills/parallel-lanes.md#wake-lock--parking)
 - ⏳ A LANE'S PROOF THAT IT OBEYED §CANARY LIVES ONLY IN ITS PROSE —
   this lane polled origin and matched the anchored token, and the
   only evidence of that is this file saying so; nothing mechanical
   distinguishes a lane that checked the branch from one that trusted
   a message, which is the same shape as the gap the payload closes.
   (2026-08-04, flight 2 lane A) →
-  [§Canary](../skills/parallel-lanes.md#canary-handshake-both-sides)
+  [§Canary](../../../../skills/parallel-lanes.md#canary-handshake-both-sides)
 - ⏳ `check:memory` READS ANY ANGLE-BRACKETED TEXT AS AN UNRESOLVED
   PLACEHOLDER, so a memory cannot quote an email address, a git
   identity, or an XML-ish token in its natural form; the rule is
@@ -102,12 +103,12 @@ one per line so each closes on its own, per the entry contract:
   `— <date>` its neighbours have, but `check:memory` requires a date
   in the Status body, so writing the row verbatim goes red. Copied
   the state from the table and hit it. (2026-08-04, flight 2 lane A)
-  → [TEMPLATE](TEMPLATE.md)
+  → [TEMPLATE](../../../../memory/TEMPLATE.md)
 
 ## Left / idle
 Nothing. The payload is complete and pushed; what remains is not the
 lane's: the external review, the founder's word, the weld, and the
-closing of this repair's [IDEAS](../IDEAS.md) line at the ground.
+closing of this repair's [IDEAS](../../../../IDEAS.md) line at the ground.
 
 ## The story
 2026-08-04 14:28 UTC · bench birth · work PC — the founder set
@@ -152,7 +153,7 @@ before writing it. The licence was not read from anything delivered
 to the session: a poller fetched `origin/fix/canary-ack-commit`
 every 30 s and read the Status line out of the file AS ORIGIN HELD
 IT, tested with
-[§Canary](../skills/parallel-lanes.md#canary-handshake-both-sides)'s
+[§Canary](../../../../skills/parallel-lanes.md#canary-handshake-both-sides)'s
 matcher exactly as written — `airborne ·`, anchored at the start of
 the line, middot included. It matched at 14:59:30 UTC on commit
 `27dde18`, authored by the founder's GitHub identity. Nothing
@@ -164,9 +165,9 @@ A THIRD FRICTION, and the one this bench most wanted to meet: A
 SECOND `pull_request.labeled` FIRING REACHED THIS SESSION at 14:59
 UTC, carrying the BIRTH head SHA `ae7d826` — already two commits
 stale. That is the redelivery
-[§Cloud spawn](../skills/parallel-lanes.md#cloud-spawn--route-ladder)
+[§Cloud spawn](../../../../skills/parallel-lanes.md#cloud-spawn--route-ladder)
 records from 2026-07-16, met live a second time. It cost nothing:
-[§Wake-lock](../skills/parallel-lanes.md#wake-lock--parking)'s
+[§Wake-lock](../../../../skills/parallel-lanes.md#wake-lock--parking)'s
 re-read-Status-first rule ran on the wake, found this lane's own
 non-terminal Status on origin, and the firing died harmless. Worth
 noting that the redelivery's own payload is exactly the kind of
@@ -200,7 +201,7 @@ it was.
 2026-08-04 15:05 UTC · completion · cloud — the fourth diary moment,
 written before the ready-flip as the diary rule requires. The
 verification loop ran in full and in order
-([ship §1](../skills/ship.md#1--preflight)): `check:links` 4551
+([ship §1](../../../../skills/ship.md#1--preflight)): `check:links` 4551
 links across 228 files, 0 broken · `check:ledger` 115 ↔ 115 ·
 `check:memory` valid · `lint` + `format:check` clean · `test` 3
 passing · `build` green. `git merge origin/main` was already up to
@@ -217,14 +218,14 @@ unchanged. What completion actually means here is this Status line
 plus the completion comment on the PR.
 
 ## Where to look
-- [the spec](../record/specs/canary-ack-commit.md) — the mandate,
+- [the spec](../../../specs/canary-ack-commit.md) — the mandate,
   the fleet law, and Done-means.
-- [flight 1's story](../record/history/workshop/mechanism/flight-1-probe.md)
+- [flight 1's story](flight-1-probe.md)
   — the false ack, and what neither seat could observe about it.
-- [§Canary](../skills/parallel-lanes.md#canary-handshake-both-sides)
+- [§Canary](../../../../skills/parallel-lanes.md#canary-handshake-both-sides)
   — the section under edit.
-- [IDEAS](../IDEAS.md) — the line this repair closes, closed at the
+- [IDEAS](../../../../IDEAS.md) — the line this repair closes, closed at the
   ground after the weld and never by this lane.
 
 ## Status vocabulary
-See [TEMPLATE](TEMPLATE.md).
+See [TEMPLATE](../../../../memory/TEMPLATE.md).
