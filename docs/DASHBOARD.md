@@ -6,21 +6,23 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-08-04 · 15:09 UTC by liftoff · from the work PC
-FLIGHT 2 IS AIRBORNE — 2 lanes flying, 1 parked · needs-you 2 ·
+Painted 2026-08-04 · 15:16 UTC by liftoff · from the work PC
+FLIGHT 2 IS AIRBORNE — 2 lanes AT THE GATE, 1 parked · needs-you 2 ·
 git outranks this board. How to read
 it → [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
 
-1. 🟡 **SAY THE FREEZE WORD — `ground the fleet` — in the cockpit
-   session on your phone, WHEN THE COCKPIT PUSHES YOU.** This is
-   the whole point of flight 2: MODE P has to fence lanes that are
-   still MID-WORK, so the timing is the test. The cockpit will send
-   one push the moment the fleet is confirmed working; say the word
-   from there. The exact word matters — a bare "land" is
-   [land](skills/land.md)'s trigger 4 and routes to MODE R, which
-   tests nothing. (since 08-04)
+1. 🔴 **RULE THE FREEZE — the two lanes finished before it could
+   catch them.** A and B were complete and awaiting merge by 15:05,
+   ten minutes after waking, so `ground the fleet` can no longer
+   fence anything MID-WORK, which was the point. The cockpit pushes
+   you one message with three options and its recommendation
+   (reviving lane C first is the only one that still tests the
+   mid-work property). The word itself is unchanged and still
+   exact: `ground the fleet` — a bare "land" is
+   [land](skills/land.md)'s trigger 4 and routes to MODE R.
+   (since 08-04)
    → [land §Scenario 3](skills/land.md#scenario-3--the-founders-freeze-word-only)
    · [the trigger table](skills/land.md#the-trigger-table--what-starts-a-landing)
 2. 🟡 **RULE LANE C — re-spawn `home-hook-row`, or leave it
@@ -34,6 +36,9 @@ it → [HOME §Reading the board](HOME.md#reading-the-board)
 ## The baton
 
 COCKPIT — fired 15:09 UTC (liftoff) · self-seat pending
+
+Last flight: LANDED 2026-08-04 · 13:53 UTC via AUTO-LAND — fleet
+empty, nothing owed you · clean
 
 ⚠️ **TWO BIRTHS WERE FIRED, and any arriving cockpit must read this
 before seating itself.** Liftoff fired rung 1 twice — 15:11 UTC and
@@ -49,16 +54,14 @@ nothing, name the live cockpit and stop. DO NOT run the landing
 ritual for this: a stray never flew, so rule 8's tombstone is the
 wrong script and fencing this flight's lanes would end flight 2 on
 an accident rather than on the founder's word.
-Last flight: LANDED 2026-08-04 · 13:53 UTC via AUTO-LAND — fleet
-empty, nothing owed you · clean
 
 ## In flight
 
 | Who | For | State | Move |
 |---|---|---|---|
 | cockpit | commands flight 2 from the cloud | 🟡 | fired 15:09 UTC · self-seat pending |
-| lane · canary-ack-commit | §Canary: the ack is a commit on origin, never a message | 🟢 | airborne 15:00 UTC · [#278](https://github.com/wsher0901/roam/pull/278) |
-| lane · cloud-git-identity | machine-setup: the cloud seat's git identity | 🟢 | airborne 14:58 UTC · [#279](https://github.com/wsher0901/roam/pull/279) |
+| lane · canary-ack-commit | §Canary: the ack is a commit on origin, never a message | 🟢 | COMPLETE 15:05 UTC, awaiting merge · [#278](https://github.com/wsher0901/roam/pull/278) |
+| lane · cloud-git-identity | machine-setup: the cloud seat's git identity | 🟢 | COMPLETE 15:05 UTC, awaiting merge · [#279](https://github.com/wsher0901/roam/pull/279) |
 | lane · home-hook-row | HOME: the close-lock hook's missing row | 🔴 | cloud spawn failed — label registered 14:54:43Z, no session ever born; bench intact, parked pending your word · [#280](https://github.com/wsher0901/roam/pull/280) |
 
 FLIGHT CONTEXT — flight 2 is a TEST FLIGHT and its cargo is real.
@@ -71,16 +74,39 @@ grounded-fleet resume at the next pickup — designed by
 audit at [D-070](record/DECISIONS.md#d-070--baton-renderings-single-homed),
 and never once flown.
 
-THE COCKPIT'S ONE NON-STANDARD DUTY, and it is the reason this
-flight exists: SEND EXACTLY ONE PUSH to the founder's phone the
-moment the fleet is confirmed MID-WORK — lanes airborne and
-committing, none complete — naming the freeze word `ground the
-fleet` verbatim. Send it EARLY; these are small doc edits and a
-lane that finishes first takes the test with it. Do not wait on
-lane C: if the founder revives it, wait for its first working
-commit, and if the ruling has not come within ten minutes of the
-other two working, push anyway naming what is flying. The founder
-is watching the phone for this and nothing else.
+THE COCKPIT'S ONE NON-STANDARD DUTY — RECUT AT 15:16 UTC, because
+the thing it was timed against has already happened. The original
+duty was to push the founder the moment the fleet was confirmed
+MID-WORK, so the freeze would fence lanes that were still working.
+BOTH LANES FINISHED FIRST: A and B were complete and awaiting merge
+by 15:05, roughly ten minutes after they woke. The warning written
+into this line — that small doc edits finish fast and a lane that
+finishes takes the test with it — came true before the cockpit
+existed to act on it.
+
+So the duty is now a DECISION to carry, not a word to relay. SEND
+EXACTLY ONE PUSH to the founder's phone, naming the freeze word
+`ground the fleet` verbatim AND the fact that it can no longer
+catch these two mid-work. Give the three options and a
+recommendation, per [the charter](COCKPIT-CHARTER.md)'s rule 5:
+
+1. **Revive lane C first** (Needs-you 2), let it reach real work,
+   then freeze — the mid-work property survives with one lane, and
+   A and B get fenced at the gate alongside it. ONE cap run. THE
+   RECOMMENDATION: it is the only option that still tests what the
+   founder asked to test.
+2. **Freeze now** — MODE P's mechanics all run (the fence commit,
+   the fleet-at-ground table, the grounded marker, the resume ask
+   at the next pickup), but nothing is interrupted, so the one
+   thing left unproven is whether a fence actually STOPS a working
+   lane. That is the wake-lock's rejected-push rule, and it stays
+   untested.
+3. **Merge A and B first** on the founder's word — each needs an
+   independent non-author review — then decide about a later
+   flight with cargo big enough to still be running.
+
+Until that word comes, both PRs stand ready at THE GATE, so
+AUTO-LAND cannot fire. Nothing is lost by the wait.
 
 ## Working on
 
