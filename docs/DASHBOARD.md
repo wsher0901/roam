@@ -6,9 +6,9 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-08-04 · 20:33 UTC by ship's tail · from work PC
-FLIGHT 3 COMPLETE — welded, harvested, both seats reported · clean
-floor · needs-you 0 · git outranks this board. How to read it →
+Painted 2026-08-04 · 20:42 UTC by handoff · from work PC
+GROUND BOARD BEFORE FLIGHT 4 LIFTS OFF — clean floor, nothing
+parked · needs-you 0 · git outranks this board. How to read it →
 [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
@@ -66,8 +66,21 @@ question.
 
 ## Working on
 
+- FLIGHT 4 OF THE TEST PROGRAM — THE FAILURE DRILL, lifting off
+  2026-08-04. Founder-approved in the Web ops chat, cashing
+  [D-074](record/DECISIONS.md#d-074--phase-1-closes-on-flights-3-and-4)'s
+  flight-4 line and the freeze-drill inbox line. THREE THINGS ARE
+  UNDER TEST, and all three are failures COMMANDED rather than
+  simulated: the wake-lock's REJECTED-PUSH RULE, unobserved across
+  three flights because every fence has landed on a finished bench
+  — this bench is specced to HOLD at a checkpoint so the fence
+  meets a live worker · the connector RECOVERY LADDER, walked one
+  rung down by a cockpit told to treat rung 1 as dead · and the
+  SUMMON workflow, fired after the weld, whose routine-born cockpit
+  is the v4 charter box's first live test. The cargo is real and
+  deliberately small: the drill's own log.
 - FLIGHT 3 — FLOWN, LANDED AND WELDED 2026-08-04. Nothing remains
-  of it; phase 1 now stands on flight 4 alone.
+  of it.
 
 The standing order
 ([D-060](record/DECISIONS.md#d-060--the-three-phase-standing-order),
@@ -171,10 +184,11 @@ one phase per line:
   painted before the weld that precedes the fire, so every measured
   latency has been read off a time that had not happened. → its
   line in [IDEAS](IDEAS.md)
-- ⏳ THE WAKE-LOCK'S REJECTED-PUSH RULE IS STILL UNOBSERVED — does a
-  fence actually STOP a live worker. Three flights missed it
-  because every fence landed on a finished bench; flight 4's
-  checkpoint drill is what tests it. → its line in [IDEAS](IDEAS.md)
+- ⏳ THE WAKE-LOCK'S REJECTED-PUSH RULE IS UNDER TEST RIGHT NOW —
+  does a fence actually STOP a live worker. Three flights missed it
+  because every fence landed on a finished bench; flight 4's bench
+  is specced to HOLD at a checkpoint precisely so the fence has a
+  live worker to meet. → its line in [IDEAS](IDEAS.md)
 - ✓ THE MID-WORK FREEZE TEST IS UNRUNNABLE ON DOC-SIZED CARGO —
   ruled rather than retried; it becomes a deterministic drill
   folded into flight 4. →
@@ -231,13 +245,14 @@ S3–S8 · queued in order · 0/22
   the audit's ops chat. It carried the external review of all
   twelve benches, approved THE TEST PROGRAM, reviewed
   [D-074](record/DECISIONS.md#d-074--phase-1-closes-on-flights-3-and-4)
-  (PASS on `78facd1`), and APPROVED FLIGHT 3 on 2026-08-04. Its
-  verify-flight-2 reconciliation gaps are filed as inbox lines
+  (PASS on `78facd1`), APPROVED FLIGHT 3, and on 2026-08-04
+  APPROVED FLIGHT 4 — the failure drill, with its commanded
+  failures and its file fence. Its verify-flight-2 reconciliation
+  gaps are filed as inbox lines
   ([#293](https://github.com/wsher0901/roam/pull/293)). → next:
   nothing owed.
 
 ## Next
 
-Phase 1 stands on FLIGHT 4 alone — the failure drill: connector
-rungs, summon, and the deterministic freeze checkpoint that finally
-tests whether a fence stops a live worker.
+Flight 4 lifts off from this board — the bench is birthed next, and
+the flight plan replaces this ground board before anything fires.
