@@ -6,7 +6,7 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-08-04 · 20:59 UTC by cockpit self-seat · from cloud
+Painted 2026-08-04 · 21:00 UTC by cockpit self-seat · from cloud
 FLIGHT 4 IS THE FLIGHT PLAN — 1 lane at the checkpoint and HOLDING,
 cockpit seated · needs-you 1 (OWED NOW, and it expires) · git
 outranks this board. How to read it →
@@ -35,17 +35,28 @@ Last flight: LANDED 2026-08-04 20:07 UTC via DESK TAKEOVER — flight
 3's cockpit was superseded at a desk, retired itself, and its bench
 was welded from the ground.
 
-⚠️ **THE PAINT-TO-BIRTH GAP IS MEASURED: AT LEAST 4m14s.** The
-board is painted and WELDED BEFORE the fire — that is the ritual's
-order — so the `fired 20:51 UTC` stamp this seat replaced was
-necessarily earlier than the event it named, and flight 4 was the
-chance to measure by how much. THE ONE THING THIS SEAT CAN OBSERVE
-ABOUT ITS OWN BIRTH is its clone: `.git/config` was written
-**20:55:14 UTC**. Against the 20:51 paint stamp that is a floor of
-4m14s. The fire itself — the API call that created this session —
-is NOT OBSERVABLE FROM THIS SEAT, so the true gap is that floor
-plus however long the clone took to start. The finding stands: a
-`fired <t>` stamp is a paint time, never a fire time.
+⚠️ **THE `fired` STAMP IS EARLY, AND THE GAP IS NOW MEASURED AT
+4m00s.** The board is painted and WELDED BEFORE the fire — the
+ritual's order — so the stamp necessarily precedes the event it
+names. Stamp painted 20:51:00; TRUE FIRE 20:55:00 UTC, rung 1,
+exit 0, returned 20:55:08. The fire is BLIND, so that time exists
+nowhere on origin unless the firing seat writes it down — this
+line is the firing seat writing it down. Every flight's measured
+latency until now has been read off the early stamp. Filed inbox
+line; this is its first measurement.
+
+✅ **AND THE COCKPIT'S OWN HALF CLOSES THE LEG: FIRE → USABLE SEAT
+IS 14 SECONDS.** The firing seat cannot see this and the fired seat
+cannot see the fire, so the leg only exists when both halves are
+written down. This seat's earliest observable moment is its clone:
+`.git/config` written **20:55:14 UTC**, against the desk's directly
+observed fire at 20:55:00. THE METHOD MATTERS MORE THAN THE NUMBER
+— this seat first computed 4m14s against the PAINT stamp and called
+it a floor for the paint-to-fire gap, which is backwards: a clone
+timestamp bounds that gap from ABOVE, never below. The desk's
+direct observation corrected it. A seat measuring its own birth can
+only ever bound the fire, and a bound pointed the wrong way reads
+exactly like a measurement.
 
 ⚠️ **THE DOUBLE BIRTH RESOLVED ITSELF, and the record is worth
 keeping.** Liftoff fired rung 1 twice — 15:11 and 15:12 UTC —
@@ -138,11 +149,23 @@ from the recipe and say so plainly rather than pretending to quote
 one. Filed as an inbox line at this liftoff.
 
 FLIGHT 4, MEASURED SO FAR — ready-flip 20:47:43, label 20:47:44,
-canary 20:49:22, ack 20:50:14. 98 seconds to claim, 52 more to
-licence. Flight 3's legs were 93 and 71; flight 2's claim leg ran
-~27 minutes once and ~2 the next. This is a fourth point at the
-fast end, and the spread — not the mechanism — stays the open
-question.
+canary 20:49:22, ack 20:50:14, **CHECKPOINT 20:53:52**, cockpit
+fired 20:55:00. 98 seconds to claim, 52 more to licence. Flight 3's
+legs were 93 and 71; flight 2's claim leg ran ~27 minutes once and
+~2 the next. A fourth point at the fast end; the spread, not the
+mechanism, stays the open question.
+
+⚠️ **THE LANE REACHED ITS CHECKPOINT 68 SECONDS BEFORE THE COCKPIT
+WAS FIRED — AND THIS TIME IT DID NOT MATTER.** That ordering is the
+same one that defeated flights 1, 2 and 3: the lane outruns the
+cockpit, and by the time a control tower exists the work is over.
+What is different is the HOLD. The lane is alive and stopped, and
+the window it opened runs to **21:08:52 UTC** — about fifteen
+minutes wide instead of under two. This is precisely what
+[D-074](record/DECISIONS.md#d-074--phase-1-closes-on-flights-3-and-4)
+ruled a deterministic drill would buy, and it is the first evidence
+that the ruling was right. The cockpit is racing a real deadline,
+not a manufactured one.
 
 ## Working on
 
