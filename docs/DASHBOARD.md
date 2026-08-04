@@ -6,7 +6,8 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-08-04 · 15:16 UTC by liftoff · from the work PC
+Painted 2026-08-04 · 15:18 UTC by the cockpit's self-seat · from
+the cloud
 FLIGHT 2 IS AIRBORNE — 2 lanes AT THE GATE, 1 parked · needs-you 2 ·
 git outranks this board. How to read
 it → [HOME §Reading the board](HOME.md#reading-the-board)
@@ -35,31 +36,33 @@ it → [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## The baton
 
-COCKPIT — fired 15:09 UTC (liftoff) · self-seat pending
+COCKPIT — live since 15:18 UTC (liftoff) ·
+https://claude.ai/code/session_01HbmFzb7mq4z9u8p3PjjkGT · awaiting
+your word on 2 items
 
 Last flight: LANDED 2026-08-04 · 13:53 UTC via AUTO-LAND — fleet
 empty, nothing owed you · clean
 
-⚠️ **TWO BIRTHS WERE FIRED, and any arriving cockpit must read this
-before seating itself.** Liftoff fired rung 1 twice — 15:11 UTC and
-15:12 UTC — because the first fire's exit status was not captured
-and its speed was misread as a failure; the second fire returned
-exit 0 in 6.8s, which is what a successful dispatch looks like, so
-the first is presumed to have dispatched too. THE RULE IS
-UNCHANGED AND THE BOARD IS THE ARBITER: the first session to seat
-itself holds the baton. A cockpit that arrives and finds a FOREIGN
-live cockpit already seated is a STRAY BIRTH under
-[the charter](COCKPIT-CHARTER.md)'s rule 1 — push nothing, write
-nothing, name the live cockpit and stop. DO NOT run the landing
-ritual for this: a stray never flew, so rule 8's tombstone is the
-wrong script and fencing this flight's lanes would end flight 2 on
-an accident rather than on the founder's word.
+⚠️ **TWO BIRTHS WERE FIRED, AND THE SEAT ABOVE IS NOW TAKEN.**
+Liftoff fired rung 1 twice — 15:11 UTC and 15:12 UTC — because the
+first fire's exit status was not captured and its speed was misread
+as a failure; the second fire returned exit 0 in 6.8s, which is
+what a successful dispatch looks like, so the first is presumed to
+have dispatched too. THE RULE IS UNCHANGED AND THE BOARD IS THE
+ARBITER: the first session to seat itself holds the baton, and it
+has — the cockpit at the url above read `self-seat pending` on this
+board and seated itself. THE TWIN, IF IT LIVES, IS A STRAY BIRTH
+under [the charter](COCKPIT-CHARTER.md)'s rule 1 — push nothing,
+write nothing, name the live cockpit above and stop. DO NOT run the
+landing ritual for this: a stray never flew, so rule 8's tombstone
+is the wrong script and fencing this flight's lanes would end
+flight 2 on an accident rather than on the founder's word.
 
 ## In flight
 
 | Who | For | State | Move |
 |---|---|---|---|
-| cockpit | commands flight 2 from the cloud | 🟡 | fired 15:09 UTC · self-seat pending |
+| cockpit | commands flight 2 from the cloud | 🟡 | live since 15:18 UTC · push sent · awaiting your word on 2 items |
 | lane · canary-ack-commit | §Canary: the ack is a commit on origin, never a message | 🟢 | COMPLETE 15:05 UTC, awaiting merge · [#278](https://github.com/wsher0901/roam/pull/278) |
 | lane · cloud-git-identity | machine-setup: the cloud seat's git identity | 🟢 | COMPLETE 15:05 UTC, awaiting merge · [#279](https://github.com/wsher0901/roam/pull/279) |
 | lane · home-hook-row | HOME: the close-lock hook's missing row | 🔴 | cloud spawn failed — label registered 14:54:43Z, no session ever born; bench intact, parked pending your word · [#280](https://github.com/wsher0901/roam/pull/280) |
