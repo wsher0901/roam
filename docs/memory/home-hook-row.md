@@ -1,29 +1,29 @@
 ---
 type: memory
 id: home-hook-row
-updated: 2026-08-04 15:41 UTC · the row and the audit · cloud
+updated: 2026-08-04 15:45 UTC · completion · cloud
 ---
 # home-hook-row — the hook that enforces the close-lock gets a row
 
 ## Status
-airborne · cloud · 2026-08-04
+complete, awaiting merge — 2026-08-04 15:45 UTC
 
-Born bench-first at the desk, 2026-08-04, as LANE C of FLIGHT 2.
-Its first spawn produced no session and it was parked; the founder
-ruled `re-spawn C` at 15:34 UTC and the cockpit is cycling the
-`lane:cloud` label now. The bench is intact and unstarted — nothing
-was lost, and this re-spawn needs no second birth.
+LANE C of FLIGHT 2 flew on its second dispatch and landed its
+cargo. The row is in [HOME](../HOME.md)'s files table, the
+end-to-end audit the spec asked for is run and reported (five
+findings below, none of them fixed here — that was the mandate),
+main is merged in, the full verification loop is green locally, and
+every commit is on origin. The lane has NOT merged and will not:
+`done` means founder-approved and welded.
 
-TO THE WORKER THAT CLAIMS THIS BENCH: you are the SECOND dispatch,
-not a duplicate — the first never existed, so nothing here is yours
-to displace. Claim by canary and WAIT for the ack, and read the ack
-the way this flight's lane A is right now arguing you must: as a
-COMMIT ON ORIGIN on this branch, fetched and read back, never as a
-message arriving in your session. YOUR CARGO CARRIES THE FLIGHT.
-Both siblings finished before the cockpit existed, so the freeze
-test has no mid-work lane left but you; the founder will say
-`ground the fleet` while you are working, and the fence that lands
-on this branch is the thing under test. Obey it when it comes.
+THE FENCE, IF IT STILL COMES, IS STILL OWED OBEDIENCE. This bench
+was the flight's last interruptible lane and the designated subject
+of the `ground the fleet` freeze test. Finishing does not exempt it
+— a fence landing on this branch now finds a bench that is complete
+rather than mid-work, and that is itself the honest result to
+record: the freeze test caught its subject at the gate, not at the
+bench. Whatever Status a fence writes here outranks this line, and
+this lane self-terminates on sight of one it does not own.
 
 ## What this task is
 [HOME](../HOME.md)'s files table documents two of the three hooks.
@@ -38,18 +38,31 @@ flies three lanes at once, and disjointness is what keeps them from
 colliding.
 
 ## Pending issues
-None blocking. THE FIRST SPAWN NEVER PRODUCED A SESSION and the
-cause is still unknown from any seat with a git clone — the
-routine's run history is a UI surface. If this second dispatch also
-produces no session, that is the finding: route 1 is not reliable
-for a bench that has already been labeled once, and the fault is in
-the dispatch rather than the cargo.
+None blocking, and the one that stood at birth is ANSWERED. The
+first spawn produced no session; the open question was whether
+route 1 is unreliable for a bench that has already been labeled
+once. It is not — the second dispatch on this same bench woke,
+canaried inside a minute, and flew. So the first spawn's silence
+was a ONE-OFF IN THE DISPATCH, not a property of re-labeling, and
+`re-spawn` is a working remedy rather than a hopeful one. What
+caused the first miss remains unknown from any seat with a git
+clone, and the routine's run history — a UI surface — is still the
+only place that could say.
+
+The five audit findings are open by design: this lane reports, the
+ground triages. They are not blockers.
 
 ## Left / idle
-Everything of the mandate — the bench has not been claimed yet.
-Parked and now un-parked, never abandoned: the branch, spec, memory
-and ready PR all stood through the wait, which is why the re-spawn
-costs one label cycle and no second birth.
+Nothing of the mandate. Every Done-means line in
+[the spec](../record/specs/home-hook-row.md) is met, including the
+honest-answer clause — the audit found further undocumented files,
+so they are listed rather than the "none found" alternative.
+
+Left for the GROUND, never for this lane: the merge and the
+founder's word; the [IDEAS](../IDEAS.md) line this repair closes,
+closed at the ground after the weld; and triage of the five
+findings, of which the `.claude/agents/reviewer.md` gap is the one
+that most resembles the miss this bench just repaired.
 
 ## The story
 2026-08-04 14:30 UTC · bench birth · work PC — the founder set
@@ -200,6 +213,33 @@ has a row, or is listed as deliberately excluded" is checkable by a
 script in a way that "every mention became a pointer" is not. That
 is a firmer handle on the destination-blind-links-gate problem than
 the general case, and it is the finding worth carrying to triage.
+
+2026-08-04 15:45 UTC · completion · cloud — THE LOOP IS GREEN AND
+THE BENCH IS DONE. `origin/main` merged in cleanly (it had moved
+three commits ahead, all board repaints), then the full CI mirror
+in ship §1's order: links 4558/0 broken, ledger 115↔115, memory
+valid, lint clean, format clean, 3 tests passing, build passing.
+`node_modules` was absent on this seat and `npm ci` supplied it —
+worth knowing that the three DOC gates run without it, so a lane
+whose cargo is documentation can verify itself before paying for an
+install.
+
+The diff against main is three files: `docs/HOME.md` (one row),
+this memory, and the spec — and the spec was written at BIRTH by
+the baton-holder, not by this lane. So the fleet law held exactly:
+the two files this lane was permitted to write are the only two it
+wrote, and no sibling's file was touched. Lanes A and B could not
+have collided with this branch by construction.
+
+One friction to record rather than smooth over, per the fleet law's
+last clause: NOTHING IN THE LANE'S OWN INSTRUCTIONS NAMES THE FILE
+IT MUST NOT WRITE BUT ALREADY CONTAINS. The spec's Done-means says
+the branch diff touches exactly `docs/HOME.md` and this memory,
+which a literal reading fails — the spec itself is in that diff and
+must be. It reads correctly only if you already know the birth
+artifacts are excluded. That is a wording trap for a future lane
+that obeys precisely, and it is the kind of thing only a real
+flight surfaces.
 
 ## Where to look
 - [the spec](../record/specs/home-hook-row.md) — the mandate, the
