@@ -1,23 +1,18 @@
 ---
 type: memory
 id: flight-1-probe
-updated: 2026-08-03 22:11 UTC · critic round · cockpit
+updated: 2026-08-04 13:09 UTC · respawn fence · cockpit
 ---
 # flight-1-probe — the shakedown's simulated cargo
 
 ## Status
 
-HELD AT THE WELD — 2026-08-03 22:11 UTC. The founder's word to merge
-was given; the pre-gate critic then returned TEN FINDINGS, two of
-them cutting at the payload's own standard, and the word was given
-before that verdict existed. The weld waits on the founder weighing
-it. Everything else below stands: the probe file is written and
-the verification loop is green; the completion comment follows this
-commit on the PR. A redelivered `pull_request.labeled` webhook woke
-this lane after completion at 21:49 UTC and met this Status: it
-started no work and re-claimed nothing. THE LANE HAS NOT MERGED AND
-WILL NOT — "done" means founder-approved and merged, and neither
-half is the lane's.
+respawned — cloud · 2026-08-04. The founder ruled "lane" on the
+held weld: a FRESH cloud lane repairs this log's own epistemic
+faults, so authorship stays off the cockpit and the non-author
+review survives. The prior worker owns nothing here and
+self-terminates on sight of this line. The repair brief is in
+PENDING ISSUES below and it is the whole of the next lane's job.
 
 ## What this task is
 
@@ -39,13 +34,96 @@ memory. Nothing else, on any branch, for any reason. Contract:
 
 ## Pending issues
 
-None blocking, and none were raised in flight — no `BLOCKED:`
-comment was posted, because nothing on this flight was ambiguous
-enough to need the founder. Three findings are queued as "Ideas
-surfaced" below for the baton-holder to harvest; none of them is
-this bench's to fix, per the spec's out-of-scope (flight 1 OBSERVES;
-repairs are separate benches triaged through
-[IDEAS](../IDEAS.md)).
+THE REPAIR BRIEF — the whole of the next lane's job, and nothing
+beyond it. Every item below came from the pre-gate critic
+([ship §6](../skills/ship.md#6--the-gate)) and was CONFIRMED against
+the sources by the cockpit before being written here. The critic
+round further down the story carries the reasoning; this is the
+work list.
+
+THE SIMULATION LAW STILL BINDS: touch ONLY
+`docs/record/probes/flight-1-shakedown.md` and this memory. Never
+merge. Do not touch the spec, the board,
+[IDEAS](../IDEAS.md), any skill, any law, or any master.
+
+1. **THE FLIP IS INFERRED — say so.** In BORN and again in
+   checklist item 2, the probe concludes "A FLIP DEMONSTRABLY
+   HAPPENED" from `created_at`, the PR's CURRENT ready state, and
+   the PR BODY's opening words "Draft PR at birth". A body string
+   is boilerplate written at birth; it cannot witness a state
+   transition, and a PR created ready carrying that same body is
+   indistinguishable from one created draft and flipped. The probe
+   itself says two lines earlier that it could not read the event
+   timeline. REPLACE the conclusion with what the seat actually
+   saw: the PR was NOT draft when read, and whether a flip ever
+   occurred is NOT OBSERVABLE FROM THIS SEAT — the exact words.
+2. **ITEM 5 CONTRADICTS ITEM 2 — resolve it toward the honest
+   side.** Item 5 gives the ready state a cause — "because route 1
+   spawns by flipping ready and then labelling" — which is lifted
+   from
+   [§Cloud spawn](../skills/parallel-lanes.md#cloud-spawn--route-ladder),
+   not observed, while item 2 declares that same ordering
+   unobservable. Keep item 5's OBSERVATION (the PR was already
+   ready, so no flip was left to perform, so the ready state
+   carries no completion information) and drop the doc-derived
+   CAUSE, or mark it plainly as read from the skill rather than
+   seen.
+3. **THE CANARY SECTION MISREPORTS ITS OWN INSTRUMENT.** It says
+   the watcher tested "STARTS WITH the token"; MOMENT 2 records
+   that it anchored on the bare word `airborne`. Correct the
+   CANARY section to what was actually armed.
+4. **THE BIG ONE — RECORD THAT THE INSTRUMENT WAS CHANGED.**
+   [§Canary](../skills/parallel-lanes.md#canary-handshake-both-sides)
+   fixes the match as "STARTS WITH `airborne ·` … never a
+   substring search anywhere in the memory, AND NEVER A SEARCH FOR
+   THE BARE WORD". This lane matched the bare word deliberately,
+   and its reasoning was good — but
+   [the spec](../record/specs/flight-1-probe.md)'s simulation law
+   says the rituals are NOT special-cased for the test, and that
+   friction from running one exactly as written is a FINDING.
+   THE LANE CHANGED THE INSTRUMENT IT WAS MEASURING WITH, so
+   checklist item 3's green was measured against a matcher the
+   contract does not sanction. Write this into the probe as its
+   own finding, and downgrade item 3 accordingly — it is no longer
+   a clean ✅. Add the implied skill question to the probe's
+   findings so it does not evaporate: should §Canary's match
+   anchor on the word rather than the token, given an em-dash ack
+   is the failure it was written against?
+5. **THE DIARY'S AT-THE-MOMENT CLAIM IS TOO STRONG.** The probe
+   says its diary was "written AT the moment rather than
+   reconstructed at the end", but the probe file was authored only
+   after the ack, so MOMENT 1 and MOMENT 2 are transcriptions —
+   the memory earned that property, the probe inherited it. Say
+   which moments were live and which were transcribed. While
+   there, reconcile the two files' stamps: the probe puts MOMENT 2
+   at 21:38 and MOMENT 4 at 21:45; this memory puts them at 21:42
+   and 21:46.
+6. **A WINDOW IS NOT AN INSTANT.** BORN says the flip happened "25
+   seconds before the container's own checkout". Only a
+   25-second WINDOW is observable. Item 2 already states it
+   correctly — make BORN match.
+7. **TWO WEAVE MISSES.** In the probe, `DASHBOARD.md` and
+   `IDEAS.md` appear as bare code spans where they should be
+   links. In this memory's "Ideas surfaced" list, "§Canary's lane
+   side versus TEMPLATE's state table" is plain text where both
+   are linked elsewhere in the same file.
+8. **DO NOT SILENTLY BREAK THE FREEZE.** The probe declares itself
+   frozen as written. These repairs do not violate that — they
+   REMOVE claims the seat could not support, which is the freeze's
+   own principle — but the file must say so: add one dated line
+   recording that it was repaired on 2026-08-04 at the founder's
+   ruling, after the critic round, and naming what changed. A
+   reader must never find a silently edited "frozen" record.
+
+WHAT IS ALREADY CLOSED, so you do not redo it: Actions was green
+on head `e0d8385`, and the mechanical simulation-law check still
+holds — the sync merges brought only `DASHBOARD.md` and
+`IDEAS.md` from main, no lane-authored file moved.
+
+WHEN DONE: full verification loop, push every commit, flip nothing
+(the PR is already ready — that is finding 3 of the flight), post
+the completion comment, and STOP. The cockpit reviews as a
+non-author and the founder's word does the rest.
 
 ## Left / idle
 
