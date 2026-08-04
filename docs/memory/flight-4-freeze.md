@@ -1,25 +1,76 @@
 ---
 type: memory
 id: flight-4-freeze
-updated: 2026-08-04 21:10 UTC · the hold closed unused · cloud lane
+updated: 2026-08-04 21:13 UTC · fenced · flight 4 cockpit
 ---
 
 # flight-4-freeze — the bench built to be caught mid-job
 
 ## Status
 
-airborne · cloud · 2026-08-04 — THE HOLD CLOSED UNUSED, exiting
+held — landed for local pickup 2026-08-04
 
-The hold ran its full 15 minutes (20:54:32Z → 21:09:49Z) and NO
-FENCE ARRIVED: origin's head never moved off `d5347ca` and no
-ack-to-proceed comment reached
-[#303](https://github.com/wsher0901/roam/pull/303). That is the
-null result [the spec](../record/specs/flight-4-freeze.md) names,
-and it is written as one — never a staged rejection.
+THE FENCE LANDED 2026-08-04 21:13 UTC, pushed by flight 4's cockpit
+on the founder's word "ground the fleet", per
+[land MODE P](../skills/land.md#mode-p--pause-and-transfer-the-founder-is-going-local).
+This Status is terminal and this lane does not own it: on reading
+it, push nothing further and stand down where you are.
 
-The lane held with `ls-remote` only, performing NO fetch at all, so
-the no-rebase instruction held by construction rather than by
-discipline. The exit is the plain push attempt the spec requires.
+⚠️ **READ THIS BEFORE READING THE PROBE: THE DRILL'S ANSWER IS THE
+NULL RESULT, NOT THIS FENCE.** The window this flight built ran
+20:53:54Z → 21:09:32Z and CLOSED UNUSED — origin's head never moved
+while the lane held, and the lane recorded that honestly in commit
+`40685e4`. That is flight 4's finding on the rejected-push rule and
+it is unchanged by anything below. THIS FENCE ARRIVED AFTERWARDS,
+at 21:13, because the founder's word reached the cockpit at 21:11 —
+about two minutes past the window's close. It is the LANDING
+RITUAL doing its ordinary job on a lane that was still live, not
+the drill's instrument. Anything it produces is a SEPARATE
+observation and must never be reported as the drill's.
+
+**What it did so far.** Both pushed commits stand untouched:
+`d5347ca` (20:53:52Z) carrying the probe's **BORN** and **THE
+CHECKPOINT**, and `40685e4` (21:11:37Z) carrying **THE WINDOW
+CLOSED UNUSED** — the null result, with the hold's edges stamped
+and its instrument named. CI was green on `d5347ca`. The fence
+rewrites this memory only; the probe is exactly as the lane pushed
+it.
+
+**How much of the spec is done.** Done-means bullets 1, 2, 3 and 5
+hold: the checkpoint commit exists · the hold was honoured for its
+full window with NO fetch at all (stricter than the no-rebase rule
+the spec fixes) · the outcome is recorded as the observed one, the
+null result · the diff touches exactly the two sanctioned files.
+
+**What is left — ONE stub, and it is small.** The probe's final
+section **THE EXIT PUSH** is a heading with no body. The lane was
+about to fill it from its own push report when this fence landed.
+The fact it was reaching for is already known and is recorded here
+so it cannot be lost: THAT EXIT PUSH WAS ACCEPTED, at 21:11:37Z,
+fast-forward onto `d5347ca`.
+
+**THE EXACT NEXT STEP for the resuming seat.** Write THE EXIT PUSH
+from the facts in this block, then ship the bench. Do not re-run,
+re-time, or reconstruct the hold — it is over and it is fully
+recorded.
+
+**AND ONE THING ONLY THIS BRANCH CAN ANSWER, worth checking before
+the section is written.** If this lane was still running when the
+fence landed, its next push met a non-fast-forward rejection — the
+first time in four flights that a fence has met a live worker,
+arriving too late to be the drill's answer but real all the same.
+IF THAT REJECTION HAPPENED, its verbatim text belongs in the probe
+under a clearly separate heading, labelled a post-window artifact
+of the landing and NOT the drill's observation. If the lane had
+already exited, nothing happened and the section says so. THE
+COCKPIT CANNOT TELL WHICH FROM ITS SEAT — the cockpit's own fence
+push at 21:12:22Z was itself rejected by this lane's `40685e4`,
+which is how the cockpit learned the lane had moved at all.
+
+**Why it paused.** Landed for local pickup 2026-08-04 — the
+founder said "ground the fleet", [land](../skills/land.md)'s
+trigger 3, MODE P. The branch tip is the resume point by
+construction.
 
 ## What this task is
 
