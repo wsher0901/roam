@@ -1,18 +1,27 @@
 ---
 type: memory
 id: flight-1-probe
-updated: 2026-08-04 13:09 UTC · respawn fence · cockpit
+updated: 2026-08-04 13:11 UTC · canary claim · cloud lane
 ---
 # flight-1-probe — the shakedown's simulated cargo
 
 ## Status
 
-respawned — cloud · 2026-08-04. The founder ruled "lane" on the
-held weld: a FRESH cloud lane repairs this log's own epistemic
-faults, so authorship stays off the cockpit and the non-author
-review survives. The prior worker owns nothing here and
-self-terminates on sight of this line. The repair brief is in
-PENDING ISSUES below and it is the whole of the next lane's job.
+claimed for respawn by cloud — 2026-08-04. A fresh cloud lane woke
+on this fenced bench and adopted it per
+[§Respawn](../skills/parallel-lanes.md#respawn-on-an-existing-bench-liftoff-adopt);
+its job is the repair brief in PENDING ISSUES and nothing beyond it.
+Now WAITING for the baton-holder's acknowledgment before any real
+work, tested by the anchored match §Canary fixes — does this Status
+line START WITH the full token, middot included — never the bare
+word, and never a substring search.
+
+The fence this claim overwrote, kept because it is the respawn's
+own provenance: "respawned — cloud · 2026-08-04. The founder ruled
+'lane' on the held weld: a FRESH cloud lane repairs this log's own
+epistemic faults, so authorship stays off the cockpit and the
+non-author review survives. The prior worker owns nothing here and
+self-terminates on sight of this line."
 
 ## What this task is
 
