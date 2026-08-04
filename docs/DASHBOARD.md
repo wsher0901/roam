@@ -6,21 +6,22 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-08-04 · 19:35 UTC by handoff · from work PC
-FLIGHT 3 IS LIFTING OFF — the desk takeover, one lane of cargo ·
+Painted 2026-08-04 · 19:43 UTC by liftoff · from work PC
+FLIGHT 3 IS AIRBORNE — one lane licensed, cockpit firing ·
 needs-you 0 · git outranks this board. How to read it →
 [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
 
-Nothing. The floor is clean and origin carries main and nothing
-else.
+Nothing yet. A gate is expected on
+[#295](https://github.com/wsher0901/roam/pull/295) once the lane
+finishes; the cockpit will carry it to your phone with its advice.
 
 ## The baton
 
-CONTROL TOWER — work PC, since 2026-08-04 16:27 UTC (pickup)
-Last flight: LANDED 2026-08-04 16:02 UTC via MANUAL-LAND — its
-three fenced lanes were adopted at this desk and are now welded.
+COCKPIT — fired 2026-08-04 19:43 UTC (liftoff) · self-seat pending
+Last flight: LANDED 2026-08-04 16:02 UTC via MANUAL-LAND — flight
+2's three fenced lanes were adopted at the desk and welded.
 
 ⚠️ **THE DOUBLE BIRTH RESOLVED ITSELF, and the record is worth
 keeping.** Liftoff fired rung 1 twice — 15:11 and 15:12 UTC —
@@ -40,8 +41,39 @@ verified to survive in the closed PR — which is where to read it.
 
 ## In flight
 
-Nothing flying. The floor is clean — no lanes, no benches, no open
-PRs.
+THE FLIGHT PLAN — flight 3, one lane and one cockpit.
+
+| Who | For | State | Move |
+|---|---|---|---|
+| cockpit | the control tower online for flight 3 | 🟡 fired 19:43 UTC · self-seat pending | seat itself on this board, then monitor the lane |
+| lane · [template-date-row](https://github.com/wsher0901/roam/pull/295) | TEMPLATE's `complete, awaiting merge` row gains its `<date>` slot | 🟢 airborne · cloud · acked 19:42:37 UTC | do the cargo, push, flip ready, speak through its PR |
+
+Nothing is owed and nothing is held — one lane, licensed, with no
+sibling to collide with.
+
+FLIGHT CONTEXT — flight 3 is a TEST FLIGHT and its cargo is real.
+WHAT IS UNDER TEST is
+[pickup §6](skills/pickup.md#6--fleet-resume-on-the-founders-answer)'s
+OTHER entry door: THE DESK TAKEOVER of a cockpit that is LIVE and
+holding a gate, designed at
+[D-061](record/DECISIONS.md#d-061--the-landing-doctrine-recut-to-three-scenarios)
+scenario 2 and never once flown. Flight 2 could not reach it — its
+fleet was already at ground when the founder sat down, which is the
+grounded-fleet case, not this one.
+
+THE COCKPIT'S JOB IS THE ORDINARY ONE: seat itself, monitor the
+lane, review it as a NON-AUTHOR when it finishes, and carry the
+gate to the founder's phone with its advice. It never merges on its
+own advice. If a desk takes this board while the cockpit still
+holds that gate, the cockpit is superseded and self-retires by
+[land](skills/land.md)'s Scenario 2 — reading its own supersession
+off this board is the mechanism, and observing that is the flight.
+
+THE DISPATCH WAS FAST THIS TIME — label 19:39:53, canary 19:41:26,
+ack 19:42:37: 93 seconds to claim and 71 more to licence. Flight 2
+measured the same route at ~27 minutes once and ~2 minutes the
+next, so this is a third data point at the fast end and the spread
+remains the open question, not the mechanism.
 
 ## Working on
 
@@ -189,6 +221,8 @@ S3–S8 · queued in order · 0/22
 
 ## Next
 
-Liftoff is running. This board is the GROUND board it paints at
-its step 1; the flight plan replaces it at step 6, before the
-cockpit is fired.
+Nothing from you. The cockpit will greet you when it seats itself,
+and will bring the gate on
+[#295](https://github.com/wsher0901/roam/pull/295) with its advice
+when the lane finishes. A flight going quiet is not a flight to
+check on — its landing report arrives on its own.
