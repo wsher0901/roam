@@ -1,7 +1,8 @@
 ---
-type: memory
-id: cloud-git-identity
-updated: 2026-08-04 16:32 UTC · adopted at the desk by pickup · work PC
+type: history
+slug: cloud-git-identity
+shipped: 2026-08-04 16:42
+pr: 279
 ---
 # cloud-git-identity — the third seat joins the one-time list
 
@@ -10,7 +11,7 @@ complete, awaiting merge — 2026-08-04
 
 ADOPTED AT THE DESK. The founder answered `local cloud-git-identity`
 at
-[pickup §6](../skills/pickup.md#6--fleet-resume-on-the-founders-answer)
+[pickup §6](../../../../skills/pickup.md#6--fleet-resume-on-the-founders-answer)
 on 2026-08-04; the work PC checked this branch out for zero cap runs
 and the bench became this seat's ordinary gate-standing work. The
 payload did not change in the adoption — the Status simply returns
@@ -18,10 +19,10 @@ to the completion state the fence had replaced.
 
 WHAT REMAINS IS THE FOUNDER'S MERGE WORD on
 [#279](https://github.com/wsher0901/roam/pull/279), then
-[ship](../skills/ship.md)'s weld. Every spec line is met, confirmed
+[ship](../../../../skills/ship.md)'s weld. Every spec line is met, confirmed
 line by line by the cockpit's independent review
 ([the verdict](https://github.com/wsher0901/roam/pull/279#issuecomment-5181501454)),
-so [no-solo-approval](../LAWS.md#workflow-non-negotiable) is already
+so [no-solo-approval](../../../../LAWS.md#workflow-non-negotiable) is already
 satisfied by a non-author seat.
 
 CARRIED TO THE DESK, AND NOW DELIVERED — the review found a gap this
@@ -34,7 +35,7 @@ that adopted this bench is the seat that owes it.
 
 THE FENCE THIS REPLACED, kept because the flight is the record:
 `held — landed for local pickup 2026-08-04`, written by
-[land](../skills/land.md) MODE P at 16:01 UTC on the founder's
+[land](../../../../skills/land.md) MODE P at 16:01 UTC on the founder's
 freeze word so this gate would reach a desk through pickup's resume
 ask. The lane was already complete; nothing was frozen mid-work.
 
@@ -46,7 +47,7 @@ says so rather than claiming the act. What remains is the founder's:
 an external review, then the word. THE LANE DOES NOT MERGE.
 
 ## What this task is
-[machine-setup](../skills/machine-setup.md)'s one-time list gives a
+[machine-setup](../../../../skills/machine-setup.md)'s one-time list gives a
 git identity to the work PC and the home PC. A cloud seat gets
 neither, so it starts as `Claude <noreply@anthropic.com>` — and
 flight 1's cockpit found out the way it is always found out, with
@@ -54,7 +55,7 @@ its first push rejected for email privacy because it carried the
 founder's real address.
 
 This bench adds the cloud seat to that step. Scope edges and the
-full mandate: [the spec](../record/specs/cloud-git-identity.md). The
+full mandate: [the spec](../../../specs/cloud-git-identity.md). The
 two files this lane may touch are named there and are not
 negotiable — flight 2 flies three lanes at once, and disjointness is
 what keeps them from colliding.
@@ -151,7 +152,7 @@ rare rejection rather than about every commit a cloud seat makes.
    missing package — `prettier-plugin-tailwindcss`, imported from
    `noop.js` — which reads at first glance like a repo fault rather
    than an unbuilt seat. `npm ci` fixed it and the full mirror went
-   green. [ship §1](../skills/ship.md#1--preflight) lists the five
+   green. [ship §1](../../../../skills/ship.md#1--preflight) lists the five
    commands with no install rung, and nothing on the cloud path
    installs for you; a desk never sees this because its clone was
    built once and stayed built.
@@ -165,7 +166,7 @@ rare rejection rather than about every commit a cloud seat makes.
    AGAIN. At 15:03 UTC a second `pull_request.labeled` webhook
    arrived for this PR citing head `aa3f8c4` — the bench-birth
    commit, three commits stale. This is the case
-   [§Cloud spawn](../skills/parallel-lanes.md#cloud-spawn--route-ladder)
+   [§Cloud spawn](../../../../skills/parallel-lanes.md#cloud-spawn--route-ladder)
    records from 2026-07-16, but that instance woke a lane that had
    not started; this one hit a lane MID-FLIGHT, between its payload
    push and its completion comment. The rule did its job unchanged:
@@ -177,7 +178,7 @@ rare rejection rather than about every commit a cloud seat makes.
    from a fresh spawn on the Status check alone, and only the
    already-claimed Status would stop it.
 6. `complete, awaiting merge` WRITTEN VERBATIM FAILS THE GATE. It is
-   the one row in [TEMPLATE](TEMPLATE.md)'s vocabulary carrying no
+   the one row in [TEMPLATE](../../../../memory/TEMPLATE.md)'s vocabulary carrying no
    `<date>` placeholder, while `check:memory` requires a YYYY-MM-DD
    stamp somewhere in the Status body — so a lane that copies the
    table exactly, as this one did, goes red with "Status carries no
@@ -187,15 +188,15 @@ rare rejection rather than about every commit a cloud seat makes.
    exempting it — but it is the founder's call, not this lane's.
 
 ## Where to look
-- [the spec](../record/specs/cloud-git-identity.md) — the mandate,
+- [the spec](../../../specs/cloud-git-identity.md) — the mandate,
   the fleet law, and Done-means.
-- [flight 1's story](../record/history/workshop/mechanism/flight-1-probe.md)
+- [flight 1's story](flight-1-probe.md)
   — the rejected first push.
-- [machine-setup](../skills/machine-setup.md) — the file under edit;
+- [machine-setup](../../../../skills/machine-setup.md) — the file under edit;
   the one-time list is where the step goes.
-- [IDEAS](../IDEAS.md) — the line this repair closes, closed at the
+- [IDEAS](../../../../IDEAS.md) — the line this repair closes, closed at the
   ground after the weld and never by this lane. The neighbouring
   bot-identity line is a DIFFERENT question and stays open.
 
 ## Status vocabulary
-See [TEMPLATE](TEMPLATE.md).
+See [TEMPLATE](../../../../memory/TEMPLATE.md).

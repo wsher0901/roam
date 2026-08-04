@@ -2,10 +2,12 @@
 type: spec
 id: cloud-git-identity
 title: The cloud seat gains a git-identity step
-status: draft
+status: shipped
 stage: workshop
 branch: docs/cloud-git-identity
 opened: 2026-08-04
+shipped: 2026-08-04
+pr: 279
 ---
 
 # cloud-git-identity — the third seat joins the one-time list
