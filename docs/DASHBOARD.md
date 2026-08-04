@@ -6,29 +6,18 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-08-03 · 22:13 UTC by cockpit weld-hold · from the cloud
-FLIGHT 1 IS HELD AT THE WELD — the critic found 10, cockpit live ·
-needs-you 1 · git outranks this board. How to read
+Painted 2026-08-04 · 13:10 UTC by cockpit respawn · from the cloud
+FLIGHT 1 IS REPAIRING — a fresh lane respawned, cockpit live ·
+needs-you 0 · git outranks this board. How to read
 it → [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
 
-1. 🔴 RULE THE HELD WELD ON FLIGHT 1 — you said merge, and the
-   PRE-GATE CRITIC RAN AFTER YOUR WORD and returned ten findings.
-   Two cut at the payload's own standard: the probe infers the
-   ready-flip from the PR's body text and calls it observed, and
-   its checklist states the route-1 ordering as fact twelve lines
-   after calling that ordering unobservable. A third matters more
-   for the test program — the lane matched the bare word where
-   [§Canary](skills/parallel-lanes.md#canary-handshake-both-sides)
-   fixes the match as `airborne ·`, so IT CHANGED THE INSTRUMENT IT
-   WAS MEASURING WITH. Nothing is merged. Say "merge anyway" (weld
-   as-is, repairs become a follow-up bench) · "repair" (the cockpit
-   fixes them, which makes it a payload author and needs an
-   external Web review first) · "lane" (a fresh cloud lane repairs
-   its own log, 1 cap run). Say it to the cockpit. (since 08-03)
-   → [the critic round](https://github.com/wsher0901/roam/blob/docs/flight-1-probe/docs/memory/flight-1-probe.md)
-   · [the lane's PR](https://github.com/wsher0901/roam/pull/268)
+Nothing. Your three rulings are all executed — the findings are
+[IDEAS](IDEAS.md) lines, the figure law is filed deferred, and the
+weld ruling fired a fresh lane which is repairing the log now. The
+next thing that needs you is that lane's gate, and the cockpit
+carries it here when it arrives.
 
 ## The baton
 
@@ -41,15 +30,21 @@ Last flight: none — flight 1 is the first this floor has flown.
 
 | Who | For | State | Move |
 |---|---|---|---|
-| cockpit | commands flight 1 from the cloud | 🟢 live since 21:44 UTC, seated | holds the weld; acts on your ruling, then lands |
-| lane · [flight-1-probe](https://github.com/wsher0901/roam/pull/268) | the shakedown's own log, written from inside the flight | 🔴 complete but HELD — the critic found 10 | nothing left for the lane; the repairs need your ruling |
+| cockpit | commands flight 1 from the cloud | 🟢 live since 08-03 21:44 UTC, seated | acked the respawn, then reviews non-author and carries the gate |
+| lane · [flight-1-probe](https://github.com/wsher0901/roam/pull/268) | repairing the shakedown log's own epistemic faults | 🟡 respawned 13:09 UTC, awaiting canary | works the 8-item repair brief in its memory; never merges |
 
-Flight context: the lane's seat is
-[its cloud session](https://claude.ai/code/session_01NcE9UvzhybxinCqre5LvE2).
-FLIGHT 1 OF THE TEST PROGRAM — the machinery is the subject and the
-cargo is deliberately trivial, so any failure observed is a failure
-of the machinery. The cockpit carries the lane's gate to the phone;
-its own AUTO-LAND duty ends the flight unprompted.
+Flight context: THE RESPAWN IS THE FOUNDER'S "lane" RULING on the
+held weld — the pre-gate critic found the log inferring its own
+ready-flip and contradicting itself on the route-1 ordering, and a
+FRESH lane repairs that rather than the cockpit, so authorship stays
+off the reviewer and the non-author review survives. The first
+lane's seat was
+[its cloud session](https://claude.ai/code/session_01NcE9UvzhybxinCqre5LvE2),
+now superseded. Cap: this is fire 1 of today against 15 routine
+runs/day; the remaining count is NOT readable from this seat —
+`npm run count:runs` needs the `gh` CLI, which the cloud has not
+got, so it is stated as unknown rather than guessed. The cockpit's
+AUTO-LAND duty ends the flight unprompted.
 
 ## Working on
 
@@ -64,8 +59,8 @@ The standing order
 one phase per line:
 
 - PHASE 1 — settle & test: the audit is done; THE TEST PROGRAM has
-  opened — flight 1, the shakedown, has flown and is held at the
-  weld on the critic's verdict.
+  opened — flight 1 has flown, and its log is being repaired by a
+  second lane before the weld.
 - PHASE 2 — the vault: chronicle story lanes + a polish pass;
   opens with your scope ruling (all 66, or the load-bearing dozen).
 - PHASE 3 — Roam: T3–T6 relaunched from scratch, plus
@@ -132,7 +127,7 @@ S3–S8 · queued in order · 0/22
 
 ## Next
 
-Your ruling on the held weld. Your merge word was given before the
-critic ran, so the cockpit holds rather than welds through it;
-nothing else moves until you rule. The other two rulings — the
-harvest and the figure-law deferral — are done and on this board.
+Nothing on you. The repair lane works, the cockpit reviews it as a
+non-author when it lands, and the gate comes to you then. If it goes
+quiet with nothing owed, the cockpit auto-lands and the report
+arrives on its own.
