@@ -1,12 +1,12 @@
 ---
 type: memory
 id: home-hook-row
-updated: 2026-08-04 15:34 UTC · respawn · cloud
+updated: 2026-08-04 15:37 UTC · canary claim · cloud
 ---
 # home-hook-row — the hook that enforces the close-lock gets a row
 
 ## Status
-bench ready — resumed 2026-08-04 15:34 UTC
+claimed by cloud — 2026-08-04 15:37 UTC
 
 Born bench-first at the desk, 2026-08-04, as LANE C of FLIGHT 2.
 Its first spawn produced no session and it was parked; the founder
@@ -107,6 +107,20 @@ resolves, never that a mention became a pointer, and never that a
 file that should have a row has one. So the spec has this lane audit
 the whole table once while it is open, and report what it finds
 rather than fix it. One row in, the rest to triage.
+
+2026-08-04 15:37 UTC · canary claim · cloud — THE SECOND DISPATCH
+WOKE, and it woke on a bench whose Status read `bench ready`: not
+terminal, not a claim held by anyone else, so there was nothing here
+to displace and the claim is clean. Route 1 works on a re-labeled
+bench after all — the first spawn's silence was not a property of
+having been labeled once, and the finding recorded above under
+Pending issues is now answered in the negative.
+
+Claiming, then waiting. The ack this lane waits for is a COMMIT ON
+THIS BRANCH AT ORIGIN, fetched and read back with the anchored match
+— the Status line's first characters, never a substring, never the
+bare word, because this paragraph itself would satisfy a sloppier
+test.
 
 ## Where to look
 - [the spec](../record/specs/home-hook-row.md) — the mandate, the
