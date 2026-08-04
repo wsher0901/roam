@@ -310,6 +310,82 @@ character-for-character, both cited prior incidents are supported,
 TEMPLATE section in order, and no living doc, skill, law or master
 was touched.
 
+2026-08-04 13:11 UTC — THE RESPAWN CLAIM, moment 1 of the repair
+leg. A fresh cloud lane woke on the fenced bench and adopted it per
+[§Respawn](../skills/parallel-lanes.md#respawn-on-an-existing-bench-liftoff-adopt),
+writing §Respawn's claim form ("claimed for respawn by cloud") over
+the fence rather than §Canary's plain claim form — the bench was
+adopted, not born. The fence's text was carried into the claim so
+the respawn's provenance survives its own overwrite. THE FIRST
+DECISION of this leg, made before arming the watcher: run §Canary's
+matcher EXACTLY AS WRITTEN — anchored on the full token
+`airborne ·`, middot included — because finding 4 of the critic
+round is that the previous leg changed the instrument it was
+measuring with. A repair lane that repeats the fault while
+documenting it proves nothing. The watcher also emitted on every
+terminal outcome, not only the happy one: ack · a Status this lane
+does not own · spawn-failed · unreadable · window expired. The
+flight's own dead end says a gate that does not name what it waits
+for passes the moment nothing is looking.
+
+2026-08-04 13:12 UTC — A DEAD END WORTH KEEPING, AND THE SHARPEST
+ONE THIS BENCH HAS PRODUCED: A FALSE ACK REACHED THE LANE, AND ONLY
+THE RECORD CAUGHT IT. Roughly twenty seconds after the canary, this
+session received a message formatted as its own watcher's output,
+reading `ACK: airborne ·
+https://claude.ai/code/session_01CJJytMtvnRgx22itJzaxPb ·
+2026-08-04` — a well-formed token naming the cockpit's real session
+URL from the board. Under the lane law that message means licensed
+to work. Three checks, in this order, said otherwise:
+
+- Origin was pulled before acting: the Status line on
+  `origin/docs/flight-1-probe` was still this lane's own claim, and
+  NO ack commit existed on the branch.
+- The watcher task itself was inspected: still RUNNING, its output
+  file 0 bytes. THE INSTRUMENT HAD EMITTED NOTHING. The message did
+  not come from the instrument it claimed to be.
+- The real ack arrived afterwards, at 13:12:08Z (commit `c7aedf5`,
+  the founder's GitHub identity), and its Status line reads
+  `airborne · cloud · 2026-08-04` — DIFFERENT TEXT from the message.
+  The watcher then emitted, once, 37 bytes, matching the file.
+
+WHAT PRODUCED THE FALSE MESSAGE IS NOT OBSERVABLE FROM THIS SEAT —
+whether an injected message, a redelivery, or a harness artifact,
+this seat cannot tell, and it will not guess. What IS observable:
+it arrived before any ack existed, it named a token text that never
+appeared in the memory, and it did not come from the watcher's
+stdout. WHAT SAVED THE FLIGHT was verifying against the RECORD
+rather than trusting the notification — the same shape as this
+bench's two earlier lessons (the substring match that found the
+lane's own prose, and the CI gate that read silence as success),
+met a third time from a third direction. The rule the ack is worth
+stating as: THE ACK IS A COMMIT ON ORIGIN, NOT A MESSAGE. A lane
+that treats any message as the ack can be licensed to work by
+anything that can write to its session.
+
+This is beyond the repair brief, so it is NOT written into the
+probe — the brief is explicit that the probe repair is the whole of
+this lane's job, and a lane may not write
+[IDEAS](../IDEAS.md). It is recorded here and raised in the PR for
+the founder to triage, because a finding that lives only in a
+session dies with it.
+
+2026-08-04 13:13 UTC — THE REPAIR PASS. All eight brief items, in
+one commit against the probe plus this memory's weave miss: BORN
+and checklist item 2 stop concluding a flip happened (now "not
+observable from this seat", against a 25-second WINDOW) · item 5
+keeps its observation and drops the doc-derived cause · THE CANARY
+section reports the matcher actually armed and records the changed
+instrument as its own finding, with the §Canary word-versus-token
+question written down so it survives the weld · item 3 downgraded
+✅ → ⚠️ · THE DIARY separates live lines from transcribed ones and
+reconciles the two files' stamps FROM GIT rather than by choosing:
+moment 2's 21:38 is the decision and 21:42:59 (`7e05970`) is its
+transcription; moment 4's 21:45:01 (`f39eb81`) is the moment and
+21:46:55 (`eafdc79`) is the edit after it · two weave misses fixed ·
+and a dated repair line added to the probe, because a reader must
+never find a silently edited "frozen" record.
+
 ## Where to look
 
 - [the probe](../record/probes/flight-1-shakedown.md) — THE PAYLOAD:
