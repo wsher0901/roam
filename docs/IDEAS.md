@@ -19,6 +19,37 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
 
 ## Open
 
+- ⏳ THE GATE-MOMENTUM GAP — no law names which seat collects a
+  frozen or in-flight fleet's merge words; flight 2's cockpit moved
+  from "review them" to offering the weld in one breath, and only
+  the founder's plan caught it. Name the seat rule (gates travel
+  with the baton's landing plan) in the fix bench. (2026-08-04,
+  flight 2, the external review) → [ship](skills/ship.md)
+- ⏳ THE CAP MODEL, ONE SENTENCE — which births burn the routine
+  cap: label-spawns yes, `fire:cockpit` yes (invisible to
+  `count:runs`), rung-1 `--cloud` births likely not. Flight 2's
+  floor-counts were conservative guesses; write the model where
+  SETUP holds the number. (2026-08-04, the external review) →
+  [SETUP §cloud accounts](SETUP.md#once-and-done--cloud-accounts)
+- ⏳ RESURRECTION BY SURVIVING HOME — the twin sweep satisfied the
+  resurrection rule by verifying the unique commit survives in a
+  closed PR's diff, then deleting the branch. Sound, but the
+  interpretation lives only in a board note that rituals repaint;
+  write it into the rule's own home. (2026-08-04, the twin sweep +
+  the external review) → [LAWS](LAWS.md)
+- ⏳ THE VERIFICATION LOOP ASSUMES DEPENDENCIES A FRESH SEAT DOES
+  NOT HAVE — a cloud container arrives with `node_modules` empty,
+  so lint, format, test and build all fail on a missing package
+  until `npm ci` runs, which reads at first glance like a repo
+  fault rather than an unbuilt seat.
+  [ship §1](skills/ship.md#1--preflight) lists five commands with no
+  install rung, and nothing on the cloud path installs for you; a
+  desk never sees it because its clone was built once and stayed
+  built. The three DOC gates run on bare node and pass before it,
+  so a doc-cargo lane can verify itself before paying for an
+  install. Met independently by flight 1's cockpit and flight 2's
+  lanes B and C. (2026-08-04, flight 2 lane B) →
+  [ship §1](skills/ship.md#1--preflight)
 - ⏳ FLIGHT 4 — THE FAILURE DRILL: the connector rungs, summon, and
   the freeze checkpoint exercised together as DELIBERATE failures
   rather than hoped-for ones, so the paths that only run when
