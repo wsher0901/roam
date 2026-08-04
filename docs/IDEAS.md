@@ -19,6 +19,28 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
 
 ## Open
 
+- ⏳ LIFTOFF STAMPS THE FIRE TIME BEFORE IT FIRES — the baton line
+  is painted into the board, and the board is welded, BEFORE the
+  cockpit is launched, so `COCKPIT — fired <t>` names a moment
+  that is always earlier than the launch it claims to record
+  (flight 3: stamped 19:43, weld merged 19:45:20). Every flight's
+  measured latency has been read off it. Either paint the fire
+  time at fire time or rename the field to what it is. (2026-08-04,
+  flight 3's self-seat) → [liftoff](skills/liftoff.md)
+- ⏳ THE MID-WORK OVERLAP IS REAL BUT UNDER TWO MINUTES — flight 3
+  showed a fired cockpit and a still-working lane coexisting for at
+  most 1m47s, which retires flight 2's "the window closes by
+  construction" without changing the ruling that a freeze test
+  needs a holding bench. Worth writing into the record so the next
+  reader does not re-derive it. (2026-08-04, flight 3's self-seat)
+  → [D-074](record/DECISIONS.md#d-074--phase-1-closes-on-flights-3-and-4)
+- ⏳ SPEC FRONTMATTER HAS NO GATE — flight 3's bench was born
+  `status: draft`, a value outside the declared vocabulary
+  (`open | shipped | superseded`) and the only such value in the
+  repo's history. Nothing catches it; ship overwrites it anyway,
+  so it is invisible in both directions. (2026-08-04, flight 3's
+  non-author review) →
+  [specs TEMPLATE](record/specs/TEMPLATE.md)
 - ⏳ THE GATE-MOMENTUM GAP — no law names which seat collects a
   frozen or in-flight fleet's merge words; flight 2's cockpit moved
   from "review them" to offering the weld in one breath, and only
