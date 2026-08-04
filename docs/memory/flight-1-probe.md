@@ -174,9 +174,11 @@ per the entry contract):
   writing the same minute read four hours apart on the page (this
   bench: `17:38` from the work PC, `21:38 UTC` from the cloud) — a
   cold reader cannot order a memory's own stamps.
-- ⚪ The claim Status form differs between its two homes — §Canary's
-  lane side versus TEMPLATE's state table — and only the airborne
-  row is machine-checked, so the claim row can drift silently.
+- ⚪ The claim Status form differs between its two homes —
+  [§Canary](../skills/parallel-lanes.md#canary-handshake-both-sides)'s
+  lane side versus [TEMPLATE](../memory/TEMPLATE.md)'s state table —
+  and only the airborne row is machine-checked, so the claim row can
+  drift silently.
 - ⚪ On a route-1 cloud lane the ready-flip is already consumed by
   the spawn, so the lane's completion contract has a step that is a
   no-op and a signal that carries no information; the staged

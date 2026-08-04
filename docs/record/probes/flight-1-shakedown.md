@@ -39,9 +39,16 @@ offset, in which case the offset is shown as the source wrote it.
 The birth in the order this seat can put it:
 
 - **21:36:28Z** — PR #268 created (`created_at`). Its body opens
-  "**Draft PR at birth**", and the PR this lane read was NOT draft:
-  a ready-flip happened between creation and this lane's wake, 25
-  seconds before the container's own checkout.
+  "**Draft PR at birth**", and the PR this lane read was NOT draft.
+  That is the whole of what this seat saw. WHETHER A READY-FLIP
+  EVER HAPPENED IS **not observable from this seat**: the body
+  string is boilerplate written at birth and cannot witness a state
+  transition, a PR created ready carrying that same body is
+  indistinguishable from one created draft and flipped, and this
+  seat could not read the PR's event timeline. What IS observable
+  is a 25-SECOND WINDOW — creation at 21:36:28Z to the container's
+  own checkout at 21:36:53 — inside which a flip, if there was one,
+  would have had to fall. A window, not an instant.
 - **21:36:34Z** — the Vercel bot's deployment comment, the earliest
   PR event this seat can see with a timestamp of its own.
 - **21:36:45Z** — the PR's `updated_at` on this seat's first read.
@@ -103,13 +110,44 @@ was recorded to protect. Observed facts about the ack:
   interval behind the push. Canary → licensed to work: **74 seconds
   of the ~10-minute window**, about 12% of it.
 
-**The match was ANCHORED, and the anchoring mattered.** The watcher
-tested whether the Status line STARTS WITH the token, never a
-substring search — this lane's own claim prose contains the word
-"airborne", so a substring match would have found the lane's own
-writing and read it as the ack. That failure mode is not
-hypothetical here: it was live in the file the whole time the
-watcher ran.
+**THE MATCH WAS ANCHORED — BUT NOT ON THE TOKEN THE CONTRACT
+FIXES, AND THAT IS THIS FLIGHT'S MOST CONSEQUENTIAL FINDING.** What
+was actually armed: the watcher tested whether the Status line
+STARTS WITH the bare word `airborne`, never a substring search.
+The anchoring did real work — this lane's own claim prose contains
+the word "airborne", so a substring match would have found the
+lane's own writing and read it as the ack, and that failure mode
+was live in the file the whole time the watcher ran. But
+[§Canary](../../skills/parallel-lanes.md#canary-handshake-both-sides)
+does not fix the match at the word. It fixes it at the full token —
+"STARTS WITH `airborne ·` … never a substring search anywhere in
+the memory, and never a search for the bare word" — and the lane
+departed from it deliberately, reasoning recorded as MOMENT 2.
+
+The reasoning was good and the ack happened to arrive in canonical
+form, so the outcome was correct. THE PROBLEM IS NOT THE OUTCOME.
+[The spec](../specs/flight-1-probe.md)'s simulation law says the
+rituals are NOT special-cased for the test, and that friction
+produced by running one exactly as written is a FINDING to record
+rather than smooth over. **This lane changed the instrument it was
+measuring with.** Checklist item 3's green was therefore measured
+against a matcher the contract does not sanction: it is evidence
+that A handshake closed, not that THE handshake as written closes.
+A test flight that adjusts the instrument mid-measurement reports
+on an aircraft nobody flies.
+
+**The skill question this raises, recorded here so it does not
+evaporate at the weld:** should §Canary's match anchor on the WORD
+`airborne` rather than on the token `airborne ·`? The lane's
+argument is not weak — the em-dash ack of 2026-07-22 is the exact
+failure §Canary was written against, and an anchored word-match
+catches both that failure and the self-match, while the token-match
+catches only the self-match. The counter-argument is that the
+token is what makes the ack unforgeable-by-accident, and a lane
+that widens its own matcher widens it toward false positives. This
+is a question for the machinery's owner, not for a lane to settle
+by acting; it belongs in [IDEAS](../../IDEAS.md), which a lane may
+not write.
 
 Two things the ack surfaced that are cheap to fix and cost nothing
 to notice:
@@ -132,13 +170,38 @@ to notice:
 ## THE DIARY
 
 One line per memory moment
-([the four](../../skills/parallel-lanes.md#the-four-memory-moments-the-lanes-diary-rule)),
-written AT the moment rather than reconstructed at the end.
+([the four](../../skills/parallel-lanes.md#the-four-memory-moments-the-lanes-diary-rule)).
 
-- **21:38 — MOMENT 1, the handshake claim.** Status → claimed by
+**WHICH LINES WERE LIVE AND WHICH WERE TRANSCRIBED.** The memory
+kept the diary live at every moment; THIS FILE did not, and the
+distinction was blurred in the first draft. This file did not exist
+until commit `7e05970` at **21:42:59**, after the ack — so its
+MOMENT 1 and MOMENT 2 lines are TRANSCRIPTIONS from the memory,
+which earned the at-the-moment property that the probe inherited.
+MOMENT 4 and the wake-lock line were written live: commits
+`f39eb81` at **21:45:01** and `3e34913` at **21:49:55**, each as
+its moment happened.
+
+The two files' stamps disagreed, and git settles it — each was
+recording a different event, so both were right and neither said
+which:
+
+- **MOMENT 2** — the probe stamps 21:38, the memory 21:42. The
+  DECISION was made around 21:38, while the watcher was being armed
+  and before the ack existed at 21:38:53 to test it; it was WRITTEN
+  DOWN at 21:42:59 in `7e05970`. Decision time and transcription
+  time, four minutes apart.
+- **MOMENT 4** — the probe stamps 21:45, the memory 21:46. The
+  completion diary went in at 21:45:01 (`f39eb81`); the memory's
+  21:46 belongs to `eafdc79` at 21:46:55, the revision that
+  followed it. The moment is 21:45; 21:46 is the edit after it.
+
+- **21:38 — MOMENT 1, the handshake claim** (live in the memory,
+  transcribed here). Status → claimed by
   cloud, pushed, then the wait. Written into the memory as the canary
   commit itself, so the claim and its diary line are the same act.
-- **21:38 — MOMENT 2, the first decision.** Made while arming the
+- **21:38 — MOMENT 2, the first decision** (live in the memory,
+  transcribed here). Made while arming the
   watcher, before the ack existed to test it: keep the match
   anchored at the START of
   the line but on the WORD `airborne` rather than on `airborne ·`,
@@ -146,7 +209,9 @@ written AT the moment rather than reconstructed at the end.
   caught, while a substring match on the lane's own prose still
   cannot be. The stricter test would have been correct here and
   brittle in the recorded failure; the anchor is what does the
-  safety work, not the middot.
+  safety work, not the middot. **This is the departure THE CANARY
+  section now records as a finding: the reasoning was the lane's
+  own, and the contract was §Canary's to change, not the lane's.**
 - **21:49 — THE WAKE-LOCK MET A REDELIVERED WEBHOOK, LIVE.** After
   completion, a second `pull_request.labeled` event arrived for this
   PR, citing `c8fe3d9` — THE BIRTH SHA, five commits stale. The lane
@@ -164,14 +229,15 @@ written AT the moment rather than reconstructed at the end.
   the founder. Recorded as absent rather than omitted: a probe that
   silently drops a moment reads the same as one that never reached
   it.
-- **21:45 — MOMENT 4, completion.** Branch synced with the main that
+- **21:45 — MOMENT 4, completion** (live). Branch synced with the main that
   had moved under it (#269 landed mid-flight), the full verification
   loop run green — links 4481/0 broken, ledger 114↔114, memory
   valid, lint, format, 3 tests, build — and the simulation law
   checked mechanically rather than asserted: EVERY commit this lane
   authored touches `docs/memory/flight-1-probe.md` and this file and
   nothing else, listed rather than claimed. The branch's other
-  changed files — `DASHBOARD.md`, `IDEAS.md` — arrived in the sync
+  changed files — [DASHBOARD](../../DASHBOARD.md),
+  [IDEAS](../../IDEAS.md) — arrived in the sync
   merge, authored on `main` by the founder in #269; the lane wrote
   none of them. The distinction matters because a bare branch diff
   cannot make it: the diff shows the files, `git log --author` shows
@@ -187,32 +253,44 @@ The nine links of the chain, each an observation or the exact words
    PR #268 were all on origin at `c8fe3d9` before this session's
    environment was created (`21:36:53` checkout of a commit already
    carrying all four).
-2. **Spawn route 1** — ✅ PARTIALLY OBSERVED, and the unobserved half
-   named. Observed: at wake the PR was READY (not draft) and carried
+2. **Spawn route 1** — ✅ PARTIALLY OBSERVED, and the unobserved
+   parts named. Observed: at wake the PR was READY (not draft) and carried
    the `lane:cloud` label, and this session's kickoff names that label
    as its trigger. **The ORDER of the ready-flip and the label — the
    thing route 1 actually fixes — is not observable from this seat:**
    the PR API returns current state and one `updated_at`, and this
    seat could not read the PR's event timeline (the issue-timeline
    call rejects a PR number with "Could not resolve to an Issue").
-   What narrows it: the PR was created at 21:36:28Z with a body that
-   opens "Draft PR at birth" and was READY when this lane read it, so
-   A FLIP DEMONSTRABLY HAPPENED in the ~25 seconds before the
-   container's checkout. That the spawn worked is observed; that a
-   flip happened is observed; that the flip preceded the LABEL — the
-   one thing route 1 actually fixes — is not.
-3. **Canary inside the window** — ✅ OBSERVED. Canary 21:38:01, ack
-   authored 21:38:53, detected 21:39:15. 74 seconds against a
-   ~10-minute window.
+   NOR IS THE FLIP ITSELF OBSERVABLE. The PR was created at
+   21:36:28Z with a body opening "Draft PR at birth" and was READY
+   when this lane read it 25 seconds later — but a PR created ready
+   with that same boilerplate body reads identically, so WHETHER A
+   FLIP EVER HAPPENED IS **not observable from this seat**. What is
+   observed: the spawn worked, the label was present, and the PR was
+   ready. What is not: that a flip occurred, and that it preceded
+   the label — the one thing route 1 actually fixes.
+3. **Canary inside the window** — ⚠️ OBSERVED, BUT NOT WITH THE
+   CONTRACT'S INSTRUMENT. Canary 21:38:01, ack authored 21:38:53,
+   detected 21:39:15: 74 seconds against a ~10-minute window, and
+   the ack's form matches
+   [§Canary](../../skills/parallel-lanes.md#canary-handshake-both-sides)
+   character-for-character. What this does NOT establish is that
+   §Canary's handshake closes, because the lane's watcher anchored
+   on the bare word `airborne` where the contract fixes the full
+   token `airborne ·`. The timing is sound; the matcher was the
+   lane's own. THE CANARY section carries the finding and the skill
+   question it raises. A green measured with a modified instrument
+   is a green for the instrument, not for the contract.
 4. **Work pushed** — ✅ OBSERVED. Every commit of this flight was
    pushed as it was made; the branch, not the session, holds the
    work. This line is verifiable by anyone from `git log` alone,
    which is the point of it.
 5. **Ready flip** — ⚠️ OBSERVED AS A NO-OP, and this is a finding.
-   The PR was ALREADY READY when this lane woke, because route 1
-   spawns by flipping ready and then labelling. There is no flip left
-   for the lane to perform at completion, so THE READY STATE CARRIES
-   NO INFORMATION ABOUT COMPLETION on a route-1 cloud lane —
+   The PR was ALREADY READY when this lane woke. WHY it was ready is
+   not this seat's to say — see item 2 — so the observation stands
+   on its own without a cause: there was no flip left for the lane
+   to perform at completion, so THE READY STATE CARRIES NO
+   INFORMATION ABOUT COMPLETION for this lane —
    [§Cloud spawn](../../skills/parallel-lanes.md#cloud-spawn--route-ladder)'s
    "ready ≠ complete" guard, met in the wild. What this lane can
    actually signal at completion is the memory Status, the pushed
@@ -245,6 +323,29 @@ editing it later from the ground would destroy the only thing it
 records that nothing else can. The four unobservable links belong to
 whoever can see them — the bench's entry in
 [record/history/](../history), written after the weld.
+
+**REPAIRED 2026-08-04, AND THIS LINE IS THE RECORD OF IT.** A reader
+must never find a silently edited "frozen" file. At the gate the
+pre-gate critic ([ship §6](../../skills/ship.md#6--the-gate))
+returned ten findings against this log, the founder ruled that a
+FRESH cloud lane repair them — so authorship stays off the reviewing
+seat — and this pass is that lane's. It is not a rewrite from the
+ground: every change REMOVES a claim the original seat could not
+support, or names an instrument honestly, which is the freeze's own
+principle rather than an exception to it. What changed: BORN and
+checklist item 2 no longer conclude that a ready-flip happened —
+that is now "not observable from this seat", against a 25-second
+window rather than an instant · checklist item 5 keeps its
+observation and drops the doc-derived cause that contradicted item 2
+· THE CANARY section now reports the matcher that was actually armed
+(the bare word, not the token), records THE LANE CHANGED THE
+INSTRUMENT IT WAS MEASURING WITH as a finding, and carries the skill
+question that follows · checklist item 3 is downgraded from ✅ to ⚠️
+accordingly · THE DIARY separates the lines written live from the
+ones transcribed after the ack, and reconciles the two files' stamps
+from git · two weave misses fixed. Nothing was ADDED to the seat's
+observations; the original text is in the branch's history at
+`e0d8385`.
 
 Sources:
 [the spec](../specs/flight-1-probe.md) ·
