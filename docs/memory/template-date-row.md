@@ -1,17 +1,23 @@
 ---
 type: memory
 id: template-date-row
-updated: 2026-08-04 19:38 UTC · bench birth · work PC
+updated: 2026-08-04 19:42 UTC · canary claim · cloud lane
 ---
 
 # template-date-row — the row the checker contradicts
 
 ## Status
 
-bench ready — born 2026-08-04
+claimed by cloud — 2026-08-04
 
-Awaiting a lane. The bench exists on origin — branch, spec, this
-memory, draft PR — before any worker does, per bench-first birth.
+The canary. This lane woke on the `lane:cloud` label, checked out
+this branch, and is now waiting for the baton-holder's ack commit on
+origin before any real work — the licence is a commit whose Status
+line STARTS WITH the ack token, read back from origin and matched at
+the start of the line, never a message and never a substring.
+
+The bench itself was born on origin — branch, spec, this memory, PR —
+before this lane existed, per bench-first birth.
 
 A NOTE THE BENCH EARNED BY EXISTING: this very Status line had to be
 written `bench ready — born 2026-08-04` rather than the bare
