@@ -6,26 +6,14 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-08-04 · 16:50 UTC by ship's tail · from work PC
-FLIGHT 2 IS SHIPPED — all three lanes welded, floor clean ·
-needs-you 2 · git outranks this board. How to read it →
+Painted 2026-08-04 · 19:10 UTC by ship's tail · from work PC
+FLIGHT 2 SHIPPED AND PHASE 1 RESCOPED — two flights left to fly ·
+needs-you 1 · git outranks this board. How to read it →
 [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
 
-1. 🟡 **RESCHEDULE THE MID-WORK FREEZE TEST, or retire it.** It is
-   now unproven for the THIRD time and the reason is measured, not
-   guessed: lane C ran 4m48s from licence to done, and the founder's
-   word arrived 17 minutes after that. Every fence landed on a
-   finished bench, so the wake-lock's rejected-push rule — does a
-   fence actually STOP a live worker — remains the one designed
-   behaviour this workshop has never observed. It needs a lane whose
-   cargo runs for tens of minutes, or a bench specced to HOLD at a
-   checkpoint until acked. Your call whether that earns its own
-   flight. (since 08-04)
-   → [parallel-lanes §Wake-lock](skills/parallel-lanes.md#wake-lock--parking)
-   · [land MODE P](skills/land.md#mode-p--pause-and-transfer-the-founder-is-going-local)
-2. ⚪ **LOOK AT ONE STRAY BRANCH, THEN IT CAN GO.**
+1. ⚪ **LOOK AT ONE STRAY BRANCH, THEN IT CAN GO.**
    `chore/cockpit-seat-repaint` carries one unique commit
    (`b8a907a`), the twin cockpit's losing self-seat board draft
    behind the closed
@@ -60,19 +48,22 @@ PRs.
 
 ## Working on
 
-- FLIGHT 2 OF THE TEST PROGRAM — FLOWN, GROUNDED AND SHIPPED
-  2026-08-04. The fleet path was exercised end to end for the first
-  time and its cargo is welded; one property it went to test is
-  still unproven, and Needs-you 1 asks whether that earns another
-  flight.
+- THE TEST PROGRAM — flights 1 and 2 flown and shipped; TWO FLIGHTS
+  REMAIN and phase 1 closes on them
+  ([D-074](record/DECISIONS.md#d-074--phase-1-closes-on-flights-3-and-4)).
+  Neither is scope yet; both wait as inbox lines until triaged.
 
 The standing order
-([D-060](record/DECISIONS.md#d-060--the-three-phase-standing-order)),
+([D-060](record/DECISIONS.md#d-060--the-three-phase-standing-order),
+phase 1's closing condition amended by
+[D-074](record/DECISIONS.md#d-074--phase-1-closes-on-flights-3-and-4)),
 one phase per line:
 
-- PHASE 1 — settle & test: the audit is done; flights 1 and 2 have
-  both shipped. What remains of this phase is the single ruling in
-  Needs-you 1.
+- PHASE 1 — settle & test: the audit is done and flights 1 and 2
+  have shipped. It closes on FLIGHT 3 (desk takeover of a live
+  cockpit holding a decision) and FLIGHT 4 (the failure drill —
+  connector rungs, summon, and the deterministic freeze
+  checkpoint). → their lines in [IDEAS](IDEAS.md)
 - PHASE 2 — the vault: chronicle story lanes + a polish pass;
   opens with your scope ruling (all 66, or the load-bearing dozen).
 - PHASE 3 — Roam: T3–T6 relaunched from scratch, plus
@@ -83,6 +74,10 @@ one phase per line:
 
 **Completed**
 
+- D-074 — the mid-work freeze test becomes a DETERMINISTIC DRILL (a
+  bench that holds at a checkpoint until acked), and phase 1's
+  closing condition moves to flights 3 and 4.
+  [#290](https://github.com/wsher0901/roam/pull/290)
 - The ack is a commit on origin, never a message — §Canary now
   states a lane's licence in all three places a reader meets the
   handshake; flight 2 lane A.
@@ -105,14 +100,21 @@ one phase per line:
 
 **Issues**
 
-- 🔴 THE MID-WORK FREEZE TEST IS UNRUNNABLE ON DOC-SIZED CARGO, now
-  measured twice. Attempt 1: A and B finished at 15:04–15:05, before
-  the cockpit was fired at 15:11 — the fire comes after the lanes by
-  construction. Attempt 2, with the respawned lane C and a cockpit
-  already seated and watching: acked 15:38:20, complete 15:43:08 —
-  FOUR MINUTES FORTY-EIGHT SECONDS, of which the cockpit spent about
-  two on its ack and its push. The failure is not promptness and
-  cannot be fixed by more of it. → Needs-you 1
+- ✓ THE MID-WORK FREEZE TEST IS UNRUNNABLE ON DOC-SIZED CARGO —
+  measured twice (A and B finished before the cockpit was even
+  fired; lane C ran 4m48s against a window needing a human to
+  answer a phone), and RULED rather than retried: it becomes a
+  deterministic drill, a bench specced to hold at a checkpoint
+  until acked, folded into flight 4. The failure was structural,
+  so a fourth attempt of the same shape would have failed the same
+  way. →
+  [D-074](record/DECISIONS.md#d-074--phase-1-closes-on-flights-3-and-4)
+- ⏳ THE WAKE-LOCK'S REJECTED-PUSH RULE IS STILL UNOBSERVED — does a
+  fence actually STOP a live worker. Three flights have failed to
+  see it because every fence landed on a finished bench. It is the
+  single largest untested claim left in the machinery, and flight
+  4's checkpoint drill is now the thing that tests it. → its line
+  in [IDEAS](IDEAS.md)
 - ✓ THE FLEET PATH IS PROVEN END TO END. Flight 2's last untested
   link — the grounded-fleet resume at pickup — was flown at this
   sitting: the two-fact trigger fired, the ask rendered, the
@@ -178,8 +180,8 @@ S3–S8 · queued in order · 0/22
 
 ## Next
 
-Rule Needs-you 1 — whether the mid-work freeze test earns its own
-flight, on a lane long enough to actually be interrupted, or gets
-retired as unrunnable. That is the last thing standing between
-phase 1 and phase 2's scope question. Nothing expires and nothing
-is urgent.
+Open flight 3 — the desk takeover of a live cockpit holding a
+decision — when you next have a sitting for it; it is the cheaper
+of the two remaining flights and the one whose machinery has never
+been run at all. Say the word and it gets a spec. Nothing expires
+and nothing is urgent.
