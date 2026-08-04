@@ -1,21 +1,21 @@
 ---
 type: memory
 id: flight-1-probe
-updated: 2026-08-04 13:12 UTC · airborne ack · cockpit
+updated: 2026-08-04 13:19 UTC · completion · cloud lane
 ---
 # flight-1-probe — the shakedown's simulated cargo
 
 ## Status
 
-airborne · cloud · 2026-08-04
-
-The cockpit acked this bench 86 seconds after the canary. The lane
-is licensed to work THE REPAIR BRIEF in PENDING ISSUES and nothing
-beyond it: the simulation law still binds, and the lane never
-merges. Its provenance, kept: the founder ruled "lane" on the held
-weld, so a FRESH lane repairs this log's own epistemic faults and
-authorship stays off the cockpit, which reviewed this bench as a
-non-author and will review it again.
+complete, awaiting merge — 2026-08-04. The repair leg is done: all
+eight brief items are repaired in the probe, the verification loop
+is green end to end, and the simulation law was checked
+mechanically rather than asserted. The PR was already ready and
+stays ready — the lane never flips what it never had, and never
+merges. ONE FINDING BEYOND THE BRIEF is raised in the PR rather
+than written into the probe: A FALSE ACK REACHED THIS LANE, and
+only a check against origin caught it. That needs the founder's
+triage, because a lane may not write [IDEAS](../IDEAS.md).
 
 ## What this task is
 
@@ -37,96 +37,34 @@ memory. Nothing else, on any branch, for any reason. Contract:
 
 ## Pending issues
 
-THE REPAIR BRIEF — the whole of the next lane's job, and nothing
-beyond it. Every item below came from the pre-gate critic
-([ship §6](../skills/ship.md#6--the-gate)) and was CONFIRMED against
-the sources by the cockpit before being written here. The critic
-round further down the story carries the reasoning; this is the
-work list.
+THE REPAIR BRIEF IS CLOSED. All eight items the cockpit confirmed
+from the pre-gate critic ([ship §6](../skills/ship.md#6--the-gate))
+are repaired: the inferred flip · item 5's doc-derived cause · the
+misreported matcher · the changed instrument and its skill question
+· the diary's at-the-moment claim and the two files' stamps · the
+window-not-an-instant · two weave misses · the freeze note. The
+repair-pass entry in the story lists what each change was; the
+probe's own dated repair line lists the same, for a reader who
+never sees this file. The critic round further down carries the
+reasoning behind each.
 
-THE SIMULATION LAW STILL BINDS: touch ONLY
-`docs/record/probes/flight-1-shakedown.md` and this memory. Never
-merge. Do not touch the spec, the board,
-[IDEAS](../IDEAS.md), any skill, any law, or any master.
+ONE ITEM IS OPEN, AND IT IS NOT THE LANE'S TO CLOSE: **a false ack
+reached this lane** (the dead end in the story, 13:12 UTC) — a
+well-formed `airborne ·` token, naming the cockpit's real session
+URL, arriving before any ack existed on origin and not from the
+watcher that claimed to have emitted it. The check against origin
+caught it. The rule it argues for — THE ACK IS A COMMIT ON ORIGIN,
+NOT A MESSAGE — is a change to
+[§Canary](../skills/parallel-lanes.md#canary-handshake-both-sides),
+and this lane may write neither the skill nor [IDEAS](../IDEAS.md).
+It is raised in the PR for the founder's triage.
 
-1. **THE FLIP IS INFERRED — say so.** In BORN and again in
-   checklist item 2, the probe concludes "A FLIP DEMONSTRABLY
-   HAPPENED" from `created_at`, the PR's CURRENT ready state, and
-   the PR BODY's opening words "Draft PR at birth". A body string
-   is boilerplate written at birth; it cannot witness a state
-   transition, and a PR created ready carrying that same body is
-   indistinguishable from one created draft and flipped. The probe
-   itself says two lines earlier that it could not read the event
-   timeline. REPLACE the conclusion with what the seat actually
-   saw: the PR was NOT draft when read, and whether a flip ever
-   occurred is NOT OBSERVABLE FROM THIS SEAT — the exact words.
-2. **ITEM 5 CONTRADICTS ITEM 2 — resolve it toward the honest
-   side.** Item 5 gives the ready state a cause — "because route 1
-   spawns by flipping ready and then labelling" — which is lifted
-   from
-   [§Cloud spawn](../skills/parallel-lanes.md#cloud-spawn--route-ladder),
-   not observed, while item 2 declares that same ordering
-   unobservable. Keep item 5's OBSERVATION (the PR was already
-   ready, so no flip was left to perform, so the ready state
-   carries no completion information) and drop the doc-derived
-   CAUSE, or mark it plainly as read from the skill rather than
-   seen.
-3. **THE CANARY SECTION MISREPORTS ITS OWN INSTRUMENT.** It says
-   the watcher tested "STARTS WITH the token"; MOMENT 2 records
-   that it anchored on the bare word `airborne`. Correct the
-   CANARY section to what was actually armed.
-4. **THE BIG ONE — RECORD THAT THE INSTRUMENT WAS CHANGED.**
-   [§Canary](../skills/parallel-lanes.md#canary-handshake-both-sides)
-   fixes the match as "STARTS WITH `airborne ·` … never a
-   substring search anywhere in the memory, AND NEVER A SEARCH FOR
-   THE BARE WORD". This lane matched the bare word deliberately,
-   and its reasoning was good — but
-   [the spec](../record/specs/flight-1-probe.md)'s simulation law
-   says the rituals are NOT special-cased for the test, and that
-   friction from running one exactly as written is a FINDING.
-   THE LANE CHANGED THE INSTRUMENT IT WAS MEASURING WITH, so
-   checklist item 3's green was measured against a matcher the
-   contract does not sanction. Write this into the probe as its
-   own finding, and downgrade item 3 accordingly — it is no longer
-   a clean ✅. Add the implied skill question to the probe's
-   findings so it does not evaporate: should §Canary's match
-   anchor on the word rather than the token, given an em-dash ack
-   is the failure it was written against?
-5. **THE DIARY'S AT-THE-MOMENT CLAIM IS TOO STRONG.** The probe
-   says its diary was "written AT the moment rather than
-   reconstructed at the end", but the probe file was authored only
-   after the ack, so MOMENT 1 and MOMENT 2 are transcriptions —
-   the memory earned that property, the probe inherited it. Say
-   which moments were live and which were transcribed. While
-   there, reconcile the two files' stamps: the probe puts MOMENT 2
-   at 21:38 and MOMENT 4 at 21:45; this memory puts them at 21:42
-   and 21:46.
-6. **A WINDOW IS NOT AN INSTANT.** BORN says the flip happened "25
-   seconds before the container's own checkout". Only a
-   25-second WINDOW is observable. Item 2 already states it
-   correctly — make BORN match.
-7. **TWO WEAVE MISSES.** In the probe, `DASHBOARD.md` and
-   `IDEAS.md` appear as bare code spans where they should be
-   links. In this memory's "Ideas surfaced" list, "§Canary's lane
-   side versus TEMPLATE's state table" is plain text where both
-   are linked elsewhere in the same file.
-8. **DO NOT SILENTLY BREAK THE FREEZE.** The probe declares itself
-   frozen as written. These repairs do not violate that — they
-   REMOVE claims the seat could not support, which is the freeze's
-   own principle — but the file must say so: add one dated line
-   recording that it was repaired on 2026-08-04 at the founder's
-   ruling, after the critic round, and naming what changed. A
-   reader must never find a silently edited "frozen" record.
-
-WHAT IS ALREADY CLOSED, so you do not redo it: Actions was green
-on head `e0d8385`, and the mechanical simulation-law check still
-holds — the sync merges brought only `DASHBOARD.md` and
-`IDEAS.md` from main, no lane-authored file moved.
-
-WHEN DONE: full verification loop, push every commit, flip nothing
-(the PR is already ready — that is finding 3 of the flight), post
-the completion comment, and STOP. The cockpit reviews as a
-non-author and the founder's word does the rest.
+THE SIMULATION LAW HELD, checked rather than claimed: the three
+commits this lane authored touch only
+`docs/record/probes/flight-1-shakedown.md` and this file; the sync
+merge brought only [DASHBOARD](../DASHBOARD.md) from main, authored
+there by the founder in
+[#273](https://github.com/wsher0901/roam/pull/273).
 
 ## Left / idle
 
@@ -136,6 +74,10 @@ and the auto-land all happen after this lane's last push. They are
 recorded as "not observable from this seat", which is the correct
 result rather than an open item, and they belong to this bench's
 entry in [record/history/](../record/history) after the weld.
+
+The repair leg adds nothing to that list. It ends where the first
+leg ended, one push short of the same four links, which is the
+correct shape for a lane and not a gap.
 
 ## The story
 
@@ -385,6 +327,27 @@ transcription; moment 4's 21:45:01 (`f39eb81`) is the moment and
 21:46:55 (`eafdc79`) is the edit after it · two weave misses fixed ·
 and a dated repair line added to the probe, because a reader must
 never find a silently edited "frozen" record.
+
+2026-08-04 13:19 UTC — MOMENT 4 OF THE REPAIR LEG, COMPLETION.
+`main` had moved again ([#273](https://github.com/wsher0901/roam/pull/273),
+the cockpit's own respawn commit), so the sync came first: merged,
+never rebased. Then the full verification loop, green end to end —
+4518 links / 0 broken, ledger 114 ↔ 114, memory format valid, lint,
+format, 3 tests, build. One environment note for whoever flies the
+next cloud leg: THE CONTAINER ARRIVES WITHOUT `node_modules`, so
+lint, format, test and build all fail with "not found" until
+`npm ci` runs. The docs checks (`links`, `ledger`, `memory`) run on
+bare node and pass before it. That is not a repo fault and not a
+finding against the machinery — but a lane that reads those four
+failures as a red loop would park a healthy bench, so it is written
+down here rather than rediscovered.
+
+The simulation law was CHECKED rather than asserted, the same way
+the first leg checked it: per-commit file lists for the three
+commits this lane authored, not a bare branch diff. The ready-flip
+was correctly NOT performed — the PR has been ready since the
+spawn, which is finding 5 of the flight, so there was nothing to
+flip and flipping would have signalled nothing.
 
 ## Where to look
 
