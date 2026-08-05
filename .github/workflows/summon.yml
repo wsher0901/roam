@@ -76,8 +76,13 @@ jobs:
             exit 1
           fi
           # The payload is a POINTER, never a plan: the board is the
-          # authoritative flight plan (#193).
-          payload="Summoned cockpit. Derive state from origin; the board's flight context is the authoritative flight plan (#193). You supersede the previous cockpit."
+          # authoritative flight plan (#193). IT ALSO ASSERTS NOTHING
+          # ABOUT WHAT THE NEW SEAT SUPERSEDES — only the board grants
+          # that (D-051), and a hardcoded supersession claim made the
+          # charter's rule 8 order a newborn seat to retire a
+          # predecessor that did not exist (D-075, #314). The seat
+          # reads THE BATON and matches one of rule 1's three cases.
+          payload="Summoned cockpit. Derive state from origin; the board's flight context is the authoritative flight plan (#193). Read THE BATON and match one of charter rule 1's three cases before doing anything else."
           if [ -n "${MANDATE}" ]; then
             payload="${payload} Mandate: ${MANDATE}"
           fi

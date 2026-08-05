@@ -3951,3 +3951,67 @@ phase 1 closing condition, amended here and left otherwise intact) ·
 3, flight 4) · [DASHBOARD](../DASHBOARD.md) (the standing order's
 phase 1 line and Needs-you, at the next ritual repaint — the board
 is never hand-edited) · this entry.
+
+## D-075 — The self-seat duty gains a live-desk case
+
+In full: 2026-08-05 — The self-seat duty of D-051 clause (2) is amended: a newborn cockpit reads THE BATON section and matches one of THREE cases, not two — "self-seat pending" or no live baton-holder of any kind → self-seat · A LIVE BATON-HOLDER THAT IS NOT A COCKPIT, meaning a control tower at a desk → HOLD AND REPORT, seating nothing and superseding nothing · a foreign live cockpit → stray birth, unchanged. Two consequences ride with it: NO BIRTH PROMPT MAY ASSERT A SUPERSESSION, because the board is the arbiter of whether a live seat exists (D-051), so the summon workflow stops hardcoding "You supersede the previous cockpit" into its payload; and THE TOMBSTONE'S SUCCESSOR SENTENCE IS READ OFF THE BOARD RATHER THAN ASSUMED, with the successor duty scoped to replacement COCKPITS only, since a desk takeover writes its own board. The founder's "go" of 2026-08-05, on the 🔴 the summon test returned.
+
+**Decision:** a newborn cockpit matches three cases against
+[THE BATON](../DASHBOARD.md#the-baton), not two. The new middle case
+— a live baton-holder that is not a cockpit — HOLDS AND REPORTS: it
+seats nothing, supersedes nothing, writes nothing, and stays
+available under the live commander rather than replacing it. Two
+consequences follow and are ruled here rather than left implied: the
+firing machinery may not assert a supersession the board has not
+granted, and a retiring seat's tombstone reads its successor off the
+board instead of presuming a cockpit.
+
+**Why:** [D-051](#d-051--self-seat-birth) was written when the only
+two things a newborn cockpit could meet were A COCKPIT or NOTHING.
+The baton law
+([D-046](#d-046--flight-cockpit-the-control-tower-online)) has always
+named the DESK as a commanding seat, and flight 3's desk takeover
+made "a desk holds the baton" an ordinary state rather than an edge
+one — but nothing propagated that into the duty a cockpit performs
+at birth. The gap stayed invisible until a seat was born into it: the
+cockpit summoned 2026-08-05 read rule 1 literally, reported that it
+was being told to seat itself over a working desk, and refused ONLY
+because that board carried a warning hand-written before the fire.
+A safeguard that must be hand-written per fire is not a safeguard;
+this entry replaces it with a rule.
+
+**Alternatives rejected:**
+
+- **Leave the charter and warn on the board at each fire** — the
+  status quo that happened to hold. Rejected: the warning lives in
+  no ritual, so it depends on whoever fires remembering to write it,
+  and the failure is SILENT when they do not.
+- **Make the board's BATON line call a desk a "cockpit"** so the
+  existing two cases match. Rejected outright: it makes the board
+  lie about which kind of seat holds the baton in order to satisfy a
+  document that reads it. The board is the arbiter; the reader
+  bends.
+- **Let the middle case be a stray birth too** (archive me).
+  Rejected: a summoned seat under a live desk is not redundant — it
+  is a working seat the founder may want, and flight 4's own summon
+  test is the case in point. Holding costs nothing; discarding
+  throws away a seat that was deliberately raised.
+- **Split the five findings across five benches.** Rejected: four of
+  them are one box master, and every separate merge opens another
+  re-save window — a master change that never reaches its box fails
+  silently
+  ([D-064](#d-064--the-box-master-class-and-setup-entry-contract)).
+  The fifth is a workflow edit and is deliberately kept OUT of the
+  version bump for the mirror-image reason: a one-line YAML fix must
+  not wait on a manual paste.
+
+**Affects:** [D-051](#d-051--self-seat-birth) (clause 2, amended
+here and left otherwise intact) ·
+[the charter](../COCKPIT-CHARTER.md) (rules 1 and 8, and its v5
+row) · [HOME](../HOME.md#the-cockpits-api-paths--recovery-ladder)
+(R4b's tombstone copy, which the charter deliberately duplicates) ·
+`.github/workflows/summon.yml` (the payload's supersession claim) ·
+[the bench spec](specs/charter-cockpit-assumption.md) ·
+[IDEAS](../IDEAS.md) (the MASTER ITEM line, closed by this bench) ·
+[DASHBOARD](../DASHBOARD.md) (Needs-you gains the box re-save at the
+next ritual repaint — the board is never hand-edited) · this entry.

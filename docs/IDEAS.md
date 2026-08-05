@@ -173,55 +173,6 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   hand over the "exact one-liner, never improvised" and the record
   cannot supply one. (2026-08-04, flight 4's liftoff) →
   [SETUP §cloud accounts](SETUP.md#once-and-done--cloud-accounts)
-- ⏳ **MASTER ITEM** · THE CHARTER ASSUMES ITS SUCCESSOR AND ITS
-  PREDECESSOR ARE ALWAYS COCKPITS, and five findings from two
-  seats are all that one assumption. DELIBERATELY ONE LINE, against
-  this file's split-per-idea default: the fix is a box master, and a
-  master change that never reaches its box fails SILENTLY, so five
-  lines would invite five edits and five silent-failure windows. One
-  **v5** bump with a version-history row, one **box re-save** riding
-  [DASHBOARD](DASHBOARD.md) Needs-you until done. Each part is
-  verified against the charter text, not relayed:
-  **(a) 🔴 RULE 1 IS BLIND TO A LIVE DESK.** Its self-seat clause
-  fires when the board "names no live cockpit" — and a board reading
-  `CONTROL TOWER — work PC` names none, so a working control tower
-  falls into the SELF-SEAT branch; the stray-birth clause beside it
-  triggers only on a "FOREIGN live cockpit". Read literally, the
-  charter tells a summoned seat to take a live founder-driven desk's
-  baton. The 2026-08-05 summoned cockpit refused ONLY because that
-  board carried a hand-written warning; an ordinary board would have
-  been taken. Rule 1 needs a THIRD CASE: a live baton-holder of any
-  seat → hold and report.
-  **(b) 🟡 AND THE STRAY-BIRTH SENTENCE IS UNSPEAKABLE AGAINST A
-  DESK** — it is fixed text demanding the live seat's url, and a
-  desk has no session url; it also opens "A live cockpit already
-  holds this board", which is false of a desk. Same edit as (a).
-  **(c) 🔴 THE SUPERSESSION IS ASSERTED BY THE FIRING MACHINERY, NOT
-  DERIVED** — `.github/workflows/summon.yml` hardcodes "You
-  supersede the previous cockpit" into every payload, so rule 8's
-  SUCCESSOR DUTY orders a newborn seat to repaint a predecessor
-  landed·superseded when no predecessor exists. **THIS HALF IS NOT A
-  CHARTER EDIT** and must not be bumped into v5 or wait on the
-  re-save: drop the claim from the workflow, and let the board rule
-  on supersession, which it already does
-  ([D-051](record/DECISIONS.md#d-051--self-seat-birth)).
-  **(d) 🟡 NOTHING ROUTES A NEWBORN COCKPIT TO ITS IDENTITY STEP.**
-  The 2026-08-05 seat booted as `Claude <noreply@anthropic.com>`;
-  [machine-setup](skills/machine-setup.md) says a cloud seat must
-  set its own repo-local identity ONCE PER SEAT BIRTH, but a cockpit
-  reads the charter, and the charter's rule 1 sends it to LAWS, the
-  board, open PRs and memories — never there.
-  **(e) 🟡 THE TOMBSTONE LINE LIES UNDER DESK TAKEOVER**, the
-  original of this item: rule 8's fixed final message promises "a
-  replacement cockpit has been summoned and will greet you; the
-  board carries its link", and under a desk takeover the DESK took
-  the baton and no such cockpit exists. Flight 3's retiring seat
-  REFUSED TO SPEAK IT — the right call, and the proof: a seat that
-  may write nothing caught a false sentence in its own final message
-  and had no way to fix it.
-  For the fix bench. (2026-08-04, flight 3's cockpit at retirement ·
-  2026-08-05, the summoned cockpit) →
-  [LAWS §Knowledge & tracking](LAWS.md#knowledge--tracking)
 - ⏳ A SUPERSEDED SEAT HAS NO CHANNEL BUT SPEECH — it may write no
   board by [land](skills/land.md) Scenario 2's carve-out, so any
   finding it is holding at retirement can reach the founder only in
@@ -658,6 +609,20 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
 The outcome ledger — one line each, newest first. A closed idea
 keeps its answer, never its narrative.
 
+- 🟢 The charter assumed its successor and its predecessor were
+  always cockpits — FIXED at **v5**. Rule 1 now matches THREE cases
+  against THE BATON, the new middle one being a live baton-holder
+  that is NOT a cockpit (a desk) → hold and report; it also refuses
+  a birth prompt's supersession claim, routes the newborn to its
+  git-identity step, and drops the url its stray-birth line assumed.
+  Rule 8's tombstone reads its successor off the board and its
+  successor duty is scoped to cockpits. `summon.yml` stopped
+  asserting the supersession — kept OUT of the version bump so a
+  one-line YAML fix would not wait on a manual box paste. The
+  standing choice is
+  [D-075](record/DECISIONS.md#d-075--the-self-seat-duty-gains-a-live-desk-case),
+  which amends D-051's two-case self-seat duty. →
+  [#314](https://github.com/wsher0901/roam/pull/314)
 - 🟢 The deterministic freeze drill — BUILT AND FLOWN as flight 4.
   The bench held at a checkpoint for its full fifteen minutes and
   the apparatus worked; the window closed unused because the
