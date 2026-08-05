@@ -6,24 +6,31 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-08-05 · 15:42 UTC by the summon harvest · from work PC
-PHASE 1 IS CLOSED — clean floor, and one 🔴 it found on its way out ·
+Painted 2026-08-05 · 17:16 UTC by the board repair · from work PC
+ONE BENCH STANDS AT THE GATE — the charter fix, awaiting your review ·
 needs-you 2 · git outranks this board.
 How to read it → [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
 
-1. 🔴 **AUTHORIZE THE CHARTER FIX BENCH** — say the word at this
-   desk, whenever you're ready to spend a bench on it. The charter
-   as it stands tells a summoned cockpit to take a LIVE desk's
-   baton; the seat fired 08-05 refused only because that board
-   carried a hand-written warning. Until the bench lands, every
-   cockpit birth is exposed and the warning has to be hand-written
-   again. One v5 bump + one box re-save, plus a separate
-   `summon.yml` edit that does not wait on the re-save.
-   (since 08-05)
-   → its line in [IDEAS](IDEAS.md) ·
+1. 🔴 **REVIEW THE CHARTER FIX, THEN THE MERGE WORD** — in the Web
+   chat say "review" for
+   [#314](https://github.com/wsher0901/roam/pull/314), then the word
+   here. It is a SELF-AUTHORED diff (this desk wrote the payload and
+   ran ship), so no-solo-approval requires the external eye and the
+   subagent critic cannot stand in for it. UNTIL IT MERGES THE
+   EXPOSURE IS OPEN: the charter still tells a summoned cockpit to
+   take a live desk's baton, and the only thing that has ever
+   stopped one is a warning hand-written into this board before the
+   fire. (since 08-05)
+   → [#314](https://github.com/wsher0901/roam/pull/314) ·
    [the charter](COCKPIT-CHARTER.md)
+
+   AFTER THE MERGE, ONE MORE ACT IS OWED and it will take its own
+   line: the **box re-save** at claude.ai/code/routines. The gate
+   report printed the complete v5 text for it. A master change that
+   never reaches its box fails SILENTLY, which is the whole reason
+   that duty rides Needs-you.
 2. 🟡 **RULE PHASE 2'S SCOPE** — all 66 chronicle stories, or the
    load-bearing dozen. The standing order says phase 2 opens on
    your ruling, and phase 1 closed today, so nothing else is
@@ -49,14 +56,27 @@ paragraph is the repair.
 
 ## In flight
 
-Nothing flying, no fleet at ground. Clean floor — the summoned seat
-landed 2026-08-05 on the founder's word, its findings harvested
-first.
+No lanes and no fleet at ground. One bench, this desk's own, standing
+at THE GATE.
+
+| Who | For | State | Move |
+|---|---|---|---|
+| the commander's bench · [charter-cockpit-assumption](https://github.com/wsher0901/roam/pull/314) | teaching the charter that a DESK can hold the baton — a v5 bump, and a D-075 that does not exist on main until this merges | 🟡 at the gate · CI green on `fdb32a8` · 11 critic findings repaired | the founder's "review" in the Web chat, then the merge word here |
+
+**THE PREVIOUS PAINT CALLED THIS FLOOR CLEAN WHILE THIS BENCH WAS
+BEING BUILT ON IT**, and asked the founder to authorize a bench that
+was already authorized, built and standing at the gate. Repaired
+here. It is the SECOND time this sitting the board went stale under
+a working desk — the first was the baton line — and both have the
+same shape: a ritual repaints on entry and exit, and the middle of a
+long sitting belongs to no ritual. Filed as an inbox line.
 
 ## Working on
 
-- NOTHING IN FLIGHT. Phase 1 closed 2026-08-05; phase 2 opens on
-  your scope ruling, and one 🔴 stands ahead of it in Needs you.
+- THE CHARTER FIX BENCH, at the gate since 2026-08-05 — born from
+  the summon test's 🔴 on the founder's "go", and the first bench of
+  the post-phase-1 floor. Phase 2 still opens on your scope ruling,
+  behind it.
 - FLIGHT 4 OF THE TEST PROGRAM — THE FAILURE DRILL, COMPLETE. All
   three things it put under test have answers: the RECOVERY LADDER
   was walked and carried (plus one uncommanded failure it does not
@@ -331,6 +351,6 @@ S3–S8 · queued in order · 0/22
 
 ## Next
 
-The summoned cockpit reports, you say **"land"**, and phase 1
-closes. Phase 2 — the vault — opens on your scope ruling: all 66
-chronicle stories, or the load-bearing dozen.
+Review [#314](https://github.com/wsher0901/roam/pull/314) in the Web
+chat, then the merge word here; the box re-save follows. Then phase
+2 opens on your scope ruling.
