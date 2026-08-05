@@ -6,17 +6,28 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-08-05 · 13:55 UTC by the summon test · from work PC
-SUMMON FIRED AND THE SEAT IS UP — the desk still holds the baton ·
-needs-you 1 · git outranks this board. How to read it →
-[HOME §Reading the board](HOME.md#reading-the-board)
+Painted 2026-08-05 · 14:36 UTC by the summon harvest · from work PC
+THE SUMMON TEST REPORTED — five findings, one of them a 🔴 that
+would have cost a baton · needs-you 2 · git outranks this board.
+How to read it → [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
 
-1. ⚪ **RETIRE THE SUMMONED COCKPIT** — say **"land"** in its
-   session once it has reported. It is holding by design and costs
-   nothing while it waits; phase 1 closes when it retires.
+1. 🔴 **AUTHORIZE THE CHARTER FIX BENCH** — say the word at this
+   desk, whenever you're ready to spend a bench on it. The charter
+   as it stands tells a summoned cockpit to take a LIVE desk's
+   baton; the seat fired 08-05 refused only because that board
+   carried a hand-written warning. Until the bench lands, every
+   cockpit birth is exposed and the warning has to be hand-written
+   again. One v5 bump + one box re-save, plus a separate
+   `summon.yml` edit that does not wait on the re-save.
    (since 08-05)
+   → its line in [IDEAS](IDEAS.md) ·
+   [the charter](COCKPIT-CHARTER.md)
+2. ⚪ **RETIRE THE SUMMONED COCKPIT** — say **"land"** in its
+   session. It has REPORTED (five findings, all harvested) and is
+   holding by design; it costs nothing while it waits, and phase 1
+   closes when it retires. (since 08-05)
    → [the summoned seat](https://claude.ai/code/session_01NrekB1F24e5hSdAxeXQ73k)
 
 ## The baton
@@ -42,7 +53,16 @@ No lanes. One summoned seat, up and holding.
 
 | Who | For | State | Move |
 |---|---|---|---|
-| [cockpit · summoned](https://claude.ai/code/session_01NrekB1F24e5hSdAxeXQ73k) | flight 4's SUMMON TEST — the last item phase 1 owes | 🟢 fired 2026-08-05 13:54:18 UTC, session returned | read this section, then REPORT — do not seat. Hold. Retire on the founder's "land" (MODE R). |
+| [cockpit · summoned](https://claude.ai/code/session_01NrekB1F24e5hSdAxeXQ73k) | flight 4's SUMMON TEST — the last item phase 1 owes | 🟢 fired 13:54:18 UTC · REPORTED five findings · holding | retire it with "land" (MODE R). Its findings are harvested; nothing further is owed by it. |
+
+**IT DID THE JOB IT WAS FIRED FOR, AND THE BEST OF IT WAS A
+REFUSAL.** The seat held, refused to seat itself, refused the
+supersession its own payload asserted, and returned five findings —
+four of which are defects in the charter that briefs every cockpit,
+found by the first seat ever born from the SAVED BOX rather than
+from a pasted master. It wrote no board, so its only channel was
+speech; the founder relayed it, and every claim was re-verified
+against the charter and workflow text before being written down.
 
 **READ THIS FIRST IF YOU ARE THE SUMMONED COCKPIT — it is addressed
 to you, and the payload that woke you is a POINTER, not a plan.**
@@ -214,14 +234,26 @@ one phase per line:
   repaints only when it judges the board stale, and a seat that has
   just claimed the baton has already made the board stale by
   claiming it. → its line in [IDEAS](IDEAS.md)
-- ⏳ **MASTER ITEM QUEUED** — THE TOMBSTONE LINE LIES UNDER DESK
-  TAKEOVER. The charter's rule 8 makes a retiring seat announce a
-  replacement cockpit that a desk takeover never summons; the
-  retiring seat refused to speak it, correctly. The fix is a
-  charter edit, so it carries the box-master duty: **v5** plus a
-  **box re-save**, and the re-save takes a Needs-you line the
-  moment that edit merges — not before, since there is nothing yet
-  to re-save. → its line in [IDEAS](IDEAS.md)
+- 🔴 **MASTER ITEM QUEUED, AND THE SUMMON TEST MADE IT URGENT** —
+  THE CHARTER ASSUMES ITS SUCCESSOR AND ITS PREDECESSOR ARE ALWAYS
+  COCKPITS. Five findings from two seats are all that one
+  assumption, now folded into a single inbox line: **rule 1 is
+  blind to a live desk** — its self-seat clause fires when the
+  board "names no live cockpit", and a board reading
+  `CONTROL TOWER — work PC` names none, so read literally the
+  charter told the summoned seat to TAKE A LIVE DESK'S BATON. It
+  refused only because that board carried a hand-written warning;
+  an ordinary board would have been taken. Plus: the stray-birth
+  sentence demands a url a desk does not have · the tombstone
+  promises a successor cockpit a desk takeover never summons ·
+  nothing routes a newborn cockpit to its git-identity step · and
+  `summon.yml` HARDCODES "You supersede the previous cockpit" into
+  every payload, so rule 8 orders a repaint of a predecessor that
+  does not exist. THE FIX IS ONE **v5** BUMP PLUS ONE **BOX
+  RE-SAVE** (the re-save takes a Needs-you line the moment that
+  edit merges, not before) — EXCEPT the `summon.yml` half, which is
+  a workflow edit, not a charter edit, and must not wait on the
+  re-save. → its line in [IDEAS](IDEAS.md)
 - ⏳ A SUPERSEDED SEAT HAS NO CHANNEL BUT SPEECH — it may write no
   board, so a finding it holds at retirement reaches you only in
   its final message, and the tombstone is fixed text. Unruled: may
