@@ -1,33 +1,34 @@
 ---
-type: memory
-id: ship-synthesis
-updated: 2026-08-05 19:15 UTC · ship · critic round · work PC
+type: history
+slug: ship-synthesis
+shipped: 2026-08-05 19:16
+pr: 320
 ---
 
 # ship-synthesis — making the ending rule something a ritual performs
 
 ## Status
 
-claimed — work PC control tower, 2026-08-05
+complete, awaiting merge — 2026-08-05
 
 Born bench-first on the founder's word: **the synthesis-at-weld
 bench, now, before any story fleet.** Self-authored payload, so an
 external Web review is required before the merge word
-([no-solo-approval](../LAWS.md#workflow-non-negotiable)).
+([no-solo-approval](../../../../LAWS.md#workflow-non-negotiable)).
 
 ## What this task is
 
-[D-059](../record/DECISIONS.md#d-059--the-chronicle-layer)'s ENDING
+[D-059](../../../DECISIONS.md#d-059--the-chronicle-layer)'s ENDING
 RULE says a later fix to an item is INCORPORATED into that item's
 story and the ending rewritten AT THAT WELD. **Nothing performs
-it.** [ship](../skills/ship.md) has no such step, so the rule is a
+it.** [ship](../../../../skills/ship.md) has no such step, so the rule is a
 convention a seat must remember unprompted.
 
 The chronicle pilot already showed what that produces: land's census
 row read "no recorded run" while the ritual had run four times, and
 it sat stale for a week because no weld was ever obliged to touch
 it. This bench gives ship the step, and the contract is
-[the spec](../record/specs/ship-synthesis.md).
+[the spec](../../../specs/ship-synthesis.md).
 
 ## Pending issues
 
@@ -41,13 +42,50 @@ founder can contradict it.
 ## Left / idle
 
 Plan steps 1 and 2 are done — the step is in
-[ship §7](../skills/ship.md#7--on-approval--the-atomic-weld) and the
+[ship §7](../../../../skills/ship.md#7--on-approval--the-atomic-weld) and the
 staging list is widened. **STEP 3 RUNS AT THIS BENCH'S OWN WELD:**
 the step gets exercised against the ship ritual itself, and which of
 the three cases fires — plus what it cost — is recorded here before
 the gate report goes out.
 
 ## The story
+
+2026-08-05 19:16 UTC · THE EXTERNAL REVIEW — PASS — AND THE STEP RAN
+ON ITS OWN WELD · work PC
+
+**The Web review returned PASS on `974c592`**, the load-bearing
+approval here since the payload was written by the desk running ship
+([no-solo-approval](../../../../LAWS.md#workflow-non-negotiable)). Its
+verdict: per-item matching verified · the three cases plus a
+now-discriminated escape · **the seven-input enumeration confirmed
+with no state matching two cases** — the exhaustiveness check itself
+checked · the case-2 split correctly defers the founder's open
+settle-weld ruling · HOME untouched · the ATLAS fourth-surface gap
+filed per the figure law · gates re-run independently, 5,025 links
+zero broken.
+
+**PLAN STEP 3 — THE STEP'S FIRST EXERCISE, ON THIS BENCH'S OWN
+WELD.** It named TWO items, which is the cardinality the critic
+added and the first thing that would have broken under the original
+text:
+
+| Item | State at the census | Case | Act |
+|---|---|---|---|
+| `ship — the closing ritual` | row, no story | **2 · advance** | ending cell updated — the eight-step close now names synthesis |
+| `the chronicle layer` | row, no story | **2 · advance** | ending cell updated — its deferred step is delivered |
+
+**Cost: two cell edits, about two minutes**, and the lookup was
+unambiguous both times — the census names items the way a bench
+thinks of them, so "what did this weld change?" mapped straight onto
+rows without guessing. NEITHER ITEM WAS SETTLED by this weld, so the
+half of case 2 that defers to the founder's ruling did NOT fire, and
+remains unexercised. Case 1 (incorporate into a written story) and
+case 3 (add a row) are also unexercised — the step's first run
+touched one of its four branches.
+
+That is the honest limit of this exercise: it proves the step is
+PERFORMABLE and that per-item matching works, and it proves nothing
+about the three branches that did not fire.
 
 2026-08-05 19:15 UTC · THE CRITIC ROUND — AND THE SAME CLASS OF HOLE
 FOR THE THIRD BENCH RUNNING · work PC — seven findings, one 🔴, all
@@ -62,7 +100,7 @@ in the repo and both of them mine. So a seat reaching that state had
 two sanctioned opposite outcomes and no test to choose between them,
 which makes the escape a general opt-out rather than a narrow one.
 THE REPAIR: the escape is now keyed on the payload naming NO ITEM AT
-ALL in [D-059](../record/DECISIONS.md#d-059--the-chronicle-layer)
+ALL in [D-059](../../../DECISIONS.md#d-059--the-chronicle-layer)
 ruling 1's sense — a typo sweep, a dependency bump — and case 3 on
 an item you CAN name. The step now cites ruling 1's definition,
 which it never did although that definition IS the lookup.
@@ -101,12 +139,12 @@ check the last three benches each needed and none performed on
 itself.
 
 **The five others.** The step assumed ONE item per weld, where real
-welds touch several — [D-062](../record/DECISIONS.md#d-062--the-wake-rule-generalized)
+welds touch several — [D-062](../../../DECISIONS.md#d-062--the-wake-rule-generalized)
 moved the tombstone rule across three items at once; it now says
 list the items and run the match once per item · case 3 falsified
 the census's own stated counts and stamp, and specified only one of
 its five columns · a Done-means box could only be ticked AFTER §7,
-which [ship §2](../skills/ship.md)'s gate must halt on — re-cut as a
+which [ship §2](../../../../skills/ship.md)'s gate must halt on — re-cut as a
 pre-gate COMMITMENT · "rewrite its ending blockquote" under-described
 the act, leaving the dated stamp, the frontmatter `updated:` line and
 the closing section free to contradict the new ending, which is the
@@ -114,17 +152,17 @@ very failure this bench exists to end · and the no-match note lived
 only in a commit message, which no shelf bench reads, so it now goes
 to the history file too.
 
-**ONE FINDING FILED RATHER THAN FIXED.** [ATLAS](../ATLAS.md)'s
+**ONE FINDING FILED RATHER THAN FIXED.** [ATLAS](../../../../ATLAS.md)'s
 file-flow figure draws which ritual writes each surface and notes
 "Ship appears three times for exactly that reason" — this bench
 gives ship a FOURTH written surface, `docs/chronicle/`, which ATLAS
 does not mention anywhere. The gap originates with
-[D-059](../record/DECISIONS.md#d-059--the-chronicle-layer) rather
+[D-059](../../../DECISIONS.md#d-059--the-chronicle-layer) rather
 than here, and re-rendering a designed figure is its own bench under
 the figure law. Surfaced at the gate.
 
 2026-08-05 19:06 UTC · THE STEP IS WRITTEN, AND HOME HAD ALREADY
-ASSIGNED THE DUTY · work PC — [ship §7](../skills/ship.md#7--on-approval--the-atomic-weld)
+ASSIGNED THE DUTY · work PC — [ship §7](../../../../skills/ship.md#7--on-approval--the-atomic-weld)
 now carries the synthesis step, inside the atomic commit, with the
 three cases and the no-match escape.
 
@@ -134,7 +172,7 @@ design certain rather than merely defensible". THE CRITIC SHOWED IT
 CUTS BOTH WAYS and the overclaim is corrected below rather than
 removed.)* Its files table says the writer is "the
 weld that settles or advances an item", and its
-[§Where information goes](../HOME.md#where-information-goes)
+[§Where information goes](../../../../HOME.md#where-information-goes)
 routing table says "the weld that settles the item writes its
 story · the weld that advances it — incorporated, the ending
 rewritten in place; never a second story". So the routing law had
@@ -174,11 +212,11 @@ THE SWEEP RAN BEFORE THE NOT-A-DECISION NOTE WAS WRITTEN, because
 the charter bench made that claim and was corrected by its own
 sweep. Result: no D-number fixes ship's step LIST — the decisions
 naming ship's sections change things INSIDE them
-([D-057](../record/DECISIONS.md#d-057--the-record-shelf) renamed
+([D-057](../../../DECISIONS.md#d-057--the-record-shelf) renamed
 §7's weld destination,
-[D-044](../record/DECISIONS.md#d-044--the-pre-gate-critic-goes-live)
+[D-044](../../../DECISIONS.md#d-044--the-pre-gate-critic-goes-live)
 put the critic in §6) — and
-[D-059](../record/DECISIONS.md#d-059--the-chronicle-layer) does not
+[D-059](../../../DECISIONS.md#d-059--the-chronicle-layer) does not
 merely permit this bench, it NAMES it. Building what a decision
 commissioned is not a new decision. The claim is now evidenced
 rather than assumed, which is the whole difference.
@@ -193,14 +231,14 @@ match is worse than one that records a miss.
 
 ## Where to look
 
-- [the spec](../record/specs/ship-synthesis.md) — the three cases,
+- [the spec](../../../specs/ship-synthesis.md) — the three cases,
   the ruling-2 reading, and the sweep that backs the not-a-decision
   note.
-- [D-059](../record/DECISIONS.md#d-059--the-chronicle-layer) — the
+- [D-059](../../../DECISIONS.md#d-059--the-chronicle-layer) — the
   six rulings, and the sentence that commissioned this bench.
-- [ship §7](../skills/ship.md#7--on-approval--the-atomic-weld) — the
+- [ship §7](../../../../skills/ship.md#7--on-approval--the-atomic-weld) — the
   atomic weld, where the step goes.
-- [the pilot's report](../record/history/workshop/definition/chronicle-pilot.md)
+- [the pilot's report](../definition/chronicle-pilot.md)
   — the format the step maintains, and the stale-ending failure that
   argues for it.
-- [the census](../chronicle/INDEX.md) — 66 rows, 3 written.
+- [the census](../../../../chronicle/INDEX.md) — 66 rows, 3 written.

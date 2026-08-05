@@ -2,12 +2,12 @@
 type: spec
 id: ship-synthesis
 title: Ship gains the synthesis-at-weld step
-status: open
+status: shipped
 stage: workshop
 branch: feat/ship-synthesis
-pr: —
+pr: 320
 opened: 2026-08-05
-shipped: —
+shipped: 2026-08-05
 ---
 
 # ship-synthesis — making the ending rule something a ritual performs
