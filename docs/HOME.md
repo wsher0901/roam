@@ -824,24 +824,47 @@ tombstone.
 cockpit by accident.
 
 - **TOMBSTONE** — once you have landed superseded, your FINAL
-  message is exactly this, alone, with nothing after it. THE
-  CHARTER CARRIES THIS LINE TOO, deliberately: a superseded
-  session must be able to say it without reading anything.
+  message is this, alone, with nothing after it. THE CHARTER
+  CARRIES IT TOO, deliberately: a superseded session must be able
+  to say it WITHOUT READING ANYTHING BUT THE BOARD — which rule 8
+  has already put in its hands, since the wake-rule reads the board
+  first. The opening and the close
+  are fixed; THE MIDDLE LINE IS READ OFF THE BOARD, because a
+  successor is not always a cockpit
+  ([D-075](record/DECISIONS.md#d-075--the-self-seat-duty-gains-a-live-desk-case)).
 
   ```text
-  ⛔ LANDED — SUPERSEDED. Do not command this session. A
-  replacement cockpit has been summoned and will greet you;
-  the board carries its link. Safe to archive me.
+  ⛔ LANDED — SUPERSEDED. Do not command this session.
+  A replacement cockpit has been summoned and will greet you;
+  the board carries its link.
+  Safe to archive me.
   ```
+
+  When the baton went to a DESK instead — a desk takeover summons
+  no cockpit — the middle line reads:
+
+  ```text
+  The control tower at <the board's seat> holds the baton now.
+  ```
+
+  NEVER SPEAK THE COCKPIT SENTENCE AGAINST A DESK: it promises a
+  greeting the board cannot deliver. Flight 3's retiring seat hit
+  exactly this and refused to speak the line, correctly — a seat
+  that may write nothing caught a false sentence in its own last
+  message and had no way to fix it.
 
 - **REFUSAL GUARD** — on ANY founder message after that,
   re-derive from origin; if the board's seat stamp is not yours,
   reply with the tombstone line and NOTHING ELSE — no work, no
   writes.
-- **SUCCESSOR DUTY** — if you ARE the replacement, your first act
-  after deriving state is a board repaint that marks the
-  predecessor landed · superseded with its session URL and seats
-  you. The board must always name exactly one live cockpit. Your
+- **SUCCESSOR DUTY — COCKPITS ONLY** — if you ARE the replacement
+  cockpit, your first act after deriving state is a board repaint
+  that marks the predecessor landed · superseded with its session
+  URL and seats you. If the successor is a DESK the duty is not
+  yours: the desk writes that board itself, by
+  [pickup](skills/pickup.md#the-desk-takeover--a-live-cockpit-holding-decisions)'s
+  desk takeover. Either way the board must always name exactly one
+  live commanding seat. Your
   OWN url, here and at any seating, is derived from the session
   env, never scraped from a console:
   `https://claude.ai/code/${CLAUDE_CODE_REMOTE_SESSION_ID/#cse_/session_}`
