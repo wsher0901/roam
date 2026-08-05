@@ -43,12 +43,15 @@ The contract, the five-slice split, and why slice D goes first:
 **None blocking.** Three things are owed by the WORKSHOP rather than
 by this bench, listed so they cannot go missing:
 
-1. **The board still carries the settle-weld question as Needs-you
-   #1** — asking the founder to rule the fork that
-   [D-077](../record/DECISIONS.md#d-077--shelf-benches-and-the-settling-weld-writes)
-   ruling 2 has already ruled and this bench has now implemented.
-   A lane may never write [DASHBOARD](../DASHBOARD.md), so it is
-   flagged here for the next baton-holder repaint.
+1. **The board's Needs-you #1 — "GIVE #322 A COLD SEAT" — is
+   SATISFIED by this flight and needs a repaint to say so.** It was
+   written before this lane claimed the bench. (The settle-weld
+   question this memory first flagged here was already cleared by
+   [#323](https://github.com/wsher0901/roam/pull/323), merged while
+   this bench flew; that board repair is correct as it stands and
+   is merged into this branch.) A lane may never write
+   [DASHBOARD](../DASHBOARD.md), so this is for the next
+   baton-holder repaint.
 2. **The cloud-seat identity step has no mechanism** — see
    §Deviations. A finding, not a fix; the fix is a founder call.
 3. **The re-ruling of the remaining shelves** is the founder's, on

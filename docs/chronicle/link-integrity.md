@@ -8,7 +8,7 @@ updated: 2026-08-05 · written · cloud lane
 # Link integrity — the weave rule and the checker that defends it
 
 > **CURRENT ENDING (2026-08-05).** The weave rule is law and the
-> checker is a required CI gate: **5,208 internal links across 257
+> checker is a required CI gate: **5,203 internal links across 257
 > markdown files, 0 broken**, derived by running
 > `scripts/check-links.mjs` on this branch's tip. It began as repo
 > hygiene, became a rule about how the corpus refers to itself, and
@@ -44,7 +44,7 @@ exits nonzero listing every failure.
 The pairing is the point. A convention that says "always link" and
 has no gate is a convention that decays silently at exactly the rate
 the corpus grows. The rule states the intent; the checker is why the
-intent survives contact with 249 files.
+intent survives contact with a corpus this size.
 
 ## What raised it
 
@@ -110,7 +110,7 @@ amount of care at the editing site can see that.
 ## Where it stands, and the one honest caveat
 
 The gate is live, required, and quoted at every gate report. Run on
-this branch's tip it returns **5,208 links across 257 files, 0
+this branch's tip it returns **5,203 links across 257 files, 0
 broken**.
 The count has roughly doubled since the record-shelf weld, which is
 the useful way to read it: the corpus grew substantially and the
