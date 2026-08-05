@@ -2,12 +2,12 @@
 type: spec
 id: flight-4-freeze
 title: The freeze drill — a bench that holds so the fence meets a live worker
-status: open
+status: shipped
 stage: workshop
 branch: docs/flight-4-freeze
-pr: —
+pr: 303
 opened: 2026-08-04
-shipped: —
+shipped: 2026-08-05
 ---
 
 # flight-4-freeze — the drill that holds at a checkpoint

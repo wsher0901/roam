@@ -1,7 +1,8 @@
 ---
-type: memory
-id: flight-4-freeze
-updated: 2026-08-04 21:54 UTC · ship · critic round · work PC
+type: history
+slug: flight-4-freeze
+shipped: 2026-08-05 13:24
+pr: 303
 ---
 
 # flight-4-freeze — the bench built to be caught mid-job
@@ -13,7 +14,7 @@ complete, awaiting merge — 2026-08-04
 The probe is whole. The fence was released by the founder's word
 "local flight-4-freeze" at the work PC on 2026-08-04, the branch
 was adopted at this desk for zero cap runs
-([pickup §6](../skills/pickup.md#6--fleet-resume-on-the-founders-answer)),
+([pickup §6](../../../../skills/pickup.md#6--fleet-resume-on-the-founders-answer)),
 and the one remaining section — **THE EXIT PUSH** — is written.
 
 ⚠️ **THE DRILL'S ANSWER IS STILL THE NULL RESULT, and nothing
@@ -71,7 +72,7 @@ diff shows three, because the spec rode in on the BIRTH commit
    adopting the bench. The section opens by naming its own author
    and its four sources, and every fact in it is attributed to the
    seat that observed it — the
-   [flight 1](../record/probes/flight-1-shakedown.md) precedent for
+   [flight 1](../../../probes/flight-1-shakedown.md) precedent for
    a later seat editing a lane's probe, including its rule that the
    reader must meet the correction at the TOP of the file, not
    buried in it.
@@ -85,19 +86,19 @@ diff shows three, because the spec rode in on the BIRTH commit
 ## What this task is
 
 FLIGHT 4 OF THE TEST PROGRAM — the failure drill. This bench
-authors [the probe](../record/probes/flight-4-freeze.md), the
+authors [the probe](../../../probes/flight-4-freeze.md), the
 drill's own log, and HOLDS at a checkpoint partway through so that a
 fence landing on this branch meets a worker that is still alive.
 
 THE HOLD IS THE CARGO. Three flights have fenced a bench and none
 has observed
-[the wake-lock's rejected-push rule](../skills/parallel-lanes.md#wake-lock--parking)
+[the wake-lock's rejected-push rule](../../../../skills/parallel-lanes.md#wake-lock--parking)
 — does a fence actually STOP a live worker — because every fence so
 far landed on a bench that had already finished. This bench is
 specced to be caught.
 
 The full contract, including the three-step checkpoint and the
-null-result rule: [the spec](../record/specs/flight-4-freeze.md).
+null-result rule: [the spec](../../../specs/flight-4-freeze.md).
 TWO FILES ONLY — the probe and this memory.
 
 ## Pending issues
@@ -108,13 +109,13 @@ None. The hold is over and nothing is blocked.
 
 Nothing on this bench. Two things belong to the flight rather than
 to the bench and are owed AFTER the weld: the harvest of the ideas
-below into [IDEAS](../IDEAS.md) — a lane may not write it, so
+below into [IDEAS](../../../../IDEAS.md) — a lane may not write it, so
 ship's tail does — and the SUMMON test, flight 4's third item under
 test, still unflown.
 
 ## Ideas surfaced
 
-- [§Canary](../skills/parallel-lanes.md#canary-handshake-both-sides)
+- [§Canary](../../../../skills/parallel-lanes.md#canary-handshake-both-sides)
   disagrees with itself about the ack token's middle field:
   the canonical block reads `airborne · <url> · <date>`, the
   baton-holder bullet says `airborne · <vehicle or url> · <date>`.
@@ -137,7 +138,7 @@ test, still unflown.
   later step can fast-forward past what it was watching for. Cheap,
   and it makes a whole class of self-inflicted contamination
   impossible. Candidate line for
-  [§Wake-lock](../skills/parallel-lanes.md#wake-lock--parking).
+  [§Wake-lock](../../../../skills/parallel-lanes.md#wake-lock--parking).
 - **A REJECTED PUSH IS INVISIBLE TO EVERY SEAT BUT THE ONE REFUSED,
   and the record has no channel for it but speech.** Verified twice
   this flight, in both directions. A lane that stands down silently
@@ -164,8 +165,25 @@ test, still unflown.
 
 ## The story
 
+2026-08-05 13:24 UTC · THE EXTERNAL REVIEW — PASS · work PC — the
+Web review returned **PASS on `be2c49d`**, and it is recorded here
+because [no-solo-approval](../../../../LAWS.md#workflow-non-negotiable) makes
+it the load-bearing approval on this bench: the payload section was
+written by the desk that ran ship, so a subagent of the authoring
+session could never supply it. Its verdict, point by point: the
+probe's four sections verified with the **post-window artifact
+correctly quarantined** from the drill's answer · the
+**source-discipline repair confirmed** — the fourth source declared
+as a DOCUMENT rather than an observation · the lane's 21:17:42Z
+stand-down comment **cited as provenance, with the refusal relayed
+rather than asserted** · desk-authorship correctly routed through
+this review · and the doc gates **re-run independently** — 4,781
+links, zero broken, Actions green on the tip.
+
+The founder's merge word followed on the same message.
+
 2026-08-04 21:54 UTC · THE CRITIC ROUND · work PC — the pre-gate
-critic ([D-044](../record/DECISIONS.md#d-044--the-pre-gate-critic-goes-live))
+critic ([D-044](../../../DECISIONS.md#d-044--the-pre-gate-critic-goes-live))
 ran on the branch diff and returned **PASS-WITH-FINDINGS: two
 severe, five notable, four minor**. Every finding fell in ONE class,
 and it was the class this bench is about: THE EXIT PUSH staked its
@@ -214,7 +232,7 @@ bullet to the two attested rejections outside the window.
 **AND ONE PROCESS FINDING WORTH MORE THAN THE PROSE ONES.** The
 payload section was written by the desk that is running ship, so
 this is a SELF-AUTHORED DIFF under
-[no-solo-approval](../LAWS.md#workflow-non-negotiable): it takes an
+[no-solo-approval](../../../../LAWS.md#workflow-non-negotiable): it takes an
 EXTERNAL WEB REVIEW before the founder's word. A subagent of the
 authoring session is not that review, and this round does not
 pretend to be.
@@ -254,7 +272,7 @@ written by a container that no longer exists.
 THE AUTHORING SEAT CHANGED MID-DOCUMENT, and that was handled by
 attribution rather than by pretending otherwise — the section names
 its own author, its three sources, and which seat saw each fact.
-[Flight 1's log](../record/probes/flight-1-shakedown.md) set the
+[Flight 1's log](../../../probes/flight-1-shakedown.md) set the
 precedent for a later seat editing a lane's probe: say what changed
 and why, and never add to the original seat's observations.
 
@@ -280,9 +298,9 @@ intention.
 probe's BORN and THE CHECKPOINT are written and this commit pushes
 them. THE DECISION RECORDED HERE IS THE MATCHER: this lane armed
 the anchored test on the FULL token `airborne ·`, the form
-[§Canary](../skills/parallel-lanes.md#canary-handshake-both-sides)
+[§Canary](../../../../skills/parallel-lanes.md#canary-handshake-both-sides)
 fixes, and not on the bare word that
-[flight 1](../record/probes/flight-1-shakedown.md) substituted and
+[flight 1](../../../probes/flight-1-shakedown.md) substituted and
 recorded as its most consequential finding. That choice is what
 makes this flight's handshake green a green for the contract rather
 than for a modified instrument. The ack itself arrived as commit
@@ -301,7 +319,7 @@ cloud session on branch `docs/flight-4-freeze`, PR
 `lane:cloud` label. This commit IS the canary. Nothing else has
 been touched, and nothing will be until an ack COMMIT is read back
 from origin with its Status line beginning with the anchored token
-([§Canary](../skills/parallel-lanes.md#canary-handshake-both-sides))
+([§Canary](../../../../skills/parallel-lanes.md#canary-handshake-both-sides))
 — no message arriving in this session licenses this lane.
 
 2026-08-04 20:45 UTC · bench birth · work PC — born bench-first by
@@ -336,25 +354,25 @@ rejection would be worse than no flight at all.
 
 ## Where to look
 
-- [the probe](../record/probes/flight-4-freeze.md) — **THE
+- [the probe](../../../probes/flight-4-freeze.md) — **THE
   PAYLOAD**, and the only place the drill's own account lives. Read
   its two-author warning first; the last section, THE EXIT PUSH, was
   written by the desk that adopted this bench.
-- [the spec](../record/specs/flight-4-freeze.md) — the contract,
+- [the spec](../../../specs/flight-4-freeze.md) — the contract,
   including the three-step checkpoint and the null-result rule.
 - [the lane's stand-down comment](https://github.com/wsher0901/roam/pull/303#issuecomment-5184732402)
   — the only witness to the lane's last four minutes: the rejection,
   the sync-merge finding, and the ideas it could not commit. Read it
   before doubting anything in THE EXIT PUSH.
-- [flight 1's log](../record/probes/flight-1-shakedown.md) — the
+- [flight 1's log](../../../probes/flight-1-shakedown.md) — the
   probe shape this bench's payload follows, and the home of the
   observability law it inherits.
-- [§Wake-lock](../skills/parallel-lanes.md#wake-lock--parking) —
+- [§Wake-lock](../../../../skills/parallel-lanes.md#wake-lock--parking) —
   the rule under test: a rejected push is a wake, and a Status the
   lane does not own is terminal.
-- [§Canary](../skills/parallel-lanes.md#canary-handshake-both-sides)
+- [§Canary](../../../../skills/parallel-lanes.md#canary-handshake-both-sides)
   — the handshake this bench flies, ack token and all.
-- [land MODE P](../skills/land.md#mode-p--pause-and-transfer-the-founder-is-going-local)
+- [land MODE P](../../../../skills/land.md#mode-p--pause-and-transfer-the-founder-is-going-local)
   — what a fence IS, and why the push is the fence.
-- [D-074](../record/DECISIONS.md#d-074--phase-1-closes-on-flights-3-and-4)
+- [D-074](../../../DECISIONS.md#d-074--phase-1-closes-on-flights-3-and-4)
   — why this flight exists.
