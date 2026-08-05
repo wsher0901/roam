@@ -2,12 +2,12 @@
 type: spec
 id: chronicle-shelf-1
 title: The first shelf bench — Shelf III slice D, and the cold-bench calibration
-status: open
+status: shipped
 stage: workshop
 branch: docs/chronicle-shelf-1
-pr: —
+pr: 322
 opened: 2026-08-05
-shipped: —
+shipped: 2026-08-05
 ---
 
 # chronicle-shelf-1 — the calibration that re-rules the rest

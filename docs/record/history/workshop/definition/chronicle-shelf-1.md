@@ -1,7 +1,8 @@
 ---
-type: memory
-id: chronicle-shelf-1
-updated: 2026-08-05 19:52 UTC · completion rewrite · cloud lane
+type: history
+slug: chronicle-shelf-1
+shipped: 2026-08-05 20:17
+pr: 322
 ---
 
 # chronicle-shelf-1 — the calibration that re-rules the rest
@@ -17,26 +18,26 @@ calibration's headline is that the pilot's inference DID NOT HOLD**
 — see §The measurement.
 
 This lane authored the payload, so
-[no-solo-approval](../LAWS.md#workflow-non-negotiable) applies as it
+[no-solo-approval](../../../../LAWS.md#workflow-non-negotiable) applies as it
 does to any self-authored diff: an external Web review before the
 founder's word.
 
 ## What this task is
 
 The first shelf bench under
-[D-077](../record/DECISIONS.md#d-077--shelf-benches-and-the-settling-weld-writes):
+[D-077](../../../DECISIONS.md#d-077--shelf-benches-and-the-settling-weld-writes):
 **Shelf III slice D — the machinery & gates**, eight stories, and
 the CALIBRATION whose measured cost re-rules the remaining shelves
 before any of them fire.
 
 It carries one payload edit besides the stories:
-[ship §7](../skills/ship.md#7--on-approval--the-atomic-weld)'s cases
+[ship §7](../../../../skills/ship.md#7--on-approval--the-atomic-weld)'s cases
 2 and 3, because
-[D-077](../record/DECISIONS.md#d-077--shelf-benches-and-the-settling-weld-writes)
+[D-077](../../../DECISIONS.md#d-077--shelf-benches-and-the-settling-weld-writes)
 ruling 2 names this bench as its vehicle.
 
 The contract, the five-slice split, and why slice D goes first:
-[the spec](../record/specs/chronicle-shelf-1.md).
+[the spec](../../../specs/chronicle-shelf-1.md).
 
 ## Pending issues
 
@@ -50,7 +51,7 @@ by this bench, listed so they cannot go missing:
    [#323](https://github.com/wsher0901/roam/pull/323), merged while
    this bench flew; that board repair is correct as it stands and
    is merged into this branch.) A lane may never write
-   [DASHBOARD](../DASHBOARD.md), so this is for the next
+   [DASHBOARD](../../../../DASHBOARD.md), so this is for the next
    baton-holder repaint.
 2. **The cloud-seat identity step has no mechanism** — see
    §Deviations. A finding, not a fix; the fix is a founder call.
@@ -63,6 +64,51 @@ Nothing on this bench. All four plan steps are complete and the
 Done-means boxes are verified in §Done-means below.
 
 ## The story
+
+2026-08-05 20:17 UTC · REVIEWED, MERGED, AND THE WELD RAN THE STEP
+THIS BENCH INSTALLED · work PC control tower
+
+**NON-AUTHOR REVIEW: PASS WITH FINDINGS.** Reviewed at the work PC
+by the seat that wrote this bench's spec, memory stub and ack —
+none of which is the payload, which is what makes it a lawful
+non-author reviewer
+([LAWS §Workflow](../../../../LAWS.md#workflow-non-negotiable)). **The lane's
+own closing line was wrong on this point** and the correction saved
+a round trip: it called its diff self-authored and asked for an
+external Web review, but a LANE-authored diff takes a non-author
+session's review plus the founder's word.
+
+**THE LANE BEAT THE PRE-GATE CRITIC ON THE HARDEST POINT.** Reasoning
+from main alone, the critic predicted a FOURTH case-analysis hole:
+rewrite only case 2 and the abolished debt form survives in case 3,
+through items BORN AND SETTLED IN THE SAME WELD — naming `the record
+shelf` and `ATLAS` as two existing rows of that shape. The lane had
+already closed it: case 3 ends by running case 2's split on the row
+it just added. **First time in four benches that this failure mode
+was anticipated rather than shipped.**
+
+**THREE FINDINGS, and the founder folded them into a findings
+bench** rather than holding the merge: the census contradicted its
+own count (line 12 said 55 proposals, the chronicle-layer row still
+said 63) · "SETTLED vs ADVANCED" forks case 2 with no operational
+test, the fourth instance of this workshop's recurring shape · and
+the vault-lens cell called the state "unverifiable" while this same
+file carries the founder's dated 2026-07-28 word that it WAS applied
+at the work PC.
+
+**FINDING 1 WAS REPAIRED BY THE WELD ITSELF, not by a repair pass**,
+and the distinction matters. Ship §7's synthesis step required this
+weld to update the chronicle-layer row — the item was ADVANCED by
+eight new stories — and writing that cell correctly meant writing an
+accurate count. THE RULE CAUGHT ITS OWN BREACH ONE WELD LATER, which
+is the first evidence that the step does the job it was built for.
+Findings 2 and 3 go to the findings bench.
+
+**THE SYNTHESIS RUN, FOR THE RECORD.** Two items, both case 2 ·
+ADVANCED: `ship — the closing ritual` (its case 2 now splits) and
+`the chronicle layer` (eleven of 66 written, 55 proposals). The
+SETTLED branch — the one D-077 ruling 2 created — has still never
+fired.
 
 2026-08-05 · flown from a cold cloud seat, claimed 19:35 UTC and
 licensed by the airborne ack at 19:36 UTC. The narrative below is
@@ -104,20 +150,20 @@ is good, not because gathering is inherently cheap.** Three specific
 properties did the work, and each is a property of THIS slice:
 
 1. **The ledger is a PR→file index.** One grep of
-   [the ledger](../record/history/README.md#the-ledger) for the span
+   [the ledger](../../README.md#the-ledger) for the span
    PR numbers returned the history file for nearly every item. That
    single read is most of what "gathering" would otherwise mean.
 2. **Every slice-D item had a dedicated history file.** Eight items,
    eight pre-digested benches. Nothing had to be reconstructed from
    raw commits.
 3. **The slice shared its sources, exactly as
-   [D-077](../record/DECISIONS.md#d-077--shelf-benches-and-the-settling-weld-writes)
+   [D-077](../../../DECISIONS.md#d-077--shelf-benches-and-the-settling-weld-writes)
    ruling 1 predicted.**
-   [D-038](../record/DECISIONS.md#d-038--ci-is-the-arbiter) served
+   [D-038](../../../DECISIONS.md#d-038--ci-is-the-arbiter) served
    D1 and D2;
-   [D-050](../record/DECISIONS.md#d-050--session-lifecycle-closed-is-not-dead)
+   [D-050](../../../DECISIONS.md#d-050--session-lifecycle-closed-is-not-dead)
    served D3 and D4; [#91](https://github.com/wsher0901/roam/pull/91)
-   and [machine-setup](../skills/machine-setup.md) served D5 and D6.
+   and [machine-setup](../../../../skills/machine-setup.md) served D5 and D6.
    **D2's gather cost 6 seconds because D1 had already opened its
    sources.**
 
@@ -208,8 +254,8 @@ which is why both endings had to be re-derived rather than copied.
 **THIS LANE AUTHORED ITS FIRST THREE COMMITS UNDER THE WRONG GIT
 IDENTITY.** The canary and the first two story commits were authored
 as `Claude <noreply@anthropic.com>` — the exact tell
-[seat-invariance](../LAWS.md#parallel-lanes--cloud) forbids, and the
-thing [machine-setup](../skills/machine-setup.md)'s cloud-seat
+[seat-invariance](../../../../LAWS.md#parallel-lanes--cloud) forbids, and the
+thing [machine-setup](../../../../skills/machine-setup.md)'s cloud-seat
 section exists to prevent. It was caught while gathering sources FOR
 D6, whose subject is that procedure, and the repo-local identity was
 set at 19:45:36 UTC. Commits from D6 onward carry
@@ -221,8 +267,8 @@ erased from it.
 **The finding underneath it is the part worth keeping.** The
 identity step is documented in the one file a cloud lane has no
 particular reason to open — a lane's orders route it to
-[LAWS](../LAWS.md),
-[parallel-lanes](../skills/parallel-lanes.md), its spec and its
+[LAWS](../../../../LAWS.md),
+[parallel-lanes](../../../../skills/parallel-lanes.md), its spec and its
 memory, and a lane does not think of itself as setting up a machine.
 **This bench complied only because the procedure happened to be one
 of its eight assigned items, which is luck, not a mechanism.** And
@@ -232,7 +278,7 @@ differs from every other commit in the history. Its neighbouring
 trap — using the founder's real address — fails LOUDLY, because
 GitHub refuses the push outright. The caught error is the loud one;
 the persistent error is the clean one. Written into
-[the machine-setup story](../chronicle/machine-setup.md); the fix
+[the machine-setup story](../../../../chronicle/machine-setup.md); the fix
 (a lane-worker prompt step, or a hook) is a founder call, not a
 lane's.
 
@@ -242,9 +288,9 @@ Verified rather than copied, per the verification law. Each is
 recorded in its story and reflected in its INDEX cell:
 
 - **The guardrail audit's promoted block MOVED.**
-  [D-053](../record/DECISIONS.md#d-053--guardrail-audit) promoted
+  [D-053](../../../DECISIONS.md#d-053--guardrail-audit) promoted
   the verification loop into LAWS; it now lives at
-  [ship §1](../skills/ship.md#1--preflight), with LAWS pointing
+  [ship §1](../../../../skills/ship.md#1--preflight), with LAWS pointing
   there as its one home. The improvement survived, its address did
   not. Both sharpened stub descriptions are still verbatim.
 - **The currency audit's principle was NOT promoted.** "Annotation
@@ -267,7 +313,7 @@ recorded in its story and reflected in its INDEX cell:
 ### Done-means — verified
 
 - [x] ship §7's cases 2 and 3 implement
-      [D-077](../record/DECISIONS.md#d-077--shelf-benches-and-the-settling-weld-writes)
+      [D-077](../../../DECISIONS.md#d-077--shelf-benches-and-the-settling-weld-writes)
       ruling 2; the debt form is explicitly scoped to the backlog
       and named as not-an-option for a weld being performed.
 - [x] Eight story files exist for slice D in the pilot's format,
@@ -293,19 +339,19 @@ recorded in its story and reflected in its INDEX cell:
 
 ## Where to look
 
-- [the spec](../record/specs/chronicle-shelf-1.md) — the contract
+- [the spec](../../../specs/chronicle-shelf-1.md) — the contract
   and the five-way split of Shelf III.
-- [D-077](../record/DECISIONS.md#d-077--shelf-benches-and-the-settling-weld-writes)
+- [D-077](../../../DECISIONS.md#d-077--shelf-benches-and-the-settling-weld-writes)
   — both rulings; ruling 2's margin is corrected above.
-- [the pilot's report](../record/history/workshop/definition/chronicle-pilot.md)
+- [the pilot's report](chronicle-pilot.md)
   — the format, the confound this bench escaped, and the inference
   this bench tested.
-- [the census](../chronicle/INDEX.md) — 66 rows, 11 written.
-- The eight stories: [link integrity](../chronicle/link-integrity.md)
-  · [CI is the arbiter](../chronicle/ci-is-the-arbiter.md) ·
-  [the session hooks](../chronicle/session-hooks.md) ·
-  [session lifecycle](../chronicle/session-lifecycle.md) ·
-  [the vault lens](../chronicle/vault-lens.md) ·
-  [the per-machine seat](../chronicle/machine-setup.md) ·
-  [the guardrail audit](../chronicle/guardrail-audit.md) ·
-  [the docs currency audit](../chronicle/currency-audit.md).
+- [the census](../../../../chronicle/INDEX.md) — 66 rows, 11 written.
+- The eight stories: [link integrity](../../../../chronicle/link-integrity.md)
+  · [CI is the arbiter](../../../../chronicle/ci-is-the-arbiter.md) ·
+  [the session hooks](../../../../chronicle/session-hooks.md) ·
+  [session lifecycle](../../../../chronicle/session-lifecycle.md) ·
+  [the vault lens](../../../../chronicle/vault-lens.md) ·
+  [the per-machine seat](../../../../chronicle/machine-setup.md) ·
+  [the guardrail audit](../../../../chronicle/guardrail-audit.md) ·
+  [the docs currency audit](../../../../chronicle/currency-audit.md).
