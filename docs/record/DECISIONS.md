@@ -4019,3 +4019,55 @@ this bench: the MASTER ITEM, the homeless summon measurement, and
 the charter's version-table order) ·
 [DASHBOARD](../DASHBOARD.md) (Needs-you gains the box re-save at the
 next ritual repaint — the board is never hand-edited) · this entry.
+
+## D-076 — Phase 2 opens with a three-story pilot
+
+In full: 2026-08-05 — Phase 2 opens with a PILOT OF THREE STORIES rather than either option D-060 deferred to this ruling ("all 66 census stories, or the load-bearing dozen first"): no chronicle story has ever been written, so the format, the length and the per-story cost are all unmeasured, and a dozen or sixty-six is a commitment made against an estimate. The pilot writes three deliberately UNLIKE stories — one absorbing brand-new evidence (the wake-lock, which flight 4 observed firing for the first time), one whose census ending is STALE and must be rewritten (land, whose census reads "no recorded run" and which has since run three times), and one carrying a live unresolved defect (the canary handshake, whose ack token is defined two ways in its own section) — so that the format meets its three hard cases before scale is chosen. It returns a written format, a measured cost per story, and a re-ruling of the remaining 63 made against a number instead of a guess. The founder's ruling of 2026-08-05, at the desk, after phase 1 closed.
+
+**Decision:** phase 2 opens with a THREE-STORY PILOT, and the scope
+of the remaining 63 is re-ruled when the pilot reports. The three
+are chosen to be unlike each other rather than to be the most
+important, because the pilot's product is the FORMAT and the COST,
+not the coverage.
+
+**Why:** [D-060](#d-060--the-three-phase-standing-order) deferred
+this ruling deliberately and named two options, both of which
+commit before anything is known — `docs/chronicle/` currently holds
+exactly one file, its INDEX, and not one story. The workshop's own
+method answers it: flight 1 flew TRIVIAL CARGO to test the flight
+machinery, on the principle that a failure observed on small cargo
+is a failure of the machinery rather than of the work. A pilot is
+that principle applied to the vault. It also unpauses phase 3
+sooner in the case where the format needs revision, since three
+stories are cheaper to rewrite than twelve.
+
+**Alternatives rejected:**
+
+- **All 66 in one pass** — complete coverage, one mobilization.
+  Rejected: the largest commitment available, made against a format
+  never once exercised, and it holds
+  [V1.S1](../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
+  T3–T6 and
+  [V1.S2.T5](../ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)
+  shut for the longest.
+- **The load-bearing dozen first** — D-060's own smaller option.
+  Rejected only as a FIRST step, not as a plan: it is the likely
+  shape of the second step, and the pilot exists to size it. Twelve
+  stories written to a format that turns out wrong is twelve
+  rewrites.
+- **Picking the three most important stories.** Rejected: the
+  pilot's job is to break the format, not to bank value. Three
+  important-but-similar stories would exercise one case three
+  times.
+
+**Affects:**
+[D-060](#d-060--the-three-phase-standing-order) (its phase 2, whose
+deferred scope ruling this answers; otherwise intact) ·
+[D-059](#d-059--the-chronicle-layer) (the layer this first exercises
+— unchanged, and its deferred ship synthesis-at-weld step comes due
+at this pilot's weld) · [the chronicle census](../chronicle/INDEX.md)
+(three of its 66 rows stop being proposals) ·
+[the pilot's spec](specs/chronicle-pilot.md) ·
+[DASHBOARD](../DASHBOARD.md) (the standing order's phase 2 line and
+Needs-you, at the next ritual repaint — the board is never
+hand-edited) · this entry.
