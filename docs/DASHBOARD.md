@@ -6,38 +6,27 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-08-05 · 19:26 UTC by the board repair · from work PC
-BOTH RULINGS GIVEN — one bench waits for a COLD seat · needs-you 1 ·
-git outranks this board.
+Painted 2026-08-05 · 20:22 UTC by ship's tail · from work PC
+THE CALIBRATION OVERTURNED THE PILOT — 11 of 66 written, one bench
+open · needs-you 1 · git outranks this board.
 How to read it → [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
 
-1. ⚪ **GIVE #322 A COLD SEAT** — the first shelf bench is birthed,
-   specced and UNCLAIMED ON PURPOSE. It measures what a shelf of
-   chronicle stories costs from a seat that has NOT been living in
-   the material, and that is its only validity condition: the
-   session that birthed it spent 2026-08-05 inside most of Shelf
-   III, so a number from here would carry the exact confound the
-   pilot already disowned. Start a fresh sitting and it claims the
-   bench, or dispatch it as a cloud lane. **NOT URGENT — it is
-   worth more flown late by a fresh seat than promptly by this
-   one.** (since 08-05)
-   → [#322](https://github.com/wsher0901/roam/pull/322) ·
-   D-077 (on #322's branch — it reaches main when that bench merges)
-
-**BOTH RULINGS ARE GIVEN AND RECORDED.** The scope of the 63 and the
-settle-weld fork were answered on 2026-08-05 and are now **D-077**,
-so they leave this queue. The ship §7 adjustment ruling 2 requires
-rides [#322](https://github.com/wsher0901/roam/pull/322) as its
-first plan step.
-
-⚠️ **D-077 IS NOT ON MAIN YET** — it was cut inside
-[#322](https://github.com/wsher0901/roam/pull/322) and reaches main
-when that bench merges, so this board names it without linking it
-and the links gate agrees. SECOND TIME TODAY a board could not cite
-a decision still riding a branch; filed as an inbox line rather than
-worked around silently.
+1. 🟡 **RE-RULE THE REMAINING 55 ON THE COLD NUMBER** — the
+   calibration flew and it CONTRADICTED the pilot: measured cold,
+   **writing dominates gathering ~60/40**, not the reverse. Eight
+   stories in ~15 minutes, ≈1m50s each all-in. Your ruling 1 is
+   confirmed by a mechanism the pilot only guessed at — one story's
+   gather cost SIX SECONDS because its neighbour had just opened the
+   same sources — and ruling 2's margin is corrected, not
+   overturned. **The lane refused to scale its number to Shelf IV**
+   (code and specs, not pre-digested benches) and named that shelf
+   its own calibration. Remaining: Shelf III slices A 6 · B 7 · C 7
+   · E 4, and Shelves I 11 · II 11 · IV 9. At this desk, whenever.
+   (since 08-05)
+   → [the calibration](record/history/workshop/definition/chronicle-shelf-1.md)
+   · [the census](chronicle/INDEX.md)
 
 ## The baton
 
@@ -58,22 +47,23 @@ paragraph is the repair.
 
 ## In flight
 
-No lanes and no live seat but this desk. One bench stands BIRTHED
-AND UNCLAIMED — [#322](https://github.com/wsher0901/roam/pull/322),
-whose spec forbids its own author from flying it.
+No lanes. One bench open at this desk.
 
-Nothing flying, no lanes, no fleet at ground. Clean floor.
+| Who | For | State | Move |
+|---|---|---|---|
+| the commander's bench · [lane-findings](https://github.com/wsher0901/roam/pull/324) | the identity gap a cold lane found in itself, plus two review repairs | 🟡 born 20:21, draft, payload not started | write the hook step, the settled/advanced test, and the vault-lens correction |
 
 ## Working on
 
-- PHASE 2 IS OPEN, HAS ITS FIRST THREE STORIES, ITS RULE ENFORCED,
-  AND ITS PLAN RULED. The pilot shipped 18:53; the synthesis step
-  19:19; and
-  D-077 (on #322's branch — it reaches main when that bench merges)
-  set the rest — shelf-sized benches, Shelf III split, the FIRST one
-  a calibration whose number re-rules the others before they fire.
-  That bench is [#322](https://github.com/wsher0901/roam/pull/322),
-  waiting for a cold seat.
+- PHASE 2 IS RUNNING AND ITS PLAN IS MEASURED. 11 of 66 stories
+  written — the pilot's three plus Shelf III slice D's eight, flown
+  COLD by a cloud lane whose calibration overturned the pilot's
+  central inference. 55 remain, awaiting your re-ruling on that
+  number.
+- THE FINDINGS BENCH is open at
+  [#324](https://github.com/wsher0901/roam/pull/324): a cloud seat's
+  git identity is set by no ritual it reads, and the failure is
+  CLEAN — push succeeds, CI passes, only the author name differs.
 
 The standing order says phase 2 opens on
    your ruling. At this desk, whenever. (since 08-05)
@@ -142,6 +132,14 @@ one phase per line:
 
 **Completed**
 
+- THE FIRST SHELF BENCH, FLOWN COLD — eight stories including the
+  first two EVENTS ever written, which bent the format and
+  documented the bend. Its calibration CONTRADICTED the pilot:
+  writing dominates gathering ~60/40. It also beat the pre-gate
+  critic, which predicted a fourth case-analysis hole the lane had
+  already closed — the first time in four benches that failure mode
+  was anticipated rather than shipped.
+  [#322](https://github.com/wsher0901/roam/pull/322)
 - SHIP §7 NOW PERFORMS THE ENDING RULE — the duty
   [HOME](HOME.md#where-information-goes) assigned to "the weld" in
   two tables, which no ritual carried until now. Every weld names
@@ -257,6 +255,14 @@ one phase per line:
 
 **Issues**
 
+- ⏳ A CLOUD SEAT'S GIT IDENTITY IS SET BY NO RITUAL IT READS. The
+  step lives in [machine-setup](skills/machine-setup.md), the one
+  file a cloud lane has no reason to open; `LANE-WORKER.md` never
+  mentions it. The 2026-08-05 lane complied BY LUCK — the procedure
+  happened to be one of its own story subjects — and authored four
+  commits wrong before catching itself. IT FAILS SILENTLY: push
+  succeeds, CI passes, only the author name differs, while its
+  neighbour trap fails loudly. → [#324](https://github.com/wsher0901/roam/pull/324)
 - ⏳ ATLAS DOES NOT KNOW THE CHRONICLE EXISTS — its file-flow figure
   draws which ritual writes each surface and notes "Ship appears
   three times for exactly that reason"; ship now writes a FOURTH,
@@ -426,5 +432,5 @@ S3–S8 · queued in order · 0/22
 
 ## Next
 
-A fresh seat takes [#322](https://github.com/wsher0901/roam/pull/322)
-and returns the number that re-rules the remaining shelves.
+Work [#324](https://github.com/wsher0901/roam/pull/324), and re-rule
+the 55 whenever you're ready.
