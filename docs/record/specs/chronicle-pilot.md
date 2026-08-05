@@ -2,12 +2,12 @@
 type: spec
 id: chronicle-pilot
 title: The chronicle pilot — three stories, to size the other sixty-three
-status: open
+status: shipped
 stage: workshop
 branch: docs/chronicle-pilot
 pr: 318
 opened: 2026-08-05
-shipped: —
+shipped: 2026-08-05
 ---
 
 # chronicle-pilot — three stories chosen to break the format

@@ -1,7 +1,8 @@
 ---
-type: memory
-id: chronicle-pilot
-updated: 2026-08-05 18:20 UTC · ship · critic round · work PC
+type: history
+slug: chronicle-pilot
+shipped: 2026-08-05 18:50
+pr: 318
 ---
 
 # chronicle-pilot — three stories, to size the other sixty-three
@@ -14,7 +15,7 @@ Born bench-first at the desk on the founder's scope ruling, which
 opened phase 2. This seat authors the payload, so it is a
 SELF-AUTHORED DIFF: an external Web review is required before the
 founder's word
-([no-solo-approval](../LAWS.md#workflow-non-negotiable)).
+([no-solo-approval](../../../../LAWS.md#workflow-non-negotiable)).
 
 ## What this task is
 
@@ -22,15 +23,15 @@ The first chronicle stories ever written. `docs/chronicle/` holds
 one file today — its census INDEX — and not one story, so the
 format, the length and the per-story cost are all unmeasured.
 
-[D-076](../record/DECISIONS.md#d-076--phase-2-opens-with-a-three-story-pilot)
+[D-076](../../../DECISIONS.md#d-076--phase-2-opens-with-a-three-story-pilot)
 opened phase 2 with a THREE-STORY PILOT rather than either option
-[D-060](../record/DECISIONS.md#d-060--the-three-phase-standing-order)
+[D-060](../../../DECISIONS.md#d-060--the-three-phase-standing-order)
 named, and the three are chosen to be UNLIKE each other rather than
 to be the most important: the pilot's product is the FORMAT and the
 COST, not the coverage.
 
 The contract, including which hard case each story exists to test:
-[the spec](../record/specs/chronicle-pilot.md).
+[the spec](../../../specs/chronicle-pilot.md).
 
 ## Pending issues
 
@@ -46,19 +47,36 @@ belong to the workshop rather than to this bench and must not be
 absorbed silently:
 
 - **THE SHIP SYNTHESIS-AT-WELD STEP IS NOW DUE.**
-  [D-059](../record/DECISIONS.md#d-059--the-chronicle-layer)
+  [D-059](../../../DECISIONS.md#d-059--the-chronicle-layer)
   deferred it "to the first story weld" and gave it its own bench,
-  touching [ship](../skills/ship.md). This is that weld. Surfaced at
+  touching [ship](../../../../skills/ship.md). This is that weld. Surfaced at
   the gate, not done here.
 - **The remaining 63 need their re-ruling**, per
-  [D-076](../record/DECISIONS.md#d-076--phase-2-opens-with-a-three-story-pilot).
+  [D-076](../../../DECISIONS.md#d-076--phase-2-opens-with-a-three-story-pilot).
   The recommendation is below; the ruling is the founder's.
 
 ## The story
 
+2026-08-05 18:50 UTC · THE EXTERNAL REVIEW — PASS · work PC — the
+Web review returned **PASS on `da252d7`**, recorded here because
+[no-solo-approval](../../../../LAWS.md#workflow-non-negotiable) makes it the
+load-bearing approval: the payload was written by the desk that ran
+ship. Its verdict, point by point: the three stories verified
+against THEIR DESIGNED BREAK-POINTS rather than merely read · both
+red repairs confirmed — the rejected-push clause precisely scoped,
+the redelivery count enumerated with NO TOTAL ASSERTED · the cost
+number's confound and the inference labelling verified in this
+memory with the falsifier named · the Shelf III arithmetic
+re-derived independently · D-076 sound · the frozen record
+untouched, which is D-059's ruling 4 · and the doc gates re-run
+from outside — 4,968 links zero broken, ledger 121↔121, Actions
+green on the tip.
+
+The founder's merge word followed on the same message.
+
 2026-08-05 18:20 UTC · THE CRITIC ROUND — TWO RED, AND BOTH WERE
 FALSE CLAIMS IN A STORY'S ENDING · work PC — the pre-gate critic
-([D-044](../record/DECISIONS.md#d-044--the-pre-gate-critic-goes-live))
+([D-044](../../../DECISIONS.md#d-044--the-pre-gate-critic-goes-live))
 returned **twelve findings, two 🔴**. All repaired; none dismissed.
 BOTH REDS WERE IN THE WAKE-LOCK STORY'S FACTUAL CLAIMS, which is the
 worst place for them: the ending is the artifact later welds rewrite
@@ -137,7 +155,7 @@ frontmatter: type: chronicle-story · shelf · status: living · updated
 
 **THE ENDING GOES FIRST, IN A BLOCKQUOTE, AND THAT IS THE FORMAT'S
 LOAD-BEARING CHOICE.**
-[D-059](../record/DECISIONS.md#d-059--the-chronicle-layer)'s ending
+[D-059](../../../DECISIONS.md#d-059--the-chronicle-layer)'s ending
 rule says a later fix is INCORPORATED and the ending rewritten at
 that weld — which only works if a later seat can find the ending in
 one second without reading the story. Putting it at the top, visually
@@ -246,7 +264,7 @@ scope ruling, taken at the desk minutes after phase 1 closed and the
 cockpit box reached v5.
 
 THE RULING WAS NOT ONE OF THE TWO OPTIONS ON OFFER.
-[D-060](../record/DECISIONS.md#d-060--the-three-phase-standing-order)
+[D-060](../../../DECISIONS.md#d-060--the-three-phase-standing-order)
 had deferred phase 2's scope with two named choices — all 66 census
 stories, or the load-bearing dozen first — and both commit before
 anything is known. The founder took a third: a PILOT, sized to
@@ -270,14 +288,14 @@ times.
 
 ## Where to look
 
-- [the census](../chronicle/INDEX.md) — the 66 proposed stories
+- [the census](../../../../chronicle/INDEX.md) — the 66 proposed stories
   across four shelves; three of them stop being proposals here.
-- [D-059](../record/DECISIONS.md#d-059--the-chronicle-layer) — the
+- [D-059](../../../DECISIONS.md#d-059--the-chronicle-layer) — the
   layer's six rulings: the unit, the ending rule, the structure,
   immutability beneath, down-links only.
-- [D-076](../record/DECISIONS.md#d-076--phase-2-opens-with-a-three-story-pilot)
+- [D-076](../../../DECISIONS.md#d-076--phase-2-opens-with-a-three-story-pilot)
   — why a pilot, and why these three.
-- [the spec](../record/specs/chronicle-pilot.md) — the contract and
+- [the spec](../../../specs/chronicle-pilot.md) — the contract and
   the hard case each story tests.
-- [the ledger](../record/history/README.md#the-ledger) — the
+- [the ledger](../../README.md#the-ledger) — the
   chronology every story is derived from.
