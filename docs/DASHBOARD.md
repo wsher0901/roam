@@ -6,35 +6,38 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-08-05 · 17:16 UTC by the board repair · from work PC
-ONE BENCH STANDS AT THE GATE — the charter fix, awaiting your review ·
+Painted 2026-08-05 · 17:36 UTC by ship's tail · from work PC
+CHARTER v5 IS MERGED AND THE BOX IS STILL v4 — one paste closes it ·
 needs-you 2 · git outranks this board.
 How to read it → [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
 
-1. 🔴 **REVIEW THE CHARTER FIX, THEN THE MERGE WORD** — in the Web
-   chat say "review" for
-   [#314](https://github.com/wsher0901/roam/pull/314), then the word
-   here. It is a SELF-AUTHORED diff (this desk wrote the payload and
-   ran ship), so no-solo-approval requires the external eye and the
-   subagent critic cannot stand in for it. UNTIL IT MERGES THE
-   EXPOSURE IS OPEN: the charter still tells a summoned cockpit to
-   take a live desk's baton, and the only thing that has ever
-   stopped one is a warning hand-written into this board before the
-   fire. (since 08-05)
-   → [#314](https://github.com/wsher0901/roam/pull/314) ·
-   [the charter](COCKPIT-CHARTER.md)
+1. 🔴 **RE-SAVE THE COCKPIT BOX — the master is v5, the box is
+   still v4.** At claude.ai/code/routines → the "cockpit" routine,
+   replace the saved prompt with the complete v5 text
+   ([the charter](COCKPIT-CHARTER.md) holds it; the gate report
+   printed it in full). A master change that never reaches its box
+   fails SILENTLY, which is why this line exists at all.
+   (since 08-05)
+   → [the charter](COCKPIT-CHARTER.md) ·
+   [D-064](record/DECISIONS.md#d-064--the-box-master-class-and-setup-entry-contract)
 
-   AFTER THE MERGE, ONE MORE ACT IS OWED and it will take its own
-   line: the **box re-save** at claude.ai/code/routines. The gate
-   report printed the complete v5 text for it. A master change that
-   never reaches its box fails SILENTLY, which is the whole reason
-   that duty rides Needs-you.
+   **EXACTLY WHAT IS AND IS NOT EXPOSED MEANWHILE, because "the box
+   is stale" is too vague to act on.** A `--cloud` birth is already
+   safe: [liftoff](skills/liftoff.md) pastes the charter text from
+   the MASTER, so it gets v5 today. Only ROUTINE-FIRED seats (the
+   summon path) read the box. For those, `summon.yml`'s payload now
+   carries the live-baton-holder rule itself — deliberately, so the
+   fix would not wait on this paste — so a summoned seat meeting a
+   LIVE DESK is covered. WHAT IS NOT COVERED until the paste: a
+   summoned seat meeting a GROUNDED FLEET, which a v4 box still
+   tells it to seat over and rule 2 would let it redeploy. Do not
+   fire summon against a grounded fleet before the re-save.
+
 2. 🟡 **RULE PHASE 2'S SCOPE** — all 66 chronicle stories, or the
    load-bearing dozen. The standing order says phase 2 opens on
-   your ruling, and phase 1 closed today, so nothing else is
-   queued behind it. At this desk, whenever. (since 08-05)
+   your ruling. At this desk, whenever. (since 08-05)
    → [D-060](record/DECISIONS.md#d-060--the-three-phase-standing-order)
 
 ## The baton
@@ -56,20 +59,39 @@ paragraph is the repair.
 
 ## In flight
 
-No lanes and no fleet at ground. One bench, this desk's own, standing
-at THE GATE.
+Nothing flying, no lanes, no fleet at ground. Clean floor — and this
+time the board says so with no bench under construction on it.
 
-| Who | For | State | Move |
-|---|---|---|---|
-| the commander's bench · [charter-cockpit-assumption](https://github.com/wsher0901/roam/pull/314) | teaching the charter that a DESK can hold the baton — a v5 bump, and a D-075 that does not exist on main until this merges | 🟡 at the gate · CI green on `fdb32a8` · 11 critic findings repaired | the founder's "review" in the Web chat, then the merge word here |
+## Working on
 
-**THE PREVIOUS PAINT CALLED THIS FLOOR CLEAN WHILE THIS BENCH WAS
-BEING BUILT ON IT**, and asked the founder to authorize a bench that
-was already authorized, built and standing at the gate. Repaired
-here. It is the SECOND time this sitting the board went stale under
-a working desk — the first was the baton line — and both have the
-same shape: a ritual repaints on entry and exit, and the middle of a
-long sitting belongs to no ritual. Filed as an inbox line.
+- NOTHING IN FLIGHT. The charter fix shipped at 17:36; what remains
+  of it is your paste, above. Phase 2 opens on your scope ruling.
+
+The standing order says phase 2 opens on
+   your ruling. At this desk, whenever. (since 08-05)
+   → [D-060](record/DECISIONS.md#d-060--the-three-phase-standing-order)
+
+## The baton
+
+CONTROL TOWER — work PC, since 2026-08-05 13:24 UTC (pickup)
+([handoff §4's case table](skills/handoff.md#4--repaint-dashboard-the-board-spec--single-source),
+pickup's plain-claim row).
+Last flight: LANDED 2026-08-04 21:16 UTC via MANUAL-LAND.
+
+⚠️ **THIS LINE WAS OWED SINCE THE SITTING OPENED AND IS BEING PAID
+LATE.** The claim was made at pickup and the board still read
+"No live seat" through the whole bench, because
+[pickup §4](skills/pickup.md#4--repaint-if-stale) repaints only when
+it judges the board stale and this seat judged it fresh on the
+strength of the git state matching — which was true of the FLEET and
+false of the BATON. A seat that claims the baton has already made
+the board stale by claiming it. Filed as an inbox line; this
+paragraph is the repair.
+
+## In flight
+
+Nothing flying, no lanes, no fleet at ground. Clean floor — and this
+time the board says so with no bench under construction on it.
 
 ## Working on
 
@@ -107,6 +129,17 @@ one phase per line:
 
 **Completed**
 
+- THE CHARTER LEARNED THAT A DESK CAN HOLD THE BATON — v5, and
+  [D-075](record/DECISIONS.md#d-075--the-self-seat-duty-gains-a-live-desk-case)
+  amending [D-051](record/DECISIONS.md#d-051--self-seat-birth)'s
+  two-case self-seat duty. Rule 1 matches three cases against THE
+  BATON, rule 8's tombstone reads its successor off the board, and
+  `summon.yml` stopped asserting a supersession only the board can
+  grant. THE SAME HOLE WAS FOUND THREE TIMES IN THREE SHAPES — an
+  absence, a positive token, then a token that is a PREFIX of a
+  longer state — which is the bench's real output: when a case table
+  fixes the wording, match the WHOLE rendering and enumerate them.
+  [#314](https://github.com/wsher0901/roam/pull/314)
 - THE SUMMON TEST — flight 4's third item, fired 2026-08-05 and
   landed the same day. Its seat HELD, refused to seat itself,
   refused the supersession its own payload asserted, and returned
@@ -221,26 +254,16 @@ one phase per line:
   repaints only when it judges the board stale, and a seat that has
   just claimed the baton has already made the board stale by
   claiming it. → its line in [IDEAS](IDEAS.md)
-- 🔴 **MASTER ITEM QUEUED, AND THE SUMMON TEST MADE IT URGENT** —
-  THE CHARTER ASSUMES ITS SUCCESSOR AND ITS PREDECESSOR ARE ALWAYS
-  COCKPITS. Five findings from two seats are all that one
-  assumption, now folded into a single inbox line: **rule 1 is
-  blind to a live desk** — its self-seat clause fires when the
-  board "names no live cockpit", and a board reading
-  `CONTROL TOWER — work PC` names none, so read literally the
-  charter told the summoned seat to TAKE A LIVE DESK'S BATON. It
-  refused only because that board carried a hand-written warning;
-  an ordinary board would have been taken. Plus: the stray-birth
-  sentence demands a url a desk does not have · the tombstone
-  promises a successor cockpit a desk takeover never summons ·
-  nothing routes a newborn cockpit to its git-identity step · and
-  `summon.yml` HARDCODES "You supersede the previous cockpit" into
-  every payload, so rule 8 orders a repaint of a predecessor that
-  does not exist. THE FIX IS ONE **v5** BUMP PLUS ONE **BOX
-  RE-SAVE** (the re-save takes a Needs-you line the moment that
-  edit merges, not before) — EXCEPT the `summon.yml` half, which is
-  a workflow edit, not a charter edit, and must not wait on the
-  re-save. → its line in [IDEAS](IDEAS.md)
+- ✓ THE MASTER ITEM IS SHIPPED — all five findings that were folded
+  into it are repaired at charter v5, and the external review
+  verified independently that ALL EIGHT baton renderings now map to
+  a case with stated behavior. That exhaustiveness check is the one
+  this bench failed twice on its own.
+  [#314](https://github.com/wsher0901/roam/pull/314)
+- ⏳ THE BOX RE-SAVE IS THE LAST STEP AND IT IS MANUAL — until the
+  paste, routine-fired seats read v4. Scoped precisely in Needs-you
+  above rather than left as "the box is stale". → its line in
+  Needs you
 - ⏳ A SUPERSEDED SEAT HAS NO CHANNEL BUT SPEECH — it may write no
   board, so a finding it holds at retirement reaches you only in
   its final message, and the tombstone is fixed text. Unruled: may
@@ -346,11 +369,14 @@ S3–S8 · queued in order · 0/22
   own bench, the load-bearing approval there because the payload
   section was desk-authored. Its verify-flight-2 reconciliation
   gaps are filed as inbox lines
-  ([#293](https://github.com/wsher0901/roam/pull/293)). → next:
-  nothing owed.
+  ([#293](https://github.com/wsher0901/roam/pull/293)). On
+  2026-08-05 it reviewed the charter fix TWICE — round 1 returned
+  one finding (the grounded-fleet line hiding inside case (a), with
+  the exact clause to append), and round 2 returned **PASS on
+  `c6c56d7`** carrying the exhaustiveness check across all eight
+  baton renderings. → next: nothing owed.
 
 ## Next
 
-Review [#314](https://github.com/wsher0901/roam/pull/314) in the Web
-chat, then the merge word here; the box re-save follows. Then phase
-2 opens on your scope ruling.
+Paste the v5 charter into the cockpit box, then rule phase 2's
+scope. Nothing else is queued.
