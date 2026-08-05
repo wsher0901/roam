@@ -125,10 +125,54 @@ atomically:
   [the ledger](../record/history/README.md#the-ledger):
   <date HH:MM> · <story title> → <quadrant> · #N (stamp values are
   read from the shell clock, never typed)
+- **SYNTHESIS — carry the weld into the chronicle**
+  ([D-059](../record/DECISIONS.md#d-059--the-chronicle-layer)'s
+  ending rule, which nothing performed until it lived here).
+  FIRST NAME THE ITEMS. An ITEM is what
+  [D-059](../record/DECISIONS.md#d-059--the-chronicle-layer) ruling
+  1 defines — an event, a system piece (skill, command,
+  instruction, architecture, workflow), or a Roam piece — and A
+  WELD MAY TOUCH SEVERAL. List them, then run the match BELOW ONCE
+  PER ITEM; a weld that changed three items owes three synthesis
+  acts, not one.
+  Look each item up in [the census](../chronicle/INDEX.md):
+  - **it has a WRITTEN STORY** → INCORPORATE: one bullet on that
+    story's `## What changed, in order` spine, REWRITE its ending
+    blockquote (including the date in its heading), refresh the
+    frontmatter `updated:` line, and re-read its closing section —
+    `## Where it stands` or its variant — so it cannot contradict
+    the new ending. Never a second story.
+  - **it has a CENSUS ROW but no story yet** → update that row's
+    ENDING CELL. One cell, not a story. AND IF THIS WELD SETTLED
+    THE ITEM rather than advancing it, say so in the cell: the
+    story is then OWED, and
+    [HOME §Where information goes](../HOME.md#where-information-goes)
+    assigns it to the settling weld — but the scope of the
+    unwritten stories is a live founder ruling, so this step
+    RECORDS the debt and does not pre-empt it.
+  - **it has NEITHER, and you can name it** → ADD a census row on
+    the right shelf, filling all five columns (proposed story ·
+    type · span · current ending · confidence), and update the
+    file's own counts and stamp line, which a new row falsifies.
+    The census is a 2026-07-27 snapshot; without this, later items
+    are invisible to every future shelf bench.
+
+  THE ESCAPE IS NARROW AND IT IS NOT "NO ROW FOUND": it is for a
+  weld whose payload names NO item at all in ruling 1's sense — a
+  typo sweep, a dependency bump, a formatting pass. THAT is when
+  you write "no chronicle item" in the weld commit AND in the
+  history file, so a later shelf bench reads it where it looks. If
+  you can NAME an item, you are in case 3, never here. A ritual
+  that forces a false match is bad; one that lets any weld opt out
+  is worse.
+  THE STEP LIVES IN THIS ATOMIC COMMIT, not the tail, because a
+  story whose ending lags its own ledger line is exactly the
+  staleness this step exists to end.
 - Stage the whole move together — `git add -A docs/record/history
-  docs/ROADMAP.md docs/record/specs` before the commit — so no piece (history
-  file, ledger line, tick) is left unstaged; `check:ledger` is the net
-  if it is.
+  docs/ROADMAP.md docs/record/specs docs/chronicle` before the commit
+  — so no piece (history file, ledger line, tick, synthesis edit) is
+  left unstaged; `check:ledger` is the net for the ledger, and
+  nothing but this list is the net for the rest.
 Push. The arbiter applies to welds too: arm
 `gh pr merge --auto --squash --delete-branch` and let it fire on
 the weld commit's green (~35s), or `gh pr checks --watch` then
