@@ -6,39 +6,27 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-08-05 · 17:36 UTC by ship's tail · from work PC
-CHARTER v5 IS MERGED AND THE BOX IS STILL v4 — one paste closes it ·
-needs-you 2 · git outranks this board.
+Painted 2026-08-05 · 17:47 UTC by ship's tail · from work PC
+CHARTER v5 IS IN THE BOX — nothing owed but a ruling · needs-you 1 ·
+git outranks this board.
 How to read it → [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
 
-1. 🔴 **RE-SAVE THE COCKPIT BOX — the master is v5, the box is
-   still v4.** At claude.ai/code/routines → the "cockpit" routine,
-   replace the saved prompt with the complete v5 text
-   ([the charter](COCKPIT-CHARTER.md) holds it; the gate report
-   printed it in full). A master change that never reaches its box
-   fails SILENTLY, which is why this line exists at all.
-   (since 08-05)
-   → [the charter](COCKPIT-CHARTER.md) ·
-   [D-064](record/DECISIONS.md#d-064--the-box-master-class-and-setup-entry-contract)
+1. 🟡 **RULE PHASE 2'S SCOPE** — all 66 chronicle stories, or the
+   load-bearing dozen first. The standing order
+   ([D-060](record/DECISIONS.md#d-060--the-three-phase-standing-order))
+   opens phase 2 on this ruling and deliberately does not make it.
+   Phase 1 is closed and nothing is queued behind it, so this is the
+   only thing between here and the next bench. At this desk,
+   whenever. (since 08-05)
+   → [the census](chronicle/INDEX.md) · its 66 proposed stories
+   across four shelves, none written
 
-   **EXACTLY WHAT IS AND IS NOT EXPOSED MEANWHILE, because "the box
-   is stale" is too vague to act on.** A `--cloud` birth is already
-   safe: [liftoff](skills/liftoff.md) pastes the charter text from
-   the MASTER, so it gets v5 today. Only ROUTINE-FIRED seats (the
-   summon path) read the box. For those, `summon.yml`'s payload now
-   carries the live-baton-holder rule itself — deliberately, so the
-   fix would not wait on this paste — so a summoned seat meeting a
-   LIVE DESK is covered. WHAT IS NOT COVERED until the paste: a
-   summoned seat meeting a GROUNDED FLEET, which a v4 box still
-   tells it to seat over and rule 2 would let it redeploy. Do not
-   fire summon against a grounded fleet before the re-save.
-
-2. 🟡 **RULE PHASE 2'S SCOPE** — all 66 chronicle stories, or the
-   load-bearing dozen. The standing order says phase 2 opens on
-   your ruling. At this desk, whenever. (since 08-05)
-   → [D-060](record/DECISIONS.md#d-060--the-three-phase-standing-order)
+**THE BOX RE-SAVE IS DONE** — the founder confirmed the cockpit
+routine is at v5 on 2026-08-05. It was an act outside the repo, so
+the board could never derive it; it cleared on the founder's word,
+which is exactly how that class of item is meant to close.
 
 ## The baton
 
@@ -64,8 +52,9 @@ time the board says so with no bench under construction on it.
 
 ## Working on
 
-- NOTHING IN FLIGHT. The charter fix shipped at 17:36; what remains
-  of it is your paste, above. Phase 2 opens on your scope ruling.
+- NOTHING IN FLIGHT, AND NOTHING OWED BUT A RULING. The charter fix
+  shipped at 17:36 and its box paste is done. Phase 2 opens on your
+  scope ruling; phase 1 is closed behind it.
 
 The standing order says phase 2 opens on
    your ruling. At this desk, whenever. (since 08-05)
@@ -260,10 +249,11 @@ one phase per line:
   a case with stated behavior. That exhaustiveness check is the one
   this bench failed twice on its own.
   [#314](https://github.com/wsher0901/roam/pull/314)
-- ⏳ THE BOX RE-SAVE IS THE LAST STEP AND IT IS MANUAL — until the
-  paste, routine-fired seats read v4. Scoped precisely in Needs-you
-  above rather than left as "the box is stale". → its line in
-  Needs you
+- ✓ THE BOX RE-SAVE IS DONE — the cockpit routine carries v5 as of
+  2026-08-05, so routine-fired and `--cloud` seats now read the same
+  charter. The window between merge and paste was scoped precisely
+  rather than left as "the box is stale", and it closed the same
+  day.
 - ⏳ A SUPERSEDED SEAT HAS NO CHANNEL BUT SPEECH — it may write no
   board, so a finding it holds at retirement reaches you only in
   its final message, and the tombstone is fixed text. Unruled: may
@@ -378,5 +368,5 @@ S3–S8 · queued in order · 0/22
 
 ## Next
 
-Paste the v5 charter into the cockpit box, then rule phase 2's
-scope. Nothing else is queued.
+Rule phase 2's scope, and the first chronicle bench opens on your
+word.
