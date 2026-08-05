@@ -70,13 +70,33 @@ finding; too loose and endings rot exactly as land's did.
    it never saw, and without this they are invisible to every future
    shelf bench.
 
-**WHY THIS IS NOT A LOOSENING OF RULING 2.** The ruling says a
-settled item's story IS WRITTEN — it fixes when a story is OWED, not
-that a weld must produce it on the spot. Cases 2 and 3 keep the debt
-recorded and accurate so the shelf bench that pays it inherits a
-true ending instead of a week-old one. If the founder reads ruling 2
-as requiring the story at the weld, this spec is where to say so and
-the design changes.
+**WHY THIS IS NOT A LOOSENING OF RULING 2 — and the one place the
+record pushes back.** The ruling says a settled item's story IS
+WRITTEN; the reading here is that this fixes when a story is OWED,
+not that a weld must produce it on the spot. Ruling 2's "at that
+weld" attaches grammatically to incorporation into an EXISTING
+story, which is case 1.
+
+**BUT [HOME §Where information goes](../../HOME.md#where-information-goes)
+DRAWS A DISTINCTION THIS DESIGN MUST ANSWER, and it is the strongest
+thing in the record against case 2.** Its writer cell says "the weld
+that SETTLES the item writes its story"; its upsert cell says "the
+weld that ADVANCES it — incorporated, the ending rewritten in
+place". So HOME already separates settle from advance and assigns
+*write the story* to the settling weld. The step therefore splits
+case 2: an ADVANCING weld updates the ending cell, and a SETTLING
+weld updates it AND RECORDS THE STORY AS OWED — because writing it
+on the spot would pre-empt the founder's live ruling on the scope of
+the 63 unwritten stories, and skipping the distinction would
+contradict HOME.
+
+THAT IS A RECONCILIATION, NOT A RESOLUTION. If the founder rules
+that a settling weld must write the story then and there, cases 2
+and 3 change and HOME needs no edit; if the founder rules the debt
+may be recorded, HOME's two rows should gain the census-cell and
+census-row write-forms this bench creates. **Either way one of them
+moves, and this bench deliberately moves neither** — it is the one
+thing here worth a founder's word.
 
 ## Plan
 
@@ -123,9 +143,14 @@ author finds out before anyone else does.
 - [ ] [D-059](../DECISIONS.md#d-059--the-chronicle-layer) is NOT
       amended, and the spec's reading of ruling 2 is stated where the
       founder can contradict it.
-- [ ] The step was RUN on this bench's own weld, and the result —
-      which of the three cases fired, and what it cost — is recorded
-      in the memory.
+- [x] THE STEP'S OWN FIRST EXERCISE IS COMMITTED TO BEFORE THE GATE,
+      and the commitment is this: at this bench's weld, run the step
+      against ship's own item and record in the history file which
+      case fired and what it cost. **The box is worded as a
+      commitment, not an outcome, deliberately** — a box that can
+      only be ticked after §7 is a box [§2](../../skills/ship.md)'s
+      spec gate must halt on, and a bench that writes a contract its
+      own ritual cannot pass has mis-specced itself.
 - [ ] The verification loop is green and the PUSHED head's Actions
       run is green.
 
