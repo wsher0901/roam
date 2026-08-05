@@ -1,21 +1,26 @@
 ---
 type: memory
 id: chronicle-shelf-1
-updated: 2026-08-05 19:24 UTC · bench birth · work PC
+updated: 2026-08-05 19:35 UTC · canary claim · cloud lane
 ---
 
 # chronicle-shelf-1 — the calibration that re-rules the rest
 
 ## Status
 
-bench ready, no worker yet — birthed 2026-08-05 by the work PC
-control tower
+claimed by cloud — 2026-08-05
 
-**DELIBERATELY NOT CLAIMED BY ITS AUTHOR.** This bench measures what
-a shelf costs from a COLD seat, and the session that birthed it
-spent 2026-08-05 inside most of Shelf III's subjects. Claiming it
-here would reproduce the exact confound the pilot flagged and
-disowned. A fresh sitting or a cloud lane takes it.
+Canary pushed 19:35 UTC. Waiting for the baton-holder's ack in this
+Status before any real work
+([parallel-lanes §Canary](../skills/parallel-lanes.md#canary-handshake-both-sides)).
+
+**THE COLD-SEAT CONDITION IS MET.** This lane woke on the
+`lane:cloud` label with no prior context: it has read the PR, this
+memory, [LAWS](../LAWS.md) and
+[parallel-lanes](../skills/parallel-lanes.md), and nothing else.
+Every Shelf III source it opens from here is opened for the first
+time, which is exactly the measurement the bench exists to take —
+so the gathering clock starts at the ack, not before.
 
 ## What this task is
 
