@@ -93,12 +93,17 @@ row plausibly matches and the work is not chronicle-shaped, say so
 in the weld commit and move on** — a ritual that forces a false
 match is worse than one that records a miss.
 
-### 2 · Update the Done-means language ship already carries
+### 2 · Widen §7's staging list
 
-[ship §2](../../skills/ship.md)'s spec gate and §7's staging list
-gain the chronicle file to their `git add` set, so a synthesis edit
-cannot be left unstaged — the same net `check:ledger` provides for
-the ledger line.
+[ship §7](../../skills/ship.md)'s `git add` set gains
+`docs/chronicle`, so a synthesis edit cannot be left unstaged. THE
+LIST IS THE ONLY NET HERE — `check:ledger` catches a missing ledger
+line, but nothing mechanical catches a story whose ending was
+rewritten and never staged, so the list says so in as many words.
+
+*(This step originally also named ship §2's spec gate. §2 has no
+staging command; corrected here rather than left to read as though
+it did.)*
 
 ### 3 · Prove it on this bench's own weld
 

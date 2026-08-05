@@ -125,10 +125,33 @@ atomically:
   [the ledger](../record/history/README.md#the-ledger):
   <date HH:MM> · <story title> → <quadrant> · #N (stamp values are
   read from the shell clock, never typed)
+- **SYNTHESIS — carry the weld into the chronicle**
+  ([D-059](../record/DECISIONS.md#d-059--the-chronicle-layer)'s
+  ending rule, which nothing performed until it lived here). Find
+  the ITEM this bench changed in
+  [the census](../chronicle/INDEX.md), then match ONE of three
+  cases:
+  - **it has a written story** → INCORPORATE: one bullet on that
+    story's `## What changed, in order` spine, and REWRITE its
+    ending blockquote. Never a second story.
+  - **it has a census row but no story yet** → update that row's
+    ENDING CELL. One cell, not a story.
+  - **it has neither** → ADD a census row on the right shelf,
+    carrying the ending this weld just produced. The census is a
+    2026-07-27 snapshot; without this, later items are invisible to
+    every future shelf bench.
+
+  IF NO ROW PLAUSIBLY MATCHES and the work is not chronicle-shaped,
+  SAY SO IN THE WELD COMMIT and move on — a ritual that forces a
+  false match is worse than one that records a miss. THE STEP LIVES
+  IN THIS ATOMIC COMMIT, not the tail, because a story whose ending
+  lags its own ledger line is exactly the staleness this step
+  exists to end.
 - Stage the whole move together — `git add -A docs/record/history
-  docs/ROADMAP.md docs/record/specs` before the commit — so no piece (history
-  file, ledger line, tick) is left unstaged; `check:ledger` is the net
-  if it is.
+  docs/ROADMAP.md docs/record/specs docs/chronicle` before the commit
+  — so no piece (history file, ledger line, tick, synthesis edit) is
+  left unstaged; `check:ledger` is the net for the ledger, and
+  nothing but this list is the net for the rest.
 Push. The arbiter applies to welds too: arm
 `gh pr merge --auto --squash --delete-branch` and let it fire on
 the weld commit's green (~35s), or `gh pr checks --watch` then

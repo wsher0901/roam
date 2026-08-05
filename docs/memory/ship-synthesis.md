@@ -1,7 +1,7 @@
 ---
 type: memory
 id: ship-synthesis
-updated: 2026-08-05 19:00 UTC · bench birth · work PC
+updated: 2026-08-05 19:06 UTC · the step is written · work PC
 ---
 
 # ship-synthesis — making the ending rule something a ritual performs
@@ -40,10 +40,43 @@ founder can contradict it.
 
 ## Left / idle
 
-Everything — newly born. Plan steps 1–3 in
-[the spec](../record/specs/ship-synthesis.md).
+Plan steps 1 and 2 are done — the step is in
+[ship §7](../skills/ship.md#7--on-approval--the-atomic-weld) and the
+staging list is widened. **STEP 3 RUNS AT THIS BENCH'S OWN WELD:**
+the step gets exercised against the ship ritual itself, and which of
+the three cases fires — plus what it cost — is recorded here before
+the gate report goes out.
 
 ## The story
+
+2026-08-05 19:06 UTC · THE STEP IS WRITTEN, AND HOME HAD ALREADY
+ASSIGNED THE DUTY · work PC — [ship §7](../skills/ship.md#7--on-approval--the-atomic-weld)
+now carries the synthesis step, inside the atomic commit, with the
+three cases and the no-match escape.
+
+**THE FIND THAT MADE THE DESIGN CERTAIN RATHER THAN MERELY
+DEFENSIBLE.** [HOME](../HOME.md) already names THE WELD as the
+chronicle's writer — twice. Its files table says the writer is "the
+weld that settles or advances an item", and its
+[§Where information goes](../HOME.md#where-information-goes)
+routing table says "the weld that settles the item writes its
+story · the weld that advances it — incorporated, the ending
+rewritten in place; never a second story". So the routing law had
+ALREADY assigned this duty to the weld. The gap was never a missing
+rule; it was a named writer with no written procedure — ship was
+told to do it nowhere, by a table that said it did.
+
+That also settles the not-a-decision question harder than the sweep
+alone did: implementing a duty two tables already assign is not a
+new convention.
+
+**WHY THE STEP SITS IN THE ATOMIC COMMIT rather than the tail.** A
+story whose ending lags its own ledger line is precisely the
+staleness this exists to end — so the ending and the ledger line
+land together or the step has not done its job. The staging list
+gains `docs/chronicle` for the same reason, and says plainly that
+IT IS THE ONLY NET: `check:ledger` catches a missing ledger line,
+but nothing mechanical catches a rewritten ending left unstaged.
 
 2026-08-05 19:00 UTC · bench birth · work PC — ordered ahead of the
 story fleet on the founder's word, minutes after the pilot welded.
