@@ -80,9 +80,17 @@ jobs:
           # ABOUT WHAT THE NEW SEAT SUPERSEDES — only the board grants
           # that (D-051), and a hardcoded supersession claim made the
           # charter's rule 8 order a newborn seat to retire a
-          # predecessor that did not exist (D-075, #314). The seat
-          # reads THE BATON and matches one of rule 1's three cases.
-          payload="Summoned cockpit. Derive state from origin; the board's flight context is the authoritative flight plan (#193). Read THE BATON and match one of charter rule 1's three cases before doing anything else."
+          # predecessor that did not exist (D-075, #314).
+          #
+          # IT CARRIES THE SAFETY RULE ITSELF RATHER THAN CITING THE
+          # CHARTER, and that is deliberate: a summon-fired seat reads
+          # the ROUTINE'S SAVED BOX, which lags this repo until the
+          # founder re-saves it by hand. A payload that said "match
+          # rule 1's three cases" would name cases the box may not yet
+          # contain — the very wait this edit was kept out of the
+          # version bump to avoid. Stated as a rule, it is true of
+          # every charter version, before and after the paste.
+          payload="Summoned cockpit. Derive state from origin; the board's flight context is the authoritative flight plan (#193). Read THE BATON section FIRST: if the board names ANY live baton-holder — a cockpit OR a control tower at a desk — HOLD AND REPORT; seat nothing, supersede nothing, write nothing."
           if [ -n "${MANDATE}" ]; then
             payload="${payload} Mandate: ${MANDATE}"
           fi

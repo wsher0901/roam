@@ -17,17 +17,20 @@ shipped: —
 [D-046](../DECISIONS.md#d-046--flight-cockpit-the-control-tower-online) ·
 [D-064](../DECISIONS.md#d-064--the-box-master-class-and-setup-entry-contract) ·
 [D-065](../DECISIONS.md#d-065--the-box-master-diet) ·
-[the MASTER ITEM](../../IDEAS.md)
+[D-075](../DECISIONS.md#d-075--the-self-seat-duty-gains-a-live-desk-case) ·
+[the summon test's record](../probes/summon-test.md)
 
 ## Goal
 
 The [cockpit charter](../../COCKPIT-CHARTER.md) takes its successor
 and its predecessor to always be COCKPITS. Every seat that reads it
 therefore has no case for the commonest state this workshop is
-actually in: **a live control tower at a desk**. Five findings from
-two seats are all that one assumption. This bench repairs it in one
-**v5** edit, plus one workflow edit that is deliberately NOT part of
-the version bump.
+actually in: **a live control tower at a desk**. FOUR of the five
+findings this bench repairs are that one assumption; the fifth (a
+newborn cockpit is never routed to its git-identity step) is an
+unrelated gap, fixed alongside them because every separate charter
+merge opens another manual re-save window. One **v5** edit, plus one
+workflow edit that is deliberately NOT part of the version bump.
 
 THE 🔴 IS NOT HYPOTHETICAL. The summoned cockpit of 2026-08-05
 reported that rule 1, read literally, told it to seat itself and
@@ -130,34 +133,37 @@ then point there and shrink.
 
 ## Done means
 
-- [ ] Rule 1 has THREE cases and a live desk falls into the second;
+- [x] Rule 1 has THREE cases and a live desk falls into the second;
       the case is keyed on the BATON section, not on the word
       "cockpit".
-- [ ] The stray-birth sentence is speakable against a seat with no
+- [x] The stray-birth sentence is speakable against a seat with no
       session url.
-- [ ] Rule 1's first act routes the seat to its git-identity step as
+- [x] Rule 1's first act routes the seat to its git-identity step as
       a POINTER, not a procedure.
-- [ ] Rule 8's tombstone no longer promises a successor cockpit that
+- [x] Rule 8's tombstone no longer promises a successor cockpit that
       a desk takeover never summons, and the SUCCESSOR DUTY has a
       reading when the successor is a desk.
-- [ ] `.github/workflows/summon.yml` no longer asserts a
+- [x] `.github/workflows/summon.yml` no longer asserts a
       supersession, and neither the version bump nor the re-save
       depends on that edit.
-- [ ] The charter carries a **v5** version-history row, and every
+- [x] The charter carries a **v5** version-history row, and every
       rule not named above is BYTE-IDENTICAL — proved by reading the
       diff, not by assertion.
-- [ ] [D-075](../DECISIONS.md#d-075--the-self-seat-duty-gains-a-live-desk-case)
+- [x] [D-075](../DECISIONS.md#d-075--the-self-seat-duty-gains-a-live-desk-case)
       exists, its Affects line matches the edits actually made, and
       every file it names is changed in this PR.
-- [ ] `docs/record/probes/summon-test.md` exists and holds the
+- [x] `docs/record/probes/summon-test.md` exists and holds the
       measurement, and its inbox line closes. THE BOARD'S PARKED
       BLOCK SHRINKS AT SHIP'S TAIL, not on this branch — the board
       is repainted by rituals and never hand-edited, so a task
       branch may not touch it.
 - [ ] THE GATE REPORT PRINTS THE COMPLETE NEW CHARTER TEXT for the
       box paste (the FULL COPY law), and the board gains a Needs-you
-      line for the re-save the moment this merges.
-- [ ] The verification loop is green and the PUSHED head's Actions
+      line for the re-save the moment this merges. **UNTICKED ON
+      PURPOSE:** both happen OFF this branch — the print rides the
+      gate report, the Needs-you line rides ship's tail — so ticking
+      it here would be a claim the branch cannot support.
+- [x] The verification loop is green and the PUSHED head's Actions
       run is green.
 
 ## Why this IS a decision — the note above was wrong, and the sweep is what corrected it

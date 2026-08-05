@@ -4012,6 +4012,10 @@ row) · [HOME](../HOME.md#the-cockpits-api-paths--recovery-ladder)
 (R4b's tombstone copy, which the charter deliberately duplicates) ·
 `.github/workflows/summon.yml` (the payload's supersession claim) ·
 [the bench spec](specs/charter-cockpit-assumption.md) ·
-[IDEAS](../IDEAS.md) (the MASTER ITEM line, closed by this bench) ·
+[the summon test's probe record](probes/summon-test.md) (new, and
+the evidence this entry rests on) ·
+[IDEAS](../IDEAS.md) (THREE lines closed into the outcome ledger by
+this bench: the MASTER ITEM, the homeless summon measurement, and
+the charter's version-table order) ·
 [DASHBOARD](../DASHBOARD.md) (Needs-you gains the box re-save at the
 next ritual repaint — the board is never hand-edited) · this entry.

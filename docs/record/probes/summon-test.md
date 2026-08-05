@@ -94,9 +94,14 @@ produced it at the next fire.
 The seat held, refused to seat itself, refused the supersession its
 own payload asserted, and reported. It wrote no board — correctly —
 so its only channel was its final message, which the founder relayed.
-EVERY CLAIM BELOW WAS RE-VERIFIED AGAINST THE CHARTER AND WORKFLOW
-TEXT at the desk before being written anywhere; none rests on relay
-alone.
+EVERY STRUCTURAL CLAIM BELOW WAS RE-VERIFIED AGAINST THE CHARTER,
+THE WORKFLOW OR THE HOOK at the desk before being written anywhere.
+ONE CLAIM CANNOT BE, AND IS MARKED WHERE IT APPEARS: what git
+identity the seat actually booted with is observable only from
+inside that container, so finding 4's `Claude <noreply@anthropic.com>`
+rests on relay plus a documented property of cloud seats
+([machine-setup](../../skills/machine-setup.md) says the image sets
+it globally) — never on a desk-side observation.
 
 1. **🔴 Rule 1 was blind to a live desk.** It knew "a live cockpit"
    (→ stop) or "no live cockpit" (→ self-seat). A working control
@@ -114,7 +119,9 @@ alone.
    demanded `<its url>`, and a desk has no session URL; it also
    opened "A live cockpit already holds this board", false of a desk.
 4. **🟡 Nothing routed a newborn cockpit to its identity step.** It
-   booted as `Claude <noreply@anthropic.com>`;
+   booted as `Claude <noreply@anthropic.com>` — RELAYED, not
+   observed from the desk, and consistent with the image's global
+   gitconfig rather than proof of it;
    [machine-setup](../../skills/machine-setup.md) says a cloud seat
    sets its own repo-local identity ONCE PER SEAT BIRTH, but a
    cockpit reads the charter, and the charter sent it to LAWS, the
@@ -127,11 +134,23 @@ alone.
    is whatever the clone happened to carry. Filed separately — it is
    a different file and a different fix.
 
-**FINDINGS 1–4 WERE ONE ASSUMPTION**, which is why they were fixed
-together: the charter took its successor and its predecessor to
-always be COCKPITS.
+**FINDINGS 1, 2 AND 3 ARE ONE ASSUMPTION** — the charter took its
+successor and its predecessor to always be COCKPITS. FINDING 4 IS
+NOT: the missing identity pointer is an unrelated gap, and it was
+fixed alongside them for a different reason, named in
 [D-075](../DECISIONS.md#d-075--the-self-seat-duty-gains-a-live-desk-case)
-is the ruling; the charter's v5 row is the repair.
+— every separate charter merge opens another manual re-save window,
+so one edit and one paste beats four of each. Saying "all four were
+one assumption" would be tidier and false.
+
+A NOTE ON "FIVE FINDINGS", because two different fives are in
+circulation. THE SEAT'S FIVE are the list above (it includes the
+hook, and it does not include the tombstone). THE BENCH'S FIVE are
+what
+[D-075](../DECISIONS.md#d-075--the-self-seat-duty-gains-a-live-desk-case)
+repaired (it includes flight 3's tombstone defect, carried over from
+an older inbox item, and it does not include the hook, which is a
+different file). Four items are common to both.
 
 ## WHAT THIS TEST ACTUALLY BOUGHT
 

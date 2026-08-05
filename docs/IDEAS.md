@@ -458,10 +458,6 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   the "git outranks it" habit protects a reader. Decide whether
   that is a gap to close or a property to keep. (2026-07-31, the
   mechanism census) → [ATLAS §7](ATLAS.md)
-- ⏳ CHARTER VERSION-TABLE ORDER — the v4 row sits above v3 in
-  the [cockpit charter](COCKPIT-CHARTER.md)'s history table;
-  straighten it at the charter's next natural touch.
-  (2026-07-30, the external review)
 - ⏳ The Roam stage map — the S1→S8 flowchart dropped from the
   board at [#250](https://github.com/wsher0901/roam/pull/250),
   since WHERE WE ARE is the bars and nothing else; stage order
@@ -597,6 +593,11 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
 The outcome ledger — one line each, newest first. A closed idea
 keeps its answer, never its narrative.
 
+- 🟢 The charter's version table is in order — v4 had been sitting
+  above v3 since 2026-07-30; the whole table is now newest-first.
+  Taken at the v5 touch after the pre-gate critic pointed out it
+  was the SECOND charter touch to skip it. →
+  [#314](https://github.com/wsher0901/roam/pull/314)
 - 🟢 The summon test's measurement got a record home — a short
   [probe record](record/probes/summon-test.md) carrying the
   seven-moment ignition timeline (push 13:54:05 → a live cockpit at
@@ -618,7 +619,7 @@ keeps its answer, never its narrative.
   one-line YAML fix would not wait on a manual box paste. The
   standing choice is
   [D-075](record/DECISIONS.md#d-075--the-self-seat-duty-gains-a-live-desk-case),
-  which amends D-051's two-case self-seat duty. →
+  which amends [D-051](record/DECISIONS.md#d-051--self-seat-birth)'s two-case self-seat duty. →
   [#314](https://github.com/wsher0901/roam/pull/314)
 - 🟢 The deterministic freeze drill — BUILT AND FLOWN as flight 4.
   The bench held at a checkpoint for its full fifteen minutes and

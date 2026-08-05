@@ -1,14 +1,14 @@
 ---
 type: memory
 id: charter-cockpit-assumption
-updated: 2026-08-05 16:05 UTC · payload complete · work PC
+updated: 2026-08-05 16:25 UTC · ship · critic round · work PC
 ---
 
 # charter-cockpit-assumption — teaching the charter that a desk exists
 
 ## Status
 
-claimed — work PC control tower, 2026-08-05
+complete, awaiting merge — 2026-08-05
 
 Born bench-first at the desk on the founder's "go", straight off the
 🔴 the summon test surfaced. This seat authors the payload itself,
@@ -54,6 +54,74 @@ session-start hook never syncing a cloud seat is a separate,
 separately-filed defect in a different file.
 
 ## The story
+
+2026-08-05 16:25 UTC · THE CRITIC ROUND · work PC — the pre-gate
+critic ([D-044](../record/DECISIONS.md#d-044--the-pre-gate-critic-goes-live))
+returned **eleven findings, two of them 🔴**, and BOTH RED ONES WERE
+HOLES IN THE FIX ITSELF rather than in the prose around it. All
+eleven repaired; none dismissed.
+
+**🔴 ONE — THE WORKFLOW FIX DEPENDED ON THE PASTE IT WAS BUILT TO
+OUTRUN.** The whole reason `summon.yml` was kept OUT of the version
+bump is that a one-line YAML fix must not wait on a manual box
+re-save. The new payload then said "match one of charter rule 1's
+THREE cases" — and a summon-fired seat reads the SAVED BOX, which
+carries v4's two cases until the founder pastes. So every summon
+between merge and paste would have been handed an instruction its
+own charter could not satisfy, on the exact path this bench exists
+to fix. THE REPAIR: the payload now carries the SAFETY RULE ITSELF —
+"if the board names ANY live baton-holder, cockpit or desk, HOLD AND
+REPORT" — which is true of every charter version, before and after
+the paste. The window is closed on merge, not on paste.
+
+**🔴 TWO — THE THREE CASES WERE NOT EXHAUSTIVE, and the gap was the
+desk takeover.** Case (a) keyed on the ABSENCE of a live holder
+("names NO live baton-holder of any kind"). But
+[handoff §4's case table](../skills/handoff.md#4--repaint-dashboard-the-board-spec--single-source)
+paints `COCKPIT SUPERSEDED — desk takeover …` as the board's whole
+BATON content from the moment a desk adopts the queue until its
+repaint — a line naming a DEAD cockpit and no live seat in so many
+words. A newborn would have matched (a) and self-seated over a desk
+mid-takeover: precisely the failure
+[D-075](../record/DECISIONS.md#d-075--the-self-seat-duty-gains-a-live-desk-case)
+was minted to prevent, surviving inside its own fix. THE REPAIR:
+(a) now keys on the POSITIVE tokens the table actually paints
+(`self-seat pending`, `No live seat`), (b) names the takeover line
+explicitly, and a catch-all sends anything unmatched to (b) — "IF NO
+CASE MATCHES CLEANLY, TREAT IT AS (b) AND ASK", because holding
+costs a message and seating costs the baton. THE GENERAL LESSON:
+matching on an ABSENCE is fragile where a case table fixes the
+wording; match on what the line SAYS.
+
+**The nine others, and what each cost.** D-075's Affects line did
+not match the edits (the probe was missing, and three IDEAS lines
+closed rather than one) · a plain `D-051` in IDEAS, weave-rule ·
+this memory pointed a cold reader at a MASTER ITEM this same PR had
+closed, and did not list the probe that now holds those findings ·
+HOME's stated reason for duplicating the tombstone — "without
+reading anything" — was falsified by the new board-derived middle
+line two lines below it, now "without reading anything but the
+board", which rule 8 has already put in hand · a diet violation in
+rule 8 (a desk-successor clause whose reader is a desk, and a desk
+never reads the charter) · the charter's version table had v4 above
+v3, an inbox line earmarked for this exact touch and skipped once
+before — taken · a HOME anchor pointing at pickup §6 rather than its
+desk-takeover subsection, which `check:links` cannot catch because
+both resolve · and two overclaims in the probe: "findings 1–4 were
+one assumption" (finding 4 is not) and "every claim re-verified"
+(the seat's git identity is observable only from inside its
+container, now marked as relayed).
+
+**AND ONE PROCESS CATCH.** The critic flagged that the memory Status
+still read `claimed` and the Done-means were unticked while the
+critic was already running — ship §2 and §4 precede §6. Both were
+run late; the sequence is noted here rather than smoothed, because
+the founder sees those boxes at the gate.
+
+**Ticking honesty:** one Done-means box is DELIBERATELY UNTICKED —
+the FULL COPY print and the board's re-save line both happen OFF
+this branch, so ticking it would be a claim the branch cannot
+support.
 
 2026-08-05 16:05 UTC · THE SWEEP OVERTURNED THE BENCH'S OWN
 NOT-A-DECISION RULING · work PC — this bench opened stating, in its
@@ -110,8 +178,10 @@ silently.
   a fenced box master: edits ride PRs, the box is re-saved after.
 - [the spec](../record/specs/charter-cockpit-assumption.md) — the
   contract, the six plan steps, and the not-a-decision note.
-- [the MASTER ITEM in IDEAS](../IDEAS.md) — all five findings as
-  the harvest filed them, each verified against source.
+- [the summon test's record](../record/probes/summon-test.md) — the
+  findings' permanent home, with the fire measurement and the
+  attribution of each claim. The IDEAS MASTER ITEM that carried them
+  was CLOSED by this bench into that file's outcome ledger.
 - [`.github/workflows/summon.yml`](https://github.com/wsher0901/roam/blob/main/.github/workflows/summon.yml)
   — the non-charter half.
 - [D-051](../record/DECISIONS.md#d-051--self-seat-birth) — the board

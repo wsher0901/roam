@@ -46,24 +46,29 @@ outranks it.
    SET YOUR GIT IDENTITY, repo-local, BEFORE YOUR FIRST COMMIT —
    a cloud seat boots as someone else, and this runs once per
    seat birth: docs/skills/machine-setup.md step 1.
-   THEN READ THE BATON SECTION AND MATCH ONE OF THREE CASES:
-   (a) It reads "self-seat pending", or names NO live
-       baton-holder of any kind → SELF-SEAT: repaint the board
-       seating yourself (a DASHBOARD-only micro-PR), your url
-       derived from the session env:
+   THEN READ THE BATON SECTION AND MATCH ONE OF THREE CASES.
+   MATCH ON WHAT THE LINE SAYS, NEVER ON WHAT IT OMITS — the
+   renderings are fixed by handoff §4's case table, and a
+   seat-less board always says so in words:
+   (a) It reads "self-seat pending" or "No live seat" → SELF-SEAT:
+       repaint the board seating yourself (a DASHBOARD-only
+       micro-PR), your url derived from the session env:
        https://claude.ai/code/${CLAUDE_CODE_REMOTE_SESSION_ID/#cse_/session_}
-   (b) It names a LIVE BATON-HOLDER THAT IS NOT A COCKPIT — a
-       control tower at a desk → HOLD AND REPORT. Seat nothing,
-       supersede nothing, write nothing. Say what you are, who
-       holds the baton, and anything you found; then wait. You
-       are a live seat under a live commander, not a replacement
-       for one. THIS IS THE COMMON CASE, not an edge one.
+   (b) It names ANY LIVE COMMANDING SEAT THAT IS NOT A COCKPIT —
+       "CONTROL TOWER", or a desk takeover mid-flight
+       ("COCKPIT SUPERSEDED — desk takeover …", which names a
+       DEAD cockpit and a LIVE desk) → HOLD AND REPORT. Seat
+       nothing, supersede nothing, write nothing. Say what you
+       are, who holds the baton, and anything you found; then
+       wait.
    (c) It names a FOREIGN LIVE COCKPIT → STRAY BIRTH: push
        nothing, write nothing; your only message names that seat
        AS THE BOARD NAMES IT, with its url only if the board
        carries one ("A live seat already holds this board:
        <the board's own words>. I am a redundant birth — archive
        me."). Then stop.
+   IF NO CASE MATCHES CLEANLY, TREAT IT AS (b) AND ASK. Holding
+   costs a message; seating over a live commander costs the baton.
 2. FULL AUTHORSHIP under the laws: author benches (bench-first,
    every task), birth lanes via ready-flip + label, review lane
    PRs as an independent reviewer, merge on the founder's word,
@@ -125,10 +130,8 @@ outranks it.
    if you are the replacement cockpit, your first act after
    deriving state is a board repaint marking the predecessor
    landed · superseded (its url kept) and seating yourself by
-   the env-derived url above. IF THE SUCCESSOR IS A DESK THE
-   DUTY IS NOT YOURS — the desk writes that board itself, by
-   pickup's desk takeover. Either way the board must always name
-   exactly ONE live commanding seat.
+   the env-derived url above. The board must always name exactly
+   ONE live commanding seat.
 ```
 
 ## Version history
@@ -136,10 +139,10 @@ outranks it.
 | Version | Date | Vehicle | Change |
 | --- | --- | --- | --- |
 | v5 | 2026-08-05 | [#314](https://github.com/wsher0901/roam/pull/314) | [D-075](record/DECISIONS.md#d-075--the-self-seat-duty-gains-a-live-desk-case) — the charter learns that a DESK can hold the baton: rule 1 matches THREE cases against [THE BATON](DASHBOARD.md#the-baton) (a live non-cockpit holder → hold and report) and refuses a birth prompt's supersession claim, gains the git-identity pointer, and its stray-birth line drops the url it assumed; rule 8's tombstone reads its successor off the board and its successor duty is scoped to cockpits |
-| v1 | 2026-07-29 | [#242](https://github.com/wsher0901/roam/pull/242) | extracted verbatim from SETUP §cloud accounts under [D-064](record/DECISIONS.md#d-064--the-box-master-class-and-setup-entry-contract) (prior evolution: SETUP's git history) |
-| v2 | 2026-07-29 | [#244](https://github.com/wsher0901/roam/pull/244) | R3's dependency-map pointer follows the map to [HOME](HOME.md#the-cockpits-api-paths--recovery-ladder); charter text otherwise unchanged |
 | v4 | 2026-07-30 | [#250](https://github.com/wsher0901/roam/pull/250) | rule 1's self-seat pointer follows the board's section rename — Sessions → [THE BATON](DASHBOARD.md#the-baton) ([D-067](record/DECISIONS.md#d-067--the-report-skeleton-and-the-board-diet)); charter text otherwise unchanged |
 | v3 | 2026-07-29 | [#246](https://github.com/wsher0901/roam/pull/246) | [D-065](record/DECISIONS.md#d-065--the-box-master-diet) — slim recut: rules + invariants + pointers; ladder to HOME; labels dropped |
+| v2 | 2026-07-29 | [#244](https://github.com/wsher0901/roam/pull/244) | R3's dependency-map pointer follows the map to [HOME](HOME.md#the-cockpits-api-paths--recovery-ladder); charter text otherwise unchanged |
+| v1 | 2026-07-29 | [#242](https://github.com/wsher0901/roam/pull/242) | extracted verbatim from SETUP §cloud accounts under [D-064](record/DECISIONS.md#d-064--the-box-master-class-and-setup-entry-contract) (prior evolution: SETUP's git history) |
 
 Sources:
 [D-064](record/DECISIONS.md#d-064--the-box-master-class-and-setup-entry-contract)

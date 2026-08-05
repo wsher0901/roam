@@ -826,7 +826,9 @@ cockpit by accident.
 - **TOMBSTONE** — once you have landed superseded, your FINAL
   message is this, alone, with nothing after it. THE CHARTER
   CARRIES IT TOO, deliberately: a superseded session must be able
-  to say it without reading anything. The opening and the close
+  to say it WITHOUT READING ANYTHING BUT THE BOARD — which rule 8
+  has already put in its hands, since the wake-rule reads the board
+  first. The opening and the close
   are fixed; THE MIDDLE LINE IS READ OFF THE BOARD, because a
   successor is not always a cockpit
   ([D-075](record/DECISIONS.md#d-075--the-self-seat-duty-gains-a-live-desk-case)).
@@ -860,7 +862,7 @@ cockpit by accident.
   that marks the predecessor landed · superseded with its session
   URL and seats you. If the successor is a DESK the duty is not
   yours: the desk writes that board itself, by
-  [pickup](skills/pickup.md#6--fleet-resume-on-the-founders-answer)'s
+  [pickup](skills/pickup.md#the-desk-takeover--a-live-cockpit-holding-decisions)'s
   desk takeover. Either way the board must always name exactly one
   live commanding seat. Your
   OWN url, here and at any seating, is derived from the session
