@@ -19,6 +19,77 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
 
 ## Open
 
+- ⏳ A SEAT THAT CLAIMS THE BATON HAS ALREADY MADE THE BOARD STALE
+  BY CLAIMING IT, so [pickup §4](skills/pickup.md#4--repaint-if-stale)'s
+  "repaint if stale" is the wrong test for the BATON section — this
+  sitting judged the board fresh because the fleet state matched git
+  exactly, and left "No live seat" painted while a control tower was
+  sitting at the desk working the whole bench. The fleet half of the
+  judgement was right; the baton half cannot be judged, because the
+  claim is what invalidates it. Probably pickup should paint the
+  plain-claim row UNCONDITIONALLY at §1, and leave §4's judgement to
+  everything else. (2026-08-05, the work PC control tower) →
+  [handoff §4's case table](skills/handoff.md#4--repaint-dashboard-the-board-spec--single-source)
+- ⏳ A LANE'S STAND-DOWN COMMENT SHOULD BE A DUTY, NOT A COURTESY —
+  a rejected push leaves NO server-side trace, so when a fence stops
+  a live worker the ONLY evidence that the wake-lock fired is
+  whatever that worker says before it dies. Flight 4 proved this
+  twice in one flight, in both directions, and the finding survives
+  only because the lane happened to write a PR comment at 21:17:42Z
+  after the cockpit had landed; its final commit died unpushed. Had
+  it stood down silently the record would show a clean chain of
+  accepted pushes. The lane law's self-termination clause says
+  "self-terminates after pushing what exists" and never "say what
+  stopped you". (2026-08-05, flight 4's lane) →
+  [the lane's own account](https://github.com/wsher0901/roam/pull/303#issuecomment-5184732402)
+- ⏳ GITHUB'S EVENTS FEED IS NOT A COMPLETE PUSH LOG, so no ritual
+  should ever treat it as a ledger — flight 4's CHECKPOINT push, the
+  single most important push of that drill, has no `PushEvent` in
+  the feed, while its neighbours on the same branch before and after
+  both do and the feed's window covers the whole sitting. It is a
+  useful CORROBORATING instrument (it carries a server-side accept
+  time and a `before` SHA, which is how the exit push was proven a
+  clean fast-forward) but the git objects are the primary source.
+  Worth a sentence wherever a seat is told to derive push times.
+  (2026-08-05, the welding desk) →
+  [the drill's log](record/probes/flight-4-freeze.md)
+- ⏳ TWO SEATS TIMING THE SAME WINDOW WILL DERIVE TWO DIFFERENT
+  CLOSES, and neither is wrong — flight 4's cockpit put the close at
+  21:08:52 and the lane at 21:09:32, ~40 seconds apart, because one
+  counted from the checkpoint push and the other from its first read
+  of origin. Both obeyed the derivation law by reading their own
+  clock. A lane that trusted the board's close over its own would
+  have exited early. Whenever a window is specced, it is worth
+  saying WHICH EVENT starts it. (2026-08-05, flight 4's lane) →
+  [the drill's log](record/probes/flight-4-freeze.md)
+- ⏳ A LANE WAITING ON A SIGNAL SHOULD POLL WITH `git ls-remote`,
+  NEVER `git fetch` — `ls-remote` reads the remote's ref without
+  writing anything into the local repository, so no later step can
+  fast-forward past the very thing the lane was watching for. Flight
+  4's hold used it and its no-rebase guarantee therefore held BY
+  CONSTRUCTION rather than by the lane's discipline, which for a
+  drill a single reflexive `git pull` would destroy is the whole
+  difference. Candidate line for
+  [§Wake-lock](skills/parallel-lanes.md#wake-lock--parking).
+  (2026-08-05, flight 4's lane) →
+  [the drill's log](record/probes/flight-4-freeze.md)
+- ⏳ §CANARY DISAGREES WITH ITSELF ABOUT THE ACK TOKEN'S MIDDLE
+  FIELD — its canonical block writes `airborne · <url> · <date>`
+  while its baton-holder bullet writes
+  `airborne · <vehicle or url> · <date>`. Flight 4's ack wrote a
+  vehicle (`cloud`), canonical under the bullet and not under the
+  block. Nothing broke, because the contract anchors the MATCH at
+  `airborne ·` — but the section a lane's watcher actually reads
+  cannot be quoted from one place without choosing which of its two
+  forms to believe. (2026-08-05, flight 4's lane) →
+  [§Canary](skills/parallel-lanes.md#canary-handshake-both-sides)
+- ⏳ A CLOUD LANE'S REMOTE IS NOT A CONSTANT ACROSS FLIGHTS —
+  flight 1 observed a local HTTP git proxy on `127.0.0.1`, flight 4
+  observed `github.com` directly, same spawn route, a day apart. Why
+  it changed is not readable from a lane. Worth knowing before any
+  doctrine is written that assumes one or the other.
+  (2026-08-05, flight 4's lane) →
+  [the drill's log](record/probes/flight-4-freeze.md)
 - ⏳ THE TWO API PATHS ARE NOT INTERCHANGEABLE, AND THE LADDER SAYS
   THEY ARE — [HOME's ladder](HOME.md#the-cockpits-api-paths--recovery-ladder)
   states "each API-only act runs on either path". From a
@@ -44,8 +115,13 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   word landed at 21:11 against a 21:08:52 close. The fix is
   probably ordering, not duration — fire the cockpit BEFORE the
   lane is licensed, so the tower is seated when the window opens.
-  (2026-08-04, flight 4's cockpit) →
-  [the drill's log](https://github.com/wsher0901/roam/pull/303)
+  THE LANE'S HALF CONFIRMS IT FROM THE OTHER SIDE: every mechanical
+  link held — the lane signalled, the cockpit seated INSIDE the
+  window, saw the checkpoint commit and published the deadline — so
+  the apparatus is re-flyable exactly as built and the only variable
+  worth changing is the fence's human gate.
+  (2026-08-05, flight 4's cockpit · flight 4's lane) →
+  [the drill's log](record/probes/flight-4-freeze.md)
 - ⏳ THE SELF-SEAT BATON WORDING IS LAW AND THIS FLIGHT DID NOT
   MATCH IT — [handoff §4's case table](skills/handoff.md#4--repaint-dashboard-the-board-spec--single-source)
   fixes the cockpit's seat line as `COCKPIT — live since <t>
@@ -193,17 +269,6 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   fleet was already at ground. Not scope until triaged.
   (2026-08-04, the founder) →
   [pickup §6](skills/pickup.md#6--fleet-resume-on-the-founders-answer)
-- ⏳ A DETERMINISTIC FREEZE DRILL — one bench SPECCED TO HOLD AT A
-  CHECKPOINT UNTIL ACKED, so that "mid-work" is guaranteed by
-  construction instead of raced against how fast the cargo happens
-  to finish. This is what finally tests the wake-lock's
-  rejected-push rule — does a fence actually STOP a live worker —
-  which three flights have now failed to observe because every
-  fence landed on a finished bench. Folds into flight 4 rather than
-  earning a flight of its own
-  ([D-074](record/DECISIONS.md#d-074--phase-1-closes-on-flights-3-and-4)).
-  (2026-08-04, the founder) →
-  [§Wake-lock](skills/parallel-lanes.md#wake-lock--parking)
 - ⏳ NOTHING REQUIRES READING A PR'S COMMENTS BEFORE ACTING ON ITS
   BENCH — flight 2's cockpit read
   [#280](https://github.com/wsher0901/roam/pull/280)'s metadata,
@@ -286,8 +351,13 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   session self-terminate. FLIGHT 3 MET A THIRD, citing the stale
   birth SHA mid-handshake, absorbed the same way — and sharpened
   the limit: all three landed on a lane that was WAITING, never
-  one mid-push, so the rejected-push rule stays unobserved.
-  (2026-08-04, flight 2 lanes A and C · flight 3's lane) →
+  one mid-push. FLIGHT 4 MET A FOURTH, same harmless death, same
+  cause (the Status was read, the stale SHA never compared) — and
+  it also retires the tail of this line: the rejected-push rule is
+  no longer unobserved, it fired twice that flight, in both
+  directions, just OUTSIDE the drill's window.
+  (2026-08-05, flight 2 lanes A and C · flight 3's lane ·
+  flight 4's lane) →
   [§Wake-lock](skills/parallel-lanes.md#wake-lock--parking)
 - ⏳ `check:memory` READS ANY ANGLE-BRACKETED TEXT AS AN UNRESOLVED
   PLACEHOLDER, so a memory cannot quote an email address, a git
@@ -530,6 +600,17 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
 The outcome ledger — one line each, newest first. A closed idea
 keeps its answer, never its narrative.
 
+- 🟢 The deterministic freeze drill — BUILT AND FLOWN as flight 4.
+  The bench held at a checkpoint for its full fifteen minutes and
+  the apparatus worked; the window closed unused because the
+  founder's word arrived ~90 seconds late, so the drill's answer is
+  an honest NULL RESULT rather than the rejection it was built to
+  catch. The fence then met the still-live lane six minutes later
+  and WAS refused — recorded, and quarantined as a post-window
+  artifact. Re-flyable as built; only the human gate needs
+  reordering, which is its own open line above. →
+  [#303](https://github.com/wsher0901/roam/pull/303) ·
+  [the drill's log](record/probes/flight-4-freeze.md)
 - 🟢 The ack must be a commit on origin, never a message — written
   into [§Canary](skills/parallel-lanes.md#canary-handshake-both-sides)
   in all three places a reader meets the handshake, with flight 1's
