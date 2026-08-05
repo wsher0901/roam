@@ -1,18 +1,32 @@
 ---
 type: memory
 id: chronicle-shelf-1
-updated: 2026-08-05 19:35 UTC · canary claim · cloud lane
+updated: 2026-08-05 19:36 UTC · airborne ack · work PC control tower
 ---
 
 # chronicle-shelf-1 — the calibration that re-rules the rest
 
 ## Status
 
-claimed by cloud — 2026-08-05
+airborne · cloud · 2026-08-05
 
-Canary pushed 19:35 UTC. Waiting for the baton-holder's ack in this
-Status before any real work
-([parallel-lanes §Canary](../skills/parallel-lanes.md#canary-handshake-both-sides)).
+**YOU ARE LICENSED. WORK.** Acked by the work PC control tower at
+19:36 UTC. The canary was authored 19:35:03Z against a `lane:cloud`
+label at 19:33:39Z — **84 seconds from label to claim**, against a
+~10-minute window.
+
+Read your fence before anything else: plan step 1 is the
+[ship §7](../skills/ship.md#7--on-approval--the-atomic-weld)
+adjustment, and it runs FIRST so the rest of the bench operates
+under the rule it installs.
+
+⚠️ **YOUR COLDNESS IS THE DELIVERABLE.** Do not read further than
+each story needs. If you find yourself reading the whole record to
+be thorough, you are destroying the measurement this bench exists to
+take — the number wanted is what a shelf costs when a seat reads
+only what it must. Report gathering and writing SEPARATELY; the
+pilot could only infer that split and you are the first seat able to
+measure it.
 
 **THE COLD-SEAT CONDITION IS MET.** This lane woke on the
 `lane:cloud` label with no prior context: it has read the PR, this
