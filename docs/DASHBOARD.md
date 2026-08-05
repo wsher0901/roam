@@ -6,35 +6,38 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-08-05 · 19:19 UTC by ship's tail · from work PC
-THE ENDING RULE IS NOW A RITUAL STEP — one ruling owed, one queued ·
-needs-you 2 · git outranks this board.
+Painted 2026-08-05 · 19:26 UTC by the board repair · from work PC
+BOTH RULINGS GIVEN — one bench waits for a COLD seat · needs-you 1 ·
+git outranks this board.
 How to read it → [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
 
-1. 🟡 **RULE THE SETTLE-WELD CASE — a small word with a real fork.**
-   [HOME §Where information goes](HOME.md#where-information-goes)
-   says "the weld that SETTLES the item writes its story". With 63
-   items unwritten, taking that literally makes any weld that
-   settles an unwritten item a story-writing bench. [ship
-   §7](skills/ship.md#7--on-approval--the-atomic-weld)'s new step
-   instead RECORDS THE DEBT and does not pre-empt your open ruling
-   on the 63. **Either the step changes or HOME's two rows do** —
-   the bench deliberately moved neither. At this desk, whenever.
-   (since 08-05)
-   → [the bench's story](record/history/workshop/mechanism/ship-synthesis.md)
-   · [D-059](record/DECISIONS.md#d-059--the-chronicle-layer)
+1. ⚪ **GIVE #322 A COLD SEAT** — the first shelf bench is birthed,
+   specced and UNCLAIMED ON PURPOSE. It measures what a shelf of
+   chronicle stories costs from a seat that has NOT been living in
+   the material, and that is its only validity condition: the
+   session that birthed it spent 2026-08-05 inside most of Shelf
+   III, so a number from here would carry the exact confound the
+   pilot already disowned. Start a fresh sitting and it claims the
+   bench, or dispatch it as a cloud lane. **NOT URGENT — it is
+   worth more flown late by a fresh seat than promptly by this
+   one.** (since 08-05)
+   → [#322](https://github.com/wsher0901/roam/pull/322) ·
+   D-077 (on #322's branch — it reaches main when that bench merges)
 
-2. 🟡 **RE-RULE THE REMAINING 63 CHRONICLE STORIES** — shelf-sized
-   benches with Shelf III split (I 12 · II 13 · III 32 · IV 9,
-   three written). Read the pilot's caveat before its
-   recommendation: the cost number is a FLOOR measured under the
-   best conditions, and "cost is dominated by source-gathering" is
-   an INFERENCE, not a measurement. At this desk, whenever.
-   (since 08-05)
-   → [the pilot's report](record/history/workshop/definition/chronicle-pilot.md)
-   · [the census](chronicle/INDEX.md)
+**BOTH RULINGS ARE GIVEN AND RECORDED.** The scope of the 63 and the
+settle-weld fork were answered on 2026-08-05 and are now **D-077**,
+so they leave this queue. The ship §7 adjustment ruling 2 requires
+rides [#322](https://github.com/wsher0901/roam/pull/322) as its
+first plan step.
+
+⚠️ **D-077 IS NOT ON MAIN YET** — it was cut inside
+[#322](https://github.com/wsher0901/roam/pull/322) and reaches main
+when that bench merges, so this board names it without linking it
+and the links gate agrees. SECOND TIME TODAY a board could not cite
+a decision still riding a branch; filed as an inbox line rather than
+worked around silently.
 
 ## The baton
 
@@ -55,14 +58,22 @@ paragraph is the repair.
 
 ## In flight
 
+No lanes and no live seat but this desk. One bench stands BIRTHED
+AND UNCLAIMED — [#322](https://github.com/wsher0901/roam/pull/322),
+whose spec forbids its own author from flying it.
+
 Nothing flying, no lanes, no fleet at ground. Clean floor.
 
 ## Working on
 
-- PHASE 2 IS OPEN, HAS ITS FIRST THREE STORIES, AND ITS RULE IS NOW
-  ENFORCED. The pilot shipped at 18:53; the synthesis step it made
-  due shipped at 19:19 and ran on its own weld. What remains is your
-  two rulings — the settle-weld fork, and the scope of the 63.
+- PHASE 2 IS OPEN, HAS ITS FIRST THREE STORIES, ITS RULE ENFORCED,
+  AND ITS PLAN RULED. The pilot shipped 18:53; the synthesis step
+  19:19; and
+  D-077 (on #322's branch — it reaches main when that bench merges)
+  set the rest — shelf-sized benches, Shelf III split, the FIRST one
+  a calibration whose number re-rules the others before they fire.
+  That bench is [#322](https://github.com/wsher0901/roam/pull/322),
+  waiting for a cold seat.
 
 The standing order says phase 2 opens on
    your ruling. At this desk, whenever. (since 08-05)
@@ -116,11 +127,13 @@ one phase per line:
   [D-074](record/DECISIONS.md#d-074--phase-1-closes-on-flights-3-and-4)
   set, met as written. It closed carrying one 🔴 it found on the
   way out; that is a fix bench, not an unmet condition.
-- PHASE 2 — the vault: OPEN since 2026-08-05, scoped by
-  [D-076](record/DECISIONS.md#d-076--phase-2-opens-with-a-three-story-pilot)
-  to a three-story pilot, which has shipped. 3 of 66 stories
-  written; the remaining 63 await your re-ruling. The polish pass is
-  the phase's second half and has not started.
+- PHASE 2 — the vault: OPEN since 2026-08-05. The pilot
+  ([D-076](record/DECISIONS.md#d-076--phase-2-opens-with-a-three-story-pilot))
+  wrote 3 of 66; the remaining 63 go as SHELF-SIZED BENCHES with
+  Shelf III split
+  (D-077 (on #322's branch — it reaches main when that bench merges)),
+  the first of them a calibration. The polish pass is the phase's
+  second half and has not started.
 - PHASE 3 — Roam: T3–T6 relaunched from scratch, plus
   [V1.S2.T5](ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)
   design foundations.
@@ -413,5 +426,5 @@ S3–S8 · queued in order · 0/22
 
 ## Next
 
-Two rulings, either order: the settle-weld fork, and the scope of
-the remaining 63.
+A fresh seat takes [#322](https://github.com/wsher0901/roam/pull/322)
+and returns the number that re-rules the remaining shelves.
