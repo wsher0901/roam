@@ -6,27 +6,35 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-08-05 · 17:47 UTC by ship's tail · from work PC
-CHARTER v5 IS IN THE BOX — nothing owed but a ruling · needs-you 1 ·
-git outranks this board.
+Painted 2026-08-05 · 18:53 UTC by ship's tail · from work PC
+PHASE 2 HAS ITS FIRST THREE STORIES — 63 proposals remain ·
+needs-you 2 · git outranks this board.
 How to read it → [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
 
-1. 🟡 **RULE PHASE 2'S SCOPE** — all 66 chronicle stories, or the
-   load-bearing dozen first. The standing order
-   ([D-060](record/DECISIONS.md#d-060--the-three-phase-standing-order))
-   opens phase 2 on this ruling and deliberately does not make it.
-   Phase 1 is closed and nothing is queued behind it, so this is the
-   only thing between here and the next bench. At this desk,
+1. 🟡 **RE-RULE THE REMAINING 63 CHRONICLE STORIES** — the pilot
+   reported, and its recommendation is SHELF-SIZED BENCHES with
+   Shelf III split, since the shelves are uneven (I 12 · II 13 ·
+   III 32 · IV 9, three written). Read the pilot's own caveat first:
+   the cost number is a FLOOR measured under the best possible
+   conditions, and the "cost is dominated by source-gathering"
+   claim is an INFERENCE, not a measurement — a cold bench writing
+   one story would settle it in an afternoon. At this desk,
    whenever. (since 08-05)
-   → [the census](chronicle/INDEX.md) · its 66 proposed stories
-   across four shelves, none written
+   → [the pilot's report](record/history/workshop/definition/chronicle-pilot.md)
+   · [the census](chronicle/INDEX.md)
 
-**THE BOX RE-SAVE IS DONE** — the founder confirmed the cockpit
-routine is at v5 on 2026-08-05. It was an act outside the repo, so
-the board could never derive it; it cleared on the founder's word,
-which is exactly how that class of item is meant to close.
+2. ⚪ **THE SHIP SYNTHESIS-AT-WELD STEP IS NOW DUE** — and it needs
+   your go before it becomes a bench.
+   [D-059](record/DECISIONS.md#d-059--the-chronicle-layer) deferred
+   it "to the first story weld" and gave it its own bench, touching
+   [ship](skills/ship.md): the step that makes a weld INCORPORATE
+   its changes into the affected story and rewrite that story's
+   ending. Until it exists, the ending rule is a convention nobody
+   is prompted to follow — which is exactly how the census endings
+   went stale in the first place. (since 08-05)
+   → [D-059](record/DECISIONS.md#d-059--the-chronicle-layer)
 
 ## The baton
 
@@ -47,14 +55,15 @@ paragraph is the repair.
 
 ## In flight
 
-Nothing flying, no lanes, no fleet at ground. Clean floor — and this
-time the board says so with no bench under construction on it.
+Nothing flying, no lanes, no fleet at ground. Clean floor.
 
 ## Working on
 
-- NOTHING IN FLIGHT, AND NOTHING OWED BUT A RULING. The charter fix
-  shipped at 17:36 and its box paste is done. Phase 2 opens on your
-  scope ruling; phase 1 is closed behind it.
+- PHASE 2 IS OPEN AND HAS ITS FIRST THREE STORIES. The pilot shipped
+  at 18:53 with a followable format, a measured cost it explicitly
+  disowns for planning, and a recommendation for the remaining 63.
+  What it also produced is a DUE ITEM: the ship synthesis-at-weld
+  step, deferred since [D-059](record/DECISIONS.md#d-059--the-chronicle-layer).
 
 The standing order says phase 2 opens on
    your ruling. At this desk, whenever. (since 08-05)
@@ -108,8 +117,11 @@ one phase per line:
   [D-074](record/DECISIONS.md#d-074--phase-1-closes-on-flights-3-and-4)
   set, met as written. It closed carrying one 🔴 it found on the
   way out; that is a fix bench, not an unmet condition.
-- PHASE 2 — the vault: chronicle story lanes + a polish pass; opens
-  with your scope ruling (all 66, or the load-bearing dozen).
+- PHASE 2 — the vault: OPEN since 2026-08-05, scoped by
+  [D-076](record/DECISIONS.md#d-076--phase-2-opens-with-a-three-story-pilot)
+  to a three-story pilot, which has shipped. 3 of 66 stories
+  written; the remaining 63 await your re-ruling. The polish pass is
+  the phase's second half and has not started.
 - PHASE 3 — Roam: T3–T6 relaunched from scratch, plus
   [V1.S2.T5](ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)
   design foundations.
@@ -118,6 +130,16 @@ one phase per line:
 
 **Completed**
 
+- THE FIRST THREE CHRONICLE STORIES — the wake-lock, land, and the
+  canary handshake, chosen to be UNLIKE each other so the format
+  would break somewhere different each time. The format's
+  load-bearing choice is that THE ENDING GOES FIRST, in a
+  blockquote, because the ending rule works only if a later seat can
+  find the rewrite point without reading the story. Its honesty
+  about its own measurement is what outlives it: the number is a
+  floor, and the conclusion drawn from it is labelled an inference
+  with its falsifier named.
+  [#318](https://github.com/wsher0901/roam/pull/318)
 - THE CHARTER LEARNED THAT A DESK CAN HOLD THE BATON — v5, and
   [D-075](record/DECISIONS.md#d-075--the-self-seat-duty-gains-a-live-desk-case)
   amending [D-051](record/DECISIONS.md#d-051--self-seat-birth)'s
@@ -368,5 +390,5 @@ S3–S8 · queued in order · 0/22
 
 ## Next
 
-Rule phase 2's scope, and the first chronicle bench opens on your
-word.
+Re-rule the remaining 63, and say whether the ship synthesis-at-weld
+step becomes a bench now or waits.
