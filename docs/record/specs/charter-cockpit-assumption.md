@@ -2,12 +2,12 @@
 type: spec
 id: charter-cockpit-assumption
 title: The charter assumes its successor and predecessor are always cockpits
-status: open
+status: shipped
 stage: workshop
 branch: fix/charter-cockpit-assumption
-pr: —
+pr: 314
 opened: 2026-08-05
-shipped: —
+shipped: 2026-08-05
 ---
 
 # charter-cockpit-assumption — teaching the charter that a desk exists
