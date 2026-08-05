@@ -2,7 +2,7 @@
 type: chronicle-story
 shelf: II — the lane system
 status: living
-updated: 2026-08-05 · flight 4 observed it firing · work PC
+updated: 2026-08-05 · its rejected-push clause observed · work PC
 ---
 
 # The wake-lock — the only thing that can stop a running lane
@@ -12,13 +12,15 @@ updated: 2026-08-05 · flight 4 observed it firing · work PC
 > webhook, a rejected push — a lane re-reads its memory Status from
 > origin BEFORE anything else, and a Status it does not own means
 > push nothing and terminate. It began as a paragraph inside a
-> fleet-continuity decision, absorbed an idle-wait exception, became
-> the mechanism a landing's fence rides, and on 2026-08-04 was
-> **observed firing for the first time** — twice in one flight, in
-> both directions, each seat learning the other existed by being
-> refused. It works. What that observation also proved is that a
-> refusal leaves NO trace on the server, so the wake-lock is a
-> mechanism whose operation is invisible unless the stopped worker
+> fleet-continuity decision, absorbed an idle-wait exception, and
+> became the mechanism a landing's fence rides. Its
+> redelivered-webhook path has fired repeatedly and harmlessly since
+> 2026-07-16. **Its REJECTED-PUSH clause — the one that stops a
+> worker mid-job — was observed for the first time on 2026-08-04**,
+> twice in one flight, in both directions, each seat learning the
+> other existed by being refused. It works. What that observation
+> also proved is that a refusal leaves NO trace on the server, so
+> that clause is invisible in operation unless the stopped worker
 > says so before it dies.
 
 ## What it is
@@ -51,8 +53,10 @@ before it acts, and to make a push failure count as a reason to
 read.
 
 That ordering matters to how the story reads later: **the wake-lock
-was built before anything went wrong, and then went four flights
-without ever being seen to work.**
+was built before anything went wrong. Its cheap path — killing
+redelivered webhooks — started working immediately and has never
+stopped. Its expensive path, stopping a live worker, went four
+flights without once being observed.**
 
 ## What changed, in order
 
@@ -83,18 +87,28 @@ without ever being seen to work.**
   commit into a stop: the lane's next push is refused, it pulls, it
   reads a Status it does not own, it stands down. THE RESUME POINT
   IS THE BRANCH TIP BY CONSTRUCTION — nothing has to be recorded
-  correctly for it to be right. D-054 also attaches the **honesty
+  correctly for it to be right. [D-054](../record/DECISIONS.md#d-054--the-landing-skill) also attaches the **honesty
   clause**: this is wake-lock-mediated, not an interrupt, so a lane
   mid-turn may finish its current step, and a landing report states
   last-observed state rather than a guaranteed freeze.
-- **Four redelivered webhooks, four harmless deaths.** GitHub
-  redelivers `pull_request.labeled` events, sometimes citing a head
-  SHA several commits stale. Flight 1 met one, flight 2's lanes A
-  and C met the second, flight 3 the third, flight 4 the fourth.
-  Every one died the same way and for the same reason: the lane read
-  its STATUS from origin rather than comparing the SHA the event
-  handed it. This is the wake-lock's most-exercised path by a wide
-  margin, and none of those four is the rule under test.
+- **Redelivered webhooks, every one a harmless death — and the
+  record cannot agree on how many.** GitHub redelivers
+  `pull_request.labeled` events, sometimes citing a head SHA several
+  commits stale. The sightings the record NAMES: 2026-07-16 (the
+  first) · flight 1, which calls itself "a second occurrence of the
+  redelivery first recorded on 2026-07-16" · flight 2, which met
+  **two** live, one within four minutes of its lane's first firing
+  and one citing a five-commit-stale SHA · flight 3 · and flight 4.
+  THE SOURCES NUMBER THEM DIFFERENTLY — flight 4's own log calls
+  itself "at least the third", counting 2026-07-16, flight 1 and
+  itself while skipping flights 2 and 3, where the inbox line counts
+  flight 3 "a third" and flight 4 "a fourth" from another starting
+  point. **NO TOTAL IS ASSERTED HERE**, because deriving one means
+  choosing which source to believe; by enumeration it is at least
+  six. Every one died the same way and for the same reason: the lane
+  read its STATUS from origin rather than comparing the SHA the
+  event handed it. This is the wake-lock's most-exercised path by a
+  wide margin, and not one of them is the rule under test.
 - **2026-08-04 — [flight 4](../record/probes/flight-4-freeze.md),
   the drill built to catch it.** Three flights had fenced a bench
   and none had ever observed the rejected-push rule, because every
@@ -110,9 +124,14 @@ without ever being seen to work.**
   pulled, read `held — landed for local pickup`, recognised a Status
   it does not own, pushed nothing further and stood down. Minutes
   earlier the same mechanism had run the other way: the cockpit's
-  own fence push at 21:12:22Z was refused by the lane's commit.
+  own fence push at 21:12:22Z was refused by the lane's commit —
+  though that half is the COCKPIT'S OWN ATTESTATION and nothing
+  else, a document written by a seat that is gone, since neither the
+  desk nor the lane watched it happen and no git object or API
+  response records a refusal.
   **Both seats were live, both were moving, and each learned the
-  other existed by being refused.** Recorded and quarantined as a
+  other existed by being refused** — the second half on the
+  cockpit's word. Recorded and quarantined as a
   post-window artifact of the landing ritual, never promoted to the
   drill's finding.
 
@@ -158,8 +177,8 @@ never another story's prose.
   fence.
 - [flight 4's log](../record/probes/flight-4-freeze.md) — the drill,
   the null result, and THE EXIT PUSH's account of both refusals.
-- [flight 1's log](../record/probes/flight-1-shakedown.md) — the
-  first redelivered webhook.
+- [flight 1's log](../record/probes/flight-1-shakedown.md) — its
+  own redelivery, which it numbers the SECOND after 2026-07-16.
 - Spans cited by the census: [#146](https://github.com/wsher0901/roam/pull/146)
   · [#153](https://github.com/wsher0901/roam/pull/153) ·
   [#180](https://github.com/wsher0901/roam/pull/180) ·

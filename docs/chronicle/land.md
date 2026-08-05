@@ -33,7 +33,7 @@ Two modes, routed by state rather than chosen:
 
 - **MODE R · RETIRE** — the flight's work is done and merged. Final
   board repaint, then silence. These are the duties the cockpit
-  charter's rule 6 used to carry.
+  [charter](../COCKPIT-CHARTER.md)'s rule 6 used to carry.
 - **MODE P · PAUSE-AND-TRANSFER** — the founder is going local while
   work is still flying. Every live lane gets a FENCE, and the board
   becomes the single transfer material.
@@ -81,7 +81,7 @@ made it a first-class ritual with a written procedure.
   superseded seat writes a board**, because the baton has already
   moved.
 - **The two-lines defect, and the third bug under it.** MODE P
-  painted two different board lines for ONE landing — land's §(d)
+  painted two different board lines for ONE landing — [land](../skills/land.md)'s §(d)
   wrote "no live cockpit — grounded for local pickup" and its §(e)
   wrote "No live seat — LANDED via MANUAL-LAND · awaiting next
   pickup" — while pickup's fleet-resume trigger matched only the
@@ -91,16 +91,21 @@ made it a first-class ritual with a written procedure.
   critic then found a third bug not in the mandate: the DESK
   TAKEOVER branch had no writer at all, because Scenario 2 has the
   superseded cockpit write NO board, so a fleet it fenced could
-  never get a grounded marker from anyone. Pickup §6 now names THE
-  DESK as that writer.
-- **2026-08-04 — it ran, four times in one day.** Read from the
-  board's own paint stamps and the flight records: **AUTO-LAND at
+  never get a grounded marker from anyone. [Pickup §6](../skills/pickup.md#6--fleet-resume-on-the-founders-answer)
+  now names THE DESK as that writer.
+- **2026-08-04 — it ran, four times in one day.** DERIVED, NOT
+  RECALLED, and the method matters because these stamps leave no
+  mark at HEAD: the board's own PAINT-STAMP HISTORY was read out of
+  git (`git log -- docs/DASHBOARD.md`, then each revision's
+  `Painted … by land …` line), and cross-checked against the flight
+  records. A later reader re-derives it the same way; the stamps are
+  not visible on the current board. **AUTO-LAND at
   13:53 UTC** from the cloud, the mode firing itself · **MODE P at
   16:02 UTC**, grounding flight 2's fleet, three benches later
   adopted at a desk for zero cap runs · **flight 3's superseded
   cockpit**, which woke, read its own supersession off the board,
   retired by Scenario 2 and wrote no board — the carve-out working
-  exactly as D-062 wrote it · and **MODE P at 21:16 UTC**, grounding
+  exactly as [D-062](../record/DECISIONS.md#d-062--the-wake-rule-generalized) wrote it · and **MODE P at 21:16 UTC**, grounding
   flight 4's single lane at a fence.
 
 ## Where it stands
@@ -120,10 +125,13 @@ What the runs proved: the fence stops a live worker (observed
 a session boundary intact, and a superseded seat will retire itself
 correctly without being told.
 
-What is still untested: **MODE R's full retire path from a flight
-that ended naturally with cargo still owed** — AUTO-LAND has fired,
-but on an empty fleet. And the honesty clause remains a promise kept
-by careful writing rather than by any mechanism.
+What is still untested: **MODE R's MANUAL retire — a founder
+retiring a finished flight by word rather than the mode firing
+itself.** AUTO-LAND has fired; and the trigger table routes only its
+two no-fleet triggers to MODE R, so "MODE R with cargo still owed"
+is a state the ritual cannot enter BY CONSTRUCTION rather than a gap
+in its testing. And the honesty clause remains a promise kept by
+careful writing rather than by any mechanism.
 
 ## Sources
 

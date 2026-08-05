@@ -5,7 +5,7 @@ title: The chronicle pilot — three stories, to size the other sixty-three
 status: open
 stage: workshop
 branch: docs/chronicle-pilot
-pr: —
+pr: 318
 opened: 2026-08-05
 shipped: —
 ---

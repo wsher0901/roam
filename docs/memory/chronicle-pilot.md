@@ -1,7 +1,7 @@
 ---
 type: memory
 id: chronicle-pilot
-updated: 2026-08-05 18:08 UTC · three stories written · work PC
+updated: 2026-08-05 18:20 UTC · ship · critic round · work PC
 ---
 
 # chronicle-pilot — three stories, to size the other sixty-three
@@ -55,6 +55,66 @@ absorbed silently:
   The recommendation is below; the ruling is the founder's.
 
 ## The story
+
+2026-08-05 18:20 UTC · THE CRITIC ROUND — TWO RED, AND BOTH WERE
+FALSE CLAIMS IN A STORY'S ENDING · work PC — the pre-gate critic
+([D-044](../record/DECISIONS.md#d-044--the-pre-gate-critic-goes-live))
+returned **twelve findings, two 🔴**. All repaired; none dismissed.
+BOTH REDS WERE IN THE WAKE-LOCK STORY'S FACTUAL CLAIMS, which is the
+worst place for them: the ending is the artifact later welds rewrite
+and other files cite, so a wrong ending propagates.
+
+**🔴 ONE — THE ENDING OVERGENERALIZED, AND THE STORY'S OWN SPINE
+CONTRADICTED IT.** The ending said the wake-lock "was observed
+firing for the first time" on 2026-08-04. False: its
+redelivered-webhook path has fired harmlessly since 2026-07-16, and
+a bullet four screens down said exactly that. What was observed for
+the first time is the REJECTED-PUSH CLAUSE. The board and the inbox
+both scope the claim narrowly and this story widened it. Repaired by
+naming the clause, and by splitting the mechanism's cheap path
+(works, always has) from its expensive one (four flights unobserved).
+
+**🔴 TWO — "FOUR REDELIVERED WEBHOOKS" WAS A TYPED COUNT, AND THE
+RECORD HOLDS AT LEAST SIX.** Flight 1's log calls its own the SECOND
+after 2026-07-16; flight 4's calls itself "at least the third",
+counting 2026-07-16, flight 1 and itself while skipping flights 2
+and 3; the inbox line attributes TWO to flight 2 alone and numbers
+flight 3 "a third". THE SOURCES GENUINELY DISAGREE. The repair is
+not a better number — it is to ENUMERATE the named sightings, say
+the sources number them differently, and assert no total, because
+deriving one means choosing which source to believe. A story about
+the mechanism that counts recurrences got its own count wrong by
+typing it.
+
+**The ten others.** D-076's `In full:` still said land ran three
+times while everything else on the branch said four, and its Affects
+omitted the three story files and the memory · the INDEX's
+"founder input owed" section still carried the exact land sentence
+this bench supersedes, one screen below its own correction, in a
+section whose preamble says each item is rewritten at the weld that
+changes it · land's AUTO-LAND run had no citable source, so the
+story now names the derivation method (`git log -- docs/DASHBOARD.md`
+and each revision's paint stamp) since the stamps are invisible at
+HEAD · land claimed an untested MODE R path the trigger table cannot
+enter by construction · the wake-lock stated the cockpit's own
+refusal flat where the probe insists it is that seat's ATTESTATION
+and nothing else · three WRITTEN rows' span cells did not match
+their own stories · a typed "thirty lines below" that is ~58 · six
+unlinked repeat mentions under the weave rule · and the spec's
+`pr:` field left blank.
+
+**AND ONE FINDING WORTH MORE THAN ITS COLOUR.** The critic showed
+the memory's inference chain failing: the confound says the sources
+were gathered BEFORE the clock started, which makes source-gathering
+the one quantity the pilot did not measure — and the recommendation
+then leaned on "cost is dominated by gathering". The number was
+honestly caveated and the conclusion quietly wasn't. Now the claim
+is labelled an INFERENCE with its reasoning shown and its falsifier
+named (a cold bench writing one story settles it in an afternoon),
+and the recommendation says which of its parts rests on measurement
+and which on inference. **The shelf arithmetic was re-derived while
+fixing it and moved the recommendation**: Shelf III is 32 of the 66
+rows, so "one bench per shelf" was wrong on its face.
 
 2026-08-05 18:08 UTC · THREE STORIES WRITTEN — THE FORMAT, THE
 NUMBER, AND THE CONFOUND THAT MAKES THE NUMBER SUSPECT · work PC
@@ -141,21 +201,37 @@ several times what the table shows. The measurement is real but it
 is a FLOOR, not an average, and it is a floor measured under the
 best possible conditions.
 
-That is itself the pilot's most useful finding, and it points
-somewhere specific: **story cost is dominated by SOURCE-GATHERING,
-not by writing.** Which means the remaining 63 should be batched BY
-SHELF — stories on one shelf share sources, so a seat that has read
-the lane system once can write several lane-system stories for
-barely more than one.
+**AND THE INFERENCE THAT FOLLOWS IS AN INFERENCE, NOT A
+MEASUREMENT — stated that way because the confound above makes it
+so.** The reasoning: gathering was already done before the clock
+started, and what the clock then measured was 2–3 minutes per story.
+So gathering is the one quantity this pilot did NOT measure, and the
+claim that it dominates rests on the gap between "3 minutes with
+sources in hand" and the several hours this session had already
+spent acquiring them — a comparison, not an experiment. IT IS THE
+BEST AVAILABLE READING AND IT COULD BE WRONG; a cold bench writing
+one story would settle it in an afternoon.
 
 ### The recommendation for the remaining 63
 
-**SHELF-SIZED BENCHES, and not all-at-once.** Four shelves, one
-bench each, each bench reading its shelf's sources once and writing
-that shelf's stories together. Shelf II (the lane system) is already
-three-quarters gathered by this pilot. The alternative D-060
-named — the load-bearing dozen — cuts across shelves and would pay
-the gathering cost repeatedly for no coverage gain.
+**SHELF-SIZED BENCHES, and not all-at-once** — offered as a
+recommendation resting on the inference above rather than on the
+measured number, which is the honest weight to give it. Four
+shelves — but NOT one bench each, because the shelves are wildly
+uneven and the numbers say so. Derived from the INDEX at write time:
+**Shelf I 12 rows · Shelf II 13 · Shelf III 32 · Shelf IV 9** (66
+total, 3 written, 63 left). Shelf III alone is half the census and
+is plainly several benches; Shelf IV's nine are product pieces whose
+sources are code and specs rather than decisions. So: one bench per
+shelf for I, II and IV, and Shelf III split by sub-theme — each
+bench reading its slice's sources once and writing those stories
+together. This pilot wrote 2 of Shelf II's 13 and 1 of Shelf I's 12, so it has
+SAMPLED two shelves rather than gathered either — no shelf is close
+to done.
+The alternative D-060 named — the load-bearing dozen — cuts across
+shelves, so if the inference holds it pays the gathering cost
+repeatedly; if the inference is wrong, the dozen is as good a shape
+as this one.
 
 TWO CAVEATS THE FOUNDER SHOULD WEIGH RATHER THAN INHERIT: the format
 is proven on THREE system pieces and on nothing else — no `event`

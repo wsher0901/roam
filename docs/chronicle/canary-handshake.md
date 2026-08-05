@@ -104,17 +104,20 @@ rather than an assumption.
 
 **THE TOKEN IS DEFINED TWICE, DIFFERENTLY, IN ONE SECTION.** The
 canonical block reads `airborne · <url> · <date>`. The baton-holder
-bullet, thirty lines below, says the line must begin exactly
+bullet, further down the same section, says the line must begin
+exactly
 `airborne · <vehicle or url> · <date>`. Flight 4's ack wrote a
 vehicle — `cloud` — which is canonical under the bullet and not
 under the block. **Nothing broke**, because the contract anchors the
 match at `airborne ·` and a lane cannot test a field its own
-section defines two ways. But §Canary is declared the home that wins
-every disagreement, and it currently cannot be quoted from one place
+section defines two ways. But [§Canary](../skills/parallel-lanes.md#canary-handshake-both-sides)
+is declared the home that wins every disagreement, and it currently cannot be quoted from one place
 without choosing which of its own halves to believe. Filed; unfixed.
 
 **WHETHER TO ANCHOR ON THE TOKEN OR THE WORD IS DEFERRED BY THE
-FOUNDER, WITH NO RULING MADE.** §Canary fixes the test at
+FOUNDER, WITH NO RULING MADE.**
+[§Canary](../skills/parallel-lanes.md#canary-handshake-both-sides)
+fixes the test at
 `airborne ·`. Flight 1's lane deliberately anchored on the bare word
 instead, reasoning that the anchor does the safety work while the
 middot only adds brittleness — against the em-dash ack of

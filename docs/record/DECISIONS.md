@@ -4022,7 +4022,7 @@ next ritual repaint — the board is never hand-edited) · this entry.
 
 ## D-076 — Phase 2 opens with a three-story pilot
 
-In full: 2026-08-05 — Phase 2 opens with a PILOT OF THREE STORIES rather than either option D-060 deferred to this ruling ("all 66 census stories, or the load-bearing dozen first"): no chronicle story has ever been written, so the format, the length and the per-story cost are all unmeasured, and a dozen or sixty-six is a commitment made against an estimate. The pilot writes three deliberately UNLIKE stories — one absorbing brand-new evidence (the wake-lock, which flight 4 observed firing for the first time), one whose census ending is STALE and must be rewritten (land, whose census reads "no recorded run" and which has since run three times), and one carrying a live unresolved defect (the canary handshake, whose ack token is defined two ways in its own section) — so that the format meets its three hard cases before scale is chosen. It returns a written format, a measured cost per story, and a re-ruling of the remaining 63 made against a number instead of a guess. The founder's ruling of 2026-08-05, at the desk, after phase 1 closed.
+In full: 2026-08-05 — Phase 2 opens with a PILOT OF THREE STORIES rather than either option D-060 deferred to this ruling ("all 66 census stories, or the load-bearing dozen first"): no chronicle story has ever been written, so the format, the length and the per-story cost are all unmeasured, and a dozen or sixty-six is a commitment made against an estimate. The pilot writes three deliberately UNLIKE stories — one absorbing brand-new evidence (the wake-lock, whose rejected-push clause flight 4 observed firing for the first time), one whose census ending is STALE and must be rewritten (land, whose census reads "no recorded run" and which has since run four times, all on 2026-08-04), and one carrying a live unresolved defect (the canary handshake, whose ack token is defined two ways in its own section) — so that the format meets its three hard cases before scale is chosen. It returns a written format, a measured cost per story, and a re-ruling of the remaining 63 made against a number instead of a guess. The founder's ruling of 2026-08-05, at the desk, after phase 1 closed.
 
 **Decision:** phase 2 opens with a THREE-STORY PILOT, and the scope
 of the remaining 63 is re-ruled when the pilot reports. The three
@@ -4067,7 +4067,11 @@ deferred scope ruling this answers; otherwise intact) ·
 — unchanged, and its deferred ship synthesis-at-weld step comes due
 at this pilot's weld) · [the chronicle census](../chronicle/INDEX.md)
 (three of its 66 rows stop being proposals) ·
-[the pilot's spec](specs/chronicle-pilot.md) ·
+[the pilot's spec](specs/chronicle-pilot.md) AND ITS MEMORY ·
+THE THREE STORIES THIS RULING PRODUCED —
+[the wake-lock](../chronicle/wake-lock.md) ·
+[land](../chronicle/land.md) ·
+[the canary handshake](../chronicle/canary-handshake.md) ·
 [DASHBOARD](../DASHBOARD.md) (the standing order's phase 2 line and
 Needs-you, at the next ritual repaint — the board is never
 hand-edited) · this entry.
