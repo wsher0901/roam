@@ -129,9 +129,10 @@ abandoned.
 - [x] The ship synthesis-at-weld step is SURFACED at the gate as due
       — [D-059](../DECISIONS.md#d-059--the-chronicle-layer) defers it
       to this weld and gives it its own bench.
-- [ ] The verification loop is green and the PUSHED head's Actions
-      run is green. **Ticked at the gate, not before** — the branch
-      cannot assert its own pushed head's CI.
+- [x] The verification loop is green and the PUSHED head's Actions
+      run is green — confirmed on `9c2f929` (run 31034651097),
+      checked against that SHA rather than inheriting the previous
+      head's run.
 
 ## Notes for whoever resumes this bench
 
