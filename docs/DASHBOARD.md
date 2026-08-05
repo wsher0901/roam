@@ -6,16 +6,18 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-08-05 · 13:51 UTC by the summon test · from work PC
-THE SUMMON TEST IS ABOUT TO FIRE — the desk is live and holds the
-baton · needs-you 0 · git outranks this board. How to read it →
+Painted 2026-08-05 · 13:55 UTC by the summon test · from work PC
+SUMMON FIRED AND THE SEAT IS UP — the desk still holds the baton ·
+needs-you 1 · git outranks this board. How to read it →
 [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
 
-Nothing. The summon test fires the moment this board is welded; when
-its cockpit reports, retire it with **"land"** at whichever seat you
-are sitting at.
+1. ⚪ **RETIRE THE SUMMONED COCKPIT** — say **"land"** in its
+   session once it has reported. It is holding by design and costs
+   nothing while it waits; phase 1 closes when it retires.
+   (since 08-05)
+   → [the summoned seat](https://claude.ai/code/session_01NrekB1F24e5hSdAxeXQ73k)
 
 ## The baton
 
@@ -36,13 +38,11 @@ paragraph is the repair.
 
 ## In flight
 
-No lanes. One seat is being summoned — the row below is written
-BEFORE the fire, because the board is the only briefing a summoned
-cockpit gets.
+No lanes. One summoned seat, up and holding.
 
 | Who | For | State | Move |
 |---|---|---|---|
-| cockpit · summoned | flight 4's SUMMON TEST — the last item phase 1 owes | 🟡 firing 2026-08-05 ~13:52 UTC | read this section, then REPORT — do not seat. Hold. Retire on the founder's "land" (MODE R). |
+| [cockpit · summoned](https://claude.ai/code/session_01NrekB1F24e5hSdAxeXQ73k) | flight 4's SUMMON TEST — the last item phase 1 owes | 🟢 fired 2026-08-05 13:54:18 UTC, session returned | read this section, then REPORT — do not seat. Hold. Retire on the founder's "land" (MODE R). |
 
 **READ THIS FIRST IF YOU ARE THE SUMMONED COCKPIT — it is addressed
 to you, and the payload that woke you is a POINTER, not a plan.**
@@ -81,14 +81,40 @@ to you, and the payload that woke you is a POINTER, not a plan.**
    in your final message, since a seat that writes no board has no
    channel but speech.
 
-**AND ONE MEASUREMENT ONLY THIS FIRE CAN MAKE.** Every previous
-flight's fire was BLIND — liftoff cannot see the session it raises.
-Summon is different: the workflow writes the fire status and any
-returned session URL into its own run's step summary, so the FIRING
-SEAT can read them. This board is painted before the fire (the
-ritual's order, which is why the last flight's `fired` stamp ran
-4m00s early); the true fire time and the URL get written back after
-the run reports.
+✅ **THE MEASUREMENT LANDED, AND SUMMON IS NOT A BLIND FIRE.** Every
+previous flight's ignition was blind — liftoff cannot see the
+session it raises, which is why the `fired` stamp has always been a
+paint stamp rather than an event. Summon returns the session URL to
+the firing seat through its own run, so this leg is fully observed
+from one side for the first time.
+
+| Moment | Time (UTC) | Read from |
+|---|---|---|
+| the push to `ops/summon` | 13:54:05 | the desk's shell clock, before the command |
+| push returned | 13:54:08 | same, after |
+| workflow run created | 13:54:10 | Actions API |
+| job started | 13:54:12 | Actions API |
+| **cockpit fired, session returned** | **13:54:18.69** | the fire step's own stdout |
+| `ops/summon` ref deleted | 13:54:19 | Actions API |
+| run complete | 13:54:21 | Actions API |
+
+**PUSH TO A LIVE COCKPIT: 13.7 SECONDS**, one command, no API path
+involved on the firing side — which is the property rung 4 exists
+for. One push was exactly one rescue: the ref is gone, and origin
+carries `main` alone.
+
+⚠️ **A CORRECTION THIS FIRE FORCES, and the board has been carrying
+the error for several paints: THE SUMMON WORKFLOW WAS NOT
+"UNFLOWN".** It flew on **2026-07-23** — run `30028067870`, titled
+"summon: rescue drill", event `push`, conclusion success, session
+`session_015Qz7zuiVB5sRHAS1THG5Fh` returned. The mechanism was
+proven then. What had never been exercised is the thing actually
+under test today: **a ROUTINE-BORN cockpit reading the SAVED BOX at
+v4** — the charter's v4 landed 2026-07-30, a week after that drill,
+and every flight since has been `--cloud`-born, which pastes the
+charter text from the master instead of reading the box. Verified
+before writing, against the run record rather than against the
+board's own claim.
 
 ## Working on
 
@@ -98,8 +124,9 @@ the run reports.
   does not predict) · the REJECTED-PUSH RULE got its answer, and it
   is a NULL RESULT — the window closed unused because the word
   arrived ~90 seconds late, not because the instrument failed · the
-  SUMMON workflow is still UNFLOWN, and is now the only thing
-  standing between here and the end of phase 1.
+  SUMMON path FIRED 2026-08-05 13:54:18 UTC, 13.7 seconds from one
+  push, and its seat is up and holding. Phase 1 closes when that
+  seat reports and you retire it.
 
 The standing order
 ([D-060](record/DECISIONS.md#d-060--the-three-phase-standing-order),
@@ -108,7 +135,8 @@ phase 1's closing condition amended by
 one phase per line:
 
 - PHASE 1 — settle & test: the audit is done, flights 1–4 have
-  flown, and flight 4 is welded. ONE ITEM REMAINS: the summon test.
+  flown, flight 4 is welded, and the summon test is FIRED. It
+  closes when the summoned seat reports and is retired.
   → its line in Needs you
 - PHASE 2 — the vault: chronicle story lanes + a polish pass; opens
   with your scope ruling (all 66, or the load-bearing dozen).
