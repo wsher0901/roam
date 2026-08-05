@@ -142,21 +142,41 @@ atomically:
     frontmatter `updated:` line, and re-read its closing section —
     `## Where it stands` or its variant — so it cannot contradict
     the new ending. Never a second story.
-  - **it has a CENSUS ROW but no story yet** → update that row's
-    ENDING CELL. One cell, not a story. AND IF THIS WELD SETTLED
-    THE ITEM rather than advancing it, say so in the cell: the
-    story is then OWED, and
-    [HOME §Where information goes](../HOME.md#where-information-goes)
-    assigns it to the settling weld — but the scope of the
-    unwritten stories is a live founder ruling, so this step
-    RECORDS the debt and does not pre-empt it.
+  - **it has a CENSUS ROW but no story yet** → SPLIT ON WHETHER
+    THIS WELD SETTLED THE ITEM OR MERELY ADVANCED IT.
+    - **ADVANCED** → update that row's ENDING CELL. One cell, not
+      a story.
+    - **SETTLED** → **WRITE THE STORY, NOW, IN THIS COMMIT** — the
+      full format per
+      [the pilot](../record/history/workshop/definition/chronicle-pilot.md)
+      — and repoint the row at it.
+      [HOME §Where information goes](../HOME.md#where-information-goes)
+      assigns the story to the settling weld, and
+      [D-077](../record/DECISIONS.md#d-077--shelf-benches-and-the-settling-weld-writes)
+      ruling 2 is why this is the cheap place: story cost is
+      dominated by SOURCE-GATHERING, and the seat that just
+      settled the item HAS ALREADY GATHERED what its story needs.
+      Deferring does not save that cost — it pays it twice.
   - **it has NEITHER, and you can name it** → ADD a census row on
     the right shelf, filling all five columns (proposed story ·
     type · span · current ending · confidence), and update the
     file's own counts and stamp line, which a new row falsifies.
     The census is a 2026-07-27 snapshot; without this, later items
-    are invisible to every future shelf bench.
+    are invisible to every future shelf bench. THEN RUN CASE 2's
+    SPLIT ON THE ROW YOU JUST ADDED — a weld that both NAMES and
+    SETTLES an item writes its story in this same commit. Newness
+    is not a reason to defer: it is the same cheapest-seat
+    argument, and you have already done the gathering.
 
+  THE STORY-OWED DEBT FORM IS NOT AN OPTION FOR A WELD YOU ARE
+  PERFORMING. It survives for exactly ONE thing: the pre-ruling
+  BACKLOG of already-settled items that the shelf benches clear
+  ([D-077](../record/DECISIONS.md#d-077--shelf-benches-and-the-settling-weld-writes)
+  ruling 1). Said plainly because an unqualified debt form reads to
+  the next seat as a general option, which is the error the ruling
+  exists to end. If writing the story here is genuinely impossible,
+  that is a `BLOCKED:` question for the founder — never a debt
+  recorded and walked past.
   THE ESCAPE IS NARROW AND IT IS NOT "NO ROW FOUND": it is for a
   weld whose payload names NO item at all in ruling 1's sense — a
   typo sweep, a dependency bump, a formatting pass. THAT is when
