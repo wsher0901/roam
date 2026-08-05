@@ -19,6 +19,21 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
 
 ## Open
 
+- ⏳ THE SESSION-START HOOK NEVER SYNCS A CLOUD SEAT, because it
+  pulls only on `main` — `.claude/hooks/session-start.mjs` guards
+  the fast-forward with `branch === "main" && !dirty`, and every
+  cloud seat is born on a `claude/*` session branch of its own,
+  which flights 1 and 4 both recorded the container checking out
+  before the lane ever moves. So a cloud session's first hook line
+  is "pull skipped", and the DASHBOARD that same hook injects into
+  its context is whatever the clone happened to carry — the board
+  being the surface the whole cockpit doctrine leans on hardest, and
+  the one an arriving seat is told to trust. The guard is right to
+  refuse to yank a lane branch; what is missing is the cloud case,
+  where the seat is not on a lane branch it owns but on a container
+  branch it never asked for. Harmless while the clone is fresh, and
+  SILENT when it is not. (2026-08-05, the summoned cockpit) →
+  [flight 4's log](record/probes/flight-4-freeze.md)
 - ⏳ A SEAT THAT CLAIMS THE BATON HAS ALREADY MADE THE BOARD STALE
   BY CLAIMING IT, so [pickup §4](skills/pickup.md#4--repaint-if-stale)'s
   "repaint if stale" is the wrong test for the BATON section — this
