@@ -6,28 +6,16 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-08-05 · 13:29 UTC by ship's tail · from work PC
-Clean floor — flight 4 is welded, phase 1's last item is the summon
-test · needs-you 1 · git outranks this board. How to read it →
+Painted 2026-08-05 · 13:51 UTC by the summon test · from work PC
+THE SUMMON TEST IS ABOUT TO FIRE — the desk is live and holds the
+baton · needs-you 0 · git outranks this board. How to read it →
 [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
 
-1. ⚪ **FIRE THE SUMMON TEST** — flight 4's third item under test,
-   and the last thing phase 1 owes. It is a PUSH that trips
-   `.github/workflows/summon.yml`; the cockpit it births is the v4
-   routine box's first live test — that seat seats or reports per
-   its charter, HOLDS (auto-land never fires at birth), and retires
-   on your "land" via MODE R. Say the word at this desk and I
-   compose the one-liner. WHENEVER YOU LIKE — nothing is blocked on
-   it. (since 08-04)
-   → [the flight-4 log](record/probes/flight-4-freeze.md) ·
-   [SETUP §cloud accounts](SETUP.md#once-and-done--cloud-accounts)
-
-   ⚠️ THE LITERAL ONE-LINER STILL HAS NO WRITTEN HOME —
-   [SETUP](SETUP.md) and [HOME](HOME.md) carry the recipe, not the
-   command. It gets composed at the desk and said so plainly, never
-   quoted as if a home existed.
+Nothing. The summon test fires the moment this board is welded; when
+its cockpit reports, retire it with **"land"** at whichever seat you
+are sitting at.
 
 ## The baton
 
@@ -48,8 +36,59 @@ paragraph is the repair.
 
 ## In flight
 
-Nothing flying, and no fleet at ground — flight 4's one lane was
-adopted at this desk and welded. The floor is clean.
+No lanes. One seat is being summoned — the row below is written
+BEFORE the fire, because the board is the only briefing a summoned
+cockpit gets.
+
+| Who | For | State | Move |
+|---|---|---|---|
+| cockpit · summoned | flight 4's SUMMON TEST — the last item phase 1 owes | 🟡 firing 2026-08-05 ~13:52 UTC | read this section, then REPORT — do not seat. Hold. Retire on the founder's "land" (MODE R). |
+
+**READ THIS FIRST IF YOU ARE THE SUMMONED COCKPIT — it is addressed
+to you, and the payload that woke you is a POINTER, not a plan.**
+
+1. **YOU ARE A TEST, AND THAT IS THE WHOLE MANDATE.** You were
+   raised by `.github/workflows/summon.yml` — rung 4 of the
+   connector ladder — fired deliberately from the work PC desk as
+   flight 4's third item under test. Nothing is broken. No cockpit
+   has died. There is no rescue to perform.
+2. **DO NOT SEAT YOURSELF. THE BATON IS HELD AND ITS HOLDER IS
+   ALIVE** — see THE BATON above: a control tower has been sitting
+   at the work PC since 13:24 UTC today, working. Your payload says
+   "You supersede the previous cockpit"; THAT SENTENCE IS THE
+   ROUTINE'S FIXED TEXT AND IT IS WRONG HERE — it is written for
+   R4 self-rescue, where the seat that summoned you was dying. This
+   board outranks it ([D-051](record/DECISIONS.md#d-051--self-seat-birth):
+   the board is the arbiter of whether a live seat exists). Your
+   charter's rule 1 sends you here to find out; you have found out.
+   REPORT INSTEAD OF SEATING, and say plainly that you refused the
+   supersession and why.
+3. **HOLD after reporting.** Auto-land never fires at birth. Do
+   nothing else — no branches, no benches, no writes to this board.
+   The desk owns the floor.
+4. **WHAT TO REPORT, because it is the only thing this test
+   produces.** Everything about your own birth that no ground seat
+   can see: what your kickoff prompt actually said, verbatim, and
+   whether it arrived intact · whether your charter reached you and
+   at what version · what you can see of your own vehicle (session
+   URL, container, remote, git identity) · whether the routine box's
+   v4 text and THIS BOARD ever contradict each other, naming both ·
+   and anything the charter told you to do that this section
+   forbids. A CONTRADICTION FOUND IS THE BEST RESULT AVAILABLE, not
+   a problem to smooth over.
+5. **RETIRE ON "land"** — MODE R, the ordinary landing. You may
+   write no board while superseded-or-testing; speak your findings
+   in your final message, since a seat that writes no board has no
+   channel but speech.
+
+**AND ONE MEASUREMENT ONLY THIS FIRE CAN MAKE.** Every previous
+flight's fire was BLIND — liftoff cannot see the session it raises.
+Summon is different: the workflow writes the fire status and any
+returned session URL into its own run's step summary, so the FIRING
+SEAT can read them. This board is painted before the fire (the
+ritual's order, which is why the last flight's `fired` stamp ran
+4m00s early); the true fire time and the URL get written back after
+the run reports.
 
 ## Working on
 
@@ -265,6 +304,6 @@ S3–S8 · queued in order · 0/22
 
 ## Next
 
-The summon test — the last item phase 1 owes. Say the word at this
-desk and the one-liner gets composed; the cockpit it births holds
-until you say "land".
+The summoned cockpit reports, you say **"land"**, and phase 1
+closes. Phase 2 — the vault — opens on your scope ruling: all 66
+chronicle stories, or the load-bearing dozen.
