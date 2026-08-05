@@ -19,6 +19,19 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
 
 ## Open
 
+- ⏳ A BOARD CANNOT CITE A DECISION THAT IS STILL ON A BRANCH, and
+  it happened TWICE on 2026-08-05. `decide` invoked inside an open
+  task puts the entry on that task's PR, so between the cut and the
+  merge the D-number exists but is unreachable from main — and any
+  board repaint in that window either breaks
+  [check:links](DASHBOARD.md) or names the decision without linking
+  it. Naming-without-linking is what both repaints did, and it is
+  defensible, but the WEAVE RULE says every D-number mention is a
+  link, so the exception should be written down rather than
+  rediscovered each time. Cheap options: a stated carve-out in the
+  weave rule for decisions in flight, or a board convention that
+  points at the PR instead. (2026-08-05, the work PC control tower)
+  → [LAWS §Knowledge & tracking](LAWS.md#knowledge--tracking)
 - ⏳ **THREE BENCHES RUNNING SHIPPED A CASE-ANALYSIS HOLE, AND
   REVIEW CAUGHT ALL THREE — THE AUTHOR CAUGHT NONE.** The charter
   bench keyed a case on an ABSENCE, so a desk-takeover board matched
