@@ -4075,3 +4075,70 @@ THE THREE STORIES THIS RULING PRODUCED —
 [DASHBOARD](../DASHBOARD.md) (the standing order's phase 2 line and
 Needs-you, at the next ritual repaint — the board is never
 hand-edited) · this entry.
+
+## D-077 — Shelf benches, and the settling weld writes
+
+In full: 2026-08-05 — Two rulings taken together on the founder's word, answering the scope deferred by D-076 and the settle-weld fork the synthesis bench declined to resolve. (1) THE REMAINING 63 STORIES ARE WRITTEN BY SHELF-SIZED BENCHES, Shelf III split — and THE FIRST SHELF BENCH DOUBLES AS THE COLD-BENCH CALIBRATION: its measured cost re-rules the remaining shelves BEFORE they fire, so no fleet is committed against the pilot's floor number. (2) A SETTLING WELD WRITES THE STORY THEN AND THERE, resolving the tension between HOME's routing row and ship §7's recorded-debt form in HOME's favour — because the settling seat has ALREADY PAID THE GATHERING COST that the pilot named as the dominant one, which makes it the cheapest seat that will ever exist for that story. ship §7's cases 2 and 3 are adjusted accordingly inside the first shelf bench, and the story-owed debt form survives ONLY for the backlog the shelf benches will clear.
+
+**Decision:** two rulings, and the second is the reason the first is
+affordable.
+
+1. **SHELF-SIZED BENCHES, SHELF III SPLIT, CALIBRATION FIRST.** The
+   63 unwritten stories are written a shelf at a time rather than
+   all at once or as a cross-cutting dozen. Shelf III (32 of the 66
+   rows) is split into slices. THE FIRST BENCH TO FLY IS A
+   CALIBRATION: it reports its true cost, and that number re-rules
+   the remaining shelves before any of them fire.
+2. **THE SETTLING WELD WRITES.** When a weld SETTLES an item that
+   has no story, it writes the story at that weld — not a recorded
+   debt. [HOME](../HOME.md#where-information-goes)'s routing row was
+   right. The debt form stays for the BACKLOG only: items already
+   settled before this ruling, which the shelf benches clear.
+
+**Why:** the settle-weld fork looked like a cost trade and was not
+one. The synthesis bench argued that writing at the weld makes every
+settling weld a story-writing bench, and specced a recorded debt to
+avoid it. THE FOUNDER'S READING INVERTS IT USING THE PILOT'S OWN
+FINDING: the pilot concluded that story cost is dominated by
+SOURCE-GATHERING, not writing — and the seat that just settled an
+item has already gathered everything that item's story needs. It is
+therefore THE CHEAPEST SEAT THAT WILL EVER EXIST for that story, and
+deferring the write to a later shelf bench does not save the cost,
+it PAYS IT TWICE. The bench had the right finding and drew the wrong
+conclusion from it.
+
+The calibration ruling follows the same logic in the other
+direction: the pilot's number is a floor measured by a seat already
+saturated in its subjects, so committing four shelves to it would be
+planning against a figure its own author disowned.
+
+**Alternatives rejected:**
+
+- **Keep the recorded-debt form for settling welds** (the synthesis
+  bench's design). Rejected on the cost argument above: it defers a
+  write to a seat that must re-gather, and the re-gathering is the
+  expensive half.
+- **Amend HOME's two rows to match the debt form** — the other way
+  to end the same tension. Rejected because HOME was correct; the
+  step was what needed moving.
+- **Fire all four shelf benches at once now that a shape exists.**
+  Rejected: it spends the fleet against the pilot's floor number.
+  One bench measures first.
+- **Make the calibration its own throwaway bench.** Rejected as
+  waste — a real shelf slice measures the real thing and delivers
+  stories while doing it.
+
+**Affects:**
+[D-076](#d-076--phase-2-opens-with-a-three-story-pilot) (its
+deferred re-ruling, answered here; otherwise intact) ·
+[D-059](#d-059--the-chronicle-layer) (ruling 2 now performed
+literally by a settling weld — the layer's rules are unchanged) ·
+[ship §7](../skills/ship.md#7--on-approval--the-atomic-weld) (cases
+2 and 3, adjusted inside the first shelf bench, NOT here) ·
+[HOME §Where information goes](../HOME.md#where-information-goes)
+(confirmed correct, unedited) ·
+[the census](../chronicle/INDEX.md) (its shelves become bench
+units) · [the first shelf bench's spec](specs/chronicle-shelf-1.md)
+· [DASHBOARD](../DASHBOARD.md) (Needs-you and the standing order's
+phase 2 line, at the next ritual repaint — the board is never
+hand-edited) · this entry.
