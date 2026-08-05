@@ -19,6 +19,34 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
 
 ## Open
 
+- ⏳ **THREE BENCHES RUNNING SHIPPED A CASE-ANALYSIS HOLE, AND
+  REVIEW CAUGHT ALL THREE — THE AUTHOR CAUGHT NONE.** The charter
+  bench keyed a case on an ABSENCE, so a desk-takeover board matched
+  it; its repair keyed on a POSITIVE TOKEN, and the external review
+  found that token was a PREFIX of a longer state (MODE P's grounded
+  line); the synthesis bench then gave two cases the SAME trigger
+  with a tiebreaker defined nowhere. The shape is identical every
+  time: the cases are exhaustive over the situations the author had
+  in mind, and the hole is the situation not enumerated. THE
+  COUNTERMEASURE HAS WORKED BOTH TIMES IT WAS APPLIED and it is
+  mechanical — enumerate the real inputs FROM THEIR SOURCE (the
+  eight baton renderings out of
+  [handoff §4's table](skills/handoff.md#4--repaint-dashboard-the-board-spec--single-source);
+  the census's own row-states) and walk each one through the cases,
+  rather than reasoning about the cases in the abstract. Worth a law
+  or a [ship](skills/ship.md) step rather than three memories each
+  saying it once. (2026-08-05, the work PC control tower) →
+  [the synthesis bench's story](record/history/workshop/mechanism/ship-synthesis.md)
+- ⏳ ATLAS DOES NOT KNOW THE CHRONICLE EXISTS — [ATLAS](ATLAS.md)'s
+  file-flow figure draws which ritual writes each surface and notes
+  "Ship appears three times for exactly that reason". Ship now
+  writes a FOURTH surface, `docs/chronicle/`, and the file does not
+  mention the chronicle anywhere. The gap originates with
+  [D-059](record/DECISIONS.md#d-059--the-chronicle-layer) rather
+  than with the synthesis bench, and re-rendering a hand-drawn
+  figure is its own bench under the figure law — so it is filed
+  rather than absorbed. (2026-08-05, the pre-gate critic) →
+  [ATLAS](ATLAS.md)
 - ⏳ THE SESSION-START HOOK NEVER SYNCS A CLOUD SEAT, because it
   pulls only on `main` — `.claude/hooks/session-start.mjs` guards
   the fast-forward with `branch === "main" && !dirty`, and every

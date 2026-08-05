@@ -6,35 +6,35 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-08-05 · 18:53 UTC by ship's tail · from work PC
-PHASE 2 HAS ITS FIRST THREE STORIES — 63 proposals remain ·
+Painted 2026-08-05 · 19:19 UTC by ship's tail · from work PC
+THE ENDING RULE IS NOW A RITUAL STEP — one ruling owed, one queued ·
 needs-you 2 · git outranks this board.
 How to read it → [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
 
-1. 🟡 **RE-RULE THE REMAINING 63 CHRONICLE STORIES** — the pilot
-   reported, and its recommendation is SHELF-SIZED BENCHES with
-   Shelf III split, since the shelves are uneven (I 12 · II 13 ·
-   III 32 · IV 9, three written). Read the pilot's own caveat first:
-   the cost number is a FLOOR measured under the best possible
-   conditions, and the "cost is dominated by source-gathering"
-   claim is an INFERENCE, not a measurement — a cold bench writing
-   one story would settle it in an afternoon. At this desk,
-   whenever. (since 08-05)
+1. 🟡 **RULE THE SETTLE-WELD CASE — a small word with a real fork.**
+   [HOME §Where information goes](HOME.md#where-information-goes)
+   says "the weld that SETTLES the item writes its story". With 63
+   items unwritten, taking that literally makes any weld that
+   settles an unwritten item a story-writing bench. [ship
+   §7](skills/ship.md#7--on-approval--the-atomic-weld)'s new step
+   instead RECORDS THE DEBT and does not pre-empt your open ruling
+   on the 63. **Either the step changes or HOME's two rows do** —
+   the bench deliberately moved neither. At this desk, whenever.
+   (since 08-05)
+   → [the bench's story](record/history/workshop/mechanism/ship-synthesis.md)
+   · [D-059](record/DECISIONS.md#d-059--the-chronicle-layer)
+
+2. 🟡 **RE-RULE THE REMAINING 63 CHRONICLE STORIES** — shelf-sized
+   benches with Shelf III split (I 12 · II 13 · III 32 · IV 9,
+   three written). Read the pilot's caveat before its
+   recommendation: the cost number is a FLOOR measured under the
+   best conditions, and "cost is dominated by source-gathering" is
+   an INFERENCE, not a measurement. At this desk, whenever.
+   (since 08-05)
    → [the pilot's report](record/history/workshop/definition/chronicle-pilot.md)
    · [the census](chronicle/INDEX.md)
-
-2. ⚪ **THE SHIP SYNTHESIS-AT-WELD STEP IS NOW DUE** — and it needs
-   your go before it becomes a bench.
-   [D-059](record/DECISIONS.md#d-059--the-chronicle-layer) deferred
-   it "to the first story weld" and gave it its own bench, touching
-   [ship](skills/ship.md): the step that makes a weld INCORPORATE
-   its changes into the affected story and rewrite that story's
-   ending. Until it exists, the ending rule is a convention nobody
-   is prompted to follow — which is exactly how the census endings
-   went stale in the first place. (since 08-05)
-   → [D-059](record/DECISIONS.md#d-059--the-chronicle-layer)
 
 ## The baton
 
@@ -59,11 +59,10 @@ Nothing flying, no lanes, no fleet at ground. Clean floor.
 
 ## Working on
 
-- PHASE 2 IS OPEN AND HAS ITS FIRST THREE STORIES. The pilot shipped
-  at 18:53 with a followable format, a measured cost it explicitly
-  disowns for planning, and a recommendation for the remaining 63.
-  What it also produced is a DUE ITEM: the ship synthesis-at-weld
-  step, deferred since [D-059](record/DECISIONS.md#d-059--the-chronicle-layer).
+- PHASE 2 IS OPEN, HAS ITS FIRST THREE STORIES, AND ITS RULE IS NOW
+  ENFORCED. The pilot shipped at 18:53; the synthesis step it made
+  due shipped at 19:19 and ran on its own weld. What remains is your
+  two rulings — the settle-weld fork, and the scope of the 63.
 
 The standing order says phase 2 opens on
    your ruling. At this desk, whenever. (since 08-05)
@@ -130,6 +129,13 @@ one phase per line:
 
 **Completed**
 
+- SHIP §7 NOW PERFORMS THE ENDING RULE — the duty
+  [HOME](HOME.md#where-information-goes) assigned to "the weld" in
+  two tables, which no ritual carried until now. Every weld names
+  its items and lands each in one of three cases. It RAN ON ITS OWN
+  WELD, naming two items for two cell edits in about two minutes —
+  and recorded the limit with the result: one of four branches
+  exercised. [#320](https://github.com/wsher0901/roam/pull/320)
 - THE FIRST THREE CHRONICLE STORIES — the wake-lock, land, and the
   canary handshake, chosen to be UNLIKE each other so the format
   would break somewhere different each time. The format's
@@ -238,6 +244,23 @@ one phase per line:
 
 **Issues**
 
+- ⏳ ATLAS DOES NOT KNOW THE CHRONICLE EXISTS — its file-flow figure
+  draws which ritual writes each surface and notes "Ship appears
+  three times for exactly that reason"; ship now writes a FOURTH,
+  `docs/chronicle/`, which the file does not mention anywhere. The
+  gap originates with
+  [D-059](record/DECISIONS.md#d-059--the-chronicle-layer), and
+  re-rendering a designed figure is its own bench under the figure
+  law. → its line in [IDEAS](IDEAS.md)
+- ⏳ THREE BENCHES RUNNING SHIPPED A CASE-ANALYSIS HOLE, each found
+  by review, never by the author: an absence-keyed case · a token
+  that was a PREFIX of a longer state · two cases firing on one
+  trigger with an undefined tiebreaker. The countermeasure that has
+  worked both times it was applied is mechanical — enumerate the
+  real inputs FROM THEIR SOURCE and walk each through the cases,
+  rather than reasoning about the cases in the abstract. Worth a
+  law or a ship step, not just three memories saying it. → its line
+  in [IDEAS](IDEAS.md)
 - ✓ **THE REJECTED-PUSH RULE HAS ITS ANSWER AFTER FOUR FLIGHTS, AND
   THE ANSWER IS A NULL RESULT.** Flights 1–3 could not test it —
   every fence landed on a bench that had already finished. Flight 4
@@ -390,5 +413,5 @@ S3–S8 · queued in order · 0/22
 
 ## Next
 
-Re-rule the remaining 63, and say whether the ship synthesis-at-weld
-step becomes a bench now or waits.
+Two rulings, either order: the settle-weld fork, and the scope of
+the remaining 63.
