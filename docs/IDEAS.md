@@ -161,23 +161,54 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   hand over the "exact one-liner, never improvised" and the record
   cannot supply one. (2026-08-04, flight 4's liftoff) →
   [SETUP §cloud accounts](SETUP.md#once-and-done--cloud-accounts)
-- ⏳ **MASTER ITEM** · THE TOMBSTONE LINE LIES UNDER DESK TAKEOVER —
-  [the charter](COCKPIT-CHARTER.md)'s rule 8 makes a retiring seat
-  say "a replacement cockpit has been summoned and will greet you;
-  the board carries its link", and under a desk takeover no such
-  cockpit exists: the DESK took the baton, and the board carries a
-  control-tower line, not a successor's link. The same presumption
-  runs through the rule's SUCCESSOR DUTY, which is written for a
-  replacement cockpit and has no reading when the successor is a
-  desk. Flight 3's retiring seat REFUSED TO SPEAK IT, which is the
-  right call and also the proof — a seat that may write nothing
-  caught a false sentence in its own final message and had no way
-  to fix it. THE FIX IS A CHARTER EDIT, so it carries the box-master
-  duty with it: bump to **v5** with a version-history row, and the
-  **box re-save** rides [DASHBOARD](DASHBOARD.md) Needs-you until it
-  is done, because a master change that never reaches its box fails
-  silently. For the fix bench. (2026-08-04, flight 3's cockpit at
-  retirement) →
+- ⏳ **MASTER ITEM** · THE CHARTER ASSUMES ITS SUCCESSOR AND ITS
+  PREDECESSOR ARE ALWAYS COCKPITS, and five findings from two
+  seats are all that one assumption. DELIBERATELY ONE LINE, against
+  this file's split-per-idea default: the fix is a box master, and a
+  master change that never reaches its box fails SILENTLY, so five
+  lines would invite five edits and five silent-failure windows. One
+  **v5** bump with a version-history row, one **box re-save** riding
+  [DASHBOARD](DASHBOARD.md) Needs-you until done. Each part is
+  verified against the charter text, not relayed:
+  **(a) 🔴 RULE 1 IS BLIND TO A LIVE DESK.** Its self-seat clause
+  fires when the board "names no live cockpit" — and a board reading
+  `CONTROL TOWER — work PC` names none, so a working control tower
+  falls into the SELF-SEAT branch; the stray-birth clause beside it
+  triggers only on a "FOREIGN live cockpit". Read literally, the
+  charter tells a summoned seat to take a live founder-driven desk's
+  baton. The 2026-08-05 summoned cockpit refused ONLY because that
+  board carried a hand-written warning; an ordinary board would have
+  been taken. Rule 1 needs a THIRD CASE: a live baton-holder of any
+  seat → hold and report.
+  **(b) 🟡 AND THE STRAY-BIRTH SENTENCE IS UNSPEAKABLE AGAINST A
+  DESK** — it is fixed text demanding the live seat's url, and a
+  desk has no session url; it also opens "A live cockpit already
+  holds this board", which is false of a desk. Same edit as (a).
+  **(c) 🔴 THE SUPERSESSION IS ASSERTED BY THE FIRING MACHINERY, NOT
+  DERIVED** — `.github/workflows/summon.yml` hardcodes "You
+  supersede the previous cockpit" into every payload, so rule 8's
+  SUCCESSOR DUTY orders a newborn seat to repaint a predecessor
+  landed·superseded when no predecessor exists. **THIS HALF IS NOT A
+  CHARTER EDIT** and must not be bumped into v5 or wait on the
+  re-save: drop the claim from the workflow, and let the board rule
+  on supersession, which it already does
+  ([D-051](record/DECISIONS.md#d-051--self-seat-birth)).
+  **(d) 🟡 NOTHING ROUTES A NEWBORN COCKPIT TO ITS IDENTITY STEP.**
+  The 2026-08-05 seat booted as `Claude <noreply@anthropic.com>`;
+  [machine-setup](skills/machine-setup.md) says a cloud seat must
+  set its own repo-local identity ONCE PER SEAT BIRTH, but a cockpit
+  reads the charter, and the charter's rule 1 sends it to LAWS, the
+  board, open PRs and memories — never there.
+  **(e) 🟡 THE TOMBSTONE LINE LIES UNDER DESK TAKEOVER**, the
+  original of this item: rule 8's fixed final message promises "a
+  replacement cockpit has been summoned and will greet you; the
+  board carries its link", and under a desk takeover the DESK took
+  the baton and no such cockpit exists. Flight 3's retiring seat
+  REFUSED TO SPEAK IT — the right call, and the proof: a seat that
+  may write nothing caught a false sentence in its own final message
+  and had no way to fix it.
+  For the fix bench. (2026-08-04, flight 3's cockpit at retirement ·
+  2026-08-05, the summoned cockpit) →
   [LAWS §Knowledge & tracking](LAWS.md#knowledge--tracking)
 - ⏳ A SUPERSEDED SEAT HAS NO CHANNEL BUT SPEECH — it may write no
   board by [land](skills/land.md) Scenario 2's carve-out, so any
