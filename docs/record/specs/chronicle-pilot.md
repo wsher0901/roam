@@ -39,9 +39,12 @@ cases before scale is chosen. Each names the case it exists to test:
    the census without being rewritten from scratch?
 2. **land — how a flight ends** — *an ending the census got wrong.*
    Its census row reads "with no recorded run, and the founder does
-   not believe it ever ran (2026-07-28)". It has since run three
-   times — MODE P twice (flights 2 and 4) and MODE R once (flight 3's
-   superseded seat). Tests: the ENDING RULE
+   not believe it ever ran (2026-07-28)". It has since run FOUR
+   times, all on 2026-08-04 — corrected from THREE at write time,
+   when the board's own paint stamps were read rather than recalled:
+   AUTO-LAND 13:53 UTC · MODE P 16:02 UTC · flight 3's superseded
+   cockpit retiring by Scenario 2 and writing no board · MODE P
+   21:16 UTC. Tests: the ENDING RULE
    ([D-059](../DECISIONS.md#d-059--the-chronicle-layer) ruling 2)
    against a census ending that is now false.
 3. **the canary handshake and the ack token** — *a story that must
@@ -107,27 +110,28 @@ abandoned.
 
 ## Done means
 
-- [ ] Three story files exist in `docs/chronicle/`, one per item,
+- [x] Three story files exist in `docs/chronicle/`, one per item,
       each carrying item · events that raised it · changes in order ·
       current ending.
-- [ ] Each story's ending is DERIVED from the record at write time
+- [x] Each story's ending is DERIVED from the record at write time
       and cites its sources as down-links; `record/` is untouched by
       this branch.
-- [ ] No story cites another story's prose (ruling 5), checked by
+- [x] No story cites another story's prose (ruling 5), checked by
       reading the three, not asserted.
-- [ ] The wake-lock story absorbs flight 4's observation; the land
+- [x] The wake-lock story absorbs flight 4's observation; the land
       story's ending contradicts and replaces its census row, saying
       so plainly; the canary story names its unresolved defect and
       the deferred ruling without settling either.
-- [ ] [The INDEX](../../chronicle/INDEX.md) marks exactly these three
+- [x] [The INDEX](../../chronicle/INDEX.md) marks exactly these three
       as written and leaves 63 as proposals.
-- [ ] The memory carries the FORMAT (a followable template), the
+- [x] The memory carries the FORMAT (a followable template), the
       MEASURED cost per story, and a recommendation for the rest.
-- [ ] The ship synthesis-at-weld step is SURFACED at the gate as due
+- [x] The ship synthesis-at-weld step is SURFACED at the gate as due
       — [D-059](../DECISIONS.md#d-059--the-chronicle-layer) defers it
       to this weld and gives it its own bench.
 - [ ] The verification loop is green and the PUSHED head's Actions
-      run is green.
+      run is green. **Ticked at the gate, not before** — the branch
+      cannot assert its own pushed head's CI.
 
 ## Notes for whoever resumes this bench
 
