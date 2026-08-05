@@ -54,6 +54,9 @@ outranks it.
        repaint the board seating yourself (a DASHBOARD-only
        micro-PR), your url derived from the session env:
        https://claude.ai/code/${CLAUDE_CODE_REMOTE_SESSION_ID/#cse_/session_}
+       IF THE LINE CARRIES "grounded for local pickup": seat
+       yourself, report, and HOLD — the fleet awaits a desk;
+       never resume, redeploy, or unfence it unbidden.
    (b) It names ANY LIVE COMMANDING SEAT THAT IS NOT A COCKPIT —
        "CONTROL TOWER", or a desk takeover mid-flight
        ("COCKPIT SUPERSEDED — desk takeover …", which names a
@@ -138,7 +141,7 @@ outranks it.
 
 | Version | Date | Vehicle | Change |
 | --- | --- | --- | --- |
-| v5 | 2026-08-05 | [#314](https://github.com/wsher0901/roam/pull/314) | [D-075](record/DECISIONS.md#d-075--the-self-seat-duty-gains-a-live-desk-case) — the charter learns that a DESK can hold the baton: rule 1 matches THREE cases against [THE BATON](DASHBOARD.md#the-baton) (a live non-cockpit holder → hold and report) and refuses a birth prompt's supersession claim, gains the git-identity pointer, and its stray-birth line drops the url it assumed; rule 8's tombstone reads its successor off the board and its successor duty is scoped to cockpits |
+| v5 | 2026-08-05 | [#314](https://github.com/wsher0901/roam/pull/314) | [D-075](record/DECISIONS.md#d-075--the-self-seat-duty-gains-a-live-desk-case) — the charter learns that a DESK can hold the baton: rule 1 matches THREE cases against [THE BATON](DASHBOARD.md#the-baton) (a live non-cockpit holder → hold and report; a GROUNDED FLEET → seat, report and hold, never resume it unbidden) and refuses a birth prompt's supersession claim, gains the git-identity pointer, and its stray-birth line drops the url it assumed; rule 8's tombstone reads its successor off the board and its successor duty is scoped to cockpits |
 | v4 | 2026-07-30 | [#250](https://github.com/wsher0901/roam/pull/250) | rule 1's self-seat pointer follows the board's section rename — Sessions → [THE BATON](DASHBOARD.md#the-baton) ([D-067](record/DECISIONS.md#d-067--the-report-skeleton-and-the-board-diet)); charter text otherwise unchanged |
 | v3 | 2026-07-29 | [#246](https://github.com/wsher0901/roam/pull/246) | [D-065](record/DECISIONS.md#d-065--the-box-master-diet) — slim recut: rules + invariants + pointers; ladder to HOME; labels dropped |
 | v2 | 2026-07-29 | [#244](https://github.com/wsher0901/roam/pull/244) | R3's dependency-map pointer follows the map to [HOME](HOME.md#the-cockpits-api-paths--recovery-ladder); charter text otherwise unchanged |

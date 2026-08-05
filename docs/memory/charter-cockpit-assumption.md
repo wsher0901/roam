@@ -1,7 +1,7 @@
 ---
 type: memory
 id: charter-cockpit-assumption
-updated: 2026-08-05 16:25 UTC · ship · critic round · work PC
+updated: 2026-08-05 17:25 UTC · external review round 1 · work PC
 ---
 
 # charter-cockpit-assumption — teaching the charter that a desk exists
@@ -54,6 +54,49 @@ session-start hook never syncing a cloud seat is a separate,
 separately-filed defect in a different file.
 
 ## The story
+
+2026-08-05 17:25 UTC · THE EXTERNAL REVIEW, ROUND 1 — ONE FINDING,
+AND IT WAS THE SAME MISTAKE A THIRD TIME · work PC — the Web review
+returned a single finding, and it is the third instance in this
+bench of ONE failure mode: **a case keyed on a string that matches
+more board states than intended.**
+
+**THE FINDING, verbatim in substance.** Case (a) matched
+`"No live seat"` — which is the OPENING of MODE P's grounded line,
+`No live seat — LANDED … via MANUAL-LAND · N lanes frozen → grounded for local pickup …`
+([handoff §4's case table](../skills/handoff.md#4--repaint-dashboard-the-board-spec--single-source)).
+So a summoned cockpit would have SELF-SEATED over a fleet the board
+says is awaiting a desk — and rule 2's full authorship would then
+let it resume, redeploy or unfence lanes THE FOUNDER PARKED FOR
+LOCAL PICKUP, unbidden. Verified against the case table before the
+edit: the rendering does begin with those exact words.
+
+**THE REPAIR** is the clause the review specified, appended to case
+(a) verbatim: *"IF THE LINE CARRIES 'grounded for local pickup':
+seat yourself, report, and HOLD — the fleet awaits a desk; never
+resume, redeploy, or unfence it unbidden."* NOTE THE SHAPE — it does
+NOT move the fleet case out of (a). Seating is still correct (no
+commander exists), and only the AUTHORITY that follows seating is
+fenced. A cruder fix that pushed it into (b) would have left the
+board with no live seat at all.
+
+**STILL v5 — no version bump.** The fence has never merged, so the
+version is not yet spent; bumping to v6 would imply a box paste that
+never happened. The version-history row's description was widened to
+cover the clause, since a row that understates its own version is
+the box-master failure in miniature.
+
+**THREE TIMES, ONE LESSON, AND IT IS NOW THE BENCH'S REAL OUTPUT.**
+The pre-gate critic caught case (a) keying on an ABSENCE (the desk
+takeover matched it); the repair keyed on POSITIVE tokens; and the
+external review then caught a positive token that is itself a
+PREFIX of a longer, different state. Each fix was correct and each
+left the same class of hole. What actually generalizes: WHEN A CASE
+TABLE FIXES THE WORDING, MATCH THE WHOLE RENDERING AND ENUMERATE
+THEM — a substring of a rendering is not a case. Flight 4's lane
+learned the same thing about its ack watcher (anchoring on the bare
+word "airborne" would have matched its own prose); this is that
+finding again, in a different file.
 
 2026-08-05 16:25 UTC · THE CRITIC ROUND · work PC — the pre-gate
 critic ([D-044](../record/DECISIONS.md#d-044--the-pre-gate-critic-goes-live))
