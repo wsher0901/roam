@@ -1,7 +1,7 @@
 ---
 type: memory
 id: charter-cockpit-assumption
-updated: 2026-08-05 15:50 UTC · bench birth · work PC
+updated: 2026-08-05 16:05 UTC · payload complete · work PC
 ---
 
 # charter-cockpit-assumption — teaching the charter that a desk exists
@@ -29,22 +29,23 @@ edit that deliberately rides along WITHOUT joining the version bump,
 because a one-line YAML fix parked behind a manual box paste is the
 silent-failure shape this workshop keeps rediscovering.
 
-The contract, including why this is a repair rather than a new
-convention: [the spec](../record/specs/charter-cockpit-assumption.md).
+The contract, including the overturned not-a-decision note and what
+overturned it:
+[the spec](../record/specs/charter-cockpit-assumption.md).
 
 ## Pending issues
 
-None yet. One judgment call is stated in the spec rather than
-assumed: this bench treats the charter edits as ALIGNMENT with
-existing law ([D-046](../record/DECISIONS.md#d-046--flight-cockpit-the-control-tower-online),
-[D-051](../record/DECISIONS.md#d-051--self-seat-birth)) rather than
-new doctrine, so no D-number is cut. If the founder reads it the
-other way, [decide](../skills/decide.md) runs before the weld.
+None. The one open judgment call was RESOLVED AGAINST THIS BENCH'S
+OWN OPENING POSITION — see the story below. It cut
+[D-075](../record/DECISIONS.md#d-075--the-self-seat-duty-gains-a-live-desk-case).
 
 ## Left / idle
 
-Everything — the bench is newly born. Plan steps 1–6 in
-[the spec](../record/specs/charter-cockpit-assumption.md).
+Payload complete — all six plan steps done. What remains is the
+closing sequence: the pre-gate critic, the FULL COPY print of the
+new charter text for the box paste, and the external Web review that
+[no-solo-approval](../LAWS.md#workflow-non-negotiable) requires of a
+self-authored diff.
 
 Two things do NOT belong to this bench and must not be quietly
 absorbed: the **box re-save** is the founder's act at
@@ -53,6 +54,37 @@ session-start hook never syncing a cloud seat is a separate,
 separately-filed defect in a different file.
 
 ## The story
+
+2026-08-05 16:05 UTC · THE SWEEP OVERTURNED THE BENCH'S OWN
+NOT-A-DECISION RULING · work PC — this bench opened stating, in its
+spec, that no D-number was needed: every charter edit merely made the
+file agree with law that already existed, and charter v2 and v4 were
+precedent for a version bump following a change made elsewhere. That
+reasoning was WRONG, and what corrected it was the sweep law rather
+than any second thought.
+
+Grepping THE DESTINATION — the phrases being changed, not the
+phrasings expected around them — turned up
+[D-051](../record/DECISIONS.md#d-051--self-seat-birth)'s own clause
+(2): *"a cockpit finding 'self-seat pending' — or no live cockpit —
+on the board repaints it seating itself"*. THE TWO-CASE BLIND SPOT IS
+NOT THE CHARTER DRIFTING FROM THE DECISION; IT IS THE DECISION. So
+adding a third case amends a standing choice, `decide` runs unasked,
+and [D-075](../record/DECISIONS.md#d-075--the-self-seat-duty-gains-a-live-desk-case)
+landed with its ripple in one commit.
+
+THE LESSON IS WORTH MORE THAN THE BENCH: a document repair that
+contradicts nothing may still be a decision, if the thing it
+contradicts turns out to live in a D-number. Reading the prose was
+not enough. The spec keeps the overturned note visible rather than
+swapping it silently, because the reasoning that failed is the part
+a later bench can learn from.
+
+THE SAME SWEEP FOUND THE TOMBSTONE IN TWO PLACES, not one — the
+charter and [HOME](../HOME.md)'s R4b, which duplicates it
+deliberately so a superseded seat can speak without reading
+anything. Both were backfilled in the same commit, per the
+retroactivity law; a fix to one would have left the other lying.
 
 2026-08-05 15:50 UTC · bench birth · work PC — born from the summon
 test's 🔴, on the founder's "go". THE EXPOSURE IS LIVE, which is why

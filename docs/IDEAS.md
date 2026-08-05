@@ -19,18 +19,6 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
 
 ## Open
 
-- ⏳ THE SUMMON TEST'S MEASUREMENT HAS NO RECORD HOME, so it is
-  parked on [DASHBOARD](DASHBOARD.md) under Recent, where a board
-  diet says narrative should not live. The seven-moment ignition
-  timeline — push 13:54:05 to a live cockpit at 13:54:18.69, the
-  first fire ever observed from the FIRING side — plus the
-  correction that the workflow had already flown 2026-07-23, belong
-  in the record. Flight 4's probe is frozen and shipped and cannot
-  absorb them. Options: a short `record/probes/summon-test.md`, or a
-  section in whatever bench fixes the charter, which will be
-  touching this machinery anyway. Verify-before-drop is what is
-  keeping it on the board until then. (2026-08-05, the work PC
-  control tower) → [the board's Recent](DASHBOARD.md)
 - ⏳ THE SESSION-START HOOK NEVER SYNCS A CLOUD SEAT, because it
   pulls only on `main` — `.claude/hooks/session-start.mjs` guards
   the fast-forward with `branch === "main" && !dirty`, and every
@@ -609,6 +597,15 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
 The outcome ledger — one line each, newest first. A closed idea
 keeps its answer, never its narrative.
 
+- 🟢 The summon test's measurement got a record home — a short
+  [probe record](record/probes/summon-test.md) carrying the
+  seven-moment ignition timeline (push 13:54:05 → a live cockpit at
+  13:54:18.69, the first fire ever observed from the FIRING side),
+  the correction that the workflow had already flown 2026-07-23, and
+  the five findings the seat returned. It was parked on the board
+  under verify-before-drop until it had somewhere to go; the charter
+  fix bench took it, being in that machinery anyway. →
+  [#314](https://github.com/wsher0901/roam/pull/314)
 - 🟢 The charter assumed its successor and its predecessor were
   always cockpits — FIXED at **v5**. Rule 1 now matches THREE cases
   against THE BATON, the new middle one being a live baton-holder

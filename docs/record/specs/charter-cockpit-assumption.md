@@ -38,12 +38,15 @@ one.
 
 ## Out of scope
 
-- **No new doctrine.** Every edit here makes the charter AGREE with
-  law that already exists — the baton law
-  ([D-046](../DECISIONS.md#d-046--flight-cockpit-the-control-tower-online)),
-  and the board as arbiter of whether a live seat exists
-  ([D-051](../DECISIONS.md#d-051--self-seat-birth)). Nothing is
-  invented. See § Why this is not a decision.
+- **NO DOCTRINE BEYOND THE ONE AMENDMENT.**
+  [D-075](../DECISIONS.md#d-075--the-self-seat-duty-gains-a-live-desk-case)
+  amends [D-051](../DECISIONS.md#d-051--self-seat-birth)'s clause (2)
+  and nothing else; every other edit here merely makes the charter
+  AGREE with law that already exists, chiefly the baton law
+  ([D-046](../DECISIONS.md#d-046--flight-cockpit-the-control-tower-online)).
+  The bench opened believing NO decision was needed and was corrected
+  by its own sweep — see § Why this IS a decision, which keeps that
+  correction rather than hiding it.
 - **The box re-save is NOT this bench's act.** It is the founder's,
   it happens at claude.ai/code/routines, and it rides
   [DASHBOARD](../../DASHBOARD.md) Needs-you from the moment this
@@ -143,29 +146,52 @@ then point there and shrink.
 - [ ] The charter carries a **v5** version-history row, and every
       rule not named above is BYTE-IDENTICAL — proved by reading the
       diff, not by assertion.
+- [ ] [D-075](../DECISIONS.md#d-075--the-self-seat-duty-gains-a-live-desk-case)
+      exists, its Affects line matches the edits actually made, and
+      every file it names is changed in this PR.
 - [ ] `docs/record/probes/summon-test.md` exists and holds the
-      measurement; the board's parked block shrinks to a pointer and
-      its inbox line closes.
+      measurement, and its inbox line closes. THE BOARD'S PARKED
+      BLOCK SHRINKS AT SHIP'S TAIL, not on this branch — the board
+      is repainted by rituals and never hand-edited, so a task
+      branch may not touch it.
 - [ ] THE GATE REPORT PRINTS THE COMPLETE NEW CHARTER TEXT for the
       box paste (the FULL COPY law), and the board gains a Needs-you
       line for the re-save the moment this merges.
 - [ ] The verification loop is green and the PUSHED head's Actions
       run is green.
 
-## Why this is not a decision
+## Why this IS a decision — the note above was wrong, and the sweep is what corrected it
 
-[decide](../../skills/decide.md) runs on roadmap-level changes and
-standing convention changes. Every edit here makes the charter agree
-with doctrine that ALREADY EXISTS in a higher home — the baton law
+**This section replaces a "why this is not a decision" note written
+at bench birth. It was wrong, and the correction is recorded rather
+than quietly swapped.**
+
+The birth reasoning was: every edit merely makes the charter agree
+with doctrine that already exists in a higher home — the baton law
 ([D-046](../DECISIONS.md#d-046--flight-cockpit-the-control-tower-online))
-says exactly one control tower and names the desk as one; D-051 makes
-the board the arbiter of whether a live seat exists. The charter
-simply never learned it. A repair that removes a contradiction is not
-a new convention, and charter versions v2 and v4 set the precedent:
-both followed a change made elsewhere rather than making one.
+names the desk a commanding seat, and
+[D-051](../DECISIONS.md#d-051--self-seat-birth) makes the board the
+arbiter of whether a live seat exists — so the charter was simply
+behind, and a repair that removes a contradiction is not a new
+convention. Charter v2 and v4 were cited as precedent, both having
+followed a change made elsewhere.
 
-IF THE FOUNDER READS IT THE OTHER WAY, this note is where to say so
-and `decide` runs before the weld.
+**THE SWEEP KILLED IT.** Grepping the destination rather than the
+phrasings turned up
+[D-051](../DECISIONS.md#d-051--self-seat-birth)'s own clause (2),
+which reads: *"a cockpit finding 'self-seat pending' — or no live
+cockpit — on the board repaints it seating itself"*. The two-case
+blind spot is not the charter drifting from the decision; IT IS THE
+DECISION. Adding a third case amends a standing choice, which is
+exactly what [decide](../../skills/decide.md) exists for, and it
+runs UNASKED.
+
+[D-075](../DECISIONS.md#d-075--the-self-seat-duty-gains-a-live-desk-case)
+is that entry, landed with its ripple in one commit. The general
+lesson is worth more than this bench: **a document repair that
+contradicts nothing may still be a decision, if the thing it
+contradicts turns out to live in a D-number.** Checking the prose
+was not enough; only the sweep found it.
 
 ## Notes for whoever resumes this bench
 
