@@ -19,6 +19,18 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
 
 ## Open
 
+- ⏳ THE SUMMON TEST'S MEASUREMENT HAS NO RECORD HOME, so it is
+  parked on [DASHBOARD](DASHBOARD.md) under Recent, where a board
+  diet says narrative should not live. The seven-moment ignition
+  timeline — push 13:54:05 to a live cockpit at 13:54:18.69, the
+  first fire ever observed from the FIRING side — plus the
+  correction that the workflow had already flown 2026-07-23, belong
+  in the record. Flight 4's probe is frozen and shipped and cannot
+  absorb them. Options: a short `record/probes/summon-test.md`, or a
+  section in whatever bench fixes the charter, which will be
+  touching this machinery anyway. Verify-before-drop is what is
+  keeping it on the board until then. (2026-08-05, the work PC
+  control tower) → [the board's Recent](DASHBOARD.md)
 - ⏳ THE SESSION-START HOOK NEVER SYNCS A CLOUD SEAT, because it
   pulls only on `main` — `.claude/hooks/session-start.mjs` guards
   the fast-forward with `branch === "main" && !dirty`, and every
