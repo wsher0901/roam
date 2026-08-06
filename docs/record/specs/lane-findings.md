@@ -81,9 +81,13 @@ asking.
 
 ## Out of scope
 
-- **Rewriting the four mis-authored commits.** They are on main
-  now; a force-push is destructive and buys nothing the record does
-  not already carry.
+- **Rewriting the four mis-authored commits.** A force-push is
+  destructive and buys nothing the record does not already carry —
+  and VERIFIED AT REVIEW, their authorship never reached main
+  anyway: squash-merge rewrites the author to the GitHub account, so
+  `git log --format='%an' origin/main` returns only `Wonseuk Her`
+  and `claude[bot]`, never `Claude`. The wrong author exists in the
+  PR's commit list and nowhere else.
 - **The hook's OTHER known gap** — that it never syncs a cloud seat,
   because it pulls only on `main` and a cloud seat is born on a
   `claude/*` branch. Separately filed, same file, different fix, and

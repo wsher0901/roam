@@ -59,13 +59,22 @@ sh("git fetch --prune --quiet");
 // the push succeeds, CI passes, every gate is green, only the author
 // name differs. (Its neighbour trap — the founder's real address —
 // fails loudly, because GitHub rejects the push.) So the hook does
-// it: the hook is in the repo and reaches every seat that clones,
-// with nothing to paste and nothing to remember.
-// The value is DERIVED from the history itself, never hardcoded, so
-// this creates no second home for it — machine-setup's own recipe.
-// Runs after the fetch above, so origin/main is fresh.
+// it: the hook is in the repo and reaches every seat that clones.
+// The value is DERIVED from the history itself, never hardcoded —
+// machine-setup's own recipe — so this creates no second home.
+//
+// TWO GUARDS, both learned at review rather than by accident:
+// (1) it fires ONLY on the harness default, never on an UNSET
+//     identity. This repo is public; on a clone with no identity
+//     configured, setting one would replace git's loud "who are
+//     you?" refusal with silent misattribution to the founder.
+// (2) the DERIVED value is re-tested against the same rule before
+//     it is written. If origin/main's tip ever carries the harness
+//     identity, installing it would print a green line over a null
+//     fix — the same silent class this step exists to end.
+const HARNESS_ID = /noreply@anthropic\.com$/i;
 const identity = sh("git config user.email");
-if (!identity || /noreply@anthropic\.com$/i.test(identity)) {
+if (identity && HARNESS_ID.test(identity)) {
   const who = shFile("git", [
     "log",
     "-1",
@@ -73,18 +82,21 @@ if (!identity || /noreply@anthropic\.com$/i.test(identity)) {
     "origin/main",
   ]);
   const [name, email] = (who ?? "").split("	");
-  if (name && email) {
-    const set =
-      shFile("git", ["config", "user.name", name]) !== null &&
-      shFile("git", ["config", "user.email", email]) !== null;
-    console.log(
-      set
-        ? `[hook] seat identity set repo-local: ${name} <${email}> (derived from origin/main; was ${identity ?? "unset"}).`
-        : "[hook] seat identity NOT set — git config refused. Commits will carry the wrong author; fix per machine-setup step 1 before committing.",
-    );
+  if (name && email && email.includes("@") && !HARNESS_ID.test(email)) {
+    const okName = shFile("git", ["config", "user.name", name]) !== null;
+    const okEmail = shFile("git", ["config", "user.email", email]) !== null;
+    if (okName && okEmail) {
+      console.log(
+        `[hook] seat identity set repo-local: ${name} <${email}> (derived from origin/main; was ${identity}).`,
+      );
+    } else {
+      console.log(
+        `[hook] seat identity only PARTLY set (name ${okName ? "ok" : "failed"}, email ${okEmail ? "ok" : "failed"}) — fix per machine-setup step 1 before committing.`,
+      );
+    }
   } else {
     console.log(
-      "[hook] seat identity looks like the harness default and origin/main is unreadable — set it per machine-setup step 1 before committing.",
+      "[hook] seat identity is the harness default and origin/main offers no usable replacement — set it per machine-setup step 1 before committing.",
     );
   }
 }

@@ -1,14 +1,14 @@
 ---
 type: memory
 id: lane-findings
-updated: 2026-08-06 13:15 UTC · payload complete · work PC
+updated: 2026-08-06 13:30 UTC · ship · critic round · work PC
 ---
 
 # lane-findings — closing what the cold lane found
 
 ## Status
 
-claimed — work PC control tower, 2026-08-05
+complete, awaiting merge — 2026-08-06
 
 Born on the founder's word folding three items into a findings
 bench. Self-authored payload, so an external Web review is required
@@ -44,6 +44,77 @@ self-authored diff.
 
 ## The story
 
+2026-08-06 13:30 UTC · THE CRITIC ROUND — AND A FIFTH INSTANCE OF
+THE CLASS THIS BENCH EXISTS TO CLOSE · work PC — eleven findings,
+two 🔴, all repaired. **The second red matters most, because of
+where it landed.**
+
+**🔴 ONE — THE TEST I WROTE WOULD HAVE MADE THE SETTLED BRANCH
+UNREACHABLE.** It listed "an unticked Done-means box" as evidence of
+owed work. But unticked boxes are the NORM here, not a signal:
+`cloud-git-identity` shipped with all eight unticked,
+`ship-synthesis` with five, and the CI box is left unticked BY A
+CONVENTION I INVENTED TWO BENCHES AGO. The test would have answered
+ADVANCED for nearly every item, making
+[D-077](../record/DECISIONS.md#d-077--shelf-benches-and-the-settling-weld-writes)
+ruling 2's "WRITE THE STORY, NOW" practically unreachable — a test
+that quietly undoes the ruling it was written to sharpen. That input
+is now named as NOT an input, with the reason.
+
+**🔴 TWO — AND IT IS THE FIFTH INSTANCE OF THIS EXACT CLASS.** The
+test asked "is any work still KNOWN to be owed — Yes → ADVANCED, No
+→ SETTLED", then said "WHEN YOU CANNOT TELL, TREAT IT AS ADVANCED."
+Under the first sentence uncertainty is not knowledge, so "cannot
+tell" answers NO and lands on SETTLED. **One read, two verdicts** —
+a fork whose branches share an entry condition with the tiebreaker
+undefined, which is precisely the defect this bench was convened to
+fix, committed inside the fix. Repaired by folding the default INTO
+the question: "Yes, OR you cannot tell → ADVANCED. Only a checked NO
+→ SETTLED."
+
+THE PATTERN NOW HAS FIVE MEMBERS: an absence-keyed case · a prefix
+collision · two cases with one trigger · a fork with an undefined
+tiebreaker · and now a fork whose stated default contradicts its own
+question. **Every one caught by review, none by its author** — and
+the countermeasure that works, enumerating the real inputs from
+their source, I applied to the OTHER half of this bench and not to
+this sentence.
+
+**THE HOOK GAINED TWO GUARDS I HAD NOT THOUGHT OF, both hazards
+rather than tidiness.** It fired on an UNSET identity as well as the
+harness default — and this repo is PUBLIC, so on any outside clone
+lacking an identity it would have replaced git's loud "who are you?"
+refusal with silent misattribution to the founder. That branch is
+gone. And the DERIVED value was installed without being re-tested
+against the same rule, so a bad `origin/main` tip would have written
+the very string the step exists to remove and printed a green line
+over it. It is re-tested now.
+
+**ONE CONTRADICTION BETWEEN MY OWN TWO FILES, resolved by
+measurement.** The spec said the four mis-authored commits "are on
+main now"; this memory said local commits never reach main under
+their local name. `git log --format='%an' origin/main` returns only
+`Wonseuk Her` and `claude[bot]` — never `Claude`. Squash-merge
+rewrites the author, so the memory was right and the spec was loose.
+Corrected there.
+
+**Five more, all taken:** [machine-setup](../skills/machine-setup.md)
+still told a cloud seat to set its identity itself, stale the moment
+this merges — backfilled per the retroactivity law, hook named,
+manual path kept as the fallback · this memory's Status still read
+`claimed` at critic time where ship §4 requires `complete, awaiting
+merge` · two weave misses · the vault-lens cell asserted "still owed
+at the home PC" as present fact where the attestation is dated · and
+two undated derived literals, now stamped.
+
+**AND ONE THE WELD OWES, surfaced rather than absorbed:**
+[session-hooks](../chronicle/session-hooks.md) and
+[machine-setup](../chronicle/machine-setup.md) BOTH have written
+stories whose endings this diff falsifies — one states the hook's
+line count, the other calls the identity step "the procedure's one
+silent failure mode". Under ship §7 case 1 this weld owes both an
+incorporation, so its synthesis names TWO items.
+
 2026-08-06 13:15 UTC · ALL THREE CLOSED, AND THE HOOK WAS PROVED
 RATHER THAN ASSERTED · work PC
 
@@ -70,7 +141,7 @@ and is usable.
 
 **ONE THING THE PROOF SURFACED that reads like a defect and is not.**
 This desk's configured name is `Wonseuk`, and that string appears in
-`origin/main`'s history ZERO times — main carries `Wonseuk Her` 322
+`origin/main`'s history ZERO times — main carried `Wonseuk Her`, measured 2026-08-06, 322
 times. Squash-merge rewrites the author to the GitHub account name,
 so local commits never reach main under their local name. The
 derivation therefore returns THE SQUASH IDENTITY, which is exactly
@@ -111,7 +182,7 @@ its eight story subjects. It complied by luck.
 
 The step lives in [machine-setup](../skills/machine-setup.md), which
 is the one file a cloud lane has no reason to open: a lane's orders
-route it to LAWS, parallel-lanes, its spec and its memory, and A
+route it to [LAWS](../LAWS.md), [parallel-lanes](../skills/parallel-lanes.md), its spec and its memory, and A
 LANE DOES NOT THINK OF ITSELF AS SETTING UP A MACHINE. Verified at
 birth — [LANE-WORKER.md](../LANE-WORKER.md) contains no mention of
 identity at all.
@@ -134,7 +205,7 @@ paste, and fixes cockpits and background agents too — the gap was
 never lane-specific, it was CLOUD-SEAT-specific.
 
 **THE OTHER TWO ARE SMALL AND BOTH ARE ABOUT KEEPING WHAT THE RECORD
-ALREADY KNEW.** "SETTLED vs ADVANCED" forks ship §7's case 2 with no
+ALREADY KNEW.** "SETTLED vs ADVANCED" forks [ship §7](../skills/ship.md#7--on-approval--the-atomic-weld)'s case 2 with no
 operational test — the fourth instance of a fork whose branches
 share an entry condition with an undefined tiebreaker. And the
 vault-lens cell called its state "unverifiable" while the same file

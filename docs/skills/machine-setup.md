@@ -26,9 +26,20 @@ status: living
    normalizes repo-side either way.
    THE CLOUD SEAT is the third seat, and the one nobody sits at. It
    boots as `Claude <noreply@anthropic.com>`, set globally in the
-   image's own gitconfig, so it inherits neither desk and must set
-   the same personal name + GitHub noreply email itself, repo-local,
-   before its first commit. Left alone it authors under a name no
+   image's own gitconfig, so it inherits neither desk and needs the
+   same personal name + GitHub noreply email, repo-local, before its
+   first commit.
+   **THE SESSION-START HOOK NOW DOES THIS AUTOMATICALLY** — it fires
+   only when the identity IS the harness default, derives the value
+   from `origin/main` by the recipe below, re-tests it, and says so
+   in its output. What follows is the rule it implements and the
+   MANUAL FALLBACK when the hook cannot run or reports it failed;
+   a seat should still check its own author before its first push.
+   THE HOOK EXISTS BECAUSE THIS FILE IS THE ONE A CLOUD SEAT HAS NO
+   REASON TO OPEN: a lane's orders route it to LAWS, parallel-lanes,
+   its spec and its memory, and the 2026-08-05 cold lane complied
+   only by luck — this procedure happened to be one of its own story
+   subjects. Left alone it authors under a name no
    other commit in this history carries — exactly the tell
    [seat-invariance](../LAWS.md#parallel-lanes--cloud) forbids. It
    need not be told the value: `git log -1 --format='%an <%ae>'
