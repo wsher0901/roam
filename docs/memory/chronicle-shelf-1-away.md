@@ -1,15 +1,21 @@
 ---
 type: memory
 id: chronicle-shelf-1-away
-updated: 2026-08-06 15:00 UTC · respawn · work PC
+updated: 2026-08-06 14:56 UTC · respawn canary · cloud
 ---
 
 # chronicle-shelf-1-away — Shelf I — the away surface
 
 ## Status
 
-bench ready, no worker yet — RESPAWNED 2026-08-06 by the work PC
-control tower
+claimed for respawn by cloud — 2026-08-06 14:56 UTC
+
+Waiting on the baton-holder's ack before any payload work. The
+respawn stamp landed at 14:55:23Z and this claim at 14:56, so the
+seat that re-birthed this bench is live and one minute ahead of
+the wait. The match is anchored to a Status line STARTING WITH the
+canonical token, never a substring — this paragraph contains the
+word and must not be able to license its own writer.
 
 **THE PREVIOUS LANE DID NOTHING WRONG AND THE BATON-HOLDER DID.**
 That lane canaried at 14:42:09Z and stood down at 14:54:05Z, exactly
