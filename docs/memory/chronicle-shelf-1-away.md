@@ -1,37 +1,23 @@
 ---
 type: memory
 id: chronicle-shelf-1-away
-updated: 2026-08-06 14:57 UTC · airborne ack · work PC
+updated: 2026-08-06 15:13 UTC · complete · cloud
 ---
 
 # chronicle-shelf-1-away — Shelf I — the away surface
 
 ## Status
 
-airborne · cloud · 2026-08-06
+complete, awaiting merge — 2026-08-06 · cloud lane
 
-**YOU ARE LICENSED. WORK.** Acked at 14:57 UTC — **90 seconds after
-your canary**, against the ~13 minutes that killed your predecessor.
-That lane did nothing wrong; the ack was late. This one was waiting.
-
-⚠ **THE ONE RULE THAT KEEPS THIS FLEET LAWFUL: DO NOT WRITE
-`docs/chronicle/INDEX.md`. Not one cell.** Six siblings are flying
-beside you, and the lane law forbids siblings sharing a file so that
-merges cannot collide by construction. The baton-holder marks your
-rows written at the weld. You write story files and this memory,
-nothing else.
-
-**DERIVE YOUR ENDINGS; DO NOT TRUST THE CENSUS CELLS.** Several have
-been wrong — one stood stale for a week and misled two later
-readers, each of whom stopped at a dated line without asking whether
-anything since had closed it. A dated attestation is evidence of its
-date and of nothing later. If your derivation contradicts the cell,
-the derivation wins and your story says so.
-
-**TWO OF YOUR ELEVEN ARE `event` ITEMS** — the Shakedown Flight and
-the cockpit's proving flights. Slice D's bend is not optional for
-them: `## What it was`, `## What happened, in order`, and a
-`## What it found`, because a flight's product IS its findings.
+All 11 stories written to
+[the spec](../record/specs/chronicle-shelf-1-away.md)'s format, both
+`event` items on slice D's bend,
+`docs/chronicle/INDEX.md` UNTOUCHED, and the full verification loop
+green. Awaiting an independent non-author review and the founder's
+word — this diff is LANE-AUTHORED, so any non-author session's
+review plus the word is lawful without an external Web review
+([LAWS §Workflow](../LAWS.md#workflow-non-negotiable)).
 
 ## What this task is
 
@@ -45,25 +31,39 @@ lawful — **do not write the INDEX** —
 
 ## Pending issues
 
-**One, and it is not about the work.** No `airborne ·` ack reached
-this branch inside the canary window, so the lane never became
-licensed. The bench still needs no decision from anyone — the
-format is settled and the scope fully specified. What it needs is
-a baton-holder to ack it.
+**None on the payload.** The eleven stories are written, the loop is
+green, and nothing about this bench needs a decision.
 
-WORTH CHECKING BEFORE THE RESPAWN: six sibling lanes were labeled
-in the same minute
-([#331](https://github.com/wsher0901/roam/pull/331)–[#336](https://github.com/wsher0901/roam/pull/336)),
-and nothing about this bench is special, so the same silence
-plausibly covers the whole fleet. If it does, the fault is the
-watch and not the lanes.
+**THREE THINGS FOR THE FOUNDER, none of them this bench's to rule.**
+
+1. **[#331](https://github.com/wsher0901/roam/pull/331) is dead with
+   zero payload and its Status still reads `airborne · cloud`** —
+   found by the stood-down sibling's read-only liveness sweep, and
+   the most urgent item here. It was acked 11 min 13 s after its
+   canary, past the window, and has written nothing since. **A
+   stale AIRBORNE Status makes a dead lane look alive**, which is
+   the dangerous direction of the two.
+2. **One label can spawn a session more than once.** Proved, not
+   guessed: a third `pull_request.labeled` firing arrived for this
+   PR carrying `Head SHA: ab39d2b`, a tip three commits stale — so
+   it was a REDELIVERY of the original event. The ack token names a
+   BENCH and a VEHICLE CLASS, never a session, so it cannot tell
+   repeat claimants apart. Whether to close that gap in
+   [§Canary](../skills/parallel-lanes.md#canary-handshake-both-sides)
+   is a founder call.
+3. **The go-remote keep-or-retire ruling is now DUE.** Its
+   [IDEAS](../IDEAS.md) line defers the call until "a real cloud
+   flight proves the cloud path"; flights 1–4 flew 2026-08-03 → 05,
+   so the precondition is met and the line is still open. Surfaced
+   in [the story](../chronicle/go-remote.md) rather than ruled here.
 
 ## Left / idle
 
-All of it — plan steps 1–3 in
-[the spec](../record/specs/chronicle-shelf-1-away.md). Nothing was
-written: no story file exists on this branch, and
-`docs/chronicle/INDEX.md` is untouched, as the fleet rule requires.
+**Nothing parked.** Plan steps 1–3 are all done: the stories are
+written, every ending derived at write time, and the cost measured
+below. The bench runs to THE GATE and stops there — a lane never
+merges, never ticks the [ROADMAP](../ROADMAP.md), never writes
+[DASHBOARD](../DASHBOARD.md), [IDEAS](../IDEAS.md) or the INDEX.
 
 ## The story
 
@@ -250,6 +250,82 @@ surface claims it is flying.
 Fixing it is the baton-holder's act, not this lane's: a lane never
 writes a sibling's bench. Reported on
 [#330](https://github.com/wsher0901/roam/pull/330).
+
+2026-08-06 14:57 → 15:13 UTC · **eleven stories, written under a
+licence that arrived on the second attempt** · cloud — the payload
+is complete and the loop is green.
+
+**THE MEASUREMENT (plan step 3), split as the spec demands.**
+
+*GATHERING* — about 9 minutes, 14:43 → 14:52, and every minute of
+it spent inside the FAILED first canary wait. That is the one piece
+of luck in this bench's day: the reading was already done when the
+licence finally landed, so the second attempt started warm. Roughly
+30 sources opened — four skills, twelve decision entries, nine
+history records, two probe records, the charter, ATLAS, HOME, IDEAS,
+and the three already-written stories used as format models. All of
+it read-only; not one file written before the ack.
+
+*WRITING* — 16 minutes for 11 stories, 14:57 → 15:13, and the git
+stamps make the cadence exact: **a story a minute for the first
+seven** (14:59:15 → 15:05:41, never more than 71 seconds apart),
+then slower for the last four. The slowdown is informative rather
+than incidental — go-remote (91 s) needed an IDEAS check to
+establish that its deferred ruling had come due, and the proving
+flights (139 s, the longest) needed a GitHub API call to settle a
+contradiction the local record could not.
+
+*WHAT MADE IT HARD*, in the order the difficulty actually bit:
+
+- **The shallow clone.** This container holds 49 commits, back to
+  2026-08-04 only, so **git could not reach July at all** — the very
+  period nine of these eleven stories are about. The derivation law
+  says time comes from git metadata when reading the past, and here
+  that instrument was simply absent. The GitHub API replaced it, and
+  a future cloud lane writing history should expect the same and
+  reach for the API early rather than late.
+- **Two history files disagreed with each other on merge order**,
+  and both were wrong. `flight-hardening` says the first end-to-end
+  flight "welded as [#191](https://github.com/wsher0901/roam/pull/191)",
+  while the two files' `shipped:` frontmatter stamps (16:19 for #191,
+  15:09 for [#193](https://github.com/wsher0901/roam/pull/193)) imply
+  the reverse. The API settled it: **#191 merged 18:09:02 UTC and
+  #193 at 19:12:59 UTC**, an hour later — the prose was right and the
+  stamps were not. Recorded in the story as a caution, because a
+  later reader will hit the same trap.
+- **Not the endings.** Deriving them was fast; the census cells are
+  well built. Five needed correction and each correction fell out of
+  one targeted check rather than a hunt.
+
+**THE FIVE DERIVED CORRECTIONS**, banked here as a set because the
+weld may want them:
+
+1. **handoff** — the cell orders the spine "team shutdown → secure →
+   park"; the skill secures at §1 AHEAD of the team step at §1.2.
+   §1.2's own text fixes it against PARKING, not against securing.
+   *Independently found by the stood-down sibling too — two workers,
+   no contact, same finding.*
+2. **team-aware leaving** — the cell says the superseded-seat
+   self-close "stays uncovered and filed". **Closed in full** by
+   [D-062](../record/DECISIONS.md#d-062--the-wake-rule-generalized),
+   and live in [LAWS](../LAWS.md#parallel-lanes--cloud).
+3. **the cockpit's birth vehicle** — the cell says the greeting push
+   is "never confirmed in flight". Overtaken: cockpits flew and
+   landed 2026-08-04, and a summoned seat was born 2026-08-05.
+4. **connector resilience** — the cell says the summon secrets
+   "exist by NAME". The workflow has since FIRED TWICE, measured at
+   13.7 seconds push-to-seat. Rungs 2b and 5 stay ungraded, as the
+   cell rightly says.
+5. **go-remote** — the cell defers keep-or-retire until a real cloud
+   flight; the flights have flown, so the ruling is due, not
+   pending.
+
+**ONE FORMAT NOTE FOR THE WELD.** The two `event` stories cite each
+other's SUBJECTS but never each other's prose, and no story cites
+another story's prose anywhere — the down-links rule holds. Story-to-
+story links exist only where a story points at a SIBLING ITEM as a
+thing ([land](../chronicle/land.md), the wake-lock), which is what
+the census rows do too.
 
 ## Where to look
 
