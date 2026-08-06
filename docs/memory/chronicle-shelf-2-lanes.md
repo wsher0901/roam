@@ -1,15 +1,17 @@
 ---
 type: memory
 id: chronicle-shelf-2-lanes
-updated: 2026-08-06 16:12 UTC · respawn · work PC
+updated: 2026-08-06 16:13 UTC · canary claim · cloud lane
 ---
 
 # chronicle-shelf-2-lanes — Shelf II — the lane system
 
 ## Status
 
-bench ready, no worker yet — RESPAWNED 2026-08-06 by the work PC
-control tower
+claimed for respawn by cloud — 2026-08-06 16:13 UTC
+
+Waiting for the baton-holder's ack commit on origin before any real
+work ([§Canary](../skills/parallel-lanes.md#canary-handshake-both-sides)).
 
 **THE PREVIOUS WORKER WAS LICENSED AND THEN DIED SILENTLY.** It
 canaried 14:42:58Z, was acked 14:54:11Z, and never wrote a line —
