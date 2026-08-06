@@ -144,6 +144,15 @@ atomically:
     the new ending. Never a second story.
   - **it has a CENSUS ROW but no story yet** → SPLIT ON WHETHER
     THIS WELD SETTLED THE ITEM OR MERELY ADVANCED IT.
+    THE TEST, ONE READ: after this weld, is any work on this item
+    still KNOWN to be owed — an open bench, a Needs-you line, an
+    inbox line, an unticked Done-means box, or a "still owed" in
+    the record? **Yes → ADVANCED. No → SETTLED.** Retirement is a
+    settlement.
+    WHEN YOU CANNOT TELL, TREAT IT AS ADVANCED. The costs are not
+    symmetric: a wrong ADVANCE leaves a cell someone rewrites
+    later, and a wrong SETTLE writes a story onto a moving target
+    and then has to incorporate it anyway.
     - **ADVANCED** → update that row's ENDING CELL. One cell, not
       a story.
     - **SETTLED** → **WRITE THE STORY, NOW, IN THIS COMMIT** — the

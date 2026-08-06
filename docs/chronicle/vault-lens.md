@@ -2,13 +2,14 @@
 type: chronicle-story
 shelf: III — the information system
 status: living
-updated: 2026-08-05 · written · cloud lane
+updated: 2026-08-06 · ending narrowed at review · work PC
 ---
 
 # The vault lens — a view that travels, applied by a phrase
 
-> **CURRENT ENDING (2026-08-05).** Settled as a design and permanently
-> unverifiable as a state. The lens is two seed JSONs versioned in
+> **CURRENT ENDING (2026-08-06).** Settled as a design; its per-seat
+> state is NOT READABLE FROM THE REPOSITORY, which is a narrower
+> claim than unverifiable and the narrower one is the true one. The lens is two seed JSONs versioned in
 > `.claude/vault-seed/`, applied to a seat by saying **"apply the
 > vault lens"**, which copies them into the gitignored live
 > `docs/.obsidian/`. Every machine, including a future third, gets
@@ -16,10 +17,12 @@ updated: 2026-08-05 · written · cloud lane
 > actually applied it CANNOT BE READ FROM THE REPOSITORY**, because
 > the live config is gitignored by design — so per-seat status is
 > knowable only from a note somebody remembered to write. The
-> census recorded a home-PC re-seed still owed after
-> [#229](https://github.com/wsher0901/roam/pull/229); at this
-> writing the board no longer carries it and **no record confirms it
-> was done**, which is a gap in the record rather than an answer
+> founder's dated word IS such a record and this workshop has one:
+> **applied at the work PC on 2026-07-28, still owed at the home
+> PC** after [#229](https://github.com/wsher0901/roam/pull/229). So
+> ONE SEAT IS ATTESTED AND ONE IS OPEN. At this writing the board no
+> longer carries the item and no record confirms the home PC was
+> done since, which is a gap in the record rather than an answer
 > either way.
 
 ## What it is

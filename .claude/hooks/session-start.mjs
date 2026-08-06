@@ -51,6 +51,44 @@ try {
 // gracefully like the pull below).
 sh("git fetch --prune --quiet");
 
+// SEAT IDENTITY. A cloud seat boots carrying the container image's
+// global git identity, so it authors commits as someone no other
+// commit in this history carries — the tell seat-invariance forbids.
+// The step that fixes it lives in machine-setup, which is the ONE
+// FILE A CLOUD SEAT HAS NO REASON TO OPEN, and the failure is SILENT:
+// the push succeeds, CI passes, every gate is green, only the author
+// name differs. (Its neighbour trap — the founder's real address —
+// fails loudly, because GitHub rejects the push.) So the hook does
+// it: the hook is in the repo and reaches every seat that clones,
+// with nothing to paste and nothing to remember.
+// The value is DERIVED from the history itself, never hardcoded, so
+// this creates no second home for it — machine-setup's own recipe.
+// Runs after the fetch above, so origin/main is fresh.
+const identity = sh("git config user.email");
+if (!identity || /noreply@anthropic\.com$/i.test(identity)) {
+  const who = shFile("git", [
+    "log",
+    "-1",
+    "--format=%an%x09%ae",
+    "origin/main",
+  ]);
+  const [name, email] = (who ?? "").split("	");
+  if (name && email) {
+    const set =
+      shFile("git", ["config", "user.name", name]) !== null &&
+      shFile("git", ["config", "user.email", email]) !== null;
+    console.log(
+      set
+        ? `[hook] seat identity set repo-local: ${name} <${email}> (derived from origin/main; was ${identity ?? "unset"}).`
+        : "[hook] seat identity NOT set — git config refused. Commits will carry the wrong author; fix per machine-setup step 1 before committing.",
+    );
+  } else {
+    console.log(
+      "[hook] seat identity looks like the harness default and origin/main is unreadable — set it per machine-setup step 1 before committing.",
+    );
+  }
+}
+
 const branch = sh("git rev-parse --abbrev-ref HEAD") ?? "unknown";
 const dirty = sh("git status --porcelain");
 

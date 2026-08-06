@@ -130,19 +130,20 @@ gets the same treatment, since it is the row's home.
 
 ## Done means
 
-- [ ] The hook sets a repo-local identity when it is unset or the
+- [x] The hook sets a repo-local identity when it is unset or the
       harness default, DERIVES the value rather than hardcoding it,
       never blocks, always exits 0, and says what it did.
-- [ ] The hook change is proved on a real seat, not asserted — the
+- [x] The hook change is proved on a real seat, not asserted — the
       evidence recorded in the memory.
-- [ ] `LANE-WORKER.md` is NOT the vehicle, and the spec says why.
-- [ ] "SETTLED vs ADVANCED" carries a test a seat can apply without
+- [x] `LANE-WORKER.md` is NOT the vehicle, and the spec says why.
+- [x] "SETTLED vs ADVANCED" carries a test a seat can apply without
       judgment calls, and the fourth-instance pattern is named where
       it will be read.
-- [ ] The vault-lens cell and its story keep the founder's dated
+- [x] The vault-lens cell and its story keep the founder's dated
       attestation and scope the open state to the home PC.
 - [ ] The verification loop is green and the PUSHED head's Actions
-      run is green.
+      run is green. **Ticked at the gate** — a branch cannot assert
+      its own pushed head's CI.
 
 ## Notes for whoever resumes this bench
 
