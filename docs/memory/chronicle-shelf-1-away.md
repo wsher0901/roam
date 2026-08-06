@@ -11,10 +11,10 @@ updated: 2026-08-06 17:25 UTC · ship · rulings applied · work PC
 complete, awaiting merge — 2026-08-06
 
 Eleven stories written by a cloud lane, reviewed non-author at the
-work PC, and repaired under the founder's two rulings. Merging under
-[D-079](../record/DECISIONS.md#d-079--the-closing-campaigns-advance-word)'s
-advance word: green CI on the exact head plus a non-author review
-clean or repaired.
+work PC, and repaired under the founder's two rulings. Merging under **D-079**'s advance word — green CI on the exact head
+plus a non-author review clean or repaired. (Named, not linked: that
+entry rides its own PR and does not reach main until it merges, the
+in-flight-decision case already filed as an inbox line.)
 
 ## What this task is
 
