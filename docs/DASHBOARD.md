@@ -6,27 +6,23 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-08-05 · 20:22 UTC by ship's tail · from work PC
-THE CALIBRATION OVERTURNED THE PILOT — 11 of 66 written, one bench
-open · needs-you 1 · git outranks this board.
+Painted 2026-08-06 · 13:08 UTC by the board repair · from work PC
+THE FLEET IS RULED AND NOTHING IS OWED BY YOU — 11 of 66 written ·
+needs-you 0 · git outranks this board.
 How to read it → [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
 
-1. 🟡 **RE-RULE THE REMAINING 55 ON THE COLD NUMBER** — the
-   calibration flew and it CONTRADICTED the pilot: measured cold,
-   **writing dominates gathering ~60/40**, not the reverse. Eight
-   stories in ~15 minutes, ≈1m50s each all-in. Your ruling 1 is
-   confirmed by a mechanism the pilot only guessed at — one story's
-   gather cost SIX SECONDS because its neighbour had just opened the
-   same sources — and ruling 2's margin is corrected, not
-   overturned. **The lane refused to scale its number to Shelf IV**
-   (code and specs, not pre-digested benches) and named that shelf
-   its own calibration. Remaining: Shelf III slices A 6 · B 7 · C 7
-   · E 4, and Shelves I 11 · II 11 · IV 9. At this desk, whenever.
-   (since 08-05)
-   → [the calibration](record/history/workshop/definition/chronicle-shelf-1.md)
-   · [the census](chronicle/INDEX.md)
+Nothing. The 55 are re-ruled
+([D-078](record/DECISIONS.md#d-078--the-55-re-ruled-on-the-cold-number)),
+so the remaining work is fully specified and needs no decision from
+you: six slice benches at the measured figure, Shelf IV taking its
+own calibration, and the INDEX write moved to the weld so the slice
+lanes may fly concurrently without sharing a file.
+
+The desk's own queue, for visibility rather than action:
+[#324](https://github.com/wsher0901/roam/pull/324) (the findings
+bench, payload not started), then the slice fleet.
 
 ## The baton
 
@@ -51,19 +47,26 @@ No lanes. One bench open at this desk.
 
 | Who | For | State | Move |
 |---|---|---|---|
-| the commander's bench · [lane-findings](https://github.com/wsher0901/roam/pull/324) | the identity gap a cold lane found in itself, plus two review repairs | 🟡 born 20:21, draft, payload not started | write the hook step, the settled/advanced test, and the vault-lens correction |
+| the commander's bench · [lane-findings](https://github.com/wsher0901/roam/pull/324) | the identity gap a cold lane found in itself, plus two review repairs | 🟡 born 08-05 20:21, draft, payload not started | write the hook step, the settled/advanced test, the vault-lens correction |
+
+**THE SLICE FLEET IS RULED BUT UNFIRED.** Six benches — Shelf I (11)
+· Shelf II (11) · Shelf III A (6), B (7), C (7) and E (4), E last —
+plus Shelf IV's own calibration (9). They may run CONCURRENTLY only
+because
+[D-078](record/DECISIONS.md#d-078--the-55-re-ruled-on-the-cold-number)
+clause 3 moved the INDEX write to the weld; every slice bench so far
+had written that file, which the lane law forbids siblings sharing.
 
 ## Working on
 
-- PHASE 2 IS RUNNING AND ITS PLAN IS MEASURED. 11 of 66 stories
-  written — the pilot's three plus Shelf III slice D's eight, flown
-  COLD by a cloud lane whose calibration overturned the pilot's
-  central inference. 55 remain, awaiting your re-ruling on that
-  number.
+- PHASE 2 IS RUNNING, MEASURED, AND FULLY PLANNED. 11 of 66 stories
+  written; the remaining 55 are ruled into seven benches by
+  [D-078](record/DECISIONS.md#d-078--the-55-re-ruled-on-the-cold-number),
+  which re-ruled them against a COLD number that contradicted the
+  pilot: writing dominates gathering ~60/40, not the reverse.
 - THE FINDINGS BENCH is open at
-  [#324](https://github.com/wsher0901/roam/pull/324): a cloud seat's
-  git identity is set by no ritual it reads, and the failure is
-  CLEAN — push succeeds, CI passes, only the author name differs.
+  [#324](https://github.com/wsher0901/roam/pull/324) and is the
+  desk's next act.
 
 The standing order says phase 2 opens on
    your ruling. At this desk, whenever. (since 08-05)
@@ -132,6 +135,14 @@ one phase per line:
 
 **Completed**
 
+- THE 55 RE-RULED ON THE COLD NUMBER — six slice benches at the
+  measured figure, Shelf IV excluded on the measuring lane's own
+  caveat, and a third clause found by checking rather than assuming:
+  every slice bench had been writing the INDEX, which the
+  no-shared-file law forbids siblings doing, so six concurrent lanes
+  would have been unlawful. The write moved to the weld, where the
+  synthesis step already performs it.
+  [#326](https://github.com/wsher0901/roam/pull/326)
 - THE FIRST SHELF BENCH, FLOWN COLD — eight stories including the
   first two EVENTS ever written, which bent the format and
   documented the bend. Its calibration CONTRADICTED the pilot:
@@ -432,5 +443,5 @@ S3–S8 · queued in order · 0/22
 
 ## Next
 
-Work [#324](https://github.com/wsher0901/roam/pull/324), and re-rule
-the 55 whenever you're ready.
+The desk works [#324](https://github.com/wsher0901/roam/pull/324),
+then fires the slice fleet. Nothing waits on you.
