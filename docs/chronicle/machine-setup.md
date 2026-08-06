@@ -2,7 +2,7 @@
 type: chronicle-story
 shelf: III — the information system
 status: living
-updated: 2026-08-05 · written · cloud lane
+updated: 2026-08-06 · the silent step is now automatic · work PC
 ---
 
 # The per-machine seat and machine-setup — how a computer becomes a seat
@@ -17,10 +17,14 @@ updated: 2026-08-05 · written · cloud lane
 > seat nobody sits at**: the cloud seat is the third seat, it is
 > rebuilt from nothing for every flight, and its identity step is
 > therefore ONCE PER SEAT BIRTH rather than once per machine. That
-> step is the procedure's one silent failure mode, and **this
-> story's own lane demonstrated it** — it authored three commits as
+> step WAS the procedure's one silent failure mode, and **this
+> story's own lane demonstrated it** — it authored four commits as
 > `Claude <noreply@anthropic.com>` before reading the section that
-> forbids it.
+> forbids it. **AS OF 2026-08-06 THE SESSION-START HOOK PERFORMS
+> THAT STEP AUTOMATICALLY**, deriving the value from `origin/main`;
+> this procedure keeps it as the rule the hook implements and as the
+> manual fallback, which is the shape a silent failure needed —
+> something in the repo that acts without being read.
 
 ## What it is
 
@@ -106,6 +110,18 @@ desk is not re-discovered at the other.
   this gap on its very first push. And because a cloud seat is built
   fresh for every flight, this step runs ONCE PER SEAT BIRTH, not
   once per machine.
+
+- **2026-08-06 ([#324](https://github.com/wsher0901/roam/pull/324))
+  — the identity step stops depending on being read.** The
+  session-start hook now sets a cloud seat's identity when it finds
+  the harness default, deriving the value by this procedure's own
+  recipe so no second home is created. Step 1 is backfilled to name
+  the hook and keep itself as the fallback. THE REASON IS THIS
+  STORY'S OWN SUBJECT: a procedure that only works when opened
+  cannot fix a seat that has no reason to open it, and the failure
+  was clean — push succeeds, CI passes, only the author differs —
+  where its neighbour trap fails loudly.
+
 
 ## Where it stands, and the step that fails silently
 

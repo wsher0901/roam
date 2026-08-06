@@ -2,14 +2,15 @@
 type: chronicle-story
 shelf: III — the information system
 status: living
-updated: 2026-08-05 · written · cloud lane
+updated: 2026-08-06 · the seat-identity step · work PC
 ---
 
 # The session hooks — the mechanics the rituals stand on
 
-> **CURRENT ENDING (2026-08-05).** Three cross-platform Node hooks,
-> 274 lines total, carrying the mechanics every ritual assumes:
-> `session-start` (159 lines) syncs and injects the board,
+> **CURRENT ENDING (2026-08-06).** Three cross-platform Node hooks,
+> 324 lines total, carrying the mechanics every ritual assumes:
+> `session-start` (209 lines) syncs, SETS A CLOUD SEAT'S GIT
+> IDENTITY, and injects the board,
 > `session-end` (68) is the never-strand-work safety net, and
 > `user-prompt-submit` (47) is the close-lock — which now INSTRUCTS
 > rather than blocks. Their governing design rule is uniform and
@@ -114,6 +115,22 @@ was never established.
   command act and ritual. **Full removal of the lock was rejected**:
   the two-writers risk it was built for is real, and the softened
   wall still ends the session as a working seat.
+
+- **2026-08-06 ([#324](https://github.com/wsher0901/roam/pull/324))
+  — `session-start` gains the SEAT IDENTITY step, and the hook class
+  takes on a duty no ritual could carry.** A cloud seat boots with
+  the container image's git identity, so it authors commits as
+  someone this history does not contain; the step that fixed it
+  lived in [machine-setup](../skills/machine-setup.md), THE ONE FILE
+  A CLOUD SEAT HAS NO REASON TO OPEN. The hook can do it because the
+  hook is in the repo and reaches every seat that clones. It fires
+  ONLY on the harness default — never on an unset identity, because
+  this repo is public and setting one there would replace git's loud
+  refusal with silent misattribution — and it RE-TESTS the value it
+  derives from `origin/main` before writing it, so a bad tip cannot
+  make it install the string it exists to remove. Both guards came
+  from review, not from the first draft.
+
 
 ## Where it stands
 

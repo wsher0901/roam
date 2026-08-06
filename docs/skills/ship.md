@@ -144,6 +144,20 @@ atomically:
     the new ending. Never a second story.
   - **it has a CENSUS ROW but no story yet** → SPLIT ON WHETHER
     THIS WELD SETTLED THE ITEM OR MERELY ADVANCED IT.
+    THE TEST, ONE READ: after this weld, is any work on this item
+    still owed — an OPEN BENCH, a NEEDS-YOU line, an INBOX line, or
+    a "still owed" the record states in words?
+    **Yes, OR you cannot tell → ADVANCED. Only a checked NO →
+    SETTLED.** Retirement is a settlement.
+    THE DEFAULT IS PART OF THE TEST, because the costs are not
+    symmetric: a wrong ADVANCE leaves a cell someone rewrites
+    later, and a wrong SETTLE writes a story onto a moving target
+    and has to incorporate it anyway.
+    NOT AN INPUT: an unticked Done-means box. Shipped specs in this
+    record routinely carry them — some carry all of them, and the
+    CI box is unticked BY CONVENTION — so reading them as owed work
+    would answer ADVANCED for almost every item and make the
+    SETTLED branch unreachable.
     - **ADVANCED** → update that row's ENDING CELL. One cell, not
       a story.
     - **SETTLED** → **WRITE THE STORY, NOW, IN THIS COMMIT** — the
