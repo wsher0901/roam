@@ -4217,3 +4217,63 @@ bench units) · [parallel-lanes](../skills/parallel-lanes.md) (the
 no-shared-file clause is what clause 3 satisfies; unchanged) ·
 [DASHBOARD](../DASHBOARD.md) (Needs-you and the phase 2 line, at the
 next ritual repaint — the board is never hand-edited) · this entry.
+
+## D-079 — The closing campaign's advance word
+
+In full: 2026-08-06 — THE CLOSING CAMPAIGN, authorized by the founder in the Web ops chat: for ONE enumerated run of work — #330's two rulings, the seven chronicle lane welds, a findings close-out bench, a flight reflection audit, and the close of phase 2 — THE FOUNDER'S MERGE WORD IS GIVEN IN ADVANCE, conditional on two things per bench and no others: GREEN CI ON THE EXACT HEAD, and a NON-AUTHOR REVIEW that is clean or repaired per the rulings this mandate carries. THE EXTERNAL WEB REVIEW IS BATCHED — one post-hoc audit of everything the campaign merged replaces per-bench review, run on the founder's word "verify the close". THREE THINGS STOP THE CAMPAIGN AND ARE SURFACED INSTEAD OF DECIDED: any edit to a box master's fenced text, any new decision beyond this mandate, and any finding that changes BEHAVIOR rather than wording. The advance word is spent by this campaign and does not survive it.
+
+**Decision:** the founder's merge word, ordinarily the sole merge
+gate ([LAWS §Workflow](../LAWS.md#workflow-non-negotiable)), is
+given IN ADVANCE for one enumerated campaign. Two conditions replace
+it per bench, and both must hold: **green CI on the exact head**
+([D-038](#d-038--ci-is-the-arbiter) unchanged — never merge over red
+or unanswered), and a **non-author review** that is clean or
+repaired.
+
+**THE EXTERNAL WEB REVIEW IS NOT WAIVED, IT IS BATCHED.** One
+post-hoc audit runs against everything the campaign merged. That is
+the trade this decision actually makes, and it is the one worth
+naming: per-bench external review is exchanged for a single
+end-to-end audit with a wider view.
+
+**THE THREE STOPS.** The campaign halts and surfaces rather than
+deciding, on: **(1) any edit to a box master's fenced text** —
+[COCKPIT-CHARTER](../COCKPIT-CHARTER.md),
+[LANE-WORKER](../LANE-WORKER.md),
+[WEB-INSTRUCTIONS](../WEB-INSTRUCTIONS.md) — because a master edit
+carries a re-save that fails silently
+([D-064](#d-064--the-box-master-class-and-setup-entry-contract));
+**(2) any new decision beyond this mandate**; **(3) any finding that
+changes BEHAVIOR rather than wording.** The third is the load-bearing
+one: this campaign is authorized to write down what is already true
+and to close what is already decided, not to redesign anything.
+
+**Why:** the work enumerated here is closing work — repairs whose
+rulings are already given, welds whose reviews are already done or
+mechanical, and inbox lines whose homes the routing law already
+names. Per-bench founder words on that shape of work buy little and
+cost a round trip each; a single audit at the end sees the whole
+campaign at once, which is strictly more than any one gate saw.
+
+**What it deliberately does NOT relax:** CI stays the arbiter, the
+non-author review stays mandatory, and the three stops mean the
+riskiest classes of change still reach the founder before they land.
+
+**Alternatives rejected:**
+
+- **Per-bench words as usual.** Rejected by the founder for this
+  campaign only — the round trips exceed the value on closing work.
+- **Waive the external review entirely.** Rejected: batching keeps
+  it, and a post-hoc audit over a whole campaign catches
+  cross-bench drift a per-bench review cannot see.
+- **Also pre-authorize master edits and behavioral changes.**
+  Rejected as the exact place advance authorization stops being
+  cheap: a silent-failing re-save or a redesign is what a founder's
+  word exists for.
+
+**Affects:** [LAWS §Workflow](../LAWS.md#workflow-non-negotiable)
+(the merge gate, suspended for this campaign only and restored when
+it ends — the law is not edited) ·
+[D-038](#d-038--ci-is-the-arbiter) (unchanged and reaffirmed) ·
+[D-064](#d-064--the-box-master-class-and-setup-entry-contract) (the
+master-fence stop rests on it) · this entry.
