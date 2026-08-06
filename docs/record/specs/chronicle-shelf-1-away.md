@@ -2,12 +2,12 @@
 type: spec
 id: chronicle-shelf-1-away
 title: Shelf I — the away surface — the chronicle stories
-status: open
+status: shipped
 stage: workshop
 branch: docs/chronicle-shelf-1-away
-pr: —
+pr: 330
 opened: 2026-08-06
-shipped: —
+shipped: 2026-08-06
 ---
 
 # chronicle-shelf-1-away — Shelf I — the away surface

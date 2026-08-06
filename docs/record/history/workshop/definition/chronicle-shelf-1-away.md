@@ -1,7 +1,8 @@
 ---
-type: memory
-id: chronicle-shelf-1-away
-updated: 2026-08-06 17:25 UTC · ship · rulings applied · work PC
+type: history
+slug: chronicle-shelf-1-away
+shipped: 2026-08-06 17:36
+pr: 330
 ---
 
 # chronicle-shelf-1-away — Shelf I — the away surface
@@ -20,11 +21,11 @@ in-flight-decision case already filed as an inbox line.)
 
 The 11 unwritten stories of **Shelf I — the away surface** — how the founder leaves the desk and commands from away. One of seven
 benches flying as a single fleet under
-[D-078](../record/DECISIONS.md#d-078--the-55-re-ruled-on-the-cold-number).
+[D-078](../../../DECISIONS.md#d-078--the-55-re-ruled-on-the-cold-number).
 
 The contract, the roster, and the one rule that makes the fleet
 lawful — **do not write the INDEX** —
-[the spec](../record/specs/chronicle-shelf-1-away.md).
+[the spec](../../../specs/chronicle-shelf-1-away.md).
 
 ## Pending issues
 
@@ -46,21 +47,21 @@ green, and nothing about this bench needs a decision.
    it was a REDELIVERY of the original event. The ack token names a
    BENCH and a VEHICLE CLASS, never a session, so it cannot tell
    repeat claimants apart. Whether to close that gap in
-   [§Canary](../skills/parallel-lanes.md#canary-handshake-both-sides)
+   [§Canary](../../../../skills/parallel-lanes.md#canary-handshake-both-sides)
    is a founder call.
 3. **The go-remote keep-or-retire ruling is now DUE.** Its
-   [IDEAS](../IDEAS.md) line defers the call until "a real cloud
+   [IDEAS](../../../../IDEAS.md) line defers the call until "a real cloud
    flight proves the cloud path"; flights 1–4 flew 2026-08-03 → 05,
    so the precondition is met and the line is still open. Surfaced
-   in [the story](../chronicle/go-remote.md) rather than ruled here.
+   in [the story](../../../../chronicle/go-remote.md) rather than ruled here.
 
 ## Left / idle
 
 **Nothing parked.** Plan steps 1–3 are all done: the stories are
 written, every ending derived at write time, and the cost measured
 below. The bench runs to THE GATE and stops there — a lane never
-merges, never ticks the [ROADMAP](../ROADMAP.md), never writes
-[DASHBOARD](../DASHBOARD.md), [IDEAS](../IDEAS.md) or the INDEX.
+merges, never ticks the [ROADMAP](../../../../ROADMAP.md), never writes
+[DASHBOARD](../../../../DASHBOARD.md), [IDEAS](../../../../IDEAS.md) or the INDEX.
 
 ## The story
 
@@ -68,7 +69,7 @@ merges, never ticks the [ROADMAP](../ROADMAP.md), never writes
 MOOT BY THE REVIEWER'S OWN ERROR · work PC control tower
 
 **RULING 1 IS APPLIED, AND IT IS
-[D-080](../record/DECISIONS.md#d-080--a-story-may-link-a-sibling-never-quote-it).**
+[D-080](../../../DECISIONS.md#d-080--a-story-may-link-a-sibling-never-quote-it).**
 This lane broke ruling 5 twenty-two times across 8 of its 11
 stories; the other four lanes of the fleet broke it ZERO times
 across 26 stories. That distribution was the whole argument: Shelf I
@@ -116,9 +117,9 @@ law forbids siblings sharing a file so that merges cannot collide by
 construction. Seven concurrent lanes would have been UNLAWFUL — and
 that was found by checking the planned benches for shared files
 rather than by discovering it at the first collision.
-[D-078](../record/DECISIONS.md#d-078--the-55-re-ruled-on-the-cold-number)
+[D-078](../../../DECISIONS.md#d-078--the-55-re-ruled-on-the-cold-number)
 clause 3 moved that write to the weld, where
-[ship §7](../skills/ship.md#7--on-approval--the-atomic-weld)'s
+[ship §7](../../../../skills/ship.md#7--on-approval--the-atomic-weld)'s
 synthesis step already performs it.
 
 **WHAT THIS BENCH INHERITS that the pilot did not have:** a settled
@@ -137,7 +138,7 @@ The claim went in at 14:42 (`96564dd`) and the push was ACCEPTED,
 which is itself a finding: no other worker held this bench, so
 this was not a lost race. From there the lane polled origin every
 10–15 seconds until 14:52:30 — the ~10-minute cloud window fixed
-in [§Canary](../skills/parallel-lanes.md#canary-handshake-both-sides)
+in [§Canary](../../../../skills/parallel-lanes.md#canary-handshake-both-sides)
 — and origin never carried anything but the lane's own claim.
 Two independent waiters returned the same verdict seconds apart.
 
@@ -200,9 +201,9 @@ by construction instead. This lane had two stories written locally
 — handoff and liftoff — and pushing them would have overwritten a
 sibling's newer versions of the same paths. Reading those versions
 settled it beyond doubt: they are BETTER SOURCED than this lane's,
-citing [D-002](../record/DECISIONS.md#d-002--handoff-note-merge-policy),
-[D-035](../record/DECISIONS.md#d-035--state-surfaces-v2),
-[D-050](../record/DECISIONS.md#d-050--session-lifecycle-closed-is-not-dead)
+citing [D-002](../../../DECISIONS.md#d-002--handoff-note-merge-policy),
+[D-035](../../../DECISIONS.md#d-035--state-surfaces-v2),
+[D-050](../../../DECISIONS.md#d-050--session-lifecycle-closed-is-not-dead)
 and a 2026-07-31 phantom-URL defect this lane had not found. The
 two drafts were therefore DISCARDED rather than pushed. "Push what
 exists" is a rescue rule for work that would otherwise be lost; it
@@ -220,7 +221,7 @@ with it.** So this entry appends to the diary and changes no state.
 **ONE CROSS-VALIDATION WORTH BANKING.** Both lanes independently
 derived the same correction to the census: the handoff cell orders
 the spine "team shutdown → secure → park", while
-[handoff](../skills/handoff.md) secures at §1 ahead of the team
+[handoff](../../../../skills/handoff.md) secures at §1 ahead of the team
 step at §1.2 — §1.2's own text fixes it against PARKING, not
 against securing. Two workers, no contact, same finding. That is
 the strongest evidence this shelf has produced that the
@@ -234,7 +235,7 @@ both would wake on the same bench and both would read the same
 single ack — which names a vehicle class ("cloud") but no session.
 **The ack token identifies a bench, not a worker**, so it cannot
 tell two claimants apart. That is a gap in
-[§Canary](../skills/parallel-lanes.md#canary-handshake-both-sides)
+[§Canary](../../../../skills/parallel-lanes.md#canary-handshake-both-sides)
 if it is real, and it is the founder's call whether it is worth
 closing.
 
@@ -244,7 +245,7 @@ sibling bench is dead** · cloud (the stood-down lane) — a THIRD
 not re-claim and wrote no payload: the branch's heartbeat was 67
 seconds old, and a bench with a live heartbeat is CLAIMED, never
 picked up
-([§Liveness](../skills/parallel-lanes.md#liveness--live-vs-reclaimable)).
+([§Liveness](../../../../skills/parallel-lanes.md#liveness--live-vs-reclaimable)).
 
 **THE HYPOTHESIS IS NOW EVIDENCE.** The firing carried
 `Head SHA: ab39d2b` — the RESPAWN commit, which stopped being this
@@ -266,7 +267,7 @@ and **[#331](https://github.com/wsher0901/roam/pull/331)
 - canary `6fae0bd` at 14:42:58 UTC;
 - ack `27bde94` at 14:54:11 UTC — **11 min 13 s later**, past the
   ~10-minute cloud window fixed in
-  [§Canary](../skills/parallel-lanes.md#canary-handshake-both-sides);
+  [§Canary](../../../../skills/parallel-lanes.md#canary-handshake-both-sides);
 - no commit since, silent ~14 minutes, and **not one story file
   written**.
 
@@ -346,8 +347,8 @@ weld may want them:
    no contact, same finding.*
 2. **team-aware leaving** — the cell says the superseded-seat
    self-close "stays uncovered and filed". **Closed in full** by
-   [D-062](../record/DECISIONS.md#d-062--the-wake-rule-generalized),
-   and live in [LAWS](../LAWS.md#parallel-lanes--cloud).
+   [D-062](../../../DECISIONS.md#d-062--the-wake-rule-generalized),
+   and live in [LAWS](../../../../LAWS.md#parallel-lanes--cloud).
 3. **the cockpit's birth vehicle** — the cell says the greeting push
    is "never confirmed in flight". Overtaken: cockpits flew and
    landed 2026-08-04, and a summoned seat was born 2026-08-05.
@@ -363,74 +364,74 @@ weld may want them:
 other's SUBJECTS but never each other's prose, and no story cites
 another story's prose anywhere — the down-links rule holds. Story-to-
 story links exist only where a story points at a SIBLING ITEM as a
-thing ([land](../chronicle/land.md), the wake-lock), which is what
+thing ([land](../../../../chronicle/land.md), the wake-lock), which is what
 the census rows do too.
 
 ## Where to look
 
-- [the spec](../record/specs/chronicle-shelf-1-away.md) — roster, format,
+- [the spec](../../../specs/chronicle-shelf-1-away.md) — roster, format,
   and the INDEX prohibition.
-- [the format](../record/history/workshop/definition/chronicle-pilot.md)
+- [the format](../definition/chronicle-pilot.md)
   — the pilot that settled it, and its honest caveats.
-- [the event bend](../record/history/workshop/definition/chronicle-shelf-1.md)
+- [the event bend](../definition/chronicle-shelf-1.md)
   — slice D's variant for `event` items, and the cold calibration.
-- [D-059](../record/DECISIONS.md#d-059--the-chronicle-layer) — the
+- [D-059](../../../DECISIONS.md#d-059--the-chronicle-layer) — the
   layer's six rulings.
-- [the census](../chronicle/INDEX.md) — READ-ONLY for this bench.
-- [land](../chronicle/land.md) — the one Shelf I story already
+- [the census](../../../../chronicle/INDEX.md) — READ-ONLY for this bench.
+- [land](../../../../chronicle/land.md) — the one Shelf I story already
   written; the nearest model for the ten system pieces here.
-- [the currency audit](../chronicle/currency-audit.md) ·
-  [the guardrail audit](../chronicle/guardrail-audit.md) — the two
+- [the currency audit](../../../../chronicle/currency-audit.md) ·
+  [the guardrail audit](../../../../chronicle/guardrail-audit.md) — the two
   written `event` stories, and the working shape of slice D's bend.
 
 **Sources this lane opened during the wait**, listed so the next
 worker does not re-hunt them: for the leaving rituals,
-[handoff](../skills/handoff.md) ·
-[liftoff](../skills/liftoff.md) ·
-[go-remote](../skills/go-remote.md), with
-[D-032](../record/DECISIONS.md#d-032--fleet-continuity) ·
-[D-040](../record/DECISIONS.md#d-040--handoff-input-inversion) ·
-[D-067](../record/DECISIONS.md#d-067--the-report-skeleton-and-the-board-diet)
+[handoff](../../../../skills/handoff.md) ·
+[liftoff](../../../../skills/liftoff.md) ·
+[go-remote](../../../../skills/go-remote.md), with
+[D-032](../../../DECISIONS.md#d-032--fleet-continuity) ·
+[D-040](../../../DECISIONS.md#d-040--handoff-input-inversion) ·
+[D-067](../../../DECISIONS.md#d-067--the-report-skeleton-and-the-board-diet)
 behind them; for the cockpit cluster,
-[the charter master](../COCKPIT-CHARTER.md) ·
-[D-046](../record/DECISIONS.md#d-046--flight-cockpit-the-control-tower-online)
+[the charter master](../../../../COCKPIT-CHARTER.md) ·
+[D-046](../../../DECISIONS.md#d-046--flight-cockpit-the-control-tower-online)
 ·
-[D-047](../record/DECISIONS.md#d-047--cloud-born-cockpit)
+[D-047](../../../DECISIONS.md#d-047--cloud-born-cockpit)
 ·
-[D-048](../record/DECISIONS.md#d-048--cockpit-resilience)
+[D-048](../../../DECISIONS.md#d-048--cockpit-resilience)
 ·
-[D-049](../record/DECISIONS.md#d-049--gh-second-path)
+[D-049](../../../DECISIONS.md#d-049--gh-second-path)
 ·
-[D-051](../record/DECISIONS.md#d-051--self-seat-birth);
+[D-051](../../../DECISIONS.md#d-051--self-seat-birth);
 for the clerk,
-[cloud-clerk](../record/history/workshop/mechanism/cloud-clerk.md)
+[cloud-clerk](../mechanism/cloud-clerk.md)
 ·
-[clerk-notify](../record/history/workshop/mechanism/clerk-notify.md)
+[clerk-notify](../mechanism/clerk-notify.md)
 ·
-[clerk-autospawn](../record/history/workshop/mechanism/clerk-autospawn.md)
+[clerk-autospawn](../mechanism/clerk-autospawn.md)
 ·
-[clerk-retirement](../record/history/workshop/mechanism/clerk-retirement.md);
+[clerk-retirement](../mechanism/clerk-retirement.md);
 for the chooser,
-[D-041](../record/DECISIONS.md#d-041--delegation-architecture) +
-[HOME §Delegation](../HOME.md#delegation--the-away-mode-chooser);
+[D-041](../../../DECISIONS.md#d-041--delegation-architecture) +
+[HOME §Delegation](../../../../HOME.md#delegation--the-away-mode-chooser);
 for the two events,
-[shakedown-audit](../record/history/workshop/mechanism/shakedown-audit.md)
+[shakedown-audit](../mechanism/shakedown-audit.md)
 ·
-[maiden-flight-report](../record/history/workshop/mechanism/maiden-flight-report.md)
+[maiden-flight-report](../mechanism/maiden-flight-report.md)
 ·
-[lane-worker-baton](../record/history/workshop/mechanism/lane-worker-baton.md)
+[lane-worker-baton](../mechanism/lane-worker-baton.md)
 (#191, the first end-to-end flight) ·
-[flight-hardening](../record/history/workshop/mechanism/flight-hardening.md)
+[flight-hardening](../mechanism/flight-hardening.md)
 (#193) ·
-[cockpit-resilience](../record/history/workshop/mechanism/cockpit-resilience.md)
+[cockpit-resilience](../mechanism/cockpit-resilience.md)
 (#195).
 
 **ONE DERIVED FINDING, banked before it is lost.** The census cell
 for *team-aware leaving* ends "the superseded-seat self-close stays
 uncovered and filed" — and that is now FALSE.
-[D-062](../record/DECISIONS.md#d-062--the-wake-rule-generalized)
+[D-062](../../../DECISIONS.md#d-062--the-wake-rule-generalized)
 closes exactly that road in full, and
-[LAWS §Parallel lanes & cloud](../LAWS.md#parallel-lanes--cloud)
+[LAWS §Parallel lanes & cloud](../../../../LAWS.md#parallel-lanes--cloud)
 already carries it: a superseded ground control tower exits by
 capture-then-close, team findings captured FIRST. The story that
 gets written here must say so in words — this is precisely the
