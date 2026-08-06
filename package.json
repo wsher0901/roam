@@ -11,6 +11,7 @@
     "check:ledger": "node scripts/check-ledger.mjs",
     "check:memory": "node scripts/check-memory.mjs",
     "count:runs": "node scripts/count-routine-runs.mjs",
+    "audit:flights": "node scripts/flight-audit.mjs",
     "fire:cockpit": "node scripts/fire.mjs cockpit",
     "test": "vitest run",
     "test:watch": "vitest",
