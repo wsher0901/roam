@@ -236,6 +236,18 @@ record/history/ keeps the meaning.
   what has no home stays where it is, or gains one first. VERIFY
   BEFORE CLASSIFY — before calling anything done, open, dead, or
   shipped, check the record rather than the note that claims it.
+- **Enumeration law:** whenever a rule sorts inputs into CASES —
+  a case table, a branch, a match — ITS AUTHOR WALKS THE REAL
+  INPUTS FROM THEIR SOURCE and lands each one, rather than
+  reasoning about the cases in the abstract. A SUBSTRING OF A
+  RENDERING IS NOT A CASE, and neither is an absence: match what
+  the input SAYS, from the table that fixes its wording. Five
+  case-analysis holes shipped in five consecutive benches on
+  2026-08-05/06 — an absence-keyed case, a prefix collision, two
+  cases sharing one trigger, a fork with an undefined tiebreaker,
+  and a default contradicting its own question. **Every one was
+  caught by review and none by its author**, and the walk caught
+  the sixth before it shipped.
 - **Sweep law:** any pointer or citation sweep greps THE
   DESTINATION — the heading, anchor, or name being replaced —
   never the phrasings you predict will surround it. THE PROOF OF A

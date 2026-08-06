@@ -76,6 +76,18 @@ themselves must already be on origin. A verdict that lives only in
 the session is a verdict the founder cannot re-read and the
 external review cannot check.
 
+THEN REPAINT THE BOARD BEFORE REPORTING — a DASHBOARD-only
+micro-PR, the same carve-out
+[§8](#8--tail)'s tail already uses. Needs-you gains ONE line: the
+founder's word on this bench, with its surface and its when. THIS
+STEP EXISTS BECAUSE THE GAP IS STRUCTURAL: the gate report goes to
+the CONVERSATION, and the board is otherwise next touched by the
+tail — which runs only AFTER the merge. So without this, every
+bench that reaches the gate leaves the board saying the founder
+owes nothing at exactly the moment they owe the one act that
+unblocks it. Observed three times on 2026-08-05/06 before it was
+written down.
+
 Then render THE GATE REPORT and stop. NEVER merge without the
 founder's explicit yes — the conversational yes is the only gate;
 never infer it.
@@ -211,6 +223,13 @@ Push. The arbiter applies to welds too: arm
 `gh pr merge --auto --squash --delete-branch` and let it fire on
 the weld commit's green (~35s), or `gh pr checks --watch` then
 squash-merge. Confirm merged, then pull main.
+
+**WHOSE WORD CLOSES A FLEET.** When several benches stand at the
+gate together, THE MERGE WORDS BELONG TO THE SEAT THE LANDING PLAN
+NAMES — the baton-holder that fenced or dispatched them — not to
+whichever seat happens to be awake. A fleet's benches are welded
+SERIALLY by that seat, because each weld writes the census and the
+ledger, and two welds in flight collide on both.
 
 ## 8 · Tail
 Run handoff in QUIET mode (board repaint per

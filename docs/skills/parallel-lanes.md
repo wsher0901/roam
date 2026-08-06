@@ -202,7 +202,15 @@ On ANY resume or wake, a lane re-reads its memory Status FIRST. A
 rejected push is a wake: pull, re-read your memory Status FIRST, and
 obey it before any retry. A
 Status it does not own — parked · respawned · superseded · failed —
-means: push nothing new, terminate. Completion and a failed spawn
+means: push nothing new, terminate.
+**AND SAY WHY IN A PR COMMENT BEFORE YOU GO — A DUTY, NOT A
+COURTESY.** A rejected push leaves NO server-side trace: GitHub's
+events feed records accepted pushes only, so a lane that stands
+down silently destroys the only evidence the wake-lock ever fired.
+Proven 2026-08-06 by a pair — two lanes died of one late ack, one
+wrote its stand-down and one just stopped, and FROM ORIGIN THE TWO
+ARE INDISTINGUISHABLE. Name what stopped you, what you had written,
+and whether anything is unpushed. Completion and a failed spawn
 still PARK: the outcome is already in memory, and nothing continues
 without a founder-initiated action (the merge word, a fresh delegation).
 A `BLOCKED:` lane splits by vehicle: on a phone-reachable vehicle
@@ -214,8 +222,14 @@ block as before. Blocked local lanes also park at handoff FULL — the
 machine is halting.
 
 ## Answering a lane (the mail slot)
-Lanes speak and listen only through their PR; the founder's hands
-never need GitHub:
+Lanes speak and listen only through their PR — **so a seat acting on
+a bench READS THAT PR'S COMMENTS FIRST**, before reviewing, adopting,
+welding or answering it. They are the only channel carrying what a
+clone cannot show: a stand-down, a finding, a `BLOCKED:` question.
+Flight 2's cockpit read a PR's metadata, saw `comments: 2`, did not
+open them, and repeated a wrong diagnosis for 25 minutes with the
+contradicting evidence one call away.
+The founder's hands never need GitHub:
 - Desk: tell the control tower "reply to the lane on #N: …" — the
   control tower
   posts it verbatim as a PR comment.
@@ -321,6 +335,20 @@ interim route 1:
 Winning route (recorded 2026-07-16): route 1 — ready-flip, then
 label.
 
+**AT FLEET SCALE, TWO COSTS THE SINGLE-LANE RULES DO NOT PREDICT.**
+Both were paid on 2026-08-06's seven-lane fleet.
+- **PRE-STAGE THE ACKS BEFORE THE LABELS GO OUT.** The canary window
+  is PER-LANE (~10 min) but the baton-holder's ack capacity is
+  SHARED. Seven lanes canaried within 57 seconds of each other; the
+  seat then composed acks one at a time and took ~13 minutes,
+  KILLING TWO LANES that had correctly given up. Write the acks
+  first, dispatch second.
+- **RUNNER CONTENTION IS A FLEET COST.** Every lane push spawns a CI
+  run, and a working fleet can saturate the queue — welds then wait
+  behind lane traffic, and a job may sit queued for tens of minutes
+  or be cancelled without executing a step. Plan the welds serially
+  and expect the arbiter, not the work, to set the pace.
+
 Maiden flight — verify (flown 2026-07-16; results of record):
 
 - [x] the routine fires on the label — ✓ on a READY PR only;
@@ -367,6 +395,17 @@ SHA. After ANY retirement, verify the branch stays dead (a later
 prune-fetch + ls-remote), and re-delete on sight — same-SHA
 resurrections carry no unique work by construction (session
 branches are born at main's HEAD).
+
+**A BRANCH CARRYING UNIQUE WORK IS NOT SWEPT ON THAT REASONING —
+BUT IT MAY BE SWEPT ONCE THAT WORK HAS A SURVIVING HOME.** The rule
+is archive-before-delete, and a CLOSED PR'S DIFF IS AN ARCHIVE: it
+holds the commit verbatim, on origin, reachable forever by its
+number. So the lawful sweep of a branch with unique commits is —
+verify each unique commit survives at a named home, name that home
+in the sweep's own commit message, then delete. Flown 2026-08-04 on
+the twin cockpit's loser branch, whose one unique commit was
+verified alive in a closed PR before the head was removed.
+WITHOUT THE NAMED HOME IT IS NOT A SWEEP, IT IS A DELETION.
 
 Sources:
 [LAWS §Self-improvement](../LAWS.md#self-improvement)
