@@ -130,6 +130,75 @@ below. That reading dies with this session; it cost the founder
 nothing and it saves the next worker nothing, which is the honest
 accounting. What survives is the bench exactly as birthed.
 
+2026-08-06 14:56 → 15:03 UTC · **TWO LICENSED WORKERS ON ONE
+BENCH** · cloud (the second one) — a respawned lane claimed,
+was acked in 90 seconds, began work, and discovered at its first
+push that A SIBLING CLOUD LANE WAS ALREADY WRITING THE SAME FILES
+ON THIS BRANCH. It stood down rather than fight. This entry is
+that lane's, and it is the only thing it wrote.
+
+**THE SEQUENCE, from git and nothing else.** `bc3e93d` 14:56:50 —
+this lane's respawn canary, push ACCEPTED, so no other worker held
+the bench at that moment. `187be02` 14:57:21 — the baton-holder's
+ack, 31 seconds later, anchored token, verified read back FROM
+ORIGIN rather than from the watcher's own message
+([#268](https://github.com/wsher0901/roam/pull/268)'s rule, kept).
+Then, from 14:59:15, a commit a minute from a worker that is not
+this one: `a860728` handoff · `8cec8e1` liftoff · `5f2e41f` the
+cockpit · `162cb07` the cockpit's birth vehicle. All four are
+UTC-stamped, so the author is a CLOUD seat, not the work PC (whose
+commits on this branch carry `-04:00`). Every session pushes as the
+founder, so identity cannot separate them — **the timezone and the
+cadence are the only evidence, and they are enough.**
+
+**WHY THE STAND-DOWN, and why it is not the wake-lock.** The Status
+line still reads `airborne · cloud` — a Status this lane OWNS, so
+the wake-lock does not fire and nothing here is a self-termination
+by the letter of it. The reason to stop is the other prohibition:
+**a lane never shares a file with a sibling, so that merges cannot
+collide by construction.** Two lanes on one branch share EVERY file
+by construction instead. This lane had two stories written locally
+— handoff and liftoff — and pushing them would have overwritten a
+sibling's newer versions of the same paths. Reading those versions
+settled it beyond doubt: they are BETTER SOURCED than this lane's,
+citing [D-002](../record/DECISIONS.md#d-002--handoff-note-merge-policy),
+[D-035](../record/DECISIONS.md#d-035--state-surfaces-v2),
+[D-050](../record/DECISIONS.md#d-050--session-lifecycle-closed-is-not-dead)
+and a 2026-07-31 phantom-URL defect this lane had not found. The
+two drafts were therefore DISCARDED rather than pushed. "Push what
+exists" is a rescue rule for work that would otherwise be lost; it
+is not a licence to overwrite a live sibling with a weaker copy.
+
+**THE STATUS LINE WAS DELIBERATELY NOT TOUCHED, and that is the
+load-bearing call here.** The obvious move — stamp this lane
+`stood down` — would have been actively destructive: `airborne ·
+cloud` is ALSO the sibling's licence, and the sibling re-reads this
+Status on every wake. A terminal stamp would be a Status IT does
+not own, and the wake-lock would have made the productive worker
+self-terminate. **A lane standing down must not take its sibling
+with it.** So this entry appends to the diary and changes no state.
+
+**ONE CROSS-VALIDATION WORTH BANKING.** Both lanes independently
+derived the same correction to the census: the handoff cell orders
+the spine "team shutdown → secure → park", while
+[handoff](../skills/handoff.md) secures at §1 ahead of the team
+step at §1.2 — §1.2's own text fixes it against PARKING, not
+against securing. Two workers, no contact, same finding. That is
+the strongest evidence this shelf has produced that the
+derive-don't-trust-the-cell rule earns its cost.
+
+**THE LIKELY CAUSE, stated as a hypothesis and not as a finding.**
+The predecessor lane recorded a SECOND `pull_request.labeled`
+webhook delivery for this PR while it waited. If the respawn's
+label produced one session and that redelivery produced another,
+both would wake on the same bench and both would read the same
+single ack — which names a vehicle class ("cloud") but no session.
+**The ack token identifies a bench, not a worker**, so it cannot
+tell two claimants apart. That is a gap in
+[§Canary](../skills/parallel-lanes.md#canary-handshake-both-sides)
+if it is real, and it is the founder's call whether it is worth
+closing.
+
 ## Where to look
 
 - [the spec](../record/specs/chronicle-shelf-1-away.md) — roster, format,
