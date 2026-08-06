@@ -6,30 +6,21 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-08-06 · 13:47 UTC by the board repair · from work PC
-ONE BENCH STANDS AT THE GATE — it needs your review · needs-you 1 ·
+Painted 2026-08-06 · 14:25 UTC by ship's tail · from work PC
+CLEAN FLOOR — the fleet is ruled and unfired · needs-you 0 ·
 git outranks this board.
 How to read it → [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
 
-1. 🟡 **REVIEW THE FINDINGS BENCH** — in the Web chat say "review"
-   for [#324](https://github.com/wsher0901/roam/pull/324), then the
-   merge word here. Self-authored payload, so no-solo-approval needs
-   the external eye and the subagent critic cannot stand in for it.
-   CI green on `a60434d5`; 11 critic findings repaired, two of them
-   red. (since 08-06)
-   → [#324](https://github.com/wsher0901/roam/pull/324)
+Nothing. The findings bench merged, so no ruling and no review is
+owed by you.
 
-⚠️ **THIS BOARD SAID "NOTHING IS OWED BY YOU" WHILE A BENCH STOOD AT
-THE GATE, AND IT IS THE THIRD TIME TODAY** — the baton line, the two
-rulings, now this. The cause is structural rather than careless:
-**no ritual repaints the board at THE GATE.**
-[ship §6](skills/ship.md#6--the-gate) renders the gate report into
-the conversation and stops; the board is next touched by §8's tail,
-which runs only AFTER the merge. So every bench that reaches the
-gate leaves this board claiming the founder owes nothing at exactly
-the moment they owe the one thing that unblocks it. Filed.
+THE DESK'S QUEUE, for visibility rather than action: fire the slice
+fleet —
+[D-078](record/DECISIONS.md#d-078--the-55-re-ruled-on-the-cold-number)
+made it fully specified and decision-free, six benches plus Shelf
+IV's own calibration.
 
 ## The baton
 
@@ -50,14 +41,12 @@ paragraph is the repair.
 
 ## In flight
 
-No lanes. One bench at THE GATE.
+Nothing flying, no lanes, no bench open. Clean floor.
 
-| Who | For | State | Move |
-|---|---|---|---|
-| the commander's bench · [lane-findings](https://github.com/wsher0901/roam/pull/324) | the identity gap a cold lane found in itself, plus two review repairs | 🟡 at the gate · CI green on `a60434d5` · 11 critic findings repaired | the founder's "review" in the Web chat, then the merge word here |
-
-**THE SLICE FLEET IS RULED AND UNFIRED** — six benches plus Shelf
-IV's own calibration, lawful to run concurrently only because
+**THE SLICE FLEET IS RULED AND UNFIRED** — Shelf I (11) · Shelf II
+(11) · Shelf III A (6), B (7), C (7), E (4) at the measured figure,
+plus Shelf IV (9) taking its own calibration. Lawful to run
+concurrently only because
 [D-078](record/DECISIONS.md#d-078--the-55-re-ruled-on-the-cold-number)
 clause 3 moved the INDEX write to the weld.
 
@@ -68,10 +57,11 @@ clause 3 moved the INDEX write to the weld.
   [D-078](record/DECISIONS.md#d-078--the-55-re-ruled-on-the-cold-number),
   which re-ruled them against a COLD number that contradicted the
   pilot: writing dominates gathering ~60/40, not the reverse.
-- THE FINDINGS BENCH is AT THE GATE
-  ([#324](https://github.com/wsher0901/roam/pull/324)): the hook now
-  sets a cloud seat's git identity, derived and guarded, plus the
-  settled/advanced test and the vault-lens attestation.
+- THE FINDINGS BENCH SHIPPED at 14:25. A cloud seat's git identity
+  is now set by the session-start hook rather than by a procedure no
+  lane opens — and the weld ran the synthesis step's first
+  MULTI-CASE exercise, four items in three states, with case 1
+  firing for the first time.
 
 The standing order says phase 2 opens on
    your ruling. At this desk, whenever. (since 08-05)
@@ -140,6 +130,14 @@ one phase per line:
 
 **Completed**
 
+- THE IDENTITY GAP IS CLOSED BY A HOOK, not by a procedure. A cold
+  lane found it in itself, complied by luck, and named the property
+  that makes it persist: the failure is CLEAN — push succeeds, CI
+  passes, only the author differs — where its neighbour trap fails
+  loudly. Two guards came from review, both hazards: it fired on an
+  UNSET identity in a PUBLIC repo, and installed its derived value
+  without re-testing it.
+  [#324](https://github.com/wsher0901/roam/pull/324)
 - THE 55 RE-RULED ON THE COLD NUMBER — six slice benches at the
   measured figure, Shelf IV excluded on the measuring lane's own
   caveat, and a third clause found by checking rather than assuming:
@@ -271,14 +269,15 @@ one phase per line:
 
 **Issues**
 
-- ⏳ A CLOUD SEAT'S GIT IDENTITY IS SET BY NO RITUAL IT READS. The
-  step lives in [machine-setup](skills/machine-setup.md), the one
-  file a cloud lane has no reason to open; `LANE-WORKER.md` never
-  mentions it. The 2026-08-05 lane complied BY LUCK — the procedure
-  happened to be one of its own story subjects — and authored four
-  commits wrong before catching itself. IT FAILS SILENTLY: push
-  succeeds, CI passes, only the author name differs, while its
-  neighbour trap fails loudly. → [#324](https://github.com/wsher0901/roam/pull/324)
+- ✓ A CLOUD SEAT'S GIT IDENTITY IS NOW SET BY THE HOOK — the gap is
+  closed, and machine-setup keeps the rule as the hook's fallback.
+  [#324](https://github.com/wsher0901/roam/pull/324)
+- ⏳ THE SETTLED BRANCH OF SHIP §7 HAS NEVER FIRED. Three welds have
+  run the synthesis step and every item was ADVANCED. That branch is
+  what [D-077](record/DECISIONS.md#d-077--shelf-benches-and-the-settling-weld-writes)
+  ruling 2 created and what the repaired test exists to make
+  reachable — it stays untested until a weld settles an unwritten
+  item. Worth knowing before trusting it.
 - ⏳ ATLAS DOES NOT KNOW THE CHRONICLE EXISTS — its file-flow figure
   draws which ritual writes each surface and notes "Ship appears
   three times for exactly that reason"; ship now writes a FOURTH,
@@ -448,5 +447,4 @@ S3–S8 · queued in order · 0/22
 
 ## Next
 
-Your "review" on [#324](https://github.com/wsher0901/roam/pull/324),
-then the merge word — and the slice fleet fires after it.
+The desk fires the slice fleet. Nothing waits on you.
