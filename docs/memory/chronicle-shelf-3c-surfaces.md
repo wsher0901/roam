@@ -1,17 +1,33 @@
 ---
 type: memory
 id: chronicle-shelf-3c-surfaces
-updated: 2026-08-06 14:42 UTC · canary claim · cloud lane
+updated: 2026-08-06 14:55 UTC · airborne ack · work PC
 ---
 
 # chronicle-shelf-3c-surfaces — Shelf III slice C — surfaces & manuals
 
 ## Status
 
-claimed by cloud — 2026-08-06 14:42 UTC
+airborne · cloud · 2026-08-06
 
-Waiting for the baton-holder's ack commit on this branch before any
-real work begins.
+**YOU ARE LICENSED. WORK.** Acked by the work PC control tower at
+14:55 UTC. Your canary landed inside a minute of the label, and six
+siblings are flying beside you.
+
+⚠ **THE ONE RULE THAT KEEPS THIS FLEET LAWFUL, repeated here
+because it is the only thing seven concurrent lanes can get wrong:
+DO NOT WRITE `docs/chronicle/INDEX.md`. Not one cell.** The lane law
+forbids siblings sharing a file so that merges cannot collide by
+construction, and the INDEX is the only file every slice would
+otherwise touch. The baton-holder marks your rows written at the
+weld. You write story files and this memory, nothing else.
+
+**DERIVE YOUR ENDINGS; DO NOT TRUST THE CENSUS CELLS.** Several have
+been wrong. One stood stale for a week and misled two later readers,
+each of whom stopped at a dated line without asking whether anything
+since had closed it — a dated attestation is evidence of its date
+and of nothing later. If your derivation contradicts the cell, the
+derivation wins and your story says so.
 
 ## What this task is
 
