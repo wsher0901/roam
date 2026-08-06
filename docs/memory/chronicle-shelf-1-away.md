@@ -1,23 +1,20 @@
 ---
 type: memory
 id: chronicle-shelf-1-away
-updated: 2026-08-06 15:13 UTC · complete · cloud
+updated: 2026-08-06 17:25 UTC · ship · rulings applied · work PC
 ---
 
 # chronicle-shelf-1-away — Shelf I — the away surface
 
 ## Status
 
-complete, awaiting merge — 2026-08-06 · cloud lane
+complete, awaiting merge — 2026-08-06
 
-All 11 stories written to
-[the spec](../record/specs/chronicle-shelf-1-away.md)'s format, both
-`event` items on slice D's bend,
-`docs/chronicle/INDEX.md` UNTOUCHED, and the full verification loop
-green. Awaiting an independent non-author review and the founder's
-word — this diff is LANE-AUTHORED, so any non-author session's
-review plus the word is lawful without an external Web review
-([LAWS §Workflow](../LAWS.md#workflow-non-negotiable)).
+Eleven stories written by a cloud lane, reviewed non-author at the
+work PC, and repaired under the founder's two rulings. Merging under
+[D-079](../record/DECISIONS.md#d-079--the-closing-campaigns-advance-word)'s
+advance word: green CI on the exact head plus a non-author review
+clean or repaired.
 
 ## What this task is
 
@@ -66,6 +63,48 @@ merges, never ticks the [ROADMAP](../ROADMAP.md), never writes
 [DASHBOARD](../DASHBOARD.md), [IDEAS](../IDEAS.md) or the INDEX.
 
 ## The story
+
+2026-08-06 17:25 UTC · THE TWO RULINGS — ONE APPLIED, ONE FOUND
+MOOT BY THE REVIEWER'S OWN ERROR · work PC control tower
+
+**RULING 1 IS APPLIED, AND IT IS
+[D-080](../record/DECISIONS.md#d-080--a-story-may-link-a-sibling-never-quote-it).**
+This lane broke ruling 5 twenty-two times across 8 of its 11
+stories; the other four lanes of the fleet broke it ZERO times
+across 26 stories. That distribution was the whole argument: Shelf I
+is the one shelf whose items are DEFINED BY EACH OTHER — the
+away-mode chooser IS the fork between handoff, liftoff, go-remote
+and land. The founder ruled the link-only carve-out: a story may
+LINK a sibling, never quote or summarise it. **All 22 were checked
+against the new rule before it was written down** — every one is a
+bare link with a naming gloss, none quotes or summarises. So the
+carve-out makes this lane lawful WITHOUT EDITING A STORY, which is
+the right outcome and also the suspicious one, so it was verified
+line by line rather than assumed.
+
+**RULING 2 WAS MOOT, AND THE REASON IS THE REVIEWER'S, NOT THE
+LANE'S.** The founder ruled that `cockpit-connector-resilience.md`
+be re-typed from the event shape to the system-piece shape. **IT WAS
+ALREADY THE SYSTEM-PIECE SHAPE** — `## What it is`, `## What changed,
+in order`, `## Where it stands`. The non-author review had reported
+an event variant that does not exist.
+
+**THE CAUSE IS EXACTLY THE ERROR CLASS THIS CAMPAIGN IS ABOUT TO
+WRITE INTO LAW.** The review's checker tested
+`"## What it was" in text`. Two files matched it and neither is an
+event: this story's heading is `## What it was raised by`, which
+CONTAINS the test string as a prefix; and slice A's
+`chronicle-layer.md` QUOTES the event bend's rule inside a code span
+(*"`## What it is` becomes `## What it was`"*). **A substring of a
+rendering is not a case** — the sweep law's own words, and the
+countermeasure this campaign is chartered to make law, failed in the
+instrument used to review the fleet.
+
+No repair was performed for ruling 2, because performing it would
+have changed a correct story to satisfy a false finding. The review
+on this lane and on
+[#332](https://github.com/wsher0901/roam/pull/332) is corrected on
+both PRs.
 
 2026-08-06 14:40 UTC · bench birth · work PC — born bench-first as
 one lane of a seven-lane fleet, on the founder's "one fleet — fire
