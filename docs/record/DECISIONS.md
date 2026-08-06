@@ -4277,3 +4277,46 @@ it ends — the law is not edited) ·
 [D-038](#d-038--ci-is-the-arbiter) (unchanged and reaffirmed) ·
 [D-064](#d-064--the-box-master-class-and-setup-entry-contract) (the
 master-fence stop rests on it) · this entry.
+
+## D-080 — A story may link a sibling, never quote it
+
+In full: 2026-08-06 — [D-059](#d-059--the-chronicle-layer) ruling 5 said a story never cites another story's prose and that cross-references ride decide anchors or ledger lines. THE SEVEN-LANE FLEET FOUND ITS FIRST HARD CASE: Shelf I broke it 22 times across 8 of its 11 stories while the other four lanes broke it ZERO times, because Shelf I is the one shelf whose items are DEFINED BY EACH OTHER — the away-mode chooser IS the fork between handoff, liftoff, go-remote and land, and naming them is the item. The rule is amended to a LINK-ONLY CARVE-OUT on the founder's ruling: a story may LINK a sibling story; it may never QUOTE OR SUMMARISE that story's prose. The purpose ruling 5 was protecting — no second copy of a narrative, no drift between two tellings — is served by the prohibition on quoting and summarising; a bare pointer creates neither.
+
+**Decision:** [D-059](#d-059--the-chronicle-layer) ruling 5 becomes:
+**a story may LINK another story, and may never quote or summarise
+its prose.** A link may carry a naming gloss — what the target is —
+but never its content. Everything else in ruling 5 stands: down-links
+into the frozen record remain the norm, and decide anchors and ledger
+lines remain the way to carry a CLAIM across stories.
+
+**Why:** the distribution is the argument. Four lanes writing 26
+stories about unrelated items cross-cited **zero** times; one lane
+writing 11 stories about items that are each other's branches
+cross-cited **22**. That is not a careless lane, it is a rule meeting
+the case it was not written for — an item whose whole nature is
+"these four things" cannot name them without pointing at them.
+
+What ruling 5 exists to prevent is a SECOND TELLING: two stories
+narrating the same events, drifting apart, with no home that wins.
+**A link cannot drift.** Quoting and summarising can, and both stay
+forbidden. The rule keeps its teeth and loses the part that made an
+index-shaped story unwritable.
+
+**Alternatives rejected:**
+
+- **Enforce ruling 5 as written** — repoint all 22 at skills and
+  decide anchors. Rejected: it costs the reader the trail from a
+  chooser to the story that explains each leaf, and it makes the
+  ending of an index-shaped item clumsier for no gain in the drift
+  risk the rule targets.
+- **Merge as-is and file the tension.** Rejected: it leaves the
+  record carrying a rule its own stories contradict, which is the
+  shape this workshop has repeatedly been bitten by.
+- **Let stories summarise siblings too** (drop ruling 5 entirely).
+  Rejected outright: the second-telling problem is real, and a
+  summary is exactly the thing that drifts.
+
+**Affects:** [D-059](#d-059--the-chronicle-layer) (ruling 5, amended
+here; the other five rulings intact) · the 11 Shelf I stories, whose
+22 sibling links become lawful without edit ·
+[the census](../chronicle/INDEX.md) (unchanged) · this entry.
