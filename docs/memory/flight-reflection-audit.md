@@ -102,13 +102,32 @@ would teach the workshop to close lines to get to green. It runs by
 hand, and the reasoning is written into the script's own header so
 the next reader does not "fix" the omission.
 
-**What the numbers say about the flights themselves.** Flight 2 and
-flight 3 closed NOTHING outright — every one of their 23 findings
-stays open with a reason, and most of those reasons are the same
-one: the fix lives inside a box master's fenced text, which the
-campaign may not touch. That is not a failure of the flights. It is
-the shape of a workshop whose next real constraint is the box, not
-the doctrine.
+**What the numbers say about the flights themselves — and the first
+two things I wrote here were both false.** Flight 2 and flight 3
+closed NOTHING outright; every one of their findings stays open with
+a reason. The draft said **23 findings**, which is 13 + 10 — but
+FOUR lines name both flights, so the union is **19**, not the sum.
+And it said most of those reasons were the same one, the box
+master's fence. Counted rather than assumed, the fence accounts for
+**4 of 19**:
+
+| standing reason | lines |
+|---|---|
+| assorted one-offs with no shared cause | 8 |
+| needs its own bench or gate | 4 |
+| a box master's fenced text | 4 |
+| behavior, not wording | 2 |
+| a founder call, filed deferred | 1 |
+
+**There is no dominant blocker.** The tidy conclusion — "the
+workshop's next real constraint is the box, not the doctrine" — was
+a sentence that sounded like a finding and was built on a sum that
+double-counted and a majority that was 21%. What the record actually
+says is duller and more useful: **the residue of two flights is a
+long tail**, and no single unlock clears it.
+
+Both errors were caught the same way as the census-row bug — by
+running the count instead of trusting the sentence.
 
 ## Where to look
 
