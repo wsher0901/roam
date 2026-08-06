@@ -1,18 +1,28 @@
 ---
 type: memory
 id: chronicle-shelf-1-away
-updated: 2026-08-06 14:53 UTC · canary timeout · cloud
+updated: 2026-08-06 15:00 UTC · respawn · work PC
 ---
 
 # chronicle-shelf-1-away — Shelf I — the away surface
 
 ## Status
 
-parked — 2026-08-06 · canary ack timeout · cloud lane
-self-terminated per
-[§Canary](../skills/parallel-lanes.md#canary-handshake-both-sides).
-Zero payload written. The bench is intact and adoptable — a
-respawn on this same branch resumes it from plan step 1.
+bench ready, no worker yet — RESPAWNED 2026-08-06 by the work PC
+control tower
+
+**THE PREVIOUS LANE DID NOTHING WRONG AND THE BATON-HOLDER DID.**
+That lane canaried at 14:42:09Z and stood down at 14:54:05Z, exactly
+as [§Canary](../skills/parallel-lanes.md#canary-handshake-both-sides)
+tells it to when no ack arrives inside the ~10-minute window. The
+ack was late because THIS SEAT spent the window building a watcher
+instead of pre-staging seven acks — six siblings were licensed at
+14:55, this one had already correctly given up. Zero payload was
+written and the bench is intact.
+
+A fresh worker claims this branch by the ordinary respawn canary —
+Status → `claimed for respawn by <vehicle> — <date>` — and the ack
+will be waiting this time.
 
 ## What this task is
 
