@@ -1,15 +1,14 @@
 ---
 type: memory
 id: chronicle-shelf-4-roam
-updated: 2026-08-06 14:40 UTC · bench birth · work PC
+updated: 2026-08-06 14:43 UTC · canary claim · cloud
 ---
 
 # chronicle-shelf-4-roam — Shelf IV — Roam
 
 ## Status
 
-bench ready, no worker yet — birthed 2026-08-06 by the work PC
-control tower
+claimed by cloud — 2026-08-06 14:43 UTC
 
 ## What this task is
 
