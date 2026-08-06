@@ -109,7 +109,7 @@ below).
 | WEB-INSTRUCTIONS — the Web surface's rule-carrier | system piece | #80 → #144 → #204 → [D-052](../record/DECISIONS.md#d-052--response-doctrine) → [D-057](../record/DECISIONS.md#d-057--the-record-shelf) | v5 lives as the repo master; the Web box is a copy, re-pasted 2026-07-28 after the #229 edit. | high |
 | **[the guardrail audit](guardrail-audit.md)** ✍ WRITTEN | event | [D-053](../record/DECISIONS.md#d-053--guardrail-audit) | Closed with a verdict — already at best practice, the only two real improvements shipped; both still hold, though the promoted verification block has since MOVED from LAWS to ship §1. Read [the story](guardrail-audit.md). | high |
 | **[the docs currency audit](currency-audit.md)** ✍ WRITTEN | event | #197 → #204 | **Ending corrected by the story** — closed with its principle DEMONSTRATED, not promoted: "annotation beats deletion — an instruction is a trap while a record is evidence" lives only in that bench's own spec and history, in no law and no skill. Read [the story](currency-audit.md). | high |
-| **[the vault lens](vault-lens.md)** ✍ WRITTEN | system piece | #82 → #91 → [D-057](../record/DECISIONS.md#d-057--the-record-shelf) | **Ending qualified by the story** — design settled (seeded in git, applied per seat by one phrase). Per-seat state is NOT DERIVABLE FROM GIT, which is not the same as unverifiable: the live config is gitignored, so no seat's application is visible from origin, but the founder's dated word of 2026-07-28 IS a record and this file carries it — APPLIED AT THE WORK PC that day, and STILL OWED AT THE HOME PC as of that date. Whether the home PC has been re-seeded since is a gap in the record rather than an answer either way, and only speech can close it. Read [the story](vault-lens.md). | high |
+| **[the vault lens](vault-lens.md)** ✍ WRITTEN | system piece | #82 → #91 → [D-057](../record/DECISIONS.md#d-057--the-record-shelf) | **CLOSED** — design settled (seeded in git, applied per seat by one phrase), and the per-seat state is settled too: **work PC 2026-07-28, home PC 2026-07-30, both on the record**, the second by the founder's word captured in [#252](https://github.com/wsher0901/roam/pull/252) (`937d5ec`), which cleared the standing act and wrote "every seat now done". The live config is gitignored so no seat's application is derivable FROM GIT — but speech was the channel, it was used, and it was recorded. Read [the story](vault-lens.md). | high |
 | **[the per-machine seat and machine-setup](machine-setup.md)** ✍ WRITTEN | system piece | #3 → #66 → #91 → #204 | One per-machine procedure with field-discovered traps promoted into it; the seat label is how every stamp names a computer — and its cloud-seat identity step fails SILENTLY, as the story's own lane demonstrated. Read [the story](machine-setup.md). | high |
 | SETUP — the equipment inventory | system piece | #9 → #15 → #17 → #21 → [D-030](../record/DECISIONS.md#d-030--setup-consolidation) → #147 → #197 → [D-054](../record/DECISIONS.md#d-054--the-landing-skill) | The single inventory — stack, configs, staged tooling — with retired predecessors succeeded and dead sections tombstoned. | medium — a shared file; only the inventory thread is claimed here |
 | ship — the closing ritual (lead-added) | system piece | #1 → #62 → [D-044](../record/DECISIONS.md#d-044--the-pre-gate-critic-goes-live) → #140 → #147 → [D-052](../record/DECISIONS.md#d-052--response-doctrine) → [D-057](../record/DECISIONS.md#d-057--the-record-shelf) | The eight-step close: preflight mirror → spec gate → weave lint → final memory → flip → THE GATE with the critic → the atomic weld → the QUIET tail. ADVANCED TWICE ON 2026-08-05: the atomic weld now performs SYNTHESIS, naming the items it changed and carrying each into this census ([#320](https://github.com/wsher0901/roam/pull/320)) — and its case 2 now SPLITS, so a weld that SETTLES an item with no story WRITES that story in the same commit rather than recording a debt ([#322](https://github.com/wsher0901/roam/pull/322), D-077 ruling 2). This cell is current because that step required it. | medium — added at composition; no teammate claimed it |
@@ -204,9 +204,15 @@ Written by [the answering bench](../record/history/workshop/definition/chronicle
    path if it ever recurs.
 8. The two manual acts — settled, and they settled differently.
    The WEB-INSTRUCTIONS box was re-pasted 2026-07-28: closed. The
-   vault lens re-seeds PER SEAT and was applied at the work PC the
-   same day: still owed at the home PC, so the act clears only
-   when the second seat runs it.
+   vault lens re-seeds PER SEAT: applied at the work PC the same
+   day, and **at the home PC on 2026-07-30** — the founder's word
+   in [#252](https://github.com/wsher0901/roam/pull/252)
+   (`937d5ec`) cleared the standing act with "every seat now done".
+   BOTH SEATS ARE DONE; this item is CLOSED.
+   *(Corrected 2026-08-06: this line read "still owed at the home
+   PC" for a week after the act that closed it, and two later
+   readers — a cold lane and the desk reviewing it — each trusted
+   it without checking whether anything AFTER 07-28 had closed it.)*
 9. The chronicle layer itself — settled on the founder's
    confirmation: the layer as shipped is the design, so by its own
    ending rule its story can be written. It is the natural FIRST

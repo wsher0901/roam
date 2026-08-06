@@ -1,7 +1,7 @@
 ---
 type: memory
 id: lane-findings
-updated: 2026-08-06 13:30 UTC · ship · critic round · work PC
+updated: 2026-08-06 13:55 UTC · external review round 1 · work PC
 ---
 
 # lane-findings — closing what the cold lane found
@@ -43,6 +43,52 @@ sequence: the pre-gate critic, and the external Web review that
 self-authored diff.
 
 ## The story
+
+2026-08-06 13:55 UTC · THE EXTERNAL REVIEW — ONE FINDING, AND IT
+OVERTURNED MY OWN CORRECTION · work PC
+
+**THE FINDING.** The vault-lens cell I had just "corrected" claimed
+the record after 2026-07-28 held nothing on the home PC and that
+"only speech can close it". FALSE. Commit `937d5ec`
+([#252](https://github.com/wsher0901/roam/pull/252), 2026-07-30,
+"micro repaint — three founder confirmations") removed the standing
+Needs-you act and recorded the founder's words: **"the vault lens
+applied at the HOME PC (every seat now done)"**. Verified before
+repairing — the commit removes the item and writes the confirmation
+in the same diff. **Speech had already closed it, and it was
+recorded.**
+
+**SO THE STATE WAS CLOSED A WEEK BEFORE ANYONE WROTE THAT IT WAS
+OPEN, AND THREE READERS MISSED THE SAME COMMIT.** The cold lane
+wrote the state unknowable. This desk "corrected" that to *work PC
+attested, home PC still owed* — and felt precise doing it, because
+it had found an attestation the lane had discarded. The external
+review found the one that closed it.
+
+**WHY ALL THREE MISSED IT IS THE PART WORTH KEEPING.** Each of us
+consulted the census's *founder input owed* item 8 — written
+2026-07-28, **two days before the act that closed it** — and none of
+us asked whether anything AFTER that date had answered it. **A DATED
+ATTESTATION IS EVIDENCE OF ITS DATE AND OF NOTHING LATER.** My own
+correction was careful about every clause in that sentence except
+the last one, and being the second reader to stop at the same stale
+line did not make my stop any better than the first.
+
+There is a sharper version. The board's silence on the item was read
+as "a repaint may have dropped it" — the cautious reading — when it
+actually meant "it was finished". **THE CAUTIOUS READING WAS WRONG
+IN THE SAME WAY THE CARELESS ONE WOULD HAVE BEEN**, because both
+substituted a guess about the board for a search of the record.
+
+**REPAIRED IN FOUR PLACES, not the two the review named.** The cell
+and the story's ending were the instruction; the story's BODY argued
+the open case at length and its section heading announced "the
+structural gap in knowing", so leaving those would have left the
+wrong claim in the places a reader actually reads. AND ITEM 8
+ITSELF — the census line all three of us trusted — now carries the
+close plus a note that it stood stale for a week and misled two
+later readers. Fixing the citations and leaving the source would
+have guaranteed a fourth reader.
 
 2026-08-06 13:30 UTC · THE CRITIC ROUND — AND A FIFTH INSTANCE OF
 THE CLASS THIS BENCH EXISTS TO CLOSE · work PC — eleven findings,

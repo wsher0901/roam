@@ -2,14 +2,14 @@
 type: chronicle-story
 shelf: III — the information system
 status: living
-updated: 2026-08-06 · ending narrowed at review · work PC
+updated: 2026-08-06 · ending CLOSED at review — both seats attested · work PC
 ---
 
 # The vault lens — a view that travels, applied by a phrase
 
-> **CURRENT ENDING (2026-08-06).** Settled as a design; its per-seat
-> state is NOT READABLE FROM THE REPOSITORY, which is a narrower
-> claim than unverifiable and the narrower one is the true one. The lens is two seed JSONs versioned in
+> **CURRENT ENDING (2026-08-06).** Settled as a design AND settled
+> as a state — the ending this story twice got wrong in the
+> cautious direction. The lens is two seed JSONs versioned in
 > `.claude/vault-seed/`, applied to a seat by saying **"apply the
 > vault lens"**, which copies them into the gitignored live
 > `docs/.obsidian/`. Every machine, including a future third, gets
@@ -17,12 +17,12 @@ updated: 2026-08-06 · ending narrowed at review · work PC
 > actually applied it CANNOT BE READ FROM THE REPOSITORY**, because
 > the live config is gitignored by design — so per-seat status is
 > knowable only from a note somebody remembered to write. The
-> founder's dated word IS such a record and this workshop has one:
-> **applied at the work PC on 2026-07-28, still owed at the home
-> PC** after [#229](https://github.com/wsher0901/roam/pull/229). So
-> ONE SEAT IS ATTESTED AND ONE IS OPEN. At this writing the board no
-> longer carries the item and no record confirms the home PC was
-> done since, which is a gap in the record rather than an answer
+> founder's word IS such a record, and this workshop has one for
+> EVERY SEAT: **work PC 2026-07-28, home PC 2026-07-30** — the
+> second captured in [#252](https://github.com/wsher0901/roam/pull/252)
+> (`937d5ec`), which cleared the standing Needs-you act with the
+> words "every seat now done". The board stopped carrying the item
+> because it was FINISHED, not because a repaint dropped it
 > either way.
 
 ## What it is
@@ -113,37 +113,51 @@ windowed by the board and fronted by their README.
   re-seeded on 2026-07-28; the census recorded the home PC as still
   owed.
 
-## Where it stands — and the structural gap in knowing
+## Where it stands — and the closed question three readers called open
 
 The design is finished and good. One phrase, two files, any number
 of machines, and the seed is the single source so a third computer
 would inherit the identical view without anyone writing it down
 again.
 
-**The unresolved part is not the lens; it is the OBSERVABILITY of a
+**The interesting part is not the lens; it is the OBSERVABILITY of a
 per-seat act.** `docs/.obsidian/` is gitignored — line 157 of
 `.gitignore` — which is the correct call and has an unavoidable
 consequence: **no seat's application of the lens is visible from
-origin, ever.** Whether the home PC has been re-seeded since #229 is
+origin, ever.** Whether a seat has re-seeded is
 not derivable from the repository at all. It can only be known from
-a note, and notes are exactly what the derivation law distrusts.
+a note — and notes are exactly what the derivation law distrusts,
+which is why this story spent two revisions calling a closed
+question open.
 
-At this writing the board carries no vault-lens item, and the
-searchable record contains no entry saying the home-PC re-seed was
-performed. **Those two facts together do not settle it.** An item
-leaving the board can mean it was done, or that a repaint dropped
-it; the record confirming neither is the honest state, and the
-verification law forbids calling it done on the board's silence.
-This story therefore records the question as open rather than
-guessing at it — and the guess would have been the easy error, since
-"it fell off the board" reads exactly like "it was finished".
+**AND THE RECORD ANSWERED IT ALL ALONG — three readers missed the
+same commit.** This story first said the home-PC state could not be
+known; the desk reviewing it "corrected" that to *work PC attested,
+home PC still owed*; and the external review found what neither had:
+[#252](https://github.com/wsher0901/roam/pull/252) (`937d5ec`,
+2026-07-30) cleared the standing act with the founder's words "every
+seat now done". **Speech was the channel, it was used, and it was
+recorded.** The state was closed a week before anyone wrote that it
+was open.
 
-The generalizable finding is worth more than the local one: **an
+Why three readers missed it is the finding worth keeping. Each
+consulted the census's *founder input owed* item — which was written
+2026-07-28, two days BEFORE the act that closed it — and none asked
+whether anything AFTER that date had answered it. **A dated
+attestation is evidence of its date and of nothing later**, and this
+story was careful about every part of that sentence except the last
+clause. The board's silence was read as "a repaint may have dropped
+it" when it meant "it was finished"; the cautious reading was wrong
+in the same way the careless one would have been.
+
+The generalizable finding survives, narrowed to what is true: **an
 obligation that is per-seat, manual, and stored in gitignored state
-has no home that can confirm it.** The workshop's usual answer —
-git outranks every note — has nothing to outrank a note with here.
-The tracking mechanism that exists, the machine-setup Verify line,
-is a prompt to a human, not a derivation.
+cannot be confirmed by derivation — only by speech, recorded.** The
+workshop's usual answer, git outranks every note, has nothing to
+outrank a note with here; what it does have is a habit of writing
+the founder's word into a commit, and that habit is what closed
+this. The failure was never the mechanism. It was three readers
+stopping at a dated line.
 
 ## Sources
 
