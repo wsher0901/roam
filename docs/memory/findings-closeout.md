@@ -36,11 +36,18 @@ lane welds.
 2026-08-06 18:40 UTC · EIGHT CLOSED, FORTY-THREE REASONED · work PC
 
 **THE PROOF, because "everything is handled" is worth nothing
-unmeasured.** 82 open inbox lines; 43 of them born of the four
-flights, the fleet or phase 2. After this bench: **8 closed with
-patches, 43 carrying a `STANDING:` clause, and a grep for
-flight-born open lines lacking one returns ZERO.** That grep is the
-deliverable, not the prose.
+unmeasured.** 82 open inbox lines, of which **51** were born of the
+four flights, the seven-lane fleet or phase 2. After this bench: **8
+closed with patches, 43 left open carrying a `STANDING:` clause
+(8 + 43 = 51, and the two sets are disjoint), and a grep for
+flight-born open lines lacking a reason returns ZERO.** That grep is
+the deliverable, not the prose.
+
+The 51 is DERIVED rather than counted by hand — it is the closed set
+plus the annotated set, and an earlier draft of this paragraph said
+43, which was the annotated set standing in for the whole. The two
+differ by exactly the lines this bench closed, which is the one
+number a close-out is least entitled to lose.
 
 **NINE PATCHES, EVERY ONE IN A NON-MASTER HOME.** The campaign
 forbids editing a box master's fenced text, and several lines route
