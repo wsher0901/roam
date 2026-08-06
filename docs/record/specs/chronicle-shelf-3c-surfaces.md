@@ -2,12 +2,12 @@
 type: spec
 id: chronicle-shelf-3c-surfaces
 title: Shelf III slice C — surfaces & manuals — the chronicle stories
-status: open
+status: shipped
 stage: workshop
 branch: docs/chronicle-shelf-3c-surfaces
-pr: —
+pr: 334
 opened: 2026-08-06
-shipped: —
+shipped: 2026-08-06
 ---
 
 # chronicle-shelf-3c-surfaces — Shelf III slice C — surfaces & manuals
