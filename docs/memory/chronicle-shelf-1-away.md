@@ -1,15 +1,16 @@
 ---
 type: memory
 id: chronicle-shelf-1-away
-updated: 2026-08-06 14:40 UTC · bench birth · work PC
+updated: 2026-08-06 14:42 UTC · canary claim · cloud
 ---
 
 # chronicle-shelf-1-away — Shelf I — the away surface
 
 ## Status
 
-bench ready, no worker yet — birthed 2026-08-06 by the work PC
-control tower
+claimed by cloud — 2026-08-06 14:42 UTC · waiting for the
+baton-holder's acknowledgment token per
+[§Canary](../skills/parallel-lanes.md#canary-handshake-both-sides)
 
 ## What this task is
 
