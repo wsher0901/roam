@@ -6,23 +6,30 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-08-06 · 13:08 UTC by the board repair · from work PC
-THE FLEET IS RULED AND NOTHING IS OWED BY YOU — 11 of 66 written ·
-needs-you 0 · git outranks this board.
+Painted 2026-08-06 · 13:47 UTC by the board repair · from work PC
+ONE BENCH STANDS AT THE GATE — it needs your review · needs-you 1 ·
+git outranks this board.
 How to read it → [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
 
-Nothing. The 55 are re-ruled
-([D-078](record/DECISIONS.md#d-078--the-55-re-ruled-on-the-cold-number)),
-so the remaining work is fully specified and needs no decision from
-you: six slice benches at the measured figure, Shelf IV taking its
-own calibration, and the INDEX write moved to the weld so the slice
-lanes may fly concurrently without sharing a file.
+1. 🟡 **REVIEW THE FINDINGS BENCH** — in the Web chat say "review"
+   for [#324](https://github.com/wsher0901/roam/pull/324), then the
+   merge word here. Self-authored payload, so no-solo-approval needs
+   the external eye and the subagent critic cannot stand in for it.
+   CI green on `a60434d5`; 11 critic findings repaired, two of them
+   red. (since 08-06)
+   → [#324](https://github.com/wsher0901/roam/pull/324)
 
-The desk's own queue, for visibility rather than action:
-[#324](https://github.com/wsher0901/roam/pull/324) (the findings
-bench, payload not started), then the slice fleet.
+⚠️ **THIS BOARD SAID "NOTHING IS OWED BY YOU" WHILE A BENCH STOOD AT
+THE GATE, AND IT IS THE THIRD TIME TODAY** — the baton line, the two
+rulings, now this. The cause is structural rather than careless:
+**no ritual repaints the board at THE GATE.**
+[ship §6](skills/ship.md#6--the-gate) renders the gate report into
+the conversation and stops; the board is next touched by §8's tail,
+which runs only AFTER the merge. So every bench that reaches the
+gate leaves this board claiming the founder owes nothing at exactly
+the moment they owe the one thing that unblocks it. Filed.
 
 ## The baton
 
@@ -43,19 +50,16 @@ paragraph is the repair.
 
 ## In flight
 
-No lanes. One bench open at this desk.
+No lanes. One bench at THE GATE.
 
 | Who | For | State | Move |
 |---|---|---|---|
-| the commander's bench · [lane-findings](https://github.com/wsher0901/roam/pull/324) | the identity gap a cold lane found in itself, plus two review repairs | 🟡 born 08-05 20:21, draft, payload not started | write the hook step, the settled/advanced test, the vault-lens correction |
+| the commander's bench · [lane-findings](https://github.com/wsher0901/roam/pull/324) | the identity gap a cold lane found in itself, plus two review repairs | 🟡 at the gate · CI green on `a60434d5` · 11 critic findings repaired | the founder's "review" in the Web chat, then the merge word here |
 
-**THE SLICE FLEET IS RULED BUT UNFIRED.** Six benches — Shelf I (11)
-· Shelf II (11) · Shelf III A (6), B (7), C (7) and E (4), E last —
-plus Shelf IV's own calibration (9). They may run CONCURRENTLY only
-because
+**THE SLICE FLEET IS RULED AND UNFIRED** — six benches plus Shelf
+IV's own calibration, lawful to run concurrently only because
 [D-078](record/DECISIONS.md#d-078--the-55-re-ruled-on-the-cold-number)
-clause 3 moved the INDEX write to the weld; every slice bench so far
-had written that file, which the lane law forbids siblings sharing.
+clause 3 moved the INDEX write to the weld.
 
 ## Working on
 
@@ -64,9 +68,10 @@ had written that file, which the lane law forbids siblings sharing.
   [D-078](record/DECISIONS.md#d-078--the-55-re-ruled-on-the-cold-number),
   which re-ruled them against a COLD number that contradicted the
   pilot: writing dominates gathering ~60/40, not the reverse.
-- THE FINDINGS BENCH is open at
-  [#324](https://github.com/wsher0901/roam/pull/324) and is the
-  desk's next act.
+- THE FINDINGS BENCH is AT THE GATE
+  ([#324](https://github.com/wsher0901/roam/pull/324)): the hook now
+  sets a cloud seat's git identity, derived and guarded, plus the
+  settled/advanced test and the vault-lens attestation.
 
 The standing order says phase 2 opens on
    your ruling. At this desk, whenever. (since 08-05)
@@ -443,5 +448,5 @@ S3–S8 · queued in order · 0/22
 
 ## Next
 
-The desk works [#324](https://github.com/wsher0901/roam/pull/324),
-then fires the slice fleet. Nothing waits on you.
+Your "review" on [#324](https://github.com/wsher0901/roam/pull/324),
+then the merge word — and the slice fleet fires after it.
