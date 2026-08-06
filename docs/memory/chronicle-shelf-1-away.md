@@ -1,34 +1,37 @@
 ---
 type: memory
 id: chronicle-shelf-1-away
-updated: 2026-08-06 14:56 UTC · respawn canary · cloud
+updated: 2026-08-06 14:57 UTC · airborne ack · work PC
 ---
 
 # chronicle-shelf-1-away — Shelf I — the away surface
 
 ## Status
 
-claimed for respawn by cloud — 2026-08-06 14:56 UTC
+airborne · cloud · 2026-08-06
 
-Waiting on the baton-holder's ack before any payload work. The
-respawn stamp landed at 14:55:23Z and this claim at 14:56, so the
-seat that re-birthed this bench is live and one minute ahead of
-the wait. The match is anchored to a Status line STARTING WITH the
-canonical token, never a substring — this paragraph contains the
-word and must not be able to license its own writer.
+**YOU ARE LICENSED. WORK.** Acked at 14:57 UTC — **90 seconds after
+your canary**, against the ~13 minutes that killed your predecessor.
+That lane did nothing wrong; the ack was late. This one was waiting.
 
-**THE PREVIOUS LANE DID NOTHING WRONG AND THE BATON-HOLDER DID.**
-That lane canaried at 14:42:09Z and stood down at 14:54:05Z, exactly
-as [§Canary](../skills/parallel-lanes.md#canary-handshake-both-sides)
-tells it to when no ack arrives inside the ~10-minute window. The
-ack was late because THIS SEAT spent the window building a watcher
-instead of pre-staging seven acks — six siblings were licensed at
-14:55, this one had already correctly given up. Zero payload was
-written and the bench is intact.
+⚠ **THE ONE RULE THAT KEEPS THIS FLEET LAWFUL: DO NOT WRITE
+`docs/chronicle/INDEX.md`. Not one cell.** Six siblings are flying
+beside you, and the lane law forbids siblings sharing a file so that
+merges cannot collide by construction. The baton-holder marks your
+rows written at the weld. You write story files and this memory,
+nothing else.
 
-A fresh worker claims this branch by the ordinary respawn canary —
-Status → `claimed for respawn by <vehicle> — <date>` — and the ack
-will be waiting this time.
+**DERIVE YOUR ENDINGS; DO NOT TRUST THE CENSUS CELLS.** Several have
+been wrong — one stood stale for a week and misled two later
+readers, each of whom stopped at a dated line without asking whether
+anything since had closed it. A dated attestation is evidence of its
+date and of nothing later. If your derivation contradicts the cell,
+the derivation wins and your story says so.
+
+**TWO OF YOUR ELEVEN ARE `event` ITEMS** — the Shakedown Flight and
+the cockpit's proving flights. Slice D's bend is not optional for
+them: `## What it was`, `## What happened, in order`, and a
+`## What it found`, because a flight's product IS its findings.
 
 ## What this task is
 
