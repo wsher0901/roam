@@ -1,15 +1,14 @@
 ---
 type: memory
 id: chronicle-shelf-3a-ladder
-updated: 2026-08-06 14:40 UTC · bench birth · work PC
+updated: 2026-08-06 14:42 UTC · canary claim · cloud
 ---
 
 # chronicle-shelf-3a-ladder — Shelf III slice A — the knowledge ladder
 
 ## Status
 
-bench ready, no worker yet — birthed 2026-08-06 by the work PC
-control tower
+claimed by cloud — 2026-08-06 14:42 UTC
 
 ## What this task is
 
@@ -32,6 +31,12 @@ All of it — plan steps 1–3 in
 [the spec](../record/specs/chronicle-shelf-3a-ladder.md).
 
 ## The story
+
+2026-08-06 14:42 UTC · canary claim · cloud — a cloud lane took this
+bench on the `lane:cloud` label, found the Status non-terminal and
+unowned ("bench ready, no worker yet"), and stamped its claim. It now
+waits for the baton-holder's ack commit on origin before any real
+work — the licence is a commit on this branch and nothing else.
 
 2026-08-06 14:40 UTC · bench birth · work PC — born bench-first as
 one lane of a seven-lane fleet, on the founder's "one fleet — fire
