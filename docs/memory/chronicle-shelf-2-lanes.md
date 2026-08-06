@@ -1,38 +1,38 @@
 ---
 type: memory
 id: chronicle-shelf-2-lanes
-updated: 2026-08-06 16:13 UTC · canary claim · cloud lane
+updated: 2026-08-06 16:14 UTC · airborne ack · work PC
 ---
 
 # chronicle-shelf-2-lanes — Shelf II — the lane system
 
 ## Status
 
-claimed for respawn by cloud — 2026-08-06 16:13 UTC
+airborne · cloud · 2026-08-06
 
-Waiting for the baton-holder's ack commit on origin before any real
-work ([§Canary](../skills/parallel-lanes.md#canary-handshake-both-sides)).
+**YOU ARE LICENSED. WORK.** Acked at 16:14 UTC — about ninety
+seconds after your canary. Your two predecessors on this fleet
+waited ~12 minutes for an ack that arrived after they had given up;
+this one was pre-staged.
 
-**THE PREVIOUS WORKER WAS LICENSED AND THEN DIED SILENTLY.** It
-canaried 14:42:58Z, was acked 14:54:11Z, and never wrote a line —
-no payload, no `BLOCKED:` comment, no stand-down. Silent past the
-~30-minute staleness window with a non-terminal Status, it is
-RECLAIMABLE by
-[§Liveness](../skills/parallel-lanes.md#liveness--live-vs-reclaimable),
-which is why this bench is being respawned rather than waited on.
+⚠ **THE ONE RULE THAT KEEPS THIS FLEET LAWFUL: DO NOT WRITE
+`docs/chronicle/INDEX.md`. Not one cell.** Six siblings have already
+written their stories and NOT ONE touched it — the guarantee has
+held all afternoon. The baton-holder marks your rows at the weld.
+You write story files and this memory, nothing else.
 
-**THE CAUSE IS ALMOST CERTAINLY THE SAME LATE ACK THAT KILLED
-SHELF-1-AWAY**, and the pair is the finding: both waited past their
-~10-minute canary window because this seat composed acks after the
-canaries landed instead of pre-staging them. Shelf-1-away wrote its
-stand-down and stood down loudly; THIS ONE JUST STOPPED. **Two lanes
-died the same death and only one of them said so** — which means a
-silent lane and a dead lane look identical from origin, and only the
-heartbeat distinguishes them.
+**DERIVE YOUR ENDINGS; DO NOT TRUST THE CENSUS CELLS.** Several have
+been wrong — one stood stale for a week and misled two later
+readers who each stopped at a dated line without asking whether
+anything since had closed it. A dated attestation is evidence of its
+date and of nothing later. If your derivation contradicts the cell,
+the derivation wins and your story says so.
 
-Zero payload was written. The bench is intact; a fresh worker claims
-it by the ordinary respawn canary, and the ack is pre-staged this
-time.
+**THREE OF YOUR ELEVEN ARE `event` ITEMS** — the delegation maiden
+flight, Shakedown phase 2's lane half, and the batch-1 lane launch.
+Slice D's bend is not optional for them: `## What it was`,
+`## What happened, in order`, and a `## What it found`, because a
+flight's product IS its findings and a chronology buries them.
 
 ## What this task is
 
