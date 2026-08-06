@@ -1,7 +1,8 @@
 ---
-type: memory
-id: chronicle-shelf-2-lanes
-updated: 2026-08-06 16:31 UTC · completion · cloud lane
+type: history
+slug: chronicle-shelf-2-lanes
+shipped: 2026-08-06 17:56
+pr: 331
 ---
 
 # chronicle-shelf-2-lanes — Shelf II — the lane system
@@ -11,7 +12,7 @@ updated: 2026-08-06 16:31 UTC · completion · cloud lane
 complete, awaiting merge — 2026-08-06
 
 All 11 stories written to
-[the spec](../record/specs/chronicle-shelf-2-lanes.md)'s format,
+[the spec](../../../specs/chronicle-shelf-2-lanes.md)'s format,
 the three `event` items on slice D's bend, every ending derived at
 write time, `docs/chronicle/INDEX.md` untouched, the full CI mirror
 green locally. The ready-flip follows the pushed head's Actions run
@@ -22,11 +23,11 @@ going green.
 The 11 unwritten stories of **Shelf II — the lane system** —
 parallel work and its machinery. One of seven benches flying as a
 single fleet under
-[D-078](../record/DECISIONS.md#d-078--the-55-re-ruled-on-the-cold-number).
+[D-078](../../../DECISIONS.md#d-078--the-55-re-ruled-on-the-cold-number).
 
 The contract, the roster, and the one rule that makes the fleet
 lawful — **do not write the INDEX** —
-[the spec](../record/specs/chronicle-shelf-2-lanes.md).
+[the spec](../../../specs/chronicle-shelf-2-lanes.md).
 
 ## Pending issues
 
@@ -42,13 +43,13 @@ the inbox:
   predecessors on 2026-08-06 — one stood down loudly, one simply
   stopped, and from origin the two are indistinguishable. Written
   into the ending of
-  [the lane law story](../chronicle/lane-law.md).
+  [the lane law story](../../../../chronicle/lane-law.md).
 - **IDEA — the canary window is timed against the wrong actor.**
   The ~10-minute cloud window is generous for a worker and tight
   for a human composing an ack in prose; the fix that worked on the
   third attempt was pre-staging the ack, which is procedure, not
   mechanism. Recorded in
-  [the cloud-spawn story](../chronicle/cloud-spawn.md).
+  [the cloud-spawn story](../../../../chronicle/cloud-spawn.md).
 
 ## Left / idle
 
@@ -96,9 +97,9 @@ agent-teams cell ends "one road stays uncovered and filed". That
 road — the superseded seat that ran no ritual, so a superseded
 tower leading a team lost its findings — was closed in two recorded
 steps
-([D-061](../record/DECISIONS.md#d-061--the-landing-doctrine-recut-to-three-scenarios)
+([D-061](../../../DECISIONS.md#d-061--the-landing-doctrine-recut-to-three-scenarios)
 then
-[D-062](../record/DECISIONS.md#d-062--the-wake-rule-generalized)),
+[D-062](../../../DECISIONS.md#d-062--the-wake-rule-generalized)),
 and its inbox line carries the closed marker. The story says so in
 words. Nothing was careless about the cell; the closure simply
 happened after it.
@@ -153,26 +154,26 @@ needed work read as correct until the underlying record was opened.
 
 ## Where to look
 
-- [the spec](../record/specs/chronicle-shelf-2-lanes.md) — roster,
+- [the spec](../../../specs/chronicle-shelf-2-lanes.md) — roster,
   format, and the INDEX prohibition.
-- The 11 stories: [lane-law](../chronicle/lane-law.md) ·
-  [lane-liveness](../chronicle/lane-liveness.md) ·
-  [fleet-continuity](../chronicle/fleet-continuity.md) ·
-  [cloud-spawn](../chronicle/cloud-spawn.md) ·
-  [lane-vehicles](../chronicle/lane-vehicles.md) ·
-  [hands-doctrine](../chronicle/hands-doctrine.md) ·
-  [agent-teams](../chronicle/agent-teams.md) ·
-  [reviewer-subagent](../chronicle/reviewer-subagent.md) ·
-  [delegation-maiden-flight](../chronicle/delegation-maiden-flight.md)
-  · [shakedown-phase-2](../chronicle/shakedown-phase-2.md) ·
-  [batch-1-lane-launch](../chronicle/batch-1-lane-launch.md).
-- [the format](../record/history/workshop/definition/chronicle-pilot.md)
+- The 11 stories: [lane-law](../../../../chronicle/lane-law.md) ·
+  [lane-liveness](../../../../chronicle/lane-liveness.md) ·
+  [fleet-continuity](../../../../chronicle/fleet-continuity.md) ·
+  [cloud-spawn](../../../../chronicle/cloud-spawn.md) ·
+  [lane-vehicles](../../../../chronicle/lane-vehicles.md) ·
+  [hands-doctrine](../../../../chronicle/hands-doctrine.md) ·
+  [agent-teams](../../../../chronicle/agent-teams.md) ·
+  [reviewer-subagent](../../../../chronicle/reviewer-subagent.md) ·
+  [delegation-maiden-flight](../../../../chronicle/delegation-maiden-flight.md)
+  · [shakedown-phase-2](../../../../chronicle/shakedown-phase-2.md) ·
+  [batch-1-lane-launch](../../../../chronicle/batch-1-lane-launch.md).
+- [the format](../definition/chronicle-pilot.md)
   — the pilot that settled it ·
-  [the event bend](../record/history/workshop/definition/chronicle-shelf-1.md)
+  [the event bend](../definition/chronicle-shelf-1.md)
   — slice D's variant and the cold calibration.
-- [D-059](../record/DECISIONS.md#d-059--the-chronicle-layer) — the
+- [D-059](../../../DECISIONS.md#d-059--the-chronicle-layer) — the
   layer's six rulings ·
-  [D-078](../record/DECISIONS.md#d-078--the-55-re-ruled-on-the-cold-number)
+  [D-078](../../../DECISIONS.md#d-078--the-55-re-ruled-on-the-cold-number)
   — the fleet ruling and the INDEX-at-the-weld clause.
-- [the census](../chronicle/INDEX.md) — READ-ONLY for this bench;
+- [the census](../../../../chronicle/INDEX.md) — READ-ONLY for this bench;
   the baton-holder marks these 11 rows at the weld.
