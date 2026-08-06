@@ -2,12 +2,12 @@
 type: spec
 id: chronicle-shelf-3b-doctrine
 title: Shelf III slice B — laws & doctrine — the chronicle stories
-status: open
+status: shipped
 stage: workshop
 branch: docs/chronicle-shelf-3b-doctrine
-pr: —
+pr: 333
 opened: 2026-08-06
-shipped: —
+shipped: 2026-08-06
 ---
 
 # chronicle-shelf-3b-doctrine — Shelf III slice B — laws & doctrine

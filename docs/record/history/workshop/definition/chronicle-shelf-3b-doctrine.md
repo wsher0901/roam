@@ -1,7 +1,8 @@
 ---
-type: memory
-id: chronicle-shelf-3b-doctrine
-updated: 2026-08-06 15:05 UTC · complete, awaiting merge · cloud lane
+type: history
+slug: 
+shipped: 2026-08-06 16:22
+pr: 333
 ---
 
 # chronicle-shelf-3b-doctrine — Shelf III slice B — laws & doctrine
@@ -18,11 +19,11 @@ independent non-author review before the founder's word.
 
 The 7 unwritten stories of **Shelf III slice B — laws & doctrine** — the standing rules and the machinery that records them. One of seven
 benches flying as a single fleet under
-[D-078](../record/DECISIONS.md#d-078--the-55-re-ruled-on-the-cold-number).
+[D-078](../../../DECISIONS.md#d-078--the-55-re-ruled-on-the-cold-number).
 
 The contract, the roster, and the one rule that makes the fleet
 lawful — **do not write the INDEX** —
-[the spec](../record/specs/chronicle-shelf-3b-doctrine.md).
+[the spec](../../../specs/chronicle-shelf-3b-doctrine.md).
 
 ## Pending issues
 
@@ -36,7 +37,7 @@ lane may not write `INDEX.md`. The weld marks the rows.
 Nothing on this bench. Belonging to the weld rather than here:
 **five of this slice's seven census cells are stale** (enumerated
 below), and the rows are the baton-holder's to mark under
-[ship §7](../skills/ship.md#7--on-approval--the-atomic-weld)'s
+[ship §7](../../../../skills/ship.md#7--on-approval--the-atomic-weld)'s
 synthesis step.
 
 ## The story
@@ -51,9 +52,9 @@ law forbids siblings sharing a file so that merges cannot collide by
 construction. Seven concurrent lanes would have been UNLAWFUL — and
 that was found by checking the planned benches for shared files
 rather than by discovering it at the first collision.
-[D-078](../record/DECISIONS.md#d-078--the-55-re-ruled-on-the-cold-number)
+[D-078](../../../DECISIONS.md#d-078--the-55-re-ruled-on-the-cold-number)
 clause 3 moved that write to the weld, where
-[ship §7](../skills/ship.md#7--on-approval--the-atomic-weld)'s
+[ship §7](../../../../skills/ship.md#7--on-approval--the-atomic-weld)'s
 synthesis step already performs it.
 
 **WHAT THIS BENCH INHERITS that the pilot did not have:** a settled
@@ -72,7 +73,7 @@ this bench.
 REPEATED THE 2026-07-22 FAILURE INSTEAD OF WAITING** · cloud lane —
 the ack landed at ~14:54, about two minutes past the nominal
 ~10-minute window
-([§Canary](../skills/parallel-lanes.md#canary-handshake-both-sides)),
+([§Canary](../../../../skills/parallel-lanes.md#canary-handshake-both-sides)),
 and the stand-down was already drafted.
 
 What prevented it was the rule that the LICENCE IS A COMMIT ON
@@ -106,18 +107,18 @@ left ambiguous.
 states its own contradiction in words, per the spec:
 
 - **LAWS · STALE.** Span ends at
-  [D-053](../record/DECISIONS.md#d-053--guardrail-audit). LAWS has
+  [D-053](../../../DECISIONS.md#d-053--guardrail-audit). LAWS has
   since been recut to a REGISTER, minted three laws
-  ([D-069](../record/DECISIONS.md#d-069--the-law-register-and-the-manual-groom)),
+  ([D-069](../../../DECISIONS.md#d-069--the-law-register-and-the-manual-groom)),
   had its touchpoints corrected from two to three, and gained
   clauses from
-  [D-062](../record/DECISIONS.md#d-062--the-wake-rule-generalized),
-  [D-064](../record/DECISIONS.md#d-064--the-box-master-class-and-setup-entry-contract)
+  [D-062](../../../DECISIONS.md#d-062--the-wake-rule-generalized),
+  [D-064](../../../DECISIONS.md#d-064--the-box-master-class-and-setup-entry-contract)
   and
-  [D-066](../record/DECISIONS.md#d-066--the-ideas-entry-contract).
+  [D-066](../../../DECISIONS.md#d-066--the-ideas-entry-contract).
 - **DECISIONS and decide · STALE.** Span ends at
-  [D-057](../record/DECISIONS.md#d-057--the-record-shelf);
-  [D-068](../record/DECISIONS.md#d-068--the-short-anchor-law) has
+  [D-057](../../../DECISIONS.md#d-057--the-record-shelf);
+  [D-068](../../../DECISIONS.md#d-068--the-short-anchor-law) has
   since changed the entry FORMAT ITSELF and retrofitted D-001–D-067.
 - **the routing law · STALE.** Span ends at #144 (2026-07-16); the
   table has since grown ATLAS, `chronicle/`, IDEAS §Closed and
@@ -127,16 +128,16 @@ states its own contradiction in words, per the spec:
   later and larger, and sanctioned by this very law. The SWEEP LAW
   is missing from the cell entirely.
 - **the corpus writing laws · ACCURATE.** Verified against
-  [restyle-sweep](../record/history/workshop/definition/restyle-sweep.md).
+  [restyle-sweep](restyle-sweep.md).
 - **the derivation law · ACCURATE.** Two clauses, matching LAWS at
   HEAD.
 - **the response doctrine · STALE, and the worst of the seven.** The
   cell cites
-  [D-052](../record/DECISIONS.md#d-052--response-doctrine) alone —
+  [D-052](../../../DECISIONS.md#d-052--response-doctrine) alone —
   five clauses — and calls the item "settled". At HEAD it has EIGHT:
-  [D-063](../record/DECISIONS.md#d-063--response-doctrine-v2-and-web-instructions-v6)
+  [D-063](../../../DECISIONS.md#d-063--response-doctrine-v2-and-web-instructions-v6)
   took it to v2 and
-  [D-067](../record/DECISIONS.md#d-067--the-report-skeleton-and-the-board-diet)
+  [D-067](../../../DECISIONS.md#d-067--the-report-skeleton-and-the-board-diet)
   added rule 8. **Every sentence in the cell is still true; the word
   "settled" is what is false** — which is the more dangerous failure,
   because a reader checking it for errors finds none.
@@ -157,7 +158,7 @@ for all seven items together (~50s/story); WRITING ≈ 7 minutes
 ≈ 16 minutes, roughly 2m15s per story end to end.
 
 **This number must not be read as a clean confirmation of
-[D-078](../record/DECISIONS.md#d-078--the-55-re-ruled-on-the-cold-number)'s
+[D-078](../../../DECISIONS.md#d-078--the-55-re-ruled-on-the-cold-number)'s
 ≈1m50s figure, for two reasons.** First, ALL GATHERING HAPPENED
 DURING THE FORCED CANARY WAIT — dead time this bench would have
 spent idle either way — so it cost nothing on the critical path and
@@ -170,15 +171,15 @@ D-078's measured 60/40 and not a contradiction of it.
 
 ## Where to look
 
-- [the spec](../record/specs/chronicle-shelf-3b-doctrine.md) — roster, format,
+- [the spec](../../../specs/chronicle-shelf-3b-doctrine.md) — roster, format,
   and the INDEX prohibition.
-- [the format](../record/history/workshop/definition/chronicle-pilot.md)
+- [the format](chronicle-pilot.md)
   — the pilot that settled it, and its honest caveats.
-- [the event bend](../record/history/workshop/definition/chronicle-shelf-1.md)
+- [the event bend](chronicle-shelf-1.md)
   — slice D's variant for `event` items, and the cold calibration.
-- [D-059](../record/DECISIONS.md#d-059--the-chronicle-layer) — the
+- [D-059](../../../DECISIONS.md#d-059--the-chronicle-layer) — the
   layer's six rulings.
-- [§Canary](../skills/parallel-lanes.md#canary-handshake-both-sides)
+- [§Canary](../../../../skills/parallel-lanes.md#canary-handshake-both-sides)
   — the window and the licence rule the late ack tested.
-- [the census](../chronicle/INDEX.md) — READ-ONLY for this bench;
+- [the census](../../../../chronicle/INDEX.md) — READ-ONLY for this bench;
   five of its seven cells for this slice are stale as recorded above.
