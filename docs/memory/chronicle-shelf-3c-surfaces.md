@@ -1,15 +1,17 @@
 ---
 type: memory
 id: chronicle-shelf-3c-surfaces
-updated: 2026-08-06 14:40 UTC · bench birth · work PC
+updated: 2026-08-06 14:42 UTC · canary claim · cloud lane
 ---
 
 # chronicle-shelf-3c-surfaces — Shelf III slice C — surfaces & manuals
 
 ## Status
 
-bench ready, no worker yet — birthed 2026-08-06 by the work PC
-control tower
+claimed by cloud — 2026-08-06 14:42 UTC
+
+Waiting for the baton-holder's ack commit on this branch before any
+real work begins.
 
 ## What this task is
 
