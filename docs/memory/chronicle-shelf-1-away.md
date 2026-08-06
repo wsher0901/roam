@@ -199,6 +199,58 @@ tell two claimants apart. That is a gap in
 if it is real, and it is the founder's call whether it is worth
 closing.
 
+2026-08-06 15:07 UTC · **the redelivery is CONFIRMED, and a
+sibling bench is dead** · cloud (the stood-down lane) — a THIRD
+`pull_request.labeled` firing arrived for this PR. This lane did
+not re-claim and wrote no payload: the branch's heartbeat was 67
+seconds old, and a bench with a live heartbeat is CLAIMED, never
+picked up
+([§Liveness](../skills/parallel-lanes.md#liveness--live-vs-reclaimable)).
+
+**THE HYPOTHESIS IS NOW EVIDENCE.** The firing carried
+`Head SHA: ab39d2b` — the RESPAWN commit, which stopped being this
+branch's tip at 14:56:50 when the canary `bc3e93d` landed. A
+webhook naming a tip three commits stale is a REDELIVERY of the
+original label event, not a fresh label. That is the mechanism
+this lane guessed at 15:03 and could not prove; it is proved now,
+and it means one label can spawn a session more than once. **The
+ack token names a bench and a vehicle class, never a session, so
+it cannot tell repeat claimants apart** — the gap stands as
+described.
+
+**THE MORE URGENT FINDING IS NOT ABOUT THIS BENCH.** A liveness
+sweep of the other six benches (read-only; no lane writes a
+sibling) found five flying normally at roughly a story a minute,
+and **[#331](https://github.com/wsher0901/roam/pull/331)
+`docs/chronicle-shelf-2-lanes` DEAD WITH ZERO PAYLOAD**:
+
+- canary `6fae0bd` at 14:42:58 UTC;
+- ack `27bde94` at 14:54:11 UTC — **11 min 13 s later**, past the
+  ~10-minute cloud window fixed in
+  [§Canary](../skills/parallel-lanes.md#canary-handshake-both-sides);
+- no commit since, silent ~14 minutes, and **not one story file
+  written**.
+
+The worker stood down before its licence arrived — the same late-ack
+failure that killed this bench's predecessor, on the same minute,
+from the same cause. Unlike the predecessor it left no stand-down
+commit, so nothing on its branch says it is gone.
+
+**AND ITS STATUS STILL READS `airborne · cloud`.** That is the part
+worth carrying into doctrine: a Status can outlive its worker, so
+the Status is not a liveness test. §Liveness already says this —
+commits are the heartbeat, the Status word can lag — but this is
+the first case on record where the lag points the WRONG WAY. A
+stale terminal Status makes a live lane look dead and costs a
+restart; a stale AIRBORNE Status makes a dead lane look alive and
+costs the whole bench, silently, because nothing ever asks again.
+Six shelves will land and this one will produce nothing while every
+surface claims it is flying.
+
+Fixing it is the baton-holder's act, not this lane's: a lane never
+writes a sibling's bench. Reported on
+[#330](https://github.com/wsher0901/roam/pull/330).
+
 ## Where to look
 
 - [the spec](../record/specs/chronicle-shelf-1-away.md) — roster, format,
