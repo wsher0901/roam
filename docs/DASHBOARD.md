@@ -6,38 +6,23 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-08-05 · 19:26 UTC by the board repair · from work PC
-BOTH RULINGS GIVEN — one bench waits for a COLD seat · needs-you 1 ·
-git outranks this board.
+Painted 2026-08-06 · 13:08 UTC by the board repair · from work PC
+THE FLEET IS RULED AND NOTHING IS OWED BY YOU — 11 of 66 written ·
+needs-you 0 · git outranks this board.
 How to read it → [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
 
-1. ⚪ **GIVE #322 A COLD SEAT** — the first shelf bench is birthed,
-   specced and UNCLAIMED ON PURPOSE. It measures what a shelf of
-   chronicle stories costs from a seat that has NOT been living in
-   the material, and that is its only validity condition: the
-   session that birthed it spent 2026-08-05 inside most of Shelf
-   III, so a number from here would carry the exact confound the
-   pilot already disowned. Start a fresh sitting and it claims the
-   bench, or dispatch it as a cloud lane. **NOT URGENT — it is
-   worth more flown late by a fresh seat than promptly by this
-   one.** (since 08-05)
-   → [#322](https://github.com/wsher0901/roam/pull/322) ·
-   D-077 (on #322's branch — it reaches main when that bench merges)
+Nothing. The 55 are re-ruled
+([D-078](record/DECISIONS.md#d-078--the-55-re-ruled-on-the-cold-number)),
+so the remaining work is fully specified and needs no decision from
+you: six slice benches at the measured figure, Shelf IV taking its
+own calibration, and the INDEX write moved to the weld so the slice
+lanes may fly concurrently without sharing a file.
 
-**BOTH RULINGS ARE GIVEN AND RECORDED.** The scope of the 63 and the
-settle-weld fork were answered on 2026-08-05 and are now **D-077**,
-so they leave this queue. The ship §7 adjustment ruling 2 requires
-rides [#322](https://github.com/wsher0901/roam/pull/322) as its
-first plan step.
-
-⚠️ **D-077 IS NOT ON MAIN YET** — it was cut inside
-[#322](https://github.com/wsher0901/roam/pull/322) and reaches main
-when that bench merges, so this board names it without linking it
-and the links gate agrees. SECOND TIME TODAY a board could not cite
-a decision still riding a branch; filed as an inbox line rather than
-worked around silently.
+The desk's own queue, for visibility rather than action:
+[#324](https://github.com/wsher0901/roam/pull/324) (the findings
+bench, payload not started), then the slice fleet.
 
 ## The baton
 
@@ -58,22 +43,30 @@ paragraph is the repair.
 
 ## In flight
 
-No lanes and no live seat but this desk. One bench stands BIRTHED
-AND UNCLAIMED — [#322](https://github.com/wsher0901/roam/pull/322),
-whose spec forbids its own author from flying it.
+No lanes. One bench open at this desk.
 
-Nothing flying, no lanes, no fleet at ground. Clean floor.
+| Who | For | State | Move |
+|---|---|---|---|
+| the commander's bench · [lane-findings](https://github.com/wsher0901/roam/pull/324) | the identity gap a cold lane found in itself, plus two review repairs | 🟡 born 08-05 20:21, draft, payload not started | write the hook step, the settled/advanced test, the vault-lens correction |
+
+**THE SLICE FLEET IS RULED BUT UNFIRED.** Six benches — Shelf I (11)
+· Shelf II (11) · Shelf III A (6), B (7), C (7) and E (4), E last —
+plus Shelf IV's own calibration (9). They may run CONCURRENTLY only
+because
+[D-078](record/DECISIONS.md#d-078--the-55-re-ruled-on-the-cold-number)
+clause 3 moved the INDEX write to the weld; every slice bench so far
+had written that file, which the lane law forbids siblings sharing.
 
 ## Working on
 
-- PHASE 2 IS OPEN, HAS ITS FIRST THREE STORIES, ITS RULE ENFORCED,
-  AND ITS PLAN RULED. The pilot shipped 18:53; the synthesis step
-  19:19; and
-  D-077 (on #322's branch — it reaches main when that bench merges)
-  set the rest — shelf-sized benches, Shelf III split, the FIRST one
-  a calibration whose number re-rules the others before they fire.
-  That bench is [#322](https://github.com/wsher0901/roam/pull/322),
-  waiting for a cold seat.
+- PHASE 2 IS RUNNING, MEASURED, AND FULLY PLANNED. 11 of 66 stories
+  written; the remaining 55 are ruled into seven benches by
+  [D-078](record/DECISIONS.md#d-078--the-55-re-ruled-on-the-cold-number),
+  which re-ruled them against a COLD number that contradicted the
+  pilot: writing dominates gathering ~60/40, not the reverse.
+- THE FINDINGS BENCH is open at
+  [#324](https://github.com/wsher0901/roam/pull/324) and is the
+  desk's next act.
 
 The standing order says phase 2 opens on
    your ruling. At this desk, whenever. (since 08-05)
@@ -142,6 +135,22 @@ one phase per line:
 
 **Completed**
 
+- THE 55 RE-RULED ON THE COLD NUMBER — six slice benches at the
+  measured figure, Shelf IV excluded on the measuring lane's own
+  caveat, and a third clause found by checking rather than assuming:
+  every slice bench had been writing the INDEX, which the
+  no-shared-file law forbids siblings doing, so six concurrent lanes
+  would have been unlawful. The write moved to the weld, where the
+  synthesis step already performs it.
+  [#326](https://github.com/wsher0901/roam/pull/326)
+- THE FIRST SHELF BENCH, FLOWN COLD — eight stories including the
+  first two EVENTS ever written, which bent the format and
+  documented the bend. Its calibration CONTRADICTED the pilot:
+  writing dominates gathering ~60/40. It also beat the pre-gate
+  critic, which predicted a fourth case-analysis hole the lane had
+  already closed — the first time in four benches that failure mode
+  was anticipated rather than shipped.
+  [#322](https://github.com/wsher0901/roam/pull/322)
 - SHIP §7 NOW PERFORMS THE ENDING RULE — the duty
   [HOME](HOME.md#where-information-goes) assigned to "the weld" in
   two tables, which no ritual carried until now. Every weld names
@@ -257,6 +266,14 @@ one phase per line:
 
 **Issues**
 
+- ⏳ A CLOUD SEAT'S GIT IDENTITY IS SET BY NO RITUAL IT READS. The
+  step lives in [machine-setup](skills/machine-setup.md), the one
+  file a cloud lane has no reason to open; `LANE-WORKER.md` never
+  mentions it. The 2026-08-05 lane complied BY LUCK — the procedure
+  happened to be one of its own story subjects — and authored four
+  commits wrong before catching itself. IT FAILS SILENTLY: push
+  succeeds, CI passes, only the author name differs, while its
+  neighbour trap fails loudly. → [#324](https://github.com/wsher0901/roam/pull/324)
 - ⏳ ATLAS DOES NOT KNOW THE CHRONICLE EXISTS — its file-flow figure
   draws which ritual writes each surface and notes "Ship appears
   three times for exactly that reason"; ship now writes a FOURTH,
@@ -426,5 +443,5 @@ S3–S8 · queued in order · 0/22
 
 ## Next
 
-A fresh seat takes [#322](https://github.com/wsher0901/roam/pull/322)
-and returns the number that re-rules the remaining shelves.
+The desk works [#324](https://github.com/wsher0901/roam/pull/324),
+then fires the slice fleet. Nothing waits on you.
