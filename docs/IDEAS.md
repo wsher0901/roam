@@ -19,6 +19,22 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
 
 ## Open
 
+- ⏳ **NO RITUAL REPAINTS THE BOARD AT THE GATE, so every bench that
+  reaches it leaves the board claiming the founder owes nothing —
+  three times on 2026-08-05/06 alone.**
+  [ship §6](skills/ship.md#6--the-gate) renders the gate report into
+  the CONVERSATION and stops; the board is next touched by §8's
+  tail, which runs only after the merge. The window between them is
+  exactly when the founder owes the one act that unblocks the bench,
+  and it is precisely then that [DASHBOARD](DASHBOARD.md) says
+  Needs-you is empty. The same shape produced the other two: a seat
+  that claims the baton has already made the board stale by claiming
+  it, and a ruling given mid-sitting leaves the board asserting it
+  is still owed. THE COMMON CAUSE IS THAT RITUALS REPAINT ON ENTRY
+  AND EXIT AND THE MIDDLE OF A LONG SITTING BELONGS TO NO RITUAL.
+  Cheapest fix: give ship §6 a DASHBOARD-only micro-PR, the same
+  carve-out the tail already uses. (2026-08-06, the work PC control
+  tower) → [ship §6](skills/ship.md#6--the-gate)
 - ⏳ A BOARD CANNOT CITE A DECISION THAT IS STILL ON A BRANCH, and
   it happened TWICE on 2026-08-05. `decide` invoked inside an open
   task puts the entry on that task's PR, so between the cut and the
