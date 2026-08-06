@@ -1,15 +1,14 @@
 ---
 type: memory
 id: chronicle-shelf-2-lanes
-updated: 2026-08-06 14:40 UTC · bench birth · work PC
+updated: 2026-08-06 14:42 UTC · canary claim · cloud lane
 ---
 
 # chronicle-shelf-2-lanes — Shelf II — the lane system
 
 ## Status
 
-bench ready, no worker yet — birthed 2026-08-06 by the work PC
-control tower
+claimed by cloud — 2026-08-06 14:42 UTC
 
 ## What this task is
 
