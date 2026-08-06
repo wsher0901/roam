@@ -4142,3 +4142,78 @@ units) · [the first shelf bench's spec](specs/chronicle-shelf-1.md)
 · [DASHBOARD](../DASHBOARD.md) (Needs-you and the standing order's
 phase 2 line, at the next ritual repaint — the board is never
 hand-edited) · this entry.
+
+## D-078 — The 55 re-ruled on the cold number
+
+In full: 2026-08-05 — The remaining 55 chronicle stories are re-ruled against the calibration D-077 demanded, on the founder's delegation ("re-rule on the cold number"). THE MEASURED FIGURE HOLDS FOR 46 OF THEM: Shelf I (11), Shelf II (11) and Shelf III's remaining slices A (6), B (7), C (7) and E (4) fly as SIX SLICE BENCHES at ≈1m50s per story, the figure a cold cloud lane measured writing eight. SHELF IV (9) DOES NOT INHERIT IT and takes its own calibration bench first, because the lane that measured refused to scale its number there — Shelf IV's sources are code and specs rather than the pre-digested benches that made slice D's gathering cheap. AND THE THIRD CLAUSE IS THE ONE NOBODY HAD NOTICED: slice benches may run CONCURRENTLY only because the INDEX update moves to the WELD, since every slice bench so far wrote docs/chronicle/INDEX.md and the lane law forbids siblings sharing a file — ship §7's synthesis step already performs exactly that write, so the constraint costs nothing to satisfy and a lane now writes story files ONLY.
+
+**Decision:** three clauses.
+
+1. **46 STORIES FLY AT THE MEASURED FIGURE**, as six slice benches:
+   Shelf I (11) · Shelf II (11) · Shelf III A (6), B (7), C (7) and
+   E (4). Slice E — the task-loop rituals — goes LAST of the six, as
+   [its slice note](specs/chronicle-shelf-1.md) argued: those four
+   items are touched constantly, so they are worth writing once the
+   format has stopped moving.
+2. **SHELF IV (9) TAKES ITS OWN CALIBRATION**, exactly as the first
+   one worked: a bench that writes the shelf AND reports its true
+   cost, because the number that governs Shelves I–III was earned on
+   sources Shelf IV does not have.
+3. **THE INDEX WRITE MOVES TO THE WELD, WHICH IS WHAT MAKES
+   CONCURRENCY LAWFUL.** A slice lane writes its story files and
+   NOTHING ELSE; the baton-holder's weld marks the rows written,
+   under the synthesis step
+   [ship §7](../skills/ship.md#7--on-approval--the-atomic-weld)
+   already carries. Without this, two slice lanes collide on
+   `docs/chronicle/INDEX.md` and the lane law's no-shared-file
+   clause forbids running them together at all.
+
+**Why:** the calibration did its job by contradicting the thing that
+commissioned it. Measured cold, WRITING dominates GATHERING roughly
+60/40 — the reverse of
+[the pilot](history/workshop/definition/chronicle-pilot.md)'s
+inference — and the shelf-batching ruling survives anyway, but for a
+better reason than the one it was made on: source-sharing INSIDE a
+slice is real and large, and one story's gathering cost SIX SECONDS
+because its neighbour had opened the same sources minutes earlier.
+That is a measurement, where the pilot had only an inference.
+
+Clause 2 exists because the measuring lane said so about its own
+number, unprompted, and a bench that names the limit of its own
+result has earned that limit being honoured. Clause 3 exists because
+a check for shared files across the planned benches found one that
+every slice bench had written and nobody had flagged.
+
+**Alternatives rejected:**
+
+- **Fire all seven benches at the measured figure**, Shelf IV
+  included. Rejected on the measuring lane's own caveat: its
+  gathering was cheap because the ledger indexes PR→history file and
+  every slice-D item had a dedicated bench. Shelf IV has neither.
+- **Run the slice benches strictly sequentially.** Rejected as
+  unnecessary once clause 3 removes the only shared file — but it
+  remains the correct fallback if a slice ever needs to write the
+  INDEX itself.
+- **Let each slice lane write its own INDEX rows** and resolve
+  collisions at merge. Rejected outright: the lane law's
+  no-shared-file rule exists so merges cannot collide BY
+  CONSTRUCTION, and trading that for convenience would spend a
+  guarantee to save a weld step that already exists.
+- **Re-slice Shelves I and II** (11 each) closer to slice D's 8.
+  Rejected as false precision — the measured spread within slice D
+  was wider than the difference between 8 and 11.
+
+**Affects:**
+[D-077](#d-077--shelf-benches-and-the-settling-weld-writes) (its
+deferred re-ruling, answered here; its shelf-bench shape confirmed) ·
+[D-076](#d-076--phase-2-opens-with-a-three-story-pilot) (the pilot's
+gathering-dominates inference, now measured false — the pilot's
+caveats were right and its conclusion was not) ·
+[ship §7](../skills/ship.md#7--on-approval--the-atomic-weld) (its
+synthesis step becomes the INDEX's only writer during a slice
+fleet — no edit needed, the step already does it) ·
+[the census](../chronicle/INDEX.md) (its shelves and slices become
+bench units) · [parallel-lanes](../skills/parallel-lanes.md) (the
+no-shared-file clause is what clause 3 satisfies; unchanged) ·
+[DASHBOARD](../DASHBOARD.md) (Needs-you and the phase 2 line, at the
+next ritual repaint — the board is never hand-edited) · this entry.
