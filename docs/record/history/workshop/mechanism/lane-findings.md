@@ -1,7 +1,8 @@
 ---
-type: memory
-id: lane-findings
-updated: 2026-08-06 13:55 UTC · external review round 1 · work PC
+type: history
+slug: lane-findings
+shipped: 2026-08-06 14:21
+pr: 324
 ---
 
 # lane-findings — closing what the cold lane found
@@ -13,7 +14,7 @@ complete, awaiting merge — 2026-08-06
 Born on the founder's word folding three items into a findings
 bench. Self-authored payload, so an external Web review is required
 before the merge word
-([no-solo-approval](../LAWS.md#workflow-non-negotiable)).
+([no-solo-approval](../../../../LAWS.md#workflow-non-negotiable)).
 
 ## What this task is
 
@@ -24,13 +25,13 @@ review findings** the weld did not repair.
 
 The contract, and the reasoning for choosing the hook over a
 lane-worker prompt step:
-[the spec](../record/specs/lane-findings.md).
+[the spec](../../../specs/lane-findings.md).
 
 ## Pending issues
 
 One design choice is made rather than asked, and stated where the
 founder can override it: the identity fix goes in the SESSION-START
-HOOK, not [LANE-WORKER.md](../LANE-WORKER.md). A box master needs a
+HOOK, not [LANE-WORKER.md](../../../../LANE-WORKER.md). A box master needs a
 manual re-save to take effect, so putting the fix for a silent
 failure into a box would make the fix itself fail silently until
 someone pasted it.
@@ -39,10 +40,45 @@ someone pasted it.
 
 Nothing — all three plan steps are done. What remains is the closing
 sequence: the pre-gate critic, and the external Web review that
-[no-solo-approval](../LAWS.md#workflow-non-negotiable) requires of a
+[no-solo-approval](../../../../LAWS.md#workflow-non-negotiable) requires of a
 self-authored diff.
 
 ## The story
+
+2026-08-06 14:21 UTC · PASS, AND THE SYNTHESIS NAMED FOUR ITEMS ·
+work PC
+
+**The Web review returned PASS on `c54b1a2`** — the load-bearing
+approval here, the payload being desk-authored. It verified the
+vault-lens state closed at ALL FOUR SITES (cell, ending, body and
+heading, census item 8), the `937d5ec`/[#252](https://github.com/wsher0901/roam/pull/252)
+citation carried, and the correction note preserving what the stale
+line said; the hook's two guards and the one-read settled/advanced
+test unchanged from the reviewed base.
+
+**THE SYNTHESIS STEP'S SECOND REAL EXERCISE, AND ITS FIRST MULTI-CASE
+ONE.** It named FOUR items, in three different states — the first
+time the step has done anything but repeat itself:
+
+| Item | State | Case | Act |
+|---|---|---|---|
+| the session hooks | written story | **1 · INCORPORATE** | spine bullet + ending rewritten: 274→324 lines, `session-start` 159→209, and the new duty named |
+| the per-machine seat | written story | **1 · INCORPORATE** | spine bullet + ending: its "one silent failure mode" is now automatic |
+| the vault lens | written story | **1**, already done | the payload itself rewrote that ending; nothing owed at the weld |
+| ship — the closing ritual | row, no story | **2 · ADVANCED** | ending cell: the settled/advanced test |
+
+**CASE 1 FIRED FOR THE FIRST TIME**, three times over, and it cost
+about what the step promised — one bullet and one ending each,
+because the format was built so a new event is exactly that. The
+line counts were DERIVED at the weld (`wc -l` on the three hooks),
+not carried from the story's own prose, which is how the ending
+avoided repeating the stale figure it was replacing.
+
+**THE SETTLED BRANCH STILL HAS NOT FIRED.** Four items, none
+settled — every one advanced. That branch is the one
+[D-077](../../../DECISIONS.md#d-077--shelf-benches-and-the-settling-weld-writes)
+ruling 2 created and the one the repaired test exists to make
+reachable, and it remains untested after three welds.
 
 2026-08-06 13:55 UTC · THE EXTERNAL REVIEW — ONE FINDING, AND IT
 OVERTURNED MY OWN CORRECTION · work PC
@@ -102,7 +138,7 @@ owed work. But unticked boxes are the NORM here, not a signal:
 `ship-synthesis` with five, and the CI box is left unticked BY A
 CONVENTION I INVENTED TWO BENCHES AGO. The test would have answered
 ADVANCED for nearly every item, making
-[D-077](../record/DECISIONS.md#d-077--shelf-benches-and-the-settling-weld-writes)
+[D-077](../../../DECISIONS.md#d-077--shelf-benches-and-the-settling-weld-writes)
 ruling 2's "WRITE THE STORY, NOW" practically unreachable — a test
 that quietly undoes the ruling it was written to sharpen. That input
 is now named as NOT an input, with the reason.
@@ -144,7 +180,7 @@ their local name. `git log --format='%an' origin/main` returns only
 rewrites the author, so the memory was right and the spec was loose.
 Corrected there.
 
-**Five more, all taken:** [machine-setup](../skills/machine-setup.md)
+**Five more, all taken:** [machine-setup](../../../../skills/machine-setup.md)
 still told a cloud seat to set its identity itself, stale the moment
 this merges — backfilled per the retroactivity law, hook named,
 manual path kept as the fallback · this memory's Status still read
@@ -154,8 +190,8 @@ at the home PC" as present fact where the attestation is dated · and
 two undated derived literals, now stamped.
 
 **AND ONE THE WELD OWES, surfaced rather than absorbed:**
-[session-hooks](../chronicle/session-hooks.md) and
-[machine-setup](../chronicle/machine-setup.md) BOTH have written
+[session-hooks](../../../../chronicle/session-hooks.md) and
+[machine-setup](../../../../chronicle/machine-setup.md) BOTH have written
 stories whose endings this diff falsifies — one states the hook's
 line count, the other calls the identity step "the procedure's one
 silent failure mode". Under ship §7 case 1 this weld owes both an
@@ -168,7 +204,7 @@ RATHER THAN ASSERTED · work PC
 `.claude/hooks/session-start.mjs` now checks the effective git
 identity and, when it is unset or the harness default, sets a
 REPO-LOCAL one derived from `git log -1 origin/main` — the recipe
-[machine-setup](../skills/machine-setup.md) already prescribes, so
+[machine-setup](../../../../skills/machine-setup.md) already prescribes, so
 no literal is hardcoded and no second home is created. It runs after
 the fetch, so origin/main is fresh; it never blocks; it reports what
 it did.
@@ -222,15 +258,15 @@ lane's findings about itself.
 **THE IDENTITY GAP IS THE ONE WORTH THE BENCH, and its shape is more
 interesting than its fix.** A cloud lane authored four commits as
 `Claude <noreply@anthropic.com>` — the tell
-[seat-invariance](../LAWS.md#parallel-lanes--cloud) forbids — and
+[seat-invariance](../../../../LAWS.md#parallel-lanes--cloud) forbids — and
 caught itself ONLY because the setup procedure happened to be one of
 its eight story subjects. It complied by luck.
 
-The step lives in [machine-setup](../skills/machine-setup.md), which
+The step lives in [machine-setup](../../../../skills/machine-setup.md), which
 is the one file a cloud lane has no reason to open: a lane's orders
-route it to [LAWS](../LAWS.md), [parallel-lanes](../skills/parallel-lanes.md), its spec and its memory, and A
+route it to [LAWS](../../../../LAWS.md), [parallel-lanes](../../../../skills/parallel-lanes.md), its spec and its memory, and A
 LANE DOES NOT THINK OF ITSELF AS SETTING UP A MACHINE. Verified at
-birth — [LANE-WORKER.md](../LANE-WORKER.md) contains no mention of
+birth — [LANE-WORKER.md](../../../../LANE-WORKER.md) contains no mention of
 identity at all.
 
 **AND THE FAILURE IS CLEAN, WHICH IS WHY IT PERSISTS.** The push
@@ -243,7 +279,7 @@ only fixes what breaks visibly will keep this class forever.
 
 **WHY THE HOOK AND NOT THE LANE-WORKER PROMPT.** The prompt step was
 the obvious answer and it is the wrong one:
-[LANE-WORKER.md](../LANE-WORKER.md) is a BOX MASTER whose saved
+[LANE-WORKER.md](../../../../LANE-WORKER.md) is a BOX MASTER whose saved
 prompt needs a manual re-save to take effect, so the fix for a
 silent failure would itself fail silently until a paste happened.
 The hook is in the repo, reaches every seat that clones, needs no
@@ -251,7 +287,7 @@ paste, and fixes cockpits and background agents too — the gap was
 never lane-specific, it was CLOUD-SEAT-specific.
 
 **THE OTHER TWO ARE SMALL AND BOTH ARE ABOUT KEEPING WHAT THE RECORD
-ALREADY KNEW.** "SETTLED vs ADVANCED" forks [ship §7](../skills/ship.md#7--on-approval--the-atomic-weld)'s case 2 with no
+ALREADY KNEW.** "SETTLED vs ADVANCED" forks [ship §7](../../../../skills/ship.md#7--on-approval--the-atomic-weld)'s case 2 with no
 operational test — the fourth instance of a fork whose branches
 share an entry condition with an undefined tiebreaker. And the
 vault-lens cell called its state "unverifiable" while the same file
@@ -261,14 +297,14 @@ and the correction quietly threw away an attestation.
 
 ## Where to look
 
-- [the spec](../record/specs/lane-findings.md) — the three items and
+- [the spec](../../../specs/lane-findings.md) — the three items and
   the hook-vs-prompt reasoning.
-- [the lane's story](../record/history/workshop/definition/chronicle-shelf-1.md)
+- [the lane's story](../definition/chronicle-shelf-1.md)
   — where all three findings came from, including the lane's own
   honest self-report.
-- [machine-setup](../skills/machine-setup.md) — where the identity
+- [machine-setup](../../../../skills/machine-setup.md) — where the identity
   step lives today, and the file a lane never opens.
-- [ship §7](../skills/ship.md#7--on-approval--the-atomic-weld) — the
+- [ship §7](../../../../skills/ship.md#7--on-approval--the-atomic-weld) — the
   case-2 fork needing a test.
-- [the census](../chronicle/INDEX.md) — the vault-lens cell and the
+- [the census](../../../../chronicle/INDEX.md) — the vault-lens cell and the
   founder-input-owed item 8 it contradicts.

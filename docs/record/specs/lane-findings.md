@@ -2,12 +2,12 @@
 type: spec
 id: lane-findings
 title: The findings bench — the identity gap, and two review repairs
-status: open
+status: shipped
 stage: workshop
 branch: fix/lane-findings
-pr: —
+pr: 324
 opened: 2026-08-05
-shipped: —
+shipped: 2026-08-06
 ---
 
 # lane-findings — closing what the cold lane found
