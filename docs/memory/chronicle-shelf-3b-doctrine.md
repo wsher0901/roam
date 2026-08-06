@@ -1,15 +1,17 @@
 ---
 type: memory
 id: chronicle-shelf-3b-doctrine
-updated: 2026-08-06 14:40 UTC · bench birth · work PC
+updated: 2026-08-06 14:42 UTC · canary claim · cloud lane
 ---
 
 # chronicle-shelf-3b-doctrine — Shelf III slice B — laws & doctrine
 
 ## Status
 
-bench ready, no worker yet — birthed 2026-08-06 by the work PC
-control tower
+claimed by cloud — 2026-08-06 14:42 UTC
+
+The canary is pushed; this lane now waits for the baton-holder's ack
+line before any real work begins.
 
 ## What this task is
 
