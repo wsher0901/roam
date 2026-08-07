@@ -2,12 +2,12 @@
 type: spec
 id: phase-2-close
 title: Close phase 2 — the vault, and what closing it actually requires
-status: open
+status: shipped
 stage: workshop
 branch: docs/phase-2-close
-pr: —
+pr: #340
 opened: 2026-08-06
-shipped: —
+shipped: 2026-08-07
 ---
 
 # phase-2-close — the vault, and what closing it actually requires
@@ -89,14 +89,22 @@ answer.**
 
 ## Done means
 
-- [ ] `docs/chronicle/INDEX.md` carries 66 rows reading WRITTEN and
-      0 PROPOSALS, the count derived at render time, not typed.
+- [x] `docs/chronicle/INDEX.md` carries 66 rows reading WRITTEN and
+      0 PROPOSALS, the count derived at render time, not typed —
+      **verified by count on the merged main, not by claim:**
+      `grep -c '✍ WRITTEN' docs/chronicle/INDEX.md` returns 66,
+      and the census prose retired its own "list of PROPOSED
+      stories" sentence at the weld that filled the last row.
 - [x] The closing D-number exists and states the polish pass's fate
       explicitly rather than by omission —
       [D-081](../DECISIONS.md#d-081--phase-2-closes-the-polish-pass-is-split-out-not-dropped)
       carves it out as `vault-connections` and says in its own words
       that it is neither run nor folded.
-- [ ] The board names phase 3 NEXT and carries no stale phase-2 line.
+- [x] The board names phase 3 NEXT and carries no stale phase-2 line
+      — and the repaint also REPAIRED THE BOARD ITSELF: `The baton`,
+      `In flight` and `Working on` each appeared TWICE, because an
+      earlier repaint appended where it should have replaced. The
+      state surface was contradicting itself in three places.
 - [ ] The verification loop is green and the PUSHED head's Actions
       run is green.
 
