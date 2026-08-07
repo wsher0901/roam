@@ -2,12 +2,12 @@
 type: spec
 id: chronicle-shelf-4-roam
 title: Shelf IV — Roam — the chronicle stories
-status: open
+status: shipped
 stage: workshop
 branch: docs/chronicle-shelf-4-roam
-pr: —
+pr: #336
 opened: 2026-08-06
-shipped: —
+shipped: 2026-08-07
 ---
 
 # chronicle-shelf-4-roam — Shelf IV — Roam

@@ -10,17 +10,17 @@ Stamp: 2026-07-27 · born as the [D-059](../record/DECISIONS.md#d-059--the-chron
 re-stamped 2026-07-28 · the nine owed endings answered · work PC ·
 re-stamped 2026-08-05 · Shelf III slice D written · cloud lane.
 
-CENSUS + 57 WRITTEN STORIES. As of 2026-08-07, 57 of the 66 stories
+CENSUS + 66 WRITTEN STORIES. As of 2026-08-07, 66 of the 66 stories
 exist — the three-story pilot
 ([D-076](../record/DECISIONS.md#d-076--phase-2-opens-with-a-three-story-pilot)),
 Shelf III slice D (8), and the seven-lane fleet under
 [D-078](../record/DECISIONS.md#d-078--the-55-re-ruled-on-the-cold-number)
-landing shelf by shelf — and their rows link to them; the other 9
-remain PROPOSALS. A
+landing shelf by shelf — and their rows link to them; NONE REMAIN
+PROPOSALS — the census is complete. A
 written row's ending lives in ITS STORY, which is the single place a
 later weld rewrites; the ending column here is a summary and may lag
-by design. This index lists the
-PROPOSED story per item, produced by the [D-059](../record/DECISIONS.md#d-059--the-chronicle-layer) bench's census
+by design. This index began as
+a list of PROPOSED stories, produced by the [D-059](../record/DECISIONS.md#d-059--the-chronicle-layer) bench's census
 (three read-only teammates, one shelf each, plus the lead on the
 Roam shelf) and riding that bench's gate report for the founder's
 veto. The governing rules live in ONE home — the
@@ -123,15 +123,15 @@ The product itself — read by the lead (14 history stories).
 
 | Proposed story | Type | Span | Current ending (one sentence) | Confidence |
 | --- | --- | --- | --- | --- |
-| FOUNDATION — the product identity | product piece | #7 ([D-003](../record/DECISIONS.md#d-003--roam-v1-scope) · [D-004](../record/DECISIONS.md#d-004--planning-notation-and-rolling-wave-depth)) → #69 ([D-021](../record/DECISIONS.md#d-021--plan-synthesis-principles-re-home) · [D-022](../record/DECISIONS.md#d-022--version-ladder-and-lifespan-split)) → #85 ([D-025](../record/DECISIONS.md#d-025--foundation-v4-principles-recut)) | Holds only timeless identity — the Suggest → Plan → Edit spine, the open family set, the reliability law — with everything falsifiable moved to ROADMAP; v4 is the current form. | high |
-| ROADMAP — the plan | product piece | #11 ([D-006](../record/DECISIONS.md#d-006--v1-roadmap-cut)) → #13 → #69 ([D-022](../record/DECISIONS.md#d-022--version-ladder-and-lifespan-split)) → #87 ([D-026](../record/DECISIONS.md#d-026--roadmap-recut)) → [D-020](../record/DECISIONS.md#d-020--parallel-lanes-v2) alignment | A living version ladder with a plain-language V1, completion criteria, and per-family vetting outputs — changed only by decision, ticked only by ship. | high |
-| the traveler vocabulary | product piece | #31 ([D-011](../record/DECISIONS.md#d-011--traveler-input-vocabulary)) → #33 ([D-012](../record/DECISIONS.md#d-012--elicitation-and-inference-policy)) → #85 ([D-025](../record/DECISIONS.md#d-025--foundation-v4-principles-recut)) | 47 fields with ask tiers (at most six upfront) and provenance, a stated-only class never inferred, and a cohort-prior layer added by [D-025](../record/DECISIONS.md#d-025--foundation-v4-principles-recut). | high |
-| FACTS — the world-fact inventory | product piece | #31 ([D-010](../record/DECISIONS.md#d-010--global-coverage-via-graded-fallback-ladders)) → #33 → #35 → [D-033](../record/DECISIONS.md#d-033--telemetry-folds-into-facts) | FACTS.md enumerates the world facts, traveler parameters, and telemetry vocabulary, each fact carrying a source slot for the vetting tasks. | high |
-| the telemetry posture | product piece | #35 ([D-014](../record/DECISIONS.md#d-014--telemetry-posture)) → [D-033](../record/DECISIONS.md#d-033--telemetry-folds-into-facts) | Capture from day one under the strict privacy floor, use later — folded into FACTS as Appendix C. | high |
-| source vetting and SOURCES | product piece | #37 → the batch-1 arc ([D-019](../record/DECISIONS.md#d-019--launch-mechanics-correction) → [D-020](../record/DECISIONS.md#d-020--parallel-lanes-v2)) → #87 ([D-026](../record/DECISIONS.md#d-026--roadmap-recut)) | Weather is vetted end-to-end (Open-Meteo, Grade A); T3–T6 RELAUNCH FROM SCRATCH on the founder's 2026-07-28 word, briefed with four audit riders and gated behind phases 1–2. | high |
-| ENGINE — the brain on paper | product piece | #95 ([D-028](../record/DECISIONS.md#d-028--consolidation-recut-decision-policy-becomes-engine); [D-021](../record/DECISIONS.md#d-021--plan-synthesis-principles-re-home) lineage) | Ten pipeline stages with rules-in-slots and a numbered OPEN register — nine questions parked until V1.S3 opens. | high |
-| the app skeleton | product piece | #19 → #25 → #29 (V1.S2.T1–T3) → #167 | A runnable Next.js app on Vercel with CI gates and a Supabase Postgres, the engine isolated in engine/ by lint rule. | high |
-| the Design surface (lead-added) | product piece | #64 → #97 | DESIGN-KICKOFF governs Claude Design sessions as a no-write surface — tokens enter the repo only by paste block — living until the repo-synced design system replaces it. | medium — added at composition; no teammate claimed it |
+| **[FOUNDATION — the product identity](foundation.md)** ✍ WRITTEN | product piece | #7 ([D-003](../record/DECISIONS.md#d-003--roam-v1-scope) · [D-004](../record/DECISIONS.md#d-004--planning-notation-and-rolling-wave-depth)) → #69 ([D-021](../record/DECISIONS.md#d-021--plan-synthesis-principles-re-home) · [D-022](../record/DECISIONS.md#d-022--version-ladder-and-lifespan-split)) → #85 ([D-025](../record/DECISIONS.md#d-025--foundation-v4-principles-recut)) | Holds only timeless identity — the Suggest → Plan → Edit spine, the open family set, the reliability law — with everything falsifiable moved to ROADMAP; v4 is the current form. | high |
+| **[ROADMAP — the plan](roadmap.md)** ✍ WRITTEN | product piece | #11 ([D-006](../record/DECISIONS.md#d-006--v1-roadmap-cut)) → #13 → #69 ([D-022](../record/DECISIONS.md#d-022--version-ladder-and-lifespan-split)) → #87 ([D-026](../record/DECISIONS.md#d-026--roadmap-recut)) → [D-020](../record/DECISIONS.md#d-020--parallel-lanes-v2) alignment | A living version ladder with a plain-language V1, completion criteria, and per-family vetting outputs — changed only by decision, ticked only by ship. | high |
+| **[the traveler vocabulary](traveler-vocabulary.md)** ✍ WRITTEN | product piece | #31 ([D-011](../record/DECISIONS.md#d-011--traveler-input-vocabulary)) → #33 ([D-012](../record/DECISIONS.md#d-012--elicitation-and-inference-policy)) → #85 ([D-025](../record/DECISIONS.md#d-025--foundation-v4-principles-recut)) | 47 fields with ask tiers (at most six upfront) and provenance, a stated-only class never inferred, and a cohort-prior layer added by [D-025](../record/DECISIONS.md#d-025--foundation-v4-principles-recut). | high |
+| **[FACTS — the world-fact inventory](facts-inventory.md)** ✍ WRITTEN | product piece | #31 ([D-010](../record/DECISIONS.md#d-010--global-coverage-via-graded-fallback-ladders)) → #33 → #35 → [D-033](../record/DECISIONS.md#d-033--telemetry-folds-into-facts) | FACTS.md enumerates the world facts, traveler parameters, and telemetry vocabulary, each fact carrying a source slot for the vetting tasks. | high |
+| **[the telemetry posture](telemetry-posture.md)** ✍ WRITTEN | product piece | #35 ([D-014](../record/DECISIONS.md#d-014--telemetry-posture)) → [D-033](../record/DECISIONS.md#d-033--telemetry-folds-into-facts) | Capture from day one under the strict privacy floor, use later — folded into FACTS as Appendix C. | high |
+| **[source vetting and SOURCES](source-vetting.md)** ✍ WRITTEN | product piece | #37 → the batch-1 arc ([D-019](../record/DECISIONS.md#d-019--launch-mechanics-correction) → [D-020](../record/DECISIONS.md#d-020--parallel-lanes-v2)) → #87 ([D-026](../record/DECISIONS.md#d-026--roadmap-recut)) | Weather is vetted end-to-end (Open-Meteo, Grade A); T3–T6 RELAUNCH FROM SCRATCH on the founder's 2026-07-28 word, briefed with four audit riders and gated behind phases 1–2. | high |
+| **[ENGINE — the brain on paper](engine.md)** ✍ WRITTEN | product piece | #95 ([D-028](../record/DECISIONS.md#d-028--consolidation-recut-decision-policy-becomes-engine); [D-021](../record/DECISIONS.md#d-021--plan-synthesis-principles-re-home) lineage) | Ten pipeline stages with rules-in-slots and a numbered OPEN register — nine questions parked until V1.S3 opens. | high |
+| **[the app skeleton](app-skeleton.md)** ✍ WRITTEN | product piece | #19 → #25 → #29 (V1.S2.T1–T3) → #167 | A runnable Next.js app on Vercel with CI gates and a Supabase Postgres, the engine isolated in engine/ by lint rule. | high |
+| **[the Design surface (lead-added)](design-surface.md)** ✍ WRITTEN | product piece | #64 → #97 | DESIGN-KICKOFF governs Claude Design sessions as a no-write surface — tokens enter the repo only by paste block — living until the repo-synced design system replaces it. | medium — added at composition; no teammate claimed it |
 
 ## Founder input owed
 
