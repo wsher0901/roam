@@ -1,7 +1,8 @@
 ---
-type: memory
-id: chronicle-shelf-3c-surfaces
-updated: 2026-08-06 15:06 UTC · payload complete · cloud lane
+type: history
+slug: chronicle-shelf-3c-surfaces
+shipped: 2026-08-07 19:13 UTC
+pr: #334
 ---
 
 # chronicle-shelf-3c-surfaces — Shelf III slice C — surfaces & manuals
@@ -22,26 +23,26 @@ with `git diff --name-only origin/main -- docs/chronicle/INDEX.md`.
 The 7 unwritten stories of **Shelf III slice C — surfaces &
 manuals** — the files a reader actually opens. One of seven benches
 flying as a single fleet under
-[D-078](../record/DECISIONS.md#d-078--the-55-re-ruled-on-the-cold-number).
+[D-078](../../../../record/DECISIONS.md#d-078--the-55-re-ruled-on-the-cold-number).
 
 The contract, the roster, and the one rule that makes the fleet
 lawful — **do not write the INDEX** —
-[the spec](../record/specs/chronicle-shelf-3c-surfaces.md).
+[the spec](../../../../record/specs/chronicle-shelf-3c-surfaces.md).
 
 Delivered, all seven `system piece` (so slice D's event variant
-applies to none of them): [HOME](../chronicle/home.md) ·
-[DASHBOARD](../chronicle/dashboard.md) ·
-[IDEAS](../chronicle/ideas.md) · [ATLAS](../chronicle/atlas.md) ·
-[recall](../chronicle/recall.md) ·
-[WEB-INSTRUCTIONS](../chronicle/web-instructions.md) ·
-[SETUP](../chronicle/setup.md).
+applies to none of them): [HOME](../../../../chronicle/home.md) ·
+[DASHBOARD](../../../../chronicle/dashboard.md) ·
+[IDEAS](../../../../chronicle/ideas.md) · [ATLAS](../../../../chronicle/atlas.md) ·
+[recall](../../../../chronicle/recall.md) ·
+[WEB-INSTRUCTIONS](../../../../chronicle/web-instructions.md) ·
+[SETUP](../../../../chronicle/setup.md).
 
 ## Pending issues
 
 **THE ACK ARRIVED PAST ITS OWN WINDOW, AND A COMPLIANT LANE WOULD
 HAVE BEEN DEAD.** Canary 14:42, ack commit 14:55 — about 13
 minutes, where
-[§Canary](../skills/parallel-lanes.md#canary-handshake-both-sides)
+[§Canary](../../../../skills/parallel-lanes.md#canary-handshake-both-sides)
 fixes the cloud window at ~10 and instructs the lane to
 self-terminate when it closes. This lane did exactly that: at 14:53
 it wrote a stand-down memory and tried to push. THE PUSH WAS
@@ -55,7 +56,7 @@ but spent per-FLEET. One baton-holder acking seven benches serially
 has to do it inside a budget sized for one, so the seven-lane fleet
 is the first configuration where the constant is plausibly too
 tight — and this is a MEASUREMENT of that, not a complaint about
-this seat. Filed here rather than in [IDEAS](../IDEAS.md), which a
+this seat. Filed here rather than in [IDEAS](../../../../IDEAS.md), which a
 lane never writes.
 
 ## Left / idle
@@ -86,9 +87,9 @@ law forbids siblings sharing a file so that merges cannot collide by
 construction. Seven concurrent lanes would have been UNLAWFUL — and
 that was found by checking the planned benches for shared files
 rather than by discovering it at the first collision.
-[D-078](../record/DECISIONS.md#d-078--the-55-re-ruled-on-the-cold-number)
+[D-078](../../../../record/DECISIONS.md#d-078--the-55-re-ruled-on-the-cold-number)
 clause 3 moved that write to the weld, where
-[ship §7](../skills/ship.md#7--on-approval--the-atomic-weld)'s
+[ship §7](../../../../skills/ship.md#7--on-approval--the-atomic-weld)'s
 synthesis step already performs it.
 
 **WHAT THIS BENCH INHERITS that the pilot did not have:** a settled
@@ -122,12 +123,12 @@ its own contradiction in words:
 
 | item | the cell | the record |
 | --- | --- | --- |
-| WEB-INSTRUCTIONS | "v5 lives as the repo master" | v6 — [#240](https://github.com/wsher0901/roam/pull/240), [D-063](../record/DECISIONS.md#d-063--response-doctrine-v2-and-web-instructions-v6) |
-| IDEAS | closed entries "deleted" | [D-066](../record/DECISIONS.md#d-066--the-ideas-entry-contract) amended it — they COMPRESS AND STAY |
-| ATLAS | six diagrams, "settled" | eight SVG figures — [D-071](../record/DECISIONS.md#d-071--atlas-gains-the-enforcement-mesh) · [D-072](../record/DECISIONS.md#d-072--the-atlas-no-scroll-law) · [D-073](../record/DECISIONS.md#d-073--atlas-becomes-designed-figures) |
-| DASHBOARD | the rendered state surface | + the board diet ([D-067](../record/DECISIONS.md#d-067--the-report-skeleton-and-the-board-diet)) and single-homed renderings ([D-070](../record/DECISIONS.md#d-070--baton-renderings-single-homed)) |
-| HOME | pre-groom role list | the LAWS register split ([D-069](../record/DECISIONS.md#d-069--the-law-register-and-the-manual-groom)) + the connector ladder ([D-065](../record/DECISIONS.md#d-065--the-box-master-diet)) |
-| SETUP | "the single inventory" | the entry contract ([D-064](../record/DECISIONS.md#d-064--the-box-master-class-and-setup-entry-contract)) + the named VALUES home ([D-065](../record/DECISIONS.md#d-065--the-box-master-diet)) |
+| WEB-INSTRUCTIONS | "v5 lives as the repo master" | v6 — [#240](https://github.com/wsher0901/roam/pull/240), [D-063](../../../../record/DECISIONS.md#d-063--response-doctrine-v2-and-web-instructions-v6) |
+| IDEAS | closed entries "deleted" | [D-066](../../../../record/DECISIONS.md#d-066--the-ideas-entry-contract) amended it — they COMPRESS AND STAY |
+| ATLAS | six diagrams, "settled" | eight SVG figures — [D-071](../../../../record/DECISIONS.md#d-071--atlas-gains-the-enforcement-mesh) · [D-072](../../../../record/DECISIONS.md#d-072--the-atlas-no-scroll-law) · [D-073](../../../../record/DECISIONS.md#d-073--atlas-becomes-designed-figures) |
+| DASHBOARD | the rendered state surface | + the board diet ([D-067](../../../../record/DECISIONS.md#d-067--the-report-skeleton-and-the-board-diet)) and single-homed renderings ([D-070](../../../../record/DECISIONS.md#d-070--baton-renderings-single-homed)) |
+| HOME | pre-groom role list | the LAWS register split ([D-069](../../../../record/DECISIONS.md#d-069--the-law-register-and-the-manual-groom)) + the connector ladder ([D-065](../../../../record/DECISIONS.md#d-065--the-box-master-diet)) |
+| SETUP | "the single inventory" | the entry contract ([D-064](../../../../record/DECISIONS.md#d-064--the-box-master-class-and-setup-entry-contract)) + the named VALUES home ([D-065](../../../../record/DECISIONS.md#d-065--the-box-master-diet)) |
 | recall | shipped and standing | **true** — the one cell that survived |
 
 The pattern is worth more than any single correction: not one cell
@@ -163,7 +164,7 @@ inherited.
 **WHAT MADE IT HARD** was not the writing. It was that the endings
 could not be taken from anywhere — six of seven had to be
 reconstructed from
-[DECISIONS](../record/DECISIONS.md) and the live files, and the
+[DECISIONS](../../../../record/DECISIONS.md) and the live files, and the
 only way to know which cells were wrong was to check all of them.
 Sources opened: the seven live files, ~20 decision entries, the
 version history of one box master, the ledger frontmatter of 14
@@ -172,13 +173,13 @@ history files, and the census — read once, then set aside.
 ## Ideas surfaced
 
 - **The board carries a duplicated block.**
-  [DASHBOARD](../DASHBOARD.md) on `origin/main` renders
+  [DASHBOARD](../../../../DASHBOARD.md) on `origin/main` renders
   `## The baton`, `## In flight` and `## Working on` TWICE each —
   the second baton copy carrying the ⚠️ paid-late paragraph. This
   branch is byte-identical to main there, so it is pre-existing and
   not this fleet's doing. Left untouched: a lane never writes the
   board. Recorded inside
-  [the DASHBOARD story](../chronicle/dashboard.md) as evidence
+  [the DASHBOARD story](../../../../chronicle/dashboard.md) as evidence
   about the mechanism — a file written only by rituals has no
   author to notice a doubled repaint, and nothing in CI checks the
   board's shape.
@@ -187,12 +188,12 @@ history files, and the census — read once, then set aside.
 
 ## Where to look
 
-- [the spec](../record/specs/chronicle-shelf-3c-surfaces.md) — roster, format,
+- [the spec](../../../../record/specs/chronicle-shelf-3c-surfaces.md) — roster, format,
   and the INDEX prohibition.
-- [the format](../record/history/workshop/definition/chronicle-pilot.md)
+- [the format](../../../../record/history/workshop/definition/chronicle-pilot.md)
   — the pilot that settled it, and its honest caveats.
-- [the event bend](../record/history/workshop/definition/chronicle-shelf-1.md)
+- [the event bend](../../../../record/history/workshop/definition/chronicle-shelf-1.md)
   — slice D's variant for `event` items, and the cold calibration.
-- [D-059](../record/DECISIONS.md#d-059--the-chronicle-layer) — the
+- [D-059](../../../../record/DECISIONS.md#d-059--the-chronicle-layer) — the
   layer's six rulings.
-- [the census](../chronicle/INDEX.md) — READ-ONLY for this bench.
+- [the census](../../../../chronicle/INDEX.md) — READ-ONLY for this bench.
