@@ -1,7 +1,8 @@
 ---
-type: memory
-id: flight-reflection-audit
-updated: 2026-08-07 19:22 UTC · re-run against the full census · work PC
+type: history
+slug: flight-reflection-audit
+shipped: 2026-08-07 19:25 UTC
+pr: #339
 ---
 
 # flight-reflection-audit — did the workshop learn, or only fly?
@@ -11,7 +12,7 @@ updated: 2026-08-07 19:22 UTC · re-run against the full census · work PC
 complete, awaiting merge — 2026-08-07
 
 Step 4 of the closing campaign, under
-[D-079](../record/DECISIONS.md#d-079--the-closing-campaigns-advance-word)'s
+[D-079](../../../../record/DECISIONS.md#d-079--the-closing-campaigns-advance-word)'s
 advance word.
 
 ## What this task is
@@ -21,7 +22,7 @@ runs. This bench answers, machine-checkably, whether the workshop
 KEPT what they bought: a record exists, the chronicle rows read
 WRITTEN, and every finding traces to a closed line or a
 standing-open one. Contract:
-[the spec](../record/specs/flight-reflection-audit.md).
+[the spec](../../../../record/specs/flight-reflection-audit.md).
 
 ## Pending issues
 
@@ -145,11 +146,11 @@ changed is that its subject finally exists in full.
 
 ## Where to look
 
-- [the spec](../record/specs/flight-reflection-audit.md) — the three
+- [the spec](../../../../record/specs/flight-reflection-audit.md) — the three
   checks and the out-of-scope list.
 - `scripts/flight-audit.mjs` — the checker, with its two matching
   rules and the not-a-gate reasoning in the header.
 - [findings-closeout](findings-closeout.md) — the bench that wrote
   the `STANDING:` clauses check C reads.
-- [LAWS §Knowledge & tracking](../LAWS.md#knowledge--tracking) — the
+- [LAWS §Knowledge & tracking](../../../../LAWS.md#knowledge--tracking) — the
   enumeration law this bench broke and repaired once more.
