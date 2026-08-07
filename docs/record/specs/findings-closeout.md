@@ -2,12 +2,12 @@
 type: spec
 id: findings-closeout
 title: The findings close-out — every flight and fleet line closed or reasoned
-status: open
+status: shipped
 stage: workshop
 branch: fix/findings-closeout
-pr: —
+pr: #338
 opened: 2026-08-06
-shipped: —
+shipped: 2026-08-07
 ---
 
 # findings-closeout — closing what four flights and a fleet found
