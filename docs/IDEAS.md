@@ -307,7 +307,7 @@
 - ⏳ HOME'S FILES TABLE HAS FOUR MORE GAPS, found by the audit that
   rode lane C: `.claude/agents/reviewer.md` (defines the subagent
   no-solo-approval leans on) · `.claude/vault-seed/` (no row and no
-  mention anywhere, prose included) · `scripts/*.mjs` (all five,
+  mention anywhere, prose included) · `scripts/*.mjs` (all six,
   and `check-links.mjs` appears by filename in neither HOME nor
   SETUP while nearly every bench's Done-means invokes it) ·
   `.github/workflows/ci.yml` and `summon.yml`. Root build config is
