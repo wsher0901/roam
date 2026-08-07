@@ -4320,3 +4320,74 @@ index-shaped story unwritable.
 here; the other five rulings intact) · the 11 Shelf I stories, whose
 22 sibling links become lawful without edit ·
 [the census](../chronicle/INDEX.md) (unchanged) · this entry.
+
+## D-081 — Phase 2 closes; the polish pass is split out, not dropped
+
+In full: 2026-08-06 — [D-060](#d-060--the-three-phase-standing-order) defined PHASE 2 — THE VAULT as two halves: chronicle story lanes PLUS a connections-and-content polish pass. The stories are done — 66 of 66 census rows WRITTEN, none remaining a proposal, delivered by the three-story pilot ([D-076](#d-076--phase-2-opens-with-a-three-story-pilot)), Shelf III slice D, and the seven-lane fleet ([D-078](#d-078--the-55-re-ruled-on-the-cold-number)). THE POLISH PASS NEVER STARTED, and closing the phase on the stories alone would have made the record say the phase finished as specified, which is not true. The founder was asked rather than guessed at, and ruled: phase 2 CLOSES on the stories plus the closing campaign's patches, and the connections-and-content pass is SPLIT OUT BY DECISION as a named successor bench — never run here, never folded into a claim about coverage, and never silently dropped.
+
+**Decision:** **PHASE 2 IS CLOSED.** Its deliverables are the 66
+written stories and the closing campaign's patches
+([D-079](#d-079--the-closing-campaigns-advance-word)). **The
+connections-and-content polish pass is carved out of the phase and
+becomes its own bench: `vault-connections`** — the weave and content
+pass across the 66 written stories and the surfaces they point at.
+It is named here so it has a home that is not a memory or a board:
+this entry. It does NOT gate phase 2's close, and it does NOT gate
+phase 3; it is scope from this ruling, and its shape is re-specified
+against the 66 stories that now exist rather than inherited from a
+scoping written when none did.
+With phase 2 closed, D-060's pause lifts: **PHASE 3 — ROAM is
+NEXT** —
+[V1.S1](../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
+T3–T6 relaunched from scratch, plus
+[V1.S2.T5](../ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)
+design foundations.
+
+**Why:** the alternative readings were each worse in a specific way,
+and the difference between them is what a future reader will need.
+**Folding** the pass — declaring it absorbed because 63 stories
+re-read and re-linked the surfaces they touch — would have been a
+claim about coverage that nobody measured, buried inside a word.
+**Running** it inside the campaign would have been honest to D-060
+as written, but the pass was scoped before a single story existed:
+63 stories later, "polish" is a different question than the one
+D-060 was answering, and re-specifying it is a bench's work, not a
+closing act. **Splitting it out** keeps the change of meaning
+visible, costs nothing today, and leaves a known debt with a name
+instead of an absence. The nothing-is-silently-parked rule
+([LAWS §Workflow](../LAWS.md#workflow-non-negotiable)) makes the
+carve-out mandatory once the pass is not being run: a half-phase
+that quietly evaporates is exactly the failure that rule exists to
+prevent.
+
+**Alternatives rejected:** closing phase 2 without mentioning the
+polish pass at all — the record would read "finished as specified",
+green and false, and this entry exists because that was the default
+outcome · declaring the pass absorbed by the fleet — an unmeasured
+coverage claim · running it now — it needs re-specifying against 66
+stories that did not exist when it was scoped · holding phase 2 open
+until the pass runs — it would keep
+[V1.S1](../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
+T3–T6 and
+[V1.S2.T5](../ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)
+paused on work whose shape nobody has agreed, which is the pause
+[D-060](#d-060--the-three-phase-standing-order) justified only for
+as long as the phase had a plan.
+
+**Affects:**
+[D-060](#d-060--the-three-phase-standing-order) (its phase 2 is
+closed and its second half carved out; the three-phase order
+otherwise intact, and its pause on
+[V1.S1](../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
+T3–T6 and
+[V1.S2.T5](../ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)
+LIFTS) ·
+[D-079](#d-079--the-closing-campaigns-advance-word) (the campaign
+this closes; its advance word is spent here) ·
+[the census](../chronicle/INDEX.md) (66 of 66 WRITTEN, and its prose
+stops calling itself a list of proposals) ·
+[ROADMAP](../ROADMAP.md) (unchanged BY DESIGN — D-060 rejected
+expressing the pause structurally, so lifting it is not a recut
+either) · [DASHBOARD](../DASHBOARD.md) (the phase lines and
+Needs-you, at the next ritual repaint — the board is never
+hand-edited) · this entry.

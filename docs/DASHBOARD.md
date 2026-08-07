@@ -6,66 +6,24 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-08-06 · 14:25 UTC by ship's tail · from work PC
-CLEAN FLOOR — the fleet is ruled and unfired · needs-you 0 ·
+Painted 2026-08-07 · 19:30 UTC by the phase-2 close · from work PC
+PHASE 2 CLOSED · the census is full at 66/66 · needs-you 1 ·
 git outranks this board.
 How to read it → [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
 
-Nothing. The findings bench merged, so no ruling and no review is
-owed by you.
+**ONE THING: the batched external Web review.**
+[D-079](record/DECISIONS.md#d-079--the-closing-campaigns-advance-word)
+replaced per-bench Web review with a single post-hoc audit of
+everything the campaign merged, run on your word **"verify the
+close"** in the ops chat. TEN PRs are waiting for it: D-079 itself,
+the five chronicle welds, the findings close-out, the flight audit,
+the weld repair beneath them, and this close.
 
-THE DESK'S QUEUE, for visibility rather than action: fire the slice
-fleet —
-[D-078](record/DECISIONS.md#d-078--the-55-re-ruled-on-the-cold-number)
-made it fully specified and decision-free, six benches plus Shelf
-IV's own calibration.
-
-## The baton
-
-CONTROL TOWER — work PC, since 2026-08-05 13:24 UTC (pickup)
-([handoff §4's case table](skills/handoff.md#4--repaint-dashboard-the-board-spec--single-source),
-pickup's plain-claim row).
-Last flight: LANDED 2026-08-04 21:16 UTC via MANUAL-LAND.
-
-⚠️ **THIS LINE WAS OWED SINCE THE SITTING OPENED AND IS BEING PAID
-LATE.** The claim was made at pickup and the board still read
-"No live seat" through the whole bench, because
-[pickup §4](skills/pickup.md#4--repaint-if-stale) repaints only when
-it judges the board stale and this seat judged it fresh on the
-strength of the git state matching — which was true of the FLEET and
-false of the BATON. A seat that claims the baton has already made
-the board stale by claiming it. Filed as an inbox line; this
-paragraph is the repair.
-
-## In flight
-
-Nothing flying, no lanes, no bench open. Clean floor.
-
-**THE SLICE FLEET IS RULED AND UNFIRED** — Shelf I (11) · Shelf II
-(11) · Shelf III A (6), B (7), C (7), E (4) at the measured figure,
-plus Shelf IV (9) taking its own calibration. Lawful to run
-concurrently only because
-[D-078](record/DECISIONS.md#d-078--the-55-re-ruled-on-the-cold-number)
-clause 3 moved the INDEX write to the weld.
-
-## Working on
-
-- PHASE 2 IS RUNNING, MEASURED, AND FULLY PLANNED. 11 of 66 stories
-  written; the remaining 55 are ruled into seven benches by
-  [D-078](record/DECISIONS.md#d-078--the-55-re-ruled-on-the-cold-number),
-  which re-ruled them against a COLD number that contradicted the
-  pilot: writing dominates gathering ~60/40, not the reverse.
-- THE FINDINGS BENCH SHIPPED at 14:25. A cloud seat's git identity
-  is now set by the session-start hook rather than by a procedure no
-  lane opens — and the weld ran the synthesis step's first
-  MULTI-CASE exercise, four items in three states, with case 1
-  firing for the first time.
-
-The standing order says phase 2 opens on
-   your ruling. At this desk, whenever. (since 08-05)
-   → [D-060](record/DECISIONS.md#d-060--the-three-phase-standing-order)
+Nothing else is owed. Phase 2 is closed by
+[D-081](record/DECISIONS.md#d-081--phase-2-closes-the-polish-pass-is-split-out-not-dropped)
+and **phase 3 is NEXT** — it needs no ruling to start.
 
 ## The baton
 
@@ -74,61 +32,86 @@ CONTROL TOWER — work PC, since 2026-08-05 13:24 UTC (pickup)
 pickup's plain-claim row).
 Last flight: LANDED 2026-08-04 21:16 UTC via MANUAL-LAND.
 
-⚠️ **THIS LINE WAS OWED SINCE THE SITTING OPENED AND IS BEING PAID
-LATE.** The claim was made at pickup and the board still read
-"No live seat" through the whole bench, because
-[pickup §4](skills/pickup.md#4--repaint-if-stale) repaints only when
-it judges the board stale and this seat judged it fresh on the
-strength of the git state matching — which was true of the FLEET and
-false of the BATON. A seat that claims the baton has already made
-the board stale by claiming it. Filed as an inbox line; this
-paragraph is the repair.
-
 ## In flight
 
-Nothing flying, no lanes, no fleet at ground. Clean floor — and this
-time the board says so with no bench under construction on it.
+Nothing flying, no lanes, no bench open. Clean floor — the closing
+campaign merged everything it opened.
 
 ## Working on
 
-- THE CHARTER FIX BENCH, at the gate since 2026-08-05 — born from
-  the summon test's 🔴 on the founder's "go", and the first bench of
-  the post-phase-1 floor. Phase 2 still opens on your scope ruling,
-  behind it.
-- FLIGHT 4 OF THE TEST PROGRAM — THE FAILURE DRILL, COMPLETE. All
-  three things it put under test have answers: the RECOVERY LADDER
-  was walked and carried (plus one uncommanded failure it does not
-  predict) · the REJECTED-PUSH RULE returned a NULL RESULT — the
-  window closed unused because the word arrived ~90 seconds late,
-  not because the instrument failed · the SUMMON path fired in 13.7
-  seconds and its seat found four charter defects before landing.
+**THE CLOSING CAMPAIGN IS COMPLETE.** Ten PRs merged in sequence
+under a merge word given in advance, each gated on green CI for its
+exact head and a non-author review:
+
+- **The census filled** — Shelf II (11), slice A (6), slice C (7),
+  slice E (4), Shelf IV (9) joined the 29 already written. **66 of
+  66, none remaining a proposal**, and the index's own prose retired
+  the sentence calling itself a list of proposals.
+- **The findings close-out** — 51 inbox lines born of four flights,
+  the fleet and phase 2: 8 closed with patches, 43 left open with a
+  one-clause standing reason, zero silent.
+  [#338](https://github.com/wsher0901/roam/pull/338)
+- **The flight reflection audit** — `npm run audit:flights`, four
+  flights, 34 flight-born lines, **zero orphans**, proven red on
+  deliberate breakage before its green was believed.
+  [#339](https://github.com/wsher0901/roam/pull/339)
+- **A defect I shipped and repaired** — two benches were merged
+  WITHOUT their atomic weld, leaving live memories on main and no
+  ledger lines. `check:ledger` stayed green throughout, because a
+  memory that never becomes history creates no ledger line to be
+  missing from. [#341](https://github.com/wsher0901/roam/pull/341)
 
 The standing order
 ([D-060](record/DECISIONS.md#d-060--the-three-phase-standing-order),
 phase 1's closing condition amended by
-[D-074](record/DECISIONS.md#d-074--phase-1-closes-on-flights-3-and-4)),
+[D-074](record/DECISIONS.md#d-074--phase-1-closes-on-flights-3-and-4),
+phase 2's by
+[D-081](record/DECISIONS.md#d-081--phase-2-closes-the-polish-pass-is-split-out-not-dropped)),
 one phase per line:
 
-- PHASE 1 — settle & test: **CLOSED 2026-08-05.** The audit is
-  done, flights 1–4 flew, flight 4 welded, and the summon test
-  fired, reported and landed — the condition
+- PHASE 1 — settle & test: **CLOSED 2026-08-05.** Flights 1–4 flew,
+  flight 4 welded, the summon test fired and landed — the condition
   [D-074](record/DECISIONS.md#d-074--phase-1-closes-on-flights-3-and-4)
-  set, met as written. It closed carrying one 🔴 it found on the
-  way out; that is a fix bench, not an unmet condition.
-- PHASE 2 — the vault: OPEN since 2026-08-05. The pilot
-  ([D-076](record/DECISIONS.md#d-076--phase-2-opens-with-a-three-story-pilot))
-  wrote 3 of 66; the remaining 63 go as SHELF-SIZED BENCHES with
-  Shelf III split
-  (D-077 (on #322's branch — it reaches main when that bench merges)),
-  the first of them a calibration. The polish pass is the phase's
-  second half and has not started.
-- PHASE 3 — Roam: T3–T6 relaunched from scratch, plus
+  set, met as written.
+- PHASE 2 — the vault: **CLOSED 2026-08-07** by
+  [D-081](record/DECISIONS.md#d-081--phase-2-closes-the-polish-pass-is-split-out-not-dropped).
+  66 of 66 stories written. **The connections-and-content
+  polish pass was NOT run and NOT folded** — it is carved out as its
+  own bench, `vault-connections`, which gates neither this close nor
+  phase 3.
+- PHASE 3 — Roam: **NEXT, and unblocked.** D-060's pause on
+  [V1.S1](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
+  T3–T6 and
   [V1.S2.T5](ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)
+  LIFTS with this close. T3–T6 relaunch from scratch per the brief
+  in the answering bench's memory, audit riders included, plus
   design foundations.
 
 ## Recent
 
 **Completed**
+
+- **THE CLOSING CAMPAIGN** — nine PRs, one enumerated run of work
+  under an advance merge word: the census from 29 to 66 of 66,
+  every flight-born inbox line closed or reasoned, a machine-checked
+  flight audit, and phase 2 closed with its unrun half named rather
+  than buried. A full DRY RUN of the merge sequence, run during a
+  GitHub Actions outage, caught four bugs before any of it landed —
+  a census row keyed to a filename no lane used, two welds computed
+  against a main that no longer existed, five broken links from a
+  hand-listed path rewrite, and a census that would have read "the
+  other 0 remain PROPOSALS".
+  [#337](https://github.com/wsher0901/roam/pull/337) ·
+  [#331](https://github.com/wsher0901/roam/pull/331) ·
+  [#332](https://github.com/wsher0901/roam/pull/332) ·
+  [#334](https://github.com/wsher0901/roam/pull/334) ·
+  [#335](https://github.com/wsher0901/roam/pull/335) ·
+  [#336](https://github.com/wsher0901/roam/pull/336) ·
+  [#338](https://github.com/wsher0901/roam/pull/338) ·
+  [#339](https://github.com/wsher0901/roam/pull/339) ·
+  [#341](https://github.com/wsher0901/roam/pull/341) ·
+  [#340](https://github.com/wsher0901/roam/pull/340)
+
 
 - THE IDENTITY GAP IS CLOSED BY A HOOK, not by a procedure. A cold
   lane found it in itself, complied by luck, and named the property
@@ -422,8 +405,8 @@ one phase per line:
 ## Where we are (Roam)
 
 V1 — The demo · 5/34 █████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-S1 · Data Definition · 2/7 ██░░░░░ (T3–T6 paused → phase 3)
-S2 · Skeleton & design · 3/5 ███░░ (T5 paused → phase 3)
+S1 · Data Definition · 2/7 ██░░░░░ (T3–T6 UNPAUSED — phase 3 is next)
+S2 · Skeleton & design · 3/5 ███░░ (T5 UNPAUSED — phase 3 is next)
 S3–S8 · queued in order · 0/22
 
 ## Web + Design
@@ -443,8 +426,11 @@ S3–S8 · queued in order · 0/22
   one finding (the grounded-fleet line hiding inside case (a), with
   the exact clause to append), and round 2 returned **PASS on
   `c6c56d7`** carrying the exhaustiveness check across all eight
-  baton renderings. → next: nothing owed.
+  baton renderings. → next: **"verify the close"** — the batched post-hoc audit of the closing campaign's nine merged PRs.
 
 ## Next
 
-The desk fires the slice fleet. Nothing waits on you.
+**Phase 3 — Roam.** V1.S1 T3–T6 relaunched from scratch plus
+V1.S2.T5 design foundations, all four unpaused by
+[D-081](record/DECISIONS.md#d-081--phase-2-closes-the-polish-pass-is-split-out-not-dropped).
+`vault-connections` waits its turn and blocks nothing.
