@@ -2,7 +2,7 @@
 type: chronicle-story
 shelf: II — the lane system
 status: living
-updated: 2026-08-06 · written from the record · cloud lane
+updated: 2026-08-07 · D-082/D-083 incorporated · work PC
 ---
 
 # The lane law — the seven-clause contract every lane signs
@@ -128,6 +128,14 @@ reasoned from first principles; almost everything was paid for.
 - **[D-058](../record/DECISIONS.md#d-058--atlas-the-system-spine)
   — the law gets a spine to hang from**, as the system's mechanisms
   are indexed rather than remembered.
+
+- **[D-082](../record/DECISIONS.md#d-082--the-vehicle-chooser)
+  — seat-blindness reaches a third seat.** The lane law now binds a
+  TEAMMATE BENCH at a desk exactly as it binds a background agent
+  and a cloud session: bench-first birth, one branch and one PR, no
+  shared file with a sibling, its own memory at the four moments,
+  and the two absolute prohibitions. The law was extended by
+  reaching further, not by being relaxed.
 
 ## Where it stands
 

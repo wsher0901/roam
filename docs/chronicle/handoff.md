@@ -2,7 +2,7 @@
 type: chronicle-story
 shelf: I — the away surface
 status: living
-updated: 2026-08-06 · written · cloud lane
+updated: 2026-08-07 · D-082/D-083 incorporated · work PC
 ---
 
 # Handoff — the ground-seat leaving ritual
@@ -128,6 +128,13 @@ on this machine past §1.
   [pickup](../skills/pickup.md) cite their case instead of
   re-mandating wording. Prose agreement has no linter, which is
   precisely why four copies had already drifted.
+
+- **[D-083](../record/DECISIONS.md#d-083--the-external-blocker-rule)
+  — the board spec gains a banner slot.** §4's painted line now has
+  an optional line 2 carrying the external-blocker banner, worded
+  identically to the report's. The board and the report say the
+  same sentence deliberately, so a founder arriving at either sees
+  the same one fact.
 
 ## Where it stands
 

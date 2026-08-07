@@ -2,12 +2,12 @@
 type: spec
 id: chooser-and-blocker
 title: Two rulings into law — the vehicle chooser and the external-blocker rule
-status: open
+status: shipped
 stage: workshop
 branch: docs/chooser-and-blocker
-pr: —
+pr: #343
 opened: 2026-08-07
-shipped: —
+shipped: 2026-08-07
 ---
 
 # chooser-and-blocker — two rulings into law
@@ -87,15 +87,18 @@ self-authored** and takes external Web review before the word.
 
 ## Done means
 
-- [ ] Two D-entries exist, each naming which decisions it amends.
-- [ ] The four homes carry the rules; no box master is touched.
-- [ ] No LIVE RULE SURFACE still says a team never authors a
+- [x] Two D-entries exist, each naming which decisions it amends.
+- [x] The four homes carry the rules; no box master is touched.
+- [x] No LIVE RULE SURFACE still says a team never authors a
       bench. **Walked, not assumed** — the four chronicle stories
       that name D-055's boundary split two ways, and only one half
       is a defect:
       - `agent-teams.md` and `lane-vehicles.md` carry it in their
-        **CURRENT ENDING**, which is now FALSE → rewritten at this
-        bench's weld, per the ending rule.
+        **CURRENT ENDING**, which was FALSE → REWRITTEN at this
+        bench's weld, per the ending rule. The weld's synthesis
+        reached SEVEN items in all: three endings rewritten
+        (`response-doctrine.md` also read "the doctrine has EIGHT"),
+        and a spine bullet on all seven.
       - `lane-law.md` and `team-aware-leaving.md` carry it in a
         **spine bullet narrating D-055**, which stays true as of
         its date → they gain a D-082 bullet, they do not lose the
@@ -108,9 +111,9 @@ self-authored** and takes external Web review before the word.
         pointer to D-075, nor
         [D-060](../DECISIONS.md#d-060--the-three-phase-standing-order)
         to D-081).
-- [ ] The verification loop is green and the PUSHED head's Actions
+- [x] The verification loop is green and the PUSHED head's Actions
       run is green.
-- [ ] Shipped to THE GATE — **not merged.** Tower-authored, so the
+- [x] Shipped to THE GATE — **not merged.** Tower-authored, so the
       external Web review precedes the founder's word.
 
 ## Notes for whoever resumes this bench

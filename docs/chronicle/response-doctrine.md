@@ -2,12 +2,12 @@
 type: chronicle-story
 shelf: III — the information system
 status: living
-updated: 2026-08-06 · written · cloud lane
+updated: 2026-08-07 · the chooser recut · work PC
 ---
 
 # The response doctrine — one standard for every surface that speaks to the founder
 
-> **CURRENT ENDING (2026-08-06).** How every surface speaks to the
+> **CURRENT ENDING (2026-08-07).** How every surface speaks to the
 > founder is ONE standard with ONE home,
 > [HOME §Response doctrine](../HOME.md#response-doctrine); every
 > ritual and charter REFERENCES it and none copies it. **The census
@@ -15,7 +15,10 @@ updated: 2026-08-06 · written · cloud lane
 > two full revisions.** It reads "settled: one home in HOME, every
 > ritual referencing it and none copying it", citing
 > [D-052](../record/DECISIONS.md#d-052--response-doctrine) alone —
-> which was FIVE clauses. At HEAD the doctrine has EIGHT.
+> which was FIVE clauses. At HEAD the doctrine has NINE — the
+> ninth added 2026-08-07 ([D-083](../record/DECISIONS.md#d-083--the-external-blocker-rule)):
+> an external blocker LEADS the report, above the verdict slot,
+> repeated every turn until it clears.
 > [D-063](../record/DECISIONS.md#d-063--response-doctrine-v2-and-web-instructions-v6)
 > took it to v2, seven rules led by a new first rule that
 > reorganizes every other — TWO CHANNELS: sentences for the founder,
@@ -106,6 +109,14 @@ reach.
   instruction of its own — the only doctrine clause promoted to the
   always-loaded file, and it POINTS at HOME rule 8 rather than
   restating the five slots.
+
+- **[D-083](../record/DECISIONS.md#d-083--the-external-blocker-rule)
+  — rule 9, the external blocker.** When progress is blocked by
+  something outside the workshop's control, one fixed line LEADS
+  the report, above the verdict slot, and repeats every turn until
+  cleared. Written from a failure the doctrine's other eight rules
+  permitted: during a GitHub Actions outage the reports were
+  accurate and buried the blocker in paragraph four.
 
 ## Where it stands
 

@@ -2,7 +2,7 @@
 type: chronicle-story
 shelf: III — the information system
 status: living
-updated: 2026-08-06 · written · cloud lane
+updated: 2026-08-07 · D-082/D-083 incorporated · work PC
 ---
 
 # DASHBOARD — the board
@@ -105,6 +105,13 @@ authoritative files in the repo.
   writer; the cause vocabulary is fixed (AUTO-LAND · MANUAL-LAND ·
   DESK TAKEOVER); and the fire-time and MODE P lines are corrected
   in the move.
+
+- **[D-083](../record/DECISIONS.md#d-083--the-external-blocker-rule)
+  — the board may carry a banner, and only this one.** The diet
+  that cut the board to state and acts admits one addition: an
+  external-blocker line above the glance, present only while
+  something outside the workshop's control is blocking, and dropped
+  the moment it clears.
 
 ## Where it stands
 
