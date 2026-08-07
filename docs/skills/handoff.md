@@ -170,8 +170,20 @@ clock, never typed:
 
 ```text
 Painted <date> · <time> by <ritual> · from <seat>
+🔴 STOPPED — EXTERNAL: <what> · since <t> · <founder's one act, or "nothing — waiting">
 <flight/seat one-liner> · needs-you <N> · git outranks this board
 ```
+
+THE BANNER SLOT is line 2 and is OMITTED ENTIRELY when nothing
+outside the workshop's control is blocking. When something is —
+a platform outage, API degradation, arbiter silence — it is
+present, worded exactly as
+[HOME §Response doctrine](../HOME.md#response-doctrine) rule 9
+fixes it, and it stays through every repaint until the blocker
+clears ([D-083](../record/DECISIONS.md#d-083--the-external-blocker-rule)).
+The same banner leads every turn-end report meanwhile; the board
+and the report say the same words deliberately, so a founder
+arriving at either sees the same one sentence.
 
 Sections, in this order:
 

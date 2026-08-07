@@ -89,7 +89,25 @@ self-authored** and takes external Web review before the word.
 
 - [ ] Two D-entries exist, each naming which decisions it amends.
 - [ ] The four homes carry the rules; no box master is touched.
-- [ ] No file still says a team never authors a bench.
+- [ ] No LIVE RULE SURFACE still says a team never authors a
+      bench. **Walked, not assumed** — the four chronicle stories
+      that name D-055's boundary split two ways, and only one half
+      is a defect:
+      - `agent-teams.md` and `lane-vehicles.md` carry it in their
+        **CURRENT ENDING**, which is now FALSE → rewritten at this
+        bench's weld, per the ending rule.
+      - `lane-law.md` and `team-aware-leaving.md` carry it in a
+        **spine bullet narrating D-055**, which stays true as of
+        its date → they gain a D-082 bullet, they do not lose the
+        D-055 one.
+      - `record/specs/agent-teams.md` is a SHIPPED spec — frozen
+        contract, never edited.
+      - [D-055](../DECISIONS.md#d-055--agent-teams-the-boundary)
+        itself is NOT edited: amendments accrete forward here
+        ([D-051](../DECISIONS.md#d-051--self-seat-birth) carries no
+        pointer to D-075, nor
+        [D-060](../DECISIONS.md#d-060--the-three-phase-standing-order)
+        to D-081).
 - [ ] The verification loop is green and the PUSHED head's Actions
       run is green.
 - [ ] Shipped to THE GATE — **not merged.** Tower-authored, so the

@@ -1111,8 +1111,28 @@ Rituals and charters REFERENCE this section; none copies it.
    a retelling. PUSH FIRST, REPORT SECOND: beyond the founder's
    acts and off-origin content, a report may contain nothing that
    is not already on origin.
+9. THE EXTERNAL BLOCKER LEADS — when progress is blocked by
+   something OUTSIDE THE WORKSHOP'S CONTROL (a platform outage,
+   API degradation, arbiter silence), the report's FIRST line,
+   above the verdict slot, is:
+
+   ```text
+   🔴 STOPPED — EXTERNAL: <what> · since <t> · <the one thing the
+   founder can do, or "nothing — waiting">
+   ```
+
+   It REPEATS EVERY TURN until the blocker clears, because a
+   blocker announced once and then dropped reads as cleared; and
+   the board's glance line carries the same banner at the next
+   repaint ([handoff §4](skills/handoff.md#4--repaint-dashboard-the-board-spec--single-source)).
+   BURYING AN EXTERNAL BLOCKER IN PROSE IS A REPORT DEFECT,
+   however accurate the prose — this is the one state where more
+   work cannot help, so a format that lets it sink is optimising
+   for the writer's momentum over the reader's decision.
 
 Sources:
+[D-083](record/DECISIONS.md#d-083--the-external-blocker-rule)
+(rule 9 — the external-blocker rule)
 [D-067](record/DECISIONS.md#d-067--the-report-skeleton-and-the-board-diet)
 (v2 + rule 8 — the report skeleton and the board diet)
 [D-063](record/DECISIONS.md#d-063--response-doctrine-v2-and-web-instructions-v6)
@@ -1182,11 +1202,23 @@ Sources:
 
 ## Agent teams
 
-THE BOUNDARY, and it is the whole of this section: **agent teams
-are for EXPLORATION AND REVIEW at a ground seat. LANES REMAIN THE
-AUTHORSHIP MECHANISM.** A team never authors a bench, never
-merges, and never runs a ritual
-([D-055](record/DECISIONS.md#d-055--agent-teams-the-boundary)).
+THE BOUNDARY, RECUT 2026-08-07: **an agent team at a ground seat
+is the DEFAULT vehicle for parallel work, and a teammate MAY
+author a bench** — its own branch, under unrelaxed lane law
+([D-082](record/DECISIONS.md#d-082--the-vehicle-chooser), which
+amends [D-055](record/DECISIONS.md#d-055--agent-teams-the-boundary)).
+Cloud lanes are reached for on a NAMED CONDITION; the table is
+single-homed at
+[parallel-lanes §The vehicle chooser](skills/parallel-lanes.md#the-vehicle-chooser)
+and this section does not restate it.
+
+**What did NOT move:** a team still never merges and never runs a
+ritual, and both of
+[D-055](record/DECISIONS.md#d-055--agent-teams-the-boundary)'s
+risks stand exactly as written below. The recut is about
+AUTHORSHIP, not about supervision — D-055's reasoning that teams
+share one working tree and have no PR isolation is answered by
+giving each teammate its own bench, not by waiving anything.
 
 What a team IS, in one line: several full Claude Code sessions —
 a fixed lead plus teammates, each with its own context window —
