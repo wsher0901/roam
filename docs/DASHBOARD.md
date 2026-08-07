@@ -6,24 +6,21 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-08-07 · 19:30 UTC by the phase-2 close · from work PC
-PHASE 2 CLOSED · the census is full at 66/66 · needs-you 1 ·
+Painted 2026-08-07 · 19:38 UTC by ship's tail · from work PC
+PHASE 2 CLOSED AND VERIFIED · the census is full at 66/66 ·
+needs-you 0 ·
 git outranks this board.
 How to read it → [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
 
-**ONE THING: the batched external Web review.**
-[D-079](record/DECISIONS.md#d-079--the-closing-campaigns-advance-word)
-replaced per-bench Web review with a single post-hoc audit of
-everything the campaign merged, run on your word **"verify the
-close"** in the ops chat. TEN PRs are waiting for it: D-079 itself,
-the five chronicle welds, the findings close-out, the flight audit,
-the weld repair beneath them, and this close.
+**Nothing.** The batched external Web review is in and **THE CLOSE
+STANDS** — audited on an independent clone, so the numbers were
+re-derived rather than re-read from this repo's own claims.
 
-Nothing else is owed. Phase 2 is closed by
+Phase 2 is closed by
 [D-081](record/DECISIONS.md#d-081--phase-2-closes-the-polish-pass-is-split-out-not-dropped)
-and **phase 3 is NEXT** — it needs no ruling to start.
+and **PHASE 3 NEEDS NO RULING TO START.**
 
 ## The baton
 
@@ -426,7 +423,18 @@ S3–S8 · queued in order · 0/22
   one finding (the grounded-fleet line hiding inside case (a), with
   the exact clause to append), and round 2 returned **PASS on
   `c6c56d7`** carrying the exhaustiveness check across all eight
-  baton renderings. → next: **"verify the close"** — the batched post-hoc audit of the closing campaign's nine merged PRs.
+  baton renderings. On 2026-08-07 it ran **"verify the close"**, the batched post-hoc
+  audit D-079 substituted for per-bench review, and returned **THE
+  CLOSE STANDS** on an independent clone: census 66/66 with zero
+  proposals, gates 6,871 links / 0 broken and 135 ↔ 135, the merge
+  order as the dry run proved it, the closing weld green with
+  EXECUTED STEPS, **all three master fences untouched across the
+  whole campaign**, the nine routed patches verified in place in
+  [ship](skills/ship.md), [LAWS](LAWS.md),
+  [parallel-lanes](skills/parallel-lanes.md) and [SETUP](SETUP.md),
+  the enumeration law minted, 8 closures and 43 standing reasons
+  with zero silent drops, the flight audit's zero-orphans confirmed,
+  and D-079 / D-080 / D-081 sound. → next: nothing owed.
 
 ## Next
 
