@@ -2,12 +2,12 @@
 type: spec
 id: flight-reflection-audit
 title: The flight reflection audit — did the workshop learn, or only fly?
-status: open
+status: shipped
 stage: workshop
 branch: docs/flight-reflection-audit
-pr: —
+pr: #339
 opened: 2026-08-06
-shipped: —
+shipped: 2026-08-07
 ---
 
 # flight-reflection-audit — did the workshop learn, or only fly?

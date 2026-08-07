@@ -1,7 +1,8 @@
 ---
-type: memory
-id: findings-closeout
-updated: 2026-08-06 18:40 UTC · payload complete · work PC
+type: history
+slug: findings-closeout
+shipped: 2026-08-07 19:25 UTC
+pr: #338
 ---
 
 # findings-closeout — closing what four flights and a fleet found
@@ -18,7 +19,7 @@ on the exact head plus a non-author review clean or repaired.
 Every OPEN inbox line born of the four flights, the seven-lane fleet
 and phase 2 either CLOSES with its patch, or STAYS OPEN carrying a
 one-clause standing reason. The contract and the placement table:
-[the spec](../record/specs/findings-closeout.md).
+[the spec](../../../../record/specs/findings-closeout.md).
 
 ## Pending issues
 
@@ -54,15 +55,15 @@ forbids editing a box master's fenced text, and several lines route
 there — so every one of those STAYS OPEN naming the fence as its
 reason rather than being forced. The lane stand-down duty is the
 clearest case: its natural home reads like the
-[LANE-WORKER](../LANE-WORKER.md) master, and it went to
-[§Wake-lock](../skills/parallel-lanes.md#wake-lock--parking)
+[LANE-WORKER](../../../../LANE-WORKER.md) master, and it went to
+[§Wake-lock](../../../../skills/parallel-lanes.md#wake-lock--parking)
 instead, where it takes effect with no re-save and cannot fail
 silently.
 
 **ONE ROUTING CORRECTION, MADE RATHER THAN FOLLOWED.** The mandate
 placed resurrection-by-surviving-home in LAWS. The resurrection
-rule does not live in LAWS — [land](../skills/land.md) cites
-[§Cloud spawn](../skills/parallel-lanes.md#cloud-spawn--route-ladder)
+rule does not live in LAWS — [land](../../../../skills/land.md) cites
+[§Cloud spawn](../../../../skills/parallel-lanes.md#cloud-spawn--route-ladder)
 as its source, and that is where the rule's text actually is. The
 mandate's own words are "placed per routing", so routing won. Stated
 here because a silent redirection of a founder's instruction is the
@@ -70,7 +71,7 @@ thing that should never be silent.
 
 **AND THE ENUMERATION LAW WAS PROVEN BY BREAKING IT, TWICE, WHILE
 WRITING IT.** The law now in
-[LAWS §Knowledge & tracking](../LAWS.md#knowledge--tracking) says a
+[LAWS §Knowledge & tracking](../../../../LAWS.md#knowledge--tracking) says a
 case table's author walks the real inputs from their source, and
 that A SUBSTRING OF A RENDERING IS NOT A CASE. Writing it:
 
@@ -89,13 +90,13 @@ applied to a file rather than a rule.
 
 ## Where to look
 
-- [the spec](../record/specs/findings-closeout.md) — the placement
+- [the spec](../../../../record/specs/findings-closeout.md) — the placement
   table and the campaign's three STOPs.
-- [IDEAS](../IDEAS.md) — 8 lines in CLOSED carrying their homes; 43
+- [IDEAS](../../../../IDEAS.md) — 8 lines in CLOSED carrying their homes; 43
   open lines carrying `STANDING:` clauses.
-- [LAWS §Knowledge & tracking](../LAWS.md#knowledge--tracking) — the
+- [LAWS §Knowledge & tracking](../../../../LAWS.md#knowledge--tracking) — the
   enumeration law, beside the sweep law it extends.
-- [ship §6](../skills/ship.md#6--the-gate) ·
-  [§Wake-lock](../skills/parallel-lanes.md#wake-lock--parking) ·
-  [SETUP §cloud accounts](../SETUP.md#once-and-done--cloud-accounts)
+- [ship §6](../../../../skills/ship.md#6--the-gate) ·
+  [§Wake-lock](../../../../skills/parallel-lanes.md#wake-lock--parking) ·
+  [SETUP §cloud accounts](../../../../SETUP.md#once-and-done--cloud-accounts)
   — the other homes that received patches.
