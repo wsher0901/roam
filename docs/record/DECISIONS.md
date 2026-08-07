@@ -4391,3 +4391,122 @@ expressing the pause structurally, so lifting it is not a recut
 either) · [DASHBOARD](../DASHBOARD.md) (the phase lines and
 Needs-you, at the next ritual repaint — the board is never
 hand-edited) · this entry.
+
+## D-082 — The vehicle chooser
+
+In full: 2026-08-07 — THE VEHICLE CHOOSER, ruled by the founder in the Web ops chat: for parallel work the seat TRIAGES BY RULE rather than by mood. With the founder at a desk, AN AGENT TEAM IS THE DEFAULT — up to four teammates, each on its own bench, with the lane laws unrelaxed. Cloud lanes are reached for only when a NAMED CONDITION holds: more than four disjoint benches · a cold seat is required · the work is unattended or the founder is leaving (liftoff) · or the founder names cloud. EVERY TRIAGE STATES WHICH CONDITION FIRED, so the choice is auditable after the fact rather than defensible only in the moment. Any standing no-agents instruction is retired.
+
+**Decision:** parallel work is triaged by the table below, which
+lives once in
+[parallel-lanes §The vehicle chooser](../skills/parallel-lanes.md#the-vehicle-chooser)
+and is pointed at from everywhere else:
+
+| The seat's situation | Vehicle |
+|---|---|
+| Founder at a desk, work splits across benches | **AGENT TEAM — the default.** ≤4 teammates, one bench each, lane laws unrelaxed |
+| More than four disjoint benches | cloud lanes |
+| A cold seat is required (the work must not see this context) | cloud lanes |
+| Unattended work, or the founder is leaving | cloud lanes, via [liftoff](../skills/liftoff.md) |
+| The founder names cloud | cloud lanes |
+
+**A triage that does not name its condition is incomplete.** The
+default needs no condition; every departure from it does.
+
+**Why:** the vehicle was being chosen by habit, and the habit was
+cloud. The closing campaign is the evidence: seven chronicle
+benches went to cloud lanes with the founder AT THE DESK the whole
+time, which cost seven cap runs, two lanes killed by a late ack,
+and a canary window that had to be reasoned about twice — none of
+which a desk-side team would have encountered at all. The cloud's
+real advantages are COLDNESS and UNATTENDED SURVIVAL; neither was
+needed that day. Naming the conditions makes the expensive vehicle
+opt-in and the cheap one automatic, which is the correct default
+for a solo builder who is usually present.
+
+**Alternatives rejected:** leaving the choice to judgement — that
+is the status quo, and it produced seven lanes for work a team
+could hold · a hard cap forbidding cloud lanes at a desk — the
+cold-seat and >4-bench cases are real and the ban would have to be
+broken · keeping teams read-only and adding a "prefer fewer lanes"
+preference — a preference is not a rule, and
+[D-055](#d-055--agent-teams-the-boundary)'s bar on authorship is
+what forced the lanes in the first place.
+
+**AMENDS TWO ENTRIES, and the amendments are consequences of the
+ruling rather than choices made here:**
+
+- [D-055](#d-055--agent-teams-the-boundary) said **a team never
+  authors a bench**. It now may: a teammate authors on its OWN
+  branch under unrelaxed lane law. **Both of D-055's risks stand
+  unchanged** — a team is SINGLE-SITTING-ONLY, and a
+  teammate-authored diff is SELF-AUTHORED and takes external Web
+  review before the founder's word.
+- [D-045](#d-045--hands-doctrine)'s litmus said **many benches =
+  lanes**. It now reads: many benches AT A DESK = a team of ≤4;
+  lanes when a chooser condition fires. The rest of the hands
+  doctrine — solo for sequential work, subagents for read-only
+  research — is untouched.
+
+**Affects:**
+[parallel-lanes §The vehicle chooser](../skills/parallel-lanes.md#the-vehicle-chooser)
+(new — the table's one home; §Vehicles' "NOT a lane vehicle" line
+is replaced by the chooser's terms) ·
+[liftoff §2](../skills/liftoff.md#2--triage-every-open-item) and
+[§3](../skills/liftoff.md#3--bench-first-birth) (one pointer line
+each) ·
+[HOME §Agent teams](../HOME.md#agent-teams) (its boundary
+sentence, reconciled) ·
+[D-055](#d-055--agent-teams-the-boundary) ·
+[D-045](#d-045--hands-doctrine) ·
+[LAWS §Workflow](../LAWS.md#workflow-non-negotiable) (the chooser
+law, which already routes mid-session parallel work to a LOCAL
+lane — the chooser refines what "local" means and does not
+contradict it) · this entry.
+
+## D-083 — The external-blocker rule
+
+In full: 2026-08-07 — THE EXTERNAL-BLOCKER RULE, ruled by the founder in the Web ops chat after a GitHub Actions major outage stalled the closing campaign for roughly ninety minutes: when a seat determines progress is blocked by something OUTSIDE THE WORKSHOP'S CONTROL — a platform outage, API degradation, arbiter silence — every turn-end report LEADS with one unmissable line, repeated every turn until cleared, and the board's glance line carries the same banner at the next repaint. BURYING AN EXTERNAL BLOCKER IN PROSE IS A REPORT DEFECT, not a style preference.
+
+**Decision:** the line is fixed in form so it cannot be softened
+by whoever writes it:
+
+```text
+🔴 STOPPED — EXTERNAL: <what> · since <t> · <the one thing the
+founder can do, or "nothing — waiting">
+```
+
+It is the FIRST thing in the report, above the verdict slot, and
+it repeats EVERY TURN until the blocker clears. The board's glance
+line carries the same banner at the next repaint. A report that
+mentions the blocker only in prose is DEFECTIVE, however accurate
+the prose.
+
+**Why:** on 2026-08-06 the arbiter went silent for about ninety
+minutes and the reports said so — in paragraph four, under a
+heading about what had been achieved. Everything stated was true
+and the one fact that governed what the founder could do was
+architecturally invisible: a reader skimming saw progress. The
+rule exists because AN EXTERNAL BLOCKER IS THE ONE STATE WHERE
+MORE WORK CANNOT HELP, and a report format that lets it sink is
+optimising for the writer's sense of momentum over the reader's
+decision. Repeating it every turn is deliberate: a blocker
+announced once and then dropped reads as cleared.
+
+**Alternatives rejected:** a glyph in the existing verdict slot —
+🔴 already means "blocked" generally, and the distinction that
+matters is whether the founder or the seat can act · one
+announcement, not repeated — silence after an announcement is
+indistinguishable from resolution · leaving it to rule 7's
+"every 🔴 names the fix" — that rule is satisfied by a sentence
+anywhere in the report, which is exactly the failure observed.
+
+**Affects:**
+[HOME §Response doctrine](../HOME.md#response-doctrine) (gains
+RULE 9, and its Sources line gains this entry — the doctrine's one
+home; every ritual and charter references it) ·
+[handoff §4](../skills/handoff.md#4--repaint-dashboard-the-board-spec--single-source)
+(the glance-line spec gains the banner slot, so every ritual that
+renders by pointing there inherits it) ·
+[LAWS §Workflow](../LAWS.md#workflow-non-negotiable)
+(nothing-is-silently-parked, whose reporting counterpart this is —
+cited, unchanged) · this entry.

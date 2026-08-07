@@ -27,6 +27,13 @@ Sources:
 
 ## 2 · Triage every open item
 The current task, every lane just parked, every queued [P] task.
+
+VEHICLE FIRST, AND NAME THE CONDITION — liftoff is itself one of
+the chooser's cloud conditions (the founder is leaving), so it
+fires by definition here; state that in the triage line, per
+[parallel-lanes §The vehicle chooser](parallel-lanes.md#the-vehicle-chooser)
+([D-082](../record/DECISIONS.md#d-082--the-vehicle-chooser)).
+
 First the HARD DISQUALIFIERS — any one keeps it on the ground:
 
 - secrets/.env exposure
@@ -64,8 +71,16 @@ Every triaged item not yet birthed gets the full birth — held items
 need a memory to hold their status too: branch · spec if discussed
 · memory stub · draft PR · verified on origin.
 
+THE BIRTH IS IDENTICAL WHATEVER FLIES IT. A teammate bench born at
+a desk under
+[§The vehicle chooser](parallel-lanes.md#the-vehicle-chooser) gets
+this same birth, unrelaxed — seat-invariance means the artifacts
+must be indistinguishable by seat
+([D-082](../record/DECISIONS.md#d-082--the-vehicle-chooser)).
+
 Sources:
 [parallel-lanes](parallel-lanes.md)
+[parallel-lanes §The vehicle chooser](parallel-lanes.md#the-vehicle-chooser)
 
 ## 4 · Spawn
 Dispatch each eligible lane — fresh births and respawns alike —

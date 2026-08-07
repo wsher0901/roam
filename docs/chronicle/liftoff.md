@@ -2,7 +2,7 @@
 type: chronicle-story
 shelf: I — the away surface
 status: living
-updated: 2026-08-06 · written · cloud lane
+updated: 2026-08-07 · D-082/D-083 incorporated · work PC
 ---
 
 # Liftoff — hand the workshop to the cloud
@@ -120,6 +120,12 @@ law survives unamended.
   EVERY baton rendering in
   [handoff §4](../skills/handoff.md#4--repaint-dashboard-the-board-spec--single-source)'s
   case table, and liftoff cites its case instead of restating it.
+
+- **[D-082](../record/DECISIONS.md#d-082--the-vehicle-chooser)
+  — the triage names its vehicle.** Liftoff is itself one of the
+  chooser's cloud conditions (the founder is leaving), so it fires
+  by definition; §2 now says so, which makes the ritual's choice
+  auditable afterwards instead of merely correct.
 
 ## Where it stands
 

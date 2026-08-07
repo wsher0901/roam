@@ -2,16 +2,22 @@
 type: chronicle-story
 shelf: II — the lane system
 status: living
-updated: 2026-08-06 · the last uncovered road re-derived as closed · cloud lane
+updated: 2026-08-07 · the chooser recut · work PC
 ---
 
 # Agent teams — the boundary drawn before the first team existed
 
-> **CURRENT ENDING (2026-08-06).** The boundary is one sentence with
+> **CURRENT ENDING (2026-08-07).** The boundary is one sentence with
 > its reasons written out at
-> [HOME §Agent teams](../HOME.md#agent-teams): **teams are for
-> EXPLORATION AND REVIEW at a ground seat; LANES REMAIN THE
-> AUTHORSHIP MECHANISM.** Two risks are law — a team is
+> [HOME §Agent teams](../HOME.md#agent-teams), and it was RECUT on
+> 2026-08-07: **an agent team at a ground seat is the DEFAULT
+> vehicle for parallel work, and a teammate MAY author a bench** —
+> its own branch, under unrelaxed lane law
+> ([D-082](../record/DECISIONS.md#d-082--the-vehicle-chooser)). The
+> previous boundary said the opposite, that lanes remain the
+> authorship mechanism; what changed is not the caution but the
+> answer to it — each teammate now gets the isolation D-055 said
+> teams lacked, rather than being kept away from authorship. Two risks are law — a team is
 > single-sitting-only, and a teammate-authored diff counts as
 > self-authored under no-solo-approval. Both are now ENFORCED
 > rather than merely stated: handoff captures a live team's
@@ -111,6 +117,16 @@ afterwards.
   PARTLY CLOSED rather than claiming a fix that did not exist,
   which is exactly what made the second step necessary and
   reviewable.
+
+- **[D-082](../record/DECISIONS.md#d-082--the-vehicle-chooser)
+  — the boundary is RECUT, and a teammate may author a bench.**
+  Parallel work at a desk now defaults to a team of ≤4, each
+  teammate on its OWN bench under unrelaxed lane law; cloud lanes
+  need a named condition. The recut ANSWERS D-055's reasoning
+  rather than waiving it — the isolation a team was said to lack is
+  supplied by giving each teammate a bench. **Both risks survive
+  verbatim:** single-sitting-only, and a teammate-authored diff is
+  self-authored under no-solo-approval.
 
 ## Where it stands
 

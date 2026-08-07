@@ -269,6 +269,43 @@ session expired — respawn per
 [§Respawn](#respawn-on-an-existing-bench-liftoff-adopt), don't
 re-reply.
 
+## The vehicle chooser
+Parallel work is triaged BY RULE, not by mood
+([D-082](../record/DECISIONS.md#d-082--the-vehicle-chooser)). This
+table is its one home; liftoff and HOME point here.
+
+| The seat's situation | Vehicle |
+|---|---|
+| **Founder at a desk, work splits across benches** | **AGENT TEAM — the default.** ≤4 teammates, one bench each, lane laws unrelaxed |
+| More than four disjoint benches | cloud lanes |
+| A cold seat is required — the work must not see this context | cloud lanes |
+| Unattended work, or the founder is leaving | cloud lanes, via [liftoff](liftoff.md) |
+| The founder names cloud | cloud lanes |
+
+**EVERY TRIAGE STATES WHICH CONDITION FIRED.** The default needs
+no condition; every departure from it does, in the words above, so
+the choice can be audited afterwards rather than only defended in
+the moment.
+
+LANE LAW IS UNRELAXED FOR A TEAMMATE BENCH. Everything on this
+page applies: bench-first birth, one branch and one PR, never a
+shared file with a sibling, its own memory at the four moments,
+and the two absolute prohibitions — a teammate lane NEVER writes
+main, and self-terminates on a Status it does not own.
+
+TWO THINGS THE CHOOSER DOES NOT SOFTEN, both from
+[D-055](../record/DECISIONS.md#d-055--agent-teams-the-boundary):
+a team is SINGLE-SITTING-ONLY — it is finished or shut down before
+the sitting ends, because `/resume` does not restore teammates;
+and A TEAMMATE-AUTHORED DIFF IS SELF-AUTHORED, taking an external
+Web review before the founder's word, because a teammate is a full
+session pushing as the founder.
+
+Sources:
+[D-082](../record/DECISIONS.md#d-082--the-vehicle-chooser)
+[HOME §Agent teams](../HOME.md#agent-teams)
+[chooser law](../LAWS.md#workflow-non-negotiable)
+
 ## Vehicles
 - LOCAL — the mid-session default per the chooser: background agents,
   or `claude -w` worktree sessions. Worktrees share the clone's disk;
@@ -279,11 +316,12 @@ re-reply.
 - CLOUD — liftoff only, via the route ladder (§Cloud spawn); never a
   CLI spawn. Push canary first; never end a cloud session before its
   work is on origin.
-- Agent teams — NOT a lane vehicle. Exploration and review at a
-  ground seat only; lanes remain the authorship mechanism. The
-  boundary, its two risks, and the model/effort rules live in
-  [HOME §Agent teams](../HOME.md#agent-teams); this page does not
-  restate them.
+- AGENT TEAM — **the DEFAULT vehicle for parallel work with the
+  founder at a desk** (§The vehicle chooser), ≤4 teammates, one
+  bench each, lane laws unrelaxed. A ground seat only, and
+  single-sitting-only. The two risks and the model/effort rules
+  live in [HOME §Agent teams](../HOME.md#agent-teams); this page
+  does not restate them.
 - Choosing your hands — the solo · subagents · team · lanes doctrine
   lives at
   [SETUP §Models & effort](../SETUP.md#once-and-done--cloud-accounts)

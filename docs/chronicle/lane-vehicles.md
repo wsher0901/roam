@@ -2,20 +2,24 @@
 type: chronicle-story
 shelf: II — the lane system
 status: living
-updated: 2026-08-06 · written from the record · cloud lane
+updated: 2026-08-07 · the chooser recut · work PC
 ---
 
 # Lane vehicles — the two ways a lane can exist, and the one that isn't
 
-> **CURRENT ENDING (2026-08-06).** Exactly two vehicles. **LOCAL** —
+> **CURRENT ENDING (2026-08-07).** Exactly two vehicles. **LOCAL** —
 > background agents or `claude -w` worktree sessions — is the
 > mid-session default under the chooser law, with one posture
 > condition attached: during go-remote every lane must be
 > RC-visible, because a bare detached spawn cannot be seen from the
 > founder's phone. **CLOUD** — a session started through the route
 > ladder — is liftoff's vehicle only, never an ad-hoc CLI spawn.
-> Beside them sits one NAMED EXCLUSION that exists to stop a
-> recurring wrong answer: an agent team is not a lane vehicle.
+> **THE NAMED EXCLUSION IS GONE.** For a year the list carried one,
+> to stop a recurring wrong answer — *an agent team is not a lane
+> vehicle* — and on 2026-08-07 the exclusion became the DEFAULT:
+> with the founder at a desk, a team of ≤4 teammates, one bench
+> each, is the first choice, and cloud lanes are reached for only
+> on a named condition ([D-082](../record/DECISIONS.md#d-082--the-vehicle-chooser)).
 > The list has swung a full circle to get here — worktrees, then
 > cloud, then native local after cloud destroyed real work, then
 > cloud again through a different door — and what makes the current
@@ -91,6 +95,13 @@ live launch.
   ("lead Fable/Opus, at most 4 Sonnet teammates") that was both
   outdated and a one-home violation, sitting in the manual consulted
   before every dispatch. It was reduced to a pointer.
+
+- **[D-082](../record/DECISIONS.md#d-082--the-vehicle-chooser)
+  — the exclusion becomes the default.** The agent team stops being
+  the list's one NAMED EXCLUSION and becomes the first choice for
+  parallel work with the founder at a desk. The vehicles are still
+  picked by posture rather than preference; what changed is which
+  posture is the common one.
 
 ## Where it stands
 
