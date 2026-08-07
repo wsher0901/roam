@@ -199,6 +199,14 @@ Sources:
   repeats the paste at its next sitting.
   FIRING: `npm run fire:cockpit -- "<flight plan>"` — one
   daily-cap run per fire, INVISIBLE to `npm run count:runs`.
+  **THE CAP MODEL, IN ONE SENTENCE, BECAUSE THREE SEATS HAVE
+  MISCOUNTED IT:** a GitHub `lane:cloud` LABEL-SPAWN burns a routine
+  run and IS counted by `count:runs`; an API `fire:cockpit` (and the
+  summon workflow, which calls the same script) burns a routine run
+  and is NOT — the script reads GitHub-triggered runs only; and a
+  rung-1 `claude --cloud` BIRTH BURNS NO ROUTINE CAP AT ALL, because
+  it is not a routine. So the true figure is always
+  `count:runs` + every API fire this sitting, added by hand.
   VERIFY: `.env.local` contains both names (`grep -c COCKPIT_
   .env.local` → 2); the routine itself is UI-only.
   SOURCE: [D-046](record/DECISIONS.md#d-046--flight-cockpit-the-control-tower-online)
@@ -249,6 +257,22 @@ Sources:
   SOURCE: [D-049](record/DECISIONS.md#d-049--gh-second-path),
   probe-proven 2026-07-23; the corrected earlier reading is in
   [gh-second-path](record/history/workshop/mechanism/gh-second-path.md).
+
+- **THE SUMMON ONE-LINER** — the command itself, which had no
+  written home until 2026-08-06 and was composed at the desk each
+  time. From any seat on a clean `main`:
+
+  ```sh
+  git checkout -q -b ops-summon-fire main && git commit -q --allow-empty     -m "ops: summon" && git push origin HEAD:ops/summon &&     git checkout -q main && git branch -D ops-summon-fire
+  ```
+
+  One empty commit onto the reserved branch. The workflow checks out
+  `main` (never the pushed ref's script), fires, then DELETES the
+  ref — so one push is exactly one rescue. Measured 2026-08-06:
+  **push → a live cockpit in 13.7 seconds**, and unlike liftoff's
+  blind fire it returns the session URL to the firing seat in the
+  run's step summary. Story:
+  [the summon test](record/probes/summon-test.md).
 
 - **Summon workflow** — WHERE: `.github/workflows/summon.yml`
   (rung 4 of the connector ladder, LIVE). VALUES: two triggers — a

@@ -1,40 +1,5 @@
----
-type: ideas
-title: Ideas Inbox
-status: living
----
-# Ideas Inbox
-
-THE ENTRY CONTRACT
-([D-066](record/DECISIONS.md#d-066--the-ideas-entry-contract)):
-one idea per line, one line per idea — a plain sentence a tired
-reader scans, jargon translated, links short-text at the tail.
-Glyph first: ⏳ open · 🟢 developed (vehicle linked) · ⚪ declined
-(one-word why). Two sections: OPEN, newest first · CLOSED, one
-line each — the outcome ledger; closed entries compress and stay.
-A multi-part thought splits into separate lines so closure is
-per-idea. Findings and probe stories are not ideas — they live in
-the record; a line here points at them. Nothing is scope until
-triaged into [ROADMAP](ROADMAP.md) via decide.
-
 ## Open
 
-- ⏳ **NO RITUAL REPAINTS THE BOARD AT THE GATE, so every bench that
-  reaches it leaves the board claiming the founder owes nothing —
-  three times on 2026-08-05/06 alone.**
-  [ship §6](skills/ship.md#6--the-gate) renders the gate report into
-  the CONVERSATION and stops; the board is next touched by §8's
-  tail, which runs only after the merge. The window between them is
-  exactly when the founder owes the one act that unblocks the bench,
-  and it is precisely then that [DASHBOARD](DASHBOARD.md) says
-  Needs-you is empty. The same shape produced the other two: a seat
-  that claims the baton has already made the board stale by claiming
-  it, and a ruling given mid-sitting leaves the board asserting it
-  is still owed. THE COMMON CAUSE IS THAT RITUALS REPAINT ON ENTRY
-  AND EXIT AND THE MIDDLE OF A LONG SITTING BELONGS TO NO RITUAL.
-  Cheapest fix: give ship §6 a DASHBOARD-only micro-PR, the same
-  carve-out the tail already uses. (2026-08-06, the work PC control
-  tower) → [ship §6](skills/ship.md#6--the-gate)
 - ⏳ A BOARD CANNOT CITE A DECISION THAT IS STILL ON A BRANCH, and
   it happened TWICE on 2026-08-05. `decide` invoked inside an open
   task puts the entry on that task's PR, so between the cut and the
@@ -48,24 +13,8 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   weave rule for decisions in flight, or a board convention that
   points at the PR instead. (2026-08-05, the work PC control tower)
   → [LAWS §Knowledge & tracking](LAWS.md#knowledge--tracking)
-- ⏳ **THREE BENCHES RUNNING SHIPPED A CASE-ANALYSIS HOLE, AND
-  REVIEW CAUGHT ALL THREE — THE AUTHOR CAUGHT NONE.** The charter
-  bench keyed a case on an ABSENCE, so a desk-takeover board matched
-  it; its repair keyed on a POSITIVE TOKEN, and the external review
-  found that token was a PREFIX of a longer state (MODE P's grounded
-  line); the synthesis bench then gave two cases the SAME trigger
-  with a tiebreaker defined nowhere. The shape is identical every
-  time: the cases are exhaustive over the situations the author had
-  in mind, and the hole is the situation not enumerated. THE
-  COUNTERMEASURE HAS WORKED BOTH TIMES IT WAS APPLIED and it is
-  mechanical — enumerate the real inputs FROM THEIR SOURCE (the
-  eight baton renderings out of
-  [handoff §4's table](skills/handoff.md#4--repaint-dashboard-the-board-spec--single-source);
-  the census's own row-states) and walk each one through the cases,
-  rather than reasoning about the cases in the abstract. Worth a law
-  or a [ship](skills/ship.md) step rather than three memories each
-  saying it once. (2026-08-05, the work PC control tower) →
-  [the synthesis bench's story](record/history/workshop/mechanism/ship-synthesis.md)
+  **STANDING:** the fix is a weave-rule carve-out, which is a LAW edit and a new convention — a decision this campaign is not authorized to make.
+
 - ⏳ ATLAS DOES NOT KNOW THE CHRONICLE EXISTS — [ATLAS](ATLAS.md)'s
   file-flow figure draws which ritual writes each surface and notes
   "Ship appears three times for exactly that reason". Ship now
@@ -76,6 +25,8 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   figure is its own bench under the figure law — so it is filed
   rather than absorbed. (2026-08-05, the pre-gate critic) →
   [ATLAS](ATLAS.md)
+  **STANDING:** re-rendering a hand-drawn SVG figure is its own bench under the figure law, and no wording patch reaches it.
+
 - ⏳ THE SESSION-START HOOK NEVER SYNCS A CLOUD SEAT, because it
   pulls only on `main` — `.claude/hooks/session-start.mjs` guards
   the fast-forward with `branch === "main" && !dirty`, and every
@@ -91,6 +42,8 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   branch it never asked for. Harmless while the clone is fresh, and
   SILENT when it is not. (2026-08-05, the summoned cockpit) →
   [flight 4's log](record/probes/flight-4-freeze.md)
+  **STANDING:** changing what the hook PULLS is behavior, not wording — it could fast-forward a seat out from under work in progress.
+
 - ⏳ A SEAT THAT CLAIMS THE BATON HAS ALREADY MADE THE BOARD STALE
   BY CLAIMING IT, so [pickup §4](skills/pickup.md#4--repaint-if-stale)'s
   "repaint if stale" is the wrong test for the BATON section — this
@@ -102,18 +55,8 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   plain-claim row UNCONDITIONALLY at §1, and leave §4's judgement to
   everything else. (2026-08-05, the work PC control tower) →
   [handoff §4's case table](skills/handoff.md#4--repaint-dashboard-the-board-spec--single-source)
-- ⏳ A LANE'S STAND-DOWN COMMENT SHOULD BE A DUTY, NOT A COURTESY —
-  a rejected push leaves NO server-side trace, so when a fence stops
-  a live worker the ONLY evidence that the wake-lock fired is
-  whatever that worker says before it dies. Flight 4 proved this
-  twice in one flight, in both directions, and the finding survives
-  only because the lane happened to write a PR comment at 21:17:42Z
-  after the cockpit had landed; its final commit died unpushed. Had
-  it stood down silently the record would show a clean chain of
-  accepted pushes. The lane law's self-termination clause says
-  "self-terminates after pushing what exists" and never "say what
-  stopped you". (2026-08-05, flight 4's lane) →
-  [the lane's own account](https://github.com/wsher0901/roam/pull/303#issuecomment-5184732402)
+  **STANDING:** the fix makes pickup repaint UNCONDITIONALLY at §1, which changes a ritual's behavior and spends a micro-PR every sitting.
+
 - ⏳ GITHUB'S EVENTS FEED IS NOT A COMPLETE PUSH LOG, so no ritual
   should ever treat it as a ledger — flight 4's CHECKPOINT push, the
   single most important push of that drill, has no `PushEvent` in
@@ -125,6 +68,8 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   Worth a sentence wherever a seat is told to derive push times.
   (2026-08-05, the welding desk) →
   [the drill's log](record/probes/flight-4-freeze.md)
+  **STANDING:** no ritual currently reads that feed, so there is nothing to patch until one does — kept as a warning against a future seat trusting it.
+
 - ⏳ TWO SEATS TIMING THE SAME WINDOW WILL DERIVE TWO DIFFERENT
   CLOSES, and neither is wrong — flight 4's cockpit put the close at
   21:08:52 and the lane at 21:09:32, ~40 seconds apart, because one
@@ -134,6 +79,8 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   have exited early. Whenever a window is specced, it is worth
   saying WHICH EVENT starts it. (2026-08-05, flight 4's lane) →
   [the drill's log](record/probes/flight-4-freeze.md)
+  **STANDING:** naming WHICH EVENT starts a window is a per-window design call, not one rule — it belongs to whichever bench next specs a window.
+
 - ⏳ A LANE WAITING ON A SIGNAL SHOULD POLL WITH `git ls-remote`,
   NEVER `git fetch` — `ls-remote` reads the remote's ref without
   writing anything into the local repository, so no later step can
@@ -145,6 +92,8 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   [§Wake-lock](skills/parallel-lanes.md#wake-lock--parking).
   (2026-08-05, flight 4's lane) →
   [the drill's log](record/probes/flight-4-freeze.md)
+  **STANDING:** it is already the observed practice and writing it as a rule would forbid a fetch a future lane may legitimately need.
+
 - ⏳ §CANARY DISAGREES WITH ITSELF ABOUT THE ACK TOKEN'S MIDDLE
   FIELD — its canonical block writes `airborne · <url> · <date>`
   while its baton-holder bullet writes
@@ -155,6 +104,8 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   cannot be quoted from one place without choosing which of its two
   forms to believe. (2026-08-05, flight 4's lane) →
   [§Canary](skills/parallel-lanes.md#canary-handshake-both-sides)
+  **STANDING:** the token's canonical form is copied into the LANE-WORKER master, so reconciling its two forms is a master fence edit — a STOP for this campaign.
+
 - ⏳ A CLOUD LANE'S REMOTE IS NOT A CONSTANT ACROSS FLIGHTS —
   flight 1 observed a local HTTP git proxy on `127.0.0.1`, flight 4
   observed `github.com` directly, same spawn route, a day apart. Why
@@ -162,6 +113,8 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   doctrine is written that assumes one or the other.
   (2026-08-05, flight 4's lane) →
   [the drill's log](record/probes/flight-4-freeze.md)
+  **STANDING:** nothing depends on it today; the line exists to stop a future doctrine assuming one remote.
+
 - ⏳ THE TWO API PATHS ARE NOT INTERCHANGEABLE, AND THE LADDER SAYS
   THEY ARE — [HOME's ladder](HOME.md#the-cockpits-api-paths--recovery-ladder)
   states "each API-only act runs on either path". From a
@@ -176,6 +129,8 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   that a cloud seat cannot perform. Worth splitting the dependency
   map by ACT rather than by path. (2026-08-04, flight 4's cockpit)
   → [the fence PR](https://github.com/wsher0901/roam/pull/303)
+  **STANDING:** splitting the dependency map by ACT is a redesign of the recovery ladder, and the ladder lives in HOME beside a master's rule 6 pointer.
+
 - ⏳ A FIFTEEN-MINUTE WINDOW IS STILL TOO NARROW WHEN THE COCKPIT
   IS BORN INTO IT — flight 4 widened the answerable window from
   under two minutes to fifteen and it STILL closed unused, by about
@@ -194,6 +149,8 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   worth changing is the fence's human gate.
   (2026-08-05, flight 4's cockpit · flight 4's lane) →
   [the drill's log](record/probes/flight-4-freeze.md)
+  **STANDING:** the fix is ORDERING — fire the cockpit before licensing the lane — which changes liftoff's sequence and is behavior, not wording.
+
 - ⏳ THE SELF-SEAT BATON WORDING IS LAW AND THIS FLIGHT DID NOT
   MATCH IT — [handoff §4's case table](skills/handoff.md#4--repaint-dashboard-the-board-spec--single-source)
   fixes the cockpit's seat line as `COCKPIT — live since <t>
@@ -205,19 +162,8 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   alone never sees the row. The charter's self-seat sentence could
   carry the link. (2026-08-04, flight 4's cockpit) →
   [#306](https://github.com/wsher0901/roam/pull/306)
-- ⏳ THE SUMMON ONE-LINER HAS NO WRITTEN HOME — [SETUP](SETUP.md)
-  and [HOME](HOME.md) both carry the RECIPE ("push ONE empty commit
-  to the reserved branch `ops/summon`") and
-  `.github/workflows/summon.yml` confirms the trigger, but no file
-  carries a command a founder can paste. Rung 4 is the self-rescue
-  path, reached only when everything above it has failed, so the
-  moment it is needed is the worst possible moment to be composing
-  git plumbing from prose. Either write the literal command into
-  SETUP beside the recipe, or add an npm script. Found while
-  preparing flight 4's post-landing duty, where the desk is told to
-  hand over the "exact one-liner, never improvised" and the record
-  cannot supply one. (2026-08-04, flight 4's liftoff) →
-  [SETUP §cloud accounts](SETUP.md#once-and-done--cloud-accounts)
+  **STANDING:** the repair is a link inside the cockpit charter's rule 1, which is fenced master text — a STOP.
+
 - ⏳ A SUPERSEDED SEAT HAS NO CHANNEL BUT SPEECH — it may write no
   board by [land](skills/land.md) Scenario 2's carve-out, so any
   finding it is holding at retirement can reach the founder only in
@@ -229,6 +175,8 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   push-first law against losing a finding entirely. (2026-08-04,
   flight 3's cockpit at retirement) →
   [the charter](COCKPIT-CHARTER.md)
+  **STANDING:** whether a tombstone may carry an off-origin block is a founder ruling that was filed DEFERRED and has never been made.
+
 - ⏳ RUNG 1'S BIRTH PROMPT ARRIVES UTF-8-MANGLED ON WINDOWS —
   crossing the `--cloud` argument mojibakes the text, so a cockpit
   is born reading a corrupted mandate. It cost this flight nothing
@@ -240,6 +188,8 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   one-line mandate is the part silently lost. (2026-08-04, the
   founder) →
   [liftoff §6](skills/liftoff.md#6--ledger-handoff--fire-the-cockpit)
+  **STANDING:** the fix is in the birth vehicle's encoding, and the prompt it mangles is the charter master's text — a STOP.
+
 - ⏳ `check-memory.mjs` CANNOT SEE A CODE SPAN THAT WRAPS — it
   strips backtick spans with a regex that forbids newlines inside
   the span, so a legitimately backticked placeholder broken across
@@ -250,6 +200,8 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   Distinct from the angle-bracket line below: that one is the rule
   being bluntly right, this one is the STRIP being wrong.
   (2026-08-04, flight 3's lane) → `scripts/check-memory.mjs`
+  **STANDING:** a script change with a real false-negative risk if the regex is widened carelessly — it wants its own bench with probe cases.
+
 - ⏳ LIFTOFF STAMPS THE FIRE TIME BEFORE IT FIRES — the baton line
   is painted into the board, and the board is welded, BEFORE the
   cockpit is launched, so `COCKPIT — fired <t>` names a moment
@@ -258,6 +210,8 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   measured latency has been read off it. Either paint the fire
   time at fire time or rename the field to what it is. (2026-08-04,
   flight 3's self-seat) → [liftoff](skills/liftoff.md)
+  **STANDING:** the board is welded BEFORE the fire by the ritual's own order, so honest stamping needs a second write after the fire — behavior.
+
 - ⏳ THE MID-WORK OVERLAP IS REAL BUT UNDER TWO MINUTES — flight 3
   showed a fired cockpit and a still-working lane coexisting for at
   most 1m47s, which retires flight 2's "the window closes by
@@ -265,6 +219,8 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   needs a holding bench. Worth writing into the record so the next
   reader does not re-derive it. (2026-08-04, flight 3's self-seat)
   → [D-074](record/DECISIONS.md#d-074--phase-1-closes-on-flights-3-and-4)
+  **STANDING:** a measurement kept for the next flight to widen or retire; nothing to patch.
+
 - ⏳ SPEC FRONTMATTER HAS NO GATE — flight 3's bench was born
   `status: draft`, a value outside the declared vocabulary
   (`open | shipped | superseded`) and the only such value in the
@@ -272,24 +228,8 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   so it is invisible in both directions. (2026-08-04, flight 3's
   non-author review) →
   [specs TEMPLATE](record/specs/TEMPLATE.md)
-- ⏳ THE GATE-MOMENTUM GAP — no law names which seat collects a
-  frozen or in-flight fleet's merge words; flight 2's cockpit moved
-  from "review them" to offering the weld in one breath, and only
-  the founder's plan caught it. Name the seat rule (gates travel
-  with the baton's landing plan) in the fix bench. (2026-08-04,
-  flight 2, the external review) → [ship](skills/ship.md)
-- ⏳ THE CAP MODEL, ONE SENTENCE — which births burn the routine
-  cap: label-spawns yes, `fire:cockpit` yes (invisible to
-  `count:runs`), rung-1 `--cloud` births likely not. Flight 2's
-  floor-counts were conservative guesses; write the model where
-  SETUP holds the number. (2026-08-04, the external review) →
-  [SETUP §cloud accounts](SETUP.md#once-and-done--cloud-accounts)
-- ⏳ RESURRECTION BY SURVIVING HOME — the twin sweep satisfied the
-  resurrection rule by verifying the unique commit survives in a
-  closed PR's diff, then deleting the branch. Sound, but the
-  interpretation lives only in a board note that rituals repaint;
-  write it into the rule's own home. (2026-08-04, the twin sweep +
-  the external review) → [LAWS](LAWS.md)
+  **STANDING:** a new CI check is a gate, not a wording fix, and every gate this workshop added first proved itself against deliberate breakage.
+
 - ⏳ THE VERIFICATION LOOP ASSUMES DEPENDENCIES A FRESH SEAT DOES
   NOT HAVE — a cloud container arrives with `node_modules` empty,
   so lint, format, test and build all fail on a missing package
@@ -305,6 +245,8 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   property of the cloud path rather than a run of bad luck.
   (2026-08-04, flight 2 lane B) →
   [ship §1](skills/ship.md#1--preflight)
+  **STANDING:** adding `npm ci` to ship §1 changes what every seat RUNS, and on a warm desk it is a minutes-long no-op — behavior, not wording.
+
 - ⏳ FLIGHT 4 — THE FAILURE DRILL: the connector rungs, summon, and
   the freeze checkpoint exercised together as DELIBERATE failures
   rather than hoped-for ones, so the paths that only run when
@@ -313,6 +255,8 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   ([D-074](record/DECISIONS.md#d-074--phase-1-closes-on-flights-3-and-4)).
   Not scope until triaged. (2026-08-04, the founder) →
   [parallel-lanes §Cloud spawn](skills/parallel-lanes.md#cloud-spawn--route-ladder)
+  **STANDING:** the flight flew and its findings are harvested; the line stays as the standing pointer to the drill's re-flyable apparatus.
+
 - ⏳ FLIGHT 3 — THE DESK TAKEOVER OF A LIVE COCKPIT HOLDING A
   DECISION: pickup's OTHER entry door, where the founder sits down
   at a desk while a cockpit is still flying and holding gates, so
@@ -323,15 +267,8 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   fleet was already at ground. Not scope until triaged.
   (2026-08-04, the founder) →
   [pickup §6](skills/pickup.md#6--fleet-resume-on-the-founders-answer)
-- ⏳ NOTHING REQUIRES READING A PR'S COMMENTS BEFORE ACTING ON ITS
-  BENCH — flight 2's cockpit read
-  [#280](https://github.com/wsher0901/roam/pull/280)'s metadata,
-  saw `comments: 2`, did not open them, and repeated a wrong
-  diagnosis to the founder for 25 minutes while the contradicting
-  evidence sat one call away. A PR's comments are a lane's ONLY
-  channel for what a git clone cannot show, and no gate, ritual or
-  law names them as a read. (2026-08-04, flight 2 the cockpit) →
-  [parallel-lanes](skills/parallel-lanes.md)
+  **STANDING:** flown and welded; kept as the pointer to the door's only real traffic.
+
 - ⏳ THE CANARY WINDOW IS NARROWER THAN THE OBSERVED DISPATCH
   SPREAD — the same route onto the same bench produced a session in
   ~27 minutes once and ~2 minutes the next time, so the ~10-minute
@@ -342,6 +279,8 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   dead trigger, which is a materially different repair from what a
   lost-spawn reading suggests. (2026-08-04, flight 2 lane C) →
   [§Canary](skills/parallel-lanes.md#canary-handshake-both-sides)
+  **STANDING:** the window constant is copied into the LANE-WORKER master — changing it is a fence edit.
+
 - ⏳ NOTHING CHECKS THAT A STAMP IS TRUE, ONLY THAT IT IS
   WELL-FORMED — a lane read the shell clock once on waking and
   extrapolated its later stamps from the shape of its own work,
@@ -352,6 +291,8 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   from the counts-and-bars derivation line below: this is the time
   half of the same law. (2026-08-04, flight 2 lane C) →
   [LAWS §Knowledge & tracking](LAWS.md#knowledge--tracking)
+  **STANDING:** a truth check on a stamp needs a trusted clock the repo does not have; only a gate comparing to commit time could try, and that is a bench.
+
 - ⏳ A CLOUD LANE CANNOT TELL WHICH BENCH IS ITS OWN FROM THE
   CONTRACT — the lane-worker prompt says "that PR" but a fleet
   labels several at once, and neither the prompt nor the
@@ -361,6 +302,8 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   document mentions it, so without it a fleet lane guesses and
   races its siblings. (2026-08-04, flight 2 lane A) →
   [LANE-WORKER](LANE-WORKER.md)
+  **STANDING:** the contract that would name the bench IS the LANE-WORKER master — a STOP.
+
 - ⏳ HOME'S FILES TABLE HAS FOUR MORE GAPS, found by the audit that
   rode lane C: `.claude/agents/reviewer.md` (defines the subagent
   no-solo-approval leans on) · `.claude/vault-seed/` (no row and no
@@ -371,6 +314,8 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   a NULL RESULT, not a gap — consistently absent and SETUP is its
   home. (2026-08-04, flight 2 lane C) →
   [HOME §The files](HOME.md#the-files--what-each-one-is-for)
+  **STANDING:** four table rows are a small bench of their own, and the audit that found them argued for a COVERAGE GATE rather than one more manual pass.
+
 - ⏳ A TABLE-COVERAGE GATE IS CHECKABLE WHERE THE GENERAL CASE IS
   NOT — the audit's real find was that HOME's absences are not
   scattered but cluster on ONE SIDE OF AN UNDECLARED BOUNDARY: the
@@ -381,6 +326,8 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   FAILS — `.claude/settings.json` is in SETUP twice and still
   carries a row. (2026-08-04, flight 2 lane C) →
   [HOME §The files](HOME.md#the-files--what-each-one-is-for)
+  **STANDING:** a new CI gate is a bench of its own, and one that must prove itself against deliberate breakage before it is trusted.
+
 - ⏳ MACHINE-SETUP STEP 2 NAMES TWO SEATS WHERE STEP 1 NOW NAMES
   THREE — `git config roam.machine "work PC" (or "home PC")` has no
   cloud value, so a cloud seat reaching it must invent one; flight
@@ -389,6 +336,8 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   or the seat-label vocabulary lives in one place both steps cite.
   Surfaced by the change that created it. (2026-08-04, flight 2
   lane B) → [machine-setup](skills/machine-setup.md)
+  **STANDING:** the cloud seat's `roam.machine` value has never been agreed, and inventing one here would be a new convention.
+
 - ⏳ A LANE'S PROOF THAT IT OBEYED §CANARY LIVES ONLY IN ITS PROSE —
   a lane that polls origin and matches the anchored token leaves no
   evidence but its own diary saying so; nothing mechanical
@@ -396,6 +345,8 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   as the hole [#278](https://github.com/wsher0901/roam/pull/278)
   just closed, one level up. (2026-08-04, flight 2 lane A) →
   [§Canary](skills/parallel-lanes.md#canary-handshake-both-sides)
+  **STANDING:** machine-checkable proof means a lane emitting an artifact, which is a lane-contract change and lives in the master.
+
 - ⏳ THE `pull_request.labeled` REDELIVERY IS NOT RARE — flight 2
   met two live, one within four minutes of its lane's first firing
   and one citing a five-commit-stale head SHA. Both were absorbed
@@ -413,18 +364,24 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   (2026-08-05, flight 2 lanes A and C · flight 3's lane ·
   flight 4's lane) →
   [§Wake-lock](skills/parallel-lanes.md#wake-lock--parking)
+  **STANDING:** absorbed correctly every time by the wake-lock's Status read; kept as the evidence that the backstop is load-bearing rather than theoretical.
+
 - ⏳ `check:memory` READS ANY ANGLE-BRACKETED TEXT AS AN UNRESOLVED
   PLACEHOLDER, so a memory cannot quote an email address, a git
   identity, or an XML-ish token in its natural form. The rule is
   right to be blunt, but the failure message does not say that a
   legitimate quotation is what tripped it. (2026-08-04, flight 2
   lane A) → `scripts/check-memory.mjs`
+  **STANDING:** widening the placeholder regex risks letting real placeholders through — a script bench with probe cases, not a wording patch.
+
 - ⏳ TWO OF THE TEMPLATE'S STATUS ROWS CARRY NO DATE SLOT WHILE THE
   CHECKER DEMANDS A DATE — `complete, awaiting merge` and
   `bench ready` are written in the vocabulary table without the
   `— <date>` their neighbours have, so copying the row verbatim
   goes red. A lane hit it doing exactly that. (2026-08-04, flight 2
   lane A) → [TEMPLATE](memory/TEMPLATE.md)
+  **STANDING:** the TEMPLATE's rows are copied by the LANE-WORKER master's own Status vocabulary — a fence edit.
+
 - ⏳ THE SESSION-START BRANCH SWEEP IS BLIND TO A BRANCH THAT
   CARRIES NO UPSTREAM — it filters `git branch -vv` for
   `[origin/…: gone]`, a marker git prints only when the local
@@ -438,6 +395,8 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   merge is NOT the cause and an ancestry test is not the fix — the
   sweep needs a second arm for the no-upstream case. (2026-08-04,
   the founder + pickup) → `.claude/hooks/session-start.mjs`
+  **STANDING:** widening the sweep risks deleting a branch a seat is still using — destructive behavior, and the one class that must never be guessed at.
+
 - ⏳ SHOULD §CANARY'S ACK MATCH ANCHOR ON THE WORD OR THE TOKEN —
   [§Canary](skills/parallel-lanes.md#canary-handshake-both-sides)
   fixes the test at "STARTS WITH `airborne ·`", never the bare
@@ -448,6 +407,8 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   from matching by accident. Filed DEFERRED — no ruling made.
   (2026-08-04, the founder) →
   [the probe's CANARY section](record/probes/flight-1-shakedown.md)
+  **STANDING:** filed DEFERRED by the founder with no ruling made; it is a founder call, not an omission.
+
 - ⏳ WHETHER THE FIGURE LAW REACHES HOME — [ATLAS](ATLAS.md) is
   eight designed SVG figures under
   [D-073](record/DECISIONS.md#d-073--atlas-becomes-designed-figures),
@@ -455,6 +416,8 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   diagram; whether it converts is a decide-level ruling. Filed
   DEFERRED — no ruling made. (2026-08-03, the founder) →
   [HOME](HOME.md)
+  **STANDING:** filed DEFERRED by the founder with no ruling made.
+
 - ⏳ GITHUB CANNOT RECORD THE NON-AUTHOR REVIEW — every seat
   authenticates as the one account, so `APPROVE` is refused as
   self-approval on every lane PR; the independent review can only
@@ -462,18 +425,24 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   through the platform's own mechanism. Found when the cockpit
   tried to approve flight 1. (2026-08-03, flight 1) →
   [LAWS §Workflow](LAWS.md#workflow-non-negotiable)
+  **STANDING:** a platform limit — every seat authenticates as one account, and no repo-side patch changes it.
+
 - ⏳ A memory's `updated:` stamp carries no timezone, so two seats
   writing in the same minute read four hours apart on the page —
   flight 1's ack reads `17:38` from the work PC and its canary
   `21:38 UTC` from the cloud, and a cold reader cannot order the
   file's own stamps. (2026-08-03, flight 1) →
   [TEMPLATE](memory/TEMPLATE.md)
+  **STANDING:** the TEMPLATE's stamp format is copied into the master — a fence edit.
+
 - ⏳ THE CLAIM STATUS FORM DIFFERS BETWEEN ITS TWO HOMES —
   [§Canary](skills/parallel-lanes.md#canary-handshake-both-sides)'s
   lane side and [TEMPLATE](memory/TEMPLATE.md)'s state table write
   it differently, and only the `airborne` row is machine-checked,
   so the claim row can drift between them without anything going
   red. (2026-08-03, flight 1)
+  **STANDING:** the second home IS the LANE-WORKER master — a STOP.
+
 - ⏳ ON A ROUTE-1 CLOUD LANE THE READY-FLIP IS CONSUMED BY THE
   SPAWN, so the lane's completion contract carries a step that is
   a no-op and a signal that carries no information; the staged
@@ -483,17 +452,23 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   route-1 lane has. (2026-08-03, flight 1 · 2026-08-04, flight 3's
   lane) →
   [§Cloud spawn](skills/parallel-lanes.md#cloud-spawn--route-ladder)
+  **STANDING:** the fix is api-ignition, already STAGED in SETUP and waiting on its stage rather than on a patch.
+
 - ⏳ LIFTOFF REPAINTS THE BOARD TWICE — §1's handoff paints a
   ground board and ships a micro-PR, then §6 overwrites it with the
   flight plan minutes later; the first board is never read by
   anyone and its baton line has no defined case. Found by running
   the ritual exactly at flight 1. (2026-08-03, Claude Code) →
   [liftoff §1](skills/liftoff.md#1--full-handoff-first)
+  **STANDING:** collapsing two ritual writes into one changes liftoff's sequence — behavior.
+
 - ⏳ ATLAS FIGURE GATE — a standing lint for the figure law
   (viewBox 740 · palette hexes · generic fonts · coordinate
   bounds), so the law survives re-renders mechanically.
   (2026-08-03, re-scoped from the mermaid width gate at the
   figures conversion) → [ATLAS's header law](ATLAS.md)
+  **STANDING:** a new CI lint — a bench of its own, and one that must not go green on a figure it cannot actually parse.
+
 - ⏳ The baton case table has no case for a GROUND HANDOFF — the
   ritual releases the baton, but no row says what THE BATON
   section should then read, so this sitting's close had to write
@@ -529,6 +504,8 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   never used, and the founder judges the cloud path superior if it
   works; rule only AFTER a real cloud flight proves that path.
   (2026-07-28, the founder) → [go-remote](skills/go-remote.md)
+  **STANDING:** a founder judgement explicitly reserved until a real cloud flight proves the cloud path end to end.
+
 - ⏳ Open every new decide heading with `[product]` or
   `[workshop]`, forward-only. Rule it at the next product decide.
   (2026-07-28, the founder + the external reviewer)
@@ -600,6 +577,8 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
   fault is intermittent or already gone; confirm before spending a
   bench on it. (2026-07-22, Claude Code) →
   `scripts/count-routine-runs.mjs`
+  **STANDING:** NOT REPRODUCED at the last three sittings; it stays open only so a fourth sighting has somewhere to land.
+
 - ⏳ Make verification commands run in the FOREGROUND with results
   quoted from captured output — a detached background check lost
   its exit code and aged into a false all-clear. (2026-07-19,
@@ -638,6 +617,8 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
 - ⏳ Build a reachability globe showing how far the traveller's
   max-travel-hours reaches; open question, heuristic distance
   rings versus true flight-time isochrones. (2026-06-12, Web)
+  **STANDING:** a Roam product idea, not workshop machinery — it waits on phase 3 and its own triage.
+
 - ⏳ Add `paths-ignore: docs/**` so docs-only PRs skip the full CI
   run — BLOCKED as written: branch protection requires the
   `checks` context, so ignoring `docs/**` would leave it
@@ -650,6 +631,14 @@ triaged into [ROADMAP](ROADMAP.md) via decide.
 The outcome ledger — one line each, newest first. A closed idea
 keeps its answer, never its narrative.
 
+- 🟢 The gate window no longer lies about what the founder owes — [ship §6](skills/ship.md#6--the-gate) now repaints the board before rendering the gate report, as a DASHBOARD-only micro-PR, the same carve-out the tail already uses. Seen three times in two days before it was written down.
+- 🟢 THE ENUMERATION LAW — whenever a rule sorts inputs into cases, its author walks the REAL INPUTS FROM THEIR SOURCE and lands each one; a substring of a rendering is not a case, and neither is an absence. [LAWS §Knowledge & tracking](LAWS.md#knowledge--tracking), beside the sweep law. Five instances shipped in five consecutive benches, every one caught by review and none by its author — and a SIXTH was committed inside the very bench that wrote this law, by a reviewer's substring test.
+- 🟢 It is a duty now, homed in [§Wake-lock](skills/parallel-lanes.md#wake-lock--parking) rather than in the lane-worker master, so it needs no box re-save to take effect. A rejected push leaves no server-side trace; two lanes died of one late ack on 2026-08-06 and only one said so — from origin the two are indistinguishable.
+- 🟢 It has one — [SETUP §cloud accounts](SETUP.md#once-and-done--cloud-accounts) now carries the command verbatim, with the measured leg: push → a live cockpit in 13.7 seconds, and the session URL returned to the firing seat, which no liftoff fire has ever managed.
+- 🟢 [ship](skills/ship.md#7--on-approval--the-atomic-weld) now names the seat: a fleet's merge words belong to the seat its landing plan names, and its benches are welded SERIALLY, because each weld writes the census and the ledger and two in flight collide on both.
+- 🟢 Written into [SETUP §cloud accounts](SETUP.md#once-and-done--cloud-accounts): a `lane:cloud` label-spawn burns the routine cap and IS counted; an API `fire:cockpit` (and summon, which calls it) burns the cap and is NOT; a rung-1 `--cloud` birth burns no routine cap at all. The true figure is always count:runs plus the sitting's API fires, added by hand.
+- 🟢 Written into the rule's OWN home — [§Cloud spawn](skills/parallel-lanes.md#cloud-spawn--route-ladder), where the resurrection rule actually lives, not LAWS as the line guessed. A closed PR's diff IS an archive; the lawful sweep verifies each unique commit at a NAMED home and says so in its own commit message. Without the named home it is not a sweep, it is a deletion.
+- 🟢 A seat acting on a bench now reads its PR's comments FIRST — [§Answering a lane](skills/parallel-lanes.md#answering-a-lane-the-mail-slot). They are the only channel carrying what a clone cannot show.
 - 🟢 The charter's version table is in order — v4 had been sitting
   above v3 since 2026-07-30; the whole table is now newest-first.
   Taken at the v5 touch after the pre-gate critic pointed out it
