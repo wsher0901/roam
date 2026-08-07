@@ -1,7 +1,8 @@
 ---
-type: memory
-id: chronicle-shelf-3a-ladder
-updated: 2026-08-06 15:06 UTC · completion · cloud lane
+type: history
+slug: chronicle-shelf-3a-ladder
+shipped: 2026-08-07 19:12 UTC
+pr: #332
 ---
 
 # chronicle-shelf-3a-ladder — Shelf III slice A — the knowledge ladder
@@ -21,11 +22,11 @@ nothing and ticks nothing.
 The 6 unwritten stories of **Shelf III slice A — the knowledge
 ladder** — how a task's knowledge climbs from memory to frozen
 record. One of seven benches flying as a single fleet under
-[D-078](../record/DECISIONS.md#d-078--the-55-re-ruled-on-the-cold-number).
+[D-078](../../../../record/DECISIONS.md#d-078--the-55-re-ruled-on-the-cold-number).
 
 The contract, the roster, and the one rule that makes the fleet
 lawful — **do not write the INDEX** —
-[the spec](../record/specs/chronicle-shelf-3a-ladder.md).
+[the spec](../../../../record/specs/chronicle-shelf-3a-ladder.md).
 
 Delivered, all six under `docs/chronicle/`:
 `narrative-layer` · `memory-template` · `ledger` · `specs-system` ·
@@ -122,10 +123,10 @@ more than the number:
    cold finding** that writing dominates gathering, and confirms it
    by the mechanism D-078 named: source-sharing inside a slice is
    real and large. All six items on this slice sit in the same four
-   decides — [D-024](../record/DECISIONS.md#d-024--architecture-v2-narrative-layer-and-skills),
-   [D-035](../record/DECISIONS.md#d-035--state-surfaces-v2),
-   [D-050](../record/DECISIONS.md#d-050--session-lifecycle-closed-is-not-dead),
-   [D-057](../record/DECISIONS.md#d-057--the-record-shelf) — plus two
+   decides — [D-024](../../../../record/DECISIONS.md#d-024--architecture-v2-narrative-layer-and-skills),
+   [D-035](../../../../record/DECISIONS.md#d-035--state-surfaces-v2),
+   [D-050](../../../../record/DECISIONS.md#d-050--session-lifecycle-closed-is-not-dead),
+   [D-057](../../../../record/DECISIONS.md#d-057--the-record-shelf) — plus two
    scripts and the census. Opening `D-057` once served three
    stories.
 2. **THE GATHERING RAN DURING THE CANARY WAIT, and this makes the
@@ -224,23 +225,23 @@ Other counts derived at write time and written into the stories:
 
 ## Where to look
 
-- [the spec](../record/specs/chronicle-shelf-3a-ladder.md) — roster,
+- [the spec](../../../../record/specs/chronicle-shelf-3a-ladder.md) — roster,
   format, and the INDEX prohibition.
 - The six stories, all under `docs/chronicle/`:
-  [narrative-layer](../chronicle/narrative-layer.md) ·
-  [memory-template](../chronicle/memory-template.md) ·
-  [ledger](../chronicle/ledger.md) ·
-  [specs-system](../chronicle/specs-system.md) ·
-  [record-shelf](../chronicle/record-shelf.md) ·
-  [chronicle-layer](../chronicle/chronicle-layer.md).
-- [the format](../record/history/workshop/definition/chronicle-pilot.md)
+  [narrative-layer](../../../../chronicle/narrative-layer.md) ·
+  [memory-template](../../../../chronicle/memory-template.md) ·
+  [ledger](../../../../chronicle/ledger.md) ·
+  [specs-system](../../../../chronicle/specs-system.md) ·
+  [record-shelf](../../../../chronicle/record-shelf.md) ·
+  [chronicle-layer](../../../../chronicle/chronicle-layer.md).
+- [the format](../../../../record/history/workshop/definition/chronicle-pilot.md)
   — the pilot that settled it, and its honest caveats.
-- [the event bend](../record/history/workshop/definition/chronicle-shelf-1.md)
+- [the event bend](../../../../record/history/workshop/definition/chronicle-shelf-1.md)
   — slice D's variant and the cold calibration this slice tested.
-- [D-059](../record/DECISIONS.md#d-059--the-chronicle-layer) ·
-  [D-078](../record/DECISIONS.md#d-078--the-55-re-ruled-on-the-cold-number)
+- [D-059](../../../../record/DECISIONS.md#d-059--the-chronicle-layer) ·
+  [D-078](../../../../record/DECISIONS.md#d-078--the-55-re-ruled-on-the-cold-number)
   — the layer's rulings and this fleet's licence.
-- [parallel-lanes §Canary](../skills/parallel-lanes.md#canary-handshake-both-sides)
+- [parallel-lanes §Canary](../../../../skills/parallel-lanes.md#canary-handshake-both-sides)
   — the window and the ack token this flight tested against.
-- [the census](../chronicle/INDEX.md) — READ-ONLY for this bench;
+- [the census](../../../../chronicle/INDEX.md) — READ-ONLY for this bench;
   the baton-holder marks the six rows written at the weld.

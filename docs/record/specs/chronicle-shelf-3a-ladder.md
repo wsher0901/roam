@@ -2,12 +2,12 @@
 type: spec
 id: chronicle-shelf-3a-ladder
 title: Shelf III slice A — the knowledge ladder — the chronicle stories
-status: open
+status: shipped
 stage: workshop
 branch: docs/chronicle-shelf-3a-ladder
-pr: —
+pr: #332
 opened: 2026-08-06
-shipped: —
+shipped: 2026-08-07
 ---
 
 # chronicle-shelf-3a-ladder — Shelf III slice A — the knowledge ladder
