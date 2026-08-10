@@ -6,17 +6,24 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-08-07 · 19:38 UTC by ship's tail · from work PC
-PHASE 2 CLOSED AND VERIFIED · the census is full at 66/66 ·
-needs-you 0 ·
+Painted 2026-08-10 · 17:28 UTC by pickup · from work PC
+Clean floor — nothing flying, no bench open · needs-you 1 ·
 git outranks this board.
 How to read it → [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
 
-**Nothing.** The batched external Web review is in and **THE CLOSE
-STANDS** — audited on an independent clone, so the numbers were
-re-derived rather than re-read from this repo's own claims.
+1. 🟡 **RETIRE THE NO-AGENTS INSTRUCTION WHERE IT ACTUALLY LIVES** —
+   the session preamble, which no commit can reach. Edit it in the
+   Claude Code settings that inject it, before the next sitting that
+   splits work across benches; until then every session opens
+   holding the retired instruction and
+   [D-082](record/DECISIONS.md#d-082--the-vehicle-chooser)'s default
+   at once, and the preamble wins — it is read first and carries no
+   link to the entry that overrode it. (since 08-07)
+   → [D-082](record/DECISIONS.md#d-082--the-vehicle-chooser) ·
+   [the bench that raised it](record/history/workshop/definition/chooser-and-blocker.md)
+   · [#343](https://github.com/wsher0901/roam/pull/343)
 
 Phase 2 is closed by
 [D-081](record/DECISIONS.md#d-081--phase-2-closes-the-polish-pass-is-split-out-not-dropped)
@@ -24,7 +31,7 @@ and **PHASE 3 NEEDS NO RULING TO START.**
 
 ## The baton
 
-CONTROL TOWER — work PC, since 2026-08-05 13:24 UTC (pickup)
+CONTROL TOWER — work PC, since 2026-08-10 17:28 UTC (pickup)
 ([handoff §4's case table](skills/handoff.md#4--repaint-dashboard-the-board-spec--single-source),
 pickup's plain-claim row).
 Last flight: LANDED 2026-08-04 21:16 UTC via MANUAL-LAND.
@@ -32,31 +39,12 @@ Last flight: LANDED 2026-08-04 21:16 UTC via MANUAL-LAND.
 ## In flight
 
 Nothing flying, no lanes, no bench open. Clean floor — the closing
-campaign merged everything it opened.
+campaign and the two rulings merged everything they opened.
 
 ## Working on
 
-**THE CLOSING CAMPAIGN IS COMPLETE.** Ten PRs merged in sequence
-under a merge word given in advance, each gated on green CI for its
-exact head and a non-author review:
-
-- **The census filled** — Shelf II (11), slice A (6), slice C (7),
-  slice E (4), Shelf IV (9) joined the 29 already written. **66 of
-  66, none remaining a proposal**, and the index's own prose retired
-  the sentence calling itself a list of proposals.
-- **The findings close-out** — 51 inbox lines born of four flights,
-  the fleet and phase 2: 8 closed with patches, 43 left open with a
-  one-clause standing reason, zero silent.
-  [#338](https://github.com/wsher0901/roam/pull/338)
-- **The flight reflection audit** — `npm run audit:flights`, four
-  flights, 34 flight-born lines, **zero orphans**, proven red on
-  deliberate breakage before its green was believed.
-  [#339](https://github.com/wsher0901/roam/pull/339)
-- **A defect I shipped and repaired** — two benches were merged
-  WITHOUT their atomic weld, leaving live memories on main and no
-  ledger lines. `check:ledger` stayed green throughout, because a
-  memory that never becomes history creates no ledger line to be
-  missing from. [#341](https://github.com/wsher0901/roam/pull/341)
+**NOTHING OPEN.** Phase 2 is closed, the two rulings are law, and
+the floor is clear for phase 3.
 
 The standing order
 ([D-060](record/DECISIONS.md#d-060--the-three-phase-standing-order),
@@ -88,6 +76,22 @@ one phase per line:
 
 **Completed**
 
+- **THE VEHICLE CHOOSER AND THE EXTERNAL-BLOCKER RULE** — two
+  founder rulings from the Web ops chat, into law with their homes
+  in one PR.
+  [D-082](record/DECISIONS.md#d-082--the-vehicle-chooser): parallel
+  work is triaged BY RULE, and with the founder at a desk an AGENT
+  TEAM IS THE DEFAULT — ≤4 teammates, one bench each, lane laws
+  unrelaxed — with cloud lanes reached for only on a named
+  condition every triage must state.
+  [D-083](record/DECISIONS.md#d-083--the-external-blocker-rule): a
+  blocker outside the workshop's control leads every turn-end
+  report and the board's glance line until it clears. The chooser
+  is NOT additive, so the entry names its amendments to
+  [D-055](record/DECISIONS.md#d-055--agent-teams-the-boundary) and
+  [D-045](record/DECISIONS.md#d-045--hands-doctrine) rather than
+  leaving a corpus that contradicts itself.
+  [#343](https://github.com/wsher0901/roam/pull/343)
 - **THE CLOSING CAMPAIGN** — nine PRs, one enumerated run of work
   under an advance merge word: the census from 29 to 66 of 66,
   every flight-born inbox line closed or reasoned, a machine-checked
@@ -266,15 +270,14 @@ one phase per line:
   [D-059](record/DECISIONS.md#d-059--the-chronicle-layer), and
   re-rendering a designed figure is its own bench under the figure
   law. → its line in [IDEAS](IDEAS.md)
-- ⏳ THREE BENCHES RUNNING SHIPPED A CASE-ANALYSIS HOLE, each found
-  by review, never by the author: an absence-keyed case · a token
-  that was a PREFIX of a longer state · two cases firing on one
-  trigger with an undefined tiebreaker. The countermeasure that has
-  worked both times it was applied is mechanical — enumerate the
-  real inputs FROM THEIR SOURCE and walk each through the cases,
-  rather than reasoning about the cases in the abstract. Worth a
-  law or a ship step, not just three memories saying it. → its line
-  in [IDEAS](IDEAS.md)
+- ✓ THE CASE-ANALYSIS HOLE IS NOW A LAW — five holes in five
+  consecutive benches, every one caught by review and none by its
+  author, are answered by the ENUMERATION LAW: whenever a rule
+  sorts inputs into cases, its author walks the real inputs from
+  their source and lands each one. Minted in the findings
+  close-out. →
+  [LAWS §Knowledge & tracking](LAWS.md#knowledge--tracking) ·
+  [#338](https://github.com/wsher0901/roam/pull/338)
 - ✓ **THE REJECTED-PUSH RULE HAS ITS ANSWER AFTER FOUR FLIGHTS, AND
   THE ANSWER IS A NULL RESULT.** Flights 1–3 could not test it —
   every fence landed on a bench that had already finished. Flight 4
@@ -434,7 +437,13 @@ S3–S8 · queued in order · 0/22
   [parallel-lanes](skills/parallel-lanes.md) and [SETUP](SETUP.md),
   the enumeration law minted, 8 closures and 43 standing reasons
   with zero silent drops, the flight audit's zero-orphans confirmed,
-  and D-079 / D-080 / D-081 sound. → next: nothing owed.
+  and D-079 / D-080 / D-081 sound. On 2026-08-06/07 it also gave
+  TWO RULINGS — the vehicle chooser and the external-blocker rule —
+  now law as
+  [D-082](record/DECISIONS.md#d-082--the-vehicle-chooser) and
+  [D-083](record/DECISIONS.md#d-083--the-external-blocker-rule)
+  ([#343](https://github.com/wsher0901/roam/pull/343)). → next:
+  nothing owed.
 
 ## Next
 
