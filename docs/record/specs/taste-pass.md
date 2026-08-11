@@ -169,6 +169,59 @@ into something you see before you read.
 must not compete, so the readout stays neutral — counts in ink,
 only the non-zero unverified/conflict figures picking up colour.
 
+## ROUND ONE IS ANSWERED: none of A/B/C
+
+**The founder rejected all three on 2026-08-11**, and the reason is
+the contract for round two, kept in the founder's own terms:
+
+> Round one varied the TYPEFACE INSIDE A SINGLE METAPHOR — static
+> print — while Roam is a UI/UX-, motion- and graphics-intensive
+> product. Stills can judge a font pair; they cannot judge a
+> direction for a moving product.
+
+So round two varies **the metaphor and the motion character**, and
+**is judged LIVE.** The three directions above are not discarded —
+their palettes and pairs survive as working values — but they are
+demoted from candidates to material. THE FONT PAIR IS NO LONGER
+PART OF THE PICK: each round-two probe carries a working pair so it
+can be felt at all, and the pair decision returns to the founder
+separately, independent of which family wins.
+
+**What round one got wrong is worth naming**, because the same
+mistake is cheap to repeat: three directions that differed in
+typeface and palette while sharing one metaphor is ONE direction
+in three costumes. The specimens were honest and the axis was
+wrong.
+
+## Round two — three families, judged live
+
+Same Kanazawa day in all three, so the metaphor and the motion are
+what differ. Every probe demonstrates, live: the opening moment (a
+day assembling) · one caught conflict announcing itself IN TIME ·
+one card→detail transition · provenance states appearing in motion
+· at 375 and 1440 · springs throughout, never a linear easing ·
+Motion (the library named by the stack) · the global design law's
+bans · and each names its direction on-screen.
+
+| # | Family | The metaphor, and what its motion says |
+|---|---|---|
+| 1 | **PLACE-FIRST** | The plan lives on a living map ([MapLibre](../../SETUP.md#stack), per the stack law); the camera travels between stops, and place is the ground everything sits on. Motion says: *you are somewhere, and the day moves through it.* |
+| 2 | **OBJECT-FIRST** | The plan as a tactile product — cards with weight, drag-to-reorder that settles on a spring, and a conflict that INTERRUPTS the motion, shoving the stack and striking the line through, rather than sitting in a coloured box. Motion says: *this is a thing you hold and rearrange.* |
+| 3 | **TYPE-FIRST** | The editorial soul made kinetic: the headline assembles word by word, sources underline themselves in as they scroll into view, and the caught conflict REWRITES ITS OWN SENTENCE — the old line struck through, the new one typed in. Motion says: *this is being written for you, and it corrects itself.* |
+
+**Working pairs, provisional and stated on every probe:** place-first
+Archivo + Public Sans + JetBrains Mono · object-first Space Grotesk
++ IBM Plex Sans + Plex Mono · type-first Fraunces + Newsreader +
+Plex Mono.
+
+**Where the probes live and why.** `public/spikes/taste/`, served
+by this branch's Vercel preview — throwaway files on a branch that
+never merges, so no component, no route and no dependency enters
+the product. The alternative considered was a self-contained
+published page, and it was REJECTED for a concrete reason: that
+surface forbids remote requests, which would have forced probe 1 to
+fake its map. A place-first probe with a fake map tests nothing.
+
 ## The five reference slots
 
 A reference is a TARGET, not a mood — the law says build it,
@@ -196,8 +249,14 @@ what makes that ban checkable by the design-review agent.
 - [x] Specimens rendered at both widths and READ, not merely
       produced.
 - [x] The five reference slots each name what they govern.
-- [ ] The founder has chosen; [DESIGN](../../DESIGN.md)'s three
-      reserved slots are filled with that choice and nothing else.
+- [x] ROUND ONE: three directions offered, ALL THREE REJECTED —
+      the axis was wrong, not the execution.
+- [ ] ROUND TWO: three families built as LIVE probes, judged in
+      motion at both widths; the founder has chosen a family (or
+      "none, with why").
+- [ ] [DESIGN](../../DESIGN.md)'s reserved slots are filled with
+      that choice and nothing else. The font pair is a SEPARATE
+      founder call, not bundled into the family pick.
 - [ ] Gates green; the pushed head's Actions run green.
 - [ ] Shipped to THE GATE — not merged.
 

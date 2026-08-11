@@ -1,5 +1,17 @@
 ## Open
 
+- ⏳ THE DESIGN-REVIEW GATE IS BLIND TO MOTION — it screenshots a
+  surface at 375px and 1440px, which cannot see a spring, a
+  stagger, an interruption, or anything that happens IN TIME. The
+  taste pass proved the gap from the other side: round one was
+  judged on stills and the founder rejected all three directions
+  because stills cannot judge a moving product. Playwright can
+  record video and traces, so the capability exists and only the
+  wiring is missing — for motion-intensive surfaces the gate should
+  capture a clip rather than a frame. Filed, not built. (2026-08-11,
+  the work PC control tower) →
+  [LAWS §Workflow](LAWS.md#workflow-non-negotiable)
+
 - ⏳ THE FOUNDER'S TASTE PASS IS PENDING, and until it happens
   [DESIGN](DESIGN.md) cannot answer the first question the global
   design law asks — name the direction before any UI code. Three

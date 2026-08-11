@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Roam probe · 1 · PLACE-FIRST</title>
+<link href="https://unpkg.com/maplibre-gl@5.24.0/dist/maplibre-gl.css" rel="stylesheet"
+      integrity="sha384-uTttxo/aOKbdE5RlD/SPzSDoDmNvGlUYPjONi2MN/b7c9HPSvW07OIuyP7uL6jxK" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;800&family=Public+Sans:wght@400;600&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0E1417; --paper:#F7F7F4; --muted:#6A737A; --rule:#E2E3DE;
+    --place:#0B7A6B; --signal:#E8590C;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{margin:0;font-family:"Public Sans",sans-serif;color:var(--ink);background:var(--paper);
+       overflow:hidden}
+  #map{position:absolute;inset:0}
+  .maplibregl-ctrl-attrib{font-size:9px}
+
+  .chrome{position:absolute;top:0;left:0;right:0;z-index:5;display:flex;justify-content:space-between;
+          align-items:center;gap:10px;padding:12px 16px;pointer-events:none;flex-wrap:wrap}
+  .badge{font-family:"JetBrains Mono",monospace;font-size:10px;font-weight:700;letter-spacing:.15em;
+         text-transform:uppercase;background:var(--ink);color:var(--paper);padding:6px 9px}
+  .prov{font-family:"JetBrains Mono",monospace;font-size:9.5px;letter-spacing:.08em;color:var(--muted);
+        background:rgba(247,247,244,.9);padding:5px 8px}
+
+  .rail{position:absolute;z-index:4;background:var(--paper);border:1px solid var(--rule);
+        box-shadow:0 10px 40px rgba(14,20,23,.13);overflow:hidden}
+  @media(min-width:900px){ .rail{top:64px;left:24px;width:392px;max-height:calc(100% - 130px)} }
+  @media(max-width:899px){ .rail{left:10px;right:10px;bottom:10px;max-height:62%} }
+  .railhead{padding:14px 16px 10px;border-bottom:1px solid var(--rule)}
+  .railhead h1{font-family:"Archivo",sans-serif;font-weight:800;font-size:23px;letter-spacing:-.02em;margin:0}
+  .railhead p{margin:3px 0 0;color:var(--muted);font-size:13.5px}
+  .list{overflow:auto;max-height:52vh}
+  .card{display:grid;grid-template-columns:56px 1fr;gap:0 12px;padding:13px 16px;cursor:pointer;
+        border-bottom:1px solid var(--rule);background:var(--paper)}
+  .card:hover{background:#F0F1EC}
+  .tm{font-family:"JetBrains Mono",monospace;font-size:12.5px;color:var(--muted);padding-top:2px}
+  .nm{font-family:"Archivo",sans-serif;font-weight:800;font-size:16px;letter-spacing:-.01em;margin:0 0 2px}
+  .ds{margin:0;font-size:14px;color:var(--muted);line-height:1.4}
+  .st{font-family:"JetBrains Mono",monospace;font-size:9px;font-weight:700;letter-spacing:.12em;
+      text-transform:uppercase;padding:2px 6px;border:1px solid var(--ink);display:inline-block;margin-top:7px;
+      opacity:0}
+  .st.un{color:var(--signal);border-color:var(--signal);border-style:dashed}
+  .st.cf{background:var(--signal);border-color:var(--signal);color:#fff}
+
+  .pin{width:30px;height:30px;border-radius:50%;background:var(--place);color:#fff;display:grid;
+       place-items:center;font-family:"JetBrains Mono",monospace;font-size:11px;font-weight:700;
+       box-shadow:0 3px 12px rgba(11,122,107,.5);cursor:pointer;border:2px solid #fff}
+  .pin.cf{background:var(--signal);box-shadow:0 3px 12px rgba(232,89,12,.55)}
+  .pin.un{background:var(--paper);color:var(--ink);border:2px dashed var(--ink);box-shadow:none}
+
+  .ribbon{position:absolute;z-index:6;left:0;right:0;bottom:0;background:var(--signal);color:#fff;
+          padding:14px 18px;display:flex;gap:12px;align-items:baseline;flex-wrap:wrap;transform:translateY(100%)}
+  .ribbon b{font-family:"JetBrains Mono",monospace;font-size:10px;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
+  .ribbon span{font-size:16px}
+
+  .sheet{position:absolute;inset:0;z-index:7;background:var(--paper);padding:22px;display:none;
+         flex-direction:column;gap:10px}
+  .sheet h2{font-family:"Archivo",sans-serif;font-weight:800;font-size:26px;margin:0;letter-spacing:-.02em}
+  .sheet p{margin:0;color:var(--muted);line-height:1.5}
+  .sheet .src{font-family:"JetBrains Mono",monospace;font-size:11.5px;color:var(--muted)}
+  .close{align-self:flex-start;margin-top:auto;font-family:"JetBrains Mono",monospace;font-size:10px;
+         font-weight:700;letter-spacing:.14em;text-transform:uppercase;background:var(--ink);color:var(--paper);
+         border:0;padding:9px 13px;cursor:pointer}
+  .replay{position:absolute;z-index:8;right:16px;bottom:16px;font-family:"JetBrains Mono",monospace;
+          font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;background:var(--ink);
+          color:var(--paper);border:0;padding:10px 14px;cursor:pointer}
+  @media(max-width:899px){ .replay{right:auto;left:14px;bottom:auto;top:96px} }
+</style>
+</head>
+<body>
+<div id="map"></div>
+
+<div class="chrome">
+  <span class="badge">Probe 1 · Place-first</span>
+  <span class="prov">type pair provisional — the pair is the founder's call at pick time</span>
+</div>
+
+<div class="rail">
+  <div class="railhead">
+    <h1>Day three · Kanazawa</h1>
+    <p>Four stops. Two problems found before you leave.</p>
+  </div>
+  <div class="list" id="list"></div>
+  <div class="sheet" id="sheet">
+    <h2 id="sh-n"></h2>
+    <p id="sh-d"></p>
+    <p class="src" id="sh-s"></p>
+    <button class="close" id="close">Back to the day</button>
+  </div>
+</div>
+
+<div class="ribbon" id="ribbon">
+  <b>Caught</b><span id="ribbon-t"></span>
+</div>
+
+<button class="replay" id="replay">Replay</button>
+
+<script src="https://unpkg.com/maplibre-gl@5.24.0/dist/maplibre-gl.js"
+        integrity="sha384-5+cfbwT0iiub6VsQAdn6yz16nr6sDiQoHx6tm4O8OVYXHYOxcffFmCJBL0dgdvGp"
+        crossorigin="anonymous"></script>
+<script type="module">
+import { animate, spring, stagger } from "https://cdn.jsdelivr.net/npm/motion@13.1.0/+esm";
+
+const SPRING = { type: spring, bounce: 0.28, duration: 0.7 };
+const STOPS = [
+  {t:"09:40",n:"Omicho Market",d:"Open from 09:00; the seafood stalls thin out after 13:00.",s:"market association hours · fetched today",st:"checked",lng:136.6570,lat:36.5719},
+  {t:"11:15",n:"Kenroku-en",d:"Winter closing is 17:00, not 18:00 — your later plan had you arriving at 17:30.",s:"prefectural park calendar · seasonal table",st:"checked",lng:136.6626,lat:36.5622},
+  {t:"14:00",n:"21st Century Museum",d:"Closed today. Moved to day four, which is already near the same district.",s:"museum calendar · public holidays applied",st:"conflict",lng:136.6580,lat:36.5601},
+  {t:"16:20",n:"Notojima ferry",d:"May not run in high wind. No machine-readable timetable exists for this operator.",s:"operator has no published feed · treat as a guess",st:"unverified",lng:136.9000,lat:37.0833},
+];
+const LABEL = { checked:"Checked", unverified:"Unverified", conflict:"Closed today" };
+
+const map = new maplibregl.Map({
+  container:"map", attributionControl:{compact:true},
+  style:{ version:8,
+    sources:{ carto:{ type:"raster", tiles:["https://a.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png"],
+      tileSize:256, attribution:"© OpenStreetMap · © CARTO" } },
+    layers:[{ id:"carto", type:"raster", source:"carto" }] },
+  center:[137.6,37.4], zoom:4.4, attributionControl:false
+});
+
+const list = document.getElementById("list");
+const cards = STOPS.map((s,i)=>{
+  const el = document.createElement("div");
+  el.className = "card"; el.style.opacity = 0;
+  el.innerHTML = `<span class="tm">${s.t}</span>
+    <div><p class="nm">${s.n}</p><p class="ds">${s.d}</p>
+    <span class="st ${s.st==="unverified"?"un":s.st==="conflict"?"cf":""}">${LABEL[s.st]}</span></div>`;
+  el.addEventListener("click", ()=>openSheet(i, el));
+  list.appendChild(el); return el;
+});
+
+const markers = STOPS.map((s,i)=>{
+  const el = document.createElement("div");
+  el.className = "pin " + (s.st==="conflict"?"cf":s.st==="unverified"?"un":"");
+  el.textContent = String(i+1); el.style.transform = "scale(0)";
+  el.addEventListener("click", ()=>{ cards[i].scrollIntoView({block:"nearest"}); openSheet(i, cards[i]); });
+  return new maplibregl.Marker({element:el}).setLngLat([s.lng,s.lat]).addTo(map);
+});
+
+// ── card → detail, as one continuous object (FLIP on the card's own box)
+const sheet = document.getElementById("sheet");
+function openSheet(i, card){
+  const s = STOPS[i], from = card.getBoundingClientRect();
+  const host = document.querySelector(".rail").getBoundingClientRect();
+  document.getElementById("sh-n").textContent = s.n;
+  document.getElementById("sh-d").textContent = s.d;
+  document.getElementById("sh-s").textContent = s.s;
+  sheet.style.display = "flex";
+  animate(sheet,
+    { transform:[`translateY(${from.top-host.top}px) scale(.94)`,"translateY(0px) scale(1)"], opacity:[0,1] },
+    SPRING);
+  animate("#sh-n, #sh-d, #sh-s", { transform:["translateY(10px)","translateY(0px)"], opacity:[0,1] },
+    { ...SPRING, delay: stagger(0.05, {startDelay:0.06}) });
+  map.flyTo({ center:[s.lng,s.lat], zoom: s.lat>36.8?9.4:15.2, speed:.85, curve:1.5 });
+}
+document.getElementById("close").addEventListener("click", ()=>{
+  animate(sheet, { opacity:[1,0], transform:["scale(1)","scale(.97)"] }, { duration:.22 })
+    .then(()=>{ sheet.style.display="none"; });
+  frame();
+});
+
+// ── the opening: the camera arrives, then the day assembles on top of the place
+function opening(){
+  cards.forEach(c=>{ c.style.opacity = 0; });
+  markers.forEach(m=>{ m.getElement().style.transform = "scale(0)"; });
+  document.getElementById("ribbon").style.transform = "translateY(100%)";
+  sheet.style.display = "none";
+  map.jumpTo({ center:[137.6,37.4], zoom:4.4 });
+
+  setTimeout(()=>frame(), 260);
+  setTimeout(()=>{
+    animate(cards, { opacity:[0,1], transform:["translateY(14px)","translateY(0px)"] },
+      { ...SPRING, delay: stagger(0.075) });
+    markers.forEach((m,i)=> animate(m.getElement(),
+      { transform:["scale(0)","scale(1)"] }, { ...SPRING, bounce:.45, delay:.12*i }));
+    cards.forEach((c,i)=> animate(c.querySelector(".st"),
+      { opacity:[0,1], transform:["translateX(-6px)","translateX(0px)"] },
+      { ...SPRING, delay: 0.42 + 0.075*i }));
+  }, 1500);
+
+  // the conflict announces itself IN TIME — after the day has settled, not with it
+  setTimeout(()=>{
+    const i = STOPS.findIndex(s=>s.st==="conflict");
+    map.flyTo({ center:[STOPS[i].lng, STOPS[i].lat], zoom:14.6, speed:.7, curve:1.4 });
+    animate(markers[i].getElement(), { transform:["scale(1)","scale(1.55)","scale(1)"] },
+      { duration:.9, repeat:2 });
+    document.getElementById("ribbon-t").textContent =
+      "21st Century Museum is closed Mondays — day three is a Monday. Moved to day four.";
+    animate("#ribbon", { transform:["translateY(100%)","translateY(0%)"] }, { ...SPRING, bounce:.34 });
+    animate(cards[i], { transform:["translateX(0px)","translateX(7px)","translateX(0px)"] }, { duration:.5 });
+  }, 3400);
+}
+function frame(){
+  const pad = window.innerWidth < 900 ? {top:70,bottom:window.innerHeight*.62,left:24,right:24}
+                                      : {top:80,bottom:60,left:440,right:60};
+  map.fitBounds([[136.60,36.53],[136.95,37.12]], { padding:pad, duration:2200, curve:1.42 });
+}
+map.on("load", opening);
+document.getElementById("replay").addEventListener("click", opening);
+window.addEventListener("resize", ()=>map.resize());
+</script>
+<script>
+(function(){function show(m){var d=document.createElement("div");
+d.style.cssText="position:fixed;z-index:99;left:0;right:0;top:0;background:#B00020;color:#fff;font:12px/1.4 ui-monospace,monospace;padding:8px 12px";
+d.textContent="probe error — "+m;document.body.appendChild(d);}
+window.addEventListener("error",function(e){show(e.message);});
+window.addEventListener("unhandledrejection",function(e){show(String(e.reason));});})();
+</script>
+</body>
+</html>
