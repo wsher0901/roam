@@ -6,25 +6,14 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-08-11 · 20:24 UTC by ship §6 · from work PC
-One bench at THE GATE · needs-you 3 ·
+Painted 2026-08-11 · 20:53 UTC by ship's tail · from work PC
+Clean floor — Roam has a direction · needs-you 2 ·
 git outranks this board.
 How to read it → [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
 
-1. 🔴 **THE WORD ON `taste-pass`** — the taste file is filled with
-   your pick. Tower-authored, so it takes the external Web review
-   FIRST: say "review" in the Web chat, then the merge word here.
-   CI green on `8056c7a`; the pre-gate critic returned 12 findings
-   and all 12 are repaired on the branch, the blocking one being a
-   reserved-slot table that would have let a later seat invent the
-   palette. (since 08-11)
-   → [#349](https://github.com/wsher0901/roam/pull/349) — the filled
-   DESIGN.md, the spec and the story ride that branch and reach main
-   with the merge.
-
-2. 🟡 **THE HOME PC HAS NO DESIGN STACK** — the work PC ran it
+1. 🟡 **THE HOME PC HAS NO DESIGN STACK** — the work PC ran it
    2026-08-11; the second seat is untouched, and nothing in git can
    say so, because the two files it installs live outside the repo.
    Run machine-setup step 12 at the next home-PC sitting — it
@@ -33,7 +22,7 @@ How to read it → [HOME §Reading the board](HOME.md#reading-the-board)
    → [machine-setup step 12](skills/machine-setup.md#one-time-per-machine)
    · [D-084](record/DECISIONS.md#d-084--the-global-design-stack)
 
-3. 🟡 **RETIRE THE NO-AGENTS INSTRUCTION WHERE IT ACTUALLY LIVES** —
+2. 🟡 **RETIRE THE NO-AGENTS INSTRUCTION WHERE IT ACTUALLY LIVES** —
    the session preamble, which no commit can reach. Edit it in the
    Claude Code settings that inject it, before the next sitting that
    splits work across benches; until then every session opens
@@ -49,8 +38,9 @@ Not counted above, because they block nothing today and wait on you
 whenever you want them: **the colour tokens and three reference
 images.** The taste pass answered the direction and the font pair;
 it did NOT answer colour, so the palette stays reserved and unruled
-rather than being inherited from the probe you picked. All of it
-lands with [#349](https://github.com/wsher0901/roam/pull/349).
+rather than inherited from the probe you picked — a seat may use
+the probe's working values task-locally, but proposing a palette as
+Roam's stops and asks. → [DESIGN](DESIGN.md)
 
 Phase 2 is closed by
 [D-081](record/DECISIONS.md#d-081--phase-2-closes-the-polish-pass-is-split-out-not-dropped)
@@ -65,27 +55,14 @@ Last flight: LANDED 2026-08-04 21:16 UTC via MANUAL-LAND.
 
 ## In flight
 
-| Who | For | State | Move |
-|---|---|---|---|
-| the tower's bench · `taste-pass` | the taste file, filled: direction, font pair, and two reference slots seeded by the picked probe | 🟡 AT THE GATE, ready, CI green on `8056c7a` | your "review" in the Web chat, then the merge word |
-
-No lanes. One desk, one bench, nothing in the cloud.
+Nothing flying, no lanes, no bench open. Clean floor — the weld
+closed everything this sitting opened.
 
 ## Working on
 
-**`taste-pass` — AT THE GATE.** Roam has a named direction:
-**place-first** — the plan lives on a living map, place is the
-ground, provenance pins to place. Chosen from a LIVE motion probe
-after a first round of static candidates was rejected for varying
-the typeface inside one metaphor. The pair is ratified as worn
-(Archivo · Public Sans · JetBrains Mono), two reference slots are
-seeded by the picked probe itself, and the direction arrived with
-its own cost named by you: map performance on mid-range phones is a
-design constraint that
+**NOTHING OPEN.** `taste-pass` shipped; phase 3 is next, and
 [V1.S2.T5](ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)
-plans for rather than discovers.
-
-Phase 3 is next and unblocked; nothing else is open.
+now has a direction to build against.
 
 The standing order
 ([D-060](record/DECISIONS.md#d-060--the-three-phase-standing-order),
@@ -117,6 +94,20 @@ one phase per line:
 
 **Completed**
 
+- **ROAM HAS A DIRECTION — `place-first`**: the plan lives on a
+  living map, place is the ground, provenance pins to place. It took
+  two rounds, and the first was built on the wrong axis — three
+  static specimens varying the TYPEFACE INSIDE ONE METAPHOR, which
+  the founder rejected entire, because stills can judge a font pair
+  and cannot judge a direction for a product that moves. Round two
+  varied the metaphor and the motion and was judged LIVE, on three
+  deployed probes. The faces are ratified as worn (Archivo · Public
+  Sans · JetBrains Mono), the WEIGHTS deliberately are not, colour
+  stays reserved, and the picked probe stays in the repo runnable
+  because a reference for motion cannot be a screenshot. 14 review
+  findings across two rounds, all repaired — every one a JOINT
+  between two statements rather than a mistake inside one.
+  [#349](https://github.com/wsher0901/roam/pull/349)
 - **THE GLOBAL DESIGN STACK, AND THE REPO THAT ANSWERS TO IT** — a
   design capability adopted at USER SCOPE on the machine (the
   `frontend-design` plugin · playwright + shadcn MCP servers · a
@@ -510,7 +501,15 @@ S3–S8 · queued in order · 0/22
   verified as exactly the two files. It named its own limit rather
   than papering it: Actions was unreachable from that seat under an
   API rate-limit, so the green was taken as reported and
-  founder-visible. → next: nothing owed.
+  founder-visible. On 2026-08-11 it also reviewed `taste-pass`
+  twice: round 1 returned TWO findings, both post-edit stale
+  sentences — a summary still counting three reserved slots after
+  the table grew to four, and a §Color paragraph declaring "tokens
+  are not written here" directly above a table of six hex values —
+  and round 2 returned **PASS on `c75549d`**, having checked the
+  repair delta on its own copy and judged the disclosed
+  beyond-mandate edit lawful rather than waving it through. →
+  next: nothing owed.
 
 ## Next
 
