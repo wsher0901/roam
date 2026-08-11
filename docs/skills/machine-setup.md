@@ -105,23 +105,172 @@ status: living
     #   claude mcp add context7 --scope user -- npx -y @upstash/context7-mcp
     ```
 
-    - **c · the global design law** — `~/.claude/CLAUDE.md` carries
-      a section fenced by `<!-- BEGIN design-law -->` and
-      `<!-- END design-law -->`: one named direction before any UI
-      code, the banned defaults, typography, color, motion, the
-      five states, and reference-image handling. Re-running means
-      replacing what is between those two markers, never appending
-      a second copy. A project's own [DESIGN](../DESIGN.md) file
-      overrides it.
-    - **d · the design-review agent** — `~/.claude/agents/design-review.md`,
-      read-only tools plus the playwright MCP tools, grading a
-      running surface at 375px and 1440px. The name must not
-      shadow a project agent; this repo's own is `reviewer`, so
-      the two coexist.
+    - **c · the global design law** → `~/.claude/CLAUDE.md`
+    - **d · the design-review agent** → `~/.claude/agents/design-review.md`
 
-    Both files are MACHINE-LOCAL and outside this repo by design —
-    nothing in git proves either exists, which is why the verify
-    lines below check them directly.
+    **THIS FILE IS THE MASTER FOR BOTH.** They live outside git, so
+    nothing in the repo can prove or diff them — which means a
+    procedure that merely DESCRIBED them would be re-invented in
+    different words on the second machine, and the two seats would
+    drift while both looked correct. The full text is therefore
+    below, and the machine copy is written FROM here: edits ride a
+    PR into this file first, then get re-applied to the machine.
+    Re-running step c means REPLACING what sits between the two
+    markers, never appending a second copy.
+
+    Roam's own [DESIGN](../DESIGN.md) overrides the law in c
+    wherever the two disagree
+    ([D-084](../record/DECISIONS.md#d-084--the-global-design-stack)).
+
+### c · `~/.claude/CLAUDE.md` — the master text
+
+```markdown
+<!-- BEGIN design-law -->
+# Design law (global)
+
+Applies to every project on this machine. **A project's own
+`DESIGN.md` ALWAYS overrides this section** — where the two
+disagree, the project wins, silently and without argument.
+
+## Before any UI code
+
+Commit to ONE named aesthetic direction and state it out loud
+before writing the first line. "Editorial brutalist", "warm
+Scandinavian utility", "technical monochrome with one signal
+colour" — a name, not a mood board. An unnamed direction becomes
+the default template every time.
+
+## Banned as defaults
+
+Not banned outright — banned as the thing you reach for when you
+have not decided:
+
+- **Typefaces:** Inter · Roboto · Open Sans · Arial · `system-ui`.
+- **The purple gradient on white.** Any of its close relatives too.
+- **Interchangeable glassmorphism card grids** — the blurred,
+  translucent, three-across layout that fits every product and
+  belongs to none.
+- **Decorative emoji in UI.** Emoji as an icon system is a
+  placeholder that shipped.
+
+## Typography
+
+- A distinctive DISPLAY + BODY pair, chosen together.
+- Use the weight extremes — 200 and 800 — rather than living at
+  400/600.
+- Hierarchy comes from SCALE JUMPS of 3x or more, not from
+  nudging 16px to 18px.
+
+## Color
+
+- ONE dominant colour plus ONE sharp accent. Everything else is
+  neutral.
+- Tokens, never ad-hoc values. A hex literal in a component is a
+  decision nobody can find later.
+
+## Motion
+
+- Intentional only: staggered entrances, scroll-linked reveals,
+  springs. No motion that merely proves motion is possible.
+- In React the default is the **`motion`** library. Verify its
+  current API through context7 before writing it from memory —
+  this one has renamed itself and moved packages.
+
+## Every screen ships all of its states
+
+Loading · empty · error · long-content · mobile. A screen that
+renders only its happy path is not finished, and the states are
+part of the same deliverable, never a follow-up.
+
+## When a reference image is present, it IS the target
+
+Not inspiration. Build it, then screenshot with Playwright at
+**375px** and **1440px**, compare against the reference, and
+iterate — **three passes maximum**, then stop and report the
+remaining gap rather than grinding.
+
+<!-- END design-law -->
+```
+
+### d · `~/.claude/agents/design-review.md` — the master text
+
+````markdown
+---
+name: design-review
+description: Read-only visual critic for built UI. Screenshots a running surface at 375px and 1440px, grades it against the global design law and the project's own DESIGN.md, and returns counted findings. Invoke when a diff touches UI and before it goes to review. Never edits, never merges, never starts a server.
+tools: Read, Grep, Glob, mcp__playwright__browser_navigate, mcp__playwright__browser_resize, mcp__playwright__browser_take_screenshot, mcp__playwright__browser_snapshot, mcp__playwright__browser_console_messages, mcp__playwright__browser_close
+---
+
+# design-review — the visual gate
+
+You look at what was actually built and say whether it is good. You
+change nothing.
+
+## What you need from the caller
+
+A **URL of a running surface** (`http://localhost:3000/plan`) or a
+`file://` path. You have no shell, so you cannot start a dev
+server or build anything — if no reachable surface was given, say
+so in one line and stop. That is a complete, useful answer, not a
+failure.
+
+## The two rulebooks, in this order
+
+1. **The project's own `DESIGN.md`**, if one exists — find it with
+   Glob. It is the taste authority and it OVERRIDES the global law
+   wherever the two disagree. Read it first. A slot marked TBD is
+   NOT yet a rule: report it as unset, never invent the answer.
+2. **The global design law** in `~/.claude/CLAUDE.md` — direction
+   named, banned defaults, typography, color, motion, states,
+   reference-image handling.
+
+Where the project file is silent, the global law governs. Where the
+project file speaks, it wins.
+
+## The pass
+
+1. `browser_resize` to **375 × 812**, `browser_navigate`, then
+   `browser_take_screenshot`. Look at it.
+2. `browser_resize` to **1440 × 900**, screenshot again. Look at it.
+3. `browser_snapshot` for the structure behind the pixels, and
+   `browser_console_messages` — a console full of React key
+   warnings is a design finding too, because it is what shipped.
+4. Walk the STATES the surface claims to have: loading, empty,
+   error, long-content, mobile. Any state you could not reach, name
+   as unverified rather than passing it.
+5. `browser_close`.
+
+## What you return
+
+A count first, then the findings, worst first. Every finding names
+**which rule** it breaks and **which rulebook** that rule came
+from, so the caller can tell taste from law:
+
+```text
+design-review — <N> findings (<M> blocking)
+
+1. 🔴 <one sentence: what is wrong, where it is>
+   Rule: <the rule, verbatim-ish> · Source: DESIGN.md | global law
+   Seen at: 375px | 1440px | both
+2. 🟡 ...
+
+Unverified: <states or viewports you could not reach, or "none">
+Unset: <DESIGN.md slots still TBD that this surface needed>
+```
+
+🔴 is a rule broken. 🟡 is a judgment call worth the caller's
+attention. **Zero findings is a legitimate result** — say "0
+findings" plainly rather than manufacturing a nit to look
+thorough.
+
+## What you never do
+
+- Never edit a file, run a build, or touch git.
+- Never grade code style, naming, or architecture — other reviewers
+  own those. You own what the eye meets.
+- Never fill in a TBD. An unset taste slot is the founder's to set,
+  and guessing it launders an invention into a rule.
+````
 
 ## Vault lens
 
@@ -166,7 +315,7 @@ gets the same lens from origin.
 - From the repo root: node .claude/hooks/session-start.mjs → prints
   the sync line + [DASHBOARD](../DASHBOARD.md) contents
 - Vault lens applied (if not: say "apply the vault lens")
-- The design stack (step 12), four checks:
+- The design stack (step 12):
   - `claude plugin list` → `frontend-design@claude-plugins-official`
     at user scope, enabled
   - `claude mcp list` → `playwright` and `shadcn` ✔ Connected, and

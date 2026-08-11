@@ -15,9 +15,22 @@ seat obeys it without argument
 pass.** A TBD is not a blank to be helpfully filled — it is an
 UNMADE DECISION, and the global law's "commit to one named
 direction before any UI code" cannot be satisfied by a seat
-inventing one here. A seat that needs a TBD asks for it; it does
-not guess.
+inventing one here.
 → its line in [IDEAS](IDEAS.md)
+
+**WHAT A TBD MEANS FOR THE SEAT THAT HITS ONE**, because silence
+is not the same as disagreement and
+[D-084](record/DECISIONS.md#d-084--the-global-design-stack)'s
+override rules only the disagreement:
+
+| The slot | What a seat does |
+|---|---|
+| **Reserved to the founder** — the DIRECTION, the FONT PAIR, the REFERENCE IMAGES | **STOP AND ASK.** These three are the taste pass itself; no floor exists to fall through to, because the global law's own first instruction is to name a direction. A seat that picks one has made the founder's decision for them. |
+| **Every other TBD** — spacing, radii, motion feel, component-level calls | **FALL THROUGH TO THE FLOOR.** The global law governs, the choice is task-local, and it lands in the task's memory like any implementation call. |
+
+So: this file BEATS the global law where it speaks, DEFERS to it
+where it is merely silent, and BLOCKS on the three slots above,
+which are neither.
 
 Sources:
 [D-084](record/DECISIONS.md#d-084--the-global-design-stack)
@@ -48,11 +61,12 @@ buries provenance is wrong for this product however good it looks.
 - Body face: TBD
 - Utility/mono face (captions, data, badges): TBD
 
-The global law's typography rules apply beneath this heading until
-it is filled: a distinctive display + body pair, weight extremes
-(200 / 800) rather than 400/600, and hierarchy from scale jumps of
-3× or more. The banned-as-default list — Inter, Roboto, Open Sans,
-Arial, `system-ui` — applies here too.
+**The font pair is one of the three reserved slots: a seat asks,
+it does not choose.** The global law's other typography rules do
+apply beneath this heading — weight extremes (200 / 800) rather
+than 400/600, hierarchy from scale jumps of 3× or more — and so
+does its banned-as-default list: Inter, Roboto, Open Sans, Arial,
+`system-ui`.
 
 ## Color & tokens
 
@@ -118,9 +132,11 @@ returns install commands; it does not choose taste.
 
 ## The review gate
 
-A diff that touches UI faces the **design-review agent** before
-THE GATE — it screenshots the running surface at 375px and 1440px,
-grades it against this file first and the global law second, and
-returns counted findings. Unreachable surface, or a needed slot
-still TBD, is reported as such rather than passed
-([LAWS §Workflow](LAWS.md#workflow-non-negotiable)).
+A diff that changes what a screen renders faces the
+**design-review agent** before THE GATE — it screenshots the
+running surface at 375px and 1440px, grades it against this file
+first and the global law second, and returns counted findings. An
+unreachable surface, or a needed slot still TBD, is REPORTED at
+the gate rather than passed or silently skipped; what counts as a
+UI diff, and what happens when no surface can be reached, is
+fixed in [LAWS §Workflow](LAWS.md#workflow-non-negotiable).

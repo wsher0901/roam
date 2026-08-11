@@ -1321,6 +1321,7 @@ never duplicates it.
 | External-box master text (a box this repo authors, another product stores) | its own top-level master file — [WEB-INSTRUCTIONS](WEB-INSTRUCTIONS.md) · [COCKPIT-CHARTER](COCKPIT-CHARTER.md) · [LANE-WORKER](LANE-WORKER.md) · [DESIGN-KICKOFF](DESIGN-KICKOFF.md) ([D-064](record/DECISIONS.md#d-064--the-box-master-class-and-setup-entry-contract)) | ops PR | ops PR + a version-history row; the box is re-pasted/re-saved after every merge |
 | Fact vocabulary (F-* · TP-* · telemetry) | [FACTS](data/FACTS.md) | decide; IDs append-only | definitions via D; IDs never reused |
 | Source vetting verdicts | `SOURCES-<family>` → [SOURCES](data/SOURCES.md) at T7 | vetting lanes | grade moves via demotion evidence + D |
+| Roam's taste — direction · typography · color tokens · reference images | [DESIGN](DESIGN.md) | the FOUNDER, via a taste pass; a seat writes only what the founder ruled | the same pass; a TBD slot is an unmade decision, never a blank a seat fills ([D-084](record/DECISIONS.md#d-084--the-global-design-stack)) |
 | Design-session governance | [DESIGN-KICKOFF](DESIGN-KICKOFF.md) | ops PR | ops PR |
 | Explanations · terms · mechanisms | [HOME](HOME.md) (this file) | PR | PR |
 | Identity | [FOUNDATION](FOUNDATION.md) | founder-approved PR + D-number | same — rare by design |
@@ -2012,13 +2013,18 @@ design. At USER SCOPE on each machine: Anthropic's
 `frontend-design` plugin · three MCP servers — playwright
 (screenshots), shadcn (registry components), context7 (current
 library APIs) · a `# Design law (global)` section in
-`~/.claude/CLAUDE.md` · and the `design-review` agent. The repo
-carries only what is Roam's: [DESIGN](DESIGN.md) holds the taste
-and OVERRIDES the global law, and a UI-touching diff faces
-design-review before THE GATE. Installed on the work PC
-2026-08-11; the home PC is pending, and machine-setup step 12 is
-the re-runnable procedure. Nothing in git can prove any of it —
-that is what the verify lines are for.
+`~/.claude/CLAUDE.md` · and the `design-review` agent. **Only TWO
+of the three servers are registered by hand:** context7 arrives
+with its own user-scope plugin, running the identical command, so
+adding it a second time duplicates every one of its tools —
+machine-setup step 12b is the authority on which command to run.
+The repo carries only what is Roam's: [DESIGN](DESIGN.md) holds
+the taste and OVERRIDES the global law, and a UI-touching diff
+faces design-review before THE GATE. Per-machine status —
+including which seats have run it — lives in
+[machine-setup](skills/machine-setup.md) step 12, its one home;
+that file also carries the MASTER TEXT of both `~/.claude/` files,
+since nothing in git can prove or diff them.
 
 Sources:
 [D-084](record/DECISIONS.md#d-084--the-global-design-stack)

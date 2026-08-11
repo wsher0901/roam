@@ -120,6 +120,71 @@ written into machine-setup's Verify list so the next seat is told
 rather than surprised. Expect a one-time trust prompt per server
 there; none appeared here, because none was due yet.
 
+## The pre-gate critic — 11 findings, 11 addressed, 0 dismissed
+
+The reviewer subagent
+([D-044](../record/DECISIONS.md#d-044--the-pre-gate-critic-goes-live))
+ran on the finished diff and returned 1 blocking, 6 notable, 4
+minor. Every one was repaired; none was argued away.
+
+**THE BLOCKING ONE WAS A TICKED BOX THAT WAS NOT TRUE.**
+Done-means said "the second machine can reproduce Part A from
+machine-setup alone", and steps c and d DESCRIBED the design law
+and the agent without carrying either's text — so the home PC
+would have re-invented both in different words while every check
+still passed. The repair makes machine-setup THE MASTER: the full
+text of both `~/.claude/` files now sits in step 12, and the
+machine copy is written from it. Then the claim was tested rather
+than asserted — both master blocks were extracted from the file
+and compared against the live machine copies, and both matched
+exactly, the `×` in `375 × 812` being the one character that did
+not and was fixed. **This finding is the reason the ⚪ about
+"copied substance from an unlinkable master" also closed:** the
+master moved into git, so the drift it warned about now has a
+diffable home.
+
+**THREE MORE WERE CONTRADICTIONS THE DIFF INTRODUCED**, each in a
+file that was already correct before it:
+
+- HOME and D-084 said "three MCP servers" where SETUP and
+  machine-setup said two-plus-a-warning. A home-PC seat reading
+  the wrong one would have installed exactly the duplicate the
+  procedure forbids. Both now name the plugin as context7's
+  carrier and defer to step 12b for the command.
+- SETUP §Staged still listed "playwright plugin ON · design-critic
+  with screenshots" as turning on at
+  [V1.S2.T5](../ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1),
+  under a heading reading "Nothing here is armed" — while this
+  bench armed both. The line now records that they left it early
+  and deliberately, to USER SCOPE, and that the playwright PLUGIN
+  stays off as a CHOICE (it would duplicate the server) rather
+  than as a pending step.
+- The home-PC pending status was written into three files. It now
+  has one home — machine-setup step 12 — and the others point.
+
+**AND ONE WAS THE ENUMERATION LAW, CAUGHT BEFORE IT SHIPPED.**
+[DESIGN](../DESIGN.md) answered "TBD slot, and the global law has
+a rule" three different ways in three sections: ask · fall through
+· report. D-084's override rules DISAGREEMENT, and a TBD is
+SILENCE, which is not the same case. The repair is a two-row table
+with the split stated: the three founder-reserved slots
+(direction, font pair, references) BLOCK and are asked, because no
+floor exists to fall through to — the global law's own first
+instruction is to name a direction; every other TBD falls through
+to the floor as an ordinary task-local call. The remaining ⚪s
+were of a piece: a missing routing-table row for the new
+information class, a "four checks" heading over five bullets, an
+Affects line that had drifted from the edits, and the fourth box
+master edited without being named as one.
+
+**What the round is evidence of:** every finding was a JOINT
+between two files rather than a mistake inside one — the ticked
+box vs the procedure, HOME vs SETUP, the staged list vs the armed
+reality, one file's three answers to one question. A diff that
+touches eight existing files is mostly joints, and the author is
+the worst-placed reader of them, which is the pattern this
+workshop has now recorded across six benches.
+
 ## Where to look
 
 - [the spec](../record/specs/design-stack.md) — goal, out of scope,

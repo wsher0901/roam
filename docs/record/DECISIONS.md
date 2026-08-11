@@ -4521,6 +4521,20 @@ machine, and this repo carries only what is specific to Roam.
 | Layer | Where it lives | Who owns it |
 |---|---|---|
 | The tools — plugin, 3 MCP servers, the `design-review` agent | the machine (`~/.claude/`) | [machine-setup](../skills/machine-setup.md), per machine |
+
+**TWO OF THE THREE SERVERS ARE REGISTERED BY HAND.** context7
+arrives with its own user-scope plugin running the identical
+command, so a second registration duplicates every one of its
+tools; [machine-setup](../skills/machine-setup.md) step 12b is the
+authority on which command to run, and this entry defers to it
+rather than restating a command that could drift.
+
+**THE TWO `~/.claude/` FILES ARE MASTERED IN THE REPO** — their
+full text lives in machine-setup step 12, and the machine copy is
+written from it. They sit outside git, so nothing can diff them;
+a procedure that merely described them would be re-invented in
+different words on the second machine, which is the drift this
+layer exists to prevent.
 | The general law — banned defaults, typography, color, motion, states | `~/.claude/CLAUDE.md`, delimited | the same procedure, re-runnable |
 | Roam's taste — direction, font pair, tokens, references | [DESIGN.md](../DESIGN.md), in this repo | **the founder**, via a taste pass |
 | The gate — a UI diff faces design-review before THE GATE | [LAWS §Workflow](../LAWS.md#workflow-non-negotiable) | every seat |
@@ -4580,8 +4594,13 @@ and [machine-setup](../skills/machine-setup.md) (the install as a
 re-runnable procedure, plus its Verify lines; the home PC is
 pending) ·
 [HOME §Terms](../HOME.md#terms) (design law · taste file ·
-design-review agent) and
+design-review agent),
 [HOME §Equipment & environment](../HOME.md#equipment--environment)
-(the stack entry) ·
+(the stack entry),
+[HOME §Where information goes](../HOME.md#where-information-goes)
+(a row for Roam's taste — a new information class needs a home in
+the routing table) and
+[HOME §The files](../HOME.md#the-files--what-each-one-is-for) (a
+row for the new file; that table is exhaustive) ·
 [IDEAS](../IDEAS.md) (the pending taste pass, the third-party
 skills call, and the watchlist) · this entry.

@@ -44,10 +44,21 @@ and the setup steps recorded where a second machine will find them.
   images are the FOUNDER'S authority. `docs/DESIGN.md` ships with
   every one of them marked TBD, awaiting a founder taste pass; a
   bench that filled them in would be inventing the product's face.
-- **Any box master's fenced text** —
+- **Three of the four box masters' fenced text** —
   [COCKPIT-CHARTER](../../COCKPIT-CHARTER.md),
   [LANE-WORKER](../../LANE-WORKER.md),
   [WEB-INSTRUCTIONS](../../WEB-INSTRUCTIONS.md). Untouched.
+  **THE FOURTH IS IN SCOPE AND IS EDITED:**
+  [DESIGN-KICKOFF](../../DESIGN-KICKOFF.md) is a box master too
+  ([HOME §Where information goes](../../HOME.md#where-information-goes)),
+  and the mandate names its preamble. NO RE-SAVE IS OWED, which is
+  why it carries no
+  [DASHBOARD](../../DASHBOARD.md) Needs-you line: its "box" is a
+  fresh paste into each new Design session rather than a stored
+  one, so the next session reads the merged file. Saying this
+  out loud is the point — the box-master rule fails SILENTLY when
+  a master change never reaches its box, and an unexamined
+  fourth master is exactly how that happens.
 - **Third-party design skills.** Evaluated, NOT installed —
   unverified third parties are a founder call, filed in
   [IDEAS](../../IDEAS.md).
@@ -93,7 +104,7 @@ and the setup steps recorded where a second machine will find them.
       [machine-setup](../../skills/machine-setup.md) alone.
 - [x] New vocabulary has a [HOME §Terms](../../HOME.md#terms) row —
       design law, taste file, design-review agent.
-- [ ] Gates green; the pushed head's Actions run green.
+- [x] Gates green; the pushed head's Actions run green.
 - [ ] Shipped to THE GATE — **not merged.** Tower-authored, so the
       external Web review precedes the founder's word.
 

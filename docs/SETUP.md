@@ -71,8 +71,11 @@ and replication is `git clone`.
 
 - **Claude settings** — `.claude/settings.json`. VALUES: plugins
   context7 · frontend-design · security-guidance ON; playwright
-  OFF (staged); superpowers OFF. Env: Agent Teams ON; claude.ai
-  MCP servers OFF inside Code.
+  OFF — deliberately, since the user-scope playwright MCP server
+  is the live path and the plugin would duplicate its tools
+  ([D-084](record/DECISIONS.md#d-084--the-global-design-stack));
+  superpowers OFF. Env: Agent Teams ON; claude.ai MCP servers OFF
+  inside Code.
 - **Permission rails** — the same file. VALUES denied: force-push,
   hard reset, `rm -rf`, repo delete, admin/foreign-repo merges.
 - **Hooks** — `.claude/hooks/`. VALUES: session-start (pull +
@@ -420,9 +423,13 @@ Sources:
   `# Design law (global)` section in `~/.claude/CLAUDE.md` · the
   `design-review` agent in `~/.claude/agents/`. Taste itself is
   NOT here: it lives in [DESIGN](DESIGN.md), which overrides the
-  global law. Work PC done 2026-08-11; **home PC pending.**
+  global law. WHICH SEATS HAVE RUN IT is not recorded here —
+  per-machine status lives in
+  [machine-setup step 12](skills/machine-setup.md#one-time-per-machine),
+  its one home, and any outstanding seat rides
+  [DASHBOARD](DASHBOARD.md) Needs-you until it is done.
   VERIFY: `claude plugin list`; `claude mcp list`; the two
-  `~/.claude/` files exist.
+  `~/.claude/` files match their master text in machine-setup.
   SOURCE: [D-084](record/DECISIONS.md#d-084--the-global-design-stack).
 - **Remote Control** — VALUES: toggles installed on both machines,
   BACKSTOP only, never the plan — machine-off is the standard away
@@ -444,10 +451,19 @@ Nothing here is armed. Each line names its stage and what turns on.
   — Supabase project provisioned; Supabase MCP configured (tokens
   per machine).
 - **[V1.S2.T5+](ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)**
-  — playwright plugin ON (Claude renders and judges its own UI) ·
-  design-critic subagent paired with screenshots · Claude Design ↔
-  repo design-system sync, plus the optional Design MCP server —
-  mechanics in [DESIGN-KICKOFF](DESIGN-KICKOFF.md).
+  — Claude Design ↔ repo design-system sync, plus the optional
+  Design MCP server — mechanics in
+  [DESIGN-KICKOFF](DESIGN-KICKOFF.md).
+  **TWO ITEMS LEFT THIS LINE ON 2026-08-11 AND ARE NOW ARMED**
+  ([D-084](record/DECISIONS.md#d-084--the-global-design-stack)):
+  "Claude renders and judges its own UI" and the design-critic
+  paired with screenshots. They moved EARLY and deliberately, by
+  the founder's ruling, and they moved to USER SCOPE — the
+  playwright MCP server and the `design-review` agent live on the
+  machine, in §Per machine, not in this repo. The playwright
+  PLUGIN stays OFF in `.claude/settings.json`: it would duplicate
+  the server's tools, so "off" here is a choice rather than a
+  pending step.
 - **[V1.S3.T1](ROADMAP.md#v1s3--engine-core--two-families-deep)** —
   check-module skill encoded from the settled contract; runtime
   tool architecture settled (a source-type question under the
