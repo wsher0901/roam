@@ -1,201 +1,517 @@
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Roam probe · 2 · OBJECT-FIRST</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;700&family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --ink:#111518; --paper:#E8E6E1; --card:#FBFAF8; --muted:#6B7378; --rule:#DAD7D0;
-    --signal:#D93B0F; --deep:#1D3B53;
-  }
-  *{box-sizing:border-box}
-  body{margin:0;background:var(--paper);color:var(--ink);font-family:"IBM Plex Sans",sans-serif;
-       padding:clamp(16px,3.5vw,40px);overflow-x:hidden}
-  .wrap{max-width:760px;margin:0 auto;position:relative}
-  .chrome{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:22px}
-  .badge{font-family:"IBM Plex Mono",monospace;font-size:10px;font-weight:600;letter-spacing:.15em;
-         text-transform:uppercase;background:var(--ink);color:var(--paper);padding:6px 9px}
-  .prov{font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.06em;color:var(--muted)}
-  h1{font-family:"Space Grotesk",sans-serif;font-weight:300;font-size:clamp(34px,6.4vw,60px);
-     line-height:1;letter-spacing:-.03em;margin:0 0 4px}
-  h1 b{font-weight:700}
-  .sub{color:var(--muted);margin:0 0 24px;font-size:16px}
-  .hint{font-family:"IBM Plex Mono",monospace;font-size:10.5px;color:var(--muted);margin:0 0 14px;
-        letter-spacing:.05em}
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Roam probe · 2 · OBJECT-FIRST</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;700&family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Mono:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --ink: #111518;
+        --paper: #e8e6e1;
+        --card: #fbfaf8;
+        --muted: #6b7378;
+        --rule: #dad7d0;
+        --signal: #d93b0f;
+        --deep: #1d3b53;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: "IBM Plex Sans", sans-serif;
+        padding: clamp(16px, 3.5vw, 40px);
+        overflow-x: hidden;
+      }
+      .wrap {
+        max-width: 760px;
+        margin: 0 auto;
+        position: relative;
+      }
+      .chrome {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-bottom: 22px;
+      }
+      .badge {
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 10px;
+        font-weight: 600;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        background: var(--ink);
+        color: var(--paper);
+        padding: 6px 9px;
+      }
+      .prov {
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 9.5px;
+        letter-spacing: 0.06em;
+        color: var(--muted);
+      }
+      h1 {
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 300;
+        font-size: clamp(34px, 6.4vw, 60px);
+        line-height: 1;
+        letter-spacing: -0.03em;
+        margin: 0 0 4px;
+      }
+      h1 b {
+        font-weight: 700;
+      }
+      .sub {
+        color: var(--muted);
+        margin: 0 0 24px;
+        font-size: 16px;
+      }
+      .hint {
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 10.5px;
+        color: var(--muted);
+        margin: 0 0 14px;
+        letter-spacing: 0.05em;
+      }
 
-  .stack{position:relative}
-  .obj{background:var(--card);border:1px solid var(--rule);border-radius:3px;padding:15px 17px;
-       margin-bottom:11px;display:grid;grid-template-columns:62px 1fr auto;gap:0 14px;align-items:start;
-       box-shadow:0 1px 0 rgba(17,21,24,.05),0 8px 22px -14px rgba(17,21,24,.5);
-       cursor:grab;touch-action:none;will-change:transform;opacity:0}
-  .obj.dragging{cursor:grabbing;box-shadow:0 22px 44px -14px rgba(17,21,24,.42);z-index:3}
-  .tm{font-family:"IBM Plex Mono",monospace;font-size:12.5px;color:var(--muted);padding-top:3px}
-  .nm{font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:17.5px;letter-spacing:-.015em;margin:0 0 2px}
-  .ds{margin:0;font-size:14.5px;color:var(--muted);line-height:1.45}
-  .src{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--muted);margin-top:8px;
-       display:block;opacity:0}
-  .st{font-family:"IBM Plex Mono",monospace;font-size:9px;font-weight:600;letter-spacing:.12em;
-      text-transform:uppercase;padding:3px 7px;background:var(--ink);color:var(--card);white-space:nowrap;opacity:0}
-  .st.un{background:transparent;color:var(--ink);border:1.5px dashed var(--ink)}
-  .obj.hit{border-color:var(--signal);box-shadow:0 0 0 2px var(--signal),0 22px 40px -18px rgba(217,59,15,.6)}
+      .stack {
+        position: relative;
+      }
+      .obj {
+        background: var(--card);
+        border: 1px solid var(--rule);
+        border-radius: 3px;
+        padding: 15px 17px;
+        margin-bottom: 11px;
+        display: grid;
+        grid-template-columns: 62px 1fr auto;
+        gap: 0 14px;
+        align-items: start;
+        box-shadow:
+          0 1px 0 rgba(17, 21, 24, 0.05),
+          0 8px 22px -14px rgba(17, 21, 24, 0.5);
+        cursor: grab;
+        touch-action: none;
+        will-change: transform;
+        opacity: 0;
+      }
+      .obj.dragging {
+        cursor: grabbing;
+        box-shadow: 0 22px 44px -14px rgba(17, 21, 24, 0.42);
+        z-index: 3;
+      }
+      .tm {
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 12.5px;
+        color: var(--muted);
+        padding-top: 3px;
+      }
+      .nm {
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 700;
+        font-size: 17.5px;
+        letter-spacing: -0.015em;
+        margin: 0 0 2px;
+      }
+      .ds {
+        margin: 0;
+        font-size: 14.5px;
+        color: var(--muted);
+        line-height: 1.45;
+      }
+      .src {
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 11px;
+        color: var(--muted);
+        margin-top: 8px;
+        display: block;
+        opacity: 0;
+      }
+      .st {
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 9px;
+        font-weight: 600;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        padding: 3px 7px;
+        background: var(--ink);
+        color: var(--card);
+        white-space: nowrap;
+        opacity: 0;
+      }
+      .st.un {
+        background: transparent;
+        color: var(--ink);
+        border: 1.5px dashed var(--ink);
+      }
+      .obj.hit {
+        border-color: var(--signal);
+        box-shadow:
+          0 0 0 2px var(--signal),
+          0 22px 40px -18px rgba(217, 59, 15, 0.6);
+      }
 
-  .detail{position:fixed;inset:0;z-index:20;background:var(--card);padding:clamp(22px,5vw,54px);
-          display:none;flex-direction:column;gap:12px}
-  .detail h2{font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:clamp(30px,5.5vw,50px);
-             letter-spacing:-.03em;margin:0}
-  .detail p{margin:0;max-width:58ch;line-height:1.55;font-size:17px}
-  .detail .m{color:var(--muted);font-family:"IBM Plex Mono",monospace;font-size:12px}
-  .back{margin-top:auto;align-self:flex-start;font-family:"IBM Plex Mono",monospace;font-size:10px;
-        font-weight:600;letter-spacing:.14em;text-transform:uppercase;background:var(--ink);color:var(--card);
-        border:0;padding:11px 15px;cursor:pointer}
-  .replay{position:fixed;right:16px;bottom:16px;z-index:30;font-family:"IBM Plex Mono",monospace;font-size:10px;
-          font-weight:600;letter-spacing:.14em;text-transform:uppercase;background:var(--ink);color:var(--paper);
-          border:0;padding:10px 14px;cursor:pointer}
-  .toast{position:fixed;left:50%;bottom:22px;z-index:25;transform:translate(-50%,140%);
-         background:var(--signal);color:#fff;padding:13px 17px;max-width:min(560px,92vw);
-         display:flex;gap:11px;align-items:baseline;flex-wrap:wrap;
-         box-shadow:0 18px 40px -16px rgba(217,59,15,.75)}
-  .toast b{font-family:"IBM Plex Mono",monospace;font-size:10px;font-weight:600;letter-spacing:.16em;text-transform:uppercase}
-  .toast span{font-size:15.5px;line-height:1.35}
-  @media(max-width:640px){ body{padding-bottom:170px} }
-</style>
-</head>
-<body>
-<div class="wrap">
-  <div class="chrome">
-    <span class="badge">Probe 2 · Object-first</span>
-    <span class="prov">type pair provisional — the pair is the founder's call at pick time</span>
-  </div>
-  <h1>Day three<br><b>Kanazawa</b></h1>
-  <p class="sub">Four stops. Two problems found before you leave.</p>
-  <p class="hint">drag a card to reorder · tap a card to open it</p>
-  <div class="stack" id="stack"></div>
-</div>
+      .detail {
+        position: fixed;
+        inset: 0;
+        z-index: 20;
+        background: var(--card);
+        padding: clamp(22px, 5vw, 54px);
+        display: none;
+        flex-direction: column;
+        gap: 12px;
+      }
+      .detail h2 {
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 700;
+        font-size: clamp(30px, 5.5vw, 50px);
+        letter-spacing: -0.03em;
+        margin: 0;
+      }
+      .detail p {
+        margin: 0;
+        max-width: 58ch;
+        line-height: 1.55;
+        font-size: 17px;
+      }
+      .detail .m {
+        color: var(--muted);
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 12px;
+      }
+      .back {
+        margin-top: auto;
+        align-self: flex-start;
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 10px;
+        font-weight: 600;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        background: var(--ink);
+        color: var(--card);
+        border: 0;
+        padding: 11px 15px;
+        cursor: pointer;
+      }
+      .replay {
+        position: fixed;
+        right: 16px;
+        bottom: 16px;
+        z-index: 30;
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 10px;
+        font-weight: 600;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        background: var(--ink);
+        color: var(--paper);
+        border: 0;
+        padding: 10px 14px;
+        cursor: pointer;
+      }
+      .toast {
+        position: fixed;
+        left: 50%;
+        bottom: 22px;
+        z-index: 25;
+        transform: translate(-50%, 140%);
+        background: var(--signal);
+        color: #fff;
+        padding: 13px 17px;
+        max-width: min(560px, 92vw);
+        display: flex;
+        gap: 11px;
+        align-items: baseline;
+        flex-wrap: wrap;
+        box-shadow: 0 18px 40px -16px rgba(217, 59, 15, 0.75);
+      }
+      .toast b {
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 10px;
+        font-weight: 600;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+      }
+      .toast span {
+        font-size: 15.5px;
+        line-height: 1.35;
+      }
+      @media (max-width: 640px) {
+        body {
+          padding-bottom: 170px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="chrome">
+        <span class="badge">Probe 2 · Object-first</span>
+        <span class="prov"
+          >type pair provisional — the pair is the founder's call at pick
+          time</span
+        >
+      </div>
+      <h1>Day three<br /><b>Kanazawa</b></h1>
+      <p class="sub">Four stops. Two problems found before you leave.</p>
+      <p class="hint">drag a card to reorder · tap a card to open it</p>
+      <div class="stack" id="stack"></div>
+    </div>
 
-<div class="detail" id="detail">
-  <h2 id="d-n"></h2>
-  <p id="d-d"></p>
-  <p class="m" id="d-s"></p>
-  <button class="back" id="back">Back to the day</button>
-</div>
+    <div class="detail" id="detail">
+      <h2 id="d-n"></h2>
+      <p id="d-d"></p>
+      <p class="m" id="d-s"></p>
+      <button class="back" id="back">Back to the day</button>
+    </div>
 
-<div class="toast" id="toast"><b>Caught</b><span id="toast-t"></span></div>
-<button class="replay" id="replay">Replay</button>
+    <div class="toast" id="toast"><b>Caught</b><span id="toast-t"></span></div>
+    <button class="replay" id="replay">Replay</button>
 
-<script type="module">
-import { animate, spring, stagger } from "https://cdn.jsdelivr.net/npm/motion@13.1.0/+esm";
+    <script type="module">
+      import {
+        animate,
+        spring,
+        stagger,
+      } from "https://cdn.jsdelivr.net/npm/motion@13.1.0/+esm";
 
-const HEAVY = { type: spring, stiffness: 210, damping: 22, mass: 1.1 };
-const SETTLE = { type: spring, stiffness: 380, damping: 30 };
-const STOPS = [
-  {t:"09:40",n:"Omicho Market",d:"Open from 09:00; the seafood stalls thin out after 13:00.",s:"market association hours · fetched today",st:"checked"},
-  {t:"11:15",n:"Kenroku-en",d:"Winter closing is 17:00, not 18:00 — your later plan had you arriving at 17:30.",s:"prefectural park calendar · seasonal table",st:"checked"},
-  {t:"14:00",n:"21st Century Museum",d:"Closed today. Moved to day four, which is already near the same district.",s:"museum calendar · public holidays applied",st:"conflict"},
-  {t:"16:20",n:"Notojima ferry",d:"May not run in high wind. No machine-readable timetable exists for this operator.",s:"operator has no published feed · treat as a guess",st:"unverified"},
-];
-const LABEL = { checked:"Checked", unverified:"Unverified", conflict:"Checked" };
-const stack = document.getElementById("stack");
+      const HEAVY = { type: spring, stiffness: 210, damping: 22, mass: 1.1 };
+      const SETTLE = { type: spring, stiffness: 380, damping: 30 };
+      const STOPS = [
+        {
+          t: "09:40",
+          n: "Omicho Market",
+          d: "Open from 09:00; the seafood stalls thin out after 13:00.",
+          s: "market association hours · fetched today",
+          st: "checked",
+        },
+        {
+          t: "11:15",
+          n: "Kenroku-en",
+          d: "Winter closing is 17:00, not 18:00 — your later plan had you arriving at 17:30.",
+          s: "prefectural park calendar · seasonal table",
+          st: "checked",
+        },
+        {
+          t: "14:00",
+          n: "21st Century Museum",
+          d: "Closed today. Moved to day four, which is already near the same district.",
+          s: "museum calendar · public holidays applied",
+          st: "conflict",
+        },
+        {
+          t: "16:20",
+          n: "Notojima ferry",
+          d: "May not run in high wind. No machine-readable timetable exists for this operator.",
+          s: "operator has no published feed · treat as a guess",
+          st: "unverified",
+        },
+      ];
+      const LABEL = {
+        checked: "Checked",
+        unverified: "Unverified",
+        conflict: "Checked",
+      };
+      const stack = document.getElementById("stack");
 
-const objs = STOPS.map((s,i)=>{
-  const el=document.createElement("article");
-  el.className="obj"; el.dataset.i=i;
-  el.innerHTML=`<span class="tm">${s.t}</span>
+      const objs = STOPS.map((s, i) => {
+        const el = document.createElement("article");
+        el.className = "obj";
+        el.dataset.i = i;
+        el.innerHTML = `<span class="tm">${s.t}</span>
     <div><p class="nm">${s.n}</p><p class="ds">${s.d}</p><span class="src">${s.s}</span></div>
-    <span class="st ${s.st==="unverified"?"un":""}">${LABEL[s.st]}</span>`;
-  stack.appendChild(el); return el;
-});
+    <span class="st ${s.st === "unverified" ? "un" : ""}">${LABEL[s.st]}</span>`;
+        stack.appendChild(el);
+        return el;
+      });
 
-// ── weight: a card you pick up is heavier than one that settles back
-objs.forEach(el=>{
-  let sy=0, cy=0, dragging=false;
-  el.addEventListener("pointerdown",e=>{
-    if(e.target.closest(".back")) return;
-    dragging=true; sy=e.clientY; el.setPointerCapture(e.pointerId); el.classList.add("dragging");
-    animate(el,{scale:1.035},{type:spring,stiffness:500,damping:26});
-  });
-  el.addEventListener("pointermove",e=>{
-    if(!dragging) return;
-    cy=e.clientY-sy; el.style.transform=`translateY(${cy}px) scale(1.035)`;
-    const h=el.offsetHeight+11, shift=Math.round(cy/h);
-    objs.forEach(o=>{ if(o===el) return;
-      const d=(+o.dataset.i)-(+el.dataset.i);
-      const push=(shift>0&&d>0&&d<=shift)?-h:(shift<0&&d<0&&d>=shift)?h:0;
-      animate(o,{y:push},SETTLE);
-    });
-  });
-  const drop=e=>{
-    if(!dragging) return; dragging=false; el.classList.remove("dragging");
-    if(Math.abs(cy)<5){ open(+el.dataset.i, el); }
-    animate(el,{y:0,scale:1},HEAVY);
-    objs.forEach(o=>{ if(o!==el) animate(o,{y:0},SETTLE); });
-    cy=0;
-  };
-  el.addEventListener("pointerup",drop);
-  el.addEventListener("pointercancel",drop);
-});
+      // ── weight: a card you pick up is heavier than one that settles back
+      objs.forEach((el) => {
+        let sy = 0,
+          cy = 0,
+          dragging = false;
+        el.addEventListener("pointerdown", (e) => {
+          if (e.target.closest(".back")) return;
+          dragging = true;
+          sy = e.clientY;
+          el.setPointerCapture(e.pointerId);
+          el.classList.add("dragging");
+          animate(
+            el,
+            { scale: 1.035 },
+            { type: spring, stiffness: 500, damping: 26 },
+          );
+        });
+        el.addEventListener("pointermove", (e) => {
+          if (!dragging) return;
+          cy = e.clientY - sy;
+          el.style.transform = `translateY(${cy}px) scale(1.035)`;
+          const h = el.offsetHeight + 11,
+            shift = Math.round(cy / h);
+          objs.forEach((o) => {
+            if (o === el) return;
+            const d = +o.dataset.i - +el.dataset.i;
+            const push =
+              shift > 0 && d > 0 && d <= shift
+                ? -h
+                : shift < 0 && d < 0 && d >= shift
+                  ? h
+                  : 0;
+            animate(o, { y: push }, SETTLE);
+          });
+        });
+        const drop = (e) => {
+          if (!dragging) return;
+          dragging = false;
+          el.classList.remove("dragging");
+          if (Math.abs(cy) < 5) {
+            open(+el.dataset.i, el);
+          }
+          animate(el, { y: 0, scale: 1 }, HEAVY);
+          objs.forEach((o) => {
+            if (o !== el) animate(o, { y: 0 }, SETTLE);
+          });
+          cy = 0;
+        };
+        el.addEventListener("pointerup", drop);
+        el.addEventListener("pointercancel", drop);
+      });
 
-// ── card → detail: the object itself grows into the page
-const detail=document.getElementById("detail");
-function open(i, el){
-  const s=STOPS[i], r=el.getBoundingClientRect();
-  document.getElementById("d-n").textContent=s.n;
-  document.getElementById("d-d").textContent=s.d;
-  document.getElementById("d-s").textContent=s.s;
-  detail.style.display="flex";
-  const sx=r.width/window.innerWidth, sy2=r.height/window.innerHeight;
-  animate(detail,
-    { transformOrigin:"top left",
-      transform:[`translate(${r.left}px, ${r.top}px) scale(${sx}, ${sy2})`,"translate(0px,0px) scale(1,1)"],
-      opacity:[0.4,1] }, HEAVY);
-  animate("#d-n, #d-d, #d-s",{ opacity:[0,1], y:[14,0] },{ ...SETTLE, delay: stagger(0.055,{startDelay:.1}) });
-}
-document.getElementById("back").addEventListener("click",()=>{
-  animate(detail,{opacity:[1,0],scale:[1,.985]},{duration:.2}).then(()=>{detail.style.display="none";});
-});
+      // ── card → detail: the object itself grows into the page
+      const detail = document.getElementById("detail");
+      function open(i, el) {
+        const s = STOPS[i],
+          r = el.getBoundingClientRect();
+        document.getElementById("d-n").textContent = s.n;
+        document.getElementById("d-d").textContent = s.d;
+        document.getElementById("d-s").textContent = s.s;
+        detail.style.display = "flex";
+        const sx = r.width / window.innerWidth,
+          sy2 = r.height / window.innerHeight;
+        animate(
+          detail,
+          {
+            transformOrigin: "top left",
+            transform: [
+              `translate(${r.left}px, ${r.top}px) scale(${sx}, ${sy2})`,
+              "translate(0px,0px) scale(1,1)",
+            ],
+            opacity: [0.4, 1],
+          },
+          HEAVY,
+        );
+        animate(
+          "#d-n, #d-d, #d-s",
+          { opacity: [0, 1], y: [14, 0] },
+          { ...SETTLE, delay: stagger(0.055, { startDelay: 0.1 }) },
+        );
+      }
+      document.getElementById("back").addEventListener("click", () => {
+        animate(
+          detail,
+          { opacity: [1, 0], scale: [1, 0.985] },
+          { duration: 0.2 },
+        ).then(() => {
+          detail.style.display = "none";
+        });
+      });
 
-// ── the opening, and a conflict that INTERRUPTS the motion
-function play(){
-  detail.style.display="none";
-  document.getElementById("toast").style.transform="translate(-50%,140%)";
-  objs.forEach(el=>{ el.classList.remove("hit"); el.style.transform=""; el.style.opacity=0;
-    el.querySelector(".st").style.opacity=0; el.querySelector(".src").style.opacity=0; });
+      // ── the opening, and a conflict that INTERRUPTS the motion
+      function play() {
+        detail.style.display = "none";
+        document.getElementById("toast").style.transform =
+          "translate(-50%,140%)";
+        objs.forEach((el) => {
+          el.classList.remove("hit");
+          el.style.transform = "";
+          el.style.opacity = 0;
+          el.querySelector(".st").style.opacity = 0;
+          el.querySelector(".src").style.opacity = 0;
+        });
 
-  animate("h1, .sub, .hint",{opacity:[0,1],y:[16,0]},{...SETTLE,delay:stagger(.06)});
-  animate(objs,{opacity:[0,1],y:[34,0],rotate:[-1.4,0]},{...HEAVY,delay:stagger(.085,{startDelay:.28})});
-  objs.forEach((el,i)=>{
-    animate(el.querySelector(".st"),{opacity:[0,1],x:[8,0]},{...SETTLE,delay:.72+.085*i});
-    animate(el.querySelector(".src"),{opacity:[0,1]},{duration:.4,delay:.82+.085*i});
-  });
+        animate(
+          "h1, .sub, .hint",
+          { opacity: [0, 1], y: [16, 0] },
+          { ...SETTLE, delay: stagger(0.06) },
+        );
+        animate(
+          objs,
+          { opacity: [0, 1], y: [34, 0], rotate: [-1.4, 0] },
+          { ...HEAVY, delay: stagger(0.085, { startDelay: 0.28 }) },
+        );
+        objs.forEach((el, i) => {
+          animate(
+            el.querySelector(".st"),
+            { opacity: [0, 1], x: [8, 0] },
+            { ...SETTLE, delay: 0.72 + 0.085 * i },
+          );
+          animate(
+            el.querySelector(".src"),
+            { opacity: [0, 1] },
+            { duration: 0.4, delay: 0.82 + 0.085 * i },
+          );
+        });
 
-  setTimeout(()=>{
-    const i=STOPS.findIndex(s=>s.st==="conflict"), el=objs[i];
-    // it does not appear in a box: it SHOVES the stack, and the card takes the hit
-    animate(el,{x:[0,-9,7,-4,0]},{duration:.42});
-    el.classList.add("hit");
-    objs.forEach((o,j)=>{ if(j>i) animate(o,{y:[0,10,0]},{...HEAVY,delay:.04*(j-i)}); });
-    const line=el.querySelector(".ds");
-    animate(line,{opacity:[1,.45]},{duration:.5});
-    const bar=document.createElement("i");
-    bar.style.cssText="position:absolute;left:0;top:52%;height:2px;background:var(--signal);width:0";
-    line.style.position="relative"; line.appendChild(bar);
-    animate(bar,{width:["0%","100%"]},{...SETTLE});
-    document.getElementById("toast-t").textContent="21st Century Museum is closed Mondays — day three is a Monday. Moved to day four.";
-    animate("#toast",{transform:["translate(-50%,140%)","translate(-50%,0%)"]},{type:spring,stiffness:260,damping:19});
-  },2600);
-}
-document.getElementById("replay").addEventListener("click",play);
-play();
-</script>
-<script>
-(function(){function show(m){var d=document.createElement("div");
-d.style.cssText="position:fixed;z-index:99;left:0;right:0;top:0;background:#B00020;color:#fff;font:12px/1.4 ui-monospace,monospace;padding:8px 12px";
-d.textContent="probe error — "+m;document.body.appendChild(d);}
-window.addEventListener("error",function(e){show(e.message);});
-window.addEventListener("unhandledrejection",function(e){show(String(e.reason));});})();
-</script>
-</body>
+        setTimeout(() => {
+          const i = STOPS.findIndex((s) => s.st === "conflict"),
+            el = objs[i];
+          // it does not appear in a box: it SHOVES the stack, and the card takes the hit
+          animate(el, { x: [0, -9, 7, -4, 0] }, { duration: 0.42 });
+          el.classList.add("hit");
+          objs.forEach((o, j) => {
+            if (j > i)
+              animate(
+                o,
+                { y: [0, 10, 0] },
+                { ...HEAVY, delay: 0.04 * (j - i) },
+              );
+          });
+          const line = el.querySelector(".ds");
+          animate(line, { opacity: [1, 0.45] }, { duration: 0.5 });
+          const bar = document.createElement("i");
+          bar.style.cssText =
+            "position:absolute;left:0;top:52%;height:2px;background:var(--signal);width:0";
+          line.style.position = "relative";
+          line.appendChild(bar);
+          animate(bar, { width: ["0%", "100%"] }, { ...SETTLE });
+          document.getElementById("toast-t").textContent =
+            "21st Century Museum is closed Mondays — day three is a Monday. Moved to day four.";
+          animate(
+            "#toast",
+            { transform: ["translate(-50%,140%)", "translate(-50%,0%)"] },
+            { type: spring, stiffness: 260, damping: 19 },
+          );
+        }, 2600);
+      }
+      document.getElementById("replay").addEventListener("click", play);
+      play();
+    </script>
+    <script>
+      (function () {
+        function show(m) {
+          var d = document.createElement("div");
+          d.style.cssText =
+            "position:fixed;z-index:99;left:0;right:0;top:0;background:#B00020;color:#fff;font:12px/1.4 ui-monospace,monospace;padding:8px 12px";
+          d.textContent = "probe error — " + m;
+          document.body.appendChild(d);
+        }
+        window.addEventListener("error", function (e) {
+          show(e.message);
+        });
+        window.addEventListener("unhandledrejection", function (e) {
+          show(String(e.reason));
+        });
+      })();
+    </script>
+  </body>
 </html>
