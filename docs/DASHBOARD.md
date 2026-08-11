@@ -6,7 +6,7 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-08-11 · 16:49 UTC by ship §6 · from work PC
+Painted 2026-08-11 · 17:09 UTC by ship §6 · from work PC
 One bench at THE GATE · needs-you 3 ·
 git outranks this board.
 How to read it → [HOME §Reading the board](HOME.md#reading-the-board)
@@ -16,8 +16,9 @@ How to read it → [HOME §Reading the board](HOME.md#reading-the-board)
 1. 🔴 **THE WORD ON `design-stack`** — the global design stack, and
    Roam's alignment to it. Tower-authored, so it takes the external
    Web review FIRST: say "review" in the Web chat, then the merge
-   word here. CI green on `fb2682f`; the pre-gate critic returned
-   11 findings and all 11 are repaired on the branch. (since 08-11)
+   word here. CI green on `9870b35`; the pre-gate critic returned 11
+   findings and the first Web review 1 more — a table its own repair
+   had split — and all 12 are repaired on the branch. (since 08-11)
    → [#345](https://github.com/wsher0901/roam/pull/345) — the spec,
    the story and D-084 ride that branch and reach main with the
    merge, so this board names them rather than linking them (the
@@ -59,7 +60,7 @@ Last flight: LANDED 2026-08-04 21:16 UTC via MANUAL-LAND.
 
 | Who | For | State | Move |
 |---|---|---|---|
-| the tower's bench · `design-stack` | a machine-wide design capability at user scope, and the repo that answers to it | 🟡 AT THE GATE, ready, CI green on `fb2682f` | the founder's "review" in the Web chat, then the merge word |
+| the tower's bench · `design-stack` | a machine-wide design capability at user scope, and the repo that answers to it | 🟡 AT THE GATE, ready, CI green on `9870b35` | the founder's re-review in the Web chat, then the merge word |
 
 No lanes. One desk, one bench, nothing in the cloud.
 
