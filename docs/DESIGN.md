@@ -28,8 +28,13 @@ override rules only the disagreement:
 
 | The slot | What a seat does |
 |---|---|
-| **Reserved to the founder** — the DIRECTION, the FONT PAIR, the REFERENCE IMAGES | **STOP AND ASK.** These three are the taste pass itself; no floor exists to fall through to, because the global law's own first instruction is to name a direction. A seat that picks one has made the founder's decision for them. |
+| **Reserved to the founder** — the DIRECTION · the FONT PAIR · the COLOUR TOKENS · the REFERENCE IMAGES | **STOP AND ASK.** These four are the taste pass itself, and they are exactly the four [D-084](record/DECISIONS.md#d-084--the-global-design-stack)'s ownership row assigns to the founder. No floor exists to fall through to: the global law's own first instruction is to name a direction, and its colour rule ("one dominant, one sharp accent") constrains a palette without choosing one. A seat that picks any of the four has made the founder's decision for them. |
 | **Every other TBD** — spacing, radii, motion feel, component-level calls | **FALL THROUGH TO THE FLOOR.** The global law governs, the choice is task-local, and it lands in the task's memory like any implementation call. |
+
+**AS OF 2026-08-11 TWO OF THE FOUR ARE SET** (direction, font pair)
+and **TWO REMAIN RESERVED AND UNRULED** (colour tokens, and three of
+the five reference images). The row above is the live answer for
+each, not a description of how the file began.
 
 So: this file BEATS the global law where it speaks, DEFERS to it
 where it is merely silent, and BLOCKS on the three slots above,
@@ -43,7 +48,7 @@ Sources:
 
 ## Direction
 
-# place-first
+### place-first
 
 **Ruled by the founder 2026-08-11.** The name is the whole
 instruction, and it is three clauses:
@@ -68,13 +73,18 @@ MID-RANGE PHONES A DESIGN CONSTRAINT.** A map is the most expensive
 thing a phone can render, and this direction puts one under
 everything.
 [V1.S2.T5](ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)
-PLANS FOR IT — tile strategy, camera-move budget, and what the
-surface degrades to when the map cannot keep up — rather than
-meeting it as a surprise once the shell is built. This is the
-founder's ruling, recorded here because it is a consequence of the
-direction and therefore belongs with the direction.
+PLANS FOR IT rather than meeting it as a surprise once the shell is
+built. **That sentence is the founder's ruling**, recorded here
+because it is a consequence of the direction and belongs with it.
 
-What is already fixed, and constrains any direction chosen:
+What the plan should COVER is not ruled and is this bench's
+suggestion, offered so T5 has somewhere to start and free to
+disagree: a tile strategy, a camera-move budget, and a stated
+answer for what the surface degrades to when the map cannot keep
+up.
+
+What was already fixed before the pick, and constrains this
+direction as it would have constrained any other:
 Roam's identity is **trust made visible** — confidence badges,
 source attributions and "unverified" labels are first-class UI
 citizens, and the surface is calm, legible and
@@ -84,22 +94,34 @@ buries provenance is wrong for this product however good it looks.
 
 ## Typography
 
-**RATIFIED 2026-08-11**, as worn by the picked probe:
+**THE FACES ARE RATIFIED 2026-08-11**, as worn by the picked probe:
 
-| Role | Face | Weights in real use |
-|---|---|---|
-| Display | **Archivo** | 200 and 800 — the extremes |
-| Body | **Public Sans** | 400, with 700 for emphasis |
-| Utility — sources, times, badges, counts | **JetBrains Mono** | 500 and 700 |
+| Role | Face |
+|---|---|
+| Display | **Archivo** |
+| Body | **Public Sans** |
+| Utility — sources, times, badges, counts | **JetBrains Mono** |
 
-**THE PROBE'S WEIGHTS WERE A SHORTCUT AND ARE NOT THE RULE.** It
-loaded Archivo at 500/800 and Public Sans at 400/600 because a
-probe loads what it needs to be felt. Real usage follows the global
-law: **weight extremes — 200 and 800 — rather than living at
-400/600**, and hierarchy from SCALE JUMPS of 3× or more rather than
-from nudging sizes. Where the probe and this table disagree, this
-table wins; the probe is a reference for MOTION and LAYOUT, never
-for type weights.
+**THE WEIGHTS ARE NOT RATIFIED, and this section will not pretend
+otherwise.** The founder ratified the PAIR and named the probe's
+loads as shortcuts; nobody ruled a weight. What governs until
+someone does is the global law, which is a rule about the DISPLAY
+face and about hierarchy, not a demand that body copy be set at
+200:
+
+- **Display (Archivo): 200 and 800.** The extremes, per the law.
+  The probe's 500 was a shortcut and is superseded.
+- **Body and utility: TASK-LOCAL and unruled.** Pick what is
+  legible at the size in question, record the choice in the task's
+  memory like any implementation call, and do NOT read the probe's
+  `400;600` / `500;700` loads as decisions — they are what a probe
+  loads to be felt.
+- **Hierarchy comes from SCALE JUMPS of 3× or more**, never from
+  nudging 16px to 18px. This is the half of the law that does the
+  work.
+
+Where the probe and this section disagree, this section wins; the
+probe is a reference for MOTION and LAYOUT, never for type.
 
 The banned-as-default list still applies: Inter, Roboto, Open Sans,
 Arial, `system-ui`.
@@ -154,8 +176,21 @@ maximum, then report the remaining gap.
 why it lives in this repo rather than being deleted with the round
 that produced it: a reference has to be OPENABLE, and a screenshot
 of motion is not a reference for motion. Run it, do not read it.
-Its two rejected siblings sit beside it as the material that lost,
-clearly marked in that folder's index and referenced by nothing.
+Its two rejected siblings sit beside it as the material that lost —
+linked from that folder's index and marked there as not-picked, but
+pointed at by NO REFERENCE SLOT, which is the distinction that
+matters here.
+
+**WHAT THE SEED DOES NOT COVER, said out loud because a narrowed
+slot is easy to mistake for a filled one.** The spec originally
+scoped slot 3 as first-run, empty state and the six questions —
+onboarding and VOICE. The probe shows none of that: it opens on an
+existing day. So slot 3 is seeded for THE OPENING OF A PLAN and
+still owes a reference for the opening of the PRODUCT, which is
+part of what slot 1 or a founder-supplied image must answer. Slot 4
+is likewise seeded for spring character and announcement timing,
+not for what a full re-validation ripple feels like after an edit —
+the probe never edits anything.
 
 **The probe is a reference for MOTION AND LAYOUT ONLY.** Its type
 weights are superseded by the table above, and its palette is

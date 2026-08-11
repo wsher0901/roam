@@ -163,6 +163,61 @@ recorded as DERIVED and left TBD. The temptation was to treat
 would have promoted six hex values nobody chose into the product's
 palette.
 
+## The pre-gate critic — 12 findings, 12 addressed, 0 dismissed
+
+The reviewer subagent read the FILLED file against the founder's
+four rulings and confirmed fidelity — the pick, the pair-as-worn
+with the probe's weights named as shortcuts, slots 3/4 seeded with
+1/2/5 left TBD, and the constraint recorded with the direction. Its
+findings were all about **what the fill decided AROUND the ruling**,
+which is exactly where a bench with a mandate goes wrong.
+
+**THE BLOCKING ONE WAS A CASE TABLE I WROTE MYSELF, IN THE BENCH
+BEFORE THIS ONE.** [DESIGN](../DESIGN.md)'s reserved row named
+THREE slots — direction, font pair, references — while
+[D-084](../record/DECISIONS.md#d-084--the-global-design-stack)'s
+own ownership row names FOUR, including TOKENS. So the palette fell
+through to the catch-all row, whose instruction is "fall through to
+the floor, it is a task-local call" — meaning the file licensed the
+very laundering this bench's own memory warns against, and the
+V1.S2.T5 seat is the one who would have hit it. The row now names
+four and cites D-084 as its source. **This is the enumeration law's
+absence-keyed shape for the sixth time in this workshop, and once
+again the author did not see it.**
+
+**THE SECOND WAS A SECTION CONTRADICTING ITSELF IN CONSECUTIVE
+PARAGRAPHS.** §Typography prescribed Public Sans 400/700 and
+JetBrains Mono 500/700 under a "RATIFIED" heading, directly above
+prose demanding weight extremes of 200/800 — and the mono row was
+byte-identical to the probe's own load inside a section declaring
+probe weights superseded. The repair separates what was ratified
+(THE FACES) from what was not (EVERY WEIGHT but the display
+extremes), and says plainly that body and utility weights are
+task-local and unruled. A "ratified" table containing numbers
+nobody ruled is worse than an empty one.
+
+**THE THIRD IS THE ONE I WOULD HAVE DEFENDED AND SHOULD NOT
+HAVE.** Seeding slots 3 and 4 with the probe QUIETLY NARROWED them:
+the spec had scoped slot 3 as first-run, empty state and the six
+questions — onboarding and VOICE — and the probe opens on an
+existing day. Slot 4 was scoped as what an edit feels like when it
+re-validates, and the probe never edits anything. Both are now
+struck through in the spec and named as still-owed in DESIGN, so a
+narrowed slot cannot read as a filled one. The founder's ruling was
+to seed them; nothing in it said to shrink what they cover.
+
+The rest: three deliverables of my own invention were sitting
+inside a paragraph closing "This is the founder's ruling" (now
+separated); the IDEAS line announcing the taste pass as PENDING
+survived the PR that answers it (now compressed into the outcome
+ledger with its vehicle); the ROADMAP clause restated the
+constraint instead of pointing at it (now a pure pointer, which
+also removes the only copy that could drift); and a handful of
+wording repairs — an H1 nested under an H2, "referenced by nothing"
+next to an index that links them, pre-fill phrasing under a section
+that now announces a ruling, and a spec `status:` outside its own
+vocabulary.
+
 ## Where to look
 
 - [the spec](../record/specs/taste-pass.md) — the shortlist and

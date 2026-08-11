@@ -2,7 +2,7 @@
 type: spec
 id: taste-pass
 title: The taste pass — three directions, and the reference slots
-status: in-flight
+status: open
 stage: workshop
 branch: docs/taste-pass
 opened: 2026-08-11
@@ -18,16 +18,18 @@ opened: 2026-08-11
 
 ## Goal
 
-Fill [DESIGN](../../DESIGN.md)'s three founder-reserved slots — the
-NAMED DIRECTION, the font pair, and the five reference images —
-by putting a real shortlist in front of the founder and recording
-the choice.
+Fill the founder-reserved slots in [DESIGN](../../DESIGN.md) that
+this bench can reach — the NAMED DIRECTION, the font pair, and the
+five reference images — by putting a real shortlist in front of the
+founder and recording the choice. **The COLOUR TOKENS are reserved
+too** ([D-084](../DECISIONS.md#d-084--the-global-design-stack)'s
+ownership row names four, not three) and the founder did not rule
+them here, so they stay TBD.
 
 **The tower's half is this document; the founder's half is one
 word.** [D-084](../DECISIONS.md#d-084--the-global-design-stack)
-reserves these three slots precisely because a seat that fills
-them has chosen the product's face, so this bench proposes and
-stops.
+reserves these slots precisely because a seat that fills them has
+chosen the product's face, so this bench proposes and stops.
 
 ## Out of scope
 
@@ -46,8 +48,8 @@ stops.
   lives in `public/spikes/taste/` on purpose. The reason is exact:
   **a reference for MOTION cannot be a value or a screenshot — it
   has to be runnable.** The two rejected probes sit beside it as
-  the material that lost, marked as such in that folder's index and
-  referenced by nothing.
+  the material that lost — linked from that folder's index and
+  marked there as not-picked, but pointed at by NO REFERENCE SLOT.
 - **The reference IMAGES themselves.** This bench defines what each
   of the five slots is FOR; the images are the founder's to supply
   or approve.
@@ -259,8 +261,8 @@ scope gets applied to everything.
 |---|---|---|
 | 1 | **The plan day** — the densest screen | how a long day reads without becoming a list; where the eye rests |
 | 2 | **The provenance layer** — badges, source lines, the unverified state | how a claim carries its source without the source shouting louder than the claim |
-| 3 | **The opening moment** — first run, empty state, the six questions | how a product asks for input without a form; the voice |
-| 4 | **Motion** — what an edit feels like when it re-validates the whole plan | timing and restraint; how change is shown without the page jumping |
+| 3 | **The opening moment** — ~~first run, empty state, the six questions~~ · NARROWED AT THE PICK to the opening of a PLAN, which is what the seeding probe shows | how a product asks for input without a form; the voice — **still owed, and named as owed in [DESIGN](../../DESIGN.md)** |
+| 4 | **Motion** — ~~what an edit feels like when it re-validates the whole plan~~ · NARROWED AT THE PICK to spring character, stagger and announcement timing | timing and restraint; the re-validation ripple is **still owed** — the probe never edits anything |
 | 5 | **The ANTI-reference** — one thing Roam must NOT look like | names the failure concretely, so the banned-defaults list stops being abstract |
 
 Slot 5 is the unusual one and it earns its place: the global
