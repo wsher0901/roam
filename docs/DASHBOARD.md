@@ -6,14 +6,25 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-08-11 · 18:47 UTC by ship's tail · from work PC
-Clean floor — design-stack shipped · needs-you 2 ·
+Painted 2026-08-11 · 20:24 UTC by ship §6 · from work PC
+One bench at THE GATE · needs-you 3 ·
 git outranks this board.
 How to read it → [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
 
-1. 🟡 **THE HOME PC HAS NO DESIGN STACK** — the work PC ran it
+1. 🔴 **THE WORD ON `taste-pass`** — the taste file is filled with
+   your pick. Tower-authored, so it takes the external Web review
+   FIRST: say "review" in the Web chat, then the merge word here.
+   CI green on `8056c7a`; the pre-gate critic returned 12 findings
+   and all 12 are repaired on the branch, the blocking one being a
+   reserved-slot table that would have let a later seat invent the
+   palette. (since 08-11)
+   → [#349](https://github.com/wsher0901/roam/pull/349) — the filled
+   DESIGN.md, the spec and the story ride that branch and reach main
+   with the merge.
+
+2. 🟡 **THE HOME PC HAS NO DESIGN STACK** — the work PC ran it
    2026-08-11; the second seat is untouched, and nothing in git can
    say so, because the two files it installs live outside the repo.
    Run machine-setup step 12 at the next home-PC sitting — it
@@ -22,7 +33,7 @@ How to read it → [HOME §Reading the board](HOME.md#reading-the-board)
    → [machine-setup step 12](skills/machine-setup.md#one-time-per-machine)
    · [D-084](record/DECISIONS.md#d-084--the-global-design-stack)
 
-2. 🟡 **RETIRE THE NO-AGENTS INSTRUCTION WHERE IT ACTUALLY LIVES** —
+3. 🟡 **RETIRE THE NO-AGENTS INSTRUCTION WHERE IT ACTUALLY LIVES** —
    the session preamble, which no commit can reach. Edit it in the
    Claude Code settings that inject it, before the next sitting that
    splits work across benches; until then every session opens
@@ -34,14 +45,12 @@ How to read it → [HOME §Reading the board](HOME.md#reading-the-board)
    [the bench that raised it](record/history/workshop/definition/chooser-and-blocker.md)
    · [#343](https://github.com/wsher0901/roam/pull/343)
 
-Not counted above, because it blocks nothing today and the tower
-owes the first move: **the taste pass.**
-[DESIGN](DESIGN.md)'s direction, font pair and five reference slots
-are all TBD, and they are yours to set — the tower's half is a
-shortlist. It becomes blocking the moment
-[V1.S2.T5](ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)
-opens, since the design law's first instruction is to name a
-direction. → its line in [IDEAS](IDEAS.md)
+Not counted above, because they block nothing today and wait on you
+whenever you want them: **the colour tokens and three reference
+images.** The taste pass answered the direction and the font pair;
+it did NOT answer colour, so the palette stays reserved and unruled
+rather than being inherited from the probe you picked. All of it
+lands with [#349](https://github.com/wsher0901/roam/pull/349).
 
 Phase 2 is closed by
 [D-081](record/DECISIONS.md#d-081--phase-2-closes-the-polish-pass-is-split-out-not-dropped)
@@ -56,12 +65,27 @@ Last flight: LANDED 2026-08-04 21:16 UTC via MANUAL-LAND.
 
 ## In flight
 
-Nothing flying, no lanes, no bench open. Clean floor — the weld
-closed everything this sitting opened.
+| Who | For | State | Move |
+|---|---|---|---|
+| the tower's bench · `taste-pass` | the taste file, filled: direction, font pair, and two reference slots seeded by the picked probe | 🟡 AT THE GATE, ready, CI green on `8056c7a` | your "review" in the Web chat, then the merge word |
+
+No lanes. One desk, one bench, nothing in the cloud.
 
 ## Working on
 
-**NOTHING OPEN.** `design-stack` shipped; phase 3 is next.
+**`taste-pass` — AT THE GATE.** Roam has a named direction:
+**place-first** — the plan lives on a living map, place is the
+ground, provenance pins to place. Chosen from a LIVE motion probe
+after a first round of static candidates was rejected for varying
+the typeface inside one metaphor. The pair is ratified as worn
+(Archivo · Public Sans · JetBrains Mono), two reference slots are
+seeded by the picked probe itself, and the direction arrived with
+its own cost named by you: map performance on mid-range phones is a
+design constraint that
+[V1.S2.T5](ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)
+plans for rather than discovers.
+
+Phase 3 is next and unblocked; nothing else is open.
 
 The standing order
 ([D-060](record/DECISIONS.md#d-060--the-three-phase-standing-order),
