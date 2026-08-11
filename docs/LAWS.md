@@ -115,6 +115,12 @@ and judgment calls still come to the founder.
   one home. "Done" also requires the PUSHED commit's Actions run
   green; local green never suffices. →
   [D-038](record/DECISIONS.md#d-038--ci-is-the-arbiter)
+- **THE DESIGN-REVIEW GATE.** A diff that touches UI reaches THE
+  GATE only after the design-review agent has screenshotted the
+  running surface and its findings have been read and answered —
+  taste from [DESIGN](DESIGN.md) first, the machine's global design
+  law second. →
+  [D-084](record/DECISIONS.md#d-084--the-global-design-stack)
 - **PACING LAW.** The ongoing task and pending blocks outrank new
   tasks. At most "Now:" + one parallel slot needs the founder's
   attention. Fully-specified no-decision [P] work may run as extra

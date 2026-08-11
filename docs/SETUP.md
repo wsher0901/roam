@@ -414,6 +414,16 @@ Sources:
 - **Secrets** — VALUES: machine-local only (`.env`, `.env.local`,
   `settings.local.json`, local MCP config); NEVER this public
   repo. VERIFY: `git check-ignore .env.local` succeeds.
+- **The design stack** — VALUES: user scope, four parts — the
+  `frontend-design` plugin · the `playwright` + `shadcn` MCP
+  servers (context7 already served by its plugin) · the
+  `# Design law (global)` section in `~/.claude/CLAUDE.md` · the
+  `design-review` agent in `~/.claude/agents/`. Taste itself is
+  NOT here: it lives in [DESIGN](DESIGN.md), which overrides the
+  global law. Work PC done 2026-08-11; **home PC pending.**
+  VERIFY: `claude plugin list`; `claude mcp list`; the two
+  `~/.claude/` files exist.
+  SOURCE: [D-084](record/DECISIONS.md#d-084--the-global-design-stack).
 - **Remote Control** — VALUES: toggles installed on both machines,
   BACKSTOP only, never the plan — machine-off is the standard away
   posture (the cockpit flies the outing); go-remote remains the

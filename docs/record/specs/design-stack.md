@@ -81,17 +81,17 @@ and the setup steps recorded where a second machine will find them.
 
 ## Done means
 
-- [ ] Part A is installed and VERIFIED on the work PC, with the
+- [x] Part A is installed and VERIFIED on the work PC, with the
       smoke test's result recorded — including anything that failed.
-- [ ] One D-number records the adoption; its **Affects** line and
+- [x] One D-number records the adoption; its **Affects** line and
       the actual edits match exactly.
-- [ ] `docs/DESIGN.md` exists, outranks the global law by its own
+- [x] `docs/DESIGN.md` exists, outranks the global law by its own
       words, and every taste slot is marked TBD.
-- [ ] A UI-touching diff cannot reach THE GATE without design-review:
+- [x] A UI-touching diff cannot reach THE GATE without design-review:
       the sentence is in LAWS §Workflow.
-- [ ] The second machine can reproduce Part A from
+- [x] The second machine can reproduce Part A from
       [machine-setup](../../skills/machine-setup.md) alone.
-- [ ] New vocabulary has a [HOME §Terms](../../HOME.md#terms) row —
+- [x] New vocabulary has a [HOME §Terms](../../HOME.md#terms) row —
       design law, taste file, design-review agent.
 - [ ] Gates green; the pushed head's Actions run green.
 - [ ] Shipped to THE GATE — **not merged.** Tower-authored, so the

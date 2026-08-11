@@ -4510,3 +4510,78 @@ renders by pointing there inherits it) ·
 [LAWS §Workflow](../LAWS.md#workflow-non-negotiable)
 (nothing-is-silently-parked, whose reporting counterpart this is —
 cited, unchanged) · this entry.
+
+## D-084 — The global design stack
+
+In full: 2026-08-11 — THE GLOBAL DESIGN STACK, adopted at USER SCOPE on the founder's machines rather than inside this repo: Anthropic's official `frontend-design` plugin, three MCP servers (playwright for screenshots, shadcn for registry components, context7 for current library APIs), a delimited `# Design law (global)` section in `~/.claude/CLAUDE.md`, and a global read-only `design-review` agent that screenshots a running surface at 375px and 1440px and returns counted findings. FOUR CONSEQUENCES FOLLOW, and they are the decision as much as the install is: machine parity is owed by machine-setup, so a second machine reproduces the stack from the record rather than from memory; a project's own DESIGN.md CARRIES ITS TASTE and outranks the global law wherever the two disagree; the taste itself — aesthetic direction, typography, and the reference images — remains FOUNDER AUTHORITY, so Roam's DESIGN.md ships with every such slot marked TBD; and a UI-touching diff passes design-review before THE GATE, which makes the agent a gate rather than a convenience.
+
+**Decision:** the design capability lives at USER SCOPE on the
+machine, and this repo carries only what is specific to Roam.
+
+| Layer | Where it lives | Who owns it |
+|---|---|---|
+| The tools — plugin, 3 MCP servers, the `design-review` agent | the machine (`~/.claude/`) | [machine-setup](../skills/machine-setup.md), per machine |
+| The general law — banned defaults, typography, color, motion, states | `~/.claude/CLAUDE.md`, delimited | the same procedure, re-runnable |
+| Roam's taste — direction, font pair, tokens, references | [DESIGN.md](../DESIGN.md), in this repo | **the founder**, via a taste pass |
+| The gate — a UI diff faces design-review before THE GATE | [LAWS §Workflow](../LAWS.md#workflow-non-negotiable) | every seat |
+
+**THE OVERRIDE IS ONE-DIRECTIONAL AND ABSOLUTE:** where
+[DESIGN.md](../DESIGN.md) and the global law disagree, DESIGN.md
+wins. The global law is a floor for every project on the machine,
+not a ceiling for this one.
+
+**Why:** a design capability that lives in the repo has to be
+installed by every project separately and drifts between machines;
+one that lives at user scope is installed once per machine and
+applies to whatever the founder opens. But a global law cannot
+carry TASTE — it would make every project look the same, which is
+the exact failure the banned-defaults list exists to prevent — so
+taste is per-project and the override runs one way.
+
+The gate is the load-bearing half. The stack's value is not that a
+screenshot can be taken; it is that a UI diff CANNOT REACH THE
+GATE without one having been taken and read. Without that
+sentence in [LAWS](../LAWS.md), the agent is a thing a seat may
+remember to use, and the case-analysis history of this workshop is
+that what is not enforced is not done.
+
+**THE TASTE PASS IS OWED AND IS NOT THIS BENCH'S TO MAKE.**
+[DESIGN.md](../DESIGN.md) ships with direction, font pair and five
+reference slots marked TBD. A bench that filled them would hand
+the founder a face chosen by a docs task; the tower's job is to
+prepare a shortlist, and the pending pass is filed in
+[IDEAS](../IDEAS.md).
+
+**Alternatives rejected:** the whole stack in the repo
+(`.claude/` project scope) — it would travel with git, which is
+the appeal, but it also forces every unrelated project on the
+machine to re-solve design and puts machine-local MCP config in a
+PUBLIC repo, which [LAWS §Safety](../LAWS.md#safety-non-negotiable)
+forbids · the law inside [LAWS.md](../LAWS.md) — LAWS is universal
+workshop law, and banned typefaces are neither universal nor
+workshop-level; they are a floor for UI work on this machine ·
+no gate, design-review by judgment — the same shape as the four
+judgment-only joints already filed in [IDEAS](../IDEAS.md), and
+this one is cheap to enforce · a third-party design skill instead
+(UI/UX Pro Max and kin) — unverified third-party code in every
+session is a founder call, not a bench's; filed, not adopted.
+
+**Affects:**
+[DESIGN.md](../DESIGN.md) (NEW — Roam's taste file, the override
+top of this ladder) ·
+[CLAUDE.md](../../CLAUDE.md) (a Design section naming the taste
+authority and the gate) ·
+[LAWS §Workflow](../LAWS.md#workflow-non-negotiable) (the
+design-review gate, one sentence) ·
+[DESIGN-KICKOFF](../DESIGN-KICKOFF.md) (two preamble lines — the
+Design surface reads the law and the taste file before drafting) ·
+[SETUP §Per machine](../SETUP.md#per-machine-procedure-machine-setup-skill)
+and [machine-setup](../skills/machine-setup.md) (the install as a
+re-runnable procedure, plus its Verify lines; the home PC is
+pending) ·
+[HOME §Terms](../HOME.md#terms) (design law · taste file ·
+design-review agent) and
+[HOME §Equipment & environment](../HOME.md#equipment--environment)
+(the stack entry) ·
+[IDEAS](../IDEAS.md) (the pending taste pass, the third-party
+skills call, and the watchlist) · this entry.

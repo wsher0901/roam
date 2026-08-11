@@ -80,6 +80,48 @@ status: living
     (a pointer — the secret path lives only there, never in this
     file). Without it this seat cannot run `npm run fire:cockpit`,
     the cockpit birth ladder's routine-fire rung.
+12. **The design stack** — four steps, USER SCOPE, and the whole
+    step is RE-RUNNABLE: every command below is a no-op or an
+    overwrite when it has already been done, so a seat in doubt
+    runs it again rather than inspecting first
+    ([D-084](../record/DECISIONS.md#d-084--the-global-design-stack)).
+    Installed on the WORK PC 2026-08-11; **the home PC is PENDING
+    until the next sitting there.**
+
+    ```text
+    # a · the plugin, from Anthropic's official marketplace
+    claude plugin marketplace list          # expect claude-plugins-official
+    claude plugin install frontend-design@claude-plugins-official --scope user
+    #   then /reload-plugins, and confirm with: claude plugin list
+
+    # b · the MCP servers, user scope
+    npx playwright install chromium         # prereq, once per machine
+    claude mcp add playwright --scope user -- npx -y @playwright/mcp@latest
+    claude mcp add shadcn     --scope user -- npx shadcn@latest mcp
+    #   context7 is ALREADY served at user scope by the context7
+    #   PLUGIN, running the identical command; adding a second
+    #   server duplicates every tool. Add it only if that plugin is
+    #   absent:
+    #   claude mcp add context7 --scope user -- npx -y @upstash/context7-mcp
+    ```
+
+    - **c · the global design law** — `~/.claude/CLAUDE.md` carries
+      a section fenced by `<!-- BEGIN design-law -->` and
+      `<!-- END design-law -->`: one named direction before any UI
+      code, the banned defaults, typography, color, motion, the
+      five states, and reference-image handling. Re-running means
+      replacing what is between those two markers, never appending
+      a second copy. A project's own [DESIGN](../DESIGN.md) file
+      overrides it.
+    - **d · the design-review agent** — `~/.claude/agents/design-review.md`,
+      read-only tools plus the playwright MCP tools, grading a
+      running surface at 375px and 1440px. The name must not
+      shadow a project agent; this repo's own is `reviewer`, so
+      the two coexist.
+
+    Both files are MACHINE-LOCAL and outside this repo by design —
+    nothing in git proves either exists, which is why the verify
+    lines below check them directly.
 
 ## Vault lens
 
@@ -124,6 +166,17 @@ gets the same lens from origin.
 - From the repo root: node .claude/hooks/session-start.mjs → prints
   the sync line + [DASHBOARD](../DASHBOARD.md) contents
 - Vault lens applied (if not: say "apply the vault lens")
+- The design stack (step 12), four checks:
+  - `claude plugin list` → `frontend-design@claude-plugins-official`
+    at user scope, enabled
+  - `claude mcp list` → `playwright` and `shadcn` ✔ Connected, and
+    context7 connected from either the plugin or its own server
+  - `~/.claude/CLAUDE.md` contains the `design-law` markers ONCE
+  - `~/.claude/agents/design-review.md` exists
+  - THE SERVERS BIND AT SESSION START, so a server added mid-session
+    is absent from that session's tools however healthy
+    `claude mcp list` says it is — restart before trusting it, and
+    expect a one-time trust prompt for each new server.
 
 ## Every sitting
 
