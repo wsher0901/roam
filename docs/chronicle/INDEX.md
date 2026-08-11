@@ -8,15 +8,23 @@ status: living
 
 Stamp: 2026-07-27 · born as the [D-059](../record/DECISIONS.md#d-059--the-chronicle-layer) census · home PC ·
 re-stamped 2026-07-28 · the nine owed endings answered · work PC ·
-re-stamped 2026-08-05 · Shelf III slice D written · cloud lane.
+re-stamped 2026-08-05 · Shelf III slice D written · cloud lane ·
+re-stamped 2026-08-11 · the design stack joins Shelf III · work PC.
 
-CENSUS + 66 WRITTEN STORIES. As of 2026-08-07, 66 of the 66 stories
-exist — the three-story pilot
+CENSUS + 66 WRITTEN STORIES, OF 67 ROWS. The 66 that the census was
+born asking for all exist as of 2026-08-07 — the three-story pilot
 ([D-076](../record/DECISIONS.md#d-076--phase-2-opens-with-a-three-story-pilot)),
 Shelf III slice D (8), and the seven-lane fleet under
 [D-078](../record/DECISIONS.md#d-078--the-55-re-ruled-on-the-cold-number)
-landing shelf by shelf — and their rows link to them; NONE REMAIN
-PROPOSALS — the census is complete. A
+landing shelf by shelf — and their rows link to them; **none of the
+original 66 remains a proposal.** THE 67th ROW IS A NEW ITEM, not a
+survivor: the design stack
+([D-084](../record/DECISIONS.md#d-084--the-global-design-stack)),
+added by the weld that adopted it and carrying no story because that
+weld ADVANCED the item rather than settling it. This is the census
+working as designed rather than a regression — a shelf that could
+only ever shrink would make every item born after 2026-07-27
+invisible to the benches that read it. A
 written row's ending lives in ITS STORY, which is the single place a
 later weld rewrites; the ending column here is a summary and may lag
 by design. This index began as
@@ -104,7 +112,7 @@ below).
 | **[the specs system](specs-system.md)** ✍ WRITTEN | system piece | #58 → [D-024](../record/DECISIONS.md#d-024--architecture-v2-narrative-layer-and-skills) → #204 → [D-057](../record/DECISIONS.md#d-057--the-record-shelf) | One contract per task under record/specs/, frozen at ship, superseded only by a dated note. | high |
 | **[the record shelf — docs/record/](record-shelf.md)** ✍ WRITTEN | system piece | [D-057](../record/DECISIONS.md#d-057--the-record-shelf) | Born and settled: the frozen record under one roof, no longer interleaving with the living system. | high |
 | **[ATLAS — the system spine](atlas.md)** ✍ WRITTEN | system piece | [D-058](../record/DECISIONS.md#d-058--atlas-the-system-spine) | Born and settled with its own maintenance law: the bench that changes what a diagram depicts re-renders it in the same PR. | high |
-| **[the chronicle layer — living stories above the record](chronicle-layer.md)** ✍ WRITTEN | system piece | #233 ([D-059](../record/DECISIONS.md#d-059--the-chronicle-layer)) → #236 | Settled 2026-07-28 on the founder's confirmation — the layer as shipped is the design. ADVANCED TWICE ON 2026-08-05: its first three stories exist ([#318](https://github.com/wsher0901/roam/pull/318), the pilot under [D-076](../record/DECISIONS.md#d-076--phase-2-opens-with-a-three-story-pilot)), the deferred ship synthesis-at-weld step is DELIVERED ([#320](https://github.com/wsher0901/roam/pull/320)) so the ending rule is performed by a ritual rather than remembered, and the FIRST SHELF BENCH flew cold ([#322](https://github.com/wsher0901/roam/pull/322)) — eight more stories, and a calibration that OVERTURNED the pilot's central inference: measured cold, writing dominates gathering roughly 60/40. **Eleven of 66 written; 55 remain proposals.** | high |
+| **[the chronicle layer — living stories above the record](chronicle-layer.md)** ✍ WRITTEN | system piece | #233 ([D-059](../record/DECISIONS.md#d-059--the-chronicle-layer)) → #236 | Settled 2026-07-28 on the founder's confirmation — the layer as shipped is the design. ADVANCED TWICE ON 2026-08-05: its first three stories exist ([#318](https://github.com/wsher0901/roam/pull/318), the pilot under [D-076](../record/DECISIONS.md#d-076--phase-2-opens-with-a-three-story-pilot)), the deferred ship synthesis-at-weld step is DELIVERED ([#320](https://github.com/wsher0901/roam/pull/320)) so the ending rule is performed by a ritual rather than remembered, and the FIRST SHELF BENCH flew cold ([#322](https://github.com/wsher0901/roam/pull/322)) — eight more stories, and a calibration that OVERTURNED the pilot's central inference: measured cold, writing dominates gathering roughly 60/40. **ALL 66 ARE NOW WRITTEN** — the count in this cell stood at eleven until phase 2 closed on 2026-08-07 ([D-081](../record/DECISIONS.md#d-081--phase-2-closes-the-polish-pass-is-split-out-not-dropped)) and was left stale by that weld; repaired here on sight. The shelf has since grown a 67th row, which is the layer behaving as designed. | high |
 | **[the response doctrine](response-doctrine.md)** ✍ WRITTEN | system piece | [D-052](../record/DECISIONS.md#d-052--response-doctrine) | Settled: one home in HOME, every ritual referencing it and none copying it. | high |
 | **[WEB-INSTRUCTIONS — the Web surface's rule-carrier](web-instructions.md)** ✍ WRITTEN | system piece | #80 → #144 → #204 → [D-052](../record/DECISIONS.md#d-052--response-doctrine) → [D-057](../record/DECISIONS.md#d-057--the-record-shelf) | v5 lives as the repo master; the Web box is a copy, re-pasted 2026-07-28 after the #229 edit. | high |
 | **[the guardrail audit](guardrail-audit.md)** ✍ WRITTEN | event | [D-053](../record/DECISIONS.md#d-053--guardrail-audit) | Closed with a verdict — already at best practice, the only two real improvements shipped; both still hold, though the promoted verification block has since MOVED from LAWS to ship §1. Read [the story](guardrail-audit.md). | high |
@@ -116,6 +124,7 @@ below).
 | **[pickup — the sit-down briefing (lead-added)](pickup.md)** ✍ WRITTEN | system piece | #1 → #62 → [D-050](../record/DECISIONS.md#d-050--session-lifecycle-closed-is-not-dead) → [D-052](../record/DECISIONS.md#d-052--response-doctrine) → [D-054](../record/DECISIONS.md#d-054--the-landing-skill) | The baton-claiming briefing: self-heal, gather with git outranking the board, repaint if stale, the templated summary, the fleet-resume ask. | medium — added at composition; no teammate claimed it |
 | **[the pacing law (lead-added)](pacing-law.md)** ✍ WRITTEN | system piece | [D-009](../record/DECISIONS.md#d-009--pacing-law) → [D-016](../record/DECISIONS.md#d-016--parallel-ready-menu) → #134 | At most Now + one parallel slot needs the founder; [P] work at Claude's discretion; stopping is a valid next step. | medium — added at composition; no teammate claimed it |
 | **[the micro-PR carve-out (lead-added)](micro-pr-carve-out.md)** ✍ WRITTEN | system piece | [D-002](../record/DECISIONS.md#d-002--handoff-note-merge-policy) → [D-023](../record/DECISIONS.md#d-023--universal-draft-pr-at-birth-and-micro-pr-carve-out) | The one merge that skips the founder: DASHBOARD/IDEAS-only, ritual-written, safe because both surfaces are derived or inbox. | medium — added at composition; no teammate claimed it |
+| **the design stack — a capability on the machine, a taste file in the repo** | system piece | [D-084](../record/DECISIONS.md#d-084--the-global-design-stack) ([#345](https://github.com/wsher0901/roam/pull/345)) | ADVANCED, not settled, on 2026-08-11: the stack is installed and verified on the WORK PC ONLY (plugin · playwright + shadcn MCP servers · a global design law · the `design-review` agent), [DESIGN](../DESIGN.md) holds Roam's taste and OVERRIDES that law one-directionally, and [LAWS](../LAWS.md#workflow-non-negotiable) gates UI diffs on the agent. Three things are still owed and each has a line: the HOME PC has no stack, the FOUNDER'S TASTE PASS has not run (direction, font pair, five references all TBD), and the third-party-skill question is open. The end-to-end path — agent driving playwright — is proven in its PARTS and not as a whole, because MCP servers bind at session start. | high — born with the weld that adopted it |
 
 ## Shelf IV — Roam
 

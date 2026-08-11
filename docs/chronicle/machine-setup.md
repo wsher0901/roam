@@ -2,12 +2,12 @@
 type: chronicle-story
 shelf: III — the information system
 status: living
-updated: 2026-08-06 · the silent step is now automatic · work PC
+updated: 2026-08-11 · the procedure becomes a master · work PC
 ---
 
 # The per-machine seat and machine-setup — how a computer becomes a seat
 
-> **CURRENT ENDING (2026-08-05).** One procedure carries everything a
+> **CURRENT ENDING (2026-08-11).** One procedure carries everything a
 > computer needs to become a Roam seat: the one-clone law with both
 > desks' paths written down, the git identity, the `roam.machine`
 > label every ritual stamp reads, the tools, the vault lens, and a
@@ -25,6 +25,16 @@ updated: 2026-08-06 · the silent step is now automatic · work PC
 > this procedure keeps it as the rule the hook implements and as the
 > manual fallback, which is the shape a silent failure needed —
 > something in the repo that acts without being read.
+> **AND AS OF 2026-08-11 IT IS A MASTER, NOT ONLY A PROCEDURE**
+> ([D-084](../record/DECISIONS.md#d-084--the-global-design-stack)):
+> step 12 installs a design stack at USER SCOPE, and because two of
+> its four parts are FILES OUTSIDE GIT — `~/.claude/CLAUDE.md` and
+> `~/.claude/agents/design-review.md` — the step carries their FULL
+> TEXT, so the machine copy is written from this file rather than
+> re-invented on the second seat. That is a new kind of load for
+> this procedure: it no longer only tells a seat what to do, it
+> holds the thing itself, for the one class of setup git cannot
+> diff.
 
 ## What it is
 
@@ -122,12 +132,46 @@ desk is not re-discovered at the other.
   was clean — push succeeds, CI passes, only the author differs —
   where its neighbour trap fails loudly.
 
+- **2026-08-11 ([#345](https://github.com/wsher0901/roam/pull/345))
+  — step 12, and the procedure becomes a MASTER.**
+  [D-084](../record/DECISIONS.md#d-084--the-global-design-stack)'s
+  design stack installs at user scope: the `frontend-design`
+  plugin, the playwright and shadcn MCP servers, a global design
+  law, and a `design-review` agent. Two of those four are files
+  living OUTSIDE GIT, and the first draft of the step merely
+  DESCRIBED them — which the pre-gate critic caught against a
+  ticked Done-means box claiming the second machine could reproduce
+  the stack from this file alone. It could not: it would have
+  written two files of its own devising in different words, and
+  every check would still have passed. **The repair was to put
+  their full text here**, and then to test the claim rather than
+  restate it — both master blocks were extracted from this file and
+  diffed against the live machine copies, matching after one `×`
+  that did not. The step also records what a seat CANNOT verify
+  from a session: MCP servers bind at session start, so a server
+  added mid-session is healthy and absent at the same time.
+
 
 ## Where it stands, and the step that fails silently
 
 The procedure is healthy and actively maintained. Its promote-traps
 habit has worked: every section beyond the original checklist got
 there because a real machine did something surprising.
+
+**It now carries a second kind of content, and the distinction is
+worth keeping straight.** Steps 1–11 tell a seat what to DO; step
+12 additionally holds WHAT TO WRITE, verbatim, because two of its
+artifacts live outside the repo where nothing can diff them. That
+makes this file a box master in the
+[D-064](../record/DECISIONS.md#d-064--the-box-master-class-and-setup-entry-contract)
+sense for those two files — with one difference that matters: their
+"box" is a local filesystem rather than a product's saved prompt,
+so a seat can re-apply them itself at any time, and the re-save
+that other masters owe the founder is here just a re-run of the
+step. The pending half is honest and on the board: **the home PC
+has not run it**, and no commit can reveal that, which is precisely
+why the outstanding seat rides
+[DASHBOARD](../DASHBOARD.md) Needs-you rather than being inferred.
 
 **The unresolved edge is the cloud seat's identity step, and this
 story is evidence rather than speculation about it.** The lane that

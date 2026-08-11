@@ -2,10 +2,12 @@
 type: spec
 id: design-stack
 title: The global design stack, and Roam's alignment to it
-status: in-flight
+status: shipped
 stage: workshop
 branch: docs/design-stack
+pr: #345
 opened: 2026-08-11
+shipped: 2026-08-11
 ---
 
 # design-stack — a machine-wide design capability, and the repo that answers to it
@@ -105,8 +107,8 @@ and the setup steps recorded where a second machine will find them.
 - [x] New vocabulary has a [HOME §Terms](../../HOME.md#terms) row —
       design law, taste file, design-review agent.
 - [x] Gates green; the pushed head's Actions run green.
-- [ ] Shipped to THE GATE — **not merged.** Tower-authored, so the
-      external Web review precedes the founder's word.
+- [x] Shipped to THE GATE — tower-authored, so the external Web
+      review preceded the founder's word: PASS at `bc4a074`.
 
 ## Notes for whoever resumes this bench
 

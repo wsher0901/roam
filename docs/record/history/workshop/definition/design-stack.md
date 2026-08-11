@@ -1,16 +1,30 @@
 ---
-type: memory
+type: history
 id: design-stack
-updated: 2026-08-11 · gate · work PC
+shipped: 2026-08-11 18:40 UTC
+pr: #345
 ---
 # design-stack — the global design stack, and Roam's alignment
 
 ## Status
 
-complete, awaiting merge — 2026-08-11
+shipped — merged #345, 2026-08-11
 
-Tower-authored, so the external Web review precedes the founder's
-word. At THE GATE; does not merge.
+The external Web review returned **PASS at `bc4a074`**, fetched and
+re-reviewed independently on the Web seat's own copy: the repair
+delta since its prior head was exactly the two files, D-084's table
+parses as one table with both paragraphs below it, and the memory
+carries the external round with its cause named. Its prior-pass
+verifications were re-affirmed at that head — Done-means honest,
+Affects ↔ edits matched, the override one-directional, both
+`~/.claude/` master texts present in machine-setup step 12, the
+context7 deviation recorded, the LAWS gate present, HOME/SETUP/IDEAS
+single-homed. It re-ran the full loop itself (7069 links / 0 broken ·
+136 ↔ 136 · memory valid · lint · format · 3/3 tests · build) and
+noted one honest limit: **Actions on `bc4a074` was unreachable from
+the review seat under an API rate-limit**, so it took the green as
+reported and founder-visible on the PR rather than claiming to have
+seen it. No-solo-approval satisfied; the founder's word followed.
 
 ## What this task is
 
@@ -18,17 +32,17 @@ Install a machine-wide design capability at USER scope (the
 official `frontend-design` plugin, playwright + shadcn + context7
 MCP servers, a global design law in `~/.claude/CLAUDE.md`, and a
 global `design-review` agent), then make Roam answer to it:
-[D-084](../record/DECISIONS.md#d-084--the-global-design-stack), a
-new [DESIGN](../DESIGN.md) holding Roam's taste, a design-review
+[D-084](../../../../record/DECISIONS.md#d-084--the-global-design-stack), a
+new [DESIGN](../../../../DESIGN.md) holding Roam's taste, a design-review
 gate for UI-touching diffs, and the setup steps recorded where the
 home PC will find them. Contract:
-[the spec](../record/specs/design-stack.md).
+[the spec](../../../../record/specs/design-stack.md).
 
 ## Pending issues
 
 **THE HOME PC IS PENDING.** Part A ran on the work PC only. The
 procedure is recorded at
-[machine-setup step 12](../skills/machine-setup.md#one-time-per-machine)
+[machine-setup step 12](../../../../skills/machine-setup.md#one-time-per-machine)
 and is re-runnable, but until it runs there, that seat has no
 design-review agent and no screenshot loop — and nothing in git
 will say so, which is why SETUP and HOME both carry the word
@@ -36,7 +50,7 @@ will say so, which is why SETUP and HOME both carry the word
 
 **THE TASTE PASS IS OWED BY THE FOUNDER.** Direction, font pair
 and five reference slots ship TBD. Filed in
-[IDEAS](../IDEAS.md); the tower's half is a shortlist, not a
+[IDEAS](../../../../IDEAS.md); the tower's half is a shortlist, not a
 choice.
 
 **ONE DEVIATION FROM THE MANDATE, made deliberately: context7 was
@@ -51,7 +65,7 @@ the founder's call if a separate server is wanted anyway.
 ## Left / idle
 
 Nothing on this bench. The first screen the stack governs belongs
-to [V1.S2.T5](../ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1),
+to [V1.S2.T5](../../../../ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1),
 and the taste pass gates it.
 
 ## The story
@@ -65,10 +79,10 @@ share a bench is that either half alone fails silently: a law
 citing an agent that does not exist, or an agent no rule ever
 invokes. What made the split easy to get right is that the two
 halves have different owners — the machine is
-[machine-setup](../skills/machine-setup.md)'s, per seat; the taste
+[machine-setup](../../../../skills/machine-setup.md)'s, per seat; the taste
 is the founder's, per product — so the override runs ONE WAY and
 is stated in both directions:
-[DESIGN](../DESIGN.md) says it wins, and the global law says it
+[DESIGN](../../../../DESIGN.md) says it wins, and the global law says it
 loses.
 
 **THE STACK WAS ALREADY HALF-BUILT, WHICH THE MANDATE COULD NOT
@@ -123,7 +137,7 @@ there; none appeared here, because none was due yet.
 ## The pre-gate critic — 11 findings, 11 addressed, 0 dismissed
 
 The reviewer subagent
-([D-044](../record/DECISIONS.md#d-044--the-pre-gate-critic-goes-live))
+([D-044](../../../../record/DECISIONS.md#d-044--the-pre-gate-critic-goes-live))
 ran on the finished diff and returned 1 blocking, 6 notable, 4
 minor. Every one was repaired; none was argued away.
 
@@ -153,7 +167,7 @@ file that was already correct before it:
   carrier and defer to step 12b for the command.
 - SETUP §Staged still listed "playwright plugin ON · design-critic
   with screenshots" as turning on at
-  [V1.S2.T5](../ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1),
+  [V1.S2.T5](../../../../ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1),
   under a heading reading "Nothing here is armed" — while this
   bench armed both. The line now records that they left it early
   and deliberately, to USER SCOPE, and that the playwright PLUGIN
@@ -163,7 +177,7 @@ file that was already correct before it:
   has one home — machine-setup step 12 — and the others point.
 
 **AND ONE WAS THE ENUMERATION LAW, CAUGHT BEFORE IT SHIPPED.**
-[DESIGN](../DESIGN.md) answered "TBD slot, and the global law has
+[DESIGN](../../../../DESIGN.md) answered "TBD slot, and the global law has
 a rule" three different ways in three sections: ask · fall through
 · report. D-084's override rules DISAGREEMENT, and a TBD is
 SILENCE, which is not the same case. The repair is a two-row table
@@ -207,13 +221,13 @@ and the author reads the source rather than the page.
 
 ## Where to look
 
-- [the spec](../record/specs/design-stack.md) — goal, out of scope,
+- [the spec](../../../../record/specs/design-stack.md) — goal, out of scope,
   plan, Done-means.
-- [D-084](../record/DECISIONS.md#d-084--the-global-design-stack) —
+- [D-084](../../../../record/DECISIONS.md#d-084--the-global-design-stack) —
   the ruling, its four-layer table, and the one-directional
   override.
-- [DESIGN](../DESIGN.md) — the taste file, every slot TBD.
-- [machine-setup step 12](../skills/machine-setup.md#one-time-per-machine)
+- [DESIGN](../../../../DESIGN.md) — the taste file, every slot TBD.
+- [machine-setup step 12](../../../../skills/machine-setup.md#one-time-per-machine)
   — the re-runnable install, and the Verify lines that check it.
 - `~/.claude/CLAUDE.md` and `~/.claude/agents/design-review.md` —
   machine-local, outside this repo by design; no commit reaches
