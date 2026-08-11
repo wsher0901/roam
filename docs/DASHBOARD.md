@@ -6,34 +6,23 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-08-11 · 17:09 UTC by ship §6 · from work PC
-One bench at THE GATE · needs-you 3 ·
+Painted 2026-08-11 · 18:47 UTC by ship's tail · from work PC
+Clean floor — design-stack shipped · needs-you 2 ·
 git outranks this board.
 How to read it → [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
 
-1. 🔴 **THE WORD ON `design-stack`** — the global design stack, and
-   Roam's alignment to it. Tower-authored, so it takes the external
-   Web review FIRST: say "review" in the Web chat, then the merge
-   word here. CI green on `9870b35`; the pre-gate critic returned 11
-   findings and the first Web review 1 more — a table its own repair
-   had split — and all 12 are repaired on the branch. (since 08-11)
-   → [#345](https://github.com/wsher0901/roam/pull/345) — the spec,
-   the story and D-084 ride that branch and reach main with the
-   merge, so this board names them rather than linking them (the
-   filed in-flight-decision exception).
-
-2. 🟡 **THE HOME PC HAS NO DESIGN STACK** — the work PC ran it
+1. 🟡 **THE HOME PC HAS NO DESIGN STACK** — the work PC ran it
    2026-08-11; the second seat is untouched, and nothing in git can
    say so, because the two files it installs live outside the repo.
    Run machine-setup step 12 at the next home-PC sitting — it
    carries the master text of both files, so the seats cannot drift.
    (since 08-11)
-   → machine-setup step 12, landing with
-   [#345](https://github.com/wsher0901/roam/pull/345)
+   → [machine-setup step 12](skills/machine-setup.md#one-time-per-machine)
+   · [D-084](record/DECISIONS.md#d-084--the-global-design-stack)
 
-3. 🟡 **RETIRE THE NO-AGENTS INSTRUCTION WHERE IT ACTUALLY LIVES** —
+2. 🟡 **RETIRE THE NO-AGENTS INSTRUCTION WHERE IT ACTUALLY LIVES** —
    the session preamble, which no commit can reach. Edit it in the
    Claude Code settings that inject it, before the next sitting that
    splits work across benches; until then every session opens
@@ -44,6 +33,15 @@ How to read it → [HOME §Reading the board](HOME.md#reading-the-board)
    → [D-082](record/DECISIONS.md#d-082--the-vehicle-chooser) ·
    [the bench that raised it](record/history/workshop/definition/chooser-and-blocker.md)
    · [#343](https://github.com/wsher0901/roam/pull/343)
+
+Not counted above, because it blocks nothing today and the tower
+owes the first move: **the taste pass.**
+[DESIGN](DESIGN.md)'s direction, font pair and five reference slots
+are all TBD, and they are yours to set — the tower's half is a
+shortlist. It becomes blocking the moment
+[V1.S2.T5](ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)
+opens, since the design law's first instruction is to name a
+direction. → its line in [IDEAS](IDEAS.md)
 
 Phase 2 is closed by
 [D-081](record/DECISIONS.md#d-081--phase-2-closes-the-polish-pass-is-split-out-not-dropped)
@@ -58,24 +56,12 @@ Last flight: LANDED 2026-08-04 21:16 UTC via MANUAL-LAND.
 
 ## In flight
 
-| Who | For | State | Move |
-|---|---|---|---|
-| the tower's bench · `design-stack` | a machine-wide design capability at user scope, and the repo that answers to it | 🟡 AT THE GATE, ready, CI green on `9870b35` | the founder's re-review in the Web chat, then the merge word |
-
-No lanes. One desk, one bench, nothing in the cloud.
+Nothing flying, no lanes, no bench open. Clean floor — the weld
+closed everything this sitting opened.
 
 ## Working on
 
-**`design-stack` — AT THE GATE.** The design stack is installed on
-the work PC at user scope (plugin · playwright + shadcn MCP
-servers · the global design law · the `design-review` agent) and
-D-084 makes the repo answer to it: `docs/DESIGN.md` carries Roam's
-taste and OVERRIDES the global law, and a UI diff faces
-design-review before THE GATE. **Every taste slot ships TBD** — direction, font pair and
-five reference images are the founder's, and the pass that fills
-them is owed.
-
-Phase 3 is next and unblocked; nothing else is open.
+**NOTHING OPEN.** `design-stack` shipped; phase 3 is next.
 
 The standing order
 ([D-060](record/DECISIONS.md#d-060--the-three-phase-standing-order),
@@ -107,6 +93,24 @@ one phase per line:
 
 **Completed**
 
+- **THE GLOBAL DESIGN STACK, AND THE REPO THAT ANSWERS TO IT** — a
+  design capability adopted at USER SCOPE on the machine (the
+  `frontend-design` plugin · playwright + shadcn MCP servers · a
+  design law in `~/.claude/CLAUDE.md` · a read-only `design-review`
+  agent that screenshots at 375px and 1440px), and
+  [D-084](record/DECISIONS.md#d-084--the-global-design-stack) making
+  Roam answer to it in four layers with a ONE-DIRECTIONAL OVERRIDE:
+  [DESIGN](DESIGN.md) carries Roam's taste and BEATS the global law.
+  **Every taste slot ships TBD** — the face is the founder's, and a
+  docs bench that chose it would have been the easy version of this
+  work. Part A left no trace in git, so it was verified by
+  handshake: both servers asked `tools/list` over stdio, and all six
+  tool names the agent hardcodes were among playwright's 24. The
+  smoke test then convicted its own operator — the component built
+  to prove the screenshot loop came out in the AI-default cluster
+  the skill itself warns about. 11 critic findings and 1 external —
+  a table split by its own repair — all 12 repaired.
+  [#345](https://github.com/wsher0901/roam/pull/345)
 - **THE VEHICLE CHOOSER AND THE EXTERNAL-BLOCKER RULE** — two
   founder rulings from the Web ops chat, into law with their homes
   in one PR.
@@ -473,8 +477,16 @@ S3–S8 · queued in order · 0/22
   now law as
   [D-082](record/DECISIONS.md#d-082--the-vehicle-chooser) and
   [D-083](record/DECISIONS.md#d-083--the-external-blocker-rule)
-  ([#343](https://github.com/wsher0901/roam/pull/343)). → next:
-  nothing owed.
+  ([#343](https://github.com/wsher0901/roam/pull/343)). On
+  2026-08-11 it reviewed `design-stack` TWICE: round 1 returned ONE
+  finding — D-084's four-layer table split by the very repair that
+  closed an earlier finding, invisible to every gate because they
+  check content and it was rendering — and round 2 returned **PASS
+  on `bc4a074`**, fetched onto its own copy, with the repair delta
+  verified as exactly the two files. It named its own limit rather
+  than papering it: Actions was unreachable from that seat under an
+  API rate-limit, so the green was taken as reported and
+  founder-visible. → next: nothing owed.
 
 ## Next
 
