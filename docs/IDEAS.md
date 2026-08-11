@@ -1,5 +1,41 @@
 ## Open
 
+- ⏳ THE FOUNDER'S TASTE PASS IS PENDING, and until it happens
+  [DESIGN](DESIGN.md) cannot answer the first question the global
+  design law asks — name the direction before any UI code. Three
+  slots are empty: the named direction, the display+body font
+  pair, and five reference images. The tower's half is to prepare
+  a SHORTLIST (font pairs with a sentence each on what they say
+  about a validity-first planner, and what each reference slot
+  should govern); the choice is the founder's and nobody else's.
+  Blocks no bench today; blocks the first screen of
+  [V1.S2.T5](ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1).
+  (2026-08-11, the work PC control tower) → [DESIGN](DESIGN.md)
+
+- ⏳ THIRD-PARTY DESIGN SKILLS ARE A FOUNDER CALL, AND ONE IS
+  ALREADY ON THIS MACHINE — `ui-ux-pro-max` v2.5.0 is installed at
+  user scope from a third-party marketplace
+  (`nextlevelbuilder/ui-ux-pro-max-skill`): its PLUGIN is
+  disabled, but a copy of the skill sits in `~/.claude/skills/`
+  and loads into every session regardless. So the question is not
+  whether to install it but whether to KEEP it — unverified
+  third-party code that reaches every project on the machine. The
+  design stack adopted by
+  [D-084](record/DECISIONS.md#d-084--the-global-design-stack) is
+  first-party only and does not depend on it either way.
+  (2026-08-11, the work PC control tower) →
+  [SETUP §Per machine](SETUP.md#per-machine-procedure-machine-setup-skill)
+
+- ⏳ A DESIGN-STACK WATCHLIST, neither adopted nor rejected: the
+  Paper canvas MCP (a drawing surface an agent can compose in,
+  rather than screenshot-and-critique), and `awesome-claude-design`
+  as a SEED SOURCE for [DESIGN](DESIGN.md) — a place to harvest
+  direction names and reference candidates from when the taste
+  pass runs, not a dependency. Both wait for the taste pass to
+  land first, because a seed source is only useful once the file
+  it seeds has a shape. (2026-08-11, the work PC control tower) →
+  [DESIGN](DESIGN.md)
+
 - ⏳ A BOARD CANNOT CITE A DECISION THAT IS STILL ON A BRANCH, and
   it happened TWICE on 2026-08-05. `decide` invoked inside an open
   task puts the entry on that task's PR, so between the cut and the

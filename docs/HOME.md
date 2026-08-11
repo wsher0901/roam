@@ -152,6 +152,7 @@ Sources:
 | [SETUP.md](SETUP.md) | everything the workshop runs on — stack, configs, tools; once-and-done vs per-machine vs staged | ops PRs | living |
 | [ENGINE.md](ENGINE.md) | the engine on paper — pipeline stages, decided rules in slots, OPEN register | [decide](skills/decide.md) ripples; invents nothing | living consolidation; seeds the [V1.S3](ROADMAP.md#v1s3--engine-core--two-families-deep) contract |
 | [IDEAS.md](IDEAS.md) | the single untriaged inbox — no Issues, no boards ([D-023](record/DECISIONS.md#d-023--universal-draft-pr-at-birth-and-micro-pr-carve-out)); OPEN + CLOSED under the entry contract at its head ([D-066](record/DECISIONS.md#d-066--the-ideas-entry-contract)) | Claude Code, the moment an idea or defect is voiced | triaged out into [ROADMAP](ROADMAP.md) via decide; closed ideas COMPRESS to one line and STAY as the outcome ledger |
+| [DESIGN.md](DESIGN.md) | Roam's TASTE — direction, typography, color tokens, reference images, the states rule; OVERRIDES the machine's global design law ([D-084](record/DECISIONS.md#d-084--the-global-design-stack)) | the founder, via a taste pass; seats fill only what the founder has ruled | living; born with every taste slot TBD — a TBD is an unmade decision, never a blank to fill |
 | [DESIGN-KICKOFF.md](DESIGN-KICKOFF.md) | the Claude Design session preamble + governance rules | ops PRs | living until the repo-synced design system replaces it |
 | [WEB-INSTRUCTIONS.md](WEB-INSTRUCTIONS.md) | master copy of the Claude Web Project-instructions box | ops PRs | living; re-pasted into the box after every edit (the box is a copy, never the source) |
 | [COCKPIT-CHARTER.md](COCKPIT-CHARTER.md) | master copy of the cockpit routine's saved prompt, adopted verbatim into every `--cloud` birth | ops PRs | living; re-saved into the routine box after every edit (the box is a copy) |
@@ -1320,6 +1321,7 @@ never duplicates it.
 | External-box master text (a box this repo authors, another product stores) | its own top-level master file — [WEB-INSTRUCTIONS](WEB-INSTRUCTIONS.md) · [COCKPIT-CHARTER](COCKPIT-CHARTER.md) · [LANE-WORKER](LANE-WORKER.md) · [DESIGN-KICKOFF](DESIGN-KICKOFF.md) ([D-064](record/DECISIONS.md#d-064--the-box-master-class-and-setup-entry-contract)) | ops PR | ops PR + a version-history row; the box is re-pasted/re-saved after every merge |
 | Fact vocabulary (F-* · TP-* · telemetry) | [FACTS](data/FACTS.md) | decide; IDs append-only | definitions via D; IDs never reused |
 | Source vetting verdicts | `SOURCES-<family>` → [SOURCES](data/SOURCES.md) at T7 | vetting lanes | grade moves via demotion evidence + D |
+| Roam's taste — direction · typography · color tokens · reference images | [DESIGN](DESIGN.md) | the FOUNDER, via a taste pass; a seat writes only what the founder ruled | the same pass; a TBD slot is an unmade decision, never a blank a seat fills ([D-084](record/DECISIONS.md#d-084--the-global-design-stack)) |
 | Design-session governance | [DESIGN-KICKOFF](DESIGN-KICKOFF.md) | ops PR | ops PR |
 | Explanations · terms · mechanisms | [HOME](HOME.md) (this file) | PR | PR |
 | Identity | [FOUNDATION](FOUNDATION.md) | founder-approved PR + D-number | same — rare by design |
@@ -1703,6 +1705,28 @@ the link for the full story.
   blocks outrank new tasks; at most "Now" plus one parallel slot
   needs the founder's attention; stopping is a valid next step
   ([D-009](record/DECISIONS.md#d-009--pacing-law)).
+- **design law (global)** — the machine-wide floor for UI work,
+  living in `~/.claude/CLAUDE.md` rather than in this repo: one
+  named aesthetic direction before any UI code, a banned-as-default
+  list (Inter/Roboto/Open Sans/Arial/system-ui, the purple gradient,
+  glassmorphism card grids, decorative emoji), typography, color,
+  motion, and the five states every screen ships. It applies to
+  every project on the machine and is OUTRANKED by any project's
+  own taste file. Home:
+  [D-084](record/DECISIONS.md#d-084--the-global-design-stack).
+- **taste file** — [DESIGN](DESIGN.md), where Roam's own direction,
+  typography, color tokens and reference images live. It BEATS the
+  global design law wherever the two disagree, and its TBD slots
+  are unmade decisions belonging to the founder — a seat asks
+  rather than guessing. Home: [DESIGN](DESIGN.md).
+- **design-review agent** — the machine's read-only visual critic:
+  screenshots a RUNNING surface at 375px and 1440px, grades it
+  against the taste file first and the global law second, and
+  returns counted findings. A UI-touching diff faces it before THE
+  GATE; it never edits and never merges, and it is distinct from
+  this repo's `reviewer` subagent, which reads diffs rather than
+  pixels. Home:
+  [LAWS §Workflow](LAWS.md#workflow-non-negotiable).
 
 ### Product & engine
 
@@ -1983,6 +2007,30 @@ public, so credentials exist per-machine only, never in it (LAWS
 Sources:
 [SETUP §Staged](SETUP.md#staged--turns-on-when-its-stage-opens)
 [LAWS §Safety](LAWS.md#safety-non-negotiable)
+
+**The design stack**, machine-wide and outside this repo by
+design. At USER SCOPE on each machine: Anthropic's
+`frontend-design` plugin · three MCP servers — playwright
+(screenshots), shadcn (registry components), context7 (current
+library APIs) · a `# Design law (global)` section in
+`~/.claude/CLAUDE.md` · and the `design-review` agent. **Only TWO
+of the three servers are registered by hand:** context7 arrives
+with its own user-scope plugin, running the identical command, so
+adding it a second time duplicates every one of its tools —
+machine-setup step 12b is the authority on which command to run.
+The repo carries only what is Roam's: [DESIGN](DESIGN.md) holds
+the taste and OVERRIDES the global law, and a UI-touching diff
+faces design-review before THE GATE. Per-machine status —
+including which seats have run it — lives in
+[machine-setup](skills/machine-setup.md) step 12, its one home;
+that file also carries the MASTER TEXT of both `~/.claude/` files,
+since nothing in git can prove or diff them.
+
+Sources:
+[D-084](record/DECISIONS.md#d-084--the-global-design-stack)
+[DESIGN](DESIGN.md)
+[machine-setup](skills/machine-setup.md)
+[SETUP §Per machine](SETUP.md#per-machine-procedure-machine-setup-skill)
 
 **Machines.** Two seats plus the cloud: work PC and home PC, each
 with exactly one clone, each labeled via `git config roam.machine` so

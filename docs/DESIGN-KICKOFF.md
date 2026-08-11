@@ -23,6 +23,15 @@ visible — confidence badges, source attributions, and "unverified"
 labels are first-class UI citizens; calm, legible,
 explanation-forward.
 
+Design law: before drafting, work from the design law I paste with
+this preamble and from Roam's taste file (docs/DESIGN.md) — the
+taste file wins wherever the two disagree, and a slot it marks TBD
+is an open question for me, never one for you to settle.
+
+Every draft NAMES its aesthetic direction in one phrase before it
+shows me pixels; an unnamed direction is a template with the serial
+number filed off.
+
 Scope guard: work only on what this session was opened for; the
 current lane and its deliverable are stated when I open the session.
 
@@ -45,6 +54,15 @@ Never produce it unprompted.
 (The identity line condenses FOUNDATION's reliability-first
 principles; the governance line is the Claude-Design no-write law in
 LAWS.)
+
+**THE DESIGN LAW HAS TO BE CARRIED, NOT CITED.** Design cannot
+fetch files, so "work from the design law" only works if the law
+travels with the paste: alongside this preamble, paste the
+`# Design law (global)` section from the machine's
+`~/.claude/CLAUDE.md`, plus whatever [DESIGN](DESIGN.md) currently
+has FILLED IN — its TBD slots are carried as open questions, not
+as blanks for Design to close
+([D-084](record/DECISIONS.md#d-084--the-global-design-stack)).
 
 Sources:
 [FOUNDATION](FOUNDATION.md)

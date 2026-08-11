@@ -2,30 +2,34 @@
 type: chronicle-story
 shelf: IV — Roam
 status: living
-updated: 2026-08-06 · written · cloud lane
+updated: 2026-08-11 · the taste file arrives · work PC
 ---
 
 # The Design surface — a rule-carrier for a tool that cannot be given rules any other way
 
-> **CURRENT ENDING (2026-08-06).** Living and unretired.
-> [DESIGN-KICKOFF](../DESIGN-KICKOFF.md) is the pasted preamble that
-> carries Roam's identity, a scope guard, the no-write governance
-> law and a fixed exit format into every Claude Design session —
-> necessary because claude.ai Project instructions do not reach that
-> surface. Design is a **no-write surface**: deliverables leave only
-> as extracted values through "Hand off to Claude Code", never as
-> markup or bundles, and every other export destination is
-> forbidden, because the repo is the only path to the product. The
-> file states its own retirement condition — after
+> **CURRENT ENDING (2026-08-11).** Living, unretired, and no longer
+> the only design rule in the repo.
+> [D-084](../record/DECISIONS.md#d-084--the-global-design-stack)
+> gave Roam a TASTE FILE — [DESIGN](../DESIGN.md), holding the
+> direction, typography, tokens and reference images — and gave the
+> machine a global design law beneath it. The preamble now carries
+> two more lines: work from the design law and the taste file, and
+> NAME the direction in every draft. **The mechanism those lines
+> needed is this item's own oldest lesson, applied again:** Design
+> cannot fetch files, so the law and the taste file have to be
+> CARRIED with the paste, not cited — one more copy someone re-makes
+> by hand, on a bridge where neither side reports staleness. The
+> taste slots ship TBD and are the founder's, so what Design is
+> told to work from is, for now, a set of open questions rather
+> than answers. Everything below still binds: no-write governance,
+> the extraction path, the exit format, and the sunset clause
+> keyed to
 > [V1.S2.T5](../ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)
-> ships, the repo itself becomes the design system Design builds
-> with, and only the governance lines still matter. **Derived at
-> write time: T5 is unticked AND explicitly paused by
-> [D-060](../record/DECISIONS.md#d-060--the-three-phase-standing-order)
-> until phase 2 closes — so the condition has not been met and the
-> whole file still binds.** This item was LEAD-ADDED at the census:
-> no teammate claimed it, and its confidence was recorded as medium
-> for that reason.
+> — **derived at write time: T5 is unticked, and its D-060 pause
+> LIFTED with phase 2's close, so the condition is now merely
+> unmet rather than blocked.** This item was LEAD-ADDED at the
+> census: no teammate claimed it, and its confidence was recorded
+> as medium for that reason.
 
 ## What it is
 
@@ -113,20 +117,40 @@ configuration.
   explicit what the Claude-Design no-write law in
   [LAWS](../LAWS.md#knowledge--tracking) already implied — so there
   was no standing choice to record, only a file to refresh.
+- **[#345](https://github.com/wsher0901/roam/pull/345) — the taste
+  file arrives, and the preamble stops being the only design rule.**
+  [D-084](../record/DECISIONS.md#d-084--the-global-design-stack)
+  adopts a design stack at USER SCOPE on the machine and gives Roam
+  [DESIGN](../DESIGN.md) — a taste file holding direction,
+  typography, tokens and five reference slots, all shipping TBD
+  because they are the founder's to set. Two lines join the
+  preamble: work from the design law and the taste file, and NAME
+  the draft's direction. **The bench had to solve this item's own
+  oldest problem a second time to write them** — Design cannot
+  fetch files, so "work from the taste file" is unfollowable unless
+  the taste file is PASTED ALONGSIDE the preamble, which is now
+  stated in the kickoff's prose rather than assumed. The same PR
+  put a design-review gate in [LAWS](../LAWS.md), which is the
+  first design rule in this workshop that something OTHER than a
+  human paste enforces.
 
 ## Where it stands
 
-Living, binding in full, and waiting on a task that is paused.
+Living, binding in full, and waiting on a task that is no longer
+blocked — only unstarted.
 
 The file's own sunset clause is precise: after V1.S2.T5 ships, the
 repo becomes the design system Design builds with — imported from
 GitHub and self-checked — and **only the governance lines below still
-matter**. Derived today, T5 is unticked, and
+matter**. Derived today, T5 is unticked; its
 [D-060](../record/DECISIONS.md#d-060--the-three-phase-standing-order)
-holds it until phase 2 closes. So the preamble, the working rules and
-the extraction path all remain in force; nothing about this item has
-been superseded, and the "living until replaced" ending is accurate as
-written rather than merely inherited.
+pause LIFTED when phase 2 closed
+([D-081](../record/DECISIONS.md#d-081--phase-2-closes-the-polish-pass-is-split-out-not-dropped)),
+so what holds the sunset now is simply that nobody has run the task.
+The preamble, the working rules and the extraction path all remain in
+force; nothing about this item has been superseded, and the "living
+until replaced" ending is accurate as written rather than merely
+inherited.
 
 Three properties are worth naming.
 
@@ -183,3 +207,9 @@ Down-links only.
   preamble condenses.
 - [SETUP §Staged](../SETUP.md#staged--turns-on-when-its-stage-opens) —
   the Design MCP server, staged rather than stockpiled.
+- [DESIGN](../DESIGN.md) — the taste file the preamble now points
+  at, every slot TBD.
+- [D-084](../record/DECISIONS.md#d-084--the-global-design-stack) ·
+  [the design-stack story](../record/history/workshop/definition/design-stack.md)
+  — [#345](https://github.com/wsher0901/roam/pull/345): the stack,
+  the four layers, and the one-directional override.
