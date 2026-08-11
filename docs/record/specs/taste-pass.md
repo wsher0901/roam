@@ -222,6 +222,28 @@ published page, and it was REJECTED for a concrete reason: that
 surface forbids remote requests, which would have forced probe 1 to
 fake its map. A place-first probe with a fake map tests nothing.
 
+**THE URLS, and the one thing that is not obvious about them:**
+
+```text
+https://roam-git-docs-taste-pass-wsher0901s-projects.vercel.app/spikes/taste/
+```
+
+The branch alias is stable — it follows the branch, not a build, so
+it keeps working as the probes change. **Preview deployments on this
+project are PROTECTED**, so that URL asks for a Vercel login;
+signed in as the project owner it simply opens. For a phone, or any
+browser that is not signed in, a 23-hour share link bypasses the
+wall without changing the project's protection setting, which is
+not a bench's call to weaken. The link rides the gate comment on
+[#349](https://github.com/wsher0901/roam/pull/349), where it can be
+reissued when it expires.
+
+**Every probe was verified AS SERVED**, not merely as authored:
+each URL was opened from the deployment and screenshotted at both
+widths. That check is the reason the protection wall was found at
+all — the first pass captured three identical images, which is what
+a login page looks like when you assume a 200 means your page.
+
 ## The five reference slots
 
 A reference is a TARGET, not a mood — the law says build it,
