@@ -2,10 +2,12 @@
 type: spec
 id: taste-pass
 title: The taste pass — three directions, and the reference slots
-status: open
+status: shipped
 stage: workshop
 branch: docs/taste-pass
+pr: #349
 opened: 2026-08-11
+shipped: 2026-08-11
 ---
 
 # taste-pass — the shortlist, and the choice only the founder can make

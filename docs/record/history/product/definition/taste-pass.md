@@ -1,31 +1,43 @@
 ---
-type: memory
+type: history
 id: taste-pass
-updated: 2026-08-11 · gate · work PC
+shipped: 2026-08-11 20:48 UTC
+pr: #349
 ---
 # taste-pass — the shortlist, and the choice only the founder can make
 
 ## Status
 
-complete, awaiting merge — 2026-08-11
+shipped — merged #349, 2026-08-11
 
-Tower-authored, so the external Web review precedes the founder's
-word. At THE GATE; does not merge.
+The external Web review returned **PASS at `c75549d`**, fetched and
+re-reviewed independently: the repair delta since its prior head was
+exactly the two files, both findings repaired AND drift-proofed, and
+the beyond-mandate edit I disclosed (the status line rewritten
+slot-by-slot) was reviewed and judged lawful rather than waved
+through. Its prior-pass verifications stand at this head — the
+founder's four rulings transcribed faithfully, the probes retained
+runnable with siblings marked not-picked, ROADMAP pointing at a
+one-homed constraint, the IDEAS ledger updated, spec amendments
+recorded in place. It re-ran the full loop itself (7122 links / 0
+broken · 137 ↔ 137 · memory valid · lint · format · 3/3 · build) and
+again named its own limit: Actions was unreachable from that seat,
+so the green was taken as reported and founder-visible.
 
 ## What this task is
 
 Put three real design directions in front of the founder — named,
 with font pairs, palettes and rendered specimens — and define the
 five reference slots, so
-[DESIGN](../DESIGN.md)'s three founder-reserved slots can be
+[DESIGN](../../../../DESIGN.md)'s three founder-reserved slots can be
 filled by a choice rather than by a seat's invention. Contract:
-[the spec](../record/specs/taste-pass.md).
+[the spec](../../../specs/taste-pass.md).
 
 ## Pending issues
 
 **THE PALETTE IS STILL TBD, and saying so is the point.** The
 founder ruled the DIRECTION and the FONT PAIR. Colour was not
-ruled, so [DESIGN](../DESIGN.md) records the picked probe's working
+ruled, so [DESIGN](../../../../DESIGN.md) records the picked probe's working
 values as DERIVED-not-ratified and leaves the slot open. A seat
 that reads those six hexes as decided will have laundered a probe
 shortcut into the product's palette.
@@ -37,7 +49,7 @@ today and they are named as empty rather than quietly dropped.
 ## Left / idle
 
 Nothing on this bench. What it hands forward:
-[V1.S2.T5](../ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)
+[V1.S2.T5](../../../../ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)
 builds the tokens and the app shell against a direction that is now
 SET, and must plan for the map-performance constraint rather than
 meet it; the three empty reference slots and the palette wait on
@@ -48,7 +60,7 @@ the founder and block nothing.
 2026-08-11 · BORN · work PC
 
 **SOLO, AND THE VEHICLE CONDITION IS WORTH NAMING** because
-[D-082](../record/DECISIONS.md#d-082--the-vehicle-chooser) now
+[D-082](../../../DECISIONS.md#d-082--the-vehicle-chooser) now
 requires every triage to state one. The chooser's default at a
 desk is an agent team, and three independent directions is
 genuinely team-shaped work — but the session preamble still
@@ -173,9 +185,9 @@ findings were all about **what the fill decided AROUND the ruling**,
 which is exactly where a bench with a mandate goes wrong.
 
 **THE BLOCKING ONE WAS A CASE TABLE I WROTE MYSELF, IN THE BENCH
-BEFORE THIS ONE.** [DESIGN](../DESIGN.md)'s reserved row named
+BEFORE THIS ONE.** [DESIGN](../../../../DESIGN.md)'s reserved row named
 THREE slots — direction, font pair, references — while
-[D-084](../record/DECISIONS.md#d-084--the-global-design-stack)'s
+[D-084](../../../DECISIONS.md#d-084--the-global-design-stack)'s
 own ownership row names FOUR, including TOKENS. So the palette fell
 through to the catch-all row, whose instruction is "fall through to
 the floor, it is a task-local call" — meaning the file licensed the
@@ -251,8 +263,8 @@ the most reliable prediction available about this bench's output.
 
 ## Where to look
 
-- [the spec](../record/specs/taste-pass.md) — the shortlist and
+- [the spec](../../../specs/taste-pass.md) — the shortlist and
   the reference slots.
-- [D-084](../record/DECISIONS.md#d-084--the-global-design-stack) —
+- [D-084](../../../DECISIONS.md#d-084--the-global-design-stack) —
   why these three slots are the founder's.
-- [DESIGN](../DESIGN.md) — the file this bench fills.
+- [DESIGN](../../../../DESIGN.md) — the file this bench fills.

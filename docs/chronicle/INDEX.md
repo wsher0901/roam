@@ -9,19 +9,21 @@ status: living
 Stamp: 2026-07-27 · born as the [D-059](../record/DECISIONS.md#d-059--the-chronicle-layer) census · home PC ·
 re-stamped 2026-07-28 · the nine owed endings answered · work PC ·
 re-stamped 2026-08-05 · Shelf III slice D written · cloud lane ·
-re-stamped 2026-08-11 · the design stack joins Shelf III · work PC.
+re-stamped 2026-08-11 · the design stack joins Shelf III · work PC ·
+re-stamped 2026-08-11 · Roam's taste joins Shelf IV · work PC.
 
-CENSUS + 66 WRITTEN STORIES, OF 67 ROWS. The 66 that the census was
+CENSUS + 66 WRITTEN STORIES, OF 68 ROWS. The 66 that the census was
 born asking for all exist as of 2026-08-07 — the three-story pilot
 ([D-076](../record/DECISIONS.md#d-076--phase-2-opens-with-a-three-story-pilot)),
 Shelf III slice D (8), and the seven-lane fleet under
 [D-078](../record/DECISIONS.md#d-078--the-55-re-ruled-on-the-cold-number)
 landing shelf by shelf — and their rows link to them; **none of the
-original 66 remains a proposal.** THE 67th ROW IS A NEW ITEM, not a
-survivor: the design stack
-([D-084](../record/DECISIONS.md#d-084--the-global-design-stack)),
-added by the weld that adopted it and carrying no story because that
-weld ADVANCED the item rather than settling it. This is the census
+original 66 remains a proposal.** THE TWO ROWS BEYOND THEM ARE NEW ITEMS, not
+survivors: the design stack
+([D-084](../record/DECISIONS.md#d-084--the-global-design-stack)) and
+ROAM'S TASTE, each added by the weld that created it and each
+carrying no story because that weld ADVANCED the item rather than
+settling it. This is the census
 working as designed rather than a regression — a shelf that could
 only ever shrink would make every item born after 2026-07-27
 invisible to the benches that read it. A
@@ -124,7 +126,7 @@ below).
 | **[pickup — the sit-down briefing (lead-added)](pickup.md)** ✍ WRITTEN | system piece | #1 → #62 → [D-050](../record/DECISIONS.md#d-050--session-lifecycle-closed-is-not-dead) → [D-052](../record/DECISIONS.md#d-052--response-doctrine) → [D-054](../record/DECISIONS.md#d-054--the-landing-skill) | The baton-claiming briefing: self-heal, gather with git outranking the board, repaint if stale, the templated summary, the fleet-resume ask. | medium — added at composition; no teammate claimed it |
 | **[the pacing law (lead-added)](pacing-law.md)** ✍ WRITTEN | system piece | [D-009](../record/DECISIONS.md#d-009--pacing-law) → [D-016](../record/DECISIONS.md#d-016--parallel-ready-menu) → #134 | At most Now + one parallel slot needs the founder; [P] work at Claude's discretion; stopping is a valid next step. | medium — added at composition; no teammate claimed it |
 | **[the micro-PR carve-out (lead-added)](micro-pr-carve-out.md)** ✍ WRITTEN | system piece | [D-002](../record/DECISIONS.md#d-002--handoff-note-merge-policy) → [D-023](../record/DECISIONS.md#d-023--universal-draft-pr-at-birth-and-micro-pr-carve-out) | The one merge that skips the founder: DASHBOARD/IDEAS-only, ritual-written, safe because both surfaces are derived or inbox. | medium — added at composition; no teammate claimed it |
-| **the design stack — a capability on the machine, a taste file in the repo** | system piece | [D-084](../record/DECISIONS.md#d-084--the-global-design-stack) ([#345](https://github.com/wsher0901/roam/pull/345)) | ADVANCED, not settled, on 2026-08-11: the stack is installed and verified on the WORK PC ONLY (plugin · playwright + shadcn MCP servers · a global design law · the `design-review` agent), [DESIGN](../DESIGN.md) holds Roam's taste and OVERRIDES that law one-directionally, and [LAWS](../LAWS.md#workflow-non-negotiable) gates UI diffs on the agent. Three things are still owed and each has a line: the HOME PC has no stack, the FOUNDER'S TASTE PASS has not run (direction, font pair, five references all TBD), and the third-party-skill question is open. The end-to-end path — agent driving playwright — is proven in its PARTS and not as a whole, because MCP servers bind at session start. | high — born with the weld that adopted it |
+| **the design stack — a capability on the machine, a taste file in the repo** | system piece | [D-084](../record/DECISIONS.md#d-084--the-global-design-stack) ([#345](https://github.com/wsher0901/roam/pull/345)) | ADVANCED, not settled, on 2026-08-11: the stack is installed and verified on the WORK PC ONLY (plugin · playwright + shadcn MCP servers · a global design law · the `design-review` agent), [DESIGN](../DESIGN.md) holds Roam's taste and OVERRIDES that law one-directionally, and [LAWS](../LAWS.md#workflow-non-negotiable) gates UI diffs on the agent. Three things are still owed and each has a line: the HOME PC has no stack, the FOUNDER'S TASTE PASS has not run (direction, font pair, five references all TBD), and the third-party-skill question is open. The end-to-end path — agent driving playwright — is proven in its PARTS and not as a whole, because MCP servers bind at session start. ADVANCED 2026-08-11 ([#349](https://github.com/wsher0901/roam/pull/349)): the TASTE PASS RAN, so the stack's reserved slots are no longer all empty — a direction and a font pair are set — and the screenshot loop turned out to be GENERATIVE before it was ever used as a review instrument, rendering candidate directions so a matter of taste became a matter of looking. Still owed: the home PC, the colour tokens, and the third-party-skill question. | high — born with the weld that adopted it |
 
 ## Shelf IV — Roam
 
@@ -140,6 +142,7 @@ The product itself — read by the lead (14 history stories).
 | **[source vetting and SOURCES](source-vetting.md)** ✍ WRITTEN | product piece | #37 → the batch-1 arc ([D-019](../record/DECISIONS.md#d-019--launch-mechanics-correction) → [D-020](../record/DECISIONS.md#d-020--parallel-lanes-v2)) → #87 ([D-026](../record/DECISIONS.md#d-026--roadmap-recut)) | Weather is vetted end-to-end (Open-Meteo, Grade A); T3–T6 RELAUNCH FROM SCRATCH on the founder's 2026-07-28 word, briefed with four audit riders and gated behind phases 1–2. | high |
 | **[ENGINE — the brain on paper](engine.md)** ✍ WRITTEN | product piece | #95 ([D-028](../record/DECISIONS.md#d-028--consolidation-recut-decision-policy-becomes-engine); [D-021](../record/DECISIONS.md#d-021--plan-synthesis-principles-re-home) lineage) | Ten pipeline stages with rules-in-slots and a numbered OPEN register — nine questions parked until V1.S3 opens. | high |
 | **[the app skeleton](app-skeleton.md)** ✍ WRITTEN | product piece | #19 → #25 → #29 (V1.S2.T1–T3) → #167 | A runnable Next.js app on Vercel with CI gates and a Supabase Postgres, the engine isolated in engine/ by lint rule. | high |
+| **Roam's taste — the direction, and the file that holds it** | product piece | [D-084](../record/DECISIONS.md#d-084--the-global-design-stack) → [#349](https://github.com/wsher0901/roam/pull/349) | ADVANCED, not settled, on 2026-08-11: [DESIGN](../DESIGN.md) exists and names a direction — **`place-first`**, the plan on a living map, place as the ground, provenance pinned to place — chosen from LIVE motion probes after a static round was rejected for varying the typeface inside one metaphor. Faces ratified as worn (Archivo · Public Sans · JetBrains Mono), weights deliberately NOT ratified, two reference slots seeded by the picked probe, which stays in the repo runnable because a reference for motion cannot be a screenshot. STILL RESERVED AND UNRULED: the colour tokens and three reference images. The direction carries its own cost, named by the founder at the moment of choosing: map performance on mid-range phones is a design constraint [V1.S2.T5](../ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1) plans for rather than discovers. | high — born with the weld that filled the file |
 | **[the Design surface (lead-added)](design-surface.md)** ✍ WRITTEN | product piece | #64 → #97 | DESIGN-KICKOFF governs Claude Design sessions as a no-write surface — tokens enter the repo only by paste block — living until the repo-synced design system replaces it. | medium — added at composition; no teammate claimed it |
 
 ## Founder input owed
