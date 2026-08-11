@@ -100,7 +100,10 @@ database connected.
       the S1 schema as migrations; minimal seed data
 - [ ] V1.S2.T5 [P after T1] Design foundations — tokens (palette, type
       scale, spacing, radii), shadcn theme, Motion principles
-      (durations, springs), app shell layout deployed
+      (durations, springs), app shell layout deployed. Taste is SET:
+      [DESIGN](DESIGN.md) names the direction (`place-first`) and the
+      font pair, and carries the constraint this task must PLAN for
+      rather than discover — map performance on mid-range phones
 
 ### V1.S3 — Engine core + two families deep
 Binding requirements: [ENGINE — Aggregate · Synthesize · Gate](ENGINE.md#5-aggregate--one-score)

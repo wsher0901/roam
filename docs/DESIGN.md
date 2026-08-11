@@ -11,12 +11,15 @@ machine; where this file disagrees with it, THIS FILE WINS, and a
 seat obeys it without argument
 ([D-084](record/DECISIONS.md#d-084--the-global-design-stack)).
 
-**Every taste slot below is TBD, awaiting the founder's taste
-pass.** A TBD is not a blank to be helpfully filled — it is an
-UNMADE DECISION, and the global law's "commit to one named
-direction before any UI code" cannot be satisfied by a seat
-inventing one here.
-→ its line in [IDEAS](IDEAS.md)
+**THE TASTE PASS RAN ON 2026-08-11 AND THE FOUNDER PICKED.** The
+direction and the font pair are SET below and are no longer open
+questions. What remains TBD is named as such, slot by slot: three
+of the five reference images, and the colour tokens, which the
+founder has not ruled.
+
+A TBD is still not a blank to be helpfully filled — it is an UNMADE
+DECISION. The rule below is unchanged and now applies to fewer
+slots.
 
 **WHAT A TBD MEANS FOR THE SEAT THAT HITS ONE**, because silence
 is not the same as disagreement and
@@ -40,10 +43,36 @@ Sources:
 
 ## Direction
 
-**TBD — awaiting the founder's taste pass.**
+# place-first
 
-One NAMED aesthetic direction, in the founder's words. Not a mood,
-not a list of adjectives — a name a seat can be held to.
+**Ruled by the founder 2026-08-11.** The name is the whole
+instruction, and it is three clauses:
+
+- **The plan lives on a living map.** Not a list with a map beside
+  it — the map is the surface the plan happens on.
+- **Place is the ground.** Everything else — days, stops, cards,
+  detail — sits on top of place and moves with respect to it. When
+  the plan changes, the camera is how you feel the change.
+- **Provenance pins to place.** A source is not a footnote at the
+  bottom of a card; it belongs to the point on the map it is about.
+
+The direction was chosen from a LIVE probe rather than a still,
+after a first round of static candidates was rejected for varying
+the typeface inside a single metaphor. That history, and the two
+families that lost, are in
+[the spec](record/specs/taste-pass.md).
+
+**WHAT THIS DIRECTION COSTS, stated at the moment of choosing
+rather than discovered later: place-first makes MAP PERFORMANCE ON
+MID-RANGE PHONES A DESIGN CONSTRAINT.** A map is the most expensive
+thing a phone can render, and this direction puts one under
+everything.
+[V1.S2.T5](ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)
+PLANS FOR IT — tile strategy, camera-move budget, and what the
+surface degrades to when the map cannot keep up — rather than
+meeting it as a surprise once the shell is built. This is the
+founder's ruling, recorded here because it is a consequence of the
+direction and therefore belongs with the direction.
 
 What is already fixed, and constrains any direction chosen:
 Roam's identity is **trust made visible** — confidence badges,
@@ -55,22 +84,42 @@ buries provenance is wrong for this product however good it looks.
 
 ## Typography
 
-**TBD — awaiting the founder's taste pass.**
+**RATIFIED 2026-08-11**, as worn by the picked probe:
 
-- Display face: TBD
-- Body face: TBD
-- Utility/mono face (captions, data, badges): TBD
+| Role | Face | Weights in real use |
+|---|---|---|
+| Display | **Archivo** | 200 and 800 — the extremes |
+| Body | **Public Sans** | 400, with 700 for emphasis |
+| Utility — sources, times, badges, counts | **JetBrains Mono** | 500 and 700 |
 
-**The font pair is one of the three reserved slots: a seat asks,
-it does not choose.** The global law's other typography rules do
-apply beneath this heading — weight extremes (200 / 800) rather
-than 400/600, hierarchy from scale jumps of 3× or more — and so
-does its banned-as-default list: Inter, Roboto, Open Sans, Arial,
-`system-ui`.
+**THE PROBE'S WEIGHTS WERE A SHORTCUT AND ARE NOT THE RULE.** It
+loaded Archivo at 500/800 and Public Sans at 400/600 because a
+probe loads what it needs to be felt. Real usage follows the global
+law: **weight extremes — 200 and 800 — rather than living at
+400/600**, and hierarchy from SCALE JUMPS of 3× or more rather than
+from nudging sizes. Where the probe and this table disagree, this
+table wins; the probe is a reference for MOTION and LAYOUT, never
+for type weights.
+
+The banned-as-default list still applies: Inter, Roboto, Open Sans,
+Arial, `system-ui`.
 
 ## Color & tokens
 
-**TBD — awaiting the founder's taste pass.**
+**TBD — the founder ruled the direction and the font pair, NOT the
+palette.** What follows is the picked probe's WORKING PALETTE,
+recorded because it is what the founder saw and approved as a whole
+— but it is DERIVED FROM the ratified probe, not ratified in its
+own right, and it is provisional until the token pass:
+
+| Token | Value | Role in the probe |
+|---|---|---|
+| ink | `#0E1417` | text, chrome |
+| paper | `#F7F7F4` | the rail and sheets that sit on the map |
+| muted | `#6A737A` | secondary text, sources |
+| rule | `#E2E3DE` | hairlines between stops |
+| place | `#0B7A6B` | the map's own accent — pins, place-belonging |
+| signal | `#E8590C` | caught conflicts and unverified facts, ONLY |
 
 One dominant colour plus one sharp accent; everything else
 neutral. Confidence states (checked · unverified · stale) need
@@ -88,18 +137,31 @@ in TWO files is a contradiction waiting to ship.
 
 ## Reference images
 
-**Five slots, all empty.** When a reference is present it is THE
-TARGET, not inspiration: build it, screenshot at 375px and 1440px,
-compare, iterate — three passes maximum, then report the remaining
-gap.
+**Two slots are SEEDED, three stay founder-supplied.** When a
+reference is present it is THE TARGET, not inspiration: build it,
+screenshot at 375px and 1440px, compare, iterate — three passes
+maximum, then report the remaining gap.
 
 | # | Reference | What it is the reference FOR | Added |
 |---|---|---|---|
-| 1 | *(empty)* | — | — |
-| 2 | *(empty)* | — | — |
-| 3 | *(empty)* | — | — |
-| 4 | *(empty)* | — | — |
-| 5 | *(empty)* | — | — |
+| 1 | *(empty — TBD)* | the plan day: how a long day reads without becoming a list | — |
+| 2 | *(empty — TBD)* | the provenance layer: a claim carrying its source without the source shouting louder | — |
+| 3 | [`place-first.html`](../public/spikes/taste/place-first.html) | **the opening moment** — the camera arriving, the day assembling on top of place, provenance appearing in sequence | 2026-08-11 |
+| 4 | [`place-first.html`](../public/spikes/taste/place-first.html) | **motion** — spring character, stagger, and a caught conflict announcing itself IN TIME rather than appearing already-arrived | 2026-08-11 |
+| 5 | *(empty — TBD)* | the ANTI-reference: one thing Roam must NOT look like, which makes the banned-defaults list checkable | — |
+
+**SLOTS 3 AND 4 ARE SEEDED BY THE PICKED PROBE ITSELF**, which is
+why it lives in this repo rather than being deleted with the round
+that produced it: a reference has to be OPENABLE, and a screenshot
+of motion is not a reference for motion. Run it, do not read it.
+Its two rejected siblings sit beside it as the material that lost,
+clearly marked in that folder's index and referenced by nothing.
+
+**The probe is a reference for MOTION AND LAYOUT ONLY.** Its type
+weights are superseded by the table above, and its palette is
+provisional per §Color & tokens. A reference with no stated scope
+gets applied to everything, which is exactly the failure this
+column exists to prevent.
 
 A slot names what it governs — a whole page, a component, a
 motion feel — because a reference with no stated scope gets

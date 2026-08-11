@@ -1,14 +1,16 @@
 ---
 type: memory
 id: taste-pass
-updated: 2026-08-11 · birth · work PC
+updated: 2026-08-11 · gate · work PC
 ---
 # taste-pass — the shortlist, and the choice only the founder can make
 
 ## Status
 
-bench ready — born 2026-08-11 at the work PC control tower, on the
-founder's word "prepare the taste-pass shortlist".
+complete, awaiting merge — 2026-08-11
+
+Tower-authored, so the external Web review precedes the founder's
+word. At THE GATE; does not merge.
 
 ## What this task is
 
@@ -21,23 +23,25 @@ filled by a choice rather than by a seat's invention. Contract:
 
 ## Pending issues
 
-**BLOCKED — the founder's choice of FAMILY, round two.** Three live
-probes are deployed and verified as served; the question is
-place-first · object-first · type-first · or none, with why.
-Nothing reaches [DESIGN](../DESIGN.md) until the word.
+**THE PALETTE IS STILL TBD, and saying so is the point.** The
+founder ruled the DIRECTION and the FONT PAIR. Colour was not
+ruled, so [DESIGN](../DESIGN.md) records the picked probe's working
+values as DERIVED-not-ratified and leaves the slot open. A seat
+that reads those six hexes as decided will have laundered a probe
+shortcut into the product's palette.
 
-**ROUND ONE'S RECOMMENDATION IS DEAD, and a resuming seat must not
-resurrect it.** A/B/C were all rejected — not on execution but on
-AXIS. Their palettes and pairs survive as material; the font pair
-is now a separate founder call, deliberately unbundled from the
-family pick.
+**THREE REFERENCE SLOTS REMAIN FOUNDER-SUPPLIED** — the plan day,
+the provenance layer, and the anti-reference. They block nothing
+today and they are named as empty rather than quietly dropped.
 
 ## Left / idle
 
-On the word: fill [DESIGN](../DESIGN.md)'s direction, font pair
-and reference-slot table with the chosen values, then ship. The
-reference IMAGES stay the founder's to supply — the slots define
-what each governs, not what fills it.
+Nothing on this bench. What it hands forward:
+[V1.S2.T5](../ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)
+builds the tokens and the app shell against a direction that is now
+SET, and must plan for the map-performance constraint rather than
+meet it; the three empty reference slots and the palette wait on
+the founder and block nothing.
 
 ## The story
 
@@ -125,6 +129,39 @@ the entire point of round two. Every timing claim in the spec is
 authored, not measured — the founder's own hands are the
 instrument here, and that is exactly what the inbox line about the
 motion-blind design-review gate is for.
+
+2026-08-11 · THE PICK · work PC
+
+**PLACE-FIRST, and the ruling came with its own cost attached** —
+the founder named map performance on mid-range phones a DESIGN
+constraint in the same breath as the direction. That is the
+sentence I would not have written unprompted, and it is the most
+valuable line in the file: a map under everything is the most
+expensive thing a phone renders, and the difference between
+planning for it at T5 and discovering it at T5 is the difference
+between a budget and a rewrite. It is recorded WITH the direction,
+because it is a consequence of the direction rather than a
+separate fact.
+
+**WHAT THE PICK DID TO THIS BENCH'S OWN CONTRACT.** The spec said
+only extracted VALUES enter the repo and markup stays scaffolding —
+a rule copied from the Claude Design surface, and correct for round
+one's static specimens. The pick broke it: reference slots 3 and 4
+are seeded by the probe ITSELF, because **a reference for motion
+cannot be a value or a screenshot — it has to be runnable.** The
+out-of-scope bullet is struck through and amended in place rather
+than quietly rewritten, so a later reader sees that the contract
+changed and why.
+
+**THE RATIFICATION IS NARROWER THAN IT LOOKS, DELIBERATELY.** The
+founder ratified the pair AS WORN, and named the probe's
+single-weight loads as shortcuts — so DESIGN.md carries Archivo at
+200/800 rather than the probe's 500/800, and says which wins where
+they disagree. Colour got no ruling at all, so the palette is
+recorded as DERIVED and left TBD. The temptation was to treat
+"picked the probe" as "approved everything in the probe"; that
+would have promoted six hex values nobody chose into the product's
+palette.
 
 ## Where to look
 

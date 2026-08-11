@@ -38,12 +38,16 @@ stops.
   The first screen belongs to
   [V1.S2.T5](../../ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1);
   this bench only decides what it should look like.
-- **The specimen markup.** Three specimen pages were built and
-  screenshotted to make the choice real rather than imagined, but
-  only their EXTRACTED VALUES enter the repo — the font stacks and
-  the hex values below. The markup is scaffolding, and the same
-  rule the Claude Design surface obeys applies here: values enter,
-  markup does not.
+- **The specimen markup** — ~~only EXTRACTED VALUES enter the
+  repo; the markup is scaffolding~~. **AMENDED AT THE PICK, and the
+  amendment is the founder's ruling rather than a drift:** round
+  one's static specimens obeyed this and are gone, but the PICKED
+  ROUND-TWO PROBE now SEEDS reference slots 3 and 4, so its markup
+  lives in `public/spikes/taste/` on purpose. The reason is exact:
+  **a reference for MOTION cannot be a value or a screenshot — it
+  has to be runnable.** The two rejected probes sit beside it as
+  the material that lost, marked as such in that folder's index and
+  referenced by nothing.
 - **The reference IMAGES themselves.** This bench defines what each
   of the five slots is FOR; the images are the founder's to supply
   or approve.
@@ -273,14 +277,25 @@ what makes that ban checkable by the design-review agent.
 - [x] The five reference slots each name what they govern.
 - [x] ROUND ONE: three directions offered, ALL THREE REJECTED —
       the axis was wrong, not the execution.
-- [ ] ROUND TWO: three families built as LIVE probes, judged in
-      motion at both widths; the founder has chosen a family (or
-      "none, with why").
-- [ ] [DESIGN](../../DESIGN.md)'s reserved slots are filled with
-      that choice and nothing else. The font pair is a SEPARATE
-      founder call, not bundled into the family pick.
+- [x] ROUND TWO: three families built as LIVE probes, judged in
+      motion at both widths; the founder chose **PLACE-FIRST** on
+      2026-08-11.
+- [x] [DESIGN](../../DESIGN.md)'s reserved slots are filled with
+      that choice and nothing else: the direction `place-first` with
+      its three clauses, the font pair RATIFIED as worn by the picked
+      probe (Archivo · Public Sans · JetBrains Mono, at the global
+      law's weights rather than the probe's shortcuts), and
+      reference slots 3 and 4 seeded by the probe itself. Slots 1,
+      2 and 5 stay TBD and say so; the PALETTE stays TBD too,
+      recorded as the probe's working values because the founder
+      ruled the direction and the pair, not the colour.
+- [x] The direction's cost is recorded WITH the direction: map
+      performance on mid-range phones is a design constraint that
+      [V1.S2.T5](../../ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)
+      plans for rather than discovers.
 - [ ] Gates green; the pushed head's Actions run green.
-- [ ] Shipped to THE GATE — not merged.
+- [x] Shipped to THE GATE — not merged. Tower-authored, so the
+      external Web review precedes the founder's word.
 
 ## Notes for whoever resumes this bench
 
