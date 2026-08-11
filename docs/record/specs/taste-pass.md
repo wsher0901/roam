@@ -62,14 +62,140 @@ stops.
 5. Stop at a `BLOCKED:` question. On the founder's word, fill
    [DESIGN](../../DESIGN.md) and ship.
 
+## The three directions
+
+Each was built as a specimen page carrying IDENTICAL content — a
+Kanazawa plan day with three checked facts, one unverified, and
+one caught conflict — and rendered at 375px and 1440px, so what
+differs below is the design and never the copy.
+
+**The calibration check, run before anything else.** The
+`frontend-design` skill names three looks that AI produces
+regardless of subject: (1) cream ground + high-contrast serif +
+terracotta accent, (2) near-black ground + one acid accent, (3)
+broadsheet columns with hairline rules and zero radius. **None of
+the three below is any of those**, and two of them were moved
+deliberately to avoid one: A's ground is pale sage rather than
+cream and its accent ochre rather than terracotta; B is a LIGHT
+instrument rather than the dark-plus-acid default.
+
+### A · ALMANAC — a field guide that happens to be a trip
+
+The aesthetic of a printed reference: plates, captions, generous
+margins, a source under every claim. It says *this is a document
+you can check*, not a feed you scroll.
+
+| | |
+|---|---|
+| Display | **Fraunces** — weights 200 and 800 |
+| Body | **Newsreader** — 400, italic for asides |
+| Utility | **IBM Plex Mono** — 600, for sources, times, badges |
+| Ground | `#E9EBE3` pale sage-grey |
+| Ink | `#14231C` deep forest |
+| Accent | `#9A6B12` ochre |
+| Muted | `#66705F` · rules `#C8CCBE` · plate `#DFE3D7` |
+
+**Read at both widths:** the most pleasant to read by a distance,
+and the mobile column is genuinely lovely. **And its problem is
+structural, not fixable by tuning:** the CAUGHT callout is the
+quietest element on the page. A field guide's whole manner is
+unhurried, which is the opposite of "we found a problem before you
+left". The direction fights the promise.
+
+### B · INSTRUMENT — confidence as a readout
+
+The aesthetic of a measuring device, in light rather than dark. A
+strip of readings sits above the plan: stops, checked, unverified,
+conflicts caught. Unverified is drawn as an OUTLINE rather than a
+second colour — the absence of ink is the signal.
+
+| | |
+|---|---|
+| Display | **Space Grotesk** — 300 and 700 |
+| Body | **IBM Plex Sans** — 400, 600 |
+| Utility | **IBM Plex Mono** — 600 |
+| Ground | `#DFE3E4` cool grey · panel `#EDEFEF` |
+| Ink | `#0F1416` |
+| Accent | `#1B3FE0` electric blue |
+| Muted | `#5E686B` · rules `#C3CACC` |
+
+**Read at both widths:** the readout strip is the strongest single
+idea in the whole shortlist — it is the only direction where **the
+number of problems caught is visible before you read a word**, and
+it survives the mobile collapse into a 2×2 grid. The cost is
+temperature: the grey ground is inert, and travel is not an inert
+subject.
+
+### C · SIGNAGE — wayfinding, where the warning is the loudest thing
+
+The aesthetic of transit signage: a colour band, platform-number
+time chips, one signal colour that means *look here*. Yellow is
+spent ONLY on caught conflicts and unverified facts — nowhere
+else, ever.
+
+| | |
+|---|---|
+| Display | **Bricolage Grotesque** — 200 and 800 |
+| Body | **Public Sans** — 400, 700 |
+| Utility | **JetBrains Mono** — 500, 700 |
+| Ground | `#FAFAF7` off-white |
+| Ink | `#111214` |
+| Dominant | `#005EB8` rail blue |
+| Signal | `#FFD100` — reserved for caught + unverified |
+| Muted | `#5A5F66` · rules `#DEDFDA` |
+
+**Read at both widths:** the caught conflict is the loudest thing
+on the page at 1440px AND at 375px, which is the only direction
+where the visual hierarchy matches what the product is FOR. Time
+chips read as platform numbers without being told. Two risks, both
+real: yellow at scale fatigues, so the discipline of spending it
+only on signal is load-bearing rather than stylistic; and this is
+the most branded of the three, so it will date fastest.
+
+### The recommendation
+
+**C · SIGNAGE, with B's readout strip grafted in.**
+
+The reasoning is one sentence: Roam's promise is that it CATCHES
+things, and C is the only direction where the caught thing is the
+loudest element on the screen. A is the best reading experience
+and the wrong instrument for this promise — its manner is calm
+where the product needs to be pointed. B has the best single
+component, and that component transplants cleanly: the readout
+strip in C's palette, above the plan, turns "two problems found"
+into something you see before you read.
+
+**What the graft costs:** C's signal yellow and B's blue readout
+must not compete, so the readout stays neutral — counts in ink,
+only the non-zero unverified/conflict figures picking up colour.
+
+## The five reference slots
+
+A reference is a TARGET, not a mood — the law says build it,
+screenshot at both widths, compare, three passes maximum. So each
+slot names what it GOVERNS, because a reference with no stated
+scope gets applied to everything.
+
+| # | Governs | What a good reference for it shows |
+|---|---|---|
+| 1 | **The plan day** — the densest screen | how a long day reads without becoming a list; where the eye rests |
+| 2 | **The provenance layer** — badges, source lines, the unverified state | how a claim carries its source without the source shouting louder than the claim |
+| 3 | **The opening moment** — first run, empty state, the six questions | how a product asks for input without a form; the voice |
+| 4 | **Motion** — what an edit feels like when it re-validates the whole plan | timing and restraint; how change is shown without the page jumping |
+| 5 | **The ANTI-reference** — one thing Roam must NOT look like | names the failure concretely, so the banned-defaults list stops being abstract |
+
+Slot 5 is the unusual one and it earns its place: the global
+design law bans defaults in words, and a named anti-reference is
+what makes that ban checkable by the design-review agent.
+
 ## Done means
 
-- [ ] Three directions, each with the calibration check stated —
+- [x] Three directions, each with the calibration check stated —
       no direction lands in one of the three named AI-default
       clusters.
-- [ ] Specimens rendered at both widths and READ, not merely
+- [x] Specimens rendered at both widths and READ, not merely
       produced.
-- [ ] The five reference slots each name what they govern.
+- [x] The five reference slots each name what they govern.
 - [ ] The founder has chosen; [DESIGN](../../DESIGN.md)'s three
       reserved slots are filled with that choice and nothing else.
 - [ ] Gates green; the pushed head's Actions run green.

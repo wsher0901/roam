@@ -21,11 +21,18 @@ filled by a choice rather than by a seat's invention. Contract:
 
 ## Pending issues
 
-None yet. The bench ends at a founder decision by design.
+**BLOCKED — the founder's choice.** Three directions are specced
+with values and rendered specimens; the recommendation is C ·
+SIGNAGE with B's readout strip grafted. Nothing reaches
+[DESIGN](../DESIGN.md) until the word, and a resuming seat must
+not read the recommendation as the decision.
 
 ## Left / idle
 
-Everything — the bench is at birth.
+On the word: fill [DESIGN](../DESIGN.md)'s direction, font pair
+and reference-slot table with the chosen values, then ship. The
+reference IMAGES stay the founder's to supply — the slots define
+what each governs, not what fills it.
 
 ## The story
 
@@ -41,6 +48,30 @@ carries the retired no-agents instruction (board Needs-you item
 it is edited. So this runs solo, and the condition that fired is
 not one of the chooser's: it is the un-retired instruction itself,
 which is exactly the cost that Needs-you line predicted.
+
+**THE SPECIMENS ARE THE POINT, AND THEY CHANGED THE ANSWER.** The
+directions were designed on paper first, and on paper A · ALMANAC
+was the obvious recommendation — a field guide is what a
+validity-first planner IS, and the reference-book manner maps
+straight onto provenance. **Rendering it killed the
+recommendation.** At both widths the CAUGHT callout is the
+quietest thing on the page: a field guide's whole voice is
+unhurried, and the product's promise is "we found a problem before
+you left". That is not a tuning problem — a louder callout in A
+would be a callout fighting its own direction. The specimen was
+the only thing that could have shown this, and it took about
+fifteen minutes to find out.
+
+**THE STACK PAID FOR ITSELF ONE DAY AFTER IT LANDED**, and not in
+the way the bench that installed it predicted. Its screenshot loop
+was justified as a REVIEW instrument — build, screenshot, compare
+against a reference. Its first real use was GENERATIVE: three
+directions rendered side by side turned a matter of taste into a
+matter of looking. Also worth recording: the MCP path still could
+not be used, because these servers bind at session start and this
+session predates them, so the loop ran through the Playwright CLI
+exactly as the smoke test did. The capability is real; the
+plumbing to the agent remains unexercised.
 
 ## Where to look
 
