@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Roam probe · 3 · TYPE-FIRST</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,200;9..144,800&family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,600&family=IBM+Plex+Mono:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --ink: #191614;
+        --paper: #f5f2ec;
+        --muted: #6e675e;
+        --rule: #ddd7cc;
+        --signal: #14508c;
+        --wash: #e9e4da;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: "Newsreader", serif;
+        font-size: 19px;
+        line-height: 1.55;
+        overflow-x: hidden;
+      }
+      .wrap {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: clamp(16px, 4vw, 44px) clamp(20px, 5vw, 40px) 42vh;
+      }
+      .chrome {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 30px;
+      }
+      .badge {
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 10px;
+        font-weight: 600;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        background: var(--ink);
+        color: var(--paper);
+        padding: 6px 9px;
+      }
+      .prov {
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 9.5px;
+        letter-spacing: 0.06em;
+        color: var(--muted);
+      }
+
+      h1 {
+        font-family: "Fraunces", serif;
+        font-weight: 200;
+        font-size: clamp(46px, 10vw, 116px);
+        line-height: 0.92;
+        letter-spacing: -0.03em;
+        margin: 0 0 10px;
+      }
+      h1 .w {
+        display: inline-block;
+        opacity: 0;
+      }
+      h1 em {
+        font-style: normal;
+        font-weight: 800;
+      }
+      .deck {
+        font-size: 21px;
+        color: var(--muted);
+        font-style: italic;
+        margin: 0 0 46px;
+        max-width: 34ch;
+        opacity: 0;
+      }
+
+      .entry {
+        padding: 30px 0;
+        border-top: 1px solid var(--rule);
+        opacity: 0;
+      }
+      .tm {
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 11.5px;
+        font-weight: 600;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: var(--muted);
+        display: block;
+        margin-bottom: 7px;
+      }
+      .nm {
+        font-family: "Fraunces", serif;
+        font-weight: 800;
+        font-size: clamp(27px, 4.6vw, 40px);
+        letter-spacing: -0.02em;
+        line-height: 1.05;
+        margin: 0 0 8px;
+        cursor: pointer;
+        display: inline-block;
+      }
+      .ds {
+        margin: 0 0 12px;
+        max-width: 52ch;
+      }
+      .src {
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 11.5px;
+        color: var(--muted);
+        display: inline-block;
+        position: relative;
+        padding-bottom: 3px;
+      }
+      .src i {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 1.5px;
+        width: 0;
+        background: var(--ink);
+        display: block;
+      }
+      .src.un i {
+        background: var(--signal);
+      }
+      .tag {
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 9.5px;
+        font-weight: 600;
+        letter-spacing: 0.13em;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin-left: 9px;
+      }
+
+      .caught {
+        margin: 34px 0 0;
+        padding: 0;
+        font-family: "Fraunces", serif;
+        font-weight: 200;
+        font-size: clamp(21px, 4.2vw, 38px);
+        line-height: 1.12;
+        letter-spacing: -0.02em;
+        min-height: 1.2em;
+      }
+      .caught .old {
+        position: relative;
+        color: var(--muted);
+        display: inline-block;
+        white-space: nowrap;
+      }
+      .caught .old i {
+        position: absolute;
+        left: 0;
+        top: 56%;
+        height: 2px;
+        width: 0;
+        background: var(--signal);
+        display: block;
+      }
+      .caught .new {
+        color: var(--signal);
+        font-weight: 800;
+        display: inline-block;
+        opacity: 0;
+      }
+      .caught .cursor {
+        display: inline-block;
+        width: 0.5ch;
+        background: var(--signal);
+        animation: blink 1s steps(2) infinite;
+      }
+      @keyframes blink {
+        0%,
+        49% {
+          opacity: 1;
+        }
+        50%,
+        100% {
+          opacity: 0;
+        }
+      }
+
+      .detail {
+        position: fixed;
+        inset: 0;
+        z-index: 20;
+        background: var(--paper);
+        padding: clamp(24px, 6vw, 72px);
+        display: none;
+        flex-direction: column;
+        gap: 14px;
+      }
+      .detail h2 {
+        font-family: "Fraunces", serif;
+        font-weight: 800;
+        font-size: clamp(34px, 7vw, 72px);
+        letter-spacing: -0.03em;
+        line-height: 0.98;
+        margin: 0;
+      }
+      .detail p {
+        margin: 0;
+        max-width: 56ch;
+      }
+      .detail .m {
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 12px;
+        color: var(--muted);
+      }
+      .back {
+        margin-top: auto;
+        align-self: flex-start;
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 10px;
+        font-weight: 600;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        background: var(--ink);
+        color: var(--paper);
+        border: 0;
+        padding: 11px 15px;
+        cursor: pointer;
+      }
+      .replay {
+        position: fixed;
+        right: 16px;
+        bottom: 16px;
+        z-index: 30;
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 10px;
+        font-weight: 600;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        background: var(--ink);
+        color: var(--paper);
+        border: 0;
+        padding: 10px 14px;
+        cursor: pointer;
+      }
+      .scrollhint {
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 10px;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin-top: 38px;
+        opacity: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="chrome">
+        <span class="badge">Probe 3 · Type-first</span>
+        <span class="prov"
+          >type pair provisional — the pair is the founder's call at pick
+          time</span
+        >
+      </div>
+
+      <h1 id="h1"></h1>
+      <p class="deck" id="deck">
+        Four stops. Two problems found before you leave.
+      </p>
+      <p class="scrollhint" id="hint">
+        scroll — the sources draw themselves in
+      </p>
+
+      <div id="entries"></div>
+
+      <p class="caught" id="caught"></p>
+    </div>
+
+    <div class="detail" id="detail">
+      <h2 id="d-n"></h2>
+      <p id="d-d"></p>
+      <p class="m" id="d-s"></p>
+      <button class="back" id="back">Back to the day</button>
+    </div>
+    <button class="replay" id="replay">Replay</button>
+
+    <script type="module">
+      import {
+        animate,
+        spring,
+        stagger,
+        inView,
+      } from "https://cdn.jsdelivr.net/npm/motion@13.1.0/+esm";
+
+      const SET = { type: spring, bounce: 0.3, duration: 0.8 };
+      const STOPS = [
+        {
+          t: "09:40",
+          n: "Omicho Market",
+          d: "Open from 09:00; the seafood stalls thin out after 13:00.",
+          s: "market association hours · fetched today",
+          st: "Checked",
+        },
+        {
+          t: "11:15",
+          n: "Kenroku-en",
+          d: "Winter closing is 17:00, not 18:00 — your later plan had you arriving at 17:30.",
+          s: "prefectural park calendar · seasonal table",
+          st: "Checked",
+        },
+        {
+          t: "14:00",
+          n: "21st Century Museum",
+          d: "Closed today. Moved to day four, which is already near the same district.",
+          s: "museum calendar · public holidays applied",
+          st: "Checked",
+        },
+        {
+          t: "16:20",
+          n: "Notojima ferry",
+          d: "May not run in high wind. No machine-readable timetable exists for this operator.",
+          s: "operator has no published feed · treat as a guess",
+          st: "Unverified",
+        },
+      ];
+
+      // the headline is set as words so it can assemble
+      const H1 = ["Day", "three,", "<em>Kanazawa.</em>"];
+      document.getElementById("h1").innerHTML = H1.map(
+        (w) => `<span class="w">${w}</span>`,
+      ).join(" ");
+
+      const entries = document.getElementById("entries");
+      const nodes = STOPS.map((s, i) => {
+        const el = document.createElement("article");
+        el.className = "entry";
+        el.innerHTML = `<span class="tm">${s.t}</span>
+    <h3 class="nm">${s.n}</h3>
+    <p class="ds">${s.d}</p>
+    <span class="src ${s.st === "Unverified" ? "un" : ""}">${s.s}<i></i></span>
+    <span class="tag">${s.st}</span>`;
+        el.querySelector(".nm").addEventListener("click", () =>
+          open(i, el.querySelector(".nm")),
+        );
+        entries.appendChild(el);
+        return el;
+      });
+
+      // ── sources underline themselves in, as they are read
+      nodes.forEach((el) => {
+        inView(
+          el,
+          () => {
+            animate(el, { opacity: [0, 1], y: [26, 0] }, SET);
+            animate(
+              el.querySelector(".src i"),
+              { width: ["0%", "100%"] },
+              { ...SET, delay: 0.22 },
+            );
+            animate(
+              el.querySelector(".tag"),
+              { opacity: [0, 1], x: [-6, 0] },
+              { ...SET, delay: 0.36 },
+            );
+          },
+          { amount: 0.35 },
+        );
+      });
+
+      // ── title → detail: the same words, bigger
+      const detail = document.getElementById("detail");
+      function open(i, titleEl) {
+        const s = STOPS[i],
+          r = titleEl.getBoundingClientRect();
+        document.getElementById("d-n").textContent = s.n;
+        document.getElementById("d-d").textContent = s.d;
+        document.getElementById("d-s").textContent = s.s;
+        detail.style.display = "flex";
+        const h2 = document.getElementById("d-n"),
+          t = h2.getBoundingClientRect();
+        animate(detail, { opacity: [0, 1] }, { duration: 0.2 });
+        animate(
+          h2,
+          {
+            transformOrigin: "left top",
+            transform: [
+              `translate(${r.left - t.left}px, ${r.top - t.top}px) scale(${r.height / t.height})`,
+              "translate(0px,0px) scale(1)",
+            ],
+          },
+          SET,
+        );
+        animate(
+          "#d-d, #d-s",
+          { opacity: [0, 1], y: [12, 0] },
+          { ...SET, delay: stagger(0.06, { startDelay: 0.14 }) },
+        );
+      }
+      document.getElementById("back").addEventListener("click", () => {
+        animate(detail, { opacity: [1, 0] }, { duration: 0.2 }).then(() => {
+          detail.style.display = "none";
+        });
+      });
+
+      // ── the opening: the day assembles itself out of type
+      function play() {
+        detail.style.display = "none";
+        window.scrollTo({ top: 0, behavior: "instant" });
+        document
+          .querySelectorAll("#h1 .w")
+          .forEach((w) => (w.style.opacity = 0));
+        document.getElementById("deck").style.opacity = 0;
+        document.getElementById("hint").style.opacity = 0;
+        document.getElementById("caught").innerHTML = "";
+        nodes.forEach((n) => {
+          n.style.opacity = 0;
+          n.querySelector(".src i").style.width = "0%";
+          n.querySelector(".tag").style.opacity = 0;
+        });
+
+        animate(
+          "#h1 .w",
+          { opacity: [0, 1], y: [38, 0], rotate: [-2.5, 0] },
+          { ...SET, delay: stagger(0.11) },
+        );
+        animate(
+          "#deck",
+          { opacity: [0, 1], y: [16, 0] },
+          { ...SET, delay: 0.42 },
+        );
+        animate("#hint", { opacity: [0, 1] }, { duration: 0.5, delay: 0.9 });
+        nodes.forEach((el, i) => {
+          if (el.getBoundingClientRect().top < window.innerHeight) {
+            animate(
+              el,
+              { opacity: [0, 1], y: [26, 0] },
+              { ...SET, delay: 0.55 + 0.1 * i },
+            );
+            animate(
+              el.querySelector(".src i"),
+              { width: ["0%", "100%"] },
+              { ...SET, delay: 0.8 + 0.1 * i },
+            );
+            animate(
+              el.querySelector(".tag"),
+              { opacity: [0, 1], x: [-6, 0] },
+              { ...SET, delay: 0.95 + 0.1 * i },
+            );
+          }
+        });
+
+        // ── the conflict arrives as a sentence that rewrites itself
+        setTimeout(() => {
+          const c = document.getElementById("caught");
+          c.innerHTML = `<span class="old">14:00 · 21st Century Museum<i></i></span> `;
+          const bar = c.querySelector(".old i");
+          // the announcement is not allowed to happen off-screen: the page brings you to it
+          c.scrollIntoView({ behavior: "smooth", block: "center" });
+          animate(
+            c.querySelector(".old"),
+            { opacity: [0, 1], y: [14, 0] },
+            SET,
+          );
+          setTimeout(() => {
+            animate(
+              bar,
+              { width: ["0%", "100%"] },
+              { type: spring, stiffness: 220, damping: 24 },
+            );
+            const nw = document.createElement("span");
+            nw.className = "new";
+            c.appendChild(nw);
+            const cur = document.createElement("span");
+            cur.className = "cursor";
+            cur.textContent = " ";
+            c.appendChild(cur);
+            const text = " Closed Mondays. Moved to day four.";
+            let k = 0;
+            animate(nw, { opacity: [0, 1] }, { duration: 0.2 });
+            const iv = setInterval(() => {
+              nw.textContent = text.slice(0, ++k);
+              if (k >= text.length) {
+                clearInterval(iv);
+                cur.remove();
+              }
+            }, 26);
+          }, 700);
+        }, 2400);
+      }
+      document.getElementById("replay").addEventListener("click", play);
+      play();
+    </script>
+    <script>
+      (function () {
+        function show(m) {
+          var d = document.createElement("div");
+          d.style.cssText =
+            "position:fixed;z-index:99;left:0;right:0;top:0;background:#B00020;color:#fff;font:12px/1.4 ui-monospace,monospace;padding:8px 12px";
+          d.textContent = "probe error — " + m;
+          document.body.appendChild(d);
+        }
+        window.addEventListener("error", function (e) {
+          show(e.message);
+        });
+        window.addEventListener("unhandledrejection", function (e) {
+          show(String(e.reason));
+        });
+      })();
+    </script>
+  </body>
+</html>

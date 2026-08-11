@@ -1,16 +1,16 @@
 ## Open
 
-- ⏳ THE FOUNDER'S TASTE PASS IS PENDING, and until it happens
-  [DESIGN](DESIGN.md) cannot answer the first question the global
-  design law asks — name the direction before any UI code. Three
-  slots are empty: the named direction, the display+body font
-  pair, and five reference images. The tower's half is to prepare
-  a SHORTLIST (font pairs with a sentence each on what they say
-  about a validity-first planner, and what each reference slot
-  should govern); the choice is the founder's and nobody else's.
-  Blocks no bench today; blocks the first screen of
-  [V1.S2.T5](ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1).
-  (2026-08-11, the work PC control tower) → [DESIGN](DESIGN.md)
+- ⏳ THE DESIGN-REVIEW GATE IS BLIND TO MOTION — it screenshots a
+  surface at 375px and 1440px, which cannot see a spring, a
+  stagger, an interruption, or anything that happens IN TIME. The
+  taste pass proved the gap from the other side: round one was
+  judged on stills and the founder rejected all three directions
+  because stills cannot judge a moving product. Playwright can
+  record video and traces, so the capability exists and only the
+  wiring is missing — for motion-intensive surfaces the gate should
+  capture a clip rather than a frame. Filed, not built. (2026-08-11,
+  the work PC control tower) →
+  [LAWS §Workflow](LAWS.md#workflow-non-negotiable)
 
 - ⏳ THIRD-PARTY DESIGN SKILLS ARE A FOUNDER CALL, AND ONE IS
   ALREADY ON THIS MACHINE — `ui-ux-pro-max` v2.5.0 is installed at
@@ -667,6 +667,7 @@
 The outcome ledger — one line each, newest first. A closed idea
 keeps its answer, never its narrative.
 
+- 🟢 THE TASTE PASS RAN AND THE DIRECTION IS NAMED — `place-first`: the plan lives on a living map, place is the ground, provenance pins to place. Chosen from a LIVE probe after a first round of static candidates was rejected for varying the typeface inside one metaphor; the pair (Archivo · Public Sans · JetBrains Mono) is ratified as worn, two reference slots are seeded by the picked probe, and the COLOUR TOKENS plus three slots stay reserved and unruled. → [DESIGN](DESIGN.md) · [#349](https://github.com/wsher0901/roam/pull/349)
 - 🟢 The gate window no longer lies about what the founder owes — [ship §6](skills/ship.md#6--the-gate) now repaints the board before rendering the gate report, as a DASHBOARD-only micro-PR, the same carve-out the tail already uses. Seen three times in two days before it was written down.
 - 🟢 THE ENUMERATION LAW — whenever a rule sorts inputs into cases, its author walks the REAL INPUTS FROM THEIR SOURCE and lands each one; a substring of a rendering is not a case, and neither is an absence. [LAWS §Knowledge & tracking](LAWS.md#knowledge--tracking), beside the sweep law. Five instances shipped in five consecutive benches, every one caught by review and none by its author — and a SIXTH was committed inside the very bench that wrote this law, by a reviewer's substring test.
 - 🟢 It is a duty now, homed in [§Wake-lock](skills/parallel-lanes.md#wake-lock--parking) rather than in the lane-worker master, so it needs no box re-save to take effect. A rejected push leaves no server-side trace; two lanes died of one late ack on 2026-08-06 and only one said so — from origin the two are indistinguishable.

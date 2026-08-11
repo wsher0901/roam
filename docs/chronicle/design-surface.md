@@ -2,7 +2,7 @@
 type: chronicle-story
 shelf: IV — Roam
 status: living
-updated: 2026-08-11 · the taste file arrives · work PC
+updated: 2026-08-11 · the taste file is filled · work PC
 ---
 
 # The Design surface — a rule-carrier for a tool that cannot be given rules any other way
@@ -18,10 +18,15 @@ updated: 2026-08-11 · the taste file arrives · work PC
 > needed is this item's own oldest lesson, applied again:** Design
 > cannot fetch files, so the law and the taste file have to be
 > CARRIED with the paste, not cited — one more copy someone re-makes
-> by hand, on a bridge where neither side reports staleness. The
-> taste slots ship TBD and are the founder's, so what Design is
-> told to work from is, for now, a set of open questions rather
-> than answers. Everything below still binds: no-write governance,
+> by hand, on a bridge where neither side reports staleness. **AND
+> AS OF 2026-08-11 THERE IS SOMETHING REAL TO CARRY:** the taste
+> pass ran, and what gets pasted alongside this preamble is no
+> longer a set of open questions but a NAMED DIRECTION —
+> `place-first`, the plan on a living map — with ratified faces
+> beneath it. Colour and three reference images are still open and
+> are carried as open, which is the distinction the paste has to
+> preserve: a Design session told "the palette is undecided" will
+> propose one, and a session told nothing will invent one silently. Everything below still binds: no-write governance,
 > the extraction path, the exit format, and the sunset clause
 > keyed to
 > [V1.S2.T5](../ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)
@@ -133,6 +138,17 @@ configuration.
   put a design-review gate in [LAWS](../LAWS.md), which is the
   first design rule in this workshop that something OTHER than a
   human paste enforces.
+
+- **[#349](https://github.com/wsher0901/roam/pull/349) — the taste
+  file stops being a set of blanks.** The founder picked
+  `place-first` from three LIVE motion probes, after rejecting an
+  entire round of static candidates for varying the typeface inside
+  one metaphor — a judgment this item's own surface could not have
+  supported either, since a pasted preamble carries stills and
+  words, never motion. What this changes for Design is concrete:
+  the preamble's "work from the taste file" line now has a
+  direction and a font pair to carry, and a shorter list of things
+  it must carry as still-open.
 
 ## Where it stands
 
