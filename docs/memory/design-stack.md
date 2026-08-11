@@ -185,6 +185,26 @@ touches eight existing files is mostly joints, and the author is
 the worst-placed reader of them, which is the pattern this
 workshop has now recorded across six benches.
 
+## The external Web review — 1 finding, repaired
+
+**D-084's four-layer table did not render as a table.** The
+repair that closed the critic's context7 finding inserted its two
+paragraphs after ROW ONE, so rows 2–4 sat below prose and parsed
+as body text rather than as table rows — the entry's central
+structure, broken by the fix for a different finding. Repaired by
+moving the two paragraphs below the completed table; every word
+stands, only position changed, and the table is now verified as
+one contiguous run of six lines (header + separator + four rows).
+
+**IT WAS A REPAIR THAT BROKE SOMETHING, WHICH IS THE PART WORTH
+KEEPING.** Ten findings were repaired in one pass, each verified
+against what it claimed — the master text was diffed against the
+live machine copies, the links gate re-run, the full loop and CI
+green — and none of that could see it, because every check that
+ran was about CONTENT and this defect was about RENDERING. A
+markdown table survives a broken row silently: no gate parses it,
+and the author reads the source rather than the page.
+
 ## Where to look
 
 - [the spec](../record/specs/design-stack.md) — goal, out of scope,

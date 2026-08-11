@@ -4521,6 +4521,9 @@ machine, and this repo carries only what is specific to Roam.
 | Layer | Where it lives | Who owns it |
 |---|---|---|
 | The tools — plugin, 3 MCP servers, the `design-review` agent | the machine (`~/.claude/`) | [machine-setup](../skills/machine-setup.md), per machine |
+| The general law — banned defaults, typography, color, motion, states | `~/.claude/CLAUDE.md`, delimited | the same procedure, re-runnable |
+| Roam's taste — direction, font pair, tokens, references | [DESIGN.md](../DESIGN.md), in this repo | **the founder**, via a taste pass |
+| The gate — a UI diff faces design-review before THE GATE | [LAWS §Workflow](../LAWS.md#workflow-non-negotiable) | every seat |
 
 **TWO OF THE THREE SERVERS ARE REGISTERED BY HAND.** context7
 arrives with its own user-scope plugin running the identical
@@ -4535,9 +4538,6 @@ written from it. They sit outside git, so nothing can diff them;
 a procedure that merely described them would be re-invented in
 different words on the second machine, which is the drift this
 layer exists to prevent.
-| The general law — banned defaults, typography, color, motion, states | `~/.claude/CLAUDE.md`, delimited | the same procedure, re-runnable |
-| Roam's taste — direction, font pair, tokens, references | [DESIGN.md](../DESIGN.md), in this repo | **the founder**, via a taste pass |
-| The gate — a UI diff faces design-review before THE GATE | [LAWS §Workflow](../LAWS.md#workflow-non-negotiable) | every seat |
 
 **THE OVERRIDE IS ONE-DIRECTIONAL AND ABSOLUTE:** where
 [DESIGN.md](../DESIGN.md) and the global law disagree, DESIGN.md
