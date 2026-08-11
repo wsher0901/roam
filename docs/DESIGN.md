@@ -31,13 +31,14 @@ override rules only the disagreement:
 | **Reserved to the founder** — the DIRECTION · the FONT PAIR · the COLOUR TOKENS · the REFERENCE IMAGES | **STOP AND ASK.** These four are the taste pass itself, and they are exactly the four [D-084](record/DECISIONS.md#d-084--the-global-design-stack)'s ownership row assigns to the founder. No floor exists to fall through to: the global law's own first instruction is to name a direction, and its colour rule ("one dominant, one sharp accent") constrains a palette without choosing one. A seat that picks any of the four has made the founder's decision for them. |
 | **Every other TBD** — spacing, radii, motion feel, component-level calls | **FALL THROUGH TO THE FLOOR.** The global law governs, the choice is task-local, and it lands in the task's memory like any implementation call. |
 
-**AS OF 2026-08-11 TWO OF THE FOUR ARE SET** (direction, font pair)
-and **TWO REMAIN RESERVED AND UNRULED** (colour tokens, and three of
-the five reference images). The row above is the live answer for
-each, not a description of how the file began.
+**AS OF 2026-08-11 the DIRECTION and the FONT PAIR are SET**, and
+the **COLOUR TOKENS** and **three of the five reference images**
+remain reserved and unruled. The row above is the live answer for
+each slot, not a description of how the file began — read the slot,
+never a running total.
 
 So: this file BEATS the global law where it speaks, DEFERS to it
-where it is merely silent, and BLOCKS on the three slots above,
+where it is merely silent, and BLOCKS on the reserved slots above,
 which are neither.
 
 Sources:
@@ -143,19 +144,38 @@ own right, and it is provisional until the token pass:
 | place | `#0B7A6B` | the map's own accent — pins, place-belonging |
 | signal | `#E8590C` | caught conflicts and unverified facts, ONLY |
 
+**This table is scheduled for deletion.** When the token pass runs
+at
+[V1.S2.T5](ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)
+and the theme layer becomes the one source, THIS TABLE IS REMOVED
+and this section points at that layer instead — so these values
+never exist in two live homes.
+
 One dominant colour plus one sharp accent; everything else
 neutral. Confidence states (checked · unverified · stale) need
 their own semantic tokens, because they are content in this
 product rather than decoration.
 
-**Tokens are not written here.** When the design foundations land
+**RULED tokens are not written here — and there are none yet.**
+The table above is not a token set: it is the PROBE's working
+palette, provisional and unruled, recorded so a seat can see what
+the founder actually looked at. When the design foundations land
 under
 [V1.S2.T5](ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1),
 the token source of truth is the theme layer in the app —
 Tailwind v4 theme variables + the shadcn/ui token set — and this
-section points at it rather than duplicating values. A hex literal
-in a component is a decision nobody can find later; a hex literal
-in TWO files is a contradiction waiting to ship.
+section will point at it rather than duplicate it. A hex literal in
+a component is a decision nobody can find later; the same value
+live in TWO homes is a contradiction waiting to ship, which is why
+the table above carries an expiry rather than a promotion.
+
+**WHAT A SEAT MAY DO WITH THESE VALUES IN THE MEANTIME, since the
+palette is reserved and the work does not stop:** reaching for the
+probe's working palette as a TASK-LOCAL fall-through, before the
+token pass, is NOT ruling it — use it, and record the use in the
+task's memory like any implementation call. **Proposing a palette
+as ROAM'S, or writing any values into the app's token source of
+truth, is the reserved act: that one stops and asks.**
 
 ## Reference images
 

@@ -218,6 +218,37 @@ next to an index that links them, pre-fill phrasing under a section
 that now announces a ruling, and a spec `status:` outside its own
 vocabulary.
 
+## The external Web review — 2 findings, both repaired
+
+**Both were the same defect, and it is the one this bench keeps
+making: a table was edited and the sentence beneath it was left
+asserting the old state.** The reserved-slot table grew from three
+entries to four in the critic round, and the summary sentence under
+it still read "BLOCKS on the three slots above". §Color & tokens
+gained the probe's six-value working palette, while the paragraph
+below went on declaring "Tokens are not written here" and warning
+that a value in two homes is a contradiction waiting to ship — the
+section arguing against its own table.
+
+**The repairs go further than restating the new numbers**, because
+a corrected count drifts again at the next edit: the summary
+sentence is now COUNT-FREE ("the reserved slots above"), the
+status line reads slot by slot instead of carrying a running
+total, and the palette table carries an EXPIRY in its own caption —
+deleted when the token pass makes the theme layer the one source,
+so the values never live in two homes at once. §Color also gained
+the sentence the founder's reserved/unruled split actually needed:
+using the probe's palette as a task-local fall-through is not
+ruling it, while proposing a palette as Roam's, or writing values
+into the app's token source, is the reserved act that stops and
+asks.
+
+**Twelve findings from the critic and two from the review, and
+every one of the fourteen was a JOINT rather than a mistake inside
+one statement** — a table against its own summary, a heading
+against its prose, a spec against the file it governs. That is now
+the most reliable prediction available about this bench's output.
+
 ## Where to look
 
 - [the spec](../record/specs/taste-pass.md) — the shortlist and
