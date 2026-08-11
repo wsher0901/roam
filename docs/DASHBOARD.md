@@ -6,14 +6,33 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-08-10 · 17:28 UTC by pickup · from work PC
-Clean floor — nothing flying, no bench open · needs-you 1 ·
+Painted 2026-08-11 · 16:49 UTC by ship §6 · from work PC
+One bench at THE GATE · needs-you 3 ·
 git outranks this board.
 How to read it → [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
 
-1. 🟡 **RETIRE THE NO-AGENTS INSTRUCTION WHERE IT ACTUALLY LIVES** —
+1. 🔴 **THE WORD ON `design-stack`** — the global design stack, and
+   Roam's alignment to it. Tower-authored, so it takes the external
+   Web review FIRST: say "review" in the Web chat, then the merge
+   word here. CI green on `fb2682f`; the pre-gate critic returned
+   11 findings and all 11 are repaired on the branch. (since 08-11)
+   → [#345](https://github.com/wsher0901/roam/pull/345) — the spec,
+   the story and D-084 ride that branch and reach main with the
+   merge, so this board names them rather than linking them (the
+   filed in-flight-decision exception).
+
+2. 🟡 **THE HOME PC HAS NO DESIGN STACK** — the work PC ran it
+   2026-08-11; the second seat is untouched, and nothing in git can
+   say so, because the two files it installs live outside the repo.
+   Run machine-setup step 12 at the next home-PC sitting — it
+   carries the master text of both files, so the seats cannot drift.
+   (since 08-11)
+   → machine-setup step 12, landing with
+   [#345](https://github.com/wsher0901/roam/pull/345)
+
+3. 🟡 **RETIRE THE NO-AGENTS INSTRUCTION WHERE IT ACTUALLY LIVES** —
    the session preamble, which no commit can reach. Edit it in the
    Claude Code settings that inject it, before the next sitting that
    splits work across benches; until then every session opens
@@ -38,13 +57,24 @@ Last flight: LANDED 2026-08-04 21:16 UTC via MANUAL-LAND.
 
 ## In flight
 
-Nothing flying, no lanes, no bench open. Clean floor — the closing
-campaign and the two rulings merged everything they opened.
+| Who | For | State | Move |
+|---|---|---|---|
+| the tower's bench · `design-stack` | a machine-wide design capability at user scope, and the repo that answers to it | 🟡 AT THE GATE, ready, CI green on `fb2682f` | the founder's "review" in the Web chat, then the merge word |
+
+No lanes. One desk, one bench, nothing in the cloud.
 
 ## Working on
 
-**NOTHING OPEN.** Phase 2 is closed, the two rulings are law, and
-the floor is clear for phase 3.
+**`design-stack` — AT THE GATE.** The design stack is installed on
+the work PC at user scope (plugin · playwright + shadcn MCP
+servers · the global design law · the `design-review` agent) and
+D-084 makes the repo answer to it: `docs/DESIGN.md` carries Roam's
+taste and OVERRIDES the global law, and a UI diff faces
+design-review before THE GATE. **Every taste slot ships TBD** — direction, font pair and
+five reference images are the founder's, and the pass that fills
+them is owed.
+
+Phase 3 is next and unblocked; nothing else is open.
 
 The standing order
 ([D-060](record/DECISIONS.md#d-060--the-three-phase-standing-order),
