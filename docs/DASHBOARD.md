@@ -6,23 +6,35 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-08-11 · 20:53 UTC by ship's tail · from work PC
-Clean floor — Roam has a direction · needs-you 2 ·
+Painted 2026-08-12 · 14:01 UTC by ship §6 · from work PC
+One bench at THE GATE · needs-you 3 ·
 git outranks this board.
 How to read it → [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
 
-1. 🟡 **THE HOME PC HAS NO DESIGN STACK** — the work PC ran it
+1. 🔴 **THE WORD ON `design-supply-lines`** — four component
+   registries wired with an arrival law, Recharts settled as the
+   chart layer (D-085, which lands with the merge and so is named
+   here rather than linked), and the design-review agent given
+   MOTION EYES. Tower-authored: say "review" in the Web chat, then the
+   merge word here. CI green on `c23cb1f`; the pre-gate critic
+   returned 12 findings, all repaired — the blocking one being a
+   capture duty no registered tool could perform. (since 08-12)
+   → [#352](https://github.com/wsher0901/roam/pull/352)
+
+2. 🟡 **THE HOME PC HAS NO DESIGN STACK** — the work PC ran it
    2026-08-11; the second seat is untouched, and nothing in git can
    say so, because the two files it installs live outside the repo.
    Run machine-setup step 12 at the next home-PC sitting — it
    carries the master text of both files, so the seats cannot drift.
-   (since 08-11)
+   **That step now also carries the `--caps devtools` flag the
+   motion-capture duty depends on**, so a home PC set up before
+   today would have the agent and not its eyes. (since 08-11)
    → [machine-setup step 12](skills/machine-setup.md#one-time-per-machine)
    · [D-084](record/DECISIONS.md#d-084--the-global-design-stack)
 
-2. 🟡 **RETIRE THE NO-AGENTS INSTRUCTION WHERE IT ACTUALLY LIVES** —
+3. 🟡 **RETIRE THE NO-AGENTS INSTRUCTION WHERE IT ACTUALLY LIVES** —
    the session preamble, which no commit can reach. Edit it in the
    Claude Code settings that inject it, before the next sitting that
    splits work across benches; until then every session opens
@@ -55,12 +67,23 @@ Last flight: LANDED 2026-08-04 21:16 UTC via MANUAL-LAND.
 
 ## In flight
 
-Nothing flying, no lanes, no bench open. Clean floor — the weld
-closed everything this sitting opened.
+| Who | For | State | Move |
+|---|---|---|---|
+| the tower's bench · `design-supply-lines` | where components may come from, and how the gate sees motion | 🟡 AT THE GATE, ready, CI green on `c23cb1f` | your "review" in the Web chat, then the merge word |
+
+No lanes. One desk, one bench, nothing in the cloud.
 
 ## Working on
 
-**NOTHING OPEN.** `taste-pass` shipped; phase 3 is next, and
+**`design-supply-lines` — AT THE GATE.** Four shadcn registries are
+wired as SUPPLY LINES, governed by an ARRIVAL LAW that says what
+lands is a draft until it adapts to Base UI, to the token layer and
+to the design law — arrival is not ratification. Recharts is the
+chart layer. And the design-review agent can finally see motion:
+video or a trace of the opening plus one interaction, at both
+widths, which needed a capability flag the first draft had missed.
+
+Phase 3 is next, and
 [V1.S2.T5](ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)
 now has a direction to build against.
 
