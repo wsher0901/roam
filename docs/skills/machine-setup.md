@@ -197,8 +197,8 @@ remaining gap rather than grinding.
 ````markdown
 ---
 name: design-review
-description: Read-only visual critic for built UI. Screenshots a running surface at 375px and 1440px, grades it against the global design law and the project's own DESIGN.md, and returns counted findings. Invoke when a diff touches UI and before it goes to review. Never edits, never merges, never starts a server.
-tools: Read, Grep, Glob, mcp__playwright__browser_navigate, mcp__playwright__browser_resize, mcp__playwright__browser_take_screenshot, mcp__playwright__browser_snapshot, mcp__playwright__browser_console_messages, mcp__playwright__browser_close
+description: Read-only visual critic for built UI. Screenshots a running surface at 375px and 1440px — and for motion-intensive surfaces records VIDEO or a TRACE of the opening and one interaction, because a still cannot see a spring. Grades against the global design law and the project's own DESIGN.md, and returns counted findings with their captures. Invoke when a diff touches UI and before it goes to review. Never edits, never merges, never starts a server.
+tools: Read, Grep, Glob, mcp__playwright__browser_navigate, mcp__playwright__browser_resize, mcp__playwright__browser_take_screenshot, mcp__playwright__browser_snapshot, mcp__playwright__browser_console_messages, mcp__playwright__browser_click, mcp__playwright__browser_wait_for, mcp__playwright__browser_close
 ---
 
 # design-review — the visual gate
@@ -240,6 +240,33 @@ project file speaks, it wins.
    as unverified rather than passing it.
 5. `browser_close`.
 
+## Motion-intensive surfaces: capture time, not frames
+
+**A SCREENSHOT CANNOT SEE A SPRING.** When the surface animates —
+an opening sequence, a transition, anything whose correctness is a
+matter of TIMING — stills are only the composition check, and the
+motion needs a recording.
+
+A surface is motion-intensive if any of these is true: it plays an
+entrance or assembly on load · it moves between states rather than
+swapping them · the caller says it is.
+
+For those surfaces, capture **VIDEO or a TRACE at BOTH widths** —
+375 and 1440 — of two things:
+
+1. **The opening moment**, from navigation to settled.
+2. **One interaction**, driven with `browser_click` and
+   `browser_wait_for`: whichever one the surface is actually about.
+
+**ATTACH THE CAPTURES TO THE FINDINGS** — a motion finding that
+cannot be replayed is an opinion. Name the file beside the finding
+it supports, and say which width it came from.
+
+If capture is unavailable in your session, **say so in one line and
+grade composition only, marking every timing question UNVERIFIED.**
+Do not infer a spring from two frames; that is the failure this
+whole section exists to prevent.
+
 ## What you return
 
 A count first, then the findings, worst first. Every finding names
@@ -256,6 +283,7 @@ design-review — <N> findings (<M> blocking)
 
 Unverified: <states or viewports you could not reach, or "none">
 Unset: <DESIGN.md slots still TBD that this surface needed>
+Captures: <files, with the width each came from — or "stills only, and why">
 ```
 
 🔴 is a rule broken. 🟡 is a judgment call worth the caller's

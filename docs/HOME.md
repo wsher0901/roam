@@ -1955,8 +1955,12 @@ React 19) + Supabase (Postgres + Auth) + Vercel; the planning brain
 is the Claude API, server-side only; the engine is isolated in
 engine/ with a hard boundary (no app imports) so it could one day
 move to a Python worker without a rewrite. Frontend layer: Tailwind v4
-+ shadcn/ui on Base UI, Motion, MapLibre GL, dnd-kit, the Vercel AI
-SDK ("AI SDK UI" flavor), TanStack Query + Zustand. Doctrine:
++ shadcn/ui on Base UI, Motion, MapLibre GL, dnd-kit, Recharts for
+charts ([D-085](record/DECISIONS.md#d-085--recharts-is-the-chart-layer)),
+the Vercel AI SDK ("AI SDK UI" flavor), TanStack Query + Zustand.
+Component registries are wired in `components.json`, and what
+arrives from them obeys the arrival law in
+[DESIGN](DESIGN.md#the-component-kit). Doctrine:
 stream-first, cache-heavy, parallel fan-out, DB co-located. Canonical,
 with sources: SETUP §Stack (D-001 · D-005 · D-007). App code lives in
 `src/`, engine code in `engine/`, spike scripts in `scripts/spikes/`,

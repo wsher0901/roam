@@ -247,6 +247,52 @@ appears.
 The machine's shadcn MCP server searches the registries and
 returns install commands; it does not choose taste.
 
+### The supply lines
+
+`components.json` wires four component registries by namespace, so
+a builder can pull from them without hunting for URLs:
+
+| Namespace | Registry |
+|---|---|
+| `@magicui` | `https://magicui.design/r/{name}.json` |
+| `@aceternity` | `https://ui.aceternity.com/registry/{name}.json` |
+| `@motion-primitives` | `https://motion-primitives.com/c/{name}.json` |
+| `@skiper` | `https://skiper-ui.com/r/{name}.json` |
+
+Skiper's own docs write the namespace as `@skiper-ui/<name>`; this
+repo wires it as `@skiper`, so a command copied from their site
+needs its namespace swapped. Wiring a registry is a SUPPLY LINE,
+not an endorsement of anything in it.
+
+### THE ARRIVAL LAW
+
+**A registry component ADAPTS ON LANDING. Arrival is not
+ratification** — what the CLI writes is a DRAFT in Roam's terms
+until all three of these are true:
+
+1. **It adapts to [D-007](record/DECISIONS.md#d-007--shadcnui-builds-on-base-ui)** —
+   shadcn/ui on Base UI, the "nova" preset. Anything arriving
+   against Radix-era primitives is rewritten onto Base UI or not
+   kept. Many registries still ship Radix-era code; that is the
+   single most likely thing to be wrong on landing.
+2. **It adapts to the token layer, once it exists** — no hex
+   literals, no private scales. Until
+   [V1.S2.T5](ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)
+   builds that layer, an arriving component's own values are
+   task-local and recorded in the task's memory, exactly as
+   §Color & tokens allows for the probe palette.
+3. **It adapts to the design law** — the direction above, the
+   banned defaults, the motion rules, and the five states. A
+   component that ships a purple gradient or `system-ui` arrives
+   with those stripped, not with an exception.
+
+**SKIPER'S FREE TIER CARRIES AN ATTRIBUTION DUTY: attribute, or do
+not ship free-tier items in the product.** There is no third
+option, and "we will add the credit later" is the failure this
+sentence exists to prevent. Skiper Pro remains a CONDITIONAL
+PURCHASE under the founder's standing ruling — it is not bought
+because a component would be convenient.
+
 ## The review gate
 
 A diff that changes what a screen renders faces the

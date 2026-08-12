@@ -4604,3 +4604,50 @@ the routing table) and
 row for the new file; that table is exhaustive) ·
 [IDEAS](../IDEAS.md) (the pending taste pass, the third-party
 skills call, and the watchlist) · this entry.
+
+## D-085 — Recharts is the chart layer
+
+In full: 2026-08-12 — RECHARTS IS ROAM'S DEFAULT CHART LAYER, by way of shadcn's own chart components, themed by the token layer when [V1.S2.T5](../ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1) builds it. The compatibility question was checked before this entry was cut rather than assumed: shadcn ships its chart components in a BASE UI variant alongside React Aria and Radix, and states that it does not wrap Recharts at all — the components compose Recharts directly, so the chart layer is not coupled to any primitive library and [D-007](#d-007--shadcnui-builds-on-base-ui)'s "nova" choice is unaffected either way. SPECIALIZED VISUALIZATION MAY DEVIATE TASK-LOCALLY — a map overlay, a custom SVG timeline, a density plot no chart library draws well — and that deviation is an implementation call recorded in the task's memory, not a new decision and not a second default.
+
+**Decision:** charts are shadcn chart components on **Recharts**,
+and that is the default a seat reaches for without asking.
+
+**Why:** the alternative is choosing a chart library per screen,
+which in a product that renders confidence, freshness and
+source-coverage would produce three charting idioms inside one
+plan view. Recharts arrives with the kit already chosen
+([D-007](#d-007--shadcnui-builds-on-base-ui)): shadcn's chart
+components are vendored files like every other component, so they
+inherit the token layer, the arrival law, and the same review gate
+rather than sitting in a parallel styling world.
+
+**THE COMPATIBILITY CHECK IS THE LOAD-BEARING PART OF THIS ENTRY,**
+because the obvious way to get this wrong is to assume a chart
+component built for a Radix-era kit works under Base UI. It does,
+and for a stated reason rather than by luck: shadcn publishes a
+Base UI variant of the chart components, and its docs say plainly
+that Recharts is not wrapped. A chart is SVG; the primitive
+library governs popovers, dialogs and menus, none of which a chart
+requires. Verified from the vendor's documentation on 2026-08-12,
+before this entry existed.
+
+**Alternatives rejected:** choosing per screen — three idioms in
+one product, and no seat has authority to pick the third one ·
+a heavier grammar-of-graphics library (D3, Visx, Observable Plot) —
+real power the demo does not need, paid for in bundle size and in
+a second styling system that the token layer would not reach ·
+deferring to [V1.S2.T5](../ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1) —
+T5 builds the theme, and a theme is easier to build against a
+named chart layer than against an open question.
+
+**Affects:**
+[SETUP §Stack](../SETUP.md#stack) (the frontend layer gains
+Recharts, stated where [D-007](#d-007--shadcnui-builds-on-base-ui)'s
+stack is stated) ·
+[HOME §Equipment & environment](../HOME.md#equipment--environment)
+(the same one-paragraph stack mirror, which would otherwise go
+stale the moment SETUP changed) ·
+[D-007](#d-007--shadcnui-builds-on-base-ui) (cited, unchanged —
+the Base UI choice is unaffected) ·
+[V1.S2.T5](../ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)
+(themes it) · this entry.

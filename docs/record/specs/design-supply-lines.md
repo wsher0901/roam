@@ -63,16 +63,21 @@ that asked for it.
 
 ## Done means
 
-- [ ] Four registries resolve THROUGH THE CLI, not merely by
-      `curl`, and the scratch output is deleted.
-- [ ] The arrival law states all three adaptations and the
+- [x] THREE of four registries resolve THROUGH THE CLI
+      (`@magicui`, `@aceternity`, `@skiper`), dry-run, writing
+      nothing. **`@motion-primitives` COULD NOT BE VERIFIED** — its
+      host returns 429 to every client and every path including its
+      homepage, so the template rests on the vendor's own docs. It
+      is wired as mandated with the failure recorded, not papered
+      over.
+- [x] The arrival law states all three adaptations and the
       attribution duty, and says plainly that arrival is not
       ratification.
-- [ ] One D-number for the chart layer, with Base UI compatibility
+- [x] One D-number for the chart layer, with Base UI compatibility
       verified from the vendor's own docs before the entry was cut.
-- [ ] The agent's master and the machine copy are proven identical
+- [x] The agent's master and the machine copy are proven identical
       by extraction and diff, not by assertion.
-- [ ] The inbox line moves to the outcome ledger with its vehicle.
+- [x] The inbox line moves to the outcome ledger with its vehicle.
 - [ ] Gates green; the pushed head's Actions run green.
 - [ ] Shipped to THE GATE — not merged.
 
