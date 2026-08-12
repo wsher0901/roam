@@ -6,24 +6,15 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-08-12 · 14:01 UTC by ship §6 · from work PC
-One bench at THE GATE · needs-you 3 ·
+Painted 2026-08-12 · 14:15 UTC by ship's tail · from work PC
+Clean floor — supply lines wired, the gate can see motion ·
+needs-you 2 ·
 git outranks this board.
 How to read it → [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
 
-1. 🔴 **THE WORD ON `design-supply-lines`** — four component
-   registries wired with an arrival law, Recharts settled as the
-   chart layer (D-085, which lands with the merge and so is named
-   here rather than linked), and the design-review agent given
-   MOTION EYES. Tower-authored: say "review" in the Web chat, then the
-   merge word here. CI green on `c23cb1f`; the pre-gate critic
-   returned 12 findings, all repaired — the blocking one being a
-   capture duty no registered tool could perform. (since 08-12)
-   → [#352](https://github.com/wsher0901/roam/pull/352)
-
-2. 🟡 **THE HOME PC HAS NO DESIGN STACK** — the work PC ran it
+1. 🟡 **THE HOME PC HAS NO DESIGN STACK** — the work PC ran it
    2026-08-11; the second seat is untouched, and nothing in git can
    say so, because the two files it installs live outside the repo.
    Run machine-setup step 12 at the next home-PC sitting — it
@@ -34,7 +25,7 @@ How to read it → [HOME §Reading the board](HOME.md#reading-the-board)
    → [machine-setup step 12](skills/machine-setup.md#one-time-per-machine)
    · [D-084](record/DECISIONS.md#d-084--the-global-design-stack)
 
-3. 🟡 **RETIRE THE NO-AGENTS INSTRUCTION WHERE IT ACTUALLY LIVES** —
+2. 🟡 **RETIRE THE NO-AGENTS INSTRUCTION WHERE IT ACTUALLY LIVES** —
    the session preamble, which no commit can reach. Edit it in the
    Claude Code settings that inject it, before the next sitting that
    splits work across benches; until then every session opens
@@ -67,25 +58,15 @@ Last flight: LANDED 2026-08-04 21:16 UTC via MANUAL-LAND.
 
 ## In flight
 
-| Who | For | State | Move |
-|---|---|---|---|
-| the tower's bench · `design-supply-lines` | where components may come from, and how the gate sees motion | 🟡 AT THE GATE, ready, CI green on `c23cb1f` | your "review" in the Web chat, then the merge word |
-
-No lanes. One desk, one bench, nothing in the cloud.
+Nothing flying, no lanes, no bench open. Clean floor — the weld
+closed everything this sitting opened.
 
 ## Working on
 
-**`design-supply-lines` — AT THE GATE.** Four shadcn registries are
-wired as SUPPLY LINES, governed by an ARRIVAL LAW that says what
-lands is a draft until it adapts to Base UI, to the token layer and
-to the design law — arrival is not ratification. Recharts is the
-chart layer. And the design-review agent can finally see motion:
-video or a trace of the opening plus one interaction, at both
-widths, which needed a capability flag the first draft had missed.
-
-Phase 3 is next, and
-[V1.S2.T5](ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)
-now has a direction to build against.
+**NOTHING OPEN.** `design-supply-lines` shipped; phase 3 is next,
+and [V1.S2.T5](ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)
+now has a direction, a chart layer, four supply lines and a review
+gate that can see motion.
 
 The standing order
 ([D-060](record/DECISIONS.md#d-060--the-three-phase-standing-order),
@@ -117,6 +98,20 @@ one phase per line:
 
 **Completed**
 
+- **SUPPLY LINES, AND A GATE THAT CAN SEE MOTION** — four shadcn
+  registries wired under an ARRIVAL LAW (a landing component adapts
+  to Base UI, to the token layer, to the design law; **arrival is
+  not ratification**), Recharts settled as the chart layer by
+  [D-085](record/DECISIONS.md#d-085--recharts-is-the-chart-layer),
+  and the design-review agent given video and trace capture. The
+  second half was DECORATIVE until the critic caught it: the
+  capture duty was written against an allowlist that could not
+  record, so it would have degraded to stills silently while three
+  documents claimed the gate could see motion. The tools exist only
+  under `--caps devtools`, which the registration lacked. 12 critic
+  findings and an external review that RE-RAN the capability itself
+  on its own infrastructure.
+  [#352](https://github.com/wsher0901/roam/pull/352)
 - **ROAM HAS A DIRECTION — `place-first`**: the plan lives on a
   living map, place is the ground, provenance pins to place. It took
   two rounds, and the first was built on the wrong axis — three
@@ -532,7 +527,14 @@ S3–S8 · queued in order · 0/22
   and round 2 returned **PASS on `c75549d`**, having checked the
   repair delta on its own copy and judged the disclosed
   beyond-mandate edit lawful rather than waving it through. →
-  next: nothing owed.
+  next: nothing owed. On 2026-08-12 it reviewed
+  `design-supply-lines` and returned **PASS on `dba1911`** having
+  re-run the claims rather than read them — probing all four
+  registries from its own egress (corroborating the
+  `@motion-primitives` 429 from a second network) and launching the
+  playwright MCP with `--caps devtools` on independent
+  infrastructure to diff `tools/list` against the agent's
+  allowlist.
 
 ## Next
 
