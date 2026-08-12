@@ -1,16 +1,30 @@
 ---
-type: memory
+type: history
 id: design-supply-lines
-updated: 2026-08-12 · gate · work PC
+shipped: 2026-08-12 14:12 UTC
+pr: #352
 ---
 # design-supply-lines — where components come from, and how the gate sees motion
 
 ## Status
 
-complete, awaiting merge — 2026-08-12
+shipped — merged #352, 2026-08-12
 
-Tower-authored, so the external Web review precedes the founder's
-word. At THE GATE; does not merge.
+The external Web review returned **PASS at `dba1911`**, and it did
+something no previous round had: **it re-ran the capability claim
+rather than reading it.** The reviewer probed all four registries
+from its OWN network — corroborating the `@motion-primitives` 429
+from a second egress, and finding `@skiper` returns 200 for free
+items and 401 for pro ones, which is the gating working as
+described — and it launched `@playwright/mcp` with `--caps devtools`
+on independent infrastructure, diffing `tools/list` against the
+agent's allowlist: all 14 present. That is the strongest form this
+workshop's review has taken, because the blocking finding of the
+critic round was precisely a capability asserted and never
+exercised. It re-ran the full loop (7164 links / 0 broken · 138 ↔
+138 · memory valid · lint · format · 3/3 · build) and named its
+limits: Actions and the machine-side extract-and-diff were taken as
+reported.
 
 ## What this task is
 
@@ -19,7 +33,7 @@ LAW that governs what lands from them, settle the chart layer with
 a D-number, and give the `design-review` agent MOTION EYES — video
 or trace for motion-intensive surfaces, since a screenshot cannot
 see a spring. Contract:
-[the spec](../record/specs/design-supply-lines.md).
+[the spec](../../../specs/design-supply-lines.md).
 
 ## Pending issues
 
@@ -39,7 +53,7 @@ CLI and wrote nothing.
 ## Left / idle
 
 The home PC inherits Part B the same way it inherits the design
-stack — through the standing [DASHBOARD](../DASHBOARD.md) Needs-you
+stack — through the standing [DASHBOARD](../../../../DASHBOARD.md) Needs-you
 line, since `~/.claude/agents/design-review.md` lives outside git
 and only a re-run of machine-setup step 12 puts it there.
 
@@ -58,7 +72,7 @@ four registries takes one JSON object; what it changes is that a
 seat can now install someone else's design decisions in one
 command. The law says what that command actually produces: a
 DRAFT. Three adaptations are owed on landing — to
-[D-007](../record/DECISIONS.md#d-007--shadcnui-builds-on-base-ui)'s
+[D-007](../../../DECISIONS.md#d-007--shadcnui-builds-on-base-ui)'s
 Base UI (many registries still ship Radix-era code, which is the
 single most likely thing to be wrong), to the token layer once T5
 builds it, and to the design law's bans. Arrival is not
@@ -139,9 +153,9 @@ about to reach the gate.
 
 ## Where to look
 
-- [the spec](../record/specs/design-supply-lines.md) — goal, out of
+- [the spec](../../../specs/design-supply-lines.md) — goal, out of
   scope, plan, Done-means.
-- [D-007](../record/DECISIONS.md#d-007--shadcnui-builds-on-base-ui)
+- [D-007](../../../DECISIONS.md#d-007--shadcnui-builds-on-base-ui)
   — the primitive choice every arriving component must adapt to.
-- [machine-setup](../skills/machine-setup.md) step 12 — the agent's
+- [machine-setup](../../../../skills/machine-setup.md) step 12 — the agent's
   master text.

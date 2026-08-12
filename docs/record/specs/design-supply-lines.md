@@ -2,10 +2,12 @@
 type: spec
 id: design-supply-lines
 title: Design supply lines, and motion eyes for the review gate
-status: open
+status: shipped
 stage: workshop
 branch: feat/design-supply-lines
+pr: #352
 opened: 2026-08-12
+shipped: 2026-08-12
 ---
 
 # design-supply-lines — where components come from, and how the gate sees motion
@@ -83,7 +85,10 @@ that asked for it.
       perform.
 - [x] The inbox line moves to the outcome ledger with its vehicle.
 - [x] Gates green; the pushed head's Actions run green.
-- [ ] Shipped to THE GATE — not merged.
+- [x] Shipped to THE GATE — not merged. Tower-authored, so the
+      external Web review preceded the founder's word: PASS at
+      `dba1911`, with the registry probes and the MCP capability
+      check RE-RUN on independent infrastructure.
 
 ## Notes for whoever resumes this bench
 
