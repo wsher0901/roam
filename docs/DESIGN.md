@@ -251,18 +251,24 @@ returns install commands; it does not choose taste.
 
 `components.json` wires four component registries by namespace, so
 a builder can pull from them without hunting for URLs:
+**`@magicui` · `@aceternity` · `@motion-primitives` · `@skiper`.**
+The namespace→URL map lives in `components.json` and ONLY there —
+it is machine-readable, the CLI reads it, and a second copy in
+prose would go stale the day a vendor moves a path.
 
-| Namespace | Registry |
-|---|---|
-| `@magicui` | `https://magicui.design/r/{name}.json` |
-| `@aceternity` | `https://ui.aceternity.com/registry/{name}.json` |
-| `@motion-primitives` | `https://motion-primitives.com/c/{name}.json` |
-| `@skiper` | `https://skiper-ui.com/r/{name}.json` |
+Two things a builder meets immediately:
 
-Skiper's own docs write the namespace as `@skiper-ui/<name>`; this
-repo wires it as `@skiper`, so a command copied from their site
-needs its namespace swapped. Wiring a registry is a SUPPLY LINE,
-not an endorsement of anything in it.
+- **`@motion-primitives` was NOT verified.** Its URL is the one its
+  own documentation gives, but on 2026-08-12 that host returned
+  **429 to every request from this network — including its
+  homepage** — so no dry-run has ever succeeded against it. Expect
+  it to fail; if it does, the wiring is not the suspect.
+- **Skiper's own docs write `@skiper-ui/<name>`**, while this repo
+  wires the namespace as `@skiper`. A command copied from their
+  site needs its namespace swapped.
+
+Wiring a registry is a SUPPLY LINE, not an endorsement of anything
+in it.
 
 ### THE ARRIVAL LAW
 
@@ -292,6 +298,16 @@ option, and "we will add the credit later" is the failure this
 sentence exists to prevent. Skiper Pro remains a CONDITIONAL
 PURCHASE under the founder's standing ruling — it is not bought
 because a component would be convenient.
+
+**THE OTHER THREE REGISTRIES WERE NOT WALKED, and silence here is
+not permission.** Skiper's duty is the founder's ruling; MagicUI,
+Aceternity and motion-primitives each run their own free/pro terms
+which this bench did not read. So the rule for them is procedural
+rather than substantive: **read the vendor's licence at FIRST USE,
+record what it requires in that task's memory, and treat an
+unread licence as a blocker rather than a default-yes.** The
+attribution question is asked of every registry; only one of the
+four has its answer written down.
 
 ## The review gate
 

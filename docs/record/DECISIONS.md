@@ -4611,6 +4611,12 @@ In full: 2026-08-12 — RECHARTS IS ROAM'S DEFAULT CHART LAYER, by way of shadcn
 
 **Decision:** charts are shadcn chart components on **Recharts**,
 and that is the default a seat reaches for without asking.
+**SPECIALIZED VISUALIZATION MAY DEVIATE TASK-LOCALLY** — a map
+overlay, a custom SVG timeline, a density plot no chart library
+draws well — and that deviation is an implementation call recorded
+in the task's memory, NOT a new decision and NOT a second default.
+The exception is stated here rather than only in the line above,
+because it is what a seat needs at the moment it deviates.
 
 **Why:** the alternative is choosing a chart library per screen,
 which in a product that renders confidence, freshness and

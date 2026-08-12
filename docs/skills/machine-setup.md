@@ -96,7 +96,10 @@ status: living
 
     # b · the MCP servers, user scope
     npx playwright install chromium         # prereq, once per machine
-    claude mcp add playwright --scope user -- npx -y @playwright/mcp@latest
+    #   --caps devtools is REQUIRED, not optional: without it the
+    #   server exposes no recording tools at all, and the agent's
+    #   motion-capture duty below silently degrades to stills.
+    claude mcp add playwright --scope user -- npx -y @playwright/mcp@latest --caps devtools
     claude mcp add shadcn     --scope user -- npx shadcn@latest mcp
     #   context7 is ALREADY served at user scope by the context7
     #   PLUGIN, running the identical command; adding a second
@@ -198,7 +201,7 @@ remaining gap rather than grinding.
 ---
 name: design-review
 description: Read-only visual critic for built UI. Screenshots a running surface at 375px and 1440px — and for motion-intensive surfaces records VIDEO or a TRACE of the opening and one interaction, because a still cannot see a spring. Grades against the global design law and the project's own DESIGN.md, and returns counted findings with their captures. Invoke when a diff touches UI and before it goes to review. Never edits, never merges, never starts a server.
-tools: Read, Grep, Glob, mcp__playwright__browser_navigate, mcp__playwright__browser_resize, mcp__playwright__browser_take_screenshot, mcp__playwright__browser_snapshot, mcp__playwright__browser_console_messages, mcp__playwright__browser_click, mcp__playwright__browser_wait_for, mcp__playwright__browser_close
+tools: Read, Grep, Glob, mcp__playwright__browser_navigate, mcp__playwright__browser_resize, mcp__playwright__browser_take_screenshot, mcp__playwright__browser_snapshot, mcp__playwright__browser_console_messages, mcp__playwright__browser_click, mcp__playwright__browser_hover, mcp__playwright__browser_wait_for, mcp__playwright__browser_start_video, mcp__playwright__browser_stop_video, mcp__playwright__browser_video_chapter, mcp__playwright__browser_start_tracing, mcp__playwright__browser_stop_tracing, mcp__playwright__browser_close
 ---
 
 # design-review — the visual gate
@@ -238,7 +241,9 @@ project file speaks, it wins.
 4. Walk the STATES the surface claims to have: loading, empty,
    error, long-content, mobile. Any state you could not reach, name
    as unverified rather than passing it.
-5. `browser_close`.
+5. **If the surface is motion-intensive, capture it now** — the
+   section below says how. Do this BEFORE closing the browser.
+6. `browser_close`.
 
 ## Motion-intensive surfaces: capture time, not frames
 
@@ -247,25 +252,41 @@ an opening sequence, a transition, anything whose correctness is a
 matter of TIMING — stills are only the composition check, and the
 motion needs a recording.
 
-A surface is motion-intensive if any of these is true: it plays an
-entrance or assembly on load · it moves between states rather than
-swapping them · the caller says it is.
+A surface is motion-intensive if ANY of these is true — and the
+list is the whole test, so read it against the surface rather than
+deciding by feel:
+
+- it plays an entrance or assembly on load;
+- it moves between states rather than swapping them;
+- **it reveals or transforms anything on scroll**;
+- **it springs on hover or press** — any interaction whose
+  correctness is its timing rather than its result;
+- the caller says it is.
 
 For those surfaces, capture **VIDEO or a TRACE at BOTH widths** —
 375 and 1440 — of two things:
 
 1. **The opening moment**, from navigation to settled.
-2. **One interaction**, driven with `browser_click` and
-   `browser_wait_for`: whichever one the surface is actually about.
+2. **One interaction**, driven with `browser_click` /
+   `browser_hover` and `browser_wait_for`: whichever one the
+   surface is actually about.
+
+The tools are `browser_start_video` / `browser_stop_video` (with
+`browser_video_chapter` to mark the two moments in one recording)
+or `browser_start_tracing` / `browser_stop_tracing`. **They exist
+only when the MCP server was registered with `--caps devtools`**
+(step 12b). If you cannot see those tools, the server is
+misregistered — say exactly that, because it is a five-second fix
+and not a reason to skip the duty.
 
 **ATTACH THE CAPTURES TO THE FINDINGS** — a motion finding that
 cannot be replayed is an opinion. Name the file beside the finding
 it supports, and say which width it came from.
 
-If capture is unavailable in your session, **say so in one line and
-grade composition only, marking every timing question UNVERIFIED.**
-Do not infer a spring from two frames; that is the failure this
-whole section exists to prevent.
+If capture is genuinely unavailable, **say so in one line and grade
+composition only, marking every timing question UNVERIFIED.** Do
+not infer a spring from two frames; that is the failure this whole
+section exists to prevent.
 
 ## What you return
 

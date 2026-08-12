@@ -1,14 +1,16 @@
 ---
 type: memory
 id: design-supply-lines
-updated: 2026-08-12 · birth · work PC
+updated: 2026-08-12 · gate · work PC
 ---
 # design-supply-lines — where components come from, and how the gate sees motion
 
 ## Status
 
-bench ready — born 2026-08-12 at the work PC control tower, on the
-founder's two-part mandate.
+complete, awaiting merge — 2026-08-12
+
+Tower-authored, so the external Web review precedes the founder's
+word. At THE GATE; does not merge.
 
 ## What this task is
 
@@ -82,6 +84,58 @@ duty, and the machine copy was rewritten FROM that master and
 proven identical by extraction and diff rather than by claiming to
 have saved the file. The mastering pattern the design-stack bench
 introduced paid off the first time it was exercised.
+
+## The pre-gate critic — 12 findings, 12 addressed, 0 dismissed
+
+**THE BLOCKING FINDING IS THE BEST ONE THIS WORKSHOP HAS HAD, because
+it caught a duty that would have failed SILENTLY AND FOREVER.** The
+first draft of Part B ordered the agent to capture video or a trace
+— and no tool in its allowlist could record anything, while the MCP
+server was registered as a bare `npx @playwright/mcp@latest`. Every
+motion review would have fallen through the section's own "capture
+is unavailable" escape hatch and graded stills, while the ledger
+line, the master text and this memory all said the gate could see
+motion. The gate would have been exactly as blind as before, with a
+paragraph asserting otherwise.
+
+The repair was not to soften the duty. `@playwright/mcp` DOES
+expose `browser_start_video`, `browser_stop_video`,
+`browser_video_chapter`, `browser_start_tracing` and
+`browser_stop_tracing` — **but only under `--caps devtools`**, which
+the registration lacked. So: the server was re-registered with the
+capability, step 12b now says the flag is REQUIRED and why, the
+agent's allowlist names the recording tools, and all FOURTEEN
+playwright tools it names were extracted from the master and checked
+against the live server's `tools/list`. The same test that proved
+the master and the machine copy identical now also proves the
+allowlist is real.
+
+**THREE MORE WERE MY OWN ENUMERATION FAILURES**, in a bench whose
+job was partly to write case tables. The motion-intensive test
+listed three triggers and answered NO for a scroll-linked reveal and
+for a hover spring — both pure timing questions, and the global law
+one section above names scroll-linked reveals by name; both are now
+triggers. The attribution duty was landed for ONE of the four
+registries the table directly above it had just wired, and silence
+for the other three reads as permission; the rule for them is now
+procedural — read the licence at first use, record it in the task's
+memory, treat an unread licence as a blocker. And the numbered pass
+closed the browser at step 5 before the capture section it preceded,
+so an agent following it literally could never capture anything.
+
+The rest: the `@motion-primitives` 429 was disclosed only in the
+bench's own papers, which move to `record/history/` at ship, and not
+in DESIGN or SETUP where a builder actually reads — both now carry
+it, and SETUP's blanket VERIFY command says which namespace is
+expected to fail. The namespace→URL table in DESIGN duplicated
+`components.json`, so the prose kept a second copy that could go
+stale silently; it now names the namespaces and points at the config
+as the one home. D-085's deviation clause lived only inside the
+`In full:` line, which is the least-read sentence in an entry and
+exactly where a seat about to deviate would not look. HOME's Terms
+still described the agent as screenshots-only and had no row for the
+arrival law. And the Status line still read `bench ready` at a head
+about to reach the gate.
 
 ## Where to look
 

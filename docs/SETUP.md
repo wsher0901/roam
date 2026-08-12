@@ -47,8 +47,12 @@ the repo layout:
 - Component registries: `components.json` wires `@magicui` ·
   `@aceternity` · `@motion-primitives` · `@skiper`. Wiring is a
   supply line, never an endorsement — what lands obeys the ARRIVAL
-  LAW in [DESIGN §The component kit](DESIGN.md#the-component-kit).
-  VERIFY: `npx shadcn@latest add @<ns>/<item> --dry-run`.
+  LAW in [DESIGN §The component kit](DESIGN.md#the-component-kit);
+  the namespace→URL map lives in `components.json` and only there.
+  VERIFY: `npx shadcn@latest add @<ns>/<item> --dry-run` — passes
+  for `@magicui`, `@aceternity` and `@skiper`; **`@motion-primitives`
+  is expected to FAIL**, its host having returned 429 to every
+  client and every path on 2026-08-12.
 - Layout: app code in `src/`, engine in `engine/` (hard boundary,
   no app imports), spike scripts in `scripts/spikes/`
 

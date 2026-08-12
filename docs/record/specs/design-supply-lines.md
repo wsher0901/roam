@@ -76,9 +76,13 @@ that asked for it.
 - [x] One D-number for the chart layer, with Base UI compatibility
       verified from the vendor's own docs before the entry was cut.
 - [x] The agent's master and the machine copy are proven identical
-      by extraction and diff, not by assertion.
+      by extraction and diff, not by assertion — and every one of
+      the 14 playwright tools the agent names was checked against
+      the live server's own `tools/list`, which is what the first
+      draft failed: it ordered a capture no registered tool could
+      perform.
 - [x] The inbox line moves to the outcome ledger with its vehicle.
-- [ ] Gates green; the pushed head's Actions run green.
+- [x] Gates green; the pushed head's Actions run green.
 - [ ] Shipped to THE GATE — not merged.
 
 ## Notes for whoever resumes this bench
