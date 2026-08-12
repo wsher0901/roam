@@ -247,6 +247,68 @@ appears.
 The machine's shadcn MCP server searches the registries and
 returns install commands; it does not choose taste.
 
+### The supply lines
+
+`components.json` wires four component registries by namespace, so
+a builder can pull from them without hunting for URLs:
+**`@magicui` · `@aceternity` · `@motion-primitives` · `@skiper`.**
+The namespace→URL map lives in `components.json` and ONLY there —
+it is machine-readable, the CLI reads it, and a second copy in
+prose would go stale the day a vendor moves a path.
+
+Two things a builder meets immediately:
+
+- **`@motion-primitives` was NOT verified.** Its URL is the one its
+  own documentation gives, but on 2026-08-12 that host returned
+  **429 to every request from this network — including its
+  homepage** — so no dry-run has ever succeeded against it. Expect
+  it to fail; if it does, the wiring is not the suspect.
+- **Skiper's own docs write `@skiper-ui/<name>`**, while this repo
+  wires the namespace as `@skiper`. A command copied from their
+  site needs its namespace swapped.
+
+Wiring a registry is a SUPPLY LINE, not an endorsement of anything
+in it.
+
+### THE ARRIVAL LAW
+
+**A registry component ADAPTS ON LANDING. Arrival is not
+ratification** — what the CLI writes is a DRAFT in Roam's terms
+until all three of these are true:
+
+1. **It adapts to [D-007](record/DECISIONS.md#d-007--shadcnui-builds-on-base-ui)** —
+   shadcn/ui on Base UI, the "nova" preset. Anything arriving
+   against Radix-era primitives is rewritten onto Base UI or not
+   kept. Many registries still ship Radix-era code; that is the
+   single most likely thing to be wrong on landing.
+2. **It adapts to the token layer, once it exists** — no hex
+   literals, no private scales. Until
+   [V1.S2.T5](ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)
+   builds that layer, an arriving component's own values are
+   task-local and recorded in the task's memory, exactly as
+   §Color & tokens allows for the probe palette.
+3. **It adapts to the design law** — the direction above, the
+   banned defaults, the motion rules, and the five states. A
+   component that ships a purple gradient or `system-ui` arrives
+   with those stripped, not with an exception.
+
+**SKIPER'S FREE TIER CARRIES AN ATTRIBUTION DUTY: attribute, or do
+not ship free-tier items in the product.** There is no third
+option, and "we will add the credit later" is the failure this
+sentence exists to prevent. Skiper Pro remains a CONDITIONAL
+PURCHASE under the founder's standing ruling — it is not bought
+because a component would be convenient.
+
+**THE OTHER THREE REGISTRIES WERE NOT WALKED, and silence here is
+not permission.** Skiper's duty is the founder's ruling; MagicUI,
+Aceternity and motion-primitives each run their own free/pro terms
+which this bench did not read. So the rule for them is procedural
+rather than substantive: **read the vendor's licence at FIRST USE,
+record what it requires in that task's memory, and treat an
+unread licence as a blocker rather than a default-yes.** The
+attribution question is asked of every registry; only one of the
+four has its answer written down.
+
 ## The review gate
 
 A diff that changes what a screen renders faces the

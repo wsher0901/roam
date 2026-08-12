@@ -1,17 +1,5 @@
 ## Open
 
-- ⏳ THE DESIGN-REVIEW GATE IS BLIND TO MOTION — it screenshots a
-  surface at 375px and 1440px, which cannot see a spring, a
-  stagger, an interruption, or anything that happens IN TIME. The
-  taste pass proved the gap from the other side: round one was
-  judged on stills and the founder rejected all three directions
-  because stills cannot judge a moving product. Playwright can
-  record video and traces, so the capability exists and only the
-  wiring is missing — for motion-intensive surfaces the gate should
-  capture a clip rather than a frame. Filed, not built. (2026-08-11,
-  the work PC control tower) →
-  [LAWS §Workflow](LAWS.md#workflow-non-negotiable)
-
 - ⏳ THIRD-PARTY DESIGN SKILLS ARE A FOUNDER CALL, AND ONE IS
   ALREADY ON THIS MACHINE — `ui-ux-pro-max` v2.5.0 is installed at
   user scope from a third-party marketplace
@@ -667,6 +655,7 @@
 The outcome ledger — one line each, newest first. A closed idea
 keeps its answer, never its narrative.
 
+- 🟢 THE DESIGN-REVIEW GATE HAS MOTION EYES — for motion-intensive surfaces it now records VIDEO or a TRACE of the opening moment plus one interaction, at 375 and 1440, attached to the findings; stills stay the composition check, and a session that cannot capture says so and marks every timing question UNVERIFIED. Built, not filed — and the capability was the hard half: the recording tools exist ONLY when the playwright MCP is registered with `--caps devtools`, which the first draft of this work did not do, so the duty would have degraded silently to stills. The registration now carries it, the agent's allowlist names the recording tools, and all fourteen tools it names were checked against the live server. Duty and capability both live in [machine-setup step 12](skills/machine-setup.md#one-time-per-machine); the work PC's copy was rewritten from that master and proven identical by extraction and diff. → [#352](https://github.com/wsher0901/roam/pull/352)
 - 🟢 THE TASTE PASS RAN AND THE DIRECTION IS NAMED — `place-first`: the plan lives on a living map, place is the ground, provenance pins to place. Chosen from a LIVE probe after a first round of static candidates was rejected for varying the typeface inside one metaphor; the pair (Archivo · Public Sans · JetBrains Mono) is ratified as worn, two reference slots are seeded by the picked probe, and the COLOUR TOKENS plus three slots stay reserved and unruled. → [DESIGN](DESIGN.md) · [#349](https://github.com/wsher0901/roam/pull/349)
 - 🟢 The gate window no longer lies about what the founder owes — [ship §6](skills/ship.md#6--the-gate) now repaints the board before rendering the gate report, as a DASHBOARD-only micro-PR, the same carve-out the tail already uses. Seen three times in two days before it was written down.
 - 🟢 THE ENUMERATION LAW — whenever a rule sorts inputs into cases, its author walks the REAL INPUTS FROM THEIR SOURCE and lands each one; a substring of a rendering is not a case, and neither is an absence. [LAWS §Knowledge & tracking](LAWS.md#knowledge--tracking), beside the sweep law. Five instances shipped in five consecutive benches, every one caught by review and none by its author — and a SIXTH was committed inside the very bench that wrote this law, by a reviewer's substring test.

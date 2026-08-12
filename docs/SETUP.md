@@ -40,9 +40,19 @@ the repo layout:
 - Claude API — server-side only; scoring engine isolated in
   `engine/`
 - Frontend: Tailwind v4 · shadcn/ui on Base UI ("nova" preset, NOT
-  Radix) · Motion · MapLibre GL · dnd-kit · Vercel AI SDK ("AI SDK
-  UI" flavor; NOT the paused RSC/streamUI variant) · TanStack
-  Query · Zustand
+  Radix) · Motion · MapLibre GL · dnd-kit · Recharts, via shadcn's
+  chart components ([D-085](record/DECISIONS.md#d-085--recharts-is-the-chart-layer))
+  · Vercel AI SDK ("AI SDK UI" flavor; NOT the paused RSC/streamUI
+  variant) · TanStack Query · Zustand
+- Component registries: `components.json` wires `@magicui` ·
+  `@aceternity` · `@motion-primitives` · `@skiper`. Wiring is a
+  supply line, never an endorsement — what lands obeys the ARRIVAL
+  LAW in [DESIGN §The component kit](DESIGN.md#the-component-kit);
+  the namespace→URL map lives in `components.json` and only there.
+  VERIFY: `npx shadcn@latest add @<ns>/<item> --dry-run` — passes
+  for `@magicui`, `@aceternity` and `@skiper`; **`@motion-primitives`
+  is expected to FAIL**, its host having returned 429 to every
+  client and every path on 2026-08-12.
 - Layout: app code in `src/`, engine in `engine/` (hard boundary,
   no app imports), spike scripts in `scripts/spikes/`
 

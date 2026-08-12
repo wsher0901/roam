@@ -1720,13 +1720,27 @@ the link for the full story.
   are unmade decisions belonging to the founder — a seat asks
   rather than guessing. Home: [DESIGN](DESIGN.md).
 - **design-review agent** — the machine's read-only visual critic:
-  screenshots a RUNNING surface at 375px and 1440px, grades it
-  against the taste file first and the global law second, and
-  returns counted findings. A UI-touching diff faces it before THE
-  GATE; it never edits and never merges, and it is distinct from
-  this repo's `reviewer` subagent, which reads diffs rather than
-  pixels. Home:
+  screenshots a RUNNING surface at 375px and 1440px, and for
+  MOTION-INTENSIVE surfaces records video or a trace of the opening
+  plus one interaction, because a still cannot see a spring. It
+  grades against the taste file first and the global law second and
+  returns counted findings with their captures. A UI-touching diff
+  faces it before THE GATE; it never edits and never merges, and it
+  is distinct from this repo's `reviewer` subagent, which reads
+  diffs rather than pixels. Home:
   [LAWS §Workflow](LAWS.md#workflow-non-negotiable).
+- **the arrival law** — what happens when a component lands from a
+  wired registry: it ADAPTS ON LANDING, to
+  [D-007](record/DECISIONS.md#d-007--shadcnui-builds-on-base-ui)'s
+  Base UI, to the token layer once it exists, and to the design
+  law — and **arrival is not ratification**, so what the CLI writes
+  is a draft in Roam's terms until those hold. Home:
+  [DESIGN §The component kit](DESIGN.md#the-component-kit).
+- **supply line** — a component registry wired into
+  `components.json` by namespace. Wiring one says where components
+  MAY come from and nothing about whether any of them is good;
+  `components.json` is the only home of the namespace→URL map.
+  Home: [DESIGN §The component kit](DESIGN.md#the-component-kit).
 
 ### Product & engine
 
@@ -1955,10 +1969,14 @@ React 19) + Supabase (Postgres + Auth) + Vercel; the planning brain
 is the Claude API, server-side only; the engine is isolated in
 engine/ with a hard boundary (no app imports) so it could one day
 move to a Python worker without a rewrite. Frontend layer: Tailwind v4
-+ shadcn/ui on Base UI, Motion, MapLibre GL, dnd-kit, the Vercel AI
-SDK ("AI SDK UI" flavor), TanStack Query + Zustand. Doctrine:
++ shadcn/ui on Base UI, Motion, MapLibre GL, dnd-kit, Recharts for
+charts ([D-085](record/DECISIONS.md#d-085--recharts-is-the-chart-layer)),
+the Vercel AI SDK ("AI SDK UI" flavor), TanStack Query + Zustand.
+Component registries are wired in `components.json`, and what
+arrives from them obeys the arrival law in
+[DESIGN](DESIGN.md#the-component-kit). Doctrine:
 stream-first, cache-heavy, parallel fan-out, DB co-located. Canonical,
-with sources: SETUP §Stack (D-001 · D-005 · D-007). App code lives in
+with sources: SETUP §Stack (D-001 · D-005 · D-007 · D-085). App code lives in
 `src/`, engine code in `engine/`, spike scripts in `scripts/spikes/`,
 CI in `.github/workflows/ci.yml` (lint + test on every PR — ship's
 gate is real).
