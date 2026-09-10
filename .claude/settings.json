@@ -21,7 +21,27 @@
       "Bash(gh pr create:*)", "Bash(gh pr view:*)",
       "Bash(gh pr list:*)", "Bash(gh pr diff:*)",
       "Bash(node:*)", "Bash(npm run:*)", "Bash(npm test:*)",
-      "Bash(npx vitest:*)", "Bash(npx eslint:*)", "Bash(npx prettier:*)"
+      "Bash(npx vitest:*)", "Bash(npx eslint:*)", "Bash(npx prettier:*)",
+
+      "Bash(grep:*)", "Bash(rg:*)", "Bash(ls:*)", "Bash(cat:*)",
+      "Bash(head:*)", "Bash(tail:*)", "Bash(sed:*)", "Bash(awk:*)",
+      "Bash(find:*)", "Bash(wc:*)", "Bash(sort:*)", "Bash(uniq:*)",
+      "Bash(comm:*)", "Bash(diff:*)", "Bash(cut:*)", "Bash(tr:*)",
+      "Bash(xargs:*)", "Bash(jq:*)", "Bash(date:*)", "Bash(echo:*)",
+      "Bash(printf:*)", "Bash(test:*)", "Bash(which:*)",
+      "Bash(mkdir:*)", "Bash(cp:*)", "Bash(mv:*)", "Bash(sleep:*)",
+
+      "Bash(git show:*)", "Bash(git rev-parse:*)", "Bash(git rev-list:*)",
+      "Bash(git ls-files:*)", "Bash(git rm:*)", "Bash(git mv:*)",
+      "Bash(git stash:*)", "Bash(git merge:*)", "Bash(git blame:*)",
+      "Bash(git remote:*)", "Bash(git config --get:*)",
+
+      "Bash(gh pr ready:*)", "Bash(gh pr edit:*)", "Bash(gh pr checks:*)",
+      "Bash(gh pr comment:*)", "Bash(gh run:*)", "Bash(gh api:*)",
+      "Bash(gh auth status:*)",
+
+      "Bash(npm audit:*)", "Bash(npm ci:*)", "Bash(npm install:*)",
+      "Bash(npm outdated:*)", "Bash(npm view:*)", "Bash(npx tsc:*)"
     ],
     "ask": [],
     "deny": [
@@ -30,7 +50,20 @@
       "Bash(gh repo delete:*)",
       "Bash(gh pr merge --admin:*)", "Bash(gh pr merge * --admin*)",
       "Bash(gh pr merge --repo:*)", "Bash(gh pr merge * --repo *)",
-      "Bash(gh pr merge -R:*)", "Bash(gh pr merge * -R *)"
+      "Bash(gh pr merge -R:*)", "Bash(gh pr merge * -R *)",
+
+      "Bash(gh api -X:*)", "Bash(gh api * -X *)",
+      "Bash(gh api --method:*)", "Bash(gh api * --method *)",
+      "Bash(gh api * -f *)", "Bash(gh api * --input *)",
+
+      "Bash(find * -exec*)", "Bash(find * -delete*)",
+      "Bash(find * -fprint*)", "Bash(find * -fls*)",
+      "Bash(awk * system(*)", "Bash(awk * print > *)",
+      "Bash(sed -i:*)", "Bash(sed * -i *)",
+
+      "Bash(cp * .claude/*)", "Bash(mv * .claude/*)",
+      "Bash(cp * .git/*)", "Bash(mv * .git/*)",
+      "Bash(cp * ~/*)", "Bash(mv * ~/*)"
     ]
   },
   "hooks": {

@@ -2,12 +2,12 @@
 type: chronicle-story
 shelf: III — the information system
 status: living
-updated: 2026-08-06 · written · cloud lane
+updated: 2026-09-10 · the diet, and the classifier caught twice · work PC
 ---
 
 # ship — the closing ritual
 
-> **CURRENT ENDING (2026-08-06).** The eight-step close that is the
+> **CURRENT ENDING (2026-09-10).** The eight-step close that is the
 > only way a task becomes done: preflight against a synced main →
 > spec gate → weave lint → final memory → flip the PR → THE GATE,
 > where the critic runs and the founder's word is the only key →
@@ -16,15 +16,22 @@ updated: 2026-08-06 · written · cloud lane
 > every other surface defers to, because it is where the ROADMAP is
 > ticked, memory becomes history, the ledger gains its line, and —
 > since 2026-08-05 — the chronicle is kept current. **It advanced
-> three times in two days** and is still advancing: the weld now
-> performs SYNTHESIS, its settle-or-advance test was rewritten after
-> the critic found the test contradicted itself, and the SETTLED
-> branch that test exists to make reachable **has still never
-> fired** across three welds. One live defect stands against it, and
-> it is not in the weld: **§6 renders THE GATE report into the
-> conversation and touches no board**, so for the whole window in
-> which the founder owes the one act that unblocks a bench, the
-> board says nothing is owed.
+> three times in two days**, and it has gone on advancing: the weld
+> now performs SYNTHESIS, its settle-or-advance test was rewritten
+> after the critic found the test contradicted itself, and the
+> SETTLED branch that test exists to make reachable **has still
+> never fired**. The §6 board-silence defect that this story once
+> named as live IS CLOSED — the gate now repaints before it reports.
+> **Since 2026-09-10 the ritual runs on a DIET**
+> ([D-086](../record/DECISIONS.md#d-086--workshop-the-product-first-window)
+> ruling 2, until V1.S1 closes): no gate-repaint micro-PR, no tail
+> micro-PR — the repaint rides inside the weld — and synthesis
+> deferred for PRODUCT welds, classified BY THE LEDGER QUADRANT the
+> weld itself assigns. That classifier is the story's sharpest
+> lesson: it shipped undefined, was repaired into a PATH test, and
+> the external review proved the path test called the window's own
+> target stage "not product" — two wrong answers, both from reading
+> the DIFF, where the record was already reading MEANING.
 
 ## What it is
 
@@ -169,6 +176,38 @@ in the order the workshop discovered it could get them wrong.
   states, case 1 firing three times at about the promised cost of
   one bullet and one ending each.
 
+- **2026-09-10 — THE RITUAL GOES ON A DIET, AND ITS OWN CLASSIFIER
+  IS CAUGHT TWICE BEFORE IT SHIPS**
+  ([#355](https://github.com/wsher0901/roam/pull/355),
+  [D-086](../record/DECISIONS.md#d-086--workshop-the-product-first-window)
+  ruling 2). Three window clauses, in force until
+  [V1.S1](../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
+  closes: **§6 writes no gate-repaint micro-PR** — the gate report in
+  the session is the notice; **§8's tail writes no micro-PR either**,
+  its board repaint becoming a commit INSIDE §7's atomic weld, which
+  is the weld's own reason for existing; and **§7's synthesis is
+  DEFERRED for product welds**, stamped `synthesis: deferred —
+  D-086`, with one catch-up bench at V1.S1 close.
+  THE CLAUSE THAT MATTERED WAS THE CLASSIFIER, AND IT WAS WRONG
+  TWICE. The first draft said "product weld" and defined it nowhere
+  in `docs/`, so the branch a seat is told to take had no test at
+  all. The pre-gate critic caught that; its repair keyed product on
+  PATHS TOUCHED — outside `docs/`, `.claude/`, `.github/`,
+  `scripts/` — and the external review caught THAT: V1.S1 is a
+  docs-and-spikes stage by its own definition, T1 and T2 having
+  shipped as `product/definition` stories touching only `docs/data/`
+  and `scripts/spikes/`, so the path test called the window's own
+  target stage NOT PRODUCT and the deferral would never have fired.
+  The settled answer is THE LEDGER QUADRANT — product when the
+  history file lands under `record/history/product/`, workshop when
+  under `record/history/workshop/`, mixed when a product-quadrant
+  weld also carries a workshop item, which defers AND names what it
+  carried. **The instrument was already in the step, two bullets
+  above the clause**: the weld assigns the quadrant itself. The
+  lesson is about where a classifier reads from — both wrong
+  attempts derived the class from the DIFF, while the record derives
+  it from MEANING, assigned by the seat that did the work.
+
 ## Where it stands
 
 **The weld is in good health and the gate is not.**
@@ -188,17 +227,21 @@ ruling 2 created and the one the repaired test exists to make
 reachable, and it remains untested. Whether the repair works is
 therefore still a claim about a code path nobody has walked.
 
-**The live defect is §6's silence toward the board.** The gate
-report renders into the CONVERSATION and stops; the board is next
-touched by §8's tail, which runs only AFTER the merge. The window
-between them is precisely when the founder owes the one act that
-unblocks the bench — and it is precisely then that
-[DASHBOARD](../DASHBOARD.md) reads Needs-you: nothing. This happened
-**three times on 2026-08-05/06 alone**. It is open in
-[IDEAS](../IDEAS.md), unruled, with a cheap fix already named: give
-§6 a DASHBOARD-only micro-PR, the same carve-out the tail already
-uses. The diagnosis filed with it is more general than ship —
-**rituals repaint on entry and exit, and the middle of a long
+**The §6 board-silence defect is CLOSED, and its fix is now
+suspended.** The gate report rendered into the CONVERSATION and
+stopped, while the board was next touched by §8's tail, which runs
+only AFTER the merge — so through the whole window in which the
+founder owed the one act that unblocks a bench,
+[DASHBOARD](../DASHBOARD.md) read Needs-you: nothing. It happened
+**three times on 2026-08-05/06 alone**, and was fixed exactly as the
+cheap repair predicted: §6 gained a DASHBOARD-only micro-PR, the
+same carve-out the tail already used. **Since 2026-09-10 that
+micro-PR is not written** — not because the defect returned, but
+because [D-086](../record/DECISIONS.md#d-086--workshop-the-product-first-window)
+ruling 2a judged the gate report itself sufficient notice for the
+length of the window, with a founder who leaves mid-gate covered by
+handoff FULL. The general diagnosis filed alongside it outlives
+both: **rituals repaint on entry and exit, and the middle of a long
 sitting belongs to no ritual.**
 
 Two smaller gaps stand behind it. [ATLAS](../ATLAS.md)'s file-flow
@@ -208,7 +251,12 @@ And the critic's own findings have repeatedly caught a
 **case-analysis class** of error in ship's own steps — cases
 exhaustive over the situations the author had in mind, with the hole
 in the one not enumerated — five instances, the fifth committed
-inside the bench convened to fix the fourth.
+inside the bench convened to fix the fourth. **A sixth and a seventh
+landed in §7's window clause on 2026-09-10**, both in the same
+classifier and both caught by review rather than by its author: an
+undefined term, then a definition that excluded the majority case.
+The pattern is now seven for seven — every one found by a reader,
+none by the writer.
 
 **This story's ending contradicts nothing in the census cell** — that
 cell is current, unusually so, because the synthesis step obliges

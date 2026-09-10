@@ -2,12 +2,12 @@
 type: chronicle-story
 shelf: III — the information system
 status: living
-updated: 2026-08-07 · D-082/D-083 incorporated · work PC
+updated: 2026-09-10 · the diet gets teeth; both defects closed · work PC
 ---
 
 # DASHBOARD — the board
 
-> **CURRENT ENDING (2026-08-06).** The single rendered state
+> **CURRENT ENDING (2026-09-10).** The single rendered state
 > surface, and the workshop's most carefully DE-authorized file:
 > never hand-edited, written only by rituals, and outranked by git
 > on any disagreement. The census cell says that much and stops
@@ -17,10 +17,19 @@ updated: 2026-08-07 · D-082/D-083 incorporated · work PC
 > which cut it to state and acts and sent the stories to the
 > record, and
 > [D-070](../record/DECISIONS.md#d-070--baton-renderings-single-homed),
-> which moved every BATON rendering into one case table. Two live
-> defects stand against it at this writing, both recorded below:
-> no ritual repaints it at THE GATE, and the file currently
-> carries a **duplicated block**.
+> which moved every BATON rendering into one case table. **A third
+> ruling on 2026-09-10 gave the diet teeth**
+> ([D-086](../record/DECISIONS.md#d-086--workshop-the-product-first-window)
+> ruling 4): RECENT keeps five Completed lines, ISSUES keeps only
+> lines with no home elsewhere, both PERMANENT — and the second cap
+> emptied ISSUES entirely on first application, all 28 items
+> resolving to a home, with the single genuine orphan given
+> [a probe record](../record/probes/summon-fire.md) BEFORE it was
+> removed. The two defects this story once named as live are gone:
+> the GATE repaint was added and then folded into the weld by
+> ruling 2b, and the duplicated block is cleared by the wholesale
+> repaint. What remains true is the oldest thing about this file —
+> it is the least authoritative surface in the repo, by design.
 
 ## What it is
 
@@ -113,31 +122,55 @@ authoritative files in the repo.
   something outside the workshop's control is blocking, and dropped
   the moment it clears.
 
+- **2026-09-10 — THE DIET GETS TEETH, AND TWO SECTIONS STOP GROWING**
+  ([#355](https://github.com/wsher0901/roam/pull/355),
+  [D-086](../record/DECISIONS.md#d-086--workshop-the-product-first-window)
+  ruling 4). Until now the board's diet was a principle; RECENT and
+  ISSUES grew monotonically anyway, because nothing said when a line
+  should leave. Two PERMANENT caps: **RECENT keeps the last five
+  Completed lines**, the ledger holding the full run, and **ISSUES
+  carries only lines with NO home elsewhere** — a line already in
+  [IDEAS](../IDEAS.md) is the second copy the routing law forbids.
+  Applied once, the second cap emptied ISSUES ENTIRELY: all 28 items
+  were grepped against their claimed homes and every one resolved —
+  the ⏳ items to inbox lines, the ✓ items to the ledger or a story,
+  and the two that looked homeless to stories that did in fact carry
+  them. **Exactly one item had no home and said so itself** — the
+  summon fire's timing table, sitting on the board since 2026-08-05
+  under its own warning that verify-before-drop was the only reason
+  it was still there. It got
+  [a probe record](../record/probes/summon-fire.md) FIRST and moved
+  second, which is the order that rule asks for. The board also
+  gains a WINDOW slot in its painted line, and — under ruling 2b —
+  a new writer: the atomic weld, stamped `ship's weld`.
+
 ## Where it stands
 
-Live, on its diet, and single-homed — with two defects standing
-against it that this story records rather than tidies away.
+Live, on its diet — now enforced rather than merely stated — and
+single-homed. **Both defects this story once recorded are closed**,
+and they are kept here because how they closed is the point.
 
-**THE GATE HAS NO REPAINTER.** An open line in
-[IDEAS](../IDEAS.md) states it plainly: no ritual repaints the
-board when a bench reaches THE GATE, so every bench that gets
-there leaves the board claiming the founder owes nothing —
-observed three times on 2026-08-05/06 alone.
-[ship §6](../skills/ship.md#6--the-gate) renders the gate report
-into the CONVERSATION and stops. This is the board's failure mode
-in its purest form: not a wrong fact, but a stale surface reading
-as a current one, in the exact section — Needs-you — whose whole
+**THE GATE HAD NO REPAINTER, AND NOW THE QUESTION IS MOOT.** No
+ritual repainted the board when a bench reached THE GATE, so every
+bench that got there left the board claiming the founder owed
+nothing — three times on 2026-08-05/06 alone. The repair gave
+[ship §6](../skills/ship.md#6--the-gate) a DASHBOARD-only micro-PR;
+then [D-086](../record/DECISIONS.md#d-086--workshop-the-product-first-window)
+ruling 2a suspended that micro-PR for the window's duration, judging
+the gate report itself sufficient notice with handoff FULL as the
+backstop. The board's purest failure mode is still worth naming
+because it will recur elsewhere: **not a wrong fact, but a stale
+surface reading as a current one**, in the exact section whose whole
 job is to be trusted.
 
-**THE FILE CURRENTLY CARRIES A DUPLICATED BLOCK.** Read from
-`origin/main` on 2026-08-06, [the board](../DASHBOARD.md) renders
-`## The baton`, `## In flight` and `## Working on` TWICE each, the
-second baton copy being the one carrying that day's ⚠️ paid-late
-paragraph. It is recorded here because it is evidence about the
-mechanism rather than a typo: a file written only by rituals has
-no author to notice a doubled repaint, and nothing in CI checks
-the board's SHAPE. This story does not fix it — a lane never
-writes the board.
+**THE DUPLICATED BLOCK IS GONE.** Read from `origin/main` on
+2026-08-06, the board rendered `## The baton`, `## In flight` and
+`## Working on` TWICE each. It was never a typo — it is evidence
+about the mechanism: a file written only by rituals has no author to
+notice a doubled repaint, and **nothing in CI checks the board's
+SHAPE**, which remains true. The wholesale repaint of 2026-09-10
+cleared it, exactly as the repaint model promises — the fix was free
+because the model is regenerate-from-source rather than patch.
 
 The board's own ⚠️ paragraph from that day documents a third,
 related gap in the seat that paints it: pickup repaints only when

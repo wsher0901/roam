@@ -133,6 +133,21 @@ and judgment calls still come to the founder.
   lanes at your discretion; "more" unlocks the full menu. Stopping
   is a valid next step. →
   [D-009](record/DECISIONS.md#d-009--pacing-law)
+- **THE PRODUCT-FIRST WINDOW.** Until
+  [V1.S1](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
+  closes (T3–T7 ticked), NO WORKSHOP BENCH IS BORN — no D-number
+  about the workshop, no chronicle story, no law, manual, skill or
+  box change, NOR ANY OTHER CHANGE WHOSE SUBJECT IS THE WORKSHOP
+  RATHER THAN ROAM (the list is the common forms; the boundary is
+  the subject, so [ATLAS](ATLAS.md) and `record/probes/` are inside
+  it too). A fix a product bench needs in order to proceed RIDES
+  THAT BENCH as a recorded deviation, never its own bench;
+  dependency and security updates are product hygiene and are never
+  blocked. The ceremony runs on the diet, the T3–T6 review is
+  batched, and [IDEAS](IDEAS.md) §Open holds product work only. The
+  window expires on V1.S1's own checkboxes — nothing has to
+  remember to end it. →
+  [D-086](record/DECISIONS.md#d-086--workshop-the-product-first-window)
 - **IDEAS IS THE ONLY INBOX.** The moment the founder voices an
   idea or a defect outside the current task's scope, append one
   DATED line to [IDEAS](IDEAS.md) unasked, per its entry

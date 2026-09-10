@@ -4657,3 +4657,164 @@ stale the moment SETUP changed) ·
 the Base UI choice is unaffected) ·
 [V1.S2.T5](../ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)
 (themes it) · this entry.
+
+## D-086 — [workshop] The product-first window
+
+In full: 2026-09-10 — THE PRODUCT-FIRST WINDOW. The workshop has out-built the product, and the record says so: 351 merged PRs of which 37 touched product code, 170 merges that changed nothing but the board and the inbox, 5 ROADMAP ticks all landing on 2026-06-11/12 with 314 merges and 90 days since the last, 124 workshop history files against 15 product, and 34 days since phase 3 was unblocked in which 23 PRs merged and nothing was ticked. From this entry's merge until [V1.S1](../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code) closes — T3 through T7 ticked — NO WORKSHOP BENCH IS BORN (no D-number about the workshop, no chronicle story, no law, manual, skill or box change, nor any other change whose SUBJECT is the workshop rather than Roam), the ceremony runs on a diet, the T3–T6 external review is batched into one, the board carries a permanent diet, and the inbox splits so that §Open holds product work only. The window closes itself; nothing has to remember to end it.
+
+**Decision:** five rulings, in force from this entry's merge.
+
+**RULING 1 — THE WINDOW.** Until
+[V1.S1](../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
+closes (T3–T7 ticked), no workshop bench is born: **no D-number
+about the workshop, no chronicle story, no law, manual, skill or
+box change — nor any other change whose SUBJECT is the workshop
+rather than Roam.** The named list is the common forms, not the
+boundary; the boundary is the subject. **[ATLAS](../ATLAS.md), the
+`record/probes/` shelf, and workshop-facing edits to
+[DESIGN](../DESIGN.md) are inside the window even though they are
+none of the named five** — the parked ATLAS re-render is the worked
+example, and a seat reading the list literally would otherwise open
+it. ONE EXCEPTION: a fix a product bench needs in order to proceed
+RIDES THAT BENCH and is recorded as a deviation in its memory —
+never its own bench. **Dependency and security updates are product
+hygiene, not workshop work, and are never blocked by the window.**
+
+**RULING 2 — THE DIET,** for the window only.
+[ship](../skills/ship.md) §6, §7 and §8 each gain a window clause
+pointing here.
+[D-023](#d-023--universal-draft-pr-at-birth-and-micro-pr-carve-out)'s
+micro-PR carve-out STANDS and is simply not exercised.
+
+- **(a) §6 — no gate-repaint micro-PR.** The gate report in the
+  session is the notice. A founder leaving with a bench at the gate
+  is covered by [handoff](../skills/handoff.md) FULL exactly as
+  today.
+- **(b) §8 — no tail micro-PR.** The tail's board repaint becomes a
+  commit on the bench branch INSIDE THE ATOMIC WELD, so state and
+  work merge atomically — which is the weld's own reason for
+  existing.
+- **(c) §7 — SYNTHESIS IS DEFERRED FOR PRODUCT WELDS.** The weld
+  commit message and the history file's frontmatter carry
+  `synthesis: deferred — D-086`. **A PRODUCT WELD IS ONE WHOSE
+  HISTORY FILE LANDS UNDER `docs/record/history/product/`, and a
+  workshop weld one that lands under
+  `docs/record/history/workshop/`** — the QUADRANT the weld itself
+  assigns ([D-076](#d-076--phase-2-opens-with-a-three-story-pilot)),
+  never the paths the diff happens to touch:
+  [V1.S1](../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
+  is docs-and-spikes by definition, so a path test would call the
+  window's own target stage "not product" and never fire. A
+  product-quadrant weld that also carries a workshop item (ruling
+  1's exception) defers too, and NAMES what it carried.
+  **ONE catch-up synthesis bench runs at V1.S1 close and walks
+  every deferred weld.**
+  [chronicle/INDEX.md](../chronicle/INDEX.md)'s head gains one line
+  saying so, because a census that does not announce its own
+  deferral is a census that silently lies to the next shelf bench.
+
+**RULING 3 — THE BATCHED REVIEW.** For
+[V1.S1](../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
+T3–T6, **one external Web review covers the four ready PRs** before
+their merge words — the
+[D-079](#d-079--the-closing-campaigns-advance-word) precedent, which
+batched review for one enumerated run of work. **Merge words stay
+PER PR.** A new head on any one PR voids only that PR's verdict.
+
+**RULING 4 — THE BOARD DIET, PERMANENT** (it outlives the window).
+[handoff §4](../skills/handoff.md#4--repaint-dashboard-the-board-spec--single-source):
+**RECENT keeps the last five Completed lines**, and **ISSUES carries
+only lines with NO home elsewhere** — a line already in
+[IDEAS](../IDEAS.md) is a second copy, which the routing law
+forbids ([LAWS §Knowledge & tracking](../LAWS.md#knowledge--tracking)).
+
+**RULING 5 — THE INBOX SPLIT,** for the window.
+[IDEAS](../IDEAS.md) gains `## Parked — workshop (until V1.S1
+closes)` below `## Open`; **every §Open line that is workshop
+machinery moves there VERBATIM** — the move IS the record, nothing
+rewritten and nothing dropped. §Open keeps product lines, and any
+workshop line ruling 1's exception could reach. **And the pending
+inbox line is ruled here rather than deferred again:** every new
+decide heading opens with `[product]` or `[workshop]`,
+**forward-only** — this entry is the first, and no past heading is
+touched, because a heading is frozen at mint
+([D-068](#d-068--the-short-anchor-law)). That inbox line closes with
+this entry.
+
+**Why:** the numbers, every one of them derived from this clone at
+write time; the exact commands are recorded in this bench's memory,
+which reaches the record as its history file, and the contract is
+[the spec](specs/product-first.md).
+
+| What was counted | Figure |
+|---|---|
+| merged PRs on `main` | **351** |
+| of those, PRs touching product code | **37** |
+| merges changing ONLY the board and/or the inbox | **170** (136 board-only · 6 inbox-only · 28 both) |
+| ROADMAP ticks, and their dates | **5** — all 2026-06-11/12, PRs #19–#37 |
+| merged PRs since the last tick | **314**, spanning **90 days** |
+| history files: workshop vs product | **124 vs 15** |
+| since phase 3 unblocked ([D-081](#d-081--phase-2-closes-the-polish-pass-is-split-out-not-dropped), 2026-08-07) | **34 days · 23 merges · 0 ticks** |
+
+Read together they describe a workshop that got very good at
+describing itself. Roughly one merged PR in ten touched the
+product; nearly one in two touched nothing but the board and the
+inbox; and the last time a task was ticked, the repo was two days
+old. That is not a discipline failure — every one of those PRs was
+lawful, reviewed, and green — it is a FEEDBACK LOOP: each ritual
+that lands generates board repaints, inbox lines, chronicle
+endings and manual entries, and every one of those is itself
+lawful work, so the ceremony funds its own expansion while nothing
+outside it ever comes due. **A rule cannot fix that; only a
+deadline can.** So the window is a deadline, keyed to a condition
+the product itself controls — V1.S1's own checkboxes — and it
+therefore expires whether or not anyone remembers it.
+
+**The diet targets the specific mechanism rather than ceremony in
+general.** Ruling 2's three clauses remove three separate
+board-touching PRs per bench; ruling 4 caps two sections that grow
+monotonically; ruling 5 stops §Open from routing attention back to
+the workshop every time it is read. None of them removes a gate:
+the merge word, no-solo-approval, CI-as-arbiter and the
+design-review gate are untouched.
+
+**Alternatives rejected:**
+
+- **Keep the ceremony and add a "prefer product" preference.**
+  Rejected on [D-082](#d-082--the-vehicle-chooser)'s own finding: a
+  preference is not a rule, and the habit is what produced the
+  numbers.
+- **Make the diet permanent.** Rejected — the ceremony EARNED
+  itself on a workshop that had to be built, and the record it keeps
+  is why this audit was derivable at all; the problem is the ratio
+  right now, not the practice.
+- **A hard ban with no exception clause.** Rejected — a product
+  bench blocked by a broken skill would have to stop and ask, which
+  buys nothing and costs the window its credibility; the exception
+  is narrow (it rides the bench, never its own) and it is recorded.
+
+**Affects:**
+[LAWS §Workflow](../LAWS.md#workflow-non-negotiable) (one bullet —
+THE PRODUCT-FIRST WINDOW) ·
+[HOME §Micro-PRs](../HOME.md#micro-prs) (one pointer sentence) ·
+[ship §6](../skills/ship.md#6--the-gate),
+[§7](../skills/ship.md#7--on-approval--the-atomic-weld) and
+[§8](../skills/ship.md#8--tail) (ruling 2's three clauses) ·
+[handoff §4](../skills/handoff.md#4--repaint-dashboard-the-board-spec--single-source)
+(ruling 4) ·
+[chronicle/INDEX.md](../chronicle/INDEX.md) (ruling 2c's head line) ·
+[IDEAS](../IDEAS.md) (ruling 5 — the split, and the decide-tag line
+closed) ·
+[DASHBOARD](../DASHBOARD.md) (repainted under ruling 4) ·
+[D-023](#d-023--universal-draft-pr-at-birth-and-micro-pr-carve-out)
+(cited, unchanged — the carve-out stands and is not exercised) ·
+[D-059](#d-059--the-chronicle-layer) (its ending rule is deferred,
+not amended) ·
+[D-067](#d-067--the-report-skeleton-and-the-board-diet) (the board
+diet it began, extended) ·
+[D-068](#d-068--the-short-anchor-law) (why the decide tag is
+forward-only) ·
+[D-079](#d-079--the-closing-campaigns-advance-word) (the
+batched-review precedent) ·
+[D-081](#d-081--phase-2-closes-the-polish-pass-is-split-out-not-dropped)
+(what unblocked phase 3, and started the clock) · this entry.
