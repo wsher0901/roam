@@ -1,7 +1,8 @@
 ---
-type: memory
-id: product-first
-updated: 2026-09-10 · web review round 2 repaired · work PC
+type: history
+slug: product-first
+shipped: 2026-09-10 17:33 UTC
+pr: #355
 ---
 
 # product-first — the product-first window
@@ -13,7 +14,7 @@ PC control tower from freshly pulled main (`08e17ab`); spec and
 memory stub were the first commits, the draft PR
 ([#355](https://github.com/wsher0901/roam/pull/355)) followed
 immediately. Payload landed:
-[D-086](../record/DECISIONS.md#d-086--workshop-the-product-first-window)
+[D-086](../../../DECISIONS.md#d-086--workshop-the-product-first-window)
 plus its ripple into five homes, the inbox split, the new probe
 record, the board repaint, and the three unreferenced taste probes
 deleted. SELF-AUTHORED. Reviewed externally at `f4d1cdd` — ONE red
@@ -24,11 +25,11 @@ word is a re-review, then the merge word.
 
 Mint **D-086 — the product-first window** and ripple it. From the
 merge until
-[V1.S1](../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
+[V1.S1](../../../../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
 closes, no workshop bench is born; the ceremony runs a diet; the
 T3–T6 external review is batched; the board keeps a permanent diet;
 and the inbox splits so §Open holds product work only. Full
-contract: [the spec](../record/specs/product-first.md).
+contract: [the spec](../../../specs/product-first.md).
 
 ## Pending issues
 
@@ -38,10 +39,10 @@ instruction in the user-scope settings / preamble file that injects
 it, remove it, and record file + line here." It is in no file — see
 §The story for the full search. **Retired on the Web review**: the
 sentence's own CLAUDE.md carve-out plus the
-[LAWS](../LAWS.md) import make
-[D-082](../record/DECISIONS.md#d-082--the-vehicle-chooser) the
+[LAWS](../../../../LAWS.md) import make
+[D-082](../../../DECISIONS.md#d-082--the-vehicle-chooser) the
 standing licence, so there was never anything to click.
-[DASHBOARD](../DASHBOARD.md) Needs-you drops to one.
+[DASHBOARD](../../../../DASHBOARD.md) Needs-you drops to one.
 
 **A LIVE SUPABASE SERVICE TOKEN SITS IN `~/.claude.json`** in
 plaintext, under this repo's per-project `mcpServers` block. It is
@@ -49,7 +50,7 @@ OUTSIDE the repo and nothing was committed, so the public-repo
 safety law is not breached — but a token in a config file that
 tooling reads and copies is worth rotating on the founder's
 schedule. The value is deliberately not reproduced anywhere in this
-repo. Raised here rather than in [IDEAS](../IDEAS.md) because
+repo. Raised here rather than in [IDEAS](../../../../IDEAS.md) because
 naming the location is already as much as should be written down.
 
 ## Left / idle
@@ -112,7 +113,7 @@ merged changed nothing but the two files the workshop writes ABOUT
 ITSELF. That is why the diet targets those two files' vehicles
 (rulings 2 and 4) rather than adding a preference, and why the
 alternative "add a prefer-product preference" was rejected on
-[D-082](../record/DECISIONS.md#d-082--the-vehicle-chooser)'s own
+[D-082](../../../DECISIONS.md#d-082--the-vehicle-chooser)'s own
 evidence.
 
 **The window is a deadline, not a rule, deliberately.** A rule needs
@@ -131,7 +132,7 @@ and each one landed, rather than a rule being reasoned about in the
 abstract.
 
 - **6 stay in §Open** — five product lines (the EVAL-SET GATE and
-  the LLM-BOUNDARY RULE, both [ENGINE](../ENGINE.md) open-register
+  the LLM-BOUNDARY RULE, both [ENGINE](../../../../ENGINE.md) open-register
   slots; the world-facts asset; multi-origin trips; the reachability
   globe) and ONE workshop line that ruling 1's exception reaches:
   ENGINE's wrong frontmatter, whose own text says it is resolved by
@@ -139,7 +140,7 @@ abstract.
 - **69 move to `## Parked — workshop`**, verbatim.
 - **1 closes** — the decide-tag line, ruled by ruling 5 and
   compressed to one outcome-ledger line per
-  [D-066](../record/DECISIONS.md#d-066--the-ideas-entry-contract).
+  [D-066](../../../DECISIONS.md#d-066--the-ideas-entry-contract).
 - **1 is added** — the T7 rider.
 
 **The loss check:** every non-blank line of the old §Open was
@@ -152,23 +153,23 @@ deliberately closed and compressed. Nothing else moved by a byte.
 Ruling 4 says ISSUES keeps only lines with NO home elsewhere. Rather
 than judge that by eye, each of the section's 28 items plus the
 summon measurement block was grepped for its content at its claimed
-home. Every ⏳ item resolved to an [IDEAS](../IDEAS.md) line (now in
+home. Every ⏳ item resolved to an [IDEAS](../../../../IDEAS.md) line (now in
 §Parked); every ✓ item resolved to the ledger or a story. The two
 that looked homeless were not: the settled-branch-of-ship-§7 item
 lives in
-[lane-findings](../record/history/workshop/mechanism/lane-findings.md),
+[lane-findings](../../../history/workshop/mechanism/lane-findings.md),
 and the figure-audit item lives in
-[atlas-figures](../record/history/workshop/definition/atlas-figures.md)
+[atlas-figures](../../../history/workshop/definition/atlas-figures.md)
 §"Measured, not eyeballed".
 
 **One item genuinely had no home, and it said so itself** — the
 summon fire's timing table had been sitting on the board since
 2026-08-05 carrying its own warning that verify-before-drop was the
 only reason it was still there. It could not go to
-[flight-4-freeze](../record/probes/flight-4-freeze.md), which is
+[flight-4-freeze](../../../probes/flight-4-freeze.md), which is
 frozen, and it is a MEASUREMENT rather than a story, so the
 chronicle was the wrong shelf. It gained
-[record/probes/summon-fire.md](../record/probes/summon-fire.md)
+[record/probes/summon-fire.md](../../../probes/summon-fire.md)
 first, then moved — and the warning retires with the move, which is
 what verify-before-drop asks for.
 
@@ -195,9 +196,9 @@ to edit and nothing to click.
 
 **And the item does not need one.** The sentence names its own
 exemptions in its own words — "unless the user, a CLAUDE.md file, or
-a skill asks for it" — and [LAWS](../LAWS.md) is loaded into every
+a skill asks for it" — and [LAWS](../../../../LAWS.md) is loaded into every
 session through the root `CLAUDE.md` import. So
-[D-082](../record/DECISIONS.md#d-082--the-vehicle-chooser)'s chooser
+[D-082](../../../DECISIONS.md#d-082--the-vehicle-chooser)'s chooser
 law is already such a licence, already in force, in the preamble's
 own terms. The board item was filed on 2026-08-07 believing the
 preamble "wins because it is read first"; what the search shows is
@@ -216,7 +217,7 @@ classifier". The settings-schema answer was reached through the
 `update-config` skill instead, which carries the schema inline. So
 the two benches ran SEQUENTIALLY from this one seat rather than as
 an agent team, which
-[D-082](../record/DECISIONS.md#d-082--the-vehicle-chooser)'s table
+[D-082](../../../DECISIONS.md#d-082--the-vehicle-chooser)'s table
 would otherwise have made the default. Recorded as a fact about the
 environment, not a complaint: the benches share no file, so the only
 cost was wall-clock.
@@ -226,7 +227,7 @@ unpicked probes**, per the mandate's explicit list. Consequence
 worth naming: `taste-pass`'s shipped spec cites the deployed
 directory URL `…/spikes/taste/`, which without an index will now
 404. The probe the spec actually depends on —
-`place-first.html`, [DESIGN](../DESIGN.md)'s only linked reference —
+`place-first.html`, [DESIGN](../../../../DESIGN.md)'s only linked reference —
 resolves unchanged, and `check:links` proves it.
 
 ### The critic round — seven findings, all repaired
@@ -243,7 +244,7 @@ re-run, having read the sibling bench's prose rather than a link.
 EVERY WELD, AND THE TERM WAS DEFINED NOWHERE IN `docs/`.** The only
 operational definition in the repo was a shell comment inside THIS
 memory — which moves to `record/history/` at ship. A seat standing
-in [ship §7](../skills/ship.md#7--on-approval--the-atomic-weld) with
+in [ship §7](../../../../skills/ship.md#7--on-approval--the-atomic-weld) with
 a weld in hand had no test to apply.
 
 And the split was not exhaustive over inputs **ruling 1 itself
@@ -266,7 +267,7 @@ and untouched, still listed "ship's tail" among the repaint moments.
 The repo's own record names this pattern — a joint between two
 statements rather than an error inside one — as its recurring
 failure. Repaired at
-[HOME §Reading the board](../HOME.md#reading-the-board): same
+[HOME §Reading the board](../../../../HOME.md#reading-the-board): same
 moment, different vehicle, writer list otherwise unchanged.
 
 **🟡 3 — THE BOARD'S PAINT STAMP WAS CARRIED, NOT CLOCK-READ.** It
@@ -275,7 +276,7 @@ THE GATE and D-086's rulings — state that did not exist when pickup
 claimed the baton. Behind it sat a real gap: ruling 2b creates a
 board write with NO RITUAL NAME, and `<ritual>` is an enumerated
 slot. Repaired both ways — the stamp re-read from the shell clock,
-and [handoff §4](../skills/handoff.md#4--repaint-dashboard-the-board-spec--single-source)
+and [handoff §4](../../../../skills/handoff.md#4--repaint-dashboard-the-board-spec--single-source)
 given the new value `ship's weld`.
 
 **🟡 4 — THE WINDOW BANNER WAS RENDERED IN A SLOT THE SPEC DOES NOT
@@ -293,9 +294,9 @@ WORKSHOP WORK FELL OUTSIDE IT.** Walked against the actual parked
 inputs: the ATLAS re-render bench is not a D-number, not a chronicle
 story, not LAWS, not HOME, not `docs/skills/`, not a box master — so
 a seat reading the list literally could open it. Same for
-[DESIGN](../DESIGN.md) and the `record/probes/` shelf. Repaired in
+[DESIGN](../../../../DESIGN.md) and the `record/probes/` shelf. Repaired in
 D-086, in its `In full:` line, and in
-[LAWS](../LAWS.md#workflow-non-negotiable): the named list is the
+[LAWS](../../../../LAWS.md#workflow-non-negotiable): the named list is the
 common forms, **the boundary is the SUBJECT**, with the three
 outliers named.
 
@@ -305,7 +306,7 @@ so CI green was not evidence. All three woven.
 
 **⚪ 7** — the `index.html` deletion 404s a shipped spec's cited
 directory URL. It was in the diary but not in
-[the spec's Deviations](../record/specs/product-first.md), which is
+[the spec's Deviations](../../../specs/product-first.md), which is
 where a later reader chasing that URL starts. Moved there.
 
 ### Critic round 2 — the external review, and the test that was wrong
@@ -317,7 +318,7 @@ outside `docs/`, `.claude/`, `.github/` and `scripts/`. The Web
 review checked that test against the stage the window exists for and
 it fails there — **`V1.S1` is a docs-and-spikes stage by its own
 definition.** T1 and T2 shipped as
-[product/definition](../record/history/product/definition) stories
+[product/definition](../../../history/product/definition) stories
 having touched only `docs/data/` and `scripts/spikes/` (`#31` touched
 nothing outside the four at all), and T3–T7 will do the same. Under
 the path test the whole of V1.S1 reads NOT PRODUCT, so ruling 2c
@@ -330,7 +331,7 @@ bullets up, so a PRODUCT weld is one whose history file lands under
 under `docs/record/history/workshop/`. Mixed is a product-quadrant
 weld also carrying a workshop item — it defers and NAMES what it
 carried. The definition now lives in BOTH
-[ship §7](../skills/ship.md#7--on-approval--the-atomic-weld) and
+[ship §7](../../../../skills/ship.md#7--on-approval--the-atomic-weld) and
 D-086 ruling 2c so the skill and the ruling cannot drift.
 
 **The lesson is about where a classifier reads from.** Round 1's fix
@@ -341,8 +342,8 @@ classified — and this one disagreed on the majority case.
 
 **THE NO-AGENTS ITEM IS RETIRED**, ruled on the Web review: the
 sentence's own CLAUDE.md carve-out plus the LAWS import make
-[D-082](../record/DECISIONS.md#d-082--the-vehicle-chooser) the
-standing licence. [DASHBOARD](../DASHBOARD.md) Needs-you drops to
+[D-082](../../../DECISIONS.md#d-082--the-vehicle-chooser) the
+standing licence. [DASHBOARD](../../../../DASHBOARD.md) Needs-you drops to
 one — the home-PC design stack.
 
 **THE RAILS WIDENED, AND ONLY THE ALLOW SIDE.** The founder asked
@@ -396,7 +397,7 @@ shell inventory" — which the six rows above are not. So:
 - **Everything else stays**, including `find`/`xargs`/`sed`/`awk`
   themselves — inspection is their real use here and this session
   leaned on all four — and `git merge` (which
-  [ship §1](../skills/ship.md#1--preflight) requires by name),
+  [ship §1](../../../../skills/ship.md#1--preflight) requires by name),
   `git rm` (the founder's own sanctioned deletion path), and
   `npm install`/`ci` (lifecycle scripts are inherent to npm, and the
   lockfile is this repo's own).
@@ -415,7 +416,7 @@ anything determined — a shell script, a variable, an odd quoting, a
 tool not on the list. What actually holds the merge gate is that
 `gh pr merge` is in no allow list and lives only inside a ritual's
 `allowed-tools`
-([HOME §Micro-PRs](../HOME.md#micro-prs)). These twenty rules raise
+([HOME §Micro-PRs](../../../../HOME.md#micro-prs)). These twenty rules raise
 the cost of a mistake, and that is all they are claimed to do.
 
 Bench B ([#356](https://github.com/wsher0901/roam/pull/356)) came
@@ -424,10 +425,10 @@ this bench's after the re-review.
 
 ## Where to look
 
-- [the spec](../record/specs/product-first.md) — the contract
-- [D-086](../record/DECISIONS.md#d-086--workshop-the-product-first-window)
+- [the spec](../../../specs/product-first.md) — the contract
+- [D-086](../../../DECISIONS.md#d-086--workshop-the-product-first-window)
   — the ruling and its audit
-- [record/probes/summon-fire.md](../record/probes/summon-fire.md) —
+- [record/probes/summon-fire.md](../../../probes/summon-fire.md) —
   the measurement this bench gave a home
-- [IDEAS](../IDEAS.md) — §Open (7) and §Parked — workshop (69)
+- [IDEAS](../../../../IDEAS.md) — §Open (7) and §Parked — workshop (69)
 - [#355](https://github.com/wsher0901/roam/pull/355) — the PR

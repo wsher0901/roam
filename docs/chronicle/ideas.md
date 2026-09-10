@@ -2,12 +2,12 @@
 type: chronicle-story
 shelf: III — the information system
 status: living
-updated: 2026-08-06 · written · cloud lane
+updated: 2026-09-10 · the inbox splits · work PC
 ---
 
 # IDEAS — the single inbox
 
-> **CURRENT ENDING (2026-08-06).** The one and only inbox — no
+> **CURRENT ENDING (2026-09-10).** The one and only inbox — no
 > GitHub Issues, no boards — governed since
 > [D-066](../record/DECISIONS.md#d-066--the-ideas-entry-contract)
 > by an ENTRY CONTRACT stated at the file's own head: one idea per
@@ -16,8 +16,14 @@ updated: 2026-08-06 · written · cloud lane
 > stale**: it says closed entries are DELETED at harvest, which was
 > [D-050](../record/DECISIONS.md#d-050--session-lifecycle-closed-is-not-dead)'s
 > rule and has since been amended — closed entries now COMPRESS AND
-> STAY, one line each, as the outcome ledger. Read at this writing
-> the file carries **82 open and 21 closed** entries.
+> STAY, one line each, as the outcome ledger. **Since 2026-09-10 it
+> has THREE sections, not two**
+> ([D-086](../record/DECISIONS.md#d-086--workshop-the-product-first-window)
+> ruling 5): `## Parked — workshop` holds every workshop-machinery
+> line, moved VERBATIM and returning whole when V1.S1 closes, so
+> that reading §Open routes attention at the product instead of back
+> at the workshop. Read at this writing the file carries **7 open,
+> 69 parked and 32 closed** entries.
 
 ## What it is
 
@@ -95,12 +101,39 @@ enforcer, were needed.
   write steps; and both the ship-time critic and the external
   review grade IDEAS diffs against it.
 
+- **2026-09-10 — THE INBOX SPLITS, AND §OPEN BECOMES A PRODUCT
+  QUEUE** ([#355](https://github.com/wsher0901/roam/pull/355),
+  [D-086](../record/DECISIONS.md#d-086--workshop-the-product-first-window)
+  ruling 5). A third section joins Open and Closed: **`## Parked —
+  workshop`**, holding every §Open line that is workshop machinery,
+  **moved VERBATIM** — the move is the record, nothing rewritten,
+  merged or dropped — and returning whole when
+  [V1.S1](../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
+  closes. The arithmetic, walked from the file rather than reasoned
+  about: **76 entries in, 6 kept in §Open, 69 parked, 1 closed by
+  the ruling itself, 1 product line added — 76 out, plus the new
+  one.** The six that stayed are five product lines plus ONE
+  workshop line the window's own exception reaches, ENGINE's wrong
+  frontmatter, whose text says it is resolved by the first engine
+  bench. **THE VERBATIM CLAIM WAS PROVED, NOT ASSERTED**: the split
+  ran as a script, and every non-blank line of the old §Open was
+  compared against the whole new file — three came back missing, and
+  they are exactly the three lines of the entry deliberately closed
+  and compressed to its outcome-ledger line. The section is not a
+  wastebasket and says so at its head: parked lines are neither
+  closed nor declined, and one a product bench genuinely needs rides
+  that bench rather than being lifted back.
+
 ## Where it stands
 
-Live and under contract. Read at this writing the file carries
-**82 open entries and 21 closed** — counts computed from the file
-at write time under the derivation law, not copied from any
-summary, and expected to move.
+Live, under contract, and — since 2026-09-10 — SPLIT. Read at this
+writing the file carries **7 open, 69 parked and 32 closed** —
+counts computed from the file at write time under the derivation
+law, not copied from any summary, and expected to move. The §Open
+figure is the one worth watching: it fell from 76 to 7 not by
+closing anything but by moving workshop machinery out of the way,
+which is a claim about ATTENTION rather than about progress, and it
+reverses on its own when V1.S1 closes.
 
 **THE CENSUS CELL IS WRONG, AND THIS STORY SAYS SO IN WORDS.** It
 reads "The one inbox, self-pruning by rule: closed entries deleted

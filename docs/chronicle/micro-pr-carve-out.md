@@ -2,12 +2,12 @@
 type: chronicle-story
 shelf: III — the information system
 status: living
-updated: 2026-08-06 · written · cloud lane
+updated: 2026-09-10 · suspended, not narrowed · work PC
 ---
 
 # the micro-PR carve-out — the one merge that skips the founder
 
-> **CURRENT ENDING (2026-08-06).** Main is PR-only and every merge
+> **CURRENT ENDING (2026-09-10).** Main is PR-only and every merge
 > waits for the founder, with exactly one carve-out: a PR touching
 > ONLY [DASHBOARD](../DASHBOARD.md) and/or [IDEAS](../IDEAS.md),
 > written by a ritual, squash-merges immediately without asking. It
@@ -22,7 +22,14 @@ updated: 2026-08-06 · written · cloud lane
 > behind the code**: both of its homes name handoff, liftoff, ship's
 > tail and pickup's stale-repaint, and [land](../skills/land.md)
 > ships board micro-PRs in both its modes without appearing in
-> either list.
+> either list. **Since 2026-09-10 the carve-out is SUSPENDED without
+> being narrowed**
+> ([D-086](../record/DECISIONS.md#d-086--workshop-the-product-first-window)
+> ruling 2): an audit found 170 of 351 merges touching nothing but
+> those two files, so ship stops exercising the permission — no gate
+> micro-PR, no tail micro-PR — while
+> [D-023](../record/DECISIONS.md#d-023--universal-draft-pr-at-birth-and-micro-pr-carve-out)
+> stands untouched. The rate was the problem, never the rule.
 
 ## What it is
 
@@ -120,6 +127,23 @@ micro-PRs were rejected as the tax that caused the problem.
 - **[decide](../skills/decide.md) states the boundary from the other
   side.** Its procedure carries the sentence flatly: **a decision is
   NEVER a micro-PR.**
+
+- **2026-09-10 — THE CARVE-OUT IS SUSPENDED WITHOUT BEING NARROWED**
+  ([#355](https://github.com/wsher0901/roam/pull/355),
+  [D-086](../record/DECISIONS.md#d-086--workshop-the-product-first-window)
+  ruling 2). The audit that opened the product-first window counted
+  **170 of 351 merged PRs touching nothing but
+  [DASHBOARD](../DASHBOARD.md) and/or [IDEAS](../IDEAS.md)** — 136
+  board-only, 6 inbox-only, 28 both. Nearly one merge in two was
+  this carve-out being exercised. The window's answer is deliberately
+  NOT a narrowing: **[D-023](../record/DECISIONS.md#d-023--universal-draft-pr-at-birth-and-micro-pr-carve-out)
+  stands exactly as written and is simply not exercised** — ship §6
+  writes no gate-repaint micro-PR and §8's tail writes none either,
+  its repaint becoming a commit inside the atomic weld. The
+  distinction is the whole point: the carve-out was never unsafe,
+  and the entry that grants it needs no amendment. What was
+  expensive was the RATE, and a rate is fixed by not exercising a
+  permission rather than by revoking it.
 
 ## Where it stands
 

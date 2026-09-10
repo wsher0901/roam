@@ -53,6 +53,14 @@ closes. A line here that a product bench genuinely needs in order to
 proceed rides that bench as a recorded deviation (ruling 1's
 exception) — it is not lifted back for its own sake.
 
+- ⏳ The gh api write denies (settings.json, PR #355) retire the
+  cockpit's R2(b) rung for WRITE acts — open a PR, apply a label,
+  merge. Reads still work. When flights resume, re-grant inside the
+  cockpit/liftoff ritual's allowed-tools, the way gh pr merge lives
+  only inside ship; never in the standing allow. (2026-09-10, Web
+  review) →
+  [HOME's ladder](HOME.md#the-cockpits-api-paths--recovery-ladder)
+
 - ⏳ THIRD-PARTY DESIGN SKILLS ARE A FOUNDER CALL, AND ONE IS
   ALREADY ON THIS MACHINE — `ui-ux-pro-max` v2.5.0 is installed at
   user scope from a third-party marketplace

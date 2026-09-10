@@ -6,7 +6,7 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-09-10 · 14:37 UTC by ship's weld · from work PC
+Painted 2026-09-10 · 17:33 UTC by ship's weld · from work PC
 THE PRODUCT-FIRST WINDOW IS OPEN — no workshop bench until
 [V1.S1](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
 closes
@@ -47,12 +47,9 @@ Two benches open at this desk, no lanes, no cloud seat.
 
 | Who | For | State | Move |
 |---|---|---|---|
-| bench · `product-first` | the product-first window — D-086 and its ripple | 🟡 | at THE GATE — your "review" on the Web surface |
-| bench · `deps-sep` | Next 16.3.x + the advisory sweep, and a dependabot lane | 🟡 | at THE GATE — batched into the same review |
+| bench · `deps-sep` | Next 16.3.4 + the advisory sweep, and a dependabot lane | 🟢 | reviewed PASS at `cfd97a8`; welding next |
 
-Both are SELF-AUTHORED, so both take an external Web review before
-any merge word ([LAWS §Workflow](LAWS.md#workflow-non-negotiable),
-no-solo-approval).
+`product-first` merged as [#355](https://github.com/wsher0901/roam/pull/355).
 
 ## Working on
 
@@ -88,6 +85,11 @@ one phase per line:
 **Completed** — the last five; the full chronology is
 [the ledger](record/history/README.md#the-ledger).
 
+- **THE WORKSHOP GETS A DEADLINE** — D-086 opens the product-first
+  window: no workshop bench until V1.S1 closes, a ceremony diet, a
+  permanent board diet, and an inbox split. Its deferral classifier
+  was wrong twice before it shipped, both caught by review.
+  [#355](https://github.com/wsher0901/roam/pull/355)
 - **SUPPLY LINES, AND A GATE THAT CAN SEE MOTION** — four shadcn
   registries under an arrival law, Recharts settled as the chart
   layer, and the design-review agent given video and trace capture.
@@ -101,8 +103,6 @@ one phase per line:
 - **THE VEHICLE CHOOSER AND THE EXTERNAL-BLOCKER RULE** — two
   founder rulings into law with their homes, in one PR.
   [#343](https://github.com/wsher0901/roam/pull/343)
-- **PHASE 2 CLOSED** — 66 of 66 stories, the unrun polish half named
-  rather than buried. [#340](https://github.com/wsher0901/roam/pull/340)
 
 **Issues** — none with a home nowhere else.
 

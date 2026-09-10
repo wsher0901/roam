@@ -2,12 +2,12 @@
 type: spec
 id: product-first
 title: The product-first window — a ceremony diet until V1.S1 closes
-status: open
+status: shipped
 stage: workshop
 branch: docs/product-first
-pr: —
+pr: #355
 opened: 2026-09-10
-shipped: —
+shipped: 2026-09-10
 ---
 
 # product-first — the window, the diet, and the inbox split
@@ -154,7 +154,7 @@ carries a permanent diet, and the inbox splits so that
 - **STEP 0 of the sitting's mandate could not be performed, and its
   premise was wrong** — the "no-agents" sentence is emitted by the
   CLI and exists in no editable file. The full search is in
-  [the memory](../../memory/product-first.md); the founder's ruling
+  [the memory](../history/workshop/definition/product-first.md); the founder's ruling
   is [DASHBOARD](../../DASHBOARD.md) Needs-you 2. Recorded as a
   deviation because the mandate asked for a file-and-line and there
   is none.
