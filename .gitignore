@@ -163,3 +163,6 @@ docs/.obsidian/
 # Tool state written into the repo root at cockpit birth
 # (rung 1 leaves .local/state/gh/device-id behind)
 .local/
+
+# review worktrees — transient, created by the gate and pruned after
+.claude/worktrees/
