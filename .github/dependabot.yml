@@ -1,0 +1,31 @@
+# Dependency hygiene as a standing lane rather than a bench.
+#
+# ONE grouped PR per month, majors ignored. A `dependabot/*` branch is
+# NOT a bench: it carries no memory and no claim, and it merges on the
+# founder's word after green CI — see docs/skills/pickup.md §3.
+#
+# Majors are ignored deliberately. A major is a migration with a
+# blast radius (ESLint 10, Vitest 5, TypeScript 7), which is bench
+# work with a spec and a review — not something to meet as an
+# unreviewed PR on a Monday morning.
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 1
+    commit-message:
+      prefix: "chore"
+      include: "scope"
+    groups:
+      all-npm:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
+    ignore:
+      - dependency-name: "*"
+        update-types:
+          - "version-update:semver-major"

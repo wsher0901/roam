@@ -15,10 +15,12 @@ shipped: —
 **Links:** [SETUP §Stack](../../SETUP.md#stack) ·
 [pickup §3](../../skills/pickup.md#3--gather-git-outranks-the-board)
 · [ship §1](../../skills/ship.md#1--preflight) ·
-[D-086](../DECISIONS.md#d-086--workshop-the-product-first-window)
-(dependency and security updates are product hygiene, never blocked
-by the window) ·
-[D-038](../DECISIONS.md#d-038--ci-is-the-arbiter)
+[D-038](../DECISIONS.md#d-038--ci-is-the-arbiter) ·
+the product-first window, which explicitly does not block dependency
+and security work —
+[#355](https://github.com/wsher0901/roam/pull/355), still on its own
+branch as this bench is written, so it is named here and linked at
+its PR rather than at an anchor `main` cannot resolve
 
 ## Goal
 
@@ -46,9 +48,11 @@ a `dependabot/*` branch is so it is never mistaken for one.
   The stack's inventory changes only in the version numbers
   `package.json` already carries.
 - **Any workshop change beyond the one pickup sentence.** The
-  window ([D-086](../DECISIONS.md#d-086--workshop-the-product-first-window)
-  ruling 1) permits this bench as product hygiene; it does not
-  license a workshop bench riding along.
+  window ([#355](https://github.com/wsher0901/roam/pull/355), ruling
+  1) permits this bench as product hygiene; it does not license a
+  workshop bench riding along. The pickup sentence is in scope
+  because `.github/dependabot.yml` would otherwise create a branch
+  class no ritual knows how to read.
 
 ## Plan
 
