@@ -102,6 +102,15 @@ carries a permanent diet, and the inbox splits so that
     [HOME §Micro-PRs](../../HOME.md#micro-prs) says the physical gate
     rests on. Bare `rm` is deliberately NOT added: its `-rf` form is
     denied and `git rm` is the way.
+    **AMENDED IN FLIGHT, on the founder's word to rule it rather than
+    ask:** a security review found that six of the listed entries are
+    EXECUTION primitives, so the allow side reopened what `deny`
+    closes. `curl` and `npx next` are dropped (neither is inspection,
+    and no ritual calls either), and `deny` GAINS twenty rules
+    closing the escape forms. Widening `deny` is the one thing the
+    mandate said not to do — taken deliberately, because the mandate's
+    own stated intent was a READ-ONLY inventory, and a deny list that
+    its own allow list walks around is not a rail.
 
 ## Done means
 
@@ -120,9 +129,11 @@ carries a permanent diet, and the inbox splits so that
       is a pointer to [IDEAS](../../IDEAS.md).
 - [ ] `public/spikes/taste/` holds `place-first.html` and nothing
       else, and `npm run check:links` proves it still resolves.
-- [ ] `.claude/settings.json` parses; `permissions.deny` is
-      byte-identical to main's; no `allow` entry begins with
-      `Bash(gh pr merge`; nothing was removed from `allow`.
+- [ ] `.claude/settings.json` parses; every one of main's eleven
+      `deny` rules survives and twenty escape-closing rules join
+      them; no `allow` entry begins with `Bash(gh pr merge`; no bare
+      `rm`; `curl` and `npx next` absent; `env`, `enabledPlugins` and
+      `hooks` unchanged.
 - [ ] The full CI mirror is green and the PUSHED head's Actions run
       is green.
 
