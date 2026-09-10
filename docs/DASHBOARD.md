@@ -10,7 +10,7 @@ Painted 2026-09-10 · 14:37 UTC by ship's weld · from work PC
 THE PRODUCT-FIRST WINDOW IS OPEN — no workshop bench until
 [V1.S1](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
 closes
-2 benches at the gate · needs-you 1 · git outranks this board.
+2 benches at the gate · needs-you 2 · git outranks this board.
 How to read it → [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
@@ -25,6 +25,24 @@ How to read it → [HOME §Reading the board](HOME.md#reading-the-board)
    2026-08-12 would have the agent and not its eyes. (since 08-11)
    → [machine-setup step 12](skills/machine-setup.md#one-time-per-machine)
    · [D-084](record/DECISIONS.md#d-084--the-global-design-stack)
+
+2. 🔴 **THE WIDENED RAILS REOPEN WHAT THE DENY LIST CLOSES — one
+   ruling, and it blocks the merge word on
+   [#355](https://github.com/wsher0901/roam/pull/355).** You
+   enumerated 53 `permissions.allow` entries and said "change
+   nothing in deny". Deny IS unchanged, byte for byte — but six of
+   the added entries are EXECUTION PRIMITIVES, so deny no longer
+   reaches what it names: `find -exec` · `xargs` · `awk system()` ·
+   `sed e` run any command, so `rm -rf`, `git push --force` and
+   `git reset --hard` are all reachable; and `gh api -X PUT
+   …/pulls/N/merge` merges a PR, past all six `gh pr merge` denies
+   AND past your merge word. Your stated intent was "the inspection
+   and read-only shell inventory", which those are not — intent and
+   list disagree, and the call is yours. **Nothing changed on my
+   judgement; nothing is live until #355 merges.** Three options in
+   the PR's `BLOCKED:` comment. (since 09-10)
+   → [the BLOCKED comment](https://github.com/wsher0901/roam/pull/355)
+   · [HOME §Micro-PRs](HOME.md#micro-prs)
 
 Not counted above, because they block nothing today and wait on you
 whenever you want them: **the colour tokens and three reference

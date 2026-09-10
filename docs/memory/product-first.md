@@ -352,15 +352,42 @@ every bench and buys no safety, since none of it changes anything.
 53 entries added to `permissions.allow` in
 `.claude/settings.json`: the read-only shell inventory, the
 inspecting halves of `git` and `gh`, and the npm commands a bench
-actually runs. **Nothing else moved, and that was verified rather
-than asserted** — `deny` is byte-identical to main's eleven rules,
-nothing was removed from `allow`, `env`/`enabledPlugins`/`hooks` are
-unchanged, no entry begins with `Bash(gh pr merge` (the self-merge
-stays reachable only inside a ritual's own `allowed-tools`, which is
-the physical gate
-[HOME §Micro-PRs](../HOME.md#micro-prs) rests on), and bare `rm` is
-deliberately absent — its `-rf` form is denied and `git rm` is the
-way.
+actually runs. Mechanically verified rather than asserted — `deny`
+is byte-identical to main's eleven rules, nothing was removed from
+`allow`, `env`/`enabledPlugins`/`hooks` are unchanged, no entry
+begins with `Bash(gh pr merge`, and bare `rm` is deliberately absent.
+
+**AND THAT VERIFICATION, WHILE TRUE LINE BY LINE, LICENSED A CLAIM
+THAT IS NOT — "the rails are unchanged".** An automated security
+review of the commit returned seven findings, and the sharp half of
+them is one fact: **several of the added entries are
+EXECUTION PRIMITIVES, so the allow side now reopens what the deny
+side closes.** `deny` being byte-identical says nothing about what
+`deny` still REACHES.
+
+Walked concretely, against this repo's own eleven deny rules:
+
+| Added entry | What it reaches past |
+|---|---|
+| `Bash(find:*)` · `Bash(xargs:*)` · `Bash(awk:*)` · `Bash(sed:*)` | `find -exec`, `xargs`, awk's `system()` and sed's `e` run ARBITRARY commands — so `rm -rf`, `git push --force` and `git reset --hard` are all reachable without ever matching their deny rule |
+| `Bash(gh api:*)` | `gh api -X PUT /repos/…/pulls/N/merge` MERGES A PR — past all six `gh pr merge` denies, and past THE MERGE GATE, the founder's first touchpoint |
+| `Bash(curl:*)` | arbitrary egress, from a machine that holds live credentials |
+| `Bash(cp:*)` · `Bash(mv:*)` | can overwrite `.claude/settings.json` itself, or `.git/hooks/` — self-elevation |
+| `Bash(git merge:*)` | main granted `git merge --ff-only` ONLY, deliberately; the broad form is a widening the mandate did not call out |
+| `Bash(npm install:*)` · `Bash(npm ci:*)` | lifecycle scripts execute on install |
+
+**NOTHING IS CHANGED HERE ON MY OWN JUDGEMENT.** The list was
+enumerated by the founder entry by entry, and the founder's stated
+INTENT was "the inspection and read-only shell inventory" — which
+those six rows are not. Intent and list disagree, and only the
+founder can say which governs. Raised as a `BLOCKED:` comment on
+[#355](https://github.com/wsher0901/roam/pull/355) with three
+options, and mirrored on [DASHBOARD](../DASHBOARD.md) Needs-you, so
+it cannot be parked silently.
+
+**Nothing is live yet** — settings take effect for future sessions
+on this machine, and this bench is unmerged, so the ruling has time
+to arrive before anything rests on it.
 
 Bench B ([#356](https://github.com/wsher0901/roam/pull/356)) came
 back **PASS at `cfd97a8`, zero findings**; its merge word rides with
