@@ -10,6 +10,7 @@
     "check:links": "node scripts/check-links.mjs",
     "check:ledger": "node scripts/check-ledger.mjs",
     "check:memory": "node scripts/check-memory.mjs",
+    "check:vocab": "node scripts/check-vocab.mjs",
     "count:runs": "node scripts/count-routine-runs.mjs",
     "audit:flights": "node scripts/flight-audit.mjs",
     "fire:cockpit": "node scripts/fire.mjs cockpit",

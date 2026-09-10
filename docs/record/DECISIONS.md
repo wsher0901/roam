@@ -4818,3 +4818,9 @@ forward-only) ·
 batched-review precedent) ·
 [D-081](#d-081--phase-2-closes-the-polish-pass-is-split-out-not-dropped)
 (what unblocked phase 3, and started the clock) · this entry.
+
+**AMENDED.** 2026-09-10 — the founder suspended the window for one
+workshop bench,
+[chore/system-audit (#362)](https://github.com/wsher0901/roam/pull/362),
+to fix the machinery the Web full-pass validation listed; the window
+resumes at its merge.

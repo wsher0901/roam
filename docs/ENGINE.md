@@ -394,7 +394,8 @@ file.
    whether a changed or expired fact does the same to a standing
    plan — and when — is undecided. Barely binds in V1; real the day
    plans outlive a session.
-8. **The learning loop as an engine duty.** Telemetry (D-014),
+8. **The learning loop as an engine duty.** Telemetry
+   ([D-014](record/DECISIONS.md#d-014--telemetry-posture)),
    quality & ground truth (P5), and eval-run storage (T7) exist as
    parts; the rule that outcomes feed grades, weights, and rankings
    — without breaking the explanation duty — is undecided.

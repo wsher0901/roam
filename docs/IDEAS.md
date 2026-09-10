@@ -53,6 +53,20 @@ closes. A line here that a product bench genuinely needs in order to
 proceed rides that bench as a recorded deviation (ruling 1's
 exception) — it is not lifted back for its own sake.
 
+- ⏳ NOTHING CHECKS THE DERIVATION LAW — derived values (counts,
+  totals, statuses) must be computed from source at render time,
+  and no gate verifies that any of them were. Every asserted count
+  in the corpus is correct TODAY — census 66/70, HOME thirteen
+  sections, board needs-you 1, RECENT 5, ledger 141↔141 — but the
+  system audit established that BY HAND, so the law holds by
+  diligence and would keep holding right up until it quietly
+  didn't. A real gate needs each literal to declare what it derives
+  FROM; inventing that notation is a bench, not a rider, which is
+  why this is parked rather than fixed.
+  (2026-09-10, the system audit —
+  [#362](https://github.com/wsher0901/roam/pull/362)) →
+  [LAWS §Knowledge & tracking](LAWS.md#knowledge--tracking)
+
 - ⏳ The gh api write denies (settings.json, PR #355) retire the
   cockpit's R2(b) rung for WRITE acts — open a PR, apply a label,
   merge. Reads still work. When flights resume, re-grant inside the
@@ -782,7 +796,8 @@ keeps its answer, never its narrative.
 - 🟢 Shorten the decide-anchor links — done as THE SHORT-ANCHOR
   LAW: headings carry a short name (8 words max), the full
   statement moves to an `In full:` line, anchors freeze at mint;
-  D-001–D-067 retrofitted. (2026-07-24 → closed 2026-07-31) →
+  [D-001](record/DECISIONS.md#d-001--tech-stack)–[D-067](record/DECISIONS.md#d-067--the-report-skeleton-and-the-board-diet)
+  retrofitted. (2026-07-24 → closed 2026-07-31) →
   [#253](https://github.com/wsher0901/roam/pull/253)
 - 🟢 The ritual report sweep — every founder-facing report now
   renders one skeleton (verdict · your act · off-origin · context
@@ -823,7 +838,9 @@ keeps its answer, never its narrative.
   [D-055](record/DECISIONS.md#d-055--agent-teams-the-boundary)
 - ⚪ Keeping the console-attach launcher as a script — DECLINED
   (retired): the blind fire captures nothing, so there is no
-  output to read; D-051 deletes the component rather than
+  output to read;
+  [D-051](record/DECISIONS.md#d-051--self-seat-birth) deletes the
+  component rather than
   maintaining it, and names keeping-it-as-a-fallback among its
   rejected options. Asked 2026-07-22. →
   [D-051](record/DECISIONS.md#d-051--self-seat-birth)

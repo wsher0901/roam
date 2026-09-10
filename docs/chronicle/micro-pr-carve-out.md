@@ -2,7 +2,7 @@
 type: chronicle-story
 shelf: III — the information system
 status: living
-updated: 2026-09-10 · suspended, not narrowed · work PC
+updated: 2026-09-10 · the gate under it, read from the API · work PC
 ---
 
 # the micro-PR carve-out — the one merge that skips the founder
@@ -14,11 +14,23 @@ updated: 2026-09-10 · suspended, not narrowed · work PC
 > is safe for a structural reason rather than a trusting one —
 > **both files are derived or inbox surfaces**, so the worst bad
 > merge is a stale rendering or a noisy line, each healed
-> mechanically. The physical gate survives underneath it: main still
-> takes no direct pushes, and no session holds a standing merge
-> allowance — the permission exists only inside the ritual skills'
-> narrow `allowed-tools`, so even the self-merge can only happen
-> where a ritual is running. **The enumerated writer list has fallen
+> mechanically. **WHAT SURVIVES UNDERNEATH IT IS NARROWER THAN THIS
+> STORY ONCE CLAIMED, and the 2026-09-10 system audit read it from
+> the GitHub API rather than assuming it.** The SERVER refuses four
+> things on main — a direct push, a merge while `checks` is red, a
+> force-push, a branch deletion — with zero bypass actors and
+> `enforce_admins: true`. It refuses no approval count and CAN
+> refuse none: one account owns every seat, GitHub forbids
+> self-approval, so requiring one would brick the workshop rather
+> than harden it. And the sentence this story used to carry — that
+> the merge allowance "exists only inside the ritual skills' narrow
+> `allowed-tools`" — was true of the allow list and false as a
+> guarantee: **`allowed-tools` is ADDITIVE, not exclusive**, so
+> under auto mode the classifier adjudicates `gh pr merge` outside
+> any ritual without a prompt. The carve-out's own safety argument is
+> untouched by this; what changes is that the gate around it is held
+> by the record and the rituals, not by the platform. **The
+> enumerated writer list has fallen
 > behind the code**: both of its homes name handoff, liftoff, ship's
 > tail and pickup's stale-repaint, and [land](../skills/land.md)
 > ships board micro-PRs in both its modes without appearing in
@@ -144,6 +156,29 @@ micro-PRs were rejected as the tax that caused the problem.
   and the entry that grants it needs no amendment. What was
   expensive was the RATE, and a rate is fixed by not exercising a
   permission rather than by revoking it.
+
+- **2026-09-10 ([#362](https://github.com/wsher0901/roam/pull/362))
+  — the gate underneath the carve-out is read from the API, and this
+  story's own claim about it is corrected.** The system audit asked
+  what actually stops an unapproved merge and found the answer split
+  cleanly in two. THE SERVER refuses a direct push, a red-CI merge, a
+  force-push and a branch deletion; it requires no approvals and can
+  require none while a single account owns every seat. THE FOUNDER'S
+  WORD and no-solo-approval are therefore upheld by the record and
+  the rituals — real obligations that leave auditable evidence, but
+  not locks. **A seat that skips the word merges successfully**, and
+  two did that morning:
+  [#355](https://github.com/wsher0901/roam/pull/355) and
+  [#356](https://github.com/wsher0901/roam/pull/356) were merged from
+  the main conversation rather than from inside ship, with no prompt,
+  because `allowed-tools` ADDS a permission where a ritual runs and
+  forbids it nowhere else. The claim was load-bearing in three homes
+  — this story's ending,
+  [HOME §Micro-PRs](../HOME.md#micro-prs) and
+  [ATLAS](../ATLAS.md)'s fourth joint — and now one home carries the
+  answer while the others point at it. Corrected rather than
+  deleted: a reader who remembers the old sentence deserves to meet
+  the correction.
 
 ## Where it stands
 
