@@ -1,7 +1,8 @@
 ---
-type: memory
-id: system-audit
-updated: 2026-09-10 · fix-everything riders landed · work PC
+type: history
+slug: system-audit
+shipped: 2026-09-10 22:17 UTC
+pr: #362
 ---
 
 # system-audit — does the machinery do what it says?
@@ -14,7 +15,7 @@ from freshly pulled main, synced with main after
 spec and this memory were written LATE**, after the first payload
 commit rather than as the bench's first commits — a
 bench-first-birth violation by this seat, recorded rather than
-tidied away. Contract: [the spec](../record/specs/system-audit.md).
+tidied away. Contract: [the spec](../../../specs/system-audit.md).
 
 **THE BENCH TURNED.** It opened as audit-and-file; on 2026-09-10
 the founder read the Web full-pass validation and ruled that every
@@ -29,7 +30,7 @@ Roam's product content.**
 
 **THE WINDOW, AND WHERE THE SUSPENSION NOW LIVES.** The founder
 suspended
-[D-086](../record/DECISIONS.md#d-086--workshop-the-product-first-window)'s
+[D-086](../../../DECISIONS.md#d-086--workshop-the-product-first-window)'s
 product-first window for this bench explicitly. Since rider 6 that
 is ON THE RECORD rather than only in conversation — the entry
 carries a dated amendment line, heading untouched: "2026-09-10 —
@@ -40,7 +41,7 @@ validation listed; the window resumes at its merge."
 Three consequences, and they bound this bench exactly: the
 suspension is for THIS bench and no other; the window RESUMES AT
 THIS BENCH'S MERGE, not at
-[V1.S1](../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
+[V1.S1](../../../../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
 close and not by anyone judging it lapsed; and the scope is the
 machinery the Web validation listed, nothing wider.
 
@@ -67,7 +68,7 @@ account, GitHub refuses self-approval, and no PR could ever merge.
 The constraint is single-account, not configuration.
 
 **AND THE DOCUMENTED MITIGATION DOES NOT BIND UNDER AUTO MODE.**
-[HOME §Micro-PRs](../HOME.md#micro-prs) rests the physical gate on
+[HOME §Micro-PRs](../../../../HOME.md#micro-prs) rests the physical gate on
 this: "no session holds a standing merge allowance — the permission
 exists only inside the ritual skills' narrow `allowed-tools`." That
 claim is TRUE about the allow list — `.claude/skills/ship/SKILL.md`
@@ -92,7 +93,7 @@ board needs-you 1, RECENT 5, ledger 141↔141 — but that was
 established by hand here, not by any gate.
 
 **PARKED, NOT FIXED** (rider 7). It is one line in
-[IDEAS](../IDEAS.md) §Parked — workshop, because a real derivation
+[IDEAS](../../../../IDEAS.md) §Parked — workshop, because a real derivation
 gate needs a way to say what each literal derives FROM, and
 inventing that notation is a bench, not a rider. Named rather than
 silently dropped; the parking is the record.
@@ -103,7 +104,7 @@ silently dropped; the parking is the record.
 home now states server-vs-behaviour honestly, including the auto-mode
 hole. F2 → HALF fixed (rider 4): the weave half is a gate; the
 destination-blind half is unfixable by this means and stays named in
-[ATLAS](../ATLAS.md)'s dashed box. F3 → parked (rider 7). Nothing
+[ATLAS](../../../../ATLAS.md)'s dashed box. F3 → parked (rider 7). Nothing
 was closed by being reworded.
 
 ## Left / idle
@@ -204,8 +205,8 @@ Fixed: the local window is now ~10 minutes, matching cloud, and the
 baton-holder side says to **write the ack as the very next act
 after dispatch** — before reporting to the founder. Swept to zero
 across `docs/`;
-[the chronicle story](../chronicle/canary-handshake.md) carries it.
-[LANE-WORKER](../LANE-WORKER.md) points at §Canary rather than
+[the chronicle story](../../../../chronicle/canary-handshake.md) carries it.
+[LANE-WORKER](../../../../LANE-WORKER.md) points at §Canary rather than
 copying the constant, so no box-master re-save is owed — checked
 before touching it.
 
@@ -319,7 +320,7 @@ mention, which is the arithmetic proof that nothing was missed.
 
 Rider 4 named three exemptions — link, heading, fenced block. **The
 real inputs forced a fourth.**
-[ship §7](../skills/ship.md#7--on-approval--the-atomic-weld) writes
+[ship §7](../../../../skills/ship.md#7--on-approval--the-atomic-weld) writes
 the exact string `synthesis: deferred — D-086` into a weld commit
 message and a history frontmatter field, and both of ship.md's two
 mentions are that literal. A markdown link cannot live inside a
@@ -369,8 +370,8 @@ would have left it on disk where its author would have seen it.
 
 ## Where to look
 
-- [the spec](../record/specs/system-audit.md) — the contract
+- [the spec](../../../specs/system-audit.md) — the contract
 - `~/.claude/settings.json` — rewritten; backup alongside it
-- [§Canary](../skills/parallel-lanes.md#canary-handshake-both-sides)
+- [§Canary](../../../../skills/parallel-lanes.md#canary-handshake-both-sides)
   — the window and the token
-- [HOME §Micro-PRs](../HOME.md#micro-prs) — the claim F1 qualifies
+- [HOME §Micro-PRs](../../../../HOME.md#micro-prs) — the claim F1 qualifies

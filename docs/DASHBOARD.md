@@ -6,11 +6,15 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-09-10 · 17:40 UTC by ship's weld · from work PC
-THE PRODUCT-FIRST WINDOW IS OPEN — no workshop bench until
+Painted 2026-09-10 · 22:23 UTC by ship's weld · from work PC
+THE PRODUCT-FIRST WINDOW IS OPEN AGAIN — it was suspended for ONE
+bench, [#362](https://github.com/wsher0901/roam/pull/362), and
+RESUMED AT ITS MERGE
+([D-086](record/DECISIONS.md#d-086--workshop-the-product-first-window),
+amendment line). No workshop bench until
 [V1.S1](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
-closes
-Clean floor — both benches shipped · needs-you 1 ·
+closes.
+Clean floor — the audit shipped · needs-you 2 ·
 git outranks this board.
 How to read it → [HOME §Reading the board](HOME.md#reading-the-board)
 
@@ -26,6 +30,26 @@ How to read it → [HOME §Reading the board](HOME.md#reading-the-board)
    2026-08-12 would have the agent and not its eyes. (since 08-11)
    → [machine-setup step 12](skills/machine-setup.md#one-time-per-machine)
    · [D-084](record/DECISIONS.md#d-084--the-global-design-stack)
+
+2. 🟡 **THE HOME PC'S PERMISSION RAILS WERE NEVER FIXED** — the
+   same shape as the line above, and found by the same audit. The
+   2026-09-10 fix that ended the constant prompting rewrote
+   `~/.claude/settings.json` ON THE WORK PC: the `autoMode`
+   block that described a DIFFERENT repository, the
+   `blockReadsOutsideWorkingDirectories` flag, and the missing
+   PowerShell twins. That file lives OUTSIDE the repo, so the home
+   PC still carries the old one and nothing in git can say
+   otherwise. The tracked project rails now mirror both shells and
+   travel with the clone
+   ([#362](https://github.com/wsher0901/roam/pull/362)), so the
+   home PC gets those free — but the user-scope file, which is what
+   makes the fix apply in EVERY directory, does not travel.
+   **[machine-setup](skills/machine-setup.md) carries no master for
+   it**, which is why this is a needs-you rather than a step:
+   deciding whether that master should exist is a founder call, and
+   the product-first window says it is not a bench today.
+   (since 09-10)
+   → [the audit's story](record/history/workshop/mechanism/system-audit.md)
 
 Not counted above, because they block nothing today and wait on you
 whenever you want them: **the colour tokens and three reference
@@ -44,15 +68,27 @@ Last flight: LANDED 2026-08-04 21:16 UTC via MANUAL-LAND.
 
 ## In flight
 
-Nothing flying, no lanes, no bench open. Both this sitting's benches
-merged — [#355](https://github.com/wsher0901/roam/pull/355) and
-[#356](https://github.com/wsher0901/roam/pull/356).
+Nothing flying, no lanes, no bench open. This sitting's three benches
+all merged — [#355](https://github.com/wsher0901/roam/pull/355),
+[#356](https://github.com/wsher0901/roam/pull/356) and
+[#362](https://github.com/wsher0901/roam/pull/362) — plus the
+dependabot group [#357](https://github.com/wsher0901/roam/pull/357).
+The four V1.S1 benches [#358](https://github.com/wsher0901/roam/pull/358)–[#361](https://github.com/wsher0901/roam/pull/361)
+sit at birth, untouched by the audit and still claimable.
 
 ## Working on
 
 **NOTHING OPEN — and the window is why that matters.**
 [V1.S1](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
 T3–T6 are next and they are the only thing the workshop may open.
+
+**THE WINDOW WAS SUSPENDED ONCE AND HAS RESUMED.** The founder
+suspended it for a single bench —
+[#362](https://github.com/wsher0901/roam/pull/362), to fix the
+machinery a Web full-pass validation listed — and it resumed at that
+bench's merge. The suspension is on the record as a dated amendment
+line, not a memory, so no later seat can mistake it for the window
+having lapsed.
 
 **THE PRODUCT-FIRST WINDOW.**
 [D-086](record/DECISIONS.md#d-086--workshop-the-product-first-window)
@@ -86,6 +122,15 @@ one phase per line:
 **Completed** — the last five; the full chronology is
 [the ledger](record/history/README.md#the-ledger).
 
+- **DOES THE MACHINERY DO WHAT IT SAYS?** — the audit that became a
+  fix. The merge gate's real answer written down (the server refuses
+  four things and can require no approval while one account owns
+  every seat, so the founder's word rests on the record, not the
+  platform); the permission friction fixed at its four causes and
+  the rails mirrored across both shells; `git add -A` out of the
+  session-end hook; a weave gate that fails a bare D-number. Two
+  gaps parked rather than claimed closed.
+  [#362](https://github.com/wsher0901/roam/pull/362)
 - **SIXTEEN ADVISORIES TO ZERO** — Next 16.3.4 closes a critical
   middleware bypass; a monthly grouped dependabot lane replaces the
   bench. One gap named rather than closed: majors still need a
@@ -104,9 +149,6 @@ one phase per line:
 - **ROAM HAS A DIRECTION — `place-first`** — the plan on a living
   map; faces ratified as worn, weights and colour deliberately not.
   [#349](https://github.com/wsher0901/roam/pull/349)
-- **THE GLOBAL DESIGN STACK** — a machine-wide design capability,
-  and [DESIGN](DESIGN.md) made to outrank it inside this repo.
-  [#345](https://github.com/wsher0901/roam/pull/345)
 
 **Issues** — none with a home nowhere else.
 
@@ -128,8 +170,10 @@ S3–S8 · queued in order · 0/22
 ## Web + Design
 
 - (Web) "GitHub workflow protocol and web instructions setup" — the
-  ops chat; next: the batched review of `product-first` and
-  `deps-sep`, then the batched T3–T6 review under
+  ops chat. It ran the FULL-PASS VALIDATION that turned
+  [#362](https://github.com/wsher0901/roam/pull/362) from audit into
+  fix-everything, and reviewed that bench PASS on an independent
+  clone and install. Next: the batched T3–T6 review under
   [D-086](record/DECISIONS.md#d-086--workshop-the-product-first-window)
   ruling 3.
 - (Design) no chat open; [DESIGN](DESIGN.md) holds the direction and
@@ -137,5 +181,10 @@ S3–S8 · queued in order · 0/22
 
 ## Next
 
-**[V1.S1](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
-T3–T6 via the chooser.**
+**RESTART CODE FIRST** — the permission rails
+([#362](https://github.com/wsher0901/roam/pull/362)) load at session
+start, so this session is still running on the old ones.
+
+Then **[V1.S1](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
+T3–T6 via the chooser** — four benches already sit at birth as
+[#358](https://github.com/wsher0901/roam/pull/358)–[#361](https://github.com/wsher0901/roam/pull/361).

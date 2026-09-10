@@ -2,12 +2,12 @@
 type: spec
 id: system-audit
 title: Validate the workshop — do the gates, rituals and promises hold?
-status: open
+status: shipped
 stage: workshop
 branch: chore/system-audit
-pr: —
+pr: #362
 opened: 2026-09-10
-shipped: —
+shipped: 2026-09-10 22:17 UTC
 ---
 
 # system-audit — does the machinery do what it says?
