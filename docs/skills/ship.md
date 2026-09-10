@@ -159,9 +159,29 @@ atomically:
   bench at V1.S1 close walks every deferred weld;
   [chronicle/INDEX.md](../chronicle/INDEX.md)'s head says so, so a
   shelf bench reading the census learns of the deferral where it
-  looks. THE DEFERRAL IS FOR PRODUCT WELDS ONLY — a weld that is not
-  product work performs the whole step below as written, and so does
-  every weld once the window closes.
+  looks.
+
+  **THE TEST, AT THE POINT OF USE — read it off the diff, never off
+  the bench's name.** A weld is a PRODUCT weld when its diff touches
+  ANY path outside `docs/`, `.claude/`, `.github/` and `scripts/`.
+  Three cases, and they are exhaustive over what a diff can be:
+
+  | The weld's diff | What it does |
+  |---|---|
+  | touches a path outside those four, and nothing inside them | PRODUCT — defer, and stamp `synthesis: deferred — D-086` |
+  | touches nothing outside those four | NOT product — perform the whole step below, as written |
+  | touches BOTH | MIXED — defer, and NAME THE WORKSHOP ITEMS IT CARRIED in the weld commit and the history file, so the catch-up bench walks them rather than discovering them |
+
+  **THE MIXED CASE IS NOT A HYPOTHETICAL — ruling 1 manufactures
+  it.** Its exception sends a fix a product bench needs onto that
+  bench, so a diff touching both product code and `docs/skills/` is
+  the window's designed output. It defers like any product weld, but
+  it may not defer SILENTLY: a skill or a law is a census-rowed
+  system piece, and a deferral that does not name what it carried is
+  a deferral the catch-up bench cannot honour.
+
+  Once the window closes, every weld performs the step below and
+  this table is spent.
 
   FIRST NAME THE ITEMS. An ITEM is what
   [D-059](../record/DECISIONS.md#d-059--the-chronicle-layer) ruling

@@ -39,7 +39,7 @@
   (2026-09-10, the work PC control tower) →
   [V1.S1.T7](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
 
-## Parked — workshop (until V1.S1 closes)
+## Parked — workshop (until [V1.S1](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code) closes)
 
 Workshop machinery, parked by
 [D-086](record/DECISIONS.md#d-086--workshop-the-product-first-window)

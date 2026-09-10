@@ -137,7 +137,10 @@ and judgment calls still come to the founder.
   [V1.S1](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
   closes (T3–T7 ticked), NO WORKSHOP BENCH IS BORN — no D-number
   about the workshop, no chronicle story, no law, manual, skill or
-  box change. A fix a product bench needs in order to proceed RIDES
+  box change, NOR ANY OTHER CHANGE WHOSE SUBJECT IS THE WORKSHOP
+  RATHER THAN ROAM (the list is the common forms; the boundary is
+  the subject, so [ATLAS](ATLAS.md) and `record/probes/` are inside
+  it too). A fix a product bench needs in order to proceed RIDES
   THAT BENCH as a recorded deviation, never its own bench;
   dependency and security updates are product hygiene and are never
   blocked. The ceremony runs on the diet, the T3–T6 review is

@@ -114,7 +114,25 @@ carries a permanent diet, and the inbox splits so that
 
 ## Deviations
 
-<filled by ship>
+- **A SHIPPED SPEC'S CITED URL 404s BECAUSE OF THIS BENCH.** Deleting
+  `public/spikes/taste/index.html` leaves
+  [taste-pass](taste-pass.md)'s frozen spec pointing at the deployed
+  DIRECTORY url `…/spikes/taste/`, which without an index will not
+  resolve. Named here rather than only in the diary, because the
+  diary moves to `record/history/` and a later reader chasing that
+  url will start from the spec. **Nothing load-bearing broke:**
+  `place-first.html` — [DESIGN](../../DESIGN.md)'s only linked
+  reference — is byte-identical to main and resolves, which
+  `npm run check:links` proves. The frozen spec is NOT edited here
+  (it is outside this bench's file list); repairing it with a dated
+  note is a one-line follow-on.
+- **STEP 0 of the sitting's mandate could not be performed, and its
+  premise was wrong** — the "no-agents" sentence is emitted by the
+  CLI and exists in no editable file. The full search is in
+  [the memory](../../memory/product-first.md); the founder's ruling
+  is [DASHBOARD](../../DASHBOARD.md) Needs-you 2. Recorded as a
+  deviation because the mandate asked for a file-and-line and there
+  is none.
 
 ## Open questions
 

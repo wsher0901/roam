@@ -6,10 +6,11 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-09-10 · 14:12 UTC by pickup · from work PC
-THE PRODUCT-FIRST WINDOW IS OPEN — no workshop bench until V1.S1
-closes · 2 benches at the gate · needs-you 2 ·
-git outranks this board.
+Painted 2026-09-10 · 14:37 UTC by ship's weld · from work PC
+THE PRODUCT-FIRST WINDOW IS OPEN — no workshop bench until
+[V1.S1](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
+closes
+2 benches at the gate · needs-you 2 · git outranks this board.
 How to read it → [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
@@ -81,7 +82,8 @@ closes the workshop to new benches until
 [V1.S1](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
 closes, puts the ceremony on a diet, batches the T3–T6 review, and
 splits the inbox so §Open holds product work only. It expires on
-V1.S1's own checkboxes — nothing has to remember to end it.
+[V1.S1](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)'s
+own checkboxes — nothing has to remember to end it.
 
 The standing order
 ([D-060](record/DECISIONS.md#d-060--the-three-phase-standing-order),
@@ -151,4 +153,5 @@ S3–S8 · queued in order · 0/22
 
 ## Next
 
-**V1.S1 T3–T6 via the chooser.**
+**[V1.S1](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
+T3–T6 via the chooser.**

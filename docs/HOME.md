@@ -1067,7 +1067,13 @@ lives once, in the bars; nothing here is retold from the ledger
 ([D-067](record/DECISIONS.md#d-067--the-report-skeleton-and-the-board-diet)).
 It is repainted only at ritual moments — pickup when stale ·
 handoff · liftoff · ship's tail — never hand-edited; between
-rituals, GIT OUTRANKS IT.
+rituals, GIT OUTRANKS IT. **While the product-first window is open
+the tail's repaint rides inside
+[ship §7](skills/ship.md#7--on-approval--the-atomic-weld)'s atomic
+weld instead of shipping as its own micro-PR**
+([D-086](record/DECISIONS.md#d-086--workshop-the-product-first-window)
+ruling 2b) — the same moment, a different vehicle; the writer list
+above is otherwise unchanged.
 
 Glyphs: 🟢 done · 🟡 ongoing · 🔴 issue · ⚪ idle · ⏸ paused.
 Bars fill left to right (█ done · ░ remaining). Stage-map colors:

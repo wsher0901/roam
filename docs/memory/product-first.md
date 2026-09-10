@@ -1,7 +1,7 @@
 ---
 type: memory
 id: product-first
-updated: 2026-09-10 · payload complete · work PC
+updated: 2026-09-10 · critic round repaired · work PC
 ---
 
 # product-first — the product-first window
@@ -222,6 +222,85 @@ directory URL `…/spikes/taste/`, which without an index will now
 404. The probe the spec actually depends on —
 `place-first.html`, [DESIGN](../DESIGN.md)'s only linked reference —
 resolves unchanged, and `check:links` proves it.
+
+### The critic round — seven findings, all repaired
+
+The first invocation returned NO REVIEW, and was right to. The
+reviewer subagent has `Read`/`Grep`/`Glob` and no `Bash`, the branch
+was not checked out, and it refused to guess rather than fabricate a
+reading of D-086's rulings. It was re-invoked against a materialized
+worktree. **Keep that refusal in mind: a review that cannot read the
+diff must say so.** It also withdrew its own interim finding on
+re-run, having read the sibling bench's prose rather than a link.
+
+**🔴 1 — "PRODUCT WELD" WAS THE TRIGGER OF A RULING THAT FIRES ON
+EVERY WELD, AND THE TERM WAS DEFINED NOWHERE IN `docs/`.** The only
+operational definition in the repo was a shell comment inside THIS
+memory — which moves to `record/history/` at ship. A seat standing
+in [ship §7](../skills/ship.md#7--on-approval--the-atomic-weld) with
+a weld in hand had no test to apply.
+
+And the split was not exhaustive over inputs **ruling 1 itself
+manufactures**: its exception sends a fix a product bench needs onto
+that bench, so a diff touching product code AND `docs/skills/` is
+the window's designed output — and §7 offered only "product weld"
+versus "not product work". The mixed weld would have deferred
+silently, routing a census-rowed system piece into deferral with
+nothing naming it. **This is the enumeration law's exact failure
+mode, and it is the seventh time it has been caught by review rather
+than by the author.** Repaired: the classifier is now a three-row
+table at the point of use, keyed on paths rather than on the bench's
+name, with the mixed case landed explicitly — it defers, but must
+NAME the workshop items it carried.
+
+**🔴 2 — HOME CONTRADICTED ITSELF, one half edited by this diff and
+the other left asserting the old state.** §Micro-PRs said the tail's
+repaint rides the weld; §Reading the board, a hundred lines later
+and untouched, still listed "ship's tail" among the repaint moments.
+The repo's own record names this pattern — a joint between two
+statements rather than an error inside one — as its recurring
+failure. Repaired at
+[HOME §Reading the board](../HOME.md#reading-the-board): same
+moment, different vehicle, writer list otherwise unchanged.
+
+**🟡 3 — THE BOARD'S PAINT STAMP WAS CARRIED, NOT CLOCK-READ.** It
+said `by pickup · 14:12 UTC` while the board reported two benches at
+THE GATE and D-086's rulings — state that did not exist when pickup
+claimed the baton. Behind it sat a real gap: ruling 2b creates a
+board write with NO RITUAL NAME, and `<ritual>` is an enumerated
+slot. Repaired both ways — the stamp re-read from the shell clock,
+and [handoff §4](../skills/handoff.md#4--repaint-dashboard-the-board-spec--single-source)
+given the new value `ship's weld`.
+
+**🟡 4 — THE WINDOW BANNER WAS RENDERED IN A SLOT THE SPEC DOES NOT
+DEFINE**, so the next ritual repainting from §4 as written would
+have silently dropped the window's most visible reminder while the
+window was still open. The external-blocker banner is explicitly
+"OMITTED ENTIRELY" when nothing external is blocking, so the notice
+had been folded into the flight one-liner without the spec being
+told. Repaired: §4's painted-line template gains a conditional
+WINDOW SLOT, below the external banner because an external blocker
+outranks everything.
+
+**🟡 5 — RULING 1'S ARTIFACT LIST WAS A CLOSED LIST, AND REAL
+WORKSHOP WORK FELL OUTSIDE IT.** Walked against the actual parked
+inputs: the ATLAS re-render bench is not a D-number, not a chronicle
+story, not LAWS, not HOME, not `docs/skills/`, not a box master — so
+a seat reading the list literally could open it. Same for
+[DESIGN](../DESIGN.md) and the `record/probes/` shelf. Repaired in
+D-086, in its `In full:` line, and in
+[LAWS](../LAWS.md#workflow-non-negotiable): the named list is the
+common forms, **the boundary is the SUBJECT**, with the three
+outliers named.
+
+**⚪ 6** — three new plain-text `V1.S1` mentions breached the weave
+rule; `check:links` is destination-blind and could not catch them,
+so CI green was not evidence. All three woven.
+
+**⚪ 7** — the `index.html` deletion 404s a shipped spec's cited
+directory URL. It was in the diary but not in
+[the spec's Deviations](../record/specs/product-first.md), which is
+where a later reader chasing that URL starts. Moved there.
 
 ## Where to look
 

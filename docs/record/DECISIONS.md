@@ -4660,7 +4660,7 @@ the Base UI choice is unaffected) ·
 
 ## D-086 — [workshop] The product-first window
 
-In full: 2026-09-10 — THE PRODUCT-FIRST WINDOW. The workshop has out-built the product, and the record says so: 351 merged PRs of which 37 touched product code, 170 merges that changed nothing but the board and the inbox, 5 ROADMAP ticks all landing on 2026-06-11/12 with 314 merges and 90 days since the last, 124 workshop history files against 15 product, and 34 days since phase 3 was unblocked in which 23 PRs merged and nothing was ticked. From this entry's merge until [V1.S1](../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code) closes — T3 through T7 ticked — NO WORKSHOP BENCH IS BORN, the ceremony runs on a diet, the T3–T6 external review is batched into one, the board carries a permanent diet, and the inbox splits so that §Open holds product work only. The window closes itself; nothing has to remember to end it.
+In full: 2026-09-10 — THE PRODUCT-FIRST WINDOW. The workshop has out-built the product, and the record says so: 351 merged PRs of which 37 touched product code, 170 merges that changed nothing but the board and the inbox, 5 ROADMAP ticks all landing on 2026-06-11/12 with 314 merges and 90 days since the last, 124 workshop history files against 15 product, and 34 days since phase 3 was unblocked in which 23 PRs merged and nothing was ticked. From this entry's merge until [V1.S1](../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code) closes — T3 through T7 ticked — NO WORKSHOP BENCH IS BORN (no D-number about the workshop, no chronicle story, no law, manual, skill or box change, nor any other change whose SUBJECT is the workshop rather than Roam), the ceremony runs on a diet, the T3–T6 external review is batched into one, the board carries a permanent diet, and the inbox splits so that §Open holds product work only. The window closes itself; nothing has to remember to end it.
 
 **Decision:** five rulings, in force from this entry's merge.
 
@@ -4668,11 +4668,17 @@ In full: 2026-09-10 — THE PRODUCT-FIRST WINDOW. The workshop has out-built the
 [V1.S1](../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
 closes (T3–T7 ticked), no workshop bench is born: **no D-number
 about the workshop, no chronicle story, no law, manual, skill or
-box change.** ONE EXCEPTION: a fix a product bench needs in order
-to proceed RIDES THAT BENCH and is recorded as a deviation in its
-memory — never its own bench. **Dependency and security updates
-are product hygiene, not workshop work, and are never blocked by
-the window.**
+box change — nor any other change whose SUBJECT is the workshop
+rather than Roam.** The named list is the common forms, not the
+boundary; the boundary is the subject. **[ATLAS](../ATLAS.md), the
+`record/probes/` shelf, and workshop-facing edits to
+[DESIGN](../DESIGN.md) are inside the window even though they are
+none of the named five** — the parked ATLAS re-render is the worked
+example, and a seat reading the list literally would otherwise open
+it. ONE EXCEPTION: a fix a product bench needs in order to proceed
+RIDES THAT BENCH and is recorded as a deviation in its memory —
+never its own bench. **Dependency and security updates are product
+hygiene, not workshop work, and are never blocked by the window.**
 
 **RULING 2 — THE DIET,** for the window only.
 [ship](../skills/ship.md) §6, §7 and §8 each gain a window clause
