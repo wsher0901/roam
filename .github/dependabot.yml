@@ -1,13 +1,32 @@
 # Dependency hygiene as a standing lane rather than a bench.
 #
-# ONE grouped PR per month, majors ignored. A `dependabot/*` branch is
-# NOT a bench: it carries no memory and no claim, and it merges on the
-# founder's word after green CI — see docs/skills/pickup.md §3.
+# A `dependabot/*` branch is NOT a bench: it carries no memory and no
+# claim, and it merges on the founder's word after green CI — see
+# docs/skills/pickup.md §3.
 #
-# Majors are ignored deliberately. A major is a migration with a
-# blast radius (ESLint 10, Vitest 5, TypeScript 7), which is bench
-# work with a spec and a review — not something to meet as an
-# unreviewed PR on a Monday morning.
+# WHAT THIS FILE DOES AND DOES NOT GUARANTEE, stated exactly, because
+# the comment is what a later reader will believe:
+#
+#   * VERSION UPDATES — minors and patches, grouped into ONE PR per
+#     month by `groups.all-npm`. `open-pull-requests-limit` caps how
+#     many version-update PRs may stand open at once; it is the cap,
+#     not the grouping.
+#   * SECURITY UPDATES — grouped by `groups.all-npm-security`, which
+#     needs its own entry because a group defaults to
+#     `applies-to: version-updates` and would otherwise leave every
+#     security PR ungrouped and uncapped.
+#   * MAJORS ARE IGNORED, AND `ignore` APPLIES TO SECURITY UPDATES
+#     TOO. So an advisory whose ONLY fix is a major version will not
+#     be raised here. Nothing else in this repo raises it either —
+#     CI runs no `npm audit` step. **Majors therefore still need a
+#     periodic manual sweep**; this lane does not close that gap, and
+#     the gap is named in docs/memory/deps-sep.md rather than left
+#     for someone to discover.
+#
+# Majors are ignored deliberately all the same: a major is a
+# migration with a blast radius (ESLint 10, Vitest 5, TypeScript 7),
+# which is bench work with a spec and a review — not something to
+# meet as an unreviewed PR on a Monday morning.
 version: 2
 updates:
   - package-ecosystem: "npm"
@@ -20,11 +39,16 @@ updates:
       include: "scope"
     groups:
       all-npm:
+        applies-to: version-updates
         patterns:
           - "*"
         update-types:
           - "minor"
           - "patch"
+      all-npm-security:
+        applies-to: security-updates
+        patterns:
+          - "*"
     ignore:
       - dependency-name: "*"
         update-types:

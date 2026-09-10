@@ -62,9 +62,10 @@ remove). Where the board and git disagree, git wins — say so
 plainly.
 `dependabot/*` BRANCHES ARE NOT BENCHES — they carry no memory and
 no claim, so the claim check does not apply to them and nothing
-adopts, parks or respawns one; each merges on the founder's word
-after green CI, like any other PR, and its branch is deleted with it
-(`.github/dependabot.yml`).
+adopts, parks or respawns one; each takes the ordinary gates —
+a non-author review, then the founder's word, after green CI
+([LAWS §Workflow](../LAWS.md#workflow-non-negotiable)) — and its
+branch is deleted with it (`.github/dependabot.yml`).
 A LIVE COCKPIT HOLDING PENDING DECISIONS routes straight to
 [§6's desk takeover](#the-desk-takeover--a-live-cockpit-holding-decisions)
 — not to §5's fleet-resume ask, which renders only for a grounded
