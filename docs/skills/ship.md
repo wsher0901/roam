@@ -161,20 +161,36 @@ atomically:
   shelf bench reading the census learns of the deferral where it
   looks.
 
-  **THE TEST, AT THE POINT OF USE — read it off the diff, never off
-  the bench's name.** A weld is a PRODUCT weld when its diff touches
-  ANY path outside `docs/`, `.claude/`, `.github/` and `scripts/`.
-  Three cases, and they are exhaustive over what a diff can be:
+  **THE TEST, AT THE POINT OF USE — read it off the record, never
+  off the bench's name.** THE QUADRANT DECIDES, and this weld has
+  already computed it two bullets up: a weld is a PRODUCT weld when
+  its history file lands under `docs/record/history/product/`, and a
+  WORKSHOP weld when it lands under `docs/record/history/workshop/`
+  ([D-076](../record/DECISIONS.md#d-076--phase-2-opens-with-a-three-story-pilot)
+  and the [legend](../record/history/README.md) own that
+  assignment). Three cases, exhaustive:
 
-  | The weld's diff | What it does |
+  | Where the history file lands | What the weld does |
   |---|---|
-  | touches a path outside those four, and nothing inside them | PRODUCT — defer, and stamp `synthesis: deferred — D-086` |
-  | touches nothing outside those four | NOT product — perform the whole step below, as written |
-  | touches BOTH | MIXED — defer, and NAME THE WORKSHOP ITEMS IT CARRIED in the weld commit and the history file, so the catch-up bench walks them rather than discovering them |
+  | `docs/record/history/product/…` | PRODUCT — defer, and stamp `synthesis: deferred — D-086` |
+  | `docs/record/history/workshop/…` | WORKSHOP — perform the whole step below, as written |
+  | `product/…`, and the diff ALSO carries a workshop item | MIXED — defer, AND name the workshop items it carried, in the weld commit and the history frontmatter, so the catch-up bench walks them rather than discovering them |
+
+  **THE QUADRANT RATHER THAN THE PATHS A DIFF TOUCHES, and the
+  difference is not academic.**
+  [V1.S1](../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
+  is a DOCS-AND-SPIKES stage by its own definition: T1 and T2 shipped
+  as [product/definition](../record/history/product/definition)
+  stories having touched only `docs/data/` and `scripts/spikes/`, and
+  T3–T7 will do the same. Any test keyed on "touches something
+  outside the workshop's directories" would call that whole stage NOT
+  product — and the deferral would never fire on the very stage the
+  window exists for. The quadrant answers correctly because it is
+  assigned by MEANING, by the seat that just did the work.
 
   **THE MIXED CASE IS NOT A HYPOTHETICAL — ruling 1 manufactures
   it.** Its exception sends a fix a product bench needs onto that
-  bench, so a diff touching both product code and `docs/skills/` is
+  bench, so a product-quadrant weld also carrying a skill or a law is
   the window's designed output. It defers like any product weld, but
   it may not defer SILENTLY: a skill or a law is a census-rowed
   system piece, and a deferral that does not name what it carried is

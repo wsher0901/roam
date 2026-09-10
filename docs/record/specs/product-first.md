@@ -91,6 +91,17 @@ carries a permanent diet, and the inbox splits so that
     probes; keep `place-first.html`, [DESIGN](../../DESIGN.md)'s only
     linked reference.
 11. The full CI mirror, then four sweep proofs that re-run to zero.
+12. **`.claude/settings.json` — widen `permissions.allow` only.** The
+    founder asked for it at the Web review: rituals were prompting on
+    ordinary inspection (`grep`, `sed`, `git show`, `gh pr checks`,
+    `npm audit`), which is friction on every bench and buys no
+    safety. The INSPECTION AND READ-ONLY SHELL INVENTORY is added;
+    `deny` is not touched; **no standing `gh pr merge` is granted** —
+    the self-merge stays reachable only inside a ritual's own
+    `allowed-tools`, which is what
+    [HOME §Micro-PRs](../../HOME.md#micro-prs) says the physical gate
+    rests on. Bare `rm` is deliberately NOT added: its `-rf` form is
+    denied and `git rm` is the way.
 
 ## Done means
 
@@ -109,6 +120,9 @@ carries a permanent diet, and the inbox splits so that
       is a pointer to [IDEAS](../../IDEAS.md).
 - [ ] `public/spikes/taste/` holds `place-first.html` and nothing
       else, and `npm run check:links` proves it still resolves.
+- [ ] `.claude/settings.json` parses; `permissions.deny` is
+      byte-identical to main's; no `allow` entry begins with
+      `Bash(gh pr merge`; nothing was removed from `allow`.
 - [ ] The full CI mirror is green and the PUSHED head's Actions run
       is green.
 

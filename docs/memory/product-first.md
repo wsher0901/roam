@@ -1,7 +1,7 @@
 ---
 type: memory
 id: product-first
-updated: 2026-09-10 · critic round repaired · work PC
+updated: 2026-09-10 · web review round 2 repaired · work PC
 ---
 
 # product-first — the product-first window
@@ -16,7 +16,9 @@ immediately. Payload landed:
 [D-086](../record/DECISIONS.md#d-086--workshop-the-product-first-window)
 plus its ripple into five homes, the inbox split, the new probe
 record, the board repaint, and the three unreferenced taste probes
-deleted. SELF-AUTHORED — external Web review before the merge word.
+deleted. SELF-AUTHORED. Reviewed externally at `f4d1cdd` — ONE red
+finding (the round-1 path test), repaired here; the founder's next
+word is a re-review, then the merge word.
 
 ## What this task is
 
@@ -30,12 +32,16 @@ contract: [the spec](../record/specs/product-first.md).
 
 ## Pending issues
 
-**STEP 0 IS BLOCKED, AND ITS PREMISE WAS WRONG.** The sitting's
-mandate opened with "locate the retired no-agents instruction in the
-user-scope settings / preamble file that injects it, remove it, and
-record file + line here." It is in no file. See §The story for the
-full search and the finding; the founder's ruling is now
-[DASHBOARD](../DASHBOARD.md) Needs-you 2.
+**STEP 0 WAS BLOCKED, ITS PREMISE WAS WRONG, AND IT IS NOW RULED.**
+The sitting's mandate opened with "locate the retired no-agents
+instruction in the user-scope settings / preamble file that injects
+it, remove it, and record file + line here." It is in no file — see
+§The story for the full search. **Retired on the Web review**: the
+sentence's own CLAUDE.md carve-out plus the
+[LAWS](../LAWS.md) import make
+[D-082](../record/DECISIONS.md#d-082--the-vehicle-chooser) the
+standing licence, so there was never anything to click.
+[DASHBOARD](../DASHBOARD.md) Needs-you drops to one.
 
 **A LIVE SUPABASE SERVICE TOKEN SITS IN `~/.claude.json`** in
 plaintext, under this repo's per-project `mcpServers` block. It is
@@ -301,6 +307,64 @@ so CI green was not evidence. All three woven.
 directory URL. It was in the diary but not in
 [the spec's Deviations](../record/specs/product-first.md), which is
 where a later reader chasing that URL starts. Moved there.
+
+### Critic round 2 — the external review, and the test that was wrong
+
+**ONE FINDING, RED, AND IT WAS THE REPAIR FROM ROUND 1 THAT CAUSED
+IT.** Round 1 caught that "product weld" was undefined and closed it
+with a PATH TEST: a weld is product when its diff touches any path
+outside `docs/`, `.claude/`, `.github/` and `scripts/`. The Web
+review checked that test against the stage the window exists for and
+it fails there — **`V1.S1` is a docs-and-spikes stage by its own
+definition.** T1 and T2 shipped as
+[product/definition](../record/history/product/definition) stories
+having touched only `docs/data/` and `scripts/spikes/` (`#31` touched
+nothing outside the four at all), and T3–T7 will do the same. Under
+the path test the whole of V1.S1 reads NOT PRODUCT, so ruling 2c
+would never have fired on the only stage it was written for.
+
+Repaired with the QUADRANT TEST, which is the right instrument and
+was there the whole time: the weld already assigns a quadrant two
+bullets up, so a PRODUCT weld is one whose history file lands under
+`docs/record/history/product/` and a WORKSHOP weld one that lands
+under `docs/record/history/workshop/`. Mixed is a product-quadrant
+weld also carrying a workshop item — it defers and NAMES what it
+carried. The definition now lives in BOTH
+[ship §7](../skills/ship.md#7--on-approval--the-atomic-weld) and
+D-086 ruling 2c so the skill and the ruling cannot drift.
+
+**The lesson is about where a classifier reads from.** Round 1's fix
+derived the class from the DIFF; the record already derived it from
+MEANING, assigned by the seat that did the work. A test invented
+beside the thing being classified will disagree with the thing being
+classified — and this one disagreed on the majority case.
+
+**THE NO-AGENTS ITEM IS RETIRED**, ruled on the Web review: the
+sentence's own CLAUDE.md carve-out plus the LAWS import make
+[D-082](../record/DECISIONS.md#d-082--the-vehicle-chooser) the
+standing licence. [DASHBOARD](../DASHBOARD.md) Needs-you drops to
+one — the home-PC design stack.
+
+**THE RAILS WIDENED, AND ONLY THE ALLOW SIDE.** The founder asked
+for it: rituals were prompting on ordinary inspection — `grep`,
+`sed`, `git show`, `gh pr checks`, `npm audit` — which is friction on
+every bench and buys no safety, since none of it changes anything.
+53 entries added to `permissions.allow` in
+`.claude/settings.json`: the read-only shell inventory, the
+inspecting halves of `git` and `gh`, and the npm commands a bench
+actually runs. **Nothing else moved, and that was verified rather
+than asserted** — `deny` is byte-identical to main's eleven rules,
+nothing was removed from `allow`, `env`/`enabledPlugins`/`hooks` are
+unchanged, no entry begins with `Bash(gh pr merge` (the self-merge
+stays reachable only inside a ritual's own `allowed-tools`, which is
+the physical gate
+[HOME §Micro-PRs](../HOME.md#micro-prs) rests on), and bare `rm` is
+deliberately absent — its `-rf` form is denied and `git rm` is the
+way.
+
+Bench B ([#356](https://github.com/wsher0901/roam/pull/356)) came
+back **PASS at `cfd97a8`, zero findings**; its merge word rides with
+this bench's after the re-review.
 
 ## Where to look
 

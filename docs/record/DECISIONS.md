@@ -4696,8 +4696,19 @@ micro-PR carve-out STANDS and is simply not exercised.
   existing.
 - **(c) §7 — SYNTHESIS IS DEFERRED FOR PRODUCT WELDS.** The weld
   commit message and the history file's frontmatter carry
-  `synthesis: deferred — D-086`. **ONE catch-up synthesis bench
-  runs at V1.S1 close and walks every deferred weld.**
+  `synthesis: deferred — D-086`. **A PRODUCT WELD IS ONE WHOSE
+  HISTORY FILE LANDS UNDER `docs/record/history/product/`, and a
+  workshop weld one that lands under
+  `docs/record/history/workshop/`** — the QUADRANT the weld itself
+  assigns ([D-076](#d-076--phase-2-opens-with-a-three-story-pilot)),
+  never the paths the diff happens to touch:
+  [V1.S1](../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
+  is docs-and-spikes by definition, so a path test would call the
+  window's own target stage "not product" and never fire. A
+  product-quadrant weld that also carries a workshop item (ruling
+  1's exception) defers too, and NAMES what it carried.
+  **ONE catch-up synthesis bench runs at V1.S1 close and walks
+  every deferred weld.**
   [chronicle/INDEX.md](../chronicle/INDEX.md)'s head gains one line
   saying so, because a census that does not announce its own
   deferral is a census that silently lies to the next shelf bench.

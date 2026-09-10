@@ -10,7 +10,7 @@ Painted 2026-09-10 · 14:37 UTC by ship's weld · from work PC
 THE PRODUCT-FIRST WINDOW IS OPEN — no workshop bench until
 [V1.S1](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
 closes
-2 benches at the gate · needs-you 2 · git outranks this board.
+2 benches at the gate · needs-you 1 · git outranks this board.
 How to read it → [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
@@ -25,26 +25,6 @@ How to read it → [HOME §Reading the board](HOME.md#reading-the-board)
    2026-08-12 would have the agent and not its eyes. (since 08-11)
    → [machine-setup step 12](skills/machine-setup.md#one-time-per-machine)
    · [D-084](record/DECISIONS.md#d-084--the-global-design-stack)
-
-2. 🟡 **THE NO-AGENTS INSTRUCTION HAS NO CLICK — IT NEEDS A RULING
-   INSTEAD.** This item was filed on the belief that the sentence
-   lives in an editable Claude Code setting. It does not. Searched
-   this sitting: `~/.claude/CLAUDE.md`, `~/.claude/settings.json`,
-   `~/.claude.json` (every key, and the per-project block),
-   `.claude/settings.json`, `.claude/settings.local.json`, and the
-   COMPLETE Claude Code settings schema — no key produces it, so
-   there is no menu row and no file line to change. **But the
-   sentence carves out its own override in its own words — "unless
-   the user, a CLAUDE.md file, or a skill asks for it" — and
-   [LAWS](LAWS.md) is loaded into every session through the root
-   `CLAUDE.md` import, which makes
-   [D-082](record/DECISIONS.md#d-082--the-vehicle-chooser)'s chooser
-   law exactly such a licence, already in force.** Your one act,
-   whenever you want it: say **"retire it"** (the item goes and the
-   chooser stands alone) or **"keep it"** (it stays as a watch line).
-   Not a click, and nothing is blocked either way. (since 08-07)
-   → [D-082](record/DECISIONS.md#d-082--the-vehicle-chooser) ·
-   [the bench that raised it](record/history/workshop/definition/chooser-and-blocker.md)
 
 Not counted above, because they block nothing today and wait on you
 whenever you want them: **the colour tokens and three reference
