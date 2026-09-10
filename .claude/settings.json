@@ -41,7 +41,41 @@
       "Bash(gh auth status:*)",
 
       "Bash(npm audit:*)", "Bash(npm ci:*)", "Bash(npm install:*)",
-      "Bash(npm outdated:*)", "Bash(npm view:*)", "Bash(npx tsc:*)"
+      "Bash(npm outdated:*)", "Bash(npm view:*)", "Bash(npx tsc:*)",
+
+      "PowerShell(git status:*)", "PowerShell(git log:*)",
+      "PowerShell(git diff:*)", "PowerShell(git show:*)",
+      "PowerShell(git add:*)", "PowerShell(git commit:*)",
+      "PowerShell(git push:*)", "PowerShell(git pull:*)",
+      "PowerShell(git fetch:*)", "PowerShell(git branch:*)",
+      "PowerShell(git checkout:*)", "PowerShell(git switch:*)",
+      "PowerShell(git merge:*)", "PowerShell(git worktree:*)",
+      "PowerShell(git rev-parse:*)", "PowerShell(git rev-list:*)",
+      "PowerShell(git ls-files:*)", "PowerShell(git blame:*)",
+      "PowerShell(git remote:*)", "PowerShell(git stash:*)",
+      "PowerShell(git mv:*)", "PowerShell(git rm:*)",
+      "PowerShell(git config --get:*)",
+
+      "PowerShell(gh pr create:*)", "PowerShell(gh pr view:*)",
+      "PowerShell(gh pr list:*)", "PowerShell(gh pr diff:*)",
+      "PowerShell(gh pr ready:*)", "PowerShell(gh pr edit:*)",
+      "PowerShell(gh pr checks:*)", "PowerShell(gh pr comment:*)",
+      "PowerShell(gh run:*)", "PowerShell(gh api:*)",
+      "PowerShell(gh auth status:*)",
+
+      "PowerShell(npm run:*)", "PowerShell(npm test:*)",
+      "PowerShell(npm audit:*)", "PowerShell(npm ci:*)",
+      "PowerShell(npm install:*)", "PowerShell(npm outdated:*)",
+      "PowerShell(npm view:*)", "PowerShell(npx:*)",
+      "PowerShell(node:*)",
+
+      "PowerShell(Get-ChildItem:*)", "PowerShell(Get-Content:*)",
+      "PowerShell(Test-Path:*)", "PowerShell(Write-Output:*)",
+      "PowerShell(Select-Object:*)", "PowerShell(Where-Object:*)",
+      "PowerShell(Measure-Object:*)", "PowerShell(ConvertFrom-Json:*)",
+      "PowerShell(ConvertTo-Json:*)", "PowerShell(Get-Date:*)",
+      "PowerShell(Copy-Item:*)", "PowerShell(New-Item:*)",
+      "PowerShell(foreach:*)"
     ],
     "ask": [],
     "deny": [
@@ -59,11 +93,14 @@
       "Bash(find * -exec*)", "Bash(find * -delete*)",
       "Bash(find * -fprint*)", "Bash(find * -fls*)",
       "Bash(awk * system(*)", "Bash(awk * print > *)",
-      "Bash(sed -i:*)", "Bash(sed * -i *)",
 
       "Bash(cp * .claude/*)", "Bash(mv * .claude/*)",
-      "Bash(cp * .git/*)", "Bash(mv * .git/*)",
-      "Bash(cp * ~/*)", "Bash(mv * ~/*)"
+      "Bash(tee .claude/*)", "Bash(tee * .claude/*)",
+      "Bash(install * .claude/*)", "Bash(rsync * .claude/*)",
+      "Bash(cp * .git/hooks/*)", "Bash(mv * .git/hooks/*)",
+      "Bash(cp * ~/.ssh/*)", "Bash(mv * ~/.ssh/*)",
+      "Bash(cp * ~/.aws/*)", "Bash(mv * ~/.aws/*)",
+      "Bash(git config --global:*)"
     ]
   },
   "hooks": {

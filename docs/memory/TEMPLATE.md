@@ -73,7 +73,7 @@ about either seat.
 |---|---|---|
 | bench ready | baton-holder, at birth | claiming |
 | claimed — <vehicle · date> | the lane, canary | waiting for ack |
-| airborne · <url> · <date> | baton-holder ack (the machine-checked token — exact form) | the lane works |
+| airborne · <vehicle or url> · <date> | baton-holder ack (the machine-checked token — exact form) | the lane works |
 | blocked — <reason> | the lane (+ BLOCKED: PR comment) | waiting on founder |
 | parked — <date · reason> | handoff §1.5, liftoff §5, or the lane | nothing — until founder action |
 | interrupted — <date> · <why> | the interrupting seat (Esc · founder redirect · handoff park), with the ⏸ capture block filled in Status | resume via pickup's ⏸ lead ("continue?") or the founder's word |
