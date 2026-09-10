@@ -6,11 +6,12 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-09-10 · 17:33 UTC by ship's weld · from work PC
+Painted 2026-09-10 · 17:40 UTC by ship's weld · from work PC
 THE PRODUCT-FIRST WINDOW IS OPEN — no workshop bench until
 [V1.S1](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
 closes
-2 benches at the gate · needs-you 1 · git outranks this board.
+Clean floor — both benches shipped · needs-you 1 ·
+git outranks this board.
 How to read it → [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
@@ -43,15 +44,15 @@ Last flight: LANDED 2026-08-04 21:16 UTC via MANUAL-LAND.
 
 ## In flight
 
-Two benches open at this desk, no lanes, no cloud seat.
-
-| Who | For | State | Move |
-|---|---|---|---|
-| bench · `deps-sep` | Next 16.3.4 + the advisory sweep, and a dependabot lane | 🟢 | reviewed PASS at `cfd97a8`; welding next |
-
-`product-first` merged as [#355](https://github.com/wsher0901/roam/pull/355).
+Nothing flying, no lanes, no bench open. Both this sitting's benches
+merged — [#355](https://github.com/wsher0901/roam/pull/355) and
+[#356](https://github.com/wsher0901/roam/pull/356).
 
 ## Working on
+
+**NOTHING OPEN — and the window is why that matters.**
+[V1.S1](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
+T3–T6 are next and they are the only thing the workshop may open.
 
 **THE PRODUCT-FIRST WINDOW.**
 [D-086](record/DECISIONS.md#d-086--workshop-the-product-first-window)
@@ -85,6 +86,10 @@ one phase per line:
 **Completed** — the last five; the full chronology is
 [the ledger](record/history/README.md#the-ledger).
 
+- **SIXTEEN ADVISORIES TO ZERO** — Next 16.3.4 closes a critical
+  middleware bypass; a monthly grouped dependabot lane replaces the
+  bench. One gap named rather than closed: majors still need a
+  manual sweep. [#356](https://github.com/wsher0901/roam/pull/356)
 - **THE WORKSHOP GETS A DEADLINE** — D-086 opens the product-first
   window: no workshop bench until V1.S1 closes, a ceremony diet, a
   permanent board diet, and an inbox split. Its deferral classifier
@@ -100,9 +105,6 @@ one phase per line:
 - **THE GLOBAL DESIGN STACK** — a machine-wide design capability,
   and [DESIGN](DESIGN.md) made to outrank it inside this repo.
   [#345](https://github.com/wsher0901/roam/pull/345)
-- **THE VEHICLE CHOOSER AND THE EXTERNAL-BLOCKER RULE** — two
-  founder rulings into law with their homes, in one PR.
-  [#343](https://github.com/wsher0901/roam/pull/343)
 
 **Issues** — none with a home nowhere else.
 

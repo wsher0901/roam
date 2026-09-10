@@ -1,7 +1,10 @@
 ---
-type: memory
-id: deps-sep
-updated: 2026-09-10 · critic round repaired · work PC
+type: history
+slug: deps-sep
+shipped: 2026-09-10 17:40 UTC
+pr: #356
+synthesis: deferred — D-086
+synthesis-carried: pickup (workshop/mechanism) — §3's dependabot exemption
 ---
 
 # deps-sep — the advisory sweep and the standing lane
@@ -22,7 +25,7 @@ merge word; batched with `product-first`.
 
 Close the standing npm advisories and give the repo a lane that
 raises the next round as a monthly grouped PR rather than a bench.
-Contract: [the spec](../record/specs/deps-sep.md).
+Contract: [the spec](../../../specs/deps-sep.md).
 
 ## Pending issues
 
@@ -191,7 +194,7 @@ under §Pending issues and named in the file's own header comment.
 
 **And a new branch class needs a ritual that knows how to read it.**
 `dependabot/*` branches would otherwise meet
-[pickup](../skills/pickup.md)'s claim check, which asks whether an
+[pickup](../../../../skills/pickup.md)'s claim check, which asks whether an
 open branch is a live bench to adopt or a reclaimable one to
 respawn — and would answer wrongly, because a dependabot branch is
 neither. §3 now says so in one sentence: no memory, no claim, and
@@ -215,7 +218,7 @@ words and LINKED AT ITS PR
 ([#355](https://github.com/wsher0901/roam/pull/355)) rather than at
 an anchor `main` cannot resolve, with the reason stated in the spec
 itself so a later reader does not "repair" it into a broken link.
-The line stays open in [IDEAS](../IDEAS.md) — the general carve-out
+The line stays open in [IDEAS](../../../../IDEAS.md) — the general carve-out
 is a law edit, which the window forbids this bench from making.
 
 ### The critic round — eight findings, all repaired
@@ -246,7 +249,7 @@ diff must say so, not produce plausible prose.
 6. ⚪ A block presented as literal `git diff` output was not
    literal — `-    "next": "16.2.9,"` had the comma inside the
    quotes. Repaired with the real output.
-7. ⚪ [IDEAS](../IDEAS.md) was mentioned three times unlinked while
+7. ⚪ [IDEAS](../../../../IDEAS.md) was mentioned three times unlinked while
    every other sibling-doc mention was woven. Repaired.
 8. ⚪ The pickup sentence named only the merge gate, not
    no-solo-approval. Repaired.
@@ -256,7 +259,7 @@ Findings the critic checked and cleared: the dependabot schema
 different — short under `groups`, long under `ignore`); the pickup
 sentence's placement after the liveness rule rather than before it;
 no contradiction with
-[parallel-lanes](../skills/parallel-lanes.md); the zero-moderates
+[parallel-lanes](../../../../skills/parallel-lanes.md); the zero-moderates
 report as honest rather than a technicality; and the unlinked
 `D-086` as following documented precedent rather than breaching the
 weave rule.
@@ -277,9 +280,9 @@ npm run build           # ✓ compiled; routes / and /_not-found, both static
 
 ## Where to look
 
-- [the spec](../record/specs/deps-sep.md) — the contract
+- [the spec](../../../specs/deps-sep.md) — the contract
 - `package.json` · `package-lock.json` — the bump
 - `.github/dependabot.yml` — the standing lane, and what it does not cover
-- [pickup §3](../skills/pickup.md#3--gather-git-outranks-the-board)
+- [pickup §3](../../../../skills/pickup.md#3--gather-git-outranks-the-board)
   — what a `dependabot/*` branch is
 - [#356](https://github.com/wsher0901/roam/pull/356) — the PR

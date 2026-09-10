@@ -2,12 +2,12 @@
 type: spec
 id: deps-sep
 title: The advisory sweep — Next 16.3.4, and a dependabot lane
-status: open
+status: shipped
 stage: workshop
 branch: chore/deps-sep
-pr: —
+pr: #356
 opened: 2026-09-10
-shipped: —
+shipped: 2026-09-10
 ---
 
 # deps-sep — the advisory sweep and the standing lane
@@ -16,11 +16,13 @@ shipped: —
 [pickup §3](../../skills/pickup.md#3--gather-git-outranks-the-board)
 · [ship §1](../../skills/ship.md#1--preflight) ·
 [D-038](../DECISIONS.md#d-038--ci-is-the-arbiter) ·
+[D-086](../DECISIONS.md#d-086--workshop-the-product-first-window),
 the product-first window, which explicitly does not block dependency
-and security work —
-[#355](https://github.com/wsher0901/roam/pull/355), still on its own
-branch as this bench is written, so it is named here and linked at
-its PR rather than at an anchor `main` cannot resolve
+and security work. **This link was a bare PR reference for most of
+this bench's life** — D-086 lived on the sibling branch
+[#355](https://github.com/wsher0901/roam/pull/355) and the anchor
+was unresolvable from here, which turned `check:links` red twice. It
+is woven now that #355 has merged
 
 ## Goal
 
@@ -48,9 +50,9 @@ a `dependabot/*` branch is so it is never mistaken for one.
   The stack's inventory changes only in the version numbers
   `package.json` already carries.
 - **Any workshop change beyond the one pickup sentence.** The
-  window ([#355](https://github.com/wsher0901/roam/pull/355), ruling
-  1) permits this bench as product hygiene; it does not license a
-  workshop bench riding along. The pickup sentence is in scope
+  window ([D-086](../DECISIONS.md#d-086--workshop-the-product-first-window)
+  ruling 1) permits this bench as product hygiene; it does not
+  license a workshop bench riding along. The pickup sentence is in scope
   because `.github/dependabot.yml` would otherwise create a branch
   class no ritual knows how to read.
 
@@ -73,7 +75,8 @@ a `dependabot/*` branch is so it is never mistaken for one.
 
 - [ ] `npm audit` reports **0 critical and 0 high**.
 - [ ] Every remaining moderate is named in
-      [the memory](../../memory/deps-sep.md) with why it stays.
+      [the memory](../history/product/build/deps-sep.md) with why it
+      stays.
 - [ ] No major version moved — ESLint, Vitest and TypeScript ranges
       are byte-identical to main's.
 - [ ] `.github/dependabot.yml` exists, monthly, grouped, majors
