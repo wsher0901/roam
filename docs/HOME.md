@@ -339,8 +339,8 @@ Sources:
 included, starts
 identically: freshly pulled main → branch → spec (when discussion
 opened the task) + memory stub → a DRAFT PR pushed to origin BEFORE
-any session works it (D-023; procedure: parallel-lanes §Bench-first
-birth). The point of the bench: from its first minute, a task exists
+any session works it
+([D-023](record/DECISIONS.md#d-023--universal-draft-pr-at-birth-and-micro-pr-carve-out); procedure: parallel-lanes §Bench-first birth). The point of the bench: from its first minute, a task exists
 in public — branch, contract, story, and window all on origin — so no
 work ever lives in only one place, and any seat (or any rescuer) can
 see and claim it. The draft PR is the task's public window for its
@@ -650,7 +650,8 @@ the world can see the task; the canary proves the lane can reach the
 world. A worker that cannot push is a zombie writing into the void —
 the handshake starves zombies before they cost a day's work, a lesson
 bought when early cloud sandboxes couldn't push to origin and their
-work died with them (D-020).
+work died with them
+([D-020](record/DECISIONS.md#d-020--parallel-lanes-v2)).
 
 Sources:
 [lane law](LAWS.md#parallel-lanes--cloud)
@@ -949,7 +950,9 @@ Main is PR-only, and every merge waits for the founder — with exactly
 one carve-out. A micro-PR touches ONLY DASHBOARD.md and/or IDEAS.md,
 is written by a ritual (handoff, liftoff, ship's tail — or pickup's
 stale-repaint, which rides the same carve-out), and squash-merges
-immediately without asking (D-002 as recut by D-023).
+immediately without asking ([D-002](record/DECISIONS.md#d-002--handoff-note-merge-policy) as
+recut by
+[D-023](record/DECISIONS.md#d-023--universal-draft-pr-at-birth-and-micro-pr-carve-out)).
 
 **While the product-first window is open, the carve-out stands and
 is simply not exercised:** ship writes no gate-repaint micro-PR and
@@ -1071,8 +1074,9 @@ can amend one like any law. The trigger lives in
 `.claude/skills/<name>/SKILL.md` as a thin stub: frontmatter naming
 the skill and its firing description, and a one-line body — "Read
 docs/skills/<name>.md and follow it exactly." A stub that only points
-cannot drift from its procedure (D-024; now a law in LAWS §Knowledge
-& tracking).
+cannot drift from its procedure
+([D-024](record/DECISIONS.md#d-024--architecture-v2-narrative-layer-and-skills);
+now a law in LAWS §Knowledge & tracking).
 
 Sources:
 [docs/skills/](skills)
@@ -1283,7 +1287,8 @@ and this section does not restate it.
 ritual, and both of
 [D-055](record/DECISIONS.md#d-055--agent-teams-the-boundary)'s
 risks stand exactly as written below. The recut is about
-AUTHORSHIP, not about supervision — D-055's reasoning that teams
+AUTHORSHIP, not about supervision —
+[D-055](record/DECISIONS.md#d-055--agent-teams-the-boundary)'s reasoning that teams
 share one working tree and have no PR isolation is answered by
 giving each teammate its own bench, not by waiving anything.
 
@@ -1482,8 +1487,10 @@ the link for the full story.
   `#d-068--the-short-anchor-law` rather than a paragraph. Home:
   [D-068](record/DECISIONS.md#d-068--the-short-anchor-law) ·
   [decide](skills/decide.md).
-- **D-number** — one permanently recorded decision (D-001, D-002,
-  …) with rationale and rejected alternatives.
+- **D-number** — one permanently recorded decision
+  ([D-001](record/DECISIONS.md#d-001--tech-stack),
+  [D-002](record/DECISIONS.md#d-002--handoff-note-merge-policy), …)
+  with rationale and rejected alternatives.
   Home: [DECISIONS](record/DECISIONS.md).
 
 ### Workflow & rituals
@@ -1506,7 +1513,9 @@ the link for the full story.
   and writer of main's bookkeeping. Called "cockpit" before
   [D-046](record/DECISIONS.md#d-046--flight-cockpit-the-control-tower-online)
   — [history/](record/history/README.md) files and DECISIONS entries
-  written before D-046 use "cockpit" in this ground meaning. Home:
+  written before
+  [D-046](record/DECISIONS.md#d-046--flight-cockpit-the-control-tower-online)
+  use "cockpit" in this ground meaning. Home:
   [§The baton](#the-baton) ·
   [LAWS §Parallel lanes & cloud](LAWS.md#parallel-lanes--cloud).
 - **cockpit** — the cloud command session: a control tower,
@@ -1941,7 +1950,7 @@ decides how its facts RENDER — from verified (A) through labeled
 estimate (C) to always-unverified (D). The canonical grade → render
 matrix is ENGINE §7; grades are living — demoted on sustained
 failure, drift, or miscalibration, promoted only by re-vetting
-(D-015).
+([D-015](record/DECISIONS.md#d-015--data-asset-law)).
 
 Sources:
 [ENGINE §7](ENGINE.md#7-render--honest-pixels)
@@ -1949,7 +1958,9 @@ Sources:
 
 **The reliability ladder.** Facts marked ⚠ are coverage-risky:
 nothing global and authoritative serves them everywhere. Each
-declares a fallback ladder, vetted top-down (D-010): (1) a source
+declares a fallback ladder, vetted top-down
+([D-010](record/DECISIONS.md#d-010--global-coverage-via-graded-fallback-ladders)):
+(1) a source
 global by construction (numerical models, astronomical math) → (2)
 regional authoritative sources → (3) computed from physics → (4)
 estimated ranges, labeled → (5) LLM-research grade, rendered
@@ -1967,7 +1978,8 @@ forecasts) to yearly (climate normals) — and windows tighten as the
 activity date nears. Freshness is why the cache can be aggressive
 without serving stale truth.
 
-**The fact cache.** Storage is bitemporal and append-only (D-015):
+**The fact cache.** Storage is bitemporal and append-only
+([D-015](record/DECISIONS.md#d-015--data-asset-law)):
 every value carries valid_for (when it is true in the world) and
 recorded_at (when we learned it), and new values supersede rather
 than overwrite old ones. The revision series this preserves —
@@ -1981,7 +1993,8 @@ Sources:
 [quiet asset](FOUNDATION.md#the-dataset--the-quiet-asset)
 
 **Units.** Everything stored or computed is SI/metric, exclusively;
-conversion to US units happens only at render time (D-013).
+conversion to US units happens only at render time
+([D-013](record/DECISIONS.md#d-013--canonical-units-si-storage)).
 
 Sources:
 [D-013](record/DECISIONS.md#d-013--canonical-units-si-storage)
@@ -1993,7 +2006,8 @@ Dictionary) · grade · freshness served · coverage and ladder position
 spike script path and its last verified run · alternatives rejected.
 Retention and license are PRIMARY selection criteria, not footnotes:
 a caching-prohibited source would hollow the asset layer, so it
-disqualifies the slot (D-015). Spike scripts live in `scripts/spikes/`
+disqualifies the slot
+([D-015](record/DECISIONS.md#d-015--data-asset-law)). Spike scripts live in `scripts/spikes/`
 — each is a plain Node fetch proving the source actually returns the
 Dictionary keys.
 
@@ -2007,8 +2021,10 @@ tier (U asked upfront within the six-question cap · L asked later when
 it earns its question · N never asked — inferred, defaulted, or
 composition-adjusted · S a settings field), who consumes it, and its
 handling tier (engine / brain-only / socket). Every stored value
-carries provenance; stated-only fields are never inferred (D-011,
-D-012). Appendix B lists plan parameters — schema the plans need
+carries provenance; stated-only fields are never inferred
+([D-011](record/DECISIONS.md#d-011--traveler-input-vocabulary),
+[D-012](record/DECISIONS.md#d-012--elicitation-and-inference-policy)).
+Appendix B lists plan parameters — schema the plans need
 (lodging anchor, item lock-state) that are neither world facts nor
 traveler inputs.
 
@@ -2020,7 +2036,8 @@ Sources:
 
 **Telemetry.** Appendix C defines three registers: behavior events
 (captured from day one under a strict privacy floor, used later —
-D-014), quality & ground truth (the claim ledger, harvested actuals,
+[D-014](record/DECISIONS.md#d-014--telemetry-posture)), quality &
+ground truth (the claim ledger, harvested actuals,
 and the calibration they yield), and source health (fetch success,
 drift, ladder falls — the demotion law's evidence).
 
@@ -2042,7 +2059,12 @@ Component registries are wired in `components.json`, and what
 arrives from them obeys the arrival law in
 [DESIGN](DESIGN.md#the-component-kit). Doctrine:
 stream-first, cache-heavy, parallel fan-out, DB co-located. Canonical,
-with sources: SETUP §Stack (D-001 · D-005 · D-007 · D-085). App code lives in
+with sources: SETUP §Stack
+([D-001](record/DECISIONS.md#d-001--tech-stack) ·
+[D-005](record/DECISIONS.md#d-005--stack-re-trial-upholds-d-001) ·
+[D-007](record/DECISIONS.md#d-007--shadcnui-builds-on-base-ui) ·
+[D-085](record/DECISIONS.md#d-085--recharts-is-the-chart-layer)).
+App code lives in
 `src/`, engine code in `engine/`, spike scripts in `scripts/spikes/`,
 CI in `.github/workflows/ci.yml` (lint + test on every PR — ship's
 gate is real).

@@ -782,7 +782,8 @@ keeps its answer, never its narrative.
 - 🟢 Shorten the decide-anchor links — done as THE SHORT-ANCHOR
   LAW: headings carry a short name (8 words max), the full
   statement moves to an `In full:` line, anchors freeze at mint;
-  D-001–D-067 retrofitted. (2026-07-24 → closed 2026-07-31) →
+  [D-001](record/DECISIONS.md#d-001--tech-stack)–[D-067](record/DECISIONS.md#d-067--the-report-skeleton-and-the-board-diet)
+  retrofitted. (2026-07-24 → closed 2026-07-31) →
   [#253](https://github.com/wsher0901/roam/pull/253)
 - 🟢 The ritual report sweep — every founder-facing report now
   renders one skeleton (verdict · your act · off-origin · context
@@ -823,7 +824,9 @@ keeps its answer, never its narrative.
   [D-055](record/DECISIONS.md#d-055--agent-teams-the-boundary)
 - ⚪ Keeping the console-attach launcher as a script — DECLINED
   (retired): the blind fire captures nothing, so there is no
-  output to read; D-051 deletes the component rather than
+  output to read;
+  [D-051](record/DECISIONS.md#d-051--self-seat-birth) deletes the
+  component rather than
   maintaining it, and names keeping-it-as-a-fallback among its
   rejected options. Asked 2026-07-22. →
   [D-051](record/DECISIONS.md#d-051--self-seat-birth)

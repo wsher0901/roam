@@ -90,7 +90,9 @@ one phase per line:
   middleware bypass; a monthly grouped dependabot lane replaces the
   bench. One gap named rather than closed: majors still need a
   manual sweep. [#356](https://github.com/wsher0901/roam/pull/356)
-- **THE WORKSHOP GETS A DEADLINE** — D-086 opens the product-first
+- **THE WORKSHOP GETS A DEADLINE** —
+  [D-086](record/DECISIONS.md#d-086--workshop-the-product-first-window)
+  opens the product-first
   window: no workshop bench until V1.S1 closes, a ceremony diet, a
   permanent board diet, and an inbox split. Its deferral classifier
   was wrong twice before it shipped, both caught by review.
