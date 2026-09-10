@@ -76,6 +76,16 @@ themselves must already be on origin. A verdict that lives only in
 the session is a verdict the founder cannot re-read and the
 external review cannot check.
 
+**WINDOW CLAUSE — while the product-first window is open
+([D-086](../record/DECISIONS.md#d-086--workshop-the-product-first-window)
+ruling 2a), THE GATE-REPAINT MICRO-PR BELOW IS NOT WRITTEN.** The
+gate report in the session is the notice, and a founder leaving
+with a bench at the gate is covered by
+[handoff](handoff.md) FULL exactly as today. Everything else in
+this section is unchanged — the critic still runs, the critic round
+is still written into the memory and pushed, and the gate report
+still renders. Resume the paragraph below when V1.S1 closes.
+
 THEN REPAINT THE BOARD BEFORE REPORTING — a DASHBOARD-only
 micro-PR, the same carve-out
 [§8](#8--tail)'s tail already uses. Needs-you gains ONE line: the
@@ -140,6 +150,19 @@ atomically:
 - **SYNTHESIS — carry the weld into the chronicle**
   ([D-059](../record/DECISIONS.md#d-059--the-chronicle-layer)'s
   ending rule, which nothing performed until it lived here).
+
+  **WINDOW CLAUSE — while the product-first window is open
+  ([D-086](../record/DECISIONS.md#d-086--workshop-the-product-first-window)
+  ruling 2c), SYNTHESIS IS DEFERRED FOR PRODUCT WELDS.** The weld
+  commit message and the history file's frontmatter carry
+  `synthesis: deferred — D-086` instead, and ONE catch-up synthesis
+  bench at V1.S1 close walks every deferred weld;
+  [chronicle/INDEX.md](../chronicle/INDEX.md)'s head says so, so a
+  shelf bench reading the census learns of the deferral where it
+  looks. THE DEFERRAL IS FOR PRODUCT WELDS ONLY — a weld that is not
+  product work performs the whole step below as written, and so does
+  every weld once the window closes.
+
   FIRST NAME THE ITEMS. An ITEM is what
   [D-059](../record/DECISIONS.md#d-059--the-chronicle-layer) ruling
   1 defines — an event, a system piece (skill, command,
@@ -232,6 +255,17 @@ SERIALLY by that seat, because each weld writes the census and the
 ledger, and two welds in flight collide on both.
 
 ## 8 · Tail
+
+**WINDOW CLAUSE — while the product-first window is open
+([D-086](../record/DECISIONS.md#d-086--workshop-the-product-first-window)
+ruling 2b), THE TAIL SHIPS NO MICRO-PR.** The QUIET-mode board
+repaint below is written as a COMMIT ON THE BENCH BRANCH, inside
+[§7](#7--on-approval--the-atomic-weld)'s atomic weld, so state and
+work merge atomically — which is the weld's own reason for
+existing. The board spec, the sections it repaints and the shipped
+report are all unchanged; only the vehicle is. Resume the micro-PR
+when V1.S1 closes.
+
 Run handoff in QUIET mode (board repaint per
 [handoff §4](handoff.md#4--repaint-dashboard-the-board-spec--single-source),
 which owns the section list — RECENT now shows this task). The

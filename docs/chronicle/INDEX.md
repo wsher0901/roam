@@ -13,6 +13,19 @@ re-stamped 2026-08-11 · the design stack joins Shelf III · work PC ·
 re-stamped 2026-08-11 · Roam's taste joins Shelf IV · work PC ·
 re-stamped 2026-08-12 · the supply lines join Shelf IV · work PC.
 
+**SYNTHESIS IS DEFERRED FOR PRODUCT WELDS while the product-first
+window is open**
+([D-086](../record/DECISIONS.md#d-086--workshop-the-product-first-window)
+ruling 2c): such a weld writes `synthesis: deferred — D-086` in its
+commit message and its history-file frontmatter instead of touching
+this census, and ONE CATCH-UP SYNTHESIS BENCH at
+[V1.S1](../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
+close walks every deferred weld. **So between that entry's merge and
+that bench, this shelf is knowingly behind the ledger** — a reader
+who needs the current state of a product item reads
+[the ledger](../record/history/README.md#the-ledger), not this file.
+Non-product welds perform the step as written throughout.
+
 CENSUS + 66 WRITTEN STORIES, OF 69 ROWS. The 66 that the census was
 born asking for all exist as of 2026-08-07 — the three-story pilot
 ([D-076](../record/DECISIONS.md#d-076--phase-2-opens-with-a-three-story-pilot)),

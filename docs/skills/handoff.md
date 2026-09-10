@@ -262,9 +262,21 @@ Sections, in this order:
     reads it).
 - **WORKING ON** — one line per active theme, and the standing
   order as its own list, ONE PHASE PER LINE.
-- **RECENT** — Completed: one line each with its PR. Issues: ✓
-  resolved, one line with its vehicle · ⏳ open, one line pointing
-  at the issue's home.
+- **RECENT** — Completed: **the last FIVE lines only**, one line
+  each with its PR; a sixth is dropped, because the ledger
+  ([record/history/README.md](../record/history/README.md#the-ledger))
+  is where the full run lives and this section is a glance.
+  Issues: ✓ resolved, one line with its vehicle · ⏳ open, one line
+  pointing at the issue's home — **and ONLY lines with NO home
+  elsewhere.** A line whose content already sits in
+  [IDEAS](../IDEAS.md) is a SECOND COPY, which the routing law
+  forbids ([LAWS §Knowledge & tracking](../LAWS.md#knowledge--tracking)):
+  it is removed here, not summarised. The test is the line's own
+  content, not its pointer — a line that reads "⏳ X → its line in
+  IDEAS" is exactly the case this rule deletes. Both caps are
+  PERMANENT
+  ([D-086](../record/DECISIONS.md#d-086--workshop-the-product-first-window)
+  ruling 4); they outlive the window that introduced them.
 - **WHERE WE ARE (Roam)** — the bars and nothing else; a paused
   tick POINTS AT the standing order rather than re-explaining it.
   Position lives here once.

@@ -951,11 +951,19 @@ is written by a ritual (handoff, liftoff, ship's tail — or pickup's
 stale-repaint, which rides the same carve-out), and squash-merges
 immediately without asking (D-002 as recut by D-023).
 
+**While the product-first window is open, the carve-out stands and
+is simply not exercised:** ship writes no gate-repaint micro-PR and
+no tail micro-PR — the gate report is the notice, and the tail's
+board repaint rides inside the atomic weld
+([D-086](record/DECISIONS.md#d-086--workshop-the-product-first-window)
+ruling 2).
+
 Sources:
 [DASHBOARD.md](DASHBOARD.md)
 [IDEAS.md](IDEAS.md)
 [D-002](record/DECISIONS.md#d-002--handoff-note-merge-policy)
 [D-023](record/DECISIONS.md#d-023--universal-draft-pr-at-birth-and-micro-pr-carve-out)
+[D-086](record/DECISIONS.md#d-086--workshop-the-product-first-window)
 
 Why it is safe: both files are derived or inbox surfaces — the
 board is repainted wholesale from sources by the next ritual
