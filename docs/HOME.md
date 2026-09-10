@@ -972,16 +972,65 @@ outcome ledger, never deleting an outcome — so the worst possible
 bad merge is a stale rendering or a noisy line, each healed
 mechanically, and a mis-compressed line is recoverable from git
 plus the closing vehicle it names. No code, no laws, no contracts,
-no history can
-ride one. And the physical gate survives: main still takes no
-direct pushes, and `.claude/settings.json` grants no session a
-standing `gh pr merge` allowance (its bypass variants are
-explicitly denied) — the allowance exists only inside the ritual
-skills' narrow `allowed-tools`, so even the self-merge can only
-happen where a ritual is running. Approval was
-skipped for exactly one reason: the founder approving a note the
-system just wrote to itself adds nothing but friction to the
-leaving habit.
+no history can ride one. Approval was skipped for exactly one
+reason: the founder approving a note the system just wrote to
+itself adds nothing but friction to the leaving habit.
+
+**WHAT HOLDS THE MERGE GATE UP — AND THIS IS ITS ONE HOME.** Read
+from the GitHub API on 2026-09-10, not assumed, and split into what
+a SERVER refuses and what only BEHAVIOUR supplies.
+
+**The server refuses four things** — the `protect-main` ruleset plus
+classic branch protection on `main`, with ZERO bypass actors and
+`enforce_admins: true`, so they bind the founder's account like any
+other:
+
+| Refused on `main` | By |
+|---|---|
+| a direct push — every change arrives by PR | ruleset `pull_request` |
+| a merge while `checks` is red | required status check `checks` |
+| a force-push, or any non-fast-forward | ruleset `non_fast_forward` + `allow_force_pushes: false` |
+| deleting the branch | ruleset `deletion` + `allow_deletions: false` |
+
+**No approval count is among them, and none can be.**
+`required_approving_review_count` is `0`. Raising it to `1` would
+brick the workshop rather than harden it: every seat — work PC,
+home PC, cloud, teammate — authenticates as the single account that
+owns the repo, GitHub refuses to let an author approve their own
+PR, and no PR could ever merge again. **The constraint is
+single-account, not configuration** — a limit to state, not a
+setting to fix.
+
+**So the founder's word and no-solo-approval are enforced by the
+record and the rituals, not by the platform.** They are real
+obligations ([LAWS §Workflow](LAWS.md#workflow-non-negotiable)), and
+each leaves evidence a later reader can audit: the review comment on
+the PR, the word in the session, the memory, the weld commit. What
+none of them is, is a lock — **a seat that skips the word merges
+successfully.**
+
+**And `allowed-tools` does not narrow that.** The five board-writing
+ritual stubs do carry
+`allowed-tools: Bash(gh pr merge --squash --delete-branch:*)`, and
+no settings file grants that permission standing. But
+`allowed-tools` is ADDITIVE, not exclusive: it ADDS a permission
+where a ritual runs, and forbids nothing anywhere else. Under
+`permissions.defaultMode: "auto"` the classifier adjudicates
+whatever the allow and deny lists do not cover — **and it lets
+`gh pr merge` through outside any ritual, without a prompt.** Not a
+hypothetical: on 2026-09-10
+[#355](https://github.com/wsher0901/roam/pull/355) and
+[#356](https://github.com/wsher0901/roam/pull/356) were both merged
+from the main conversation rather than from inside ship, and nothing
+asked. The deny list blocks only the BYPASS variants (`--admin`,
+`--repo`, `-R`) — worth having, and a different claim.
+
+**This section used to call the gate "physical" and say the merge
+allowance "exists only inside the ritual skills' narrow
+`allowed-tools`."** That was true of the allow list and false as a
+guarantee. It is corrected here rather than quietly deleted, because
+the claim was load-bearing in three places and a reader who
+remembers it deserves to meet the correction.
 
 ### The board
 
@@ -1050,14 +1099,17 @@ Sources:
 [decide](skills/decide.md)
 [pickup](skills/pickup.md)
 
-One more deliberate narrowing: no session holds a standing merge
-permission — it is granted per-ritual. The stubs for the five
-board-writing rituals — pickup, ship, handoff, liftoff, land —
-carry `allowed-tools: Bash(gh pr merge --squash
---delete-branch:*)` — the only merge allowance anywhere — so the
-capability to merge exists exactly where a ritual (and, for
-non-micro PRs, the founder's fresh yes) is present, and nowhere
-else.
+The stubs for the five board-writing rituals — pickup, ship,
+handoff, liftoff, land — carry `allowed-tools: Bash(gh pr merge
+--squash --delete-branch:*)`, and no settings file grants that
+permission standing. **This ADDS the capability where a ritual runs;
+it does not withhold it elsewhere** — `allowed-tools` is additive,
+and under auto mode the classifier lets `gh pr merge` through
+outside any ritual without a prompt. What the merge gate actually
+rests on is set out once, in §Micro-PRs.
+
+Sources:
+[§Micro-PRs](#micro-prs)
 
 ## Reading the board
 The DASHBOARD is THE STANDING REPORT — the one that renders when
