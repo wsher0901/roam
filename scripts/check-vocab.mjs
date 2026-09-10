@@ -25,7 +25,9 @@ const probePath = resolve(root, "docs/memory/zz-vocab-probe.md");
 // Rows the checker is not expected to see, with the reason. `shipped` is
 // written by ship's weld at the instant the memory MOVES to
 // record/history/, so check:memory never reads it.
-const EXEMPT = new Map([["shipped", "written as the memory leaves docs/memory/"]]);
+const EXEMPT = new Map([
+  ["shipped", "written as the memory leaves docs/memory/"],
+]);
 
 const text = readFileSync(templatePath, "utf8").replace(/\r\n/g, "\n");
 const rows = text
@@ -98,10 +100,14 @@ try {
     writeFileSync(probePath, memory(status), "utf8");
     let ok = false;
     try {
-      const out = execFileSync("node", [resolve(root, "scripts/check-memory.mjs")], {
-        encoding: "utf8",
-        cwd: root,
-      });
+      const out = execFileSync(
+        "node",
+        [resolve(root, "scripts/check-memory.mjs")],
+        {
+          encoding: "utf8",
+          cwd: root,
+        },
+      );
       ok = /all valid/.test(out);
     } catch {
       ok = false;
