@@ -2,12 +2,12 @@
 type: chronicle-story
 shelf: III — the information system
 status: living
-updated: 2026-08-06 · written · cloud lane
+updated: 2026-09-10 · the manual caught contradicting itself · work PC
 ---
 
 # HOME — the manual and encyclopedia
 
-> **CURRENT ENDING (2026-08-06).** The living manual, and the
+> **CURRENT ENDING (2026-09-10).** The living manual, and the
 > named home for everything the other files deliberately refuse to
 > explain: the routing table, the board's reading keys, the
 > response doctrine, the command card, Terms, and — since
@@ -19,7 +19,13 @@ updated: 2026-08-06 · written · cloud lane
 > [LAWS](../LAWS.md) was recut into a REGISTER carrying rules
 > only, which is what turned "HOME explains things" from a habit
 > into the other half of a two-file contract. HOME was groomed in
-> the same PR and stands at **thirteen sections**.
+> the same PR and stands at **thirteen sections**. **On 2026-09-10
+> it was caught contradicting itself inside one file** — §Micro-PRs
+> edited to say the tail's repaint rides the weld while §Reading the
+> board still listed "ship's tail" as a repaint moment — the
+> workshop's named recurring failure mode, surfacing in the file
+> that documents it. Repaired at the second site rather than by
+> deleting the first: same moment, different vehicle.
 
 ## What it is
 
@@ -116,6 +122,22 @@ away.
   rows, and §Reading the board stops restating the board spec,
   reducing to the reading keys plus a pointer to
   [handoff §4](../skills/handoff.md#4--repaint-dashboard-the-board-spec--single-source).
+
+- **2026-09-10 — THE MANUAL CONTRADICTS ITSELF, AND THE CRITIC
+  CATCHES IT INSIDE ONE FILE**
+  ([#355](https://github.com/wsher0901/roam/pull/355)). The
+  product-first window gave §Micro-PRs a pointer sentence saying the
+  tail's board repaint now rides inside
+  [ship §7](../skills/ship.md#7--on-approval--the-atomic-weld)'s
+  weld — while §Reading the board, a hundred lines further down and
+  untouched by that edit, went on listing "ship's tail" among the
+  repaint moments. **One file, two statements, opposite states**,
+  which is this workshop's named recurring failure mode appearing in
+  the very file that documents it. The repair puts the window's case
+  at the second site rather than deleting the writer list: same
+  moment, different vehicle. The general lesson HOME keeps earning
+  is that a manual mirroring other files is the surface where drift
+  costs most, because a reader consults it INSTEAD of the source.
 
 ## Where it stands
 

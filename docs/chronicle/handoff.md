@@ -2,12 +2,12 @@
 type: chronicle-story
 shelf: I — the away surface
 status: living
-updated: 2026-08-07 · D-082/D-083 incorporated · work PC
+updated: 2026-09-10 · the board diet and the window slot · work PC
 ---
 
 # Handoff — the ground-seat leaving ritual
 
-> **CURRENT ENDING (2026-08-06).** The ritual that ends a sitting at
+> **CURRENT ENDING (2026-09-10).** The ritual that ends a sitting at
 > a desk, in two modes: FULL when the founder is leaving, QUIET as
 > [ship](../skills/ship.md)'s tail. Its live order is **secure →
 > shut the team down → park the local lanes → take the inline paste
@@ -23,6 +23,12 @@ updated: 2026-08-07 · D-082/D-083 incorporated · work PC
 > against PARKING, not against securing. Everything else in the cell
 > holds. The ritual's deepest property is that it takes ZERO founder
 > input after invocation: the leaving message itself is the input.
+> **§4, the board spec it owns, gained two PERMANENT caps on
+> 2026-09-10** — RECENT to five Completed lines, ISSUES to lines
+> with no home elsewhere — plus a conditional WINDOW slot and a new
+> `<ritual>` value, `ship's weld`, for the board write that
+> [D-086](../record/DECISIONS.md#d-086--workshop-the-product-first-window)
+> ruling 2b moves inside the atomic weld.
 
 ## What it is
 
@@ -135,6 +141,25 @@ on this machine past §1.
   identically to the report's. The board and the report say the
   same sentence deliberately, so a founder arriving at either sees
   the same one fact.
+
+- **2026-09-10 — §4 GAINS TWO PERMANENT CAPS AND A SECOND
+  CONDITIONAL SLOT**
+  ([#355](https://github.com/wsher0901/roam/pull/355),
+  [D-086](../record/DECISIONS.md#d-086--workshop-the-product-first-window)
+  rulings 2b and 4). RECENT now keeps **the last five Completed
+  lines only** — the ledger holds the full run and this section is a
+  glance — and ISSUES carries **only lines with no home elsewhere**,
+  because a line already in [IDEAS](../IDEAS.md) is the second copy
+  the routing law forbids. Both caps are PERMANENT and outlive the
+  window that introduced them; applied at once, they emptied ISSUES
+  completely, all 28 items resolving to the inbox, a story or the
+  ledger. The painted line also gains a **WINDOW SLOT** below the
+  external banner, rendered by every ritual while the window is
+  open — added because the first board to carry that notice folded
+  it into the flight one-liner, where the next repaint from §4 as
+  written would have silently dropped it. And `<ritual>` gains one
+  value, `ship's weld`, since ruling 2b makes the weld a board
+  writer and a stamp with no writer-name cannot be audited.
 
 ## Where it stands
 

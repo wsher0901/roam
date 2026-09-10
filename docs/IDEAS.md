@@ -1,5 +1,66 @@
 ## Open
 
+- ⏳ When the check contract is born, rule the EVAL-SET GATE by
+  D-number: a ~50-trip golden set with hand-checked ground truth,
+  its calibration read before [V1.S4](ROADMAP.md#v1s4--suggest)
+  opens. Fills OPEN-9. (2026-07-28, the founder + the external
+  reviewer) → [ENGINE](ENGINE.md#12-open-register)
+
+- ⏳ Rule the LLM-BOUNDARY RULE by D-number in the same decide:
+  the LLM resolves language at Intake and phrases at Render, and
+  never originates a fact, a score, or a rank. A new
+  open-register slot. (2026-07-28, the founder + the external
+  reviewer) → [ENGINE](ENGINE.md#12-open-register)
+
+- ⏳ Give [ENGINE](ENGINE.md) the right frontmatter — it reads
+  `type: spec` though it is a living consolidation. The founder's
+  word: it stays for now, resolved at the first engine bench,
+  which touches ENGINE anyway. (2026-07-23, the founder)
+
+- ⏳ Licence or export the world-facts asset someday — revision
+  series, forecast-vs-actual calibration pairs, coverage maps.
+  Possible only because storage is licence-segmented.
+  (2026-06-12, Web) →
+  [D-015](record/DECISIONS.md#d-015--data-asset-law)
+
+- ⏳ Support multi-origin trips and group preference merging —
+  friends converging from different cities, several travellers'
+  inputs merged into one plan. (2026-06-12, Web)
+
+- ⏳ Build a reachability globe showing how far the traveller's
+  max-travel-hours reaches; open question, heuristic distance
+  rings versus true flight-time isochrones. (2026-06-12, Web)
+  **STANDING:** a Roam product idea, not workshop machinery — it waits on phase 3 and its own triage.
+
+- ⏳ T7 rider — re-run every spike in
+  [SOURCES](data/SOURCES.md) and restamp each verified date before
+  the grade scale is ratified; a grade resting on a fetch nobody
+  re-ran is a claim the reliability law does not license.
+  (2026-09-10, the work PC control tower) →
+  [V1.S1.T7](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
+
+## Parked — workshop (until [V1.S1](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code) closes)
+
+Workshop machinery, parked by
+[D-086](record/DECISIONS.md#d-086--workshop-the-product-first-window)
+ruling 5 while the product-first window is open. **Every line here
+was moved from §Open VERBATIM — the move is the record, and nothing
+was rewritten, merged, or dropped.** These are not closed and they
+are not declined: they are out of §Open so that reading the inbox
+routes attention at the product. This whole section returns to §Open
+when [V1.S1](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
+closes. A line here that a product bench genuinely needs in order to
+proceed rides that bench as a recorded deviation (ruling 1's
+exception) — it is not lifted back for its own sake.
+
+- ⏳ The gh api write denies (settings.json, PR #355) retire the
+  cockpit's R2(b) rung for WRITE acts — open a PR, apply a label,
+  merge. Reads still work. When flights resume, re-grant inside the
+  cockpit/liftoff ritual's allowed-tools, the way gh pr merge lives
+  only inside ship; never in the standing allow. (2026-09-10, Web
+  review) →
+  [HOME's ladder](HOME.md#the-cockpits-api-paths--recovery-ladder)
+
 - ⏳ THIRD-PARTY DESIGN SKILLS ARE A FOUNDER CALL, AND ONE IS
   ALREADY ON THIS MACHINE — `ui-ux-pro-max` v2.5.0 is installed at
   user scope from a third-party marketplace
@@ -499,63 +560,59 @@
   a line the table does not define. Mint the case where the
   others live. (2026-07-31, the handoff that hit it) →
   [handoff §4](skills/handoff.md#4--repaint-dashboard-the-board-spec--single-source)
+
 - ⏳ The links gate is destination-blind — it proves an anchor
   EXISTS, never that it is the RIGHT one, and never that a
   mention became a link at all; both misses have already shipped
   past green gates. A checker that reads the target heading is
   the shape. (2026-07-31, the mechanism census) →
   [ATLAS §7](ATLAS.md)
+
 - ⏳ Nothing checks the derivation law — a bar rendered 33
   segments for 34 tasks and every gate stayed green. Counts and
   bars on the board are the checkable class. (2026-07-31, the
   mechanism census) → [ATLAS §7](ATLAS.md)
+
 - ⏳ Board freshness is judgment only — it is repaired at
   rituals, so between them the board is stale by design and only
   the "git outranks it" habit protects a reader. Decide whether
   that is a gap to close or a property to keep. (2026-07-31, the
   mechanism census) → [ATLAS §7](ATLAS.md)
+
 - ⏳ The Roam stage map — the S1→S8 flowchart dropped from the
   board at [#250](https://github.com/wsher0901/roam/pull/250),
   since WHERE WE ARE is the bars and nothing else; stage order
   still lives in the ROADMAP headings, so decide whether the
   picture is wanted back in ATLAS. (2026-07-30, the board diet) →
   [ATLAS](ATLAS.md)
+
 - ⏳ OBSIDIAN SEAT TOGGLES — add Readable-line-length OFF +
   Strict-line-breaks ON to machine-setup's Obsidian step.
   (2026-07-29, the founder) →
   [machine-setup](skills/machine-setup.md)
+
 - ⏳ Decide whether to keep go-remote as a backstop or retire it —
   never used, and the founder judges the cloud path superior if it
   works; rule only AFTER a real cloud flight proves that path.
   (2026-07-28, the founder) → [go-remote](skills/go-remote.md)
   **STANDING:** a founder judgement explicitly reserved until a real cloud flight proves the cloud path end to end.
 
-- ⏳ Open every new decide heading with `[product]` or
-  `[workshop]`, forward-only. Rule it at the next product decide.
-  (2026-07-28, the founder + the external reviewer)
-- ⏳ When the check contract is born, rule the EVAL-SET GATE by
-  D-number: a ~50-trip golden set with hand-checked ground truth,
-  its calibration read before [V1.S4](ROADMAP.md#v1s4--suggest)
-  opens. Fills OPEN-9. (2026-07-28, the founder + the external
-  reviewer) → [ENGINE](ENGINE.md#12-open-register)
-- ⏳ Rule the LLM-BOUNDARY RULE by D-number in the same decide:
-  the LLM resolves language at Intake and phrases at Render, and
-  never originates a fact, a score, or a rank. A new
-  open-register slot. (2026-07-28, the founder + the external
-  reviewer) → [ENGINE](ENGINE.md#12-open-register)
 - ⏳ Probe whether Opus 5 honours the `max` effort level the
   platform hooks reference lists above xhigh, before any touch of
   the effort doctrine. (2026-07-27, the founder + the external
   reviewer) → [SETUP](SETUP.md#once-and-done--cloud-accounts)
+
 - ⏳ Adopt `.claude/rules/*.md` path-scoped conditional rules as
   the knowledge-loading architecture for engine work — token cost
   falls, and the right rules load when their files are touched.
   (2026-07-27, the founder + the external reviewer)
+
 - ⏳ Licence every session to PROPOSE agent teams and parallel
   lanes unprompted per the hands litmus, the founder's word
   staying the only trigger. Gated on grading the first team use.
   (2026-07-27, the founder + the external reviewer) →
   [D-045](record/DECISIONS.md#d-045--hands-doctrine)
+
 - ⏳ HARNESS V2 — one bench growing the hook layer from three
   events to the guard set: PreToolUse guards, a Stop done-means
   self-check, SessionStart `sessionTitle` for `[COCKPIT]`/`[LANE]`
@@ -566,32 +623,34 @@
   the `[LANE]` naming half of the 07-22 session-naming line, and
   the notification-taxonomy line (2026-07-22). (2026-07-27, the
   founder + the external reviewer)
-- ⏳ Give [ENGINE](ENGINE.md) the right frontmatter — it reads
-  `type: spec` though it is a living consolidation. The founder's
-  word: it stays for now, resolved at the first engine bench,
-  which touches ENGINE anyway. (2026-07-23, the founder)
+
 - ⏳ Separate lane pings from cockpit decisions in the
   notification taxonomy — absorbed by HARNESS V2 above at triage.
   (2026-07-22, Claude Code)
+
 - ⏳ Name cloud sessions at birth with `[COCKPIT]`/`[LANE]`
   prefixes so the phone's session list reads itself — the
   prompt-supplied title was disproven, but SessionStart
   `sessionTitle` is the supported mechanism; absorbed by HARNESS
   V2 above at triage. (2026-07-22, Claude Code)
+
 - ⏳ Make the daily-cap arithmetic account for TRIGGER
   REDELIVERIES — liftoff now adds API fires by hand, but a
   redelivered webhook still burns a run nobody counted.
   (2026-07-22, Claude Code) →
   [liftoff §2](skills/liftoff.md#2--triage-every-open-item)
+
 - ⏳ Carry the external review verdict onto the record
   automatically at self-authored gates, instead of the founder
   pasting it. (2026-07-22, Claude Code)
+
 - ⏳ WATCH — community reports suggest interactive web sessions
   lose their connectors while routine sessions keep them, which
   would make the rescue vehicle the sturdier species and reopen
   the list-native-beats-sturdy choice. One data point plus one
   filed report; do not act yet. (2026-07-22, Claude Code) →
   [D-047](record/DECISIONS.md#d-047--cloud-born-cockpit)
+
 - ⏳ DEFECT — `npm run count:runs` fails at the work PC's Git Bash
   while the same script run directly succeeds; the npm wrapper's
   PATH leaves `execFileSync("gh", …)` unable to resolve the
@@ -607,41 +666,37 @@
   quoted from captured output — a detached background check lost
   its exit code and aged into a false all-clear. (2026-07-19,
   Claude Code) → [ship](skills/ship.md)
+
 - ⏳ WATCH — the home PC once had no local `main` branch at
   pickup, healed by rebuilding from origin, cause unknown.
   (2026-07-16, Claude Code)
+
 - ⏳ Give lanes a separate bot identity so PR comments do not post
   as the founder's own account. (2026-07-16, Claude Code)
+
 - ⏳ Archive unrecognized cloud sessions on sight, as standing
   hygiene. (2026-07-16, Claude Code)
+
 - ⏳ Prefer supervisor-backed background sessions over bare
   detached spawns for local lanes. (2026-07-16, Claude Code) →
   [parallel-lanes](skills/parallel-lanes.md#vehicles)
+
 - ⏳ Name Agent View in the lane vehicles list. (2026-07-16,
   Claude Code) →
   [parallel-lanes](skills/parallel-lanes.md#vehicles)
+
 - ⏳ Enforce the deny rails as PreToolUse hooks that block
   dangerous tool calls before they run, not only as settings
   permissions. (2026-07-16, Claude Code)
+
 - ⏳ Add a `check:board` CI gate machine-verifying the board's
   glance-line numbers against ROADMAP checkbox counts — weigh
   against the board's deliberate least-authoritative status.
   (2026-07-16, Web) → [DASHBOARD](DASHBOARD.md)
+
 - ⏳ Write a helper that emits the exact GitHub heading slug for a
   new D-number, so the heading and every link to it are born
   matching. (2026-07-14, Claude Code)
-- ⏳ Licence or export the world-facts asset someday — revision
-  series, forecast-vs-actual calibration pairs, coverage maps.
-  Possible only because storage is licence-segmented.
-  (2026-06-12, Web) →
-  [D-015](record/DECISIONS.md#d-015--data-asset-law)
-- ⏳ Support multi-origin trips and group preference merging —
-  friends converging from different cities, several travellers'
-  inputs merged into one plan. (2026-06-12, Web)
-- ⏳ Build a reachability globe showing how far the traveller's
-  max-travel-hours reaches; open question, heuristic distance
-  rings versus true flight-time isochrones. (2026-06-12, Web)
-  **STANDING:** a Roam product idea, not workshop machinery — it waits on phase 3 and its own triage.
 
 - ⏳ Add `paths-ignore: docs/**` so docs-only PRs skip the full CI
   run — BLOCKED as written: branch protection requires the
@@ -655,6 +710,7 @@
 The outcome ledger — one line each, newest first. A closed idea
 keeps its answer, never its narrative.
 
+- 🟢 DECIDE HEADINGS ARE TAGGED — every new decide heading opens with `[product]` or `[workshop]`, forward-only, no past heading touched because a heading is frozen at mint. Ruled at the next product decide exactly as the line asked, and [D-086](record/DECISIONS.md#d-086--workshop-the-product-first-window) is the first heading to carry a tag. → [D-086](record/DECISIONS.md#d-086--workshop-the-product-first-window)
 - 🟢 THE DESIGN-REVIEW GATE HAS MOTION EYES — for motion-intensive surfaces it now records VIDEO or a TRACE of the opening moment plus one interaction, at 375 and 1440, attached to the findings; stills stay the composition check, and a session that cannot capture says so and marks every timing question UNVERIFIED. Built, not filed — and the capability was the hard half: the recording tools exist ONLY when the playwright MCP is registered with `--caps devtools`, which the first draft of this work did not do, so the duty would have degraded silently to stills. The registration now carries it, the agent's allowlist names the recording tools, and all fourteen tools it names were checked against the live server. Duty and capability both live in [machine-setup step 12](skills/machine-setup.md#one-time-per-machine); the work PC's copy was rewritten from that master and proven identical by extraction and diff. → [#352](https://github.com/wsher0901/roam/pull/352)
 - 🟢 THE TASTE PASS RAN AND THE DIRECTION IS NAMED — `place-first`: the plan lives on a living map, place is the ground, provenance pins to place. Chosen from a LIVE probe after a first round of static candidates was rejected for varying the typeface inside one metaphor; the pair (Archivo · Public Sans · JetBrains Mono) is ratified as worn, two reference slots are seeded by the picked probe, and the COLOUR TOKENS plus three slots stay reserved and unruled. → [DESIGN](DESIGN.md) · [#349](https://github.com/wsher0901/roam/pull/349)
 - 🟢 The gate window no longer lies about what the founder owes — [ship §6](skills/ship.md#6--the-gate) now repaints the board before rendering the gate report, as a DASHBOARD-only micro-PR, the same carve-out the tail already uses. Seen three times in two days before it was written down.
