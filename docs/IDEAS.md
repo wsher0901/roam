@@ -53,6 +53,20 @@ closes. A line here that a product bench genuinely needs in order to
 proceed rides that bench as a recorded deviation (ruling 1's
 exception) — it is not lifted back for its own sake.
 
+- ⏳ NOTHING CHECKS THE DERIVATION LAW — derived values (counts,
+  totals, statuses) must be computed from source at render time,
+  and no gate verifies that any of them were. Every asserted count
+  in the corpus is correct TODAY — census 66/70, HOME thirteen
+  sections, board needs-you 1, RECENT 5, ledger 141↔141 — but the
+  system audit established that BY HAND, so the law holds by
+  diligence and would keep holding right up until it quietly
+  didn't. A real gate needs each literal to declare what it derives
+  FROM; inventing that notation is a bench, not a rider, which is
+  why this is parked rather than fixed.
+  (2026-09-10, the system audit —
+  [#362](https://github.com/wsher0901/roam/pull/362)) →
+  [LAWS §Knowledge & tracking](LAWS.md#knowledge--tracking)
+
 - ⏳ The gh api write denies (settings.json, PR #355) retire the
   cockpit's R2(b) rung for WRITE acts — open a PR, apply a label,
   merge. Reads still work. When flights resume, re-grant inside the

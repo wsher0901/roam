@@ -40,10 +40,24 @@ claim read.
 ruling 1 forbids workshop benches until
 [V1.S1](../../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
 closes, and this bench is entirely workshop. **The founder
-suspended it explicitly — "audit and fix" — on 2026-09-10.** The
-entry is not amended and the window is not lifted for anything
-else; this is one named exception, recorded here so it is not
-mistaken for the window having quietly lapsed.
+suspended it explicitly — "audit and fix" — on 2026-09-10.**
+
+**THE SUSPENSION IS NOW ON THE RECORD, in the entry's own words**
+([D-086](../DECISIONS.md#d-086--workshop-the-product-first-window),
+amendment line): "2026-09-10 — the founder suspended the window for
+one workshop bench, chore/system-audit (#362), to fix the machinery
+the Web full-pass validation listed; the window resumes at its
+merge." Three things follow, and they bound this bench exactly:
+
+- **The suspension is for THIS bench and no other.** No second
+  workshop bench is born under it.
+- **The window RESUMES AT THIS BENCH'S MERGE** — not at
+  [V1.S1](../../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
+  close, and not by anyone deciding it has lapsed.
+- **The scope is the machinery the Web full-pass validation
+  listed**, which is why this bench turned from audit-and-file into
+  fix-everything: the founder ruled that every listed workshop item
+  is fixed before any product bench reopens.
 
 ## Out of scope
 
@@ -87,6 +101,34 @@ mistaken for the window having quietly lapsed.
 - [ ] The honest enforcement picture is written down — which
       promises machinery keeps, and which rest on compliance.
 - [ ] Full CI mirror green; pushed head's Actions green.
+
+**AND THE FIX-EVERYTHING RIDERS,** added 2026-09-10 when the
+founder ruled the listed items fixed rather than filed:
+
+- [ ] **R1 — the merge-gate claim.** One home says what the SERVER
+      refuses and what only BEHAVIOUR supplies, including that auto
+      mode adjudicates `gh pr merge` outside a ritual without a
+      prompt. Every "physical gate" sentence swept.
+- [ ] **R2 — the rails run on both shells.** Every tracked
+      `Bash(...)` rule has a `PowerShell(...)` twin; JSON parses;
+      counts equal in both lists; no allow begins `gh pr merge`;
+      deny is a superset.
+- [ ] **R3 — the hook stops sweeping.** `git add -A` → `git add -u`;
+      untracked paths named in the message, never committed; proved
+      on a scratch branch.
+- [ ] **R4 — the weave gate.** A bare D-number in a living doc
+      fails CI naming file:line; every offender on main linked;
+      LAWS' weave rule says check:links enforces it; proved
+      red-then-green.
+- [ ] **R5 — dependabot [#357](https://github.com/wsher0901/roam/pull/357).**
+      Reformatted for prettier 3.9, all 12 bumps read and reported
+      by a non-author seat, merged on the founder's word.
+- [ ] **R6 — the suspension on the record.** This section, the
+      memory, and
+      [D-086](../DECISIONS.md#d-086--workshop-the-product-first-window)'s
+      amendment line.
+- [ ] **R7 — F3 parked.** One
+      [IDEAS](../../IDEAS.md) Parked line; not fixed here.
 
 ## Deviations
 
