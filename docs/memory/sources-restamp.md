@@ -1,13 +1,12 @@
 ---
 type: memory
 id: sources-restamp
-updated: 2026-09-11 · bench birth · work PC control tower
+updated: 2026-09-11 · canary claim · work PC agent-team lane B
 ---
 # sources-restamp — the three weather spikes, re-run and restamped
 
 ## Status
-bench ready, no worker yet — birthed 2026-09-11 by the work PC
-control tower.
+claimed by work PC agent-team lane B — 2026-09-11
 
 ## What this task is
 [SOURCES](../data/SOURCES.md)'s three weather spike stamps and its
