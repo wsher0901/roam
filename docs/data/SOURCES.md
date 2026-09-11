@@ -35,12 +35,13 @@ Manual: [HOME §Reading the data files](../HOME.md#reading-the-data-files)
   Standard (fixed monthly, 1M calls/mo) — budgeted as the go-to-market
   switch, no code change (same API, keyed endpoint).
 - retention_rights: store-raw. license_class: CC-BY-4.0 (verified
-  2026-06-12 at open-meteo.com/en/terms). Attribution: credit
+  2026-09-11 at open-meteo.com/en/terms). Attribution: credit
   Open-Meteo (and it credits underlying model providers). CC-BY is
   asset-layer safe: storage, revision series, and internal derivatives
   allowed with attribution; no share-alike contamination.
-- Spike: scripts/spikes/weather-forecast.mjs — run 2026-06-12,
-  Reykjavik, all Dictionary keys present, 7-day hourly payload.
+- Spike: scripts/spikes/weather-forecast.mjs — run 2026-09-11,
+  Reykjavik, all 14 hourly Dictionary keys present (zero missing)
+  plus daily uv_index_max, 7-day hourly payload.
 - Alternatives rejected: OpenWeatherMap (free-tier data CC BY-SA —
   share-alike risk for the asset layer per [D-015](../record/DECISIONS.md#d-015--data-asset-law); re-verify if ever
   reconsidered); MET Norway (CC-BY 4.0, solid — kept as rung-1 BACKUP
@@ -66,9 +67,10 @@ Manual: [HOME §Reading the data files](../HOME.md#reading-the-data-files)
   cached effectively forever, so call volume is trivial.
 - retention_rights: store-raw. license_class: CC-BY-4.0. Attribution:
   Open-Meteo + Copernicus/ECMWF (ERA5).
-- Spike: scripts/spikes/weather-climatology.mjs — run 2026-06-12,
-  Reykjavik October normals computed from 10y ERA5 (mean max 6.8 °C,
-  18 rain days — sane values).
+- Spike: scripts/spikes/weather-climatology.mjs — run 2026-09-11,
+  Reykjavik October normals computed from 10y ERA5, 3,653 days of
+  daily history returned (mean max 6.8 °C, mean min 2.8 °C,
+  18.0 rain days — sane values).
 - Alternatives rejected: Meteostat (CC BY-NC — non-commercial-only
   kills product use; [D-015](../record/DECISIONS.md#d-015--data-asset-law) disqualifier); NOAA NCEI normals (US-only —
   rung 2, unnecessary given rung-1 coverage); raw Copernicus CDS
@@ -93,7 +95,7 @@ Manual: [HOME §Reading the data files](../HOME.md#reading-the-data-files)
 - Cost: free. Mandatory User-Agent header identifying the app.
 - retention_rights: store-raw. license_class: US-Gov public domain.
   Attribution: courtesy credit ("Source: NWS").
-- Spike: scripts/spikes/weather-alerts.mjs — run 2026-06-12, 2 active
+- Spike: scripts/spikes/weather-alerts.mjs — run 2026-09-11, 3 active
   FL alerts, full payload keys confirmed.
 - Alternatives rejected: commercial CAP aggregators (cost without V1
   benefit); scraping national met services (ToS + fragility).

@@ -6,7 +6,7 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-09-10 · 22:23 UTC by ship's weld · from work PC
+Painted 2026-09-11 · 14:34 UTC by ship's weld · from work PC
 THE PRODUCT-FIRST WINDOW IS OPEN AGAIN — it was suspended for ONE
 bench, [#362](https://github.com/wsher0901/roam/pull/362), and
 RESUMED AT ITS MERGE
@@ -14,7 +14,8 @@ RESUMED AT ITS MERGE
 amendment line). No workshop bench until
 [V1.S1](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
 closes.
-Clean floor — the audit shipped · needs-you 2 ·
+THE TEST FLIGHT IS LANDING — four product benches: two welded, two
+in repair after the external review · needs-you 2 ·
 git outranks this board.
 How to read it → [HOME §Reading the board](HOME.md#reading-the-board)
 
@@ -31,33 +32,16 @@ How to read it → [HOME §Reading the board](HOME.md#reading-the-board)
    → [machine-setup step 12](skills/machine-setup.md#one-time-per-machine)
    · [D-084](record/DECISIONS.md#d-084--the-global-design-stack)
 
-2. 🟡 **THE HOME PC'S PERMISSION RAILS WERE NEVER FIXED** — the
-   same shape as the line above, and found by the same audit. The
-   2026-09-10 fix that ended the constant prompting rewrote
-   `~/.claude/settings.json` ON THE WORK PC: the `autoMode`
-   block that described a DIFFERENT repository, the
-   `blockReadsOutsideWorkingDirectories` flag, and the missing
-   PowerShell twins. That file lives OUTSIDE the repo, so the home
-   PC still carries the old one and nothing in git can say
-   otherwise. The tracked project rails now mirror both shells and
-   travel with the clone
-   ([#362](https://github.com/wsher0901/roam/pull/362)), so the
-   home PC gets those free — but the user-scope file, which is what
-   makes the fix apply in EVERY directory, does not travel.
-   **[machine-setup](skills/machine-setup.md) carries no master for
-   it**, which is why this is a needs-you rather than a step:
-   deciding whether that master should exist is a founder call, and
-   the product-first window says it is not a bench today.
-   (since 09-10)
-   → [the audit's story](record/history/workshop/mechanism/system-audit.md)
-
-Not counted above, because they block nothing today and wait on you
-whenever you want them: **the colour tokens and three reference
-images.** The taste pass answered the direction and the font pair;
-it did NOT answer colour, so the palette stays reserved and unruled
-rather than inherited from the probe you picked — a seat may use
-the probe's working values task-locally, but proposing a palette as
-Roam's stops and asks. → [DESIGN](DESIGN.md)
+2. 🟡 **THE HOME PC NEEDS THE WORK PC'S USER-SCOPE PERMISSIONS** —
+   carry the work PC's user-scope permissions block
+   (`~/.claude/settings.json`) by paste when you next sit there.
+   **There is no master and there should not be one**: the tracked
+   file is the rail inside the repo and it travels with the clone
+   ([#362](https://github.com/wsher0901/roam/pull/362)), while user
+   scope is personal by design — it applies in every directory, not
+   just this one, so it is not the repo's to own. Ruled by the Web
+   review, 2026-09-11. (since 09-10)
+   → [machine-setup](skills/machine-setup.md#one-time-per-machine)
 
 ## The baton
 
@@ -68,36 +52,58 @@ Last flight: LANDED 2026-08-04 21:16 UTC via MANUAL-LAND.
 
 ## In flight
 
-Nothing flying, no lanes, no bench open. This sitting's three benches
-all merged — [#355](https://github.com/wsher0901/roam/pull/355),
-[#356](https://github.com/wsher0901/roam/pull/356) and
-[#362](https://github.com/wsher0901/roam/pull/362) — plus the
-dependabot group [#357](https://github.com/wsher0901/roam/pull/357).
-The four V1.S1 benches [#358](https://github.com/wsher0901/roam/pull/358)–[#361](https://github.com/wsher0901/roam/pull/361)
-sit at birth, untouched by the audit and still claimable.
+**THE TEST FLIGHT — four product benches, born bench-first from
+`a893524` and run as an agent team with the founder at the desk.**
+The batched external Web review
+([D-086](record/DECISIONS.md#d-086--workshop-the-product-first-window)
+ruling 3, extended to this flight) passed two and returned repairs
+on two.
+
+- [#363](https://github.com/wsher0901/roam/pull/363)
+  design-reference-note — **MERGED.**
+- [#364](https://github.com/wsher0901/roam/pull/364) sources-restamp
+  — **MERGED.**
+- [#365](https://github.com/wsher0901/roam/pull/365) holding-page —
+  **REPAIR**: the self-referential `--font-sans` token that put the
+  whole screen in the browser's default serif, the leftover
+  create-next-app assets, and the font-swap loading state ruled
+  HANDLED rather than absent.
+- [#366](https://github.com/wsher0901/roam/pull/366) pre-s3-rulings
+  — **REPAIR**: both `BLOCKED:` questions answered, T2 gated on T1
+  AND [V1.S2.T4](ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1),
+  and the path accepted with a clause saying why it adds one edge
+  rather than a stage coupling.
+
+The four V1.S1 benches
+[#358](https://github.com/wsher0901/roam/pull/358)–[#361](https://github.com/wsher0901/roam/pull/361)
+still sit at birth, untouched and claimable.
 
 ## Working on
 
-**NOTHING OPEN — and the window is why that matters.**
-[V1.S1](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
-T3–T6 are next and they are the only thing the workshop may open.
+**THE TEST FLIGHT'S TWO REPAIRS** — [#365](https://github.com/wsher0901/roam/pull/365)
+and [#366](https://github.com/wsher0901/roam/pull/366), both on the
+external review's instruction. Each takes one tower commit, then the
+review word again on its new head.
 
-**THE WINDOW WAS SUSPENDED ONCE AND HAS RESUMED.** The founder
-suspended it for a single bench —
-[#362](https://github.com/wsher0901/roam/pull/362), to fix the
-machinery a Web full-pass validation listed — and it resumed at that
-bench's merge. The suspension is on the record as a dated amendment
-line, not a memory, so no later seat can mistake it for the window
-having lapsed.
+**WHAT THE FLIGHT WAS FOR.** It was the dress rehearsal for
+[V1.S1](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
+T3–T6 — the point was the vehicle, not the payload. The canary
+handshake was the thing being tested, after 2026-09-10 dispatched
+four lanes and acked none: all three lanes acked in **4.0s, 2.6s and
+2.6s**, inside a ten-minute window, because the acks were pre-staged
+as a watcher armed BEFORE dispatch. The window is per-lane; ack
+capacity is shared.
 
 **THE PRODUCT-FIRST WINDOW.**
 [D-086](record/DECISIONS.md#d-086--workshop-the-product-first-window)
 closes the workshop to new benches until
 [V1.S1](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
-closes, puts the ceremony on a diet, batches the T3–T6 review, and
-splits the inbox so §Open holds product work only. It expires on
+closes, puts the ceremony on a diet, batches the review, and splits
+the inbox so §Open holds product work only. It expires on
 [V1.S1](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)'s
-own checkboxes — nothing has to remember to end it.
+own checkboxes — nothing has to remember to end it. It was suspended
+once, for [#362](https://github.com/wsher0901/roam/pull/362), and
+resumed at that bench's merge.
 
 The standing order
 ([D-060](record/DECISIONS.md#d-060--the-three-phase-standing-order),
@@ -122,6 +128,23 @@ one phase per line:
 **Completed** — the last five; the full chronology is
 [the ledger](record/history/README.md#the-ledger).
 
+- **A GRADE RESTING ON A FETCH NOBODY RE-RAN** — three weather
+  spikes re-run after ninety-one days and four stamps refreshed with
+  today's OBSERVED values (14 keys, 3,653 days, 3 active alerts
+  where June saw 2). No grade or coverage claim moved. The critic
+  caught that the licence stamp alone had no re-runnable artifact;
+  the page's own sentences are now pasted verbatim, and the spec was
+  widened because a bench meeting the old contract would still have
+  shipped the hole.
+  [#364](https://github.com/wsher0901/roam/pull/364)
+- **THE NOTE THAT DESCRIBED A FOLDER THAT NO LONGER EXISTED** —
+  [DESIGN §Reference images](DESIGN.md#reference-images) said the
+  two rejected taste probes sat beside the picked one, "linked from
+  that folder's index". All three files had been deleted on
+  2026-09-10; the paragraph now says so, and the old line's one true
+  idea — that no reference slot ever pointed at the losers — becomes
+  the reason the deletion was safe.
+  [#363](https://github.com/wsher0901/roam/pull/363)
 - **DOES THE MACHINERY DO WHAT IT SAYS?** — the audit that became a
   fix. The merge gate's real answer written down (the server refuses
   four things and can require no approval while one account owns
@@ -142,14 +165,6 @@ one phase per line:
   permanent board diet, and an inbox split. Its deferral classifier
   was wrong twice before it shipped, both caught by review.
   [#355](https://github.com/wsher0901/roam/pull/355)
-- **SUPPLY LINES, AND A GATE THAT CAN SEE MOTION** — four shadcn
-  registries under an arrival law, Recharts settled as the chart
-  layer, and the design-review agent given video and trace capture.
-  [#352](https://github.com/wsher0901/roam/pull/352)
-- **ROAM HAS A DIRECTION — `place-first`** — the plan on a living
-  map; faces ratified as worn, weights and colour deliberately not.
-  [#349](https://github.com/wsher0901/roam/pull/349)
-
 **Issues** — none with a home nowhere else.
 
 Every line this section used to carry now lives at its own home —
@@ -167,6 +182,9 @@ S1 · Data Definition · 2/7 ██░░░░░
 S2 · Skeleton & design · 3/5 ███░░
 S3–S8 · queued in order · 0/22
 
+Unchanged by this weld: the test flight's benches are slug-keyed, so
+none of them ticks a roadmap box. Ticks are ship's alone.
+
 ## Web + Design
 
 - (Web) "GitHub workflow protocol and web instructions setup" — the
@@ -181,10 +199,14 @@ S3–S8 · queued in order · 0/22
 
 ## Next
 
-**RESTART CODE FIRST** — the permission rails
-([#362](https://github.com/wsher0901/roam/pull/362)) load at session
-start, so this session is still running on the old ones.
+**THE TWO REPAIRS, THEN THE REVIEW WORD AGAIN.**
+[#365](https://github.com/wsher0901/roam/pull/365) and
+[#366](https://github.com/wsher0901/roam/pull/366) each take one
+tower commit; a new head voids that PR's verdict, so each goes back
+to the Web surface for "review" on its new sha. Merge words stay
+per-PR.
 
 Then **[V1.S1](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
-T3–T6 via the chooser** — four benches already sit at birth as
-[#358](https://github.com/wsher0901/roam/pull/358)–[#361](https://github.com/wsher0901/roam/pull/361).
+T3–T6 for real** — four benches already sit at birth as
+[#358](https://github.com/wsher0901/roam/pull/358)–[#361](https://github.com/wsher0901/roam/pull/361),
+and the flight just proved the vehicle that will fly them.
