@@ -2,12 +2,12 @@
 type: spec
 id: holding-page
 title: The template goes; a holding page takes its place
-status: open
+status: shipped
 stage: V1.S2
 branch: feat/holding-page
 pr: 365
 opened: 2026-09-11
-shipped: —
+shipped: 2026-09-11
 ---
 # holding-page — the first thing at the public URL that is ours
 

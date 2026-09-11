@@ -1,12 +1,17 @@
 ---
-type: memory
+type: history
 id: holding-page
-updated: 2026-09-11 · critic repairs · work PC agent-team lane C
+shipped: 2026-09-11 17:32 UTC
+pr: #365
+synthesis: deferred — D-086
 ---
 # holding-page — the create-next-app template goes
 
 ## Status
-complete, awaiting merge — 2026-09-11
+shipped — merged [#365](https://github.com/wsher0901/roam/pull/365) on
+2026-09-11, after the external Web review re-issued PASS on the
+repaired head and the design-review gate was re-run against the
+repaired surface.
 
 ## What this task is
 The deployed URL showed the create-next-app template: the Next.js
@@ -19,9 +24,9 @@ planning that checks the details.", centred, nothing else — with
 the two metadata fields set to match.
 
 What it deliberately does NOT do: change type (
-[V1.S2.T5](../ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)
+[V1.S2.T5](../../../../ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)
 rules type and the Geist loads stay untouched), add tokens or
-colour, add components, or add motion. [DESIGN](../DESIGN.md) is the
+colour, add components, or add motion. [DESIGN](../../../../DESIGN.md) is the
 taste authority and its reserved slots stay reserved.
 
 ## Pending issues
@@ -62,7 +67,7 @@ carried them instead.
    — verified in the built CSS, not inferred from the source.
    **A BROKEN TOKEN IS NOT A FONT CHANGE**, which is why this does
    not trespass on
-   [V1.S2.T5](../ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1):
+   [V1.S2.T5](../../../../ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1):
    T5 still rules type, and this only makes the face the repo
    already chose actually reach the screen.
 2. **The tab carried the Vercel triangle — REPAIRED.**
@@ -73,10 +78,10 @@ carried them instead.
    `/favicon.ico` now returns 404, so the tab falls back to the
    browser's blank glyph. **No Roam mark was drawn** — the DIRECTION
    slot stays reserved to the founder
-   ([D-084](../record/DECISIONS.md#d-084--the-global-design-stack)),
+   ([D-084](../../../DECISIONS.md#d-084--the-global-design-stack)),
    and deleting is the move that adds nothing.
    `public/spikes/taste/place-first.html` is deliberately kept: it
-   seeds [DESIGN](../DESIGN.md#reference-images) reference slots 3
+   seeds [DESIGN](../../../../DESIGN.md#reference-images) reference slots 3
    and 4.
 
    The spec's "no template remnant anywhere" box had enumerated five
@@ -137,11 +142,11 @@ than a still can sample it, which is itself the finding: the
 mitigation works, and the state is real but cheap.
 
 **TWO NEW FINDINGS, both 🟡, both belonging to
-[V1.S2.T5](../ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)
+[V1.S2.T5](../../../../ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)
 rather than here.**
 
 1. **The screen renders Geist, and
-   [DESIGN §Typography](../DESIGN.md#typography) ratifies Archivo
+   [DESIGN §Typography](../../../../DESIGN.md#typography) ratifies Archivo
    for display and Public Sans for body.** This became VISIBLE only
    because the token was fixed — until then the cascade fell to
    Times and the question could not be asked. The reviewer filed it
@@ -178,7 +183,7 @@ box, and the merge word.
 ## The story
 Born bench-first from freshly pulled `main` (`a893524`) as lane C of
 the test flight — the dress rehearsal for
-[V1.S1](../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
+[V1.S1](../../../../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
 T3–T6, run as an agent team with the founder at the desk. This is
 the flight's only bench that renders pixels, so it is the one that
 faces the design-review gate.
@@ -188,8 +193,8 @@ Canary `f39b798`; the baton-holder's ack landed on origin as
 
 **CI IS THE ARBITER AND IT IS GREEN — named here because four local
 greens are not a substitute for it.**
-[LAWS §Workflow](../LAWS.md#workflow-non-negotiable) and
-[D-038](../record/DECISIONS.md#d-038--ci-is-the-arbiter) are
+[LAWS §Workflow](../../../../LAWS.md#workflow-non-negotiable) and
+[D-038](../../../DECISIONS.md#d-038--ci-is-the-arbiter) are
 explicit that local green never suffices; the PUSHED commit's
 Actions run decides. Every pushed head of this bench has run green,
 most recently `checks` **pass** in 37s — run **34605432484** on head
@@ -199,7 +204,7 @@ comment rather than guessed at here.
 
 **THE STATES LAW — AND THE ANSWER IS NOT "ONE STATE", WHICH IS WHAT
 THIS BENCH FIRST WROTE.**
-[DESIGN §States](../DESIGN.md#states--every-screen-every-time) and
+[DESIGN §States](../../../../DESIGN.md#states--every-screen-every-time) and
 the machine's global design law demand loading · empty · error ·
 long-content · mobile from every SCREEN. The opening reading
 counted the COMPONENT: `Home()` takes no props, fetches nothing,
@@ -250,14 +255,14 @@ the engine could check.
 **Colour: zero decisions made.** `globals.css` already applies
 `bg-background text-foreground` to `body` in its base layer, so the
 page carries NO colour class at all and inherits. That keeps
-[DESIGN §Color & tokens](../DESIGN.md#color--tokens)'s reserved
+[DESIGN §Color & tokens](../../../../DESIGN.md#color--tokens)'s reserved
 palette reserved by not touching it, rather than by picking
 something defensible.
 
 **Type: a task-local call, recorded as one.**
-[DESIGN §Typography](../DESIGN.md#typography) ratifies Archivo /
+[DESIGN §Typography](../../../../DESIGN.md#typography) ratifies Archivo /
 Public Sans, which this bench does NOT load —
-[V1.S2.T5](../ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)
+[V1.S2.T5](../../../../ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)
 rules type and the Geist loads stay untouched. Against a
 still-placeholder face, the hierarchy half of the law is what does
 the work: `text-6xl` (60px) over `text-base` (16px) is a **3.75×
@@ -266,7 +271,7 @@ scale jump**, above the law's 3× floor. Weight went to
 names — chosen over the `font-semibold` (600) the template used,
 which is precisely the mid-weight the law says not to live at. Body
 copy stays at the default weight, which
-[DESIGN §Typography](../DESIGN.md#typography) leaves task-local and
+[DESIGN §Typography](../../../../DESIGN.md#typography) leaves task-local and
 unruled.
 
 **WHAT THAT PARAGRAPH DESCRIBES IS THE STYLESHEET, NOT THE SCREEN.**
@@ -309,7 +314,7 @@ they change nothing the browser renders.
 
 **HOW THE PREVIEW WAS VERIFIED, stated precisely, because "the
 preview renders it" is a status claim and the VERIFICATION LAW
-([LAWS §Knowledge & tracking](../LAWS.md#knowledge--tracking)) asks
+([LAWS §Knowledge & tracking](../../../../LAWS.md#knowledge--tracking)) asks
 who checked and how.** An ANONYMOUS request cannot see it: Vercel
 Authentication is on for the project
 (`all_except_custom_domains`), so plain `curl` — and equally a
@@ -348,8 +353,8 @@ is for, and why it found in minutes what three fetches could not.
   file list.
 - Preview: `https://roam-git-feat-holding-page-wsher0901s-projects.vercel.app`
   — behind Vercel SSO; see Pending issues for the route.
-- [DESIGN §States](../DESIGN.md#states--every-screen-every-time) —
+- [DESIGN §States](../../../../DESIGN.md#states--every-screen-every-time) —
   the law the two-state reading above answers.
-- [the spec](../record/specs/holding-page.md) — including the
+- [the spec](../../../specs/holding-page.md) — including the
   Done-means box this bench reports instead of ticking.
 - PR [#365](https://github.com/wsher0901/roam/pull/365).

@@ -6,7 +6,7 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-09-11 · 14:34 UTC by ship's weld · from work PC
+Painted 2026-09-11 · 17:33 UTC by ship's weld · from work PC
 THE PRODUCT-FIRST WINDOW IS OPEN AGAIN — it was suspended for ONE
 bench, [#362](https://github.com/wsher0901/roam/pull/362), and
 RESUMED AT ITS MERGE
@@ -14,8 +14,8 @@ RESUMED AT ITS MERGE
 amendment line). No workshop bench until
 [V1.S1](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
 closes.
-THE TEST FLIGHT IS LANDING — four product benches: two welded, two
-in repair after the external review · needs-you 2 ·
+THE TEST FLIGHT IS LANDING — four product benches, three welded and
+the fourth welding · needs-you 2 ·
 git outranks this board.
 How to read it → [HOME §Reading the board](HOME.md#reading-the-board)
 
@@ -64,15 +64,13 @@ on two.
 - [#364](https://github.com/wsher0901/roam/pull/364) sources-restamp
   — **MERGED.**
 - [#365](https://github.com/wsher0901/roam/pull/365) holding-page —
-  **REPAIR**: the self-referential `--font-sans` token that put the
-  whole screen in the browser's default serif, the leftover
-  create-next-app assets, and the font-swap loading state ruled
-  HANDLED rather than absent.
+  **MERGED.** The repairs landed and the design-review gate was
+  re-run against the repaired surface: Geist confirmed at the pixels
+  by letterform, `font-extralight` finally expressed, `/favicon.ico`
+  404, swap reflow measured zero.
 - [#366](https://github.com/wsher0901/roam/pull/366) pre-s3-rulings
-  — **REPAIR**: both `BLOCKED:` questions answered, T2 gated on T1
-  AND [V1.S2.T4](ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1),
-  and the path accepted with a clause saying why it adds one edge
-  rather than a stage coupling.
+  — **PASS re-issued, welds next.** Both `BLOCKED:` questions
+  answered in the payload.
 
 The four V1.S1 benches
 [#358](https://github.com/wsher0901/roam/pull/358)–[#361](https://github.com/wsher0901/roam/pull/361)
@@ -128,6 +126,14 @@ one phase per line:
 **Completed** — the last five; the full chronology is
 [the ledger](record/history/README.md#the-ledger).
 
+- **THE FIRST THING AT THE PUBLIC URL THAT IS OURS** — the
+  create-next-app template is gone; eight lines render Roam and one
+  sentence. The design-review gate then found what three
+  authenticated fetches could not: a token pointing at itself put
+  the whole screen in Times New Roman, on main as well. Fixed, six
+  template assets deleted, and the states law answered honestly at
+  two states rather than one.
+  [#365](https://github.com/wsher0901/roam/pull/365)
 - **A GRADE RESTING ON A FETCH NOBODY RE-RAN** — three weather
   spikes re-run after ninety-one days and four stamps refreshed with
   today's OBSERVED values (14 keys, 3,653 days, 3 active alerts
@@ -158,13 +164,6 @@ one phase per line:
   middleware bypass; a monthly grouped dependabot lane replaces the
   bench. One gap named rather than closed: majors still need a
   manual sweep. [#356](https://github.com/wsher0901/roam/pull/356)
-- **THE WORKSHOP GETS A DEADLINE** —
-  [D-086](record/DECISIONS.md#d-086--workshop-the-product-first-window)
-  opens the product-first
-  window: no workshop bench until V1.S1 closes, a ceremony diet, a
-  permanent board diet, and an inbox split. Its deferral classifier
-  was wrong twice before it shipped, both caught by review.
-  [#355](https://github.com/wsher0901/roam/pull/355)
 **Issues** — none with a home nowhere else.
 
 Every line this section used to carry now lives at its own home —
