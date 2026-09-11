@@ -5,7 +5,7 @@ title: Re-run the three weather spikes and restamp their dates
 status: open
 stage: V1.S1
 branch: docs/sources-restamp
-pr: —
+pr: 364
 opened: 2026-09-11
 shipped: —
 ---
@@ -78,18 +78,18 @@ date and TODAY's observed values:
 
 ## Done means
 
-- [ ] All three spikes were run today and their outputs are in
+- [x] All three spikes were run today and their outputs are in
       `docs/memory/sources-restamp.md`, each with the command that
       produced it.
-- [ ] The three `Spike: … run <date>` lines carry today's date and
+- [x] The three `Spike: … run <date>` lines carry today's date and
       today's observed values.
-- [ ] The `weather-forecast` licence line carries today's
+- [x] The `weather-forecast` licence line carries today's
       `verified <date>`.
-- [ ] No grade, freshness, coverage or cost claim changed — or the
+- [x] No grade, freshness, coverage or cost claim changed — or the
       bench is BLOCKED with the contradiction named.
-- [ ] The [IDEAS](../../IDEAS.md) T7 rider line is untouched.
-- [ ] `npm run check:links` passes.
-- [ ] The diff touches `docs/data/SOURCES.md`, this spec, and
+- [x] The [IDEAS](../../IDEAS.md) T7 rider line is untouched.
+- [x] `npm run check:links` passes.
+- [x] The diff touches `docs/data/SOURCES.md`, this spec, and
       `docs/memory/sources-restamp.md` — nothing else.
 
 ## Deviations
