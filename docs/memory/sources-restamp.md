@@ -96,6 +96,16 @@ freshness window, coverage claim or cost line was touched, and no
 `BLOCKED:` comment was owed. The diff is four lines in
 [SOURCES](../data/SOURCES.md), this memory, and the spec.
 
+**One gotcha, environmental and worth the next lane's minute.** A
+fresh agent-team worktree carries an EMPTY `node_modules`, so
+`npm run build` fails there with Next reporting "node_modules/next
+was removed, renamed, or has a broken symlink" — nothing to do with
+the diff. Vitest, ESLint and Prettier survive it by resolving up to
+the clone root; Next does not, because it fixes its workspace root
+at the worktree's own lockfile. `npm ci` in the worktree fixes it,
+and the build then passes clean. The full CI mirror is green here
+and on the pushed head.
+
 ## The spike runs, by command
 Run from the repository root on 2026-09-11. A cold reader re-runs
 these three commands and compares.
