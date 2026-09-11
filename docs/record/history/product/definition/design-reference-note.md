@@ -1,20 +1,24 @@
 ---
-type: memory
+type: history
 id: design-reference-note
-updated: 2026-09-11 · critic round · work PC agent-team lane A
+shipped: 2026-09-11 14:27 UTC
+pr: #363
+synthesis: deferred — D-086
 ---
 # design-reference-note — the reference-images note tells the truth
 
 ## Status
-complete, awaiting merge — 2026-09-11
+shipped — merged [#363](https://github.com/wsher0901/roam/pull/363) on
+2026-09-11, after the batched external Web review passed it on an
+independent clone.
 
-One paragraph in [DESIGN §Reference images](../DESIGN.md#reference-images)
+One paragraph in [DESIGN §Reference images](../../../../DESIGN.md#reference-images)
 is replaced, the full CI mirror is green locally, and
 [#363](https://github.com/wsher0901/roam/pull/363) is flipped ready.
 What is left is review and the founder's word.
 
 ## What this task is
-[DESIGN §Reference images](../DESIGN.md#reference-images) carried a
+[DESIGN §Reference images](../../../../DESIGN.md#reference-images) carried a
 paragraph claiming the picked taste probe's two rejected siblings
 "sit beside it … linked from that folder's index and marked there as
 not-picked". That was true when it was written and false by the time
@@ -26,18 +30,18 @@ alone in that folder as the seed for reference slots 3 and 4.
 The bench replaces that ONE paragraph with what is true — the
 deletion, its date and its PR; the probe standing alone; the losers'
 record living on in the
-[taste-pass spec](../record/specs/taste-pass.md) and its
-[history file](../record/history/product/definition/taste-pass.md).
-Nothing else in [DESIGN](../DESIGN.md) changes: not the direction,
+[taste-pass spec](../../../specs/taste-pass.md) and its
+[history file](taste-pass.md).
+Nothing else in [DESIGN](../../../../DESIGN.md) changes: not the direction,
 not the type pair, not the colour tokens, not a row of the slot
 table.
 
 ## Pending issues
 **One, and it is the founder's call rather than a defect.** Every
 Done-means box in
-[the spec](../record/specs/design-reference-note.md) is ticked
+[the spec](../../../specs/design-reference-note.md) is ticked
 against verified work, but the critic round below leaves finding 2
-open: [taste-pass spec](../record/specs/taste-pass.md) still carries
+open: [taste-pass spec](../../../specs/taste-pass.md) still carries
 nearly the same false sentence this bench exists to correct, and the
 new paragraph now points readers at that file. Editing a frozen spec
 is out of this bench's scope, so it goes to the founder at THE GATE
@@ -53,7 +57,7 @@ word, then ship.
 ## The story
 Born bench-first from freshly pulled `main` (`a893524`) as lane A of
 the test flight — the dress rehearsal for
-[V1.S1](../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
+[V1.S1](../../../../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
 T3–T6, run as an agent team with the founder at the desk. Canary
 pushed, ack read back from origin as a commit, then the payload.
 
@@ -110,7 +114,7 @@ file-by-file, after confirming the branch ref matched origin, and it
 could run neither `check:links` nor read the Actions run. So its
 verdict on WHAT THE DIFF SAYS is firsthand and its verdict on
 WHETHER THE DIFF PASSES is not — the second is the arbiter's
-([D-038](../record/DECISIONS.md#d-038--ci-is-the-arbiter)) and is
+([D-038](../../../DECISIONS.md#d-038--ci-is-the-arbiter)) and is
 recorded above. Its factual check of the deletion did NOT rest on
 this lane's say-so: it read
 `docs/record/history/workshop/definition/product-first.md`
@@ -131,7 +135,7 @@ reached the same 2026-09-10 that git metadata gave this lane.
    off-convention character would have been the same bug: U+2026 (…)
    and U+2013 (–) are ordinary repo convention, 95 and 290 uses
    elsewhere, and stay.
-2. 🟡 **[taste-pass spec](../record/specs/taste-pass.md) lines 52–54
+2. 🟡 **[taste-pass spec](../../../specs/taste-pass.md) lines 52–54
    still carry nearly the same false sentence** — "linked from that
    folder's index and marked there as not-picked". **NOT REPAIRED:**
    a spec is frozen record and editing one is outside this bench's
@@ -141,7 +145,7 @@ reached the same 2026-09-10 that git metadata gave this lane.
    REACHABLE BY A POINTER THIS BENCH ADDED** — the new paragraph
    sends readers to that file as the losers' surviving record, so a
    reader following the fix lands on the same claim it corrects.
-3. ⚪ **[DESIGN](../DESIGN.md) line 202 re-asserts live directory
+3. ⚪ **[DESIGN](../../../../DESIGN.md) line 202 re-asserts live directory
    contents** — "leaving `place-first.html` as the only file in
    `public/spikes/taste/`" is the same claim class that made the old
    paragraph go stale. **DISMISSED, with its reason:** the sentence
@@ -151,15 +155,15 @@ reached the same 2026-09-10 that git metadata gave this lane.
    dodge it would cost more than it buys.
 
 ## Where to look
-- [DESIGN §Reference images](../DESIGN.md#reference-images) — the
+- [DESIGN §Reference images](../../../../DESIGN.md#reference-images) — the
   replaced paragraph, mid-section, after "Run it, do not read it."
-- [the spec](../record/specs/design-reference-note.md) — the
+- [the spec](../../../specs/design-reference-note.md) — the
   contract, all seven Done-means boxes ticked.
 - [#363](https://github.com/wsher0901/roam/pull/363) — this bench's
   PR.
 - `public/spikes/taste/` — one file, `place-first.html`.
-- [taste-pass spec](../record/specs/taste-pass.md) ·
-  [taste-pass history](../record/history/product/definition/taste-pass.md)
+- [taste-pass spec](../../../specs/taste-pass.md) ·
+  [taste-pass history](taste-pass.md)
   — the losers' surviving record, and what the new text points at.
 - `897a28b` — the deleting commit;
   `git show 897a28b^:public/spikes/taste/index.html` still reads the

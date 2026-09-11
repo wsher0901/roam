@@ -2,12 +2,12 @@
 type: spec
 id: design-reference-note
 title: The reference-images note tells the truth about the losers
-status: open
+status: shipped
 stage: V1.S2
 branch: docs/design-reference-note
 pr: #363
 opened: 2026-09-11
-shipped: —
+shipped: 2026-09-11
 ---
 # design-reference-note — the rejected probes are gone, and the note still says they are there
 
