@@ -1,15 +1,19 @@
 ---
-type: memory
+type: history
 id: sources-restamp
-updated: 2026-09-11 · critic repair · work PC agent-team lane B
+shipped: 2026-09-11 14:33 UTC
+pr: #364
+synthesis: deferred — D-086
 ---
 # sources-restamp — the three weather spikes, re-run and restamped
 
 ## Status
-complete, awaiting merge — 2026-09-11
+shipped — merged [#364](https://github.com/wsher0901/roam/pull/364) on
+2026-09-11, after the batched external Web review passed it on an
+independent clone, its reviewer having re-run the spikes.
 
 All three weather spikes re-run today, the Open-Meteo terms page
-re-read, and the four stamps in [SOURCES](../data/SOURCES.md)
+re-read, and the four stamps in [SOURCES](../../../../data/SOURCES.md)
 carry today's date and today's observed values. Nothing
 contradicted a grade, freshness window, coverage claim or cost
 line, so nothing else moved and the bench never had to block.
@@ -20,7 +24,7 @@ was widened so the contract demands that of every re-verification
 rather than of spikes alone.
 
 ## What this task is
-[SOURCES](../data/SOURCES.md)'s three weather spike stamps and its
+[SOURCES](../../../../data/SOURCES.md)'s three weather spike stamps and its
 Open-Meteo licence line all read 2026-06-12. This bench re-runs
 `weather-forecast.mjs`, `weather-climatology.mjs` and
 `weather-alerts.mjs`, then restamps those four lines with today's
@@ -30,7 +34,7 @@ active-alert count.
 Nothing else moves. A grade, freshness window or coverage claim
 changes ONLY if a spike contradicts it, and then the bench STOPS
 with a `BLOCKED:` comment rather than editing it — a demotion takes
-evidence and a D-number. The [IDEAS](../IDEAS.md) T7 rider stays
+evidence and a D-number. The [IDEAS](../../../../IDEAS.md) T7 rider stays
 open: T7 re-runs every spike in the registry at consolidation,
 including the families that do not exist yet.
 
@@ -44,7 +48,7 @@ review and the merge word.
 ## The story
 Born bench-first from freshly pulled `main` (`a893524`) as lane B of
 the test flight — the dress rehearsal for
-[V1.S1](../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
+[V1.S1](../../../../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
 T3–T6, run as an agent team with the founder at the desk. Canary
 pushed, ack read back from origin as a commit
 (`airborne · work PC agent team · 2026-09-11`), then the work.
@@ -125,7 +129,7 @@ payload against the alerts "Confirmed keys", the terms page against
 the licence and cost lines. Nothing came back short, so no grade,
 freshness window, coverage claim or cost line was touched, and no
 `BLOCKED:` comment was owed. The diff is four lines in
-[SOURCES](../data/SOURCES.md), this memory, and the spec.
+[SOURCES](../../../../data/SOURCES.md), this memory, and the spec.
 
 **One gotcha, environmental and worth the next lane's minute.** A
 fresh agent-team worktree carries an EMPTY `node_modules`, so
@@ -244,11 +248,11 @@ line's free-tier limit to the first sentence, and the no-share-alike
 reading to the zero.
 
 ## Where to look
-- [SOURCES](../data/SOURCES.md) — the four restamped lines: the
+- [SOURCES](../../../../data/SOURCES.md) — the four restamped lines: the
   `weather-forecast`, `weather-climatology` and `weather-alerts`
   Spike lines, and the `weather-forecast` licence `verified` date.
 - `scripts/spikes/weather-forecast.mjs` ·
   `scripts/spikes/weather-climatology.mjs` ·
   `scripts/spikes/weather-alerts.mjs`.
-- [IDEAS](../IDEAS.md) — the T7 rider, deliberately untouched.
-- [the spec](../record/specs/sources-restamp.md) · PR #364.
+- [IDEAS](../../../../IDEAS.md) — the T7 rider, deliberately untouched.
+- [the spec](../../../specs/sources-restamp.md) · PR #364.

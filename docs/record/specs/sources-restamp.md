@@ -2,12 +2,12 @@
 type: spec
 id: sources-restamp
 title: Re-run the three weather spikes and restamp their dates
-status: open
+status: shipped
 stage: V1.S1
 branch: docs/sources-restamp
 pr: 364
 opened: 2026-09-11
-shipped: —
+shipped: 2026-09-11
 ---
 # sources-restamp — a grade resting on a fetch nobody re-ran
 
