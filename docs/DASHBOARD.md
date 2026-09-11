@@ -6,7 +6,7 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-09-11 · 14:28 UTC by ship's weld · from work PC
+Painted 2026-09-11 · 14:34 UTC by ship's weld · from work PC
 THE PRODUCT-FIRST WINDOW IS OPEN AGAIN — it was suspended for ONE
 bench, [#362](https://github.com/wsher0901/roam/pull/362), and
 RESUMED AT ITS MERGE
@@ -60,9 +60,9 @@ ruling 3, extended to this flight) passed two and returned repairs
 on two.
 
 - [#363](https://github.com/wsher0901/roam/pull/363)
-  design-reference-note — **PASS, welding now.**
+  design-reference-note — **MERGED.**
 - [#364](https://github.com/wsher0901/roam/pull/364) sources-restamp
-  — **PASS, welds next.**
+  — **MERGED.**
 - [#365](https://github.com/wsher0901/roam/pull/365) holding-page —
   **REPAIR**: the self-referential `--font-sans` token that put the
   whole screen in the browser's default serif, the leftover
@@ -128,6 +128,15 @@ one phase per line:
 **Completed** — the last five; the full chronology is
 [the ledger](record/history/README.md#the-ledger).
 
+- **A GRADE RESTING ON A FETCH NOBODY RE-RAN** — three weather
+  spikes re-run after ninety-one days and four stamps refreshed with
+  today's OBSERVED values (14 keys, 3,653 days, 3 active alerts
+  where June saw 2). No grade or coverage claim moved. The critic
+  caught that the licence stamp alone had no re-runnable artifact;
+  the page's own sentences are now pasted verbatim, and the spec was
+  widened because a bench meeting the old contract would still have
+  shipped the hole.
+  [#364](https://github.com/wsher0901/roam/pull/364)
 - **THE NOTE THAT DESCRIBED A FOLDER THAT NO LONGER EXISTED** —
   [DESIGN §Reference images](DESIGN.md#reference-images) said the
   two rejected taste probes sat beside the picked one, "linked from
@@ -156,11 +165,6 @@ one phase per line:
   permanent board diet, and an inbox split. Its deferral classifier
   was wrong twice before it shipped, both caught by review.
   [#355](https://github.com/wsher0901/roam/pull/355)
-- **SUPPLY LINES, AND A GATE THAT CAN SEE MOTION** — four shadcn
-  registries under an arrival law, Recharts settled as the chart
-  layer, and the design-review agent given video and trace capture.
-  [#352](https://github.com/wsher0901/roam/pull/352)
-
 **Issues** — none with a home nowhere else.
 
 Every line this section used to carry now lives at its own home —
