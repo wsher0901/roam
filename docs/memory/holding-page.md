@@ -128,15 +128,37 @@ worktrees, not about either lane.)
 **THE PREVIEW, AND THE SKIPPED DEPLOYMENT THAT LOOKS LIKE A MISSING
 ONE.** The PR's Vercel check reads "Canceled by Ignored Build Step"
 and the comment says "1 Skipped Deployment", which reads at a
-glance as no preview. It is not: the project's ignored build step
-skips commits that touch no app code, so the DOCS-ONLY diary commit
-was correctly skipped, while the PAYLOAD commit `95074b0` built and
-is READY. The branch alias therefore serves the payload build.
-Confirmed by fetching it rather than trusting the link — the
-response carries the title Roam, the description meta, an h1 of
-Roam, the one line, and ZERO anchor tags or template remnants.
-Later docs-only commits leave the preview pinned to `95074b0`,
-which is faithful: they change nothing the browser renders.
+glance as no preview. It is not. `vercel.json` carries an
+`ignoreCommand` — `git diff --quiet ${VERCEL_GIT_PREVIOUS_SHA:-HEAD^}
+HEAD -- . ':(exclude)docs' || exit 1` — which skips a build whose
+diff touches nothing outside `docs`. So the DOCS-ONLY commits were
+correctly skipped, while the PAYLOAD commit `95074b0` built and is
+READY, and the branch alias serves that build. Later docs-only
+commits leave the preview pinned to `95074b0`, which is faithful:
+they change nothing the browser renders.
+
+**HOW THE PREVIEW WAS VERIFIED, stated precisely, because "the
+preview renders it" is a status claim and the reliability law asks
+who checked and how.** An ANONYMOUS request cannot see it: Vercel
+Authentication is on for the project
+(`all_except_custom_domains`), so plain `curl` — and equally a
+browser-driving agent — gets a 302 to `vercel.com/sso-api` and
+renders Vercel's login page. **This lane did reach the real page,
+by an AUTHENTICATED route, and that route is the thing worth
+writing down:** the Vercel MCP surface (`web_fetch_vercel_url`)
+answers with a 302 whose `Location` carries a fresh
+`?_vercel_share=<token>`; fetching the preview with that parameter
+AND the cookie engine enabled (`curl -c`/`-b`, so the SSO nonce
+cookie survives the redirect chain) returns 200 and the page
+itself. Done twice, with two different tokens — the tokens are
+short-lived and single-use, and the first was already dead minutes
+later, which is why the route rather than any token is what is
+recorded here. Both fetches returned the title Roam, the
+description meta, an h1 of Roam, the one line, and ZERO anchor tags
+or template remnants. **The control tower verified the same payload
+deployment independently through its own authenticated Vercel
+surface and reported the identical markup** — so the claim rests on
+two separate checks, by two seats, not on one seat trusting a link.
 
 ## Where to look
 - `src/app/page.tsx` (8 lines) · `src/app/layout.tsx` (two metadata
