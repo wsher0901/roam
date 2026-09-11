@@ -1,5 +1,14 @@
 ## Open
 
+- ⏳ V1.S2.T5 rider — the shell renders Geist today while
+  [DESIGN §Typography](DESIGN.md#typography) ratifies Archivo +
+  Public Sans, and next/font's swap fallback is metric-adjusted
+  Arial, a banned default;
+  [V1.S2.T5](ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)
+  resolves both when it owns type. (2026-09-11, holding-page review,
+  [#365](https://github.com/wsher0901/roam/pull/365)) →
+  [DESIGN §Typography](DESIGN.md#typography)
+
 - ⏳ Give [ENGINE](ENGINE.md) the right frontmatter — it reads
   `type: spec` though it is a living consolidation. The founder's
   word: it stays for now, resolved at the first engine bench,
