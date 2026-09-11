@@ -65,8 +65,13 @@ the Web full-pass validation of 2026-09-10.
    task list, not reasoned about in the abstract.
 2. Append D-087 in decide's exact format, heading `## D-087 —
    [product] The model boundary and three plan corrections`.
-3. Ripple, SAME commit: ENGINE §11, §2, §12; ROADMAP V1.S3 and
-   V1.S8.
+3. Ripple, SAME commit: ENGINE §11, §2, §12 — **and §10**, whose
+   sentence "the eval-set gate is OPEN-9" goes stale the moment
+   ruling 4 lands; ROADMAP V1.S3 and V1.S8; **and
+   [IDEAS](../../IDEAS.md), where the two 2026-07-28 lines this
+   entry closes are compressed and moved to §Closed**, which
+   [decide §2](../../skills/decide.md) requires of any decide that
+   closes an idea.
 4. Weave gate: every D-number, roadmap ID, fact ID and sibling doc
    in the new text is a link — except the `In full:` line, which is
    a verbatim quotation the weave rule does not reach.
@@ -97,7 +102,20 @@ the Web full-pass validation of 2026-09-10.
 
 ## Deviations
 
-<filled by ship>
+**The Plan's step 3 was widened at the critic round, not at
+authoring time.** As first written it named ENGINE §11, §2, §12 and
+the two ROADMAP stages — but the commit also rewrote ENGINE §10's
+now-stale OPEN-9 sentence and moved two [IDEAS](../../IDEAS.md)
+lines to §Closed. Both edits were correct and both were narrated in
+the memory, but [LAWS §Task anatomy](../../LAWS.md#task-anatomy)
+requires a DUAL-WRITE — the spec gets the edit, the memory narrates
+it — and only the memory half happened. The spec now names all of
+it, and this line records that the contract was caught up rather
+than written first.
+
+**ENGINE §0's reading key gained a clause** so it does not
+contradict §12's new keep-the-number rule one section later. It is
+listed in D-087's `Affects:`.
 
 ## Open questions
 

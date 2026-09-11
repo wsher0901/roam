@@ -18,8 +18,11 @@ Two kinds of content, always visibly separated:
 - **OPEN slots** — decisions not yet made, marked `OPEN-n` inline
   and collected in [§12](#12-open-register). An OPEN slot is never
   silently filled: filling one takes a D-number, which converts it
-  into a rule. The engine grows by accretion — new sources, new
-  families, new metrics plug into stages; the pipeline shape stays.
+  into a rule — and the filled slot then KEEPS ITS NUMBER and is
+  marked CLOSED in place, because inline `OPEN-n` mentions resolve
+  by number ([§12](#12-open-register) holds the rule). The engine
+  grows by accretion — new sources, new families, new metrics plug
+  into stages; the pipeline shape stays.
 
 Procedure steps describe the shape of one pass; the shape is
 provisional until the V1.S3.T1 contract ratifies it, the same way

@@ -4923,6 +4923,8 @@ binds.
   it defers the evidence for the claim V1 exists to make.
 
 **Affects:**
+[ENGINE §0](../ENGINE.md#0-what-this-is) (the reading key's OPEN-slot
+bullet, so it does not contradict §12's keep-the-number rule) ·
 [ENGINE §2](../ENGINE.md#2-intake--resolve-the-traveler) (procedure
 step 1 — one line on the model's role, pointing at §11) ·
 [ENGINE §10](../ENGINE.md#10-learn--the-loop-back) (the sentence
@@ -4936,8 +4938,8 @@ rule in the preamble; OPEN-9 marked CLOSED in place) ·
 (T2's dependency, T6's eval set) ·
 [ROADMAP V1.S8](../ROADMAP.md#v1s8--demo-polish) (T4 added, T3
 resequenced) ·
-[IDEAS](../IDEAS.md) (the 2026-07-28 eval-set and LLM-boundary lines
-compressed and moved to §Closed) ·
+[IDEAS §Closed](../IDEAS.md#closed) (the 2026-07-28 eval-set and
+LLM-boundary lines compressed and moved there) ·
 [D-010](#d-010--global-coverage-via-graded-fallback-ladders) (cited,
 unchanged — rung 5 is its ladder) ·
 [D-086](#d-086--workshop-the-product-first-window) (the `[product]`
