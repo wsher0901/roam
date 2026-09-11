@@ -1,12 +1,14 @@
 ---
 type: memory
 id: design-reference-note
-updated: 2026-09-11 · canary claim · work PC agent-team lane A
+updated: 2026-09-11 · canary ack · work PC control tower
 ---
 # design-reference-note — the reference-images note tells the truth
 
 ## Status
-claimed by work PC agent-team lane A — 2026-09-11
+airborne · work PC agent team · 2026-09-11
+
+Canary acked by the work PC control tower. The lane is licensed to work.
 
 ## What this task is
 [DESIGN §Reference images](../DESIGN.md#reference-images) carries a
