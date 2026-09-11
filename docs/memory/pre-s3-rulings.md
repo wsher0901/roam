@@ -7,10 +7,9 @@ updated: 2026-09-11 · payload written · work PC control tower
 
 ## Status
 complete, awaiting merge — 2026-09-11. D-087 is appended and the
-whole ripple landed in the same commit. One question rides the
-bench as a `BLOCKED:` comment on
-[#366](https://github.com/wsher0901/roam/pull/366) — see Pending
-issues.
+whole ripple landed in the same commit. **Both `BLOCKED:` questions
+are answered** by the external Web review and the answers are in the
+payload — see Pending issues.
 
 ## What this task is
 Four founder rulings from the Web full-pass validation of
@@ -35,55 +34,43 @@ three plan corrections`, with the ripple in the same commit:
    the handled-input rule; OPEN-9 closes with its number kept.
 
 ## Pending issues
-**Two, both on ruling 3, both raised on
-[#366](https://github.com/wsher0901/roam/pull/366) rather than
-resolved here. Neither is a defect in the payload** — the line is
-written exactly as the founder stated it, and both are consequences
-that the ruling's stated reason does not mention.
+**None open. Both questions this bench raised are answered**, by the
+external Web review of 2026-09-11, and the answers are in the
+payload rather than only here.
 
-**(a) THE CRITICAL PATH MOVED, and this is the bigger of the two.**
-The critic caught it and the walk confirms it from the file:
-[V1.S3.T2](../ROADMAP.md#v1s3--engine-core--two-families-deep) now
-waits on
-[V1.S2.T4](../ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1),
-which reads `[seq after V1.S1.T7 and T3]`, and
-[V1.S1.T7](../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
-reads `[seq after T1–T6]`. With T3, T4 and T7 at `[P after T2]` and
-T5 at `[seq after T3+T4]`, **five of V1.S3's seven tasks now sit
-behind the whole of V1.S1** — only T1 and T6 are reachable before S1
-closes. Before ruling 3, T2 was a bare `[seq]` and NONE of V1.S3
-depended on V1.S1 at all.
-
-That is a real change rather than a restatement, and it is not
-obviously wrong — you cannot build a Postgres cache without the
-schema, and the plan now tells that truth instead of hiding it. But
-[V1.S2](../ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)
-is explicitly "(parallel lane with S1)", so stages here are NOT
-implicitly serial, and the founder is approving a wider consequence
-than D-087 names. Surfaced, not decided.
-
-**(b) The notation question.** Under
-this file's own notation the wording carries a second consequence
-the ruling's stated reason does not mention.
-
-[HOME §Roadmap manual](../HOME.md#roadmap-manual) says `[seq]` means
-"must follow", and "after X" names the dependency "when it is not
-simply the previous task". Walking the real ROADMAP lines rather
-than reasoning about the notation in the abstract —
-[V1.S2.T4](../ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)
-reads `[seq after V1.S1.T7 and T3]`, and T3 IS its previous task —
-the convention is that once a line names dependencies it names ALL
-of them. So `V1.S3.T2 [seq after V1.S2.T4]` reads as: the dependency
-list is exactly {V1.S2.T4}, and T2 no longer waits on
+**(a) The notation question → `T2 after T1 and V1.S2.T4`.** The tag
+now reads `[seq after T1 and [V1.S2.T4](…)]`. The bench had written
+the founder's words exactly — `[seq after V1.S2.T4]` — and flagged
+that under this file's own convention naming any dependency means
+naming all of them, so the short form silently dropped
 [V1.S3.T1](../ROADMAP.md#v1s3--engine-core--two-families-deep).
+Naming both makes the line self-sufficient under either reading of
+[HOME §Roadmap manual](../HOME.md#roadmap-manual), which is the
+durable fix available while
+[D-086](../record/DECISIONS.md#d-086--workshop-the-product-first-window)'s
+window blocks editing the manual itself.
 
-That may be exactly right — the fact cache is infrastructure and
-plausibly does not need the check contract. But it changes the build
-order, and the ruling's reason speaks only about migrations. Asked
-as a `BLOCKED:` comment on
-[#366](https://github.com/wsher0901/roam/pull/366) with the two
-answers spelled out; the line stays as ruled until the founder says
-otherwise.
+**(b) The critical path → `accept the path`, with the reason
+written into the record.** The walk stands: five of
+[V1.S3](../ROADMAP.md#v1s3--engine-core--two-families-deep)'s seven
+tasks now sit behind the whole of
+[V1.S1](../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code).
+The review's ruling is that this is not the change it looks like:
+**V1.S3 already follows V1.S1 by stage order** — stages are ordered
+slices and only
+[V1.S2](../ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)
+is declared parallel — so the ruling adds ONE EDGE, S3.T2 ← S2.T4,
+rather than a stage coupling, and it is absorbed when S2.T4 runs
+promptly after S1.T7 inside S2's lane with S3.T1 in parallel. That
+clause is now in D-087 ruling 3, so a later reader meets the answer
+where the ruling lives and not only in this story.
+
+**What the exchange proves about the bench rather than the plan:**
+the question was worth asking and the answer was not the one the
+bench guessed. It had reasoned that the marker might be dropping a
+dependency by accident; the review's answer was that the dependency
+list was right and the SECOND-ORDER reading — the stage coupling —
+was the thing that needed stating rather than fixing.
 
 ## Left / idle
 Nothing in the payload. The bench waits on the batched external Web

@@ -113,7 +113,7 @@ for any destination + dates using Weather and Sky & sea.
 - [ ] V1.S3.T1 [seq] Check contract + orchestrator — CheckModule
       interface; Verdict shape (score, confidence, source,
       explanation); engine context; parallel fan-out + merge
-- [ ] V1.S3.T2 [seq after [V1.S2.T4](#v1s2--skeleton--design-foundations-parallel-lane-with-s1)] Fact-cache layer — read-through
+- [ ] V1.S3.T2 [seq after T1 and [V1.S2.T4](#v1s2--skeleton--design-foundations-parallel-lane-with-s1)] Fact-cache layer — read-through
       Postgres cache honoring per-source freshness windows; fetch
       dedupe; recorded-fixture mode for tests. The cache IS
       Postgres, so it cannot start before the migrations exist

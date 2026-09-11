@@ -4870,12 +4870,32 @@ therefore part of shipping the demo, not part of hardening it later.
 
 **RULING 3 — THE S3 DEPENDENCY.**
 [V1.S3.T2](../ROADMAP.md#v1s3--engine-core--two-families-deep)
-becomes `[seq after V1.S2.T4]`. The reason is exact: the fact cache
-IS Postgres, and
+becomes `[seq after T1 and V1.S2.T4]`. The reason is exact: the fact
+cache IS Postgres, and
 [V1.S2.T4](../ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)
 is the migration task — a read-through cache cannot be built against
 a schema that has not been applied. The dependency existed in fact
 and was missing from the plan.
+
+**T1 IS NAMED ALONGSIDE IT, and that is a correction made at
+review.** As first written the tag read `[seq after V1.S2.T4]`, and
+under this file's own convention — [V1.S2.T4](../ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)
+reads `[seq after V1.S1.T7 and T3]`, naming its previous task as
+well as its cross-stage one — naming any dependency means naming
+ALL of them. So the shorter form silently dropped T1. Writing both
+makes the line self-sufficient under either reading of
+[HOME §Roadmap manual](../HOME.md#roadmap-manual), whose "after X"
+clause does not say whether naming X replaces or adds to the
+previous-task default.
+
+**AND THE WIDER CONSEQUENCE IS ACCEPTED RATHER THAN OVERLOOKED.**
+[V1.S3](../ROADMAP.md#v1s3--engine-core--two-families-deep) already
+follows [V1.S1](../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
+by stage order — stages are ordered slices and only
+[V1.S2](../ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)
+is declared parallel — so this ruling adds ONE EDGE, S3.T2 ← S2.T4,
+not a stage coupling; it is absorbed when S2.T4 runs promptly after
+S1.T7 inside S2's lane, with S3.T1 in parallel.
 
 **RULING 4 — THE EVAL SET.**
 [V1.S3.T6](../ROADMAP.md#v1s3--engine-core--two-families-deep)
