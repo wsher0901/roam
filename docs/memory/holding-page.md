@@ -41,28 +41,64 @@ made on the control tower's instruction, as the author of that
 contract repairing defects a critic found in it.
 
 **TWO BLOCKING FINDINGS FROM THE DESIGN-REVIEW GATE, both inherited
-and neither repaired here.** Both predate this bench, both live
-outside the file list the spec allowed it, and the founder rules on
-them at THE GATE:
+and BOTH ARE NOW REPAIRED — by the founder's word at the gate, on
+one tower commit, after the external Web review of 2026-09-11 ruled
+them in scope for this bench rather than a later one.** Both
+predated the bench and both lived outside the file list its spec
+allowed it, which is why the lane correctly left them alone and
+carried them instead.
 
-1. **The screen renders in the browser's default serif, not
-   Geist.** `src/app/globals.css:10` reads
-   `--font-sans: var(--font-sans)` — a self-reference, so
-   `html { @apply font-sans }` resolves to an invalid value and
-   falls through. The line beside it,
-   `--font-mono: var(--font-geist-mono)`, points at the real
-   variable, which is what shows line 10 to be a slip rather than a
-   convention. Both lines are identical on `origin/main`, so the
-   create-next-app template rendered serif too and nobody had
-   noticed. Geist is downloaded on every load and never applied.
-2. **The tab still carries the Vercel triangle.**
-   `src/app/favicon.ico` is the untouched create-next-app default,
-   byte-identical to main — and `public/` still holds `next.svg`,
-   `vercel.svg`, `file.svg`, `globe.svg` and `window.svg`. The
-   spec's "no template remnant anywhere" box enumerated five things
-   and the favicon was not among them; the word "anywhere" governs
-   regardless, which is the enumeration law catching a list rather
-   than a skipped step.
+1. **The screen rendered in the browser's default serif, not
+   Geist — REPAIRED.** `src/app/globals.css:10` read
+   `--font-sans: var(--font-sans)`, a self-reference, so
+   `html { @apply font-sans }` resolved to an invalid value and fell
+   through. The line beside it, `--font-mono: var(--font-geist-mono)`,
+   points at the real variable, which is what showed line 10 to be a
+   slip rather than a convention. Both lines were identical on
+   `origin/main`, so the create-next-app template rendered serif too
+   and nobody had noticed; Geist was downloaded on every load and
+   never applied. It now reads `var(--font-geist-sans)`, and the
+   production build emits `html{font-family:var(--font-geist-sans)}`
+   — verified in the built CSS, not inferred from the source.
+   **A BROKEN TOKEN IS NOT A FONT CHANGE**, which is why this does
+   not trespass on
+   [V1.S2.T5](../ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1):
+   T5 still rules type, and this only makes the face the repo
+   already chose actually reach the screen.
+2. **The tab carried the Vercel triangle — REPAIRED.**
+   `src/app/favicon.ico` was the untouched create-next-app default,
+   byte-identical to main, and `public/` still held `next.svg`,
+   `vercel.svg`, `file.svg`, `globe.svg` and `window.svg`. All six
+   are deleted; a grep proved nothing referenced them first, and
+   `/favicon.ico` now returns 404, so the tab falls back to the
+   browser's blank glyph. **No Roam mark was drawn** — the DIRECTION
+   slot stays reserved to the founder
+   ([D-084](../record/DECISIONS.md#d-084--the-global-design-stack)),
+   and deleting is the move that adds nothing.
+   `public/spikes/taste/place-first.html` is deliberately kept: it
+   seeds [DESIGN](../DESIGN.md#reference-images) reference slots 3
+   and 4.
+
+   The spec's "no template remnant anywhere" box had enumerated five
+   things and the favicon was not among them; the word "anywhere"
+   governed regardless, which is the enumeration law catching a list
+   rather than a skipped step. With the assets gone the box is now
+   true against its own headline rather than only against its list.
+
+3. **The loading state — RULED HANDLED, and it is a real state
+   now.** The bench's own critic found that the one-state argument
+   counted the COMPONENT and not the SCREEN: `layout.tsx` fetches
+   two webfonts through `next/font/google`, and the built CSS emits
+   `font-display: swap` eleven times with `Geist` and
+   `Geist Fallback` faces. That swap was invisible only because the
+   broken token kept every webfont out of the cascade — **fixing
+   finding 1 brings the state into existence.** It is ACCEPTED
+   rather than designed away: `next/font` emits a metric-adjusted
+   `Geist Fallback` face precisely so the swap reflows as little as
+   possible, text is readable from first paint, and the moving
+   content is one four-character word. The screen therefore ships
+   TWO states — the settled one and the swap — and the memory says
+   so rather than claiming one.
 
 **The preview is behind Vercel SSO, which the gate routed around
 rather than through.** Protection is on for the project

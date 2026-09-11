@@ -99,7 +99,25 @@ fixed width.
 
 **That opening position counts the COMPONENT and the law governs the
 SCREEN** — the bench's answer, and the design-review gate, corrected
-it. See the memory for the finding.
+it.
+
+**THE ANSWER OF RECORD IS TWO STATES, AND THE SECOND IS HANDLED.**
+`layout.tsx` fetches two webfonts through `next/font/google`, and
+the built CSS emits `font-display: swap` with a `Geist Fallback`
+face beside `Geist` — so the screen has a settled state and a
+FONT-SWAP state. That swap was invisible while `--font-sans`
+self-referenced, because no webfont reached the cascade at all; the
+token fix brings the state into existence, which is why the two
+findings are one story rather than two.
+
+It is ruled HANDLED rather than absent, and the mitigation is
+`next/font`'s own: it emits a METRIC-ADJUSTED fallback face whose
+metrics are matched to Geist precisely so the swap reflows as little
+as possible. Text is readable from first paint, nothing is hidden
+behind a loading gate, and the content that moves is one
+four-character word. **A state that is invisible because something
+else is broken is the worst way to satisfy a law** — naming it and
+accepting its mitigation is the honest way.
 
 ## Done means
 
@@ -107,15 +125,17 @@ it. See the memory for the finding.
       `Trip planning that checks the details.`
 - [x] `page.tsx` renders the word Roam and that one line, centred,
       and nothing else.
-- [x] **In the two files this bench touches**: no `next/image`, no
-      `next.svg`/`vercel.svg` reference, no nextjs.org or
-      vercel.com link. **Rescoped from "no template remnant
-      anywhere", which was ticked and false** — `public/` still
-      holds `next.svg`, `vercel.svg`, `file.svg`, `globe.svg` and
-      `window.svg`, and `src/app/favicon.ico` is still the
-      create-next-app default. Those are real remnants outside this
-      bench's file list; the control tower carries them to the
-      founder. A box may not claim more than the diff covers.
+- [x] **No template remnant anywhere** — and the headline is true
+      again rather than only its list. It was rescoped mid-flight
+      because it had been ticked and false: the enumeration named
+      five things and missed `src/app/favicon.ico`, while `public/`
+      still held `next.svg`, `vercel.svg`, `file.svg`, `globe.svg`
+      and `window.svg`. On the founder's word at the gate all six
+      were deleted, a grep having proved nothing referenced them,
+      so the box now covers what it always claimed.
+      `public/spikes/taste/place-first.html` stays on purpose — it
+      seeds [DESIGN](../../DESIGN.md#reference-images) slots 3
+      and 4.
 - [x] The font loads in `layout.tsx` are unchanged.
 - [ ] The two files' combined diff is under 40 lines.
 - [x] `npm run lint`, `npm run format:check`, `npm test` and
@@ -126,19 +146,57 @@ it. See the memory for the finding.
 - [x] **The design-review gate has fired**
       ([LAWS §Workflow](../../LAWS.md#workflow-non-negotiable)):
       screenshots at 375, 1440, 280 and 667×375, three findings, two
-      blocking — both inherited, both outside this bench's file
-      list, both carried to the founder rather than repaired here.
+      blocking. Both blocking findings were inherited and outside
+      this bench's original file list; the founder ruled them in
+      scope at the gate and both are REPAIRED, then the gate was
+      RE-RUN against the repaired surface. The 🟡 dark-mode finding
+      is accepted unfixed on the reviewer's own recommendation —
+      token-layer work for
+      [V1.S2.T5](../../ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1).
 - [x] The memory ANSWERS the states law in the bench's own words —
       whatever the answer turns out to be. It is not required to
       agree with this spec's opening position, and it does not: the
       answer is TWO states, the second being the webfont swap, with
       the screen counted rather than the component.
 - [x] The diff touches `src/app/layout.tsx`, `src/app/page.tsx`,
-      this spec, and `docs/memory/holding-page.md` — nothing else.
+      this spec, and `docs/memory/holding-page.md` — plus, on the
+      founder's word at the gate, the one-line token fix in
+      `src/app/globals.css` and the deletion of six template assets.
+      The widening is deliberate, ruled, and recorded in Deviations.
 
 ## Deviations
 
-<filled by ship>
+**THE BENCH WAS WIDENED AT THE GATE, BY THE FOUNDER'S WORD, AND NOT
+BY THE LANE.** As written, this spec put `src/app/globals.css`,
+`src/app/favicon.ico` and `public/` out of scope, and the lane
+correctly refused to touch any of them — it carried the two blocking
+design findings to the founder instead. The external Web review of
+2026-09-11 ruled both in scope for this bench, so the tower made
+them in one commit:
+
+1. **`src/app/globals.css:10`** — `--font-sans: var(--font-sans)` →
+   `--font-sans: var(--font-geist-sans)`. The token pointed at
+   itself, so Geist was downloaded on every page load and never
+   applied and the whole screen rendered in the browser's default
+   serif. **A BROKEN TOKEN IS NOT A FONT CHANGE** —
+   [V1.S2.T5](../../ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)
+   still rules type; this only lets the face the repo already chose
+   reach the screen. Verified in the built CSS
+   (`html{font-family:var(--font-geist-sans)}`), not in the source.
+2. **Six template assets deleted** — `src/app/favicon.ico` and
+   `public/{next,vercel,file,globe,window}.svg`. Nothing referenced
+   them; no Roam mark was drawn, because the DIRECTION slot stays
+   reserved.
+3. **The under-40-lines box stays UNTICKED and its wording stays
+   UNCHANGED.** It is unmeetable as written: the two files are 6
+   insertions and 63 deletions, and the deletions ARE the 65-line
+   template this bench exists to remove, so no correct execution
+   ticks it. The lane declined to reword its own contract to pass
+   it, which was right; the tower is not rewording it either,
+   because the defect is in the metric — it counted touched lines
+   where it meant "keep the result small" — and rewriting a box so
+   the work passes is the thing that must not become routine. It
+   stands as a visible, explained miss.
 
 ## Open questions
 
