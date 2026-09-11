@@ -5,7 +5,7 @@ title: The reference-images note tells the truth about the losers
 status: open
 stage: V1.S2
 branch: docs/design-reference-note
-pr: —
+pr: #363
 opened: 2026-09-11
 shipped: —
 ---
@@ -75,19 +75,19 @@ the call is auditable rather than assumed.
 
 ## Done means
 
-- [ ] The paragraph states that the two rejected probes and the
+- [x] The paragraph states that the two rejected probes and the
       folder index were DELETED on 2026-09-10 by
       [#355](https://github.com/wsher0901/roam/pull/355), naming the
       date and the PR.
-- [ ] It states that `place-first.html` stands alone as the seed for
+- [x] It states that `place-first.html` stands alone as the seed for
       slots 3 and 4.
-- [ ] It points at the [taste-pass spec](taste-pass.md) and its
+- [x] It points at the [taste-pass spec](taste-pass.md) and its
       [history](../history/product/definition/taste-pass.md) as the
       losers' surviving record.
-- [ ] `grep -n "index" docs/DESIGN.md` returns zero lines.
-- [ ] `grep -n "siblings" docs/DESIGN.md` returns zero lines.
-- [ ] `npm run check:links` passes.
-- [ ] The diff touches `docs/DESIGN.md`, this spec, and
+- [x] `grep -n "index" docs/DESIGN.md` returns zero lines.
+- [x] `grep -n "siblings" docs/DESIGN.md` returns zero lines.
+- [x] `npm run check:links` passes.
+- [x] The diff touches `docs/DESIGN.md`, this spec, and
       `docs/memory/design-reference-note.md` — nothing else.
 
 ## Deviations
