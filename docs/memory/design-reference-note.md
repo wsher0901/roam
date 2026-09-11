@@ -1,13 +1,12 @@
 ---
 type: memory
 id: design-reference-note
-updated: 2026-09-11 · bench birth · work PC control tower
+updated: 2026-09-11 · canary claim · work PC agent-team lane A
 ---
 # design-reference-note — the reference-images note tells the truth
 
 ## Status
-bench ready, no worker yet — birthed 2026-09-11 by the work PC
-control tower.
+claimed by work PC agent-team lane A — 2026-09-11
 
 ## What this task is
 [DESIGN §Reference images](../DESIGN.md#reference-images) carries a
