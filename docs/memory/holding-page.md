@@ -100,6 +100,63 @@ carried them instead.
    TWO states — the settled one and the swap — and the memory says
    so rather than claiming one.
 
+## The design-review gate, re-run against the repaired surface
+The gate fired twice on this bench. The first run returned three
+findings, two blocking — the serif and the favicon. **After the
+founder ruled both in scope and they were repaired, it was re-run
+and both are RESOLVED AT THE PIXELS**, not merely in the source.
+
+- **The font.** The page renders Geist at 375, 1440 and 280 — the
+  reviewer identified it by letterform (straight-legged `R`,
+  geometric double-storey `a`, flat-cut terminals), not by reading
+  the CSS. **`font-extralight` is genuinely expressed**: a 60px
+  close-up shows hairline strokes no 400 weight produces, and
+  because `layout.tsx` loads `Geist()` with no `weight` array,
+  next/font pulls the VARIABLE axis, so 200 is a real instance
+  rather than a synthesized fake. The weight extreme the class was
+  reaching for is finally on screen.
+- **The assets.** `/favicon.ico` returns 404, `public/` contains
+  exactly one file (`spikes/taste/place-first.html`), no
+  `favicon.*`/`icon.*`/`apple-icon.*` exists under `src/app`, and
+  the document declares no icon link — so nothing can be served.
+  **One honest limit the reviewer stated rather than papered over:**
+  the tab strip is browser chrome and cannot be screenshotted, so
+  the causal chain was verified and the glyph itself was not.
+- **No regression.** 280px still holds — "Roam" on one line, the
+  tagline wrapping to two centred lines — and the console is clean.
+
+**THE SWAP STATE, MEASURED RATHER THAN ARGUED.** With a webfont
+actually in the cascade, next/font's fallback is aggressive:
+`src: local(Arial)` with `ascent-override: 95.94%`,
+`descent-override: 28.16%`, `line-gap-override: 0%`,
+`size-adjust: 104.76%`. The earliest frame the reviewer could
+capture after navigation was **already Geist and pixel-identical in
+layout to the settled frame** — both baselines at the same y — so
+measured reflow was zero. On localhost the swap completes faster
+than a still can sample it, which is itself the finding: the
+mitigation works, and the state is real but cheap.
+
+**TWO NEW FINDINGS, both 🟡, both belonging to
+[V1.S2.T5](../ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)
+rather than here.**
+
+1. **The screen renders Geist, and
+   [DESIGN §Typography](../DESIGN.md#typography) ratifies Archivo
+   for display and Public Sans for body.** This became VISIBLE only
+   because the token was fixed — until then the cascade fell to
+   Times and the question could not be asked. The reviewer filed it
+   🟡 rather than 🔴 deliberately, reasoning that grading it blocking
+   would overrule the founder's own scoping of this bench. It is now
+   a visible condition instead of a latent one, which is the whole
+   value of recording it.
+2. **The swap-window face is metric-adjusted Arial**, which the
+   global design law names in its banned-as-defaults list. Inferred
+   from the emitted `@font-face`, not from a caught frame. Not
+   actionable here: next/font generates that fallback from local
+   metrics, and those overrides are exactly what held the reflow at
+   zero. When T5 swaps in the ratified faces it regenerates its own
+   fallback and this re-answers itself.
+
 **The preview is behind Vercel SSO, which the gate routed around
 rather than through.** Protection is on for the project
 (`all_except_custom_domains`), so an anonymous fetch of the preview
