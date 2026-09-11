@@ -1,12 +1,14 @@
 ---
 type: memory
 id: holding-page
-updated: 2026-09-11 · canary claim · work PC agent-team lane C
+updated: 2026-09-11 · canary ack · work PC control tower
 ---
 # holding-page — the create-next-app template goes
 
 ## Status
-claimed by work PC agent-team lane C — 2026-09-11
+airborne · work PC agent team · 2026-09-11
+
+Canary acked by the work PC control tower. The lane is licensed to work.
 
 ## What this task is
 The deployed URL still shows the create-next-app template: the
