@@ -1,7 +1,7 @@
 ---
 type: memory
 id: holding-page
-updated: 2026-09-11 · completion · work PC agent-team lane C
+updated: 2026-09-11 · critic repairs · work PC agent-team lane C
 ---
 # holding-page — the create-next-app template goes
 
@@ -34,24 +34,53 @@ this task exists to delete: `page.tsx` was 65 lines on main and is
 40-line total, so that box cannot be ticked by any correct
 execution. The budget's INTENT — the replacement stays tiny — is
 met with room to spare: **6 inserted lines**. That Done-means box
-is therefore left UNTICKED and unedited in
-[the spec](../record/specs/holding-page.md); rewording a contract
-so the work passes it is the founder's call, not a lane's. The
-other eight boxes are ticked and verified.
+is therefore left UNTICKED; the rest are ticked against what was
+actually verified. Rewording a contract so the work passes it is
+the founder's call, not a lane's — the spec's later rescoping was
+made on the control tower's instruction, as the author of that
+contract repairing defects a critic found in it.
 
-**The design-review gate needs a credential this repo must not
-carry.** The preview is reachable, but Vercel SSO protection is ON
-for the project (`all_except_custom_domains`), so an anonymous
-fetch of the preview URL returns Vercel's login page, not Roam.
-Any review agent driving a browser hits that wall. The bypass is a
-share token, which is a SECRET and is therefore NOT written here,
-in the PR, or anywhere else in this public repo — it was handed to
-the baton-holder in-session. Named as a pending issue because the
-gate cannot run until whoever runs it has that route.
+**TWO BLOCKING FINDINGS FROM THE DESIGN-REVIEW GATE, both inherited
+and neither repaired here.** Both predate this bench, both live
+outside the file list the spec allowed it, and the founder rules on
+them at THE GATE:
+
+1. **The screen renders in the browser's default serif, not
+   Geist.** `src/app/globals.css:10` reads
+   `--font-sans: var(--font-sans)` — a self-reference, so
+   `html { @apply font-sans }` resolves to an invalid value and
+   falls through. The line beside it,
+   `--font-mono: var(--font-geist-mono)`, points at the real
+   variable, which is what shows line 10 to be a slip rather than a
+   convention. Both lines are identical on `origin/main`, so the
+   create-next-app template rendered serif too and nobody had
+   noticed. Geist is downloaded on every load and never applied.
+2. **The tab still carries the Vercel triangle.**
+   `src/app/favicon.ico` is the untouched create-next-app default,
+   byte-identical to main — and `public/` still holds `next.svg`,
+   `vercel.svg`, `file.svg`, `globe.svg` and `window.svg`. The
+   spec's "no template remnant anywhere" box enumerated five things
+   and the favicon was not among them; the word "anywhere" governs
+   regardless, which is the enumeration law catching a list rather
+   than a skipped step.
+
+**The preview is behind Vercel SSO, which the gate routed around
+rather than through.** Protection is on for the project
+(`all_except_custom_domains`), so an anonymous fetch of the preview
+URL returns Vercel's login page, not Roam, and a browser-driving
+agent hits the same wall. The gate ultimately ran against a LOCAL
+`next dev` surface instead — no credential, no expiry. The
+authenticated route this lane found is still the answer for a seat
+with no local tree, and is recorded below and in bench D's memory
+as this flight's finding.
 
 ## Left / idle
-Nothing of the payload. The design-review gate against the preview,
-and the merge word, are the baton-holder's and the founder's.
+Nothing of the payload, and nothing waiting on this lane. CI is
+green on the pushed head (below), and the design-review gate has
+fired — screenshots at 375, 1440, 280 and 667×375, three findings,
+two of them blocking and both inherited (above). What remains is
+the founder's: the two blocking findings, the unmeetable budget
+box, and the merge word.
 
 ## The story
 Born bench-first from freshly pulled `main` (`a893524`) as lane C of
@@ -64,34 +93,73 @@ faces the design-review gate.
 Canary `f39b798`; the baton-holder's ack landed on origin as
 `d57145f` and licensed the work; payload `95074b0`.
 
-**THE STATES LAW, ANSWERED RATHER THAN WAVED PAST.**
+**CI IS THE ARBITER AND IT IS GREEN — named here because four local
+greens are not a substitute for it.**
+[LAWS §Workflow](../LAWS.md#workflow-non-negotiable) and
+[D-038](../record/DECISIONS.md#d-038--ci-is-the-arbiter) are
+explicit that local green never suffices; the PUSHED commit's
+Actions run decides. Every pushed head of this bench has run green,
+most recently `checks` **pass** in 37s — run **34605432484** on head
+`0e20212`, the latest confirmed at the time of this rewrite. The
+run for this rewrite's own head is named in the PR's completion
+comment rather than guessed at here.
+
+**THE STATES LAW — AND THE ANSWER IS NOT "ONE STATE", WHICH IS WHAT
+THIS BENCH FIRST WROTE.**
 [DESIGN §States](../DESIGN.md#states--every-screen-every-time) and
 the machine's global design law demand loading · empty · error ·
-long-content · mobile from every screen. This screen is a static
-server component: it takes no props, fetches nothing, awaits
-nothing, and accepts no input. So four of the five have no referent
-here — there is no fetch to be pending, so no LOADING state exists
-to design; no collection that can arrive with zero items, so no
-EMPTY state; no call that can reject, so no ERROR state; and the
-copy is two fixed strings that no data can lengthen, so no
-LONG-CONTENT state. That is not an exemption claimed — it is the
-count coming out at one. The build agrees mechanically rather than
-rhetorically: `next build` marks `/` as static and prerendered,
-which is the compiler saying there is no second rendering to make.
-**MOBILE IS THE ONE OF THE FIVE GENUINELY IN PLAY, and it is met by
+long-content · mobile from every SCREEN. The opening reading
+counted the COMPONENT: `Home()` takes no props, fetches nothing,
+awaits nothing and accepts no input, so four of the five looked
+like they had no referent. **That is true of the component and
+false of the screen.** The screen is `layout.tsx` + `page.tsx`, and
+`layout.tsx:5-13` fetches two webfonts through `next/font/google`.
+The build says so: `font-display:swap` appears **11 times** in
+`.next`'s CSS, with `@font-face` families emitted for `Geist` and
+`Geist Fallback`. A fallback→Geist swap on a 60px headline is the
+most visible loading state a page this small can have.
+
+So the count is **TWO**, and the second is a LOADING state: the
+font swap. It is ACCEPTED rather than designed away — `swap` is
+next/font's default and the right trade here, since the text is
+readable immediately and the reflow is one 4-character word and one
+short line. What this bench does not get to say is that the state
+is absent.
+
+**AND THAT STATE IS CURRENTLY MASKED BY A DEFECT, which is the part
+worth recording.** It does not appear today only because of the
+`--font-sans` self-reference at `globals.css:10` (Pending issues),
+which keeps Geist out of the cascade entirely. Fix that bug and the
+swap returns. An unobservable state is not an absent one, and a
+state that is invisible because something else is broken is the
+worst way to satisfy a law.
+
+The other three survive the correction, for reasons that do not
+depend on the miscount: no data source, so nothing to be EMPTY of;
+no call that can reject, so no ERROR state this screen owns; two
+fixed strings no data can lengthen, so no LONG-CONTENT state.
+`next build` marks `/` static and prerendered, which is CONSISTENT
+with a thin state surface but does not prove one — static
+prerendering describes server output, not how many states a screen
+can be in, and a prerendered page still has font-loading,
+error-boundary and zoom states. It is corroboration, not the
+argument.
+
+**MOBILE IS THE OTHER ONE GENUINELY IN PLAY, and it is met by
 construction**: the page centres IN THE FLOW — `flex flex-1
 flex-col items-center justify-center` inside the layout's existing
 `flex min-h-full flex-col` body — with no fixed width, no
 `min-width`, and a `px-6` gutter on the only wrapper, so 375px and
 1440px are one layout at two sizes rather than two layouts. Roam's
-sixth state, UNVERIFIED, has no referent either: the page states no
-fact the engine could check.
+sixth state, UNVERIFIED, has no referent: the page states no fact
+the engine could check.
 
 **Colour: zero decisions made.** `globals.css` already applies
 `bg-background text-foreground` to `body` in its base layer, so the
 page carries NO colour class at all and inherits. That keeps
-[DESIGN](../DESIGN.md)'s reserved palette reserved by not touching
-it, rather than by picking something defensible.
+[DESIGN §Color & tokens](../DESIGN.md#color--tokens)'s reserved
+palette reserved by not touching it, rather than by picking
+something defensible.
 
 **Type: a task-local call, recorded as one.**
 [DESIGN §Typography](../DESIGN.md#typography) ratifies Archivo /
@@ -107,6 +175,15 @@ which is precisely the mid-weight the law says not to live at. Body
 copy stays at the default weight, which
 [DESIGN §Typography](../DESIGN.md#typography) leaves task-local and
 unruled.
+
+**WHAT THAT PARAGRAPH DESCRIBES IS THE STYLESHEET, NOT THE SCREEN.**
+`font-extralight` is what the markup asks for; what renders today is
+the browser's default serif, because of the `--font-sans`
+self-reference in Pending issues. Times has no 200 weight, so the
+weight choice is INERT until that bug is fixed, and the 3.75× scale
+jump is the only part of the paragraph above that currently reaches
+the pixels. Recorded as a dependency rather than repaired —
+`globals.css` is outside this bench's file list.
 
 **DEAD END — the worktree's node_modules was an EMPTY DIRECTORY.**
 `npm run lint`, `format:check` and `test` all passed anyway, which
@@ -138,7 +215,8 @@ commits leave the preview pinned to `95074b0`, which is faithful:
 they change nothing the browser renders.
 
 **HOW THE PREVIEW WAS VERIFIED, stated precisely, because "the
-preview renders it" is a status claim and the reliability law asks
+preview renders it" is a status claim and the VERIFICATION LAW
+([LAWS §Knowledge & tracking](../LAWS.md#knowledge--tracking)) asks
 who checked and how.** An ANONYMOUS request cannot see it: Vercel
 Authentication is on for the project
 (`all_except_custom_domains`), so plain `curl` — and equally a
@@ -160,16 +238,25 @@ deployment independently through its own authenticated Vercel
 surface and reported the identical markup** — so the claim rests on
 two separate checks, by two seats, not on one seat trusting a link.
 
+**AND THE LIMIT OF THAT VERIFICATION IS WORTH NAMING**, because it
+is exactly where the serif defect hid: fetching HTML proves the
+markup, the metadata and the absence of template remnants, and
+proves NOTHING about what the CSS resolves to. Every check this
+lane ran on the served page came back correct, and the page was
+rendering in Times the whole time. A rendered screenshot is what
+catches that class of defect — which is what the design-review gate
+is for, and why it found in minutes what three fetches could not.
+
 ## Where to look
 - `src/app/page.tsx` (8 lines) · `src/app/layout.tsx` (two metadata
   fields) — the whole payload.
-- `src/app/globals.css` — where the page's colour actually comes
-  from; untouched by this bench.
+- `src/app/globals.css:10` — the `--font-sans` self-reference that
+  puts the screen in serif; untouched by this bench and outside its
+  file list.
 - Preview: `https://roam-git-feat-holding-page-wsher0901s-projects.vercel.app`
-  — behind Vercel SSO; see Pending issues for what that costs the
-  review gate.
+  — behind Vercel SSO; see Pending issues for the route.
 - [DESIGN §States](../DESIGN.md#states--every-screen-every-time) —
-  the law the one-state reading above answers.
-- [the spec](../record/specs/holding-page.md) — including the one
+  the law the two-state reading above answers.
+- [the spec](../record/specs/holding-page.md) — including the
   Done-means box this bench reports instead of ticking.
 - PR [#365](https://github.com/wsher0901/roam/pull/365).

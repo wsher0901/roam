@@ -46,7 +46,8 @@ below is a different task's.**
   current `Geist` / `Geist_Mono` loads in `layout.tsx` STAY exactly
   as they are.
 - **Tokens and colour.** No token file, no palette, no new CSS
-  variable. [DESIGN §Color](../../DESIGN.md) reserves the palette to
+  variable. [DESIGN §Color & tokens](../../DESIGN.md#color--tokens)
+  reserves the palette to
   the founder.
 - **Components.** No new component, no shadcn addition, no
   `src/components/` change. `src/components/ui/button.tsx` is not
@@ -66,21 +67,39 @@ below is a different task's.**
 3. Keep the two files' combined change under 40 lines — the spec's
    own budget, checked with `git diff --stat`.
 4. `npm run lint && npm run format:check && npm test && npm run build`.
-5. Read the Vercel preview from the PR and confirm it renders the
-   holding page — not the template.
+5. Confirm the deployed surface renders the holding page, not the
+   template. **The preview cannot be read anonymously** — Vercel
+   Authentication is on for this project
+   (`all_except_custom_domains`), so an unauthenticated fetch of the
+   preview URL returns Vercel's login page for ANY reader. Use an
+   authenticated route (the Vercel MCP surface returns a 302 carrying
+   a fresh single-use `_vercel_share` token; fetch with that
+   parameter and a live cookie jar), or accept the design-review
+   gate's screenshots of a running surface as the evidence. Note
+   that fetching HTML proves markup and metadata and proves nothing
+   about what the CSS resolves to — a rendered screenshot is what
+   catches that class of defect.
 
-## The states law, and why this screen satisfies it
+## The states law — the tower's opening position, not the finding
+
+**This section is the CONTRACT AUTHOR'S starting reading, recorded
+so the bench has somewhere to argue from. It is not the answer, and
+the bench is not required to agree with it** — the Done-means box
+below asks the bench to ANSWER the states law, and an answer that
+contradicts this section is a passing answer, not a failing one.
 
 [DESIGN §States](../../DESIGN.md#states--every-screen-every-time)
 and the machine's global design law require every screen to ship
-loading, empty, error, long-content and mobile. **A static server
-component with no data, no input and no async boundary has ONE
-state**: there is nothing to load, nothing to be empty of, nothing
-to fail, and no content that can grow long. Mobile is the one real
-obligation and is met by centring in the flow rather than at a fixed
-width. **This is written into the memory as the bench's own reading,
-not waved past** — the law is satisfied by there being one state,
-not by exempting the screen from having states.
+loading, empty, error, long-content and mobile. The opening position
+was that **a static server component with no data, no input and no
+async boundary has ONE state**: nothing to load, nothing to be empty
+of, nothing to fail, no content that can grow long, with mobile the
+one real obligation, met by centring in the flow rather than at a
+fixed width.
+
+**That opening position counts the COMPONENT and the law governs the
+SCREEN** — the bench's answer, and the design-review gate, corrected
+it. See the memory for the finding.
 
 ## Done means
 
@@ -88,15 +107,32 @@ not by exempting the screen from having states.
       `Trip planning that checks the details.`
 - [x] `page.tsx` renders the word Roam and that one line, centred,
       and nothing else.
-- [x] No template remnant anywhere: no `next/image`, no
+- [x] **In the two files this bench touches**: no `next/image`, no
       `next.svg`/`vercel.svg` reference, no nextjs.org or
-      vercel.com link.
+      vercel.com link. **Rescoped from "no template remnant
+      anywhere", which was ticked and false** — `public/` still
+      holds `next.svg`, `vercel.svg`, `file.svg`, `globe.svg` and
+      `window.svg`, and `src/app/favicon.ico` is still the
+      create-next-app default. Those are real remnants outside this
+      bench's file list; the control tower carries them to the
+      founder. A box may not claim more than the diff covers.
 - [x] The font loads in `layout.tsx` are unchanged.
 - [ ] The two files' combined diff is under 40 lines.
 - [x] `npm run lint`, `npm run format:check`, `npm test` and
       `npm run build` all pass.
-- [x] The Vercel preview renders the holding page.
-- [x] The memory records the one-state reading in its own words.
+- [x] The deployed surface renders the holding page, confirmed by
+      an authenticated fetch (twice, two seats) — anonymous reading
+      is impossible for any reader, per plan step 5.
+- [x] **The design-review gate has fired**
+      ([LAWS §Workflow](../../LAWS.md#workflow-non-negotiable)):
+      screenshots at 375, 1440, 280 and 667×375, three findings, two
+      blocking — both inherited, both outside this bench's file
+      list, both carried to the founder rather than repaired here.
+- [x] The memory ANSWERS the states law in the bench's own words —
+      whatever the answer turns out to be. It is not required to
+      agree with this spec's opening position, and it does not: the
+      answer is TWO states, the second being the webfont swap, with
+      the screen counted rather than the component.
 - [x] The diff touches `src/app/layout.tsx`, `src/app/page.tsx`,
       this spec, and `docs/memory/holding-page.md` — nothing else.
 
@@ -106,4 +142,16 @@ not by exempting the screen from having states.
 
 ## Open questions
 
-none
+Two, both live, both carried in the memory's Pending issues rather
+than duplicated here:
+
+1. **The under-40-lines budget cannot be ticked by any correct
+   execution** — the deletions are the 65-line template this task
+   exists to delete. Reword the budget, or accept the box as
+   permanently unticked? The founder's call.
+2. **Two blocking design-review findings are inherited, not caused
+   here** — the `--font-sans` self-reference at `globals.css:10`
+   that puts the whole screen in serif, and the untouched
+   create-next-app favicon plus five leftover `public/` SVGs. Do
+   they ride this bench, or their own? Both sit outside the file
+   list this spec allowed.
