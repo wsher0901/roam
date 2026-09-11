@@ -62,7 +62,10 @@ Out: resolved field set, each value carrying provenance +
 updated_at.
 
 Procedure:
-1. Accept the floor: origin + dates always suffices to proceed.
+1. Accept the floor: origin + dates always suffices to proceed — a
+   language model STRUCTURES whatever else the traveler said into
+   these fields and does nothing else here
+   ([§11](#11-invariants--the-reliability-law)).
 2. Attach provenance to every field: {stated | inferred | default}.
 3. Resolve conflicts by supersede order.
 4. Elicit only what has earned asking; never re-ask what is known.
@@ -334,7 +337,9 @@ Rules:
   promotion only via re-vetting.
 - How outcomes feed weights, rankings, and profiles — the learning
   loop as a duty, bounded by the explanation duty — is OPEN-8. The
-  eval-set gate is OPEN-9.
+  eval-set gate was OPEN-9 and is now an invariant
+  ([§11](#11-invariants--the-reliability-law), closed by
+  [D-087](record/DECISIONS.md#d-087--product-the-model-boundary-and-three-plan-corrections)).
 
 Sources:
 [D-014](record/DECISIONS.md#d-014--telemetry-posture)
@@ -350,24 +355,43 @@ Sources:
   unverified in the plan, never guessed.
 - **Reliable source or no ship** — a check module ships only when
   its information source is reliable and consistently obtainable.
+- **The model boundary** — a language model structures what the
+  traveler said ([Intake](#2-intake--resolve-the-traveler)), phrases
+  explanations and rendered text
+  ([Render](#7-render--honest-pixels)), and may propose candidates
+  that [Acquire](#3-acquire--get-the-facts) then verifies. It never
+  produces a world fact, a score, a confidence, a grade, or a
+  source; every model output entering a stage is schema-validated;
+  a model's own world claim exists only at ladder rung 5, labeled,
+  and never enters [Judge](#4-judge--per-check-verdicts) or
+  [Aggregate](#5-aggregate--one-score).
 - **SI/metric everywhere inside** — all storage and engine math,
   exclusively, never mixed.
 - **Explainable by construction** — the engine may learn from data
   (cohort priors, later signal tuning) but never becomes a black
   box: every output stays traceable to sources, rules, and stated
   reasons.
+- **Any in-scope input is handled** — measured against the eval set
+  [V1.S3.T6](ROADMAP.md#v1s3--engine-core--two-families-deep) owns.
 
 Sources:
 [FOUNDATION §The reliability law](FOUNDATION.md#the-reliability-law)
 ·
+[D-010](record/DECISIONS.md#d-010--global-coverage-via-graded-fallback-ladders)
+·
 [D-013](record/DECISIONS.md#d-013--canonical-units-si-storage)
 ·
 [D-025](record/DECISIONS.md#d-025--foundation-v4-principles-recut)
+·
+[D-087](record/DECISIONS.md#d-087--product-the-model-boundary-and-three-plan-corrections)
 
 ## 12. Open register
 Undecided slots, numbered; referenced inline as OPEN-n. Filling one
 takes a D-number. For the founder — nothing here is resolved by this
-file.
+file. **A filled slot KEEPS ITS NUMBER and is marked CLOSED in
+place** — the register never renumbers, because every inline
+OPEN-n reference elsewhere in this file and in the chronicle
+resolves by number.
 
 1. **Confidence & score scales.** Every Verdict carries score and
    confidence, but no decided rule says how either is computed or
@@ -399,10 +423,13 @@ file.
    quality & ground truth (P5), and eval-run storage (T7) exist as
    parts; the rule that outcomes feed grades, weights, and rankings
    — without breaking the explanation duty — is undecided.
-9. **The eval-set gate.** The standing principle — the engine must
-   handle arbitrary in-scope input, measured against a large,
-   diverse evaluation set — is written nowhere as a binding rule.
-   Likely home: the V1.S3 engine contract.
+9. **The eval-set gate — CLOSED by
+   [D-087](record/DECISIONS.md#d-087--product-the-model-boundary-and-three-plan-corrections)
+   → [§11](#11-invariants--the-reliability-law).** The standing
+   principle — the engine must handle arbitrary in-scope input,
+   measured against a large, diverse evaluation set — is now an
+   invariant, and the set itself is owned by
+   [V1.S3.T6](ROADMAP.md#v1s3--engine-core--two-families-deep).
 
 Sources:
 [V1.S3](ROADMAP.md#v1s3--engine-core--two-families-deep) ·

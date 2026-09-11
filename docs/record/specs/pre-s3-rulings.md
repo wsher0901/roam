@@ -17,7 +17,7 @@ shipped: —
 [ENGINE §12](../../ENGINE.md#12-open-register) ·
 [ROADMAP](../../ROADMAP.md) ·
 [FOUNDATION §The reliability law](../../FOUNDATION.md#the-reliability-law)
-· [D-010](../DECISIONS.md#d-010--reliability-ladder-and-render-policy)
+· [D-010](../DECISIONS.md#d-010--global-coverage-via-graded-fallback-ladders)
 · [D-086](../DECISIONS.md#d-086--workshop-the-product-first-window)
 
 ## Goal

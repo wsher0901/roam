@@ -113,9 +113,11 @@ for any destination + dates using Weather and Sky & sea.
 - [ ] V1.S3.T1 [seq] Check contract + orchestrator — CheckModule
       interface; Verdict shape (score, confidence, source,
       explanation); engine context; parallel fan-out + merge
-- [ ] V1.S3.T2 [seq] Fact-cache layer — read-through Postgres cache
-      honoring per-source freshness windows; fetch dedupe;
-      recorded-fixture mode for tests
+- [ ] V1.S3.T2 [seq after [V1.S2.T4](#v1s2--skeleton--design-foundations-parallel-lane-with-s1)] Fact-cache layer — read-through
+      Postgres cache honoring per-source freshness windows; fetch
+      dedupe; recorded-fixture mode for tests. The cache IS
+      Postgres, so it cannot start before the migrations exist
+      ([D-087](record/DECISIONS.md#d-087--product-the-model-boundary-and-three-plan-corrections))
 - [ ] V1.S3.T3 [P after T2] Weather module (deep) — forecast-vs-
       climatology blend labeled in output; per-activity sensitivity
       profiles (wind, rain, fog, temp)
@@ -125,8 +127,9 @@ for any destination + dates using Weather and Sky & sea.
 - [ ] V1.S3.T5 [seq after T3+T4] Scoring + explanations — verdicts ->
       activity/day/trip scores with confidence; reason rendering;
       `engine demo <place> <dates>` harness
-- [ ] V1.S3.T6 [P] Engine test suite — golden tests on fixtures; CI
-      runs with zero live calls
+- [ ] V1.S3.T6 [P] Engine test suite — golden tests on fixtures AND
+      the in-scope input eval set; CI runs with zero live calls
+      ([D-087](record/DECISIONS.md#d-087--product-the-model-boundary-and-three-plan-corrections))
 - [ ] V1.S3.T7 [P after T2] Actuals harvester — scheduled job that
       records observed values once a fact's valid_for passes; pairs
       with the claim ledger for calibration ([D-015](record/DECISIONS.md#d-015--data-asset-law); spec:
@@ -182,9 +185,13 @@ Completion criteria: a public demo URL runs three seeded wow scenarios smoothly.
       transitions, empty states
 - [ ] V1.S8.T2 [P] Reliability surfacing audit — error/edge handling;
       every unverified fact visibly labeled
-- [ ] V1.S8.T3 [seq] Demo scenarios + perf — three seeded scenarios
-      with warmed cache, streaming latency pass, README demo section,
-      public URL
+- [ ] V1.S8.T3 [seq after T1, T2, T4] Demo scenarios + perf — three
+      seeded scenarios with warmed cache, streaming latency pass,
+      README demo section, public URL
+- [ ] V1.S8.T4 [P] Demo guardrails — per-client rate limit and a
+      spend cap on the model route with a graceful "demo is resting"
+      state, plus a bot gate; nothing public before it
+      ([D-087](record/DECISIONS.md#d-087--product-the-model-boundary-and-three-plan-corrections))
 
 ## V2 — Real users · rough bucket
 accounts & auth (Supabase) with saved trips ·

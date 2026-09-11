@@ -1,17 +1,5 @@
 ## Open
 
-- ⏳ When the check contract is born, rule the EVAL-SET GATE by
-  D-number: a ~50-trip golden set with hand-checked ground truth,
-  its calibration read before [V1.S4](ROADMAP.md#v1s4--suggest)
-  opens. Fills OPEN-9. (2026-07-28, the founder + the external
-  reviewer) → [ENGINE](ENGINE.md#12-open-register)
-
-- ⏳ Rule the LLM-BOUNDARY RULE by D-number in the same decide:
-  the LLM resolves language at Intake and phrases at Render, and
-  never originates a fact, a score, or a rank. A new
-  open-register slot. (2026-07-28, the founder + the external
-  reviewer) → [ENGINE](ENGINE.md#12-open-register)
-
 - ⏳ Give [ENGINE](ENGINE.md) the right frontmatter — it reads
   `type: spec` though it is a living consolidation. The founder's
   word: it stays for now, resolved at the first engine bench,
@@ -724,6 +712,8 @@ exception) — it is not lifted back for its own sake.
 The outcome ledger — one line each, newest first. A closed idea
 keeps its answer, never its narrative.
 
+- 🟢 THE EVAL-SET GATE IS RULED — it is an [ENGINE §11](ENGINE.md#11-invariants--the-reliability-law) invariant now ("any in-scope input is handled — measured against the eval set V1.S3.T6 owns") rather than a slot waiting on the check contract, and [V1.S3.T6](ROADMAP.md#v1s3--engine-core--two-families-deep) owns the set itself. OPEN-9 is marked CLOSED in place, its number kept so every inline reference still resolves. → [D-087](record/DECISIONS.md#d-087--product-the-model-boundary-and-three-plan-corrections)
+- 🟢 THE LLM-BOUNDARY RULE IS RULED, AND IT IS WIDER THAN THE LINE ASKED — not a new open-register slot but an [ENGINE §11](ENGINE.md#11-invariants--the-reliability-law) invariant: the model structures at Intake, phrases at Render, and may PROPOSE candidates that Acquire verifies; it never produces a fact, a score, a confidence, a grade or a source, every model output entering a stage is schema-validated, and a model's own world claim lives only at ladder rung 5, labeled, never reaching Judge or Aggregate. → [D-087](record/DECISIONS.md#d-087--product-the-model-boundary-and-three-plan-corrections)
 - 🟢 DECIDE HEADINGS ARE TAGGED — every new decide heading opens with `[product]` or `[workshop]`, forward-only, no past heading touched because a heading is frozen at mint. Ruled at the next product decide exactly as the line asked, and [D-086](record/DECISIONS.md#d-086--workshop-the-product-first-window) is the first heading to carry a tag. → [D-086](record/DECISIONS.md#d-086--workshop-the-product-first-window)
 - 🟢 THE DESIGN-REVIEW GATE HAS MOTION EYES — for motion-intensive surfaces it now records VIDEO or a TRACE of the opening moment plus one interaction, at 375 and 1440, attached to the findings; stills stay the composition check, and a session that cannot capture says so and marks every timing question UNVERIFIED. Built, not filed — and the capability was the hard half: the recording tools exist ONLY when the playwright MCP is registered with `--caps devtools`, which the first draft of this work did not do, so the duty would have degraded silently to stills. The registration now carries it, the agent's allowlist names the recording tools, and all fourteen tools it names were checked against the live server. Duty and capability both live in [machine-setup step 12](skills/machine-setup.md#one-time-per-machine); the work PC's copy was rewritten from that master and proven identical by extraction and diff. → [#352](https://github.com/wsher0901/roam/pull/352)
 - 🟢 THE TASTE PASS RAN AND THE DIRECTION IS NAMED — `place-first`: the plan lives on a living map, place is the ground, provenance pins to place. Chosen from a LIVE probe after a first round of static candidates was rejected for varying the typeface inside one metaphor; the pair (Archivo · Public Sans · JetBrains Mono) is ratified as worn, two reference slots are seeded by the picked probe, and the COLOUR TOKENS plus three slots stay reserved and unruled. → [DESIGN](DESIGN.md) · [#349](https://github.com/wsher0901/roam/pull/349)
