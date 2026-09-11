@@ -1,13 +1,12 @@
 ---
 type: memory
 id: holding-page
-updated: 2026-09-11 · bench birth · work PC control tower
+updated: 2026-09-11 · canary claim · work PC agent-team lane C
 ---
 # holding-page — the create-next-app template goes
 
 ## Status
-bench ready, no worker yet — birthed 2026-09-11 by the work PC
-control tower.
+claimed by work PC agent-team lane C — 2026-09-11
 
 ## What this task is
 The deployed URL still shows the create-next-app template: the
