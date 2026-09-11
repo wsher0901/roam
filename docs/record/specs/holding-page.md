@@ -5,7 +5,7 @@ title: The template goes; a holding page takes its place
 status: open
 stage: V1.S2
 branch: feat/holding-page
-pr: —
+pr: 365
 opened: 2026-09-11
 shipped: —
 ---
@@ -84,20 +84,20 @@ not by exempting the screen from having states.
 
 ## Done means
 
-- [ ] `layout.tsx` metadata title is `Roam` and description is
+- [x] `layout.tsx` metadata title is `Roam` and description is
       `Trip planning that checks the details.`
-- [ ] `page.tsx` renders the word Roam and that one line, centred,
+- [x] `page.tsx` renders the word Roam and that one line, centred,
       and nothing else.
-- [ ] No template remnant anywhere: no `next/image`, no
+- [x] No template remnant anywhere: no `next/image`, no
       `next.svg`/`vercel.svg` reference, no nextjs.org or
       vercel.com link.
-- [ ] The font loads in `layout.tsx` are unchanged.
+- [x] The font loads in `layout.tsx` are unchanged.
 - [ ] The two files' combined diff is under 40 lines.
-- [ ] `npm run lint`, `npm run format:check`, `npm test` and
+- [x] `npm run lint`, `npm run format:check`, `npm test` and
       `npm run build` all pass.
-- [ ] The Vercel preview renders the holding page.
-- [ ] The memory records the one-state reading in its own words.
-- [ ] The diff touches `src/app/layout.tsx`, `src/app/page.tsx`,
+- [x] The Vercel preview renders the holding page.
+- [x] The memory records the one-state reading in its own words.
+- [x] The diff touches `src/app/layout.tsx`, `src/app/page.tsx`,
       this spec, and `docs/memory/holding-page.md` — nothing else.
 
 ## Deviations
