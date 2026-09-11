@@ -141,6 +141,73 @@ construction**: the patcher asserts exactly one match per pattern
 and refuses to write otherwise, so a mismatch could not become a
 silent partial edit.
 
+## The critic round
+The pre-gate critic ([ship §6](../skills/ship.md#6--the-gate)) ran on
+this branch and returned **seven findings — three notable, four
+minor, none blocking.** Four repaired, three carried to THE GATE.
+Its own stated limit, which bears on how much the round proves: that
+session had no shell, so it reconstructed the change set from the
+branch tree against the spec, D-087's `Affects:` line and this
+memory's account of eleven replacements — the three agreed exactly,
+but an edit outside that set would have been invisible to it.
+
+**REPAIRED**
+
+1. ⚪ **ENGINE §0's reading key contradicted §12.** The key defined
+   OPEN slots as "decisions not yet made", leaving no room for a
+   slot closed in place — so a reader learning the file's
+   conventions from §0 met a contradiction one section later. A
+   clause was added, and [§0](../ENGINE.md#0-what-this-is) went
+   into D-087's `Affects:` with it.
+2. ⚪ **Two "§Closed" links had no anchor**, landing a reader at the
+   top of a 900-line file. Now `#closed`. This is precisely the
+   half of the weave rule `check:links` cannot see — the checker
+   proves a link RESOLVES, never that it points at the right
+   heading.
+3. 🟡 **The spec under-named the ripple.** Plan step 3 listed ENGINE
+   §11/§2/§12 and the two ROADMAP stages, but the commit also
+   rewrote §10's stale OPEN-9 sentence and moved two
+   [IDEAS](../IDEAS.md) lines to §Closed. Both edits were correct
+   and both were narrated here — but
+   [LAWS §Task anatomy](../LAWS.md#task-anatomy) requires a
+   DUAL-WRITE, the spec getting the edit and the memory narrating
+   it, and only the memory half had happened. The spec now names
+   all of it and carries a Deviations entry saying the contract was
+   caught up rather than written first.
+4. ⚪ The `[seq after T1, T2, T4]` separator style — the critic
+   noted the file already carries `and`, `+` and `–` for the same
+   concept, making this a fourth. **Not repaired and not
+   dismissed**: a ROADMAP-wide normalization is a product edit the
+   window allows, but it is a different bench's, and doing it here
+   would widen a diff under batched review.
+
+**CARRIED TO THE GATE**
+
+5. 🟡 The critical-path consequence of ruling 3 — see Pending
+   issues (a). Raised as a `BLOCKED:` comment rather than decided.
+6. 🟡 The BLOCKED question's own routing: the ambiguity's source is
+   [HOME §Roadmap manual](../HOME.md#roadmap-manual), which says
+   "after X" names the dependency "when it is not simply the
+   previous task" and never says whether naming X REPLACES or ADDS
+   TO the previous-task default. **Clarifying HOME is a WORKSHOP
+   edit that [D-086](../record/DECISIONS.md#d-086--workshop-the-product-first-window)'s
+   window blocks**, so the durable fix available now is the
+   product-side one: if the founder rules that T1 still gates T2,
+   write `[seq after T1 and V1.S2.T4]` so the line is
+   self-sufficient under EITHER reading of the manual.
+7. ⚪ The Status line reads `complete, awaiting merge` while an
+   unanswered `BLOCKED:` question is live. Deliberate: the payload
+   IS complete, and the question rides the bench rather than
+   halting it. Recorded so it is known the board will render this
+   bench as gate-ready with an open question attached.
+
+**NOT FILED, and worth knowing why.** The critic considered flagging
+that [ROADMAP](../ROADMAP.md) restates ruling 3's reason inline,
+which is a second copy under the routing law — then didn't, because
+the spec's Done-means explicitly ordered "with the reason" and
+V1.S2.T5 carries a comparable inline rationale. Precedent plus an
+instruction beat the general rule.
+
 ## The flight's findings — recorded here because they have no other home
 This bench is the tower's own, and the test flight that carried it
 surfaced four things that are WORKSHOP machinery rather than Roam.
