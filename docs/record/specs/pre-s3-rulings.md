@@ -2,12 +2,12 @@
 type: spec
 id: pre-s3-rulings
 title: The model boundary and three plan corrections
-status: open
+status: shipped
 stage: V1.S3
 branch: docs/pre-s3-rulings
-pr: —
+pr: #366
 opened: 2026-09-11
-shipped: —
+shipped: 2026-09-11
 ---
 # pre-s3-rulings — what the model may and may not produce, before S3 starts
 
