@@ -4824,3 +4824,143 @@ workshop bench,
 [chore/system-audit (#362)](https://github.com/wsher0901/roam/pull/362),
 to fix the machinery the Web full-pass validation listed; the window
 resumes at its merge.
+
+## D-087 — [product] The model boundary and three plan corrections
+
+In full: 2026-09-11 — THE MODEL BOUNDARY, AND THREE CORRECTIONS TO THE PLAN. A language model structures what the traveler said (Intake), phrases explanations and rendered text (Render), and may propose candidates that Acquire then verifies. It never produces a world fact, a score, a confidence, a grade, or a source; every model output entering a stage is schema-validated; a model's own world claim exists only at ladder rung 5, labeled, and never enters Judge or Aggregate. That becomes an ENGINE §11 invariant, with one line in §2's Intake procedure pointing at it. Three plan corrections ride with it. V1.S8 gains T4 — demo guardrails: a per-client rate limit and a spend cap on the model route with a graceful "demo is resting" state, plus a bot gate, and nothing public before it — and T3 waits on it. V1.S3.T2 waits on V1.S2.T4, because the fact cache is Postgres and needs the migrations. And V1.S3.T6 grows from golden tests on fixtures to golden tests AND the in-scope input eval set, with §11 gaining "any in-scope input is handled — measured against the eval set V1.S3.T6 owns" — which closes OPEN-9, its number kept so every inline reference still resolves.
+
+**Decision:** four rulings, in force from this entry's merge.
+
+**RULING 1 — THE MODEL BOUNDARY.**
+[ENGINE §11](../ENGINE.md#11-invariants--the-reliability-law) gains
+the invariant, in these words:
+
+> A language model structures what the traveler said (Intake),
+> phrases explanations and rendered text (Render), and may propose
+> candidates that Acquire then verifies. It never produces a world
+> fact, a score, a confidence, a grade, or a source; every model
+> output entering a stage is schema-validated; a model's own world
+> claim exists only at ladder rung 5, labeled, and never enters
+> Judge or Aggregate.
+
+**The rule is a boundary, not a prohibition** — it says what the
+model IS for as precisely as what it is not for, so a builder
+reaching for it at Intake or Render needs no permission and a
+builder reaching for it at Judge needs no argument.
+[ENGINE §2](../ENGINE.md#2-intake--resolve-the-traveler)'s procedure
+step 1 gains ONE line noting the model's role there and pointing at
+§11, because Intake is where a builder meets the question first and
+a rule met one file away is a rule missed. Rung 5 is the
+[ladder](../ENGINE.md#3-acquire--get-the-facts)'s LLM-research rung
+([D-010](#d-010--global-coverage-via-graded-fallback-ladders)),
+already rendered unverified — the boundary adds no new render policy,
+it names where a model's own claim is allowed to sit.
+
+**RULING 2 — DEMO GUARDRAILS.**
+[V1.S8](../ROADMAP.md#v1s8--demo-polish) gains:
+
+> V1.S8.T4 [P] Demo guardrails — per-client rate limit and a spend
+> cap on the model route with a graceful "demo is resting" state,
+> plus a bot gate; nothing public before it
+
+and **V1.S8.T3 becomes `[seq after T1, T2, T4]`**, so the task that
+publishes the URL cannot land before the task that protects it.
+V1's goal is one PUBLIC URL running a model route; the guardrail is
+therefore part of shipping the demo, not part of hardening it later.
+
+**RULING 3 — THE S3 DEPENDENCY.**
+[V1.S3.T2](../ROADMAP.md#v1s3--engine-core--two-families-deep)
+becomes `[seq after T1 and V1.S2.T4]`. The reason is exact: the fact
+cache IS Postgres, and
+[V1.S2.T4](../ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)
+is the migration task — a read-through cache cannot be built against
+a schema that has not been applied. The dependency existed in fact
+and was missing from the plan.
+
+**T1 IS NAMED ALONGSIDE IT, and that is a correction made at
+review.** As first written the tag read `[seq after V1.S2.T4]`, and
+under this file's own convention — [V1.S2.T4](../ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)
+reads `[seq after V1.S1.T7 and T3]`, naming its previous task as
+well as its cross-stage one — naming any dependency means naming
+ALL of them. So the shorter form silently dropped T1. Writing both
+makes the line self-sufficient under either reading of
+[HOME §Roadmap manual](../HOME.md#roadmap-manual), whose "after X"
+clause does not say whether naming X replaces or adds to the
+previous-task default.
+
+**AND THE WIDER CONSEQUENCE IS ACCEPTED RATHER THAN OVERLOOKED.**
+[V1.S3](../ROADMAP.md#v1s3--engine-core--two-families-deep) already
+follows [V1.S1](../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
+by stage order — stages are ordered slices and only
+[V1.S2](../ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)
+is declared parallel — so this ruling adds ONE EDGE, S3.T2 ← S2.T4,
+not a stage coupling; it is absorbed when S2.T4 runs promptly after
+S1.T7 inside S2's lane, with S3.T1 in parallel.
+
+**RULING 4 — THE EVAL SET.**
+[V1.S3.T6](../ROADMAP.md#v1s3--engine-core--two-families-deep)
+becomes "Engine test suite — golden tests on fixtures AND the
+in-scope input eval set; CI runs with zero live calls".
+[ENGINE §11](../ENGINE.md#11-invariants--the-reliability-law) gains
+"Any in-scope input is handled — measured against the eval set
+V1.S3.T6 owns". **OPEN-9 is marked CLOSED by this entry → §11 in the
+[register](../ENGINE.md#12-open-register), AND ITS NUMBER IS KEPT**,
+because inline `OPEN-n` references resolve by number — in
+[ENGINE §10](../ENGINE.md#10-learn--the-loop-back) and across the
+[chronicle](../chronicle/engine.md) — and a renumbered register
+breaks all of them at once. The register's own preamble now says so,
+so the next closure does not have to rediscover it.
+
+**Why:** the Web full-pass validation of 2026-09-10, which read the
+engine and the plan end to end and returned these four as the gaps
+worth ruling before
+[V1.S3](../ROADMAP.md#v1s3--engine-core--two-families-deep) opens.
+Nothing here is derived from that pass beyond its date and its
+findings; the rulings are the founder's.
+
+Two of the four were already banked. [IDEAS](../IDEAS.md) had
+carried, since 2026-07-28, a line asking that the eval-set gate be
+ruled by D-number and a line asking that the LLM-boundary rule be
+ruled in the same decide — both from the founder and the external
+reviewer. **This entry closes both, and closes the second WIDER than
+it was asked:** the line proposed a new open-register slot, and the
+ruling makes it an invariant instead. A slot defers; an invariant
+binds.
+
+**Alternatives rejected:**
+
+- **Leave the model boundary to
+  [V1.S3.T1](../ROADMAP.md#v1s3--engine-core--two-families-deep)'s
+  check contract.** Rejected — the contract governs check modules,
+  and the model's reach is wider than any one stage; a rule that
+  binds Intake, Acquire, Judge, Aggregate and Render belongs with
+  the invariants that bind all of them.
+- **Guardrails at V2, with accounts.** Rejected — V1's own goal is a
+  PUBLIC URL with a model route behind it, so the exposure is V1's,
+  and a spend cap that arrives with billing arrives after the bill.
+- **The eval set as V2 work.** Rejected — it is the instrument that
+  measures whether the engine handles arbitrary input, so deferring
+  it defers the evidence for the claim V1 exists to make.
+
+**Affects:**
+[ENGINE §0](../ENGINE.md#0-what-this-is) (the reading key's OPEN-slot
+bullet, so it does not contradict §12's keep-the-number rule) ·
+[ENGINE §2](../ENGINE.md#2-intake--resolve-the-traveler) (procedure
+step 1 — one line on the model's role, pointing at §11) ·
+[ENGINE §10](../ENGINE.md#10-learn--the-loop-back) (the sentence
+that called the eval-set gate OPEN-9) ·
+[ENGINE §11](../ENGINE.md#11-invariants--the-reliability-law) (two
+invariants — the model boundary, and any in-scope input is handled —
+plus the Sources line) ·
+[ENGINE §12](../ENGINE.md#12-open-register) (the keep-the-number
+rule in the preamble; OPEN-9 marked CLOSED in place) ·
+[ROADMAP V1.S3](../ROADMAP.md#v1s3--engine-core--two-families-deep)
+(T2's dependency, T6's eval set) ·
+[ROADMAP V1.S8](../ROADMAP.md#v1s8--demo-polish) (T4 added, T3
+resequenced) ·
+[IDEAS §Closed](../IDEAS.md#closed) (the 2026-07-28 eval-set and
+LLM-boundary lines compressed and moved there) ·
+[D-010](#d-010--global-coverage-via-graded-fallback-ladders) (cited,
+unchanged — rung 5 is its ladder) ·
+[D-086](#d-086--workshop-the-product-first-window) (the `[product]`
+heading tag it minted, second use) · this entry.

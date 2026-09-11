@@ -6,7 +6,7 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-09-11 · 17:33 UTC by ship's weld · from work PC
+Painted 2026-09-11 · 17:37 UTC by ship's weld · from work PC
 THE PRODUCT-FIRST WINDOW IS OPEN AGAIN — it was suspended for ONE
 bench, [#362](https://github.com/wsher0901/roam/pull/362), and
 RESUMED AT ITS MERGE
@@ -14,8 +14,8 @@ RESUMED AT ITS MERGE
 amendment line). No workshop bench until
 [V1.S1](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
 closes.
-THE TEST FLIGHT IS LANDING — four product benches, three welded and
-the fourth welding · needs-you 2 ·
+THE TEST FLIGHT IS DOWN — all four product benches welded and
+merged · needs-you 2 ·
 git outranks this board.
 How to read it → [HOME §Reading the board](HOME.md#reading-the-board)
 
@@ -52,25 +52,13 @@ Last flight: LANDED 2026-08-04 21:16 UTC via MANUAL-LAND.
 
 ## In flight
 
-**THE TEST FLIGHT — four product benches, born bench-first from
-`a893524` and run as an agent team with the founder at the desk.**
-The batched external Web review
-([D-086](record/DECISIONS.md#d-086--workshop-the-product-first-window)
-ruling 3, extended to this flight) passed two and returned repairs
-on two.
-
-- [#363](https://github.com/wsher0901/roam/pull/363)
-  design-reference-note — **MERGED.**
-- [#364](https://github.com/wsher0901/roam/pull/364) sources-restamp
-  — **MERGED.**
-- [#365](https://github.com/wsher0901/roam/pull/365) holding-page —
-  **MERGED.** The repairs landed and the design-review gate was
-  re-run against the repaired surface: Geist confirmed at the pixels
-  by letterform, `font-extralight` finally expressed, `/favicon.ico`
-  404, swap reflow measured zero.
-- [#366](https://github.com/wsher0901/roam/pull/366) pre-s3-rulings
-  — **PASS re-issued, welds next.** Both `BLOCKED:` questions
-  answered in the payload.
+**Nothing flying. The test flight is complete** — four product
+benches born bench-first from `a893524`, run as an agent team with
+the founder at the desk, batch-reviewed on the Web, and all four
+merged: [#363](https://github.com/wsher0901/roam/pull/363) ·
+[#364](https://github.com/wsher0901/roam/pull/364) ·
+[#365](https://github.com/wsher0901/roam/pull/365) ·
+[#366](https://github.com/wsher0901/roam/pull/366).
 
 The four V1.S1 benches
 [#358](https://github.com/wsher0901/roam/pull/358)–[#361](https://github.com/wsher0901/roam/pull/361)
@@ -78,30 +66,34 @@ still sit at birth, untouched and claimable.
 
 ## Working on
 
-**THE TEST FLIGHT'S TWO REPAIRS** — [#365](https://github.com/wsher0901/roam/pull/365)
-and [#366](https://github.com/wsher0901/roam/pull/366), both on the
-external review's instruction. Each takes one tower commit, then the
-review word again on its new head.
-
-**WHAT THE FLIGHT WAS FOR.** It was the dress rehearsal for
+**NOTHING OPEN.**
 [V1.S1](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
-T3–T6 — the point was the vehicle, not the payload. The canary
-handshake was the thing being tested, after 2026-09-10 dispatched
-four lanes and acked none: all three lanes acked in **4.0s, 2.6s and
-2.6s**, inside a ten-minute window, because the acks were pre-staged
-as a watcher armed BEFORE dispatch. The window is per-lane; ack
-capacity is shared.
+T3–T6 are next and the founder decides when they start.
 
-**THE PRODUCT-FIRST WINDOW.**
+**WHAT THE FLIGHT PROVED.** It was the dress rehearsal for T3–T6 and
+the point was the vehicle, not the payload. The canary handshake was
+the thing under test, after 2026-09-10 dispatched four lanes and
+acked none: all three lanes acked in **4.0s, 2.6s and 2.6s** inside
+a ten-minute window, because the acks were PRE-STAGED as a watcher
+armed BEFORE dispatch. The window is per-lane; ack capacity is
+shared. Every lane pushed every commit, none wrote main, and none
+shared a file with a sibling.
+
+**AND THE REVIEWS EARNED THEIR PLACE.** The design-review gate found
+a bug three authenticated fetches could not: the whole screen
+rendering in Times New Roman from a token pointing at itself, on
+main as much as on the bench. A bench critic found that a
+"one state" claim counted the COMPONENT while the law governs the
+SCREEN. Of 25 critic findings across four benches, **eight were in a
+spec the control tower wrote rather than in any lane's work** —
+including a Done-means box that pre-wrote its own conclusion, so a
+lane that disagreed would have failed it.
+
+**THE PRODUCT-FIRST WINDOW** stays open.
 [D-086](record/DECISIONS.md#d-086--workshop-the-product-first-window)
 closes the workshop to new benches until
 [V1.S1](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
-closes, puts the ceremony on a diet, batches the review, and splits
-the inbox so §Open holds product work only. It expires on
-[V1.S1](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)'s
-own checkboxes — nothing has to remember to end it. It was suspended
-once, for [#362](https://github.com/wsher0901/roam/pull/362), and
-resumed at that bench's merge.
+closes, and expires on its own checkboxes.
 
 The standing order
 ([D-060](record/DECISIONS.md#d-060--the-three-phase-standing-order),
@@ -112,12 +104,10 @@ phase 2's by
 one phase per line:
 
 - PHASE 1 — settle & test: **CLOSED 2026-08-05.**
-- PHASE 2 — the vault: **CLOSED 2026-08-07.** The
-  connections-and-content polish pass was carved out as its own
-  bench, `vault-connections`, which gates nothing.
-- PHASE 3 — Roam: **OPEN, and now the only thing running.**
+- PHASE 2 — the vault: **CLOSED 2026-08-07.**
+- PHASE 3 — Roam: **OPEN, and the only thing running.**
   [V1.S1](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
-  T3–T6 relaunch from scratch, then T7; plus
+  T3–T6, then T7; plus
   [V1.S2.T5](ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)
   design foundations.
 
@@ -126,6 +116,13 @@ one phase per line:
 **Completed** — the last five; the full chronology is
 [the ledger](record/history/README.md#the-ledger).
 
+- **WHAT THE MODEL MAY AND MAY NOT PRODUCE** —
+  [D-087](record/DECISIONS.md#d-087--product-the-model-boundary-and-three-plan-corrections)
+  makes the model boundary an ENGINE §11 invariant, adds demo
+  guardrails as V1.S8.T4 with nothing public before them, gates the
+  fact cache on the migrations, and grows the eval set — closing
+  OPEN-9 in place with its number kept.
+  [#366](https://github.com/wsher0901/roam/pull/366)
 - **THE FIRST THING AT THE PUBLIC URL THAT IS OURS** — the
   create-next-app template is gone; eight lines render Roam and one
   sentence. The design-review gate then found what three
@@ -152,18 +149,11 @@ one phase per line:
   the reason the deletion was safe.
   [#363](https://github.com/wsher0901/roam/pull/363)
 - **DOES THE MACHINERY DO WHAT IT SAYS?** — the audit that became a
-  fix. The merge gate's real answer written down (the server refuses
-  four things and can require no approval while one account owns
-  every seat, so the founder's word rests on the record, not the
-  platform); the permission friction fixed at its four causes and
-  the rails mirrored across both shells; `git add -A` out of the
-  session-end hook; a weave gate that fails a bare D-number. Two
-  gaps parked rather than claimed closed.
+  fix. The merge gate's real answer written down, the permission
+  friction fixed at its four causes, and a weave gate that fails a
+  bare D-number. Two gaps parked rather than claimed closed.
   [#362](https://github.com/wsher0901/roam/pull/362)
-- **SIXTEEN ADVISORIES TO ZERO** — Next 16.3.4 closes a critical
-  middleware bypass; a monthly grouped dependabot lane replaces the
-  bench. One gap named rather than closed: majors still need a
-  manual sweep. [#356](https://github.com/wsher0901/roam/pull/356)
+
 **Issues** — none with a home nowhere else.
 
 Every line this section used to carry now lives at its own home —
@@ -176,36 +166,34 @@ table, gained one before it moved:
 
 ## Where we are (Roam)
 
-V1 — The demo · 5/34 █████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+V1 — The demo · 5/35 █████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 S1 · Data Definition · 2/7 ██░░░░░
 S2 · Skeleton & design · 3/5 ███░░
-S3–S8 · queued in order · 0/22
+S3–S8 · queued in order · 0/23
 
-Unchanged by this weld: the test flight's benches are slug-keyed, so
-none of them ticks a roadmap box. Ticks are ship's alone.
+The V1 total moved 34 → 35:
+[D-087](record/DECISIONS.md#d-087--product-the-model-boundary-and-three-plan-corrections)
+added V1.S8.T4, demo guardrails.
+No box was ticked by this flight — all four benches were slug-keyed,
+and ticks are ship's alone.
 
 ## Web + Design
 
 - (Web) "GitHub workflow protocol and web instructions setup" — the
-  ops chat. It ran the FULL-PASS VALIDATION that turned
-  [#362](https://github.com/wsher0901/roam/pull/362) from audit into
-  fix-everything, and reviewed that bench PASS on an independent
-  clone and install. Next: the batched T3–T6 review under
-  [D-086](record/DECISIONS.md#d-086--workshop-the-product-first-window)
-  ruling 3.
+  ops chat. It ran the full-pass validation behind
+  [#362](https://github.com/wsher0901/roam/pull/362), then the
+  BATCHED REVIEW of this flight's four PRs
+  ([D-086](record/DECISIONS.md#d-086--workshop-the-product-first-window)
+  ruling 3, extended to it): two PASS, two repaired and re-issued
+  per sha. Next: the T3–T6 batch when those benches fly.
 - (Design) no chat open; [DESIGN](DESIGN.md) holds the direction and
-  the reserved slots.
+  the reserved slots — colour tokens and three reference images
+  still TBD, still the founder's.
 
 ## Next
 
-**THE TWO REPAIRS, THEN THE REVIEW WORD AGAIN.**
-[#365](https://github.com/wsher0901/roam/pull/365) and
-[#366](https://github.com/wsher0901/roam/pull/366) each take one
-tower commit; a new head voids that PR's verdict, so each goes back
-to the Web surface for "review" on its new sha. Merge words stay
-per-PR.
-
-Then **[V1.S1](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
-T3–T6 for real** — four benches already sit at birth as
-[#358](https://github.com/wsher0901/roam/pull/358)–[#361](https://github.com/wsher0901/roam/pull/361),
-and the flight just proved the vehicle that will fly them.
+**[V1.S1](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
+T3–T6 — the founder's call when.** Four benches already sit at birth
+as [#358](https://github.com/wsher0901/roam/pull/358)–[#361](https://github.com/wsher0901/roam/pull/361),
+and the test flight just proved the vehicle that will fly them.
+Closing T3–T7 also closes the product-first window.
