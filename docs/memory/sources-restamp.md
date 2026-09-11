@@ -1,7 +1,7 @@
 ---
 type: memory
 id: sources-restamp
-updated: 2026-09-11 · completion · work PC agent-team lane B
+updated: 2026-09-11 · critic repair · work PC agent-team lane B
 ---
 # sources-restamp — the three weather spikes, re-run and restamped
 
@@ -13,6 +13,11 @@ re-read, and the four stamps in [SOURCES](../data/SOURCES.md)
 carry today's date and today's observed values. Nothing
 contradicted a grade, freshness window, coverage claim or cost
 line, so nothing else moved and the bench never had to block.
+
+Repaired at the critic round: the licence stamp now carries a
+captured, re-runnable artifact like the three spikes, and the spec
+was widened so the contract demands that of every re-verification
+rather than of spikes alone.
 
 ## What this task is
 [SOURCES](../data/SOURCES.md)'s three weather spike stamps and its
@@ -75,7 +80,8 @@ payload carried every key the entry's "Confirmed keys" line names
 messageType, areaDesc, headline, description, instruction) inside a
 32-key CAP payload. Claim intact; count restamped.
 
-**The licence line was re-verified, not assumed.** open-meteo.com/en/terms
+**The licence line was re-verified, not assumed — and at the critic
+round it gained the artifact that proves it.** open-meteo.com/en/terms
 was fetched and read today: CC-BY 4.0, attribution required, free
 tier under 10,000 calls/day for non-commercial use, and no
 share-alike condition anywhere on the page. That matches the entry's
@@ -85,6 +91,31 @@ date moved. Had the page been unreachable, the stamp would have
 stayed at 2026-06-12 and the bench would have blocked — a
 verification date is a claim about an act performed, not a date to
 refresh on faith.
+
+**But as first written this bench held that stamp to a WEAKER
+standard than the three cheap ones, and the critic was right to
+catch it.** The three spike stamps could each be re-derived by a
+cold reader running a command; the licence stamp could not, and the
+account of the page given here was exactly the set of claims the
+entry already asserts — so the record could not tell a real read
+apart from a restatement of the thing being verified. That is an
+evidentiary hole whether or not the fetch happened, and the
+expensive stamp is precisely the one that must not rest on trust.
+The page has been re-fetched with `curl` and the SENTENCES THAT
+CARRY THE CLAIMS are pasted verbatim below, with the URL, the
+retrieval time and a re-runnable command — the same standard the
+three spikes met. The wording is the page's own, not a paraphrase:
+"Less than 10'000 API calls per day" and "the terms of the CC-BY
+4.0 licence" are quotations, and the apostrophe-as-thousands-separator
+is Open-Meteo's own typography rather than the entry's "10,000".
+
+**The spec shared the fault, so the spec was widened.** Its Plan
+step 2 scoped by-command capture to the three spikes, and Done-means
+item 1 named only the spikes — so the fourth stamp was never
+required to leave a trace, and a bench that met its contract exactly
+would still have shipped the hole. Plan step 2 now covers the
+licence re-verification and Done-means carries its own box, per the
+dual-write rule: the contract takes the edit, this file narrates it.
 
 **The hard-stop rule never fired.** Every observed value was
 compared against the claim standing beside it — keys against
@@ -106,9 +137,10 @@ at the worktree's own lockfile. `npm ci` in the worktree fixes it,
 and the build then passes clean. The full CI mirror is green here
 and on the pushed head.
 
-## The spike runs, by command
+## The runs, by command
 Run from the repository root on 2026-09-11. A cold reader re-runs
-these three commands and compares.
+these four commands and compares — the three spikes, and the
+licence page that the fourth stamp rests on.
 
 `node scripts/spikes/weather-forecast.mjs`
 
@@ -164,6 +196,52 @@ sample:
   expires: 2026-09-11T11:45:00-04:00
   areaDesc: Bay, FL; Walton, FL
 ```
+
+### The licence re-verification
+URL: `https://open-meteo.com/en/terms`, retrieved
+2026-09-11T13:39:08Z. ONE fetch produced every value below — the
+status and size, the sentences, and the share-alike count — so no
+line here is spliced from a different retrieval:
+
+```sh
+curl -sS -L -o terms.html -w "HTTP %{http_code} BYTES %{size_download}" https://open-meteo.com/en/terms
+echo
+grep -oE "Less than [^<]+|You may only use the free API[^<]+|You accept to the CC-BY 4.0 licence[^<]*|the terms of the CC-BY 4.0 licence[^<]*" terms.html
+grep -cioE "share-alike|BY-SA|ShareAlike" terms.html
+```
+
+```text
+HTTP 200 BYTES 37511
+Less than 10'000 API calls per day, 5'000 per hour and 600 per minute.
+You may only use the free API services for non-commercial purposes.
+You accept to the CC-BY 4.0 licence, as specified in the 
+the terms of the CC-BY 4.0 licence,
+0
+```
+
+Reading it. The first two lines are the page's "Non-Commercial
+Use" section, and the first carries the cost line's limit in the
+page's own typography — `10'000`, apostrophe as thousands separator,
+which the entry renders as 10,000. The third and fourth are the
+licence class, stated twice on the page: once in Non-Commercial Use
+and once in the ownership section. Both print short because
+`grep -o` emits only the matched span and the pattern stops at the
+`licence conditions` hyperlink that follows each; the ownership
+sentence reads in full "The data obtained through the API is
+provided under the terms of the CC-BY 4.0 licence, as specified in
+the licence conditions."
+
+**The final `0` is the load-bearing line.** The entry's "no
+share-alike contamination" reading is a claim about an ABSENCE, and
+an absence cannot be evidenced by quoting what IS there — so the
+count of `share-alike`, `BY-SA` and `ShareAlike` across the whole
+fetched page stands in for it, and it is zero.
+
+Every claim the entry makes about this source is therefore pinned to
+a line above: `license_class: CC-BY-4.0` to the two CC-BY sentences,
+the attribution requirement to the licence they name, the cost
+line's free-tier limit to the first sentence, and the no-share-alike
+reading to the zero.
 
 ## Where to look
 - [SOURCES](../data/SOURCES.md) — the four restamped lines: the

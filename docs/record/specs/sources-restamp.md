@@ -63,9 +63,16 @@ date and TODAY's observed values:
 
 1. Read `scripts/spikes/*.mjs` before running them — know what each
    prints and which values the stamps quote.
-2. Run each of the three, capturing full output to the memory file
-   BY COMMAND (the command line and its output, so a cold reader
-   can re-run it).
+2. Capture EVERY re-verification to the memory file BY COMMAND —
+   the command line and its output, so a cold reader can re-run it
+   and compare. This covers all FOUR stamps, not only the three
+   spikes: the licence `verified` date is a claim about an act
+   performed, so the terms-page fetch leaves the same trace — URL,
+   retrieval time, and the sentences carrying the licence class and
+   the rate limit, quoted from the page rather than paraphrased
+   from the entry being verified. An absence the entry relies on
+   (no share-alike) is evidenced by a count returning zero, never
+   by assertion.
 3. Read today's date from the shell clock (`date -u`), never from
    memory — the [time doctrine](../../LAWS.md#knowledge--tracking).
 4. Restamp the three Spike lines and the one licence `verified`
@@ -81,6 +88,10 @@ date and TODAY's observed values:
 - [x] All three spikes were run today and their outputs are in
       `docs/memory/sources-restamp.md`, each with the command that
       produced it.
+- [x] The licence re-verification left the same trace in
+      `docs/memory/sources-restamp.md`: the fetch command, its
+      output, the URL, the retrieval time, and the page's own
+      sentences — not a restatement of the entry's claims.
 - [x] The three `Spike: … run <date>` lines carry today's date and
       today's observed values.
 - [x] The `weather-forecast` licence line carries today's
@@ -93,6 +104,22 @@ date and TODAY's observed values:
       `docs/memory/sources-restamp.md` — nothing else.
 
 ## Deviations
+
+**The Plan's step 2 and Done-means were widened at the critic
+round, not at authoring time.** As first written, step 2 scoped
+by-command capture to the three spikes and Done-means item 1 named
+only the spikes — so the fourth stamp, the Open-Meteo licence
+`verified` date, was never required to leave a trace. The bench
+then did exactly what the contract asked and shipped an
+evidentiary hole: three stamps a cold reader could re-derive by
+running a command, and one that rested on the lane's word, whose
+recorded account of the page was precisely the set of claims the
+entry already asserts. The critic caught it; the terms page was
+re-fetched and captured by command like the other three, and the
+contract now demands that of every re-verification rather than of
+spikes alone. Recorded here because the fault was the SPEC'S as
+much as the lane's — the strict standard was written for the cheap
+stamps and not for the expensive one.
 
 <filled by ship>
 
