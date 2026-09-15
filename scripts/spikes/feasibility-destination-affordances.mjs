@@ -31,8 +31,8 @@ ${TYPES.map(([t, f], i) => `(nwr${f};)->.t${i};`).join("\n")}
 ${TYPES.map((_, i) => `.t${i} out count;`).join("\n")}`;
   const data = await overpass(q);
   const counts = (data.elements ?? []).filter((e) => e.type === "count");
-  TYPES.forEach(([t], i) => {
-    table[dest][t] = Number(counts[i]?.tags?.total ?? 0);
+  TYPES.forEach((_, i) => {
+    table[dest][TYPES[i][0]] = Number(counts[i]?.tags?.total ?? 0);
   });
   console.log(`${dest}: ${JSON.stringify(table[dest])}`);
   await sleep(8000);

@@ -3,7 +3,7 @@
 // FE-11's whole value is the warning "no fuel 180 km after Vik". That number is
 // COMPUTED, not fetched: OSM gives the amenity positions, we compute the gap.
 // The leg under test is Iceland's south coast — the real case the fact names.
-import { overpass, sleep } from "./_overpass.mjs";
+import { overpass } from "./_overpass.mjs";
 
 // Vik -> Hofn along Route 1, the genuinely sparse stretch.
 const BBOX = "63.35,-19.10,64.35,-15.10";
