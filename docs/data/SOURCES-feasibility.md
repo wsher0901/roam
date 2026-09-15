@@ -1457,6 +1457,25 @@ A debugging-and-rendering allowance is not a data asset, and thirty
 days is shorter than the revision series
 [D-015](../record/DECISIONS.md#d-015--data-asset-law) exists to keep.
 
+**TWO READINGS OF THE SAME DOCUMENT, AND THEY ARE TWO FINDINGS RATHER
+THAN A CONFLICT.** A read that stops at the Maps Platform Terms of
+Service finds **§3.2.3(b) "No Caching"** and concludes a flat
+disqualification — which is the right answer to the question *"may we
+keep Maps data?"*, and is where a sibling bench's read landed while
+vetting a different slot. But that clause does not decide by itself:
+it says Customer *"will not cache Google Maps Content EXCEPT AS
+EXPRESSLY PERMITTED UNDER THE MAPS SERVICE SPECIFIC TERMS"* — it
+DEFERS. The Service Specific Terms are where the Places and grounding
+carve-outs actually live, and reading them changes the verdict's
+shape: not "Maps is disqualified" but **"`place_id` may be retained
+indefinitely, Grounded Output for 30 days for evaluation and display
+only, and the structured facts never"**. Only the second version is
+usable, because
+[D-015](../record/DECISIONS.md#d-015--data-asset-law)'s asset-layer
+test turns on exactly which fields survive. Both clauses are quoted
+here from the primary documents, read 2026-09-15, so the founder can
+see the deferral rather than take either reading on trust.
+
 **Plain Places is refused one step earlier**, by Maps Platform Terms of
 Service **§3.2.3(a)**, which names this family's exact payload:
 
