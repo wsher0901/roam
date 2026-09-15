@@ -23,6 +23,22 @@ freshness window — defined in
 A slot whose facts cannot reach rung 5a writes `n/a` AND SAYS WHY;
 silence is not `n/a`.
 
+**THE POLICY IS PER FACT, AND AN ENTRY-LEVEL ROW IS A SHORTHAND, NOT
+THE RULE.** Where every fact a slot serves shares one policy, the
+entry writes it once and says so; the moment two of its facts differ,
+the row splits and names the fact IDs it governs. A copying task that
+reads only the shorthand would inherit the wrong granularity, so the
+shorthand always declares itself.
+
+**GRADE B IS DEFINED BY DOMAIN CLASS, NOT BY THE POLICY THAT LISTS
+THE DOMAIN.**
+[ENGINE §3](../ENGINE.md#3-acquire--get-the-facts) fixes what
+authoritative MEANS — the operator itself, a government body, a
+transit authority, established press — and a policy row APPLIES that
+definition to named domains; it may never promote a domain outside
+those classes to B. Where a row's tag and §3's classes disagree, §3
+governs.
+
 ## Weather slots (V1.S1.T2)
 
 ### weather-forecast
@@ -103,9 +119,9 @@ silence is not `n/a`.
   certainty, onset, expires, ends, status, messageType, areaDesc,
   headline, description, instruction (full CAP-style payload).
 - Grade: B — authoritative where covered; US-only today. Ladder
-  behavior elsewhere: no alert source ⇒ "alerts unverified here"
-  label (rung 5) or silence-with-honesty (rung 6) — never a fabricated
-  all-clear. EU candidate: MeteoAlarm (registration + per-country
+  behavior elsewhere: no alert source ⇒ the retrieval policy below
+  (RUNG 5A ONLY — this slot has no 5b) or silence-with-honesty
+  (rung 6) — never a fabricated all-clear. EU candidate: MeteoAlarm (registration + per-country
   redistribution caveats — vet as its own mini-spike when
   international alerts are prioritized; tracked as the slot's known
   gap).
@@ -147,9 +163,13 @@ silence is not `n/a`.
 - Retrieval policy — model values answer "is it snowing"; retrieval
   is only for the resort-grade truth they cannot carry:
   - allowed domains + grade: the resort operator's own conditions
-    page and the national ski-area association (**B**); regional
-    tourism boards and established press (**B**); other domains
-    (**C**).
+    page (**B**, operator) and established press (**B**); regional
+    tourism boards (**C**) and the national ski-area association
+    (**C**) — neither is an operator, a government body, a transit
+    authority or press under
+    [ENGINE §3](../ENGINE.md#3-acquire--get-the-facts)'s classes,
+    and a trade body describing its own members is not
+    authoritative about them; other domains (**C**).
   - quote required: **yes** — lifts open and groomed runs are
     claims about someone else's operation.
   - freshness window: 24 h, and 6 h inside the trip window.
@@ -164,8 +184,10 @@ silence is not `n/a`.
   computed from [WX-11](FACTS.md#f-wx-11--climate-normals-by-date-of-year) climatology statistics (e.g. months where
   P95 precipitation or heat exceeds thresholds) plus a small curated
   regional table versioned in-repo (seeded from authoritative refs,
-  e.g. NOAA hurricane-season definitions); uncurated regions may use
-  LLM-research grade, rendered unverified (rung 5).
+  e.g. NOAA hurricane-season definitions); uncurated regions fall to
+  the retrieval policy below (RUNG 5A) and, only if that finds
+  nothing, to model memory (RUNG 5B), rendered unverified
+  ([D-088](../record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state)).
 - Grade: C (derived/curated; D where LLM-seeded and not yet curated).
 - Freshness: yearly review.
 - Cost: none. retention_rights: internal derivative of CC-BY inputs —

@@ -1,17 +1,18 @@
 ---
 type: memory
 id: re-tailoring
-updated: 2026-09-15 · payload pushed · control tower (home PC)
+updated: 2026-09-15 · critic round answered · control tower (home PC)
 ---
 # re-tailoring — the September re-tailoring
 
 ## Status
 
 complete, awaiting merge — 2026-09-15. All eighteen rulings applied,
-`D-088` appended, entry and ripple in ONE commit (`2f70a56`). CI green
-on the pushed head. Two `BLOCKED:` lines are open on
+`D-088` appended, entry and ripple in ONE commit (`2f70a56`). The
+critic round ran and returned sixteen findings; all sixteen are
+answered and the fixes are pushed. CI green on the pushed head. Two `BLOCKED:` lines are open on
 [#367](https://github.com/wsher0901/roam/pull/367) and neither blocks
-the diff. Waiting on the critic round, then THE GATE. DO NOT MERGE —
+the diff. At THE GATE. DO NOT MERGE —
 the founder's word is "review" on the Web surface.
 
 ## What this task is
@@ -62,8 +63,8 @@ guesses, both answerable in one word:
 
 ## Left / idle
 
-Nothing parked. The critic round is running against the pushed
-diff; its findings land here before the gate report.
+Nothing parked. The critic round is closed — sixteen findings, all
+answered in the diff.
 
 ## The story
 
@@ -129,11 +130,51 @@ recorded in D-088:
   a REMEMBERED all-clear would be exactly the forbidden output, so
   refusal outranks memory there.
 
-**Verification.** `check:links` 7886 links / 360 files, 0 broken,
-0 bare D-numbers (two bare ones were caught in the Appendix A note
-and reworded) · `check:vocab` 14 rows, 0 would fail · `check:memory`
+**Verification.** `check:links` 0 broken and 0 bare D-numbers across
+360 files (two bare ones were caught in the Appendix A note and
+reworded) · `check:vocab` 14 rows, 0 would fail · `check:memory`
 valid · `check:ledger` in sync · `format:check`, `lint`, `test` all
-pass · Actions green on the PUSHED head `2f70a56`.
+pass · Actions green on every pushed head.
+
+**2026-09-15 · the critic round, and what it caught.** Sixteen
+findings against the pushed head; all answered, the diff changed,
+CI re-green. Three would have shipped as defects:
+
+1. **[ENGINE §11](../ENGINE.md#11-invariants--the-reliability-law)'s
+   boundary clause still read "rung 5" while the new paragraph
+   beside it announced the boundary was "unchanged across both".**
+   Literally: a rung-5a value could never reach
+   [Judge](../ENGINE.md#4-judge--per-check-verdicts), which would
+   have made the retrieval module and half of ruling 1 dead on
+   arrival. **The lesson is exact and worth keeping: when an
+   amendment SPLITS a term, the sentences that use the old term are
+   the diff, and the one most likely to be missed is the one the
+   amendment itself calls unchanged.** Rewritten to name 5b, and to
+   say outright that a 5a value is SOURCED and enters Judge like any
+   other fetch.
+2. **The provenance tag set forked three ways** — ruling 15's
+   `stated/inferred/derived` against the standing
+   `stated/inferred/default`, in four places, with no reconciliation
+   and no supersede rank for the new tag. Reconciled to four, with
+   `derived` deliberately held OUTSIDE the supersede order rather
+   than given a rank nobody decided.
+3. **[FACTS](../data/FACTS.md) still said cost meant ranges only**,
+   twice, one of them nine lines above the new text contradicting
+   it.
+
+The rest were survivals of the rename and forks the split created.
+The one that mattered beyond this bench: EIGHT per-fact lines in
+FACTS said "else LLM-research grade" — which now routes past 5a
+entirely. Renaming a grade and re-cutting the facts that cite it are
+the same job, not two.
+
+**And the chronicle came back.** The V1.S7 rename repair had moved
+one count cell and left the rest of the stage table, so it summed to
+35 against a stated 34. Its caption says the numbers derive at every
+reading, so the table was re-derived whole (39 / 5) and the story
+under it now says "34 when this was written" instead of "34 today"
+— the paragraph is a lecture about literals never re-checked, and it
+had become its own example.
 
 ## Where to look
 

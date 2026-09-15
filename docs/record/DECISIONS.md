@@ -5297,9 +5297,15 @@ note; Appendix B's provenance tag; Appendix C1's event) ·
 [SOURCES](../data/SOURCES.md) (the grade-scale pointer; the
 retrieval-policy row on all six weather slots; the Cost pending
 slot) ·
-[HOME §Product & engine](../HOME.md#product--engine) and
+[HOME §Product & engine](../HOME.md#product--engine),
+[HOME §Terms](../HOME.md#terms) and
 [HOME §Reading the data files](../HOME.md#reading-the-data-files)
-(five families → six; the F-CO family ID) ·
+(five families → six; the F-CO family ID; the ladder's seven rungs;
+the provenance tag set; grade D renamed) ·
+`docs/chronicle/roadmap.md` (the V1.S7 citation follows the rename,
+and the stage table is re-derived — the chronicle is frozen
+NARRATIVE, but that table's own caption says its numbers are
+derived at every reading) ·
 [D-010](#d-010--global-coverage-via-graded-fallback-ladders)
 (amended — rung 5 splits; the rest of the ladder stands) ·
 [D-011](#d-011--traveler-input-vocabulary) and

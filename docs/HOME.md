@@ -1842,19 +1842,23 @@ the link for the full story.
   renders labeled unverified. Home:
   [FOUNDATION §The reliability law](FOUNDATION.md#the-reliability-law);
   engine rules: [ENGINE §11](ENGINE.md#11-invariants--the-reliability-law).
-- **reliability ladder** — the six fallback rungs for
+- **reliability ladder** — the seven fallback rungs for
   coverage-risky facts: global source → regional source → computed
-  → estimated (labeled) → LLM-research grade (unverified) → refusal
-  ([D-010](record/DECISIONS.md#d-010--global-coverage-via-graded-fallback-ladders);
+  → estimated (labeled) → model-retrieved with provenance (5a) →
+  model memory (5b, unverified) → refusal
+  ([D-010](record/DECISIONS.md#d-010--global-coverage-via-graded-fallback-ladders),
+  split at rung 5 by [D-088](record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state);
   [ENGINE §3](ENGINE.md#3-acquire--get-the-facts)).
 - **preferences-as-defaults** — the engine honors a stated
   preference but surfaces a significantly better alternative when
   one exists; preferences steer, they don't blind. Home:
   [ENGINE §6](ENGINE.md#6-synthesize--build-the-plan).
 - **provenance** — every stored traveler value is marked stated,
-  inferred, or default; stated beats inferred beats default, newer
-  beats older
-  ([D-012](record/DECISIONS.md#d-012--elicitation-and-inference-policy);
+  inferred, derived, or default; stated beats inferred beats
+  default, newer beats older, and `derived` sits outside that
+  order because the engine computed it
+  ([D-012](record/DECISIONS.md#d-012--elicitation-and-inference-policy),
+  [D-088](record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state);
   [ENGINE §2](ENGINE.md#2-intake--resolve-the-traveler)).
 - **floor input** — the guaranteed minimum: origin + dates is
   always enough to get a plan
@@ -1928,10 +1932,12 @@ needs are covered by freshness tightening as the activity date
 nears. Inside the forecast horizon, Suggest sharpens its merit read
 with the real forecast instead of climatology.
 
-**Fact types.** fetched (from an external source) · computed
-(math — exact everywhere, no fetch) · curated (maintained in-repo
-as data) · estimated (labeled ranges) · LLM-research grade (always
-rendered unverified). A computed fact names the slot of its primary
+**Fact types.** fetched (from an external source, INCLUDING a
+rung-5a retrieval) · computed (math — exact everywhere, no fetch) ·
+curated (maintained in-repo as data) · estimated (labeled ranges) ·
+derived (composed from other stored facts) · model memory — what
+the corpus once called LLM-research grade — which is rung 5b and
+always renders unverified ([D-088](record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state)). A computed fact names the slot of its primary
 input — no separate fetch occurs.
 
 **Source slots and Dictionaries.** The source slot is the join key
@@ -1949,7 +1955,8 @@ Sources:
 
 **Grades.** Each vetted source earns a reliability grade, A–D, which
 decides how its facts RENDER — from verified (A) through labeled
-estimate (C) to always-unverified (D). The canonical grade → render
+estimate (C) to always-unverified (D). A rung-5a retrieval is
+graded the same way, by the domain it was quoted from. The canonical grade → render
 matrix is ENGINE §7; grades are living — demoted on sustained
 failure, drift, or miscalibration, promoted only by re-vetting
 ([D-015](record/DECISIONS.md#d-015--data-asset-law)).
@@ -1965,9 +1972,13 @@ declares a fallback ladder, vetted top-down
 (1) a source
 global by construction (numerical models, astronomical math) → (2)
 regional authoritative sources → (3) computed from physics → (4)
-estimated ranges, labeled → (5) LLM-research grade, rendered
-unverified → (6) refusal — the engine says "can't verify here" rather
-than guessing. The ladder is how coverage stays global without the
+estimated ranges, labeled → (5a) MODEL-RETRIEVED WITH PROVENANCE,
+graded B from an authoritative domain and C elsewhere → (5b) MODEL
+MEMORY, graded D and rendered unverified → (6) refusal — the engine
+says "can't verify here" rather than guessing. Rung 5 split in two
+at [D-088](record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state), because a model that
+FETCHED an answer and a model that REMEMBERED one are not the same
+claim. The ladder is how coverage stays global without the
 reliability law bending: quality degrades HONESTLY, rung by labeled
 rung.
 

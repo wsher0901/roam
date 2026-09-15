@@ -48,9 +48,11 @@ Sources:
 [check families](FOUNDATION.md#what-roam-checks)
 
 ### V1.S1 — Data Definition (the gate; docs + spike scripts only, no app code)
-Completion criteria: every V1 fact has a vetted source with a successful spike
-fetch, a reliability grade, and a freshness window — and the storage
-schema is written.
+Completion criteria: every V1 fact has a reliability grade, a freshness window,
+and EITHER a vetted source with a successful spike fetch OR — where no
+source exists to spike — a retrieval policy naming its allowed domains
+and whether a quote is required ([D-088](record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state)) — and the
+storage schema is written.
 - [x] V1.S1.T1 [P] Fact inventory — enumerate every fact each of the
       six families needs (what it is, which spine step uses it,
       geographic scope, freshness need) -> [docs/data/FACTS.md](data/FACTS.md) ·
@@ -79,8 +81,9 @@ schema is written.
       fetched_at, freshness window), places, plans, plan_versions;
       consolidate the five `SOURCES-<family>.md` files into
       [docs/data/SOURCES.md](data/SOURCES.md) and delete them; any
-      fact lacking a reliable source explicitly marked "LLM-research
-      grade -> rendered as unverified"
+      fact lacking a reliable source explicitly marked "model memory
+      (rung 5b) -> rendered as unverified", the grade D renamed by
+      [D-088](record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state)
       Also covers: [FACTS Appendix C](data/FACTS.md#appendix-c--telemetry-vocabulary-what-the-app-records) tables (events, claim
       ledger, eval runs, actuals, source health) and the bitemporal
       append-only fact-cache law ([D-014](record/DECISIONS.md#d-014--telemetry-posture), [D-015](record/DECISIONS.md#d-015--data-asset-law)).
@@ -195,7 +198,8 @@ streamed verdicts, and any version reverts in one click.
       stated reason or `absent`, never an inferred one, and the
       sequence is the walkable decision path
       ([ENGINE §9](ENGINE.md#9-re-validate--edits-and-drift))
-- [ ] V1.S6.T4 [P] Import & check — paste or upload an existing plan,
+- [ ] V1.S6.T4 [seq after T1] Import & check — paste or upload an
+      existing plan,
       or a place and now; the engine re-validates it as version 1
       with receipts. The fourth level of certainty
       ([FOUNDATION §The spine](FOUNDATION.md#the-spine)) — an entry,
@@ -247,7 +251,7 @@ consent-gated collection goes live ·
 hardening: error/edge handling at user scale, abuse and cost caps.
 
 ## V3 — The product · named
-real prices where source-backed · trip sharing (async) · promoted
+trip sharing (async) · promoted
 sockets: safety & travel advisories, visa/entry rules · billing,
 legal, ops · engine tuning v0 on the accumulated dataset.
 

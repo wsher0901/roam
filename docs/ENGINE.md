@@ -88,7 +88,16 @@ Rules:
 - **The floor never changes** — origin + dates always suffices;
   every other traveler field defaults to Null.
 - **Everything carries provenance** — every stored traveler field
-  carries {stated | inferred | default} plus updated_at.
+  carries {stated | inferred | derived | default} plus updated_at.
+  **`derived` IS THE FOURTH TAG, ADDED BY
+  [D-088](record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state),
+  AND IT DOES NOT JOIN THE SUPERSEDE ORDER** — a derived value is
+  one the ENGINE COMPUTED from other stored values (trip length
+  from the dates; a pace ceiling from the party's ages), so it is
+  not a competing signal about what the traveler wants. It is
+  RECOMPUTED when its inputs change, never superseded by them,
+  and a stated or inferred value on the same field always wins
+  outright. The other three keep their meanings and their order.
 - **Who wins on upsert** — stated > inferred (own) > cohort prior >
   default; newer > older — the traveler's own signal always outranks
   category patterns.
@@ -373,8 +382,11 @@ exactly why it renders unverified.
 
 Rules:
 - **Traveler strictness (TP-42)** — the verified-only setting
-  (labeled | strict, default labeled) governs how ladder rungs 4–5
-  render; what strict does concretely is OPEN-3.
+  (labeled | strict, default labeled) governs how the ladder's
+  lower reaches render. What strict does concretely is OPEN-3 —
+  and so, since the rung-5 split, is WHETHER IT KEYS ON RUNG OR ON
+  GRADE, because a rung-5a value is grade B and the two keys now
+  disagree.
 - **Convert only at render time** — units convert via the TP-43
   settings field (default metric; never asked; the UI exposes the
   toggle). Locale-based defaulting (US → imperial) is deferred until
@@ -504,20 +516,30 @@ Sources:
   that [Acquire](#3-acquire--get-the-facts) then verifies. It never
   produces a world fact, a score, a confidence, a grade, or a
   source; every model output entering a stage is schema-validated;
-  a model's own world claim exists only at ladder rung 5, labeled,
-  and never enters [Judge](#4-judge--per-check-verdicts) or
+  a model's own UNSOURCED world claim exists only at ladder rung
+  5b, labeled, and never enters
+  [Judge](#4-judge--per-check-verdicts) or
   [Aggregate](#5-aggregate--one-score).
-  **RUNG 5 IS NOW TWO RUNGS
+  **RUNG 5 SPLIT IN TWO
   ([D-088](record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state)),
-  and the boundary is unchanged across both:** a model may FETCH
-  and QUOTE (rung 5a, provenance attached), and it may REMEMBER
-  (rung 5b, grade D) — it never SCORES either one. Retrieval widens
-  what the model may bring back; it does not widen what the model
-  may decide.
+  AND THE CLAUSE ABOVE MOVED WITH IT — it now names 5b, not 5:**
+  a model may FETCH AND QUOTE (rung 5a), and a 5a value IS a
+  sourced fact — it carries a url, a quoted span and a
+  `fetched_at`, it grades B or C, AND IT ENTERS JUDGE AND
+  AGGREGATE LIKE ANY OTHER FETCH. What the model produced there
+  is the RETRIEVAL, not the claim; the claim belongs to the
+  domain it was quoted from. A model may also REMEMBER (rung 5b),
+  and that value has no source, so it stays outside Judge.
+  **WHAT IS UNCHANGED IS THE PROHIBITION:** the model never
+  scores, weighs, or grades either one. Retrieval widens what the
+  model may bring back; it does not widen what the model may
+  decide.
 - **State outranks transcript** — the brain is STATELESS over a
   VERSIONED STATE STORE. Three things are stored, not remembered:
-  the TRAVELER MODEL (every constraint and preference with
-  provenance — `stated` / `inferred` / `derived`), the TRIPQUERY,
+  the TRAVELER MODEL (every constraint and preference with its
+  provenance tag — `stated` / `inferred` / `derived` / `default`,
+  the four reconciled in
+  [§2](#2-intake--resolve-the-traveler)), the TRIPQUERY,
   and the PLAN VERSIONS. Every turn renders from state; THE
   TRANSCRIPT IS NEVER RE-READ to recover what the traveler wants.
   The consequence is the point: a redaction is a STATE EDIT plus a
@@ -560,10 +582,17 @@ resolves by number.
 2. **The grade scale is provisional.** SOURCES.md says "provisional
    until ratified in V1.S1.T7" — the §7 matrix inherits that status
    until T7 ratifies it.
-3. **TP-42 "strict" mode is underspecified.** The field governs the
+3. **TP-42 "strict" mode is underspecified — and since
+   [D-088](record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state)
+   IT IS ALSO KEYED ON THE WRONG THING.** The field governs the
    rung 4–5 render policy, but what strict does concretely — hide
-   rung 4–5 content, or render it with harder labels — is not
-   decided.
+   that content, or render it with harder labels — is not decided.
+   The split added a second, sharper question: the policy is keyed
+   on RUNG, while [§7](#7-render--honest-pixels) keys rendering on
+   GRADE, and a rung-5a retrieval is grade **B** — "verified where
+   covered". So `strict` now has two triggers over the same claim
+   AND NO TIEBREAKER: does it hide a B-grade retrieval for being
+   rung 5? Whichever way this closes, THE TWO KEYS MUST BECOME ONE.
 4. **TP-30 × category-intensity composition.** When the traveler's
    ranked trade-off priority disagrees with the engine's category ×
    intensity ranking, which applies first is not decided.

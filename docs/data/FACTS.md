@@ -24,8 +24,10 @@ Manual: [HOME §Reading the data files](../HOME.md#reading-the-data-files).
 falls down [ENGINE §3](../ENGINE.md#3-acquire--get-the-facts)'s
 ladder when its upper rungs miss. Since
 [D-088](../record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state)
-the bottom of that ladder is TWO rungs, and every use of the old
-phrase "LLM-research grade" below means the pair, read in order:
+the bottom of that ladder is TWO rungs. The phrase "LLM-research
+grade" is RETIRED from this file — every fact that used it has been
+re-cut to name which of the two it means, because the old phrase
+collapsed them and so hid the better one:
 
 - **Rung 5a — model-retrieved with provenance.** The model searched
   and fetched, under this fact's retrieval policy, and the value
@@ -230,7 +232,8 @@ Water-safety advisories ride with the safety-advisories Later socket.
   fronts, fall-foliage peaks, migrations).
 - Spine: SUGGEST (major merit driver); Plan (which day, which park).
 - Scope: global ambition; regional trackers where they exist → ladder
-  (else LLM-research grade, rendered unverified).
+  (else RETRIEVED at rung 5a from the tracker's or park authority's
+  own page, and only then model memory, rendered unverified).
 - Freshness: weekly in season; else yearly.
 - Type: fetched + curated. Source slot: nature-timing.
 
@@ -256,8 +259,10 @@ Water-safety advisories ride with the safety-advisories Later socket.
 - Type: computed. Source slot: tides.
 
 ## F-FE — Feasibility (14) — source task V1.S1.T4
-Socket notes: visa/entry rules, safety advisories, venue accessibility
-data, real prices = Later sockets. The lodging anchor (where each day
+Socket notes: visa/entry rules, safety advisories and venue
+accessibility data = Later sockets. REAL PRICES ARE NO LONGER ONE
+of them — [D-088](../record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state) made cost the sixth family
+([Cost family](#f-co--cost-3--source-task-v1s1t8)); what stays a socket is BUYING, not pricing. The lodging anchor (where each day
 starts/ends) is a PLAN parameter, not a world fact — T7 schemas it
 under plans.
 
@@ -280,10 +285,11 @@ under plans.
 - What: what a destination is known for / supports, per the 15 types.
   Enables the core Suggest dock: "famous for X, but X is bad then".
 - Spine: SUGGEST PRIMARY.
-- Scope: global ambition; curated for demo destinations → ladder (else
-  LLM-research grade, rendered unverified).
+- Scope: global ambition; curated for demo destinations → ladder
+  (else RETRIEVED at rung 5a, and only then model memory, rendered
+  unverified).
 - Freshness: yearly.
-- Type: curated + LLM-research grade. Source slot:
+- Type: curated + retrieved (5a) + model memory (5b). Source slot:
   destination-affordances.
 
 ### F-FE-03 — Venue / POI records
@@ -319,7 +325,8 @@ under plans.
 ### F-FE-07 — Cost-estimate bands
 - What: typical price bands per destination — meals, admissions, local
   transport, lodging, rental car — plus official charges and norms.
-  Ranges only — real prices = Later socket. Flight-cost ranges may
+  RANGES ONLY — this fact is the estimate side, and a live quote is
+  [Cost family](#f-co--cost-3--source-task-v1s1t8)'s, never this one's. Flight-cost ranges may
   include a typical checked-bag fee RANGE (per [TP-26](#appendix-a--traveler-parameters-tp-0147--per-d-011--d-012)).
 - Dictionary: meal_band · admission_band · local_transport_band ·
   lodging_band · rental_car_band · tourist_city_fees {present,
@@ -393,9 +400,10 @@ under plans.
   · transit_access_class · best_for[] (15 activity types)
 - Spine: Plan (stay-area math: budget × routes × desired feel);
   Suggest light. No safety scoring — advisories are a deferred socket.
-- Scope: curated for demo destinations → ladder (LLM-grade labeled).
-- Freshness: yearly. Type: curated + LLM-research grade. Source slot:
-  area-profiles.
+- Scope: curated for demo destinations → ladder (retrieved at 5a,
+  else model memory, labeled).
+- Freshness: yearly. Type: curated + retrieved (5a) + model memory
+  (5b). Source slot: area-profiles.
 
 ### F-FE-13 — Venue reputation ⚠
 - What: fame and momentum per venue — the world-side of the offbeat
@@ -407,8 +415,8 @@ under plans.
 - Spine: Plan selection; Suggest light. Two axes because a fading icon
   and a rising hidden gem are different recommendations.
 - Scope: global ambition → ladder. Freshness: monthly.
-- Type: fetched + curated + LLM-research grade. Source slot:
-  venue-reputation.
+- Type: fetched + curated + retrieved (5a) + model memory (5b).
+  Source slot: venue-reputation.
 
 ### F-FE-14 — Currency exchange rates
 - What: daily mid-market FX so every cost range and the [TP-36](#appendix-a--traveler-parameters-tp-0147--per-d-011--d-012) budget
@@ -470,7 +478,8 @@ ladders. Socket note: airline-specific baggage allowances/fees = Later
   1-stop) and typical carriers.
 - Spine: SUGGEST (is the destination reasonably reachable?); Plan.
 - Scope: global ambition; schedule data is commercially gated → full
-  ladder incl. LLM-research grade, labeled.
+  ladder — rung 5a from the carrier's or airport's own published
+  timetable, then model memory, labeled.
 - Freshness: monthly.
 - Type: fetched. Source slot: flight-routes.
 
@@ -533,8 +542,9 @@ ladders. Socket note: airline-specific baggage allowances/fees = Later
   scope_note
 - Spine: Suggest demerit when overlapping the window; Plan warnings
   and mode substitution.
-- Scope: global ambition; notice boards + news → full ladder incl.
-  LLM-grade labeled.
+- Scope: global ambition; notice boards + news → full ladder — rung
+  5a from the operator's own notices and established press, then
+  model memory, labeled.
 - Freshness: weekly; daily within 2 weeks of dates.
 - Type: fetched. Source slot: transport-disruptions.
 
@@ -565,8 +575,8 @@ socket, and the ground is TERMS OF SERVICE rather than difficulty
   festival closures) + practical regional effects (daytime dining,
   shutdown windows). Dates are deterministic; effects are curated.
 - Spine: Suggest (warning/merit); Plan (hours interplay with [FE-04](#f-fe-04--opening-hours)).
-- Scope: global ambition → ladder (effects: curated, else LLM-research
-  grade labeled).
+- Scope: global ambition → ladder (effects: curated, else retrieved
+  at 5a, then model memory, labeled).
 - Freshness: yearly + curated review.
 - Type: fetched/computed + curated. Source slot: religious-observances.
 
@@ -584,8 +594,8 @@ socket, and the ground is TERMS OF SERVICE rather than difficulty
 - What: peak / shoulder / off classification by destination and month
   ("Venice in August").
 - Spine: SUGGEST (the peak-vs-off merit core).
-- Scope: global; curated + derived from [CC-01](#f-cc-01--public-holidays)/02 + [WX-11](#f-wx-11--climate-normals-by-date-of-year); LLM-research
-  grade labeled where uncurated.
+- Scope: global; curated + derived from [CC-01](#f-cc-01--public-holidays)/02 + [WX-11](#f-wx-11--climate-normals-by-date-of-year); retrieved at
+  5a where uncurated, model memory below that, labeled.
 - Freshness: yearly.
 - Type: curated + derived. Source slot: seasonal-crowding.
 
@@ -732,8 +742,13 @@ dates+flexibility+length, who's going, budget, multi-city, one
 interest pass; language joins contextually for international scope) ·
 L = later/contextual · N = never (inferred, defaulted,
 composition-adjusted, warn-don't-block) · S = settings.
-Provenance: every field stores {stated | inferred | default} +
-updated_at. Supersede: stated > inferred > default; newer > older.
+Provenance: every field stores {stated | inferred | derived |
+default} + updated_at. Supersede: stated > inferred > default;
+newer > older. `derived` ([D-088](../record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state)) is OUTSIDE that
+order — the engine computed it from other stored values, so it is
+recomputed rather than superseded, and any stated or inferred value
+on the same field wins outright
+([ENGINE §2](../ENGINE.md#2-intake--resolve-the-traveler)).
 Stated-only class (never inferred): [TP-22](#appendix-a--traveler-parameters-tp-0147--per-d-011--d-012), [TP-41](#appendix-a--traveler-parameters-tp-0147--per-d-011--d-012), [TP-45](#appendix-a--traveler-parameters-tp-0147--per-d-011--d-012), allergy
 details inside [TP-21](#appendix-a--traveler-parameters-tp-0147--per-d-011--d-012). Tiers: engine / brain-only / socket. Extension
 is append-only ([D-011](../record/DECISIONS.md#d-011--traveler-input-vocabulary)). No source slots — the source is the traveler;
@@ -802,15 +817,17 @@ the live count is here.
 
 ## Appendix B — Plan parameters (T7 must schema; not world facts)
 - **The state store is the memory, and every field in it carries a
-  PROVENANCE TAG — `stated` | `inferred` | `derived`.** [D-088](../record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state)
+  PROVENANCE TAG — `stated` | `inferred` | `derived` | `default`,
+  the set fixed in [Appendix A](#appendix-a--traveler-parameters-tp-0147--per-d-011--d-012).** [D-088](../record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state)
   made the brain stateless over a versioned store
   ([ENGINE §11](../ENGINE.md#11-invariants--the-reliability-law)):
   the traveler model (Appendix A's fields), the TripQuery, and the
-  plan versions. `derived` is the third tag and it is new here — a
-  value the engine COMPUTED from other stored values, distinct
-  from `inferred`, which the model guessed from what the traveler
-  said. Only the tag makes a redaction checkable: the transcript
-  is never re-read, so what is not in the store is not known.
+  plan versions. `derived` is the NEW tag — a value the engine
+  COMPUTED from other stored values, distinct from `inferred`,
+  which the model guessed from what the traveler said, and from
+  `default`, which nobody supplied at all. Only the tag makes a
+  redaction checkable: the transcript is never re-read, so what is
+  not in the store is not known.
 - Lodging anchor: the point each day starts/ends (user-chosen area or
   brain-suggested centroid). Drives [FE-06](#f-fe-06--travel-times--distances-per-mode) day routing.
 - Item lock-state: accepted trade-offs and [TP-44](#appendix-a--traveler-parameters-tp-0147--per-d-011--d-012) commitments are

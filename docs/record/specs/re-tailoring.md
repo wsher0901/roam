@@ -103,8 +103,10 @@ The eighteen, in the founder's order:
    Eight cited URLs, nothing fetched. Seven rejected alternatives,
    one line each.
 3. Ripple, SAME commit:
-   [ENGINE](../../ENGINE.md) §2 · §3 · §5 · §6 · §7 · §8 · §9 ·
-   §11 · §12 ·
+   [ENGINE](../../ENGINE.md) §2 · §3 · §6 · §7 · §8 · §9 · §11 · §12
+   (§5 was named in the first draft and is NOT edited — the optimizer's
+   objective is §5's composed score, cited from §6, and §5 itself needed
+   no change) ·
    [FOUNDATION](../../FOUNDATION.md) §The spine · §What Roam checks ·
    [ROADMAP](../../ROADMAP.md) V1 header · V1.S1 · V1.S3 · V1.S4 ·
    V1.S5 · V1.S6 · V1.S7 · V1.S8 · Pool ·
@@ -128,67 +130,67 @@ The eighteen, in the founder's order:
 
 ## Done means
 
-- [ ] D-088 exists, heading tagged `[product]`, with all eighteen
+- [x] D-088 exists, heading tagged `[product]`, with all eighteen
       rulings, the eight cited URLs, and seven rejected
       alternatives.
-- [ ] Ruling 1: [ENGINE §3](../../ENGINE.md#3-acquire--get-the-facts)
+- [x] Ruling 1: [ENGINE §3](../../ENGINE.md#3-acquire--get-the-facts)
       carries the 5a/5b ladder,
       [§7](../../ENGINE.md#7-render--honest-pixels) the grade
       consequences, [§11](../../ENGINE.md#11-invariants--the-reliability-law)
       the amended boundary; [FACTS § How to read this file](../../data/FACTS.md#how-to-read-this-file)
       carries the rung-5 reading rule;
       [SOURCES](../../data/SOURCES.md) points at §7 as canonical.
-- [ ] Ruling 2: `V1.S3.T8` exists, `[P after T2]`.
-- [ ] Ruling 3: the retrieval-policy row is DEFINED in FACTS'
+- [x] Ruling 2: `V1.S3.T8` exists, `[P after T2]`.
+- [x] Ruling 3: the retrieval-policy row is DEFINED in FACTS'
       reading rules and PRESENT on every weather slot in
       [SOURCES](../../data/SOURCES.md).
-- [ ] Ruling 4: `V1.S4.T1` reads as the harness over the engine's
+- [x] Ruling 4: `V1.S4.T1` reads as the harness over the engine's
       tool contract; [ENGINE §2](../../ENGINE.md#2-intake--resolve-the-traveler)
       names images/PDFs as intake.
-- [ ] Ruling 5: `V1.S4.T2` verifies proposed candidates;
+- [x] Ruling 5: `V1.S4.T2` verifies proposed candidates;
       [ENGINE §6](../../ENGINE.md#6-synthesize--build-the-plan)
       gains one line.
-- [ ] Ruling 6: `V1.S3.T6` names model-generated inputs, a model
+- [x] Ruling 6: `V1.S3.T6` names model-generated inputs, a model
       judge for explanations, deterministic score grading, and
       recommendation quality as a metric.
-- [ ] Ruling 7: `V1.S8.T3` Done-means carries "every rendered claim
+- [x] Ruling 7: `V1.S8.T3` Done-means carries "every rendered claim
       opens its evidence" and the three named scenarios.
-- [ ] Ruling 8: `F-CO` family with `F-CO-01..03` exists;
+- [x] Ruling 8: `F-CO` family with `F-CO-01..03` exists;
       `V1.S1.T8` and `V1.S7.T4` exist; `V1.S1.T7` consolidates
       FIVE files; `V1.S7` is titled "The other four families";
       [ENGINE §8](../../ENGINE.md#8-gate--warn-or-refuse)'s scope
       refusal is amended; `F-FE-07` cross-links `F-CO`; every
       "five families" outside `record/` and `chronicle/` reads six.
-- [ ] Ruling 9: `F-CC-07` carries the proxies, the rung-5a press
+- [x] Ruling 9: `F-CC-07` carries the proxies, the rung-5a press
       route, the platform-mining deferral on ToS grounds, and the
       lag label; `V1.S7.T3` names it.
-- [ ] Ruling 10: [FOUNDATION §The spine](../../FOUNDATION.md#the-spine)
+- [x] Ruling 10: [FOUNDATION §The spine](../../FOUNDATION.md#the-spine)
       carries the fourth level of certainty; `V1.S6.T4` exists.
-- [ ] Ruling 11: `F-FE-15` and `F-FE-16` exist.
-- [ ] Ruling 12: [ENGINE §6](../../ENGINE.md#6-synthesize--build-the-plan)
+- [x] Ruling 11: `F-FE-15` and `F-FE-16` exist.
+- [x] Ruling 12: [ENGINE §6](../../ENGINE.md#6-synthesize--build-the-plan)
       names the optimizer; `OPEN-10` is in the register;
       `V1.S5.T1` reads "Plan synthesis — the optimizer …".
-- [ ] Ruling 13: `TP-48` and `TP-49` are in Appendix A, with the
+- [x] Ruling 13: `TP-48` and `TP-49` are in Appendix A, with the
       D-088 amendment noted there by link.
-- [ ] Ruling 14: [ENGINE §6](../../ENGINE.md#6-synthesize--build-the-plan)'s
+- [x] Ruling 14: [ENGINE §6](../../ENGINE.md#6-synthesize--build-the-plan)'s
       condition-aware placement cites the crowd and scarcity facts;
       no new fact IDs minted for it.
-- [ ] Ruling 15: [ENGINE §11](../../ENGINE.md#11-invariants--the-reliability-law)
+- [x] Ruling 15: [ENGINE §11](../../ENGINE.md#11-invariants--the-reliability-law)
       carries the state-over-transcript invariant; FACTS Appendix B
       carries the provenance tag.
-- [ ] Ruling 16: [ENGINE §9](../../ENGINE.md#9-re-validate--edits-and-drift)
+- [x] Ruling 16: [ENGINE §9](../../ENGINE.md#9-re-validate--edits-and-drift)
       carries the stated-reason rule; Appendix C1 gains the event.
-- [ ] Ruling 17: recorded in D-088 as
+- [x] Ruling 17: recorded in D-088 as
       [V1.S1.T4](../../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)'s
       duty, edited nowhere.
-- [ ] Ruling 18: the Pool carries the MCP-server socket.
-- [ ] Every new `F-`, `TP-` and `OPEN-` number is unique.
-- [ ] The V1 task total is RE-DERIVED from the checkbox lines
+- [x] Ruling 18: the Pool carries the MCP-server socket.
+- [x] Every new `F-`, `TP-` and `OPEN-` number is unique.
+- [x] The V1 task total is RE-DERIVED from the checkbox lines
       (35 → 39) and the derivation is shown at the gate.
-- [ ] D-088's `Affects:` line and the actual edits match exactly.
-- [ ] `check:links`, `check:vocab`, `check:memory`, lint, format and
+- [x] D-088's `Affects:` line and the actual edits match exactly.
+- [x] `check:links`, `check:vocab`, `check:memory`, lint, format and
       test all pass; the PUSHED head's Actions run is green.
-- [ ] A critic round has run against the pushed diff.
+- [x] A critic round has run against the pushed diff.
 
 ## Deviations
 
@@ -233,6 +235,72 @@ IS "D-011/D-012's table", and the log's own law — ruled at
 amendments live in new entries while the amended entry stays
 unannotated. The note went into Appendix A; D-011 and D-012 were
 not touched.
+
+**THE CRITIC ROUND CHANGED THE DIFF, and three of its findings were
+defects that would have shipped.** The round ran against the pushed
+head and returned sixteen findings; all were answered.
+
+- **The §11 boundary clause still said "rung 5" while the paragraph
+  beside it declared the boundary unchanged.** Read literally, a
+  rung-5a value could never enter
+  [Judge](../../ENGINE.md#4-judge--per-check-verdicts) or
+  [Aggregate](../../ENGINE.md#5-aggregate--one-score) — which would
+  have made the retrieval module, §7's B/C rows and §6's
+  proposed-then-verified rule dead letters on the day they were
+  written. THE SENTENCE THAT NEEDED AMENDING WAS THE ONE THE
+  AMENDMENT CALLED UNCHANGED. It now names rung 5b, and says
+  explicitly that a 5a value is a SOURCED fact and enters Judge like
+  any other fetch; what is unchanged is the PROHIBITION, not the
+  clause.
+- **The provenance tag set forked three ways.** Ruling 15's
+  `stated / inferred / derived` collided with the standing
+  `stated / inferred / default` in
+  [ENGINE §2](../../ENGINE.md#2-intake--resolve-the-traveler),
+  Appendix A and [HOME](../../HOME.md) — `default` dropped,
+  `derived` added, no reconciliation and no supersede position. The
+  enumeration law's own failure shape. Reconciled to FOUR tags, with
+  `derived` held OUTSIDE the supersede order rather than given an
+  invented rank: a derived value is one the engine computed, so it
+  is recomputed when its inputs change and any stated or inferred
+  value beats it outright.
+- **FACTS still said cost meant ranges only, twice**, in the F-FE
+  family note and inside
+  [F-FE-07](../../data/FACTS.md#f-fe-07--cost-estimate-bands)'s own
+  What line — nine lines above the new text saying a quote
+  supersedes the band.
+
+Five more were stale survivals of the rename, swept from the
+destination: [HOME](../../HOME.md)'s ladder, fact-type list,
+provenance gloss and grades blurb; `V1.S1.T7`'s "LLM-research
+grade"; two SOURCES lines; and EIGHT per-fact lines inside FACTS
+that routed straight to model memory and so SKIPPED 5A ALTOGETHER
+— the substantive half of that finding, since the old phrase
+collapsed the two rungs the ruling just separated. The phrase is now
+retired from FACTS entirely.
+
+Three were forks the split created and nothing resolved, each named
+rather than decided: `TP-42`'s strict mode now keys on RUNG while
+§7 keys on GRADE and a 5a value is grade B (written into OPEN-3,
+which the split widened); B/C by domain CLASS versus a policy row
+tagging its OWN domains (§3 governs, stated in SOURCES, and
+snow-conditions' tourism-board row was regraded C accordingly); and
+the retrieval row's granularity, which ruling 3 fixes PER FACT while
+the worked example wrote it per slot — now declared a shorthand that
+must announce itself.
+
+Three were scope repairs: `V1.S1`'s completion criteria could never
+close for a retrieval-only fact (it demanded a spike fetch), V3 still
+promised "real prices where source-backed" after V1 took them, and
+`V1.S6.T4` was tagged `[P]` while depending on `V1.S6.T1`.
+
+**AND ONE FINDING SENT THE DIFF BACK INTO THE CHRONICLE.** The
+V1.S7 rename repair had moved one count cell and left the rest of
+`docs/chronicle/roadmap.md`'s stage table, so the rows summed to 35
+against a stated total of 34 — a worse state than either leaving it
+or fixing it. That table's own caption says its numbers are DERIVED
+AT EVERY READING, so the whole table was re-derived (39 / 5) and the
+narrative below it, which argues from "34 today", now says "34 when
+this was written" so its argument survives its own example.
 
 **`F-CC-07`'s heading was renamed** from "Trending signal (general,
 non-SNS)" to "Trending signal (computed)". Not ordered, but ruling
