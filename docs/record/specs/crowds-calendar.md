@@ -153,7 +153,13 @@ slot must vet, for real:
       ruling 9).
 - [x] No file outside `docs/data/SOURCES-crowds-calendar.md` and `scripts/spikes/crowds-calendar-*`
       is touched, except this bench's own spec and memory.
-- [ ] Full CI mirror green; the PUSHED head's Actions run green.
+- [x] Full CI mirror green; the PUSHED head's Actions run green. One
+      local exception, recorded rather than waved through: `npm run
+      build` cannot run in this worktree, whose `node_modules/` holds
+      only a vitest cache, so Next resolves no local install. CI runs
+      it on the pushed head and it passes there
+      ([D-038](../DECISIONS.md#d-038--ci-is-the-arbiter) — CI is the
+      arbiter, and this diff contains no app code).
 
 ## Deviations
 
