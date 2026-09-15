@@ -172,8 +172,16 @@ adopt-for-X-only.
       with the date it was read.
 - [ ] Grades follow the canonical scale at
       [ENGINE §7](../../ENGINE.md#7-render--honest-pixels).
-- [ ] No file outside `docs/data/SOURCES-feasibility.md` and `scripts/spikes/feasibility-*`
+- [ ] No file outside `docs/data/SOURCES-feasibility.md`,
+      `scripts/spikes/feasibility-*` and `scripts/spikes/_overpass.mjs`
       is touched, except this bench's own spec and memory.
+      (`_overpass.mjs` is a CONTRACT CHANGE made mid-bench — a
+      zero-dependency helper shared by this bench's own OSM spikes,
+      added because the public Overpass endpoint rate-limits hard
+      enough that retry, mirror rotation and a client timeout had to
+      live in one place rather than be copied nine times. It is named
+      here, and narrated in the memory, rather than slipped in.
+      It is still lane-disjoint: no sibling bench touches it.)
 - [ ] **Duty A.** Every entry carries a retrieval-policy row with its
       three fields, or `n/a` WITH THE REASON. No entry is silent about
       retrieval, and no row promotes a domain outside
