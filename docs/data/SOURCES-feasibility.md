@@ -410,6 +410,97 @@ checked the PAYLOAD, never the status code.
   were not read. Recorded as the leading candidate to close this slot's
   gap, with a terms read as the first step.
 
+## seasonal-closures
+
+- Serves: [FE-05](FACTS.md#f-fe-05--seasonal-closures--operating-seasons-).
+- Source: **OpenStreetMap's `opening_hours` month-range syntax and
+  `access:conditional`** where tagged (ODbL, rung 1), and **RETRIEVAL
+  at rung 5a from operators and park authorities** everywhere else —
+  which, on the measurement below, is most places.
+- Confirmed keys (spike, 2026-09-15, 2,060 Iceland features):
+  `opening_hours` carrying month ranges, `access:conditional`,
+  `seasonal`.
+- **The signal is real and machine-readable. The denominator is the
+  story:**
+  | signal | coverage |
+  |---|---|
+  | `opening_hours` present at all | 132 / 2,060 = **6.4%** |
+  | …of which carry a MONTH RANGE | 31 / 2,060 = **1.5%** |
+  | `seasonal=*` | 12 / 2,060 = 0.6% |
+  | `access:conditional` | 4 / 2,060 = **0.2%** |
+- **Where it IS tagged the value is excellent** — these came back
+  verbatim, and each is exactly the fact FE-05 wants:
+  - `Fischersetur` — `May 15-Sep 15 Mo-Su 13:00-16:00; Sep 16-May 14 off`
+    (an explicit closed season, the "closed Nov–Apr" case)
+  - `Flugsafnið` — `Jun-Sep 11:00-17:00; Oct-May: Sa 13:00-17:00`
+    (reduced winter operation, not closure — a distinction a plan must
+    keep)
+  - `Bláa Lónið` — a five-band year:
+    `Jan 01-May 25: Mo-Su 08:00-22:00; May 26-Jun 29: Mo-Su 07:00-23:00; Jun 30-Aug 20: Mo-Su 07:00-24:00; Aug 21-Oct 01: Mo-Su 08:00-22:00; Oct 02-Dec 31: Mo-Su 08:00-21:00`
+  - `Aurora Reykjavik` — `Mar-Oct: Mo-Su 09:00-20:00; Nov-Feb: Mo-Su 09:00-18:00`
+  - and from `access:conditional`, a road closed for a reason no
+    schedule would predict:
+    `"Bridge is temporarily removed during breeding/nurturing season each year"`
+- **At 1.5% this cannot be the primary path, and the fact is one where
+  being wrong ends the trip** — FE-05 exists because "a trip built
+  around a closed thing is dead". So the ordering is: OSM answers where
+  tagged, retrieval answers otherwise, and SILENCE IS NEVER READ AS
+  OPEN-ALL-YEAR. A destination whose seasonality cannot be established
+  carries the uncertainty into Suggest rather than being planned around
+  as if it were open.
+- Grade: **B** where OSM carries a month range or an operator page is
+  quoted; **C** from a guide; **never D** — the quote rule below.
+- Freshness served: monthly, plus a plan-time check, per
+  [FACTS](FACTS.md). The plan-time check is what catches a pass that
+  opened late after a heavy winter, which no cached month range can
+  know.
+- Coverage: measured on Iceland, deliberately — the country where
+  seasonal operation genuinely gates a plan (F-roads, highland huts,
+  seasonal museums). If coverage is 1.5% there, it is not better in
+  places where seasonality matters less to mappers. That extrapolation
+  is a judgement and is labeled as one; it is not a second measurement.
+- Cost: free; Overpass slot limits per
+  [finding two](#three-findings-that-shape-every-entry-below).
+- retention_rights: **store-raw** for the OSM tags; **cache-only** plus
+  a curated table for the retrieved half. license_class: **ODbL 1.0**
+  (OSM); per-domain for spans. Attribution: "© OpenStreetMap
+  contributors".
+- **Retrieval policy** — SHORTHAND, declaring itself: one fact, one
+  row. This is the busiest policy in the file after
+  [§ opening-hours](#opening-hours), because it covers ~98% of cases.
+  - allowed domains + grade: the OPERATOR'S own site — the museum,
+    lagoon, lift company or ferry line (**B**, operator); the
+    managing government authority — a national park service, a roads
+    administration, a highland-road authority (**B**, government
+    body); the transit authority for a seasonal ferry or bus (**B**,
+    transit authority); established press reporting a seasonal opening
+    or closure and naming its source (**B**); travel guides (**C**).
+    Crowd-sourced trip reports are OUT OF BOUNDS: last year's visitor
+    is not this year's schedule.
+  - quote required: **yes**, and the span must carry THE DATES. "Open
+    in summer" is not a seasonal window; `May 15 – Sep 15` is. A value
+    with no dated span is discarded, so **this slot has no rung 5b** —
+    a remembered season is how a traveller drives four hours to a
+    closed gate.
+  - freshness window: 30 days, and **7 days inside the trip window**,
+    because seasonal openings slip with the weather and the slip is
+    announced late.
+- Spike: `scripts/spikes/feasibility-seasonal-closures.mjs` — run
+  2026-09-15 over Iceland, 2,060 features. Returned the coverage table,
+  the 31 month-range values (12 quoted above verbatim) and the four
+  `access:conditional` values.
+- Alternatives rejected: **Google Places** — see
+  [§ The Google Maps verdict](#the-google-maps-verdict); its
+  `opening_hours` models seasonal variation poorly in any case.
+  **National park service APIs** — the US NPS has one and it is
+  excellent, but it is one country, so it is a rung-2 upgrade for US
+  destinations rather than a source for this slot; recorded as a
+  candidate to vet when US park scenarios enter the demo set.
+  **Ski-resort and lift-operator feeds** — fragmented and mostly
+  commercial; the same conclusion
+  [SOURCES §snow-conditions](SOURCES.md#snow-conditions) already
+  reached for [WX-10](FACTS.md#f-wx-10--snowfall--snow-depth-daily-).
+
 ## routing
 
 - Serves: [FE-06](FACTS.md#f-fe-06--travel-times--distances-per-mode).
@@ -620,6 +711,88 @@ checked the PAYLOAD, never the status code.
   rate API answers [F-CO](FACTS.md#f-co--cost-3--source-task-v1s1t8)'s
   question, not this one's.
 
+## reservation-flags
+
+- Serves: [FE-08](FACTS.md#f-fe-08--reservation--timed-entry--permit-flags-).
+- Source: **RETRIEVAL-FIRST at rung 5a, seeded by OSM's `website` tag,
+  plus a curated table** for the demo destinations' headline venues.
+  OSM's own `reservation` tag is corroboration only — the measurement
+  below is why.
+- Confirmed keys (spike, 2026-09-15, 2,808 bookable-class venues across
+  Rome and Florence): `reservation` (values `yes`, `recommended`,
+  `required`), `fee`, `charge`, `website`, `opening_hours`.
+- **Dictionary coverage — this is the sparsest slot in the family:**
+  | signal | Rome | Florence | combined |
+  |---|---|---|---|
+  | `reservation=*` | 20 / 2,000 = 1.0% | 11 / 808 = 1.4% | **31 / 2,808 = 1.1%** |
+  | `website` (the retrieval seed) | 706 / 2,000 = 35.3% | 227 / 808 = 28.1% | **933 / 2,808 = 33.2%** |
+  | `fee=*` | 98 / 2,000 = 4.9% | 49 / 808 = 6.1% | 5.2% |
+
+  The 31 tagged venues carried `yes` (21), `recommended` (9) and
+  `required` (1) — real values, e.g. "Da Bucatino" `reservation=yes`,
+  "La Giostra" `reservation=recommended`.
+- **And sparsity is not even the main problem: OSM DOES NOT MODEL THIS
+  FACT.** FE-08's Dictionary asks for `requirement_class`,
+  `typical_lead_time_days` and `sellout_speed`. OSM has no tag for lead
+  time and no tag for sellout speed anywhere in its schema — so even
+  100% `reservation` coverage would answer one field of three. And
+  PERMITS, the case FE-08 names explicitly (Inca Trail, Half Dome), are
+  issued by authorities that publish no feed at all.
+- **THE ABSENCE RULE, stated because it is the whole point of the
+  fact.** An untagged venue is NOT "no reservation needed". At 1.1%
+  coverage that inference would be wrong 99 times in 100, and it is
+  the precise failure — arriving at a sold-out timed entry — that
+  FE-08 exists to prevent. Silence is the retrieval trigger; if
+  retrieval also finds nothing, the plan carries "booking requirement
+  unknown — check before you go", never a clean bill.
+- Grade: **B** where the operator's own page answers, **C** from a
+  guide, **never D** — the quote rule below forbids it. The OSM tag
+  alone renders as **C** corroboration.
+- Freshness served: monthly, per [FACTS](FACTS.md), and a plan-time
+  re-check for any venue whose class is `required` or `permit` —
+  booking windows open on fixed dates, and that date is the fact.
+- Coverage: the retrieval seed reaches a third of venues; for the rest
+  the allowed-domain search must find the operator, which the
+  [§ money-saving-tips](#money-saving-tips) spike showed is the weak
+  link — guessed URLs 404 and operator sites bot-block.
+- Cost: free for the OSM half; retrieval-module cost for the rest.
+- retention_rights: **store-raw** for the OSM tags; **cache-only** plus
+  our curated table for the retrieved half. license_class:
+  **ODbL 1.0** (OSM); per-domain for retrieved spans; repo licence for
+  the curated table. Attribution: "© OpenStreetMap contributors", plus
+  each span's own url.
+- **Retrieval policy** — SHORTHAND, declaring itself: one fact, one
+  row, governing all three Dictionary fields, because they come off the
+  same page when they come at all.
+  - allowed domains + grade: the venue or attraction OPERATOR'S OWN
+    booking or visit page (**B**, operator) — the primary, and the one
+    the `website` tag seeds; the managing government authority for
+    parks and permits, such as a national park service or a heritage
+    ministry (**B**, government body); the official ticketing agent a
+    venue names on its own site (**B**, operator by delegation);
+    established press reporting a booking-window change (**B**);
+    travel guides (**C**). Third-party resellers and tour aggregators
+    are OUT OF BOUNDS: their lead times describe THEIR inventory, not
+    the venue's.
+  - quote required: **yes** for `requirement_class` and
+    `typical_lead_time_days` — both are claims a traveller plans a trip
+    around, and a wrong lead time is a missed booking window.
+    **no** for `sellout_speed`, a coarse class nobody publishes
+    verbatim and which we assign from evidence.
+  - freshness window: 90 days, and **7 days inside the trip window**;
+    a `permit` class re-checks at plan time regardless.
+- Spike: `scripts/spikes/feasibility-reservation-flags.mjs` — run
+  2026-09-15 over Rome (2,000) and Florence (808) bookable-class
+  venues. Returned the coverage table above and the three real
+  `reservation` values.
+- Alternatives rejected: **Google Places** (`reservable` and booking
+  links) — see
+  [§ The Google Maps verdict](#the-google-maps-verdict).
+  **OpenTable / TheFork / Resy APIs** — partner-gated booking products;
+  booking is out of V1 scope, and their coverage is restaurants only,
+  which is the half of FE-08 that matters least: a missed dinner is
+  recoverable, a missed permit is not.
+
 ## venue-attributes
 
 - Serves: [FE-09](FACTS.md#f-fe-09--venue-attributes).
@@ -708,6 +881,102 @@ checked the PAYLOAD, never the status code.
   [§ The Google Maps verdict](#the-google-maps-verdict). This slot and
   [§ opening-hours](#opening-hours) are where the licence costs Roam
   the most.
+
+## area-profiles
+
+- Serves: [FE-12](FACTS.md#f-fe-12--area-profiles-).
+- Source: **OpenStreetMap `place=suburb|neighbourhood|quarter`** for the
+  registry half (ODbL, rung 1), with the CHARACTER half curated for
+  demo destinations and retrieved at rung 5a elsewhere — exactly the
+  split [FACTS](FACTS.md) types it as.
+- Confirmed keys (spike, 2026-09-15, Rome): element `type`/`id`,
+  `tags.name`, `tags.place`, `tags.wikidata`, and `lat`/`lon`.
+- **Dictionary coverage, measured over 113 Rome area features:**
+  | FE-12 field | how it is answered | coverage |
+  |---|---|---|
+  | `area_id` | OSM `type/id` | **113 / 113 = 100.0%** |
+  | `name` | `name` | **113 / 113 = 100.0%** |
+  | `centroid` | node position | **113 / 113 = 100.0%** |
+  | `wikidata` cross-ref (not FE-12; the retrieval seed) | `wikidata` | 83 / 113 = 73.5% |
+  | `vibe_tags[]` | NOT MODELLED | curated, then retrieval 5a |
+  | `price_band` | NOT MODELLED | curated, then retrieval 5a |
+  | `centrality` | COMPUTED from centroid vs city centroid | — |
+  | `transit_access_class` | COMPUTED from [TT-07](FACTS.md#f-tt-07--local-transit-modes-) stops within a radius | — |
+  | `best_for[]` | COMPUTED from the [FE-03](FACTS.md#f-fe-03--venue--poi-records) POI mix in the area | — |
+
+  Real names returned: Garbatella, Pigneto, San Lorenzo, Monteverde,
+  Balduina, Quadraro — the vocabulary a traveller actually uses about
+  where to stay.
+- **AND THE SPIKE FOUND A GAP IN OUR OWN PLAN, recorded rather than
+  smoothed.** FE-12's Dictionary says "centroid/polygon", and the
+  derivations above assume a polygon: `best_for[]` is defined as the
+  POI mix INSIDE the area. **All 113 features came back as NODES** — a
+  named point, no boundary — and the query's second half,
+  `rel[boundary=administrative][admin_level=9|10]`, returned NOTHING
+  for Rome. OSM gives us the area REGISTRY at rung 1 and does not,
+  here, give us area GEOMETRY.
+
+  The consequence is concrete: `best_for[]` and `transit_access_class`
+  cannot be computed by point-in-polygon on this data. They need either
+  a radius around the centroid — cheap, approximate, and it will
+  mis-assign venues near a boundary — or a real polygon source.
+  [V1.S3](../ROADMAP.md#v1s3--engine-core--two-families-deep) decides
+  which; this bench's duty is to say the polygon is not in hand.
+  Note also that `admin_level` numbering is country-specific, so a
+  production query cannot hard-code 9/10 — that is a per-country
+  lookup, and another reason the radius path may win.
+- Grade: **A** for `area_id`, `name` and `centroid`. **C** for
+  `vibe_tags[]` and `price_band`, curated or retrieved, and **C** for
+  the three computed fields, since a radius approximation is an
+  estimate and renders as one.
+- Freshness served: yearly, per [FACTS](FACTS.md). Neighbourhood names
+  and characters move slowly; price bands follow
+  [§ cost-basis](#cost-basis)'s quarterly cycle where they are curated.
+- Coverage: global for the registry, with the same European density
+  bias as every OSM slot. Polygon availability is worse than point
+  availability everywhere, and is unmeasured outside Rome — named as
+  this slot's open question rather than assumed to be the same.
+- Cost: free; Overpass slot limits per
+  [finding two](#three-findings-that-shape-every-entry-below).
+- retention_rights: **store-raw**. license_class: **ODbL 1.0**;
+  curated vibe tables are ours. Attribution: "© OpenStreetMap
+  contributors".
+- **Retrieval policy** — the row SPLITS between the registry half and
+  the character half:
+  - `vibe_tags[]` and `price_band` —
+    - allowed domains + grade: the city government's own neighbourhood
+      and district pages, and the official tourism board (**B**,
+      government body); established press with a dated neighbourhood
+      feature (**B**); established travel guides (**C**); local blogs
+      carrying a visible date (**C**). Real-estate listing sites are
+      OUT OF BOUNDS for `price_band`: they price property, and FE-12's
+      band is about what a VISITOR pays.
+    - quote required: **no.** `vibe_tags[]` draws from a controlled
+      vocabulary and `price_band` is a 1–4 class; neither is a verbatim
+      claim anyone publishes, and demanding a span would force the
+      module to quote a sentence that does not say what we store. The
+      provenance url is still kept, so the receipt opens onto the
+      source even though the value is our classification of it.
+      **NO SAFETY SCORING** — advisories are a deferred socket per
+      [FACTS](FACTS.md), and no allowed domain is listed for one.
+    - freshness window: 1 year.
+  - `area_id`, `name`, `centroid` — `n/a`, answered at rung 1 by a
+    global database. `centrality`, `transit_access_class` and
+    `best_for[]` — `n/a`, computed from other facts rather than
+    retrieved.
+- Spike: `scripts/spikes/feasibility-area-profiles.mjs` — run
+  2026-09-15 over Rome. Returned 113 named areas with 100% coverage on
+  the three registry fields, 73.5% Wikidata linkage, and the
+  nodes-not-polygons finding above.
+- Alternatives rejected: **Google Places / Maps neighbourhood
+  boundaries** — see
+  [§ The Google Maps verdict](#the-google-maps-verdict); ToS 3.2.3(c)
+  names point-in-polygon analysis on Places coordinates as a
+  prohibited derivation, which is precisely the computation this slot
+  wants. **Airbnb / Booking neighbourhood guides** — proprietary, and
+  commercially motivated on exactly the field (`price_band`) we would
+  be borrowing. **Real-estate listing data** — prices property, not
+  visits; out of bounds above.
 
 ## venue-reputation
 
