@@ -6,12 +6,9 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-09-10 · 17:40 UTC by ship's weld · from work PC
-THE PRODUCT-FIRST WINDOW IS OPEN — no workshop bench until
-[V1.S1](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
-closes
-Clean floor — both benches shipped · needs-you 1 ·
-git outranks this board.
+Painted 2026-09-15 · 19:42 UTC by ship's weld · from work PC
+THE PRODUCT-FIRST WINDOW IS OPEN — no workshop bench until V1.S1 closes
+Nothing flying · needs-you 3 · git outranks this board.
 How to read it → [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
@@ -27,13 +24,24 @@ How to read it → [HOME §Reading the board](HOME.md#reading-the-board)
    → [machine-setup step 12](skills/machine-setup.md#one-time-per-machine)
    · [D-084](record/DECISIONS.md#d-084--the-global-design-stack)
 
-Not counted above, because they block nothing today and wait on you
-whenever you want them: **the colour tokens and three reference
-images.** The taste pass answered the direction and the font pair;
-it did NOT answer colour, so the palette stays reserved and unruled
-rather than inherited from the probe you picked — a seat may use
-the probe's working values task-locally, but proposing a palette as
-Roam's stops and asks. → [DESIGN](DESIGN.md)
+2. 🟡 **THE HOME PC NEEDS THE WORK PC'S USER-SCOPE PERMISSIONS** —
+   carry the work PC's user-scope permissions block
+   (`~/.claude/settings.json`) by paste when you next sit there.
+   **There is no master and there should not be one**: the tracked
+   file is the rail inside the repo and it travels with the clone
+   ([#362](https://github.com/wsher0901/roam/pull/362)), while user
+   scope is personal by design — it applies in every directory, not
+   just this one, so it is not the repo's to own. Ruled by the Web
+   review, 2026-09-11. (since 09-10)
+   → [machine-setup](skills/machine-setup.md#one-time-per-machine)
+
+3. 🟡 **TRADEMARK CHECK — "ROAM AROUND" IS A SHIPPING AI ITINERARY
+   PRODUCT.** Clear the name before
+   [V1.S8](ROADMAP.md#v1s8--demo-polish)'s public URL. It cannot be
+   settled inside the repo and it gets more expensive the later it
+   moves, because the name is already in the docs, the repo and the
+   deploy. **Before V1.S8**, not now. (since 09-15)
+   → [V1.S8.T3](ROADMAP.md#v1s8--demo-polish) (the public URL)
 
 ## The baton
 
@@ -44,24 +52,40 @@ Last flight: LANDED 2026-08-04 21:16 UTC via MANUAL-LAND.
 
 ## In flight
 
-Nothing flying, no lanes, no bench open. Both this sitting's benches
-merged — [#355](https://github.com/wsher0901/roam/pull/355) and
-[#356](https://github.com/wsher0901/roam/pull/356).
+**Nothing flying.**
+
+The four V1.S1 benches
+[#358](https://github.com/wsher0901/roam/pull/358)–[#361](https://github.com/wsher0901/roam/pull/361)
+still sit at birth, untouched and claimable.
 
 ## Working on
 
-**NOTHING OPEN — and the window is why that matters.**
+**NOTHING OPEN.**
 [V1.S1](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
-T3–T6 are next and they are the only thing the workshop may open.
+T3–T6 are next and the founder decides when they start. They now
+carry one more duty each: a retrieval-policy row per fact
+([D-088](record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state)
+ruling 3), and T4 also evaluates Maps grounding (ruling 17).
+[V1.S1.T8](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
+— cost sources — is new and unclaimed.
 
-**THE PRODUCT-FIRST WINDOW.**
+**WHAT THE TEST FLIGHT PROVED** (2026-09-11, four benches, all
+merged). The canary handshake was the thing under test, after
+2026-09-10 dispatched four lanes and acked none: all three lanes
+acked in **4.0s, 2.6s and 2.6s**, because the acks were PRE-STAGED
+as a watcher armed BEFORE dispatch. The window is per-lane; ack
+capacity is shared. Of 25 critic findings across the four benches,
+**eight were in a spec the control tower wrote** rather than in any
+lane's work. Full account:
+[the ledger](record/history/README.md#the-ledger).
+
+**THE PRODUCT-FIRST WINDOW** stays open.
 [D-086](record/DECISIONS.md#d-086--workshop-the-product-first-window)
 closes the workshop to new benches until
 [V1.S1](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
-closes, puts the ceremony on a diet, batches the T3–T6 review, and
-splits the inbox so §Open holds product work only. It expires on
-[V1.S1](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)'s
-own checkboxes — nothing has to remember to end it.
+closes, and expires on its own checkboxes. Product welds defer
+synthesis meanwhile (ruling 2c); one catch-up bench walks every
+deferred weld at V1.S1 close.
 
 The standing order
 ([D-060](record/DECISIONS.md#d-060--the-three-phase-standing-order),
@@ -72,12 +96,10 @@ phase 2's by
 one phase per line:
 
 - PHASE 1 — settle & test: **CLOSED 2026-08-05.**
-- PHASE 2 — the vault: **CLOSED 2026-08-07.** The
-  connections-and-content polish pass was carved out as its own
-  bench, `vault-connections`, which gates nothing.
-- PHASE 3 — Roam: **OPEN, and now the only thing running.**
+- PHASE 2 — the vault: **CLOSED 2026-08-07.**
+- PHASE 3 — Roam: **OPEN, and the only thing running.**
   [V1.S1](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
-  T3–T6 relaunch from scratch, then T7; plus
+  T3–T6 and T8, then T7; plus
   [V1.S2.T5](ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)
   design foundations.
 
@@ -86,25 +108,51 @@ one phase per line:
 **Completed** — the last five; the full chronology is
 [the ledger](record/history/README.md#the-ledger).
 
-- **SIXTEEN ADVISORIES TO ZERO** — Next 16.3.4 closes a critical
-  middleware bypass; a monthly grouped dependabot lane replaces the
-  bench. One gap named rather than closed: majors still need a
-  manual sweep. [#356](https://github.com/wsher0901/roam/pull/356)
-- **THE WORKSHOP GETS A DEADLINE** — D-086 opens the product-first
-  window: no workshop bench until V1.S1 closes, a ceremony diet, a
-  permanent board diet, and an inbox split. Its deferral classifier
-  was wrong twice before it shipped, both caught by review.
-  [#355](https://github.com/wsher0901/roam/pull/355)
-- **SUPPLY LINES, AND A GATE THAT CAN SEE MOTION** — four shadcn
-  registries under an arrival law, Recharts settled as the chart
-  layer, and the design-review agent given video and trace capture.
-  [#352](https://github.com/wsher0901/roam/pull/352)
-- **ROAM HAS A DIRECTION — `place-first`** — the plan on a living
-  map; faces ratified as worn, weights and colour deliberately not.
-  [#349](https://github.com/wsher0901/roam/pull/349)
-- **THE GLOBAL DESIGN STACK** — a machine-wide design capability,
-  and [DESIGN](DESIGN.md) made to outrank it inside this repo.
-  [#345](https://github.com/wsher0901/roam/pull/345)
+- **THE SEPTEMBER RE-TAILORING** —
+  [D-088](record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state)'s
+  eighteen rulings re-cut the June definitions against what a model
+  can now do: the ladder's rung 5 splits into RETRIEVED-WITH-
+  PROVENANCE (5a, graded B or C by domain, and it enters Judge) and
+  REMEMBERED (5b, grade D); cost becomes a sixth check family inside
+  V1; the optimizer is named with OPEN-10 holding its solver class;
+  the brain goes stateless over a versioned state store; and the
+  receipt becomes the demo. V1 35 → 39 tasks, FACTS 54 → 59 facts.
+  The critic caught the one that would have gutted it — §11's
+  boundary clause still said "rung 5" while the paragraph beside it
+  declared the boundary unchanged.
+  [#367](https://github.com/wsher0901/roam/pull/367)
+- **WHAT THE MODEL MAY AND MAY NOT PRODUCE** —
+  [D-087](record/DECISIONS.md#d-087--product-the-model-boundary-and-three-plan-corrections)
+  makes the model boundary an ENGINE §11 invariant, adds demo
+  guardrails as V1.S8.T4 with nothing public before them, gates the
+  fact cache on the migrations, and grows the eval set — closing
+  OPEN-9 in place with its number kept.
+  [#366](https://github.com/wsher0901/roam/pull/366)
+- **THE FIRST THING AT THE PUBLIC URL THAT IS OURS** — the
+  create-next-app template is gone; eight lines render Roam and one
+  sentence. The design-review gate then found what three
+  authenticated fetches could not: a token pointing at itself put
+  the whole screen in Times New Roman, on main as well. Fixed, six
+  template assets deleted, and the states law answered honestly at
+  two states rather than one.
+  [#365](https://github.com/wsher0901/roam/pull/365)
+- **A GRADE RESTING ON A FETCH NOBODY RE-RAN** — three weather
+  spikes re-run after ninety-one days and four stamps refreshed with
+  today's OBSERVED values (14 keys, 3,653 days, 3 active alerts
+  where June saw 2). No grade or coverage claim moved. The critic
+  caught that the licence stamp alone had no re-runnable artifact;
+  the page's own sentences are now pasted verbatim, and the spec was
+  widened because a bench meeting the old contract would still have
+  shipped the hole.
+  [#364](https://github.com/wsher0901/roam/pull/364)
+- **THE NOTE THAT DESCRIBED A FOLDER THAT NO LONGER EXISTED** —
+  [DESIGN §Reference images](DESIGN.md#reference-images) said the
+  two rejected taste probes sat beside the picked one, "linked from
+  that folder's index". All three files had been deleted on
+  2026-09-10; the paragraph now says so, and the old line's one true
+  idea — that no reference slot ever pointed at the losers — becomes
+  the reason the deletion was safe.
+  [#363](https://github.com/wsher0901/roam/pull/363)
 
 **Issues** — none with a home nowhere else.
 
@@ -118,22 +166,38 @@ table, gained one before it moved:
 
 ## Where we are (Roam)
 
-V1 — The demo · 5/34 █████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-S1 · Data Definition · 2/7 ██░░░░░
+V1 — The demo · 5/39 █████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+S1 · Data Definition · 2/8 ██░░░░░░
 S2 · Skeleton & design · 3/5 ███░░
-S3–S8 · queued in order · 0/22
+S3–S8 · queued in order · 0/26
+
+The V1 total moved 35 → 39:
+[D-088](record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state)
+added V1.S1.T8 (cost sources), V1.S3.T8 (retrieval module),
+V1.S6.T4 (import & check) and V1.S7.T4 (cost module).
+No box was ticked by this weld — the bench is a decision, not a
+task, and ticks are ship's alone.
 
 ## Web + Design
 
 - (Web) "GitHub workflow protocol and web instructions setup" — the
-  ops chat; next: the batched review of `product-first` and
-  `deps-sep`, then the batched T3–T6 review under
-  [D-086](record/DECISIONS.md#d-086--workshop-the-product-first-window)
-  ruling 3.
+  ops chat. It ran the full-pass validation behind
+  [#362](https://github.com/wsher0901/roam/pull/362), the BATCHED
+  REVIEW of the test flight's four PRs, and then
+  [#367](https://github.com/wsher0901/roam/pull/367) — PASS on the
+  work, two `BLOCKED:` answers (Q1 FREEZE, Q2 NARROW), then PASS
+  re-issued per sha on the repaired head. Next: the T3–T6 batch when
+  those benches fly.
 - (Design) no chat open; [DESIGN](DESIGN.md) holds the direction and
-  the reserved slots.
+  the reserved slots — colour tokens and three reference images
+  still TBD, still the founder's.
 
 ## Next
 
 **[V1.S1](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
-T3–T6 via the chooser.**
+T3–T6 — the founder's call when.** Four benches already sit at birth
+as [#358](https://github.com/wsher0901/roam/pull/358)–[#361](https://github.com/wsher0901/roam/pull/361),
+and each now owes a retrieval-policy row per fact.
+[T8](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
+is new and parallel. Closing T3–T8 then T7 closes the product-first
+window.

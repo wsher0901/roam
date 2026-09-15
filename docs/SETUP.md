@@ -92,7 +92,7 @@ and replication is `git clone`.
   print the board) · user-prompt-submit (close-lock) · session-end
   (push safety net).
 - **CI** — `.github/workflows/ci.yml`. VALUES, in order: lint ·
-  format · links · ledger · memory · tests · build.
+  format · links · ledger · memory · vocab · tests · build.
 - **Line endings** — `.gitattributes`, LF normalization repo-side.
 - **Vault-lens seed** — `.claude/vault-seed/` (`graph.json` ·
   `bookmarks.json`); applied per machine by the machine-setup

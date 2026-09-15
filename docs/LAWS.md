@@ -246,7 +246,13 @@ record/history/ keeps the meaning.
   never stale-trusted: git outranks every note.
 - Weave rule: in any docs/ file, every mention of a roadmap ID,
   D-number, fact/param ID (F-*, TP-*), or sibling doc is a markdown
-  link (GitHub-compatible anchors), never plain text.
+  link (GitHub-compatible anchors), never plain text — and for
+  D-NUMBERS IN THE LIVING CORPUS, `check:links` enforces it: a bare
+  mention fails CI naming file:line. Headings and code, fenced or
+  inline, are exempt; the frozen record — history/, chronicle/,
+  specs/ and DECISIONS — is out of scope. The rest of the rule
+  (roadmap IDs, fact/param IDs, sibling docs) is still habit, and
+  so is whether a link points at the RIGHT heading.
 - Derivation law: derived values (counts, totals, statuses) are never
   written as literals — compute from source at render time. Time is
   derived, never recalled: every stamp, date, or time written

@@ -10,7 +10,7 @@ Manual — notation, tags, and how to read this file:
 ## The versions
 | V    | Name        | Completion criteria                                                                                                                                                                                            |
 | ---- | ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| V1   | The demo    | a public URL runs the full Suggest→Plan→Edit spine over all five [check families](FOUNDATION.md#what-roam-checks) on the three seeded scenarios, every claim sourced or labeled per the [reliability law](FOUNDATION.md#the-reliability-law) |
+| V1   | The demo    | a public URL runs the full Suggest→Plan→Edit spine over all six [check families](FOUNDATION.md#what-roam-checks) on the three seeded scenarios, every claim sourced or labeled per the [reliability law](FOUNDATION.md#the-reliability-law) |
 | V2   | Real users  | a stranger can sign up, build a real trip, leave, return — and everything holds                                                                                                                      |
 | V3   | The product | charging money for it is defensible                                                                                                                                                                  |
 | Pool | —           | unversioned sockets + [IDEAS.md](IDEAS.md) inbox                                                                                                                                                     |
@@ -34,22 +34,27 @@ Demo-first but real: deployable production code, no onboarding or
 billing yet, and nothing that would need a rewrite when accounts
 arrive in V2.
 Refuses (each lifts in a later version, by roadmap edit only):
-booking, payments, reservations, or any transaction · live fare/price
-scraping — cost means honest estimate ranges · mid-trip features ·
+booking, payments, reservations, or any transaction · SCRAPED
+fares and prices — cost means a licensed live quote where a
+non-booking API exists (flights first) and an honest range
+everywhere else ([D-088](record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state)) · mid-trip features ·
 social/sharing · mobile (web only).
-Ships: all five check families — two built deep, three more added as
-proof the plug-in promise holds; trending via general signals only.
+Ships: all six check families — two built deep, four more added as
+proof the plug-in promise holds; trending as a computed signal from
+general proxies and dated press, never platform mining.
 
 Sources:
 [reliability law](FOUNDATION.md#the-reliability-law)
 [check families](FOUNDATION.md#what-roam-checks)
 
 ### V1.S1 — Data Definition (the gate; docs + spike scripts only, no app code)
-Completion criteria: every V1 fact has a vetted source with a successful spike
-fetch, a reliability grade, and a freshness window — and the storage
-schema is written.
+Completion criteria: every V1 fact has a reliability grade, a freshness window,
+and EITHER a vetted source with a successful spike fetch OR — where no
+source exists to spike — a retrieval policy naming its allowed domains
+and whether a quote is required ([D-088](record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state)) — and the
+storage schema is written.
 - [x] V1.S1.T1 [P] Fact inventory — enumerate every fact each of the
-      five families needs (what it is, which spine step uses it,
+      six families needs (what it is, which spine step uses it,
       geographic scope, freshness need) -> [docs/data/FACTS.md](data/FACTS.md) ·
       [history](record/history/product/definition/v1.s1.t1.md)
 - [x] V1.S1.T2 [P] Vet sources: Weather — forecast + climatology
@@ -71,16 +76,22 @@ schema is written.
 - [ ] V1.S1.T6 [P] Vet sources: Crowds & calendar — public holidays,
       school breaks, events feeds, trending-general method; same
       outputs -> `docs/data/SOURCES-crowds-calendar.md`
-- [ ] V1.S1.T7 [seq after T1–T6] Storage schema + source registry —
+- [ ] V1.S1.T7 [seq after T1–T6 and T8] Storage schema + source registry —
       Postgres schema for the fact cache (value, source, confidence,
       fetched_at, freshness window), places, plans, plan_versions;
-      consolidate the four `SOURCES-<family>.md` files into
+      consolidate the five `SOURCES-<family>.md` files into
       [docs/data/SOURCES.md](data/SOURCES.md) and delete them; any
-      fact lacking a reliable source explicitly marked "LLM-research
-      grade -> rendered as unverified"
+      fact lacking a reliable source explicitly marked "model memory
+      (rung 5b) -> rendered as unverified", the grade D renamed by
+      [D-088](record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state)
       Also covers: [FACTS Appendix C](data/FACTS.md#appendix-c--telemetry-vocabulary-what-the-app-records) tables (events, claim
       ledger, eval runs, actuals, source health) and the bitemporal
       append-only fact-cache law ([D-014](record/DECISIONS.md#d-014--telemetry-posture), [D-015](record/DECISIONS.md#d-015--data-asset-law)).
+- [ ] V1.S1.T8 [P] Cost sources vetting — flight-quote APIs (Duffel,
+      Amadeus self-service, and peers), lodging rate options,
+      ground/activity ranges; quote-vs-estimate policy; license, key,
+      quota, freshness; same outputs -> `docs/data/SOURCES-cost.md`
+      (consolidated at T7) · [D-088](record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state)
 
 ### V1.S2 — Skeleton & design foundations (parallel lane with S1)
 Completion criteria: a styled shell is deployed on Vercel with CI green and the
@@ -113,9 +124,11 @@ for any destination + dates using Weather and Sky & sea.
 - [ ] V1.S3.T1 [seq] Check contract + orchestrator — CheckModule
       interface; Verdict shape (score, confidence, source,
       explanation); engine context; parallel fan-out + merge
-- [ ] V1.S3.T2 [seq] Fact-cache layer — read-through Postgres cache
-      honoring per-source freshness windows; fetch dedupe;
-      recorded-fixture mode for tests
+- [ ] V1.S3.T2 [seq after T1 and [V1.S2.T4](#v1s2--skeleton--design-foundations-parallel-lane-with-s1)] Fact-cache layer — read-through
+      Postgres cache honoring per-source freshness windows; fetch
+      dedupe; recorded-fixture mode for tests. The cache IS
+      Postgres, so it cannot start before the migrations exist
+      ([D-087](record/DECISIONS.md#d-087--product-the-model-boundary-and-three-plan-corrections))
 - [ ] V1.S3.T3 [P after T2] Weather module (deep) — forecast-vs-
       climatology blend labeled in output; per-activity sensitivity
       profiles (wind, rain, fog, temp)
@@ -125,21 +138,35 @@ for any destination + dates using Weather and Sky & sea.
 - [ ] V1.S3.T5 [seq after T3+T4] Scoring + explanations — verdicts ->
       activity/day/trip scores with confidence; reason rendering;
       `engine demo <place> <dates>` harness
-- [ ] V1.S3.T6 [P] Engine test suite — golden tests on fixtures; CI
-      runs with zero live calls
+- [ ] V1.S3.T6 [P] Engine test suite — golden tests on fixtures AND
+      the in-scope input eval set; CI runs with zero live calls
+      ([D-087](record/DECISIONS.md#d-087--product-the-model-boundary-and-three-plan-corrections)).
+      Eval inputs are GENERATED WITH MODEL HELP; explanations are
+      graded by a MODEL JUDGE; scores are graded DETERMINISTICALLY;
+      and RECOMMENDATION QUALITY is a metric alongside correctness,
+      measured against a graded "good here, now" set
 - [ ] V1.S3.T7 [P after T2] Actuals harvester — scheduled job that
       records observed values once a fact's valid_for passes; pairs
       with the claim ledger for calibration ([D-015](record/DECISIONS.md#d-015--data-asset-law); spec:
       [FACTS Appendix C2](data/FACTS.md#c2--quality--ground-truth-p5))
+- [ ] V1.S3.T8 [P after T2] Retrieval module — search/fetch under a
+      per-fact domain policy; quote extraction; schema validation;
+      cache with freshness; serves every rung-5a fact
+      ([ENGINE §3](ENGINE.md#3-acquire--get-the-facts)) · [D-088](record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state)
 
 ### V1.S4 — Suggest
 Completion criteria: floor input (origin + dates) streams back ranked, reasoned
 trip options in the app.
-- [ ] V1.S4.T1 [seq] Brain endpoint — AI SDK streaming route; system
-      prompt v1; however-much-input -> structured TripQuery via
-      streamObject
+- [ ] V1.S4.T1 [seq] Brain — AI SDK 6 ToolLoopAgent over the engine's
+      tool contract (checks, planner, receipts, state); `streamObject`
+      for intake extraction ONLY; multimodal intake (pasted
+      confirmations, screenshots, PDFs); a managed agent is evaluated
+      as the hosted option only AFTER the contract exists
 - [ ] V1.S4.T2 [seq] Candidate generation — origin + dates -> candidate
-      destinations within data coverage; engine scores them
+      destinations and activities, MODEL-PROPOSED then verified down
+      the ladder (rung ≤ 5a) before they can be offered; engine scores
+      them. The curated set stays the warmed demo path, not the
+      ceiling
 - [ ] V1.S4.T3 [seq] Options UI — streaming option cards with reasons +
       confidence badges, map context, select-one flow
 
@@ -148,8 +175,12 @@ Binding requirements: [ENGINE — Aggregate · Synthesize · Gate](ENGINE.md#5-a
 (canonical since [D-021](record/DECISIONS.md#d-021--plan-synthesis-principles-re-home)).
 Completion criteria: selecting an option yields a persisted day-by-day plan
 rendered on timeline + map.
-- [ ] V1.S5.T1 [seq] Plan builder — sequence activities by scores,
-      daylight, opening hours; persist plan + snapshot version 1
+- [ ] V1.S5.T1 [seq] Plan synthesis — the optimizer
+      ([ENGINE §6](ENGINE.md#6-synthesize--build-the-plan)): a constraint
+      scheduler over time windows, the travel-time matrix, day rhythm,
+      pace and density budgets and pins, objective = the composed
+      score; persist plan + snapshot version 1. OPEN-10 (solver class,
+      degradation threshold) is decided before this task starts
 - [ ] V1.S5.T2 [seq] Timeline UI — day columns, activity blocks,
       dnd-kit wiring (interaction verdicts arrive in S6)
 - [ ] V1.S5.T3 [P after T1] Map view — MapLibre day routes + markers
@@ -163,18 +194,38 @@ streamed verdicts, and any version reverts in one click.
 - [ ] V1.S6.T2 [seq] Edit UX — drag/move/swap or a typed request (one
       brain, no modes) -> streamed verdict panel, accept/undo
 - [ ] V1.S6.T3 [seq] Versions & revert — version history UI, one-click
-      revert, change annotations
+      revert, change annotations; each diff carries the traveler's
+      stated reason or `absent`, never an inferred one, and the
+      sequence is the walkable decision path
+      ([ENGINE §9](ENGINE.md#9-re-validate--edits-and-drift))
+- [ ] V1.S6.T4 [seq after T1] Import & check — paste or upload an
+      existing plan,
+      or a place and now; the engine re-validates it as version 1
+      with receipts (no live tracking or notifications). The fourth
+      level of certainty
+      ([FOUNDATION §The spine](FOUNDATION.md#the-spine)) — an entry,
+      not a mode · [D-088](record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state)
 
-### V1.S7 — The other three families (plug-in proof)
-Completion criteria: all five families run in every spine step with zero
-engine-core changes.
+### V1.S7 — The other four families (plug-in proof)
+Completion criteria: all six families run in every spine step with zero
+engine-core changes. Each family chooses, per fact, an API adapter or a
+retrieval policy ([D-088](record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state)).
 - [ ] V1.S7.T1 [P] Feasibility module — hours, closures, distances,
       cost estimate ranges
 - [ ] V1.S7.T2 [P] Time & transport module — airport choice,
       flight-time sense per registry grades, backward-chained departure
       logistics, within-trip modes
 - [ ] V1.S7.T3 [P] Crowds & calendar module — holidays, school breaks,
-      events, trending-general
+      events, and TREND AS A COMPUTED SIGNAL: reservation scarcity,
+      review velocity, YouTube and Reddit velocity via their APIs,
+      plus dated press and blogs at rung 5a; the rendered label
+      carries the signal's lag
+      ([F-CC-07](data/FACTS.md#f-cc-07--trending-signal-computed))
+- [ ] V1.S7.T4 [P] Cost module — live quotes where a licensed
+      non-booking API exists (flights first), honest ranges
+      everywhere else, and the trip-cost roll-up against the
+      traveler's ceiling ([F-CO](data/FACTS.md#f-co--cost-3--source-task-v1s1t8))
+      · [D-088](record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state)
 
 ### V1.S8 — Demo polish
 Completion criteria: a public demo URL runs three seeded wow scenarios smoothly.
@@ -182,9 +233,17 @@ Completion criteria: a public demo URL runs three seeded wow scenarios smoothly.
       transitions, empty states
 - [ ] V1.S8.T2 [P] Reliability surfacing audit — error/edge handling;
       every unverified fact visibly labeled
-- [ ] V1.S8.T3 [seq] Demo scenarios + perf — three seeded scenarios
-      with warmed cache, streaming latency pass, README demo section,
-      public URL
+- [ ] V1.S8.T3 [seq after T1, T2, T4] Demo scenarios + perf — three
+      seeded scenarios with warmed cache, streaming latency pass,
+      README demo section, public URL. Done-means also: EVERY RENDERED
+      CLAIM OPENS ITS EVIDENCE. The three are named — (i) trending
+      places to eat in NYC right now, (ii) fun things around this
+      neighborhood, (iii) the optimal route for my day with these
+      plans
+- [ ] V1.S8.T4 [P] Demo guardrails — per-client rate limit and a
+      spend cap on the model route with a graceful "demo is resting"
+      state, plus a bot gate; nothing public before it
+      ([D-087](record/DECISIONS.md#d-087--product-the-model-boundary-and-three-plan-corrections))
 
 ## V2 — Real users · rough bucket
 accounts & auth (Supabase) with saved trips ·
@@ -193,12 +252,14 @@ consent-gated collection goes live ·
 hardening: error/edge handling at user scale, abuse and cost caps.
 
 ## V3 — The product · named
-real prices where source-backed · trip sharing (async) · promoted
+trip sharing (async) · promoted
 sockets: safety & travel advisories, visa/entry rules · billing,
 legal, ops · engine tuning v0 on the accumulated dataset.
 
 ## Pool — unversioned sockets
 air quality, pollen, smoke seasons · sea temperature & swell ·
 accessibility needs · in-app booking · SNS trend mining · sync
-collaboration · plan diffs & branching · mid-trip companion · mobile.
+collaboration · plan diffs & branching · mid-trip companion · mobile ·
+Roam as an MCP server / app inside ChatGPT, Claude and Gemini — the
+engine's tool contract as a distribution channel.
 Inbox: [IDEAS.md](IDEAS.md) — nothing is scope until triaged here.

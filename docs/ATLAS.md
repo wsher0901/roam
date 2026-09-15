@@ -243,9 +243,14 @@ THE DASHED BOX IS NOT DECORATION, and its FOUR JOINTS are these:
 3. **Board freshness is only ever repaired at a ritual**, so
    between rituals the board is stale by design.
 4. **THE TERMINUS ITSELF** — nothing mechanical enforces that the
-   external review happened or that the word was given; the
-   ritual merge allowance is unconditional once a ritual is
-   running.
+   external review happened or that the word was given. The server
+   refuses a direct push, a red-CI merge, a force-push and a branch
+   deletion, and it can require no approval count at all while one
+   account owns every seat; **and the ritual `allowed-tools` grant
+   is additive, so under auto mode `gh pr merge` is adjudicated
+   outside any ritual without a prompt.** The word is upheld by the
+   record, not by the platform.
+   → [HOME §Micro-PRs](HOME.md#micro-prs)
 
 Each is a real miss this workshop has already paid for, or a rail
 it has chosen not to build. Their inbox lines are in
@@ -256,7 +261,7 @@ Boxes: [the ambient import and the session hooks — HOME §The files](HOME.md#t
 · [the close-lock the prompt hook enforces — HOME §Terms](HOME.md#terms)
 · [the register itself — LAWS](LAWS.md)
 · [skills and their point-only stubs — HOME §Skills](HOME.md#skills)
-· [the merge allowance, its narrowness, and the micro-PR carve-out — HOME §Micro-PRs](HOME.md#micro-prs)
+· [what actually holds the merge gate up, and the micro-PR carve-out — HOME §Micro-PRs](HOME.md#micro-prs)
 · [the verification loop the checks mirror — ship §1](skills/ship.md#1--preflight)
 · [the critic — ship §6](skills/ship.md#6--the-gate)
 · [no-solo-approval — LAWS §Workflow](LAWS.md#workflow-non-negotiable)

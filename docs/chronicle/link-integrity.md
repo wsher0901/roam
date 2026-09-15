@@ -2,14 +2,15 @@
 type: chronicle-story
 shelf: III — the information system
 status: living
-updated: 2026-08-05 · written · cloud lane
+updated: 2026-09-10 · the weave gate — half the blind spot closed · work PC
 ---
 
 # Link integrity — the weave rule and the checker that defends it
 
-> **CURRENT ENDING (2026-08-05).** The weave rule is law and the
-> checker is a required CI gate: **5,203 internal links across 257
-> markdown files, 0 broken**, derived by running
+> **CURRENT ENDING (2026-09-10).** The weave rule is law and the
+> checker is a required CI gate running TWO PASSES: **7,408
+> internal links across 350 markdown files, 0 broken**, and **0 bare
+> D-numbers across 26 living docs** — both derived by running
 > `scripts/check-links.mjs` on this branch's tip. It began as repo
 > hygiene, became a rule about how the corpus refers to itself, and
 > then became the thing that makes the rule enforceable rather than
@@ -21,6 +22,13 @@ updated: 2026-08-05 · written · cloud lane
 > critic found one, the regex was hardened, and 13 previously
 > unseen links entered the count. The scar is a comment in the
 > checker's own source, naming the bench and the date.
+>
+> **The 2026-09-10 system audit then split this story's caveat in
+> two and closed the half a machine can reach.** A plain-text
+> D-number now FAILS, naming file:line — so the weave rule is a gate
+> for the citation class that carries the corpus's argument. The
+> other half is untouched and stays stated: the checker still proves
+> an anchor EXISTS, never that it is the RIGHT one.
 
 ## What it is
 
@@ -107,6 +115,40 @@ amount of care at the editing site can see that.
   MAINTENANCE, not a content edit — append-only governs meaning, not
   bytes — which is what makes the record shelf maintainable at all.
 
+- **2026-09-10 ([#362](https://github.com/wsher0901/roam/pull/362))
+  — THE WEAVE GATE: the un-applied half of the rule becomes
+  enforceable for D-numbers.** The system audit proved by probe what
+  this story had only asserted — a plain-text `D-082` passed CI
+  green — and then closed it for the one citation class where the
+  test needs no judgment. A second pass over a LIVING corpus of 26
+  files (the nine living singletons, `docs/data/`, `docs/skills/`,
+  and the four box masters) fails any D-number that is not a
+  markdown link, at file:line. The frozen record is deliberately
+  outside it: back-filling links into a shipped story would rewrite
+  the past to satisfy a present convention, and DECISIONS is where
+  every anchor points anyway. **26 offenders were linked** — HOME 21
+  · IDEAS 3 · ENGINE 1 · DASHBOARD 1 — and the link total moved
+  7,370 → 7,396, one per mention, which is the arithmetic proof
+  nothing was missed. Proved red-then-green by planting a bare
+  mention and removing it.
+
+  **THE EXEMPTION LIST THE MANDATE SPECIFIED WAS INCOMPLETE, AND
+  THE INPUTS SAID SO RATHER THAN THE REASONING.** It named three
+  exemptions — link, heading, fenced block — but
+  [ship §7](../skills/ship.md#7--on-approval--the-atomic-weld)
+  writes the exact string `synthesis: deferred — D-086` into a weld
+  commit message and a history frontmatter field, and both of
+  ship.md's two mentions are that literal. A markdown link cannot
+  live inside a code span, and if it could, the value the weld
+  writes would be wrong. Inline code joined the list for the same
+  reason a fenced block is on it: it is a value, not a citation.
+  Found by walking every offender the scanner named rather than
+  reasoning about the categories — the enumeration law's own method,
+  on a bench that exists because five case-analysis holes shipped in
+  five consecutive benches. The pattern is also `D-d{3,}` rather
+  than the `D-0dd` specified, so it does not silently stop
+  covering new numbers at D-100.
+
 ## Where it stands, and the one honest caveat
 
 The gate is live, required, and quoted at every gate report. Run on
@@ -131,13 +173,25 @@ bench and the date it was found, so the next seat reading that regex
 meets the failure mode before it edits it. That is a good practice
 and it is not a guarantee.
 
-One scoping note, so a later reader does not over-read the number:
-the checker verifies that internal links RESOLVE. It does not
-verify that they are the RIGHT links, and it cannot see a place
-where the weave rule was simply not applied — a plain-text mention
-that should have been a link is, to this gate, not a link at all.
-That half of the rule is enforced by review, including the pre-gate
+One scoping note, so a later reader does not over-read the number
+— and since 2026-09-10 it has TWO halves with different answers.
+
+**The un-applied half is now partly mechanical.** A plain-text
+mention was once invisible to this gate: not a link at all, so not
+a link it could fail. For D-NUMBERS in the living corpus that is
+over — pass 2 fails them at file:line, and the corpus stands at 0
+bare. The rest of the weave rule (roadmap IDs, fact and param IDs,
+sibling docs) is still enforced by review, including the pre-gate
 critic, which has caught weave breaches more than once.
+
+**The destination-blind half is untouched, and is not fixable by
+this instrument.** The checker verifies that internal links RESOLVE.
+It does not verify that they are the RIGHT links — a citation can
+rot into pointing at a real-but-wrong heading with CI green
+throughout, which the audit proved by probe rather than inferred
+from the source. Closing it needs a notion of what a link MEANS,
+which no regex has. It stays named in
+[ATLAS](../ATLAS.md)'s dashed box rather than quietly dropped.
 
 ## Sources
 
