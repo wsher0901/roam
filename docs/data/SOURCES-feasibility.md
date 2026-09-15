@@ -47,13 +47,26 @@ rejected.
 
 **Two: the public OSM query endpoints are not production
 infrastructure.** Overpass allows TWO concurrent slots per IP and
-answers HTTP 429 `rate_limited` past them; Nominatim's usage policy
-caps at 1 req/s and forbids bulk geocoding. Both were hit during this
-bench's spikes, not read about. Every OSM-backed entry below is graded
-on the DATA, and every one of them carries the same operational
-caveat: production needs a self-hosted instance or an offline extract.
-That is an engineering cost, not a licence problem, and it does not
-move any grade.
+answers HTTP 429 `rate_limited` past them — HIT REPEATEDLY during this
+bench's spikes, not read about; the five-city coverage sweep needed
+backoff and four mirrors to finish. Nominatim's usage policy, read
+2026-09-15 at operations.osmfoundation.org/policies/nominatim, states
+*"an absolute maximum of 1 request per second"*, requires a User-Agent
+identifying the application, and discourages bulk geocoding; this
+bench respected it rather than testing it.
+
+**And that same policy contains the sentence that most cleanly
+separates the open sources from the proprietary ones:** *"Results must
+be cached on your side."* Nominatim REQUIRES the caching that
+[§ The Google Maps verdict](#the-google-maps-verdict) shows Google
+forbids. The two ecosystems ask for opposite behaviour from the same
+application, and
+[D-015](../record/DECISIONS.md#d-015--data-asset-law) points one way.
+
+Every OSM-backed entry below is graded on the DATA, and every one
+carries the same operational caveat: production needs a self-hosted
+instance or an offline extract. That is an engineering cost, not a
+licence problem, and it does not move any grade.
 
 **Three: a source can answer HTTP 200 and still be dead.** Three
 candidates did during this bench — `restcountries.com/v3.1` returns
