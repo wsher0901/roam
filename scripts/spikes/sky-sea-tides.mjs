@@ -175,23 +175,43 @@ for (const site of SITES) {
   console.log("");
 }
 
-// ---------- 4. what a non-US request actually does ----------
+// ---------- 4. the shape of the registry, and the shape of the gap ----------
+// Stated from the data rather than from the agency's nationality. A first
+// draft of this spike concluded "US states/territories only" and the
+// nearest-station table above refutes it: the nearest station to Sydney is in
+// Niue, which is not US territory.
+const withState = stations.filter((s) => s.state && s.state.trim());
+const stateless = stations.filter((s) => !s.state || !s.state.trim());
+const FOREIGN_MARKERS =
+  /niue|papeete|christmas island|kwajalein|majuro|funafuti/i;
+const foreign = stateless.filter((s) => FOREIGN_MARKERS.test(s.name));
+
 console.log("THE GAP, STATED EXACTLY:");
 console.log(
-  `  NOAA CO-OPS is a US agency and its ${sjson.count} tide-prediction stations are`,
-);
-const nonUsStates = new Set(
-  stations.map((s) => s.state).filter((s) => s && s.length === 2),
+  `  ${sjson.count} tide-prediction stations: ${withState.length} carry a US state or`,
 );
 console.log(
-  `  US states/territories only (${nonUsStates.size} two-letter state codes present).`,
+  `  territory code (${new Set(withState.map((s) => s.state.trim())).size} distinct codes) and ${stateless.length} carry none.`,
 );
 console.log(
-  "  For the three non-US sites above the nearest station is an ocean away;",
+  "  THE STATELESS SET IS NOT ALL US. It is a Pacific scatter that includes",
+);
+console.log("  foreign and freely-associated territories, for example:");
+for (const s of foreign.slice(0, 5)) {
+  console.log(
+    `    ${s.id}  ${s.name.trim()}  @${s.lat.toFixed(1)},${s.lon.toFixed(1)}`,
+  );
+}
+console.log(
+  "  So the honest statement is NOT 'US only' — it is that coverage is the US",
 );
 console.log(
-  "  SS-04 therefore does NOT resolve outside US waters from this source, and",
+  "  plus a thin Pacific tail, which is not global coverage by any reading:",
 );
 console.log(
-  "  SS-10 inherits that gap because it is derived from SS-04's series.",
+  "  at every non-US site tested above the nearest station is an ocean away, so",
 );
+console.log(
+  "  SS-04 does not resolve there, and SS-10 inherits the gap because it is",
+);
+console.log("  derived from SS-04's own series.");

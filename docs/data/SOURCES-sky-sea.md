@@ -30,11 +30,16 @@ itself, a government body, a transit authority, established press) —
 a policy row applies that definition and may never promote a domain
 outside those classes.
 
-**Every grade below is backed by a live run.** Seven spike scripts
-under `scripts/spikes/sky-sea-*.mjs`, all run 2026-09-15; each entry
-names its script, the command, and what the real response returned.
-Every licence was read at the source's own terms page on the date
-stated.
+**Every grade below is backed by a live run, with ONE declared
+exception.** Seven spike scripts under `scripts/spikes/sky-sea-*.mjs`,
+all run 2026-09-15; each entry names its script, the command, and what
+the real response returned. Every licence was read at the source's own
+terms page on the date stated. The exception is
+[night-sky-darkness](#night-sky-darkness)'s **projected** B, which is
+a grade the slot would reach once its asset is built and which no run
+backs today — it is named here as well as in its own entry, because an
+exception buried in one entry is an exception that gets copied
+forward silently.
 
 ## Sky & sea slots (V1.S1.T3)
 
@@ -61,6 +66,18 @@ stated.
   plus moon illuminated fraction and phase name.
 - Grade: **A.** Global by construction, exact, license-clean (we own
   the computation), and no network dependency at request time.
+  **Why A and not C, since the value is computed:**
+  [ENGINE §7](../ENGINE.md#7-render--honest-pixels)'s C row covers
+  "estimated / derived / curated", and a deterministic ephemeris is
+  none of those — it is not an estimate with a tolerance, it is the
+  same arithmetic the authoritative oracle runs, and the cross-check
+  below is what turns that claim into evidence. Rendering a sunrise
+  time as a "labelled estimate" would make it look LESS certain than
+  it is, which is the reliability law's failure mode in the other
+  direction. **Flagged for
+  [V1.S1.T7](../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
+  (OPEN-2)**, since the scale is provisional until ratified and
+  "where does rung 3 grade" is a scale question, not a slot question.
   Measured fidelity: worst sun-event delta **3 minutes** across
   Reykjavik 64°N, Kyoto 35°N and Sydney 34°S; moon illumination
   matched USNO **to the percent at all three sites**.
@@ -111,27 +128,35 @@ stated.
 - Source: **NOAA CO-OPS Tides & Currents**
   (api.tidesandcurrents.noaa.gov) — `mdapi` for the station registry,
   `datagetter` for predictions. Rung 2: a national authoritative
-  source, **US waters and territories only**.
+  source — **US waters plus a thin Pacific tail**, measured under
+  Coverage rather than assumed from the agency's nationality.
 - Confirmed keys (spike): predictions return `t` (local time),
   `v` (height), `type` (`H`/`L`) per event; station metadata returns
   `id`, `name`, `state`, `lat`, `lng`, `type`, `reference_id`,
   `timemeridian`, `timezonecorr`, `tidepredoffsets`, `affiliations`,
   `portscode`. Datum and units are request parameters (spiked at
   `MLLW` / metric — [D-013](../record/DECISIONS.md#d-013--canonical-units-si-storage) friendly).
-- Grade: **B** — authoritative where covered, and covered means the
-  US. The gap elsewhere is not softened: see Coverage.
+- Grade: **B** — authoritative where covered, and "covered" is a
+  measured set, not a country. The gap elsewhere is not softened: see
+  Coverage.
 - Freshness served: weekly per trip window. Harmonic predictions are
   deterministic, so the only reason to refetch is a moved trip
   window, not a stale value.
 - Coverage: **MEASURED, not estimated.** 3,499 tide-prediction
-  stations across 30 US state/territory codes. The spike ran a
-  nearest-station search for five sites: Bar Harbor ME **1 km**, San
-  Francisco **0 km**, and then Mont-Saint-Michel FR **4,847 km**,
-  Sydney AU **2,479 km**, Jeju KR **2,567 km**. **SS-04 does not
-  resolve outside US waters from this source**, and SS-10 inherits
-  the gap because it is derived from SS-04's own series. A station an
-  ocean away is not coverage, and the engine must render absence
-  rather than the nearest number.
+  stations: **3,068 carry a US state or territory code** (30 distinct
+  codes) and **431 carry none**. The stateless set is **not all US** —
+  it is a Pacific scatter including Papeete, Christmas Island,
+  Kwajalein, Majuro and Niue, so the tempting summary "US only" is
+  wrong and the spike says so in its own output. What is true is
+  narrower and more useful: coverage is **the US plus a thin Pacific
+  tail**, which is not global coverage by any reading. The spike ran
+  a nearest-station search for five sites: Bar Harbor ME **1 km**,
+  San Francisco **0 km**, then Mont-Saint-Michel FR **4,847 km**,
+  Sydney AU **2,479 km** (nearest station: **Niue**), Jeju KR
+  **2,567 km**. **SS-04 does not resolve at any non-US site tested**,
+  and SS-10 inherits the gap because it is derived from SS-04's own
+  series. A station an ocean away is not coverage, and the engine
+  must render absence rather than the nearest number.
 - Cost: free. No key. NOAA asks for an `application` parameter
   identifying the caller; the spike sends `roam-spike-v1s1t3`.
 - retention_rights: **store-raw**. license_class: **US-Gov public
@@ -403,9 +428,12 @@ stated.
     domain class: a research group is neither the operator of the
     place nor a government body under
     [ENGINE §3](../ENGINE.md#3-acquire--get-the-facts), and grading
-    it B would be exactly the promotion the rule forbids. USA-NPN is
-    B, but as a **government-hosted national programme** and at rung
-    2, not by this exception); **tourism boards and regional
+    it B would be exactly the promotion the rule forbids. **USA-NPN
+    is not an exception to this and is not claimed as one** — it
+    answers at RUNG 2, as a fetch, so §3's domain classes do not
+    govern it at all. Its own About page claims federal *compliance*,
+    not federal agency status, and this bench does not infer a class
+    the source does not state); **tourism boards and regional
     promotion sites** (**C** — they have an interest in the answer);
     commercial foliage-map and bloom-tracker sites (**C**); any other
     domain (**C**).
@@ -470,7 +498,11 @@ stated.
      that nobody re-adopts it later on the strength of its
      reputation.
 - Grade: **B once the VIIRS-derived asset exists** — satellite-derived,
-  yearly, public domain, global. **Today the slot is UNSERVED**, and
+  yearly, global. **That B is a PROJECTION AND IS UNSPIKED**: the
+  download sits behind the login wall below, so no VIIRS value has
+  ever been read by this bench and the projected grade is not backed
+  by a live run the way every other grade in this file is.
+  **Today the slot is UNSERVED**, and
   any SS-08 claim rendered before that asset is built comes from the
   retrieval policy at **B** or **C**, or from rung 5b at **D**. It is
   recorded as unserved rather than as B-in-waiting, because
@@ -482,10 +514,18 @@ stated.
 - Cost: free; a free registration for the annual download, and the
   processing cost of building the asset once a year.
 - retention_rights: **store-raw** for VIIRS VNL. license_class:
-  **US-Gov public domain** for the VIIRS product; **CC BY-NC 4.0 —
-  DISQUALIFIED** for Falchi, verified 2026-09-15 at the GFZ Data
-  Services landing page quoted above. Attribution: credit NOAA/NCEI
-  and the Earth Observation Group for VIIRS.
+  **CC BY 4.0** — verified 2026-09-15 at EOG's own product page
+  (eogdata.mines.edu/products/vnl/), which states that "many of the
+  VIIRS Nighttime Lights data are available under Creative Commons
+  Attribution 4.0 International license" and asks users to "cite EOG
+  as the data source". **The hedge is quoted deliberately: "many of"
+  is not "all of", so the specific annual composite's licence must be
+  confirmed at download time before the asset is built.** It is
+  recorded as CC BY 4.0 and NOT as US-Gov public domain, which is
+  what a reasonable-sounding inference from "NOAA-funded" would have
+  produced. For Falchi: **CC BY-NC 4.0 — DISQUALIFIED**, verified
+  2026-09-15 at the GFZ Data Services landing page quoted above.
+  Attribution: cite EOG (Earth Observation Group) for VIIRS VNL.
 - **Retrieval policy — this is the slot's live path today, not a
   backstop.** SS-08 is the only fact served, so this is its per-fact
   row.
@@ -546,7 +586,8 @@ stated.
   visibility region. The MDC file is pipe-quoted fixed width with
   `LP`, `IAUNo`, `AdNo`, `Code`, `s`, `sub.date`,
   `shower name-designation`, `activity`, `LoSb`, `LoSe`, `LoS`, `Ra`,
-  `De`, … (654 columns documented in its own header).
+  `De`, … over a fixed-width layout documented by a column ruler in
+  the file's own header.
 - Grade:
   - **A** for eclipses — a published canon, exact, global, computed
     centuries ahead, and public domain.
@@ -561,11 +602,14 @@ stated.
   merit event rather than a trivium.
 - Cost: free, no key.
 - retention_rights: **store-raw** (both are small published tables).
-  license_class: **NASA content is generally not subject to
-  copyright in the United States**, verified 2026-09-15 at NASA's
-  Images and Media Usage Guidelines — with the caveat stated on that
-  same page that the **NASA insignia, logotype and identifiers are
-  NOT in the public domain** and are not used. For the MDC:
+  license_class: NASA's Images and Media Usage Guidelines, read
+  2026-09-15, state that **NASA content "generally are not subject to
+  copyright in the United States"** — and that page addresses IMAGES,
+  AUDIO, VIDEO AND MEDIA FILES, so applying it to a tabular
+  catalogue is an INFERENCE from the same US-Government-work basis,
+  recorded here as an inference rather than as a verified grant. The
+  same page states the caveat that the **NASA insignia, logotype and
+  identifiers are NOT in the public domain**; they are not used. For the MDC:
   **no explicit licence is stated**, and that is recorded as read
   rather than assumed — its references page (read 2026-09-15) states
   a **citation duty** instead, naming Jenniskens et al. 2020, Jopek &
@@ -620,7 +664,8 @@ are served by one of them.
 **The three named gaps, carried forward for
 [V1.S1.T7](../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
 rather than buried:**
-1. **Tides outside US waters** — no vetted global source; the
+1. **Tides outside the covered set** (the US plus a thin Pacific
+   tail) — no vetted global source; the
    licence-clean candidates are research harmonic models that have
    not been read.
 2. **Fall foliage and wildlife migration, everywhere; blooms outside
