@@ -159,6 +159,104 @@ checked the PAYLOAD, never the status code.
   coarse. **Google Geocoding/Places** — see
   [§ The Google Maps verdict](#the-google-maps-verdict).
 
+## destination-affordances
+
+- Serves: [FE-02](FACTS.md#f-fe-02--destinationactivity-affordances-).
+- Source: **CURATED for the demo destinations, then RETRIEVAL at rung
+  5a, then model memory (5b) rendered unverified** — exactly the type
+  [FACTS](FACTS.md) gives it. Underneath all three sits a cheap
+  OpenStreetMap SUPPORT COUNT (ODbL) that can rule a destination out
+  but cannot rule one in.
+- Confirmed keys (spike, 2026-09-15): Overpass `out count` returns a
+  `count` element whose `tags.total` is the number of matching
+  features. Reykjavik, counted per activity type:
+  | activity type | supporting features |
+  |---|---|
+  | hiking & trails | 133 |
+  | nightlife | 85 |
+  | indoor venues | 49 |
+  | beach & swimming | 20 |
+  | scenic viewpoints | 13 |
+  | snow sports | 8 |
+  | on-water | 7 |
+- **What the counts can and cannot do, stated precisely, because this
+  is the slot where the temptation to overclaim is greatest.** The
+  numbers answer *"does this place SUPPORT activity X"* at rung 1, and
+  they answer it well enough to RULE A DESTINATION OUT: 8 snow-sports
+  features and 20 beach features say something real about what a
+  Reykjavik trip cannot be built around. They do NOT answer *"is it
+  FAMOUS for X"*, which is the actual FE-02 claim and the one the
+  Suggest dock depends on ("famous for X, but X is bad then"). The
+  ordering above puts nightlife (85) above scenic viewpoints (13),
+  which would be a strange thing to tell someone about Iceland — a
+  count measures how much of something a mapper has tagged, not what a
+  place is for. **So the counts are a NEGATIVE FILTER under the
+  ladder, never the fact.**
+- **AND THE CROSS-DESTINATION COMPARISON DID NOT COMPLETE — said
+  plainly, because the claim above deserves a measurement and did not
+  get one.** The spike is written to count three destinations —
+  Reykjavik, Rome and Chamonix — precisely so that "the counts
+  discriminate" could be measured rather than argued. Reykjavik
+  returned. Rome and Chamonix did not: the public Overpass instances
+  degraded to sustained HTTP 429 and 504 during this bench's run
+  ([finding two](#three-findings-that-shape-every-entry-below)), the
+  same congestion that forced backoff and four mirrors on every other
+  OSM slot here, and the run was stopped rather than left to grind.
+  **The discrimination claim is therefore REASONED, NOT MEASURED, and
+  is labeled so wherever it is used.** Re-running
+  `scripts/spikes/feasibility-destination-affordances.mjs` against a
+  self-hosted Overpass closes it; the script is unchanged and needs no
+  edit. That is this slot's one named gap, and it is cheap to close.
+- Grade: **C** — curated and retrieved, which
+  [ENGINE §7](../ENGINE.md#7-render--honest-pixels) renders as a
+  labeled estimate; **B** where the retrieval lands on a government
+  tourism body or established press; **D** where it falls through to
+  model memory, rendered unverified. The OSM support count is **C**
+  and is never rendered as a claim about fame.
+- Freshness served: yearly, per [FACTS](FACTS.md). What a place is
+  known for changes slowly — which is why this fact tolerates curation
+  where [FE-04](FACTS.md#f-fe-04--opening-hours) cannot.
+- Coverage: curated for the demo destinations only, and that narrowness
+  is deliberate — FE-02 is SUGGEST PRIMARY, so a wrong affordance sends
+  a whole trip to the wrong country, which is a worse failure than any
+  other in this family. The OSM support count is global.
+- Cost: free.
+- retention_rights: **store-raw** for the OSM counts; **cache-only**
+  plus our curated table for the retrieved half. license_class:
+  **ODbL 1.0** (OSM); per-domain for retrieved spans; repo licence for
+  the curated table. Attribution: "© OpenStreetMap contributors".
+- **Retrieval policy** — SHORTHAND, declaring itself: one fact, one
+  row, governing it whole.
+  - allowed domains + grade: the destination's official tourism board,
+    and its city or regional government (**B**, government body); a
+    national park or heritage authority for natural and cultural
+    affordances (**B**, government body); established press with a
+    dated destination feature (**B**); established travel guides
+    (**C**); dated travel blogs (**C**). Affiliate and tour-selling
+    sites are OUT OF BOUNDS: they describe what they sell, and FE-02
+    decides where a traveller goes at all.
+  - quote required: **no.** FE-02's value is a mapping onto the 15
+    activity types — our classification of what a source describes,
+    not a sentence anyone writes. Demanding a span would force the
+    module to quote prose that does not say what we store. The
+    provenance url IS still kept, so the receipt opens onto the
+    source; a value with no url at all is rung 5b and renders
+    unverified.
+  - freshness window: 1 year.
+- Spike: `scripts/spikes/feasibility-destination-affordances.mjs` — run
+  2026-09-15. Returned Reykjavik's seven per-type counts, quoted above.
+  Rome and Chamonix did not return; see the gap named above.
+- Alternatives rejected: **Google Maps grounding** — the most tempting
+  candidate for this slot of any in the family, because a grounded
+  model answers "what is this place known for" directly and well. See
+  [§ The Google Maps verdict](#the-google-maps-verdict): SST §10.3.1
+  forbids extracting exactly that answer into a stored fact.
+  **TripAdvisor "things to do" rankings** — not vetted (see
+  [§ venue-reputation](#venue-reputation)), and commercially ranked in
+  any case. **A pure model-memory table** — that is rung 5b, grade D,
+  and making it the PRIMARY for a Suggest-primary fact would invert
+  the reliability law; it stays the last rung, labeled unverified.
+
 ## places-venues
 
 - Serves: [FE-03](FACTS.md#f-fe-03--venue--poi-records).
@@ -343,98 +441,6 @@ checked the PAYLOAD, never the status code.
   [D-088](../record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state)
   ruling 1 authorised.
 
-## parking
-
-- Serves: [FE-10](FACTS.md#f-fe-10--parking-).
-- Source: **OpenStreetMap** via Overpass (ODbL) — `amenity=parking`
-  features for the parking half, and `boundary=low_emission_zone` for
-  `restricted_driving_zone`, the field that earns this slot its keep.
-- Confirmed keys (spike, 2026-09-15, Rome centre): `parking`,
-  `fee`, `charge`, `access`, `capacity`, `name`, `maxstay` on parking
-  features; `boundary` and `name` on zones. 825 parking features and 1
-  restricted zone returned.
-- **Dictionary coverage, measured:**
-  | FE-10 field | OSM tag | coverage |
-  |---|---|---|
-  | `availability_class` | `parking` (surface / multi-storey / underground …) | 612 / 825 = **74.2%** |
-  | `restrictions_note` | `access` | 370 / 825 = 44.8% |
-  | `cost_band` | `fee` | 214 / 825 = 25.9% |
-  | `cost_band` | `charge` (an actual price) | 6 / 825 = **0.7%** |
-  | `capacity` (not FE-09/10 Dictionary, useful) | `capacity` | 82 / 825 = 9.9% |
-  | `name` | `name` | 73 / 825 = 8.8% |
-  | `restrictions_note` | `maxstay` | 0 / 825 = **0.0%** |
-  | `distance_to_entrance_m` | — | **COMPUTED** by us from the parking geocode and the venue geocode |
-- **`restricted_driving_zone` — the Florence/Rome fine-prevention fact.**
-  The mechanism works: the query returned Rome's **"Fascia Verde"** as
-  a `boundary=low_emission_zone` relation, so a ZTL/LEZ polygon IS
-  fetchable from OSM and a plan can test a drive against it.
-  **But one zone is not Rome's ZTL story** — the historic-centre ZTL,
-  which is the one that actually fines tourists, did not come back
-  under either `low_emission_zone` or `traffic_zone` in this bbox. The
-  honest reading is that OSM's zone tagging is INCONSISTENT between the
-  environmental zone (well tagged) and the municipal access zone
-  (tagged variously, or not at all), and this slot therefore cannot
-  promise the fine-prevention fact from OSM alone. Naming the gap is
-  the result; a plan that says "no restricted zone here" on this data
-  would be exactly the wrong output.
-- Grade: **C** overall — **B** for `availability_class` where tagged,
-  **C** for `cost_band` (the price tag is present on 0.7% of features,
-  so the band is estimated), and **C-with-a-named-gap** for
-  `restricted_driving_zone` until the retrieval policy below fills it.
-- Freshness served: monthly, per [FACTS](FACTS.md). Zone boundaries
-  change on municipal timescales and are re-checked yearly, with a
-  plan-time check whenever a drive enters a city centre.
-- Coverage: global in principle; parking tagging is dense in Europe
-  and thin elsewhere, and ZTL/LEZ tagging is inconsistent even where
-  the zone is famous — measured above, not assumed.
-- Cost: free; Overpass slot limits per
-  [finding two](#three-findings-that-shape-every-entry-below).
-- retention_rights: **store-raw**. license_class: **ODbL 1.0**.
-  Attribution: "© OpenStreetMap contributors".
-- **Retrieval policy** — the row SPLITS, and the split is the whole
-  point of this slot: one field can cost a traveller a fine, the rest
-  cost them a walk.
-  - `restricted_driving_zone` —
-    - allowed domains + grade: the CITY OR MUNICIPAL GOVERNMENT'S own
-      site, including its mobility or police department (**B**,
-      government body); the national transport ministry (**B**); the
-      zone operator where a city delegates enforcement (**B**,
-      operator); established press reporting a zone change and naming
-      the authority (**B**). Car-rental and travel-blog pages are
-      **C** AND ARE NEVER SUFFICIENT ALONE for a `present: true`
-      verdict — they are corroboration.
-    - quote required: **yes**, and the span must carry the ZONE'S
-      HOURS AND EXEMPTIONS, not merely its existence. A ZTL that is
-      active only 06:30–18:00 on weekdays is a different fact from one
-      that is always active, and the difference is the fine.
-    - freshness window: 1 year, and a plan-time re-check on any drive
-      entering a city centre.
-  - `availability_class`, `cost_band`, `restrictions_note`,
-    `distance_to_entrance_m` —
-    - allowed domains + grade: the parking operator or garage's own
-      site (**B**, operator); the municipal parking authority (**B**,
-      government body); other domains (**C**).
-    - quote required: **no** — these are bands and classes, and a
-      garage's price changes faster than any window we would set. An
-      estimate labeled as an estimate is the honest rendering; a
-      quoted price that has since changed is worse.
-    - freshness window: 90 days. `distance_to_entrance_m` is computed
-      and has no window.
-- Spike: `scripts/spikes/feasibility-parking.mjs` — run 2026-09-15 over
-  Rome centre. Returned 825 parking features with the coverage table
-  above, and the single `low_emission_zone` relation "Fascia Verde"
-  with the historic-centre ZTL absent.
-- Alternatives rejected: **Google Places parking attributes** — see
-  [§ The Google Maps verdict](#the-google-maps-verdict).
-  **Commercial parking APIs** (ParkWhiz, SpotHero and similar) —
-  booking products, US-centric, and booking is out of V1 scope.
-  **Urban Access Regulations in Europe** (urbanaccessregulations.eu) —
-  the authoritative European registry of LEZ and access zones, and the
-  obvious fix for the gap named above; NOT VETTED in this bench because
-  it publishes as a website rather than an API and its re-use terms
-  were not read. Recorded as the leading candidate to close this slot's
-  gap, with a terms read as the first step.
-
 ## seasonal-closures
 
 - Serves: [FE-05](FACTS.md#f-fe-05--seasonal-closures--operating-seasons-).
@@ -596,73 +602,6 @@ checked the PAYLOAD, never the status code.
   already answers FE-06 at rung 1 over ODbL data with no retention
   question to resolve. **OSRM demo as primary** — rejected on the
   profile-collapse finding above; kept as the car-matrix path only.
-
-## fx-rates
-
-- Serves: [FE-14](FACTS.md#f-fe-14--currency-exchange-rates).
-- Source: **ECB euro foreign-exchange reference rates**
-  (ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml) — a central bank
-  publishing once per working day around 16:00 CET. Rung 1:
-  authoritative, and the publisher every commercial FX API resells.
-  **frankfurter.app** is kept as an open-source mirror of the same
-  data for the historical series.
-- Confirmed keys (spike, 2026-09-15): the feed's `Cube time` attribute
-  gives `as_of_date` directly — `2026-09-15` — and each `Cube
-  currency/rate` pair gives the EUR-based rate. Every FE-14 Dictionary
-  field is answered: `base_ccy`, `quote_ccy`, `rate` (computed as a
-  cross-rate through EUR), `as_of_date` (read FROM THE FEED, never
-  from the local clock — the derivation law's time rule).
-- Grade: **A**, within the covered set.
-- Coverage — **and the gap is real: 30 currencies, not all of them.**
-  The spike checked a spread of destination currencies and found ISK,
-  JPY, EUR, USD, THB, GBP and KRW present — and VND, MAD, EGP, PEN and
-  TZS ABSENT. A destination priced in a currency outside the ECB list
-  cannot be served at rung 1 by this feed, and
-  [FE-07](FACTS.md#f-fe-07--cost-estimate-bands)'s `fx_link` inherits
-  that gap. The tail needs a rung-2 source (a national central bank's
-  own feed) vetted per destination when those destinations enter the
-  demo set; that is named here as this slot's known gap rather than
-  left to be discovered.
-- Freshness served: daily, matching the publication cycle. The feed
-  does not update at weekends, so `as_of_date` legitimately lags the
-  calendar by up to three days and MUST be rendered, not hidden.
-- Cost: free, no key, no registration.
-- retention_rights: **store-raw**. license_class: free re-use with
-  citation, verified 2026-09-15 at the ECB's Disclaimer & Copyright
-  page — *"When such information is distributed or reproduced, it must
-  appear accurately and the ECB must be cited as the source."*
-  Attribution: "Source: European Central Bank".
-  **AND A SECOND DUTY THAT BITES HERE:** the same notice requires an
-  explicit statement where data has been MODIFIED — and every rate
-  this slot serves except EUR-based ones IS modified, because it is a
-  cross-rate we computed through EUR rather than a figure the ECB
-  published. So a rendered non-EUR rate carries "derived from ECB
-  reference rates" rather than "ECB rate", and the receipt says which.
-  frankfurter.app adds no licence terms of its own on top.
-- **Retrieval policy:** `n/a` — one fact, answered at rung 1 by a
-  central bank, and a retrieved exchange rate would be strictly worse
-  than the published one. For currencies OUTSIDE the ECB set the
-  answer is a different rung-1 publisher (that country's central
-  bank), not retrieval: a rate quoted from a page is stale by
-  construction and there is no authoritative domain that would make it
-  less so.
-- Spike: `scripts/spikes/feasibility-fx-rates.mjs` — run 2026-09-15.
-  Parsed 30 currencies from the ECB XML with `as_of_date=2026-09-15`,
-  computed five cross-rate Dictionary rows (USD→ISK 121.327671,
-  USD→JPY 155.004766, USD→EUR 0.866626, GBP→THB 44.892498, KRW→EUR
-  0.000638), confirmed frankfurter serves a byte-identical currency
-  set and EUR→JPY value (178.86), and pulled a historical series
-  (2026-01-02 → 2026-01-09, 6 trading days) to prove the
-  [D-015](../record/DECISIONS.md#d-015--data-asset-law) revision series
-  is obtainable for free.
-- Alternatives rejected: **exchangerate.host** — now key-gated;
-  returns HTTP 200 with `missing_access_key`, verified 2026-09-15.
-  **Commercial FX APIs** (Fixer, CurrencyLayer, Open Exchange Rates) —
-  not vetted, and not needed: they resell the same ECB reference rates
-  this entry takes from the publisher, so
-  [D-015](../record/DECISIONS.md#d-015--data-asset-law)'s preference
-  for the source settles it before any terms question arises. **Mid-market scraping** — never; and FE-14 wants
-  mid-market, which the ECB publishes and a bank's retail page does not.
 
 ## cost-basis
 
@@ -920,6 +859,98 @@ checked the PAYLOAD, never the status code.
   [§ The Google Maps verdict](#the-google-maps-verdict). This slot and
   [§ opening-hours](#opening-hours) are where the licence costs Roam
   the most.
+
+## parking
+
+- Serves: [FE-10](FACTS.md#f-fe-10--parking-).
+- Source: **OpenStreetMap** via Overpass (ODbL) — `amenity=parking`
+  features for the parking half, and `boundary=low_emission_zone` for
+  `restricted_driving_zone`, the field that earns this slot its keep.
+- Confirmed keys (spike, 2026-09-15, Rome centre): `parking`,
+  `fee`, `charge`, `access`, `capacity`, `name`, `maxstay` on parking
+  features; `boundary` and `name` on zones. 825 parking features and 1
+  restricted zone returned.
+- **Dictionary coverage, measured:**
+  | FE-10 field | OSM tag | coverage |
+  |---|---|---|
+  | `availability_class` | `parking` (surface / multi-storey / underground …) | 612 / 825 = **74.2%** |
+  | `restrictions_note` | `access` | 370 / 825 = 44.8% |
+  | `cost_band` | `fee` | 214 / 825 = 25.9% |
+  | `cost_band` | `charge` (an actual price) | 6 / 825 = **0.7%** |
+  | `capacity` (not FE-09/10 Dictionary, useful) | `capacity` | 82 / 825 = 9.9% |
+  | `name` | `name` | 73 / 825 = 8.8% |
+  | `restrictions_note` | `maxstay` | 0 / 825 = **0.0%** |
+  | `distance_to_entrance_m` | — | **COMPUTED** by us from the parking geocode and the venue geocode |
+- **`restricted_driving_zone` — the Florence/Rome fine-prevention fact.**
+  The mechanism works: the query returned Rome's **"Fascia Verde"** as
+  a `boundary=low_emission_zone` relation, so a ZTL/LEZ polygon IS
+  fetchable from OSM and a plan can test a drive against it.
+  **But one zone is not Rome's ZTL story** — the historic-centre ZTL,
+  which is the one that actually fines tourists, did not come back
+  under either `low_emission_zone` or `traffic_zone` in this bbox. The
+  honest reading is that OSM's zone tagging is INCONSISTENT between the
+  environmental zone (well tagged) and the municipal access zone
+  (tagged variously, or not at all), and this slot therefore cannot
+  promise the fine-prevention fact from OSM alone. Naming the gap is
+  the result; a plan that says "no restricted zone here" on this data
+  would be exactly the wrong output.
+- Grade: **C** overall — **B** for `availability_class` where tagged,
+  **C** for `cost_band` (the price tag is present on 0.7% of features,
+  so the band is estimated), and **C-with-a-named-gap** for
+  `restricted_driving_zone` until the retrieval policy below fills it.
+- Freshness served: monthly, per [FACTS](FACTS.md). Zone boundaries
+  change on municipal timescales and are re-checked yearly, with a
+  plan-time check whenever a drive enters a city centre.
+- Coverage: global in principle; parking tagging is dense in Europe
+  and thin elsewhere, and ZTL/LEZ tagging is inconsistent even where
+  the zone is famous — measured above, not assumed.
+- Cost: free; Overpass slot limits per
+  [finding two](#three-findings-that-shape-every-entry-below).
+- retention_rights: **store-raw**. license_class: **ODbL 1.0**.
+  Attribution: "© OpenStreetMap contributors".
+- **Retrieval policy** — the row SPLITS, and the split is the whole
+  point of this slot: one field can cost a traveller a fine, the rest
+  cost them a walk.
+  - `restricted_driving_zone` —
+    - allowed domains + grade: the CITY OR MUNICIPAL GOVERNMENT'S own
+      site, including its mobility or police department (**B**,
+      government body); the national transport ministry (**B**); the
+      zone operator where a city delegates enforcement (**B**,
+      operator); established press reporting a zone change and naming
+      the authority (**B**). Car-rental and travel-blog pages are
+      **C** AND ARE NEVER SUFFICIENT ALONE for a `present: true`
+      verdict — they are corroboration.
+    - quote required: **yes**, and the span must carry the ZONE'S
+      HOURS AND EXEMPTIONS, not merely its existence. A ZTL that is
+      active only 06:30–18:00 on weekdays is a different fact from one
+      that is always active, and the difference is the fine.
+    - freshness window: 1 year, and a plan-time re-check on any drive
+      entering a city centre.
+  - `availability_class`, `cost_band`, `restrictions_note`,
+    `distance_to_entrance_m` —
+    - allowed domains + grade: the parking operator or garage's own
+      site (**B**, operator); the municipal parking authority (**B**,
+      government body); other domains (**C**).
+    - quote required: **no** — these are bands and classes, and a
+      garage's price changes faster than any window we would set. An
+      estimate labeled as an estimate is the honest rendering; a
+      quoted price that has since changed is worse.
+    - freshness window: 90 days. `distance_to_entrance_m` is computed
+      and has no window.
+- Spike: `scripts/spikes/feasibility-parking.mjs` — run 2026-09-15 over
+  Rome centre. Returned 825 parking features with the coverage table
+  above, and the single `low_emission_zone` relation "Fascia Verde"
+  with the historic-centre ZTL absent.
+- Alternatives rejected: **Google Places parking attributes** — see
+  [§ The Google Maps verdict](#the-google-maps-verdict).
+  **Commercial parking APIs** (ParkWhiz, SpotHero and similar) —
+  booking products, US-centric, and booking is out of V1 scope.
+  **Urban Access Regulations in Europe** (urbanaccessregulations.eu) —
+  the authoritative European registry of LEZ and access zones, and the
+  obvious fix for the gap named above; NOT VETTED in this bench because
+  it publishes as a website rather than an API and its re-use terms
+  were not read. Recorded as the leading candidate to close this slot's
+  gap, with a terms read as the first step.
 
 ## route-services
 
@@ -1191,6 +1222,73 @@ checked the PAYLOAD, never the status code.
   them is ever wanted its terms get their own read.
   The pageview proxy is chosen because it is weak-but-ownable rather
   than strong-but-rented.
+
+## fx-rates
+
+- Serves: [FE-14](FACTS.md#f-fe-14--currency-exchange-rates).
+- Source: **ECB euro foreign-exchange reference rates**
+  (ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml) — a central bank
+  publishing once per working day around 16:00 CET. Rung 1:
+  authoritative, and the publisher every commercial FX API resells.
+  **frankfurter.app** is kept as an open-source mirror of the same
+  data for the historical series.
+- Confirmed keys (spike, 2026-09-15): the feed's `Cube time` attribute
+  gives `as_of_date` directly — `2026-09-15` — and each `Cube
+  currency/rate` pair gives the EUR-based rate. Every FE-14 Dictionary
+  field is answered: `base_ccy`, `quote_ccy`, `rate` (computed as a
+  cross-rate through EUR), `as_of_date` (read FROM THE FEED, never
+  from the local clock — the derivation law's time rule).
+- Grade: **A**, within the covered set.
+- Coverage — **and the gap is real: 30 currencies, not all of them.**
+  The spike checked a spread of destination currencies and found ISK,
+  JPY, EUR, USD, THB, GBP and KRW present — and VND, MAD, EGP, PEN and
+  TZS ABSENT. A destination priced in a currency outside the ECB list
+  cannot be served at rung 1 by this feed, and
+  [FE-07](FACTS.md#f-fe-07--cost-estimate-bands)'s `fx_link` inherits
+  that gap. The tail needs a rung-2 source (a national central bank's
+  own feed) vetted per destination when those destinations enter the
+  demo set; that is named here as this slot's known gap rather than
+  left to be discovered.
+- Freshness served: daily, matching the publication cycle. The feed
+  does not update at weekends, so `as_of_date` legitimately lags the
+  calendar by up to three days and MUST be rendered, not hidden.
+- Cost: free, no key, no registration.
+- retention_rights: **store-raw**. license_class: free re-use with
+  citation, verified 2026-09-15 at the ECB's Disclaimer & Copyright
+  page — *"When such information is distributed or reproduced, it must
+  appear accurately and the ECB must be cited as the source."*
+  Attribution: "Source: European Central Bank".
+  **AND A SECOND DUTY THAT BITES HERE:** the same notice requires an
+  explicit statement where data has been MODIFIED — and every rate
+  this slot serves except EUR-based ones IS modified, because it is a
+  cross-rate we computed through EUR rather than a figure the ECB
+  published. So a rendered non-EUR rate carries "derived from ECB
+  reference rates" rather than "ECB rate", and the receipt says which.
+  frankfurter.app adds no licence terms of its own on top.
+- **Retrieval policy:** `n/a` — one fact, answered at rung 1 by a
+  central bank, and a retrieved exchange rate would be strictly worse
+  than the published one. For currencies OUTSIDE the ECB set the
+  answer is a different rung-1 publisher (that country's central
+  bank), not retrieval: a rate quoted from a page is stale by
+  construction and there is no authoritative domain that would make it
+  less so.
+- Spike: `scripts/spikes/feasibility-fx-rates.mjs` — run 2026-09-15.
+  Parsed 30 currencies from the ECB XML with `as_of_date=2026-09-15`,
+  computed five cross-rate Dictionary rows (USD→ISK 121.327671,
+  USD→JPY 155.004766, USD→EUR 0.866626, GBP→THB 44.892498, KRW→EUR
+  0.000638), confirmed frankfurter serves a byte-identical currency
+  set and EUR→JPY value (178.86), and pulled a historical series
+  (2026-01-02 → 2026-01-09, 6 trading days) to prove the
+  [D-015](../record/DECISIONS.md#d-015--data-asset-law) revision series
+  is obtainable for free.
+- Alternatives rejected: **exchangerate.host** — now key-gated;
+  returns HTTP 200 with `missing_access_key`, verified 2026-09-15.
+  **Commercial FX APIs** (Fixer, CurrencyLayer, Open Exchange Rates) —
+  not vetted, and not needed: they resell the same ECB reference rates
+  this entry takes from the publisher, so
+  [D-015](../record/DECISIONS.md#d-015--data-asset-law)'s preference
+  for the source settles it before any terms question arises. **Mid-market scraping** — never; and FE-14 wants
+  mid-market, which the ECB publishes and a bank's retail page does not.
 
 ## money-saving-tips
 
