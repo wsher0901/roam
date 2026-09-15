@@ -196,10 +196,16 @@ maximum, then report the remaining gap.
 why it lives in this repo rather than being deleted with the round
 that produced it: a reference has to be OPENABLE, and a screenshot
 of motion is not a reference for motion. Run it, do not read it.
-Its two rejected siblings sit beside it as the material that lost —
-linked from that folder's index and marked there as not-picked, but
-pointed at by NO REFERENCE SLOT, which is the distinction that
-matters here.
+**IT NOW STANDS ALONE THERE.** The two rejected rivals, and the
+page that listed all three and marked the losers not-picked, were
+deleted on 2026-09-10 by [#355](https://github.com/wsher0901/roam/pull/355),
+leaving `place-first.html` as the only file in `public/spikes/taste/`
+and the only seed slots 3 and 4 have. NO REFERENCE SLOT EVER
+POINTED AT THE LOSERS — which is why they could go and this one
+could not: a slot is what earns a probe its place in the repo.
+What they proved survives in writing, in the
+[taste-pass spec](record/specs/taste-pass.md) and its
+[history](record/history/product/definition/taste-pass.md).
 
 **WHAT THE SEED DOES NOT COVER, said out loud because a narrowed
 slot is easy to mistake for a filled one.** The spec originally

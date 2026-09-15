@@ -35,7 +35,9 @@ lane, and the single home of the constants it runs on.
 
 [§Canary](../skills/parallel-lanes.md#canary-handshake-both-sides)
 is also where three constants live and nowhere else: the canary
-window (~10 minutes cloud, ~2 local, both sides the same), the
+window (~10 minutes, cloud or local, both sides the same — the
+local half was ~2 until 2026-09-10, when a four-lane team went
+unacked because the tower was mid-conversation), the
 liveness staleness window (~30 minutes, deliberately longer so a
 live lane between commits never reads dead), and the reply-ack
 window (~15 minutes, founder-side).
