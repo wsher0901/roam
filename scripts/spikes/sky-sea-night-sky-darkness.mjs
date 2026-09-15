@@ -37,7 +37,9 @@ const results = [];
   console.log(`   GET ${url}`);
   console.log(`   HTTP ${res.status} -> ${JSON.stringify(body.slice(0, 160))}`);
   const gated = /key|auth/i.test(body);
-  console.log(`   verdict: ${gated ? "KEY WALL — no anonymous point query" : "open"}`);
+  console.log(
+    `   verdict: ${gated ? "KEY WALL — no anonymous point query" : "open"}`,
+  );
   results.push(["lightpollutionmap.info", gated ? "key wall" : "open"]);
   console.log("");
 }
@@ -48,7 +50,9 @@ const results = [];
   const res = await fetch(url, { headers: UA, redirect: "follow" });
   const body = await res.text();
   const login = /login|keycloak|password|sign in/i.test(body);
-  console.log("2. NOAA/EOG VIIRS VNL annual composites (the canonical radiance product)");
+  console.log(
+    "2. NOAA/EOG VIIRS VNL annual composites (the canonical radiance product)",
+  );
   console.log(`   GET ${url}`);
   console.log(
     `   HTTP ${res.status}, final URL ${res.url.slice(0, 90)}${res.url.length > 90 ? "…" : ""}`,
@@ -69,7 +73,9 @@ const results = [];
     "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi?SERVICE=WMS&REQUEST=GetCapabilities&VERSION=1.1.1";
   const caps = await (await fetch(url, { headers: UA })).text();
   const layers = [
-    ...caps.matchAll(/<Layer[^>]*queryable="(\d)"[^>]*>[\s\S]*?<Name>([^<]+)<\/Name>/g),
+    ...caps.matchAll(
+      /<Layer[^>]*queryable="(\d)"[^>]*>[\s\S]*?<Name>([^<]+)<\/Name>/g,
+    ),
   ];
   const night = layers.filter((m) => /DayNightBand|Black_?Marble/i.test(m[2]));
   console.log("3. NASA GIBS WMS (night-lights imagery)");
@@ -82,7 +88,10 @@ const results = [];
   console.log(
     `   verdict: ${anyQueryable ? "at least one layer is queryable" : "IMAGERY ONLY — every night-lights layer reports queryable=0, so GetFeatureInfo cannot return a radiance value at a point"}`,
   );
-  results.push(["NASA GIBS", anyQueryable ? "queryable" : "imagery only (queryable=0)"]);
+  results.push([
+    "NASA GIBS",
+    anyQueryable ? "queryable" : "imagery only (queryable=0)",
+  ]);
   console.log("");
 }
 
@@ -93,8 +102,11 @@ const results = [];
   const html = await (await fetch(url, { headers: UA })).text();
   const flat = html.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ");
   const i = flat.search(/licence|license/i);
-  const span = i >= 0 ? flat.slice(Math.max(0, i - 120), i + 160).trim() : "(not found)";
-  console.log("4. Falchi et al. World Atlas of Artificial Night Sky Brightness 2015");
+  const span =
+    i >= 0 ? flat.slice(Math.max(0, i - 120), i + 160).trim() : "(not found)";
+  console.log(
+    "4. Falchi et al. World Atlas of Artificial Night Sky Brightness 2015",
+  );
   console.log(`   GET ${url}`);
   console.log(`   quoted span from the publisher's landing page:`);
   console.log(`     "…${span}…"`);
@@ -102,7 +114,10 @@ const results = [];
   console.log(
     `   verdict: ${nc ? "CC BY-NC — NON-COMMERCIAL. D-015 disqualifier for the asset layer, however good the data is." : "no non-commercial restriction found"}`,
   );
-  results.push(["Falchi World Atlas 2015", nc ? "CC BY-NC (disqualified)" : "unknown"]);
+  results.push([
+    "Falchi World Atlas 2015",
+    nc ? "CC BY-NC (disqualified)" : "unknown",
+  ]);
   console.log("");
 }
 
@@ -121,4 +136,6 @@ console.log(
 console.log(
   "registration), refreshed yearly — and, where that asset has not been built,",
 );
-console.log("by the slot's retrieval policy. It is never served by the Falchi atlas.");
+console.log(
+  "by the slot's retrieval policy. It is never served by the Falchi atlas.",
+);

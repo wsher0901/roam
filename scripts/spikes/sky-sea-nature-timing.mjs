@@ -22,8 +22,16 @@ const UA = { "User-Agent": "roam-spike/0.1 (github.com/wsher0901/roam)" };
 const WMS = "https://geoserver.usanpn.org/geoserver/wms";
 
 const LAYERS = [
-  ["si-x:average_leaf_ncep", "LEAF_OUT_DAY", "current-year first-leaf forecast (NCEP)"],
-  ["si-x:average_bloom_ncep", "BLOOM_DAY", "current-year first-bloom forecast (NCEP)"],
+  [
+    "si-x:average_leaf_ncep",
+    "LEAF_OUT_DAY",
+    "current-year first-leaf forecast (NCEP)",
+  ],
+  [
+    "si-x:average_bloom_ncep",
+    "BLOOM_DAY",
+    "current-year first-bloom forecast (NCEP)",
+  ],
   ["si-x:30yr_avg_six_leaf", "LEAF_OUT_DAY", "30-year normal, first leaf"],
   ["si-x:30yr_avg_six_bloom", "BLOOM_DAY", "30-year normal, first bloom"],
 ];
@@ -67,7 +75,9 @@ const doyToDate = (doy, year) => {
 console.log("SPIKE nature-timing — USA-NPN SI-x (geoserver.usanpn.org)\n");
 
 // ---------- 1 + 2: what resolves, and where it stops ----------
-console.log("A. Spring Index point queries — GetFeatureInfo, info_format=application/json");
+console.log(
+  "A. Spring Index point queries — GetFeatureInfo, info_format=application/json",
+);
 const YEAR = new Date().getUTCFullYear();
 let usHits = 0;
 let nonUsHits = 0;
@@ -106,7 +116,9 @@ const caps = await (
     headers: UA,
   })
 ).text();
-const names = [...new Set([...caps.matchAll(/<Name>([^<]+)<\/Name>/g)].map((m) => m[1]))];
+const names = [
+  ...new Set([...caps.matchAll(/<Name>([^<]+)<\/Name>/g)].map((m) => m[1])),
+];
 const probe = {
   "spring index (leaf/bloom)": /si-x:/i,
   "growing degree days": /gdd:/i,

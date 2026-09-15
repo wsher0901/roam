@@ -35,10 +35,15 @@ const stripRow = (html) =>
 
 async function eclipseTable(url, label, magLabel) {
   const html = await (await fetch(url, { headers: UA })).text();
-  const rows = [...html.matchAll(/<tr[\s\S]*?<\/tr>/gi)].map((m) => stripRow(m[0]));
+  const rows = [...html.matchAll(/<tr[\s\S]*?<\/tr>/gi)].map((m) =>
+    stripRow(m[0]),
+  );
   const parsed = [];
   for (const r of rows) {
-    const cells = r.split("|").map((c) => c.trim()).filter(Boolean);
+    const cells = r
+      .split("|")
+      .map((c) => c.trim())
+      .filter(Boolean);
     const m = cells[0]?.match(/^(\d{4}) (\w{3}) (\d{2})$/);
     if (!m) continue;
     parsed.push({
@@ -54,7 +59,9 @@ async function eclipseTable(url, label, magLabel) {
   }
   console.log(`${label}`);
   console.log(`   GET ${url}`);
-  console.log(`   rows parsed: ${parsed.length}   fields: date, TD of greatest eclipse, type, saros, ${magLabel}, duration, visibility region`);
+  console.log(
+    `   rows parsed: ${parsed.length}   fields: date, TD of greatest eclipse, type, saros, ${magLabel}, duration, visibility region`,
+  );
   const inYear = parsed.filter((p) => p.year === TARGET_YEAR);
   console.log(`   events in ${TARGET_YEAR}: ${inYear.length}`);
   for (const p of inYear) {
@@ -89,7 +96,11 @@ const julianDay = (y, m, d) => {
   const A = Math.floor(y / 100);
   const B = 2 - A + Math.floor(A / 4);
   return (
-    Math.floor(365.25 * (y + 4716)) + Math.floor(30.6001 * (m + 1)) + d + B - 1524.5
+    Math.floor(365.25 * (y + 4716)) +
+    Math.floor(30.6001 * (m + 1)) +
+    d +
+    B -
+    1524.5
   );
 };
 function apparentSolarLongitude(jd) {
@@ -111,13 +122,15 @@ function dateForSolarLongitude(losTarget, year) {
     const jd = start + i / 24;
     let diff = apparentSolarLongitude(jd) - losTarget;
     diff = ((((diff + 180) % 360) + 360) % 360) - 180;
-    if (best === null || Math.abs(diff) < Math.abs(best.diff)) best = { jd, diff };
+    if (best === null || Math.abs(diff) < Math.abs(best.diff))
+      best = { jd, diff };
   }
   const d = new Date((best.jd - 2440587.5) * 86400000);
   return d.toISOString().slice(0, 16).replace("T", " ") + " UT";
 }
 
-const mdcUrl = "https://www.ta3.sk/IAUC22DB/MDC2022/Etc/streamestablisheddata2026.txt";
+const mdcUrl =
+  "https://www.ta3.sk/IAUC22DB/MDC2022/Etc/streamestablisheddata2026.txt";
 const mdcRes = await fetch(mdcUrl, { headers: UA });
 const mdc = await mdcRes.text();
 const headerLine = mdc
@@ -127,12 +140,22 @@ const dataLines = mdc.split("\n").filter((l) => l.startsWith('"'));
 
 console.log("C. IAU Meteor Data Center — established showers");
 console.log(`   GET ${mdcUrl}`);
-console.log(`   HTTP ${mdcRes.status}, ${mdc.length} bytes, ${dataLines.length} catalogue records`);
 console.log(
-  `   last update line: ${mdc.split("\n").find((l) => l.includes("Last update"))?.replace(/^:/, "").trim()}`,
+  `   HTTP ${mdcRes.status}, ${mdc.length} bytes, ${dataLines.length} catalogue records`,
 );
 console.log(
-  `   field names present: ${headerLine.replace(/^:\s*/, "").split(/\s{2,}/).slice(0, 12).join(" | ")} …`,
+  `   last update line: ${mdc
+    .split("\n")
+    .find((l) => l.includes("Last update"))
+    ?.replace(/^:/, "")
+    .trim()}`,
+);
+console.log(
+  `   field names present: ${headerLine
+    .replace(/^:\s*/, "")
+    .split(/\s{2,}/)
+    .slice(0, 12)
+    .join(" | ")} …`,
 );
 
 const cell = (line, i) => {

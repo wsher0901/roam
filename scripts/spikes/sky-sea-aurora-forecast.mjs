@@ -31,7 +31,9 @@ const estimated = kp.filter((r) => r.observed === "estimated");
 console.log(
   `   observed ${observed.length} · estimated ${estimated.length} · predicted ${predicted.length}`,
 );
-console.log(`   'observed' field values seen: ${[...new Set(kp.map((r) => r.observed))].join(", ")}`);
+console.log(
+  `   'observed' field values seen: ${[...new Set(kp.map((r) => r.observed))].join(", ")}`,
+);
 const future = predicted.slice(0, 8);
 console.log("   next predicted 3-hour blocks:");
 for (const r of future) {
@@ -56,7 +58,9 @@ const dataLines = lines.filter((l) => /^\d{4}\s+\w{3}\s+\d{2}/.test(l.trim()));
 console.log("B. 27-day space-weather outlook (text product)");
 console.log(`   ${issued?.trim()}`);
 console.log(`   data rows: ${dataLines.length}`);
-console.log("   columns: date | 10.7cm radio flux | planetary A index | largest Kp");
+console.log(
+  "   columns: date | 10.7cm radio flux | planetary A index | largest Kp",
+);
 for (const l of dataLines.slice(0, 5)) console.log(`     ${l.trim()}`);
 const maxKp27 = Math.max(
   ...dataLines.map((l) => Number(l.trim().split(/\s+/).pop())),
@@ -65,11 +69,11 @@ console.log(`   largest Kp anywhere in the 27-day window: ${maxKp27}`);
 console.log("");
 
 // ---------- 3. OVATION aurora nowcast grid ----------
-const ov = await get("https://services.swpc.noaa.gov/json/ovation_aurora_latest.json");
-console.log("C. OVATION aurora nowcast grid");
-console.log(
-  `   top-level keys: ${Object.keys(ov).join(", ")}`,
+const ov = await get(
+  "https://services.swpc.noaa.gov/json/ovation_aurora_latest.json",
 );
+console.log("C. OVATION aurora nowcast grid");
+console.log(`   top-level keys: ${Object.keys(ov).join(", ")}`);
 console.log(
   `   Observation Time ${ov["Observation Time"]} · Forecast Time ${ov["Forecast Time"]}`,
 );
@@ -95,7 +99,9 @@ const PROBES = [
 ];
 console.log("   aurora probability (%) at sample points, this nowcast:");
 for (const [name, lat, lon] of PROBES) {
-  console.log(`     ${name.padEnd(16)} ${String(probeAt(lat, lon)).padStart(3)} %`);
+  console.log(
+    `     ${name.padEnd(16)} ${String(probeAt(lat, lon)).padStart(3)} %`,
+  );
 }
 const nonZero = ov.coordinates.filter((c) => c[2] > 0).length;
 console.log(

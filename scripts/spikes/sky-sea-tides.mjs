@@ -138,7 +138,9 @@ for (const site of SITES) {
   }
   const { ok, body } = await predictions(best.st.id);
   if (!ok) {
-    console.log(`${site.name}: station ${best.st.id} -> ${JSON.stringify(body).slice(0, 160)}`);
+    console.log(
+      `${site.name}: station ${best.st.id} -> ${JSON.stringify(body).slice(0, 160)}`,
+    );
     console.log("");
     continue;
   }
@@ -167,7 +169,9 @@ for (const site of SITES) {
   console.log(
     "  days holding fewer than four events; SS-10's implementation must bucket by",
   );
-  console.log("  TIDAL day (~24h50m) instead. Visible above wherever the flag prints.");
+  console.log(
+    "  TIDAL day (~24h50m) instead. Visible above wherever the flag prints.",
+  );
   console.log("");
 }
 

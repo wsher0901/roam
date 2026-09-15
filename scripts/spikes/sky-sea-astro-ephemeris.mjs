@@ -133,7 +133,8 @@ function moonIllumination(jd) {
 function phaseName(k, waxing) {
   if (k < 0.02) return "New Moon";
   if (k > 0.98) return "Full Moon";
-  if (Math.abs(k - 0.5) < 0.06) return waxing ? "First Quarter" : "Last Quarter";
+  if (Math.abs(k - 0.5) < 0.06)
+    return waxing ? "First Quarter" : "Last Quarter";
   if (k < 0.5) return waxing ? "Waxing Crescent" : "Waning Crescent";
   return waxing ? "Waxing Gibbous" : "Waning Gibbous";
 }
@@ -177,7 +178,9 @@ for (const s of SITES) {
     ["End Civil Twilight", sun.civilEnd, refSun["End Civil Twilight"]],
   ];
 
-  console.log(`${s.name}  ${s.date}  (lat ${s.lat}, lon ${s.lon}, USNO tz=${ref.tz})`);
+  console.log(
+    `${s.name}  ${s.date}  (lat ${s.lat}, lon ${s.lon}, USNO tz=${ref.tz})`,
+  );
   console.log(`  ${"event".padEnd(22)} ${"computed".padEnd(9)} USNO     delta`);
   for (const [label, mine, theirs] of rows) {
     if (mine === null) {
@@ -222,4 +225,8 @@ for (const s of SITES) {
 }
 
 console.log("USNO payload keys confirmed:", [...seenKeys].sort().join(", "));
-console.log("worst sun-event delta vs USNO across all sites:", worstDelta, "min");
+console.log(
+  "worst sun-event delta vs USNO across all sites:",
+  worstDelta,
+  "min",
+);

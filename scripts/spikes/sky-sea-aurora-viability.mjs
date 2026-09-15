@@ -59,10 +59,14 @@ const poleLat = 90 - Math.acos(-g10 / B0) / RAD;
 let poleLon = Math.atan2(h11, g11) / RAD + 180;
 if (poleLon > 180) poleLon -= 360;
 
-console.log("SPIKE aurora-viability — computed (rung 3) from IGRF + darkness\n");
+console.log(
+  "SPIKE aurora-viability — computed (rung 3) from IGRF + darkness\n",
+);
 console.log("A. Geomagnetic pole, derived from fetched IGRF-14 coefficients");
 console.log(`   source: ${IGRF_URL}`);
-console.log(`   epochs in file: ${epochs.length} (${epochs[0]} … ${lastEpoch})`);
+console.log(
+  `   epochs in file: ${epochs.length} (${epochs[0]} … ${lastEpoch})`,
+);
 console.log(
   `   g1_0 ${coeff.g10.at2025} (SV ${coeff.g10.sv}) · g1_1 ${coeff.g11.at2025} (SV ${coeff.g11.sv}) · h1_1 ${coeff.h11.at2025} (SV ${coeff.h11.sv})  [nT, epoch ${lastEpoch}]`,
 );
@@ -77,7 +81,9 @@ console.log("");
 const geomagLat = (lat, lon) =>
   Math.asin(
     Math.sin(lat * RAD) * Math.sin(poleLat * RAD) +
-      Math.cos(lat * RAD) * Math.cos(poleLat * RAD) * Math.cos((lon - poleLon) * RAD),
+      Math.cos(lat * RAD) *
+        Math.cos(poleLat * RAD) *
+        Math.cos((lon - poleLon) * RAD),
   ) / RAD;
 
 // ---------- 2. astronomical darkness (NOAA solar equations, compact) ----------
@@ -92,7 +98,11 @@ const julianDay = (y, m, d) => {
   const A = Math.floor(y / 100);
   const B = 2 - A + Math.floor(A / 4);
   return (
-    Math.floor(365.25 * (y + 4716)) + Math.floor(30.6001 * (m + 1)) + d + B - 1524.5
+    Math.floor(365.25 * (y + 4716)) +
+    Math.floor(30.6001 * (m + 1)) +
+    d +
+    B -
+    1524.5
   );
 };
 function solarDecl(jd) {
@@ -140,7 +150,9 @@ const SITES = [
 ];
 const DATES = ["2026-06-21", "2026-09-21", "2026-12-21"];
 
-console.log("B. Viability verdict = geomagnetic latitude x astronomical darkness");
+console.log(
+  "B. Viability verdict = geomagnetic latitude x astronomical darkness",
+);
 console.log(
   `   oval boundary used: Kp 0 -> ${ovalBoundary(0).toFixed(1)}° · Kp 3 -> ${ovalBoundary(3).toFixed(1)}° · Kp 6 -> ${ovalBoundary(6).toFixed(1)}° geomagnetic`,
 );
@@ -160,22 +172,29 @@ for (const [name, lat, lon] of SITES) {
     else verdict = `yes @Kp>=${needKp.toFixed(1)}`;
     return `${verdict} (${night.toFixed(1)}h)`.padEnd(25);
   });
-  console.log(`   ${name.padEnd(16)} ${(gm.toFixed(2) + "°").padEnd(11)} ${cells.join("")}`);
+  console.log(
+    `   ${name.padEnd(16)} ${(gm.toFixed(2) + "°").padEnd(11)} ${cells.join("")}`,
+  );
 }
 console.log("");
 
 // ---------- 5. validation against SWPC OVATION ----------
 const ov = await (
-  await fetch("https://services.swpc.noaa.gov/json/ovation_aurora_latest.json", {
-    headers: UA,
-  })
+  await fetch(
+    "https://services.swpc.noaa.gov/json/ovation_aurora_latest.json",
+    {
+      headers: UA,
+    },
+  )
 ).json();
 const grid = new Map();
 for (const [lo, la, p] of ov.coordinates) grid.set(`${lo}|${la}`, p);
 const probeAt = (lat, lon) =>
   grid.get(`${((Math.round(lon) % 360) + 360) % 360}|${Math.round(lat)}`);
 
-console.log("C. Validation against SWPC OVATION — and what it can and cannot settle");
+console.log(
+  "C. Validation against SWPC OVATION — and what it can and cannot settle",
+);
 console.log(`   OVATION forecast time ${ov["Forecast Time"]}`);
 const utHour =
   Number(ov["Forecast Time"].slice(11, 13)) +
