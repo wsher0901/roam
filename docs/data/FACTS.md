@@ -5,18 +5,58 @@ status: living
 ---
 # Fact inventory — V1 (V1.S1.T1)
 
-What the engine must KNOW (54 world facts, five families), what it
-may be TOLD (47 traveler parameters, Appendix A), and what the app
+What the engine must KNOW (59 world facts, six families), what it
+may be TOLD (49 traveler parameters, Appendix A), and what the app
 RECORDS about itself and its users (telemetry vocabulary,
 Appendix C). This file is the
-source of truth for source vetting ([V1.S1.T2–T6](../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)) and the storage
+source of truth for source vetting ([V1.S1.T2–T6](../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code) and [V1.S1.T8](../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)) and the storage
 schema ([V1.S1.T7](../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)). Scope guards inherited from [FOUNDATION](../FOUNDATION.md) and
 [ROADMAP §V1 — The demo](../ROADMAP.md#v1--the-demo--active): pre-trip
-only; estimates only (ranges, never live fares/prices); no booking or
-live status; informing, never transacting.
+only; no booking, no live status, informing never transacting — and,
+since [D-088](../record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state), cost means a LICENSED LIVE QUOTE where a
+non-booking API exists (flights first, freshness in minutes) and an
+HONEST RANGE everywhere else, never a scraped price.
 
 ## How to read this file
 Manual: [HOME §Reading the data files](../HOME.md#reading-the-data-files).
+
+**Reading a rung-5 fact.** A "→ ladder" scope note means the fact
+falls down [ENGINE §3](../ENGINE.md#3-acquire--get-the-facts)'s
+ladder when its upper rungs miss. Since
+[D-088](../record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state)
+the bottom of that ladder is TWO rungs, and every use of the old
+phrase "LLM-research grade" below means the pair, read in order:
+
+- **Rung 5a — model-retrieved with provenance.** The model searched
+  and fetched, under this fact's retrieval policy, and the value
+  carries `{url, quoted span, fetched_at, domain grade}`. It grades
+  **B** from an authoritative domain — the operator itself, a
+  government body, a transit authority, established press — and
+  **C** from anywhere else. Cached and freshness-windowed like any
+  other fetch, and rendered with its receipt openable.
+- **Rung 5b — model memory.** No url, no span. Grade **D**, always
+  rendered unverified, one step above refusal.
+
+5a is tried before 5b, always. A fact never reaches 5b while its
+retrieval policy still has an untried allowed domain.
+
+**The retrieval-policy row.** Every fact that can reach rung 5a
+carries one row in its [SOURCES](SOURCES.md) entry, with three
+fields and no others:
+
+| Field | What it fixes |
+|---|---|
+| **allowed domains + grade** | which domains may answer this fact at all, each tagged authoritative (B) or other (C) — a domain absent from the list is not a fallback, it is out of bounds |
+| **quote required** | yes / no — when yes, a value with no verifiable span at the fetched url is discarded rather than downgraded |
+| **freshness window** | how stale a retrieved value may be before refetch, in the fact's own units (minutes for a live quote, a year for a norm) |
+
+The row is per FACT, not per source and not per model: two facts
+served by the same slot may allow different domains. Slots whose
+facts cannot reach 5a write `n/a` and say why.
+[V1.S1.T3](../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)–T6
+and [T8](../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
+each write these rows for their own family; the weather entries in
+[SOURCES](SOURCES.md) are the worked example to copy.
 
 ## Activity taxonomy (15 types — ships as a data file)
 beach & swimming · on-water (boat, kayak, surf) · hiking & trails ·
@@ -288,6 +328,12 @@ under plans.
 - Spine: Suggest (budget fit vs [TP-12](#appendix-a--traveler-parameters-tp-0147--per-d-011--d-012)/[TP-36](#appendix-a--traveler-parameters-tp-0147--per-d-011--d-012)); Plan (cost labels).
 - Scope: global. Freshness: quarterly.
 - Type: estimated (+ fetched where published). Source slot: cost-basis.
+- BANDS STAY, AND THEY ARE NOT QUOTES. [D-088](../record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state) added the
+  [Cost family](#f-co--cost-3--source-task-v1s1t8): where a licensed
+  non-booking API can answer, [CO-01](#f-co-01--flight-quotes-)/[CO-02](#f-co-02--lodging-rates-quote-or-range-)
+  supersede the matching band for that one item; everywhere else
+  these bands remain the answer, and [CO-03](#f-co-03--trip-cost-roll-up)
+  rolls both kinds up.
 
 ### F-FE-08 — Reservation / timed-entry / permit flags ⚠
 - What: book-ahead, timed-entry, and PERMIT requirements (Inca Trail,
@@ -371,6 +417,40 @@ under plans.
 - Spine: cost display; [TP-36](#appendix-a--traveler-parameters-tp-0147--per-d-011--d-012) overrun check.
 - Scope: global. Freshness: daily.
 - Type: fetched. Source slot: fx-rates.
+
+### F-FE-15 — Money-saving tips ⚠
+- What: the legitimate ways to pay less at a destination — city and
+  transit passes, museum free days, combination tickets, tourist
+  cards, published coupons and package deals.
+- Dictionary: tip_id · kind (pass/free-day/combo/coupon/package) ·
+  applies_to (destination/venue/mode) · saving_est_band ·
+  conditions_note · valid_until · provenance {url, quoted span,
+  fetched_at, domain grade}
+- Spine: Plan (attach to the item it saves on); Suggest light
+  (budget fit).
+- Scope: global ambition; no registry exists → RETRIEVAL, rung 5a,
+  operator and city-government domains graded B.
+- Freshness: A COUPON IS A FACT WITH A HALF-LIFE — every tip is
+  DATED and carries `valid_until`; an expired tip is dropped, never
+  rendered stale. Window: monthly, and daily inside the trip window.
+- Type: fetched (retrieved). Source slot: money-saving-tips.
+
+### F-FE-16 — Dress code & conduct norms ⚠
+- What: what a place requires you to wear or not do — temple and
+  church covering rules, restaurant dress codes, beach and swimwear
+  norms, photography bans, shoes-off customs, and the local conduct
+  expectations a visitor gets wrong.
+- Dictionary: norm_id · applies_to (venue/area/country) · category
+  (dress/photography/behaviour/footwear) · requirement_class
+  (required/expected/advisory) · note · provenance {url, quoted
+  span, fetched_at, domain grade}
+- Spine: Plan — it can invalidate an otherwise perfect placement
+  (bare shoulders at a basilica); never a safety guarantee.
+- Scope: global ambition → RETRIEVAL, rung 5a; the operator's own
+  site and government tourism bodies grade B.
+- Freshness: yearly; plan-time re-check for venues with a
+  `required` class.
+- Type: fetched (retrieved) + curated. Source slot: conduct-norms.
 
 ## F-TT — Time & transport (8) — source task V1.S1.T5
 The most data-gated family ([ROADMAP](../ROADMAP.md)): [TT-02](#f-tt-02--route-existence-)/03 carry the heaviest
@@ -459,8 +539,9 @@ ladders. Socket note: airline-specific baggage allowances/fees = Later
 - Type: fetched. Source slot: transport-disruptions.
 
 ## F-CC — Crowds & calendar (8) — source task V1.S1.T6
-Socket note: SNS trend mining = Later socket; [CC-07](#f-cc-07--trending-signal-general-non-sns) is the V1
-general-signals stand-in
+Socket note: PLATFORM MINING of Instagram and TikTok stays a Later
+socket, and the ground is TERMS OF SERVICE rather than difficulty
+([D-088](../record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state)); [CC-07](#f-cc-07--trending-signal-computed) is V1's computed signal
 ([ROADMAP §Pool](../ROADMAP.md#pool--unversioned-sockets); V1 scope:
 [ROADMAP §V1 — The demo](../ROADMAP.md#v1--the-demo--active)).
 
@@ -515,10 +596,25 @@ general-signals stand-in
 - Freshness: monthly.
 - Type: fetched + estimated. Source slot: venue-busyness.
 
-### F-CC-07 — Trending signal (general, non-SNS)
-- What: rising destination/venue interest from general public signals.
-- Spine: Suggest merit bump.
-- Scope: global, coarse. Freshness: weekly.
+### F-CC-07 — Trending signal (computed)
+- What: rising destination or venue interest, COMPUTED from proxies
+  rather than asserted. Amended by [D-088](../record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state).
+- Dictionary: subject_ref · direction (rising/steady/fading) ·
+  strength · contributing_proxies[] · observed_window · lag_days ·
+  provenance[] {url, quoted span, fetched_at, domain grade}
+- Proxies (all four are measurements we take, not opinions we
+  read): RESERVATION SCARCITY (how far out a table or slot is
+  gone — the `sellout_speed` idea applied to dining) · REVIEW
+  VELOCITY (new reviews per week against the venue's own
+  baseline) · YOUTUBE and REDDIT VELOCITY, via their own APIs ·
+  plus DATED PRESS AND BLOG COVERAGE at rung 5a, where the date is
+  part of the fact.
+- Spine: Suggest merit bump; Plan (dining and venue selection with
+  [FE-13](#f-fe-13--venue-reputation-) reputation).
+- Scope: global, coarse → ladder. Freshness: weekly.
+- RENDER: THE LABEL CARRIES THE LAG. A trend signal is always
+  behind the world, so `lag_days` renders with it — "rising, as
+  of last week" and never a bare "trending now".
 - Type: fetched + derived. Source slot: trending-general.
 
 ### F-CC-08 — Cruise port-call schedules ⚠
@@ -531,18 +627,80 @@ general-signals stand-in
 - Scope: published port schedules; gaps labeled → ladder.
 - Freshness: weekly. Type: fetched. Source slot: cruise-port-calls.
 
+## F-CO — Cost (3) — source task V1.S1.T8
+The sixth family, added in V1 by [D-088](../record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state). Its scope
+guard is [ENGINE §8](../ENGINE.md#8-gate--warn-or-refuse)'s amended
+scope refusal: a LIVE QUOTE only where a licensed, NON-BOOKING API
+exists; an honest RANGE everywhere else; NEVER a scraped price; and
+a quote is not a booking — the engine still informs rather than
+transacts. Socket note: in-app booking and fare purchase remain
+[Pool](../ROADMAP.md#pool--unversioned-sockets) sockets.
+
+### F-CO-01 — Flight quotes ⚠
+- What: a priced flight option for a route and date — the offer a
+  licensed, non-booking API returns, not a scrape and not an
+  average.
+- Dictionary: route_ref · date · cabin · total_amount · currency ·
+  carrier · stops · fare_conditions_note · quoted_at ·
+  quote_expires_at · provider
+- Spine: Suggest (does this trip fit [TP-36](#appendix-a--traveler-parameters-tp-0147--per-d-011--d-012)?); Plan (the cost
+  line of the flight leg).
+- Scope: wherever a licensed provider covers the route → ladder;
+  off-coverage falls to [FE-07](#f-fe-07--cost-estimate-bands)'s range, labeled as a range.
+- FRESHNESS IS IN MINUTES, and it is a hard rule: a flight quote
+  past `quote_expires_at` is not re-rendered stale — it is
+  refetched or it degrades to a range. A stale price is worse than
+  no price, because the traveler acts on it.
+- Type: fetched. Source slot: flight-quotes.
+
+### F-CO-02 — Lodging rates (quote or range) ⚠
+- What: nightly rate for a stay — a live quote where a licensed
+  non-booking API covers the property or area, an honest band
+  otherwise. THE TWO ARE NEVER MIXED IN ONE NUMBER: a value is a
+  quote or it is a range, and it says which.
+- Dictionary: area_ref | property_ref · dates · value_kind
+  (quote/range) · amount | band · currency · quoted_at ·
+  quote_expires_at · provider
+- Spine: Suggest (budget fit); Plan (the stay-area cost line, with
+  [FE-12](#f-fe-12--area-profiles-) area choice).
+- Scope: coverage-dependent → ladder, falling to [FE-07](#f-fe-07--cost-estimate-bands)'s
+  `lodging_band`.
+- Freshness: hours for a quote; quarterly for a band.
+- Type: fetched + estimated. Source slot: lodging-rates.
+
+### F-CO-03 — Trip-cost roll-up
+- What: the whole trip's cost, composed from whatever each line
+  could honestly supply — quotes where they exist, ranges where
+  they do not — checked against the traveler's ceiling.
+- Dictionary: plan_version_ref · lines[] {kind, value_kind, amount |
+  band, source_ref} · total {low, high} · currency ·
+  quote_share_pct · as_of
+- Spine: Suggest ([TP-12](#appendix-a--traveler-parameters-tp-0147--per-d-011--d-012)/[TP-36](#appendix-a--traveler-parameters-tp-0147--per-d-011--d-012) fit); Plan (the number the
+  traveler actually reads); Edit (what a change costs).
+- RENDER: A ROLL-UP IS ALWAYS A RANGE, never a single number, and
+  it reports `quote_share_pct` — how much of it is quoted rather
+  than estimated — because a total built from five ranges and a
+  total built from five quotes are not the same claim. Converted
+  through [FE-14](#f-fe-14--currency-exchange-rates) at render time only ([D-013](../record/DECISIONS.md#d-013--canonical-units-si-storage)).
+- Scope: global (derived). Freshness: inherits its worst line.
+- Type: derived. Source slot: none — computed from [CO-01](#f-co-01--flight-quotes-),
+  [CO-02](#f-co-02--lodging-rates-quote-or-range-), [FE-07](#f-fe-07--cost-estimate-bands) and [FE-14](#f-fe-14--currency-exchange-rates).
+
 ## T2–T6 assignment map
+The heading is kept for its anchor; since [D-088](../record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state) the map
+SPANS T2–T6 AND T8 — the Cost family arrived after the heading was
+minted.
 - [V1.S1.T2](../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code) (Weather): [WX-01..14](#f-wx--weather-14--source-task-v1s1t2) → slots weather-forecast,
   weather-alerts, snow-conditions, weather-climatology,
   weather-seasonal-risk, activity-profiles.
 - [V1.S1.T3](../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code) (Sky & sea): [SS-01..10](#f-ss--sky--sea-10--source-task-v1s1t3) → astro-ephemeris, tides,
   aurora-forecast, aurora-viability, nature-timing, night-sky-darkness,
   astro-events.
-- [V1.S1.T4](../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code) (Feasibility): [FE-01..14](#f-fe--feasibility-14--source-task-v1s1t4) → geocoding-places,
+- [V1.S1.T4](../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code) (Feasibility): [FE-01..16](#f-fe--feasibility-14--source-task-v1s1t4) → geocoding-places,
   destination-affordances, places-venues, opening-hours,
   seasonal-closures, routing, cost-basis, reservation-flags,
   venue-attributes, parking, route-services, area-profiles,
-  venue-reputation, fx-rates.
+  venue-reputation, fx-rates, money-saving-tips, conduct-norms.
 - [V1.S1.T5](../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code) (Time & transport): [TT-01..08](#f-tt--time--transport-8--source-task-v1s1t5) → airports, flight-routes,
   flight-schedules, tz-data, airport-access, intercity-ground,
   local-transit, transport-disruptions.
@@ -550,11 +708,15 @@ general-signals stand-in
   school-calendars, religious-observances, events-feed,
   seasonal-crowding, venue-busyness, trending-general,
   cruise-port-calls.
+- [V1.S1.T8](../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code) (Cost): [CO-01..03](#f-co--cost-3--source-task-v1s1t8) → flight-quotes,
+  lodging-rates ([CO-03](#f-co-03--trip-cost-roll-up) is derived — no slot).
 Rule: one [SOURCES.md](SOURCES.md) entry per slot; every entry lists the fact IDs it
 serves, the confirmed payload keys (Dictionary), its reliability
 grade, freshness, coverage notes, cost, the spike script path,
 retention_rights (store-raw / derived-only / cache-only / none),
-license_class, and attribution duties. Retention and license are
+license_class, attribution duties, and — since [D-088](../record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state) — the
+RETRIEVAL-POLICY ROW defined in
+[§ How to read this file](#how-to-read-this-file). Retention and license are
 PRIMARY selection criteria: caching-prohibited sources disqualify a
 slot from the asset layer ([D-015](../record/DECISIONS.md#d-015--data-asset-law)).
 
@@ -576,6 +738,15 @@ Stated-only class (never inferred): [TP-22](#appendix-a--traveler-parameters-tp-
 details inside [TP-21](#appendix-a--traveler-parameters-tp-0147--per-d-011--d-012). Tiers: engine / brain-only / socket. Extension
 is append-only ([D-011](../record/DECISIONS.md#d-011--traveler-input-vocabulary)). No source slots — the source is the traveler;
 validation lands in T7.
+
+**AMENDED by [D-088](../record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state).** The table now runs
+TP-01..49: [D-011](../record/DECISIONS.md#d-011--traveler-input-vocabulary)
+and [D-012](../record/DECISIONS.md#d-012--elicitation-and-inference-policy)
+minted it at 47, and the entry above appended TP-48 and TP-49
+under that vocabulary's own append-only rule. The heading still
+reads `TP-01..47`
+because its slug is the anchor of every citation to this table;
+the live count is here.
 
 | ID | Field | Values | Ask | Consumed by | Tier |
 |---|---|---|---|---|---|
@@ -626,8 +797,20 @@ validation lands in T7.
 | TP-45 | Special conditions | pregnancy, recovery, etc. | N — stated-only | adjust + warn; liability guard | brain |
 | TP-46 | Pets along | {along, type} | N — capture | [FE-09](#f-fe-09--venue-attributes) pet filter | brain |
 | TP-47 | Mainstream↔offbeat dial | classics/mix/hidden-gems | L or inferred | [FE-13](#f-fe-13--venue-reputation-) weighting | engine+brain |
+| TP-48 | Day rhythm | {wake, earliest_start, latest_end, meal_windows} | N — inferred from [TP-10](#appendix-a--traveler-parameters-tp-0147--per-d-011--d-012)/[TP-27](#appendix-a--traveler-parameters-tp-0147--per-d-011--d-012); micro-ask when a placement depends on it | the optimizer's time windows ([ENGINE §6](../ENGINE.md#6-synthesize--build-the-plan)) | engine |
+| TP-49 | Drink / nightlife preference | none/light/social/late | L — contextual, never assumed from party type | nightlife & dining picks; day-after pacing | engine+brain |
 
 ## Appendix B — Plan parameters (T7 must schema; not world facts)
+- **The state store is the memory, and every field in it carries a
+  PROVENANCE TAG — `stated` | `inferred` | `derived`.** [D-088](../record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state)
+  made the brain stateless over a versioned store
+  ([ENGINE §11](../ENGINE.md#11-invariants--the-reliability-law)):
+  the traveler model (Appendix A's fields), the TripQuery, and the
+  plan versions. `derived` is the third tag and it is new here — a
+  value the engine COMPUTED from other stored values, distinct
+  from `inferred`, which the model guessed from what the traveler
+  said. Only the tag makes a redaction checkable: the transcript
+  is never re-read, so what is not in the store is not known.
 - Lodging anchor: the point each day starts/ends (user-chosen area or
   brain-suggested centroid). Drives [FE-06](#f-fe-06--travel-times--distances-per-mode) day routing.
 - Item lock-state: accepted trade-offs and [TP-44](#appendix-a--traveler-parameters-tp-0147--per-d-011--d-012) commitments are
@@ -669,7 +852,7 @@ carries slate_id, the full list of items shown, and positions.
 Feedback only exists over what was shown; position shapes response;
 no-click is not dislike.
 
-Event vocabulary — 19 types, parameterized to avoid event explosion:
+Event vocabulary — 20 types, parameterized to avoid event explosion:
 - Elicitation: question_event {asked|answered|skipped} · field_set
   {provenance_transition} · field_corrected
 - Recommendation reactions (all carry slate_id + rank): slate_shown ·
@@ -678,7 +861,11 @@ Event vocabulary — 19 types, parameterized to avoid event explosion:
 - Plan edits: plan_item_event {added|removed|swapped|pinned} ·
   tradeoff_event {presented|accepted|declined} (lock provenance) ·
   revalidation_run · receipt_expanded · unverified_outcome
-  {kept|dropped}
+  {kept|dropped} · **version_reason_recorded {reason_tag:
+  stated|absent, version_ref, change_ref}** — whether the traveler
+  gave a reason for a change, NEVER the reason's content unless
+  they stated it, and never an inferred one
+  ([ENGINE §9](../ENGINE.md#9-re-validate--edits-and-drift), [D-088](../record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state))
 - Session & funnel: session_event {started|ended} · view_dwell ·
   abandonment_point · plan_exported · draft_timing · ux_error_shown
 - Explicit feedback: feedback_given {rating, target_ref, text?}

@@ -1460,7 +1460,8 @@ the link for the full story.
   [Sky & sea](data/FACTS.md#f-ss--sky--sea-10--source-task-v1s1t3),
   [Feasibility](data/FACTS.md#f-fe--feasibility-14--source-task-v1s1t4),
   [Time & transport](data/FACTS.md#f-tt--time--transport-8--source-task-v1s1t5),
-  [Crowds & calendar](data/FACTS.md#f-cc--crowds--calendar-8--source-task-v1s1t6).
+  [Crowds & calendar](data/FACTS.md#f-cc--crowds--calendar-8--source-task-v1s1t6),
+  [Cost](data/FACTS.md#f-co--cost-3--source-task-v1s1t8).
 - **TP parameters (TP-01..47)** — everything a traveler may TELL
   the engine; all optional, all defaulting to Null.
   Home: [FACTS Appendix
@@ -1825,7 +1826,7 @@ the link for the full story.
   Home: [FOUNDATION §The spine](FOUNDATION.md#the-spine).
 - **validity engine** — the deterministic checks-and-scoring module
   (the isolated [engine/](../engine/README.md) directory; often
-  just "the engine"): it fetches facts, runs the five families'
+  just "the engine"): it fetches facts, runs the six families'
   checks, and scores plans — distinct from the brain. Built in
   [V1.S3](ROADMAP.md#v1s3--engine-core--two-families-deep).
 - **planning brain** — Claude (server-side API) doing the
@@ -1899,9 +1900,9 @@ Sources:
 [V1.S1.T7](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
 
 **Fact IDs and families.** Every world fact has a stable ID:
-F-&lt;family&gt;-&lt;number&gt;, across five families — F-WX weather,
+F-&lt;family&gt;-&lt;number&gt;, across six families — F-WX weather,
 F-SS sky & sea, F-FE feasibility, F-TT time & transport, F-CC crowds
-& calendar. IDs never change meaning; extension is append-only. Each
+& calendar, and F-CO cost ([D-088](record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state)). IDs never change meaning; extension is append-only. Each
 fact entry states What it is, which spine step consumes it, its
 geographic scope, its freshness need, its type, and its source slot.
 FACTS lists check INPUTS only — how facts become scores is engine
@@ -1913,6 +1914,7 @@ Sources:
 [F-FE feasibility](data/FACTS.md#f-fe--feasibility-14--source-task-v1s1t4)
 [F-TT time & transport](data/FACTS.md#f-tt--time--transport-8--source-task-v1s1t5)
 [F-CC crowds & calendar](data/FACTS.md#f-cc--crowds--calendar-8--source-task-v1s1t6)
+[F-CO cost](data/FACTS.md#f-co--cost-3--source-task-v1s1t8)
 [FACTS](data/FACTS.md)
 [V1.S3](ROADMAP.md#v1s3--engine-core--two-families-deep)
 

@@ -126,7 +126,7 @@ Living, and the numbers are derived here rather than quoted.
 | [V1.S4 — Suggest](../ROADMAP.md#v1s4--suggest) | 3 | 0 |
 | [V1.S5 — Plan](../ROADMAP.md#v1s5--plan) | 3 | 0 |
 | [V1.S6 — Edit + revalidate](../ROADMAP.md#v1s6--edit--revalidate-the-money-moment) | 3 | 0 |
-| [V1.S7 — The other three families](../ROADMAP.md#v1s7--the-other-three-families-plug-in-proof) | 3 | 0 |
+| [V1.S7 — The other four families](../ROADMAP.md#v1s7--the-other-four-families-plug-in-proof) | 4 | 0 |
 | [V1.S8 — Demo polish](../ROADMAP.md#v1s8--demo-polish) | 3 | 0 |
 | **Total** | **34** | **5** |
 

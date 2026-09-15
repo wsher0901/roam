@@ -60,7 +60,8 @@ GATE wraps every stage · LEARN taps every stage · INVARIANTS bind all
 *Turn whatever the traveler gave us into resolved fields, each
 tagged with where it came from.*
 
-In: raw traveler input + stored traveler fields.
+In: raw traveler input — typed, pasted, or UPLOADED — + stored
+traveler fields.
 Out: resolved field set, each value carrying provenance +
 updated_at.
 
@@ -74,6 +75,16 @@ Procedure:
 4. Elicit only what has earned asking; never re-ask what is known.
 
 Rules:
+- **Intake is multimodal** — a pasted booking confirmation, a
+  screenshot, or a PDF is traveler input like any other sentence:
+  the model EXTRACTS its fields, schema-validated, and everything
+  it extracts is `stated` provenance because the traveler supplied
+  the document. Extraction is the model's Intake role and nothing
+  more; the boundary is
+  [§11](#11-invariants--the-reliability-law)'s. An uploaded plan
+  that is to be re-validated rather than merely read enters through
+  the same door —
+  [V1.S6.T4](ROADMAP.md#v1s6--edit--revalidate-the-money-moment).
 - **The floor never changes** — origin + dates always suffices;
   every other traveler field defaults to Null.
 - **Everything carries provenance** — every stored traveler field
@@ -99,6 +110,8 @@ Sources:
 ·
 [D-025](record/DECISIONS.md#d-025--foundation-v4-principles-recut)
 ·
+[D-088](record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state)
+·
 [FACTS Appendix A](data/FACTS.md#appendix-a--traveler-parameters-tp-0147--per-d-011--d-012)
 · [ROADMAP](ROADMAP.md)
 
@@ -120,11 +133,43 @@ Procedure:
 Rules:
 - **The ladder, top-down** — (1) global-by-construction source →
   (2) regional authoritative source → (3) computed from physics/math
-  → (4) estimated ranges, labeled → (5) LLM-research grade, rendered
-  unverified → (6) refusal — "can't verify here" rather than
-  guessing.
+  → (4) estimated ranges, labeled → (5a) MODEL-RETRIEVED WITH
+  PROVENANCE → (5b) MODEL MEMORY, rendered unverified → (6) refusal
+  — "can't verify here" rather than guessing.
+- **Rung 5 is two rungs, not one** — the split is
+  [D-088](record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state)'s
+  amendment to
+  [D-010](record/DECISIONS.md#d-010--global-coverage-via-graded-fallback-ladders)'s
+  ladder, and it is the difference between a model that FETCHED an
+  answer and a model that REMEMBERED one.
+  - **5a — model-retrieved with provenance.** The model searches
+    and fetches under the fact's declared retrieval policy, and the
+    value is stored with a provenance record of four parts:
+    `{url, quoted span, fetched_at, domain grade}`. A quoted span
+    that does not appear at the fetched url is not a rung-5a value.
+    GRADE B on an AUTHORITATIVE DOMAIN — the operator itself, a
+    government body, a transit authority, or established press —
+    and GRADE C everywhere else. Freshness-windowed like any other
+    fetch, and cached like any other fetch.
+  - **5b — model memory.** The model's own recollection, with no
+    url and no span. GRADE D, rendered unverified, and exactly one
+    step above refusal.
+  - The model FETCHES AND QUOTES; it never scores.
+    [D-087](record/DECISIONS.md#d-087--product-the-model-boundary-and-three-plan-corrections)'s
+    boundary holds unchanged over both rungs
+    ([§11](#11-invariants--the-reliability-law)).
+- **Every rung-5a fact is served by the retrieval module** —
+  [V1.S3.T8](ROADMAP.md#v1s3--engine-core--two-families-deep) owns
+  the search, the fetch, the quote extraction, the schema
+  validation and the cache; no stage fetches for itself.
+- **The retrieval policy is per fact, not per model** — allowed
+  domains and their grade, whether a quote is required, and the
+  freshness window are declared in the fact's
+  [SOURCES](data/SOURCES.md) entry and defined in
+  [FACTS § How to read this file](data/FACTS.md#how-to-read-this-file).
 - **Declared in advance** — every coverage-risky fact (⚠) declares
-  its fallback ladder, vetted top-down in V1.S1.T2–T6.
+  its fallback ladder, vetted top-down in V1.S1.T2–T6 and, for
+  cost, [V1.S1.T8](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code).
 - **Forecast vs climatology** — real forecast when the trip is near,
   climatology when it is far; the plan says which it used.
 - **Freshness windows bound staleness** — each fact declares the
@@ -133,6 +178,10 @@ Rules:
 
 Sources:
 [D-010](record/DECISIONS.md#d-010--global-coverage-via-graded-fallback-ladders)
+·
+[D-087](record/DECISIONS.md#d-087--product-the-model-boundary-and-three-plan-corrections)
+·
+[D-088](record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state)
 · [FACTS §How to read this file](data/FACTS.md#how-to-read-this-file)
 · [F-WX-11](data/FACTS.md#f-wx-11--climate-normals-by-date-of-year) ·
 [FOUNDATION §What Roam checks](FOUNDATION.md#what-roam-checks)
@@ -211,6 +260,41 @@ Procedure:
 3. Score the shortlist; also score off-list near-peers.
 4. Surface proactive shifts where the window measurably improves.
 
+**The optimizer.** Placement is not a sort — it is a CONSTRAINT
+SCHEDULER, and it is a named component of this stage so that
+[V1.S5.T1](ROADMAP.md#v1s5--plan) builds one thing rather than
+discovering it.
+
+- **What it solves over:** time windows (opening
+  [hours](data/FACTS.md#f-fe-04--opening-hours),
+  [reservation and timed-entry flags](data/FACTS.md#f-fe-08--reservation--timed-entry--permit-flags-),
+  [daylight](data/FACTS.md#f-ss-01--sun-ephemeris), weather-fit via
+  the [sensitivity profiles](data/FACTS.md#f-wx-13--activity-weather-sensitivity-profiles-15-types))
+  · the travel-time matrix
+  ([FE-06](data/FACTS.md#f-fe-06--travel-times--distances-per-mode))
+  · day rhythm
+  ([TP-48](data/FACTS.md#appendix-a--traveler-parameters-tp-0147--per-d-011--d-012))
+  · the pace and density budgets
+  ([TP-11, TP-27](data/FACTS.md#appendix-a--traveler-parameters-tp-0147--per-d-011--d-012))
+  · and PINS —
+  [TP-44](data/FACTS.md#appendix-a--traveler-parameters-tp-0147--per-d-011--d-012)
+  commitments and accepted trade-offs, which are constraints, not
+  preferences.
+- **Its objective is the composed score** — the same one
+  [§5](#5-aggregate--one-score) composes; the optimizer introduces
+  no second notion of "good". How that number is composed is
+  OPEN-6.
+- **Simulation is a re-solve, not a preview.** "What if I move
+  this?" pins the move and re-solves the whole day; the answer is
+  the SCORE DELTA, rendered in words
+  ([§7](#7-render--honest-pixels)'s explanation duty).
+- **"Degrades" is a threshold, not a feeling** — a delta past a
+  threshold, on the intensity scale that is OPEN-5. The solver
+  class and the threshold's own value are OPEN-10.
+- **The model never solves.** It proposes candidates and explains
+  outcomes; the schedule is computed
+  ([§11](#11-invariants--the-reliability-law)).
+
 Rules:
 - **Feasibility outranks desire** — an infeasible must-do is
   declined with an alternative (often a different window); a
@@ -222,7 +306,26 @@ Rules:
   without being asked.
 - **Condition-aware placement** — never schedule an exposed activity
   into the hottest or most hostile hour without reason; daylight,
-  heat, UV, and crowds steer time-of-day.
+  heat, UV, and crowds steer time-of-day. **CROWD AND SCARCITY
+  MODELLING IS THIS RULE, NAMED**: anticipating other travelers is
+  not a separate faculty but the placement lens reading four facts
+  already in the inventory — venue busyness
+  ([CC-06](data/FACTS.md#f-cc-06--venue-busyness-curves-)), sellout
+  speed (the `sellout_speed` field of
+  [FE-08](data/FACTS.md#f-fe-08--reservation--timed-entry--permit-flags-)),
+  cruise port-call days
+  ([CC-08](data/FACTS.md#f-cc-08--cruise-port-call-schedules-)), and
+  the holiday and school calendars
+  ([CC-01](data/FACTS.md#f-cc-01--public-holidays),
+  [CC-02](data/FACTS.md#f-cc-02--school-holiday-calendars-)). No new
+  fact is needed for it
+  ([D-088](record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state)).
+- **Proposed, then verified** — the model may PROPOSE destinations
+  and activities, and every proposal is then verified down the
+  ladder, landing at rung 5a or better before it can be offered;
+  anything that can only reach 5b is labeled or dropped, never
+  quietly ranked. The curated set remains the warmed demo path
+  ([V1.S8.T3](ROADMAP.md#v1s8--demo-polish)), not the ceiling.
 - **Honor, then better** — honor the stated preference, and surface
   a significantly better alternative when one exists (airports,
   dates, areas).
@@ -238,6 +341,8 @@ Rules:
 Sources: canonical here since
 [D-021](record/DECISIONS.md#d-021--plan-synthesis-principles-re-home)
 ·
+[D-088](record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state)
+(the optimizer, proposed-then-verified, crowds named) ·
 [FACTS Appendix B](data/FACTS.md#appendix-b--plan-parameters-t7-must-schema-not-world-facts)
 
 ## 7. Render — honest pixels
@@ -250,11 +355,21 @@ Out: the rendered plan, every claim labeled per the matrix.
 | Grade | Meaning | Renders as |
 |---|---|---|
 | **A** | authoritative or model-grade; globally consistent, obtainable, license-clean | **verified** |
-| **B** | authoritative where covered; coverage or fidelity caveats | **verified where covered, labeled elsewhere** |
-| **C** | estimated / derived / curated | **labeled estimate** |
-| **D** | LLM-research grade | **always unverified** |
+| **B** | authoritative where covered; coverage or fidelity caveats — INCLUDING a rung-5a retrieval from an authoritative domain (operator, government, transit authority, established press) | **verified where covered, labeled elsewhere** |
+| **C** | estimated / derived / curated — INCLUDING a rung-5a retrieval from any other domain | **labeled estimate** |
+| **D** | model memory (rung 5b): no url, no quoted span | **always unverified** |
 
 The grade scale is provisional until ratified in V1.S1.T7 (OPEN-2).
+This table is the CANONICAL grade scale;
+[SOURCES](data/SOURCES.md) points here rather than restating it.
+
+**A rung-5a claim renders with its receipt attached** — the domain
+it came from and the span that was quoted, reachable from the claim
+itself. That is what makes B or C honest for a retrieved value, and
+it is the demo's centrepiece
+([V1.S8.T3](ROADMAP.md#v1s8--demo-polish)): every rendered claim
+opens its evidence. A rung-5b claim has no receipt to open, which is
+exactly why it renders unverified.
 
 Rules:
 - **Traveler strictness (TP-42)** — the verified-only setting
@@ -273,6 +388,8 @@ Sources: [SOURCES.md](data/SOURCES.md) (incl.
 ·
 [D-013](record/DECISIONS.md#d-013--canonical-units-si-storage)
 ·
+[D-088](record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state)
+·
 [FACTS Appendix A](data/FACTS.md#appendix-a--traveler-parameters-tp-0147--per-d-011--d-012)
 · [FOUNDATION §Principles](FOUNDATION.md#principles) ·
 [T7](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
@@ -288,8 +405,17 @@ Rules:
   honest label helps, the engine says "can't verify here" rather
   than guessing (ladder rung 6).
 - **Scope refusals** — no booking, payments, or reservations (the
-  engine informs, never transacts); no live fare/price scraping —
-  cost means honest estimate ranges.
+  engine informs, never transacts). **THE PRICE REFUSAL IS AMENDED
+  BY
+  [D-088](record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state)**,
+  and the amendment is narrow: where a LICENSED, NON-BOOKING API
+  exists — flights first — the engine may show a LIVE QUOTE, which
+  is timestamped and freshness-windowed IN MINUTES, because a stale
+  quote is worse than no quote. Everywhere else cost means an
+  honest range. A SCRAPED PRICE IS STILL REFUSED, on licence and
+  fragility grounds, whatever it would cost to obtain. And a quote
+  is not a booking: showing a fare never becomes selling one.
+  → [F-CO](data/FACTS.md#f-co--cost-3--source-task-v1s1t8).
 - **Content guardrails** — no demographic packing lists (gear notes
   only when an activity demands them); dietary handling filters
   options but never guarantees safety — travelers verify allergens
@@ -299,6 +425,8 @@ Sources: canonical here since
 [D-021](record/DECISIONS.md#d-021--plan-synthesis-principles-re-home)
 ·
 [D-010](record/DECISIONS.md#d-010--global-coverage-via-graded-fallback-ladders)
+·
+[D-088](record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state)
 · [ROADMAP §V1 — The demo](ROADMAP.md#v1--the-demo--active)
 
 ## 9. Re-validate — edits and drift
@@ -313,13 +441,24 @@ words.
 Rules:
 - **Never a silent squeeze-in** — every edit re-validates the WHOLE
   plan and explains what the change knocks over.
+- **Every version diff carries its reason** — what changed, and WHY
+  the traveler asked for it when they said, tagged `stated` or
+  `absent`. A REASON IS NEVER INFERRED: if the traveler gave none,
+  the diff says `absent` and stops there, because a guessed motive
+  is a fabricated fact about a person. The tagged diffs compose
+  into the DECISION PATH — the sequence of changes and reasons a
+  traveler can read back and walk to any earlier version
+  ([V1.S6.T3](ROADMAP.md#v1s6--edit--revalidate-the-money-moment)).
+  The event that records it is
+  [Appendix C1](data/FACTS.md#c1--behavior-events-d-014)'s.
 - Pinned trade-offs keep their acceptance provenance through
   re-validation (see [§6](#6-synthesize--build-the-plan)).
 - Whether a changed or expired **fact** re-validates a standing plan
   is OPEN-7 — edits are decided; drift is not.
 
 Sources: [FOUNDATION §The spine](FOUNDATION.md#the-spine) ·
-[V1.S6](ROADMAP.md#v1s6--edit--revalidate-the-money-moment)
+[D-088](record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state)
+· [V1.S6](ROADMAP.md#v1s6--edit--revalidate-the-money-moment)
 
 ## 10. Learn — the loop back
 *Everything the engine does is a data point; grades are earned for
@@ -368,6 +507,23 @@ Sources:
   a model's own world claim exists only at ladder rung 5, labeled,
   and never enters [Judge](#4-judge--per-check-verdicts) or
   [Aggregate](#5-aggregate--one-score).
+  **RUNG 5 IS NOW TWO RUNGS
+  ([D-088](record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state)),
+  and the boundary is unchanged across both:** a model may FETCH
+  and QUOTE (rung 5a, provenance attached), and it may REMEMBER
+  (rung 5b, grade D) — it never SCORES either one. Retrieval widens
+  what the model may bring back; it does not widen what the model
+  may decide.
+- **State outranks transcript** — the brain is STATELESS over a
+  VERSIONED STATE STORE. Three things are stored, not remembered:
+  the TRAVELER MODEL (every constraint and preference with
+  provenance — `stated` / `inferred` / `derived`), the TRIPQUERY,
+  and the PLAN VERSIONS. Every turn renders from state; THE
+  TRANSCRIPT IS NEVER RE-READ to recover what the traveler wants.
+  The consequence is the point: a redaction is a STATE EDIT plus a
+  NEW VERSION, so "we forgot that" is verifiable by construction
+  rather than promised — there is no conversation buried behind the
+  state that could still be holding the deleted thing.
 - **SI/metric everywhere inside** — all storage and engine math,
   exclusively, never mixed.
 - **Explainable by construction** — the engine may learn from data
@@ -387,6 +543,8 @@ Sources:
 [D-025](record/DECISIONS.md#d-025--foundation-v4-principles-recut)
 ·
 [D-087](record/DECISIONS.md#d-087--product-the-model-boundary-and-three-plan-corrections)
+·
+[D-088](record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state)
 
 ## 12. Open register
 Undecided slots, numbered; referenced inline as OPEN-n. Filling one
@@ -433,6 +591,18 @@ resolves by number.
    measured against a large, diverse evaluation set — is now an
    invariant, and the set itself is owned by
    [V1.S3.T6](ROADMAP.md#v1s3--engine-core--two-families-deep).
+
+10. **The solver class and the degradation threshold.**
+    [§6](#6-synthesize--build-the-plan) names the optimizer and
+    what it solves over, but not WHAT KIND of solver runs it —
+    greedy-with-repair, a CP/MIP model, local search — nor the
+    value of the threshold past which a score delta counts as
+    "degrades" (its SCALE is OPEN-5's; its CUTOFF is this slot's).
+    **Decided before
+    [V1.S5](ROADMAP.md#v1s5--plan) opens**, because
+    [V1.S5.T1](ROADMAP.md#v1s5--plan) is the task that would
+    otherwise pick one by accident. Minted by
+    [D-088](record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state).
 
 Sources:
 [V1.S3](ROADMAP.md#v1s3--engine-core--two-families-deep) ·
