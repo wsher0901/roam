@@ -23,6 +23,17 @@ at [FACTS § How to read this file](FACTS.md#how-to-read-this-file) and
 required of every entry by
 [D-088](../record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state)
 ruling 3. A slot that cannot reach rung 5a writes `n/a` AND SAYS WHY.
+**THE PER-FACT / PER-ENTRY QUESTION DOES NOT ARISE IN THIS FAMILY, AND
+THAT IS WORTH SAYING RATHER THAN LEAVING TO BE INFERRED.** The policy
+row is per FACT, and [SOURCES.md](SOURCES.md) warns that an entry-level
+row is a shorthand that must declare itself. Here the
+[assignment map](FACTS.md#t2t6-assignment-map) maps the eight F-CC
+facts one-to-one onto eight slots, so every entry below governs exactly
+one fact and no shorthand is in play. The single exception is
+`religious-observances`, where ONE fact has two halves that need
+different policies — dates and effects — and that entry splits its row
+accordingly.
+
 **Grade B is defined by DOMAIN CLASS** at
 [ENGINE §3](../ENGINE.md#3-acquire--get-the-facts) — operator,
 government body, transit authority, established press — and no policy
