@@ -318,6 +318,98 @@ checked the PAYLOAD, never the status code.
   [D-088](../record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state)
   ruling 1 authorised.
 
+## parking
+
+- Serves: [FE-10](FACTS.md#f-fe-10--parking-).
+- Source: **OpenStreetMap** via Overpass (ODbL) — `amenity=parking`
+  features for the parking half, and `boundary=low_emission_zone` for
+  `restricted_driving_zone`, the field that earns this slot its keep.
+- Confirmed keys (spike, 2026-09-15, Rome centre): `parking`,
+  `fee`, `charge`, `access`, `capacity`, `name`, `maxstay` on parking
+  features; `boundary` and `name` on zones. 825 parking features and 1
+  restricted zone returned.
+- **Dictionary coverage, measured:**
+  | FE-10 field | OSM tag | coverage |
+  |---|---|---|
+  | `availability_class` | `parking` (surface / multi-storey / underground …) | 612 / 825 = **74.2%** |
+  | `restrictions_note` | `access` | 370 / 825 = 44.8% |
+  | `cost_band` | `fee` | 214 / 825 = 25.9% |
+  | `cost_band` | `charge` (an actual price) | 6 / 825 = **0.7%** |
+  | `capacity` (not FE-09/10 Dictionary, useful) | `capacity` | 82 / 825 = 9.9% |
+  | `name` | `name` | 73 / 825 = 8.8% |
+  | `restrictions_note` | `maxstay` | 0 / 825 = **0.0%** |
+  | `distance_to_entrance_m` | — | **COMPUTED** by us from the parking geocode and the venue geocode |
+- **`restricted_driving_zone` — the Florence/Rome fine-prevention fact.**
+  The mechanism works: the query returned Rome's **"Fascia Verde"** as
+  a `boundary=low_emission_zone` relation, so a ZTL/LEZ polygon IS
+  fetchable from OSM and a plan can test a drive against it.
+  **But one zone is not Rome's ZTL story** — the historic-centre ZTL,
+  which is the one that actually fines tourists, did not come back
+  under either `low_emission_zone` or `traffic_zone` in this bbox. The
+  honest reading is that OSM's zone tagging is INCONSISTENT between the
+  environmental zone (well tagged) and the municipal access zone
+  (tagged variously, or not at all), and this slot therefore cannot
+  promise the fine-prevention fact from OSM alone. Naming the gap is
+  the result; a plan that says "no restricted zone here" on this data
+  would be exactly the wrong output.
+- Grade: **C** overall — **B** for `availability_class` where tagged,
+  **C** for `cost_band` (the price tag is present on 0.7% of features,
+  so the band is estimated), and **C-with-a-named-gap** for
+  `restricted_driving_zone` until the retrieval policy below fills it.
+- Freshness served: monthly, per [FACTS](FACTS.md). Zone boundaries
+  change on municipal timescales and are re-checked yearly, with a
+  plan-time check whenever a drive enters a city centre.
+- Coverage: global in principle; parking tagging is dense in Europe
+  and thin elsewhere, and ZTL/LEZ tagging is inconsistent even where
+  the zone is famous — measured above, not assumed.
+- Cost: free; Overpass slot limits per
+  [finding two](#three-findings-that-shape-every-entry-below).
+- retention_rights: **store-raw**. license_class: **ODbL 1.0**.
+  Attribution: "© OpenStreetMap contributors".
+- **Retrieval policy** — the row SPLITS, and the split is the whole
+  point of this slot: one field can cost a traveller a fine, the rest
+  cost them a walk.
+  - `restricted_driving_zone` —
+    - allowed domains + grade: the CITY OR MUNICIPAL GOVERNMENT'S own
+      site, including its mobility or police department (**B**,
+      government body); the national transport ministry (**B**); the
+      zone operator where a city delegates enforcement (**B**,
+      operator); established press reporting a zone change and naming
+      the authority (**B**). Car-rental and travel-blog pages are
+      **C** AND ARE NEVER SUFFICIENT ALONE for a `present: true`
+      verdict — they are corroboration.
+    - quote required: **yes**, and the span must carry the ZONE'S
+      HOURS AND EXEMPTIONS, not merely its existence. A ZTL that is
+      active only 06:30–18:00 on weekdays is a different fact from one
+      that is always active, and the difference is the fine.
+    - freshness window: 1 year, and a plan-time re-check on any drive
+      entering a city centre.
+  - `availability_class`, `cost_band`, `restrictions_note`,
+    `distance_to_entrance_m` —
+    - allowed domains + grade: the parking operator or garage's own
+      site (**B**, operator); the municipal parking authority (**B**,
+      government body); other domains (**C**).
+    - quote required: **no** — these are bands and classes, and a
+      garage's price changes faster than any window we would set. An
+      estimate labeled as an estimate is the honest rendering; a
+      quoted price that has since changed is worse.
+    - freshness window: 90 days. `distance_to_entrance_m` is computed
+      and has no window.
+- Spike: `scripts/spikes/feasibility-parking.mjs` — run 2026-09-15 over
+  Rome centre. Returned 825 parking features with the coverage table
+  above, and the single `low_emission_zone` relation "Fascia Verde"
+  with the historic-centre ZTL absent.
+- Alternatives rejected: **Google Places parking attributes** — see
+  [§ The Google Maps verdict](#the-google-maps-verdict).
+  **Commercial parking APIs** (ParkWhiz, SpotHero and similar) —
+  booking products, US-centric, and booking is out of V1 scope.
+  **Urban Access Regulations in Europe** (urbanaccessregulations.eu) —
+  the authoritative European registry of LEZ and access zones, and the
+  obvious fix for the gap named above; NOT VETTED in this bench because
+  it publishes as a website rather than an API and its re-use terms
+  were not read. Recorded as the leading candidate to close this slot's
+  gap, with a terms read as the first step.
+
 ## routing
 
 - Serves: [FE-06](FACTS.md#f-fe-06--travel-times--distances-per-mode).
@@ -527,6 +619,95 @@ checked the PAYLOAD, never the status code.
   vetted, and not needed: booking is out of V1 scope entirely, and a
   rate API answers [F-CO](FACTS.md#f-co--cost-3--source-task-v1s1t8)'s
   question, not this one's.
+
+## venue-attributes
+
+- Serves: [FE-09](FACTS.md#f-fe-09--venue-attributes).
+- Source: **OpenStreetMap tags where they exist, ESTIMATED per category
+  where they do not** — and the spike's finding is that "where they do
+  not" is nearly everywhere. [FACTS](FACTS.md) types this fact
+  "fetched + estimated"; the measurement below fixes the ratio.
+- Confirmed keys (spike, 2026-09-15, 2,535 Rome-centre venues): the
+  tags that exist at all are `outdoor_seating`, `building`, `indoor`,
+  `dog`, `wheelchair` and `website`. `min_age`, `duration` and any
+  adult-audience tag returned ZERO across the whole sample.
+- **Dictionary coverage — the honest table, and it is mostly zeros:**
+  | FE-09 field | OSM tag | coverage |
+  |---|---|---|
+  | `indoor_outdoor` | `outdoor_seating` | 417 / 2,535 = **16.4%** |
+  | `indoor_outdoor` | `building` | 122 / 2,535 = 4.8% |
+  | `indoor_outdoor` | `indoor` | 6 / 2,535 = 0.2% |
+  | `pet_friendly` | `dog` | 3 / 2,535 = **0.1%** |
+  | `family_fit` | `kids_area` / `playground` | 2 / 2,535 = **0.1%** |
+  | `min_age_note` | `min_age` | 0 / 2,535 = **0.0%** |
+  | `audience_suitability` | — | 0 / 2,535 = **0.0%** |
+  | `typical_visit_minutes` | `duration` | 0 / 2,535 = **0.0%** |
+
+  For reference, not FE-09 fields: `wheelchair` 331 / 2,535 = 13.1%,
+  and `website` **789 / 2,535 = 31.1%** — the retrieval seed, and the
+  most useful thing this slot's query returns.
+- **So the verdict per field is that OSM DOES NOT MODEL THIS FACT**, and
+  saying so is the result:
+  - `indoor_outdoor` — PARTIAL from tags, otherwise INFERRED from the
+    category ([FE-03](FACTS.md#f-fe-03--venue--poi-records)'s type:
+    a museum is indoor, a viewpoint is outdoor). Reliable inference,
+    labeled.
+  - `typical_visit_minutes` — not modelled; ESTIMATED per category and
+    labeled. This is engine configuration of the same kind as
+    [WX-13](FACTS.md#f-wx-13--activity-weather-sensitivity-profiles-15-types)'s
+    profiles, authored in-repo rather than fetched.
+  - `family_fit`, `audience_suitability` — not modelled; estimated
+    from category plus `min_age` where present.
+    `audience_suitability` matters more than its coverage suggests
+    because it powers composition-aware matching
+    ([ENGINE §5](../ENGINE.md#5-aggregate--one-score)), so where the
+    estimate is weak it must render as an estimate, never as a filter
+    that silently drops venues.
+  - `min_age_note` — retrieval from the operator site, then estimated.
+  - `pet_friendly` — `unknown` IS A LEGAL VALUE per
+    [FACTS](FACTS.md), and at 0.1% tag coverage `unknown` is the
+    honest answer for almost every venue. It is not inferred.
+- Grade: **C** — estimated and derived for all six Dictionary fields,
+  which [ENGINE §7](../ENGINE.md#7-render--honest-pixels) renders as a
+  labeled estimate. **B** only for the minority of venues where a tag
+  or a retrieved operator page actually answers.
+- Freshness served: monthly; the estimates are static until the
+  category table is revised.
+- Coverage: global for the category inference (it rides
+  [FE-03](FACTS.md#f-fe-03--venue--poi-records), which is global);
+  effectively nil for the tag path.
+- Cost: free; Overpass slot limits per
+  [finding two](#three-findings-that-shape-every-entry-below).
+- retention_rights: **store-raw** for the OSM tags; the estimates are
+  ours. license_class: **ODbL 1.0** for the fetched half; repo licence
+  for the estimate tables. Attribution: "© OpenStreetMap contributors".
+- **Retrieval policy** — the row SPLITS, because one field is a rule a
+  traveller is refused entry under and the rest are comfort
+  judgements:
+  - `min_age_note` and `audience_suitability` —
+    - allowed domains + grade: the venue operator's own site (**B**,
+      operator); a government licensing or cultural authority (**B**);
+      established press (**B**); travel guides (**C**).
+    - quote required: **yes** for `min_age_note` — an age limit turns
+      a family away at the door. **no** for `audience_suitability`,
+      which is a class we assign rather than a rule anyone publishes.
+    - freshness window: 1 year.
+  - `indoor_outdoor`, `typical_visit_minutes`, `family_fit`,
+    `pet_friendly` — `n/a`, and the reason is that these are NOT
+    CLAIMS ANYONE PUBLISHES. No page states "the typical visit is 90
+    minutes"; that is our estimate, and dressing it in a retrieved
+    receipt would make a guess look verified, which is the precise
+    inversion [FOUNDATION](../FOUNDATION.md#the-reliability-law)
+    forbids. They render as labeled estimates instead.
+- Spike: `scripts/spikes/feasibility-venue-attributes.mjs` — run
+  2026-09-15 over 2,535 Rome-centre venues. Returned the coverage
+  table above, including the four zeros.
+- Alternatives rejected: **Google Places attributes** (`dine_in`,
+  `good_for_children`, `allows_dogs` — a near-exact match for this
+  Dictionary) — see
+  [§ The Google Maps verdict](#the-google-maps-verdict). This slot and
+  [§ opening-hours](#opening-hours) are where the licence costs Roam
+  the most.
 
 ## venue-reputation
 
