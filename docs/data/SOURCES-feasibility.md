@@ -882,6 +882,98 @@ checked the PAYLOAD, never the status code.
   [§ opening-hours](#opening-hours) are where the licence costs Roam
   the most.
 
+## route-services
+
+- Serves: [FE-11](FACTS.md#f-fe-11--route-services-driving-legs-).
+- Source: **OpenStreetMap amenities** via Overpass (ODbL, rung 1) —
+  `amenity=fuel`, `amenity=charging_station`, `highway=rest_area|services`
+  — with **the headline value COMPUTED by us, not fetched.** This is
+  the slot where the fact Roam sells does not exist in any database:
+  nobody publishes "no fuel for 180 km"; it falls out of the positions.
+- Confirmed keys (spike, 2026-09-15, Vík→Höfn corridor): `amenity`,
+  `name`, `brand`, `socket:*` on charging stations, `highway` on rest
+  areas, plus `lat`/`lon` or `center`. Returned **7 fuel stations, 16
+  charging stations and 12 rest areas.**
+- **The computed value works, end to end.** From the seven fuel
+  positions the spike computed `fuel_gap_max_km = 63.0 km`, between
+  **Orkan** (63.417, −18.994) and **N1** (63.794, −18.040), and
+  rendered FE-11's `warning_text` as *"no fuel 63 km after Orkan"* —
+  the exact shape the fact specifies. `ev_coverage_class` computed to
+  **good** (16 chargers against 7 fuel stations), with `socket:*`
+  detail present on **9 of 16**.
+- **Dictionary coverage:**
+  | FE-11 field | how it is answered |
+  |---|---|
+  | `services_waypoints[]` | FETCHED — OSM amenity positions and types |
+  | `fuel_gap_max_km` | **COMPUTED** from those positions |
+  | `warning_text` | **COMPUTED** from the gap and the preceding station |
+  | `ev_coverage_class` | **COMPUTED** from charger-to-fuel ratio |
+  | `leg_id` · `km_mark` | COMPUTED against [FE-06](FACTS.md#f-fe-06--travel-times--distances-per-mode)'s leg distances |
+  | `tolls.present` | FETCHED — OSM `toll=yes` on ways |
+  | `tolls.est_band` | **NOT IN OSM** → retrieval, rung 5a |
+- **One caveat the spike makes visible and the entry must not hide:**
+  the gap was computed by ordering stations along the corridor's
+  east–west axis, which is a straight-line proxy. The real value must
+  be computed ALONG THE ROUTE GEOMETRY from
+  [§ routing](#routing), because a station 2 km off the road at the
+  wrong moment is not a station, and a corridor that bends makes
+  longitude order wrong. The spike proves the DATA and the ARITHMETIC;
+  the projection onto the route is
+  [V1.S3](../ROADMAP.md#v1s3--engine-core--two-families-deep)'s, and
+  is named here rather than assumed away.
+- Grade: **B** — authoritative where covered, and fuel and charging
+  infrastructure is among the better-mapped OSM categories because it
+  matters to the people who map. `tolls.est_band` is **C** until
+  retrieved from the operator, then **B**.
+- Freshness served: monthly, per [FACTS](FACTS.md). A station that
+  closed is the failure mode here, and it is why the warning is phrased
+  as a distance rather than a promise of a specific pump.
+- Coverage: global, with the usual OSM density bias. The corridor
+  chosen is deliberately the sparse case FE-11 names — Iceland's south
+  coast — because a slot that only works in the Netherlands is not
+  vetted.
+- Cost: free; Overpass slot limits per
+  [finding two](#three-findings-that-shape-every-entry-below).
+- retention_rights: **store-raw**; the computed gaps and warnings are
+  our own derivative. license_class: **ODbL 1.0**. Attribution:
+  "© OpenStreetMap contributors".
+- **Retrieval policy** — the row SPLITS, because six of these fields
+  are computed and one is a price:
+  - `tolls.est_band` —
+    - allowed domains + grade: the road or tunnel OPERATOR'S own
+      tariff page (**B**, operator); the national roads administration
+      or transport ministry (**B**, government body); established
+      press reporting a tariff change (**B**); motoring-club and
+      travel-guide pages (**C**).
+    - quote required: **yes** — a toll is a charge a traveller pays,
+      and an unquoted figure is a wrong budget line. It rides
+      [§ cost-basis](#cost-basis)'s band discipline: a range is honest,
+      an invented exact figure is not.
+    - freshness window: 1 year, and a plan-time re-check on any leg
+      whose `tolls.present` is true.
+  - `services_waypoints[]`, `fuel_gap_max_km`, `warning_text`,
+    `ev_coverage_class`, `leg_id`, `km_mark`, `tolls.present` —
+    `n/a`. The first and last are fetched at rung 1; the rest are
+    COMPUTED from geometry. There is no page that states the fuel gap
+    on a given leg, so there is no span to quote, and a retrieved
+    "there's a long stretch with no petrol" would be strictly less
+    trustworthy than the number we can derive.
+- Spike: `scripts/spikes/feasibility-route-services.mjs` — run
+  2026-09-15 over the Vík→Höfn corridor. Returned the amenity counts,
+  the 63.0 km computed gap with both bracketing stations named, the
+  `ev_coverage_class` computation and the socket-detail ratio.
+- Alternatives rejected: **Google Places fuel/EV** — see
+  [§ The Google Maps verdict](#the-google-maps-verdict); ToS 3.2.3(c)
+  also forbids deriving content from Places coordinates, which is
+  exactly what the gap computation is. **OpenChargeMap** — genuinely
+  good EV data and an open project, but its API requires a registered
+  key (verified 2026-09-15: HTTP 403, "You must specify an API key");
+  not adopted because OSM's `charging_station` answers
+  `ev_coverage_class` without one. Recorded as the upgrade path if
+  socket-level detail beyond OSM's 9-in-16 is ever needed, with a
+  licence read as the first step. **Commercial fuel-price APIs** — a
+  price product, and FE-11 wants presence and gaps, not price.
+
 ## area-profiles
 
 - Serves: [FE-12](FACTS.md#f-fe-12--area-profiles-).

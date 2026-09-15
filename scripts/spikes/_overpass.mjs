@@ -24,6 +24,9 @@ export async function overpass(query, { attempts = 8 } = {}) {
         method: "POST",
         headers: { "User-Agent": UA, "Content-Type": "text/plain" },
         body: query,
+        // A mirror that accepts the connection and never answers would hang
+        // the spike forever; fetch has no default timeout.
+        signal: AbortSignal.timeout(150000),
       });
       const body = await r.text();
       if (r.ok && !body.trimStart().startsWith("<")) return JSON.parse(body);

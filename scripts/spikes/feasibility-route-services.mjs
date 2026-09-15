@@ -6,8 +6,8 @@
 import { overpass } from "./_overpass.mjs";
 
 // Vik -> Hofn along Route 1, the genuinely sparse stretch.
-const BBOX = "63.35,-19.10,64.35,-15.10";
-const q = `[out:json][timeout:120][bbox:${BBOX}];(
+const BBOX = "63.35,-19.10,64.20,-15.30";
+const q = `[out:json][timeout:90][bbox:${BBOX}];(
 nwr["amenity"="fuel"];
 nwr["amenity"="charging_station"];
 nwr["highway"="rest_area"];
