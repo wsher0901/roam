@@ -127,14 +127,13 @@ before it answers anything else.
   then ran the nationwide-date cross-check over 10 countries present in
   both indexes; the counts, key lists, gaps and agreement figures quoted
   above are its output.
-- Alternatives rejected: **Calendarific** — PARKED, and the first draft of this entry
-  rejected it on a guess. Its own pricing page (read 2026-09-15)
-  claims **230+ countries and 3,300+ states and regions**, which is
-  BROADER than either chosen source and would close the India,
-  Pakistan and Thailand gap outright. It is out of V1 for two
-  specific reasons and not for lack of merit: it needs a key, and
-  its free tier is 500 calls per YEAR. It is the named upgrade if
-  that coverage gap starts costing us; **python-holidays /
+- Alternatives rejected: **Calendarific — PARKED, NOT REJECTED.** Its own
+  pricing page (read 2026-09-15) claims **230+ countries and 3,300+
+  states and regions**, which is BROADER than either chosen source and
+  would close the India, Pakistan and Thailand gap outright. It is out
+  of V1 for two specific reasons and not for lack of merit: it needs a
+  key, and its free tier is 500 calls per YEAR. It is the named upgrade
+  the moment that coverage gap starts costing us; **python-holidays /
   date-holidays vendored as a library** (moves the same compilation
   in-process, inherits the same unstated data provenance, and adds a
   dependency we would then own); **each country's gazette directly**
