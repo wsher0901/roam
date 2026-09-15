@@ -37,9 +37,13 @@ favour.** OpenStreetMap is ODbL — share-alike on a derived DATABASE,
 but explicitly compatible with
 [D-015](../record/DECISIONS.md#d-015--data-asset-law)'s
 license-segmented collective store, and it permits the store-raw
-retention the asset layer is built on. Every proprietary alternative
-vetted here (Google, TripAdvisor, Numbeo, Foursquare) forbids exactly
-that. See [§ The Google Maps verdict](#the-google-maps-verdict).
+retention the asset layer is built on. The one proprietary alternative whose terms this
+bench READ IN FULL — Google — forbids exactly that, clause by quoted
+clause. See [§ The Google Maps verdict](#the-google-maps-verdict).
+The others named in the entries below (TripAdvisor, Yelp, Foursquare,
+Numbeo, Mapbox) were NOT read, and each entry says so where it names
+them: they were not pursued, which is not the same as vetted and
+rejected.
 
 **Two: the public OSM query endpoints are not production
 infrastructure.** Overpass allows TWO concurrent slots per IP and
@@ -199,7 +203,8 @@ checked the PAYLOAD, never the status code.
   counts and the 0.0% unmapped result.
 - Alternatives rejected: **Google Places** — see
   [§ The Google Maps verdict](#the-google-maps-verdict).
-  **Foursquare Places / OS Places** — storage restricted to IDs.
+  **Foursquare Places** — not vetted; see
+  [§ venue-reputation](#venue-reputation).
   **Overture Maps Foundation** — genuinely interesting, open
   (CDLA-Permissive / ODbL segments), and a real future candidate for
   its POI theme; NOT adopted for V1 because it ships as monthly
@@ -286,10 +291,12 @@ checked the PAYLOAD, never the status code.
     (**B**, transit authority); established press for a reported
     closure or a change of hours (**B**). Aggregators and review
     platforms — Google, TripAdvisor, Yelp, Facebook — are OUT OF
-    BOUNDS: they are the freshest source of opening hours in the world
-    and every one of them forbids storing it
-    ([§ The Google Maps verdict](#the-google-maps-verdict)), so they
-    may not appear in an allowed list in this file at all.
+    BOUNDS. They are the freshest source of opening hours in the
+    world, and Google's terms were read here and refuse it outright
+    ([§ The Google Maps verdict](#the-google-maps-verdict)); the
+    others are excluded on the same expectation, UNVERIFIED and said
+    so. Either way none may appear in an allowed list in this file
+    without its own terms read first.
   - quote required: **yes.** An opening time with no verifiable span at
     the fetched url is DISCARDED, not downgraded — **this slot has no
     rung 5b.** A remembered opening time is how a traveller ends up at
@@ -626,10 +633,10 @@ checked the PAYLOAD, never the status code.
 - Alternatives rejected: **exchangerate.host** — now key-gated;
   returns HTTP 200 with `missing_access_key`, verified 2026-09-15.
   **Commercial FX APIs** (Fixer, CurrencyLayer, Open Exchange Rates) —
-  all resell the ECB feed, all key-gated, and their free tiers
-  restrict redistribution;
-  [D-015](../record/DECISIONS.md#d-015--data-asset-law) prefers the
-  publisher. **Mid-market scraping** — never; and FE-14 wants
+  not vetted, and not needed: they resell the same ECB reference rates
+  this entry takes from the publisher, so
+  [D-015](../record/DECISIONS.md#d-015--data-asset-law)'s preference
+  for the source settles it before any terms question arises. **Mid-market scraping** — never; and FE-14 wants
   mid-market, which the ECB publishes and a bank's retail page does not.
 
 ## cost-basis
