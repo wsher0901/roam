@@ -1127,8 +1127,10 @@ checked the PAYLOAD, never the status code.
 - retention_rights: **store-raw**. license_class: Wikimedia REST
   metrics are **CC0** (the pageview counts; article TEXT is CC-BY-SA
   and is not used here). Attribution: courtesy credit to Wikimedia.
-- **Retrieval policy** — governs `momentum` and the corroboration of
-  `fame_level`; the pageview series itself is fetched, not retrieved:
+- **Retrieval policy** — SHORTHAND, declaring itself: one fact, one
+  row. It governs `momentum` and the corroboration of `fame_level`;
+  the pageview series itself is fetched, not retrieved, and
+  `evidence_basis` records which path answered:
   - allowed domains + grade: established press with a DATED article —
     a city paper's restaurant column, a national broadsheet's travel
     desk (**B**, established press); the venue operator's own site for
@@ -1204,8 +1206,9 @@ checked the PAYLOAD, never the status code.
   url, which is quotation for attribution, not republication of a
   database. license_class: per-domain, unknown in advance; the span is
   kept short and always attributed to its url.
-- **Retrieval policy** — this slot is nothing but its policy, and it
-  governs the one fact whole:
+- **Retrieval policy** — SHORTHAND, declaring itself: this slot serves
+  one fact and the row governs it whole. The slot is nothing BUT its
+  policy, since there is no feed underneath it:
   - allowed domains + grade: the transport operator or museum's own
     site (**B**, operator); the city or regional government and its
     official tourism board (**B**, government body); the transit
@@ -1261,7 +1264,10 @@ checked the PAYLOAD, never the status code.
 - Cost: the retrieval module's cost; no licence fee.
 - retention_rights: **cache-only** plus our own curated table.
   license_class: per-domain; spans are short and attributed.
-- **Retrieval policy:**
+- **Retrieval policy** — SHORTHAND, declaring itself: one fact, one
+  row, governing every field of it, because a venue's dress rule and
+  its photography rule are published on the same page when they are
+  published at all:
   - allowed domains + grade: the venue operator's own site — the
     basilica, temple, museum or restaurant (**B**, operator); the
     national or city government tourism body and any relevant ministry
