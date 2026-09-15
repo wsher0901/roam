@@ -41,6 +41,55 @@ The slots, from [the assignment map](../../data/FACTS.md#t2t6-assignment-map)
 
 V1 ships trending via GENERAL SIGNALS ONLY ([ROADMAP V1](../../ROADMAP.md#v1--the-demo--active)) — no social scraping, no per-venue live busyness that needs a prohibited feed. School calendars are administratively fragmented and are the slot most likely to end LLM-research grade; say so rather than overclaiming coverage.
 
+## What [D-088](../DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state) added to this bench
+
+[D-088](../DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state)
+landed after this bench was born and two of its rulings are this
+bench's duty. Recorded here because ruling 3 says the T3–T6 benches
+add their own rows WHEN THEY RESPAWN, and this is the respawn.
+
+**Ruling 3 — the retrieval-policy row.** Every fact gets ONE row in
+`docs/data/SOURCES-crowds-calendar.md`, with exactly three fields
+and no others, per
+[FACTS § How to read this file](../../data/FACTS.md#how-to-read-this-file):
+
+- **allowed domains + grade** — each domain tagged authoritative
+  (**B**) or other (**C**).
+- **quote required** — yes / no.
+- **freshness window** — in the fact's own units.
+
+The worked example to copy is the WEATHER entries in
+[SOURCES.md](../../data/SOURCES.md). The row is PER FACT; an
+entry-level row is a shorthand that must declare itself, and splits
+the moment two of the slot's facts differ. **A slot that cannot
+reach rung 5a writes `n/a` AND SAYS WHY — silence is not `n/a`.**
+Grade **B** is defined by DOMAIN CLASS at
+[ENGINE §3](../../ENGINE.md#3-acquire--get-the-facts) — operator,
+government body, transit authority, established press — and a
+policy row APPLIES that definition; it may never promote a domain
+outside those classes to B.
+
+**Ruling 9 — [CC-07](../../data/FACTS.md#f-cc-07--trending-signal-computed) is now the centrepiece.** Trend is a COMPUTED
+signal from proxies, never an assertion. The `trending-general`
+slot must vet, for real:
+
+- **reservation scarcity** and **review velocity** — measurements we
+  take, not opinions we read.
+- **YouTube and Reddit velocity via their own APIs** — key
+  requirement, quota, and DECISIVELY whether their terms permit
+  CACHING / RETENTION of derived metrics. Per
+  [D-015](../DECISIONS.md#d-015--data-asset-law) a
+  caching-prohibited source disqualifies a slot from the asset
+  layer, so a proxy that cannot be licensed is DROPPED from the V1
+  proxy set with its reason stated.
+- **dated press and blogs at rung 5a** — the date is part of the
+  fact.
+- **PLATFORM MINING (Instagram, TikTok) stays a Later socket**, and
+  the ground is TERMS OF SERVICE rather than difficulty. No scraper
+  is vetted; the reason is recorded under Alternatives rejected.
+- The rendered label CARRIES THE SIGNAL'S LAG (`lag_days`) —
+  "rising, as of last week", never a bare "trending now".
+
 ## Out of scope
 
 - **App code.** [V1.S1](../../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code) is docs and spike scripts only.
@@ -71,7 +120,8 @@ V1 ships trending via GENERAL SIGNALS ONLY ([ROADMAP V1](../../ROADMAP.md#v1--th
 4. Write `docs/data/SOURCES-crowds-calendar.md`: one entry per slot, every field the Weather
    entries carry — serves / source / confirmed keys / grade /
    freshness / coverage / cost / retention_rights + license_class +
-   attribution / spike path + run date / alternatives rejected.
+   attribution / **retrieval policy** / spike path + run date /
+   alternatives rejected.
 5. Any slot with no reliable source is marked **LLM-research grade →
    rendered as unverified**, explicitly, per the
    [reliability law](../../FOUNDATION.md#the-reliability-law). A
@@ -90,6 +140,17 @@ V1 ships trending via GENERAL SIGNALS ONLY ([ROADMAP V1](../../ROADMAP.md#v1--th
       with the date it was read.
 - [ ] Grades follow the canonical scale at
       [ENGINE §7](../../ENGINE.md#7-render--honest-pixels).
+- [ ] Every fact carries a RETRIEVAL-POLICY row with its three
+      fields, or `n/a` WITH ITS REASON — never silence
+      ([D-088](../DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state)
+      ruling 3). No policy row promotes a domain outside
+      [ENGINE §3](../../ENGINE.md#3-acquire--get-the-facts)'s
+      classes to **B**.
+- [ ] `trending-general` names the proxy set V1 can ACTUALLY
+      LICENSE, each proxy's terms read at its own terms page with
+      the date, and every dropped proxy carries its reason
+      ([D-088](../DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state)
+      ruling 9).
 - [ ] No file outside `docs/data/SOURCES-crowds-calendar.md` and `scripts/spikes/crowds-calendar-*`
       is touched, except this bench's own spec and memory.
 - [ ] Full CI mirror green; the PUSHED head's Actions run green.
