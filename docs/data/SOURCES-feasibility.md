@@ -222,8 +222,8 @@ checked the PAYLOAD, never the status code.
   weekly rule plus two public-holiday overrides) and
   `"Jan 02-Feb 15,Oct 28-Dec 31 08:30-16:30; Jan 16-Mar 15 08:30-17:00; Mar 16-24 08:30-17:30; Mar 25-Aug 31 08:30-19:15; Sep 01-30 08:30-19:00"`
   (Rome attraction — a full seasonal schedule in one field).
-- **Grade: B — and the honest half of that grade is the coverage, which
-  this bench measured rather than wished away.** Across 12,627 venues
+- Grade: **B** — and the honest half of that grade is the coverage,
+  which this bench measured rather than wished away. Across 12,627 venues
   in five city centres on five continents,
   **3,969 carried an `opening_hours` tag: 31.4%.**
 
@@ -335,8 +335,8 @@ checked the PAYLOAD, never the status code.
   `time`/`distance` matrix. Valhalla `/status` reported version
   `3.8.3-cc015b6` and `tileset_last_modified` 2026-09-14 — a
   one-day-old planet tileset.
-- **Grade: A for walk and drive, and the reason Valhalla wins is a
-  spike finding, not a preference.** The public OSRM demo instance
+- Grade: **A** for walk and drive, and the reason Valhalla wins is a
+  spike finding, not a preference. The public OSRM demo instance
   carries the CAR PROFILE ONLY and silently ignores the profile path
   segment: `/route/v1/driving`, `/walking` and `/cycling` over the
   same four Rome stops all returned 10.88 km / 26.8 min, identical to
@@ -405,7 +405,7 @@ checked the PAYLOAD, never the status code.
   cross-rate through EUR), `as_of_date` (read FROM THE FEED, never
   from the local clock — the derivation law's time rule).
 - Grade: **A**, within the covered set.
-- **Coverage, and the gap is real: 30 currencies, not all of them.**
+- Coverage — **and the gap is real: 30 currencies, not all of them.**
   The spike checked a spread of destination currencies and found ISK,
   JPY, EUR, USD, THB, GBP and KRW present — and VND, MAD, EGP, PEN and
   TZS ABSENT. A destination priced in a currency outside the ECB list
@@ -538,7 +538,7 @@ checked the PAYLOAD, never the status code.
 - Confirmed keys (spike, 2026-09-15): `items[].project`, `.article`,
   `.granularity`, `.timestamp`, `.access`, `.agent`, `.views` —
   daily series, 181 days returned per article.
-- **Grade: C for `fame_level`, and NOT SERVED for `momentum`.** The
+- Grade: **C** for `fame_level`, and **NOT SERVED** for `momentum`. The
   spike separates these honestly. Fame discriminates by orders of
   magnitude over 180 days — Colosseum 591,799 views, Pantheon 491,340,
   Trevi Fountain 248,236, Basilica of San Clemente 1,228, Centrale
@@ -626,7 +626,7 @@ checked the PAYLOAD, never the status code.
 - **Freshness served: A COUPON IS A FACT WITH A HALF-LIFE.** Every tip
   carries `valid_until` and an expired tip is DROPPED, never rendered
   stale. Window: monthly, and daily inside the trip window.
-- **Coverage, measured: the path is real and it fails more often than
+- Coverage, measured — **the path is real and it fails more often than
   it succeeds.** The spike fetched four allowed-domain targets and got
   2 of 4 reachable and 1 of 4 quotable. `atac.roma.it`'s tourist-ticket
   page returned HTTP 404 on a plausible URL, and
@@ -783,15 +783,40 @@ as an input for point-in-polygon analysis" — which is what
 [FE-12](FACTS.md#f-fe-12--area-profiles-)'s area assignment does — and
 using Maps Content "to train, test, validate or fine-tune" models.
 
-**License:** proprietary, per the Maps Platform Terms of Service and
-Service Specific Terms; not an open data licence, and no
-retention_rights beyond the carve-outs below. **Quota:** Maps
-Grounding Lite is documented at 300 queries per minute per project for
-`search_places`, pay-as-you-go per request, with a demo key for
-prototyping; the Gemini-side grounding tool bills per grounded prompt.
-**Freshness:** excellent and not in dispute — Google's places data is
-fresher and denser than OSM's, particularly for opening hours. **None
-of that matters**, because
+The rest of the standard spine, for the record, since a verdict is a
+vetting and carries the same fields as an adopted entry:
+
+- Serves (if adopted): [FE-01](FACTS.md#f-fe-01--destination-registry),
+  [FE-02](FACTS.md#f-fe-02--destinationactivity-affordances-),
+  [FE-03](FACTS.md#f-fe-03--venue--poi-records) — and, tempting most
+  of all, [FE-04](FACTS.md#f-fe-04--opening-hours).
+- Source: Google Maps Platform Places API, and Maps Grounding Lite /
+  Grounding with Google Maps.
+- Confirmed keys: NOT SPIKED, deliberately — calling either needs a
+  billed key, and under
+  [D-015](../record/DECISIONS.md#d-015--data-asset-law) the answer does
+  not depend on what they return but on what may be KEPT. The spike
+  reads the terms instead.
+- Grade (if adopted): **A** on data quality. Not the binding
+  constraint.
+- Freshness served: excellent, and not in dispute — Google's places
+  data is fresher and denser than OSM's, particularly for opening
+  hours. This is the real cost of the rejection and it is stated
+  plainly rather than minimised.
+- Coverage: over 250 million places, global; better than OSM
+  essentially everywhere outside Europe.
+- Cost / quota: pay-as-you-go per request. Maps Grounding Lite is
+  documented at 300 queries per minute per project for `search_places`,
+  with a demo key for prototyping; the Gemini-side grounding tool bills
+  per grounded prompt.
+- retention_rights: **NONE** beyond the two carve-outs below —
+  30 days for Grounded Output, evaluation-and-display only, and
+  `place_id` indefinitely. license_class: **proprietary**, per the
+  Maps Platform Terms of Service and Service Specific Terms; not an
+  open data licence. Attribution: required, including the Google logo
+  and source links.
+
+**None of the quality matters**, because
 [D-015](../record/DECISIONS.md#d-015--data-asset-law) makes retention
 a PRIMARY selection criterion and its own rationale names
 "Places-style no-caching rules" as the hazard it was written against.
