@@ -12,7 +12,8 @@ re-stamped 2026-08-05 · Shelf III slice D written · cloud lane ·
 re-stamped 2026-08-11 · the design stack joins Shelf III · work PC ·
 re-stamped 2026-08-11 · Roam's taste joins Shelf IV · work PC ·
 re-stamped 2026-08-12 · the supply lines join Shelf IV · work PC ·
-re-stamped 2026-09-10 · the product-first window joins Shelf III · work PC.
+re-stamped 2026-09-10 · the product-first window joins Shelf III · work PC ·
+re-stamped 2026-09-10 · the system audit joins Shelf III · work PC.
 
 **SYNTHESIS IS DEFERRED FOR PRODUCT WELDS while the product-first
 window is open**
@@ -27,7 +28,7 @@ who needs the current state of a product item reads
 [the ledger](../record/history/README.md#the-ledger), not this file.
 Non-product welds perform the step as written throughout.
 
-CENSUS + 66 WRITTEN STORIES, OF 70 ROWS. The 66 that the census was
+CENSUS + 66 WRITTEN STORIES, OF 71 ROWS. The 66 that the census was
 born asking for all exist as of 2026-08-07 — the three-story pilot
 ([D-076](../record/DECISIONS.md#d-076--phase-2-opens-with-a-three-story-pilot)),
 Shelf III slice D (8), and the seven-lane fleet under
@@ -36,9 +37,11 @@ landing shelf by shelf — and their rows link to them; **none of the
 original 66 remains a proposal.** THE ROWS BEYOND THEM ARE NEW ITEMS, not survivors —
 the design stack
 ([D-084](../record/DECISIONS.md#d-084--the-global-design-stack)),
-ROAM'S TASTE, THE COMPONENT SUPPLY LINES, and THE PRODUCT-FIRST
+ROAM'S TASTE, THE COMPONENT SUPPLY LINES, THE PRODUCT-FIRST
 WINDOW
-([D-086](../record/DECISIONS.md#d-086--workshop-the-product-first-window))
+([D-086](../record/DECISIONS.md#d-086--workshop-the-product-first-window)),
+and THE SYSTEM AUDIT
+([#362](https://github.com/wsher0901/roam/pull/362))
 — each added by the weld that created it and each carrying no story
 because that weld ADVANCED the item rather than settling it. A shelf that could only
 shrink would make every item born after the census invisible. This is the census
@@ -145,6 +148,7 @@ below).
 | **[the pacing law (lead-added)](pacing-law.md)** ✍ WRITTEN | system piece | [D-009](../record/DECISIONS.md#d-009--pacing-law) → [D-016](../record/DECISIONS.md#d-016--parallel-ready-menu) → #134 | At most Now + one parallel slot needs the founder; [P] work at Claude's discretion; stopping is a valid next step. | medium — added at composition; no teammate claimed it |
 | **[the micro-PR carve-out (lead-added)](micro-pr-carve-out.md)** ✍ WRITTEN | system piece | [D-002](../record/DECISIONS.md#d-002--handoff-note-merge-policy) → [D-023](../record/DECISIONS.md#d-023--universal-draft-pr-at-birth-and-micro-pr-carve-out) | The one merge that skips the founder: DASHBOARD/IDEAS-only, ritual-written, safe because both surfaces are derived or inbox. | medium — added at composition; no teammate claimed it |
 | **the design stack — a capability on the machine, a taste file in the repo** | system piece | [D-084](../record/DECISIONS.md#d-084--the-global-design-stack) ([#345](https://github.com/wsher0901/roam/pull/345)) | ADVANCED, not settled, on 2026-08-11: the stack is installed and verified on the WORK PC ONLY (plugin · playwright + shadcn MCP servers · a global design law · the `design-review` agent), [DESIGN](../DESIGN.md) holds Roam's taste and OVERRIDES that law one-directionally, and [LAWS](../LAWS.md#workflow-non-negotiable) gates UI diffs on the agent. Three things are still owed and each has a line: the HOME PC has no stack, the FOUNDER'S TASTE PASS has not run (direction, font pair, five references all TBD), and the third-party-skill question is open. The end-to-end path — agent driving playwright — is proven in its PARTS and not as a whole, because MCP servers bind at session start. ADVANCED 2026-08-11 ([#349](https://github.com/wsher0901/roam/pull/349)): the TASTE PASS RAN, so the stack's reserved slots are no longer all empty — a direction and a font pair are set — and the screenshot loop turned out to be GENERATIVE before it was ever used as a review instrument, rendering candidate directions so a matter of taste became a matter of looking. ADVANCED AGAIN 2026-08-12 ([#352](https://github.com/wsher0901/roam/pull/352)): the `design-review` agent gained MOTION CAPTURE — video or a trace of the opening plus one interaction, at both widths — and the finding that made it real is the one worth carrying: the duty was first written against an allowlist that could not record, so it would have degraded to stills SILENTLY while three documents claimed otherwise. The recording tools exist only under `--caps devtools`, which the registration had lacked. Still owed: the home PC (which now also owes that flag), the colour tokens, and the third-party-skill question. | high — born with the weld that adopted it |
+| **the system audit — does the machinery do what it says?** | event | [#362](https://github.com/wsher0901/roam/pull/362) | ADVANCED, not settled, on 2026-09-10: the workshop's machinery was tested against its own claims rather than read, and the founder turned the bench from audit-and-file into FIX-EVERYTHING, suspending the product-first window for one bench to do it. **The headline finding is not fixable, only sayable**: the server refuses a direct push, a red-CI merge, a force-push and a branch deletion, but it can require NO approval count while one account owns every seat, so the merge word and no-solo-approval are upheld by the record and the rituals and by nothing else — and `allowed-tools` being ADDITIVE means auto mode adjudicates `gh pr merge` outside any ritual without a prompt, as it did for [#355](https://github.com/wsher0901/roam/pull/355) and [#356](https://github.com/wsher0901/roam/pull/356) the same morning. FIXED: the permission friction at its four causes (rails now an exact cross-shell mirror at user scope); the `session-end` hook's `git add -A` sweep; the weave rule made a gate for D-numbers with 26 offenders linked; `check:vocab` wired after the hook left it half-landed. STILL OWED, each with a home: the links gate is still DESTINATION-BLIND ([ATLAS](../ATLAS.md)'s dashed box), NOTHING CHECKS THE DERIVATION LAW ([IDEAS](../IDEAS.md) §Parked), and the merge gate's platform half stays unenforceable by construction. | high — born with the weld that ran it |
 | **the product-first window — a deadline on the workshop** | system piece | [D-086](../record/DECISIONS.md#d-086--workshop-the-product-first-window) ([#355](https://github.com/wsher0901/roam/pull/355)) | ADVANCED, not settled, on 2026-09-10: the window is OPEN and expires on its own when [V1.S1](../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code) closes (T3–T7 ticked). Born from an audit of this clone — **351 merged PRs, 37 touching product code, 170 changing nothing but the board and the inbox, 5 ROADMAP ticks all on 2026-06-11/12 with 314 merges and 90 days since, 124 workshop history files against 15 product**. Five rulings: no workshop bench is born (the boundary is the SUBJECT, not a filename list); a ceremony diet on [ship](ship.md) §6/§7/§8; one batched external review for T3–T6; a PERMANENT board diet on [DASHBOARD](dashboard.md); and an inbox split on [IDEAS](ideas.md). STILL OWED: the catch-up synthesis bench at V1.S1 close, which walks every weld that deferred. Its classifier was wrong twice before it shipped — undefined, then keyed on paths touched, which excluded the very stage the window targets — and settles on the LEDGER QUADRANT. | high — born with the weld that opened it |
 
 ## Shelf IV — Roam

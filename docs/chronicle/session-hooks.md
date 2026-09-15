@@ -2,23 +2,26 @@
 type: chronicle-story
 shelf: III — the information system
 status: living
-updated: 2026-08-06 · the seat-identity step · work PC
+updated: 2026-09-10 · the safety net stops sweeping · work PC
 ---
 
 # The session hooks — the mechanics the rituals stand on
 
-> **CURRENT ENDING (2026-08-06).** Three cross-platform Node hooks,
-> 324 lines total, carrying the mechanics every ritual assumes:
+> **CURRENT ENDING (2026-09-10).** Three cross-platform Node hooks,
+> 355 lines total, carrying the mechanics every ritual assumes:
 > `session-start` (209 lines) syncs, SETS A CLOUD SEAT'S GIT
 > IDENTITY, and injects the board,
-> `session-end` (68) is the never-strand-work safety net, and
-> `user-prompt-submit` (47) is the close-lock — which now INSTRUCTS
-> rather than blocks. Their governing design rule is uniform and
-> visible in all three headers: **a hook may never block or fail a
-> session; every step degrades gracefully and always exits 0.** They
-> began as one Windows-only cmd.exe hook that was dying silently on
-> every other platform, which is the failure mode the whole class is
-> shaped against.
+> `session-end` (99) is the never-strand-work safety net — which
+> now stages TRACKED CHANGES ONLY and NAMES what it declined to
+> carry — and `user-prompt-submit` (47) is the close-lock, which
+> INSTRUCTS rather than blocks. Their governing design rule is
+> uniform and visible in all three headers: **a hook may never block
+> or fail a session; every step degrades gracefully and always exits
+> 0.** They began as one Windows-only cmd.exe hook that was dying
+> silently on every other platform, which is the failure mode the
+> whole class is shaped against — and the safety net has now been
+> caught twice doing its job too well, which is the failure mode of
+> the one hook that WRITES.
 
 ## What it is
 
@@ -131,6 +134,24 @@ was never established.
   make it install the string it exists to remove. Both guards came
   from review, not from the first draft.
 
+- **2026-09-10 ([#362](https://github.com/wsher0901/roam/pull/362))
+  — the safety net stops sweeping, caught by the branch it was
+  sweeping into.** `session-end` staged with `git add -A`, so
+  anything sitting in the tree at session close entered history
+  behind the message "wip: auto-save on session end (hook)". The
+  system-audit bench found its own branch carrying `3ed728c`, which
+  had swept in `scripts/check-vocab.mjs` and a 37-line TEMPLATE
+  edit. Both were WANTED work — and that is the point: nothing had
+  reviewed them, the message named neither, and the file was
+  HALF-FINISHED, promising an `npm run check:vocab` that did not
+  exist and a CI step that did not run, for a day. Now `git add -u`:
+  tracked changes only, with every untracked path NAMED in the
+  commit message and left on disk, and no commit at all when
+  nothing tracked changed. Proved on a scratch branch against the
+  real hook file, by transcript rather than assertion — the
+  untracked file absent from the commit, present in the message,
+  still in the tree, and never committed anywhere.
+
 
 ## Where it stands
 
@@ -151,11 +172,19 @@ exact failure the class was born from, and the design answer is not
 evidence, which is why the liveness verdict being PRINTED matters as
 much as it being computed.
 
-**The safety net needed a guard more than it needed reach.** The
-`session-end` hook's whole value is that it cannot let work be
-stranded on one machine, and its one recorded harm came from doing
-that job too faithfully — pushing a branch that had deliberately been
-deleted. A net that catches everything catches corpses too.
+**The safety net needed a guard more than it needed reach, and it
+has needed one twice.** The `session-end` hook's whole value is that
+it cannot let work be stranded on one machine, and BOTH of its
+recorded harms came from doing that job too faithfully. First it
+pushed a branch that had deliberately been deleted — a net that
+catches everything catches corpses too. Then it committed whatever
+happened to be in the tree, which is the same error pointed at
+content instead of at refs: a safety net exists to stop work being
+STRANDED, never to decide unreviewed that a stray file BELONGS. The
+repair each time was the same shape — not less reach, but a guard
+that makes the hook say what it is doing. `git add -u` plus a named
+list is the close-lock's lesson again: keep the invariant, drop the
+collateral.
 
 **The close-lock is the workshop's clearest case of a wall becoming a
 sign.** The mechanical block enforced the right invariant by making a

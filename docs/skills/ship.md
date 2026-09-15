@@ -26,6 +26,7 @@ here rather than repeating them):
 npm run check:links
 npm run check:ledger
 npm run check:memory
+npm run check:vocab
 npm run lint && npm run format:check
 npm test && npm run build
 ```

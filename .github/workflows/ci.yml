@@ -20,5 +20,6 @@ jobs:
       - run: npm run check:links
       - run: npm run check:ledger
       - run: npm run check:memory
+      - run: npm run check:vocab
       - run: npm test
       - run: npm run build
