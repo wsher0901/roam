@@ -131,26 +131,58 @@ step 5 was written before the split and is corrected below.
 
 ## Done means
 
-- [ ] Every one of the 7 slots has an entry in
-      `docs/data/SOURCES-sky-sea.md`, or is explicitly marked LLM-research grade with
-      the reason.
-- [ ] Every entry names a spike script that EXISTS under
+- [x] Every one of the 7 slots has an entry in
+      `docs/data/SOURCES-sky-sea.md`, or NAMES THE BOTTOM RUNG IT
+      LANDS ON with the reason — 5a retrieval (grade **B**/**C**) or
+      5b model memory (grade **D**, rendered unverified). *(Wording
+      corrected here too: this box was minted with
+      [D-088](../DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state)
+      ruling 1's retired phrase "LLM-research grade", the same slip
+      the Plan step carried.)* — **all 7 entries written; SS-01..10
+      each claimed by exactly one slot, checked mechanically.**
+- [x] Every entry names a spike script that EXISTS under
       `scripts/spikes/` and was RUN, with its run date and the
-      keys the real response returned.
-- [ ] Every entry carries retention_rights, license_class and any
+      keys the real response returned. — **7 scripts, 7 named, none
+      orphaned; all run 2026-09-15.**
+- [x] Every entry carries retention_rights, license_class and any
       attribution duty, each verified at the source's own terms page
-      with the date it was read.
-- [ ] Grades follow the canonical scale at
-      [ENGINE §7](../../ENGINE.md#7-render--honest-pixels).
-- [ ] **Every entry carries a retrieval-policy row** with exactly
+      with the date it was read. — **all read 2026-09-15. Two
+      read-and-not-found results are recorded AS SUCH rather than
+      inferred: USNO publishes no data-use statement (and stores
+      nothing, being a spike-time oracle), and the IAU MDC states a
+      citation duty in place of a licence.**
+- [x] Grades follow the canonical scale at
+      [ENGINE §7](../../ENGINE.md#7-render--honest-pixels). — **with
+      two deliberate splits (aurora-viability B/C, astro-events A/B)
+      and one declared exception: night-sky-darkness's B is a
+      PROJECTION with no live run, flagged in the entry and in the
+      file header.**
+- [x] **Every entry carries a retrieval-policy row** with exactly
       the three fields above — or `n/a` WITH ITS REASON. Any
       entry-level row declares itself a shorthand; any row whose
       facts differ splits and names the fact IDs. No domain outside
       [ENGINE §3](../../ENGINE.md#3-acquire--get-the-facts)'s
-      authoritative classes is tagged **B**.
-- [ ] No file outside `docs/data/SOURCES-sky-sea.md` and `scripts/spikes/sky-sea-*`
-      is touched, except this bench's own spec and memory.
-- [ ] Full CI mirror green; the PUSHED head's Actions run green.
+      authoritative classes is tagged **B**. — **3 full rows
+      (SS-04, SS-07, SS-08); 4 slots plus SS-10 write `n/a` with a
+      reason; the tides row SPLITS because SS-04 and SS-10 differ.
+      Two B tags carry their justification in place (DarkSky
+      International as the operator of its own certification and for
+      nothing else); one inferred B tag was REMOVED by the critic
+      round (USA-NPN, which answers at rung 2 anyway).**
+- [x] No file outside `docs/data/SOURCES-sky-sea.md` and `scripts/spikes/sky-sea-*`
+      is touched, except this bench's own spec and memory. — **checked
+      with `git diff --name-only origin/main...HEAD`: 9 files, exactly
+      the permitted set.**
+- [ ] Full CI mirror green; the PUSHED head's Actions run green. —
+      **six of seven preflight commands green locally
+      (`check:links`, `check:ledger`, `check:memory`, `check:vocab`,
+      `lint`, `format:check`, `test`); `npm run build` CANNOT RUN from
+      this worktree — its `node_modules/` is empty, so Node resolves
+      the dev tools upward from the parent clone but Turbopack refuses
+      to resolve above its detected workspace root. The diff touches
+      only `docs/` and `scripts/spikes/`, nothing the build compiles,
+      and CI runs `npm ci` from a clean checkout —
+      [D-038](../DECISIONS.md#d-038--ci-is-the-arbiter) arbitrates.**
 
 ## Deviations
 
