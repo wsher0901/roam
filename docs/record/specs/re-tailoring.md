@@ -5,7 +5,7 @@ title: The September re-tailoring
 status: open
 stage: V1.S1
 branch: docs/re-tailoring
-pr: TBD
+pr: #367
 opened: 2026-09-15
 ---
 # re-tailoring — eighteen rulings that re-cut the June definitions
@@ -79,7 +79,15 @@ The eighteen, in the founder's order:
   anchors of 40+ citations across
   [HOME](../../HOME.md), the chronicle, and frozen history; renaming
   them is a sweep the mandate did not order. Raised as the bench's
-  one `BLOCKED:` line. → § Deviations.
+  first `BLOCKED:` line. → § Deviations.
+- **V1's "mid-trip features" refusal and
+  [FOUNDATION](../../FOUNDATION.md)'s "pre-trip brain" sentence.**
+  Ruling 10 puts "here, now" inside V1 and ruling 7 names it as a
+  seeded demo scenario, which reads as mid-trip on any plain
+  reading. D-088 is a roadmap decision and COULD move that
+  boundary; the founder did not say to, so it was not moved by
+  inference. Both lines stand unedited — the bench's second
+  `BLOCKED:` line.
 
 ## Plan
 
@@ -184,8 +192,59 @@ The eighteen, in the founder's order:
 
 ## Deviations
 
-To be filled as they occur.
+**THE FILE FENCE WAS CROSSED TWICE, AND BOTH TIMES THE MANDATE'S
+OWN VERIFY LIST REQUIRED IT.** The mandate named six files and said
+"nothing else"; two of its VERIFY conditions could not be met
+inside that fence.
+
+- **`docs/HOME.md` — four lines.** VERIFY demanded
+  `grep "five families" → 0 outside record/ and chronicle/`, and
+  HOME is neither. Two "five families" lines became six, and the
+  family-ID list and its Sources block learned `F-CO`. Nothing else
+  in HOME was touched.
+- **`docs/chronicle/roadmap.md` — one line.** Ruling 8 ordered
+  [V1.S7](../../ROADMAP.md#v1s7--the-other-four-families-plug-in-proof)
+  retitled, and that slug is cited once from the chronicle.
+  `check:links` walks all 360 md files, frozen record included, so
+  the rename REQUIRED the repair or the branch ships red. The row's
+  count column moved 3 → 4 with it.
+
+**Two consequences were DERIVED rather than dictated**, and both
+are written into D-088 rather than left implicit:
+
+- **[V1.S1.T7](../../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
+  became `[seq after T1–T6 and T8]`.** The mandate said T7
+  consolidates FIVE `SOURCES-<family>.md` files; the fifth is T8's
+  output, so T7 cannot precede T8. T1–T6 stayed in the tag because
+  [D-087](../DECISIONS.md#d-087--product-the-model-boundary-and-three-plan-corrections)
+  ruled that naming any dependency means naming all of them. T8's
+  line gained `-> docs/data/SOURCES-cost.md` for the same reason:
+  "five files" is only true if T8 writes one.
+- **The `weather-alerts` slot has NO rung 5b.** Its existing rule
+  forbids a fabricated all-clear; under the new ladder a REMEMBERED
+  all-clear is exactly that, so refusal (rung 6) outranks memory in
+  that one slot. Stated in its retrieval policy.
+
+**Ruling 13's "noted there by link" was read as Appendix A, not as
+the DECISIONS entries.**
+[FACTS Appendix A](../../data/FACTS.md#appendix-a--traveler-parameters-tp-0147--per-d-011--d-012)
+IS "D-011/D-012's table", and the log's own law — ruled at
+[#193](https://github.com/wsher0901/roam/pull/193) — is that
+amendments live in new entries while the amended entry stays
+unannotated. The note went into Appendix A; D-011 and D-012 were
+not touched.
+
+**`F-CC-07`'s heading was renamed** from "Trending signal (general,
+non-SNS)" to "Trending signal (computed)". Not ordered, but ruling
+9 makes "non-SNS" false — the signal now reads YouTube and Reddit
+APIs — and the old slug was cited from ONE place, inside FACTS
+itself. A rename with no external citation is free; the four
+headings in § Out of scope are not.
 
 ## Open questions
 
-Raised as the bench's `BLOCKED:` line, not resolved here.
+Two, both raised as `BLOCKED:` lines on
+[#367](https://github.com/wsher0901/roam/pull/367) with the answer
+format wanted, neither resolved here: the count-bearing headings
+(`freeze` · `sweep now` · `sweep later`) and the mid-trip
+collision (`strike it` · `narrow it` · `leave it`).
