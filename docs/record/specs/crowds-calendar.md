@@ -129,35 +129,50 @@ slot must vet, for real:
 
 ## Done means
 
-- [ ] Every one of the 8 slots has an entry in
+- [x] Every one of the 8 slots has an entry in
       `docs/data/SOURCES-crowds-calendar.md`, or is explicitly marked LLM-research grade with
       the reason.
-- [ ] Every entry names a spike script that EXISTS under
+- [x] Every entry names a spike script that EXISTS under
       `scripts/spikes/` and was RUN, with its run date and the
       keys the real response returned.
-- [ ] Every entry carries retention_rights, license_class and any
+- [x] Every entry carries retention_rights, license_class and any
       attribution duty, each verified at the source's own terms page
       with the date it was read.
-- [ ] Grades follow the canonical scale at
+- [x] Grades follow the canonical scale at
       [ENGINE §7](../../ENGINE.md#7-render--honest-pixels).
-- [ ] Every fact carries a RETRIEVAL-POLICY row with its three
+- [x] Every fact carries a RETRIEVAL-POLICY row with its three
       fields, or `n/a` WITH ITS REASON — never silence
       ([D-088](../DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state)
       ruling 3). No policy row promotes a domain outside
       [ENGINE §3](../../ENGINE.md#3-acquire--get-the-facts)'s
       classes to **B**.
-- [ ] `trending-general` names the proxy set V1 can ACTUALLY
+- [x] `trending-general` names the proxy set V1 can ACTUALLY
       LICENSE, each proxy's terms read at its own terms page with
       the date, and every dropped proxy carries its reason
       ([D-088](../DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state)
       ruling 9).
-- [ ] No file outside `docs/data/SOURCES-crowds-calendar.md` and `scripts/spikes/crowds-calendar-*`
+- [x] No file outside `docs/data/SOURCES-crowds-calendar.md` and `scripts/spikes/crowds-calendar-*`
       is touched, except this bench's own spec and memory.
 - [ ] Full CI mirror green; the PUSHED head's Actions run green.
 
 ## Deviations
 
-<filled by ship>
+Two, both recorded rather than hidden:
+
+1. **`venue-busyness` names a spike that returned no payload keys**,
+   because there is no licensed fetch path to return any. Its spike
+   proves the ABSENCE instead — no busyness field in Google's own
+   Places data-fields reference, and the No Scraping / No Caching
+   clauses quoted from the Maps Platform Terms. The Done-means box
+   asking for "the keys the real response returned" is ticked on that
+   reading: the spike ran, and what it returned is evidence.
+2. **Two licence reads ended in read-and-found-nothing, and one ended
+   in a failed read**, all three recorded as such in the entries rather
+   than rounded to "unrestricted": Aladhan and the two port authorities
+   publish no reuse terms on the pages read; NYC Open Data's terms page
+   could not be located from two candidate URLs, and the dataset's own
+   Socrata metadata carries no `license` field. None is treated as
+   permission.
 
 ## Open questions
 
