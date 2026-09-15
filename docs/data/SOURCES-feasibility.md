@@ -117,11 +117,16 @@ checked the PAYLOAD, never the status code.
   identifying User-Agent and forbids bulk geocoding on the public
   instance; Wikidata asks the same courtesy.
 - retention_rights: **store-raw** (all three). license_class:
-  Nominatim **ODbL 1.0**; Wikidata **CC0**; Open-Meteo elevation
-  **CC-BY-4.0** (Copernicus). Attribution: "© OpenStreetMap
-  contributors" — returned in the payload's own `licence` field and
-  verified there on 2026-09-15; Copernicus/Open-Meteo for elevation;
-  Wikidata requires none.
+  Nominatim **ODbL 1.0**; Wikidata **CC0**, verified 2026-09-15 at
+  wikidata.org/wiki/Wikidata:Licensing — *"All structured data in the
+  main, property and lexeme namespaces is made available under the
+  Creative Commons CC0 License"*; Open-Meteo elevation **CC-BY-4.0**
+  (Copernicus), carried over from
+  [SOURCES §weather-forecast](SOURCES.md#weather-forecast)'s read of
+  2026-09-11. Attribution: "© OpenStreetMap contributors" — returned
+  in the payload's own `licence` field and verified there 2026-09-15;
+  Copernicus/Open-Meteo for elevation; **Wikidata requires none**, CC0
+  being a public-domain dedication.
 - **Retrieval policy** — SHORTHAND, and it declares itself: this slot
   serves one fact, but only FOUR OF ITS FIELDS reach rung 5a, so the
   row governs those four and nothing else.
@@ -690,9 +695,16 @@ checked the PAYLOAD, never the status code.
   rather than B.
 - Cost: free (World Bank, Eurostat). Nothing is bought.
 - retention_rights: **store-raw** for the indices; the bands are ours.
-  license_class: World Bank **CC-BY-4.0**; Eurostat **CC-BY-4.0**;
-  curated bands are repo-licensed. Attribution: World Bank and
-  Eurostat on any rendered index-derived figure.
+  license_class: **ATTRIBUTION-REQUIRED, EXACT LICENCE UNCONFIRMED.**
+  The World Bank's Terms of Use for Datasets were read 2026-09-15 and
+  DO require attribution naming "the relevant member institution(s)"
+  and "any third party content providers", but the page read did not
+  state a CC-BY designation, so this entry does not claim one — it is
+  recorded as attribution-required and licence-to-confirm, and a
+  terms read is a precondition of shipping any rendered figure derived
+  from it. Eurostat is unread and carries the same note. Curated bands
+  are repo-licensed. Attribution: World Bank, and Eurostat if it is
+  ever used, on any rendered index-derived figure.
 - **Retrieval policy** — the row SPLITS, because two of this fact's
   fields behave differently from the rest:
   - `tourist_city_fees` and `tipping_norm` —
@@ -1124,9 +1136,16 @@ checked the PAYLOAD, never the status code.
   wants. That asymmetry is the slot's honest weakness: the proxy is
   most confident where it is least needed.
 - Cost: free, no key.
-- retention_rights: **store-raw**. license_class: Wikimedia REST
-  metrics are **CC0** (the pageview counts; article TEXT is CC-BY-SA
-  and is not used here). Attribution: courtesy credit to Wikimedia.
+- retention_rights: **store-raw**. license_class: **UNCONFIRMED, and
+  said so.** Wikimedia's Terms of Use were read 2026-09-15; they
+  license CONTRIBUTED CONTENT under CC BY-SA and say nothing about
+  analytics or metrics endpoints, so the common claim that pageview
+  counts are CC0 is NOT established by the document this bench read.
+  What IS used here is counts, not article text — article text is
+  CC-BY-SA and is not stored. Recorded as licence-to-confirm before
+  any pageview-derived figure is rendered to a traveller; the
+  fame_level CLASS we compute from it is our own derivative either
+  way. Attribution: courtesy credit to Wikimedia.
 - **Retrieval policy** — SHORTHAND, declaring itself: one fact, one
   row. It governs `momentum` and the corroboration of `fame_level`;
   the pageview series itself is fetched, not retrieved, and
