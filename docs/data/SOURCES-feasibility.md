@@ -627,11 +627,18 @@ checked the PAYLOAD, never the status code.
   does not update at weekends, so `as_of_date` legitimately lags the
   calendar by up to three days and MUST be rendered, not hidden.
 - Cost: free, no key, no registration.
-- retention_rights: **store-raw**. license_class: ECB reference rates
-  are published for free re-use with attribution (verified 2026-09-15
-  at the eurofxref feed and the ECB's re-use notice). Attribution:
-  "Source: European Central Bank". frankfurter.app adds none of its
-  own.
+- retention_rights: **store-raw**. license_class: free re-use with
+  citation, verified 2026-09-15 at the ECB's Disclaimer & Copyright
+  page — *"When such information is distributed or reproduced, it must
+  appear accurately and the ECB must be cited as the source."*
+  Attribution: "Source: European Central Bank".
+  **AND A SECOND DUTY THAT BITES HERE:** the same notice requires an
+  explicit statement where data has been MODIFIED — and every rate
+  this slot serves except EUR-based ones IS modified, because it is a
+  cross-rate we computed through EUR rather than a figure the ECB
+  published. So a rendered non-EUR rate carries "derived from ECB
+  reference rates" rather than "ECB rate", and the receipt says which.
+  frankfurter.app adds no licence terms of its own on top.
 - **Retrieval policy:** `n/a` — one fact, answered at rung 1 by a
   central bank, and a retrieved exchange rate would be strictly worse
   than the published one. For currencies OUTSIDE the ECB set the
