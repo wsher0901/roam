@@ -47,9 +47,12 @@ console.log(
   "  notable countries ABSENT from the Nager index:",
   NOTABLE.filter((c) => !nagerCodes.has(c)).join(",") || "none",
 );
-console.log("Nager keys:", Object.keys(
-  (await json(`https://date.nager.at/api/v3/PublicHolidays/${YEAR}/DE`))[0],
-).join(", "));
+console.log(
+  "Nager keys:",
+  Object.keys(
+    (await json(`https://date.nager.at/api/v3/PublicHolidays/${YEAR}/DE`))[0],
+  ).join(", "),
+);
 
 console.log("\n=== OpenHolidays API (openholidaysapi.org) ===");
 const ohCountries = await json(

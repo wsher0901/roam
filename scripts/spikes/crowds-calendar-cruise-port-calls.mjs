@@ -43,18 +43,24 @@ const cellText = (c) =>
 
 console.log("=== 1. Port of Dubrovnik (Lučka uprava Dubrovnik) ===");
 const page = await (
-  await fetch("https://www.portdubrovnik.hr/index.php/hr/promet/najave-dolazaka", {
-    headers: UA,
-  })
+  await fetch(
+    "https://www.portdubrovnik.hr/index.php/hr/promet/najave-dolazaka",
+    {
+      headers: UA,
+    },
+  )
 ).text();
-const links = [
-  ...page.matchAll(/href="([^"]+\.(?:xlsx|pdf|csv))"/gi),
-].map((m) => m[1]);
+const links = [...page.matchAll(/href="([^"]+\.(?:xlsx|pdf|csv))"/gi)].map(
+  (m) => m[1],
+);
 console.log("  published files linked on the port's own page:");
 for (const l of [...new Set(links)]) console.log("   ", l);
 
 const xlsxLink = [...new Set(links)].find((l) => /2026.*\.xlsx$/i.test(l));
-console.log("\n  fetching the 2026 schedule:", xlsxLink ? "found" : "NOT FOUND");
+console.log(
+  "\n  fetching the 2026 schedule:",
+  xlsxLink ? "found" : "NOT FOUND",
+);
 if (xlsxLink) {
   const res = await fetch(encodeURI(xlsxLink), { headers: UA });
   const buf = Buffer.from(await res.arrayBuffer());
@@ -102,7 +108,6 @@ if (xlsxLink) {
   );
 }
 
-
 console.log("\n=== 2. Port of Kiel ===");
 const kiel = await fetch(
   "https://www.portofkiel.com/files/pok/Downloads/Kreuzfahrerlisten/Kreuzfahrtliste.pdf",
@@ -126,7 +131,8 @@ const cmp = await fetch(
 const cmpText = await cmp.text();
 console.log(
   `  HTTP ${cmp.status} · downloadable schedule files on the page: ` +
-    ([...cmpText.matchAll(/href="([^"]+\.(?:xlsx|pdf|csv))"/gi)].length || "NONE"),
+    ([...cmpText.matchAll(/href="([^"]+\.(?:xlsx|pdf|csv))"/gi)].length ||
+      "NONE"),
 );
 console.log(
   "  VERDICT: a major cruise port with no published machine-readable call" +

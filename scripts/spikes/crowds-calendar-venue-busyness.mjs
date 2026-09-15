@@ -41,9 +41,7 @@ for (const needle of [
   "currentOpeningHours",
 ]) {
   const i = fields.toLowerCase().indexOf(needle.toLowerCase());
-  console.log(
-    `   "${needle}": ${i < 0 ? "NOT PRESENT" : "present @" + i}`,
-  );
+  console.log(`   "${needle}": ${i < 0 ? "NOT PRESENT" : "present @" + i}`);
 }
 console.log(
   "  VERDICT: opening hours are a field; busyness is not. Popular Times is a" +
@@ -52,9 +50,12 @@ console.log(
 );
 
 console.log("\n=== 2. What the Maps Platform Terms say about taking it ===");
-const termsRes = await fetch("https://cloud.google.com/maps-platform/terms?hl=en", {
-  headers: UA,
-});
+const termsRes = await fetch(
+  "https://cloud.google.com/maps-platform/terms?hl=en",
+  {
+    headers: UA,
+  },
+);
 const terms = plain(await termsRes.text());
 console.log(`  terms page: HTTP ${termsRes.status}`);
 for (const needle of ["No Scraping", "No Caching"]) {

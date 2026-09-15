@@ -72,7 +72,9 @@ if (wd.status === 200) {
   );
 }
 
-console.log("\n=== 4. Municipal open data — NYC permitted events (Socrata) ===");
+console.log(
+  "\n=== 4. Municipal open data — NYC permitted events (Socrata) ===",
+);
 const nyc = await probe(
   "nyc",
   "https://data.cityofnewyork.us/resource/tvpp-9vvx.json?$limit=200",
