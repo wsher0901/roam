@@ -38,6 +38,16 @@ of day. The engine re-validates whatever it is handed and returns it
 as version 1 with receipts, which is the same pass, entered later.
 IT IS AN ENTRY, NOT A MODE: nothing about the engine changes, and
 the conversation still flows into Suggest, Plan and Edit from there.
+
+**And it is still pre-trip, which is the whole boundary.** "Here,
+now" plans FROM the present moment — tonight, tomorrow, the day
+ahead for a traveler already at the destination — and is still
+PLANNING AHEAD OF THE PLAN. It does NOT bring mid-trip operations
+into V1: no live tracking, no notifications, no in-the-moment
+steering during an activity. Those remain the MID-TRIP COMPANION,
+V2+. Roam composes a plan the traveler has not executed yet,
+whether that plan covers October or the next four hours; it does
+not watch one they are inside.
 → [V1.S6.T4](ROADMAP.md#v1s6--edit--revalidate-the-money-moment) ·
 [D-088](record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state)
 

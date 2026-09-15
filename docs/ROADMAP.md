@@ -201,7 +201,8 @@ streamed verdicts, and any version reverts in one click.
 - [ ] V1.S6.T4 [seq after T1] Import & check — paste or upload an
       existing plan,
       or a place and now; the engine re-validates it as version 1
-      with receipts. The fourth level of certainty
+      with receipts (no live tracking or notifications). The fourth
+      level of certainty
       ([FOUNDATION §The spine](FOUNDATION.md#the-spine)) — an entry,
       not a mode · [D-088](record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state)
 

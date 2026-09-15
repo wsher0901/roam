@@ -5118,6 +5118,18 @@ nothing about the engine changes.
 T4: paste or upload an existing plan, or a place and now, and the
 engine re-validates it as version 1 with receipts.
 
+**AND THE BOUNDARY IS NAMED, because "now" and "mid-trip" are not
+the same thing and V1 still refuses the second.** "Here, now" plans
+FROM the present moment — tonight, tomorrow, the day ahead for a
+traveler already at the destination — and is still PLANNING AHEAD
+OF THE PLAN. It does NOT bring mid-trip operations into V1: no live
+tracking, no notifications, no in-the-moment steering during an
+activity. Those remain the MID-TRIP COMPANION, V2+. The test is
+whether Roam is composing a plan the traveler has not executed yet
+— which it is, whether the plan covers October or the next four
+hours — or watching one they are inside. V1 does the first from any
+starting point, and none of the second.
+
 **RULING 11 — TIPS AND DRESS CODE.**
 [FACTS](../data/FACTS.md) gains
 [F-FE-15](../data/FACTS.md#f-fe-15--money-saving-tips-) — money-saving

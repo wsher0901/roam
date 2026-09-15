@@ -20,6 +20,18 @@ HONEST RANGE everywhere else, never a scraped price.
 ## How to read this file
 Manual: [HOME §Reading the data files](../HOME.md#reading-the-data-files).
 
+**Headings never carry counts from here on.** The four that still do
+— the family headings, [Appendix A](#appendix-a--traveler-parameters-tp-0147--per-d-011--d-012)
+and the [assignment map](#t2t6-assignment-map) — minted their
+numbers before this rule and cannot be corrected, because a heading
+IS its anchor and one of them alone carries 47 inbound links,
+several from frozen record files that may not be edited. A count in
+an anchor is a derived value welded into an identifier: the
+derivation law forbids the literal, and the anchor forbids the fix.
+So the rule is prospective — new headings carry no counts, and a
+stale one carries the line above instead
+([D-088](../record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state)).
+
 **Reading a rung-5 fact.** A "→ ladder" scope note means the fact
 falls down [ENGINE §3](../ENGINE.md#3-acquire--get-the-facts)'s
 ladder when its upper rungs miss. Since
@@ -259,6 +271,9 @@ Water-safety advisories ride with the safety-advisories Later socket.
 - Type: computed. Source slot: tides.
 
 ## F-FE — Feasibility (14) — source task V1.S1.T4
+The count in this heading is historical — it is an anchor and
+cannot change; the live count is derived from the entries below.
+
 Socket notes: visa/entry rules, safety advisories and venue
 accessibility data = Later sockets. REAL PRICES ARE NO LONGER ONE
 of them — [D-088](../record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state) made cost the sixth family
@@ -697,9 +712,9 @@ transacts. Socket note: in-app booking and fare purchase remain
   [CO-02](#f-co-02--lodging-rates-quote-or-range-), [FE-07](#f-fe-07--cost-estimate-bands) and [FE-14](#f-fe-14--currency-exchange-rates).
 
 ## T2–T6 assignment map
-The heading is kept for its anchor; since [D-088](../record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state) the map
-SPANS T2–T6 AND T8 — the Cost family arrived after the heading was
-minted.
+The count in this heading is historical — it is an anchor and
+cannot change; the live span is derived from the entries below,
+which run T2–T6 AND T8.
 - [V1.S1.T2](../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code) (Weather): [WX-01..14](#f-wx--weather-14--source-task-v1s1t2) → slots weather-forecast,
   weather-alerts, snow-conditions, weather-climatology,
   weather-seasonal-risk, activity-profiles.
@@ -731,6 +746,9 @@ PRIMARY selection criteria: caching-prohibited sources disqualify a
 slot from the asset layer ([D-015](../record/DECISIONS.md#d-015--data-asset-law)).
 
 ## Appendix A — Traveler parameters (TP-01..47) — per D-011 + D-012
+The count in this heading is historical — it is an anchor and
+cannot change; the live count is derived from the entries below.
+
 The floor: origin + dates always suffices. Dates carry: start, end,
 flexibility {fixed | ±N days | open window ("October")}, optional
 boundary times (earliest departure / latest return). When flexibility

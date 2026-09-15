@@ -1,7 +1,7 @@
 ---
 type: memory
 id: re-tailoring
-updated: 2026-09-15 · critic round answered · control tower (home PC)
+updated: 2026-09-15 · founder's answers applied · control tower (home PC)
 ---
 # re-tailoring — the September re-tailoring
 
@@ -10,10 +10,11 @@ updated: 2026-09-15 · critic round answered · control tower (home PC)
 complete, awaiting merge — 2026-09-15. All eighteen rulings applied,
 `D-088` appended, entry and ripple in ONE commit (`2f70a56`). The
 critic round ran and returned sixteen findings; all sixteen are
-answered and the fixes are pushed. CI green on the pushed head. Two `BLOCKED:` lines are open on
-[#367](https://github.com/wsher0901/roam/pull/367) and neither blocks
-the diff. At THE GATE. DO NOT MERGE —
-the founder's word is "review" on the Web surface.
+answered. The founder reviewed `841b8e5` — PASS, zero findings — and
+answered both `BLOCKED:` lines: **Q1 FREEZE**, **Q2 NARROW**. Both
+are applied, so the payload moved and the review re-issues per sha.
+At THE GATE. DO NOT MERGE — the founder's word is "review" on the
+Web surface.
 
 ## What this task is
 
@@ -38,28 +39,8 @@ No ROADMAP tick.
 
 ## Pending issues
 
-Two `BLOCKED:` lines, both raised as scope calls rather than
-guesses, both answerable in one word:
-
-1. **Four [FACTS](../data/FACTS.md) headings carry counts inside
-   their slugs** — `F-FE — Feasibility (14)` (now 16), `Appendix A
-   — Traveler parameters (TP-01..47)` (now 49), `T2–T6 assignment
-   map` (now spans T8), and `F-CC — Crowds & calendar (8)` (still
-   8, listed as the fourth of the class). Renaming them would break
-   40+ citations across [HOME](../HOME.md), the chronicle and
-   frozen history. Left frozen; the live numbers are written into
-   the bodies instead. Answer wanted: `freeze` · `sweep now` ·
-   `sweep later`.
-2. **Ruling 10 collides with V1's standing "mid-trip features"
-   refusal.** "Here, now" ships in V1 as
-   [V1.S6.T4](../ROADMAP.md#v1s6--edit--revalidate-the-money-moment)
-   and as a named demo scenario, while
-   [ROADMAP §V1](../ROADMAP.md#v1--the-demo--active) still refuses
-   mid-trip features and [FOUNDATION](../FOUNDATION.md) still calls
-   Roam the pre-trip brain. D-088 is a roadmap decision and COULD
-   move that boundary — the founder did not say to, so it was not
-   moved by inference. Answer wanted: `strike it` · `narrow it` ·
-   `leave it`.
+none. Both `BLOCKED:` lines are answered and applied — see the
+story's last entry.
 
 ## Left / idle
 
@@ -175,6 +156,54 @@ reading, so the table was re-derived whole (39 / 5) and the story
 under it now says "34 when this was written" instead of "34 today"
 — the paragraph is a lecture about literals never re-checked, and it
 had become its own example.
+
+**2026-09-15 · the founder's answers, and what they settled.**
+Review of `841b8e5` came back PASS with zero findings, and both
+`BLOCKED:` lines were answered. Both changed the payload, so the
+review re-issues against the new sha.
+
+**Q1 → FREEZE, and it minted a small standing rule.** The four
+count-bearing [FACTS](../data/FACTS.md) headings keep their text;
+one of them alone carries 47 inbound links, several from frozen
+record files that may not be edited. Each STALE one now carries a
+line saying so —
+[F-FE (14)](../data/FACTS.md#f-fe--feasibility-14--source-task-v1s1t4)
+holding 16,
+[Appendix A (TP-01..47)](../data/FACTS.md#appendix-a--traveler-parameters-tp-0147--per-d-011--d-012)
+holding 49, and the
+[T2–T6 assignment map](../data/FACTS.md#t2t6-assignment-map) now
+spanning T8.
+[F-CC (8)](../data/FACTS.md#f-cc--crowds--calendar-8--source-task-v1s1t6)
+got NO line, because its count is still correct and the founder's
+instruction was "under each STALE heading" — it joins the class the
+moment CC gains a fact.
+
+The rule behind it went into
+[FACTS § How to read this file](../data/FACTS.md#how-to-read-this-file):
+**headings never carry counts from here on.** Worth keeping because
+of WHY it exists — a count inside an anchor is a derived value
+welded into an identifier, so the derivation law forbids the literal
+and the anchor forbids the fix. The only escape is to never create
+one, which is why the rule is prospective rather than a repair.
+
+**Q2 → NARROW, and the boundary is a test rather than a list.**
+"Here, now" plans FROM the present moment — tonight, tomorrow, the
+day ahead for a traveler already at the destination — and is still
+planning ahead of the plan. It does NOT bring mid-trip operations
+into V1: no live tracking, no notifications, no in-the-moment
+steering during an activity; those stay the mid-trip companion,
+V2+. The sentence landed in D-088's ruling 10, in
+[FOUNDATION §The spine](../FOUNDATION.md#the-spine), and as one
+clause on
+[V1.S6.T4](../ROADMAP.md#v1s6--edit--revalidate-the-money-moment).
+
+The distinction is sharper than "before vs during the trip", which
+was what made it look like a contradiction in the first place: the
+line is whether Roam is COMPOSING a plan not yet executed — which
+it is, whether the plan covers October or the next four hours — or
+WATCHING one the traveler is inside. V1 does the first from any
+starting point and none of the second, so the standing "mid-trip
+features" refusal stands unedited and always did.
 
 ## Where to look
 
