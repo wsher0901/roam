@@ -1,16 +1,13 @@
 ## Open
 
-- ⏳ When the check contract is born, rule the EVAL-SET GATE by
-  D-number: a ~50-trip golden set with hand-checked ground truth,
-  its calibration read before [V1.S4](ROADMAP.md#v1s4--suggest)
-  opens. Fills OPEN-9. (2026-07-28, the founder + the external
-  reviewer) → [ENGINE](ENGINE.md#12-open-register)
-
-- ⏳ Rule the LLM-BOUNDARY RULE by D-number in the same decide:
-  the LLM resolves language at Intake and phrases at Render, and
-  never originates a fact, a score, or a rank. A new
-  open-register slot. (2026-07-28, the founder + the external
-  reviewer) → [ENGINE](ENGINE.md#12-open-register)
+- ⏳ V1.S2.T5 rider — the shell renders Geist today while
+  [DESIGN §Typography](DESIGN.md#typography) ratifies Archivo +
+  Public Sans, and next/font's swap fallback is metric-adjusted
+  Arial, a banned default;
+  [V1.S2.T5](ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)
+  resolves both when it owns type. (2026-09-11, holding-page review,
+  [#365](https://github.com/wsher0901/roam/pull/365)) →
+  [DESIGN §Typography](DESIGN.md#typography)
 
 - ⏳ Give [ENGINE](ENGINE.md) the right frontmatter — it reads
   `type: spec` though it is a living consolidation. The founder's
@@ -52,6 +49,20 @@ when [V1.S1](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-
 closes. A line here that a product bench genuinely needs in order to
 proceed rides that bench as a recorded deviation (ruling 1's
 exception) — it is not lifted back for its own sake.
+
+- ⏳ NOTHING CHECKS THE DERIVATION LAW — derived values (counts,
+  totals, statuses) must be computed from source at render time,
+  and no gate verifies that any of them were. Every asserted count
+  in the corpus is correct TODAY — census 66/70, HOME thirteen
+  sections, board needs-you 1, RECENT 5, ledger 141↔141 — but the
+  system audit established that BY HAND, so the law holds by
+  diligence and would keep holding right up until it quietly
+  didn't. A real gate needs each literal to declare what it derives
+  FROM; inventing that notation is a bench, not a rider, which is
+  why this is parked rather than fixed.
+  (2026-09-10, the system audit —
+  [#362](https://github.com/wsher0901/roam/pull/362)) →
+  [LAWS §Knowledge & tracking](LAWS.md#knowledge--tracking)
 
 - ⏳ The gh api write denies (settings.json, PR #355) retire the
   cockpit's R2(b) rung for WRITE acts — open a PR, apply a label,
@@ -710,6 +721,8 @@ exception) — it is not lifted back for its own sake.
 The outcome ledger — one line each, newest first. A closed idea
 keeps its answer, never its narrative.
 
+- 🟢 THE EVAL-SET GATE IS RULED — it is an [ENGINE §11](ENGINE.md#11-invariants--the-reliability-law) invariant now ("any in-scope input is handled — measured against the eval set V1.S3.T6 owns") rather than a slot waiting on the check contract, and [V1.S3.T6](ROADMAP.md#v1s3--engine-core--two-families-deep) owns the set itself. OPEN-9 is marked CLOSED in place, its number kept so every inline reference still resolves. → [D-087](record/DECISIONS.md#d-087--product-the-model-boundary-and-three-plan-corrections)
+- 🟢 THE LLM-BOUNDARY RULE IS RULED, AND IT IS WIDER THAN THE LINE ASKED — not a new open-register slot but an [ENGINE §11](ENGINE.md#11-invariants--the-reliability-law) invariant: the model structures at Intake, phrases at Render, and may PROPOSE candidates that Acquire verifies; it never produces a fact, a score, a confidence, a grade or a source, every model output entering a stage is schema-validated, and a model's own world claim lives only at ladder rung 5, labeled, never reaching Judge or Aggregate. → [D-087](record/DECISIONS.md#d-087--product-the-model-boundary-and-three-plan-corrections)
 - 🟢 DECIDE HEADINGS ARE TAGGED — every new decide heading opens with `[product]` or `[workshop]`, forward-only, no past heading touched because a heading is frozen at mint. Ruled at the next product decide exactly as the line asked, and [D-086](record/DECISIONS.md#d-086--workshop-the-product-first-window) is the first heading to carry a tag. → [D-086](record/DECISIONS.md#d-086--workshop-the-product-first-window)
 - 🟢 THE DESIGN-REVIEW GATE HAS MOTION EYES — for motion-intensive surfaces it now records VIDEO or a TRACE of the opening moment plus one interaction, at 375 and 1440, attached to the findings; stills stay the composition check, and a session that cannot capture says so and marks every timing question UNVERIFIED. Built, not filed — and the capability was the hard half: the recording tools exist ONLY when the playwright MCP is registered with `--caps devtools`, which the first draft of this work did not do, so the duty would have degraded silently to stills. The registration now carries it, the agent's allowlist names the recording tools, and all fourteen tools it names were checked against the live server. Duty and capability both live in [machine-setup step 12](skills/machine-setup.md#one-time-per-machine); the work PC's copy was rewritten from that master and proven identical by extraction and diff. → [#352](https://github.com/wsher0901/roam/pull/352)
 - 🟢 THE TASTE PASS RAN AND THE DIRECTION IS NAMED — `place-first`: the plan lives on a living map, place is the ground, provenance pins to place. Chosen from a LIVE probe after a first round of static candidates was rejected for varying the typeface inside one metaphor; the pair (Archivo · Public Sans · JetBrains Mono) is ratified as worn, two reference slots are seeded by the picked probe, and the COLOUR TOKENS plus three slots stay reserved and unruled. → [DESIGN](DESIGN.md) · [#349](https://github.com/wsher0901/roam/pull/349)
@@ -782,7 +795,8 @@ keeps its answer, never its narrative.
 - 🟢 Shorten the decide-anchor links — done as THE SHORT-ANCHOR
   LAW: headings carry a short name (8 words max), the full
   statement moves to an `In full:` line, anchors freeze at mint;
-  D-001–D-067 retrofitted. (2026-07-24 → closed 2026-07-31) →
+  [D-001](record/DECISIONS.md#d-001--tech-stack)–[D-067](record/DECISIONS.md#d-067--the-report-skeleton-and-the-board-diet)
+  retrofitted. (2026-07-24 → closed 2026-07-31) →
   [#253](https://github.com/wsher0901/roam/pull/253)
 - 🟢 The ritual report sweep — every founder-facing report now
   renders one skeleton (verdict · your act · off-origin · context
@@ -823,7 +837,9 @@ keeps its answer, never its narrative.
   [D-055](record/DECISIONS.md#d-055--agent-teams-the-boundary)
 - ⚪ Keeping the console-attach launcher as a script — DECLINED
   (retired): the blind fire captures nothing, so there is no
-  output to read; D-051 deletes the component rather than
+  output to read;
+  [D-051](record/DECISIONS.md#d-051--self-seat-birth) deletes the
+  component rather than
   maintaining it, and names keeping-it-as-a-fallback among its
   rejected options. Asked 2026-07-22. →
   [D-051](record/DECISIONS.md#d-051--self-seat-birth)

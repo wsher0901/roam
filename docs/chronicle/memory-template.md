@@ -2,12 +2,12 @@
 type: chronicle-story
 shelf: III — the information system
 status: living
-updated: 2026-08-06 · written · cloud lane
+updated: 2026-09-10 · the table now obeys its own checker · work PC
 ---
 
 # The memory TEMPLATE and the Status vocabulary
 
-> **CURRENT ENDING (2026-08-06).** One home for the locked format —
+> **CURRENT ENDING (2026-09-10).** One home for the locked format —
 > [`docs/memory/TEMPLATE.md`](../memory/TEMPLATE.md) — and it is
 > mechanically enforced on every CI run by
 > [`scripts/check-memory.mjs`](../../scripts/check-memory.mjs), 171
@@ -24,6 +24,13 @@ updated: 2026-08-06 · written · cloud lane
 > that the gate checks SHAPE, never TRUTH:** a well-formed Status
 > that lies passes green, and what defends the meaning is the
 > wake-lock, not this checker.
+>
+> **And since 2026-09-10 a SECOND gate checks the TABLE ITSELF.**
+> `npm run check:vocab` fills each row's placeholders, writes a
+> throwaway memory carrying that Status, and asks `check:memory`
+> whether the row AS WRITTEN would pass — because a row without a
+> date slot is a trap that fails a lane for obeying the table. 14
+> rows checked, 1 exempt, 0 failing.
 
 ## What it is
 
@@ -119,11 +126,40 @@ on what a bench's state MEANS without any of them asking a person.
   the sitting, their transcripts die with them, and this is
   therefore the one field git cannot re-derive.
 
+- **2026-09-10 ([#362](https://github.com/wsher0901/roam/pull/362))
+  — THE TABLE MUST NOW OBEY ITS OWN CHECKER.** `check:memory`
+  demands a `YYYY-MM-DD` stamp in every Status body, so any row
+  offering no date slot was a TRAP: a lane copying it VERBATIM went
+  red for doing exactly what the table said. That had already
+  happened twice on 2026-08-04, to flight 2's lanes A and B
+  independently, and was filed naming TWO rows. **The system audit
+  found FIVE** — `bench ready`, `blocked`, `cloud spawn failed`,
+  `superseded` and `held` — and the fifth is the lesson: four were
+  reached by reasoning and `held` was found only by a MECHANICAL
+  WALK of every row. All five now carry a slot, and the walk became
+  `npm run check:vocab`, a CI gate that fills each row's
+  placeholders and asks `check:memory` whether the row as written
+  would pass. `shipped — merged #N` is the one exemption, named so
+  the asymmetry reads as deliberate: it is written by
+  [ship](../skills/ship.md#7--on-approval--the-atomic-weld)'s weld at
+  the instant the memory LEAVES `docs/memory/`, so `check:memory`
+  never sees it.
+
+  **The gate then had to be finished twice.** Its script and the
+  TEMPLATE edit reached the branch through a `session-end` hook
+  sweep rather than a considered commit, carrying neither an npm
+  script nor a CI step — so for a day the TEMPLATE told readers to
+  run a command that did not exist, and the gate guarded nothing.
+  Wired in the same bench that fixed the hook.
+
 ## Where it stands
 
-Live and enforced. `npm run check:memory` passes on this branch, and
-the vocabulary carries 14 states at write time — both derived here
-rather than quoted.
+Live and enforced by TWO gates. `npm run check:memory` passes on
+this branch, `npm run check:vocab` reports 14 Status rows checked
+with 1 exempt and 0 failing, and the vocabulary carries 14 states —
+all derived here rather than quoted. The split is worth stating: one
+gate asks whether a MEMORY obeys the table, the other whether the
+TABLE could be obeyed.
 
 Three things a later reader should carry:
 

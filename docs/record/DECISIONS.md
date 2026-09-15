@@ -4818,3 +4818,513 @@ forward-only) ·
 batched-review precedent) ·
 [D-081](#d-081--phase-2-closes-the-polish-pass-is-split-out-not-dropped)
 (what unblocked phase 3, and started the clock) · this entry.
+
+**AMENDED.** 2026-09-10 — the founder suspended the window for one
+workshop bench,
+[chore/system-audit (#362)](https://github.com/wsher0901/roam/pull/362),
+to fix the machinery the Web full-pass validation listed; the window
+resumes at its merge.
+
+## D-087 — [product] The model boundary and three plan corrections
+
+In full: 2026-09-11 — THE MODEL BOUNDARY, AND THREE CORRECTIONS TO THE PLAN. A language model structures what the traveler said (Intake), phrases explanations and rendered text (Render), and may propose candidates that Acquire then verifies. It never produces a world fact, a score, a confidence, a grade, or a source; every model output entering a stage is schema-validated; a model's own world claim exists only at ladder rung 5, labeled, and never enters Judge or Aggregate. That becomes an ENGINE §11 invariant, with one line in §2's Intake procedure pointing at it. Three plan corrections ride with it. V1.S8 gains T4 — demo guardrails: a per-client rate limit and a spend cap on the model route with a graceful "demo is resting" state, plus a bot gate, and nothing public before it — and T3 waits on it. V1.S3.T2 waits on V1.S2.T4, because the fact cache is Postgres and needs the migrations. And V1.S3.T6 grows from golden tests on fixtures to golden tests AND the in-scope input eval set, with §11 gaining "any in-scope input is handled — measured against the eval set V1.S3.T6 owns" — which closes OPEN-9, its number kept so every inline reference still resolves.
+
+**Decision:** four rulings, in force from this entry's merge.
+
+**RULING 1 — THE MODEL BOUNDARY.**
+[ENGINE §11](../ENGINE.md#11-invariants--the-reliability-law) gains
+the invariant, in these words:
+
+> A language model structures what the traveler said (Intake),
+> phrases explanations and rendered text (Render), and may propose
+> candidates that Acquire then verifies. It never produces a world
+> fact, a score, a confidence, a grade, or a source; every model
+> output entering a stage is schema-validated; a model's own world
+> claim exists only at ladder rung 5, labeled, and never enters
+> Judge or Aggregate.
+
+**The rule is a boundary, not a prohibition** — it says what the
+model IS for as precisely as what it is not for, so a builder
+reaching for it at Intake or Render needs no permission and a
+builder reaching for it at Judge needs no argument.
+[ENGINE §2](../ENGINE.md#2-intake--resolve-the-traveler)'s procedure
+step 1 gains ONE line noting the model's role there and pointing at
+§11, because Intake is where a builder meets the question first and
+a rule met one file away is a rule missed. Rung 5 is the
+[ladder](../ENGINE.md#3-acquire--get-the-facts)'s LLM-research rung
+([D-010](#d-010--global-coverage-via-graded-fallback-ladders)),
+already rendered unverified — the boundary adds no new render policy,
+it names where a model's own claim is allowed to sit.
+
+**RULING 2 — DEMO GUARDRAILS.**
+[V1.S8](../ROADMAP.md#v1s8--demo-polish) gains:
+
+> V1.S8.T4 [P] Demo guardrails — per-client rate limit and a spend
+> cap on the model route with a graceful "demo is resting" state,
+> plus a bot gate; nothing public before it
+
+and **V1.S8.T3 becomes `[seq after T1, T2, T4]`**, so the task that
+publishes the URL cannot land before the task that protects it.
+V1's goal is one PUBLIC URL running a model route; the guardrail is
+therefore part of shipping the demo, not part of hardening it later.
+
+**RULING 3 — THE S3 DEPENDENCY.**
+[V1.S3.T2](../ROADMAP.md#v1s3--engine-core--two-families-deep)
+becomes `[seq after T1 and V1.S2.T4]`. The reason is exact: the fact
+cache IS Postgres, and
+[V1.S2.T4](../ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)
+is the migration task — a read-through cache cannot be built against
+a schema that has not been applied. The dependency existed in fact
+and was missing from the plan.
+
+**T1 IS NAMED ALONGSIDE IT, and that is a correction made at
+review.** As first written the tag read `[seq after V1.S2.T4]`, and
+under this file's own convention — [V1.S2.T4](../ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)
+reads `[seq after V1.S1.T7 and T3]`, naming its previous task as
+well as its cross-stage one — naming any dependency means naming
+ALL of them. So the shorter form silently dropped T1. Writing both
+makes the line self-sufficient under either reading of
+[HOME §Roadmap manual](../HOME.md#roadmap-manual), whose "after X"
+clause does not say whether naming X replaces or adds to the
+previous-task default.
+
+**AND THE WIDER CONSEQUENCE IS ACCEPTED RATHER THAN OVERLOOKED.**
+[V1.S3](../ROADMAP.md#v1s3--engine-core--two-families-deep) already
+follows [V1.S1](../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
+by stage order — stages are ordered slices and only
+[V1.S2](../ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1)
+is declared parallel — so this ruling adds ONE EDGE, S3.T2 ← S2.T4,
+not a stage coupling; it is absorbed when S2.T4 runs promptly after
+S1.T7 inside S2's lane, with S3.T1 in parallel.
+
+**RULING 4 — THE EVAL SET.**
+[V1.S3.T6](../ROADMAP.md#v1s3--engine-core--two-families-deep)
+becomes "Engine test suite — golden tests on fixtures AND the
+in-scope input eval set; CI runs with zero live calls".
+[ENGINE §11](../ENGINE.md#11-invariants--the-reliability-law) gains
+"Any in-scope input is handled — measured against the eval set
+V1.S3.T6 owns". **OPEN-9 is marked CLOSED by this entry → §11 in the
+[register](../ENGINE.md#12-open-register), AND ITS NUMBER IS KEPT**,
+because inline `OPEN-n` references resolve by number — in
+[ENGINE §10](../ENGINE.md#10-learn--the-loop-back) and across the
+[chronicle](../chronicle/engine.md) — and a renumbered register
+breaks all of them at once. The register's own preamble now says so,
+so the next closure does not have to rediscover it.
+
+**Why:** the Web full-pass validation of 2026-09-10, which read the
+engine and the plan end to end and returned these four as the gaps
+worth ruling before
+[V1.S3](../ROADMAP.md#v1s3--engine-core--two-families-deep) opens.
+Nothing here is derived from that pass beyond its date and its
+findings; the rulings are the founder's.
+
+Two of the four were already banked. [IDEAS](../IDEAS.md) had
+carried, since 2026-07-28, a line asking that the eval-set gate be
+ruled by D-number and a line asking that the LLM-boundary rule be
+ruled in the same decide — both from the founder and the external
+reviewer. **This entry closes both, and closes the second WIDER than
+it was asked:** the line proposed a new open-register slot, and the
+ruling makes it an invariant instead. A slot defers; an invariant
+binds.
+
+**Alternatives rejected:**
+
+- **Leave the model boundary to
+  [V1.S3.T1](../ROADMAP.md#v1s3--engine-core--two-families-deep)'s
+  check contract.** Rejected — the contract governs check modules,
+  and the model's reach is wider than any one stage; a rule that
+  binds Intake, Acquire, Judge, Aggregate and Render belongs with
+  the invariants that bind all of them.
+- **Guardrails at V2, with accounts.** Rejected — V1's own goal is a
+  PUBLIC URL with a model route behind it, so the exposure is V1's,
+  and a spend cap that arrives with billing arrives after the bill.
+- **The eval set as V2 work.** Rejected — it is the instrument that
+  measures whether the engine handles arbitrary input, so deferring
+  it defers the evidence for the claim V1 exists to make.
+
+**Affects:**
+[ENGINE §0](../ENGINE.md#0-what-this-is) (the reading key's OPEN-slot
+bullet, so it does not contradict §12's keep-the-number rule) ·
+[ENGINE §2](../ENGINE.md#2-intake--resolve-the-traveler) (procedure
+step 1 — one line on the model's role, pointing at §11) ·
+[ENGINE §10](../ENGINE.md#10-learn--the-loop-back) (the sentence
+that called the eval-set gate OPEN-9) ·
+[ENGINE §11](../ENGINE.md#11-invariants--the-reliability-law) (two
+invariants — the model boundary, and any in-scope input is handled —
+plus the Sources line) ·
+[ENGINE §12](../ENGINE.md#12-open-register) (the keep-the-number
+rule in the preamble; OPEN-9 marked CLOSED in place) ·
+[ROADMAP V1.S3](../ROADMAP.md#v1s3--engine-core--two-families-deep)
+(T2's dependency, T6's eval set) ·
+[ROADMAP V1.S8](../ROADMAP.md#v1s8--demo-polish) (T4 added, T3
+resequenced) ·
+[IDEAS §Closed](../IDEAS.md#closed) (the 2026-07-28 eval-set and
+LLM-boundary lines compressed and moved there) ·
+[D-010](#d-010--global-coverage-via-graded-fallback-ladders) (cited,
+unchanged — rung 5 is its ladder) ·
+[D-086](#d-086--workshop-the-product-first-window) (the `[product]`
+heading tag it minted, second use) · this entry.
+
+## D-088 — [product] The September re-tailoring — retrieval, the optimizer, cost, trend, state
+
+In full: 2026-09-11 → 15 — THE SEPTEMBER RE-TAILORING. Eighteen rulings, taken on the Web surface, that re-cut the June definitions against what a model can now do. (1) The ladder's rung 5 splits: 5a MODEL-RETRIEVED WITH PROVENANCE — {url, quoted span, fetched_at, domain grade}, grade B on an authoritative domain (operator, government, transit authority, established press) and C elsewhere, freshness-windowed and cached; 5b MODEL MEMORY — grade D, unverified, one step above refusal. D-087's boundary holds: the model fetches and quotes, never scores. (2) V1.S3 gains T8, the retrieval module that serves every rung-5a fact. (3) Every SOURCES entry carries a per-fact retrieval-policy row: allowed domains and their grade, quote required, freshness window. (4) V1.S4.T1 becomes the brain as a harness over engine-as-tools — an AI SDK 6 ToolLoopAgent over the engine's tool contract, streamObject for intake extraction only, multimodal intake, a managed agent evaluated as the hosted option only after the contract exists. (5) V1.S4.T2 proposes candidates with the model and verifies them down the ladder to rung 5a or better. (6) V1.S3.T6's eval set uses models: inputs generated with model help, explanations graded by a model judge, scores graded deterministically, and recommendation quality as a metric alongside correctness. (7) The receipt is the demo — V1.S8.T3's Done-means gains "every rendered claim opens its evidence", and the three seeded scenarios are named. (8) Cost becomes a sixth check family inside V1: live quotes where a licensed non-booking API exists, flights first, timestamped and freshness-windowed in minutes; honest ranges everywhere else; never a scraped price; still no booking. (9) Trend becomes a computed signal from proxies plus dated press at rung 5a, with platform mining left a Later socket on terms-of-service grounds and the rendered label carrying the signal's lag. (10) A fourth level of certainty — "here, now / check my plan" — enters as an entry, not a mode, with V1.S6.T4. (11) FACTS gains money-saving tips and dress-code norms. (12) The optimizer becomes a named component of Synthesize, with OPEN-10 holding its solver class and degradation threshold. (13) Day rhythm and drink/nightlife preference join the traveler table as TP-48 and TP-49. (14) Crowd and scarcity modeling is named as condition-aware placement reading facts that already exist. (15) State outranks transcript: the brain is stateless over a versioned state store, every turn renders from state, and the transcript is never re-read. (16) Every version diff carries what changed and the traveler's reason when given, tagged stated or absent, never inferred. (17) V1.S1.T4 evaluates Google Maps grounding / Places as a registry and affordance source. (18) The Pool gains Roam as an MCP server inside ChatGPT, Claude and Gemini.
+
+**Decision:** eighteen rulings, in force from this entry's merge. All
+eighteen are the founder's, taken on the Web surface between
+2026-09-11 and 2026-09-15.
+
+**RULING 1 — THE LADDER SPLIT.** Rung 5 of
+[D-010](#d-010--global-coverage-via-graded-fallback-ladders)'s
+ladder becomes two rungs, and
+[ENGINE §3](../ENGINE.md#3-acquire--get-the-facts) carries both:
+
+> **5a — model-retrieved with provenance.** The model searches and
+> fetches under the fact's declared retrieval policy, and the value
+> is stored with `{url, quoted span, fetched_at, domain grade}`.
+> GRADE B on an authoritative domain — operator, government,
+> transit authority, established press — and GRADE C elsewhere.
+> Freshness-windowed and cached like any other fetch.
+>
+> **5b — model memory.** No url, no span. GRADE D, unverified, one
+> step above refusal.
+
+**This is an amendment to D-010, not a replacement of it** — the
+ladder's shape, its top-down rule and its refusal rung are
+untouched; only its bottom rung is resolved into two. And it does
+not move
+[D-087](#d-087--product-the-model-boundary-and-three-plan-corrections)'s
+boundary by one inch: THE MODEL FETCHES AND QUOTES, NEVER SCORES.
+Retrieval widens what a model may bring back; it does not widen
+what a model may decide. The edits are
+[ENGINE §3](../ENGINE.md#3-acquire--get-the-facts)'s ladder,
+[§7](../ENGINE.md#7-render--honest-pixels)'s grade table (B and C
+gain the retrieval case; D is renamed from "LLM-research grade" to
+"model memory"),
+[§11](../ENGINE.md#11-invariants--the-reliability-law)'s invariant,
+[FACTS § How to read this file](../data/FACTS.md#how-to-read-this-file)'s
+new rung-5 reading rule, and
+[SOURCES](../data/SOURCES.md)'s grade-scale block, which now says
+plainly that the scale is not there and points at
+[ENGINE §7](../ENGINE.md#7-render--honest-pixels).
+
+**RULING 2 — THE RETRIEVAL MODULE.**
+[V1.S3](../ROADMAP.md#v1s3--engine-core--two-families-deep) gains:
+
+> V1.S3.T8 [P after T2] Retrieval module — search/fetch under a
+> per-fact domain policy; quote extraction; schema validation;
+> cache with freshness; serves every rung-5a fact
+
+One module serves every 5a fact so that no stage fetches for
+itself; it is `[P after T2]` because it caches, and the cache is
+T2's. [V1.S7](../ROADMAP.md#v1s7--the-other-four-families-plug-in-proof)'s
+stage line now says each family chooses, per fact, an API adapter
+or a retrieval policy — the two ways a fact can be answered.
+
+**RULING 3 — THE RETRIEVAL-POLICY ROW.** Every
+[SOURCES](../data/SOURCES.md) entry carries, PER FACT: allowed
+domains and their grade · quote required · freshness window.
+[FACTS § How to read this file](../data/FACTS.md#how-to-read-this-file)
+defines the row; the weather entries carry it now, as the worked
+example the other families copy. **A slot that cannot reach 5a
+writes `n/a` and says why — silence is not `n/a`.**
+[V1.S1.T3](../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)–T6
+add their own rows WHEN THEY RESPAWN; that is recorded here as
+their duty and edited nowhere in this bench, because their branches
+are live.
+
+**RULING 4 — THE BRAIN AS A HARNESS OVER ENGINE-AS-TOOLS.**
+[V1.S4.T1](../ROADMAP.md#v1s4--suggest) becomes:
+
+> Brain — AI SDK 6 ToolLoopAgent over the engine's tool contract
+> (checks, planner, receipts, state); `streamObject` for intake
+> extraction only; multimodal intake (pasted confirmations,
+> screenshots, PDFs); a managed agent evaluated as the hosted
+> option only after the contract exists
+
+The ordering is the ruling: THE TOOL CONTRACT COMES FIRST, and a
+hosted agent is judged against it rather than in place of it.
+[ENGINE §2](../ENGINE.md#2-intake--resolve-the-traveler) gains the
+matching rule — images and PDFs of bookings ARE intake, extracted
+under [§11](../ENGINE.md#11-invariants--the-reliability-law)'s
+boundary, and everything extracted is `stated` provenance because
+the traveler supplied the document.
+
+**RULING 5 — CANDIDATES PROPOSED, THEN VERIFIED.**
+[V1.S4.T2](../ROADMAP.md#v1s4--suggest): model-proposed destinations
+and activities, verified down the ladder to rung 5a or better
+before they can be offered. THE CURATED SET STAYS THE WARMED DEMO
+PATH, not the ceiling.
+[ENGINE §6](../ENGINE.md#6-synthesize--build-the-plan) gains one
+rule; "honor, then better" and the near-peer rules are unchanged.
+
+**RULING 6 — THE EVAL SET USES MODELS.**
+[V1.S3.T6](../ROADMAP.md#v1s3--engine-core--two-families-deep) grows:
+inputs generated WITH MODEL HELP; explanations graded by a MODEL
+JUDGE; scores graded DETERMINISTICALLY; and RECOMMENDATION QUALITY
+is a metric alongside correctness, measured against a graded "good
+here, now" set. The split is the point — a model may judge prose,
+never arithmetic.
+
+**RULING 7 — THE RECEIPT IS THE DEMO.**
+[V1.S8.T3](../ROADMAP.md#v1s8--demo-polish)'s Done-means gains
+**every rendered claim opens its evidence**, and the three seeded
+scenarios stop being "three scenarios" and become these three:
+(i) trending places to eat in NYC right now · (ii) fun things
+around this neighborhood · (iii) the optimal route for my day with
+these plans.
+
+**RULING 8 — COST, A SIXTH FAMILY, IN V1.**
+[ENGINE §8](../ENGINE.md#8-gate--warn-or-refuse)'s scope refusal is
+amended, narrowly: LIVE QUOTES where a licensed, NON-BOOKING API
+exists — FLIGHTS FIRST — timestamped and freshness-windowed IN
+MINUTES; honest ranges everywhere else; NEVER a scraped price; and
+still no booking, because a quote is not a transaction.
+[FACTS](../data/FACTS.md) gains family six,
+[F-CO](../data/FACTS.md#f-co--cost-3--source-task-v1s1t8) —
+[CO-01](../data/FACTS.md#f-co-01--flight-quotes-) flight quotes ·
+[CO-02](../data/FACTS.md#f-co-02--lodging-rates-quote-or-range-)
+lodging rates, quote or range ·
+[CO-03](../data/FACTS.md#f-co-03--trip-cost-roll-up) trip-cost
+roll-up, derived.
+[F-FE-07](../data/FACTS.md#f-fe-07--cost-estimate-bands)'s bands
+STAY, cross-linked: a quote supersedes the matching band for that
+one item, and the bands remain the answer everywhere else.
+[V1.S1](../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
+gains T8 (cost sources vetting) and T7 now consolidates FIVE files;
+[V1.S7](../ROADMAP.md#v1s7--the-other-four-families-plug-in-proof)
+is retitled "The other four families" and gains T4, the cost
+module. Every "five families" in
+[FOUNDATION](../FOUNDATION.md), [ROADMAP](../ROADMAP.md),
+[FACTS](../data/FACTS.md) and [HOME](../HOME.md) now reads six.
+
+**RULING 9 — TREND AS A COMPUTED SIGNAL.**
+[F-CC-07](../data/FACTS.md#f-cc-07--trending-signal-computed) is
+amended: PROXIES — reservation scarcity, review velocity, YouTube
+and Reddit velocity via their own APIs — plus dated press and blogs
+at rung 5a. PLATFORM MINING (Instagram, TikTok) STAYS A LATER
+SOCKET, and the ground is TERMS OF SERVICE, not difficulty. The
+rendered label carries the signal's LAG: "rising, as of last week",
+never a bare "trending now".
+[V1.S7.T3](../ROADMAP.md#v1s7--the-other-four-families-plug-in-proof)
+names it.
+
+**RULING 10 — THE "HERE, NOW" ENTRY.**
+[FOUNDATION §The spine](../FOUNDATION.md#the-spine) gains a fourth
+level of certainty — "here, now / check my plan":
+neighbourhood-and-clock granularity, entered with an imported plan
+or with a location plus the time of day. **AN ENTRY, NOT A MODE** —
+nothing about the engine changes.
+[V1.S6](../ROADMAP.md#v1s6--edit--revalidate-the-money-moment) gains
+T4: paste or upload an existing plan, or a place and now, and the
+engine re-validates it as version 1 with receipts.
+
+**AND THE BOUNDARY IS NAMED, because "now" and "mid-trip" are not
+the same thing and V1 still refuses the second.** "Here, now" plans
+FROM the present moment — tonight, tomorrow, the day ahead for a
+traveler already at the destination — and is still PLANNING AHEAD
+OF THE PLAN. It does NOT bring mid-trip operations into V1: no live
+tracking, no notifications, no in-the-moment steering during an
+activity. Those remain the MID-TRIP COMPANION, V2+. The test is
+whether Roam is composing a plan the traveler has not executed yet
+— which it is, whether the plan covers October or the next four
+hours — or watching one they are inside. V1 does the first from any
+starting point, and none of the second.
+
+**RULING 11 — TIPS AND DRESS CODE.**
+[FACTS](../data/FACTS.md) gains
+[F-FE-15](../data/FACTS.md#f-fe-15--money-saving-tips-) — money-saving
+tips: passes, coupons, packages; retrieval; DATED, because **a
+coupon is a fact with a half-life** — and
+[F-FE-16](../data/FACTS.md#f-fe-16--dress-code--conduct-norms-) —
+dress code and conduct norms; retrieval.
+
+**RULING 12 — THE OPTIMIZER IS A NAMED COMPONENT.**
+[ENGINE §6](../ENGINE.md#6-synthesize--build-the-plan) gains "The
+optimizer": a CONSTRAINT SCHEDULER over time windows (hours,
+reservations, daylight, weather-fit), the travel-time matrix, day
+rhythm, pace and density budgets, and pins. Its OBJECTIVE is the
+composed score (OPEN-6) — it introduces no second notion of "good".
+SIMULATION is a RE-SOLVE with pins, rendering the score delta in
+words. "DEGRADES" is a delta past a threshold on OPEN-5's scale.
+[ENGINE §12](../ENGINE.md#12-open-register) gains **OPEN-10 — the
+solver class and the degradation threshold, decided before
+[V1.S5](../ROADMAP.md#v1s5--plan)**, and
+[V1.S5.T1](../ROADMAP.md#v1s5--plan) becomes "Plan synthesis — the
+optimizer …". The model never solves; it proposes and explains.
+
+**RULING 13 — DAY-RHYTHM PARAMETERS.**
+[FACTS Appendix A](../data/FACTS.md#appendix-a--traveler-parameters-tp-0147--per-d-011--d-012)
+gains TP-48 "Day rhythm {wake, earliest start, latest end, meal
+windows}" and TP-49 "Drink / nightlife preference". **This is an
+amendment to
+[D-011](#d-011--traveler-input-vocabulary)/[D-012](#d-012--elicitation-and-inference-policy)'s
+table, and it is noted THERE — in Appendix A, by link to this entry
+— rather than by annotating those frozen entries**, which is how
+this log has handled amendments since the
+[#193](https://github.com/wsher0901/roam/pull/193) ruling. The
+extension is lawful under D-011's own append-only rule.
+
+**RULING 14 — CROWDS AND SCARCITY, NAMED.** The "anticipate other
+travelers" intent IS crowd and scarcity modelling — venue busyness,
+sellout speed, port-call days, holiday calendars — and every one of
+those is a fact already registered. **NO NEW FACT IS MINTED FOR
+IT.** What was missing was the name:
+[ENGINE §6](../ENGINE.md#6-synthesize--build-the-plan)'s
+condition-aware placement rule now cites
+[CC-06](../data/FACTS.md#f-cc-06--venue-busyness-curves-),
+[FE-08](../data/FACTS.md#f-fe-08--reservation--timed-entry--permit-flags-)'s
+`sellout_speed`,
+[CC-08](../data/FACTS.md#f-cc-08--cruise-port-call-schedules-), and
+[CC-01](../data/FACTS.md#f-cc-01--public-holidays)/[CC-02](../data/FACTS.md#f-cc-02--school-holiday-calendars-).
+
+**RULING 15 — STATE OUTRANKS TRANSCRIPT.**
+[ENGINE §11](../ENGINE.md#11-invariants--the-reliability-law) gains
+the invariant: the brain is STATELESS over a VERSIONED STATE STORE
+— the traveler model (every constraint and preference with
+provenance: `stated` / `inferred` / `derived`), the TripQuery, and
+the plan versions. Every turn renders from state; THE TRANSCRIPT IS
+NEVER RE-READ. **The consequence is the reason:** a redaction is a
+state edit plus a new version, and is therefore VERIFIABLE BY
+CONSTRUCTION rather than promised.
+[FACTS Appendix B](../data/FACTS.md#appendix-b--plan-parameters-t7-must-schema-not-world-facts)
+gains the provenance tag, `derived` included.
+
+**RULING 16 — CHANGE TRACKING WITH STATED REASONS.**
+[ENGINE §9](../ENGINE.md#9-re-validate--edits-and-drift): every
+version diff carries what changed AND the traveler's reason when
+given, tagged `stated` or `absent` — **never inferred**, because a
+guessed motive is a fabricated fact about a person. The sequence is
+surfaced as the DECISION PATH the traveler can walk back.
+[FACTS Appendix C1](../data/FACTS.md#c1--behavior-events-d-014)
+gains the `version_reason_recorded` event, and
+[V1.S6.T3](../ROADMAP.md#v1s6--edit--revalidate-the-money-moment)
+names it.
+
+**RULING 17 — MAPS GROUNDING IN T4.**
+[V1.S1.T4](../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
+evaluates Google Maps grounding / Places as a REGISTRY and
+AFFORDANCE source (250M places, licensable) against the registry
+requirements. **Recorded here as T4's duty and edited nowhere**,
+because T4's bench is live.
+
+**RULING 18 — DISTRIBUTION SOCKET.** The
+[Pool](../ROADMAP.md#pool--unversioned-sockets) gains "Roam as an
+MCP server / app inside ChatGPT, Claude and Gemini — the engine's
+tool contract as a distribution channel". A socket, not a plan:
+ruling 4's tool contract is what would make it cheap later, and
+building it for that reason now would be building it twice.
+
+**Why:** the June definitions assumed a model that only structures
+text. Four things changed what is verifiable — retrieval with
+citations, hosted agent loops, Maps grounding, and Mythos-class
+models — and the market moved with them: by September 2026 every
+assistant generates itineraries, and every reviewer's verdict is
+"verify the details". The trust numbers say where the value sits:
+8% of travelers are comfortable letting AI book, while 22% of
+diners already ask AI where to eat. **People will not hand over the
+transaction, but they will hand over the checking** — so the
+product's centre is the RECEIPT, not the plan, and eleven of these
+eighteen rulings exist to make a receipt possible.
+
+Cited by URL; nothing was fetched for this entry.
+
+- https://www.anthropic.com/claude-fable-and-mythos-5-1
+- https://ai.google.dev/gemini-api/docs/maps-grounding
+- https://developers.googleblog.com/new-gemini-api-updates-for-gemini-3/
+- https://vercel.com/blog/ai-sdk-6
+- https://skift.com/2026/03/05/openai-chatgpt-checkout-walkback/
+- https://openai.com/index/introducing-agentkit/
+- https://layla.ai/blog/news-and-tips/ai-trip-planners-tier-list
+- https://www.savortheapp.com/blog/cuisine-location-guides/best-restaurant-review-app/
+
+**Alternatives rejected:**
+
+- **Keep rung 5 as memory-only.** Rejected — it throws away the
+  only cheap route to a verifiable answer for the facts no API
+  covers, and leaves the ladder's bottom a single undifferentiated
+  "unverified".
+- **Hand-roll the brain.** Rejected — the agent loop is commodity
+  now; the differentiator is the engine's tool contract, and time
+  spent on the loop is time not spent on the contract.
+- **Cost at V2.** Rejected — a plan with no price is not a plan a
+  traveler can act on, and "what does this cost" is the second
+  question every user asks.
+- **Mine social platforms.** Rejected on TERMS OF SERVICE, not on
+  value: the signal is real, the access is not licensable today,
+  and a public product cannot rest on a scrape.
+- **Add modes.** Rejected — "here, now" as a fourth MODE would
+  break [FOUNDATION](../FOUNDATION.md)'s one-engine-no-modes
+  principle to buy nothing the engine cannot already do from a
+  different entry.
+- **Transcript as memory.** Rejected — it makes deletion
+  unprovable and context length a correctness risk; state makes
+  both go away.
+- **A separate "check my plan" product.** Rejected — it is the same
+  engine entered later, and splitting it would double the surface
+  to build and halve the evidence each half accumulates.
+
+**Affects:**
+[ENGINE §2](../ENGINE.md#2-intake--resolve-the-traveler) (multimodal
+intake) ·
+[ENGINE §3](../ENGINE.md#3-acquire--get-the-facts) (the 5a/5b
+ladder, the retrieval module, the per-fact policy) ·
+[ENGINE §6](../ENGINE.md#6-synthesize--build-the-plan) (the
+optimizer; proposed-then-verified; crowds and scarcity named) ·
+[ENGINE §7](../ENGINE.md#7-render--honest-pixels) (the grade table's
+B, C and D rows; the receipt) ·
+[ENGINE §8](../ENGINE.md#8-gate--warn-or-refuse) (the price refusal,
+amended) ·
+[ENGINE §9](../ENGINE.md#9-re-validate--edits-and-drift) (stated
+reasons, the decision path) ·
+[ENGINE §11](../ENGINE.md#11-invariants--the-reliability-law) (the
+boundary across both rungs; state outranks transcript) ·
+[ENGINE §12](../ENGINE.md#12-open-register) (OPEN-10) ·
+[FOUNDATION §The spine](../FOUNDATION.md#the-spine) (the fourth
+level of certainty) ·
+[FOUNDATION §What Roam checks](../FOUNDATION.md#what-roam-checks)
+(six families; the Cost family) ·
+[ROADMAP §V1](../ROADMAP.md#v1--the-demo--active) (six families; the
+amended price refusal; the trending line) ·
+[ROADMAP V1.S1](../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
+(T8 added; T7 consolidates five files and waits on T8; T1's
+six-family wording) ·
+[ROADMAP V1.S3](../ROADMAP.md#v1s3--engine-core--two-families-deep)
+(T8 added; T6's model-assisted eval set) ·
+[ROADMAP V1.S4](../ROADMAP.md#v1s4--suggest) (T1 rewritten; T2
+verified) ·
+[ROADMAP V1.S5](../ROADMAP.md#v1s5--plan) (T1 becomes plan
+synthesis) ·
+[ROADMAP V1.S6](../ROADMAP.md#v1s6--edit--revalidate-the-money-moment)
+(T3's stated reasons; T4 added) ·
+[ROADMAP V1.S7](../ROADMAP.md#v1s7--the-other-four-families-plug-in-proof)
+(retitled; adapters-or-retrieval; T3's trend; T4 added) ·
+[ROADMAP V1.S8](../ROADMAP.md#v1s8--demo-polish) (T3's receipts and
+the three named scenarios) ·
+[ROADMAP §Pool](../ROADMAP.md#pool--unversioned-sockets) (the MCP
+socket) ·
+[FACTS](../data/FACTS.md) (the counts; the rung-5 reading rule; the
+retrieval-policy row; F-FE-15, F-FE-16; F-CC-07 amended; the F-CO
+family; the assignment map; Appendix A's TP-48/49 and its amendment
+note; Appendix B's provenance tag; Appendix C1's event) ·
+[SOURCES](../data/SOURCES.md) (the grade-scale pointer; the
+retrieval-policy row on all six weather slots; the Cost pending
+slot) ·
+[HOME §Product & engine](../HOME.md#product--engine),
+[HOME §Terms](../HOME.md#terms) and
+[HOME §Reading the data files](../HOME.md#reading-the-data-files)
+(five families → six; the F-CO family ID; the ladder's seven rungs;
+the provenance tag set; grade D renamed) ·
+`docs/chronicle/roadmap.md` (the V1.S7 citation follows the rename,
+and the stage table is re-derived — the chronicle is frozen
+NARRATIVE, but that table's own caption says its numbers are
+derived at every reading) ·
+[D-010](#d-010--global-coverage-via-graded-fallback-ladders)
+(amended — rung 5 splits; the rest of the ladder stands) ·
+[D-011](#d-011--traveler-input-vocabulary) and
+[D-012](#d-012--elicitation-and-inference-policy) (amended — the
+table runs to TP-49; noted in Appendix A by link, entries
+unannotated) ·
+[D-087](#d-087--product-the-model-boundary-and-three-plan-corrections)
+(cited, unchanged — its boundary holds across both new rungs) ·
+[D-086](#d-086--workshop-the-product-first-window) (the `[product]`
+heading tag, third use) · this entry.

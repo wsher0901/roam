@@ -102,8 +102,21 @@ and self-terminates — the cost is a restart, never split-brain work.
 
 ## Canary handshake (both sides)
 The timeout constants live HERE and nowhere else — LAWS and liftoff
-point back to this section: the window is ~10 minutes (cloud) or ~2
-(local), and both sides use the SAME window.
+point back to this section: the window is **~10 minutes, cloud AND
+local**, and both sides use the SAME window.
+
+**THE LOCAL WINDOW WAS ~2 MINUTES AND THAT NUMBER WAS UNMEETABLE.**
+It assumed a baton-holder sitting attentively at the handshake with
+nothing else to do. The real baton-holder is a CONVERSATIONAL seat:
+it is mid-sentence with the founder, waiting on a reply, or
+interrupted. On 2026-09-10 a four-lane local team was dispatched and
+**not one lane was acked** — two pushed their canary and sat waiting
+past the window, two never claimed at all — because the tower was
+answering the founder when the windows opened and closed. The lanes
+obeyed the contract exactly; the contract asked for something its
+counterparty could not supply. A timeout must be set by what the
+SLOWEST side can guarantee, not by what the fastest side can manage
+when nothing interrupts it.
 Sibling constant — liveness staleness window: ~30 minutes,
 generously longer than the canary window so a live lane between
 commits never reads dead; tunable, settled here
@@ -118,10 +131,18 @@ THE ACK TOKEN — one canonical form, and this section is where it
 lives. The Status line BEGINS, exactly:
 
 ```text
-airborne · <url> · <date>
+airborne · <vehicle or url> · <date>
 ```
 
 Middots, not em-dashes; the token is the first thing on the line.
+THE MIDDLE FIELD IS `<vehicle or url>`, not `<url>` — a CLOUD lane
+has a session URL and a LOCAL one does not, and this section used
+to say `<url>` in the canonical block while its own baton-holder
+bullet said `<vehicle or url>`, so the two halves of one section
+disagreed. Nothing ever broke on it, because the match is anchored
+at `airborne ·` and never reads the middle field; it is fixed here
+so a seat copying the canonical form for a local lane is not
+writing a value that does not exist.
 Every other home of this token
 ([TEMPLATE](../memory/TEMPLATE.md)'s state table, the
 [lane-worker master](../LANE-WORKER.md)) copies THIS
@@ -173,7 +194,7 @@ session can start it working.
   the anchored match above. Seeing
   "failed/aborted", a Status this lane does not own
   (parked · respawned · superseded), or no acknowledgment within that
-  window (~10 min cloud / ~2 local): self-terminate cleanly (push
+  window (~10 minutes, cloud or local): self-terminate cleanly (push
   whatever exists, stop).
 - Baton-holder side: watch for the canary. On arrival, OVERWRITE the
   lane's memory Status so the line begins exactly "airborne ·
@@ -181,9 +202,13 @@ session can start it working.
   never a paraphrase and never a decorated variant; the lane cannot
   see a near-miss. Push — AND THE PUSH IS THE ACK: until that commit
   is on origin the lane is not licensed, and telling it so by any
-  other channel neither licenses it nor is needed. No canary within
-  ~10 minutes (cloud) or ~2
-  (local): write "spawn failed <date> — <reason> → run locally" into
+  other channel neither licenses it nor is needed.
+  **WRITE THE ACK AS THE VERY NEXT ACT AFTER DISPATCH** — before
+  reporting to the founder, before starting anything else. A tower
+  that dispatches and then turns to the conversation has already
+  spent the window (2026-09-10: four lanes dispatched, none acked).
+  No canary within ~10 minutes: write
+  "spawn failed <date> — <reason> → run locally" into
   the memory and record the abort on the board — the lane's In-flight
   row + the Needs-you mirror ([handoff §4](handoff.md)), then stand
   the lane down.
