@@ -99,3 +99,42 @@ console.log(
         withSubdiv.subdivisions.map((s) => s.code).join(",")
     : "none returned",
 );
+
+// --- THE CROSS-CHECK, RUN RATHER THAN DESCRIBED ------------------------
+// The entry grades this slot B only where the two compilations AGREE, so
+// the agreement has to be measured. Comparing COUNTS would be wrong and
+// was the first draft's mistake: the two index different scopes, so
+// Spain reads 32 vs 54 and "disagrees" while agreeing on every national
+// holiday. The comparison is therefore over NATIONWIDE dates only.
+console.log(
+  "\n=== Cross-check: nationwide dates, Nager.Date vs OpenHolidays ===",
+);
+const BOTH = ["HR", "DE", "ES", "ZA", "PT", "IT", "PL", "AT", "NL", "SE"];
+for (const cc of BOTH) {
+  if (!nagerCodes.has(cc) || !ohCodes.has(cc)) {
+    console.log(`  ${cc}: not in both indexes — grade C by the entry's rule`);
+    continue;
+  }
+  const n = await json(
+    `https://date.nager.at/api/v3/PublicHolidays/${YEAR}/${cc}`,
+  );
+  const o = await json(
+    `https://openholidaysapi.org/PublicHolidays?countryIsoCode=${cc}` +
+      `&languageIsoCode=EN&validFrom=${YEAR}-01-01&validTo=${YEAR}-12-31`,
+  );
+  if (n.__status || o.__status || !Array.isArray(o) || !o.length) {
+    console.log(`  ${cc}: one side returned nothing — grade C`);
+    continue;
+  }
+  const nDates = new Set(n.filter((h) => h.global).map((h) => h.date));
+  const oDates = new Set(o.filter((h) => h.nationwide).map((h) => h.startDate));
+  const onlyN = [...nDates].filter((d) => !oDates.has(d));
+  const onlyO = [...oDates].filter((d) => !nDates.has(d));
+  const agreed = [...nDates].filter((d) => oDates.has(d));
+  console.log(
+    `  ${cc}: ${agreed.length} agreed · ${onlyN.length} Nager-only` +
+      `${onlyN.length ? " (" + onlyN.join(",") + ")" : ""}` +
+      ` · ${onlyO.length} OpenHolidays-only` +
+      `${onlyO.length ? " (" + onlyO.join(",") + ")" : ""}`,
+  );
+}

@@ -55,12 +55,29 @@ before it answers anything else.
   - OpenHolidays — `id`, `startDate`, `endDate`, `type`, `name[]`
     (multilingual), `regionalScope`, `temporalScope`, `nationwide`,
     `subdivisions[]{code, shortName}`.
-- Grade: **B where BOTH indexes cover the country**, because agreement
-  between two independent compilations of the same gazette is a check
-  we can actually run; **C where only one covers it**, since a single
+- Grade: **B where BOTH indexes cover the country and agree on the
+  nationwide dates; C where only one covers it**, since a single
   uncorroborated compilation of someone else's publication is a curated
   value rather than an authoritative one. Promotion to A is available
   per country by vetting that country's own gazette — not done here.
+- **THE CROSS-CHECK IS RUN, NOT ASSUMED**, and comparing COUNTS would
+  have been the wrong test — Spain reads 32 against 54 because the two
+  index different scopes, while agreeing on every national holiday. The
+  spike therefore compares NATIONWIDE DATES, and across ten countries in
+  both indexes it found the statutory core identical and every
+  disagreement at the same two edges:
+  - **Easter Sunday** (2026-04-05), which Nager.Date lists for HR, IT and
+    AT and OpenHolidays does not — a Sunday, so it changes no opening
+    hour.
+  - **De facto but non-statutory days**: Sweden alone accounts for three
+    (Midsummer Eve 2026-06-19, Christmas Eve, New Year's Eve), where
+    nearly everything shuts without a statute saying so — and those are
+    days a traveler must be warned about, so the union is the right
+    merge and the disagreement is a FEATURE of using two sources.
+  - One genuine one-sided entry: South Africa's 2026-08-09, listed by
+    OpenHolidays only.
+  Measured agreement, 2026: HR 13, DE 9, ES 10, ZA 12, PT 14, IT 11,
+  PL 14, AT 13, NL 11, SE 13 nationwide dates agreed.
 - Freshness served: yearly, refreshed each January; a country may amend
   a holiday mid-year, so a refetch inside 30 days of the trip window is
   cheap insurance.
@@ -76,8 +93,9 @@ before it answers anything else.
   - Regional depth is where OpenHolidays earns its place: Spain returns
     **54** entries (44 regional-only) against Nager.Date's 32, and
     resolves subdivisions to codes like `ES-CN-SC-TE`.
-- Cost: free, no key, no registration, no published rate limit on
-  either.
+- Cost: free, no key, no registration. Neither project states a rate
+  limit on the pages read 2026-09-15 — recorded as not stated rather
+  than as none.
 - retention_rights: **cache-only pending a licence answer** — see the
   risk below. license_class: the SERVICE CODE is licensed (Nager.Date
   MIT, OpenHolidays AGPL-3.0, both read at their GitHub repositories
@@ -105,11 +123,18 @@ before it answers anything else.
     window, because ad-hoc national holidays are declared at short
     notice in exactly the countries the indexes do not cover.
 - Spike: `scripts/spikes/crowds-calendar-public-holidays.mjs` — run
-  2026-09-15. Walked 10 probe countries across both APIs and returned
-  the counts, key lists and gaps quoted above.
-- Alternatives rejected: **Calendarific** (a free tier exists but is
-  registration-and-key-gated with commercial pricing above it; no
-  advantage over two keyless sources for V1); **python-holidays /
+  2026-09-15. Walked 10 probe countries across both APIs for coverage,
+  then ran the nationwide-date cross-check over 10 countries present in
+  both indexes; the counts, key lists, gaps and agreement figures quoted
+  above are its output.
+- Alternatives rejected: **Calendarific** — PARKED, and the first draft of this entry
+  rejected it on a guess. Its own pricing page (read 2026-09-15)
+  claims **230+ countries and 3,300+ states and regions**, which is
+  BROADER than either chosen source and would close the India,
+  Pakistan and Thailand gap outright. It is out of V1 for two
+  specific reasons and not for lack of merit: it needs a key, and
+  its free tier is 500 calls per YEAR. It is the named upgrade if
+  that coverage gap starts costing us; **python-holidays /
   date-holidays vendored as a library** (moves the same compilation
   in-process, inherits the same unstated data provenance, and adds a
   dependency we would then own); **each country's gazette directly**
@@ -129,8 +154,10 @@ before it answers anything else.
   "patchy outside a handful of countries"; the spike walked every
   country in the index rather than sampling, so the patchiness is now a
   number.
-- Freshness served: yearly; regional authorities publish the next school
-  year 6–12 months ahead.
+- Freshness served: yearly. Publication runs ahead of the year: a 2026
+  query returned periods beginning in December 2025 for 32 countries,
+  so the next school year is on file at least a season early. The exact
+  lead time per authority was not measured.
 - Coverage (every country in the index walked, 2026-09-15): **32 of 36
   return 2026 data**; **BR, LV, SE and VA are listed and return
   nothing**. The 32 are Europe plus Mexico and South Africa — so the
@@ -285,8 +312,11 @@ before it answers anything else.
   [CC-04](FACTS.md#f-cc-04--events--festivals-) says "city-dependent
   feeds → ladder", and this is what that costs. Each additional city is
   its own small vetting job against its own portal.
-- Cost: free, keyless. Socrata throttles anonymous callers and issues
-  free app tokens for higher volume — no payment at any tier we need.
+- Cost: free, keyless. Socrata throttles anonymous callers by source IP
+  and issues free application tokens for a higher limit — "Without an
+  application token, we can only track usage and perform throttling
+  based on … source IP address" (`dev.socrata.com/docs/app-tokens`,
+  read 2026-09-15). No payment at any tier we need.
 - retention_rights: **store-raw**, with the caveat that no explicit
   licence is attached: the dataset's Socrata metadata returns
   `attribution: "Office of Citywide Event Coordination and Management
@@ -323,9 +353,10 @@ before it answers anything else.
   on merit but PARKED AS UNPROVEN: a key is free and self-serve, and it
   would cover ticketed concerts and sport well, but it carries only the
   "reason to go" polarity and nothing about street closures. Worth a key
-  when V1 needs ticketed events. **PredictHQ** (exactly this product,
-  with attendance bands — priced for enterprise, so a V1 blocker on
-  cost, not on fit). **Eventbrite** (the public search endpoint no
+  when V1 needs ticketed events. **PredictHQ** (exactly this product, attendance
+  bands included — but its pricing page returns HTTP 405 to a plain
+  GET, so the cost is NOT VERIFIED HERE and the rejection rests only
+  on its sales-contact-only signup, which V1 cannot complete). **Eventbrite** (the public search endpoint no
   longer exists). **Wikidata** (free and CC0, but its event coverage is
   whatever editors happened to add). **Scraping city "what's on" pages**
   (fragile, and usually against the page's own terms).
@@ -393,10 +424,12 @@ before it answers anything else.
   2026-09-15; the per-country month classifications and peak ratios
   above are its output.
 - Alternatives rejected: **the UN Tourism data portal** (the global
-  coverage this slot wants, behind subscription and not machine-readable
-  at monthly granularity — revisit if a licence is ever bought);
-  **Google Trends destination interest** (no official API, and the
-  unofficial routes are scraping); **hotel-rate seasonality as a
+  coverage this slot wants — its access terms and granularity were NOT
+  verified here, so this is a deferral rather than a finding; it is the
+  first place to look when non-European seasonality matters);
+  **Google Trends destination interest** (no official public API was
+  found; the widely used routes are unofficial, which makes them
+  scraping — not verified against a terms page here); **hotel-rate seasonality as a
   crowding proxy** (a real signal, and it belongs to
   [CO-02](FACTS.md#f-co-02--lodging-rates-quote-or-range-) in
   [V1.S1.T8](../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
@@ -418,8 +451,10 @@ before it answers anything else.
   spike confirmed instead is the ABSENCE, at the primary sources:
   - Google's own Places API data-fields reference (read 2026-09-15)
     contains **no** `popularTimes`, no "popular times", no `busyness`
-    and no `liveBusy`; `currentOpeningHours` is present. Popular Times
-    is a Google Maps product surface, not an API field.
+    and no `liveBusy`; `currentOpeningHours` is present. What is PROVEN
+    is the absence of the field from the reference; the reading that
+    Popular Times is a Maps product surface rather than an API field
+    follows from it, and is an inference, not a quote.
   - Google Maps Platform Terms (read 2026-09-15) state **"No Scraping.
     Customer will not export, extract, or otherwise scrape Google Maps
     Content for use outside the Services"** — expressly including "copy
@@ -465,7 +500,9 @@ before it answers anything else.
   foot-traffic API and the honest upgrade path — NOT vetted here because
   no key exists, so no payload and no grade; recorded so the next bench
   does not re-discover it); **Foursquare and SafeGraph-class movement
-  panels** (enterprise pricing and consent questions well beyond V1).
+  panels** (commercial movement panels; neither their pricing nor their
+  consent posture was verified here, and both are out of V1 scope on
+  size alone).
 
 ## trending-general
 
@@ -555,8 +592,9 @@ before it answers anything else.
   and reported NOT FOUND — a clean result from a bad probe. The spike now
   pins `?hl=en` and the header.
 - Alternatives rejected: **Instagram and TikTok mining** (a Later socket,
-  on terms of service — see above); **Google Trends** (no official API,
-  and the unofficial routes are scraping); **a paid social-listening
+  on terms of service — see above); **Google Trends** (no official public API was found, and the
+  widely used routes are unofficial — not verified against a terms
+  page here); **a paid social-listening
   vendor** (enterprise pricing, and it would move the licence problem
   rather than solve it); **asking the model what is trending** (rung 5b,
   grade D, and precisely the assertion
