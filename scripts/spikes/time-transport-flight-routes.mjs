@@ -22,8 +22,12 @@ const rows = text
   .split("\n")
   .map((l) => l.split(","));
 // airline,airlineID,src,srcID,dst,dstID,codeshare,stops,equipment
-console.log(`routes.dat: ${rows.length} rows, ${(text.length / 1e6).toFixed(1)} MB`);
-console.log(`columns (positional): airline, airlineID, src, srcID, dst, dstID, codeshare, stops, equipment`);
+console.log(
+  `routes.dat: ${rows.length} rows, ${(text.length / 1e6).toFixed(1)} MB`,
+);
+console.log(
+  `columns (positional): airline, airlineID, src, srcID, dst, dstID, codeshare, stops, equipment`,
+);
 console.log(`sample row: ${rows[0].join(" | ")}`);
 
 const pairs = new Set(rows.map((r) => `${r[2]}-${r[4]}`));
@@ -38,7 +42,12 @@ console.log(
 // ---------------------------------------------------------------------
 const gh = await fetch(
   "https://api.github.com/repos/jpatokal/openflights/commits?path=data/routes.dat&per_page=1",
-  { headers: { "User-Agent": "roam-spike", Accept: "application/vnd.github+json" } },
+  {
+    headers: {
+      "User-Agent": "roam-spike",
+      Accept: "application/vnd.github+json",
+    },
+  },
 );
 if (gh.ok) {
   const [c] = await gh.json();
@@ -49,7 +58,9 @@ if (gh.ok) {
   );
   console.log(`  message: ${(c?.commit?.message || "").split("\n")[0]}`);
 } else {
-  console.log(`\nGitHub commits API: HTTP ${gh.status} (rate limit?) — staleness unmeasured this run`);
+  console.log(
+    `\nGitHub commits API: HTTP ${gh.status} (rate limit?) — staleness unmeasured this run`,
+  );
 }
 
 // Independent staleness evidence: carriers that have ceased operations.
@@ -62,7 +73,9 @@ const defunct = {
   BE: "Flybe — ceased Mar 2020 (and again Jan 2023)",
   SN: "Brussels Airlines — still flying (control)",
 };
-console.log("\ndefunct-carrier presence (each row is a route the world no longer has):");
+console.log(
+  "\ndefunct-carrier presence (each row is a route the world no longer has):",
+);
 for (const [code, note] of Object.entries(defunct)) {
   const n = rows.filter((r) => r[0] === code).length;
   console.log(`  ${code.padEnd(4)} ${String(n).padStart(6)} routes — ${note}`);
@@ -73,9 +86,18 @@ for (const [code, note] of Object.entries(defunct)) {
 // ---------------------------------------------------------------------
 console.log("\nlive route/schedule APIs, unauthenticated probe:");
 const probes = [
-  ["Amadeus Self-Service (airport direct destinations)", "https://test.api.amadeus.com/v1/airport/direct-destinations?departureAirportCode=CDG"],
-  ["Aviationstack (routes)", "https://api.aviationstack.com/v1/routes?dep_iata=CDG"],
-  ["AeroDataBox (RapidAPI, airport routes)", "https://aerodatabox.p.rapidapi.com/airports/iata/CDG/stats/routes/daily"],
+  [
+    "Amadeus Self-Service (airport direct destinations)",
+    "https://test.api.amadeus.com/v1/airport/direct-destinations?departureAirportCode=CDG",
+  ],
+  [
+    "Aviationstack (routes)",
+    "https://api.aviationstack.com/v1/routes?dep_iata=CDG",
+  ],
+  [
+    "AeroDataBox (RapidAPI, airport routes)",
+    "https://aerodatabox.p.rapidapi.com/airports/iata/CDG/stats/routes/daily",
+  ],
   ["OAG (schedules)", "https://api.oag.com/flight-instances/"],
 ];
 for (const [name, url] of probes) {
@@ -96,7 +118,10 @@ for (const [name, url] of probes) {
 console.log("\nrung-5a reachability — airport/carrier own pages (HEAD):");
 for (const [name, url] of [
   ["Heathrow (airport operator)", "https://www.heathrow.com/arrivals"],
-  ["Aeroports de Paris (operator)", "https://www.parisaeroport.fr/en/passengers/flights"],
+  [
+    "Aeroports de Paris (operator)",
+    "https://www.parisaeroport.fr/en/passengers/flights",
+  ],
   ["Narita (airport operator)", "https://www.narita-airport.jp/en/flight/"],
 ]) {
   try {

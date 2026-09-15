@@ -73,7 +73,16 @@ out tags;`;
       `    example: ${JSON.stringify(
         Object.fromEntries(
           Object.entries(example.tags).filter(([k]) =>
-            ["name", "from", "to", "operator", "duration", "interval", "motor_vehicle", "seasonal"].includes(k),
+            [
+              "name",
+              "from",
+              "to",
+              "operator",
+              "duration",
+              "interval",
+              "motor_vehicle",
+              "seasonal",
+            ].includes(k),
           ),
         ),
       )}`,
@@ -121,12 +130,16 @@ function parseCsv(text) {
 }
 const feeds = parseCsv(
   await (
-    await fetch("https://storage.googleapis.com/storage/v1/b/mdb-csv/o/sources.csv?alt=media", {
-      headers: { "User-Agent": "roam-spike" },
-    })
+    await fetch(
+      "https://storage.googleapis.com/storage/v1/b/mdb-csv/o/sources.csv?alt=media",
+      {
+        headers: { "User-Agent": "roam-spike" },
+      },
+    )
   ).text(),
 );
-const national = /rail|railway|bahn|sncf|trenitalia|renfe|jr |national|intercity|ferry|ferries/i;
+const national =
+  /rail|railway|bahn|sncf|trenitalia|renfe|jr |national|intercity|ferry|ferries/i;
 for (const cc of ["DE", "FR", "IT", "ES", "JP", "GB", "KR", "NO", "GR", "HR"]) {
   const hits = feeds.filter(
     (f) => f["location.country_code"] === cc && f.data_type === "gtfs",
@@ -134,7 +147,12 @@ for (const cc of ["DE", "FR", "IT", "ES", "JP", "GB", "KR", "NO", "GR", "HR"]) {
   const rail = hits.filter((f) => national.test(`${f.provider} ${f.name}`));
   console.log(
     `  ${cc}: ${String(hits.length).padStart(4)} gtfs feeds, ${String(rail.length).padStart(3)} look intercity/rail/ferry${
-      rail.length ? ` — e.g. ${rail.slice(0, 2).map((f) => f.provider).join(" / ")}` : ""
+      rail.length
+        ? ` — e.g. ${rail
+            .slice(0, 2)
+            .map((f) => f.provider)
+            .join(" / ")}`
+        : ""
     }`,
   );
 }
@@ -142,7 +160,9 @@ for (const cc of ["DE", "FR", "IT", "ES", "JP", "GB", "KR", "NO", "GR", "HR"]) {
 // ---------------------------------------------------------------------
 // 3. Seasonality — the catalogue carries an explicit flag.
 // ---------------------------------------------------------------------
-const seasonal = feeds.filter((f) => f.is_seasonal === "True" || f.is_seasonal === "true");
+const seasonal = feeds.filter(
+  (f) => f.is_seasonal === "True" || f.is_seasonal === "true",
+);
 console.log(
   `\ncatalogue rows flagged is_seasonal: ${seasonal.length} — TT-06's seasonality field has a machine-readable home for feeds that carry it`,
 );

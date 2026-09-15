@@ -13,11 +13,26 @@
 
 console.log("1. schedule APIs, unauthenticated:");
 for (const [label, url] of [
-  ["Aviationstack /flightsFuture", "https://api.aviationstack.com/v1/flightsFuture?iataCode=CDG&type=departure&date=2026-11-01"],
-  ["Aviationstack /timetable", "https://api.aviationstack.com/v1/timetable?iataCode=CDG&type=departure"],
-  ["AeroDataBox schedules (RapidAPI)", "https://aerodatabox.p.rapidapi.com/flights/airports/iata/CDG/2026-11-01T08:00/2026-11-01T20:00"],
-  ["FlightAware AeroAPI", "https://aeroapi.flightaware.com/aeroapi/airports/KJFK/flights/scheduled_departures"],
-  ["OpenSky states (ADS-B, observed not scheduled)", "https://opensky-network.org/api/states/all?lamin=48.8&lomin=2.2&lamax=49.1&lomax=2.7"],
+  [
+    "Aviationstack /flightsFuture",
+    "https://api.aviationstack.com/v1/flightsFuture?iataCode=CDG&type=departure&date=2026-11-01",
+  ],
+  [
+    "Aviationstack /timetable",
+    "https://api.aviationstack.com/v1/timetable?iataCode=CDG&type=departure",
+  ],
+  [
+    "AeroDataBox schedules (RapidAPI)",
+    "https://aerodatabox.p.rapidapi.com/flights/airports/iata/CDG/2026-11-01T08:00/2026-11-01T20:00",
+  ],
+  [
+    "FlightAware AeroAPI",
+    "https://aeroapi.flightaware.com/aeroapi/airports/KJFK/flights/scheduled_departures",
+  ],
+  [
+    "OpenSky states (ADS-B, observed not scheduled)",
+    "https://opensky-network.org/api/states/all?lamin=48.8&lomin=2.2&lamax=49.1&lomax=2.7",
+  ],
 ]) {
   try {
     const r = await fetch(url, {
@@ -53,7 +68,12 @@ try {
   const plans = t.match(/Free[\s\S]{0,400}?Basic[\s\S]{0,600}?Professional/);
   console.log(`  HTTP ${p.status}`);
   if (plans) console.log(`  ${plans[0].slice(0, 900)}`);
-  for (const term of ["Flight Schedules", "Airline Routes", "Non-Commercial Use", "Commercial Use"]) {
+  for (const term of [
+    "Flight Schedules",
+    "Airline Routes",
+    "Non-Commercial Use",
+    "Commercial Use",
+  ]) {
     const i = t.indexOf(term);
     console.log(`  mentions "${term}": ${i >= 0 ? "yes" : "NO"}`);
   }
@@ -87,7 +107,9 @@ for (const [label, url, needles] of [
     for (const n of needles) {
       const re = new RegExp(`[^.]{0,180}${n}[^.]{0,180}\\.`, "i");
       const m = t.match(re);
-      console.log(`    "${n}": ${m ? m[0].trim().slice(0, 300) : "(not found)"}`);
+      console.log(
+        `    "${n}": ${m ? m[0].trim().slice(0, 300) : "(not found)"}`,
+      );
     }
   } catch (e) {
     console.log(`\n  ${label}: ${e.message}`);
@@ -103,14 +125,19 @@ for (const [label, url] of [
   ["Heathrow departures (operator)", "https://www.heathrow.com/departures"],
   ["Narita timetable (operator)", "https://www.narita-airport.jp/en/flight/"],
   ["Schiphol departures (operator)", "https://www.schiphol.nl/en/departures/"],
-  ["Lufthansa timetable (carrier)", "https://www.lufthansa.com/us/en/flight-timetable"],
+  [
+    "Lufthansa timetable (carrier)",
+    "https://www.lufthansa.com/us/en/flight-timetable",
+  ],
 ]) {
   try {
     const r = await fetch(url, {
       headers: { "User-Agent": "Mozilla/5.0 (roam spike)" },
       signal: AbortSignal.timeout(30000),
     });
-    console.log(`  ${label.padEnd(34)} HTTP ${r.status} (${r.headers.get("content-type")})`);
+    console.log(
+      `  ${label.padEnd(34)} HTTP ${r.status} (${r.headers.get("content-type")})`,
+    );
   } catch (e) {
     console.log(`  ${label.padEnd(34)} ${e.message}`);
   }

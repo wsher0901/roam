@@ -132,7 +132,7 @@ for (const metro of ["LON", "PAR", "TYO", "NYC", "OSA"]) {
   );
 }
 console.log("named misses, verified individually:");
-for (const code of ["ORY", "BVA", "NRT", "EWR", "LGW"]) {
+for (const code of ["CDG", "ORY", "BVA", "NRT", "EWR", "LGW"]) {
   const a = airports.find((x) => x.iata_code === code);
   console.log(
     `  ${code}: municipality=${JSON.stringify(a?.municipality)} keywords=${JSON.stringify(a?.keywords)}`,

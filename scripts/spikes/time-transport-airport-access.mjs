@@ -84,10 +84,16 @@ out tags;`;
     if (t.railway) stations.push(t.name || "(unnamed)");
   }
   console.log(
-    `  ${name.padEnd(22)} ${Object.entries(kinds).map(([k, v]) => `${k}=${v}`).join(", ") || "(nothing tagged)"}`,
+    `  ${name.padEnd(22)} ${
+      Object.entries(kinds)
+        .map(([k, v]) => `${k}=${v}`)
+        .join(", ") || "(nothing tagged)"
+    }`,
   );
   if (stations.length)
-    console.log(`     rail stations: ${[...new Set(stations)].slice(0, 5).join(" | ")}`);
+    console.log(
+      `     rail stations: ${[...new Set(stations)].slice(0, 5).join(" | ")}`,
+    );
 }
 
 // ---------------------------------------------------------------------
@@ -101,7 +107,9 @@ if (cbp.ok) {
   const list = await cbp.json();
   console.log(`  /api/airports: HTTP ${cbp.status}, ${list.length} rows`);
   console.log(`  keys: ${Object.keys(list[0]).join(", ")}`);
-  console.log(`  sample: ${JSON.stringify(list.find((a) => a.IATA === "JFK") ?? list[0])}`);
+  console.log(
+    `  sample: ${JSON.stringify(list.find((a) => a.IATA === "JFK") ?? list[0])}`,
+  );
   console.log(
     `  distinct IATA codes covered: ${new Set(list.map((a) => a.IATA)).size} — ALL UNITED STATES`,
   );
@@ -117,7 +125,9 @@ for (const p of ["/api/waitTime/csv", "/api/waitTime/excel"]) {
   const body = await r.text();
   console.log(
     `  ${p}: HTTP ${r.status}, content-type ${r.headers.get("content-type")} — ${
-      body.startsWith("<!doctype") ? "returns the SPA shell, not data (params undiscovered)" : "returns data"
+      body.startsWith("<!doctype")
+        ? "returns the SPA shell, not data (params undiscovered)"
+        : "returns data"
     }`,
   );
 }
@@ -126,12 +136,20 @@ for (const p of ["/api/waitTime/csv", "/api/waitTime/excel"]) {
 // 3. Buffers — no feed exists anywhere. Confirm the rung-5a targets are
 //    reachable, because that is the whole of this sub-slot's ladder.
 // ---------------------------------------------------------------------
-console.log("\ncheck-in / bag-drop cutoffs — the rung-5a targets (carrier is authoritative for its own cutoff):");
+console.log(
+  "\ncheck-in / bag-drop cutoffs — the rung-5a targets (carrier is authoritative for its own cutoff):",
+);
 for (const [name, url] of [
-  ["British Airways (carrier)", "https://www.britishairways.com/en-gb/information/at-the-airport/check-in"],
+  [
+    "British Airways (carrier)",
+    "https://www.britishairways.com/en-gb/information/at-the-airport/check-in",
+  ],
   ["Lufthansa (carrier)", "https://www.lufthansa.com/us/en/check-in-deadlines"],
   ["Japan Airlines (carrier)", "https://www.jal.co.jp/jp/en/inter/checkin/"],
-  ["Heathrow (airport operator)", "https://www.heathrow.com/at-the-airport/check-in"],
+  [
+    "Heathrow (airport operator)",
+    "https://www.heathrow.com/at-the-airport/check-in",
+  ],
 ]) {
   try {
     const r = await fetch(url, {

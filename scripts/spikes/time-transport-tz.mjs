@@ -12,11 +12,15 @@
 // 1. The tz database, in-process.
 // ---------------------------------------------------------------------
 console.log(`node: ${process.version}`);
-console.log(`bundled tzdata version: ${process.versions.tz ?? "(not exposed)"}`);
+console.log(
+  `bundled tzdata version: ${process.versions.tz ?? "(not exposed)"}`,
+);
 console.log(`ICU: ${process.versions.icu ?? "(none)"}`);
 const zones = Intl.supportedValuesOf("timeZone");
 console.log(`Intl.supportedValuesOf("timeZone"): ${zones.length} zones`);
-console.log(`  sample: ${zones.slice(0, 4).join(", ")} … ${zones.slice(-3).join(", ")}`);
+console.log(
+  `  sample: ${zones.slice(0, 4).join(", ")} … ${zones.slice(-3).join(", ")}`,
+);
 
 // ---------------------------------------------------------------------
 // 2. Offset computation — the TT-04 value, DST-correct by construction.
@@ -58,7 +62,12 @@ for (const iso of ["2026-03-28T12:00:00Z", "2026-03-30T12:00:00Z"]) {
 
 // Half-hour and three-quarter-hour zones — the other naive-table failure.
 console.log("\nnon-integer offsets:");
-for (const z of ["Asia/Kolkata", "Asia/Kathmandu", "Australia/Eucla", "Pacific/Chatham"]) {
+for (const z of [
+  "Asia/Kolkata",
+  "Asia/Kathmandu",
+  "Australia/Eucla",
+  "Pacific/Chatham",
+]) {
   console.log(`  ${z.padEnd(20)} ${fmt(offsetMinutes(z, new Date()))}`);
 }
 

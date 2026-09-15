@@ -11,11 +11,31 @@
 
 const probes = [
   // [label, url, no-key?, mode]
-  ["Transport for London — tube", "https://api.tfl.gov.uk/Line/Mode/tube/Disruption", "metro"],
-  ["Transport for London — all modes", "https://api.tfl.gov.uk/Line/Mode/tube,dlr,overground,elizabeth-line,tram/Status", "metro"],
-  ["MTA New York — service alerts (GTFS-RT JSON)", "https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/camsys%2Fall-alerts.json", "metro"],
-  ["Bay Area 511 (needs key — control)", "https://api.511.org/transit/servicealerts?agency=BA", "metro"],
-  ["Rejseplanen / Denmark", "https://www.rejseplanen.dk/bin/rest.exe/trafficMessages?format=json", "rail"],
+  [
+    "Transport for London — tube",
+    "https://api.tfl.gov.uk/Line/Mode/tube/Disruption",
+    "metro",
+  ],
+  [
+    "Transport for London — all modes",
+    "https://api.tfl.gov.uk/Line/Mode/tube,dlr,overground,elizabeth-line,tram/Status",
+    "metro",
+  ],
+  [
+    "MTA New York — service alerts (GTFS-RT JSON)",
+    "https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/camsys%2Fall-alerts.json",
+    "metro",
+  ],
+  [
+    "Bay Area 511 (needs key — control)",
+    "https://api.511.org/transit/servicealerts?agency=BA",
+    "metro",
+  ],
+  [
+    "Rejseplanen / Denmark",
+    "https://www.rejseplanen.dk/bin/rest.exe/trafficMessages?format=json",
+    "rail",
+  ],
 ];
 
 console.log("operator disruption feeds — unauthenticated probe:");
@@ -61,7 +81,9 @@ if (r.ok) {
   const s = disrupted[0]?.lineStatuses?.[0] ?? lines[0]?.lineStatuses?.[0];
   if (s) {
     console.log(`  lineStatus keys: ${Object.keys(s).join(", ")}`);
-    console.log(`    statusSeverity: ${s.statusSeverity} (${s.statusSeverityDescription})  -> maps to TT-08 severity`);
+    console.log(
+      `    statusSeverity: ${s.statusSeverity} (${s.statusSeverityDescription})  -> maps to TT-08 severity`,
+    );
     console.log(`    reason: ${String(s.reason ?? "(none)").slice(0, 140)}`);
     const vp = s.validityPeriods?.[0];
     console.log(
@@ -77,9 +99,18 @@ if (r.ok) {
 // ---------------------------------------------------------------------
 console.log("\nglobal aggregator candidates:");
 for (const [label, url] of [
-  ["Transitland service alerts (key-gated)", "https://transit.land/api/v2/rest/feeds?limit=1"],
-  ["Mobility Database API (key-gated)", "https://api.mobilitydatabase.org/v1/gtfs_feeds?limit=1"],
-  ["EU ITS national access point index", "https://transport.ec.europa.eu/transport-themes/intelligent-transport-systems/road/action-plan-and-directive/national-access-points_en"],
+  [
+    "Transitland service alerts (key-gated)",
+    "https://transit.land/api/v2/rest/feeds?limit=1",
+  ],
+  [
+    "Mobility Database API (key-gated)",
+    "https://api.mobilitydatabase.org/v1/gtfs_feeds?limit=1",
+  ],
+  [
+    "EU ITS national access point index",
+    "https://transport.ec.europa.eu/transport-themes/intelligent-transport-systems/road/action-plan-and-directive/national-access-points_en",
+  ],
 ]) {
   try {
     const rr = await fetch(url, {
@@ -92,5 +123,5 @@ for (const [label, url] of [
   }
 }
 console.log(
-  "\nNO global disruption aggregator was found. GTFS-RT service alerts exist\nper operator, and the catalogue lists gtfs-rt feeds, but there is no single\nsource that answers \"is anything broken in <region> on <date>\" worldwide.\nThat absence is why TT-08 grades where it does.",
+  '\nNO global disruption aggregator was found. GTFS-RT service alerts exist\nper operator, and the catalogue lists gtfs-rt feeds, but there is no single\nsource that answers "is anything broken in <region> on <date>" worldwide.\nThat absence is why TT-08 grades where it does.',
 );
