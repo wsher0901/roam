@@ -1460,7 +1460,8 @@ the link for the full story.
   [Sky & sea](data/FACTS.md#f-ss--sky--sea-10--source-task-v1s1t3),
   [Feasibility](data/FACTS.md#f-fe--feasibility-14--source-task-v1s1t4),
   [Time & transport](data/FACTS.md#f-tt--time--transport-8--source-task-v1s1t5),
-  [Crowds & calendar](data/FACTS.md#f-cc--crowds--calendar-8--source-task-v1s1t6).
+  [Crowds & calendar](data/FACTS.md#f-cc--crowds--calendar-8--source-task-v1s1t6),
+  [Cost](data/FACTS.md#f-co--cost-3--source-task-v1s1t8).
 - **TP parameters (TP-01..47)** — everything a traveler may TELL
   the engine; all optional, all defaulting to Null.
   Home: [FACTS Appendix
@@ -1825,7 +1826,7 @@ the link for the full story.
   Home: [FOUNDATION §The spine](FOUNDATION.md#the-spine).
 - **validity engine** — the deterministic checks-and-scoring module
   (the isolated [engine/](../engine/README.md) directory; often
-  just "the engine"): it fetches facts, runs the five families'
+  just "the engine"): it fetches facts, runs the six families'
   checks, and scores plans — distinct from the brain. Built in
   [V1.S3](ROADMAP.md#v1s3--engine-core--two-families-deep).
 - **planning brain** — Claude (server-side API) doing the
@@ -1841,19 +1842,23 @@ the link for the full story.
   renders labeled unverified. Home:
   [FOUNDATION §The reliability law](FOUNDATION.md#the-reliability-law);
   engine rules: [ENGINE §11](ENGINE.md#11-invariants--the-reliability-law).
-- **reliability ladder** — the six fallback rungs for
+- **reliability ladder** — the seven fallback rungs for
   coverage-risky facts: global source → regional source → computed
-  → estimated (labeled) → LLM-research grade (unverified) → refusal
-  ([D-010](record/DECISIONS.md#d-010--global-coverage-via-graded-fallback-ladders);
+  → estimated (labeled) → model-retrieved with provenance (5a) →
+  model memory (5b, unverified) → refusal
+  ([D-010](record/DECISIONS.md#d-010--global-coverage-via-graded-fallback-ladders),
+  split at rung 5 by [D-088](record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state);
   [ENGINE §3](ENGINE.md#3-acquire--get-the-facts)).
 - **preferences-as-defaults** — the engine honors a stated
   preference but surfaces a significantly better alternative when
   one exists; preferences steer, they don't blind. Home:
   [ENGINE §6](ENGINE.md#6-synthesize--build-the-plan).
 - **provenance** — every stored traveler value is marked stated,
-  inferred, or default; stated beats inferred beats default, newer
-  beats older
-  ([D-012](record/DECISIONS.md#d-012--elicitation-and-inference-policy);
+  inferred, derived, or default; stated beats inferred beats
+  default, newer beats older, and `derived` sits outside that
+  order because the engine computed it
+  ([D-012](record/DECISIONS.md#d-012--elicitation-and-inference-policy),
+  [D-088](record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state);
   [ENGINE §2](ENGINE.md#2-intake--resolve-the-traveler)).
 - **floor input** — the guaranteed minimum: origin + dates is
   always enough to get a plan
@@ -1899,9 +1904,9 @@ Sources:
 [V1.S1.T7](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
 
 **Fact IDs and families.** Every world fact has a stable ID:
-F-&lt;family&gt;-&lt;number&gt;, across five families — F-WX weather,
+F-&lt;family&gt;-&lt;number&gt;, across six families — F-WX weather,
 F-SS sky & sea, F-FE feasibility, F-TT time & transport, F-CC crowds
-& calendar. IDs never change meaning; extension is append-only. Each
+& calendar, and F-CO cost ([D-088](record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state)). IDs never change meaning; extension is append-only. Each
 fact entry states What it is, which spine step consumes it, its
 geographic scope, its freshness need, its type, and its source slot.
 FACTS lists check INPUTS only — how facts become scores is engine
@@ -1913,6 +1918,7 @@ Sources:
 [F-FE feasibility](data/FACTS.md#f-fe--feasibility-14--source-task-v1s1t4)
 [F-TT time & transport](data/FACTS.md#f-tt--time--transport-8--source-task-v1s1t5)
 [F-CC crowds & calendar](data/FACTS.md#f-cc--crowds--calendar-8--source-task-v1s1t6)
+[F-CO cost](data/FACTS.md#f-co--cost-3--source-task-v1s1t8)
 [FACTS](data/FACTS.md)
 [V1.S3](ROADMAP.md#v1s3--engine-core--two-families-deep)
 
@@ -1926,10 +1932,12 @@ needs are covered by freshness tightening as the activity date
 nears. Inside the forecast horizon, Suggest sharpens its merit read
 with the real forecast instead of climatology.
 
-**Fact types.** fetched (from an external source) · computed
-(math — exact everywhere, no fetch) · curated (maintained in-repo
-as data) · estimated (labeled ranges) · LLM-research grade (always
-rendered unverified). A computed fact names the slot of its primary
+**Fact types.** fetched (from an external source, INCLUDING a
+rung-5a retrieval) · computed (math — exact everywhere, no fetch) ·
+curated (maintained in-repo as data) · estimated (labeled ranges) ·
+derived (composed from other stored facts) · model memory — what
+the corpus once called LLM-research grade — which is rung 5b and
+always renders unverified ([D-088](record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state)). A computed fact names the slot of its primary
 input — no separate fetch occurs.
 
 **Source slots and Dictionaries.** The source slot is the join key
@@ -1947,7 +1955,8 @@ Sources:
 
 **Grades.** Each vetted source earns a reliability grade, A–D, which
 decides how its facts RENDER — from verified (A) through labeled
-estimate (C) to always-unverified (D). The canonical grade → render
+estimate (C) to always-unverified (D). A rung-5a retrieval is
+graded the same way, by the domain it was quoted from. The canonical grade → render
 matrix is ENGINE §7; grades are living — demoted on sustained
 failure, drift, or miscalibration, promoted only by re-vetting
 ([D-015](record/DECISIONS.md#d-015--data-asset-law)).
@@ -1963,9 +1972,13 @@ declares a fallback ladder, vetted top-down
 (1) a source
 global by construction (numerical models, astronomical math) → (2)
 regional authoritative sources → (3) computed from physics → (4)
-estimated ranges, labeled → (5) LLM-research grade, rendered
-unverified → (6) refusal — the engine says "can't verify here" rather
-than guessing. The ladder is how coverage stays global without the
+estimated ranges, labeled → (5a) MODEL-RETRIEVED WITH PROVENANCE,
+graded B from an authoritative domain and C elsewhere → (5b) MODEL
+MEMORY, graded D and rendered unverified → (6) refusal — the engine
+says "can't verify here" rather than guessing. Rung 5 split in two
+at [D-088](record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state), because a model that
+FETCHED an answer and a model that REMEMBERED one are not the same
+claim. The ladder is how coverage stays global without the
 reliability law bending: quality degrades HONESTLY, rung by labeled
 rung.
 

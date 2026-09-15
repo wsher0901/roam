@@ -120,15 +120,15 @@ Living, and the numbers are derived here rather than quoted.
 
 | Stage | Tasks | Ticked |
 | --- | --- | --- |
-| [V1.S1 — Data definition](../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code) | 7 | 2 |
+| [V1.S1 — Data definition](../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code) | 8 | 2 |
 | [V1.S2 — Skeleton & design](../ROADMAP.md#v1s2--skeleton--design-foundations-parallel-lane-with-s1) | 5 | 3 |
-| [V1.S3 — Engine core](../ROADMAP.md#v1s3--engine-core--two-families-deep) | 7 | 0 |
+| [V1.S3 — Engine core](../ROADMAP.md#v1s3--engine-core--two-families-deep) | 8 | 0 |
 | [V1.S4 — Suggest](../ROADMAP.md#v1s4--suggest) | 3 | 0 |
 | [V1.S5 — Plan](../ROADMAP.md#v1s5--plan) | 3 | 0 |
-| [V1.S6 — Edit + revalidate](../ROADMAP.md#v1s6--edit--revalidate-the-money-moment) | 3 | 0 |
-| [V1.S7 — The other three families](../ROADMAP.md#v1s7--the-other-three-families-plug-in-proof) | 3 | 0 |
-| [V1.S8 — Demo polish](../ROADMAP.md#v1s8--demo-polish) | 3 | 0 |
-| **Total** | **34** | **5** |
+| [V1.S6 — Edit + revalidate](../ROADMAP.md#v1s6--edit--revalidate-the-money-moment) | 4 | 0 |
+| [V1.S7 — The other four families](../ROADMAP.md#v1s7--the-other-four-families-plug-in-proof) | 4 | 0 |
+| [V1.S8 — Demo polish](../ROADMAP.md#v1s8--demo-polish) | 4 | 0 |
+| **Total** | **39** | **5** |
 
 **THE COUNT DISAGREES WITH ITS OWN BIRTH RECORD, and the derivation
 wins.** D-006 and its history story both say 33 tasks; the file today
@@ -141,9 +141,12 @@ both postdate the cut, which is what a task added by later work looks
 like. This story does not assert that identification as fact: the
 lane writing it works from a shallow clone whose history floor is
 2026-08-04, so the commit that added the line is not readable from
-here. What IS certain is the arithmetic — 34 today, 33 at the cut —
-and that the difference went unnoticed because a count written as a
-literal is never re-checked.
+here. What IS certain is the arithmetic — 34 when this was written,
+33 at the cut — and that the difference went unnoticed because a
+count written as a literal is never re-checked. (The table above is
+re-derived at every reading, so it has moved on since: [D-088](../record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state)
+added four tasks on 2026-09-15. The argument is unaffected — it is
+about a literal that was never re-checked, not about the number.)
 
 That is the derivation law's whole argument, caught in the file the
 law was partly written for.
