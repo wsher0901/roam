@@ -308,9 +308,10 @@ checked the PAYLOAD, never the status code.
   outright by ToS 3.2.3(a) and (b); see
   [§ The Google Maps verdict](#the-google-maps-verdict). This is the
   slot where the licence costs Roam the most, and it is recorded as a
-  known, accepted cost rather than an oversight. **Foursquare Places**
-  — hours available, storage restricted to venue IDs.
-  **Yelp Fusion** — 24-hour cache cap.
+  known, accepted cost rather than an oversight. **Foursquare Places** and **Yelp Fusion**
+  — not vetted clause by clause (see
+  [§ venue-reputation](#venue-reputation)); not pursued for the same
+  reason.
   **Scraping operator sites at scale** — distinct from per-fact
   retrieval under a policy, and rejected: it is a different legal
   posture, a fragility burden, and it is not what
@@ -380,10 +381,12 @@ checked the PAYLOAD, never the status code.
 - Alternatives rejected: **Google Directions / Distance Matrix** — see
   [§ The Google Maps verdict](#the-google-maps-verdict); distance
   matrix results are named in ToS 3.2.3(a) as a thing that may not be
-  stored. **Mapbox Directions** — free tier exists, but its terms
-  forbid caching route results beyond 30 days, which is the same
-  [D-015](../record/DECISIONS.md#d-015--data-asset-law) disqualifier in
-  a different wrapper. **OSRM demo as primary** — rejected on the
+  stored. **Mapbox Directions** — NOT VETTED, and
+  recorded as unvetted rather than rejected: its retention terms live
+  in the Mapbox Product Terms, which this bench did not read, so no
+  claim is made about them. It was not pursued because Valhalla
+  already answers FE-06 at rung 1 over ODbL data with no retention
+  question to resolve. **OSRM demo as primary** — rejected on the
   profile-collapse finding above; kept as the car-matrix path only.
 
 ## fx-rates
@@ -513,14 +516,17 @@ checked the PAYLOAD, never the status code.
   result), World Bank (four real PPP factors returned) and printed the
   negative verdict above.
 - Alternatives rejected: **Numbeo** — the obvious cost-of-living
-  dataset; key-gated and its terms forbid redistribution and storage
-  of the dataset, a
-  [D-015](../record/DECISIONS.md#d-015--data-asset-law) disqualifier
-  even with a paid key (verified 2026-09-15). **Scraped menu and
+  dataset. What WAS verified 2026-09-15 is that its API is key-gated:
+  the spike's unkeyed call was refused. Its licence terms were NOT
+  read in this bench, so this entry makes no claim about them; it is
+  recorded as key-gated-and-unvetted, and would need a terms read
+  before any adoption. **Scraped menu and
   admission prices** — forbidden outright by
   [D-088](../record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state)
-  ruling 8 ("never a scraped price"). **Expedia/Booking rate APIs** —
-  booking-partner terms, and booking is out of V1 scope entirely.
+  ruling 8 ("never a scraped price"). **Expedia / Booking rate APIs** — not
+  vetted, and not needed: booking is out of V1 scope entirely, and a
+  rate API answers [F-CO](FACTS.md#f-co--cost-3--source-task-v1s1t8)'s
+  question, not this one's.
 
 ## venue-reputation
 
@@ -583,13 +589,18 @@ checked the PAYLOAD, never the status code.
   quoted above and printed the momentum-is-seasonal finding.
 - Alternatives rejected: **Google Places ratings / review counts** —
   see [§ The Google Maps verdict](#the-google-maps-verdict).
-  **TripAdvisor Content API** — partner-gated, display-only, no
-  storage. **Yelp Fusion** — its terms forbid storing or displaying
-  data outside a Yelp-branded context and cap caching at 24 hours.
-  **Foursquare Places** — storage restricted to venue IDs. All four
-  are the same [D-015](../record/DECISIONS.md#d-015--data-asset-law)
-  disqualifier; the pageview proxy is chosen precisely because it is
-  weak-but-ownable rather than strong-but-rented.
+  **TripAdvisor Content API**, **Yelp Fusion** and
+  **Foursquare Places** — NOT VETTED CLAUSE BY CLAUSE, and said
+  plainly rather than asserted: each is partner- or key-gated behind
+  an application this bench did not make, so their retention terms
+  were not read and no quotation of them appears here. They were not
+  pursued because the one platform whose terms WERE read in full
+  refuses the asset layer outright, and because a review platform's
+  ratings are its product — the prior that the others restrict
+  retention too is strong, but a prior is not a vetting, and if one of
+  them is ever wanted its terms get their own read.
+  The pageview proxy is chosen because it is weak-but-ownable rather
+  than strong-but-rented.
 
 ## money-saving-tips
 
