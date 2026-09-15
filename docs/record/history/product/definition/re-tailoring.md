@@ -1,20 +1,27 @@
 ---
-type: memory
+type: history
 id: re-tailoring
-updated: 2026-09-15 · founder's answers applied · control tower (home PC)
+shipped: 2026-09-15 19:42 UTC
+pr: #367
+synthesis: deferred — D-086
+carried_workshop_items: HOME §Terms + §Reading the data files (the
+  ladder, fact types, provenance gloss, grades blurb, family list) ·
+  chronicle/roadmap.md (the V1.S7 citation and the re-derived stage
+  table) · the no-counts-in-headings convention now standing in
+  FACTS §How to read this file — named per ship §7's MIXED case so
+  the catch-up synthesis bench walks them rather than discovering
+  them
 ---
 # re-tailoring — the September re-tailoring
 
 ## Status
 
-complete, awaiting merge — 2026-09-15. All eighteen rulings applied,
-`D-088` appended, entry and ripple in ONE commit (`2f70a56`). The
-critic round ran and returned sixteen findings; all sixteen are
-answered. The founder reviewed `841b8e5` — PASS, zero findings — and
-answered both `BLOCKED:` lines: **Q1 FREEZE**, **Q2 NARROW**. Both
-are applied, so the payload moved and the review re-issues per sha.
-At THE GATE. DO NOT MERGE — the founder's word is "review" on the
-Web surface.
+shipped — merged [#367](https://github.com/wsher0901/roam/pull/367)
+on 2026-09-15, at head `0469e54`, after the external Web review
+re-issued PASS per sha. Eighteen rulings recorded as `D-088` with
+the ripple in one commit; the founder's two `BLOCKED:` answers —
+Q1 FREEZE, Q2 NARROW — applied before the merge word. No ROADMAP
+tick: this bench is a decision, not a task.
 
 ## What this task is
 
@@ -22,7 +29,7 @@ Record eighteen founder rulings taken on the Web surface
 2026-09-11 → 15 as `D-088 — [product] The September re-tailoring —
 retrieval, the optimizer, cost, trend, state`, and ripple them in
 the same commit. The contract is
-[the spec](../record/specs/re-tailoring.md).
+[the spec](../../../specs/re-tailoring.md).
 
 The short version: the June definitions assumed a model that only
 structures text. Retrieval with citations changed what is
@@ -34,7 +41,7 @@ stateless over a versioned state store; and the receipt — not the
 plan — becomes the demo.
 
 Product work inside the product-first window
-([D-086](../record/DECISIONS.md#d-086--workshop-the-product-first-window)).
+([D-086](../../../DECISIONS.md#d-086--workshop-the-product-first-window)).
 No ROADMAP tick.
 
 ## Pending issues
@@ -63,10 +70,10 @@ else". Two of its own VERIFY conditions could not be met inside
 that fence:
 
 - `grep "five families" → 0 outside record/ and chronicle/`
-  required [HOME](../HOME.md), which is neither. Two lines swept
+  required [HOME](../../../../HOME.md), which is neither. Two lines swept
   there, plus the family-ID list, which had to learn `F-CO`.
 - Ruling 8 ordered
-  [V1.S7](../ROADMAP.md#v1s7--the-other-four-families-plug-in-proof)
+  [V1.S7](../../../../ROADMAP.md#v1s7--the-other-four-families-plug-in-proof)
   retitled "The other four families". That slug is cited once from
   `docs/chronicle/roadmap.md`, and `check:links` walks the chronicle
   like everything else — so the rename REQUIRED repairing that
@@ -80,7 +87,7 @@ does not bind `check:links`, which walks all 360.
 **Where the numbers came from.** Nothing was copied. The V1 total
 was derived by walking the checkbox lines: S1 8 · S2 5 · S3 8 ·
 S4 3 · S5 3 · S6 4 · S7 4 · S8 4 = **39, 5 done** (the mandate
-predicted 39 and the walk agreed). [FACTS](../data/FACTS.md) was
+predicted 39 and the walk agreed). [FACTS](../../../../data/FACTS.md) was
 counted the same way — **59** `### F-XX-NN` headings and **49**
 `| TP-NN |` rows, no duplicates in either. `OPEN-1..10` unique.
 
@@ -91,7 +98,7 @@ the log's own law, ruled at
 [#193](https://github.com/wsher0901/roam/pull/193), is that
 amendments live in NEW entries and the amended entry is left
 unannotated. Reading "D-011/D-012's table" as
-[FACTS Appendix A](../data/FACTS.md#appendix-a--traveler-parameters-tp-0147--per-d-011--d-012)
+[FACTS Appendix A](../../../../data/FACTS.md#appendix-a--traveler-parameters-tp-0147--per-d-011--d-012)
 — which is literally what that table is — satisfies both the ruling
 and the law: the note went into Appendix A, linking D-088, and the
 two frozen entries were not touched.
@@ -99,11 +106,11 @@ two frozen entries were not touched.
 **Two derived consequences the mandate did not spell out**, both
 recorded in D-088:
 
-- [V1.S1.T7](../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
+- [V1.S1.T7](../../../../ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
   became `[seq after T1–T6 and T8]`. The mandate said T7
   consolidates FIVE files; the fifth is T8's, so T7 cannot precede
   T8. Naming any dependency means naming all of them
-  ([D-087](../record/DECISIONS.md#d-087--product-the-model-boundary-and-three-plan-corrections)'s
+  ([D-087](../../../DECISIONS.md#d-087--product-the-model-boundary-and-three-plan-corrections)'s
   own correction), so T1–T6 stayed in the tag.
 - The `weather-alerts` slot's retrieval policy says the slot has
   **no rung 5b**. It follows from the slot's existing rule — never
@@ -121,11 +128,11 @@ pass · Actions green on every pushed head.
 findings against the pushed head; all answered, the diff changed,
 CI re-green. Three would have shipped as defects:
 
-1. **[ENGINE §11](../ENGINE.md#11-invariants--the-reliability-law)'s
+1. **[ENGINE §11](../../../../ENGINE.md#11-invariants--the-reliability-law)'s
    boundary clause still read "rung 5" while the new paragraph
    beside it announced the boundary was "unchanged across both".**
    Literally: a rung-5a value could never reach
-   [Judge](../ENGINE.md#4-judge--per-check-verdicts), which would
+   [Judge](../../../../ENGINE.md#4-judge--per-check-verdicts), which would
    have made the retrieval module and half of ruling 1 dead on
    arrival. **The lesson is exact and worth keeping: when an
    amendment SPLITS a term, the sentences that use the old term are
@@ -139,7 +146,7 @@ CI re-green. Three would have shipped as defects:
    and no supersede rank for the new tag. Reconciled to four, with
    `derived` deliberately held OUTSIDE the supersede order rather
    than given a rank nobody decided.
-3. **[FACTS](../data/FACTS.md) still said cost meant ranges only**,
+3. **[FACTS](../../../../data/FACTS.md) still said cost meant ranges only**,
    twice, one of them nine lines above the new text contradicting
    it.
 
@@ -163,23 +170,23 @@ Review of `841b8e5` came back PASS with zero findings, and both
 review re-issues against the new sha.
 
 **Q1 → FREEZE, and it minted a small standing rule.** The four
-count-bearing [FACTS](../data/FACTS.md) headings keep their text;
+count-bearing [FACTS](../../../../data/FACTS.md) headings keep their text;
 one of them alone carries 47 inbound links, several from frozen
 record files that may not be edited. Each STALE one now carries a
 line saying so —
-[F-FE (14)](../data/FACTS.md#f-fe--feasibility-14--source-task-v1s1t4)
+[F-FE (14)](../../../../data/FACTS.md#f-fe--feasibility-14--source-task-v1s1t4)
 holding 16,
-[Appendix A (TP-01..47)](../data/FACTS.md#appendix-a--traveler-parameters-tp-0147--per-d-011--d-012)
+[Appendix A (TP-01..47)](../../../../data/FACTS.md#appendix-a--traveler-parameters-tp-0147--per-d-011--d-012)
 holding 49, and the
-[T2–T6 assignment map](../data/FACTS.md#t2t6-assignment-map) now
+[T2–T6 assignment map](../../../../data/FACTS.md#t2t6-assignment-map) now
 spanning T8.
-[F-CC (8)](../data/FACTS.md#f-cc--crowds--calendar-8--source-task-v1s1t6)
+[F-CC (8)](../../../../data/FACTS.md#f-cc--crowds--calendar-8--source-task-v1s1t6)
 got NO line, because its count is still correct and the founder's
 instruction was "under each STALE heading" — it joins the class the
 moment CC gains a fact.
 
 The rule behind it went into
-[FACTS § How to read this file](../data/FACTS.md#how-to-read-this-file):
+[FACTS § How to read this file](../../../../data/FACTS.md#how-to-read-this-file):
 **headings never carry counts from here on.** Worth keeping because
 of WHY it exists — a count inside an anchor is a derived value
 welded into an identifier, so the derivation law forbids the literal
@@ -193,9 +200,9 @@ planning ahead of the plan. It does NOT bring mid-trip operations
 into V1: no live tracking, no notifications, no in-the-moment
 steering during an activity; those stay the mid-trip companion,
 V2+. The sentence landed in D-088's ruling 10, in
-[FOUNDATION §The spine](../FOUNDATION.md#the-spine), and as one
+[FOUNDATION §The spine](../../../../FOUNDATION.md#the-spine), and as one
 clause on
-[V1.S6.T4](../ROADMAP.md#v1s6--edit--revalidate-the-money-moment).
+[V1.S6.T4](../../../../ROADMAP.md#v1s6--edit--revalidate-the-money-moment).
 
 The distinction is sharper than "before vs during the trip", which
 was what made it look like a contradiction in the first place: the
@@ -207,12 +214,12 @@ features" refusal stands unedited and always did.
 
 ## Where to look
 
-- [the spec](../record/specs/re-tailoring.md) — the contract and
+- [the spec](../../../specs/re-tailoring.md) — the contract and
   its deviations.
 - [#367](https://github.com/wsher0901/roam/pull/367) — the draft PR
   and the two `BLOCKED:` lines.
-- [D-087](../record/DECISIONS.md#d-087--product-the-model-boundary-and-three-plan-corrections)
+- [D-087](../../../DECISIONS.md#d-087--product-the-model-boundary-and-three-plan-corrections)
   — the entry this one builds on; its model boundary holds
   unchanged across both new rungs.
-- [ENGINE §12](../ENGINE.md#12-open-register) — `OPEN-10`, and the
+- [ENGINE §12](../../../../ENGINE.md#12-open-register) — `OPEN-10`, and the
   keep-the-number rule that governs it.

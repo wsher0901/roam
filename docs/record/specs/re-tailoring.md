@@ -2,11 +2,12 @@
 type: spec
 id: re-tailoring
 title: The September re-tailoring
-status: open
+status: shipped
 stage: V1.S1
 branch: docs/re-tailoring
 pr: #367
 opened: 2026-09-15
+shipped: 2026-09-15
 ---
 # re-tailoring — eighteen rulings that re-cut the June definitions
 
