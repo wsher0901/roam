@@ -24,7 +24,9 @@ mid.setDate(mid.getDate() - 90);
 const start = new Date(end);
 start.setDate(start.getDate() - 180);
 
-console.log(`window: ${fmt(start)} -> ${fmt(end)} (recent half from ${fmt(mid)})\n`);
+console.log(
+  `window: ${fmt(start)} -> ${fmt(end)} (recent half from ${fmt(mid)})\n`,
+);
 
 const rows = [];
 for (const [label, title] of VENUES) {
@@ -41,8 +43,10 @@ for (const [label, title] of VENUES) {
   const midKey = fmt(mid) + "00";
   const recent = items.filter((i) => i.timestamp >= midKey);
   const older = items.filter((i) => i.timestamp < midKey);
-  const rAvg = recent.reduce((a, i) => a + i.views, 0) / Math.max(recent.length, 1);
-  const oAvg = older.reduce((a, i) => a + i.views, 0) / Math.max(older.length, 1);
+  const rAvg =
+    recent.reduce((a, i) => a + i.views, 0) / Math.max(recent.length, 1);
+  const oAvg =
+    older.reduce((a, i) => a + i.views, 0) / Math.max(older.length, 1);
   rows.push({
     label,
     total: items.reduce((a, i) => a + i.views, 0),
@@ -61,7 +65,15 @@ const max = rows[0]?.total ?? 1;
 for (const r of rows) {
   const share = r.total / max;
   const fame =
-    share > 0.5 ? "iconic" : share > 0.15 ? "classic" : share > 0.05 ? "known" : share > 0.01 ? "niche" : "hidden";
+    share > 0.5
+      ? "iconic"
+      : share > 0.15
+        ? "classic"
+        : share > 0.05
+          ? "known"
+          : share > 0.01
+            ? "niche"
+            : "hidden";
   console.log(
     `  ${r.label.padEnd(28)} ${String(r.total).padStart(9)} views/${r.days}d  share=${share.toFixed(3)}  -> fame_level=${fame}`,
   );

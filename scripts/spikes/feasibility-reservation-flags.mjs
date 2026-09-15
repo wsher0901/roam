@@ -23,18 +23,30 @@ nwr["amenity"="restaurant"];
   cover(els, "reservation=*", (e) => e.tags?.reservation);
   cover(els, "fee=*", (e) => e.tags?.fee);
   cover(els, "charge=*", (e) => e.tags?.charge);
-  cover(els, "website (the retrieval seed)", (e) => e.tags?.website ?? e.tags?.["contact:website"]);
+  cover(
+    els,
+    "website (the retrieval seed)",
+    (e) => e.tags?.website ?? e.tags?.["contact:website"],
+  );
   cover(els, "opening_hours", (e) => e.tags?.opening_hours);
 
   const withRes = els.filter((e) => e.tags?.reservation);
   const values = {};
-  for (const e of withRes) values[e.tags.reservation] = (values[e.tags.reservation] ?? 0) + 1;
+  for (const e of withRes)
+    values[e.tags.reservation] = (values[e.tags.reservation] ?? 0) + 1;
   console.log("  reservation values seen:", JSON.stringify(values));
   for (const e of withRes.slice(0, 5)) {
-    console.log(`    ${(e.tags.name ?? "(unnamed)").slice(0, 34).padEnd(36)} reservation=${e.tags.reservation}`);
+    console.log(
+      `    ${(e.tags.name ?? "(unnamed)").slice(0, 34).padEnd(36)} reservation=${e.tags.reservation}`,
+    );
   }
-  rows.push({ name, total: els.length, res: withRes.length,
-              site: els.filter((e) => e.tags?.website ?? e.tags?.["contact:website"]).length });
+  rows.push({
+    name,
+    total: els.length,
+    res: withRes.length,
+    site: els.filter((e) => e.tags?.website ?? e.tags?.["contact:website"])
+      .length,
+  });
 }
 
 const t = rows.reduce((a, r) => a + r.total, 0);

@@ -32,10 +32,12 @@ for (const profile of ["driving", "walking", "cycling"]) {
     const leg = d.routes[0];
     console.log(
       `  ${profile.padEnd(8)} code=${d.code} total=${(leg.distance / 1000).toFixed(2)} km` +
-      ` / ${(leg.duration / 60).toFixed(1)} min  legs=${leg.legs.length}`,
+        ` / ${(leg.duration / 60).toFixed(1)} min  legs=${leg.legs.length}`,
     );
   } catch (e) {
-    console.log(`  ${profile.padEnd(8)} UNAVAILABLE — ${e.message.split("\n")[0]}`);
+    console.log(
+      `  ${profile.padEnd(8)} UNAVAILABLE — ${e.message.split("\n")[0]}`,
+    );
   }
   await sleep(1200);
 }
@@ -58,10 +60,20 @@ tbl.distances.forEach((row, i) => {
   );
 });
 
-console.log("\n=== Valhalla (valhalla1.openstreetmap.de, FOSSGIS) — the walk/transit half");
+console.log(
+  "\n=== Valhalla (valhalla1.openstreetmap.de, FOSSGIS) — the walk/transit half",
+);
 const status = await get("https://valhalla1.openstreetmap.de/status");
-console.log("  version:", status.version, "| actions:", status.available_actions?.join(", "));
-console.log("  tileset_last_modified:", new Date(status.tileset_last_modified * 1000).toISOString());
+console.log(
+  "  version:",
+  status.version,
+  "| actions:",
+  status.available_actions?.join(", "),
+);
+console.log(
+  "  tileset_last_modified:",
+  new Date(status.tileset_last_modified * 1000).toISOString(),
+);
 
 for (const costing of ["auto", "pedestrian", "bicycle"]) {
   const req = {
@@ -76,15 +88,19 @@ for (const costing of ["auto", "pedestrian", "bicycle"]) {
     const s = d.trip.summary;
     console.log(
       `  ${costing.padEnd(11)} ${s.length.toFixed(2)} km / ${(s.time / 60).toFixed(1)} min` +
-      `  legs=${d.trip.legs.length}  status=${d.trip.status_message}`,
+        `  legs=${d.trip.legs.length}  status=${d.trip.status_message}`,
     );
   } catch (e) {
-    console.log(`  ${costing.padEnd(11)} UNAVAILABLE — ${e.message.split("\n")[0]}`);
+    console.log(
+      `  ${costing.padEnd(11)} UNAVAILABLE — ${e.message.split("\n")[0]}`,
+    );
   }
   await sleep(1500);
 }
 
-console.log("\n=== Valhalla /sources_to_targets — matrix with a pedestrian profile");
+console.log(
+  "\n=== Valhalla /sources_to_targets — matrix with a pedestrian profile",
+);
 try {
   const req = {
     sources: STOPS.map(([, lon, lat]) => ({ lon, lat })),
@@ -107,8 +123,12 @@ try {
 }
 
 console.log("\n=== transit (FE-06's third mode)");
-console.log("  Valhalla costing 'multimodal' needs a GTFS-fed tileset; the public");
-console.log("  FOSSGIS instance ships none. Probing it so the gap is measured, not assumed:");
+console.log(
+  "  Valhalla costing 'multimodal' needs a GTFS-fed tileset; the public",
+);
+console.log(
+  "  FOSSGIS instance ships none. Probing it so the gap is measured, not assumed:",
+);
 try {
   const req = {
     locations: [
@@ -124,6 +144,10 @@ try {
   console.log("  multimodal OK:", d.trip.summary.time / 60, "min");
 } catch (e) {
   console.log("  multimodal UNAVAILABLE —", e.message.split("\n")[0]);
-  console.log("  => transit is NOT served by this slot at rung 1; it is TT-07's");
-  console.log("     (local-transit, V1.S1.T5). Recorded as this slot's boundary.");
+  console.log(
+    "  => transit is NOT served by this slot at rung 1; it is TT-07's",
+  );
+  console.log(
+    "     (local-transit, V1.S1.T5). Recorded as this slot's boundary.",
+  );
 }

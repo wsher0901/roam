@@ -8,7 +8,9 @@ const UA = "RoamSpike/0.1 (+https://github.com/wsher0901/roam)";
 
 async function probe(name, url, note) {
   try {
-    const r = await fetch(url, { headers: { "User-Agent": UA, Accept: "application/json" } });
+    const r = await fetch(url, {
+      headers: { "User-Agent": UA, Accept: "application/json" },
+    });
     const body = await r.text();
     console.log(`\n${name}\n  HTTP ${r.status}  ${note}`);
     console.log(`  body: ${body.replace(/\s+/g, " ").slice(0, 240)}`);
@@ -46,7 +48,8 @@ if (eu.ok) {
       .map(([code, i]) => [labels[code] ?? code, vals[i]])
       .filter(([, v]) => v !== undefined && v !== null);
     console.log("  parsed (country -> price level index, EU27=100):");
-    for (const [c, v] of rows.slice(0, 8)) console.log(`    ${String(c).slice(0, 26).padEnd(28)} ${v}`);
+    for (const [c, v] of rows.slice(0, 8))
+      console.log(`    ${String(c).slice(0, 26).padEnd(28)} ${v}`);
     console.log(`  countries carrying a value: ${rows.length}`);
   } catch (e) {
     console.log("  parse failed:", e.message);
@@ -62,9 +65,13 @@ const wb = await probe(
 if (wb.ok) {
   try {
     const j = JSON.parse(wb.body);
-    console.log("  parsed (country -> PPP conversion factor, LCU per international $):");
+    console.log(
+      "  parsed (country -> PPP conversion factor, LCU per international $):",
+    );
     for (const row of j[1] ?? []) {
-      console.log(`    ${row.country.value.padEnd(16)} ${row.date}  ${row.value}`);
+      console.log(
+        `    ${row.country.value.padEnd(16)} ${row.date}  ${row.value}`,
+      );
     }
   } catch (e) {
     console.log("  parse failed:", e.message);

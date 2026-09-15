@@ -13,24 +13,45 @@
 const UA = "RoamSpike/0.1 (+https://github.com/wsher0901/roam)";
 
 const DOCS = [
-  ["Google Maps Platform Terms of Service", "https://cloud.google.com/maps-platform/terms/"],
-  ["Google Maps Platform Service Specific Terms", "https://cloud.google.com/maps-platform/terms/maps-service-terms"],
+  [
+    "Google Maps Platform Terms of Service",
+    "https://cloud.google.com/maps-platform/terms/",
+  ],
+  [
+    "Google Maps Platform Service Specific Terms",
+    "https://cloud.google.com/maps-platform/terms/maps-service-terms",
+  ],
 ];
 
 // The clauses that decide it. Each is looked up by an anchor phrase.
 const CLAUSES = [
   ["No Scraping (ToS 3.2.3(a))", "No Scraping", 1150],
   ["No Caching (ToS 3.2.3(b))", "No Caching", 260],
-  ["No Creating Content (ToS 3.2.3(c))", "No Creating Content From Google Maps Content", 900],
-  ["ID caching carve-out (SST)", "Customer may cache the Google ID values", 330],
+  [
+    "No Creating Content (ToS 3.2.3(c))",
+    "No Creating Content From Google Maps Content",
+    900,
+  ],
+  [
+    "ID caching carve-out (SST)",
+    "Customer may cache the Google ID values",
+    330,
+  ],
   ["Grounding permitted use (SST 10.2)", "10.2 Permitted Use", 1250],
   ["Grounding restrictions (SST 10.3)", "10.3 Additional Restrictions", 700],
 ];
 
 function strip(html) {
-  let t = html.replace(/<script[\s\S]*?<\/script>/gi, "").replace(/<style[\s\S]*?<\/style>/gi, "");
+  let t = html
+    .replace(/<script[\s\S]*?<\/script>/gi, "")
+    .replace(/<style[\s\S]*?<\/style>/gi, "");
   t = t.replace(/<[^>]+>/g, " ");
-  for (const [k, v] of Object.entries({ "&nbsp;": " ", "&amp;": "&", "&#39;": "'", "&quot;": '"' })) {
+  for (const [k, v] of Object.entries({
+    "&nbsp;": " ",
+    "&amp;": "&",
+    "&#39;": "'",
+    "&quot;": '"',
+  })) {
     t = t.split(k).join(v);
   }
   return t.replace(/\s+/g, " ").trim();
@@ -40,11 +61,15 @@ const corpus = [];
 for (const [name, url] of DOCS) {
   const r = await fetch(url, { headers: { "User-Agent": UA } });
   const text = strip(await r.text());
-  console.log(`fetched: ${name}\n  ${url}\n  HTTP ${r.status}, ${text.length} chars, read ${new Date().toISOString()}`);
+  console.log(
+    `fetched: ${name}\n  ${url}\n  HTTP ${r.status}, ${text.length} chars, read ${new Date().toISOString()}`,
+  );
   corpus.push([name, text]);
 }
 
-console.log("\n================ THE DECIDING CLAUSES, VERBATIM ================");
+console.log(
+  "\n================ THE DECIDING CLAUSES, VERBATIM ================",
+);
 let found = 0;
 for (const [label, anchor, span] of CLAUSES) {
   let hit = null;
@@ -57,7 +82,9 @@ for (const [label, anchor, span] of CLAUSES) {
   }
   console.log(`\n--- ${label}`);
   if (!hit) {
-    console.log("    NOT FOUND - the terms moved; the verdict must be re-vetted before it is trusted.");
+    console.log(
+      "    NOT FOUND - the terms moved; the verdict must be re-vetted before it is trusted.",
+    );
     continue;
   }
   found++;

@@ -42,15 +42,28 @@ console.log("\n=== affordance matrix (counts of supporting infrastructure)");
 const hdr = DESTS.map(([d]) => d.padStart(11)).join("");
 console.log("  " + "activity type".padEnd(26) + hdr);
 for (const [t] of TYPES) {
-  console.log("  " + t.padEnd(26) + DESTS.map(([d]) => String(table[d][t]).padStart(11)).join(""));
+  console.log(
+    "  " +
+      t.padEnd(26) +
+      DESTS.map(([d]) => String(table[d][t]).padStart(11)).join(""),
+  );
 }
 console.log("\n=== does it discriminate?");
 for (const [t] of TYPES) {
   const vals = DESTS.map(([d]) => table[d][t]);
-  const max = Math.max(...vals), min = Math.min(...vals);
+  const max = Math.max(...vals),
+    min = Math.min(...vals);
   const winner = DESTS[vals.indexOf(max)][0];
-  console.log(`  ${t.padEnd(26)} max=${winner} (${max}) min=${min} -> ${max > 0 && max >= 3 * Math.max(min, 1) ? "DISCRIMINATES" : "weak"}`);
+  console.log(
+    `  ${t.padEnd(26)} max=${winner} (${max}) min=${min} -> ${max > 0 && max >= 3 * Math.max(min, 1) ? "DISCRIMINATES" : "weak"}`,
+  );
 }
-console.log("\n  Read: counts answer 'does it SUPPORT x' at rung 1. They do NOT answer");
-console.log("  'is it FAMOUS for x' — that is the actual FE-02 claim, and it stays");
-console.log("  curated for demo destinations then retrieval (5a), model memory last.");
+console.log(
+  "\n  Read: counts answer 'does it SUPPORT x' at rung 1. They do NOT answer",
+);
+console.log(
+  "  'is it FAMOUS for x' — that is the actual FE-02 claim, and it stays",
+);
+console.log(
+  "  curated for demo destinations then retrieval (5a), model memory last.",
+);

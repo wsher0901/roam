@@ -39,12 +39,16 @@ nwr["amenity"~"^(restaurant|cafe|bar|pub|nightclub)$"];
 );out tags center;`;
   const data = await overpass(q);
   const els = data.elements ?? [];
-  console.log(`\n${city}  (osm base ${data.osm3s?.timestamp_osm_base ?? "?"}) - ${els.length} elements`);
+  console.log(
+    `\n${city}  (osm base ${data.osm3s?.timestamp_osm_base ?? "?"}) - ${els.length} elements`,
+  );
 
   for (const [cat, pred] of CATS) {
     const sub = els.filter((e) => pred(e.tags ?? {}));
     const withHours = sub.filter((e) => e.tags?.opening_hours);
-    const seasonal = sub.filter((e) => MONTHS.test(e.tags?.opening_hours ?? ""));
+    const seasonal = sub.filter((e) =>
+      MONTHS.test(e.tags?.opening_hours ?? ""),
+    );
     const named = sub.filter((e) => e.tags?.name);
     rows.push({
       city,
@@ -54,7 +58,9 @@ nwr["amenity"~"^(restaurant|cafe|bar|pub|nightclub)$"];
       hours: withHours.length,
       seasonal: seasonal.length,
     });
-    const pct = sub.length ? ((withHours.length / sub.length) * 100).toFixed(0) : "-";
+    const pct = sub.length
+      ? ((withHours.length / sub.length) * 100).toFixed(0)
+      : "-";
     console.log(
       `  ${cat.padEnd(16)} n=${String(sub.length).padStart(4)}` +
         `  named=${String(named.length).padStart(4)}` +
@@ -62,7 +68,9 @@ nwr["amenity"~"^(restaurant|cafe|bar|pub|nightclub)$"];
         `  month-range=${seasonal.length}`,
     );
     if (withHours.length) {
-      console.log(`      sample: ${JSON.stringify(withHours[0].tags.opening_hours)}`);
+      console.log(
+        `      sample: ${JSON.stringify(withHours[0].tags.opening_hours)}`,
+      );
     }
   }
   await sleep(6000); // be a good Overpass citizen
@@ -77,12 +85,16 @@ for (const r of rows) {
 }
 for (const [c, v] of Object.entries(byCity)) {
   const pct = v.total ? ((v.hours / v.total) * 100).toFixed(1) : "0.0";
-  console.log(`  ${c.padEnd(15)} ${String(v.hours).padStart(5)}/${String(v.total).padEnd(5)} = ${pct}%`);
+  console.log(
+    `  ${c.padEnd(15)} ${String(v.hours).padStart(5)}/${String(v.total).padEnd(5)} = ${pct}%`,
+  );
 }
 const t = rows.reduce((a, r) => a + r.total, 0);
 const h = rows.reduce((a, r) => a + r.hours, 0);
 const s = rows.reduce((a, r) => a + r.seasonal, 0);
-console.log(`  ${"ALL".padEnd(15)} ${String(h).padStart(5)}/${String(t).padEnd(5)} = ${((h / t) * 100).toFixed(1)}%`);
+console.log(
+  `  ${"ALL".padEnd(15)} ${String(h).padStart(5)}/${String(t).padEnd(5)} = ${((h / t) * 100).toFixed(1)}%`,
+);
 console.log(`  of which carry month-range (seasonal) syntax: ${s}`);
 
 console.log("\n=== by category, across all five cities");
@@ -93,7 +105,9 @@ for (const r of rows) {
   byCat[r.cat].hours += r.hours;
 }
 for (const [c, v] of Object.entries(byCat)) {
-  console.log(`  ${c.padEnd(16)} ${((v.hours / v.total) * 100).toFixed(1)}%  (${v.hours}/${v.total})`);
+  console.log(
+    `  ${c.padEnd(16)} ${((v.hours / v.total) * 100).toFixed(1)}%  (${v.hours}/${v.total})`,
+  );
 }
 
 console.log(`

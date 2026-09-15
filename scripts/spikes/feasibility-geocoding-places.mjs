@@ -17,9 +17,19 @@ const CITIES = [
 
 // FE-01 Dictionary, in order.
 const DICT = [
-  "geocode", "country", "region", "tz", "elevation_m", "currency_code",
-  "payment_norm", "languages", "english_friendliness_class",
-  "driving_side", "idp_required", "tap_water_class", "plug_type",
+  "geocode",
+  "country",
+  "region",
+  "tz",
+  "elevation_m",
+  "currency_code",
+  "payment_norm",
+  "languages",
+  "english_friendliness_class",
+  "driving_side",
+  "idp_required",
+  "tap_water_class",
+  "plug_type",
 ];
 
 async function nominatim(q) {
@@ -61,7 +71,9 @@ SELECT ?iso ?currency ?sideLabel
 } GROUP BY ?iso ?currency ?sideLabel`;
   const r = await fetch(
     `https://query.wikidata.org/sparql?format=json&query=${encodeURIComponent(query)}`,
-    { headers: { "User-Agent": UA, Accept: "application/sparql-results+json" } },
+    {
+      headers: { "User-Agent": UA, Accept: "application/sparql-results+json" },
+    },
   );
   if (!r.ok) throw new Error(`wikidata HTTP ${r.status}`);
   const out = {};
@@ -112,4 +124,7 @@ for (const k of DICT) {
   console.log(`  ${covered.has(k) ? "OK  " : "MISS"} ${k}`);
 }
 const missing = DICT.filter((k) => !covered.has(k));
-console.log("\nmissing (no open registry -> retrieval, rung 5a):", missing.join(", ") || "none");
+console.log(
+  "\nmissing (no open registry -> retrieval, rung 5a):",
+  missing.join(", ") || "none",
+);

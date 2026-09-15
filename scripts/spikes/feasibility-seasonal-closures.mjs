@@ -21,21 +21,37 @@ console.log(`Iceland: ${els.length} features\n`);
 console.log("=== FE-05 signal availability");
 const withOH = els.filter((e) => e.tags?.opening_hours);
 cover(els, "opening_hours present", (e) => e.tags?.opening_hours);
-cover(els, "  ...with month range", (e) => MONTHS.test(e.tags?.opening_hours ?? ""));
+cover(els, "  ...with month range", (e) =>
+  MONTHS.test(e.tags?.opening_hours ?? ""),
+);
 cover(els, "access:conditional", (e) => e.tags?.["access:conditional"]);
 cover(els, "seasonal=*", (e) => e.tags?.seasonal);
 
-console.log("\n=== real month-range values found (the fact, verbatim from OSM)");
+console.log(
+  "\n=== real month-range values found (the fact, verbatim from OSM)",
+);
 const seasonal = els.filter((e) => MONTHS.test(e.tags?.opening_hours ?? ""));
 for (const e of seasonal.slice(0, 12)) {
-  console.log(`  ${(e.tags.name ?? "(unnamed)").slice(0, 34).padEnd(36)} ${e.tags.opening_hours}`);
+  console.log(
+    `  ${(e.tags.name ?? "(unnamed)").slice(0, 34).padEnd(36)} ${e.tags.opening_hours}`,
+  );
 }
 console.log("\n=== access:conditional values (the pass-closure fact)");
 const cond = els.filter((e) => e.tags?.["access:conditional"]);
 for (const e of cond.slice(0, 10)) {
-  console.log(`  ${(e.tags.name ?? e.tags.ref ?? "(unnamed way)").slice(0, 34).padEnd(36)} ${e.tags["access:conditional"]}`);
+  console.log(
+    `  ${(e.tags.name ?? e.tags.ref ?? "(unnamed way)").slice(0, 34).padEnd(36)} ${e.tags["access:conditional"]}`,
+  );
 }
-console.log(`\n  month-range features: ${seasonal.length} / ${withOH.length} tagged / ${els.length} total`);
-console.log("  => the signal EXISTS and is machine-readable where tagged, but the");
-console.log("     denominator is the story: most seasonal operators are untagged,");
-console.log("     so this slot leans on retrieval (operator + park authority) at 5a.");
+console.log(
+  `\n  month-range features: ${seasonal.length} / ${withOH.length} tagged / ${els.length} total`,
+);
+console.log(
+  "  => the signal EXISTS and is machine-readable where tagged, but the",
+);
+console.log(
+  "     denominator is the story: most seasonal operators are untagged,",
+);
+console.log(
+  "     so this slot leans on retrieval (operator + park authority) at 5a.",
+);

@@ -22,7 +22,9 @@ export async function overpass(query, { attempts = 6 } = {}) {
       const body = await r.text();
       if (r.ok && !body.trimStart().startsWith("<")) return JSON.parse(body);
       const wait = 15000 * (i + 1);
-      console.log(`  (HTTP ${r.status} from ${new URL(ep).host} — waiting ${wait / 1000}s)`);
+      console.log(
+        `  (HTTP ${r.status} from ${new URL(ep).host} — waiting ${wait / 1000}s)`,
+      );
       await sleep(wait);
     } catch (e) {
       lastErr = e;
@@ -36,6 +38,8 @@ export async function overpass(query, { attempts = 6 } = {}) {
 export function cover(els, label, pred) {
   const n = els.filter(pred).length;
   const pct = els.length ? ((n / els.length) * 100).toFixed(1) : "0.0";
-  console.log(`  ${label.padEnd(26)} ${String(n).padStart(5)}/${els.length}  ${pct.padStart(5)}%`);
+  console.log(
+    `  ${label.padEnd(26)} ${String(n).padStart(5)}/${els.length}  ${pct.padStart(5)}%`,
+  );
   return n;
 }

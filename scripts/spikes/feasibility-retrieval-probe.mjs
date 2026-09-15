@@ -44,9 +44,19 @@ const TARGETS = [
 ];
 
 function strip(html) {
-  let t = html.replace(/<script[\s\S]*?<\/script>/gi, "").replace(/<style[\s\S]*?<\/style>/gi, "");
+  let t = html
+    .replace(/<script[\s\S]*?<\/script>/gi, "")
+    .replace(/<style[\s\S]*?<\/style>/gi, "");
   t = t.replace(/<[^>]+>/g, " ");
-  const ents = { "&nbsp;": " ", "&amp;": "&", "&#39;": "'", "&quot;": '"', "&euro;": "€", "&lt;": "<", "&gt;": ">" };
+  const ents = {
+    "&nbsp;": " ",
+    "&amp;": "&",
+    "&#39;": "'",
+    "&quot;": '"',
+    "&euro;": "€",
+    "&lt;": "<",
+    "&gt;": ">",
+  };
   for (const [k, v] of Object.entries(ents)) t = t.split(k).join(v);
   return t.replace(/\s+/g, " ").trim();
 }
@@ -59,10 +69,15 @@ for (const t of TARGETS) {
   console.log(`\n=== ${t.fact}  [${t.domainClass}] -> grade ${t.grade}`);
   console.log(`  url: ${t.url}`);
   try {
-    const r = await fetch(t.url, { headers: { "User-Agent": UA, Accept: "text/html" }, redirect: "follow" });
+    const r = await fetch(t.url, {
+      headers: { "User-Agent": UA, Accept: "text/html" },
+      redirect: "follow",
+    });
     console.log(`  HTTP ${r.status}  final: ${r.url}`);
     if (!r.ok) {
-      console.log("  => NOT REACHABLE - the policy must list a second allowed domain");
+      console.log(
+        "  => NOT REACHABLE - the policy must list a second allowed domain",
+      );
       continue;
     }
     reachable++;
@@ -86,7 +101,9 @@ for (const t of TARGETS) {
       );
     } else {
       console.log("  no verifiable span found on the page ->");
-      console.log("  per the policy (quote required = yes) the value is DISCARDED, not downgraded.");
+      console.log(
+        "  per the policy (quote required = yes) the value is DISCARDED, not downgraded.",
+      );
     }
   } catch (e) {
     console.log(`  ERR ${e.message}`);

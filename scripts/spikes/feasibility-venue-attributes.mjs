@@ -20,7 +20,11 @@ cover(els, "indoor_outdoor <- outdoor_seating", (e) => e.tags?.outdoor_seating);
 cover(els, "indoor_outdoor <- building", (e) => e.tags?.building);
 cover(els, "min_age_note <- min_age", (e) => e.tags?.min_age);
 cover(els, "pet_friendly <- dog", (e) => e.tags?.dog);
-cover(els, "family_fit <- kids_area", (e) => e.tags?.["kids_area"] ?? e.tags?.playground);
+cover(
+  els,
+  "family_fit <- kids_area",
+  (e) => e.tags?.["kids_area"] ?? e.tags?.playground,
+);
 cover(els, "audience_suitability", (e) => e.tags?.adult ?? e.tags?.min_age);
 cover(els, "typical_visit_minutes", (e) => e.tags?.["duration"]);
 console.log("  (for reference, not FE-09:)");
@@ -28,9 +32,19 @@ cover(els, "wheelchair", (e) => e.tags?.wheelchair);
 cover(els, "website", (e) => e.tags?.website ?? e.tags?.["contact:website"]);
 
 console.log("\n=== verdict per Dictionary field");
-console.log("  indoor_outdoor        : PARTIAL from tags, else INFERRED from category");
-console.log("  typical_visit_minutes : NOT MODELLED in OSM -> estimated per category, labeled");
+console.log(
+  "  indoor_outdoor        : PARTIAL from tags, else INFERRED from category",
+);
+console.log(
+  "  typical_visit_minutes : NOT MODELLED in OSM -> estimated per category, labeled",
+);
 console.log("  family_fit            : NOT MODELLED -> estimated");
-console.log("  min_age_note          : sparse tag -> retrieval (operator site) then estimated");
-console.log("  audience_suitability  : NOT MODELLED -> estimated from category + min_age");
-console.log("  pet_friendly          : sparse 'dog' tag -> unknown is a legal value per FACTS");
+console.log(
+  "  min_age_note          : sparse tag -> retrieval (operator site) then estimated",
+);
+console.log(
+  "  audience_suitability  : NOT MODELLED -> estimated from category + min_age",
+);
+console.log(
+  "  pet_friendly          : sparse 'dog' tag -> unknown is a legal value per FACTS",
+);

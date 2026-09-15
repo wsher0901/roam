@@ -15,7 +15,9 @@ nwr["boundary"="traffic_zone"];
 const els = (await overpass(q)).elements ?? [];
 const parking = els.filter((e) => e.tags?.amenity === "parking");
 const zones = els.filter((e) => e.tags?.boundary);
-console.log(`Rome centre: ${parking.length} parking features, ${zones.length} restricted zones\n`);
+console.log(
+  `Rome centre: ${parking.length} parking features, ${zones.length} restricted zones\n`,
+);
 
 console.log("=== FE-10 Dictionary vs OSM tags (parking features)");
 cover(parking, "availability_class <- parking", (e) => e.tags?.parking);
@@ -25,18 +27,21 @@ cover(parking, "restrictions_note <- access", (e) => e.tags?.access);
 cover(parking, "restrictions_note <- maxstay", (e) => e.tags?.maxstay);
 cover(parking, "capacity", (e) => e.tags?.capacity);
 cover(parking, "name", (e) => e.tags?.name);
-console.log("  distance_to_entrance_m : COMPUTED by us from geocode + venue geocode");
+console.log(
+  "  distance_to_entrance_m : COMPUTED by us from geocode + venue geocode",
+);
 
 console.log("\n=== restricted_driving_zone — the ZTL/LEZ fact");
 for (const z of zones.slice(0, 8)) {
   console.log(
     `  ${(z.tags.name ?? "(unnamed)").slice(0, 44).padEnd(46)}` +
-    ` boundary=${z.tags.boundary}` +
-    ` type=${z.tags["low_emission_zone"] ?? z.tags["traffic_zone"] ?? z.tags["zone:traffic"] ?? "—"}`,
+      ` boundary=${z.tags.boundary}` +
+      ` type=${z.tags["low_emission_zone"] ?? z.tags["traffic_zone"] ?? z.tags["zone:traffic"] ?? "—"}`,
   );
 }
 const kinds = {};
-for (const z of zones) kinds[z.tags.boundary] = (kinds[z.tags.boundary] ?? 0) + 1;
+for (const z of zones)
+  kinds[z.tags.boundary] = (kinds[z.tags.boundary] ?? 0) + 1;
 console.log("  zone kinds:", JSON.stringify(kinds));
 console.log(
   zones.length
