@@ -6,7 +6,7 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-09-16 · 15:00 UTC by ship's weld · from work PC
+Painted 2026-09-16 · 15:03 UTC by ship's weld · from work PC
 THE PRODUCT-FIRST WINDOW IS OPEN — no workshop bench until V1.S1 closes
 THE T3–T6 FLIGHT IS LANDING — four benches reviewed PASS, welding serially · needs-you 3 · git outranks this board.
 How to read it → [HOME §Reading the board](HOME.md#reading-the-board)
@@ -55,7 +55,7 @@ Last flight: LANDED 2026-08-04 21:16 UTC via MANUAL-LAND.
 **Nothing flying.** The four V1.S1 T3–T6 benches were
 respawned on their existing branches 2026-09-15, run as an agent team
 with the founder at the desk, and all four reviewed PASS on the Web
-surface. Welding serially — #358 and #360 merged; #361 and #359 follow.
+surface. Welding serially — #358, #360 and #361 merged; #359 closes the set.
 
 ## Working on
 
@@ -106,6 +106,18 @@ one phase per line:
 **Completed** — the last five; the full chronology is
 [the ledger](record/history/README.md#the-ledger).
 
+- **TREND STOPS BEING AN ASSERTION AND BECOMES A LICENCE QUESTION**
+  — eight slots, twelve retrieval-policy rows, and the trend
+  proxies priced against their own terms:
+  [D-088](record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state)
+  ruling 9 made F-CC-07 computed, so the founder ruled
+  `youtube: defer` (key at V1.S7.T3) and `reddit: drop` (terms
+  revocable without notice that compel deleting derived models).
+  Venue-busyness graded C on a spike that returned ABSENCE, and
+  said so. The holidays B grade rested on a cross-check the bench
+  had described and never run — running it also showed the
+  intended test was the wrong test.
+  [#361](https://github.com/wsher0901/roam/pull/361)
 - **THE MOST DATA-GATED FAMILY, GRADED AT WHAT IT CAN ACTUALLY DO**
   — eight slots behind eight live runs, and the file opens with
   what the family CANNOT do so the limits are met before the
@@ -145,14 +157,6 @@ one phase per line:
   fact cache on the migrations, and grows the eval set — closing
   OPEN-9 in place with its number kept.
   [#366](https://github.com/wsher0901/roam/pull/366)
-- **THE FIRST THING AT THE PUBLIC URL THAT IS OURS** — the
-  create-next-app template is gone; eight lines render Roam and one
-  sentence. The design-review gate then found what three
-  authenticated fetches could not: a token pointing at itself put
-  the whole screen in Times New Roman, on main as well. Fixed, six
-  template assets deleted, and the states law answered honestly at
-  two states rather than one.
-  [#365](https://github.com/wsher0901/roam/pull/365)
 **Issues** — none with a home nowhere else.
 
 Every line this section used to carry now lives at its own home —
@@ -165,8 +169,8 @@ table, gained one before it moved:
 
 ## Where we are (Roam)
 
-V1 — The demo · 7/39 ███████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-S1 · Data Definition · 4/8 ████░░░░
+V1 — The demo · 8/39 ████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+S1 · Data Definition · 5/8 █████░░░
 S2 · Skeleton & design · 3/5 ███░░
 S3–S8 · queued in order · 0/26
 

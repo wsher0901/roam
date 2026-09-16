@@ -75,9 +75,10 @@ storage schema is written.
       data-gated family); same outputs ->
       `docs/data/SOURCES-time-transport.md` ·
       [history](record/history/product/definition/v1.s1.t5.md)
-- [ ] V1.S1.T6 [P] Vet sources: Crowds & calendar — public holidays,
+- [x] V1.S1.T6 [P] Vet sources: Crowds & calendar — public holidays,
       school breaks, events feeds, trending-general method; same
-      outputs -> `docs/data/SOURCES-crowds-calendar.md`
+      outputs -> `docs/data/SOURCES-crowds-calendar.md` ·
+      [history](record/history/product/definition/v1.s1.t6.md)
 - [ ] V1.S1.T7 [seq after T1–T6 and T8] Storage schema + source registry —
       Postgres schema for the fact cache (value, source, confidence,
       fetched_at, freshness window), places, plans, plan_versions;
