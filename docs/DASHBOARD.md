@@ -6,7 +6,7 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-09-16 · 14:53 UTC by ship's weld · from work PC
+Painted 2026-09-16 · 15:00 UTC by ship's weld · from work PC
 THE PRODUCT-FIRST WINDOW IS OPEN — no workshop bench until V1.S1 closes
 THE T3–T6 FLIGHT IS LANDING — four benches reviewed PASS, welding serially · needs-you 3 · git outranks this board.
 How to read it → [HOME §Reading the board](HOME.md#reading-the-board)
@@ -55,7 +55,7 @@ Last flight: LANDED 2026-08-04 21:16 UTC via MANUAL-LAND.
 **Nothing flying.** The four V1.S1 T3–T6 benches were
 respawned on their existing branches 2026-09-15, run as an agent team
 with the founder at the desk, and all four reviewed PASS on the Web
-surface. Welding serially — #358 first; #360, #361, #359 follow.
+surface. Welding serially — #358 and #360 merged; #361 and #359 follow.
 
 ## Working on
 
@@ -106,6 +106,17 @@ one phase per line:
 **Completed** — the last five; the full chronology is
 [the ledger](record/history/README.md#the-ledger).
 
+- **THE MOST DATA-GATED FAMILY, GRADED AT WHAT IT CAN ACTUALLY DO**
+  — eight slots behind eight live runs, and the file opens with
+  what the family CANNOT do so the limits are met before the
+  grades. TT-02/TT-03 stay labeled C and C/D: every schedule API
+  401'd and the one free route dataset still flies Air Berlin.
+  The founder ruled `no for V1` on a paid feed —
+  [D-088](record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state)
+  ruling 8's flight-quote source returns schedule and price
+  together, so T8 decides it. The critic round caught an absence read as a case:
+  "Tokyo has ZERO GTFS feeds" when Tokyo has two.
+  [#360](https://github.com/wsher0901/roam/pull/360)
 - **SKY & SEA HAS ITS SOURCES, AND ITS ONE HONEST HOLE** — seven
   slots behind seven live spike runs, SS-01..10 each claimed once.
   Sun and moon computed and graded **A** (worst delta vs USNO three
@@ -142,15 +153,6 @@ one phase per line:
   template assets deleted, and the states law answered honestly at
   two states rather than one.
   [#365](https://github.com/wsher0901/roam/pull/365)
-- **A GRADE RESTING ON A FETCH NOBODY RE-RAN** — three weather
-  spikes re-run after ninety-one days and four stamps refreshed with
-  today's OBSERVED values (14 keys, 3,653 days, 3 active alerts
-  where June saw 2). No grade or coverage claim moved. The critic
-  caught that the licence stamp alone had no re-runnable artifact;
-  the page's own sentences are now pasted verbatim, and the spec was
-  widened because a bench meeting the old contract would still have
-  shipped the hole.
-  [#364](https://github.com/wsher0901/roam/pull/364)
 **Issues** — none with a home nowhere else.
 
 Every line this section used to carry now lives at its own home —
@@ -163,14 +165,14 @@ table, gained one before it moved:
 
 ## Where we are (Roam)
 
-V1 — The demo · 6/39 ██████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-S1 · Data Definition · 3/8 ███░░░░░
+V1 — The demo · 7/39 ███████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+S1 · Data Definition · 4/8 ████░░░░
 S2 · Skeleton & design · 3/5 ███░░
 S3–S8 · queued in order · 0/26
 
 V1.S1.T3 is ticked by this weld. Three more T3–T6 welds follow and
 each ticks its own box; the bars are re-derived at every repaint, so
-this reads 6/39 once #360 lands and 9/39 when #359 closes the set.
+this reads 9/39 when #359 closes the set.
 
 ## Web + Design
 

@@ -70,10 +70,11 @@ storage schema is written.
 - [ ] V1.S1.T4 [P] Vet sources: Feasibility — places + opening hours,
       routing/distances, seasonal closures, cost-estimate basis; same
       outputs -> `docs/data/SOURCES-feasibility.md`
-- [ ] V1.S1.T5 [P] Vet sources: Time & transport — airport data,
+- [x] V1.S1.T5 [P] Vet sources: Time & transport — airport data,
       flight-schedule feeds, ground transit; grade hardest (most
       data-gated family); same outputs ->
-      `docs/data/SOURCES-time-transport.md`
+      `docs/data/SOURCES-time-transport.md` ·
+      [history](record/history/product/definition/v1.s1.t5.md)
 - [ ] V1.S1.T6 [P] Vet sources: Crowds & calendar — public holidays,
       school breaks, events feeds, trending-general method; same
       outputs -> `docs/data/SOURCES-crowds-calendar.md`
