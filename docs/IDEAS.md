@@ -1,5 +1,44 @@
 ## Open
 
+- ⏳ V1.S3 design input — [FE-12](data/FACTS.md#f-fe-12--area-profiles-)
+  has no polygon: pick a centroid radius or a polygon source before
+  `best_for[]` exists. All 113 Rome areas came back as NODES with no
+  admin_level 9/10 relations, and `best_for[]` is specified as the
+  POI mix INSIDE an area — there is no inside without a boundary.
+  (2026-09-16, T3–T6 review,
+  [#359](https://github.com/wsher0901/roam/pull/359)) →
+  [V1.S3](ROADMAP.md#v1s3--engine-core--two-families-deep)
+
+- ⏳ V1.S3 design input —
+  [FE-02](data/FACTS.md#f-fe-02--destinationactivity-affordances-)'s
+  cross-destination discrimination is REASONED, NOT MEASURED: Rome
+  and Chamonix never returned under sustained Overpass 429/504s, so
+  the entry labels the claim rather than dressing it up. Measure it
+  in S3.T4. (2026-09-16, T3–T6 review,
+  [#359](https://github.com/wsher0901/roam/pull/359)) →
+  [V1.S3](ROADMAP.md#v1s3--engine-core--two-families-deep)
+
+- ⏳ Routing caution — the public OSRM demo returns THE CAR PROFILE
+  for every mode: `/route/v1/walking` came back byte-identical to
+  driving, to three decimals, and the external review reproduced it
+  (driving = walking = cycling). Never a source for walking time. A
+  thinner spike would have graded
+  [FE-06](data/FACTS.md#f-fe-06--travel-times--distances-per-mode)
+  an **A** on driving data, and every pace and density budget
+  downstream would have inherited it silently. Valhalla
+  differentiates and is what the entry grades.
+  (2026-09-16, T3–T6 review,
+  [#359](https://github.com/wsher0901/roam/pull/359))
+
+- ⏳ T7 rider — rename `scripts/spikes/_overpass.mjs` to
+  `feasibility-_overpass.mjs`. Generic names in a shared directory
+  make disjointness LUCK rather than construction: a future lane
+  vetting OSM sources would reach for exactly that path, and the
+  lane law's no-shared-files guarantee would quietly stop holding by
+  design and start holding by coincidence. (2026-09-16, T3–T6
+  review, [#359](https://github.com/wsher0901/roam/pull/359)) →
+  [V1.S1.T7](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
+
 - ⏳ Build the night-sky-darkness asset — SS-08 has no live API at
   all (four gates measured: key wall, login wall, imagery-only, and
   a non-commercial licence), so serving it needs a yearly VIIRS VNL

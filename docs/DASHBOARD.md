@@ -6,9 +6,9 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-09-16 · 15:03 UTC by ship's weld · from work PC
+Painted 2026-09-16 · 15:06 UTC by ship's weld · from work PC
 THE PRODUCT-FIRST WINDOW IS OPEN — no workshop bench until V1.S1 closes
-THE T3–T6 FLIGHT IS LANDING — four benches reviewed PASS, welding serially · needs-you 3 · git outranks this board.
+T3–T6 ARE DOWN — all four merged · needs-you 3 · git outranks this board.
 How to read it → [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
@@ -54,18 +54,19 @@ Last flight: LANDED 2026-08-04 21:16 UTC via MANUAL-LAND.
 
 **Nothing flying.** The four V1.S1 T3–T6 benches were
 respawned on their existing branches 2026-09-15, run as an agent team
-with the founder at the desk, and all four reviewed PASS on the Web
-surface. Welding serially — #358, #360 and #361 merged; #359 closes the set.
+with the founder at the desk, reviewed PASS in one batch on the Web
+surface, and welded serially: [#358](https://github.com/wsher0901/roam/pull/358) · [#360](https://github.com/wsher0901/roam/pull/360) · [#361](https://github.com/wsher0901/roam/pull/361) · [#359](https://github.com/wsher0901/roam/pull/359).
 
 ## Working on
 
-**T3–T6 ARE WELDING.** All four reviewed PASS; the welds run serially
-because each writes the ledger and the board. After them,
+**T3–T6 ARE DONE.** Thirty-nine source slots vetted across four
+families, every grade behind a run.
 [V1.S1](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
-needs only T7 and T8 — and T7 waits on T8, so
-[T8](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
-(cost sources) is the next thing to start. Closing T7 closes the
-product-first window.
+now needs only **T8** (cost sources) and then **T7**, which waits on
+it — so T8 is the next thing to start, and T7 consolidates five
+`SOURCES-<family>.md` files into one. **Closing T7 closes the
+product-first window**, which also releases IDEAS §Parked back to
+§Open and ends synthesis deferral.
 
 **WHAT THE TEST FLIGHT PROVED** (2026-09-11, four benches, all
 merged). The canary handshake was the thing under test, after
@@ -106,6 +107,17 @@ one phase per line:
 **Completed** — the last five; the full chronology is
 [the ledger](record/history/README.md#the-ledger).
 
+- **SIXTEEN SLOTS, AND A LICENCE READ THAT CHANGED THE ANSWER** —
+  the largest bench: FE-01..16 each claimed once, twenty
+  retrieval-policy rows, every grade behind a run. Maps grounding
+  came back REJECTED for the asset layer and adopted for
+  deep-linking only, on SST §10.3.1 quoted verbatim, with
+  `place_id` the one survivor. Routing graded **A on Valhalla,
+  not OSRM** — the public demo returns the car profile for every
+  mode, reproduced by review. Nine critic findings, all its own;
+  the substantive one downgraded nine licence claims the bench
+  had never actually read.
+  [#359](https://github.com/wsher0901/roam/pull/359)
 - **TREND STOPS BEING AN ASSERTION AND BECOMES A LICENCE QUESTION**
   — eight slots, twelve retrieval-policy rows, and the trend
   proxies priced against their own terms:
@@ -150,13 +162,6 @@ one phase per line:
   boundary clause still said "rung 5" while the paragraph beside it
   declared the boundary unchanged.
   [#367](https://github.com/wsher0901/roam/pull/367)
-- **WHAT THE MODEL MAY AND MAY NOT PRODUCE** —
-  [D-087](record/DECISIONS.md#d-087--product-the-model-boundary-and-three-plan-corrections)
-  makes the model boundary an ENGINE §11 invariant, adds demo
-  guardrails as V1.S8.T4 with nothing public before them, gates the
-  fact cache on the migrations, and grows the eval set — closing
-  OPEN-9 in place with its number kept.
-  [#366](https://github.com/wsher0901/roam/pull/366)
 **Issues** — none with a home nowhere else.
 
 Every line this section used to carry now lives at its own home —
@@ -169,14 +174,13 @@ table, gained one before it moved:
 
 ## Where we are (Roam)
 
-V1 — The demo · 8/39 ████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-S1 · Data Definition · 5/8 █████░░░
+V1 — The demo · 9/39 █████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+S1 · Data Definition · 6/8 ██████░░
 S2 · Skeleton & design · 3/5 ███░░
 S3–S8 · queued in order · 0/26
 
-V1.S1.T3 is ticked by this weld. Three more T3–T6 welds follow and
-each ticks its own box; the bars are re-derived at every repaint, so
-this reads 9/39 when #359 closes the set.
+T3–T6 ticked four boxes in four welds, 5/39 → 9/39. S1 is 6/8:
+T8 and T7 remain, in that order.
 
 ## Web + Design
 
@@ -194,10 +198,10 @@ this reads 9/39 when #359 closes the set.
 
 ## Next
 
-**[V1.S1](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
-T3–T6 — the founder's call when.** Four benches already sit at birth
-as [#358](https://github.com/wsher0901/roam/pull/358)–[#361](https://github.com/wsher0901/roam/pull/361),
-and each now owes a retrieval-policy row per fact.
-[T8](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
-is new and parallel. Closing T3–T8 then T7 closes the product-first
-window.
+**[V1.S1.T8](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
+— cost sources — then T7.** T8 vets flight-quote APIs, lodging rate
+options and ground/activity ranges, and it is where the paid-schedule
+question ruled at #360 gets decided, since a licensed flight-quote
+source returns schedule and price together. T7 then consolidates five
+`SOURCES-<family>.md` files and ratifies the grade scale — and
+closing it closes the window.

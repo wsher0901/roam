@@ -67,9 +67,10 @@ storage schema is written.
       [D-020](record/DECISIONS.md#d-020--parallel-lanes-v2);
       consolidated at T7) ·
       [history](record/history/product/definition/v1.s1.t3.md)
-- [ ] V1.S1.T4 [P] Vet sources: Feasibility — places + opening hours,
+- [x] V1.S1.T4 [P] Vet sources: Feasibility — places + opening hours,
       routing/distances, seasonal closures, cost-estimate basis; same
-      outputs -> `docs/data/SOURCES-feasibility.md`
+      outputs -> `docs/data/SOURCES-feasibility.md` ·
+      [history](record/history/product/definition/v1.s1.t4.md)
 - [x] V1.S1.T5 [P] Vet sources: Time & transport — airport data,
       flight-schedule feeds, ground transit; grade hardest (most
       data-gated family); same outputs ->
