@@ -1,5 +1,33 @@
 ## Open
 
+- ⏳ Build the night-sky-darkness asset — SS-08 has no live API at
+  all (four gates measured: key wall, login wall, imagery-only, and
+  a non-commercial licence), so serving it needs a yearly VIIRS VNL
+  download plus an in-repo raster the engine can point-query. That
+  is real work nobody has scoped, and until it exists SS-08 renders
+  only from its retrieval policy. (2026-09-16, T3–T6 review,
+  [#358](https://github.com/wsher0901/roam/pull/358)) →
+  [D-015](record/DECISIONS.md#d-015--data-asset-law)
+
+- ⏳ Vet a global tide source as its own bench — NOAA CO-OPS covers
+  the US plus a thin Pacific tail and nothing else, so tide-pool,
+  flats-access and beach-window planning silently does not work in
+  Europe, Japan, Korea or Australia. The candidates (FES2014, TPXO,
+  WorldTides, national hydrographic offices) each need their licence
+  read before [D-015](record/DECISIONS.md#d-015--data-asset-law)
+  can clear them. (2026-09-16, T3–T6 review,
+  [#358](https://github.com/wsher0901/roam/pull/358))
+
+- ⏳ T7 rider — decide where RUNG 3 grades on the canonical scale.
+  A deterministic ephemeris is computed, and
+  [ENGINE §7](ENGINE.md#7-render--honest-pixels)'s C row says
+  "derived" — but rendering sunrise as a labelled estimate makes it
+  look less sure than it is. V1.S1.T3 graded it **A** and argued why
+  in the entry; OPEN-2 should settle it rather than leave each
+  family to decide. (2026-09-16, T3–T6 review,
+  [#358](https://github.com/wsher0901/roam/pull/358)) →
+  [V1.S1.T7](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
+
 - ⏳ V1.S2.T5 rider — the shell renders Geist today while
   [DESIGN §Typography](DESIGN.md#typography) ratifies Archivo +
   Public Sans, and next/font's swap fallback is metric-adjusted
@@ -49,6 +77,23 @@ when [V1.S1](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-
 closes. A line here that a product bench genuinely needs in order to
 proceed rides that bench as a recorded deviation (ruling 1's
 exception) — it is not lifted back for its own sake.
+
+- ⏳ [parallel-lanes §Canary](skills/parallel-lanes.md#canary-handshake-both-sides):
+  a lane must `git fetch` before concluding no ack — the ack exists
+  on origin and is INVISIBLE to a local head, because the tower
+  writes it from a separate clone. Three of four lanes hit it on the
+  T3–T6 flight and one came within minutes of writing itself off.
+  The section already says the licence is a commit on origin; what
+  it does not say is that reading your own head is not reading
+  origin. (2026-09-16, T3–T6 review)
+
+- ⏳ Commit the ack watcher — it lives in a session scratchpad and
+  died with its session once already, which is why the stdin bug it
+  fixes recurred. Land it as `scripts/ack-watcher.mjs` when the
+  window closes: message passed as an argv element so git cannot
+  ignore it, a pre-dispatch baseline so dead canaries are never
+  acked, and the anchored `airborne ·` match. (2026-09-16,
+  T3–T6 review)
 
 - ⏳ NOTHING CHECKS THE DERIVATION LAW — derived values (counts,
   totals, statuses) must be computed from source at render time,

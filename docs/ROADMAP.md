@@ -61,11 +61,12 @@ storage schema is written.
       candidates (e.g. Open-Meteo), spike fetch script, grade +
       freshness + coverage + cost -> entry in [docs/data/SOURCES.md](data/SOURCES.md) ·
       [history](record/history/product/definition/v1.s1.t2.md)
-- [ ] V1.S1.T3 [P] Vet sources: Sky & sea — sun/moon math, tides (NOAA
+- [x] V1.S1.T3 [P] Vet sources: Sky & sea — sun/moon math, tides (NOAA
       for US; global gaps labeled), aurora/nature timing; same
       outputs -> `docs/data/SOURCES-sky-sea.md` (lane-disjoint per
       [D-020](record/DECISIONS.md#d-020--parallel-lanes-v2);
-      consolidated at T7)
+      consolidated at T7) ·
+      [history](record/history/product/definition/v1.s1.t3.md)
 - [ ] V1.S1.T4 [P] Vet sources: Feasibility — places + opening hours,
       routing/distances, seasonal closures, cost-estimate basis; same
       outputs -> `docs/data/SOURCES-feasibility.md`
