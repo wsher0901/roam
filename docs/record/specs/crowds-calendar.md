@@ -2,12 +2,12 @@
 type: spec
 id: V1.S1.T6
 title: Vet sources — Crowds & calendar
-status: open
+status: shipped
 stage: V1.S1
 branch: docs/crowds-calendar
-pr: —
+pr: #361
 opened: 2026-09-10
-shipped: —
+shipped: 2026-09-16
 ---
 
 # V1.S1.T6 — vet sources: Crowds & calendar
