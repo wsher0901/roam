@@ -6,9 +6,9 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-09-15 · 19:42 UTC by ship's weld · from work PC
+Painted 2026-09-16 · 14:53 UTC by ship's weld · from work PC
 THE PRODUCT-FIRST WINDOW IS OPEN — no workshop bench until V1.S1 closes
-Nothing flying · needs-you 3 · git outranks this board.
+THE T3–T6 FLIGHT IS LANDING — four benches reviewed PASS, welding serially · needs-you 3 · git outranks this board.
 How to read it → [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
@@ -52,22 +52,20 @@ Last flight: LANDED 2026-08-04 21:16 UTC via MANUAL-LAND.
 
 ## In flight
 
-**Nothing flying.**
-
-The four V1.S1 benches
-[#358](https://github.com/wsher0901/roam/pull/358)–[#361](https://github.com/wsher0901/roam/pull/361)
-still sit at birth, untouched and claimable.
+**Nothing flying.** The four V1.S1 T3–T6 benches were
+respawned on their existing branches 2026-09-15, run as an agent team
+with the founder at the desk, and all four reviewed PASS on the Web
+surface. Welding serially — #358 first; #360, #361, #359 follow.
 
 ## Working on
 
-**NOTHING OPEN.**
+**T3–T6 ARE WELDING.** All four reviewed PASS; the welds run serially
+because each writes the ledger and the board. After them,
 [V1.S1](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
-T3–T6 are next and the founder decides when they start. They now
-carry one more duty each: a retrieval-policy row per fact
-([D-088](record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state)
-ruling 3), and T4 also evaluates Maps grounding (ruling 17).
-[V1.S1.T8](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
-— cost sources — is new and unclaimed.
+needs only T7 and T8 — and T7 waits on T8, so
+[T8](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
+(cost sources) is the next thing to start. Closing T7 closes the
+product-first window.
 
 **WHAT THE TEST FLIGHT PROVED** (2026-09-11, four benches, all
 merged). The canary handshake was the thing under test, after
@@ -108,6 +106,14 @@ one phase per line:
 **Completed** — the last five; the full chronology is
 [the ledger](record/history/README.md#the-ledger).
 
+- **SKY & SEA HAS ITS SOURCES, AND ITS ONE HONEST HOLE** — seven
+  slots behind seven live spike runs, SS-01..10 each claimed once.
+  Sun and moon computed and graded **A** (worst delta vs USNO three
+  minutes), tides **B** on NOAA, aurora **A** on SWPC — and
+  night-sky-darkness **unserved**, its projected grade marked
+  unspiked rather than claimed. The critic round's best finding was
+  the lane's own spike refuting its own prose about NOAA coverage.
+  [#358](https://github.com/wsher0901/roam/pull/358)
 - **THE SEPTEMBER RE-TAILORING** —
   [D-088](record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state)'s
   eighteen rulings re-cut the June definitions against what a model
@@ -145,15 +151,6 @@ one phase per line:
   widened because a bench meeting the old contract would still have
   shipped the hole.
   [#364](https://github.com/wsher0901/roam/pull/364)
-- **THE NOTE THAT DESCRIBED A FOLDER THAT NO LONGER EXISTED** —
-  [DESIGN §Reference images](DESIGN.md#reference-images) said the
-  two rejected taste probes sat beside the picked one, "linked from
-  that folder's index". All three files had been deleted on
-  2026-09-10; the paragraph now says so, and the old line's one true
-  idea — that no reference slot ever pointed at the losers — becomes
-  the reason the deletion was safe.
-  [#363](https://github.com/wsher0901/roam/pull/363)
-
 **Issues** — none with a home nowhere else.
 
 Every line this section used to carry now lives at its own home —
@@ -166,17 +163,14 @@ table, gained one before it moved:
 
 ## Where we are (Roam)
 
-V1 — The demo · 5/39 █████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-S1 · Data Definition · 2/8 ██░░░░░░
+V1 — The demo · 6/39 ██████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+S1 · Data Definition · 3/8 ███░░░░░
 S2 · Skeleton & design · 3/5 ███░░
 S3–S8 · queued in order · 0/26
 
-The V1 total moved 35 → 39:
-[D-088](record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state)
-added V1.S1.T8 (cost sources), V1.S3.T8 (retrieval module),
-V1.S6.T4 (import & check) and V1.S7.T4 (cost module).
-No box was ticked by this weld — the bench is a decision, not a
-task, and ticks are ship's alone.
+V1.S1.T3 is ticked by this weld. Three more T3–T6 welds follow and
+each ticks its own box; the bars are re-derived at every repaint, so
+this reads 6/39 once #360 lands and 9/39 when #359 closes the set.
 
 ## Web + Design
 
