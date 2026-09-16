@@ -111,9 +111,10 @@ one phase per line:
   what the family CANNOT do so the limits are met before the
   grades. TT-02/TT-03 stay labeled C and C/D: every schedule API
   401'd and the one free route dataset still flies Air Berlin.
-  The founder ruled `no for V1` on a paid feed — D-088 ruling 8's
-  flight-quote source returns schedule and price together, so T8
-  decides it. The critic round caught an absence read as a case:
+  The founder ruled `no for V1` on a paid feed —
+  [D-088](record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state)
+  ruling 8's flight-quote source returns schedule and price
+  together, so T8 decides it. The critic round caught an absence read as a case:
   "Tokyo has ZERO GTFS feeds" when Tokyo has two.
   [#360](https://github.com/wsher0901/roam/pull/360)
 - **SKY & SEA HAS ITS SOURCES, AND ITS ONE HONEST HOLE** — seven
