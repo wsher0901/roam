@@ -61,21 +61,24 @@ storage schema is written.
       candidates (e.g. Open-Meteo), spike fetch script, grade +
       freshness + coverage + cost -> entry in [docs/data/SOURCES.md](data/SOURCES.md) ·
       [history](record/history/product/definition/v1.s1.t2.md)
-- [ ] V1.S1.T3 [P] Vet sources: Sky & sea — sun/moon math, tides (NOAA
+- [x] V1.S1.T3 [P] Vet sources: Sky & sea — sun/moon math, tides (NOAA
       for US; global gaps labeled), aurora/nature timing; same
       outputs -> `docs/data/SOURCES-sky-sea.md` (lane-disjoint per
       [D-020](record/DECISIONS.md#d-020--parallel-lanes-v2);
-      consolidated at T7)
+      consolidated at T7) ·
+      [history](record/history/product/definition/v1.s1.t3.md)
 - [ ] V1.S1.T4 [P] Vet sources: Feasibility — places + opening hours,
       routing/distances, seasonal closures, cost-estimate basis; same
       outputs -> `docs/data/SOURCES-feasibility.md`
-- [ ] V1.S1.T5 [P] Vet sources: Time & transport — airport data,
+- [x] V1.S1.T5 [P] Vet sources: Time & transport — airport data,
       flight-schedule feeds, ground transit; grade hardest (most
       data-gated family); same outputs ->
-      `docs/data/SOURCES-time-transport.md`
-- [ ] V1.S1.T6 [P] Vet sources: Crowds & calendar — public holidays,
+      `docs/data/SOURCES-time-transport.md` ·
+      [history](record/history/product/definition/v1.s1.t5.md)
+- [x] V1.S1.T6 [P] Vet sources: Crowds & calendar — public holidays,
       school breaks, events feeds, trending-general method; same
-      outputs -> `docs/data/SOURCES-crowds-calendar.md`
+      outputs -> `docs/data/SOURCES-crowds-calendar.md` ·
+      [history](record/history/product/definition/v1.s1.t6.md)
 - [ ] V1.S1.T7 [seq after T1–T6 and T8] Storage schema + source registry —
       Postgres schema for the fact cache (value, source, confidence,
       fetched_at, freshness window), places, plans, plan_versions;

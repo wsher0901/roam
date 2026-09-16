@@ -6,9 +6,9 @@ status: living
 
 # Dashboard — the state surface
 
-Painted 2026-09-15 · 19:42 UTC by ship's weld · from work PC
+Painted 2026-09-16 · 15:03 UTC by ship's weld · from work PC
 THE PRODUCT-FIRST WINDOW IS OPEN — no workshop bench until V1.S1 closes
-Nothing flying · needs-you 3 · git outranks this board.
+THE T3–T6 FLIGHT IS LANDING — four benches reviewed PASS, welding serially · needs-you 3 · git outranks this board.
 How to read it → [HOME §Reading the board](HOME.md#reading-the-board)
 
 ## Needs you
@@ -52,22 +52,20 @@ Last flight: LANDED 2026-08-04 21:16 UTC via MANUAL-LAND.
 
 ## In flight
 
-**Nothing flying.**
-
-The four V1.S1 benches
-[#358](https://github.com/wsher0901/roam/pull/358)–[#361](https://github.com/wsher0901/roam/pull/361)
-still sit at birth, untouched and claimable.
+**Nothing flying.** The four V1.S1 T3–T6 benches were
+respawned on their existing branches 2026-09-15, run as an agent team
+with the founder at the desk, and all four reviewed PASS on the Web
+surface. Welding serially — #358, #360 and #361 merged; #359 closes the set.
 
 ## Working on
 
-**NOTHING OPEN.**
+**T3–T6 ARE WELDING.** All four reviewed PASS; the welds run serially
+because each writes the ledger and the board. After them,
 [V1.S1](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
-T3–T6 are next and the founder decides when they start. They now
-carry one more duty each: a retrieval-policy row per fact
-([D-088](record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state)
-ruling 3), and T4 also evaluates Maps grounding (ruling 17).
-[V1.S1.T8](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
-— cost sources — is new and unclaimed.
+needs only T7 and T8 — and T7 waits on T8, so
+[T8](ROADMAP.md#v1s1--data-definition-the-gate-docs--spike-scripts-only-no-app-code)
+(cost sources) is the next thing to start. Closing T7 closes the
+product-first window.
 
 **WHAT THE TEST FLIGHT PROVED** (2026-09-11, four benches, all
 merged). The canary handshake was the thing under test, after
@@ -108,6 +106,37 @@ one phase per line:
 **Completed** — the last five; the full chronology is
 [the ledger](record/history/README.md#the-ledger).
 
+- **TREND STOPS BEING AN ASSERTION AND BECOMES A LICENCE QUESTION**
+  — eight slots, twelve retrieval-policy rows, and the trend
+  proxies priced against their own terms:
+  [D-088](record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state)
+  ruling 9 made F-CC-07 computed, so the founder ruled
+  `youtube: defer` (key at V1.S7.T3) and `reddit: drop` (terms
+  revocable without notice that compel deleting derived models).
+  Venue-busyness graded C on a spike that returned ABSENCE, and
+  said so. The holidays B grade rested on a cross-check the bench
+  had described and never run — running it also showed the
+  intended test was the wrong test.
+  [#361](https://github.com/wsher0901/roam/pull/361)
+- **THE MOST DATA-GATED FAMILY, GRADED AT WHAT IT CAN ACTUALLY DO**
+  — eight slots behind eight live runs, and the file opens with
+  what the family CANNOT do so the limits are met before the
+  grades. TT-02/TT-03 stay labeled C and C/D: every schedule API
+  401'd and the one free route dataset still flies Air Berlin.
+  The founder ruled `no for V1` on a paid feed —
+  [D-088](record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state)
+  ruling 8's flight-quote source returns schedule and price
+  together, so T8 decides it. The critic round caught an absence read as a case:
+  "Tokyo has ZERO GTFS feeds" when Tokyo has two.
+  [#360](https://github.com/wsher0901/roam/pull/360)
+- **SKY & SEA HAS ITS SOURCES, AND ITS ONE HONEST HOLE** — seven
+  slots behind seven live spike runs, SS-01..10 each claimed once.
+  Sun and moon computed and graded **A** (worst delta vs USNO three
+  minutes), tides **B** on NOAA, aurora **A** on SWPC — and
+  night-sky-darkness **unserved**, its projected grade marked
+  unspiked rather than claimed. The critic round's best finding was
+  the lane's own spike refuting its own prose about NOAA coverage.
+  [#358](https://github.com/wsher0901/roam/pull/358)
 - **THE SEPTEMBER RE-TAILORING** —
   [D-088](record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state)'s
   eighteen rulings re-cut the June definitions against what a model
@@ -128,32 +157,6 @@ one phase per line:
   fact cache on the migrations, and grows the eval set — closing
   OPEN-9 in place with its number kept.
   [#366](https://github.com/wsher0901/roam/pull/366)
-- **THE FIRST THING AT THE PUBLIC URL THAT IS OURS** — the
-  create-next-app template is gone; eight lines render Roam and one
-  sentence. The design-review gate then found what three
-  authenticated fetches could not: a token pointing at itself put
-  the whole screen in Times New Roman, on main as well. Fixed, six
-  template assets deleted, and the states law answered honestly at
-  two states rather than one.
-  [#365](https://github.com/wsher0901/roam/pull/365)
-- **A GRADE RESTING ON A FETCH NOBODY RE-RAN** — three weather
-  spikes re-run after ninety-one days and four stamps refreshed with
-  today's OBSERVED values (14 keys, 3,653 days, 3 active alerts
-  where June saw 2). No grade or coverage claim moved. The critic
-  caught that the licence stamp alone had no re-runnable artifact;
-  the page's own sentences are now pasted verbatim, and the spec was
-  widened because a bench meeting the old contract would still have
-  shipped the hole.
-  [#364](https://github.com/wsher0901/roam/pull/364)
-- **THE NOTE THAT DESCRIBED A FOLDER THAT NO LONGER EXISTED** —
-  [DESIGN §Reference images](DESIGN.md#reference-images) said the
-  two rejected taste probes sat beside the picked one, "linked from
-  that folder's index". All three files had been deleted on
-  2026-09-10; the paragraph now says so, and the old line's one true
-  idea — that no reference slot ever pointed at the losers — becomes
-  the reason the deletion was safe.
-  [#363](https://github.com/wsher0901/roam/pull/363)
-
 **Issues** — none with a home nowhere else.
 
 Every line this section used to carry now lives at its own home —
@@ -166,17 +169,14 @@ table, gained one before it moved:
 
 ## Where we are (Roam)
 
-V1 — The demo · 5/39 █████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-S1 · Data Definition · 2/8 ██░░░░░░
+V1 — The demo · 8/39 ████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+S1 · Data Definition · 5/8 █████░░░
 S2 · Skeleton & design · 3/5 ███░░
 S3–S8 · queued in order · 0/26
 
-The V1 total moved 35 → 39:
-[D-088](record/DECISIONS.md#d-088--product-the-september-re-tailoring--retrieval-the-optimizer-cost-trend-state)
-added V1.S1.T8 (cost sources), V1.S3.T8 (retrieval module),
-V1.S6.T4 (import & check) and V1.S7.T4 (cost module).
-No box was ticked by this weld — the bench is a decision, not a
-task, and ticks are ship's alone.
+V1.S1.T3 is ticked by this weld. Three more T3–T6 welds follow and
+each ticks its own box; the bars are re-derived at every repaint, so
+this reads 9/39 when #359 closes the set.
 
 ## Web + Design
 
