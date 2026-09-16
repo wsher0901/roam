@@ -2,12 +2,12 @@
 type: spec
 id: V1.S1.T4
 title: Vet sources — Feasibility
-status: open
+status: shipped
 stage: V1.S1
 branch: docs/feasibility
-pr: —
+pr: #359
 opened: 2026-09-10
-shipped: —
+shipped: 2026-09-16
 ---
 
 # V1.S1.T4 — vet sources: Feasibility
