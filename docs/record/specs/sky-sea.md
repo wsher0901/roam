@@ -2,12 +2,12 @@
 type: spec
 id: V1.S1.T3
 title: Vet sources — Sky & sea
-status: open
+status: shipped
 stage: V1.S1
 branch: docs/sky-sea
-pr: —
+pr: #358
 opened: 2026-09-10
-shipped: —
+shipped: 2026-09-16
 ---
 
 # V1.S1.T3 — vet sources: Sky & sea
